@@ -98,6 +98,8 @@ ESSAY_PAPERS = {
     (2021, 'ol', 'lm'),
     (2022, 'hl', 'em'),
     (2022, 'hl', 'lm'),
+    (2022, 'ol', 'em'),
+    (2022, 'ol', 'lm'),
     (2025, 'hl', 'lm'),
 }
 
@@ -199,18 +201,24 @@ def _bands(bands):
             for b in bands]
 
 
-# The printed alternatives under an Ordinary part B or C: "1. The Tithe War.
-# 2. William Dargan. ..." -- numbered 1 to 4 in print order.
-ALTERNATIVE = re.compile(r'(?:^|\s)([1-4])\.\s+')
-
-
 def _alternatives(text):
-    """The four printed alternatives of a part B or C, or None."""
-    cuts = [m for m in ALTERNATIVE.finditer(text)]
-    if [int(m.group(1)) for m in cuts] != [1, 2, 3, 4]:
-        return None
-    return [text[m.start():(cuts[i + 1].start() if i + 1 < len(cuts) else len(text))].strip()
-            for i, m in enumerate(cuts)]
+    """The four printed alternatives of a part B or C, or None.
+
+    "1. The Tithe War. 2. William Dargan. ..." -- numbered 1 to 4 in print
+    order. The 2022 Ordinary Later Modern paper prints its Europe Topic 4
+    part B's second alternative as "2 The 1973 oil crisis." (no full stop on
+    the page), so the stop is optional for the NEXT number in the run when a
+    capital follows; the text is kept exactly as printed.
+    """
+    starts, pos = [], 0
+    for k in range(1, 5):
+        m = re.compile(rf'(?:^|\s)({k})\.?\s+(?=[A-Z\u201c"\u2018\'(])').search(text, pos)
+        if not m:
+            return None
+        starts.append(m.start(1))
+        pos = m.end()
+    return [text[a:(starts[i + 1] if i + 1 < len(starts) else len(text))].strip()
+            for i, a in enumerate(starts)]
 
 
 def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
@@ -594,10 +602,12 @@ def main():
         print(f'{len(cards)} card(s) + {len(exclusions)} exclusion(s) = '
               f'{accounted} of {total} paper asks '
               f'({100 * accounted / total:.1f}%)')
-        rows = sum(len(c['rows']) for c in cards)
-        fixed = sum(1 for c in cards if c['tariffModel']['kind'] == 'fixed')
+        points = [c for c in cards if c.get('kind') != 'rubric']
+        rows = sum(len(c['rows']) for c in points)
+        fixed = sum(1 for c in points if c['tariffModel']['kind'] == 'fixed')
         print(f'{rows} marking rows; {fixed} fixed-tariff card(s), '
-              f'{len(cards) - fixed} questionTotal')
+              f'{len(points) - fixed} questionTotal; '
+              f'{len(cards) - len(points)} essay rubric card(s)')
         worst = min(title_pairs, key=lambda t: t[1]) if title_pairs else None
         print(f'topic-title pairing: {len(title_pairs)} pairs, weakest '
               f'{worst[0]} at {worst[1]:.2f}' if worst else 'no pairs')

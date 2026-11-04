@@ -46575,6 +46575,56 @@
   }
  },
  {
+  "id": "hist-2022-ol-lm-s1-q4",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "1",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "coleraine-rather-than-derry-chosen-site",
+  "questionRef": "2022 OL Later Modern Section 1 Q4",
+  "questionText": "Why was Coleraine, rather than Derry, chosen as the site of Northern Ireland’s second university?",
+  "totalMarks": 20,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "Mark by the principle of Core Statement. Max = 20M"
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "Here, in question 4 of the DBQ, the examiner will be looking to award 5 marks each to four Core Statements for the full 20 marks allocation.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m."
+  },
+  "notes": "Later Modern field of study. The scheme prints '4. Contextualisation (20 marks) Why was Coleraine, rather th' for this ask and no model answer.",
+  "stem": "Case study: The Coleraine University controversy"
+ },
+ {
   "id": "hist-2022-ol-lm-s2t1a-q1",
   "subjectId": "history",
   "level": "ordinary",
@@ -46748,6 +46798,208 @@
    "attribution": "SEC History 2022 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
    "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
   }
+ },
+ {
+  "id": "hist-2022-ol-lm-s2t1b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "tithe-war-thomas-davis-industrial-development",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 1 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The Tithe War.\n2. Thomas Davis.\n3. Industrial development in Belfast.\n4. Cardinal Paul Cullen.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Ireland and the Union, 1815-1870"
+ },
+ {
+  "id": "hist-2022-ol-lm-s2t1c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "did-daniel-connell-conduct-repeal-campaign",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 1 C",
+  "questionText": "Answer one of the following:\n1. How did Daniel O’Connell conduct the Repeal campaign and why did it fail?\n2. How did Asenath Nicholson and/or Charles Trevelyan respond to the Famine in Ireland?\n3. What was the role of Charles Kickham and/or James Stephens in Fenianism?\n4. What did William Carleton and/or William Dargan contribute to Irish life?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Ireland and the Union, 1815-1870"
  },
  {
   "id": "hist-2022-ol-lm-s2t2a-q1",
@@ -46931,6 +47183,208 @@
   }
  },
  {
+  "id": "hist-2022-ol-lm-s2t2b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "isabella-tod-operative-movement-1913-strike",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 2 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Isabella Tod.\n2. The co-operative movement.\n3. The 1913 strike and lockout.\n4. Hanna Sheehy-Skeffington.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Movements for political and social reform, 1870-1914"
+ },
+ {
+  "id": "hist-2022-ol-lm-s2t2c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "importance-elections-1885-1886-ireland-contribution",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 2 C",
+  "questionText": "Answer one of the following:\n1. What was the importance of the elections of 1885 and 1886 for Ireland?\n2. What was the contribution of Michael Davitt to Irish affairs?\n3. What did W.B. Yeats contribute to cultural revival in Ireland?\n4. Why and how did Unionists campaign against Home Rule for Ireland?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Movements for political and social reform, 1870-1914"
+ },
+ {
   "id": "hist-2022-ol-lm-s2t3a-q1",
   "subjectId": "history",
   "level": "ordinary",
@@ -47110,6 +47564,208 @@
    "attribution": "SEC History 2022 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
    "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
   }
+ },
+ {
+  "id": "hist-2022-ol-lm-s2t3b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "home-rule-party-1912-1918-michael",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 3 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The Home Rule party, 1912-1918.\n2. Michael Collins.\n3. Belfast during World War II.\n4. Evie Hone.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The pursuit of sovereignty and the impact of partition, 1912-1949"
+ },
+ {
+  "id": "hist-2022-ol-lm-s2t3c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "contribution-patrick-pearse-irish-affairs-did",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 3 C",
+  "questionText": "Answer one of the following:\n1. What was the contribution of Patrick Pearse to Irish affairs?\n2. What did W.T. Cosgrave achieve as head of government, 1923-1932?\n3. What main events took place during the Eucharistic Congress, 1932?\n4. How did de Valera pursue a policy of neutrality during World War II?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The pursuit of sovereignty and the impact of partition, 1912-1949"
  },
  {
   "id": "hist-2022-ol-lm-s2t4a-q1",
@@ -47299,6 +47955,208 @@
   }
  },
  {
+  "id": "hist-2022-ol-lm-s2t4b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "domhnall-mac-amhlaigh-anti-irish-sentiment",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 4 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Domhnall Mac Amhlaigh.\n2. Anti-Irish sentiment in Britain in the 19th century.\n3. Archbishop Daniel Mannix.\n4. The Orange Order in Canada and Australia.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    14
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The Irish diaspora, 1840-1966"
+ },
+ {
+  "id": "hist-2022-ol-lm-s2t4c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "grosse-isle-important-history-irish-emigration",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 4 C",
+  "questionText": "Answer one of the following:\n1. Why is Grosse Isle important in the history of Irish emigration?\n2. How successful was the Holy Ghost Mission to Nigeria, 1945-1966?\n3. What were the achievements of Bishop Edward Galvin and/or Mother Mary Martin?\n4. In what ways did Maureen O’Hara and/or Paul O’Dwyer illustrate Irish-American experience?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    14
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The Irish diaspora, 1840-1966"
+ },
+ {
   "id": "hist-2022-ol-lm-s2t6a-q1",
   "subjectId": "history",
   "level": "ordinary",
@@ -47472,6 +48330,208 @@
    "attribution": "SEC History 2022 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
    "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
   }
+ },
+ {
+  "id": "hist-2022-ol-lm-s2t6b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "changing-attitudes-towards-irish-language-1949",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 6 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Changing attitudes towards the Irish language, 1949-1989.\n2. Irish membership of the United Nations.\n3. The impact of the EEC on fisheries.\n4. Jack Lynch.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    14
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Government, economy and society in the Republic of Ireland, 1949-1989"
+ },
+ {
+  "id": "hist-2022-ol-lm-s2t6c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "did-lemass-whitaker-attempt-life-better",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 6 C",
+  "questionText": "Answer one of the following:\n1. How did Seán Lemass and/or T.K. Whitaker attempt to make life better for Irish people?\n2. What impact did RTÉ have on Irish society?\n3. What was the contribution of Archbishop John Charles McQuaid to Irish affairs?\n4. What did Charles Haughey achieve during his two terms as Taoiseach?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    14
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Government, economy and society in the Republic of Ireland, 1949-1989"
  },
  {
   "id": "hist-2022-ol-lm-s3t1a-q1",
@@ -47661,6 +48721,208 @@
   }
  },
  {
+  "id": "hist-2022-ol-lm-s3t1b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "clemens-metternich-robert-peel-serfdom-russia",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 1 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Clemens Metternich.\n2. Robert Peel.\n3. Serfdom in Russia.\n4. Ludwig van Beethoven.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    15
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Nationalism and state formation in Europe, 1815-1871"
+ },
+ {
+  "id": "hist-2022-ol-lm-s3t1c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "did-1848-revolution-germany-end-failure",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 1 C",
+  "questionText": "Answer one of the following:\n1. Why did the 1848 revolution in Germany end in failure?\n2. During the period 1815-1871, what moves did Italy make towards unity?\n3. What were the achievements of Charles Darwin and/or Victor Hugo?\n4. What changes did Haussmann bring about in the city of Paris?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    15
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Nationalism and state formation in Europe, 1815-1871"
+ },
+ {
   "id": "hist-2022-ol-lm-s3t2a-q1",
   "subjectId": "history",
   "level": "ordinary",
@@ -47834,6 +49096,208 @@
    "attribution": "SEC History 2022 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
    "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
   }
+ },
+ {
+  "id": "hist-2022-ol-lm-s3t2b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "anti-semitism-france-pope-leo-xiii",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 2 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Anti-Semitism in France.\n2. Pope Leo XIII.\n3. Wilfred Owen.\n4. Woodrow Wilson and Europe.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    15
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Nation states and international tensions, 1871-1920"
+ },
+ {
+  "id": "hist-2022-ol-lm-s3t2c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "did-wilhelm-contribute-international-affairs-developments",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 2 C",
+  "questionText": "Answer one of the following:\n1. What did Wilhelm II contribute to international affairs?\n2. What developments took place in the invention and early history of the motor car?\n3. What did women contribute to the war effort during World War I?\n4. What was the importance of Marie Curie and/or Rosa Luxemburg?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    15
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Nation states and international tensions, 1871-1920"
  },
  {
   "id": "hist-2022-ol-lm-s3t3a-q1",
@@ -48011,6 +49475,208 @@
   }
  },
  {
+  "id": "hist-2022-ol-lm-s3t3b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "vladimir-ilyich-lenin-stalin-show-trials",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 3 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Vladimir Ilyich Lenin.\n2. Stalin’s show trials.\n3. The Holocaust.\n4. Bing Crosby.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    15
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Dictatorship and democracy in Europe, 1920-1945"
+ },
+ {
+  "id": "hist-2022-ol-lm-s3t3c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "did-hitler-conduct-foreign-policy-between",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 3 C",
+  "questionText": "Answer one of the following:\n1. How did Hitler conduct foreign policy between 1933 and 1939?\n2. Why did the Jarrow March take place, and did it achieve its aims?\n3. How well did Winston Churchill and/or Josef Stalin lead his country during World War II?\n4. What was the contribution to cinema of Charlie Chaplin and/or Leni Riefenstahl?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    15
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Dictatorship and democracy in Europe, 1920-1945"
+ },
+ {
   "id": "hist-2022-ol-lm-s3t4a-q1",
   "subjectId": "history",
   "level": "ordinary",
@@ -48184,6 +49850,208 @@
    "attribution": "SEC History 2022 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
    "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
   }
+ },
+ {
+  "id": "hist-2022-ol-lm-s3t4b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "berlin-airlift-1948-1949-1973-oil",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 4 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The Berlin airlift, 1948-1949.\n2 The 1973 oil crisis.\n3. Simone de Beauvoir.\n4. Margaret Thatcher.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    16
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Division and realignment in Europe, 1945-1992"
+ },
+ {
+  "id": "hist-2022-ol-lm-s3t4c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "did-uprising-take-place-hungary-1956",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 4 C",
+  "questionText": "Answer one of the following:\n1. Why did an uprising take place in Hungary in 1956 and why did it end in failure?\n2. What was the impact on Europe of moves towards unity, 1945-1957?\n3. What changes were introduced by Mikhail Gorbachev in the Soviet Union?\n4. What did John Lennon contribute to popular culture and the mass media?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    16
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Division and realignment in Europe, 1945-1992"
  },
  {
   "id": "hist-2022-ol-lm-s3t5a-q1",
@@ -48367,6 +50235,208 @@
   }
  },
  {
+  "id": "hist-2022-ol-lm-s3t5b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "suez-crisis-1956-lom-conventions-chi",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 5 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The Suez crisis, 1956.\n2. The Lomé conventions.\n3. Ho Chi Minh.\n4. Nadine Gordimer.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    16
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "European retreat from empire and the aftermath, 1945-1990"
+ },
+ {
+  "id": "hist-2022-ol-lm-s3t5c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "did-britain-withdraw-india-problems-associated",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 5 C",
+  "questionText": "Answer one of the following:\n1. Why did Britain withdraw from India and what problems were associated with the withdrawal?\n2. Why did Katanga break away from the Congo and what was the outcome of that action?\n3. How did Charles de Gaulle respond to Algerian demands for independence?\n4. What part did Achmad Sukarno play in Indonesian history?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    16
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "European retreat from empire and the aftermath, 1945-1990"
+ },
+ {
   "id": "hist-2022-ol-lm-s3t6a-q1",
   "subjectId": "history",
   "level": "ordinary",
@@ -48540,6 +50610,208 @@
    "attribution": "SEC History 2022 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
    "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
   }
+ },
+ {
+  "id": "hist-2022-ol-lm-s3t6b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "harry-truman-cuban-missile-crisis-muhammad",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 6 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Harry Truman.\n2. The Cuban missile crisis.\n3. Muhammad Ali.\n4. Urban poverty, drugs and crime.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    16
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The United States and the world, 1945-1989"
+ },
+ {
+  "id": "hist-2022-ol-lm-s3t6c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "did-marilyn-monroe-represent-hollywood-american",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 6 C",
+  "questionText": "Answer one of the following:\n1. How did Marilyn Monroe represent Hollywood and the American Dream?\n2. How was the Montgomery bus boycott, 1955-1956, carried out and how successful was it?\n3. What was the importance of the 1969 moon landing?\n4. In what ways did Betty Friedan and/or Norman Mailer criticise aspects of American life? There is no examination material on this page.",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    11,
+    12,
+    16
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The United States and the world, 1945-1989"
  },
  {
   "id": "hist-2022-ol-em-s1-q1a",
@@ -48935,6 +51207,56 @@
   }
  },
  {
+  "id": "hist-2022-ol-em-s1-q4",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "1",
+  "topicId": "hist-em-irl-2",
+  "conceptId": "does-clerical-career-meiler-magrath-tell",
+  "questionRef": "2022 OL Early Modern Section 1 Q4",
+  "questionText": "What does the clerical career of Meiler Magrath tell us of life in Ireland at this time?",
+  "totalMarks": 20,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "Mark by the principle of Core Statement. Max = 20M"
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "Here, in question 4 of the DBQ, the examiner will be looking to award 5 marks each to four Core Statements for the full 20 marks allocation.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m."
+  },
+  "notes": "Early Modern field of study. The scheme prints '4. Contextualisation (20 marks) What does the clerical caree' for this ask and no model answer.",
+  "stem": "Case study: Meiler Magrath’s clerical career"
+ },
+ {
   "id": "hist-2022-ol-em-s2t1a-q1",
   "subjectId": "history",
   "level": "ordinary",
@@ -49110,6 +51432,208 @@
   }
  },
  {
+  "id": "hist-2022-ol-em-s2t1b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-em-irl-1",
+  "conceptId": "towns-guilds-policy-surrender-regrant-manus",
+  "questionRef": "2022 OL Early Modern Section 2 Topic 1 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Towns and guilds.\n2. The policy of Surrender and Regrant.\n3. Manus O’Donnell.\n4. The religious policies of Queen Mary I.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    25
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Reform and Reformation in Tudor Ireland, 1494-1558"
+ },
+ {
+  "id": "hist-2022-ol-em-s2t1c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-em-irl-1",
+  "conceptId": "gear-8th-earl-kildare-powerful-ireland",
+  "questionRef": "2022 OL Early Modern Section 2 Topic 1 C",
+  "questionText": "Answer one of the following:\n1. Why was Gearóid Mór, 8th earl of Kildare, so powerful in Ireland?\n2. What rights had women under Gaelic law?\n3. What changes did Henry VIII introduce in the church in Ireland?\n4. Why was the Laois/Offaly area subjected to plantation?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    25
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Reform and Reformation in Tudor Ireland, 1494-1558"
+ },
+ {
   "id": "hist-2022-ol-em-s2t3a-q1",
   "subjectId": "history",
   "level": "ordinary",
@@ -49283,6 +51807,208 @@
    "attribution": "SEC History 2022 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
    "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
   }
+ },
+ {
+  "id": "hist-2022-ol-em-s2t3b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-em-irl-3",
+  "conceptId": "elizabeth-butler-countess-ormond-cromwellian-transplantations",
+  "questionRef": "2022 OL Early Modern Section 2 Topic 3 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Elizabeth Butler, countess of Ormond.\n2. The Cromwellian transplantations.\n3. The Annals of the Four Masters.\n4. Richard Boyle and his family.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    25
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660"
+ },
+ {
+  "id": "hist-2022-ol-em-s2t3c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-em-irl-3",
+  "conceptId": "did-sir-thomas-wentworth-earl-strafford",
+  "questionRef": "2022 OL Early Modern Section 2 Topic 3 C",
+  "questionText": "Answer one of the following:\n1. How did Sir Thomas Wentworth (earl of Strafford) make enemies in Ireland and how did his enemies contribute to his downfall?\n2. How successful in Ireland were the military campaigns of Owen Roe O’Neill?\n3. What influence had Archbishop Rinuccini on Irish affairs?\n4. What was the importance of Louvain for Irish Catholics?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    25
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660"
  },
  {
   "id": "hist-2022-ol-em-s2t4a-q1",
@@ -49466,6 +52192,208 @@
   }
  },
  {
+  "id": "hist-2022-ol-em-s2t4b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-em-irl-4",
+  "conceptId": "samuel-louis-crommelin-archbishop-oliver-plunkett",
+  "questionRef": "2022 OL Early Modern Section 2 Topic 4 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Samuel Louis Crommelin.\n2. Archbishop Oliver Plunkett.\n3. Robert Boyle.\n4. Tories and Rapparees.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    25
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Establishing a colonial ascendancy, 1660-1715"
+ },
+ {
+  "id": "hist-2022-ol-em-s2t4c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-em-irl-4",
+  "conceptId": "notable-developments-took-place-restoration-dublin",
+  "questionRef": "2022 OL Early Modern Section 2 Topic 4 C",
+  "questionText": "Answer one of the following:\n1. What notable developments took place in Restoration Dublin?\n2. What part did Richard Talbot, earl of Tyrconnell, play in Irish affairs?\n3. What were the successes and failures in the military career of Patrick Sarsfield?\n4. How did William Molyneux contribute to Irish political life?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    25
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Establishing a colonial ascendancy, 1660-1715"
+ },
+ {
   "id": "hist-2022-ol-em-s2t5a-q1",
   "subjectId": "history",
   "level": "ordinary",
@@ -49647,6 +52575,208 @@
   }
  },
  {
+  "id": "hist-2022-ol-em-s2t5b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-em-irl-5",
+  "conceptId": "political-effects-seven-years-war-1756",
+  "questionRef": "2022 OL Early Modern Section 2 Topic 5 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Political effects of the Seven Years’ War, 1756-1763, in Ireland.\n2. Dean Jonathan Swift.\n3. Na Cúirteanna Filíochta.\n4. Margaret (Peg) Woffington.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    26
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770"
+ },
+ {
+  "id": "hist-2022-ol-em-s2t5c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-em-irl-5",
+  "conceptId": "evidence-given-trial-father-sheehy-outcome",
+  "questionRef": "2022 OL Early Modern Section 2 Topic 5 C",
+  "questionText": "Answer one of the following:\n1. What evidence was given at the trial of Father Sheehy and what was the outcome of the trial?\n2. Who were the Ponsonbys and why were they powerful?\n3. What conditions gave rise to the Whiteboys and what methods did they use?\n4. How did Charles O’Conor and/or Thomas Wyse help to improve the position of Catholics?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    26
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770"
+ },
+ {
   "id": "hist-2022-ol-em-s2t6a-q1",
   "subjectId": "history",
   "level": "ordinary",
@@ -49826,6 +52956,208 @@
    "attribution": "SEC History 2022 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
    "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
   }
+ },
+ {
+  "id": "hist-2022-ol-em-s2t6b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-em-irl-6",
+  "conceptId": "economic-growth-ireland-orange-order-rise",
+  "questionRef": "2022 OL Early Modern Section 2 Topic 6 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Economic growth in Ireland.\n2. The Orange Order.\n3. The rise of Belfast.\n4. Eibhlín Dhubh Ní Chonaill.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    26
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The end of the Irish kingdom and the establishment of the Union, 1770-1815"
+ },
+ {
+  "id": "hist-2022-ol-em-s2t6c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-em-irl-6",
+  "conceptId": "did-henry-grattan-hope-achieve-did",
+  "questionRef": "2022 OL Early Modern Section 2 Topic 6 C",
+  "questionText": "Answer one of the following:\n1. What did Henry Grattan hope to achieve and why did he fail?\n2. Why was Maynooth College established and what was its importance?\n3. What did Nano Nagle contribute to Irish life?\n4. What were the causes of the Wexford Rebellion, 1798, and how was it put down?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    26
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The end of the Irish kingdom and the establishment of the Union, 1770-1815"
  },
  {
   "id": "hist-2022-ol-em-s3t1a-q1",
@@ -50016,6 +53348,208 @@
   }
  },
  {
+  "id": "hist-2022-ol-em-s3t1b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-em-eur-1",
+  "conceptId": "hernan-cortes-martin-luther-astronomy-counter",
+  "questionRef": "2022 OL Early Modern Section 3 Topic 1 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Hernan Cortes.\n2. Martin Luther.\n3. Astronomy.\n4. The Counter-Reformation.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    27
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Europe from Renaissance to Reformation, 1492-1567"
+ },
+ {
+  "id": "hist-2022-ol-em-s3t1c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-em-eur-1",
+  "conceptId": "did-seville-become-port-new-world",
+  "questionRef": "2022 OL Early Modern Section 3 Topic 1 C",
+  "questionText": "Answer one of the following:\n1. How did Seville become the port of the New World?\n2. What was the influence of Niccolò Machiavelli and/or Desiderius Erasmus?\n3. In what ways did Jean Calvin make Geneva a centre of the Reformation?\n4. What did Michelangelo Buonarroti and/or Pieter Breughel the Elder contribute to culture?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    27
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Europe from Renaissance to Reformation, 1492-1567"
+ },
+ {
   "id": "hist-2022-ol-em-s3t2a-q1",
   "subjectId": "history",
   "level": "ordinary",
@@ -50189,6 +53723,208 @@
    "attribution": "SEC History 2022 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
    "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
   }
+ },
+ {
+  "id": "hist-2022-ol-em-s3t2b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-em-eur-2",
+  "conceptId": "council-trent-tycho-brahe-rise-muscovy",
+  "questionRef": "2022 OL Early Modern Section 3 Topic 2 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The Council of Trent.\n2. Tycho Brahe.\n3. The rise of Muscovy.\n4. The Holy Roman Empire under Rudolf II.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    27
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Religion and power: politics in the later sixteenth century, 1567-1609"
+ },
+ {
+  "id": "hist-2022-ol-em-s3t2c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-em-eur-2",
+  "conceptId": "successful-ruler-catherine-medici-part-played",
+  "questionRef": "2022 OL Early Modern Section 3 Topic 2 C",
+  "questionText": "Answer one of the following:\n1. How successful a ruler was Catherine de Medici?\n2. What part was played by Matteo Ricci in the Jesuit mission in China?\n3. What was the purpose of the Spanish Armada and why did it fail in its objective?\n4. What were the achievements of Jacobus Arminius and/or Michel de Montaigne?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    27
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Religion and power: politics in the later sixteenth century, 1567-1609"
  },
  {
   "id": "hist-2022-ol-em-s3t3a-q1",
@@ -50372,6 +54108,208 @@
   }
  },
  {
+  "id": "hist-2022-ol-em-s3t3b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-em-eur-3",
+  "conceptId": "revolt-catalans-women-work-family-queen",
+  "questionRef": "2022 OL Early Modern Section 3 Topic 3 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The revolt of the Catalans.\n2. Women, work and family.\n3. Queen Christina of Sweden.\n4. Peter Paul Rubens.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    27
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The eclipse of Old Europe, 1609-1660"
+ },
+ {
+  "id": "hist-2022-ol-em-s3t3c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-em-eur-3",
+  "conceptId": "did-cardinal-richelieu-aim-achieve-france",
+  "questionRef": "2022 OL Early Modern Section 3 Topic 3 C",
+  "questionText": "Answer one of the following:\n1. What did Cardinal Richelieu aim to achieve for France and did he succeed?\n2. What did you find interesting about the career of Galileo?\n3. What were the achievements of Gian Lorenzo Bernini and/or René Descartes?\n4. How important was Albrecht von Wallenstein in the Thirty Years War?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    27
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The eclipse of Old Europe, 1609-1660"
+ },
+ {
   "id": "hist-2022-ol-em-s3t4a-q1",
   "subjectId": "history",
   "level": "ordinary",
@@ -50545,6 +54483,208 @@
    "attribution": "SEC History 2022 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
    "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
   }
+ },
+ {
+  "id": "hist-2022-ol-em-s3t4b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-em-eur-4",
+  "conceptId": "isaac-newton-sir-henry-morgan-jan",
+  "questionRef": "2022 OL Early Modern Section 3 Topic 4 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Isaac Newton.\n2. Sir Henry Morgan.\n3. Jan de Witt.\n4. The Huguenots.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    28
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Europe in the age of Louis XIV, 1660-1715"
+ },
+ {
+  "id": "hist-2022-ol-em-s3t4c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-em-eur-4",
+  "conceptId": "aims-english-east-india-company-did",
+  "questionRef": "2022 OL Early Modern Section 3 Topic 4 C",
+  "questionText": "Answer one of the following:\n1. What were the aims of the (English) East India Company and how did its activities benefit England?\n2. Why did Peter the Great of Russia visit other countries and why did he develop the Streltsy?\n3. What did you find interesting about the Grand Tour and/or the court of Versailles?\n4. What was the influence of Sébastien le Prestre de Vauban and/or Gottfried Wilhelm Leibnitz?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    28
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Europe in the age of Louis XIV, 1660-1715"
  },
  {
   "id": "hist-2022-ol-em-s3t5a-q1",
@@ -50722,6 +54862,208 @@
   }
  },
  {
+  "id": "hist-2022-ol-em-s3t5b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-em-eur-5",
+  "conceptId": "poverty-disease-population-growth-robert-clive",
+  "questionRef": "2022 OL Early Modern Section 3 Topic 5 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Poverty, disease and population growth.\n2. Robert Clive.\n3. Maria Theresa of Austria.\n4. The duke of Bridgewater.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    28
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Establishing empires, 1715-1775"
+ },
+ {
+  "id": "hist-2022-ol-em-s3t5c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-em-eur-5",
+  "conceptId": "importance-encyclop-die-important-leader-catherine",
+  "questionRef": "2022 OL Early Modern Section 3 Topic 5 C",
+  "questionText": "Answer one of the following:\n1. What was the importance of the Encyclopédie?\n2. How important a leader was Catherine the Great?\n3. What political ambitions did Frederick the Great pursue in Europe?\n4. What did the West Indies slave plantations contribute to international trade?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    28
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Establishing empires, 1715-1775"
+ },
+ {
   "id": "hist-2022-ol-em-s3t6a-q1",
   "subjectId": "history",
   "level": "ordinary",
@@ -50895,6 +55237,208 @@
    "attribution": "SEC History 2022 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
    "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
   }
+ },
+ {
+  "id": "hist-2022-ol-em-s3t6b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-em-eur-6",
+  "conceptId": "william-pitt-madame-sta-emancipation-jews",
+  "questionRef": "2022 OL Early Modern Section 3 Topic 6 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. William Pitt.\n2. Madame de Staёl.\n3. The emancipation of the Jews.\n4. Ludwig van Beethoven.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    28
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Empires in revolution, 1775-1815"
+ },
+ {
+  "id": "hist-2022-ol-em-s3t6c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-em-eur-6",
+  "conceptId": "conditions-led-growth-manchester-important-maximilien",
+  "questionRef": "2022 OL Early Modern Section 3 Topic 6 C",
+  "questionText": "Answer one of the following:\n1. What conditions led to the growth of Manchester?\n2. How important was Maximilien de Robespierre in the French Revolution?\n3. What was the influence of Mary Wollstonecraft and/or Joseph Fouché?\n4. What were the successes and failures of Napoleon as a military leader? There is no examination material on this page.",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    23,
+    24,
+    28
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Empires in revolution, 1775-1815"
  },
  {
   "id": "hist-2023-hl-lm-s1-q1a",
