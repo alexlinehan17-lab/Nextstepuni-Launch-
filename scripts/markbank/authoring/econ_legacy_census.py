@@ -228,6 +228,34 @@ def census_legacy(year, level, path=None):
     return set(leaves), texts, [path], q_marks, flags
 
 
+def text_and_heads(path):
+    """The paper as one string and where each question head falls in it.
+
+    For econ_refcheck.py, the citation gate: the same lines, in the same
+    reading order, with the same rules for a section banner and a head as the
+    census, so the gate and the denominator agree on which question a printed
+    ask belongs to. Heads are keyed (section, question).
+    """
+    pieces, heads, pos = [], [], 0
+    section, q, seen_part = None, None, set()
+    for pno, x, text, bold in _lines(path):
+        b = BANNER.match(text)
+        if b and b.group(1) != section and (section is None or (b.group(1) > section and section in seen_part)):
+            section, q = b.group(1), None
+        h = HEAD.match(text)
+        if section and h and bold and x < HEAD_MAX_X:
+            n = int(h.group(1))
+            if (q is None and n == 1) or (q is not None and q < n <= q + 2):
+                q = n
+                heads.append((pos, (section, n)))
+                seen_part.add(section)
+        # Normalised BEFORE its offset is counted, so every offset stays true.
+        text = re.sub(r'\s+', ' ', text.replace('\xa0', ' ').replace('Ɵ', 'ti')).strip()
+        pieces.append(text)
+        pos += len(text) + 1
+    return ' '.join(pieces), heads
+
+
 def _label(k):
     sec, q, letter, roman = k
     return f'Section {sec} Q{q}' + (f'({letter})' if letter else '') + (f'({roman})' if roman else '')

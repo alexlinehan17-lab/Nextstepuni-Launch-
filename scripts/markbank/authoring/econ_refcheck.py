@@ -39,6 +39,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 PAPERS = os.path.join(ROOT, 'examiner-reports', 'economics', 'papers')
 
 from econ_refs import HAND_CHECKED  # noqa: E402
+from econ_legacy_census import LEGACY_LAST_YEAR, text_and_heads  # noqa: E402
 
 # The heading, on a line of its own — "Question 14". Matched loosely enough to
 # survive the two papers that print it as "Question 14 (75 marks)".
@@ -59,7 +60,7 @@ RUN = 6
 # A word this common in the paper is not worth trying as an anchor; the run is
 # found from one of the card's other words instead.
 ANCHOR_MAX = 200
-REF = re.compile(r'^(\d{4})\s+(HL|OL)(\s+Section A)?\s+Q(\d{1,2})((?:\([a-z]+\))*)')
+REF = re.compile(r'^(\d{4})\s+(HL|OL)(\s+Section ([AB]))?\s+Q(\d{1,2})((?:\([a-z]+\))*)')
 
 
 class Paper:
@@ -74,6 +75,13 @@ class Paper:
     """
 
     def __init__(self, year, level):
+        if int(year) <= LEGACY_LAST_YEAR:
+            # The old-syllabus paper heads its questions "1." in the margin and
+            # restarts Section B at 1: read it the way the census reads it, and
+            # key each question (section, number).
+            self.text, self.heads = text_and_heads(os.path.join(PAPERS, f'{year}-{level}-paper.pdf'))
+            self._index()
+            return
         with pymupdf.open(os.path.join(PAPERS, f'{year}-{level}-paper.pdf')) as doc:
             # Every paper sets its headings with non-breaking spaces.
             # Non-breaking spaces in every paper's headings; and the 2025 pair
@@ -90,6 +98,9 @@ class Paper:
             if want in (int(m.group(1)), int(joined)):
                 self.heads.append((m.start(), want))
                 want += 1
+        self._index()
+
+    def _index(self):
         self.at = [o for o, _ in self.heads]
         self.spans = {n: (o, self.heads[i + 1][0] if i + 1 < len(self.heads) else len(self.text))
                       for i, (o, n) in enumerate(self.heads)}
@@ -198,7 +209,9 @@ def main():
         if not m:
             lost.append(f"{c['id']}: unreadable reference {c.get('questionRef')!r}")
             continue
-        year, lvl, want, path_ = m.group(1), m.group(2).lower(), int(m.group(4)), m.group(5)
+        year, lvl, want, path_ = m.group(1), m.group(2).lower(), int(m.group(5)), m.group(6)
+        if int(year) <= LEGACY_LAST_YEAR:
+            want = (m.group(4), want)
         key = (year, lvl)
         if key not in papers:
             papers[key] = Paper(year, lvl)

@@ -1324,3 +1324,64 @@ JSON identical; Economics 2021-2026 reconcile rows identical except 2024 HL
 2025/2026 HL marks-checksum flags, which compared those papers against the
 misread old-paper sum of 66 and no longer fire because the checksum now compares
 each era with itself (`era` on the old papers).
+
+## 2019 Higher English, old syllabus (lane, 2026-11-04)
+
+The first old-syllabus paper carded. All 12 paper and 36 scheme pages viewed
+(scheme pp1-5 cover, notes, index and the Summary of Mark Allocations, which
+agrees with every tariff; paper p12 blank). 70 routes for the 70 printed asks:
+14 Section A cards (Q7(a)(i)-(ii) is one card: one 5 + 4 cell over both ticks)
+and 56 Section B cards (Q8(a)(ii) is two stance routes because the scheme lists
+YES and NO separately). Census `economics/census/census-2019-hl.py`; review and
+17 Atlas mappings by `record/record-2019-hl.py` (Section B keyed B1-B8 as the
+Atlas numbers it); bindings `record/bind-2019-hl.py`; 17 crops
+`crops/crop-2019-hl.py` (10 hidden scheme solutions, 7 paper crops).
+
+Ids carry the section (`econ-2019-hl-sa-q1-a`, `econ-2019-hl-sb-q1-a-i`) and so
+do citations ("2019 HL Section B Q1(a)(i)"), because Section B restarts at 1.
+`econ_legacy_lib.py` holds the old-paper lifting helpers: the scheme prints
+"graded" under its marks cells and the extractor leaves it inside sentences
+("...the ability to price graded set..."), so a slice holding it mid-text is
+refused and re-sliced from the block-order rendering or the table cells, which
+hold the sentence whole; a trailing one is cut off.
+
+Decisions on tariffs the scheme prints without attributing:
+- Section A Q6 "11 + 6" beside both definitions, and Q7(a) "5 + 4" beside both
+  ticks: questionTotal, unpriced rows (the 2021 HL Q15(a) layout).
+- Section B Q4(a)(i) any two of three pairs, "2 @ 6 and 2 @ 4" for the four
+  definitions: one menu of all six definitions, claim 4, steps 6, 6, 4, 4 (the
+  2021 HL Q12(a)(ii) layout).
+- Section B Q5(a)(ii) "4 @ 5" beside four printed lists (advantages and
+  disadvantages, banks and consumers), the four heads the ask names: one heading
+  row per list at 5.
+- Section B Q5(b) "4 @ 4 (2 + 2) + 4": four arguments at 4, and the further 4 as
+  a row carrying the scheme's own note beside it ("Note: Must link answers to
+  current economic climate ..."). The scheme does not label that 4; the note is
+  the only other thing it prints there.
+- "graded" single cells (e.g. 5, 6) are one row with the scheme's explanation;
+  graded totals over a list (B1(c)(i) 12, B6(a)(i) 8, B6(a)(iii) 9, B6(b)(iii) 8)
+  are questionTotal with the listed points as unpriced rows.
+Workings set as fractions (A Q1(b), B3(c)(i), B7(b)(iii)) are hidden scheme
+crops, with the row holding only the printed answer; the reconstructed
+fractions appendix drops their grouping and is not used. The nominal-wage
+footnote mark is set back as the superscript the page prints ("inflation²)").
+
+Topic review: Section A Q9 is filed under The Labour Market and Fiscal Policy
+(its scheme reasons include income tax revenue and pensions); five commercial
+headings for this paper are recorded as reference anomalies (A Q3 under
+monetary policy, A Q9 under government intervention, B Q4(c) twice, B Q6 under
+globalisation).
+
+Also in this commit:
+- `econ_refcheck.py` reads old papers with the census's own line reader
+  (`econ_legacy_census.text_and_heads`), keyed (section, question): 0 wrong,
+  936 confirmed, 3 unplaced (the 2026 OL three, unchanged).
+- #294 had edited four Economics cards (2022 HL Q12(b)(ii) labels; 2023 OL
+  Q12(a)(i), Q13(b)(ii) and its trade route) in the authored file and deck only,
+  so any regeneration reverted them. Their shapes are now produced by
+  `econ_2022_hl.py` and `econ_2023_ol.py`; regenerating leaves all 889 earlier
+  cards byte-identical.
+
+Checks: econ_review 19/66; provcheck 3761 claims, 0 untraceable; build 923
+cards, 0 dropped; reconcile 862/2,206, 2019 HL 70/70, 0 excluded, 0 orphans;
+cardlint clean; seven Economics suites pass.

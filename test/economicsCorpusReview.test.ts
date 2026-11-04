@@ -9,6 +9,7 @@ import { reviewedArchiveEntries } from '../components/PaperTrail/indexLookup';
 import { curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/examTopics/registry';
 import reviews from '../data/examTopics/economics-sec-topic-reviews.json';
 import inventory from '../scripts/markbank/authoring/economics-source-inventory.json';
+import higher2019Review from '../scripts/markbank/authoring/reviews/economics-2019-hl-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -318,9 +319,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(48);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(54);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(18);
+    // 2019 Higher English (old syllabus) is the nineteenth reviewed variant.
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(47);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(53);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(19);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -926,6 +928,64 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     const text = ORDINARY.filter(c => c.year === 2022)
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows])).join('\n');
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'Adapted from', 'Leaving Certificate']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 70 independently counted 2019 Higher routes, tariffs, sources and Atlas topics', () => {
+    // The old-syllabus paper: Section B restarts at Question 1, so the Atlas numbers it B1-B8
+    // and every citation names its section.
+    const cards = CARDS.filter(card => card.year === 2019);
+    const tasks = higher2019Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(70);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2019Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2019, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2019 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with the Q8(a)(ii) stance counted once.
+      const once = question.tasks.filter(task => !task.cardId.endsWith('-no'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('lifts 2019 Higher wording from the paper and hides its solutions until reveal', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2019-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // Workings set as fractions and every completed diagram wait for the reveal.
+    for (const [s, crop] of [['sa-q1-b', 'p06-q1b-working'], ['sa-q2', 'p06-q2-ticks'], ['sa-q5-ii', 'p07-q5-diagram'],
+      ['sb-q1-b-i', 'p11-q1bi-diagram'], ['sb-q2-b-i', 'p15-q2bi-diagram'], ['sb-q3-c-i', 'p19-q3ci-working'],
+      ['sb-q7-b-iii', 'p32-q7biii-working']] as const) {
+      expect(card(s).figure?.solution, s).toBe(true);
+      expect(card(s).figure?.src, s).toContain(`economics-2019-HL-scheme-${crop}.png`);
+    }
+    // A solution in the figure slot takes the whole printed question as the question crop.
+    for (const c of CARDS.filter(item => item.year === 2019 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+    }
+    expect(card('sa-q2').questionFigure?.src).toContain('economics-2019-HL-paper-p02-q2-question.png');
+    // Rows carry the scheme's answer, never a flattened fraction or the marks column.
+    expect(card('sa-q1-b').rows[0].verbatim).toBe('MUO = 5 utils.');
+    expect(card('sb-q3-c-i').rows[0].verbatim).toBe('+ 2.43');
+    expect(card('sa-q2').rows.map(r => r.verbatim.split(' — ')[0])).toEqual(['TRUE', 'FALSE', 'TRUE', 'TRUE']);
+    // The lifted text only: stems, asks, rows and options (guidance notes may say "Graded.").
+    const text = CARDS.filter(c => c.year === 2019)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'inflation2']) {
       expect(text, junk).not.toContain(junk);
     }
   });

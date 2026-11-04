@@ -18,11 +18,11 @@
     "referenceReportedAssociations": 1851,
     "referenceOfficialAssociations": 1120,
     "referenceMockAssociations": 731,
-    "matchedAssociations": 822,
+    "matchedAssociations": 817,
     "sourceBlockedAssociations": 217,
-    "referenceAnomalyAssociations": 81,
+    "referenceAnomalyAssociations": 86,
     "matchedLogicalCards": 517,
-    "matchedQuestionTopicLinks": 740,
+    "matchedQuestionTopicLinks": 735,
     "retainedLocalLogicalCards": 32,
     "localPaperVariants": 66,
     "localPhysicalMappings": 1098,
@@ -3353,7 +3353,7 @@
       "section": "A",
       "question": 9,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -3361,7 +3361,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "9"
-      }
+      },
+      "reason": "Reviewed SEC source: Older workers, the labour force and extended working lives are The Labour Market (2-1); the scheme’s reasons include income tax revenue and pension spending, so the question is also Fiscal Policy & the Budget (3-1). a 1 @ 9 then 1 @ 4 (graded) from six headings; b 4 one measure from seven. 17. The (i)/(ii) are ruled answer slots."
     },
     {
       "topicId": "economics-higher-24-government-intervention",
@@ -3372,7 +3373,7 @@
       "section": "B",
       "question": 4,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -3380,7 +3381,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "B4"
-      }
+      },
+      "reason": "Reviewed SEC source: Average and marginal cost and the cost table are Costs of Production, Revenue & Profit (1-5); the marginal revenue product of labour and skills shortages are The Labour Market (2-1). Eight tasks totalling 75. a(i) any two of three pairs: the scheme prices four definitions 2 @ 6 and 2 @ 4 without tying either price to a pair or term: one menu of its six definitions, claim 4, steps 6, 6, 4, 4 (the 2021 HL Q12(a)(ii) layout); a(ii) 2 @ 5 (2 + 3) from six. b(i) 7 ATC 400; b(ii) 6 TC 900; b(iii) 3 MC 450; b(iv) 4 two units (MC = MR = 100). c(i) 3 @ 5 (2 + 3) from six; c(ii) 2 @ 5 (2 + 3) from six."
     },
     {
       "topicId": "economics-higher-24-government-intervention",
@@ -6856,7 +6858,7 @@
       "section": "B",
       "question": 4,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -6864,7 +6866,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "B4"
-      }
+      },
+      "reason": "Reviewed SEC source: Average and marginal cost and the cost table are Costs of Production, Revenue & Profit (1-5); the marginal revenue product of labour and skills shortages are The Labour Market (2-1). Eight tasks totalling 75. a(i) any two of three pairs: the scheme prices four definitions 2 @ 6 and 2 @ 4 without tying either price to a pair or term: one menu of its six definitions, claim 4, steps 6, 6, 4, 4 (the 2021 HL Q12(a)(ii) layout); a(ii) 2 @ 5 (2 + 3) from six. b(i) 7 ATC 400; b(ii) 6 TC 900; b(iii) 3 MC 450; b(iv) 4 two units (MC = MR = 100). c(i) 3 @ 5 (2 + 3) from six; c(ii) 2 @ 5 (2 + 3) from six."
     },
     {
       "topicId": "economics-higher-42-fiscal-policy-and-the-budget-framework",
@@ -8250,7 +8253,7 @@
       "section": "A",
       "question": 3,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -8258,7 +8261,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "3"
-      }
+      },
+      "reason": "Reviewed SEC source: Development against growth is Growth & Development (4-0). 2 @ 8 graded: economic development and economic growth, two required headings at 8."
     },
     {
       "topicId": "economics-higher-44-monetary-policy-and-price-level",
@@ -9496,7 +9500,7 @@
       "section": "B",
       "question": 6,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -9504,7 +9508,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "B6"
-      }
+      },
+      "reason": "Reviewed SEC source: Price indices, real wages, inflation and deflation are Monetary Policy & Inflation (3-3); international competitiveness is International Trade & Competitiveness (4-2). Seven tasks totalling 75. a(i) 8 graded over seven printed steps (unpriced rows); a(ii) 2 @ 4 nominal and real wage; a(iii) 9 graded over the three printed answers (unpriced rows). b(i) 5 + 5 (2 + 3) demand-pull and cost-push; b(ii) 3 @ 4 (2 + 2) from seven; b(iii) 8 graded over four printed steps (unpriced rows). c 4 @ 5 (2 + 3) from eight."
     },
     {
       "topicId": "economics-higher-52-globalisation",
@@ -20760,8 +20765,8 @@
   "secTopicReviews": {
     "subjectId": "economics",
     "authority": "SEC question paper; canonical curriculum node IDs",
-    "reviewedAt": "2026-10-12",
-    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping). Remaining 48 physical variants pending.",
+    "reviewedAt": "2026-11-04",
+    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2019 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 47 physical variants pending.",
     "questions": [
       {
         "level": "higher",
@@ -25718,6 +25723,269 @@
         ],
         "reason": "The factors of production are Scarcity & Choice (0-1), as 2022 and 2023 OL file the same table (the earlier card filed it under Economics as a Way of Thinking); the sugar tax and market failure are Market Failure (2-2); Brexit and exports are International Trade & Competitiveness (4-2). Five tasks totalling 75. a 3 @ 8 land, labour and enterprise rows. b(i) one 2 @ 10 (6 + 4) cell for one social AND one economic benefit: one card with two required headings at 10 (the earlier card was an any-two menu); b(ii) 7 (4 + 3) one of three accounts. c(i) one 2 @ 8 (4 + 4) cell for an effect on consumers AND on businesses: one card with two required headings at 8; c(ii) 1 @ 8 (4 + 4) from five. Several IDs carry q14/q15 prefixes; their citations are Q16.",
         "paperSha256": "b01d03ceb002ae7dffbb38d9f1f077bfe78445b3dfb7bf951eb1ee4e9a3bf344"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "1",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-1-1"
+        ],
+        "reason": "The equi-marginal principle of consumer behaviour is The Consumer (1-1). a 6 (3 + 3) the equi-marginal principle. b 10 MU of the 7th orange = 5 utils (the working is printed as fractions; hidden crop).",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "2",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-2-1"
+        ],
+        "reason": "Derived demand for labour, the Live Register, cyclical unemployment and the backward-bending labour supply curve are The Labour Market (2-1). Four TRUE/FALSE ticks at 4 @ 4, one card with a row per statement (completed table hidden until reveal).",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "3",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-4-0"
+        ],
+        "reason": "Development against growth is Growth & Development (4-0). 2 @ 8 graded: economic development and economic growth, two required headings at 8.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "4",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-0-0"
+        ],
+        "reason": "The contributions of an economist to economic thought are Economics as a Way of Thinking (0-0). 2 @ 8: any two of the scheme’s six headed contributions. The (i)/(ii) are ruled answer slots, not parts.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "5",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0"
+        ],
+        "reason": "Long-run equilibrium in imperfect competition is Market Structures (2-0). i 4 @ 2 the four labels; ii 3 @ 1 P1, C1, Q1; iii 2 (normal profit only) + 3 (AR = AC). 16.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "6",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-4-2"
+        ],
+        "reason": "A free trade area against a customs union is International Trade & Competitiveness (4-2). One cell 11 + 6 beside the two definitions without naming which earns which: one card, unpriced rows.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "7",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1"
+        ],
+        "reason": "The debt-to-GDP ratio and the unemployment rate as indicators of the economy’s position are read here as Fiscal Policy & the Budget (3-1). a 5 + 4 beside the two ticks (70% debt-to-GDP, 6% unemployment) without naming which earns which: one card for (a)(i)-(ii), unpriced rows. b 4 + 4 one trend explanation per indicator.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "8",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1"
+        ],
+        "reason": "Raising the threshold for the higher income tax rate is Fiscal Policy & the Budget (3-1). Advantages 1 @ 9 then 1 @ 4 (graded) from five headings; disadvantage 4 from two. 17. The (i)/(ii) are ruled answer slots.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "9",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          5
+        ],
+        "canonicalNodeIds": [
+          "economics-2-1",
+          "economics-3-1"
+        ],
+        "reason": "Older workers, the labour force and extended working lives are The Labour Market (2-1); the scheme’s reasons include income tax revenue and pension spending, so the question is also Fiscal Policy & the Budget (3-1). a 1 @ 9 then 1 @ 4 (graded) from six headings; b 4 one measure from seven. 17. The (i)/(ii) are ruled answer slots.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B1",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          6
+        ],
+        "canonicalNodeIds": [
+          "economics-1-1",
+          "economics-1-0",
+          "economics-1-3"
+        ],
+        "reason": "Individual and market demand are The Consumer (1-1); shifts in market equilibrium are The Market Economy (1-0); rent control as a price ceiling is Government Intervention (1-3). Seven tasks totalling 75. a(i) 5 + 5 the two definitions; a(ii) 3 @ 5 (2 + 3) from six bullets. b(i)-(iii) each diagram 5 (D1, S1, S2, price, quantity at 1 each) + explanation 5 (the reason 2, shift, price and quantity 1 each); hidden solution diagrams. c(i) 12 graded off the printed diagram; c(ii) 2 x 4 (2 + 2) from six.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B2",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          7
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0",
+          "economics-1-3"
+        ],
+        "reason": "Monopoly, price discrimination and large-scale firms are Market Structures (2-0); regulation of anti-competitive behaviour is Government Intervention (1-3). Six tasks totalling 75. a(i) 3 @ 5 (2 + 3) from five; a(ii) 5 graded. b(i) diagram 11 (11 @ 1) + explanation 9 (9 @ 1, the nine printed bullets); hidden solution diagram. b(ii) 5 + 5 (2 + 3) monopoly and perfect competition. c(i) 1 @ 9 then 2 @ 4 from six, an example required in each; c(ii) 2 x 4 from four.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B3",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          7
+        ],
+        "canonicalNodeIds": [
+          "economics-1-4"
+        ],
+        "reason": "Price, cross and the uses of elasticity are Elasticity (1-4). Seven tasks totalling 75. a(i) 5; a(ii) 2 @ 6 then 2 @ 4 from eight, an example required in each. b(i) 5 + 5 (2 + 3) for each consumer group; b(ii) diagrams 2 @ 6 (2 + 2 + 2) + explanations 2 + 2 (hidden solution diagrams); b(iii) 2 @ 2. c(i) calculation 12 (CED +2.43, working printed as fractions, hidden crop) + explanation 4 graded; c(ii) 4 graded.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B4",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          8
+        ],
+        "canonicalNodeIds": [
+          "economics-1-5",
+          "economics-2-1"
+        ],
+        "reason": "Average and marginal cost and the cost table are Costs of Production, Revenue & Profit (1-5); the marginal revenue product of labour and skills shortages are The Labour Market (2-1). Eight tasks totalling 75. a(i) any two of three pairs: the scheme prices four definitions 2 @ 6 and 2 @ 4 without tying either price to a pair or term: one menu of its six definitions, claim 4, steps 6, 6, 4, 4 (the 2021 HL Q12(a)(ii) layout); a(ii) 2 @ 5 (2 + 3) from six. b(i) 7 ATC 400; b(ii) 6 TC 900; b(iii) 3 MC 450; b(iv) 4 two units (MC = MR = 100). c(i) 3 @ 5 (2 + 3) from six; c(ii) 2 @ 5 (2 + 3) from six.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B5",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          9
+        ],
+        "canonicalNodeIds": [
+          "economics-3-4",
+          "economics-3-3",
+          "economics-3-1"
+        ],
+        "reason": "Money and electronic money are Financial Sector (3-4); the ECB interest rate is Monetary Policy & Inflation (3-3); the budget surplus, the national debt and government objectives are Fiscal Policy & the Budget (3-1). Six tasks totalling 75. a(i) 2 @ 5 (2 + 3) from seven; a(ii) 4 @ 5 (2 + 3) beside the four printed lists (advantages and disadvantages, for the banking industry and for consumers), the four heads the ask names: one heading row each at 5. b 4 @ 4 (2 + 2) from six, + 4 printed beneath it beside the scheme’s note that answers must be linked to the current economic climate. c(i) 6; c(ii) 7; c(iii) 2 @ 6 (3 + 3) from five.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B6",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          9
+        ],
+        "canonicalNodeIds": [
+          "economics-3-3",
+          "economics-4-2"
+        ],
+        "reason": "Price indices, real wages, inflation and deflation are Monetary Policy & Inflation (3-3); international competitiveness is International Trade & Competitiveness (4-2). Seven tasks totalling 75. a(i) 8 graded over seven printed steps (unpriced rows); a(ii) 2 @ 4 nominal and real wage; a(iii) 9 graded over the three printed answers (unpriced rows). b(i) 5 + 5 (2 + 3) demand-pull and cost-push; b(ii) 3 @ 4 (2 + 2) from seven; b(iii) 8 graded over four printed steps (unpriced rows). c 4 @ 5 (2 + 3) from eight.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B7",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          10
+        ],
+        "canonicalNodeIds": [
+          "economics-3-0"
+        ],
+        "reason": "National income statistics, the multiplier and the shadow economy are National Income (3-0). Eight tasks totalling 75. a(i) 2 @ 7 graded from five; a(ii) 2 @ 8 graded from nine. b(i) 5; b(ii) 5 MPS 0.4; b(iii) calculation 5 (multiplier 1.25, printed as fractions, hidden crop) + explanation 4; b(iv) 6 €40bn. c(i) 5; c(ii) 3 @ 5 (2 + 3) from five.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2019,
+        "n": "B8",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          11
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1"
+        ],
+        "reason": "Progressive and regressive taxes, carbon tax, overspending, corporation tax and a just social policy are Fiscal Policy & the Budget (3-1). Seven routes; 75 with the (a)(ii) stance counted once. a(i) 5 + 5 (4 + 1) each tax with an example; a(ii) 3 @ 5 (2 + 3): the scheme credits YES and NO with different lists, so two stance routes. b(i) 3 @ 5 (2 + 3) from five; b(ii) 3 @ 5 (2 + 3) from four. c(i) 6 graded; c(ii) 2 @ 7 (4 + 3) from eight.",
+        "paperSha256": "5262151f076c8eaaca0953eaf64ace5712347b5cd25fdfc81f7914b728603da5"
       }
     ]
   }
