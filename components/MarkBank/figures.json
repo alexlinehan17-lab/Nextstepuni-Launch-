@@ -56421,5 +56421,38 @@
   "year": 2021,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-paper-q1-table": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q1-table.png",
+  "md5": "3f83ebf00a2faf512632be2ee700a3d7",
+  "alt": "The table printed with Question 1: Column A lists the assignments a = 5, b = \"Hello World\", c = True, d = [\"apple\", \"banana\", \"orange\"] and e = 2.718; Column B (Data Type) is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q1",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-paper-q9-code": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q9-code.png",
+  "md5": "fa070ed64019913b364856bb06483304",
+  "alt": "The seven-line Python program printed with Question 9 (a = 1, b = 2, while a < 4: a = a + 1, b = b + a, then print(b)), above the trace table with columns Step, a, b and a < 4; step 1 is filled in as 1, 2, True and steps 2 to 4 and the Output box below it are blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q9",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-paper-q10-algo": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q10-algo.png",
+  "md5": "1458b55f0c4963b29af6bc147474620e",
+  "alt": "The linear search algorithm printed with Question 10, for a list L and a value x: Step 1 set i to 0; Step 2 set n to the number of items in L; Step 3 if i >= n go to Step 8; Step 4 if L[i] = x go to Step 7; Step 5 set i to i + 1; Step 6 go to Step 3; Step 7 print position i and go to Step 9; Step 8 print \"item not found\"; Step 9 exit.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q10",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
  }
 }

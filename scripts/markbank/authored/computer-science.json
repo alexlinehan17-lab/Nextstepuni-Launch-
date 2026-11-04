@@ -17723,5 +17723,148 @@
   "stem": "The following questions are based on the code in part (b).",
   "questionFigureKey": "computer-science-2021-HL-paper-q13c-iv",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2021-ol-q1",
+  "topicId": "cs-2-4",
+  "conceptId": "choose-appropriate-python-data-type-list",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 OL Q1",
+  "questionText": "Choose the appropriate Python data type from the following list and place it in Column B to match the variable assignments in Column A. Float Boolean Integer String List",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "a = 5 — Integer",
+    "marks": 1,
+    "contextNote": "Each correct item 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "b = \"Hello World\" — String",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "c = True — Boolean",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "d = [\"apple\", \"banana\", \"orange\"] — List",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "e = 2.718 — Float",
+    "marks": 1
+   }
+  ],
+  "questionFigureKey": "computer-science-2021-OL-paper-q1-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2021-ol-q9",
+  "topicId": "cs-2-2",
+  "conceptId": "complete-trace-table-determine-output-python",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 OL Q9",
+  "questionText": "Complete the trace table below to determine the output of the following Python program after it has completed running. The first row of the trace table has been completed for you.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "2 2 4 True 3 3 7 True 4 4 11 False",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Each correct row/column 1 mark (max 3 marks) Any one value correct 1 mark (total)"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Answer: 11",
+    "marks": 2,
+    "contextNote": "Correct output 2 marks"
+   }
+  ],
+  "questionFigureKey": "computer-science-2021-OL-paper-q9-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2021-ol-q10-a",
+  "topicId": "cs-2-2",
+  "conceptId": "output-algorithm-when-searching-values-x",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 OL Q10(a)",
+  "questionText": "What is the output of this algorithm when you are searching for the following values of x? x = 21",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Answer: 2",
+    "marks": 3,
+    "contextNote": "Both correct 5 marks Any one correct 3 marks"
+   }
+  ],
+  "stem": "The linear search algorithm shown below is to be applied to the following data set: L = [10, 25, 21, 15, 85, 69, 74, 22, 19, 6]",
+  "questionFigureKey": "computer-science-2021-OL-paper-q10-algo",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2021-ol-q10-b",
+  "topicId": "cs-2-2",
+  "conceptId": "output-algorithm-when-searching-values-x",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 OL Q10(b)",
+  "questionText": "What is the output of this algorithm when you are searching for the following values of x? x = 3",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Answer: item not found",
+    "marks": 2,
+    "contextNote": "Both correct 5 marks Any one correct 3 marks"
+   }
+  ],
+  "stem": "The linear search algorithm shown below is to be applied to the following data set: L = [10, 25, 21, 15, 85, 69, 74, 22, 19, 6]",
+  "questionFigureKey": "computer-science-2021-OL-paper-q10-algo",
+  "questionFigureIncludesPrompt": false
  }
 ]
