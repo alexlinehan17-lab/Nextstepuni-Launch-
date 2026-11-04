@@ -22,8 +22,8 @@ def S(page, *rect):
     return lift(Y, L, 'scheme', page, rect)
 
 
-def P(page, *rect, more=()):
-    return lift(Y, L, 'paper', page, rect, more=more)
+def P(page, *rect, more=(), items=()):
+    return lift(Y, L, 'paper', page, rect, more=more, items=items)
 
 
 _C6 = (96, 418, 318, 435)             # paper p6: the knurling tool (c)
@@ -142,8 +142,12 @@ CARDS = [
     # ---- Question 1, Section B ("Any three parts @ 12 + 12 + 11 marks") ----
     dict(key=(1, 'i', None),
          why='The three items are photographed and captioned under (i); scheme p6 '
-             'describes each under its name, "Any one", "Award 12 (11) Marks".',
+             'describes each under its name, "Any one", "Award 12 (11) Marks". The '
+             'question is lifted with each caption on its own line, as the paper '
+             'sets them under their pictures.',
          topic='eng-2-15', stem=False,
+         question_lift=P(2, 60, 418, 390, 436, items=[(55, 530, 220, 552), (260, 530, 330, 552),
+                                                 (405, 530, 560, 552)]),
          lifted=[[join(S(6, 88, 113, 240, 130), S(6, 88, 126, 471, 226)),
                   join(S(6, 88, 265, 138, 282), S(6, 88, 278, 474, 351)),
                   join(S(6, 88, 389, 225, 406), S(6, 88, 402, 479, 516))]],
@@ -496,9 +500,10 @@ CARDS = [
          why='The OR branch: "Name each of the electronic components shown below and '
              'outline the function of each", three photographs captioned (i)-(iii); scheme '
              'p17 names each with its use after its roman, "Name & function Award 3 @ 5 '
-             'Marks". The question is lifted with the caption it answers.',
+             'Marks". The caption number stays with the picture, not the question text; '
+             'the card\'s reference names the roman.',
          topic='eng-2-16', stem=False,
-         question_lift=P(7, *_C7B, more=[(147, 761, 162, 778)]),
+         question_lift=P(7, *_C7B),
          lifted=[join(S(17, 88, 724, 140, 742), S(17, 235, 724, 465, 742))], marks=[5],
          total=5,
          question_figure='engineering-2016-OL-paper-q7cor-crop',
@@ -507,7 +512,7 @@ CARDS = [
          why='The OR branch\'s second component; scheme p17 names it with its use, "Name & '
              'function Award 3 @ 5 Marks".',
          topic='eng-2-16', stem=False,
-         question_lift=P(7, *_C7B, more=[(299, 761, 318, 778)]),
+         question_lift=P(7, *_C7B),
          lifted=[join(S(17, 88, 738, 186, 755), S(17, 235, 738, 384, 755))], marks=[5],
          total=5,
          question_figure='engineering-2016-OL-paper-q7cor-crop',
@@ -516,7 +521,7 @@ CARDS = [
          why='The OR branch\'s third component; scheme p17 names it with its use, "Name & '
              'function Award 3 @ 5 Marks".',
          topic='eng-2-16', stem=False,
-         question_lift=P(7, *_C7B, more=[(462, 761, 484, 779)]),
+         question_lift=P(7, *_C7B),
          lifted=[join(S(17, 88, 752, 186, 769), S(17, 234, 752, 473, 783))], marks=[5],
          total=5,
          question_figure='engineering-2016-OL-paper-q7cor-crop',

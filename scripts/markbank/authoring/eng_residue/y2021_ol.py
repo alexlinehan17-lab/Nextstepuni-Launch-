@@ -22,8 +22,8 @@ def S(page, *rect):
     return lift(Y, L, 'scheme', page, rect)
 
 
-def P(page, *rect, more=()):
-    return lift(Y, L, 'paper', page, rect, more=more)
+def P(page, *rect, more=(), items=()):
+    return lift(Y, L, 'paper', page, rect, more=more, items=items)
 
 
 Q1_PRICE = ("Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries "
@@ -129,8 +129,10 @@ CARDS = [
          why='Paper p2 sets the ask on one line and the three choices as '
              'captions under their pictures; "electronic component" is the '
              'LED\'s caption, beside the ask. Scheme pp5-6 describe each '
-             'choice, "Award 7 (6) Marks".',
-         question_lift=P(2, 70, 425, 400, 443, more=[(40, 530, 560, 548)]),
+             'choice, "Award 7 (6) Marks". Each caption is lifted on its own '
+             'line, as the paper sets them.',
+         question_lift=P(2, 70, 425, 400, 443, items=[(70, 530, 155, 548), (260, 530, 330, 548),
+                                                 (430, 530, 525, 548)]),
          lifted=[[S(5, 68, 121, 456, 254), S(5, 68, 413, 456, 531),
                   S(6, 68, 87, 456, 220)]],
          row_kind='anyN', group=(1, 7), marks=[7], tariff='fixed', total=7,
@@ -219,6 +221,23 @@ CARDS = [
                  S(10, 88, 530, 360, 575)],
          marks=[2, 2, 2], total=6,
          question_figure='engineering-2021-OL-paper-q2c-crop'),
+    dict(key=(4, 'a', 'i'), topic='eng-2-10',
+         replaces='the shipped question carried the three conditions\' bullets as '
+                  'font glyphs (U+F0B7) run into one line, and the three flame names '
+                  'were one row under a question total of 9, so no name could be '
+                  'claimed alone',
+         why='Paper p5 sets the three gas conditions as a bulleted list under the '
+             'ask; scheme p14 names the flame for each on its own line, "Flame names '
+             'Award 3 @ 3 Marks", and the grid prices them "Three parts @ 3 marks". '
+             'The question is lifted without the bullets\' glyphs, each condition on '
+             'its own line as printed.',
+         question_lift=P(5, 110, 70, 560, 86, items=[(130, 94, 400, 112),
+                                                     (130, 110, 400, 128),
+                                                     (130, 126, 400, 145)]),
+         lifted=[S(14, 70, 163, 300, 180), S(14, 70, 178, 300, 195),
+                 S(14, 70, 193, 300, 210)],
+         marks=[3, 3, 3], total=9,
+         notes="The scheme prints 'Flame names Award 3 @ 3 Marks'."),
     dict(key=(4, 'c', 'i'),
          why='Tool B is the tap wrench photographed and captioned on p5; '
              'priced by the grid\'s "Three parts @ 5 marks".',

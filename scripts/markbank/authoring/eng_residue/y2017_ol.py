@@ -22,8 +22,8 @@ def S(page, *rect):
     return lift(Y, L, 'scheme', page, rect)
 
 
-def P(page, *rect, more=()):
-    return lift(Y, L, 'paper', page, rect, more=more)
+def P(page, *rect, more=(), items=()):
+    return lift(Y, L, 'paper', page, rect, more=more, items=items)
 
 
 _A3 = (84, 82, 450, 98)               # paper p4: Q3(a)'s lead-in
@@ -156,8 +156,12 @@ CARDS = [
     # ---- Question 1, Section B ("Any three parts @ 12 + 12 + 11 Marks") ----
     dict(key=(1, 'i', None),
          why='The three items are photographed and captioned under (i); scheme p6 '
-             'describes each under its name, "Any one", "Award 12 (11) Marks".',
+             'describes each under its name, "Any one", "Award 12 (11) Marks". The '
+             'question is lifted with each caption on its own line, as the paper '
+             'sets them under their pictures.',
          topic='eng-2-15', stem=False,
+         question_lift=P(2, 60, 457, 390, 475, items=[(60, 568, 200, 586), (230, 568, 395, 586),
+                                                 (450, 568, 520, 586)]),
          lifted=[[join(S(6, 88, 101, 216, 117), S(6, 88, 116, 436, 234)),
                   join(S(6, 88, 248, 238, 264), S(6, 88, 262, 477, 322)),
                   join(S(6, 88, 336, 141, 352), S(6, 88, 350, 476, 454))]],
@@ -403,9 +407,13 @@ CARDS = [
          question_figure='engineering-2017-OL-paper-q5a-crop',
          notes="The scheme prints 'Identify Component Award 2 @ 3 Marks'."),
     dict(key=(5, 'b', None),
-         why='A lead-in over four terms set as romans, "any three"; scheme pp13-14 '
-             'describe each under its name, "Award 3 @ 5 Marks". The reader joins (a)\'s '
-             'figure letters to (i), so the question is lifted from the page.',
+         why='Paper p6 asks "Describe any three of the following terms" over four terms '
+             'set as romans; scheme pp13-14 head the part "Any two descriptions" but award '
+             '"3 @ 5 Marks", "Total (15) Marks", and describe each term under its name. '
+             'The paper decides the count a student is asked for, so the card asks for '
+             'three at the scheme\'s 5 each, and its note quotes the scheme\'s heading. '
+             'The reader joins (a)\'s figure letters to (i), so the question is lifted '
+             'from the page.',
          topic='eng-1-9',
          question_lift=P(6, 84, 403, 414, 419, more=[(84, 430, 226, 514)]),
          lifted=[[join(S(13, 101, 640, 176, 656), S(13, 99, 654, 413, 685)),
@@ -413,7 +421,8 @@ CARDS = [
                   join(S(14, 104, 50, 219, 66), S(14, 109, 65, 444, 95)),
                   join(S(14, 108, 109, 229, 125), S(14, 109, 123, 432, 213))]],
          row_kind='anyN', group=(3, 5), marks=[15], tariff='fixed', total=15,
-         notes="The scheme prints 'Award 3 @ 5 Marks'."),
+         notes="The paper asks for any three. The scheme heads this part 'Any two "
+               "descriptions' but prints 'Award 3 @ 5 Marks' and 'Total (15) Marks'."),
     dict(key=(5, 'c', None),
          why='A lead-in over three plastics set as romans, "any two"; scheme p14 gives '
              'applications for each on its own line, each lifted with its plastic. "Any '

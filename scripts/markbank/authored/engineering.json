@@ -1184,7 +1184,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2016 HL Q1(q)",
-  "questionText": "Stereolithography and Selective Laser Sintering are two forms of Rapid Prototyping. Explain one of these processes with regard to: Materials Principle of operation Safety.",
+  "questionText": "Stereolithography and Selective Laser Sintering are two forms of Rapid Prototyping. Explain one of these processes with regard to:\nMaterials\nPrinciple of operation\nSafety.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1371,7 +1371,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2016 HL Q2(b)(iii)",
-  "questionText": "The results shown below were obtained from tensile tests on two non-ferrous metals, metal A and metal B. Compare metal A and metal B under the following headings: Ductility Tensile strength.",
+  "questionText": "The results shown below were obtained from tensile tests on two non-ferrous metals, metal A and metal B. Compare metal A and metal B under the following headings:\nDuctility\nTensile strength.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1993,7 +1993,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2016 HL Q5(c)",
-  "questionText": "Describe, with the aid of a suitable diagram(s), oxy-acetylene welding with reference to each of the following: equipment used flame types integrated safety features applications.",
+  "questionText": "Describe, with the aid of a suitable diagram(s), oxy-acetylene welding with reference to each of the following:\nequipment used\nflame types\nintegrated safety features\napplications.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -2909,7 +2909,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2016 OL Q1(i)",
-  "questionText": "Describe the main operating features of any one of the following: Worm and wheel mechanism Tailstock Vacuum forming machine.",
+  "questionText": "Describe the main operating features of any one of the following:\nWorm and wheel mechanism\nTailstock\nVacuum forming machine.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -4137,7 +4137,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2016 OL Q7(c)(i)",
-  "questionText": "Name each of the electronic components shown below and outline the function of each component named. (i)",
+  "questionText": "Name each of the electronic components shown below and outline the function of each component named.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -4163,7 +4163,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2016 OL Q7(c)(ii)",
-  "questionText": "Name each of the electronic components shown below and outline the function of each component named. (ii)",
+  "questionText": "Name each of the electronic components shown below and outline the function of each component named.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -4189,7 +4189,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2016 OL Q7(c)(iii)",
-  "questionText": "Name each of the electronic components shown below and outline the function of each component named. (iii)",
+  "questionText": "Name each of the electronic components shown below and outline the function of each component named.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -7053,7 +7053,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2017 OL Q1(i)",
-  "questionText": "Describe the main operating features of any one of the following: Hydraulic lifting platform Ratchet and pawl mechanism Scroll saw.",
+  "questionText": "Describe the main operating features of any one of the following:\nHydraulic lifting platform\nRatchet and pawl mechanism\nScroll saw.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -7963,7 +7963,7 @@
     }
    }
   ],
-  "notes": "The scheme prints 'Award 3 @ 5 Marks'."
+  "notes": "The paper asks for any three. The scheme heads this part 'Any two descriptions' but prints 'Award 3 @ 5 Marks' and 'Total (15) Marks'."
  },
  {
   "id": "eng-2017-ol-q5-c",
@@ -11323,7 +11323,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 OL Q1(i)",
-  "questionText": "Describe the main operating features of any one of the following: Four-jaw independent chuck Strip heater Knurling tool.",
+  "questionText": "Describe the main operating features of any one of the following:\nFour-jaw independent chuck\nStrip heater\nKnurling tool.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -15602,7 +15602,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 OL Q1(i)",
-  "questionText": "Describe the main operating features of any one of the following: Pop riveting gun Shears Tailstock.",
+  "questionText": "Describe the main operating features of any one of the following:\nPop riveting gun\nShears\nTailstock.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -23073,30 +23073,6 @@
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
  },
  {
-  "id": "eng-2021-ol-q4-a-i",
-  "topicId": "eng-2-10",
-  "conceptId": "type-flame-produced-each-following-oxy",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 OL Q4(a)(i)",
-  "questionText": "Name the type of flame produced for each of the following oxy‐acetylene gas conditions:  Excess acetylene  Excess oxygen  An equal balance between oxygen and acetylene.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 9,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Excess acetylene: Carburising flame Excess oxygen: Oxidising flame Equal amounts: Neutral flame",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints 'Three parts @ 3 marks'."
- },
- {
   "id": "eng-2021-ol-q4-a-ii",
   "topicId": "eng-2-10",
   "conceptId": "steps-necessary-ensure-successful-soft-soldered",
@@ -23789,7 +23765,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2021 OL Q1(i)",
-  "questionText": "Describe the main operating features of any one of the following: Air compressor Strip heater Three‐jaw chuck.",
+  "questionText": "Describe the main operating features of any one of the following:\nAir compressor\nStrip heater\nThree‐jaw chuck.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -24115,6 +24091,42 @@
   ],
   "questionFigureKey": "engineering-2021-OL-paper-q2c-crop",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q4-a-i",
+  "topicId": "eng-2-10",
+  "conceptId": "type-flame-produced-each-following-oxy",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q4(a)(i)",
+  "questionText": "Name the type of flame produced for each of the following oxy‐acetylene gas conditions:\nExcess acetylene\nExcess oxygen\nAn equal balance between oxygen and acetylene.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Excess acetylene: Carburising flame",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Excess oxygen: Oxidising flame",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Equal amounts: Neutral flame",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Flame names Award 3 @ 3 Marks'."
  },
  {
   "id": "eng-2021-ol-q4-c-i",

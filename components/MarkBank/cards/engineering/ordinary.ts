@@ -161,7 +161,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2016 Ordinary Level — © State Examinations Commission.",
     id: "eng-2016-ol-q1-i", topicId: "eng-2-15", conceptId: "main-operating-features-any-following-worm",
     section: "A", questionRef: "2016 OL Q1(i)",
-    questionText: "Describe the main operating features of any one of the following: Worm and wheel mechanism Tailstock Vacuum forming machine.",
+    questionText: "Describe the main operating features of any one of the following:\nWorm and wheel mechanism\nTailstock\nVacuum forming machine.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Worm and wheel mechanism A worm and wheel mechanism is a gear arrangement in which a worm, in the form of a screw, drives a wheel similar to a spur gear. A worm and wheel mechanism is used to change the direction of rotation through 90°, reduce rotational speed and increase output torque. This gear system is often used in project work to change the high speed of DC electrical motors into more useful speeds and torques. The worm drives the wheel, if the wheel tries to drive the worm, the system is designed to lock.", marks: 12, accepts: ["Tailstock The tailstock is part of a centre lathe which can be moved along the bed slideways of the lathe and may be clamped in any desired position. The bore of the tailstock barrel is tapered to take a lathe centre, which is used to support the outer end of long work. The tailstock barrel can also accommodate drill chucks, taper shank drills and reamers.","Vacuum forming machine A vacuum forming machine is used to heat a plastic sheet before pulling the air out from below it, causing a vacuum. Because of the vacuum, the soft plastic sheet is pressed down over a pattern by atmospheric pressure. In school a vacuum forming machine is used to form / shape thin sheets of plastic, usually polystyrene into 3D hallow shapes such as dishes or box like shapes. To achieve this a vacuum forming machine includes electrical heating elements to soften the plastic sheet which has been clamped, a movable table to allow the pattern to be raised up into the sheet and a vacuum pump to extract the air."] },
@@ -818,7 +818,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2016 Ordinary Level — © State Examinations Commission.",
     id: "eng-2016-ol-q7-c-i", topicId: "eng-2-16", conceptId: "part",
     section: "A", questionRef: "2016 OL Q7(c)(i)",
-    questionText: "Name each of the electronic components shown below and outline the function of each component named. (i)",
+    questionText: "Name each of the electronic components shown below and outline the function of each component named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(i) LED: Can be used as a power on indicator in circuits.", marks: 5 },
@@ -840,7 +840,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2016 Ordinary Level — © State Examinations Commission.",
     id: "eng-2016-ol-q7-c-ii", topicId: "eng-2-16", conceptId: "part",
     section: "A", questionRef: "2016 OL Q7(c)(ii)",
-    questionText: "Name each of the electronic components shown below and outline the function of each component named. (ii)",
+    questionText: "Name each of the electronic components shown below and outline the function of each component named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(ii) Toggle switch: Used to turn circuits on or off.", marks: 5 },
@@ -862,7 +862,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2016 Ordinary Level — © State Examinations Commission.",
     id: "eng-2016-ol-q7-c-iii", topicId: "eng-2-16", conceptId: "page-7-7-blank-page-page",
     section: "A", questionRef: "2016 OL Q7(c)(iii)",
-    questionText: "Name each of the electronic components shown below and outline the function of each component named. (iii)",
+    questionText: "Name each of the electronic components shown below and outline the function of each component named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(iii) Fixed resistor: Prevents too much current getting to components and damaging them.", marks: 5 },
@@ -1018,7 +1018,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2017 Ordinary Level — © State Examinations Commission.",
     id: "eng-2017-ol-q1-i", topicId: "eng-2-15", conceptId: "main-operating-features-any-following-hydraulic",
     section: "A", questionRef: "2017 OL Q1(i)",
-    questionText: "Describe the main operating features of any one of the following: Hydraulic lifting platform Ratchet and pawl mechanism Scroll saw.",
+    questionText: "Describe the main operating features of any one of the following:\nHydraulic lifting platform\nRatchet and pawl mechanism\nScroll saw.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Hydraulic lifting platform The hydraulic lifting platform consists of a hydraulic ram attached to one side of a scissor/parallel linkage mechanism. The other side of the linkage mechanism is attached to a fixed pivot. When hydraulic oil is compressed inside the hydraulic ram, the scissor arms either move closer together or further apart. As one side of the scissor arm is secured to a fixed pivoted at the bottom, movement of the hydraulic arm opens or closes the scissor mechanism resulting in lifting or lowering the platform.", marks: 12, accepts: ["Ratchet and pawl mechanism A ratchet and pawl mechanism is used when rotation is required in one direction only. As the ratchet is rotated clockwise the pawl pushes outwards as it lifts over the ratchet’s teeth. However, if the ratchet tries to rotate anti-clockwise the pawl does not release thereby preventing rotation.","Scroll saw A scroll saw includes an electric motor and a crank mechanism. The crank mechanism converts the rotary motion of the motor into reciprocating motion of a thin blade. The up and down motion of the thin blade can be used to cut intricate shapes in wood or metals. A small rubber bellows, fixed to the crank mechanism, is used to produce a small air flow which is directed at the cutting face to remove waste material as it is cut. A guard is attached to the top of the scroll saw arm and should always be used when cutting."] },
@@ -1933,7 +1933,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Ordinary Level — © State Examinations Commission.",
     id: "eng-2018-ol-q1-i", topicId: "eng-2-11", conceptId: "main-operating-features-any-following-four",
     section: "A", questionRef: "2018 OL Q1(i)",
-    questionText: "Describe the main operating features of any one of the following: Four-jaw independent chuck Strip heater Knurling tool.",
+    questionText: "Describe the main operating features of any one of the following:\nFour-jaw independent chuck\nStrip heater\nKnurling tool.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Four jaw independent chuck The jaws in this chuck can be moved independently of one another, each being controlled by its own screw. They are also reversible and therefore only one set is required. The four jaw independent chuck is used for eccentric turning and for gripping square, round, rectangular and irregular shapes. The work can be centered more accurately in this chuck than in the self-centering one, but it takes longer. The concentric circles on the face of the chuck serve as a guide when positioning the work.", marks: 12, accepts: ["Strip heater A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by thermostatically controlling the heating temperature.","Knurling tool A knurling tool is used on a centre lathe to apply a grip to the surface of a piece i.e. scriber / centre punch. The knurling tool is fitted to the tool post and set at 90⁰ to work. The knurling tool has two opposing rollers which are pressed into the piece and when moved parallel to the axis of the work will produce a diamond pattern on the surface of the material."] },
@@ -2953,7 +2953,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Ordinary Level — © State Examinations Commission.",
     id: "eng-2019-ol-q1-i", topicId: "eng-2-11", conceptId: "main-operating-features-any-following-pop",
     section: "A", questionRef: "2019 OL Q1(i)",
-    questionText: "Describe the main operating features of any one of the following: Pop riveting gun Shears Tailstock.",
+    questionText: "Describe the main operating features of any one of the following:\nPop riveting gun\nShears\nTailstock.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Pop riveting gun A pop riveting gun is used to create a pop riveted joint in sheet metal. A pop rivet is placed into the gun and passed through a pre-drilled hole in the metals to be joined. As the handles of the gun are squeezed, a clamping mechanism grips the shaft of the rivet and draws it back. The enlarged end of the shaft causes the remaining part of the rivet to expand thereby clamping the sheet metal together. When the tensile force on the rivet gets too great the shaft breaks off leaving the pop rivet joint behind.", marks: 12, accepts: ["Shears The material is clamped into position. A moving blade then comes down across a fixed blade to cut the material by a shearing action. For larger shears the moving blade may be set on an angle or \"rocked\" in order to shear the material progressively from one side to the other; this angle is referred to as the shear angle.","Tailstock The tailstock is part of a centre lathe which can be moved along the bedway. The tailstock facilitates drilling, tapping, reaming or supporting the outer end of long work. A chuck or rotating centre can be fitted into the barrel and this can be moved forward or back by rotating a hand wheel located at the back of the tailstock. A second lever can be used to clamp the tailstock in any desired position on the bedway."] },
@@ -3946,19 +3946,6 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2021-ol-q4-a-i", topicId: "eng-2-10", conceptId: "type-flame-produced-each-following-oxy",
-    section: "A", questionRef: "2021 OL Q4(a)(i)",
-    questionText: "Name the type of flame produced for each of the following oxy‐acetylene gas conditions: • Excess acetylene • Excess oxygen • An equal balance between oxygen and acetylene.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 9,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Excess acetylene: Carburising flame Excess oxygen: Oxidising flame Equal amounts: Neutral flame", marks: null },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q4-a-ii", topicId: "eng-2-10", conceptId: "steps-necessary-ensure-successful-soft-soldered",
     section: "A", questionRef: "2021 OL Q4(a)(ii)",
     questionText: "Describe two steps necessary to ensure a successful soft soldered joint.",
@@ -4360,7 +4347,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2021-ol-q1-i", topicId: "eng-2-11", conceptId: "main-operating-features-any-following-electronic",
     section: "A", questionRef: "2021 OL Q1(i)",
     stem: "Give brief answers to any eight of the following:",
-    questionText: "Describe the main operating features of any one of the following: Air compressor Strip heater Three‐jaw chuck.",
+    questionText: "Describe the main operating features of any one of the following:\nAir compressor\nStrip heater\nThree‐jaw chuck.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "The compressor show has an electric motor, a compressor unit, and a storage tank. The electric motor drives the compressor unit which sucks air into a cylinder through an inlet valve. The air is then squashed (compressed) by a piston and forced into the storage tank. As the compressor continues to run, pressure builds up inside the storage tank. When it reaches a set level the electrical motor cuts off, stopping the compressor. The storage tank now stores the compressed air for use. When the pressure drops inside the storage tank, the electric motor starts again to bring up the level of pressure inside the storage tank.", marks: 7, accepts: ["A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required, the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by controlling the heating temperature.","A 3-jaw chuck is used for holding round or hexagonal work. The chuck has three jaws which are located on a scroll plate. When the chuck key is used, the scroll plate rotates moving all three jaws together, automatically centering the work when the chuck is closed (self-centering). Two sets of jaws are supplied with these chucks. One set for gripping small diameter and hollow work. The other for gripping large diameter work. The jaws of each set are stamped 1, 2 and 3 and corresponding numbers are stamped beside each slot on the chuck. This is to ensure that each jaw is returned to its proper slot after removal."] },
@@ -4567,6 +4554,21 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission",
           "includesPrompt": false
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q4-a-i", topicId: "eng-2-10", conceptId: "type-flame-produced-each-following-oxy",
+    section: "A", questionRef: "2021 OL Q4(a)(i)",
+    questionText: "Name the type of flame produced for each of the following oxy‐acetylene gas conditions:\nExcess acetylene\nExcess oxygen\nAn equal balance between oxygen and acetylene.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Excess acetylene: Carburising flame", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Excess oxygen: Oxidising flame", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "Equal amounts: Neutral flame", marks: 3 },
+    ],
   } as SecCard,
   {
     ...base, kind: "diagram",

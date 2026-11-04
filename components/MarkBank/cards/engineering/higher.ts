@@ -644,7 +644,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2016 Higher Level — © State Examinations Commission.",
     id: "eng-2016-hl-q1-q", topicId: "eng-2-13", conceptId: "stereolithography-selective-laser-sintering-forms-rapid",
     section: "A", questionRef: "2016 HL Q1(q)",
-    questionText: "Stereolithography and Selective Laser Sintering are two forms of Rapid Prototyping. Explain one of these processes with regard to: Materials Principle of operation Safety.",
+    questionText: "Stereolithography and Selective Laser Sintering are two forms of Rapid Prototyping. Explain one of these processes with regard to:\nMaterials\nPrinciple of operation\nSafety.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Stereolithography (SLA) Stereolithography is the most widely used rapid prototyping technology. It can produce highly accurate and detailed polymer parts. SLA was the first rapid prototyping process, introduced in 1988, by 3-D Systems Inc. SLA uses a low-power, highly focused UV laser to produce a three dimensional object in a vat of liquid photosensitive polymer. Stereolithography builds plastic parts or objects one layer at a time by tracing a laser beam on the surface of a vat of liquid photopolymer. This class of material originally developed for the printing and packaging industries, it quickly solidifies wherever the laser beam strikes the surface of the liquid. Once one layer is completely traced, it is lowered a small distance into the vat and a second layer is traced right on top of the first. The self-adhesive property of the material causes the layers to bond to one another and eventually form a complete, three- dimensional object after many such layers are formed. Uncured materials can be toxic with the need for ventilation.", marks: 10, accepts: ["Selective Laser Sintering (SLS) The basic concept of SLS is similar to that of SLA. SLS uses a moving laser beam to trace and selectively sinter powdered polymer or metal composite materials. The powder is kept at elevated temperature. Unlike SLA, special support structures are not required because the excess powder in each layer as a support. With the metal composite material, the SLS process solidifies a polymer binder material around steel powder one slice at a time forming the part. The part is then placed in a furnace where the polymer binder is burned away. SLS allows for a wide range of materials, including nylon, glass-filled nylon and metal composites. Fine particles of some metals can be dangerous to inhale making ventilation systems important in this process."] },
@@ -795,7 +795,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2016 Higher Level — © State Examinations Commission.",
     id: "eng-2016-hl-q2-b-iii", topicId: "eng-3-8", conceptId: "compare-metal-metal-b-under-following",
     section: "A", questionRef: "2016 HL Q2(b)(iii)",
-    questionText: "The results shown below were obtained from tensile tests on two non-ferrous metals, metal A and metal B. Compare metal A and metal B under the following headings: Ductility Tensile strength.",
+    questionText: "The results shown below were obtained from tensile tests on two non-ferrous metals, metal A and metal B. Compare metal A and metal B under the following headings:\nDuctility\nTensile strength.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Metal A shows good elasticity, ductility and a high tensile strength.", marks: 2 },
@@ -1255,7 +1255,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2016 Higher Level — © State Examinations Commission.",
     id: "eng-2016-hl-q5-c", topicId: "eng-2-10", conceptId: "aid-suitable-diagram-s-oxy-acetylene",
     section: "A", questionRef: "2016 HL Q5(c)",
-    questionText: "Describe, with the aid of a suitable diagram(s), oxy-acetylene welding with reference to each of the following: equipment used flame types integrated safety features applications.",
+    questionText: "Describe, with the aid of a suitable diagram(s), oxy-acetylene welding with reference to each of the following:\nequipment used\nflame types\nintegrated safety features\napplications.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Oxy-acetylene equipment include: Acetylene cylinder Oxygen cylinder Oxygen and acetylene hoses Welding torch Pressure gauges Flashback arrestors.", marks: null },

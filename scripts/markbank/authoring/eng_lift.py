@@ -89,18 +89,7 @@ def _lines(year, level, doc, page, rect):
     return [(y, sorted(ws, key=lambda w: w[0])) for y, ws in rows]
 
 
-def lift(year, level, doc, page, rect, *, bullet=True, more=()):
-    """The text inside rect on page (1-based) of the paper or scheme.
-
-    `more` adds further rectangles on the same page, read in turn: a printed
-    sentence whose own column is interrupted by a picture's caption ("any one
-    of the following:" with "electronic component" set beside it, over the
-    captions of the three pictures it means).
-    """
-    rows = []
-    for r in (rect, *more):
-        rows += _lines(year, level, doc, page, r)
-    text = ' '.join(' '.join(w[4] for w in ws) for _, ws in rows)
+def _clean(text):
     text = unligature(' '.join(text.replace('\xa0', ' ').split()))
     # Glyphs the shared ligature fold (schemeText.mjs) does not know, as the
     # 2026 Engineering schemes set them: Calibri's "tf" ligature reaches the
@@ -109,10 +98,46 @@ def lift(year, level, doc, page, rect, *, bullet=True, more=()):
     # word into the .md, where the provenance gate finds it.
     for glyph, letters in ENG_GLYPHS.items():
         text = text.replace(glyph, letters)
+    return text
+
+
+def lift(year, level, doc, page, rect, *, bullet=True, more=(), items=()):
+    """The text inside rect on page (1-based) of the paper or scheme.
+
+    `more` adds further rectangles on the same page, read in turn: a printed
+    sentence whose own column is interrupted by a picture's caption ("any one
+    of the following:" with "electronic component" set beside it, over the
+    captions of the three pictures it means).
+
+    `items` are rectangles each holding ONE printed list item -- a line whose
+    bullet the font draws (Symbol's U+F0B7, which the text layer drops) or one
+    of several captions set side by side under their pictures. Each is set on
+    a line of its own after the text above it, so "with reference to each of
+    the following: equipment used flame types ..." keeps the list the paper
+    prints instead of running its items into one phrase. Only line breaks are
+    added; every word is still the page's.
+    """
+    rows = []
+    for r in (rect, *more):
+        rows += _lines(year, level, doc, page, r)
+    text = _clean(' '.join(' '.join(w[4] for w in ws) for _, ws in rows))
+    lines = []
+    for r in items:
+        line = _clean(' '.join(' '.join(w[4] for w in ws)
+                               for _, ws in _lines(year, level, doc, page, r)))
+        if not line:
+            raise ValueError(f'{year} {level} {doc} p{page} {r}: the item box lifts nothing')
+        lines.append(line)
     if bullet:
         text = BULLET.sub('', text).strip()
     if not text:
         raise ValueError(f'{year} {level} {doc} p{page} {rect}: the box lifts nothing')
+    if lines:
+        if doc != 'paper':
+            raise ValueError('items= sets a printed list on its lines: paper questions only')
+        return Lift('\n'.join([text] + lines),
+                    (year, level, doc, page, tuple(rect), tuple(map(tuple, more)),
+                     ('items',) + tuple(map(tuple, items))))
     return Lift(text, (year, level, doc, page, tuple(rect))
                 if not more else (year, level, doc, page, tuple(rect), tuple(map(tuple, more))))
 

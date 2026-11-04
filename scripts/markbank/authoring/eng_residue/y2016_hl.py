@@ -19,8 +19,8 @@ def S(page, *rect):
     return lift(Y, L, 'scheme', page, rect)
 
 
-def P(page, *rect, more=()):
-    return lift(Y, L, 'paper', page, rect, more=more)
+def P(page, *rect, more=(), items=()):
+    return lift(Y, L, 'paper', page, rect, more=more, items=items)
 
 
 # Paper stems the romans are lifted with.
@@ -317,9 +317,12 @@ CARDS = [
     dict(key=(1, 'q', None),
          why='Section B. "Explain one of these processes": scheme pp8-9 explain each under '
              'its name, each beside a drawing, shown with the answer; "(Any one) 10". The '
-             'question is lifted from the page without the bullets\' font glyphs.',
+             'question is lifted from the page without the bullets\' font glyphs, each '
+             'bulleted heading on its own line as printed.',
          topic='eng-2-13', stem=False,
-         question_lift=P(4, 98, 544, 520, 575, more=[(130, 581, 245, 633)]),
+         question_lift=P(4, 98, 544, 520, 575, items=[(130, 581, 245, 599),
+                                                      (130, 597, 245, 616),
+                                                      (130, 614, 245, 633)]),
          lifted=[[join(S(8, 104, 352, 237, 369), S(8, 104, 365, 555, 424),
                        S(8, 104, 614, 559, 728)),
                   join(S(9, 104, 48, 270, 65), S(9, 104, 62, 555, 176),
@@ -382,8 +385,10 @@ CARDS = [
          replaces=NEW + 'carried the results table as its stem, read flat, and the '
                   'headings\' bullets as unreadable font glyphs',
          why='Scheme p11 compares the metals in a sentence each, "2 + 2". The question is '
-             'lifted with (b)\'s stimulus, without the bullets\' glyphs.',
-         question_lift=P(5, *_B2, more=[(133, 547, 434, 565), (168, 563, 253, 598)]),
+             'lifted with (b)\'s stimulus, without the bullets\' glyphs, each heading on '
+             'its own line as printed.',
+         question_lift=P(5, *_B2, more=[(133, 547, 434, 565)],
+                         items=[(168, 563, 253, 580), (168, 580, 253, 598)]),
          lifted=[S(11, 104, 131, 434, 148), S(11, 104, 145, 548, 176)],
          marks=[2, 2], total=4,
          question_figure='engineering-2016-HL-paper-q2b-crop',
@@ -562,9 +567,11 @@ CARDS = [
              'first branch, oxy-acetylene welding "with reference to each of" four '
              'headings; scheme pp16-17 answer each under its heading, the equipment beside '
              'a labelled drawing, shown with the answer. "16" for the part. The question '
-             'is lifted without the bullets\' font glyphs.',
+             'is lifted without the bullets\' font glyphs, each heading on its own line '
+             'as printed.',
          topic='eng-2-10', stem=False,
-         question_lift=P(8, *_C5A, more=[(170, 485, 300, 554)]),
+         question_lift=P(8, *_C5A, items=[(170, 485, 300, 503), (170, 503, 300, 519),
+                                          (170, 519, 300, 536), (170, 536, 300, 554)]),
          lifted=[join(S(16, 70, 405, 248, 423), S(16, 104, 422, 245, 512)),
                  join(S(16, 70, 551, 168, 568), S(16, 70, 564, 287, 613)),
                  join(S(16, 70, 640, 208, 657), S(16, 100, 654, 543, 744)),
