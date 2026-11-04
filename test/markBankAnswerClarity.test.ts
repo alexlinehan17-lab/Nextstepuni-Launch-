@@ -481,10 +481,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => row.kind === 'point' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
     // "… 5M + 5M Max =" left on a row by the tariff reader: the printed split is the row's note now.
     expect(rows.filter(({ row }) => /\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=\s*$/i.test(row.verbatim)).map(({ card }) => card.id)).toEqual([]);
-    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(23);
+    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(24);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(182);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(183);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['A new life', 'Better wages', 'Better work standards'],
@@ -557,7 +557,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Document A is a primary source because it is from a memoir/autobiography where the writer is remembering herself as a little girl witnessing the events from eighty years earlier.', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], undefined],
       ['Document B They enjoy a great reputation among the people Their verses are taken up with general applause They glorify wrongdoers and so apparently earn respect', 5, [0, 1, 2, 3, 4, 5], undefined],
       ['Document B does not support the claim: Rees writes that British authority in Northern Ireland was in question Rees himself had been warned of an assassination attempt His poor working conditions were a direct result of security problems He admits that effective administration was in the hands of the strikers, not of the government', 5, [0, 1, 2, 3, 4, 5], undefined],
-      ['Evidence that Spenser was curious about bardic poetry He had many of the poems translated so that he could understand them', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], undefined],
+      ['Evidence that Spenser was curious about bardic poetry\nHe had many of the poems translated so that he could understand them', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], undefined],
       ['Explanation', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Famine, Civil War, Political instability', 5, [0, 3, 5], 'Threats: two = 5M; one = 3M; “wolf and tiger” alone = 0'],
       ['Green ribbons', 6, [0, 3, 6], 'ribbons = 3m'],
@@ -575,7 +575,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Private/ family houses', 6, [0, 3, 6], '„Houses‟ only = 3M'],
       ['Reasons given for selecting phrase', 8, [0, 4, 8], 'Examples: If it is true that masked and armed men blocked roads, it is objective; If it is true that workers were threatened at workplaces such as H & W, it is objective; If it is not true that such things happened, it is biased. — Mark quality of explanation on its merits. — Max = 10M'],
       ['Residents and foreign-owned businesses in the town', 5, [0, 3, 5], 'TWO groups = 5m, ONE group = 3m'],
-      ['Spenser’s preoccupations as a poet and as a colonist As a poet: Spenser appreciates wit and invention, but more so the poet’s skill in the ornaments of poetry He believes that the purpose of poetry is to adorn and beautify virtue as opposed to the praise of vice', 5, [0, 1, 2, 3, 4, 5], undefined],
+      ['Spenser’s preoccupations as a poet and as a colonist\nAs a poet: Spenser appreciates wit and invention, but more so the poet’s skill in the ornaments of poetry He believes that the purpose of poetry is to adorn and beautify virtue as opposed to the praise of vice', 5, [0, 1, 2, 3, 4, 5], undefined],
       ['Swastika', 8, [0, 4, 8], 'Germanic cross = 4M'],
       ['TWO New World commodities (@ 3M each) which were landed at Seville', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['TWO countries which were rivals to Dutch trade @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
@@ -593,7 +593,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Yes or No? Candidate makes choice and gives at least two reasons for choice', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Yes or No? One reason only required', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Yes or No?', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
-      ['Yes, the documents agree that the bardic poet was an influential figure Document A As a master of history and poetry he would be influential Influential because of his wealth and affluence He had gained victory over the Devil and the world', 5, [0, 1, 2, 3, 4, 5], undefined],
+      ['Yes, the documents agree that the bardic poet was an influential figure\nDocument A As a master of history and poetry he would be influential Influential because of his wealth and affluence He had gained victory over the Devil and the world', 5, [0, 1, 2, 3, 4, 5], undefined],
     ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
     // 2020 OL Q3(a) prices each component and answers the one that needs an answer:
@@ -629,6 +629,29 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['A free Constitution', 6, 'alternative'],
     ]);
     expect(rows.filter(({ row }) => row.route).map(({ card }) => card.id)).toEqual(Array(4).fill('hist-2013-ol-em-s2t6a-q4'));
+    // A verdict printed unstopped over its first reason ("Document A or B or both" / "Document A states ...")
+    // keeps its own line in the row, so the two never read as one sentence.
+    expect(rows.filter(({ row }) => row.verbatim.includes('\n')).map(({ card }) => card.id).sort()).toEqual([
+      'hist-2011-hl-em-s1-q2a',
+      'hist-2011-hl-em-s1-q2b',
+      'hist-2011-hl-em-s1-q3b',
+      'hist-2011-ol-em-s1-q3b',
+      'hist-2012-hl-em-s1-q2b',
+      'hist-2012-hl-lm-s1-q2a',
+      'hist-2012-ol-em-s1-q2a',
+      'hist-2012-ol-em-s1-q2b',
+      'hist-2012-ol-lm-s1-q3a',
+      'hist-2013-hl-lm-s1-q2a',
+      'hist-2013-hl-lm-s1-q2b',
+      'hist-2013-ol-em-s1-q2a',
+      'hist-2013-ol-em-s1-q2b',
+      'hist-2014-ol-em-s1-q2b',
+      'hist-2016-hl-lm-s1-q2a',
+    ]);
+    // Where the closing prices the verdict, it is a row at its price: "Doc A and a valid reason 5M + 5M Max = 10M",
+    // "2M + 4M + 4M Max = 10M" (2025 OL).
+    expect(cards.find(card => card.id === 'hist-2025-ol-lm-s1-q3a')!.rows.map(row => row.marks)).toEqual([5, 5]);
+    expect(cards.find(card => card.id === 'hist-2025-ol-em-s1-q2b')!.rows.map(row => row.marks)).toEqual([2, 4, 4]);
     // Bare-figure prices with the phrase running on: "In a slap-dash (3) meaningless (3) way" (2013 OL
     // Topic 6 A1): the rows are the priced spans, never a joined row the scheme does not print whole.
     expect(cards.find(card => card.id === 'hist-2013-ol-lm-s2t6a-q1')!.rows.map(row => [row.verbatim, row.marks])).toEqual([

@@ -7400,7 +7400,7 @@ export const CARDS: SecCard[] = [
     questionText: "What evidence in document B shows that Spenser was curious about Irish bardic poets and poetry?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Evidence that Spenser was curious about bardic poetry He had many of the poems translated so that he could understand them", marks: 10, permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "r-1", kind: "criterion", verbatim: "Evidence that Spenser was curious about bardic poetry\nHe had many of the poems translated so that he could understand them", marks: 10, permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9195,7 +9195,7 @@ export const CARDS: SecCard[] = [
     questionText: "Does the writer of document B support Gandhi as a leader? Explain your answer.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "She supports Gandhi OR She does not support Gandhi When she is shown in to Gandhi‟s room, she seems to be impressed by the simplicity of his lifestyle", marks: null },
+    { id: "r-1", kind: "point", verbatim: "She supports Gandhi OR She does not support Gandhi\nWhen she is shown in to Gandhi‟s room, she seems to be impressed by the simplicity of his lifestyle", marks: null },
     { id: "r-2", kind: "point", verbatim: "This makes it sound like she approves of him", marks: null },
     { id: "r-3", kind: "point", verbatim: "She asks “could this be the man?” which makes her sound surprised that such a person “had kindled the imagination of the world”", marks: null },
     { id: "r-4", kind: "point", verbatim: "This makes it sound like she admires him.", marks: null },
@@ -10978,7 +10978,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which document, A or B, gives the more vivid account of the actions of the Spanish soldiers? Refer to both documents in your answer.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Document A or B gives the more vivid account Document A states that where Spanish soldiers mutinied, they threatened lords, captured many places, robbed them and burned them down Document B gives the Duke of Alva as an example of Spanish misrule", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Document A or B gives the more vivid account\nDocument A states that where Spanish soldiers mutinied, they threatened lords, captured many places, robbed them and burned them down Document B gives the Duke of Alva as an example of Spanish misrule", marks: null },
     { id: "r-2", kind: "point", verbatim: "He was notorious for harshness and cruelty", marks: null },
     { id: "r-3", kind: "point", verbatim: "This document also gives us a short description of the sacking of Antwerp and its consequences.", marks: null },
     ],
@@ -11004,7 +11004,7 @@ export const CARDS: SecCard[] = [
     questionText: "Compare the state of the Netherlands as set out in each document, A and B. Refer to both documents in your answer.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The state of the Netherlands as set out in each document Document A describes the Netherlands as being in great misery and distress because of Spanish misrule", marks: null },
+    { id: "r-1", kind: "point", verbatim: "The state of the Netherlands as set out in each document\nDocument A describes the Netherlands as being in great misery and distress because of Spanish misrule", marks: null },
     { id: "r-2", kind: "point", verbatim: "It describes the damage done by mutinous Spanish soldiers", marks: null },
     { id: "r-3", kind: "point", verbatim: "Trade and prosperity had been badly hit", marks: null },
     { id: "r-4", kind: "point", verbatim: "It had got so bad that the people of the Netherlands were demanding a Spanish withdrawal and a return to their old privileges, customs and freedoms", marks: null },
@@ -14620,7 +14620,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which document, A or B, tells us more about the interest of learned Chinese in Ricci’s work? Explain your answer, referring to both documents.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Document A or B or both Document A states that the learned Chinese wished to have a Chinese version of Ricci’s chart and when it was done it became very popular", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Document A or B or both\nDocument A states that the learned Chinese wished to have a Chinese version of Ricci’s chart and when it was done it became very popular", marks: null },
     { id: "r-2", kind: "point", verbatim: "Document B states that Ricci was admired by the Chinese lettered class", marks: null },
     { id: "r-3", kind: "point", verbatim: "The Chinese version of Ricci’s Christian doctrine book became very popular with one magistrate visiting Ricci to compliment him.", marks: null },
     ],
@@ -14646,7 +14646,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which document, A or B, tells us more about the interest of those in positions of power in Ricci’s work? Explain your answer, referring to both documents.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Document A or B or both Document A states that the Chinese version of Ricci’s chart found its way into the courts of the Governor and Viceroy and even, at his own request, into the palace of the King", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Document A or B or both\nDocument A states that the Chinese version of Ricci’s chart found its way into the courts of the Governor and Viceroy and even, at his own request, into the palace of the King", marks: null },
     { id: "r-2", kind: "point", verbatim: "Document B states that one of the highest-ranking magistrates in China admired Ricci’s Christian doctrine book so much that he came to the mission house to compliment him", marks: null },
     { id: "r-3", kind: "point", verbatim: "Expect and allow overlap with answer to 2(a).", marks: null },
     ],
@@ -18310,7 +18310,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which document, A or B, gives the greater praise of Meiler Magrath? Explain your answer, referring to both documents.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Document A gives greater praise to Meiler Magrath Document A stresses many of Magrath’s good qualities", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Document A gives greater praise to Meiler Magrath\nDocument A stresses many of Magrath’s good qualities", marks: null },
     { id: "r-2", kind: "point", verbatim: "He made exceptional efforts to obtain copes of the confiscated papal letter and he succeeded where the proctor of the Jesuit order in Rome had failed", marks: null },
     { id: "r-3", kind: "point", verbatim: "This greatly impressed the writer, himself a Jesuit based in Rome", marks: null },
     { id: "r-4", kind: "point", verbatim: "Magrath is described as a man of great ‘energy and enthusiasm’ who works with ‘care and diligence’", marks: null },
@@ -55597,12 +55597,10 @@ export const CARDS: SecCard[] = [
     section: "1", questionRef: "2025 OL Later Modern Section 1 Q3(a)",
     stem: "Case study: The Jarrow March, October 1936",
     questionText: "Which document, A or B, is a primary source? Give a reason for your answer.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Doc A is a primary source It is written by Ellen Wilkinson who helped to organise and took part in the march", marks: null },
-    { id: "r-2", kind: "point", verbatim: "She is a participant in the events described", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Her book was published in 1939, within three years of the march taking place", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Doc A and a valid reason", marks: null, contextNote: "5M + 5M Max = 10M" },
+    { id: "r-1", kind: "point", verbatim: "Doc A is a primary source", marks: 5 },
+    { id: "r-2", kind: "point", verbatim: "It is written by Ellen Wilkinson who helped to organise and took part in the march. She is a participant in the events described. Her book was published in 1939, within three years of the march taking place.", marks: 5, contextNote: "Doc A and a valid reason 5M + 5M Max = 10M" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -57521,11 +57519,11 @@ export const CARDS: SecCard[] = [
     section: "1", questionRef: "2025 OL Early Modern Section 1 Q2(b)",
     stem: "Case study: The divorce of Henry VIII and Catherine of Aragon",
     questionText: "Which document, A or B, gives more information about Catherine of Aragon? Refer to both documents in your answer.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Document A gives more information about Catherine of Aragon Document A tells us that she was his elder brother’s widow, that she was five years older than Henry, that she had been a pious and loyal wife and that Henry had been devoted to her", marks: null },
-    { id: "r-2", kind: "point", verbatim: "However, she did not provide Henry with a son and heir", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Doc B mentions that Catherine had been married to the King’s late brother, Prince Arthur, but there is no other information about Catherine.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Document A gives more information about Catherine of Aragon", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Document A tells us that she was his elder brother’s widow, that she was five years older than Henry, that she had been a pious and loyal wife and that Henry had been devoted to her. However, she did not provide Henry with a son and heir.", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Doc B mentions that Catherine had been married to the King’s late brother, Prince Arthur, but there is no other information about Catherine.", marks: 4, contextNote: "Mark quality of explanation on its merits. — Reference to both documents required. — 2M + 4M + 4M Max = 10M" },
     ],
     sourceMaterial: {
           "kind": "source-text",

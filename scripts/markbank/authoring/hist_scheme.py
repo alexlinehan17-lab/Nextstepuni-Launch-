@@ -241,6 +241,81 @@ PS_SCALE = re.compile(
 SR_PRICE = re.compile(r'(?P<label>[A-Z][^=]{0,60}?)\s*=\s*(?P<terms>\d{1,2}M(?:\s*\+\s*\d{1,2}M)*)')
 
 
+# A STANCE printed over its reasons with no stop: "Document A or B or both" /
+# "Document A states that ..." (2013 Ordinary), "She supports Gandhi OR She
+# does not support Gandhi" / "When she is shown in to Gandhi's room ..." (2012),
+# "Both documents agree that the Spanish soldiers were harmful to the" /
+# "Netherlands" / "Document A states ..." (2012 Higher). Joined, the verdict and
+# the first reason read as one sentence. The stance ends where a printed line
+# stops unfinished and the next opens a statement of its own.
+STANCE_OPENER = re.compile(
+    r'^(?:(?:Document|Doc) [AB]\b(?!\s*(?:and|or|,|\.|\)))|When\b|It is\b|It was\b'
+    r'|He (?:had|was|is)\b|She (?:is|was|asks|seems)\b|They\b|As an? \w+:)')
+STANCE_UNFINISHED = re.compile(
+    r'(?:\b(?:and|or|the|of|in|to|by|from|with|as|that|a|an|for|on|at|is|are|was|were)|[.?!:;,"\u201d\u2019)])$', re.I)
+
+
+def _stance(text):
+    """The stance a documents part's answer opens on, as printed, or None."""
+    lines = [' '.join(t.split()) for t in text if t.strip()]
+    if lines:
+        lines[0] = re.sub(r'^\([a-e]\)\s*', '', lines[0])
+    for i in range(min(len(lines) - 1, 3)):
+        head = ' '.join(lines[:i + 1])
+        if re.search(r'[.?!;:=]', head) or re.match(r'Comments must relate to\b', head):
+            return None
+        if (len(head.split()) >= 3 and not STANCE_UNFINISHED.search(lines[i])
+                and STANCE_OPENER.match(lines[i + 1])):
+            return head
+    return None
+
+
+STANCE_CLOSING = re.compile(
+    r'^(?:(?P<label>[A-Z].*?)\s+)?(?P<split>\d{1,2}M(?:\s*\+\s*\d{1,2}M)+)\s+Max\s*=\s*(?P<total>\d+)M$')
+STANCE_INSTRUCTION = re.compile(r'^(?:Mark quality of (?:explanation|answer) on its merits\.'
+                                r'|Reference to both documents required\.)$')
+
+
+def _stance_priced(text, stance):
+    """A stance the closing line prices, with its reasons: (total, rows, steps) or None.
+
+    "Doc A is a primary source" / its reasons / "Doc A and a valid reason 5M +
+    5M Max = 10M" (2025 Ordinary Q3(a)): the stance at its price and the
+    reasons as one row at theirs. "Document A gives more information about
+    Catherine of Aragon" / "Document A tells us ..." / "Document B ..." / "2M +
+    4M + 4M Max = 10M" (2025 Ordinary Q2(b)): the stance and each document's
+    points at the closing's terms, in order."""
+    lines = [' '.join(t.split()) for t in text if t.strip()]
+    if lines:
+        lines[0] = re.sub(r'^\([a-e]\)\s*', '', lines[0])
+    head = []
+    while lines and ' '.join(head).strip() != stance:
+        head.append(lines.pop(0))
+        if len(' '.join(head)) > len(stance):
+            return None
+    if not lines:
+        return None
+    closing = STANCE_CLOSING.match(lines[-1])
+    if not closing:
+        return None
+    terms = [int(x) for x in re.findall(r'(\d+)M', closing.group('split'))]
+    if sum(terms) != int(closing.group('total')):
+        return None
+    body = lines[:-1]
+    instructions = [b for b in body if STANCE_INSTRUCTION.match(b)]
+    body = [b for b in body if not STANCE_INSTRUCTION.match(b)]
+    if not body:
+        return None
+    note = ' — '.join(instructions + [' '.join(closing.group(0).split())])
+    if len(terms) == 2 and closing.group('label') and re.search(r'\breason\b', closing.group('label')):
+        return sum(terms), [(stance, terms[0], None), (' '.join(body), terms[1], note)], {}
+    starts = [i for i, b in enumerate(body) if re.match(r'(?:Document|Doc) [AB]\b', b)]
+    if len(terms) == 3 and len(starts) == 2 and starts[0] == 0:
+        docs = [' '.join(body[starts[0]:starts[1]]), ' '.join(body[starts[1]:])]
+        return sum(terms), [(stance, terms[0], None), (docs[0], terms[1], None), (docs[1], terms[2], note)], {}
+    return None
+
+
 def _stepped_reasons(text):
     """(total, [(statement, marks, note)], {row index: steps}) or None."""
     lines = [' '.join(t.split()) for t in text if t.strip()]
@@ -854,6 +929,7 @@ class Ask:
         self.note_caps = []     # every ceiling it prints: [("If only ONE", 50)]
         self.steps = {}         # split asks: {row index: the printed mark steps}
         self.partial_lines = [] # lower prices printed on lines of their own, as printed
+        self.stance = None      # a documents part's verdict, printed unstopped over its reasons
         self.cm_max = self.oe_max = None   # an essay's printed maxima
         self.page = None        # the scheme page the ask is priced on
 
@@ -1151,7 +1227,10 @@ class HistScheme:
         if not text:
             self.refused.append((ask.key, 'the scheme states nothing here'))
             return
-        priced = ((_stepped_reasons(text) or _priced_statements(text))
+        if ask.key[0] == '1' and ask.key[2]:
+            ask.stance = _stance(text)
+        priced = (((ask.stance and _stance_priced(text, ask.stance))
+                   or _stepped_reasons(text) or _priced_statements(text))
                   if ask.key[0] == '1' and ask.key[2] and self.level == 'ol' else None)
         if priced:
             ask.kind = 'split'

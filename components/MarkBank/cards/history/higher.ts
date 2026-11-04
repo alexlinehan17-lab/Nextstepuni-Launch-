@@ -7068,7 +7068,7 @@ export const CARDS: SecCard[] = [
     questionText: "Do the documents agree that the bardic poet was an influential figure in Gaelic Ireland? Refer to both documents in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Yes, the documents agree that the bardic poet was an influential figure Document A As a master of history and poetry he would be influential Influential because of his wealth and affluence He had gained victory over the Devil and the world", marks: 5, permittedMarks: [0,1,2,3,4,5] },
+    { id: "r-1", kind: "criterion", verbatim: "Yes, the documents agree that the bardic poet was an influential figure\nDocument A As a master of history and poetry he would be influential Influential because of his wealth and affluence He had gained victory over the Devil and the world", marks: 5, permittedMarks: [0,1,2,3,4,5] },
     { id: "r-2", kind: "criterion", verbatim: "Document B They enjoy a great reputation among the people Their verses are taken up with general applause They glorify wrongdoers and so apparently earn respect", marks: 5, permittedMarks: [0,1,2,3,4,5] },
     ],
     sourceMaterial: {
@@ -7093,7 +7093,7 @@ export const CARDS: SecCard[] = [
     questionText: "Do the writers of documents A and B approve of the role of bardic poets in Ireland? Refer to both documents in your answer.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Document A approves of the role of the bardic poets and Document B disapproves Document A All the information here points to the bardic poet being successful as a scholar, as a teacher, as a businessman There is no negative point", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Document A approves of the role of the bardic poets and Document B disapproves\nDocument A All the information here points to the bardic poet being successful as a scholar, as a teacher, as a businessman There is no negative point", marks: null },
     { id: "r-2", kind: "point", verbatim: "Document B Spenser disapproves of the bards’ glorifying wrongdoers and setting them up as role models for young men", marks: null },
     { id: "r-3", kind: "point", verbatim: "He disapproves of their praise of wickedness and vice which he must think is bad for the country", marks: null },
     ],
@@ -7143,7 +7143,7 @@ export const CARDS: SecCard[] = [
     questionText: "What evidence can be found in Document B about Spenser’s preoccupations as a poet and as a colonist?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Spenser’s preoccupations as a poet and as a colonist As a poet: Spenser appreciates wit and invention, but more so the poet’s skill in the ornaments of poetry He believes that the purpose of poetry is to adorn and beautify virtue as opposed to the praise of vice", marks: 5, permittedMarks: [0,1,2,3,4,5] },
+    { id: "r-1", kind: "criterion", verbatim: "Spenser’s preoccupations as a poet and as a colonist\nAs a poet: Spenser appreciates wit and invention, but more so the poet’s skill in the ornaments of poetry He believes that the purpose of poetry is to adorn and beautify virtue as opposed to the praise of vice", marks: 5, permittedMarks: [0,1,2,3,4,5] },
     { id: "r-2", kind: "criterion", verbatim: "As a colonist: Spenser considers the bardic poets a threat to the security of the colony because they encourage young men to admire the disobedient and rebellious He is very judgemental about the bards and their poems which gives the impression that, as a colonist, he is culturally superior", marks: 5, permittedMarks: [0,1,2,3,4,5] },
     ],
     sourceMaterial: {
@@ -7804,7 +7804,7 @@ export const CARDS: SecCard[] = [
     questionText: "Do both documents reflect divisions on the future of India? Explain your answer with reference to both documents.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Both documents reflect divisions on the future of India Document A allows for the possible partition of India", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Both documents reflect divisions on the future of India\nDocument A allows for the possible partition of India", marks: null },
     { id: "r-2", kind: "point", verbatim: "It acknowledges the real anxiety among Muslims fearful of Hindu-majority rule", marks: null },
     { id: "r-3", kind: "point", verbatim: "Action rather than words will be needed to allay Muslim fears", marks: null },
     { id: "r-4", kind: "point", verbatim: "It calls for measures by which Muslims retain control their own vital interests Document B shows Jinnah and Gandhi, despite the immediate threats to the country, engaged in some sort of power struggle watched over ineffectively by Cripps.", marks: null },
@@ -8594,7 +8594,7 @@ export const CARDS: SecCard[] = [
     questionText: "Do documents A and B agree about the role of the Spanish soldiers in the Netherlands? Explain your answer, referring to both documents.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Both documents agree that the Spanish soldiers were harmful to the Netherlands Document A states that the Spanish soldiers threatened lords and towns, took many places by force, robbing them and burning them down", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Both documents agree that the Spanish soldiers were harmful to the Netherlands\nDocument A states that the Spanish soldiers threatened lords and towns, took many places by force, robbing them and burning them down", marks: null },
     { id: "r-2", kind: "point", verbatim: "Document B states that Spanish soldiers sacked Antwerp, doing untold damage to the residents and foreign businesses based there", marks: null },
     { id: "r-3", kind: "point", verbatim: "Expect and accept repetition from answer to 2(a)", marks: null },
     ],
@@ -9312,7 +9312,7 @@ export const CARDS: SecCard[] = [
     questionText: "Do both documents suggest that the Congo is a dangerous place? Give reasons for your answer based on both documents.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Both documents agree that the Congo is a dangerous place Document A shows a knife-wielding Congolese, a river and crocodiles", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Both documents agree that the Congo is a dangerous place\nDocument A shows a knife-wielding Congolese, a river and crocodiles", marks: null },
     { id: "r-2", kind: "point", verbatim: "Document B mentions the disorderly behaviour of mutinous Congolese soldiers as well as the trigger-happy and arrogant Belgian paratroopers.", marks: null },
     ],
     sourceMaterial: {
@@ -9337,7 +9337,7 @@ export const CARDS: SecCard[] = [
     questionText: "Do you find evidence of racism in both documents? Give reasons for your answer based on both documents.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "There is evidence of racism in both documents Document A The Congolese is frantically cutting the rope, apparently unaware that he too will fall into the water if he succeeds", marks: null },
+    { id: "r-1", kind: "point", verbatim: "There is evidence of racism in both documents\nDocument A The Congolese is frantically cutting the rope, apparently unaware that he too will fall into the water if he succeeds", marks: null },
     { id: "r-2", kind: "point", verbatim: "This might suggest a lesser intelligence because he is black", marks: null },
     { id: "r-3", kind: "point", verbatim: "The Belgian is also presented in an unflattering light, an unprepossessing figure who has found himself out of his depth and unfit for purpose", marks: null },
     { id: "r-4", kind: "point", verbatim: "Document B The Belgian paratroopers refused a truce because they couldn’t bear to share the duties with the “black apes” and the apology to Lee Griggs clearly implies that his life was more valuable than that of a black African.", marks: null },
@@ -13802,7 +13802,7 @@ export const CARDS: SecCard[] = [
     questionText: "Do both documents agree that the appeal of Hitler’s personality was greater than the appeal of his ideas? Explain your answer, referring to both documents.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "According to both documents, the appeal of Hitler’s personality was greater than the appeal of his ideas Document A mentions that there was “little enthusiasm for, or comprehension of the doctrine of Nazism, but there was a “fanatical devotion” to Adolf Hitler, “the man”", marks: null },
+    { id: "r-1", kind: "point", verbatim: "According to both documents, the appeal of Hitler’s personality was greater than the appeal of his ideas\nDocument A mentions that there was “little enthusiasm for, or comprehension of the doctrine of Nazism, but there was a “fanatical devotion” to Adolf Hitler, “the man”", marks: null },
     { id: "r-2", kind: "point", verbatim: "Despite his banal quality and lack of charm, Hitler possessed “some quality” in his personality that “appealed to the German soul", marks: null },
     { id: "r-3", kind: "point", verbatim: "This could be observed among the faces in the crowd", marks: null },
     { id: "r-4", kind: "point", verbatim: "Document B agrees, stating that the appeal of “Hitler himself” (his personality) was “far more powerful” than the appeal of “Hitler’s doctrine” (his ideas)", marks: null },

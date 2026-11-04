@@ -613,7 +613,10 @@ const MarkRowView: React.FC<{
   wholeResponse?: boolean;
   /** The claims on a row's parts, by part id; only a row with parts has them. */
   partClaims?: Record<string, RowClaim>;
-}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse, partClaims }) => {
+  /** Keep the printed line breaks inside a row's text (History: a verdict on
+   *  its own line above its first reason). */
+  keepLines?: boolean;
+}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse, partClaims, keepLines }) => {
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
@@ -625,7 +628,7 @@ const MarkRowView: React.FC<{
     return (
       <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
-          <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}` }}>{row.verbatim}</strong>
+          <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}`, whiteSpace: keepLines ? 'pre-line' : undefined }}>{row.verbatim}</strong>
           <span style={{ font: `700 10.5px/1.7 ${MONO}`, color: placed > 0 ? SUCCESS_TEXT : MUTED, whiteSpace: 'nowrap' }}>{placed}m of {row.marks}m</span>
         </div>
         {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}` }}>{row.contextNote}</p> : null}
@@ -660,7 +663,7 @@ const MarkRowView: React.FC<{
     const selected = criterionMarksClaimed(row, claim);
     return (
       <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
-        <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}` }}>{row.verbatim}</strong>
+        <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}`, whiteSpace: keepLines ? 'pre-line' : undefined }}>{row.verbatim}</strong>
         {row.accepts?.length ? <p style={{ color: MUTED }}>{row.accepts.join(' · ')}</p> : null}
         {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}` }}>{row.contextNote}</p> : null}
         <div role="group" aria-label={`Marks for ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
@@ -871,7 +874,7 @@ const MarkRowView: React.FC<{
           )}
           {/* A marking point takes its direction from its own text, so an
               Arabic answer reads and aligns the way the scheme printed it. */}
-          <span dir="auto" style={{ color: claimed ? ON_CLAIM : INK_2, whiteSpace: wholeResponse ? 'pre-line' : undefined }}>
+          <span dir="auto" style={{ color: claimed ? ON_CLAIM : INK_2, whiteSpace: wholeResponse || keepLines ? 'pre-line' : undefined }}>
             {wholeResponse ? row.verbatim.replace(/ • /g, '\n\n') : row.verbatim}
             {/* The scheme's own alternatives, shown in full: a student who wrote
                 "heterotrophic" earned the mark and must be able to see that. */}
@@ -3141,6 +3144,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                           <MarkRowView
                             row={row} id={id} index={i}
                             wholeResponse={wholeResponseAssessment}
+                            keepLines={assessmentCard.subjectId === 'history'}
                             claim={claimOf(id)}
                             showMarks={showsRowMarks(assessmentCard)}
                             blocked={

@@ -918,6 +918,12 @@ def build():
                         stepped = step_at_printed_scale(rows[0], ask)
                         if stepped:
                             rows[:] = stepped
+                    if ask.stance and rows[0]['verbatim'].startswith(ask.stance + ' '):
+                        # The verdict printed unstopped over its first reason
+                        # ("Document A or B or both" / "Document A states ...")
+                        # keeps its own line, so the two never read as one
+                        # sentence (hist_scheme._stance).
+                        rows[0]['verbatim'] = f"{ask.stance}\n{rows[0]['verbatim'][len(ask.stance) + 1:]}"
                     partials = [(alt, n) for alt, n in getattr(ask, 'partials', [])
                                 if 0 < n < (ask.total or 0)]
                     if single and len(partials) == 1:
