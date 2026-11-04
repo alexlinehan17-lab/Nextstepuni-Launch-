@@ -3,7 +3,7 @@
 Paper LC027ALP000EV, scheme pages as the PDF numbers them (the scheme's own
 footer reads one lower: PDF page 11 is printed "Page 10").
 """
-from eng_lift import lift
+from eng_lift import join, lift
 
 Y, L = 2021, 'hl'
 
@@ -64,6 +64,38 @@ CROPS = {
 }
 
 CARDS = [
+    dict(key=(3, 'a', 'i'),
+         replaces='the shipped rows were the two tests\' bullet lists with neither '
+                  'heading, so "A hardened Steel or Tungsten Carbide ball indenter is '
+                  'used in this hardness test" did not say which test',
+         why='Scheme p10 lists six points under "Brinell hardness test:" and six '
+             'under "Vickers hardness test:"; each list\'s first point is lifted with '
+             'its heading, and the diagrams\' captions beside them are left out.',
+         lifted=[join(S(10, 100, 97, 220, 113), S(10, 120, 114, 420, 145)),
+                 S(10, 120, 145, 440, 160), S(10, 120, 160, 380, 175),
+                 S(10, 120, 175, 420, 206), S(10, 120, 205, 405, 235),
+                 S(10, 120, 235, 405, 250),
+                 join(S(10, 100, 266, 225, 282), S(10, 120, 283, 385, 314)),
+                 S(10, 120, 314, 300, 329), S(10, 120, 329, 432, 359),
+                 S(10, 120, 359, 405, 389), S(10, 120, 389, 405, 419),
+                 S(10, 120, 419, 520, 434)],
+         tariff='questionTotal', total=8,
+         notes="The scheme prints '8 marks'."),
+    dict(key=(3, 'a', 'iii'),
+         replaces='the shipped rows were the two tests\' bullet lists with neither '
+                  'heading, so nothing said which five points are Izod\'s and which '
+                  'Charpy\'s (the last point is the same in both)',
+         why='Scheme pp10-11 list five points under "Izod impact test:" and five '
+             'under "Charpy Test:"; each list\'s first point is lifted with its '
+             'heading, and the diagram captions beside them are left out.',
+         lifted=[join(S(10, 100, 602, 200, 618), S(10, 120, 619, 300, 635)),
+                 S(10, 120, 636, 300, 652), S(10, 120, 653, 320, 669),
+                 S(10, 120, 669, 335, 685), S(10, 120, 686, 395, 719),
+                 join(S(11, 100, 63, 180, 79), S(11, 120, 80, 300, 96)),
+                 S(11, 120, 97, 300, 113), S(11, 120, 114, 330, 130),
+                 S(11, 120, 131, 395, 147), S(11, 120, 148, 395, 180)],
+         tariff='questionTotal', total=8,
+         notes="The scheme prints '8 marks'."),
     dict(key=(3, 'b', 'i'),
          why='Scheme p11 answers the plot with the graph itself and heads it '
              '"(b) (ii) Plot the graph." -- a second (ii), where its own marks '

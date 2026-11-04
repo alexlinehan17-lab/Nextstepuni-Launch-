@@ -289,7 +289,7 @@
   },
   "engineering": {
     "cards": 688,
-    "contentHash": "3ee3481bd9a36e19",
+    "contentHash": "53ccbe6f4f3bde38",
     "coveragePct": 32.4,
     "covered": 816,
     "excluded": 0,
@@ -300,7 +300,7 @@
       "count": 60,
       "hash": "0c22181e07eb9ca3"
     },
-    "refsHash": "014a514371abfd5b"
+    "refsHash": "2a89caf192764a1c"
   },
   "english": {
     "cards": 2685,
