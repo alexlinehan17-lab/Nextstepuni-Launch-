@@ -200,6 +200,8 @@ GRID_LINE = re.compile(
     # half words it differently from the Later Modern half in the same file,
     # and the narrower list let four band grids run on into the answer rows.
     r'|Marks?\b[^.]{0,60}\bsliding scale\b'
+    # 2017: "Take the answer as a whole and mark on a sliding scale out of 10:"
+    r'|Take the answer as a whole\b'
     r'|Mark by the principle of Core Statement'
     r'|Assess (?:the )?answer on'
     r'|Excellent\s*[:=]|Very good\s*[:=]|Good\s*[:=]|Fair\s*[:=]'
@@ -365,6 +367,31 @@ Q4_ELEMENT_CAP = re.compile(r'^Max of (\d+) marks CM (if only (?:one|ONE) elemen
 # that ends in a colon, a question mark or a full stop, and at and after a
 # one-line definition "Name = ..." ("Entertaining = music, comedy, etc").
 Q4_ITEM = re.compile(r'^[A-Z][\w ]{0,30} = ')
+
+
+Q4_RESTATED = re.compile(r'^Max\.?\s*(?:CM|OE)\s*=\s*\d+$')
+
+
+def _q4_between(lines):
+    """Q4's NOTE (head, aside and ceiling lines joined, as an essay's) and its
+    other printed directions, each joined from its wrapped lines."""
+    note, directions = None, []
+    for line in lines:
+        if not line or PAGE_MARK.match(line) or PAGE_FOOTER.match(line) or Q4_RESTATED.match(line):
+            continue
+        if NOTE_HEAD.match(line) and note is None:
+            note = line
+            continue
+        if (note is not None and not directions and not NOTE_CAP.search(note)
+                and (NOTE_CONT.match(line) or NOTE_ASIDE.match(line)
+                     or note.count('(') > note.count(')'))):
+            note = f'{note} {line}'
+            continue
+        if directions and not re.search(r'[.?!]$', directions[-1]) and line[:1].islower():
+            directions[-1] = f'{directions[-1]} {line}'
+        else:
+            directions.append(line)
+    return note, [' '.join(d.split()) for d in directions]
 
 
 def _q4_elements(lines):
@@ -921,6 +948,20 @@ class HistScheme:
             lo = next(i for i, l in enumerate(self.lines) if S23_HEAD.match(l))
             hi = next(i for i in range(lo, len(self.lines))
                       if SEC_HEAD.match(self.lines[i]))
+        # 2017 sets Q4's own NOTE and examiner direction between "In question
+        # 4, marking by paragraph begins." and its ceiling, under the maxima
+        # restated: "Max. CM = 24" / "Max. OE = 16" / "NOTE: TWO elements
+        # (...)" / "If only ONE, Max. CM = 20" / "Material which narrates ...
+        # = no more than Fair on OE". Those lines are read here, as an essay's
+        # NOTE is, and kept out of the scheme's statement of how it marks.
+        between = range(0)
+        if unit == 'q4':
+            begins = next((i for i in range(lo, hi) if Q4_MARKING_BEGINS.match(self.lines[i])), None)
+            if begins is not None:
+                ceiling = next(i for i in range(begins + 1, hi)
+                               if self.lines[i].startswith('Cumulative Mark = Max'))
+                between = range(begins + 1, ceiling)
+        q4_note, q4_directions = _q4_between([self.lines[i] for i in between])
         logical, pages = [], set()
         for i in range(lo, hi):
             line = self.lines[i]
@@ -928,6 +969,8 @@ class HistScheme:
                     or SCHEME_FURNITURE.match(line)):
                 continue
             pages.add(self.pages[i])
+            if i in between:
+                continue
             if not logical or PM_START.match(line):
                 logical.append(line)
             else:
@@ -1031,6 +1074,10 @@ class HistScheme:
                                  f'could not read {", ".join(missing)}')
         if unit == 'q4':
             out['elements'], out['elementCaps'] = _q4_elements(self.lines[lo:hi])
+            if q4_note:
+                out['note'] = q4_note
+            for direction in q4_directions:
+                out['oe' if re.search(r'\bOE\b', direction) else 'cm']['directions'].append(direction)
         return out
 
     # -- marking by Core Statement (Ordinary Level) -----------------------

@@ -76,7 +76,7 @@ sys.path.insert(0, DIR)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
 from hist_paper import HistPaper, FIELDS                      # noqa: E402
-from hist_scheme import HistScheme, GRID_WORDS                # noqa: E402
+from hist_scheme import HistScheme, GRID_WORDS, NOTE_CAP      # noqa: E402
 from hist_topics import topic_for, concept_for, TITLES        # noqa: E402
 from hist_rows import split_priced                           # noqa: E402
 from align import bag, score                                  # noqa: E402
@@ -91,6 +91,7 @@ EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
 # is the prototype (lane batch 1, 4 Nov 2026); the rest follow once it has
 # been reviewed.
 ESSAY_PAPERS = {
+    (2017, 'hl', 'lm'),
     (2018, 'hl', 'em'),
     (2018, 'hl', 'lm'),
     (2018, 'ol', 'em'),
@@ -298,6 +299,13 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
             return "the question's NOTE prints no CM ceiling below the maximum"
         rubric_cm['elementRule'] = {'note': ask.note,
                                     'caps': [{'when': when, 'max': top} for when, top in ask.note_caps]}
+    elif marking.get('note'):
+        # Q4's own NOTE (2017 Higher Later Modern), read as an essay's is.
+        caps = [(' '.join(w.split()), int(t)) for w, t in NOTE_CAP.findall(marking['note'])]
+        if not caps or not all(0 < top < cm['max'] for _when, top in caps):
+            return "the question's NOTE prints no CM ceiling below the maximum"
+        rubric_cm['elementRule'] = {'note': marking['note'],
+                                    'caps': [{'when': when, 'max': top} for when, top in caps]}
     elif marking.get('elements'):
         # Q4's own elements block (2018, 2019 Higher). With a ceiling it is the
         # question's element rule, as an essay's NOTE is; without one it is a

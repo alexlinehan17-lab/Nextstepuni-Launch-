@@ -37,7 +37,7 @@ vi.mock('../components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new
 
 type EssayCard = SecRubricCard & { rubric: HistoryEssayRubric };
 /** The papers whose essays are carded so far (lane batch 2 adds one sitting a commit). */
-const CARDED_ESSAY_PAPERS = ['2018 higher em', '2018 higher lm', '2018 ordinary em', '2018 ordinary lm', '2019 higher em', '2019 higher lm', '2019 ordinary em', '2019 ordinary lm', '2020 higher lm', '2020 ordinary lm', '2021 higher em', '2021 higher lm', '2021 ordinary em', '2021 ordinary lm', '2022 higher em', '2022 higher lm', '2022 ordinary em', '2022 ordinary lm', '2023 higher em', '2023 higher lm', '2023 ordinary em', '2023 ordinary lm', '2024 higher em', '2024 higher lm', '2024 ordinary em', '2024 ordinary lm', '2025 higher em', '2025 higher lm', '2025 ordinary em', '2025 ordinary lm', '2026 higher em', '2026 higher lm', '2026 ordinary em', '2026 ordinary lm'];
+const CARDED_ESSAY_PAPERS = ['2017 higher lm', '2018 higher em', '2018 higher lm', '2018 ordinary em', '2018 ordinary lm', '2019 higher em', '2019 higher lm', '2019 ordinary em', '2019 ordinary lm', '2020 higher lm', '2020 ordinary lm', '2021 higher em', '2021 higher lm', '2021 ordinary em', '2021 ordinary lm', '2022 higher em', '2022 higher lm', '2022 ordinary em', '2022 ordinary lm', '2023 higher em', '2023 higher lm', '2023 ordinary em', '2023 ordinary lm', '2024 higher em', '2024 higher lm', '2024 ordinary em', '2024 ordinary lm', '2025 higher em', '2025 higher lm', '2025 ordinary em', '2025 ordinary lm', '2026 higher em', '2026 higher lm', '2026 ordinary em', '2026 ordinary lm'];
 const essays = [...HISTORY_HIGHER, ...HISTORY_ORDINARY]
   .filter((card): card is EssayCard => isRubricCard(card) && card.rubric.system === 'history-essay');
 const byId = (id: string) => essays.find(card => card.id === id)!;
@@ -268,6 +268,21 @@ describe('the documents question’s own note on Q4 (2018, 2019 Higher)', () => 
       'Max of 20 marks CM if only one element is treated',
     ]);
     expect(tariffReconciles(rte)).toBe(true);
+  });
+
+  it('reads 2017’s NOTE on Q4 as an essay’s, and its OE direction as printed', () => {
+    const jarrow2017 = byId('hist-2017-hl-lm-s1-q4');
+    expect(jarrow2017.rubric.cm.elementRule).toEqual({
+      note: 'NOTE: TWO elements (What were the aims + to what extent were they achieved) If only ONE, Max. CM = 20',
+      caps: [{ when: 'If only ONE', max: 20 }],
+    });
+    expect(jarrow2017.rubric.oe?.directions).toContain(
+      'Material which narrates the day-to-day events of the Jarrow March without reference to the question’s two elements = no more than Fair on OE');
+    // The maxima the scheme restates above its NOTE are not a statement of how it marks.
+    expect(jarrow2017.rubric.schemeGuidance).toEqual([
+      'In question 4, marking by paragraph begins.',
+      'The examiner will divide the answer into paragraphs or paragraph equivalents.',
+    ]);
   });
 
   it('keeps 2019’s elements, which print no ceiling, as a direction', () => {

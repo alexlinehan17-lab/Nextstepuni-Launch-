@@ -101,7 +101,7 @@ FURNITURE = re.compile(
     r'|This examination paper|Any subsequent use|The Commission does not'
     r'|examination paper has been prepared|owner, and which may'
     r'|accept liability|Monday|Tuesday|Wednesday|Thursday|Friday'
-    r'|\d{4}\.\s*M\d+|\d{4}L\d+|Page \d+$|\d{1,3}$)', re.I)
+    r'|\d{4}\.\s*M\d+|\d{4}L\d+|Page \d+$|Page \d+ of \d+$|\d{1,3}$)', re.I)
 
 # Where the examination material stops.
 END_OF_MATERIAL = re.compile(r'^(?:Copyright notice|Acknowledgements?)\b', re.I)
