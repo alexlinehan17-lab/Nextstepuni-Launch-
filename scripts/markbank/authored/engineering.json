@@ -3156,49 +3156,6 @@
   "stem": "Give brief answers to any eight of the following:"
  },
  {
-  "id": "eng-2021-ol-q1-i",
-  "topicId": "eng-2-11",
-  "conceptId": "main-operating-features-any-following-electronic",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 OL Q1(i)",
-  "questionText": "Describe the main operating features of any one of the following: electronic component Air compressor Strip heater Three‐jaw chuck.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "The compressor show has an electric motor, a compressor unit, and a storage tank. The electric motor drives the compressor unit which sucks air into a cylinder through an inlet valve. The air is then squashed (compressed) by a piston and forced into the storage tank. As the compressor continues to run, pressure builds up inside the storage tank. When it reaches a set level the electrical motor cuts off, stopping the compressor. The storage tank now stores the compressed air for use. When the pressure drops inside the storage tank, the electric motor starts again to bring up the level of pressure inside the storage tank.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required, the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by controlling the heating temperature.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "A 3-jaw chuck is used for holding round or hexagonal work. The chuck has three jaws which are located on a scroll plate. When the chuck key is used, the scroll plate rotates moving all three jaws together, automatically centering the work when the chuck is closed (self-centering). Two sets of jaws are supplied with these chucks. One set for gripping small diameter and hollow work. The other for gripping large diameter work. The jaws of each set are stamped 1, 2 and 3 and corresponding numbers are stamped beside each slot on the chuck. This is to ensure that each jaw is returned to its proper slot after removal.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Jaw 1",
-    "marks": null
-   }
-  ],
-  "stem": "Give brief answers to any eight of the following:",
-  "notes": "The scheme prints '6 marks'."
- },
- {
   "id": "eng-2021-ol-q1-j",
   "topicId": "eng-3-14",
   "conceptId": "any-following-laser-cutting-bluetooth-drone",
@@ -3474,116 +3431,6 @@
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
  },
  {
-  "id": "eng-2021-ol-q3-d-i",
-  "topicId": "eng-3-8",
-  "conceptId": "malleability-or-advantages-robotics-manufacturing",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 OL Q3(d)(i)",
-  "questionText": "Explain any two of the following terms: Malleability, OR State two advantages of robotics in manufacturing.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "The ability of a material to be hammered and/or formed without breaking.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Robotics offer precision placement of components in manufacturing.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Robotics offer precision when performing manufacturing processes such as welding & paint spraying.",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '6 marks'."
- },
- {
-  "id": "eng-2021-ol-q3-d-ii",
-  "topicId": "eng-3-14",
-  "conceptId": "compressive-strength-or-ways-use-robotic",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 OL Q3(d)(ii)",
-  "questionText": "Explain any two of the following terms: Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "The ability of a material to withstand being squashed or pushed together.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '6 marks'."
- },
- {
-  "id": "eng-2021-ol-q3-d",
-  "topicId": "eng-3-8",
-  "conceptId": "any-following-terms-malleability-or-advantages",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 OL Q3(d)",
-  "questionText": "Explain any two of the following terms: (i) Malleability, OR State two advantages of robotics in manufacturing. (ii) Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment. (iii) Ductility, (iv) Tensile strength.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "The ability of a material to be hammered and/or formed without breaking.",
-    "marks": 12,
-    "group": {
-     "claimMax": 2,
-     "perOption": 6,
-     "options": [
-      "The ability of a material to be hammered and/or formed without breaking.",
-      "Robotics offer precision placement of components in manufacturing.",
-      "Robotics offer precision when performing manufacturing processes such as welding & paint spraying.",
-      "The ability of a material to withstand being squashed or pushed together.",
-      "Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.",
-      "The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).",
-      "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.",
-      "The ability of a material to withstand being pulled apart or stretched."
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme prints 'Two parts @ 6 marks (12)'."
- },
- {
   "id": "eng-2021-ol-q4-a-i",
   "topicId": "eng-2-10",
   "conceptId": "type-flame-produced-each-following-oxy",
@@ -3774,7 +3621,7 @@
  },
  {
   "id": "eng-2021-ol-q4-c-iii",
-  "topicId": "eng-1-5",
+  "topicId": "eng-2-10",
   "conceptId": "suitable-method-used-join-light-gauge",
   "level": "ordinary",
   "year": 2021,
@@ -3859,7 +3706,7 @@
  },
  {
   "id": "eng-2021-ol-q5-a-ii",
-  "topicId": "eng-2-13",
+  "topicId": "eng-1-9",
   "conceptId": "aid-diagram-any-manufacturing-processes-named",
   "level": "ordinary",
   "year": 2021,
@@ -3991,7 +3838,7 @@
  },
  {
   "id": "eng-2021-ol-q5-d",
-  "topicId": "eng-2-10",
+  "topicId": "eng-3-1",
   "conceptId": "safety-precautions-be-observed-when-using",
   "level": "ordinary",
   "year": 2021,
@@ -4146,29 +3993,6 @@
   "questionFigureIncludesPrompt": false
  },
  {
-  "id": "eng-2021-ol-q7-a-i",
-  "topicId": "eng-3-12",
-  "conceptId": "types-fit-possible-when-assembling-shaft",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 OL Q7(a)(i)",
-  "questionText": "Name two types of fit possible when assembling a shaft and a hole.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "A Clearance fit, Interference fit or Transition fit",
-    "marks": 4
-   }
-  ]
- },
- {
   "id": "eng-2021-ol-q7-a-ii",
   "topicId": "eng-3-12",
   "conceptId": "any-fits-named-q7-i",
@@ -4205,6 +4029,666 @@
   "notes": "The scheme prints '4 marks'."
  },
  {
+  "id": "eng-2021-ol-q1-e",
+  "topicId": "eng-2-10",
+  "conceptId": "identify-tool-shown-opposite-use-tool",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(e)",
+  "questionText": "Identify tool A shown opposite and give one use for this tool.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tool A is an adjustable spanner.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "An adjustable spanner is used to loosen or tighten a nut or bolt.",
+    "marks": 3
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '4 (3) + 3 Marks'; Question 1 is answered any eight, two at 7 marks and six at 6.",
+  "figureKey": "engineering-2021-OL-paper-q1e-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "adjustable spanner.",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2021-ol-q1-h",
+  "topicId": "eng-2-16",
+  "conceptId": "electronic-component-shown-suggest-suitable-application",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(h)",
+  "questionText": "Name the electronic component shown and suggest one suitable application of this component.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: The electronic component show is a Light Emitting Diode (L.E.D.).",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Application: Light Emitting Diodes can be used as indicators on TV’s / PC’s / electrical kettles etc. to show they have been turned on.",
+    "marks": 3
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '4 (3) + 3 Marks'; Question 1 is answered any eight, two at 7 marks and six at 6. The scheme sets this answer as \"(g)\".",
+  "questionFigureKey": "engineering-2021-OL-paper-q1h-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q1-m",
+  "topicId": "eng-2-11",
+  "conceptId": "component-b-shown-its-function",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(m)",
+  "questionText": "Name component B shown and state its function.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Chuck key.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints '4 (3) + 3 Marks'; Question 1 is answered any eight, two at 7 marks and six at 6.",
+  "figureKey": "engineering-2021-OL-paper-q1m-crop",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "Chuck key.",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2021-ol-q1-i",
+  "topicId": "eng-2-11",
+  "conceptId": "main-operating-features-any-following-electronic",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(i)",
+  "questionText": "Describe the main operating features of any one of the following: Air compressor Strip heater Three‐jaw chuck.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The compressor show has an electric motor, a compressor unit, and a storage tank. The electric motor drives the compressor unit which sucks air into a cylinder through an inlet valve. The air is then squashed (compressed) by a piston and forced into the storage tank. As the compressor continues to run, pressure builds up inside the storage tank. When it reaches a set level the electrical motor cuts off, stopping the compressor. The storage tank now stores the compressed air for use. When the pressure drops inside the storage tank, the electric motor starts again to bring up the level of pressure inside the storage tank.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required, the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by controlling the heating temperature.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A 3-jaw chuck is used for holding round or hexagonal work. The chuck has three jaws which are located on a scroll plate. When the chuck key is used, the scroll plate rotates moving all three jaws together, automatically centering the work when the chuck is closed (self-centering). Two sets of jaws are supplied with these chucks. One set for gripping small diameter and hollow work. The other for gripping large diameter work. The jaws of each set are stamped 1, 2 and 3 and corresponding numbers are stamped beside each slot on the chuck. This is to ensure that each jaw is returned to its proper slot after removal.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints 'Award 7 (6) Marks'.",
+  "questionFigureKey": "engineering-2021-OL-paper-q1i-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q2-a",
+  "topicId": "eng-1-4",
+  "conceptId": "function-each-following-furnaces-labelled-b",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q2(a)",
+  "questionText": "Name and state the function of each of the following furnaces, labelled A, B and C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A - Name: Basic Oxygen furnace Function: Produces steel",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B - Name: Blast furnace Function: Produces Pig iron",
+    "marks": 5
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C - Name: Electrical Arc furnace Function: Produces High grade steel",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints 'Name Award 3 @ 3 Marks, Function Award 3 @ 2 Marks'.",
+  "figureKey": "engineering-2021-OL-paper-q2a-crop",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Basic Oxygen furnace",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Blast furnace",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Electrical Arc furnace",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2021-ol-q2-b-i",
+  "topicId": "eng-1-4",
+  "conceptId": "label-main-parts-furnace",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q2(b)(i)",
+  "questionText": "Select one of the furnaces shown at Q2(a) above and, with the aid of a suitable diagram, answer each of the following: (i) Label the main parts of the furnace;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Select one of the furnaces shown at Q2(a) above and, with the aid of a suitable diagram, answer each of the following: (i) Label the main parts of the furnace;",
+    "marks": 6,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme answers for whichever furnace was chosen: A, the basic oxygen furnace, first; then B, the blast furnace; then C, the electric arc furnace.",
+  "figureKey": "engineering-2021-OL-scheme-q2bi-sol",
+  "questionFigureKey": "engineering-2021-OL-paper-q2a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q2-b-ii",
+  "topicId": "eng-1-4",
+  "conceptId": "materials-used-charge",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q2(b)(ii)",
+  "questionText": "Select one of the furnaces shown at Q2(a) above and, with the aid of a suitable diagram, answer each of the following: (ii) List the materials used in the charge;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Molten iron / scrap metal, lime, carbon",
+    "marks": 3,
+    "accepts": [
+     "Iron ore, coke & limestone",
+     "Pig iron, scrap metal & carbon."
+    ],
+    "contextNote": "The scheme answers for whichever furnace was chosen: A, the basic oxygen furnace, first; then B, the blast furnace; then C, the electric arc furnace."
+   }
+  ],
+  "questionFigureKey": "engineering-2021-OL-paper-q2a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q2-b-iii",
+  "topicId": "eng-1-4",
+  "conceptId": "how-charge-heated",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q2(b)(iii)",
+  "questionText": "Select one of the furnaces shown at Q2(a) above and, with the aid of a suitable diagram, answer each of the following: (iii) Describe how the charge is heated.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Oxygen blown onto the surface of the molten metal produces intense heat which burns unwanted impurities from the charge.",
+    "marks": 3,
+    "accepts": [
+     "As the coke burns it provides heat to melt the charge. To support the burning process air is blown into the charge through the tuyere.",
+     "The charge is heated by an electric arc created by current flowing between the carbon electrodes and the charge."
+    ],
+    "contextNote": "The scheme answers for whichever furnace was chosen: A, the basic oxygen furnace, first; then B, the blast furnace; then C, the electric arc furnace."
+   }
+  ],
+  "questionFigureKey": "engineering-2021-OL-paper-q2a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q2-c-i",
+  "topicId": "eng-3-14",
+  "conceptId": "suitable-material-each-parts-labelled-wheelchair",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q2(c)(i)",
+  "questionText": "Name a suitable material for each of the parts labelled on the wheelchair.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Rotary handrail Material: Aluminium / Tubular steel",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Seat cover Material: Leather / Nylon",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Frame Material: Tubular steel / Aluminium / Carbon fiber",
+    "marks": 3
+   }
+  ],
+  "questionFigureKey": "engineering-2021-OL-paper-q2c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q2-c-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "reason-selection-each-material",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q2(c)(ii)",
+  "questionText": "State one reason for the selection of each material.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Rotary handrail Material: Aluminium / Tubular steel Reason: Light & strong",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Seat cover Material: Leather / Nylon Reason: Resistant to wear & durable",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Frame Material: Tubular steel / Aluminium / Carbon fiber Reason: Strong & light",
+    "marks": 2
+   }
+  ],
+  "questionFigureKey": "engineering-2021-OL-paper-q2c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q4-c-i",
+  "topicId": "eng-2-11",
+  "conceptId": "tool-b-shown-purpose-tool-b",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q4(c)(i)",
+  "questionText": "Name tool B shown and state the purpose of tool B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Tap wrench Purpose: The tap wrench is used to hold a threading tap when cutting an internal thread.",
+    "marks": 5
+   }
+  ],
+  "figureKey": "engineering-2021-OL-paper-q4ci-crop",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "Tap wrench",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2021-ol-q5-a-i",
+  "topicId": "eng-1-9",
+  "conceptId": "any-plastic-manufacturing-processes-shown-b",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q5(a)(i)",
+  "questionText": "Name any two of the plastic manufacturing processes shown at A, B and C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A: Vacuum forming",
+    "marks": 10,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "A: Vacuum forming",
+      "B: Injection moulding",
+      "C: Blow moulding"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Two parts @ 5 marks'.",
+  "figureKey": "engineering-2021-OL-paper-q5a-crop",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Vacuum forming",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Injection moulding",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Blow moulding",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2021-ol-q6-a",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-any-lathe-parts-shown",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q6(a)",
+  "questionText": "Identify any three of the lathe parts shown.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "One part @ 6 marks; Two parts @ 5 marks (16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Knurling tool Used to apply a grip on the surface of a piece such as a scriber or centre punch.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Tailstock Facilitates drilling, tapping, reaming or supporting the end of long work on the centre lathe.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Four-way toolpost Holds up to four cutting tools and allows each to be used as needed by rotating the tool post through 90°.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Chuck Used to secure / hold a drill or tap.",
+    "marks": null
+   }
+  ],
+  "questionFigureKey": "engineering-2021-OL-paper-q6a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q7-b-i",
+  "topicId": "eng-3-12",
+  "conceptId": "nominal-diameter-hole",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q7(b)(i)",
+  "questionText": "A hole and shaft assembly is manufactured to the dimensions shown. State the: Nominal diameter of the hole;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nominal diameter of the hole; 30.00 mm",
+    "marks": 5
+   }
+  ],
+  "questionFigureKey": "engineering-2021-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q7-b-ii",
+  "topicId": "eng-3-12",
+  "conceptId": "largest-diameter-shaft",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q7(b)(ii)",
+  "questionText": "A hole and shaft assembly is manufactured to the dimensions shown. State the: Largest diameter of the shaft;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Largest diameter of the shaft; 30.08 mm",
+    "marks": 5
+   }
+  ],
+  "questionFigureKey": "engineering-2021-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q7-b-iii",
+  "topicId": "eng-3-12",
+  "conceptId": "smallest-diameter-hole",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q7(b)(iii)",
+  "questionText": "A hole and shaft assembly is manufactured to the dimensions shown. State the: Smallest diameter of the hole;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Smallest diameter of the hole; 29.94 mm",
+    "marks": 5
+   }
+  ],
+  "questionFigureKey": "engineering-2021-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q7-b-iv",
+  "topicId": "eng-3-12",
+  "conceptId": "type-fit-will-result-assembly-largest",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q7(b)(iv)",
+  "questionText": "A hole and shaft assembly is manufactured to the dimensions shown. State the: The type of fit which will result from the assembly of the largest shaft and the smallest hole.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Type of fit; Interference fit.",
+    "marks": 5
+   }
+  ],
+  "questionFigureKey": "engineering-2021-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q7-c",
+  "topicId": "eng-3-12",
+  "conceptId": "any-instruments-shown-application-each-instrument",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q7(c)",
+  "questionText": "Name any three of the instruments shown and give one application of each instrument named:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Engineering protractor - Used for checking or accurately marking out angles on material.",
+    "marks": 18,
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Engineering protractor - Used for checking or accurately marking out angles on material.",
+      "Digital Vernier calipers - Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.",
+      "Vee block & clamp - Used of holding round bars when drilling or marking out.",
+      "Feeler gauges - Used to check the gap between two parts."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Name Award 3 @ 3 Marks, Application Award 3 @ 3 Marks'.",
+  "questionFigureKey": "engineering-2021-OL-paper-q7c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q7-c-i",
+  "topicId": "eng-2-16",
+  "conceptId": "any-electronic-components-could-be-used",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q7(c)(i)",
+  "questionText": "Name any two electronic components that could be used in the electrical drive of the model eRacer shown opposite.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "One part @ 5 marks; One part @ 4 marks"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Motor",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Switch",
+    "marks": null
+   }
+  ],
+  "questionFigureKey": "engineering-2021-OL-paper-q7ci-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
   "id": "eng-2021-ol-q7-c-ii",
   "topicId": "eng-2-16",
   "conceptId": "draw-electronic-symbol-each-electronic-component",
@@ -4222,16 +4706,143 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Digital Vernier calipers - Used for accurately measuring the diameter of round bars or internal diameters of holes.",
-    "marks": 5
+    "verbatim": "Draw the electronic symbol for each electronic component named.",
+    "marks": 9,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints 'Award 1 @ 5 Marks, Award 1 @ 4 Marks'.",
+  "figureKey": "engineering-2021-OL-scheme-q7cii-sol",
+  "questionFigureKey": "engineering-2021-OL-paper-q7ci-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q7-a-i",
+  "topicId": "eng-3-12",
+  "conceptId": "types-fit-possible-when-assembling-shaft",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q7(a)(i)",
+  "questionText": "Name two types of fit possible when assembling a shaft and a hole.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Clearance fit,",
+    "marks": 8,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Clearance fit,",
+      "Interference fit",
+      "Transition fit"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints '(i) Name Award 2 @ 4 Marks'."
+ },
+ {
+  "id": "eng-2021-ol-q3-d",
+  "topicId": "eng-3-8",
+  "conceptId": "any-following-terms",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q3(d)",
+  "questionText": "Explain any two of the following terms: (i) Malleability, (ii) Compressive strength, (iii) Ductility, (iv) Tensile strength.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "(i) Malleability: The ability of a material to be hammered and/or formed without breaking.",
+    "marks": 12,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "(i) Malleability: The ability of a material to be hammered and/or formed without breaking.",
+      "(ii) Compressive strength: The ability of a material to withstand being squashed or pushed together.",
+      "(iii) Ductility: A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.",
+      "(iv) Tensile strength: The ability of a material to withstand being pulled apart or stretched."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Award 2 @ 6 Marks'. The paper sets this (d) and the robotics (d) beneath it either side of an OR."
+ },
+ {
+  "id": "eng-2021-ol-q3-d-i",
+  "topicId": "eng-3-14",
+  "conceptId": "malleability-or-advantages-robotics-manufacturing",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q3(d)(i)",
+  "questionText": "State two advantages of robotics in manufacturing.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Robotics offer precision placement of components in manufacturing.",
+    "marks": 3
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Measurement can be read directly from a digital display.",
-    "marks": 4
+    "verbatim": "Robotics offer precision when performing manufacturing processes such as welding & paint spraying.",
+    "marks": 3
    }
-  ]
+  ],
+  "notes": "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following terms\"."
+ },
+ {
+  "id": "eng-2021-ol-q3-d-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "compressive-strength-or-ways-use-robotic",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q3(d)(ii)",
+  "questionText": "State two ways in which the use of robotic technology can improve the safety of a work environment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).",
+    "marks": 3
+   }
+  ],
+  "notes": "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following terms\"."
  },
  {
   "id": "eng-2022-hl-q1-a",

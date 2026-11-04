@@ -127,13 +127,23 @@ def render(year, level, spec, out):
         # white between them: one answer the scheme prints in pieces (a
         # labelled diagram for each furnace a candidate may choose).
         gap = int(12 * DPI / 72)
-        sheet = Image.new('RGB', (max(t.width for t in tiles),
-                                  sum(t.height for t in tiles) + gap * (len(tiles) - 1)),
-                          'white')
-        y = 0
-        for t in tiles:
-            sheet.paste(t, (0, y))
-            y += t.height + gap
+        if spec.get('layout') == 'row':
+            # Side by side, top-aligned: three diagrams of one height read
+            # at a size a phone can show, where a column of them could not.
+            sheet = Image.new('RGB', (sum(t.width for t in tiles) + gap * (len(tiles) - 1),
+                                      max(t.height for t in tiles)), 'white')
+            x = 0
+            for t in tiles:
+                sheet.paste(t, (x, 0))
+                x += t.width + gap
+        else:
+            sheet = Image.new('RGB', (max(t.width for t in tiles),
+                                      sum(t.height for t in tiles) + gap * (len(tiles) - 1)),
+                              'white')
+            y = 0
+            for t in tiles:
+                sheet.paste(t, (0, y))
+                y += t.height + gap
         sheet.save(out)
 
 
