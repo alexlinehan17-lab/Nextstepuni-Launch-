@@ -6688,7 +6688,7 @@ export const CARDS: SecCard[] = [
     questionText: "How does document B show the tensions that had arisen in Northern Ireland between the dates of the two marches, 1967 and 1969? Refer to both documents in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one\nDocument B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state Catholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive” The intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry", marks: 10, permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "r-1", kind: "criterion", verbatim: "Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one\nDocument B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state\nCatholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive”\nThe intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry", marks: 10, permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -20911,7 +20911,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which document tells us more about the role of the Montgomery police during the bus boycott? Explain your answer, referring to both documents.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Document A OR", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Document A OR Document B.", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "The instructions given to the police in Montgomery are described in doc A. Police were told to “break up” the boycotter car pools by enforcing all traffic regulations “diligently”", marks: null, contextNote: "Document A", openList: true },
     { id: "r-3", kind: "point", verbatim: "Also, all black people waiting for lifts were to be charged with “loitering”", marks: null, contextNote: "Document A", openList: true },
     { id: "r-4", kind: "point", verbatim: "This shows how the police were, in effect, instructed to harass the boycotters as a way of trying to end the bus boycott.", marks: null, contextNote: "Document A", openList: true },

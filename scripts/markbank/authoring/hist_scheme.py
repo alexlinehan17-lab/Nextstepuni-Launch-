@@ -606,7 +606,16 @@ INSTRUCTION_POINT = re.compile(
     r'|Identification of doc [AB]\b'
     # A half-answer cap printed under the answer: "NB: Reasons If only one
     # reason = max 5M" (2012 Higher Q3).
-    r'|NB:\s*\w+\s+If only (?:one|ONE)\b)', re.I)
+    r'|NB:\s*\w+\s+If only (?:one|ONE)\b'
+    # The condition the whole answer is marked on, printed on the line of its
+    # closing "Max = 10M" (2026 Ordinary Q3): "An implied yes/no with a valid
+    # reason can earn Max = 10M", "Answer must clearly make a link between
+    # the two documents Max = 10M".
+    r'|An implied yes/no with a valid reason can earn\b'
+    r'|Answer must clearly make a link\b)', re.I)
+# Of those, the ones about the verdict ride on the part's first row, where
+# the verdict is; every other condition rides on its last answer row.
+VERDICT_CONDITION = re.compile(r'^An implied yes/no\b', re.I)
 
 # A sentence that tells the candidate or the examiner what the answer must
 # do, set inside the scheme's model answer: "Candidates should refer to the doc
@@ -636,7 +645,10 @@ INSTRUCTION_RUN_ON = re.compile(
 # of the NEXT one.
 # Never the object of the sentence it ends: "Compare role of poet as set out in
 # Document A with role of poet as set out in Document B" (2011 Ordinary).
-TRAILING_DOC_LABEL = re.compile(r'(?<!\bin)(?<!\bof)(?<!\bfrom)(?<!\bwith)(?<!\band)\s+(Doc\.?(?:ument)?\s*[AB])\s*[:.]?\s*$')
+# Nor the second half of a printed choice: "Document A OR Document B." (2021
+# Higher Q2(b)).
+TRAILING_DOC_LABEL = re.compile(r'(?<!\bin)(?<!\bof)(?<!\bfrom)(?<!\bwith)(?<!\band)(?<!\bor)(?<!\bOR)'
+                                r'\s+(Doc\.?(?:ument)?\s*[AB])\s*[:.]?\s*$')
 
 # A document heading the scheme sets over its own bullets ("Document A:" on a
 # line of its own). It says which document the points under it come from, so it
@@ -1417,16 +1429,19 @@ class HistScheme:
                 ask.notes.append(m.group(0).strip())
                 point = point[m.end():].strip()
             if INSTRUCTION_POINT.match(point):
-                if (IF_ONLY.search(point) or point.startswith('Identification of doc')) and repaired:
+                if (IF_ONLY.search(point) or point.startswith(('Identification of doc', 'An implied yes/no',
+                                                               'Answer must clearly make a link'))) and repaired:
                     # A half-answer cap ("NB: Reasons If only one reason = max
                     # 5M") is the student's to apply: it stays on the card, as
-                    # the last answer row's note.
-                    label0, point0, note0 = repaired[-1]
+                    # the last answer row's note (a verdict's condition, on
+                    # the first row's).
+                    at = 0 if VERDICT_CONDITION.match(point) else -1
+                    label0, point0, note0 = repaired[at]
                     # The tariff reader took the part's marks off the closing
                     # "Max = 10M"; the note keeps them, as hist_rows does.
                     if re.search(r'\bMax\s*=\s*$', point) and ask.total:
                         point = f'{point} {ask.total}M'
-                    repaired[-1] = (label0, point0, ' — '.join(x for x in (note0, point) if x))
+                    repaired[at] = (label0, point0, ' — '.join(x for x in (note0, point) if x))
                 ask.notes.append(point)
                 continue
             note = None

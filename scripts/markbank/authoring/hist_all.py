@@ -487,6 +487,25 @@ RUN_ON_CONNECTIVES = frozenset(
     'contrasting same similar against regarding re versus vs - – — / &'.split())
 
 
+# A row whose statements the scheme prints one to a line with no stop between
+# them, and with no document label for document_lines to break on, so the
+# reader joins them into one sentence ("... the security apparatus of the
+# state Catholics were not part ...", 2011 Higher Q3(a)). Each statement keeps
+# its own line, as printed: the words are each line's opening as the scheme
+# prints it, and only the whitespace changes.
+PRINTED_LINE_STARTS = {
+    'hist-2011-hl-lm-s1-q3a': ('Catholics were not part', 'The intervening events'),
+}
+
+
+def printed_lines(card):
+    """Put each printed line PRINTED_LINE_STARTS names back on its own line."""
+    for start in PRINTED_LINE_STARTS.get(card['id'], ()):
+        hits = [row for row in card['rows'] if f' {start}' in row['verbatim']]
+        assert len(hits) == 1 and hits[0]['verbatim'].count(f' {start}') == 1, (card['id'], start)
+        hits[0]['verbatim'] = hits[0]['verbatim'].replace(f' {start}', f'\n{start}')
+
+
 def note_unprinted(row):
     """Say, in the bank's fixed words, that a row prices an answer its scheme
     does not print ("ONE valid reason", "Yes or No"). An any-N group ("Any
@@ -1073,6 +1092,7 @@ def build():
                         note_unprinted(row)
                         if row['kind'] != 'anyN':
                             row['verbatim'] = document_lines(row['verbatim'])
+                    printed_lines(card)
                     cards.append(card)
     return (cards, exclusions, refused, examples, title_pairs, tariff_checks,
             extra_topic_checks, title_variants)

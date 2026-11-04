@@ -27515,7 +27515,7 @@
    {
     "id": "r-1",
     "kind": "criterion",
-    "verbatim": "Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one\nDocument B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state Catholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive” The intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry",
+    "verbatim": "Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one\nDocument B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state\nCatholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive”\nThe intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry",
     "marks": 10,
     "permittedMarks": [
      0,
@@ -287679,7 +287679,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Document A OR",
+    "verbatim": "Document A OR Document B.",
     "marks": null,
     "openList": true
    },
@@ -445767,7 +445767,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Answers can argue for/against the reliability of the source",
-    "marks": null
+    "marks": null,
+    "contextNote": "An implied yes/no with a valid reason can earn Max = 10M"
    },
    {
     "id": "r-2",
@@ -445785,12 +445786,6 @@
     "id": "r-4",
     "kind": "point",
     "verbatim": "It is a Cork newspaper writing for a Cork readership and therefore hesitates to criticise the way the Cork crowd interfered with the run of play",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "An implied yes/no with a valid reason can earn Max =",
     "marks": null
    }
   ],
@@ -445832,13 +445827,8 @@
     "id": "r-2",
     "kind": "point",
     "verbatim": "Paul Rouse (doc B) uses this evidence to say that “even the local papers” noted the behaviour of the home crowd which had hurt the chances of the Tipperary men",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Answer must clearly make a link between the two documents Max =",
-    "marks": null
+    "marks": null,
+    "contextNote": "Answer must clearly make a link between the two documents Max = 10M"
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",

@@ -59694,11 +59694,10 @@ export const CARDS: SecCard[] = [
     questionText: "Do you think that document A is a reliable historical source? Give a reason for your answer, referring to the document.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Answers can argue for/against the reliability of the source", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Answers can argue for/against the reliability of the source", marks: null, contextNote: "An implied yes/no with a valid reason can earn Max = 10M" },
     { id: "r-2", kind: "point", verbatim: "It is a primary source written by somebody who attended the games", marks: null },
     { id: "r-3", kind: "point", verbatim: "It provides factual information about the size of the crowd, the presence of five bands and the behaviour of the crowd, etc", marks: null },
     { id: "r-4", kind: "point", verbatim: "It is a Cork newspaper writing for a Cork readership and therefore hesitates to criticise the way the Cork crowd interfered with the run of play", marks: null },
-    { id: "r-5", kind: "point", verbatim: "An implied yes/no with a valid reason can earn Max =", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -59723,8 +59722,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "There is a direct link between the two documents: In doc A, the newspaper reporter said “we venture to remark that if the crowd had kept off the field and given fair play to the visitors, the contest would have provided the best hurling ever seen”", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Paul Rouse (doc B) uses this evidence to say that “even the local papers” noted the behaviour of the home crowd which had hurt the chances of the Tipperary men", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Answer must clearly make a link between the two documents Max =", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Paul Rouse (doc B) uses this evidence to say that “even the local papers” noted the behaviour of the home crowd which had hurt the chances of the Tipperary men", marks: null, contextNote: "Answer must clearly make a link between the two documents Max = 10M" },
     ],
     sourceMaterial: {
           "kind": "source-text",
