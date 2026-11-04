@@ -395,15 +395,15 @@
   "history": {
     "cards": 749,
     "contentHash": "5a5803ac3a0f3bfe",
-    "coveragePct": 100.0,
+    "coveragePct": 30.8,
     "covered": 749,
     "excluded": 681,
-    "leaves": 1430,
-    "open": 0,
+    "leaves": 4647,
+    "open": 3217,
     "orphans": 0,
     "papers": {
-      "count": 20,
-      "hash": "cb5c8677ec1bca17"
+      "count": 66,
+      "hash": "c5dad2eeaf2c2bfd"
     },
     "refsHash": "eab7907b0ead2f31"
   },

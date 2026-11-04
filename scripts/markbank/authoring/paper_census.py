@@ -178,8 +178,20 @@ SUBJECTS = {
     # and C (Ordinary), so a bare question number addresses nothing: the
     # section token carries the topic and the Ordinary part with it, and a key
     # reads ('2 Topic 1 A', 1, None, None) -> "Section 2 Topic 1 A Q1".
+    #
+    # One sitting sets only ONE of the two papers. The 2020 examination was
+    # the November 2020 sitting (the June examinations were replaced by
+    # calculated grades), and the SEC set no Early Modern paper for it:
+    # paperTrailData.ts lists `history-early-modern` for 2019 and 2021 and no
+    # 2020 edition at either level or in either language; the archive's
+    # exampapers/2020/ holds LC004 (Later Modern) at both levels and no LC096;
+    # and the 2020 Higher and Ordinary schemes (16 and 12 pages) print a Later
+    # Modern half only, where 2019's prints both. `absent` names that sitting
+    # and that field and nothing else, so a missing Early Modern paper in any
+    # other year still stops the census.
     'history': {'mode': 'sections', 'walker': 'history',
-                'components': {'lm': 'Later Modern', 'em': 'Early Modern'}},
+                'components': {'lm': 'Later Modern', 'em': 'Early Modern'},
+                'absent': {(2020, 'hl'): ('em',), (2020, 'ol'): ('em',)}},
     # French sits TWO booklets at one sitting — the written paper and a
     # separate Listening Comprehension Test with its own SEC file id — and
     # numbers both from 1 inside every section, so the section carries the
@@ -3451,7 +3463,16 @@ def census_subject(subject):
             # chooses between, rather than two booklets of one paper. Each is
             # censused whole and named in the citation.
             units = sorted((cfg['components'][c], c) for c in comps if c)
-            missing = sorted(set(cfg['components']) - {c for c in comps if c})
+            present = {c for c in comps if c}
+            # A paper the SEC never set for this sitting (see the subject's
+            # 'absent' entry and its evidence) is not missing. One that is
+            # declared absent and yet on disk is a wrong declaration.
+            absent = set(cfg.get('absent', {}).get((year, level), ()))
+            if absent & present:
+                raise AssertionError(
+                    f'{subject} {year} {level}: declared absent but on disk: '
+                    f'{", ".join(cfg["components"][c] for c in sorted(absent & present))}')
+            missing = sorted(set(cfg['components']) - present - absent)
             if missing:
                 raise AssertionError(
                     f'{subject} {year} {level}: no paper on disk for '
