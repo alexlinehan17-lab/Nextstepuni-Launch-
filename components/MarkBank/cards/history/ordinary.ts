@@ -3198,6 +3198,1839 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s1-q1a", topicId: "hist-em-eur-2", conceptId: "netherlands-fallen-into-great-misery-distress",
+    section: "1", questionRef: "2012 OL Early Modern Section 1 Q1(a)",
+    stem: "Case study: The decline of the port of Antwerp",
+    questionText: "According to document A, why have the Netherlands fallen into great misery and distress?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because of civil war, haughty and harsh government, robberies and other disturbances committed by the Spaniards", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s1-q1b", topicId: "hist-em-eur-2", conceptId: "inhabitants-netherlands-want-back",
+    section: "1", questionRef: "2012 OL Early Modern Section 1 Q1(b)",
+    stem: "Case study: The decline of the port of Antwerp",
+    questionText: "In document A, what do the inhabitants of the Netherlands want back?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Their old privileges, customs and freedoms", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s1-q1c", topicId: "hist-em-eur-2", conceptId: "who-principal-enemies-netherlands",
+    section: "1", questionRef: "2012 OL Early Modern Section 1 Q1(c)",
+    stem: "Case study: The decline of the port of Antwerp",
+    questionText: "According to document B, who was one of the principal enemies of the Netherlands?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Duke of Alva", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s1-q1d", topicId: "hist-em-eur-2", conceptId: "threatened-complete-ruin-country",
+    section: "1", questionRef: "2012 OL Early Modern Section 1 Q1(d)",
+    stem: "Case study: The decline of the port of Antwerp",
+    questionText: "According to document B, what threatened the complete ruin of the country?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A 10% tax on all sales", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s1-q1e", topicId: "hist-em-eur-2", conceptId: "prosperity-netherlands-based",
+    section: "1", questionRef: "2012 OL Early Modern Section 1 Q1(e)",
+    stem: "Case study: The decline of the port of Antwerp",
+    questionText: "From document B, on what is the prosperity of the Netherlands based?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Trade and manufacture", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s1-q2a", topicId: "hist-em-eur-2", conceptId: "gives-more-vivid-account-actions-spanish",
+    section: "1", questionRef: "2012 OL Early Modern Section 1 Q2(a)",
+    stem: "Case study: The decline of the port of Antwerp",
+    questionText: "Which document, A or B, gives the more vivid account of the actions of the Spanish soldiers? Refer to both documents in your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A or B gives the more vivid account Document A states that where Spanish soldiers mutinied, they threatened lords, captured many places, robbed them and burned them down Document B gives the Duke of Alva as an example of Spanish misrule", marks: null },
+    { id: "r-2", kind: "point", verbatim: "He was notorious for harshness and cruelty", marks: null },
+    { id: "r-3", kind: "point", verbatim: "This document also gives us a short description of the sacking of Antwerp and its consequences.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s1-q2b", topicId: "hist-em-eur-2", conceptId: "netherlands-set-out",
+    section: "1", questionRef: "2012 OL Early Modern Section 1 Q2(b)",
+    stem: "Case study: The decline of the port of Antwerp",
+    questionText: "Compare the state of the Netherlands as set out in each document, A and B. Refer to both documents in your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The state of the Netherlands as set out in each document Document A describes the Netherlands as being in great misery and distress because of Spanish misrule", marks: null },
+    { id: "r-2", kind: "point", verbatim: "It describes the damage done by mutinous Spanish soldiers", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Trade and prosperity had been badly hit", marks: null },
+    { id: "r-4", kind: "point", verbatim: "It had got so bad that the people of the Netherlands were demanding a Spanish withdrawal and a return to their old privileges, customs and freedoms", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Document B states that the government, justice system and tax regime had been changed by the Duke of Alva and this threatened to ruin the country which depended on trade and manufacture", marks: null },
+    { id: "r-6", kind: "point", verbatim: "The city of Antwerp was greatly damaged", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Expect and allow overlap with answer to 2(a).", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s1-q3a", topicId: "hist-em-eur-2", conceptId: "primary-source-secondary-source",
+    section: "1", questionRef: "2012 OL Early Modern Section 1 Q3(a)",
+    stem: "Case study: The decline of the port of Antwerp",
+    questionText: "Is document A a primary source or a secondary source? Explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A is a primary source", marks: 5 },
+    { id: "r-2", kind: "criterion", verbatim: "It is an original document from the period called the Pacification of Ghent (8 Nov 1576) signed four days after the sack of Antwerp. It was actually drafted by the prelates, nobles, towns and states of the Netherlands.", marks: 5, contextNote: "Mark quality of explanation on its merits. — Explanation be marked on a sliding scale out of 5: Excellent = 5 mks Very good = 4 mks Good = 3 mks Fair = 2 mks Weak = 0-1 mks — Max = 10M", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s1-q3b", topicId: "hist-em-eur-2", conceptId: "evidence-find-relation-importance-trade-antwerp",
+    section: "1", questionRef: "2012 OL Early Modern Section 1 Q3(b)",
+    stem: "Case study: The decline of the port of Antwerp",
+    questionText: "From document B, what evidence can you find in relation to the importance of trade in Antwerp?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Points of evidence of the importance of trade in Antwerp", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The prospect of a new sales tax was a threat to the economy of a country which depended on trade and manufacture for its prosperity", marks: null },
+    { id: "r-3", kind: "point", verbatim: "The sack of Antwerp harmed the city‟s residents but was a disaster for trade as foreign-owned businesses in the city were forced to flee.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s1-q4", topicId: "hist-em-eur-2", conceptId: "factors-led-decline-port-antwerp",
+    section: "1", questionRef: "2012 OL Early Modern Section 1 Q4",
+    stem: "Case study: The decline of the port of Antwerp",
+    questionText: "What factors led to the decline of the port of Antwerp?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[0], schemePages: [20] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t1a-q1", topicId: "hist-em-irl-1", conceptId: "who-archbishop-george-browne-not-persuade",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 1 A Q1",
+    stem: "Archbishop George Browne came to Dublin, July 1536, to promote the Reformation of Henry VIII. In a report to London he complained that there was hardly one of the twenty-eight senior clergymen in Dublin who supported him. Read this edited extract and answer the questions that follow.\n\nI cannot persuade any priest, to preach the word of God since my coming over, or to preach the just title of our most illustrious prince. I cannot persuade them either by gentle encouragement, by instruction, or by threats of sharp correction.\nIn the past, they would very often preach, in the old way, even until good Christians were weary of them.\nBut now they will not once open their mouths in any pulpit to preach the King’s title. But in corners and in company like them, they give their opinions earnestly, and they hinder and undo among the people the work that I do.",
+    questionText: "Who can Archbishop George Browne not persuade to preach?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any priest", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t1a-q2", topicId: "hist-em-irl-1", conceptId: "efforts-made-get-priests-preach",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 1 A Q2",
+    stem: "Archbishop George Browne came to Dublin, July 1536, to promote the Reformation of Henry VIII. In a report to London he complained that there was hardly one of the twenty-eight senior clergymen in Dublin who supported him. Read this edited extract and answer the questions that follow.\n\nI cannot persuade any priest, to preach the word of God since my coming over, or to preach the just title of our most illustrious prince. I cannot persuade them either by gentle encouragement, by instruction, or by threats of sharp correction.\nIn the past, they would very often preach, in the old way, even until good Christians were weary of them.\nBut now they will not once open their mouths in any pulpit to preach the King’s title. But in corners and in company like them, they give their opinions earnestly, and they hinder and undo among the people the work that I do.",
+    questionText: "What efforts has he made to get the priests to preach?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Encouragement", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Instruction", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "Threat", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t1a-q3", topicId: "hist-em-irl-1", conceptId: "does-browne-want-priests-preach",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 1 A Q3",
+    stem: "Archbishop George Browne came to Dublin, July 1536, to promote the Reformation of Henry VIII. In a report to London he complained that there was hardly one of the twenty-eight senior clergymen in Dublin who supported him. Read this edited extract and answer the questions that follow.\n\nI cannot persuade any priest, to preach the word of God since my coming over, or to preach the just title of our most illustrious prince. I cannot persuade them either by gentle encouragement, by instruction, or by threats of sharp correction.\nIn the past, they would very often preach, in the old way, even until good Christians were weary of them.\nBut now they will not once open their mouths in any pulpit to preach the King’s title. But in corners and in company like them, they give their opinions earnestly, and they hinder and undo among the people the work that I do.",
+    questionText: "What does Browne want the priests to preach?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The just title of our most illustrious prince", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t1a-q4", topicId: "hist-em-irl-1", conceptId: "priests-hinder-undo-browne-work",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 1 A Q4",
+    stem: "Archbishop George Browne came to Dublin, July 1536, to promote the Reformation of Henry VIII. In a report to London he complained that there was hardly one of the twenty-eight senior clergymen in Dublin who supported him. Read this edited extract and answer the questions that follow.\n\nI cannot persuade any priest, to preach the word of God since my coming over, or to preach the just title of our most illustrious prince. I cannot persuade them either by gentle encouragement, by instruction, or by threats of sharp correction.\nIn the past, they would very often preach, in the old way, even until good Christians were weary of them.\nBut now they will not once open their mouths in any pulpit to preach the King’s title. But in corners and in company like them, they give their opinions earnestly, and they hinder and undo among the people the work that I do.",
+    questionText: "How do the priests hinder and undo Browne’s work?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By speaking ill of Browne‟s project", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t1a-q5", topicId: "hist-em-irl-1", conceptId: "new-title-king-priests-some-difficulty",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 1 A Q5",
+    stem: "Archbishop George Browne came to Dublin, July 1536, to promote the Reformation of Henry VIII. In a report to London he complained that there was hardly one of the twenty-eight senior clergymen in Dublin who supported him. Read this edited extract and answer the questions that follow.\n\nI cannot persuade any priest, to preach the word of God since my coming over, or to preach the just title of our most illustrious prince. I cannot persuade them either by gentle encouragement, by instruction, or by threats of sharp correction.\nIn the past, they would very often preach, in the old way, even until good Christians were weary of them.\nBut now they will not once open their mouths in any pulpit to preach the King’s title. But in corners and in company like them, they give their opinions earnestly, and they hinder and undo among the people the work that I do.",
+    questionText: "With what new title of the King had the priests some difficulty?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Supreme head on earth of the church in Ireland", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t1b", topicId: "hist-em-irl-1", conceptId: "con-bacach-neill-lord-leonard-grey",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 1 B",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "Write a short paragraph on one of the following:\n1. Con Bacach O’Neill.\n2. Lord Leonard Grey and the Geraldine League.\n3. The monasteries and their dissolution.\n4. Sir Anthony St. Leger.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t1c", topicId: "hist-em-irl-1", conceptId: "did-gear-idm-8th-earl-kildare",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 1 C",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "Answer one of the following:\n1. How did GearóidMór, 8th Earl of Kildare, become so powerful in Ireland?\n2. How important was the Plantation of Laois and Offaly?\n3. What property rights had married women under Gaelic law?\n4. How were poets trained in the Bardic Schools?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t2a-q1", topicId: "hist-em-irl-2", conceptId: "when-did-dermot-creagh-come-ireland",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 2 A Q1",
+    stem: "This edited extract is taken from a report written by Meiler Magrath, in 1590, about Dr Dermot Creagh, Catholic bishop of Cork and Cloyne. Read it and answer the questions that follow.\n\nCreagh came over to Ireland in the time of the Desmond rebellion and is still there without pardon or protection. He has spiritual power in the whole province, as the pope’s legate. He consecrates churches, ordains priests, confirms children, and decides on marriage cases.\nIt is well known that Creagh is one of the most dangerous fellows that ever came here. He has continued longer there than any of his sort. He has done more harm already in the last two years than Dr Sanders did.\nThis Creagh draws the whole country into disloyalty, into the breaking of laws, because his reputation is so high.",
+    questionText: "When did Dr Dermot Creagh come to Ireland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The time of the Desmond Rebellion", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t2a-q2", topicId: "hist-em-irl-2", conceptId: "positions-did-creagh-hold",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 2 A Q2",
+    stem: "This edited extract is taken from a report written by Meiler Magrath, in 1590, about Dr Dermot Creagh, Catholic bishop of Cork and Cloyne. Read it and answer the questions that follow.\n\nCreagh came over to Ireland in the time of the Desmond rebellion and is still there without pardon or protection. He has spiritual power in the whole province, as the pope’s legate. He consecrates churches, ordains priests, confirms children, and decides on marriage cases.\nIt is well known that Creagh is one of the most dangerous fellows that ever came here. He has continued longer there than any of his sort. He has done more harm already in the last two years than Dr Sanders did.\nThis Creagh draws the whole country into disloyalty, into the breaking of laws, because his reputation is so high.",
+    questionText: "What positions did Creagh hold?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bishop of Cork and Cloyne/ The Pope‟s legate", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t2a-q3", topicId: "hist-em-irl-2", conceptId: "work-did-creagh-province",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 2 A Q3",
+    stem: "This edited extract is taken from a report written by Meiler Magrath, in 1590, about Dr Dermot Creagh, Catholic bishop of Cork and Cloyne. Read it and answer the questions that follow.\n\nCreagh came over to Ireland in the time of the Desmond rebellion and is still there without pardon or protection. He has spiritual power in the whole province, as the pope’s legate. He consecrates churches, ordains priests, confirms children, and decides on marriage cases.\nIt is well known that Creagh is one of the most dangerous fellows that ever came here. He has continued longer there than any of his sort. He has done more harm already in the last two years than Dr Sanders did.\nThis Creagh draws the whole country into disloyalty, into the breaking of laws, because his reputation is so high.",
+    questionText: "What work did Creagh do in the province?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Consecrating churches","Ordaining priests","Confirming children","Deciding marriage cases"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t2a-q4", topicId: "hist-em-irl-2", conceptId: "magrath-harm-creagh-done",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 2 A Q4",
+    stem: "This edited extract is taken from a report written by Meiler Magrath, in 1590, about Dr Dermot Creagh, Catholic bishop of Cork and Cloyne. Read it and answer the questions that follow.\n\nCreagh came over to Ireland in the time of the Desmond rebellion and is still there without pardon or protection. He has spiritual power in the whole province, as the pope’s legate. He consecrates churches, ordains priests, confirms children, and decides on marriage cases.\nIt is well known that Creagh is one of the most dangerous fellows that ever came here. He has continued longer there than any of his sort. He has done more harm already in the last two years than Dr Sanders did.\nThis Creagh draws the whole country into disloyalty, into the breaking of laws, because his reputation is so high.",
+    questionText: "According to Magrath, what harm has Creagh done?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He has drawn the whole country into disloyalty", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "breaking the laws", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t2a-q5", topicId: "hist-em-irl-2", conceptId: "did-religious-career-meiler-magrath-cause",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 2 A Q5",
+    stem: "This edited extract is taken from a report written by Meiler Magrath, in 1590, about Dr Dermot Creagh, Catholic bishop of Cork and Cloyne. Read it and answer the questions that follow.\n\nCreagh came over to Ireland in the time of the Desmond rebellion and is still there without pardon or protection. He has spiritual power in the whole province, as the pope’s legate. He consecrates churches, ordains priests, confirms children, and decides on marriage cases.\nIt is well known that Creagh is one of the most dangerous fellows that ever came here. He has continued longer there than any of his sort. He has done more harm already in the last two years than Dr Sanders did.\nThis Creagh draws the whole country into disloyalty, into the breaking of laws, because his reputation is so high.",
+    questionText: "Why did the religious career of Meiler Magrath cause such controversy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason why Magrath was controversial", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t2b", topicId: "hist-em-irl-2", conceptId: "shane-neill-desmond-rebellion-nine-years",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 2 B",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
+    questionText: "Write a short paragraph on one of the following:\n1. Shane O’Neill.\n2. The Desmond Rebellion.\n3. The Nine Years’ War.\n4. Recusancy in Elizabethan Ireland.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t2c", topicId: "hist-em-irl-2", conceptId: "did-hugh-neill-build-army-increase",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 2 C",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
+    questionText: "Answer one of the following:\n1. How did Hugh O’Neill build up an army and increase his power in Ulster?\n2. What did Agnes Campbell and /or Grace O’Malley contribute to Irish society?\n3. How did Dublin change during the reign of Queen Elizabeth, 1558- 1603?\n4. What were the aims of Archbishop Adam Loftus in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t3a-q1", topicId: "hist-em-irl-3", conceptId: "where-owen-roe-neill-when-rebellion",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 3 A Q1",
+    stem: "This edited extract describes the return of Owen Roe O’Neill to Ireland in July 1642. Read it and answer the questions which follow.\n\nDespite the rebellion in Ireland commencing in October 1641, Owen Roe O’Neill was not finally released from Spanish military duties in Flanders until mid1642. He travelled from Ostend to Ireland and brought with him several hundred Irish veterans of war, together with military supplies.\nOwen Roe finally sailed into Lough Swilly in July 1642 and proceeded to Doe Castle, Co. Donegal. From here, he went to Charlemont Fort, Co. Armagh to join with Sir Phelim O’Neill, the leader of the Northern revolt…. Sir Phelim reluctantly allowed Owen Roe to take command of the Ulster army in August 1642.\nOwen Roe later gave his reasons for returning to Ulster as ‘not greed for gold, nor ambition of honours, but zeal for the House of God and weariness of the heavy yoke under which I saw my fellow countrymen groan, that brought me hither from lands where I could have passed the end of my days in greater tranquility than I could have hoped for here in Ulster.’",
+    questionText: "Where was Owen Roe O’Neill when the rebellion of 1641 broke out?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Flanders", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t3a-q2", topicId: "hist-em-irl-3", conceptId: "did-owen-roe-bring-him-ulster",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 3 A Q2",
+    stem: "This edited extract describes the return of Owen Roe O’Neill to Ireland in July 1642. Read it and answer the questions which follow.\n\nDespite the rebellion in Ireland commencing in October 1641, Owen Roe O’Neill was not finally released from Spanish military duties in Flanders until mid1642. He travelled from Ostend to Ireland and brought with him several hundred Irish veterans of war, together with military supplies.\nOwen Roe finally sailed into Lough Swilly in July 1642 and proceeded to Doe Castle, Co. Donegal. From here, he went to Charlemont Fort, Co. Armagh to join with Sir Phelim O’Neill, the leader of the Northern revolt…. Sir Phelim reluctantly allowed Owen Roe to take command of the Ulster army in August 1642.\nOwen Roe later gave his reasons for returning to Ulster as ‘not greed for gold, nor ambition of honours, but zeal for the House of God and weariness of the heavy yoke under which I saw my fellow countrymen groan, that brought me hither from lands where I could have passed the end of my days in greater tranquility than I could have hoped for here in Ulster.’",
+    questionText: "What did Owen Roe bring with him to Ulster?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Irish soldiers", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "military supplies", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t3a-q3", topicId: "hist-em-irl-3", conceptId: "when-did-owen-roe-take-command",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 3 A Q3",
+    stem: "This edited extract describes the return of Owen Roe O’Neill to Ireland in July 1642. Read it and answer the questions which follow.\n\nDespite the rebellion in Ireland commencing in October 1641, Owen Roe O’Neill was not finally released from Spanish military duties in Flanders until mid1642. He travelled from Ostend to Ireland and brought with him several hundred Irish veterans of war, together with military supplies.\nOwen Roe finally sailed into Lough Swilly in July 1642 and proceeded to Doe Castle, Co. Donegal. From here, he went to Charlemont Fort, Co. Armagh to join with Sir Phelim O’Neill, the leader of the Northern revolt…. Sir Phelim reluctantly allowed Owen Roe to take command of the Ulster army in August 1642.\nOwen Roe later gave his reasons for returning to Ulster as ‘not greed for gold, nor ambition of honours, but zeal for the House of God and weariness of the heavy yoke under which I saw my fellow countrymen groan, that brought me hither from lands where I could have passed the end of my days in greater tranquility than I could have hoped for here in Ulster.’",
+    questionText: "When did Owen Roe take command of the Ulster army?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "August 1642", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t3a-q4", topicId: "hist-em-irl-3", conceptId: "reasons-does-owen-roe-returning-ulster",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 3 A Q4",
+    stem: "This edited extract describes the return of Owen Roe O’Neill to Ireland in July 1642. Read it and answer the questions which follow.\n\nDespite the rebellion in Ireland commencing in October 1641, Owen Roe O’Neill was not finally released from Spanish military duties in Flanders until mid1642. He travelled from Ostend to Ireland and brought with him several hundred Irish veterans of war, together with military supplies.\nOwen Roe finally sailed into Lough Swilly in July 1642 and proceeded to Doe Castle, Co. Donegal. From here, he went to Charlemont Fort, Co. Armagh to join with Sir Phelim O’Neill, the leader of the Northern revolt…. Sir Phelim reluctantly allowed Owen Roe to take command of the Ulster army in August 1642.\nOwen Roe later gave his reasons for returning to Ulster as ‘not greed for gold, nor ambition of honours, but zeal for the House of God and weariness of the heavy yoke under which I saw my fellow countrymen groan, that brought me hither from lands where I could have passed the end of my days in greater tranquility than I could have hoped for here in Ulster.’",
+    questionText: "What two reasons does Owen Roe give for returning to Ulster?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Zeal for the House of God", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Weariness of the heavy yoke under which Ulster had laboured", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t3a-q5", topicId: "hist-em-irl-3", conceptId: "scottish-leader-did-owen-roe-defeat",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 3 A Q5",
+    stem: "This edited extract describes the return of Owen Roe O’Neill to Ireland in July 1642. Read it and answer the questions which follow.\n\nDespite the rebellion in Ireland commencing in October 1641, Owen Roe O’Neill was not finally released from Spanish military duties in Flanders until mid1642. He travelled from Ostend to Ireland and brought with him several hundred Irish veterans of war, together with military supplies.\nOwen Roe finally sailed into Lough Swilly in July 1642 and proceeded to Doe Castle, Co. Donegal. From here, he went to Charlemont Fort, Co. Armagh to join with Sir Phelim O’Neill, the leader of the Northern revolt…. Sir Phelim reluctantly allowed Owen Roe to take command of the Ulster army in August 1642.\nOwen Roe later gave his reasons for returning to Ulster as ‘not greed for gold, nor ambition of honours, but zeal for the House of God and weariness of the heavy yoke under which I saw my fellow countrymen groan, that brought me hither from lands where I could have passed the end of my days in greater tranquility than I could have hoped for here in Ulster.’",
+    questionText: "What Scottish leader did Owen Roe defeat at the Battle of Benburb, 1646?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Robert Monro", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t3b", topicId: "hist-em-irl-3", conceptId: "buckingham-ireland-four-masters-depositions-1641",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 3 B",
+    stem: "Kingdom and colony: The struggle for mastery in Ireland, 1603-1660",
+    questionText: "Write a short paragraph on one of the following:\n1. Buckingham and Ireland.\n2. The Four Masters.\n3. The depositions of 1641.\n4. The Cromwellian transplantations.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t3c", topicId: "hist-em-irl-3", conceptId: "strafford-put-trial-outcome-trial-influence",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 3 C",
+    stem: "Kingdom and colony: The struggle for mastery in Ireland, 1603-1660",
+    questionText: "Answer one of the following:\n1. Why was Strafford put on trial and what was the outcome of that trial?\n2. What influence had Archbishop Rinuccini at the Confederation of Kilkenny?\n3. How important was Louvain in the cause of the Counter-Reformation in Ireland?\n4. What did Richard Boyle, and his family, contribute to Irish society?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t4a-q1", topicId: "hist-em-irl-4", conceptId: "kelly-great-change-sarsfield-astonished-his",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 4 A Q1",
+    stem: "This is an edited extract from The destruction of Cyprus: being a secret history of the war of revolution in Ireland, written by Colonel Charles O’Kelly, in 1692. Read it and answer the questions which follow.\n\nThe Treaty of Limerick began on 26 September and continued to 3 October, and then it was concluded, to the satisfaction of some, and to the affliction of others.\nBut what caused astonishment was the sudden, unexpected, and great change in Sarsfield, who appeared now the most active of all the commanders to promote the Treaty. He took pains to persuade the colonels and captains to agree.\nHe argued that there was only a small quantity of provisions left, and that no supplies were expected from France until the following Spring; that if they rejected the conditions now offered, they were to hope for none when their provisions were used up; and that, therefore, the necessity to surrender at present was unavoidable.\nThe authority of Sarsfield, his zeal for his country, made them approve what he proposed, though with great reluctance and regret.",
+    questionText: "According to O’Kelly, what great change in Sarsfield astonished his followers?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sarsfield‟s sudden conversion to support for the Treaty", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t4a-q2", topicId: "hist-em-irl-4", conceptId: "whom-did-sarsfield-persuade-accept-treaty",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 4 A Q2",
+    stem: "This is an edited extract from The destruction of Cyprus: being a secret history of the war of revolution in Ireland, written by Colonel Charles O’Kelly, in 1692. Read it and answer the questions which follow.\n\nThe Treaty of Limerick began on 26 September and continued to 3 October, and then it was concluded, to the satisfaction of some, and to the affliction of others.\nBut what caused astonishment was the sudden, unexpected, and great change in Sarsfield, who appeared now the most active of all the commanders to promote the Treaty. He took pains to persuade the colonels and captains to agree.\nHe argued that there was only a small quantity of provisions left, and that no supplies were expected from France until the following Spring; that if they rejected the conditions now offered, they were to hope for none when their provisions were used up; and that, therefore, the necessity to surrender at present was unavoidable.\nThe authority of Sarsfield, his zeal for his country, made them approve what he proposed, though with great reluctance and regret.",
+    questionText: "Whom did Sarsfield persuade to accept the Treaty of Limerick?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Colonels and captains", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t4a-q3", topicId: "hist-em-irl-4", conceptId: "arguments-did-sarsfield-use-persuade-acceptance",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 4 A Q3",
+    stem: "This is an edited extract from The destruction of Cyprus: being a secret history of the war of revolution in Ireland, written by Colonel Charles O’Kelly, in 1692. Read it and answer the questions which follow.\n\nThe Treaty of Limerick began on 26 September and continued to 3 October, and then it was concluded, to the satisfaction of some, and to the affliction of others.\nBut what caused astonishment was the sudden, unexpected, and great change in Sarsfield, who appeared now the most active of all the commanders to promote the Treaty. He took pains to persuade the colonels and captains to agree.\nHe argued that there was only a small quantity of provisions left, and that no supplies were expected from France until the following Spring; that if they rejected the conditions now offered, they were to hope for none when their provisions were used up; and that, therefore, the necessity to surrender at present was unavoidable.\nThe authority of Sarsfield, his zeal for his country, made them approve what he proposed, though with great reluctance and regret.",
+    questionText: "What arguments did Sarsfield use to persuade acceptance of the Treaty of Limerick?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because they were running short of provisions", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "no prospect of fresh supplies until the Spring", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t4a-q4", topicId: "hist-em-irl-4", conceptId: "sarsfield-proposals-accepted",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 4 A Q4",
+    stem: "This is an edited extract from The destruction of Cyprus: being a secret history of the war of revolution in Ireland, written by Colonel Charles O’Kelly, in 1692. Read it and answer the questions which follow.\n\nThe Treaty of Limerick began on 26 September and continued to 3 October, and then it was concluded, to the satisfaction of some, and to the affliction of others.\nBut what caused astonishment was the sudden, unexpected, and great change in Sarsfield, who appeared now the most active of all the commanders to promote the Treaty. He took pains to persuade the colonels and captains to agree.\nHe argued that there was only a small quantity of provisions left, and that no supplies were expected from France until the following Spring; that if they rejected the conditions now offered, they were to hope for none when their provisions were used up; and that, therefore, the necessity to surrender at present was unavoidable.\nThe authority of Sarsfield, his zeal for his country, made them approve what he proposed, though with great reluctance and regret.",
+    questionText: "Why were Sarsfield’s proposals accepted?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason: His authority/ patriotism/ personality", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t4a-q5", topicId: "hist-em-irl-4", conceptId: "did-treaty-limerick-contain",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 4 A Q5",
+    stem: "This is an edited extract from The destruction of Cyprus: being a secret history of the war of revolution in Ireland, written by Colonel Charles O’Kelly, in 1692. Read it and answer the questions which follow.\n\nThe Treaty of Limerick began on 26 September and continued to 3 October, and then it was concluded, to the satisfaction of some, and to the affliction of others.\nBut what caused astonishment was the sudden, unexpected, and great change in Sarsfield, who appeared now the most active of all the commanders to promote the Treaty. He took pains to persuade the colonels and captains to agree.\nHe argued that there was only a small quantity of provisions left, and that no supplies were expected from France until the following Spring; that if they rejected the conditions now offered, they were to hope for none when their provisions were used up; and that, therefore, the necessity to surrender at present was unavoidable.\nThe authority of Sarsfield, his zeal for his country, made them approve what he proposed, though with great reluctance and regret.",
+    questionText: "What did the Treaty of Limerick contain?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid term of the Treaty of Limerick", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t4b", topicId: "hist-em-irl-4", conceptId: "first-duke-ormond-viceroy-oliver-plunkett",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 4 B",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "Write a short paragraph on one of the following:\n1. The first Duke of Ormond as viceroy.\n2. Oliver Plunkett.\n3. The importance of the Cattle and Navigation Acts.\n4. The sacramental test, 1704.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t4c", topicId: "hist-em-irl-4", conceptId: "who-called-parliament-1689-important-changes",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 4 C",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "Answer one of the following:\n1. Who called the Parliament of 1689 and what important changes did it make to the law?\n2. In general, on what subjects did the Jacobite poets write?\n3. What role did Samuel Louis Crommelin play in the linen industry?\n4. Following the Restoration, what significant changes were made to Dublin City?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t5a-q1", topicId: "hist-em-irl-5", conceptId: "woods-halfpence-worth-little",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 5 A Q1",
+    stem: "In 1724 Jonathan Swift published a pamphlet condemning Woods’ halfpence under the name of M. B. Drapier. (Drapier’s Letters). Read this edited extract and answer the questions that follow.\n\nMr. Wood made his halfpence of such inferior metal, and so much smaller than the English ones, that the copper-workers would not give you more than one penny of good money for 12 pennies of his.\nWood, as soon as he got his patent, sent over a great many barrels of these halfpence to Cork and other sea-port towns. He offered a hundred pounds in his coin for seventy or eighty in silver. But the collectors of the King's customs very honestly refused to take them, and so did almost everybody else. The Parliament hath condemned them, and asked the King that they might be stopped.\nHe is then left to do the best he can with his halfpence. No man is obliged to receive them. The people here unite as one man, resolving they will have nothing to do with his ware.",
+    questionText: "Why were Woods’ halfpence worth so little?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Smaller in size", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "made from inferior metal", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t5a-q2", topicId: "hist-em-irl-5", conceptId: "who-refused-take-woods-halfpence",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 5 A Q2",
+    stem: "In 1724 Jonathan Swift published a pamphlet condemning Woods’ halfpence under the name of M. B. Drapier. (Drapier’s Letters). Read this edited extract and answer the questions that follow.\n\nMr. Wood made his halfpence of such inferior metal, and so much smaller than the English ones, that the copper-workers would not give you more than one penny of good money for 12 pennies of his.\nWood, as soon as he got his patent, sent over a great many barrels of these halfpence to Cork and other sea-port towns. He offered a hundred pounds in his coin for seventy or eighty in silver. But the collectors of the King's customs very honestly refused to take them, and so did almost everybody else. The Parliament hath condemned them, and asked the King that they might be stopped.\nHe is then left to do the best he can with his halfpence. No man is obliged to receive them. The people here unite as one man, resolving they will have nothing to do with his ware.",
+    questionText: "Who refused to take Woods’ halfpence?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Customs collectors/ Almost everybody else", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t5a-q3", topicId: "hist-em-irl-5", conceptId: "who-condemned-woods-halfpence",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 5 A Q3",
+    stem: "In 1724 Jonathan Swift published a pamphlet condemning Woods’ halfpence under the name of M. B. Drapier. (Drapier’s Letters). Read this edited extract and answer the questions that follow.\n\nMr. Wood made his halfpence of such inferior metal, and so much smaller than the English ones, that the copper-workers would not give you more than one penny of good money for 12 pennies of his.\nWood, as soon as he got his patent, sent over a great many barrels of these halfpence to Cork and other sea-port towns. He offered a hundred pounds in his coin for seventy or eighty in silver. But the collectors of the King's customs very honestly refused to take them, and so did almost everybody else. The Parliament hath condemned them, and asked the King that they might be stopped.\nHe is then left to do the best he can with his halfpence. No man is obliged to receive them. The people here unite as one man, resolving they will have nothing to do with his ware.",
+    questionText: "Who condemned Woods’ halfpence?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Parliament", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t5a-q4", topicId: "hist-em-irl-5", conceptId: "does-swift-want-people-halfpence",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 5 A Q4",
+    stem: "In 1724 Jonathan Swift published a pamphlet condemning Woods’ halfpence under the name of M. B. Drapier. (Drapier’s Letters). Read this edited extract and answer the questions that follow.\n\nMr. Wood made his halfpence of such inferior metal, and so much smaller than the English ones, that the copper-workers would not give you more than one penny of good money for 12 pennies of his.\nWood, as soon as he got his patent, sent over a great many barrels of these halfpence to Cork and other sea-port towns. He offered a hundred pounds in his coin for seventy or eighty in silver. But the collectors of the King's customs very honestly refused to take them, and so did almost everybody else. The Parliament hath condemned them, and asked the King that they might be stopped.\nHe is then left to do the best he can with his halfpence. No man is obliged to receive them. The people here unite as one man, resolving they will have nothing to do with his ware.",
+    questionText: "What does Swift want the people to do about the halfpence?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To have nothing to do with them", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t5a-q5", topicId: "hist-em-irl-5", conceptId: "other-subject-did-swift-write-pamphlet",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 5 A Q5",
+    stem: "In 1724 Jonathan Swift published a pamphlet condemning Woods’ halfpence under the name of M. B. Drapier. (Drapier’s Letters). Read this edited extract and answer the questions that follow.\n\nMr. Wood made his halfpence of such inferior metal, and so much smaller than the English ones, that the copper-workers would not give you more than one penny of good money for 12 pennies of his.\nWood, as soon as he got his patent, sent over a great many barrels of these halfpence to Cork and other sea-port towns. He offered a hundred pounds in his coin for seventy or eighty in silver. But the collectors of the King's customs very honestly refused to take them, and so did almost everybody else. The Parliament hath condemned them, and asked the King that they might be stopped.\nHe is then left to do the best he can with his halfpence. No man is obliged to receive them. The people here unite as one man, resolving they will have nothing to do with his ware.",
+    questionText: "On what other subject did Swift write a pamphlet?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid subject of Swift‟s pamphlets", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t5b", topicId: "hist-em-irl-5", conceptId: "charles-conor-patriots-rise-dublin-theatre",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 5 B",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "Write a short paragraph on one of the following:\n1. Charles O’Conor.\n2. The Patriots.\n3. The rise of the Dublin theatre.\n4. The linen and brewing industries. .",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t5c", topicId: "hist-em-irl-5", conceptId: "did-ponsonbys-use-power-whiteboys-discontented",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 5 C",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "Answer one of the following:\n1. How did the Ponsonbys use their power?\n2. Why were the Whiteboys discontented, and what actions did they take?\n3. What events led up to the trial and execution of Father Nicholas Sheehy at Clonmel in 1766?\n4. What foreign influences did Turlough O’Carolan bring to his compositions?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t6a-q1", topicId: "hist-em-irl-6", conceptId: "latocnaye-who-founded-linen-industry-lisburn",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 6 A Q1",
+    stem: "Chevalier De Latocnaye, a Breton noble, fled the French Revolution. He wrote a book about his walking tour of Ireland 1796-97. Read the following edited extract and answer the questions which follow.\n\nI passed through Lisburn, Hillsborough, and Dromore; the first two are in beautiful and perfectly cultivated country. Hillsborough is on a height dominating a most fertile and rich country.\nIt was at Lisburn that the French refugees first established the linen manufacture which has become the principal industry in Ireland, especially in the north. The three towns were full of soldiers and volunteers, so I pushed on to Banbridge.\nThe country is entirely occupied in the manufacture of linen, but the late troubles have caused trade to decline. Military laws are rigorously enforced here on the inhabitants; they were not permitted to have lights on in their houses after 9 o’clock and anyone found on the street after that hour was in danger of being arrested.\nA fair was held in the town, during my stay, and it passed over quite peacefully; the soldiers marched through the market-place and obliged women who wore anything green, ribbon or otherwise, to take it off.",
+    questionText: "According to De Latocnaye, who founded the linen industry in Lisburn?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "French refugees", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t6a-q2", topicId: "hist-em-irl-6", conceptId: "caused-linen-trade-decline",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 6 A Q2",
+    stem: "Chevalier De Latocnaye, a Breton noble, fled the French Revolution. He wrote a book about his walking tour of Ireland 1796-97. Read the following edited extract and answer the questions which follow.\n\nI passed through Lisburn, Hillsborough, and Dromore; the first two are in beautiful and perfectly cultivated country. Hillsborough is on a height dominating a most fertile and rich country.\nIt was at Lisburn that the French refugees first established the linen manufacture which has become the principal industry in Ireland, especially in the north. The three towns were full of soldiers and volunteers, so I pushed on to Banbridge.\nThe country is entirely occupied in the manufacture of linen, but the late troubles have caused trade to decline. Military laws are rigorously enforced here on the inhabitants; they were not permitted to have lights on in their houses after 9 o’clock and anyone found on the street after that hour was in danger of being arrested.\nA fair was held in the town, during my stay, and it passed over quite peacefully; the soldiers marched through the market-place and obliged women who wore anything green, ribbon or otherwise, to take it off.",
+    questionText: "What has caused the linen trade to decline?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Recent troubles", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t6a-q3", topicId: "hist-em-irl-6", conceptId: "daily-life-people-restricted-banbridge",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 6 A Q3",
+    stem: "Chevalier De Latocnaye, a Breton noble, fled the French Revolution. He wrote a book about his walking tour of Ireland 1796-97. Read the following edited extract and answer the questions which follow.\n\nI passed through Lisburn, Hillsborough, and Dromore; the first two are in beautiful and perfectly cultivated country. Hillsborough is on a height dominating a most fertile and rich country.\nIt was at Lisburn that the French refugees first established the linen manufacture which has become the principal industry in Ireland, especially in the north. The three towns were full of soldiers and volunteers, so I pushed on to Banbridge.\nThe country is entirely occupied in the manufacture of linen, but the late troubles have caused trade to decline. Military laws are rigorously enforced here on the inhabitants; they were not permitted to have lights on in their houses after 9 o’clock and anyone found on the street after that hour was in danger of being arrested.\nA fair was held in the town, during my stay, and it passed over quite peacefully; the soldiers marched through the market-place and obliged women who wore anything green, ribbon or otherwise, to take it off.",
+    questionText: "How was the daily life of the people restricted in Banbridge?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Curfew at 9 pm", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t6a-q4", topicId: "hist-em-irl-6", conceptId: "colour-did-soldiers-forbid-people-wear",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 6 A Q4",
+    stem: "Chevalier De Latocnaye, a Breton noble, fled the French Revolution. He wrote a book about his walking tour of Ireland 1796-97. Read the following edited extract and answer the questions which follow.\n\nI passed through Lisburn, Hillsborough, and Dromore; the first two are in beautiful and perfectly cultivated country. Hillsborough is on a height dominating a most fertile and rich country.\nIt was at Lisburn that the French refugees first established the linen manufacture which has become the principal industry in Ireland, especially in the north. The three towns were full of soldiers and volunteers, so I pushed on to Banbridge.\nThe country is entirely occupied in the manufacture of linen, but the late troubles have caused trade to decline. Military laws are rigorously enforced here on the inhabitants; they were not permitted to have lights on in their houses after 9 o’clock and anyone found on the street after that hour was in danger of being arrested.\nA fair was held in the town, during my stay, and it passed over quite peacefully; the soldiers marched through the market-place and obliged women who wore anything green, ribbon or otherwise, to take it off.",
+    questionText: "What colour did soldiers forbid the people to wear in 1796-1797?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Green", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t6a-q5", topicId: "hist-em-irl-6", conceptId: "soldiers-active-ulster-1796-1797",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 6 A Q5",
+    stem: "Chevalier De Latocnaye, a Breton noble, fled the French Revolution. He wrote a book about his walking tour of Ireland 1796-97. Read the following edited extract and answer the questions which follow.\n\nI passed through Lisburn, Hillsborough, and Dromore; the first two are in beautiful and perfectly cultivated country. Hillsborough is on a height dominating a most fertile and rich country.\nIt was at Lisburn that the French refugees first established the linen manufacture which has become the principal industry in Ireland, especially in the north. The three towns were full of soldiers and volunteers, so I pushed on to Banbridge.\nThe country is entirely occupied in the manufacture of linen, but the late troubles have caused trade to decline. Military laws are rigorously enforced here on the inhabitants; they were not permitted to have lights on in their houses after 9 o’clock and anyone found on the street after that hour was in danger of being arrested.\nA fair was held in the town, during my stay, and it passed over quite peacefully; the soldiers marched through the market-place and obliged women who wore anything green, ribbon or otherwise, to take it off.",
+    questionText: "Why were soldiers so active in Ulster in 1796-1797?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t6b", topicId: "hist-em-irl-6", conceptId: "american-war-independence-volunteers-establishment-orange",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 6 B",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "Write a short paragraph on one of the following:\n1. American War of Independence and the Volunteers.\n2. The establishment of the Orange Order.\n3. Georgian architecture.\n4. Nano Nagle and education.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s2t6c", topicId: "hist-em-irl-6", conceptId: "successes-failures-political-career-henry-grattan",
+    section: "2", questionRef: "2012 OL Early Modern Section 2 Topic 6 C",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "Answer one of the following:\n1. What were the successes and failures in the political career of Henry Grattan?\n2. Why did the rebellion in Wexford, 1798, end in failure?\n3. How did Maynooth College come to be established and what were its main aims?\n4. What roles did John Fitzgibbon and Lord Castlereagh play in the passing of the Act of Union?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t1a-q1", topicId: "hist-em-eur-1", conceptId: "charles-luther-led-astray",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 1 A Q1",
+    stem: "In April 1521, Martin Luther asked the Diet of Worms to support his religious views. Emperor Charles V spoke to the Diet on the following day. The following is an extract from Charles V’s speech. Read it and answer the questions which follow.\n\nA single monk, led astray by private judgment, has set himself against the faith held by all Christians for a thousand years or more, and impudently concludes that all Christians up to now have been wrong. I have therefore decided to stake upon this cause all my dominions, my friends, my body and my blood, my life and my soul.\nAfter Luther’s stiff-necked reply yesterday, I am sorry that I have so long delayed proceedings against him and his false doctrines. I have now decided never again, under any circumstances, to hear him.\nUnder protection of his safe conduct he shall be escorted home, but forbidden to preach and to lead men astray with his evil doctrines and incite them to rebellion.",
+    questionText: "According to Charles V, how had Luther been led astray?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By his own personal judgement", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t1a-q2", topicId: "hist-em-eur-1", conceptId: "did-charles-say-luther-set-himself",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 1 A Q2",
+    stem: "In April 1521, Martin Luther asked the Diet of Worms to support his religious views. Emperor Charles V spoke to the Diet on the following day. The following is an extract from Charles V’s speech. Read it and answer the questions which follow.\n\nA single monk, led astray by private judgment, has set himself against the faith held by all Christians for a thousand years or more, and impudently concludes that all Christians up to now have been wrong. I have therefore decided to stake upon this cause all my dominions, my friends, my body and my blood, my life and my soul.\nAfter Luther’s stiff-necked reply yesterday, I am sorry that I have so long delayed proceedings against him and his false doctrines. I have now decided never again, under any circumstances, to hear him.\nUnder protection of his safe conduct he shall be escorted home, but forbidden to preach and to lead men astray with his evil doctrines and incite them to rebellion.",
+    questionText: "What did Charles V say that Luther had set himself against?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The faith of Christians", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t1a-q3", topicId: "hist-em-eur-1", conceptId: "did-charles-think-luther-speech-diet",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 1 A Q3",
+    stem: "In April 1521, Martin Luther asked the Diet of Worms to support his religious views. Emperor Charles V spoke to the Diet on the following day. The following is an extract from Charles V’s speech. Read it and answer the questions which follow.\n\nA single monk, led astray by private judgment, has set himself against the faith held by all Christians for a thousand years or more, and impudently concludes that all Christians up to now have been wrong. I have therefore decided to stake upon this cause all my dominions, my friends, my body and my blood, my life and my soul.\nAfter Luther’s stiff-necked reply yesterday, I am sorry that I have so long delayed proceedings against him and his false doctrines. I have now decided never again, under any circumstances, to hear him.\nUnder protection of his safe conduct he shall be escorted home, but forbidden to preach and to lead men astray with his evil doctrines and incite them to rebellion.",
+    questionText: "What did Charles V think of Luther’s speech to the Diet?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Stiff-necked/ Uncompromising/ Arrogant", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t1a-q4", topicId: "hist-em-eur-1", conceptId: "did-charles-forbid-luther",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 1 A Q4",
+    stem: "In April 1521, Martin Luther asked the Diet of Worms to support his religious views. Emperor Charles V spoke to the Diet on the following day. The following is an extract from Charles V’s speech. Read it and answer the questions which follow.\n\nA single monk, led astray by private judgment, has set himself against the faith held by all Christians for a thousand years or more, and impudently concludes that all Christians up to now have been wrong. I have therefore decided to stake upon this cause all my dominions, my friends, my body and my blood, my life and my soul.\nAfter Luther’s stiff-necked reply yesterday, I am sorry that I have so long delayed proceedings against him and his false doctrines. I have now decided never again, under any circumstances, to hear him.\nUnder protection of his safe conduct he shall be escorted home, but forbidden to preach and to lead men astray with his evil doctrines and incite them to rebellion.",
+    questionText: "What did Charles V forbid Luther to do?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Preach","Lead men astray","Incite rebellion"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t1a-q5", topicId: "hist-em-eur-1", conceptId: "major-criticism-did-luther-catholic-church",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 1 A Q5",
+    stem: "In April 1521, Martin Luther asked the Diet of Worms to support his religious views. Emperor Charles V spoke to the Diet on the following day. The following is an extract from Charles V’s speech. Read it and answer the questions which follow.\n\nA single monk, led astray by private judgment, has set himself against the faith held by all Christians for a thousand years or more, and impudently concludes that all Christians up to now have been wrong. I have therefore decided to stake upon this cause all my dominions, my friends, my body and my blood, my life and my soul.\nAfter Luther’s stiff-necked reply yesterday, I am sorry that I have so long delayed proceedings against him and his false doctrines. I have now decided never again, under any circumstances, to hear him.\nUnder protection of his safe conduct he shall be escorted home, but forbidden to preach and to lead men astray with his evil doctrines and incite them to rebellion.",
+    questionText: "What major criticism did Luther make of the Catholic Church?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid criticism of the Church by Luther", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t1b", topicId: "hist-em-eur-1", conceptId: "art-religion-hernan-cortes-jacob-fugger",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 1 B",
+    stem: "Europe from Renaissance to Reformation, 1492 – 1567",
+    questionText: "Write a short paragraph on one of the following:\n1. Art and religion.\n2. Hernan Cortes.\n3. Jacob Fugger.\n4. The struggle against the Turks in Europe.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t1c", topicId: "hist-em-eur-1", conceptId: "divorce-henry-viii-catherine-aragon-difficult",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 1 C",
+    stem: "Europe from Renaissance to Reformation, 1492 – 1567",
+    questionText: "Answer one of the following:\n1. Why was the divorce of Henry VIII and Catherine of Aragon so difficult a matter?\n2. How was Seville changed by the discovery of the New World?\n3. Why is Michelangelo Buonarroti considered a great artist?\n4. What were the main features of life in Calvin’s Geneva?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t3a-q1", topicId: "hist-em-eur-3", conceptId: "type-ships-did-dutch-use-trade",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 3 A Q1",
+    stem: "This is an edited extract from a report written by a seventeenth-century French spy. He reports on the advantages of the Dutch fleet over their rivals. Read it and answer the questions which follow.\n\nThe Dutch rarely use any ship for trade but ‘flutes’ which are escorted in wartime by armed frigates. These ‘flutes’ are big vessels with large holds able to contain much merchandise; they are poor sailing-ships. The French are obliged to put four or five men aboard vessels of twenty to thirty tons, in order to sail them, the Dutch put two or three at most.\nThe French seaman earns 12, 16, 18, or 20 livres a month, the Dutch sailor is content with ten or twelve livres and the officers are paid in proportion.\nFrench sailors have to be fed bread, wine, biscuit made of pure wheatmeal, fresh and salt meat, cod, herring, eggs, butter, peas, beans, and when they eat fish it has to be well-seasoned.\nThe Dutch are satisfied with beer, bread and rye-biscuit, cheese eggs, butter, a little salt meat, peas, gruel, and they eat a great deal of dry fish without seasoning every day which costs far less than meat. Of all nations the Dutch are most thrifty and sober, indulging in the least luxury or idle expense.",
+    questionText: "What type of ships did the Dutch use for trade?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Flutes", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t3a-q2", topicId: "hist-em-eur-3", conceptId: "advantages-dutch-sailing-ships",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 3 A Q2",
+    stem: "This is an edited extract from a report written by a seventeenth-century French spy. He reports on the advantages of the Dutch fleet over their rivals. Read it and answer the questions which follow.\n\nThe Dutch rarely use any ship for trade but ‘flutes’ which are escorted in wartime by armed frigates. These ‘flutes’ are big vessels with large holds able to contain much merchandise; they are poor sailing-ships. The French are obliged to put four or five men aboard vessels of twenty to thirty tons, in order to sail them, the Dutch put two or three at most.\nThe French seaman earns 12, 16, 18, or 20 livres a month, the Dutch sailor is content with ten or twelve livres and the officers are paid in proportion.\nFrench sailors have to be fed bread, wine, biscuit made of pure wheatmeal, fresh and salt meat, cod, herring, eggs, butter, peas, beans, and when they eat fish it has to be well-seasoned.\nThe Dutch are satisfied with beer, bread and rye-biscuit, cheese eggs, butter, a little salt meat, peas, gruel, and they eat a great deal of dry fish without seasoning every day which costs far less than meat. Of all nations the Dutch are most thrifty and sober, indulging in the least luxury or idle expense.",
+    questionText: "What are the advantages of the Dutch sailing-ships?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Big vessels", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Could carry bulk cargo", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t3a-q3", topicId: "hist-em-eur-3", conceptId: "did-wages-dutch-seamen-those-french",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 3 A Q3",
+    stem: "This is an edited extract from a report written by a seventeenth-century French spy. He reports on the advantages of the Dutch fleet over their rivals. Read it and answer the questions which follow.\n\nThe Dutch rarely use any ship for trade but ‘flutes’ which are escorted in wartime by armed frigates. These ‘flutes’ are big vessels with large holds able to contain much merchandise; they are poor sailing-ships. The French are obliged to put four or five men aboard vessels of twenty to thirty tons, in order to sail them, the Dutch put two or three at most.\nThe French seaman earns 12, 16, 18, or 20 livres a month, the Dutch sailor is content with ten or twelve livres and the officers are paid in proportion.\nFrench sailors have to be fed bread, wine, biscuit made of pure wheatmeal, fresh and salt meat, cod, herring, eggs, butter, peas, beans, and when they eat fish it has to be well-seasoned.\nThe Dutch are satisfied with beer, bread and rye-biscuit, cheese eggs, butter, a little salt meat, peas, gruel, and they eat a great deal of dry fish without seasoning every day which costs far less than meat. Of all nations the Dutch are most thrifty and sober, indulging in the least luxury or idle expense.",
+    questionText: "How did the wages of Dutch seamen compare with those of the French?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dutch sailors earned 10-12 livres while French earned 12-20 livres", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t3a-q4", topicId: "hist-em-eur-3", conceptId: "more-expensive-feed-french-sailors-than",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 3 A Q4",
+    stem: "This is an edited extract from a report written by a seventeenth-century French spy. He reports on the advantages of the Dutch fleet over their rivals. Read it and answer the questions which follow.\n\nThe Dutch rarely use any ship for trade but ‘flutes’ which are escorted in wartime by armed frigates. These ‘flutes’ are big vessels with large holds able to contain much merchandise; they are poor sailing-ships. The French are obliged to put four or five men aboard vessels of twenty to thirty tons, in order to sail them, the Dutch put two or three at most.\nThe French seaman earns 12, 16, 18, or 20 livres a month, the Dutch sailor is content with ten or twelve livres and the officers are paid in proportion.\nFrench sailors have to be fed bread, wine, biscuit made of pure wheatmeal, fresh and salt meat, cod, herring, eggs, butter, peas, beans, and when they eat fish it has to be well-seasoned.\nThe Dutch are satisfied with beer, bread and rye-biscuit, cheese eggs, butter, a little salt meat, peas, gruel, and they eat a great deal of dry fish without seasoning every day which costs far less than meat. Of all nations the Dutch are most thrifty and sober, indulging in the least luxury or idle expense.",
+    questionText: "Why is it more expensive to feed French sailors than Dutch?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dutch were satisfied with simpler and cheaper food and drink", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t3a-q5", topicId: "hist-em-eur-3", conceptId: "apart-dutch-powers-rose-prominence-during",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 3 A Q5",
+    stem: "This is an edited extract from a report written by a seventeenth-century French spy. He reports on the advantages of the Dutch fleet over their rivals. Read it and answer the questions which follow.\n\nThe Dutch rarely use any ship for trade but ‘flutes’ which are escorted in wartime by armed frigates. These ‘flutes’ are big vessels with large holds able to contain much merchandise; they are poor sailing-ships. The French are obliged to put four or five men aboard vessels of twenty to thirty tons, in order to sail them, the Dutch put two or three at most.\nThe French seaman earns 12, 16, 18, or 20 livres a month, the Dutch sailor is content with ten or twelve livres and the officers are paid in proportion.\nFrench sailors have to be fed bread, wine, biscuit made of pure wheatmeal, fresh and salt meat, cod, herring, eggs, butter, peas, beans, and when they eat fish it has to be well-seasoned.\nThe Dutch are satisfied with beer, bread and rye-biscuit, cheese eggs, butter, a little salt meat, peas, gruel, and they eat a great deal of dry fish without seasoning every day which costs far less than meat. Of all nations the Dutch are most thrifty and sober, indulging in the least luxury or idle expense.",
+    questionText: "Apart from the Dutch, what two powers rose to prominence during this period?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any TWO other world powers from 17th century", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t3b", topicId: "hist-em-eur-3", conceptId: "thirty-years-war-cardinal-richelieu-witch",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 3 B",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "Write a short paragraph on one of the following:\n1. The Thirty Years War.\n2. Cardinal Richelieu.\n3. Witch-hunting.\n4. The rise of empirical science.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t3c", topicId: "hist-em-eur-3", conceptId: "did-catalans-revolt-did-not-achieve",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 3 C",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "Answer one of the following:\n1. Why did the Catalans revolt and why did they not achieve their aims?\n2. Why was Galileo tried by the Inquisition and what were the consequences of that trial?\n3. What was the origin and extent of the Dutch empire in Asia?\n4. What did Claudio Monteverdi and Peter Paul Rubens contribute to Baroque music and art?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t4a-q1", topicId: "hist-em-eur-4", conceptId: "rode-westerloo-luckier-ones-battle-blenheim",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 4 A Q1",
+    stem: "The Battle of Blenheim, 13 August 1704, during the War of the Spanish Succession, ended in a spectacular tragedy for the French. Mérode-Westerloo survived and described how their cavalry was driven over a steep bank, on to the marshes, and into the Danube. Read this extract from his account and answer the questions which follow.\n\nSo tight was the press that my horse was carried along some three hundred paces without putting hoof to ground, right to the edge of a deep ravine. Down we plunged a good twenty feet into a swampy meadow. My horse stumbled and fell.\nA moment later several men and horses fell on top of me, as the remains of my cavalry swept by, all intermingled with the hotly pursuing enemy. I spent several minutes trapped beneath my horse, which was not dead but utterly exhausted….\nI extricated myself from the pile of dead horses that had fallen on top of us both. I had barely found my feet when a passing soldier fired his pistol at me.",
+    questionText: "How was Mérode-Westerloo one of the luckier ones at the Battle of Blenheim?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He survived", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t4a-q2", topicId: "hist-em-eur-4", conceptId: "did-rode-westerloo-his-horse-end",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 4 A Q2",
+    stem: "The Battle of Blenheim, 13 August 1704, during the War of the Spanish Succession, ended in a spectacular tragedy for the French. Mérode-Westerloo survived and described how their cavalry was driven over a steep bank, on to the marshes, and into the Danube. Read this extract from his account and answer the questions which follow.\n\nSo tight was the press that my horse was carried along some three hundred paces without putting hoof to ground, right to the edge of a deep ravine. Down we plunged a good twenty feet into a swampy meadow. My horse stumbled and fell.\nA moment later several men and horses fell on top of me, as the remains of my cavalry swept by, all intermingled with the hotly pursuing enemy. I spent several minutes trapped beneath my horse, which was not dead but utterly exhausted….\nI extricated myself from the pile of dead horses that had fallen on top of us both. I had barely found my feet when a passing soldier fired his pistol at me.",
+    questionText: "How did Mérode-Westerloo and his horse end up plunging down a steep ravine?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They were driven to the edge by enemy attack", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t4a-q3", topicId: "hist-em-eur-4", conceptId: "enemy-doing-swampy-meadow",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 4 A Q3",
+    stem: "The Battle of Blenheim, 13 August 1704, during the War of the Spanish Succession, ended in a spectacular tragedy for the French. Mérode-Westerloo survived and described how their cavalry was driven over a steep bank, on to the marshes, and into the Danube. Read this extract from his account and answer the questions which follow.\n\nSo tight was the press that my horse was carried along some three hundred paces without putting hoof to ground, right to the edge of a deep ravine. Down we plunged a good twenty feet into a swampy meadow. My horse stumbled and fell.\nA moment later several men and horses fell on top of me, as the remains of my cavalry swept by, all intermingled with the hotly pursuing enemy. I spent several minutes trapped beneath my horse, which was not dead but utterly exhausted….\nI extricated myself from the pile of dead horses that had fallen on top of us both. I had barely found my feet when a passing soldier fired his pistol at me.",
+    questionText: "What was the enemy doing in the swampy meadow?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Trying to finish off any survivors", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t4a-q4", topicId: "hist-em-eur-4", conceptId: "further-dangers-did-rode-westerloo-face",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 4 A Q4",
+    stem: "The Battle of Blenheim, 13 August 1704, during the War of the Spanish Succession, ended in a spectacular tragedy for the French. Mérode-Westerloo survived and described how their cavalry was driven over a steep bank, on to the marshes, and into the Danube. Read this extract from his account and answer the questions which follow.\n\nSo tight was the press that my horse was carried along some three hundred paces without putting hoof to ground, right to the edge of a deep ravine. Down we plunged a good twenty feet into a swampy meadow. My horse stumbled and fell.\nA moment later several men and horses fell on top of me, as the remains of my cavalry swept by, all intermingled with the hotly pursuing enemy. I spent several minutes trapped beneath my horse, which was not dead but utterly exhausted….\nI extricated myself from the pile of dead horses that had fallen on top of us both. I had barely found my feet when a passing soldier fired his pistol at me.",
+    questionText: "What further dangers did Mérode-Westerloo face in the swampy meadow?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Men and horses falling on him/ Hotly-pursuing enemy/ Dead and injured horses/ Under fire from enemy soldier", marks: 6, contextNote: "Any ONE" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t4a-q5", topicId: "hist-em-eur-4", conceptId: "aims-louis-xiv-war-spanish-succession",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 4 A Q5",
+    stem: "The Battle of Blenheim, 13 August 1704, during the War of the Spanish Succession, ended in a spectacular tragedy for the French. Mérode-Westerloo survived and described how their cavalry was driven over a steep bank, on to the marshes, and into the Danube. Read this extract from his account and answer the questions which follow.\n\nSo tight was the press that my horse was carried along some three hundred paces without putting hoof to ground, right to the edge of a deep ravine. Down we plunged a good twenty feet into a swampy meadow. My horse stumbled and fell.\nA moment later several men and horses fell on top of me, as the remains of my cavalry swept by, all intermingled with the hotly pursuing enemy. I spent several minutes trapped beneath my horse, which was not dead but utterly exhausted….\nI extricated myself from the pile of dead horses that had fallen on top of us both. I had barely found my feet when a passing soldier fired his pistol at me.",
+    questionText: "What were the aims of Louis XIV in the War of the Spanish Succession?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Any TWO valid aims from the war @ 3M each", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks.", permittedMarks: [0,3,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t4b", topicId: "hist-em-eur-4", conceptId: "bastien-prestre-vauban-peter-great-russia",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 4 B",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "Write a short paragraph on one of the following:\n1. Sébastien le Prestre de Vauban.\n2. Peter the Great of Russia.\n3. The fall of the Stuart monarchy.\n4. The Grand Tour.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t4c", topicId: "hist-em-eur-4", conceptId: "did-english-east-india-company-carry",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 4 C",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "Answer one of the following:\n1. How did the English East India Company carry out its business in Asia?\n2. What were the chief characteristics of the Court of Versailles?\n3. Who were the Streltsy and why were they disbanded?\n4. How did John Sobieski gain so much prestige as ruler of Poland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t5a-q1", topicId: "hist-em-eur-5", conceptId: "there-sufficient-slaves-present-meet-demand",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 5 A Q1",
+    stem: "Henry Laurens wrote to Samuel and William Vernon, his partners in Newport, Rhode Island, about a shipment of slaves that he put up for sale in Charleston, on 29 June, 1756. The slaves had been brought from Sierra Leone, on one of Vernon’s ships, The Hare. Read the following edited extract and answer the questions which follow.\n\nWe had as many purchasers as we could have wished if we had three times the number for sale. Many of them were extremely angry that we should invite them down, eighty or ninety miles distance, to look at a parcel of ‘refuse slaves,’ as they called them. With some difficulty we persuaded them to wait for the sale.\nWe have this day sold forty-two slaves to the amount £7,455-12 shillings in which are included those sold at auction for only £35-12 shillings. They seemed past all hope of recovery. God knows what we shall do with those that remain, they are a most scabby flock. Several have extremely sore eyes, three are very weak children and, worst of all, six to eight are old.",
+    questionText: "Were there sufficient slaves present to meet the demand?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t5a-q2", topicId: "hist-em-eur-5", conceptId: "some-buyers-angry",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 5 A Q2",
+    stem: "Henry Laurens wrote to Samuel and William Vernon, his partners in Newport, Rhode Island, about a shipment of slaves that he put up for sale in Charleston, on 29 June, 1756. The slaves had been brought from Sierra Leone, on one of Vernon’s ships, The Hare. Read the following edited extract and answer the questions which follow.\n\nWe had as many purchasers as we could have wished if we had three times the number for sale. Many of them were extremely angry that we should invite them down, eighty or ninety miles distance, to look at a parcel of ‘refuse slaves,’ as they called them. With some difficulty we persuaded them to wait for the sale.\nWe have this day sold forty-two slaves to the amount £7,455-12 shillings in which are included those sold at auction for only £35-12 shillings. They seemed past all hope of recovery. God knows what we shall do with those that remain, they are a most scabby flock. Several have extremely sore eyes, three are very weak children and, worst of all, six to eight are old.",
+    questionText: "Why were some of the buyers angry?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because there were not enough slaves/ Because there were too many poor- quality slaves", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t5a-q3", topicId: "hist-em-eur-5", conceptId: "much-money-did-laurens-his-partners",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 5 A Q3",
+    stem: "Henry Laurens wrote to Samuel and William Vernon, his partners in Newport, Rhode Island, about a shipment of slaves that he put up for sale in Charleston, on 29 June, 1756. The slaves had been brought from Sierra Leone, on one of Vernon’s ships, The Hare. Read the following edited extract and answer the questions which follow.\n\nWe had as many purchasers as we could have wished if we had three times the number for sale. Many of them were extremely angry that we should invite them down, eighty or ninety miles distance, to look at a parcel of ‘refuse slaves,’ as they called them. With some difficulty we persuaded them to wait for the sale.\nWe have this day sold forty-two slaves to the amount £7,455-12 shillings in which are included those sold at auction for only £35-12 shillings. They seemed past all hope of recovery. God knows what we shall do with those that remain, they are a most scabby flock. Several have extremely sore eyes, three are very weak children and, worst of all, six to eight are old.",
+    questionText: "How much money did Laurens and his partners make at the auction?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "£7,455 -12-0", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t5a-q4", topicId: "hist-em-eur-5", conceptId: "laurens-type-slaves-not-sold-auction",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 5 A Q4",
+    stem: "Henry Laurens wrote to Samuel and William Vernon, his partners in Newport, Rhode Island, about a shipment of slaves that he put up for sale in Charleston, on 29 June, 1756. The slaves had been brought from Sierra Leone, on one of Vernon’s ships, The Hare. Read the following edited extract and answer the questions which follow.\n\nWe had as many purchasers as we could have wished if we had three times the number for sale. Many of them were extremely angry that we should invite them down, eighty or ninety miles distance, to look at a parcel of ‘refuse slaves,’ as they called them. With some difficulty we persuaded them to wait for the sale.\nWe have this day sold forty-two slaves to the amount £7,455-12 shillings in which are included those sold at auction for only £35-12 shillings. They seemed past all hope of recovery. God knows what we shall do with those that remain, they are a most scabby flock. Several have extremely sore eyes, three are very weak children and, worst of all, six to eight are old.",
+    questionText: "According to Laurens, what type of slaves was not sold at the auction?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Scabby ones/ Ones with sore eyes/ Weak children/ Young children", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t5a-q5", topicId: "hist-em-eur-5", conceptId: "kinds-work-most-slaves-wanted-america",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 5 A Q5",
+    stem: "Henry Laurens wrote to Samuel and William Vernon, his partners in Newport, Rhode Island, about a shipment of slaves that he put up for sale in Charleston, on 29 June, 1756. The slaves had been brought from Sierra Leone, on one of Vernon’s ships, The Hare. Read the following edited extract and answer the questions which follow.\n\nWe had as many purchasers as we could have wished if we had three times the number for sale. Many of them were extremely angry that we should invite them down, eighty or ninety miles distance, to look at a parcel of ‘refuse slaves,’ as they called them. With some difficulty we persuaded them to wait for the sale.\nWe have this day sold forty-two slaves to the amount £7,455-12 shillings in which are included those sold at auction for only £35-12 shillings. They seemed past all hope of recovery. God knows what we shall do with those that remain, they are a most scabby flock. Several have extremely sore eyes, three are very weak children and, worst of all, six to eight are old.",
+    questionText: "For what kinds of work were most slaves wanted in America?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid type of work done by slaves in America", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t5b", topicId: "hist-em-eur-5", conceptId: "restructuring-european-armies-duke-bridgewater-canal",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 5 B",
+    stem: "Establishing Empires, 1715 – 1775",
+    questionText: "Write a short paragraph on one of the following:\n1. Restructuring of European armies.\n2. The Duke of Bridgewater and canal building.\n3. Mercantilism and laissez-faire.\n4. Catherine the Great of Russia.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,25] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t5c", topicId: "hist-em-eur-5", conceptId: "causes-consequences-boston-tea-party-produced",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 5 C",
+    stem: "Establishing Empires, 1715 – 1775",
+    questionText: "Answer one of the following:\n1. What were the causes and the consequences of the Boston Tea Party?\n2. What was produced on the West Indies slave plantations and how was the produce traded?\n3. What ideas were put forward by one or more of the following: Voltaire; Denis Diderot; Jean- Jacques Rousseau?\n4. Did Maria Theresa of Austria achieve her ambitions? Give reasons for your answer.",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,25] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t6a-q1", topicId: "hist-em-eur-6", conceptId: "brewery-powered",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 6 A Q1",
+    stem: "Louis Simond, an observant Frenchman, toured England in 1810-11 and published his impressions in book form, in 1815. Read the following edited extract and answer the questions which follow.\n\nThe brewery of Barclay & Co is one of the most impressive. The whole enterprise is powered by a ‘fire-pump’ of thirty horse-power. Great rakes move up and down and stir the boilers twelve feet high and twenty feet in diameter, which contain the hops and stand over the fire. Elevators carry 2500 bushels of brewers grain each day to the top of the building from where it is distributed.\nThe pumping machine itself that does all this is so precisely constructed that there is so little friction within it that it hardly makes more sound than a watch ticking and one can hear a pin drop anywhere in the building.\nThe smallest vat when full of beer is worth £3000 sterling. Calculating on this basis, the cellar alone contains a capital of £300,000 sterling. The entire establishment probably requires a capital of no less than half a million. The building is fire-proof, the floors being made of metal and the walls of brick. 250,000 barrels of beer a year come out of it.",
+    questionText: "How was the brewery powered?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By a fire-pump", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t6a-q2", topicId: "hist-em-eur-6", conceptId: "large-boilers-stirred",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 6 A Q2",
+    stem: "Louis Simond, an observant Frenchman, toured England in 1810-11 and published his impressions in book form, in 1815. Read the following edited extract and answer the questions which follow.\n\nThe brewery of Barclay & Co is one of the most impressive. The whole enterprise is powered by a ‘fire-pump’ of thirty horse-power. Great rakes move up and down and stir the boilers twelve feet high and twenty feet in diameter, which contain the hops and stand over the fire. Elevators carry 2500 bushels of brewers grain each day to the top of the building from where it is distributed.\nThe pumping machine itself that does all this is so precisely constructed that there is so little friction within it that it hardly makes more sound than a watch ticking and one can hear a pin drop anywhere in the building.\nThe smallest vat when full of beer is worth £3000 sterling. Calculating on this basis, the cellar alone contains a capital of £300,000 sterling. The entire establishment probably requires a capital of no less than half a million. The building is fire-proof, the floors being made of metal and the walls of brick. 250,000 barrels of beer a year come out of it.",
+    questionText: "How large were the boilers and how were they stirred?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "12 feet high", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "20 feet wide", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "Stirred by rakes", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t6a-q3", topicId: "hist-em-eur-6", conceptId: "pumping-machine-quiet",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 6 A Q3",
+    stem: "Louis Simond, an observant Frenchman, toured England in 1810-11 and published his impressions in book form, in 1815. Read the following edited extract and answer the questions which follow.\n\nThe brewery of Barclay & Co is one of the most impressive. The whole enterprise is powered by a ‘fire-pump’ of thirty horse-power. Great rakes move up and down and stir the boilers twelve feet high and twenty feet in diameter, which contain the hops and stand over the fire. Elevators carry 2500 bushels of brewers grain each day to the top of the building from where it is distributed.\nThe pumping machine itself that does all this is so precisely constructed that there is so little friction within it that it hardly makes more sound than a watch ticking and one can hear a pin drop anywhere in the building.\nThe smallest vat when full of beer is worth £3000 sterling. Calculating on this basis, the cellar alone contains a capital of £300,000 sterling. The entire establishment probably requires a capital of no less than half a million. The building is fire-proof, the floors being made of metal and the walls of brick. 250,000 barrels of beer a year come out of it.",
+    questionText: "Why was the pumping machine so quiet?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because it is so precisely constructed OR because there is so little friction in it", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t6a-q4", topicId: "hist-em-eur-6", conceptId: "louis-simond-does-entire-capital-brewery",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 6 A Q4",
+    stem: "Louis Simond, an observant Frenchman, toured England in 1810-11 and published his impressions in book form, in 1815. Read the following edited extract and answer the questions which follow.\n\nThe brewery of Barclay & Co is one of the most impressive. The whole enterprise is powered by a ‘fire-pump’ of thirty horse-power. Great rakes move up and down and stir the boilers twelve feet high and twenty feet in diameter, which contain the hops and stand over the fire. Elevators carry 2500 bushels of brewers grain each day to the top of the building from where it is distributed.\nThe pumping machine itself that does all this is so precisely constructed that there is so little friction within it that it hardly makes more sound than a watch ticking and one can hear a pin drop anywhere in the building.\nThe smallest vat when full of beer is worth £3000 sterling. Calculating on this basis, the cellar alone contains a capital of £300,000 sterling. The entire establishment probably requires a capital of no less than half a million. The building is fire-proof, the floors being made of metal and the walls of brick. 250,000 barrels of beer a year come out of it.",
+    questionText: "According to Louis Simond, what does the entire capital of the brewery require?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No less than half a million", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t6a-q5", topicId: "hist-em-eur-6", conceptId: "new-way-powering-machines-discovered-england",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 6 A Q5",
+    stem: "Louis Simond, an observant Frenchman, toured England in 1810-11 and published his impressions in book form, in 1815. Read the following edited extract and answer the questions which follow.\n\nThe brewery of Barclay & Co is one of the most impressive. The whole enterprise is powered by a ‘fire-pump’ of thirty horse-power. Great rakes move up and down and stir the boilers twelve feet high and twenty feet in diameter, which contain the hops and stand over the fire. Elevators carry 2500 bushels of brewers grain each day to the top of the building from where it is distributed.\nThe pumping machine itself that does all this is so precisely constructed that there is so little friction within it that it hardly makes more sound than a watch ticking and one can hear a pin drop anywhere in the building.\nThe smallest vat when full of beer is worth £3000 sterling. Calculating on this basis, the cellar alone contains a capital of £300,000 sterling. The entire establishment probably requires a capital of no less than half a million. The building is fire-proof, the floors being made of metal and the walls of brick. 250,000 barrels of beer a year come out of it.",
+    questionText: "What new way of powering machines was discovered in England during the industrial revolution?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Steam power or any variation of steam-driven machinery", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2012 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t6b", topicId: "hist-em-eur-6", conceptId: "mary-wollstonecraft-tom-paine-problems-poverty",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 6 B",
+    stem: "Empires in Revolution, 1775-1815",
+    questionText: "Write a short paragraph on one of the following:\n1. Mary Wollstonecraft.\n2. Tom Paine.\n3. Problems of poverty in industrial towns.\n4. Abolition of the slave trade.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,25] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2012 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2012-ol-em-s3t6c", topicId: "hist-em-eur-6", conceptId: "did-industrial-revolution-change-manchester-did",
+    section: "3", questionRef: "2012 OL Early Modern Section 3 Topic 6 C",
+    stem: "Empires in Revolution, 1775-1815",
+    questionText: "Answer one of the following:\n1. How did the industrial revolution change Manchester?\n2. Why did many French people oppose the Civil Constitution of the Clergy?\n3. Did the Committee of Public Safety bring order to France? Give reasons for your answer.\n4. How widespread and destructive were Napoleon’s wars in Europe?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,25] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2013, level: "ordinary",
     paperFileid: "LC004GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",

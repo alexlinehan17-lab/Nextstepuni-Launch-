@@ -481,10 +481,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => row.kind === 'point' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
     // "… 5M + 5M Max =" left on a row by the tariff reader: the printed split is the row's note now.
     expect(rows.filter(({ row }) => /\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=\s*$/i.test(row.verbatim)).map(({ card }) => card.id)).toEqual([]);
-    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(16);
+    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(17);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(154);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(160);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['A new life', 'Better wages', 'Better work standards'],
@@ -492,6 +492,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Church renewal', 'Christian unity', 'Opening to the contemporary world'],
       ['Civil rights', 'Assassination', 'Vietnam'],
       ['Closure of rail link to Donegal', 'Closure of rail link to Dublin', 'Downgrading of rail link to Belfast'],
+      ['Consecrating churches', 'Ordaining priests', 'Confirming children', 'Deciding marriage cases'],
       ['Dental services', 'spectacles', 'drugs'],
       ['Distinguished', 'Of illustrious or noble families', 'Renowned for great deeds or achievements', 'Valour or prowess'],
       ['Efficient', 'Hard-working', 'Intelligent', 'Shrewd'],
@@ -507,6 +508,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Nantes', 'Bordeaux', 'Lisbon', 'Cadiz'],
       ['On railways', 'as news vendors', 'bootblacks', 'lamplighters', 'barbers'],
       ['Pheasant', 'partridge', 'grouse', 'hares'],
+      ['Preach', 'Lead men astray', 'Incite rebellion'],
       ['Ranks and titles', 'Civil laws', 'New social regulations', 'New customs and rules'],
       ['Salt fish', 'hides', 'cattle', 'hobby-horses'],
       ['Stoking the fire', 'Fetching water', 'Bringing in stacks of bread'],
@@ -533,6 +535,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Any TWO countries invaded by Napoleon 3M + 3M', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO features from second paragraph of text @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO of Beethoven’s compositions 3 + 3', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Any TWO valid aims from the war @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO valid aims of the Geraldine League (3M x 2)', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Battleship/ Warship', 6, [0, 3, 6], 'Ship = 3M'],
       ['By launching the Dreadnought', 6, [0, 3, 6], '‘Quickly’ ALONE = 3M'],
@@ -541,6 +544,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Famine, Civil War, Political instability', 5, [0, 3, 5], 'Threats: two = 5M; one = 3M; “wolf and tiger” alone = 0'],
       ['Green ribbons', 6, [0, 3, 6], 'ribbons = 3m'],
       ['Hans Place', 8, [0, 4, 8], 'London ONLY = 4M'],
+      ['It is an original document from the period called the Pacification of Ghent (8 Nov 1576) signed four days after the sack of Antwerp. It was actually drafted by the prelates, nobles, towns and states of the Netherlands.', 5, [0, 1, 2, 3, 4, 5], 'Mark quality of explanation on its merits. — Explanation be marked on a sliding scale out of 5: Excellent = 5 mks Very good = 4 mks Good = 3 mks Fair = 2 mks Weak = 0-1 mks — Max = 10M'],
       ['Less than half', 6, [0, 3, 6], 'Half ONLY = 3M'],
       ['Massive German air raids', 6, [0, 3, 6], 'air raids alone = 3m'],
       ['One opinion', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],

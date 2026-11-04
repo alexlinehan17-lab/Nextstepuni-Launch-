@@ -51,8 +51,9 @@ IRELAND_HEADING = re.compile(
     r"^(?:Ireland|Éire)\s*:?\s*(?:Topic|Topaic)\s*([1-6])",
     re.IGNORECASE,
 )
+# 2011-2012 Ordinary Early Modern head one Europe topic "Europe: Topic1".
 EUROPE_HEADING = re.compile(
-    r"^(?:Europe and the wider world|An Eoraip agus an domhan mór)"
+    r"^(?:Europe(?: and the wider world)?|An Eoraip agus an domhan mór)"
     r"\s*:?\s*(?:Topic|Topaic)\s*([1-6])",
     re.IGNORECASE,
 )
