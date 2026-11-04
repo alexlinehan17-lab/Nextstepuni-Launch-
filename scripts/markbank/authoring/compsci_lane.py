@@ -387,7 +387,7 @@ def build_row(sitting, spec, i, question_text, where):
         if spec.get('open'):
             row['openList'] = True
         if spec.get('note'):
-            row['contextNote'] = sitting.lift(spec['note'])
+            row['contextNote'] = check_note(where, sitting.lift(spec['note']))
         if spec.get('route'):
             row['route'] = spec['route']
         return row
@@ -417,10 +417,18 @@ def build_row(sitting, spec, i, question_text, where):
             raise LaneError(f'{where}: criterion steps {steps} are not ascending')
         row['permittedMarks'] = steps
     if spec.get('note'):
-        row['contextNote'] = sitting.lift(spec['note'])
+        row['contextNote'] = check_note(where, sitting.lift(spec['note']))
     if spec.get('route'):
         row['route'] = spec['route']
     return row
+
+
+def check_note(where, note):
+    """A note is the scheme's direction for ONE part. A slice that runs into
+    the next question's head took its start from an earlier part."""
+    if re.search(r'\bQuestion \d', note) or len(note) > 600:
+        raise LaneError(f'{where}: note runs past its part: {note[:90]!r}')
+    return note
 
 
 def row_worth(row):

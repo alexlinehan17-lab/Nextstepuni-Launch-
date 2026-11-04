@@ -56164,5 +56164,74 @@
   "year": 2023,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-HL-paper-q5-flow": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q5-flow.png",
+  "md5": "bb1aeb6e1f5d50cc26fdb08c237cee33",
+  "alt": "Figure 1: a flowchart. Start, INPUT pH, then a decision whose text is missing (A); its TRUE branch outputs \"Acid\" and its other branch, labelled B, leads to the decision pH > 7. That decision's branch labelled C leads to an output whose text is missing (D), and its FALSE branch to another output whose text is missing (E); all paths end at Stop. Below it, the table with Letter A to E and a blank Missing Text column.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q5",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2022-HL-paper-q11-tree": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q11-tree.png",
+  "md5": "b56286e9d2f23e3fdd371ee5048eadab",
+  "alt": "The honey bee ancestry tree printed with Question 11, with the key M = Male bee (they only have a mother) and F = Female bee (female bees have a mother and a father). Generation 1 is one male; Generation 2 one female; Generation 3 a female and a male; Generation 4 a female, a male and a female; Generation 5 F, M, F, M, F.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q11",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2022-HL-paper-q15-progs": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q15-progs.png",
+  "md5": "120ce49117316ea6945043b68cffdea0",
+  "alt": "The two check-digit programs printed with Question 15. Part (b): isbn stored as the string \"102004110\"; a for loop over range(10, 1, -1) adds int(isbn[10-i]) * i to total. Part (c): isbn stored as the integer 102004110 and copied to isbn1; a for loop over range(2, 11) takes digit = isbn % 10, adds digit*i to total and sets isbn = isbn//10. Both then compute check_digit = 11 - (total % 11) and print it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q15(c)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2022-HL-scheme-q11a": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-scheme-q11a.png",
+  "md5": "613c21b98eba23e6b3c5d1165f178008",
+  "alt": "The marking scheme's completed honey bee ancestry tree for Question 11(a), extended to Generations 6 and 7 with every bee labelled male or female.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q11(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2022-HL-scheme-q16a-i": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-scheme-q16a-i.png",
+  "md5": "0db347e6e767ec5b43cdda296111ee11",
+  "alt": "Line 5 of the marking scheme's possible solution: print(\"Dice simulation and analysis program\"), marked part (i).",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q16(a)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2022-HL-scheme-q16a-iv": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-scheme-q16a-iv.png",
+  "md5": "d12d62ce609f2aa01b8d98674b9077e7",
+  "alt": "Line 31 of the marking scheme's possible solution: the print of the results list commented out with a #, marked part (iv).",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q16(a)(iv)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
  }
 }

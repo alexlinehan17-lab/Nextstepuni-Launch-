@@ -16513,5 +16513,291 @@
   "figureKey": "computer-science-2023-OL-scheme-q16a",
   "questionFigureKey": "computer-science-2023-OL-paper-q16a-code",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-hl-q5",
+  "topicId": "cs-2-2",
+  "conceptId": "chemical-solution-said-acid-if-ph",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 HL Q5",
+  "questionText": "A chemical solution is said to be an acid if its pH level is less than 7, a base if its pH level is greater than 7, and neutral otherwise. Figure 1 displays a flowchart of an algorithm that, for a given pH entered by the user, displays whether it is an acid, a base or neutral. Complete the table below to indicate the text that should appear in the flowchart for the letters A-E.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A pH < 7",
+    "marks": 1,
+    "contextNote": "Each correct response 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B FALSE",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C TRUE",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D OUTPUT “Base”",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "E OUTPUT “Neutral”",
+    "marks": 1
+   }
+  ],
+  "questionFigureKey": "computer-science-2022-HL-paper-q5-flow",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-hl-q11-a",
+  "topicId": "cs-3-3",
+  "conceptId": "draw-label-additional-generations",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 HL Q11(a)",
+  "questionText": "Draw and label two additional generations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Full correct response",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Full correct response 3 marks One fully correct generation 2 marks Two or more branches from generation 7 fully complete 2 marks Any correct value 1 mark"
+   }
+  ],
+  "stem": "The reproduction rules for honey bees are quite remarkable. Females lay eggs and if an egg is fertilised by a male it will hatch as a female. Unfertilised eggs hatch as males. The illustration below shows an ancestry tree for the male honey bee shown at the top of the tree. There are five generations shown.",
+  "figureKey": "computer-science-2022-HL-scheme-q11a",
+  "questionFigureKey": "computer-science-2022-HL-paper-q11-tree",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-hl-q11-b",
+  "topicId": "cs-3-3",
+  "conceptId": "pattern-emerging-could-model-number-bees",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 HL Q11(b)",
+  "questionText": "Describe any pattern emerging that could be used to model the number of bees in any particular generation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Number of bees at each generation is the sum of the number of bees at the previous two generations (Fibonacci sequence).",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 2 marks Fair description - limited understanding 1 mark"
+   }
+  ],
+  "stem": "The reproduction rules for honey bees are quite remarkable. Females lay eggs and if an egg is fertilised by a male it will hatch as a female. Unfertilised eggs hatch as males. The illustration below shows an ancestry tree for the male honey bee shown at the top of the tree. There are five generations shown.",
+  "questionFigureKey": "computer-science-2022-HL-paper-q11-tree",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-hl-q13-b-i",
+  "topicId": "cs-3-1",
+  "conceptId": "shop-page-should-allow-visitors-browse",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 HL Q13(b)(i)",
+  "questionText": "The shop page should allow visitors to browse items. When a visitor wishes to purchase an item, they should be able to click an ‘Add to Cart’ button. Create a wireframe diagram to show the layout of the shop page. Your wireframe should include annotations outlining the purpose of the main elements.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Image and description of item",
+    "marks": 1
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Add to cart button",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Link to checkout page",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Overall aesthetic",
+    "marks": 1
+   }
+  ],
+  "stem": "Some weeks after the initial meeting John and Mary contact your company to request that an online store be included as part of the system. The store will be made up of two pages – a shop page and a checkout page."
+ },
+ {
+  "id": "cs-2022-hl-q15-c-iv",
+  "topicId": "cs-2-2",
+  "conceptId": "key-differences-between-algorithms-parts-b",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 HL Q15(c)(iv)",
+  "questionText": "Identify two key differences between the algorithms used in parts (b) and (c).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Identify two key differences between the algorithms used in parts (b) and (c).",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Use of string in program 1 and int in program 2 (to store the ISBN)",
+      "Program 1 traverses string left to right – program 2 takes digits from right to left",
+      "Program 1 uses range to count from 10 down to 2 (or 10 down to but not including 1) whereas program 2 uses range to count from 2 up to 10",
+      "Program 1 does not modify the original isbn number – program 2 does. Program 2 needs to use isbn1 to keep track (remember) the original isbn."
+     ]
+    },
+    "contextNote": "For each difference: Very good description - clear understanding demonstrated 2 marks"
+   }
+  ],
+  "questionFigureKey": "computer-science-2022-HL-paper-q15-progs",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-hl-q15-c-v",
+  "topicId": "cs-2-4",
+  "conceptId": "provide-example-type-data-entry-error",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 HL Q15(c)(v)",
+  "questionText": "Provide an example of one type of data entry error a check digit could be used to prevent.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Provide an example of one type of data entry error a check digit could be used to prevent.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "letter/digit errors, such as l → 1 or O → 0",
+      "single digit errors, such as 1 → 2",
+      "transposition errors, such as 12 → 21",
+      "twin errors, such as 11 → 22",
+      "jump transpositions errors, such as 132 → 231",
+      "jump twin errors, such as 131 → 232"
+     ]
+    },
+    "contextNote": "Very good description - clear understanding demonstrated 2 marks Fair description - limited understanding 1 mark"
+   }
+  ]
+ },
+ {
+  "id": "cs-2022-hl-q16-a-i",
+  "topicId": "cs-2-2",
+  "conceptId": "currently-first-line-program-output-dice",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2022 HL Q16(a)(i)",
+  "questionText": "Currently the first line in the program output is Dice simulation program. Change the program so that the first line in the output is Dice simulation and analysis program.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "contextNote": "(i) 5 marks (A-5 scale) 5 marks Correct response Correct implementation using solution above or similar."
+   }
+  ],
+  "stem": "The program simulates the rolling of a die 100 times.",
+  "figureKey": "computer-science-2022-HL-scheme-q16a-i",
+  "questionFigureKey": "computer-science-2022-HL-paper-q16-figure",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-hl-q16-a-iv",
+  "topicId": "cs-2-2",
+  "conceptId": "comment-out-line-displays-list-individual",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2022 HL Q16(a)(iv)",
+  "questionText": "Comment out the line that displays the list of individual results. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16]",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "contextNote": "(iv) 5 marks (A-5 scale) 5 marks Correct response Correct implementation using solution above or similar."
+   }
+  ],
+  "stem": "The program simulates the rolling of a die 100 times.",
+  "figureKey": "computer-science-2022-HL-scheme-q16a-iv",
+  "questionFigureKey": "computer-science-2022-HL-paper-q16-figure",
+  "questionFigureIncludesPrompt": false
  }
 ]
