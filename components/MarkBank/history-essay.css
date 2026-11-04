@@ -10,6 +10,10 @@
 .mb-hist-nomodel p { margin: 0; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
 
 .mb-hist-element { display: grid; gap: 7px; }
+/* A note the scheme sets out line by line (Q4's "There are two elements in this
+   question:" and its elements) keeps its lines. Notes printed as one line
+   carry no line break, so they render exactly as before. */
+.mb-hist-essay .mb-claim-directions li { white-space: pre-line; }
 
 .mb-hist-part { display: grid; gap: 8px; padding: 11px 11px 10px; border-radius: 11px; border: 1px solid var(--mb-border); }
 .mb-hist-part-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }

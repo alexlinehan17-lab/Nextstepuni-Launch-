@@ -37,7 +37,7 @@ vi.mock('../components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new
 
 type EssayCard = SecRubricCard & { rubric: HistoryEssayRubric };
 /** The papers whose essays are carded so far (lane batch 2 adds one sitting a commit). */
-const CARDED_ESSAY_PAPERS = ['2021 higher em', '2021 higher lm', '2021 ordinary em', '2021 ordinary lm', '2022 higher em', '2022 higher lm', '2022 ordinary em', '2022 ordinary lm', '2023 higher em', '2023 higher lm', '2023 ordinary em', '2023 ordinary lm', '2024 higher em', '2024 higher lm', '2024 ordinary em', '2024 ordinary lm', '2025 higher em', '2025 higher lm', '2025 ordinary em', '2025 ordinary lm', '2026 higher em', '2026 higher lm', '2026 ordinary em', '2026 ordinary lm'];
+const CARDED_ESSAY_PAPERS = ['2010 higher em', '2010 higher lm', '2010 ordinary em', '2010 ordinary lm', '2011 higher em', '2011 higher lm', '2011 ordinary em', '2011 ordinary lm', '2012 higher em', '2012 higher lm', '2012 ordinary em', '2012 ordinary lm', '2013 higher em', '2013 higher lm', '2013 ordinary em', '2013 ordinary lm', '2014 higher em', '2014 higher lm', '2014 ordinary em', '2014 ordinary lm', '2015 higher em', '2015 higher lm', '2015 ordinary em', '2015 ordinary lm', '2016 higher em', '2016 higher lm', '2016 ordinary em', '2016 ordinary lm', '2017 higher em', '2017 higher lm', '2017 ordinary em', '2017 ordinary lm', '2018 higher em', '2018 higher lm', '2018 ordinary em', '2018 ordinary lm', '2019 higher em', '2019 higher lm', '2019 ordinary em', '2019 ordinary lm', '2020 higher lm', '2020 ordinary lm', '2021 higher em', '2021 higher lm', '2021 ordinary em', '2021 ordinary lm', '2022 higher em', '2022 higher lm', '2022 ordinary em', '2022 ordinary lm', '2023 higher em', '2023 higher lm', '2023 ordinary em', '2023 ordinary lm', '2024 higher em', '2024 higher lm', '2024 ordinary em', '2024 ordinary lm', '2025 higher em', '2025 higher lm', '2025 ordinary em', '2025 ordinary lm', '2026 higher em', '2026 higher lm', '2026 ordinary em', '2026 ordinary lm'];
 const essays = [...HISTORY_HIGHER, ...HISTORY_ORDINARY]
   .filter((card): card is EssayCard => isRubricCard(card) && card.rubric.system === 'history-essay');
 const byId = (id: string) => essays.find(card => card.id === id)!;
@@ -251,6 +251,48 @@ describe('scoring by Core Statement and by a NOTE with several ceilings', () => 
     expect(historyEssayMarks(three, { ...full, [historyCapId]: 1 })).toBe(70);
     expect(historyEssayMarks(three, { ...full, [historyCapId]: 2 })).toBe(80);
     expect(historyEssayMarks(three, { ...full, [historyCapId]: 3 })).toBe(90);
+  });
+});
+
+describe('the documents question’s own note on Q4 (2018, 2019 Higher)', () => {
+  it('carries 2018’s elements and its one-element ceiling as the question’s element rule', () => {
+    const rte = byId('hist-2018-hl-lm-s1-q4');
+    expect(rte.rubric.cm.max).toBe(24);
+    expect(rte.rubric.cm.elementRule?.caps).toEqual([{ when: 'if only one element is treated', max: 20 }]);
+    expect(rte.rubric.cm.elementRule?.note.split('\n')).toEqual([
+      'There are two elements in this question:',
+      'To what extent did RTÉ entertain and to what extent did it challenge its viewers?',
+      'Entertaining = music, comedy, etc',
+      'Challenging = provocative current affairs, documentaries, etc',
+      'There were also programmes, such as the Late Late Show, which combined the entertaining and the challenging.',
+      'Max of 20 marks CM if only one element is treated',
+    ]);
+    expect(tariffReconciles(rte)).toBe(true);
+  });
+
+  it('reads 2017’s NOTE on Q4 as an essay’s, and its OE direction as printed', () => {
+    const jarrow2017 = byId('hist-2017-hl-lm-s1-q4');
+    expect(jarrow2017.rubric.cm.elementRule).toEqual({
+      note: 'NOTE: TWO elements (What were the aims + to what extent were they achieved) If only ONE, Max. CM = 20',
+      caps: [{ when: 'If only ONE', max: 20 }],
+    });
+    expect(jarrow2017.rubric.oe?.directions).toContain(
+      'Material which narrates the day-to-day events of the Jarrow March without reference to the question’s two elements = no more than Fair on OE');
+    // The maxima the scheme restates above its NOTE are not a statement of how it marks.
+    expect(jarrow2017.rubric.schemeGuidance).toEqual([
+      'In question 4, marking by paragraph begins.',
+      'The examiner will divide the answer into paragraphs or paragraph equivalents.',
+    ]);
+  });
+
+  it('keeps 2019’s elements, which print no ceiling, as a direction', () => {
+    const laois = byId('hist-2019-hl-em-s1-q4');
+    expect(laois.rubric.cm.elementRule).toBeUndefined();
+    expect(laois.rubric.cm.directions[0].split('\n')).toEqual([
+      'There are two elements in this question:',
+      'What was the policy of plantation in Laois/Offaly?',
+      'To what extent was it successful?',
+    ]);
   });
 });
 

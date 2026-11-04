@@ -102,10 +102,29 @@ def dqb_case_title(document: fitz.Document) -> str:
     raise RuntimeError("no case-study line")
 
 
-def dqb_topic(document: fitz.Document, pdf_path: Path) -> tuple[str, int]:
+# The documents question's topic where the paper's own page-2 head misprints
+# it, keyed (year, level): 2014 Ordinary Early Modern heads its documents
+# question "Europe and the wider world: Topic2", while its cover sets
+# "Documents-based question (Ireland: Topic 2)", Section 2 offers Ireland
+# Topics 1, 3, 4, 5, 6, and the case study is Meiler Magrath's career. The
+# cover line must still read as recorded (checked below). The Irish edition
+# prints "Éire: Topaic 2" correctly and is read as printed.
+DQB_MISPRINTS = {
+    (2014, "ordinary", "ev"): (("I", 2), "Documents-based question (Ireland: Topic 2)"),
+}
+
+
+def dqb_topic(document: fitz.Document, pdf_path: Path, year: int = 0, level: str = "",
+              lang: str = "") -> tuple[str, int]:
     """The documents question's topic. As history.py reads it, except that the
     2025 Higher Early Modern paper heads it "Europe: Topic 1", the area's
     name abbreviated (hist_paper.py's TOPIC allows the same)."""
+    misprint = DQB_MISPRINTS.get((year, level, lang))
+    if misprint:
+        (family, number), cover = misprint
+        if cover not in LM.clean(document[0].get_text("text")):
+            raise RuntimeError(f"{pdf_path}: recorded documents-question misprint no longer reads as recorded")
+        return family, number
     try:
         return LM.dqb_topic(document, pdf_path)
     except RuntimeError:
@@ -142,7 +161,7 @@ def main(argv: list[str]) -> None:
         if not path.exists():
             raise FileNotFoundError(path)
         with fitz.open(path) as document:
-            dqb = dqb_topic(document, path)
+            dqb = dqb_topic(document, path, entry["year"], entry["level"], entry["lang"])
             anchors, section_three, _corrections = LM.topic_anchors(document, path, entry, dqb)
             alternative = LM.alternative_anchor(document, path, entry, anchors, dqb)
             title = dqb_case_title(document) if entry["lang"] == "ev" else None

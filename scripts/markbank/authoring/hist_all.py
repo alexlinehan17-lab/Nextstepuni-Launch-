@@ -5,9 +5,9 @@
     python3 scripts/markbank/authoring/hist_all.py > scripts/markbank/authored/history.json
     python3 scripts/markbank/authoring/hist_all.py --exclusions   # rewrite the ledger
 
-Census-driven. Twenty papers — ten Later Modern and ten Early Modern, 2021-2025
-at both levels — print 1,430 asks between them, and this walks that census
-rather than choosing what to card.
+Census-driven. It walks every ask each carded paper prints (PAPERS: 2021-2026
+at both levels and in both fields, then back a paper at a time from 2020, the
+one year the SEC set Later Modern alone) rather than choosing what to card.
 
 WHAT IS CARDED, AND WHAT IS EXCLUDED
 ------------------------------------
@@ -76,16 +76,13 @@ sys.path.insert(0, DIR)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
 from hist_paper import HistPaper, FIELDS                      # noqa: E402
-from hist_scheme import HistScheme, GRID_WORDS                # noqa: E402
+from hist_scheme import HistScheme, GRID_WORDS, NOTE_CAP      # noqa: E402
 from hist_topics import topic_for, concept_for, TITLES        # noqa: E402
-from hist_rows import split_priced                           # noqa: E402
+from hist_rows import split_priced, step_counted             # noqa: E402
+from hist_figures import figure_key                          # noqa: E402
 from align import bag, score                                  # noqa: E402
 
-YEARS = (2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('hl', 'ol')
-# The sittings carded, each added whole as its papers are read and reviewed.
-SITTINGS = [(year, level) for year in YEARS for level in LEVELS
-            if year <= 2026]
 FIELD_KEYS = ('lm', 'em')
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
@@ -95,6 +92,48 @@ EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
 # is the prototype (lane batch 1, 4 Nov 2026); the rest follow once it has
 # been reviewed.
 ESSAY_PAPERS = {
+    (2010, 'hl', 'em'),
+    (2010, 'hl', 'lm'),
+    (2010, 'ol', 'em'),
+    (2010, 'ol', 'lm'),
+    (2011, 'hl', 'em'),
+    (2011, 'hl', 'lm'),
+    (2011, 'ol', 'em'),
+    (2011, 'ol', 'lm'),
+    (2012, 'hl', 'em'),
+    (2012, 'hl', 'lm'),
+    (2012, 'ol', 'em'),
+    (2012, 'ol', 'lm'),
+    (2013, 'hl', 'em'),
+    (2013, 'hl', 'lm'),
+    (2013, 'ol', 'em'),
+    (2013, 'ol', 'lm'),
+    (2014, 'hl', 'em'),
+    (2014, 'hl', 'lm'),
+    (2014, 'ol', 'em'),
+    (2014, 'ol', 'lm'),
+    (2015, 'hl', 'em'),
+    (2015, 'hl', 'lm'),
+    (2015, 'ol', 'em'),
+    (2015, 'ol', 'lm'),
+    (2016, 'hl', 'em'),
+    (2016, 'hl', 'lm'),
+    (2016, 'ol', 'em'),
+    (2016, 'ol', 'lm'),
+    (2017, 'hl', 'em'),
+    (2017, 'hl', 'lm'),
+    (2017, 'ol', 'em'),
+    (2017, 'ol', 'lm'),
+    (2018, 'hl', 'em'),
+    (2018, 'hl', 'lm'),
+    (2018, 'ol', 'em'),
+    (2018, 'ol', 'lm'),
+    (2019, 'hl', 'em'),
+    (2019, 'hl', 'lm'),
+    (2019, 'ol', 'em'),
+    (2019, 'ol', 'lm'),
+    (2020, 'hl', 'lm'),
+    (2020, 'ol', 'lm'),
     (2021, 'hl', 'em'),
     (2021, 'hl', 'lm'),
     (2021, 'ol', 'em'),
@@ -119,6 +158,35 @@ ESSAY_PAPERS = {
     (2026, 'hl', 'lm'),
     (2026, 'ol', 'em'),
     (2026, 'ol', 'lm'),
+}
+# The papers carded. A paper is carded whole, essays included, so these are
+# the essay papers; each joins one at a time, as it is read and reviewed
+# (2021-2026 in lane batches 1-2, then back from 2020).
+PAPERS = sorted(ESSAY_PAPERS, key=lambda p: (p[0], p[1], FIELD_KEYS.index(p[2])))
+
+# Topic titles the SCHEME misprints, keyed (year, level, field, unit): (the
+# title it prints, a word the paper's questions under the unit and the
+# scheme's answers under it must both contain). The answers decide the join,
+# the title does not. 2017 Ordinary Early Modern heads Europe Topic 2's answers
+# with Topic 1's title, "Europe from Renaissance to Reformation, 1492-1567",
+# while the paper's Topic 2 is "Religion and power: politics in the later 16th
+# century, 1567-1609"; Topic 1 is that paper's documents question and sets no
+# Section 3 unit. The answers ("Universal grief", "About a million in debt",
+# "ONE achievement of Philip II as king of Spain") are the paper's Topic 2
+# questions on the Venetian ambassador's report on the death of Philip II.
+# 2016 repeats the Early Modern slip at both levels and adds one in Later
+# Modern. Higher Early Modern's Europe Topic 2 essays sit under Topic 1's
+# title (and its number, which hist_scheme renumbers); their NOTE asks for
+# "strengths + weaknesses", as the paper's Q1 does of Spain under Philip II.
+# Ordinary Early Modern's Topic 2 answers ("Duke of Sidonia", the Armada) are
+# headed with Topic 1's title. Ordinary Later Modern's Ireland Topic 3 answers
+# (Kathleen Lynn: Liberty Hall, Chief Medical Officer, the Easter Rising) are
+# headed with Topic 4's title, "The Irish Diaspora, 1840-1966".
+SCHEME_TITLE_MISPRINTS = {
+    (2017, 'ol', 'em', '3 Topic 2'): ('Europe from Renaissance to Reformation, 1492-1567', 'Philip II'),
+    (2016, 'hl', 'em', '3 Topic 2'): ('Europe from Renaissance to Reformation, 1492-1567', 'strengths'),
+    (2016, 'ol', 'em', '3 Topic 2'): ('Europe from Renaissance to Reformation, 1492-1567', 'Sidonia'),
+    (2016, 'ol', 'lm', '2 Topic 3'): ('The Irish Diaspora, 1840-1966', 'Easter Rising'),
 }
 
 # NextStepUni's own guidance under the panel, never presented as the SEC's,
@@ -283,11 +351,38 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
     printed = P.marks.get(key)
     if ask.total != total or (printed is not None and printed != total):
         return 'the paper, the scheme and the CM + OE maxima disagree'
-    if ask.note is not None:
+    if ask.note is not None and not ask.note_caps and not NOTE_CAP.search(ask.note):
+        # A NOTE that prints no ceiling ("NOTE: How important was ...? Consider
+        # this when awarding CM and OE.", 2014 Higher) is a direction, as Q4's
+        # elements without a ceiling are.
+        rubric_cm['directions'] = [ask.note, *rubric_cm['directions']]
+    elif ask.note is not None:
         if not ask.note_caps or not all(0 < top < cm['max'] for _when, top in ask.note_caps):
             return "the question's NOTE prints no CM ceiling below the maximum"
         rubric_cm['elementRule'] = {'note': ask.note,
                                     'caps': [{'when': when, 'max': top} for when, top in ask.note_caps]}
+    elif marking.get('elementRule'):
+        # Ordinary Q4's own NOTE with a one-element ceiling (2015).
+        rubric_cm['elementRule'] = marking['elementRule']
+    elif marking.get('note'):
+        # Q4's own NOTE (2017 Higher Later Modern), read as an essay's is.
+        caps = [(' '.join(w.split()), int(t)) for w, t in NOTE_CAP.findall(marking['note'])]
+        if not caps or not all(0 < top < cm['max'] for _when, top in caps):
+            return "the question's NOTE prints no CM ceiling below the maximum"
+        rubric_cm['elementRule'] = {'note': marking['note'],
+                                    'caps': [{'when': when, 'max': top} for when, top in caps]}
+    elif marking.get('elements'):
+        # Q4's own elements block (2018, 2019 Higher). With a ceiling it is the
+        # question's element rule, as an essay's NOTE is; without one it is a
+        # direction the examiner marks by.
+        caps = marking['elementCaps']
+        if caps:
+            if not all(0 < top < cm['max'] for _when, top in caps):
+                return "the question's NOTE prints no CM ceiling below the maximum"
+            rubric_cm['elementRule'] = {'note': marking['elements'],
+                                        'caps': [{'when': when, 'max': top} for when, top in caps]}
+        else:
+            rubric_cm['directions'] = [marking['elements'], *rubric_cm['directions']]
     guidance = [g for g in marking['schemeGuidance'] if g != rubric_cm['definition']]
     rubric = {'system': 'history-essay', 'schemeGuidance': guidance, 'cm': rubric_cm}
     if oe:
@@ -340,7 +435,216 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
 PRICED_COMPONENT = re.compile(r'([A-Z][A-Za-z \u2019\'-]{1,40}?)\s*=\s*(\d{1,3})M\b')
 TARIFF_CEILING = re.compile(r'\bMax\.?\s*=\s*(\d{1,3})M\b')
 NO_PRINTED_ANSWER = 'The scheme prints no answer here: any correct one earns the marks.'
-TARIFF_WORDING = re.compile(r'^(?:ONE|TWO|THREE|One valid|Two valid|Any valid)\b(?![^.]*\.\s*\S)')
+TARIFF_WORDING = re.compile(r'^(?:ONE|TWO|THREE|[Oo]ne valid|[Tt]wo valid|[Aa]ny valid|Any (?:ONE|TWO|THREE))\b(?![^.]*\.\s*\S)')
+
+
+def unit_source_pages(P, unit):
+    """The pages a Part A unit's questions are read from: its own page, and the
+    page its stem sends the student to ("The picture marked Y on page 15
+    shows ...", 2013-2014 Ordinary), where the picture is printed."""
+    pages = [P.unit_pages[unit]]
+    m = re.search(r'\bon page (\d+)\b', P.stems.get(unit) or '')
+    if m and int(m.group(1)) not in pages:
+        pages.append(int(m.group(1)))
+    return pages
+
+
+# A documents part's scheme entry that restates the task and answers nothing:
+# "Yes or No?", "Primary or secondary?", "Which is more sympathetic to bardic
+# poets, A or B?", "Compare role of poet as set out in Document A with role of
+# poet as set out in Document B" (2010-2011 Ordinary).
+DIRECTION_ONLY = re.compile(r'^(?:[A-Z][^.?]{0,100}\?(?: One reason only required| [A-Z][^?]{0,100}\.?)?|Compare\b[^.?]{0,120})$')
+
+
+def scale_marks(notes):
+    """Every mark a printed band grid allows, "Excellent = 9-10 mks ... Weak = 0-2 mk"."""
+    bands = [(int(a), int(b or a)) for a, b in
+             re.findall(r'=\s*(\d+)(?:\s*-\s*(\d+))?\s*mks?\b', ' '.join(notes))]
+    return sorted({m for a, b in bands for m in range(a, b + 1)})
+
+
+# The heads a documents answer is printed under, one per element its scale
+# marks: "Document B ..." after the Document A points (2010 Higher Q2(a)), "As a
+# poet:" / "As a colonist:" (2011 Higher Q3(b)).
+ELEMENT_HEADS = (re.compile(r'\s(?=Document B\b)'), re.compile(r'\s(?=As an? [a-z]+:)'))
+PER_ITEM_PRICES = (re.compile(r'(\d+)\s*M\s*\+\s*(\d+)\s*M\b'), re.compile(r'\((\d+)\s*\+\s*(\d+)\)'))
+
+
+def step_at_printed_scale(row, ask):
+    """A ten-mark documents part answered in one row, stepped at the scale its
+    scheme prints, or None where the scheme prints no scale for it.
+
+    Claimed whole, a student with half the answer earned nothing. The steps
+    are the scheme's own:
+    - a scale per element, "Each document to be marked as follows: Excellent
+      = 5 mks ... Weak = 0-1 mk" / "Mark each 0-5 according to quality" (2010-
+      2013 Higher): a row per element, each stepped on that scale, where the
+      answer is printed element by element; otherwise one row stepped at
+      every total the elements' scales can make;
+    - a scale for the whole answer, "Mark on a sliding scale out of 10:
+      Excellent = 9-10 mks ... Weak = 0-2 mks": one row stepped at every mark;
+    - a price per item, "Reference to both documents = 5M + 5M Max = 10M",
+      "(5 + 5)": one row stepped at each price.
+    Nothing is inferred: a part whose scheme prints none of these (a one-word
+    comprehension answer, "Three points to support answer Max = 10M") stays
+    as it is."""
+    total = ask.total
+    text = row['verbatim']
+    marks = scale_marks(ask.notes)
+    notes = ' '.join(ask.notes)
+
+    def stepped(i, verbatim, top, steps):
+        out = {'id': f'r-{i}', 'kind': 'criterion', 'verbatim': verbatim, 'marks': top,
+               'permittedMarks': steps}
+        if row.get('contextNote') and i == 1:
+            out['contextNote'] = row['contextNote']
+        return out
+
+    if marks and marks == list(range(0, marks[-1] + 1)) and marks[-1] < total and total % marks[-1] == 0:
+        k = total // marks[-1]
+        for head in ELEMENT_HEADS:
+            parts = head.split(text)
+            if len(parts) >= k and len(parts) - k <= 1:
+                elements = parts[-k:]
+                if len(parts) > k:
+                    elements[0] = f'{parts[0]} {elements[0]}'
+                return [stepped(i, element, marks[-1], marks) for i, element in enumerate(elements, start=1)]
+        return [stepped(1, text, total, list(range(0, total + 1)))]
+    if marks == list(range(0, total + 1)):
+        return [stepped(1, text, total, marks)]
+    for prices in PER_ITEM_PRICES:
+        m = prices.search(notes)
+        if m and int(m.group(1)) + int(m.group(2)) == total:
+            return [stepped(1, text, total, [0, int(m.group(1)), total])]
+    return None
+
+
+def derive_unpriced_parts(P, S):
+    """Price a documents part the scheme answers but prints no marks for.
+
+    2011 Higher Early Modern Q3(b) answers Spenser "as a poet" and "as a
+    colonist", "Mark each 0-5 according to quality", and prints no total; the
+    paper prices Q3 at (20) and the scheme prices Q3(a) at "max 10M". The part
+    takes what the paper's question total leaves, as an unanswered part does
+    (unanswered_card): only when it is the question's one unpriced part and
+    every other part is priced. Returns what was derived, for the report."""
+    out = []
+    for q in sorted({a.key[1] for a in S.asks if a.key[0] == '1' and a.key[2]}):
+        parts = [a for a in S.asks if a.key[0] == '1' and a.key[1] == q and a.key[2]]
+        unpriced = [a for a in parts if a.total is None]
+        printed = P.marks.get(('1', q, None, None))
+        if len(unpriced) != 1 or printed is None:
+            continue
+        siblings = sum(a.total for a in parts if a.total is not None)
+        if not 0 < printed - siblings <= printed:
+            continue
+        ask = unpriced[0]
+        ask.total = printed - siblings
+        ask.notation = f'{ask.total}M'
+        ask.derived = (printed, siblings)
+        out.append(f'Section 1 Q{q}({ask.key[2]}): paper {printed} - scheme {siblings} '
+                   f'= {ask.total} for the part the scheme answers unpriced')
+    return out
+
+
+def split_card(P, year, level, field, key, ask, section, topic_id, ref):
+    """A part the scheme prices component by component, answering each: one
+    row per component at its printed marks (hist_scheme
+    `_answered_split`). A component answered under its own line keeps that
+    line, price and all, as the row's note."""
+    question = P.asks[key]
+    rows = []
+    for i, (label, point, note) in enumerate(ask.points, start=1):
+        row = {'id': f'r-{i}', 'kind': 'point', 'verbatim': point,
+               'marks': ask.components[i - 1][1]}
+        steps = ask.steps.get(i - 1)
+        if steps:
+            # A component marked on its own printed scale (2012 Ordinary Q3(a)).
+            row['kind'] = 'criterion'
+            row['permittedMarks'] = steps
+        if note:
+            row['contextNote'] = note
+        rows.append(row)
+    card = {
+        'id': card_id(year, level, field, key),
+        'subjectId': 'history',
+        'level': LEVEL_WORD[level],
+        'year': year,
+        'section': section,
+        'topicId': topic_id,
+        'conceptId': concept_for(question),
+        'questionRef': ref,
+        'questionText': question,
+        'tariffModel': {'kind': 'fixed'},
+        'totalMarks': ask.total,
+        'rows': rows,
+        'notes': (f'{FIELDS[field]} field of study. The scheme prints '
+                  f'{ask.notation!r} for this ask: each component at its '
+                  f'printed marks.'),
+    }
+    unit = key[0]
+    stem = f'Case study: {P.case_title}' if unit == '1' and P.case_title else P.stems.get(unit)
+    if stem and len(stem) >= 20:
+        card['stem'] = stem
+    if unit == '1':
+        card['sourceMaterial'] = source_material(
+            P, year, level, field, '1', P.document_pages, 'The documents', 'OFFICIAL DOCUMENTS')
+    else:
+        # A Part A answer priced component by component (2016 Ordinary A4).
+        card['sourceMaterial'] = source_material(
+            P, year, level, field, unit, unit_source_pages(P, unit), 'The extract', 'OFFICIAL EXTRACT')
+    return card
+
+
+# Printed asks the scheme prints no answer for at all, keyed (year, level,
+# field, key): the note shown under the row, saying what the scheme prints
+# instead. Every printed ask gets a card (Alex, 2026-10-28): its one row is
+# UNPRINTED_ANSWER, worth what the paper's printed question total leaves once
+# the scheme's own prices for the question's other parts are taken off.
+UNPRINTED_ANSWER = 'The scheme prints no answer for this part.'
+SCHEME_UNANSWERED = {
+    (2015, 'ol', 'em', ('1', 3, 'a', None)): (
+        'The scheme prints one Criticism answer, under (a), and it is about the '
+        'King\u2019s proclamation (document B), which part (b) asks about. It prints '
+        'nothing for this part.'),
+}
+
+
+def unanswered_card(P, S, year, level, field, key, section, ref, note):
+    """A card for a printed ask the scheme leaves unanswered, or the reason it cannot be made."""
+    question_total = P.marks.get(('1', key[1], None, None)) if key[0] == '1' else None
+    siblings = [a.total for a in S.asks if a.key[0] == key[0] and a.key[1] == key[1] and a.key != key]
+    if question_total is None or not siblings or any(t is None for t in siblings):
+        return 'the part an unanswered ask leaves cannot be priced from the paper'
+    marks = question_total - sum(siblings)
+    if marks <= 0:
+        return 'the part an unanswered ask leaves cannot be priced from the paper'
+    topic_section, topic = P.case_study
+    question = P.asks[key]
+    card = {
+        'id': card_id(year, level, field, key),
+        'subjectId': 'history',
+        'level': LEVEL_WORD[level],
+        'year': year,
+        'section': section,
+        'topicId': topic_for(field, topic_section, topic),
+        'conceptId': concept_for(question),
+        'questionRef': ref,
+        'questionText': question,
+        'tariffModel': {'kind': 'fixed'},
+        'totalMarks': marks,
+        'rows': [{'id': 'r-1', 'kind': 'criterion', 'verbatim': UNPRINTED_ANSWER,
+                  'marks': marks, 'unprinted': True, 'contextNote': note}],
+        'notes': (f'{FIELDS[field]} field of study. The paper prices question {key[1]} '
+                  f'at ({question_total}) and the scheme prices its other part at '
+                  f'{sum(siblings)}M, so this part is worth {marks}; the scheme prints no '
+                  f'answer for it.'),
+    }
+    if P.case_title:
+        card['stem'] = f'Case study: {P.case_title}'
+    card['sourceMaterial'] = source_material(
+        P, year, level, field, '1', P.document_pages, 'The documents', 'OFFICIAL DOCUMENTS')
+    return card
 
 
 def tariff_only_card(P, year, level, field, key, ask, section, topic_id, ref):
@@ -391,16 +695,33 @@ def build():
         refused[reason] += 1
         examples[reason].append(ref)
 
-    for year, level in SITTINGS:
+    for year, level, field in PAPERS:
         if True:
-            for field in FIELD_KEYS:
+            if True:
                 P = HistPaper(year, level, field)
                 S = HistScheme(year, level, field)
+                derived = derive_unpriced_parts(P, S)
+                for d in derived:
+                    tariff_checks.setdefault('derived', []).append(f'{year} {level} {field} {d}')
 
                 # --- Law 4, join one: the topic title, on both documents.
                 scheme_titles = [(u, bag(t))
-                                 for u, t in S.topic_titles.items()]
+                                 for u, t in S.topic_titles.items()
+                                 if (year, level, field, u) not in SCHEME_TITLE_MISPRINTS]
                 for unit, title in sorted(P.topic_titles.items()):
+                    misprint = SCHEME_TITLE_MISPRINTS.get((year, level, field, unit))
+                    if misprint:
+                        printed, word = misprint
+                        own_text = ' '.join(v for k, v in P.asks.items()
+                                    if k[0] == unit or k[0].startswith(f'{unit} '))
+                        scheme_asks = [a for a in S.asks
+                                       if a.key[0] == unit or a.key[0].startswith(f'{unit} ')]
+                        answers = ' '.join([p for a in scheme_asks for _l, p, _n in a.points]
+                                           + [a.note or '' for a in scheme_asks])
+                        if S.topic_titles.get(unit) != printed or word not in own_text or word not in answers:
+                            refuse('a recorded scheme title misprint no longer reads as recorded',
+                                   f'{year} {level} {field} {unit}')
+                        continue
                     cue = bag(title)
                     ranked = sorted(((score(cue, sb), u)
                                      for u, sb in scheme_titles),
@@ -445,8 +766,16 @@ def build():
                         (k[1], v) for k, v in P.marks.items() if k[0] == '1'):
                     priced = sum(a.total or 0 for a in S.asks
                                  if a.key[0] == '1' and a.key[1] == q)
+                    unanswered = [k for k in SCHEME_UNANSWERED
+                                  if k[:3] == (year, level, field) and k[3][0] == '1' and k[3][1] == q]
                     if priced == printed:
                         tariff_checks['agree'] += 1
+                    elif unanswered and priced < printed:
+                        # The scheme leaves a part unanswered and unpriced; the
+                        # part takes what the paper's total leaves (unanswered_card).
+                        tariff_checks.setdefault('derived', []).append(
+                            f'{year} {level} {field} Section 1 Q{q}: paper {printed}, scheme {priced} '
+                            f'+ {printed - priced} for unanswered {", ".join(str(k[3]) for k in unanswered)}')
                     else:
                         tariff_checks['disagree'].append(
                             f'{year} {level} {field} Section 1 Q{q}: '
@@ -470,6 +799,14 @@ def build():
                     unit = key[0]
                     section, topic, part = unit_parts(unit)
                     ask = S.by_key.get(key)
+                    if ask is None and (year, level, field, key) in SCHEME_UNANSWERED:
+                        made = unanswered_card(P, S, year, level, field, key, section, ref,
+                                               SCHEME_UNANSWERED[(year, level, field, key)])
+                        if isinstance(made, str):
+                            refuse(made, ref)
+                        else:
+                            cards.append(made)
+                        continue
                     if ask is None:
                         refuse('the scheme prices no ask at this address', ref)
                         continue
@@ -520,6 +857,11 @@ def build():
                         })
                         continue
 
+                    if ask.kind == 'split':
+                        cards.append(split_card(P, year, level, field, key, ask,
+                                                section, topic_id, ref))
+                        continue
+
                     points = [(lab, p, n) for lab, p, n in ask.points
                               if not GRID_WORDS.search(p)]
                     if len(points) != len(ask.points):
@@ -553,6 +895,46 @@ def build():
                             row['contextNote'] = ' — '.join(notes)
                         rows.append(row)
 
+                    grid_marks = scale_marks(ask.notes)
+                    # A grid printed per element ("Each document to be marked as
+                    # follows:" / "Excellent = 5 mks ... Weak = 0-1 mk 10M") covers
+                    # the part's whole tariff, every mark of it, element by element.
+                    if (grid_marks and grid_marks == list(range(0, grid_marks[-1] + 1))
+                            and ask.total and ask.total % grid_marks[-1] == 0):
+                        grid_marks = list(range(0, ask.total + 1))
+                    if (single and key[0] == '1' and key[2] and DIRECTION_ONLY.match(rows[0]['verbatim'])
+                            and grid_marks == list(range(0, (ask.total or 0) + 1))):
+                        # The scheme restates the task and marks it on its band
+                        # grid, printing no answer: "Yes or No?" / "Mark quality
+                        # of answer on its merits." / "Excellent = 9-10 mks ...
+                        # Weak = 0-2 mk 10M" (2010-2011 Ordinary). The row is
+                        # the printed direction, stepped at every mark the grid
+                        # prints.
+                        rows[0] = {'id': 'r-1', 'kind': 'criterion', 'verbatim': rows[0]['verbatim'],
+                                   'marks': ask.total, 'permittedMarks': grid_marks,
+                                   'contextNote': NO_PRINTED_ANSWER}
+                    elif (single and key[0] == '1' and key[2] and rows[0]['kind'] == 'point'
+                            and (ask.total or 0) >= 10):
+                        stepped = step_at_printed_scale(rows[0], ask)
+                        if stepped:
+                            rows[:] = stepped
+                    if ask.stance and rows[0]['verbatim'].startswith(ask.stance + ' '):
+                        # The verdict printed unstopped over its first reason
+                        # ("Document A or B or both" / "Document A states ...")
+                        # keeps its own line, so the two never read as one
+                        # sentence (hist_scheme._stance).
+                        rows[0]['verbatim'] = f"{ask.stance}\n{rows[0]['verbatim'][len(ask.stance) + 1:]}"
+                    partials = [(alt, n) for alt, n in getattr(ask, 'partials', [])
+                                if 0 < n < (ask.total or 0)]
+                    if single and len(partials) == 1:
+                        # The scheme's lower-priced alternative ("Germanic cross
+                        # = 4M" under "Swastika 8M") is a step on the one row,
+                        # as a printed partial ("ribbons = 3m") already is.
+                        alt, n = partials[0]
+                        rows[0] = {'id': 'r-1', 'kind': 'criterion', 'verbatim': rows[0]['verbatim'],
+                                   'marks': ask.total, 'permittedMarks': [0, n, ask.total],
+                                   'contextNote': ' — '.join(x for x in (rows[0].get('contextNote'),
+                                                                         *(ask.partial_lines or [f'{alt} = {n}M'])) if x)}
                     card = {
                         'id': card_id(year, level, field, key),
                         'subjectId': 'history',
@@ -574,13 +956,29 @@ def build():
                                ' and divides it between no marking point, so '
                                'the rows carry no marks of their own.')),
                     }
+                    if getattr(ask, 'derived', None):
+                        printed, siblings = ask.derived
+                        card['notes'] = (
+                            f'{FIELDS[field]} field of study. The paper prices question {key[1]} '
+                            f'at ({printed}) and the scheme prices its other part at {siblings}M, '
+                            f'so this part is worth {ask.total}; the scheme prints its answer '
+                            f'and no marks for it'
+                            + ('.' if single else
+                               ', and divides it between no marking point, so '
+                               'the rows carry no marks of their own.'))
                     stem = P.stems.get(unit)
                     if unit == '1' and P.case_title:
                         stem = f'Case study: {P.case_title}'
                     if stem and len(stem) >= 20:
                         card['stem'] = stem
+                    if unit in P.tables:
+                        # A unit set on a printed chart: the stem is its
+                        # instruction alone, and the chart itself, cropped
+                        # from the page (hist_figures), stands beside it.
+                        card['questionFigureKey'] = figure_key(year, level, field, unit)
+                        card['questionFigureIncludesPrompt'] = False
                     pages = (P.document_pages if unit == '1'
-                             else [P.unit_pages[unit]])
+                             else unit_source_pages(P, unit))
                     card['sourceMaterial'] = source_material(
                         P, year, level, field, unit, pages,
                         'The documents' if unit == '1' else 'The extract',
@@ -589,12 +987,14 @@ def build():
                     # The marks the SEC prints inside a Part A line ("Sods
                     # (3M) and saplings (3M)") are rows, not one claim
                     # (hist_rows.py).
-                    card = split_priced(card)
+                    card = step_counted(split_priced(card))
                     # A row that is the scheme pricing an answer it does not
                     # print ("ONE valid reason", "ONE decision of the Synod of
                     # Thurles") says so, in the bank's fixed words.
                     for row in card['rows']:
-                        if TARIFF_WORDING.match(row['verbatim']):
+                        # An any-N group ("Any TWO" over its printed options)
+                        # prints its answers; only a plain row can lack one.
+                        if row['kind'] != 'anyN' and TARIFF_WORDING.match(row['verbatim']):
                             row['contextNote'] = ' — '.join(
                                 x for x in (row.get('contextNote'), NO_PRINTED_ANSWER) if x)
                     cards.append(card)
@@ -646,6 +1046,8 @@ def main():
               f'{len(tariffs["disagree"])} disagree')
         for d in tariffs['disagree'][:20]:
             print(f'   DISAGREE {d}')
+        for d in tariffs.get('derived', []):
+            print(f'   DERIVED {d}')
         print(f'extra Part A units: {len(extras)}, each filed under its '
               f"paper's own documents-question topic")
         for where, case in extras:

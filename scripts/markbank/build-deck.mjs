@@ -654,7 +654,9 @@ function historyEssayFault(c, scheme) {
     ...(cm.mode === 'paragraph'
       ? [cm.paragraphLead, ...cm.paragraphKinds, ...cm.bands.map(b => `${b.printed}${b.descriptor ? ` ${b.descriptor}` : ''}`)]
       : [cm.statementLead, ...cm.statementKinds, cm.procedureLead, ...cm.procedure]),
-    ...(cm.elementRule ? [cm.elementRule.note] : []),
+    // A note set out over several printed lines (2018 Q4's elements, then its
+    // ceiling under the CM and OE maxima) is traced a line at a time.
+    ...(cm.elementRule ? cm.elementRule.note.split('\n') : []),
     ...(oe ? [...oe.bands.map(b => `${b.printed}${b.descriptor ? ` ${b.descriptor}` : ''}`),
       ...[oe.definition, oe.lead, oe.directionsLead].filter(Boolean), ...oe.directions] : []),
   ];

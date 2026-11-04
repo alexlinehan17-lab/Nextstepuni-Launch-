@@ -1265,14 +1265,15 @@ const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith(
  * carded for the first time; and the one documents part priced by its split
  * alone becomes a point card. Every one is NEW: no id is replaced and the
  * frozen History set above is unchanged, so the additions are pinned on their
- * own below. */
+ * own below. The years before 2021 join the same way, a paper at a time,
+ * from 2020 back (lane batch 3). */
 const HISTORY_NEW_POINT_IDS = new Set(['hist-2021-ol-lm-s1-q3b']);
 const HISTORY_ADDITIONS = {
-  counts: [556, 415],
-  hashes: ['b143f766ea1b44785ca32b06a57afc86ca9f8f2e2ad0a7967298c36cc6f9ccac', '1bda5f378f0a6d67f0c84736551ed81e07446b6d38d00fe3265f1974914c9f31'],
+  counts: [1669, 2240],
+  hashes: ['e32ac5b14d170f4758690d5fa3b8affcbf9d84bae1395410070952f0b706c194', '3a5ff1d4e51cfe39ccdb7bb81bbbbeca40f5b58d9a3a664346212a119487d689'],
 };
 const historyEssayIds = new Set([...HISTORY_HIGHER, ...HISTORY_ORDINARY]
-  .filter(card => card.kind === 'rubric' || card.year === 2026 || HISTORY_NEW_POINT_IDS.has(card.id))
+  .filter(card => card.kind === 'rubric' || card.year === 2026 || card.year <= 2020 || HISTORY_NEW_POINT_IDS.has(card.id))
   .map(card => card.id));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
