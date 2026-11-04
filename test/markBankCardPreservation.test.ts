@@ -739,8 +739,9 @@ const decks = [
    * 2026-11-05, the every-printed-ask lane (compsci_lane.py, one module per
    * sitting): the 336 shipped cards are unchanged and keep their ids; each
    * sitting's open asks are added on top. 2026 Higher, 48 asks, 48 cards:
-   * 209 -> 257. 2026 Ordinary, 41 asks, 41 cards: 127 -> 168. */
-  ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 257, '1bc6503bab7f668c2e01e9920e2459389b6a34afdac01c8e42c46f5ef36465ee'],
+   * 209 -> 257. 2026 Ordinary, 41 asks, 41 cards: 127 -> 168.
+   * 2025 Higher, the 15 asks the August cards missed: 257 -> 272. */
+  ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 272, '87c71682d320cce48d8154991d3903b543f4e5cb8a1c4dcd34ddddbabd6a29a0'],
   ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 168, '3c88b330f1e7bf11ff50e63a574e03ef46089b20f0583906ece4a34ce40da8f2'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
    * so a later regeneration cannot silently omit or replace any of its cards. */
@@ -1438,6 +1439,7 @@ describe('Mark Bank card preservation', () => {
     // are unchanged and each sitting's open asks are carded on top, none
     // withdrawn. 2026 Higher, 48 asks, 48 cards: 23,391. 2026 Ordinary, 41
     // asks, 41 cards: 23,432.
+    // 2025 Higher residue, 15 asks, 15 cards: 23,447.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1454,9 +1456,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_432 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_447 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_432 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_447 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length

@@ -55791,5 +55791,85 @@
   "year": 2026,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Computer Science 2026 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-HL-paper-q3-table": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q3-table.png",
+  "md5": "441580172e17b46b3e96ab89a9a4ee92",
+  "alt": "The table printed with Question 3: Ranking 1 to 4 down the left, with columns Girl's Name and Project theme. Row 1's theme is filled in as Artificial intelligence and row 3's name as Grace; every other cell is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q3",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2025-HL-paper-q9-code": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q9-code.png",
+  "md5": "bf74fc9a22c30995d9e913e83c67f82b",
+  "alt": "The nine-line Python program printed with Question 9: For i in range(1, 21):, then if i % 3 == 0: print(\"Fizz\", elif i % 5 == 0: print(Buzz\"), elif i % 3 == 0 and i % 5 == 0: print(\"FizzBuzz\"), else (no colon) and print(number).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q9",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2025-HL-paper-q14b-code": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q14b-code.png",
+  "md5": "d3f0f013b366d8c92ea7fc6591f3ff9a",
+  "alt": "The six-line recursive program printed with Question 14(b): def recursive_gcd(a, b):, if b == 0: return a, return recursive_gcd(b, a%b), then print(\"The GCD is\", recursive_gcd(45, 18)).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q14(b)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2025-HL-scheme-q16a-i": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-scheme-q16a-i.png",
+  "md5": "c1b17099b30c693eda6fe1f109e84851",
+  "alt": "Lines 29 to 31 of the marking scheme's possible solution: arithmetic_mean = total/N (marked part ii), then arithmetic_mean = round(arithmetic_mean, 2), marked part i.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q16(a)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2025-HL-scheme-q16a-v": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-scheme-q16a-v.png",
+  "md5": "6156b962436e68926ed1fd42252868c0",
+  "alt": "Lines 40 to 45 of the marking scheme's possible solution: highest = max(results), lowest = min(results), then print(\"The lowest score is\", lowest) and print(\"The highest score is\", highest).",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q16(a)(v)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2025-HL-scheme-q16a-vi": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-scheme-q16a-vi.png",
+  "md5": "a7d8eb45728abd21459cfc87e232ed57",
+  "alt": "Lines 47 to 57 of the marking scheme's possible solution: a = 0 and b = 0, then a for loop over results adding 1 to a when result < 40 and to b when result >= 50 and result <= 79, then the two counts printed in their messages.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q16(a)(vi)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2025-HL-paper-q13-fig3": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q13-fig3.png",
+  "md5": "64818c30683612e2647ab1a55861d2f0",
+  "alt": "Figure 3: a photograph of a Re-turn reverse vending machine. A hand feeds a can into its round opening; a screen on the left reads Ireland's Deposit Return Scheme, Starting 1 February, and a panel on the right lists what to return.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q13(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission"
  }
 }

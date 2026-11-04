@@ -69,7 +69,9 @@ class LaneError(SystemExit):
 # private-use area still reaches build-deck, which refuses it.
 #   U+F0E0  Wingdings 0xE0, a right arrow: "1 -> 3 -> 4 -> 2", 2026 HL scheme
 #           p14 (Q14(a)(ii)), rendered at 288 dpi and looked at.
-LANE_GLYPHS = {'\uf0e0': '\u2192'}
+#   U+F0B7  Symbol 0xB7, a bullet: the papers' clue and rule lists (2025 HL
+#           Q3, Q9); glyphmap.json already reads it as U+2022.
+LANE_GLYPHS = {'\uf0e0': '\u2192', '\uf0b7': '\u2022'}
 
 
 def fold(text):
@@ -145,26 +147,26 @@ class Pair:
         self.label, self.value = label, value
 
 
-def pt(text, marks, note=None):
-    return {'kind': 'point', 'text': text, 'marks': marks, 'note': note}
+def pt(text, marks, note=None, route=None):
+    return {'kind': 'point', 'text': text, 'marks': marks, 'note': note, 'route': route}
 
 
 def allof(text, marks, note=None):
     return {'kind': 'allOf', 'text': text, 'marks': marks, 'note': note}
 
 
-def crit(text, marks, steps, note=None, head=None):
+def crit(text, marks, steps, note=None, head=None, route=None):
     """A judgement the scheme prices on printed steps ("Very good ... 3 marks /
     Fair ... 2 marks"). `steps` are the printed marks below the top one."""
     return {'kind': 'criterion', 'text': text, 'marks': marks, 'steps': steps,
-            'note': note, 'head': head}
+            'note': note, 'head': head, 'route': route}
 
 
-def anyn(options, claim, each, head, note=None, open_list=False, steps=None):
+def anyn(options, claim, each, head, note=None, open_list=False, steps=None, route=None):
     """A bounded choice: any `claim` of the scheme's `options`, `each` marks
     apiece (or `steps`, a descending ladder the scheme prints)."""
     return {'kind': 'anyN', 'options': options, 'claim': claim, 'each': each,
-            'head': head, 'note': note, 'open': open_list, 'steps': steps}
+            'head': head, 'note': note, 'open': open_list, 'steps': steps, 'route': route}
 
 
 def ask_row():
@@ -216,7 +218,7 @@ class Sitting:
                 d = self.docs.get(doc)
                 if d is None:
                     raise LaneError(f'{self.year} {self.level}: no {doc} booklet on disk')
-                self._page_text[key] = ws(d[page - 1].get_text())
+                self._page_text[key] = ws(fold(d[page - 1].get_text()))
         return self._page_text[key]
 
     def lift(self, item):
@@ -381,6 +383,8 @@ def build_row(sitting, spec, i, question_text, where):
             row['openList'] = True
         if spec.get('note'):
             row['contextNote'] = sitting.lift(spec['note'])
+        if spec.get('route'):
+            row['route'] = spec['route']
         return row
     text = sitting.lift(spec['text'])
     if spec.get('head') is not None:
@@ -396,6 +400,8 @@ def build_row(sitting, spec, i, question_text, where):
         row['permittedMarks'] = steps
     if spec.get('note'):
         row['contextNote'] = sitting.lift(spec['note'])
+    if spec.get('route'):
+        row['route'] = spec['route']
     return row
 
 
@@ -445,9 +451,15 @@ def build_card(sitting, mod, entry, figures):
     else:
         tariff_model = {'kind': 'fixed'}
         if not any(r.get('unprinted') or r.get('ask') for r in rows):
-            got = sum(row_worth(r) for r in rows)
-            if got != total:
-                raise LaneError(f'{where}: rows are worth {got}, the tariff is {total}')
+            common = sum(row_worth(r) for r in rows if not r.get('route'))
+            routes = {}
+            for r in rows:
+                if r.get('route'):
+                    routes[r['route']] = routes.get(r['route'], 0) + row_worth(r)
+            for name, worth in (routes or {None: 0}).items():
+                if common + worth != total:
+                    raise LaneError(f'{where}: rows are worth {common + worth}'
+                                    f'{" on route " + name if name else ""}, the tariff is {total}')
     if any(r.get('ask') for r in rows) and len(rows) == 1:
         rows[0]['marks'] = total
     if any(r.get('unprinted') for r in rows):

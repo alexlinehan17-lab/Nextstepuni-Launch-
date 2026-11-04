@@ -14502,5 +14502,580 @@
   "figureKey": "computer-science-2026-OL-scheme-q16b",
   "questionFigureKey": "computer-science-2026-OL-paper-q16b-output",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2025-hl-q3",
+  "topicId": "cs-1-1",
+  "conceptId": "four-girls-recently-competed-coding-hackathon",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2025 HL Q3",
+  "questionText": "Four girls recently competed in a coding hackathon, each creating a project with a unique theme. Each girl achieved a different ranking in the competition. Use the following clues to determine who created each project and where they came in the competition (ranking). • Clue 1: The person who completed an artificial intelligence project took first place. • Clue 2: Grace came third. • Clue 3: Ada's web development project was not last. • Clue 4: Kay beat the person who created an embedded system project. • Clue 5: The person who completed a data analytics project beat Joy. Write your answers in the table below. Clues 1 and 2 have already been answered. Space is provided for roughwork if you need it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 Kay Artificial intelligence",
+    "marks": 1,
+    "contextNote": "Each correct response 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "2 Ada Web development",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3 Grace Data analytics",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "criterion",
+    "verbatim": "4 Joy Embedded system",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
+   }
+  ],
+  "questionFigureKey": "computer-science-2025-HL-paper-q3-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2025-hl-q8",
+  "topicId": "cs-2-3",
+  "conceptId": "distinguish-between-ip-voip-communication-protocols",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2025 HL Q8",
+  "questionText": "Distinguish between the IP and VoIP communication protocols.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Internet Protocol (IP) is the general protocol used for sending all types of data in the form of packets over the internet (e.g. browsing websites and sending emails). • Voice over Internet Protocol (VoIP) is a specific application of IP used for voice and video communication (e.g. Zoom and WhatsApp).",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Very good distinction - clear understanding demonstrated 6 marks Good distinction - clear information, lacking demonstration of full understanding 4 marks Fair distinction – limited understanding 2 mark Award 1 mark each for correct protocol name only."
+   }
+  ]
+ },
+ {
+  "id": "cs-2025-hl-q9-b",
+  "topicId": "cs-2-5",
+  "conceptId": "logic-error-code-solution",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2025 HL Q9(b)",
+  "questionText": "Identify the logic error in the code and suggest a solution.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Logic error: The program never displays FizzBuzz as intended. This should happen when the loop counter variable, i is 15.",
+    "marks": 2,
+    "contextNote": "Logic error correctly identified 2 marks Suggested solution 2 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Suggested solution: Move the test for divisibility by both 3 and 5 (i.e. line 6) to the start of the if-statement (i.e. before the individual tests).",
+    "marks": 2
+   }
+  ],
+  "stem": "The intention of the Python code below is to scan through all integers from 1 to 20 inclusive and: • if the integer is evenly divisible by both 3 and 5, display the word FizzBuzz. • if the integer is evenly divisible by 3 and not divisible by 5 display the word Fizz. • if the integer is evenly divisible by 5 and not divisible by 3 display the word Buzz.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q9-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2025-hl-q12",
+  "topicId": "cs-2-3",
+  "conceptId": "central-processing-unit-cpu-often-referred",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2025 HL Q12",
+  "questionText": "The Central Processing Unit (CPU) is often referred to as the \"brain\" of the computer. Identify and state the purpose of two CPU components.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Identify and state the purpose of two CPU components.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Arithmetic Logic Unit (ALU): Performs arithmetic operations (e.g., addition, subtraction) and logical operations (e.g., AND, OR, NOT) necessary for processing instructions.",
+      "Control Unit (CU): Directs and coordinates the activities of the CPU by fetching, decoding, and executing instructions from memory. It ensures all CPU components work together efficiently.",
+      "Registers: Provide small, high-speed storage locations within the CPU to temporarily hold data, instructions, or addresses during processing.",
+      "Cache: Stores frequently accessed data and instructions close to the CPU to reduce latency and improve processing speed.",
+      "Program Counter (PC): Keeps track of the memory address of the next instruction to be executed, ensuring the CPU processes instructions in the correct sequence.",
+      "Clock: Generates a consistent timing signal (or \"clock pulse\") that synchronizes the operations of the CPU. It ensures that instructions are executed in a controlled, sequential manner by determining the speed at which the CPU processes data."
+     ]
+    },
+    "contextNote": "For each correctly identified CPU component 1 mark For each purpose: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
+   }
+  ]
+ },
+ {
+  "id": "cs-2025-hl-q13-a-i",
+  "topicId": "cs-1-3",
+  "conceptId": "project-manager-first-responsibilities-will-assemble",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2025 HL Q13(a)(i)",
+  "questionText": "As project manager one of your first responsibilities will be to assemble your project team. Identify two other roles on the project team and outline two responsibilities you would assign to each role.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Roles and Responsibilities:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "System architect: Defines the overall structure of the application (system components, protocols, etc.), decides on technology stack, promotes technologies.",
+      "Analyst: Identifies and collaborates with stakeholders to identify and document the system requirements, develops system use cases.",
+      "Designer: Designs the application e.g. pseudo-code, flowcharts, data flow diagrams, wireframes, implements prototypes, database design, produces design documents",
+      "Software developer: Writes the application code, implementation, unit testing, debugging.",
+      "Software tester: Tests the application code – unit test, system test, functional/non- functional testing, documents and tracks test results and status/progress.",
+      "UI/UX Designer: Create a user-friendly user interface for the application.",
+      "IT Support Technician: Provides ongoing technical support to resolve any technical issues faced by users of the system.",
+      "Any other valid role and associated responsibilities."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each role correctly identified 1 mark For each responsibility: Good explanation - clear understanding demonstrated 1 mark"
+   }
+  ],
+  "stem": "The Deposit Return Scheme (DRS) was introduced in Ireland in February 2024. It is designed to encourage recycling and reduce litter. Under this scheme, when a consumer buys a drink in a container with the Re-turn logo they are charged a small refundable deposit. The cost of the deposit depends on the size of the container. Containers can be returned using a Reverse Vending Machine (RVM), such as that shown in Figure 3. The RVM issues a voucher that can be redeemed at the till against store purchases or for a cash deposit refund. You are tasked with designing a software application that supports the DRS for a retail environment. The application should manage all stages of the lifecycle of drink containers.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q13-fig3",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2025-hl-q13-a-ii",
+  "topicId": "cs-1-3",
+  "conceptId": "once-have-project-team-place-will",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2025 HL Q13(a)(ii)",
+  "questionText": "Once you have the project team in place you will need to decide on a software development process. State the name of two software development processes available to you.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Any two from the following:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Waterfall/Staged.",
+      "Agile/Iterative.",
+      "Any valid software development process/methodology."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each correct response 1 mark"
+   }
+  ],
+  "stem": "The Deposit Return Scheme (DRS) was introduced in Ireland in February 2024. It is designed to encourage recycling and reduce litter. Under this scheme, when a consumer buys a drink in a container with the Re-turn logo they are charged a small refundable deposit. The cost of the deposit depends on the size of the container. Containers can be returned using a Reverse Vending Machine (RVM), such as that shown in Figure 3. The RVM issues a voucher that can be redeemed at the till against store purchases or for a cash deposit refund. You are tasked with designing a software application that supports the DRS for a retail environment. The application should manage all stages of the lifecycle of drink containers.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q13-fig3",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2025-hl-q13-a-iii",
+  "topicId": "cs-1-3",
+  "conceptId": "choose-software-development-process-should-project",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2025 HL Q13(a)(iii)",
+  "questionText": "Choose the software development process that should be used for this project and justify your choice by describing two key features of the methodology you chose.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Option 1: Waterfall/Staged",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Highly structured, follows a sequence of phases e.g. analysis, design, implementation, deployment and maintenance.",
+      "Each phase must be completed before moving to the next, ensuring a structured and predictable process.",
+      "Comprehensive documentation such as requirements specifications, design plans, test cases.",
+      "Suitable for large projects when requirements are unlikely to change."
+     ]
+    },
+    "contextNote": "For each feature: Very good justification - clear understanding demonstrated 2 marks Fair justification – limited understanding 1 mark",
+    "route": "Option 1: Waterfall/Staged"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Option 2: Agile/Iterative",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Less structured/more flexible, breaks project into smaller iterations called sprints.",
+      "Functional components are delivered incrementally.",
+      "Customer collaboration throughout the project lifecycle.",
+      "Very responsive to dynamic/changing requirements."
+     ]
+    },
+    "contextNote": "For each feature: Very good justification - clear understanding demonstrated 2 marks Fair justification – limited understanding 1 mark",
+    "route": "Option 2: Agile/Iterative"
+   }
+  ],
+  "stem": "The Deposit Return Scheme (DRS) was introduced in Ireland in February 2024. It is designed to encourage recycling and reduce litter. Under this scheme, when a consumer buys a drink in a container with the Re-turn logo they are charged a small refundable deposit. The cost of the deposit depends on the size of the container. Containers can be returned using a Reverse Vending Machine (RVM), such as that shown in Figure 3. The RVM issues a voucher that can be redeemed at the till against store purchases or for a cash deposit refund. You are tasked with designing a software application that supports the DRS for a retail environment. The application should manage all stages of the lifecycle of drink containers.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q13-fig3",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2025-hl-q13-b-iv",
+  "topicId": "cs-1-2",
+  "conceptId": "ways-artificial-intelligence-ai-technology-could",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2025 HL Q13(b)(iv)",
+  "questionText": "Suggest two ways artificial intelligence (AI) technology could be used in the DRS application.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Any two of the following:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Automated image recognition for bottle scanning.",
+      "Demand prediction for collection logistics.",
+      "Predictive maintenance for return machines.",
+      "Personalised incentives to engage users.",
+      "Data analysis (e.g. for environmental impact reporting).",
+      "Any other valid way AI could be used in the DRS application e.g. chatbot feature."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each suggestion Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 marks"
+   }
+  ],
+  "stem": "You have identified store staff and customers as two key stakeholders in the system."
+ },
+ {
+  "id": "cs-2025-hl-q14-a-iii",
+  "topicId": "cs-2-2",
+  "conceptId": "implementation-uses-while-loop-loop-would",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2025 HL Q14(a)(iii)",
+  "questionText": "This implementation uses a while loop. Explain why a for loop would not be suitable for this algorithm.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Explain why a for loop would not be suitable for this algorithm.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "The number of iterations is not known in advance of running the algorithm.",
+      "The number of iterations required can vary depending on the arguments passed into the function gcd."
+     ]
+    },
+    "contextNote": "Very good explanation - clear understanding demonstrated 4 marks Fair explanation – limited understanding 2 marks"
+   }
+  ],
+  "stem": "The Greatest Common Divisor (GCD) of two integers a and b is the largest number that divides into both with no remainder. One of the oldest and most famous algorithms was first described by Greek mathematician, Euclid, in his book of Elements written around 300BC. The code snippet below is an implementation of Euclid’s algorithm using subtraction to find the GCD of 45 and 18.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q14-code0",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2025-hl-q14-b-ii",
+  "topicId": "cs-2-2",
+  "conceptId": "use-variable-b-expression-b-line",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2025 HL Q14(b)(ii)",
+  "questionText": "Explain the use of the variable b and the expression a%b on line 4 of the code.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The variable b: — This is the first argument (parameter/value) passed into the function as a. (Within the function b determines whether the base case (b == 0) is reached).",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "For each answer: Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 marks"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "The expression a%b: — This is the second argument (parameter/value) passed into the function as b. It computes the remainder when a is divided by b. The remainder becomes the new value of b in the next recursive call. (Within the function its use is to reduce the problem size by applying the principle that the GCD of two numbers (a and b) is the same as the GCD of b and the remainder of a % b).",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "For each answer: Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 marks"
+   }
+  ],
+  "stem": "The code below shows a recursive implementation to find the GCD of two integers.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q14b-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2025-hl-q15-a-ii",
+  "topicId": "cs-3-3",
+  "conceptId": "names-input-variables",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2025 HL Q15(a)(ii)",
+  "questionText": "State the names of two input variables.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Input variables: Any two from",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "GENDER",
+      "AGE",
+      "TRANSMISSION",
+      "INSTRUCTOR EXPERIENCE (Years)"
+     ]
+    },
+    "contextNote": "For each correct response 1 mark"
+   }
+  ],
+  "stem": "Modelling and simulation are essential tools for understanding and solving complex real-world problems. These approaches often involve breaking down systems, identifying key components, and examining how changes can influence outcomes. Consider the dataset shown in Figure 5 below which is being used by a computer science student as part of her Applied Learning Task 3 (modelling and simulation) to model driving test outcomes.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q15-fig0",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2025-hl-q15-c-i",
+  "topicId": "cs-3-3",
+  "conceptId": "agent-based-modelling-could-simulate-disease",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2025 HL Q15(c)(i)",
+  "questionText": "Describe how agent-based modelling could be used to simulate disease spread in this scenario.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Each student and teacher could be modelled as an agent with attributes (e.g., vaccination, infection rate etc.). Agents could be made to interact in different locations (e.g., classroom, canteen etc) and the model rule could be used to simulate infection spread (e.g., contact duration, mask-wearing etc).",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks"
+   }
+  ],
+  "stem": "A health agency wants to predict how an infectious disease might spread in a school and evaluate different containment strategies."
+ },
+ {
+  "id": "cs-2025-hl-q16-a-i",
+  "topicId": "cs-2-2",
+  "conceptId": "round-mean-percentage-decimal-places-when",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2025 HL Q16(a)(i)",
+  "questionText": "Round the mean percentage to two decimal places. When the program is run the output should now look as follows: The mean percentage mark is 61.78",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "(i) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Response with some merit Any other reasonable attempt."
+   }
+  ],
+  "stem": "Line 15 of the program initialises a list called results with nine values. Each value represents a percentage mark obtained by an individual student in nine class tests all in the same subject. The final percentage for the subject is calculated by averaging the nine results. The for loop adds up the values in results and stores the answer in the variable called total. Line 24 of the program calculates the mean (average) of all the results by dividing total by 9. The mean is saved in the variable called arithmetic_mean. When the program is run it displays the following message: The mean percentage mark is 61.77777777777778",
+  "figureKey": "computer-science-2025-HL-scheme-q16a-i",
+  "questionFigureKey": "computer-science-2025-HL-paper-q16-code0",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2025-hl-q16-a-v",
+  "topicId": "cs-2-2",
+  "conceptId": "add-code-so-program-finds-lowest",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2025 HL Q16(a)(v)",
+  "questionText": "Add code so that the program finds the lowest and highest scores in results. The program should display this information in two separate messages such as: The lowest score is [lowest score] The highest score is [highest score] When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit The lowest score is 32 The highest score is 88",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     5
+    ],
+    "contextNote": "(v) 5 marks (C-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 2 marks Response with some merit Any other reasonable attempt."
+   }
+  ],
+  "stem": "Line 15 of the program initialises a list called results with nine values. Each value represents a percentage mark obtained by an individual student in nine class tests all in the same subject. The final percentage for the subject is calculated by averaging the nine results. The for loop adds up the values in results and stores the answer in the variable called total. Line 24 of the program calculates the mean (average) of all the results by dividing total by 9. The mean is saved in the variable called arithmetic_mean. When the program is run it displays the following message: The mean percentage mark is 61.77777777777778",
+  "figureKey": "computer-science-2025-HL-scheme-q16a-v",
+  "questionFigureKey": "computer-science-2025-HL-paper-q16-code0",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2025-hl-q16-a-vi",
+  "topicId": "cs-2-2",
+  "conceptId": "add-features-count-many-scores-results",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2025 HL Q16(a)(vi)",
+  "questionText": "Add two features to count how many scores in results are a) less than 40 and b) between 50 and 79 inclusive. The program should display both counts in two separate messages such as: The number of scores below 40 is [count1] The number of scores between 50 and 79 inclusive is [count2] When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit The lowest score is 32 The highest score is 88 The number of scores below 40 is 2 The number of scores between 50 and 79 inclusive is 5",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     7,
+     10
+    ],
+    "contextNote": "(vi) 10 marks (D-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 7 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 5 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error. 3 marks Response with some merit Any other reasonable attempt."
+   }
+  ],
+  "stem": "Line 15 of the program initialises a list called results with nine values. Each value represents a percentage mark obtained by an individual student in nine class tests all in the same subject. The final percentage for the subject is calculated by averaging the nine results. The for loop adds up the values in results and stores the answer in the variable called total. Line 24 of the program calculates the mean (average) of all the results by dividing total by 9. The mean is saved in the variable called arithmetic_mean. When the program is run it displays the following message: The mean percentage mark is 61.77777777777778",
+  "figureKey": "computer-science-2025-HL-scheme-q16a-vi",
+  "questionFigureKey": "computer-science-2025-HL-paper-q16-code0",
+  "questionFigureIncludesPrompt": false
  }
 ]
