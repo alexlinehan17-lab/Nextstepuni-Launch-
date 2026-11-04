@@ -56593,5 +56593,95 @@
     "year": 2016,
     "level": "higher",
     "attribution": "SEC Leaving Certificate Economics 2016 Higher Level — © State Examinations Commission"
+  },
+  "economics-2016-OL-scheme-p10-q1a-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2016-OL-scheme-p10-q1a-diagram.png",
+    "md5": "14176882e08cf2f2af7438027f9af333",
+    "alt": "The marking scheme’s completed diagram: P against Q, a horizontal line D = AR = MR, a U-shaped AC curve touching it at G and an MC curve rising through G. The line is marked P1 on the price axis, and an arrow runs down from G to Q1.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2016 OL Section B Q1(a)(ii)",
+    "year": 2016,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2016 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2016-OL-scheme-p13-q2a-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2016-OL-scheme-p13-q2a-diagram.png",
+    "md5": "672d0d6e2241ec6a9ffc580fc5a0711d",
+    "alt": "The marking scheme’s completed diagram: Price on the vertical axis and Quantity on the horizontal, a falling Demand curve and a rising supply curve crossing where an arrow runs left to P1 and an arrow runs down to Q1.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2016 OL Section B Q2(a)",
+    "year": 2016,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2016 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2016-OL-paper-p02-q2-table": {
+    "src": "/exam-figures/economics/markbank/economics-2016-OL-paper-p02-q2-table.png",
+    "md5": "39423310734b487e9e806f78e3ac7bf4",
+    "alt": "A table to tick: four statements, each with a box under Embargo, Quota, Tariff and Subsidy. The statements: A tax on goods imported into the country; A complete ban on the importation of certain goods; A physical limit placed by the government on the amount of goods that can be imported; Any payment or assistance given by the government to Irish producers of goods or services.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2016 OL Section A Q2",
+    "year": 2016,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2016 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2016-OL-paper-p02-q3-table": {
+    "src": "/exam-figures/economics/markbank/economics-2016-OL-paper-p02-q3-table.png",
+    "md5": "eaca1d6167d9ae382e5c5f3ff1b37d34",
+    "alt": "A table: Number of units consumed 1 to 6; Total utility in units 15, 40, 70, 85, 95, 100; Marginal utility in units 15, 25, blank, 15, blank, blank.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2016 OL Section A Q3",
+    "year": 2016,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2016 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2016-OL-paper-p03-q5-lists": {
+    "src": "/exam-figures/economics/markbank/economics-2016-OL-paper-p03-q5-lists.png",
+    "md5": "0d79a3b6b69279fb9e7436424ec67e2b",
+    "alt": "Two lists. Economic Idea: A The Multiplier; B Law of Comparative Advantage; C Laissez Faire; D Worker exploitation in a capitalist system. Economist: 1 Karl Marx; 2 Adam Smith; 3 John Maynard Keynes; 4 David Ricardo.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2016 OL Section A Q5",
+    "year": 2016,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2016 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2016-OL-paper-p04-q9-table": {
+    "src": "/exam-figures/economics/markbank/economics-2016-OL-paper-p04-q9-table.png",
+    "md5": "23be265085e0cd4d2c6540a9a9668f25",
+    "alt": "The printed formula, ∆Q over ∆Y times Y1 + Y2 over Q1 + Q2, and a table of its six symbols: ∆Q, ∆Y, Y2 and Q1 blank; Y1 Consumer’s original income; Q2 New quantity demanded of the good.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2016 OL Section A Q9",
+    "year": 2016,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2016 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2016-OL-paper-p05-q1-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2016-OL-paper-p05-q1-diagram.png",
+    "md5": "651d8dd5f86e8df1d999573a3d3b3516",
+    "alt": "A diagram with P on the vertical axis and Q on the horizontal: a horizontal line labelled D = AR = MR, a U-shaped AC curve touching it at G and an MC curve rising through G. The labels P, MC, AC, AR, MR and Q are underlined.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2016 OL Section B Q1(a)",
+    "year": 2016,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2016 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2016-OL-paper-p06-q2a-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2016-OL-paper-p06-q2a-diagram.png",
+    "md5": "b5d3106b002d2762ca6f4d39656285cb",
+    "alt": "A diagram: a vertical axis numbered 1 and a horizontal axis numbered 2, a rising line labelled Supply and a falling line numbered 3 crossing it.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2016 OL Section B Q2(a)",
+    "year": 2016,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2016 Ordinary Level — © State Examinations Commission"
   }
 }

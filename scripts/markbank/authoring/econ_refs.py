@@ -149,6 +149,10 @@ HAND_CHECKED = {
     'econ-2016-hl-sa-q7-a',           # 2016 HL p4: "(a) Define the term monetary policy." (five words)
     'econ-2016-hl-sb-q5-a-i',         # 2016 HL p7: "(i) Define the term full employment." (five words)
     'econ-2016-hl-sb-q6-a-i',         # 2016 HL p7: "(i) Explain the term exchange rate." (five words)
+    'econ-2016-ol-sa-q4-b',           # 2016 OL p3: "(b) Profit made on sales." (four words)
+    'econ-2016-ol-sa-q7-a',           # 2016 OL p4: "(a) Explain the term branding." (four words)
+    'econ-2016-ol-sa-q8-a',           # 2016 OL p4: "(a) Explain the term black economy." (five words)
+    'econ-2016-ol-sb-q1-b-i',         # 2016 OL p5: "(i) Explain the underlined term." (four words; the only one on p5)
 }
 
 

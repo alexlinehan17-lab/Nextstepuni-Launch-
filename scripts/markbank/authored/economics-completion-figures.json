@@ -5961,5 +5961,181 @@
     },
     "lettersVisible": [],
     "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-OL-scheme-p10-q1a-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2016 OL Section B Q1(a)(ii)",
+    "description": "The marking scheme’s completed diagram: P against Q, a horizontal line D = AR = MR, a U-shaped AC curve touching it at G and an MC curve rising through G. The line is marked P1 on the price axis, and an arrow runs down from G to Q1.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2016/LC034GLP000EV.pdf",
+      "page": 10,
+      "rectPoints": [
+        100,
+        120,
+        535,
+        330
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-OL-scheme-p13-q2a-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2016 OL Section B Q2(a)",
+    "description": "The marking scheme’s completed diagram: Price on the vertical axis and Quantity on the horizontal, a falling Demand curve and a rising supply curve crossing where an arrow runs left to P1 and an arrow runs down to Q1.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2016/LC034GLP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        150,
+        288,
+        460,
+        462
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-OL-paper-p02-q2-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2016 OL Section A Q2",
+    "description": "A table to tick: four statements, each with a box under Embargo, Quota, Tariff and Subsidy. The statements: A tax on goods imported into the country; A complete ban on the importation of certain goods; A physical limit placed by the government on the amount of goods that can be imported; Any payment or assistance given by the government to Irish producers of goods or services.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2016/LC034GLP000EV.pdf",
+      "page": 2,
+      "rectPoints": [
+        55,
+        248,
+        560,
+        484
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-OL-paper-p02-q3-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2016 OL Section A Q3",
+    "description": "A table: Number of units consumed 1 to 6; Total utility in units 15, 40, 70, 85, 95, 100; Marginal utility in units 15, 25, blank, 15, blank, blank.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2016/LC034GLP000EV.pdf",
+      "page": 2,
+      "rectPoints": [
+        55,
+        552,
+        560,
+        613
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-OL-paper-p03-q5-lists.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2016 OL Section A Q5",
+    "description": "Two lists. Economic Idea: A The Multiplier; B Law of Comparative Advantage; C Laissez Faire; D Worker exploitation in a capitalist system. Economist: 1 Karl Marx; 2 Adam Smith; 3 John Maynard Keynes; 4 David Ricardo.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2016/LC034GLP000EV.pdf",
+      "page": 3,
+      "rectPoints": [
+        55,
+        378,
+        520,
+        470
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-OL-paper-p04-q9-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2016 OL Section A Q9",
+    "description": "The printed formula, ∆Q over ∆Y times Y1 + Y2 over Q1 + Q2, and a table of its six symbols: ∆Q, ∆Y, Y2 and Q1 blank; Y1 Consumer’s original income; Q2 New quantity demanded of the good.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2016/LC034GLP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        55,
+        532,
+        560,
+        724
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-OL-paper-p05-q1-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2016 OL Section B Q1(a)",
+    "description": "A diagram with P on the vertical axis and Q on the horizontal: a horizontal line labelled D = AR = MR, a U-shaped AC curve touching it at G and an MC curve rising through G. The labels P, MC, AC, AR, MR and Q are underlined.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2016/LC034GLP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        100,
+        215,
+        540,
+        402
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2016-OL-paper-p06-q2a-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2016 OL Section B Q2(a)",
+    "description": "A diagram: a vertical axis numbered 1 and a horizontal axis numbered 2, a rising line labelled Supply and a falling line numbered 3 crossing it.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2016/LC034GLP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        175,
+        65,
+        395,
+        220
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
   }
 ]

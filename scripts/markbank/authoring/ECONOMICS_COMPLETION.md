@@ -1900,3 +1900,70 @@ Checks:
 - reconcile: 1,333/2,197, with 2016 HL at 63/63.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2016 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 40 scheme pages were viewed:
+- paper pp10-12 are blank;
+- scheme pp1-4 are the covers, the note on published schemes, the title page
+  and the notes and index, and pp37-40 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 81 routes for the 82 printed asks (15 in Section A, 67 in Section B):
+- A Q6(a)-(b) is one card. The scheme prices the reason of (a) and the
+  measure of (b) on one ladder, 10 for the first correct response and 7 for
+  the second.
+- B1(b)(ii)-(iii) is one card. The scheme answers both under one "(ii) &
+  (iii)" head, 2 x 8 (state 4 + explain 4), and names the characteristics
+  only.
+- B5(a)(iii) has FOR and AGAINST routes, each credited with its own list.
+
+8 crops: 2 hidden scheme solutions and 6 paper data crops. None is a whole
+question.
+
+Decisions:
+- First-correct-response ladders are claimed at their printed steps:
+  - A Q1 8 + 4 + 4.
+  - A Q2 and A Q5 8 + 4 + 2 + 2.
+  - A Q8(b) 8 + 4.
+  - A Q9 8 + 3 + 3 + 3, over the four symbols the paper leaves blank. It prints
+    Y1 and Q2.
+- A Q4's figures are claimed one by one, as "Each correct figure" prices them:
+  (a) 5 x 2, (b) 3 x 1 and (c) 3 x 1.
+- B2(a)(i) and (ii) are a card each. The scheme's item table prices each label
+  (2) and each equilibrium mark (2) on its own row, though one graph answers
+  both.
+- B2(b): one card per question, a row per factor, from the scheme's two-column
+  table.
+- B5(a)(i): each tax's explanation 3 and an example 2, the examples a menu.
+- B5(b)(ii), B4(a)(iv) and B8(b)(ii): a heading row per printed category, any
+  one of its responses.
+- B7(c)(i): the EU 4 and GDP 6, the scheme's "10marks (4+6)" in the order
+  printed.
+- B8(b)(iii): any acceptable infrastructure 4 (the scheme's four as examples)
+  and a reason 4, each reason named by its example.
+- B8(c) "any three of four groups" is one card, claimed three times at 8.
+- Six asks print "Explain the underlined term." three times on one page. The
+  stem is folded into each so the card names its term. Refcheck places all
+  six.
+- A Q1 sets the paper's ruled blanks as ellipses, so the statement still reads
+  as one to complete.
+- B1(c)(ii) "raise the legal age ... to 21." is sliced whole. The shared
+  trailing-numeral cut would take "21." for a list number.
+
+Refcheck: four short asks were read by hand.
+
+Topic review: 9 reference anomalies, each recorded with the review's reason
+(5 are acronyms and formulas study-aid headings). B8 also files under
+government intervention, as 2016 HL B7(c) does, for the government's
+environmental taxes, grants and subsidies.
+
+Checks:
+- econ_review: 27/66.
+- build: 1,476 cards, 0 dropped.
+- Build rule: 376 claims on this paper, 0 untraceable (49 trace by halves).
+- reconcile: 1,415/2,197, with 2016 OL at 82/82.
+- refcheck: 0 wrong.
+- cardlint: clean.

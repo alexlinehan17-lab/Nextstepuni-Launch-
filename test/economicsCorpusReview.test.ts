@@ -17,6 +17,7 @@ import ordinary2018Review from '../scripts/markbank/authoring/reviews/economics-
 import higher2017Review from '../scripts/markbank/authoring/reviews/economics-2017-hl-ev.json';
 import ordinary2017Review from '../scripts/markbank/authoring/reviews/economics-2017-ol-ev.json';
 import higher2016Review from '../scripts/markbank/authoring/reviews/economics-2016-hl-ev.json';
+import ordinary2016Review from '../scripts/markbank/authoring/reviews/economics-2016-ol-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -326,10 +327,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    // Old syllabus: 2016 Higher, 2017, 2018 and 2019 Higher and Ordinary and 2020 Higher English (reviewed variants 19-26).
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(40);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(46);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(26);
+    // Old syllabus: 2016-2019 Higher and Ordinary and 2020 Higher English (reviewed variants 19-27).
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(39);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(45);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(27);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -1258,6 +1259,67 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
     // The scheme's text layer sets its bullets as U+0002; none reaches a card.
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '\u0002']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 81 independently counted 2016 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2016);
+    const tasks = ordinary2016Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(81);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2016Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2016, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2016 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with the B5(a)(iii) for/against stance counted once.
+      const once = question.tasks.filter(task => !task.cardId.endsWith('-against'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2016 Ordinary ladders at their printed steps and keeps shared tariffs on one card', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2016-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // First-correct-response ladders, each at its printed steps.
+    expect(card('sa-q1').rows[0].group!.perOptionSteps).toEqual([8, 4, 4]);
+    expect(card('sa-q2').rows[0].group!.perOptionSteps).toEqual([8, 4, 2, 2]);
+    expect(card('sa-q5').rows[0].group!.perOptionSteps).toEqual([8, 4, 2, 2]);
+    expect(card('sa-q8-b').rows[0].group!.perOptionSteps).toEqual([8, 4]);
+    expect(card('sa-q9').rows[0].group!.perOptionSteps).toEqual([8, 3, 3, 3]);
+    // One ladder over two parts, and one head over two parts: one card each, citing both.
+    expect(card('sa-q6').questionRef).toBe('2016 OL Section A Q6(a)–(b)');
+    expect(card('sa-q6').rows[0].group!.perOptionSteps).toEqual([10, 7]);
+    expect(card('sb-q1-b-ii').questionRef).toBe('2016 OL Section B Q1(b)(ii)–(iii)');
+    // The paper prints Y1 and Q2; only the four blank symbols are claimed.
+    expect(card('sa-q9').rows[0].group!.options.map(o => o.split(' — ')[0])).toEqual(['∆Q', '∆Y', 'Y2', 'Q1']);
+    // The scheme's item table prices each label and equilibrium mark on its own.
+    expect(card('sb-q2-a-i').rows.map(r => r.marks)).toEqual([2, 2, 2]);
+    expect(card('sb-q2-a-ii').rows.map(r => r.marks)).toEqual([2, 2]);
+    expect(card('sb-q2-b-i').rows.map(r => r.verbatim)).toEqual([
+      'Income levels in the economy fall — Demand Curve', 'The firm’s production technology improves — Supply Curve']);
+    expect(card('sb-q1-c-ii').rows[0].group!.options).toContain('Age restrictions: raise the legal age for the consumption of alcohol to 21.');
+    for (const c of ORDINARY.filter(item => item.year === 2016 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = ORDINARY.filter(c => c.year === 2016)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '', 'jus- tify']) {
       expect(text, junk).not.toContain(junk);
     }
   });

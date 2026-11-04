@@ -173,12 +173,19 @@ describe('Economics exam-topic registry', () => {
       // Higher review added five: Section A Q5(a) and (b) under government
       // intervention (youth unemployment is employment), Q5(b) under national
       // income, Q4 under market structures (economies of scale are costs) and
-      // Q9 under fiscal policy (the minimum wage is the labour market).
-      matchedAssociations: 758,
-      referenceAnomalyAssociations: 145,
+      // Q9 under fiscal policy (the minimum wage is the labour market). The
+      // 2016 Ordinary review added nine: Section B Q6 and Q7 under acronyms
+      // and Section A Q4 and Q9 and Section B Q7 under formulas (study-aid
+      // headings); Section A Q1 under the labour market (land is a factor of
+      // production), Q2 under globalisation (protection is international
+      // trade), Q8 under government intervention (the black economy is
+      // national income) and Section B Q3 under growth and development (the
+      // minimum wage and conferences are filed under their own topics).
+      matchedAssociations: 749,
+      referenceAnomalyAssociations: 154,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 682,
+      matchedQuestionTopicLinks: 673,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

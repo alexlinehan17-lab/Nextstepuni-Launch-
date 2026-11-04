@@ -2,7 +2,7 @@
   "subjectId": "economics",
   "authority": "SEC question paper; canonical curriculum node IDs",
   "reviewedAt": "2026-11-04",
-  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2016 Higher, 2017, 2018 and 2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 40 physical variants pending.",
+  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2016, 2017, 2018 and 2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 39 physical variants pending.",
   "questions": [
     {
       "level": "higher",
@@ -7116,6 +7116,282 @@
       ],
       "reason": "Economic growth is Economic Growth (3-5), the price level and interest rates Monetary Policy & Inflation (3-3), unemployment Employment & Unemployment (3-2); the budget deficit, gross debt and their costs are Fiscal Policy & the Budget (3-1); an urbanising population is Economic Growth (3-5), as population change is filed. Seven cards for four asks, totalling 75. a 4 x 5, one card for each printed area, each 2 (approximate figure) + 3 (trend 1 + comment 2) with no row the scheme ties them to: questionTotal, unpriced rows. b(i) 3 x 7 (3 + 4), at least one under each of the budget deficit and gross debt heads; b(ii) 2 x 7 (3 + 4) from four. c 4 x 5 (2 + 3), at least one positive and one negative.",
       "paperSha256": "977d09c938adfcd0b5bad113c246ec4bae1f3856362a1ef3d1be3e22cfaecabe"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "1",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-0-1"
+      ],
+      "reason": "Land as a factor of production and its return are Scarcity & Choice (0-1). 8 + 4 + 4 the three blanks (NATURE, GOODS, RENT), the first correct response 8: one card.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "2",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-4-2"
+      ],
+      "reason": "Tariffs, quotas, embargoes and subsidies are International Trade & Competitiveness (4-2). 8 + 4 + 2 + 2 the four ticks, the first correct response 8: one card.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "3",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-1-1"
+      ],
+      "reason": "Total and marginal utility are The Consumer (1-1). a 4 + 4 + 4 the three blank figures; b 4 the explanation.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "4",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-1-5"
+      ],
+      "reason": "Total cost, profit and average cost are Costs of Production, Revenue & Profit (1-5). a 5 x 2 the four costs and their total; b 3 x 1 the sales, the cost and the profit; c 3 x 1 the cost, the output and the average cost.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "5",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-0-0"
+      ],
+      "reason": "Economists and their ideas are Economics as a Way of Thinking (0-0). 8 + 4 + 2 + 2 the four matches (A 3, B 4, C 2, D 1), the first correct response 8: one card.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "6",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-1-3"
+      ],
+      "reason": "Homelessness and measures against it are Fiscal Policy & the Budget (3-1), as 2018 OL files them, and as intervention in the housing market Government Intervention (1-3). One card for both asks: the scheme prices the reason of (a) and the measure of (b) on one ladder, 10 for the first correct response and 7 for the second, so neither part has a price of its own.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "7",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-1-3"
+      ],
+      "reason": "Branding is product differentiation, Market Structures (2-0); plain packaging is Government Intervention (1-3). a 10 the explanation; b 7 one reason from four.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "8",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-3-1"
+      ],
+      "reason": "The black economy is National Income (3-0), as the shadow economy is filed; its effect on tax revenue is also Fiscal Policy & the Budget (3-1). a 5 the explanation; b 8 + 4 one effect on the government and one on businesses, the first correct response 8.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "9",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-1-4"
+      ],
+      "reason": "Income elasticity of demand is Elasticity (1-4). 8 + 3 + 3 + 3 the four symbols the paper leaves blank (the paper prints Y1 and Q2), the first correct response 8.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "B1",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-1-3"
+      ],
+      "reason": "Perfect competition is Market Structures (2-0); the alcohol advertising ban and other measures are Government Intervention (1-3). Seven cards for eight asks, totalling 75. a(i) 6 @ 4 the six labels; a(ii) 3 + 3 P1 and Q1 (hidden solution diagram). b(i) 4; b(ii) and (iii) share one 2 x 8 (state 4 + explain 4), a characteristic with its note, under the scheme’s \"(ii) & (iii)\" head: one card covers both. c(i) 5 (2 + 3) from four; c(ii) 2 x 5 (2 + 3) from nine; c(iii) 2 x 5 (2 + 3) from seven.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "B2",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-1-0",
+        "economics-0-2",
+        "economics-1-3",
+        "economics-3-4"
+      ],
+      "reason": "Demand, supply and their shifts are The Market Economy (1-0); the advantages of electric cars are Sustainability (0-2), the measures to encourage them Government Intervention (1-3); commercial and electronic banking are Financial Sector (3-4). Ten tasks totalling 75. a(i) 3 x 2 the three lines; a(ii) 2 + 2 P1 and Q1 (the scheme’s item table prices each; hidden solution diagram); a(iii) 2 x 5 (2 + 3) from four; a(iv) 5 (2 + 3) from seven. b one column per factor: (i) which curve 4 + 4; (ii) which way 3 + 3; (iii) why 3 + 3. c(i) 2 x 5 (2 + 3) from six; c(ii) 2 x 5 from seven; c(iii) 2 x 5 from five.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "B3",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-0-1",
+        "economics-2-1",
+        "economics-4-2"
+      ],
+      "reason": "The factors of production and the entrepreneur are Scarcity & Choice (0-1); the national minimum wage is The Labour Market (2-1); international conferences and their visitors are International Trade & Competitiveness (4-2), as tourist numbers are filed. Seven tasks totalling 75. a(i) 3 + 3 each for labour and capital; a(ii) 2 x 6 (3 + 3) from five. b(i) 7 (4 + 3); b(ii) 2 x 5 (2 + 3) from five; b(iii) 2 x 5 (2 + 3) from six. c(i) 2 x 6 (3 + 3) from four; c(ii) 2 x 6 (3 + 3) from five.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "B4",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-3-5",
+        "economics-1-0",
+        "economics-4-0",
+        "economics-0-0"
+      ],
+      "reason": "The CSO is National Income (3-0), as 2017 and 2018 OL file it; the census, its uses and a changing population are Economic Growth (3-5), and the census data’s uses also Economics as a Way of Thinking (0-0); a centrally planned economy is The Market Economy (1-0); LDCs and their difficulties are Growth & Development (4-0). Ten tasks totalling 75. a(i) 5; a(ii) 5; a(iii) 5 one item from four; a(iv) 2 x 5 (3 + 2), one use for businesses from three and one for the government from five: two heading rows. b(i) 5; b(ii) 2 x 5 (3 + 2) from five; b(iii) 2 x 5 (3 + 2) from four. c(i) 5 (3 + 2); c(ii) 2 x 5 (3 + 2) from nine; c(iii) 2 x 5 (3 + 2) from five.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "B5",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        8
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-1-3",
+        "economics-3-2"
+      ],
+      "reason": "Direct and indirect taxes, the uses of tax revenue and the USC are Fiscal Policy & the Budget (3-1); a sugar tax is Government Intervention (1-3); unemployment and youth unemployment are Employment & Unemployment (3-2). Eight tasks totalling 75. a(i) direct and indirect taxes, each 3 the explanation + 2 an example; a(ii) 2 x 5 (2 + 3) from eight; a(iii) 2 x 5 (2 + 3) for OR against: the scheme credits each side with its own list, so one route per side, counted once. b(i) 5; b(ii) 3 x 5 (state 2 + explain 3), one effect each for employees, imports and employment: three heading rows. c(i) 6; c(ii) 2 x 7 (4 + 3) from seven; c(iii) 5 (3 + 2) from six.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "B6",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        8
+      ],
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-4-1"
+      ],
+      "reason": "Imports and tourism are International Trade & Competitiveness (4-2); multinational companies are Globalisation (4-1). Nine tasks totalling 75. a(i) 5 + 5 visible and invisible imports; a(ii) 2 x 5 (2 + 3) from five. b(i) 2 x 5 (2 + 3) from six; b(ii) 2 x 5 (2 + 3) from four; b(iii) 5 (2 + 3) from four. c(i) 6; c(ii) 6 one MNC from the scheme’s list; c(iii) 6 (3 + 3) from six; c(iv) 2 x 6 (3 + 3) from four.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "B7",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        9
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-3-5",
+        "economics-4-1"
+      ],
+      "reason": "National income, its methods, statistics and identity and GDP are National Income (3-0); the EU is also Globalisation (4-1); the advantages and costs of growth are Economic Growth (3-5). Eight tasks totalling 75. a(i) 5; a(ii) 2 x 5 the income and output methods; a(iii) 2 x 5 (3 + 2) from six. b(i) 5 x 2 the five letters; b(ii) 10 €3,250m. c(i) 4 + 6 the EU and GDP; c(ii) 2 x 5 (3 + 2) from six; c(iii) 2 x 5 (3 + 2) from six.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2016,
+      "n": "B8",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        9
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-0-2",
+        "economics-3-5",
+        "economics-1-3"
+      ],
+      "reason": "The national debt, the government’s economic aims and public infrastructure spending are Fiscal Policy & the Budget (3-1); infrastructure is also Economic Growth (3-5); protecting the environment is Sustainability (0-2) and, by the government’s taxes, grants and subsidies, Government Intervention (1-3), as 2016 HL files it. Seven tasks totalling 75. a(i) 5; a(ii) 2 x 5 (3 + 2) from seven; a(iii) 2 x 5 (3 + 2) from nine. b(i) 6; b(ii) 6 (3 + 3) one advantage from seven and 6 (3 + 3) one disadvantage from seven: two heading rows; b(iii) 4 any acceptable infrastructure + 4 the reason. c 3 x 8 (4 + 4) one measure each for any three of four groups: one card.",
+      "paperSha256": "a1e2a022807b067d8d8b1123e346d79423f94a0756e8819f856b9c491b928ced"
     }
   ]
 }
