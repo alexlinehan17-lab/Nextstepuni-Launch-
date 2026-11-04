@@ -416,7 +416,7 @@ class Author:
              omit=(), source='md', card_id=None, from_run=None, from_runs=None,
              tick=None, first_sentence=False, ladder=None, lifted=None,
              special=None, question_lift=None, group=None, routes=None,
-             ref_note=None):
+             ref_note=None, ref_also=()):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         clean = self.subject in QUESTION_CLEANING
@@ -428,6 +428,14 @@ class Author:
             if not clean:
                 raise Refused(f'{ref}: ref_note= is for reviewed cleaning-subject parts')
             ref = f'{ref} \u2014 {ref_note}'
+        # Two printed asks one scheme answer serves ("plot the graph", then
+        # "indicate these points on your graph", both answered by the one
+        # graph): one card citing both romans, "Q3(b)(i), (ii)", which
+        # reconcile reads as covering each.
+        if ref_also:
+            if not clean or ref_note:
+                raise Refused(f'{ref}: ref_also= is for reviewed cleaning-subject parts')
+            ref = ref + ''.join(f', ({r})' for r in ref_also)
         question = self.paper.text(q, letter, roman)
         if not clean and not question:
             raise Refused(f'{ref}: the paper has no text for this part')

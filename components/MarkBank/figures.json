@@ -51990,5 +51990,134 @@
   "year": 2024,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2025-HL-paper-q1m-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q1m-crop.png",
+  "md5": "ecf291745733ddccbbd1a2dcb7d3dd7d",
+  "alt": "The table or diagram printed with 2025 HL Q1(m), as the State Examinations Commission set it. It reads: wire dental braces.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q1(m)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2025-HL-paper-q3b-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q3b-crop.png",
+  "md5": "b6e26a3fba51a8ba1908ab0cfaa9989c",
+  "alt": "The table or diagram printed with 2025 HL Q3(b), as the State Examinations Commission set it. It reads: (b) The results shown below were obtained from a tensile test carried out on an alloy test specimen, with a diameter of 12mm and a gauge length of 80mm. Load (kN) 30 80 126 147 154 148 152 162 180 175 Extension (mm) 0.2 0.5 0.8 0.9 1.5 2.0 2.5 3.0 5.5 8.0.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q3(b)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2025-HL-paper-q5a-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q5a-crop.png",
+  "md5": "2ee42ad6cca2b4032cafa5fd81abb0f6",
+  "alt": "The table or diagram printed with 2025 HL Q5(a), as the State Examinations Commission set it. It reads: Structure A Structure B Structure C.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q5(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2025-HL-paper-q5b-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q5b-crop.png",
+  "md5": "7554a77b6376a6c02f9ebc6e0b47e961",
+  "alt": "The table or diagram printed with 2025 HL Q5(b), as the State Examinations Commission set it. It reads: (b) The table shows the solidification temperatures for various alloys of Cadmium and Zinc. The melting temperature of Cadmium is 321°C and the melting temperature of Zinc is 419°C. 10 14 20 30 40 50 60 70 80 90 % of Zinc in alloy Start of solidification (°C) 290 266 275 293 310 328 345 362 380 401 266 266 266 266 266 266 266 266 266 266 End of solidification (°C).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q5(b)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2025-HL-paper-q5c-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q5c-crop.png",
+  "md5": "0aabdcb9d80bc9d351361f55e060f242",
+  "alt": "The table or diagram printed with 2025 HL Q5(c), as the State Examinations Commission set it. It reads: 2. sorting 1. collecting 3. shredding Metal recycling process 7. manufacture 4. melting 6. rolling 5. solidifying.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q5(c)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2025-HL-paper-q7bi-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q7bi-crop.png",
+  "md5": "bbbbcfe74d1277976ee6b836a675b91b",
+  "alt": "The table or diagram printed with 2025 HL Q7(b)(i), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q7(b)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2025-HL-paper-q9c-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q9c-crop.png",
+  "md5": "42a6a3e8aba98d56898460a7e8042b38",
+  "alt": "The table or diagram printed with 2025 HL Q9(c), as the State Examinations Commission set it. It reads: printing head assembly table limit switch.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q9(c)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2025-HL-scheme-q3b-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2025-HL-scheme-q3b-sol.png",
+  "md5": "27bb3d3696d40c02f0915ebadc91a4dc",
+  "alt": "The marking scheme's printed answer for 2025 HL Q3(b)(i)-(ii), as the State Examinations Commission set it. It reads: Start of necking (kN) Fracture point Load ElasƟc limit Extension (mm).",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q3(b)(i)-(ii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2025-HL-scheme-q5bi-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2025-HL-scheme-q5bi-sol.png",
+  "md5": "10f51fbaa3ccc3ff41afa0ba440b7f30",
+  "alt": "The marking scheme's printed answer for 2025 HL Q5(b)(i), as the State Examinations Commission set it. It reads: liquidus lines solidus line.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q5(b)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2025-HL-scheme-q9ci-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2025-HL-scheme-q9ci-sol.png",
+  "md5": "a61b57ae7aea307138598445a7935420",
+  "alt": "The marking scheme's printed answer for 2025 HL Q9(c)(i), as the State Examinations Commission set it. It reads: stepper motor lead screw with nut prinƟng head.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q9(c)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2025-HL-scheme-q3biii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2025-HL-scheme-q3biii-sol.png",
+  "md5": "6507771035e9b23514caf5502651d1d5",
+  "alt": "The marking scheme's printed answer for 2025 HL Q3(b)(iii), as the State Examinations Commission set it. It reads: 181kN Max Load (iii) UlƟmate tensile strength = = = 1.6 kN/mm² C.S.A 113.1 mm².",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q3(b)(iii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
  }
 }

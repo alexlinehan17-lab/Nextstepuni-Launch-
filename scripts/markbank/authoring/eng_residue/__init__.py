@@ -38,7 +38,7 @@ PASS = ('use', 'marks', 'tariff', 'total', 'row_kind', 'notation', 'ladder',
         'lifted', 'special', 'figure', 'question_figure', 'labels', 'notes',
         'checked', 'context', 'omit', 'spread', 'suffix', 'from_run',
         'from_runs', 'question_lift', 'group', 'routes',
-        'ref_note')
+        'ref_note', 'ref_also')
 
 
 def module(year, level):
