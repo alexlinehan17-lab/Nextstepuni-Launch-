@@ -573,6 +573,18 @@ REJECTED = {
     # 2020 Higher, looked at 2026-11-04 (the residue cuts it by eye):
     **{(2020, 'hl', 8, 'a', r): 'a stray "d" from the ask in its corner'
        for r in ('i', 'ii')},
+    # 2016 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2016, 'hl', 2, 'b', r): 'the axes sketch alone; the card shows it under the '
+                                'results table'
+       for r in ('i', 'ii', 'iii')},
+    **{(2016, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis values'
+       for r in ('i', 'ii', 'iii')},
+    **{(2016, 'hl', 3, 'c', r): 'a stray glyph from the prose at its left edge'
+       for r in ('i', 'ii')},
+    **{(2016, 'hl', 4, 'c', r): 'takes in (c)\'s prose beside the cooling curve'
+       for r in ('i', 'ii')},
+    **{(2016, 'hl', 8, 'c', r): 'a stray glyph from the prose at its left edge'
+       for r in ('i', 'ii')},
     # 2017 Ordinary, looked at 2026-11-04 (the residue cuts each by eye):
     **{(2017, 'ol', 3, 'b', r): 'cuts off the "Point" label and its arrow'
        for r in ('i', 'ii')},
