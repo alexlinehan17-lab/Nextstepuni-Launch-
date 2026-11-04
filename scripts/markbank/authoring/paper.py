@@ -310,6 +310,13 @@ WELDED_HEADS = {
     # With no (a) read, (b), (c) and (d) were not taken as letters either, and
     # Question 2's asks filed as three letterless romans.
     ('engineering', 2016, 'ol'): ['Question 2. (45 marks)'],
+    # 2014 OL Engineering page 2 reads Q1(j)-(m) as one block that ends "(m)
+    # Name the two drive systems shown at (i) and (ii). (i) (ii)": the last two
+    # markers are the labels printed beside the two drive photographs, and
+    # TRAILING_MARKER carried the "(ii)" into a part of its own (census
+    # Q1(m)(i) 'and', Q1(m)(ii) holding the page footer). Split off after the
+    # ask, the labels stand as a block FIGURE_BLOCKS takes out.
+    ('engineering', 2014, 'ol'): ['(m) Name the two drive systems shown at (i) and (ii).'],
 }
 # Subjects where a letter going BACKWARDS inside a question is never a new
 # part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'
@@ -637,6 +644,14 @@ FIGURE_BLOCKS[('engineering', 2011, 'hl')] = ['(i) (ii)']
 # labelled A"), read into Q1(i)'s words. All four are the pictures' labels:
 # no ask is printed there, so each part is one ask, as 2011 HL Q1(m) is.
 FIGURE_BLOCKS[('engineering', 2015, 'ol')] = ['(i) (ii)', '(i)', '(ii)', 'A']
+# 2014 OL Engineering paper page 2, the same two layouts: Q1(g) captions its
+# two thread drawings "(i)" and "(ii)" ("Identify the two thread forms
+# shown."), and the text layer sets the pair as a block of its own after
+# Section B's "(i) Describe ...", where, read as markers, it made the letter
+# (i) a roman run (the census counted Q1(i)(i) and Q1(i)(ii)); Q1(m)'s two
+# photograph labels, split off its block by WELDED_HEADS, are the same pair.
+# One ask each.
+FIGURE_BLOCKS[('engineering', 2014, 'ol')] = ['(i) (ii)']
 _TRAILING_OR = re.compile(r'\s+OR\s*$')
 _BARE_MARKER = re.compile(r'^\((?:[ivx]{1,4}|[a-m])\)$')
 
