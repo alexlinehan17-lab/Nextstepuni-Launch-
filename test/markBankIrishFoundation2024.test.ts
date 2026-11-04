@@ -10,7 +10,7 @@ import { combinedListeningAssessment, irishMarks, irishScoreId, listeningQuestio
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { resolveCurriculumSpecification } from '../curriculumRegistry';
 import { tariffReconciles } from '../types/markBank';
-import { PAPERS_PENDING_FULL_REVIEW } from './fixtures/irishArchiveProgress';
+import { IRISH_INDEXED_CARDS, PAPERS_PENDING_FULL_REVIEW } from './fixtures/irishArchiveProgress';
 
 const CARDS = ALL_CARDS.filter(c => c.year === 2024);
 
@@ -215,7 +215,7 @@ print('source guard passed')
     const row=inventory.papers.find(p=>p.key==='2024|foundation|LC001BLP000IV.pdf')!;
     expect(row.markBankCardIds.slice().sort()).toEqual(CARDS.map(c=>c.id).sort());
     expect(row).toMatchObject({fullVisualReview:'complete',bankAtlasTaskParity:'complete',partAndSelectionReconciliation:'complete'});
-    expect(inventory.summary.indexedCards).toBe(1838);
+    expect(inventory.summary.indexedCards).toBe(IRISH_INDEXED_CARDS);
     expect(inventory.summary.papersPendingFullReview).toBe(PAPERS_PENDING_FULL_REVIEW);
     expect(inventory.summary.orphanCardIds).toEqual([]);
   });

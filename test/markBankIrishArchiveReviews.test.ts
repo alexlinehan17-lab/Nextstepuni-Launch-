@@ -1,0 +1,105 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Irish archive review, batch 2 (2026-11-04): every paper reviewed down to the printed question, one commit per
+ * paper. Each row pins the paper's printed asks as the builder lifted them and checks the cards a student gets:
+ * legacy ids kept, every printed question its own criterion at its own tariff with claimable rows, the paper's
+ * own words only (no line of ours in the question, the guidance or the task check), full marks reachable, and the
+ * paper joined to the archive inventory and its Topic Atlas answer map.
+ */
+import { describe, expect, it } from 'vitest';
+import { readFileSync } from 'node:fs';
+import inventory from '../scripts/markbank/authored/irish-archive-inventory.json';
+import higher2022P1 from '../scripts/markbank/authored/irish-higher-2022-p1-component-review.json';
+import ordinary2022P1 from '../scripts/markbank/authored/irish-ordinary-2022-p1-component-review.json';
+import ordinary2022P2 from '../components/MarkBank/cards/irish/ordinary-2022-p2-authored.json';
+import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
+import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
+import { irishMarks } from '../components/MarkBank/SessionScreen';
+import { tariffReconciles, type SecRubricCard } from '../types/markBank';
+import { irishFullScores } from './fixtures/irishScores';
+
+const DECK = new Map([...HIGHER, ...ORDINARY].map(card => [card.id, card]));
+const card = (id: string): SecRubricCard => {
+  const found = DECK.get(id);
+  if (!found) throw new Error(`no card ${id}`);
+  return found;
+};
+const criteria = (c: SecRubricCard) => (c.rubric.system === 'irish' ? c.rubric.criteria : []);
+// Lines builders used to add in Irish of their own (irish_lifted.py strips them and the lift audit gates them).
+const OURS = /Don chárta seo|An rogha don chárta seo|Léigh an téacs ar leathanach \d|Aon fhreagra ceart don chuid seo|An léargas seo =|Éist leis an taifeadadh|Freagair gach mír atá priontáilte|Coinnigh ceangal cinnte|Timpeall 500–600 focal|[-]/;
+const shown = (c: SecRubricCard) => [c.questionText, c.stem ?? '', ...c.rubric.taskRequirements,
+  ...criteria(c).flatMap(criterion => criterion.guidance)].join('\n');
+const answerMap = (year: number, fileid: string) =>
+  JSON.parse(readFileSync(`public/paper-answers/${year}/${fileid}.json`, 'utf8')) as { q: Array<{ n: string }> };
+
+const PAPER_ONE = [
+  { review: higher2022P1, year: 2022, fileid: 'LC001ALP100IV.pdf', segments: 8, questions: 25, titles: 9, perTitle: 100 },
+  { review: ordinary2022P1, year: 2022, fileid: 'LC001GLP000IV.pdf', segments: 6, questions: 20, titles: 9, perTitle: 50 },
+];
+
+describe('Irish archive review: Paper 1 (listening and composition)', () => {
+  for (const paper of PAPER_ONE) {
+    it(`${paper.year} ${paper.review.level} ${paper.fileid}: ${paper.questions} printed questions and ${paper.titles} titles, each carded`, () => {
+      const { review } = paper;
+      expect(review.listeningSegmentCardIds).toHaveLength(paper.segments);
+      expect(review.compositionRouteCardIds).toHaveLength(paper.titles);
+      expect(review.printedListeningQuestions).toBe(paper.questions);
+      const segments = review.listeningSegmentCardIds.map(card);
+      // One criterion per printed question, at the published tariff, every one cut into claimable rows.
+      expect(segments.flatMap(criteria)).toHaveLength(paper.questions);
+      expect(segments.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(review.examStructure.listening);
+      for (const c of segments) {
+        expect(tariffReconciles(c), c.id).toBe(true);
+        for (const criterion of criteria(c)) expect(criterion.allocation, `${c.id} ${criterion.id}`).toBeDefined();
+        expect(irishMarks(c, irishFullScores(c)), c.id).toBe(c.totalMarks);
+        expect(c.rubric.markingGuideNote, c.id).toMatch(/Bainfear ó 0 go [36] ar chaighdeán na Gaeilge/);
+      }
+      for (const id of review.compositionRouteCardIds) {
+        const c = card(id);
+        expect(c.totalMarks, id).toBe(paper.perTitle);
+        expect(irishMarks(c, irishFullScores(c)), id).toBe(paper.perTitle);
+        expect(c.questionText.split('\n').at(-1), id).toMatch(/^\((?:[a-e]|i{1,3})\) |^[A-ZÁÉÍÓÚ]/);
+      }
+      for (const id of review.cardIds) expect(shown(card(id)), id).not.toMatch(OURS);
+      const row = inventory.papers.find(p => p.key === `${paper.year}|${review.level}|${paper.fileid}`)!;
+      expect(row.markBankCardIds.slice().sort()).toEqual([...review.cardIds].sort());
+      expect(row).toMatchObject({ fullVisualReview: 'complete', bankAtlasTaskParity: 'complete', partAndSelectionReconciliation: 'complete' });
+      const mapped = new Set(answerMap(paper.year, paper.fileid).q.map(q => q.n));
+      for (const n of ['1', '2', '3', '4']) expect(mapped.has(n), n).toBe(true);
+    });
+  }
+});
+
+const PAPER_TWO = [
+  { file: ordinary2022P2, fileid: 'LC001GLP200IV.pdf', legacy: 22, practice: 42, readingWhole: 10 },
+];
+
+describe('Irish archive review: Paper 2 (reading and literature)', () => {
+  for (const paper of PAPER_TWO) {
+    const { review } = paper.file;
+    it(`${review.year} ${review.level} ${paper.fileid}: ${paper.legacy} retained cards and ${paper.practice} practice parts`, () => {
+      expect(review.legacyCardIds).toHaveLength(paper.legacy);
+      expect(review.practiceCardIds).toHaveLength(paper.practice);
+      expect(review.readingWholeCardIds).toHaveLength(paper.readingWhole);
+      expect(paper.file.cards.map(c => c.id).sort()).toEqual([...review.practiceCardIds].sort());
+      for (const id of [...review.legacyCardIds, ...review.practiceCardIds]) {
+        const c = card(id);
+        expect(tariffReconciles(c), id).toBe(true);
+        expect(irishMarks(c, irishFullScores(c)), id).toBe(c.totalMarks);
+        expect(shown(c), id).not.toMatch(OURS);
+        if (c.practiceFocus) expect(c.practiceFocus, id).toMatch(/^[A-Z][a-z]/);
+      }
+      // Each whole reading question marks every printed part as its own criterion, each with claimable rows.
+      for (const id of review.readingWholeCardIds) {
+        const parts = criteria(card(id));
+        expect(parts.length, id).toBeGreaterThan(1);
+        for (const criterion of parts) expect(criterion.allocation, `${id} ${criterion.id}`).toBeDefined();
+      }
+      const row = inventory.papers.find(p => p.key === `${review.year}|${review.level}|${paper.fileid}`)!;
+      expect(row.markBankCardIds.slice().sort()).toEqual([...review.legacyCardIds, ...review.practiceCardIds].sort());
+      expect(row).toMatchObject({ fullVisualReview: 'complete', bankAtlasTaskParity: 'complete', partAndSelectionReconciliation: 'complete' });
+    });
+  }
+});

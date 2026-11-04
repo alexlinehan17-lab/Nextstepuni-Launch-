@@ -287,9 +287,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     };
     for (const { card, criteria } of irishCards) for (const criterion of criteria) if (criterion.allocation) checkAllocation(card, criterion);
     const unstructured = (criteria: typeof irishCards[number]['criteria']) => criteria.some(criterion => priced(criterion) && !criterion.allocation);
-    expect(exact).toHaveLength(507);
+    expect(exact).toHaveLength(527);
     const structured = exact.filter(({ criteria }) => !unstructured(criteria));
-    expect(structured).toHaveLength(503);
+    expect(structured).toHaveLength(523);
 
     // What is still prose, pinned by id: four reading excerpts on main's cards whose answers the scheme
     // prices in a shape answers.ts does not read yet (unpriced bullets under a ladder, a section total
@@ -306,7 +306,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // "Dhá phointe eolais = 4 mharc + 4 mharc", "Tréith 1 = 13 mharc" under a band table) and
     // tariffs.ts cuts that into rows and steps; the sample points stay a list under each part.
     const literature = irishCards.filter(({ card }) => /Prose|Poetry|Literature|Prós|Filíocht|Litríocht/.test(card.questionRef));
-    expect(literature).toHaveLength(239);
+    expect(literature).toHaveLength(261);
     // An option whose tariff summary the parser does not read yet, pinned by id.
     expect(literature.filter(({ criteria }) => unstructured(criteria)).map(({ card }) => card.id).sort()).toEqual([
       'irish-2022-hl-p2-poetry-3b-a', 'irish-2025-ol-p2-poetry-3a-a',
