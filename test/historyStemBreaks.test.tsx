@@ -54,7 +54,31 @@ describe('the printed breaks in a History stem', () => {
       expect(parts[0].split('\n')[0], card.id).toMatch(/[.?!:]$/);
       expect(card.stem, card.id).not.toMatch(/ \n|\n |\n{3}/);
     }
-    expect(partA.filter(c => !c.stem!.includes('\n\n')).every(c => /^(?:This|The|In this) (?:picture|photograph|cartoon|illustration|poster|chart)\b/.test(c.stem!))).toBe(true);
+    // With no extract after it, the instruction stands alone: a unit set on a picture, cartoon or
+    // illustration (the image is in the official extract), or on a printed chart (cropped as the
+    // card's question figure, below).
+    expect(partA.filter(c => !c.stem!.includes('\n\n')
+      && !('questionFigure' in c && c.questionFigure)
+      && !/^(?:This|The|In this) (?:picture|photograph|cartoon|illustration|poster)\b/.test(c.stem!)).map(c => c.id)).toEqual([]);
+  });
+
+  it('never flattens a printed table into a stem: the chart is the card’s question figure', () => {
+    const charted = HISTORY_ORDINARY.filter(c => 'questionFigure' in c && c.questionFigure);
+    expect(charted.map(c => c.id).sort()).toEqual([
+      'hist-2018-ol-lm-s2t3a-q1', 'hist-2018-ol-lm-s2t3a-q2', 'hist-2018-ol-lm-s2t3a-q3', 'hist-2018-ol-lm-s2t3a-q4', 'hist-2018-ol-lm-s2t3a-q5',
+      'hist-2020-ol-lm-s2t6a-q1', 'hist-2020-ol-lm-s2t6a-q2', 'hist-2020-ol-lm-s2t6a-q3', 'hist-2020-ol-lm-s2t6a-q4', 'hist-2020-ol-lm-s2t6a-q5',
+    ]);
+    for (const card of charted) {
+      const figure = 'questionFigure' in card ? card.questionFigure! : undefined;
+      // An illustration beside the stem and the question, never in place of them.
+      expect(figure?.includesPrompt, card.id).toBe(false);
+      expect(figure?.src, card.id).toMatch(/^\/exam-figures\/history\/history-20(?:18|20)-ol-lm-s2t[36]a-table\.png$/);
+      expect(figure?.alt, card.id).toMatch(/^The chart printed on the paper: .*Columns: PARTY \| .*Rows: Fianna Fáil \| /);
+      expect(card.stem, card.id).not.toContain('\n');
+    }
+    expect(stemOf('hist-2018-ol-lm-s2t3a-q1')).toBe('The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.');
+    // No stem anywhere carries a table row read as text ("Fianna Fáil Eamon de Valera 69 77").
+    expect([...HISTORY_HIGHER, ...HISTORY_ORDINARY].filter(c => /\d+ [-+]?\d+$/m.test(c.stem ?? '')).map(c => c.id)).toEqual([]);
   });
 
   it('keeps a dated diary entry whole: its hanging indent is the rest of the entry', () => {

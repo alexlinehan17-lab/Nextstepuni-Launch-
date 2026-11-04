@@ -5194,7 +5194,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
     id: "hist-2018-ol-lm-s2t3a-q1", topicId: "hist-lm-irl-3", conceptId: "party-did-richard-mulcahy-lead",
     section: "2", questionRef: "2018 OL Later Modern Section 2 Topic 3 A Q1",
-    stem: "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.\nRESULTS OF THE 1948 GENERAL ELECTION\n\nPARTY PARTY LEADER SEATS WON BEFORE ELECTION\nFianna Fáil Eamon de Valera 69 77\nFine Gael Richard Mulcahy 31 28\nLabour William Norton 14 8\nClann na Poblachta Seán McBride 10 2\nClann na Talmhan Joseph Blowick 7 9\nNational Labour James Everett 5 4\nMonetary Reform Oliver J. Flanagan 1 0\nIndependents N/A 11 10",
+    stem: "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.",
     questionText: "Which party did Richard Mulcahy lead?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -5210,6 +5210,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2018 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+    questionFigure: {
+          "candId": "history-2018-ol-lm-s2t3a-table",
+          "src": "/exam-figures/history/history-2018-ol-lm-s2t3a-table.png",
+          "srcHash": "7a7268fbee34953257e3a338f5cf15d8",
+          "alt": "The chart printed on the paper: RESULTS OF THE 1948 GENERAL ELECTION. Columns: PARTY | PARTY LEADER | SEATS WON | BEFORE ELECTION. Rows: Fianna Fáil | Eamon de Valera | 69 | 77; Fine Gael | Richard Mulcahy | 31 | 28; Labour | William Norton | 14 | 8; Clann na Poblachta | Seán McBride | 10 | 2; Clann na Talmhan | Joseph Blowick | 7 | 9; National Labour | James Everett | 5 | 4; Monetary Reform | Oliver J. Flanagan | 1 | 0; Independents | N/A | 11 | 10.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2018 Ordinary Level, Later Modern paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5218,7 +5227,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
     id: "hist-2018-ol-lm-s2t3a-q2", topicId: "hist-lm-irl-3", conceptId: "who-leader-national-labour",
     section: "2", questionRef: "2018 OL Later Modern Section 2 Topic 3 A Q2",
-    stem: "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.\nRESULTS OF THE 1948 GENERAL ELECTION\n\nPARTY PARTY LEADER SEATS WON BEFORE ELECTION\nFianna Fáil Eamon de Valera 69 77\nFine Gael Richard Mulcahy 31 28\nLabour William Norton 14 8\nClann na Poblachta Seán McBride 10 2\nClann na Talmhan Joseph Blowick 7 9\nNational Labour James Everett 5 4\nMonetary Reform Oliver J. Flanagan 1 0\nIndependents N/A 11 10",
+    stem: "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.",
     questionText: "Who was the leader of National Labour?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -5234,6 +5243,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2018 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+    questionFigure: {
+          "candId": "history-2018-ol-lm-s2t3a-table",
+          "src": "/exam-figures/history/history-2018-ol-lm-s2t3a-table.png",
+          "srcHash": "7a7268fbee34953257e3a338f5cf15d8",
+          "alt": "The chart printed on the paper: RESULTS OF THE 1948 GENERAL ELECTION. Columns: PARTY | PARTY LEADER | SEATS WON | BEFORE ELECTION. Rows: Fianna Fáil | Eamon de Valera | 69 | 77; Fine Gael | Richard Mulcahy | 31 | 28; Labour | William Norton | 14 | 8; Clann na Poblachta | Seán McBride | 10 | 2; Clann na Talmhan | Joseph Blowick | 7 | 9; National Labour | James Everett | 5 | 4; Monetary Reform | Oliver J. Flanagan | 1 | 0; Independents | N/A | 11 | 10.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2018 Ordinary Level, Later Modern paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5242,7 +5260,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
     id: "hist-2018-ol-lm-s2t3a-q3", topicId: "hist-lm-irl-3", conceptId: "parties-lost-seats-election",
     section: "2", questionRef: "2018 OL Later Modern Section 2 Topic 3 A Q3",
-    stem: "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.\nRESULTS OF THE 1948 GENERAL ELECTION\n\nPARTY PARTY LEADER SEATS WON BEFORE ELECTION\nFianna Fáil Eamon de Valera 69 77\nFine Gael Richard Mulcahy 31 28\nLabour William Norton 14 8\nClann na Poblachta Seán McBride 10 2\nClann na Talmhan Joseph Blowick 7 9\nNational Labour James Everett 5 4\nMonetary Reform Oliver J. Flanagan 1 0\nIndependents N/A 11 10",
+    stem: "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.",
     questionText: "Which two parties lost seats in this election?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -5258,6 +5276,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2018 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+    questionFigure: {
+          "candId": "history-2018-ol-lm-s2t3a-table",
+          "src": "/exam-figures/history/history-2018-ol-lm-s2t3a-table.png",
+          "srcHash": "7a7268fbee34953257e3a338f5cf15d8",
+          "alt": "The chart printed on the paper: RESULTS OF THE 1948 GENERAL ELECTION. Columns: PARTY | PARTY LEADER | SEATS WON | BEFORE ELECTION. Rows: Fianna Fáil | Eamon de Valera | 69 | 77; Fine Gael | Richard Mulcahy | 31 | 28; Labour | William Norton | 14 | 8; Clann na Poblachta | Seán McBride | 10 | 2; Clann na Talmhan | Joseph Blowick | 7 | 9; National Labour | James Everett | 5 | 4; Monetary Reform | Oliver J. Flanagan | 1 | 0; Independents | N/A | 11 | 10.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2018 Ordinary Level, Later Modern paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5266,7 +5293,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
     id: "hist-2018-ol-lm-s2t3a-q4", topicId: "hist-lm-irl-3", conceptId: "did-number-independents-increase-decrease-election",
     section: "2", questionRef: "2018 OL Later Modern Section 2 Topic 3 A Q4",
-    stem: "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.\nRESULTS OF THE 1948 GENERAL ELECTION\n\nPARTY PARTY LEADER SEATS WON BEFORE ELECTION\nFianna Fáil Eamon de Valera 69 77\nFine Gael Richard Mulcahy 31 28\nLabour William Norton 14 8\nClann na Poblachta Seán McBride 10 2\nClann na Talmhan Joseph Blowick 7 9\nNational Labour James Everett 5 4\nMonetary Reform Oliver J. Flanagan 1 0\nIndependents N/A 11 10",
+    stem: "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.",
     questionText: "Did the number of Independents increase or decrease following this election?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -5282,6 +5309,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2018 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+    questionFigure: {
+          "candId": "history-2018-ol-lm-s2t3a-table",
+          "src": "/exam-figures/history/history-2018-ol-lm-s2t3a-table.png",
+          "srcHash": "7a7268fbee34953257e3a338f5cf15d8",
+          "alt": "The chart printed on the paper: RESULTS OF THE 1948 GENERAL ELECTION. Columns: PARTY | PARTY LEADER | SEATS WON | BEFORE ELECTION. Rows: Fianna Fáil | Eamon de Valera | 69 | 77; Fine Gael | Richard Mulcahy | 31 | 28; Labour | William Norton | 14 | 8; Clann na Poblachta | Seán McBride | 10 | 2; Clann na Talmhan | Joseph Blowick | 7 | 9; National Labour | James Everett | 5 | 4; Monetary Reform | Oliver J. Flanagan | 1 | 0; Independents | N/A | 11 | 10.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2018 Ordinary Level, Later Modern paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5290,7 +5326,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
     id: "hist-2018-ol-lm-s2t3a-q5", topicId: "hist-lm-irl-3", conceptId: "election-government-took-office-fianna-government",
     section: "2", questionRef: "2018 OL Later Modern Section 2 Topic 3 A Q5",
-    stem: "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.\nRESULTS OF THE 1948 GENERAL ELECTION\n\nPARTY PARTY LEADER SEATS WON BEFORE ELECTION\nFianna Fáil Eamon de Valera 69 77\nFine Gael Richard Mulcahy 31 28\nLabour William Norton 14 8\nClann na Poblachta Seán McBride 10 2\nClann na Talmhan Joseph Blowick 7 9\nNational Labour James Everett 5 4\nMonetary Reform Oliver J. Flanagan 1 0\nIndependents N/A 11 10",
+    stem: "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.",
     questionText: "Following this election, which government took office: Fianna Fáil government; Fine Gael and Labour government; Inter‐Party government?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -5305,6 +5341,15 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC History 2018 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+    questionFigure: {
+          "candId": "history-2018-ol-lm-s2t3a-table",
+          "src": "/exam-figures/history/history-2018-ol-lm-s2t3a-table.png",
+          "srcHash": "7a7268fbee34953257e3a338f5cf15d8",
+          "alt": "The chart printed on the paper: RESULTS OF THE 1948 GENERAL ELECTION. Columns: PARTY | PARTY LEADER | SEATS WON | BEFORE ELECTION. Rows: Fianna Fáil | Eamon de Valera | 69 | 77; Fine Gael | Richard Mulcahy | 31 | 28; Labour | William Norton | 14 | 8; Clann na Poblachta | Seán McBride | 10 | 2; Clann na Talmhan | Joseph Blowick | 7 | 9; National Labour | James Everett | 5 | 4; Monetary Reform | Oliver J. Flanagan | 1 | 0; Independents | N/A | 11 | 10.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2018 Ordinary Level, Later Modern paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -12940,7 +12985,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2020 Ordinary Level — © State Examinations Commission.",
     id: "hist-2020-ol-lm-s2t6a-q1", topicId: "hist-lm-irl-6", conceptId: "party-won-greatest-number-seats",
     section: "2", questionRef: "2020 OL Later Modern Section 2 Topic 6 A Q1",
-    stem: "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.\n\nGeneral Election, 1954\nPARTY LEADER SEATS WON +/- CHANGE\nFianna Fáil Éamon de Valera 65 -4\nFine Gael Richard Mulcahy 50 +10\nLabour Party William Norton 19 +2\nClann na Talmhan Joe Blowick 5 -1\nClann na Poblachta Seán McBride 3 +1\nSinn Féin Margaret Buckley 0 New\nIndependents N/A 5 -9",
+    stem: "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.",
     questionText: "Which party won the greatest number of seats?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -12956,6 +13001,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2020 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+    questionFigure: {
+          "candId": "history-2020-ol-lm-s2t6a-table",
+          "src": "/exam-figures/history/history-2020-ol-lm-s2t6a-table.png",
+          "srcHash": "352b78a9a3f6f4c87a1fe0d9e5c1ea30",
+          "alt": "The chart printed on the paper: General Election, 1954. Columns: PARTY | LEADER | SEATS WON | +/- CHANGE. Rows: Fianna Fáil | Éamon de Valera | 65 | -4; Fine Gael | Richard Mulcahy | 50 | +10; Labour Party | William Norton | 19 | +2; Clann na Talmhan | Joe Blowick | 5 | -1; Clann na Poblachta | Seán McBride | 3 | +1; Sinn Féin | Margaret Buckley | 0 | New; Independents | N/A | 5 | -9.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2020 Ordinary Level, Later Modern paper, page 9 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12964,7 +13018,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2020 Ordinary Level — © State Examinations Commission.",
     id: "hist-2020-ol-lm-s2t6a-q2", topicId: "hist-lm-irl-6", conceptId: "who-leader-labour-party",
     section: "2", questionRef: "2020 OL Later Modern Section 2 Topic 6 A Q2",
-    stem: "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.\n\nGeneral Election, 1954\nPARTY LEADER SEATS WON +/- CHANGE\nFianna Fáil Éamon de Valera 65 -4\nFine Gael Richard Mulcahy 50 +10\nLabour Party William Norton 19 +2\nClann na Talmhan Joe Blowick 5 -1\nClann na Poblachta Seán McBride 3 +1\nSinn Féin Margaret Buckley 0 New\nIndependents N/A 5 -9",
+    stem: "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.",
     questionText: "Who was the leader of the Labour Party?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -12980,6 +13034,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2020 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+    questionFigure: {
+          "candId": "history-2020-ol-lm-s2t6a-table",
+          "src": "/exam-figures/history/history-2020-ol-lm-s2t6a-table.png",
+          "srcHash": "352b78a9a3f6f4c87a1fe0d9e5c1ea30",
+          "alt": "The chart printed on the paper: General Election, 1954. Columns: PARTY | LEADER | SEATS WON | +/- CHANGE. Rows: Fianna Fáil | Éamon de Valera | 65 | -4; Fine Gael | Richard Mulcahy | 50 | +10; Labour Party | William Norton | 19 | +2; Clann na Talmhan | Joe Blowick | 5 | -1; Clann na Poblachta | Seán McBride | 3 | +1; Sinn Féin | Margaret Buckley | 0 | New; Independents | N/A | 5 | -9.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2020 Ordinary Level, Later Modern paper, page 9 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12988,7 +13051,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2020 Ordinary Level — © State Examinations Commission.",
     id: "hist-2020-ol-lm-s2t6a-q3", topicId: "hist-lm-irl-6", conceptId: "party-made-greatest-gain-previous-election",
     section: "2", questionRef: "2020 OL Later Modern Section 2 Topic 6 A Q3",
-    stem: "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.\n\nGeneral Election, 1954\nPARTY LEADER SEATS WON +/- CHANGE\nFianna Fáil Éamon de Valera 65 -4\nFine Gael Richard Mulcahy 50 +10\nLabour Party William Norton 19 +2\nClann na Talmhan Joe Blowick 5 -1\nClann na Poblachta Seán McBride 3 +1\nSinn Féin Margaret Buckley 0 New\nIndependents N/A 5 -9",
+    stem: "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.",
     questionText: "Which party made the greatest gain from the previous election?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -13004,6 +13067,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2020 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+    questionFigure: {
+          "candId": "history-2020-ol-lm-s2t6a-table",
+          "src": "/exam-figures/history/history-2020-ol-lm-s2t6a-table.png",
+          "srcHash": "352b78a9a3f6f4c87a1fe0d9e5c1ea30",
+          "alt": "The chart printed on the paper: General Election, 1954. Columns: PARTY | LEADER | SEATS WON | +/- CHANGE. Rows: Fianna Fáil | Éamon de Valera | 65 | -4; Fine Gael | Richard Mulcahy | 50 | +10; Labour Party | William Norton | 19 | +2; Clann na Talmhan | Joe Blowick | 5 | -1; Clann na Poblachta | Seán McBride | 3 | +1; Sinn Féin | Margaret Buckley | 0 | New; Independents | N/A | 5 | -9.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2020 Ordinary Level, Later Modern paper, page 9 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -13012,7 +13084,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2020 Ordinary Level — © State Examinations Commission.",
     id: "hist-2020-ol-lm-s2t6a-q4", topicId: "hist-lm-irl-6", conceptId: "parties-lost-seats-election",
     section: "2", questionRef: "2020 OL Later Modern Section 2 Topic 6 A Q4",
-    stem: "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.\n\nGeneral Election, 1954\nPARTY LEADER SEATS WON +/- CHANGE\nFianna Fáil Éamon de Valera 65 -4\nFine Gael Richard Mulcahy 50 +10\nLabour Party William Norton 19 +2\nClann na Talmhan Joe Blowick 5 -1\nClann na Poblachta Seán McBride 3 +1\nSinn Féin Margaret Buckley 0 New\nIndependents N/A 5 -9",
+    stem: "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.",
     questionText: "Which two parties lost seats in this election?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -13029,6 +13101,15 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2020 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+    questionFigure: {
+          "candId": "history-2020-ol-lm-s2t6a-table",
+          "src": "/exam-figures/history/history-2020-ol-lm-s2t6a-table.png",
+          "srcHash": "352b78a9a3f6f4c87a1fe0d9e5c1ea30",
+          "alt": "The chart printed on the paper: General Election, 1954. Columns: PARTY | LEADER | SEATS WON | +/- CHANGE. Rows: Fianna Fáil | Éamon de Valera | 65 | -4; Fine Gael | Richard Mulcahy | 50 | +10; Labour Party | William Norton | 19 | +2; Clann na Talmhan | Joe Blowick | 5 | -1; Clann na Poblachta | Seán McBride | 3 | +1; Sinn Féin | Margaret Buckley | 0 | New; Independents | N/A | 5 | -9.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2020 Ordinary Level, Later Modern paper, page 9 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -13037,7 +13118,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2020 Ordinary Level — © State Examinations Commission.",
     id: "hist-2020-ol-lm-s2t6a-q5", topicId: "hist-lm-irl-6", conceptId: "election-party-led-new-coalition-government",
     section: "2", questionRef: "2020 OL Later Modern Section 2 Topic 6 A Q5",
-    stem: "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.\n\nGeneral Election, 1954\nPARTY LEADER SEATS WON +/- CHANGE\nFianna Fáil Éamon de Valera 65 -4\nFine Gael Richard Mulcahy 50 +10\nLabour Party William Norton 19 +2\nClann na Talmhan Joe Blowick 5 -1\nClann na Poblachta Seán McBride 3 +1\nSinn Féin Margaret Buckley 0 New\nIndependents N/A 5 -9",
+    stem: "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.",
     questionText: "Following this election, which party led the new coalition government, 1954-1957?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -13052,6 +13133,15 @@ export const CARDS: SecCard[] = [
           ],
           "attribution": "SEC History 2020 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+    questionFigure: {
+          "candId": "history-2020-ol-lm-s2t6a-table",
+          "src": "/exam-figures/history/history-2020-ol-lm-s2t6a-table.png",
+          "srcHash": "352b78a9a3f6f4c87a1fe0d9e5c1ea30",
+          "alt": "The chart printed on the paper: General Election, 1954. Columns: PARTY | LEADER | SEATS WON | +/- CHANGE. Rows: Fianna Fáil | Éamon de Valera | 65 | -4; Fine Gael | Richard Mulcahy | 50 | +10; Labour Party | William Norton | 19 | +2; Clann na Talmhan | Joe Blowick | 5 | -1; Clann na Poblachta | Seán McBride | 3 | +1; Sinn Féin | Margaret Buckley | 0 | New; Independents | N/A | 5 | -9.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2020 Ordinary Level, Later Modern paper, page 9 — © State Examinations Commission.",
+          "includesPrompt": false
     },
   } as SecCard,
   {

@@ -46783,7 +46783,9 @@
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
-  "stem": "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.\nRESULTS OF THE 1948 GENERAL ELECTION\n\nPARTY PARTY LEADER SEATS WON BEFORE ELECTION\nFianna Fáil Eamon de Valera 69 77\nFine Gael Richard Mulcahy 31 28\nLabour William Norton 14 8\nClann na Poblachta Seán McBride 10 2\nClann na Talmhan Joseph Blowick 7 9\nNational Labour James Everett 5 4\nMonetary Reform Oliver J. Flanagan 1 0\nIndependents N/A 11 10",
+  "stem": "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.",
+  "questionFigureKey": "history-2018-ol-lm-s2t3a-table",
+  "questionFigureIncludesPrompt": false,
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL EXTRACT",
@@ -46818,7 +46820,9 @@
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
-  "stem": "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.\nRESULTS OF THE 1948 GENERAL ELECTION\n\nPARTY PARTY LEADER SEATS WON BEFORE ELECTION\nFianna Fáil Eamon de Valera 69 77\nFine Gael Richard Mulcahy 31 28\nLabour William Norton 14 8\nClann na Poblachta Seán McBride 10 2\nClann na Talmhan Joseph Blowick 7 9\nNational Labour James Everett 5 4\nMonetary Reform Oliver J. Flanagan 1 0\nIndependents N/A 11 10",
+  "stem": "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.",
+  "questionFigureKey": "history-2018-ol-lm-s2t3a-table",
+  "questionFigureIncludesPrompt": false,
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL EXTRACT",
@@ -46853,7 +46857,9 @@
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
-  "stem": "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.\nRESULTS OF THE 1948 GENERAL ELECTION\n\nPARTY PARTY LEADER SEATS WON BEFORE ELECTION\nFianna Fáil Eamon de Valera 69 77\nFine Gael Richard Mulcahy 31 28\nLabour William Norton 14 8\nClann na Poblachta Seán McBride 10 2\nClann na Talmhan Joseph Blowick 7 9\nNational Labour James Everett 5 4\nMonetary Reform Oliver J. Flanagan 1 0\nIndependents N/A 11 10",
+  "stem": "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.",
+  "questionFigureKey": "history-2018-ol-lm-s2t3a-table",
+  "questionFigureIncludesPrompt": false,
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL EXTRACT",
@@ -46888,7 +46894,9 @@
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
-  "stem": "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.\nRESULTS OF THE 1948 GENERAL ELECTION\n\nPARTY PARTY LEADER SEATS WON BEFORE ELECTION\nFianna Fáil Eamon de Valera 69 77\nFine Gael Richard Mulcahy 31 28\nLabour William Norton 14 8\nClann na Poblachta Seán McBride 10 2\nClann na Talmhan Joseph Blowick 7 9\nNational Labour James Everett 5 4\nMonetary Reform Oliver J. Flanagan 1 0\nIndependents N/A 11 10",
+  "stem": "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.",
+  "questionFigureKey": "history-2018-ol-lm-s2t3a-table",
+  "questionFigureIncludesPrompt": false,
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL EXTRACT",
@@ -46923,7 +46931,9 @@
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
-  "stem": "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.\nRESULTS OF THE 1948 GENERAL ELECTION\n\nPARTY PARTY LEADER SEATS WON BEFORE ELECTION\nFianna Fáil Eamon de Valera 69 77\nFine Gael Richard Mulcahy 31 28\nLabour William Norton 14 8\nClann na Poblachta Seán McBride 10 2\nClann na Talmhan Joseph Blowick 7 9\nNational Labour James Everett 5 4\nMonetary Reform Oliver J. Flanagan 1 0\nIndependents N/A 11 10",
+  "stem": "The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.",
+  "questionFigureKey": "history-2018-ol-lm-s2t3a-table",
+  "questionFigureIncludesPrompt": false,
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL EXTRACT",
@@ -93830,7 +93840,9 @@
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
-  "stem": "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.\n\nGeneral Election, 1954\nPARTY LEADER SEATS WON +/- CHANGE\nFianna Fáil Éamon de Valera 65 -4\nFine Gael Richard Mulcahy 50 +10\nLabour Party William Norton 19 +2\nClann na Talmhan Joe Blowick 5 -1\nClann na Poblachta Seán McBride 3 +1\nSinn Féin Margaret Buckley 0 New\nIndependents N/A 5 -9",
+  "stem": "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.",
+  "questionFigureKey": "history-2020-ol-lm-s2t6a-table",
+  "questionFigureIncludesPrompt": false,
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL EXTRACT",
@@ -93865,7 +93877,9 @@
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
-  "stem": "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.\n\nGeneral Election, 1954\nPARTY LEADER SEATS WON +/- CHANGE\nFianna Fáil Éamon de Valera 65 -4\nFine Gael Richard Mulcahy 50 +10\nLabour Party William Norton 19 +2\nClann na Talmhan Joe Blowick 5 -1\nClann na Poblachta Seán McBride 3 +1\nSinn Féin Margaret Buckley 0 New\nIndependents N/A 5 -9",
+  "stem": "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.",
+  "questionFigureKey": "history-2020-ol-lm-s2t6a-table",
+  "questionFigureIncludesPrompt": false,
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL EXTRACT",
@@ -93900,7 +93914,9 @@
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
-  "stem": "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.\n\nGeneral Election, 1954\nPARTY LEADER SEATS WON +/- CHANGE\nFianna Fáil Éamon de Valera 65 -4\nFine Gael Richard Mulcahy 50 +10\nLabour Party William Norton 19 +2\nClann na Talmhan Joe Blowick 5 -1\nClann na Poblachta Seán McBride 3 +1\nSinn Féin Margaret Buckley 0 New\nIndependents N/A 5 -9",
+  "stem": "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.",
+  "questionFigureKey": "history-2020-ol-lm-s2t6a-table",
+  "questionFigureIncludesPrompt": false,
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL EXTRACT",
@@ -93941,7 +93957,9 @@
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
-  "stem": "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.\n\nGeneral Election, 1954\nPARTY LEADER SEATS WON +/- CHANGE\nFianna Fáil Éamon de Valera 65 -4\nFine Gael Richard Mulcahy 50 +10\nLabour Party William Norton 19 +2\nClann na Talmhan Joe Blowick 5 -1\nClann na Poblachta Seán McBride 3 +1\nSinn Féin Margaret Buckley 0 New\nIndependents N/A 5 -9",
+  "stem": "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.",
+  "questionFigureKey": "history-2020-ol-lm-s2t6a-table",
+  "questionFigureIncludesPrompt": false,
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL EXTRACT",
@@ -93976,7 +93994,9 @@
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
-  "stem": "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.\n\nGeneral Election, 1954\nPARTY LEADER SEATS WON +/- CHANGE\nFianna Fáil Éamon de Valera 65 -4\nFine Gael Richard Mulcahy 50 +10\nLabour Party William Norton 19 +2\nClann na Talmhan Joe Blowick 5 -1\nClann na Poblachta Seán McBride 3 +1\nSinn Féin Margaret Buckley 0 New\nIndependents N/A 5 -9",
+  "stem": "The following chart shows the results of the general election of 1954. The fourth column represents the number of seat gains or losses (+ or -) from the previous election in 1951. Study this chart and answer the questions which follow.",
+  "questionFigureKey": "history-2020-ol-lm-s2t6a-table",
+  "questionFigureIncludesPrompt": false,
   "sourceMaterial": {
    "kind": "source-text",
    "label": "OFFICIAL EXTRACT",

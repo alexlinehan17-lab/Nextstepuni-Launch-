@@ -79,6 +79,7 @@ from hist_paper import HistPaper, FIELDS                      # noqa: E402
 from hist_scheme import HistScheme, GRID_WORDS, NOTE_CAP      # noqa: E402
 from hist_topics import topic_for, concept_for, TITLES        # noqa: E402
 from hist_rows import split_priced                           # noqa: E402
+from hist_figures import figure_key                          # noqa: E402
 from align import bag, score                                  # noqa: E402
 
 LEVELS = ('hl', 'ol')
@@ -688,6 +689,12 @@ def build():
                         stem = f'Case study: {P.case_title}'
                     if stem and len(stem) >= 20:
                         card['stem'] = stem
+                    if unit in P.tables:
+                        # A unit set on a printed chart: the stem is its
+                        # instruction alone, and the chart itself, cropped
+                        # from the page (hist_figures), stands beside it.
+                        card['questionFigureKey'] = figure_key(year, level, field, unit)
+                        card['questionFigureIncludesPrompt'] = False
                     pages = (P.document_pages if unit == '1'
                              else [P.unit_pages[unit]])
                     card['sourceMaterial'] = source_material(

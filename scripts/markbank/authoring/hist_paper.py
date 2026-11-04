@@ -267,6 +267,13 @@ def _opens_paragraph(prev, line, edge, right, verse):
 
 
 def paragraphs(stem_lines):
+    """The printed lines of an extract as the paper sets them out, as text."""
+    return '\n\n'.join(
+        '\n'.join(' '.join(' '.join(t for t, _l in para).split()) for para in block)
+        for block in layout(stem_lines) if block)
+
+
+def layout(stem_lines):
     """The printed lines of an extract as the paper sets them out.
 
     An Ordinary Part A opens with the SEC's own instruction ("In this edited
@@ -282,7 +289,10 @@ def paragraphs(stem_lines):
     `stem_lines` are (text, Line) pairs: the text is the reader's own, misprint
     repairs and all; the Line says where it sat. The edges are measured within
     the lines between two gaps, so an extract set in from the margin as a whole
-    is one block, not one paragraph to a line. A page turn is not a gap."""
+    is one block, not one paragraph to a line. A page turn is not a gap.
+
+    Returns the blocks, each a list of paragraphs, each a list of the (text,
+    Line) pairs it was set from."""
     blocks = []
     for text, line in stem_lines:
         prev = blocks[-1][-1][1] if blocks else None
@@ -315,9 +325,9 @@ def paragraphs(stem_lines):
             if i == 0 or _opens_paragraph(block[i - 1][1], line, edge, right,
                                           verse):
                 paras.append([])
-            paras[-1].append(text)
-        out.append('\n'.join(' '.join(' '.join(p).split()) for p in paras))
-    return '\n\n'.join(b for b in out if b)
+            paras[-1].append((text, line))
+        out.append(paras)
+    return out
 
 
 class HistPaper:
@@ -346,6 +356,7 @@ class HistPaper:
         self.document_pages = []
         self.cover_marks = None
         self.instructions = {}
+        self.tables = {}
         self._read()
 
     # -- reading ---------------------------------------------------------
@@ -545,7 +556,20 @@ class HistPaper:
                 cur = (unit_key(), int(m.group(1)), None, None)
                 buf = [m.group(2)]
                 if part == 'A' and stem_buf:
-                    self.stems[unit_key()] = paragraphs(stem_buf)
+                    if any(line.widest_space > COLUMN_SPACE for _t, line in stem_buf):
+                        # A unit set on a printed TABLE (the election charts of
+                        # 2015, 2016, 2018 and 2020 Ordinary). Its rows read as
+                        # text are a run of words ("Fianna Fáil Eamon de Valera
+                        # 69 77"), never a table, so the stem is the printed
+                        # instruction alone, and the chart's own lines (its
+                        # title, header and rows) are kept to be cropped from
+                        # the page as the card's question figure (hist_figures).
+                        first = layout(stem_buf)[0][0]
+                        self.stems[unit_key()] = ' '.join(
+                            ' '.join(t for t, _l in first).split())
+                        self.tables[unit_key()] = [l for _t, l in stem_buf[len(first):]]
+                    else:
+                        self.stems[unit_key()] = paragraphs(stem_buf)
                     stem_buf = []
                 continue
             if cur is not None:
