@@ -42,6 +42,7 @@ BULLET = re.compile(r'^[•●·‣➢▪\-]\s*')
 LINE_TOL = 3.0
 
 _DOCS = {}
+ENG_GLYPHS = {'\u019e': 'tf'}
 
 
 def path_for(year, level, doc):
@@ -101,6 +102,13 @@ def lift(year, level, doc, page, rect, *, bullet=True, more=()):
         rows += _lines(year, level, doc, page, r)
     text = ' '.join(' '.join(w[4] for w in ws) for _, ws in rows)
     text = unligature(' '.join(text.replace('\xa0', ' ').split()))
+    # Glyphs the shared ligature fold (schemeText.mjs) does not know, as the
+    # 2026 Engineering schemes set them: Calibri's "tf" ligature reaches the
+    # text layer as U+019E, so "platform" reads "plaƞorm". Repaired here, for
+    # Engineering's own lifts only; the recorded lift carries the repaired
+    # word into the .md, where the provenance gate finds it.
+    for glyph, letters in ENG_GLYPHS.items():
+        text = text.replace(glyph, letters)
     if bullet:
         text = BULLET.sub('', text).strip()
     if not text:

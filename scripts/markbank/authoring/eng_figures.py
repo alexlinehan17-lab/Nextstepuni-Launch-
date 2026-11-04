@@ -532,6 +532,16 @@ REJECTED = {
     (2024, 'ol', 5, 'a', 'ii'): 'one of the items the ask says are shown',
     (2024, 'ol', 5, 'a', 'ii'): 'the item captions are clipped in half at the foot',
     (2025, 'hl', 5, 'c', 'iii'): 'the last stages of the process are clipped off',
+    # 2026 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    (2026, 'hl', 1, 'f', None): 'clips the "dryer" label on the left',
+    **{(2026, 'hl', 4, 'b', r): 'clips the axis numbers and both axis titles'
+       for r in ('i', 'ii', 'iii')},
+    **{(2026, 'hl', 6, 'a', r): 'takes in the page\'s "(50 marks)" heading'
+       for r in ('i', 'ii', 'iii')},
+    **{(2026, 'hl', 7, 'c', r): 'a stray glyph from the ask in its corner'
+       for r in ('i', 'ii', 'iii')},
+    **{(2026, 'hl', 9, 'a', r): 'takes in the page\'s "(50 marks)" heading'
+       for r in ('i', 'ii')},
 }
 
 
@@ -550,6 +560,11 @@ def worklist():
     out = []
     idx = R.leaf_index(census_subject('engineering'))
     for (year, level, _), leaves in sorted(idx.items()):
+        # A sitting whose scheme has not been extracted yet has nothing to
+        # card, and its Author cannot be built (eng_all skips it the same way).
+        if not os.path.exists(os.path.join(ROOT, 'examiner-reports', 'engineering',
+                                           'schemes', f'{year}-{level}.md')):
+            continue
         A = Author('engineering', year, level)
         for q, letter, roman in sorted(leaves):
             try:

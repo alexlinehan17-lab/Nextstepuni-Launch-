@@ -23568,5 +23568,3023 @@
   "notes": "The scheme prints 'Name Award 3 @ 3 Marks, Application Award 3 @ 3 Marks'.",
   "questionFigureKey": "engineering-2025-OL-paper-q7c-crop",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q1-b",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-safety-features-integrated-into-cnc",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q1(b)",
+  "questionText": "Identify two safety features integrated into a CNC lathe.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Emergency stop button: A large, easily accessible button that immediately shuts down all machine operations when pressed. It helps prevent injury or damage in the event of a malfunction or emergency.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Interlocking safety guards: Transparent protective enclosures that prevent access to moving parts during operation. These guards are often interlocked, meaning the machine will not run unless they are securely closed.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Software calibrated to run as safely as possible.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2026-hl-q1-h",
+  "topicId": "eng-3-14",
+  "conceptId": "discuss-contribution-any-following-has-made",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q1(h)",
+  "questionText": "Discuss the contribution that any one of the following has made to technology: (i) Nikola Tesla (ii) Eileen Gray (iii) Frank Whittle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Nikola Tesla: A Serbian-American inventor and engineer who developed the alternating current (AC) system, revolutionising electrical power transmission. He invented the AC motor and contributed to radio and wireless energy technologies, shaping modern electricity and communications.",
+    "marks": 5,
+    "accepts": [
+     "Eileen Gray: An Irish-born architect and designer, renowned for her innovative contributions to modernist architecture and furniture design. Gray is known for iconic pieces such as the E-1027 Table and the Bibendum Chair.",
+     "Frank Whittle: British engineer and inventor credited with developing the turbojet engine. His invention revolutionised aviation by enabling faster and more efficient jet- powered aircraft, laying the foundation for modern jet engines."
+    ]
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints 'Any one @ 5'."
+ },
+ {
+  "id": "eng-2026-hl-q1-j",
+  "topicId": "eng-3-7",
+  "conceptId": "ways-steel-may-be-protected-corrosion",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q1(j)",
+  "questionText": "Describe two ways in which steel may be protected from corrosion.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Galvanising: Coating steel with a layer of zinc to prevent rusting by acting as a barrier and sacrificial anode.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Painting or coating: Applying paint, enamel or other protective coatings to block moisture and air from reaching the steel surface.",
+    "marks": 2
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2026-hl-q1-k",
+  "topicId": "eng-1-3",
+  "conceptId": "briefly-why-metals-face-centred-cubic",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q1(k)",
+  "questionText": "Explain briefly why metals with a face centred cubic (FCC) structure tend to be more ductile than metals with a body centred cubic (BCC) structure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "FCC structure has a greater atom density than BCC. This allows metals to glide across each other without breaking bonds. This close pack structure makes FCC metals more ductile.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2026-hl-q1-l",
+  "topicId": "eng-3-14",
+  "conceptId": "how-do-global-positioning-system-gps",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q1(l)",
+  "questionText": "How do Global Positioning System (GPS) technologies support the efficient and safe operation of autonomous taxis?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "GPS provides accurate location tracking, allowing the vehicle to follow mapped routes and navigate to destinations. It works with digital maps to guide the vehicle, detect traffic conditions and choose the most efficient path.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2026-hl-q1-m",
+  "topicId": "eng-3-14",
+  "conceptId": "benefits-using-electric-powered-vehicles-urban",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q1(m)",
+  "questionText": "State two benefits of using electric powered vehicles in urban areas.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "EVs produce no exhaust emissions, helping improve air quality in cities. EVs are quieter than combustion engine vehicles, reducing noise pollution in urban environments.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '3 + 2'."
+ },
+ {
+  "id": "eng-2026-hl-q2-b-i",
+  "topicId": "eng-2-16",
+  "conceptId": "advantages-using-semiconductor-components-electronic-circuits",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q2(b)(i)",
+  "questionText": "Outline two advantages of using semiconductor components in electronic circuits.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Compact size, expands capability of circuits, consistent and reliable operation.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '3 + 2'."
+ },
+ {
+  "id": "eng-2026-hl-q2-b-ii",
+  "topicId": "eng-1-2",
+  "conceptId": "distinguish-examples-between-conductors-insulators-semiconductors",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q2(b)(ii)",
+  "questionText": "Distinguish, with examples, between conductors, insulators and semiconductors.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Electrical conductor: A material that allows electric current to flow through it easily because it has free electrons. Conductors offer very low resistance to the movement of electric charge. Examples include copper (used in electrical wiring) and aluminium (used in overhead power lines).",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Electrical insulator: A material that resists the flow of electric current because its electrons are tightly bound and not free to move. Insulators provide high resistance and prevent electrical conduction. Examples include PVC (used as insulation on electrical cables) and rubber (used in protective gloves for electrical work).",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Semiconductors: A material that will conduct electricity under certain conditions.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Silicon is the most common semiconductor.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '5'."
+ },
+ {
+  "id": "eng-2026-hl-q2-c-i",
+  "topicId": "eng-2-16",
+  "conceptId": "function-diode-function-transistor",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q2(c)(i)",
+  "questionText": "Outline the function of a diode and the function of a transistor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diode: allows current to flow in only one direction.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Transistor: A transistor can act as an electronic switch which stops or starts the flow of current or an amplifier that controls the flow of large currents relative to the small change in the control signal.",
+    "marks": 2
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q2-c-ii",
+  "topicId": "eng-2-16",
+  "conceptId": "structure-operation-transistor",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q2(c)(ii)",
+  "questionText": "Describe the structure and operation of a transistor.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A transistor is a three-terminal semiconductor functioning as an electronic switch or amplifier. The three terminals are emitter, base (or gate) and collector. It consists of three doped semiconductor layers forming two PN junctions.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "NPN Structure: A thin, lightly doped p-type base is sandwiched between two heavily doped n-type layers (emitter and collector).",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "PNP Structure: A thin, lightly doped n-type base is sandwiched between two heavily doped p-type layers.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '5'."
+ },
+ {
+  "id": "eng-2026-hl-q2-e-i",
+  "topicId": "eng-3-14",
+  "conceptId": "environmental-impact-production-semiconductor-chips-referring",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q2(e)(i)",
+  "questionText": "Outline the environmental impact of the production of semiconductor chips, referring to each of the following: Use of precious metals.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Many devices still contain recoverable metals and components including precious metals. Improper disposal leads to pollution and resource loss.",
+    "marks": 5
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q2-e-ii",
+  "topicId": "eng-2-16",
+  "conceptId": "environmental-impact-production-semiconductor-chips-referring",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q2(e)(ii)",
+  "questionText": "Outline the environmental impact of the production of semiconductor chips, referring to each of the following: Disposal of electronic waste after use.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Electronic waste is difficult to recycle due to the variety of materials to be separated and the small size of components. Semiconductor companies and governments are increasingly investing in sustainable production practices, improved recycling technologies, and circular-economy initiatives aimed at reducing the industry’s environmental footprint.",
+    "marks": 5
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q3-a-i",
+  "topicId": "eng-3-8",
+  "conceptId": "term-material-hardness",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q3(a)(i)",
+  "questionText": "Explain the term material hardness.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hardness is the ability of a material to resist denting, scratching and wear.",
+    "marks": 4
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q3ai-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q3-a-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "aid-diagram-s-vickers-hardness-test",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q3(a)(ii)",
+  "questionText": "Describe, with the aid of a diagram(s), the Vickers hardness test, with reference to: • indenter shape • test procedure • hardness calculation.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Vickers hardness test: A hard metal point, called an indenter, is pressed into the surface of the material being tested with a measured force. Softer materials will produce a deeper indentation. The test piece is considerably thicker than the indentation.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The test material is placed on a table, which can be adjusted for height.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A diamond square-based pyramid indenter is used in this hardness test.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The angle of the indenter is 136˚.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "The length of the diagonals (d₁ and d₂) of the indentation are measured.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Hardness Vickers (HV) number is calculated as follows; HV = Load / d₁.d₂",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "The Vickers test provides accurate results on a full range of test pieces.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'.",
+  "questionFigureKey": "engineering-2026-HL-paper-q3ai-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q3-a-iii",
+  "topicId": "eng-2-15",
+  "conceptId": "how-torsional-forces-may-affect-lifespan",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q3(a)(iii)",
+  "questionText": "Explain how torsional forces may affect the lifespan of the crankshaft.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Torsional forces are twisting forces that act along the axis of the crankshaft.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "These forces occur during engine operation as the crankshaft rotates and transmits power.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Repeated twisting can cause fatigue, leading to cracks or failure over time. It may also cause deformation, impact on engine performance and increase wear at stress points.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '4'.",
+  "questionFigureKey": "engineering-2026-HL-paper-q3ai-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q3-c-i",
+  "topicId": "eng-2-13",
+  "conceptId": "importance-quality-control-qc-production-motorcycle",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q3(c)(i)",
+  "questionText": "Explain the importance of quality control (QC) in the production of motorcycle components.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Safety: Ensures critical parts like brakes and engines meet safety standards.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Consistency: Maintains uniform quality across all components.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Cost efficiency: Reduces waste and rework by identifying defects early.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Customer satisfaction: Produces reliable components, improving user trust.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Regulatory compliance: Ensures parts meet legal and industry requirements.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'.",
+  "questionFigureKey": "engineering-2026-HL-paper-q3ci-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q3-c-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "aid-suitable-diagram-s-process-magnetic",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q3(c)(ii)",
+  "questionText": "Describe, with the aid of a suitable diagram(s), the process of magnetic particle testing.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This method detects surface and near-surface flaws in ferrous materials by exploiting their magnetic properties. The process involves magnetising the component and then applying magnetic particles onto its surface. Flaws such as cracks or cavities disrupt the uniform magnetic field, causing localised distortions. These distortions attract the magnetic particles, creating visible indications that reveal the presence and location of defects. Magnetic particle inspection provides highly reliable results ensuring compliance with safety and quality standards.",
+    "marks": 8
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q3ci-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q4-c-i",
+  "topicId": "eng-2-6",
+  "conceptId": "reasons-why-silver-usually-annealed-during",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q4(c)(i)",
+  "questionText": "Explain two reasons why silver is usually annealed during jewellery manufacture.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Annealing makes the silver softer and more malleable. This makes it easier for jewellers to shape, bend and form intricate designs without cracking or breaking.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The annealing process helps to reduce internal stresses and strain hardening caused by previous working (such as hammering or shaping). This reduces the risk of the silver becoming brittle and improves its overall workability.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'."
+ },
+ {
+  "id": "eng-2026-hl-q4-c-ii",
+  "topicId": "eng-2-6",
+  "conceptId": "identify-safety-hazards-associated-flame-hardening",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q4(c)(ii)",
+  "questionText": "Identify two safety hazards associated with the flame hardening process.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Risk of burns or fire due to the open flames and high temperatures associated with the heating process – wear PPE.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Bright flames and sparks can cause damage to the eyes.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Spitting of the water while impacting the heated surface could lead to burning.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Fumes could lead to dangerous gas levels in the work area.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Improper handling of gas cylinders or equipment malfunction can lead to explosions or accidents.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'."
+ },
+ {
+  "id": "eng-2026-hl-q4-c-iii",
+  "topicId": "eng-1-4",
+  "conceptId": "suitable-applications-cast-iron-justify-your",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q4(c)(iii)",
+  "questionText": "Outline two suitable applications of cast iron and justify your choices.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Engine blocks and machinery parts as cast iron will allow intricate shapes.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cookware such as skillets, pots and pans as cast iron will conduct heat effectively.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Manhole covers and drainage systems as cast iron is durable.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'."
+ },
+ {
+  "id": "eng-2026-hl-q5-a-i",
+  "topicId": "eng-1-5",
+  "conceptId": "reasons-why-bronze-suitable-manufacture-ship",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q5(a)(i)",
+  "questionText": "Outline two reasons why bronze is suitable for the manufacture of the ship’s propeller.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bronze has excellent resistance to corrosion, especially in seawater. This helps prevent deterioration of the propeller over time.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Bronze possesses high strength, toughness and good wear resistance, making it capable of withstanding the harsh conditions and mechanical stresses experienced by a ship’s propeller during operation.",
+    "marks": 2
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q5-a-ii",
+  "topicId": "eng-3-7",
+  "conceptId": "principle-sacrificial-protection-relation-bronze-propeller",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q5(a)(ii)",
+  "questionText": "Describe the principle of sacrificial protection in relation to the bronze propeller shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sacrificial protection involves using a more reactive metal to protect the bronze propeller from corrosion. A sacrificial anode made of a metal like zinc or magnesium, which is more reactive than bronze, is attached to the ship's hull or propeller. Due to electrochemical principles, the sacrificial anode corrodes (oxidizes), sacrificing itself to protect the bronze. This extends the lifespan of the propeller.",
+    "marks": 8
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q5-a-iii",
+  "topicId": "eng-3-7",
+  "conceptId": "why-regular-inspection-or-replacement-anodes",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q5(a)(iii)",
+  "questionText": "Explain why regular inspection or replacement of the anodes is necessary in marine environments.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Regular inspection and replacement of sacrificial anodes is essential because they gradually corrode over time, losing their protective effectiveness. If left unchecked, depleted anodes can no longer protect the vessel in the harsh marine environment.",
+    "marks": 4
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q5-c-i",
+  "topicId": "eng-1-3",
+  "conceptId": "aid-diagrams-process-dendritic-growth",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q5(c)(i)",
+  "questionText": "Describe, with the aid of diagrams, the process of dendritic growth.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "As a metal reaches its cooling point, small particles cool first. Solidification takes place in a pattern. This pattern is called Dendritic Growth and looks like the branches of a tree. Each small particle grows to form a crystal or grain. Crystals grow together to form a solid. This process is known as dendritic growth, from Greek word “dendron” for treelike.",
+    "marks": 8
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q5-c-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "aid-diagrams-any-crystal-point-defects",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q5(c)(ii)",
+  "questionText": "Describe, with the aid of diagrams, any two crystal point defects which may occur during the solidification process.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Substitute Defect This is where foreign atoms replace the parent atoms.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Vacancy Defect This is where there is an atom missing from the lattice.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Interstitial Defect This is where foreign atoms fit in between the parent atoms.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'."
+ },
+ {
+  "id": "eng-2026-hl-q6-a-iii",
+  "topicId": "eng-2-10",
+  "conceptId": "aid-diagram-s-key-principles-welding",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q6(a)(iii)",
+  "questionText": "Describe, with the aid of a diagram(s), the key principles of the welding process selected.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An arc is formed between the non-consumable tungsten electrode and the metal being welded. The inert gas shielded arc is used to flux the joint, argon or helium are typically used to prevent oxygen getting to the joint area.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A filler metal (welding rod) is added manually to the weld pool when necessary.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A high frequency generator provides a path for the welding current. Both AC and DC power can be used in TIG welding techniques.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "TIG welding is a highly skilled welding process and is generally a manual operation.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'."
+ },
+ {
+  "id": "eng-2026-hl-q6-b-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "identify-advantages-using-welding-helmet-shown",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q6(b)(ii)",
+  "questionText": "Identify two advantages of using the welding helmet shown opposite.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The lens darkens instantly when the arc is struck, protecting eyes from harmful light without the need to flip the helmet manually.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Welders can keep the helmet down between welds, saving time and maintaining positioning without interruptions, therefore increasing productivity.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Clear visibility before and after the weld helps with precise alignment and setup.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The welder also has both hands free without the need to hold a welding shield.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'.",
+  "questionFigureKey": "engineering-2026-HL-paper-q6bi-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q6-b-iii",
+  "topicId": "eng-2-10",
+  "conceptId": "reasons-using-jig-during-welding-procedure",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q6(b)(iii)",
+  "questionText": "Outline two reasons for using a jig during a welding procedure.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Accuracy – Ensures precise alignment and consistent welds.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Efficiency – Speeds up setup and reduces repositioning.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Safety – Holds parts securely, reducing movement and risk.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Less distortion – Helps control heat-related warping.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2026-hl-q6-b-iv",
+  "topicId": "eng-2-10",
+  "conceptId": "identify-safety-features-integrated-into-oxy",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q6(b)(iv)",
+  "questionText": "Identify three safety features integrated into oxy-acetylene welding equipment.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Low pressure acetylene and high-pressure oxygen cylinders and lines are colour coded.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Acetylene is stored in acetone to prevent explosion.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Regulators are fitted with different threads to prevent interchange.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Flashback arrestors are used.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2026-hl-q6-b-v",
+  "topicId": "eng-2-10",
+  "conceptId": "advantages-laser-beam-welding-lbw-over",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q6(b)(v)",
+  "questionText": "Explain two advantages of laser beam welding (LBW) over traditional welding methods.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Laser Beam Welding (LBW) offers high precision and deep, narrow welds with minimal distortion due to its concentrated heat input. It enables fast welding speeds and is well-suited for automation, making it ideal for high-volume or complex manufacturing. The process is versatile and clean, often requiring no filler material and producing little to no spatter.",
+    "marks": 6
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q7-a-i",
+  "topicId": "eng-1-9",
+  "conceptId": "suitable-process-used-manufacture-thermoplastic-tubing",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q7(a)(i)",
+  "questionText": "Name a suitable process used to manufacture the thermoplastic tubing and a suitable process used to manufacture the corner joints.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Thermoplastic tubes: Extrusion",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Thermoplastic Joints: Injection moulding",
+    "marks": 2
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q7ai-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q7-a-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "aid-diagram-s-polymer-manufacturing-process",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q7(a)(ii)",
+  "questionText": "Describe, with the aid of a diagram(s), the polymer manufacturing process you have selected for the thermoplastic tubing.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Plastic granules or pellets (commonly PVC or HDPE) are fed into the hopper of the extrusion machine and are transported along a heated barrel by a rotating screw. As they move forward, friction and external heaters melt the polymer into a thick, molten form.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The molten plastic is then forced through a shaping die designed to produce the long, hollow tube profile needed for goal posts. The die determines the cross-section (usually circular or square).",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The hot plastic tube exits the die and is immediately cooled, often in a water bath, so that it hardens and retains its shape. The continuous extruded tube is cut into lengths suitable for goal post uprights and crossbars.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'.",
+  "questionFigureKey": "engineering-2026-HL-paper-q7ai-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q7-a-iii",
+  "topicId": "eng-1-9",
+  "conceptId": "function-polymer-stabilisers-manufacture-goal-posts",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q7(a)(iii)",
+  "questionText": "Explain the function of polymer stabilisers in the manufacture of the goal posts shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Stabilisers are added to plastics to protect against heat, UV light and oxidation during outdoor use, helping maintain the goal posts strength, colour and durability over time.",
+    "marks": 4
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q7ai-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q7-b-i",
+  "topicId": "eng-1-9",
+  "conceptId": "advantages-using-polycarbonate-manufacture-machine-guard",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q7(b)(i)",
+  "questionText": "Describe two advantages of using polycarbonate in the manufacture of the machine guard shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Polycarbonate is extremely tough and can withstand strong impacts without shattering.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "It is transparent, allowing full visibility of machine operations.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "It is lightweight, easy to install and replace compared to glass or metal alternatives.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "It is durable long-lasting and resistant to wear, reducing the need for frequent replacement.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'.",
+  "questionFigureKey": "engineering-2026-HL-paper-q7bi-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q7-b-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "distinguish-between-polymer-recycling-polymer-upcycling",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q7(b)(ii)",
+  "questionText": "Distinguish between polymer recycling and polymer upcycling, and give an example of each.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Polymer recycling breaks down the plastics into raw materials for use again, these materials are collected, sorted, cleaned and reformed into pellets e.g. plastic bottles can be recycled to be moulded again.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Polymer upcycling transforms plastic objects into products of a higher quality or value e.g. transforming old plastic bags or wrappers into fashion items like wallets, phone cases or tote bags",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2026-hl-q7-b-iv",
+  "topicId": "eng-1-9",
+  "conceptId": "term-copolymer",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q7(b)(iv)",
+  "questionText": "Explain the term copolymer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Copolymer: When two or more different monomers are added together, their result is called a copolymer and the process is called copolymerisation. It is similar to the process of metal alloying.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Examples of copolymers include Acrylonitrile butadiene styrene (ABS), Nitrile rubber, Styrene-acrylonitrile, Styrene-isoprene-styrene (SIS) and Ethylene-vinyl acetate.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2026-hl-q7-c-i",
+  "topicId": "eng-1-9",
+  "conceptId": "term-elastomer",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q7(c)(i)",
+  "questionText": "Explain the term elastomer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An elastomer has long chainlike molecules that are capable of recovering their original shape after stretching. Elastomers are durable and flexible.",
+    "marks": 4
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q7-c-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "aid-diagram-internal-structure-elastomers",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q7(c)(ii)",
+  "questionText": "Describe, with the aid of a diagram, the internal structure of elastomers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A group of polymers consisting of linear chains that are coiled, entangled and are subject to minimal cross-linking. This irregular internal structure and bonding arrangement allows these materials to be very elastic at room temperature.",
+    "marks": 6
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q8-a-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "purpose-wheel-dressing-grinding-operations",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q8(a)(ii)",
+  "questionText": "Explain the purpose of wheel dressing in grinding operations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wheel dressing restores grinding wheel sharpness and corrects irregularities such as loss of concentricity or surface undulations. While wheels are designed to self-dress, dressing removes clogged or worn abrasive grains, exposing fresh cutting edges. This process improves cutting performance, surface finish and workpiece accuracy while also reducing vibration and overheating during grinding.",
+    "marks": 6
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q8-a-iii",
+  "topicId": "eng-2-11",
+  "conceptId": "safety-precautions-be-observed-when-operating",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q8(a)(iii)",
+  "questionText": "Outline two safety precautions to be observed when operating a grinding machine.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wear appropriate PPE – Use safety goggles/face shield, gloves to protect against sparks, metal fragments and abrasive particles that can fly off at high speeds.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Inspect the machine and wheel – Check for cracks or damage before use; ensure the wheel is properly mounted and rated for the machine speed.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Use the wheel guard – Always keep the guard in place to protect against flying debris.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Secure the workpiece – Hold or clamp it firmly to prevent slipping or kickback.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Avoid loose clothing and jewellery – These can get caught in moving parts.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Do not apply excessive force – Let the wheel do the cutting to avoid breakage.",
+    "marks": null
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q8-b-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-hazards-associated-use-coolants-machining",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q8(b)(ii)",
+  "questionText": "Identify two hazards associated with the use of coolants in machining.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The use of coolants poses several hazards, including eye damage from splashing and skin irritation.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Metal swarf may be gathered while machining, this may contaminate the coolant.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Machine parts and materials can become slippery after coolant use.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2026-hl-q8-b-iii",
+  "topicId": "eng-2-11",
+  "conceptId": "methods-used-prevent-built-up-edge",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q8(b)(iii)",
+  "questionText": "Outline two methods used to prevent a built-up edge when machining.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Use of cutting fluids.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Select correct cutting speed for the metal.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Use appropriate feed rate and depth of cut.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Ensure good condition of the cutting tools in terms of geometry and sharpness.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2026-hl-q8-b-iv",
+  "topicId": "eng-2-11",
+  "conceptId": "examples-difference-between-four-jaw-independent",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q8(b)(iv)",
+  "questionText": "Describe, with examples, the difference between a four-jaw independent chuck and a three-jaw self centring chuck.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A four-jaw independent chuck has four jaws that can be moved separately, each adjusted with a chuck key. This allows irregular shapes (e.g. square or non-cylindrical workpieces) to be held securely. It also allows off-centre or eccentric turning because the workpiece does not need to be centred. It takes longer to set up as the jaws must be adjusted individually, often with a dial indicator for accuracy.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A three-jaw self-centring chuck has three jaws linked together by a scroll mechanism.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "When the chuck key is turned, all three jaws move at the same time, automatically  centring round or hexagonal workpieces. It is quicker and easier to set up but is less versatile than a four-jaw chuck.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2026-hl-q9-b-ii",
+  "topicId": "eng-2-15",
+  "conceptId": "function-fulcrum-relation-levers",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q9(b)(ii)",
+  "questionText": "Outline the function of the fulcrum in relation to levers.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The fulcrum acts as the pivot point around which the lever rotates, allowing the lever to amplify force or change the direction of effort applied.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The position of the fulcrum will determine the lifting power of a lever as well as the class or type of lever.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2026-hl-q9-b-iii",
+  "topicId": "eng-2-15",
+  "conceptId": "identify-mechanical-coupling-shown-opposite-suitable",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q9(b)(iii)",
+  "questionText": "Identify the mechanical coupling shown opposite and state one suitable application of the coupling.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Universal Joint. Applications include vehicle drive shaft, PTO outlets, socket sets, etc.",
+    "marks": 6
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q9bi-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q9-b-iv",
+  "topicId": "eng-2-16",
+  "conceptId": "purpose-colour-coded-bands-found-resistor",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q9(b)(iv)",
+  "questionText": "Explain the purpose of the colour-coded bands found on a resistor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The colour-coded bands on a resistor indicate its resistance value and tolerance, allowing quick identification of the resistor’s electrical properties without needing to measure it.",
+    "marks": 6
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q1-a",
+  "topicId": "eng-3-14",
+  "conceptId": "advantages-using-quick-response-qr-codes",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q1(a)",
+  "questionText": "State two advantages of using Quick Response (QR) codes in engineering applications.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Fast and easy data access – QR codes can be scanned quickly using smartphones or scanners to instantly access information, such as product details, websites or instructions.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Compact and high data capacity – They can store more information than traditional barcodes in a smaller space, including text, URLs and tracking data.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "They improve efficiency in inventory management and product identification.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2026-hl-q1-c",
+  "topicId": "eng-1-4",
+  "conceptId": "aid-diagram-s-process-magnetic-separation",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q1(c)",
+  "questionText": "Describe, with the aid of a diagram(s), the process of magnetic separation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ore is crushed and poured over a rotating drum which contains a fixed magnet. The magnetic ore (ferrous) is held to the drum until the waste has fallen off. This separation technique can be useful in mining iron as it is attracted to a magnet.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "figureKey": "engineering-2026-HL-scheme-q1c-sol"
+ },
+ {
+  "id": "eng-2026-hl-q1-d",
+  "topicId": "eng-2-15",
+  "conceptId": "mechanism-could-be-used-tilt-lifting",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q1(d)",
+  "questionText": "Outline one mechanism that could be used to tilt the lifting platform shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The lifting platform can be tilted with the use of a hydraulic cylinder which will raise the back of the platform causing it to tilt.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "figureKey": "engineering-2026-HL-scheme-q1d-sol",
+  "questionFigureKey": "engineering-2026-HL-paper-q1d-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q1-e",
+  "topicId": "eng-3-12",
+  "conceptId": "differentiate-aid-diagram-s-between-clearance",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q1(e)",
+  "questionText": "Differentiate, with the aid of a diagram(s), between a clearance fit and an interference fit.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A clearance fit has a gap between the parts allowing them to move freely.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "An interference fit requires force to allow the parts to fit together.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '5'.",
+  "figureKey": "engineering-2026-HL-scheme-q1e-sol"
+ },
+ {
+  "id": "eng-2026-hl-q1-f",
+  "topicId": "eng-3-14",
+  "conceptId": "dyson-airblade-wash-dry-hand-dryer",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q1(f)",
+  "questionText": "The Dyson Airblade Wash+Dry hand dryer, shown opposite, is an innovative appliance. Outline two attributes of this design.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Combines hand-washing and drying in a single contactless tap.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Infrared sensors automatically switch between water flow and high-speed air.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Fast and efficient, it eliminates the need to move from sink to a separate dryer.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Touch-free, enhances hygiene and cleanliness in public washrooms.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Reduces surface contact and prevents water dripping onto the floor.",
+    "marks": null
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q1f-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q1-g",
+  "topicId": "eng-1-4",
+  "conceptId": "identify-suitable-material-manufacture-wash-dry",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q1(g)",
+  "questionText": "Identify a suitable material for the manufacture of the Wash+Dry appliance shown. Justify your selection.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Material: Stainless Steel",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Justification: Stainless steel resists rust and corrosion from constant exposure to water. It is strong enough to withstand daily use and impact without deforming. Stainless steel is easy to clean and does not harbour bacteria, making it ideal for sanitary environments. It has a sleek, modern look that suits public and commercial washrooms.",
+    "marks": 2
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "questionFigureKey": "engineering-2026-HL-paper-q1f-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q1-i",
+  "topicId": "eng-3-14",
+  "conceptId": "used-tyres-have-been-upcycled-create",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q1(i)",
+  "questionText": "Used tyres have been upcycled to create the lounge chair shown. Outline two benefits of upcycling.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reduces waste: Upcycling transforms old or discarded materials into new products, keeping them out of landfill and reducing environmental pollution.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Conserves resources: By reusing existing materials, upcycling decreases the need for new raw materials, saving energy and natural resources.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Creates a mindset of the reuse of materials which will reduce waste.",
+    "marks": null
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q1i-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q2-a",
+  "topicId": "eng-2-16",
+  "conceptId": "arm-holdings-plc-has-provided-primary",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q2(a)",
+  "questionText": "Arm Holdings plc has provided primary architecture for mobile phone chips since the advent of the modern smartphone. This company plays a key role in phone semiconductor technology. Describe three smartphone functions that depend on semiconductor technology.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 3 + 3"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Processing capability of smartphones allows communication to be handled, acts as CPU, enables OS procedures, runs apps, processes AI, etc.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Data storage on DRAM provide fast processing memory.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Camera functionality is enabled.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Display ICs control colour and image pixels.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "MOSFETs and power management control energy use and battery power.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Semiconductors allow high-speed connectivity.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Semiconductor sensors enable facial recognition, gyroscopes and touchscreens.",
+    "marks": null
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q2-d",
+  "topicId": "eng-2-16",
+  "conceptId": "during-production-semiconductive-materials-sliced-thin",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q2(d)",
+  "questionText": "During production, semiconductive materials are sliced in thin wafers, polished and fabricated. Describe the process of doping in semiconductor production.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Semiconductor doping is the deliberate process of introducing impurities into pure semiconductor materials to modulate their electrical properties. This manufacturing step allows silicon and other semiconductors to conduct electricity in precise ways to enable all modern electronics.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "N-type doping adds atoms like phosphorus, which have one more valence electron than silicon. These extra electrons are not needed for bonding, so they can easily move into the conduction band and help carry electric current. The movement of a free electron supplied by a phosphorus dopant atom which becomes free to move through the silicon lattice and contribute to conduction.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "P-type doping adds atoms like boron, which create more holes in the valence band, helping electrons move. An electron moves to fill a hole created by the boron dopant. As electrons move from one atom to another, the hole appears to move in the opposite direction. Electrical current flows in p-type material through the apparent movement of holes.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '10'.",
+  "figureKey": "engineering-2026-HL-scheme-q2d-sol"
+ },
+ {
+  "id": "eng-2026-hl-q3-b-i",
+  "topicId": "eng-3-8",
+  "conceptId": "using-graph-paper-supplied-plot-stress",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q3(b)(i)",
+  "questionText": "Using the graph paper supplied, plot the stress-strain graph for the alloy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Using the graph paper supplied, plot the stress-strain graph for the alloy.",
+    "marks": 10,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints 'Stress-strain graph', 10 marks.",
+  "figureKey": "engineering-2026-HL-scheme-q3bi-sol",
+  "questionFigureKey": "engineering-2026-HL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q3-b-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "calculate-young-s-modulus-elasticity-alloy",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q3(b)(ii)",
+  "questionText": "Calculate Young’s Modulus of Elasticity for the alloy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calculate Young’s Modulus of Elasticity for the alloy.",
+    "marks": 4,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "figureKey": "engineering-2026-HL-scheme-q3bii-sol",
+  "questionFigureKey": "engineering-2026-HL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q3-b-iii",
+  "topicId": "eng-3-8",
+  "conceptId": "distinguish-aid-diagrams-between-ductile-fracture",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q3(b)(iii)",
+  "questionText": "Distinguish, with the aid of diagrams, between ductile fracture and brittle fracture in tensile testing.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "In a tensile test, ductile fracture involves significant plastic deformation before failure, while brittle fracture occurs with little or no plastic deformation.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Brittle materials, such as brass, fracture suddenly with minimal elongation and the fracture surface is typically flat and clean.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Ductile materials, like aluminium, stretch and deform considerably before breaking, often showing signs of necking and a cup-and-cone shaped fracture surface.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '4'."
+ },
+ {
+  "id": "eng-2026-hl-q4-a-i",
+  "topicId": "eng-2-6",
+  "conceptId": "compare-material-properties-axe-axe-b",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q4(a)(i)",
+  "questionText": "Compare the material properties of axe A and axe B after cooling.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Axe A: Slow air cooling produces a softer, more ductile microstructure like pearlite or ferrite, resulting in higher impact resistance but lower wear resistance.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Axe B: Rapid quenching forms martensite, making the axe harder and more resistant to cutting and wear, but also more brittle and prone to fracture under sudden forces.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '4'.",
+  "questionFigureKey": "engineering-2026-HL-paper-q4a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q4-a-ii",
+  "topicId": "eng-2-6",
+  "conceptId": "identify-axe-would-be-more-suitable",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q4(a)(ii)",
+  "questionText": "Identify which axe would be more suitable for competitive axe throwing and justify your choice.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Axe B.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This is because its higher hardness and wear resistance, resulting from the martensitic microstructure, allow it to maintain a sharp edge longer and resist wear.",
+    "marks": 6
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q4a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q4-a-iii",
+  "topicId": "eng-2-6",
+  "conceptId": "reasons-tempering-axe-b-after-quenching",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q4(a)(iii)",
+  "questionText": "Outline two reasons for tempering axe B after quenching.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tempering decreases the hardness and brittleness left by hardening, making the axe less prone to cracking or shattering under impact.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "It enhances the toughness of the axe, allowing it to absorb shocks and impacts better during use, which is essential for safe and effective chopping.",
+    "marks": 2
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q4a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q4-b-i",
+  "topicId": "eng-1-3",
+  "conceptId": "identify-regions-b-c-d-shown",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q4(b)(i)",
+  "questionText": "Identify the regions A, B, C and D shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Liquid",
+    "marks": 1
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = Austenite",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C = Ferrite and Pearlite",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D = Pearlite and Cementite",
+    "marks": 1
+   }
+  ],
+  "figureKey": "engineering-2026-HL-paper-q4b-crop",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Liquid",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Austenite",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Ferrite and Pearlite",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Pearlite and Cementite",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q4-b-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "identify-significance-point-x-point-y",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q4(b)(ii)",
+  "questionText": "Identify and explain the significance of point X and point Y on the diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Point X is called the eutectic point.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This is where the liquid steel turns into solid steel without going through a pasty stage. It occurs at approximately 1140°C and 4.3% carbon content.",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Point Y is called the eutectoid point.",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "At this point solid austenite changes to solid pearlite at approximately 723°C at 0.83% carbon content.",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prints 'Identify 2 + 2, Explain 2 + 2'.",
+  "questionFigureKey": "engineering-2026-HL-paper-q4b-crop",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "the eutectic point.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Y",
+    "meaning": "the eutectoid point.",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q4-b-iii",
+  "topicId": "eng-2-6",
+  "conceptId": "aid-diagram-suitable-method-accurately-measuring",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q4(b)(iii)",
+  "questionText": "Describe, with the aid of a diagram, one suitable method of accurately measuring furnace temperature when heat treating steel.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The optical pyrometer method compares the intensity of light from the filament of a lamp with the colour from the furnace. Current flow from the lamp can be adjusted, using a variable resistor, to match the light from the furnace.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "There are three possible results with the optical pyrometer: filament too bright, filament not bright enough and filament matching the furnace colour. When the filament seems to ‘disappear’, the temperature of the filament matches that of the furnace and a reading can then be established.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6'.",
+  "figureKey": "engineering-2026-HL-scheme-q4biii-sol"
+ },
+ {
+  "id": "eng-2026-hl-q5-b-i",
+  "topicId": "eng-1-3",
+  "conceptId": "draw-equilibrium-diagram-according-given-data",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q5(b)(i)",
+  "questionText": "Draw the equilibrium diagram according to the given data and label the liquidus and solidus lines.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Equilibrium diagram with liquidus and solidus lines labelled",
+    "marks": 8
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Liquidus line",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "Solidus line",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prints '8 + 1 + 1'.",
+  "figureKey": "engineering-2026-HL-scheme-q5bi-sol",
+  "questionFigureKey": "engineering-2026-HL-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q5-b-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "determine-diagram-ratio-phases-1250-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q5(b)(ii)",
+  "questionText": "Determine from the diagram the ratio of the phases at 1250°C for the alloy with 50% metal B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Determine from the diagram the ratio of the phases at 1250°C for the alloy with 50% metal B.",
+    "marks": 4,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "figureKey": "engineering-2026-HL-scheme-q5bii-sol",
+  "questionFigureKey": "engineering-2026-HL-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q5-b-iii",
+  "topicId": "eng-1-3",
+  "conceptId": "sketch-cooling-curve-alloy-20-metal",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q5(b)(iii)",
+  "questionText": "Sketch the cooling curve for the alloy with 20% metal B, referring to the solidification temperatures in the table above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "As the 20% alloy cools, it begins to solidify at 1220 °C and becomes a solid alloy at 1090 °C.",
+    "marks": 4
+   }
+  ],
+  "figureKey": "engineering-2026-HL-scheme-q5biii-sol",
+  "questionFigureKey": "engineering-2026-HL-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q5-c-iii",
+  "topicId": "eng-1-3",
+  "conceptId": "effects-cold-working-material-properties-internal",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q5(c)(iii)",
+  "questionText": "Outline the effects of cold working on the material properties and internal structure of metals.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cold working of metals involves deforming the material below its recrystallisation temperature, which results in increased strength and hardness due to strain hardening. Internally, it introduces dislocations and residual stresses, making the metal more brittle and prone to cracking.",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme prints 'Any two @ 8 + 8'."
+ },
+ {
+  "id": "eng-2026-hl-q6-a-i",
+  "topicId": "eng-1-5",
+  "conceptId": "reasons-why-tubular-aluminium-suitable-manufacture",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q6(a)(i)",
+  "questionText": "Outline two reasons why tubular aluminium is suitable for the manufacture of the lighting truss shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "High strength-to-weight ratio: Tubular aluminium is lightweight yet strong, which makes tubular aluminium ideal for trusses that need to support heavy lighting equipment while being easy to transport, handle and install.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Corrosion resistance: Aluminium naturally forms an oxide layer that protects it from corrosion. This makes tubular aluminium suitable for both indoor and outdoor use, ensuring durability and a long service life in various environments.",
+    "marks": 2
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q6a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q6-a-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "select-suitable-welding-process-fabrication-aluminum",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q6(a)(ii)",
+  "questionText": "Select a suitable welding process for the fabrication of the aluminum truss and give one reason for your choice.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Suitable welding process: Tungsten Inert Gas (TIG) welding.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reason: TIG welding is suitable for aluminium and offers precise heat control, therefore minimising warping and burn-through of the thin-walled tubes. TIG produces clean, high-quality welds which are strong and aesthetically pleasing.",
+    "marks": 2
+   }
+  ]
+ },
+ {
+  "id": "eng-2026-hl-q6-b-i",
+  "topicId": "eng-2-10",
+  "conceptId": "examples-difference-between-consumable-non-consumable",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q6(b)(i)",
+  "questionText": "Explain, with examples, the difference between consumable and non-consumable electrodes used in welding.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Consumable electrodes melt and become part of the weld joint. They act as both the electrode and the filler metal. In MIG (Metal Inert Gas) welding, a continuous wire electrode melts to form the weld.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Non-consumable electrodes do not melt during welding. In TIG (Tungsten Inert Gas) welding, a tungsten electrode provides the arc and a separate filler rod may be added manually.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+ },
+ {
+  "id": "eng-2026-hl-q6-c-i",
+  "topicId": "eng-2-10",
+  "conceptId": "meaning-weld-porosity-methods-used-prevent",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q6(c)(i)",
+  "questionText": "Welding defects include porosity, cracking and incomplete fusion. Explain the meaning of weld porosity and outline two methods used to prevent weld porosity occurring.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Weld porosity refers to small holes or gas pockets that form inside a weld, caused by trapped gases during the welding process. This can weaken the strength and quality of the weld.",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Clean the material thoroughly by removing oil, rust, paint and moisture from the metal surface before welding.",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Use correct shielding methods such as argon gas to protect the weld area from air contamination.",
+    "marks": 2
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR, welding defects and the Dexai robotic arm; the scheme prices their (i)s and (ii)s differently, so each branch is a card of its own.",
+  "questionFigureKey": "engineering-2026-HL-paper-q6c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q6-c-i-or",
+  "topicId": "eng-2-10",
+  "conceptId": "meaning-weld-porosity-methods-used-prevent",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q6(c)(i) — robotic arms",
+  "questionText": "The Dexai robotic arm shown is a collaborative robot used in commercial kitchens to automate food preparation tasks. Identify two other areas where robotic arms are used in modern engineering industries.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Automated welding – Used in automotive and manufacturing industries for precision welding.",
+    "marks": 8,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Automated welding – Used in automotive and manufacturing industries for precision welding.",
+      "Assembly line operations – Robotic arms can assemble components quickly and accurately in electronics, aerospace and machinery production.",
+      "Spray painting – Used to apply paint evenly and efficiently in industries such as automotive and appliance manufacturing, improving finish quality and reducing waste."
+     ]
+    }
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR, welding defects and the Dexai robotic arm; the scheme prices their (i)s and (ii)s differently, so each branch is a card of its own.",
+  "questionFigureKey": "engineering-2026-HL-paper-q6c-or-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q6-c-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "why-weld-cracks-or-incomplete-fusion",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q6(c)(ii)",
+  "questionText": "Welding defects include porosity, cracking and incomplete fusion. Outline why weld cracks or incomplete fusion may occur during welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Weld cracks may occur from rapid cooling, high residual stress, or using the wrong filler material. They often start at weak points and can spread through the weld.",
+    "marks": 6,
+    "accepts": [
+     "Incomplete fusion happens when the weld metal does not fully bond with the base metal or previous weld passes. This is usually caused by insufficient heat, poor technique or incorrect welding angles."
+    ]
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR, welding defects and the Dexai robotic arm; the scheme prices their (i)s and (ii)s differently, so each branch is a card of its own.",
+  "questionFigureKey": "engineering-2026-HL-paper-q6c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q6-c-ii-or",
+  "topicId": "eng-2-10",
+  "conceptId": "why-weld-cracks-or-incomplete-fusion",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q6(c)(ii) — robotic arms",
+  "questionText": "The Dexai robotic arm shown is a collaborative robot used in commercial kitchens to automate food preparation tasks. Explain the following terms in relation to robotic arm control: • Working envelope • Degrees of freedom.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Working envelope: Working envelope refers to the three-dimensional space within which a robotic arm can move and operate. It defines the maximum range or boundary that the robot can reach in all directions, based on its design, joint configuration and axis movement.",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Degrees of freedom: The degrees of freedom (DOF) describe the number of independent movements a robotic arm can make. Each joint or axis adds one degree of freedom. Having 6 DOF allows the robot to place its tool anywhere within its workspace and orient it in any required direction.",
+    "marks": 4
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR, welding defects and the Dexai robotic arm; the scheme prices their (i)s and (ii)s differently, so each branch is a card of its own.",
+  "questionFigureKey": "engineering-2026-HL-paper-q6c-or-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q7-b-iii",
+  "topicId": "eng-1-9",
+  "conceptId": "difference-between-linear-cross-linked-polymer",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q7(b)(iii)",
+  "questionText": "Explain the difference between linear and cross-linked polymer structures.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Linear polymer structure Made up of long, straight chains of repeating units (monomers). Chains are loosely held together by weak van der Waals forces, allowing flexibility and easy melting or reshaping. Example: Polyethylene (used in plastic bags).",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cross-linked polymer structure Polymer chains are connected by covalent bonds at various points, forming a rigid, three- dimensional network. These materials are tougher, heat-resistant, and cannot be remelted or reshaped once set. Example: Epoxy resin or vulcanised rubber.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+ },
+ {
+  "id": "eng-2026-hl-q7-b-v",
+  "topicId": "eng-1-9",
+  "conceptId": "reasons-why-polylactic-acid-pla-suitable",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q7(b)(v)",
+  "questionText": "Outline two reasons why polylactic acid (PLA) is suitable for use in the manufacture of agricultural products such as the mulch film shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "PLA is biodegradable and breaks down naturally in soil, reducing plastic pollution and eliminating the need for removal after use.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "PLA is made from renewable source such as plant-based materials like corn starch, making it more sustainable than petroleum-based plastics.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "PLA is strong and flexible enough to protect crops while allowing water and air to pass through.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "PLA is safe for the environment and does not release harmful chemicals as it degrades, supporting healthier soil and crops.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'.",
+  "questionFigureKey": "engineering-2026-HL-paper-q7bv-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q7-c-iii",
+  "topicId": "eng-1-9",
+  "conceptId": "advantages-using-3d-printed-elastomer-production",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q7(c)(iii)",
+  "questionText": "Describe two advantages of using 3D-printed elastomer in the production of the saddle seat shown.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Elastomers provide flexible cushioning that can be custom made for the riders’ needs through 3D printing.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The material is light, helping reduce the overall weight of the saddle and bike.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Elastomers absorb shocks and vibrations, improving comfort.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "3D printing allows for intricate designs that improve ergonomics and ventilation.",
+    "marks": null
+   }
+  ],
+  "questionFigureKey": "engineering-2026-HL-paper-q7ciii-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q8-a-i",
+  "topicId": "eng-2-11",
+  "conceptId": "aid-diagram-s-difference-between-loading",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q8(a)(i)",
+  "questionText": "Describe, with the aid of a diagram(s), the difference between loading and glazing of grinding wheels.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Loading: a grinding wheel becomes loaded with small particles when grinding debris becomes trapped in the space between the abrasive grains and the wheel. This will cause overheating of the work piece",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Glazing: the grinding wheel has a shiny appearance as the abrasive particles have lost their edge and failed to break away from the wheel. The grinding wheel will not cut effectively. These faults are caused by inappropriate choice of grinding wheel for the material being ground.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6'."
+ },
+ {
+  "id": "eng-2026-hl-q8-b-i",
+  "topicId": "eng-2-11",
+  "conceptId": "distinguish-between-forming-generating-using-labelled",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q8(b)(i)",
+  "questionText": "Distinguish between forming and generating using labelled diagrams to support your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Forming involves the creation of workpiece shape due to the shape of the cutting tool; common examples include form turning and drilling.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Generating refers to the creation of workpiece due to the feed trajectory of the cutting tool, examples include straight turning, taper turning and profile milling.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'.",
+  "figureKey": "engineering-2026-HL-scheme-q8bi-sol"
+ },
+ {
+  "id": "eng-2026-hl-q8-c",
+  "topicId": "eng-2-11",
+  "conceptId": "face-milling-common-machining-process-or",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q8(c)",
+  "questionText": "CNC machines have revolutionised engineering practices in recent decades. Describe each of the following CNC features: • G-code • Stepper motor • Leadscrew • Control panel.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "G-code: Geometric code is the main programming language used to drive CNC machines. G-codes will direct tool paths, set feed rate and spindle rotation.",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Stepper motor: uses an electromagnetic brushless motor to precisely control movement in increments.",
+    "marks": 4
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Leadscrew: translates rotary motion of the stepper motor into linear motion which drives the machine carriages.",
+    "marks": 4
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Control panel: the HMI that allows operators to interact with the CNC machine. It allows digital instructions to be loaded, monitored and executed.",
+    "marks": 4
+   }
+  ],
+  "notes": "The paper sets this (c) as the alternative, after an OR, to \"(c) Face milling is a common machining process\"."
+ },
+ {
+  "id": "eng-2026-hl-q8-c-i",
+  "topicId": "eng-2-11",
+  "conceptId": "aid-diagram-s-process-face-milling",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q8(c)(i)",
+  "questionText": "Face milling is a common machining process. Explain, with the aid of a diagram(s), the process of face milling.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Face milling is a machining process where a rotating cutting tool with multiple teeth removes material from the surface of a workpiece creating a flat, smooth face. The cutting edges on the end and outer sides of the tool remove material as it moves across the surface.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The cutter axis is perpendicular to the surface being machined.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The tool rotates and either the workpiece or the tool moves in a straight path.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "It is commonly used to produce flat surfaces, improve surface finish or reduce part thickness.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Face milling is ideal for large, flat surfaces and is widely used in manufacturing of engine blocks and moulds for injection moulding.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'. The paper sets a second (c), on CNC features, after an OR.",
+  "questionFigureKey": "engineering-2026-HL-paper-q8ci-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q8-c-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "effects-cutting-fluids-material-surface-finish",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q8(c)(ii)",
+  "questionText": "Face milling is a common machining process. Describe the effects of cutting fluids on: • Material surface finish • Cutting-tool life.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Material surface finish: Cutting fluids help cool and lubricate the cutting area, reducing friction and heat. This results in a smoother surface finish on the material.",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cutting tool life: By lowering heat and friction, cutting fluids reduce tool wear and overheating, which extends the cutting tool’s lifespan.",
+    "marks": 4
+   }
+  ],
+  "notes": "The paper sets a second (c), on CNC features, after an OR."
+ },
+ {
+  "id": "eng-2026-hl-q9-a-i",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-s-conveyor-mechanism-may",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q9(a)(i)",
+  "questionText": "Describe, with the aid of a diagram(s), a conveyor mechanism which may be used to collect and sort materials in a reverse vending machine.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A conveyor belt is a continuous loop of material, usually rubber, PVC or fabric, stretched over two or more pulleys. There is a drive pulley powered by a motor, which pulls the conveyor belt forward in a continuous motion. Friction between the pulley surface and the belt keeps the belt moving without slipping.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "In a reverse vending machine, the consumers insert used containers into the machine's slot, where the conveyor belt moves the container towards the identification stage. The machine uses sensors, barcode scanners or AI to identify the material and check if it meets recycling criteria. The accepted containers are sorted by type; plastics are sent one direction and drink cans another direction. Materials are compacted to save space and allow for efficient storage and transport. Users receive a reward (e.g. refund or coupon) for recycling, encouraging further participation.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'.",
+  "figureKey": "engineering-2026-HL-scheme-q9ai-sol"
+ },
+ {
+  "id": "eng-2026-hl-q9-a-ii",
+  "topicId": "eng-2-15",
+  "conceptId": "suitable-mechanism-could-be-used-operate",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q9(a)(ii)",
+  "questionText": "Describe a suitable mechanism that could be used to operate the can crusher shown opposite.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A crank and slider mechanism converts rotary motion into linear motion. In this system, the crank is powered by a motor and rotates 360°, transferring motion through a connecting rod to the slider, which moves back and forth in a straight line. The force of this linear motion is used to crush a can placed in the holding chamber. Once the crushing stroke is complete, the crushed can falls out, allowing a new can to take its place. This mechanism is efficient for repetitive tasks that require controlled, straight-line movement from a rotary input.",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme prints 'Suggested solution - other viable solutions are acceptable', 8 marks.",
+  "figureKey": "engineering-2026-HL-scheme-q9aii-sol",
+  "questionFigureKey": "engineering-2026-HL-paper-q9aii-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q9-b-i",
+  "topicId": "eng-2-15",
+  "conceptId": "advantages-toothed-belt-drive-over-chain",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q9(b)(i)",
+  "questionText": "State two advantages of a toothed belt drive over a chain drive.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A toothed belt drive operates more quietly and smoothly with less vibration, requires less maintenance and doesn’t need lubrication.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "It is lighter in weight, causes less wear on components, provides better power transmission efficiency and resists corrosion since it’s not made of metal.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+ },
+ {
+  "id": "eng-2026-hl-q9-b-v",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-operation-worm-gear-mechanism",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q9(b)(v)",
+  "questionText": "Describe, with the aid of a diagram, the operation of a worm and gear mechanism.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A worm and gear mechanism transmits motion and power between non-parallel, perpendicular shafts.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The worm drives the gear, enabling smooth and controlled movement, typically offering high torque and significant speed reduction. This mechanism also often prevents the gear from driving the worm, providing a self-locking feature.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'.",
+  "figureKey": "engineering-2026-HL-scheme-q9bv-sol"
+ },
+ {
+  "id": "eng-2026-hl-q9-c-i",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-s-suitable-mechanism-would",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q9(c)(i)",
+  "questionText": "The Easyrig camera system shown opposite is a device designed to assist camera operators during filming. Describe, with the aid of a diagram(s), a suitable mechanism that would allow adjustment of the camera boom angle. OR The outdoor wall light shown includes components such as a solar panel, rechargeable battery and a light-dependent resistor (LDR). Describe two energy conversions that take place in the wall light shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The camera boom is free to rotate about a fixed pivot point. The angle can be adjusted by removing the thumbscrew and replacing it into one of the adjustment holes available.",
+    "marks": 8,
+    "route": "a"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "During the day, the solar panel converts solar energy into electrical energy, which is then stored in a rechargeable battery as chemical energy. At night the battery releases this chemical energy, converting it back into electrical energy to power the LED. The LED then converts the electrical energy into light energy, illuminating the area.",
+    "marks": 8,
+    "route": "b"
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR. The scheme prints '8' for the camera boom, a suggested solution ('other viable solutions are acceptable'), and '4 + 4' for the wall light's conversions.",
+  "figureKey": "engineering-2026-HL-scheme-q9ci-sol",
+  "questionFigureKey": "engineering-2026-HL-paper-q9c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2026-hl-q9-c-ii",
+  "topicId": "eng-2-16",
+  "conceptId": "features-easyrig-system-will-assist-camera",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2026 HL Q9(c)(ii)",
+  "questionText": "The Easyrig camera system shown opposite is a device designed to assist camera operators during filming. State two features on an Easyrig system that will assist the camera operator. OR The outdoor wall light shown includes components such as a solar panel, rechargeable battery and a light-dependent resistor (LDR). Outline the purpose of the light-dependent resistor (LDR) in the wall light shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It transfers the weight of the camera from the arms and shoulders to the hips and back, significantly reducing fatigue and physical strain. This allows operators to shoot for extended periods with greater comfort.",
+    "marks": 4,
+    "route": "a"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The system also improves stability and control, resulting in smoother handheld or moving shots. Additionally, the Easyrig enhances mobility, enabling operators to move freely while maintaining steady footage.",
+    "marks": 4,
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The light-dependent resistor (LDR) detects the surrounding light level. During the day when light levels are high, the LDR's resistance is low, allowing the circuit to stay off and preventing the light from turning on. At night when light levels drop, the LDR’s resistance increases, triggering the circuit to turn on the LED, using stored battery power to provide illumination.",
+    "marks": 8,
+    "route": "b"
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR; the scheme prints '4 + 4' for the Easyrig features and '8' for the LDR.",
+  "figureKey": "engineering-2026-HL-scheme-q9cii-sol",
+  "questionFigureKey": "engineering-2026-HL-paper-q9c-crop",
+  "questionFigureIncludesPrompt": false
  }
 ]
