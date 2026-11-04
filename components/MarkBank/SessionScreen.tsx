@@ -2669,12 +2669,14 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           <span>{subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : assessmentCard.level === 'common' ? 'CL' : 'OL'}</span>
           <strong aria-label={`${Math.min(distinctDone + 1, exerciseTotal)} of ${exerciseTotal} this review`}>{Math.min(distinctDone + 1, exerciseTotal)} <small>/ {exerciseTotal}</small></strong>
         </div> : (
-        <div style={{
+        <div className="mb-session-bar" style={{
           maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '0 16px',
           height: 58, display: 'flex', alignItems: 'center', gap: 14,
         }}>
-          <ActionButton ref={leaveButtonRef} intent="secondary" onClick={openExitConfirmation}>
-            <LogOut size={16} aria-hidden="true" /> Leave review
+          {/* Icon-only on a phone (mark-bank-session-paper.css): the words wrapped
+              to two lines there and squeezed the subject to "Econo…". */}
+          <ActionButton ref={leaveButtonRef} intent="secondary" className="mb-session-leave" aria-label="Leave review" onClick={openExitConfirmation}>
+            <LogOut size={16} aria-hidden="true" /><span className="mb-session-leave-label">Leave review</span>
           </ActionButton>
 
           {/* One line where four stacked headings used to be. */}
@@ -2697,10 +2699,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap', textAlign: 'right',
           }}>
             <span style={{ display: 'block' }}>
-              {Math.min(distinctDone + 1, exerciseTotal)} of {exerciseTotal} this review
+              <span className="mb-session-count-long">{Math.min(distinctDone + 1, exerciseTotal)} of {exerciseTotal} this review</span>
+              <span className="mb-session-count-short">{Math.min(distinctDone + 1, exerciseTotal)} of {exerciseTotal}</span>
             </span>
             {reviewPoolTotal !== undefined && reviewPoolLabel && (
-              <span style={{ display: 'block', color: LABEL, fontSize: 9.5 }}>
+              <span className="mb-session-pool" style={{ display: 'block', color: LABEL, fontSize: 9.5 }}>
                 {reviewPoolTotal} {reviewPoolTotal === 1 ? 'card' : 'cards'} in {reviewPoolLabel}
               </span>
             )}
