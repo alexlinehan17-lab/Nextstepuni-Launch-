@@ -988,6 +988,72 @@ REVIEWED.update({
         'https://www.rugbyworldcup.com/supporters.',
 })
 
+# 2017 Higher (Technology lane, 4 November 2026).
+REVIEWED.update({
+    'technology-2017-HL-paper-secA-q2-art':
+        'A worm meshing with a worm wheel, beside a photograph of a white car '
+        'on a round showroom turntable.',
+    'technology-2017-HL-paper-secA-q3-art':
+        'Part of a circuit: a component lettered A connected across a coil '
+        'lettered B whose switch contacts lead off to the right, the coil '
+        'driven through a transistor with a base resistor.',
+    'technology-2017-HL-paper-secA-q8-art':
+        'Four safety signs lettered A to D: A, a white fire extinguisher and '
+        'flames on red; B, an exclamation mark in a yellow triangle; C, a white '
+        'cross on green; D, a white exclamation mark on a blue disc.',
+    'technology-2017-HL-paper-secA-q11-art':
+        'Two tables: the colour code (0 Black, 1 Brown, 2 Red, 3 Orange, 4 '
+        'Yellow, 5 Green, 6 Blue, 7 Violet, 8 Grey, 9 white) and the tolerance '
+        'code (1% Brown, 2% Red, 5% Gold, 10% Silver).',
+    'technology-2017-HL-paper-secA-q12-art':
+        'A small driving gear of 13 teeth meshing with a large gear of 52 '
+        'teeth, a second 13-tooth gear on the same shaft meshing with a second '
+        '52-tooth driven gear; a curved arrow shows the driving gear turning '
+        'anticlockwise. Labelled Driving Gear, Driven Gear, 13 Teeth and 52 '
+        'Teeth.',
+    'technology-2017-HL-paper-secA-q13-art':
+        'Line drawing in pictorial view of a curved smartwatch band with a '
+        'display panel.',
+    'technology-2017-HL-paper-secA-q15-art':
+        'Exploded view of a prototype mobile phone, its layers labelled Touch '
+        'screen, Solar charging layer, Display and Circuit.',
+    'technology-2017-HL-paper-secC-q1c-art':
+        'Photograph of a robot arm sorting through waste on a conveyor.',
+    'technology-2017-HL-paper-secC-q1d-art':
+        'Two pneumatic symbols: A, a valve with a ball between two inlets and '
+        'one outlet; B, a variable restrictor in parallel with a non-return '
+        'valve.',
+    'technology-2017-HL-paper-secC-q2a-art':
+        'Photograph of an analogue chess clock with two dials behind chess '
+        'pieces on a board.',
+    'technology-2017-HL-paper-secC-q2b-art':
+        'Incomplete circuit for a game timer: a 10 k resistor and a variable '
+        'resistor R1 above a 100 uF capacitor C1, a push switch, and a 555 IC '
+        'drawn as a box.',
+    'technology-2017-HL-paper-secC-q2c-art':
+        'A table of npn transistors and their current gain (BC107 100-450, '
+        'BFY51 40, TIP31 10-60, 2N3055 20-70), and Fig. 1: two transistors '
+        'connected together, with base current IB in and collector current IC.',
+    'technology-2017-HL-paper-secC-q2d-art':
+        'Photograph of a yellow electric cut-off saw on its base.',
+    'technology-2017-HL-paper-secC-q4c-art':
+        'The Product-Process Matrix: Volume of product (Low to High) against '
+        'Standardisation (Low to High), with four blocks stepping up from A at '
+        'low volume and standardisation through B and C to D at high.',
+    'technology-2017-HL-paper-secC-q4d-art':
+        'A table of costs: Solid panels, fixed costs 500 euro and variable costs '
+        '3 euro per unit; Stiffened panels, fixed costs 1000 euro and variable '
+        'costs 2 euro per unit.',
+    'technology-2017-HL-paper-secC-q4b-iii-art':
+        'The formula as printed: where Cp = Tolerance Range over 6 sigma.',
+    'technology-2017-HL-paper-secC-q5b-art':
+        'Photographs of a structure of curved glulam timber arches, and of a '
+        'timber roof whose beams meet at a joint labelled metal node.',
+    'technology-2017-HL-paper-secC-q5c-art':
+        'Exploded view of a panel: two blue outer sheets with an aluminium '
+        'honeycomb core between them.',
+})
+
 # 2018 Higher (Technology lane, 4 November 2026).
 REVIEWED.update({
     'technology-2018-HL-paper-secA-q5-art':

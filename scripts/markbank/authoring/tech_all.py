@@ -114,7 +114,12 @@ FOOTER = re.compile(
     # pages 3 and 5 and read onto the end of Q12's ask.
     r'|\s*page\s+running\s*$'
     r'|\s*Technology\s*[-–—]\s*(?:Higher|Ordinary)\s+Level.*$'
-    r'|\s*Please turn over\b.*$|\s*Do not write on this page\b.*$', re.I)
+    r'|\s*Please turn over\b.*$|\s*Do not write on this page\b.*$'
+    # The facing page's own notice, read onto the last question of the
+    # booklet (2017 Higher Q15).
+    r'|\s*Blank Page\s*$'
+    # The 2010-2018 Sections B/C booklet's page footer, "Page 7 of 9".
+    r'|\s*Page\s+\d+\s+of\s+\d+\s*$', re.I)
 
 # A cue too short to identify anything: "Modification:", "Calculation:".
 # An ask that names its subject only by pointing back at the stimulus:
@@ -289,6 +294,11 @@ def strip_ask_label(point, ask):
     # cookie"); never a heading the ask merely ends with ("...Man, Machine,
     # Method." keeps its "Method:" row distinct from the other two).
     if bare == label or re.search(r':\s*' + re.escape(label) + r'$', bare):
+        # ...unless the ask closes on a RUN of labels ("Explain the terms:
+        # CAM: CNC:"): stripping the last would leave one row labelled and
+        # its sibling not.
+        if re.search(r':\s*[^:]{1,40}:\s*' + re.escape(label) + r'$', bare):
+            return point
         return m.group(2)
     return point
 
@@ -717,6 +727,22 @@ def author(bind_figures=True):
                                                             year, level):
                 covered = [k for k in covered if k in leaves] or covered
                 ask = clean_ask(joined_ask(covered, leaves))
+                # tech_crops.ASK_FROM_STEM: a roman whose instruction is printed
+                # after its data, below a picture, which the walker files as
+                # the letter's stem (2017 Higher 4(b)(iii)'s "Calculate the
+                # process capability index ... where: Cp = ...").
+                stem_owner = TC.ASK_FROM_STEM.get((year, level, section, q, letter))
+                letter_stem = clean(stems.get((section, q, letter)) or '')
+                if stem_owner and stem_owner == roman:
+                    ask = clean_ask(f'{ask} {letter_stem}')
+                # tech_crops.STEM_TAIL_TO_ASK: an answer box's labels that ARE
+                # the terms asked about ("Explain the terms: CAM: ____ CNC:
+                # ____", 2017 Higher Q14(i)), filed by the walker at the end
+                # of the question's stem. They join the one roman that asks
+                # about them, and come off the stem every roman shows.
+                tail_move = TC.STEM_TAIL_TO_ASK.get((year, level, section, q, letter))
+                if tail_move and tail_move[0] == roman:
+                    ask = clean_ask(f'{ask} {tail_move[1]}')
                 ref = joined_ref(year, level, covered)
 
                 def note(reason, ask_text=''):
@@ -755,7 +781,7 @@ def author(bind_figures=True):
                 # The answer lines' own numbers, "1. ____ 2. ____", left after
                 # the ask's last sentence once their rules are gone (2019
                 # Ordinary Q3(ii), Q4(i), Q8, Q9).
-                ask = re.sub(r'(?<=[.?!])(?:\s+\d\.)+\s*$', '', ask)
+                ask = re.sub(r'(?<=[.?!])(?<![Ff]ig\.)(?:\s+\d\.)+\s*$', '', ask)
                 # ...and a run of them BETWEEN two asks of one unlettered
                 # question, "...in cities. 1. 2. State two advantages..."
                 # (2018 Ordinary Q2): a run of two or more, after a closed
@@ -781,6 +807,14 @@ def author(bind_figures=True):
                     lm = re.search(r'(?:^|[.?!]\s+)([A-Z][^.?!:]{3,60}:)\s*(?:\S+\s*){0,40}$', lead_src)
                     if lm:
                         ask = f'{lm.group(1)} {ask}'
+
+                # tech_crops.ASK_STRIP: an answer box's own labels, set inside
+                # the ask's text ("Value:", "Lowest: Highest:"), and a lead-in
+                # the rule above misread, each measured on the page. Off the
+                # raw ask too, which decides whether a row's label is the ask's.
+                for pattern in TC.ASK_STRIP.get((year, level, section, q, letter, roman), ()):
+                    ask = re.sub(pattern, '', ask).strip()
+                    raw_ask = re.sub(pattern, '', raw_ask).strip()
 
                 del BACKED_OFF[:]
                 cue, points = split_cue([clean(l) for l in lines], ask)
@@ -833,17 +867,21 @@ def author(bind_figures=True):
                 pieces = []
                 lost_picture = not figure and points_at_print(question)
                 for piece in stem_pieces(section, q, letter, roman, texts, stems):
+                    if stem_owner and piece == letter_stem:
+                        continue
                     # The answerbook's ruled blanks and their fill-in labels
                     # ("Time: ____ People: ____"), which 2021 Ordinary Q6 prints
                     # between its stem and its romans.
                     piece = clean(BLANK_RULE.sub(' ', piece))
+                    if tail_move and piece.endswith(tail_move[1]):
+                        piece = piece[:-len(tail_move[1])].rstrip()
                     piece = re.sub(r'(?:\s*\b[A-Z][a-z]{1,12}:\s*)+$', '', piece).strip()
                     piece = TC.strip_labels(piece, paper_labels)
                     piece = TRAILING_LABEL.sub('', piece).strip()
                     piece = re.sub(r'\s+OR\s*$', '', piece)
                     # The answer lines' numbers, as the ask loses them above.
                     piece = re.sub(r'(?<=[.?!])(?:\s+\d\.){2,}(?=\s+[A-Z])', '', piece)
-                    piece = re.sub(r'(?<=[.?!])(?:\s+\d\.)+\s*$', '', piece)
+                    piece = re.sub(r'(?<=[.?!])(?<![Ff]ig\.)(?:\s+\d\.)+\s*$', '', piece)
                     # A neighbouring figure's lone letter ("...in electronics. A")
                     # and a table the walker flattened ("Week 1 Week 2 ... Task D").
                     piece = re.sub(r'(?<=[.?!])\s+[A-Z]\s*$', '', piece)
@@ -1010,7 +1048,9 @@ def author(bind_figures=True):
                 if len(question) < 16 and len(show_stem) < 20:
                     note('the ask is too short to stand on its own', question)
                     continue
-                if CUT_SHORT.search(question):
+                if CUT_SHORT.search(question) and not re.search(r'\b[A-Z]\w*\s+[A-Z]$', question):
+                    # (A capital letter closing a name -- "Component A", 2017
+                    # Higher Q3(i) -- is a label, not the article "a".)
                     # The paper text stops mid-phrase -- "A PIC, like the one
                     # mentioned in" -- which is the reader losing the rest of
                     # the sentence, not a question. paper.suspect() flags the

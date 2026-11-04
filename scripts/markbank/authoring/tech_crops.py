@@ -1886,6 +1886,10 @@ ASK_ONLY.update({
     # by line, so the crop carries the answer.
     'technology-2018-OL-scheme-secC-q3b-iii',
 })
+PAPER_ZONES.setdefault((2017, 'hl', '014'), []).extend([
+    # Q11's resistor and its letter R, beside the code tables the crop holds.
+    (4, (86, 500, 182, 548)),
+])
 PAPER_ZONES.setdefault((2018, 'ol', '014'), []).extend([
     # Q11's "Follower" label, read onto the end of Q10's stem.
     (4, (480, 315, 524, 332)),
@@ -1915,6 +1919,157 @@ LABEL_ZONES.setdefault((2018, 'ol'), []).extend([
     (16, (282, 724, 384, 742)),
 ])
 
+# 2017 Higher. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    # The worm and wheel and the turntable photograph (one line of (ii)'s
+    # prose, between them, is whited out).
+    'technology-2017-HL-paper-secA-q2-art': ('014', 1, (257, 316, 558, 457)),
+    'technology-2017-HL-paper-secA-q3-art': ('014', 1, (376, 558, 552, 745)),
+    'technology-2017-HL-paper-secA-q8-art': ('014', 3, (414, 300, 564, 483)),
+    # The colour and tolerance code tables; (i) states R's bands in words.
+    'technology-2017-HL-paper-secA-q11-art': ('014', 4, (378, 480, 562, 738)),
+    'technology-2017-HL-paper-secA-q12-art': ('014', 5, (284, 76, 560, 234)),
+    'technology-2017-HL-paper-secA-q13-art': ('014', 5, (166, 497, 433, 733)),
+    'technology-2017-HL-paper-secA-q15-art': ('014', 6, (37, 548, 286, 744)),
+    'technology-2017-HL-paper-secC-q1c-art': ('015', 3, (426, 499, 577, 644)),
+    'technology-2017-HL-paper-secC-q1d-art': ('015', 3, (134, 739, 370, 784)),
+    'technology-2017-HL-paper-secC-q2a-art': ('015', 4, (369, 73, 572, 190)),
+    'technology-2017-HL-paper-secC-q2b-art': ('015', 4, (346, 238, 534, 398)),
+    # The table of transistors and Fig. 1.
+    'technology-2017-HL-paper-secC-q2c-art': ('015', 4, (316, 484, 556, 612)),
+    'technology-2017-HL-paper-secC-q2d-art': ('015', 4, (471, 639, 575, 776)),
+    'technology-2017-HL-paper-secC-q4c-art': ('015', 7, (78, 190, 530, 362)),
+    # 4(d)(ii)'s table of fixed and variable costs.
+    'technology-2017-HL-paper-secC-q4d-art': ('015', 7, (108, 618, 446, 690)),
+    # 4(b)(iii)'s formula, Cp = Tolerance Range over 6 sigma, set as a fraction.
+    'technology-2017-HL-paper-secC-q4b-iii-art': ('015', 6, (90, 646, 300, 684)),
+    'technology-2017-HL-paper-secC-q5b-art': ('015', 8, (58, 248, 562, 364)),
+    'technology-2017-HL-paper-secC-q5c-art': ('015', 8, (433, 502, 572, 610)),
+})
+WHITEOUT.update({
+    'technology-2017-HL-paper-secA-q2-art': [(222, 418, 336, 437)],
+    'technology-2017-HL-paper-secA-q12-art': [(258, 76, 324, 108), (258, 207, 334, 238)],
+    'technology-2017-HL-paper-secC-q5c-art': [(430, 500, 456, 518)],
+    'technology-2017-HL-scheme-secB-q2c-ii': [(448, 514, 456, 530)],
+    'technology-2017-HL-scheme-secB-q3d-ii': [(466, 750, 540, 766)],
+})
+# The scheme's own drawn answers and worked fractions, 2017 Higher.
+SOLUTIONS.update({
+    'technology-2017-HL-scheme-secA-q4-ii': (4, (106, 198, 420, 272),
+        "The marking scheme's own working for 2017 HL Section A Q4(ii), as the "
+        "State Examinations Commission printed it: Efficiency = output power "
+        "over input power = 1.4 over 2.0 x 100 = 70%."),
+    'technology-2017-HL-scheme-secA-q7': (5, (84, 110, 444, 228),
+        "The marking scheme's own working for 2017 HL Section A Q7, as the State "
+        "Examinations Commission printed it: Force = 900 kg x 9.81 (gravity) = "
+        "8829 N (gravity = 10 also accepted); Work = force x distance = 8829 x "
+        "12 m = 105948 J or 105 kJ; Power = work over time = 105 kJ/25 = 4.2 kW."),
+    'technology-2017-HL-scheme-secA-q8': (5, (80, 318, 560, 440),
+        "The marking scheme's own answer to 2017 HL Section A Q8, as the State "
+        "Examinations Commission printed it: the four signs captioned Fire "
+        "equipment, Warning / Caution, First Aid and Mandatory/ action to be "
+        "taken."),
+    'technology-2017-HL-scheme-secA-q12-ii': (7, (84, 234, 515, 338),
+        "The marking scheme's own working for 2017 HL Section A Q12(ii), as the "
+        "State Examinations Commission printed it: Ratio = 13/52 x 13/52 = 1/16; "
+        "Output speed = 500 rpm x 1/16 = 31.25 rpm."),
+    'technology-2017-HL-scheme-secB-q2c-ii': (11, (450, 422, 572, 553),
+        "The marking scheme's own sketch note for 2017 HL Section B 2(c)(ii), "
+        "as the State Examinations Commission printed it: Turbine tower is "
+        "designed to stand in the concrete foundation, with an arrow down into "
+        "a photograph of the round foundation."),
+    'technology-2017-HL-scheme-secB-q3b-iii': (12, (88, 300, 380, 334),
+        "The marking scheme's own working for 2017 HL Section B 3(b)(iii), as "
+        "the State Examinations Commission printed it: R = (V - Vf)/If = "
+        "(9 - 3.2)/0.025 = 5.8/0.025 = 232 ohms."),
+    'technology-2017-HL-scheme-secB-q3c-i': (12, (428, 365, 558, 462),
+        "The marking scheme's own photograph for 2017 HL Section B 3(c)(i), "
+        "the parts it says may clip together (as shown): two moulded white "
+        "plastic parts with clip features."),
+    'technology-2017-HL-scheme-secB-q3d-ii': (12, (145, 640, 505, 770),
+        "The marking scheme's own answer to 2017 HL Section B 3(d)(ii), as the "
+        "State Examinations Commission printed it: a work breakdown structure in "
+        "which Install gyroscope, Install accelerometer and Install "
+        "microprocessor lead to Circuitry, and Circuitry and Manufacture casing "
+        "lead to Assemble Viper pod."),
+    'technology-2017-HL-scheme-secC-q1b-i': (13, (404, 230, 550, 510),
+        "The marking scheme's own answer to 2017 HL Section C 1(b)(i), as the "
+        "State Examinations Commission printed it: Start/Power On, Scan, the "
+        "decision Is this a phone? (No loops back), the decision Is the bin "
+        "full? (Yes loops back), then Open door, Print receipt and End."),
+    'technology-2017-HL-scheme-secC-q1b-iii': (13, (86, 465, 304, 768),
+        "The marking scheme's own answer to 2017 HL Section C 1(b)(iii), as the "
+        "State Examinations Commission printed it: the same flowchart with a "
+        "second decision Is this a battery? beside Is this a phone?, either Yes "
+        "leading on to Is the bin full?, then Open door, Print receipt and End. "
+        "The scheme adds: Any valid alternative solution accepted."),
+    'technology-2017-HL-scheme-secC-q2b-iii': (15, (90, 368, 400, 414),
+        "The marking scheme's own working for 2017 HL Section C 2(b)(iii), as "
+        "the State Examinations Commission printed it: Formula t = 1.1 x R1 x "
+        "C1; R1 = t/(1.1 x C1) = 30/(1.1 x 0.0001) = 272 kilohms."),
+    'technology-2017-HL-scheme-secC-q2d-i': (15, (212, 656, 545, 724),
+        "The marking scheme's own suggested solution for 2017 HL Section C "
+        "2(d)(i), as the State Examinations Commission printed it: Guard (1=on) "
+        "and Vice (1=closed) feed an AND gate, whose output and Dust extractor "
+        "(1=on) feed a second AND gate giving Saw (1=on)."),
+    'technology-2017-HL-scheme-secC-q4b-iii': (17, (90, 690, 400, 766),
+        "The marking scheme's own working for 2017 HL Section C 4(b)(iii), as "
+        "the State Examinations Commission printed it: Cp = Tolerance Range "
+        "over 6 sigma = (20.01 - 19.97)/(6 x 0.03) = 0.22; Cp < 1 and is not "
+        "capable."),
+    'technology-2017-HL-scheme-secC-q4d-ii': (18, (120, 550, 464, 775),
+        "The marking scheme's own graph for 2017 HL Section C 4(d)(ii), as the "
+        "State Examinations Commission printed it: Cost against Quantity to "
+        "1000, the Solid panels line starting at 500 euro and rising more "
+        "steeply than the Stiffened panels line starting at 1000 euro, crossing "
+        "at a quantity of 500, marked BEQ = 500."),
+})
+SOLUTION_SHARED.update({})
+ASK_ONLY.update({
+    'technology-2017-HL-scheme-secA-q4-ii',
+    'technology-2017-HL-scheme-secA-q7',
+    'technology-2017-HL-scheme-secA-q8',
+    'technology-2017-HL-scheme-secA-q12-ii',
+    'technology-2017-HL-scheme-secB-q3b-iii',
+    'technology-2017-HL-scheme-secB-q3d-ii',
+    'technology-2017-HL-scheme-secC-q1b-i',
+    'technology-2017-HL-scheme-secC-q1b-iii',
+    'technology-2017-HL-scheme-secC-q2b-iii',
+    'technology-2017-HL-scheme-secC-q2d-i',
+    'technology-2017-HL-scheme-secC-q4b-iii',
+    'technology-2017-HL-scheme-secC-q4d-ii',
+})
+LABEL_ZONES.setdefault((2017, 'hl'), []).extend([
+    (3, (370, 555, 580, 760)),     # Q3's circuit, A and B
+    (4, (38, 428, 230, 502)),      # Q5's torque wrench photograph and label
+    (6, (378, 436, 562, 752)),     # Q11's colour and tolerance code tables
+    (7, (300, 60, 560, 205)),      # Q12's gears and their labels
+    (8, (30, 530, 300, 720)),      # Q15's phone and its layer labels
+    (11, (425, 210, 565, 316)),    # 2(b)'s turbine, Propeller/Housing/Generator
+    (13, (404, 230, 550, 510)),    # 1(b)(i)'s flowchart
+    (15, (425, 155, 565, 300)),    # 2(b)'s circuit, 10k/R1/100uF/3
+    (15, (465, 470, 565, 575)),    # 2(c)'s Fig. 1, IC/IB
+    (18, (120, 550, 464, 775)),    # 4(d)'s graph
+])
+LABEL_KEYS.update({
+    (2017, 'hl', 'A', 3, None): [
+        {'letter': 'A', 'meaning': 'Diode'},
+        {'letter': 'B', 'meaning': 'Relay'}],
+    (2017, 'hl', 'A', 8, None): [
+        {'letter': 'A', 'meaning': 'Fire equipment'},
+        {'letter': 'B', 'meaning': 'Warning / Caution'},
+        {'letter': 'C', 'meaning': 'First Aid'},
+        {'letter': 'D', 'meaning': 'Mandatory/ action to be taken'}],
+    (2017, 'hl', 'C', 1, 'd'): [
+        {'letter': 'A', 'meaning': 'shuttle valve/OR valve'},
+        {'letter': 'B', 'meaning': 'uni-directional flow control valve'}],
+    (2017, 'hl', 'C', 4, 'c'): [
+        {'letter': 'A', 'meaning': 'Once-off projects'},
+        {'letter': 'B', 'meaning': 'Batch production'},
+        {'letter': 'C', 'meaning': 'Mass production'},
+        {'letter': 'D', 'meaning': 'Continuous production'}],
+})
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -1931,6 +2086,11 @@ ASK_ZONES = {
     # 2019 Higher Option 5(d)'s two picture captions.
     (2019, 'hl', 'C', 5, 'd', 'i'): ('039', 8, [(460, 596, 545, 626), (405, 757, 530, 775)]),
     (2019, 'hl', 'C', 5, 'd', 'ii'): ('039', 8, [(460, 596, 545, 626), (405, 757, 530, 775)]),
+    # 2017 Higher Q3's circuit letters and its answer-box labels.
+    (2017, 'hl', 'A', 3, None, 'i'): ('014', 1, [(376, 558, 552, 745), (95, 580, 150, 725)]),
+    (2017, 'hl', 'A', 3, None, 'ii'): ('014', 1, [(376, 558, 552, 745), (95, 580, 150, 725)]),
+    # 2017 Higher Q15's layer labels.
+    (2017, 'hl', 'A', 15, None, None): ('014', 6, [(205, 580, 290, 660)]),
     # 2018 Higher Q7's answer-box labels "Feature 1" and "Feature 2".
     (2018, 'hl', 'A', 7, None, None): ('014', 3, [(78, 103, 130, 193)]),
     # 2018 Higher Q14's photograph labels, read onto the end of its stem:
@@ -1942,6 +2102,37 @@ ASK_ZONES = {
     (2018, 'hl', 'C', 4, 'c', 'ii'): ('015', 7, [(82, 250, 512, 290)]),
 }
 
+
+# Answer-box labels and misread lead-ins set INSIDE an ask's text, removed by
+# pattern: (year, level, section, q, letter, roman) -> [regex, ...]. Each one
+# was read off the rendered page.
+ASK_STRIP = {
+    # 2017 Higher Q3: the walker's lead-in rule took the circuit's letters and
+    # the box label "Function:" as a lead-in, and "Name:" closes the line.
+    (2017, 'hl', 'A', 3, None, 'i'): [r'^A B Function:\s+', r'\s+Name:$'],
+    (2017, 'hl', 'A', 3, None, 'ii'): [r'^A B Function:\s+', r'\s+Name:$'],
+    # 2017 Higher Q11: "Value: ____", "Lowest: ____", "Highest: ____".
+    (2017, 'hl', 'A', 11, None, 'i'): [r'\s+Value:(?=\s)'],
+    (2017, 'hl', 'A', 11, None, 'ii'): [r'\s+Lowest:\s+Highest:$'],
+}
+
+# Romans whose instruction (or list) is printed after their own line, which
+# the walker files as the letter's stem: (year, level, section, q, letter) ->
+# the roman whose ask it joins. It comes off every roman's stem.
+ASK_FROM_STEM = {
+    # 4(b)(iii): "Calculate the process capability index ... where:", printed
+    # below its data and the photograph.
+    (2017, 'hl', 'C', 4, 'b'): 'iii',
+    # 3(b)(ii): its list of operators, * (asterisk), + (plus symbol), " "
+    # (quotation marks), which (i) and (iii) were showing as their stem.
+    (2017, 'hl', 'C', 3, 'b'): 'ii',
+}
+
+# The tail of a question's stem that belongs to one roman's ask:
+# (year, level, section, q, letter) -> (roman, the printed tail).
+STEM_TAIL_TO_ASK = {
+    (2017, 'hl', 'A', 14, None): ('i', 'CAM: CNC:'),
+}
 
 # A printed note the text layer reads out of order, cut off an ask's end.
 # 2019 Ordinary Q11(ii) prints "Note: R = (V-Vf) / If" as a stacked fraction

@@ -1,5 +1,155 @@
 [
  {
+  "file": "technology-2017-HL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A worm meshing with a worm wheel, beside a photograph of a white car on a round showroom turntable.",
+  "questionRef": "2017 HL Section A Q2",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   257,
+   316,
+   558,
+   457
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two tables: the colour code (0 Black, 1 Brown, 2 Red, 3 Orange, 4 Yellow, 5 Green, 6 Blue, 7 Violet, 8 Grey, 9 white) and the tolerance code (1% Brown, 2% Red, 5% Gold, 10% Silver).",
+  "questionRef": "2017 HL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   378,
+   480,
+   562,
+   738
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A small driving gear of 13 teeth meshing with a large gear of 52 teeth, a second 13-tooth gear on the same shaft meshing with a second 52-tooth driven gear; a curved arrow shows the driving gear turning anticlockwise. Labelled Driving Gear, Driven Gear, 13 Teeth and 52 Teeth.",
+  "questionRef": "2017 HL Section A Q12",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   284,
+   76,
+   560,
+   234
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing in pictorial view of a curved smartwatch band with a display panel.",
+  "questionRef": "2017 HL Section A Q13",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   166,
+   497,
+   433,
+   733
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a robot arm sorting through waste on a conveyor.",
+  "questionRef": "2017 HL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   426,
+   499,
+   577,
+   644
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two pneumatic symbols: A, a valve with a ball between two inlets and one outlet; B, a variable restrictor in parallel with a non-return valve.",
+  "questionRef": "2017 HL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   134,
+   739,
+   370,
+   784
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secC-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table of npn transistors and their current gain (BC107 100-450, BFY51 40, TIP31 10-60, 2N3055 20-70), and Fig. 1: two transistors connected together, with base current IB in and collector current IC.",
+  "questionRef": "2017 HL Section C Q2(c)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   316,
+   484,
+   556,
+   612
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secC-q4c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The Product-Process Matrix: Volume of product (Low to High) against Standardisation (Low to High), with four blocks stepping up from A at low volume and standardisation through B and C to D at high.",
+  "questionRef": "2017 HL Section C Q4(c)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   78,
+   190,
+   530,
+   362
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a structure of curved glulam timber arches, and of a timber roof whose beams meet at a joint labelled metal node.",
+  "questionRef": "2017 HL Section C Q5(b)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   58,
+   248,
+   562,
+   364
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secC-q5c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Exploded view of a panel: two blue outer sheets with an aluminium honeycomb core between them.",
+  "questionRef": "2017 HL Section C Q5(c)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   433,
+   502,
+   572,
+   610
+  ]
+ },
+ {
   "file": "technology-2018-HL-paper-secA-q5-art.png",
   "kind": "figure",
   "truncated": false,
@@ -5115,6 +5265,111 @@
   ]
  },
  {
+  "file": "technology-2017-HL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Part of a circuit: a component lettered A connected across a coil lettered B whose switch contacts lead off to the right, the coil driven through a transistor with a base resistor.",
+  "questionRef": "2017 HL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   376,
+   558,
+   552,
+   745
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Four safety signs lettered A to D: A, a white fire extinguisher and flames on red; B, an exclamation mark in a yellow triangle; C, a white cross on green; D, a white exclamation mark on a blue disc.",
+  "questionRef": "2017 HL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   414,
+   300,
+   564,
+   483
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secA-q15-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Exploded view of a prototype mobile phone, its layers labelled Touch screen, Solar charging layer, Display and Circuit.",
+  "questionRef": "2017 HL Section A Q15",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   37,
+   548,
+   286,
+   744
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secC-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an analogue chess clock with two dials behind chess pieces on a board.",
+  "questionRef": "2017 HL Section C Q2(a)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   369,
+   73,
+   572,
+   190
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Incomplete circuit for a game timer: a 10 k resistor and a variable resistor R1 above a 100 uF capacitor C1, a push switch, and a 555 IC drawn as a box.",
+  "questionRef": "2017 HL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   346,
+   238,
+   534,
+   398
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a yellow electric cut-off saw on its base.",
+  "questionRef": "2017 HL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   471,
+   639,
+   575,
+   776
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secC-q4d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table of costs: Solid panels, fixed costs 500 euro and variable costs 3 euro per unit; Stiffened panels, fixed costs 1000 euro and variable costs 2 euro per unit.",
+  "questionRef": "2017 HL Section C Q4(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   108,
+   618,
+   446,
+   690
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -5337,6 +5592,21 @@
    112,
    560,
    366
+  ]
+ },
+ {
+  "file": "technology-2017-HL-paper-secC-q4b-iii-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The formula as printed: where Cp = Tolerance Range over 6 sigma.",
+  "questionRef": "2017 HL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   90,
+   646,
+   300,
+   684
   ]
  },
  {
@@ -6938,5 +7208,117 @@
   "description": "The marking scheme's own picture for 2018 OL Section C 5(b)(iii), as the State Examinations Commission printed it: the hinge of a red folding bicycle frame, with an arrow to its quick release lever.",
   "solution": true,
   "questionRef": "2018 OL Section C Q5(b)(iii)"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secA-q4-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2017 HL Section A Q4(ii), as the State Examinations Commission printed it: Efficiency = output power over input power = 1.4 over 2.0 x 100 = 70%.",
+  "solution": true,
+  "questionRef": "2017 HL Section A Q4(ii)"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secA-q7.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2017 HL Section A Q7, as the State Examinations Commission printed it: Force = 900 kg x 9.81 (gravity) = 8829 N (gravity = 10 also accepted); Work = force x distance = 8829 x 12 m = 105948 J or 105 kJ; Power = work over time = 105 kJ/25 = 4.2 kW.",
+  "solution": true,
+  "questionRef": "2017 HL Section A Q7"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secA-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2017 HL Section A Q8, as the State Examinations Commission printed it: the four signs captioned Fire equipment, Warning / Caution, First Aid and Mandatory/ action to be taken.",
+  "solution": true,
+  "questionRef": "2017 HL Section A Q8"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secA-q12-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2017 HL Section A Q12(ii), as the State Examinations Commission printed it: Ratio = 13/52 x 13/52 = 1/16; Output speed = 500 rpm x 1/16 = 31.25 rpm.",
+  "solution": true,
+  "questionRef": "2017 HL Section A Q12(ii)"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secB-q2c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch note for 2017 HL Section B 2(c)(ii), as the State Examinations Commission printed it: Turbine tower is designed to stand in the concrete foundation, with an arrow down into a photograph of the round foundation.",
+  "solution": true,
+  "questionRef": "2017 HL Section B Q2(c)(ii)"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secB-q3b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2017 HL Section B 3(b)(iii), as the State Examinations Commission printed it: R = (V - Vf)/If = (9 - 3.2)/0.025 = 5.8/0.025 = 232 ohms.",
+  "solution": true,
+  "questionRef": "2017 HL Section B Q3(b)(iii)"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secB-q3c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own photograph for 2017 HL Section B 3(c)(i), the parts it says may clip together (as shown): two moulded white plastic parts with clip features.",
+  "solution": true,
+  "questionRef": "2017 HL Section B Q3(c)(i)"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secB-q3d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2017 HL Section B 3(d)(ii), as the State Examinations Commission printed it: a work breakdown structure in which Install gyroscope, Install accelerometer and Install microprocessor lead to Circuitry, and Circuitry and Manufacture casing lead to Assemble Viper pod.",
+  "solution": true,
+  "questionRef": "2017 HL Section B Q3(d)(ii)"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secC-q1b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2017 HL Section C 1(b)(i), as the State Examinations Commission printed it: Start/Power On, Scan, the decision Is this a phone? (No loops back), the decision Is the bin full? (Yes loops back), then Open door, Print receipt and End.",
+  "solution": true,
+  "questionRef": "2017 HL Section C Q1(b)(i)"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secC-q1b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2017 HL Section C 1(b)(iii), as the State Examinations Commission printed it: the same flowchart with a second decision Is this a battery? beside Is this a phone?, either Yes leading on to Is the bin full?, then Open door, Print receipt and End. The scheme adds: Any valid alternative solution accepted.",
+  "solution": true,
+  "questionRef": "2017 HL Section C Q1(b)(iii)"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secC-q2b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2017 HL Section C 2(b)(iii), as the State Examinations Commission printed it: Formula t = 1.1 x R1 x C1; R1 = t/(1.1 x C1) = 30/(1.1 x 0.0001) = 272 kilohms.",
+  "solution": true,
+  "questionRef": "2017 HL Section C Q2(b)(iii)"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secC-q2d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own suggested solution for 2017 HL Section C 2(d)(i), as the State Examinations Commission printed it: Guard (1=on) and Vice (1=closed) feed an AND gate, whose output and Dust extractor (1=on) feed a second AND gate giving Saw (1=on).",
+  "solution": true,
+  "questionRef": "2017 HL Section C Q2(d)(i)"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secC-q4b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2017 HL Section C 4(b)(iii), as the State Examinations Commission printed it: Cp = Tolerance Range over 6 sigma = (20.01 - 19.97)/(6 x 0.03) = 0.22; Cp < 1 and is not capable.",
+  "solution": true,
+  "questionRef": "2017 HL Section C Q4(b)(iii)"
+ },
+ {
+  "file": "technology-2017-HL-scheme-secC-q4d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own graph for 2017 HL Section C 4(d)(ii), as the State Examinations Commission printed it: Cost against Quantity to 1000, the Solid panels line starting at 500 euro and rising more steeply than the Stiffened panels line starting at 1000 euro, crossing at a quantity of 500, marked BEQ = 500.",
+  "solution": true,
+  "questionRef": "2017 HL Section C Q4(d)(ii)"
  }
 ]

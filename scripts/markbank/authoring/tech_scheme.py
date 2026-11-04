@@ -49,7 +49,9 @@ ROMANS = ['i', 'ii', 'iii', 'iv', 'v']
 # "arks" as well as "marks": the SEC's own text layer drops the M of
 # "(10 Marks, 4+6)" on page 17 of the 2023 Ordinary scheme, and demanding the
 # spelling lost Option 5(c) -- a printed tariff, read as no tariff at all.
-_M = r'm?arks?'
+# "mharc" is the Irish word, printed once in an English scheme (2017 Higher
+# Q2's "(3 + 3 mharc)"): the same tariff, and unread the block never closed.
+_M = r'(?:m?arks?|mharc)'
 # A fourth shape, once: 2026 Higher prices Option 3(a) as "10 marks, (4 + 6)",
 # the total outside the bracket and the split inside it. Unread, the block
 # never closed and 3(a)'s two parts were filed under 3(b).

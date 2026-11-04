@@ -190,6 +190,23 @@ TOPIC_OVERRIDES = {
     'tech-2018-ol-b3d-i': 'tech-core-design',      # prototypes
     'tech-2018-ol-b3d-ii': 'tech-core-design',
     'tech-2018-ol-a9': 'tech-core-materials',      # steps to manufacture a stand
+    # 2017 Higher.
+    'tech-2017-hl-a9-i': 'tech-core-ict',          # a wifi hotspot
+    'tech-2017-hl-a10': 'tech-core-materials',     # disposing of car materials
+    'tech-2017-hl-a14-i': 'tech-core-materials',   # CAM and CNC
+    'tech-2017-hl-a14-ii': 'tech-core-materials',  # pick and place in production
+    'tech-2017-hl-a15': 'tech-core-graphics',      # sketch the assembled phone
+    'tech-2017-hl-b2b-ii': 'tech-core-structures', # a 30:1 speed-up mechanism
+    'tech-2017-hl-b2b-iii': 'tech-core-structures',# bearings against friction
+    'tech-2017-hl-b2c-ii': 'tech-core-structures', # fixing a tower to its base
+    'tech-2017-hl-b2d': 'tech-core-materials',     # pillars of sustainability
+    'tech-2017-hl-b3a-i': 'tech-core-ict',         # wearable technology
+    'tech-2017-hl-b3b-i': 'tech-core-design',      # ergonomic design
+    'tech-2017-hl-b3b-ii': 'tech-core-ict',        # GPS monitoring
+    'tech-2017-hl-b3c-i': 'tech-core-materials',   # assembling the moulded casing
+    'tech-2017-hl-b3c-ii': 'tech-core-materials',  # a light yet durable casing
+    'tech-2017-hl-b3d-i': 'tech-core-project',     # quality characteristics
+    'tech-2017-hl-b3d-ii': 'tech-core-project',    # work breakdown structure
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]

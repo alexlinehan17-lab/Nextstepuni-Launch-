@@ -1,5 +1,2923 @@
 [
  {
+  "id": "tech-2017-hl-a1-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q1(i)",
+  "questionText": "Outline one advantage of solar electricity generation.",
+  "stem": "The first large-scale ground based solar electricity generation park on the island of Ireland has opened in Co. Antrim. The 12 hectare solar farm at Crookedstone Road, which cost €6.45 million to build, produces up to 5 MW of power from 20,000 photovoltaic panels.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reduce fossil fuel dependency, renewable, less pollution, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a1-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q1(ii)",
+  "questionText": "Explain the meaning of the abbreviation ‘MW’.",
+  "stem": "The first large-scale ground based solar electricity generation park on the island of Ireland has opened in Co. Antrim. The 12 hectare solar farm at Crookedstone Road, which cost €6.45 million to build, produces up to 5 MW of power from 20,000 photovoltaic panels.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Megawatt– the measure of power.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a2-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q2(i)",
+  "questionText": "Name the mechanism shown.",
+  "stem": "The mechanism shown could be used in a car showroom turntable.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secA-q2-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3 + 3 mharc)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Worm and wormwheel.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3 + 3 mharc)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a2-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q2(ii)",
+  "questionText": "Outline one advantage of using this mechanism.",
+  "stem": "The mechanism shown could be used in a car showroom turntable.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secA-q2-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3 + 3 mharc)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Speed reduction, compact, strong drive, reliable, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3 + 3 mharc)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a3-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q3(i)",
+  "questionText": "Component A",
+  "stem": "Name and explain the functions of the electronic components A and B in the partial circuit shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secA-q3-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Diode",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Function: Allows current flow in one direction, prevents feedback into relay, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a3-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q3(ii)",
+  "questionText": "Component B",
+  "stem": "Name and explain the functions of the electronic components A and B in the partial circuit shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secA-q3-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Relay",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Function: Electromagnetic switch, can switch a high current circuit using a low current circuit",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a4-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q4(i)",
+  "questionText": "Outline two essential functions of a laptop power supply unit.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Provides power to laptop, reduces voltage, converts AC to DC, charges battery, gives smooth supply, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a4-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q4(ii)",
+  "questionText": "A DC motor consumes 2 Watts of power and delivers 1.4 Watts of power at the output shaft. Calculate the efficiency of the motor.",
+  "stem": "",
+  "figureKey": "technology-2017-HL-scheme-secA-q4-ii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A DC motor consumes 2 Watts of power and delivers 1.4 Watts of power at the output shaft. Calculate the efficiency of the motor.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a5-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q5(i)",
+  "questionText": "Explain the term torque:",
+  "stem": "A torque wrench is used to tighten the wheel bolts on a car.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "size of force exerted to cause rotation, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a5-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q5(ii)",
+  "questionText": "If the length of the wrench is 500 mm and the required torque setting for the wheel bolt is 94 Nm, calculate the force required to achieve this torque.",
+  "stem": "A torque wrench is used to tighten the wheel bolts on a car.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Torque = Force x distance",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Force = Torque/Distance = 94Nm/0.5M = 188N",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a6-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q6(i)",
+  "questionText": "Give one example of a compostable consumer product.",
+  "stem": "DOWN2EARTH materials are an Irish company specialising in sustainable food service packaging. Working alongside VEGWARE, they supply Ireland’s largest range of certified compostable products and packaging to a wide variety of businesses in the food, catering, and event sectors. ©",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Compostable sandwich boxes, coffee cups, trays, bags, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a6-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q6(ii)",
+  "questionText": "Outline two advantages of using compostable products.",
+  "stem": "DOWN2EARTH materials are an Irish company specialising in sustainable food service packaging. Working alongside VEGWARE, they supply Ireland’s largest range of certified compostable products and packaging to a wide variety of businesses in the food, catering, and event sectors. ©",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Disposable products can be composted over a reasonably short space of time, food packaging does not need to be washed, less pollution, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a7",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q7",
+  "questionText": "The up and down movement of a lift is powered by an electric motor. The lift carriage has a mass of 900 kg. Calculate the work done and the power required as the carriage moves 12 m from the ground floor to the top floor in 25 seconds.",
+  "stem": "",
+  "figureKey": "technology-2017-HL-scheme-secA-q7",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The up and down movement of a lift is powered by an electric motor. The lift carriage has a mass of 900 kg. Calculate the work done and the power required as the carriage moves 12 m from the ground floor to the top floor in 25 seconds.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks)' for this question."
+ },
+ {
+  "id": "tech-2017-hl-a8",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q8",
+  "questionText": "Outline the meaning of any three of the safety signs labelled A,B,C and D.",
+  "stem": "",
+  "figureKey": "technology-2017-HL-scheme-secA-q8",
+  "questionFigureKey": "technology-2017-HL-paper-secA-q8-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Fire equipment",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Warning / Caution",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "First Aid",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Mandatory/ action to be taken",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+2+2 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Outline the meaning of any three of the safety signs labelled A,B,C and D.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(2+2+2 marks)' for this question."
+ },
+ {
+  "id": "tech-2017-hl-a9-i",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q9(i)",
+  "questionText": "Explain what is meant by a Wifi hotspot.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A location where internet access is available.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a9-ii",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q9(ii)",
+  "questionText": "Explain why browsing the internet at a public hotspot in a coffee shop might be slower than browsing on a home network.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Number of devices accessing public hotspot, quality of broadband connection, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a10",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q10",
+  "questionText": "Motor vehicle manufacturers are replacing steel components with plastic and composite materials in the construction of their cars. Outline the impact on the environment of each of the following materials used in car production, when disposed of at the end of their useful life.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+2+2 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Widely recycled, prone to degradation by rust, high energy used to dispose, etc.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Recyclable material, degrades over time with pigment fade and brittleness, etc.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Long life, does not easily recycle, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+2+2 marks)' for this question."
+ },
+ {
+  "id": "tech-2017-hl-a11-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q11(i)",
+  "questionText": "State the value of the resistor R shown. Colour band sequence is orange, white, yellow and silver.",
+  "stem": "The resistor colour code tables are shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Value: 390000Ω / 390kΩ",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a11-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q11(ii)",
+  "questionText": "Calculate the lowest and highest possible values for the resistor R:",
+  "stem": "The resistor colour code tables are shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lowest: 351,000Ω/ 351kΩ",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Highest: 429,000Ω/ 429kΩ",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a12-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q12(i)",
+  "questionText": "Using an arrow, indicate on the diagram the direction of rotation of the driven gear.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Clockwise",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a12-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q12(ii)",
+  "questionText": "If the driving gear is rotating at 500 RPM, calculate the output speed of the driven gear.",
+  "stem": "",
+  "figureKey": "technology-2017-HL-scheme-secA-q12-ii",
+  "questionFigureKey": "technology-2017-HL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "If the driving gear is rotating at 500 RPM, calculate the output speed of the driven gear.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a13",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q13",
+  "questionText": "Use two graphic techniques to enhance the representation of the smartwatch shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secA-q13-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Two distinct graphic techniques required.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this question."
+ },
+ {
+  "id": "tech-2017-hl-a14-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q14(i)",
+  "questionText": "Explain the terms: CAM: CNC:",
+  "stem": "CAM systems and robotic machines use CNC to provide commands for the machine to move in a particular direction at a given speed.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(4+2 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "CAM: Computer Aided Manufacture.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "CNC: Computer Numerical Control.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a14-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q14(ii)",
+  "questionText": "Give two reasons for the use of pick and place robotic machines in high-volume production.",
+  "stem": "CAM systems and robotic machines use CNC to provide commands for the machine to move in a particular direction at a given speed.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+2 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ease of programming, efficient control, effective and reliable method of carrying out repetitive tasks, work longer, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-a15",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q15",
+  "questionText": "The graphic below highlights an innovative layer with solar charging properties in a prototype mobile phone. Sketch the assembled phone.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secA-q15-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Good quality assembled phone sketch.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks)' for this question."
+ },
+ {
+  "id": "tech-2017-hl-b2a-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(a)(i)",
+  "questionText": "State two advantages of electricity generated from wind power over electricity production using fossil fuels.",
+  "stem": "Wind energy is a growing sector in Ireland, creating jobs and benefiting communities. There are 207 wind farms in Ireland with an installed capacity of 2527 MW.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks, 4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Renewable source, good location for wind, wind technology is improving and becoming more efficient, less pollution, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks, 4+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b2a-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(a)(ii)",
+  "questionText": "Explain what is meant by an installed capacity of 2527 MW.",
+  "stem": "Wind energy is a growing sector in Ireland, creating jobs and benefiting communities. There are 207 wind farms in Ireland with an installed capacity of 2527 MW.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks, 4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The maximum potential of power produced in Ireland from wind farms is 2527 megawatts.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks, 4+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b2b-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(b)(i)",
+  "questionText": "State two energy conversions in a wind turbine system.",
+  "stem": "The propeller of a wind turbine rotates at speeds of 30-60 rpm. These speeds are increased by a ratio of 30:1 in order to produce electricity at the generator.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wind - kinetic, mechanical - electrical, magnetic - electrical, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+4+2)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b2b-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(b)(ii)",
+  "questionText": "Describe, using annotated sketches, a mechanism to increase the speed of the output shaft by a ratio of 30:1 in order to produce electricity at the generator.",
+  "stem": "The propeller of a wind turbine rotates at speeds of 30-60 rpm. These speeds are increased by a ratio of 30:1 in order to produce electricity at the generator.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks, 4+4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A gearbox is used to increase the turbine speed.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Planetary or compound gear systems could be used.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+4+2)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b2b-iii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(b)(iii)",
+  "questionText": "Suggest, using annotated sketches, a method of reducing energy losses due to friction as the propeller rotates.",
+  "stem": "The propeller of a wind turbine rotates at speeds of 30-60 rpm. These speeds are increased by a ratio of 30:1 in order to produce electricity at the generator.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+4+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sketch showing low friction bearing systems to reduce friction and lessen energy losses, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+4+2)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b2c-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(c)(i)",
+  "questionText": "Explain the term composite material using concrete as an example.",
+  "stem": "The foundation/base for securing a wind turbine to the ground is made from reinforced concrete. Concrete is a composite material.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 3+3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Composite materials are made from two or more constituent materials with significantly different physical or chemical properties are combined to produce a material with different characteristics.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Concrete mixes cement and sand with additives and generally reinforced with steel bars.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 3+3)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b2c-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(c)(ii)",
+  "questionText": "Suggest, using annotated sketches, an appropriate means of attaching the wind turbine to the reinforced concrete foundation/base.",
+  "stem": "The foundation/base for securing a wind turbine to the ground is made from reinforced concrete. Concrete is a composite material.",
+  "figureKey": "technology-2017-HL-scheme-secB-q2c-ii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 3+3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The wind turbine could be attached using rawl bolts/bolts set in concrete, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 3+3)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b2d",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(d)",
+  "questionText": "Sustainability is a key concept in controlling the amount of waste created by society. Explain, with examples, what is meant by each of the three ‘Pillars of Sustainability’ given below: • environmental sustainability • social sustainability • economic sustainability.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 2+2+2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Use of renewable sources of energy, prevention of pollution of air, water, land and waste, natural resources will eventually run out, etc.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "An understanding of the needs of society including the development of a reasonable standard of living, education, community and equal opportunity, etc.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Provide for profit, cost saving, economic growth with research and development, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2+2+2)' for this question."
+ },
+ {
+  "id": "tech-2017-hl-b3a-i",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(a)(i)",
+  "questionText": "Outline one application of wearable technology for leisure use.",
+  "stem": "Wearable technology refers to electronic technologies or computers that are incorporated into items of clothing and accessories which can comfortably be worn on the body.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks, 4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Activity trackers, smart watches, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks, 4+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b3a-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(a)(ii)",
+  "questionText": "Describe one electronic sensor that could be used in wearable technology.",
+  "stem": "Wearable technology refers to electronic technologies or computers that are incorporated into items of clothing and accessories which can comfortably be worn on the body.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks, 4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Voice activated control, accelerometer control, thermistor, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks, 4+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b3b-i",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(b)(i)",
+  "questionText": "Explain the term ergonomically designed.",
+  "stem": "The Irish company, STATSport©, have developed the Viper Pod monitor and software. The Viper Pod allows the capture of unobtrusive feedback on individual player performance. The pod is an award-winning, ergonomically designed unit that is widely used by professional sports people.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 2+4+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Designing products, systems or processes to take account of the interaction between them and the people who use them.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 2+4+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b3b-ii",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(b)(ii)",
+  "questionText": "Describe the value of GPS (Global Positioning System) capability for the Viper Pod monitoring technology.",
+  "stem": "The Irish company, STATSport©, have developed the Viper Pod monitor and software. The Viper Pod allows the capture of unobtrusive feedback on individual player performance. The pod is an award-winning, ergonomically designed unit that is widely used by professional sports people.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks, 2+4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Global Positioning Systems (GPS) provides location and time information to a receiver anywhere on earth with a line of sight to four or more GPS satellites.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This provides monitoring data for the pod allowing analysis to happen.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 2+4+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b3b-iii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(b)(iii)",
+  "questionText": "A green LED illuminates to signify that the Viper Pod is activated. If the LED has a Vf = 3.2 V with If = 25 mA, calculate the value of the protective resistor required when powered by a 9 V battery.",
+  "stem": "The Irish company, STATSport©, have developed the Viper Pod monitor and software. The Viper Pod allows the capture of unobtrusive feedback on individual player performance. The pod is an award-winning, ergonomically designed unit that is widely used by professional sports people.",
+  "figureKey": "technology-2017-HL-scheme-secB-q3b-iii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 2+4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A green LED illuminates to signify that the Viper Pod is activated. If the LED has a Vf = 3.2 V with If = 25 mA, calculate the value of the protective resistor required when powered by a 9 V battery.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 2+4+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b3c-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(c)(i)",
+  "questionText": "Describe, using annotated sketches, how the two parts of the casing might be assembled.",
+  "stem": "The Viper Pod is manufactured from a tough, durable thermoplastic in two colours.",
+  "figureKey": "technology-2017-HL-scheme-secB-q3c-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The individual parts are injection moulded and designed to be close fitting.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The parts may clip together (as shown) or may use small screws to join the coloured parts together.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b3c-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(c)(ii)",
+  "questionText": "The pod weighs less than 50 g. Suggest one design detail of the casing to help ensure that the pod is light yet durable.",
+  "stem": "The Viper Pod is manufactured from a tough, durable thermoplastic in two colours.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 4+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Choice of plastic material, thin sections for moulding, reinforced ribs, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b3d-i",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(d)(i)",
+  "questionText": "Name one quality characteristic and specify one related quality attribute for the Viper Pod.",
+  "stem": "It is important that the Viper Pod is reliable and of high quality.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Characteristic - light weight. Attribute - weighs 50g",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Characteristic - data capture. Attribute - GPS monitoring technology",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Characteristic - durable. Attribute - identify manufacturing processes used, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-b3d-ii",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(d)(ii)",
+  "questionText": "The production of the Viper pod includes installing a gyroscope, accelerometer, microprocessor and circuitry as well as production of the casing. Outline a simple work breakdown structure for the production of the Viper pod.",
+  "stem": "It is important that the Viper Pod is reliable and of high quality.",
+  "figureKey": "technology-2017-HL-scheme-secB-q3d-ii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The production of the Viper pod includes installing a gyroscope, accelerometer, microprocessor and circuitry as well as production of the casing. Outline a simple work breakdown structure for the production of the Viper pod.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c1a-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q1(a)(i)",
+  "questionText": "Select two systems in a domestic setting that can be automated. In each case justify your selection.",
+  "stem": "Home automation or smart home is the control and automation of domestic devices and systems.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Heating, washing machines, lighting, security systems, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Selection justified.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c1a-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q1(a)(ii)",
+  "questionText": "Phone Apps are now commonly used in conjunction with home automation systems. Explain why Phone Apps are appropriate for this application.",
+  "stem": "Home automation or smart home is the control and automation of domestic devices and systems.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Phone Apps allow remote access to home automation giving greater convenience security and control.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c1b-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q1(b)(i)",
+  "questionText": "Draw a flowchart for the operating sequence of the smart bin.",
+  "stem": "Smart waste bins are being developed to collect used mobile phones. The phones will be recycled or reused rather than sent to landfill as e-waste. A smart bin uses the following sequence of operation: • when the bin is powered on, the phone is scanned for useful parts • following assessment, a door opens and the smart bin will accept the phone • if other objects are detected, or if the bin is full, the door will not open • a receipt for the value of the used phone is printed as a redeemable voucher against the cost of a new phone.",
+  "figureKey": "technology-2017-HL-scheme-secC-q1b-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 10+2+4)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a flowchart for the operating sequence of the smart bin.",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 10+2+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c1b-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q1(b)(ii)",
+  "questionText": "Name two sensors required for the smart bin to operate.",
+  "stem": "Smart waste bins are being developed to collect used mobile phones. The phones will be recycled or reused rather than sent to landfill as e-waste. A smart bin uses the following sequence of operation: • when the bin is powered on, the phone is scanned for useful parts • following assessment, a door opens and the smart bin will accept the phone • if other objects are detected, or if the bin is full, the door will not open • a receipt for the value of the used phone is printed as a redeemable voucher against the cost of a new phone.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 10+2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Light sensor, weight sensor, proximity switch, limit switch, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 10+2+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c1b-iii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q1(b)(iii)",
+  "questionText": "Suggest a modification to your flowchart to allow the smart bin to accept the phone and the battery separately.",
+  "stem": "Smart waste bins are being developed to collect used mobile phones. The phones will be recycled or reused rather than sent to landfill as e-waste. A smart bin uses the following sequence of operation: • when the bin is powered on, the phone is scanned for useful parts • following assessment, a door opens and the smart bin will accept the phone • if other objects are detected, or if the bin is full, the door will not open • a receipt for the value of the used phone is printed as a redeemable voucher against the cost of a new phone.",
+  "figureKey": "technology-2017-HL-scheme-secC-q1b-iii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 10+2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Suggest a modification to your flowchart to allow the smart bin to accept the phone and the battery separately.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 10+2+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c1c-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q1(c)(i)",
+  "questionText": "Name and describe the main features of a waste sorting robot such as that shown.",
+  "stem": "According to Waste Management World, “Intelligent robotic systems can process almost any given waste stream and sorting capabilities can be redefined for every new market situation.”",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q1c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "SCARA robots can move and place objects quickly and accurately.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A range of end effectors are available, it stands vertically but can manipulate laterally, multiple degrees of freedom, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c1c-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q1(c)(ii)",
+  "questionText": "Explain the function of encoders in robotic control.",
+  "stem": "According to Waste Management World, “Intelligent robotic systems can process almost any given waste stream and sorting capabilities can be redefined for every new market situation.”",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q1c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Encoders give movement feedback to robots. This will determine speed, distance and position for robotic control.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c1d-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q1(d)(i)",
+  "questionText": "Outline two reasons for the use of pneumatic control in compactor systems.",
+  "stem": "Pneumatic waste compactors are used to reduce bulk and lessen storage space.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 6+8)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Provide a reliable strong crushing action, safe, can operate in hostile or corrosive environments, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 6+8)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c1d-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q1(d)(ii)",
+  "questionText": "Distinguish between the functions of the pneumatic components whose symbols are shown at A and B.",
+  "stem": "Pneumatic waste compactors are used to reduce bulk and lessen storage space.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 6+8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A - shuttle valve/OR valve, allows air to flow from one source and blocks another, it is used in machine safety control.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B - uni-directional flow control valve, allows air to flow in one direction, it allows air flow to be restricted, it is used in cylinder speed control.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 6+8)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c2a-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q2(a)(i)",
+  "questionText": "Describe how a seven-segment LED display could improve the chess timer.",
+  "stem": "Sports and other activities can be enhanced through the integration of appropriate technologies such as the analogue chess timer shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q2a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It could be programmed to count down each interval, timing is more precise, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c2a-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q2(a)(ii)",
+  "questionText": "Describe one function of a capacitor in a timer circuit.",
+  "stem": "Sports and other activities can be enhanced through the integration of appropriate technologies such as the analogue chess timer shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q2a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To store electrical energy and release it when needed.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c2b-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q2(b)(i)",
+  "questionText": "Explain the terms IC and DIL.",
+  "stem": "The 555 timer IC has a DIL layout and is used in the incomplete circuit for a game timer shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(16 marks, 4+8+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "IC - Integrated circuit.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "DIL - Dual in line.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 4+8+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c2b-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q2(b)(ii)",
+  "questionText": "Name a suitable output transducer (device) and describe the operation of the timer circuit.",
+  "stem": "The 555 timer IC has a DIL layout and is used in the incomplete circuit for a game timer shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(16 marks, 4+8+4)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A buzzer is a suitable output.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "When the PTM switch is pressed the output at pin 3 is activated for a set time determined by the values of variable resistor R1 and the 100µF capacitor C1. The output pin 3 stays ‘high’ until the capacitor voltage reaches two-thirds of the supply voltage.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A signal is then sent to the threshold pin which turns off the output and the capacitor discharges. If the switch is pressed again the process is repeated, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 4+8+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c2b-iii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q2(b)(iii)",
+  "questionText": "Calculate the value setting for R1 to produce a 30 second pulse duration (t).",
+  "stem": "The 555 timer IC has a DIL layout and is used in the incomplete circuit for a game timer shown.",
+  "figureKey": "technology-2017-HL-scheme-secC-q2b-iii",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 4+8+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calculate the value setting for R1 to produce a 30 second pulse duration (t).",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 4+8+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c2c-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q2(c)(i)",
+  "questionText": "Select the most suitable transistor from the table to provide a collector current of 60 mA if the base current is 0.4 mA. Give a reason for your answer.",
+  "stem": "The range of npn transistors shown in the table below is available to a circuit designer.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q2c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Current Gain = Ic/Ib = 60/0.4 = 150.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "BC107 as the current gain is 150.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c2c-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q2(c)(ii)",
+  "questionText": "Name and explain the function of the transistor arrangement shown in Fig. 1.",
+  "stem": "The range of npn transistors shown in the table below is available to a circuit designer.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q2c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Darlington Pair- the combination of transistors is used to make switching time faster, improve sensitivity, greater amplification, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c2d-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q2(d)(i)",
+  "questionText": "Using logic gates, draw a circuit that could be used to control the saw.",
+  "stem": "An electric cut-off saw is shown. There are sensors connected to the safety guard, the machine vice and the dust extraction system of the saw.",
+  "figureKey": "technology-2017-HL-scheme-secC-q2d-i",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 10+4)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Using logic gates, draw a circuit that could be used to control the saw.",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 10+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c2d-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q2(d)(ii)",
+  "questionText": "Suggest a suitable sensor for use with the safety guard of the saw.",
+  "stem": "An electric cut-off saw is shown. There are sensors connected to the safety guard, the machine vice and the dust extraction system of the saw.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 10+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Push to make switch, strain gauge, piezoelectric sensor, limit switch, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 10+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c3a",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q3(a)",
+  "questionText": "Virtual reality (VR) can be described as a computer-generated simulation of a three-dimensional environment that can be interacted with in a seemingly real or physical way by a person using electronic sensors. Explain, with examples, how virtual reality technology has applications in any two of the following: • entertainment • education and training • marketing and advertising.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks, 5+5)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Entertainment - description of VR in video games, music concerts, rollercoasters, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Education and training - description of VR in training simulation for medical or military uses, flight and vehicular applications, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Marketing and advertising - allows the user to experience a product or service, take tours, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 5+5)' for this question."
+ },
+ {
+  "id": "tech-2017-hl-c3b-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q3(b)(i)",
+  "questionText": "“From the moment you first post online you are creating an indelible digital fingerprint which will be with you throughout your life…and possibly beyond.” In light of the above statement, suggest three best practice guidelines for a user of online services.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 4+6+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Exercise caution in sharing of sensitive or personal data, keep security systems updated, do not engage with unsecured services, use passwords and encryption software, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 4+6+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c3b-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q3(b)(ii)",
+  "questionText": "Describe, with examples, the use of any two of the following advanced search operators: * (asterisk) + (plus symbol) “ ” (quotation marks)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 4+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "* (asterisk) search will fill in blanks if you not sure what is next e.g. song lyrics + (plus symbol) finds information on search topic + words included “ ” (quotation marks) search for the exact term eg “BC109 transistor”",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 4+6+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c3b-iii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q3(b)(iii)",
+  "questionText": "Outline the role of a firewall in network security.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 4+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Firewalls are programmes or devices that acts as a barrier to keep destructive elements out of a network or specific computer. Firewalls are configured with specific criteria to block unauthorized access to a network.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 4+6+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c3c-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q3(c)(i)",
+  "questionText": "List three tasks for a network administrator when setting up and maintaining a computer network.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 6+8)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Install network and computer systems, maintain and upgrade computer systems, diagnose and repair hardware and software issues, monitor network and systems to improve performance, administer access rights for network users, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 6+8)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c3c-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q3(c)(ii)",
+  "questionText": "Outline the main features of a client-server network and a peer-to-peer network.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 6+8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A client server network has a centralised powerful computer as a hub to which personal computers or workstations are connected.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A peer-to-peer (P2P) network is a distributed application architecture that partitions workloads between computers. This allows the sharing of data without the need for a central server.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 6+8)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c3d-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q3(d)(i)",
+  "questionText": "Explain the term Full HD 1080p.",
+  "stem": "Drones can be used to film situations where manned flight is considered too risky or difficult. Some cameras can now capture video in up to 4K at 30 fps or Full HD 1080p at 120 fps.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "High Definition with 1080 progressive scan.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c3d-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q3(d)(ii)",
+  "questionText": "Differentiate between video at 30 fps and video at 120 fps.",
+  "stem": "Drones can be used to film situations where manned flight is considered too risky or difficult. Some cameras can now capture video in up to 4K at 30 fps or Full HD 1080p at 120 fps.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "30 frames per second gives a good flow of video reproduction for most applications.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "120 frames per second gives a smoother video with a positive impact on slow motion shots.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c4a-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q4(a)(i)",
+  "questionText": "Explain each of the following aspects of Design for Environment (DfE) production: • manufacture • consumption • disposal.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Manufacture - Reduce to minimum possible areas such as energy use, emissions and waste products.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Materials and processes should be non-toxic, less packaging etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Consumption - Packaging materials be minimal, reuse and bio-degradable. Use little amounts of energy etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Disposal - Select materials that recycle, design products to be serviceable rather than disposable, reuse, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c4a-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q4(a)(ii)",
+  "questionText": "Briefly outline the impact of poor quality production on product life cycle and market share.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Product life cycle is likely to be reduced as product quality is poor, product likely to fail early, expected life cycle will diminish, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Market share will be reduced as customers are lost, product may have to be relaunched, loss to reputation, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c4b-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q4(b)(i)",
+  "questionText": "Explain, with examples, the Pareto principle of quality management.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 4+6+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This is the 80/20 rule where roughly 80% of the effects come from 20% of the causes e.g. 80% of computer crashes are contributed to 20% of software bugs.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 4+6+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c4b-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q4(b)(ii)",
+  "questionText": "Outline the role of accelerated testing in the production of roller bearings for a bicycle wheel.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 4+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Accelerated tests are used to determine when a product will most likely fail. These tests are carried out in a shorter period of time as the expected ‘real world’ life is too long, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 4+6+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c4b-iii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q4(b)(iii)",
+  "questionText": "A Quality Control scheme is in operation for a process which produces ball bearings. Each hour 6 bearings are taken and their diameters measured. The process delivers a mean diameter of 20 mm with a standard deviation of 0.03 mm. The lower and upper specification limits are 19.97 mm and 20.01 mm respectively. Calculate the process capability index and give the ‘control state’ of the process, where:",
+  "stem": "",
+  "figureKey": "technology-2017-HL-scheme-secC-q4b-iii",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q4b-iii-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 4+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A Quality Control scheme is in operation for a process which produces ball bearings. Each hour 6 bearings are taken and their diameters measured. The process delivers a mean diameter of 20 mm with a standard deviation of 0.03 mm. The lower and upper specification limits are 19.97 mm and 20.01 mm respectively. Calculate the process capability index and give the ‘control state’ of the process, where:",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 4+6+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c4c-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q4(c)(i)",
+  "questionText": "Name production processes corresponding to A, B, C and D of the matrix shown.",
+  "stem": "The Product-Process Matrix links standardisation and product volume in the selection of optimum production techniques.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q4c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A - Once-off projects: tend to produce single or low number of items, can be expensive etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B - Batch production: products produced over a particular period of time as demand for the items may fluctuate, low volume, used for sporting items that may change each year etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C - Mass production: standard products are produced in large volumes, demand is high and stable, used for household electrical items etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D - Continuous production: Generally factories are dedicated to single number of products with high volume, systems are highly standardised and automated, used to produce products such as sugar etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c4c-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q4(c)(ii)",
+  "questionText": "Distinguish between the business strategy and the manufacturing strategy of a medical devices firm.",
+  "stem": "The Product-Process Matrix links standardisation and product volume in the selection of optimum production techniques.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q4c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A business strategy provides direction and focus for a the medical devices company through defining of the primary task, assess core competencies, determine order qualifiers and order winners and position the firm within the medical devices area.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A manufacturing strategy for medical devices decides how to offer a product and determines production processes. This is determined by the nature of the product e.g., a specialised piece of equipment may be manufactured as a once-off product while some commonly used instruments can be mass produced or made in batches.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c4d-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q4(d)(i)",
+  "questionText": "Explain, with specific examples, the distinction between fixed costs and variable costs.",
+  "stem": "An engineering firm is in the process of analysing costs for the production of lightweight metal panels. There is a choice between solid panels or thinner sheets that are subject to extra fabrication by folding stiffening ribs to strengthen the panel. Production costs for the panels are divided into fixed costs and variable costs.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q4d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 6+8)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Fixed costs remain constant regardless of activity and include rent, buildings, machinery, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Variable costs will increase and reduce as production changes, these include wages, utilities and materials used in production.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 6+8)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c4d-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q4(d)(ii)",
+  "questionText": "The analysis of costs produced the following results: Represent the key features of this data to analyse production costs for up to 1000 panels.",
+  "stem": "An engineering firm is in the process of analysing costs for the production of lightweight metal panels. There is a choice between solid panels or thinner sheets that are subject to extra fabrication by folding stiffening ribs to strengthen the panel. Production costs for the panels are divided into fixed costs and variable costs.",
+  "figureKey": "technology-2017-HL-scheme-secC-q4d-ii",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q4d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 6+8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The analysis of costs produced the following results: Represent the key features of this data to analyse production costs for up to 1000 panels.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 6+8)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c5a-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q5(a)(i)",
+  "questionText": "Differentiate between the forces of tension, compression and torsion.",
+  "stem": "The strength of materials can be regarded as the ability to withstand the various forces exerted on them. Woods, metals and plastics can be formulated or fabricated to increase strength.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tension force tries to pull and stretch an object, compression exerts a force which compacts an object, torsion force causes a twisting action.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c5a-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q5(a)(ii)",
+  "questionText": "Describe, with examples, how metal alloys and manufactured boards can increase the strength of the final material.",
+  "stem": "The strength of materials can be regarded as the ability to withstand the various forces exerted on them. Woods, metals and plastics can be formulated or fabricated to increase strength.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Metal alloys combine the properties of constituent metals to give a new metal with different properties e.g., brass is an alloy of zinc and copper giving an improvement in hardness and machinability.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Plywood consists of two or more layers of wood glued and pressed together with the direction of the grain alternating. This provides increased strength and stability to the material.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c5b-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q5(b)(i)",
+  "questionText": "Describe, using annotated sketches, how an arched structure such as that shown may be fabricated.",
+  "stem": "Glulam or glued laminate consists of layers of timber bonded together with durable, moisture resistant adhesive. It is frequently used in structural construction and ship building.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 6+6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Separate layers of wood are shaped around a former then clamped and glued together (laminated) forming the arched structures.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 6+6+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c5b-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q5(b)(ii)",
+  "questionText": "Describe, using annotated sketches, how metal nodes could be used to join a wooden structure.",
+  "stem": "Glulam or glued laminate consists of layers of timber bonded together with durable, moisture resistant adhesive. It is frequently used in structural construction and ship building.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 6+6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Close-fitting metal joints connect the individual wooden members, (can use bolts with the node) these nodes provide a stronger joint than relying on wooden joints only.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 6+6+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c5b-iii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q5(b)(iii)",
+  "questionText": "Explain the use of triangulation to make structures stronger.",
+  "stem": "Glulam or glued laminate consists of layers of timber bonded together with durable, moisture resistant adhesive. It is frequently used in structural construction and ship building.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 6+6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Triangulation adds stability, strength and rigidity to structures as weight and force are pushed down from the top to the wider base of the triangle. A triangle is a geometrically rigid shape.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 6+6+4)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c5c-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q5(c)(i)",
+  "questionText": "Outline two advantages of using this material in marine applications.",
+  "stem": "The aluminium honeycomb material shown is used in panels for marine vessels. It can be fabricated in sheets from 6 mm to 80 mm in thickness.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The structure is strong due to lamination and honeycomb structure, aluminium is light, outer layers can be made in a range of finishes, colours, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c5c-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q5(c)(ii)",
+  "questionText": "Describe the role of the aluminium honeycomb structure in the design of this material.",
+  "stem": "The aluminium honeycomb material shown is used in panels for marine vessels. It can be fabricated in sheets from 6 mm to 80 mm in thickness.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2017-HL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The hexagonal honeycomb creates a strong structure with minimal use of expensive material, it creates a range of material thicknesses, the individual layers can be glued together successfully, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c5d-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q5(d)(i)",
+  "questionText": "State two reasons for using steel tubing in the construction of racing cars.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tubing reduces weight, high strength-to-weight ratio, can be fabricated and welded successfully, reasonably cost effective, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
+  "id": "tech-2017-hl-c5d-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2017 HL Section C Q5(d)(ii)",
+  "questionText": "Outline some benefits to consumers and to the environment of the increasing use of electric cars.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Consumers can expect reduced running costs, smoother and quieter driving experience, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The environmental benefits include less burning of fossil fuels, cleaner air, less noise pollution, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8+6)' for this part."
+ },
+ {
   "id": "tech-2018-hl-a1-i",
   "topicId": "tech-core-materials",
   "conceptId": "core-materials",
