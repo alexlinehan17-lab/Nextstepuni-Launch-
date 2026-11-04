@@ -12,6 +12,10 @@ def S(page, *rect):
     return lift(Y, L, 'scheme', page, rect)
 
 
+def P(page, *rect, more=()):
+    return lift(Y, L, 'paper', page, rect, more=more)
+
+
 CROPS = {
     # Scheme p11: the stress-strain graph the scheme answers Q3(b)(i) with,
     # axes, plotted points and the 0.1% offset line; the "10" beside it is
@@ -162,6 +166,16 @@ CARDS = [
                  S(9, 100, 243, 550, 345)],
          tariff='questionTotal', total=8, question_figure='engineering-2021-HL-paper-q2di-art',
          notes="The scheme prints '8'."),
+    dict(key=(2, 'e', None),
+         replaces='the shipped question read "(i) Vehicle ownership; '
+                  'transmission engine (ii) Environmental considerations; ..." '
+                  '-- the hybrid diagram\'s callouts "transmission" and '
+                  '"engine", printed just above (e), swept into its list',
+         why='Paper p4 sets (e) and its three romans on five lines below the '
+             '(d) diagram; the question is lifted from those lines alone.',
+         question_lift=P(4, 95, 666, 570, 753),
+         use=[[0, 1, 2]], row_kind='anyN', group=(2, 5), marks=[10],
+         tariff='fixed', total=10, notes="The scheme prints 'Any two @ 5 + 5'."),
 ]
 
 # Cards the automatic author files under the wrong syllabus heading.

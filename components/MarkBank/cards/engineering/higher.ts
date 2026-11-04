@@ -361,20 +361,6 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
-    id: "eng-2021-hl-q2-e", topicId: "eng-3-14", conceptId: "how-hybrid-vehicle-technology-may-impact",
-    section: "A", questionRef: "2021 HL Q2(e)",
-    stem: "Answer all of the following:",
-    questionText: "Describe how hybrid vehicle technology may impact on any two of the following: (i) Vehicle ownership; transmission engine (ii) Environmental considerations; (iii) Vehicle maintenance.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 10,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "People will still want to own a car and will buy a hybrid or electric one as a means to help the environment. The costs of hybrid vehicles can be prohibitive though. State grants and tax reliefs may assist people in buying hybrid vehicles. The total number of vehicles on the road is expected to fall by about half from its current level by 2050. With fewer private vehicles needing to be parked, vast areas of land currently wasted on parking will be available for other uses, such as housing.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["People will still want to own a car and will buy a hybrid or electric one as a means to help the environment. The costs of hybrid vehicles can be prohibitive though. State grants and tax reliefs may assist people in buying hybrid vehicles. The total number of vehicles on the road is expected to fall by about half from its current level by 2050. With fewer private vehicles needing to be parked, vast areas of land currently wasted on parking will be available for other uses, such as housing.","Ultimately, hybrid cars can have immense power to reduce emissions and make the environment a better place if their drivers choose to make it so. Hybrid vehicles operate in a more fuel-efficient manner. There will also be a reduction in noise pollution as a result of the use of hybrid powered vehicles in urban settings.","Hybrid vehicles can be expensive to maintain and service. Along with an internal combustion engine to service, battery packs and traction motors also need additional maintenance and service at regular intervals. Specialised mechanics capable of identifying issues with hybrid vehicles are needed also. Damage to hybrid vehicles, depending on the area of damage can lead to very expensive bills to make the car road worthy again."]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "higher",
-    paperFileid: "LC027ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q3-a-i", topicId: "eng-3-8", conceptId: "brinell-hardness-test-vickers-hardness-test",
     section: "A", questionRef: "2021 HL Q3(a)(i)",
     questionText: "Select any two from (a)(i), (ii) or (iii) below and explain the difference between the terms in each: Brinell hardness test and Vickers hardness test;",
@@ -1517,6 +1503,20 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission",
           "includesPrompt": false
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
+    id: "eng-2021-hl-q2-e", topicId: "eng-3-14", conceptId: "how-hybrid-vehicle-technology-may-impact",
+    section: "A", questionRef: "2021 HL Q2(e)",
+    stem: "Answer all of the following:",
+    questionText: "Describe how hybrid vehicle technology may impact on any two of the following: (i) Vehicle ownership; (ii) Environmental considerations; (iii) Vehicle maintenance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "People will still want to own a car and will buy a hybrid or electric one as a means to help the environment. The costs of hybrid vehicles can be prohibitive though. State grants and tax reliefs may assist people in buying hybrid vehicles. The total number of vehicles on the road is expected to fall by about half from its current level by 2050. With fewer private vehicles needing to be parked, vast areas of land currently wasted on parking will be available for other uses, such as housing.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["People will still want to own a car and will buy a hybrid or electric one as a means to help the environment. The costs of hybrid vehicles can be prohibitive though. State grants and tax reliefs may assist people in buying hybrid vehicles. The total number of vehicles on the road is expected to fall by about half from its current level by 2050. With fewer private vehicles needing to be parked, vast areas of land currently wasted on parking will be available for other uses, such as housing.","Ultimately, hybrid cars can have immense power to reduce emissions and make the environment a better place if their drivers choose to make it so. Hybrid vehicles operate in a more fuel-efficient manner. There will also be a reduction in noise pollution as a result of the use of hybrid powered vehicles in urban settings.","Hybrid vehicles can be expensive to maintain and service. Along with an internal combustion engine to service, battery packs and traction motors also need additional maintenance and service at regular intervals. Specialised mechanics capable of identifying issues with hybrid vehicles are needed also. Damage to hybrid vehicles, depending on the area of damage can lead to very expensive bills to make the car road worthy again."]} },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
