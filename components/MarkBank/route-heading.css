@@ -1,0 +1,16 @@
+/* Route headings on a point card (RouteHeading.tsx). Quiet type, like the
+   scheme's own section labels; the "OR" rule is the SEC's word for the split. */
+.mb-route-head { margin: 4px 0 8px; }
+.mb-route-or {
+  display: flex; align-items: center; gap: 10px; margin: 14px 0 10px;
+  font: 700 9.5px/1.5 'DM Sans', system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--mb-label);
+}
+.mb-route-or::before, .mb-route-or::after { content: ''; flex: 1; height: 1px; background: var(--mb-border); }
+.mb-route-title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.mb-route-title h4 { margin: 0; font: 650 13px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); overflow-wrap: anywhere; }
+.mb-route-head[data-state="other"] .mb-route-title h4 { color: var(--mb-muted); }
+.mb-route-title button {
+  background: none; border: 0; border-bottom: 1px solid var(--mb-border); padding: 0; cursor: pointer;
+  font: 600 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-ink-2);
+}
+.mb-route-title button:hover { border-bottom-color: var(--mb-ink-2); }

@@ -49,6 +49,29 @@ const withPdfExtension = (fileid: string) =>
 
 const clamp = (value: number, max: number) => Math.max(0, Math.min(max, value));
 
+/**
+ * What the pages of a `source-illustration` actually are.
+ *
+ * The reader called every one an "illustration sheet", which is true only of
+ * Art's companion booklet: most are pages of the card's own question paper
+ * (Economics, Agricultural Science, Geography Part 1, the sciences), and the
+ * other companions are Classical Studies' Paper X and Geography's map,
+ * photograph and legend. With no separate file the pages are the question
+ * paper; a separate file is named by subject, and an Irish-version edition
+ * of the paper is still the question paper.
+ */
+export function illustrationDocument(subjectId: string, source: Pick<CardSourceMaterial, 'label' | 'sourceFileid'>): string {
+  if (!source.sourceFileid) return 'question paper';
+  if (subjectId === 'art') return 'illustration sheet';
+  if (subjectId === 'classical-studies') return 'Paper X';
+  if (subjectId === 'geography') {
+    if (/legend/i.test(source.label)) return 'map legend';
+    if (/photograph/i.test(source.label)) return 'aerial photograph';
+    if (/\bmap\b/i.test(source.label)) return 'OS map';
+  }
+  return 'question paper';
+}
+
 const PageStackIcon = () => (
   <svg width="25" height="25" viewBox="0 0 25 25" fill="none" aria-hidden="true">
     <rect x="6.25" y="3.25" width="13.5" height="17.5" rx="2.25" stroke="currentColor" strokeWidth="1.5" />
@@ -91,7 +114,11 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
     : source.kind === 'source-data' ? 'source material'
     : source.kind === 'exam-material' ? 'exam material'
     : source.kind === 'source-paper' ? 'question pages'
-    : isIllustration ? 'illustration sheet' : 'source text';
+    : isIllustration ? illustrationDocument(subjectId, source) : 'source text';
+  // "ILLUSTRATION SHEET · Q1 · illustration sheet", "OS MAP · OS map": where
+  // the label already names the document, it is not named twice.
+  const headingNamesMaterial = labelNamesMaterial
+    || (isIllustration && source.label.toLowerCase().includes(materialLabel.toLowerCase()));
   const [open, setOpen] = useState(false);
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
   const [failed, setFailed] = useState(false);
@@ -276,7 +303,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       >
         <header className={`mb-source-reader-header${isLinked ? ' mb-source-reader-header-linked' : ''}`}>
           <div className="mb-source-reader-heading">
-            <span>{labelNamesMaterial ? source.label : `${source.label} · ${materialLabel}`}</span>
+            <span>{headingNamesMaterial ? source.label : `${source.label} · ${materialLabel}`}</span>
             <h2 id="mb-source-reader-title">{source.title}</h2>
           </div>
           {!isLinked && <div className="mb-source-reader-tools" aria-label="Page display controls">
@@ -416,7 +443,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
             <strong>{isSupplementary ? texts[pageIndex]?.edition : source.attribution}</strong>
             {!isLinked && <span>{source.presentationNote}</span>}
             {!isLinked && <a href={isSupplementary ? texts[pageIndex]?.sourceUrl : isImage ? url : `${url}#page=${source.pages[pageIndex]}`} target="_blank" rel="noreferrer">
-              {isSupplementary ? 'View this edition and attribution' : `Open the original ${isScheme ? 'marking scheme' : isIllustration ? 'illustration sheet' : 'paper'}`}
+              {isSupplementary ? 'View this edition and attribution' : `Open the original ${isScheme ? 'marking scheme' : isIllustration && materialLabel !== 'question paper' ? materialLabel : 'paper'}`}
             </a>}
           </div>
           {!isLinked && <div className="mb-source-reader-navigation">
