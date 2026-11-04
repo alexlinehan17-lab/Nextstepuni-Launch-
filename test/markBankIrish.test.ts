@@ -25,6 +25,7 @@ import reviewedOrdinary2022P2 from '../components/MarkBank/cards/irish/ordinary-
 import reviewedHigher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
 import reviewedHigher2021P2 from '../components/MarkBank/cards/irish/higher-2021-p2-authored.json';
 import reviewedOrdinary2021P2 from '../components/MarkBank/cards/irish/ordinary-2021-p2-authored.json';
+import reviewedHigher2020P1 from '../components/MarkBank/cards/irish/higher-2020-p1-authored.json';
 import reviewedOrdinary2025P1 from '../scripts/markbank/authored/irish-ordinary-2025-p1-component-review.json';
 import reviewedOrdinary2025P2 from '../components/MarkBank/cards/irish/ordinary-2025-p2-authored.json';
 import reviewedOrdinary2024P2 from '../components/MarkBank/cards/irish/ordinary-2024-p2-authored.json';
@@ -101,7 +102,7 @@ const census = JSON.parse(readFileSync(resolve(
 const manifest = authoredJson as unknown as IrishManifest;
 // These pins cover the legacy census output. Paper-reviewed components ship
 // beside it and carry their own regression files (2026 Higher and Ordinary Papers 1 and 2).
-const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards, ...reviewedHigher2025P2.cards, ...reviewedOrdinary2025P2.cards, ...reviewedOrdinary2024P2.cards, ...reviewedHigher2023P2.cards, ...reviewedOrdinary2023P2.cards, ...reviewedOrdinary2022P2.cards, ...reviewedHigher2022P2.cards, ...reviewedHigher2021P2.cards, ...reviewedOrdinary2021P2.cards].map(card => card.id));
+const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards, ...reviewedHigher2025P2.cards, ...reviewedOrdinary2025P2.cards, ...reviewedOrdinary2024P2.cards, ...reviewedHigher2023P2.cards, ...reviewedOrdinary2023P2.cards, ...reviewedOrdinary2022P2.cards, ...reviewedHigher2022P2.cards, ...reviewedHigher2021P2.cards, ...reviewedOrdinary2021P2.cards, ...reviewedHigher2020P1.cards].map(card => card.id));
 const HIGHER = HIGHER_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 // Reviewed legacy components keep their cards here, corrected in place (IDs unchanged).
 // 2025, 2024, 2023, 2022 and 2021 HL Paper 1 and 2025/2024 OL Paper 1 also attached each retained card's printed page; 2025 OL Paper 2
