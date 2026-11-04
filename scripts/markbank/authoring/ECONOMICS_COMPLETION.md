@@ -1985,3 +1985,55 @@ interleaves the two columns row by row, which would set each tax or idea
 beside an answer it is not. The table crop stays beside the typed text. Only
 these four cards' questionText changed. Every other card is byte-identical,
 and refcheck places all four.
+
+## 2015 Higher English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 40 scheme pages were viewed:
+- paper pp10-12 are blank;
+- scheme pp1-4 are the covers, the note on published schemes, the title page
+  and the notes and index, and pp37-40 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 58 routes for the 57 printed asks (14 in Section A, 43 in Section B).
+The one extra route is the Section B Q8(a) agree/disagree stance, each side
+credited with its own list; both carry the scheme's 6 (3 + 3) for reference to
+the Irish economy. 11 crops: 9 hidden scheme solutions and 2 paper data crops.
+
+Decisions:
+- From this paper on, a stem stops before any printed table, and the table is
+  the crop beside the typed ask (the coordinator's ruling: tables are never
+  typed into a question). The A Q7 true/false statements are typed after the
+  ask, as they must be read to answer.
+- A Q1: the scheme prints one answer and prices "3 points of information: 8 +
+  4 + 4". The three points are the phrases it sets in bold (scarce resources
+  with alternative uses; unlimited wants; choices with an opportunity cost),
+  claimed at the printed steps.
+- B2(a)(ii): the diagram's 11 printed points are a menu at 1 each. The 14-mark
+  explanation is one row per numbered head the scheme prints (equilibrium 1 + 2,
+  price and output 2 + 1, cost 2, SNP 1 + 2, inefficiency 1 + 2). The build's
+  6-row cap rules out a row per mark.
+- B1(b)(i)-(iii): diagram elements at 1 each, then shift, price and quantity at
+  1 and the reason for the shift 2. The reason is the scheme's second bullet;
+  its other bullets describe how the market moves to the new equilibrium. The
+  new equilibrium's raised 2 is set back as PE² and QE² (the build folds ²).
+- B4(c)(i)-(ii): "3 at 5 marks (1 + 2 + 2)" is read by the scheme's Statement /
+  Explanation / One main influence columns. (i) is three motives at 3 (1 + 2)
+  and (ii) is three influences at 2.
+- B6(a)(i): "No: 2 marks + 3 reasons at 5". The scheme credits No only.
+- B3(b)(iii): the short run with its reason, printed as one 3: questionTotal.
+
+Refcheck: two short asks were read by hand.
+
+Topic review: 1 reference anomaly. A Q9 sits under the commercial government
+intervention heading, but the review files it as population ageing (Economic
+Growth), with its policies under fiscal policy and the labour market.
+
+Checks:
+- econ_review: 28/66.
+- build: 1,534 cards, 0 dropped.
+- Build rule: 320 claims on this paper, 0 untraceable (59 trace by halves).
+- reconcile: 1,472/2,197, with 2015 HL at 57/57.
+- refcheck: 0 wrong.
+- cardlint: clean.

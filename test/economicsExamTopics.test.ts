@@ -180,12 +180,15 @@ describe('Economics exam-topic registry', () => {
       // production), Q2 under globalisation (protection is international
       // trade), Q8 under government intervention (the black economy is
       // national income) and Section B Q3 under growth and development (the
-      // minimum wage and conferences are filed under their own topics).
-      matchedAssociations: 749,
-      referenceAnomalyAssociations: 154,
+      // minimum wage and conferences are filed under their own topics). The
+      // 2015 Higher review added one: Section A Q9 under government
+      // intervention (an ageing population's pension and retirement policy is
+      // fiscal policy and the labour market).
+      matchedAssociations: 748,
+      referenceAnomalyAssociations: 155,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 673,
+      matchedQuestionTopicLinks: 672,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

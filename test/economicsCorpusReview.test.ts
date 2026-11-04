@@ -18,6 +18,7 @@ import higher2017Review from '../scripts/markbank/authoring/reviews/economics-20
 import ordinary2017Review from '../scripts/markbank/authoring/reviews/economics-2017-ol-ev.json';
 import higher2016Review from '../scripts/markbank/authoring/reviews/economics-2016-hl-ev.json';
 import ordinary2016Review from '../scripts/markbank/authoring/reviews/economics-2016-ol-ev.json';
+import higher2015Review from '../scripts/markbank/authoring/reviews/economics-2015-hl-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -327,10 +328,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    // Old syllabus: 2016-2019 Higher and Ordinary and 2020 Higher English (reviewed variants 19-27).
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(39);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(45);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(27);
+    // Old syllabus English: every sitting from 2015 Higher through 2020 Higher reviewed (variants 19-28).
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(38);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(44);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(28);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -1259,6 +1260,66 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
     // The scheme's text layer sets its bullets as U+0002; none reaches a card.
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '\u0002']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 58 independently counted 2015 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2015);
+    const tasks = higher2015Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(58);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2015Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2015, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2015 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each stance counted once.
+      const total = question.tasks.filter(task => !task.cardId.endsWith('-disagree')).reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2015 Higher ladders at their printed steps and splits the Keynes table by its columns', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2015-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    expect(card('sa-q1').rows[0].group!.perOptionSteps).toEqual([8, 4, 4]);
+    expect(card('sa-q6').rows[0].group!.perOptionSteps).toEqual([9, 8]);
+    expect(card('sa-q7').rows[0].group!.perOptionSteps).toEqual([5, 4, 4, 4]);
+    expect(card('sb-q5-b').rows[0].group!.perOptionSteps).toEqual([7, 7, 6]);
+    expect(card('sb-q5-c').rows[0].group!.perOptionSteps).toEqual([7, 6, 6, 6]);
+    // The true/false statements must be read to answer, so they follow the ask.
+    expect(card('sa-q7').questionText).toContain('demand for any one of them should be highly elastic.');
+    // The monopoly explanation under the scheme's five numbered heads, 14 in all, beside the 11-point diagram.
+    expect(card('sb-q2-a-ii').rows.map(r => r.marks)).toEqual([11, 3, 3, 2, 3, 3]);
+    // Keynes's motives: the scheme's 3 at 5 (1 + 2 + 2) read by its Statement / Explanation / Influence columns.
+    expect(card('sb-q4-c-i').rows.map(r => r.marks)).toEqual([3, 3, 3]);
+    expect(card('sb-q4-c-ii').rows.map(r => r.marks)).toEqual([2, 2, 2]);
+    // The agree / disagree stance: one route per side, each with the Irish-economy reference.
+    for (const side of ['agree', 'disagree']) {
+      expect(card(`sb-q8-a-${side}`).rows.map(r => r.marks), side).toEqual([6, 14]);
+    }
+    expect(card('sb-q1-b-i').rows.map(r => r.verbatim)).toContain('New higher equilibrium price PE²');
+    for (const c of CARDS.filter(item => item.year === 2015 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = CARDS.filter(c => c.year === 2015)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // No stem carries a table's text: each table is the crop beside the ask.
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '1,000 20 120', '0 100 100 200']) {
       expect(text, junk).not.toContain(junk);
     }
   });

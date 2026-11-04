@@ -30,6 +30,1532 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q1", topicId: "economics-0-1", conceptId: "why-choice-is-fundamental",
+    section: "A", questionRef: "2015 HL Section A Q1",
+    questionText: "Outline why ‘choice’ is fundamental to the study of economics.",
+    tariffModel: {"kind":"fixed","notation":"8 + 4 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A point of information — all three", marks: 16, contextNote: "Three points of information, as the scheme sets them in bold: the first correct 8 marks, the other two 4 each.", openList: true, group: {"claimMax":3,"perOption":8,"options":["In Economics resources are limited / finite / scarce and have alternative uses","wants are unlimited / infinite.","As a result choices must be made and these choices involve an opportunity cost."],"perOptionSteps":[8,4,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q2-a", topicId: "economics-1-1", conceptId: "the-equi-marginal-principle",
+    section: "A", questionRef: "2015 HL Section A Q2(a)",
+    questionText: "Explain the concept of the Equi-Marginal Principle of Consumer Behaviour.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Consumers spend their income so that the ratio of marginal utility to price is the same for all the goods /services they buy in order to enjoy maximum utility or satisfaction.", marks: 6, contextNote: "The explanation, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q2-b", topicId: "economics-1-1", conceptId: "the-equi-marginal-principle-in-numbers",
+    section: "A", questionRef: "2015 HL Section A Q2(b)",
+    questionText: "In equilibrium, a consumer buys 5 bottles of water at €2.50 each and 8 bagels at €3 each. The marginal utility of the 5th bottle of water is 5 utils. Calculate the marginal utility of the 8th bagel. (Show your workings.)",
+    tariffModel: {"kind":"fixed","notation":"7 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-working", kind: "point", verbatim: "5/€2.50 = €3 x", marks: 7, contextNote: "The working, 7 marks: MU of water over its price equals MU of bagels over theirs, 5 over €2.50 = x over €3. The figure shows it as printed.", openList: true },
+    { id: "r-answer", kind: "point", verbatim: "x = 6 utils (the marginal utility of the 8th bagel)", marks: 3, contextNote: "The correct answer, 3 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-HL-scheme-p05-q2b-working",
+          "src": "/exam-figures/economics/markbank/economics-2015-HL-scheme-p05-q2b-working.png",
+          "srcHash": "77366996ceafd215617f5f6251b7cb54",
+          "alt": "The marking scheme’s working: MU of water over its price equals MU of bagels over theirs; 5 over €2.50 = x over €3; x = 6 utils (the marginal utility of the 8th bagel).",
+          "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q3-a", topicId: "economics-3-1", conceptId: "the-ntma",
+    section: "A", questionRef: "2015 HL Section A Q3(a)",
+    questionText: "Outline the primary responsibility of the National Treasury Management Agency (NTMA).",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Its core function is borrowing for the exchequer and debt management in order to ensure liquidity for the exchequer and to minimise the interest burden over the medium term.", marks: 8, contextNote: "The responsibility, 8 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q3-b", topicId: "economics-3-1", conceptId: "low-bond-yields",
+    section: "A", questionRef: "2015 HL Section A Q3(b)",
+    stem: "“The NTMA sells bonds worth €4bn at a low yield (0.867%) in 2015.” (Report: Irish Times, January 2015)",
+    questionText: "Is selling bonds at a low yield good or bad for the Irish Government? Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"2 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-answer", kind: "point", verbatim: "Answer: It is good for the Irish government.", marks: 2, contextNote: "The answer, 2 marks.", openList: true },
+    { id: "r-explanation", kind: "anyN", verbatim: "An explanation — any one", marks: 6, contextNote: "One explanation, 6 marks.", openList: true, group: {"claimMax":1,"perOption":6,"options":["It means the cost to the government of raising money / borrowing money is reduced","It means the bond buyers have confidence in the Irish economy and are prepared to buy Irish bonds.","It means that the deficit will be smaller / it is cheaper to fund government services."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q4-a", topicId: "economics-2-0", conceptId: "the-concentration-ratio",
+    section: "A", questionRef: "2015 HL Section A Q4(a)",
+    stem: "A high concentration ratio is a key feature of an Oligopolistic Market.",
+    questionText: "Explain this statement and give one example.",
+    tariffModel: {"kind":"fixed","notation":"6 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-explanation", kind: "point", verbatim: "A high concentration ratio exists in an industry if a small number of firms account for / dominate a relatively large part of the total output of the industry.", marks: 6, contextNote: "The explanation, 6 marks.", openList: true },
+    { id: "r-example", kind: "anyN", verbatim: "An example — any one", marks: 2, contextNote: "One example, 2 marks.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Grocery trade in Ireland","Banking","Mobile phone industry","Domestic energy suppliers."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q4-b", topicId: "economics-2-0", conceptId: "how-oligopolists-behave",
+    section: "A", questionRef: "2015 HL Section A Q4(b)",
+    stem: "A high concentration ratio is a key feature of an Oligopolistic Market.",
+    questionText: "Outline two ways oligopolists behave in the market:",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 4","answer":2,"ofParts":3,"perPart":4}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A way — any two", marks: 8, contextNote: "Two ways, 4 marks each.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Firms act in a way that affects the behaviour of their competitors in the industry. Firms are interdependent. Every decision a firm takes will be based on the likely reaction of its rivals to that decision.","Firms can compete via non-price competition. Any action taken by firms, other than lowering price, to increase sales (focus on quality, after sales service, product differentiation).","Firms may engage in collusive practices. Firms in the industry come together for their mutual benefit. Two or more firms act together to set price, output or other conditions of sale. Collusion can be explicit or implicit (tacit)."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q5-a", topicId: "economics-3-1", conceptId: "a-regressive-tax",
+    section: "A", questionRef: "2015 HL Section A Q5(a)",
+    stem: "“Indirect taxes can be regressive but they also have advantages for governments.”",
+    questionText: "Explain what is meant by a regressive tax.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Takes a higher percentage of income from low income taxpayers than from high income tax payers / The proportion of taxation falls as income increases.", marks: 8, contextNote: "The explanation, 8 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q5-b", topicId: "economics-3-1", conceptId: "advantages-of-indirect-taxation",
+    section: "A", questionRef: "2015 HL Section A Q5(b)",
+    stem: "“Indirect taxes can be regressive but they also have advantages for governments.”",
+    questionText: "Outline two advantages of indirect taxation for governments:",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 4","answer":2,"ofParts":5,"perPart":4}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An advantage — any two", marks: 8, contextNote: "Two advantages, 4 marks each.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Low collection cost / convenient collection because the taxes are collected by retailers.","Hard to avoid as these taxes are included in the price of the good or service.","Less distortionary: VAT does not discourage work unlike increases in income tax.","Could be politically more popular than income tax: it may be easier for government to raise tax revenue through indirect tax rather than income tax as these taxes are included in the price of the good or service.","Government can change consumption patterns (aligning private and social costs) e.g. reduce consumption of harmful products."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q6", topicId: "economics-0-0", conceptId: "the-classical-economists",
+    section: "A", questionRef: "2015 HL Section A Q6",
+    questionText: "Outline two main contributions to economic thought put forward by the Classical Economists:",
+    tariffModel: {"kind":"fixed","notation":"9 + 8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A contribution — any two", marks: 17, contextNote: "Two contributions: the first correct 9 marks (4 + 5), the second 8 (4 + 4).", openList: true, group: {"claimMax":2,"perOption":9,"options":["Efficiency of free markets Classical economists believe that the market offers the most efficient means of allocating resources. The market knows best. Advocated the workings of the free market to ensure equilibrium would occur. If there was excess demand, prices would rise, thus eliminating excess demand and if there was excess supply, prices would fall thereby eliminating excess supply and ensuring equilibrium would occur.","Self-adjusting mechanism The Classical Economists believed if the economy suffered a shock it would self-correct and output would be restored in the long-run ensuring full employment level.","Laissez faire They favoured minimum government intervention in economic affairs (with the exceptions of defence and security).","Freedom for the individual Classical economists argued in favour of maximum freedom for the individual / the wealth of a nation results from the diligent pursuit by citizens of their own interests.","Free trade Opposed protectionist policies in international trade / no tariffs or other restraints should apply on trade."],"perOptionSteps":[9,8]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q7", topicId: "economics-1-4", conceptId: "elasticity-true-or-false",
+    section: "A", questionRef: "2015 HL Section A Q7",
+    questionText: "Read each statement below and indicate if the statement is true or false. [Tick (✓) the appropriate box.] A good with an income elasticity of demand (YED) of +2.5 is a luxury good. If the cross-price elasticity of demand (CED) is negative then it may be said that the goods are complements. When demand is price elastic, a reduction in price will lead to a decrease in total revenue. When many close substitute goods are available, demand for any one of them should be highly elastic.",
+    tariffModel: {"kind":"fixed","notation":"5 + 4 + 4 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each statement ticked correctly", marks: 17, contextNote: "All four: the 1st correct response 5 marks, the other three 4 each.", openList: true, group: {"claimMax":4,"perOption":5,"options":["TRUE — A good with an income elasticity of demand (YED) of +2.5 is a luxury good.","TRUE — If the cross-price elasticity of demand (CED) is negative then it may be said that the goods are complements.","FALSE — When demand is price elastic, a reduction in price will lead to a decrease in total revenue.","TRUE — When many close substitute goods are available, demand for any one of them should be highly elastic."],"perOptionSteps":[5,4,4,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q8-a", topicId: "economics-4-2", conceptId: "a-weaker-euro",
+    section: "A", questionRef: "2015 HL Section A Q8(a)",
+    stem: "“The Euro (€) is hitting a four and a half year low against the US $.” (Report: The Irish Independent, January 2015)",
+    questionText: "Explain what the above statement means.",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The price of the euro has fallen in terms of the $ compared to four and a half years ago / the € can buy fewer dollars than it did four and a half years ago.", marks: 7, contextNote: "The explanation, 7 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q8-b", topicId: "economics-4-2", conceptId: "effects-of-a-weaker-euro",
+    section: "A", questionRef: "2015 HL Section A Q8(b)",
+    stem: "“The Euro (€) is hitting a four and a half year low against the US $.” (Report: The Irish Independent, January 2015)",
+    questionText: "Outline two possible economic effects of this development for the Irish economy:",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":6,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: 10, contextNote: "Two effects, 5 marks each, positive or negative.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Possible positive economic effects — Irish exports to USA become relatively cheaper / less expensive / more competitive / Irish producers are more likely to be able to export more to USA than they did previously / more tourism revenue for Ireland due to more Americans finding Ireland a more attractive destination.","Possible positive economic effects — Increased employment due to increase in demand for Irish exports in USA / economic growth due to spending within the Irish economy as a result of job creation.","Possible positive economic effects — FDI may be encouraged as it is cheaper to set up FDI operations, if the companies are US MNCs.","Possible negative economic effects — Irish imports from USA become relatively more expensive / Costs of production for Irish producers importing from USA increases.","Possible negative economic effects — Reduced profits for Irish producers who require imports from USA if they cannot pass the increased costs on to consumers.","Possible negative economic effects — As many of Ireland’s imports are raw materials for which it has an inelastic demand the import bill will rise e.g. oil."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sa-q9", topicId: "economics-3-5", conceptId: "a-longer-life-expectancy",
+    section: "A", questionRef: "2015 HL Section A Q9",
+    stem: "“Since 1990 Ireland has achieved the largest gain in life expectancy for 65 year olds in all EU member states.” (The OECD Report: Health at a glance: Europe 2014)",
+    questionText: "Outline two possible economic implications of this development for the Irish economy and one policy measure the Government could consider in response to this situation.",
+    tariffModel: {"kind":"fixed","notation":"2 x 6 + 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-implications", kind: "anyN", verbatim: "An economic implication — any two", marks: 12, contextNote: "Two implications, 6 marks each.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Can cause higher dependency ratio / reduced labour market participation rates.","More demands on government services e.g. health and long term care.","Increased budget or change in budget priorities for health care.","A change in the pattern of demand for goods and services for an ageing population.","Increased pressure on pensions / many people under providing for old age.","Possible increased tax burden for those remaining in the workforce.","Preference change: extension of working lives (people may choose to work longer- negative impact on long- term unemployed / higher youth unemployment) etc."]} },
+    { id: "r-policy", kind: "anyN", verbatim: "A policy measure — any one", marks: 5, contextNote: "One policy measure, 5 marks.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Extend retirement age to reduce the number of people entitled to state pensions.","Seek to expand the working population by encouraging people to remain in work beyond retirement age.","Reform the pension system e.g. means testing pensions / use the taxation system to encourage people to take out pensions (tax credits to take away the burden from the state).","Health and social services plan to meet the demands placed on the services /extra beds for geriatric wards.","Educating the younger population in the area of personal finance to enable better planning for retirement."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q1-a-i", topicId: "economics-1-0", conceptId: "drawing-the-4g-tv-market",
+    section: "B", questionRef: "2015 HL Section B Q1(a)(i)",
+    stem: "The table below refers to the market data for 4G High Definition Televisions (TVs).",
+    questionText: "Using the above data, draw a diagram showing the market demand and market supply curves for 4G TVs, showing the price and quantity of 4G TVs at which this market is in equilibrium.",
+    tariffModel: {"kind":"fixed","notation":"6 + 6 + 2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-demand", kind: "point", verbatim: "D/C: 5 points x 1 mark each + Correct label x 1 mark.", marks: 6, contextNote: "The demand curve, 6 marks. The completed graph is shown with the answer.", openList: true },
+    { id: "r-supply", kind: "point", verbatim: "S/C: 5 points x 1 mark each + Correct label x 1 mark.", marks: 6, contextNote: "The supply curve, 6 marks.", openList: true },
+    { id: "r-axes", kind: "point", verbatim: "Price & Quantity axes: 2 x 1 mark each.", marks: 2, contextNote: "The two axes, 2 marks.", openList: true },
+    { id: "r-equilibrium", kind: "point", verbatim: "Equilibrium price + equilibrium Quantity: 2 x 1 mark each.", marks: 2, contextNote: "The equilibrium price (€600) and quantity (50,000), 2 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2015-HL-paper-p05-q1a-table",
+          "src": "/exam-figures/economics/markbank/economics-2015-HL-paper-p05-q1a-table.png",
+          "srcHash": "faaa2b4943930b3742ed900eaed64f45",
+          "alt": "A table: Price (€) 1,000, 800, 600, 400, 200; Quantity Demanded (’000 units) 20, 30, 50, 80, 120; Quantity Supplied (’000 units) 120, 80, 50, 30, 20.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2015-HL-scheme-p09-q1ai-graph",
+          "src": "/exam-figures/economics/markbank/economics-2015-HL-scheme-p09-q1ai-graph.png",
+          "srcHash": "9ac15c4139dd023118676a2872f8abed",
+          "alt": "The marking scheme’s graph: Price € 0 to 1,000 against Quantity 10 to 120. The demand curve D/C falls through five points from (20, 1,000) to (120, 200); the supply curve S/C rises through five points from (20, 200) to (120, 1,000). They cross at a price of 600, marked PE, and a quantity of 50, marked QE.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q1-a-ii", topicId: "economics-1-0", conceptId: "how-equilibrium-is-reached",
+    section: "B", questionRef: "2015 HL Section B Q1(a)(ii)",
+    stem: "The table below refers to the market data for 4G High Definition Televisions (TVs).",
+    questionText: "Define the concept market equilibrium. With reference to the above market, explain how equilibrium is arrived at.",
+    tariffModel: {"kind":"fixed","notation":"10 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 14,
+    rows: [
+    { id: "r-definition", kind: "point", verbatim: "Market equilibrium arises where the quantity demanded equals the quantity supplied / equilibrium occurs when the price is such that the quantity that consumers wish to buy is exactly balanced by the quantity that firms wish to supply. There is no tendency for price to change.", marks: 10, contextNote: "The definition, 10 marks (6 + 4).", openList: true },
+    { id: "r-how", kind: "anyN", verbatim: "How equilibrium is arrived at — either route", marks: 4, contextNote: "The explanation, 4 marks: by excess demand or by excess supply.", openList: true, group: {"claimMax":1,"perOption":4,"options":["If the price on the market is below the equilibrium price of €600, a situation of excess demand will occur. Excess demand will drive up the price of the TVs. Eventually as the price begins to rise demand will decrease and supply will increase. Price will continue to rise until equilibrium is restored at the equilibrium price of €600 and 50,000 TVs are purchased.","If the price on the market is above the equilibrium price of €600, a situation of excess supply will occur as buyers are not willing to pay the high price. Then there will be downward pressure on price. Quantity supplied will exceed quantity demanded and firms will lower price to sell the surplus televisions. Firms will reduce stock levels by reducing price. The lower prices will encourage an increase in demand. Price will continue to fall until equilibrium is restored at the equilibrium price of €600 and 50,000 TVs are purchased."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-HL-paper-p05-q1a-table",
+          "src": "/exam-figures/economics/markbank/economics-2015-HL-paper-p05-q1a-table.png",
+          "srcHash": "faaa2b4943930b3742ed900eaed64f45",
+          "alt": "A table: Price (€) 1,000, 800, 600, 400, 200; Quantity Demanded (’000 units) 20, 30, 50, 80, 120; Quantity Supplied (’000 units) 120, 80, 50, 30, 20.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q1-b-i", topicId: "economics-1-0", conceptId: "wet-weather-and-wheat",
+    section: "B", questionRef: "2015 HL Section B Q1(b)(i)",
+    stem: "The market for wheat is in equilibrium. Explain, with the aid of a separate diagram in each case, the effects which each of the following market situations is most likely to have on the equilibrium position for wheat:",
+    questionText: "Exceptionally wet weather conditions",
+    tariffModel: {"kind":"fixed","notation":"Diagram 5 + explanation 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-diagram", kind: "anyN", verbatim: "The diagram — each element", marks: 5, contextNote: "The diagram, 5 marks: 1 for each element the scheme lists. The completed diagram is shown with the answer.", openList: true, group: {"claimMax":5,"perOption":1,"options":["D","S1","S2","Indication of Higher Price","lower quantity"]} },
+    { id: "r-shift", kind: "point", verbatim: "S/C shifts to the left (S2)", marks: 1, contextNote: "The shift, 1 mark.", openList: true },
+    { id: "r-price", kind: "point", verbatim: "New higher equilibrium price PE²", marks: 1, contextNote: "The new price, 1 mark.", openList: true },
+    { id: "r-quantity", kind: "point", verbatim: "New lower equilibrium quantity QE²", marks: 1, contextNote: "The new quantity, 1 mark.", openList: true },
+    { id: "r-reason", kind: "point", verbatim: "Wet weather conditions will result in lower yields of wheat (lower quantity of wheat supplied to market)", marks: 2, contextNote: "The reason for the shift, 2 marks. The scheme’s other bullets set out how the market moves to the new equilibrium.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-HL-scheme-p10-q1bi-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2015-HL-scheme-p10-q1bi-diagram.png",
+          "srcHash": "3c97cd880b6870e6f98a1a2359d2844f",
+          "alt": "The marking scheme’s diagram: P against Qty, a demand curve D and a supply curve S1 crossing at X; a new supply curve S2 to the left, with an arrow pointing left, crosses D at Y. The price rises from PE1 to PE2 and the quantity falls from QE1 to QE2.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q1-b-ii", topicId: "economics-1-0", conceptId: "wheat-allergies-and-demand",
+    section: "B", questionRef: "2015 HL Section B Q1(b)(ii)",
+    stem: "The market for wheat is in equilibrium. Explain, with the aid of a separate diagram in each case, the effects which each of the following market situations is most likely to have on the equilibrium position for wheat:",
+    questionText: "An increasing percentage of the population is suffering from wheat allergies and intolerance",
+    tariffModel: {"kind":"fixed","notation":"Diagram 5 + explanation 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-diagram", kind: "anyN", verbatim: "The diagram — each element", marks: 5, contextNote: "The diagram, 5 marks: 1 for each element the scheme lists. The completed diagram is shown with the answer.", openList: true, group: {"claimMax":5,"perOption":1,"options":["S","D1","D2","Indication of lower price","lower quantity"]} },
+    { id: "r-shift", kind: "point", verbatim: "D/C shifts to the left (D2)", marks: 1, contextNote: "The shift, 1 mark.", openList: true },
+    { id: "r-price", kind: "point", verbatim: "New lower equilibrium price PE²", marks: 1, contextNote: "The new price, 1 mark.", openList: true },
+    { id: "r-quantity", kind: "point", verbatim: "New lower equilibrium quantity QE²", marks: 1, contextNote: "The new quantity, 1 mark.", openList: true },
+    { id: "r-reason", kind: "point", verbatim: "Consumer preferences will decline for wheat products due to allergies and intolerance", marks: 2, contextNote: "The reason for the shift, 2 marks. The scheme’s other bullets set out how the market moves to the new equilibrium.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-HL-scheme-p11-q1bii-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2015-HL-scheme-p11-q1bii-diagram.png",
+          "srcHash": "fd7b6823d1a3d305f5aac21282dc2def",
+          "alt": "The marking scheme’s diagram: P against Qty, a supply curve S and a demand curve D1; a new demand curve D2 to the left, with an arrow pointing left. The price falls from PE1 to PE2 and the quantity falls from QE1 to QE2.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q1-b-iii", topicId: "economics-1-0", conceptId: "cheaper-oil-and-wheat",
+    section: "B", questionRef: "2015 HL Section B Q1(b)(iii)",
+    stem: "The market for wheat is in equilibrium. Explain, with the aid of a separate diagram in each case, the effects which each of the following market situations is most likely to have on the equilibrium position for wheat:",
+    questionText: "A decrease in the price of oil.",
+    tariffModel: {"kind":"fixed","notation":"Diagram 5 + explanation 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-diagram", kind: "anyN", verbatim: "The diagram — each element", marks: 5, contextNote: "The diagram, 5 marks: 1 for each element the scheme lists. The completed diagram is shown with the answer.", openList: true, group: {"claimMax":5,"perOption":1,"options":["D","S1","S2","Indication of lower Price","higher quantity"]} },
+    { id: "r-shift", kind: "point", verbatim: "S/C shifts to the right (S2)", marks: 1, contextNote: "The shift, 1 mark.", openList: true },
+    { id: "r-price", kind: "point", verbatim: "New lower equilibrium price PE²", marks: 1, contextNote: "The new price, 1 mark.", openList: true },
+    { id: "r-quantity", kind: "point", verbatim: "New higher equilibrium quantity QE²", marks: 1, contextNote: "The new quantity, 1 mark.", openList: true },
+    { id: "r-reason", kind: "point", verbatim: "Production costs for farmers growing wheat will fall and they will be prepared to increase supply", marks: 2, contextNote: "The reason for the shift, 2 marks. The scheme’s other bullets set out how the market moves to the new equilibrium.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-HL-scheme-p11-q1biii-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2015-HL-scheme-p11-q1biii-diagram.png",
+          "srcHash": "679630472171ee082fe818e3459607a2",
+          "alt": "The marking scheme’s diagram: P against Qty, a demand curve D and a supply curve S1; a new supply curve S2 to the right, with an arrow pointing right. The price falls from PE1 to PE2 and the quantity rises from QE1 to QE2.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q1-c", topicId: "economics-1-3", conceptId: "a-rent-ceiling",
+    section: "B", questionRef: "2015 HL Section B Q1(c)",
+    stem: "Following recent sharp increases in the price of private rented accommodation, calls have been made for the Irish Government to introduce price/rent controls (a rent ceiling).",
+    questionText: "Advise the Minister for the Environment on the possible economic consequences of the Government intervening in the market by imposing a price ceiling for private rented accommodation.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":7,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A consequence — any three", marks: 15, contextNote: "Three consequences, 5 marks each (2 + 3).", openList: true, group: {"claimMax":3,"perOption":5,"options":["Shortage of accommodation If the price/rent ceiling is below the equilibrium price for the market, there will be more people looking for accommodation (excess demand) and hence a shortage of rented accommodation. The rent control will also affect the supply side of the market. Some landlords may no longer be willing to make property available at the lower price as they will no longer find it profitable to supply as much rental accommodation. This could create a shortage of available accommodation.","Lower Rents While some buyers get to pay a lower price, and hence improve their standard of living, other buyers cannot get any accommodation at all.","Allocation by alternative methods As not all those wishing to rent can be catered for suppliers must decide which consumers to do business with. Landlords may allocate according to sellers’ preferences or prejudices e.g. they may not rent to those on rent allowance. Rent control could turn the market into a lottery. It could be on a first-come-first-served basis.","Reduced mobility People who have rent controlled property will be reluctant to move since they have to search for new accommodation under conditions of severe shortage. Some people will be reluctant to move out of parental homes as quickly as they might otherwise have done.","Quality of accommodation Property investors may skimp on quality so as to reduce costs, hence the quality of rental accommodation may deteriorate.","Black Market It could lead to a growth in the illegal black market for rented accommodation. Landlords may require large deposits from new tenants. Landlords may evict tenants in order to extract larger deposits from new tenants.","Lower supply of available housing / Impact on future supply Some landlords may decide to exit the industry as it’s no longer profitable to rent out property. Others may decide not to construct new rental accommodation as the return would be insufficient."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q2-a-i", topicId: "economics-2-0", conceptId: "barriers-to-entry",
+    section: "B", questionRef: "2015 HL Section B Q2(a)(i)",
+    questionText: "State and explain two examples of barriers to entry facing firms wishing to enter a monopoly market.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":9,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A barrier — any two", marks: 10, contextNote: "Two barriers, 5 marks each (2 + 3).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Legal / statutory restrictions The government may grant a firm the sole right to supply a good or service so that there is a legal restriction on competition e.g. Irish rail services or government legislation regarding licences.","Trade Agreements / market sharing agreements Firms may enter into trade agreements with other suppliers (collude with them) so that no other firm can supply the commodity to a particular segment of the market.","Ownership of a key resource / raw materials A firm may acquire the sole right to the available raw materials thereby becoming a monopoly in that particular market e.g. an oil exploration company.","Industry requires a large investment in capital / High start-up costs For some industries the capital required to get established in that industry is so large that only the firm which can raise the necessary capital can operate in the market. Competitors are discouraged from entering because of the high initial start-up costs.","Mergers / Takeovers By merging with a competitor or buying out the competitor a firm may become a monopoly supplier in that industry.","Limit pricing A firm may use limit pricing (selling at exceptionally low prices) to force new entrants out of the industry so that it retains monopoly power.","Brand dominance of a large supplier A firm may gain monopoly power, if through its advertising consumers are convinced that there is no suitable alternative to its particular brands.","Natural monopoly / economies of scale/ technological superiority A natural monopoly arises because a single firm can supply a good or a service to an entire market at a smaller cost than could two or more firms. A firm that has superior technology can become a monopolist. However, over time competitors may enter the market e.g., Intel had market dominance until AMD entered the market.","Ownership of a patent / copyright If a firm has the sole right to a manufacturing process then no other firm can compete with it. A patent (i.e. used to protect the intellectual property rights of firms) acts as a barrier to entry. Other firms are not allowed to produce the good until the patent has expired.."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q2-a-ii", topicId: "economics-2-0", conceptId: "long-run-equilibrium-in-monopoly",
+    section: "B", questionRef: "2015 HL Section B Q2(a)(ii)",
+    questionText: "Explain, with the aid of a diagram, the long run equilibrium position of a monopolist. Identify on your diagram the profit the monopolist makes.",
+    tariffModel: {"kind":"fixed","notation":"11 + 3 + 3 + 2 + 3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    rows: [
+    { id: "r-diagram", kind: "anyN", verbatim: "The diagram — each point", marks: 11, contextNote: "The diagram, 11 marks: Diagram: 11 points at 1 mark each. The completed diagram is shown with the answer.", openList: true, group: {"claimMax":11,"perOption":1,"options":["Price axis","Quantity axis","AR","MR","MC","AC","Correct Equilibrium point - E","P1","C1","Q1","Profits shown"]} },
+    { id: "r-equilibrium", kind: "point", verbatim: "1. Equilibrium — Occurs at point E where MC = MR [and MC is rising]", marks: 3, contextNote: "Equilibrium, 3 marks: 1 for point E, 2 for MC = MR with MC rising.", openList: true },
+    { id: "r-output", kind: "point", verbatim: "2. Price / Output — The firm produces Q1 and sells it at P1", marks: 3, contextNote: "Price and output, 3 marks: 2 for Q1, 1 for P1.", openList: true },
+    { id: "r-cost", kind: "point", verbatim: "3. Cost — The cost of producing this output is shown at point C1", marks: 2, contextNote: "The cost, 2 marks.", openList: true },
+    { id: "r-snp", kind: "point", verbatim: "4. SNP — The firm is earning SNP [P1 C1D B] because AR > AC or they can continue to exist due to barriers to entry.", marks: 3, contextNote: "Supernormal profit, 3 marks: 1 for the SNP shown, 2 for why it lasts.", openList: true },
+    { id: "r-waste", kind: "point", verbatim: "5. Waste of Scarce Resources / Inefficiency — The firm is not producing at the lowest point on the AC curve", marks: 3, contextNote: "Inefficiency, 3 marks: 1 for the head, 2 for the lowest point of AC. The scheme’s explanation totals 14.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-HL-scheme-p14-q2aii-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2015-HL-scheme-p14-q2aii-diagram.png",
+          "srcHash": "ff526d4419cd6b6e9044fe8e1bdc883e",
+          "alt": "The marking scheme’s monopoly diagram: Price against Quantity, a falling AR line and a steeper MR line, a U-shaped AC curve and an MC curve rising through E, where MC meets MR above Q1. From Q1 a line rises to B on AR, marked P1, and to D on AC, marked C1; the hatched rectangle P1 B D C1 is labelled SNP.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q2-b-i", topicId: "economics-2-0", conceptId: "price-discrimination",
+    section: "B", questionRef: "2015 HL Section B Q2(b)(i)",
+    stem: "A monopolist can increase its profits by engaging in price discrimination.",
+    questionText: "Explain the concept price discrimination, using a suitable example.",
+    tariffModel: {"kind":"fixed","notation":"8 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-explanation", kind: "point", verbatim: "When the same goods or services are sold to different consumers (in different markets) at varying ratios between marginal cost and the price / the price difference is not due to differences in the cost of production.", marks: 8, contextNote: "The explanation, 8 marks.", openList: true },
+    { id: "r-example", kind: "anyN", verbatim: "An example — any one", marks: 2, contextNote: "One example, 2 marks.", openList: true, group: {"claimMax":1,"perOption":2,"options":["By location (different regions / countries different prices (e.g. Netflix more expensive in Ireland than in the UK).","By demographic (child fares / OAP concessions / students at cinema)","By time, different rates at different times (Rail fares at commuter times, at other times)","By status (existing club members may be charged different prices to new members)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q2-b-ii", topicId: "economics-2-0", conceptId: "conditions-for-price-discrimination",
+    section: "B", questionRef: "2015 HL Section B Q2(b)(ii)",
+    stem: "A monopolist can increase its profits by engaging in price discrimination.",
+    questionText: "State and explain the market conditions necessary for price discrimination to take place.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":3,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A condition — all three", marks: 15, contextNote: "Three conditions, 5 marks each (2 + 3).", openList: true, group: {"claimMax":3,"perOption":5,"options":["Some monopoly / market power Firms must have some ability to alter the market price by exercising control over its demand, supply or both. If freedom of entry existed into the industry, competitors would enter where the firm was charging the higher price and earning SNP and this would continue until only normal profit was being earned.","Separation of markets / limited ability to sell the product The markets must be distinct and separate. This ensures that the good bought in the low priced market cannot be offered for resale in the higher priced market (no resale between markets). If this was not the case the transfer of the goods bought in the low price market to the high price market would make the charging of different prices in the two markets impossible. Dental/Doctor treatments cannot be sold.","Different consumer price elasticities of demand / different demand curves Different consumers display different sensitivities to price i.e. they have different price elasticities of demand. Consumers with the greater PED are charged the lower prices for their goods e.g. students are assumed to have lower incomes and so are not in the position to pay the full price for certain goods and services."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q2-c", topicId: "economics-1-3", conceptId: "regulating-irish-water",
+    section: "B", questionRef: "2015 HL Section B Q2(c)",
+    stem: "The Commission for Energy Regulation (CER), Ireland’s independent energy regulator, has been appointed as the independent economic regulator for Ireland’s public water services.",
+    questionText: "Discuss whether or not Irish Water (Uisce Éireann), Ireland’s new water utility company, should be regulated.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":7,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason, for or against — any three", marks: 15, contextNote: "Three reasons, 5 marks each (2 + 3), for or against.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Arguments why Irish Water should be regulated — Pricing: ensure that consumers are charged a fair price As water is a basic human right it should be provided to consumers at a fair price. The regulator should prevent the abuse of monopoly power and so protect the interests of water customers and ensure that they are not exploited. By approving and regulating Irish Water’s proposed revenue allowances and tariff structures consumers can be protected.","Arguments why Irish Water should be regulated — Quality: provision of clean water Regulation should ensure that water services are delivered in a safe and secure way / the water provided should be clean and an uninterrupted supply should be guaranteed.","Arguments why Irish Water should be regulated — Invest in infrastructure To ensure Ireland has sustainable water supply and wastewater treatment service provision it must invest in infrastructure to support the development of the service into the future e.g. remove the lead in water pipes.","Arguments why Irish Water should be regulated — Protection of the environment Irish water is responsible for wastewater treatment. This will ensure that the environment is protected and thus future citizens are safeguarded etc.","Arguments why Irish Water should not be regulated — Laissez faire policies should be pursued The government should not interfere in the market. By regulating the market this may discourage potential investors in Ireland as they see their profit motive may attract negative attention.","Arguments why Irish Water should not be regulated — Prices should be determined by the market The price of water should be determined by the market. This should ensure that the full economic price is charged for the service and no political interference should be considered.","Arguments why Irish Water should not be regulated — Irish Water can generate funds for innovation Irish Water will be able to generate funds which would allow the company innovate in production / distribution methods / generate funds for investment in infrastructure etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q3-a", topicId: "economics-1-5", conceptId: "cost-and-profit-concepts",
+    section: "B", questionRef: "2015 HL Section B Q3(a)",
+    questionText: "In the case of any two of the following three pairs distinguish between the two concepts: • Marginal Cost and Average Cost • Explicit Cost and Implicit Cost • Normal Profit and Supernormal Profit.",
+    tariffModel: {"kind":"fixed","notation":"4 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each concept explained — two pairs", marks: 20, contextNote: "Two pairs, both concepts of each: 4 explanations, 5 marks each.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Marginal cost Is the addition / increase in total cost from the production of an extra unit of output.","Average cost Is total cost divided by the total number of units produced/ It is the cost per unit of output produced.","Explicit cost (the known costs/the money costs) The costs a firm pays for inputs (recorded by accountants). They require a cash outlay by the firm.","Implicit cost The implicit costs are often non-monetary costs and are often difficult to quantify / firm uses the resources it owns. Inputs not purchased in a market transaction. (The owners’ time and investment in the firm e.g. the wages the owner does not take for his / her effort.)","Normal Profit Is the minimum amount of profit which the entrepreneur needs to earn to keep resources in their present use in the long run / is the minimum amount required to keep factors of production in their current use. Normal profit is part of the total cost of production.","Supernormal profit Is the profit earned in excess of normal profit / is profit over and above the minimum required to keep factors of production in their current use. It occurs whenever the average revenue received from selling goods is greater than the average cost associated with production."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q3-b-i", topicId: "economics-1-5", conceptId: "the-bakerys-costs",
+    section: "B", questionRef: "2015 HL Section B Q3(b)(i)",
+    stem: "The table below shows the output and production costs for a small bakery.",
+    questionText: "Use the data in the table above to answer the following questions: • What are the fixed costs of operating this bakery? Explain your answer. • What are the variable costs of producing 300 loaves of bread? • What is the average cost of producing 400 loaves of bread?",
+    tariffModel: {"kind":"fixed","notation":"6 + 3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-fixed", kind: "point", verbatim: "Fixed costs: €100. To produce 0 units costs €100 so these are the fixed costs.", marks: 6, contextNote: "The fixed costs with the reason, 6 marks.", openList: true },
+    { id: "r-variable", kind: "point", verbatim: "Total Variable Costs of 300 loaves: €330 – €100 = €230", marks: 3, contextNote: "The variable costs, 3 marks.", openList: true },
+    { id: "r-average", kind: "point", verbatim: "€0.90 per loaf", marks: 3, contextNote: "The average cost, 3 marks: total cost over total output, €360 over 400. The figure shows the working as printed.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2015-HL-paper-p06-q3b-table",
+          "src": "/exam-figures/economics/markbank/economics-2015-HL-paper-p06-q3b-table.png",
+          "srcHash": "c2b0a782b5391ed3e29c900fa97a1c98",
+          "alt": "A table: Units of Bread 0 to 700 in hundreds; Total Costs (€) 100, 200, 280, 330, 360, 450, 600, 770.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2015-HL-scheme-p18-q3bi-working",
+          "src": "/exam-figures/economics/markbank/economics-2015-HL-scheme-p18-q3bi-working.png",
+          "srcHash": "89120fc694da409307a58126069ec828",
+          "alt": "The marking scheme’s working: Average cost of 400 loaves = Total cost over Total output = €360 over 400 = €0.90 per loaf, 3 marks.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q3-b-ii", topicId: "economics-1-5", conceptId: "graphing-the-bakerys-costs",
+    section: "B", questionRef: "2015 HL Section B Q3(b)(ii)",
+    stem: "The table below shows the output and production costs for a small bakery.",
+    questionText: "Using the data from the table above, draw one graph showing the following (you may use graph paper to complete this question): • Total costs (label the curve TC) • Total variable costs (label the curve VC) • Total fixed costs (label the curve FC)",
+    tariffModel: {"kind":"fixed","notation":"2 + 4 + 7 + 7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "r-labels", kind: "point", verbatim: "Labels: Costs / Qty", marks: 2, contextNote: "The two axis labels, 2 marks (2 at 1 mark each). The completed graph is shown with the answer.", openList: true },
+    { id: "r-fc", kind: "point", verbatim: "Graph of total fixed costs:", marks: 4, contextNote: "The FC line, 4 marks.", openList: true },
+    { id: "r-tc", kind: "point", verbatim: "Graph of total cost:", marks: 7, contextNote: "The TC curve, 7 marks (2 + 2 + 3): (Start point / end point + correct trend).", openList: true },
+    { id: "r-vc", kind: "point", verbatim: "Graph of total variable cost:", marks: 7, contextNote: "The VC curve, 7 marks (2 + 2 + 3), the same way.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2015-HL-paper-p06-q3b-table",
+          "src": "/exam-figures/economics/markbank/economics-2015-HL-paper-p06-q3b-table.png",
+          "srcHash": "c2b0a782b5391ed3e29c900fa97a1c98",
+          "alt": "A table: Units of Bread 0 to 700 in hundreds; Total Costs (€) 100, 200, 280, 330, 360, 450, 600, 770.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2015-HL-scheme-p18-q3bii-graph",
+          "src": "/exam-figures/economics/markbank/economics-2015-HL-scheme-p18-q3bii-graph.png",
+          "srcHash": "6ae166c15440dd7510aa971fbec888e2",
+          "alt": "The marking scheme’s graph, Total Costs: Costs 0 to 900 against Quantity 0 to 700. FC is a horizontal line at 100; TC rises from 100 through 200, 280, 330, 360, 450 and 600 to 770; VC rises from 0 below TC, the same distance below it throughout, to 670.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q3-b-iii", topicId: "economics-1-5", conceptId: "the-short-run",
+    section: "B", questionRef: "2015 HL Section B Q3(b)(iii)",
+    stem: "The table below shows the output and production costs for a small bakery.",
+    questionText: "With reference to the graph you have drawn in part (ii) does the graph represent the short run or the long run? Outline a reason for your answer.",
+    tariffModel: {"kind":"questionTotal","notation":"3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The graph represents the short run", marks: null, contextNote: "The scheme prices the answer and its reason 3 together and does not say which earns which.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "Fixed costs only exist in the short run / at least one of the factors of production being used is fixed in quantity.", marks: null, contextNote: "Claim the complete answer: 3 marks in all.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q3-c", topicId: "economics-1-5", conceptId: "economies-and-diseconomies-of-scale",
+    section: "B", questionRef: "2015 HL Section B Q3(c)",
+    questionText: "Discuss possible economies of scale and diseconomies of scale that the bakery may experience, should it expand its scale of production in the long run.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":10,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An economy or diseconomy — any four", marks: 20, contextNote: "Four points, 5 marks each (2 + 3). Must have a minimum of one economy / diseconomy. Reference must be made to the bakery", openList: true, group: {"claimMax":4,"perOption":5,"options":["Possible economies of scale for the bakery — Technical economies of scale If the bakery expands they could justify the purchase of more advanced machinery as the cost could be spread over a larger quantity of output.","Possible economies of scale for the bakery — Economies in the use of labour If the bakery expands higher production levels allow specialisation and the division of labour / each worker could specialise on a specific task and become very skilled at it. As a result the output per worker could increase and the cost per unit could be reduced.","Possible economies of scale for the bakery — Production economies The bakery could engage in a continuous production process by operating three 8 hour shifts per day for example. This reduces costs as there is no interruption to the production process.","Possible economies of scale for the bakery — Economies in the use of raw materials A large bakery may be able to make better use of their raw materials by producing a broader range of products and thus reduce waste.","Possible economies of scale for the bakery — Financial economies A large bakery may be able to negotiate more favourable borrowing rates with financial institutions and may have a wider choice of institutions to access loans.","Possible economies of scale for the bakery — Purchasing A large bakery may be able to avail of discounts in the purchase of raw materials/lower supply costs when buying in bulk (can buy in larger quantities and can agree discounts from suppliers).","Possible economies of scale for the bakery — Economies in distribution With a larger volume of production the bakery may be able to organise a more efficient transport and distribution system.","Possible economies of scale for the bakery — Marketing economies May be able to reduce advertising costs as these can be spread over a greater number of units of output / the bakery will be advertising for a larger volume of customers and its cost per unit may fall.","Possible diseconomies of scale for the bakery — Managerial diseconomies The bigger the firm, the more stretched the management team becomes. Communication may become a problem, so inefficiencies may develop which increase costs for the firm.","Possible diseconomies of scale for the bakery — Lack of worker motivation / staff morale / workplace conflict Specialisation and division of labour may lead to workers becoming bored with repetitive tasks and the quality of the work may suffer as a result. As the bakery expands, the interests of the workers and management may conflict and lead to industrial relations problems. Morale may suffer which can lead to increasing costs for the firm."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q4-a-i", topicId: "economics-0-1", conceptId: "characteristics-of-enterprise",
+    section: "B", questionRef: "2015 HL Section B Q4(a)(i)",
+    questionText: "State and explain two economic characteristics of enterprise as a factor of production.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":3,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A characteristic — any two", marks: 10, contextNote: "Two characteristics, 5 marks each (2 + 3).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Enterprise can earn a loss It is the only factor that can earn a loss due to a fall in demand or excessive production costs.","Returns can vary The returns can vary from supernormal profits to losses / the returns to the other factors are guaranteed.","Return is residual Enterprise receives its return only after the other factors have been paid for. It is different from the other factors where the payments are agreed in advance or contractual."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q4-a-ii", topicId: "economics-1-5", conceptId: "why-profits-matter",
+    section: "B", questionRef: "2015 HL Section B Q4(a)(ii)",
+    questionText: "Explain the importance of profits in a market economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":6,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any four", marks: 20, contextNote: "Four points, 5 marks each (2 + 3).", openList: true, group: {"claimMax":4,"perOption":5,"options":["Encourages risk taking and entrepreneurship Profits are a prerequisite for encouraging entrepreneurs to undertake the risks inherent in business / without profits no firms would supply goods or services.","Indicates the best use of resources / consumer demand Profits are an indication to entrepreneurs that they are providing goods and services that consumers want / they are responding to consumer demand / they indicate areas which are the most suitable for the use of scarce resources.","Encourages investment When profits are earned this may encourage entrepreneurs to invest further in ventures /encourage the entry of new firms into the industry.","Provide funds for expansion Entrepreneurs may use the profits earned to re-invest in their existing business / diversify production etc.","Profits reward innovation Entrepreneurs who earn SNPs do so because they may be more efficient / entrepreneurial innovation / minimise costs of production and increases profits.","Source of revenue for the government Profits earned by entrepreneurs are taxed (with exceptions) by the government and become a source of revenue for the state. They can use these profits to further develop the economy."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q4-b-i", topicId: "economics-0-1", conceptId: "capital-and-investment",
+    section: "B", questionRef: "2015 HL Section B Q4(b)(i)",
+    questionText: "Distinguish between the terms capital and investment as used by economists.",
+    tariffModel: {"kind":"fixed","notation":"2 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-capital", kind: "anyN", verbatim: "Capital — any one statement", marks: 5, contextNote: "Capital, 5 marks.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Capital anything made by man used in the production of goods and services.","Capital refers to the equipment/machinery used in the production process.","Capital is a stock concept."]} },
+    { id: "r-investment", kind: "anyN", verbatim: "Investment — any one statement", marks: 5, contextNote: "Investment, 5 marks.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Investment involves the production of capital goods / capital formation.","In economics investment relates to a firm buying new capital, such as machinery or factory buildings.","It is any addition /increase to the capital stock/spending on capital equipment. It is a flow concept."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q4-b-ii", topicId: "economics-3-1", conceptId: "investing-in-the-railways",
+    section: "B", questionRef: "2015 HL Section B Q4(b)(ii)",
+    questionText: "Discuss the case for and against the Government investing in Ireland’s railways.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":13,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A point for or against — any four", marks: 20, contextNote: "Four points, 5 marks each (2 + 3). Must have a minimum of one argument in favour / one against", openList: true, group: {"claimMax":4,"perOption":5,"options":["The case for — Facilitates geographic mobility It allows people to travel more easily between different parts of the country, from home to work and so increases the geographical mobility of labour.","The case for — Balanced regional development Improved rail infrastructure could lead to a better standard of living in the regions and so promote regional development e.g. the West of Ireland.","The case for — Less traffic gridlock Greater use of rail transport may reduce traffic congestion as the economy starts to pick up.","The case for — Relatively environmentally friendly compared to car Could encourage the use of public transport so less fossil fuels will be used thereby saving scarce resources.","The case for — Capital intensive investment Investment in railways requires huge capital investment which would not be provided by private enterprise and so should be provided by the government.","The case for — Improved infrastructure Investment is needed to maintain existing rolling stock so that a quality service is provided to consumers on an on-going basis. As a result of investment, travelling times may decrease which may increase demand by both individual users and firms.","The case for — Social benefit It provides a mode of transport for those people who do not have a private mode of transport so therefore it is socially desirable etc.","The case against — Very capital intensive As the capital required is quite high it will have major funding implications for government which will increase state borrowing. Ireland currently has a high national debt.","The case against — It is a very long term investment It might be too expensive as it is a very long term investment and investment in buses may be a better and more cost effective measure in the short term.","The case against — Opportunity cost Subsidising lines that are not making returns involves an opportunity cost such as investing in road improvements.","The case against — Reduction in the demand for rail services The investment may not be cost effective as there has been a fall in passenger numbers, in freight traffic and in the use of the Dublin suburban rail network.","The case against — Commitment to on-going subsidies / cost to taxpayer In 2013 a €258m subsidy was provided and this could remove the motivation to keep costs down.","The case against — Increased competition from bus companies / improved motorway network Competition on certain routes has increased greatly e.g. buses from Dublin - Galway: high frequency, 24 hour operation, faster journeys, lower fares, no subsidies and high vehicle standards etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q4-c-i", topicId: "economics-3-4", conceptId: "keynes-motives-for-holding-money",
+    section: "B", questionRef: "2015 HL Section B Q4(c)(i)",
+    questionText: "State and explain the three motives put forward by John Maynard Keynes for holding assets in the form of cash.",
+    tariffModel: {"kind":"fixed","notation":"3 x 3 (1 + 2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-transactionary", kind: "point", verbatim: "Transactionary — People desire to hold money for day-to- day spending / as a medium of exchange.", marks: 3, contextNote: "Transactionary, 3 marks: 1 for the motive, 2 for its explanation (the scheme’s 3 at 5 marks (1 + 2 + 2), its Statement and Explanation columns).", openList: true },
+    { id: "r-precautionary", kind: "point", verbatim: "Precautionary — People hold money for emergencies / for the unexpected.", marks: 3, contextNote: "Precautionary, 3 marks: 1 for the motive, 2 for its explanation (the scheme’s 3 at 5 marks (1 + 2 + 2), its Statement and Explanation columns).", openList: true },
+    { id: "r-speculative", kind: "point", verbatim: "Speculative — People desire to hold money for any possible profitable future investment opportunities. Hold money to avoid losses from holding interest-bearing assets.", marks: 3, contextNote: "Speculative, 3 marks: 1 for the motive, 2 for its explanation (the scheme’s 3 at 5 marks (1 + 2 + 2), its Statement and Explanation columns).", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q4-c-ii", topicId: "economics-3-4", conceptId: "influences-on-each-motive",
+    section: "B", questionRef: "2015 HL Section B Q4(c)(ii)",
+    stem: "State and explain the three motives put forward by John Maynard Keynes for holding assets in the form of cash.",
+    questionText: "Outline one main influence on each motive.",
+    tariffModel: {"kind":"fixed","notation":"3 x 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-transactionary", kind: "point", verbatim: "Transactionary — Level of income: People on higher incomes spend more, and so the transactionary demand will increase.", marks: 2, contextNote: "The influence on the transactionary motive, 2 marks (the scheme’s One main influence column).", openList: true },
+    { id: "r-precautionary", kind: "point", verbatim: "Precautionary — Level of income: The higher the level of income the greater the precautionary demand for money.", marks: 2, contextNote: "The influence on the precautionary motive, 2 marks (the scheme’s One main influence column).", openList: true },
+    { id: "r-speculative", kind: "point", verbatim: "Speculative — Interest rates: If interest rates are high, the demand for bonds is relatively high whereas the demand for money is relatively low. The higher the rate of interest the more attractive it becomes to store wealth in bonds rather than money and with this the speculative demand for money declines.", marks: 2, contextNote: "The influence on the speculative motive, 2 marks (the scheme’s One main influence column).", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q5-a-i", topicId: "economics-3-4", conceptId: "limits-on-credit-creation",
+    section: "B", questionRef: "2015 HL Section B Q5(a)(i)",
+    questionText: "Outline three factors that limit the ability of banks to create credit.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 6","answer":3,"ofParts":5,"perPart":6}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A factor — any three", marks: 18, contextNote: "Three factors, 6 marks each (3 + 3).", openList: true, group: {"claimMax":3,"perOption":6,"options":["Availability of creditworthy customers Even if banks have money to lend they will be cautious in terms of lending as they will be concerned about the risk of the loans not being repaid. In a recession consumers might lose their jobs and be unable to repay their loans.","Cash deposits in the banks A bank can only give loans provided that it can attract cash deposits. If it attracts more deposits then it can create more credit. As interest rates are low Irish banks may experience a difficulty in attracting deposits as customers seek better returns elsewhere.","Demand for loans / credit by customers In times of uncertainty businesses are not likely to invest and individual consumers will not borrow if they are worried about their future income / job prospects.","Customers' demands for cash The bank must keep sufficient cash so as to be able to meet the demands of its customers for cash. If people pay more of their bills in cash then their demand for cash will increase and this will reduce the ability of the banks to create credit.","Guidelines by European Central Bank Banks must comply with the ECB regulations / rules re changing the bank rate / changing the required capital ratios (i.e. the amount of capital on the bank’s balance sheet as a proportion of its loans) and the value of liquid assets banks must keep. They can change the reserve requirement which would have an impact on the banks’ ability to create credit."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q5-a-ii", topicId: "economics-3-4", conceptId: "why-regulate-the-financial-system",
+    section: "B", questionRef: "2015 HL Section B Q5(a)(ii)",
+    questionText: "Discuss the economic reasons why the financial system in Ireland should be regulated.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":4,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 12, contextNote: "Two reasons, 6 marks each (3 + 3).", openList: true, group: {"claimMax":2,"perOption":6,"options":["To provide a degree of protection to depositors / customers with individual financial institutions. Purpose of regulation is to promote a stable, safe / fair financial services market for consumers / to promote sound and solvent financial institutions giving depositors confidence that their deposits and investments are safe / customers have confidence in the financial system.","To ensure proper lending procedures are followed by the banks and to avoid reckless lending. A cause of the Irish banking crisis was domestic, with Irish controlled credit institutions engaged in excessive risk-taking and reckless property-related lending. Irish credit institutions sought ever larger profits and market share in what had become a highly competitive market.","To maintain the stability of the financial system / restore confidence. To foster a stable / healthy financial system. Regulation could ensure the financial sector will operate efficiently/public confidence will be restored allowing for financial stability, which can result in economic growth.","To reduce macro-economic instability (boom/bust). If banks are left to their own devices then they may lend excessively in good times and little in bad times (pro-cyclical behaviour of banks). They may amplify the boom and bust of the cycle (i.e. make everything worse)."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q5-b", topicId: "economics-3-4", conceptId: "mortgage-lending-rules",
+    section: "B", questionRef: "2015 HL Section B Q5(b)",
+    stem: "In January 2015, the Central Bank of Ireland (CBI) introduced restrictions on residential mortgage lending (bigger deposit requirement for mortgage loans and upper limits on borrowing based on income).",
+    questionText: "State and explain the possible economic impacts of these restrictions on the Irish property market.",
+    tariffModel: {"kind":"fixed","notation":"7 + 7 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An impact — any three", marks: 20, contextNote: "Three impacts: 3 impacts: 7 marks (4 + 3) + 7 marks (4 + 3) + 6 marks (3 + 3).", openList: true, group: {"claimMax":3,"perOption":7,"options":["Could ease the trend of rising property prices The restrictions may limit the increase in house prices by placing a limit on effective demand (purchasing power backed up by income).","Potential supply effect The restrictions could result in increased demand for rental properties renting / increased rents. There may be a bias towards first time buyers. There may be an increase in the number of mortgages due to their smaller average size.","Could lead to lower levels of construction activity when new homes needed This contradicts government housing policy which aims to encourage new home supply. The restrictions may discourage house building because developers and their financial backers will be put off.","Greater safety around the mortgage business The restrictions may increase the resilience of the banking and household sectors to financial shocks / shocks in the Irish property market. Lenders will be less vulnerable in the event of property prices falling by reducing the losses in the event of default.","Help stabilise the business cycle / reduce the boom-bust in the cycle Prudent lending activity may take place as the housing market activity begins to improve. It could ensure the goal of responsible borrowing is achieved/ the restrictions may eliminate the boom-bust cycle which has occurred.","Could hinder the recovery in the property market High rents and tax increases have made savings difficult. These restrictions may make it difficult for people to move out of the rental market to home ownership."],"perOptionSteps":[7,7,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q5-c", topicId: "economics-3-4", conceptId: "funding-for-smes",
+    section: "B", questionRef: "2015 HL Section B Q5(c)",
+    stem: "The Strategic Banking Corporation of Ireland (SBCI) was set up to support SMEs (small and medium enterprises) by providing finance under favourable terms (e.g. lower cost credit).",
+    questionText: "Discuss the possible economic benefits of increased access to funding for the SME sector in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"7 + 6 + 6 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A benefit — any four", marks: 25, contextNote: "Four benefits: 4 benefits: 7 marks (4 + 3) + 3 at 6 marks (3 + 3).", openList: true, group: {"claimMax":4,"perOption":7,"options":["Create job / training opportunities Many SMEs are indigenous Irish-owned businesses. With additional finance they will help create employment. As business expands people will be offered more employment / training opportunities. Less than ¼ of the net increase in jobs came from the foreign-owned firms. The rest of the net jobs created in the economy occurred in Irish-owned SMEs. Ireland needs to grow the indigenous sector.","Encourage entrepreneurship The SMEs will help create additional income and hence create economic growth /increased GDP. In the case of Irish-owned firms, all of the value added in the sector adds to Irish GNP whereas in the case of foreign MNCs it is mainly the wage bill and the corporation tax paid that do so i.e. the multiplier effect will be greater because of SMEs.","Flexible/Able to adapt to changes in market conditions SMEs make up a significant part of the Irish economy. They are more flexible and better able to adapt to changes in market conditions. They can spot opportunities and react to the changing market conditions quickly.","Local development improvements SMEs are based throughout the country. They supply local markets and so any expansion in their services will benefit the local communities and so aid regional development.","Government finances improve If business activity increases then employment increases, spending will increase and so the level of taxation revenue will increase with a decline in welfare payments by the government.","Balance of payments As many SMEs are indigenous Irish-owned businesses the output they produce may help replace imports and/or they may begin to export some of their output thereby improving Ireland’s balance of payments position.","Reduced reliance on FDI By expanding the indigenous Irish-owned SMEs Ireland may become less reliant on FDI. Domestic firms have been quite successful in growing output and employment. This is possibly because they are more reliant on the growing British market."],"perOptionSteps":[7,6,6,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q6-a-i", topicId: "economics-3-3", conceptId: "is-the-cpi-accurate",
+    section: "B", questionRef: "2015 HL Section B Q6(a)(i)",
+    stem: "“Prices on average as measured by the Consumer Price Index (CPI) were 0.1% higher in November 2014 compared with November 2013.” (CSO statistics)",
+    questionText: "Do you consider the CPI an accurate measure of changes in the cost of living? Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"2 + 3 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-answer", kind: "point", verbatim: "No, for the following reasons:", marks: 2, contextNote: "No, 2 marks: the scheme credits No.", openList: true },
+    { id: "r-reasons", kind: "anyN", verbatim: "A reason — any three", marks: 15, contextNote: "Three reasons, 5 marks each (2 + 3).", openList: true, group: {"claimMax":3,"perOption":5,"options":["Limitations of an average / relevance The CPI is based on an average pattern of spending. The spending patterns are individual and might not be typical of the representative pattern on which the official figures are based. It may not accurately represent different groups in society e.g. non-smokers etc. The survey establishes the basket of goods of the average household only.","Introduction of new products As it includes only those products in the base year it lags behind consumer trends and fashions. New products are not included in the index. It does not take into account increases in the purchasing power of money due to the introduction of new products. Greater variety makes each euro more valuable, so consumers need fewer euros to maintain any given standard of living.","Limited range of products A limited range of products is included in the CPI. Most families spend their income on a very large range of products. Only twelve categories of products are included in the CPI comprising roughly 8,000 different products. However, there are tens of thousands of different products on the market at any given time.","Rural versus urban lifestyles Both urban and rural households are represented by the present set of weights but this may not reflect accurately changes in their respective cost of living e.g. the cost of accommodation in urban areas is more expensive than in rural areas and this is not reflected in the CPI.","Switching by consumers to cheaper brands / substitution bias When prices rise the CPI does not measure the extent to which people may switch to cheaper brands. People tend to substitute cheaper products when substitutes are available when prices rise. It does not take into account consumers’ ability to substitute towards products that become relatively cheaper over time.","Quality bias of products / unmeasured quality changes Changes in quality / technological progress are not taken into account. Newer products are constantly introduced as others become obsolete. The CPI cannot take account of the changes in the quality of goods. It is distorted by unmeasured changes in the quality of goods and services. If the quality of the good deteriorates from one year to the next, the effective value of the euro falls.","Price index not cost of living index The CPI only measures changes to prices not changes in the cost of living because it doesn’t take into account all the items which affect a person’s living standards i.e. income tax, social welfare payments etc.","Unrepresentative weights / compositional bias The weights used are those which apply in the base year the Household Budget Survey was taken. The base year may not be representative. The importance of some items in the base year changes over time because of changes in prices, taste and income. It does not allow for compositional changes in the basket because the weights are in the base year period not the current period."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q6-a-ii", topicId: "economics-3-3", conceptId: "effects-of-deflation",
+    section: "B", questionRef: "2015 HL Section B Q6(a)(ii)",
+    stem: "“Prices on average as measured by the Consumer Price Index (CPI) were 0.1% higher in November 2014 compared with November 2013.” (CSO statistics)",
+    questionText: "Discuss two possible economic effects of price deflation on the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 4","answer":2,"ofParts":6,"perPart":4}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: 8, contextNote: "Two effects, 4 marks each (2 + 2).", openList: true, group: {"claimMax":2,"perOption":4,"options":["Income effect / increasing purchasing power If the price level is falling, cash gains value over time therefore the amount of goods and services you buy with a given amount of cash increases.","Debt burden effect (mortgage debt and state debt) The real cost of repaying loans rises/Lenders who are owed money gain under deflation. The real value of the borrowers’ payments increases/ borrowers lose because the real burden of their debt rises.","Decline in spending / aggregate demand Consumers may postpone spending because they expect prices to fall even further in the future and this reduces aggregate demand and could deepen a recession further. Hence economic growth declines.","A fall in investment Business people may postpone investment due to the uncertainty and the reduction in demand. Companies will find it very difficult to operate in an economy where prices are falling. Profits are being eroded.","Increased competitiveness Falling prices should make Irish goods more attractive abroad and so the demand for Irish exports may increase.","Long-term damage to the economy Deflation can create a vicious spiral of negatives: falling profits; closing factories; shrinking employment and incomes and increasing defaults on loans by companies and individuals."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q6-b-i", topicId: "economics-3-2", conceptId: "types-of-unemployment",
+    section: "B", questionRef: "2015 HL Section B Q6(b)(i)",
+    stem: "Economists classify unemployment into different types.",
+    questionText: "State and explain three types of unemployment.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":5,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A type — any three", marks: 15, contextNote: "Three types, 5 marks each (2 + 3).", openList: true, group: {"claimMax":3,"perOption":5,"options":["Cyclical unemployment This type of unemployment arises due to fluctuations in the business cycle (Keynesian unemployment). Cyclical unemployment arises due to downturns in the economy. In theory those who lose their jobs in the downturn should be re-hired in the recovery phase of the cycle. The deviation of unemployment from its natural rate.","Structural unemployment This type of unemployment occurs when there is a change in the pattern of demand for a particular skill set. Changes in the pattern of economic activity in an economy/ Industries are unable to adapt or compete in the face of changing demand or new products. New technologies have displaced skills e.g. pre-fabricated buildings have displaced block layers.","Frictional unemployment This type of unemployment occurs when people are ‘between jobs’. The unemployment results because of the time it takes for workers to search for the jobs that best suit their tastes and skills. Workers will leave one firm and move to another. The period when they are searching for new employment causes ‘frictional’ unemployment due to the normal working of an economy: workers quit to find better jobs; employers let workers go to replace them with better workers.","Seasonal unemployment Unemployment caused by seasonal variations in demand/ by fluctuations in some activities at some period during the year. During the summer months the tourist industry is much busier than winter time and so this industry will employ more workers. These workers may then lose their jobs during the winter months.","Institutional unemployment This arises due to obstacles to the mobility of labour or the removal of the incentive to work. It can arise when there is a shortage of housing in areas where jobs are available; when the gap between Job Seekers Benefit and take-home pay in available jobs is so small that there is no incentive for the workers to take up employment. The existence of closed shop practices in workplaces."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q6-b-ii", topicId: "economics-3-2", conceptId: "policies-for-unemployment",
+    section: "B", questionRef: "2015 HL Section B Q6(b)(ii)",
+    stem: "Economists classify unemployment into different types.",
+    questionText: "Outline one appropriate government policy response for each of two unemployment types that you have explained in part (i) above.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":5,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A policy — any two", marks: 10, contextNote: "Two policies, each for a type explained in (i), 5 marks each (2 + 3).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Cyclical unemployment Policymakers should use monetary and fiscal policy to counteract this type of unemployment i.e. take measures to stimulate aggregate demand.","Structural unemployment This type of unemployment requires that workers be retrained into areas of employment that are needed e.g. ‘Springboard’ programme/ focus on the characteristics of the unemployed person in an effort to make them more employable.","Frictional unemployment Provide retraining schemes for workers/ Aim to provide a better match of workers skills with employers e.g. SOLAS / Internet/Reduce workers search periods between jobs, by ensuring workers are aware of job vacancies.","Seasonal unemployment Firms could try to extend their season e.g. hotels could try to attract customers e.g. offer different packages to attract customers at different times of the year.","Institutional unemployment Improve geographical mobility of labour and try to make it easier for families to move houses. Offer incentives to take up employment e.g. a reduction in the rate of income tax / reduction in USC for workers who leave social welfare schemes. Try to liberalise working practices so that no barriers to employment exist."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q6-c-i", topicId: "economics-3-2", conceptId: "the-live-register",
+    section: "B", questionRef: "2015 HL Section B Q6(c)(i)",
+    stem: "According to the Quarterly National Household Survey (QNHS) the rate of unemployment was 11.1% in the third quarter of 2014.",
+    questionText: "Name one other commonly used source of unemployment statistics in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Live Register", marks: 5, contextNote: "The source, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q6-c-ii", topicId: "economics-3-2", conceptId: "why-the-sources-differ",
+    section: "B", questionRef: "2015 HL Section B Q6(c)(ii)",
+    stem: "According to the Quarterly National Household Survey (QNHS) the rate of unemployment was 11.1% in the third quarter of 2014.",
+    questionText: "State and explain the reasons for the differences between both sources.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":4,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 10, contextNote: "Two reasons, 5 marks each.", openList: true, group: {"claimMax":2,"perOption":5,"options":["The Live Register overstates the “true” level of unemployment because it includes — People who are legitimately working part time and signing on part time, therefore they are not unemployed: • All those on Jobseekers Benefit (JB) • All those on Jobseekers Allowance (JA) • Part-time workers (those who work up to 3 days a week), seasonal and casual workers entitled to Jobseekers Allowance or Benefit","The Live Register overstates the “true” level of unemployment because it includes — People who may be drawing social welfare but who may also be working (in the black economy) at the same time.","The Live Register overstates the “true” level of unemployment because it includes — People who may not be actively seeking employment","The Live Register overstates the “true” level of unemployment because it includes — Those signing on only for ‘PRSI credits’ and are not unemployed"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q6-c-iii", topicId: "economics-3-1", conceptId: "employment-and-the-current-finances",
+    section: "B", questionRef: "2015 HL Section B Q6(c)(iii)",
+    stem: "According to the Quarterly National Household Survey (QNHS) the rate of unemployment was 11.1% in the third quarter of 2014.",
+    questionText: "Outline the possible economic effects which a rise in the level of employment, due to economic recovery in Ireland, may have on the Government current finances.",
+    tariffModel: {"kind":"fixed","notation":"2 x 5 (2 + 3)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-revenue", kind: "point", verbatim: "(Current) revenue increases More PAYE, as more people working. Those in employment will have a higher disposable income which they are likely to spend and hence pay more indirect tax to the government. If firms’ profits rise as a result of increased sales then corporation tax receipts could also rise.", marks: 5, contextNote: "Current revenue rising, 5 marks (2 + 3).", openList: true },
+    { id: "r-expenditure", kind: "point", verbatim: "(Current) expenditure decreases If more people are working then the government will have to pay out less in social welfare payments.", marks: 5, contextNote: "Current expenditure falling, 5 marks (2 + 3).", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q7-a-i", topicId: "economics-3-0", conceptId: "the-circular-flow-of-income",
+    section: "B", questionRef: "2015 HL Section B Q7(a)(i)",
+    questionText: "Explain, with the aid of a diagram, the Circular Flow of Income for an open economy.",
+    tariffModel: {"kind":"fixed","notation":"13 + 5 + 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 23,
+    rows: [
+    { id: "r-diagram", kind: "point", verbatim: "the Circular Flow of Income for an open economy", marks: 13, contextNote: "The diagram, 13 marks: the scheme prints the circular flow for an open economy (shown with the answer) and prices it 13.", openList: true, ask: true },
+    { id: "r-households", kind: "point", verbatim: "Households — Households are the owners of the factors of production, which they provide/sell to the firms. In return, households get paid wages, rent, interest and profits. Households buy the output of goods and services of firms and consume goods and services. Part of their income goes in tax to the government. Part of their income will be saved in financial institutions. Part of their income will be spend on imports.", marks: 5, contextNote: "Households, 5 marks (the scheme’s 10 marks (5 + 5)).", openList: true },
+    { id: "r-firms", kind: "point", verbatim: "Firms — Firms produce goods and services using factors of production provided by households. Firms sell goods and services and receive household spending. The government will spend money which increases the demand for the firm’s output. Financial institutions will use money saved to invest in firms. Foreigners will spend money on output from Irish firms.", marks: 5, contextNote: "Firms, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-HL-scheme-p30-q7ai-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2015-HL-scheme-p30-q7ai-diagram.png",
+          "srcHash": "10dc9a9c2cf87e9ebe25010bec9d2a55",
+          "alt": "The marking scheme’s circular flow of income for an open economy: Households (Incomes) and Firms (Output) joined by Incomes for supplying F.O.P’s and Spending on the output of firms; from Households, Tax to Government, Savings to Financial Institutions and Imports to Foreign Markets; and to Firms, Government Expenditure, Investment and Exports.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q7-a-ii", topicId: "economics-3-0", conceptId: "exports-savings-and-national-income",
+    section: "B", questionRef: "2015 HL Section B Q7(a)(ii)",
+    questionText: "Outline how each of the following should affect the level of National Income in Ireland: • an increase in Irish exports • an increase in the level of savings.",
+    tariffModel: {"kind":"fixed","notation":"6 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-exports", kind: "point", verbatim: "An increase in Irish exports — This is an injection into the circular flow of income. This will lead to an increase in aggregate demand. Aggregate demand will increase by the injection times the multiplier.", marks: 6, contextNote: "Exports, 6 marks (3 + 3).", openList: true },
+    { id: "r-savings", kind: "point", verbatim: "An increase in the level of savings — This is a withdrawal from the circular flow of income. This will lead to a decrease in aggregate demand. Aggregate demand will decrease by the withdrawal times the multiplier.", marks: 6, contextNote: "Savings, 6 marks (3 + 3).", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q7-b", topicId: "economics-3-0", conceptId: "comparing-national-income",
+    section: "B", questionRef: "2015 HL Section B Q7(b)",
+    questionText: "Discuss four factors which should be considered when comparing national income statistics from different countries.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":8,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A factor — any four", marks: 20, contextNote: "Four factors, 5 marks each (2 + 3).", openList: true, group: {"claimMax":4,"perOption":5,"options":["Population/ Should be done on a per capita basis The population in different countries must be considered with changes in national income when assessing a country’s economic performance. If national income grows at a slower rate than population, then income per head decreases and the average standard of living will fall. Per capita income is a more meaningful measure of living standards than national income.","The price levels / levels of inflation An increase in prices will increase national income but standard of living may fall. So changes in national income must be compared with changes in prices to consider the impact on standard of living / economic performance. GDP at constant prices is a better indicator of economic growth than GDP at market prices.","Common currency/ Must express each countries National Income in a common currency This conversion is usually by means of foreign exchange rates which are based on the prices of internationally traded goods and services/ Usually done in US dollar. Non-internationally traded goods and services form a greater part of the national product of LDCs. So these national income statistics would be understated.","Distribution of national income and poverty within each country National Income statistics give headline figures as to the overall economic performance. Further research needs to be undertaken to find how income is distributed. E.g., two countries might have the same level of GNP. However, the income distribution might be very different in both countries with consequences for the welfare of the citizens.","Size of the black economy The black economy is excluded from the calculation of national income. The value of unreported transactions is difficult to ascertain, thus underestimating the level of national income.","Nature of government expenditure / statistics ignore economic wellbeing A country which spends a small amount on military equipment and a larger amount on health, education etc. will have a better standard of living than one where the reverse is the case i.e. much of its wealth is on armaments. There is a large difference in terms of relative economic well-being between the two countries yet the National Income data doesn’t reflect this difference.","Government services at cost price / Non- marketable goods and services Government services are included at cost while private services are included at selling price. A country where the government provides many services will record a lower GDP / national income.","Issues specific to individual countries which affect the standard of living in different countries: Climate /pollution/working conditions etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q7-c-i", topicId: "economics-3-5", conceptId: "economic-growth",
+    section: "B", questionRef: "2015 HL Section B Q7(c)(i)",
+    stem: "The Central Bank of Ireland (CBI) raised its forecast for 2015 economic growth to 3.7% from 3.4% citing strong consumer and investment spending. (Central Bank Quarterly Bulletin: Q1 2015)",
+    questionText: "Define the term economic growth.",
+    tariffModel: {"kind":"fixed","notation":"4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Can be defined as an increase in real Gross National Product (GNP)/ or real Gross Domestic Product (GDP)/ an expansion in the productive capacity of the economy over a period of time.", marks: 4, contextNote: "The definition, 4 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q7-c-ii", topicId: "economics-3-5", conceptId: "costs-and-benefits-of-growth",
+    section: "B", questionRef: "2015 HL Section B Q7(c)(ii)",
+    stem: "The Central Bank of Ireland (CBI) raised its forecast for 2015 economic growth to 3.7% from 3.4% citing strong consumer and investment spending. (Central Bank Quarterly Bulletin: Q1 2015)",
+    questionText: "Discuss possible costs and benefits of economic growth.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 4","answer":4,"ofParts":15,"perPart":4}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A cost or benefit — any four", marks: 16, contextNote: "Four points, 4 marks each (2 + 2). Must have a minimum of one cost / benefit", openList: true, group: {"claimMax":4,"perOption":4,"options":["Possible benefits — Increased employment opportunities Economic growth will lead to increased demand with more labour being required to provide this.","Possible benefits — Improved government finances With a rise in spending, indirect tax revenue rises; more people at work will result in an increase in direct tax revenue; expenditure on social welfare should fall.","Possible benefits — Effects on Balance of Payments If the increase in the rate of economic growth is export led then our balance of payments position improves.","Possible benefits — Increased standard of living Economic growth will result in higher incomes in the economy allowing us to buy more goods and services / better state services.","Possible benefits — Effects on migration If jobs opportunities exist then people who had planned to emigrate may remain and more immigrants may be attracted to the economy.","Possible benefits — Investment opportunities / Environmentally friendly technologies Economic growth indicates a growing economy and this may attract additional investment/higher profits. New and more environmentally friendly technologies could be developed.","Possible benefits — Reduced poverty The government may through fiscal policy (expenditure increases and taxation changes) alleviate poverty within the country.","Possible costs — Inflationary pressures With a rise in the level of economic activity the level of demand- pull inflation will rise.","Possible costs — Using up scarce resources / sustainable growth Economic growth results in an increased pressure on scarce resources such as oil and gas. As a result economic growth may not be sustainable.","Possible costs — Labour shortages As happened in the past labour shortages may occur in those sectors where demand for labour is increasing. Structural unemployment could also occur due to changes in the nature of demand.","Possible costs — Revised expectations by citizens With economic growth citizens may revise their expectations of government and expect more services from the state e.g. revised taxes; growth in incomes; wage demands etc.","Possible costs — Uneven distribution of wealth If the benefits of economic growth are not fairly distributed and are restricted to some groups then inequality in society can be increased.","Possible costs — Environmental consequences Growth may have a negative impact on society e.g. environmental costs/pollution and degradation of the environment.","Possible costs — Demographic problems Economic growth may lead to increased urbanisation and the continued decline in rural areas. The gap may widen between urban and rural.","Possible costs — Quality of life / pressure on infrastructure Longer hours of work, changing working conditions, traffic congestion etc. may all lead to a deterioration in the quality of life. The demand on state services may increase."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q8-a-agree", topicId: "economics-3-1", conceptId: "should-a-budget-deficit-be-encouraged",
+    section: "B", questionRef: "2015 HL Section B Q8(a) — agree",
+    questionText: "“A Budget deficit stimulates the economy and therefore should be encouraged.” Discuss this statement with reference to the Irish economy. You may agree or disagree. Justify the choice: AGREE.",
+    tariffModel: {"kind":"fixed","notation":"6 (3 + 3) + 7 + 7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "r-ireland", kind: "anyN", verbatim: "Reference to the Irish economy — both", marks: 6, contextNote: "For reference to the Irish economy 6 marks (3 + 3).", openList: true, group: {"claimMax":2,"perOption":3,"options":["Ireland has been in a recession which has lead to reductions in tax revenue (more unemployment and less business profits) increases in government current spending (social welfare benefits). The result is a large budget deficit.","Austerity measures that reduce spending end up reducing incomes making it even less likely that a country can repay its debts."]} },
+    { id: "r-points", kind: "anyN", verbatim: "If the candidate answers that a budget deficit should be encouraged — any two", marks: 14, contextNote: "Two points, 7 marks each (4 + 3). The scheme credits agreeing and disagreeing, each with its own list.", openList: true, group: {"claimMax":2,"perOption":7,"options":["The increased government expenditure will increase the demand for goods and services i.e. stimulate aggregate demand.","This increase in demand should lead to the creation of jobs and further increased spending.","The increase in consumer spending may lead to increased business confidence and stimulate economic activity further.","Firms respond to increased demand by producing more. This could lead to increased employment, increased consumer spending, which leads to increased aggregate demand and the spending cycle continues (the multiplier effect).","With increased government revenues (from increased tax revenues and a reduction in social welfare spending) the budget deficit may be self-financing.","Concern about the long-run effects of deficits should not rule out the use of expansionary fiscal policy to stimulate the economy when it is depressed. Higher government expenditure should increase aggregate demand and lead to higher economic growth. Lower taxes should increase disposable incomes of consumers leading to higher economic growth."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q8-a-disagree", topicId: "economics-3-1", conceptId: "should-a-budget-deficit-be-encouraged",
+    section: "B", questionRef: "2015 HL Section B Q8(a) — disagree",
+    questionText: "“A Budget deficit stimulates the economy and therefore should be encouraged.” Discuss this statement with reference to the Irish economy. You may agree or disagree. Justify the choice: DISAGREE.",
+    tariffModel: {"kind":"fixed","notation":"6 (3 + 3) + 7 + 7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "r-ireland", kind: "anyN", verbatim: "Reference to the Irish economy — both", marks: 6, contextNote: "For reference to the Irish economy 6 marks (3 + 3).", openList: true, group: {"claimMax":2,"perOption":3,"options":["Ireland has been in a recession which has lead to reductions in tax revenue (more unemployment and less business profits) increases in government current spending (social welfare benefits). The result is a large budget deficit.","Austerity measures that reduce spending end up reducing incomes making it even less likely that a country can repay its debts."]} },
+    { id: "r-points", kind: "anyN", verbatim: "If the candidate answers that a budget deficit should not be encouraged — any two", marks: 14, contextNote: "Two points, 7 marks each (4 + 3). The scheme credits agreeing and disagreeing, each with its own list.", openList: true, group: {"claimMax":2,"perOption":7,"options":["It can lead to increased borrowing with the burden of interest payments and Government Debt growing as long as there is a budget deficit and our National Debt is increasing.","High levels of debt can cause intergenerational unfairness because future generations of taxpayers will have to pay for the overspending of previous generations.","A budget deficit can lead to further increases in taxation in order to fund the increased borrowing.","Can lead to a loss of confidence in the economy by both businesses and individuals. Businesses may reduce investment and some individuals may reduce spending and save. Others may emigrate.","We are bound, and should adhere, to EU rules to reduce our budget deficit and to reduce our National Debt.","Could lead to money being spent on imports as Ireland is a small open economy and this reduces national income.","The government should run a budget that is appropriately balanced over time. High persistent budget deficits can have negative consequences. It is normal for government budgets to vary throughout the economic cycle."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q8-b-i", topicId: "economics-3-5", conceptId: "policies-for-regional-development",
+    section: "B", questionRef: "2015 HL Section B Q8(b)(i)",
+    questionText: "Outline three policies the Irish Government could consider to achieve balanced regional development.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":5,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A policy — any three", marks: 15, contextNote: "Three policies, 5 marks each (2 + 3).", openList: true, group: {"claimMax":3,"perOption":5,"options":["Grants/Tax Incentives If additional grants and tax incentives are provided to industry within the regions then more firms will locate there promoting development.","Investment in the infrastructure If investment in the infrastructure takes place then the improvements will make these regions more attractive to set up business in, to live in and work in/Improvements in transport and energy. The lack of an adequate power supply in the north east hinders the location of some types of industry there. If this situation were remedied then industry could locate there.","High speed broadband High speed broadband delivered in a timely and cost effective way may attract business to the regions. Many advance FDI projects will require access to cloud computing which in turn requires high speed broadband.","Improved access to training and educational facilities The provision of adequate third level educational facilities is a pre-requisite for attracting high value-added businesses to regions. The availability of educational and training courses in ITs and other College’s in regional areas encourages enterprise in these areas, further facilitating development.","Provide venture capital for start-up businesses If start-up capital is provided by Enterprise Ireland / government agencies then the costs of setting up in the regions is reduced and this makes the regions more attractive."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q8-b-ii", topicId: "economics-3-5", conceptId: "regional-development-for-rural-communities",
+    section: "B", questionRef: "2015 HL Section B Q8(b)(ii)",
+    questionText: "Outline two economic benefits to rural communities of balanced regional development.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":5,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A benefit — any two", marks: 10, contextNote: "Two benefits, 5 marks each (2 + 3).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Employment creation Regional development will help maintain and create employment in rural areas.","Maintain local services Services which are essential will be maintained e.g. education, banking, post offices, hospitals etc.","Reduce emigration / urbanisation If jobs are maintained then it may result in lower numbers emigrating and a decline in the urbanisation of Ireland.","Promote / support more vibrant communities The areas will be more attractive areas to live in and this will help retain more of the population.","Less rural / urban divide As population increases and communities become more viable then the divide which exists between rural and urban communities may decline."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q8-c-i", topicId: "economics-3-2", conceptId: "effects-of-emigration",
+    section: "B", questionRef: "2015 HL Section B Q8(c)(i)",
+    questionText: "Discuss the economic effects of emigration on the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":12,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any four", marks: 20, contextNote: "Four effects, 5 marks each (2 + 3), negative or positive.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Negative consequences — Higher dependency ratio The active population is probably leaving leading to higher dependency ratio and the need for the government to finance this increasing dependent population/increased tax burden on the employed population.","Negative consequences — Opportunity costs The state loses out on its investment in the education/training of these citizens. Ireland may be educating workers for foreign countries.","Negative consequences — Loss of skills within the economy / Brain Drain We lose those workers / graduates who have acquired skills which are the skills needed to achieve economic growth. The ‘brain drain’ may deprive the country of much needed skills/ loss of human capital.","Negative consequences — Underutilisation of services As population declines some state services may be underutilised which could lead to some services being discontinued e.g. bus routes; local hospitals.","Negative consequences — Upward pressure on Irish wage rates The highly trained and skilled are more mobile thus they leave. To try to retain these workers firms may have to increase wage rates.","Negative consequences — Reduced domestic demand As the domestic market contracts there may be reduced opportunities for investment by businesses / entrepreneurs.","Negative consequences — Decline in rural communities Morale may suffer and those areas experiencing high emigration may decline more rapidly making their long term viability more difficult.","Positive consequences — Unemployment reduced Those people who emigrate may have been unemployed if they stayed in Ireland. This reduces the strain on the government finances to fund increasing social welfare payments.","Positive consequences — Emigrants returning to Ireland may help those companies involved in the tourism, airlines, pub trade etc.","Positive consequences — Contacts / Export opportunities The people who emigrate may be willing contacts for Irish exporters who may be anxious to find markets abroad. Irish emigrants may set up business providing jobs to new emigrants; improving skills and providing an outlet for Irish exporters e.g. O’Neill’s GAA jerseys.","Positive consequences — Demand for state services With a declining population the demand for state service may decline e.g. schools, health care, transport etc","Positive consequences — Emigrants’ remittances to Ireland / New skills. Emigrants send home monies to Ireland. The CSO estimates for emigrants remittances for 2013 was €776m. In the long term they may return home with newly acquired skills/Returning emigrants may be a valuable source of skilled personnel."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Higher Level — © State Examinations Commission.",
+    id: "econ-2015-hl-sb-q8-c-ii", topicId: "economics-3-2", conceptId: "bringing-emigrants-home",
+    section: "B", questionRef: "2015 HL Section B Q8(c)(ii)",
+    questionText: "Advise the Government on two policy initiatives/measures that could be introduced in ‘Budget 2016’ to encourage emigrants to return to Ireland.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":6,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A measure — any two", marks: 10, contextNote: "Two measures, 5 marks each (2 + 3).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Lower taxation By reducing income tax this will reward work. Higher net pay will create an incentive to attract emigrants to return. The government could also reduce other taxes introduced during the austerity period e.g. property tax; water charges etc. – providing an incentive to return.","Provide grants/subsidies to firms These grants could be made available to those firms which specifically hire emigrants. If the government reduced the rate of PRSI for employers on each new emigrant hired then emigrants may return home.","Training and education Provide training and education course in growth sectors of the economy and make these training places available to emigrants. This may encourage emigrants to return to Ireland.","Support recovery in the economy The government can continue to implement economic policies which help restore confidence in the country and so create more employment opportunities. These opportunities may attract emigrants.","Devote more resources to capital spending More capital spending will likely create more job opportunities for construction workers that have had to emigrate in the past.","Improve services Make the economy a more attractive place to return to. Ensure stability in the financial sector; ensure that the housing market functions correctly; develop the infrastructure e.g. broadband. Develop state services such as health provision and develop the education sector."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2016 Higher Level — © State Examinations Commission.",
