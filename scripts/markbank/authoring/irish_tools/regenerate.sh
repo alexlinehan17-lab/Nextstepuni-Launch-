@@ -20,7 +20,7 @@ GENERATORS="irish_foundation_2010.py irish_foundation_2011.py irish_foundation_2
  irish_ordinary_2026_p2.py irish_higher_2025_p1.py irish_higher_2025_p2.py irish_ordinary_2025_p1.py irish_ordinary_2025_p2.py
  irish_higher_2024_p1.py irish_ordinary_2024_p1.py irish_ordinary_2024_p2.py irish_higher_2023_p1.py irish_higher_2023_p2.py irish_ordinary_2023_p1.py irish_ordinary_2023_p2.py
  irish_higher_2022_p1.py irish_ordinary_2022_p1.py irish_ordinary_2022_p2.py irish_higher_2022_p2.py irish_higher_2021_p1.py irish_ordinary_2021_p1.py irish_higher_2021_p2.py irish_ordinary_2021_p2.py
- irish_higher_2020_p1.py irish_higher_2020_p2.py irish_ordinary_2020_p1.py irish_ordinary_2020_p2.py irish_higher_2019_p1.py irish_higher_2019_p2.py irish_ordinary_2019_p1.py irish_ordinary_2019_p2.py irish_higher_2018_p1.py irish_higher_2018_p2.py irish_ordinary_2018_p1.py irish_ordinary_2018_p2.py irish_higher_2017_p1.py irish_higher_2017_p2.py"
+ irish_higher_2020_p1.py irish_higher_2020_p2.py irish_ordinary_2020_p1.py irish_ordinary_2020_p2.py irish_higher_2019_p1.py irish_higher_2019_p2.py irish_ordinary_2019_p1.py irish_ordinary_2019_p2.py irish_higher_2018_p1.py irish_higher_2018_p2.py irish_ordinary_2018_p1.py irish_ordinary_2018_p2.py irish_higher_2017_p1.py irish_higher_2017_p2.py irish_ordinary_2017_p1.py"
 OUTPUTS="components/MarkBank/cards/irish data/examTopics data/paperTrail public/paper-anchors public/paper-answers
  scripts/paper-trail/answers scripts/paper-trail/topic-tags/tags/irish.json scripts/markbank/authored"
 
