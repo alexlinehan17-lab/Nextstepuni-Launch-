@@ -41,7 +41,7 @@ const NOT_YET_IN_ATLAS = [
 /** Early Modern papers whose documents question still carries the Atlas's old
  *  single Early Modern strand (history-early-modern-0-0) rather than its case
  *  study. history_early_modern.py retags each as its sitting is carded. */
-const PLACEHOLDER_DBQ = ['history-early-modern 2022 higher'];
+const PLACEHOLDER_DBQ = [];
 
 /** The syllabus topic a card files under, as the Atlas's canonical tag range for it
  *  (curriculum.ts strands history-0 to history-3): hist-lm-irl-3 is Later Modern
