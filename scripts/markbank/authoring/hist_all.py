@@ -332,6 +332,9 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
             return "the question's NOTE prints no CM ceiling below the maximum"
         rubric_cm['elementRule'] = {'note': ask.note,
                                     'caps': [{'when': when, 'max': top} for when, top in ask.note_caps]}
+    elif marking.get('elementRule'):
+        # Ordinary Q4's own NOTE with a one-element ceiling (2015).
+        rubric_cm['elementRule'] = marking['elementRule']
     elif marking.get('note'):
         # Q4's own NOTE (2017 Higher Later Modern), read as an essay's is.
         caps = [(' '.join(w.split()), int(t)) for w, t in NOTE_CAP.findall(marking['note'])]
@@ -447,6 +450,57 @@ def split_card(P, year, level, field, key, ask, section, topic_id, ref):
         # A Part A answer priced component by component (2016 Ordinary A4).
         card['sourceMaterial'] = source_material(
             P, year, level, field, unit, [P.unit_pages[unit]], 'The extract', 'OFFICIAL EXTRACT')
+    return card
+
+
+# Printed asks the scheme prints no answer for at all, keyed (year, level,
+# field, key): the note shown under the row, saying what the scheme prints
+# instead. Every printed ask gets a card (Alex, 2026-10-28): its one row is
+# UNPRINTED_ANSWER, worth what the paper's printed question total leaves once
+# the scheme's own prices for the question's other parts are taken off.
+UNPRINTED_ANSWER = 'The scheme prints no answer for this part.'
+SCHEME_UNANSWERED = {
+    (2015, 'ol', 'em', ('1', 3, 'a', None)): (
+        'The scheme prints one Criticism answer, under (a), and it is about the '
+        'King\u2019s proclamation (document B), which part (b) asks about. It prints '
+        'nothing for this part.'),
+}
+
+
+def unanswered_card(P, S, year, level, field, key, section, ref, note):
+    """A card for a printed ask the scheme leaves unanswered, or the reason it cannot be made."""
+    question_total = P.marks.get(('1', key[1], None, None)) if key[0] == '1' else None
+    siblings = [a.total for a in S.asks if a.key[0] == key[0] and a.key[1] == key[1] and a.key != key]
+    if question_total is None or not siblings or any(t is None for t in siblings):
+        return 'the part an unanswered ask leaves cannot be priced from the paper'
+    marks = question_total - sum(siblings)
+    if marks <= 0:
+        return 'the part an unanswered ask leaves cannot be priced from the paper'
+    topic_section, topic = P.case_study
+    question = P.asks[key]
+    card = {
+        'id': card_id(year, level, field, key),
+        'subjectId': 'history',
+        'level': LEVEL_WORD[level],
+        'year': year,
+        'section': section,
+        'topicId': topic_for(field, topic_section, topic),
+        'conceptId': concept_for(question),
+        'questionRef': ref,
+        'questionText': question,
+        'tariffModel': {'kind': 'fixed'},
+        'totalMarks': marks,
+        'rows': [{'id': 'r-1', 'kind': 'criterion', 'verbatim': UNPRINTED_ANSWER,
+                  'marks': marks, 'unprinted': True, 'contextNote': note}],
+        'notes': (f'{FIELDS[field]} field of study. The paper prices question {key[1]} '
+                  f'at ({question_total}) and the scheme prices its other part at '
+                  f'{sum(siblings)}M, so this part is worth {marks}; the scheme prints no '
+                  f'answer for it.'),
+    }
+    if P.case_title:
+        card['stem'] = f'Case study: {P.case_title}'
+    card['sourceMaterial'] = source_material(
+        P, year, level, field, '1', P.document_pages, 'The documents', 'OFFICIAL DOCUMENTS')
     return card
 
 
@@ -566,8 +620,16 @@ def build():
                         (k[1], v) for k, v in P.marks.items() if k[0] == '1'):
                     priced = sum(a.total or 0 for a in S.asks
                                  if a.key[0] == '1' and a.key[1] == q)
+                    unanswered = [k for k in SCHEME_UNANSWERED
+                                  if k[:3] == (year, level, field) and k[3][0] == '1' and k[3][1] == q]
                     if priced == printed:
                         tariff_checks['agree'] += 1
+                    elif unanswered and priced < printed:
+                        # The scheme leaves a part unanswered and unpriced; the
+                        # part takes what the paper's total leaves (unanswered_card).
+                        tariff_checks.setdefault('derived', []).append(
+                            f'{year} {level} {field} Section 1 Q{q}: paper {printed}, scheme {priced} '
+                            f'+ {printed - priced} for unanswered {", ".join(str(k[3]) for k in unanswered)}')
                     else:
                         tariff_checks['disagree'].append(
                             f'{year} {level} {field} Section 1 Q{q}: '
@@ -591,6 +653,14 @@ def build():
                     unit = key[0]
                     section, topic, part = unit_parts(unit)
                     ask = S.by_key.get(key)
+                    if ask is None and (year, level, field, key) in SCHEME_UNANSWERED:
+                        made = unanswered_card(P, S, year, level, field, key, section, ref,
+                                               SCHEME_UNANSWERED[(year, level, field, key)])
+                        if isinstance(made, str):
+                            refuse(made, ref)
+                        else:
+                            cards.append(made)
+                        continue
                     if ask is None:
                         refuse('the scheme prices no ask at this address', ref)
                         continue
@@ -790,6 +860,8 @@ def main():
               f'{len(tariffs["disagree"])} disagree')
         for d in tariffs['disagree'][:20]:
             print(f'   DISAGREE {d}')
+        for d in tariffs.get('derived', []):
+            print(f'   DERIVED {d}')
         print(f'extra Part A units: {len(extras)}, each filed under its '
               f"paper's own documents-question topic")
         for where, case in extras:

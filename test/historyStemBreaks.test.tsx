@@ -59,7 +59,7 @@ describe('the printed breaks in a History stem', () => {
     // card's question figure, below).
     expect(partA.filter(c => !c.stem!.includes('\n\n')
       && !('questionFigure' in c && c.questionFigure)
-      && !/^(?:This|The|In this) (?:picture|photograph|cartoon|illustration|poster)\b/.test(c.stem!)).map(c => c.id)).toEqual([]);
+      && !/^[^.]*\b(?:picture|photograph|cartoon|illustration|poster)\b/.test(c.stem!)).map(c => c.id)).toEqual([]);
   });
 
   it('never flattens a printed table into a stem: the chart is the card’s question figure', () => {

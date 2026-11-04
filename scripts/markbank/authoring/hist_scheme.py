@@ -272,6 +272,13 @@ SCHEME_MISPRINTS = {
     # whether doc A is "objective" and its (d) opens "Doc B is a useful
     # historical source on the Laois Offaly Plantation".
     (2026, 'hl', 'em'): {(3, 'c'): ('a', 'objective'), (3, 'd'): ('b', 'useful')},
+    # 2015 Ordinary Early Modern prints ONE Criticism answer, under "(a)":
+    # "Document A is a proclamation by the King in which he pardons O'Neill
+    # ...". The paper's Q3(b) asks for "evidence ... in document B of the
+    # attitude of the King towards Hugh O'Neill", and document B is King
+    # James I's proclamation pardoning him; Q3(a) asks about O'Neill's
+    # preparations in document A, which the scheme does not answer at all.
+    (2015, 'ol', 'em'): {(3, 'a'): ('b', 'proclamation')},
 }
 BULLET = re.compile(r'^[•●▪·]\s*(.*)$')
 TRAILING_M = re.compile(r'\s*(\d{1,3})M\s*(?:max)?\s*$', re.I)
@@ -536,6 +543,7 @@ def _q4_elements(lines):
     return '\n'.join(' '.join(x.split()) for x in items), caps
 
 
+CS_Q4_CAP = re.compile(r'^Note\b.*?\s(?P<when>For (?:one|ONE) element only),?\s*max\.?\s*(?P<max>\d+)\s*M$')
 PARAGRAPH_LEAD_RUN_ON = re.compile(
     r'(?<=\.) (?=The examiner will divide the answer into paragraphs or '
     r'paragraph equivalents:$)')
@@ -1305,8 +1313,22 @@ class HistScheme:
         cs['perStatement'] = per[0]
         cs['incomplete'] = list(range(part[0][0], part[0][1] + 1))
         if unit == 'q4':
-            return {'cm': {**cs, 'max': ceiling, 'directions': q4_notes},
-                    'schemeGuidance': q4_guidance, 'oe': None, 'pages': sorted(q4_pages)}
+            # Q4's own NOTE with a ceiling for an answer on one element: "Note
+            # the TWO elements: “for the Catholic Church and for the Irish
+            # State” For one element only, max 12M" (2015). It is Q4's element
+            # rule, as a Higher Q4's NOTE is, not a direction.
+            rule = None
+            for text in q4_notes:
+                m = CS_Q4_CAP.match(text)
+                if m and rule is None and 0 < int(m.group('max')) < ceiling:
+                    rule = {'note': text, 'caps': [{'when': ' '.join(m.group('when').split()),
+                                                    'max': int(m.group('max'))}]}
+            out = {'cm': {**cs, 'max': ceiling,
+                          'directions': [t for t in q4_notes if not rule or t != rule['note']]},
+                   'schemeGuidance': q4_guidance, 'oe': None, 'pages': sorted(q4_pages)}
+            if rule:
+                out['elementRule'] = rule
+            return out
 
         s23, s23_pages = logical(q4_hi, s23_hi)
         out = {'cm': {**cs, 'directions': []}, 'oe': {'bands': [], 'directions': []},

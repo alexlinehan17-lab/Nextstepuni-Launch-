@@ -45,6 +45,7 @@ INLINE = re.compile(r'\s*\(\s*(\d+)\s*[Mm]\s*\)')
 # Croke (2)" (2016 Ordinary). Read only beside at least one full "(nM)" price
 # in the same answer, and only when the prices then add up to the tariff.
 INLINE_LOOSE = re.compile(r'\s*\(\s*(\d+)\s*[Mm]?\s*\)')
+BARE_M = re.compile(r'\s*\(\s*()[Mm]\s*\)')
 PAIR = re.compile(r'\s*\(\s*(\d+)\s*[Mm]\s*\+\s*(\d+)\s*[Mm]\s*\)')
 DANGLING = re.compile(r'\s*(\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=)\s*$', re.I)
 JOINER = re.compile(r'^(?:and/or|and|with|plus|or|&)\b\s*', re.I)
@@ -126,6 +127,12 @@ def split_priced(card):
     if (tokens and len(loose) > len(tokens) and sum(int(t.group(1)) for t in tokens) < total
             and sum(int(t.group(1)) for t in loose) == total):
         tokens = loose
+    bare = list(BARE_M.finditer(text))
+    if (tokens and len(bare) == 1 and bare[0].start() > tokens[-1].end()
+            and 0 < total - sum(int(t.group(1)) for t in tokens)):
+        # "On the floor (4M) and in the bathtubs (M)" (2015 Ordinary, 8M): the
+        # last price printed without its figure takes what the tariff leaves.
+        tokens = tokens + bare
     partial = PARTIAL.match(text)
     if not tokens and partial and 0 < int(partial.group('n')) < total:
         rows[:] = [{'id': row['id'], 'kind': 'criterion', 'verbatim': tidy(partial.group('head')),
@@ -136,7 +143,8 @@ def split_priced(card):
         return card
     if len(tokens) < 2:
         return card
-    values = [int(t.group(1)) for t in tokens]
+    values = [int(t.group(1)) if t.group(1) else total - sum(int(x.group(1)) for x in tokens if x.group(1))
+              for t in tokens]
 
     if values[0] == total:
         steps = sorted({v for v in values[1:] if 0 < v < total})
