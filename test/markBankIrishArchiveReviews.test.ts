@@ -26,6 +26,7 @@ import higher2018P1 from '../components/MarkBank/cards/irish/higher-2018-p1-auth
 import higher2018P2 from '../components/MarkBank/cards/irish/higher-2018-p2-authored.json';
 import ordinary2018P1 from '../components/MarkBank/cards/irish/ordinary-2018-p1-authored.json';
 import ordinary2018P2 from '../components/MarkBank/cards/irish/ordinary-2018-p2-authored.json';
+import higher2017P1 from '../components/MarkBank/cards/irish/higher-2017-p1-authored.json';
 import ordinary2022P1 from '../scripts/markbank/authored/irish-ordinary-2022-p1-component-review.json';
 import ordinary2022P2 from '../components/MarkBank/cards/irish/ordinary-2022-p2-authored.json';
 import higher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
@@ -67,6 +68,7 @@ const PAPER_ONE = [
   { review: ordinary2019P1.review, year: 2019, fileid: 'LC001GLP100IV.pdf', segments: 6, questions: 20, titles: 9, perTitle: 50 },
   { review: higher2018P1.review, year: 2018, fileid: 'LC001ALP100IV.pdf', segments: 8, questions: 29, titles: 9, perTitle: 100 },
   { review: ordinary2018P1.review, year: 2018, fileid: 'LC001GLP100IV.pdf', segments: 6, questions: 20, titles: 9, perTitle: 50 },
+  { review: higher2017P1.review, year: 2017, fileid: 'LC001ALP100IV.pdf', segments: 8, questions: 28, titles: 9, perTitle: 100 },
 ];
 
 describe('Irish archive review: Paper 1 (listening and composition)', () => {
