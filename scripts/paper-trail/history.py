@@ -52,7 +52,7 @@ NEW_DQB_TAGS = {
 # marked "sitting": "deferred", fileid "...-deferred.pdf", as Physics and Home
 # Economics file theirs), English editions, admitted one at a time as each is
 # carded in the Mark Bank (hist_paper.DEFERRED_PAPERS lists every one set).
-DEFERRED_SITTINGS: set[tuple[int, str]] = {(2023, 'higher')}
+DEFERRED_SITTINGS: set[tuple[int, str]] = {(2023, 'higher'), (2023, 'ordinary')}
 # A deferred sitting sets its own documents question, and in 2023 the two
 # levels set different case studies. Each tag is the case study the paper's
 # page 2 names (the guard word must be printed there) under its topic.
