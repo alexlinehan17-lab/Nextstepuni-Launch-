@@ -438,19 +438,19 @@
     "refsHash": "65d66ad3a304022c"
   },
   "irish": {
-    "cards": 1260,
-    "contentHash": "cbeaefa2beda440c",
+    "cards": 1275,
+    "contentHash": "ef24f65a346d8b2c",
     "coveragePct": 100.0,
-    "covered": 1260,
+    "covered": 1275,
     "excluded": 0,
-    "leaves": 1260,
+    "leaves": 1275,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 30,
       "hash": "9d84f99397f0fb11"
     },
-    "refsHash": "e5da5a4e13f8c461"
+    "refsHash": "09183f9b838c1b6e"
   },
   "italian": {
     "cards": 350,

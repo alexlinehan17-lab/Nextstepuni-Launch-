@@ -105,6 +105,11 @@ const HELD = '\u2060';
  *  answer's text, held as INLINE_SPLIT holds them, and the brace prices the answer. */
 const BRACED_SPLIT = /(\{(\d+)\s*m?h?arc\}\s*•\s*)((?:[^•=(){}]*\(\d+\s*m?h?arc\)){2,}[^•=(){}]*?)\s*$/;
 
+/** "Báisteach/fearthainn = 2 mharc (báisteach/fearthainn throm = 3 mharc)" (2019 Ordinary Fógra a Dó 2(a)): a bracketed answer
+ *  at its own single price, printed straight after another answer's price, is one more answer, not a note. A bracketed
+ *  direction or qualifier ("(Is leor …", "(Ní mór …", "(Gan …", "(Tá gá le …") is never an answer. */
+const BRACKETED_ANSWER = /(=\s*\d+\s*m?h?arc\b)\s*\((?!\s*(?:Is leor|aon|Ní mór|[Gg]an|Tá gá le)\s)([^()=+:]+?)\s*(=\s*\d+\s*m?h?arc\b)\)/g;
+
 /** Whether a line is the card's printed question, read past the paper's hyphens and spacing. */
 const letters = (value: string) => value.toLowerCase().replace(/[^a-záéíóú]+/g, '');
 const printedQuestion = (questionText: string, line: string) => letters(line).length > 12 && letters(questionText).includes(letters(line));
@@ -135,6 +140,7 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   // A split printed before the brace, "(Dhá bhealach: 2 mharc + 1 mharc) {3 mharc}", is the brace's own split.
   text = text.replace(/\((Dhá\s[^():]*):\s*(\d+\s*m?h?arc\b(?:\s*\+\s*\d+\s*m?h?arc\b)+)\)\s*\{\s*(\d+\s*m?h?arc\b)\s*\}/g,
     (_, label: string, split: string, total: string) => `(${label}) {${total}: ${split}}`);
+  text = text.replace(BRACKETED_ANSWER, (_, price: string, answer: string, own: string) => `${price} ${answer.trim()} ${own}`);
   text = text.replace(SUFFICES, note => { directions.push(tidy(note)); return ' '; });
   text = text.replace(/\s+/g, ' ').trim().replace(HEADER, '');
   text = text.replace(NOTE, (_, note: string) => { directions.push(tidy(note)); return ' '; });
