@@ -2690,3 +2690,62 @@ Checks:
 - reconcile: 2,070/2,198, with 2011 OL at 81/81.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2010 Higher English, old syllabus (lane, 2026-11-04)
+
+All 8 paper pages and 35 scheme pages were viewed:
+- paper p8 is blank;
+- scheme p1 is the cover and p2 the support notes with the index;
+- scheme page numbers are the PDF's and equal the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part;
+- the cover prints its level in capitals ("HIGHER LEVEL"). So the scheme file
+  was built with the appenders' cover check pointed at the file
+  (economics/tools/gen_md_cover.sh), visually verified as the English Higher
+  scheme. No shared code changed.
+
+There are 54 routes for the 54 printed asks (9 in Section A, 45 in Section B).
+B8(a)(i)-(iv) is one card: the reader keys the four areas of one instruction
+as romans, and the scheme prices them together on one ladder. Extra routes,
+each counted once in its question's 75:
+- B5(b)(i) and (b)(ii): one route for each of the scheme's two tables. The
+  second table is headed "The Long run" and gives the opposite effect. Each
+  table is priced 4 + 6.
+- B7(c): the IMF OR the World Bank is a printed choice, and the scheme gives
+  each its own list.
+7 crops: 6 hidden scheme solutions and 1 paper data crop.
+
+Decisions:
+- B8(a) "7 marks + 6 marks + 6 marks + 6 marks": the scheme does not say which
+  area earns the 7, so the first correct area is claimed at 7 and the other
+  three at 6. The note says so.
+- A Q3 "6 * at 2 marks each": the six starred figures of the working are
+  claimed at 2, and the explanation 4 is not divided between its two
+  sentences.
+- A Q6 "5 marks: 1 mark for each item": the five printed items of the working
+  (the 1, the three propensities and the answer) at 1, then the meaning 12.
+- B5(a)(i) and (a)(ii): each figure of the working at the mark printed under it
+  (2 + 2 + 2 + 4 and 3 + 3 + 4).
+- B1(a)(i) and (a)(iii): each plotted point of the scheme's schedule at 1, each
+  label at 1, and the equilibrium point, price and quantity at 1, beside the
+  hidden diagram.
+- B2(c): the diagram's ten items circled 1 and three circled 2, then price 3,
+  output 3, and profits and efficiency 4 each (1 for each part the scheme marks
+  (1)).
+- B4(a)(ii), B5(c)(i), B7(a)(i) and B7(b)(i) print no number on the paper. The
+  scheme's count is used, and each note says so.
+- B8(b): the paper prints "By 2036", and its stem keeps that. The scheme's
+  reprint says 2046.
+
+Refcheck: three short asks were read by hand (B4(a)(i), B6(a)(i), B6(c)).
+
+Topic review: 1 reference anomaly. B4(c) sits under national income, but the
+national debt is fiscal policy.
+
+Checks:
+- econ_review: 38/66.
+- build: 2,162 cards, 0 dropped.
+- Build rule: 354 claims on this paper, 0 untraceable (24 trace by halves).
+- reconcile: 2,124/2,198, with 2010 HL at 54/54.
+- refcheck: 0 wrong.
+- cardlint: clean.

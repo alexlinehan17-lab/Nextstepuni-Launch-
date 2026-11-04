@@ -1,5 +1,2728 @@
 [
  {
+  "id": "econ-2010-hl-sa-q1",
+  "topicId": "economics-1-0",
+  "conceptId": "why-land-prices-fell",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2010 HL Section A Q1",
+  "questionText": "State three reasons why prices of land for housing development have fallen in recent years in Ireland:",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason — any three",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Three reasons: 3 points: 6 marks + 5 marks + 5 marks each = 16 marks. The first correct 6.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Deflation: the general decrease in prices in Ireland has resulted in a decrease in land prices.",
+      "Recession: unemployment and falling incomes has reduced the demand for housing",
+      "Uncertainty about jobs in the future has stopped people from ‘trading up’ to larger houses",
+      "Credit crunch: difficulty in getting mortgages has resulted in a decline in demand for housing.",
+      "Emigration is rising / immigration declining: has resulted in a drop in demand for housing.",
+      "Reduced speculation in property: the economic recession; introduction of the Property tax has resulted in a decline in demand for housing and a resulting fall in prices of land.",
+      "Overcapacity in housing market: supply now exceeds demand with many vacant properties existing and hence the demand for land has decreased."
+     ],
+     "perOptionSteps": [
+      6,
+      5,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sa-q2",
+  "topicId": "economics-3-1",
+  "conceptId": "raising-consumer-spending",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2010 HL Section A Q2",
+  "questionText": "Outline two measures the Irish Government could take to increase consumer spending in the economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 8",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 8
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure — any two",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Two measures, 2 points at 8 marks each. State: 4 marks. Explain: 4 marks.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Decrease indirect taxes e.g. VAT This will help reduce prices and so encourage consumers to spend.",
+      "Provide incentives to consumers to spend The introduction of the car scrappage scheme encouraged consumers to change their cars and so demand has increased. Extending home insulation grants may encourage house owners to spend on insulation / further improvements on their houses.",
+      "Decrease direct taxes e.g. income taxes / increase the minimum wage This would increase consumers’ disposable incomes and so encourage spending.",
+      "Generate confidence in the economy The government, by pursuing appropriate economic policies, may give consumers and producers confidence in the economy and so encourage both to increase demand.",
+      "Facilitate lending by the financial institutions By assisting the financial institutions the government may encourage them to give credit which will lead to an increased demand by borrowers/consumers.",
+      "Capital investment programme: government could increase capital expenditure in order to stimulate aggregate demand and incomes e.g. complete the NDP."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sa-q3",
+  "topicId": "economics-1-4",
+  "conceptId": "a-unit-elastic-demand",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2010 HL Section A Q3",
+  "questionText": "A consumer spends €200 monthly on Product A when its price is €2 and continues to spend €200 monthly when its price increases to €2.50. Calculate the consumer’s price elasticity of demand. (See Formulae and Tables Booklet p.28) Show all your workings and explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2010-HL-scheme-p04-q3-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 @ 2 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-starred",
+    "kind": "anyN",
+    "verbatim": "Each starred figure of the working",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "6 * at 2 marks each = 12 marks. The working is shown with the answer: the quantities 100 and 80 units (€200 over each price), then -20 over 50, times €2 + €2.50 (4.50) over 100 + 80 (180), = -1.0, the minus sign and the 1.0 starred apart.",
+    "group": {
+     "claimMax": 6,
+     "perOption": 2,
+     "options": [
+      "- 20*",
+      "50*",
+      "( 4.50)*",
+      "(180)*",
+      "- *",
+      "1.0*"
+     ]
+    }
+   },
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "It has a minus sign / obeys the law of demand. This good is unit elastic because PED = 1.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The explanation, 4 marks, which the scheme does not divide between its two sentences. (Reference to a normal good max: 2 marks)"
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sa-q4",
+  "topicId": "economics-2-0",
+  "conceptId": "non-price-competition",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2010 HL Section A Q4",
+  "questionText": "Define the term ‘non-price competition’. State two examples.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12 + 2 @ 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-definition",
+    "kind": "point",
+    "verbatim": "Competition between firms where each firm tries to increase its sales / market share by methods other than changing prices.",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The definition, 12 marks."
+   },
+   {
+    "id": "r-examples",
+    "kind": "anyN",
+    "verbatim": "An example — any two",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Two examples, 2 at 2 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Branding: establishing different brand names for the products",
+      "Packaging: use of distinctive packaging to clearly distinguish one product from another",
+      "Competitive Advertising: helps create differences between products in the minds of consumers",
+      "Opening hours: offer extended opening hours for consumers",
+      "Quality of service: improve staff service; improve layout of premises",
+      "Sponsorship: local / national events",
+      "Special offers: free gifts/ money-coupons/ loyalty cards etc."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sa-q5",
+  "topicId": "economics-0-1",
+  "conceptId": "why-entrepreneurship-matters",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2010 HL Section A Q5",
+  "questionText": "State three economic reasons why entrepreneurship is important to the development of the Irish economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason — any three",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Three reasons: 3 points: 6 marks + 5 marks each + 5 marks each = 16 marks. The first correct 6.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Creates employment Entrepreneurs need workers to produce goods/services. Takes pressure off the government by creating a healthy private sector which creates jobs.",
+      "Organises production Entrepreneurs organise the other factors of production into production units.",
+      "Decides what commodities will be produced Entrepreneurs decide which goods and services are going to be produced and in what quantities, by anticipating consumer demand.",
+      "Decides what prices to be charged Entrepreneurs decide what prices to charge for their goods and services hoping there will be a demand at these price levels.",
+      "Encourages further investment Entrepreneurs put both their money and skills into a business in the hope of making a profit and this may encourage further investment in the economy, if successful.",
+      "Provides an outlet for savers funds Entrepreneurs provide an investment outlet for savers funds, generating a return on savings.",
+      "Generates revenue for the government Entrepreneurs help generate revenue for the government through taxation revenues.",
+      "May increase exports If the goods produced are exported this will help improve the balance of payments position.",
+      "Creates wealth within the country Successful entrepreneurs create wealth which helps increase the standard of living."
+     ],
+     "perOptionSteps": [
+      6,
+      5,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sa-q6",
+  "topicId": "economics-3-0",
+  "conceptId": "the-irish-multiplier",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2010 HL Section A Q6",
+  "questionText": "It is estimated that in the Irish economy: MPS = 0.25, MPM = 0.3, MPT = 0.2. Calculate the value of the Multiplier in the Irish economy. Explain the economic meaning of the Multiplier figure. (See Formulae and Tables Booklet p.29) Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2010-HL-scheme-p06-q6-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 @ 1 + 12",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-working",
+    "kind": "anyN",
+    "verbatim": "Each item of the working",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "5 marks: 1 mark for each item. The working is shown with the answer: 1 over (0.25 + 0.3 + 0.2) = 1.33, the 1, the three propensities and the answer each an item.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 1,
+     "options": [
+      "1",
+      "0.25",
+      "0.3",
+      "0.2",
+      "1.33"
+     ]
+    }
+   },
+   {
+    "id": "r-meaning",
+    "kind": "point",
+    "verbatim": "This means that for any given injection into the economy national income will increase by 1.33 times",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The meaning of the figure, 12 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sa-q7",
+  "topicId": "economics-3-2",
+  "conceptId": "limits-of-the-live-register",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2010 HL Section A Q7",
+  "questionText": "Outline two limitations in using the Live Register as a means of measuring unemployment.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A limitation — any two",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "Two limitations: 2 points: 9 marks + 8 marks. The first correct 9.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 9,
+     "options": [
+      "It includes people who are legitimately working part-time and signing on part-time",
+      "It includes people who may be drawing social welfare but who may also be working in the black economy at the same time.",
+      "It includes people who may not be actively seeking employment.",
+      "It includes those signing on only for 'PRSI credits' and are not unemployed."
+     ],
+     "perOptionSteps": [
+      9,
+      8
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sa-q8",
+  "topicId": "economics-2-1",
+  "conceptId": "rent-of-ability",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2010 HL Section A Q8",
+  "questionText": "Explain, with the aid of an example, the meaning of the term ‘Rent of Ability’.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-meaning",
+    "kind": "point",
+    "verbatim": "Economic rent/SNP earned by an entrepreneur/labour/human effort due to their business acumen / innate talent/natural talent",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The meaning, 12 marks."
+   },
+   {
+    "id": "r-example",
+    "kind": "point",
+    "verbatim": "Premier League footballer – superior physical ability.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "An example, 5 marks: the scheme accepts any appropriate example."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sa-q9",
+  "topicId": "economics-1-3",
+  "conceptId": "the-case-for-water-charges",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2010 HL Section A Q9",
+  "questionText": "Outline three possible economic arguments in favour of the introduction of water charges for households in Ireland.",
+  "stem": "The Irish Government is considering the introduction of water charges for households.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 6 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An argument — any three",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "Three arguments: 3 points: 6 marks + 6 marks + 5 marks. The first two correct 6 each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Reduce consumption of water / discourage waste. If people pay for water it may encourage people to use it more sparingly / use it more efficiently and so discourage waste.",
+      "Generate revenue for the service provider / broaden the tax base The charges will help create revenue for the provider and this will help towards the cost of the provision of water.",
+      "Improve quality of water supply / distribution of water. The revenue earned may be used to improve the quality of the water supply to householders and/or help build a better system of distribution e.g. pipes etc.",
+      "Encourage investment in alternative technologies. Organisations which use a lot of water may be encouraged to invest in technologies which reduce water consumption.",
+      "Helps reduce need to raise direct taxation. By generating revenue in this way it may help reduce the need of the government to increase direct taxation and/or reduce/eliminate other essential services.",
+      "Impossible to evade / helps government financial planning. As the tax is in-built it is impossible to evade due to meters being installed. As the revenue from the tax is more certain than other forms of taxation it will aid the government in financial planning."
+     ],
+     "perOptionSteps": [
+      6,
+      6,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q1-a-i",
+  "topicId": "economics-1-0",
+  "conceptId": "demand-supply-and-equilibrium",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q1(a)(i)",
+  "questionText": "Using the above data, draw the diagram showing the market demand and market supply curves for the soft drink ‘Quencher’. Clearly mark the point of equilibrium and the equilibrium price and quantity.",
+  "stem": "The data below represents the market demand and the market supply schedules for the soft drink ‘Quencher’.",
+  "figureKey": "economics-2010-HL-scheme-p08-q1a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 @ 1 + 1 + 5 @ 1 + 1 + 3 @ 1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-demand",
+    "kind": "anyN",
+    "verbatim": "The demand curve — each point plotted (price € — quantity demanded, ’000 units)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The demand curve’s five points, D/C: 5 points at 1 mark each. The completed diagram is shown with the answer.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 1,
+     "options": [
+      "2.00 — 40",
+      "2.25 — 30",
+      "2.50 — 20",
+      "2.75 — 10",
+      "3.00 — 5"
+     ]
+    }
+   },
+   {
+    "id": "r-demand-label",
+    "kind": "point",
+    "verbatim": "D/C — Correct label",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "Labelling the demand curve, 1 mark: the scheme’s diagram labels it D."
+   },
+   {
+    "id": "r-supply",
+    "kind": "anyN",
+    "verbatim": "The supply curve — each point plotted (price € — quantity supplied, ’000 units)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The supply curve’s five points, S/C: 5 points at 1 mark each.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 1,
+     "options": [
+      "2.00 — 5",
+      "2.25 — 10",
+      "2.50 — 20",
+      "2.75 — 30",
+      "3.00 — 40"
+     ]
+    }
+   },
+   {
+    "id": "r-supply-label",
+    "kind": "point",
+    "verbatim": "S/C — Correct label",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "Labelling the supply curve, 1 mark: the scheme’s diagram labels it S1."
+   },
+   {
+    "id": "r-equilibrium",
+    "kind": "anyN",
+    "verbatim": "The equilibrium — each of the three",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Equilibrium point + Equilibrium price + Equilibrium Quantity: 3 at 1 mark each. The diagram marks the point where the curves cross at €2.50 and 20 (’000 units).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "Equilibrium point",
+      "Equilibrium price — 2.50",
+      "Equilibrium Quantity — 20"
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2010-HL-paper-p04-q1a-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2010-hl-sb-q1-a-ii",
+  "topicId": "economics-1-0",
+  "conceptId": "a-market-in-equilibrium",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q1(a)(ii)",
+  "questionText": "Explain what it means for the market ‘to be in equilibrium’.",
+  "stem": "The data below represents the market demand and the market supply schedules for the soft drink ‘Quencher’.",
+  "figureKey": "economics-2010-HL-paper-p04-q1a-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "where quantity demanded equals/meets quantity supplied and there is no tendency for prices to change.",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The explanation, 7 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q1-a-iii",
+  "topicId": "economics-1-0",
+  "conceptId": "a-fall-in-costs-shifts-supply",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q1(a)(iii)",
+  "questionText": "Assume costs of production fell, resulting in an extra 20,000 units supplied at each of the above listed prices. With reference to your diagram in 1(a) (i) above and assuming that demand remains unchanged, draw the new supply curve. Clearly indicate the new point of equilibrium and the new equilibrium price and quantity.",
+  "stem": "The data below represents the market demand and the market supply schedules for the soft drink ‘Quencher’.",
+  "figureKey": "economics-2010-HL-scheme-p08-q1a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 @ 1 + 3 @ 1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-new-supply",
+    "kind": "anyN",
+    "verbatim": "The new supply curve — each point plotted (price € — new quantity supplied, ’000 units)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The new supply curve’s five points, New S/C: 5 points at 1 mark each, from the scheme’s New Quantity Supplied column. The completed diagram is shown with the answer (S2).",
+    "group": {
+     "claimMax": 5,
+     "perOption": 1,
+     "options": [
+      "2.00 — 25",
+      "2.25 — 30",
+      "2.50 — 40",
+      "2.75 — 50",
+      "3.00 — 60"
+     ]
+    }
+   },
+   {
+    "id": "r-new-equilibrium",
+    "kind": "anyN",
+    "verbatim": "The new equilibrium — each of the three",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Equilibrium point + Equilibrium price + Equilibrium Quantity: 3 at 1 mark each. The diagram marks the point where the new supply curve crosses demand at €2.25 and 30 (’000 units).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "Equilibrium point",
+      "Equilibrium price — 2.25",
+      "Equilibrium Quantity — 30"
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2010-HL-paper-p04-q1a-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2010-hl-sb-q1-b-i",
+  "topicId": "economics-1-4",
+  "conceptId": "what-affects-price-elasticity",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q1(b)(i)",
+  "questionText": "Outline four factors which affect price elasticity of demand (PED).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 @ 5",
+   "answer": 4,
+   "ofParts": 9,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A factor — any four",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four factors, 4 points at 5 marks each: State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "The availability of close substitutes. • When a good has a close substitute and its price is increased the demand for the good will be elastic because people will switch to the cheaper substitute. • Where a good has no substitutes and its price is increased there is no substitute to switch to and so it will be inelastic. • The closer the substitutability between goods the more consumers will tend to switch their purchasing behaviour in response to a change in relative prices and thus the greater will be PED.",
+      "Complementary goods. • If the good in question is the cheaper of two goods, which are in joint demand, then the demand for it is likely to be relatively inelastic in response to changes in its own price.",
+      "Is the commodity a luxury or necessity? • It is not vital that one should possess luxuries and therefore the PED for them will be relatively elastic. • Necessities are vital for life – people must buy them even when their price is increased, so their PED will be relatively inelastic.",
+      "The proportion of income which is spent on the commodity. • In general the greater the proportion of income which is spent on a good, the more elastic the demand for it is likely to be, in response to a change in its own price. A rise of 50% in the price of a box of matches is unlikely to have a significant effect on its demand.",
+      "The durability of the commodity. • The more durable the commodity, the more elastic is the demand for it likely to be in response to a change in its own price. • If products such as motorcars increase in price, it is likely that the public will extend the life of their existing model and postpone the purchase of a replacement.",
+      "Expectations as to future changes in price. • If, in the face of a price reduction, the public considers that prices are likely to fall even further, they may wait for the further reduction in price, in which case demand may not be very elastic on the initial price reduction.",
+      "The length of time allowed for adjustment to price changes. In the long run, demand is more elastic as consumers have time to adjust to a change in price. • If the price of electricity rose by 80% a consumer may economise on the use of various appliances in the short term. In the long term the consumer will have to consider substituting other forms of energy. The demand will at first be highly inelastic but as time goes on will become more elastic",
+      "Consumer habits / brand loyalty. • A consumer may become strongly attached to a particular product through habit or loyalty to that brand. An increase in price for that good will not cause him/her to consume less of the product or to switch to cheaper substitutes. The demand for such goods will therefore be price inelastic.",
+      "Number of alternative uses the good has. • A commodity which has a large number of uses will usually have a relatively elastic demand. For example sugar is used in direct consumption, sweetening purposes, baking, food processing etc. Any increase in the price of sugar may only result in a small fall in its demand in each of these markets but the total drop overall may be significant."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q1-b-ii",
+  "topicId": "economics-1-4",
+  "conceptId": "a-ped-of-minus-3-8",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q1(b)(ii)",
+  "questionText": "The PED for the soft drink ‘Quencher’ has been calculated at -3.8 Using your knowledge of PED, explain the economic meaning of this figure.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 2 + 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-sign",
+    "kind": "point",
+    "verbatim": "Sign is minus — As price increases, demand will fall /obeys the law of demand",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The minus sign, 5 marks. (Reference to a normal good max: 2 marks)"
+   },
+   {
+    "id": "r-value",
+    "kind": "anyN",
+    "verbatim": "Value is 3.8 — either",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The value, 2 marks: the scheme accepts either reading.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "This is a price elastic good",
+      "This is a luxury good"
+     ]
+    }
+   },
+   {
+    "id": "r-why",
+    "kind": "anyN",
+    "verbatim": "Why — either",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Why, 3 marks: the scheme prints the first beside a price elastic good and the second beside a luxury good.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "The percentage change in quantity demand is greater than then the percentage change in price",
+      "Because when price rises the demand will fall by a greater percentage, indicating that the good is not a necessity."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q1-c",
+  "topicId": "economics-1-3",
+  "conceptId": "cutting-soft-drink-consumption",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q1(c)",
+  "questionText": "Advise the Minister for Health and Children on possible economic actions that the Government could take to reduce the consumption of soft drinks.",
+  "stem": "Many health advisors wish to reduce the consumption of soft drinks.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An action — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three actions, 3 points at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Taxation: Increase taxes on soft drinks — By increasing indirect taxes (e.g. VAT) the price will increase which may cause demand to fall.",
+      "Education: Education / Awareness campaign — The government could increase spending on advertising campaigns to raise awareness of the problems which may result from the consumption of soft drinks. It could insist on more stringent product labelling.",
+      "Legislation: Introduce legislative changes — It could ban the sale of soft drinks in schools and colleges / ban their sale in vending machines. It could place a quota on imports of such drinks.",
+      "Subsidisation: Subsidise the price of substitute goods / Reduce VAT rates on substitute goods — By doing this the prices of substitute goods may be more attractive and this may lead to a drop in the demand for soft drinks e.g. the subsidisation of milk in schools."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q2-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "assumptions-of-monopoly",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q2(a)(i)",
+  "questionText": "State and explain three assumptions underlying the theory of monopoly.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An assumption — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three assumptions, 3 points at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "One firm in the industry • One firm exists within the industry so there is no distinction between the firm and industry. • One firm supplies the output in the entire industry.",
+      "Controls price or output • A firm can control price or output but not both. • If it sets the price the output produced will be determined by consumers. • If it sets the output the price will be determined by the market.",
+      "Profit maximisation • It is possible for the firm to earn SNP’s in both the short run and long run. • A firm aims to make maximum profits and it achieves this when MC = MR",
+      "Barriers to entry • If a monopoly market structure is to continue into existence into the long run there cannot be freedom of entry into the industry. • These barriers prevent the entry of new firms into the industry to threaten the position of the monopolist."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q2-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "advantages-of-monopoly",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q2(a)(ii)",
+  "questionText": "Outline two possible advantages of monopoly as a market structure.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two advantages, 2 points at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Economies of scale Production on a large scale may help the firm benefit from economies of scale and these cost savings may be passed on to the consumer in the form of lower prices.",
+      "Guarantee supply of product / service The supply of the product / service may be guaranteed and provided where profit is minimal (e.g. a state monopoly) so consumers benefit e.g. provision of bus services in areas of low population.",
+      "Employment As there is no competition employees have greater security of employment/may benefit from preferential conditions of employment /better rates of pay and pensions.",
+      "Reduced use of scarce resources There may be less duplication in the provision of products / services. There may be less need for competitive advertising so society’s resources are not wasted. Certain services may be best provided by one provider e.g. train tracks /electricity grid so as to avoid duplication.",
+      "Potential for innovation/ R & D The (supernormal) profits that monopolies may make could be used for investment in R&D and secure their dominance in the market. Inventors/creators need patent protection otherwise they may not invent."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q2-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "price-discrimination",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q2(b)(i)",
+  "questionText": "Explain the underlined term, giving one example as practiced by Iarnród Eireann.",
+  "stem": "Iarnród Eireann (Irish Rail) is the state monopoly in the provision of rail transport in Ireland. It operates a system of price discrimination in setting some of its prices.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-definition",
+    "kind": "point",
+    "verbatim": "Price Discrimination — When a good or service is sold to different consumers / different markets at varying ratios between marginal cost and price or the price difference is not due to difference in the cost of production.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Price discrimination, 6 marks."
+   },
+   {
+    "id": "r-example",
+    "kind": "anyN",
+    "verbatim": "An example — either",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "An example, 2 marks: the scheme accepts either.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "A student being charged a lower rate for travel from Cork to Dublin than another passenger",
+      "Consumers being charged different rates for peak and off-peak travel."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q2-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "conditions-for-price-discrimination",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q2(b)(ii)",
+  "questionText": "State and explain three conditions necessary for price discrimination to take place.",
+  "stem": "Iarnród Eireann (Irish Rail) is the state monopoly in the provision of rail transport in Ireland. It operates a system of price discrimination in setting some of its prices.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 4",
+   "answer": 3,
+   "ofParts": 6,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A condition — any three",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three conditions, 3 points at 4 marks each. State: 2 marks. Explain: 2 marks.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Monopoly Power. If freedom of entry existed into the industry, competitors would enter where the firm was charging the higher price and earning SNP and this would continue until only normal profit was being earned.",
+      "Separation of markets. The good bought in the low priced market cannot be offered for resale in the higher priced market. If it was not possible to separate the markets then the above would occur until no price difference existed.",
+      "Different consumer price elasticities of demand. Consumers with the high price elasticity of demand are charged the lower prices for their goods e.g. students are assumed to have lower incomes and so are not in the position to pay the full price for certain goods and services.",
+      "Consumer Indifference. The difference in price may be so small that consumers are indifferent and so don't mind paying the slightly higher price.",
+      "Lack of awareness by consumers. Consumers may be unaware that the good is available elsewhere at a lower price.",
+      "Consumer attitudes to the goods. A consumer may be willing to pay a higher price for a good which s/he considers to be in fashion / provide status e.g. people and their desire for 'branded' products."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q2-c",
+  "topicId": "economics-2-0",
+  "conceptId": "monopoly-against-perfect-competition",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q2(c)",
+  "questionText": "Using suitably labelled diagram(s), compare the long run equilibrium position of the monopoly firm with that of a perfectly competitive firm (assuming both operate under the same cost conditions) under the following headings: • Price and Output; • Profits; • Efficiency.",
+  "stem": "",
+  "figureKey": "economics-2010-HL-scheme-p13-q2c-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 @ 1 + 3 @ 2 + 3 + 3 + 4 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-diagram-1",
+    "kind": "anyN",
+    "verbatim": "The diagram — each item circled 1",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The diagram, 10 items at 1 mark each + 3 items at 2 marks each = 16 marks. The ten circled 1: the axes P and Q, MC, AC, the prices PM and PC, the outputs QM and Qc and the equilibrium points F and E. The completed diagram is shown with the answer.",
+    "group": {
+     "claimMax": 10,
+     "perOption": 1,
+     "options": [
+      "P",
+      "Q",
+      "MC",
+      "AC",
+      "PM",
+      "PC",
+      "QM",
+      "Qc",
+      "F",
+      "E"
+     ]
+    }
+   },
+   {
+    "id": "r-diagram-2",
+    "kind": "anyN",
+    "verbatim": "The diagram — each item circled 2",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The three circled 2: the perfectly competitive firm’s D = AR = MR, the monopoly’s D = AR and its MR.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "D = AR=MR",
+      "D = AR [M]",
+      "MR"
+     ]
+    }
+   },
+   {
+    "id": "r-price",
+    "kind": "point",
+    "verbatim": "Price — A firm in a monopoly position sells its output at a higher price– Pm rather than Pc.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Price, 3 marks."
+   },
+   {
+    "id": "r-output",
+    "kind": "point",
+    "verbatim": "Output — A firm in a monopoly position produces a smaller output than in perfect competition – Qm rather than Qc.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Output, 3 marks."
+   },
+   {
+    "id": "r-profits",
+    "kind": "anyN",
+    "verbatim": "Profits — each part marked (1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Profits, 4 marks: (2) for each firm, 1 for each part the scheme marks (1).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "Because AR = AC",
+      "a firm in PC earns normal profit",
+      "Because AR > AC",
+      "a firm in monopoly can earn SNPs."
+     ]
+    }
+   },
+   {
+    "id": "r-efficiency",
+    "kind": "anyN",
+    "verbatim": "Efficiency — each part marked (1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Efficiency, 4 marks: (2) for each firm, 1 for each part the scheme marks (1).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "A firm in PC produces at the lowest point of AC",
+      "and so is efficient",
+      "A monopoly may not produce at the lowest point of AC",
+      "and so maybe inefficient"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q3-a",
+  "topicId": "economics-2-1",
+  "conceptId": "four-labour-market-terms",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q3(a)",
+  "questionText": "With reference to the factor of production labour, explain the following terms: • Derived Demand; • Marginal Revenue Productivity; • Wage Drift; • Cyclical Unemployment.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 @ 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-derived",
+    "kind": "point",
+    "verbatim": "Derived Demand — Where labour is demanded for its contribution to the production process.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Derived demand: 4 at 5 marks each."
+   },
+   {
+    "id": "r-mrp",
+    "kind": "point",
+    "verbatim": "MRP — The extra revenue earned when an additional unit of labour/ is employed.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Marginal revenue productivity, 5 marks."
+   },
+   {
+    "id": "r-drift",
+    "kind": "point",
+    "verbatim": "Wage Drift — When wage levels rise above the negotiated levels.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Wage drift, 5 marks."
+   },
+   {
+    "id": "r-cyclical",
+    "kind": "point",
+    "verbatim": "Cyclical Unemployment — Unemployment that results from reduced demand for goods and services.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Cyclical unemployment, 5 marks. The scheme also prints the bracketed wording.",
+    "accepts": [
+     "(Unemployment resulting from the economic recession / decline in trade cycles / reduced aggregate demand)."
+    ]
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q3-b-i",
+  "topicId": "economics-2-1",
+  "conceptId": "the-efficiency-of-labour",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q3(b)(i)",
+  "questionText": "State and explain four factors which influence the efficiency of labour as a factor of production.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 @ 5",
+   "answer": 4,
+   "ofParts": 9,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A factor — any four",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four factors, 4 points at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Education / Training / Qualifications: the better the quality of education / training /qualifications attained by the worker the more efficient / productive they may be.",
+      "Degree of specialisation: by concentrating on performing a single task workers become faster and more skillful and therefore are more efficient.",
+      "Innate / natural talent of the worker: some workers may possess innate / natural talents making them highly efficient.",
+      "Climatic conditions: if a place of work is too hot or too cold then this may affect the workers productivity.",
+      "Quality of the other factors: the better the quality of the other factors which the worker uses then the more efficient the worker.",
+      "Management expertise: good managers can get the best out of their workforce, leading to efficiencies, improved staff morale/staff motivation, leading to increased output.",
+      "Availability of other factors: efficiency may be improved if the worker has a greater quantity of other factors of production available for use.",
+      "Commitment of the worker: if workers are highly motivated and committed to work then they will operate more efficiently",
+      "Living conditions of the workforce: if workers are healthy, well nourished and have decent accommodation then they will work in a more efficient manner."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q3-b-ii",
+  "topicId": "economics-2-1",
+  "conceptId": "cutting-the-minimum-wage",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q3(b)(ii)",
+  "questionText": "Outline one possible economic advantage and one possible economic disadvantage, to the Irish economy, of reducing the National Minimum Wage.",
+  "stem": "Recently the Organisation for Economic Cooperation and Development (OECD) recommended that lower wages are necessary to restore stability to the Irish economy and that consideration should be given to reducing the National Minimum Wage over time.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-advantage",
+    "kind": "anyN",
+    "verbatim": "An advantage — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One advantage, 1 at 5 marks. State 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Lower labour costs Resulting in continued production and reduced risk of business closure.",
+      "Lower selling prices With production costs falling this may lead to lower consumer prices and increased competition",
+      "Increased demand / protection of jobs The lower wage rate leading to lower prices may lead to increased demand and hence greater demand for workers. Indigenous jobs are protected e.g. jobs in the tourism sector.",
+      "Investment stimulus Reduced costs may lead to increased investment by entrepreneurs / increased foreign direct investment.",
+      "Reduced risk of re-location Irish wage levels may fall more into line with other countries and this may result in less firms considering re-locating to countries outside Ireland."
+     ]
+    }
+   },
+   {
+    "id": "r-disadvantage",
+    "kind": "anyN",
+    "verbatim": "A disadvantage — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One disadvantage, 5 marks, the same way.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Reduced standard of living Workers will now receive lower income and so their standard of living will fall",
+      "Reduced aggregate demand /spending Lower incomes will reduce spending and so the demand for goods and services may fall resulting in unemployment/less VAT receipts.",
+      "Impact on general wage levels This reduction may indicate to employers that all wage levels should fall and this may result in a possible reduction in standard of living among the entire workforce.",
+      "Workers on lower incomes suffer most If the reduction is confined to those on the minimum wage rate then the burden is not being shared equally within the workforce, which is not equitable.",
+      "Discourage employment The reduction may not encourage people to join the workforce/ it may lead to a greater participation in the black economy."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q3-c-i",
+  "topicId": "economics-3-0",
+  "conceptId": "effects-of-the-black-economy",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q3(c)(i)",
+  "questionText": "State and explain three economic effects of this activity in Ireland.",
+  "stem": "Ireland’s ‘Black Economy’ (underground economy) activity results in a loss of up to €6.1bn to the Exchequer annually, according to the economist Friedrich Schneider.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three effects, 3 points at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Loss of tax revenue to the government. Tax revenues essential to the provision of state services are lost to the exchequer. These could have been used by the government for varied uses.",
+      "Decline in legitimate business activity/ threat to jobs Those businesses which are legitimate will suffer a decline in sales, leading to possible job losses and a decline in economic activity.",
+      "Increased government expenditure on enforcement. To curb this activity the government may have to increase spending on enforcement which will lead to further pressure on the state’s finances / necessity to raise taxes.",
+      "Pressure on government services / finances With the loss of revenue to the state the government may have to cut spending, find additional sources of tax revenue and/or reduce the volume of services which it provides and /or increase borrowing.",
+      "Increase crime levels. An increase in black economic activities results in increased crime and may instill fear in citizens and further reduce economic activities.",
+      "Standards of products/services Because of lack of regulation products may be unsafe / harmful to consumers."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q3-c-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "discouraging-the-black-economy",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q3(c)(ii)",
+  "questionText": "Outline two economic measures the Irish Government could take to discourage this activity.",
+  "stem": "Ireland’s ‘Black Economy’ (underground economy) activity results in a loss of up to €6.1bn to the Exchequer annually, according to the economist Friedrich Schneider.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two measures, 2 at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Reduce direct taxation rates. By doing this the citizens may be more inclined to pay their full tax/ be tax compliant as there is less of their income being deducted in taxation.",
+      "Reduce indirect taxation. By reducing rates of VAT and excise duties on goods and services prices should fall and this may encourage less activity in the black economy e.g. smuggling of cigarettes etc.",
+      "Better enforcement by revenue commissioners. Continued enforcement by the revenue commissioners may deter people from engaging in the black economy. More deterrents / heavier fines / longer sentences by the courts may also help.",
+      "Educate the public about the importance of tax revenue to the state. If the government were successful in educating the public about the important uses to which tax revenue is put and linked revenue with the provision of state services it may succeed in convincing citizens to avoid black economy activities.",
+      "Simplification of the tax system / close all tax loopholes. A tax system which is easy to follow and understand may reduce tax evasion."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q4-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "taxation-revenues-and-the-tax-base",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q4(a)(i)",
+  "questionText": "Explain briefly the underlined terms.",
+  "stem": "“Next year, almost half of income earners will pay no income tax and 4% of income earners will pay almost half of the total tax yield”. (Minister for Finance, Budget Statement, 9th December 2009). The above situation is occurring at a time when taxation revenues have fallen considerably and there is a debate about the need to broaden the tax base.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-revenues",
+    "kind": "point",
+    "verbatim": "Taxation revenues — Monies/incomes received by the government in the form of direct & indirect taxes, and used in the running of the country.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Taxation revenues, 5 marks."
+   },
+   {
+    "id": "r-base",
+    "kind": "point",
+    "verbatim": "Broaden the tax base — Increasing the number of people / areas on which tax is levied / in the tax net.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Broadening the tax base, 5 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q4-a-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "a-good-taxation-system",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q4(a)(ii)",
+  "questionText": "Discuss the characteristics of a good taxation system.",
+  "stem": "“Next year, almost half of income earners will pay no income tax and 4% of income earners will pay almost half of the total tax yield”. (Minister for Finance, Budget Statement, 9th December 2009). The above situation is occurring at a time when taxation revenues have fallen considerably and there is a debate about the need to broaden the tax base.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "5 @ 4",
+   "answer": 5,
+   "ofParts": 9,
+   "perPart": 4
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A characteristic — any five",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Five characteristics, 5 at 4 marks each. State: 2 marks. Explain: 2 marks. The paper does not say how many; the scheme credits five.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 4,
+     "options": [
+      "Taxes should be equitable The tax levied should be related to the person’s ability to pay.",
+      "Taxes should be certain The amount of tax which a person must pay (the state collects) should be certain and clear.",
+      "Taxes should be convenient The manner / timing of payment of the taxes should be convenient to the taxpayer e.g. the PAYE system of tax is convenient because it is deducted at regular intervals rather than one lump sum.",
+      "Taxes should be economic The cost of collection should be small in relation to the amount of revenue to be collected.",
+      "Taxes should not act as a disincentive. The marginal rates of tax should not discourage workers from working overtime / tax rates on profits should not discourage investment by entrepreneurs / savings should not be discouraged.",
+      "Taxes should aid the redistribution of income. A good tax system should help the government redistribute income from the rich to the poor /progressive taxes allow the government to do this.",
+      "Tax rates should be consistent with national economic objectives. The taxes levied should help the government achieve other economic/social objectives. E.g. raising excise rates on cigarettes will help discourage smoking.",
+      "Should have a stabilising influence on the economy. A good system of taxation can prevent the level of economic activity rising as fast as it otherwise would when the economy is on an upturn, and prevent the level of economic activity falling as fast as it otherwise would in a recession.",
+      "Evasion should be impossible A good tax should be impossible to evade, otherwise the tax is not fair."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q4-b-i",
+  "topicId": "economics-3-1",
+  "conceptId": "is-the-carbon-tax-regressive",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q4(b)(i)",
+  "questionText": "Is this tax an example of a progressive or a regressive tax? Explain your answer.",
+  "stem": "The Irish government introduced a carbon tax in its latest Budget (9th December 2009).",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-answer",
+    "kind": "point",
+    "verbatim": "It is a regressive tax",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Stating it, 2 marks, and explaining it, 3 (the scheme prints 5 marks: State: 2 marks. Explain: 3 marks)."
+   },
+   {
+    "id": "r-why",
+    "kind": "point",
+    "verbatim": "because it does not take into account your ability to pay the tax/ people on lower incomes would pay a greater proportion of their income in tax.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Why, 3 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q4-b-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "the-carbon-tax-for-and-against",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q4(b)(ii)",
+  "questionText": "State and explain two possible economic advantages and two possible economic disadvantages of the new carbon tax.",
+  "stem": "The Irish government introduced a carbon tax in its latest Budget (9th December 2009).",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 5 + 2 @ 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-advantages",
+    "kind": "anyN",
+    "verbatim": "An advantage — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two advantages, 2 at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Government revenues Increased government revenue through increased revenues from this carbon tax.",
+      "Investment in R&D / Encourage innovation Greater investment in R&D into alternative sources of energy / renewables /transport. Government could promote ‘green industries’ and thereby create jobs.",
+      "More efficient use of resources / Change consumer behaviour Consumers may be more aware of the scarcity of these resources and so become more efficient in their consumption.",
+      "Help pay towards our carbon footprint / Environmental protection The revenue collected can offset the cost of our collective carbon footprint / result in fewer emissions. Revenue may be targeted for specific environmental projects."
+     ]
+    }
+   },
+   {
+    "id": "r-disadvantages",
+    "kind": "anyN",
+    "verbatim": "A disadvantage — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two disadvantages, 5 marks each, the same way.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Inflationary pressures Higher fuel prices will mean consumer prices increase, leading to a rise in the CPI",
+      "Loss of competitiveness / increased costs of production Industry will now be paying higher prices and this may reduce the international competitiveness of Irish firms. Increased costs may act as a disincentive to attracting foreign direct investment.",
+      "Decrease in the standard of living Higher prices means less disposable income and so standard of living will fall.",
+      "Regressive form of taxation This tax would not take a person’s ability to pay into account."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q4-c",
+  "topicId": "economics-3-1",
+  "conceptId": "problems-of-the-national-debt",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q4(c)",
+  "questionText": "State and explain four problems associated with the Irish National Debt.",
+  "stem": "At end of December 2008 the Irish National Debt amounted to approximately €50.4bn and at the end of December 2009 it was approximately €75bn.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 @ 5",
+   "answer": 4,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A problem — any four",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four problems, 4 points at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Opportunity costs involved. With more funds being used to meet our annual interest repayments the government has less funds available for other purposes.",
+      "Increased burden on taxpayers. The increase will mean that the government will have to consider increasing future taxes for taxpayers.",
+      "Increased annual interest repayments. An increasing national debt means that the annual cost of repaying our national debt is rising.",
+      "Diminished international credit-rating. The fact that Ireland is seen to have an increasing national debt means that our credit-rating is deteriorating.",
+      "Euro stability pact requirements. Ireland has difficulty in meeting the conditions of the stability pact and hence corrective action must be taken in economic policy matters and agreed by the EU.",
+      "Poor management of economy. Some citizens may become aware of the government’s poor management of the economy and this may diminish their confidence in the economy.",
+      "Risk in Provision of Public Services / pressure on government to cut spending Due to an increase in the national debt the government has cut back spending on certain public services, thereby affecting the provision of some services e.g. the health service; education service.",
+      "Servicing the external portion of the National Debt The external portion of the national debt is subject to exchange rate movements, if borrowed from outside the eurozone. The Irish Government doesn’t earn tax revenue on the repayment of external sources, unlike on the repayment of internal sources."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q5-a-i",
+  "topicId": "economics-3-0",
+  "conceptId": "gnp-at-factor-cost",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q5(a)(i)",
+  "questionText": "(i) Gross National Product at Factor Cost;",
+  "stem": "Given that Gross National Product at Current Market Prices is €200m, price subsidies €5m, depreciation €12m and indirect taxes €30m. Calculate the value of each of the following: Show all your workings.",
+  "figureKey": "economics-2010-HL-scheme-p20-q5ai-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 + 2 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-gnp",
+    "kind": "point",
+    "verbatim": "GNP @ Market Prices — €200 million",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "2 marks, printed under €200 million."
+   },
+   {
+    "id": "r-subsidies",
+    "kind": "point",
+    "verbatim": "+ Price Subsidies — €5 million",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "2 marks, printed under €5 million."
+   },
+   {
+    "id": "r-taxes",
+    "kind": "point",
+    "verbatim": "– Indirect Taxes — €30 million",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "2 marks, printed under €30 million."
+   },
+   {
+    "id": "r-answer",
+    "kind": "point",
+    "verbatim": "= GNP @ Factor Cost — €175 million",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "4 marks, printed under €175 million (Gross National Product at Factor Cost – 10 marks in all)."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q5-a-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "national-income-from-gnp",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q5(a)(ii)",
+  "questionText": "(ii) Net National Product at Factor Cost/National Income.",
+  "stem": "Given that Gross National Product at Current Market Prices is €200m, price subsidies €5m, depreciation €12m and indirect taxes €30m. Calculate the value of each of the following: Show all your workings.",
+  "figureKey": "economics-2010-HL-scheme-p20-q5aii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 3 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-gnp",
+    "kind": "point",
+    "verbatim": "GNP @ Factor Cost — €175 million*",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "3 marks, printed under €175 million*, the answer to (i)."
+   },
+   {
+    "id": "r-depreciation",
+    "kind": "point",
+    "verbatim": "– Depreciation — €12 million",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "3 marks, printed under €12 million."
+   },
+   {
+    "id": "r-answer",
+    "kind": "point",
+    "verbatim": "= NNP @ FC — €163 million",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "4 marks, printed under €163 million (Net National Product at Factor Cost/National Income – 10 marks in all)."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q5-b-i-prices",
+  "topicId": "economics-3-0",
+  "conceptId": "a-vat-cut-and-gnp",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q5(b)(i) — the price effect",
+  "questionText": "a reduction in the general level of VAT; Answer for: the effect on the prices consumers pay in the market place.",
+  "stem": "Explain the economic effect which each of the following could have on the level of GNP at Market Prices:",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-effect",
+    "kind": "point",
+    "verbatim": "Will decrease",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The effect on GNP at market prices, 4 marks. The scheme also prints The Long run, with the opposite effect, as its other reading."
+   },
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "The reduction in VAT will decrease the prices for goods & services which consumers must pay in the market place",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The explanation, 6 marks (10 mks in all)."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q5-b-i-long-run",
+  "topicId": "economics-3-0",
+  "conceptId": "a-vat-cut-and-gnp",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q5(b)(i) — the long run",
+  "questionText": "a reduction in the general level of VAT; Answer for: The Long run.",
+  "stem": "Explain the economic effect which each of the following could have on the level of GNP at Market Prices:",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-effect",
+    "kind": "point",
+    "verbatim": "Will increase",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The effect on GNP at market prices in The Long run, 4 marks."
+   },
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "With lower prices consumers may buy more goods and services, aggregate demand increases and so GNP increases.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The explanation, 6 marks (10 in all)."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q5-b-ii-prices",
+  "topicId": "economics-3-0",
+  "conceptId": "cutting-farm-subsidies-and-gnp",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q5(b)(ii) — the price effect",
+  "questionText": "a reduction in the subsidies paid to farmers. Answer for: the effect on the prices consumers pay in the market place.",
+  "stem": "Explain the economic effect which each of the following could have on the level of GNP at Market Prices:",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-effect",
+    "kind": "point",
+    "verbatim": "Will increase",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The effect on GNP at market prices, 4 marks. The scheme also prints The Long run, with the opposite effect, as its other reading."
+   },
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "The reduction in subsidies paid to farmers will increase GNP at market prices as prices for agricultural products will rise in the market place",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The explanation, 6 marks (10 mks in all)."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q5-b-ii-long-run",
+  "topicId": "economics-3-0",
+  "conceptId": "cutting-farm-subsidies-and-gnp",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q5(b)(ii) — the long run",
+  "questionText": "a reduction in the subsidies paid to farmers. Answer for: The Long run.",
+  "stem": "Explain the economic effect which each of the following could have on the level of GNP at Market Prices:",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-effect",
+    "kind": "point",
+    "verbatim": "Will decrease",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The effect on GNP at market prices in The Long run, 4 marks."
+   },
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "Prices will rise and so demand for their commodities will decrease resulting in a reduction in consumption and so GNP will decrease.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The explanation, 6 marks (10 in all)."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q5-c-i",
+  "topicId": "economics-3-0",
+  "conceptId": "uses-of-national-income-statistics",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q5(c)(i)",
+  "questionText": "Outline the main uses of National Income Statistics.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A use — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three uses, 3 points at 5 marks each. State: 2 marks. Explain: 3 marks. The paper does not say how many; the scheme credits three.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Indication of alterations in our standard of living Any change in our national income figures will indicate the level of economic growth, or otherwise, within the country from one year to the next, and give a general indication of changes to the standard of living, if any. Used by trade unions to justify wage demands.",
+      "Means of comparing the standard of living in different countries. We can use the national income statistics to compare the standard of living in our country with that of other countries.",
+      "Assists the government in formulating economic policy. Governments have a greater influence on the development and growth of the economy. To effectively plan for this governments’ need information about our economy such as that provided by the National Income statistics.",
+      "Evaluate economic policy To assess changes to the economy and economic changes in the various sectors, and to provide a benchmark against which progress can be monitored, it is useful to have national statistics.",
+      "EU Budget Contributions / Benefits The wealth revealed in our national income statistics will determine the contribution, if any, which Ireland must make to the EU budget. The figure will also be used within the EU to determine those countries which require financial aid from the EU and the amount of that aid."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q5-c-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "limits-of-national-income-statistics",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q5(c)(ii)",
+  "questionText": "State and explain four reasons why care should be taken when using National Income Statistics as a measure of economic performance of a country.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 @ 5",
+   "answer": 4,
+   "ofParts": 11,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason — any four",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four reasons, 4 points at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Population changes If national income grows at a slower rate than population, then national income per head decreases and the average standard of living will fall. Hence population changes must be considered with changes in national income when assessing a country’s economic performance.",
+      "Inflation/deflation An increase in prices will increase national income but standard of living may fall. So, changes in national income must be compared with changes in prices to determine the impact on standard of living / economic performance.",
+      "Employment / Unemployment If a person is unemployed rising national income will not necessarily mean that this person’s average standard of living is rising.",
+      "Levels of taxation When considering a person’s standard of living one should take into account rates of income tax and levels of indirect tax within the country. An increase in either of these may result in a drop in a person’s standard of living.",
+      "Levels of social welfare For a person who is unemployed the rates of social welfare payable is of more relevance that the average standard of living in the country.",
+      "Measures flow of wealth not welfare Rising GNP may be accompanied by changing working/living conditions which may cause a loss of welfare e.g. more traffic congestion and so a person’s standard of living may fall.",
+      "Hidden social costs attached to increases in national income. If a firm increases output national income increases. However, a hidden cost may be increased pollution etc.",
+      "Distribution of national income. If increases in national income make their way into the pockets of a small minority, there may be no improvement in the standard of living of the whole community.",
+      "Exclusion of important activities from calculation of national income. The black economy is excluded from the calculation of national income. The work of housewives & voluntary activities is also excluded. Such activities are important to the welfare of its citizens.",
+      "Nature of the goods produced A country which spends a small amount on military equipment and a large amount on health, education etc. will have a better standard of living that one where the reverse is the case.",
+      "Government services at cost price. Government services are included at cost while private services are included at selling price. A country where the government provides many services will record a lower GDP / national income."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q6-a-i",
+  "topicId": "economics-3-4",
+  "conceptId": "commercial-banks-and-nationalisation",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q6(a)(i)",
+  "questionText": "Explain the underlined terms.",
+  "stem": "It has been suggested that the main commercial (retail) banks in Ireland should be nationalised.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-banks",
+    "kind": "point",
+    "verbatim": "Commercial banks — Institutions which provide deposit / lending services to personal consumers / business.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Commercial banks, 5 marks."
+   },
+   {
+    "id": "r-nationalisation",
+    "kind": "point",
+    "verbatim": "Nationalisation — Taking an industry or assets into public ownership by a government.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Nationalisation, 5 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q6-a-ii",
+  "topicId": "economics-3-4",
+  "conceptId": "nationalising-the-banks-for-and-against",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q6(a)(ii)",
+  "questionText": "Outline two possible economic arguments for and two possible economic arguments against the nationalisation of the banks.",
+  "stem": "It has been suggested that the main commercial (retail) banks in Ireland should be nationalised.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 5 + 2 @ 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-for",
+    "kind": "anyN",
+    "verbatim": "An argument for — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two arguments for, 2 at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Stability to economy / investor confidence It may signal to domestic and international investors that the state seeks to protect an important resource and so attract investment.",
+      "Availability of credit It may ensure that credit would flow to those individuals and businesses which require it, unlike at present where credit restrictions apply.",
+      "Rationalisation of banking services It may lead to a rationalisation of banking services within the state, the elimination of wasteful practices / cost efficiencies.",
+      "Employment / consumer protection Jobs currently under threat may be protected by state intervention. Consumers may be offered better protection by state banks.",
+      "Development of ethical banking practices With nationalisation banking practices may be less motivated by the generation of profit and more towards the provision of those services required by consumers.",
+      "Continued provision of banking services to the community/ prevent foreign ownership The nationalised bank may continue to provide retail services to those communities which in the past were only provided if the branch was profitable/social objective"
+     ]
+    }
+   },
+   {
+    "id": "r-against",
+    "kind": "anyN",
+    "verbatim": "An argument against — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two arguments against, 5 marks each, the same way.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Unnecessary state interference Too much state involvement in commercial businesses may discourage domestic / international investors.",
+      "Shareholders penalised They may be forced to sell their shares at a price deemed unfair.",
+      "Increased taxation Taxes may have to be increased to fund the purchase and running of the nationalised banks.",
+      "Opportunity costs The money used for the nationalisation could have been put to alternative uses by the state e.g. provision of improved health services etc.",
+      "Profit motive diminished Should this occur then the pressure to improve services; achieve efficiencies and maximise profits maybe be diminished.",
+      "Financial Cost Large amount of funds needed to ensure their future and they could continue to be loss-making into the foreseeable future."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q6-b-i",
+  "topicId": "economics-3-1",
+  "conceptId": "the-governments-economic-aims",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q6(b)(i)",
+  "questionText": "State and explain what you consider to be the three most important economic aims of the Irish Government.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 9,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An aim — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three aims, 3 at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Achieve Full Employment. Pursue policies which will improve our competitiveness, boost exports and so help create jobs in Ireland.",
+      "Achieve moderate economic growth. The government must try to manage current downturn in economic activity and ensure that we return to a position of some economic growth. Appropriate fiscal policy may help towards achieving this.",
+      "Control government finances / reduce borrowing / manage the national debt. The government must continue to reduce spending. It must also widen the tax base so as to increase taxation revenues. These measures will help reduce borrowing and help reduce the national debt.",
+      "Stability in the banking sector. The state guarantee on depositors saving, the nationalisation of Anglo Irish Bank and the establishment of NAMA are all aimed at restoring confidence to the banking sector, restore credit availability, generate confidence in domestic and international investors and so encourage investment.",
+      "Broaden the tax base. Many believe that we relied too much on the property boom for taxation revenues. The government must now plan to introduce new taxes, eliminate tax evasion; bring more workers into the income tax net and so generate a greater flow of tax revenues.",
+      "Promote balanced regional development. The National Development Plan aims to do this. The government must develop broadband, ensure the continuity of regional airports, develop/promote educational opportunities in the regions so as to stimulate economic activity and encourage economic growth.",
+      "Improve infrastructure. The continued development of the road infrastructure, provision of improved public transport, continued development of the airports and seaports etc. is essential to ensure that our standard of living is maintained.",
+      "Maintain state services. Even though taxation revenues are declining the government must ensure that our health services are maintained and made more efficient, that schools are built and staffed and that practices are developed to ensure the long term viability of these essential services e.g. possibility of charges; changed entry requirements for the provision of ‘free’ services.",
+      "Distribution of wealth. The government must continue to ensure that social welfare recipient’s standard of living is maintained, that it provides adequately for future pensions and helps to redistribute income within the state, given the current constraints on government current spending."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q6-b-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "conflicting-economic-aims",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q6(b)(ii)",
+  "questionText": "Outline two examples of possible conflicts between government economic aims/objectives.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A conflict — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two conflicts, 2 conflicts at 5 marks each. State: 2 marks. Explain: 3 marks. The scheme names each conflict and prints no explanation.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Control of national finances v. full employment.",
+      "Control of national finances v. Economic growth.",
+      "Distribution of wealth v. broadening the tax base.",
+      "Stability in banking sector v. control of government finances.",
+      "Balanced regional development v maintaining state services.",
+      "Full employment v. price stability."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q6-c",
+  "topicId": "economics-0-0",
+  "conceptId": "features-of-monetarism",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q6(c)",
+  "questionText": "Outline four features of ‘Monetarism’.",
+  "stem": "The economist Milton Friedman was regarded as one of the major thinkers of the monetarist school of economic thought.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 @ 5",
+   "answer": 4,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A feature — any four",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four features, 4 at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Monetary policy should be the main instrument used by the government to manage the economy and not fiscal policy. Increased government expenditure would only lead to higher prices and not increased output and employment as advocated by Keynes.",
+      "Control of money supply Monetarists suggest strict control of the money supply so as to control inflation. Limiting credit availability, keeping interest rates high would control consumer borrowing.",
+      "Reduction in inflation increases competitiveness which may lead to relatively cheaper exports, increased exports and job creation in the long run. Companies should keep wage increases to a minimum in order to avoid cost-push inflation.",
+      "Laissez faire principles Monetarists favour a return to laissez faire principles: minimum state intervention; de-regulation of markets; privatisation of state bodies.",
+      "Supply side policies Monetarists favoured any policies which improve market efficiency / boost supply/ reduce the ability of trade unions to interfere with the labour market."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q7-a-i",
+  "topicId": "economics-4-2",
+  "conceptId": "why-trade-is-essential-for-ireland",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q7(a)(i)",
+  "questionText": "Explain why international trade is essential for the Irish economy.",
+  "stem": "Many believe that export-led growth is the way forward for the recovery of the Irish economy.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three reasons, 3 points at 5 marks each. State: 2 marks each. Explain: 3 marks each. The paper does not say how many; the scheme credits three.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Greater standard of living / increased wealth. Trade increases wealth / GNP and this allows the purchase of a greater quantity of goods and services.",
+      "Greater choice of commodities / Commodities we are unable to produce. Trade allows us benefit from a greater variety of goods and services than would be available without trade. We lack some essential raw materials for production and thus must import these.",
+      "More competitive prices of goods and services. Trade results in greater competition on the market which should lead to more competitive prices for consumers.",
+      "Employment / Investment opportunities. Efficient production means that employment in these industries is more secure. Employment will be created in those industries which are expanding due to the benefits of trade. A healthy trading economy generates confidence in the economy and investment is thus encouraged.",
+      "Companies benefit from economies of large scale production With trade, specialisation will take place. Companies will increase production and may benefit from economies of scale. These savings may be passed onto consumers in the form of lower prices and/or greater innovation.",
+      "Allows for the sale of surplus/ excess domestic output. If a company is competitive then it has the opportunity to sell that output, which it doesn’t/can’t sell domestically, on the international market. The Irish domestic market is small.",
+      "More efficient use of scarce world resources. By specialising in production countries maximise their combined outputs and thus resources are allocated more efficiently, resulting in less wastage.",
+      "Lack of domestic demand. Due to the current economic recession domestic demand has fallen, leading to Irish firms exporting their goods/services."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q7-a-ii",
+  "topicId": "economics-4-2",
+  "conceptId": "improving-irish-competitiveness",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q7(a)(ii)",
+  "questionText": "Discuss three measures which the Irish government could take to improve the competitiveness of Irish-based firms in international markets.",
+  "stem": "Many believe that export-led growth is the way forward for the recovery of the Irish economy.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three measures, 3 at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Reduce the national minimum wage / wage restraint. Employers would be able to get cheaper labour and therefore reduce costs. By negotiation the government could reach agreement with the social partners to limit pay rises",
+      "Reduce utility charges. A reduction in costs for electricity, gas, postage, waste charges, professional service charges etc. or any state services provided for firms would help reduce their costs of production.",
+      "Reduce taxation. A decrease in indirect taxes such as VAT or excise duty on fuel or raw materials will automatically reduce costs to firms. A decrease in the rate of CPT.",
+      "Reduce bureaucracy. Eliminate restrictions and paper work; remove requirements put on businesses by the state and the costs of administrative work would be reduced.",
+      "Subsidies / grants to firms. By reducing the rate of employers’ PRSI, it becomes cheaper to employ labour. By subsidising training costs / export credit insurance a firm’s costs may decrease and make it more competitive/Grants to foster innovation and R&D in firms.",
+      "Develop the infrastructure. Lack of broadband and poor infrastructure in some areas increases costs for firms. By improving the infrastructure it is faster and therefore cheaper to move goods and services around and between countries.",
+      "Ease credit availability Continued government action is required to ensure that credit is made available by banks. A firm can continue to exist and so employment is maintained. With the availability of cash they can pay day-to-day expenses and thus avail of discounts, reducing costs.",
+      "Fund skills development. The government can fund programmes which help develop skills which are needed by firms. This ensures availability of a skilled workforce which makes workers efficient and helps reduce the costs of firms. Targeted education funding to meet future skills needs of the growth sectors."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q7-b-i",
+  "topicId": "economics-4-0",
+  "conceptId": "developed-and-developing-countries",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q7(b)(i)",
+  "questionText": "Describe the main differences between a developed country and a developing country (LDC).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 13,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A difference — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three differences, 3 at 5 marks each. State: 2 marks. Explain: 3 marks. The paper does not say how many; the scheme credits three.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "High population growth rates in less developed countries LDCs. Rates of population growth are highest in developing countries (LDCs) resulting in economic problems which governments find hard to resolve.",
+      "Famine in LDCs. Too frequently famine occurs in LDCs resulting in disease and death at early age.",
+      "High foreign debts. These are higher in LDCs relative to national income and their repayment uses up government revenue which could have used for more productive uses.",
+      "More uneven distribution of wealth in LDCs In some LDCs, a minority of the population may control a large part of the country’s wealth resulting in poverty for the vast majority of the population.",
+      "Over-dependence on one crop in LDCs. Some LDCs are over-dependent on one crop. The country is therefore subject to crop failure and/or a wide variation in export prices.",
+      "High percentage of the population engaged in extractive/primary industries in LDCs. This results in not enough workers in secondary & tertiary sectors, resulting in an overall low standard of living. Undeveloped industrial base.",
+      "Unfavourable Terms of Trade for LDCs. LDCs may suffer from low export prices and high import prices and hence the gains from trade are reduced for these countries in comparison with developed nations.",
+      "Poor infrastructure in LDCs. A large proportion of the population may live in poor conditions with no water or dirty water and poor sanitation.",
+      "Lack of capital / Low levels of investment in LDCs. LDCs lack the capital essential for economic development & employment generation. Limited access to technological advances.",
+      "Low per capita incomes in LDCs. This results in a poor standard of living and a consequent low demand for goods and services relative to developed countries",
+      "Poor levels of education/literacy in LDCs. Educational opportunities are very limited. This acts as an impediment to economic development and contributes to continuing high unemployment.",
+      "Political corruption / less stable political institutions. Some LDCs spend a lot on bureaucratic administration / military spending which results in civil unrest. In some the political institutions are unstable and this hinders investment.",
+      "Exploitation by multinationals of LDCs. May take the form of low wage rates; lack of care for the environment; control over key exports."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q7-b-ii",
+  "topicId": "economics-4-0",
+  "conceptId": "promoting-development-in-ldcs",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q7(b)(ii)",
+  "questionText": "Discuss three measures which the governments of developed countries could take to promote economic development in developing countries (LDCs).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three measures, 3 at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Assist foreign aid programmes / capital provision. Governments can continue with aid to help in emergency situations. They can also provide more long term aid to help with the development of infrastructure/provision of education, health programmes etc.",
+      "Restructure their national debts. If the national debts were cancelled then these funds would become available for the country to use for economic development.",
+      "Improve trading opportunities. Improve access to markets in the developed world/outlet for their exports. Improve the terms of trade available/higher prices for their exports.",
+      "Encourage multinationals to set up firms there. These could provide the workers with skills. The fair wages received could help boost domestic demand and provide tax revenue for the state.",
+      "Assist LDCs with skills / technologies. The provision of skills / technologies to the LDCs would help with improving standards of living, increase productive capacity.",
+      "Assist peace measures and promote political stability. Economic development requires a peaceful environment. Foreign countries could provide peacekeeping troops and encourage the movement towards political stability."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q7-c-imf",
+  "topicId": "economics-4-1",
+  "conceptId": "the-imf-or-the-world-bank",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q7(c) — the IMF",
+  "questionText": "Write a brief account on the role of the International Monetary Fund (IMF) or the World Bank in the world economy. Answer for: The International Monetary Fund.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A role — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three roles, 3 points at 5 marks each. State: 2 marks. Explain: 3 marks. The scheme credits the IMF and the World Bank, each with its own list.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Expansion of World Trade The IMF encourages expansion in trade by encouraging member countries to adopt sound economic policies. It monitors economic and financial developments in member countries and gives advice to its members.",
+      "Promote exchange rate stability. The IMF promotes international monetary co-operation. It provides a forum for consultation on international monetary problems. It tries to maintain orderly exchange arrangements among countries and aims to avoid competitive devaluations.",
+      "Orderly correction of balance of payments problems. The IMF lends to member countries with balance of payments problems to provide temporary financing and to support reform policies aimed at correcting the underlying problems.",
+      "Operation of a multilateral system of payments. The IMF operates this system in respect of current transactions between members and aims to eliminate foreign exchange restrictions which may hamper the growth of world trade.",
+      "Provision of technical assistance and training. Where a member needs help the IMP will provide this assistance and training. When the Soviet Union collapsed the IMF stepped in and set up treasury systems for their central banks to help the transition from centrally planned to market based economic systems."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q7-c-world-bank",
+  "topicId": "economics-4-1",
+  "conceptId": "the-imf-or-the-world-bank",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q7(c) — the World Bank",
+  "questionText": "Write a brief account on the role of the International Monetary Fund (IMF) or the World Bank in the world economy. Answer for: The World Bank.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A role — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three roles, 3 points at 5 marks each. State: 2 marks. Explain: 3 marks. The scheme credits the IMF and the World Bank, each with its own list.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Encourage investment funds to LDCs Obtains funds from world’s advanced countries and uses these resources to provide loans to LDCs so they can invest in roads, schools etc.",
+      "Finance capital projects in member countries. The World Bank gives loans to member states and to private businesses in these countries to assist capital projects. Examples in Ireland in the past included the building of the original community schools by the DES.",
+      "Debt relief for LDCs The World Bank helps LDCs reduce their debt burden by extending the term of loans and /or re- negotiating interest rates."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q8-a",
+  "topicId": "economics-3-5",
+  "conceptId": "how-the-economy-performed",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q8(a)(i)–(iv)",
+  "questionText": "Outline, using appropriate figures, how the Irish economy has performed, in the past twelve months, in each of the following areas: (i) Price levels; (ii) Economic growth; (iii) Government current budgetary position; (iv) Employment/unemployment.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 + 6 + 6 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "One for each area",
+    "marks": 25,
+    "openList": true,
+    "contextNote": "All four areas, price levels, economic growth, the government’s current budgetary position and employment, one point for each, on one ladder: 7 marks + 6 marks + 6 marks + 6 marks= 25 marks. The scheme does not say which area earns the 7, so the first correct area is claimed at 7 and the other three at 6. Its points are the figures of the year to mid-2010.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 7,
+     "options": [
+      "Price levels — Price levels continue to fall in Ireland but the pace of deflation has eased to the slowest in more than a year.",
+      "Price levels — Prices have fallen partly due to weakening foreign and domestic demand.",
+      "Price levels — The biggest falls in prices were seen in clothing and footwear, food and non-alcoholic beverages, the cost of household equipment. However, the cost of education continues to rise, transport prices dearer, and housing, water, electricity, gas and other fuels, added 3.7 %.",
+      "Price levels — Prices were an average of 1.1 % lower in the year to May 2010.",
+      "Price levels — Deflation peaked at 6.6 % in October 2009 and has slowed steadily since then.",
+      "Economic growth — Gross domestic product (GDP) shrank by 7.2% in 2009 and it is projected to drop by 1.1% in 2010 according to the ESRI.",
+      "Economic growth — GNP has fallen by 12%.",
+      "Economic growth — The economy will return to \"very modest\" growth in the second half of 2010.",
+      "Economic growth — Economic growth has decreased due to the continuing worldwide economic recession.",
+      "Government current budgetary position — Because of deteriorating government finances the government introduced major cutbacks in government current expenditure in December 2009. Cutbacks of €4 bn were announced with cuts in public sector pay and social welfare.",
+      "Government current budgetary position — Revenue from taxation continues to fall due to declining economic growth and a lack of consumer spending.",
+      "Government current budgetary position — In 2009 the current budget deficit was €11.4bn and is predicted to be €13.6bn in 2010.The EBR was €24.7bn in 2009 and predicted to be €18.6bn in 2010.",
+      "Government current budgetary position — The EBR is above the 3% agreed by Eurozone members and Ireland has been given 4 years to put finances in order.",
+      "Employment / unemployment — The number of people signing on to the Live Register rose by 6,600 in May, the Central Statistics Office said, with the unemployment rate rising to 13.7 per cent.",
+      "Employment / unemployment — In May 2010 the number of people on the Live Register was 439,100.",
+      "Employment / unemployment — Ireland's unemployment rate is now 3.1% higher than the EU average. Across the EU, the average unemployment rate is 9.1%.",
+      "Employment / unemployment — The number of people in employment is 1.9 million (2009).",
+      "Employment / unemployment — Unemployment is expected to continue to rise due to the continuing recession and poor economic growth prospects."
+     ],
+     "perOptionSteps": [
+      7,
+      6,
+      6,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q8-b-i",
+  "topicId": "economics-3-5",
+  "conceptId": "effects-of-an-ageing-population",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q8(b)(i)",
+  "questionText": "Outline two possible economic effects of an ageing population on the Irish economy.",
+  "stem": "By 2036 one in five Irish people will be over 65 years of age, with the greatest increase being in those over 80 years.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two effects, 2 at 5 marks. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Pressure on provision of state pensions: The government must encourage individuals through tax incentives to avail of private pensions in order to reduce the pressure on the government to provide state pensions.",
+      "Possible increased tax burden: with larger numbers of people over 65 the dependency ratio may increase resulting in the need for higher taxes on the workforce to fund services for older people.",
+      "Increased government expenditure: the government may spend a greater proportion of its revenue on the provision of services for the elderly such as; medical care, free transport, nursing homes.",
+      "Changing pattern of demand: demand for those goods and services required by older people will increase e.g. nursing homes; medication etc.",
+      "The participation rate falls: as more people reach retirement age, the supply of labour may be affected. Some may wish to work part-time. Some may retire.",
+      "Reduced mobility of labour: as people get older they are less like to move to a different location in search of work."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q8-b-ii",
+  "topicId": "economics-3-2",
+  "conceptId": "consequences-of-rising-emigration",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q8(b)(ii)",
+  "questionText": "State and explain three economic consequences of the recent increase in emigration.",
+  "stem": "The number of emigrants from Ireland, in the year to April 2009 was 65,100, up from 45,300 for the previous year.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A consequence — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three consequences, 3 points at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Higher dependency ratio. Active population is probably leaving leading to higher dependency ratio and the need for the government to finance this increasing dependent population.",
+      "Opportunity costs. The state loses out on its investment in the education/training of these citizens. We may be educating workers for foreign countries.",
+      "Loss of skills within the economy / “Brain Drain”. We lose those workers / graduates who have acquired skills which are needed to help the economy move towards economic growth. The ‘brain drain’ may deprive the country of much needed skills.",
+      "Smaller domestic market As the domestic market contracts there may be reduced opportunities for investment by businesses / entrepreneurs.",
+      "Upward pressure on Irish wage levels. The highly trained and skilled are more mobile thus they leave. To try to retain these workers firms may have to increase wage levels.",
+      "Demand for state services. With a declining population the demand for state service may decline e.g. schools, health care, transport etc",
+      "Unemployment reduced. Those people who emigrate may have been unemployed if they stayed in Ireland. This reduces the strain on the government finances to fund increasing social welfare payments.",
+      "Contacts. The people who emigrate may be willing contacts for Irish exporters who may be anxious to find markets abroad."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q8-c-i",
+  "topicId": "economics-3-4",
+  "conceptId": "what-drives-savings-now",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q8(c)(i)",
+  "questionText": "Discuss two factors currently influencing the rate of savings in the Irish economy.",
+  "stem": "There has been a sharp increase in the rate of savings in Ireland in the past year.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A factor — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two factors, 2 points at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Future Expectations for the economy People are concerned about the future of the economy which is affecting consumer confidence. As a result people are tending to postpone purchasing and save instead.",
+      "Security of savings Due to the current economic climate people are less inclined towards risky investments and prefer the security of state backed savings.",
+      "Price levels / real rate of interest Current deflation results in an increase in the real rate of return on savings. Deflation means that people need to spend less to buy goods and services and so their ability to save is increased. In a period of falling prices consumers may not spend expecting the price to fall further and thereby save instead.",
+      "Quality of financial products If the products available produce reasonable returns then people are more likely to use them as a form of saving. Due to the banking crisis consumers are seeking greater security for their savings e.g. An Post’s ‘National Solidarity Bond’.",
+      "Deferred spending Though income levels are falling (unemployment is rising and those in employment have reduced disposable incomes due to higher tax rates), deflation is occurring, consumers are spending less and are deferring spending until later. This results in forced savings.",
+      "Future Levels of state benefits The state faces an increasing pensions' bill for public servants. People are fearful for their future pensions and this may be contributing to increasing savings currently."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2010-hl-sb-q8-c-ii",
+  "topicId": "economics-3-4",
+  "conceptId": "effects-of-higher-savings",
+  "level": "higher",
+  "year": 2010,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2010 HL Section B Q8(c)(ii)",
+  "questionText": "Outline three economic effects which an increase in the rate of savings may have on the Irish economy.",
+  "stem": "There has been a sharp increase in the rate of savings in Ireland in the past year.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 7,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three effects, 3 points at 5 marks each. State: 2 marks. Explain: 3 marks.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Reduced spending within the economy / leakage from circular flow of income. People who save more spend less and so the demand for goods and services may fall.",
+      "Increase in unemployment. Falling demand for goods and services will result in a reduction in demand for labour resulting in increased unemployment.",
+      "More funds available for investment. Increased savings will mean that more funds are available in financial institutions for borrowing by individuals and businesses. This may help economic growth.",
+      "Reduced inflation. With less spending and falling demand there will be reduced pressure on prices resulting in lower inflation and, possibly, increased competitiveness.",
+      "Reduced demand for imports. Less spending may mean reduced demand for imports thereby helping to improve our Balance of Payments.",
+      "Increased revenue for government. More savings mean increased revenue from DIRT to the government. In 2008 DIRT was worth €658.8m to the exchequer. In 2002 DIRT was worth €206m.",
+      "Stabilise banking sector. Increased savings result in increased funds available to banks. This may lead to increased stability in the banking sector at a time when confidence needs to be restored."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2011-hl-sa-q1",
   "topicId": "economics-3-3",
   "conceptId": "constructing-the-cpi",

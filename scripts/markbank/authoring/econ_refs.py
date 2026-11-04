@@ -175,6 +175,9 @@ HAND_CHECKED = {
     'econ-2011-hl-sb-q5-b-i',         # 2011 HL p6: "(i) Explain the term ‘privatisation’." (four words)
     'econ-2011-hl-sb-q6-a-i',         # 2011 HL p6: "(i) Outline four functions of money." (five words)
     'econ-2011-hl-sb-q6-a-ii',        # 2011 HL p6: "(ii) Explain the term ‘Monetary Policy’." (five words)
+    'econ-2010-hl-sb-q4-a-i',         # 2010 HL p5: "(i) Explain briefly the underlined terms." (five words; the stem carries the terms)
+    'econ-2010-hl-sb-q6-a-i',         # 2010 HL p6: "(i) Explain the underlined terms." (four words; the stem carries the terms)
+    'econ-2010-hl-sb-q6-c',           # 2010 HL p6: "(c) ... Outline four features of ‘Monetarism’." (five words after its stem)
 }
 
 

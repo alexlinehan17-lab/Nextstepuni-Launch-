@@ -8403,5 +8403,159 @@
     },
     "lettersVisible": [],
     "labelMeanings": []
+  },
+  {
+    "file": "economics-2010-HL-scheme-p04-q3-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2010 HL Section A Q3",
+    "description": "The marking scheme’s working. Quantity 1: €200 / €2 = 100 units. Quantity 2: €200 / €2.50 = 80 units. Then -20* over 50*, times €2 + €2.50 (4.50)* over 100 + 80 (180)*, = -* 1.0*; beneath it, 6 * at 2 marks each = 12 marks.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2010/LC034ALP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        38,
+        86,
+        440,
+        242
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2010-HL-scheme-p06-q6-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2010 HL Section A Q6",
+    "description": "The marking scheme’s working: 1 over (0.25 + 0.3 + 0.2) = 1.33; beneath it, 5 marks: 1 mark for each item.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2010/LC034ALP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        45,
+        70,
+        400,
+        128
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2010-HL-scheme-p08-q1a-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2010 HL Section B Q1(a)",
+    "description": "The marking scheme’s diagram, P (1.75 to 3.00) against Q (/1000 units, 5 to 60). The demand curve D falls through 3.00 at 5, 2.75 at 10, 2.50 at 20, 2.25 at 30 and 2.00 at 40. The supply curve S1 rises through 2.00 at 5, 2.25 at 10, 2.50 at 20, 2.75 at 30 and 3.00 at 40, and the new supply curve S2 through 2.00 at 25, 2.25 at 30, 2.50 at 40, 2.75 at 50 and 3.00 at 60. The two equilibrium points are circled, with arrows to both axes: 2.50 and 20 where D meets S1, 2.25 and 30 where D meets S2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2010/LC034ALP000EV.pdf",
+      "page": 8,
+      "rectPoints": [
+        84,
+        325,
+        511,
+        528
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2010-HL-scheme-p13-q2c-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2010 HL Section B Q2(c)",
+    "description": "The marking scheme’s diagram, P against Q, a circled mark beside each item. A U-shaped AC curve and an MC curve rising through its lowest point. The perfectly competitive firm’s horizontal D = AR=MR line at PC touches the lowest point of AC at E, with an arrow down to Qc. The monopoly’s falling D = AR [M] line and the steeper MR line beneath it; MC crosses MR at F, with an arrow down to QM, and the line up from QM meets D = AR [M] level with PM. Circled 1 beside P, Q, MC, AC, PM, PC, F, E, QM and Qc; circled 2 beside D = AR=MR, D = AR [M] and MR. Beneath: Diagram, 10 items at 1 mark each + 3 items at 2 marks each = 16 marks.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2010/LC034ALP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        26,
+        99,
+        572,
+        534
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2010-HL-scheme-p20-q5ai-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2010 HL Section B Q5(a)(i)",
+    "description": "The marking scheme’s working for (i) Gross National Product at Factor Cost – 10 marks: GNP @ Market Prices + Price Subsidies – Indirect Taxes = GNP @ Factor Cost; €200 million + €5 million – €30 million = €175 million*, an arrow from each figure to its marks: 2 marks, 2 marks, 2 marks and 4 marks.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2010/LC034ALP000EV.pdf",
+      "page": 20,
+      "rectPoints": [
+        58,
+        162,
+        552,
+        262
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2010-HL-scheme-p20-q5aii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2010 HL Section B Q5(a)(ii)",
+    "description": "The marking scheme’s working for (ii) Net National Product at Factor Cost/National Income – 10 marks: GNP @ Factor Cost – Depreciation = NNP @ FC; €175 million* – €12 million = €163 million, an arrow from each figure to its marks: 3 marks, 3 marks and 4 marks.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2010/LC034ALP000EV.pdf",
+      "page": 20,
+      "rectPoints": [
+        58,
+        300,
+        552,
+        416
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2010-HL-paper-p04-q1a-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2010 HL Section B Q1(a)",
+    "description": "A table of the market schedules for Quencher: Price (€) 2.00, 2.25, 2.50, 2.75 and 3.00; Quantity Demanded (’000 units) 40, 30, 20, 10 and 5; Quantity Supplied (’000 units) 5, 10, 20, 30 and 40.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2010/LC034ALP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        120,
+        174,
+        528,
+        287
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
   }
 ]

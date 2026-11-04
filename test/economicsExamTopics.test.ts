@@ -250,12 +250,13 @@ describe('Economics exam-topic registry', () => {
       // intervention (the government's aims, the budget and the retirement
       // age are fiscal policy); and Section A Q5 and Section B Q4 under
       // globalisation (barriers to trade and tourism are international
-      // trade).
-      matchedAssociations: 677,
-      referenceAnomalyAssociations: 226,
+      // trade). The 2010 Higher review added one: Section B Q4(c) under
+      // national income (the national debt is fiscal policy).
+      matchedAssociations: 676,
+      referenceAnomalyAssociations: 227,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 603,
+      matchedQuestionTopicLinks: 602,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

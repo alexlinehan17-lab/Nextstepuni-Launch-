@@ -2,7 +2,7 @@
   "subjectId": "economics",
   "authority": "SEC question paper; canonical curriculum node IDs",
   "reviewedAt": "2026-11-04",
-  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2011-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 29 physical variants pending.",
+  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2010 Higher, 2011-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 28 physical variants pending.",
   "questions": [
     {
       "level": "higher",
@@ -10097,6 +10097,277 @@
       ],
       "reason": "The CSO is National Income (3-0), as 2016 OL files it; the census and its uses are Economic Growth (3-5); the retirement age is Fiscal Policy & the Budget (3-1) and its effects The Labour Market (2-1), as 2015 HL files them; economic development and aid to LDCs are Growth & Development (4-0). Eight tasks totalling 75. a(i) the three words of CSO at 3; a(ii) 4; a(iii) one use for each of the three groups at 4. b(i) 8 from three; b(ii) one effect for each of the two at 6. c(i) 6, 4 + 2 on a ladder; c(ii) 2 at 6 from five; c(iii) 2 at 6 from six.",
       "paperSha256": "29e146253937a6f1dc9e074e0ee4d7614f5c071e485a6e0785b601f189749cee"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "1",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-1-0"
+      ],
+      "reason": "Falling prices of land for housing are The Market Economy (1-0), as 2014 HL files residential property prices. Three reasons from seven: 6 + 5 + 5.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "2",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-3-0"
+      ],
+      "reason": "Government measures to raise consumer spending (taxes, incentives, capital spending) are Fiscal Policy & the Budget (3-1); consumer spending is also National Income (3-0), as 2015 OL files it. Two measures at 8 (4 + 4) from six.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "3",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-1-4"
+      ],
+      "reason": "Price elasticity of demand is Elasticity (1-4). The working 12 (its six starred figures at 2, hidden working crop) + the explanation 4, which the scheme does not divide.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "4",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "reason": "Non-price competition is Market Structures (2-0), as 2024 OL files price and non-price competition. The definition 12 + two examples at 2 from seven.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "5",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-0-1"
+      ],
+      "reason": "Entrepreneurship is Scarcity & Choice (0-1), as 2012 HL files it. Three reasons from nine: 6 + 5 + 5.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "6",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0"
+      ],
+      "reason": "The multiplier is National Income (3-0). The working 5 (1 for each of its five items, hidden working crop) + the meaning of the figure 12.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "7",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-3-2"
+      ],
+      "reason": "The Live Register is Employment & Unemployment (3-2), as 2012 HL and 2012 OL file it. Two limitations from four: 9 + 8.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "8",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-2-1"
+      ],
+      "reason": "Rent of ability is economic rent, a factor income, The Labour Market (2-1), as 2014 HL files economic rent. The meaning 12 + an example 5.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "9",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-1-3",
+        "economics-3-1"
+      ],
+      "reason": "Water charges are Government Intervention (1-3), and as a charge on households also Fiscal Policy & the Budget (3-1), as 2015 OL files them. Three arguments from six: 6 + 6 + 5.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B1",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-1-0",
+        "economics-1-4",
+        "economics-1-3"
+      ],
+      "reason": "Market demand, supply and equilibrium and a shift in supply are The Market Economy (1-0); price elasticity of demand is Elasticity (1-4); actions to cut soft-drink consumption are Government Intervention (1-3), as 2017 OL files obesity measures. Six tasks totalling 75. a(i) [15]: the demand curve 5 points at 1 + its label 1, the supply curve the same, the equilibrium point, price and quantity 3 at 1 (hidden solution diagram, the paper’s schedule beside the ask); a(ii) [7]; a(iii) [8]: the new supply curve 5 points at 1 + the new equilibrium point, price and quantity 3 at 1 (the same diagram). b(i) 4 at 5 from nine; b(ii) 10: the minus sign 5, the value 2 and why 3, either reading (price elastic or luxury). c 3 at 5 from four.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B2",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "reason": "Monopoly, price discrimination and the comparison with perfect competition are Market Structures (2-0), as 2015 HL files monopoly and price discrimination. Five tasks totalling 75. a(i) 3 at 5 from four; a(ii) 2 at 5 from five. b(i) the definition 6 + an example 2 from two; b(ii) 3 at 4 from six. c the diagram 16 (ten items circled 1 + three circled 2, hidden solution diagram) + price 3 + output 3 + profits 4 and efficiency 4, each part the scheme marks (1) at 1.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B3",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-2-1",
+        "economics-3-0",
+        "economics-3-1"
+      ],
+      "reason": "Derived demand, MRP, wage drift and cyclical unemployment are The Labour Market (2-1), as 2019 HL files them; the efficiency of labour and the minimum wage are The Labour Market (2-1); the black economy is National Income (3-0), as 2012 HL files it, and measures against it Fiscal Policy & the Budget (3-1). Five tasks totalling 75. a the four terms at 5. b(i) 4 at 5 from nine; b(ii) one advantage 5 from five + one disadvantage 5 from five. c(i) 3 at 5 from six; c(ii) 2 at 5 from five.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B4",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1"
+      ],
+      "reason": "Taxation revenues, the tax base, the characteristics of a good tax, the carbon tax and the national debt are Fiscal Policy & the Budget (3-1), as 2019 HL files the carbon tax. Five tasks totalling 75. a(i) the two terms at 5; a(ii) 5 at 4 from nine (the paper does not say how many). b(i) 5: stating regressive 2 + explaining it 3; b(ii) 2 advantages at 5 from four + 2 disadvantages at 5 from four. c 4 at 5 from eight.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B5",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0"
+      ],
+      "reason": "GNP at factor cost, national income, the effect of VAT and subsidies on GNP and national income statistics are National Income (3-0). Six tasks totalling 75. a(i) 10: 2 + 2 + 2 + 4 under the four figures of the working; a(ii) 10: 3 + 3 + 4 (hidden working crops). b(i) and b(ii) each 10, the effect 4 + its explanation 6, by either of the scheme’s two tables, each credited with its own (the second, The Long run, the opposite effect): one route each, counted once. c(i) 3 at 5 from five (the paper does not say how many); c(ii) 4 at 5 from eleven.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B6",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-3-4",
+        "economics-3-1",
+        "economics-0-0",
+        "economics-1-3",
+        "economics-3-3"
+      ],
+      "reason": "Commercial banks and nationalising them are Financial Sector (3-4), as 2014 OL files commercial banks and 2011 OL nationalised banks, and nationalisation also Government Intervention (1-3); the government’s economic aims and their conflicts are Fiscal Policy & the Budget (3-1), as 2014 HL files them; Friedman’s monetarism is Economics as a Way of Thinking (0-0), as earlier reviews file an economist’s contribution, and also Monetary Policy & Inflation (3-3). Five tasks totalling 75. a(i) the two terms at 5; a(ii) 2 arguments for at 5 from six + 2 against at 5 from six. b(i) 3 at 5 from nine; b(ii) 2 conflicts at 5 from six. c 4 at 5 from five.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B7",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-4-0",
+        "economics-4-1"
+      ],
+      "reason": "International trade and competitiveness are International Trade & Competitiveness (4-2); developed and developing countries and promoting development are Growth & Development (4-0); the IMF and the World Bank are Globalisation (4-1), as 2017 OL files the IMF, and the World Bank’s lending to LDCs also Growth & Development (4-0). Five tasks totalling 75. a(i) 3 at 5 from eight (the paper does not say how many); a(ii) 3 at 5 from eight. b(i) 3 at 5 from thirteen (the paper does not say how many); b(ii) 3 at 5 from six. c the IMF OR the World Bank is a printed choice and the scheme credits each with its own list, 3 at 5 (from five, from three): one route each, counted once.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B8",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-3-5",
+        "economics-3-2",
+        "economics-3-4",
+        "economics-3-3",
+        "economics-3-1"
+      ],
+      "reason": "Economic growth is Economic Growth (3-5), price levels Monetary Policy & Inflation (3-3), the current budgetary position Fiscal Policy & the Budget (3-1) and employment Employment & Unemployment (3-2), as 2016 HL files the economy’s performance; an ageing population is Economic Growth (3-5), as 2015 HL files it; emigration is Employment & Unemployment (3-2); savings are Financial Sector (3-4), as 2012 HL files them. Five cards for eight asks totalling 75. a(i)-(iv) one card, as the scheme prices the four areas together, 7 + 6 + 6 + 6, without saying which earns the 7: one ladder, one point for each area, the first correct area 7. b(i) 2 at 5 from six; b(ii) 3 at 5 from eight. c(i) 2 at 5 from six; c(ii) 3 at 5 from seven.",
+      "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
     }
   ]
 }
