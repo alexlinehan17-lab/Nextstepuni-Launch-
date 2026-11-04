@@ -9,6 +9,9 @@
 import { describe, expect, it } from 'vitest';
 import { readdirSync, readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
+import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
+import { CARDS as FOUNDATION } from '../components/MarkBank/cards/irish/foundation';
 
 type Raw = { id: string; level: string; reviewedAt?: string; criteria: { guidance: string[] }[] };
 const DIR = 'components/MarkBank/cards/irish';
@@ -54,5 +57,20 @@ print(json.dumps([strip_text(c) for c in cases], ensure_ascii=False))`));
     expect(reviewed.length).toBeGreaterThanOrEqual(700);
     const left = reviewed.filter(c => c.criteria.some(r => r.guidance.some(g => PINNED.some(h => g.includes(h)))));
     expect(left.map(c => c.id)).toEqual([]);
+  });
+
+  it('never shows a heading to a student: no served question, lead-in, guidance or claimable row carries one', () => {
+    // The rows, prompts, samples and directions are cut from the guidance (cards/irish/answers.ts, tariffs.ts),
+    // so a heading left in any key, reviewed or not, would surface as a button. None does, at any level.
+    const served = [...HIGHER, ...ORDINARY, ...FOUNDATION];
+    expect(served.length).toBeGreaterThan(1800);
+    const shown = served.filter(card => {
+      const texts = [card.questionText, card.stem ?? ''];
+      if (card.rubric.system === 'irish') {
+        for (const criterion of card.rubric.criteria) texts.push(...criterion.guidance, JSON.stringify(criterion.allocation ?? {}));
+      }
+      return texts.some(text => PINNED.some(heading => text.includes(heading)));
+    });
+    expect(shown.map(card => card.id)).toEqual([]);
   });
 });

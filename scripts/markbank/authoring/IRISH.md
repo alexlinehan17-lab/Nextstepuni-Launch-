@@ -178,3 +178,7 @@ Everything needed to rebuild or audit the committed Irish cards lives in the rep
   from reviewed keys by exact pinned string only; `irish_cards.py` and the additions builders pin how many each
   paper loses, and `test/irishSchemeFurniture.test.ts` pins the list. `irish_tools/heading_strip_audit.py BASE`
   proves a strip changed nothing else (every other card byte-identical, Atlas and maps unchanged).
+  Verified 2026-11-04 after the merge with main (decision 1): the full test suite, eslint, typecheck and build
+  pass, `regenerate.sh --check` reproduces every Irish output (its only drift is main's stale Art 2024 topic tags,
+  fixed centrally), and the gate also checks every served card at all three levels, the claimable rows cut from
+  its keys included, so no heading can reach a student as a button.
