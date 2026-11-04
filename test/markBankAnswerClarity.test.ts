@@ -553,7 +553,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Cusack was its founder/ One of its first Secretaries', 6, [0, 3, 6], 'Supporter ONLY = 3M'],
       ['Do the documents agree about Irish attitudes to divorce? Yes or no, with supporting points from each document.', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Do the documents agree about Irish attitudes to marriage? Yes or no, with supporting points from each document.', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
-      ['Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one Document B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state Catholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive” The intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], undefined],
+      ['Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one\nDocument B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state Catholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive” The intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], undefined],
       ['Document A does not support the claim: Faulkner went by helicopter because he couldn’t travel by road to Stormont He could see evidence of paramilitary activity on the ground from his helicopter There were even barricades at Dundonald House in Stormont itself That barricade reappeared only an hour after it had been removed', 5, [0, 1, 2, 3, 4, 5], undefined],
       ['Document A is a primary source because it is from a memoir/autobiography where the writer is remembering herself as a little girl witnessing the events from eighty years earlier.', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], undefined],
       ['Document B They enjoy a great reputation among the people Their verses are taken up with general applause They glorify wrongdoers and so apparently earn respect', 5, [0, 1, 2, 3, 4, 5], undefined],
@@ -631,13 +631,19 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     ]);
     expect(rows.filter(({ row }) => row.route).map(({ card }) => card.id)).toEqual(Array(4).fill('hist-2013-ol-em-s2t6a-q4'));
     // A verdict printed unstopped over its first reason ("Document A or B or both" / "Document A states ...")
-    // keeps its own line in the row, so the two never read as one sentence.
+    // keeps its own line in the row, so the two never read as one sentence; so does one document's point run
+    // unstopped into the next ("... in document A Document B states ...", hist_all.document_lines).
     expect(rows.filter(({ row }) => row.verbatim.includes('\n')).map(({ card }) => card.id).sort()).toEqual([
+      'hist-2010-hl-lm-s1-q2b',
       'hist-2011-hl-em-s1-q2a',
       'hist-2011-hl-em-s1-q2b',
       'hist-2011-hl-em-s1-q3b',
+      'hist-2011-hl-lm-s1-q2a',
+      'hist-2011-hl-lm-s1-q3a',
       'hist-2011-ol-em-s1-q3b',
       'hist-2012-hl-em-s1-q2b',
+      'hist-2012-hl-em-s1-q3a',
+      'hist-2012-hl-lm-s1-q2a',
       'hist-2012-hl-lm-s1-q2a',
       'hist-2012-ol-em-s1-q2a',
       'hist-2012-ol-em-s1-q2b',
@@ -647,7 +653,12 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       'hist-2013-ol-em-s1-q2a',
       'hist-2013-ol-em-s1-q2b',
       'hist-2014-ol-em-s1-q2b',
+      'hist-2015-hl-em-s1-q2b',
+      'hist-2015-ol-em-s1-q2b',
       'hist-2016-hl-lm-s1-q2a',
+      'hist-2016-hl-lm-s1-q3b',
+      'hist-2016-ol-em-s1-q2a',
+      'hist-2023-ol-deferred-lm-s1-q2b',
     ]);
     // Where the closing prices the verdict, it is a row at its price: "Doc A and a valid reason 5M + 5M Max = 10M",
     // "2M + 4M + 4M Max = 10M" (2025 OL).

@@ -455,6 +455,34 @@ NO_PRINTED_ANSWER = 'The scheme prints no answer here: any correct one earns the
 TARIFF_WORDING = re.compile(r'^(?:ONE|TWO|THREE|[Oo]ne valid|[Tt]wo valid|[Aa]ny valid|Any (?:ONE|TWO|THREE))\b(?![^.]*\.\s*\S)')
 
 
+# A row that runs one document's point straight into the next, unstopped
+# ("... no mention of religious groups/leaders in document A Document B
+# states ...", 2023 Ordinary deferred Q2(b)), gives each document's point its
+# own line, as a stance does (SessionScreen keeps History's line breaks), so
+# the two never read as one sentence. Only the whitespace changes. A document
+# named mid-sentence ("in Document B", "than Document A", "Document A and
+# Document B") is not a new point and stays on its line.
+DOCUMENT_RUN_ON = re.compile(r'(\S+) (?=(?:Document|Doc\.?) [A-E]\b)')
+RUN_ON_CONNECTIVES = frozenset(
+    'in of and or from that with whereas while both as by to than the then but '
+    'between also unlike like for on at nor either neither see about into within '
+    'where which what how when whether is are was were be does do did says said '
+    'say shows show states state if a an this its his her their compared contrast '
+    'contrasting same similar against regarding re versus vs - – — / &'.split())
+
+
+def document_lines(text):
+    """The row text with each run-on document point on its own line."""
+    def brk(m):
+        prev = m.group(1)
+        if prev in ('A', 'B', 'C', 'D', 'E'):
+            return f'{prev}\n'
+        if prev[-1] in '.:;?!,' or prev.lower().strip('“‘(') in RUN_ON_CONNECTIVES:
+            return m.group(0)
+        return f'{prev}\n'
+    return DOCUMENT_RUN_ON.sub(brk, text)
+
+
 def unit_source_pages(P, unit):
     """The pages a Part A unit's questions are read from: its own page, and the
     page its stem sends the student to ("The picture marked Y on page 15
@@ -1015,6 +1043,10 @@ def build():
                         if row['kind'] != 'anyN' and TARIFF_WORDING.match(row['verbatim']):
                             row['contextNote'] = ' — '.join(
                                 x for x in (row.get('contextNote'), NO_PRINTED_ANSWER) if x)
+                        # A run-on document point keeps its own line
+                        # (document_lines).
+                        if row['kind'] != 'anyN':
+                            row['verbatim'] = document_lines(row['verbatim'])
                     cards.append(card)
     return (cards, exclusions, refused, examples, title_pairs, tariff_checks,
             extra_topic_checks, title_variants)

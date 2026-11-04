@@ -11175,7 +11175,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which document, A or B, gives the more vivid account of the actions of the Spanish soldiers? Refer to both documents in your answer.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Document A or B gives the more vivid account\nDocument A states that where Spanish soldiers mutinied, they threatened lords, captured many places, robbed them and burned them down Document B gives the Duke of Alva as an example of Spanish misrule", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Document A or B gives the more vivid account\nDocument A states that where Spanish soldiers mutinied, they threatened lords, captured many places, robbed them and burned them down\nDocument B gives the Duke of Alva as an example of Spanish misrule", marks: null },
     { id: "r-2", kind: "point", verbatim: "He was notorious for harshness and cruelty", marks: null },
     { id: "r-3", kind: "point", verbatim: "This document also gives us a short description of the sacking of Antwerp and its consequences.", marks: null },
     ],
@@ -22189,7 +22189,7 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "An argument can be made that either document better shows O’Neill’s influence", marks: null },
     { id: "r-2", kind: "point", verbatim: "Document A shows that he has many allies across the various Irish families", marks: null },
     { id: "r-3", kind: "point", verbatim: "He could raise a contingent of bonnaughts", marks: null },
-    { id: "r-4", kind: "point", verbatim: "He was in charge of the military plan (“he has commanded ... he has appointed McMahon, etc”) Document B shows O’Neill’s power and influence in a different way", marks: null },
+    { id: "r-4", kind: "point", verbatim: "He was in charge of the military plan (“he has commanded ... he has appointed McMahon, etc”)\nDocument B shows O’Neill’s power and influence in a different way", marks: null },
     { id: "r-5", kind: "point", verbatim: "He has convinced Mountjoy and the Queen, that he now repents of his earlier rebelliousness", marks: null },
     { id: "r-6", kind: "point", verbatim: "He convinced Mountjoy that he had abandoned adherence to foreign powers and offered to serve against other rebels in Ireland.", marks: null },
     ],
@@ -25863,7 +25863,7 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "An argument can be made that either document gives more information about Geneva", marks: null },
     { id: "r-2", kind: "point", verbatim: "Document A gives a more general coverage and document B deals mostly with the city hospital", marks: null },
     { id: "r-3", kind: "point", verbatim: "Document A explains the role of elders and ministers in the supervision of the city and the correction of misbehaviour", marks: null },
-    { id: "r-4", kind: "point", verbatim: "It also describes how elders were to be appointed by the Small Council and the Council of Two Hundred Document B is much shorter", marks: null },
+    { id: "r-4", kind: "point", verbatim: "It also describes how elders were to be appointed by the Small Council and the Council of Two Hundred\nDocument B is much shorter", marks: null },
     { id: "r-5", kind: "point", verbatim: "It describes the role of the deacons in the running of the hospital, but it also gives interesting detail about the sort of persons who are not actually sick, but are to be cared for separately in the hospital.", marks: null },
     ],
     sourceMaterial: {
@@ -65389,7 +65389,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Document B gives evidence of support from both main religious groups in Derry", marks: null },
-    { id: "r-2", kind: "point", verbatim: "There is no mention of religious groups/leaders in document A Document B states that “Catholics and Protestants in Derry will unite in protest”", marks: null },
+    { id: "r-2", kind: "point", verbatim: "There is no mention of religious groups/leaders in document A\nDocument B states that “Catholics and Protestants in Derry will unite in protest”", marks: null },
     { id: "r-3", kind: "point", verbatim: "It also says that the University of Derry Committee has arranged a meeting with the “religious heads of the city, Catholic and Protestant”", marks: null, contextNote: "Identification of doc B and quote from doc B required. 5M +" },
     ],
     sourceMaterial: {

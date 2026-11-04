@@ -5194,7 +5194,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "He seems to have been in denial as to the reality of the situation which suggests weakness Faulkner says he ended the argument by taking Rees to the window and pointing out the nearby barricade", marks: null },
     { id: "r-2", kind: "point", verbatim: "Faulkner’s actions are swift and decisive, suggesting leadership qualities When the barricade was pointed out to Rees, he instructed his officials “in agitation” to have it cleared", marks: null },
-    { id: "r-3", kind: "point", verbatim: "This phrase suggests a lack of the confidence and self-control which one would expect of a leader Document B Rees reports that his life was under threat, he speaks of his “small” staff, “inadequate quarters”, his “isolation” and “difficult” working conditions", marks: null },
+    { id: "r-3", kind: "point", verbatim: "This phrase suggests a lack of the confidence and self-control which one would expect of a leader\nDocument B Rees reports that his life was under threat, he speaks of his “small” staff, “inadequate quarters”, his “isolation” and “difficult” working conditions", marks: null },
     { id: "r-4", kind: "point", verbatim: "All of this suggests that he is under siege and not exactly rising to the challenges When he says “I do not think Westminster realised how difficult that time was for us”, he again sounds weary and self-pitying, and not capable of dynamic leadership When he mentions the reports of “the deteriorating situation” and that “effective administration was in the hands of the strikers”, he seems to be accepting that he has already lost the battle and he is therefore unlikely leadership material", marks: null },
     ],
     sourceMaterial: {
@@ -6638,7 +6638,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The answer may say that Document A contradicts the description of the parade in Document B as “a solemn procession” or it may say that it supports the description", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Document A contradicts the description of the parade as “a solemn procession” as follows: Document A speaks of a “great folk festival” imbued with “good humour” which is hardly a “solemn procession” Document A says that after the service “the air was filled with music”, with bands “pumping out the traditional tunes”, which sounds more rousing or stirring rather than “solemn” Document A supports the description of the parade as “a solemn procession” as follows: “Banners fluttering”/ “wore traditional uniform” shows that the marchers were serious about rank = solemn/ “swords drawn” = serious = solemn/ “restraint and steadfastness” = serious solemn virtues preached.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Document A contradicts the description of the parade as “a solemn procession” as follows: Document A speaks of a “great folk festival” imbued with “good humour” which is hardly a “solemn procession”\nDocument A says that after the service “the air was filled with music”, with bands “pumping out the traditional tunes”, which sounds more rousing or stirring rather than “solemn”\nDocument A supports the description of the parade as “a solemn procession” as follows: “Banners fluttering”/ “wore traditional uniform” shows that the marchers were serious about rank = solemn/ “swords drawn” = serious = solemn/ “restraint and steadfastness” = serious solemn virtues preached.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6688,7 +6688,7 @@ export const CARDS: SecCard[] = [
     questionText: "How does document B show the tensions that had arisen in Northern Ireland between the dates of the two marches, 1967 and 1969? Refer to both documents in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one Document B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state Catholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive” The intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry", marks: 10, permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "r-1", kind: "criterion", verbatim: "Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one\nDocument B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state Catholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive” The intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry", marks: 10, permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8117,7 +8117,7 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Both documents reflect divisions on the future of India\nDocument A allows for the possible partition of India", marks: null },
     { id: "r-2", kind: "point", verbatim: "It acknowledges the real anxiety among Muslims fearful of Hindu-majority rule", marks: null },
     { id: "r-3", kind: "point", verbatim: "Action rather than words will be needed to allay Muslim fears", marks: null },
-    { id: "r-4", kind: "point", verbatim: "It calls for measures by which Muslims retain control their own vital interests Document B shows Jinnah and Gandhi, despite the immediate threats to the country, engaged in some sort of power struggle watched over ineffectively by Cripps.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "It calls for measures by which Muslims retain control their own vital interests\nDocument B shows Jinnah and Gandhi, despite the immediate threats to the country, engaged in some sort of power struggle watched over ineffectively by Cripps.", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8930,7 +8930,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which document, A or B, offers the more valuable insight into trade and prosperity in the Netherlands? Refer to both documents in your answer.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Document A makes the point that trade and prosperity were important to the country and that continued prosperity depended on the old privileges, customs and freedoms Document B goes further", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Document A makes the point that trade and prosperity were important to the country and that continued prosperity depended on the old privileges, customs and freedoms\nDocument B goes further", marks: null },
     { id: "r-2", kind: "point", verbatim: "The Duke of Alva forcibly introduced a new tax which threatened to ruin the economy of a once-prosperous country", marks: null },
     { id: "r-3", kind: "point", verbatim: "The welfare of the country depended on trade and manufacture", marks: null },
     { id: "r-4", kind: "point", verbatim: "The sacking of Antwerp caused damage to the successful foreign-owned businesses in the city.", marks: null },
@@ -13394,7 +13394,7 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "An argument can be made that either document better shows O’Neill’s influence", marks: null },
     { id: "r-2", kind: "point", verbatim: "Document A shows that he has many allies across the various Irish families, most notably O’Donnell", marks: null },
     { id: "r-3", kind: "point", verbatim: "He was influential enough to raise a contingent of bonnaughts", marks: null },
-    { id: "r-4", kind: "point", verbatim: "In terms of the planned invasion of the Pale he was the chief tactician (“he has commanded ... he has appointed McMahon, etc”) Document B shows O’Neill’s power and influence in a different way", marks: null },
+    { id: "r-4", kind: "point", verbatim: "In terms of the planned invasion of the Pale he was the chief tactician (“he has commanded ... he has appointed McMahon, etc”)\nDocument B shows O’Neill’s power and influence in a different way", marks: null },
     { id: "r-5", kind: "point", verbatim: "For his own political reasons he has convinced Mountjoy, and through him the Queen, that he now repents of his earlier rebelliousness", marks: null },
     { id: "r-6", kind: "point", verbatim: "He convinced Mountjoy that he had abandoned adherence to foreign powers and offered to serve against other rebels in Ireland", marks: null },
     { id: "r-7", kind: "point", verbatim: "The fact that the King and/or Mountjoy come to terms with him rather than punishing him shows O’Neill’s power and influence.", marks: null },
@@ -14199,7 +14199,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Document B gives a clearer idea of what happened at a rally", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Document A describes Hitler’s arrival and the impact he made on the crowd Document B does much more", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Document A describes Hitler’s arrival and the impact he made on the crowd\nDocument B does much more", marks: null },
     { id: "r-3", kind: "point", verbatim: "It describes how lighting techniques and music were used to add to the “mystic quality” of the “vast displays” at Nuremberg", marks: null },
     { id: "r-4", kind: "point", verbatim: "It describes Hitler’s arrival and notes how the crowd “grew restless” and seemed to fall under an emotional spell due to Hitler’s performance.", marks: null },
     ],
