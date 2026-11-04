@@ -156,9 +156,31 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Document A does not support the claim: Faulkner went by helicopter because he couldn’t travel by road to Stormont He could see evidence of paramilitary activity on the ground from his helicopter There were even barricades at Dundonald House in Stormont itself That barricade reappeared only an hour after it had been removed Document B does not support the claim: Rees writes that British authority in Northern Ireland was in question Rees himself had been warned of an assassination attempt His poor working conditions were a direct result of security problems He admits that effective administration was in the hands of the strikers, not of the government",
-    "marks": 10
+    "kind": "criterion",
+    "verbatim": "Document A does not support the claim: Faulkner went by helicopter because he couldn’t travel by road to Stormont He could see evidence of paramilitary activity on the ground from his helicopter There were even barricades at Dundonald House in Stormont itself That barricade reappeared only an hour after it had been removed",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Document B does not support the claim: Rees writes that British authority in Northern Ireland was in question Rees himself had been warned of an assassination attempt His poor working conditions were a direct result of security problems He admits that effective administration was in the hands of the strikers, not of the government",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '10M' for this ask.",
@@ -18324,9 +18346,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "BBC (1) were very much in favour of the strike (2) did not monitor NI broadcasts (3) did not know what was going on (4) were effectively running a rebel radio station",
-    "marks": 10
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ]
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '10M' for this ask.",
@@ -27484,9 +27511,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one Document B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state Catholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive” The intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry",
-    "marks": 10
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '10M' for this ask.",
@@ -36355,9 +36395,31 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Yes, the documents agree that the bardic poet was an influential figure Document A As a master of history and poetry he would be influential Influential because of his wealth and affluence He had gained victory over the Devil and the world Document B They enjoy a great reputation among the people Their verses are taken up with general applause They glorify wrongdoers and so apparently earn respect",
-    "marks": 10
+    "kind": "criterion",
+    "verbatim": "Yes, the documents agree that the bardic poet was an influential figure Document A As a master of history and poetry he would be influential Influential because of his wealth and affluence He had gained victory over the Devil and the world",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Document B They enjoy a great reputation among the people Their verses are taken up with general applause They glorify wrongdoers and so apparently earn respect",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '10M' for this ask.",
@@ -36486,9 +36548,31 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Spenser’s preoccupations as a poet and as a colonist As a poet: Spenser appreciates wit and invention, but more so the poet’s skill in the ornaments of poetry He believes that the purpose of poetry is to adorn and beautify virtue as opposed to the praise of vice As a colonist: Spenser considers the bardic poets a threat to the security of the colony because they encourage young men to admire the disobedient and rebellious He is very judgemental about the bards and their poems which gives the impression that, as a colonist, he is culturally superior",
-    "marks": 10
+    "kind": "criterion",
+    "verbatim": "Spenser’s preoccupations as a poet and as a colonist As a poet: Spenser appreciates wit and invention, but more so the poet’s skill in the ornaments of poetry He believes that the purpose of poetry is to adorn and beautify virtue as opposed to the praise of vice",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "As a colonist: Spenser considers the bardic poets a threat to the security of the colony because they encourage young men to admire the disobedient and rebellious He is very judgemental about the bards and their poems which gives the impression that, as a colonist, he is culturally superior",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
    }
   ],
   "notes": "Early Modern field of study. The paper prices question 3 at (20) and the scheme prices its other part at 10M, so this part is worth 10; the scheme prints its answer and no marks for it.",
@@ -45514,9 +45598,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Advantage is that with a visual source we can see for ourselves – we can look upon the scene as it actually was on the day. With the written source we have to rely on the writer that his description is fair and accurate.",
-    "marks": 10
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ]
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '10M' for this ask.",
@@ -50184,9 +50273,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Evidence that Spenser was curious about bardic poetry He had many of the poems translated so that he could understand them",
-    "marks": 10
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '10M' for this ask.",
@@ -81732,9 +81834,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "While it is not clear from either document who was ultimately responsible for the crisis, it could be argued that the crisis was exacerbated by the Congolese cutting the rope (Document A) and by the behaviour of the Belgian paratroopers (Document B).",
-    "marks": 10
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '10M' for this ask.",
@@ -127158,9 +127273,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "On the one hand Collins was “exuberant” as seen in the “horseplay” of throwing food and cushions. On the other hand he was religious as seen in his attendance at daily Mass.",
-    "marks": 10
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ]
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '10M' for this ask.",
@@ -154715,9 +154835,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Document A is a primary source because it is from a memoir/autobiography where the writer is remembering herself as a little girl witnessing the events from eighty years earlier.",
-    "marks": 10
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '10M' for this ask.",
@@ -264392,9 +264525,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "In document A Whitaker tells us that he and his colleagues did not receive extra payment for their work. He says that here was “no hope of any reward”.",
-    "marks": 10
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     10
+    ]
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '10M' for this ask.",

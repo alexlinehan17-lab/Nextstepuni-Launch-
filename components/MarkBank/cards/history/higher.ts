@@ -4857,7 +4857,8 @@ export const CARDS: SecCard[] = [
     questionText: "Do the documents support the claim, made by Rees in document A, that the authorities were in control of security? Explain your answer, referring to both documents.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Document A does not support the claim: Faulkner went by helicopter because he couldn’t travel by road to Stormont He could see evidence of paramilitary activity on the ground from his helicopter There were even barricades at Dundonald House in Stormont itself That barricade reappeared only an hour after it had been removed Document B does not support the claim: Rees writes that British authority in Northern Ireland was in question Rees himself had been warned of an assassination attempt His poor working conditions were a direct result of security problems He admits that effective administration was in the hands of the strikers, not of the government", marks: 10 },
+    { id: "r-1", kind: "criterion", verbatim: "Document A does not support the claim: Faulkner went by helicopter because he couldn’t travel by road to Stormont He could see evidence of paramilitary activity on the ground from his helicopter There were even barricades at Dundonald House in Stormont itself That barricade reappeared only an hour after it had been removed", marks: 5, permittedMarks: [0,1,2,3,4,5] },
+    { id: "r-2", kind: "criterion", verbatim: "Document B does not support the claim: Rees writes that British authority in Northern Ireland was in question Rees himself had been warned of an assassination attempt His poor working conditions were a direct result of security problems He admits that effective administration was in the hands of the strikers, not of the government", marks: 5, permittedMarks: [0,1,2,3,4,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6377,7 +6378,7 @@ export const CARDS: SecCard[] = [
     questionText: "How does document B show the tensions that had arisen in Northern Ireland between the dates of the two marches, 1967 and 1969? Refer to both documents in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one Document B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state Catholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive” The intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry", marks: 10 },
+    { id: "r-1", kind: "criterion", verbatim: "Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one Document B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state Catholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive” The intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry", marks: 10, permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7067,7 +7068,8 @@ export const CARDS: SecCard[] = [
     questionText: "Do the documents agree that the bardic poet was an influential figure in Gaelic Ireland? Refer to both documents in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes, the documents agree that the bardic poet was an influential figure Document A As a master of history and poetry he would be influential Influential because of his wealth and affluence He had gained victory over the Devil and the world Document B They enjoy a great reputation among the people Their verses are taken up with general applause They glorify wrongdoers and so apparently earn respect", marks: 10 },
+    { id: "r-1", kind: "criterion", verbatim: "Yes, the documents agree that the bardic poet was an influential figure Document A As a master of history and poetry he would be influential Influential because of his wealth and affluence He had gained victory over the Devil and the world", marks: 5, permittedMarks: [0,1,2,3,4,5] },
+    { id: "r-2", kind: "criterion", verbatim: "Document B They enjoy a great reputation among the people Their verses are taken up with general applause They glorify wrongdoers and so apparently earn respect", marks: 5, permittedMarks: [0,1,2,3,4,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7141,7 +7143,8 @@ export const CARDS: SecCard[] = [
     questionText: "What evidence can be found in Document B about Spenser’s preoccupations as a poet and as a colonist?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Spenser’s preoccupations as a poet and as a colonist As a poet: Spenser appreciates wit and invention, but more so the poet’s skill in the ornaments of poetry He believes that the purpose of poetry is to adorn and beautify virtue as opposed to the praise of vice As a colonist: Spenser considers the bardic poets a threat to the security of the colony because they encourage young men to admire the disobedient and rebellious He is very judgemental about the bards and their poems which gives the impression that, as a colonist, he is culturally superior", marks: 10 },
+    { id: "r-1", kind: "criterion", verbatim: "Spenser’s preoccupations as a poet and as a colonist As a poet: Spenser appreciates wit and invention, but more so the poet’s skill in the ornaments of poetry He believes that the purpose of poetry is to adorn and beautify virtue as opposed to the praise of vice", marks: 5, permittedMarks: [0,1,2,3,4,5] },
+    { id: "r-2", kind: "criterion", verbatim: "As a colonist: Spenser considers the bardic poets a threat to the security of the colony because they encourage young men to admire the disobedient and rebellious He is very judgemental about the bards and their poems which gives the impression that, as a colonist, he is culturally superior", marks: 5, permittedMarks: [0,1,2,3,4,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9361,7 +9364,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is responsible for the crisis in the Congo according to each document? Give reasons for your answer based on both documents.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "While it is not clear from either document who was ultimately responsible for the crisis, it could be argued that the crisis was exacerbated by the Congolese cutting the rope (Document A) and by the behaviour of the Belgian paratroopers (Document B).", marks: 10 },
+    { id: "r-1", kind: "criterion", verbatim: "While it is not clear from either document who was ultimately responsible for the crisis, it could be argued that the crisis was exacerbated by the Congolese cutting the rope (Document A) and by the behaviour of the Belgian paratroopers (Document B).", marks: 10, permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
     ],
     sourceMaterial: {
           "kind": "source-text",

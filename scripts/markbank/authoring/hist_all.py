@@ -463,6 +463,62 @@ def scale_marks(notes):
     return sorted({m for a, b in bands for m in range(a, b + 1)})
 
 
+# The heads a documents answer is printed under, one per element its scale
+# marks: "Document B ..." after the Document A points (2010 Higher Q2(a)), "As a
+# poet:" / "As a colonist:" (2011 Higher Q3(b)).
+ELEMENT_HEADS = (re.compile(r'\s(?=Document B\b)'), re.compile(r'\s(?=As an? [a-z]+:)'))
+PER_ITEM_PRICES = (re.compile(r'(\d+)\s*M\s*\+\s*(\d+)\s*M\b'), re.compile(r'\((\d+)\s*\+\s*(\d+)\)'))
+
+
+def step_at_printed_scale(row, ask):
+    """A ten-mark documents part answered in one row, stepped at the scale its
+    scheme prints, or None where the scheme prints no scale for it.
+
+    Claimed whole, a student with half the answer earned nothing. The steps
+    are the scheme's own:
+    - a scale per element, "Each document to be marked as follows: Excellent
+      = 5 mks ... Weak = 0-1 mk" / "Mark each 0-5 according to quality" (2010-
+      2013 Higher): a row per element, each stepped on that scale, where the
+      answer is printed element by element; otherwise one row stepped at
+      every total the elements' scales can make;
+    - a scale for the whole answer, "Mark on a sliding scale out of 10:
+      Excellent = 9-10 mks ... Weak = 0-2 mks": one row stepped at every mark;
+    - a price per item, "Reference to both documents = 5M + 5M Max = 10M",
+      "(5 + 5)": one row stepped at each price.
+    Nothing is inferred: a part whose scheme prints none of these (a one-word
+    comprehension answer, "Three points to support answer Max = 10M") stays
+    as it is."""
+    total = ask.total
+    text = row['verbatim']
+    marks = scale_marks(ask.notes)
+    notes = ' '.join(ask.notes)
+
+    def stepped(i, verbatim, top, steps):
+        out = {'id': f'r-{i}', 'kind': 'criterion', 'verbatim': verbatim, 'marks': top,
+               'permittedMarks': steps}
+        if row.get('contextNote') and i == 1:
+            out['contextNote'] = row['contextNote']
+        return out
+
+    if marks and marks == list(range(0, marks[-1] + 1)) and marks[-1] < total and total % marks[-1] == 0:
+        k = total // marks[-1]
+        for head in ELEMENT_HEADS:
+            parts = head.split(text)
+            if len(parts) >= k and len(parts) - k <= 1:
+                elements = parts[-k:]
+                if len(parts) > k:
+                    elements[0] = f'{parts[0]} {elements[0]}'
+                return [stepped(i, element, marks[-1], marks) for i, element in enumerate(elements, start=1)]
+        return [stepped(1, text, total, list(range(0, total + 1)))]
+    if marks == list(range(0, total + 1)):
+        return [stepped(1, text, total, marks)]
+    for prices in PER_ITEM_PRICES:
+        m = prices.search(notes)
+        if m and int(m.group(1)) + int(m.group(2)) == total:
+            return [stepped(1, text, total, [0, int(m.group(1)), total])]
+    return None
+
+
 def derive_unpriced_parts(P, S):
     """Price a documents part the scheme answers but prints no marks for.
 
@@ -857,6 +913,11 @@ def build():
                         rows[0] = {'id': 'r-1', 'kind': 'criterion', 'verbatim': rows[0]['verbatim'],
                                    'marks': ask.total, 'permittedMarks': grid_marks,
                                    'contextNote': NO_PRINTED_ANSWER}
+                    elif (single and key[0] == '1' and key[2] and rows[0]['kind'] == 'point'
+                            and (ask.total or 0) >= 10):
+                        stepped = step_at_printed_scale(rows[0], ask)
+                        if stepped:
+                            rows[:] = stepped
                     partials = [(alt, n) for alt, n in getattr(ask, 'partials', [])
                                 if 0 < n < (ask.total or 0)]
                     if single and len(partials) == 1:

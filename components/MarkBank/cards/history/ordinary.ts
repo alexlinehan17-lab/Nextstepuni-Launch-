@@ -1930,7 +1930,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does document B criticise the BBC?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "BBC (1) were very much in favour of the strike (2) did not monitor NI broadcasts (3) did not know what was going on (4) were effectively running a rebel radio station", marks: 10 },
+    { id: "r-1", kind: "criterion", verbatim: "BBC (1) were very much in favour of the strike (2) did not monitor NI broadcasts (3) did not know what was going on (4) were effectively running a rebel radio station", marks: 10, permittedMarks: [0,5,10] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5577,7 +5577,7 @@ export const CARDS: SecCard[] = [
     questionText: "What advantage has a visual source, such as document B, compared with a written source, such as document A?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Advantage is that with a visual source we can see for ourselves – we can look upon the scene as it actually was on the day. With the written source we have to rely on the writer that his description is fair and accurate.", marks: 10 },
+    { id: "r-1", kind: "criterion", verbatim: "Advantage is that with a visual source we can see for ourselves – we can look upon the scene as it actually was on the day. With the written source we have to rely on the writer that his description is fair and accurate.", marks: 10, permittedMarks: [0,5,10] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7400,7 +7400,7 @@ export const CARDS: SecCard[] = [
     questionText: "What evidence in document B shows that Spenser was curious about Irish bardic poets and poetry?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Evidence that Spenser was curious about bardic poetry He had many of the poems translated so that he could understand them", marks: 10 },
+    { id: "r-1", kind: "criterion", verbatim: "Evidence that Spenser was curious about bardic poetry He had many of the poems translated so that he could understand them", marks: 10, permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16528,7 +16528,7 @@ export const CARDS: SecCard[] = [
     questionText: "In document B, how does the writer attempt to show two sides of Collins’ character?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "On the one hand Collins was “exuberant” as seen in the “horseplay” of throwing food and cushions. On the other hand he was religious as seen in his attendance at daily Mass.", marks: 10 },
+    { id: "r-1", kind: "criterion", verbatim: "On the one hand Collins was “exuberant” as seen in the “horseplay” of throwing food and cushions. On the other hand he was religious as seen in his attendance at daily Mass.", marks: 10, permittedMarks: [0,5,10] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -20173,7 +20173,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is document A considered a primary source?",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Document A is a primary source because it is from a memoir/autobiography where the writer is remembering herself as a little girl witnessing the events from eighty years earlier.", marks: 10 },
+    { id: "r-1", kind: "criterion", verbatim: "Document A is a primary source because it is from a memoir/autobiography where the writer is remembering herself as a little girl witnessing the events from eighty years earlier.", marks: 10, permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -34911,7 +34911,7 @@ export const CARDS: SecCard[] = [
     questionText: "According to document A, did Whitaker and his fellow workers receive extra payment for their work? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In document A Whitaker tells us that he and his colleagues did not receive extra payment for their work. He says that here was “no hope of any reward”.", marks: 10 },
+    { id: "r-1", kind: "criterion", verbatim: "In document A Whitaker tells us that he and his colleagues did not receive extra payment for their work. He says that here was “no hope of any reward”.", marks: 10, permittedMarks: [0,5,10] },
     ],
     sourceMaterial: {
           "kind": "source-text",
