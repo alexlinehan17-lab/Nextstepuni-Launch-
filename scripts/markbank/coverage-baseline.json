@@ -785,11 +785,11 @@
   "technology": {
     "cards": 1089,
     "contentHash": "56dbe226ce68e3cb",
-    "coveragePct": 100.0,
+    "coveragePct": 39.8,
     "covered": 1092,
     "excluded": 0,
-    "leaves": 1092,
-    "open": 0,
+    "leaves": 2747,
+    "open": 1655,
     "orphans": 0,
     "papers": {
       "count": 66,

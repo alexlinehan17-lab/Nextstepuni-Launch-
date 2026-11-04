@@ -585,10 +585,24 @@ def _join_gutter_markers(blocks):
     """
     out, used = [], set()
     partner = {}
-    for i, b in enumerate(blocks):
-        text = ' '.join(b[4].split())
-        if not _MARKER_ONLY.match(text):
-            continue
+
+    def _tail_marker_first(b):
+        # A head the PDF stores at the END of its own question's block:
+        # 2014 Ordinary page 4 is one block, "In the box provided, make a well
+        # proportioned 2D sketch of ... arrow A." and then "7." on a line of
+        # its own, so Question 7 was read as more of Question 6. Only a block
+        # of prose with no ruled answer line and no other numbered line, whose
+        # LAST line is the bare number, is turned round.
+        lines = [l.strip() for l in b[4].splitlines() if l.strip()]
+        if len(lines) < 2 or not re.fullmatch(r'\d{1,2}\.', lines[-1]) \
+                or any('_' in l or re.match(r'\d{1,2}\.', l) for l in lines[:-1]) \
+                or not re.search(r'[a-z]{3,}', ' '.join(lines[:-1])):
+            return b
+        return (b[0], b[1], b[2], b[3], '\n'.join([lines[-1]] + lines[:-1]) + '\n')
+
+    blocks = [_tail_marker_first(b) for b in blocks]
+
+    def _pair(i, b, slack):
         for j in list(range(i + 1, min(i + 4, len(blocks)))) + \
                 list(range(i - 1, max(i - 4, -1), -1)):
             o = blocks[j]
@@ -597,14 +611,50 @@ def _join_gutter_markers(blocks):
             # which overlaps every blank answer-line block beneath it, and
             # the first of those was taken as Q3's text while the question
             # itself was filed under Q2.
-            if j in used or o[0] <= b[0] or not o[4].split() \
+            right = o[0] > b[0] or (slack and o[0] > b[0] - 15
+                                    and o[4].lstrip(' \t').startswith('\n'))
+            if j in used or not right or not o[4].split() \
                     or _MARKER_ONLY.match(' '.join(o[4].split())):
                 continue
             # Same line, give or take a leading-height's slack.
             if abs(o[1] - b[1]) <= 14 or (b[1] <= o[3] and o[1] <= b[3]):
                 partner[i] = j
                 used.add(j)
-                break
+                return True
+        return False
+
+    for i, b in enumerate(blocks):
+        text = ' '.join(b[4].split())
+        if not _MARKER_ONLY.match(text):
+            continue
+        if _pair(i, b, False):
+            continue
+        # Failing that, a block whose first line is EMPTY takes its left edge
+        # from that blank line, not from its prose: 2012 Ordinary's Question
+        # 10 opens with a space set at x=65, four points left of its own
+        # "10." at x=69, and 2014 and 2015 Higher's Question 4 with blank
+        # lines at x=34 beside a "4." at x=45; each marker was left standing
+        # alone and its question filed under the one before. Tried only where
+        # nothing qualifies strictly, because 2014 Ordinary's "1." has its
+        # stimulus beside it AND such a block overlapping it below.
+        if _pair(i, b, True):
+            continue
+        # The older papers (2010-2012) set the number on a line of its own at
+        # the top of the question's box and start the question on the line
+        # BELOW it: 2012 Ordinary's "11." ends at y=338 and "Name the gear
+        # arrangement shown at A." begins at y=343. The next block with any
+        # text in it, to the marker's right and starting within a line's gap
+        # of its foot, is the question it heads.
+        for j in range(i + 1, min(i + 4, len(blocks))):
+            o = blocks[j]
+            if not o[4].split():
+                continue
+            if j not in used and o[0] > b[0] \
+                    and not _MARKER_ONLY.match(' '.join(o[4].split())) \
+                    and 0 <= o[1] - b[3] <= 8:
+                partner[i] = j
+                used.add(j)
+            break
     for i, b in enumerate(blocks):
         if i in used:
             j = next((k for k, v in partner.items() if v == i), None)

@@ -643,6 +643,12 @@ def author(bind_figures=True):
 
     for paper in census['papers']:
         year, level = paper['year'], paper['level']
+        if not os.path.exists(os.path.join(
+                ROOT, 'examiner-reports/technology/schemes', f'{year}-{level}.md')):
+            # A sitting the census reads but whose scheme has not been
+            # extracted yet is not carded at all: its asks stay OPEN in the
+            # ledger, which is where an uncarded sitting belongs.
+            continue
         # The full printed wording, not the census REPORT's copy of it: that
         # one is truncated to 160 characters for display, and a card built
         # from it ends a question mid-word. The keys are the same walk either
