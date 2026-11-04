@@ -4035,15 +4035,15 @@
     "contextNote": "10 marks. The completed graph is in the figure."
    },
    {
-    "id": "r-labels",
+    "id": "r-label-dc",
     "kind": "point",
-    "verbatim": "Labels: P, Q, D/C and S/C = 4 marks",
+    "verbatim": "D/C",
     "marks": 1,
     "openList": true,
-    "contextNote": "The D/C label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1)."
+    "contextNote": "The demand curve’s label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1)."
    }
   ],
-  "notes": "",
+  "notes": "Scheme p5, Summary of Mark Allocations: 2(a) (i) 11 (5 @ 2) + 1; p13 graph notes: Labels: P, Q, D/C and S/C = 4 marks.",
   "questionFigureKey": "economics-2019-OL-paper-p06-q2a-question"
  },
  {
@@ -4077,15 +4077,15 @@
     "contextNote": "10 marks. The completed graph is in the figure."
    },
    {
-    "id": "r-labels",
+    "id": "r-label-sc",
     "kind": "point",
-    "verbatim": "Labels: P, Q, D/C and S/C = 4 marks",
+    "verbatim": "S/C",
     "marks": 1,
     "openList": true,
-    "contextNote": "The S/C label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1)."
+    "contextNote": "The supply curve’s label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1)."
    }
   ],
-  "notes": "",
+  "notes": "Scheme p5, Summary of Mark Allocations: 2(a) (ii) 11 (5 @ 2) + 1; p13 graph notes: Labels: P, Q, D/C and S/C = 4 marks.",
   "questionFigureKey": "economics-2019-OL-paper-p06-q2a-question"
  },
  {
@@ -4103,7 +4103,7 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "6 + 2",
+   "notation": "6 + 1 + 1",
    "answer": null,
    "ofParts": null,
    "perPart": null
@@ -4119,15 +4119,23 @@
     "contextNote": "6 marks. The completed graph is in the figure."
    },
    {
-    "id": "r-labels",
+    "id": "r-label-p",
     "kind": "point",
-    "verbatim": "Labels: P, Q, D/C and S/C = 4 marks",
-    "marks": 2,
+    "verbatim": "P",
+    "marks": 1,
     "openList": true,
-    "contextNote": "The P and Q axis labels, 1 mark each (the scheme’s summary prints 6 (3 + 3) + 1 + 1)."
+    "contextNote": "The price axis label, 1 mark (the scheme’s summary prints 6 (3 + 3) + 1 + 1)."
+   },
+   {
+    "id": "r-label-q",
+    "kind": "point",
+    "verbatim": "Q",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The quantity axis label, 1 mark."
    }
   ],
-  "notes": "",
+  "notes": "Scheme p5, Summary of Mark Allocations: 2(a) (iii) 6 (3+3) + 1 + 1; p13 graph notes: Labels: P, Q, D/C and S/C = 4 marks.",
   "questionFigureKey": "economics-2019-OL-paper-p06-q2a-question"
  },
  {

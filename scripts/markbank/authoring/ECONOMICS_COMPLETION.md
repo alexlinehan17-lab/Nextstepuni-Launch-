@@ -1408,10 +1408,16 @@ Decisions on tariffs the scheme prints without attributing them to a response:
   it is one card for the question.
 - Section A Q1 "8 @ 2" over the eight words of three names: a row for each
   name at 2 marks a word (4, 6, 6).
-- Section B Q2(a) "11 (5 @ 2) + 1", "11 (5 @ 2) + 1" and "6 (3 + 3) + 1 + 1" in
-  the summary. The graph notes price the labels together ("Labels: P, Q, D/C
-  and S/C = 4 marks"), so each card carries its points row plus that labels
-  row at its own share (1, 1, 2).
+- Section B Q2(a): the summary (scheme p5) PRINTS the split of the label marks,
+  "(i) 11 (5 @ 2) + 1, (ii) 11 (5 @ 2) + 1, (iii) 6 (3+3) + 1 + 1". The graph
+  notes (p13) price the labels on one line ("Labels: P, Q, D/C and S/C = 4
+  marks"). (i) and (ii) ask for the demand and supply curves to be labelled,
+  so their + 1 is D/C and S/C, and (iii)'s + 1 + 1 is P and Q. Each label is
+  its own 1-mark row, sliced from that line, and the card's note cites both
+  pages. (Corrected 2026-11-04 at the coordinator's review: the first version
+  priced the whole labels line, "= 4 marks" in its text, at 1 or 2.) No row in
+  the Economics bank prints "= N marks" against a different price; the 2019
+  test pins that.
 - Section B Q2(b) "2 @ 10 (4 + 4 + 2)" is one column for each situation. Each
   of (i)-(iii) is a card with a row for each situation, and each row pairs the
   situation with the scheme's cell.

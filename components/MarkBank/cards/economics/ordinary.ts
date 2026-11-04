@@ -552,7 +552,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"10 + 1","answer":null,"ofParts":null,"perPart":null}, totalMarks: 11,
     rows: [
     { id: "r-1", kind: "point", verbatim: "D/C: 5 points at 2 marks each = 10 marks", marks: 10, contextNote: "10 marks. The completed graph is in the figure.", openList: true },
-    { id: "r-labels", kind: "point", verbatim: "Labels: P, Q, D/C and S/C = 4 marks", marks: 1, contextNote: "The D/C label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1).", openList: true },
+    { id: "r-label-dc", kind: "point", verbatim: "D/C", marks: 1, contextNote: "The demand curve’s label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1).", openList: true },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -594,7 +594,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"10 + 1","answer":null,"ofParts":null,"perPart":null}, totalMarks: 11,
     rows: [
     { id: "r-1", kind: "point", verbatim: "S/C: 5 points at 2 marks each = 10 marks", marks: 10, contextNote: "10 marks. The completed graph is in the figure.", openList: true },
-    { id: "r-labels", kind: "point", verbatim: "Labels: P, Q, D/C and S/C = 4 marks", marks: 1, contextNote: "The S/C label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1).", openList: true },
+    { id: "r-label-sc", kind: "point", verbatim: "S/C", marks: 1, contextNote: "The supply curve’s label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1).", openList: true },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -633,10 +633,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2019 OL Section B Q2(a)(iii)",
     stem: "The information below represents the quantity demanded and the quantity supplied at different prices for sandwiches in a school canteen. Using the above data and one diagram (you may use graph paper if you wish):",
     questionText: "Show on your diagram: • The equilibrium price of the sandwiches (use P1) • The equilibrium quantity of the sandwiches (use Q1).",
-    tariffModel: {"kind":"fixed","notation":"6 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"6 + 1 + 1","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "P1 and Q1 : 2 x 3 marks each = 6 marks", marks: 6, contextNote: "6 marks. The completed graph is in the figure.", openList: true },
-    { id: "r-labels", kind: "point", verbatim: "Labels: P, Q, D/C and S/C = 4 marks", marks: 2, contextNote: "The P and Q axis labels, 1 mark each (the scheme’s summary prints 6 (3 + 3) + 1 + 1).", openList: true },
+    { id: "r-label-p", kind: "point", verbatim: "P", marks: 1, contextNote: "The price axis label, 1 mark (the scheme’s summary prints 6 (3 + 3) + 1 + 1).", openList: true },
+    { id: "r-label-q", kind: "point", verbatim: "Q", marks: 1, contextNote: "The quantity axis label, 1 mark.", openList: true },
     ],
     sourceMaterial: {
           "kind": "source-illustration",

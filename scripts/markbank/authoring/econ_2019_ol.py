@@ -11,6 +11,7 @@ answer, so a slice always starts after the reprinted wording. The only prose
 written here is guidance: tariffs, route labels and what a figure shows.
 """
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -198,22 +199,39 @@ add('sb-q1-c', '2-0', 'more-firms-in-waste-collection', ref('B', 1, '(c)'),
 # Q2 ─ demand and supply for sandwiches; electric vehicles
 q2a = ' '.join([O.q(6, 'The information below represents the quantity demanded', ' Price Quantity'),
                 O.q(6, 'Using the above data and one diagram', ' (a)')])
+# The graph notes (scheme p13) price the four labels on one line, "Labels: P, Q,
+# D/C and S/C = 4 marks". The Summary of Mark Allocations (scheme p5) prints how
+# those 4 marks fall across the parts: (i) 11 (5 @ 2) + 1, (ii) 11 (5 @ 2) + 1,
+# (iii) 6 (3+3) + 1 + 1. (i) and (ii) ask the student to label the demand and
+# the supply curve, so their + 1 is D/C and S/C; (iii)'s + 1 + 1 is the two axis
+# labels left, P and Q. Each label row is the label itself, sliced from that
+# line: the line's "= 4 marks" never sits on a row worth 1.
 labels = O.opt('Labels: P, Q, D/C and S/C = 4 marks', 'P1 and Q1')
+
+
+def label(word):
+    """One label, sliced from the scheme's labels line."""
+    assert re.search(rf'(?<![\w/]){re.escape(word)}(?![\w/])', labels), word
+    return O.traced(word)
+
+
+SUMMARY = 'Scheme p5, Summary of Mark Allocations: 2(a) {}; p13 graph notes: Labels: P, Q, D/C and S/C = 4 marks.'
 q2a_cards = (
     ('sb-q2-a-i', 'drawing-the-demand-curve', '(a)(i)', O.q(6, 'Draw and label the demand curve for sandwiches.', ' (ii)'),
-     O.opt('D/C: 5 points at 2 marks each = 10 marks', 'S/C: 5 points'), 10, 1,
-     'The D/C label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1).'),
+     O.opt('D/C: 5 points at 2 marks each = 10 marks', 'S/C: 5 points'), 10, '(i) 11 (5 @ 2) + 1',
+     [('r-label-dc', 'D/C', 'The demand curve’s label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1).')]),
     ('sb-q2-a-ii', 'drawing-the-supply-curve', '(a)(ii)', O.q(6, 'Draw and label the supply curve for sandwiches.', ' (iii)'),
-     O.opt('S/C: 5 points at 2 marks each = 10 marks', 'Labels: P'), 10, 1,
-     'The S/C label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1).'),
+     O.opt('S/C: 5 points at 2 marks each = 10 marks', 'Labels: P'), 10, '(ii) 11 (5 @ 2) + 1',
+     [('r-label-sc', 'S/C', 'The supply curve’s label, 1 mark (the scheme’s summary prints 11 (5 @ 2) + 1).')]),
     ('sb-q2-a-iii', 'equilibrium-price-and-quantity', '(a)(iii)', O.q(6, 'Show on your diagram: • The equilibrium price', ' (30 marks)'),
-     O.opt('P1 and Q1 : 2 x 3 marks each = 6 marks', '13 | P a g e'), 6, 2,
-     'The P and Q axis labels, 1 mark each (the scheme’s summary prints 6 (3 + 3) + 1 + 1).'))
-for cid, concept, parts, ask, run, marks, label_marks, label_note in q2a_cards:
-    add(cid, '1-0', concept, ref('B', 2, parts), ask, f'{marks} + {label_marks}', marks + label_marks,
-        [point('r-1', run, marks, f'{marks} marks. The completed graph is in the figure.'),
-         point('r-labels', labels, label_marks, label_note)],
-        stem=q2a, figure=SOL + 'p13-q2a-graph', **B)
+     O.opt('P1 and Q1 : 2 x 3 marks each = 6 marks', '13 | P a g e'), 6, '(iii) 6 (3+3) + 1 + 1',
+     [('r-label-p', 'P', 'The price axis label, 1 mark (the scheme’s summary prints 6 (3 + 3) + 1 + 1).'),
+      ('r-label-q', 'Q', 'The quantity axis label, 1 mark.')]))
+for cid, concept, parts, ask, run, marks, summary, label_rows in q2a_cards:
+    add(cid, '1-0', concept, ref('B', 2, parts), ask, f'{marks}' + ' + 1' * len(label_rows), marks + len(label_rows),
+        [point('r-1', run, marks, f'{marks} marks. The completed graph is in the figure.')]
+        + [point(rid, label(word), 1, note) for rid, word, note in label_rows],
+        stem=q2a, figure=SOL + 'p13-q2a-graph', notes=SUMMARY.format(summary), **B)
     show_before_reveal(cards[-1], None, PAP + 'p06-q2a-question')
 q2b = ' '.join([O.q(6, 'The demand curve for sandwiches or the supply curve', ' In relation'),
                 O.q(6, 'In relation to each of the above situations', ' (i)')])

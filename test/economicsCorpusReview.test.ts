@@ -1052,6 +1052,16 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
       for (const option of row.group!.options) expect(measures, option).toContain(option.split(' — ')[0]);
     }
     expect(card('sb-q6-c').rows.map(r => r.group!.options.length)).toEqual([10, 12]);
+    // Q2(a): the scheme's summary (p5) prints the four label marks as (i) + 1, (ii) + 1, (iii) + 1 + 1, so
+    // each label is its own 1-mark row; the labels line's "= 4 marks" never sits on a row worth less.
+    expect(card('sb-q2-a-i').rows.map(r => [r.verbatim, r.marks])).toEqual([['D/C: 5 points at 2 marks each = 10 marks', 10], ['D/C', 1]]);
+    expect(card('sb-q2-a-iii').rows.map(r => [r.verbatim, r.marks])).toEqual([['P1 and Q1 : 2 x 3 marks each = 6 marks', 6], ['P', 1], ['Q', 1]]);
+    for (const c of [...CARDS, ...ORDINARY].filter(item => item.year === 2019)) {
+      for (const row of c.rows) {
+        const printed = /=\s*(\d+)\s*marks?\b/.exec(row.verbatim ?? '');
+        if (printed) expect(Number(printed[1]), `${c.id} ${row.id}`).toBe(row.marks);
+      }
+    }
     const text = ORDINARY.filter(c => c.year === 2019)
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate']) {
