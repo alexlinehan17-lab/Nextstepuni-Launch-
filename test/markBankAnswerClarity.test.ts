@@ -484,7 +484,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(20);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(169);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(174);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['A new life', 'Better wages', 'Better work standards'],
@@ -508,6 +508,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Nantes', 'Bordeaux', 'Lisbon', 'Cadiz'],
       ['On railways', 'as news vendors', 'bootblacks', 'lamplighters', 'barbers'],
       ['Pheasant', 'partridge', 'grouse', 'hares'],
+      ['Pleasant situation', 'Gorgeous buildings', 'Population', 'Obedience and loyalty'],
       ['Preach', 'Lead men astray', 'Incite rebellion'],
       ['Ranks and titles', 'Civil laws', 'New social regulations', 'New customs and rules'],
       ['Salt fish', 'hides', 'cattle', 'hobby-horses'],
@@ -541,6 +542,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Battleship/ Warship', 6, [0, 3, 6], 'Ship = 3M'],
       ['By launching the Dreadnought', 6, [0, 3, 6], '‘Quickly’ ALONE = 3M'],
       ['Clonmel prison', 6, [0, 3, 6], 'Clonmel only (3m), prison only (3m)'],
+      ['Compare role of poet as set out in Document A with role of poet as set out in Document B', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Cusack was its founder/ One of its first Secretaries', 6, [0, 3, 6], 'Supporter ONLY = 3M'],
       ['Explanation', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Famine, Civil War, Political instability', 5, [0, 3, 5], 'Threats: two = 5M; one = 3M; “wolf and tiger” alone = 0'],
@@ -567,6 +569,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Two reasons for Yes or No', 8, [0, 4, 8], 'Sermon advised “restraint towards people of different religious persuasions” — Above quote only = 2M — Seems to be reasonable advice to behave respectfully to others, to not give offence which could lead to trouble At the same time the Apprentice Boys are asked to keep “firmness in defence of their Protestant heritage”, to assert themselves and keep the faith — Mark quality of explanation on its merits. — Max = 10M'],
       ['Von Eckstadt Vienna 1848', 6, [0, 3, 6], 'Any TWO @ 3M each'],
       ['We can see men, women and children – presumably families', 6, [0, 3, 6], 'Children ONLY = 3M'],
+      ['Which is more sympathetic to bardic poets, A or B?', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Yes or No? One reason only required', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
     ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
     // 2020 OL Q3(a) prices each component and answers the one that needs an answer:
