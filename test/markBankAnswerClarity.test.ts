@@ -531,6 +531,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       // Each a printed partial or alternative as a step on its row ("Green ribbons (ribbons = 3m)",
       // "Swastika 8M" / "Germanic cross = 4M"), a price for an answer the scheme does not print
       // ("One opinion = 5M"), or the bank's unprinted row where the scheme prints no answer at all.
+      ['A or B – which is the more valuable source about bardic schools and poets?', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['An attempt to bring guns into Northern Ireland (through Dublin Airport)', 6, [0, 3, 6], '„To bring in guns‟ only = 3M'],
       ['Any TWO countries invaded by Napoleon 3M + 3M', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO features from second paragraph of text @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
