@@ -64,7 +64,7 @@ describe('the printed breaks in a History stem', () => {
 
   it('never flattens a printed table into a stem: the chart is the card’s question figure', () => {
     const charted = HISTORY_ORDINARY.filter(c => 'questionFigure' in c && c.questionFigure);
-    const CHARTED_UNITS = ['hist-2016-ol-lm-s2t5a', 'hist-2018-ol-lm-s2t3a', 'hist-2020-ol-lm-s2t6a'];
+    const CHARTED_UNITS = ['hist-2015-ol-lm-s2t6a', 'hist-2016-ol-lm-s2t5a', 'hist-2018-ol-lm-s2t3a', 'hist-2020-ol-lm-s2t6a'];
     expect(charted.map(c => c.id).sort()).toEqual(CHARTED_UNITS.flatMap(unit => [1, 2, 3, 4, 5].map(q => `${unit}-q${q}`)));
     for (const card of charted) {
       const figure = 'questionFigure' in card ? card.questionFigure! : undefined;

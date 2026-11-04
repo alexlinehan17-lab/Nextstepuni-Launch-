@@ -60,9 +60,7 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
      3,
      4
     ],
-    "directions": [
-     "Note that the question is looking for a reason or reasons for the “social and economic problems” of the 1930s."
-    ]
+    "directions": []
    }
   },
   {
@@ -259,7 +257,9 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
      3,
      4
     ],
-    "directions": []
+    "directions": [
+     "Note that the question is looking for a reason or reasons for the “social and economic problems” of the 1930s."
+    ]
    }
   },
   {
@@ -1035,6 +1035,1876 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s1-q1a", topicId: "hist-lm-irl-3", conceptId: "writer-her-brother-sent-off-athy",
+    section: "1", questionRef: "2015 OL Later Modern Section 1 Q1(a)",
+    stem: "Case study: The Eucharistic Congress, 1932",
+    questionText: "From document A, why were the writer and her brother sent off to Athy, Co. Kildare?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To make room for their relations from Northern Ireland to stay", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s1-q1b", topicId: "hist-lm-irl-3", conceptId: "where-did-some-visitors-sleep",
+    section: "1", questionRef: "2015 OL Later Modern Section 1 Q1(b)",
+    stem: "Case study: The Eucharistic Congress, 1932",
+    questionText: "According to document A, where did some visitors sleep?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "On the floor", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "in the bathtubs", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s1-q1c", topicId: "hist-lm-irl-3", conceptId: "many-people-attended-high-mass-phoenix",
+    section: "1", questionRef: "2015 OL Later Modern Section 1 Q1(c)",
+    stem: "Case study: The Eucharistic Congress, 1932",
+    questionText: "From document B, about how many people attended the High Mass in the Phoenix Park?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "One million", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s1-q1d", topicId: "hist-lm-irl-3", conceptId: "hymn-did-john-count-mccormack-sing",
+    section: "1", questionRef: "2015 OL Later Modern Section 1 Q1(d)",
+    stem: "Case study: The Eucharistic Congress, 1932",
+    questionText: "In document B, what hymn did John Count McCormack sing at the High Mass?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Panis Angelicus", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s1-q1e", topicId: "hist-lm-irl-3", conceptId: "john-count-mccormack-dressed-occasion",
+    section: "1", questionRef: "2015 OL Later Modern Section 1 Q1(e)",
+    stem: "Case study: The Eucharistic Congress, 1932",
+    questionText: "According to document B, how was John Count McCormack dressed for the occasion?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He wore his Papal robes/ the robes of a Papal Count", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s1-q2a", topicId: "hist-lm-irl-3", conceptId: "papal-legate-involved-events",
+    section: "1", questionRef: "2015 OL Later Modern Section 1 Q2(a)",
+    stem: "Case study: The Eucharistic Congress, 1932",
+    questionText: "Was the Papal Legate involved in the events of both document A and document B? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Papal Legate is involved in the events in both Document A and Document B", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Document A states that he arrived by sea at Dún Laoghaire/ was met by members of the government/ was given an escort into Dublin by the Blue Hussars", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Document B states that he presided at the High Mass in the Phoenix Park", marks: 4, contextNote: "Mark quality of explanation on its merits. — Reference to both documents = 4M + 4M Max = 10M" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s1-q2b", topicId: "hist-lm-irl-3", conceptId: "gives-better-picture-congress",
+    section: "1", questionRef: "2015 OL Later Modern Section 1 Q2(b)",
+    stem: "Case study: The Eucharistic Congress, 1932",
+    questionText: "Which document, A or B, gives the better picture of the Congress? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A describes the arrival in Ireland for the Congress of the Papal Legate", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The only reference to the Congress is that it drew huge crowds to Dublin as people were sleeping on the floor and in bathtubs", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Document B gives factual information about the centre-piece event of the Congress, the High Mass in the Phoenix Park", marks: null },
+    { id: "r-4", kind: "point", verbatim: "It gives the date, numbers attending, the crowd arrangements", marks: null },
+    { id: "r-5", kind: "point", verbatim: "It names Cardinal Lauri who presided, Archbishop Curley who celebrated and John McCormack who sang.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s1-q3a", topicId: "hist-lm-irl-3", conceptId: "considered-primary-source",
+    section: "1", questionRef: "2015 OL Later Modern Section 1 Q3(a)",
+    stem: "Case study: The Eucharistic Congress, 1932",
+    questionText: "Why is document A considered a primary source?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A is a primary source because it is from a memoir/autobiography where the writer is remembering herself as a little girl witnessing the events from eighty years earlier.", marks: 10 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s1-q3b", topicId: "hist-lm-irl-3", conceptId: "evidence-find-event-carefully-organised",
+    section: "1", questionRef: "2015 OL Later Modern Section 1 Q3(b)",
+    stem: "Case study: The Eucharistic Congress, 1932",
+    questionText: "What evidence do you find in document B that the event had been carefully organised?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The fact that the great open space before the high altar had been divided into sections and assigned to various groups from all over Ireland", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The choice of an Irishman, Arcbishop Curley, to celebrate the Mass and the choice of the world- renowned Irish tenor to sing also show an attention to detail", marks: null },
+    { id: "r-3", kind: "point", verbatim: "It appears from this extract that McCormack’s performance made a huge impression.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s1-q4", topicId: "hist-lm-irl-3", conceptId: "eucharistic-congress-considered-success-catholic-church",
+    section: "1", questionRef: "2015 OL Later Modern Section 1 Q4",
+    stem: "Case study: The Eucharistic Congress, 1932",
+    questionText: "Why was the Eucharistic Congress considered to be a success for the Catholic Church and for the Irish State?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[0], cm: { ...ESSAY_MARKING[0].cm, elementRule: {"note":"Note the TWO elements: “for the Catholic Church and for the Irish State” For one element only, max 12M","caps":[{"when":"For one element only","max":12}]} }, schemePages: [8] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t1a-q1", topicId: "hist-lm-irl-1", conceptId: "beginning-1847-group-did-queen-donate",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 1 A Q1",
+    stem: "This edited extract relates to the contribution of Queen Victoria to Irish Famine relief. Read it and answer the questions that follow.\n\nAt the beginning of 1847 the Queen was named as the first person to donate to the newly-formed British Association for the Relief of Distress in Ireland and Scotland. In fact, her £2,000 gift made her the largest individual contributor to famine relief.\nIn the same year Victoria issued two official letters to Anglicans asking them to contribute to Irish relief. Indeed, the Queen was criticised within Britain – with attacks by the London Times – for helping to continue to make the Irish dependent on the people of Britain.",
+    questionText: "At the beginning of 1847, to what group did the Queen donate money?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "British Association for the Relief of Distress in Ireland and Scotland", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t1a-q2", topicId: "hist-lm-irl-1", conceptId: "gift-made-queen-largest-individual-contributor",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 1 A Q2",
+    stem: "This edited extract relates to the contribution of Queen Victoria to Irish Famine relief. Read it and answer the questions that follow.\n\nAt the beginning of 1847 the Queen was named as the first person to donate to the newly-formed British Association for the Relief of Distress in Ireland and Scotland. In fact, her £2,000 gift made her the largest individual contributor to famine relief.\nIn the same year Victoria issued two official letters to Anglicans asking them to contribute to Irish relief. Indeed, the Queen was criticised within Britain – with attacks by the London Times – for helping to continue to make the Irish dependent on the people of Britain.",
+    questionText: "What gift made the Queen the largest individual contributor to famine relief?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "£2,000", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t1a-q3", topicId: "hist-lm-irl-1", conceptId: "newspaper-led-attacks-queen",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 1 A Q3",
+    stem: "This edited extract relates to the contribution of Queen Victoria to Irish Famine relief. Read it and answer the questions that follow.\n\nAt the beginning of 1847 the Queen was named as the first person to donate to the newly-formed British Association for the Relief of Distress in Ireland and Scotland. In fact, her £2,000 gift made her the largest individual contributor to famine relief.\nIn the same year Victoria issued two official letters to Anglicans asking them to contribute to Irish relief. Indeed, the Queen was criticised within Britain – with attacks by the London Times – for helping to continue to make the Irish dependent on the people of Britain.",
+    questionText: "What newspaper led the attacks on the Queen?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The London Times", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t1a-q4", topicId: "hist-lm-irl-1", conceptId: "queen-accused-those-who-criticised-her",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 1 A Q4",
+    stem: "This edited extract relates to the contribution of Queen Victoria to Irish Famine relief. Read it and answer the questions that follow.\n\nAt the beginning of 1847 the Queen was named as the first person to donate to the newly-formed British Association for the Relief of Distress in Ireland and Scotland. In fact, her £2,000 gift made her the largest individual contributor to famine relief.\nIn the same year Victoria issued two official letters to Anglicans asking them to contribute to Irish relief. Indeed, the Queen was criticised within Britain – with attacks by the London Times – for helping to continue to make the Irish dependent on the people of Britain.",
+    questionText: "Of what was the Queen accused by those who criticised her?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Of helping to continue to make the Irish dependent o the people of Britain", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t1a-q5", topicId: "hist-lm-irl-1", conceptId: "reason-famine-ireland-lasted-long",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 1 A Q5",
+    stem: "This edited extract relates to the contribution of Queen Victoria to Irish Famine relief. Read it and answer the questions that follow.\n\nAt the beginning of 1847 the Queen was named as the first person to donate to the newly-formed British Association for the Relief of Distress in Ireland and Scotland. In fact, her £2,000 gift made her the largest individual contributor to famine relief.\nIn the same year Victoria issued two official letters to Anglicans asking them to contribute to Irish relief. Indeed, the Queen was criticised within Britain – with attacks by the London Times – for helping to continue to make the Irish dependent on the people of Britain.",
+    questionText: "Give one reason why the Famine in Ireland lasted so long.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t1b", topicId: "hist-lm-irl-1", conceptId: "tithe-war-young-ireland-movement-charles",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 1 B",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Write a short paragraph on one of the following:\n1. The Tithe War.\n2. The Young Ireland movement.\n3. Charles Kickham.\n4. William Carleton.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t1c", topicId: "hist-lm-irl-1", conceptId: "did-daniel-connell-achieve-catholic-emancipation",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 1 C",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Answer one of the following:\n1. How did Daniel O’Connell achieve Catholic Emancipation?\n2. How was Charles Trevelyan involved with the Famine?\n3. What decisions were reached at the Synod of Thurles, 1850?\n4. How did William Dargan contribute to economic development in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t2a-q1", topicId: "hist-lm-irl-2", conceptId: "june-who-drove-back-members-royal",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 2 A Q1",
+    stem: "In this edited extract historian, Jonathan Bardon, describes the Belfast riots of 1886, and their effects. Read it and answer the questions that follow.\n\nOn Wednesday 9 June 1886, the day after the Home Rule bill had been defeated in the House of Commons, a mob of around two thousand Protestants drove back members of the Royal Irish Constabulary, who had been attempting to stop the looting of a liquor store on Belfast’s Shankill Road.\nBattles between loyalists and police continued to rage all through the summer. Sectarian mobs, Catholic and Protestant, clashed ferociously. The riots continued until mid-September. The official death toll was thirty-one, though the actual number killed was probably around fifty.",
+    questionText: "On 9 June, who drove back members of the Royal Irish Constabulary?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A mob", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "of around 2,000 Protestants", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t2a-q2", topicId: "hist-lm-irl-2", conceptId: "royal-irish-constabulary-attempting",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 2 A Q2",
+    stem: "In this edited extract historian, Jonathan Bardon, describes the Belfast riots of 1886, and their effects. Read it and answer the questions that follow.\n\nOn Wednesday 9 June 1886, the day after the Home Rule bill had been defeated in the House of Commons, a mob of around two thousand Protestants drove back members of the Royal Irish Constabulary, who had been attempting to stop the looting of a liquor store on Belfast’s Shankill Road.\nBattles between loyalists and police continued to rage all through the summer. Sectarian mobs, Catholic and Protestant, clashed ferociously. The riots continued until mid-September. The official death toll was thirty-one, though the actual number killed was probably around fifty.",
+    questionText: "What had the Royal Irish Constabulary been attempting to do?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To stop looting (of a liquor store on the Shankill Road)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t2a-q3", topicId: "hist-lm-irl-2", conceptId: "when-did-riots-come-end",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 2 A Q3",
+    stem: "In this edited extract historian, Jonathan Bardon, describes the Belfast riots of 1886, and their effects. Read it and answer the questions that follow.\n\nOn Wednesday 9 June 1886, the day after the Home Rule bill had been defeated in the House of Commons, a mob of around two thousand Protestants drove back members of the Royal Irish Constabulary, who had been attempting to stop the looting of a liquor store on Belfast’s Shankill Road.\nBattles between loyalists and police continued to rage all through the summer. Sectarian mobs, Catholic and Protestant, clashed ferociously. The riots continued until mid-September. The official death toll was thirty-one, though the actual number killed was probably around fifty.",
+    questionText: "When did the riots come to an end?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mid-September", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t2a-q4", topicId: "hist-lm-irl-2", conceptId: "riots-official-death-toll",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 2 A Q4",
+    stem: "In this edited extract historian, Jonathan Bardon, describes the Belfast riots of 1886, and their effects. Read it and answer the questions that follow.\n\nOn Wednesday 9 June 1886, the day after the Home Rule bill had been defeated in the House of Commons, a mob of around two thousand Protestants drove back members of the Royal Irish Constabulary, who had been attempting to stop the looting of a liquor store on Belfast’s Shankill Road.\nBattles between loyalists and police continued to rage all through the summer. Sectarian mobs, Catholic and Protestant, clashed ferociously. The riots continued until mid-September. The official death toll was thirty-one, though the actual number killed was probably around fifty.",
+    questionText: "Following the riots, what was the official death toll?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "31", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t2a-q5", topicId: "hist-lm-irl-2", conceptId: "reason-most-ulster-protestants-opposed-home",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 2 A Q5",
+    stem: "In this edited extract historian, Jonathan Bardon, describes the Belfast riots of 1886, and their effects. Read it and answer the questions that follow.\n\nOn Wednesday 9 June 1886, the day after the Home Rule bill had been defeated in the House of Commons, a mob of around two thousand Protestants drove back members of the Royal Irish Constabulary, who had been attempting to stop the looting of a liquor store on Belfast’s Shankill Road.\nBattles between loyalists and police continued to rage all through the summer. Sectarian mobs, Catholic and Protestant, clashed ferociously. The riots continued until mid-September. The official death toll was thirty-one, though the actual number killed was probably around fifty.",
+    questionText: "Give one reason why most Ulster Protestants opposed Home Rule.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t2b", topicId: "hist-lm-irl-2", conceptId: "isaac-butt-douglas-hyde-operative-movement",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 2 B",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Write a short paragraph on one of the following:\n1. Isaac Butt.\n2. Douglas Hyde.\n3. The Co-operative movement.\n4. The Irish Volunteers.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t2c", topicId: "hist-lm-irl-2", conceptId: "successes-failures-political-career-charles-stewart",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 2 C",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Answer one of the following:\n1. What were the successes and failures in the political career of Charles Stewart Parnell?\n2. What did the GAA achieve between 1884 and 1891?\n3. How did James Connolly and/or James Larkin seek improvements for workers?\n4. What tactics did Edward Carson use in opposing the demand for Home Rule for all Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t4a-q1", topicId: "hist-lm-irl-4", conceptId: "whom-writer-reporting",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 4 A Q1",
+    stem: "In this edited extract Father E.A. Taschereau reports to his bishop (3/6/1847) on conditions aboard ships anchored off Grosse Isle, Quebec, waiting to land their sick. Read it and answer the questions that follow.\n\nMost of them have for a bed the board of the ship, or a few filthy wisps of straw that do more harm than good.\nHow many, after a month and a half of the crossing, are wearing the same clothes and the same shoes that they had when they came aboard ship, and which they have not taken off?\nI have seen people whose feet were so stuck in their socks that I could not anoint them!",
+    questionText: "To whom was the writer reporting?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bishop", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t4a-q2", topicId: "hist-lm-irl-4", conceptId: "bed-most-passengers",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 4 A Q2",
+    stem: "In this edited extract Father E.A. Taschereau reports to his bishop (3/6/1847) on conditions aboard ships anchored off Grosse Isle, Quebec, waiting to land their sick. Read it and answer the questions that follow.\n\nMost of them have for a bed the board of the ship, or a few filthy wisps of straw that do more harm than good.\nHow many, after a month and a half of the crossing, are wearing the same clothes and the same shoes that they had when they came aboard ship, and which they have not taken off?\nI have seen people whose feet were so stuck in their socks that I could not anoint them!",
+    questionText: "What ‘bed’ had most of the passengers?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The board of the ship/ A few filthy wisps of straw", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t4a-q3", topicId: "hist-lm-irl-4", conceptId: "long-did-ships-crossing-take",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 4 A Q3",
+    stem: "In this edited extract Father E.A. Taschereau reports to his bishop (3/6/1847) on conditions aboard ships anchored off Grosse Isle, Quebec, waiting to land their sick. Read it and answer the questions that follow.\n\nMost of them have for a bed the board of the ship, or a few filthy wisps of straw that do more harm than good.\nHow many, after a month and a half of the crossing, are wearing the same clothes and the same shoes that they had when they came aboard ship, and which they have not taken off?\nI have seen people whose feet were so stuck in their socks that I could not anoint them!",
+    questionText: "How long did the ships’ crossing take?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A month and a half", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t4a-q4", topicId: "hist-lm-irl-4", conceptId: "example-suffering-endured-passengers",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 4 A Q4",
+    stem: "In this edited extract Father E.A. Taschereau reports to his bishop (3/6/1847) on conditions aboard ships anchored off Grosse Isle, Quebec, waiting to land their sick. Read it and answer the questions that follow.\n\nMost of them have for a bed the board of the ship, or a few filthy wisps of straw that do more harm than good.\nHow many, after a month and a half of the crossing, are wearing the same clothes and the same shoes that they had when they came aboard ship, and which they have not taken off?\nI have seen people whose feet were so stuck in their socks that I could not anoint them!",
+    questionText: "Give one example of the suffering endured by the passengers.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No proper bed to lie on/ No change of clothes or shoes for weeks/ Deadly illness because priest wished to anoint some people", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t4a-q5", topicId: "hist-lm-irl-4", conceptId: "apart-canada-countries-irish-people-emigrated",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 4 A Q5",
+    stem: "In this edited extract Father E.A. Taschereau reports to his bishop (3/6/1847) on conditions aboard ships anchored off Grosse Isle, Quebec, waiting to land their sick. Read it and answer the questions that follow.\n\nMost of them have for a bed the board of the ship, or a few filthy wisps of straw that do more harm than good.\nHow many, after a month and a half of the crossing, are wearing the same clothes and the same shoes that they had when they came aboard ship, and which they have not taken off?\nI have seen people whose feet were so stuck in their socks that I could not anoint them!",
+    questionText: "Apart from Canada, name two countries to which Irish people emigrated about this time.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid country", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t4b", topicId: "hist-lm-irl-4", conceptId: "molly-maguires-orange-order-diaspora-boss",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 4 B",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Write a short paragraph on one of the following:\n1. The Molly Maguires.\n2. The Orange Order and the diaspora.\n3. Boss Croker.\n4. Increased restriction and regulation of emigration after 1920.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t4c", topicId: "hist-lm-irl-4", conceptId: "impact-irish-america-joe-kennedy-john",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 4 C",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Answer one of the following:\n1. What was the impact on Irish America of Joe Kennedy and/or John F. Kennedy?\n2. What do we learn about Irish emigrants in Britain from the life and writings of Domhnall MacAmhlaigh?\n3. What were the successes and failures of the Holy Ghost Mission to Nigeria, 1945-1966?\n4. How did one or more of the following represent the Catholic Church: Archbishop Daniel Mannix; Bishop Edward Galvin; Mother Mary Martin?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t5a-q1", topicId: "hist-lm-irl-5", conceptId: "day-did-apprentice-boys-parade-derry",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 5 A Q1",
+    stem: "In this edited extract Michael Farrell discusses the tension in Derry in 1969. Read it and answer the questions that follow.\n\nMany people believed that the crunch would come on 12 August 1969. That was the day of the Apprentice Boys’ parade in Derry, when thousands of Orangemen from all over the North would come to Derry, parade through the city and around the walls overlooking the Bogside to commemorate the Siege of Derry in 1689.\nThe parade served as a yearly reminder to the Catholic population of who was master in this city with a 70% Catholic majority.\nAfter a year of civil-rights marches banned from the centre of every town, and batoned off the streets of Derry, the Catholics were in no mood to give in. If the march went ahead, there was bound to be a riot. The Stormont government turned down all appeals to ban the march.",
+    questionText: "On what day did the Apprentice Boys’ parade in Derry take place?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tuesday/ 12 August (1969)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t5a-q2", topicId: "hist-lm-irl-5", conceptId: "route-did-parade-usually-take-derry",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 5 A Q2",
+    stem: "In this edited extract Michael Farrell discusses the tension in Derry in 1969. Read it and answer the questions that follow.\n\nMany people believed that the crunch would come on 12 August 1969. That was the day of the Apprentice Boys’ parade in Derry, when thousands of Orangemen from all over the North would come to Derry, parade through the city and around the walls overlooking the Bogside to commemorate the Siege of Derry in 1689.\nThe parade served as a yearly reminder to the Catholic population of who was master in this city with a 70% Catholic majority.\nAfter a year of civil-rights marches banned from the centre of every town, and batoned off the streets of Derry, the Catholics were in no mood to give in. If the march went ahead, there was bound to be a riot. The Stormont government turned down all appeals to ban the march.",
+    questionText: "What route did the parade usually take in Derry?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Through the city and around the walls overlooking the Bogside", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t5a-q3", topicId: "hist-lm-irl-5", conceptId: "did-catholics-dislike-apprentice-boys-parade",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 5 A Q3",
+    stem: "In this edited extract Michael Farrell discusses the tension in Derry in 1969. Read it and answer the questions that follow.\n\nMany people believed that the crunch would come on 12 August 1969. That was the day of the Apprentice Boys’ parade in Derry, when thousands of Orangemen from all over the North would come to Derry, parade through the city and around the walls overlooking the Bogside to commemorate the Siege of Derry in 1689.\nThe parade served as a yearly reminder to the Catholic population of who was master in this city with a 70% Catholic majority.\nAfter a year of civil-rights marches banned from the centre of every town, and batoned off the streets of Derry, the Catholics were in no mood to give in. If the march went ahead, there was bound to be a riot. The Stormont government turned down all appeals to ban the march.",
+    questionText: "Why did Catholics dislike the Apprentice Boys’ parade?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They saw it as a yearly reminder of who was in charge in the city", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t5a-q4", topicId: "hist-lm-irl-5", conceptId: "did-stormont-government-respond-appeals-ban",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 5 A Q4",
+    stem: "In this edited extract Michael Farrell discusses the tension in Derry in 1969. Read it and answer the questions that follow.\n\nMany people believed that the crunch would come on 12 August 1969. That was the day of the Apprentice Boys’ parade in Derry, when thousands of Orangemen from all over the North would come to Derry, parade through the city and around the walls overlooking the Bogside to commemorate the Siege of Derry in 1689.\nThe parade served as a yearly reminder to the Catholic population of who was master in this city with a 70% Catholic majority.\nAfter a year of civil-rights marches banned from the centre of every town, and batoned off the streets of Derry, the Catholics were in no mood to give in. If the march went ahead, there was bound to be a riot. The Stormont government turned down all appeals to ban the march.",
+    questionText: "How did the Stormont government respond to appeals to ban the parade?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They turned down appeals to ban the parade", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t5a-q5", topicId: "hist-lm-irl-5", conceptId: "december-18th-important-date-calendar-apprentice",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 5 A Q5",
+    stem: "In this edited extract Michael Farrell discusses the tension in Derry in 1969. Read it and answer the questions that follow.\n\nMany people believed that the crunch would come on 12 August 1969. That was the day of the Apprentice Boys’ parade in Derry, when thousands of Orangemen from all over the North would come to Derry, parade through the city and around the walls overlooking the Bogside to commemorate the Siege of Derry in 1689.\nThe parade served as a yearly reminder to the Catholic population of who was master in this city with a 70% Catholic majority.\nAfter a year of civil-rights marches banned from the centre of every town, and batoned off the streets of Derry, the Catholics were in no mood to give in. If the march went ahead, there was bound to be a riot. The Stormont government turned down all appeals to ban the march.",
+    questionText: "Why is December 18th an important date in the calendar of the Apprentice Boys?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Date of the closing of the city gates (by apprentice boys against enemy forces in 1688)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t5b", topicId: "hist-lm-irl-5", conceptId: "welfare-northern-ireland-responses-dublin-governments",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 5 B",
+    stem: "Politics and society in Northern Ireland, 1949-1993",
+    questionText: "Write a short paragraph on one of the following:\n1. The welfare state in Northern Ireland.\n2. Responses of Dublin governments to events in Northern Ireland.\n3. Seamus Heaney.\n4. Gerry Adams.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t5c", topicId: "hist-lm-irl-5", conceptId: "did-terence-neill-attempt-bring-change",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 5 C",
+    stem: "Politics and society in Northern Ireland, 1949-1993",
+    questionText: "Answer one of the following:\n1. How did Terence O’Neill attempt to bring about change in Northern Ireland?\n2. For what reasons did the authorities establish a new university in Coleraine?\n3. What was agreed at Sunningdale and why did the power-sharing executive fail in 1974?\n4. How did Bernadette Devlin and/or Ian Paisley influence events in Northern Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t6a-q1", topicId: "hist-lm-irl-6", conceptId: "party-won-seats",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 6 A Q1",
+    stem: "The chart below sets out the results of the general election, November 1982. The total number of seats was 166. Study it and answer the questions that follow.",
+    questionText: "Which party won 70 seats?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fine Gael", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+    questionFigure: {
+          "candId": "history-2015-ol-lm-s2t6a-table",
+          "src": "/exam-figures/history/history-2015-ol-lm-s2t6a-table.png",
+          "srcHash": "7abf488a230a755f954c51465a412e28",
+          "alt": "The chart printed on the paper: RESULTS OF GENERAL ELECTION, NOVEMBER 1982. Columns: POLITICAL PARTY | PARTY LEADER | SEATS WON. Rows: Fianna Fáil | C.J. Haughey | 75; Fine Gael | Garret FitzGerald | 70; Labour Party | Dick Spring | 16; Democratic Socialist Party | Jim Kemmy | 0; Republican Socialist Party | Jim Lane | 0; Workers’ Party | Tomás Mac Giolla | 2; Independents | N/A | 3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2015 Ordinary Level, Later Modern paper, page 8 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t6a-q2", topicId: "hist-lm-irl-6", conceptId: "who-leader-labour-party",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 6 A Q2",
+    stem: "The chart below sets out the results of the general election, November 1982. The total number of seats was 166. Study it and answer the questions that follow.",
+    questionText: "Who was leader of the Labour Party?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dick Spring", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+    questionFigure: {
+          "candId": "history-2015-ol-lm-s2t6a-table",
+          "src": "/exam-figures/history/history-2015-ol-lm-s2t6a-table.png",
+          "srcHash": "7abf488a230a755f954c51465a412e28",
+          "alt": "The chart printed on the paper: RESULTS OF GENERAL ELECTION, NOVEMBER 1982. Columns: POLITICAL PARTY | PARTY LEADER | SEATS WON. Rows: Fianna Fáil | C.J. Haughey | 75; Fine Gael | Garret FitzGerald | 70; Labour Party | Dick Spring | 16; Democratic Socialist Party | Jim Kemmy | 0; Republican Socialist Party | Jim Lane | 0; Workers’ Party | Tomás Mac Giolla | 2; Independents | N/A | 3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2015 Ordinary Level, Later Modern paper, page 8 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t6a-q3", topicId: "hist-lm-irl-6", conceptId: "many-seats-did-workers-party-win",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 6 A Q3",
+    stem: "The chart below sets out the results of the general election, November 1982. The total number of seats was 166. Study it and answer the questions that follow.",
+    questionText: "How many seats did the Workers’ Party win?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Two", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+    questionFigure: {
+          "candId": "history-2015-ol-lm-s2t6a-table",
+          "src": "/exam-figures/history/history-2015-ol-lm-s2t6a-table.png",
+          "srcHash": "7abf488a230a755f954c51465a412e28",
+          "alt": "The chart printed on the paper: RESULTS OF GENERAL ELECTION, NOVEMBER 1982. Columns: POLITICAL PARTY | PARTY LEADER | SEATS WON. Rows: Fianna Fáil | C.J. Haughey | 75; Fine Gael | Garret FitzGerald | 70; Labour Party | Dick Spring | 16; Democratic Socialist Party | Jim Kemmy | 0; Republican Socialist Party | Jim Lane | 0; Workers’ Party | Tomás Mac Giolla | 2; Independents | N/A | 3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2015 Ordinary Level, Later Modern paper, page 8 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t6a-q4", topicId: "hist-lm-irl-6", conceptId: "did-party-win-overall-majority-reason",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 6 A Q4",
+    stem: "The chart below sets out the results of the general election, November 1982. The total number of seats was 166. Study it and answer the questions that follow.",
+    questionText: "Did any party win an overall majority? Give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To win an overall majority, a party would have to win more than half of the 166 seats (>83) and no party achieved that", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+    questionFigure: {
+          "candId": "history-2015-ol-lm-s2t6a-table",
+          "src": "/exam-figures/history/history-2015-ol-lm-s2t6a-table.png",
+          "srcHash": "7abf488a230a755f954c51465a412e28",
+          "alt": "The chart printed on the paper: RESULTS OF GENERAL ELECTION, NOVEMBER 1982. Columns: POLITICAL PARTY | PARTY LEADER | SEATS WON. Rows: Fianna Fáil | C.J. Haughey | 75; Fine Gael | Garret FitzGerald | 70; Labour Party | Dick Spring | 16; Democratic Socialist Party | Jim Kemmy | 0; Republican Socialist Party | Jim Lane | 0; Workers’ Party | Tomás Mac Giolla | 2; Independents | N/A | 3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2015 Ordinary Level, Later Modern paper, page 8 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t6a-q5", topicId: "hist-lm-irl-6", conceptId: "election-parties-formed-coalition-government",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 6 A Q5",
+    stem: "The chart below sets out the results of the general election, November 1982. The total number of seats was 166. Study it and answer the questions that follow.",
+    questionText: "Following this election, which two parties formed a coalition government?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fine Gael", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Labour", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+    questionFigure: {
+          "candId": "history-2015-ol-lm-s2t6a-table",
+          "src": "/exam-figures/history/history-2015-ol-lm-s2t6a-table.png",
+          "srcHash": "7abf488a230a755f954c51465a412e28",
+          "alt": "The chart printed on the paper: RESULTS OF GENERAL ELECTION, NOVEMBER 1982. Columns: POLITICAL PARTY | PARTY LEADER | SEATS WON. Rows: Fianna Fáil | C.J. Haughey | 75; Fine Gael | Garret FitzGerald | 70; Labour Party | Dick Spring | 16; Democratic Socialist Party | Jim Kemmy | 0; Republican Socialist Party | Jim Lane | 0; Workers’ Party | Tomás Mac Giolla | 2; Independents | N/A | 3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate History 2015 Ordinary Level, Later Modern paper, page 8 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t6b", topicId: "hist-lm-irl-6", conceptId: "changes-health-social-welfare-provision-1949",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 6 B",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. Changes in health and social welfare provision, 1949-1989.\n2. Seán Lemass.\n3. Ireland and the United Nations, 1955-1989.\n4. The fortunes of the Irish language, 1949-1989.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s2t6c", topicId: "hist-lm-irl-6", conceptId: "did-membership-eec-affect-development-irish",
+    section: "2", questionRef: "2015 OL Later Modern Section 2 Topic 6 C",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Answer one of the following:\n1. How did membership of the EEC affect the development of Irish fisheries?\n2. In what ways did RTE impact on Irish society between 1962 and 1972?\n3. How did Sylvia Meehan contribute to the changing role of women?\n4. What did Jack Lynch and/or Charles Haughey contribute to Irish affairs?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t1a-q1", topicId: "hist-lm-eur-1", conceptId: "napoleon-glutted-his-soldiers",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 1 A Q1",
+    stem: "In this edited extract from the pamphlet, Napoleon le Petit (Napoleon the Little), the French writer, Victor Hugo, gives his opinion of Napoleon III. Read it and answer the questions that follow.\n\nThough he has committed enormous crimes, he himself will remain worthless. He has glutted his soldiers, not with glory like the first Napoleon, but with wine.\nAs Dictator he is a buffoon, as Emperor he will be ridiculous. Once stripped of success, the pedestal removed, a poor little skeleton; can one imagine anything more pitiful; Napoleon the Little, no more, no less.\nThink of it. At the head of the greatest people on earth, in the middle of the greatest century in history, this person has made France his prey. You are a monkey, not a lion, a parrot, not an eagle, a comedian.",
+    questionText: "According to the extract, with what has Napoleon glutted his soldiers?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Wine", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t1a-q2", topicId: "hist-lm-eur-1", conceptId: "will-napoleon-regarded-emperor",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 1 A Q2",
+    stem: "In this edited extract from the pamphlet, Napoleon le Petit (Napoleon the Little), the French writer, Victor Hugo, gives his opinion of Napoleon III. Read it and answer the questions that follow.\n\nThough he has committed enormous crimes, he himself will remain worthless. He has glutted his soldiers, not with glory like the first Napoleon, but with wine.\nAs Dictator he is a buffoon, as Emperor he will be ridiculous. Once stripped of success, the pedestal removed, a poor little skeleton; can one imagine anything more pitiful; Napoleon the Little, no more, no less.\nThink of it. At the head of the greatest people on earth, in the middle of the greatest century in history, this person has made France his prey. You are a monkey, not a lion, a parrot, not an eagle, a comedian.",
+    questionText: "From the extract, how will Napoleon be regarded as Emperor?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "As ridiculous/ A poor little skeleton/ As pitiful", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t1a-q3", topicId: "hist-lm-eur-1", conceptId: "title-does-victor-hugo-napoleon-iii",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 1 A Q3",
+    stem: "In this edited extract from the pamphlet, Napoleon le Petit (Napoleon the Little), the French writer, Victor Hugo, gives his opinion of Napoleon III. Read it and answer the questions that follow.\n\nThough he has committed enormous crimes, he himself will remain worthless. He has glutted his soldiers, not with glory like the first Napoleon, but with wine.\nAs Dictator he is a buffoon, as Emperor he will be ridiculous. Once stripped of success, the pedestal removed, a poor little skeleton; can one imagine anything more pitiful; Napoleon the Little, no more, no less.\nThink of it. At the head of the greatest people on earth, in the middle of the greatest century in history, this person has made France his prey. You are a monkey, not a lion, a parrot, not an eagle, a comedian.",
+    questionText: "What title does Victor Hugo give to Napoleon III?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Napoleon the Little/ Napoleon le Petit", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t1a-q4", topicId: "hist-lm-eur-1", conceptId: "does-victor-hugo-regard-french-people",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 1 A Q4",
+    stem: "In this edited extract from the pamphlet, Napoleon le Petit (Napoleon the Little), the French writer, Victor Hugo, gives his opinion of Napoleon III. Read it and answer the questions that follow.\n\nThough he has committed enormous crimes, he himself will remain worthless. He has glutted his soldiers, not with glory like the first Napoleon, but with wine.\nAs Dictator he is a buffoon, as Emperor he will be ridiculous. Once stripped of success, the pedestal removed, a poor little skeleton; can one imagine anything more pitiful; Napoleon the Little, no more, no less.\nThink of it. At the head of the greatest people on earth, in the middle of the greatest century in history, this person has made France his prey. You are a monkey, not a lion, a parrot, not an eagle, a comedian.",
+    questionText: "How does Victor Hugo regard the French people?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "As the greatest people on earth", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t1a-q5", topicId: "hist-lm-eur-1", conceptId: "did-french-empire-napoleon-iii-come",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 1 A Q5",
+    stem: "In this edited extract from the pamphlet, Napoleon le Petit (Napoleon the Little), the French writer, Victor Hugo, gives his opinion of Napoleon III. Read it and answer the questions that follow.\n\nThough he has committed enormous crimes, he himself will remain worthless. He has glutted his soldiers, not with glory like the first Napoleon, but with wine.\nAs Dictator he is a buffoon, as Emperor he will be ridiculous. Once stripped of success, the pedestal removed, a poor little skeleton; can one imagine anything more pitiful; Napoleon the Little, no more, no less.\nThink of it. At the head of the greatest people on earth, in the middle of the greatest century in history, this person has made France his prey. You are a monkey, not a lion, a parrot, not an eagle, a comedian.",
+    questionText: "How did the French Empire of Napoleon III come to an end?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Losing the Franco-Prussian War/ Proclamation of the Third Republic/ Exile in England", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t1b", topicId: "hist-lm-eur-1", conceptId: "robert-peel-feargus-connor-developments-science",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 1 B",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Write a short paragraph on one of the following:\n1. Robert Peel.\n2. Feargus O’Connor.\n3. Developments in science, 1815-1871.\n4. Balkan nationalism.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t1c", topicId: "hist-lm-eur-1", conceptId: "system-metternich-1815-1848-did-come",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 1 C",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Answer one of the following:\n1. What was the system of Metternich, 1815-1848, and how did it come to an end?\n2. What did Karl Marx and/or Robert Owen contribute towards a view of society?\n3. How did Giuseppe Mazzini help the cause of Italian unification?\n4. What were the main improvements which Haussmann made to the city of Paris?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t2a-q1", topicId: "hist-lm-eur-2", conceptId: "claim-made-british-naval-power",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 2 A Q1",
+    stem: "In this edited extract the Daily Mail newspaper comments (5/2/1903) on what it sees as a growing threat from Germany. Read it and answer the questions below.\n\nWhile great naval power in the hands of Britain cannot be a menace, in the hands of Germany it will be a great peril to the world.\nThe recent history of Germany is one of daring aggression.\nThe lack of space at home forces Germany to conquer the colonies of others, or perish.",
+    questionText: "What claim is made for British naval power?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "British naval power “cannot be a menace”", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t2a-q2", topicId: "hist-lm-eur-2", conceptId: "claim-made-german-naval-power",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 2 A Q2",
+    stem: "In this edited extract the Daily Mail newspaper comments (5/2/1903) on what it sees as a growing threat from Germany. Read it and answer the questions below.\n\nWhile great naval power in the hands of Britain cannot be a menace, in the hands of Germany it will be a great peril to the world.\nThe recent history of Germany is one of daring aggression.\nThe lack of space at home forces Germany to conquer the colonies of others, or perish.",
+    questionText: "What claim is made for German naval power?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "German naval power would be “a great peril to the world”", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t2a-q3", topicId: "hist-lm-eur-2", conceptId: "feature-recent-history-germany",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 2 A Q3",
+    stem: "In this edited extract the Daily Mail newspaper comments (5/2/1903) on what it sees as a growing threat from Germany. Read it and answer the questions below.\n\nWhile great naval power in the hands of Britain cannot be a menace, in the hands of Germany it will be a great peril to the world.\nThe recent history of Germany is one of daring aggression.\nThe lack of space at home forces Germany to conquer the colonies of others, or perish.",
+    questionText: "From the extract, what was a feature of the recent history of Germany?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Aggression", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t2a-q4", topicId: "hist-lm-eur-2", conceptId: "must-germany-conquer-colonies-others-perish",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 2 A Q4",
+    stem: "In this edited extract the Daily Mail newspaper comments (5/2/1903) on what it sees as a growing threat from Germany. Read it and answer the questions below.\n\nWhile great naval power in the hands of Britain cannot be a menace, in the hands of Germany it will be a great peril to the world.\nThe recent history of Germany is one of daring aggression.\nThe lack of space at home forces Germany to conquer the colonies of others, or perish.",
+    questionText: "According to the extract, why must Germany conquer the colonies of others or perish?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because of lack of space at home/ Germany is not big enough", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t2a-q5", topicId: "hist-lm-eur-2", conceptId: "dreadnought",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 2 A Q5",
+    stem: "In this edited extract the Daily Mail newspaper comments (5/2/1903) on what it sees as a growing threat from Germany. Read it and answer the questions below.\n\nWhile great naval power in the hands of Britain cannot be a menace, in the hands of Germany it will be a great peril to the world.\nThe recent history of Germany is one of daring aggression.\nThe lack of space at home forces Germany to conquer the colonies of others, or perish.",
+    questionText: "What was the Dreadnought?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Battleship/ Warship", marks: 6, contextNote: "Ship = 3M", permittedMarks: [0,3,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t2b", topicId: "hist-lm-eur-2", conceptId: "anti-semitism-russia-second-international-wilfred",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 2 B",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Write a short paragraph on one of the following:\n1. Anti-Semitism in Russia.\n2. The Second International.\n3. Wilfred Owen.\n4. The Paris Peace Settlement after World War I.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t2c", topicId: "hist-lm-eur-2", conceptId: "problems-caused-bismarck-relations-catholic-church",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 2 C",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Answer one of the following:\n1. What problems were caused by Bismarck’s relations with the Catholic Church in Germany?\n2. What were the achievements of the Krupp family and/or of Karl Benz?\n3. What was the naval policy of Wilhelm II and how did it influence British foreign policy?\n4. Why did many women join the workforce during World War I and what did they contribute?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t3a-q1", topicId: "hist-lm-eur-3", conceptId: "job-russian-worker",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 3 A Q1",
+    stem: "George F. Kennan, a US diplomat posted to Moscow, 1933-1937, describes an encounter with a worker on a collective farm in 1936. Read it and answer the questions that follow.\n\nI asked the worker what type of work was he doing on the farm. He was a bookkeeper for a collective farm near Moscow, and travelled to the farm on suburban trains every day. He got 200 roubles a month, in addition to 60 kilograms of potatoes, 30 litres of milk, and some vegetables.\nHow were conditions on the collective farm?\nHorrible.\nWhat was the trouble? Wasn’t the harvest enough to go around?\nEnough to go round? There wasn’t a penny left for distribution. The trouble was not the harvest. The trouble was corruption. The leaders of the farm stole everything.",
+    questionText: "What job had the Russian worker?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bookkeeper/ Accountant", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t3a-q2", topicId: "hist-lm-eur-3", conceptId: "did-worker-travel-work-day",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 3 A Q2",
+    stem: "George F. Kennan, a US diplomat posted to Moscow, 1933-1937, describes an encounter with a worker on a collective farm in 1936. Read it and answer the questions that follow.\n\nI asked the worker what type of work was he doing on the farm. He was a bookkeeper for a collective farm near Moscow, and travelled to the farm on suburban trains every day. He got 200 roubles a month, in addition to 60 kilograms of potatoes, 30 litres of milk, and some vegetables.\nHow were conditions on the collective farm?\nHorrible.\nWhat was the trouble? Wasn’t the harvest enough to go around?\nEnough to go round? There wasn’t a penny left for distribution. The trouble was not the harvest. The trouble was corruption. The leaders of the farm stole everything.",
+    questionText: "How did the worker travel to work each day?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By train", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t3a-q3", topicId: "hist-lm-eur-3", conceptId: "worker-paid",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 3 A Q3",
+    stem: "George F. Kennan, a US diplomat posted to Moscow, 1933-1937, describes an encounter with a worker on a collective farm in 1936. Read it and answer the questions that follow.\n\nI asked the worker what type of work was he doing on the farm. He was a bookkeeper for a collective farm near Moscow, and travelled to the farm on suburban trains every day. He got 200 roubles a month, in addition to 60 kilograms of potatoes, 30 litres of milk, and some vegetables.\nHow were conditions on the collective farm?\nHorrible.\nWhat was the trouble? Wasn’t the harvest enough to go around?\nEnough to go round? There wasn’t a penny left for distribution. The trouble was not the harvest. The trouble was corruption. The leaders of the farm stole everything.",
+    questionText: "How was the worker paid?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "200 roubles per month", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "an allowance of milk and vegetables", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t3a-q4", topicId: "hist-lm-eur-3", conceptId: "trouble-worker-place-work",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 3 A Q4",
+    stem: "George F. Kennan, a US diplomat posted to Moscow, 1933-1937, describes an encounter with a worker on a collective farm in 1936. Read it and answer the questions that follow.\n\nI asked the worker what type of work was he doing on the farm. He was a bookkeeper for a collective farm near Moscow, and travelled to the farm on suburban trains every day. He got 200 roubles a month, in addition to 60 kilograms of potatoes, 30 litres of milk, and some vegetables.\nHow were conditions on the collective farm?\nHorrible.\nWhat was the trouble? Wasn’t the harvest enough to go around?\nEnough to go round? There wasn’t a penny left for distribution. The trouble was not the harvest. The trouble was corruption. The leaders of the farm stole everything.",
+    questionText: "What was the trouble at the worker’s place of work?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Corruption/ Farm leaders stole everything", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t3a-q5", topicId: "hist-lm-eur-3", conceptId: "reason-stalin-wished-collectivise-land-russia",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 3 A Q5",
+    stem: "George F. Kennan, a US diplomat posted to Moscow, 1933-1937, describes an encounter with a worker on a collective farm in 1936. Read it and answer the questions that follow.\n\nI asked the worker what type of work was he doing on the farm. He was a bookkeeper for a collective farm near Moscow, and travelled to the farm on suburban trains every day. He got 200 roubles a month, in addition to 60 kilograms of potatoes, 30 litres of milk, and some vegetables.\nHow were conditions on the collective farm?\nHorrible.\nWhat was the trouble? Wasn’t the harvest enough to go around?\nEnough to go round? There wasn’t a penny left for distribution. The trouble was not the harvest. The trouble was corruption. The leaders of the farm stole everything.",
+    questionText: "Give one reason why Stalin wished to collectivise the land of Russia?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason for collectivisation", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t3b", topicId: "hist-lm-eur-3", conceptId: "third-french-republic-technology-warfare-home",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 3 B",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "Write a short paragraph on one of the following:\n1. The Third French Republic.\n2. The technology of warfare.\n3. The “Home Front” in Britain during World War II.\n4. Bing Crosby’s contribution to radio and cinema.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t3c", topicId: "hist-lm-eur-3", conceptId: "did-jarrow-march-october-1936-take",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 3 C",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "Answer one of the following:\n1. Why did the Jarrow March of October 1936 take place and what did it achieve?\n2. How did church-state relations develop in Italy under Mussolini?\n3. What took place at the Nuremberg Rallies in Germany in the 1930s?\n4. How successful was Stalin’s leadership during World War II?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t4a-q1", topicId: "hist-lm-eur-4", conceptId: "countries-shown-cartoon",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 4 A Q1",
+    stem: "This is a cartoon comment on the Schuman Plan (1950) by the German cartoonist, Klaus Pielert. It shows Schuman at work on a sewing machine. Study it and answer the questions that follow.",
+    questionText: "What two countries are shown in the cartoon?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "France", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "(West) Germany", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t4a-q2", topicId: "hist-lm-eur-4", conceptId: "schuman-attempting",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 4 A Q2",
+    stem: "This is a cartoon comment on the Schuman Plan (1950) by the German cartoonist, Klaus Pielert. It shows Schuman at work on a sewing machine. Study it and answer the questions that follow.",
+    questionText: "What is Schuman attempting to do?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To join up the two countries/ To achieve more unity and harmony between the two countries", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t4a-q3", topicId: "hist-lm-eur-4", conceptId: "schuman-pleased-his-work-reason",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 4 A Q3",
+    stem: "This is a cartoon comment on the Schuman Plan (1950) by the German cartoonist, Klaus Pielert. It shows Schuman at work on a sewing machine. Study it and answer the questions that follow.",
+    questionText: "Is Schuman pleased with his work? Give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Yes. He looks satisfied/ smug/ smiling", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t4a-q4", topicId: "hist-lm-eur-4", conceptId: "cartoonist-confident-schuman-plan-will-succeed",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 4 A Q4",
+    stem: "This is a cartoon comment on the Schuman Plan (1950) by the German cartoonist, Klaus Pielert. It shows Schuman at work on a sewing machine. Study it and answer the questions that follow.",
+    questionText: "Is the cartoonist confident that the Schuman Plan will succeed? Explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No. He has a safety pin ready to do a rough job of holding them together", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t4a-q5", topicId: "hist-lm-eur-4", conceptId: "apart-robert-schuman-politician-who-important",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 4 A Q5",
+    stem: "This is a cartoon comment on the Schuman Plan (1950) by the German cartoonist, Klaus Pielert. It shows Schuman at work on a sewing machine. Study it and answer the questions that follow.",
+    questionText: "Apart from Robert Schuman, name one politician who was important during the moves towards European unity, 1945-1957.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid politician, eg Monnet", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t4b", topicId: "hist-lm-eur-4", conceptId: "division-germany-after-1945-imre-nagy",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 4 B",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Write a short paragraph on one of the following:\n1. The division of Germany after 1945.\n2. Imre Nagy.\n3. Pope John Paul II.\n4. The impact of the computer on society.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t4c", topicId: "hist-lm-eur-4", conceptId: "leadership-did-nikita-khrushchev-provide-soviet",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 4 C",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Answer one of the following questions:\n1. What leadership did Nikita Khrushchev provide in Soviet Russia?\n2. How did the Oil Crisis of 1973 affect Europe?\n3. What changes in church practices did the Second Vatican Council bring about?\n4. Why did the Soviet government consider Alexander Solzhenitsyn a dissident writer?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t5a-q1", topicId: "hist-lm-eur-5", conceptId: "did-jinnah-lead",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 5 A Q1",
+    stem: "In this edited extract M.A. Jinnah, leader of the Muslim League, speaks on the many obstacles to Indian unity. Read it and answer the questions that follow.\n\nHow can you ever dream of Hindu-Muslim unity? We have no intermarriages. We have not the same calendar. The Muslims believe in a single god and the Hindus worship many idols.\nThe Hindus worship animals. No Hindu will take food from a Muslim. They consider cows sacred – we want to eat them.",
+    questionText: "What did M.A. Jinnah lead?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Muslim League", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t5a-q2", topicId: "hist-lm-eur-5", conceptId: "mention-religious-difference-between-hindus-muslims",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 5 A Q2",
+    stem: "In this edited extract M.A. Jinnah, leader of the Muslim League, speaks on the many obstacles to Indian unity. Read it and answer the questions that follow.\n\nHow can you ever dream of Hindu-Muslim unity? We have no intermarriages. We have not the same calendar. The Muslims believe in a single god and the Hindus worship many idols.\nThe Hindus worship animals. No Hindu will take food from a Muslim. They consider cows sacred – we want to eat them.",
+    questionText: "Mention a religious difference between Hindus and Muslims noted in the extract.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Muslims worship one God while Hindus worship many idols/ Hindus consider cows sacred while Hindus want to eat them", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t5a-q3", topicId: "hist-lm-eur-5", conceptId: "does-jinnah-say-food",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 5 A Q3",
+    stem: "In this edited extract M.A. Jinnah, leader of the Muslim League, speaks on the many obstacles to Indian unity. Read it and answer the questions that follow.\n\nHow can you ever dream of Hindu-Muslim unity? We have no intermarriages. We have not the same calendar. The Muslims believe in a single god and the Hindus worship many idols.\nThe Hindus worship animals. No Hindu will take food from a Muslim. They consider cows sacred – we want to eat them.",
+    questionText: "What does Jinnah say about food?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No Hindu will take food from a Muslim", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t5a-q4", topicId: "hist-lm-eur-5", conceptId: "did-jinnah-expect-hindu-muslim-unity",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 5 A Q4",
+    stem: "In this edited extract M.A. Jinnah, leader of the Muslim League, speaks on the many obstacles to Indian unity. Read it and answer the questions that follow.\n\nHow can you ever dream of Hindu-Muslim unity? We have no intermarriages. We have not the same calendar. The Muslims believe in a single god and the Hindus worship many idols.\nThe Hindus worship animals. No Hindu will take food from a Muslim. They consider cows sacred – we want to eat them.",
+    questionText: "Did Jinnah expect Hindu-Muslim unity? Give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No. Because of the many differences which he notes in the extract", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t5a-q5", topicId: "hist-lm-eur-5", conceptId: "1947-british-solution-demand-indian-independence",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 5 A Q5",
+    stem: "In this edited extract M.A. Jinnah, leader of the Muslim League, speaks on the many obstacles to Indian unity. Read it and answer the questions that follow.\n\nHow can you ever dream of Hindu-Muslim unity? We have no intermarriages. We have not the same calendar. The Muslims believe in a single god and the Hindus worship many idols.\nThe Hindus worship animals. No Hindu will take food from a Muslim. They consider cows sacred – we want to eat them.",
+    questionText: "In 1947, what was the British solution to the demand for Indian independence?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Partition", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t5b", topicId: "hist-lm-eur-5", conceptId: "british-withdrawal-palestine-its-effects-typical",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 5 B",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "Write a short paragraph on one of the following:\n1. British withdrawal from Palestine and its effects.\n2. Typical problems faced by development workers in Africa.\n3. Ho Chi Minh.\n4. Post-independence relations of Algeria with France and/or of Nigeria with Britain.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t5c", topicId: "hist-lm-eur-5", conceptId: "part-did-mohandas-gandhi-play-movement",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 5 C",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "Answer one of the following:\n1. What part did Mohandas Gandhi play in the movement for Indian independence?\n2. Why did Katanga break from the Congo, 1960-1965, and how did that affect peace in the region?\n3. Why did France experience problems in race relations in the 1980s?\n4. What were the achievements of Nadine Gordimer?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t6a-q1", topicId: "hist-lm-eur-6", conceptId: "city-does-code-apply",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 6 A Q1",
+    stem: "This edited extract from the Code of the City of Montgomery, Alabama, prompted the Montgomery bus boycott, 1956. Read it and answer the questions which follow.\n\nEvery person operating a bus line in the city shall provide equal but separate accommodation for white people and negroes on his buses.\nThis is to be done by requiring the employees in charge to assign passengers’ seats on the vehicles in such manner as to separate the white people from the negroes.\nHowever, negro nurses in charge of white children or of sick and infirm white persons, may be assigned seats among the white people.",
+    questionText: "To what city does the Code apply?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Montgomery", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t6a-q2", topicId: "hist-lm-eur-6", conceptId: "type-accommodation-must-those-operating-buses",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 6 A Q2",
+    stem: "This edited extract from the Code of the City of Montgomery, Alabama, prompted the Montgomery bus boycott, 1956. Read it and answer the questions which follow.\n\nEvery person operating a bus line in the city shall provide equal but separate accommodation for white people and negroes on his buses.\nThis is to be done by requiring the employees in charge to assign passengers’ seats on the vehicles in such manner as to separate the white people from the negroes.\nHowever, negro nurses in charge of white children or of sick and infirm white persons, may be assigned seats among the white people.",
+    questionText: "What type of accommodation must those operating buses provide?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Separate sections for white people and for negroes", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t6a-q3", topicId: "hist-lm-eur-6", conceptId: "passengers-seated-particular-way",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 6 A Q3",
+    stem: "This edited extract from the Code of the City of Montgomery, Alabama, prompted the Montgomery bus boycott, 1956. Read it and answer the questions which follow.\n\nEvery person operating a bus line in the city shall provide equal but separate accommodation for white people and negroes on his buses.\nThis is to be done by requiring the employees in charge to assign passengers’ seats on the vehicles in such manner as to separate the white people from the negroes.\nHowever, negro nurses in charge of white children or of sick and infirm white persons, may be assigned seats among the white people.",
+    questionText: "According to the extract, why are passengers seated in a particular way?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "So as to separate white people from negroes", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t6a-q4", topicId: "hist-lm-eur-6", conceptId: "exceptions-made-seating-arrangement",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 6 A Q4",
+    stem: "This edited extract from the Code of the City of Montgomery, Alabama, prompted the Montgomery bus boycott, 1956. Read it and answer the questions which follow.\n\nEvery person operating a bus line in the city shall provide equal but separate accommodation for white people and negroes on his buses.\nThis is to be done by requiring the employees in charge to assign passengers’ seats on the vehicles in such manner as to separate the white people from the negroes.\nHowever, negro nurses in charge of white children or of sick and infirm white persons, may be assigned seats among the white people.",
+    questionText: "What exceptions are made to the seating arrangement?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Negro nurses who are minding white people may sit among the white people", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t6a-q5", topicId: "hist-lm-eur-6", conceptId: "did-montgomery-bus-boycott-come-end",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 6 A Q5",
+    stem: "This edited extract from the Code of the City of Montgomery, Alabama, prompted the Montgomery bus boycott, 1956. Read it and answer the questions which follow.\n\nEvery person operating a bus line in the city shall provide equal but separate accommodation for white people and negroes on his buses.\nThis is to be done by requiring the employees in charge to assign passengers’ seats on the vehicles in such manner as to separate the white people from the negroes.\nHowever, negro nurses in charge of white children or of sick and infirm white persons, may be assigned seats among the white people.",
+    questionText: "How did the Montgomery bus boycott come to an end?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Alabama court (and US Supreme Court) decided racial segregation laws on buses were unconstitutional/ Montgomery City passed a bye- law allowing black bus passengers to sit wherever they liked", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t6b", topicId: "hist-lm-eur-6", conceptId: "marilyn-monroe-muhammad-ali-moon-landing",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 6 B",
+    stem: "The United States and world, 1945-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. Marilyn Monroe.\n2. Muhammad Ali.\n3. The moon landing, 1969.\n4. SALT and Star Wars.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-lm-s3t6c", topicId: "hist-lm-eur-6", conceptId: "did-joe-mccarthy-contribute-red-scare",
+    section: "3", questionRef: "2015 OL Later Modern Section 3 Topic 6 C",
+    stem: "The United States and world, 1945-1989",
+    questionText: "Answer one of the following:\n1. How did Joe McCarthy contribute to the “red scare” in the US?\n2. What leadership did Martin Luther King offer the Civil Rights movement?\n3. What policies did Lyndon Johnson follow in relation to the war in Vietnam?\n4. What criticisms did Betty Friedan or Norman Mailer make about life in the US?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "ordinary",
     paperFileid: "LC004GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
@@ -1268,7 +3138,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Jarrow March, October 1936",
     questionText: "Why were there many social and economic problems in Britain during the 1930s?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[0], schemePages: [7,8] },
+    rubric: { ...ESSAY_MARKING[3], schemePages: [7,8] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3146,7 +5016,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: Calvin’s Geneva",
     questionText: "Why was Calvinism so successful and why did it spread so widely?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[3], schemePages: [19] },
+    rubric: { ...ESSAY_MARKING[0], schemePages: [19] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6807,7 +8677,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: Seville, the port of the New World",
     questionText: "How did Seville change as a result of the discovery of the New World, 1492‐1567?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[3], schemePages: [17] },
+    rubric: { ...ESSAY_MARKING[0], schemePages: [17] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10508,7 +12378,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Bardic Schools",
     questionText: "What training was provided by the Bardic Schools?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[3], schemePages: [18] },
+    rubric: { ...ESSAY_MARKING[0], schemePages: [18] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -14157,7 +16027,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Plantation of Laois/Offaly",
     questionText: "What was the purpose of the Plantation of Laois/Offaly and did it achieve its purpose?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[3], schemePages: [17] },
+    rubric: { ...ESSAY_MARKING[0], schemePages: [17] },
   } as SecCard,
   {
     ...base, kind: "question",
