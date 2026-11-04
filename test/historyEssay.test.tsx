@@ -22,7 +22,7 @@ import {
   historyCmTally,
   historyEssayMarks,
   historyOeId,
-  historyOneElementId,
+  historyCapId,
   historyParagraphCountId,
   historyParagraphId,
   historyRemoveParagraph,
@@ -36,6 +36,8 @@ import {
 vi.mock('../components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new Promise(() => {})) }));
 
 type EssayCard = SecRubricCard & { rubric: HistoryEssayRubric };
+/** The papers whose essays are carded so far (lane batch 2 adds one sitting a commit). */
+const CARDED_ESSAY_PAPERS = ['2021 higher em', '2021 higher lm', '2025 higher lm'];
 const essays = [...HISTORY_HIGHER, ...HISTORY_ORDINARY]
   .filter((card): card is EssayCard => isRubricCard(card) && card.rubric.system === 'history-essay');
 const byId = (id: string) => essays.find(card => card.id === id)!;
@@ -52,42 +54,55 @@ const placed = (marks: number[], oe?: number, extra: HistoryEssayScores = {}): H
 });
 
 describe('the shipped History essay cards', () => {
-  it('cards 2025 Higher Later Modern whole: 44 essays and Q4, and nothing else yet', () => {
-    expect(essays).toHaveLength(45);
-    expect(essays.every(card => card.year === 2025 && card.level === 'higher' && /Later Modern/.test(card.questionRef))).toBe(true);
-    expect(essays.filter(card => card.totalMarks === 100)).toHaveLength(44);
-    expect(essays.filter(card => card.rubric.cm.elementRule)).toHaveLength(27);
+  it('cards every essay of each carded paper: Higher 44 essays + Q4, Ordinary parts B and C + Q4', () => {
+    const byPaper = new Map<string, EssayCard[]>();
+    for (const card of essays) {
+      const paper = `${card.year} ${card.level} ${/Early Modern/.test(card.questionRef) ? 'em' : 'lm'}`;
+      byPaper.set(paper, [...(byPaper.get(paper) ?? []), card]);
+    }
+    expect([...byPaper.keys()].sort()).toEqual(CARDED_ESSAY_PAPERS);
+    for (const [paper, cards] of byPaper) {
+      const higher = paper.includes('higher');
+      expect(cards, paper).toHaveLength(higher ? 45 : 23);
+      expect(cards.filter(card => card.section === '1').map(card => card.totalMarks), paper).toEqual([higher ? 40 : 20]);
+      expect(new Set(cards.filter(card => card.section !== '1').map(card => card.totalMarks)), paper)
+        .toEqual(new Set(higher ? [100] : [30, 40]));
+      expect(cards.every(card => card.rubric.cm.mode === (higher ? 'paragraph' : 'core-statement')), paper).toBe(true);
+    }
+    // 2025 Higher Later Modern prints a NOTE on 27 of its 44 essays.
+    expect(byPaper.get('2025 higher lm')!.filter(card => card.rubric.cm.elementRule)).toHaveLength(27);
     expect(jarrow.totalMarks).toBe(40);
   });
 
   it('reconciles every ladder with its card, and refuses a broken one', () => {
     for (const card of essays) expect(tariffReconciles(card), card.id).toBe(true);
     const gap = structuredClone(famine);
-    gap.rubric.cm.bands[1].marks = [8, 9];               // drops 10 from "Very good: 8-10 marks"
+    if (gap.rubric.cm.mode === 'paragraph') gap.rubric.cm.bands[1].marks = [8, 9]; // drops 10 from "Very good: 8-10 marks"
     expect(tariffReconciles(gap)).toBe(false);
     const overlap = structuredClone(famine);
-    overlap.rubric.oe.bands[0].marks = [33, ...overlap.rubric.oe.bands[0].marks];
+    overlap.rubric.oe!.bands[0].marks = [33, ...overlap.rubric.oe!.bands[0].marks];
     expect(tariffReconciles(overlap)).toBe(false);
     expect(tariffReconciles({ ...famine, totalMarks: 99 })).toBe(false);
     const looseNote = structuredClone(famine);
-    looseNote.rubric.cm.elementRule!.max = 60;
+    looseNote.rubric.cm.elementRule!.caps[0].max = 60;
     expect(tariffReconciles(looseNote)).toBe(false);
   });
 
   it('lifts each ladder per question: Q4 has its own bands and descriptors', () => {
-    const fair = (card: EssayCard) => card.rubric.cm.bands.find(band => band.label === 'Fair')!.descriptor;
+    const fair = (card: EssayCard) => card.rubric.cm.mode === 'paragraph'
+      ? card.rubric.cm.bands.find(band => band.label === 'Fair')!.descriptor : undefined;
     expect(fair(jarrow)).toBe('Limited information/barely expressed.');
     expect(fair(famine)).toBe('Limited information/barely stated.');
-    expect(jarrow.rubric.oe.bands.map(band => band.printed)).toEqual([
+    expect(jarrow.rubric.oe!.bands.map(band => band.printed)).toEqual([
       'Excellent: 14-16 marks', 'Very good: 11-13 marks', 'Good: 6-10 marks',
       'Fair: 4-5 marks', 'Weak: 2-3 marks', 'Very weak: 0-1 mark',
     ]);
-    expect(jarrow.rubric.oe.bands.every(band => band.descriptor === undefined)).toBe(true);
-    expect(famine.rubric.oe.bands.map(band => band.printed)).toEqual([
+    expect(jarrow.rubric.oe!.bands.every(band => band.descriptor === undefined)).toBe(true);
+    expect(famine.rubric.oe!.bands.map(band => band.printed)).toEqual([
       'Excellent: 34-40 marks', 'Very good: 28-33 marks', 'Good: 22-27 marks',
       'Fair: 16-21 marks', 'Weak: 10-15 marks', 'Very weak: 0-9 marks',
     ]);
-    expect(famine.rubric.cm.elementRule).toEqual({ note: 'NOTE: TWO elements (during + after) If only ONE, Max. CM = 50', max: 50 });
+    expect(famine.rubric.cm.elementRule).toEqual({ note: 'NOTE: TWO elements (during + after) If only ONE, Max. CM = 50', caps: [{ when: 'If only ONE', max: 50 }] });
     expect(science.rubric.cm.elementRule).toBeUndefined();
     // The summation cap is a direction, and the scheme's own "open mind" sentence is on every essay.
     expect(famine.rubric.cm.directions).toContain('(Summation which is mere repetition = max. 4 marks)');
@@ -127,8 +142,8 @@ describe('scoring by paragraph', () => {
     expect(tally.cm).toBe(60);
   });
 
-  it('applies the NOTE ceiling only when the student says the answer covers one element, and only where a NOTE is printed', () => {
-    const one = { [historyOneElementId]: 1 };
+  it('applies the NOTE ceiling only when the student says it applies, and only where a NOTE is printed', () => {
+    const one = { [historyCapId]: 1 };
     expect(historyEssayMarks(famine, placed([12, 12, 12, 12, 12], 30))).toBe(90);
     expect(historyEssayMarks(famine, placed([12, 12, 12, 12, 12], 30, one))).toBe(80);
     expect(historyCmTally(famine.rubric, placed([], undefined, one)).ceiling).toBe(50);
@@ -181,6 +196,64 @@ describe('scoring by paragraph', () => {
   });
 });
 
+describe('scoring by Core Statement and by a NOTE with several ceilings', () => {
+  // Built from the shipped Q4's own strings so only the mode is synthetic; the
+  // Ordinary decks that ship this mode are pinned in their own sitting tests.
+  const core: EssayCard = {
+    ...jarrow, id: 'synthetic-ol-b', totalMarks: 30,
+    rubric: {
+      ...jarrow.rubric,
+      cm: {
+        mode: 'core-statement', max: 20, definition: 'CM', directions: [],
+        statementLead: 'lead', statementKinds: ['a', 'b', 'c'], procedureLead: 'procedure',
+        procedure: ['Each completed Core Statement is awarded 5 marks.', 'An incomplete Core Statement at the end of an answer may merit 1-4 marks.'],
+        perStatement: 5, incomplete: [1, 2, 3, 4],
+      },
+      oe: { max: 10, bands: [
+        { label: 'Excellent', marks: [9, 10], printed: 'Excellent: 9-10 marks' },
+        { label: 'Very good', marks: [7, 8], printed: 'Very good: 7-8 marks' },
+        { label: 'Good', marks: [5, 6], printed: 'Good: 5-6 marks' },
+        { label: 'Fair', marks: [3, 4], printed: 'Fair: 3-4 marks' },
+        { label: 'Poor', marks: [0, 1, 2], printed: 'Poor: 0-2 marks' },
+      ], directions: [] },
+    },
+  };
+  const cs = (completed: number, incomplete?: number, oe?: number): HistoryEssayScores => ({
+    'history:cm:statements': completed,
+    ...(incomplete === undefined ? {} : { 'history:cm:incomplete': incomplete }),
+    ...(oe === undefined ? {} : { [historyOeId]: oe }),
+  });
+
+  it('counts completed Core Statements at the printed value, an incomplete one at its printed marks, capped', () => {
+    expect(tariffReconciles(core)).toBe(true);
+    expect(historyEssayMarks(core, cs(3, 2, 7))).toBe(15 + 2 + 7);
+    expect(historyEssayMarks(core, cs(6, 4, 10))).toBe(20 + 10);
+    expect(historyCmTally(core.rubric, cs(6, 4)).statements).toEqual({ completed: 6, completedMarks: 30, incomplete: 4, raw: 34 });
+    // An incomplete Core Statement is worth less than a complete one; 5 is not printed for it.
+    expect(historyEssayMarks(core, cs(0, 5))).toBe(0);
+    expect(historyEssayMarks(core, cs(2.5, undefined, 8))).toBe(8);
+    expect(tariffReconciles({ ...core, rubric: { ...core.rubric, cm: { ...core.rubric.cm, incomplete: [1, 2, 5] } as typeof core.rubric.cm } })).toBe(false);
+  });
+
+  it('marks an Ordinary Q4 with no OE as placed once the CM is', () => {
+    const q4 = { ...core, totalMarks: 20, rubric: { ...core.rubric, oe: undefined } };
+    expect(tariffReconciles(q4)).toBe(true);
+    expect(historyEssayMarks(q4, cs(4))).toBe(20);
+    expect(historyEssayMarks(q4, cs(1, 3, 10))).toBe(8);
+  });
+
+  it('applies the one ceiling the student picks from a NOTE that prints several', () => {
+    const three = structuredClone(famine);
+    three.rubric.cm.elementRule = { note: 'NOTE: THREE elements (why + how + outcome) If only ONE, Max. CM = 40 If only TWO, Max. CM = 50',
+      caps: [{ when: 'If only ONE', max: 40 }, { when: 'If only TWO', max: 50 }] };
+    const full = placed([12, 12, 12, 12, 12], 30);
+    expect(historyEssayMarks(three, full)).toBe(90);
+    expect(historyEssayMarks(three, { ...full, [historyCapId]: 1 })).toBe(70);
+    expect(historyEssayMarks(three, { ...full, [historyCapId]: 2 })).toBe(80);
+    expect(historyEssayMarks(three, { ...full, [historyCapId]: 3 })).toBe(90);
+  });
+});
+
 describe('the History essay panel', () => {
   it('says the scheme prints no model answer, in the scheme’s own terms', () => {
     render(<HistoryEssayPanel card={famine} scores={{}} onScore={vi.fn()} />);
@@ -193,13 +266,13 @@ describe('the History essay panel', () => {
     const onScore = vi.fn();
     const { unmount } = render(<HistoryEssayPanel card={famine} scores={{}} onScore={onScore} />);
     expect(screen.getByText('NOTE: TWO elements (during + after) If only ONE, Max. CM = 50')).toBeInTheDocument();
-    const toggle = screen.getByRole('button', { name: /In my judgement, my answer deals with only one of these elements/ });
+    const toggle = screen.getByRole('button', { name: /In my judgement, the note’s “If only ONE” applies to my answer/ });
     expect(toggle).toHaveAttribute('aria-pressed', 'false');
     fireEvent.click(toggle);
-    expect(onScore).toHaveBeenCalledWith(historyOneElementId, 1);
+    expect(onScore).toHaveBeenCalledWith(historyCapId, 1);
     unmount();
     render(<HistoryEssayPanel card={science} scores={{}} onScore={vi.fn()} />);
-    expect(screen.queryByRole('button', { name: /only one of these elements/ })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /In my judgement, the note’s/ })).not.toBeInTheDocument();
   });
 
   it('starts with no paragraph slots and adds one at a time', () => {

@@ -29,19 +29,31 @@ const cards = [...HISTORY_HIGHER, ...HISTORY_ORDINARY];
 
 /** The Early Modern papers with History cards and no Atlas entry yet (4 Nov 2026). */
 const NOT_YET_IN_ATLAS = [
-  'history-early-modern 2021 ordinary', 'history-early-modern 2022 ordinary',
-  'history-early-modern 2023 higher', 'history-early-modern 2023 ordinary',
-  'history-early-modern 2024 higher', 'history-early-modern 2024 ordinary',
-  'history-early-modern 2025 higher', 'history-early-modern 2025 ordinary',
+  'history-early-modern 2021 ordinary',
+  'history-early-modern 2022 ordinary',
+  'history-early-modern 2023 higher',
+  'history-early-modern 2023 ordinary',
+  'history-early-modern 2024 higher',
+  'history-early-modern 2024 ordinary',
+  'history-early-modern 2025 higher',
+  'history-early-modern 2025 ordinary',
 ];
 
-/** The syllabus topic a card files under, as the Atlas's canonical tag range for it:
- *  hist-lm-irl-3 is Ireland topic 3, tagged history-2-8 .. history-2-11. */
+/** Early Modern papers whose documents question still carries the Atlas's old
+ *  single Early Modern strand (history-early-modern-0-0) rather than its case
+ *  study. history_early_modern.py retags each as its sitting is carded. */
+const PLACEHOLDER_DBQ = ['history-early-modern 2022 higher'];
+
+/** The syllabus topic a card files under, as the Atlas's canonical tag range for it
+ *  (curriculum.ts strands history-0 to history-3): hist-lm-irl-3 is Later Modern
+ *  Ireland topic 3, tagged history-2-8 .. history-2-11; hist-em-eur-2 is Early
+ *  Modern Europe topic 2, history-1-4 .. history-1-7. */
+const AREA: Record<string, number> = { 'em-irl': 0, 'em-eur': 1, 'lm-irl': 2, 'lm-eur': 3 };
 const topicRange = (topicId: string) => {
   const m = /^hist-(lm|em)-(irl|eur)-(\d)$/.exec(topicId);
   if (!m) return null;
   const k = Number(m[3]);
-  return { field: m[1], area: m[2] === 'irl' ? 2 : 3, from: (k - 1) * 4, to: (k - 1) * 4 + 3 };
+  return { area: AREA[`${m[1]}-${m[2]}`], from: (k - 1) * 4, to: (k - 1) * 4 + 3 };
 };
 
 describe('History cards in the Topic Atlas', () => {
@@ -63,15 +75,20 @@ describe('History cards in the Topic Atlas', () => {
     expect([...missingPapers].sort()).toEqual(NOT_YET_IN_ATLAS);
   });
 
-  it('files each Later Modern card under the Atlas topic of its own printed question', () => {
+  it('files each card under the Atlas topic of its own printed question', () => {
     const wrong: string[] = [];
+    const placeholders = new Set<string>();
     for (const card of cards) {
       const address = historyAtlasQuestion(card)!;
       const range = topicRange(card.topicId);
       expect(range, card.id).not.toBeNull();
-      if (range!.field !== 'lm') continue;
-      const paper = topicsForPaper(address.subjectId, card.year, card.level as 'higher' | 'ordinary', 'ev', address.fileid)!;
+      const paper = topicsForPaper(address.subjectId, card.year, card.level as 'higher' | 'ordinary', 'ev', address.fileid);
+      if (!paper) continue;   // a pinned paper not yet in the Atlas
       const tags = paper.q.find(q => q.n === address.n)!;
+      if (tags.primary === 'history-early-modern-0-0') {
+        placeholders.add(`${address.subjectId} ${card.year} ${card.level}`);
+        continue;
+      }
       const inRange = [tags.primary, tags.secondary].filter(Boolean).some(tag => {
         const m = /^history-(\d)-(\d+)$/.exec(tag!);
         return Boolean(m) && Number(m![1]) === range!.area && Number(m![2]) >= range!.from && Number(m![2]) <= range!.to;
@@ -79,6 +96,7 @@ describe('History cards in the Topic Atlas', () => {
       if (!inRange) wrong.push(`${card.id} (${card.topicId}) -> ${address.n} tagged ${tags.primary}${tags.secondary ? `/${tags.secondary}` : ''}`);
     }
     expect(wrong).toEqual([]);
+    expect([...placeholders].sort()).toEqual(PLACEHOLDER_DBQ);
   });
 
   it('gives every essay card its block’s question, and the documents question’s Q4 the question "4"', () => {

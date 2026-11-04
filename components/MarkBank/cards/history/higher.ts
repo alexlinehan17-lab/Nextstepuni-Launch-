@@ -101,6 +101,630 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
    "markingGuideNote": "Place each paragraph you wrote, in the order you wrote it, on the one band that fits it. The CM stops at its maximum, so a paragraph past it counts 0m. Then place your whole answer on one OE band.",
    "schemeFileid": "LC004ALP000EV",
    "cm": {
+    "mode": "paragraph",
+    "max": 24,
+    "definition": "These marks are awarded for historical content which is accurate and relevant to the question asked.",
+    "paragraphLead": "A paragraph or paragraph equivalent may be one of the following:",
+    "paragraphKinds": [
+     "(i) A relevant introduction giving the background situation and/or defining the terms and explaining the approach;",
+     "(ii) An episode, phase or stage in a sequence of events;",
+     "(iii) An aspect of a topic/issue, with supporting factual references;",
+     "(iv) A point in an argument or discussion, with supporting factual references;",
+     "(v) An explanation of a concept or term, with supporting factual references;",
+     "(vi) A number of significant, relevant statements of fact, explanation or comment which, although not connected or related, can be taken together and assessed as a paragraph equivalent;",
+     "(vii) A good concluding paragraph or summation, which is not mere repetition."
+    ],
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       11,
+       12
+      ],
+      "printed": "Excellent: 11-12 marks",
+      "descriptor": "Outstanding piece of analysis, exposition or commentary. Clearly expressed, accurate and substantial information."
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "printed": "Very good: 8-10 marks",
+      "descriptor": "Very good material, accurately and clearly expressed."
+     },
+     {
+      "label": "Good",
+      "marks": [
+       6,
+       7
+      ],
+      "printed": "Good: 6-7 marks",
+      "descriptor": "Worthwhile information, reasonably well expressed."
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4,
+       5
+      ],
+      "printed": "Fair: 3-5 marks",
+      "descriptor": "Limited information/barely expressed."
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks",
+      "descriptor": "Trivial/irrelevant/grave errors."
+     }
+    ],
+    "directions": [
+     "(Summation which is mere repetition = max 4 marks)"
+    ]
+   }
+  },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "To mark the answer, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at this level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "oe": {
+    "max": 40,
+    "definition": "Overall Evaluation (OE) for the quality of the answer as a whole in the context of the set question.",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "printed": "Excellent: 34-40 marks",
+      "descriptor": "Excellent in its treatment of the set question, particularly if it shows detailed learning, wide reading, analysis or extensive coverage."
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "printed": "Very good: 28-33 marks",
+      "descriptor": "Very good – but not excellent - in its treatment of the set question, ie: accurate and substantial."
+     },
+     {
+      "label": "Good",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "printed": "Good: 22-27 marks",
+      "descriptor": "Good standard treatment of the set question, without being exceptional in the information or the commentary supplied."
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "printed": "Fair: 16-21 marks",
+      "descriptor": "Fair attempt at the set question, but has identifiable defects, e.g.: incomplete coverage, irrelevant data, factual inaccuracies."
+     },
+     {
+      "label": "Weak",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "printed": "Weak: 10-15 marks",
+      "descriptor": "Poor, in that it fails to answer the question as set, but has some merit."
+     },
+     {
+      "label": "Very weak",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "printed": "Very weak: 0-9 marks",
+      "descriptor": "Very poor answer which, at best, offers only scraps of information."
+     }
+    ],
+    "directionsLead": "In awarding the OE, the examiner will evaluate the quality of the answer, taking into account the following, as appropriate:",
+    "directions": [
+     "To what extent has the candidate shown the ability to analyse the issues involved in the question asked (i.e.: more than mere narrative)?",
+     "To what extent has the candidate marshalled the relevant evidence to support his/her analysis?",
+     "To what extent has the candidate shown the ability to argue a case and to reach conclusions (i.e.: to answer the question as asked)?"
+    ]
+   },
+   "markingGuideNote": "Place each paragraph you wrote, in the order you wrote it, on the one band that fits it. The CM stops at its maximum, so a paragraph past it counts 0m. Then place your whole answer on one OE band.",
+   "schemeFileid": "LC004ALP000EV",
+   "cm": {
+    "mode": "paragraph",
+    "max": 60,
+    "definition": "Cumulative Mark (CM) for historical content which is accurate and relevant to the question as asked.",
+    "paragraphLead": "The examiner will divide the answer into paragraphs or paragraph equivalents:",
+    "paragraphKinds": [
+     "(i) A relevant introduction giving the background situation and/or defining the terms and explaining the approach;",
+     "(ii) An episode, phase or stage in a sequence of events;",
+     "(iii) An aspect of a topic/issue, with supporting factual references;",
+     "(iv) A point in an argument or discussion, with supporting factual references;",
+     "(v) An explanation of a concept or term, with supporting factual references;",
+     "(vi) A number of significant, relevant statements of fact, explanation or comment which, although not connected or related, can be taken together and assessed as a paragraph equivalent;",
+     "(vii) A good concluding paragraph or summation, which is not mere repetition."
+    ],
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       11,
+       12
+      ],
+      "printed": "Excellent: 11-12 marks",
+      "descriptor": "Outstanding piece of analysis, exposition or commentary. Clearly expressed, accurate and substantial information."
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "printed": "Very good: 8-10 marks",
+      "descriptor": "Very good material, accurately and clearly expressed."
+     },
+     {
+      "label": "Good",
+      "marks": [
+       6,
+       7
+      ],
+      "printed": "Good: 6-7 marks",
+      "descriptor": "Worthwhile information, reasonably well expressed."
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4,
+       5
+      ],
+      "printed": "Fair: 3-5 marks",
+      "descriptor": "Limited information/barely stated."
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks",
+      "descriptor": "Trivial/irrelevant/grave errors."
+     }
+    ],
+    "directions": [
+     "(Summation which is mere repetition = max. 4 marks)"
+    ]
+   }
+  },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "In question 4, marking by paragraph begins.",
+    "The examiner will divide the answer into paragraphs or paragraph equivalents."
+   ],
+   "oe": {
+    "max": 16,
+    "lead": "In awarding OE, the examiner will consider how well the candidate deals with the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "printed": "Excellent: 14-16 marks",
+      "descriptor": "In awarding OE marks, the examiner should not expect"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "printed": "Very good: 11-13 marks",
+      "descriptor": "answers of more than 40% in quantity compared to the"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       6,
+       7,
+       8,
+       9,
+       10
+      ],
+      "printed": "Good: 6-10 marks",
+      "descriptor": "answers to the longer topic questions in Sections 2 and 3."
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       4,
+       5
+      ],
+      "printed": "Fair: 4-5 marks"
+     },
+     {
+      "label": "Weak",
+      "marks": [
+       2,
+       3
+      ],
+      "printed": "Weak: 2-3 marks",
+      "descriptor": "This principle of marking by paragraph (CM and OE)"
+     },
+     {
+      "label": "Very weak",
+      "marks": [
+       0,
+       1
+      ],
+      "printed": "Very weak: 0-1 mark",
+      "descriptor": "continues throughout Sections 2 and 3. The proportion of CM to OE remains 60/40 throughout the examination paper."
+     }
+    ],
+    "directions": []
+   },
+   "markingGuideNote": "Place each paragraph you wrote, in the order you wrote it, on the one band that fits it. The CM stops at its maximum, so a paragraph past it counts 0m. Then place your whole answer on one OE band.",
+   "schemeFileid": "LC004ALP000EV",
+   "cm": {
+    "mode": "paragraph",
+    "max": 24,
+    "definition": "These marks are awarded for historical content which is accurate and relevant to the question.",
+    "paragraphLead": "A paragraph or paragraph equivalent may be one of the following:",
+    "paragraphKinds": [
+     "(i) A relevant introduction giving the background situation and/or defining the terms and explaining the approach;",
+     "(ii) An episode, phase or stage in a sequence of events;",
+     "(iii) An aspect of a topic/issue, with supporting factual references;",
+     "(iv) A point in an argument or discussion, with supporting factual references;",
+     "(v) An explanation of a concept or term, with supporting factual references;",
+     "(vi) A number of significant, relevant statements of fact, explanation or comment which, although not connected or related, can be taken together and assessed as a paragraph equivalent;",
+     "(vii) A good concluding paragraph or summation, which is not mere repetition."
+    ],
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       11,
+       12
+      ],
+      "printed": "Excellent: 11-12 marks",
+      "descriptor": "Outstanding piece of analysis, exposition or commentary. Clearly expressed, accurate and substantial information."
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "printed": "Very good: 8-10 marks",
+      "descriptor": "Very good material, accurately and clearly expressed."
+     },
+     {
+      "label": "Good",
+      "marks": [
+       6,
+       7
+      ],
+      "printed": "Good: 6-7 marks",
+      "descriptor": "Worthwhile information, reasonably well expressed."
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4,
+       5
+      ],
+      "printed": "Fair: 3-5 marks",
+      "descriptor": "Limited information/barely expressed."
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks",
+      "descriptor": "Trivial/irrelevant/grave errors."
+     }
+    ],
+    "directions": [
+     "(Summation which is mere repetition = max 4 marks)"
+    ]
+   }
+  },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "To mark the answer, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at this level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "oe": {
+    "max": 40,
+    "definition": "Overall Evaluation (OE) for the quality of the answer as a whole in the context of the set question.",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "printed": "Excellent: 34-40 marks",
+      "descriptor": "Excellent in its treatment of the set question, particularly if it shows detailed learning, wide reading, analysis or extensive coverage."
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "printed": "Very good: 28-33 marks",
+      "descriptor": "Very good – but not excellent - in its treatment of the set question, ie: accurate and substantial."
+     },
+     {
+      "label": "Good",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "printed": "Good: 22-27 marks",
+      "descriptor": "Good standard treatment of the set question, without being exceptional in the information or the commentary supplied."
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "printed": "Fair: 16-21 marks",
+      "descriptor": "Fair attempt at the set question, but has identifiable defects, e.g.: incomplete coverage, irrelevant data, factual inaccuracies."
+     },
+     {
+      "label": "Weak",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "printed": "Weak: 10-15 marks",
+      "descriptor": "Poor, in that it fails to answer the question as set, but has some merit."
+     },
+     {
+      "label": "Very weak",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "printed": "Very weak: 0-9 marks",
+      "descriptor": "Very poor answer which, at best, offers only scraps of information."
+     }
+    ],
+    "directionsLead": "In awarding the OE, the examiner will evaluate the quality of the answer, taking into account the following, as appropriate:",
+    "directions": [
+     "To what extent has the candidate shown the ability to analyse the issues involved in the question asked (ie: more than mere narrative)?",
+     "To what extent has the candidate marshalled the relevant evidence to support his/her analysis?",
+     "To what extent has the candidate shown the ability to argue a case and to reach conclusions (ie: to answer the question as asked)?"
+    ]
+   },
+   "markingGuideNote": "Place each paragraph you wrote, in the order you wrote it, on the one band that fits it. The CM stops at its maximum, so a paragraph past it counts 0m. Then place your whole answer on one OE band.",
+   "schemeFileid": "LC004ALP000EV",
+   "cm": {
+    "mode": "paragraph",
+    "max": 60,
+    "definition": "Cumulative Mark (CM) for historical content which is accurate and relevant to the question as asked.",
+    "paragraphLead": "The examiner will divide the answer into paragraphs or paragraph equivalents:",
+    "paragraphKinds": [
+     "(i) A relevant introduction giving the background situation and/or defining the terms and explaining the approach;",
+     "(ii) An episode, phase or stage in a sequence of events;",
+     "(iii) An aspect of a topic/issue, with supporting factual references;",
+     "(iv) A point in an argument or discussion, with supporting factual references;",
+     "(v) An explanation of a concept or term, with supporting factual references;",
+     "(vi) A number of significant, relevant statements of fact, explanation or comment which, although not connected or related, can be taken together and assessed as a paragraph equivalent;",
+     "(vii) A good concluding paragraph or summation, which is not mere repetition."
+    ],
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       11,
+       12
+      ],
+      "printed": "Excellent: 11-12 marks",
+      "descriptor": "Outstanding piece of analysis, exposition or commentary. Clearly expressed, accurate and substantial information."
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "printed": "Very good: 8-10 marks",
+      "descriptor": "Very good material, accurately and clearly expressed."
+     },
+     {
+      "label": "Good",
+      "marks": [
+       6,
+       7
+      ],
+      "printed": "Good: 6-7 marks",
+      "descriptor": "Worthwhile information, reasonably well expressed."
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4,
+       5
+      ],
+      "printed": "Fair: 3-5 marks",
+      "descriptor": "Limited information/barely stated."
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks",
+      "descriptor": "Trivial/irrelevant/grave errors."
+     }
+    ],
+    "directions": [
+     "(Summation which is mere repetition = max. 4 marks)"
+    ]
+   }
+  },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "In question 4, marking by paragraph begins.",
+    "The examiner will divide the answer into paragraphs or paragraph equivalents."
+   ],
+   "oe": {
+    "max": 16,
+    "lead": "In awarding OE, the examiner will consider how well the candidate deals with the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "printed": "Excellent: 14-16 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "printed": "Very good: 11-13 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       6,
+       7,
+       8,
+       9,
+       10
+      ],
+      "printed": "Good: 6-10 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       4,
+       5
+      ],
+      "printed": "Fair: 4-5 marks"
+     },
+     {
+      "label": "Weak",
+      "marks": [
+       2,
+       3
+      ],
+      "printed": "Weak: 2-3 marks"
+     },
+     {
+      "label": "Very weak",
+      "marks": [
+       0,
+       1
+      ],
+      "printed": "Very weak: 0-1 mark"
+     }
+    ],
+    "directions": [
+     "In awarding OE marks, the examiner should not expect answers of more than 40% in quantity compared to the answers to the longer topic questions in Sections 2 and 3."
+    ]
+   },
+   "markingGuideNote": "Place each paragraph you wrote, in the order you wrote it, on the one band that fits it. The CM stops at its maximum, so a paragraph past it counts 0m. Then place your whole answer on one OE band.",
+   "schemeFileid": "LC004ALP000EV",
+   "cm": {
+    "mode": "paragraph",
     "max": 24,
     "definition": "These marks are awarded for historical content which is accurate and relevant to the question asked.",
     "paragraphLead": "A paragraph or paragraph equivalent may be one of the following:",
@@ -272,6 +896,7 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
    "markingGuideNote": "Place each paragraph you wrote, in the order you wrote it, on the one band that fits it. The CM stops at its maximum, so a paragraph past it counts 0m. Then place your whole answer on one OE band.",
    "schemeFileid": "LC004ALP000EV",
    "cm": {
+    "mode": "paragraph",
     "max": 60,
     "definition": "Cumulative Mark (CM) for historical content which is accurate and relevant to the question as asked.",
     "paragraphLead": "The examiner will divide the answer into paragraphs or paragraph equivalents:",
@@ -567,6 +1192,546 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s1-q4", topicId: "hist-lm-eur-6", conceptId: "extent-did-montgomery-bus-boycott-bring",
+    section: "1", questionRef: "2021 HL Later Modern Section 1 Q4",
+    stem: "Case study: The Montgomery bus boycott, 1956",
+    questionText: "To what extent did the Montgomery bus boycott bring about change?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[0], schemePages: [12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t1-q1", topicId: "hist-lm-irl-1", conceptId: "did-connell-achieve-emancipation-but-fail",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 1 Q1",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Why did O’Connell achieve Emancipation but fail to achieve Repeal?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Emancipation + Repeal) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t1-q2", topicId: "hist-lm-irl-1", conceptId: "effective-government-private-responses-famine-ireland",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 1 Q2",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "How effective were government and private responses to Famine in Ireland, 1845-1849?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (government + private responses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t1-q3", topicId: "hist-lm-irl-1", conceptId: "contribution-irish-affairs-young-ireland-fenianism",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 1 Q3",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "What was the contribution to Irish affairs of Young Ireland and/or Fenianism?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t1-q4", topicId: "hist-lm-irl-1", conceptId: "contribution-irish-life-mother-mary-aikenhead",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 1 Q4",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "What was the contribution of two of the following to Irish life: Mother Mary Aikenhead; William Carleton; William Dargan?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t2-q1", topicId: "hist-lm-irl-2", conceptId: "during-period-1870-1914-social-economic",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 2 Q1",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "During the period 1870-1914, what was the social and economic impact of land agitation and land reform and/or the co-operative movement?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t2-q2", topicId: "hist-lm-irl-2", conceptId: "agree-parnell-failure-political-leader-argue",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 2 Q2",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Would you agree that Parnell was a failure as a political leader? Argue your case.",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t2-q3", topicId: "hist-lm-irl-2", conceptId: "did-unionists-oppose-self-government-ireland",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 2 Q3",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Why did Unionists oppose self-government for Ireland and how did the Ulster Question develop during the period 1870-1914?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why + how) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t2-q4", topicId: "hist-lm-irl-2", conceptId: "contribution-irish-life-isabella-tod-james",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 2 Q4",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "What was the contribution of two of the following to Irish life: Isabella Tod; James Larkin; Douglas Hyde?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t3-q1", topicId: "hist-lm-irl-3", conceptId: "negotiations-terms-anglo-irish-treaty-1921",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 3 Q1",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "Why were both the negotiations and terms of the Anglo-Irish Treaty, 1921, controversial?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (negotiations + terms) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t3-q2", topicId: "hist-lm-irl-3", conceptId: "main-events-eucharistic-congress-1932-did",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 3 Q2",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "What were the main events of the Eucharistic Congress, 1932, and how did the Congress contribute to Irish identity?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (main events + identity) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t3-q3", topicId: "hist-lm-irl-3", conceptId: "impact-world-war-ireland-north-south",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 3 Q3",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "What was the impact of World War II on Ireland, North and South?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (North + South) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t3-q4", topicId: "hist-lm-irl-3", conceptId: "contribution-irish-life-patrick-pearse-evie",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 3 Q4",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "What was the contribution of two of the following to Irish life: Patrick Pearse; Evie Hone; James J. McElligott?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t4-q1", topicId: "hist-lm-irl-4", conceptId: "challenges-opportunities-did-emigrants-face-during",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 4 Q1",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "What challenges and opportunities did emigrants to the US face during the period 1840-1920 and/or 1920-1966?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (challenges + opportunities) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t4-q2", topicId: "hist-lm-irl-4", conceptId: "during-period-1920-1966-drew-irish",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 4 Q2",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "During the period 1920-1966, what drew Irish emigrants to Britain and to what extent did they become assimilated?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (what drew emigrants to Britain + assimilation) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t4-q3", topicId: "hist-lm-irl-4", conceptId: "did-irish-american-ulster-scottish-identity",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 4 Q3",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "How did Irish-American and/or Ulster-Scottish identity develop in the United States?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t4-q4", topicId: "hist-lm-irl-4", conceptId: "during-period-1920-1966-fortunes-irish",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 4 Q4",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "During the period 1920-1966, what were the fortunes of Irish missionaries abroad?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t5-q1", topicId: "hist-lm-irl-5", conceptId: "key-social-economic-developments-1949-1969",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 5 Q1",
+    stem: "Politics and society in Northern Ireland, 1949-1993",
+    questionText: "What were key social and economic developments, 1949-1969?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t5-q2", topicId: "hist-lm-irl-5", conceptId: "agree-terence-neill-failure-political-leader",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 5 Q2",
+    stem: "Politics and society in Northern Ireland, 1949-1993",
+    questionText: "Would you agree that Terence O’Neill was a failure as a political leader? Argue your case.",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t5-q3", topicId: "hist-lm-irl-5", conceptId: "sunningdale-agreement-did-power-sharing-executive",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 5 Q3",
+    stem: "Politics and society in Northern Ireland, 1949-1993",
+    questionText: "What was the Sunningdale Agreement and why did the power-sharing executive, 1973-1974, collapse?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Sunningdale Agreement + why it collapsed) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t5-q4", topicId: "hist-lm-irl-5", conceptId: "divided-societies-sometimes-culturally-productive-true",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 5 Q4",
+    stem: "Politics and society in Northern Ireland, 1949-1993",
+    questionText: "Divided societies are sometimes culturally productive. How true is this of Northern Ireland, 1949-1993?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t6-q1", topicId: "hist-lm-irl-6", conceptId: "study-republic-ireland-1949-1989-did",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 6 Q1",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "From your study of the Republic of Ireland, 1949-1989, what did you learn about two of the following: changing attitudes towards Irish language and culture; the impact of Vatican II; the influence of television?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t6-q2", topicId: "hist-lm-irl-6", conceptId: "problems-faced-lemass-jack-lynch-taoiseach",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 6 Q2",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "What problems faced Seán Lemass and/or Jack Lynch as Taoiseach?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t6-q3", topicId: "hist-lm-irl-6", conceptId: "affected-republic-ireland-more-membership-membership",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 6 Q3",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Which affected the Republic of Ireland more, membership of the UN or membership of the EEC? Argue your case, referring to both.",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (UN + EEC) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s2t6-q4", topicId: "hist-lm-irl-6", conceptId: "contribution-irish-life-sylvia-meehan-garret",
+    section: "2", questionRef: "2021 HL Later Modern Section 2 Topic 6 Q4",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "What was the contribution to Irish life of Sylvia Meehan and/or Garret FitzGerald?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t1-q1", topicId: "hist-lm-eur-1", conceptId: "during-period-1815-1871-did-italy",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 1 Q1",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "During the period 1815-1871, how did Italy and/or Germany move towards unity?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t1-q2", topicId: "hist-lm-eur-1", conceptId: "did-changes-agriculture-industry-affect-europe",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 1 Q2",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "How did changes in agriculture and/or industry affect Europe, 1815-1871?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t1-q3", topicId: "hist-lm-eur-1", conceptId: "during-period-1815-1871-developments-took",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 1 Q3",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "During the period 1815-1871, what developments took place in city planning, with special reference to Haussmann’s Paris?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t1-q4", topicId: "hist-lm-eur-1", conceptId: "importance-karl-marx-charles-darwin",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 1 Q4",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "What was the importance of Karl Marx and/or Charles Darwin?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t2-q1", topicId: "hist-lm-eur-2", conceptId: "during-period-1871-1914-importance-german",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 2 Q1",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "During the period 1871-1914, what was the importance of German industrialisation and its impact on society and/or the invention and early history of the motor car?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t2-q2", topicId: "hist-lm-eur-2", conceptId: "factors-contributed-outbreak-war-europe-1914",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 2 Q2",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "What factors contributed to the outbreak of war in Europe in 1914?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t2-q3", topicId: "hist-lm-eur-2", conceptId: "impact-war-revolution-russia-1900-1920",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 2 Q3",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "What was the impact of war and revolution on Russia, 1900-1920?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (war + revolution) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t2-q4", topicId: "hist-lm-eur-2", conceptId: "did-learn-role-women-society-1871",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 2 Q4",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "What did you learn about the role of women in society, 1871-1920, from your study of one or more of the following: Marie Curie; women in the workforce during World War I; Rosa Luxemburg?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t3-q1", topicId: "hist-lm-eur-3", conceptId: "main-characteristics-italian-fascism-under-mussolini",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 3 Q1",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "What were the main characteristics of Italian fascism under Mussolini?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t3-q2", topicId: "hist-lm-eur-3", conceptId: "extent-did-hitler-foreign-policy-1933",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 3 Q2",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "To what extent did Hitler’s foreign policy, 1933-1939, contribute to the outbreak of World War II?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t3-q3", topicId: "hist-lm-eur-3", conceptId: "agree-stalin-transformed-soviet-union-1924",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 3 Q3",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "Would you agree that Stalin transformed the Soviet Union, 1924-1945?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t3-q4", topicId: "hist-lm-eur-3", conceptId: "study-great-britain-1920-1945-did",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 3 Q4",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "From your study of Great Britain, 1920-1945, what did you learn about two of the following: J.M. Keynes; the success or failure of the Jarrow March, October 1936; life on the Home Front during World War II?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t4-q1", topicId: "hist-lm-eur-4", conceptId: "did-berlin-blockade-1948-1949-hungarian",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 4 Q1",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "How did the Berlin Blockade (1948-1949) and/or the Hungarian Uprising (1956) contribute to international tensions?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,19] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t4-q2", topicId: "hist-lm-eur-4", conceptId: "europe-affected-movements-towards-unity-1945",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 4 Q2",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "How was Europe affected by movements towards unity, 1945-1973, and/or the 1973 Oil Crisis?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,19] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t4-q3", topicId: "hist-lm-eur-4", conceptId: "effective-mikhail-gorbachev-leadership-domestic-foreign",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 4 Q3",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "How effective was Mikhail Gorbachev’s leadership in domestic and foreign affairs?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (domestic + foreign) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,19] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t4-q4", topicId: "hist-lm-eur-4", conceptId: "impact-john-lennon-margaret-thatcher-pope",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 4 Q4",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "What was the impact of two of the following: John Lennon; Margaret Thatcher; Pope John Paul II?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,19] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t5-q1", topicId: "hist-lm-eur-5", conceptId: "importance-britain-india-british-withdrawal-india",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 5 Q1",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "What was the importance for Britain and India, of British withdrawal from India?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Britain + India) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [14,15,19] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t5-q2", topicId: "hist-lm-eur-5", conceptId: "during-period-1945-1990-europe-role",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 5 Q2",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "During the period 1945-1990, what was Europe’s role in Arab-Israeli conflict?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,19] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t5-q3", topicId: "hist-lm-eur-5", conceptId: "during-period-1945-1990-did-race",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 5 Q3",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "During the period 1945-1990, how did race relations cause problems in Britain and/or France?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,19] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-lm-s3t5-q4", topicId: "hist-lm-eur-5", conceptId: "effective-achieving-his-aims-chi-minh",
+    section: "3", questionRef: "2021 HL Later Modern Section 3 Topic 5 Q4",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "How effective in achieving his aims was Ho Chi Minh and/or Achmad Sukarno?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [14,15,19] },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC096ALP000EV",
@@ -781,6 +1946,546 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2021 Higher Level examination paper, Early Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s1-q4", topicId: "hist-em-eur-2", conceptId: "extent-jesuit-mission-china-successful",
+    section: "1", questionRef: "2021 HL Early Modern Section 1 Q4",
+    stem: "Case study: The Jesuit mission in China",
+    questionText: "To what extent was the Jesuit mission in China successful?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t1-q1", topicId: "hist-em-irl-1", conceptId: "important-deputyship-sir-edward-poynings",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 1 Q1",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "How important was the deputyship of Sir Edward Poynings?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,31] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t1-q2", topicId: "hist-em-irl-1", conceptId: "extent-did-religious-change-take-place",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 1 Q2",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "To what extent did religious change take place in Ireland during the reigns of Henry VIII and Edward VI?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (Henry VIII + Edward VI) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,31] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t1-q3", topicId: "hist-em-irl-1", conceptId: "did-queen-mary-adopt-policy-plantation",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 1 Q3",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "Why did Queen Mary I adopt a policy of plantation and how successful was the plantation of Laois/Offaly by the end of her reign (1558)?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (why + how successful) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,31] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t1-q4", topicId: "hist-em-irl-1", conceptId: "study-society-economy-1494-1558-did",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 1 Q4",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "From your study of society and economy, 1494-1558, what did you learn about two of the following: towns and guilds; internal markets; imports and exports; women and marriage under Gaelic law?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,31] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t2-q1", topicId: "hist-em-irl-2", conceptId: "did-dublin-pale-change-during-reign",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 2 Q1",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
+    questionText: "How did Dublin and the Pale change during the reign of Elizabeth I?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (Dublin + the Pale) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,31] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t2-q2", topicId: "hist-em-irl-2", conceptId: "desmond-rebellion-put-down-successful-plantation",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 2 Q2",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
+    questionText: "How was the Desmond Rebellion put down and how successful was the Plantation of Munster?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (rebellion put down + success of plantation) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,31] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t2-q3", topicId: "hist-em-irl-2", conceptId: "account-hugh-neill-early-successes-eventual",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 2 Q3",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
+    questionText: "How do you account for Hugh O’Neill’s early successes and eventual failure in the Nine Years’ War?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (successes + failures) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,31] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t2-q4", topicId: "hist-em-irl-2", conceptId: "study-culture-religion-1558-1603-did",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 2 Q4",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
+    questionText: "From your study of culture and religion, 1558-1603, what did you learn about two of the following: Tadhg Dall Ó hUiginn; Meiler Magrath’s clerical career; re-establishment of the Reformation under Elizabeth I?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,31] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t3-q1", topicId: "hist-em-irl-3", conceptId: "effective-religious-plantation-policies-james",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 3 Q1",
+    stem: "Kingdom v. colony – the struggle for mastery in Ireland, 1603-1660",
+    questionText: "How effective were the religious and plantation policies of James I?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (religious + plantation) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,31] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t3-q2", topicId: "hist-em-irl-3", conceptId: "there-revolt-against-government-ireland-1641",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 3 Q2",
+    stem: "Kingdom v. colony – the struggle for mastery in Ireland, 1603-1660",
+    questionText: "Why was there a revolt against the government in Ireland in 1641 and what did you learn about it from your study of the depositions of 1641?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (Why + the depositions) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,31] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t3-q3", topicId: "hist-em-irl-3", conceptId: "main-characteristics-cromwell-campaign-ireland-extent",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 3 Q3",
+    stem: "Kingdom v. colony – the struggle for mastery in Ireland, 1603-1660",
+    questionText: "What were the main characteristics of Cromwell’s campaign in Ireland, and to what extent was Ireland changed by Cromwell’s actions here?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (characteristics + change in Ireland) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,31] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t3-q4", topicId: "hist-em-irl-3", conceptId: "study-culture-religion-1603-1660-did",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 3 Q4",
+    stem: "Kingdom v. colony – the struggle for mastery in Ireland, 1603-1660",
+    questionText: "From your study of culture and religion, 1603-1660, what did you learn about two of the following: Keating’s Foras Feasa; Louvain; Archbishop Rinuccini?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,31] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t4-q1", topicId: "hist-em-irl-4", conceptId: "extent-irish-catholics-hopes-better-treatment",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 4 Q1",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "To what extent were Irish Catholics’ hopes of better treatment fulfilled during the reigns of Charles II and James II, 1660-1688?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (Charles II + James II) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,32] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t4-q2", topicId: "hist-em-irl-4", conceptId: "key-social-economic-developments-restoration-dublin",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 4 Q2",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "What were key social and economic developments in Restoration Dublin?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,32] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t4-q3", topicId: "hist-em-irl-4", conceptId: "during-period-1660-1715-fortunes-irish",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 4 Q3",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "During the period 1660-1715, what were the fortunes of Irish trade?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,32] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t4-q4", topicId: "hist-em-irl-4", conceptId: "did-learn-patrick-sarsfield-tories-rapparees",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 4 Q4",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "What did you learn about two of the following: Patrick Sarsfield; Tories and Rapparees; the Jacobite poets?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,32] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t5-q1", topicId: "hist-em-irl-5", conceptId: "did-ponsonbys-contribute-protestant-nation",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 5 Q1",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "What did the Ponsonbys contribute to the ‘Protestant Nation’?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,32] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t5-q2", topicId: "hist-em-irl-5", conceptId: "grievances-whiteboys-effective-attempts-seek-redress",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 5 Q2",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "What were the grievances of the Whiteboys and how effective were their attempts to seek redress?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (grievances + how effective) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,32] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t5-q3", topicId: "hist-em-irl-5", conceptId: "contribution-charles-lucas-arthur-guinness-irish",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 5 Q3",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "What was the contribution of Charles Lucas and/or Arthur Guinness to Irish affairs?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,32] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t5-q4", topicId: "hist-em-irl-5", conceptId: "study-culture-religion-1715-1770-did",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 5 Q4",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "From your study of culture and religion, 1715-1770, what did you learn about two of the following: Turlough O’Carolan; na Cúirteanna Filíochta; the trial of Father Sheehy?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,32] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t6-q1", topicId: "hist-em-irl-6", conceptId: "effective-contribution-irish-affairs-henry-grattan",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 6 Q1",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "How effective was the contribution to Irish affairs of Henry Grattan?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,32] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t6-q2", topicId: "hist-em-irl-6", conceptId: "did-ireland-trade-economy-develop-during",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 6 Q2",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "How did Ireland’s trade and economy develop during the period 1770-1815?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,32] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t6-q3", topicId: "hist-em-irl-6", conceptId: "controversial-wexford-rebellion-its-suppression-passing",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 6 Q3",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "What was controversial about the Wexford Rebellion and its suppression and/or the passing of the Act of Union?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,32] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s2t6-q4", topicId: "hist-em-irl-6", conceptId: "importance-arthur-leary-nano-nagle-maynooth",
+    section: "2", questionRef: "2021 HL Early Modern Section 2 Topic 6 Q4",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "What was the importance of two of the following: Fr. Arthur O’Leary; Nano Nagle; Maynooth College?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (out of the three offered) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,32] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t1-q1", topicId: "hist-em-eur-1", conceptId: "did-discovery-new-world-affect-europe",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 1 Q1",
+    stem: "Europe from Renaissance to Reformation, 1492-1567",
+    questionText: "How did the discovery of the New World affect Europe in general and Seville in particular?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (Europe and Seville) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,33] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t1-q2", topicId: "hist-em-eur-1", conceptId: "distinctive-contribution-renaissance-niccol-machiavelli-pieter",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 1 Q2",
+    stem: "Europe from Renaissance to Reformation, 1492-1567",
+    questionText: "What was the distinctive contribution to the Renaissance of Niccolò Machiavelli and/or Pieter Breughel the Elder?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,33] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t1-q3", topicId: "hist-em-eur-1", conceptId: "did-reformation-begin-german-states-only",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 1 Q3",
+    stem: "Europe from Renaissance to Reformation, 1492-1567",
+    questionText: "Why did the Reformation begin in the German states and why was it only a partial success?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (begin in Germany + partial success) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,33] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t1-q4", topicId: "hist-em-eur-1", conceptId: "study-politics-administration-1492-1567-did",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 1 Q4",
+    stem: "Europe from Renaissance to Reformation, 1492-1567",
+    questionText: "From your study of politics and administration, 1492-1567, what did you learn about two of the following: the union of Castile and Aragon; the divorce of Henry VIII and Catherine of Aragon; Charles V and the struggle against the Turks?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,33] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t3-q1", topicId: "hist-em-eur-3", conceptId: "steps-taken-cardinal-richelieu-promote-absolute",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 3 Q1",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "What steps were taken by Cardinal Richelieu to promote the absolute power of the Crown?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,33] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t3-q2", topicId: "hist-em-eur-3", conceptId: "during-period-1609-1660-extent-there",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 3 Q2",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "During the period 1609-1660, to what extent was there a “military revolution”, with particular reference to the Thirty Years War?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (“military revolution” and Thirty Years War) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,33] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t3-q3", topicId: "hist-em-eur-3", conceptId: "during-period-1609-1660-significant-developments",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 3 Q3",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "During the period 1609-1660, what significant developments took place in two of the following: music; art; science?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,33] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t3-q4", topicId: "hist-em-eur-3", conceptId: "study-society-economy-1609-1660-did",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 3 Q4",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "From your study of society and economy, 1609-1660, what did you learn about two of the following: women, work and family; “witch-hunting”; the Dutch empire in Asia?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,33] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t4-q1", topicId: "hist-em-eur-4", conceptId: "france-louis-xiv-importance-bastien-prestre",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 4 Q1",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "In the France of Louis XIV what was the importance of two of the following: Sébastien le Prestre de Vauban; the Huguenots; the court of Versailles?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,33] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t4-q2", topicId: "hist-em-eur-4", conceptId: "did-peter-great-develop-streltsy-did",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 4 Q2",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "Why did Peter the Great develop the Streltsy and how did he extend the frontiers of Russia?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (Streltsy + frontiers) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,33] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t4-q3", topicId: "hist-em-eur-4", conceptId: "did-trading-companies-such-english-east",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 4 Q3",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "How did trading companies such as the (English) East India Company and/or the development of the money market contribute to social and economic change, 1660-1715?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,33] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t4-q4", topicId: "hist-em-eur-4", conceptId: "contribution-science-isaac-newton-gottfried-wilhelm",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 4 Q4",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "What was the contribution to science of Isaac Newton and/or Gottfried Wilhelm Leibnitz?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,33] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t5-q1", topicId: "hist-em-eur-5", conceptId: "think-frederick-great-deserved-his-title",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 5 Q1",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "Do you think that Frederick the Great deserved his title? Argue your case.",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,34] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t5-q2", topicId: "hist-em-eur-5", conceptId: "during-period-1715-1775-did-diplomacy",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 5 Q2",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "During the period 1715-1775, how did both diplomacy and military planning develop in Europe?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (diplomacy + military planning) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,34] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t5-q3", topicId: "hist-em-eur-5", conceptId: "did-more-contribute-communication-ideas-denis",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 5 Q3",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "How did one or more of the following contribute to the communication of ideas: Denis Diderot; Jean Jacques Rousseau; Benjamin Franklin?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,34] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t5-q4", topicId: "hist-em-eur-5", conceptId: "study-society-economy-1715-1775-did",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 5 Q4",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "From your study of society and economy, 1715-1775, what did you learn about two of the following: mercantilism and laissez-faire; road and canal building; how the West Indian slave plantations contributed to international trade?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,34] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t6-q1", topicId: "hist-em-eur-6", conceptId: "important-changes-took-place-france-between",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 6 Q1",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "What important changes took place in France between the outbreak of revolution in 1789 and the execution of Louis XVI in 1793?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,34] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t6-q2", topicId: "hist-em-eur-6", conceptId: "during-period-1775-1815-social-economic",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 6 Q2",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "During the period 1775-1815, what social and economic changes were brought about by the agricultural and industrial revolutions?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], cm: { ...ESSAY_MARKING[3].cm, elementRule: {"note":"NOTE: TWO elements (agricultural + industrial) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [29,30,34] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t6-q3", topicId: "hist-em-eur-6", conceptId: "did-napoleon-preserve-betray-ideals-french",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 6 Q3",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "Did Napoleon preserve or betray the ideals of the French Revolution? Argue your case.",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,34] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2021, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2021 Higher Level — © State Examinations Commission.",
+    id: "hist-2021-hl-em-s3t6-q4", topicId: "hist-em-eur-6", conceptId: "during-period-1775-1815-did-cultural",
+    section: "3", questionRef: "2021 HL Early Modern Section 3 Topic 6 Q4",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "During the period 1775-1815, how did cultural nationalism develop in Europe?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [29,30,34] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2317,7 +4022,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Jarrow March, October 1936",
     questionText: "Would you agree that the Jarrow March was a total failure? Argue your case.",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[0], schemePages: [11,12] },
+    rubric: { ...ESSAY_MARKING[4], schemePages: [11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2329,7 +4034,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What was the impact of the Great Famine on life in Ireland both during and after the Famine, 1845-1870?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (during + after) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,15] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (during + after) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2341,7 +4046,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What did Young Ireland and Fenianism contribute to Irish nationalism?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Young Ireland + Fenianism) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,15] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Young Ireland + Fenianism) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2353,7 +4058,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "In what ways did Cardinal Paul Cullen influence political attitudes and religious practices?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (political + religious) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,15] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (political + religious) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2365,7 +4070,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What developments took place in science and technology, 1815-1870?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,15] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2377,7 +4082,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Who was the more successful campaigner, Michael Davitt or James Larkin? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Davitt + Larkin) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,15] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Davitt + Larkin) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2389,7 +4094,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "During the years 1870-1914, how effective was Unionism in resisting Home Rule?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,15] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2401,7 +4106,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "To what extent did the GAA and the Gaelic League achieve success, 1884-1914?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (GAA + Gaelic League) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,15] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (GAA + Gaelic League) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2413,7 +4118,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "How did Isabella Tod and/or Hanna Sheehy-Skeffington contribute to social reform?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,15] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2425,7 +4130,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "What factors contributed to the rise of Sinn Féin and the decline of Home Rule, 1912-1918?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (rise of SF + decline of HR) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,15] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (rise of SF + decline of HR) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2437,7 +4142,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "How effective was Éamon de Valera’s leadership during the Treaty negotiations and Civil War (1921-1923) and during World War II (1939-1945)?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Treaty and Civil War + WWII) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,15] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Treaty and Civil War + WWII) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2449,7 +4154,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "After partition, what attempts were made to promote cultural identity in Ireland, North and South? Refer to one or more of the following: language; religion; education.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (North + South) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,15] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (North + South) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2461,7 +4166,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "In what ways did World War II affect Northern Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,15] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2473,7 +4178,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What were the main characteristics of the Irish diaspora, 1840-1966?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,16] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2485,7 +4190,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "Would you agree that Irish nationalism was more effective as an international force than Irish unionism? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (nationalism + unionism) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,16] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (nationalism + unionism) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2497,7 +4202,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What did you learn about emigration from your study of the life and work of Domhnall Mac Amhlaigh?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,16] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2509,7 +4214,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "To what extent did the careers of Joe Kennedy and John F. Kennedy reflect Irish-American experience?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Joe Kennedy + JFK) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,16] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Joe Kennedy + JFK) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2521,7 +4226,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "During the years 1949-1969, who was the more effective leader, Lord Brookeborough or Terence O’Neill? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Brookeborough + O’Neill) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,16] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Brookeborough + O’Neill) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2533,7 +4238,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What was the Coleraine University controversy and how did it contribute to tensions in Northern Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Coleraine + tensions in NI) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,16] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Coleraine + tensions in NI) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2545,7 +4250,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What was the contribution of Bernadette Devlin to the affairs of Northern Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,16] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2557,7 +4262,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What moves were made towards finding a peaceful resolution of the “Troubles”, 1973-1993?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,16] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2569,7 +4274,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "In what ways did the Republic of Ireland expand its involvement in international affairs, 1949-1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,16] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2581,7 +4286,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "What problems faced Seán Lemass as Taoiseach and how effectively did he respond to them?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (problems + response) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,16] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (problems + response) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2593,7 +4298,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "What was the impact of television and the communications revolution on Irish life?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,16] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2605,7 +4310,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "How did Mary Robinson and Sylvia Meehan contribute to Irish life?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Robinson and Meehan) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,16] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Robinson and Meehan) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2617,7 +4322,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "What contrasting views of society were held by Clemens Metternich and Karl Marx?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Metternich + Marx) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,17] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Metternich + Marx) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2629,7 +4334,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "In the years leading up to 1871, who contributed more to his country’s move toward unity, Giuseppe Mazzini or Otto von Bismarck? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Mazzini + Bismarck) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,17] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Mazzini + Bismarck) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2641,7 +4346,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "How effective was the leadership of Napoleon III at home and abroad?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (at home + abroad) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,17] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (at home + abroad) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2653,7 +4358,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "During the years 1815-1870, what key changes took place in agriculture and/or industry?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,17] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2665,7 +4370,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "How did economic crisis and war affect Tsarist Russia, 1871-1917?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (economic crisis + war) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,17] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (economic crisis + war) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2677,7 +4382,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "How effective was the leadership of Otto von Bismarck at home and abroad, 1871-1890?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (at home + abroad) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,17] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (at home + abroad) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2689,7 +4394,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "What was the contribution of Wilfred Owen to the literature of World War I?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,17] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2701,7 +4406,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "During the years 1871-1920, what was the importance of the development and early history of the motor car and/or developments in medicine?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,17] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2713,7 +4418,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "What were the main moves towards European unity, 1945-1957?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,17] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2725,7 +4430,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "To what extent did the careers of both Nikita Khrushchev and Mikhail Gorbachev end in failure?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Khrushchev + Gorbachev) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,17] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Khrushchev + Gorbachev) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2737,7 +4442,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "What changes were brought about by the Second Vatican Council and by Pope John Paul II?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Vatican II + John Paul II) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,17] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Vatican II + John Paul II) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2749,7 +4454,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "What did two of the following contribute to European culture: Alexander Solzhenitsyn; Simone de Beauvoir; John Lennon?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (any two) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,17] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (any two) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2761,7 +4466,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "During the years 1945-1990, why did European countries retreat from empire?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"(NOTE: Refer to at least two European countries If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,18] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"(NOTE: Refer to at least two European countries If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,18] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2773,7 +4478,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "What was the Suez Crisis, 1956, and what was its impact on international relations?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Suez + international relations) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,18] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Suez + international relations) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,18] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2785,7 +4490,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "How effectively did Charles de Gaulle tackle problems relating to French colonialism?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,18] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,18] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2797,7 +4502,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "How was post-colonial Africa portrayed in the literature of Nadine Gordimer and/or Chinua Achebe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,18] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,18] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2809,7 +4514,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "How successful was the US in dealing with problems posed by Berlin and Cuba?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Berlin + Cuba) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,18] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Berlin + Cuba) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,18] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2821,7 +4526,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "How effective was the leadership of President Lyndon Johnson at home and abroad?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (at home + abroad) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,18] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (at home + abroad) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,18] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2833,7 +4538,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "During the years 1945-1989, what was the American Dream and to what extent did it reflect the realities of American life?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (American Dream + reality) If only ONE, Max. CM = 50","max":50} }, schemePages: [13,14,18] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (American Dream + reality) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [13,14,18] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -2845,7 +4550,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "During the years 1945-1989, how and why did religion become an increasingly powerful force in American life?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [13,14,18] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [13,14,18] },
   } as SecCard,
   {
     ...base, kind: "question",

@@ -91,13 +91,29 @@ EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
 # `history-essay` rubric cards rather than excluded. 2025 Higher Later Modern
 # is the prototype (lane batch 1, 4 Nov 2026); the rest follow once it has
 # been reviewed.
-ESSAY_PAPERS = {(2025, 'hl', 'lm')}
+ESSAY_PAPERS = {
+    (2021, 'hl', 'em'),
+    (2021, 'hl', 'lm'),
+    (2025, 'hl', 'lm'),
+}
 
-# NextStepUni's own guidance under the panel, never presented as the SEC's.
-ESSAY_GUIDE = ('Place each paragraph you wrote, in the order you wrote it, on '
-               'the one band that fits it. The CM stops at its maximum, so a '
-               'paragraph past it counts 0m. Then place your whole answer on '
-               'one OE band.')
+# NextStepUni's own guidance under the panel, never presented as the SEC's,
+# for each way the scheme marks: (CM mode, prints an OE).
+ESSAY_GUIDE = {
+    ('paragraph', True): ('Place each paragraph you wrote, in the order you '
+                          'wrote it, on the one band that fits it. The CM '
+                          'stops at its maximum, so a paragraph past it counts '
+                          '0m. Then place your whole answer on one OE band.'),
+    ('core-statement', True): ('Count the Core Statements you completed and '
+                               'place an incomplete last one if you wrote one. '
+                               'The CM stops at its maximum, so a Core Statement '
+                               'past it counts 0m. Then place your whole answer '
+                               'on one OE band.'),
+    ('core-statement', False): ('Count the Core Statements you completed and '
+                                'place an incomplete last one if you wrote one. '
+                                'The CM stops at its maximum, so a Core '
+                                'Statement past it counts 0m.'),
+}
 
 # The floor a topic-title pairing has to clear. The two documents print the
 # same title, so a real pair scores near 1.0; the floor is where a pair would
@@ -179,39 +195,87 @@ def _bands(bands):
             for b in bands]
 
 
+# The printed alternatives under an Ordinary part B or C: "1. The Tithe War.
+# 2. William Dargan. ..." -- numbered 1 to 4 in print order.
+ALTERNATIVE = re.compile(r'(?:^|\s)([1-4])\.\s+')
+
+
+def _alternatives(text):
+    """The four printed alternatives of a part B or C, or None."""
+    cuts = [m for m in ALTERNATIVE.finditer(text)]
+    if [int(m.group(1)) for m in cuts] != [1, 2, 3, 4]:
+        return None
+    return [text[m.start():(cuts[i + 1].start() if i + 1 < len(cuts) else len(text))].strip()
+            for i, m in enumerate(cuts)]
+
+
 def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
     """One `history-essay` rubric card, or the reason it cannot be made."""
     unit = key[0]
-    marking = S.paragraph_marking('q4' if unit == '1' else 'essay')
-    cm, oe = marking['cm'], marking['oe']
-    # The question's own ceiling must agree with the apparatus it is marked
-    # under, and both with the marks the PAPER prints for the question.
-    if unit != '1' and (ask.cm_max, ask.oe_max) != (cm['max'], oe['max']):
-        return 'the essay ceiling disagrees with the paragraph-marking maximum'
-    if ask.total != cm['max'] + oe['max'] or P.marks.get(key) != ask.total:
-        return 'the paper, the scheme and the CM + OE maxima disagree'
-    rubric_cm = {
-        'max': cm['max'],
-        'definition': cm['definition'],
-        'paragraphLead': cm['paragraphLead'],
-        'paragraphKinds': cm['paragraphKinds'],
-        'bands': _bands(cm['bands']),
-        'directions': cm['directions'],
-    }
-    if ask.note is not None:
-        if ask.note_max is None or not 0 < ask.note_max < cm['max']:
-            return "the question's NOTE prints no CM ceiling below the maximum"
-        rubric_cm['elementRule'] = {'note': ask.note, 'max': ask.note_max}
-    rubric_oe = {'max': oe['max']}
-    for name in ('definition', 'lead'):
-        if name in oe:
-            rubric_oe[name] = oe[name]
-    rubric_oe['bands'] = _bands(oe['bands'])
-    if 'directionsLead' in oe:
-        rubric_oe['directionsLead'] = oe['directionsLead']
-    rubric_oe['directions'] = oe['directions']
-    pages = sorted(set(marking['pages']) | ({ask.page} if ask.page else set()))
+    part = unit.rsplit(' ', 1)[-1] if level == 'ol' and unit != '1' else None
     question = P.asks[key]
+    if level == 'hl':
+        marking = S.paragraph_marking('q4' if unit == '1' else 'essay')
+        cm, oe = marking['cm'], marking['oe']
+        rubric_cm = {
+            'mode': 'paragraph',
+            'max': cm['max'],
+            'definition': cm['definition'],
+            'paragraphLead': cm['paragraphLead'],
+            'paragraphKinds': cm['paragraphKinds'],
+            'bands': _bands(cm['bands']),
+            'directions': cm['directions'],
+        }
+        if unit != '1' and (ask.cm_max, ask.oe_max) != (cm['max'], oe['max']):
+            return 'the essay ceiling disagrees with the paragraph-marking maximum'
+    else:
+        marking = S.core_statement_marking('q4' if unit == '1' else part)
+        cm, oe = marking['cm'], marking['oe']
+        rubric_cm = {
+            'mode': 'core-statement',
+            'max': cm['max'],
+            'definition': (cm.get('definition')
+                           or next(g for g in marking['schemeGuidance'] if g.startswith('Mark by the principle'))),
+            'statementLead': cm['statementLead'],
+            'statementKinds': cm['statementKinds'],
+            'procedureLead': cm['procedureLead'],
+            'procedure': cm['procedure'],
+            'perStatement': cm['perStatement'],
+            'incomplete': cm['incomplete'],
+            'directions': cm['directions'],
+        }
+        if unit != '1' and (ask.cm_max, ask.oe_max) != (cm['max'], oe['max']):
+            return "the part's ceiling disagrees with the Core Statement maxima"
+    total = cm['max'] + (oe['max'] if oe else 0)
+    printed = P.marks.get(key)
+    if ask.total != total or (printed is not None and printed != total):
+        return 'the paper, the scheme and the CM + OE maxima disagree'
+    if ask.note is not None:
+        if not ask.note_caps or not all(0 < top < cm['max'] for _when, top in ask.note_caps):
+            return "the question's NOTE prints no CM ceiling below the maximum"
+        rubric_cm['elementRule'] = {'note': ask.note,
+                                    'caps': [{'when': when, 'max': top} for when, top in ask.note_caps]}
+    rubric = {'system': 'history-essay', 'schemeGuidance': marking['schemeGuidance'], 'cm': rubric_cm}
+    if oe:
+        rubric_oe = {'max': oe['max']}
+        for name in ('definition', 'lead'):
+            if name in oe:
+                rubric_oe[name] = oe[name]
+        rubric_oe['bands'] = _bands(oe['bands'])
+        if 'directionsLead' in oe:
+            rubric_oe['directionsLead'] = oe['directionsLead']
+        rubric_oe['directions'] = oe['directions']
+        rubric['oe'] = rubric_oe
+    rubric['schemePages'] = sorted(set(marking['pages']) | ({ask.page} if ask.page else set()))
+    rubric['markingGuideNote'] = ESSAY_GUIDE[rubric_cm['mode'], bool(oe)]
+    if part in ('B', 'C'):
+        # One card for the printed choice: the instruction the paper prints
+        # over it, and its four alternatives each on its own line, as printed.
+        instruction = P.instructions.get(unit)
+        items = _alternatives(question)
+        if not instruction or not items:
+            return 'the printed choice and its instruction could not be read whole'
+        question = '\n'.join([instruction, *items])
     card = {
         'id': card_id(year, level, field, key),
         'subjectId': 'history',
@@ -220,26 +284,61 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
         'year': year,
         'section': section,
         'topicId': topic_id,
+        'conceptId': concept_for(P.asks[key]),
+        'questionRef': ref,
+        'questionText': question,
+        'totalMarks': total,
+        'rubric': rubric,
+        'notes': (f'{FIELDS[field]} field of study. The scheme prints '
+                  f'{ask.evidence[:60]!r} for this ask and no model answer.'),
+    }
+    stem = (f'Case study: {P.case_title}' if unit == '1' and P.case_title
+            else P.topic_titles.get(unit.rsplit(' ', 1)[0] if part else unit))
+    if stem and len(stem) >= 20:
+        card['stem'] = stem
+    return card
+
+
+# A part the scheme prices only by its split, printing no answer: 2021
+# Ordinary Later Modern Q3(b) is exactly "One opinion = 5M / Explanation = 5M
+# / Max = 10M". Each priced component is a claimable row in the scheme's own
+# words, and the row says the scheme prints no answer for it.
+PRICED_COMPONENT = re.compile(r'([A-Z][A-Za-z \u2019\'-]{1,40}?)\s*=\s*(\d{1,3})M\b')
+TARIFF_CEILING = re.compile(r'\bMax\.?\s*=\s*(\d{1,3})M\b')
+NO_PRINTED_ANSWER = 'The scheme prints no answer here: any correct one earns the marks.'
+
+
+def tariff_only_card(P, year, level, field, key, ask, section, topic_id, ref):
+    """A point card for a part priced by its split alone, or the reason it cannot be made."""
+    evidence = ask.evidence
+    ceiling = TARIFF_CEILING.search(evidence)
+    parts = [(name.strip(), int(m)) for name, m in PRICED_COMPONENT.findall(evidence)
+             if not name.strip().lower().startswith('max')]
+    if not ceiling or not parts or sum(m for _n, m in parts) != int(ceiling.group(1)):
+        return "the part's printed split does not add up to its ceiling"
+    question = P.asks[key]
+    card = {
+        'id': card_id(year, level, field, key),
+        'subjectId': 'history',
+        'level': LEVEL_WORD[level],
+        'year': year,
+        'section': section,
+        'topicId': topic_id,
         'conceptId': concept_for(question),
         'questionRef': ref,
         'questionText': question,
-        'totalMarks': ask.total,
-        'rubric': {
-            'system': 'history-essay',
-            'schemeGuidance': marking['schemeGuidance'],
-            'cm': rubric_cm,
-            'oe': rubric_oe,
-            'schemePages': pages,
-            'markingGuideNote': ESSAY_GUIDE,
-        },
+        'tariffModel': {'kind': 'fixed'},
+        'totalMarks': int(ceiling.group(1)),
+        'rows': [{'id': f'r-{i}', 'kind': 'criterion', 'verbatim': name, 'marks': marks,
+                  'contextNote': NO_PRINTED_ANSWER}
+                 for i, (name, marks) in enumerate(parts, start=1)],
         'notes': (f'{FIELDS[field]} field of study. The scheme prints '
-                  f'{ask.evidence[:60]!r} for this ask: marking by paragraph, '
-                  'no model answer.'),
+                  f'{evidence!r} for this ask: a price for each component and no answer.'),
     }
-    stem = (f'Case study: {P.case_title}' if unit == '1' and P.case_title
-            else P.topic_titles.get(unit))
-    if stem and len(stem) >= 20:
-        card['stem'] = stem
+    if P.case_title:
+        card['stem'] = f'Case study: {P.case_title}'
+    card['sourceMaterial'] = source_material(
+        P, year, level, field, '1', P.document_pages, 'The documents', 'OFFICIAL DOCUMENTS')
     return card
 
 
@@ -364,8 +463,14 @@ def build():
                         continue
 
                     if ask.kind == 'banded' and (year, level, field) in ESSAY_PAPERS:
-                        made = essay_card(P, S, year, level, field, key, ask,
-                                          section, topic_id, ref)
+                        # An essay is priced whole on its unit; a lettered
+                        # documents part priced by its split alone is not.
+                        if key[2]:
+                            made = tariff_only_card(P, year, level, field, key, ask,
+                                                    section, topic_id, ref)
+                        else:
+                            made = essay_card(P, S, year, level, field, key, ask,
+                                              section, topic_id, ref)
                         if isinstance(made, str):
                             refuse(made, ref)
                         else:

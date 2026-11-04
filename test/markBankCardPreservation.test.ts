@@ -1259,13 +1259,21 @@ const isBiologyAdded = (id: string) => {
 const biologyAdditionIds = new Set([...BIO_HIGHER, ...BIO_ORDINARY]
   .map(card => card.id).filter(isBiologyAdded));
 const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('bio-'));
-/* 2026-11-04: History's essays and the documents question's Q4 are carded as
- * `history-essay` rubric cards (the scheme marks them by paragraph and prints
- * no model answer), 2025 Higher Later Modern first. Every one is NEW: no id is
- * replaced and the frozen History set above is unchanged, so the additions are
- * pinned on their own below. */
+/* 2026-11-04: History's essays, its Ordinary parts B and C and the documents
+ * question's Q4 are carded as `history-essay` rubric cards (the scheme marks
+ * them by paragraph or by Core Statement and prints no model answer); 2026 is
+ * carded for the first time; and the one documents part priced by its split
+ * alone becomes a point card. Every one is NEW: no id is replaced and the
+ * frozen History set above is unchanged, so the additions are pinned on their
+ * own below. */
+const HISTORY_NEW_POINT_IDS = new Set(['hist-2021-ol-lm-s1-q3b']);
+const HISTORY_ADDITIONS = {
+  counts: [135, 0],
+  hashes: ['48451da4618e497841b81f1aa5ca3c1d01462fb3dbf3f4895eebacfecefde33f', 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'],
+};
 const historyEssayIds = new Set([...HISTORY_HIGHER, ...HISTORY_ORDINARY]
-  .filter(card => card.kind === 'rubric').map(card => card.id));
+  .filter(card => card.kind === 'rubric' || card.year === 2026 || HISTORY_NEW_POINT_IDS.has(card.id))
+  .map(card => card.id));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (name.startsWith('history:')) return ids.filter(id => !historyEssayIds.has(id));
@@ -1342,14 +1350,15 @@ describe('Mark Bank card preservation', () => {
     expect(idHash(frozen), `${name}: a card ID was removed or replaced`).toBe(hash);
   });
 
-  it('pins the History essay additions beside the frozen set', () => {
-    // 2025 Higher Later Modern: 44 essays and the documents question's Q4.
+  it('pins the History additions beside the frozen set', () => {
+    // Re-pinned at every History sitting (lane batch 2): the counts and hashes
+    // are the additions as shipped, so a regeneration that drops or renames
+    // one fails here.
     const higher = HISTORY_HIGHER.map(card => card.id).filter(id => historyEssayIds.has(id));
-    expect(higher).toHaveLength(45);
-    expect(idHash(higher)).toBe('09ebf445a695108f9e329d477c32827d9de4ec0d160dfde194d9d7b577dd4b94');
-    expect(higher.every(id => id.startsWith('hist-2025-hl-lm-'))).toBe(true);
-    expect(HISTORY_ORDINARY.filter(card => historyEssayIds.has(card.id))).toHaveLength(0);
-    for (const id of higher) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
+    const ordinary = HISTORY_ORDINARY.map(card => card.id).filter(id => historyEssayIds.has(id));
+    expect([higher.length, ordinary.length]).toEqual(HISTORY_ADDITIONS.counts);
+    expect([idHash(higher), idHash(ordinary)]).toEqual(HISTORY_ADDITIONS.hashes);
+    for (const id of [...higher, ...ordinary]) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
   });
 
   it.each(Object.entries(peAdditions))('pins the reviewed Physical Education %s additions beside the frozen set', (_, [cards, count, hash]) => {

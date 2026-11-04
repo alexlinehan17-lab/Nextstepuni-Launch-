@@ -634,17 +634,29 @@ function historyEssayFault(c, scheme) {
       && bands.every(b => b.marks.length && b.marks.every((m, i) => Number.isInteger(m) && (i === 0 || m === b.marks[i - 1] + 1))
         && b.printed.startsWith(`${b.label}: ${b.marks[0]}-${b.marks.at(-1)} mark`));
   };
-  const paragraphTop = Math.max(...r.cm.bands.flatMap(b => b.marks));
-  if (r.cm.max + r.oe.max !== c.totalMarks) return `CM ${r.cm.max} + OE ${r.oe.max} is not the paper's ${c.totalMarks}`;
-  if (!ladder(r.cm.bands, paragraphTop) || paragraphTop > r.cm.max) return 'the CM paragraph ladder does not cover its marks once';
-  if (!ladder(r.oe.bands, r.oe.max)) return 'the OE ladder does not cover 0 to its maximum once';
-  if (r.cm.elementRule && !(r.cm.elementRule.max > 0 && r.cm.elementRule.max < r.cm.max)) return 'the NOTE ceiling is not below the CM maximum';
+  const { cm, oe } = r;
+  if (cm.max + (oe?.max ?? 0) !== c.totalMarks) return `CM ${cm.max} + OE ${oe?.max ?? 0} is not the paper's ${c.totalMarks}`;
+  if (cm.mode === 'paragraph') {
+    const top = Math.max(...cm.bands.flatMap(b => b.marks));
+    if (!ladder(cm.bands, top) || top > cm.max) return 'the CM paragraph ladder does not cover its marks once';
+  } else if (cm.mode === 'core-statement') {
+    // The value and the partial range are READ from the scheme's own
+    // procedure sentences, which must themselves trace below.
+    if (!cm.procedure.some(line => line.includes(`awarded ${cm.perStatement} marks`))) return 'the Core Statement value is not the printed one';
+    if (!cm.procedure.some(line => line.includes(`merit ${cm.incomplete[0]}-${cm.incomplete.at(-1)} marks`))) return 'the incomplete Core Statement marks are not the printed ones';
+  } else return `unknown CM mode ${cm.mode}`;
+  if (oe && !ladder(oe.bands, oe.max)) return 'the OE ladder does not cover 0 to its maximum once';
+  if (cm.elementRule && !(cm.elementRule.caps.length && cm.elementRule.caps.every(cap => cap.max > 0 && cap.max < cm.max
+    && cm.elementRule.note.includes(cap.when)))) return 'a NOTE ceiling is not below the CM maximum or not in its note';
   if (!r.schemePages?.length || !r.schemePages.every(page => Number.isInteger(page) && page > 0)) return 'no scheme pages';
   const lifted = [
-    ...r.schemeGuidance, r.cm.definition, r.cm.paragraphLead, ...r.cm.paragraphKinds, ...r.cm.directions,
-    ...(r.cm.elementRule ? [r.cm.elementRule.note] : []),
-    ...[...r.cm.bands, ...r.oe.bands].map(b => `${b.printed}${b.descriptor ? ` ${b.descriptor}` : ''}`),
-    ...[r.oe.definition, r.oe.lead, r.oe.directionsLead].filter(Boolean), ...r.oe.directions,
+    ...r.schemeGuidance, cm.definition, ...cm.directions,
+    ...(cm.mode === 'paragraph'
+      ? [cm.paragraphLead, ...cm.paragraphKinds, ...cm.bands.map(b => `${b.printed}${b.descriptor ? ` ${b.descriptor}` : ''}`)]
+      : [cm.statementLead, ...cm.statementKinds, cm.procedureLead, ...cm.procedure]),
+    ...(cm.elementRule ? [cm.elementRule.note] : []),
+    ...(oe ? [...oe.bands.map(b => `${b.printed}${b.descriptor ? ` ${b.descriptor}` : ''}`),
+      ...[oe.definition, oe.lead, oe.directionsLead].filter(Boolean), ...oe.directions] : []),
   ];
   const untraced = lifted.find(text => !String(text).trim() || !claimMatches(scheme, text));
   if (untraced !== undefined) return `a marking line not found in the ${c.year} ${c.level} scheme, "${String(untraced).slice(0, 60)}"`;

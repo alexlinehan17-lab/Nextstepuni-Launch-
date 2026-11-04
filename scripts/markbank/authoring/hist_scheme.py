@@ -86,8 +86,12 @@ ESSAY = re.compile(r'^(\d)\.\s+Max\.?\s*CM\s*=?\s*(\d+)\s+Max\.?\s*OE\s*=?\s*(\d
 # (during + after) If only ONE, Max. CM = 50". 2021 wraps its "If only ONE"
 # clause onto a line of its own, and 2025 opens one NOTE with a stray "(".
 NOTE_HEAD = re.compile(r'^\(?NOTE\s*:', re.I)
-NOTE_CONT = re.compile(r'^If only (?:ONE|one)\b')
+NOTE_CONT = re.compile(r'^If only\b', re.I)
 NOTE_MAX = re.compile(r'\bMax\.?\s*CM\s*=\s*(\d+)')
+# Every ceiling a NOTE prints, in its own words and order: "If only ONE, Max.
+# CM = 40 If only TWO, Max. CM = 50" (2023) and "If only TWO, Max CM = 50 If
+# only ONE, Max CM = 40" (2025 Early Modern) are two ceilings each.
+NOTE_CAP = re.compile(r'(If only (?:ONE|TWO|THREE|FOUR))\s*,\s*Max\.?\s*CM\s*=\s*(\d+)', re.I)
 # An Ordinary Level Part A answer.
 A_LINE = re.compile(r'^A(\d)\.\s*(.*)$')
 # The whole scheme entry for an Ordinary Level part B or C.
@@ -238,6 +242,19 @@ def _halve(raw, field):
 # at the measure ("Excellent: 11-12 marks Outstanding piece of analysis,
 # exposition or commentary." / "Clearly expressed, accurate and substantial
 # information.").
+# The head over Sections 2 and 3's marking: "Section 2 and Section 3:" (2021,
+# 2022, 2024, 2025 Higher), "Section 2: IRELAND and" over "Section 3: EUROPE
+# AND THE WIDER WORLD" (2023 Higher and Ordinary), "Section 2 and Section 3"
+# with no colon (2021, 2022, 2024 Ordinary). Never the upper-case "SECTION 2:
+# IRELAND" that heads the topic-by-topic notes.
+S23_HEAD = re.compile(r'^Section 2(?: and Section 3)?\s*(?::|$)')
+# Marking by Core Statement: the printed lines that open a new logical line.
+CS_START = re.compile(
+    r'^(?:•|\d\.\s+Contextualisation|Mark by the principle|A Core Statement may be'
+    r'|To apply the principle|Here, in question 4|Note\b|[ABC]\.\s|Cumulative Mark\b'
+    r'|Overall Evaluation\b|This is the total mark|In awarding\b|The marking of parts'
+    r'|Each Topic is divided|LC 20\d\d:|(?:Excellent|Very good|Good|Fair|Poor|Weak|Very weak):\s*\d'
+    r'|\(maximum:|IRELAND and|Section [23]\b|\(\d{3} marks\))')
 PM_BAND = re.compile(
     r'^(Excellent|Very good|Good|Fair|Poor|Weak|Very weak):\s*(\d+)-(\d+)\s*(marks?)\b\s*(.*)$')
 PM_CEILING = re.compile(
@@ -250,7 +267,14 @@ PM_START = re.compile(
     r'|A paragraph or paragraph equivalent|These marks are awarded'
     r'|To mark the answer|In Sections 2 and 3|In question 4\b'
     r'|This principle\b|The proportion\b|IRELAND and EUROPE'
-    r'|Section 2 and Section 3|\d\.\s+Contextualisation|Would you\b)')
+    r'|Section [23]\b|\d\.\s+Contextualisation|Would you\b)')
+
+
+def _note_caps(ask):
+    """Read the ceilings off an essay's NOTE as it stands."""
+    ask.note_caps = [(' '.join(when.split()), int(top))
+                     for when, top in NOTE_CAP.findall(ask.note)]
+    ask.note_max = ask.note_caps[0][1] if ask.note_caps else None
 
 
 def _halve_pages(raw, field):
@@ -292,7 +316,9 @@ class Ask:
         self.evidence = ''
         self.cue = ''           # the scheme's own words, for the Law 4 join
         self.note = None        # an essay's printed NOTE, verbatim
-        self.note_max = None    # the CM ceiling that NOTE prints
+        self.note_max = None    # the first CM ceiling that NOTE prints
+        self.note_caps = []     # every ceiling it prints: [("If only ONE", 50)]
+        self.cm_max = self.oe_max = None   # an essay's printed maxima
         self.page = None        # the scheme page the ask is priced on
 
     def __repr__(self):
@@ -348,14 +374,18 @@ class HistScheme:
             if essay is not None:
                 if NOTE_HEAD.match(line) and essay.note is None:
                     essay.note = line
-                    m = NOTE_MAX.search(line)
-                    essay.note_max = int(m.group(1)) if m else None
+                    _note_caps(essay)
                     continue
+                # The rest of a NOTE the SEC wrapped: its ceilings on the next
+                # line ("If only ONE, ..." or "If only TWO, ..."), or the end of
+                # a bracket it broke mid-way ("(Civil Constitution of the
+                # Clergy + Committee of Public" / "Safety)").
                 if (essay.note is not None and essay.note_max is None
-                        and NOTE_CONT.match(line)):
+                        and (NOTE_CONT.match(line)
+                             or essay.note.count('(') > essay.note.count(')'))
+                        and not ESSAY.match(line) and not TOPIC_HEAD.match(line)):
                     essay.note = f'{essay.note} {line}'
-                    m = NOTE_MAX.search(line)
-                    essay.note_max = int(m.group(1)) if m else None
+                    _note_caps(essay)
                     continue
                 essay = None
             if END_OF_SCHEME.match(line):
@@ -418,6 +448,8 @@ class HistScheme:
                            None, None, None), 'banded',
                           int(m.group(2)) + int(m.group(3)), line)
                 ask.evidence = line
+                ask.page = self.pages[index]
+                ask.cm_max, ask.oe_max = int(m.group(2)), int(m.group(3))
                 self._add(ask)
                 continue
             m = A_LINE.match(line)
@@ -669,10 +701,9 @@ class HistScheme:
             lo = next(i for i, l in enumerate(self.lines)
                       if re.match(r'^4\.\s+Contextualisation\b', l))
             hi = next(i for i in range(lo, len(self.lines))
-                      if re.match(r'^Section 2 and Section 3\s*:', self.lines[i]))
+                      if S23_HEAD.match(self.lines[i]))
         else:
-            lo = next(i for i, l in enumerate(self.lines)
-                      if re.match(r'^Section 2 and Section 3\s*:', l))
+            lo = next(i for i, l in enumerate(self.lines) if S23_HEAD.match(l))
             hi = next(i for i in range(lo, len(self.lines))
                       if SEC_HEAD.match(self.lines[i]))
         logical, pages = [], set()
@@ -776,6 +807,122 @@ class HistScheme:
         if missing:
             raise AssertionError(f'{self.year} {self.level} {self.field} {unit}: '
                                  f'could not read {", ".join(missing)}')
+        return out
+
+    # -- marking by Core Statement (Ordinary Level) -----------------------
+    def core_statement_marking(self, unit):
+        """The scheme's marking-by-Core-Statement apparatus for one unit.
+
+        `unit` is 'q4' (the documents question's contextualisation part) or
+        'B' / 'C' (an Ordinary topic's short and longer paragraph). Q4 is
+        "Mark by the principle of Core Statement. Max = 20M" and has no OE;
+        B and C are "marked by the principle of Core Statement, as defined
+        above" with a CM ceiling and an OE grading table of their own, so the
+        Core Statement definition and procedure are read off the Q4 block.
+        Every string returned is the scheme's own printing, its lines joined.
+        """
+        heads = [i for i, l in enumerate(self.lines) if re.match(r'^4\.\s+Contextualisation\b', l)]
+        if not heads:
+            raise AssertionError(f'{self.year} {self.level} {self.field}: no Q4 head')
+        q4_lo = heads[-1]          # the first is the scheme's contents listing
+        q4_hi = next(i for i in range(q4_lo, len(self.lines)) if S23_HEAD.match(self.lines[i]))
+        s23_hi = next(i for i in range(q4_hi, len(self.lines))
+                      if re.match(r'^(?:Notes on individual topics|SECTION 2\s*:)', self.lines[i]))
+
+        def logical(lo, hi):
+            out, pages = [], set()
+            for i in range(lo, hi):
+                line = self.lines[i]
+                if (not line or PAGE_MARK.match(line) or PAGE_FOOTER.match(line)
+                        or SCHEME_FURNITURE.match(line)):
+                    continue
+                pages.add(self.pages[i])
+                if not out or CS_START.match(line):
+                    out.append(line)
+                else:
+                    out[-1] = f'{out[-1]} {line}'
+            return [' '.join(l.split()) for l in out], pages
+
+        q4, q4_pages = logical(q4_lo, q4_hi)
+        cs = {'statementKinds': [], 'procedure': []}
+        q4_notes, q4_guidance, ceiling = [], [], None
+        mode = None
+        # The head; a reprinted question (2022 on) joins onto it, since it opens
+        # no logical line of its own.
+        for text in q4[1:]:
+            m = re.match(r'^Mark by the principle of Core Statement\.\s*Max\s*=\s*(\d+)M$', text)
+            if m:
+                ceiling = int(m.group(1))
+                q4_guidance.append(text)
+                continue
+            if re.match(r'^A Core Statement may be defined as one of the following:$', text):
+                cs['statementLead'], mode = text, 'kinds'
+                continue
+            if re.match(r'^To apply the principle of marking by Core Statement', text):
+                cs['procedureLead'], mode = text, 'procedure'
+                continue
+            if text.startswith('• '):
+                cs['statementKinds' if mode == 'kinds' else 'procedure'].append(text[2:])
+                continue
+            if re.match(r'^Here, in question 4 of the DBQ', text):
+                q4_guidance.append(text)
+                continue
+            if re.match(r'^Note\b', text):
+                q4_notes.append(text)
+                continue
+            raise AssertionError(f'{self.year} {self.level} {self.field} q4: unread line {text!r}')
+        per = [int(m.group(1)) for p in cs['procedure']
+               for m in [re.search(r'Each completed Core Statement is awarded (\d+) marks', p)] if m]
+        part = [(int(m.group(1)), int(m.group(2))) for p in cs['procedure']
+                for m in [re.search(r'incomplete Core Statement at the end of an answer may merit (\d+)-(\d+) marks', p)] if m]
+        if len(per) != 1 or len(part) != 1 or len(cs['statementKinds']) != 3 or ceiling is None:
+            raise AssertionError(f'{self.year} {self.level} {self.field}: Core Statement procedure not read whole')
+        cs['perStatement'] = per[0]
+        cs['incomplete'] = list(range(part[0][0], part[0][1] + 1))
+        if unit == 'q4':
+            return {'cm': {**cs, 'max': ceiling, 'directions': q4_notes},
+                    'schemeGuidance': q4_guidance, 'oe': None, 'pages': sorted(q4_pages)}
+
+        s23, s23_pages = logical(q4_hi, s23_hi)
+        out = {'cm': {**cs, 'directions': []}, 'oe': {'bands': [], 'directions': []},
+               'schemeGuidance': [], 'pages': sorted(s23_pages | q4_pages)}
+        state = None
+        for text in s23:
+            m = re.match(rf'^{unit}\. This answer will be marked by the principle of Core Statement', text)
+            if m:
+                out['schemeGuidance'].append(text)
+                mm = re.search(r'maximum Cumulative Mark of (\d+) will be allowed for Core Statements and a maximum of (\d+) marks', text)
+                out['cm']['max'], out['oe']['max'] = int(mm.group(1)), int(mm.group(2))
+                continue
+            if re.match(r'^Cumulative Mark \(CM\)$', text):
+                state = 'cm'
+                continue
+            if re.match(r'^Overall Evaluation \(OE\)$', text):
+                state = 'oe'
+                continue
+            if state == 'cm' and re.match(r'^This is the total mark awarded for Core Statements', text):
+                out['cm']['definition'] = text
+                continue
+            if state == 'oe' and re.match(r'^In awarding OE, the examiner will consider', text):
+                out['oe']['lead'] = text
+                continue
+            m = PM_BAND.match(text)
+            if m and state == 'oe':
+                band = {'label': m.group(1), 'marks': list(range(int(m.group(2)), int(m.group(3)) + 1)),
+                        'printed': f'{m.group(1)}: {m.group(2)}-{m.group(3)} {m.group(4)}'}
+                if m.group(5).strip():
+                    band['descriptor'] = m.group(5).strip()
+                out['oe']['bands'].append(band)
+                continue
+            if re.match(r'^In awarding both CM and OE, the examiner will approach the material with an open mind', text):
+                out['schemeGuidance'].append(text)
+                continue
+        missing = [name for name, ok in (('the part\'s maxima', 'max' in out['cm']),
+                                         ('the CM definition', 'definition' in out['cm']),
+                                         ('the OE table', len(out['oe']['bands']) >= 4))
+                   if not ok]
+        if missing:
+            raise AssertionError(f'{self.year} {self.level} {self.field} {unit}: could not read {", ".join(missing)}')
         return out
 
     # -- the assertion ---------------------------------------------------

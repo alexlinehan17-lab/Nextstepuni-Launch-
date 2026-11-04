@@ -46,6 +46,25 @@
   border-color: color-mix(in srgb, var(--mb-on-claim) 40%, transparent);
 }
 
+/* Ordinary Level: the completed Core Statements, counted. The row is the
+   claim-row shape; it turns charcoal once one is counted, like a claim. */
+.mb-hist-counter-row {
+  display: grid; grid-template-columns: minmax(9em, 1fr) auto auto; gap: 10px; align-items: center;
+  padding: 11px 12px; border-radius: 12px; border: 1.5px solid var(--mb-border);
+  background: var(--mb-paper); color: var(--mb-ink-2); font: 500 13.5px/1.42 'DM Sans', system-ui, sans-serif;
+}
+.mb-hist-counter-row[data-claimed="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); }
+.mb-hist-counter-row[data-claimed="true"] .mb-claim-text small { color: inherit; }
+.mb-hist-counter-row[data-claimed="true"] > .mb-claim-chip { background: var(--mb-on-claim); color: var(--mb-claim); }
+.mb-hist-counter { display: inline-flex; align-items: center; gap: 6px; }
+.mb-hist-counter button {
+  min-width: 34px; height: 32px; border-radius: 8px; cursor: pointer;
+  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink);
+  font: 700 15px/1 'Roboto Mono', ui-monospace, monospace;
+}
+.mb-hist-counter button:disabled { cursor: default; opacity: .45; }
+.mb-hist-counter output { min-width: 22px; text-align: center; font: 700 15px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+
 .mb-hist-reached { margin: 0; padding: 8px 10px; border-radius: 9px; background: var(--mb-raised); font: 500 12px/1.45 'DM Sans', system-ui, sans-serif; color: var(--mb-ink-2); }
 
 /* The square ink button the session's "Open Ways In" uses: a visible face
@@ -68,6 +87,8 @@
 .mb-hist-paragraph[data-capped="true"] .mb-hist-paragraph-state { grid-column: 1 / -1; grid-row: 2; }
 
 @media (max-width: 480px) {
+  .mb-hist-counter-row { grid-template-columns: minmax(0, 1fr) auto; }
+  .mb-hist-counter-row .mb-claim-text { grid-column: 1 / -1; }
   .mb-hist-paragraph-head { grid-template-columns: minmax(0, 1fr) auto; }
   .mb-hist-paragraph-state { grid-column: 1 / -1; grid-row: 2; }
 }

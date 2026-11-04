@@ -141,6 +141,11 @@ DOCUMENT_HEAD = re.compile('^[\u2010-\u2015\\-]\\s*Document\\s+([AB])\\s*[\u2010
 # study on their documents cards.
 CASE_STUDY = re.compile(r'^Case study to which (?:the )?documents? relate', re.I)
 COVER_MARKS = re.compile(r'Written examination:\s*(\d{3})\s*marks', re.I)
+# The instruction an Ordinary part B or C prints over its four alternatives.
+# It is page furniture to the census (it is no ask), but it is the card's own
+# instruction, so it is kept against the unit.
+CHOICE_INSTRUCTION = re.compile(
+    r'^(?:Write a short paragraph on one of the following|Answer one of the following)\b.*:\s*$')
 
 
 def lines(path):
@@ -189,6 +194,7 @@ class HistPaper:
         self.case_title = None
         self.document_pages = []
         self.cover_marks = None
+        self.instructions = {}
         self._read()
 
     # -- reading ---------------------------------------------------------
@@ -329,6 +335,9 @@ class HistPaper:
                 self.case_title = line
                 want_case = False
                 continue
+            if (part in ('B', 'C') and cur is not None
+                    and CHOICE_INSTRUCTION.match(line)):
+                self.instructions.setdefault(cur[0], line)
             if FURNITURE.match(line):
                 continue
             if SOURCE_LINE.match(line):
