@@ -7,7 +7,7 @@ from __future__ import annotations
 import hashlib
 import re
 import fitz
-from irish_higher_routes import ROOT, HASHES, compact, section, award
+from irish_higher_routes import ROOT, HASHES, compact, section, award, shared_gaeilge, PARAPHRASED_GAEILGE
 
 
 SELECTIONS = {
@@ -171,8 +171,7 @@ def apply_literature_review(cards):
     s={n:compact(re.sub(r'(?m)^\s*\d+\s*$', '',page.get_text())) for n,page in enumerate(scheme,1)}
     by_id={c['id']:c for c in cards}
     reviewed=[]
-    language=award('gaeilge','Gaeilge',5,
-        '5 sárchumas; 4 cumas an-mhaith; 3 cumas maith; 2 cumas measartha; 1 cumas lag/an-lag; 0 gan fiúntas. Gramadach, comhréir, struchtúr agus deilbhíocht.')
+    language,gaeilge_pages=shared_gaeilge(scheme)
 
     def update(key,atlas,title,pages,scheme_pages,criteria):
         card=by_id['irish-2024-hl-p2-'+key]
@@ -230,4 +229,6 @@ def apply_literature_review(cards):
         boundaries=['Two complete prescribed poems: 13/5/7 Eolas plus one shared 5 Gaeilge.',
                     'Five whole additional-literature essays: 35 Eolas plus one shared 5 Gaeilge; incomplete required coverage caps Eolas at 25.',
                     'Q4F stays whole: 19/7/9 Eolas and one shared 5 Gaeilge; best imperative point earns 5, other 4.'],
-        preservation='All eight existing IDs and full question prompts unchanged; published rubric conditions and complete scheme regions restored.')
+        preservation='All eight existing IDs and full question prompts unchanged; published rubric conditions and complete scheme regions restored.',
+        gaeilgeCorrection=dict(date='2026-11-04',cardIds=list(reviewed),replaced=PARAPHRASED_GAEILGE,**gaeilge_pages,
+            note='The shared Gaeilge award is the scheme\'s printed five-row table (5 to 1) and its literature note, lifted; the paraphrase added a 0 row the scheme does not print.'))

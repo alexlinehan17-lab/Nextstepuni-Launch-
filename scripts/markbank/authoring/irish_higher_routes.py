@@ -10,6 +10,7 @@ import itertools
 import re
 from pathlib import Path
 import fitz
+from irish_gaeilge import lifted as lifted_gaeilge
 
 ROOT = Path(__file__).resolve().parents[3]
 HASHES = {
@@ -33,6 +34,20 @@ def section(text, start, end=None):
         assert stop, ('Stale reviewed end', end)
         tail = tail[:stop.start()]
     return tail.strip()
+
+
+# The paraphrase every 2022/2024 literature route carried until 2026-11-04 (decision 2): it added a
+# "0 gan fiúntas" row the scheme never prints. Kept only to record what the lifted table replaced.
+PARAPHRASED_GAEILGE = '5 sárchumas; 4 cumas an-mhaith; 3 cumas maith; 2 cumas measartha; 1 cumas lag/an-lag; 0 gan fiúntas. Gramadach, comhréir, struchtúr agus deilbhíocht.'
+
+
+def shared_gaeilge(scheme):
+    """The scheme's own Gaeilge award: its printed five-row table and the note that every literature
+    answer earns 5 for Gaeilge, both lifted from the scheme pages (irish_gaeilge.lifted)."""
+    table, note, table_page, note_page = lifted_gaeilge(scheme, 18)
+    criterion = dict(id='gaeilge', label='Gaeilge', kind='award', maxMarks=5, permittedMarks=list(range(6)),
+                     guidanceKind='quality', guidance=[table, note])
+    return criterion, dict(tableSchemePage=table_page, noteSchemePage=note_page)
 
 
 def award(key, label, marks, guidance):
@@ -105,6 +120,7 @@ def apply_review(cards):
             assert hashlib.sha256(path.read_bytes()).hexdigest() == expected, 'Source changed: repeat visual review'
             docs.append(fitz.open(path))
         paper, scheme = docs
+        gaeilge, gaeilge_pages = shared_gaeilge(scheme)
         paper_pages = [8,9,12] if year == 2022 else [8,11]
         raw_pages = {n: paper[n-1].get_text() for n in paper_pages}
         decisions = classify_selections(year, raw_pages)
@@ -126,8 +142,7 @@ def apply_review(cards):
                         paperPage=pages[0], paperTraceScore=1, schemeTraceScore=1,
                         schemePage=scheme_pages[0], schemePages=scheme_pages,
                         atlasQuestionId=atlas, reviewedPaperPages=pages,
-                        reviewedAt='2026-10-07', criteria=criteria + [award('gaeilge','Gaeilge',5,
-                            '5 sárchumas; 4 cumas an-mhaith; 3 cumas maith; 2 cumas measartha; 1 cumas lag/an-lag; 0 gan fiúntas. Gramadach, comhréir, struchtúr agus deilbhíocht.')],
+                        reviewedAt='2026-10-07', criteria=criteria + [copy.deepcopy(gaeilge)],
                         taskRequirements=requirements or ['Freagair gach fochuid atá priontáilte sa rogha seo.', 'Úsáid tagairtí cruinne agus ábhartha don téacs.'],
                         markingGuideNote='One complete SEC response: 25 Eolas and a single shared 5-mark Gaeilge award. Supporting examples are indicative; other valid points are credited on their merits. Do not add alternative route tariffs together.')
             if route: card['selectedRoute'] = route
@@ -214,7 +229,10 @@ def apply_review(cards):
                                    'Q2 and Q3B only; full-paper status is recorded separately in irish-paper-reviews.json.'),
                             reviewedPaperPages=paper_pages,
                             reviewedSchemePages=list(range(27,33))+list(range(37 if year==2022 else 38,41)),
-                            cardIds=reviewed_ids,selectionDecisions=decisions))
+                            cardIds=reviewed_ids,selectionDecisions=decisions,
+                            gaeilgeCorrection=dict(date='2026-11-04', cardIds=list(reviewed_ids),
+                                                   replaced=PARAPHRASED_GAEILGE, **gaeilge_pages,
+                                                   note='The shared Gaeilge award is the scheme\'s printed five-row table (5 to 1) and its literature note, lifted; the paraphrase added a 0 row the scheme does not print.')))
     assert original_ids <= {c['id'] for c in cards}
     assert len(cards) == 405 and len({c['id'] for c in cards}) == 405
     return cards, reviews

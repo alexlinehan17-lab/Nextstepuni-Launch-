@@ -377,5 +377,22 @@
     "Five whole additional-literature essays: 35 Eolas plus one shared 5 Gaeilge; incomplete required coverage caps Eolas at 25.",
     "Q4F stays whole: 19/7/9 Eolas and one shared 5 Gaeilge; best imperative point earns 5, other 4."
   ],
-  "preservation": "All eight existing IDs and full question prompts unchanged; published rubric conditions and complete scheme regions restored."
+  "preservation": "All eight existing IDs and full question prompts unchanged; published rubric conditions and complete scheme regions restored.",
+  "gaeilgeCorrection": {
+    "date": "2026-11-04",
+    "cardIds": [
+      "irish-2024-hl-p2-poetry-3a-a",
+      "irish-2024-hl-p2-poetry-3a-b",
+      "irish-2024-hl-p2-literature-4-a",
+      "irish-2024-hl-p2-literature-4-b",
+      "irish-2024-hl-p2-literature-4-c",
+      "irish-2024-hl-p2-literature-4-d",
+      "irish-2024-hl-p2-literature-4-e",
+      "irish-2024-hl-p2-literature-4-f"
+    ],
+    "replaced": "5 sárchumas; 4 cumas an-mhaith; 3 cumas maith; 2 cumas measartha; 1 cumas lag/an-lag; 0 gan fiúntas. Gramadach, comhréir, struchtúr agus deilbhíocht.",
+    "tableSchemePage": 27,
+    "noteSchemePage": 27,
+    "note": "The shared Gaeilge award is the scheme's printed five-row table (5 to 1) and its literature note, lifted; the paraphrase added a 0 row the scheme does not print."
+  }
 }
