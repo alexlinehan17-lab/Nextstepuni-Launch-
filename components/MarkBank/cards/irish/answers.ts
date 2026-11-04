@@ -138,6 +138,10 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   });
   // A price printed inside the qualifier's brackets, "(gan aon cháiliú = 1 mharc)", reads as the qualified price above.
   text = text.replace(/\s*\((gan\s[^()=]*?)\s*(=\s*\d+\s*m?h?arc\b)\)/g, (_, qualifier: string, price: string) => `: (${qualifier}) ${price}`);
+  // "(dhá cheann) {1 mharc + 1 mharc = 2 mharc}" (2017 Higher A 1(b)(i)): the brace prints its split before its total; it is
+  // the brace "{2 mharc: 1 mharc + 1 mharc}" where the split adds up to the total.
+  text = text.replace(/\{\s*(\d+\s*m?h?arc\b(?:\s*\+\s*\d+\s*m?h?arc\b)+)\s*=\s*(\d+)\s*(m?h?arc\b)\s*\}/g, (whole: string, split: string, total: string, unit: string) =>
+    ([...split.matchAll(/\d+/g)].reduce((sum, m) => sum + Number(m[0]), 0) === Number(total) ? `{${total} ${unit}: ${split}}` : whole));
   // A split printed before the brace, "(Dhá bhealach: 2 mharc + 1 mharc) {3 mharc}", is the brace's own split.
   text = text.replace(/\((Dhá\s[^():]*):\s*(\d+\s*m?h?arc\b(?:\s*\+\s*\d+\s*m?h?arc\b)+)\)\s*\{\s*(\d+\s*m?h?arc\b)\s*\}/g,
     (_, label: string, split: string, total: string) => `(${label}) {${total}: ${split}}`);

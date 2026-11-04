@@ -283,6 +283,15 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
       // "Ainm an fhile = 1 mharc"): the same row, read past the séimhiú. The row keeps the spelling it was placed with.
       const answered = placedRows.find(placed => placed.marks === token.marks && answerOf(placed.text, token.text) !== undefined);
       if (answered) { answered.text = `${answered.text}: ${answerOf(answered.text, token.text)}`; continue; }
+      // "Saol agus saothar an fhile = 2 mharc + 2 mharc + 2 mharc = 6 mharc" after "Saol an fhile agus saothar an fhile = 6 mharc"
+      // (2017 Higher 3A and 3B (iii)): the split of a row already placed, printed again after the note on how it divides. It
+      // gives that row its steps; it is not a second row. Only where a second row at that price would overfill the part.
+      const restated = token.steps && open ? placedRows.find(placed => !placed.steps && placed.marks === token.marks) : undefined;
+      if (restated && open && placedRows.reduce((acc, placed) => acc + placed.marks, 0) + token.marks > open.tariff) {
+        restated.steps = token.steps;
+        debug?.push(`  STEPS restated ${token.marks} onto "${restated.text.slice(0, 40)}"`);
+        continue;
+      }
       if (open && placedRows.some(placed => placed.text === token.text && placed.marks === token.marks) && placedRows.reduce((acc, placed) => acc + placed.marks, 0) + token.marks > open.tariff) continue;
       if (open) {
         if (open.rows.length === 0 && token.marks === open.tariff && rest.length > 1) { debug?.push(`  SKIP subtotal-of-part ${token.marks}`); continue; }
@@ -322,8 +331,11 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   // A criterion whose only printed price is its band table's header (2018 Higher Ceist 4A–E and 2B print no "Eolas = 35 marc"
   // of their own; "Catagóir Eolas (35 marc) Gaeilge (5 mharc)" prices them): one judgement over the criterion, its own words
   // the row, as a sub-question priced whole with nothing under it. Only where nothing else priced it.
+  // 2017 prints no band table for Ceist 4A–E either: its Ceist 4 Treoracha price them ("an t-eolas a mharcáil as 35 marc").
+  const treoirPrice = /an t-eolas a mharcáil as (\d+) marc/.exec(source.guidance.join(' '));
   if (parts.length === 0 && !loose.length && loosePrompt
-    && bands.some(band => Number(/^Catagóir\s+Eolas\s*\((\d+)\s*m?h?arc\)/.exec(band)?.[1]) === source.totalMarks)) {
+    && (bands.some(band => Number(/^Catagóir\s+Eolas\s*\((\d+)\s*m?h?arc\)/.exec(band)?.[1]) === source.totalMarks)
+      || Number(treoirPrice?.[1]) === source.totalMarks)) {
     parts.push({ prompt: loosePrompt, tariff: source.totalMarks, rows: [], samples: [] });
   }
   if (parts.length === 0) return { ok: false, reason: 'no priced sub-question' };
