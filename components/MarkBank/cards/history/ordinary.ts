@@ -4172,7 +4172,7 @@ export const CARDS: SecCard[] = [
     questionText: "What beautiful features of the Pietà did Vasari admire?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any TWO features from second paragraph of text @ 3M each", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Any TWO features from second paragraph of text @ 3M each", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks.", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7018,7 +7018,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one aim of the Geraldine League.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any TWO valid aims of the Geraldine League (3M x 2)", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Any TWO valid aims of the Geraldine League (3M x 2)", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks.", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15839,7 +15839,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name two of Beethoven’s compositions.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any TWO of Beethoven’s compositions 3 + 3", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Any TWO of Beethoven’s compositions 3 + 3", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks.", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19071,7 +19071,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention two countries which were rivals to Dutch trade.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "TWO countries which were rivals to Dutch trade @ 3M each", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    { id: "r-1", kind: "criterion", verbatim: "TWO countries which were rivals to Dutch trade @ 3M each", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks.", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19504,7 +19504,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention two countries invaded by Napoleon.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any TWO countries invaded by Napoleon 3M + 3M", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Any TWO countries invaded by Napoleon 3M + 3M", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks.", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -20506,7 +20506,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what were the aims of the Apprentice Boys of Derry?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "TWO valid aims of the Apprentice Boys of Derry 3M x 2", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    { id: "r-1", kind: "criterion", verbatim: "TWO valid aims of the Apprentice Boys of Derry 3M x 2", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks.", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -26131,7 +26131,7 @@ export const CARDS: SecCard[] = [
     questionText: "What chief commodities from the New World landed at Seville?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "TWO New World commodities (@ 3M each) which were landed at Seville", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    { id: "r-1", kind: "criterion", verbatim: "TWO New World commodities (@ 3M each) which were landed at Seville", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks.", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",

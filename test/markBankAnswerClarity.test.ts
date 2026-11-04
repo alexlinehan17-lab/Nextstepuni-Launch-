@@ -525,6 +525,12 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       // Each a printed partial or alternative as a step on its row ("Green ribbons (ribbons = 3m)",
       // "Swastika 8M" / "Germanic cross = 4M"), a price for an answer the scheme does not print
       // ("One opinion = 5M"), or the bank's unprinted row where the scheme prints no answer at all.
+      // A row that prints a count and the price of each, naming no answers ("Any TWO ... @ 3M each"), is
+      // stepped at that price: 0, 3 or 6.
+      ['Any TWO countries invaded by Napoleon 3M + 3M', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Any TWO features from second paragraph of text @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Any TWO of Beethoven’s compositions 3 + 3', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Any TWO valid aims of the Geraldine League (3M x 2)', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Battleship/ Warship', 6, [0, 3, 6], 'Ship = 3M'],
       ['By launching the Dreadnought', 6, [0, 3, 6], '‘Quickly’ ALONE = 3M'],
       ['Clonmel prison', 6, [0, 3, 6], 'Clonmel only (3m), prison only (3m)'],
@@ -536,6 +542,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['One opinion', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Oriental rugs', 8, [0, 4, 8], 'Rugs ONLY = 4M'],
       ['Swastika', 8, [0, 4, 8], 'Germanic cross = 4M'],
+      ['TWO New World commodities (@ 3M each) which were landed at Seville', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['TWO countries which were rivals to Dutch trade @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['TWO valid aims of the Apprentice Boys of Derry 3M x 2', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['The Tu-104 was one of the first jet passenger planes in the world', 6, [0, 3, 6], 'Plane ONLY = 3M'],
       ['The original six members had access to Irish, British and Danish fisheries', 6, [0, 3, 6], 'access to Irish fisheries alone = 3m'],
       ['The scheme prints no answer for this part.', 10, undefined, 'The scheme prints one Criticism answer, under (a), and it is about the King’s proclamation (document B), which part (b) asks about. It prints nothing for this part.'],

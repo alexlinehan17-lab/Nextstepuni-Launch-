@@ -78,7 +78,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 from hist_paper import HistPaper, FIELDS                      # noqa: E402
 from hist_scheme import HistScheme, GRID_WORDS, NOTE_CAP      # noqa: E402
 from hist_topics import topic_for, concept_for, TITLES        # noqa: E402
-from hist_rows import split_priced                           # noqa: E402
+from hist_rows import split_priced, step_counted             # noqa: E402
 from hist_figures import figure_key                          # noqa: E402
 from align import bag, score                                  # noqa: E402
 
@@ -829,7 +829,7 @@ def build():
                     # The marks the SEC prints inside a Part A line ("Sods
                     # (3M) and saplings (3M)") are rows, not one claim
                     # (hist_rows.py).
-                    card = split_priced(card)
+                    card = step_counted(split_priced(card))
                     # A row that is the scheme pricing an answer it does not
                     # print ("ONE valid reason", "ONE decision of the Synod of
                     # Thurles") says so, in the bank's fixed words.

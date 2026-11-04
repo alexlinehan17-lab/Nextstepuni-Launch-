@@ -79,6 +79,58 @@ def _note(row, extra):
     row['contextNote'] = ' — '.join(x for x in (row.get('contextNote'), extra) if x)
 
 
+# A count and the price of each, printed together on a row that names no
+# answers: "Any TWO features from second paragraph of text @ 3M each", "TWO
+# valid aims of the Apprentice Boys of Derry 3M x 2", "Any TWO countries
+# invaded by Napoleon 3M + 3M" (2013-2019 Ordinary, (6)). The count is in
+# capitals, as the scheme prints it.
+COUNTED = re.compile(r'\b(?-i:(TWO|THREE|FOUR))\b')
+PER_EACH = re.compile(r'@\s*(\d+)\s*M\b', re.I)
+PER_TIMES = re.compile(r'\b(\d+)\s*M\s*x\s*(\d+)\b', re.I)
+PER_PLUS = re.compile(r'\b(\d+)\s*M?(?:\s*\+\s*(\d+)\s*M?)+\b', re.I)
+
+
+def step_counted(card):
+    """A counted row with its price per answer is stepped at that price.
+
+    One plain row that prints how many answers it wants and what each earns,
+    and names none of them, was one claim for the whole part: a student with
+    one of the two earned nothing. The printed price per answer is the step,
+    so "Any TWO ... @ 3M each" on a (6) part claims 0, 3 or 6. Only when the
+    count times the price is the part's tariff exactly; the row's words are
+    unchanged."""
+    rows = card['rows']
+    if card['tariffModel']['kind'] != 'fixed' or len(rows) != 1:
+        return card
+    row = rows[0]
+    total = card['totalMarks']
+    if row['kind'] != 'point' or row.get('marks') != total:
+        return card
+    text = row['verbatim']
+    count = COUNTED.search(text)
+    if not count:
+        return card
+    n = WORDS[count.group(1).lower()]
+    each = PER_EACH.search(text)
+    times = PER_TIMES.search(text)
+    plus = PER_PLUS.search(text[count.end():])
+    if each:
+        per = int(each.group(1))
+    elif times and int(times.group(2)) == n:
+        per = int(times.group(1))
+    elif plus:
+        terms = [int(x) for x in re.findall(r'\d+', plus.group(0))]
+        if len(terms) != n or len(set(terms)) != 1:
+            return card
+        per = terms[0]
+    else:
+        return card
+    if per * n != total:
+        return card
+    rows[:] = [{**row, 'kind': 'criterion', 'permittedMarks': [per * k for k in range(n + 1)]}]
+    return card
+
+
 def split_priced(card):
     """The card with its one priced line cut at the marks printed inside it; unchanged when there are none."""
     rows = card['rows']
