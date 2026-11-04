@@ -60,6 +60,23 @@ describe('the printed breaks in a History stem', () => {
     ]);
   });
 
+  it('reads a diary’s times of day as the extract, never as question numbers', () => {
+    // 2020 OL: "4.30 House filling quickly." once read as question 4, and "6.40 Parnell up." as a question 6.
+    expect(lines('hist-2020-ol-lm-s2t2a-q1')).toEqual([
+      '4.30 House filling quickly.',
+      '4.45 The Prime Minister just arrived. Great cheering. House full, nearly.',
+      '6.40 Parnell up. Very quiet and white. He spoke calmly and effectively. He says you must pass the Bill or you will have to coerce [use force against] us as you never did before.',
+      'For: 311. Against: 341. A fearful row in the lobby.',
+    ]);
+    expect(HISTORY_ORDINARY.filter(c => c.id.startsWith('hist-2020-ol-lm-s2t2a-')).map(c => c.questionText)).toEqual([
+      'For what occasion was the writer present?',
+      'How was the Prime Minister greeted?',
+      'Was the writer impressed by Parnell’s performance? Briefly explain your answer.',
+      'After the vote was taken, what took place in the lobby?',
+      'Why did the Home Rule Bill fail to pass in the House of Commons?',
+    ]);
+  });
+
   it('puts each bulleted item on a line, with its wrapped rest beside it', () => {
     expect(lines('hist-2023-ol-em-s2t4a-q1')).toEqual([
       '• No trader is permitted to block the street with a stall.',

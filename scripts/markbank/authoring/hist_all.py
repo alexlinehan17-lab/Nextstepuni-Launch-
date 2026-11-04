@@ -92,6 +92,7 @@ EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
 # been reviewed.
 ESSAY_PAPERS = {
     (2020, 'hl', 'lm'),
+    (2020, 'ol', 'lm'),
     (2021, 'hl', 'em'),
     (2021, 'hl', 'lm'),
     (2021, 'ol', 'em'),
@@ -341,7 +342,44 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
 PRICED_COMPONENT = re.compile(r'([A-Z][A-Za-z \u2019\'-]{1,40}?)\s*=\s*(\d{1,3})M\b')
 TARIFF_CEILING = re.compile(r'\bMax\.?\s*=\s*(\d{1,3})M\b')
 NO_PRINTED_ANSWER = 'The scheme prints no answer here: any correct one earns the marks.'
-TARIFF_WORDING = re.compile(r'^(?:ONE|TWO|THREE|One valid|Two valid|Any valid)\b(?![^.]*\.\s*\S)')
+TARIFF_WORDING = re.compile(r'^(?:ONE|TWO|THREE|[Oo]ne valid|[Tt]wo valid|[Aa]ny valid)\b(?![^.]*\.\s*\S)')
+
+
+def split_card(P, year, level, field, key, ask, section, topic_id, ref):
+    """A documents part the scheme prices component by component, answering
+    each: one row per component at its printed marks (hist_scheme
+    `_answered_split`). A component answered under its own line keeps that
+    line, price and all, as the row's note."""
+    question = P.asks[key]
+    rows = []
+    for i, (label, point, note) in enumerate(ask.points, start=1):
+        row = {'id': f'r-{i}', 'kind': 'point', 'verbatim': point,
+               'marks': ask.components[i - 1][1]}
+        if note:
+            row['contextNote'] = note
+        rows.append(row)
+    card = {
+        'id': card_id(year, level, field, key),
+        'subjectId': 'history',
+        'level': LEVEL_WORD[level],
+        'year': year,
+        'section': section,
+        'topicId': topic_id,
+        'conceptId': concept_for(question),
+        'questionRef': ref,
+        'questionText': question,
+        'tariffModel': {'kind': 'fixed'},
+        'totalMarks': ask.total,
+        'rows': rows,
+        'notes': (f'{FIELDS[field]} field of study. The scheme prints '
+                  f'{ask.notation!r} for this ask: each component at its '
+                  f'printed marks.'),
+    }
+    if P.case_title:
+        card['stem'] = f'Case study: {P.case_title}'
+    card['sourceMaterial'] = source_material(
+        P, year, level, field, '1', P.document_pages, 'The documents', 'OFFICIAL DOCUMENTS')
+    return card
 
 
 def tariff_only_card(P, year, level, field, key, ask, section, topic_id, ref):
@@ -519,6 +557,11 @@ def build():
                                        'for this ask and no answer content'),
                             'schemeEvidence': ask.evidence,
                         })
+                        continue
+
+                    if ask.kind == 'split':
+                        cards.append(split_card(P, year, level, field, key, ask,
+                                                section, topic_id, ref))
                         continue
 
                     points = [(lab, p, n) for lab, p, n in ask.points

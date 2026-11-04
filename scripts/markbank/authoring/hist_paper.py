@@ -126,7 +126,9 @@ MISPRINTS = {
 EXTRA = re.compile(r'^Answer the questions below if you are following the '
                    r'Alternative Instructions', re.I)
 # "1." / "1. (a) ..." — a numbered ask at the margin.
-QNUM = re.compile(r'^(\d{1,2})\.\s*(.*)$')
+# Not a time of day: 2020 Ordinary's diary extract logs "4.30 House filling
+# quickly." and "6.40 Parnell up.", which read as questions 4 and 6.
+QNUM = re.compile(r'^(\d{1,2})\.(?!\d)\s*(.*)$')
 LETTER = re.compile(r'^\(([a-f])\)\s*(.*)$')
 # The tariff the paper prints for an ask: "(20)", "(100)", "(40)".
 TARIFF = re.compile(r'\((\d{2,3})\)\s*$')

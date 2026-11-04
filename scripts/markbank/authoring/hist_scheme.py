@@ -98,6 +98,46 @@ NOTE_MAX = re.compile(r'\bMax\.?\s*CM\s*=\s*(\d+)')
 # The count may carry its noun: "If only ONE former colony, Max. CM = 50"
 # (2020 Higher, Europe Topic 5 Q3, whose NOTE is "colonies (plural)").
 NOTE_CAP = re.compile(r'(If only (?:ONE|TWO|THREE|FOUR)(?: [a-z][\w-]*)*)\s*,\s*Max\.?\s*CM\s*=\s*(\d+)', re.I)
+# An ANSWERED split: the scheme names each component of a part with its
+# price, prints the answer under the component that needs one, and closes on
+# the split and its total. 2020 Ordinary Q3(a) is
+#     "Document A is a primary source = 5M" / "Reason = 5M" / "It is the
+#     recollection/words of a North Vietnamese soldier ... etc. 5M + 5M 10M"
+# A component printed with nothing under it is its own answer; one with lines
+# under it is answered by them. It is recognised only when the closing split
+# names exactly the components' prices, in order, and adds up to its total.
+COMPONENT = re.compile(r'^([A-Z][^=]{0,80}?)\s*=\s*(\d{1,3})M$')
+SPLIT_TOTAL = re.compile(r'(?:^|\s)((?:\d{1,3})M(?:\s*\+\s*\d{1,3}M)+)\s+(\d{1,3})M$')
+
+
+def _answered_split(text):
+    """(total, [(component, marks, answer or None), ...]) or None."""
+    lines = [' '.join(t.split()) for t in text]
+    if not lines:
+        return None
+    m = SPLIT_TOTAL.search(lines[-1])
+    if not m:
+        return None
+    terms = [int(x) for x in re.findall(r'(\d{1,3})M', m.group(1))]
+    total = int(m.group(2))
+    if sum(terms) != total:
+        return None
+    last = lines[-1][:m.start()].strip()
+    comps = []
+    for line in lines[:-1] + ([last] if last else []):
+        c = COMPONENT.match(line)
+        if c:
+            comps.append([c.group(1).strip(), int(c.group(2)), []])
+        elif comps:
+            comps[-1][2].append(line)
+        else:
+            return None
+    if len(comps) < 2 or [marks for _n, marks, _a in comps] != terms:
+        return None
+    return total, [(name, marks, ' '.join(answer) or None)
+                   for name, marks, answer in comps]
+
+
 # An Ordinary Level Part A answer.
 A_LINE = re.compile(r'^A(\d)\.\s*(.*)$')
 # The whole scheme entry for an Ordinary Level part B or C.
@@ -198,7 +238,10 @@ INSTRUCTION_TAIL = re.compile(
     r'|If only (?:ONE|TWO)\b[^.]*\.?'
     r'|\(?(?:any )?(?:one|two) elements? only = \d+m\)?'
     r'|\(?any two,? \d+m \+ \d+m\)?'
-    r'|\(?\d+m \+ \d+m\)?)\s*$', re.I)
+    r'|\(?\d+m \+ \d+m\)?'
+    # The split with no unit, "Because they were young and well-educated. (4 +
+    # 4) 8M" (2019, 2020 Ordinary): only ever in its brackets.
+    r'|\(\d+ \+ \d+\))\s*$', re.I)
 
 # A sentence that instructs the EXAMINER rather than answering the question.
 # The SEC sets these in the same paragraph as its model answer — "Accept A or B
@@ -222,7 +265,8 @@ INSTRUCTION_POINT = re.compile(
 # kept, but on the row beside it as its note: a student cannot claim it.
 INSTRUCTION_OPENING = (r'(?:Candidates should\b|Answers? should\b|A clear understanding of\b'
                        r'|Points should be supported\b|Comments on the limitations\b'
-                       r'|Accept (?:answers|either|both|any)\b|Do not award\b)')
+                       r'|Accept (?:answers|either|both|any)\b|Do not award\b'
+                       r'|Mark (?:the )?quality of\b)')
 INSTRUCTION_SENTENCE = re.compile('^' + INSTRUCTION_OPENING, re.I)
 # Where an instruction follows a sentence ending in a capital ("... the early
 # history of the GAA. Points should be supported ..."), the sentence splitter
@@ -659,6 +703,17 @@ class HistScheme:
         if not text:
             self.refused.append((ask.key, 'the scheme states nothing here'))
             return
+        split = _answered_split(text)
+        if split:
+            ask.kind = 'split'
+            ask.total, ask.components = split
+            ask.notation = ' '.join(SPLIT_TOTAL.search(' '.join(text[-1].split())).group(0).split())
+            ask.evidence = ' '.join(' '.join(text).split())[:400]
+            ask.points = [(None, answer or name, f'{name} = {marks}M' if answer else None)
+                          for name, marks, answer in ask.components]
+            ask.cue = ' '.join(' '.join(p for _l, p, _n in ask.points).split())
+            self._add(ask)
+            return
         # The grid is classified on the PRINTED line, before its tariff is
         # stripped: "One opinion = 5M" is the scheme dividing a total, and once
         # the 5M has been removed "One opinion =" no longer looks like it.
@@ -970,7 +1025,8 @@ class HistScheme:
             if text.startswith('• '):
                 cs['statementKinds' if mode == 'kinds' else 'procedure'].append(text[2:])
                 continue
-            if re.match(r'^Here, in question 4 of the DBQ', text):
+            # "of the DBQ" (2021 on); 2020 spells it "of the Documents-based Question".
+            if re.match(r'^Here, in question 4 of the (?:DBQ|Documents-based Question)\b', text):
                 q4_guidance.append(text)
                 continue
             if re.match(r'^Note\b', text):

@@ -484,7 +484,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(7);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(61);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(72);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['Chapel bell', 'convent chimes', 'organ'],
@@ -509,6 +509,14 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['The original six members had access to Irish, British and Danish fisheries', 6, [0, 3, 6], 'access to Irish fisheries alone = 3m'],
     ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
+    // 2020 OL Q3(a) prices each component and answers the one that needs an answer:
+    // "Document A is a primary source = 5M" / "Reason = 5M" / the reason / "5M + 5M 10M".
+    const answeredSplit = cards.find(card => card.id === 'hist-2020-ol-lm-s1-q3a')!;
+    expect([answeredSplit.tariffModel.kind, answeredSplit.totalMarks]).toEqual(['fixed', 10]);
+    expect(answeredSplit.rows.map(row => [row.verbatim.split('. ')[0], row.marks, row.contextNote])).toEqual([
+      ['Document A is a primary source', 5, undefined],
+      ['It is the recollection/words of a North Vietnamese soldier who fought against the US in Vietnam', 5, 'Reason = 5M'],
+    ]);
   });
 
   it('Accounting: every task carries the scheme’s priced lines as rows that add up to it, or is listed in the residue with its reason', () => {
