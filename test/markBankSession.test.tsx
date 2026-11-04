@@ -24,7 +24,8 @@ import SessionScreen, {
   showsRowMarks,
   suggestGrade,
 } from '@/components/MarkBank/SessionScreen';
-import { isRubricCard, tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
+import { isRubricCard, tariffReconciles, type IrishCriterion, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
+import { irishPartCount } from '@/components/MarkBank/irishScoring';
 import { CARDS as ART_HIGHER } from '@/components/MarkBank/cards/art/higher';
 import { CARDS as IRISH_HIGHER } from '@/components/MarkBank/cards/irish/higher';
 import { CARDS as ECONOMICS_HIGHER } from '@/components/MarkBank/cards/economics/higher';
@@ -66,6 +67,26 @@ const renderSession = (cards: SecCard[], reviewPool?: { total: number; label: st
     />,
   );
   return { ...utils, onGrade, onFinish, onExit };
+};
+
+/** Full marks on one Irish criterion through its revealed box: each sub-question's best rows claimed (a stepped
+ *  row at its top step, a ladder's rows ticked), or the mark itself where the scheme is not cut into rows. */
+const claimIrishCriterion = (criterion: IrishCriterion, label = criterion.label) => {
+  const scope = screen.getByText(label, { selector: 'strong' }).closest('section')!;
+  if (!criterion.allocation) {
+    fireEvent.click(within(scope).getByRole('button', { name: `Set ${label} to ${criterion.maxMarks} marks` }));
+    return;
+  }
+  const clicked = new Set<HTMLElement>();
+  for (const part of criterion.allocation.parts) {
+    const rows = part.ladder ? part.rows.slice(0, part.ladder.length) : [...part.rows].sort((a, b) => b.marks - a.marks).slice(0, irishPartCount(part));
+    for (const row of rows) {
+      const name = row.steps ? `Claim ${row.steps.at(-1)} marks for ${row.text}` : part.ladder ? row.text : `${row.text} · ${row.marks}m`;
+      const button = within(scope).getAllByRole('button', { name }).find(candidate => !clicked.has(candidate))!;
+      clicked.add(button);
+      fireEvent.click(button);
+    }
+  }
 };
 
 /* ------------------------------------------------------------ mark logic ---- */
@@ -413,16 +434,22 @@ describe('the question comes first and stays', () => {
     expect(prompt).toHaveTextContent('Scríobh síos tréith amháin');
     fireEvent.click(screen.getByRole('button', { name: /Read Litríocht Bhreise/i }));
     expect(screen.getByRole('dialog', { name: /Caoineadh Airt Uí Laoghaire/i })).toBeInTheDocument();
-    expect(screen.getByText('Printed page 13')).toBeInTheDocument();
+    // The reader shows the paper's own pages 13 and 14, page for page.
+    expect(screen.getByLabelText('Page 1 of 2')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Open the original paper' })).toHaveAttribute('href', expect.stringContaining('#page=13'));
     fireEvent.click(screen.getByRole('button', { name: /Next source page/i }));
-    expect(screen.getByText('Printed page 14')).toBeInTheDocument();
+    expect(screen.getByLabelText('Page 2 of 2')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Open the original paper' })).toHaveAttribute('href', expect.stringContaining('#page=14'));
     fireEvent.click(screen.getByRole('button', { name: /Close source text/i }));
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
     expect(prompt).toHaveTextContent('Scríobh síos tréith amháin');
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
-    for (const [label, marks] of [['(i) Eolas', 17], ['(ii) Eolas', 9], ['(iii) Eolas', 9], ['Gaeilge', 5]] as const) {
-      fireEvent.click(screen.getByRole('button', { name: `Set ${label} to ${marks} marks` }));
-    }
+    // (i), (ii) and (iii) are each cut into the scheme's rows; Gaeilge is one placed mark.
+    if (!isRubricCard(irish) || irish.rubric.system !== 'irish') throw new Error('not an Irish card');
+    expect(irish.rubric.criteria.map(criterion => [criterion.label, criterion.maxMarks, Boolean(criterion.allocation)])).toEqual([
+      ['(i) Eolas', 17, true], ['(ii) Eolas', 9, true], ['(iii) Eolas', 9, true], ['Gaeilge', 5, false],
+    ]);
+    for (const criterion of irish.rubric.criteria) claimIrishCriterion(criterion);
     expect(screen.getByText('40 / 40')).toBeInTheDocument();
   });
 
@@ -554,23 +581,14 @@ describe('the question comes first and stays', () => {
     expect(screen.getByText('1 of 2 this review')).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
-    const firstScheme = screen.getByText('Fógra a hAon · Tuiscint / Eolas').closest('section')!;
-    const secondScheme = screen.getByText('Fógra a Dó · Tuiscint / Eolas').closest('section')!;
-    // Each fógra's scheme is cut into sub-questions and rows: claim the full
-    // answers of every sub-question so each extract earns its whole tariff.
-    const claimFullMarks = (scope: HTMLElement, card: SecCard) => {
-      if (!isRubricCard(card) || card.rubric.system !== 'irish') throw new Error('not an Irish card');
-      for (const part of card.rubric.criteria[0].allocation!.parts) {
-        const rows = part.ladder
-          ? part.rows.slice(0, part.ladder.length)
-          : [...part.rows].sort((a, b) => b.marks - a.marks).slice(0, Math.max(1, Math.floor(part.tariff / Math.max(...part.rows.map(row => row.marks)))));
-        for (const row of rows) {
-          fireEvent.click(within(scope).getByRole('button', { name: part.ladder ? row.text : `${row.text} · ${row.marks}m` }));
-        }
-      }
-    };
-    claimFullMarks(firstScheme, listening[0]);
-    claimFullMarks(secondScheme, listening[1]);
+    // Each fógra keeps one box per printed question ("Fógra a hAon · Ceist 1(a)"), cut into the scheme's
+    // answers: claim the full answers of every question so each extract earns its whole tariff.
+    for (const [index, section] of ['Fógra a hAon', 'Fógra a Dó'].entries()) {
+      const member = listening[index];
+      if (!isRubricCard(member) || member.rubric.system !== 'irish') throw new Error('not an Irish card');
+      expect(member.rubric.criteria.every(criterion => criterion.allocation)).toBe(true);
+      for (const criterion of member.rubric.criteria) claimIrishCriterion(criterion, `${section} · ${criterion.label}`);
+    }
     expect(screen.getByText('18 / 18')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /^Got it/i }));
     expect(onGrade).toHaveBeenCalledTimes(2);

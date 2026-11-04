@@ -28,6 +28,7 @@ import {
 } from '../components/MarkBank/SessionScreen';
 import { sessionExerciseCount } from '../components/MarkBank/sessionPlanning';
 import { irishRowScoreId } from '../components/MarkBank/irishScoring';
+import { irishFullScores } from './fixtures/irishScores';
 import {
   isRubricCard,
   tariffReconciles,
@@ -284,8 +285,8 @@ describe('Irish prompt, paper and source integrity', () => {
       ]);
       expect(card.schemeCitation).toContain(`p.${pages[0]}–${pages[1]}`);
       expect(card.sourceMaterial?.pages.length).toBeGreaterThan(0);
-      expect(irishMarks(card, Object.fromEntries(irishRubric(card).criteria
-        .map(c => [irishScoreId(c.id), c.maxMarks])))).toBe(40);
+      // Each part's rows claimed at their top: the 40 the card is worth (test/fixtures/irishScores.ts).
+      expect(irishMarks(card, irishFullScores(card))).toBe(40);
     }
   });
 

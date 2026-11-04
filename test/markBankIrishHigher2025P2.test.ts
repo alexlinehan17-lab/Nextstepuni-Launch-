@@ -6,9 +6,10 @@ import authored from '../components/MarkBank/cards/irish/authored.json';
 import sourceReview from '../scripts/markbank/authored/irish-higher-2025-p2-source-review.json';
 import inventory from '../scripts/markbank/authored/irish-archive-inventory.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
-import { irishMarks, irishScoreId } from '../components/MarkBank/SessionScreen';
+import { irishMarks } from '../components/MarkBank/SessionScreen';
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { tariffReconciles } from '../types/markBank';
+import { irishFullScores } from './fixtures/irishScores';
 
 type Card = { id: string; atlasQuestionId?: string; totalMarks: number; topicId: string; schemePages?: number[];
   reviewedPaperPages?: number[]; criteria: { id: string; maxMarks: number; permittedMarks: number[]; guidance: string[]; kind: string }[];
@@ -89,7 +90,7 @@ describe('2025 Higher Paper 2 source reconciliation (26 retained + 48 added)', (
     }
     const route = cards.find(c => c.id === 'irish-2025-hl-p2-poetry-3a-a')!;
     if (route.rubric.system !== 'irish') throw new Error('Wrong rubric');
-    expect(irishMarks(route, Object.fromEntries(route.rubric.criteria.map(c => [irishScoreId(c.id), c.maxMarks])))).toBe(30);
+    expect(irishMarks(route, irishFullScores(route))).toBe(30);
   });
 
   it('joins all 74 cards to Atlas with paper pages, scheme pages and same-level topics', () => {

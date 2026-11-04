@@ -4,7 +4,8 @@ import { CARDS } from '../components/MarkBank/cards/irish/higher';
 import authored from '../components/MarkBank/cards/irish/authored.json';
 import review from '../scripts/markbank/authored/irish-reading-review.json';
 import { cardsForTopic } from '../components/MarkBank/deck';
-import { irishMarks, irishScoreId } from '../components/MarkBank/SessionScreen';
+import { irishMarks } from '../components/MarkBank/SessionScreen';
+import { irishRowScoreId } from '../components/MarkBank/irishScoring';
 import { curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/examTopics/registry';
 import { paperRegionFor, schemeRegionFor } from '../components/PaperTrail/paperRegion';
 import { tariffReconciles, type IrishRubric } from '../types/markBank';
@@ -60,7 +61,11 @@ describe('2024 Higher Irish reading: independently reviewed paper/scheme boundar
       const criterion=rubric(`${passage}-q6-a`).criteria[0];
       expect(criterion.permittedMarks).toEqual([0,2,3]);
       expect(criterion.guidance.join(' ')).toContain('ceart agus marc amháin ar an gceann eile');
-      for(const marks of [0,2,3]) expect(irishMarks(card,{[irishScoreId(criterion.id)]:marks})).toBe(marks);
+      // The two items are rows under the scheme's ladder (cards/irish/answers.ts): one right is 2, both are 3.
+      const part=criterion.allocation!.parts[0];
+      expect(part.ladder).toEqual([2,3]);
+      [0,1,2].forEach((claimed,index)=>expect(irishMarks(card,Object.fromEntries(part.rows.slice(0,claimed)
+        .map(row=>[irishRowScoreId(criterion.id,part.id,row.id),1])))).toBe([0,2,3][index]));
       expect(cardsForTopic('irish-3-3',CARDS)).toContain(cardFor(`${passage}-q6`));
       expect(cardsForTopic('irish-3-3',CARDS)).not.toContain(cardFor(`${passage}-q6-b`));
     }

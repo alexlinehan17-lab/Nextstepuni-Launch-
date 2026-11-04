@@ -6,9 +6,10 @@ import sourceReview from '../scripts/markbank/authored/irish-higher-2025-p1-sour
 import inventory from '../scripts/markbank/authored/irish-archive-inventory.json';
 import authored from '../components/MarkBank/cards/irish/authored.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
-import { irishMarks, irishScoreId } from '../components/MarkBank/SessionScreen';
+import { irishMarks } from '../components/MarkBank/SessionScreen';
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { tariffReconciles } from '../types/markBank';
+import { irishFullScores } from './fixtures/irishScores';
 
 type Authored = (typeof authored.cards)[number] & {
   atlasQuestionId?: string; schemePages?: number[]; reviewedPaperPages?: number[];
@@ -49,9 +50,9 @@ describe('2025 Higher Paper 1 source reconciliation (retained legacy cards)', ()
     expect(guide('listening-c-p2')).not.toContain('Roinn ar an bpáipéar');
     expect(guide('listening-c-p2')).toContain('Gael Linn = 2 mharc');
     expect(guide('listening-b-c2-first')).toContain('fágadh an séimhiú');
-    const scores = Object.fromEntries(get('listening-a-f1').criteria.map(c => [irishScoreId(c.id), c.maxMarks]));
+    // Fógra a hAon's question boxes, each claimed at its full answer: the extract's 10 (test/fixtures/irishScores.ts).
     const runtime = cards.find(c => c.id === 'irish-2025-hl-p1-listening-a-f1')!;
-    expect(irishMarks(runtime, scores)).toBe(10);
+    expect(irishMarks(runtime, irishFullScores(runtime))).toBe(10);
   });
 
   it('lifts the 2025 composition scheme, including where S4 applies', () => {

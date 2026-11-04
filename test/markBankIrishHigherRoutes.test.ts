@@ -7,9 +7,10 @@ import reviews from '../scripts/markbank/authored/irish-higher-route-review.json
 import { resolveCurriculumSpecification } from '../curriculumRegistry';
 import { curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/examTopics/registry';
 import { topicsForPaper } from '../components/PaperTrail/topics';
-import { irishMarks, irishScoreId } from '../components/MarkBank/SessionScreen';
+import { irishMarks } from '../components/MarkBank/SessionScreen';
 import { resolveSibling, answerMapUrls } from '../components/PaperTrail/vaultResolve';
 import { tariffReconciles } from '../types/markBank';
+import { irishFullScores } from './fixtures/irishScores';
 
 const byId = new Map(CARDS.map(card => [card.id,card]));
 const routeIds = new Set(reviews.flatMap(review => review.cardIds));
@@ -69,7 +70,7 @@ describe('visually reviewed Higher Irish prose and optional poetry routes', () =
       ]);
       expect(card.rubric.criteria[0].guidance.join(' ')).toContain('ar a laghad');
       expect(card.rubric.criteria[2].guidance.join(' ')).toContain('bronn 0 ar an mír ar fad');
-      expect(irishMarks(card,Object.fromEntries(card.rubric.criteria.map(c => [irishScoreId(c.id),c.maxMarks])))).toBe(30);
+      expect(irishMarks(card,irishFullScores(card))).toBe(30);
     });
     expect(byId.has('irish-2022-hl-p2-poetry-3b-a')).toBe(true);
   });

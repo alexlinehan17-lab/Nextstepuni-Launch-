@@ -38,8 +38,10 @@ describe('an Irish tariff cut into rows', () => {
 
   test('a poetry option with three sub-questions keeps each tariff and its sample points', () => {
     const card = byId('irish-2024-ol-p2-poetry-3b-a');
-    const eolas = card.rubric.criteria.find(criterion => criterion.id === 'eolas')!;
-    const parts = eolas.allocation!.parts;
+    // One criterion per printed sub-question, and the title and poet's 2 on its own (the reviewed card).
+    const priced = card.rubric.criteria.filter(criterion => criterion.allocation);
+    expect(priced.map(criterion => criterion.id)).toEqual(['eolas-i', 'eolas-ii', 'eolas-iii', 'teideal']);
+    const parts = priced.flatMap(criterion => criterion.allocation!.parts);
     expect(parts.map(part => part.tariff)).toEqual([9, 7, 7, 2]);
     expect(parts[0].rows[0]).toMatchObject({ text: 'Dhá phríomhsmaoineamh', marks: 9, steps: [0, 5, 9] });
     expect(parts[3].rows.map(row => [row.text, row.marks])).toEqual([['Ainm an dáin', 1], ['Ainm an fhile', 1]]);

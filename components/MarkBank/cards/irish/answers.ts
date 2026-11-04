@@ -39,6 +39,8 @@ import type { IrishAllocation, IrishAnswerPart, IrishAnswerRow } from '../../../
 export interface IrishAnswerSource {
   id: string;
   totalMarks: number;
+  /** The whole card's marks, where a reviewed card prices one printed question across several criteria. */
+  cardTotal?: number;
   questionRef: string;
   questionText: string;
   guidance: readonly string[];
@@ -78,10 +80,37 @@ const cumulative = (terms: number[]) => terms.map((_, index) => terms.slice(0, i
 
 interface Draft { prompt?: string; tariff: number; ladder?: number[]; rows: { text: string; marks?: number }[] }
 
+/** A reviewed card's criterion carries its own sub-question first, then lines that are not its answers:
+ *  the scheme's "Nóta: …" for the part ("Má tá dhá phointe eolais i gceist, tá 3 mharc …"), which is an
+ *  examiner direction, and the tariff summary for the whole section ("Freagair Léamhthuiscint A agus
+ *  Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc …") or the card's note on an order-dependent
+ *  award, which the part's own tariff and ladder already show. None of their prices is this part's. */
+const PART_NOTE = /^Nóta:/;
+const SECTION_SUMMARY = /^(?:Freagair Léamhthuiscint|Tá Ceist \d+\s*[–-]\s*\d+ ar cómharc|Order-dependent award)/;
+/** "(Is leor aon trí cinn as na ceithre cinn: …)", "(Ní mór ‘…’ a bheith sa fhreagra chun an dara marc a
+ *  ghnóthú)" after an answer: how much of it suffices or what it must contain, a direction. */
+const SUFFICES = /\((?:Is leor|aon|Ní mór)\s[^()]*(?:\([^()]*\)[^()]*)*\)/g;
+/** "… nó áitiúla = 1 mharc (gan ‘in 2024’ sa fhreagra)": the qualifier is the condition of the answer it
+ *  follows. It stays on that row, as a second slice: "… nó áitiúla: (gan ‘in 2024’ sa fhreagra) · 1m". */
+const QUALIFIED_PRICE = /\s*(=\s*\d+\s*m?h?arc\b)\s*(\(gan\s[^()=]*\))/g;
+
+/** Whether a line is the card's printed question, read past the paper's hyphens and spacing. */
+const letters = (value: string) => value.toLowerCase().replace(/[^a-záéíóú]+/g, '');
+const printedQuestion = (questionText: string, line: string) => letters(line).length > 12 && letters(questionText).includes(letters(line));
+
 /** Cut one criterion's exact guidance into parts and rows, or say why not. */
 export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult {
   const directions: string[] = [];
-  let text = source.guidance.join(' ').split(BULLET).join(' • ');
+  const ownLines = source.guidance.filter((line, index) => {
+    if (index === 0) return true;
+    if (SECTION_SUMMARY.test(line.trim())) return false;
+    if (!PART_NOTE.test(line.trim())) return true;
+    directions.push(tidy(line));
+    return false;
+  });
+  let text = ownLines.join(' ').split(BULLET).join(' • ');
+  text = text.replace(QUALIFIED_PRICE, (_, price: string, qualifier: string) => `: ${qualifier} ${price}`);
+  text = text.replace(SUFFICES, note => { directions.push(tidy(note)); return ' '; });
   text = text.replace(/\s+/g, ' ').trim().replace(HEADER, '');
   text = text.replace(NOTE, (_, note: string) => { directions.push(tidy(note)); return ' '; });
   text = text.replace(LANGUAGE_RULE, rule => { directions.push(tidy(rule)); return ' '; });
@@ -197,6 +226,9 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
       current!.rows.push({ text: tidy(head.slice(question + 1)), marks: tariff });
       continue;
     }
+    // The 2026 question cards open with the question as the paper prints it ("Luaigh cúis amháin … ar Phól. 2 mharc"):
+    // a statement, not a question, but the card's own sub-question all the same.
+    if (!current && head && printedQuestion(source.questionText, head)) { open(head, tariff); continue; }
     if (!current) return { ok: false, reason: 'tariff before any sub-question' };
     if (!head) continue;
     current.rows.push({ text: head, marks: tariff });

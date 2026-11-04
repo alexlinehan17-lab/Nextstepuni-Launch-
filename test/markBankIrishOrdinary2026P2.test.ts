@@ -5,9 +5,10 @@ import authored from '../components/MarkBank/cards/irish/ordinary-2026-p2-author
 import sourceReview from '../scripts/markbank/authored/irish-ordinary-2026-p2-source-review.json';
 import inventory from '../scripts/markbank/authored/irish-archive-inventory.json';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
-import { irishMarks, irishScoreId } from '../components/MarkBank/SessionScreen';
+import { irishMarks } from '../components/MarkBank/SessionScreen';
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { tariffReconciles } from '../types/markBank';
+import { irishFullScores } from './fixtures/irishScores';
 
 const cards = ORDINARY.filter(c => c.year === 2026 && c.paperFileid === 'LC001GLP200IV');
 const get = (key: string) => authored.cards.find(c => c.atlasQuestionId === key)!;
@@ -71,7 +72,7 @@ describe('2026 Ordinary Paper 2 source reconciliation', () => {
     const route = cards.find(c => c.id === 'irish-2026-ol-p2-poetry-3a-a')!;
     const rubric = route.rubric;
     if (rubric.system !== 'irish') throw new Error('Wrong rubric');
-    const full = (deduct: number) => Object.fromEntries(rubric.criteria.map(c => [irishScoreId(c.id), c.kind === 'deduction' ? deduct : c.maxMarks]));
+    const full = (deduct: number) => irishFullScores(route, deduct);
     expect(irishMarks(route, full(0))).toBe(25);
     expect(irishMarks(route, full(4))).toBe(21);
   });
@@ -109,7 +110,7 @@ describe('2026 Ordinary Paper 2 source reconciliation', () => {
     expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
     const route = cards.find(c => c.id === 'irish-2026-ol-p2-prose-2a-a-caca-milis')!;
     if (route.rubric.system !== 'irish') throw new Error('Wrong rubric');
-    const scores = Object.fromEntries(route.rubric.criteria.map(c => [irishScoreId(c.id), c.kind === 'deduction' ? 0 : c.maxMarks]));
+    const scores = irishFullScores(route);
     expect(irishMarks(route, scores)).toBe(25);
   });
 

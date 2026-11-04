@@ -9,6 +9,7 @@ import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import { irishMarks, irishScoreId } from '../components/MarkBank/SessionScreen';
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { tariffReconciles } from '../types/markBank';
+import { irishFullScores } from './fixtures/irishScores';
 
 type Card = { id: string; atlasQuestionId?: string; totalMarks: number; topicId: string; schemePages?: number[];
   reviewedPaperPages?: number[]; taskRequirements: string[]; schemeFileid?: string;
@@ -95,7 +96,7 @@ describe('2024 Ordinary Paper 2 source reconciliation (22 retained + 44 added)',
     expect(guide('F-3B-a')).toContain('Dhá phríomhsmaoineamh = 5 mharc + 4 mharc');
     const route = cards.find(c => c.id === 'irish-2024-ol-p2-prose-2a-b')!;
     if (route.rubric.system !== 'irish') throw new Error('Wrong rubric');
-    const full = Object.fromEntries(route.rubric.criteria.map(c => [irishScoreId(c.id), c.kind === 'award' ? c.maxMarks : 0]));
+    const full = irishFullScores(route);
     expect(irishMarks(route, full)).toBe(25);
     expect(irishMarks(route, { ...full, [irishScoreId('gaeilge-deduction')]: 4 })).toBe(21);
   });

@@ -5,9 +5,10 @@ import authored from '../components/MarkBank/cards/irish/higher-2026-p2-authored
 import sourceReview from '../scripts/markbank/authored/irish-higher-2026-p2-source-review.json';
 import inventory from '../scripts/markbank/authored/irish-archive-inventory.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
-import { irishMarks, irishScoreId } from '../components/MarkBank/SessionScreen';
+import { irishMarks } from '../components/MarkBank/SessionScreen';
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { tariffReconciles } from '../types/markBank';
+import { irishFullScores } from './fixtures/irishScores';
 
 const cards=HIGHER.filter(c=>c.year===2026 && c.paperFileid==='LC001ALP200IV');
 const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
@@ -79,7 +80,7 @@ describe('2026 Higher Paper 2 source reconciliation',()=>{
     expect(get('P-2B-b').questionText).toContain('Ní mór teideal an ghearrscéil sin, mar aon le hainm an údair');
     const route=cards.find(c=>c.id==='irish-2026-hl-p2-poetry-3a-a')!;
     if(route.rubric.system!=='irish') throw new Error('Wrong rubric');
-    expect(irishMarks(route,Object.fromEntries(route.rubric.criteria.map(c=>[irishScoreId(c.id),c.maxMarks])))).toBe(30);
+    expect(irishMarks(route,irishFullScores(route))).toBe(30);
   });
 
   it('joins all 72 cards to Atlas with paper pages, scheme pages and same-level topics',()=>{
