@@ -111,7 +111,7 @@ describe('visually reviewed Higher Irish prose and optional poetry routes', () =
       // The twelve shipped reading anchors stay byte-identical; the literature questions the paper
       // prints (Ceist 2 Prós, Ceist 3 Filíocht) are added after them as the reviewed tasks' parents.
       const legacy = map.q.filter((q: { n: string }) => /^\d+$/.test(q.n) && Number(q.n) <= 12)
-        .map(({paperRegion,schemeRegion,printOrder,...original}: Record<string, unknown>) => original);
+        .map(({paperRegion: _paperRegion,schemeRegion: _schemeRegion,printOrder: _printOrder,...original}: Record<string, unknown>) => original);
       expect(legacy).toHaveLength(12);
       expect(map.q.filter((q: { n: string }) => /^\d+$/.test(q.n) && Number(q.n) > 12)
         .map((q: { n: string; label: string }) => [q.n, q.label])).toEqual(year === 2022

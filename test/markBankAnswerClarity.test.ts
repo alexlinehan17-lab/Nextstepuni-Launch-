@@ -37,7 +37,6 @@ import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geogra
 import { FRENCH_LISTENING_CARDS } from '../components/MarkBank/cards/french/listening';
 import { FRENCH_READING_CARDS } from '../components/MarkBank/cards/french/reading';
 import { FRENCH_CLOZE_CARDS } from '../components/MarkBank/cards/french/cloze';
-import irish from '../components/MarkBank/cards/irish/authored.json';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import politics from '../components/MarkBank/cards/politics-and-society/authored.json';
