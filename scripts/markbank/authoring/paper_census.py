@@ -1093,8 +1093,8 @@ def census_agri_legacy(year, level):
     return parts, dict(texts), [path]
 
 
-def census_merged(subject, year, level, component=None):
-    P = PP.Paper(subject, year, level, component=component)
+def census_merged(subject, year, level, component=None, *, files=None):
+    P = PP.Paper(subject, year, level, component=component, files=files)
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
@@ -3851,7 +3851,42 @@ def census_subject(subject):
                     'type': 'marks-checksum',
                     'where': f"{p['year']} {p['level']} {p.get('paper') or ''}",
                     'detail': f"marks sum {p['marksSum']}, other years say {want}"})
+    if subject == 'economics':
+        papers.extend(census_economics_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+
+
+# The SEC's deferred Economics sittings in the archive: 2022 Higher only
+# (deferredexams/ and deferredmarkingschemes/ hold LC034ALP000EV for 2022 and no
+# other Economics paper for 2022-2025; no Ordinary).
+ECON_DEFERRED_PAPERS = ((2022, 'hl', 'LC034ALP000EV'),)
+
+
+def census_economics_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Economics' deferred sitting (ECON_DEFERRED_PAPERS) is a paper of its own,
+    keyed 'Deferred' as Physics and Home Economics key theirs (codex/home-
+    economics-continuation-20261101, census_physics_deferred) and History keys
+    its own (census_history_deferred), so a deferred ask never lands on a June
+    leaf with the same address. The checksum is not run on it.
+    """
+    papers = []
+    for year, level, fileid in ECON_DEFERRED_PAPERS:
+        pdf = os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'{fileid}.pdf')
+        parts, texts, _ = census_merged('economics', year, level, files=[pdf])
+        leaves = [k for k in leaves_of(parts)
+                  if not printed_example('economics', year, level, k, texts)]
+        flags = [f for f in continuity_flags(parts, texts, 'economics')
+                 if not short_ask_ok('economics', year, level, f)]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'economics'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
 
 
 def report(result):
