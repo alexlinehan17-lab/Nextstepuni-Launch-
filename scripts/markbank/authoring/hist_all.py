@@ -163,6 +163,23 @@ ESSAY_PAPERS = {
 # the essay papers; each joins one at a time, as it is read and reviewed
 # (2021-2026 in lane batches 1-2, then back from 2020).
 PAPERS = sorted(ESSAY_PAPERS, key=lambda p: (p[0], p[1], FIELD_KEYS.index(p[2])))
+# The deferred sittings carded so far (hist_paper.DEFERRED_PAPERS lists every
+# one the SEC set), each its own sitting: ids "hist-2023-hl-deferred-lm-...",
+# citations "... — Deferred sitting", the form Physics and Home Economics use.
+DEFERRED_ESSAY_PAPERS = {
+    (2022, 'hl', 'lm'),
+    (2022, 'ol', 'lm'),
+    (2023, 'hl', 'lm'),
+    (2023, 'ol', 'lm'),
+}
+DEFERRED = 'deferred'
+DEFERRED_REF = ' — Deferred sitting'
+
+
+def sittings_to_card():
+    """(year, level, field, sitting) for every paper carded: June first, then deferred."""
+    return ([(y, l, f, None) for y, l, f in PAPERS]
+            + [(y, l, f, DEFERRED) for y, l, f in sorted(DEFERRED_ESSAY_PAPERS)])
 
 # Topic titles the SCHEME misprints, keyed (year, level, field, unit): (the
 # title it prints, a word the paper's questions under the unit and the
@@ -241,9 +258,9 @@ def slug(unit):
     return f's{section}t{topic}' + (part.lower() if part else '')
 
 
-def card_id(year, level, field, key):
+def card_id(year, level, field, key, sitting=None):
     unit, q, letter, roman = key
-    bits = ['hist', str(year), level, field, slug(unit)]
+    bits = ['hist', str(year), level] + ([sitting] if sitting else []) + [field, slug(unit)]
     if q is not None:
         bits.append(f'q{q}')
     if letter:
@@ -253,17 +270,16 @@ def card_id(year, level, field, key):
     return '-'.join(bits)
 
 
-def question_ref(year, level, field, key):
+def question_ref(year, level, field, key, sitting=None):
     unit, q, letter, roman = key
     ref = f'{year} {level.upper()} {FIELDS[field]} Section {unit}'
-    if q is None and letter is None and roman is None:
-        return ref
-    ref += ' Q' + ('' if q is None else str(q))
-    if letter:
-        ref += f'({letter})'
-    if roman:
-        ref += f'({roman})'
-    return ref
+    if q is not None or letter is not None or roman is not None:
+        ref += ' Q' + ('' if q is None else str(q))
+        if letter:
+            ref += f'({letter})'
+        if roman:
+            ref += f'({roman})'
+    return ref + (DEFERRED_REF if sitting == DEFERRED else '')
 
 
 def source_material(P, year, level, field, unit, pages, title, label):
@@ -274,6 +290,7 @@ def source_material(P, year, level, field, unit, pages, title, label):
         'pages': pages,
         'attribution': (f'SEC History {year} '
                         f'{"Higher" if level == "hl" else "Ordinary"} Level '
+                        f'{"deferred " if P.sitting == DEFERRED else ""}'
                         f'examination paper, {FIELDS[field]} — '
                         '© State Examinations Commission.'),
         'presentationNote': ('Read the exact source as it appeared in the '
@@ -406,7 +423,7 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
             return 'the printed choice and its instruction could not be read whole'
         question = '\n'.join([instruction, *items])
     card = {
-        'id': card_id(year, level, field, key),
+        'id': card_id(year, level, field, key, P.sitting),
         'subjectId': 'history',
         'kind': 'rubric',
         'level': LEVEL_WORD[level],
@@ -436,6 +453,82 @@ PRICED_COMPONENT = re.compile(r'([A-Z][A-Za-z \u2019\'-]{1,40}?)\s*=\s*(\d{1,3})
 TARIFF_CEILING = re.compile(r'\bMax\.?\s*=\s*(\d{1,3})M\b')
 NO_PRINTED_ANSWER = 'The scheme prints no answer here: any correct one earns the marks.'
 TARIFF_WORDING = re.compile(r'^(?:ONE|TWO|THREE|[Oo]ne valid|[Tt]wo valid|[Aa]ny valid|Any (?:ONE|TWO|THREE))\b(?![^.]*\.\s*\S)')
+# The same pricing in the schemes' other words, swept across every History card
+# (2026-11-04): a verdict left open either way ("Yes or No", "Reasonable
+# advice? Yes or No"), with or without its unprinted reason ("Yes or No with
+# ONE valid explanation", "Yes or No? Any ONE valid reason"); a bare reason
+# or explanation ("one reason", "a valid reason", "explanation", "Brief
+# explanation of the event"); and a price that restates its ask ("Any
+# reasonable description of extent of Pale", "Brief and clear definition of
+# the Enlightenment", "One argument by Faulkner from doc A", "Any two valid
+# countries of destination (3M + 3M)"). A row that prints its verdict ("Yes.
+# Any ONE valid reason") prints part of its answer, so it is not one of these.
+OPEN_TARIFF_WORDING = re.compile(
+    r'^(?:(?:Reasonable advice\? )?Yes (?:or|OR) [Nn]o'
+    r'(?:\? Any ONE valid reason| with ONE valid (?:reason|explanation))?'
+    r'|(?:[Oo]ne |[Aa] valid )?reason|(?:Brief )?explanation(?: of the event)?'
+    r'|Any reasonable description of [^.]+|Brief and clear definition of [^.]+'
+    r'|One argument by [^.]+ from doc [A-E]|Any two valid [^.(]+\(3M \+ 3M\))$')
+
+
+# A row that runs one document's point straight into the next, unstopped
+# ("... no mention of religious groups/leaders in document A Document B
+# states ...", 2023 Ordinary deferred Q2(b)), gives each document's point its
+# own line, as a stance does (SessionScreen keeps History's line breaks), so
+# the two never read as one sentence. Only the whitespace changes. A document
+# named mid-sentence ("in Document B", "than Document A", "Document A and
+# Document B") is not a new point and stays on its line.
+DOCUMENT_RUN_ON = re.compile(r'(\S+) (?=(?:Document|Doc\.?) [A-E]\b)')
+RUN_ON_CONNECTIVES = frozenset(
+    'in of and or from that with whereas while both as by to than the then but '
+    'between also unlike like for on at nor either neither see about into within '
+    'where which what how when whether is are was were be does do did says said '
+    'say shows show states state if a an this its his her their compared contrast '
+    'contrasting same similar against regarding re versus vs - – — / &'.split())
+
+
+# A row whose statements the scheme prints one to a line with no stop between
+# them, and with no document label for document_lines to break on, so the
+# reader joins them into one sentence ("... the security apparatus of the
+# state Catholics were not part ...", 2011 Higher Q3(a)). Each statement keeps
+# its own line, as printed: the words are each line's opening as the scheme
+# prints it, and only the whitespace changes.
+PRINTED_LINE_STARTS = {
+    'hist-2011-hl-lm-s1-q3a': ('Catholics were not part', 'The intervening events'),
+}
+
+
+def printed_lines(card):
+    """Put each printed line PRINTED_LINE_STARTS names back on its own line."""
+    for start in PRINTED_LINE_STARTS.get(card['id'], ()):
+        hits = [row for row in card['rows'] if f' {start}' in row['verbatim']]
+        assert len(hits) == 1 and hits[0]['verbatim'].count(f' {start}') == 1, (card['id'], start)
+        hits[0]['verbatim'] = hits[0]['verbatim'].replace(f' {start}', f'\n{start}')
+
+
+def note_unprinted(row):
+    """Say, in the bank's fixed words, that a row prices an answer its scheme
+    does not print ("ONE valid reason", "Yes or No"). An any-N group ("Any
+    TWO" over its printed options) prints its answers; only a plain row can
+    lack one."""
+    if (row['kind'] != 'anyN'
+            and (TARIFF_WORDING.match(row['verbatim'])
+                 or OPEN_TARIFF_WORDING.match(row['verbatim']))
+            and NO_PRINTED_ANSWER not in (row.get('contextNote') or '')):
+        row['contextNote'] = ' — '.join(
+            x for x in (row.get('contextNote'), NO_PRINTED_ANSWER) if x)
+
+
+def document_lines(text):
+    """The row text with each run-on document point on its own line."""
+    def brk(m):
+        prev = m.group(1)
+        if prev in ('A', 'B', 'C', 'D', 'E'):
+            return f'{prev}\n'
+        if prev[-1] in '.:;?!,' or prev.lower().strip('“‘(') in RUN_ON_CONNECTIVES:
+            return m.group(0)
+        return f'{prev}\n'
+    return DOCUMENT_RUN_ON.sub(brk, text)
 
 
 def unit_source_pages(P, unit):
@@ -564,9 +657,10 @@ def split_card(P, year, level, field, key, ask, section, topic_id, ref):
             row['permittedMarks'] = steps
         if note:
             row['contextNote'] = note
+        note_unprinted(row)
         rows.append(row)
     card = {
-        'id': card_id(year, level, field, key),
+        'id': card_id(year, level, field, key, P.sitting),
         'subjectId': 'history',
         'level': LEVEL_WORD[level],
         'year': year,
@@ -622,7 +716,7 @@ def unanswered_card(P, S, year, level, field, key, section, ref, note):
     topic_section, topic = P.case_study
     question = P.asks[key]
     card = {
-        'id': card_id(year, level, field, key),
+        'id': card_id(year, level, field, key, P.sitting),
         'subjectId': 'history',
         'level': LEVEL_WORD[level],
         'year': year,
@@ -657,7 +751,7 @@ def tariff_only_card(P, year, level, field, key, ask, section, topic_id, ref):
         return "the part's printed split does not add up to its ceiling"
     question = P.asks[key]
     card = {
-        'id': card_id(year, level, field, key),
+        'id': card_id(year, level, field, key, P.sitting),
         'subjectId': 'history',
         'level': LEVEL_WORD[level],
         'year': year,
@@ -695,11 +789,11 @@ def build():
         refused[reason] += 1
         examples[reason].append(ref)
 
-    for year, level, field in PAPERS:
+    for year, level, field, sitting in sittings_to_card():
         if True:
             if True:
-                P = HistPaper(year, level, field)
-                S = HistScheme(year, level, field)
+                P = HistPaper(year, level, field, sitting)
+                S = HistScheme(year, level, field, sitting)
                 derived = derive_unpriced_parts(P, S)
                 for d in derived:
                     tariff_checks.setdefault('derived', []).append(f'{year} {level} {field} {d}')
@@ -795,7 +889,7 @@ def build():
 
                 # --- one card, or one exclusion, per printed ask.
                 for key in sorted(P.asks, key=lambda k: tuple(str(x) for x in k)):
-                    ref = question_ref(year, level, field, key)
+                    ref = question_ref(year, level, field, key, sitting)
                     unit = key[0]
                     section, topic, part = unit_parts(unit)
                     ask = S.by_key.get(key)
@@ -834,7 +928,8 @@ def build():
                         refuse('the ask sits under no syllabus topic', ref)
                         continue
 
-                    if ask.kind == 'banded' and (year, level, field) in ESSAY_PAPERS:
+                    if ask.kind == 'banded' and ((year, level, field) in ESSAY_PAPERS
+                                                 or sitting == DEFERRED):
                         # An essay is priced whole on its unit; a lettered
                         # documents part priced by its split alone is not.
                         if key[2]:
@@ -936,7 +1031,7 @@ def build():
                                    'contextNote': ' — '.join(x for x in (rows[0].get('contextNote'),
                                                                          *(ask.partial_lines or [f'{alt} = {n}M'])) if x)}
                     card = {
-                        'id': card_id(year, level, field, key),
+                        'id': card_id(year, level, field, key, P.sitting),
                         'subjectId': 'history',
                         'level': LEVEL_WORD[level],
                         'year': year,
@@ -990,13 +1085,14 @@ def build():
                     card = step_counted(split_priced(card))
                     # A row that is the scheme pricing an answer it does not
                     # print ("ONE valid reason", "ONE decision of the Synod of
-                    # Thurles") says so, in the bank's fixed words.
+                    # Thurles") says so, in the bank's fixed words
+                    # (note_unprinted), and a run-on document point keeps its
+                    # own line (document_lines).
                     for row in card['rows']:
-                        # An any-N group ("Any TWO" over its printed options)
-                        # prints its answers; only a plain row can lack one.
-                        if row['kind'] != 'anyN' and TARIFF_WORDING.match(row['verbatim']):
-                            row['contextNote'] = ' — '.join(
-                                x for x in (row.get('contextNote'), NO_PRINTED_ANSWER) if x)
+                        note_unprinted(row)
+                        if row['kind'] != 'anyN':
+                            row['verbatim'] = document_lines(row['verbatim'])
+                    printed_lines(card)
                     cards.append(card)
     return (cards, exclusions, refused, examples, title_pairs, tariff_checks,
             extra_topic_checks, title_variants)

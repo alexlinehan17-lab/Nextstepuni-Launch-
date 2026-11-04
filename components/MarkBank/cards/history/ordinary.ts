@@ -1719,6 +1719,203 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
     "directions": []
    }
   },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "Mark by the principle of Core Statement. Max = 20M"
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m.",
+   "schemeFileid": "LC004GLP000EV-deferred",
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "Here, in question 4 of the DBQ, the examiner will be looking to award 5 marks each to four Core Statements for the full 20 marks allocation.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   }
+  },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band.",
+   "schemeFileid": "LC004GLP000EV-deferred",
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   }
+  },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band.",
+   "schemeFileid": "LC004GLP000EV-deferred",
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   }
+  },
 ];
 
 export const CARDS: SecCard[] = [
@@ -2614,7 +2811,7 @@ export const CARDS: SecCard[] = [
     questionText: "Has the house been fully modernised? Briefly explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes OR No", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Yes OR No", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     { id: "r-2", kind: "point", verbatim: "Any ONE valid explanation", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
@@ -4026,7 +4223,7 @@ export const CARDS: SecCard[] = [
     questionText: "Was Rinuccini’s visit to Kilkenny a success or a failure? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or No? Any ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Yes or No? Any ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4750,7 +4947,7 @@ export const CARDS: SecCard[] = [
     questionText: "Was the Jesuit mission to China a success or a failure? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or No? Any ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Yes or No? Any ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5552,7 +5749,7 @@ export const CARDS: SecCard[] = [
     questionText: "Did the sermon, mentioned in document A, give reasonable advice? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Reasonable advice? Yes or No", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "Reasonable advice? Yes or No", marks: 2, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     { id: "r-2", kind: "criterion", verbatim: "Two reasons for Yes or No", marks: 8, contextNote: "Sermon advised “restraint towards people of different religious persuasions” — Above quote only = 2M — Seems to be reasonable advice to behave respectfully to others, to not give offence which could lead to trouble At the same time the Apprentice Boys are asked to keep “firmness in defence of their Protestant heritage”, to assert themselves and keep the faith — Mark quality of explanation on its merits. — Max = 10M", permittedMarks: [0,4,8] },
     ],
     sourceMaterial: {
@@ -6120,7 +6317,7 @@ export const CARDS: SecCard[] = [
     questionText: "Are these people the very poorest? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or No with ONE valid explanation", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Yes or No with ONE valid explanation", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6818,7 +7015,7 @@ export const CARDS: SecCard[] = [
     questionText: "Was fighting taking place when the photograph was taken? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or No with ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Yes or No with ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7532,7 +7729,7 @@ export const CARDS: SecCard[] = [
     questionText: "Approximately, what was the extent of the Pale?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any reasonable description of extent of Pale", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Any reasonable description of extent of Pale", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8831,7 +9028,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was the extent of the Dutch empire in Asia?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any reasonable description of extent of Dutch empire", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Any reasonable description of extent of Dutch empire", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10978,7 +11175,7 @@ export const CARDS: SecCard[] = [
     questionText: "Which document, A or B, gives the more vivid account of the actions of the Spanish soldiers? Refer to both documents in your answer.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Document A or B gives the more vivid account\nDocument A states that where Spanish soldiers mutinied, they threatened lords, captured many places, robbed them and burned them down Document B gives the Duke of Alva as an example of Spanish misrule", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Document A or B gives the more vivid account\nDocument A states that where Spanish soldiers mutinied, they threatened lords, captured many places, robbed them and burned them down\nDocument B gives the Duke of Alva as an example of Spanish misrule", marks: null },
     { id: "r-2", kind: "point", verbatim: "He was notorious for harshness and cruelty", marks: null },
     { id: "r-3", kind: "point", verbatim: "This document also gives us a short description of the sacking of Antwerp and its consequences.", marks: null },
     ],
@@ -21992,7 +22189,7 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "An argument can be made that either document better shows O’Neill’s influence", marks: null },
     { id: "r-2", kind: "point", verbatim: "Document A shows that he has many allies across the various Irish families", marks: null },
     { id: "r-3", kind: "point", verbatim: "He could raise a contingent of bonnaughts", marks: null },
-    { id: "r-4", kind: "point", verbatim: "He was in charge of the military plan (“he has commanded ... he has appointed McMahon, etc”) Document B shows O’Neill’s power and influence in a different way", marks: null },
+    { id: "r-4", kind: "point", verbatim: "He was in charge of the military plan (“he has commanded ... he has appointed McMahon, etc”)\nDocument B shows O’Neill’s power and influence in a different way", marks: null },
     { id: "r-5", kind: "point", verbatim: "He has convinced Mountjoy and the Queen, that he now repents of his earlier rebelliousness", marks: null },
     { id: "r-6", kind: "point", verbatim: "He convinced Mountjoy that he had abandoned adherence to foreign powers and offered to serve against other rebels in Ireland.", marks: null },
     ],
@@ -25666,7 +25863,7 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "An argument can be made that either document gives more information about Geneva", marks: null },
     { id: "r-2", kind: "point", verbatim: "Document A gives a more general coverage and document B deals mostly with the city hospital", marks: null },
     { id: "r-3", kind: "point", verbatim: "Document A explains the role of elders and ministers in the supervision of the city and the correction of misbehaviour", marks: null },
-    { id: "r-4", kind: "point", verbatim: "It also describes how elders were to be appointed by the Small Council and the Council of Two Hundred Document B is much shorter", marks: null },
+    { id: "r-4", kind: "point", verbatim: "It also describes how elders were to be appointed by the Small Council and the Council of Two Hundred\nDocument B is much shorter", marks: null },
     { id: "r-5", kind: "point", verbatim: "It describes the role of the deacons in the running of the hospital, but it also gives interesting detail about the sort of persons who are not actually sick, but are to be cared for separately in the hospital.", marks: null },
     ],
     sourceMaterial: {
@@ -38196,7 +38393,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what was the Enlightenment?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Brief and clear definition of the Enlightenment", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Brief and clear definition of the Enlightenment", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -38340,7 +38537,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what was the Reign of Terror which took place in France during the period, 5 September 1793 – 28 July 1794?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Brief and clear definition of the Reign of Terror", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Brief and clear definition of the Reign of Terror", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -47763,8 +47960,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Document B gives Faulkner’s attitude to the London government", marks: null },
     { id: "r-2", kind: "point", verbatim: "There is no mention of Faulkner or the London government in document A. Document B states that Faulkner “felt betrayed” by the London government", marks: null },
-    { id: "r-3", kind: "point", verbatim: "He has not been given enough help to cope with all the problems caused by the strike", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Identification of doc B and quote from doc B required.", marks: null, contextNote: "5M + 5M Max = 10M" },
+    { id: "r-3", kind: "point", verbatim: "He has not been given enough help to cope with all the problems caused by the strike", marks: null, contextNote: "Identification of doc B and quote from doc B required. 5M + 5M Max = 10M" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -51402,7 +51598,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "English point-of-view", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "one reason", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "one reason", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -53766,8 +53962,8 @@ export const CARDS: SecCard[] = [
     questionText: "Was Gaelic law better than European law in relation to marriage? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or no", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "a valid reason", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Yes or no", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    { id: "r-2", kind: "point", verbatim: "a valid reason", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -56772,7 +56968,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "No", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "explanation", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "explanation", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -57324,8 +57520,8 @@ export const CARDS: SecCard[] = [
     questionText: "Overall, was Stalin a good employer, according to the writer? Briefly explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or No", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "reason", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Yes or No", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    { id: "r-2", kind: "point", verbatim: "reason", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -59009,7 +59205,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was the ‘Boston Massacre’ (5 March, 1770)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Brief explanation of the event", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Brief explanation of the event", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -59498,11 +59694,10 @@ export const CARDS: SecCard[] = [
     questionText: "Do you think that document A is a reliable historical source? Give a reason for your answer, referring to the document.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Answers can argue for/against the reliability of the source", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Answers can argue for/against the reliability of the source", marks: null, contextNote: "An implied yes/no with a valid reason can earn Max = 10M" },
     { id: "r-2", kind: "point", verbatim: "It is a primary source written by somebody who attended the games", marks: null },
     { id: "r-3", kind: "point", verbatim: "It provides factual information about the size of the crowd, the presence of five bands and the behaviour of the crowd, etc", marks: null },
     { id: "r-4", kind: "point", verbatim: "It is a Cork newspaper writing for a Cork readership and therefore hesitates to criticise the way the Cork crowd interfered with the run of play", marks: null },
-    { id: "r-5", kind: "point", verbatim: "An implied yes/no with a valid reason can earn Max =", marks: null },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -59527,8 +59722,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "There is a direct link between the two documents: In doc A, the newspaper reporter said “we venture to remark that if the crowd had kept off the field and given fair play to the visitors, the contest would have provided the best hurling ever seen”", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Paul Rouse (doc B) uses this evidence to say that “even the local papers” noted the behaviour of the home crowd which had hurt the chances of the Tipperary men", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Answer must clearly make a link between the two documents Max =", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Paul Rouse (doc B) uses this evidence to say that “even the local papers” noted the behaviour of the home crowd which had hurt the chances of the Tipperary men", marks: null, contextNote: "Answer must clearly make a link between the two documents Max = 10M" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -62612,7 +62806,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was “witch‐hunting”?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Brief explanation", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Brief explanation", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -63198,6 +63392,3784 @@ export const CARDS: SecCard[] = [
                 15
           ],
           "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s1-q1a", topicId: "hist-lm-irl-5", conceptId: "big-parade",
+    section: "1", questionRef: "2022 OL Later Modern Section 1 Q1(a) — Deferred sitting",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "How big was the parade in document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2½ miles long/100 clubs, 5,000 Apprentice Boys and 100 bands/took over an hour to pass by", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s1-q1b", topicId: "hist-lm-irl-5", conceptId: "many-clubs-took-part-parade",
+    section: "1", questionRef: "2022 OL Later Modern Section 1 Q1(b) — Deferred sitting",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "How many clubs took part in the parade in document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "One hundred clubs", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s1-q1c", topicId: "hist-lm-irl-5", conceptId: "mention-place-apart-northern-ireland-visitors",
+    section: "1", questionRef: "2022 OL Later Modern Section 1 Q1(c) — Deferred sitting",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "Mention one place, apart from Northern Ireland, from which visitors came to Derry, according to document A.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Canada/Scotland/Liverpool/Philadelphia/Donegal/Monaghan", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s1-q1d", topicId: "hist-lm-irl-5", conceptId: "many-bands-took-part-parade",
+    section: "1", questionRef: "2022 OL Later Modern Section 1 Q1(d) — Deferred sitting",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "How many bands took part in the parade in document B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "100 bands", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s1-q1e", topicId: "hist-lm-irl-5", conceptId: "did-committee-apprentice-boys",
+    section: "1", questionRef: "2022 OL Later Modern Section 1 Q1(e) — Deferred sitting",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "According to document B, what did the committee of Apprentice Boys do?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They decorated the city", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s1-q2a", topicId: "hist-lm-irl-5", conceptId: "agree-number-people-visiting-derry-number",
+    section: "1", questionRef: "2022 OL Later Modern Section 1 Q2(a) — Deferred sitting",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "Do the documents agree on the number of people visiting Derry and the number of Apprentice Boys who took part in the parade? Refer to both documents in your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Yes, both documents agree on the number of people visiting Derry. Both doc A and doc B put the number of visitors at 35,000. Both doc A and doc B also state that 5,000 Apprentice Boys took part in the parade.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "“the number of people visiting the city on 12 August was put at 35,000” and the “parade contained…5,000 Apprentice Boys”.", marks: null, contextNote: "Doc A" },
+    { id: "r-3", kind: "point", verbatim: "“About 35,000 people visited Derry yesterday” and “Some 5,000 Apprentice Boys took part in the procession”.", marks: null, contextNote: "Doc B" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s1-q2b", topicId: "hist-lm-irl-5", conceptId: "agree-1964-special-anniversary-year",
+    section: "1", questionRef: "2022 OL Later Modern Section 1 Q2(b) — Deferred sitting",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "Do the documents agree that 1964 was a special anniversary year? Refer to both documents in your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Both documents refer to 1964 being the 275th anniversary of the Siege of Derry", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The Apprentice Boys organisation was set up to commemorate the Siege of Derry and the 275th anniversary is a significant anniversary", marks: null },
+    { id: "r-3", kind: "point", verbatim: "The documents mention that it was the 275th anniversary but don’t comment directly on its significance", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Doc A lists all the groups taking part, the transport required and the places people came from, which reflects the importance of the 1964 parade", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Doc B describes the special decorations which were put up around the city.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s1-q3a", topicId: "hist-lm-irl-5", conceptId: "tells-more-decoration-city",
+    section: "1", questionRef: "2022 OL Later Modern Section 1 Q3(a) — Deferred sitting",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "Which document tells us more about the decoration of the city? Explain your answer with reference to both documents .",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Doc B tells us more about the decoration of the city", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Doc A refers to the “brightly decorated city” but gives no further details", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Doc B says that “colourful decoration” was a “feature” of this year’s parade", marks: null },
+    { id: "r-4", kind: "point", verbatim: "It tells us the decorations were organised by a “committee of the Apprentice Boys, supported by local businesses", marks: null },
+    { id: "r-5", kind: "point", verbatim: "It also says that the corporation of Derry “decorated Craigavon Bridge and Guildhall Square” and gave the Apprentice Boys the loan of decorations for other city streets.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s1-q3b", topicId: "hist-lm-irl-5", conceptId: "primary-source",
+    section: "1", questionRef: "2022 OL Later Modern Section 1 Q3(b) — Deferred sitting",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "Which document, A or B, is a primary source? Explain your answer with reference to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Doc B is a primary source", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Doc A is a secondary source, written by historian Brian Walker", marks: null },
+    { id: "r-3", kind: "point", verbatim: "His book was published in 2001, 37 years after the parade of 1964", marks: null },
+    { id: "r-4", kind: "point", verbatim: "He was probably not present at the 1964 parade as he uses phrases such as “It was reported” and “It was estimated”", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Doc B is a newspaper report from the day after the parade took place", marks: null },
+    { id: "r-6", kind: "point", verbatim: "It is likely that the reporter was present in Derry for the parade as phrases such as “A feature this year was…” indicates that the reporter witnessed the parade", marks: null },
+    { id: "r-7", kind: "point", verbatim: "The information given is direct and was up to date when published.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s1-q4", topicId: "hist-lm-irl-5", conceptId: "activities-apprentice-boys-derry-considered-controversial",
+    section: "1", questionRef: "2022 OL Later Modern Section 1 Q4 — Deferred sitting",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "Why were the activities of the Apprentice Boys of Derry considered controversial?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[27], schemePages: [9] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t1a-q1", topicId: "hist-lm-irl-1", conceptId: "who-achieved-victory-against-government",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 1 A Q1 — Deferred sitting",
+    stem: "This edited extract relates to Daniel O’Connell and the fight for Catholic Emancipation. Read it and answer the questions which follow.\n\nThe Clare election in 1828 was a turning point. O’Connell managed a huge victory against the government candidate. He was well supported by the clergy whose influence on the poor uneducated peasants was enormous. At the final count, O’Connell was elected by a majority of about eleven hundred votes.\nThe British government feared a rising and granted Catholic Emancipation in April 1829. O’Connell was now the undisputed leader in Ireland. In February 1830, O’Connell became the first Catholic in modern history to sit in the House of Commons.",
+    questionText: "Who achieved victory against the government?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Daniel O’Connell", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t1a-q2", topicId: "hist-lm-irl-1", conceptId: "who-great-influence-uneducated-peasants",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 1 A Q2 — Deferred sitting",
+    stem: "This edited extract relates to Daniel O’Connell and the fight for Catholic Emancipation. Read it and answer the questions which follow.\n\nThe Clare election in 1828 was a turning point. O’Connell managed a huge victory against the government candidate. He was well supported by the clergy whose influence on the poor uneducated peasants was enormous. At the final count, O’Connell was elected by a majority of about eleven hundred votes.\nThe British government feared a rising and granted Catholic Emancipation in April 1829. O’Connell was now the undisputed leader in Ireland. In February 1830, O’Connell became the first Catholic in modern history to sit in the House of Commons.",
+    questionText: "Who had great influence on the uneducated peasants?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The clergy", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t1a-q3", topicId: "hist-lm-irl-1", conceptId: "fear-british-government",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 1 A Q3 — Deferred sitting",
+    stem: "This edited extract relates to Daniel O’Connell and the fight for Catholic Emancipation. Read it and answer the questions which follow.\n\nThe Clare election in 1828 was a turning point. O’Connell managed a huge victory against the government candidate. He was well supported by the clergy whose influence on the poor uneducated peasants was enormous. At the final count, O’Connell was elected by a majority of about eleven hundred votes.\nThe British government feared a rising and granted Catholic Emancipation in April 1829. O’Connell was now the undisputed leader in Ireland. In February 1830, O’Connell became the first Catholic in modern history to sit in the House of Commons.",
+    questionText: "What was the fear of the British government?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A rising/rebellion", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t1a-q4", topicId: "hist-lm-irl-1", conceptId: "significant-connell-winning-seat-election",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 1 A Q4 — Deferred sitting",
+    stem: "This edited extract relates to Daniel O’Connell and the fight for Catholic Emancipation. Read it and answer the questions which follow.\n\nThe Clare election in 1828 was a turning point. O’Connell managed a huge victory against the government candidate. He was well supported by the clergy whose influence on the poor uneducated peasants was enormous. At the final count, O’Connell was elected by a majority of about eleven hundred votes.\nThe British government feared a rising and granted Catholic Emancipation in April 1829. O’Connell was now the undisputed leader in Ireland. In February 1830, O’Connell became the first Catholic in modern history to sit in the House of Commons.",
+    questionText: "What was significant about O’Connell winning a seat in the election?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He was the first Catholic in modern times to sit in the House of Commons", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t1a-q5", topicId: "hist-lm-irl-1", conceptId: "other-campaign-connell-involved",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 1 A Q5 — Deferred sitting",
+    stem: "This edited extract relates to Daniel O’Connell and the fight for Catholic Emancipation. Read it and answer the questions which follow.\n\nThe Clare election in 1828 was a turning point. O’Connell managed a huge victory against the government candidate. He was well supported by the clergy whose influence on the poor uneducated peasants was enormous. At the final count, O’Connell was elected by a majority of about eleven hundred votes.\nThe British government feared a rising and granted Catholic Emancipation in April 1829. O’Connell was now the undisputed leader in Ireland. In February 1830, O’Connell became the first Catholic in modern history to sit in the House of Commons.",
+    questionText: "Name one other campaign that O’Connell was involved in.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Repeal/anti-slavery/Famine relief, etc.", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t1b", topicId: "hist-lm-irl-1", conceptId: "mother-mary-aikenhead-industrial-development-belfast",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 1 B — Deferred sitting",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Write a short paragraph on one of the following:\n1. Mother Mary Aikenhead.\n2. Industrial development in Belfast.\n3 William Carleton.\n4. The Fenians in Ireland.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t1c", topicId: "hist-lm-irl-1", conceptId: "did-synod-thurles-1850-affect-catholic",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 1 C — Deferred sitting",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Answer one of the following:\n1. How did the Synod of Thurles, 1850, affect the Catholic Church?\n2. What contribution did William Dargan make to Ireland?\n3. What were private responses to help victims of the Famine?\n4. What role did Thomas Davis play in the Young Ireland Movement?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t2a-q1", topicId: "hist-lm-irl-2", conceptId: "where-writer-going",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 2 A Q1 — Deferred sitting",
+    stem: "In this edited extract, which refers to the 1913 strike and lockout, Stephen Gilligan describes a police baton-charge during which he witnessed the killing of James Nolan. Read it and answer the questions which follow.\n\nI was going down to the post office with a telegram and saw the police charge. The people had no chance to escape. The first thing they knew was the batons coming down on them.\nI heard a voice saying, ‘Now, give it to them, lads!’ I pretended I was a reporter and escaped.\nI saw Nolan trying to get away. A police constable, 224C, struck him with a baton. The other policeman, 149C, struck him across the neck.",
+    questionText: "Where was the writer going?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The post office", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t2a-q2", topicId: "hist-lm-irl-2", conceptId: "weapon-did-police-use",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 2 A Q2 — Deferred sitting",
+    stem: "In this edited extract, which refers to the 1913 strike and lockout, Stephen Gilligan describes a police baton-charge during which he witnessed the killing of James Nolan. Read it and answer the questions which follow.\n\nI was going down to the post office with a telegram and saw the police charge. The people had no chance to escape. The first thing they knew was the batons coming down on them.\nI heard a voice saying, ‘Now, give it to them, lads!’ I pretended I was a reporter and escaped.\nI saw Nolan trying to get away. A police constable, 224C, struck him with a baton. The other policeman, 149C, struck him across the neck.",
+    questionText: "What weapon did the police use?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Batons", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t2a-q3", topicId: "hist-lm-irl-2", conceptId: "did-writer-escape",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 2 A Q3 — Deferred sitting",
+    stem: "In this edited extract, which refers to the 1913 strike and lockout, Stephen Gilligan describes a police baton-charge during which he witnessed the killing of James Nolan. Read it and answer the questions which follow.\n\nI was going down to the post office with a telegram and saw the police charge. The people had no chance to escape. The first thing they knew was the batons coming down on them.\nI heard a voice saying, ‘Now, give it to them, lads!’ I pretended I was a reporter and escaped.\nI saw Nolan trying to get away. A police constable, 224C, struck him with a baton. The other policeman, 149C, struck him across the neck.",
+    questionText: "How did the writer escape?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By pretending to be a reporter", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t2a-q4", topicId: "hist-lm-irl-2", conceptId: "happened-james-nolan",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 2 A Q4 — Deferred sitting",
+    stem: "In this edited extract, which refers to the 1913 strike and lockout, Stephen Gilligan describes a police baton-charge during which he witnessed the killing of James Nolan. Read it and answer the questions which follow.\n\nI was going down to the post office with a telegram and saw the police charge. The people had no chance to escape. The first thing they knew was the batons coming down on them.\nI heard a voice saying, ‘Now, give it to them, lads!’ I pretended I was a reporter and escaped.\nI saw Nolan trying to get away. A police constable, 224C, struck him with a baton. The other policeman, 149C, struck him across the neck.",
+    questionText: "What happened to James Nolan?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He was struck with batons/killed", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t2a-q5", topicId: "hist-lm-irl-2", conceptId: "outcome-1913-strike-lock-out",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 2 A Q5 — Deferred sitting",
+    stem: "In this edited extract, which refers to the 1913 strike and lockout, Stephen Gilligan describes a police baton-charge during which he witnessed the killing of James Nolan. Read it and answer the questions which follow.\n\nI was going down to the post office with a telegram and saw the police charge. The people had no chance to escape. The first thing they knew was the batons coming down on them.\nI heard a voice saying, ‘Now, give it to them, lads!’ I pretended I was a reporter and escaped.\nI saw Nolan trying to get away. A police constable, 224C, struck him with a baton. The other policeman, 149C, struck him across the neck.",
+    questionText: "What was one outcome of the 1913 strike and lock-out?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid outcome", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t2b", topicId: "hist-lm-irl-2", conceptId: "michael-davitt-operative-movement-arthur-griffith",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 2 B — Deferred sitting",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Write a short paragraph on one of the following:\n1. Michael Davitt.\n2. The Co-operative Movement.\n3. Arthur Griffith and the first Sinn Féin party.\n4. W.B. Yeats.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t2c", topicId: "hist-lm-irl-2", conceptId: "role-did-charles-stewart-parnell-home",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 2 C — Deferred sitting",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Answer one of the following:\n1. What role did Charles Stewart Parnell have in the Home Rule movement?\n2. What was the role of Edward Carson in Irish affairs?\n3. Why were Gaelic games in need of revival in 1884, and what changes were implemented by the GAA?\n4. How did Isabella Tod and/or Hanna Sheehy-Skeffington promote improvements for women?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t3a-q1", topicId: "hist-lm-irl-3", conceptId: "many-animals-shot",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 3 A Q1 — Deferred sitting",
+    stem: "This edited extract from The Northern Whig, (21/04/1941), deals with the shooting of animals at Belfast Zoo. Read it and answer the questions which follow.\n\nThirty-three animals at Belfast Zoo were shot on Saturday. It was known that people in the area were afraid that the animals might escape during an air raid. The Ministry of Public Security decided to take no risk. Also, animal feed was scarce.\nThe shooting was done by Sergeant E. V. Murray and by Constable Thomas Ward. Constable Ward is an excellent shot and served in the Irish Guards in the last war.\nThe animals included five lions, two lionesses and two cubs, as well as polar bears, wolves, a tiger, hyena and puma.",
+    questionText: "How many animals were shot?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "33 animals", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t3a-q2", topicId: "hist-lm-irl-3", conceptId: "did-locals-fear",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 3 A Q2 — Deferred sitting",
+    stem: "This edited extract from The Northern Whig, (21/04/1941), deals with the shooting of animals at Belfast Zoo. Read it and answer the questions which follow.\n\nThirty-three animals at Belfast Zoo were shot on Saturday. It was known that people in the area were afraid that the animals might escape during an air raid. The Ministry of Public Security decided to take no risk. Also, animal feed was scarce.\nThe shooting was done by Sergeant E. V. Murray and by Constable Thomas Ward. Constable Ward is an excellent shot and served in the Irish Guards in the last war.\nThe animals included five lions, two lionesses and two cubs, as well as polar bears, wolves, a tiger, hyena and puma.",
+    questionText: "What did the locals fear?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "That animals might escape during an air raid", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t3a-q3", topicId: "hist-lm-irl-3", conceptId: "constable-ward-chosen-shoot-animals",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 3 A Q3 — Deferred sitting",
+    stem: "This edited extract from The Northern Whig, (21/04/1941), deals with the shooting of animals at Belfast Zoo. Read it and answer the questions which follow.\n\nThirty-three animals at Belfast Zoo were shot on Saturday. It was known that people in the area were afraid that the animals might escape during an air raid. The Ministry of Public Security decided to take no risk. Also, animal feed was scarce.\nThe shooting was done by Sergeant E. V. Murray and by Constable Thomas Ward. Constable Ward is an excellent shot and served in the Irish Guards in the last war.\nThe animals included five lions, two lionesses and two cubs, as well as polar bears, wolves, a tiger, hyena and puma.",
+    questionText: "Why was Constable Ward chosen to shoot the animals?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He was an excellent shot/marksman", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t3a-q4", topicId: "hist-lm-irl-3", conceptId: "apart-security-other-reason-animals-shot",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 3 A Q4 — Deferred sitting",
+    stem: "This edited extract from The Northern Whig, (21/04/1941), deals with the shooting of animals at Belfast Zoo. Read it and answer the questions which follow.\n\nThirty-three animals at Belfast Zoo were shot on Saturday. It was known that people in the area were afraid that the animals might escape during an air raid. The Ministry of Public Security decided to take no risk. Also, animal feed was scarce.\nThe shooting was done by Sergeant E. V. Murray and by Constable Thomas Ward. Constable Ward is an excellent shot and served in the Irish Guards in the last war.\nThe animals included five lions, two lionesses and two cubs, as well as polar bears, wolves, a tiger, hyena and puma.",
+    questionText: "Apart from security, what was one other reason the animals were shot?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Animal feed was scarce", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t3a-q5", topicId: "hist-lm-irl-3", conceptId: "other-impact-world-war-belfast",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 3 A Q5 — Deferred sitting",
+    stem: "This edited extract from The Northern Whig, (21/04/1941), deals with the shooting of animals at Belfast Zoo. Read it and answer the questions which follow.\n\nThirty-three animals at Belfast Zoo were shot on Saturday. It was known that people in the area were afraid that the animals might escape during an air raid. The Ministry of Public Security decided to take no risk. Also, animal feed was scarce.\nThe shooting was done by Sergeant E. V. Murray and by Constable Thomas Ward. Constable Ward is an excellent shot and served in the Irish Guards in the last war.\nThe animals included five lions, two lionesses and two cubs, as well as polar bears, wolves, a tiger, hyena and puma.",
+    questionText: "Briefly, what was one other impact of World War II on Belfast?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid impact", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t3b", topicId: "hist-lm-irl-3", conceptId: "patrick-pearse-cosgrave-problems-caused-world",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 3 B — Deferred sitting",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "Write a short paragraph on one of the following:\n1. Patrick Pearse.\n2. W. T. Cosgrave.\n3. The problems caused by World War II for Éamon de Valera.\n4. Developments in education, 1922-1949.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t3c", topicId: "hist-lm-irl-3", conceptId: "role-did-michael-collins-play-irish",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 3 C — Deferred sitting",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "Answer one of the following:\n1. What role did Michael Collins play in Irish affairs?\n2. How did Church and State prepare for the Eucharistic Congress, 1932?\n3. What contribution did Evie Hone and/or Countess Markievicz make to Irish affairs?\n4. What did James Craig achieve as prime minister of Northern Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t4a-q1", topicId: "hist-lm-irl-4", conceptId: "did-people-travel-grosse-isle-1847",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 4 A Q1 — Deferred sitting",
+    stem: "Study the following extract on Grosse Isle and answer the questions which follow.\n\nIn 1847, 100,000 Irish people travelled to Grosse Isle to escape starvation. The first “Famine” ship arrived on May 17, 1847. More and more ships arrived each day. On these coffin ships, the number of passengers stricken by fever increased dramatically.\nHastily built, Grosse Isle’s quarantine hospitals lacked proper sanitation, supplies and space to accommodate all the sick patients. Many of the doctors at Grosse Isle had never seen the effects of cholera let alone treated it.\nBeing taken to a quarantine hospital was soon viewed as more a death sentence than an opportunity to get better.",
+    questionText: "Why did people travel to Grosse Isle in 1847?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To escape starvation", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t4a-q2", topicId: "hist-lm-irl-4", conceptId: "when-did-first-famine-ship-arrive",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 4 A Q2 — Deferred sitting",
+    stem: "Study the following extract on Grosse Isle and answer the questions which follow.\n\nIn 1847, 100,000 Irish people travelled to Grosse Isle to escape starvation. The first “Famine” ship arrived on May 17, 1847. More and more ships arrived each day. On these coffin ships, the number of passengers stricken by fever increased dramatically.\nHastily built, Grosse Isle’s quarantine hospitals lacked proper sanitation, supplies and space to accommodate all the sick patients. Many of the doctors at Grosse Isle had never seen the effects of cholera let alone treated it.\nBeing taken to a quarantine hospital was soon viewed as more a death sentence than an opportunity to get better.",
+    questionText: "When did the first famine ship arrive?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "May 17", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "1847", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t4a-q3", topicId: "hist-lm-irl-4", conceptId: "problems-hospital-grosse-isle",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 4 A Q3 — Deferred sitting",
+    stem: "Study the following extract on Grosse Isle and answer the questions which follow.\n\nIn 1847, 100,000 Irish people travelled to Grosse Isle to escape starvation. The first “Famine” ship arrived on May 17, 1847. More and more ships arrived each day. On these coffin ships, the number of passengers stricken by fever increased dramatically.\nHastily built, Grosse Isle’s quarantine hospitals lacked proper sanitation, supplies and space to accommodate all the sick patients. Many of the doctors at Grosse Isle had never seen the effects of cholera let alone treated it.\nBeing taken to a quarantine hospital was soon viewed as more a death sentence than an opportunity to get better.",
+    questionText: "What were the problems in the hospital on Grosse Isle?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lack of sanitation/supplies/space/doctors had no experience of cholera", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t4a-q4", topicId: "hist-lm-irl-4", conceptId: "did-people-feel-being-taken-quarantine",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 4 A Q4 — Deferred sitting",
+    stem: "Study the following extract on Grosse Isle and answer the questions which follow.\n\nIn 1847, 100,000 Irish people travelled to Grosse Isle to escape starvation. The first “Famine” ship arrived on May 17, 1847. More and more ships arrived each day. On these coffin ships, the number of passengers stricken by fever increased dramatically.\nHastily built, Grosse Isle’s quarantine hospitals lacked proper sanitation, supplies and space to accommodate all the sick patients. Many of the doctors at Grosse Isle had never seen the effects of cholera let alone treated it.\nBeing taken to a quarantine hospital was soon viewed as more a death sentence than an opportunity to get better.",
+    questionText: "How did people feel about being taken to a quarantine hospital?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They viewed it as a death sentence", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t4a-q5", topicId: "hist-lm-irl-4", conceptId: "apart-canada-other-countries-irish-people",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 4 A Q5 — Deferred sitting",
+    stem: "Study the following extract on Grosse Isle and answer the questions which follow.\n\nIn 1847, 100,000 Irish people travelled to Grosse Isle to escape starvation. The first “Famine” ship arrived on May 17, 1847. More and more ships arrived each day. On these coffin ships, the number of passengers stricken by fever increased dramatically.\nHastily built, Grosse Isle’s quarantine hospitals lacked proper sanitation, supplies and space to accommodate all the sick patients. Many of the doctors at Grosse Isle had never seen the effects of cholera let alone treated it.\nBeing taken to a quarantine hospital was soon viewed as more a death sentence than an opportunity to get better.",
+    questionText: "Apart from Canada, name two other countries to which Irish people emigrated during the Famine.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "TWO other countries", marks: 6, contextNote: "(3m + 3m) — The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t4b", topicId: "hist-lm-irl-4", conceptId: "john-devoy-orange-order-canada-australia",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 4 B — Deferred sitting",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Write a short paragraph on one of the following:\n1. John Devoy.\n2. The Orange Order in Canada and Australia.\n3. The impact of emigration on Ireland, 1920-1966.\n4. John F. Kennedy.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t4c", topicId: "hist-lm-irl-4", conceptId: "did-valera-visit-america-june-1919",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 4 C — Deferred sitting",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Answer one of the following:\n1. Why did de Valera visit America (June, 1919 - December, 1920), and was the visit a success?\n2. What difficulties and opportunities did Irish immigrants in Britain experience, 1920-1966?\n3. What challenges faced the Holy Ghost missionaries in Nigeria, 1945-1966?\n4. How did Maureen O’Hara and/or Paul O’Dwyer illustrate Irish-American experience?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t6a-q1", topicId: "hist-lm-irl-6", conceptId: "role-did-patrick-hillery-perform",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 6 A Q1 — Deferred sitting",
+    stem: "Patrick Hillery conducted Irish negotiations to enter the EEC. In this edited extract he comments on the outcome for fisheries. Read it and answer the questions which follow.\n\nAfter difficult negotiations it was agreed that member states would be allowed to restrict fishing within a 6-mile limit. For Ireland, this would be extended to twelve miles in an area from Lough Foyle to Cork, for all species of fish. This was the absolute maximum that could be achieved and was, basically, what the Irish had asked for.\nThe Irish fishing fleet is now among the most modern in Europe and has been developed with EU support. In the twelve years after 1976 the volume of fish landed at Irish ports tripled.",
+    questionText: "What role did Patrick Hillery perform?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He negotiated Irish entry to the EEC", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t6a-q2", topicId: "hist-lm-irl-6", conceptId: "area-did-mile-fishing-limit-apply",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 6 A Q2 — Deferred sitting",
+    stem: "Patrick Hillery conducted Irish negotiations to enter the EEC. In this edited extract he comments on the outcome for fisheries. Read it and answer the questions which follow.\n\nAfter difficult negotiations it was agreed that member states would be allowed to restrict fishing within a 6-mile limit. For Ireland, this would be extended to twelve miles in an area from Lough Foyle to Cork, for all species of fish. This was the absolute maximum that could be achieved and was, basically, what the Irish had asked for.\nThe Irish fishing fleet is now among the most modern in Europe and has been developed with EU support. In the twelve years after 1976 the volume of fish landed at Irish ports tripled.",
+    questionText: "In what area did the 12-mile fishing limit apply?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "From Lough Foyle to Cork", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t6a-q3", topicId: "hist-lm-irl-6", conceptId: "ireland-satisfied-outcome-negotiations-reason",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 6 A Q3 — Deferred sitting",
+    stem: "Patrick Hillery conducted Irish negotiations to enter the EEC. In this edited extract he comments on the outcome for fisheries. Read it and answer the questions which follow.\n\nAfter difficult negotiations it was agreed that member states would be allowed to restrict fishing within a 6-mile limit. For Ireland, this would be extended to twelve miles in an area from Lough Foyle to Cork, for all species of fish. This was the absolute maximum that could be achieved and was, basically, what the Irish had asked for.\nThe Irish fishing fleet is now among the most modern in Europe and has been developed with EU support. In the twelve years after 1976 the volume of fish landed at Irish ports tripled.",
+    questionText: "Was Ireland satisfied with the outcome of the negotiations? Give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Yes", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "they got what they had asked for", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t6a-q4", topicId: "hist-lm-irl-6", conceptId: "did-irish-fishing-change-result-eec",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 6 A Q4 — Deferred sitting",
+    stem: "Patrick Hillery conducted Irish negotiations to enter the EEC. In this edited extract he comments on the outcome for fisheries. Read it and answer the questions which follow.\n\nAfter difficult negotiations it was agreed that member states would be allowed to restrict fishing within a 6-mile limit. For Ireland, this would be extended to twelve miles in an area from Lough Foyle to Cork, for all species of fish. This was the absolute maximum that could be achieved and was, basically, what the Irish had asked for.\nThe Irish fishing fleet is now among the most modern in Europe and has been developed with EU support. In the twelve years after 1976 the volume of fish landed at Irish ports tripled.",
+    questionText: "How did Irish fishing change as a result of EEC membership?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fishing fleet modernised/volume of fish landed at Irish ports tripled", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t6a-q5", topicId: "hist-lm-irl-6", conceptId: "way-irish-agriculture-affected-eec-membership",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 6 A Q5 — Deferred sitting",
+    stem: "Patrick Hillery conducted Irish negotiations to enter the EEC. In this edited extract he comments on the outcome for fisheries. Read it and answer the questions which follow.\n\nAfter difficult negotiations it was agreed that member states would be allowed to restrict fishing within a 6-mile limit. For Ireland, this would be extended to twelve miles in an area from Lough Foyle to Cork, for all species of fish. This was the absolute maximum that could be achieved and was, basically, what the Irish had asked for.\nThe Irish fishing fleet is now among the most modern in Europe and has been developed with EU support. In the twelve years after 1976 the volume of fish landed at Irish ports tripled.",
+    questionText: "What was one way in which Irish agriculture was affected by EEC membership?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid effect", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t6b", topicId: "hist-lm-irl-6", conceptId: "changing-attitudes-irish-language-1949-1989",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 6 B — Deferred sitting",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. Changing attitudes to the Irish language, 1949-1989.\n2. Vatican II and its impact on Irish society.\n3. Jack Lynch.\n4. Garret FitzGerald.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s2t6c", topicId: "hist-lm-irl-6", conceptId: "role-did-whitaker-play-irish-affairs",
+    section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 6 C — Deferred sitting",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Answer one of the following:\n1. What role did T.K. Whitaker play in Irish affairs?\n2. What impact did RTÉ have on Irish society, 1962-1972?\n3. How did Sylvia Meehan and/or Mary Robinson bring about change in Irish life?\n4. What contribution did Charles Haughey make to Irish politics?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t1a-q1", topicId: "hist-lm-eur-1", conceptId: "where-when-did-uprising-take-place",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 1 A Q1 — Deferred sitting",
+    stem: "This edited extract describes an uprising in Vienna and the fall of Metternich. Read it and answer the questions which follow.\n\nThere was an uprising in Vienna in March 1848. Large numbers of workers, armed with their work tools, marched in from the suburbs, pulling up lampposts. They used these to smash the city gates which had been closed by the authorities.\nIn the main square, the Ballhausplatz, troops were met with a hail of stones and opened fire. Barricades went up. As the workers broke through, alarmed members of the middle class demanded Metternich’s resignation.\nOn 13 March the Chancellor gave in, announcing his resignation. He left Vienna the following day and made his way to England.",
+    questionText: "Where and when did the uprising take place?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vienna", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "March 1848", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t1a-q2", topicId: "hist-lm-eur-1", conceptId: "items-did-workers-use-weapons",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 1 A Q2 — Deferred sitting",
+    stem: "This edited extract describes an uprising in Vienna and the fall of Metternich. Read it and answer the questions which follow.\n\nThere was an uprising in Vienna in March 1848. Large numbers of workers, armed with their work tools, marched in from the suburbs, pulling up lampposts. They used these to smash the city gates which had been closed by the authorities.\nIn the main square, the Ballhausplatz, troops were met with a hail of stones and opened fire. Barricades went up. As the workers broke through, alarmed members of the middle class demanded Metternich’s resignation.\nOn 13 March the Chancellor gave in, announcing his resignation. He left Vienna the following day and made his way to England.",
+    questionText: "What items did the workers use as weapons?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Work tools/lampposts", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t1a-q3", topicId: "hist-lm-eur-1", conceptId: "where-city-did-main-fighting-take",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 1 A Q3 — Deferred sitting",
+    stem: "This edited extract describes an uprising in Vienna and the fall of Metternich. Read it and answer the questions which follow.\n\nThere was an uprising in Vienna in March 1848. Large numbers of workers, armed with their work tools, marched in from the suburbs, pulling up lampposts. They used these to smash the city gates which had been closed by the authorities.\nIn the main square, the Ballhausplatz, troops were met with a hail of stones and opened fire. Barricades went up. As the workers broke through, alarmed members of the middle class demanded Metternich’s resignation.\nOn 13 March the Chancellor gave in, announcing his resignation. He left Vienna the following day and made his way to England.",
+    questionText: "Where in the city did the main fighting take place?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The main square/the Ballhausplatz", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t1a-q4", topicId: "hist-lm-eur-1", conceptId: "who-demanded-metternich-resignation",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 1 A Q4 — Deferred sitting",
+    stem: "This edited extract describes an uprising in Vienna and the fall of Metternich. Read it and answer the questions which follow.\n\nThere was an uprising in Vienna in March 1848. Large numbers of workers, armed with their work tools, marched in from the suburbs, pulling up lampposts. They used these to smash the city gates which had been closed by the authorities.\nIn the main square, the Ballhausplatz, troops were met with a hail of stones and opened fire. Barricades went up. As the workers broke through, alarmed members of the middle class demanded Metternich’s resignation.\nOn 13 March the Chancellor gave in, announcing his resignation. He left Vienna the following day and made his way to England.",
+    questionText: "Who demanded Metternich’s resignation?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The middle class", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t1a-q5", topicId: "hist-lm-eur-1", conceptId: "mention-reason-rebellion-broke-out-austrian",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 1 A Q5 — Deferred sitting",
+    stem: "This edited extract describes an uprising in Vienna and the fall of Metternich. Read it and answer the questions which follow.\n\nThere was an uprising in Vienna in March 1848. Large numbers of workers, armed with their work tools, marched in from the suburbs, pulling up lampposts. They used these to smash the city gates which had been closed by the authorities.\nIn the main square, the Ballhausplatz, troops were met with a hail of stones and opened fire. Barricades went up. As the workers broke through, alarmed members of the middle class demanded Metternich’s resignation.\nOn 13 March the Chancellor gave in, announcing his resignation. He left Vienna the following day and made his way to England.",
+    questionText: "Mention one reason why rebellion broke out in the Austrian Empire in 1848.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t1b", topicId: "hist-lm-eur-1", conceptId: "developments-music-art-giuseppe-mazzini-italian",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 1 B — Deferred sitting",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Write a short paragraph on one of the following:\n1. Developments in music and/or art.\n2. Giuseppe Mazzini and Italian unity.\n3. Feargus O’Connor.\n4. Serfdom in Russia.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t1c", topicId: "hist-lm-eur-1", conceptId: "causes-1848-revolution-germany-did-fail",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 1 C — Deferred sitting",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Answer one of the following:\n1. What were the causes of the 1848 Revolution in Germany and why did it fail?\n2. How did Robert Owen’s model village at New Lanark improve the lives of his workers?\n3. What was the impact of Haussmann’s redevelopment of Paris?\n4. During the period 1815-1871, what important developments took place in science and/or technology?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t2a-q1", topicId: "hist-lm-eur-2", conceptId: "who-wrote-letter-whom-addressed",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 2 A Q1 — Deferred sitting",
+    stem: "This is an edited extract from a letter to Queen Mary (1910), complaining about the impact of the motor car on English village life. Read it and answer the questions which follow.\n\nThe village women of the United Kingdom beseech your Majesty to help us to get some relief from the motor cars.\nOur children are always in danger; our clothes are ruined by the dust; we cannot open our windows; our rest is spoiled by the noise at night.\nIf they could be made to go slowly through the villages it would be a great thing. But we are only poor people and the great majority of those who use motor cars are rich. They take no account of us.",
+    questionText: "Who wrote the letter in this extract and to whom was it addressed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Village women", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "to Queen Mary", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t2a-q2", topicId: "hist-lm-eur-2", conceptId: "ways-motor-cars-made-life-unpleasant",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 2 A Q2 — Deferred sitting",
+    stem: "This is an edited extract from a letter to Queen Mary (1910), complaining about the impact of the motor car on English village life. Read it and answer the questions which follow.\n\nThe village women of the United Kingdom beseech your Majesty to help us to get some relief from the motor cars.\nOur children are always in danger; our clothes are ruined by the dust; we cannot open our windows; our rest is spoiled by the noise at night.\nIf they could be made to go slowly through the villages it would be a great thing. But we are only poor people and the great majority of those who use motor cars are rich. They take no account of us.",
+    questionText: "What were two ways in which motor cars made life unpleasant for village dwellers?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Danger for children/dust on clothes/dust in houses/noise", marks: 6, contextNote: "Any TWO (3m + 3m)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t2a-q3", topicId: "hist-lm-eur-2", conceptId: "improve-matters-villagers",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 2 A Q3 — Deferred sitting",
+    stem: "This is an edited extract from a letter to Queen Mary (1910), complaining about the impact of the motor car on English village life. Read it and answer the questions which follow.\n\nThe village women of the United Kingdom beseech your Majesty to help us to get some relief from the motor cars.\nOur children are always in danger; our clothes are ruined by the dust; we cannot open our windows; our rest is spoiled by the noise at night.\nIf they could be made to go slowly through the villages it would be a great thing. But we are only poor people and the great majority of those who use motor cars are rich. They take no account of us.",
+    questionText: "What would improve matters for the villagers?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "If cars would go more slowly", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t2a-q4", topicId: "hist-lm-eur-2", conceptId: "did-car-drivers-pay-attention-villagers",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 2 A Q4 — Deferred sitting",
+    stem: "This is an edited extract from a letter to Queen Mary (1910), complaining about the impact of the motor car on English village life. Read it and answer the questions which follow.\n\nThe village women of the United Kingdom beseech your Majesty to help us to get some relief from the motor cars.\nOur children are always in danger; our clothes are ruined by the dust; we cannot open our windows; our rest is spoiled by the noise at night.\nIf they could be made to go slowly through the villages it would be a great thing. But we are only poor people and the great majority of those who use motor cars are rich. They take no account of us.",
+    questionText: "Why, according to the extract, did car drivers pay no attention to the villagers?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Villagers are poor and car owners are rich", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t2a-q5", topicId: "hist-lm-eur-2", conceptId: "did-karl-benz-contribute-early-history",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 2 A Q5 — Deferred sitting",
+    stem: "This is an edited extract from a letter to Queen Mary (1910), complaining about the impact of the motor car on English village life. Read it and answer the questions which follow.\n\nThe village women of the United Kingdom beseech your Majesty to help us to get some relief from the motor cars.\nOur children are always in danger; our clothes are ruined by the dust; we cannot open our windows; our rest is spoiled by the noise at night.\nIf they could be made to go slowly through the villages it would be a great thing. But we are only poor people and the great majority of those who use motor cars are rich. They take no account of us.",
+    questionText: "How did Karl Benz contribute to the early history of the motor car?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid contribution by Karl Benz", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t2b", topicId: "hist-lm-eur-2", conceptId: "krupp-family-anti-semitism-russia-western",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 2 B — Deferred sitting",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Write a short paragraph on one of the following:\n1. The Krupp family.\n2. Anti-Semitism in Russia.\n3. The Western Front during World War I.\n4. Rosa Luxemburg.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t2c", topicId: "hist-lm-eur-2", conceptId: "successes-failures-bismarck-chancellor-germany-did",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 2 C — Deferred sitting",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Answer one of the following:\n1. What were the successes and failures of Bismarck as Chancellor of Germany?\n2. How did the foreign policy of Wilhelm II affect Anglo-German relations?\n3. What was the contribution of women to the workforce during World War I?\n4. What was Woodrow Wilson’s contribution to the affairs of Europe?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t3a-q1", topicId: "hist-lm-eur-3", conceptId: "who-speaking-where",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 3 A Q1 — Deferred sitting",
+    stem: "In this edited extract on the Jarrow March, 1936, the Mayor of Jarrow speaks at Ripon. Read it and answer the questions which follow.\n\nIn every town on our way to London we are going to put before the people the plight of our depressed town.\nWe feel that while the rest of the country may be progressing, we in the north-eastern corner are left entirely on our own. We feel if the nation needed our services in 1914-1918, we need its support now.\nWe are here, too, on behalf of all the towns in our position. We ask that our unemployed men be allowed to work, to earn sufficient money to keep their wives and children.",
+    questionText: "Who is speaking and where?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Mayor of Jarrow", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "at Ripon", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t3a-q2", topicId: "hist-lm-eur-3", conceptId: "where-did-jarrow-march-begin-where",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 3 A Q2 — Deferred sitting",
+    stem: "In this edited extract on the Jarrow March, 1936, the Mayor of Jarrow speaks at Ripon. Read it and answer the questions which follow.\n\nIn every town on our way to London we are going to put before the people the plight of our depressed town.\nWe feel that while the rest of the country may be progressing, we in the north-eastern corner are left entirely on our own. We feel if the nation needed our services in 1914-1918, we need its support now.\nWe are here, too, on behalf of all the towns in our position. We ask that our unemployed men be allowed to work, to earn sufficient money to keep their wives and children.",
+    questionText: "Where did the Jarrow March begin and where did it end?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Jarrow to London", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t3a-q3", topicId: "hist-lm-eur-3", conceptId: "north-eastern-corner-england-different-rest",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 3 A Q3 — Deferred sitting",
+    stem: "In this edited extract on the Jarrow March, 1936, the Mayor of Jarrow speaks at Ripon. Read it and answer the questions which follow.\n\nIn every town on our way to London we are going to put before the people the plight of our depressed town.\nWe feel that while the rest of the country may be progressing, we in the north-eastern corner are left entirely on our own. We feel if the nation needed our services in 1914-1918, we need its support now.\nWe are here, too, on behalf of all the towns in our position. We ask that our unemployed men be allowed to work, to earn sufficient money to keep their wives and children.",
+    questionText: "How is the north-eastern corner of England different from the rest of the nation?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It is making no progress/it has been left on its own", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t3a-q4", topicId: "hist-lm-eur-3", conceptId: "request-made-behalf-wives-children-jarrow",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 3 A Q4 — Deferred sitting",
+    stem: "In this edited extract on the Jarrow March, 1936, the Mayor of Jarrow speaks at Ripon. Read it and answer the questions which follow.\n\nIn every town on our way to London we are going to put before the people the plight of our depressed town.\nWe feel that while the rest of the country may be progressing, we in the north-eastern corner are left entirely on our own. We feel if the nation needed our services in 1914-1918, we need its support now.\nWe are here, too, on behalf of all the towns in our position. We ask that our unemployed men be allowed to work, to earn sufficient money to keep their wives and children.",
+    questionText: "What request is made on behalf of wives and children in Jarrow?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "That their unemployed men be allowed to work", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t3a-q5", topicId: "hist-lm-eur-3", conceptId: "service-did-jarrow-supply-nation-during",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 3 A Q5 — Deferred sitting",
+    stem: "In this edited extract on the Jarrow March, 1936, the Mayor of Jarrow speaks at Ripon. Read it and answer the questions which follow.\n\nIn every town on our way to London we are going to put before the people the plight of our depressed town.\nWe feel that while the rest of the country may be progressing, we in the north-eastern corner are left entirely on our own. We feel if the nation needed our services in 1914-1918, we need its support now.\nWe are here, too, on behalf of all the towns in our position. We ask that our unemployed men be allowed to work, to earn sufficient money to keep their wives and children.",
+    questionText: "What service did Jarrow supply to the nation during the period 1914-1918?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Support for the war effort/ship-building", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t3b", topicId: "hist-lm-eur-3", conceptId: "vladimir-ilyich-lenin-weimar-germany-vichy",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 3 B — Deferred sitting",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "Write a short paragraph on one of the following:\n1. Vladimir Ilyich Lenin.\n2. Weimar Germany.\n3. Vichy France.\n4. Charlie Chaplin.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t3c", topicId: "hist-lm-eur-3", conceptId: "importance-stalin-show-trials-did-church",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 3 C — Deferred sitting",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "Answer one of the following:\n1. What was the importance of Stalin’s show trials?\n2. How did church-state relations develop under Mussolini?\n3. How did Hitler use the Nuremberg Rallies to promote Nazism in Germany?\n4. In what ways did technological advances influence World War II?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t4a-q1", topicId: "hist-lm-eur-4", conceptId: "pulled-down",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 4 A Q1 — Deferred sitting",
+    stem: "This edited extract refers to the Hungarian Uprising, 1956. Read it and answer the questions which follow.\n\nDuring demonstrations in Budapest on 23 October, 1956, a giant statue of Stalin was pulled down. There were calls for the end of communist rule in Hungary and the establishment of a democratic regime.\nOn the following morning, before Soviet troops could arrive, Imre Nagy was appointed Prime Minister and promised immediate reforms.\n‘Travellers from Budapest today,’ the Manchester Guardian was soon reporting, ‘told of Russian tanks at every main street intersection around the city and of hearing fighting in the streets’.",
+    questionText: "What was pulled down?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A statue of Stalin", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t4a-q2", topicId: "hist-lm-eur-4", conceptId: "called",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 4 A Q2 — Deferred sitting",
+    stem: "This edited extract refers to the Hungarian Uprising, 1956. Read it and answer the questions which follow.\n\nDuring demonstrations in Budapest on 23 October, 1956, a giant statue of Stalin was pulled down. There were calls for the end of communist rule in Hungary and the establishment of a democratic regime.\nOn the following morning, before Soviet troops could arrive, Imre Nagy was appointed Prime Minister and promised immediate reforms.\n‘Travellers from Budapest today,’ the Manchester Guardian was soon reporting, ‘told of Russian tanks at every main street intersection around the city and of hearing fighting in the streets’.",
+    questionText: "What was called for?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The end of communist rule/establishment of a democratic regime", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t4a-q3", topicId: "hist-lm-eur-4", conceptId: "did-imre-nagy-promise",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 4 A Q3 — Deferred sitting",
+    stem: "This edited extract refers to the Hungarian Uprising, 1956. Read it and answer the questions which follow.\n\nDuring demonstrations in Budapest on 23 October, 1956, a giant statue of Stalin was pulled down. There were calls for the end of communist rule in Hungary and the establishment of a democratic regime.\nOn the following morning, before Soviet troops could arrive, Imre Nagy was appointed Prime Minister and promised immediate reforms.\n‘Travellers from Budapest today,’ the Manchester Guardian was soon reporting, ‘told of Russian tanks at every main street intersection around the city and of hearing fighting in the streets’.",
+    questionText: "What did Imre Nagy promise?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Immediate reforms", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t4a-q4", topicId: "hist-lm-eur-4", conceptId: "mention-activity-witnessed-travellers-budapest",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 4 A Q4 — Deferred sitting",
+    stem: "This edited extract refers to the Hungarian Uprising, 1956. Read it and answer the questions which follow.\n\nDuring demonstrations in Budapest on 23 October, 1956, a giant statue of Stalin was pulled down. There were calls for the end of communist rule in Hungary and the establishment of a democratic regime.\nOn the following morning, before Soviet troops could arrive, Imre Nagy was appointed Prime Minister and promised immediate reforms.\n‘Travellers from Budapest today,’ the Manchester Guardian was soon reporting, ‘told of Russian tanks at every main street intersection around the city and of hearing fighting in the streets’.",
+    questionText: "Mention one activity witnessed by travellers from Budapest.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Russian tanks in the streets/fighting to be heard", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t4a-q5", topicId: "hist-lm-eur-4", conceptId: "did-soviet-russia-crush-hungarian-uprising",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 4 A Q5 — Deferred sitting",
+    stem: "This edited extract refers to the Hungarian Uprising, 1956. Read it and answer the questions which follow.\n\nDuring demonstrations in Budapest on 23 October, 1956, a giant statue of Stalin was pulled down. There were calls for the end of communist rule in Hungary and the establishment of a democratic regime.\nOn the following morning, before Soviet troops could arrive, Imre Nagy was appointed Prime Minister and promised immediate reforms.\n‘Travellers from Budapest today,’ the Manchester Guardian was soon reporting, ‘told of Russian tanks at every main street intersection around the city and of hearing fighting in the streets’.",
+    questionText: "Why did Soviet Russia crush the Hungarian Uprising?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t4b", topicId: "hist-lm-eur-4", conceptId: "welfare-moves-towards-european-unity-pope",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 4 B — Deferred sitting",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Write a short paragraph on one of the following:\n1. The welfare state.\n2. Moves towards European unity.\n3. Pope John Paul II.\n4. Impact of advances in nuclear power.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t4c", topicId: "hist-lm-eur-4", conceptId: "part-played-affairs-soviet-russia-alexander",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 4 C — Deferred sitting",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Answer one of the following:\n1. What part was played in the affairs of Soviet Russia by Alexander Solzhenitsyn and/or Mikhail Gorbachev?\n2. What was the impact of the oil crisis, 1973, on Europe?\n3. What were the successes and failures of Margaret Thatcher as a political leader?\n4. What did you learn about youth and popular culture (including sport), 1945-1992?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,14] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t5a-q1", topicId: "hist-lm-eur-5", conceptId: "did-millions-people-hear-gandhi-talks",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 5 A Q1 — Deferred sitting",
+    stem: "This is an edited extract from an account by a reporter who knew Mohandas Gandhi well. Read it and answer the questions which follow.\n\nGandhi’s evening prayer meeting gave him a great pulpit from which to comment on any subject. The crowds who came at twilight to hear him ran into thousands, his listeners into millions, as his talks were broadcast on the radio.\nGandhi gave people advice on health and diet. He criticised machinery, saying that the wooden plough was more sacred than the tractor.\nThis disturbed me since he delivered his thoughts through a modern microphone and would step off his prayer platform into a limousine. I thought him inconsistent.",
+    questionText: "How did millions of people hear Gandhi’s talks?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Through radio broadcasts", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t5a-q2", topicId: "hist-lm-eur-5", conceptId: "advice-did-gandhi",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 5 A Q2 — Deferred sitting",
+    stem: "This is an edited extract from an account by a reporter who knew Mohandas Gandhi well. Read it and answer the questions which follow.\n\nGandhi’s evening prayer meeting gave him a great pulpit from which to comment on any subject. The crowds who came at twilight to hear him ran into thousands, his listeners into millions, as his talks were broadcast on the radio.\nGandhi gave people advice on health and diet. He criticised machinery, saying that the wooden plough was more sacred than the tractor.\nThis disturbed me since he delivered his thoughts through a modern microphone and would step off his prayer platform into a limousine. I thought him inconsistent.",
+    questionText: "What advice did Gandhi give?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Advice on health and diet", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t5a-q3", topicId: "hist-lm-eur-5", conceptId: "shown-gandhi-criticised-modern-technology",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 5 A Q3 — Deferred sitting",
+    stem: "This is an edited extract from an account by a reporter who knew Mohandas Gandhi well. Read it and answer the questions which follow.\n\nGandhi’s evening prayer meeting gave him a great pulpit from which to comment on any subject. The crowds who came at twilight to hear him ran into thousands, his listeners into millions, as his talks were broadcast on the radio.\nGandhi gave people advice on health and diet. He criticised machinery, saying that the wooden plough was more sacred than the tractor.\nThis disturbed me since he delivered his thoughts through a modern microphone and would step off his prayer platform into a limousine. I thought him inconsistent.",
+    questionText: "How is it shown that Gandhi criticised modern technology?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He said the wooden plough was more sacred than the tractor", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t5a-q4", topicId: "hist-lm-eur-5", conceptId: "disturbed-writer",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 5 A Q4 — Deferred sitting",
+    stem: "This is an edited extract from an account by a reporter who knew Mohandas Gandhi well. Read it and answer the questions which follow.\n\nGandhi’s evening prayer meeting gave him a great pulpit from which to comment on any subject. The crowds who came at twilight to hear him ran into thousands, his listeners into millions, as his talks were broadcast on the radio.\nGandhi gave people advice on health and diet. He criticised machinery, saying that the wooden plough was more sacred than the tractor.\nThis disturbed me since he delivered his thoughts through a modern microphone and would step off his prayer platform into a limousine. I thought him inconsistent.",
+    questionText: "Briefly, what disturbed the writer?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "That he used modern technology/travelled by car/was inconsistent", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t5a-q5", topicId: "hist-lm-eur-5", conceptId: "circumstances-mohandas-gandhi-death",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 5 A Q5 — Deferred sitting",
+    stem: "This is an edited extract from an account by a reporter who knew Mohandas Gandhi well. Read it and answer the questions which follow.\n\nGandhi’s evening prayer meeting gave him a great pulpit from which to comment on any subject. The crowds who came at twilight to hear him ran into thousands, his listeners into millions, as his talks were broadcast on the radio.\nGandhi gave people advice on health and diet. He criticised machinery, saying that the wooden plough was more sacred than the tractor.\nThis disturbed me since he delivered his thoughts through a modern microphone and would step off his prayer platform into a limousine. I thought him inconsistent.",
+    questionText: "What were the circumstances of Mohandas Gandhi’s death?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Assassination", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t5b", topicId: "hist-lm-eur-5", conceptId: "charles-gaulle-chi-minh-julius-nyerere",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 5 B — Deferred sitting",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "Write a short paragraph on one of the following:\n1. Charles de Gaulle.\n2. Ho Chi Minh.\n3. Julius Nyerere and the policy of ujamaa.\n4. The Arab-Israeli conflict.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t5c", topicId: "hist-lm-eur-5", conceptId: "challenges-faced-development-workers-africa-did",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 5 C — Deferred sitting",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "Answer one of the following:\n1. What challenges were faced by development workers in Africa?\n2. Why did Katanga secede from the Congo and in what ways did this affect the Congo?\n3. How did problems develop in race relations in France in the 1980s and how successfully were they dealt with?\n4. What were the achievements of Nadine Gordimer?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,14] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t6a-q1", topicId: "hist-lm-eur-6", conceptId: "job-done-astronauts-before-started-training",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 6 A Q1 — Deferred sitting",
+    stem: "This is an edited extract by journalist Walter Cronkite describing the training of US astronauts. Read it and answer the questions which follow.\n\nThe first astronauts set a tough example to follow. They worked hard. Test pilots all, they had learned the difficult, demanding and dangerous craft of flying airplanes that no one had ever flown before.\nNow, besides mastering all the complicated technology of the new space machines, they were put through a gruelling routine of physical fitness and intense classroom learning. They studied physics, astronomy, geology and the geography of both the earth and the moon.",
+    questionText: "What job was done by the astronauts before they started training as astronauts?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They were test pilots.", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t6a-q2", topicId: "hist-lm-eur-6", conceptId: "does-writer-say-job-dangerous",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 6 A Q2 — Deferred sitting",
+    stem: "This is an edited extract by journalist Walter Cronkite describing the training of US astronauts. Read it and answer the questions which follow.\n\nThe first astronauts set a tough example to follow. They worked hard. Test pilots all, they had learned the difficult, demanding and dangerous craft of flying airplanes that no one had ever flown before.\nNow, besides mastering all the complicated technology of the new space machines, they were put through a gruelling routine of physical fitness and intense classroom learning. They studied physics, astronomy, geology and the geography of both the earth and the moon.",
+    questionText: "Why does the writer say that this job was dangerous?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They flew aircraft that no one had ever flown before", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t6a-q3", topicId: "hist-lm-eur-6", conceptId: "did-astronauts-work-hard",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 6 A Q3 — Deferred sitting",
+    stem: "This is an edited extract by journalist Walter Cronkite describing the training of US astronauts. Read it and answer the questions which follow.\n\nThe first astronauts set a tough example to follow. They worked hard. Test pilots all, they had learned the difficult, demanding and dangerous craft of flying airplanes that no one had ever flown before.\nNow, besides mastering all the complicated technology of the new space machines, they were put through a gruelling routine of physical fitness and intense classroom learning. They studied physics, astronomy, geology and the geography of both the earth and the moon.",
+    questionText: "Why did the astronauts have to work hard?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They had to work on complicated technology/physical fitness/ classroom learning/they had many skills, subjects to learn", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t6a-q4", topicId: "hist-lm-eur-6", conceptId: "subjects-studied-astronauts",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 6 A Q4 — Deferred sitting",
+    stem: "This is an edited extract by journalist Walter Cronkite describing the training of US astronauts. Read it and answer the questions which follow.\n\nThe first astronauts set a tough example to follow. They worked hard. Test pilots all, they had learned the difficult, demanding and dangerous craft of flying airplanes that no one had ever flown before.\nNow, besides mastering all the complicated technology of the new space machines, they were put through a gruelling routine of physical fitness and intense classroom learning. They studied physics, astronomy, geology and the geography of both the earth and the moon.",
+    questionText: "What were two subjects studied by the astronauts?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Physics/astronomy/geology/geography", marks: 6, contextNote: "(any TWO, 3m + 3m)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t6a-q5", topicId: "hist-lm-eur-6", conceptId: "did-set-itself-goal-landing-moon",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 6 A Q5 — Deferred sitting",
+    stem: "This is an edited extract by journalist Walter Cronkite describing the training of US astronauts. Read it and answer the questions which follow.\n\nThe first astronauts set a tough example to follow. They worked hard. Test pilots all, they had learned the difficult, demanding and dangerous craft of flying airplanes that no one had ever flown before.\nNow, besides mastering all the complicated technology of the new space machines, they were put through a gruelling routine of physical fitness and intense classroom learning. They studied physics, astronomy, geology and the geography of both the earth and the moon.",
+    questionText: "Briefly, why did the US set itself the goal of landing on the moon?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t6b", topicId: "hist-lm-eur-6", conceptId: "economic-boom-1945-1968-joe-mccarthy",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 6 B — Deferred sitting",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. The US economic boom, 1945-1968.\n2. Joe McCarthy and the “red scare”.\n3. Betty Friedan.\n4. Star Wars.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2022 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2022-ol-deferred-lm-s3t6c", topicId: "hist-lm-eur-6", conceptId: "did-president-harry-truman-pursue-successful",
+    section: "3", questionRef: "2022 OL Later Modern Section 3 Topic 6 C — Deferred sitting",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "Answer one of the following:\n1. How did President Harry Truman pursue a successful foreign policy?\n2. Why did the Montgomery bus boycott (1955-1956) take place and did it achieve its aims?\n3. Why did involvement in Vietnam cause controversy?\n4. What did Billy Graham contribute to religion in the US? There is no examination material on this page.",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,14] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s1-q1a", topicId: "hist-lm-irl-5", conceptId: "whom-did-derry-corporation-present-its",
+    section: "1", questionRef: "2023 OL Later Modern Section 1 Q1(a) — Deferred sitting",
+    stem: "Case study: The Coleraine University Controversy",
+    questionText: "In document A, to whom did Derry Corporation present its claim?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Minister for Finance", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s1-q1b", topicId: "hist-lm-irl-5", conceptId: "population-derry",
+    section: "1", questionRef: "2023 OL Later Modern Section 1 Q1(b) — Deferred sitting",
+    stem: "Case study: The Coleraine University Controversy",
+    questionText: "What was the population of Derry, according to document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "54,000", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s1-q1c", topicId: "hist-lm-irl-5", conceptId: "considered-inappropriate",
+    section: "1", questionRef: "2023 OL Later Modern Section 1 Q1(c) — Deferred sitting",
+    stem: "Case study: The Coleraine University Controversy",
+    questionText: "What was considered inappropriate, according to document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It would be inappropriate for the Corporation to meet the Minister", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s1-q1d", topicId: "hist-lm-irl-5", conceptId: "will-derry-shops-close-thursday",
+    section: "1", questionRef: "2023 OL Later Modern Section 1 Q1(d) — Deferred sitting",
+    stem: "Case study: The Coleraine University Controversy",
+    questionText: "According to document B, why will Derry’s shops close on Thursday?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To release employees for the protest", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s1-q1e", topicId: "hist-lm-irl-5", conceptId: "action-taken-university-derry-committee",
+    section: "1", questionRef: "2023 OL Later Modern Section 1 Q1(e) — Deferred sitting",
+    stem: "Case study: The Coleraine University Controversy",
+    questionText: "According to document B, what was one action taken by the University of Derry Committee?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "One action, e.g. meeting the religious heads of the city/a public meeting/ sending representatives to meet the Prime Minister", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s1-q2a", topicId: "hist-lm-irl-5", conceptId: "derry-support-outside-city-its-campaign",
+    section: "1", questionRef: "2023 OL Later Modern Section 1 Q2(a) — Deferred sitting",
+    stem: "Case study: The Coleraine University Controversy",
+    questionText: "Do both documents suggest that Derry had support from outside the city in its campaign to have the new university located in Derry? Refer to both documents in your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Yes, both documents refer to support from outside the city", marks: null },
+    { id: "r-2", kind: "point", verbatim: "In document A, the document refers to “other areas in the north-west”", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Support comes not just from the 54,000 people in the city but from the 350,000 people in the wider area", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Document B says that Derry people believe they have the support of people in Tyrone and Fermanagh.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s1-q2b", topicId: "hist-lm-irl-5", conceptId: "provides-evidence-main-religious-groups-derry",
+    section: "1", questionRef: "2023 OL Later Modern Section 1 Q2(b) — Deferred sitting",
+    stem: "Case study: The Coleraine University Controversy",
+    questionText: "Which document, A or B, provides evidence that both main religious groups in Derry supported the city’s campaign to have the new university in Derry? Give reasons for your answer with reference to the chosen document.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document B gives evidence of support from both main religious groups in Derry", marks: null },
+    { id: "r-2", kind: "point", verbatim: "There is no mention of religious groups/leaders in document A\nDocument B states that “Catholics and Protestants in Derry will unite in protest”", marks: null },
+    { id: "r-3", kind: "point", verbatim: "It also says that the University of Derry Committee has arranged a meeting with the “religious heads of the city, Catholic and Protestant”", marks: null, contextNote: "Identification of doc B and quote from doc B required. 5M +" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s1-q3a", topicId: "hist-lm-irl-5", conceptId: "does-contain-facts-opinions-mixture-provide",
+    section: "1", questionRef: "2023 OL Later Modern Section 1 Q3(a) — Deferred sitting",
+    stem: "Case study: The Coleraine University Controversy",
+    questionText: "Does document A contain facts or opinions or a mixture of both? Provide evidence from the document to support your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Solid factual information is provided such as population statistics for Derry and the wider area, or that the Lockwood Committee is dealing with the question of higher education.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "The first sentence is an opinion rather than a fact: “likely to be intensified” is a possibility rather than a definite fact.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Derry “is expecting support” from other parts of the north-west, but this is not a definite fact.", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s1-q3b", topicId: "hist-lm-irl-5", conceptId: "useful-source-historians-studying-coleraine-university",
+    section: "1", questionRef: "2023 OL Later Modern Section 1 Q3(b) — Deferred sitting",
+    stem: "Case study: The Coleraine University Controversy",
+    questionText: "Why is document B a useful source for historians studying the Coleraine University controversy? Provide evidence from the document to support your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The document is useful as it is a primary source, a letter written at the time of the events described.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "It was published in a reputable newspaper and can be taken as a reliable source.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "It provides factual information about the campaign for the university as it was happening.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "It attempts to represent both Catholic and Protestant points-of view.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "It is subjective, as the writer is clearly sympathetic to the university campaign.", marks: null, openList: true },
+    { id: "r-6", kind: "point", verbatim: "It is limited in what it describes, it deals only with what is happening in February 1965 and provides little sense of context, etc.", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s1-q4", topicId: "hist-lm-irl-5", conceptId: "northern-ireland-second-university-sited-coleraine",
+    section: "1", questionRef: "2023 OL Later Modern Section 1 Q4 — Deferred sitting",
+    stem: "Case study: The Coleraine University Controversy",
+    questionText: "Why was Northern Ireland’s second university sited at Coleraine rather than Derry?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[27], schemePages: [9] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t1a-q1", topicId: "hist-lm-irl-1", conceptId: "training-did-william-dargan-undertake-prepare",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 1 A Q1 — Deferred sitting",
+    stem: "This edited extract deals with William Dargan. Read it and answer the questions which follow.\n\nHaving trained as a surveyor, William Dargan established himself as a road builder. In 1831, he became the contractor for the Dublin to Kingstown [Dún Laoghaire] railway line, the first in Ireland. Over the next two decades he constructed over 600 miles of railway lines, the Ulster canal and made major improvements to Belfast’s docks.\nIn 1853, he organised the Irish Industrial Exhibition. It, and Dargan’s later investments in textile manufacture, proved financially disastrous. A generous patron of the arts, his name is associated with what became the National Gallery of Ireland.",
+    questionText: "What training did William Dargan undertake to prepare for working life?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He trained as a surveyor", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t1a-q2", topicId: "hist-lm-irl-1", conceptId: "where-first-railway-line-ireland-built",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 1 A Q2 — Deferred sitting",
+    stem: "This edited extract deals with William Dargan. Read it and answer the questions which follow.\n\nHaving trained as a surveyor, William Dargan established himself as a road builder. In 1831, he became the contractor for the Dublin to Kingstown [Dún Laoghaire] railway line, the first in Ireland. Over the next two decades he constructed over 600 miles of railway lines, the Ulster canal and made major improvements to Belfast’s docks.\nIn 1853, he organised the Irish Industrial Exhibition. It, and Dargan’s later investments in textile manufacture, proved financially disastrous. A generous patron of the arts, his name is associated with what became the National Gallery of Ireland.",
+    questionText: "Where was the first railway line in Ireland built?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Dublin to Kingstown/Dún Laoghaire line", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t1a-q3", topicId: "hist-lm-irl-1", conceptId: "did-dargan-contribute-industrialisation-belfast",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 1 A Q3 — Deferred sitting",
+    stem: "This edited extract deals with William Dargan. Read it and answer the questions which follow.\n\nHaving trained as a surveyor, William Dargan established himself as a road builder. In 1831, he became the contractor for the Dublin to Kingstown [Dún Laoghaire] railway line, the first in Ireland. Over the next two decades he constructed over 600 miles of railway lines, the Ulster canal and made major improvements to Belfast’s docks.\nIn 1853, he organised the Irish Industrial Exhibition. It, and Dargan’s later investments in textile manufacture, proved financially disastrous. A generous patron of the arts, his name is associated with what became the National Gallery of Ireland.",
+    questionText: "How did Dargan contribute to the industrialisation of Belfast?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He made improvements to Belfast Docks", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t1a-q4", topicId: "hist-lm-irl-1", conceptId: "financial-investment-dargan-failure",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 1 A Q4 — Deferred sitting",
+    stem: "This edited extract deals with William Dargan. Read it and answer the questions which follow.\n\nHaving trained as a surveyor, William Dargan established himself as a road builder. In 1831, he became the contractor for the Dublin to Kingstown [Dún Laoghaire] railway line, the first in Ireland. Over the next two decades he constructed over 600 miles of railway lines, the Ulster canal and made major improvements to Belfast’s docks.\nIn 1853, he organised the Irish Industrial Exhibition. It, and Dargan’s later investments in textile manufacture, proved financially disastrous. A generous patron of the arts, his name is associated with what became the National Gallery of Ireland.",
+    questionText: "What financial investment by Dargan was a failure?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Irish Industrial Exhibition/investments in textiles", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t1a-q5", topicId: "hist-lm-irl-1", conceptId: "important-industry-associated-belfast-19th-century",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 1 A Q5 — Deferred sitting",
+    stem: "This edited extract deals with William Dargan. Read it and answer the questions which follow.\n\nHaving trained as a surveyor, William Dargan established himself as a road builder. In 1831, he became the contractor for the Dublin to Kingstown [Dún Laoghaire] railway line, the first in Ireland. Over the next two decades he constructed over 600 miles of railway lines, the Ulster canal and made major improvements to Belfast’s docks.\nIn 1853, he organised the Irish Industrial Exhibition. It, and Dargan’s later investments in textile manufacture, proved financially disastrous. A generous patron of the arts, his name is associated with what became the National Gallery of Ireland.",
+    questionText: "Name one important industry associated with Belfast in the 19th century.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid example", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t1b", topicId: "hist-lm-irl-1", conceptId: "economic-crisis-1815-1850-tithe-war",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 1 B — Deferred sitting",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Write a short paragraph on one of the following:\n1. Economic crisis, 1815-1850.\n2. The Tithe War.\n3. Thomas Davis.\n4. Mother Mary Aikenhead.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t1c", topicId: "hist-lm-irl-1", conceptId: "did-daniel-connell-lead-campaign-catholic",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 1 C — Deferred sitting",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Answer one of the following:\n1. How did Daniel O’Connell lead the campaign for Catholic Emancipation?\n2. What was the role of private individuals and charitable organisations in Famine relief?\n3. What changes were introduced at the Synod of Thurles, 1850, and how did these changes affect the Catholic Church?\n4. What contribution did William Carleton make to Irish life?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t2a-q1", topicId: "hist-lm-irl-2", conceptId: "who-major-activists-early-women-suffrage",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 2 A Q1 — Deferred sitting",
+    stem: "This is an edited extract from The Irish Times, which describes how Irish women won the right to vote in 1918. Read it and answer the questions which follow.\n\nTwo of the major activists involved in women’s suffrage campaigns were Isabella Tod, a Presbyterian based in Belfast, and Anna Haslam, a Quaker from Youghal.\nIn 1871, Tod founded the North of Ireland Women’s Suffrage Committee. Then in 1876 Haslam founded the Dublin Women’s Suffrage Association, which later became the Irish Women’s Suffrage and Local Government Association.\nTod and Haslam’s method was steady, peaceful reformism: make friends in parliament, table bills, get up petitions, hold meetings with prominent speakers, fundraise and raise general consciousness of women’s issues.",
+    questionText: "Who were the two major activists of the early women’s suffrage campaigns?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Isabella Tod", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Anna Haslam", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t2a-q2", topicId: "hist-lm-irl-2", conceptId: "where-first-women-suffrage-society-ireland",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 2 A Q2 — Deferred sitting",
+    stem: "This is an edited extract from The Irish Times, which describes how Irish women won the right to vote in 1918. Read it and answer the questions which follow.\n\nTwo of the major activists involved in women’s suffrage campaigns were Isabella Tod, a Presbyterian based in Belfast, and Anna Haslam, a Quaker from Youghal.\nIn 1871, Tod founded the North of Ireland Women’s Suffrage Committee. Then in 1876 Haslam founded the Dublin Women’s Suffrage Association, which later became the Irish Women’s Suffrage and Local Government Association.\nTod and Haslam’s method was steady, peaceful reformism: make friends in parliament, table bills, get up petitions, hold meetings with prominent speakers, fundraise and raise general consciousness of women’s issues.",
+    questionText: "Where was the first women’s suffrage society in Ireland founded?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Belfast/North of Ireland", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t2a-q3", topicId: "hist-lm-irl-2", conceptId: "when-dublin-women-suffrage-association-founded",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 2 A Q3 — Deferred sitting",
+    stem: "This is an edited extract from The Irish Times, which describes how Irish women won the right to vote in 1918. Read it and answer the questions which follow.\n\nTwo of the major activists involved in women’s suffrage campaigns were Isabella Tod, a Presbyterian based in Belfast, and Anna Haslam, a Quaker from Youghal.\nIn 1871, Tod founded the North of Ireland Women’s Suffrage Committee. Then in 1876 Haslam founded the Dublin Women’s Suffrage Association, which later became the Irish Women’s Suffrage and Local Government Association.\nTod and Haslam’s method was steady, peaceful reformism: make friends in parliament, table bills, get up petitions, hold meetings with prominent speakers, fundraise and raise general consciousness of women’s issues.",
+    questionText: "When was the Dublin Women’s Suffrage Association founded?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1876", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t2a-q4", topicId: "hist-lm-irl-2", conceptId: "methods-did-women-use-highlight-issues",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 2 A Q4 — Deferred sitting",
+    stem: "This is an edited extract from The Irish Times, which describes how Irish women won the right to vote in 1918. Read it and answer the questions which follow.\n\nTwo of the major activists involved in women’s suffrage campaigns were Isabella Tod, a Presbyterian based in Belfast, and Anna Haslam, a Quaker from Youghal.\nIn 1871, Tod founded the North of Ireland Women’s Suffrage Committee. Then in 1876 Haslam founded the Dublin Women’s Suffrage Association, which later became the Irish Women’s Suffrage and Local Government Association.\nTod and Haslam’s method was steady, peaceful reformism: make friends in parliament, table bills, get up petitions, hold meetings with prominent speakers, fundraise and raise general consciousness of women’s issues.",
+    questionText: "What methods did the women use to highlight their issues?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Steady, peaceful reformism/one of the strategies mentioned in the third paragraph", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t2a-q5", topicId: "hist-lm-irl-2", conceptId: "meant-term-suffragette",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 2 A Q5 — Deferred sitting",
+    stem: "This is an edited extract from The Irish Times, which describes how Irish women won the right to vote in 1918. Read it and answer the questions which follow.\n\nTwo of the major activists involved in women’s suffrage campaigns were Isabella Tod, a Presbyterian based in Belfast, and Anna Haslam, a Quaker from Youghal.\nIn 1871, Tod founded the North of Ireland Women’s Suffrage Committee. Then in 1876 Haslam founded the Dublin Women’s Suffrage Association, which later became the Irish Women’s Suffrage and Local Government Association.\nTod and Haslam’s method was steady, peaceful reformism: make friends in parliament, table bills, get up petitions, hold meetings with prominent speakers, fundraise and raise general consciousness of women’s issues.",
+    questionText: "What is meant by the term suffragette?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A campaigner who sought voting rights for women (or similar)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t2b", topicId: "hist-lm-irl-2", conceptId: "unionists-opposed-home-rule-first-sinn",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 2 B — Deferred sitting",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Write a short paragraph on one of the following:\n1. Why Unionists opposed Home Rule.\n2. The first Sinn Féin party.\n3. Hanna Sheehy-Skeffington.\n4. Douglas Hyde and the Gaelic League.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t2c", topicId: "hist-lm-irl-2", conceptId: "contribution-charles-stewart-parnell-land-reform",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 2 C — Deferred sitting",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Answer one of the following:\n1. What was the contribution of Charles Stewart Parnell to land reform and/or Home Rule?\n2. What developments took place in the GAA, 1884-1891?\n3. What role did William Martin Murphy and/or James Larkin play in the Dublin strike and lockout, 1913?\n4. How did W.B. Yeats contribute to Irish affairs?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t3a-q1", topicId: "hist-lm-irl-3", conceptId: "long-miss-mac-sweeney-speech",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 3 A Q1 — Deferred sitting",
+    stem: "This edited extract (The Irish Times, 22/12/1921) deals with the Dáil debate on the Anglo-Irish Treaty. Read it and answer the questions which follow.\n\nMiss Mac Sweeney [who opposed the Treaty] spoke for two hours and forty minutes without a break. She had a quiver full of poisoned arrows and she launched every one of them. Nobody escaped her scorn.\nSouthern Unionists were ‘good for nothing’. Mr. Lloyd George was denounced as an ‘unscrupulous trickster’. Bitterness was the driving force behind her every word.\nThere was speculation last night about the outcome of the vote. It was agreed that the Dáil’s vote would be won or lost by a very small majority.",
+    questionText: "How long was Miss Mac Sweeney’s speech?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Two hours and forty minutes", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t3a-q2", topicId: "hist-lm-irl-3", conceptId: "criticism-made-southern-unionists",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 3 A Q2 — Deferred sitting",
+    stem: "This edited extract (The Irish Times, 22/12/1921) deals with the Dáil debate on the Anglo-Irish Treaty. Read it and answer the questions which follow.\n\nMiss Mac Sweeney [who opposed the Treaty] spoke for two hours and forty minutes without a break. She had a quiver full of poisoned arrows and she launched every one of them. Nobody escaped her scorn.\nSouthern Unionists were ‘good for nothing’. Mr. Lloyd George was denounced as an ‘unscrupulous trickster’. Bitterness was the driving force behind her every word.\nThere was speculation last night about the outcome of the vote. It was agreed that the Dáil’s vote would be won or lost by a very small majority.",
+    questionText: "What criticism was made of southern Unionists?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They were “good for nothing”", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t3a-q3", topicId: "hist-lm-irl-3", conceptId: "who-described-unscrupulous-trickster",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 3 A Q3 — Deferred sitting",
+    stem: "This edited extract (The Irish Times, 22/12/1921) deals with the Dáil debate on the Anglo-Irish Treaty. Read it and answer the questions which follow.\n\nMiss Mac Sweeney [who opposed the Treaty] spoke for two hours and forty minutes without a break. She had a quiver full of poisoned arrows and she launched every one of them. Nobody escaped her scorn.\nSouthern Unionists were ‘good for nothing’. Mr. Lloyd George was denounced as an ‘unscrupulous trickster’. Bitterness was the driving force behind her every word.\nThere was speculation last night about the outcome of the vote. It was agreed that the Dáil’s vote would be won or lost by a very small majority.",
+    questionText: "Who was described as an ‘unscrupulous trickster’?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mr. Lloyd George", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t3a-q4", topicId: "hist-lm-irl-3", conceptId: "emotion-shown-miss-mac-sweeney-during",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 3 A Q4 — Deferred sitting",
+    stem: "This edited extract (The Irish Times, 22/12/1921) deals with the Dáil debate on the Anglo-Irish Treaty. Read it and answer the questions which follow.\n\nMiss Mac Sweeney [who opposed the Treaty] spoke for two hours and forty minutes without a break. She had a quiver full of poisoned arrows and she launched every one of them. Nobody escaped her scorn.\nSouthern Unionists were ‘good for nothing’. Mr. Lloyd George was denounced as an ‘unscrupulous trickster’. Bitterness was the driving force behind her every word.\nThere was speculation last night about the outcome of the vote. It was agreed that the Dáil’s vote would be won or lost by a very small majority.",
+    questionText: "What emotion was shown by Miss Mac Sweeney during her speech?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bitterness", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t3a-q5", topicId: "hist-lm-irl-3", conceptId: "term-anglo-irish-treaty-caused-controversy",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 3 A Q5 — Deferred sitting",
+    stem: "This edited extract (The Irish Times, 22/12/1921) deals with the Dáil debate on the Anglo-Irish Treaty. Read it and answer the questions which follow.\n\nMiss Mac Sweeney [who opposed the Treaty] spoke for two hours and forty minutes without a break. She had a quiver full of poisoned arrows and she launched every one of them. Nobody escaped her scorn.\nSouthern Unionists were ‘good for nothing’. Mr. Lloyd George was denounced as an ‘unscrupulous trickster’. Bitterness was the driving force behind her every word.\nThere was speculation last night about the outcome of the vote. It was agreed that the Dáil’s vote would be won or lost by a very small majority.",
+    questionText: "What was one term of the Anglo-Irish Treaty that caused controversy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid term", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t3b", topicId: "hist-lm-irl-3", conceptId: "patrick-pearse-1918-general-election-unionist",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 3 B — Deferred sitting",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "Write a short paragraph on one of the following:\n1. Patrick Pearse.\n2. The 1918 general election.\n3. The Unionist Party in Northern Ireland, 1920-1939.\n4. Evie Hone.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t3c", topicId: "hist-lm-irl-3", conceptId: "causes-consequences-irish-civil-war-1922",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 3 C — Deferred sitting",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "Answer one of the following:\n1. What were the causes and consequences of the Irish Civil War, 1922-1923?\n2. What was the impact of the Eucharistic Congress, 1932, on Irish life?\n3. How did Éamon de Valera conduct Anglo-Irish relations, 1932 - 1945?\n4. How was Belfast affected by World War II?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t4a-q1", topicId: "hist-lm-irl-4", conceptId: "solution-did-tuke-recommend-families-living",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 4 A Q1 — Deferred sitting",
+    stem: "This is an extract from an article on James Hack Tuke and his schemes for assisted emigration from the west of Ireland. Read it and answer the questions which follow.\n\nDuring 1881 James Hack Tuke published articles in a number of journals on the advantages of emigration from Ireland. He argued that assisting families to leave was the solution to the poverty of the poorer classes in the west of Ireland.\nThe Tuke Committee was established with the objective of fostering the emigration of whole families and providing the financial resources for them to leave. It decided to concentrate its efforts on the poorer areas of Connemara and west Mayo. Many of the local Catholic clergy were also sympathetic to emigration as a solution to the region’s problems.",
+    questionText: "What solution did Tuke recommend for families living in poverty?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Emigration (from Ireland)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t4a-q2", topicId: "hist-lm-irl-4", conceptId: "tuke-committee-established",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 4 A Q2 — Deferred sitting",
+    stem: "This is an extract from an article on James Hack Tuke and his schemes for assisted emigration from the west of Ireland. Read it and answer the questions which follow.\n\nDuring 1881 James Hack Tuke published articles in a number of journals on the advantages of emigration from Ireland. He argued that assisting families to leave was the solution to the poverty of the poorer classes in the west of Ireland.\nThe Tuke Committee was established with the objective of fostering the emigration of whole families and providing the financial resources for them to leave. It decided to concentrate its efforts on the poorer areas of Connemara and west Mayo. Many of the local Catholic clergy were also sympathetic to emigration as a solution to the region’s problems.",
+    questionText: "Why was the Tuke Committee established?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To encourage whole families to leave/provide financial resources to families who were emigrating", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t4a-q3", topicId: "hist-lm-irl-4", conceptId: "parts-ireland-did-tuke-committee-focus",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 4 A Q3 — Deferred sitting",
+    stem: "This is an extract from an article on James Hack Tuke and his schemes for assisted emigration from the west of Ireland. Read it and answer the questions which follow.\n\nDuring 1881 James Hack Tuke published articles in a number of journals on the advantages of emigration from Ireland. He argued that assisting families to leave was the solution to the poverty of the poorer classes in the west of Ireland.\nThe Tuke Committee was established with the objective of fostering the emigration of whole families and providing the financial resources for them to leave. It decided to concentrate its efforts on the poorer areas of Connemara and west Mayo. Many of the local Catholic clergy were also sympathetic to emigration as a solution to the region’s problems.",
+    questionText: "On what parts of Ireland did the Tuke Committee focus its efforts?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Connemara and West Mayo", marks: 6, contextNote: "(3M + 3M)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t4a-q4", topicId: "hist-lm-irl-4", conceptId: "response-catholic-clergy-idea-emigration",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 4 A Q4 — Deferred sitting",
+    stem: "This is an extract from an article on James Hack Tuke and his schemes for assisted emigration from the west of Ireland. Read it and answer the questions which follow.\n\nDuring 1881 James Hack Tuke published articles in a number of journals on the advantages of emigration from Ireland. He argued that assisting families to leave was the solution to the poverty of the poorer classes in the west of Ireland.\nThe Tuke Committee was established with the objective of fostering the emigration of whole families and providing the financial resources for them to leave. It decided to concentrate its efforts on the poorer areas of Connemara and west Mayo. Many of the local Catholic clergy were also sympathetic to emigration as a solution to the region’s problems.",
+    questionText: "What was the response of the Catholic clergy to the idea of emigration?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They were sympathetic/supported the idea", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t4a-q5", topicId: "hist-lm-irl-4", conceptId: "countries-irish-people-emigrated-during-nineteenth",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 4 A Q5 — Deferred sitting",
+    stem: "This is an extract from an article on James Hack Tuke and his schemes for assisted emigration from the west of Ireland. Read it and answer the questions which follow.\n\nDuring 1881 James Hack Tuke published articles in a number of journals on the advantages of emigration from Ireland. He argued that assisting families to leave was the solution to the poverty of the poorer classes in the west of Ireland.\nThe Tuke Committee was established with the objective of fostering the emigration of whole families and providing the financial resources for them to leave. It decided to concentrate its efforts on the poorer areas of Connemara and west Mayo. Many of the local Catholic clergy were also sympathetic to emigration as a solution to the region’s problems.",
+    questionText: "Name two countries to which Irish people emigrated during the nineteenth century.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Any two valid countries of destination (3M + 3M)", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks.", permittedMarks: [0,3,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t4b", topicId: "hist-lm-irl-4", conceptId: "orange-order-canada-molly-maguires-bishop",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 4 B — Deferred sitting",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Write a short paragraph on one of the following:\n1. The Orange Order in Canada.\n2. The Molly Maguires.\n3. Bishop Edward Galvin.\n4. Maureen O’Hara.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t4c", topicId: "hist-lm-irl-4", conceptId: "role-grosse-isle-history-irish-emigration",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 4 C — Deferred sitting",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Answer one of the following:\n1. What was the role of Grosse Isle in the history of Irish emigration?\n2. What was the purpose of De Valera’s visit to America, June 1919-December 1920, and was his visit successful?\n3. What were the successes and failures of the Holy Ghost Mission in Nigeria, 1945-1966?\n4. During the period 1920-1966, what challenges and opportunities did Irish immigrants experience in Great Britain?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t6a-q1", topicId: "hist-lm-irl-6", conceptId: "long-did-campaign-join-eec-last",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 6 A Q1 — Deferred sitting",
+    stem: "This is an edited extract from historian Ciarán Casey relating to Irish membership of the EEC. Read it and answer the questions which follow.\n\nIrish accession to the European Economic Community [EEC] in 1973 marked the high point of a campaign that had lasted well over a decade.\nFor most Irish politicians, officials, and the public, the primary consideration was economic. A 1974 survey found that 82% of Irish people considered this the most important element of the Community.\nThe main beneficiaries were farmers, as membership brought immediate and substantial increases in agricultural prices and incomes. The state’s finances benefitted because many of the supports for agriculture which it had provided were now taken over by Europe.",
+    questionText: "How long did the campaign to join the EEC last?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Over a decade/more than ten years", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t6a-q2", topicId: "hist-lm-irl-6", conceptId: "proportion-people-believed-economic-considerations-most",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 6 A Q2 — Deferred sitting",
+    stem: "This is an edited extract from historian Ciarán Casey relating to Irish membership of the EEC. Read it and answer the questions which follow.\n\nIrish accession to the European Economic Community [EEC] in 1973 marked the high point of a campaign that had lasted well over a decade.\nFor most Irish politicians, officials, and the public, the primary consideration was economic. A 1974 survey found that 82% of Irish people considered this the most important element of the Community.\nThe main beneficiaries were farmers, as membership brought immediate and substantial increases in agricultural prices and incomes. The state’s finances benefitted because many of the supports for agriculture which it had provided were now taken over by Europe.",
+    questionText: "What proportion of people believed that economic considerations were the most important reason to join the EEC?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "82%", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t6a-q3", topicId: "hist-lm-irl-6", conceptId: "did-farmers-benefit-irish-membership-eec",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 6 A Q3 — Deferred sitting",
+    stem: "This is an edited extract from historian Ciarán Casey relating to Irish membership of the EEC. Read it and answer the questions which follow.\n\nIrish accession to the European Economic Community [EEC] in 1973 marked the high point of a campaign that had lasted well over a decade.\nFor most Irish politicians, officials, and the public, the primary consideration was economic. A 1974 survey found that 82% of Irish people considered this the most important element of the Community.\nThe main beneficiaries were farmers, as membership brought immediate and substantial increases in agricultural prices and incomes. The state’s finances benefitted because many of the supports for agriculture which it had provided were now taken over by Europe.",
+    questionText: "How did farmers benefit from Irish membership of the EEC?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Increases in agricultural prices/incomes", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t6a-q4", topicId: "hist-lm-irl-6", conceptId: "way-did-finances-benefit-irish-membership",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 6 A Q4 — Deferred sitting",
+    stem: "This is an edited extract from historian Ciarán Casey relating to Irish membership of the EEC. Read it and answer the questions which follow.\n\nIrish accession to the European Economic Community [EEC] in 1973 marked the high point of a campaign that had lasted well over a decade.\nFor most Irish politicians, officials, and the public, the primary consideration was economic. A 1974 survey found that 82% of Irish people considered this the most important element of the Community.\nThe main beneficiaries were farmers, as membership brought immediate and substantial increases in agricultural prices and incomes. The state’s finances benefitted because many of the supports for agriculture which it had provided were now taken over by Europe.",
+    questionText: "In what way did state finances benefit from Irish membership of the EEC?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Agricultural supports were now paid by Europe rather than by the Irish government", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t6a-q5", topicId: "hist-lm-irl-6", conceptId: "way-irish-fisheries-affected-membership-eec",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 6 A Q5 — Deferred sitting",
+    stem: "This is an edited extract from historian Ciarán Casey relating to Irish membership of the EEC. Read it and answer the questions which follow.\n\nIrish accession to the European Economic Community [EEC] in 1973 marked the high point of a campaign that had lasted well over a decade.\nFor most Irish politicians, officials, and the public, the primary consideration was economic. A 1974 survey found that 82% of Irish people considered this the most important element of the Community.\nThe main beneficiaries were farmers, as membership brought immediate and substantial increases in agricultural prices and incomes. The state’s finances benefitted because many of the supports for agriculture which it had provided were now taken over by Europe.",
+    questionText: "Explain one way in which Irish fisheries were affected by membership of the EEC.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid impact", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t6b", topicId: "hist-lm-irl-6", conceptId: "changing-attitudes-irish-language-irish-involvement",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 6 B — Deferred sitting",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. Changing attitudes to the Irish language.\n2. Irish involvement in the United Nations (UN).\n3. John Charles McQuaid.\n4. Mary Robinson.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s2t6c", topicId: "hist-lm-irl-6", conceptId: "aims-first-programme-economic-expansion-those",
+    section: "2", questionRef: "2023 OL Later Modern Section 2 Topic 6 C — Deferred sitting",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Answer one of the following:\n1. What were the aims of the First Programme for Economic Expansion, and were those aims achieved?\n2. What developments took place in education, health and social welfare, 1949-1989?\n3. How did RTÉ contribute to change in Ireland, 1962-1972?\n4. What contribution did Garret FitzGerald and/or Charles Haughey make to Irish politics?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t1a-q1", topicId: "hist-lm-eur-1", conceptId: "happened-europe-1848",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 1 A Q1 — Deferred sitting",
+    stem: "This is an edited extract from a talk on the 1848 revolutions. Read it and answer the questions which follow.\n\nIn 1848 a wave of revolutions swept across Europe as the people of various countries rebelled against the post-Napoleonic conservative order. The people who rebelled were a mix of liberal republicans, radical socialists, and various kinds of nationalists — in other words, people who had little in common other than their shared opposition to the current order in Europe.\nBy the early part of 1849, the revolutions had been crushed, but they had begun to change many Europeans’ way of thinking about society. While the revolutions failed, they did force governments on a path of social reform.",
+    questionText: "What happened in Europe in 1848?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A wave of revolutions", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t1a-q2", topicId: "hist-lm-eur-1", conceptId: "groups-people-who-rebelled",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 1 A Q2 — Deferred sitting",
+    stem: "This is an edited extract from a talk on the 1848 revolutions. Read it and answer the questions which follow.\n\nIn 1848 a wave of revolutions swept across Europe as the people of various countries rebelled against the post-Napoleonic conservative order. The people who rebelled were a mix of liberal republicans, radical socialists, and various kinds of nationalists — in other words, people who had little in common other than their shared opposition to the current order in Europe.\nBy the early part of 1849, the revolutions had been crushed, but they had begun to change many Europeans’ way of thinking about society. While the revolutions failed, they did force governments on a path of social reform.",
+    questionText: "Name two groups of people who rebelled.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Liberal republicans/radical socialists/nationalists", marks: 6, contextNote: "(Any two, 3M + 3M)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t1a-q3", topicId: "hist-lm-eur-1", conceptId: "people-rebelling-against",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 1 A Q3 — Deferred sitting",
+    stem: "This is an edited extract from a talk on the 1848 revolutions. Read it and answer the questions which follow.\n\nIn 1848 a wave of revolutions swept across Europe as the people of various countries rebelled against the post-Napoleonic conservative order. The people who rebelled were a mix of liberal republicans, radical socialists, and various kinds of nationalists — in other words, people who had little in common other than their shared opposition to the current order in Europe.\nBy the early part of 1849, the revolutions had been crushed, but they had begun to change many Europeans’ way of thinking about society. While the revolutions failed, they did force governments on a path of social reform.",
+    questionText: "What were the people rebelling against?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The current order in Europe", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t1a-q4", topicId: "hist-lm-eur-1", conceptId: "even-though-failed-did-revolutions-force",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 1 A Q4 — Deferred sitting",
+    stem: "This is an edited extract from a talk on the 1848 revolutions. Read it and answer the questions which follow.\n\nIn 1848 a wave of revolutions swept across Europe as the people of various countries rebelled against the post-Napoleonic conservative order. The people who rebelled were a mix of liberal republicans, radical socialists, and various kinds of nationalists — in other words, people who had little in common other than their shared opposition to the current order in Europe.\nBy the early part of 1849, the revolutions had been crushed, but they had begun to change many Europeans’ way of thinking about society. While the revolutions failed, they did force governments on a path of social reform.",
+    questionText: "Even though they failed, what did the revolutions force governments to do?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To introduce social reforms", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t1a-q5", topicId: "hist-lm-eur-1", conceptId: "reason-1848-revolution-germany-failed",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 1 A Q5 — Deferred sitting",
+    stem: "This is an edited extract from a talk on the 1848 revolutions. Read it and answer the questions which follow.\n\nIn 1848 a wave of revolutions swept across Europe as the people of various countries rebelled against the post-Napoleonic conservative order. The people who rebelled were a mix of liberal republicans, radical socialists, and various kinds of nationalists — in other words, people who had little in common other than their shared opposition to the current order in Europe.\nBy the early part of 1849, the revolutions had been crushed, but they had begun to change many Europeans’ way of thinking about society. While the revolutions failed, they did force governments on a path of social reform.",
+    questionText: "Give one reason why the 1848 Revolution in Germany failed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t1b", topicId: "hist-lm-eur-1", conceptId: "clemens-metternich-industrial-developments-1815-1871",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 1 B — Deferred sitting",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Write a short paragraph on one of the following:\n1. Clemens Metternich.\n2. Industrial developments, 1815-1871.\n3. Victor Hugo.\n4. Developments in education and literacy.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t1c", topicId: "hist-lm-eur-1", conceptId: "did-conditions-robert-owen-model-village",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 1 C — Deferred sitting",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Answer one of the following:\n1. How did conditions at Robert Owen’s model village at New Lanark differ from conditions elsewhere in Britain at the time?\n2. How did Haussmann redevelop Paris and how did the changes he made affect the lives of the people of Paris?\n3. What role did Giuseppe Mazzini play in promoting and achieving Italian unity?\n4. What was the significance of Karl Marx and/or Charles Darwin?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t2a-q1", topicId: "hist-lm-eur-2", conceptId: "when-compulsory-military-service-men-introduced",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 2 A Q1 — Deferred sitting",
+    stem: "This edited extract deals with women in the workforce during World War I. Read it and answer the questions which follow.\n\nAfter the introduction of compulsory military service for men on 2 March, 1916, the British government started a drive to fill the gaps in the workforce with female labour.\nIn July 1914, there were 212,000 women employed in engineering and munitions, but by 1918 the total was almost a million. Women drove trains, worked on the land and nursed the sick.\nMany women escaped the poorly-paid drudgery of domestic service. The number of domestic servants fell by almost a quarter in the war years, while the average wages of working women were often more than double the pre-war levels.",
+    questionText: "When was compulsory military service for men introduced?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2 March, 1916", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t2a-q2", topicId: "hist-lm-eur-2", conceptId: "types-work-done-women-during-war",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 2 A Q2 — Deferred sitting",
+    stem: "This edited extract deals with women in the workforce during World War I. Read it and answer the questions which follow.\n\nAfter the introduction of compulsory military service for men on 2 March, 1916, the British government started a drive to fill the gaps in the workforce with female labour.\nIn July 1914, there were 212,000 women employed in engineering and munitions, but by 1918 the total was almost a million. Women drove trains, worked on the land and nursed the sick.\nMany women escaped the poorly-paid drudgery of domestic service. The number of domestic servants fell by almost a quarter in the war years, while the average wages of working women were often more than double the pre-war levels.",
+    questionText: "What types of work were done by women during the war years?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Engineering/munitions/driving trains/working on the land/nursing", marks: 6, contextNote: "(Any two, 3M + 3M)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t2a-q3", topicId: "hist-lm-eur-2", conceptId: "work-did-many-women-stop-doing",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 2 A Q3 — Deferred sitting",
+    stem: "This edited extract deals with women in the workforce during World War I. Read it and answer the questions which follow.\n\nAfter the introduction of compulsory military service for men on 2 March, 1916, the British government started a drive to fill the gaps in the workforce with female labour.\nIn July 1914, there were 212,000 women employed in engineering and munitions, but by 1918 the total was almost a million. Women drove trains, worked on the land and nursed the sick.\nMany women escaped the poorly-paid drudgery of domestic service. The number of domestic servants fell by almost a quarter in the war years, while the average wages of working women were often more than double the pre-war levels.",
+    questionText: "What work did many women stop doing during the war years?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Domestic service/working as servants", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t2a-q4", topicId: "hist-lm-eur-2", conceptId: "did-women-wages-change-during-war",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 2 A Q4 — Deferred sitting",
+    stem: "This edited extract deals with women in the workforce during World War I. Read it and answer the questions which follow.\n\nAfter the introduction of compulsory military service for men on 2 March, 1916, the British government started a drive to fill the gaps in the workforce with female labour.\nIn July 1914, there were 212,000 women employed in engineering and munitions, but by 1918 the total was almost a million. Women drove trains, worked on the land and nursed the sick.\nMany women escaped the poorly-paid drudgery of domestic service. The number of domestic servants fell by almost a quarter in the war years, while the average wages of working women were often more than double the pre-war levels.",
+    questionText: "How did women’s wages change during the war years?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Women’s wages doubled/more than doubled", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t2a-q5", topicId: "hist-lm-eur-2", conceptId: "political-right-demanded-many-women-during",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 2 A Q5 — Deferred sitting",
+    stem: "This edited extract deals with women in the workforce during World War I. Read it and answer the questions which follow.\n\nAfter the introduction of compulsory military service for men on 2 March, 1916, the British government started a drive to fill the gaps in the workforce with female labour.\nIn July 1914, there were 212,000 women employed in engineering and munitions, but by 1918 the total was almost a million. Women drove trains, worked on the land and nursed the sick.\nMany women escaped the poorly-paid drudgery of domestic service. The number of domestic servants fell by almost a quarter in the war years, while the average wages of working women were often more than double the pre-war levels.",
+    questionText: "What political right was demanded by many women during the early 1900s?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The right to vote", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t2b", topicId: "hist-lm-eur-2", conceptId: "european-powers-wanted-colonies-otto-von",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 2 B — Deferred sitting",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Write a short paragraph on one of the following:\n1. Why European powers wanted colonies.\n2. Otto von Bismarck.\n3. Anti-Semitism in France.\n4. Woodrow Wilson.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t2c", topicId: "hist-lm-eur-2", conceptId: "challenges-faced-tsarist-russia-1871-1917",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 2 C — Deferred sitting",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Answer one of the following:\n1. What challenges faced Tsarist Russia, 1871-1917?\n2. What did Karl Benz and/or the Krupp family contribute to German industrialisation?\n3. What was the naval policy of Wilhelm II and what impact did it have on Europe?\n4. What role did Douglas Haig and/or Wilfred Owen play in World War I?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t3a-q1", topicId: "hist-lm-eur-3", conceptId: "who-accused-murdering-kirov",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 3 A Q1 — Deferred sitting",
+    stem: "This is an edited extract on Stalin’s show trials from the archives of the Communist Party of Great Britain. Read it and answer the questions which follow.\n\nThe first show trial, in August 1936, followed allegations that Kamenev, Zinoviev and others had organised Kirov’s murder. At the trial, Kamenev, Zinoviev and fourteen others were also accused of plotting against Stalin. All were shot on 24th August 1936.\nAt a second show trial, in January 1937, many accusations were made: sabotage; treasonable contact with Trotsky; plotting against party leaders; spying on behalf of Nazi Germany and more.\nThe final show trial – sometimes referred to as the ‘Great Purge Trial’ – took place in March 1938. The defendants were charged with plotting the break-up of the Soviet Union.",
+    questionText: "Who was accused of murdering Kirov?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kamenev, Zinoviev and others", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t3a-q2", topicId: "hist-lm-eur-3", conceptId: "crimes-defendants-second-show-trial-accused",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 3 A Q2 — Deferred sitting",
+    stem: "This is an edited extract on Stalin’s show trials from the archives of the Communist Party of Great Britain. Read it and answer the questions which follow.\n\nThe first show trial, in August 1936, followed allegations that Kamenev, Zinoviev and others had organised Kirov’s murder. At the trial, Kamenev, Zinoviev and fourteen others were also accused of plotting against Stalin. All were shot on 24th August 1936.\nAt a second show trial, in January 1937, many accusations were made: sabotage; treasonable contact with Trotsky; plotting against party leaders; spying on behalf of Nazi Germany and more.\nThe final show trial – sometimes referred to as the ‘Great Purge Trial’ – took place in March 1938. The defendants were charged with plotting the break-up of the Soviet Union.",
+    questionText: "What were two crimes that the defendants in the second show trial were accused of?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sabotage/treasonable contact with Trotsky/ plotting against party leaders/ spying for Nazi Germany", marks: 6, contextNote: "(Any two, 3M + 3M)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t3a-q3", topicId: "hist-lm-eur-3", conceptId: "third-show-trial-sometimes-known",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 3 A Q3 — Deferred sitting",
+    stem: "This is an edited extract on Stalin’s show trials from the archives of the Communist Party of Great Britain. Read it and answer the questions which follow.\n\nThe first show trial, in August 1936, followed allegations that Kamenev, Zinoviev and others had organised Kirov’s murder. At the trial, Kamenev, Zinoviev and fourteen others were also accused of plotting against Stalin. All were shot on 24th August 1936.\nAt a second show trial, in January 1937, many accusations were made: sabotage; treasonable contact with Trotsky; plotting against party leaders; spying on behalf of Nazi Germany and more.\nThe final show trial – sometimes referred to as the ‘Great Purge Trial’ – took place in March 1938. The defendants were charged with plotting the break-up of the Soviet Union.",
+    questionText: "What was the third show trial sometimes known as?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The “Great Purge Trial”", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t3a-q4", topicId: "hist-lm-eur-3", conceptId: "defendants-third-show-trial-accused",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 3 A Q4 — Deferred sitting",
+    stem: "This is an edited extract on Stalin’s show trials from the archives of the Communist Party of Great Britain. Read it and answer the questions which follow.\n\nThe first show trial, in August 1936, followed allegations that Kamenev, Zinoviev and others had organised Kirov’s murder. At the trial, Kamenev, Zinoviev and fourteen others were also accused of plotting against Stalin. All were shot on 24th August 1936.\nAt a second show trial, in January 1937, many accusations were made: sabotage; treasonable contact with Trotsky; plotting against party leaders; spying on behalf of Nazi Germany and more.\nThe final show trial – sometimes referred to as the ‘Great Purge Trial’ – took place in March 1938. The defendants were charged with plotting the break-up of the Soviet Union.",
+    questionText: "What were the defendants in the third show trial accused of?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Plotting the breakup of the Soviet Union", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t3a-q5", topicId: "hist-lm-eur-3", conceptId: "reason-ussr-victorious-world-war",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 3 A Q5 — Deferred sitting",
+    stem: "This is an edited extract on Stalin’s show trials from the archives of the Communist Party of Great Britain. Read it and answer the questions which follow.\n\nThe first show trial, in August 1936, followed allegations that Kamenev, Zinoviev and others had organised Kirov’s murder. At the trial, Kamenev, Zinoviev and fourteen others were also accused of plotting against Stalin. All were shot on 24th August 1936.\nAt a second show trial, in January 1937, many accusations were made: sabotage; treasonable contact with Trotsky; plotting against party leaders; spying on behalf of Nazi Germany and more.\nThe final show trial – sometimes referred to as the ‘Great Purge Trial’ – took place in March 1938. The defendants were charged with plotting the break-up of the Soviet Union.",
+    questionText: "Give one reason why the USSR was victorious in World War II.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t3b", topicId: "hist-lm-eur-3", conceptId: "vladimir-ilyich-lenin-church-relations-under",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 3 B — Deferred sitting",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "Write a short paragraph on one of the following:\n1. Vladimir Ilyich Lenin.\n2. Church-state relations under Mussolini.\n3. Wartime alliances, 1939-1945.\n4. The Holocaust, 1941-1945.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t3c", topicId: "hist-lm-eur-3", conceptId: "did-hitler-nazi-party-achieve-power",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 3 C — Deferred sitting",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "Answer one of the following:\n1. How did Hitler and the Nazi Party achieve power in Germany?\n2. What were the aims of the Jarrow March, October 1936, and were these aims achieved?\n3. What social and economic changes did Stalin bring about in Soviet Russia?\n4. What did Bing Crosby and/or Charlie Chaplin contribute to popular culture, 1920-1945?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t4a-q1", topicId: "hist-lm-eur-4", conceptId: "characteristics-life-germany-1946",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 4 A Q1 — Deferred sitting",
+    stem: "This is an edited extract from a report in The Irish Press (19/10/1946) from Douglas Gageby, an Irish journalist travelling in Germany. Read it and answer the questions which follow.\n\nTake a long ride on a German train and you see the hunger and dirt of life in Germany today. The burden of their daily problems is so great that German people have little time to think of anything but keeping alive, clothed and housed.\nI took such a journey. All around me hands were grasping into rucksacks and bags for food. Anyone who ate turned away from the envious and curious glances of the other passengers.\nAcross the way a man lit a cigar – a good thing, for people who can’t afford black market soap don’t smell well when packed tightly together.",
+    questionText: "What were characteristics of life in Germany in 1946?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hunger/dirt/Clothing/Housing/keeping alive", marks: 6, contextNote: "(Any two, 3M + 3M)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t4a-q2", topicId: "hist-lm-eur-4", conceptId: "basic-necessities-did-german-people-keep",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 4 A Q2 — Deferred sitting",
+    stem: "This is an edited extract from a report in The Irish Press (19/10/1946) from Douglas Gageby, an Irish journalist travelling in Germany. Read it and answer the questions which follow.\n\nTake a long ride on a German train and you see the hunger and dirt of life in Germany today. The burden of their daily problems is so great that German people have little time to think of anything but keeping alive, clothed and housed.\nI took such a journey. All around me hands were grasping into rucksacks and bags for food. Anyone who ate turned away from the envious and curious glances of the other passengers.\nAcross the way a man lit a cigar – a good thing, for people who can’t afford black market soap don’t smell well when packed tightly together.",
+    questionText: "What basic necessities did German people keep thinking of?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Keeping alive, clothed and housed", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t4a-q3", topicId: "hist-lm-eur-4", conceptId: "made-some-passengers-envious-curious",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 4 A Q3 — Deferred sitting",
+    stem: "This is an edited extract from a report in The Irish Press (19/10/1946) from Douglas Gageby, an Irish journalist travelling in Germany. Read it and answer the questions which follow.\n\nTake a long ride on a German train and you see the hunger and dirt of life in Germany today. The burden of their daily problems is so great that German people have little time to think of anything but keeping alive, clothed and housed.\nI took such a journey. All around me hands were grasping into rucksacks and bags for food. Anyone who ate turned away from the envious and curious glances of the other passengers.\nAcross the way a man lit a cigar – a good thing, for people who can’t afford black market soap don’t smell well when packed tightly together.",
+    questionText: "What made some passengers envious and curious?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Seeing other passengers with food", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t4a-q4", topicId: "hist-lm-eur-4", conceptId: "did-writer-react-fellow-passenger-cigar",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 4 A Q4 — Deferred sitting",
+    stem: "This is an edited extract from a report in The Irish Press (19/10/1946) from Douglas Gageby, an Irish journalist travelling in Germany. Read it and answer the questions which follow.\n\nTake a long ride on a German train and you see the hunger and dirt of life in Germany today. The burden of their daily problems is so great that German people have little time to think of anything but keeping alive, clothed and housed.\nI took such a journey. All around me hands were grasping into rucksacks and bags for food. Anyone who ate turned away from the envious and curious glances of the other passengers.\nAcross the way a man lit a cigar – a good thing, for people who can’t afford black market soap don’t smell well when packed tightly together.",
+    questionText: "How did the writer react to a fellow passenger’s cigar smoke?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Welcomed it (as it disguised the smell of unwashed bodies)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t4a-q5", topicId: "hist-lm-eur-4", conceptId: "way-germany-affected-cold-war",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 4 A Q5 — Deferred sitting",
+    stem: "This is an edited extract from a report in The Irish Press (19/10/1946) from Douglas Gageby, an Irish journalist travelling in Germany. Read it and answer the questions which follow.\n\nTake a long ride on a German train and you see the hunger and dirt of life in Germany today. The burden of their daily problems is so great that German people have little time to think of anything but keeping alive, clothed and housed.\nI took such a journey. All around me hands were grasping into rucksacks and bags for food. Anyone who ate turned away from the envious and curious glances of the other passengers.\nAcross the way a man lit a cigar – a good thing, for people who can’t afford black market soap don’t smell well when packed tightly together.",
+    questionText: "Briefly explain one way in which Germany was affected by the Cold War.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid way", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t4b", topicId: "hist-lm-eur-4", conceptId: "marshall-aid-moves-towards-european-unity",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 4 B — Deferred sitting",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Write a short paragraph on one of the following:\n1. Marshall Aid.\n2. Moves towards European unity, 1945-1957.\n3. The Second Vatican Council.\n4. Alexander Solzhenitsyn.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t4c", topicId: "hist-lm-eur-4", conceptId: "reasons-hungarian-uprising-1956-did-fail",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 4 C — Deferred sitting",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Answer one of the following:\n1. What were the reasons for the Hungarian Uprising, 1956, and why did it fail?\n2. How did the Oil Crisis, 1973, affect European economies?\n3. How successful was Margaret Thatcher as Prime Minister of Great Britain?\n4. What were key developments in youth and popular culture, 1945-1992?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,14] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t5a-q1", topicId: "hist-lm-eur-5", conceptId: "country-sukarno-attempting-gain-independence",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 5 A Q1 — Deferred sitting",
+    stem: "This edited extract concerns Achmad Sukarno. Read it and answer the questions which follow.\n\nSukarno was the leader of his country's struggle for independence from the Netherlands. He spent over a decade in Dutch detention until freed by the invading Japanese forces. On 17th August 1945, Sukarno declared Indonesian independence and became his country’s first president.\nA nation of 13,000 islands, Indonesia experienced significant religious, ethnic and regional differences. While this posed a constant threat to national unity, the country’s divisions made effective opposition to his leadership difficult.",
+    questionText: "From which country was Sukarno attempting to gain independence?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "From the Netherlands", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t5a-q2", topicId: "hist-lm-eur-5", conceptId: "who-released-sukarno-detention",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 5 A Q2 — Deferred sitting",
+    stem: "This edited extract concerns Achmad Sukarno. Read it and answer the questions which follow.\n\nSukarno was the leader of his country's struggle for independence from the Netherlands. He spent over a decade in Dutch detention until freed by the invading Japanese forces. On 17th August 1945, Sukarno declared Indonesian independence and became his country’s first president.\nA nation of 13,000 islands, Indonesia experienced significant religious, ethnic and regional differences. While this posed a constant threat to national unity, the country’s divisions made effective opposition to his leadership difficult.",
+    questionText: "Who released Sukarno from detention?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Japanese", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t5a-q3", topicId: "hist-lm-eur-5", conceptId: "when-did-sukarno-declare-indonesian-independence",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 5 A Q3 — Deferred sitting",
+    stem: "This edited extract concerns Achmad Sukarno. Read it and answer the questions which follow.\n\nSukarno was the leader of his country's struggle for independence from the Netherlands. He spent over a decade in Dutch detention until freed by the invading Japanese forces. On 17th August 1945, Sukarno declared Indonesian independence and became his country’s first president.\nA nation of 13,000 islands, Indonesia experienced significant religious, ethnic and regional differences. While this posed a constant threat to national unity, the country’s divisions made effective opposition to his leadership difficult.",
+    questionText: "When did Sukarno declare Indonesian independence?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "17th August, 1945", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t5a-q4", topicId: "hist-lm-eur-5", conceptId: "threat-national-unity",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 5 A Q4 — Deferred sitting",
+    stem: "This edited extract concerns Achmad Sukarno. Read it and answer the questions which follow.\n\nSukarno was the leader of his country's struggle for independence from the Netherlands. He spent over a decade in Dutch detention until freed by the invading Japanese forces. On 17th August 1945, Sukarno declared Indonesian independence and became his country’s first president.\nA nation of 13,000 islands, Indonesia experienced significant religious, ethnic and regional differences. While this posed a constant threat to national unity, the country’s divisions made effective opposition to his leadership difficult.",
+    questionText: "What was one threat to national unity?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Religious/ethnic/regional differences", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t5a-q5", topicId: "hist-lm-eur-5", conceptId: "aim-lom-conventions",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 5 A Q5 — Deferred sitting",
+    stem: "This edited extract concerns Achmad Sukarno. Read it and answer the questions which follow.\n\nSukarno was the leader of his country's struggle for independence from the Netherlands. He spent over a decade in Dutch detention until freed by the invading Japanese forces. On 17th August 1945, Sukarno declared Indonesian independence and became his country’s first president.\nA nation of 13,000 islands, Indonesia experienced significant religious, ethnic and regional differences. While this posed a constant threat to national unity, the country’s divisions made effective opposition to his leadership difficult.",
+    questionText: "What was the aim of the Lomé Conventions?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To improve trade/provide aid between Europe and former colonies.", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t5b", topicId: "hist-lm-eur-5", conceptId: "julius-nyerere-policy-ujamaa-david-ben",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 5 B — Deferred sitting",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "Write a short paragraph on one of the following:\n1. Julius Nyerere and the policy of ujamaa.\n2. David Ben-Gurion.\n3. Ho Chi Minh.\n4. English as a world language.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t5c", topicId: "hist-lm-eur-5", conceptId: "did-british-withdraw-india-1947-impact",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 5 C — Deferred sitting",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "Answer one of the following:\n1. Why did the British withdraw from India in 1947, and what was the impact of the withdrawal on India?\n2. What caused Katanga to secede from the Congo and how did this affect the Congo?\n3. What challenges did France experience in race relations in the 1980s and how successfully were they dealt with?\n4. What were the main problems faced by development workers in Africa?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,14] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t6a-q1", topicId: "hist-lm-eur-6", conceptId: "purpose-strategic-defence-initiative",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 6 A Q1 — Deferred sitting",
+    stem: "This edited extract refers to President Ronald Reagan’s “Star Wars”. Read it and answer the questions which follow.\n\nIn 1983, President Reagan proposed a Strategic Defence Initiative [SDI]: a space-based, computer-controlled defence that would shoot down nuclear missiles before they reached their targets.\nPentagon advisers and most American scientists were against “Star Wars”, as the proposal was named. It was feared that it would worsen, not improve, relations between the US and the Soviet Union.\nNor were critics reassured when it was suggested that Reagan might have stolen the idea from his 1940 film, “Murder in the Air”, in which an imaginary “inertia projector” shot down enemy planes.",
+    questionText: "What was the purpose of the Strategic Defence Initiative?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It would shoot down nuclear missiles before they reached their target", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t6a-q2", topicId: "hist-lm-eur-6", conceptId: "did-strategic-defence-initiative-sdi-become",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 6 A Q2 — Deferred sitting",
+    stem: "This edited extract refers to President Ronald Reagan’s “Star Wars”. Read it and answer the questions which follow.\n\nIn 1983, President Reagan proposed a Strategic Defence Initiative [SDI]: a space-based, computer-controlled defence that would shoot down nuclear missiles before they reached their targets.\nPentagon advisers and most American scientists were against “Star Wars”, as the proposal was named. It was feared that it would worsen, not improve, relations between the US and the Soviet Union.\nNor were critics reassured when it was suggested that Reagan might have stolen the idea from his 1940 film, “Murder in the Air”, in which an imaginary “inertia projector” shot down enemy planes.",
+    questionText: "What did the Strategic Defence Initiative (SDI) become known as?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "“Star Wars”", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t6a-q3", topicId: "hist-lm-eur-6", conceptId: "advisers-scientists-against-strategic-defence-initiative",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 6 A Q3 — Deferred sitting",
+    stem: "This edited extract refers to President Ronald Reagan’s “Star Wars”. Read it and answer the questions which follow.\n\nIn 1983, President Reagan proposed a Strategic Defence Initiative [SDI]: a space-based, computer-controlled defence that would shoot down nuclear missiles before they reached their targets.\nPentagon advisers and most American scientists were against “Star Wars”, as the proposal was named. It was feared that it would worsen, not improve, relations between the US and the Soviet Union.\nNor were critics reassured when it was suggested that Reagan might have stolen the idea from his 1940 film, “Murder in the Air”, in which an imaginary “inertia projector” shot down enemy planes.",
+    questionText: "Why were US advisers and scientists against the Strategic Defence Initiative?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The feared it would worsen relations with the Soviet Union", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t6a-q4", topicId: "hist-lm-eur-6", conceptId: "where-allegedly-did-president-reagan-get",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 6 A Q4 — Deferred sitting",
+    stem: "This edited extract refers to President Ronald Reagan’s “Star Wars”. Read it and answer the questions which follow.\n\nIn 1983, President Reagan proposed a Strategic Defence Initiative [SDI]: a space-based, computer-controlled defence that would shoot down nuclear missiles before they reached their targets.\nPentagon advisers and most American scientists were against “Star Wars”, as the proposal was named. It was feared that it would worsen, not improve, relations between the US and the Soviet Union.\nNor were critics reassured when it was suggested that Reagan might have stolen the idea from his 1940 film, “Murder in the Air”, in which an imaginary “inertia projector” shot down enemy planes.",
+    questionText: "Where, allegedly, did President Reagan get the idea for the Strategic Defence Initiative?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A 1940 film, “Murder in the Air”", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t6a-q5", topicId: "hist-lm-eur-6", conceptId: "other-contribution-made-president-reagan-cold",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 6 A Q5 — Deferred sitting",
+    stem: "This edited extract refers to President Ronald Reagan’s “Star Wars”. Read it and answer the questions which follow.\n\nIn 1983, President Reagan proposed a Strategic Defence Initiative [SDI]: a space-based, computer-controlled defence that would shoot down nuclear missiles before they reached their targets.\nPentagon advisers and most American scientists were against “Star Wars”, as the proposal was named. It was feared that it would worsen, not improve, relations between the US and the Soviet Union.\nNor were critics reassured when it was suggested that Reagan might have stolen the idea from his 1940 film, “Murder in the Air”, in which an imaginary “inertia projector” shot down enemy planes.",
+    questionText: "What was one other contribution made by President Reagan to the Cold War?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid contribution", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t6b", topicId: "hist-lm-eur-6", conceptId: "mccarthyism-marilyn-monroe-economic-boom-1945",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 6 B — Deferred sitting",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. McCarthyism.\n2. Marilyn Monroe.\n3. The economic boom, 1945-1968.\n4. Billy Graham.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[28], schemePages: [9,10,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-s3t6c", topicId: "hist-lm-eur-6", conceptId: "president-harry-truman-achievements-home-abroad",
+    section: "3", questionRef: "2023 OL Later Modern Section 3 Topic 6 C — Deferred sitting",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "Answer one of the following:\n1. What were President Harry Truman’s achievements, at home and abroad?\n2. What role did Martin Luther King play in the Montgomery bus boycott and the civil rights movement?\n3. Why did Lyndon Johnson increase US involvement in the Vietnam War and how did the war affect his presidency?\n4. How did the US achieve a moon landing in 1969, and what was its significance?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[29], schemePages: [9,10,14] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-extra-a-q1", topicId: "hist-lm-irl-5", conceptId: "did-uwc-plan-bring-northern-ireland",
+    section: "2", questionRef: "2023 OL Later Modern Section Extra A Q1 — Deferred sitting",
+    stem: "This is an edited extract from BBC reporter Don Anderson’s book on the 1974 Ulster Workers’ Council (UWC) strike. Read it and answer the questions which follow.\n\nThe UWC planned to bring Northern Ireland to a halt unless the power-sharing Executive and the Sunningdale Agreement were removed. They used electricity supply as a political weapon.\nThe strike began on 14th May 1974. By the third day, electricity supply was reduced to 60% of normal. Engineering was the hardest hit sector, but farming was also very dependent on electricity.\nEgg, pig, poultry and milk producers were in trouble by the second day. Dairies did not have enough power to sterilise bottles and milkmen were being intimidated off the streets. In some cases, milk floats [vans] were hijacked to form barricades and the milk was stolen.",
+    questionText: "Why did the UWC plan to bring Northern Ireland to a halt?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To get the power-sharing Executive and the Sunningdale Agreement removed", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-extra-a-q2", topicId: "hist-lm-irl-5", conceptId: "used-political-weapon-uwc",
+    section: "2", questionRef: "2023 OL Later Modern Section Extra A Q2 — Deferred sitting",
+    stem: "This is an edited extract from BBC reporter Don Anderson’s book on the 1974 Ulster Workers’ Council (UWC) strike. Read it and answer the questions which follow.\n\nThe UWC planned to bring Northern Ireland to a halt unless the power-sharing Executive and the Sunningdale Agreement were removed. They used electricity supply as a political weapon.\nThe strike began on 14th May 1974. By the third day, electricity supply was reduced to 60% of normal. Engineering was the hardest hit sector, but farming was also very dependent on electricity.\nEgg, pig, poultry and milk producers were in trouble by the second day. Dairies did not have enough power to sterilise bottles and milkmen were being intimidated off the streets. In some cases, milk floats [vans] were hijacked to form barricades and the milk was stolen.",
+    questionText: "What was used as a political weapon by the UWC?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Electricity supply", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-extra-a-q3", topicId: "hist-lm-irl-5", conceptId: "sectors-economy-hardest-hit",
+    section: "2", questionRef: "2023 OL Later Modern Section Extra A Q3 — Deferred sitting",
+    stem: "This is an edited extract from BBC reporter Don Anderson’s book on the 1974 Ulster Workers’ Council (UWC) strike. Read it and answer the questions which follow.\n\nThe UWC planned to bring Northern Ireland to a halt unless the power-sharing Executive and the Sunningdale Agreement were removed. They used electricity supply as a political weapon.\nThe strike began on 14th May 1974. By the third day, electricity supply was reduced to 60% of normal. Engineering was the hardest hit sector, but farming was also very dependent on electricity.\nEgg, pig, poultry and milk producers were in trouble by the second day. Dairies did not have enough power to sterilise bottles and milkmen were being intimidated off the streets. In some cases, milk floats [vans] were hijacked to form barricades and the milk was stolen.",
+    questionText: "What two sectors of the economy were hardest hit?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Engineering and farming", marks: 6, contextNote: "(3M + 3M)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-extra-a-q4", topicId: "hist-lm-irl-5", conceptId: "milk-production-affected-uwc-strike",
+    section: "2", questionRef: "2023 OL Later Modern Section Extra A Q4 — Deferred sitting",
+    stem: "This is an edited extract from BBC reporter Don Anderson’s book on the 1974 Ulster Workers’ Council (UWC) strike. Read it and answer the questions which follow.\n\nThe UWC planned to bring Northern Ireland to a halt unless the power-sharing Executive and the Sunningdale Agreement were removed. They used electricity supply as a political weapon.\nThe strike began on 14th May 1974. By the third day, electricity supply was reduced to 60% of normal. Engineering was the hardest hit sector, but farming was also very dependent on electricity.\nEgg, pig, poultry and milk producers were in trouble by the second day. Dairies did not have enough power to sterilise bottles and milkmen were being intimidated off the streets. In some cases, milk floats [vans] were hijacked to form barricades and the milk was stolen.",
+    questionText: "How was milk production affected by the UWC strike?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bottles could not be sterilised/milkmen were being intimidated off the streets/milk floats were hijacked/milk was stolen", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC004GLP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-ol-deferred-lm-extra-a-q5", topicId: "hist-lm-irl-5", conceptId: "brought-end-uwc-strike",
+    section: "2", questionRef: "2023 OL Later Modern Section Extra A Q5 — Deferred sitting",
+    stem: "This is an edited extract from BBC reporter Don Anderson’s book on the 1974 Ulster Workers’ Council (UWC) strike. Read it and answer the questions which follow.\n\nThe UWC planned to bring Northern Ireland to a halt unless the power-sharing Executive and the Sunningdale Agreement were removed. They used electricity supply as a political weapon.\nThe strike began on 14th May 1974. By the third day, electricity supply was reduced to 60% of normal. Engineering was the hardest hit sector, but farming was also very dependent on electricity.\nEgg, pig, poultry and milk producers were in trouble by the second day. Dairies did not have enough power to sterilise bottles and milkmen were being intimidated off the streets. In some cases, milk floats [vans] were hijacked to form barricades and the milk was stolen.",
+    questionText: "What brought about the end of the UWC strike?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The resignation of Brian Faulkner/collapse of the power-sharing Executive", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2023 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
   } as SecCard,

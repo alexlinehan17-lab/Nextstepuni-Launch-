@@ -26,7 +26,7 @@ import { execFileSync } from 'node:child_process';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { resolvePaperFileid, resolveCompanionFileid, corpusSubjectFor, paperEntry } from './paperIndex.mjs';
+import { resolvePaperFileid, resolveCompanionFileid, corpusSubjectFor, paperEntry, deferredPaperEntry } from './paperIndex.mjs';
 import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
@@ -678,8 +678,16 @@ const LEVELS = ['higher', 'ordinary', 'common'];
 const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl' };
 const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' };
 
+/* A History card from the SEC's deferred sitting ("hist-2023-hl-deferred-lm-
+ * s1-q1a", cited "... — Deferred sitting"): its own paper, scheme and index
+ * entry. Physics, Home Economics and Maths mark theirs the same way on
+ * codex/home-economics-continuation-20261101. */
+const historyDeferred = (subjectId, card) =>
+  subjectId === 'history' && /^hist-\d{4}-(?:hl|ol)-deferred-/.test(String(card?.id ?? ''));
+
 function schemeFor(subjectId, card) {
-  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}`;
+  const deferred = historyDeferred(subjectId, card);
+  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${deferred ? '-deferred' : ''}`;
   const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
   if (!schemeCache.has(file)) {
     const raw = existsSync(file) ? readFileSync(file, 'utf8') : '';
@@ -1424,10 +1432,13 @@ for (const c of cards) {
     repairGlyphs(c);
     const mangled = mangledText(c);
     if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
-    const fileid = resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
+    const deferredEntry = historyDeferred(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, c.year, c.level) : null;
+    const fileid = deferredEntry
+      ? String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null
+      : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), c.year, c.level, c.section);
     if (!fileid) unresolvedPapers++;
     // ONE scheme answers both fields of study, indexed under History itself.
-    const schemeFile = paperEntry(SUBJECT_ID, c.year, c.level)?.papers?.find(p => p.scheme?.f)?.scheme?.f;
+    const schemeFile = (deferredEntry ?? paperEntry(SUBJECT_ID, c.year, c.level))?.papers?.find(p => p.scheme?.f)?.scheme?.f;
     if (!schemeFile) { dropped.push(`${c.id}: no scheme document in the Paper Trail index`); continue; }
     const rubric = { ...c.rubric, schemeFileid: String(schemeFile).replace(/\.pdf$/i, '') };
     /* A sitting's marking by paragraph is the same for every essay on it
@@ -1448,7 +1459,7 @@ for (const c of cards) {
     ...base, kind: "rubric",
     year: ${c.year}, level: ${q(c.level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
-    schemeCitation: ${q(`Marking ${c.rubric.cm.mode === 'core-statement' ? 'by Core Statement' : 'by paragraph'} quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level — © State Examinations Commission.`)},
+    schemeCitation: ${q(`Marking ${c.rubric.cm.mode === 'core-statement' ? 'by Core Statement' : 'by paragraph'} quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level${deferredEntry ? ', deferred examination' : ''} — © State Examinations Commission.`)},
     id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},
@@ -1727,15 +1738,17 @@ for (const c of cards) {
   /* History is examined in two FIELDS OF STUDY, printed as separate papers a
    * candidate chooses between, and Paper Trail indexes them as two subjects.
    * corpusSubjectFor reads the field out of the citation; see paperIndex.mjs. */
-  const fileid = resolvePaperFileid(
-    corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
+  const deferredEntry = historyDeferred(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, year, level) : null;
+  const fileid = deferredEntry
+    ? String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null
+    : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
   out.push({ id: c.id, level, code: `  {
     ...base,${c.qa ? ` qa: ${JSON.stringify(c.qa)},` : ''}${c.curriculumNodeIds ? `\n    ...examCardCurriculum(${q(SUBJECT_ID)}, ${year}, ${JSON.stringify(c.curriculumNodeIds)}),` : ''} kind: ${q(labelKey ? 'diagram' : 'question')},
     year: ${year}, level: ${q(level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
-    schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level — © State Examinations Commission.`)},
+    schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry ? ', deferred examination' : ''} — © State Examinations Commission.`)},
     id: ${q(c.id)}, topicId: ${q(c.topicId)},${c.additionalTopicIds?.length ? ` additionalTopicIds: ${JSON.stringify(c.additionalTopicIds)},` : ''} conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},

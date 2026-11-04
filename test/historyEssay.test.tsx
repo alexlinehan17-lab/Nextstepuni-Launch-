@@ -37,7 +37,7 @@ vi.mock('../components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new
 
 type EssayCard = SecRubricCard & { rubric: HistoryEssayRubric };
 /** The papers whose essays are carded so far (lane batch 2 adds one sitting a commit). */
-const CARDED_ESSAY_PAPERS = ['2010 higher em', '2010 higher lm', '2010 ordinary em', '2010 ordinary lm', '2011 higher em', '2011 higher lm', '2011 ordinary em', '2011 ordinary lm', '2012 higher em', '2012 higher lm', '2012 ordinary em', '2012 ordinary lm', '2013 higher em', '2013 higher lm', '2013 ordinary em', '2013 ordinary lm', '2014 higher em', '2014 higher lm', '2014 ordinary em', '2014 ordinary lm', '2015 higher em', '2015 higher lm', '2015 ordinary em', '2015 ordinary lm', '2016 higher em', '2016 higher lm', '2016 ordinary em', '2016 ordinary lm', '2017 higher em', '2017 higher lm', '2017 ordinary em', '2017 ordinary lm', '2018 higher em', '2018 higher lm', '2018 ordinary em', '2018 ordinary lm', '2019 higher em', '2019 higher lm', '2019 ordinary em', '2019 ordinary lm', '2020 higher lm', '2020 ordinary lm', '2021 higher em', '2021 higher lm', '2021 ordinary em', '2021 ordinary lm', '2022 higher em', '2022 higher lm', '2022 ordinary em', '2022 ordinary lm', '2023 higher em', '2023 higher lm', '2023 ordinary em', '2023 ordinary lm', '2024 higher em', '2024 higher lm', '2024 ordinary em', '2024 ordinary lm', '2025 higher em', '2025 higher lm', '2025 ordinary em', '2025 ordinary lm', '2026 higher em', '2026 higher lm', '2026 ordinary em', '2026 ordinary lm'];
+const CARDED_ESSAY_PAPERS = ['2010 higher em', '2010 higher lm', '2010 ordinary em', '2010 ordinary lm', '2011 higher em', '2011 higher lm', '2011 ordinary em', '2011 ordinary lm', '2012 higher em', '2012 higher lm', '2012 ordinary em', '2012 ordinary lm', '2013 higher em', '2013 higher lm', '2013 ordinary em', '2013 ordinary lm', '2014 higher em', '2014 higher lm', '2014 ordinary em', '2014 ordinary lm', '2015 higher em', '2015 higher lm', '2015 ordinary em', '2015 ordinary lm', '2016 higher em', '2016 higher lm', '2016 ordinary em', '2016 ordinary lm', '2017 higher em', '2017 higher lm', '2017 ordinary em', '2017 ordinary lm', '2018 higher em', '2018 higher lm', '2018 ordinary em', '2018 ordinary lm', '2019 higher em', '2019 higher lm', '2019 ordinary em', '2019 ordinary lm', '2020 higher lm', '2020 ordinary lm', '2021 higher em', '2021 higher lm', '2021 ordinary em', '2021 ordinary lm', '2022 higher em', '2022 higher lm', '2022 higher lm deferred', '2022 ordinary em', '2022 ordinary lm', '2022 ordinary lm deferred', '2023 higher em', '2023 higher lm', '2023 higher lm deferred', '2023 ordinary em', '2023 ordinary lm', '2023 ordinary lm deferred', '2024 higher em', '2024 higher lm', '2024 ordinary em', '2024 ordinary lm', '2025 higher em', '2025 higher lm', '2025 ordinary em', '2025 ordinary lm', '2026 higher em', '2026 higher lm', '2026 ordinary em', '2026 ordinary lm'];
 const essays = [...HISTORY_HIGHER, ...HISTORY_ORDINARY]
   .filter((card): card is EssayCard => isRubricCard(card) && card.rubric.system === 'history-essay');
 const byId = (id: string) => essays.find(card => card.id === id)!;
@@ -57,7 +57,7 @@ describe('the shipped History essay cards', () => {
   it('cards every essay of each carded paper: Higher 44 essays + Q4, Ordinary parts B and C + Q4', () => {
     const byPaper = new Map<string, EssayCard[]>();
     for (const card of essays) {
-      const paper = `${card.year} ${card.level} ${/Early Modern/.test(card.questionRef) ? 'em' : 'lm'}`;
+      const paper = `${card.year} ${card.level} ${/Early Modern/.test(card.questionRef) ? 'em' : 'lm'}${card.id.includes('-deferred-') ? ' deferred' : ''}`;
       byPaper.set(paper, [...(byPaper.get(paper) ?? []), card]);
     }
     expect([...byPaper.keys()].sort()).toEqual(CARDED_ESSAY_PAPERS);
@@ -110,7 +110,8 @@ describe('the shipped History essay cards', () => {
     expect(famine.rubric.schemeGuidance.join(' ')).toMatch(/^To mark the answer, the examiner will approach the material with an open mind as to the range of valid answers/);
     for (const card of essays) {
       expect(JSON.stringify(card.rubric)).not.toContain(HISTORY_ESSAY_NO_MODEL_ANSWER);
-      expect(card.rubric.schemeFileid).toBe(card.level === 'higher' ? 'LC004ALP000EV' : 'LC004GLP000EV');
+      // A deferred sitting's essays open its own scheme, indexed beside June's.
+      expect(card.rubric.schemeFileid).toBe(`${card.level === 'higher' ? 'LC004ALP000EV' : 'LC004GLP000EV'}${card.id.includes('-deferred-') ? '-deferred' : ''}`);
     }
   });
 });

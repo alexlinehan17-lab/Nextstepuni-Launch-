@@ -91,7 +91,7 @@ def _note(row, extra):
 # valid aims of the Apprentice Boys of Derry 3M x 2", "Any TWO countries
 # invaded by Napoleon 3M + 3M" (2013-2019 Ordinary, (6)). The count is in
 # capitals, as the scheme prints it.
-COUNTED = re.compile(r'\b(?-i:(TWO|THREE|FOUR))\b')
+COUNTED = re.compile(r'\b(?:(?-i:(TWO|THREE|FOUR))|(?<=Any )(two|three|four))\b')
 PER_EACH = re.compile(r'@\s*(\d+)\s*M\b', re.I)
 PER_TIMES = re.compile(r'\b(\d+)\s*M\s*x\s*(\d+)\b', re.I)
 PER_PLUS = re.compile(r'\b(\d+)\s*M?(?:\s*\+\s*(\d+)\s*M?)+\b', re.I)
@@ -141,7 +141,7 @@ def step_counted(card):
     count = COUNTED.search(text)
     if not count:
         return card
-    n = WORDS[count.group(1).lower()]
+    n = WORDS[(count.group(1) or count.group(2)).lower()]
     each = PER_EACH.search(text)
     times = PER_TIMES.search(text)
     plus = PER_PLUS.search(text[count.end():])

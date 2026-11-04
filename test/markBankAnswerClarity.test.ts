@@ -481,10 +481,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => row.kind === 'point' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
     // "… 5M + 5M Max =" left on a row by the tariff reader: the printed split is the row's note now.
     expect(rows.filter(({ row }) => /\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=\s*$/i.test(row.verbatim)).map(({ card }) => card.id)).toEqual([]);
-    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(24);
+    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(26);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(183);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(189);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['A new life', 'Better wages', 'Better work standards'],
@@ -542,6 +542,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Any TWO of Beethoven’s compositions 3 + 3', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO valid aims from the war @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO valid aims of the Geraldine League (3M x 2)', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Any two valid countries of destination (3M + 3M)', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['As a colonist: Spenser considers the bardic poets a threat to the security of the colony because they encourage young men to admire the disobedient and rebellious He is very judgemental about the bards and their poems which gives the impression that, as a colonist, he is culturally superior', 5, [0, 1, 2, 3, 4, 5], undefined],
       ['BBC (1) were very much in favour of the strike (2) did not monitor NI broadcasts (3) did not know what was going on (4) were effectively running a rebel radio station', 10, [0, 5, 10], undefined],
       ['Battleship/ Warship', 6, [0, 3, 6], 'Ship = 3M'],
@@ -552,7 +553,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Cusack was its founder/ One of its first Secretaries', 6, [0, 3, 6], 'Supporter ONLY = 3M'],
       ['Do the documents agree about Irish attitudes to divorce? Yes or no, with supporting points from each document.', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Do the documents agree about Irish attitudes to marriage? Yes or no, with supporting points from each document.', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
-      ['Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one Document B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state Catholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive” The intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], undefined],
+      ['Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one\nDocument B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state\nCatholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive”\nThe intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], undefined],
       ['Document A does not support the claim: Faulkner went by helicopter because he couldn’t travel by road to Stormont He could see evidence of paramilitary activity on the ground from his helicopter There were even barricades at Dundonald House in Stormont itself That barricade reappeared only an hour after it had been removed', 5, [0, 1, 2, 3, 4, 5], undefined],
       ['Document A is a primary source because it is from a memoir/autobiography where the writer is remembering herself as a little girl witnessing the events from eighty years earlier.', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], undefined],
       ['Document B They enjoy a great reputation among the people Their verses are taken up with general applause They glorify wrongdoers and so apparently earn respect', 5, [0, 1, 2, 3, 4, 5], undefined],
@@ -630,13 +631,19 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     ]);
     expect(rows.filter(({ row }) => row.route).map(({ card }) => card.id)).toEqual(Array(4).fill('hist-2013-ol-em-s2t6a-q4'));
     // A verdict printed unstopped over its first reason ("Document A or B or both" / "Document A states ...")
-    // keeps its own line in the row, so the two never read as one sentence.
+    // keeps its own line in the row, so the two never read as one sentence; so does one document's point run
+    // unstopped into the next ("... in document A Document B states ...", hist_all.document_lines).
     expect(rows.filter(({ row }) => row.verbatim.includes('\n')).map(({ card }) => card.id).sort()).toEqual([
+      'hist-2010-hl-lm-s1-q2b',
       'hist-2011-hl-em-s1-q2a',
       'hist-2011-hl-em-s1-q2b',
       'hist-2011-hl-em-s1-q3b',
+      'hist-2011-hl-lm-s1-q2a',
+      'hist-2011-hl-lm-s1-q3a',
       'hist-2011-ol-em-s1-q3b',
       'hist-2012-hl-em-s1-q2b',
+      'hist-2012-hl-em-s1-q3a',
+      'hist-2012-hl-lm-s1-q2a',
       'hist-2012-hl-lm-s1-q2a',
       'hist-2012-ol-em-s1-q2a',
       'hist-2012-ol-em-s1-q2b',
@@ -646,7 +653,12 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       'hist-2013-ol-em-s1-q2a',
       'hist-2013-ol-em-s1-q2b',
       'hist-2014-ol-em-s1-q2b',
+      'hist-2015-hl-em-s1-q2b',
+      'hist-2015-ol-em-s1-q2b',
       'hist-2016-hl-lm-s1-q2a',
+      'hist-2016-hl-lm-s1-q3b',
+      'hist-2016-ol-em-s1-q2a',
+      'hist-2023-ol-deferred-lm-s1-q2b',
     ]);
     // Where the closing prices the verdict, it is a row at its price: "Doc A and a valid reason 5M + 5M Max = 10M",
     // "2M + 4M + 4M Max = 10M" (2025 OL).
