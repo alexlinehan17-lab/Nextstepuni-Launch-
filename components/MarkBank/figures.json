@@ -50921,5 +50921,111 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-scheme-q3bi-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-scheme-q3bi-sol.png",
+  "md5": "6e60d9a1b09c5b8afe3fb2692261060b",
+  "alt": "The marking scheme's printed answer for 2021 HL Q3(b)(i), as the State Examinations Commission set it. It reads: 400 (N/mm2) 350 Stress 300 250 200 150 100 50 0 1 2 3 4 5 6 7 8 Strain (×1000).",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q3(b)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-scheme-q3biii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-scheme-q3biii-sol.png",
+  "md5": "3bd94dab1015b5008e0503945e72acbf",
+  "alt": "The marking scheme's printed answer for 2021 HL Q3(b)(iii), as the State Examinations Commission set it. It reads: Young’s modulus = stress = 260 = 87 N/mm² strain 3.0.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q3(b)(iii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-scheme-q5bi-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-scheme-q5bi-sol.png",
+  "md5": "b37a0b8679147841594c0065eb31d8f0",
+  "alt": "The marking scheme's printed answer for 2021 HL Q5(b)(i), as the State Examinations Commission set it. It reads: C) Liquidus Line ( 300 - Eutectic Point 75% Temperature A B C 200 - 200°C Solidus Line 100 - % Cadmium 0 10 20 30 40 50 60 70 80 90 100.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q5(b)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-scheme-q5bii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-scheme-q5bii-sol.png",
+  "md5": "766252a6e63e08fa235295d6ec16af74",
+  "alt": "The marking scheme's printed answer for 2021 HL Q5(b)(ii), as the State Examinations Commission set it. It reads: Ratio of Liquid to solid = |AB| = 75 – 52 = 23 |BC| 100 - 75 25.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q5(b)(ii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-scheme-q5biii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-scheme-q5biii-sol.png",
+  "md5": "0666d89e5cc60be1dc1869b040de5b7f",
+  "alt": "The marking scheme's printed answer for 2021 HL Q5(b)(iii), as the State Examinations Commission set it. It reads: Start of Solidification 205 °C End of Solidification 140 °C Temperature Time.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q5(b)(iii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-scheme-q7ci-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-scheme-q7ci-sol.png",
+  "md5": "365f5cc0fb5b29294cca51e8add3ee61",
+  "alt": "The marking scheme's printed answer for 2021 HL Q7(c)(i), as the State Examinations Commission set it. It reads: Air in 1. Parison 2. Clamping 3. Moulding 4. Finished bottle.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q7(c)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-scheme-q9aii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-scheme-q9aii-sol.png",
+  "md5": "68638462f6ba85df3bd6067df0ccc0ce",
+  "alt": "The marking scheme's printed answer for 2021 HL Q9(a)(ii), as the State Examinations Commission set it. It reads: platform scissor arms hydraulic cylinders rise and lower scissors mechanism.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q9(a)(ii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-paper-q9bii-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q9bii-crop.png",
+  "md5": "e78f3425229b6f6ad518c15563c1d0f2",
+  "alt": "The table or diagram printed with 2021 HL Q9(b)(ii), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q9(b)(ii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2021-HL-paper-q5b-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q5b-crop.png",
+  "md5": "d072313f46bd097991ecdd4658a29dc9",
+  "alt": "The table or diagram printed with 2021 HL Q5(b), as the State Examinations Commission set it. It reads: (b) The table shows the solidification temperatures for various alloys of Cadmium and Bismuth. The melting temperature of Bismuth is 268°C and the melting temperature of Cadmium is 321°C. % of Cadmium in alloy 10 20 30 40 50 60 70 80 90 Start of solidification (°C) 237 205 175 140 190 235 265 290 310 End of solidification (°C) 140 140 140 140 140 140 140 140 140.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q5(b)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
  }
 }

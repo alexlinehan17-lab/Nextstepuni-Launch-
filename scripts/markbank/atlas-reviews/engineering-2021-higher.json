@@ -1,0 +1,787 @@
+{
+ "schemaVersion": 1,
+ "subjectId": "engineering",
+ "year": 2021,
+ "level": "higher",
+ "lang": "ev",
+ "sitting": "main",
+ "paperKey": "single",
+ "reviewedAt": "2026-11-04",
+ "authoringReview": "scripts/markbank/authoring/eng_residue/y2021_hl.py",
+ "sourceHashes": {
+  "paper-trail-corpus/exampapers/2021/LC027ALP000EV.pdf": "0529cbaccaca4bdbbdb1ba69b242667486fae3f00c93ee1945e39ba9129c150a",
+  "paper-trail-corpus/markingschemes/2021/LC027ALP000EV.pdf": "f4261b8c201f2d7dd2cff381302cc7c13e2876a31b2a60cf098b74287768adb8"
+ },
+ "expectedRuntimeCards": 83,
+ "reason": "2021 Higher main English written paper: every one of the 83 Mark Bank cards bound to its printed question and to the Atlas topics whose syllabus headings include the card's own; 2 bound under a topic the reference did not give the question, each with its review.",
+ "questions": [
+  {
+   "n": "1",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-corrosion-of-metals",
+    "engineering-higher-graphics-and-design",
+    "engineering-higher-inventors-and-engineers-in-society",
+    "engineering-higher-machining-metrology",
+    "engineering-higher-materials-properties-and-uses",
+    "engineering-higher-pneumatics",
+    "engineering-higher-polymers",
+    "engineering-higher-testing-of-materials-and-products",
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "n": "2",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ]
+  },
+  {
+   "n": "3",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "n": "4",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-equilibrium-diagrams",
+    "engineering-higher-heat-treatment",
+    "engineering-higher-metallurgy"
+   ]
+  },
+  {
+   "n": "5",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-equilibrium-diagrams",
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "n": "6",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "n": "7",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "n": "8",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-machining-metrology",
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "n": "9",
+   "fileid": "LC027ALP000EV.pdf",
+   "topicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms"
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "cardId": "eng-2021-hl-q1-a",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-graphics-and-design",
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q1-b",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q1-c",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q1-d",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q1-e",
+   "markBankTopicId": "eng-1-5",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q1-f",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-pneumatics"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q1-g",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-graphics-and-design",
+    "engineering-higher-inventors-and-engineers-in-society"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q1-h",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q1-i",
+   "markBankTopicId": "eng-1-5",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q1-j",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-graphics-and-design"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q1-k",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q1-l",
+   "markBankTopicId": "eng-3-7",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-corrosion-of-metals"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q1-m",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "1",
+   "atlasTopicIds": [
+    "engineering-higher-materials-properties-and-uses"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q2-a-i",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Hybrid vehicle technology. The reference files 2021 Higher Q2 under Energy, Electronics & Robotics, where hybrid drive belongs; the card's syllabus heading is Technology, where the syllabus lists hybrid vehicles."
+  },
+  {
+   "cardId": "eng-2021-hl-q2-a-ii",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Hybrid vehicle technology. The reference files 2021 Higher Q2 under Energy, Electronics & Robotics, where hybrid drive belongs; the card's syllabus heading is Technology, where the syllabus lists hybrid vehicles."
+  },
+  {
+   "cardId": "eng-2021-hl-q2-b-i",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Hybrid vehicle technology. The reference files 2021 Higher Q2 under Energy, Electronics & Robotics, where hybrid drive belongs; the card's syllabus heading is Technology, where the syllabus lists hybrid vehicles."
+  },
+  {
+   "cardId": "eng-2021-hl-q2-b-ii",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Hybrid vehicle technology. The reference files 2021 Higher Q2 under Energy, Electronics & Robotics, where hybrid drive belongs; the card's syllabus heading is Technology, where the syllabus lists hybrid vehicles."
+  },
+  {
+   "cardId": "eng-2021-hl-q2-b-iii",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Hybrid vehicle technology. The reference files 2021 Higher Q2 under Energy, Electronics & Robotics, where hybrid drive belongs; the card's syllabus heading is Technology, where the syllabus lists hybrid vehicles."
+  },
+  {
+   "cardId": "eng-2021-hl-q2-c",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Hybrid vehicle technology. The reference files 2021 Higher Q2 under Energy, Electronics & Robotics, where hybrid drive belongs; the card's syllabus heading is Technology, where the syllabus lists hybrid vehicles."
+  },
+  {
+   "cardId": "eng-2021-hl-q2-d-i",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Hybrid vehicle technology. The reference files 2021 Higher Q2 under Energy, Electronics & Robotics, where hybrid drive belongs; the card's syllabus heading is Technology, where the syllabus lists hybrid vehicles."
+  },
+  {
+   "cardId": "eng-2021-hl-q2-d-ii",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Hybrid vehicle technology. The reference files 2021 Higher Q2 under Energy, Electronics & Robotics, where hybrid drive belongs; the card's syllabus heading is Technology, where the syllabus lists hybrid vehicles."
+  },
+  {
+   "cardId": "eng-2021-hl-q2-e",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "2",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Hybrid vehicle technology. The reference files 2021 Higher Q2 under Energy, Electronics & Robotics, where hybrid drive belongs; the card's syllabus heading is Technology, where the syllabus lists hybrid vehicles."
+  },
+  {
+   "cardId": "eng-2021-hl-q3-a-i",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q3-a-ii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q3-a-iii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q3-b-i",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q3-b-ii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q3-b-iii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q3-c-i",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q3-c-ii",
+   "markBankTopicId": "eng-3-8",
+   "questionNumber": "3",
+   "atlasTopicIds": [
+    "engineering-higher-testing-of-materials-and-products"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q4-a-i",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q4-a-ii",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q4-b-i",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q4-b-ii",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ],
+   "canonicalTopicReview": "Reads pearlite off the iron-carbon diagram at 0.83% carbon, which is equilibrium-diagram work; the reference files Q4(b) there."
+  },
+  {
+   "cardId": "eng-2021-hl-q4-b-iii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q4-c-i",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q4-c-ii",
+   "markBankTopicId": "eng-1-4",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-metallurgy"
+   ],
+   "canonicalTopicReview": "Grey and white cast iron: how each forms and what it is like. Neither topic Q4 is filed under (Equilibrium Diagrams, Heat Treatment) covers cast irons; Metallurgy, whose syllabus headings include Iron and steel, does.",
+   "addedToQuestion": [
+    "engineering-higher-metallurgy"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q4-c-iii",
+   "markBankTopicId": "eng-2-6",
+   "questionNumber": "4",
+   "atlasTopicIds": [
+    "engineering-higher-heat-treatment"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q5-a-i",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q5-a-ii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q5-a-iii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q5-b-i",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q5-b-ii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q5-b-iii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-equilibrium-diagrams"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q5-c",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q5-c-i",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q5-c-ii",
+   "markBankTopicId": "eng-1-3",
+   "questionNumber": "5",
+   "atlasTopicIds": [
+    "engineering-higher-the-structure-of-materials"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q6-a-i",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q6-a-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q6-a-iii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q6-a-iv",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q6-b-i",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q6-b-ii",
+   "markBankTopicId": "eng-2-10",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-welding"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q6-c-i",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Robotic assisted surgery and the stepper motors that drive robotic arms: robotics, which the reference files Q6(c) under."
+  },
+  {
+   "cardId": "eng-2021-hl-q6-c-ii",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "6",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "Robotic assisted surgery and the stepper motors that drive robotic arms: robotics, which the reference files Q6(c) under."
+  },
+  {
+   "cardId": "eng-2021-hl-q7-a-i",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q7-a-ii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q7-a-iii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q7-b-i",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q7-b-ii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q7-b-iii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q7-b-iv",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q7-b-v",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q7-c-i",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q7-c-ii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "7",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q8-a-i",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q8-a-ii",
+   "markBankTopicId": "eng-1-9",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-polymers"
+   ],
+   "canonicalTopicReview": "The advantages of polycarbonate for machine guards are a plastic's properties; Q8 is otherwise filed under Machining & Metrology only.",
+   "addedToQuestion": [
+    "engineering-higher-polymers"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q8-b-i",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q8-b-ii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q8-b-iii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q8-b-iv",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q8-b-v",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q8-c-i",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q8-c-ii",
+   "markBankTopicId": "eng-2-11",
+   "questionNumber": "8",
+   "atlasTopicIds": [
+    "engineering-higher-machining-metrology"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q9-a-i",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q9-a-ii",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q9-b-i",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q9-b-ii",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q9-b-iii",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q9-b-iv",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q9-b-v",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q9-c-i",
+   "markBankTopicId": "eng-2-15",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-energy-electronics-robotics",
+    "engineering-higher-mechanisms"
+   ]
+  },
+  {
+   "cardId": "eng-2021-hl-q9-c-ii",
+   "markBankTopicId": "eng-3-14",
+   "questionNumber": "9",
+   "atlasTopicIds": [
+    "engineering-higher-mechanisms",
+    "engineering-higher-energy-electronics-robotics"
+   ],
+   "canonicalTopicReview": "One card for the printed OR: the multi-directional forklift's design (Mechanisms) or offshore wind energy (Energy, Electronics & Robotics); the reference files Q9(c) under both."
+  }
+ ]
+}

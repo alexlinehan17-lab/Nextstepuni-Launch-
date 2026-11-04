@@ -1,0 +1,15 @@
+{
+ "lane": "Engineering lane from 2026-11-04 (branch claude/engineering-lane-20261104)",
+ "note": "Cards the lane ADDED on top of the 554 shipped before it; each is built by eng_all.py, most through eng_residue/<sitting>.py. Rebuilt cards keep their ids and are not listed.",
+ "ids": [
+  "eng-2021-hl-q3-b-i",
+  "eng-2021-hl-q3-b-ii",
+  "eng-2021-hl-q4-c-i",
+  "eng-2021-hl-q4-c-ii",
+  "eng-2021-hl-q5-a-iii",
+  "eng-2021-hl-q5-b-ii",
+  "eng-2021-hl-q7-b-i",
+  "eng-2021-hl-q9-a-ii",
+  "eng-2021-hl-q9-b-ii"
+ ]
+}

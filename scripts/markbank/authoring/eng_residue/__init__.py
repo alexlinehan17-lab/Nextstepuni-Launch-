@@ -62,6 +62,18 @@ def build(A, year, level, built, figure_keys, topic_for_part, keeps_stem,
     if mod is None:
         return []
     made = []
+    # A card the automatic author files under the wrong syllabus heading: a
+    # keyword outvoted the content ("a non-destructive test ... in a welded
+    # joint" under Joining). Only the topic moves; the id, text and rows stay.
+    for cid, (topic, why) in getattr(mod, 'TOPICS', {}).items():
+        hit = [c for c in A.cards if c['id'] == cid]
+        if not hit or not why:
+            raise SystemExit(f'eng_residue {year} {level} {cid}: TOPICS entry for a '
+                             f'card the author does not build, or with no reason')
+        if hit[0]['topicId'] == topic:
+            raise SystemExit(f'eng_residue {year} {level} {cid}: already {topic}; '
+                             f'the TOPICS entry is stale')
+        hit[0]['topicId'] = topic
     for entry in getattr(mod, 'CARDS', []):
         q, letter, roman = entry['key']
         cid = entry.get('id') or part_id(year, level, q, letter, roman)

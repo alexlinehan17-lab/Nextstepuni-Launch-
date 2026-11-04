@@ -700,57 +700,6 @@
   "questionFigureIncludesPrompt": false
  },
  {
-  "id": "eng-2021-hl-q2-d-ii",
-  "topicId": "eng-3-14",
-  "conceptId": "using-given-labels-operation-hybrid-vehicle",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 HL Q2(d)(ii)",
-  "questionText": "Describe, using the given labels, the operation of the hybrid vehicle shown.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Parallel hybrids are the most common HEV design, they connect the engine and the electric motor to the wheels through mechanical coupling. Both the electric motor and the internal combustion engine drive the wheels directly.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "These are the most common type of hybrid, and the Toyota Prius is the most widely known example. The vehicle’s wheels can be powered in three different ways:",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "either directly by the engine",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "by the electric motor alone",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "When pulling away, and at speeds up to 20kph, the Prius only uses the electric motor for power, making it very economical for stop-start city driving. The petrol engine cuts in as speed increases, and it is used most during hard acceleration. Whenever you decelerate or use the brakes, the regenerative braking system produces electricity and stores it in the battery for use later on. The battery is big enough so that the electric motor can power the vehicle for up to 2km.",
-    "marks": null
-   }
-  ],
-  "stem": "Answer all of the following:",
-  "notes": "The scheme prints '8'.",
-  "questionFigureKey": "engineering-2021-HL-paper-q2di-art",
-  "questionFigureIncludesPrompt": false
- },
- {
   "id": "eng-2021-hl-q2-e",
   "topicId": "eng-3-14",
   "conceptId": "how-hybrid-vehicle-technology-may-impact",
@@ -984,30 +933,6 @@
   "notes": "The scheme prints '8 marks'."
  },
  {
-  "id": "eng-2021-hl-q3-b-iii",
-  "topicId": "eng-3-8",
-  "conceptId": "calculate-young-s-modulus-elasticity-alloy",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 HL Q3(b)(iii)",
-  "questionText": "Calculate Young’s Modulus of Elasticity for the alloy.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Young’s modulus = stress = 260 = 87 N/mm² strain 3.0",
-    "marks": 4
-   }
-  ],
-  "stem": "Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50"
- },
- {
   "id": "eng-2021-hl-q3-c-i",
   "topicId": "eng-3-8",
   "conceptId": "aid-suitable-diagrams-stages-involved-liquid",
@@ -1051,7 +976,7 @@
  },
  {
   "id": "eng-2021-hl-q3-c-ii",
-  "topicId": "eng-2-10",
+  "topicId": "eng-3-8",
   "conceptId": "aid-diagram-suitable-non-destructive-test",
   "level": "higher",
   "year": 2021,
@@ -1387,50 +1312,42 @@
   "questionFigureIncludesPrompt": false
  },
  {
-  "id": "eng-2021-hl-q5-b-i",
+  "id": "eng-2021-hl-q5-a-iii",
   "topicId": "eng-1-3",
-  "conceptId": "draw-equilibrium-diagram-according-given-data",
+  "conceptId": "possible-crystal-point-defects-may-occur",
   "level": "higher",
   "year": 2021,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2021 HL Q5(b)(i)",
-  "questionText": "Draw the equilibrium diagram according to the given data, and label the liquidus and solidus lines and the eutectic point.",
+  "questionRef": "2021 HL Q5(a)(iii)",
+  "questionText": "Describe two possible crystal point defects which may occur during metal solidification.",
   "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Labels 1 + 1 + 1",
-    "marks": 10
-   }
-  ]
- },
- {
-  "id": "eng-2021-hl-q5-b-iii",
-  "topicId": "eng-1-3",
-  "conceptId": "alloy-containing-20-cadmium-aid-diagram",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 HL Q5(b)(iii)",
-  "questionText": "For the alloy containing 20% Cadmium, describe, with the aid of a diagram, the cooling curve for the alloy, referring to the solidification temperatures.",
-  "tariffModel": {
-   "kind": "fixed"
+   "kind": "orderedSplit",
+   "notation": "2 + 2"
   },
   "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "205°C and becomes a solid alloy at 140°C",
-    "marks": 4
+    "verbatim": "Substitute Defect This is where foreign atoms replace the parent atoms.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Vacancy Defect This is where there is an atom missing from the lattice.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Interstitial Defect This is where foreign atoms fit in between the parent atoms.",
+    "marks": null
    }
-  ]
+  ],
+  "questionFigureKey": "engineering-2021-HL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-hl-q5-c-i",
@@ -1958,6 +1875,42 @@
   ]
  },
  {
+  "id": "eng-2021-hl-q7-b-i",
+  "topicId": "eng-1-9",
+  "conceptId": "main-differences-between-natural-rubber-synthetic",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q7(b)(i)",
+  "questionText": "Describe the main differences between natural rubber and synthetic rubber.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Most natural rubber is produced from a softwood tree native to Brazil, though several other species of trees and shrubs are sources of rubber as well. Natural rubber has a high tensile strength and is resistant to fatigue from wear such as chipping, cutting or tearing.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Natural rubber has only moderate resistance to damage from exposure to heat, light and  the ozone in the air. Natural rubber also has tack, which means it can adhere to itself as well as other materials. It adheres particularly well to steel cord, which makes it an excellent material for use in tyres.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Synthetic rubber is produced artificially from polymers in different varieties to mimic the different properties of natural rubber. Synthetic rubber offers better resistance to abrasion than natural rubber, as well as superior resistance to heat and the effects of ageing. Many types of synthetic rubber are flame-resistant, so it can be used as insulation for electrical devices. It also remains flexible at low temperatures and is resistant to grease and oil.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
   "id": "eng-2021-hl-q7-b-ii",
   "topicId": "eng-1-9",
   "conceptId": "manufacturing-process-plastic-pultrusion-shown-below",
@@ -2079,54 +2032,6 @@
   ]
  },
  {
-  "id": "eng-2021-hl-q7-c-i",
-  "topicId": "eng-1-9",
-  "conceptId": "aid-diagram-suitable-polymer-manufacturing-process",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 HL Q7(c)(i)",
-  "questionText": "Describe, with the aid of a diagram, a suitable polymer manufacturing process to make the water bottle.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "1. An extruded plastic parison is clamped in the blow moulder.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "2. Air is blown into the heated chamber.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "3. The pliable plastic takes the shape of the mould.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "4. The finished product is removed.",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "1. Parison 2. Clamping 3. Moulding 4. Finished",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '8'."
- },
- {
   "id": "eng-2021-hl-q7-c-ii",
   "topicId": "eng-1-9",
   "conceptId": "identify-polymer-additives-may-be-used",
@@ -2214,7 +2119,7 @@
  },
  {
   "id": "eng-2021-hl-q8-a-ii",
-  "topicId": "eng-3-1",
+  "topicId": "eng-1-9",
   "conceptId": "advantages-use-polycarbonate-manufacture-machine-guards",
   "level": "higher",
   "year": 2021,
@@ -2462,7 +2367,7 @@
  },
  {
   "id": "eng-2021-hl-q8-c-ii",
-  "topicId": "eng-1-4",
+  "topicId": "eng-2-11",
   "conceptId": "method-securely-holding-ferrous-metals-during",
   "level": "higher",
   "year": 2021,
@@ -2721,6 +2626,366 @@
    }
   ],
   "notes": "The scheme prints '8'."
+ },
+ {
+  "id": "eng-2021-hl-q3-b-i",
+  "topicId": "eng-3-8",
+  "conceptId": "using-graph-paper-supplied-plot-stress",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q3(b)(i)",
+  "questionText": "Using the graph paper supplied, plot the stress - strain diagram for the alloy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Using the graph paper supplied, plot the stress - strain diagram for the alloy.",
+    "marks": 10,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "stem": "Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50",
+  "notes": "The scheme heads this answer \"(b) (ii)\"; its marks grid prices the plot as (b)(i), 10 marks.",
+  "figureKey": "engineering-2021-HL-scheme-q3bi-sol"
+ },
+ {
+  "id": "eng-2021-hl-q3-b-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "determine-0-1-proof-stress-alloy",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q3(b)(ii)",
+  "questionText": "Determine the 0.1% proof stress for the alloy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.1% proof stress from graph - 325 N/mm²",
+    "marks": 4
+   }
+  ],
+  "stem": "Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50"
+ },
+ {
+  "id": "eng-2021-hl-q3-b-iii",
+  "topicId": "eng-3-8",
+  "conceptId": "calculate-young-s-modulus-elasticity-alloy",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q3(b)(iii)",
+  "questionText": "Calculate Young’s Modulus of Elasticity for the alloy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calculate Young’s Modulus of Elasticity for the alloy.",
+    "marks": 4,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "stem": "Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50",
+  "figureKey": "engineering-2021-HL-scheme-q3biii-sol"
+ },
+ {
+  "id": "eng-2021-hl-q4-c-i",
+  "topicId": "eng-2-6",
+  "conceptId": "optical-pyrometer-thermocouple-pyrometer",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q4(c)(i)",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Optical pyrometer and thermocouple pyrometer;",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The optical pyrometer method compares the intensity of light from the filament of a lamp with the colour from the furnace. Current flow from the lamp can be adjusted, using a variable resistor, to match the light from the furnace. There are three possible results with the optical pyrometer: filament too bright, filament not bright enough and filament matching the furnace colour. When the filament seems to ‘disappear’, the temperature of the filament matches that of the furnace and a reading can thus be taken.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The thermocouple pyrometer works on the principle that different metals conduct heat at different speeds. Two dissimilar metals usually, nickel-aluminium and nickel-chromium, are joined together with a galvanometer placed at the cold junction. A rise in temperature at the hot junction produces an electrical current which is recorded by the galvanometer. This galvanometer is calibrated to read in degrees of temperature rather than indicating electrical units.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'."
+ },
+ {
+  "id": "eng-2021-hl-q4-c-ii",
+  "topicId": "eng-1-4",
+  "conceptId": "grey-cast-iron-white-cast-iron",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q4(c)(ii)",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Grey cast iron and white cast iron;",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Grey cast iron is named after its grey fractured surface, which occurs because the graphitic flakes deflect a passing crack and initiate countless new cracks as the material breaks.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Grey cast iron results from slow cooling and/or high carbon equivalent. The carbon exists as flakes of graphite. It has a grey appearance when fractured and it is the most commonly used cast iron. Grey cast iron has poor tensile strength and shock resistance but has good compressive strength. It is soft and machinable.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "White cast iron is named after its white surface when fractured, due to its carbide impurities which allow cracks to pass straight through. White cast iron results from fast cooling and/or low carbon equivalent. The carbon is tied up as cementite. It has a white shiny appearance when fractured and it is used in the impellers of slurry pumps, shell liners and lifter bars in ball mills and in the balls and rings in coal pulverisers. It is hard, brittle and generally not machinable.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'."
+ },
+ {
+  "id": "eng-2021-hl-q5-b-i",
+  "topicId": "eng-1-3",
+  "conceptId": "draw-equilibrium-diagram-according-given-data",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q5(b)(i)",
+  "questionText": "Draw the equilibrium diagram according to the given data, and label the liquidus and solidus lines and the eutectic point.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the equilibrium diagram according to the given data, and label the liquidus and solidus lines and the eutectic point.",
+    "marks": 10,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints 'Graph 7' and 'Labels 1 + 1 + 1'.",
+  "figureKey": "engineering-2021-HL-scheme-q5bi-sol",
+  "questionFigureKey": "engineering-2021-HL-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-hl-q5-b-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "alloy-containing-75-cadmium-determine-diagram",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q5(b)(ii)",
+  "questionText": "For the alloy containing 75% Cadmium, determine from the diagram the ratio of the phases at 200°C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "For the alloy containing 75% Cadmium, determine from the diagram the ratio of the phases at 200°C.",
+    "marks": 4,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "figureKey": "engineering-2021-HL-scheme-q5bii-sol",
+  "questionFigureKey": "engineering-2021-HL-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-hl-q5-b-iii",
+  "topicId": "eng-1-3",
+  "conceptId": "alloy-containing-20-cadmium-aid-diagram",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q5(b)(iii)",
+  "questionText": "For the alloy containing 20% Cadmium, describe, with the aid of a diagram, the cooling curve for the alloy, referring to the solidification temperatures.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "As the 20% alloy cools, it begins to solidify at 205°C and becomes a solid alloy at 140°C",
+    "marks": 4
+   }
+  ],
+  "figureKey": "engineering-2021-HL-scheme-q5biii-sol",
+  "questionFigureKey": "engineering-2021-HL-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-hl-q7-c-i",
+  "topicId": "eng-1-9",
+  "conceptId": "aid-diagram-suitable-polymer-manufacturing-process",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q7(c)(i)",
+  "questionText": "Describe, with the aid of a diagram, a suitable polymer manufacturing process to make the water bottle.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. An extruded plastic parison is clamped in the blow moulder.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Air is blown into the heated chamber.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. The pliable plastic takes the shape of the mould.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. The finished product is removed.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'.",
+  "figureKey": "engineering-2021-HL-scheme-q7ci-sol"
+ },
+ {
+  "id": "eng-2021-hl-q9-a-ii",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-s-other-method-lifting",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q9(a)(ii)",
+  "questionText": "Describe, with the aid of a diagram(s), one other method of lifting a ride-on lawnmower safely.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This lift table design incorporates hydraulic cylinders and an electrically powered pump to actuate the scissor lifting mechanism. As the cylinder extends, the scissor arm is pushed upwards raising the platform.",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme prints: Suggested solution - other viable solutions are acceptable.",
+  "figureKey": "engineering-2021-HL-scheme-q9aii-sol"
+ },
+ {
+  "id": "eng-2021-hl-q9-b-ii",
+  "topicId": "eng-2-15",
+  "conceptId": "identify-use-toggle-mechanism-shown-opposite",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q9(b)(ii)",
+  "questionText": "Identify one use for the toggle mechanism shown opposite.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The toggle mechanism has a strong clamping action, it is used to clamp sheets into a vacuum former.",
+    "marks": 6
+   }
+  ],
+  "questionFigureKey": "engineering-2021-HL-paper-q9bii-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-hl-q2-d-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "using-given-labels-operation-hybrid-vehicle",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q2(d)(ii)",
+  "questionText": "Describe, using the given labels, the operation of the hybrid vehicle shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Parallel hybrids are the most common HEV design, they connect the engine and the electric motor to the wheels through mechanical coupling. Both the electric motor and the internal combustion engine drive the wheels directly.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "These are the most common type of hybrid, and the Toyota Prius is the most widely known example. The vehicle’s wheels can be powered in three different ways: • either directly by the engine • by the electric motor alone • or by both power sources working together.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "When pulling away, and at speeds up to 20kph, the Prius only uses the electric motor for power, making it very economical for stop-start city driving. The petrol engine cuts in as speed increases, and it is used most during hard acceleration. Whenever you decelerate or use the brakes, the regenerative braking system produces electricity and stores it in the battery for use later on. The battery is big enough so that the electric motor can power the vehicle for up to 2km.",
+    "marks": null
+   }
+  ],
+  "stem": "Answer all of the following:",
+  "notes": "The scheme prints '8'.",
+  "questionFigureKey": "engineering-2021-HL-paper-q2di-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2021-ol-q1-a",

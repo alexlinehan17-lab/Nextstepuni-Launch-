@@ -22,6 +22,7 @@ import json
 import os
 import subprocess
 import sys
+import unicodedata
 
 import pymupdf
 
@@ -53,7 +54,12 @@ def describe(year, level, spec):
     else:
         text = (f'The table or diagram printed with {ref}, as the State '
                 f'Examinations Commission set it.')
-    words = ' '.join(crop_words(year, level, spec).split())
+    # Combining marks and private-use code points are the PDF's broken font
+    # subsets ("Temperature ( \u030aC)"), which the build refuses in alt text;
+    # they come off the description, never the picture.
+    words = ' '.join(''.join(
+        ch for ch in crop_words(year, level, spec)
+        if unicodedata.category(ch) not in ('Mn', 'Co')).split())
     if words:
         text += ' It reads: ' + words[:400] + '.'
     return text

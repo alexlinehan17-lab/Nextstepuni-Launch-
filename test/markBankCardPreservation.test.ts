@@ -1018,6 +1018,8 @@ const decks = [
   ['accounting:ordinary', ACCOUNTING_ORDINARY, 644, '0a35e37e0360979df909459b44024d1a62b749b268594b214bf620ebaf18db86'],
 ] as const;
 
+// [count, idHash] of eng_residue/additions.json, re-pinned as each sitting lands.
+const ENGINEERING_ADDITIONS = [9, '93879afe15d787a43eff281be11a65721cafedbe22030295f616394b6b672868'] as const;
 const idHash = (ids: readonly string[]) => createHash('sha256')
   .update([...ids].sort().join('\n'))
   .digest('hex');
@@ -1081,6 +1083,13 @@ const businessAdditionIds = new Set([
   ...businessReviewed.cards,
   ...expandBusinessRoutePools(businessRoutePools.pools),
 ].map(card => card.id).filter(id => !businessOriginalIds.has(id)));
+// Engineering lane (2026-11-04 on): the 554 pre-lane cards stay frozen in the
+// deck pins; each sitting's added cards are listed in the lane's ledger
+// (scripts/markbank/authoring/eng_residue/additions.json) and counted on top,
+// pinned by their own count and hash below. Cards a sitting rebuilds under
+// their own ids are not additions and stay in the frozen hash.
+const engineeringAdditionIds = new Set<string>((JSON.parse(readFileSync(resolve(__dirname, '..',
+  'scripts/markbank/authoring/eng_residue/additions.json'), 'utf8')) as { ids: string[] }).ids);
 // Keep the original French count/hash frozen. Reviewed additions have their own
 // source-and-route audit in frenchWriting.test.ts; never rebaseline missing IDs.
 const frenchAdditionIds = new Set([
@@ -1270,6 +1279,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
     ];
   }
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
+  if (name.startsWith('engineering:')) return ids.filter(id => !engineeringAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [...ids.filter(id => !isBiologyAdded(id)), ...biologyAliasIds.filter(id => id.includes(level))];
@@ -1332,6 +1342,16 @@ describe('Mark Bank card preservation', () => {
     expect(new Set(frozen).size, `${name}: duplicate frozen card IDs`).toBe(count);
     expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
     expect(idHash(frozen), `${name}: a card ID was removed or replaced`).toBe(hash);
+  });
+
+  it('pins the Engineering lane additions beside the frozen set', () => {
+    // One line per sitting, as each lands (eng_residue/<sitting>.py says why
+    // every card exists; rebuilt cards keep their ids and are not listed).
+    //   2021 HL: +9 (554 -> 563); q2-d-ii, q3-b-iii, q5-b-i, q5-b-iii, q7-c-i rebuilt in place
+    const live = new Set([...ENGINEERING_HIGHER, ...ENGINEERING_ORDINARY].map(card => card.id));
+    for (const id of engineeringAdditionIds) expect(live.has(id), `missing Engineering addition ${id}`).toBe(true);
+    expect(engineeringAdditionIds.size).toBe(ENGINEERING_ADDITIONS[0]);
+    expect(idHash([...engineeringAdditionIds])).toBe(ENGINEERING_ADDITIONS[1]);
   });
 
   it.each(Object.entries(peAdditions))('pins the reviewed Physical Education %s additions beside the frozen set', (_, [cards, count, hash]) => {
@@ -1414,7 +1434,8 @@ describe('Mark Bank card preservation', () => {
     // first time, and the parts the 2021-2025 sittings had joined or missed)
     // and withdraw 34 shipped ids onto aliases: + chemistryAdded - 34.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
-      name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
+      name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length
+        : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
     // live non-additions plus its consolidated per-item cards, each an alias key.
     // Geography (2026-10-23) keeps its 754 frozen IDs the same way: its 3,492
@@ -1437,7 +1458,8 @@ describe('Mark Bank card preservation', () => {
         + geographyAdditionIds.size - geographyAliasedIds.length
         + englishAdditionIds.size - englishAliasIds.length
         + biologyAdditionIds.size - biologyAliasIds.length
-        + chemistryAdded.size - chemistryWithdrawnShipped.length);
+        + chemistryAdded.size - chemistryWithdrawnShipped.length
+        + engineeringAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
