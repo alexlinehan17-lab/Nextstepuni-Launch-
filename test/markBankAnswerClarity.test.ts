@@ -484,13 +484,15 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(9);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(107);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(109);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['Chapel bell', 'convent chimes', 'organ'],
       ['Dental services', 'spectacles', 'drugs'],
       ['Liverpool', 'Manchester', 'Birmingham', 'Leeds'],
       ['On railways', 'as news vendors', 'bootblacks', 'lamplighters', 'barbers'],
+      // "To watch over everyone/ ... / To report to ministers if necessary Any TWO @ 4M" / "8M" (2016 OL Q1(a)).
+      ['To watch over everyone', 'To warn in a friendly was those who are misbehaving', 'To report to ministers if necessary'],
     ]);
     // A row that is the scheme pricing an answer it does not print says so.
     // ("ONE valid export (e.g. wool, butter, etc.)" prints its examples, so it is an answer.)

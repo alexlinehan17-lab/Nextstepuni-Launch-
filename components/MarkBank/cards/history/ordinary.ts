@@ -259,9 +259,7 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
      3,
      4
     ],
-    "directions": [
-     "Note that the question is looking for the purpose of the Nuremberg Rallies."
-    ]
+    "directions": []
    }
   },
   {
@@ -294,7 +292,9 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
      3,
      4
     ],
-    "directions": []
+    "directions": [
+     "Note that the question is looking for the purpose of the Nuremberg Rallies."
+    ]
    }
   },
   {
@@ -2909,6 +2909,1833 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s1-q1a", topicId: "hist-em-eur-1", conceptId: "duties-elders-towards-people-who-leading",
+    section: "1", questionRef: "2016 OL Early Modern Section 1 Q1(a)",
+    stem: "Case study: Calvin’s Geneva",
+    questionText: "According to document A, what were the duties of elders towards people who were leading disorderly lives?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":4,"options":["To watch over everyone","To warn in a friendly was those who are misbehaving","To report to ministers if necessary"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s1-q1b", topicId: "hist-em-eur-1", conceptId: "elders-chosen-quarter-city",
+    section: "1", questionRef: "2016 OL Early Modern Section 1 Q1(b)",
+    stem: "Case study: Calvin’s Geneva",
+    questionText: "From document A, why were elders to be chosen from each quarter of the city?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "So as to be able to maintain supervision over all/ To ensure good coverage across the city", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s1-q1c", topicId: "hist-em-eur-1", conceptId: "deacons-elected",
+    section: "1", questionRef: "2016 OL Early Modern Section 1 Q1(c)",
+    stem: "Case study: Calvin’s Geneva",
+    questionText: "From document B, how were deacons to be elected?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Deacons were to be elected in the same way as the elders had been", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s1-q1d", topicId: "hist-em-eur-1", conceptId: "hospital-administered",
+    section: "1", questionRef: "2016 OL Early Modern Section 1 Q1(d)",
+    stem: "Case study: Calvin’s Geneva",
+    questionText: "According to document B, how is the hospital to be administered?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Diligently and well/ Open not only to the sick, but to the aged, the poor and those unable to work", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s1-q1e", topicId: "hist-em-eur-1", conceptId: "persons-should-kept-separate-lodgings",
+    section: "1", questionRef: "2016 OL Early Modern Section 1 Q1(e)",
+    stem: "Case study: Calvin’s Geneva",
+    questionText: "From document B, what persons should be kept in separate lodgings?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Those who are poor, old or unable to work, but are not actually sick", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s1-q2a", topicId: "hist-em-eur-1", conceptId: "gives-more-information-life-calvin-geneva",
+    section: "1", questionRef: "2016 OL Early Modern Section 1 Q2(a)",
+    stem: "Case study: Calvin’s Geneva",
+    questionText: "Which document, A or B, gives more information about life in Calvin’s Geneva? Refer to both documents in your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An argument can be made that either document gives more information about Geneva", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Document A gives a more general coverage and document B deals mostly with the city hospital", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Document A explains the role of elders and ministers in the supervision of the city and the correction of misbehaviour", marks: null },
+    { id: "r-4", kind: "point", verbatim: "It also describes how elders were to be appointed by the Small Council and the Council of Two Hundred Document B is much shorter", marks: null },
+    { id: "r-5", kind: "point", verbatim: "It describes the role of the deacons in the running of the hospital, but it also gives interesting detail about the sort of persons who are not actually sick, but are to be cared for separately in the hospital.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s1-q2b", topicId: "hist-em-eur-1", conceptId: "agree-role-council-running-calvin-church",
+    section: "1", questionRef: "2016 OL Early Modern Section 1 Q2(b)",
+    stem: "Case study: Calvin’s Geneva",
+    questionText: "Do documents A and B agree on the role the council had in the running of Calvin’s church in Geneva? Refer to both documents in your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Both documents agree", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Document A states that the Small Council and the Council of Two Hundred have the final say in the selection of the elders who supervise city life", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Document B states that deacons, who administer the city hospital, have also been selected in the same way", marks: null },
+    { id: "r-4", kind: "point", verbatim: "This means that the Council was in charge of the running of the city", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Calvin wrote both documents, so this is not surprising.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s1-q3a", topicId: "hist-em-eur-1", conceptId: "evidence-there-support-view-society-strictly",
+    section: "1", questionRef: "2016 OL Early Modern Section 1 Q3(a)",
+    stem: "Case study: Calvin’s Geneva",
+    questionText: "What evidence is there in document A to support the view that society was strictly controlled in Calvin’s Geneva?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A shows that society was strictly controlled in Geneva", marks: null },
+    { id: "r-2", kind: "point", verbatim: "There seems to have been a very high level of supervision in the city with the elected elders observing all their neighbours", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Those who misbehave are given a friendly warning and, if they don’t mend their ways, they can be reported to the minister for fraternal correction.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s1-q3b", topicId: "hist-em-eur-1", conceptId: "primary-sources-secondary-sources",
+    section: "1", questionRef: "2016 OL Early Modern Section 1 Q3(b)",
+    stem: "Case study: Calvin’s Geneva",
+    questionText: "Are documents A and B primary sources or secondary sources? Explain your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They are both primary sources", marks: null },
+    { id: "r-2", kind: "point", verbatim: "They are extracts from the same book, Calvin’s “Ecclesiastical Ordinances” (1541)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "It was more like a book of religious rules for life in Geneva at the time", marks: null },
+    { id: "r-4", kind: "point", verbatim: "It was written by Calvin himself, a primary central character in the city at the time.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s1-q4", topicId: "hist-em-eur-1", conceptId: "calvinism-successful-did-spread-widely",
+    section: "1", questionRef: "2016 OL Early Modern Section 1 Q4",
+    stem: "Case study: Calvin’s Geneva",
+    questionText: "Why was Calvinism so successful and why did it spread so widely?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [19] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t1a-q1", topicId: "hist-em-irl-1", conceptId: "council-meeting-june-1534-did-lord",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 1 A Q1",
+    stem: "This edited extract refers to the commencement of the Kildare rebellion of 1534. Read it and answer the questions which follow.\n\nOn the fateful day, 11 June 1534, Lord Thomas Fitzgerald led a party of 140 silk-jacketed horsemen through Dame Gate to St Mary’s Abbey where a meeting of the council had been summoned. There, denouncing the king, he yielded up the governor’s sword of office to Lord Chancellor Cromer. He then withdrew to join the rest of his army at Oxmanstown to begin organising the forces of Ireland in protest against the displacement of his kin.\nWell prepared for this crisis, Thomas was not the immature and headstrong young man referred to as ‘Silken Thomas’. He had some military experience in one of his father’s campaigns. In the weeks before 11 June, Lord Thomas had in fact sought support from traditional Kildare allies: Conor O’Brien of Thomond and the Earl of Desmond in Munster, Conn Bacach O’ Neill in Ulster, and O’Connor Faly in Leinster.",
+    questionText: "At the council meeting on 11 June, 1534, what did Lord Thomas do?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He denounced the king", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "He gave up the governor’s sword of office to the Lord Chancellor", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t1a-q2", topicId: "hist-em-irl-1", conceptId: "where-rest-lord-thomas-army-stationed",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 1 A Q2",
+    stem: "This edited extract refers to the commencement of the Kildare rebellion of 1534. Read it and answer the questions which follow.\n\nOn the fateful day, 11 June 1534, Lord Thomas Fitzgerald led a party of 140 silk-jacketed horsemen through Dame Gate to St Mary’s Abbey where a meeting of the council had been summoned. There, denouncing the king, he yielded up the governor’s sword of office to Lord Chancellor Cromer. He then withdrew to join the rest of his army at Oxmanstown to begin organising the forces of Ireland in protest against the displacement of his kin.\nWell prepared for this crisis, Thomas was not the immature and headstrong young man referred to as ‘Silken Thomas’. He had some military experience in one of his father’s campaigns. In the weeks before 11 June, Lord Thomas had in fact sought support from traditional Kildare allies: Conor O’Brien of Thomond and the Earl of Desmond in Munster, Conn Bacach O’ Neill in Ulster, and O’Connor Faly in Leinster.",
+    questionText: "Where was the rest of Lord Thomas’ army stationed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oxmanstown", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t1a-q3", topicId: "hist-em-irl-1", conceptId: "did-lord-thomas-military-experience",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 1 A Q3",
+    stem: "This edited extract refers to the commencement of the Kildare rebellion of 1534. Read it and answer the questions which follow.\n\nOn the fateful day, 11 June 1534, Lord Thomas Fitzgerald led a party of 140 silk-jacketed horsemen through Dame Gate to St Mary’s Abbey where a meeting of the council had been summoned. There, denouncing the king, he yielded up the governor’s sword of office to Lord Chancellor Cromer. He then withdrew to join the rest of his army at Oxmanstown to begin organising the forces of Ireland in protest against the displacement of his kin.\nWell prepared for this crisis, Thomas was not the immature and headstrong young man referred to as ‘Silken Thomas’. He had some military experience in one of his father’s campaigns. In the weeks before 11 June, Lord Thomas had in fact sought support from traditional Kildare allies: Conor O’Brien of Thomond and the Earl of Desmond in Munster, Conn Bacach O’ Neill in Ulster, and O’Connor Faly in Leinster.",
+    questionText: "Did Lord Thomas have any military experience? Explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He had some military experience in one of his father’s campaigns", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t1a-q4", topicId: "hist-em-irl-1", conceptId: "whom-lord-thomas-sought-support-ulster",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 1 A Q4",
+    stem: "This edited extract refers to the commencement of the Kildare rebellion of 1534. Read it and answer the questions which follow.\n\nOn the fateful day, 11 June 1534, Lord Thomas Fitzgerald led a party of 140 silk-jacketed horsemen through Dame Gate to St Mary’s Abbey where a meeting of the council had been summoned. There, denouncing the king, he yielded up the governor’s sword of office to Lord Chancellor Cromer. He then withdrew to join the rest of his army at Oxmanstown to begin organising the forces of Ireland in protest against the displacement of his kin.\nWell prepared for this crisis, Thomas was not the immature and headstrong young man referred to as ‘Silken Thomas’. He had some military experience in one of his father’s campaigns. In the weeks before 11 June, Lord Thomas had in fact sought support from traditional Kildare allies: Conor O’Brien of Thomond and the Earl of Desmond in Munster, Conn Bacach O’ Neill in Ulster, and O’Connor Faly in Leinster.",
+    questionText: "From whom had Lord Thomas sought support in Ulster?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Conn Bacach O’Neill", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t1a-q5", topicId: "hist-em-irl-1", conceptId: "outcome-kildare-rebellion",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 1 A Q5",
+    stem: "This edited extract refers to the commencement of the Kildare rebellion of 1534. Read it and answer the questions which follow.\n\nOn the fateful day, 11 June 1534, Lord Thomas Fitzgerald led a party of 140 silk-jacketed horsemen through Dame Gate to St Mary’s Abbey where a meeting of the council had been summoned. There, denouncing the king, he yielded up the governor’s sword of office to Lord Chancellor Cromer. He then withdrew to join the rest of his army at Oxmanstown to begin organising the forces of Ireland in protest against the displacement of his kin.\nWell prepared for this crisis, Thomas was not the immature and headstrong young man referred to as ‘Silken Thomas’. He had some military experience in one of his father’s campaigns. In the weeks before 11 June, Lord Thomas had in fact sought support from traditional Kildare allies: Conor O’Brien of Thomond and the Earl of Desmond in Munster, Conn Bacach O’ Neill in Ulster, and O’Connor Faly in Leinster.",
+    questionText: "What was the outcome of the Kildare rebellion?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Outcome of Kildare rebellion", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t1b", topicId: "hist-em-irl-1", conceptId: "bardic-schools-archbishop-george-browne-dissolution",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 1 B",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "Write a short paragraph on one of the following:\n1. The Bardic Schools.\n2. Archbishop George Browne.\n3. The dissolution of Irish monasteries.\n4. The policy of surrender and regrant.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t1c", topicId: "hist-em-irl-1", conceptId: "did-gear-fitzgerald-8th-earl-kildare",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 1 C",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "Answer one of the following:\n1. How did Gearóid Mór Fitzgerald, 8th Earl of Kildare, become so powerful?\n2. Why were Laois and Offaly subjected to plantation?\n3. What regulations governed marriage under Gaelic law?\n4. How important was Manus O’Donnell as both a Gaelic chieftain and a talented scholar?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t2a-q1", topicId: "hist-em-irl-2", conceptId: "did-sir-humphrey-gilbert-arrange-put",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 2 A Q1",
+    stem: "In 1569 Sir Humphrey Gilbert was appointed military governor of Munster. This edited extract from the account of Thomas Churchyard, who accompanied him, describes the severity of Gilbert’s campaign. Read it and answer the questions which follow.\n\nThe heads of all those of whatever sort that were killed in the day were cut from their bodies and brought to the place where he camped at night. The heads were laid on the ground by each side of the way leading into his own tent, so that none could come into his tent for any cause but he must pass through the lane of heads which he used to terrorise the people.\nIt brought great terror to the people when they saw the heads of their dead fathers, brothers, children, kinfolk and friends lie on the ground before their faces as they came to speak with the said governor.",
+    questionText: "What did Sir Humphrey Gilbert arrange to have put on either side of the path leading to his tent?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The heads of those who were killed during the day", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t2a-q2", topicId: "hist-em-irl-2", conceptId: "churchyard-did-order-such-gruesome-practices",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 2 A Q2",
+    stem: "In 1569 Sir Humphrey Gilbert was appointed military governor of Munster. This edited extract from the account of Thomas Churchyard, who accompanied him, describes the severity of Gilbert’s campaign. Read it and answer the questions which follow.\n\nThe heads of all those of whatever sort that were killed in the day were cut from their bodies and brought to the place where he camped at night. The heads were laid on the ground by each side of the way leading into his own tent, so that none could come into his tent for any cause but he must pass through the lane of heads which he used to terrorise the people.\nIt brought great terror to the people when they saw the heads of their dead fathers, brothers, children, kinfolk and friends lie on the ground before their faces as they came to speak with the said governor.",
+    questionText: "According to Churchyard, why did he order such gruesome practices?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To terrorise the people", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t2a-q3", topicId: "hist-em-irl-2", conceptId: "evidence-suggests-children-not-spared-his",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 2 A Q3",
+    stem: "In 1569 Sir Humphrey Gilbert was appointed military governor of Munster. This edited extract from the account of Thomas Churchyard, who accompanied him, describes the severity of Gilbert’s campaign. Read it and answer the questions which follow.\n\nThe heads of all those of whatever sort that were killed in the day were cut from their bodies and brought to the place where he camped at night. The heads were laid on the ground by each side of the way leading into his own tent, so that none could come into his tent for any cause but he must pass through the lane of heads which he used to terrorise the people.\nIt brought great terror to the people when they saw the heads of their dead fathers, brothers, children, kinfolk and friends lie on the ground before their faces as they came to speak with the said governor.",
+    questionText: "What evidence in the extract suggests that children were not spared in his campaign of total war?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It states that children’s heads were part of the gruesome display", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t2a-q4", topicId: "hist-em-irl-2", conceptId: "effect-people-munster-who-witness-these",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 2 A Q4",
+    stem: "In 1569 Sir Humphrey Gilbert was appointed military governor of Munster. This edited extract from the account of Thomas Churchyard, who accompanied him, describes the severity of Gilbert’s campaign. Read it and answer the questions which follow.\n\nThe heads of all those of whatever sort that were killed in the day were cut from their bodies and brought to the place where he camped at night. The heads were laid on the ground by each side of the way leading into his own tent, so that none could come into his tent for any cause but he must pass through the lane of heads which he used to terrorise the people.\nIt brought great terror to the people when they saw the heads of their dead fathers, brothers, children, kinfolk and friends lie on the ground before their faces as they came to speak with the said governor.",
+    questionText: "What was the effect on the people of Munster who were witness to these atrocities?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Great terror came upon them", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t2a-q5", topicId: "hist-em-irl-2", conceptId: "mention-consequence-desmond-rebellion-munster",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 2 A Q5",
+    stem: "In 1569 Sir Humphrey Gilbert was appointed military governor of Munster. This edited extract from the account of Thomas Churchyard, who accompanied him, describes the severity of Gilbert’s campaign. Read it and answer the questions which follow.\n\nThe heads of all those of whatever sort that were killed in the day were cut from their bodies and brought to the place where he camped at night. The heads were laid on the ground by each side of the way leading into his own tent, so that none could come into his tent for any cause but he must pass through the lane of heads which he used to terrorise the people.\nIt brought great terror to the people when they saw the heads of their dead fathers, brothers, children, kinfolk and friends lie on the ground before their faces as they came to speak with the said governor.",
+    questionText: "Mention one consequence of the Desmond rebellion for Munster.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid consequence", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t2b", topicId: "hist-em-irl-2", conceptId: "shane-neill-grace-malley-pale-burden",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 2 B",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
+    questionText: "Write a short paragraph on one of the following:\n1. Shane O’Neill.\n2. Grace O’Malley.\n3. The Pale and the burden of the army.\n4. The university question.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t2c", topicId: "hist-em-irl-2", conceptId: "aims-lord-deputy-henry-sidney-ireland",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 2 C",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
+    questionText: "Answer one of the following:\n1. What were the aims of Lord Deputy Henry Sidney in Ireland and how far did he achieve them?\n2. What notable developments took place in the city of Dublin during the reign of Elizabeth I?\n3. How was Meiler Magrath able to act as a Catholic bishop and as a Protestant bishop during his clerical career?\n4. What developments led finally to the defeat of Hugh O’Neill and his allies in the Nine Years War?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t3a-q1", topicId: "hist-em-irl-3", conceptId: "does-drogheda-massacre-stand-out-opinion",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 3 A Q1",
+    stem: "The following account by the English historian, John Morrill, deals with the Cromwellian massacre at Drogheda. Read it and answer the questions which follow.\n\nThe Drogheda massacre does stand out for its mercilessness, for its combination of ruthlessness and calculation, for its combination of hot- and cold-bloodiness.\nCromwell, in my view, had been building up to an explosion of anger against anyone who defied God’s judgement in the wars of 1642-1647. Those who continued to fight must be punished for the innocent blood they had shed.\nAt Drogheda he killed English, Anglo-Irish and Irish indiscriminately, if anything singling out the English for special severity: their heads were the ones displayed on pikes; those who were spared death and transported to slave-conditions in Barbados were Irish.",
+    questionText: "How does the Drogheda massacre stand out in the opinion of Morrill?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mercilessness/ ruthlessness and calculation/ hot- and cold-bloodiness 1", marks: 6, contextNote: "Any TWO @ 3M each" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t3a-q2", topicId: "hist-em-irl-3", conceptId: "against-whom-cromwell-explosion-anger-building",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 3 A Q2",
+    stem: "The following account by the English historian, John Morrill, deals with the Cromwellian massacre at Drogheda. Read it and answer the questions which follow.\n\nThe Drogheda massacre does stand out for its mercilessness, for its combination of ruthlessness and calculation, for its combination of hot- and cold-bloodiness.\nCromwell, in my view, had been building up to an explosion of anger against anyone who defied God’s judgement in the wars of 1642-1647. Those who continued to fight must be punished for the innocent blood they had shed.\nAt Drogheda he killed English, Anglo-Irish and Irish indiscriminately, if anything singling out the English for special severity: their heads were the ones displayed on pikes; those who were spared death and transported to slave-conditions in Barbados were Irish.",
+    questionText: "Against whom was Cromwell’s explosion of anger building up?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Against who defied God’s judgement (his enemies) in the wars of 1642-47", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t3a-q3", topicId: "hist-em-irl-3", conceptId: "morrill-group-singled-out-special-severity",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 3 A Q3",
+    stem: "The following account by the English historian, John Morrill, deals with the Cromwellian massacre at Drogheda. Read it and answer the questions which follow.\n\nThe Drogheda massacre does stand out for its mercilessness, for its combination of ruthlessness and calculation, for its combination of hot- and cold-bloodiness.\nCromwell, in my view, had been building up to an explosion of anger against anyone who defied God’s judgement in the wars of 1642-1647. Those who continued to fight must be punished for the innocent blood they had shed.\nAt Drogheda he killed English, Anglo-Irish and Irish indiscriminately, if anything singling out the English for special severity: their heads were the ones displayed on pikes; those who were spared death and transported to slave-conditions in Barbados were Irish.",
+    questionText: "According to Morrill, which group was singled out for special severity?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The English", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t3a-q4", topicId: "hist-em-irl-3", conceptId: "who-sent-slave-conditions-barbados",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 3 A Q4",
+    stem: "The following account by the English historian, John Morrill, deals with the Cromwellian massacre at Drogheda. Read it and answer the questions which follow.\n\nThe Drogheda massacre does stand out for its mercilessness, for its combination of ruthlessness and calculation, for its combination of hot- and cold-bloodiness.\nCromwell, in my view, had been building up to an explosion of anger against anyone who defied God’s judgement in the wars of 1642-1647. Those who continued to fight must be punished for the innocent blood they had shed.\nAt Drogheda he killed English, Anglo-Irish and Irish indiscriminately, if anything singling out the English for special severity: their heads were the ones displayed on pikes; those who were spared death and transported to slave-conditions in Barbados were Irish.",
+    questionText: "Who were sent to slave-conditions in Barbados?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Irish", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t3a-q5", topicId: "hist-em-irl-3", conceptId: "whose-land-confiscated-cromwellian-transplantation",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 3 A Q5",
+    stem: "The following account by the English historian, John Morrill, deals with the Cromwellian massacre at Drogheda. Read it and answer the questions which follow.\n\nThe Drogheda massacre does stand out for its mercilessness, for its combination of ruthlessness and calculation, for its combination of hot- and cold-bloodiness.\nCromwell, in my view, had been building up to an explosion of anger against anyone who defied God’s judgement in the wars of 1642-1647. Those who continued to fight must be punished for the innocent blood they had shed.\nAt Drogheda he killed English, Anglo-Irish and Irish indiscriminately, if anything singling out the English for special severity: their heads were the ones displayed on pikes; those who were spared death and transported to slave-conditions in Barbados were Irish.",
+    questionText: "Whose land was confiscated in the Cromwellian transplantation?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE area or family who lost land", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t3b", topicId: "hist-em-irl-3", conceptId: "army-graces-elizabeth-butler-countess-ormond",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 3 B",
+    stem: "Kingdom v. colony – the struggle for mastery in Ireland, 1603-1660",
+    questionText: "Write a short paragraph on one of the following:\n1. The army and the Graces.\n2. Elizabeth Butler, Countess of Ormond.\n3. Archbishop Rinuccini.\n4. The Four Masters.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t3c", topicId: "hist-em-irl-3", conceptId: "reasons-strafford-put-trial-significant-irish",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 3 C",
+    stem: "Kingdom v. colony – the struggle for mastery in Ireland, 1603-1660",
+    questionText: "Answer one of the following:\n1. For what reasons was Strafford put on trial and why was it significant in Irish history?\n2. How did Sir Phelim O’Neill and/or Owen Roe O’Neill set about achieving their aims in Ireland?\n3. What did Louvain contribute to Ireland, 1603-1660?\n4. What were the aims and achievements of Luke Wadding?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t4a-q1", topicId: "hist-em-irl-4", conceptId: "historian-summarised-penal-laws-against-irish",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 4 A Q1",
+    stem: "This edited extract sets out some of the Penal Laws enacted under King William and Queen Mary, and later under Queen Anne. Read it and answer the questions which follow.\n\nBeginning in 1695 a new set of Penal Laws was introduced that gradually would strip Irish Catholics of almost all of their basic human rights. The historian, William Lecky, summarised some of the laws as follows:\n• He (Irish Catholic) was forbidden to vote.\n• He was forbidden to receive any education, or to send his children abroad for education.\n• He was forbidden to hold any public office.\n• He was forbidden to own land.\n• He was compelled by law to attend Protestant worship.",
+    questionText: "In this extract, what historian summarised the Penal Laws against Irish Catholics?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "William Lecky", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t4a-q2", topicId: "hist-em-irl-4", conceptId: "law-passed-relation-education-irish-catholics",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 4 A Q2",
+    stem: "This edited extract sets out some of the Penal Laws enacted under King William and Queen Mary, and later under Queen Anne. Read it and answer the questions which follow.\n\nBeginning in 1695 a new set of Penal Laws was introduced that gradually would strip Irish Catholics of almost all of their basic human rights. The historian, William Lecky, summarised some of the laws as follows:\n• He (Irish Catholic) was forbidden to vote.\n• He was forbidden to receive any education, or to send his children abroad for education.\n• He was forbidden to hold any public office.\n• He was forbidden to own land.\n• He was compelled by law to attend Protestant worship.",
+    questionText: "What law was passed in relation to the education of Irish Catholics?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He was forbidden to receive any education (either here or abroad)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t4a-q3", topicId: "hist-em-irl-4", conceptId: "irish-catholic-hold-public-office",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 4 A Q3",
+    stem: "This edited extract sets out some of the Penal Laws enacted under King William and Queen Mary, and later under Queen Anne. Read it and answer the questions which follow.\n\nBeginning in 1695 a new set of Penal Laws was introduced that gradually would strip Irish Catholics of almost all of their basic human rights. The historian, William Lecky, summarised some of the laws as follows:\n• He (Irish Catholic) was forbidden to vote.\n• He was forbidden to receive any education, or to send his children abroad for education.\n• He was forbidden to hold any public office.\n• He was forbidden to own land.\n• He was compelled by law to attend Protestant worship.",
+    questionText: "Could an Irish Catholic hold a public office?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t4a-q4", topicId: "hist-em-irl-4", conceptId: "law-passed-relation-practice-religion",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 4 A Q4",
+    stem: "This edited extract sets out some of the Penal Laws enacted under King William and Queen Mary, and later under Queen Anne. Read it and answer the questions which follow.\n\nBeginning in 1695 a new set of Penal Laws was introduced that gradually would strip Irish Catholics of almost all of their basic human rights. The historian, William Lecky, summarised some of the laws as follows:\n• He (Irish Catholic) was forbidden to vote.\n• He was forbidden to receive any education, or to send his children abroad for education.\n• He was forbidden to hold any public office.\n• He was forbidden to own land.\n• He was compelled by law to attend Protestant worship.",
+    questionText: "What law was passed in relation to the practice of religion?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Catholics were compelled to attend Protestant worship", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t4a-q5", topicId: "hist-em-irl-4", conceptId: "penal-laws-passed-against-irish-catholics",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 4 A Q5",
+    stem: "This edited extract sets out some of the Penal Laws enacted under King William and Queen Mary, and later under Queen Anne. Read it and answer the questions which follow.\n\nBeginning in 1695 a new set of Penal Laws was introduced that gradually would strip Irish Catholics of almost all of their basic human rights. The historian, William Lecky, summarised some of the laws as follows:\n• He (Irish Catholic) was forbidden to vote.\n• He was forbidden to receive any education, or to send his children abroad for education.\n• He was forbidden to hold any public office.\n• He was forbidden to own land.\n• He was compelled by law to attend Protestant worship.",
+    questionText: "Why were Penal Laws passed against Irish Catholics?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE reason why Penal Laws were passed", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t4b", topicId: "hist-em-irl-4", conceptId: "earl-tyrconnell-political-pamphleteering-oliver-plunkett",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 4 B",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "Write a short paragraph on one of the following:\n1. The Earl of Tyrconnell.\n2. Political pamphleteering.\n3. Oliver Plunkett.\n4. The Cattle and Navigation Acts.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t4c", topicId: "hist-em-irl-4", conceptId: "decisions-reached-parliament-1689-notable-restoration",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 4 C",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "Answer one of the following:\n1. What decisions were reached at the Parliament of 1689?\n2. What was notable about Restoration Dublin?\n3. What leadership did Patrick Sarsfield provide in the wars of late seventeenth-century Ireland?\n4. What challenges faced the Jacobite poets during this period?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t5a-q1", topicId: "hist-em-irl-5", conceptId: "does-nicholas-sheehy-plead-innocent-guilty",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 5 A Q1",
+    stem: "This edited extract is part of the response of Father Nicholas Sheehy to the verdict of the jury at his trial in Clonmel in 1766. Read it and answer the questions which follow.\n\nMy good Lord, I am aware that anything I could say would have no effect, still, as the opportunity is afforded me I must say that I am entirely innocent of the heinous crime of which I have been convicted.\nI protest against the whole proceedings and will protest until the last moment against the shameful injustice, against the gross perjury, and the deadly malice (hatred), of which I am the victim.\nIn conclusion I must declare that, notwithstanding all this, I bear these unhappy men who persecute me even to death, not the slightest ill-will: I leave them in the hands of a just God knowing that He will deal with them according to their deserts. This is all I have to say. I leave God to distinguish between the innocent and the guilty.",
+    questionText: "Does Nicholas Sheehy plead innocent or guilty?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Innocent", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t5a-q2", topicId: "hist-em-irl-5", conceptId: "does-nicholas-sheehy-regard-trial-proceedings",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 5 A Q2",
+    stem: "This edited extract is part of the response of Father Nicholas Sheehy to the verdict of the jury at his trial in Clonmel in 1766. Read it and answer the questions which follow.\n\nMy good Lord, I am aware that anything I could say would have no effect, still, as the opportunity is afforded me I must say that I am entirely innocent of the heinous crime of which I have been convicted.\nI protest against the whole proceedings and will protest until the last moment against the shameful injustice, against the gross perjury, and the deadly malice (hatred), of which I am the victim.\nIn conclusion I must declare that, notwithstanding all this, I bear these unhappy men who persecute me even to death, not the slightest ill-will: I leave them in the hands of a just God knowing that He will deal with them according to their deserts. This is all I have to say. I leave God to distinguish between the innocent and the guilty.",
+    questionText: "Does Nicholas Sheehy regard the trial proceedings as just or unjust?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Unjust", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t5a-q3", topicId: "hist-em-irl-5", conceptId: "attitude-nicholas-sheehy-angry-hopeful-forgiving",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 5 A Q3",
+    stem: "This edited extract is part of the response of Father Nicholas Sheehy to the verdict of the jury at his trial in Clonmel in 1766. Read it and answer the questions which follow.\n\nMy good Lord, I am aware that anything I could say would have no effect, still, as the opportunity is afforded me I must say that I am entirely innocent of the heinous crime of which I have been convicted.\nI protest against the whole proceedings and will protest until the last moment against the shameful injustice, against the gross perjury, and the deadly malice (hatred), of which I am the victim.\nIn conclusion I must declare that, notwithstanding all this, I bear these unhappy men who persecute me even to death, not the slightest ill-will: I leave them in the hands of a just God knowing that He will deal with them according to their deserts. This is all I have to say. I leave God to distinguish between the innocent and the guilty.",
+    questionText: "How would you describe the attitude of Nicholas Sheehy: angry; hopeful; forgiving? Explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Forgiving", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "“I bear these men not the slightest ill-will”", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t5a-q4", topicId: "hist-em-irl-5", conceptId: "whom-does-nicholas-sheehy-leave-hands",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 5 A Q4",
+    stem: "This edited extract is part of the response of Father Nicholas Sheehy to the verdict of the jury at his trial in Clonmel in 1766. Read it and answer the questions which follow.\n\nMy good Lord, I am aware that anything I could say would have no effect, still, as the opportunity is afforded me I must say that I am entirely innocent of the heinous crime of which I have been convicted.\nI protest against the whole proceedings and will protest until the last moment against the shameful injustice, against the gross perjury, and the deadly malice (hatred), of which I am the victim.\nIn conclusion I must declare that, notwithstanding all this, I bear these unhappy men who persecute me even to death, not the slightest ill-will: I leave them in the hands of a just God knowing that He will deal with them according to their deserts. This is all I have to say. I leave God to distinguish between the innocent and the guilty.",
+    questionText: "Whom does Nicholas Sheehy leave in the hands of God?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The unhappy men who have persecuted him to death", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t5a-q5", topicId: "hist-em-irl-5", conceptId: "nicholas-sheehy-brought-trial-clonmel-1766",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 5 A Q5",
+    stem: "This edited extract is part of the response of Father Nicholas Sheehy to the verdict of the jury at his trial in Clonmel in 1766. Read it and answer the questions which follow.\n\nMy good Lord, I am aware that anything I could say would have no effect, still, as the opportunity is afforded me I must say that I am entirely innocent of the heinous crime of which I have been convicted.\nI protest against the whole proceedings and will protest until the last moment against the shameful injustice, against the gross perjury, and the deadly malice (hatred), of which I am the victim.\nIn conclusion I must declare that, notwithstanding all this, I bear these unhappy men who persecute me even to death, not the slightest ill-will: I leave them in the hands of a just God knowing that He will deal with them according to their deserts. This is all I have to say. I leave God to distinguish between the innocent and the guilty.",
+    questionText: "Why was Nicholas Sheehy brought to trial in Clonmel in 1766?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE reason why Sheehy was brought to trial", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t5b", topicId: "hist-em-irl-5", conceptId: "rise-dublin-theatre-drapier-letters-thomas",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 5 B",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "Write a short paragraph on one of the following:\n1. The rise of the Dublin theatre.\n2. Drapier’s letters.\n3. Thomas Wyse.\n4. Charles Lucas.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t5c", topicId: "hist-em-irl-5", conceptId: "who-ponsonbys-influence-did-ireland-conditions",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 5 C",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "Answer one of the following:\n1. Who were the Ponsonbys and what influence did they have in Ireland?\n2. What conditions gave rise to the Whiteboys and what methods did they use to achieve their aims?\n3. How did Arthur Guinness contribute to the economic life of the country?\n4. In what ways did Turlough O’Carolan contribute to culture in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t6a-q1", topicId: "hist-em-irl-6", conceptId: "chief-food-poor-ireland-1801",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 6 A Q1",
+    stem: "This edited extract is from a proclamation, 13 January 1801, “Urging economy in the consumption of corn, grain and potatoes”. It was issued because the previous crop harvest had been poor. Read it and answer the questions which follow.\n\nThe greatest economy is necessary in the consumption of all grain, and especially in the consumption of potatoes, which constitute the chief food of the poor of the kingdom.\nWe the Lord Lieutenant and Council do earnestly recommend, that all use of flour in pastry be discontinued, and that the consumption of bread in all families be regulated with the strictest frugality.\nAnd we do also charge all persons who keep horses for pleasure, to diminish as much as possible, the consumption of oats.\nIn order to alleviate the wants of the poor in potatoes, we do exhort all masters of families, who are not in the lower classes of life, not to allow any potatoes whatsoever to be consumed in their respective families, in order that a full supply of seed may be preserved for every district.\nAll potatoes not reserved for seed are to be kept for the consumption of the poor alone.",
+    questionText: "What was the chief food of the poor of Ireland in 1801?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Potatoes", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t6a-q2", topicId: "hist-em-irl-6", conceptId: "did-proclamation-say-use-flour-pastry",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 6 A Q2",
+    stem: "This edited extract is from a proclamation, 13 January 1801, “Urging economy in the consumption of corn, grain and potatoes”. It was issued because the previous crop harvest had been poor. Read it and answer the questions which follow.\n\nThe greatest economy is necessary in the consumption of all grain, and especially in the consumption of potatoes, which constitute the chief food of the poor of the kingdom.\nWe the Lord Lieutenant and Council do earnestly recommend, that all use of flour in pastry be discontinued, and that the consumption of bread in all families be regulated with the strictest frugality.\nAnd we do also charge all persons who keep horses for pleasure, to diminish as much as possible, the consumption of oats.\nIn order to alleviate the wants of the poor in potatoes, we do exhort all masters of families, who are not in the lower classes of life, not to allow any potatoes whatsoever to be consumed in their respective families, in order that a full supply of seed may be preserved for every district.\nAll potatoes not reserved for seed are to be kept for the consumption of the poor alone.",
+    questionText: "What did the proclamation say about the use of flour in pastry?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It should be discontinued", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t6a-q3", topicId: "hist-em-irl-6", conceptId: "those-who-keep-horses-behave-time",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 6 A Q3",
+    stem: "This edited extract is from a proclamation, 13 January 1801, “Urging economy in the consumption of corn, grain and potatoes”. It was issued because the previous crop harvest had been poor. Read it and answer the questions which follow.\n\nThe greatest economy is necessary in the consumption of all grain, and especially in the consumption of potatoes, which constitute the chief food of the poor of the kingdom.\nWe the Lord Lieutenant and Council do earnestly recommend, that all use of flour in pastry be discontinued, and that the consumption of bread in all families be regulated with the strictest frugality.\nAnd we do also charge all persons who keep horses for pleasure, to diminish as much as possible, the consumption of oats.\nIn order to alleviate the wants of the poor in potatoes, we do exhort all masters of families, who are not in the lower classes of life, not to allow any potatoes whatsoever to be consumed in their respective families, in order that a full supply of seed may be preserved for every district.\nAll potatoes not reserved for seed are to be kept for the consumption of the poor alone.",
+    questionText: "How were those who keep horses to behave in this time of shortage?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They should diminish (as much as possible) the consumption of oats", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t6a-q4", topicId: "hist-em-irl-6", conceptId: "some-families-asked-not-consume-potatoes",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 6 A Q4",
+    stem: "This edited extract is from a proclamation, 13 January 1801, “Urging economy in the consumption of corn, grain and potatoes”. It was issued because the previous crop harvest had been poor. Read it and answer the questions which follow.\n\nThe greatest economy is necessary in the consumption of all grain, and especially in the consumption of potatoes, which constitute the chief food of the poor of the kingdom.\nWe the Lord Lieutenant and Council do earnestly recommend, that all use of flour in pastry be discontinued, and that the consumption of bread in all families be regulated with the strictest frugality.\nAnd we do also charge all persons who keep horses for pleasure, to diminish as much as possible, the consumption of oats.\nIn order to alleviate the wants of the poor in potatoes, we do exhort all masters of families, who are not in the lower classes of life, not to allow any potatoes whatsoever to be consumed in their respective families, in order that a full supply of seed may be preserved for every district.\nAll potatoes not reserved for seed are to be kept for the consumption of the poor alone.",
+    questionText: "Why were some families asked not to consume any potatoes?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A full supply of seed potatoes may be preserved/ All potatoes not reserved for seed are to be kept for the poor", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t6a-q5", topicId: "hist-em-irl-6", conceptId: "there-much-rural-discontent-during-period",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 6 A Q5",
+    stem: "This edited extract is from a proclamation, 13 January 1801, “Urging economy in the consumption of corn, grain and potatoes”. It was issued because the previous crop harvest had been poor. Read it and answer the questions which follow.\n\nThe greatest economy is necessary in the consumption of all grain, and especially in the consumption of potatoes, which constitute the chief food of the poor of the kingdom.\nWe the Lord Lieutenant and Council do earnestly recommend, that all use of flour in pastry be discontinued, and that the consumption of bread in all families be regulated with the strictest frugality.\nAnd we do also charge all persons who keep horses for pleasure, to diminish as much as possible, the consumption of oats.\nIn order to alleviate the wants of the poor in potatoes, we do exhort all masters of families, who are not in the lower classes of life, not to allow any potatoes whatsoever to be consumed in their respective families, in order that a full supply of seed may be preserved for every district.\nAll potatoes not reserved for seed are to be kept for the consumption of the poor alone.",
+    questionText: "Why was there much rural discontent during this period?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason for rural discontent", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t6b", topicId: "hist-em-irl-6", conceptId: "nano-nagle-mary-anne-mccracken-georgian",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 6 B",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "Write a short paragraph on one of the following:\n1. Nano Nagle.\n2. Mary Anne McCracken.\n3. Georgian culture: architecture, art, literature and learning.\n4. Gaelic culture: literature and learning.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s2t6c", topicId: "hist-em-irl-6", conceptId: "did-new-industries-contribute-rise-belfast",
+    section: "2", questionRef: "2016 OL Early Modern Section 2 Topic 6 C",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "Answer one of the following:\n1. How did new industries contribute to the rise of Belfast?\n2. What did Henry Grattan hope to achieve and to what extent was he successful?\n3. What main events took place during the Wexford Rebellion, 1798?\n4. Why did the government found and fund Maynooth College?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t2a-q1", topicId: "hist-em-eur-2", conceptId: "who-commander-armada",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 2 A Q1",
+    stem: "This is an extract from a letter written by the Duke of Parma to Philip II of Spain in June 1588. It arrived after the departure of the Armada. Read it and answer the questions which follow.\n\nThe Duke of Sidonia, commander of the Armada, will learn from my letters that I cannot depart in the slightest degree from the plan laid down, or from your majesty’s express orders.\nWith regard to my going out to join him he will plainly see that with these little, low, flat boats, built for these rivers and not for the sea, I cannot diverge from the short direct passage which has been agreed upon. It will be a great mercy of God, indeed, if, even when our passage is protected and the Channel free from the enemy’s vessels, we are able to reach land in these boats. For that reason, we cannot run the risk of losing them by departing from the course agreed upon.\nIf I were to attempt such a thing by going out to meet the Duke, and we came across any of the armed English or rebel ships, they could destroy us with the greatest of ease.",
+    questionText: "Who was the commander of the Armada?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Duke of Sidonia", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t2a-q2", topicId: "hist-em-eur-2", conceptId: "problems-boats-duke-parma-transport-troops",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 2 A Q2",
+    stem: "This is an extract from a letter written by the Duke of Parma to Philip II of Spain in June 1588. It arrived after the departure of the Armada. Read it and answer the questions which follow.\n\nThe Duke of Sidonia, commander of the Armada, will learn from my letters that I cannot depart in the slightest degree from the plan laid down, or from your majesty’s express orders.\nWith regard to my going out to join him he will plainly see that with these little, low, flat boats, built for these rivers and not for the sea, I cannot diverge from the short direct passage which has been agreed upon. It will be a great mercy of God, indeed, if, even when our passage is protected and the Channel free from the enemy’s vessels, we are able to reach land in these boats. For that reason, we cannot run the risk of losing them by departing from the course agreed upon.\nIf I were to attempt such a thing by going out to meet the Duke, and we came across any of the armed English or rebel ships, they could destroy us with the greatest of ease.",
+    questionText: "What were the problems with the boats with which the Duke of Parma had to transport troops?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They are little, low and flat/ Built for rivers and not for the sea", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t2a-q3", topicId: "hist-em-eur-2", conceptId: "risks-duke-parma-departed-plan-laid",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 2 A Q3",
+    stem: "This is an extract from a letter written by the Duke of Parma to Philip II of Spain in June 1588. It arrived after the departure of the Armada. Read it and answer the questions which follow.\n\nThe Duke of Sidonia, commander of the Armada, will learn from my letters that I cannot depart in the slightest degree from the plan laid down, or from your majesty’s express orders.\nWith regard to my going out to join him he will plainly see that with these little, low, flat boats, built for these rivers and not for the sea, I cannot diverge from the short direct passage which has been agreed upon. It will be a great mercy of God, indeed, if, even when our passage is protected and the Channel free from the enemy’s vessels, we are able to reach land in these boats. For that reason, we cannot run the risk of losing them by departing from the course agreed upon.\nIf I were to attempt such a thing by going out to meet the Duke, and we came across any of the armed English or rebel ships, they could destroy us with the greatest of ease.",
+    questionText: "What were the risks if the Duke of Parma departed from the plan laid down?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They are risky because they are not seaworthy/ English ships could destroy them easily", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t2a-q4", topicId: "hist-em-eur-2", conceptId: "communications-good-between-duke-sidonia-duke",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 2 A Q4",
+    stem: "This is an extract from a letter written by the Duke of Parma to Philip II of Spain in June 1588. It arrived after the departure of the Armada. Read it and answer the questions which follow.\n\nThe Duke of Sidonia, commander of the Armada, will learn from my letters that I cannot depart in the slightest degree from the plan laid down, or from your majesty’s express orders.\nWith regard to my going out to join him he will plainly see that with these little, low, flat boats, built for these rivers and not for the sea, I cannot diverge from the short direct passage which has been agreed upon. It will be a great mercy of God, indeed, if, even when our passage is protected and the Channel free from the enemy’s vessels, we are able to reach land in these boats. For that reason, we cannot run the risk of losing them by departing from the course agreed upon.\nIf I were to attempt such a thing by going out to meet the Duke, and we came across any of the armed English or rebel ships, they could destroy us with the greatest of ease.",
+    questionText: "Were communications good between the Duke of Sidonia and the Duke of Parma? Explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No. Sidonia seems to expect Parma meet up with his ships, but Parma insists three times that he will not change route", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t2a-q5", topicId: "hist-em-eur-2", conceptId: "chiefly-led-defeat-armada",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 2 A Q5",
+    stem: "This is an extract from a letter written by the Duke of Parma to Philip II of Spain in June 1588. It arrived after the departure of the Armada. Read it and answer the questions which follow.\n\nThe Duke of Sidonia, commander of the Armada, will learn from my letters that I cannot depart in the slightest degree from the plan laid down, or from your majesty’s express orders.\nWith regard to my going out to join him he will plainly see that with these little, low, flat boats, built for these rivers and not for the sea, I cannot diverge from the short direct passage which has been agreed upon. It will be a great mercy of God, indeed, if, even when our passage is protected and the Channel free from the enemy’s vessels, we are able to reach land in these boats. For that reason, we cannot run the risk of losing them by departing from the course agreed upon.\nIf I were to attempt such a thing by going out to meet the Duke, and we came across any of the armed English or rebel ships, they could destroy us with the greatest of ease.",
+    questionText: "What chiefly led to the defeat of the Armada?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE reason why the Armada was defeated", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t2b", topicId: "hist-em-eur-2", conceptId: "tycho-brahe-rise-muscovy-sir-walter",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 2 B",
+    stem: "Religion and power: politics in the later 16th century, 1567-1609",
+    questionText: "Write a short paragraph on one of the following:\n1. Tycho Brahe.\n2. The rise of Muscovy.\n3. Sir Walter Raleigh.\n4. Elizabethan Anglicanism.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t2c", topicId: "hist-em-eur-2", conceptId: "did-matteo-ricci-contribute-success-jesuit",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 2 C",
+    stem: "Religion and power: politics in the later 16th century, 1567-1609",
+    questionText: "Answer one of the following:\n1. How did Matteo Ricci contribute to the success of the Jesuit mission to China?\n2. What role did William the Silent play in the Revolt of the Netherlands?\n3. What conditions led to the decline of the port of Antwerp?\n4. How successful a ruler of France was Catherine de Medici?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t3a-q1", topicId: "hist-em-eur-3", conceptId: "main-area-dutch-mercantile-trade-1609",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 3 A Q1",
+    stem: "The following extract gives an account of Dutch trade, and particularly of its expansion in Asia. Read it and answer the questions which follow.\n\nAmsterdam led the way in Dutch international trade and in the commerce of north-western Europe generally. In this respect Amsterdam took over the role previously played by Antwerp, which had been under almost continual blockade since the 1580s. The main area of Dutch mercantile trade was the Baltic Sea where grain was purchased in exchange for wine, fish and textiles.\nLess significant for Dutch prosperity – it accounted for only 7 per cent of total shipping and profits were seldom spectacular – was the Indies trade. During the seventeenth century the East India Company gradually extended the number of its trading posts in the western Pacific and Indian Ocean. By 1650 the Company had stations in the Moluccas, Java, Malaya, India, Ceylon (Sri Lanka) and Taiwan. These trading posts provided tea, silk and spices which were transported back to Holland for sale and re-export.",
+    questionText: "What was the main area of Dutch mercantile trade, 1609-1660?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Baltic Sea", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t3a-q2", topicId: "hist-em-eur-3", conceptId: "percentage-dutch-shipping-used-trade-indies",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 3 A Q2",
+    stem: "The following extract gives an account of Dutch trade, and particularly of its expansion in Asia. Read it and answer the questions which follow.\n\nAmsterdam led the way in Dutch international trade and in the commerce of north-western Europe generally. In this respect Amsterdam took over the role previously played by Antwerp, which had been under almost continual blockade since the 1580s. The main area of Dutch mercantile trade was the Baltic Sea where grain was purchased in exchange for wine, fish and textiles.\nLess significant for Dutch prosperity – it accounted for only 7 per cent of total shipping and profits were seldom spectacular – was the Indies trade. During the seventeenth century the East India Company gradually extended the number of its trading posts in the western Pacific and Indian Ocean. By 1650 the Company had stations in the Moluccas, Java, Malaya, India, Ceylon (Sri Lanka) and Taiwan. These trading posts provided tea, silk and spices which were transported back to Holland for sale and re-export.",
+    questionText: "What percentage of Dutch shipping was used in their trade with the Indies?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "7%", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t3a-q3", topicId: "hist-em-eur-3", conceptId: "1650-new-trading-posts-dutch-obtained",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 3 A Q3",
+    stem: "The following extract gives an account of Dutch trade, and particularly of its expansion in Asia. Read it and answer the questions which follow.\n\nAmsterdam led the way in Dutch international trade and in the commerce of north-western Europe generally. In this respect Amsterdam took over the role previously played by Antwerp, which had been under almost continual blockade since the 1580s. The main area of Dutch mercantile trade was the Baltic Sea where grain was purchased in exchange for wine, fish and textiles.\nLess significant for Dutch prosperity – it accounted for only 7 per cent of total shipping and profits were seldom spectacular – was the Indies trade. During the seventeenth century the East India Company gradually extended the number of its trading posts in the western Pacific and Indian Ocean. By 1650 the Company had stations in the Moluccas, Java, Malaya, India, Ceylon (Sri Lanka) and Taiwan. These trading posts provided tea, silk and spices which were transported back to Holland for sale and re-export.",
+    questionText: "By 1650, what new trading posts had the Dutch obtained in Asia?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Moluccas, Java, Malaya, India, Ceylon, Taiwan", marks: 6, contextNote: "Any THREE @ 2M each" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t3a-q4", topicId: "hist-em-eur-3", conceptId: "goods-did-dutch-source-asia",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 3 A Q4",
+    stem: "The following extract gives an account of Dutch trade, and particularly of its expansion in Asia. Read it and answer the questions which follow.\n\nAmsterdam led the way in Dutch international trade and in the commerce of north-western Europe generally. In this respect Amsterdam took over the role previously played by Antwerp, which had been under almost continual blockade since the 1580s. The main area of Dutch mercantile trade was the Baltic Sea where grain was purchased in exchange for wine, fish and textiles.\nLess significant for Dutch prosperity – it accounted for only 7 per cent of total shipping and profits were seldom spectacular – was the Indies trade. During the seventeenth century the East India Company gradually extended the number of its trading posts in the western Pacific and Indian Ocean. By 1650 the Company had stations in the Moluccas, Java, Malaya, India, Ceylon (Sri Lanka) and Taiwan. These trading posts provided tea, silk and spices which were transported back to Holland for sale and re-export.",
+    questionText: "What goods did the Dutch source in Asia?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tea, silk, spices", marks: 6, contextNote: "All THREE @ 2M each" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t3a-q5", topicId: "hist-em-eur-3", conceptId: "did-decline-money-supply-affect-dutch",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 3 A Q5",
+    stem: "The following extract gives an account of Dutch trade, and particularly of its expansion in Asia. Read it and answer the questions which follow.\n\nAmsterdam led the way in Dutch international trade and in the commerce of north-western Europe generally. In this respect Amsterdam took over the role previously played by Antwerp, which had been under almost continual blockade since the 1580s. The main area of Dutch mercantile trade was the Baltic Sea where grain was purchased in exchange for wine, fish and textiles.\nLess significant for Dutch prosperity – it accounted for only 7 per cent of total shipping and profits were seldom spectacular – was the Indies trade. During the seventeenth century the East India Company gradually extended the number of its trading posts in the western Pacific and Indian Ocean. By 1650 the Company had stations in the Moluccas, Java, Malaya, India, Ceylon (Sri Lanka) and Taiwan. These trading posts provided tea, silk and spices which were transported back to Holland for sale and re-export.",
+    questionText: "How did decline in the money supply affect Dutch trade in Asia?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE effect of the decline in money supply on Dutch trade in Asia", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t3b", topicId: "hist-em-eur-3", conceptId: "rise-empirical-science-baroque-music-art",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 3 B",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "Write a short paragraph on one of the following:\n1. The rise of empirical science.\n2. Baroque music and art.\n3. Queen Christina of Sweden.\n4 “Witch-hunting”.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t3c", topicId: "hist-em-eur-3", conceptId: "did-catalonia-revolt-against-spain-outcome",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 3 C",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "Answer one of the following:\n1. Why did Catalonia revolt against Spain and what was the outcome of that revolt?\n2. What was Galileo’s response to the Inquisition and what was the court’s judgement?\n3. How did Cardinal Richelieu contribute to the development of French absolutism?\n4. How significant was the role of Albrecht von Wallenstein in the Thirty Years War?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t4a-q1", topicId: "hist-em-eur-4", conceptId: "offer-did-exiled-prince-charles-heir",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 4 A Q1",
+    stem: "In 1660 the Cromwellian regime fell apart. General Monck invaded England and restored to Parliament the Members who had been excluded. Prince Charles, the heir to the throne of England, in exile in the Netherlands, sent two letters – one to Parliament and one to General Monck – offering to negotiate his return. Clarendon described what happened next.\n\nThe House [of Commons] immediately called to have both letters read, which was done. And from this time Charles Stuart was no more heard of and such universal joy was never within those walls. Members of the House appointed a committee to prepare an answer to his majesty’s letter, expressing the great and joyful sense the House had of his gracious offers, and their humble and hearty thanks for the same, and with professions of their loyalty and duty to his majesty; and that the House should give a speedy answer to his majesty’s gracious proposals.\nThey likewise ordered, at the same time, that both his majesty’s letters, that to the House and that to the general, with his majesty’s declaration, therein enclosed, and the resolution of the House thereupon, should be forthwith printed and published.",
+    questionText: "What offer did the exiled Prince Charles, heir to the throne of England, make in his letters?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He offered to negotiate his return", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t4a-q2", topicId: "hist-em-eur-4", conceptId: "emotion-expressed-house-commons-when-letters",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 4 A Q2",
+    stem: "In 1660 the Cromwellian regime fell apart. General Monck invaded England and restored to Parliament the Members who had been excluded. Prince Charles, the heir to the throne of England, in exile in the Netherlands, sent two letters – one to Parliament and one to General Monck – offering to negotiate his return. Clarendon described what happened next.\n\nThe House [of Commons] immediately called to have both letters read, which was done. And from this time Charles Stuart was no more heard of and such universal joy was never within those walls. Members of the House appointed a committee to prepare an answer to his majesty’s letter, expressing the great and joyful sense the House had of his gracious offers, and their humble and hearty thanks for the same, and with professions of their loyalty and duty to his majesty; and that the House should give a speedy answer to his majesty’s gracious proposals.\nThey likewise ordered, at the same time, that both his majesty’s letters, that to the House and that to the general, with his majesty’s declaration, therein enclosed, and the resolution of the House thereupon, should be forthwith printed and published.",
+    questionText: "What emotion was expressed in the House of Commons when the letters were read to Members?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Joy", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t4a-q3", topicId: "hist-em-eur-4", conceptId: "did-house-commons-send-these-letters",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 4 A Q3",
+    stem: "In 1660 the Cromwellian regime fell apart. General Monck invaded England and restored to Parliament the Members who had been excluded. Prince Charles, the heir to the throne of England, in exile in the Netherlands, sent two letters – one to Parliament and one to General Monck – offering to negotiate his return. Clarendon described what happened next.\n\nThe House [of Commons] immediately called to have both letters read, which was done. And from this time Charles Stuart was no more heard of and such universal joy was never within those walls. Members of the House appointed a committee to prepare an answer to his majesty’s letter, expressing the great and joyful sense the House had of his gracious offers, and their humble and hearty thanks for the same, and with professions of their loyalty and duty to his majesty; and that the House should give a speedy answer to his majesty’s gracious proposals.\nThey likewise ordered, at the same time, that both his majesty’s letters, that to the House and that to the general, with his majesty’s declaration, therein enclosed, and the resolution of the House thereupon, should be forthwith printed and published.",
+    questionText: "What answer did the House of Commons send to these letters?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Humble and hearty thanks/ Professions of loyalty and duty", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t4a-q4", topicId: "hist-em-eur-4", conceptId: "where-prince-charles-heir-throne-england",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 4 A Q4",
+    stem: "In 1660 the Cromwellian regime fell apart. General Monck invaded England and restored to Parliament the Members who had been excluded. Prince Charles, the heir to the throne of England, in exile in the Netherlands, sent two letters – one to Parliament and one to General Monck – offering to negotiate his return. Clarendon described what happened next.\n\nThe House [of Commons] immediately called to have both letters read, which was done. And from this time Charles Stuart was no more heard of and such universal joy was never within those walls. Members of the House appointed a committee to prepare an answer to his majesty’s letter, expressing the great and joyful sense the House had of his gracious offers, and their humble and hearty thanks for the same, and with professions of their loyalty and duty to his majesty; and that the House should give a speedy answer to his majesty’s gracious proposals.\nThey likewise ordered, at the same time, that both his majesty’s letters, that to the House and that to the general, with his majesty’s declaration, therein enclosed, and the resolution of the House thereupon, should be forthwith printed and published.",
+    questionText: "Where was Prince Charles, heir to the throne of England, when he sent the two letters?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Netherlands", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t4a-q5", topicId: "hist-em-eur-4", conceptId: "outcome-prince-charles-offer-negotiate-his",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 4 A Q5",
+    stem: "In 1660 the Cromwellian regime fell apart. General Monck invaded England and restored to Parliament the Members who had been excluded. Prince Charles, the heir to the throne of England, in exile in the Netherlands, sent two letters – one to Parliament and one to General Monck – offering to negotiate his return. Clarendon described what happened next.\n\nThe House [of Commons] immediately called to have both letters read, which was done. And from this time Charles Stuart was no more heard of and such universal joy was never within those walls. Members of the House appointed a committee to prepare an answer to his majesty’s letter, expressing the great and joyful sense the House had of his gracious offers, and their humble and hearty thanks for the same, and with professions of their loyalty and duty to his majesty; and that the House should give a speedy answer to his majesty’s gracious proposals.\nThey likewise ordered, at the same time, that both his majesty’s letters, that to the House and that to the general, with his majesty’s declaration, therein enclosed, and the resolution of the House thereupon, should be forthwith printed and published.",
+    questionText: "What was the outcome of Prince Charles’ offer to negotiate his return to England?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Prince returned", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t4b", topicId: "hist-em-eur-4", conceptId: "rise-brandenburg-poland-under-john-sobieski",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 4 B",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "Write a short paragraph on one of the following:\n1. The rise of Brandenburg.\n2. Poland under John Sobieski.\n3. Sir Henry Morgan.\n4. Isaac Newton.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t4c", topicId: "hist-em-eur-4", conceptId: "aims-achievements-louis-xiv-ways-did",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 4 C",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "Answer one of the following:\n1. What were the aims and achievements of Louis XIV?\n2. In what ways did Peter the Great transform Russia?\n3. How did the (English) East India Company affect India?\n4. How great was the influence of the Court of Versailles?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t5a-q1", topicId: "hist-em-eur-5", conceptId: "when-alarm-raised-concord-amos-barrett",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 5 A Q1",
+    stem: "Amos Barrett, a 22 year old corporal in a company of Concord minutemen, gave the following account of a skirmish with British soldiers, 18 April 1775. Read it and answer the questions which follow.\n\nWe at Concord heard they were a coming. The bell rang at three o’clock for an alarm. As I was then a minuteman, I was soon in town and found my captain and the rest of my company at the post. It wasn’t long before there were other minute companies. One company, I believe, of minutemen was raised in almost every town to stand at a minute’s warning. Before sunrise there was, I believe, 150 of us and more.\nWhen we were on the hill by the bridge, there was about eighty or ninety British came to the bridge and there made a halt. After a while they began to tear up the plank of the bridge. Major Buttrick said if we agreed with him, we should drive them away from the bridge; they should not tear that up. We all said we would go. We were all ordered to load – and had strict orders not to fire till they fired first, then to fire as fast as we could.",
+    questionText: "When was the alarm raised in Concord according to Amos Barrett?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3 o’clock", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t5a-q2", topicId: "hist-em-eur-5", conceptId: "many-minutemen-gathered-concord-before-sunrise",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 5 A Q2",
+    stem: "Amos Barrett, a 22 year old corporal in a company of Concord minutemen, gave the following account of a skirmish with British soldiers, 18 April 1775. Read it and answer the questions which follow.\n\nWe at Concord heard they were a coming. The bell rang at three o’clock for an alarm. As I was then a minuteman, I was soon in town and found my captain and the rest of my company at the post. It wasn’t long before there were other minute companies. One company, I believe, of minutemen was raised in almost every town to stand at a minute’s warning. Before sunrise there was, I believe, 150 of us and more.\nWhen we were on the hill by the bridge, there was about eighty or ninety British came to the bridge and there made a halt. After a while they began to tear up the plank of the bridge. Major Buttrick said if we agreed with him, we should drive them away from the bridge; they should not tear that up. We all said we would go. We were all ordered to load – and had strict orders not to fire till they fired first, then to fire as fast as we could.",
+    questionText: "How many minutemen had gathered in Concord before sunrise?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "150", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t5a-q3", topicId: "hist-em-eur-5", conceptId: "amos-many-british-soldiers-there",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 5 A Q3",
+    stem: "Amos Barrett, a 22 year old corporal in a company of Concord minutemen, gave the following account of a skirmish with British soldiers, 18 April 1775. Read it and answer the questions which follow.\n\nWe at Concord heard they were a coming. The bell rang at three o’clock for an alarm. As I was then a minuteman, I was soon in town and found my captain and the rest of my company at the post. It wasn’t long before there were other minute companies. One company, I believe, of minutemen was raised in almost every town to stand at a minute’s warning. Before sunrise there was, I believe, 150 of us and more.\nWhen we were on the hill by the bridge, there was about eighty or ninety British came to the bridge and there made a halt. After a while they began to tear up the plank of the bridge. Major Buttrick said if we agreed with him, we should drive them away from the bridge; they should not tear that up. We all said we would go. We were all ordered to load – and had strict orders not to fire till they fired first, then to fire as fast as we could.",
+    questionText: "According to Amos, how many British soldiers were there?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "80 or 90", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t5a-q4", topicId: "hist-em-eur-5", conceptId: "amos-orders-did-major-buttrick-company",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 5 A Q4",
+    stem: "Amos Barrett, a 22 year old corporal in a company of Concord minutemen, gave the following account of a skirmish with British soldiers, 18 April 1775. Read it and answer the questions which follow.\n\nWe at Concord heard they were a coming. The bell rang at three o’clock for an alarm. As I was then a minuteman, I was soon in town and found my captain and the rest of my company at the post. It wasn’t long before there were other minute companies. One company, I believe, of minutemen was raised in almost every town to stand at a minute’s warning. Before sunrise there was, I believe, 150 of us and more.\nWhen we were on the hill by the bridge, there was about eighty or ninety British came to the bridge and there made a halt. After a while they began to tear up the plank of the bridge. Major Buttrick said if we agreed with him, we should drive them away from the bridge; they should not tear that up. We all said we would go. We were all ordered to load – and had strict orders not to fire till they fired first, then to fire as fast as we could.",
+    questionText: "According to Amos, what orders did Major Buttrick give to the company?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ordered to repel the British from the bridge/ Ordered to load their weapons/ Ordered not to fire until the British fired first", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t5a-q5", topicId: "hist-em-eur-5", conceptId: "did-american-colonists-revolt-against-british",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 5 A Q5",
+    stem: "Amos Barrett, a 22 year old corporal in a company of Concord minutemen, gave the following account of a skirmish with British soldiers, 18 April 1775. Read it and answer the questions which follow.\n\nWe at Concord heard they were a coming. The bell rang at three o’clock for an alarm. As I was then a minuteman, I was soon in town and found my captain and the rest of my company at the post. It wasn’t long before there were other minute companies. One company, I believe, of minutemen was raised in almost every town to stand at a minute’s warning. Before sunrise there was, I believe, 150 of us and more.\nWhen we were on the hill by the bridge, there was about eighty or ninety British came to the bridge and there made a halt. After a while they began to tear up the plank of the bridge. Major Buttrick said if we agreed with him, we should drive them away from the bridge; they should not tear that up. We all said we would go. We were all ordered to load – and had strict orders not to fire till they fired first, then to fire as fast as we could.",
+    questionText: "Why did the American colonists revolt against British rule?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason for the American revolt", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t5b", topicId: "hist-em-eur-5", conceptId: "maria-theresa-empress-austria-duke-bridgewater",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 5 B",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "Write a short paragraph on one of the following:\n1. Maria Theresa, Empress of Austria.\n2. The Duke of Bridgewater.\n3. The spread of literacy.\n4. Mercantilism and laissez-faire.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t5c", topicId: "hist-em-eur-5", conceptId: "did-frederick-great-expand-prussia-slave",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 5 C",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "Answer one of the following:\n1. How did Frederick the Great expand Prussia?\n2. How were the slave plantations of the West Indies linked to the trade in sugar and tobacco?\n3. How successful was the rule of Catherine the Great of Russia?\n4. What role did the Encyclopédie play in the Enlightenment?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t6a-q1", topicId: "hist-em-eur-6", conceptId: "where-beethoven-living-1814",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 6 A Q1",
+    stem: "Ludwig van Beethoven was beginning to make his reputation as a composer when he began to go deaf. The following account is by Alois Weissenbach, professor of surgery and head surgeon of St John Hospital in Salzburg, who had attended one of Beethoven’s performances on 16 September 1814. Read his account and answer the questions which follow.\n\nCompletely filled with the gloriousness of the creative genius of this music, I went from the theatre home with the firm resolve not to leave Vienna without having made the personal acquaintance of so admirable a man; and strangely enough, when I reached my lodgings, I found Beethoven’s visiting card upon my table with a cordial invitation to breakfast with him in the morning.\nHe went once through a terrible typhus and from that time dates the decay of his nervous system and probably also his melancholy loss of hearing. Often and long have I spoken with him on this subject; it is a greater misfortune for him than for the world.\nIt is significant that before that illness his hearing was unsurpassably keen and delicate, and that even now he is painfully sensible to discordant (unpleasant) sounds.",
+    questionText: "Where was Beethoven living in 1814?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vienna", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t6a-q2", topicId: "hist-em-eur-6", conceptId: "caused-beethoven-deafness-weissenbach-opinion",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 6 A Q2",
+    stem: "Ludwig van Beethoven was beginning to make his reputation as a composer when he began to go deaf. The following account is by Alois Weissenbach, professor of surgery and head surgeon of St John Hospital in Salzburg, who had attended one of Beethoven’s performances on 16 September 1814. Read his account and answer the questions which follow.\n\nCompletely filled with the gloriousness of the creative genius of this music, I went from the theatre home with the firm resolve not to leave Vienna without having made the personal acquaintance of so admirable a man; and strangely enough, when I reached my lodgings, I found Beethoven’s visiting card upon my table with a cordial invitation to breakfast with him in the morning.\nHe went once through a terrible typhus and from that time dates the decay of his nervous system and probably also his melancholy loss of hearing. Often and long have I spoken with him on this subject; it is a greater misfortune for him than for the world.\nIt is significant that before that illness his hearing was unsurpassably keen and delicate, and that even now he is painfully sensible to discordant (unpleasant) sounds.",
+    questionText: "What had caused Beethoven’s deafness in Weissenbach’s opinion?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Typhus", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t6a-q3", topicId: "hist-em-eur-6", conceptId: "sounds-caused-beethoven-pain-1814",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 6 A Q3",
+    stem: "Ludwig van Beethoven was beginning to make his reputation as a composer when he began to go deaf. The following account is by Alois Weissenbach, professor of surgery and head surgeon of St John Hospital in Salzburg, who had attended one of Beethoven’s performances on 16 September 1814. Read his account and answer the questions which follow.\n\nCompletely filled with the gloriousness of the creative genius of this music, I went from the theatre home with the firm resolve not to leave Vienna without having made the personal acquaintance of so admirable a man; and strangely enough, when I reached my lodgings, I found Beethoven’s visiting card upon my table with a cordial invitation to breakfast with him in the morning.\nHe went once through a terrible typhus and from that time dates the decay of his nervous system and probably also his melancholy loss of hearing. Often and long have I spoken with him on this subject; it is a greater misfortune for him than for the world.\nIt is significant that before that illness his hearing was unsurpassably keen and delicate, and that even now he is painfully sensible to discordant (unpleasant) sounds.",
+    questionText: "What sounds caused Beethoven pain in 1814?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Discordant/unpleasant sounds", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t6a-q4", topicId: "hist-em-eur-6", conceptId: "weissenbach-opinion-beethoven-music-1814",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 6 A Q4",
+    stem: "Ludwig van Beethoven was beginning to make his reputation as a composer when he began to go deaf. The following account is by Alois Weissenbach, professor of surgery and head surgeon of St John Hospital in Salzburg, who had attended one of Beethoven’s performances on 16 September 1814. Read his account and answer the questions which follow.\n\nCompletely filled with the gloriousness of the creative genius of this music, I went from the theatre home with the firm resolve not to leave Vienna without having made the personal acquaintance of so admirable a man; and strangely enough, when I reached my lodgings, I found Beethoven’s visiting card upon my table with a cordial invitation to breakfast with him in the morning.\nHe went once through a terrible typhus and from that time dates the decay of his nervous system and probably also his melancholy loss of hearing. Often and long have I spoken with him on this subject; it is a greater misfortune for him than for the world.\nIt is significant that before that illness his hearing was unsurpassably keen and delicate, and that even now he is painfully sensible to discordant (unpleasant) sounds.",
+    questionText: "What was Weissenbach’s opinion of Beethoven’s music in 1814?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Glorious/ Work of genius", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t6a-q5", topicId: "hist-em-eur-6", conceptId: "beethoven-compositions",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 6 A Q5",
+    stem: "Ludwig van Beethoven was beginning to make his reputation as a composer when he began to go deaf. The following account is by Alois Weissenbach, professor of surgery and head surgeon of St John Hospital in Salzburg, who had attended one of Beethoven’s performances on 16 September 1814. Read his account and answer the questions which follow.\n\nCompletely filled with the gloriousness of the creative genius of this music, I went from the theatre home with the firm resolve not to leave Vienna without having made the personal acquaintance of so admirable a man; and strangely enough, when I reached my lodgings, I found Beethoven’s visiting card upon my table with a cordial invitation to breakfast with him in the morning.\nHe went once through a terrible typhus and from that time dates the decay of his nervous system and probably also his melancholy loss of hearing. Often and long have I spoken with him on this subject; it is a greater misfortune for him than for the world.\nIt is significant that before that illness his hearing was unsurpassably keen and delicate, and that even now he is painfully sensible to discordant (unpleasant) sounds.",
+    questionText: "Name two of Beethoven’s compositions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any TWO of Beethoven’s compositions 3 + 3", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2016 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t6b", topicId: "hist-em-eur-6", conceptId: "establishment-american-republic-1776-1789-tom",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 6 B",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "Write a short paragraph on one of the following:\n1. Establishment of the American Republic, 1776-1789.\n2. Tom Paine.\n3. Mary Wollstonecraft.\n4. Abolition of the slave trade.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2016-ol-em-s3t6c", topicId: "hist-em-eur-6", conceptId: "purpose-civil-constitution-clergy-france-part",
+    section: "3", questionRef: "2016 OL Early Modern Section 3 Topic 6 C",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "Answer one of the following:\n1. What was the purpose of the Civil Constitution of the Clergy in France?\n2. What part did Maximilien de Robespierre play in the reign of terror?\n3. What lasting reforms did Napoleon introduce in Europe?\n4. How did the Industrial Revolution contribute to the growth of Manchester?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2017, level: "ordinary",
     paperFileid: "LC004GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
@@ -3148,7 +4975,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Nuremberg Rallies",
     questionText: "What was the purpose of the Nuremberg Rallies in Nazi Germany?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[3], schemePages: [7] },
+    rubric: { ...ESSAY_MARKING[4], schemePages: [7] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4980,7 +6807,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: Seville, the port of the New World",
     questionText: "How did Seville change as a result of the discovery of the New World, 1492‐1567?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [17] },
+    rubric: { ...ESSAY_MARKING[3], schemePages: [17] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8681,7 +10508,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Bardic Schools",
     questionText: "What training was provided by the Bardic Schools?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [18] },
+    rubric: { ...ESSAY_MARKING[3], schemePages: [18] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12330,7 +14157,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Plantation of Laois/Offaly",
     questionText: "What was the purpose of the Plantation of Laois/Offaly and did it achieve its purpose?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [17] },
+    rubric: { ...ESSAY_MARKING[3], schemePages: [17] },
   } as SecCard,
   {
     ...base, kind: "question",
