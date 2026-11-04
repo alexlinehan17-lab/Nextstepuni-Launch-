@@ -17397,5 +17397,331 @@
   "stem": "Computing and technology has made huge progress over the last 100 years. Computers are getting faster, smaller and more powerful. Figure 10 shows a timeline with some of the main computing developments over the last century.",
   "questionFigureKey": "computer-science-2022-OL-paper-q15-fig10",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2021-hl-q6",
+  "topicId": "cs-1-2",
+  "conceptId": "scenarios-where-algorithm-could-perceived-unfair",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 HL Q6",
+  "questionText": "Describe two scenarios where the algorithm could be perceived to be unfair.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Describe two scenarios where the algorithm could be perceived to be unfair.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Family discount should be allowed for situations where only 1 parent (adult) is travelling with a child. Could be perceived to discriminate against single-parent families.",
+      "You could have any number of children travelling and only a single adult and get no discount.",
+      "If num_adults >= 10 and num_children > 0 (could be 99 children) the discount is family - should be large group discount (as opposed to family discount).",
+      "Children don't contribute to large or small group discounts.",
+      "Any valid scenario."
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    },
+    "openList": true,
+    "contextNote": "Scenario 1 (best scenario). Good description – clear understanding 3 mark Scenario 2 (2nd best scenario). Good description – clear understanding 2 marks"
+   }
+  ],
+  "stem": "You have been asked to assess an algorithm for a travel agent. The company gives discounts based on the number of people in a group. The Python code below determines the type of discount to give based on the number of adults (num_adults) and the number of children (num_children) in a travelling group.",
+  "questionFigureKey": "computer-science-2021-HL-paper-q6-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2021-hl-q12-a",
+  "topicId": "cs-3-1",
+  "conceptId": "fields-would-not-good-candidates-primary",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 HL Q12(a)",
+  "questionText": "State why each of the following fields would not be good candidates for a primary key in the table shown above. dog_name: breed:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "dog_name would not be a good PK because a duplicate value exists i.e. fido.",
+    "marks": 1,
+    "contextNote": "The value of a primary key (PK) must be unique:"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "breed would not be a good PK because duplicates could exist.",
+    "marks": 1,
+    "contextNote": "both fields could potentially contain duplicates."
+   }
+  ],
+  "stem": "The following selection of data is taken from a table in a database used to store information about dogs.",
+  "questionFigureKey": "computer-science-2021-HL-paper-q12-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2021-hl-q12-b",
+  "topicId": "cs-3-1",
+  "conceptId": "owner-can-own-many-dogs-foreign",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 HL Q12(b)",
+  "questionText": "One owner can own many dogs. Explain how a foreign key could be introduced to improve the design of this database.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "A foreign key(FK) links two tables. It provides the relationship between two tables. In this case if the table shown was split into two separate tables – one for owners and one for dogs – the owner_id could be used as the PK in the owners table and the FK in the dogs table.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 3 marks Fair explanation - limited understanding 1 mark"
+   }
+  ],
+  "stem": "The following selection of data is taken from a table in a database used to store information about dogs.",
+  "figureKey": "computer-science-2021-HL-scheme-q12b",
+  "questionFigureKey": "computer-science-2021-HL-paper-q12-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2021-hl-q13-a-i",
+  "topicId": "cs-2-4",
+  "conceptId": "not-valid-eircodes-ga5-aok1",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q13(a)(i)",
+  "questionText": "Explain why each of the following are not valid Eircodes. GA5 AOK1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Explain why each of the following are not valid Eircodes.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "The second character (‘A’) is not a digit.",
+      "Any other valid reason."
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "stem": "Eircode is the postal address code system used in Ireland to uniquely identify every individual address in the country. An Eircode is a seven‐character code made up of two parts – a three‐ character Routing Key and a four‐character Unique Identifier. The first character in the Routing Key must always be a letter, and the second and third characters must always be digits. Every character in the Unique Identifier must be alpha‐numeric i.e. either a letter or a number. The format of the Eircode, A65 F4E2, is shown below in Figure 4.",
+  "questionFigureKey": "computer-science-2021-HL-paper-q13-fig4",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2021-hl-q13-a-ii",
+  "topicId": "cs-2-4",
+  "conceptId": "not-valid-eircodes-x234-y56",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q13(a)(ii)",
+  "questionText": "Explain why each of the following are not valid Eircodes. X234 Y56",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Explain why each of the following are not valid Eircodes.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "The routing key must be 3 characters (and not 4).",
+      "The unique ID must be 4 characters (and not 3).",
+      "The unique ID must be after the routing key .",
+      "Any other valid reason."
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "stem": "Eircode is the postal address code system used in Ireland to uniquely identify every individual address in the country. An Eircode is a seven‐character code made up of two parts – a three‐ character Routing Key and a four‐character Unique Identifier. The first character in the Routing Key must always be a letter, and the second and third characters must always be digits. Every character in the Unique Identifier must be alpha‐numeric i.e. either a letter or a number. The format of the Eircode, A65 F4E2, is shown below in Figure 4.",
+  "questionFigureKey": "computer-science-2021-HL-paper-q13-fig4",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2021-hl-q13-a-iii",
+  "topicId": "cs-2-4",
+  "conceptId": "not-valid-eircodes-8xt-a43y",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q13(a)(iii)",
+  "questionText": "Explain why each of the following are not valid Eircodes. 8XT A43Y",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Explain why each of the following are not valid Eircodes.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "The first character (‘8’) is not a letter.",
+      "The second character (‘X’) is not a digit.",
+      "The third character (‘T’) is not a digit.",
+      "Any other valid reason."
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "stem": "Eircode is the postal address code system used in Ireland to uniquely identify every individual address in the country. An Eircode is a seven‐character code made up of two parts – a three‐ character Routing Key and a four‐character Unique Identifier. The first character in the Routing Key must always be a letter, and the second and third characters must always be digits. Every character in the Unique Identifier must be alpha‐numeric i.e. either a letter or a number. The format of the Eircode, A65 F4E2, is shown below in Figure 4.",
+  "questionFigureKey": "computer-science-2021-HL-paper-q13-fig4",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2021-hl-q13-c-i",
+  "topicId": "cs-2-2",
+  "conceptId": "code-does",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q13(c)(i)",
+  "questionText": "Explain what the following code does:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The Python code checks whether the first character of the Eircode passed in is a letter or not. If it is not a letter (A-Z or a-z) the condition will be True and the function will return False",
+    "marks": 2,
+    "contextNote": "Good explanation - clear understanding demonstrated 2 marks"
+   }
+  ],
+  "stem": "The following questions are based on the code in part (b).",
+  "questionFigureKey": "computer-science-2021-HL-paper-q13c-i",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2021-hl-q13-c-ii",
+  "topicId": "cs-2-3",
+  "conceptId": "if-we-let-p-represent-possible",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q13(c)(ii)",
+  "questionText": "If we let P represent the possible boolean values for test_eircode[1].isdigit() and Q represent the possible boolean values for test_eircode[2].isdigit(), complete the truth table below for the expression, not P or not Q.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False False True True True",
+    "marks": 1,
+    "contextNote": "1 Mark per correct row OR 2 Marks for 1st fully correct column 1 Mark for 2nd and 3rd correct column OR 1 mark for more than 2 correct values in each column"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "False True True False True",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "True False False True True",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "True True False False False",
+    "marks": 1
+   }
+  ],
+  "stem": "The following questions are based on the code in part (b).",
+  "questionFigureKey": "computer-science-2021-HL-paper-q13c-ii",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2021-hl-q13-c-iv",
+  "topicId": "cs-2-3",
+  "conceptId": "use-findings-parts-ii-iii-re",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q13(c)(iv)",
+  "questionText": "Use your findings from parts (ii) and (iii) to re‐write the statement on line 16, without changing its logical meaning.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Use your findings from parts (ii) and (iii) to re‐write the statement on line 16, without changing its logical meaning.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "if not (test_eircode[1].isdigit() and test_eircode[2].isdigit()):",
+      "if not (P and Q):"
+     ]
+    },
+    "contextNote": "Correct response 1 mark"
+   }
+  ],
+  "stem": "The following questions are based on the code in part (b).",
+  "questionFigureKey": "computer-science-2021-HL-paper-q13c-iv",
+  "questionFigureIncludesPrompt": false
  }
 ]
