@@ -714,6 +714,12 @@ SHORT_ASKS = {
     **{('engineering', 2019, 'ol', f'Q6(a)({r})'): ('', f'p7: the caption "({r})" under the {n} of four lathe-part photographs, '
                                                        'under "Name any three of the lathe parts shown."')
        for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2019, 'ol', 'Q4(b)(iii)'): ('Flux,', 'p5: the caption "(iii) Flux," under the third of four welding-item '
+                                                     'photographs, under "Give one suitable use for any three of the following:"'),
+    **{('engineering', 2019, 'ol', f'Q7(c)({r})'): ('', f'p8: the caption "({r})" under the {n} of four instrument photographs, '
+                                                       'under "Name any three of the instruments shown and give one application of '
+                                                       'each instrument named."; the OR branch\'s (c) sets only (i) and (ii)')
+       for r, n in (('iii', 'third'), ('iv', 'fourth'))},
     ('engineering', 2026, 'ol', 'Q1(k)(iii)'): ('5G.', 'p2: the term "(iii) 5G." in "(i) Smart technology, (ii) '
                                                        'Cybersecurity, (iii) 5G." under "Explain any one of the '
                                                        'following:"'),

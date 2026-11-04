@@ -546,6 +546,12 @@ REJECTED = {
     (2026, 'ol', 1, 'm', None): 'takes in Q1(l)\'s "(iii) Pilot hole." above it',
     **{(2026, 'ol', 7, 'b', r): 'cuts off the "Body" and "Hole" dimensions the ask reads'
        for r in ('i', 'ii', 'iii', 'iv')},
+    # 2019 Ordinary, looked at 2026-11-04 (the residue cuts each by eye):
+    (2019, 'ol', 1, 'b', None): 'takes in the descender of (a)\'s "bandsaw." above it',
+    **{(2019, 'ol', 5, 'c', r): 'the products without their captions; the letter card '
+                                'carries them with the captions'
+       for r in ('i', 'ii', 'iii')},
+    (2019, 'ol', 6, 'a', None): 'carries the ask "Name any three of the lathe parts shown."',
     # 2019 Higher, looked at 2026-11-04 (the residue cuts each by eye):
     (2019, 'hl', 1, 'l', None): 'the safety signs beside (l) are Q1(m)\'s',
     **{(2019, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis label'
