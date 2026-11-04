@@ -2548,7 +2548,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
     id: "hist-2017-ol-lm-s3t5a-q1", topicId: "hist-lm-eur-5", conceptId: "where-groups-people-live",
     section: "3", questionRef: "2017 OL Later Modern Section 3 Topic 5 A Q1",
-    stem: "In this edited extract the Tanzanian leader, Julius Nyerere, lays out his vision for rural development.\n\nGroups of people would live together in a village. They would farm together and provide local services.\nThe community would be the traditional family group. It would be large enough to take account of modern farming methods.\nThe land they farmed would be ‘our land’ and the crop they produced would be ‘our crop’. Therefore, a sense of common ownership would be encouraged.",
+    stem: "In this edited extract the Tanzanian leader, Julius Nyerere, lays out his vision for rural development. Read it and answer the questions which follow.\n\nGroups of people would live together in a village. They would farm together and provide local services.\nThe community would be the traditional family group. It would be large enough to take account of modern farming methods.\nThe land they farmed would be ‘our land’ and the crop they produced would be ‘our crop’. Therefore, a sense of common ownership would be encouraged.",
     questionText: "Where would the groups of people live?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2572,7 +2572,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
     id: "hist-2017-ol-lm-s3t5a-q2", topicId: "hist-lm-eur-5", conceptId: "villagers-provide",
     section: "3", questionRef: "2017 OL Later Modern Section 3 Topic 5 A Q2",
-    stem: "In this edited extract the Tanzanian leader, Julius Nyerere, lays out his vision for rural development.\n\nGroups of people would live together in a village. They would farm together and provide local services.\nThe community would be the traditional family group. It would be large enough to take account of modern farming methods.\nThe land they farmed would be ‘our land’ and the crop they produced would be ‘our crop’. Therefore, a sense of common ownership would be encouraged.",
+    stem: "In this edited extract the Tanzanian leader, Julius Nyerere, lays out his vision for rural development. Read it and answer the questions which follow.\n\nGroups of people would live together in a village. They would farm together and provide local services.\nThe community would be the traditional family group. It would be large enough to take account of modern farming methods.\nThe land they farmed would be ‘our land’ and the crop they produced would be ‘our crop’. Therefore, a sense of common ownership would be encouraged.",
     questionText: "What would the villagers provide?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2596,7 +2596,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
     id: "hist-2017-ol-lm-s3t5a-q3", topicId: "hist-lm-eur-5", conceptId: "sort-farming-methods-used",
     section: "3", questionRef: "2017 OL Later Modern Section 3 Topic 5 A Q3",
-    stem: "In this edited extract the Tanzanian leader, Julius Nyerere, lays out his vision for rural development.\n\nGroups of people would live together in a village. They would farm together and provide local services.\nThe community would be the traditional family group. It would be large enough to take account of modern farming methods.\nThe land they farmed would be ‘our land’ and the crop they produced would be ‘our crop’. Therefore, a sense of common ownership would be encouraged.",
+    stem: "In this edited extract the Tanzanian leader, Julius Nyerere, lays out his vision for rural development. Read it and answer the questions which follow.\n\nGroups of people would live together in a village. They would farm together and provide local services.\nThe community would be the traditional family group. It would be large enough to take account of modern farming methods.\nThe land they farmed would be ‘our land’ and the crop they produced would be ‘our crop’. Therefore, a sense of common ownership would be encouraged.",
     questionText: "What sort of farming methods were to be used?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2620,7 +2620,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
     id: "hist-2017-ol-lm-s3t5a-q4", topicId: "hist-lm-eur-5", conceptId: "sense-common-ownership-encouraged",
     section: "3", questionRef: "2017 OL Later Modern Section 3 Topic 5 A Q4",
-    stem: "In this edited extract the Tanzanian leader, Julius Nyerere, lays out his vision for rural development.\n\nGroups of people would live together in a village. They would farm together and provide local services.\nThe community would be the traditional family group. It would be large enough to take account of modern farming methods.\nThe land they farmed would be ‘our land’ and the crop they produced would be ‘our crop’. Therefore, a sense of common ownership would be encouraged.",
+    stem: "In this edited extract the Tanzanian leader, Julius Nyerere, lays out his vision for rural development. Read it and answer the questions which follow.\n\nGroups of people would live together in a village. They would farm together and provide local services.\nThe community would be the traditional family group. It would be large enough to take account of modern farming methods.\nThe land they farmed would be ‘our land’ and the crop they produced would be ‘our crop’. Therefore, a sense of common ownership would be encouraged.",
     questionText: "How was a sense of common ownership to be encouraged?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -2645,7 +2645,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
     id: "hist-2017-ol-lm-s3t5a-q5", topicId: "hist-lm-eur-5", conceptId: "policy-ujamaa-success-failure",
     section: "3", questionRef: "2017 OL Later Modern Section 3 Topic 5 A Q5",
-    stem: "In this edited extract the Tanzanian leader, Julius Nyerere, lays out his vision for rural development.\n\nGroups of people would live together in a village. They would farm together and provide local services.\nThe community would be the traditional family group. It would be large enough to take account of modern farming methods.\nThe land they farmed would be ‘our land’ and the crop they produced would be ‘our crop’. Therefore, a sense of common ownership would be encouraged.",
+    stem: "In this edited extract the Tanzanian leader, Julius Nyerere, lays out his vision for rural development. Read it and answer the questions which follow.\n\nGroups of people would live together in a village. They would farm together and provide local services.\nThe community would be the traditional family group. It would be large enough to take account of modern farming methods.\nThe land they farmed would be ‘our land’ and the crop they produced would be ‘our crop’. Therefore, a sense of common ownership would be encouraged.",
     questionText: "Was the policy of ujamaa a success or a failure? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -5818,7 +5818,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
     id: "hist-2018-ol-lm-s3t2a-q1", topicId: "hist-lm-eur-2", conceptId: "does-douglas-haig-feel-day",
     section: "3", questionRef: "2018 OL Later Modern Section 3 Topic 2 A Q1",
-    stem: "This is an edited extract from the diary of Douglas Haig, Commander‐in‐Chief of British forces in France during World War I. It was written on June 30 1916, the eve of the battle of the Somme.\n\nWith God’s help, I feel hopeful for tomorrow. The men are in splendid spirits: several have said that they have never before been so instructed and informed of the nature of the operation before them.\nThe wire has never been so well cut, nor the artillery preparation so thorough. I have seen personally all the corps commanders and one and all are full of confidence.",
+    stem: "This is an edited extract from the diary of Douglas Haig, Commander‐in‐Chief of British forces in France during World War I. It was written on June 30 1916, the eve of the battle of the Somme. Read it and answer the questions which follow.\n\nWith God’s help, I feel hopeful for tomorrow. The men are in splendid spirits: several have said that they have never before been so instructed and informed of the nature of the operation before them.\nThe wire has never been so well cut, nor the artillery preparation so thorough. I have seen personally all the corps commanders and one and all are full of confidence.",
     questionText: "How does Douglas Haig feel about the following day?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -5842,7 +5842,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
     id: "hist-2018-ol-lm-s3t2a-q2", topicId: "hist-lm-eur-2", conceptId: "attitude-men",
     section: "3", questionRef: "2018 OL Later Modern Section 3 Topic 2 A Q2",
-    stem: "This is an edited extract from the diary of Douglas Haig, Commander‐in‐Chief of British forces in France during World War I. It was written on June 30 1916, the eve of the battle of the Somme.\n\nWith God’s help, I feel hopeful for tomorrow. The men are in splendid spirits: several have said that they have never before been so instructed and informed of the nature of the operation before them.\nThe wire has never been so well cut, nor the artillery preparation so thorough. I have seen personally all the corps commanders and one and all are full of confidence.",
+    stem: "This is an edited extract from the diary of Douglas Haig, Commander‐in‐Chief of British forces in France during World War I. It was written on June 30 1916, the eve of the battle of the Somme. Read it and answer the questions which follow.\n\nWith God’s help, I feel hopeful for tomorrow. The men are in splendid spirits: several have said that they have never before been so instructed and informed of the nature of the operation before them.\nThe wire has never been so well cut, nor the artillery preparation so thorough. I have seen personally all the corps commanders and one and all are full of confidence.",
     questionText: "What is the attitude of the men?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -5866,7 +5866,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
     id: "hist-2018-ol-lm-s3t2a-q3", topicId: "hist-lm-eur-2", conceptId: "men-fully-aware-lies-before-them",
     section: "3", questionRef: "2018 OL Later Modern Section 3 Topic 2 A Q3",
-    stem: "This is an edited extract from the diary of Douglas Haig, Commander‐in‐Chief of British forces in France during World War I. It was written on June 30 1916, the eve of the battle of the Somme.\n\nWith God’s help, I feel hopeful for tomorrow. The men are in splendid spirits: several have said that they have never before been so instructed and informed of the nature of the operation before them.\nThe wire has never been so well cut, nor the artillery preparation so thorough. I have seen personally all the corps commanders and one and all are full of confidence.",
+    stem: "This is an edited extract from the diary of Douglas Haig, Commander‐in‐Chief of British forces in France during World War I. It was written on June 30 1916, the eve of the battle of the Somme. Read it and answer the questions which follow.\n\nWith God’s help, I feel hopeful for tomorrow. The men are in splendid spirits: several have said that they have never before been so instructed and informed of the nature of the operation before them.\nThe wire has never been so well cut, nor the artillery preparation so thorough. I have seen personally all the corps commanders and one and all are full of confidence.",
     questionText: "Are the men fully aware of what lies before them? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -5890,7 +5890,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
     id: "hist-2018-ol-lm-s3t2a-q4", topicId: "hist-lm-eur-2", conceptId: "haig-attitude-displayed-corps-commanders",
     section: "3", questionRef: "2018 OL Later Modern Section 3 Topic 2 A Q4",
-    stem: "This is an edited extract from the diary of Douglas Haig, Commander‐in‐Chief of British forces in France during World War I. It was written on June 30 1916, the eve of the battle of the Somme.\n\nWith God’s help, I feel hopeful for tomorrow. The men are in splendid spirits: several have said that they have never before been so instructed and informed of the nature of the operation before them.\nThe wire has never been so well cut, nor the artillery preparation so thorough. I have seen personally all the corps commanders and one and all are full of confidence.",
+    stem: "This is an edited extract from the diary of Douglas Haig, Commander‐in‐Chief of British forces in France during World War I. It was written on June 30 1916, the eve of the battle of the Somme. Read it and answer the questions which follow.\n\nWith God’s help, I feel hopeful for tomorrow. The men are in splendid spirits: several have said that they have never before been so instructed and informed of the nature of the operation before them.\nThe wire has never been so well cut, nor the artillery preparation so thorough. I have seen personally all the corps commanders and one and all are full of confidence.",
     questionText: "According to Haig, what attitude is displayed by the corps commanders?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -5914,7 +5914,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
     id: "hist-2018-ol-lm-s3t2a-q5", topicId: "hist-lm-eur-2", conceptId: "outcome-battle-somme",
     section: "3", questionRef: "2018 OL Later Modern Section 3 Topic 2 A Q5",
-    stem: "This is an edited extract from the diary of Douglas Haig, Commander‐in‐Chief of British forces in France during World War I. It was written on June 30 1916, the eve of the battle of the Somme.\n\nWith God’s help, I feel hopeful for tomorrow. The men are in splendid spirits: several have said that they have never before been so instructed and informed of the nature of the operation before them.\nThe wire has never been so well cut, nor the artillery preparation so thorough. I have seen personally all the corps commanders and one and all are full of confidence.",
+    stem: "This is an edited extract from the diary of Douglas Haig, Commander‐in‐Chief of British forces in France during World War I. It was written on June 30 1916, the eve of the battle of the Somme. Read it and answer the questions which follow.\n\nWith God’s help, I feel hopeful for tomorrow. The men are in splendid spirits: several have said that they have never before been so instructed and informed of the nature of the operation before them.\nThe wire has never been so well cut, nor the artillery preparation so thorough. I have seen personally all the corps commanders and one and all are full of confidence.",
     questionText: "Briefly, what was the outcome of the battle of the Somme?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -8604,7 +8604,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-lm-s2t1a-q1", topicId: "hist-lm-irl-1", conceptId: "did-people-admire-way-dinner",
     section: "2", questionRef: "2019 OL Later Modern Section 2 Topic 1 A Q1",
-    stem: "In this edited extract the writer Frances Power Cobbe recalls the onset of the Famine in Ireland.\n\nI recall precisely the day, almost the hour, when the blight fell on the potatoes. A party of us were driving to a seven o’ clock dinner. As we passed a remarkably fine field of potatoes in blossom, the scent came through the open windows of the carriage and we remarked to each other how splendid the potato crop.\nThree or four hours later, as we returned home in the dark, a dreadful smell came up from the same field, and we exclaimed: “something has happened to those potatoes.” Next morning every field was black and every root rendered unfit for human food.",
+    stem: "In this edited extract the writer Frances Power Cobbe recalls the onset of the Famine in Ireland. Read it and answer the questions which follow.\n\nI recall precisely the day, almost the hour, when the blight fell on the potatoes. A party of us were driving to a seven o’ clock dinner. As we passed a remarkably fine field of potatoes in blossom, the scent came through the open windows of the carriage and we remarked to each other how splendid the potato crop.\nThree or four hours later, as we returned home in the dark, a dreadful smell came up from the same field, and we exclaimed: “something has happened to those potatoes.” Next morning every field was black and every root rendered unfit for human food.",
     questionText: "What did the people admire on their way to dinner?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -8628,7 +8628,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-lm-s2t1a-q2", topicId: "hist-lm-irl-1", conceptId: "change-did-notice-returned-home",
     section: "2", questionRef: "2019 OL Later Modern Section 2 Topic 1 A Q2",
-    stem: "In this edited extract the writer Frances Power Cobbe recalls the onset of the Famine in Ireland.\n\nI recall precisely the day, almost the hour, when the blight fell on the potatoes. A party of us were driving to a seven o’ clock dinner. As we passed a remarkably fine field of potatoes in blossom, the scent came through the open windows of the carriage and we remarked to each other how splendid the potato crop.\nThree or four hours later, as we returned home in the dark, a dreadful smell came up from the same field, and we exclaimed: “something has happened to those potatoes.” Next morning every field was black and every root rendered unfit for human food.",
+    stem: "In this edited extract the writer Frances Power Cobbe recalls the onset of the Famine in Ireland. Read it and answer the questions which follow.\n\nI recall precisely the day, almost the hour, when the blight fell on the potatoes. A party of us were driving to a seven o’ clock dinner. As we passed a remarkably fine field of potatoes in blossom, the scent came through the open windows of the carriage and we remarked to each other how splendid the potato crop.\nThree or four hours later, as we returned home in the dark, a dreadful smell came up from the same field, and we exclaimed: “something has happened to those potatoes.” Next morning every field was black and every root rendered unfit for human food.",
     questionText: "What change did they notice as they returned home?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -8652,7 +8652,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-lm-s2t1a-q3", topicId: "hist-lm-irl-1", conceptId: "form-transport-use",
     section: "2", questionRef: "2019 OL Later Modern Section 2 Topic 1 A Q3",
-    stem: "In this edited extract the writer Frances Power Cobbe recalls the onset of the Famine in Ireland.\n\nI recall precisely the day, almost the hour, when the blight fell on the potatoes. A party of us were driving to a seven o’ clock dinner. As we passed a remarkably fine field of potatoes in blossom, the scent came through the open windows of the carriage and we remarked to each other how splendid the potato crop.\nThree or four hours later, as we returned home in the dark, a dreadful smell came up from the same field, and we exclaimed: “something has happened to those potatoes.” Next morning every field was black and every root rendered unfit for human food.",
+    stem: "In this edited extract the writer Frances Power Cobbe recalls the onset of the Famine in Ireland. Read it and answer the questions which follow.\n\nI recall precisely the day, almost the hour, when the blight fell on the potatoes. A party of us were driving to a seven o’ clock dinner. As we passed a remarkably fine field of potatoes in blossom, the scent came through the open windows of the carriage and we remarked to each other how splendid the potato crop.\nThree or four hours later, as we returned home in the dark, a dreadful smell came up from the same field, and we exclaimed: “something has happened to those potatoes.” Next morning every field was black and every root rendered unfit for human food.",
     questionText: "What form of transport was in use?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -8676,7 +8676,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-lm-s2t1a-q4", topicId: "hist-lm-irl-1", conceptId: "next-morning-known-potato-crop-blighted",
     section: "2", questionRef: "2019 OL Later Modern Section 2 Topic 1 A Q4",
-    stem: "In this edited extract the writer Frances Power Cobbe recalls the onset of the Famine in Ireland.\n\nI recall precisely the day, almost the hour, when the blight fell on the potatoes. A party of us were driving to a seven o’ clock dinner. As we passed a remarkably fine field of potatoes in blossom, the scent came through the open windows of the carriage and we remarked to each other how splendid the potato crop.\nThree or four hours later, as we returned home in the dark, a dreadful smell came up from the same field, and we exclaimed: “something has happened to those potatoes.” Next morning every field was black and every root rendered unfit for human food.",
+    stem: "In this edited extract the writer Frances Power Cobbe recalls the onset of the Famine in Ireland. Read it and answer the questions which follow.\n\nI recall precisely the day, almost the hour, when the blight fell on the potatoes. A party of us were driving to a seven o’ clock dinner. As we passed a remarkably fine field of potatoes in blossom, the scent came through the open windows of the carriage and we remarked to each other how splendid the potato crop.\nThree or four hours later, as we returned home in the dark, a dreadful smell came up from the same field, and we exclaimed: “something has happened to those potatoes.” Next morning every field was black and every root rendered unfit for human food.",
     questionText: "Next morning, how was it known that the potato crop had been blighted?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -8701,7 +8701,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-lm-s2t1a-q5", topicId: "hist-lm-irl-1", conceptId: "did-famine-affect-population-ireland",
     section: "2", questionRef: "2019 OL Later Modern Section 2 Topic 1 A Q5",
-    stem: "In this edited extract the writer Frances Power Cobbe recalls the onset of the Famine in Ireland.\n\nI recall precisely the day, almost the hour, when the blight fell on the potatoes. A party of us were driving to a seven o’ clock dinner. As we passed a remarkably fine field of potatoes in blossom, the scent came through the open windows of the carriage and we remarked to each other how splendid the potato crop.\nThree or four hours later, as we returned home in the dark, a dreadful smell came up from the same field, and we exclaimed: “something has happened to those potatoes.” Next morning every field was black and every root rendered unfit for human food.",
+    stem: "In this edited extract the writer Frances Power Cobbe recalls the onset of the Famine in Ireland. Read it and answer the questions which follow.\n\nI recall precisely the day, almost the hour, when the blight fell on the potatoes. A party of us were driving to a seven o’ clock dinner. As we passed a remarkably fine field of potatoes in blossom, the scent came through the open windows of the carriage and we remarked to each other how splendid the potato crop.\nThree or four hours later, as we returned home in the dark, a dreadful smell came up from the same field, and we exclaimed: “something has happened to those potatoes.” Next morning every field was black and every root rendered unfit for human food.",
     questionText: "How did the Famine affect the population of Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -9905,7 +9905,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-lm-s3t5a-q1", topicId: "hist-lm-eur-5", conceptId: "province-declared-independence",
     section: "3", questionRef: "2019 OL Later Modern Section 3 Topic 5 A Q1",
-    stem: "In this edited extract The Times reports (12/7/1960) the secession of Katanga from the Congo.\n\nMr. Moise Tshombe, premier of Katanga Province, last night declared the province totally independent of the Congo Republic.\nThe secession of Katanga will deprive the Congo of its richest province and of all hope of economic viability.\nMr. Tshombe had already made it clear that he considered himself justified in asking for the help of Belgian troops in restoring order in the province.",
+    stem: "In this edited extract The Times reports (12/7/1960) the secession of Katanga from the Congo. Read it and answer the questions which follow.\n\nMr. Moise Tshombe, premier of Katanga Province, last night declared the province totally independent of the Congo Republic.\nThe secession of Katanga will deprive the Congo of its richest province and of all hope of economic viability.\nMr. Tshombe had already made it clear that he considered himself justified in asking for the help of Belgian troops in restoring order in the province.",
     questionText: "What province had declared independence?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -9929,7 +9929,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-lm-s3t5a-q2", topicId: "hist-lm-eur-5", conceptId: "impact-independence-congo",
     section: "3", questionRef: "2019 OL Later Modern Section 3 Topic 5 A Q2",
-    stem: "In this edited extract The Times reports (12/7/1960) the secession of Katanga from the Congo.\n\nMr. Moise Tshombe, premier of Katanga Province, last night declared the province totally independent of the Congo Republic.\nThe secession of Katanga will deprive the Congo of its richest province and of all hope of economic viability.\nMr. Tshombe had already made it clear that he considered himself justified in asking for the help of Belgian troops in restoring order in the province.",
+    stem: "In this edited extract The Times reports (12/7/1960) the secession of Katanga from the Congo. Read it and answer the questions which follow.\n\nMr. Moise Tshombe, premier of Katanga Province, last night declared the province totally independent of the Congo Republic.\nThe secession of Katanga will deprive the Congo of its richest province and of all hope of economic viability.\nMr. Tshombe had already made it clear that he considered himself justified in asking for the help of Belgian troops in restoring order in the province.",
     questionText: "What would be the impact of that independence on the Congo, according to the extract?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -9953,7 +9953,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-lm-s3t5a-q3", topicId: "hist-lm-eur-5", conceptId: "whom-did-tshombe-seek-help",
     section: "3", questionRef: "2019 OL Later Modern Section 3 Topic 5 A Q3",
-    stem: "In this edited extract The Times reports (12/7/1960) the secession of Katanga from the Congo.\n\nMr. Moise Tshombe, premier of Katanga Province, last night declared the province totally independent of the Congo Republic.\nThe secession of Katanga will deprive the Congo of its richest province and of all hope of economic viability.\nMr. Tshombe had already made it clear that he considered himself justified in asking for the help of Belgian troops in restoring order in the province.",
+    stem: "In this edited extract The Times reports (12/7/1960) the secession of Katanga from the Congo. Read it and answer the questions which follow.\n\nMr. Moise Tshombe, premier of Katanga Province, last night declared the province totally independent of the Congo Republic.\nThe secession of Katanga will deprive the Congo of its richest province and of all hope of economic viability.\nMr. Tshombe had already made it clear that he considered himself justified in asking for the help of Belgian troops in restoring order in the province.",
     questionText: "From whom did Tshombe seek help?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -9977,7 +9977,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-lm-s3t5a-q4", topicId: "hist-lm-eur-5", conceptId: "tshombe-help-being-sought",
     section: "3", questionRef: "2019 OL Later Modern Section 3 Topic 5 A Q4",
-    stem: "In this edited extract The Times reports (12/7/1960) the secession of Katanga from the Congo.\n\nMr. Moise Tshombe, premier of Katanga Province, last night declared the province totally independent of the Congo Republic.\nThe secession of Katanga will deprive the Congo of its richest province and of all hope of economic viability.\nMr. Tshombe had already made it clear that he considered himself justified in asking for the help of Belgian troops in restoring order in the province.",
+    stem: "In this edited extract The Times reports (12/7/1960) the secession of Katanga from the Congo. Read it and answer the questions which follow.\n\nMr. Moise Tshombe, premier of Katanga Province, last night declared the province totally independent of the Congo Republic.\nThe secession of Katanga will deprive the Congo of its richest province and of all hope of economic viability.\nMr. Tshombe had already made it clear that he considered himself justified in asking for the help of Belgian troops in restoring order in the province.",
     questionText: "According to Tshombe, why was that help being sought?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -10001,7 +10001,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-lm-s3t5a-q5", topicId: "hist-lm-eur-5", conceptId: "european-power-granted-independence-congo-1960",
     section: "3", questionRef: "2019 OL Later Modern Section 3 Topic 5 A Q5",
-    stem: "In this edited extract The Times reports (12/7/1960) the secession of Katanga from the Congo.\n\nMr. Moise Tshombe, premier of Katanga Province, last night declared the province totally independent of the Congo Republic.\nThe secession of Katanga will deprive the Congo of its richest province and of all hope of economic viability.\nMr. Tshombe had already made it clear that he considered himself justified in asking for the help of Belgian troops in restoring order in the province.",
+    stem: "In this edited extract The Times reports (12/7/1960) the secession of Katanga from the Congo. Read it and answer the questions which follow.\n\nMr. Moise Tshombe, premier of Katanga Province, last night declared the province totally independent of the Congo Republic.\nThe secession of Katanga will deprive the Congo of its richest province and of all hope of economic viability.\nMr. Tshombe had already made it clear that he considered himself justified in asking for the help of Belgian troops in restoring order in the province.",
     questionText: "What European power granted independence to the Congo in 1960?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -10430,7 +10430,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-em-s2t2a-q1", topicId: "hist-em-irl-2", conceptId: "whom-did-meiler-ill-treat",
     section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 2 A Q1",
-    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel. Read it and answer the questions which follow.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
     questionText: "Whom did Meiler ill‐treat?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -10454,7 +10454,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-em-s2t2a-q2", topicId: "hist-em-irl-2", conceptId: "when-did-incident-occur",
     section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 2 A Q2",
-    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel. Read it and answer the questions which follow.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
     questionText: "When did the incident occur?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -10478,7 +10478,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-em-s2t2a-q3", topicId: "hist-em-irl-2", conceptId: "weapon-used",
     section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 2 A Q3",
-    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel. Read it and answer the questions which follow.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
     questionText: "What weapon was used?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -10502,7 +10502,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-em-s2t2a-q4", topicId: "hist-em-irl-2", conceptId: "harm-done-mullony",
     section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 2 A Q4",
-    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel. Read it and answer the questions which follow.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
     questionText: "According to the extract, what harm was done to O’Mullony?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -10526,7 +10526,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
     id: "hist-2019-ol-em-s2t2a-q5", topicId: "hist-em-irl-2", conceptId: "meiler-mcgrath-controversial-figure-elizabethan-ireland",
     section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 2 A Q5",
-    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel. Read it and answer the questions which follow.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
     questionText: "Briefly, why was Meiler McGrath a controversial figure in Elizabethan Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -12260,7 +12260,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2020 Ordinary Level — © State Examinations Commission.",
     id: "hist-2020-ol-lm-s2t1a-q1", topicId: "hist-lm-irl-1", conceptId: "where-daniel-connell-going-where-starting",
     section: "2", questionRef: "2020 OL Later Modern Section 2 Topic 1 A Q1",
-    stem: "This edited extract refers to the beginning of Daniel O’Connell’s Clare election campaign, 1828.\n\nOn Saturday 28 June, 1828, O’Connell set out for Ennis, Co. Clare, on a mission to stand for election to the British parliament.\nHe left from the Four Courts, Dublin, where he practised law. A large crowd of well-wishers had gathered to see him off.\nHis coach was covered in green decorations and the coachmen were wearing green uniforms.\nThree cheers were given as the carriage drove off, which O’Connell acknowledged by raising his hat. But some opponents had also gathered and hissed the carriage as it departed.",
+    stem: "This edited extract refers to the beginning of Daniel O’Connell’s Clare election campaign, 1828. Read it and answer the questions which follow.\n\nOn Saturday 28 June, 1828, O’Connell set out for Ennis, Co. Clare, on a mission to stand for election to the British parliament.\nHe left from the Four Courts, Dublin, where he practised law. A large crowd of well-wishers had gathered to see him off.\nHis coach was covered in green decorations and the coachmen were wearing green uniforms.\nThree cheers were given as the carriage drove off, which O’Connell acknowledged by raising his hat. But some opponents had also gathered and hissed the carriage as it departed.",
     questionText: "To where was Daniel O’Connell going and from where was he starting?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -12285,7 +12285,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2020 Ordinary Level — © State Examinations Commission.",
     id: "hist-2020-ol-lm-s2t1a-q2", topicId: "hist-lm-irl-1", conceptId: "connell-coachmen-dressed",
     section: "2", questionRef: "2020 OL Later Modern Section 2 Topic 1 A Q2",
-    stem: "This edited extract refers to the beginning of Daniel O’Connell’s Clare election campaign, 1828.\n\nOn Saturday 28 June, 1828, O’Connell set out for Ennis, Co. Clare, on a mission to stand for election to the British parliament.\nHe left from the Four Courts, Dublin, where he practised law. A large crowd of well-wishers had gathered to see him off.\nHis coach was covered in green decorations and the coachmen were wearing green uniforms.\nThree cheers were given as the carriage drove off, which O’Connell acknowledged by raising his hat. But some opponents had also gathered and hissed the carriage as it departed.",
+    stem: "This edited extract refers to the beginning of Daniel O’Connell’s Clare election campaign, 1828. Read it and answer the questions which follow.\n\nOn Saturday 28 June, 1828, O’Connell set out for Ennis, Co. Clare, on a mission to stand for election to the British parliament.\nHe left from the Four Courts, Dublin, where he practised law. A large crowd of well-wishers had gathered to see him off.\nHis coach was covered in green decorations and the coachmen were wearing green uniforms.\nThree cheers were given as the carriage drove off, which O’Connell acknowledged by raising his hat. But some opponents had also gathered and hissed the carriage as it departed.",
     questionText: "How were O’Connell’s coachmen dressed?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -12309,7 +12309,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2020 Ordinary Level — © State Examinations Commission.",
     id: "hist-2020-ol-lm-s2t1a-q3", topicId: "hist-lm-irl-1", conceptId: "did-connell-acknowledge-cheers",
     section: "2", questionRef: "2020 OL Later Modern Section 2 Topic 1 A Q3",
-    stem: "This edited extract refers to the beginning of Daniel O’Connell’s Clare election campaign, 1828.\n\nOn Saturday 28 June, 1828, O’Connell set out for Ennis, Co. Clare, on a mission to stand for election to the British parliament.\nHe left from the Four Courts, Dublin, where he practised law. A large crowd of well-wishers had gathered to see him off.\nHis coach was covered in green decorations and the coachmen were wearing green uniforms.\nThree cheers were given as the carriage drove off, which O’Connell acknowledged by raising his hat. But some opponents had also gathered and hissed the carriage as it departed.",
+    stem: "This edited extract refers to the beginning of Daniel O’Connell’s Clare election campaign, 1828. Read it and answer the questions which follow.\n\nOn Saturday 28 June, 1828, O’Connell set out for Ennis, Co. Clare, on a mission to stand for election to the British parliament.\nHe left from the Four Courts, Dublin, where he practised law. A large crowd of well-wishers had gathered to see him off.\nHis coach was covered in green decorations and the coachmen were wearing green uniforms.\nThree cheers were given as the carriage drove off, which O’Connell acknowledged by raising his hat. But some opponents had also gathered and hissed the carriage as it departed.",
     questionText: "How did O’Connell acknowledge the cheers?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -12333,7 +12333,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2020 Ordinary Level — © State Examinations Commission.",
     id: "hist-2020-ol-lm-s2t1a-q4", topicId: "hist-lm-irl-1", conceptId: "did-connell-opponents-behave",
     section: "2", questionRef: "2020 OL Later Modern Section 2 Topic 1 A Q4",
-    stem: "This edited extract refers to the beginning of Daniel O’Connell’s Clare election campaign, 1828.\n\nOn Saturday 28 June, 1828, O’Connell set out for Ennis, Co. Clare, on a mission to stand for election to the British parliament.\nHe left from the Four Courts, Dublin, where he practised law. A large crowd of well-wishers had gathered to see him off.\nHis coach was covered in green decorations and the coachmen were wearing green uniforms.\nThree cheers were given as the carriage drove off, which O’Connell acknowledged by raising his hat. But some opponents had also gathered and hissed the carriage as it departed.",
+    stem: "This edited extract refers to the beginning of Daniel O’Connell’s Clare election campaign, 1828. Read it and answer the questions which follow.\n\nOn Saturday 28 June, 1828, O’Connell set out for Ennis, Co. Clare, on a mission to stand for election to the British parliament.\nHe left from the Four Courts, Dublin, where he practised law. A large crowd of well-wishers had gathered to see him off.\nHis coach was covered in green decorations and the coachmen were wearing green uniforms.\nThree cheers were given as the carriage drove off, which O’Connell acknowledged by raising his hat. But some opponents had also gathered and hissed the carriage as it departed.",
     questionText: "How did O’Connell’s opponents behave?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -12357,7 +12357,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2020 Ordinary Level — © State Examinations Commission.",
     id: "hist-2020-ol-lm-s2t1a-q5", topicId: "hist-lm-irl-1", conceptId: "did-connell-aim-achieve-winning-clare",
     section: "2", questionRef: "2020 OL Later Modern Section 2 Topic 1 A Q5",
-    stem: "This edited extract refers to the beginning of Daniel O’Connell’s Clare election campaign, 1828.\n\nOn Saturday 28 June, 1828, O’Connell set out for Ennis, Co. Clare, on a mission to stand for election to the British parliament.\nHe left from the Four Courts, Dublin, where he practised law. A large crowd of well-wishers had gathered to see him off.\nHis coach was covered in green decorations and the coachmen were wearing green uniforms.\nThree cheers were given as the carriage drove off, which O’Connell acknowledged by raising his hat. But some opponents had also gathered and hissed the carriage as it departed.",
+    stem: "This edited extract refers to the beginning of Daniel O’Connell’s Clare election campaign, 1828. Read it and answer the questions which follow.\n\nOn Saturday 28 June, 1828, O’Connell set out for Ennis, Co. Clare, on a mission to stand for election to the British parliament.\nHe left from the Four Courts, Dublin, where he practised law. A large crowd of well-wishers had gathered to see him off.\nHis coach was covered in green decorations and the coachmen were wearing green uniforms.\nThree cheers were given as the carriage drove off, which O’Connell acknowledged by raising his hat. But some opponents had also gathered and hissed the carriage as it departed.",
     questionText: "What did O’Connell aim to achieve by winning the Clare election?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -15304,7 +15304,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2021 Ordinary Level — © State Examinations Commission.",
     id: "hist-2021-ol-lm-s3t3a-q1", topicId: "hist-lm-eur-3", conceptId: "large-task",
     section: "3", questionRef: "2021 OL Later Modern Section 3 Topic 3 A Q1",
-    stem: "In this edited extract the Nazi newspaper Völkischer Beobachter comments on a Nuremberg rally.\n\nTo find eating and sleeping facilities for thousands of party members is a large task. There are sleeping quarters in factories and schools. Metal bed frames and mattresses are bought in large quantities. They can be stored and used every year.\nEach group has its own field kitchen. The food is bought as far in advance as possible. One central committee does all the buying. During the rally, all restaurants stay open around the clock, but no alcoholic drink is served after midnight.",
+    stem: "In this edited extract the Nazi newspaper Völkischer Beobachter comments on a Nuremberg rally. Read it and answer the questions which follow.\n\nTo find eating and sleeping facilities for thousands of party members is a large task. There are sleeping quarters in factories and schools. Metal bed frames and mattresses are bought in large quantities. They can be stored and used every year.\nEach group has its own field kitchen. The food is bought as far in advance as possible. One central committee does all the buying. During the rally, all restaurants stay open around the clock, but no alcoholic drink is served after midnight.",
     questionText: "What was a ‘large task’?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -15328,7 +15328,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2021 Ordinary Level — © State Examinations Commission.",
     id: "hist-2021-ol-lm-s3t3a-q2", topicId: "hist-lm-eur-3", conceptId: "where-sleeping-quarters-found",
     section: "3", questionRef: "2021 OL Later Modern Section 3 Topic 3 A Q2",
-    stem: "In this edited extract the Nazi newspaper Völkischer Beobachter comments on a Nuremberg rally.\n\nTo find eating and sleeping facilities for thousands of party members is a large task. There are sleeping quarters in factories and schools. Metal bed frames and mattresses are bought in large quantities. They can be stored and used every year.\nEach group has its own field kitchen. The food is bought as far in advance as possible. One central committee does all the buying. During the rally, all restaurants stay open around the clock, but no alcoholic drink is served after midnight.",
+    stem: "In this edited extract the Nazi newspaper Völkischer Beobachter comments on a Nuremberg rally. Read it and answer the questions which follow.\n\nTo find eating and sleeping facilities for thousands of party members is a large task. There are sleeping quarters in factories and schools. Metal bed frames and mattresses are bought in large quantities. They can be stored and used every year.\nEach group has its own field kitchen. The food is bought as far in advance as possible. One central committee does all the buying. During the rally, all restaurants stay open around the clock, but no alcoholic drink is served after midnight.",
     questionText: "Where were sleeping quarters found?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -15353,7 +15353,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2021 Ordinary Level — © State Examinations Commission.",
     id: "hist-2021-ol-lm-s3t3a-q3", topicId: "hist-lm-eur-3", conceptId: "efficiency-shown-obtaining-food",
     section: "3", questionRef: "2021 OL Later Modern Section 3 Topic 3 A Q3",
-    stem: "In this edited extract the Nazi newspaper Völkischer Beobachter comments on a Nuremberg rally.\n\nTo find eating and sleeping facilities for thousands of party members is a large task. There are sleeping quarters in factories and schools. Metal bed frames and mattresses are bought in large quantities. They can be stored and used every year.\nEach group has its own field kitchen. The food is bought as far in advance as possible. One central committee does all the buying. During the rally, all restaurants stay open around the clock, but no alcoholic drink is served after midnight.",
+    stem: "In this edited extract the Nazi newspaper Völkischer Beobachter comments on a Nuremberg rally. Read it and answer the questions which follow.\n\nTo find eating and sleeping facilities for thousands of party members is a large task. There are sleeping quarters in factories and schools. Metal bed frames and mattresses are bought in large quantities. They can be stored and used every year.\nEach group has its own field kitchen. The food is bought as far in advance as possible. One central committee does all the buying. During the rally, all restaurants stay open around the clock, but no alcoholic drink is served after midnight.",
     questionText: "What efficiency is shown in obtaining food?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -15377,7 +15377,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2021 Ordinary Level — © State Examinations Commission.",
     id: "hist-2021-ol-lm-s3t3a-q4", topicId: "hist-lm-eur-3", conceptId: "restriction-imposed-restaurants",
     section: "3", questionRef: "2021 OL Later Modern Section 3 Topic 3 A Q4",
-    stem: "In this edited extract the Nazi newspaper Völkischer Beobachter comments on a Nuremberg rally.\n\nTo find eating and sleeping facilities for thousands of party members is a large task. There are sleeping quarters in factories and schools. Metal bed frames and mattresses are bought in large quantities. They can be stored and used every year.\nEach group has its own field kitchen. The food is bought as far in advance as possible. One central committee does all the buying. During the rally, all restaurants stay open around the clock, but no alcoholic drink is served after midnight.",
+    stem: "In this edited extract the Nazi newspaper Völkischer Beobachter comments on a Nuremberg rally. Read it and answer the questions which follow.\n\nTo find eating and sleeping facilities for thousands of party members is a large task. There are sleeping quarters in factories and schools. Metal bed frames and mattresses are bought in large quantities. They can be stored and used every year.\nEach group has its own field kitchen. The food is bought as far in advance as possible. One central committee does all the buying. During the rally, all restaurants stay open around the clock, but no alcoholic drink is served after midnight.",
     questionText: "What restriction is imposed on restaurants?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -15401,7 +15401,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2021 Ordinary Level — © State Examinations Commission.",
     id: "hist-2021-ol-lm-s3t3a-q5", topicId: "hist-lm-eur-3", conceptId: "did-leni-riefenstahl-contribute-nuremberg-rallies",
     section: "3", questionRef: "2021 OL Later Modern Section 3 Topic 3 A Q5",
-    stem: "In this edited extract the Nazi newspaper Völkischer Beobachter comments on a Nuremberg rally.\n\nTo find eating and sleeping facilities for thousands of party members is a large task. There are sleeping quarters in factories and schools. Metal bed frames and mattresses are bought in large quantities. They can be stored and used every year.\nEach group has its own field kitchen. The food is bought as far in advance as possible. One central committee does all the buying. During the rally, all restaurants stay open around the clock, but no alcoholic drink is served after midnight.",
+    stem: "In this edited extract the Nazi newspaper Völkischer Beobachter comments on a Nuremberg rally. Read it and answer the questions which follow.\n\nTo find eating and sleeping facilities for thousands of party members is a large task. There are sleeping quarters in factories and schools. Metal bed frames and mattresses are bought in large quantities. They can be stored and used every year.\nEach group has its own field kitchen. The food is bought as far in advance as possible. One central committee does all the buying. During the rally, all restaurants stay open around the clock, but no alcoholic drink is served after midnight.",
     questionText: "What did Leni Riefenstahl contribute to the Nuremberg Rallies?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -18401,7 +18401,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level — © State Examinations Commission.",
     id: "hist-2022-ol-lm-s2t6a-q1", topicId: "hist-lm-irl-6", conceptId: "sort-work-available",
     section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 6 A Q1",
-    stem: "In this edited extract the historian Mary E. Daly comments on the life of women in the 1960s.\n\nThe 1960s gave women greater opportunities to work as secretaries, clerks and teachers. Women also had better marriage prospects than in the past, with a hope of settling down in a house with modern amenities.\nThere is good reason to believe that many women were content to become full-time wives and mothers, not least because so many of their predecessors had been denied this lifestyle.\nWhile more girls than boys attended secondary school, girls were more likely to leave at fifteen-sixteen and less likely to attend university.\nPaid employment was a temporary phase between school and marriage for most women.",
+    stem: "In this edited extract the historian Mary E. Daly comments on the life of women in the 1960s. Read it and answer the questions which follow.\n\nThe 1960s gave women greater opportunities to work as secretaries, clerks and teachers. Women also had better marriage prospects than in the past, with a hope of settling down in a house with modern amenities.\nThere is good reason to believe that many women were content to become full-time wives and mothers, not least because so many of their predecessors had been denied this lifestyle.\nWhile more girls than boys attended secondary school, girls were more likely to leave at fifteen-sixteen and less likely to attend university.\nPaid employment was a temporary phase between school and marriage for most women.",
     questionText: "What was one sort of work available?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -18425,7 +18425,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level — © State Examinations Commission.",
     id: "hist-2022-ol-lm-s2t6a-q2", topicId: "hist-lm-irl-6", conceptId: "mention-hope-women-reasonably",
     section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 6 A Q2",
-    stem: "In this edited extract the historian Mary E. Daly comments on the life of women in the 1960s.\n\nThe 1960s gave women greater opportunities to work as secretaries, clerks and teachers. Women also had better marriage prospects than in the past, with a hope of settling down in a house with modern amenities.\nThere is good reason to believe that many women were content to become full-time wives and mothers, not least because so many of their predecessors had been denied this lifestyle.\nWhile more girls than boys attended secondary school, girls were more likely to leave at fifteen-sixteen and less likely to attend university.\nPaid employment was a temporary phase between school and marriage for most women.",
+    stem: "In this edited extract the historian Mary E. Daly comments on the life of women in the 1960s. Read it and answer the questions which follow.\n\nThe 1960s gave women greater opportunities to work as secretaries, clerks and teachers. Women also had better marriage prospects than in the past, with a hope of settling down in a house with modern amenities.\nThere is good reason to believe that many women were content to become full-time wives and mothers, not least because so many of their predecessors had been denied this lifestyle.\nWhile more girls than boys attended secondary school, girls were more likely to leave at fifteen-sixteen and less likely to attend university.\nPaid employment was a temporary phase between school and marriage for most women.",
     questionText: "Mention one hope that women might reasonably have.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -18449,7 +18449,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level — © State Examinations Commission.",
     id: "hist-2022-ol-lm-s2t6a-q3", topicId: "hist-lm-irl-6", conceptId: "around-age-girls-likely-leave-school",
     section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 6 A Q3",
-    stem: "In this edited extract the historian Mary E. Daly comments on the life of women in the 1960s.\n\nThe 1960s gave women greater opportunities to work as secretaries, clerks and teachers. Women also had better marriage prospects than in the past, with a hope of settling down in a house with modern amenities.\nThere is good reason to believe that many women were content to become full-time wives and mothers, not least because so many of their predecessors had been denied this lifestyle.\nWhile more girls than boys attended secondary school, girls were more likely to leave at fifteen-sixteen and less likely to attend university.\nPaid employment was a temporary phase between school and marriage for most women.",
+    stem: "In this edited extract the historian Mary E. Daly comments on the life of women in the 1960s. Read it and answer the questions which follow.\n\nThe 1960s gave women greater opportunities to work as secretaries, clerks and teachers. Women also had better marriage prospects than in the past, with a hope of settling down in a house with modern amenities.\nThere is good reason to believe that many women were content to become full-time wives and mothers, not least because so many of their predecessors had been denied this lifestyle.\nWhile more girls than boys attended secondary school, girls were more likely to leave at fifteen-sixteen and less likely to attend university.\nPaid employment was a temporary phase between school and marriage for most women.",
     questionText: "Around what age were girls likely to leave school?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -18473,7 +18473,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level — © State Examinations Commission.",
     id: "hist-2022-ol-lm-s2t6a-q4", topicId: "hist-lm-irl-6", conceptId: "temporary-phase-most-women",
     section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 6 A Q4",
-    stem: "In this edited extract the historian Mary E. Daly comments on the life of women in the 1960s.\n\nThe 1960s gave women greater opportunities to work as secretaries, clerks and teachers. Women also had better marriage prospects than in the past, with a hope of settling down in a house with modern amenities.\nThere is good reason to believe that many women were content to become full-time wives and mothers, not least because so many of their predecessors had been denied this lifestyle.\nWhile more girls than boys attended secondary school, girls were more likely to leave at fifteen-sixteen and less likely to attend university.\nPaid employment was a temporary phase between school and marriage for most women.",
+    stem: "In this edited extract the historian Mary E. Daly comments on the life of women in the 1960s. Read it and answer the questions which follow.\n\nThe 1960s gave women greater opportunities to work as secretaries, clerks and teachers. Women also had better marriage prospects than in the past, with a hope of settling down in a house with modern amenities.\nThere is good reason to believe that many women were content to become full-time wives and mothers, not least because so many of their predecessors had been denied this lifestyle.\nWhile more girls than boys attended secondary school, girls were more likely to leave at fifteen-sixteen and less likely to attend university.\nPaid employment was a temporary phase between school and marriage for most women.",
     questionText: "What was a ‘temporary phase’ for most women?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -18497,7 +18497,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2022 Ordinary Level — © State Examinations Commission.",
     id: "hist-2022-ol-lm-s2t6a-q5", topicId: "hist-lm-irl-6", conceptId: "mention-change-status-women-during-1970s",
     section: "2", questionRef: "2022 OL Later Modern Section 2 Topic 6 A Q5",
-    stem: "In this edited extract the historian Mary E. Daly comments on the life of women in the 1960s.\n\nThe 1960s gave women greater opportunities to work as secretaries, clerks and teachers. Women also had better marriage prospects than in the past, with a hope of settling down in a house with modern amenities.\nThere is good reason to believe that many women were content to become full-time wives and mothers, not least because so many of their predecessors had been denied this lifestyle.\nWhile more girls than boys attended secondary school, girls were more likely to leave at fifteen-sixteen and less likely to attend university.\nPaid employment was a temporary phase between school and marriage for most women.",
+    stem: "In this edited extract the historian Mary E. Daly comments on the life of women in the 1960s. Read it and answer the questions which follow.\n\nThe 1960s gave women greater opportunities to work as secretaries, clerks and teachers. Women also had better marriage prospects than in the past, with a hope of settling down in a house with modern amenities.\nThere is good reason to believe that many women were content to become full-time wives and mothers, not least because so many of their predecessors had been denied this lifestyle.\nWhile more girls than boys attended secondary school, girls were more likely to leave at fifteen-sixteen and less likely to attend university.\nPaid employment was a temporary phase between school and marriage for most women.",
     questionText: "Mention one change in the status of women during the 1970s.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -23731,7 +23731,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level — © State Examinations Commission.",
     id: "hist-2023-ol-em-s2t4a-q1", topicId: "hist-em-irl-4", conceptId: "butchers-allowed-trade-fishamble-street",
     section: "2", questionRef: "2023 OL Early Modern Section 2 Topic 4 A Q1",
-    stem: "This is an edited extract from Restoration Dublin’s regulations on street trade (16/03/1683).\n\n• No trader is permitted to block the street with a stall.\n• On Fishamble Street, only butchers with shops (kept clean and smart) are permitted – not those who trade on the street.\n• The sale of stockings, linen and woollen cloth is permitted in the Crane Market; but the sale of butter, cheese and bacon is not allowed.\n• No stalls are permitted in High Street – but those carrying goods for sale in their arms are allowed.",
+    stem: "This is an edited extract from Restoration Dublin’s regulations on street trade (16/03/1683). Read it and answer the questions which follow:\n\n• No trader is permitted to block the street with a stall.\n• On Fishamble Street, only butchers with shops (kept clean and smart) are permitted – not those who trade on the street.\n• The sale of stockings, linen and woollen cloth is permitted in the Crane Market; but the sale of butter, cheese and bacon is not allowed.\n• No stalls are permitted in High Street – but those carrying goods for sale in their arms are allowed.",
     questionText: "Which butchers are allowed trade on Fishamble Street?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -23755,7 +23755,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level — © State Examinations Commission.",
     id: "hist-2023-ol-em-s2t4a-q2", topicId: "hist-em-irl-4", conceptId: "items-sold-crane-market",
     section: "2", questionRef: "2023 OL Early Modern Section 2 Topic 4 A Q2",
-    stem: "This is an edited extract from Restoration Dublin’s regulations on street trade (16/03/1683).\n\n• No trader is permitted to block the street with a stall.\n• On Fishamble Street, only butchers with shops (kept clean and smart) are permitted – not those who trade on the street.\n• The sale of stockings, linen and woollen cloth is permitted in the Crane Market; but the sale of butter, cheese and bacon is not allowed.\n• No stalls are permitted in High Street – but those carrying goods for sale in their arms are allowed.",
+    stem: "This is an edited extract from Restoration Dublin’s regulations on street trade (16/03/1683). Read it and answer the questions which follow:\n\n• No trader is permitted to block the street with a stall.\n• On Fishamble Street, only butchers with shops (kept clean and smart) are permitted – not those who trade on the street.\n• The sale of stockings, linen and woollen cloth is permitted in the Crane Market; but the sale of butter, cheese and bacon is not allowed.\n• No stalls are permitted in High Street – but those carrying goods for sale in their arms are allowed.",
     questionText: "What items could be sold in the Crane Market?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -23779,7 +23779,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level — © State Examinations Commission.",
     id: "hist-2023-ol-em-s2t4a-q3", topicId: "hist-em-irl-4", conceptId: "items-not-sold-crane-market",
     section: "2", questionRef: "2023 OL Early Modern Section 2 Topic 4 A Q3",
-    stem: "This is an edited extract from Restoration Dublin’s regulations on street trade (16/03/1683).\n\n• No trader is permitted to block the street with a stall.\n• On Fishamble Street, only butchers with shops (kept clean and smart) are permitted – not those who trade on the street.\n• The sale of stockings, linen and woollen cloth is permitted in the Crane Market; but the sale of butter, cheese and bacon is not allowed.\n• No stalls are permitted in High Street – but those carrying goods for sale in their arms are allowed.",
+    stem: "This is an edited extract from Restoration Dublin’s regulations on street trade (16/03/1683). Read it and answer the questions which follow:\n\n• No trader is permitted to block the street with a stall.\n• On Fishamble Street, only butchers with shops (kept clean and smart) are permitted – not those who trade on the street.\n• The sale of stockings, linen and woollen cloth is permitted in the Crane Market; but the sale of butter, cheese and bacon is not allowed.\n• No stalls are permitted in High Street – but those carrying goods for sale in their arms are allowed.",
     questionText: "What items could not be sold in the Crane Market?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -23803,7 +23803,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level — © State Examinations Commission.",
     id: "hist-2023-ol-em-s2t4a-q4", topicId: "hist-em-irl-4", conceptId: "who-allowed-trade-high-street",
     section: "2", questionRef: "2023 OL Early Modern Section 2 Topic 4 A Q4",
-    stem: "This is an edited extract from Restoration Dublin’s regulations on street trade (16/03/1683).\n\n• No trader is permitted to block the street with a stall.\n• On Fishamble Street, only butchers with shops (kept clean and smart) are permitted – not those who trade on the street.\n• The sale of stockings, linen and woollen cloth is permitted in the Crane Market; but the sale of butter, cheese and bacon is not allowed.\n• No stalls are permitted in High Street – but those carrying goods for sale in their arms are allowed.",
+    stem: "This is an edited extract from Restoration Dublin’s regulations on street trade (16/03/1683). Read it and answer the questions which follow:\n\n• No trader is permitted to block the street with a stall.\n• On Fishamble Street, only butchers with shops (kept clean and smart) are permitted – not those who trade on the street.\n• The sale of stockings, linen and woollen cloth is permitted in the Crane Market; but the sale of butter, cheese and bacon is not allowed.\n• No stalls are permitted in High Street – but those carrying goods for sale in their arms are allowed.",
     questionText: "Who was allowed trade in High Street?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -23827,7 +23827,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Ordinary Level — © State Examinations Commission.",
     id: "hist-2023-ol-em-s2t4a-q5", topicId: "hist-em-irl-4", conceptId: "export-ireland-time",
     section: "2", questionRef: "2023 OL Early Modern Section 2 Topic 4 A Q5",
-    stem: "This is an edited extract from Restoration Dublin’s regulations on street trade (16/03/1683).\n\n• No trader is permitted to block the street with a stall.\n• On Fishamble Street, only butchers with shops (kept clean and smart) are permitted – not those who trade on the street.\n• The sale of stockings, linen and woollen cloth is permitted in the Crane Market; but the sale of butter, cheese and bacon is not allowed.\n• No stalls are permitted in High Street – but those carrying goods for sale in their arms are allowed.",
+    stem: "This is an edited extract from Restoration Dublin’s regulations on street trade (16/03/1683). Read it and answer the questions which follow:\n\n• No trader is permitted to block the street with a stall.\n• On Fishamble Street, only butchers with shops (kept clean and smart) are permitted – not those who trade on the street.\n• The sale of stockings, linen and woollen cloth is permitted in the Crane Market; but the sale of butter, cheese and bacon is not allowed.\n• No stalls are permitted in High Street – but those carrying goods for sale in their arms are allowed.",
     questionText: "Name one export from Ireland at that time.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -25975,7 +25975,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-lm-s2t5a-q1", topicId: "hist-lm-irl-5", conceptId: "writer-does-feel-derry",
     section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 5 A Q1",
-    stem: "In this edited extract an Irish Times journalist paints a gloomy picture of Derry (19 February 1965).\n\nNowhere does one feel decay like in Derry where 25% of the male population is unemployed.\nFine houses are run down. Streets where businesses have collapsed show former shop fronts curtained over.\nIt is hard to avoid the conclusion that the refusal to give it a university is because the authorities feel that Derry cannot be saved.",
+    stem: "In this edited extract an Irish Times journalist paints a gloomy picture of Derry (19 February 1965). Read it and answer the questions which follow.\n\nNowhere does one feel decay like in Derry where 25% of the male population is unemployed.\nFine houses are run down. Streets where businesses have collapsed show former shop fronts curtained over.\nIt is hard to avoid the conclusion that the refusal to give it a university is because the authorities feel that Derry cannot be saved.",
     questionText: "According to the writer, what does one feel in Derry?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -25999,7 +25999,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-lm-s2t5a-q2", topicId: "hist-lm-irl-5", conceptId: "percentage-male-population-unemployed",
     section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 5 A Q2",
-    stem: "In this edited extract an Irish Times journalist paints a gloomy picture of Derry (19 February 1965).\n\nNowhere does one feel decay like in Derry where 25% of the male population is unemployed.\nFine houses are run down. Streets where businesses have collapsed show former shop fronts curtained over.\nIt is hard to avoid the conclusion that the refusal to give it a university is because the authorities feel that Derry cannot be saved.",
+    stem: "In this edited extract an Irish Times journalist paints a gloomy picture of Derry (19 February 1965). Read it and answer the questions which follow.\n\nNowhere does one feel decay like in Derry where 25% of the male population is unemployed.\nFine houses are run down. Streets where businesses have collapsed show former shop fronts curtained over.\nIt is hard to avoid the conclusion that the refusal to give it a university is because the authorities feel that Derry cannot be saved.",
     questionText: "What percentage of the male population is unemployed?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -26023,7 +26023,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-lm-s2t5a-q3", topicId: "hist-lm-irl-5", conceptId: "shop-fronts-curtained-over",
     section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 5 A Q3",
-    stem: "In this edited extract an Irish Times journalist paints a gloomy picture of Derry (19 February 1965).\n\nNowhere does one feel decay like in Derry where 25% of the male population is unemployed.\nFine houses are run down. Streets where businesses have collapsed show former shop fronts curtained over.\nIt is hard to avoid the conclusion that the refusal to give it a university is because the authorities feel that Derry cannot be saved.",
+    stem: "In this edited extract an Irish Times journalist paints a gloomy picture of Derry (19 February 1965). Read it and answer the questions which follow.\n\nNowhere does one feel decay like in Derry where 25% of the male population is unemployed.\nFine houses are run down. Streets where businesses have collapsed show former shop fronts curtained over.\nIt is hard to avoid the conclusion that the refusal to give it a university is because the authorities feel that Derry cannot be saved.",
     questionText: "Why are shop fronts curtained over?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -26047,7 +26047,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-lm-s2t5a-q4", topicId: "hist-lm-irl-5", conceptId: "attitude-authorities-derry-suggested",
     section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 5 A Q4",
-    stem: "In this edited extract an Irish Times journalist paints a gloomy picture of Derry (19 February 1965).\n\nNowhere does one feel decay like in Derry where 25% of the male population is unemployed.\nFine houses are run down. Streets where businesses have collapsed show former shop fronts curtained over.\nIt is hard to avoid the conclusion that the refusal to give it a university is because the authorities feel that Derry cannot be saved.",
+    stem: "In this edited extract an Irish Times journalist paints a gloomy picture of Derry (19 February 1965). Read it and answer the questions which follow.\n\nNowhere does one feel decay like in Derry where 25% of the male population is unemployed.\nFine houses are run down. Streets where businesses have collapsed show former shop fronts curtained over.\nIt is hard to avoid the conclusion that the refusal to give it a university is because the authorities feel that Derry cannot be saved.",
     questionText: "What attitude of the authorities to Derry is suggested?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -26071,7 +26071,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-lm-s2t5a-q5", topicId: "hist-lm-irl-5", conceptId: "argument-made-favour-building-new-university",
     section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 5 A Q5",
-    stem: "In this edited extract an Irish Times journalist paints a gloomy picture of Derry (19 February 1965).\n\nNowhere does one feel decay like in Derry where 25% of the male population is unemployed.\nFine houses are run down. Streets where businesses have collapsed show former shop fronts curtained over.\nIt is hard to avoid the conclusion that the refusal to give it a university is because the authorities feel that Derry cannot be saved.",
+    stem: "In this edited extract an Irish Times journalist paints a gloomy picture of Derry (19 February 1965). Read it and answer the questions which follow.\n\nNowhere does one feel decay like in Derry where 25% of the male population is unemployed.\nFine houses are run down. Streets where businesses have collapsed show former shop fronts curtained over.\nIt is hard to avoid the conclusion that the refusal to give it a university is because the authorities feel that Derry cannot be saved.",
     questionText: "What was one argument made in favour of building a new university in Coleraine?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -27781,7 +27781,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-em-s2t4a-q1", topicId: "hist-em-irl-4", conceptId: "position-held-writer-john-brenan",
     section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 4 A Q1",
-    stem: "In this edited extract from a letter (9 November 1687) written by John Brenan, Catholic Archbishop of Cashel, reference is made to the fortunes of Catholics under Richard Talbot, Earl of Tyrconnell.\n\nHe has made the army nearly all Catholic, officers as well as soldiers. The royal council is, for the most part, Catholic, as are all the civil officials, judges and magistrates.\nThe bishops and priests may appear, in public and private, in their clerical dress. The religious orders, Franciscans and Dominicans, go about in their religious habits.\nCatholics hope for even more relief under the present glorious king and his minister, Tyrconnell.",
+    stem: "In this edited extract from a letter (9 November 1687) written by John Brenan, Catholic Archbishop of Cashel, reference is made to the fortunes of Catholics under Richard Talbot, Earl of Tyrconnell. Read it and answer the questions which follow.\n\nHe has made the army nearly all Catholic, officers as well as soldiers. The royal council is, for the most part, Catholic, as are all the civil officials, judges and magistrates.\nThe bishops and priests may appear, in public and private, in their clerical dress. The religious orders, Franciscans and Dominicans, go about in their religious habits.\nCatholics hope for even more relief under the present glorious king and his minister, Tyrconnell.",
     questionText: "What position was held by the writer, John Brenan?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -27805,7 +27805,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-em-s2t4a-q2", topicId: "hist-em-irl-4", conceptId: "change-army-brought-earl-tyrconnell",
     section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 4 A Q2",
-    stem: "In this edited extract from a letter (9 November 1687) written by John Brenan, Catholic Archbishop of Cashel, reference is made to the fortunes of Catholics under Richard Talbot, Earl of Tyrconnell.\n\nHe has made the army nearly all Catholic, officers as well as soldiers. The royal council is, for the most part, Catholic, as are all the civil officials, judges and magistrates.\nThe bishops and priests may appear, in public and private, in their clerical dress. The religious orders, Franciscans and Dominicans, go about in their religious habits.\nCatholics hope for even more relief under the present glorious king and his minister, Tyrconnell.",
+    stem: "In this edited extract from a letter (9 November 1687) written by John Brenan, Catholic Archbishop of Cashel, reference is made to the fortunes of Catholics under Richard Talbot, Earl of Tyrconnell. Read it and answer the questions which follow.\n\nHe has made the army nearly all Catholic, officers as well as soldiers. The royal council is, for the most part, Catholic, as are all the civil officials, judges and magistrates.\nThe bishops and priests may appear, in public and private, in their clerical dress. The religious orders, Franciscans and Dominicans, go about in their religious habits.\nCatholics hope for even more relief under the present glorious king and his minister, Tyrconnell.",
     questionText: "What was one change in the army brought about by the Earl of Tyrconnell?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -27829,7 +27829,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-em-s2t4a-q3", topicId: "hist-em-irl-4", conceptId: "religion-judges-magistrates",
     section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 4 A Q3",
-    stem: "In this edited extract from a letter (9 November 1687) written by John Brenan, Catholic Archbishop of Cashel, reference is made to the fortunes of Catholics under Richard Talbot, Earl of Tyrconnell.\n\nHe has made the army nearly all Catholic, officers as well as soldiers. The royal council is, for the most part, Catholic, as are all the civil officials, judges and magistrates.\nThe bishops and priests may appear, in public and private, in their clerical dress. The religious orders, Franciscans and Dominicans, go about in their religious habits.\nCatholics hope for even more relief under the present glorious king and his minister, Tyrconnell.",
+    stem: "In this edited extract from a letter (9 November 1687) written by John Brenan, Catholic Archbishop of Cashel, reference is made to the fortunes of Catholics under Richard Talbot, Earl of Tyrconnell. Read it and answer the questions which follow.\n\nHe has made the army nearly all Catholic, officers as well as soldiers. The royal council is, for the most part, Catholic, as are all the civil officials, judges and magistrates.\nThe bishops and priests may appear, in public and private, in their clerical dress. The religious orders, Franciscans and Dominicans, go about in their religious habits.\nCatholics hope for even more relief under the present glorious king and his minister, Tyrconnell.",
     questionText: "What religion were judges and magistrates?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -27853,7 +27853,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-em-s2t4a-q4", topicId: "hist-em-irl-4", conceptId: "churchmen-permitted",
     section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 4 A Q4",
-    stem: "In this edited extract from a letter (9 November 1687) written by John Brenan, Catholic Archbishop of Cashel, reference is made to the fortunes of Catholics under Richard Talbot, Earl of Tyrconnell.\n\nHe has made the army nearly all Catholic, officers as well as soldiers. The royal council is, for the most part, Catholic, as are all the civil officials, judges and magistrates.\nThe bishops and priests may appear, in public and private, in their clerical dress. The religious orders, Franciscans and Dominicans, go about in their religious habits.\nCatholics hope for even more relief under the present glorious king and his minister, Tyrconnell.",
+    stem: "In this edited extract from a letter (9 November 1687) written by John Brenan, Catholic Archbishop of Cashel, reference is made to the fortunes of Catholics under Richard Talbot, Earl of Tyrconnell. Read it and answer the questions which follow.\n\nHe has made the army nearly all Catholic, officers as well as soldiers. The royal council is, for the most part, Catholic, as are all the civil officials, judges and magistrates.\nThe bishops and priests may appear, in public and private, in their clerical dress. The religious orders, Franciscans and Dominicans, go about in their religious habits.\nCatholics hope for even more relief under the present glorious king and his minister, Tyrconnell.",
     questionText: "What were churchmen permitted to do?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -27877,7 +27877,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-em-s2t4a-q5", topicId: "hist-em-irl-4", conceptId: "did-reign-king-james-come-end",
     section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 4 A Q5",
-    stem: "In this edited extract from a letter (9 November 1687) written by John Brenan, Catholic Archbishop of Cashel, reference is made to the fortunes of Catholics under Richard Talbot, Earl of Tyrconnell.\n\nHe has made the army nearly all Catholic, officers as well as soldiers. The royal council is, for the most part, Catholic, as are all the civil officials, judges and magistrates.\nThe bishops and priests may appear, in public and private, in their clerical dress. The religious orders, Franciscans and Dominicans, go about in their religious habits.\nCatholics hope for even more relief under the present glorious king and his minister, Tyrconnell.",
+    stem: "In this edited extract from a letter (9 November 1687) written by John Brenan, Catholic Archbishop of Cashel, reference is made to the fortunes of Catholics under Richard Talbot, Earl of Tyrconnell. Read it and answer the questions which follow.\n\nHe has made the army nearly all Catholic, officers as well as soldiers. The royal council is, for the most part, Catholic, as are all the civil officials, judges and magistrates.\nThe bishops and priests may appear, in public and private, in their clerical dress. The religious orders, Franciscans and Dominicans, go about in their religious habits.\nCatholics hope for even more relief under the present glorious king and his minister, Tyrconnell.",
     questionText: "How did the reign of King James II come to an end?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -28647,7 +28647,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-em-s3t5a-q1", topicId: "hist-em-eur-5", conceptId: "catherine-priorities",
     section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 5 A Q1",
-    stem: "This is an edited extract from the British Ambassador’s (1765) account of Catherine II of Russia.\n\nThose who are most in her company assure me that her rate of work is enormous. The welfare of her subjects and the glory of her empire are always her concern.\nShe takes on too many projects at once. She makes her ministers work nonstop. Among those who serve her, some will be found to be experienced, but few will have first-rate ability.",
+    stem: "This is an edited extract from the British Ambassador’s (1765) account of Catherine II of Russia. Read it and answer the questions which follow.\n\nThose who are most in her company assure me that her rate of work is enormous. The welfare of her subjects and the glory of her empire are always her concern.\nShe takes on too many projects at once. She makes her ministers work nonstop. Among those who serve her, some will be found to be experienced, but few will have first-rate ability.",
     questionText: "What are Catherine’s priorities?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -28672,7 +28672,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-em-s3t5a-q2", topicId: "hist-em-eur-5", conceptId: "did-catherine-manage-her-work-effectively",
     section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 5 A Q2",
-    stem: "This is an edited extract from the British Ambassador’s (1765) account of Catherine II of Russia.\n\nThose who are most in her company assure me that her rate of work is enormous. The welfare of her subjects and the glory of her empire are always her concern.\nShe takes on too many projects at once. She makes her ministers work nonstop. Among those who serve her, some will be found to be experienced, but few will have first-rate ability.",
+    stem: "This is an edited extract from the British Ambassador’s (1765) account of Catherine II of Russia. Read it and answer the questions which follow.\n\nThose who are most in her company assure me that her rate of work is enormous. The welfare of her subjects and the glory of her empire are always her concern.\nShe takes on too many projects at once. She makes her ministers work nonstop. Among those who serve her, some will be found to be experienced, but few will have first-rate ability.",
     questionText: "Did Catherine manage her work effectively? Briefly explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -28697,7 +28697,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-em-s3t5a-q3", topicId: "hist-em-eur-5", conceptId: "does-catherine-treat-her-ministers",
     section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 5 A Q3",
-    stem: "This is an edited extract from the British Ambassador’s (1765) account of Catherine II of Russia.\n\nThose who are most in her company assure me that her rate of work is enormous. The welfare of her subjects and the glory of her empire are always her concern.\nShe takes on too many projects at once. She makes her ministers work nonstop. Among those who serve her, some will be found to be experienced, but few will have first-rate ability.",
+    stem: "This is an edited extract from the British Ambassador’s (1765) account of Catherine II of Russia. Read it and answer the questions which follow.\n\nThose who are most in her company assure me that her rate of work is enormous. The welfare of her subjects and the glory of her empire are always her concern.\nShe takes on too many projects at once. She makes her ministers work nonstop. Among those who serve her, some will be found to be experienced, but few will have first-rate ability.",
     questionText: "How does Catherine treat her ministers?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -28721,7 +28721,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-em-s3t5a-q4", topicId: "hist-em-eur-5", conceptId: "criticism-catherine-servants-offered-writer",
     section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 5 A Q4",
-    stem: "This is an edited extract from the British Ambassador’s (1765) account of Catherine II of Russia.\n\nThose who are most in her company assure me that her rate of work is enormous. The welfare of her subjects and the glory of her empire are always her concern.\nShe takes on too many projects at once. She makes her ministers work nonstop. Among those who serve her, some will be found to be experienced, but few will have first-rate ability.",
+    stem: "This is an edited extract from the British Ambassador’s (1765) account of Catherine II of Russia. Read it and answer the questions which follow.\n\nThose who are most in her company assure me that her rate of work is enormous. The welfare of her subjects and the glory of her empire are always her concern.\nShe takes on too many projects at once. She makes her ministers work nonstop. Among those who serve her, some will be found to be experienced, but few will have first-rate ability.",
     questionText: "What criticism of Catherine’s servants is offered by the writer?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -28745,7 +28745,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
     id: "hist-2024-ol-em-s3t5a-q5", topicId: "hist-em-eur-5", conceptId: "did-catherine-expand-borders-russia",
     section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 5 A Q5",
-    stem: "This is an edited extract from the British Ambassador’s (1765) account of Catherine II of Russia.\n\nThose who are most in her company assure me that her rate of work is enormous. The welfare of her subjects and the glory of her empire are always her concern.\nShe takes on too many projects at once. She makes her ministers work nonstop. Among those who serve her, some will be found to be experienced, but few will have first-rate ability.",
+    stem: "This is an edited extract from the British Ambassador’s (1765) account of Catherine II of Russia. Read it and answer the questions which follow.\n\nThose who are most in her company assure me that her rate of work is enormous. The welfare of her subjects and the glory of her empire are always her concern.\nShe takes on too many projects at once. She makes her ministers work nonstop. Among those who serve her, some will be found to be experienced, but few will have first-rate ability.",
     questionText: "Briefly, how did Catherine II expand the borders of Russia?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -34349,7 +34349,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
     id: "hist-2026-ol-lm-s3t4a-q1", topicId: "hist-lm-eur-4", conceptId: "when-did-soviet-army-arrive-budapest",
     section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 4 A Q1",
-    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building.\n\nAt the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles.\nPeople are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long.\nThe Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
+    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building. Read it and answer the questions which follow.\n\nAt the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles.\nPeople are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long.\nThe Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
     questionText: "When did the Soviet army arrive in Budapest?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -34374,7 +34374,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
     id: "hist-2026-ol-lm-s3t4a-q2", topicId: "hist-lm-eur-4", conceptId: "suggested-hungarians-not-well-armed",
     section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 4 A Q2",
-    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building.\n\nAt the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles.\nPeople are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long.\nThe Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
+    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building. Read it and answer the questions which follow.\n\nAt the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles.\nPeople are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long.\nThe Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
     questionText: "How was it suggested that the Hungarians were not well‐armed?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -34398,7 +34398,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
     id: "hist-2026-ol-lm-s3t4a-q3", topicId: "hist-lm-eur-4", conceptId: "outcome-battle-writer",
     section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 4 A Q3",
-    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building.\n\nAt the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles.\nPeople are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long.\nThe Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
+    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building. Read it and answer the questions which follow.\n\nAt the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles.\nPeople are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long.\nThe Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
     questionText: "What would be the outcome of the battle, according to the writer?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -34422,7 +34422,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
     id: "hist-2026-ol-lm-s3t4a-q4", topicId: "hist-lm-eur-4", conceptId: "did-hungarians-want-outside-world-writer",
     section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 4 A Q4",
-    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building.\n\nAt the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles.\nPeople are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long.\nThe Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
+    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building. Read it and answer the questions which follow.\n\nAt the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles.\nPeople are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long.\nThe Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
     questionText: "What did the Hungarians want from the outside world, according to the writer?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -34446,7 +34446,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
     id: "hist-2026-ol-lm-s3t4a-q5", topicId: "hist-lm-eur-4", conceptId: "part-did-imre-nagy-play-affairs",
     section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 4 A Q5",
-    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building.\n\nAt the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles.\nPeople are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long.\nThe Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
+    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building. Read it and answer the questions which follow.\n\nAt the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles.\nPeople are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long.\nThe Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
     questionText: "Briefly, what part did Imre Nagy play in the affairs of Hungary?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -36004,7 +36004,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
     id: "hist-2026-ol-em-s3t2a-q1", topicId: "hist-em-eur-2", conceptId: "did-jesuit-fathers-fear",
     section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 2 A Q1",
-    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China.\n\nFor fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public.\nAs well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people.\nThey hoped to impress the Chinese by example and by the sanctity [holiness] of their lives.\nThey wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
+    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China. Read it and answer the questions which follow.\n\nFor fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public.\nAs well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people.\nThey hoped to impress the Chinese by example and by the sanctity [holiness] of their lives.\nThey wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
     questionText: "What did the Jesuit Fathers fear?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -36028,7 +36028,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
     id: "hist-2026-ol-em-s3t2a-q2", topicId: "hist-em-eur-2", conceptId: "thing-studied",
     section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 2 A Q2",
-    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China.\n\nFor fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public.\nAs well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people.\nThey hoped to impress the Chinese by example and by the sanctity [holiness] of their lives.\nThey wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
+    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China. Read it and answer the questions which follow.\n\nFor fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public.\nAs well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people.\nThey hoped to impress the Chinese by example and by the sanctity [holiness] of their lives.\nThey wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
     questionText: "What was one thing they studied?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -36052,7 +36052,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
     id: "hist-2026-ol-em-s3t2a-q3", topicId: "hist-em-eur-2", conceptId: "did-hope-impress-chinese",
     section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 2 A Q3",
-    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China.\n\nFor fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public.\nAs well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people.\nThey hoped to impress the Chinese by example and by the sanctity [holiness] of their lives.\nThey wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
+    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China. Read it and answer the questions which follow.\n\nFor fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public.\nAs well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people.\nThey hoped to impress the Chinese by example and by the sanctity [holiness] of their lives.\nThey wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
     questionText: "How did they hope to impress the Chinese?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -36076,7 +36076,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
     id: "hist-2026-ol-em-s3t2a-q4", topicId: "hist-em-eur-2", conceptId: "features-garment-worn-them",
     section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 2 A Q4",
-    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China.\n\nFor fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public.\nAs well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people.\nThey hoped to impress the Chinese by example and by the sanctity [holiness] of their lives.\nThey wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
+    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China. Read it and answer the questions which follow.\n\nFor fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public.\nAs well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people.\nThey hoped to impress the Chinese by example and by the sanctity [holiness] of their lives.\nThey wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
     questionText: "What were the features of the garment worn by them?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -36100,7 +36100,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
     id: "hist-2026-ol-em-s3t2a-q5", topicId: "hist-em-eur-2", conceptId: "achievement-jesuit-mission-china",
     section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 2 A Q5",
-    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China.\n\nFor fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public.\nAs well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people.\nThey hoped to impress the Chinese by example and by the sanctity [holiness] of their lives.\nThey wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
+    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China. Read it and answer the questions which follow.\n\nFor fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public.\nAs well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people.\nThey hoped to impress the Chinese by example and by the sanctity [holiness] of their lives.\nThey wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
     questionText: "What was one achievement of the Jesuit mission in China?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [

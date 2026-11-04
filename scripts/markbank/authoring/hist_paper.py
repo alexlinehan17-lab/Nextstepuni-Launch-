@@ -95,7 +95,6 @@ FURNITURE = re.compile(
     r'|Answer one of the following|Answer the following'
     r'|Write a short paragraph on one of the following'
     r'|Study the documents? (?:opposite|below)'
-    r'|Read it and answer|Read the (?:extract|following)'
     r'|Recommended maximum time'
     r'|Section \d \(\d+ marks\)|Sections? \d(?: (?:&|and) \d)? \(\d+ marks\)'
     r'|(?:Ireland|Europe and the wider world)\s*:\s*Topics\b'
