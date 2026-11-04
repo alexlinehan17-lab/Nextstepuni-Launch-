@@ -16,6 +16,8 @@ DECISION_KEYS = {'A1a','A2bi','A3a','A3bi','A3bii','A4a','A4bi','A5a','A5bi','A6
                  'B1a','B1bi','B3a','B4bi','B4bii','B5bii','B6b'}
 # These four two-answer parts have equal, independently usable one-mark slots.
 ONE_MARK_SLOTS = {'B1bi':'Sampla','B4bi':'Dúshlán','B4bii':'Cúis','B5bii':'Ceist'}
+# What a one-slot card practises, in English: the paper prints the pair, and nothing in Irish is ours.
+SLOT_FOCUS = {'Sampla':'example','Dúshlán':'challenge','Cúis':'reason','Ceist':'question'}
 
 
 def award(key, label, marks, guidance, kind='exact', permitted=None):
@@ -60,20 +62,18 @@ def apply_reading_review(cards):
         topic='irish-3-3' if number==6 and part=='a' else parent['topicId']
         marks=sum(c['maxMarks'] for c in criteria)
         text=f'{number}{part_label} {prompt}'
-        instruction='Don chárta seo: '+label+'.'
+        focus=None
         if slot:
-            note=(f'Don chárta seo: tabhair freagra amháin don chuid seo ({slot.lower()}, 1 mharc).'
-                  if number<6 else 'Don chárta seo: mínigh léargas amháin agus tabhair sampla cruinn as an sliocht i d’fhocail féin (6 mharc).')
-            # The original complete instruction remains above the practice scope.
-            text+=' '+note
-            instruction=note
+            word,n=slot.rsplit(' ',1)
+            focus=(f'One of the two {SLOT_FOCUS[word]}s ({SLOT_FOCUS[word]} {n}, 1 mark)' if number<6 else
+                   f'One of the two insights, explained with an accurate example from the extract in your own words (insight {n}, 6 marks)')
         card.update(id=identifier,questionRef='2024 HL Paper 2 '+label,questionText=text,
                     totalMarks=marks,topicId=topic,conceptId='irish-'+key,
                     criteria=copy.deepcopy(criteria),schemePage=scheme_pages[0],schemePages=scheme_pages,
                     paperPage=5 if passage=='A' else 7,paperTraceScore=1,schemeTraceScore=1,
                     reviewedAt='2026-10-07',reviewedPaperPages=[4,5] if passage=='A' else [6,7],
                     atlasQuestionId=f'R-{passage}-{number}-{part}'+suffix,
-                    practiceInstruction=instruction,
+                    **({'practiceFocus':focus} if focus else {}),
                     taskRequirements=['Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.',
                                       'Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin.'],
                     markingGuideNote='SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.')
@@ -133,7 +133,7 @@ def apply_reading_review(cards):
                         for slot in [1,2]:
                             label=ONE_MARK_SLOTS[key]+f' {slot}'
                             add(passage,number,part,prompt,[award(f'{part}-{slot}',label,1,
-                                'Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. '+guide)],
+                                guide)],
                                 scheme_pages,suffix=f'-{slot}',slot=label)
                 elif part=='a':
                     assert 'gcéad mhír' in guide and 'ceart agus marc amháin' in guide
@@ -146,7 +146,7 @@ def apply_reading_review(cards):
                 else:
                     assert 'Léargas 1 (L1) = 2 mharc' in guide and 'Léargas 2 (L2) = 2 mharc' in guide
                     criteria=[award(f'insight-{slot}',f'Léargas {slot}',6,
-                        f'An léargas seo = 2 mharc; míniú i d’fhocail féin le sampla cruinn = 4 mharc. Gan léargas luaite/intuigthe, ní féidir glacadh leis an sampla. '+guide,'indicative') for slot in [1,2]]
+                        guide,'indicative') for slot in [1,2]]
                     member=add(passage,number,part,prompt,criteria,scheme_pages,atomic_task=False)
                     members.append(member)
                     for slot in [1,2]:

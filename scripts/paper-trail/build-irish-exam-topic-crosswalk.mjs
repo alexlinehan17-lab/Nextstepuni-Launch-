@@ -756,7 +756,8 @@ for (const card of foundationTasks.cards) {
   });
   paper.q.at(-1).reviewedSchemePages = card.schemePages;
   paper.q.at(-1).audioMaterial = card.audioMaterial;
-  if (card.year <= 2024) paper.q.at(-1).practiceInstruction = 'Don chárta seo: ' + card.questionRef.replace(/^\d{4} FL /, '') + '.';
+  // What the task practises, in English: a practice line is ours, and the bank prints no Irish of its own.
+  if (card.year <= 2024) paper.q.at(-1).practiceInstruction = 'Practise: ' + card.questionRef.replace(/^\d{4} FL /, '') + '.';
   paper.hasReviewedFoundationTasks = true;
   paper.reviewedFoundationSchemeFileid = (card.schemeFileid ?? card.paperFileid) + '.pdf';
 }
@@ -814,8 +815,8 @@ for (const card of reviewedHigherTasks) {
   question.primary = card.topicId;
   delete question.secondary;
   question.reviewedSchemePages = card.schemePages;
-  question.practiceInstruction = card.practiceInstruction ?? ('Don chárta seo: ' + question.label + '.'
-    + (card.selectedRoute ? ' Freagair (i), (ii) agus (iii).' : ''));
+  question.practiceInstruction = 'Practise: ' + question.label + (card.practiceFocus ? ' · ' + card.practiceFocus : '') + '.'
+    + (card.selectedRoute ? ' Answer (i), (ii) and (iii).' : '');
   if (card.audioMaterial) question.audioMaterial = card.audioMaterial;
   if (card.schemeFileid) paper.reviewedHigherSchemeFileid = card.schemeFileid + '.pdf';
   paper.hasReviewedHigherTasks = true;
@@ -905,7 +906,7 @@ for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks
     reviewedCards.filter(c => c.memberCardIds?.includes(issue.id)).forEach(c => affected.add(c.atlasQuestionId));
     for (const question of reviewedFoundation.q.filter(q => affected.has(q.n))) {
       if (!question.practiceInstruction?.includes(issue.sourceDiscrepancyNotice)) {
-        question.practiceInstruction = (question.practiceInstruction ?? ('Don chárta seo: ' + question.label + '.'))
+        question.practiceInstruction = (question.practiceInstruction ?? ('Practise: ' + question.label + '.'))
           + ' ' + issue.sourceDiscrepancyNotice;
       }
     }
@@ -1314,8 +1315,10 @@ for (const paper of papers) {
       const previous = (question.baseline || (paper.hasReviewedFoundationTasks && /^\d+$/.test(question.n)))
         && paper.sidecar?.q.find(old => old.n === q.n);
       return previous
-        ? { ...previous, ...(q.audioMaterial ? { audioMaterial: q.audioMaterial } : {}),
-            ...(!previous.practiceInstruction && q.practiceInstruction ? { practiceInstruction: q.practiceInstruction } : {}),
+        // The practice line is this build's display text, not a frozen identity: it is always the current one.
+        ? { ...Object.fromEntries(Object.entries(previous).filter(([key]) => key !== 'practiceInstruction')),
+            ...(q.audioMaterial ? { audioMaterial: q.audioMaterial } : {}),
+            ...(q.practiceInstruction ? { practiceInstruction: q.practiceInstruction } : {}),
             paperRegion: q.paperRegion, schemeRegion: region, printOrder: q.printOrder }
         : { ...q, region, mode: 'crop', conf: 1 };
     });

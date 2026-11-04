@@ -88,7 +88,9 @@ describe('2024 Higher Irish reading: independently reviewed paper/scheme boundar
     for(const suffix of ['b-q6-b-1','b-q6-b-2']) {
       expect(cardFor(suffix).questionText).toContain('Is leor 60 focal');
       expect(cardFor(suffix).questionText).not.toContain('30 focal');
-      expect(cardFor(suffix).questionText).toContain('mínigh léargas amháin');
+      // The question is the paper's print; what the card practises is English, never a line of ours in Irish.
+      expect(cardFor(suffix).questionText).not.toContain('Don chárta seo');
+      expect(cardFor(suffix).practiceFocus).toBe(`One of the two insights, explained with an accurate example from the extract in your own words (insight ${suffix.at(-1)}, 6 marks)`);
       const r=rubric(suffix);
       expect(r.criteria).toHaveLength(1);
       expect(r.criteria[0].maxMarks).toBe(6);
@@ -99,7 +101,8 @@ describe('2024 Higher Irish reading: independently reviewed paper/scheme boundar
       for(const slot of [1,2]) {
         const card=cardFor(`b-q${key}-${slot}`);
         expect(card.totalMarks).toBe(1);
-        expect(card.questionText).toContain('tabhair freagra amháin');
+        expect(card.questionText).not.toContain('Don chárta seo');
+        expect(card.practiceFocus).toMatch(new RegExp(`^One of the two (examples|challenges|reasons|questions) \\((example|challenge|reason|question) ${slot}, 1 mark\\)$`));
         expect(rubric(`b-q${key}-${slot}`).criteria[0].permittedMarks).toEqual([0,1]);
       }
     }

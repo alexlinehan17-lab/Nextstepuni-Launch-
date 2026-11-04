@@ -139,10 +139,10 @@ describe('2026 Foundation source reconciliation',()=>{
     expect(topics('W-4B')).toEqual(['irish-foundation-write-a-letter']);
     expect(topics('3')).not.toContain('irish-foundation-fill-in-a-form');
     expect(q('1').audioMaterial.playbackUrl).toContain('/2026/LC001BLP017IV.mp3');
-    for(const n of ['W-4B','W-5A','3']) expect(q(n).practiceInstruction,n).toContain('Nóta foinse');
+    for(const n of ['W-4B','W-5A','3']) expect(q(n).practiceInstruction,n).toContain('Source note');
     expect(map.q.some((q:{n:string})=>/^W-[45][AB]-[45][AB]$|^R-[23]-[ABC]{2}$/.test(q.n))).toBe(false);
     expect(q('W-4B').practiceInstruction.match(/Foirm Iarratais/g)).toHaveLength(1);
-    expect(q('3').practiceInstruction.match(/Nóta foinse/g)).toHaveLength(2);
+    expect(q('3').practiceInstruction.match(/Source note/g)).toHaveLength(2);
   });
 
   it('rejects unknown and stale raw selection directives',()=>{

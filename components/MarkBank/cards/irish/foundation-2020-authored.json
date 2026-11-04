@@ -1639,7 +1639,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-1",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n1. Cathain a d’fhreastail Peadar ar an agallamh?\n\n13 Lúnasa\n16 Meán Fómhair\n20 Meán Fómhair",
+      "questionText": "1. Cathain a d’fhreastail Peadar ar an agallamh?\n\n13 Lúnasa\n16 Meán Fómhair\n20 Meán Fómhair",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1690,7 +1690,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-2",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n2. Cén grád a fuair Peadar sa Teicneolaíocht san Ardteistiméireacht?\n\nGrád O2\nGrád H3\nGrád H4",
+      "questionText": "2. Cén grád a fuair Peadar sa Teicneolaíocht san Ardteistiméireacht?\n\nGrád O2\nGrád H3\nGrád H4",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1741,7 +1741,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-3",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n3. Cad a gheobhaidh an printíseach dhá lá sa tseachtain?\n\nScrúdú\nRanganna\nTaithí phraiticiúil",
+      "questionText": "3. Cad a gheobhaidh an printíseach dhá lá sa tseachtain?\n\nScrúdú\nRanganna\nTaithí phraiticiúil",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1792,7 +1792,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-4",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n4. Cad a bheidh sa ríomhphost a sheolfar chuig Peadar má ghlacann sé le háit ar an gcúrsa?\n\nLiosta lóistín\nTorthaí na hArdteistiméireachta\nGach eolas faoin gcúrsa",
+      "questionText": "4. Cad a bheidh sa ríomhphost a sheolfar chuig Peadar má ghlacann sé le háit ar an gcúrsa?\n\nLiosta lóistín\nTorthaí na hArdteistiméireachta\nGach eolas faoin gcúrsa",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1843,7 +1843,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-5",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n5. Cén post atá ag Muireann Ní Chonaill?\n\nLeictreoir\nOifigeach Pearsanra\nStiúrthóir",
+      "questionText": "5. Cén post atá ag Muireann Ní Chonaill?\n\nLeictreoir\nOifigeach Pearsanra\nStiúrthóir",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1894,7 +1894,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-1",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n1. Cá bhfuil Ionad an Bhlascaoid Mhóir suite?\n\nAr na Blascaodaí\nSa Daingean\nI nDún Chaoin",
+      "questionText": "1. Cá bhfuil Ionad an Bhlascaoid Mhóir suite?\n\nAr na Blascaodaí\nSa Daingean\nI nDún Chaoin",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1945,7 +1945,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-2",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n2. Cathain a tréigeadh an Blascaod Mór?\n\nSa bhliain 1953\nNa céadta bliain ó shin\nSa bhliain 1993",
+      "questionText": "2. Cathain a tréigeadh an Blascaod Mór?\n\nSa bhliain 1953\nNa céadta bliain ó shin\nSa bhliain 1993",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1996,7 +1996,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-3",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n3. Cén tsiombail de thraidisiún na hiascaireachta atá ar taispeáint sa mhúsaem?\n\nAgallaimh\nNaomhóg\nGrianghraif",
+      "questionText": "3. Cén tsiombail de thraidisiún na hiascaireachta atá ar taispeáint sa mhúsaem?\n\nAgallaimh\nNaomhóg\nGrianghraif",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2047,7 +2047,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-4",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n4. Cén leabhar a scríobh Muiris Ó Súilleabháin?\n\nMachnamh Seanmhná\nAn tOileánach\nFiche Bliain ag Fás",
+      "questionText": "4. Cén leabhar a scríobh Muiris Ó Súilleabháin?\n\nMachnamh Seanmhná\nAn tOileánach\nFiche Bliain ag Fás",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2098,7 +2098,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-5",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n5. Cén áit ar an oileán ar féidir le cuairteoirí fanacht?\n\nTeach Thomáis Uí Chriomhthain\nSa teach lóistín\nSa chaifé",
+      "questionText": "5. Cén áit ar an oileán ar féidir le cuairteoirí fanacht?\n\nTeach Thomáis Uí Chriomhthain\nSa teach lóistín\nSa chaifé",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2149,7 +2149,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-1",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n1. Cén seomra ina raibh Muiris nuair a chuala sé fuaim aisteach?\n\nSa seomra suí\nSa chistin\nSa seomra leapa",
+      "questionText": "1. Cén seomra ina raibh Muiris nuair a chuala sé fuaim aisteach?\n\nSa seomra suí\nSa chistin\nSa seomra leapa",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2200,7 +2200,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-2",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n2. Cad ba chúis leis an bhfuaim aisteach?\n\nÉan beag dubh\nLuch\nCat",
+      "questionText": "2. Cad ba chúis leis an bhfuaim aisteach?\n\nÉan beag dubh\nLuch\nCat",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2251,7 +2251,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-3",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n3. Cá raibh an súiche dubh le feiceáil?\n\nAr an bhfuinneog\nOs comhair an tinteáin\nAr an doras",
+      "questionText": "3. Cá raibh an súiche dubh le feiceáil?\n\nAr an bhfuinneog\nOs comhair an tinteáin\nAr an doras",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2302,7 +2302,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-4",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n4. Cad a chaith Muiris isteach sa seomra suí?\n\nSpúnóg adhmaid\nSúiche\nPíosa aráin",
+      "questionText": "4. Cad a chaith Muiris isteach sa seomra suí?\n\nSpúnóg adhmaid\nSúiche\nPíosa aráin",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2353,7 +2353,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-5",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 2(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n5. Conas a d’éalaigh an t-éan amach as an teach?\n\nTríd an bhfuinneog oscailte\nSuas an simléar\nTríd an doras",
+      "questionText": "5. Conas a d’éalaigh an t-éan amach as an teach?\n\nTríd an bhfuinneog oscailte\nSuas an simléar\nTríd an doras",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2404,7 +2404,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-1",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n1. Cad as do Shibéal Ní Chasaide?\n\nGaoth Dobhair\nRáth Chairn\nMeiriceá",
+      "questionText": "1. Cad as do Shibéal Ní Chasaide?\n\nGaoth Dobhair\nRáth Chairn\nMeiriceá",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2455,7 +2455,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-2",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n2. Cad a thosaigh sí ag foghlaim nuair a bhí sí cúig bliana d’aois?\n\nAn veidhlín\nAn chláirseach\nAmhránaíocht ar an sean-nós",
+      "questionText": "2. Cad a thosaigh sí ag foghlaim nuair a bhí sí cúig bliana d’aois?\n\nAn veidhlín\nAn chláirseach\nAmhránaíocht ar an sean-nós",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2506,7 +2506,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-3",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n3. Cén t-amhrán a chan Sibéal ar RTÉ sa chlár chun Éirí Amach na Cásca 1916 a chomóradh?\n\nFuarú\nMise Éire\nCeol 2018",
+      "questionText": "3. Cén t-amhrán a chan Sibéal ar RTÉ sa chlár chun Éirí Amach na Cásca 1916 a chomóradh?\n\nFuarú\nMise Éire\nCeol 2018",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2557,7 +2557,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-4",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n4. Cá raibh Sibéal ag canadh i mí Mheán Fómhair 2019?\n\nSa Phuball Gaeilge\nI nDroichead Átha\nAg Fleadh Cheoil na hÉireann",
+      "questionText": "4. Cá raibh Sibéal ag canadh i mí Mheán Fómhair 2019?\n\nSa Phuball Gaeilge\nI nDroichead Átha\nAg Fleadh Cheoil na hÉireann",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2608,7 +2608,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-5",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n5. Cár fhan Sibéal agus í sa chéad bhliain ar Ollscoil na hÉireann, Baile Átha Cliath?",
+      "questionText": "5. Cár fhan Sibéal agus í sa chéad bhliain ar Ollscoil na hÉireann, Baile Átha Cliath?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2665,7 +2665,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-1",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n1. Cén cineál clár is mó a chuireann Hector Ó hEochagáin i láthair?\n\nCláir thaistil\nCláir chainte\nCláir cheoil",
+      "questionText": "1. Cén cineál clár is mó a chuireann Hector Ó hEochagáin i láthair?\n\nCláir thaistil\nCláir chainte\nCláir cheoil",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2716,7 +2716,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-2",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n2. Cá bhfuil Hector ina chónaí faoi láthair?\n\nSa Spáinn\nI gContae na Gaillimhe\nAr Inis Meáin",
+      "questionText": "2. Cá bhfuil Hector ina chónaí faoi láthair?\n\nSa Spáinn\nI gContae na Gaillimhe\nAr Inis Meáin",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2767,7 +2767,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-3",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n3. Cén áit a raibh Hector sa tsraith is déanaí?\n\nMeiriceá Láir\nAn Áise\nNa Stáit Aontaithe",
+      "questionText": "3. Cén áit a raibh Hector sa tsraith is déanaí?\n\nMeiriceá Láir\nAn Áise\nNa Stáit Aontaithe",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2818,7 +2818,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-4",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n4. Cé hé Carl Lewis?\n\nBuachaill bó\nLúthchleasaí\nAmhránaí",
+      "questionText": "4. Cé hé Carl Lewis?\n\nBuachaill bó\nLúthchleasaí\nAmhránaí",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2869,7 +2869,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-5",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n5. Cad é an rud is spéisiúla faoi Hector ina chuid clár taistil?",
+      "questionText": "5. Cad é an rud is spéisiúla faoi Hector ina chuid clár taistil?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2920,7 +2920,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-1",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n1. Cén t-am atá sé agus an file ag déanamh ar an stáisiún traenach?\n\n5.45\n6.15\n6.45",
+      "questionText": "1. Cén t-am atá sé agus an file ag déanamh ar an stáisiún traenach?\n\n5.45\n6.15\n6.45",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2971,7 +2971,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-2",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n2. Cad atá ag sleamhnú siar?\n\nAn stáisiún traenach\nAn ghealach\nAn ghrian",
+      "questionText": "2. Cad atá ag sleamhnú siar?\n\nAn stáisiún traenach\nAn ghealach\nAn ghrian",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3022,7 +3022,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-3",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n3. Cad atá ag damhsa sa stáisiún traenach?\n\nDuine\nCosa\nDuilleoga",
+      "questionText": "3. Cad atá ag damhsa sa stáisiún traenach?\n\nDuine\nCosa\nDuilleoga",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3073,7 +3073,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-4",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n4. Cén treo a bhféachann an file?\n\nÓ thuaidh\nÓ dheas\nSiar",
+      "questionText": "4. Cén treo a bhféachann an file?\n\nÓ thuaidh\nÓ dheas\nSiar",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3124,7 +3124,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-5",
       "questionRef": "2020 FL Léamhthuiscint · Ceist 3(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n5. Cad a dhéanfaidh an file nuair a stopfaidh an traein?",
+      "questionText": "5. Cad a dhéanfaidh an file nuair a stopfaidh an traein?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [

@@ -1702,7 +1702,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-1",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n1. Cathain a thosóidh an taithí oibre?\n\nAr an 10 Eanáir\nI mí Feabhra\nRoimh dheireadh na míosa",
+      "questionText": "1. Cathain a thosóidh an taithí oibre?\n\nAr an 10 Eanáir\nI mí Feabhra\nRoimh dheireadh na míosa",
       "totalMarks": 1,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1754,7 +1754,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-2",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n2. Cén bhaint atá ag Seán le nuachtán na scoile?\n\nIs teicneolaí é.\nIs eagarthóir é.\nIs iriseoir é.",
+      "questionText": "2. Cén bhaint atá ag Seán le nuachtán na scoile?\n\nIs teicneolaí é.\nIs eagarthóir é.\nIs iriseoir é.",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1806,7 +1806,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-3",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n3. Cad a sheol Seán chucu lena litir?\n\nAilt a scríobh sé féin\nNuachtán\nLitir ón scoil",
+      "questionText": "3. Cad a sheol Seán chucu lena litir?\n\nAilt a scríobh sé féin\nNuachtán\nLitir ón scoil",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1858,7 +1858,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-4",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n4. Cad a sheas amach i gcás Sheáin?\n\nA spéis i gcúrsaí polaitíochta\nA spéis sa spórt\nA spéis i gcúrsaí bia",
+      "questionText": "4. Cad a sheas amach i gcás Sheáin?\n\nA spéis i gcúrsaí polaitíochta\nA spéis sa spórt\nA spéis i gcúrsaí bia",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1910,7 +1910,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-5",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n5. Cé eile a sheol isteach iarratais?\n\nEagarthóir an nuachtáin\nScoláirí eile\nPríomhoidí",
+      "questionText": "5. Cé eile a sheol isteach iarratais?\n\nEagarthóir an nuachtáin\nScoláirí eile\nPríomhoidí",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1962,7 +1962,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-1",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n1. Cé mhéad acra de choill ar a bhfuil ionad Center Parcs suite?\n\nCúig acra\nDhá acra is fiche\nCeithre chéad acra",
+      "questionText": "1. Cé mhéad acra de choill ar a bhfuil ionad Center Parcs suite?\n\nCúig acra\nDhá acra is fiche\nCeithre chéad acra",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2014,7 +2014,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-2",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n2. Cén fáth a bhfuil an t-ionad an-áisiúil do gach duine ó thaobh taistil de?\n\nTá sé suite i lár na tíre.\nIs baile beag é.\nTá coill álainn ann.",
+      "questionText": "2. Cén fáth a bhfuil an t-ionad an-áisiúil do gach duine ó thaobh taistil de?\n\nTá sé suite i lár na tíre.\nIs baile beag é.\nTá coill álainn ann.",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2066,7 +2066,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-3",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n3. Cén rud faoin ionad a chabhraíonn le cúrsaí sábháilteachta?\n\nAn fiadhúlra\nTá sé saor ó charranna.\nAn t-ollmhargadh",
+      "questionText": "3. Cén rud faoin ionad a chabhraíonn le cúrsaí sábháilteachta?\n\nAn fiadhúlra\nTá sé saor ó charranna.\nAn t-ollmhargadh",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2118,7 +2118,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-4",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n4. Cad air a mbíonn tóir ollmhór?\n\nAr an gcadhcáil\nAr an ziplíneáil\nAr an bpáirc uisce",
+      "questionText": "4. Cad air a mbíonn tóir ollmhór?\n\nAr an gcadhcáil\nAr an ziplíneáil\nAr an bpáirc uisce",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2170,7 +2170,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-5",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n5. An féidir fanacht ann ar feadh oíche amháin?\n\nIs féidir\nNí féidir\nIs féidir le pas lae.",
+      "questionText": "5. An féidir fanacht ann ar feadh oíche amháin?\n\nIs féidir\nNí féidir\nIs féidir le pas lae.",
       "totalMarks": 1,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2222,7 +2222,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-1",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n1. Cathain a bhog teaghlach Shinéad thar lear?\n\nGo ceann bliana\nLá amháin\nMí ó shin",
+      "questionText": "1. Cathain a bhog teaghlach Shinéad thar lear?\n\nGo ceann bliana\nLá amháin\nMí ó shin",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2274,7 +2274,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-2",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n2. Cá háit ar chaith Seán níos mó ama?\n\nAr scoil\nIna sheomra codlata\nThar lear",
+      "questionText": "2. Cá háit ar chaith Seán níos mó ama?\n\nAr scoil\nIna sheomra codlata\nThar lear",
       "totalMarks": 1,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2326,7 +2326,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-3",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n3. Cad as a dtagann go leor amhrán?\n\nBriseadh croí\nGiotár\nIonadh",
+      "questionText": "3. Cad as a dtagann go leor amhrán?\n\nBriseadh croí\nGiotár\nIonadh",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2378,7 +2378,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-4",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n4. Cad a bhí le bheith ar siúl an tseachtain dár gcionn?\n\nComórtas amhránaíochta\nScoil\nCleachtadh",
+      "questionText": "4. Cad a bhí le bheith ar siúl an tseachtain dár gcionn?\n\nComórtas amhránaíochta\nScoil\nCleachtadh",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2430,7 +2430,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-5",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 2(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n5. Cad a bhí ar aghaidh Sheáin ag deireadh an chomórtais?\n\nUaigneas\nNeirbhís\nMeangadh mór gáire",
+      "questionText": "5. Cad a bhí ar aghaidh Sheáin ag deireadh an chomórtais?\n\nUaigneas\nNeirbhís\nMeangadh mór gáire",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2482,7 +2482,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-1",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n1. Cad a d’fhógair Taylor Swift agus Travis Kelce ar an 26 Lúnasa 2025?\n\nGur bhuaigh siad Grammy\nGo raibh siad geallta\nGur phós siad",
+      "questionText": "1. Cad a d’fhógair Taylor Swift agus Travis Kelce ar an 26 Lúnasa 2025?\n\nGur bhuaigh siad Grammy\nGo raibh siad geallta\nGur phós siad",
       "totalMarks": 7,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2534,7 +2534,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-2",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n2. Cén tslí bheatha atá ag Taylor Swift?\n\nIs réalta cheoil í.\nIs imreoir peile í.\nIs tuismitheoir í.",
+      "questionText": "2. Cén tslí bheatha atá ag Taylor Swift?\n\nIs réalta cheoil í.\nIs imreoir peile í.\nIs tuismitheoir í.",
       "totalMarks": 7,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2586,7 +2586,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-3",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n3. Cén aois a bhí Taylor nuair a bhog a teaghlach go Nashville?",
+      "questionText": "3. Cén aois a bhí Taylor nuair a bhog a teaghlach go Nashville?",
       "totalMarks": 7,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2638,7 +2638,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-4",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n4. Cad eile a dhéanann Travis Kelce chomh maith leis an spórt?\n\nImríonn sé peil.\nPodchraoladh rathúil\nBíonn sé ag canadh.",
+      "questionText": "4. Cad eile a dhéanann Travis Kelce chomh maith leis an spórt?\n\nImríonn sé peil.\nPodchraoladh rathúil\nBíonn sé ag canadh.",
       "totalMarks": 2,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2690,7 +2690,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-5",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n5. Cá huair atá Taylor agus Travis le pósadh?\n\nAr an 13 Nollaig 1989\nAr an 26 Lúnasa 2025\nAr an 13 Meitheamh 2026",
+      "questionText": "5. Cá huair atá Taylor agus Travis le pósadh?\n\nAr an 13 Nollaig 1989\nAr an 26 Lúnasa 2025\nAr an 13 Meitheamh 2026",
       "totalMarks": 7,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2742,7 +2742,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-1",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n1. Cár tháinig na saighdiúirí trasna ar an mbuachaill óg?\n\nSa Pholainn\nSan Iaráin\nSan Iodáil",
+      "questionText": "1. Cár tháinig na saighdiúirí trasna ar an mbuachaill óg?\n\nSa Pholainn\nSan Iaráin\nSan Iodáil",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2794,7 +2794,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-2",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n2. Cén fáth ar thóg na saighdiúirí an béar óg leo?",
+      "questionText": "2. Cén fáth ar thóg na saighdiúirí an béar óg leo?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2846,7 +2846,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-3",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n3. Cá gcodlaíodh Wojtek?\n\nI bpuball\nI mbosca\nAr an gclár Blue Peter",
+      "questionText": "3. Cá gcodlaíodh Wojtek?\n\nI bpuball\nI mbosca\nAr an gclár Blue Peter",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2898,7 +2898,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-4",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n4. Cén bhliain a tógadh Wojtek go dtí an zú?\n\nSa bhliain 1942\nSa bhliain 1944\nSa bhliain 1947",
+      "questionText": "4. Cén bhliain a tógadh Wojtek go dtí an zú?\n\nSa bhliain 1942\nSa bhliain 1944\nSa bhliain 1947",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2950,7 +2950,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-5",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n5. Cén sórt saoil a bhí ag Wojtek sa zú?\n\nCompordach\nUaigneach\nBocht",
+      "questionText": "5. Cén sórt saoil a bhí ag Wojtek sa zú?\n\nCompordach\nUaigneach\nBocht",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3002,7 +3002,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-1",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 12.\n\n1. Cén rud nach mbactar riamh leis?\n\n“Taibhse mór”\n“Taibhsín bídeach”\n“Teach dhá stór”",
+      "questionText": "1. Cén rud nach mbactar riamh leis?\n\n“Taibhse mór”\n“Taibhsín bídeach”\n“Teach dhá stór”",
       "totalMarks": 7,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3054,7 +3054,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-2",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 12.\n\n2. Cé a theithfeadh go beo ón “taibhse millteach”?",
+      "questionText": "2. Cé a theithfeadh go beo ón “taibhse millteach”?",
       "totalMarks": 7,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3106,7 +3106,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-3",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 12.\n\n3. Cén rud nach n-osclódh Mal Magú?\n\nFalla\nÁit\nDoras",
+      "questionText": "3. Cén rud nach n-osclódh Mal Magú?\n\nFalla\nÁit\nDoras",
       "totalMarks": 7,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3158,7 +3158,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-4",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 12.\n\n4. Cad a thógfadh Mal Magú ón Zú?\n\nEilifint\nPúca\nFeannóg",
+      "questionText": "4. Cad a thógfadh Mal Magú ón Zú?\n\nEilifint\nPúca\nFeannóg",
       "totalMarks": 7,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3210,7 +3210,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-5",
       "questionRef": "2026 FL Léamhthuiscint · Ceist 3(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 12.\n\n5. Cad a dhéanfadh Mal Magú sa spéir istoíche?\n\nRíl\nMíle murdar\nCodladh",
+      "questionText": "5. Cad a dhéanfadh Mal Magú sa spéir istoíche?\n\nRíl\nMíle murdar\nCodladh",
       "totalMarks": 2,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3627,7 +3627,7 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Original examination pages, including every required picture or passage."
       },
-      "sourceDiscrepancyNotice": "Nóta foinse: tá “Ceist 4(b) Foirm Iarratais” sa scéim mhodhnaithe (PDF 15), ach is litir í Ceist 4(b) in 2026.",
+      "sourceDiscrepancyNotice": "Source note: the modified scheme (PDF 15) says “Ceist 4(b) Foirm Iarratais”, but Question 4(b) in 2026 is a letter.",
       "additionalTopicIds": [
         "irish-2-8"
       ]
@@ -3762,7 +3762,7 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Original examination pages, including every required picture or passage."
       },
-      "sourceDiscrepancyNotice": "Nóta foinse: tá “Féile cheoil” i líne an taisc sa scéim, ach baineann an páipéar agus samplaí na scéime leis an gCóisir Lae Breithe."
+      "sourceDiscrepancyNotice": "Source note: the scheme’s task line says “Féile cheoil”, but the paper and the scheme’s samples are about the birthday party (Cóisir Lae Breithe)."
     },
     {
       "id": "irish-2026-fl-w-5b",

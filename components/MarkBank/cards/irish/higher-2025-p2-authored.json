@@ -1348,7 +1348,7 @@
       "section": "2",
       "atlasQuestionId": "R-A-5-bi-1",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint A · Ceist 5(b)(i) · Freagra 1",
-      "questionText": "5(b)(i) Scríobh síos dhá chomhartha ómóis do Rory Gallagher atá in Éirinn. (Alt 5) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "5(b)(i) Scríobh síos dhá chomhartha ómóis do Rory Gallagher atá in Éirinn. (Alt 5)",
       "totalMarks": 1,
       "topicId": "irish-3-0",
       "conceptId": "irish-hl-p2-reading-a-q5-bi-1",
@@ -1395,7 +1395,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2025-hl-p2-reading-a-q5-bi-2",
@@ -1405,7 +1406,7 @@
       "section": "2",
       "atlasQuestionId": "R-A-5-bi-2",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint A · Ceist 5(b)(i) · Freagra 2",
-      "questionText": "5(b)(i) Scríobh síos dhá chomhartha ómóis do Rory Gallagher atá in Éirinn. (Alt 5) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "5(b)(i) Scríobh síos dhá chomhartha ómóis do Rory Gallagher atá in Éirinn. (Alt 5)",
       "totalMarks": 1,
       "topicId": "irish-3-0",
       "conceptId": "irish-hl-p2-reading-a-q5-bi-2",
@@ -1452,7 +1453,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2025-hl-p2-reading-a-q5-bii",
@@ -1662,7 +1664,7 @@
       "section": "2",
       "atlasQuestionId": "R-A-6-b-1",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint A · Ceist 6(b) · Pointe 1",
-      "questionText": "6(b) ‘Ceoltóir as an ngnáth ba ea Rory Gallagher.’ Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht a léiríonn fírinne an ráitis sin, dar leat. (Is leor 60 focal.) Don chárta seo: tabhair pointe eolais amháin, i d’fhocail féin (pointe 1, 6 mharc).",
+      "questionText": "6(b) ‘Ceoltóir as an ngnáth ba ea Rory Gallagher.’ Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht a léiríonn fírinne an ráitis sin, dar leat. (Is leor 60 focal.)",
       "totalMarks": 6,
       "topicId": "irish-3-0",
       "conceptId": "irish-hl-p2-reading-a-q6-b-1",
@@ -1714,7 +1716,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two points of information, in your own words (point 1, 6 marks)"
     },
     {
       "id": "irish-2025-hl-p2-reading-a-q6-b-2",
@@ -1724,7 +1727,7 @@
       "section": "2",
       "atlasQuestionId": "R-A-6-b-2",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint A · Ceist 6(b) · Pointe 2",
-      "questionText": "6(b) ‘Ceoltóir as an ngnáth ba ea Rory Gallagher.’ Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht a léiríonn fírinne an ráitis sin, dar leat. (Is leor 60 focal.) Don chárta seo: tabhair pointe eolais amháin, i d’fhocail féin (pointe 2, 6 mharc).",
+      "questionText": "6(b) ‘Ceoltóir as an ngnáth ba ea Rory Gallagher.’ Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht a léiríonn fírinne an ráitis sin, dar leat. (Is leor 60 focal.)",
       "totalMarks": 6,
       "topicId": "irish-3-0",
       "conceptId": "irish-hl-p2-reading-a-q6-b-2",
@@ -1776,7 +1779,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two points of information, in your own words (point 2, 6 marks)"
     },
     {
       "id": "irish-2025-hl-p2-reading-b-q1-a",
@@ -2076,7 +2080,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-2-bi-1",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(i) · Freagra 1",
-      "questionText": "2(b)(i) Tabhair dhá shampla de ghníomhaíochtaí coirp a dhéanann daoine mar chaitheamh aimsire. (Alt 2) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "2(b)(i) Tabhair dhá shampla de ghníomhaíochtaí coirp a dhéanann daoine mar chaitheamh aimsire. (Alt 2)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q2-bi-1",
@@ -2123,7 +2127,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2025-hl-p2-reading-b-q2-bi-2",
@@ -2133,7 +2138,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-2-bi-2",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(i) · Freagra 2",
-      "questionText": "2(b)(i) Tabhair dhá shampla de ghníomhaíochtaí coirp a dhéanann daoine mar chaitheamh aimsire. (Alt 2) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "2(b)(i) Tabhair dhá shampla de ghníomhaíochtaí coirp a dhéanann daoine mar chaitheamh aimsire. (Alt 2)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q2-bi-2",
@@ -2180,7 +2185,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2025-hl-p2-reading-b-q2-bii",
@@ -2537,7 +2543,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-4-bi-1",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(i) · Freagra 1",
-      "questionText": "4(b)(i) Tabhair dhá shampla a léiríonn go bhfuil an bhearna rannpháirtíochta idir na hinscní ag cúngú i gcúrsaí spóirt. (Alt 4) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "4(b)(i) Tabhair dhá shampla a léiríonn go bhfuil an bhearna rannpháirtíochta idir na hinscní ag cúngú i gcúrsaí spóirt. (Alt 4)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q4-bi-1",
@@ -2584,7 +2590,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2025-hl-p2-reading-b-q4-bi-2",
@@ -2594,7 +2601,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-4-bi-2",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(i) · Freagra 2",
-      "questionText": "4(b)(i) Tabhair dhá shampla a léiríonn go bhfuil an bhearna rannpháirtíochta idir na hinscní ag cúngú i gcúrsaí spóirt. (Alt 4) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "4(b)(i) Tabhair dhá shampla a léiríonn go bhfuil an bhearna rannpháirtíochta idir na hinscní ag cúngú i gcúrsaí spóirt. (Alt 4)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q4-bi-2",
@@ -2641,7 +2648,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2025-hl-p2-reading-b-q4-bii",
@@ -2826,7 +2834,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-5-bi-1",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(i) · Freagra 1",
-      "questionText": "5(b)(i) Luaigh dhá rud a sholáthraítear ar an gCampas Náisiúnta Spórt do na lúthchleasaithe ardfheidhmíochta. (Alt 5) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "5(b)(i) Luaigh dhá rud a sholáthraítear ar an gCampas Náisiúnta Spórt do na lúthchleasaithe ardfheidhmíochta. (Alt 5)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q5-bi-1",
@@ -2873,7 +2881,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2025-hl-p2-reading-b-q5-bi-2",
@@ -2883,7 +2892,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-5-bi-2",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(i) · Freagra 2",
-      "questionText": "5(b)(i) Luaigh dhá rud a sholáthraítear ar an gCampas Náisiúnta Spórt do na lúthchleasaithe ardfheidhmíochta. (Alt 5) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "5(b)(i) Luaigh dhá rud a sholáthraítear ar an gCampas Náisiúnta Spórt do na lúthchleasaithe ardfheidhmíochta. (Alt 5)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q5-bi-2",
@@ -2930,7 +2939,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2025-hl-p2-reading-b-q5-bii",
@@ -2998,7 +3008,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-5-bii-1",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(ii) · Freagra 1",
-      "questionText": "5(b)(ii) Scríobh síos dhá rud atá ag teastáil chun córas spóirt éifeachtach a fhorbairt ar mhaithe le muinín an phobail ann a chinntiú. (Alt 5) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "5(b)(ii) Scríobh síos dhá rud atá ag teastáil chun córas spóirt éifeachtach a fhorbairt ar mhaithe le muinín an phobail ann a chinntiú. (Alt 5)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q5-bii-1",
@@ -3045,7 +3055,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2025-hl-p2-reading-b-q5-bii-2",
@@ -3055,7 +3066,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-5-bii-2",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(ii) · Freagra 2",
-      "questionText": "5(b)(ii) Scríobh síos dhá rud atá ag teastáil chun córas spóirt éifeachtach a fhorbairt ar mhaithe le muinín an phobail ann a chinntiú. (Alt 5) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "5(b)(ii) Scríobh síos dhá rud atá ag teastáil chun córas spóirt éifeachtach a fhorbairt ar mhaithe le muinín an phobail ann a chinntiú. (Alt 5)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q5-bii-2",
@@ -3102,7 +3113,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2025-hl-p2-reading-b-q6-a",
@@ -3256,7 +3268,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-6-b-1",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint B · Ceist 6(b) · Pointe 1",
-      "questionText": "6(b) ‘Tá dul chun cinn maith á dhéanamh i gcúrsaí spóirt in Éirinn.’ Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht a léiríonn fírinne an ráitis sin, dar leat. (Is leor 60 focal.) Don chárta seo: tabhair pointe eolais amháin, i d’fhocail féin (pointe 1, 6 mharc).",
+      "questionText": "6(b) ‘Tá dul chun cinn maith á dhéanamh i gcúrsaí spóirt in Éirinn.’ Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht a léiríonn fírinne an ráitis sin, dar leat. (Is leor 60 focal.)",
       "totalMarks": 6,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q6-b-1",
@@ -3309,7 +3321,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two points of information, in your own words (point 1, 6 marks)"
     },
     {
       "id": "irish-2025-hl-p2-reading-b-q6-b-2",
@@ -3319,7 +3332,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-6-b-2",
       "questionRef": "2025 HL Paper 2 Léamhthuiscint B · Ceist 6(b) · Pointe 2",
-      "questionText": "6(b) ‘Tá dul chun cinn maith á dhéanamh i gcúrsaí spóirt in Éirinn.’ Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht a léiríonn fírinne an ráitis sin, dar leat. (Is leor 60 focal.) Don chárta seo: tabhair pointe eolais amháin, i d’fhocail féin (pointe 2, 6 mharc).",
+      "questionText": "6(b) ‘Tá dul chun cinn maith á dhéanamh i gcúrsaí spóirt in Éirinn.’ Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht a léiríonn fírinne an ráitis sin, dar leat. (Is leor 60 focal.)",
       "totalMarks": 6,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q6-b-2",
@@ -3372,7 +3385,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two points of information, in your own words (point 2, 6 marks)"
     }
   ]
 }

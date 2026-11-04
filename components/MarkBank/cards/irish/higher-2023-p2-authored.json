@@ -1013,7 +1013,7 @@
       "section": "2",
       "atlasQuestionId": "R-A-3-bi-1",
       "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 3(b)(i) · Freagra 1",
-      "questionText": "3(b)(i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "3(b)(i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3)",
       "totalMarks": 1,
       "topicId": "irish-3-0",
       "conceptId": "irish-hl-p2-reading-a-q3-bi-1",
@@ -1060,7 +1060,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2023-hl-p2-reading-a-q3-bi-2",
@@ -1070,7 +1071,7 @@
       "section": "2",
       "atlasQuestionId": "R-A-3-bi-2",
       "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 3(b)(i) · Freagra 2",
-      "questionText": "3(b)(i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "3(b)(i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3)",
       "totalMarks": 1,
       "topicId": "irish-3-0",
       "conceptId": "irish-hl-p2-reading-a-q3-bi-2",
@@ -1117,7 +1118,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2023-hl-p2-reading-a-q3-bii",
@@ -1299,7 +1301,7 @@
       "section": "2",
       "atlasQuestionId": "R-A-4-bi-1",
       "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 4(b)(i) · Freagra 1",
-      "questionText": "4(b)(i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "4(b)(i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4)",
       "totalMarks": 1,
       "topicId": "irish-3-0",
       "conceptId": "irish-hl-p2-reading-a-q4-bi-1",
@@ -1346,7 +1348,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2023-hl-p2-reading-a-q4-bi-2",
@@ -1356,7 +1359,7 @@
       "section": "2",
       "atlasQuestionId": "R-A-4-bi-2",
       "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 4(b)(i) · Freagra 2",
-      "questionText": "4(b)(i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "4(b)(i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4)",
       "totalMarks": 1,
       "topicId": "irish-3-0",
       "conceptId": "irish-hl-p2-reading-a-q4-bi-2",
@@ -1403,7 +1406,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2023-hl-p2-reading-a-q4-bii",
@@ -1787,7 +1791,7 @@
       "section": "2",
       "atlasQuestionId": "R-A-6-b-1",
       "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 6(b) · Tréith 1",
-      "questionText": "6(b) Bunaithe ar an eolas sa sliocht thuas, déan plé ar dhá thréith de chuid Tom Crean, dar leat. Bíodh sampla amháin ón sliocht agat, i d’fhocail féin, ag tacú le gach tréith a luann tú i do fhreagra. (Is leor 60 focal.) Don chárta seo: déan plé ar thréith amháin agus tabhair sampla amháin ón sliocht, i d’fhocail féin (tréith 1, 6 mharc).",
+      "questionText": "6(b) Bunaithe ar an eolas sa sliocht thuas, déan plé ar dhá thréith de chuid Tom Crean, dar leat. Bíodh sampla amháin ón sliocht agat, i d’fhocail féin, ag tacú le gach tréith a luann tú i do fhreagra. (Is leor 60 focal.)",
       "totalMarks": 6,
       "topicId": "irish-3-0",
       "conceptId": "irish-hl-p2-reading-a-q6-b-1",
@@ -1840,7 +1844,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two traits, discussed with one example from the extract in your own words (trait 1, 6 marks)"
     },
     {
       "id": "irish-2023-hl-p2-reading-a-q6-b-2",
@@ -1850,7 +1855,7 @@
       "section": "2",
       "atlasQuestionId": "R-A-6-b-2",
       "questionRef": "2023 HL Paper 2 Léamhthuiscint A · Ceist 6(b) · Tréith 2",
-      "questionText": "6(b) Bunaithe ar an eolas sa sliocht thuas, déan plé ar dhá thréith de chuid Tom Crean, dar leat. Bíodh sampla amháin ón sliocht agat, i d’fhocail féin, ag tacú le gach tréith a luann tú i do fhreagra. (Is leor 60 focal.) Don chárta seo: déan plé ar thréith amháin agus tabhair sampla amháin ón sliocht, i d’fhocail féin (tréith 2, 6 mharc).",
+      "questionText": "6(b) Bunaithe ar an eolas sa sliocht thuas, déan plé ar dhá thréith de chuid Tom Crean, dar leat. Bíodh sampla amháin ón sliocht agat, i d’fhocail féin, ag tacú le gach tréith a luann tú i do fhreagra. (Is leor 60 focal.)",
       "totalMarks": 6,
       "topicId": "irish-3-0",
       "conceptId": "irish-hl-p2-reading-a-q6-b-2",
@@ -1903,7 +1908,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two traits, discussed with one example from the extract in your own words (trait 2, 6 marks)"
     },
     {
       "id": "irish-2023-hl-p2-reading-b-q1-a",
@@ -2260,7 +2266,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-2-bii-1",
       "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(ii) · Freagra 1",
-      "questionText": "2(b)(ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "2(b)(ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q2-bii-1",
@@ -2307,7 +2313,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2023-hl-p2-reading-b-q2-bii-2",
@@ -2317,7 +2324,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-2-bii-2",
       "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(ii) · Freagra 2",
-      "questionText": "2(b)(ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "2(b)(ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q2-bii-2",
@@ -2364,7 +2371,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2023-hl-p2-reading-b-q3-a",
@@ -2490,7 +2498,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-3-bi-1",
       "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(i) · Freagra 1",
-      "questionText": "3(b)(i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "3(b)(i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q3-bi-1",
@@ -2537,7 +2545,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2023-hl-p2-reading-b-q3-bi-2",
@@ -2547,7 +2556,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-3-bi-2",
       "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(i) · Freagra 2",
-      "questionText": "3(b)(i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "3(b)(i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q3-bi-2",
@@ -2594,7 +2603,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2023-hl-p2-reading-b-q3-bii",
@@ -2662,7 +2672,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-3-bii-1",
       "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(ii) · Freagra 1",
-      "questionText": "3(b)(ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "3(b)(ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q3-bii-1",
@@ -2709,7 +2719,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2023-hl-p2-reading-b-q3-bii-2",
@@ -2719,7 +2730,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-3-bii-2",
       "questionRef": "2023 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(ii) · Freagra 2",
-      "questionText": "3(b)(ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "3(b)(ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q3-bii-2",
@@ -2766,7 +2777,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2023-hl-p2-reading-b-q4-a",

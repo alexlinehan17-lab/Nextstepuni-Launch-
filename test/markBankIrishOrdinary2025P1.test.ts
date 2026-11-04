@@ -56,7 +56,9 @@ describe('2025 Ordinary Paper 1 source reconciliation (15 retained cards)', () =
       expect(c.schemePages).toEqual([10, 11, 12, 13]);
     }
     expect(get('W-C-ii').questionText).toContain('Thit sneachta trom i do cheantar le déanaí.');
-    expect(get('W-B-i').questionText).toContain('An rogha don chárta seo: B(i).');
+    // The card's question ends at its printed option; no line of ours chooses it.
+    expect(get('W-B-i').questionText).not.toContain('An rogha don chárta seo');
+    expect(get('W-B-i').questionText.split('\n').at(-1)).toMatch(/^\(i\) /);
   });
 
   it('publishes each title once and carries the choose-two instruction, with no combination cards', () => {

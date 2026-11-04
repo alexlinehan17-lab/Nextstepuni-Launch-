@@ -15,6 +15,10 @@ last step of every Irish builder before it writes its file:
   our examiner note and moves, word for word, to the card's English `markingGuideNote`; if it is Irish
   it is dropped: the card says nothing in Irish of our own.
 
+The question is the paper's print too (`printed_question`, run first): the lines builders added to it in Irish
+("An rogha don chárta seo: A(a).", "Léigh an téacs ar leathanach 7.", "Don chárta seo: tabhair freagra amháin …")
+are gone. What a one-answer card practises is said in English in `practiceFocus`, and a source note is English.
+
 `written(card)` lists what a card still carries that is not the SEC's; irish_tools/lift_audit.py runs it
 over every committed card file, and regenerate.sh --check fails if anything remains.
 """
@@ -82,13 +86,45 @@ def split_line(line: str, text: str):
     return [(piece, sep, sec(piece, text)) for piece, sep in pieces]
 
 
+# Lines the builders added to a card's question in Irish of their own: "An rogha don chárta seo: A(a)." after a
+# printed option, "Léigh an téacs ar leathanach 7." before a Foundation question, "Don chárta seo: tabhair freagra
+# amháin …" after a two-answer part. The paper prints none of them.
+CARD_SCOPE = re.compile(r'Don chárta seo|An rogha don chárta seo|Léigh an téacs ar leathanach \d')
+OPTION_LINE = re.compile(r'\n\nAn rogha don chárta seo: [^\n]*$')
+PAGE_POINTER = re.compile(r'^Léigh an téacs ar leathanach \d+\.\n\n')
+
+
+def printed_question(cards: list[dict]) -> list[dict]:
+    """A card's question is the paper's print only. The chosen option is already the one printed option the card
+    shows, and a Foundation card's page is in its source reader, so both lines go; a card that practises one answer
+    of a printed pair says so in English, in `practiceFocus` (shown as "Practise: …"), never in the question."""
+    for card in cards:
+        text = OPTION_LINE.sub('', card['questionText'])
+        if PAGE_POINTER.match(text):
+            assert card.get('sourceMaterial', {}).get('pages'), (card['id'], 'page pointer without a source reader')
+            text = PAGE_POINTER.sub('', text)
+        card['questionText'] = text
+        for field in ('questionText', 'stem', 'practiceFocus', 'practiceInstruction'):
+            assert not CARD_SCOPE.search(card.get(field) or ''), (card['id'], field, 'card-scope Irish of ours')
+        notice = card.get('sourceDiscrepancyNotice')
+        assert not notice or english(notice), (card['id'], 'source note in Irish of ours')
+    return cards
+
+
 def written(card: dict) -> list[str]:
     text = corpus(card['year'])
-    return [piece for criterion in card['criteria'] for line in criterion['guidance']
-            for piece, _, is_sec in split_line(line, text) if piece.strip() and not is_sec]
+    out = [piece for criterion in card['criteria'] for line in criterion['guidance']
+           for piece, _, is_sec in split_line(line, text) if piece.strip() and not is_sec]
+    out += [f'{field}: {match.group(0)}' for field in ('questionText', 'stem', 'practiceFocus', 'practiceInstruction')
+            for match in [CARD_SCOPE.search(card.get(field) or '')] if match]
+    notice = card.get('sourceDiscrepancyNotice')
+    if notice and not english(notice):
+        out.append(f'sourceDiscrepancyNotice: {notice[:60]}')
+    return out
 
 
 def scheme_words(cards: list[dict]) -> list[dict]:
+    printed_question(cards)
     for card in cards:
         text = corpus(card['year'])
         notes: list[str] = []

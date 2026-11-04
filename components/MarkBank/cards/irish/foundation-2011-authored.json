@@ -949,7 +949,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-1",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 3.\n\n1. Cén dáta ar sheol Sinéad a litir?\n\n25 Márta\n29 Márta\n19 Aibreán",
+      "questionText": "1. Cén dáta ar sheol Sinéad a litir?\n\n25 Márta\n29 Márta\n19 Aibreán",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1001,7 +1001,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-2",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 3.\n\n2. Cén t-ábhar ina bhfuair Sinéad Grád A san Ardteistiméireacht?\n\nGnó\nMatamaitic\nInnealtóireacht",
+      "questionText": "2. Cén t-ábhar ina bhfuair Sinéad Grád A san Ardteistiméireacht?\n\nGnó\nMatamaitic\nInnealtóireacht",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1053,7 +1053,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-3",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 3.\n\n3. Cá bhfuil Sinéad ag staidéar faoi láthair?\n\nSa mheánscoil\nSan Institiúid Teicneolaíochta\nLe Bord Gáis",
+      "questionText": "3. Cá bhfuil Sinéad ag staidéar faoi láthair?\n\nSa mheánscoil\nSan Institiúid Teicneolaíochta\nLe Bord Gáis",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1105,7 +1105,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-4",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 3.\n\n4. Cén obair a theastaíonn ó Shinéad le Bord Gáis an samhradh seo chugainn?\n\nObair mar innealtóir\nObair theicneolaíochta\nTaithí oibre sa Chuntasaíocht",
+      "questionText": "4. Cén obair a theastaíonn ó Shinéad le Bord Gáis an samhradh seo chugainn?\n\nObair mar innealtóir\nObair theicneolaíochta\nTaithí oibre sa Chuntasaíocht",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1157,7 +1157,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-5",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 3.\n\n5. Cad is gá do Shinéad a bhreith léi go dtí an t-agallamh?\n\nAn litir seo\nA teastas scrúduithe\nA teastas breithe",
+      "questionText": "5. Cad is gá do Shinéad a bhreith léi go dtí an t-agallamh?\n\nAn litir seo\nA teastas scrúduithe\nA teastas breithe",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1209,7 +1209,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-1",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 4.\n\n1. Cén áit a bhfuil an fheirm seo?\n\nNa Blascaodaí\nGaeltacht Chiarraí\nSa chathair",
+      "questionText": "1. Cén áit a bhfuil an fheirm seo?\n\nNa Blascaodaí\nGaeltacht Chiarraí\nSa chathair",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1261,7 +1261,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-2",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 4.\n\n2. Cad atá os comhair an tí?\n\nClós feirme\nRadhairc áille\nTrá ghainmheach",
+      "questionText": "2. Cad atá os comhair an tí?\n\nClós feirme\nRadhairc áille\nTrá ghainmheach",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1304,7 +1304,7 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Original examination pages, including every required picture or passage."
       },
-      "sourceDiscrepancyNotice": "Nóta foinse: deir an téacs “trá ghainmheach”, ach tá “Ranganna Céilí” sa scéim do 2(b)(2). Féach ar an dá fhoinse."
+      "sourceDiscrepancyNotice": "Source note: the text says “trá ghainmheach”, but the scheme has “Ranganna Céilí” for 2(b)(2). See both sources."
     },
     {
       "id": "irish-2011-fl-r-2b-3",
@@ -1314,7 +1314,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-3",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 4.\n\n3. Cá bhfuil cúinne na bpeataí?\n\nAr chúl an tí\nIn aice na farraige\nOs comhair an tí",
+      "questionText": "3. Cá bhfuil cúinne na bpeataí?\n\nAr chúl an tí\nIn aice na farraige\nOs comhair an tí",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1366,7 +1366,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-4",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 4.\n\n4. Cad is féidir a dhéanamh i ngach seomra?\n\nBricfeasta\nTae nó caife\nSeisiún ceoil",
+      "questionText": "4. Cad is féidir a dhéanamh i ngach seomra?\n\nBricfeasta\nTae nó caife\nSeisiún ceoil",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1418,7 +1418,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-5",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 4.\n\n5. Cé a bhailíonn isteach sa chistin go minic?\n\nCeoltóirí na háite\nIascairí\nNa haíonna",
+      "questionText": "5. Cé a bhailíonn isteach sa chistin go minic?\n\nCeoltóirí na háite\nIascairí\nNa haíonna",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1470,7 +1470,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-1",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 5.\n\n1. Cén aois atá Liam Mac Donnagáin?\n\n57\n75\n83",
+      "questionText": "1. Cén aois atá Liam Mac Donnagáin?\n\n57\n75\n83",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1522,7 +1522,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-2",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 5.\n\n2. Cé a bhí sa veain a stop lasmuigh?\n\nComharsa\nGadaí\nIníon Liam",
+      "questionText": "2. Cé a bhí sa veain a stop lasmuigh?\n\nComharsa\nGadaí\nIníon Liam",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1574,7 +1574,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-3",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 5.\n\n3. Cá raibh an t-airgead?\n\nSa chistin\nSa seomra folctha\nSa seomra suite",
+      "questionText": "3. Cá raibh an t-airgead?\n\nSa chistin\nSa seomra folctha\nSa seomra suite",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1626,7 +1626,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-4",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 5.\n\n4. Cé a chuir fios ar na Gardaí?\n\nLiam\nA iníon Áine\nA chomharsa Ned",
+      "questionText": "4. Cé a chuir fios ar na Gardaí?\n\nLiam\nA iníon Áine\nA chomharsa Ned",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1678,7 +1678,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-5",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 2(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 5.\n\n5. Cén áit ar cúisíodh an gadaí?\n\nSa teach\nI stáisiún na nGardaí\nOs comhair na cúirte",
+      "questionText": "5. Cén áit ar cúisíodh an gadaí?\n\nSa teach\nI stáisiún na nGardaí\nOs comhair na cúirte",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1730,7 +1730,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-1",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n1. Cá mbíonn Dáithí Ó Sé go minic?\n\nAr an raidió\nAr an stáitse\nAr an teilifís",
+      "questionText": "1. Cá mbíonn Dáithí Ó Sé go minic?\n\nAr an raidió\nAr an stáitse\nAr an teilifís",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1782,7 +1782,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-2",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n2. Cén post a bhí ag Dáithí Ó Sé nuair a bhí sé ina dhéagóir?",
+      "questionText": "2. Cén post a bhí ag Dáithí Ó Sé nuair a bhí sé ina dhéagóir?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1838,7 +1838,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-3",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n3. Cén bhliain a rinne Dáithí an clár faoi ‘Route 66’?\n\n1999\n2006\n2008",
+      "questionText": "3. Cén bhliain a rinne Dáithí an clár faoi ‘Route 66’?\n\n1999\n2006\n2008",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1890,7 +1890,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-4",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n4. Cén post a bhí ag Dáithí ag Féile Rós Thrá Lí sa bhliain 2010?\n\nDoirseoir\nFáilteoir\nFear an tí",
+      "questionText": "4. Cén post a bhí ag Dáithí ag Féile Rós Thrá Lí sa bhliain 2010?\n\nDoirseoir\nFáilteoir\nFear an tí",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1942,7 +1942,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-5",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n5. Cé atá in éad le Dáithí Ó Sé?\n\nMná na hÉireann\nFir na hÉireann\nTG4",
+      "questionText": "5. Cé atá in éad le Dáithí Ó Sé?\n\nMná na hÉireann\nFir na hÉireann\nTG4",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1994,7 +1994,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-1",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n1. Cén saghas ceoil atá i gceist sa ghiota seo?\n\nCeol clasaiceach\nCeol tíre\nCeol traidisiúnta",
+      "questionText": "1. Cén saghas ceoil atá i gceist sa ghiota seo?\n\nCeol clasaiceach\nCeol tíre\nCeol traidisiúnta",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2046,7 +2046,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-2",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n2. Cá fhad a leanann Scoil Samhraidh Willie Clancy?\n\nBliain\nMí\nSeachtain",
+      "questionText": "2. Cá fhad a leanann Scoil Samhraidh Willie Clancy?\n\nBliain\nMí\nSeachtain",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2098,7 +2098,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-3",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n3. Cén uirlis cheoil lenar thit Willie Clancy i ngrá?\n\nAn fhidil\nAn bosca ceoil\nAn phíb uilleann",
+      "questionText": "3. Cén uirlis cheoil lenar thit Willie Clancy i ngrá?\n\nAn fhidil\nAn bosca ceoil\nAn phíb uilleann",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2150,7 +2150,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-4",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n4. Cad a rinne Willie sa bhliain 1957?",
+      "questionText": "4. Cad a rinne Willie sa bhliain 1957?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2206,7 +2206,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-5",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n5. Cé a bhunaigh an Scoil Samhraidh?\n\nCairde Willie\nSeamus Ennis\nWillie Clancy",
+      "questionText": "5. Cé a bhunaigh an Scoil Samhraidh?\n\nCairde Willie\nSeamus Ennis\nWillie Clancy",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2258,7 +2258,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-1",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n1. Cad a fuair an préachán tráth?\n\nPíosa aráin\nPíosa cáise\nPíosa feola",
+      "questionText": "1. Cad a fuair an préachán tráth?\n\nPíosa aráin\nPíosa cáise\nPíosa feola",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2310,7 +2310,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-2",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n2. Cén fáth a raibh ocras ar an sionnach?",
+      "questionText": "2. Cén fáth a raibh ocras ar an sionnach?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2366,7 +2366,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-3",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n3. Conas a bhí an aimsir an lá sin?\n\nBhí sé ag cur\nBhí sé go breá\nBhí sé fuar",
+      "questionText": "3. Conas a bhí an aimsir an lá sin?\n\nBhí sé ag cur\nBhí sé go breá\nBhí sé fuar",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2418,7 +2418,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-4",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n4. Cén moladh a thug an sionnach don phréachán?\n\nFan i do thost\nIs binn do ghlór\nTá tú órga",
+      "questionText": "4. Cén moladh a thug an sionnach don phréachán?\n\nFan i do thost\nIs binn do ghlór\nTá tú órga",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2470,7 +2470,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-5",
       "questionRef": "2011 FL Léamhthuiscint · Ceist 3(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n5. Cén fáth ar oscail an préachán a bhéal?\n\nChun amhrán a rá\nChun bia a ithe\nChun eitilt in airde",
+      "questionText": "5. Cén fáth ar oscail an préachán a bhéal?\n\nChun amhrán a rá\nChun bia a ithe\nChun eitilt in airde",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2839,7 +2839,7 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Original examination pages, including every required picture or passage."
       },
-      "sourceDiscrepancyNotice": "Nóta foinse: tá “inné” luaite faoi 2 mharc agus faoi 0 marc sa scéim do lá an chuiridh. Féach ar an scéim bhunaidh."
+      "sourceDiscrepancyNotice": "Source note: for the day of the invitation the scheme lists “inné” under both 2 marks and 0 marks. See the original scheme."
     },
     {
       "id": "irish-2011-fl-w-5a",
@@ -3040,7 +3040,7 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Original examination pages, including every required picture or passage."
       },
-      "sourceDiscrepancyNotice": "Nóta foinse: éilíonn an páipéar agus an treoir mhionsonraithe dhá phointe do phictiúr 3, cé go bhfuil 1× 4 sa tábla. Is é 4 an t-iomlán; tá lipéid 22/8 sa sampla ach iomláin 30/10.",
+      "sourceDiscrepancyNotice": "Source note: the paper and the detailed guidance ask for two points for picture 3, although the table shows 1× 4. The total is 4; the sample carries the labels 22/8 but the totals 30/10.",
       "additionalTopicIds": [
         "irish-2-8"
       ]
@@ -3165,7 +3165,7 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Original examination pages, including every required picture or passage."
       },
-      "sourceDiscrepancyNotice": "Nóta foinse: tá 2 mharc sa chéad cholún do chaitheamh aimsire agus 6 sa cholún dúbailte. Úsáidtear an modh foilsithe 30÷2 agus iomlán 15; féach ar an dá cholún."
+      "sourceDiscrepancyNotice": "Source note: the first column gives 2 marks for pastimes and the doubled column gives 6. The published method, 30÷2 and a total of 15, is used; see both columns."
     },
     {
       "id": "irish-2011-fl-w-6a",

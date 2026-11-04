@@ -314,7 +314,7 @@ def build():
             criterion('pictiur4','Pictiúr 4',4,[notice_p11.split('Pictiúr 4',1)[1].split('Cruinneas Gaeilge',1)[0]]),language(10)],
         ['Scríobh fógra bunaithe ar na ceithre phictiúr agus ar na treoracha.'],
         'Layout1; required pictures8+13+4+4; one language award10. Preserve the printed1-mark deductions for an indefinite venue, unsuitable day, date without a named month/day, fee, and unintegrated guest name. Published date wording conflicts with the3-mark heading: see picture2 guidance and the original scheme.',
-        sourceDiscrepancyNotice='Nóta foinse: tá “4 mharc” in abairt amháin faoin dáta, ach “3 mharc” sa cheannteideal agus sa leithdháileadh iomlán. Féach ar an scéim bhunaidh.')
+        sourceDiscrepancyNotice='Source note: one sentence about the date says “4 mharc”, but the heading and the full allocation say “3 mharc”. See the original scheme.')
     letter = add('W-4B','3','Scríobh · Ceist 4(b) · Litir',
         'Féach ar na pictiúir thíos.\n\nTá tú ag obair san ospidéal seo don samhradh. Scríobh litir abhaile chuig do chara ag insint dó / di:\n\n'
         '- Faoin ospidéal (pointe amháin eolais) — Pictiúr 1\n'

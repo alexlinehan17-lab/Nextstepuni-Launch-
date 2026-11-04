@@ -151,10 +151,10 @@ describe('2011 Foundation separate written and listening papers',()=>{
     expect(w.q.some((q:{n:string})=>/^R-[23]-[ABC]{2}$|^W-4[AB]-5/.test(q.n))).toBe(false);
     expect(w.q.some((q:{n:string})=>/^W-5B-/.test(q.n))).toBe(false);
     for(const n of ['R-2B-2','R-2B','2','W-4B','W-5A','W-5B','3']){
-      expect(w.q.find((q:{n:string})=>q.n===n).practiceInstruction).toContain('Nóta foinse');
+      expect(w.q.find((q:{n:string})=>q.n===n).practiceInstruction).toContain('Source note');
     }
     const instructions=w.q.find((q:{n:string})=>q.n==='3').practiceInstruction;
-    expect(instructions.match(/tá 2 mharc sa chéad cholún/g)).toHaveLength(1);
+    expect(instructions.match(/the first column gives 2 marks for pastimes/g)).toHaveLength(1);
   });
   it('rejects unknown/stale raw directives and reconstructs printed words without removing real repeated letters',()=>{
     const result=execFileSync('python3',['-c',String.raw`

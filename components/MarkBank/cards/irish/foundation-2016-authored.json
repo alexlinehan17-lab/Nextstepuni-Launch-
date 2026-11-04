@@ -1665,7 +1665,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-1",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n1. Cathain a sheol Aisling an CV isteach?\n\n29 Feabhra\n10 Márta\n21 Márta",
+      "questionText": "1. Cathain a sheol Aisling an CV isteach?\n\n29 Feabhra\n10 Márta\n21 Márta",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1716,7 +1716,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-2",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n2. Cén grád a fuair Aisling sa Fhraincis san Ardteistiméireacht?\n\nGrád A\nGrád B\nGrád C",
+      "questionText": "2. Cén grád a fuair Aisling sa Fhraincis san Ardteistiméireacht?\n\nGrád A\nGrád B\nGrád C",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1767,7 +1767,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-3",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n3. Cén caitheamh aimsire atá ag Aisling?\n\nRíomhairí\nPeil\nTeangacha",
+      "questionText": "3. Cén caitheamh aimsire atá ag Aisling?\n\nRíomhairí\nPeil\nTeangacha",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1818,7 +1818,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-4",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n4. Cad atá le líonadh ag Aisling anois?\n\nRíomhphost\nLitir\nFoirm iarratais",
+      "questionText": "4. Cad atá le líonadh ag Aisling anois?\n\nRíomhphost\nLitir\nFoirm iarratais",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1869,7 +1869,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-5",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n5. Cén post atá ag Gráinne Ní Ghallchóir?\n\nStiúrthóir\nCúntóir\nTurasóir",
+      "questionText": "5. Cén post atá ag Gráinne Ní Ghallchóir?\n\nStiúrthóir\nCúntóir\nTurasóir",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1920,7 +1920,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-1",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n1. Cá bhfuil Cúil Aodha suite?\n\nAr oileán\nCois trá\nI measc na gcnoc",
+      "questionText": "1. Cá bhfuil Cúil Aodha suite?\n\nAr oileán\nCois trá\nI measc na gcnoc",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1971,7 +1971,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-2",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n2. Cad é an baile is gaire do Chúil Aodha?\n\nBaile Bhuirne\nCorcaigh\nMaigh Chromtha",
+      "questionText": "2. Cad é an baile is gaire do Chúil Aodha?\n\nBaile Bhuirne\nCorcaigh\nMaigh Chromtha",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2022,7 +2022,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-3",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n3. Cá bhfuil na muilte gaoithe sa cheantar seo?\n\nSa ghleann\nAr bharr na gcnoc\nSa sráidbhaile",
+      "questionText": "3. Cá bhfuil na muilte gaoithe sa cheantar seo?\n\nSa ghleann\nAr bharr na gcnoc\nSa sráidbhaile",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2073,7 +2073,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-4",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n4. Cad a bhunaigh Seán Ó Riada sa cheantar seo?\n\nCór Chúil Aodha\nSéipéal Chúil Aodha\nIonad cultúrtha",
+      "questionText": "4. Cad a bhunaigh Seán Ó Riada sa cheantar seo?\n\nCór Chúil Aodha\nSéipéal Chúil Aodha\nIonad cultúrtha",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2124,7 +2124,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-5",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n5. Cad atá beo láidir i gCúil Aodha?\n\nRac-cheol\nPopcheol\nAmhránaíocht ar an sean-nós",
+      "questionText": "5. Cad atá beo láidir i gCúil Aodha?\n\nRac-cheol\nPopcheol\nAmhránaíocht ar an sean-nós",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2175,7 +2175,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-1",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n1. Cén mhí inar tharla an stoirm mhór seo?\n\nMí Feabhra\nMí an Mhárta\nMí na Samhna",
+      "questionText": "1. Cén mhí inar tharla an stoirm mhór seo?\n\nMí Feabhra\nMí an Mhárta\nMí na Samhna",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2226,7 +2226,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-2",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n2. Cé a thuig gur féidir le stoirm mhór a lán damáiste a dhéanamh?\n\nNa déagóirí\nNa tuismitheoirí\nNa páistí óga",
+      "questionText": "2. Cé a thuig gur féidir le stoirm mhór a lán damáiste a dhéanamh?\n\nNa déagóirí\nNa tuismitheoirí\nNa páistí óga",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2277,7 +2277,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-3",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n3. Cén áit inar bhailigh an teaghlach ar fad le chéile?\n\nSa chistin\nThuas staighre\nSa seomra suí",
+      "questionText": "3. Cén áit inar bhailigh an teaghlach ar fad le chéile?\n\nSa chistin\nThuas staighre\nSa seomra suí",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2328,7 +2328,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-4",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n4. Cad a rinne siad le linn na stoirme?\n\nD’imir siad cártaí\nBhí siad ag caint\nChodail siad",
+      "questionText": "4. Cad a rinne siad le linn na stoirme?\n\nD’imir siad cártaí\nBhí siad ag caint\nChodail siad",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2379,7 +2379,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-5",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 2(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n5. Cad a bhí bunoscionn sa ghairdín?\n\nAn bothán adhmaid\nCrann\nFuinneoga",
+      "questionText": "5. Cad a bhí bunoscionn sa ghairdín?\n\nAn bothán adhmaid\nCrann\nFuinneoga",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2430,7 +2430,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-1",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n1. Cé hé “Rí na hIománaíochta” sa lá atá inniu ann?\n\nHenry Shefflin\nChristy Ring\nSetanta",
+      "questionText": "1. Cé hé “Rí na hIománaíochta” sa lá atá inniu ann?\n\nHenry Shefflin\nChristy Ring\nSetanta",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2481,7 +2481,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-2",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n2. Cathain a bhuaigh Henry a chéad bhonn sinsearach?\n\n1979\n1999\n2000",
+      "questionText": "2. Cathain a bhuaigh Henry a chéad bhonn sinsearach?\n\n1979\n1999\n2000",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2532,7 +2532,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-3",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n3. Cé mhéad uair a bhuaigh Henry Craobh na hÉireann?\n\nTrí huaire\nSeacht n-uaire\nDeich n-uaire",
+      "questionText": "3. Cé mhéad uair a bhuaigh Henry Craobh na hÉireann?\n\nTrí huaire\nSeacht n-uaire\nDeich n-uaire",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2583,7 +2583,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-4",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n4. Cén gortú a tharla do Henry agus é ag imirt dá chlub i mí na Nollag 2012?",
+      "questionText": "4. Cén gortú a tharla do Henry agus é ag imirt dá chlub i mí na Nollag 2012?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2643,7 +2643,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-5",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n5. Cá mbíonn Henry le feiceáil anois?\n\nAr pháirc na himeartha\nAr theilifís RTÉ\nSan ospidéal",
+      "questionText": "5. Cá mbíonn Henry le feiceáil anois?\n\nAr pháirc na himeartha\nAr theilifís RTÉ\nSan ospidéal",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2694,7 +2694,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-1",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n1. Cá bhfuil cónaí ar Úna faoi láthair?\n\nBaile Átha Cliath\nDurlas\nNorthampton",
+      "questionText": "1. Cá bhfuil cónaí ar Úna faoi láthair?\n\nBaile Átha Cliath\nDurlas\nNorthampton",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2745,7 +2745,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-2",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n2. Cén caitheamh aimsire a bhí ag Úna nuair a bhí sí sa bhunscoil?\n\nAn giotár\nSnámh\nCanadh",
+      "questionText": "2. Cén caitheamh aimsire a bhí ag Úna nuair a bhí sí sa bhunscoil?\n\nAn giotár\nSnámh\nCanadh",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2796,7 +2796,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-3",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n3. Cén tslí bheatha a roghnaigh Úna sa bhliain 2005?\n\nBanaltra\nCeoltóir\nMúinteoir bunscoile",
+      "questionText": "3. Cén tslí bheatha a roghnaigh Úna sa bhliain 2005?\n\nBanaltra\nCeoltóir\nMúinteoir bunscoile",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2847,7 +2847,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-4",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n4. Cén fáth ar imigh Úna go Londain sa bhliain 2007?",
+      "questionText": "4. Cén fáth ar imigh Úna go Londain sa bhliain 2007?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2903,7 +2903,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-5",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n5. Cén sloinne atá ar Úna anois?\n\nEgan\nFoden\nHealy",
+      "questionText": "5. Cén sloinne atá ar Úna anois?\n\nEgan\nFoden\nHealy",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2954,7 +2954,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-1",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n1. Cén t-ainmhí atá ag caint sna véarsaí seo?\n\nCat\nMac tíre\nSionnach",
+      "questionText": "1. Cén t-ainmhí atá ag caint sna véarsaí seo?\n\nCat\nMac tíre\nSionnach",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3005,7 +3005,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-2",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n2. Cén áit a mbíonn Sionnach na Cathrach ag lorg bia?\n\nI lár na cathrach\nFaoi sceach\nSa zú",
+      "questionText": "2. Cén áit a mbíonn Sionnach na Cathrach ag lorg bia?\n\nI lár na cathrach\nFaoi sceach\nSa zú",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3056,7 +3056,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-3",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n3. Cad a fhaigheann Sionnach na Cathrach a shásaíonn a chroí?",
+      "questionText": "3. Cad a fhaigheann Sionnach na Cathrach a shásaíonn a chroí?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3111,7 +3111,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-4",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n4. Cén bia nach n-itheann Sionnach na Cathrach?\n\nBia dóite\nSicín\nUachtar reoite",
+      "questionText": "4. Cén bia nach n-itheann Sionnach na Cathrach?\n\nBia dóite\nSicín\nUachtar reoite",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3162,7 +3162,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-5",
       "questionRef": "2016 FL Léamhthuiscint · Ceist 3(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n5. Cathain a chodlaíonn Sionnach na Cathrach?\n\nI rith na hoíche\nI rith an lae\nLe héirí na gréine",
+      "questionText": "5. Cathain a chodlaíonn Sionnach na Cathrach?\n\nI rith na hoíche\nI rith an lae\nLe héirí na gréine",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [

@@ -310,7 +310,7 @@ def build():
                 'irish-9-2',[exam_topic],[page],([4] if slot[0]=='2' else [5,6] if (slot,i) in [('3A',2),('3B',4),('3C',2)] else [5]),
                 [criterion('answer','Freagra',5 if slot[0]=='2' else 6,[answer],True)])
             if slot=='2B' and i==2:
-                card['sourceDiscrepancyNotice']='Nóta foinse: deir an téacs “trá ghainmheach”, ach tá “Ranganna Céilí” sa scéim do 2(b)(2). Féach ar an dá fhoinse.'
+                card['sourceDiscrepancyNotice']='Source note: the text says “trá ghainmheach”, but the scheme has “Ranganna Céilí” for 2(b)(2). See both sources.'
                 card['criteria'][0]['label']='Freagra · neamhréir fhoilsithe'
                 card['criteria'][0]['guidance']=[
                     'SEC answer key: Ranganna Céilí — 5 mharc.',
@@ -393,7 +393,7 @@ def build():
             criterion('pictiur4','Pictiúr 4 · ar an mbealach abhaile',2,[i12.split('Pictiúr 4',1)[1]]),language(8)],
         ['Scríobh chuig Úna faoin gcluiche rugbaí; sé shonra i bpictiúr 1 agus na trí threoir eile.'],
         'Whole 30-mark invitation: greeting 2, invitation 1, signature 1, pictures 12+2+2+2, shared language 8. One required recipient, not a closed pool. Scheme PDF 12 prints contradictory inné examples (2 and 0); compare both original statements.',
-        sourceDiscrepancyNotice='Nóta foinse: tá “inné” luaite faoi 2 mharc agus faoi 0 marc sa scéim do lá an chuiridh. Féach ar an scéim bhunaidh.')
+        sourceDiscrepancyNotice='Source note: for the day of the invitation the scheme lists “inné” under both 2 marks and 0 marks. See the original scheme.')
     l13,l14,l15=scheme_guidance(13,15)
     letter=add('W-5A','3','Scríobh · Ceist 5(a) · Litir',
         'Féach ar na pictiúir thíos.\n\nTá tusa ag obair sa Gharáiste seo an samhradh seo. Scríobh litir abhaile chuig do chara. Inis dó/di:\n\n'
@@ -414,7 +414,7 @@ def build():
             criterion('pictiur4','Pictiúr 4 · dhá phointe × 2',4,[l14.split('Pictiúr 4',1)[1],l15.split('Léiriú na marcanna',1)[0]]),language(10)],
         ['Scríobh chuig cara faoin ngaráiste agus an áit, trí phointe faoin obair, dhá phointe faoi na daoine, agus na gníomhaíochtaí saor-ama.','Seoladh, dáta, tús agus críoch oiriúnach.'],
         'Whole 40-mark letter: layout 6 (2+1+1+2), pictures 4+12+4+4, shared language 10. Paper and detailed scheme require two references for picture 3 despite overview 1× 4. The worked total labels on PDF 15 say Cum(22)/Cr(8), but its actual totals 30+10 and the opening allocation are consistent. Preserve those printed label errors in the original; this rubric uses 30+10. No later-year length penalty applies.',
-        sourceDiscrepancyNotice='Nóta foinse: éilíonn an páipéar agus an treoir mhionsonraithe dhá phointe do phictiúr 3, cé go bhfuil 1× 4 sa tábla. Is é 4 an t-iomlán; tá lipéid 22/8 sa sampla ach iomláin 30/10.',
+        sourceDiscrepancyNotice='Source note: the paper and the detailed guidance ask for two points for picture 3, although the table shows 1× 4. The total is 4; the sample carries the labels 22/8 but the totals 30/10.',
         additionalTopicIds=['irish-2-8'])
     form_prompt=(
         'Ba mhaith leat post a fháil in Ollstór ‘Tesco’. Fuair tú an Fhoirm Iarratais seo le líonadh.\nLíon isteach an Fhoirm Iarratais anseo thíos.\nNóta: Is tusa Phil de Róiste.\n\n'
@@ -444,7 +444,7 @@ def build():
                 ]),language(10)],
             ['Líon gach réimse; cúig ábhar scoile agus trí chaitheamh aimsire.',f'Roghnaigh {day} Lúnasa don agallamh.','Scríobh timpeall 40 focal faoi obair in Ollstór Tesco.'],
             'Whole 40-mark form: fields 15 using doubled 30÷2 rounded once, paragraph 15 after its own length adjustment, shared language 10. Three interview dates expand mechanically. Hobbies and subjects remain open content. Printed undoubled hobby 2 conflicts with doubled 6 and total 15; compare both columns.',
-            sourceDiscrepancyNotice='Nóta foinse: tá 2 mharc sa chéad cholún do chaitheamh aimsire agus 6 sa cholún dúbailte. Úsáidtear an modh foilsithe 30÷2 agus iomlán 15; féach ar an dá cholún.'))
+            sourceDiscrepancyNotice='Source note: the first column gives 2 marks for pastimes and the doubled column gives 6. The published method, 30÷2 and a total of 15, is used; see both columns.'))
     stories=[]
     for slot,page,scheme_page in [('6A',14,16),('6B',15,17)]:
         prompt=(

@@ -121,10 +121,10 @@ describe('2010 Foundation written paper, with the listening paper held as a sour
     }
     expect(q('3').region.map((r:{p:number})=>r.p)).toEqual([6,7,8,9,10,11,12,13,14,15,16]);
     expect(q('W-4B').label).toContain('Freagra');expect(q('W-5B').label).toContain('Foirm');
-    for(const n of ['W-5A','W-5B','3'])expect(q(n).practiceInstruction).toContain('Nóta foinse');
+    for(const n of ['W-5A','W-5B','3'])expect(q(n).practiceInstruction).toContain('Source note');
     expect(map.q.some((q:{n:string})=>/^W-5B-/.test(q.n))).toBe(false);
     expect(map.q.some((q:{n:string})=>/^R-[23]-[ABC]{2}$|^W-4[AB]-5/.test(q.n))).toBe(false);
-    expect(q('3').practiceInstruction.match(/Nóta foinse/g)).toHaveLength(2);
+    expect(q('3').practiceInstruction.match(/Source note/g)).toHaveLength(2);
     expect(existsSync('public/paper-answers/2010/LC001BLPA00IV.pdf.json')).toBe(false);
   });
   it('rejects unknown or stale raw directives across both 2010 papers',()=>{

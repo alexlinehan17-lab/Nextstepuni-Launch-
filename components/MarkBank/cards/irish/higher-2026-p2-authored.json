@@ -1579,7 +1579,7 @@
       "section": "2",
       "atlasQuestionId": "R-A-6-b-1",
       "questionRef": "2026 HL Paper 2 Léamhthuiscint A · Ceist 6(b) · Pointe 1",
-      "questionText": "6(b) ‘Chaith an tSiúr Stan a saol ar fad ag cabhrú le grúpaí éagsúla.’ Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht a léiríonn fírinne an ráitis sin, dar leat. (Is leor 60 focal.) Don chárta seo: tabhair pointe eolais amháin, i d’fhocail féin (pointe 1, 6 mharc).",
+      "questionText": "6(b) ‘Chaith an tSiúr Stan a saol ar fad ag cabhrú le grúpaí éagsúla.’ Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht a léiríonn fírinne an ráitis sin, dar leat. (Is leor 60 focal.)",
       "totalMarks": 6,
       "topicId": "irish-3-0",
       "conceptId": "irish-hl-p2-reading-a-q6-b-1",
@@ -1631,7 +1631,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two points of information, in your own words (point 1, 6 marks)"
     },
     {
       "id": "irish-2026-hl-p2-reading-a-q6-b-2",
@@ -1641,7 +1642,7 @@
       "section": "2",
       "atlasQuestionId": "R-A-6-b-2",
       "questionRef": "2026 HL Paper 2 Léamhthuiscint A · Ceist 6(b) · Pointe 2",
-      "questionText": "6(b) ‘Chaith an tSiúr Stan a saol ar fad ag cabhrú le grúpaí éagsúla.’ Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht a léiríonn fírinne an ráitis sin, dar leat. (Is leor 60 focal.) Don chárta seo: tabhair pointe eolais amháin, i d’fhocail féin (pointe 2, 6 mharc).",
+      "questionText": "6(b) ‘Chaith an tSiúr Stan a saol ar fad ag cabhrú le grúpaí éagsúla.’ Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht a léiríonn fírinne an ráitis sin, dar leat. (Is leor 60 focal.)",
       "totalMarks": 6,
       "topicId": "irish-3-0",
       "conceptId": "irish-hl-p2-reading-a-q6-b-2",
@@ -1693,7 +1694,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two points of information, in your own words (point 2, 6 marks)"
     },
     {
       "id": "irish-2026-hl-p2-reading-a-q1",
@@ -2442,7 +2444,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-1-bii-1",
       "questionRef": "2026 HL Paper 2 Léamhthuiscint B · Ceist 1(b)(ii) · Freagra 1",
-      "questionText": "1(b)(ii) Luaigh dhá bhealach a bhfuil déantús na méideanna móra éadaí ag déanamh dochar don chomhshaol. (Alt 1) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "1(b)(ii) Luaigh dhá bhealach a bhfuil déantús na méideanna móra éadaí ag déanamh dochar don chomhshaol. (Alt 1)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q1-bii-1",
@@ -2489,7 +2491,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2026-hl-p2-reading-b-q1-bii-2",
@@ -2499,7 +2502,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-1-bii-2",
       "questionRef": "2026 HL Paper 2 Léamhthuiscint B · Ceist 1(b)(ii) · Freagra 2",
-      "questionText": "1(b)(ii) Luaigh dhá bhealach a bhfuil déantús na méideanna móra éadaí ag déanamh dochar don chomhshaol. (Alt 1) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "1(b)(ii) Luaigh dhá bhealach a bhfuil déantús na méideanna móra éadaí ag déanamh dochar don chomhshaol. (Alt 1)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q1-bii-2",
@@ -2546,7 +2549,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2026-hl-p2-reading-b-q2-a",
@@ -2673,7 +2677,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-2-bi-1",
       "questionRef": "2026 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(i) · Freagra 1",
-      "questionText": "2(b)(i) Luaigh dhá dheis a bhaineann leis an bhfaisean ciorclach. (Alt 2) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "2(b)(i) Luaigh dhá dheis a bhaineann leis an bhfaisean ciorclach. (Alt 2)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q2-bi-1",
@@ -2720,7 +2724,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2026-hl-p2-reading-b-q2-bi-2",
@@ -2730,7 +2735,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-2-bi-2",
       "questionRef": "2026 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(i) · Freagra 2",
-      "questionText": "2(b)(i) Luaigh dhá dheis a bhaineann leis an bhfaisean ciorclach. (Alt 2) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "2(b)(i) Luaigh dhá dheis a bhaineann leis an bhfaisean ciorclach. (Alt 2)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q2-bi-2",
@@ -2777,7 +2782,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2026-hl-p2-reading-b-q2-bii",
@@ -2845,7 +2851,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-2-bii-1",
       "questionRef": "2026 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(ii) · Freagra 1",
-      "questionText": "2(b)(ii) Scríobh síos dhá rud faoi na héadaí a chuirfear ar mhargadh an Aontais Eorpaigh faoin mbliain 2030 de réir na Straitéise um Theicstílí Inbhuanaithe agus Ciorclacha. (Alt 2) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "2(b)(ii) Scríobh síos dhá rud faoi na héadaí a chuirfear ar mhargadh an Aontais Eorpaigh faoin mbliain 2030 de réir na Straitéise um Theicstílí Inbhuanaithe agus Ciorclacha. (Alt 2)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q2-bii-1",
@@ -2892,7 +2898,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2026-hl-p2-reading-b-q2-bii-2",
@@ -2902,7 +2909,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-2-bii-2",
       "questionRef": "2026 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(ii) · Freagra 2",
-      "questionText": "2(b)(ii) Scríobh síos dhá rud faoi na héadaí a chuirfear ar mhargadh an Aontais Eorpaigh faoin mbliain 2030 de réir na Straitéise um Theicstílí Inbhuanaithe agus Ciorclacha. (Alt 2) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "2(b)(ii) Scríobh síos dhá rud faoi na héadaí a chuirfear ar mhargadh an Aontais Eorpaigh faoin mbliain 2030 de réir na Straitéise um Theicstílí Inbhuanaithe agus Ciorclacha. (Alt 2)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q2-bii-2",
@@ -2949,7 +2956,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2026-hl-p2-reading-b-q3-a",
@@ -3308,7 +3316,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-4-bii-1",
       "questionRef": "2026 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(ii) · Freagra 1",
-      "questionText": "4(b)(ii) Scríobh síos dhá chúis a bhfuil cáil bainte amach ag an dearthóir Aoife McNamara mar cheannaire i dtionscal an fhaisin inbhuanaithe. (Alt 4) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 1, 1 mharc).",
+      "questionText": "4(b)(ii) Scríobh síos dhá chúis a bhfuil cáil bainte amach ag an dearthóir Aoife McNamara mar cheannaire i dtionscal an fhaisin inbhuanaithe. (Alt 4)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q4-bii-1",
@@ -3355,7 +3363,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 1, 1 mark)"
     },
     {
       "id": "irish-2026-hl-p2-reading-b-q4-bii-2",
@@ -3365,7 +3374,7 @@
       "section": "2",
       "atlasQuestionId": "R-B-4-bii-2",
       "questionRef": "2026 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(ii) · Freagra 2",
-      "questionText": "4(b)(ii) Scríobh síos dhá chúis a bhfuil cáil bainte amach ag an dearthóir Aoife McNamara mar cheannaire i dtionscal an fhaisin inbhuanaithe. (Alt 4) Don chárta seo: tabhair freagra amháin don chuid seo (freagra 2, 1 mharc).",
+      "questionText": "4(b)(ii) Scríobh síos dhá chúis a bhfuil cáil bainte amach ag an dearthóir Aoife McNamara mar cheannaire i dtionscal an fhaisin inbhuanaithe. (Alt 4)",
       "totalMarks": 1,
       "topicId": "irish-3-1",
       "conceptId": "irish-hl-p2-reading-b-q4-bii-2",
@@ -3412,7 +3421,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "practiceFocus": "One of the two answers (answer 2, 1 mark)"
     },
     {
       "id": "irish-2026-hl-p2-reading-b-q5-a",

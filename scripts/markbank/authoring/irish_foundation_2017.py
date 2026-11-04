@@ -278,7 +278,7 @@ def build():
                 'irish-9-2',[exam_topic],[page],[5 if slot[0]=='2' else 6],
                 [criterion('answer','Freagra',5 if slot[0]=='2' else 6,[answer],True)])
             if slot == '2C' and i == 2:
-                card['sourceDiscrepancyNotice'] = 'Nóta foinse: ní réitíonn an lá sa téacs leis an lá sa scéim do Cheist 2(c)(2). Féach ar an dá fhoinse.'
+                card['sourceDiscrepancyNotice'] = 'Source note: the day in the text does not match the day in the scheme for Question 2(c)(2). See both sources.'
                 card['criteria'][0]['label'] = 'Freagra · neamhréir fhoilsithe'
                 card['criteria'][0]['guidance'] = [
                     'SEC answer key: Déardaoin — 5 mharc.',

@@ -141,7 +141,7 @@ describe('2013 Foundation independently reviewed boundaries',()=>{
     expect(topics('3')).not.toContain('irish-foundation-fill-in-a-form');
     expect(map.q.find((q:{n:string})=>q.n==='3').schemeRegion.map((r:{p:number})=>r.p)).toEqual([8,9,10,11,12,13,14,15]);
     for(const n of ['W-4A','3']) {
-      expect(map.q.find((q:{n:string})=>q.n===n).practiceInstruction).toContain('Nóta foinse');
+      expect(map.q.find((q:{n:string})=>q.n===n).practiceInstruction).toContain('Source note');
     }
     expect(map.band).toEqual([3,16]);
   });

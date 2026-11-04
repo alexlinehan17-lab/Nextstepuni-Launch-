@@ -62,7 +62,9 @@ describe('2023 Ordinary Paper 1 source reconciliation (15 retained cards)', () =
     expect(get('W-C-ii').questionText).toContain('Bhog teaghlach ó thír eile isteach i do cheantar le déanaí.');
     expect(get('W-C-i').questionText).toContain('do dheartháir/do dheirfiúr ag insint dó/di');
     expect(get('W-A-ii').questionText).toContain('Na rudaí a chuireann brón orm.');
-    expect(get('W-B-i').questionText).toContain('An rogha don chárta seo: B(i).');
+    // The card's question ends at its printed option; no line of ours chooses it.
+    expect(get('W-B-i').questionText).not.toContain('An rogha don chárta seo');
+    expect(get('W-B-i').questionText.split('\n').at(-1)).toMatch(/^\(i\) /);
   });
 
   it('publishes each title once and carries the choose-two instruction, with no combination cards', () => {

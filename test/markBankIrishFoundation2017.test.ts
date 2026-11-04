@@ -148,9 +148,9 @@ describe('2017 Foundation independently reviewed boundaries',()=>{
     expect(disputed.markingGuideNote).toContain('scheme page5 prints Déardaoin');
     expect(disputed.markingGuideNote).toContain('does not explicitly award Dé Céadaoin');
     const map=JSON.parse(readFileSync('public/paper-answers/2017/LC001BLP000IV.pdf.json','utf8'));
-    const affected=map.q.filter((q:{practiceInstruction?:string})=>q.practiceInstruction?.includes('Nóta foinse:'));
+    const affected=map.q.filter((q:{practiceInstruction?:string})=>q.practiceInstruction?.includes('Source note:'));
     expect(affected.map((q:{n:string})=>q.n).sort()).toEqual(['2','R-2C','R-2C-2'].sort());
-    for(const q of affected) expect(q.practiceInstruction.match(/Nóta foinse:/g)).toHaveLength(1);
+    for(const q of affected) expect(q.practiceInstruction.match(/Source note:/g)).toHaveLength(1);
     expect(get('W-4A').criteria.find(c=>c.id==='pictiur4')!.guidance.join(' ')).toContain('“Ospidéal” leis féin = 0');
   });
 

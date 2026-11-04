@@ -1615,7 +1615,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-1",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n1. Cá bhfuil Síle Ní Bhriain ina cónaí?\n\nBré\nCluain Tarbh\nThar lear",
+      "questionText": "1. Cá bhfuil Síle Ní Bhriain ina cónaí?\n\nBré\nCluain Tarbh\nThar lear",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1666,7 +1666,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-2",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n2. Cathain a chonaic Síle an fógra sa nuachtán?\n\nInné\nArú inné\nInniu",
+      "questionText": "2. Cathain a chonaic Síle an fógra sa nuachtán?\n\nInné\nArú inné\nInniu",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1717,7 +1717,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-3",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n3. Cá bhfuil an folúntas?\n\nI nuachtán\nIn oifig dlíodóra\nIn oifig thaistil",
+      "questionText": "3. Cá bhfuil an folúntas?\n\nI nuachtán\nIn oifig dlíodóra\nIn oifig thaistil",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1768,7 +1768,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-4",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n4. Cén grád a fuair Síle sa Stair san Ardteistiméireacht?\n\nGrád A\nGrád B\nGrád C",
+      "questionText": "4. Cén grád a fuair Síle sa Stair san Ardteistiméireacht?\n\nGrád A\nGrád B\nGrád C",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1819,7 +1819,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-5",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n5. Cén ceadúnas atá ag Síle?\n\nCeadúnas píolóta\nCeadúnas teilifíse\nCeadúnas tiomána",
+      "questionText": "5. Cén ceadúnas atá ag Síle?\n\nCeadúnas píolóta\nCeadúnas teilifíse\nCeadúnas tiomána",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1870,7 +1870,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-1",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n1. Cén baile mór is gaire don Rinn?\n\nCorcaigh\nDún Garbhán\nPort Láirge",
+      "questionText": "1. Cén baile mór is gaire don Rinn?\n\nCorcaigh\nDún Garbhán\nPort Láirge",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1921,7 +1921,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-2",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n2. Cé mhéad scoláire Gaeilge a thagann go Coláiste na Rinne gach samhradh?\n\n1,000\n1,500\n10,000",
+      "questionText": "2. Cé mhéad scoláire Gaeilge a thagann go Coláiste na Rinne gach samhradh?\n\n1,000\n1,500\n10,000",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1972,7 +1972,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-3",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n3. Cad a théann siar go dtí aimsir an Ghorta sa Rinn?\n\nAn coláiste\nAn teach solais\nReilig an tSléibhe",
+      "questionText": "3. Cad a théann siar go dtí aimsir an Ghorta sa Rinn?\n\nAn coláiste\nAn teach solais\nReilig an tSléibhe",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2023,7 +2023,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-4",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n4. Cad a íosfaidh an cuairteoir sna bialanna sa Rinn?\n\nBia mara\nÉanlaith\nLeite",
+      "questionText": "4. Cad a íosfaidh an cuairteoir sna bialanna sa Rinn?\n\nBia mara\nÉanlaith\nLeite",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2074,7 +2074,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-5",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n5. Cén mhí a mbíonn an “Tionól Ceoil” sa Rinn?\n\nFeabhra\nIúil\nLúnasa",
+      "questionText": "5. Cén mhí a mbíonn an “Tionól Ceoil” sa Rinn?\n\nFeabhra\nIúil\nLúnasa",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2125,7 +2125,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-1",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n1. Cén mhí in 2012 ar chríochnaigh “Rás Volvo”?\n\nAibreán\nIúil\nDeireadh Fómhair",
+      "questionText": "1. Cén mhí in 2012 ar chríochnaigh “Rás Volvo”?\n\nAibreán\nIúil\nDeireadh Fómhair",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2176,7 +2176,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-2",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n2. Cé mhéad bád a bhí páirteach i “Rás Volvo”?\n\n6\n10\n20",
+      "questionText": "2. Cé mhéad bád a bhí páirteach i “Rás Volvo”?\n\n6\n10\n20",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2227,7 +2227,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-3",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n3. Cén treo ar imigh na báid ag tús an ráis?\n\nSoir\nSiar\nÓ dheas",
+      "questionText": "3. Cén treo ar imigh na báid ag tús an ráis?\n\nSoir\nSiar\nÓ dheas",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2278,7 +2278,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-4",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n4. Cén áit a raibh tinte cnámh ar lasadh do na báid?\n\nAr Árainn\nAr chósta Chonamara\nI nGaillimh",
+      "questionText": "4. Cén áit a raibh tinte cnámh ar lasadh do na báid?\n\nAr Árainn\nAr chósta Chonamara\nI nGaillimh",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2329,7 +2329,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-5",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 2(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n5. Cad as don mhairnéalach Damian Foxall?\n\nAn Spáinn\nÉire\nMeiriceá Theas",
+      "questionText": "5. Cad as don mhairnéalach Damian Foxall?\n\nAn Spáinn\nÉire\nMeiriceá Theas",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2380,7 +2380,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-1",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n1. Cad a rinne Brendan tar éis dó freastal ar an ollscoil? Thosaigh sé …\n\nAg déanamh scannán\nAg léamh\nAg múineadh",
+      "questionText": "1. Cad a rinne Brendan tar éis dó freastal ar an ollscoil? Thosaigh sé …\n\nAg déanamh scannán\nAg léamh\nAg múineadh",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2431,7 +2431,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-2",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n2. Cén bhliain ar éirigh Brendan as a phost mar mhúinteoir?\n\n1955\n1982\n1991",
+      "questionText": "2. Cén bhliain ar éirigh Brendan as a phost mar mhúinteoir?\n\n1955\n1982\n1991",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2482,7 +2482,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-3",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n3. Cén ról a bhí ag Brendan i scannáin Harry Potter?\n\nGerry Boyle\nMad-Eye Moody\nHamish",
+      "questionText": "3. Cén ról a bhí ag Brendan i scannáin Harry Potter?\n\nGerry Boyle\nMad-Eye Moody\nHamish",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2533,7 +2533,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-4",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n4. Cá bhfuil Brendan ina chónaí?",
+      "questionText": "4. Cá bhfuil Brendan ina chónaí?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2584,7 +2584,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-5",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n5. Cén gléas ceoil a sheinneann Brendan?\n\nAn fheadóg\nAn fhidil\nAn giotár",
+      "questionText": "5. Cén gléas ceoil a sheinneann Brendan?\n\nAn fheadóg\nAn fhidil\nAn giotár",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2635,7 +2635,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-1",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n1. Cén tsiombail oifigiúil atá ag Rialtas na hÉireann?\n\nAn ceol\nAn chláirseach\nAn tseamróg",
+      "questionText": "1. Cén tsiombail oifigiúil atá ag Rialtas na hÉireann?\n\nAn ceol\nAn chláirseach\nAn tseamróg",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2686,7 +2686,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-2",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n2. Cén fáth ar bunaíodh Comhaltas Ceoltóirí Éireann?",
+      "questionText": "2. Cén fáth ar bunaíodh Comhaltas Ceoltóirí Éireann?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2742,7 +2742,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-3",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n3. Cá raibh Fleá Cheoil na hÉireann an chéad uair a bhí sí ann?\n\nAn Cabhán\nAn Muileann gCearr\nCathair Dhoire",
+      "questionText": "3. Cá raibh Fleá Cheoil na hÉireann an chéad uair a bhí sí ann?\n\nAn Cabhán\nAn Muileann gCearr\nCathair Dhoire",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2793,7 +2793,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-4",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n4. Cad a bhíonn ar siúl sa Scoil Éigse?\n\nCeardlanna\nCeolchoirmeacha\nComórtais",
+      "questionText": "4. Cad a bhíonn ar siúl sa Scoil Éigse?\n\nCeardlanna\nCeolchoirmeacha\nComórtais",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2844,7 +2844,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-5",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n5. Cá fhad a bheidh an Fhleá Cheoil i gCathair Dhoire?\n\nÓ mhaidin go hoíche\nAr feadh bliana\nAr feadh naoi lá",
+      "questionText": "5. Cá fhad a bheidh an Fhleá Cheoil i gCathair Dhoire?\n\nÓ mhaidin go hoíche\nAr feadh bliana\nAr feadh naoi lá",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2897,7 +2897,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-1",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n1. Cad a thit aréir?\n\nDíon an tí\nBáisteach\nSneachta",
+      "questionText": "1. Cad a thit aréir?\n\nDíon an tí\nBáisteach\nSneachta",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2948,7 +2948,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-2",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n2. Cathain a stad an bháisteach?\n\nTráthnóna\nAréir\nAr maidin",
+      "questionText": "2. Cathain a stad an bháisteach?\n\nTráthnóna\nAréir\nAr maidin",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2999,7 +2999,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-3",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n3. Cad a bhí i lár an bhaile?\n\nLochán\nSparán\nSruthán",
+      "questionText": "3. Cad a bhí i lár an bhaile?\n\nLochán\nSparán\nSruthán",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3050,7 +3050,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-4",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n4. Cad a chuir an file air féin?",
+      "questionText": "4. Cad a chuir an file air féin?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3105,7 +3105,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-5",
       "questionRef": "2013 FL Léamhthuiscint · Ceist 3(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n5. Cad a d’fhág an t-uisce ina dhiaidh?\n\nGáire\nLáib\nScáil",
+      "questionText": "5. Cad a d’fhág an t-uisce ina dhiaidh?\n\nGáire\nLáib\nScáil",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3306,7 +3306,7 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Original examination pages, including every required picture or passage."
       },
-      "sourceDiscrepancyNotice": "Nóta foinse: tá “4 mharc” in abairt amháin faoin dáta, ach “3 mharc” sa cheannteideal agus sa leithdháileadh iomlán. Féach ar an scéim bhunaidh."
+      "sourceDiscrepancyNotice": "Source note: one sentence about the date says “4 mharc”, but the heading and the full allocation say “3 mharc”. See the original scheme."
     },
     {
       "id": "irish-2013-fl-w-4b",

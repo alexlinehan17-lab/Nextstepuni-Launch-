@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Lift, never write: fail if any guidance line on any committed Irish card carries a sentence that is not the SEC's.
+"""Lift, never write: fail if any committed Irish card carries Irish of ours: a guidance sentence that is not the SEC's,
+a card-scope line in its question ("An rogha don chárta seo", "Don chárta seo", "Léigh an téacs ar leathanach"), or a
+source note in Irish.
 
 Every card file under components/MarkBank/cards/irish is read; each criterion's guidance is cut into fragments and
 checked against that year's printed Irish papers and schemes (irish_lifted.written). Needs the local
@@ -21,5 +23,5 @@ for path in sorted(glob.glob(os.path.join(ROOT, 'components', 'MarkBank', 'cards
                      for criterion in card['criteria'] if not criterion['guidance']]
 if problems:
     print('\n'.join(problems[:50]))
-    raise SystemExit(f'{len(problems)} guidance fragments are not the SEC\'s words')
-print('IRISH GUIDANCE IS THE SEC\'S WORDS ONLY')
+    raise SystemExit(f'{len(problems)} fragments on Irish cards are not the SEC\'s words')
+print('IRISH CARDS CARRY THE SEC\'S WORDS ONLY')

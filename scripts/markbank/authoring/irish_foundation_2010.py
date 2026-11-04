@@ -274,7 +274,7 @@ def build():
                   'Seoladh, dáta, tús agus críoch oiriúnach.'],
                  'Whole 40-mark letter: layout 6 (2+1+1+2), pictures 4+12+4+4, shared language 10. Picture 3 needs one customer reference; picture 4 needs two references to depicted activities, with −1 for an activity absent from the picture. '
                  'The activity examples are illustrative, not a closed menu. No length penalty is printed.',
-                 sourceDiscrepancyNotice='Nóta foinse: deir ceannteideal amháin sa scéim “san óstán”, ach baineann an páipéar agus na samplaí leis an ollstór crua-earraí.',
+                 sourceDiscrepancyNotice='Source note: one heading in the scheme says “san óstán”, but the paper and the samples are about the hardware superstore.',
                  additionalTopicIds=['irish-2-8'])
     assert 'trí phointe ag teastáil' in texts[11] and 'dó/di' in texts[11]
     form_prompt = (
@@ -307,7 +307,7 @@ def build():
                           'Scríobh timpeall 40 focal faoi obair ar Chúrsa Gailf.'],
                          'Whole 40-mark form: fields 15 using the doubled column 30÷2 rounded up once, paragraph 15 after its own length adjustment, shared language 10. The three printed interview dates are expanded; school subjects and sports are open content. '
                          'The printed undoubled birth-date ½ conflicts with the doubled 2 and the total 15; compare both columns.',
-                         sourceDiscrepancyNotice='Nóta foinse: tá ½ marc do dháta breithe sa chéad cholún agus 2 sa cholún dúbailte. Úsáidtear an modh foilsithe 30÷2 agus iomlán 15; féach ar an dá cholún.'))
+                         sourceDiscrepancyNotice='Source note: the first column gives ½ mark for date of birth and the doubled column gives 2. The published method, 30÷2 and a total of 15, is used; see both columns.'))
     captions = [('faoin tuath', 'marcach óg'), ('ag tafann', 'geit'), ('chabhraigh', 'stop'), ('ar ais ar an gcapall', 'áthas')]
     assert all(w in texts[14] for pair in captions for w in pair)
     g15, g16 = guide(15), guide(16)

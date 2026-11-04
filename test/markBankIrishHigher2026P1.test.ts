@@ -79,7 +79,8 @@ describe('2026 Higher Paper 1 source reconciliation',()=>{
       expect(guide(card.atlasQuestionId)).toContain('13, 14, 15');
       expect(guide(card.atlasQuestionId)).toContain('76-80 marc');
       expect(guide(card.atlasQuestionId)).toContain('Gaeilge (68)');
-      expect(card.questionText).toContain(`An rogha don chárta seo: ${card.atlasQuestionId.slice(2,3)}(${card.atlasQuestionId.slice(4)}).`);
+      expect(card.questionText).not.toContain('An rogha don chárta seo');
+      expect(card.questionText.split('\n\n').at(-1).startsWith(`(${card.atlasQuestionId.slice(4)}) `), card.id).toBe(true);
       expect(card.markingGuideNote.includes('S4 applies to this title'),card.id).toBe(['W-A-a','W-A-b','W-A-c'].includes(card.atlasQuestionId));
     }
     expect(get('W-A-a').questionText).toContain('An Ghaeilge agus an cultúr Gaelach – ag dul ó neart go neart?');

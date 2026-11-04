@@ -71,7 +71,9 @@ describe('2025 Higher Paper 1 source reconciliation (retained legacy cards)', ()
     const s4 = titles.filter(c => c.markingGuideNote.includes('S4 applies to this title'));
     expect(s4.map(c => c.atlasQuestionId)).toEqual(['W-A-a', 'W-A-d', 'W-A-e', 'W-C-b']);
     expect(get('composition-c-b').questionText).toContain('Na deiseanna agus na dúshláin a bhaineann leis an Intleacht Shaorga.');
-    expect(get('composition-c-a').questionText).toContain('An rogha don chárta seo: C(a).');
+    // The card's question ends at its printed option; no line of ours chooses it.
+    expect(get('composition-c-a').questionText).not.toContain('An rogha don chárta seo');
+    expect(get('composition-c-a').questionText.split('\n\n').at(-1)).toMatch(/^\(a\) /);
   });
 
   it('joins every retained card to Atlas with its paper page, scheme pages and same-level topic', () => {

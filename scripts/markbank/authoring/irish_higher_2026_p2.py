@@ -177,15 +177,17 @@ def build():
             if mode == 'slots':
                 for slot in (1, 2):
                     add(f'R-{letter}-{q}-{part}-{slot}', f'reading-{letter.lower()}-q{q}-{part}-{slot}', f'Léamhthuiscint {letter} · Ceist {label} · Freagra {slot}',
-                        f'{text} Don chárta seo: tabhair freagra amháin don chuid seo (freagra {slot}, 1 mharc).', topic, passage['pages'], spages,
-                        [criterion(f'{part}-{slot}', f'Freagra {slot}', 1, [f'Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. {chunk}', general])],
-                        reading_requirements, 'The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. ' + part_note, None, source)
+                        text, topic, passage['pages'], spages,
+                        [criterion(f'{part}-{slot}', f'Freagra {slot}', 1, [chunk, general])],
+                        reading_requirements, 'The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. ' + part_note, None, source,
+                        practiceFocus=f'One of the two answers (answer {slot}, 1 mark)')
             if mode == 'points':
                 for slot in (1, 2):
                     add(f'R-{letter}-{q}-{part}-{slot}', f'reading-{letter.lower()}-q{q}-{part}-{slot}', f'Léamhthuiscint {letter} · Ceist {label} · Pointe {slot}',
-                        f'{text} Don chárta seo: tabhair pointe eolais amháin, i d’fhocail féin (pointe {slot}, 6 mharc).', topic, passage['pages'], spages,
+                        text, topic, passage['pages'], spages,
                         [criterion(f'point-{slot}', f'Pointe eolais {slot}', 6, [chunk, general])], reading_requirements,
-                        'The scheme prices the two points 6 + 6 independently; this card practises one of them. ' + part_note, None, source)
+                        'The scheme prices the two points 6 + 6 independently; this card practises one of them. ' + part_note, None, source,
+                        practiceFocus=f'One of the two points of information, in your own words (point {slot}, 6 marks)')
         for q, parts in by_question.items():
             crits = [dict(c) for _, _, card in parts for c in card['criteria']]
             add(f'R-{letter}-{q}', f'reading-{letter.lower()}-q{q}', f'Léamhthuiscint {letter} · Ceist {q}',

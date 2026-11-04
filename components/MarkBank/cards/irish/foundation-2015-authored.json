@@ -1647,7 +1647,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-1",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n1. Cá bhfuil Óstán an Chnoic?\n\nCo. Dhún na nGall\nCo. na Gaillimhe\nCo. Shligigh",
+      "questionText": "1. Cá bhfuil Óstán an Chnoic?\n\nCo. Dhún na nGall\nCo. na Gaillimhe\nCo. Shligigh",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1698,7 +1698,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-2",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n2. Cén post a theastaíonn ó Eoin?\n\nDoirseoir\nFreastalaí\nFáilteoir",
+      "questionText": "2. Cén post a theastaíonn ó Eoin?\n\nDoirseoir\nFreastalaí\nFáilteoir",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1749,7 +1749,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-3",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n3. Cén grád a fuair Eoin sa Ghaeilge san Ardteistiméireacht?\n\nGrád A\nGrád B\nGrád C",
+      "questionText": "3. Cén grád a fuair Eoin sa Ghaeilge san Ardteistiméireacht?\n\nGrád A\nGrád B\nGrád C",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1800,7 +1800,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-4",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n4. Cé mhéad bliain a chaith Eoin ag obair sa Fhrainc?\n\n2\n3\n4",
+      "questionText": "4. Cé mhéad bliain a chaith Eoin ag obair sa Fhrainc?\n\n2\n3\n4",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1851,7 +1851,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-5",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n5. Cad atá ag Eoin ó na hóstáin thar lear?\n\nGrianghraf\nTeastas tiomána\nTeastais oibre",
+      "questionText": "5. Cad atá ag Eoin ó na hóstáin thar lear?\n\nGrianghraf\nTeastas tiomána\nTeastais oibre",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1902,7 +1902,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-1",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n1. Cén áit a bhfuil “Slí an Atlantaigh Fhiáin”?\n\nI Meiriceá\nIn Éirinn\nAr an Mór-Roinn",
+      "questionText": "1. Cén áit a bhfuil “Slí an Atlantaigh Fhiáin”?\n\nI Meiriceá\nIn Éirinn\nAr an Mór-Roinn",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1953,7 +1953,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-2",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n2. Gabhann “Slí an Atlantaigh Fhiáin” trí ...\n\n2 chontae\n5 chontae\n9 gcontae",
+      "questionText": "2. Gabhann “Slí an Atlantaigh Fhiáin” trí ...\n\n2 chontae\n5 chontae\n9 gcontae",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2004,7 +2004,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-3",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n3. Cad a chuirfidh áthas ar do chroí gach oíche?\n\nÁilleacht an chósta\nÁiteanna stairiúla\nAn ghrian ag dul faoi",
+      "questionText": "3. Cad a chuirfidh áthas ar do chroí gach oíche?\n\nÁilleacht an chósta\nÁiteanna stairiúla\nAn ghrian ag dul faoi",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2055,7 +2055,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-4",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n4. Cad a bhíonn ar siúl ar chósta Mhaigh Eo?\n\nSeoltóireacht\nGalf\nSurfáil",
+      "questionText": "4. Cad a bhíonn ar siúl ar chósta Mhaigh Eo?\n\nSeoltóireacht\nGalf\nSurfáil",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2106,7 +2106,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-5",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n5. Cá mbeidh an ceol traidisiúnta le cloisteáil?\n\nSna bialanna\nSna tithe tábhairne\nAr an mbád",
+      "questionText": "5. Cá mbeidh an ceol traidisiúnta le cloisteáil?\n\nSna bialanna\nSna tithe tábhairne\nAr an mbád",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2157,7 +2157,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-1",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n1. Cá ndeachaigh Muiris agus Emer ag am lóin Dé Máirt seo caite?\n\nAr ais ar scoil\nAbhaile ón scoil\nSuas dréimire",
+      "questionText": "1. Cá ndeachaigh Muiris agus Emer ag am lóin Dé Máirt seo caite?\n\nAr ais ar scoil\nAbhaile ón scoil\nSuas dréimire",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2208,7 +2208,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-2",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n2. Cá raibh Pól ina sheasamh?\n\nAg an doras\nSa ghairdín\nAr bharr dréimire",
+      "questionText": "2. Cá raibh Pól ina sheasamh?\n\nAg an doras\nSa ghairdín\nAr bharr dréimire",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2259,7 +2259,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-3",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n3. Cad a chuala Emer agus í sa chistin?\n\nPól ag titim\nMadra ag tafann\nMuiris ag caint",
+      "questionText": "3. Cad a chuala Emer agus í sa chistin?\n\nPól ag titim\nMadra ag tafann\nMuiris ag caint",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2310,7 +2310,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-4",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n4. Cé a fuair an bindealán ón teach?\n\nEmer\nPól\nMuiris",
+      "questionText": "4. Cé a fuair an bindealán ón teach?\n\nEmer\nPól\nMuiris",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2361,7 +2361,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-5",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 2(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n5. Cén áit a bhfuil Pól faoi láthair?\n\nSa teach\nSa scoil\nSan ospidéal",
+      "questionText": "5. Cén áit a bhfuil Pól faoi láthair?\n\nSa teach\nSa scoil\nSan ospidéal",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2412,7 +2412,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-1",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n1. Tá clú agus cáil ar Katie Taylor ...\n\nMar réalta phopcheoil\nMar mhainicín\nMar dhornálaí",
+      "questionText": "1. Tá clú agus cáil ar Katie Taylor ...\n\nMar réalta phopcheoil\nMar mhainicín\nMar dhornálaí",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2463,7 +2463,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-2",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n2. Cad a bhuaigh Katie sa bhliain 2012?\n\nBonn airgid\nBonn Oilimpeach\nBonn Eorpach",
+      "questionText": "2. Cad a bhuaigh Katie sa bhliain 2012?\n\nBonn airgid\nBonn Oilimpeach\nBonn Eorpach",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2514,7 +2514,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-3",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n3. Cén spórt a d’imir Katie le foireann idirnáisiúnta na hÉireann?\n\nSacar\nCamógaíocht\nPeil Ghaelach",
+      "questionText": "3. Cén spórt a d’imir Katie le foireann idirnáisiúnta na hÉireann?\n\nSacar\nCamógaíocht\nPeil Ghaelach",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2565,7 +2565,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-4",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n4. Cad a scríobh Katie tar éis na gCluichí Oilimpeacha?\n\nVéarsaí\nLeabhar\nPaidreacha",
+      "questionText": "4. Cad a scríobh Katie tar éis na gCluichí Oilimpeacha?\n\nVéarsaí\nLeabhar\nPaidreacha",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2616,7 +2616,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-5",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n5. Cad a dhéanann Katie nuair a bhíonn am saor aici?",
+      "questionText": "5. Cad a dhéanann Katie nuair a bhíonn am saor aici?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2672,7 +2672,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-1",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n1. Cén áit sa chathair a bhfuil Ard-Oifig an Phoist?\n\nFaiche an Choláiste\nImeall na cathrach\nSráid Uí Chonaill",
+      "questionText": "1. Cén áit sa chathair a bhfuil Ard-Oifig an Phoist?\n\nFaiche an Choláiste\nImeall na cathrach\nSráid Uí Chonaill",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2723,7 +2723,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-2",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n2. Cad is féidir a cheannach in Ard-Oifig an Phoist?\n\nLitreacha\nStampaí poist\nCuntas",
+      "questionText": "2. Cad is féidir a cheannach in Ard-Oifig an Phoist?\n\nLitreacha\nStampaí poist\nCuntas",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2774,7 +2774,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-3",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n3. Cad a bhíodh thuas staighre do na hoibrithe?\n\nÁrasáin\nCapaill\nStáblaí",
+      "questionText": "3. Cad a bhíodh thuas staighre do na hoibrithe?\n\nÁrasáin\nCapaill\nStáblaí",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2825,7 +2825,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-4",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n4. Cad a cuireadh in airde ar an bhfoirgneamh ar Luan Cásca 1916?",
+      "questionText": "4. Cad a cuireadh in airde ar an bhfoirgneamh ar Luan Cásca 1916?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2879,7 +2879,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-5",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n5. Cathain a osclófar an t-ionad staire nua in Ard-Oifig an Phoist?\n\n1916\n1929\n2016",
+      "questionText": "5. Cathain a osclófar an t-ionad staire nua in Ard-Oifig an Phoist?\n\n1916\n1929\n2016",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2930,7 +2930,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-1",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n1. Cén séasúr gruama atá thart anois?\n\nAn tEarrach\nAn Geimhreadh\nSéasúr an dóchais",
+      "questionText": "1. Cén séasúr gruama atá thart anois?\n\nAn tEarrach\nAn Geimhreadh\nSéasúr an dóchais",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2981,7 +2981,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-2",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n2. Cad a bhíonn ar siúl ag na héin?\n\nAg éirí\nAg filleadh\nAg canadh",
+      "questionText": "2. Cad a bhíonn ar siúl ag na héin?\n\nAg éirí\nAg filleadh\nAg canadh",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3032,7 +3032,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-3",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n3. Cad a éiríonn níos luaithe anois?\n\nAn ghrian\nNa ba\nNa bláthanna",
+      "questionText": "3. Cad a éiríonn níos luaithe anois?\n\nAn ghrian\nNa ba\nNa bláthanna",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3083,7 +3083,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-4",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n4. Cad a dhéanann na huain? Bíonn siad ...\n\nAg iníor\nAg rince\nAg pocléimneach",
+      "questionText": "4. Cad a dhéanann na huain? Bíonn siad ...\n\nAg iníor\nAg rince\nAg pocléimneach",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3134,7 +3134,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-5",
       "questionRef": "2015 FL Léamhthuiscint · Ceist 3(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n5. Cad a bhíonn ar gach ní beo?",
+      "questionText": "5. Cad a bhíonn ar gach ní beo?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [

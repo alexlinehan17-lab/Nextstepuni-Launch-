@@ -76,7 +76,9 @@ describe('2023 Higher Paper 1 source reconciliation (retained legacy cards)', ()
     expect(s4.map(c => c.atlasQuestionId)).toEqual(['W-A-c', 'W-A-e']);
     expect(get('composition-c-b').questionText).toContain('An dea-obair a dhéanann cumainn charthanachta.');
     expect(get('composition-b-b').questionText).toContain('Níl aon tinteán mar do thinteán féin.');
-    expect(get('composition-c-a').questionText).toContain('An rogha don chárta seo: C(a).');
+    // The card's question ends at its printed option; no line of ours chooses it.
+    expect(get('composition-c-a').questionText).not.toContain('An rogha don chárta seo');
+    expect(get('composition-c-a').questionText.split('\n\n').at(-1)).toMatch(/^\(a\) /);
   });
 
   it('joins every retained card to Atlas with its paper page, scheme pages and same-level topic', () => {

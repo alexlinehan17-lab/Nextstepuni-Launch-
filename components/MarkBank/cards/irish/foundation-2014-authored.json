@@ -1653,7 +1653,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-1",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n1. Cá bhfuil Máirtín ina chónaí?\n\nCo. an Chabháin\nCo. Bhaile Átha Cliath\nCo. na Mí",
+      "questionText": "1. Cá bhfuil Máirtín ina chónaí?\n\nCo. an Chabháin\nCo. Bhaile Átha Cliath\nCo. na Mí",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1704,7 +1704,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-2",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n2. Cén grád a fuair Máirtín sa Ghaeilge san Ardteistiméireacht?\n\nGrád A\nGrád B\nGrád C",
+      "questionText": "2. Cén grád a fuair Máirtín sa Ghaeilge san Ardteistiméireacht?\n\nGrád A\nGrád B\nGrád C",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1755,7 +1755,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-3",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n3. Cén sórt oibre atá ar fáil in Woodies faoi láthair?\n\nObair lánaimseartha\nObair pháirtaimseartha\nObair shealadach",
+      "questionText": "3. Cén sórt oibre atá ar fáil in Woodies faoi láthair?\n\nObair lánaimseartha\nObair pháirtaimseartha\nObair shealadach",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1806,7 +1806,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-4",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n4. Cé mhéad a gheobhaidh Máirtín in aghaidh na huaire?\n\n€5\n€9\n€13",
+      "questionText": "4. Cé mhéad a gheobhaidh Máirtín in aghaidh na huaire?\n\n€5\n€9\n€13",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1857,7 +1857,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-5",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n5. Cén post atá ag Bríd Ní Laoire?\n\nBainisteoir\nFeirmeoir\nRúnaí",
+      "questionText": "5. Cén post atá ag Bríd Ní Laoire?\n\nBainisteoir\nFeirmeoir\nRúnaí",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1908,7 +1908,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-1",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n1. Cén áit a bhfuil Aerfort Dhún na nGall?\n\nBaile Átha Cliath\nAn Charraig Fhinn\nGlaschú",
+      "questionText": "1. Cén áit a bhfuil Aerfort Dhún na nGall?\n\nBaile Átha Cliath\nAn Charraig Fhinn\nGlaschú",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1959,7 +1959,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-2",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n2. Cad is féidir a fháil ar cíos ag Aerfort Dhún na nGall?\n\nCarr\nEitleán\nBia blasta",
+      "questionText": "2. Cad is féidir a fháil ar cíos ag Aerfort Dhún na nGall?\n\nCarr\nEitleán\nBia blasta",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2010,7 +2010,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-3",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n3. Cén saghas trá atá díreach in aice leis an aerfort?\n\nTrá charraigeach\nTrá bheag\nTrá ghainmheach",
+      "questionText": "3. Cén saghas trá atá díreach in aice leis an aerfort?\n\nTrá charraigeach\nTrá bheag\nTrá ghainmheach",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2061,7 +2061,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-4",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n4. Cad atá i measc na ngleannta glasa?\n\nMachairí gailf\nÓstáin\nOileáin",
+      "questionText": "4. Cad atá i measc na ngleannta glasa?\n\nMachairí gailf\nÓstáin\nOileáin",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2112,7 +2112,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-5",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n5. Cad atá cois cósta atá oiriúnach do gach aoisghrúpa?\n\nSurfáil\nSiúlóidí breátha\nSeoltóireacht",
+      "questionText": "5. Cad atá cois cósta atá oiriúnach do gach aoisghrúpa?\n\nSurfáil\nSiúlóidí breátha\nSeoltóireacht",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2163,7 +2163,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-1",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n1. Cén gaol atá ag Liam agus Pól le chéile?\n\nCairde\nDeartháireacha\nTuismitheoirí",
+      "questionText": "1. Cén gaol atá ag Liam agus Pól le chéile?\n\nCairde\nDeartháireacha\nTuismitheoirí",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2214,7 +2214,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-2",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n2. Cad as ar tháinig an héileacaptar?\n\nTrá Lí\nCill Airne\nCorcaigh",
+      "questionText": "2. Cad as ar tháinig an héileacaptar?\n\nTrá Lí\nCill Airne\nCorcaigh",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2265,7 +2265,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-3",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n3. Cén áit a ndeachaigh Liam agus Pól inné?\n\nGo barr an tsléibhe\nAr scoil\nAg snámh",
+      "questionText": "3. Cén áit a ndeachaigh Liam agus Pól inné?\n\nGo barr an tsléibhe\nAr scoil\nAg snámh",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2316,7 +2316,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-4",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n4. Cad a bhris Liam nuair a thit sé?\n\nA chos\nAn fón póca\nA lámh",
+      "questionText": "4. Cad a bhris Liam nuair a thit sé?\n\nA chos\nAn fón póca\nA lámh",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2367,7 +2367,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-5",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 2(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n5. Cad a chuala na deartháireacha i lár na hoíche?\n\nAn héileacaptar\nAn fón\nAn fhoireann tarrthála",
+      "questionText": "5. Cad a chuala na deartháireacha i lár na hoíche?\n\nAn héileacaptar\nAn fón\nAn fhoireann tarrthála",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2418,7 +2418,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-1",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n1. Cé a fhéachann ar an gclár “Bog Stop” ar TG4?\n\nPáistí bunscoile\nDéagóirí\nGach aoisghrúpa",
+      "questionText": "1. Cé a fhéachann ar an gclár “Bog Stop” ar TG4?\n\nPáistí bunscoile\nDéagóirí\nGach aoisghrúpa",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2469,7 +2469,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-2",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n2. Cár rugadh Máire Treasa?\n\nI gContae Shligigh\nI Luimneach\nSa Ghaeltacht",
+      "questionText": "2. Cár rugadh Máire Treasa?\n\nI gContae Shligigh\nI Luimneach\nSa Ghaeltacht",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2520,7 +2520,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-3",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n3. Cén áit a bhfuair Máire Treasa taithí ar an drámaíocht?\n\nSa bhunscoil\nSa mheánscoil\nSa choláiste",
+      "questionText": "3. Cén áit a bhfuair Máire Treasa taithí ar an drámaíocht?\n\nSa bhunscoil\nSa mheánscoil\nSa choláiste",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2571,7 +2571,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-4",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n4. Cén saghas éadaí a chaitheann Máire Treasa?",
+      "questionText": "4. Cén saghas éadaí a chaitheann Máire Treasa?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2623,7 +2623,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-5",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n5. Ar an gclár “Rugbaí Beo” déanann Máire Treasa anailís ...\n\nAr chúrsaí faisin\nAr stíl imeartha rugbaí\nAr stíleanna gruaige",
+      "questionText": "5. Ar an gclár “Rugbaí Beo” déanann Máire Treasa anailís ...\n\nAr chúrsaí faisin\nAr stíl imeartha rugbaí\nAr stíleanna gruaige",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2674,7 +2674,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-1",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n1. Cén áit a bhfuil Cruach Phádraig?\n\nSa tSeapáin\nSan Éigipt\nI gContae Mhaigh Eo",
+      "questionText": "1. Cén áit a bhfuil Cruach Phádraig?\n\nSa tSeapáin\nSan Éigipt\nI gContae Mhaigh Eo",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2725,7 +2725,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-2",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n2. Cén fáth a mbailíodh daoine ar Chruach Phádraig fadó, fadó?",
+      "questionText": "2. Cén fáth a mbailíodh daoine ar Chruach Phádraig fadó, fadó?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2779,7 +2779,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-3",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n3. Chaith Pádraig daichead lá ag barr an tsléibhe. Bhí sé ...\n\nAg guí\nAg glaoch amach\nAg sú na gréine",
+      "questionText": "3. Chaith Pádraig daichead lá ag barr an tsléibhe. Bhí sé ...\n\nAg guí\nAg glaoch amach\nAg sú na gréine",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2830,7 +2830,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-4",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n4. Cad atá ag barr an tsléibhe anois?\n\nBróga agus stocaí\nSéipéal beag\nIonad cuairteoirí",
+      "questionText": "4. Cad atá ag barr an tsléibhe anois?\n\nBróga agus stocaí\nSéipéal beag\nIonad cuairteoirí",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2881,7 +2881,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-5",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n5. Cad atá ag déanamh damáiste do Chruach Phádraig?\n\nLíon na gcuairteoirí\nNa cosáin\nSneachta",
+      "questionText": "5. Cad atá ag déanamh damáiste do Chruach Phádraig?\n\nLíon na gcuairteoirí\nNa cosáin\nSneachta",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2932,7 +2932,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-1",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n1. Cén aois atá ag Mamó?\n\n17\n70\n77",
+      "questionText": "1. Cén aois atá ag Mamó?\n\n17\n70\n77",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2983,7 +2983,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-2",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n2. Cad a deir Mamó linn go minic?",
+      "questionText": "2. Cad a deir Mamó linn go minic?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3038,7 +3038,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-3",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n3. Cad a thuigeann Mamó?\n\nFacebook\nAn ríomhaire\nAn croí istigh",
+      "questionText": "3. Cad a thuigeann Mamó?\n\nFacebook\nAn ríomhaire\nAn croí istigh",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3089,7 +3089,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-4",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n4. Cad a dhéanann Mamó go tuisceanach?\n\nCáineann sí\nLéann sí\nÉisteann sí",
+      "questionText": "4. Cad a dhéanann Mamó go tuisceanach?\n\nCáineann sí\nLéann sí\nÉisteann sí",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3140,7 +3140,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-5",
       "questionRef": "2014 FL Léamhthuiscint · Ceist 3(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n5. Cad a spreagann Mamó ionainn?\n\nFaic\nGrá\nRaic",
+      "questionText": "5. Cad a spreagann Mamó ionainn?\n\nFaic\nGrá\nRaic",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [

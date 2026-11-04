@@ -1671,7 +1671,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-1",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n1. Cathain a d’fhreastail Áine ar an agallamh?\n\n9 Meán Fómhair\n11 Meán Fómhair\n22 Meán Fómhair",
+      "questionText": "1. Cathain a d’fhreastail Áine ar an agallamh?\n\n9 Meán Fómhair\n11 Meán Fómhair\n22 Meán Fómhair",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1722,7 +1722,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-2",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n2. Cén spórt a imríonn Áine lena club áitiúil anois?\n\nCispheil\nCamógaíocht\nPeil na mban",
+      "questionText": "2. Cén spórt a imríonn Áine lena club áitiúil anois?\n\nCispheil\nCamógaíocht\nPeil na mban",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1773,7 +1773,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-3",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n3. Cá raibh Áine ag obair i mí Iúil?\n\nSa chlub reathaíochta\nAr champa spóirt\nSa linn snámha phoiblí",
+      "questionText": "3. Cá raibh Áine ag obair i mí Iúil?\n\nSa chlub reathaíochta\nAr champa spóirt\nSa linn snámha phoiblí",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1824,7 +1824,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-4",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n4. Cad a thaispeánfaidh Áine do dhaoine sa halla aclaíochta ar maidin?\n\nClár aclaíochta\nConas na fearais a úsáid i gceart\nSnámh",
+      "questionText": "4. Cad a thaispeánfaidh Áine do dhaoine sa halla aclaíochta ar maidin?\n\nClár aclaíochta\nConas na fearais a úsáid i gceart\nSnámh",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1875,7 +1875,7 @@
       "section": "2",
       "atlasQuestionId": "R-2A-5",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 6.\n\n5. Cad atá ar fáil ar shuíomh gréasáin an ionaid?\n\nRíomhphost\nAn tairiscint\nClár na n-imeachtaí",
+      "questionText": "5. Cad atá ar fáil ar shuíomh gréasáin an ionaid?\n\nRíomhphost\nAn tairiscint\nClár na n-imeachtaí",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1926,7 +1926,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-1",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n1. Cá bhfuil Contae Loch Garman suite?\n\nAr Mhór-Roinn na hEorpa\nIn oirdheisceart na hÉireann\nI Meiriceá",
+      "questionText": "1. Cá bhfuil Contae Loch Garman suite?\n\nAr Mhór-Roinn na hEorpa\nIn oirdheisceart na hÉireann\nI Meiriceá",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -1977,7 +1977,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-2",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n2. Conas a thagann cuairteoirí ón bhFrainc go calafort Ros Láir?\n\nAr na báid farantóireachta\nAr eitleán\nAr bhusanna",
+      "questionText": "2. Conas a thagann cuairteoirí ón bhFrainc go calafort Ros Láir?\n\nAr na báid farantóireachta\nAr eitleán\nAr bhusanna",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2028,7 +2028,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-3",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n3. Cad a bronnadh ar thrá Churrach Cló?\n\nBruscar\nBratach Ghorm\nCosán siúlóide",
+      "questionText": "3. Cad a bronnadh ar thrá Churrach Cló?\n\nBruscar\nBratach Ghorm\nCosán siúlóide",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2079,7 +2079,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-4",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n4. Cá gcaitheann na géanna fiáine an geimhreadh?\n\nI dTeach Solais Rinn Duáin\nSa Pháirc Náisiúnta Oidhreachta\nAr Shlabaí Loch Garman",
+      "questionText": "4. Cá gcaitheann na géanna fiáine an geimhreadh?\n\nI dTeach Solais Rinn Duáin\nSa Pháirc Náisiúnta Oidhreachta\nAr Shlabaí Loch Garman",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2130,7 +2130,7 @@
       "section": "2",
       "atlasQuestionId": "R-2B-5",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 7.\n\n5. Cad a bhíonn ar siúl i mbaile Loch Garman i mí Dheireadh Fómhair gach bliain?\n\nFéile cheoldrámaíochta\nFéile scríbhneoireachta\nFéile ealaíne",
+      "questionText": "5. Cad a bhíonn ar siúl i mbaile Loch Garman i mí Dheireadh Fómhair gach bliain?\n\nFéile cheoldrámaíochta\nFéile scríbhneoireachta\nFéile ealaíne",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2181,7 +2181,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-1",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n1. Cad a bhí taobh istigh den phacáiste?\n\nScríbhinn\nUaireadóir óir\nFéar",
+      "questionText": "1. Cad a bhí taobh istigh den phacáiste?\n\nScríbhinn\nUaireadóir óir\nFéar",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2232,7 +2232,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-2",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n2. Cad a shocraigh na cailíní a dhéanamh leis an bpacáiste?\n\nÉ a thabhairt do na Gardaí\nÉ a choimeád\nAn t-úinéir a aimsiú",
+      "questionText": "2. Cad a shocraigh na cailíní a dhéanamh leis an bpacáiste?\n\nÉ a thabhairt do na Gardaí\nÉ a choimeád\nAn t-úinéir a aimsiú",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2283,7 +2283,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-3",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n3. Conas a cuireadh an scéala amach an tráthnóna sin?\n\nAr an raidió áitiúil\nAr Leathanach Facebook Cháit\nAr Leathanach Facebook Úna",
+      "questionText": "3. Conas a cuireadh an scéala amach an tráthnóna sin?\n\nAr an raidió áitiúil\nAr Leathanach Facebook Cháit\nAr Leathanach Facebook Úna",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2334,7 +2334,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-4",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n4. Cathain a tháinig an glaoch isteach ón mbean?\n\nAn tráthnóna céanna\nAn lá dár gcionn\nTar éis cúpla lá",
+      "questionText": "4. Cathain a tháinig an glaoch isteach ón mbean?\n\nAn tráthnóna céanna\nAn lá dár gcionn\nTar éis cúpla lá",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2385,7 +2385,7 @@
       "section": "2",
       "atlasQuestionId": "R-2C-5",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 2(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 8.\n\n5. Cad a thug an bhean don bheirt chailíní?\n\nPacáiste\nCárta buíochais\nRíomhaire",
+      "questionText": "5. Cad a thug an bhean don bheirt chailíní?\n\nPacáiste\nCárta buíochais\nRíomhaire",
       "totalMarks": 5,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2436,7 +2436,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-1",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(a)(1)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n1. Cén spórt inar bhain Sam Bennett cáil amach?\n\nRámhaíocht\nGalf\nRothaíocht",
+      "questionText": "1. Cén spórt inar bhain Sam Bennett cáil amach?\n\nRámhaíocht\nGalf\nRothaíocht",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2487,7 +2487,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-2",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(a)(2)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n2. Cén áit ar tógadh Sam Bennett?\n\nSa Bheilg\nI gCarraig na Siúire\nIn Marseille",
+      "questionText": "2. Cén áit ar tógadh Sam Bennett?\n\nSa Bheilg\nI gCarraig na Siúire\nIn Marseille",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2538,7 +2538,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-3",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(a)(3)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n3. Cén comórtas rothaíochta a bhuaigh Sam Bennett dhá bhliain as a chéile?\n\nAn Tour de France\nCraobh na hÉireann faoi 23\nRás Tailteann",
+      "questionText": "3. Cén comórtas rothaíochta a bhuaigh Sam Bennett dhá bhliain as a chéile?\n\nAn Tour de France\nCraobh na hÉireann faoi 23\nRás Tailteann",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2589,7 +2589,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-4",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(a)(4)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n4. Cén mí-ádh a bhí ar Sam go luath sa Tour de France sa bhliain 2016?",
+      "questionText": "4. Cén mí-ádh a bhí ar Sam go luath sa Tour de France sa bhliain 2016?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2645,7 +2645,7 @@
       "section": "2",
       "atlasQuestionId": "R-3A-5",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(a)(5)",
-      "questionText": "Léigh an téacs ar leathanach 9.\n\n5. Cén geansaí a bhuaigh Sam i bPáras in 2020?\n\nGeansaí Buí\nGeansaí Glas\nGeansaí Dearg",
+      "questionText": "5. Cén geansaí a bhuaigh Sam i bPáras in 2020?\n\nGeansaí Buí\nGeansaí Glas\nGeansaí Dearg",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2696,7 +2696,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-1",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(b)(1)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n1. Cén áit i mBaile Átha Cliath a bhfuil EPIC, Músaem Eisimirice na hÉireann?\n\nAr Fhaiche an Choláiste\nAr Shráid an Dáma\nI gCeantar na nDugaí",
+      "questionText": "1. Cén áit i mBaile Átha Cliath a bhfuil EPIC, Músaem Eisimirice na hÉireann?\n\nAr Fhaiche an Choláiste\nAr Shráid an Dáma\nI gCeantar na nDugaí",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2747,7 +2747,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-2",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(b)(2)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n2. Cé mhéad gailearaí atá sa mhúsaem?\n\n20\n300\n500",
+      "questionText": "2. Cé mhéad gailearaí atá sa mhúsaem?\n\n20\n300\n500",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2798,7 +2798,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-3",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(b)(3)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n3. Cén fáth ar fhág na céadta míle duine Éire idir na blianta 1845 agus 1849?\n\nMar mhisinéirí\nDe bharr an Ghorta Mhóir\nChun dul ag troid i gcogaí",
+      "questionText": "3. Cén fáth ar fhág na céadta míle duine Éire idir na blianta 1845 agus 1849?\n\nMar mhisinéirí\nDe bharr an Ghorta Mhóir\nChun dul ag troid i gcogaí",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2849,7 +2849,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-4",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(b)(4)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n4. Cad a úsáidtear chun an cuairteoir a chur i ról lárnach i ngach gailearaí?\n\nAisteoirí\nNa meáin idirghníomhacha\nLitreacha",
+      "questionText": "4. Cad a úsáidtear chun an cuairteoir a chur i ról lárnach i ngach gailearaí?\n\nAisteoirí\nNa meáin idirghníomhacha\nLitreacha",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2900,7 +2900,7 @@
       "section": "2",
       "atlasQuestionId": "R-3B-5",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(b)(5)",
-      "questionText": "Léigh an téacs ar leathanach 10.\n\n5. Cad is gá don chuairteoir a dhéanamh i ngach gailearaí?",
+      "questionText": "5. Cad is gá don chuairteoir a dhéanamh i ngach gailearaí?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -2953,7 +2953,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-1",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(c)(1)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n1. Cár thuirling an file sa chéad véarsa?\n\nAr an saol mar atá\nAr an saol mar a bhí\nAr an urlár",
+      "questionText": "1. Cár thuirling an file sa chéad véarsa?\n\nAr an saol mar atá\nAr an saol mar a bhí\nAr an urlár",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3004,7 +3004,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-2",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(c)(2)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n2. Cén áit a raibh an t-áiléar?\n\nFaoi dhíon an tí\nAr an urlár\nI mbosca",
+      "questionText": "2. Cén áit a raibh an t-áiléar?\n\nFaoi dhíon an tí\nAr an urlár\nI mbosca",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3055,7 +3055,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-3",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(c)(3)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n3. Cad a bhí sáite i mbosca san áiléar le fiche bliain?\n\nCóipleabhair\nLeabhar\nGrianghraif",
+      "questionText": "3. Cad a bhí sáite i mbosca san áiléar le fiche bliain?\n\nCóipleabhair\nLeabhar\nGrianghraif",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3106,7 +3106,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-4",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(c)(4)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n4. Cad a bhí san áiléar a briseadh fadó?\n\nBréagán\nDréimire\nPeann",
+      "questionText": "4. Cad a bhí san áiléar a briseadh fadó?\n\nBréagán\nDréimire\nPeann",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [
@@ -3157,7 +3157,7 @@
       "section": "2",
       "atlasQuestionId": "R-3C-5",
       "questionRef": "2021 FL Léamhthuiscint · Ceist 3(c)(5)",
-      "questionText": "Léigh an téacs ar leathanach 11.\n\n5. Cad a thit ar an bhfile agus é ag teacht anuas ón áiléar?",
+      "questionText": "5. Cad a thit ar an bhfile agus é ag teacht anuas ón áiléar?",
       "totalMarks": 6,
       "topicId": "irish-9-2",
       "examTopicKeys": [

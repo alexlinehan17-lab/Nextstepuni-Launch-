@@ -41,6 +41,8 @@ interface AuthoredIrishCard {
   /** The lead-in the paper prints before the question proper, e.g. 2B's "Níl cead aon ábhar …" restriction. */
   stem?: string;
   questionText: string;
+  /** What a one-answer practice card practises, in English ("One of the two answers (answer 1, 1 mark)"). */
+  practiceFocus?: string;
   totalMarks: number;
   topicId: string;
   additionalTopicIds?: string[];
@@ -230,6 +232,7 @@ const makeCard = (card: AuthoredIrishCard): SecRubricCard => ({
   questionRef: card.questionRef,
   ...(card.stem ? { stem: card.stem } : {}),
   questionText: card.questionText,
+  ...(card.practiceFocus ? { practiceFocus: card.practiceFocus } : {}),
   sourceMaterial: card.sourceMaterial,
   audioMaterial: card.audioMaterial,
   totalMarks: card.totalMarks,

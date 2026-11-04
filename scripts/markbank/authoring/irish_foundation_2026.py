@@ -281,7 +281,7 @@ def build():
                      language()],
                  ['Scríobh litir chuig do chara faoin turas go Londain.', 'Dhá phointe eolais faoi gach ceann de na ceithre phictiúr; leagan amach cuí.'],
                  'Whole 45-mark letter: layout 6 (2+1+1+2), four seven-mark picture awards (4 + 3 for two points), shared language 11. Two open information points per picture are not a closed printed menu. No word-count penalty is printed for the letter.',
-                 sourceDiscrepancyNotice='Nóta foinse: tá “Ceist 4(b) Foirm Iarratais” sa scéim mhodhnaithe (PDF 15), ach is litir í Ceist 4(b) in 2026.',
+                 sourceDiscrepancyNotice='Source note: the modified scheme (PDF 15) says “Ceist 4(b) Foirm Iarratais”, but Question 4(b) in 2026 is a letter.',
                  additionalTopicIds=['irish-2-8'])
     p12, p13, p14 = guide(12), guide(13), guide(14)
     # The printed word-count table (PDF 12); our note on when it applies moves to the card's note (irish_lifted).
@@ -298,7 +298,7 @@ def build():
                       'Scríobh an cuntas sin (timpeall 90 focal) sa spás atá faoin bpictiúr.\n\nCóisir Lae Breithe')
             guidance = [between('^' + p12, '^', 'Cruinneas Gaeilge o Bronn'),
                         'Source note: the scheme task line names “Féile cheoil”, but the paper and the scheme reference examples concern the Cóisir Lae Breithe; assess the printed 2026 task.']
-            extra = dict(sourceDiscrepancyNotice='Nóta foinse: tá “Féile cheoil” i líne an taisc sa scéim, ach baineann an páipéar agus samplaí na scéime leis an gCóisir Lae Breithe.')
+            extra = dict(sourceDiscrepancyNotice='Source note: the scheme’s task line says “Féile cheoil”, but the paper and the scheme’s samples are about the birthday party (Cóisir Lae Breithe).')
         else:
             prompt = ('Féach ar na pictiúir anseo thíos.\n\nTharla an eachtra seo agus tú sa pháirc le do chara.\nTá tú chun scríobh faoin eachtra seo in Iris na Scoile (timpeall 90 focal).\n\n'
                       'Scríobh faoin eachtra (timpeall 90 focal) sa spás atá faoi na pictiúir.\n\n'

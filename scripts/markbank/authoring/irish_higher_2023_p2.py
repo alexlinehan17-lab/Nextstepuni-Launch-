@@ -327,7 +327,7 @@ def build():
     m = material()
     cards = []
 
-    def add(key, slug, ref, prompt, topic, pages, scheme_pages, criteria, note, extra_topics=None, title=None):
+    def add(key, slug, ref, prompt, topic, pages, scheme_pages, criteria, note, extra_topics=None, title=None, focus=None):
         cards.append(dict(
             id=f'irish-2023-hl-p2-{slug}', year=2023, level='higher', paper=2, section='2',
             atlasQuestionId=key, questionRef=f'2023 HL Paper 2 {ref}', questionText=prompt,
@@ -337,7 +337,8 @@ def build():
             schemePage=scheme_pages[0], schemePages=scheme_pages, reviewedAt=REVIEWED_AT, reviewedPaperPages=pages,
             taskRequirements=READING_REQUIREMENTS, criteria=criteria, markingGuideNote=note,
             sourceMaterial=dict(kind='source-text', label=ref.split(' · ')[0], title=title, pages=pages,
-                                attribution='© State Examinations Commission.', presentationNote=SOURCE_NOTE)))
+                                attribution='© State Examinations Commission.', presentationNote=SOURCE_NOTE),
+            **({'practiceFocus': focus} if focus else {})))
 
     for letter, passage in m['passages'].items():
         topic = passage['topic']
@@ -351,15 +352,17 @@ def build():
             if mode == 'slots':
                 for slot in (1, 2):
                     add(f'R-{letter}-{q}-{part}-{slot}', f'reading-{letter.lower()}-q{q}-{part}-{slot}', f'Léamhthuiscint {letter} · Ceist {label} · Freagra {slot}',
-                        f'{text} Don chárta seo: tabhair freagra amháin don chuid seo (freagra {slot}, 1 mharc).', topic, passage['pages'], spages,
-                        [criterion(f'{part}-{slot}', f'Freagra {slot}', 1, [f'Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. {chunk}', m['general']])],
-                        'The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. ' + PART_NOTE, None, passage['title'])
+                        text, topic, passage['pages'], spages,
+                        [criterion(f'{part}-{slot}', f'Freagra {slot}', 1, [chunk, m['general']])],
+                        'The scheme prices the two answers 1 mharc + 1 mharc independently; this card practises one of them. ' + PART_NOTE, None, passage['title'],
+                        f'One of the two answers (answer {slot}, 1 mark)')
             if mode == 'traits':
                 for slot in (1, 2):
                     add(f'R-{letter}-{q}-{part}-{slot}', f'reading-{letter.lower()}-q{q}-{part}-{slot}', f'Léamhthuiscint {letter} · Ceist {label} · Tréith {slot}',
-                        f'{text} Don chárta seo: déan plé ar thréith amháin agus tabhair sampla amháin ón sliocht, i d’fhocail féin (tréith {slot}, 6 mharc).',
+                        text,
                         topic, passage['pages'], spages, [criterion(f'trait-{slot}', f'Tréith {slot}', 6, [chunk, m['general']])],
-                        'The scheme prices the two traits 6 + 6 independently (trait 2 + support 4); this card practises one of them. ' + PART_NOTE, None, passage['title'])
+                        'The scheme prices the two traits 6 + 6 independently (trait 2 + support 4); this card practises one of them. ' + PART_NOTE, None, passage['title'],
+                        f'One of the two traits, discussed with one example from the extract in your own words (trait {slot}, 6 marks)')
     assert len(cards) == 46 and len({c['id'] for c in cards}) == 46
     for card in cards:
         for c in card['criteria']:
