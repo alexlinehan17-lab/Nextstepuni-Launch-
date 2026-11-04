@@ -97,11 +97,15 @@ export const corpusSubjectFor = (subjectId, questionRef) =>
     ? 'history-early-modern'
     : subjectId);
 
-/** The sitting of one subject, year and level in its authored paper language. */
-export const paperEntry = (subjectId, year, level) =>
+/** The sitting of one subject, year and level in its authored paper language.
+ *  Given a paper file id, the entry that holds that paper (a deferred sitting
+ *  is a second entry for the same year), as on codex/home-economics-
+ *  continuation-20261101. */
+export const paperEntry = (subjectId, year, level, paperFileid) =>
   (paperIndex[CORPUS_KEY[subjectId] ?? subjectId] ?? [])
     .find(e => e.year === year && e.level === level
-      && e.lang === (subjectId === 'irish' ? 'iv' : 'ev'));
+      && e.lang === (subjectId === 'irish' ? 'iv' : 'ev')
+      && (!paperFileid || e.papers.some(p => p.doc?.f.replace(/\.pdf$/, '') === paperFileid.replace(/\.pdf$/, ''))));
 
 /** The SEC's DEFERRED sitting of one subject, year and level (from 2022), in
  *  English: its own index entry, listed after June's and marked

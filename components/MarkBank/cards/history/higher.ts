@@ -4747,6 +4747,316 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
     ]
    }
   },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "In question 4, marking by paragraph begins.",
+    "The examiner will divide the answer into paragraphs or paragraph equivalents."
+   ],
+   "oe": {
+    "max": 16,
+    "lead": "In awarding OE, the examiner will consider how well the candidate deals with the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "printed": "Excellent: 14-16 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "printed": "Very good: 11-13 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       6,
+       7,
+       8,
+       9,
+       10
+      ],
+      "printed": "Good: 6-10 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       4,
+       5
+      ],
+      "printed": "Fair: 4-5 marks"
+     },
+     {
+      "label": "Weak",
+      "marks": [
+       2,
+       3
+      ],
+      "printed": "Weak: 2-3 marks"
+     },
+     {
+      "label": "Very weak",
+      "marks": [
+       0,
+       1
+      ],
+      "printed": "Very weak: 0-1 mark"
+     }
+    ],
+    "directions": [
+     "In awarding OE marks, the examiner should not expect answers of more than 40% in quantity compared to the answers to the longer topic questions in Sections 2 and 3."
+    ]
+   },
+   "markingGuideNote": "Place each paragraph you wrote, in the order you wrote it, on the one band that fits it. The CM stops at its maximum, so a paragraph past it counts 0m. Then place your whole answer on one OE band.",
+   "schemeFileid": "LC004ALP000EV-deferred",
+   "cm": {
+    "mode": "paragraph",
+    "max": 24,
+    "definition": "These marks are awarded for historical content which is accurate and relevant to the question asked.",
+    "paragraphLead": "A paragraph or paragraph equivalent may be one of the following:",
+    "paragraphKinds": [
+     "(i) A relevant introduction giving the background situation and/or defining the terms and explaining the approach;",
+     "(ii) An episode, phase or stage in a sequence of events;",
+     "(iii) An aspect of a topic/issue, with supporting factual references;",
+     "(iv) A point in an argument or discussion, with supporting factual references;",
+     "(v) An explanation of a concept or term, with supporting factual references;",
+     "(vi) A number of significant, relevant statements of fact, explanation or comment which, although not connected or related, can be taken together and assessed as a paragraph equivalent;",
+     "(vii) A good concluding paragraph or summation, which is not mere repetition."
+    ],
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       11,
+       12
+      ],
+      "printed": "Excellent: 11-12 marks",
+      "descriptor": "Outstanding piece of analysis, exposition or commentary. Clearly expressed, accurate and substantial information."
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "printed": "Very good: 8-10 marks",
+      "descriptor": "Very good material, accurately and clearly expressed."
+     },
+     {
+      "label": "Good",
+      "marks": [
+       6,
+       7
+      ],
+      "printed": "Good: 6-7 marks",
+      "descriptor": "Worthwhile information, reasonably well expressed."
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4,
+       5
+      ],
+      "printed": "Fair: 3-5 marks",
+      "descriptor": "Limited information/barely expressed."
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks",
+      "descriptor": "Trivial/irrelevant/grave errors."
+     }
+    ],
+    "directions": [
+     "(Summation which is mere repetition = max 4 marks)"
+    ]
+   }
+  },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "To mark the answer, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at this level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "oe": {
+    "max": 40,
+    "definition": "Overall Evaluation (OE) for the quality of the answer as a whole in the context of the set question.",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "printed": "Excellent: 34-40 marks",
+      "descriptor": "Excellent in its treatment of the set question, particularly if it shows detailed learning, wide reading, analysis or extensive coverage."
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "printed": "Very good: 28-33 marks",
+      "descriptor": "Very good – but not excellent - in its treatment of the set question, ie: accurate and substantial."
+     },
+     {
+      "label": "Good",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "printed": "Good: 22-27 marks",
+      "descriptor": "Good standard treatment of the set question, without being exceptional in the information or the commentary supplied."
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "printed": "Fair: 16-21 marks",
+      "descriptor": "Fair attempt at the set question, but has identifiable defects, e.g.: incomplete coverage, irrelevant data, factual inaccuracies."
+     },
+     {
+      "label": "Weak",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "printed": "Weak: 10-15 marks",
+      "descriptor": "Poor, in that it fails to answer the question as set, but has some merit."
+     },
+     {
+      "label": "Very weak",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "printed": "Very weak: 0-9 marks",
+      "descriptor": "Very poor answer which, at best, offers only scraps of information."
+     }
+    ],
+    "directionsLead": "In awarding the OE, the examiner will evaluate the quality of the answer, taking into account the following, as appropriate:",
+    "directions": [
+     "To what extent has the candidate shown the ability to analyse the issues involved in the question asked (i.e.: more than mere narrative)?",
+     "To what extent has the candidate marshalled the relevant evidence to support his/her analysis?",
+     "To what extent has the candidate shown the ability to argue a case and to reach conclusions (i.e.: to answer the question as asked)?"
+    ]
+   },
+   "markingGuideNote": "Place each paragraph you wrote, in the order you wrote it, on the one band that fits it. The CM stops at its maximum, so a paragraph past it counts 0m. Then place your whole answer on one OE band.",
+   "schemeFileid": "LC004ALP000EV-deferred",
+   "cm": {
+    "mode": "paragraph",
+    "max": 60,
+    "definition": "Cumulative Mark (CM) for historical content which is accurate and relevant to the question as asked.",
+    "paragraphLead": "The examiner will divide the answer into paragraphs or paragraph equivalents:",
+    "paragraphKinds": [
+     "(i) A relevant introduction giving the background situation and/or defining the terms and explaining the approach;",
+     "(ii) An episode, phase or stage in a sequence of events;",
+     "(iii) An aspect of a topic/issue, with supporting factual references;",
+     "(iv) A point in an argument or discussion, with supporting factual references;",
+     "(v) An explanation of a concept or term, with supporting factual references;",
+     "(vi) A number of significant, relevant statements of fact, explanation or comment which, although not connected or related, can be taken together and assessed as a paragraph equivalent;",
+     "(vii) A good concluding paragraph or summation, which is not mere repetition."
+    ],
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       11,
+       12
+      ],
+      "printed": "Excellent: 11-12 marks",
+      "descriptor": "Outstanding piece of analysis, exposition or commentary. Clearly expressed, accurate and substantial information."
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "printed": "Very good: 8-10 marks",
+      "descriptor": "Very good material, accurately and clearly expressed."
+     },
+     {
+      "label": "Good",
+      "marks": [
+       6,
+       7
+      ],
+      "printed": "Good: 6-7 marks",
+      "descriptor": "Worthwhile information, reasonably well expressed."
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4,
+       5
+      ],
+      "printed": "Fair: 3-5 marks",
+      "descriptor": "Limited information/barely stated."
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks",
+      "descriptor": "Trivial/irrelevant/grave errors."
+     }
+    ],
+    "directions": [
+     "(Summation which is mere repetition = max. 4 marks)"
+    ]
+   }
+  },
 ];
 
 export const CARDS: SecCard[] = [
@@ -29531,5 +29841,756 @@ export const CARDS: SecCard[] = [
     questionText: "From your study of culture, 1775‐1815, what was the importance of two of the following: cultural nationalism; Mary Wollstonecraft; Ludwig van Beethoven?",
     totalMarks: 100,
     rubric: { ...ESSAY_MARKING[29], cm: { ...ESSAY_MARKING[29].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,30] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s1-q1a", topicId: "hist-lm-irl-5", conceptId: "brian-faulkner-various-politicians-denounced-sunningdale",
+    section: "1", questionRef: "2023 HL Later Modern Section 1 Q1(a) — Deferred sitting",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "According to Brian Faulkner in document A, why had various politicians denounced the Sunningdale Agreement?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "One reason from doc A (e.g. to exploit Unionist fears)", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Higher Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s1-q1b", topicId: "hist-lm-irl-5", conceptId: "argument-favour-sunningdale-agreement-given-brian",
+    section: "1", questionRef: "2023 HL Later Modern Section 1 Q1(b) — Deferred sitting",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "What was one argument in favour of the Sunningdale Agreement given by Brian Faulkner in document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "One argument by Faulkner from doc A", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Higher Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s1-q1c", topicId: "hist-lm-irl-5", conceptId: "donlon-made-brian-faulkner-weak-leader",
+    section: "1", questionRef: "2023 HL Later Modern Section 1 Q1(c) — Deferred sitting",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "According to Seán Donlon in document B, what made Brian Faulkner a weak leader at the time of the Sunningdale Agreement?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He did not have the support of the Unionist community", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Higher Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s1-q1d", topicId: "hist-lm-irl-5", conceptId: "reason-donlon-felt-nervous-council-ireland",
+    section: "1", questionRef: "2023 HL Later Modern Section 1 Q1(d) — Deferred sitting",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "According to document B, what was one reason why Seán Donlon felt nervous about the Council of Ireland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He was afraid it looked like a document for a united Ireland", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Higher Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s1-q2a", topicId: "hist-lm-irl-5", conceptId: "agree-writers-wanted-sunningdale-agreement-succeed",
+    section: "1", questionRef: "2023 HL Later Modern Section 1 Q2(a) — Deferred sitting",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "Would you agree that the writers of both documents wanted the Sunningdale Agreement to succeed? Refer to both documents in your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Yes, both writers wanted the Sunningdale Agreement to succeed.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Faulkner writes a newspaper article to persuade readers about the merits of the SA.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "He aims to reassure Unionists that the SA will not interfere with UK sovereignty or lead to a united Ireland.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "He sees the SA as an opportunity for progress, and an opportunity to defeat terrorism.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "Donlon regrets that Faulkner was a weak leader who could not carry the Unionist community with him.", marks: null, openList: true },
+    { id: "r-6", kind: "point", verbatim: "He has sympathy for Faulkner who was getting “almost nothing” from the SA.", marks: null, openList: true },
+    { id: "r-7", kind: "point", verbatim: "Donlon was worried that the Council of Ireland aspect of the deal would undermine the SA.", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Higher Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s1-q2b", topicId: "hist-lm-irl-5", conceptId: "extent-agree-council-ireland-cause-controversy",
+    section: "1", questionRef: "2023 HL Later Modern Section 1 Q2(b) — Deferred sitting",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "To what extent do both documents agree that the Council of Ireland was a cause of controversy? Give reasons for your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Both documents refer to controversy surrounding the Council or Ireland.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Faulkner has to explain what the Council of Ireland was “not”. He tries to refute the arguments being put forward about the Council of Ireland such as that it was a “halfway house to a United Ireland”.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "He refers to “myths, half-truths and untruths” which are in circulation and causing controversy/fear within the Unionist community.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Donlon says the Council of Ireland was a “frightening” document, which would be bound to cause controversy. He is afraid of a leak as he knows it would cause controversy.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "He was afraid it would look as if Dublin was “taking over” the administration of NI, and he was aware that Unionists would object to it.", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Higher Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s1-q3a", topicId: "hist-lm-irl-5", conceptId: "consider-objective-subjective-source-reasons",
+    section: "1", questionRef: "2023 HL Later Modern Section 1 Q3(a) — Deferred sitting",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "Do you consider document A to be an objective or subjective source? Give reasons for your answer, referring to the document.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Candidates can argue objective and/or subjective depending on the points made. Reward answers which show an understanding of the concept of objectivity/subjectivity.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "As a Unionist leader he is subjective as he sees developments from a Unionist perspective and is writing to address the fears of the Unionist community.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "All the arguments he makes are designed to reassure Unionists that their position within the UK is safe.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "His reference to “all Ulstermen” is an attempt to be impartial/objective or is really addressed to the Unionist community and is therefore subjective.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "He tries to be objective in his reference to “the conflicting political aspirations in Ireland”.", marks: null, openList: true },
+    { id: "r-6", kind: "point", verbatim: "He also attempts to be objective when he says people have a “democratic right” to express their conflicting political aspirations.", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Higher Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s1-q3b", topicId: "hist-lm-irl-5", conceptId: "consider-donlon-interview-valuable-historical-source",
+    section: "1", questionRef: "2023 HL Later Modern Section 1 Q3(b) — Deferred sitting",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "Would you consider Seán Donlon’s interview to be a valuable historical source? Use evidence from document B to support your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Candidates may argue for and/or against the view that doc B is a valuable historical source. Evaluate the answer on the quality of the points made to support the given opinion.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Seán Donlon was a participant in the events he describes and can provide a valuable eye-witness account.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "He is a primary source, but this interview was given in 2014, over 40 years after the events he describes, which may affect his recollection of events.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "He gives a good analysis of the difficulties facing Faulkner and shows empathy for his predicament.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "He is biased because he was working on behalf of the Irish government, or he attempts to be fair and is “sensitive to Unionist fears”.", marks: null, openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2023 Higher Level deferred examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s1-q4", topicId: "hist-lm-irl-5", conceptId: "did-opposition-sunningdale-agreement-lead-downfall",
+    section: "1", questionRef: "2023 HL Later Modern Section 1 Q4 — Deferred sitting",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "How did opposition to the Sunningdale Agreement lead to the downfall of the power-sharing executive?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[30], schemePages: [9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t1-q1", topicId: "hist-lm-irl-1", conceptId: "did-learn-daniel-connell-leadership-his",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 1 Q1 — Deferred sitting",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "What did you learn about Daniel O’Connell’s leadership from his handling of the campaigns for Emancipation and Repeal?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (Emancipation + Repeal) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t1-q2", topicId: "hist-lm-irl-1", conceptId: "importance-tithe-war-private-responses-famine",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 1 Q2 — Deferred sitting",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "What was the importance of the Tithe War and/or private responses to Famine, 1845-1849?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t1-q3", topicId: "hist-lm-irl-1", conceptId: "impact-mother-mary-aikenhead-cardinal-paul",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 1 Q3 — Deferred sitting",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "What was the impact of Mother Mary Aikenhead and/or Cardinal Paul Cullen on Irish life?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t1-q4", topicId: "hist-lm-irl-1", conceptId: "during-period-1815-1870-developments-took",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 1 Q4 — Deferred sitting",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "During the period 1815-1870, what developments took place in the creative arts and/or science and technology?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t2-q1", topicId: "hist-lm-irl-2", conceptId: "during-period-1870-1914-successful-campaign",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 2 Q1 — Deferred sitting",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "During the period 1870-1914, how successful was the campaign for land reform and/or the Home Rule movement?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t2-q2", topicId: "hist-lm-irl-2", conceptId: "during-period-1870-1914-contribution-irish",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 2 Q2 — Deferred sitting",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "During the period 1870-1914, what was the contribution to Irish affairs of one or more of the following: the Suffrage movement; Isabella Tod; Hanna Sheehy-Skeffington?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t2-q3", topicId: "hist-lm-irl-2", conceptId: "did-james-connolly-james-larkin-seek",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 2 Q3 — Deferred sitting",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "How did James Connolly and/or James Larkin seek improvements for Irish workers?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t2-q4", topicId: "hist-lm-irl-2", conceptId: "during-period-1870-1914-did-gaa",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 2 Q4 — Deferred sitting",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "During the period 1870-1914, how did the GAA and/or the Anglo-Irish Literary Revival contribute to Irish life?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t3-q1", topicId: "hist-lm-irl-3", conceptId: "contribution-pursuit-sovereignty-ireland-arthur-griffith",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 3 Q1 — Deferred sitting",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "What was the contribution of two of the following to the pursuit of sovereignty in Ireland: Arthur Griffith; Michael Collins; Countess Markievicz?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t3-q2", topicId: "hist-lm-irl-3", conceptId: "during-period-1920-1945-effectively-did",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 3 Q2 — Deferred sitting",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "During the period 1920-1945, how effectively did the government of Northern Ireland manage the economy and/or threats to the security of the state?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t3-q3", topicId: "hist-lm-irl-3", conceptId: "did-anglo-irish-relations-develop-during",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 3 Q3 — Deferred sitting",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "How did Anglo-Irish relations develop during the period 1923-1949?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t3-q4", topicId: "hist-lm-irl-3", conceptId: "during-period-1920-1945-cultural-identity",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 3 Q4 — Deferred sitting",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "During the period 1920-1945, how was cultural identity promoted in Ireland, North and South, in one or more of the following areas: language; religion; education?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (North + South) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t4-q1", topicId: "hist-lm-irl-4", conceptId: "did-amon-valera-america-june-1919",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 4 Q1 — Deferred sitting",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Why did Éamon de Valera go to America, June, 1919 – December, 1920, and to what extent was his visit successful?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (why + to what extent) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t4-q2", topicId: "hist-lm-irl-4", conceptId: "during-period-1920-1966-attracted-irish",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 4 Q2 — Deferred sitting",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "During the period 1920-1966, what attracted Irish emigrants to Britain and what challenges did they find when they got there?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (attracted + challenges) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t4-q3", topicId: "hist-lm-irl-4", conceptId: "did-more-seek-foster-sense-identity",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 4 Q3 — Deferred sitting",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "How did one or more of the following seek to foster a sense of identity among emigrants: the Catholic Church; the GAA; the Protestant Churches; the Orange Order?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t4-q4", topicId: "hist-lm-irl-4", conceptId: "during-period-1945-1966-successful-irish",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 4 Q4 — Deferred sitting",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "During the period 1945-1966, how successful were Irish missionaries in Africa and Asia?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (Africa + Asia) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t6-q1", topicId: "hist-lm-irl-6", conceptId: "problems-faced-lemass-well-did-handle",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 6 Q1 — Deferred sitting",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "What problems faced Seán Lemass and how well did he handle them?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (problem + how well) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t6-q2", topicId: "hist-lm-irl-6", conceptId: "republic-ireland-affected-membership-united-nations",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 6 Q2 — Deferred sitting",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "How was the Republic of Ireland affected by two of the following: membership of the United Nations (UN); Vatican II; the impact of EEC membership on Irish fisheries?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t6-q3", topicId: "hist-lm-irl-6", conceptId: "changes-took-place-lives-women-during",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 6 Q3 — Deferred sitting",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "What changes took place in the lives of women during the period 1949-1989?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s2t6-q4", topicId: "hist-lm-irl-6", conceptId: "contribution-charles-haughey-irish-affairs",
+    section: "2", questionRef: "2023 HL Later Modern Section 2 Topic 6 Q4 — Deferred sitting",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "What was the contribution of Charles Haughey to Irish affairs?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t1-q1", topicId: "hist-lm-eur-1", conceptId: "effective-leader-clemens-metternich-during-period",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 1 Q1 — Deferred sitting",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "How effective a leader was Clemens Metternich during the period 1815-1848?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t1-q2", topicId: "hist-lm-eur-1", conceptId: "did-balkan-nationalism-develop-during-period",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 1 Q2 — Deferred sitting",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "How did Balkan nationalism develop during the period 1815-1871?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t1-q3", topicId: "hist-lm-eur-1", conceptId: "changes-took-place-agriculture-industry-europe",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 1 Q3 — Deferred sitting",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "What changes took place in agriculture and industry in Europe, 1815-1871?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (agriculture + industry) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t1-q4", topicId: "hist-lm-eur-1", conceptId: "who-made-greater-contribution-french-affairs",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 1 Q4 — Deferred sitting",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Who made the greater contribution to French affairs, Baron Haussmann or Victor Hugo? Argue your case referring to both.",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (Haussmann + Hugo) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t2-q1", topicId: "hist-lm-eur-2", conceptId: "successful-bismarck-his-handling-church-relations",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 2 Q1 — Deferred sitting",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "How successful was Bismarck in his handling of church-state relations and/or foreign policy?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t2-q2", topicId: "hist-lm-eur-2", conceptId: "during-period-1871-1914-developments-took",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 2 Q2 — Deferred sitting",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "During the period 1871-1914, what developments took place in German industry, including the invention and early history of the motor car?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t2-q3", topicId: "hist-lm-eur-2", conceptId: "impact-war-revolution-russia-1905-1920",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 2 Q3 — Deferred sitting",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "What was the impact of war and revolution on Russia, 1905-1920?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (war + revolution) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t2-q4", topicId: "hist-lm-eur-2", conceptId: "study-period-1871-1920-did-learn",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 2 Q4 — Deferred sitting",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "From your study of the period 1871-1920, what did you learn about two of the following: Marie Curie; women in the workforce during World War I; Rosa Luxemburg?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t3-q1", topicId: "hist-lm-eur-3", conceptId: "extent-did-regimes-lenin-stalin-bring",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 3 Q1 — Deferred sitting",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "To what extent did the regimes of Lenin and Stalin bring about economic and social change?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (Lenin + Stalin) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t3-q2", topicId: "hist-lm-eur-3", conceptId: "during-period-1920-1945-problems-faced",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 3 Q2 — Deferred sitting",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "During the period 1920-1945, what problems faced France and how effectively were they tackled?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (problem + how effectively) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t3-q3", topicId: "hist-lm-eur-3", conceptId: "contribution-nazi-propaganda-nuremburg-rallies-joseph",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 3 Q3 — Deferred sitting",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "What was the contribution of two of the following to Nazi propaganda: the Nuremburg Rallies; Joseph Goebbels; Leni Riefenstahl?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t3-q4", topicId: "hist-lm-eur-3", conceptId: "key-developments-church-relations-under-mussolini",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 3 Q4 — Deferred sitting",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "What were key developments in church-state relations under Mussolini and Hitler?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (Mussolini + Hitler) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t4-q1", topicId: "hist-lm-eur-4", conceptId: "effective-nikita-khrushchev-leadership-domestic-foreign",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 4 Q1 — Deferred sitting",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "How effective was Nikita Khrushchev’s leadership in domestic and foreign affairs?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (domestic + foreign) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t4-q2", topicId: "hist-lm-eur-4", conceptId: "did-1973-oil-crisis-affect-economies",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 4 Q2 — Deferred sitting",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "How did the 1973 Oil Crisis affect economies in Eastern and/or Western Europe?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t4-q3", topicId: "hist-lm-eur-4", conceptId: "contribution-european-affairs-jean-monnet-jacques",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 4 Q3 — Deferred sitting",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "What was the contribution to European affairs of two of the following: Jean Monnet; Jacques Delors; Pope John Paul II?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t4-q4", topicId: "hist-lm-eur-4", conceptId: "during-period-1945-1992-impact-developments",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 4 Q4 — Deferred sitting",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "During the period 1945-1992, what was the impact of developments in youth and popular culture and/or the mass media?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t5-q1", topicId: "hist-lm-eur-5", conceptId: "difficulties-associated-british-withdrawal-india-palestine",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 5 Q1 — Deferred sitting",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "What were the difficulties associated with British withdrawal from India and/or Palestine?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t5-q2", topicId: "hist-lm-eur-5", conceptId: "study-social-economic-history-did-learn",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 5 Q2 — Deferred sitting",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "From your study of social and economic history, what did you learn about Julius Nyerere and the policy of ujamaa and/or famine in post-colonial Africa?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t5-q3", topicId: "hist-lm-eur-5", conceptId: "during-period-1945-1990-cultural-diversity",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 5 Q3 — Deferred sitting",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "During the period 1945-1990, how was cultural diversity managed in multi-racial Britain and France?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (Britain + France) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t5-q4", topicId: "hist-lm-eur-5", conceptId: "contribution-chinua-achebe-nadine-gordimer-post",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 5 Q4 — Deferred sitting",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "What was the contribution of Chinua Achebe and/or Nadine Gordimer to post-colonial literature?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t6-q1", topicId: "hist-lm-eur-6", conceptId: "did-president-harry-truman-manage-challenges",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 6 Q1 — Deferred sitting",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "How did President Harry Truman manage the challenges that he faced at home and abroad?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (at home + abroad) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t6-q2", topicId: "hist-lm-eur-6", conceptId: "effectively-did-tackle-problems-posed-cuba",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 6 Q2 — Deferred sitting",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "How effectively did the US tackle problems posed by Cuba and/or Vietnam?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t6-q3", topicId: "hist-lm-eur-6", conceptId: "contribution-martin-luther-king-muhammad-ali",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 6 Q3 — Deferred sitting",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "What was the contribution of Martin Luther King and/or Muhammad Ali to US life?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2023, level: "higher",
+    paperFileid: "LC004ALP000EV-deferred",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2023 Higher Level, deferred examination — © State Examinations Commission.",
+    id: "hist-2023-hl-deferred-lm-s3t6-q4", topicId: "hist-lm-eur-6", conceptId: "during-period-1945-1989-key-advances",
+    section: "3", questionRef: "2023 HL Later Modern Section 3 Topic 6 Q4 — Deferred sitting",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "During the period 1945-1989, what were key advances in space for the US and what was their significance?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[31], cm: { ...ESSAY_MARKING[31].cm, elementRule: {"note":"NOTE: TWO elements (key advances + significance) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
 ];

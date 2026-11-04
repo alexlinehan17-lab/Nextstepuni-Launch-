@@ -1269,11 +1269,14 @@ const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith(
  * from 2020 back (lane batch 3). */
 const HISTORY_NEW_POINT_IDS = new Set(['hist-2021-ol-lm-s1-q3b']);
 const HISTORY_ADDITIONS = {
-  counts: [1669, 2240],
-  hashes: ['e32ac5b14d170f4758690d5fa3b8affcbf9d84bae1395410070952f0b706c194', '3a5ff1d4e51cfe39ccdb7bb81bbbbeca40f5b58d9a3a664346212a119487d689'],
+  counts: [1722, 2240],
+  hashes: ['fe223ce5f9a54dc817f75e4f6066b0b79294d066eb0d68d1476040db433a9a37', '3a5ff1d4e51cfe39ccdb7bb81bbbbeca40f5b58d9a3a664346212a119487d689'],
 };
+// The deferred sittings (2022-2023, "hist-2023-hl-deferred-lm-...") join the
+// same way, each its own sitting and every id new.
 const historyEssayIds = new Set([...HISTORY_HIGHER, ...HISTORY_ORDINARY]
-  .filter(card => card.kind === 'rubric' || card.year === 2026 || card.year <= 2020 || HISTORY_NEW_POINT_IDS.has(card.id))
+  .filter(card => card.kind === 'rubric' || card.year === 2026 || card.year <= 2020 || HISTORY_NEW_POINT_IDS.has(card.id)
+    || card.id.includes('-deferred-'))
   .map(card => card.id));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
