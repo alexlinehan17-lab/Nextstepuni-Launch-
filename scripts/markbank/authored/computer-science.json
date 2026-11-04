@@ -15664,5 +15664,379 @@
    }
   ],
   "stem": "The bottles are numbered and are stored electronically in a list. Below is the list of the bottle numbers. 12 5 59 23 7 42 60 19 67 31"
+ },
+ {
+  "id": "cs-2023-hl-q7",
+  "topicId": "cs-2-2",
+  "conceptId": "complete-trace-table-python-code",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 HL Q7",
+  "questionText": "Complete the trace table for the Python code shown below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "9 6",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Each correct response 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "8 7",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "7 8",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
+   }
+  ],
+  "questionFigureKey": "computer-science-2023-HL-paper-q7-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-hl-q8-a",
+  "topicId": "cs-1-1",
+  "conceptId": "using-notation-desired-final-system",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 HL Q8(a)",
+  "questionText": "Using this notation, what is the desired final state of the system?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(W, W, W, W)",
+    "marks": 1
+   }
+  ],
+  "stem": "A farmer needs to ferry a wolf, a goat and a cabbage from one side of a river to the other in a boat, as shown in Figure 3. However, the boat only has room for the farmer and one other item, either the wolf, the goat or the cabbage. If left alone without the farmer present, the wolf would eat the goat, and the goat would eat the cabbage. The state of the system at any given point in time can be represented using an ordered list of four values as follows: (<side for farmer>, <side for wolf>, <side for goat>, <side for cabbage>) By using the letter E to represent the east side of the river, and the letter W to represent the west side of the river, the state (E, E, E, E) means that all four are on the east side of the river. (E, E, E, E) is the initial state of the system.",
+  "questionFigureKey": "computer-science-2023-HL-paper-q8-fig3",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-hl-q8-b-i",
+  "topicId": "cs-1-1",
+  "conceptId": "using-notation-other-loss-states",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 HL Q8(b)(i)",
+  "questionText": "Using this notation, name any other two loss states.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Using this notation, name any other two loss states.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "(E, E, W, W)",
+      "(E, W, W, E)",
+      "(E, W, W, W)",
+      "(W, E, E, E)",
+      "(W, W, E, E)"
+     ]
+    },
+    "contextNote": "(W, E, E, W) – No marks awarded for this response as it is given as part of the question. Each correct response 2 marks"
+   }
+  ],
+  "stem": "A farmer needs to ferry a wolf, a goat and a cabbage from one side of a river to the other in a boat, as shown in Figure 3. However, the boat only has room for the farmer and one other item, either the wolf, the goat or the cabbage. If left alone without the farmer present, the wolf would eat the goat, and the goat would eat the cabbage. The state of the system at any given point in time can be represented using an ordered list of four values as follows: (<side for farmer>, <side for wolf>, <side for goat>, <side for cabbage>) By using the letter E to represent the east side of the river, and the letter W to represent the west side of the river, the state (E, E, E, E) means that all four are on the east side of the river. (E, E, E, E) is the initial state of the system. The state (W, E, E, W) is considered a loss state because the wolf will eat the goat (as the farmer and the cabbage are both on the west side).",
+  "questionFigureKey": "computer-science-2023-HL-paper-q8-fig3",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-hl-q8-b-ii",
+  "topicId": "cs-1-1",
+  "conceptId": "using-notation-non-loss-other-than",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 HL Q8(b)(ii)",
+  "questionText": "Using this notation, name any one non-loss state, other than the initial and final states.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Using this notation, name any one non-loss state, other than the initial and final states.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "(E, E, E, W)",
+      "(E, E, W, E)",
+      "(E, W, E, E)",
+      "(E, W, E, W)",
+      "(W, E, W, E)",
+      "(W, E, W, W)",
+      "(W, W, E, W)",
+      "(W, W, W, E)"
+     ]
+    },
+    "contextNote": "Any correct response 1 mark"
+   }
+  ],
+  "stem": "A farmer needs to ferry a wolf, a goat and a cabbage from one side of a river to the other in a boat, as shown in Figure 3. However, the boat only has room for the farmer and one other item, either the wolf, the goat or the cabbage. If left alone without the farmer present, the wolf would eat the goat, and the goat would eat the cabbage. The state of the system at any given point in time can be represented using an ordered list of four values as follows: (<side for farmer>, <side for wolf>, <side for goat>, <side for cabbage>) By using the letter E to represent the east side of the river, and the letter W to represent the west side of the river, the state (E, E, E, E) means that all four are on the east side of the river. (E, E, E, E) is the initial state of the system. The state (W, E, E, W) is considered a loss state because the wolf will eat the goat (as the farmer and the cabbage are both on the west side).",
+  "questionFigureKey": "computer-science-2023-HL-paper-q8-fig3",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-hl-q9-a",
+  "topicId": "cs-1-1",
+  "conceptId": "given-ball-starts-under-leftmost-cup",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 HL Q9(a)",
+  "questionText": "Given that the ball starts under the leftmost cup (position 1) and always remains under the same cup, state the ball position after the sequence of moves, ABCBCA.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Answer: The ball position after ABCBCA is 2 (i.e. under the middle cup).",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     4
+    ],
+    "contextNote": "Correct 4 marks Half correct 2 marks Response with some merit 1 mark"
+   }
+  ],
+  "stem": "Chop Cup is a magic routine which involves three cups face down and one ball underneath one of the cups. In any single move the position of two cups can be swapped using one of three possible moves, A, B or C as shown in Figure 4 below. Each cup is identified by its position. Initially the leftmost cup is at position 1, the middle cup is at position 2 and the right cup is at position 3.",
+  "figureKey": "computer-science-2023-HL-scheme-q9a",
+  "questionFigureKey": "computer-science-2023-HL-paper-q9-fig4",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-hl-q9-b",
+  "topicId": "cs-1-1",
+  "conceptId": "without-knowing-cup-ball-under-construct",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 HL Q9(b)",
+  "questionText": "Without knowing which cup the ball is under, construct a sequence involving at least three moves which results in the ball ending in the same position as it started from.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "construct a sequence involving at least three moves which results in the ball ending in the same position as it started from.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "The complete list of 4 move sequences that work is: ['AAAA', 'AABB', 'AACC', 'ABAC', 'ABBA', 'ABCB', 'ACAB', 'ACBC', 'ACCA', 'BAAB', 'BABC', 'BACA', 'BBAA', 'BBBB', 'BBCC', 'BCAC', 'BCBA', 'BCCB', 'CAAC', 'CABA', 'CACB', 'CBAB', 'CBBC', 'CBCA', 'CCAA', 'CCBB', 'CCCC']",
+      "Any ‘same move’ completed an even number of times (>= 4) e.g. AAAA, BBBBBB",
+      "Any palindromic sequence of moves e.g. ABBA, ABCCBA",
+      "Any other correct response"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Note: Odd length sequences will not work Correct response 2 marks"
+   }
+  ],
+  "stem": "Chop Cup is a magic routine which involves three cups face down and one ball underneath one of the cups. In any single move the position of two cups can be swapped using one of three possible moves, A, B or C as shown in Figure 4 below. Each cup is identified by its position. Initially the leftmost cup is at position 1, the middle cup is at position 2 and the right cup is at position 3.",
+  "questionFigureKey": "computer-science-2023-HL-paper-q9-fig4",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-hl-q13-b-i",
+  "topicId": "cs-1-1",
+  "conceptId": "calculate-shortest-possible-route-technician-should",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 HL Q13(b)(i)",
+  "questionText": "Calculate and state the shortest possible route the technician should take.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "85 km Hub A → Hub C → Hub B → Hub D → Hub A (15+25+30+15 = 85) Hub A → Hub D → Hub B → Hub C → Hub A (15+30+25+15 = 85)",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Correct response 2 mark Response with some merit 1 mark"
+   }
+  ],
+  "stem": "Figure 8 shows the set of hubs and distances in kilometres between each pair of hubs. A technician must travel around each hub to check the equipment and to fix any technical issues that arise. The technician will begin at Hub A and visit all hubs exactly once, before returning to Hub A.",
+  "questionFigureKey": "computer-science-2023-HL-paper-q13b-fig8",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-hl-q14-a-i",
+  "topicId": "cs-2-3",
+  "conceptId": "term-output-device-provide-examples",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 HL Q14(a)(i)",
+  "questionText": "Explain the term ‘output device’. Provide two examples.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Any piece of hardware used to convey information from the computer to the user",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 2 marks Fair description – limited understanding 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Provide two examples.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "screen/monitor",
+      "printer/plotter",
+      "speaker/headphones",
+      "web cam",
+      "secondary storage devices"
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each correct example: Valid output device 1 mark"
+   }
+  ]
+ },
+ {
+  "id": "cs-2023-hl-q14-a-ii",
+  "topicId": "cs-2-3",
+  "conceptId": "cpu-cycle-carried-out-process-data",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 HL Q14(a)(ii)",
+  "questionText": "The CPU cycle carried out to process data and instructions has three steps to it. The first step ‘Fetch Instruction’ has been completed for you in Figure 10 below. Complete the diagram by filling in the next two steps of the process, labelled (a) and (b).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(a) Decode",
+    "marks": 1,
+    "contextNote": "For each correct response 1 marks Award 1 mark for the correct names in the wrong order"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(b) Execute",
+    "marks": 1
+   }
+  ],
+  "questionFigureKey": "computer-science-2023-HL-paper-q14a-fig10",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-hl-q15-b-iii",
+  "topicId": "cs-2-2",
+  "conceptId": "reason-len-l-line-16",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 HL Q15(b)(iii)",
+  "questionText": "Explain the reason for len(L) on line 16.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "It is used to indicate that the value has not been found.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 3 marks Fair explanation - limited understanding 2 marks"
+   }
+  ],
+  "stem": "The Python code below shows an implementation of a binary search function.",
+  "questionFigureKey": "computer-science-2023-HL-paper-q15b-code",
+  "questionFigureIncludesPrompt": false
  }
 ]

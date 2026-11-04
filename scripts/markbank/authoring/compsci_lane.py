@@ -68,7 +68,8 @@ class LaneError(SystemExit):
 # by rendering the glyph it draws. Only these are folded; anything else in the
 # private-use area still reaches build-deck, which refuses it.
 #   U+F0E0  Wingdings 0xE0, a right arrow: "1 -> 3 -> 4 -> 2", 2026 HL scheme
-#           p14 (Q14(a)(ii)), rendered at 288 dpi and looked at.
+#           p14 (Q14(a)(ii)) and 2023 HL scheme p13 (Q13(b)(i)), both rendered
+#           and looked at.
 #   U+F0B7  Symbol 0xB7, a bullet: the papers' clue and rule lists (2025 HL
 #           Q3, Q9); glyphmap.json already reads it as U+2022.
 LANE_GLYPHS = {'\uf0e0': '\u2192', '\uf0b7': '\u2022'}

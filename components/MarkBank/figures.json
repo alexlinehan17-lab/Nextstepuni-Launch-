@@ -56006,5 +56006,83 @@
   "year": 2024,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-HL-paper-q7-code": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q7-code.png",
+  "md5": "5283f037e1d77e6914c914aec47a644f",
+  "alt": "The six-line Python program printed with Question 7 (x = 10, y = 5, then while x >= y: x = x - 1 and y = y + 1), above the trace table with columns x and y whose first row is filled in as 10 and 5 and whose other rows are blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q7",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2023-HL-paper-q8-fig3": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q8-fig3.png",
+  "md5": "8784b6f50be10b788f1edb899d91c72d",
+  "alt": "Figure 3: a drawing of a farmer rowing a small boat, with a wolf, a goat and a cabbage.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q8",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2023-HL-paper-q9-fig4": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q9-fig4.png",
+  "md5": "503e1f5db08b4b5c4ffa44cd70c2336d",
+  "alt": "Figure 4: three moves of three cups in positions 1, 2 and 3. Move A swaps the cups in positions 1 and 2, move B swaps the cups in positions 1 and 3, and move C swaps the cups in positions 2 and 3.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q9",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2023-HL-paper-q13b-fig8": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q13b-fig8.png",
+  "md5": "1a49062610d783e99502b9d4d3f7f204",
+  "alt": "Figure 8: four hubs A, B, C and D joined by roads with distances in kilometres: A to C 15, A to B 20, A to D 15, B to C 25, B to D 30 and C to D 35.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q13(b)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2023-HL-paper-q14a-fig10": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q14a-fig10.png",
+  "md5": "8805567940157101997603bc524a8f01",
+  "alt": "Figure 10: the CPU cycle drawn as three boxes in a loop, the first labelled Fetch Instruction and the next two left blank, labelled (a) and (b).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q14(a)(ii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2023-HL-paper-q15b-code": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q15b-code.png",
+  "md5": "9ea4af8ff2336795a4dfdab70d5253e6",
+  "alt": "The sixteen-line binary_search1(v, L) function printed with Question 15(b): lo = 0 and hi = len(L) - 1; while lo <= hi it sets mid = (lo + hi)//2, sets hi = mid - 1 if L[mid] > v, lo = mid + 1 if L[mid] < v, and otherwise returns mid on line 14; line 16 returns len(L).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q15(b)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2023-HL-scheme-q9a": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-scheme-q9a.png",
+  "md5": "8fff42dbd5e6a5e413a839145a9f0563",
+  "alt": "The marking scheme's working for Question 9(a): a table of the cups and the ball's position before and after each move of A, B, C, B, C, A, the ball ending at position 2.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q9(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
  }
 }
