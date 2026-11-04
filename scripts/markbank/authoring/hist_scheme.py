@@ -237,6 +237,9 @@ INSTRUCTION_TAIL = re.compile(
     # The clause may sit in brackets, "Dental services/spectacles/drugs (any
     # two for 3m + 3m)": its opening bracket goes with it, not left on the row.
     r'\s*\(?(?:Any (?:TWO|THREE|ONE)\b[^.]*\.?'
+    # "Liberty, equality, fraternity All THREE @ 2M each" (2017 Ordinary), in
+    # capitals only: "all three members of the City Commission" is an answer.
+    r'|(?-i:All (?:TWO|THREE|FOUR))\b[^.]*\.?'
     r'|If only (?:ONE|TWO)\b[^.]*\.?'
     r'|\(?(?:any )?(?:one|two) elements? only = \d+m\)?'
     r'|\(?any two,? \d+m \+ \d+m\)?'

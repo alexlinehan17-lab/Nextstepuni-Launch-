@@ -100,3 +100,15 @@ describe('History cards in the Topic Atlas', () => {
     }
   });
 });
+
+describe('a topic the scheme misprints', () => {
+  it('files 2017 OL Early Modern Europe Topic 2 under the paper’s own topic, Religion and power', () => {
+    // The scheme heads these answers with Topic 1's title ("Europe from Renaissance to
+    // Reformation"); its answers are the paper's Topic 2 questions on Philip II.
+    const unit = cards.filter(card => card.id.startsWith('hist-2017-ol-em-s3t2a-'));
+    expect(unit).toHaveLength(5);
+    expect(new Set(unit.map(card => card.topicId))).toEqual(new Set(['hist-em-eur-2']));
+    expect(unit.every(card => /Philip II|Venetian ambassador/.test(card.questionText))).toBe(true);
+    expect(unit.map(card => historyAtlasQuestion(card)?.n)).toEqual(['E2', 'E2', 'E2', 'E2', 'E2']);
+  });
+});

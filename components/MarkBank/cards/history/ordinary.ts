@@ -259,9 +259,7 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
      3,
      4
     ],
-    "directions": [
-     "Note that the question is looking for the contribution of RTÉ to Irish society, 1962- 1972."
-    ]
+    "directions": []
    }
   },
   {
@@ -294,7 +292,9 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
      3,
      4
     ],
-    "directions": []
+    "directions": [
+     "Note that the question is looking for the contribution of RTÉ to Irish society, 1962- 1972."
+    ]
    }
   },
   {
@@ -2833,6 +2833,1838 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s1-q1a", topicId: "hist-em-eur-1", conceptId: "where-seville-did-soldiers-gather-who",
+    section: "1", questionRef: "2017 OL Early Modern Section 1 Q1(a)",
+    stem: "Case study: Seville, the port of the New World",
+    questionText: "From document A, where in Seville did soldiers gather who wanted to go on expeditions to the New World?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "On the steps of the cathedral", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s1-q1b", topicId: "hist-em-eur-1", conceptId: "did-some-soldiers-tell-lies",
+    section: "1", questionRef: "2017 OL Early Modern Section 1 Q1(b)",
+    stem: "Case study: Seville, the port of the New World",
+    questionText: "Why did some soldiers tell lies, according to document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "For the sake of going to the Indies", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s1-q1c", topicId: "hist-em-eur-1", conceptId: "did-soldiers-most-want-get-hands",
+    section: "1", questionRef: "2017 OL Early Modern Section 1 Q1(c)",
+    stem: "Case study: Seville, the port of the New World",
+    questionText: "What did soldiers most want to get their hands on in the New World, according to document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Gold", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s1-q1d", topicId: "hist-em-eur-1", conceptId: "does-escobar-advise-ribera-not-come",
+    section: "1", questionRef: "2017 OL Early Modern Section 1 Q1(d)",
+    stem: "Case study: Seville, the port of the New World",
+    questionText: "Why does Escobar advise Ribera not to come to Castile in November 1553, according to document B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because all Spain is so expensive (and high-priced)/ People need great wealth to support themselves there", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s1-q1e", topicId: "hist-em-eur-1", conceptId: "who-leader-missing-fleet",
+    section: "1", questionRef: "2017 OL Early Modern Section 1 Q1(e)",
+    stem: "Case study: Seville, the port of the New World",
+    questionText: "Who was the leader of the missing fleet, according to document B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Carreno", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s1-q2a", topicId: "hist-em-eur-1", conceptId: "dangers-faced-soldiers-new-world-did",
+    section: "1", questionRef: "2017 OL Early Modern Section 1 Q2(a)",
+    stem: "Case study: Seville, the port of the New World",
+    questionText: "What were the dangers faced by soldiers in the New World, according to document A? How did these compare with the dangers faced by the merchants in Seville, according to document B?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A states that the Indies are full of ambushes and dense forests where soldiers could get lost or die", marks: null },
+    { id: "r-2", kind: "point", verbatim: "They could also die if the failed to swim a river or sank in a swamp", marks: null },
+    { id: "r-3", kind: "point", verbatim: "These dangers were a risk to their lives", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Document B states the dangers of transatlantic trade to the Seville merchants is a great risk to their investment", marks: null },
+    { id: "r-5", kind: "point", verbatim: "If, for whatever reason, ships fail to arrive in Seville, then the losses for those merchant would be serious.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s1-q2b", topicId: "hist-em-eur-1", conceptId: "rewards-did-soldiers-merchants-expect-new",
+    section: "1", questionRef: "2017 OL Early Modern Section 1 Q2(b)",
+    stem: "Case study: Seville, the port of the New World",
+    questionText: "What rewards did the soldiers and merchants expect from the New World? Refer to both documents in your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A says that as long as there is the prospect of gold, then the soldiers will faithfully serve the expedition leader", marks: null },
+    { id: "r-2", kind: "point", verbatim: "It is clear that the soldiers were greedy for gold because the writer says they will abandon or kill the leader if things don’t go their way", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Document B suggests that what the merchants of Seville wanted was transatlantic trade and the chance of huge profits", marks: null },
+    { id: "r-4", kind: "point", verbatim: "The fleet led by Carreno, alrady late but still expected, should revive business life in Seville again.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s1-q3a", topicId: "hist-em-eur-1", conceptId: "there-evidence-author-knowledgeable-new-world",
+    section: "1", questionRef: "2017 OL Early Modern Section 1 Q3(a)",
+    stem: "Case study: Seville, the port of the New World",
+    questionText: "Is there evidence in document A that the author was knowledgeable about the New World? Explain your answer, making reference to document A.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "There is evidence in Document A that the writer was acquainted with both Seville and the New World", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The caption above the text tells us that the writer was an explorer (presumably of the New World) and was here offering advice to a man intending to lead an expedition from Seville", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Most of the extract is advice on how to choose suitable soldiers to join the expedition and why it is vitally important to choose well", marks: null },
+    { id: "r-4", kind: "point", verbatim: "This advice sounds like the writer has learned his lesson from hard experience", marks: null },
+    { id: "r-5", kind: "point", verbatim: "He also describes the difficulty of the terrain in the New World in a way which suggests that he has been there and has seen it for himself.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s1-q3b", topicId: "hist-em-eur-1", conceptId: "there-evidence-author-knowledgeable-business-seville",
+    section: "1", questionRef: "2017 OL Early Modern Section 1 Q3(b)",
+    stem: "Case study: Seville, the port of the New World",
+    questionText: "Is there evidence in document B that the author was knowledgeable about business in Seville? Explain your answer, making reference to document B.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "There is evidence in Document B that the writer was knowledgeable about business in Seville", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The caption above the text tells us that he was a ‘merchant of Seville’ and that he had a ‘junior partner’ in business in Lima", marks: null },
+    { id: "r-3", kind: "point", verbatim: "This shows that the writer was a senior business partner in Seville and he must therefore have been knowledgeable about business in the city and trade with the New World", marks: null },
+    { id: "r-4", kind: "point", verbatim: "He explains in his letter that this has been a bad period for Seville business, but he hopes it will revive when Carreno’s ships come in.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s1-q4", topicId: "hist-em-eur-1", conceptId: "did-seville-change-result-discovery-new",
+    section: "1", questionRef: "2017 OL Early Modern Section 1 Q4",
+    stem: "Case study: Seville, the port of the New World",
+    questionText: "How did Seville change as a result of the discovery of the New World, 1492‐1567?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [17] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t1a-q1", topicId: "hist-em-irl-1", conceptId: "sullivan-students-divided-into-classes-bardic",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 1 A Q1",
+    stem: "This edited extract is taken from an account written by Thomas O’Sullivan of a bardic school that he attended. Read it and answer the questions which follow.\n\nThe students were examined thoroughly and then divided into classes with regard to their age, genius and previous schooling. The professors chose a subject. The subject was given over night and the students worked apart, each by himself upon his own bed, the whole next day in the dark.\nAt a certain hour the following night lights were brought in and each student committed his verse to writing. Afterwards they dressed and gathered in a large room, where the masters waited. Each scholar recited his verse. He was corrected or approved. Either the same or a new subject was given for the following day.\nWhen this was over the students went to their meal which was then served up and they spent some time in conversation and other diversions. Each retired to rest to be ready for the business of the next morning.",
+    questionText: "According to O’Sullivan, how were students divided into classes in the bardic school?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "According to their age, genius and previous schooling", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t1a-q2", topicId: "hist-em-irl-1", conceptId: "where-did-students-compose-verses-set",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 1 A Q2",
+    stem: "This edited extract is taken from an account written by Thomas O’Sullivan of a bardic school that he attended. Read it and answer the questions which follow.\n\nThe students were examined thoroughly and then divided into classes with regard to their age, genius and previous schooling. The professors chose a subject. The subject was given over night and the students worked apart, each by himself upon his own bed, the whole next day in the dark.\nAt a certain hour the following night lights were brought in and each student committed his verse to writing. Afterwards they dressed and gathered in a large room, where the masters waited. Each scholar recited his verse. He was corrected or approved. Either the same or a new subject was given for the following day.\nWhen this was over the students went to their meal which was then served up and they spent some time in conversation and other diversions. Each retired to rest to be ready for the business of the next morning.",
+    questionText: "Where did the students compose the verses they were set?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "On his own bed", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t1a-q3", topicId: "hist-em-irl-1", conceptId: "when-did-students-get-writing-materials",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 1 A Q3",
+    stem: "This edited extract is taken from an account written by Thomas O’Sullivan of a bardic school that he attended. Read it and answer the questions which follow.\n\nThe students were examined thoroughly and then divided into classes with regard to their age, genius and previous schooling. The professors chose a subject. The subject was given over night and the students worked apart, each by himself upon his own bed, the whole next day in the dark.\nAt a certain hour the following night lights were brought in and each student committed his verse to writing. Afterwards they dressed and gathered in a large room, where the masters waited. Each scholar recited his verse. He was corrected or approved. Either the same or a new subject was given for the following day.\nWhen this was over the students went to their meal which was then served up and they spent some time in conversation and other diversions. Each retired to rest to be ready for the business of the next morning.",
+    questionText: "When did students get writing materials to write out their verses?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "At a certain hour (or when lights were brought in) on the following night", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t1a-q4", topicId: "hist-em-irl-1", conceptId: "did-students-when-finished-reciting-verse",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 1 A Q4",
+    stem: "This edited extract is taken from an account written by Thomas O’Sullivan of a bardic school that he attended. Read it and answer the questions which follow.\n\nThe students were examined thoroughly and then divided into classes with regard to their age, genius and previous schooling. The professors chose a subject. The subject was given over night and the students worked apart, each by himself upon his own bed, the whole next day in the dark.\nAt a certain hour the following night lights were brought in and each student committed his verse to writing. Afterwards they dressed and gathered in a large room, where the masters waited. Each scholar recited his verse. He was corrected or approved. Either the same or a new subject was given for the following day.\nWhen this was over the students went to their meal which was then served up and they spent some time in conversation and other diversions. Each retired to rest to be ready for the business of the next morning.",
+    questionText: "What did the students do when they had finished reciting their verse?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They received correction or approval/ They received a new subject for the following day/ They went to eat their meal", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t1a-q5", topicId: "hist-em-irl-1", conceptId: "position-society-poets-bards",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 1 A Q5",
+    stem: "This edited extract is taken from an account written by Thomas O’Sullivan of a bardic school that he attended. Read it and answer the questions which follow.\n\nThe students were examined thoroughly and then divided into classes with regard to their age, genius and previous schooling. The professors chose a subject. The subject was given over night and the students worked apart, each by himself upon his own bed, the whole next day in the dark.\nAt a certain hour the following night lights were brought in and each student committed his verse to writing. Afterwards they dressed and gathered in a large room, where the masters waited. Each scholar recited his verse. He was corrected or approved. Either the same or a new subject was given for the following day.\nWhen this was over the students went to their meal which was then served up and they spent some time in conversation and other diversions. Each retired to rest to be ready for the business of the next morning.",
+    questionText: "What was the position in society of poets and bards?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid statement about the social position of bards and poets", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t1b", topicId: "hist-em-irl-1", conceptId: "manus-donnell-con-bacach-neill-geraldine",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 1 B",
+    stem: "Reform and Reformation in Tudor Ireland, 1494‐1558",
+    questionText: "Write a short paragraph on one of the following:\n1. Manus O’Donnell.\n2. Con Bacach O’Neill.\n3. The Geraldine League.\n4. The dissolution of the monasteries.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,19] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t1c", topicId: "hist-em-irl-1", conceptId: "did-gear-8th-earl-kildare-become",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 1 C",
+    stem: "Reform and Reformation in Tudor Ireland, 1494‐1558",
+    questionText: "Answer one of the following:\n1. How did Gearóid Mór, 8th Earl of Kildare, become so powerful in Ireland?\n2. What was the purpose of the plantation of Laois/Offaly and did it achieve its purpose?\n3. What rights had married women under Irish law?\n4. How did Archbishop George Browne promote the Reformation in Ireland and was he successful?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,19] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t2a-q1", topicId: "hist-em-irl-2", conceptId: "there-too-few-men-safeguard-city",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 2 A Q1",
+    stem: "This edited extract is taken from the assembly roll of Dublin Corporation and describes the city’s response to the plague of 1575.\n\n24 June 1575\nA complaint was made by the commons of the city that since the visitation of the plague, many of the aldermen and inhabitants have departed and gone into the country, leaving too few men to keep and safeguard the city.\nComplaint was made that the infection of the plague grew because inhabitants that were or are infected with the disease keep it secret, and so their neighbours or others visiting them are trapped in the same disease or sickness.\nIf any freeman or inhabitant of the city or suburbs keeps secret anyone that falls sick within his house and does not inform Mr Mayor, the householder is to be imprisoned for eighty days and his house closed up so many days.",
+    questionText: "Why were there too few men to safeguard the city?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Many men had fled the city (or moved to the country) because of the plague", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t2a-q2", topicId: "hist-em-irl-2", conceptId: "did-many-inhabitants-catch-plague-when",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 2 A Q2",
+    stem: "This edited extract is taken from the assembly roll of Dublin Corporation and describes the city’s response to the plague of 1575.\n\n24 June 1575\nA complaint was made by the commons of the city that since the visitation of the plague, many of the aldermen and inhabitants have departed and gone into the country, leaving too few men to keep and safeguard the city.\nComplaint was made that the infection of the plague grew because inhabitants that were or are infected with the disease keep it secret, and so their neighbours or others visiting them are trapped in the same disease or sickness.\nIf any freeman or inhabitant of the city or suburbs keeps secret anyone that falls sick within his house and does not inform Mr Mayor, the householder is to be imprisoned for eighty days and his house closed up so many days.",
+    questionText: "Why did many inhabitants catch plague when they visited their neighbours?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because others with the plague kept it a secret", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t2a-q3", topicId: "hist-em-irl-2", conceptId: "whom-report-made-someone-household-got",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 2 A Q3",
+    stem: "This edited extract is taken from the assembly roll of Dublin Corporation and describes the city’s response to the plague of 1575.\n\n24 June 1575\nA complaint was made by the commons of the city that since the visitation of the plague, many of the aldermen and inhabitants have departed and gone into the country, leaving too few men to keep and safeguard the city.\nComplaint was made that the infection of the plague grew because inhabitants that were or are infected with the disease keep it secret, and so their neighbours or others visiting them are trapped in the same disease or sickness.\nIf any freeman or inhabitant of the city or suburbs keeps secret anyone that falls sick within his house and does not inform Mr Mayor, the householder is to be imprisoned for eighty days and his house closed up so many days.",
+    questionText: "To whom was report to be made if someone of the household got infected with plague?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mr Mayor", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t2a-q4", topicId: "hist-em-irl-2", conceptId: "punishment-inhabitant-fails-report-plague-his",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 2 A Q4",
+    stem: "This edited extract is taken from the assembly roll of Dublin Corporation and describes the city’s response to the plague of 1575.\n\n24 June 1575\nA complaint was made by the commons of the city that since the visitation of the plague, many of the aldermen and inhabitants have departed and gone into the country, leaving too few men to keep and safeguard the city.\nComplaint was made that the infection of the plague grew because inhabitants that were or are infected with the disease keep it secret, and so their neighbours or others visiting them are trapped in the same disease or sickness.\nIf any freeman or inhabitant of the city or suburbs keeps secret anyone that falls sick within his house and does not inform Mr Mayor, the householder is to be imprisoned for eighty days and his house closed up so many days.",
+    questionText: "What is the punishment if an inhabitant fails to report the plague in his house?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Eighty days in prison (while his house will be closed up)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t2a-q5", topicId: "hist-em-irl-2", conceptId: "who-served-lord-deputy-ireland-1565",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 2 A Q5",
+    stem: "This edited extract is taken from the assembly roll of Dublin Corporation and describes the city’s response to the plague of 1575.\n\n24 June 1575\nA complaint was made by the commons of the city that since the visitation of the plague, many of the aldermen and inhabitants have departed and gone into the country, leaving too few men to keep and safeguard the city.\nComplaint was made that the infection of the plague grew because inhabitants that were or are infected with the disease keep it secret, and so their neighbours or others visiting them are trapped in the same disease or sickness.\nIf any freeman or inhabitant of the city or suburbs keeps secret anyone that falls sick within his house and does not inform Mr Mayor, the householder is to be imprisoned for eighty days and his house closed up so many days.",
+    questionText: "Who served as Lord Deputy in Ireland from 1565 to 1571 and again from 1575 to 1578?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sir Henry Sidney", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t2b", topicId: "hist-em-irl-2", conceptId: "shane-neill-university-question-faith-fatherland",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 2 B",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
+    questionText: "Write a short paragraph on one of the following:\n1. Shane O’Neill.\n2. The university question.\n3. “Faith and fatherland”.\n4. Tadhg Dall Ó hUiginn.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,19] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t2c", topicId: "hist-em-irl-2", conceptId: "part-did-james-fitzmaurice-fitzgerald-play",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 2 C",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
+    questionText: "Answer one of the following:\n1. What part did James Fitzmaurice Fitzgerald play in the Desmond rebellion?\n2. In what ways was Meiler Magrath a controversial bishop?\n3. What did Grace O’Malley achieve by her visit to Queen Elizabeth I?\n4. What leadership did Hugh O’Neill give in the Nine Years War?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,19] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t3a-q1", topicId: "hist-em-irl-3", conceptId: "who-brought-ship-ulster-flight-earls",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 3 A Q1",
+    stem: "This is an edited extract from the Annals of the Four Masters, for 1607, on the Flight of the Earls. Read it and answer the questions which follow.\n\nTHE AGE OF CHRIST, 1607: Maguire and Donough, the son of Mahon, brought a ship with them to Ireland, and put in at the harbour of Swilly. They took with them from Ireland the Earl O’Neill and the Earl O’Donnell with a great number of the chieftains of the province of Ulster.\nThis was a distinguished crew for one ship; for it is indeed certain that the sea had not supported, and the winds had not wafted from Ireland, in modern times, a party of one ship who would have been more illustrious or noble, in point of genealogy, or more renowned for deeds, valour, prowess, or high achievements, than they.",
+    questionText: "Who brought the ship to Ulster for the Flight of the Earls?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Maguire", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Mahon/ Donough", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t3a-q2", topicId: "hist-em-irl-3", conceptId: "harbour-did-ship-put-into-leave",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 3 A Q2",
+    stem: "This is an edited extract from the Annals of the Four Masters, for 1607, on the Flight of the Earls. Read it and answer the questions which follow.\n\nTHE AGE OF CHRIST, 1607: Maguire and Donough, the son of Mahon, brought a ship with them to Ireland, and put in at the harbour of Swilly. They took with them from Ireland the Earl O’Neill and the Earl O’Donnell with a great number of the chieftains of the province of Ulster.\nThis was a distinguished crew for one ship; for it is indeed certain that the sea had not supported, and the winds had not wafted from Ireland, in modern times, a party of one ship who would have been more illustrious or noble, in point of genealogy, or more renowned for deeds, valour, prowess, or high achievements, than they.",
+    questionText: "From what harbour did the ship put into and leave?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Swilly/ Rathmullan", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t3a-q3", topicId: "hist-em-irl-3", conceptId: "lords-left-ulster-flight-earls",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 3 A Q3",
+    stem: "This is an edited extract from the Annals of the Four Masters, for 1607, on the Flight of the Earls. Read it and answer the questions which follow.\n\nTHE AGE OF CHRIST, 1607: Maguire and Donough, the son of Mahon, brought a ship with them to Ireland, and put in at the harbour of Swilly. They took with them from Ireland the Earl O’Neill and the Earl O’Donnell with a great number of the chieftains of the province of Ulster.\nThis was a distinguished crew for one ship; for it is indeed certain that the sea had not supported, and the winds had not wafted from Ireland, in modern times, a party of one ship who would have been more illustrious or noble, in point of genealogy, or more renowned for deeds, valour, prowess, or high achievements, than they.",
+    questionText: "Which two lords left Ulster in the Flight of the Earls?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "O’Neill", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "O’Donnell", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t3a-q4", topicId: "hist-em-irl-3", conceptId: "author-view-qualities-character-nobles-who",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 3 A Q4",
+    stem: "This is an edited extract from the Annals of the Four Masters, for 1607, on the Flight of the Earls. Read it and answer the questions which follow.\n\nTHE AGE OF CHRIST, 1607: Maguire and Donough, the son of Mahon, brought a ship with them to Ireland, and put in at the harbour of Swilly. They took with them from Ireland the Earl O’Neill and the Earl O’Donnell with a great number of the chieftains of the province of Ulster.\nThis was a distinguished crew for one ship; for it is indeed certain that the sea had not supported, and the winds had not wafted from Ireland, in modern times, a party of one ship who would have been more illustrious or noble, in point of genealogy, or more renowned for deeds, valour, prowess, or high achievements, than they.",
+    questionText: "What is the author’s view of the qualities and character of the nobles who are leaving?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Distinguished/ Of illustrious or noble families/ Renowned for great deeds or achievements/ Valour or prowess", marks: 6, contextNote: "Any TWO @ 3M each" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t3a-q5", topicId: "hist-em-irl-3", conceptId: "mention-development-ulster-flight-earls",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 3 A Q5",
+    stem: "This is an edited extract from the Annals of the Four Masters, for 1607, on the Flight of the Earls. Read it and answer the questions which follow.\n\nTHE AGE OF CHRIST, 1607: Maguire and Donough, the son of Mahon, brought a ship with them to Ireland, and put in at the harbour of Swilly. They took with them from Ireland the Earl O’Neill and the Earl O’Donnell with a great number of the chieftains of the province of Ulster.\nThis was a distinguished crew for one ship; for it is indeed certain that the sea had not supported, and the winds had not wafted from Ireland, in modern times, a party of one ship who would have been more illustrious or noble, in point of genealogy, or more renowned for deeds, valour, prowess, or high achievements, than they.",
+    questionText: "Mention one development in Ulster following the Flight of the Earls.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid development in Ulster after 1607", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t3b", topicId: "hist-em-irl-3", conceptId: "depositions-1641-cromwellian-transplantations-piaras-feirit",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 3 B",
+    stem: "Kingdom and colony – the struggle for mastery in Ireland, 1603‐1660",
+    questionText: "Write a short paragraph on one of the following:\n1. The depositions of 1641.\n2. The Cromwellian transplantations.\n3. Piaras Feiritéar.\n4. Luke Wadding.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,19] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t3c", topicId: "hist-em-irl-3", conceptId: "purpose-irish-college-founded-louvain-did",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 3 C",
+    stem: "Kingdom and colony – the struggle for mastery in Ireland, 1603‐1660",
+    questionText: "Answer one of the following:\n1. For what purpose was an Irish college founded in Louvain and what did it achieve?\n2. What charges were put against Strafford at his trial and what was the outcome of that trial?\n3. What leadership did Owen Roe O’Neill provide on his return to Ireland in 1642?\n4. What was the role of Archbishop Rinuccini in the Confederation of Kilkenny?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,19] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t4a-q1", topicId: "hist-em-irl-4", conceptId: "did-some-jacobite-sources-account-defeat",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 4 A Q1",
+    stem: "This edited extract discusses the aftermath of the Battle of the Boyne, 1690. Read it and answer the questions which follow.\n\nAccording to some Jacobite sources, defeat at the Battle of the Boyne was simply a question of numbers. James had about 20,000 newly‐recruited Irish troops, half‐trained and half‐armed, and about 5,000 Frenchmen supported by 12 field guns, six of which were on the road back to Dublin before the battle had begun. Opposing them was William’s army of 45,000 troops and over 50 cannon.\nJames’ flight from the Boyne was so rapid that he was the first man to bring news of his own defeat to France and explained to King Louis XIV that the Irish cause was lost. This version of events led Louis to believe that the Irish had let down James, instead of the opposite, which was the case.\nWilliamite sources, on the other hand, were surprised by the extent of the victory, which was out of all proportion to the scale of the action. By the standard of seventeenth‐century battles, it was considered a relatively minor battle with no more than 1,600 killed from both sides.",
+    questionText: "How did some Jacobite sources account for defeat in the Battle of the Boyne?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They said it was ‘simply a question of numbers’ as William had about double the amount of troops and even more so of artillery", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t4a-q2", topicId: "hist-em-irl-4", conceptId: "condition-readiness-irish-troops",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 4 A Q2",
+    stem: "This edited extract discusses the aftermath of the Battle of the Boyne, 1690. Read it and answer the questions which follow.\n\nAccording to some Jacobite sources, defeat at the Battle of the Boyne was simply a question of numbers. James had about 20,000 newly‐recruited Irish troops, half‐trained and half‐armed, and about 5,000 Frenchmen supported by 12 field guns, six of which were on the road back to Dublin before the battle had begun. Opposing them was William’s army of 45,000 troops and over 50 cannon.\nJames’ flight from the Boyne was so rapid that he was the first man to bring news of his own defeat to France and explained to King Louis XIV that the Irish cause was lost. This version of events led Louis to believe that the Irish had let down James, instead of the opposite, which was the case.\nWilliamite sources, on the other hand, were surprised by the extent of the victory, which was out of all proportion to the scale of the action. By the standard of seventeenth‐century battles, it was considered a relatively minor battle with no more than 1,600 killed from both sides.",
+    questionText: "What was the condition and readiness of the Irish troops?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Half-trained and half-armed", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t4a-q3", topicId: "hist-em-irl-4", conceptId: "did-king-louis-xiv-france-first",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 4 A Q3",
+    stem: "This edited extract discusses the aftermath of the Battle of the Boyne, 1690. Read it and answer the questions which follow.\n\nAccording to some Jacobite sources, defeat at the Battle of the Boyne was simply a question of numbers. James had about 20,000 newly‐recruited Irish troops, half‐trained and half‐armed, and about 5,000 Frenchmen supported by 12 field guns, six of which were on the road back to Dublin before the battle had begun. Opposing them was William’s army of 45,000 troops and over 50 cannon.\nJames’ flight from the Boyne was so rapid that he was the first man to bring news of his own defeat to France and explained to King Louis XIV that the Irish cause was lost. This version of events led Louis to believe that the Irish had let down James, instead of the opposite, which was the case.\nWilliamite sources, on the other hand, were surprised by the extent of the victory, which was out of all proportion to the scale of the action. By the standard of seventeenth‐century battles, it was considered a relatively minor battle with no more than 1,600 killed from both sides.",
+    questionText: "How did King Louis XIV of France first hear of the outcome of the Battle of the Boyne?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "From King James himself", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t4a-q4", topicId: "hist-em-irl-4", conceptId: "many-soldiers-killed-sides-battle-boyne",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 4 A Q4",
+    stem: "This edited extract discusses the aftermath of the Battle of the Boyne, 1690. Read it and answer the questions which follow.\n\nAccording to some Jacobite sources, defeat at the Battle of the Boyne was simply a question of numbers. James had about 20,000 newly‐recruited Irish troops, half‐trained and half‐armed, and about 5,000 Frenchmen supported by 12 field guns, six of which were on the road back to Dublin before the battle had begun. Opposing them was William’s army of 45,000 troops and over 50 cannon.\nJames’ flight from the Boyne was so rapid that he was the first man to bring news of his own defeat to France and explained to King Louis XIV that the Irish cause was lost. This version of events led Louis to believe that the Irish had let down James, instead of the opposite, which was the case.\nWilliamite sources, on the other hand, were surprised by the extent of the victory, which was out of all proportion to the scale of the action. By the standard of seventeenth‐century battles, it was considered a relatively minor battle with no more than 1,600 killed from both sides.",
+    questionText: "How many soldiers were killed on both sides at the Battle of the Boyne?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1,600", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t4a-q5", topicId: "hist-em-irl-4", conceptId: "treaty-1691-brought-final-settlement-williamite",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 4 A Q5",
+    stem: "This edited extract discusses the aftermath of the Battle of the Boyne, 1690. Read it and answer the questions which follow.\n\nAccording to some Jacobite sources, defeat at the Battle of the Boyne was simply a question of numbers. James had about 20,000 newly‐recruited Irish troops, half‐trained and half‐armed, and about 5,000 Frenchmen supported by 12 field guns, six of which were on the road back to Dublin before the battle had begun. Opposing them was William’s army of 45,000 troops and over 50 cannon.\nJames’ flight from the Boyne was so rapid that he was the first man to bring news of his own defeat to France and explained to King Louis XIV that the Irish cause was lost. This version of events led Louis to believe that the Irish had let down James, instead of the opposite, which was the case.\nWilliamite sources, on the other hand, were surprised by the extent of the victory, which was out of all proportion to the scale of the action. By the standard of seventeenth‐century battles, it was considered a relatively minor battle with no more than 1,600 killed from both sides.",
+    questionText: "What treaty in 1691 brought a final settlement to the Williamite Wars in Ireland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Treaty of Limerick", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t4b", topicId: "hist-em-irl-4", conceptId: "beginnings-linen-industry-irish-brigades-abroad",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 4 B",
+    stem: "Establishing a colonial ascendancy, 1660‐1715",
+    questionText: "Write a short paragraph on one of the following:\n1. The beginnings of the linen industry.\n2. Irish brigades abroad.\n3. The Cattle and Navigation Acts.\n4. Robert Boyle.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,20] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t4c", topicId: "hist-em-irl-4", conceptId: "decisions-made-parliament-1689-main-features",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 4 C",
+    stem: "Establishing a colonial ascendancy, 1660‐1715",
+    questionText: "Answer one of the following:\n1. What decisions were made in the Parliament of 1689?\n2. What were the main features of Restoration Dublin?\n3. What did the Jacobite poets contribute to the Gaelic bardic system?\n4. How did penal legislation affect the work and life of Oliver Plunkett?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,20] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t5a-q1", topicId: "hist-em-irl-5", conceptId: "english-traveller-toured-ireland-1770",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 5 A Q1",
+    stem: "This edited extract discusses the poor conditions of the rural population, 1715‐1770, in Ireland. Read it and answer the questions which follow.\n\nIn 1770 an English traveller, Arthur Young, toured Ireland and wrote:\nThe cottages of the Irish, which are called cabins, are the most miserable looking hovels that can be conceived. The furniture in the cabins is as bad as the architecture. In many cases it consists of only a pot for boiling their potatoes, a bit of a table, and one or two broken stools. Beds are not usually found, the family sleeping on straw.\nJonathan Swift, dean of St Patrick’s Cathedral, bitterly attacked the society which tolerated the terrible conditions of the poor. In 1729 he published ‘A Modest Proposal’, a savage satire on the ruling classes for this state of affairs. George Berkeley, Protestant Bishop of Cloyne, also directed his attentions to the social and economic evils of Ireland in ‘The Querist’ published in the 1730s.",
+    questionText: "What English traveller toured Ireland in 1770?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Arthur Young", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t5a-q2", topicId: "hist-em-irl-5", conceptId: "without-beds-did-families-sleep",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 5 A Q2",
+    stem: "This edited extract discusses the poor conditions of the rural population, 1715‐1770, in Ireland. Read it and answer the questions which follow.\n\nIn 1770 an English traveller, Arthur Young, toured Ireland and wrote:\nThe cottages of the Irish, which are called cabins, are the most miserable looking hovels that can be conceived. The furniture in the cabins is as bad as the architecture. In many cases it consists of only a pot for boiling their potatoes, a bit of a table, and one or two broken stools. Beds are not usually found, the family sleeping on straw.\nJonathan Swift, dean of St Patrick’s Cathedral, bitterly attacked the society which tolerated the terrible conditions of the poor. In 1729 he published ‘A Modest Proposal’, a savage satire on the ruling classes for this state of affairs. George Berkeley, Protestant Bishop of Cloyne, also directed his attentions to the social and economic evils of Ireland in ‘The Querist’ published in the 1730s.",
+    questionText: "Without beds, how did families sleep?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "On straw", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t5a-q3", topicId: "hist-em-irl-5", conceptId: "did-jonathan-swift-publish-1729",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 5 A Q3",
+    stem: "This edited extract discusses the poor conditions of the rural population, 1715‐1770, in Ireland. Read it and answer the questions which follow.\n\nIn 1770 an English traveller, Arthur Young, toured Ireland and wrote:\nThe cottages of the Irish, which are called cabins, are the most miserable looking hovels that can be conceived. The furniture in the cabins is as bad as the architecture. In many cases it consists of only a pot for boiling their potatoes, a bit of a table, and one or two broken stools. Beds are not usually found, the family sleeping on straw.\nJonathan Swift, dean of St Patrick’s Cathedral, bitterly attacked the society which tolerated the terrible conditions of the poor. In 1729 he published ‘A Modest Proposal’, a savage satire on the ruling classes for this state of affairs. George Berkeley, Protestant Bishop of Cloyne, also directed his attentions to the social and economic evils of Ireland in ‘The Querist’ published in the 1730s.",
+    questionText: "What did Jonathan Swift publish in 1729?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "‘A Modest Proposal’", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t5a-q4", topicId: "hist-em-irl-5", conceptId: "who-published-querist",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 5 A Q4",
+    stem: "This edited extract discusses the poor conditions of the rural population, 1715‐1770, in Ireland. Read it and answer the questions which follow.\n\nIn 1770 an English traveller, Arthur Young, toured Ireland and wrote:\nThe cottages of the Irish, which are called cabins, are the most miserable looking hovels that can be conceived. The furniture in the cabins is as bad as the architecture. In many cases it consists of only a pot for boiling their potatoes, a bit of a table, and one or two broken stools. Beds are not usually found, the family sleeping on straw.\nJonathan Swift, dean of St Patrick’s Cathedral, bitterly attacked the society which tolerated the terrible conditions of the poor. In 1729 he published ‘A Modest Proposal’, a savage satire on the ruling classes for this state of affairs. George Berkeley, Protestant Bishop of Cloyne, also directed his attentions to the social and economic evils of Ireland in ‘The Querist’ published in the 1730s.",
+    questionText: "Who published ‘The Querist’?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "George Berkeley/ Protestant Bishop of Cloyne", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t5a-q5", topicId: "hist-em-irl-5", conceptId: "term-absentee-landlords",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 5 A Q5",
+    stem: "This edited extract discusses the poor conditions of the rural population, 1715‐1770, in Ireland. Read it and answer the questions which follow.\n\nIn 1770 an English traveller, Arthur Young, toured Ireland and wrote:\nThe cottages of the Irish, which are called cabins, are the most miserable looking hovels that can be conceived. The furniture in the cabins is as bad as the architecture. In many cases it consists of only a pot for boiling their potatoes, a bit of a table, and one or two broken stools. Beds are not usually found, the family sleeping on straw.\nJonathan Swift, dean of St Patrick’s Cathedral, bitterly attacked the society which tolerated the terrible conditions of the poor. In 1729 he published ‘A Modest Proposal’, a savage satire on the ruling classes for this state of affairs. George Berkeley, Protestant Bishop of Cloyne, also directed his attentions to the social and economic evils of Ireland in ‘The Querist’ published in the 1730s.",
+    questionText: "Explain the term ‘absentee landlords’.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A landlord who rented out farm plots while living elsewhere", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t5b", topicId: "hist-em-irl-5", conceptId: "wood-halfpence-1722-political-effects-ireland",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 5 B",
+    stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
+    questionText: "Write a short paragraph on one of the following:\n1. Wood’s halfpence, 1722.\n2. Political effects in Ireland of the Seven Years’ War.\n3. Catholic education.\n4. John Hely Hutchinson.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,20] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t5c", topicId: "hist-em-irl-5", conceptId: "ponsonbys-powerful-ireland-aims-methods-whiteboys",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 5 C",
+    stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
+    questionText: "Answer one of the following:\n1. Why were the Ponsonbys so powerful in Ireland?\n2. What were the aims and the methods of the Whiteboys?\n3. What evidence did the prosecution put forward at the trial of Fr. Sheehy in 1766?\n4. In what ways did Margaret (Peg) Woffington and/or Turlough O’Carolan enhance the culture and society of the period?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,20] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t6a-q1", topicId: "hist-em-irl-6", conceptId: "where-when-society-united-irishmen-founded",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 6 A Q1",
+    stem: "This edited extract deals with the origin and early years of the United Irishmen. Read it and answer the questions which follow.\n\nThe Society of United Irishmen was founded in Belfast in October 1791. The outbreak of the French Revolution two years earlier, with its ideals of liberty, equality and fraternity, had a profound influence on the young men who founded the society.\nInitially, the movement was slow to spread outside Ulster but it did organise in Dublin where Napper Tandy was a leading figure.\nIn 1793 Britain declared war on revolutionary France and the following year the government suppressed the United Irishmen. However, the same year the United Irishmen reconstituted as an oath‐ bound secret society and began to prepare for war.\nWolfe Tone went to France seeking military aid for a rebellion in Ireland. In December 1796 a fleet of 48 ships and 1,300 men under the command of General Hoche, with Tone on board, set sail from France.",
+    questionText: "Where, and when, was the Society of United Irishmen founded?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Belfast", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "October 1791", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t6a-q2", topicId: "hist-em-irl-6", conceptId: "ideals-did-united-irishmen-take-french",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 6 A Q2",
+    stem: "This edited extract deals with the origin and early years of the United Irishmen. Read it and answer the questions which follow.\n\nThe Society of United Irishmen was founded in Belfast in October 1791. The outbreak of the French Revolution two years earlier, with its ideals of liberty, equality and fraternity, had a profound influence on the young men who founded the society.\nInitially, the movement was slow to spread outside Ulster but it did organise in Dublin where Napper Tandy was a leading figure.\nIn 1793 Britain declared war on revolutionary France and the following year the government suppressed the United Irishmen. However, the same year the United Irishmen reconstituted as an oath‐ bound secret society and began to prepare for war.\nWolfe Tone went to France seeking military aid for a rebellion in Ireland. In December 1796 a fleet of 48 ships and 1,300 men under the command of General Hoche, with Tone on board, set sail from France.",
+    questionText: "What ideals did the United Irishmen take from the French Revolution?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Liberty, equality, fraternity", marks: 6, contextNote: "All THREE @ 2M each" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t6a-q3", topicId: "hist-em-irl-6", conceptId: "who-prominent-figure-amongst-united-irishmen",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 6 A Q3",
+    stem: "This edited extract deals with the origin and early years of the United Irishmen. Read it and answer the questions which follow.\n\nThe Society of United Irishmen was founded in Belfast in October 1791. The outbreak of the French Revolution two years earlier, with its ideals of liberty, equality and fraternity, had a profound influence on the young men who founded the society.\nInitially, the movement was slow to spread outside Ulster but it did organise in Dublin where Napper Tandy was a leading figure.\nIn 1793 Britain declared war on revolutionary France and the following year the government suppressed the United Irishmen. However, the same year the United Irishmen reconstituted as an oath‐ bound secret society and began to prepare for war.\nWolfe Tone went to France seeking military aid for a rebellion in Ireland. In December 1796 a fleet of 48 ships and 1,300 men under the command of General Hoche, with Tone on board, set sail from France.",
+    questionText: "Who was a prominent figure amongst the United Irishmen in Dublin?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Napper Tandy", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t6a-q4", topicId: "hist-em-irl-6", conceptId: "did-wolfe-tone-france",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 6 A Q4",
+    stem: "This edited extract deals with the origin and early years of the United Irishmen. Read it and answer the questions which follow.\n\nThe Society of United Irishmen was founded in Belfast in October 1791. The outbreak of the French Revolution two years earlier, with its ideals of liberty, equality and fraternity, had a profound influence on the young men who founded the society.\nInitially, the movement was slow to spread outside Ulster but it did organise in Dublin where Napper Tandy was a leading figure.\nIn 1793 Britain declared war on revolutionary France and the following year the government suppressed the United Irishmen. However, the same year the United Irishmen reconstituted as an oath‐ bound secret society and began to prepare for war.\nWolfe Tone went to France seeking military aid for a rebellion in Ireland. In December 1796 a fleet of 48 ships and 1,300 men under the command of General Hoche, with Tone on board, set sail from France.",
+    questionText: "Why did Wolfe Tone go to France?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To seek military aid for a rebellion in Ireland", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t6a-q5", topicId: "hist-em-irl-6", conceptId: "mention-parts-ireland-involved-1798-rebellion",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 6 A Q5",
+    stem: "This edited extract deals with the origin and early years of the United Irishmen. Read it and answer the questions which follow.\n\nThe Society of United Irishmen was founded in Belfast in October 1791. The outbreak of the French Revolution two years earlier, with its ideals of liberty, equality and fraternity, had a profound influence on the young men who founded the society.\nInitially, the movement was slow to spread outside Ulster but it did organise in Dublin where Napper Tandy was a leading figure.\nIn 1793 Britain declared war on revolutionary France and the following year the government suppressed the United Irishmen. However, the same year the United Irishmen reconstituted as an oath‐ bound secret society and began to prepare for war.\nWolfe Tone went to France seeking military aid for a rebellion in Ireland. In December 1796 a fleet of 48 ships and 1,300 men under the command of General Hoche, with Tone on board, set sail from France.",
+    questionText: "Mention two parts of Ireland which were involved in the 1798 rebellion.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "TWO parts of Ireland such as Wexford, Antrim, Down", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t6b", topicId: "hist-em-irl-6", conceptId: "wartime-boom-1793-1815-act-union",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 6 B",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
+    questionText: "Write a short paragraph on one of the following:\n1. The wartime boom, 1793‐1815.\n2. The Act of Union, 1801.\n3. Secret agrarian organisations.\n4. John Fitzgibbon.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,20] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s2t6c", topicId: "hist-em-irl-6", conceptId: "did-henry-grattan-hope-achieve-ireland",
+    section: "2", questionRef: "2017 OL Early Modern Section 2 Topic 6 C",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
+    questionText: "Answer one of the following:\n1. What did Henry Grattan hope to achieve for Ireland and why did he fail?\n2. How did Belfast become a great industrial city?\n3. In what ways did Maynooth College contribute to culture and religion in Ireland?\n4. What did Nano Nagle contribute to Catholic education in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,20] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t2a-q1", topicId: "hist-em-eur-2", conceptId: "did-people-feel-death-philip-venetian",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 2 A Q1",
+    stem: "The following extract is taken from the report written by the Venetian ambassador on the death of Philip II, 1598. Read it and answer the questions which follow.\n\nThe king is dead. Nobles and people, rich and poor, universally show grief. He was a prince who fought with gold rather than with steel, by his brain rather than by his arms. He was one of the richest princes the world has ever seen, yet he has left the revenues of the kingdom and of the crown burdened with about a million of debts.\nProfoundly religious, he loved peace and quiet. He displayed great calmness, and professed himself unmoved in good and bad fortune alike. He had vast schemes in his head: witness his simultaneous attack on England and France, while facing the revolution in Flanders.",
+    questionText: "What did people feel about the death of Philip II, according to the Venetian ambassador?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Universal grief", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t2a-q2", topicId: "hist-em-eur-2", conceptId: "much-debt-did-philip-leave-behind",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 2 A Q2",
+    stem: "The following extract is taken from the report written by the Venetian ambassador on the death of Philip II, 1598. Read it and answer the questions which follow.\n\nThe king is dead. Nobles and people, rich and poor, universally show grief. He was a prince who fought with gold rather than with steel, by his brain rather than by his arms. He was one of the richest princes the world has ever seen, yet he has left the revenues of the kingdom and of the crown burdened with about a million of debts.\nProfoundly religious, he loved peace and quiet. He displayed great calmness, and professed himself unmoved in good and bad fortune alike. He had vast schemes in his head: witness his simultaneous attack on England and France, while facing the revolution in Flanders.",
+    questionText: "How much debt did Philip II leave behind him?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "About a million in debt", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t2a-q3", topicId: "hist-em-eur-2", conceptId: "does-venetian-ambassador-write-religious-feelings",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 2 A Q3",
+    stem: "The following extract is taken from the report written by the Venetian ambassador on the death of Philip II, 1598. Read it and answer the questions which follow.\n\nThe king is dead. Nobles and people, rich and poor, universally show grief. He was a prince who fought with gold rather than with steel, by his brain rather than by his arms. He was one of the richest princes the world has ever seen, yet he has left the revenues of the kingdom and of the crown burdened with about a million of debts.\nProfoundly religious, he loved peace and quiet. He displayed great calmness, and professed himself unmoved in good and bad fortune alike. He had vast schemes in his head: witness his simultaneous attack on England and France, while facing the revolution in Flanders.",
+    questionText: "What does the Venetian ambassador write about the religious feelings of Philip II?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He was profoundly religious", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t2a-q4", topicId: "hist-em-eur-2", conceptId: "wars-philip-involved",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 2 A Q4",
+    stem: "The following extract is taken from the report written by the Venetian ambassador on the death of Philip II, 1598. Read it and answer the questions which follow.\n\nThe king is dead. Nobles and people, rich and poor, universally show grief. He was a prince who fought with gold rather than with steel, by his brain rather than by his arms. He was one of the richest princes the world has ever seen, yet he has left the revenues of the kingdom and of the crown burdened with about a million of debts.\nProfoundly religious, he loved peace and quiet. He displayed great calmness, and professed himself unmoved in good and bad fortune alike. He had vast schemes in his head: witness his simultaneous attack on England and France, while facing the revolution in Flanders.",
+    questionText: "In what wars was Philip II involved, according to the extract?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "England/ France/ Flanders", marks: 6, contextNote: "Any TWO @ 3M each" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t2a-q5", topicId: "hist-em-eur-2", conceptId: "mention-achievement-philip-king-spain",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 2 A Q5",
+    stem: "The following extract is taken from the report written by the Venetian ambassador on the death of Philip II, 1598. Read it and answer the questions which follow.\n\nThe king is dead. Nobles and people, rich and poor, universally show grief. He was a prince who fought with gold rather than with steel, by his brain rather than by his arms. He was one of the richest princes the world has ever seen, yet he has left the revenues of the kingdom and of the crown burdened with about a million of debts.\nProfoundly religious, he loved peace and quiet. He displayed great calmness, and professed himself unmoved in good and bad fortune alike. He had vast schemes in his head: witness his simultaneous attack on England and France, while facing the revolution in Flanders.",
+    questionText: "Mention one achievement of Philip II as king of Spain.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE achievement of Philip II as king of Spain", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t2b", topicId: "hist-em-eur-2", conceptId: "holy-roman-empire-under-rudolph-revolt",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 2 B",
+    stem: "Religion and power: politics in the later 16th century, 1567‐1609",
+    questionText: "Write a short paragraph on one of the following:\n1. The Holy Roman Empire under Rudolph II.\n2. The revolt of the Netherlands.\n3. The rise of Muscovy.\n4. Tycho Brahe.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t2c", topicId: "hist-em-eur-2", conceptId: "did-spanish-armada-end-failure-aims",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 2 C",
+    stem: "Religion and power: politics in the later 16th century, 1567‐1609",
+    questionText: "Answer one of the following:\n1. Why did the Spanish Armada end in failure?\n2. What were the aims of the Jesuit mission in China and did it achieve its aims?\n3. What caused the decline of the port of Antwerp?\n4. Why was Catherine de Medici important during the French Wars of Religion?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t3a-q1", topicId: "hist-em-eur-3", conceptId: "key-dutch-success",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 3 A Q1",
+    stem: "This edited extract discusses the tactics used in the creation of the Dutch Empire in Asia. Read it and answer the questions which follow.\n\nThe key to Dutch success was successful shipbuilding. Those ships, called fluyts, set a new standard for commercial shipping. The Dutch did their homework well. When they set sail, they knew where they were going, what they were looking for, and where to find it.\nThe Dutch were world leaders in mapmaking and produced detailed atlases of the East Indies. In addition, the creation of the Dutch East Indies Company proved very successful. Their aim was, not to compete with their rivals, but to replace them.\nAccordingly, the Dutch expelled the Portuguese community from the Spice Islands and established a permanent headquarters in what is now known as Jakarta. Control was also established over Malacca, Ceylon, Colombo and Cochin, before Indonesia was targeted in 1669. Macasar was renamed New Rotterdam and a major fort was constructed there.",
+    questionText: "What was the key to Dutch success?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Successful shipbuilding/ the fluyts", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t3a-q2", topicId: "hist-em-eur-3", conceptId: "aim-dutch-east-indies-company",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 3 A Q2",
+    stem: "This edited extract discusses the tactics used in the creation of the Dutch Empire in Asia. Read it and answer the questions which follow.\n\nThe key to Dutch success was successful shipbuilding. Those ships, called fluyts, set a new standard for commercial shipping. The Dutch did their homework well. When they set sail, they knew where they were going, what they were looking for, and where to find it.\nThe Dutch were world leaders in mapmaking and produced detailed atlases of the East Indies. In addition, the creation of the Dutch East Indies Company proved very successful. Their aim was, not to compete with their rivals, but to replace them.\nAccordingly, the Dutch expelled the Portuguese community from the Spice Islands and established a permanent headquarters in what is now known as Jakarta. Control was also established over Malacca, Ceylon, Colombo and Cochin, before Indonesia was targeted in 1669. Macasar was renamed New Rotterdam and a major fort was constructed there.",
+    questionText: "What was the aim of the Dutch East Indies Company?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Not to compete with rivals", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "but to replace them", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t3a-q3", topicId: "hist-em-eur-3", conceptId: "did-dutch-get-control-spice-islands",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 3 A Q3",
+    stem: "This edited extract discusses the tactics used in the creation of the Dutch Empire in Asia. Read it and answer the questions which follow.\n\nThe key to Dutch success was successful shipbuilding. Those ships, called fluyts, set a new standard for commercial shipping. The Dutch did their homework well. When they set sail, they knew where they were going, what they were looking for, and where to find it.\nThe Dutch were world leaders in mapmaking and produced detailed atlases of the East Indies. In addition, the creation of the Dutch East Indies Company proved very successful. Their aim was, not to compete with their rivals, but to replace them.\nAccordingly, the Dutch expelled the Portuguese community from the Spice Islands and established a permanent headquarters in what is now known as Jakarta. Control was also established over Malacca, Ceylon, Colombo and Cochin, before Indonesia was targeted in 1669. Macasar was renamed New Rotterdam and a major fort was constructed there.",
+    questionText: "How did the Dutch get control of the Spice Islands?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They expelled the Portuguese", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "established a permanent headquarters on the Spice Islands", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t3a-q4", topicId: "hist-em-eur-3", conceptId: "new-did-dutch-macasar",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 3 A Q4",
+    stem: "This edited extract discusses the tactics used in the creation of the Dutch Empire in Asia. Read it and answer the questions which follow.\n\nThe key to Dutch success was successful shipbuilding. Those ships, called fluyts, set a new standard for commercial shipping. The Dutch did their homework well. When they set sail, they knew where they were going, what they were looking for, and where to find it.\nThe Dutch were world leaders in mapmaking and produced detailed atlases of the East Indies. In addition, the creation of the Dutch East Indies Company proved very successful. Their aim was, not to compete with their rivals, but to replace them.\nAccordingly, the Dutch expelled the Portuguese community from the Spice Islands and established a permanent headquarters in what is now known as Jakarta. Control was also established over Malacca, Ceylon, Colombo and Cochin, before Indonesia was targeted in 1669. Macasar was renamed New Rotterdam and a major fort was constructed there.",
+    questionText: "What new name did the Dutch give to Macasar?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "New Rotterdam", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t3a-q5", topicId: "hist-em-eur-3", conceptId: "mention-countries-rivals-dutch-trade",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 3 A Q5",
+    stem: "This edited extract discusses the tactics used in the creation of the Dutch Empire in Asia. Read it and answer the questions which follow.\n\nThe key to Dutch success was successful shipbuilding. Those ships, called fluyts, set a new standard for commercial shipping. The Dutch did their homework well. When they set sail, they knew where they were going, what they were looking for, and where to find it.\nThe Dutch were world leaders in mapmaking and produced detailed atlases of the East Indies. In addition, the creation of the Dutch East Indies Company proved very successful. Their aim was, not to compete with their rivals, but to replace them.\nAccordingly, the Dutch expelled the Portuguese community from the Spice Islands and established a permanent headquarters in what is now known as Jakarta. Control was also established over Malacca, Ceylon, Colombo and Cochin, before Indonesia was targeted in 1669. Macasar was renamed New Rotterdam and a major fort was constructed there.",
+    questionText: "Mention two countries which were rivals to Dutch trade.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "TWO countries which were rivals to Dutch trade @ 3M each", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t3b", topicId: "hist-em-eur-3", conceptId: "rise-sweden-muscovy-thirty-years-war",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 3 B",
+    stem: "The eclipse of Old Europe, 1609‐1660",
+    questionText: "Write a short paragraph on one of the following:\n1. The rise of Sweden and/or Muscovy.\n2. The Thirty Years War.\n3. “Witch‐hunting”.\n4 René Descartes.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t3c", topicId: "hist-em-eur-3", conceptId: "did-catalans-revolt-against-spanish-rule",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 3 C",
+    stem: "The eclipse of Old Europe, 1609‐1660",
+    questionText: "Answer one of the following:\n1. Why did the Catalans revolt against Spanish rule and what was the outcome of that revolt?\n2. How did the theories of Galileo cause problems with the Catholic Church?\n3. What policies did Cardinal Richelieu put into practice in France?\n4. What did Claudio Monteverdi and/or Peter Paul Rubens contribute to baroque music and/or art?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t4a-q1", topicId: "hist-em-eur-4", conceptId: "who-first-official-historian-english-east",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 4 A Q1",
+    stem: "This edited extract refers to the attitude and approach of the (English) East India Company to inhabitants in India. Read it and answer the questions which follow.\n\nEuropean attitudes to Asia were hardening. The first official historian of the (English) East India Company, Professor Nicholas Orme, reveals much about how thinking had toughened. Attitudes towards Asia were changing from excitement about profits to thoughts of brute exploitation.\nThis attitude was perfectly described by the ‘nabobs’, the officials of the (English) East India Company who made huge profits for themselves in Asia. They behaved like hoodlums and loan sharks, lending money to locals at huge rates of interest and using Company resources for their own benefit. Serving the (English) East India Company was a one‐way ticket to a fortune.\nHowever, there were dangers also. Conditions in India were not easy and disease could put a swift end to ambitions. Although the rates of mortality did drop, thanks to improved sanitation and hygiene as well as in medicine, the number of those sent home or considered unfit for service, rose steadily.",
+    questionText: "Who was the first official historian of the (English) East India Company?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Professor Nicholas Orme", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t4a-q2", topicId: "hist-em-eur-4", conceptId: "manner-attitudes-changing",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 4 A Q2",
+    stem: "This edited extract refers to the attitude and approach of the (English) East India Company to inhabitants in India. Read it and answer the questions which follow.\n\nEuropean attitudes to Asia were hardening. The first official historian of the (English) East India Company, Professor Nicholas Orme, reveals much about how thinking had toughened. Attitudes towards Asia were changing from excitement about profits to thoughts of brute exploitation.\nThis attitude was perfectly described by the ‘nabobs’, the officials of the (English) East India Company who made huge profits for themselves in Asia. They behaved like hoodlums and loan sharks, lending money to locals at huge rates of interest and using Company resources for their own benefit. Serving the (English) East India Company was a one‐way ticket to a fortune.\nHowever, there were dangers also. Conditions in India were not easy and disease could put a swift end to ambitions. Although the rates of mortality did drop, thanks to improved sanitation and hygiene as well as in medicine, the number of those sent home or considered unfit for service, rose steadily.",
+    questionText: "In what manner were attitudes changing?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hardening/ Toughening/ Changing from excitement about profits to thoughts of brute exploitation", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t4a-q3", topicId: "hist-em-eur-4", conceptId: "officials-behaving-like-hoodlums-loan-sharks",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 4 A Q3",
+    stem: "This edited extract refers to the attitude and approach of the (English) East India Company to inhabitants in India. Read it and answer the questions which follow.\n\nEuropean attitudes to Asia were hardening. The first official historian of the (English) East India Company, Professor Nicholas Orme, reveals much about how thinking had toughened. Attitudes towards Asia were changing from excitement about profits to thoughts of brute exploitation.\nThis attitude was perfectly described by the ‘nabobs’, the officials of the (English) East India Company who made huge profits for themselves in Asia. They behaved like hoodlums and loan sharks, lending money to locals at huge rates of interest and using Company resources for their own benefit. Serving the (English) East India Company was a one‐way ticket to a fortune.\nHowever, there were dangers also. Conditions in India were not easy and disease could put a swift end to ambitions. Although the rates of mortality did drop, thanks to improved sanitation and hygiene as well as in medicine, the number of those sent home or considered unfit for service, rose steadily.",
+    questionText: "How were the officials behaving like hoodlums and loan sharks?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They lent money at huge interest rates", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "used company resources for their own benefit", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t4a-q4", topicId: "hist-em-eur-4", conceptId: "did-rate-mortality-drop-india",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 4 A Q4",
+    stem: "This edited extract refers to the attitude and approach of the (English) East India Company to inhabitants in India. Read it and answer the questions which follow.\n\nEuropean attitudes to Asia were hardening. The first official historian of the (English) East India Company, Professor Nicholas Orme, reveals much about how thinking had toughened. Attitudes towards Asia were changing from excitement about profits to thoughts of brute exploitation.\nThis attitude was perfectly described by the ‘nabobs’, the officials of the (English) East India Company who made huge profits for themselves in Asia. They behaved like hoodlums and loan sharks, lending money to locals at huge rates of interest and using Company resources for their own benefit. Serving the (English) East India Company was a one‐way ticket to a fortune.\nHowever, there were dangers also. Conditions in India were not easy and disease could put a swift end to ambitions. Although the rates of mortality did drop, thanks to improved sanitation and hygiene as well as in medicine, the number of those sent home or considered unfit for service, rose steadily.",
+    questionText: "Why did the rate of mortality drop in India?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Improved sanitation and hygiene (3M) as well as (improvements) in medicine", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t4a-q5", topicId: "hist-em-eur-4", conceptId: "relationship-between-english-east-india-company",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 4 A Q5",
+    stem: "This edited extract refers to the attitude and approach of the (English) East India Company to inhabitants in India. Read it and answer the questions which follow.\n\nEuropean attitudes to Asia were hardening. The first official historian of the (English) East India Company, Professor Nicholas Orme, reveals much about how thinking had toughened. Attitudes towards Asia were changing from excitement about profits to thoughts of brute exploitation.\nThis attitude was perfectly described by the ‘nabobs’, the officials of the (English) East India Company who made huge profits for themselves in Asia. They behaved like hoodlums and loan sharks, lending money to locals at huge rates of interest and using Company resources for their own benefit. Serving the (English) East India Company was a one‐way ticket to a fortune.\nHowever, there were dangers also. Conditions in India were not easy and disease could put a swift end to ambitions. Although the rates of mortality did drop, thanks to improved sanitation and hygiene as well as in medicine, the number of those sent home or considered unfit for service, rose steadily.",
+    questionText: "What was the relationship between the (English) East India Company and the British government in London?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid point about relations between the East India Company and the British government", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t4b", topicId: "hist-em-eur-4", conceptId: "absolute-monarchy-louis-xiv-poland-under",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 4 B",
+    stem: "Europe in the age of Louis XIV, 1660‐1715",
+    questionText: "Write a short paragraph on one of the following:\n1. The absolute monarchy of Louis XIV.\n2. Poland under Sobieski.\n3. Smuggling and piracy.\n4. The Grand Tour.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t4c", topicId: "hist-em-eur-4", conceptId: "did-streltsy-revolt-russia-outcome-revolt",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 4 C",
+    stem: "Europe in the age of Louis XIV, 1660‐1715",
+    questionText: "Answer one of the following:\n1. Why did the Streltsy revolt in Russia and what was the outcome of that revolt?\n2. What did Gottfried Wilhelm Leibnitz and/or Isaac Newton contribute to the advance of science?\n3. What was significant about the court of Versailles?\n4. How did Jan de Witt influence events in Holland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t5a-q1", topicId: "hist-em-eur-5", conceptId: "type-goods-usually-transported-canal",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 5 A Q1",
+    stem: "This extract deals with the origin and importance of canal‐building in Britain. Read it and answer the questions which follow.\n\nFrom about 1760 a network of canals began to be built in Britain. Canals were important for the transport of huge volumes of heavy goods. Moreover, canal‐building allowed men to gain valuable experience in solving engineering problems.\nJames Brindley and Thomas Telford were two individuals who played vital roles in canal‐building, not to mention the thousands of ‘navigators’ who provided the manual labour.\nThe first real canal was the Sankey Brook Navigation built by Henry Berry and opened in 1757. The canal joined the town of St Helens to the river Mersey and was used principally to transport coal to Liverpool. However, it was the building of the Worsley Canal, 1759‐61 that traditionally takes the credit for sparking off the age of canals in Britain.",
+    questionText: "What type of goods was usually transported by canal?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Heavy goods", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t5a-q2", topicId: "hist-em-eur-5", conceptId: "who-navigators",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 5 A Q2",
+    stem: "This extract deals with the origin and importance of canal‐building in Britain. Read it and answer the questions which follow.\n\nFrom about 1760 a network of canals began to be built in Britain. Canals were important for the transport of huge volumes of heavy goods. Moreover, canal‐building allowed men to gain valuable experience in solving engineering problems.\nJames Brindley and Thomas Telford were two individuals who played vital roles in canal‐building, not to mention the thousands of ‘navigators’ who provided the manual labour.\nThe first real canal was the Sankey Brook Navigation built by Henry Berry and opened in 1757. The canal joined the town of St Helens to the river Mersey and was used principally to transport coal to Liverpool. However, it was the building of the Worsley Canal, 1759‐61 that traditionally takes the credit for sparking off the age of canals in Britain.",
+    questionText: "Who were the ‘navigators’?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The manual labourers who built canals", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t5a-q3", topicId: "hist-em-eur-5", conceptId: "who-built-sankey-brook-navigation",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 5 A Q3",
+    stem: "This extract deals with the origin and importance of canal‐building in Britain. Read it and answer the questions which follow.\n\nFrom about 1760 a network of canals began to be built in Britain. Canals were important for the transport of huge volumes of heavy goods. Moreover, canal‐building allowed men to gain valuable experience in solving engineering problems.\nJames Brindley and Thomas Telford were two individuals who played vital roles in canal‐building, not to mention the thousands of ‘navigators’ who provided the manual labour.\nThe first real canal was the Sankey Brook Navigation built by Henry Berry and opened in 1757. The canal joined the town of St Helens to the river Mersey and was used principally to transport coal to Liverpool. However, it was the building of the Worsley Canal, 1759‐61 that traditionally takes the credit for sparking off the age of canals in Britain.",
+    questionText: "Who built the Sankey Brook Navigation?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Henry Berry", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t5a-q4", topicId: "hist-em-eur-5", conceptId: "canal-traditionally-gets-credit-sparking-off",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 5 A Q4",
+    stem: "This extract deals with the origin and importance of canal‐building in Britain. Read it and answer the questions which follow.\n\nFrom about 1760 a network of canals began to be built in Britain. Canals were important for the transport of huge volumes of heavy goods. Moreover, canal‐building allowed men to gain valuable experience in solving engineering problems.\nJames Brindley and Thomas Telford were two individuals who played vital roles in canal‐building, not to mention the thousands of ‘navigators’ who provided the manual labour.\nThe first real canal was the Sankey Brook Navigation built by Henry Berry and opened in 1757. The canal joined the town of St Helens to the river Mersey and was used principally to transport coal to Liverpool. However, it was the building of the Worsley Canal, 1759‐61 that traditionally takes the credit for sparking off the age of canals in Britain.",
+    questionText: "Which canal traditionally gets the credit for sparking off the age of canals?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Worsley (to Manchester) Canal/ The Bridgewater Canal", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t5a-q5", topicId: "hist-em-eur-5", conceptId: "age-canals-relatively-short",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 5 A Q5",
+    stem: "This extract deals with the origin and importance of canal‐building in Britain. Read it and answer the questions which follow.\n\nFrom about 1760 a network of canals began to be built in Britain. Canals were important for the transport of huge volumes of heavy goods. Moreover, canal‐building allowed men to gain valuable experience in solving engineering problems.\nJames Brindley and Thomas Telford were two individuals who played vital roles in canal‐building, not to mention the thousands of ‘navigators’ who provided the manual labour.\nThe first real canal was the Sankey Brook Navigation built by Henry Berry and opened in 1757. The canal joined the town of St Helens to the river Mersey and was used principally to transport coal to Liverpool. However, it was the building of the Worsley Canal, 1759‐61 that traditionally takes the credit for sparking off the age of canals in Britain.",
+    questionText: "Why was the age of canals relatively short?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason why the age of canals was relatively short", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t5b", topicId: "hist-em-eur-5", conceptId: "hapsburg-empire-mercantilism-laissez-faire-spread",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 5 B",
+    stem: "Establishing empires, 1715‐1775",
+    questionText: "Write a short paragraph on one of the following:\n1. The Hapsburg Empire.\n2. Mercantilism and laissez‐faire.\n3. The spread of literacy.\n4. Robert Clive.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t5c", topicId: "hist-em-eur-5", conceptId: "boston-tea-party-1773-important-event",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 5 C",
+    stem: "Establishing empires, 1715‐1775",
+    questionText: "Answer one of the following:\n1. Why was the Boston Tea Party, 1773, an important event in the American Revolution?\n2. How did economic considerations influence the West Indies slave plantations?\n3. What ideas did the Encyclopédie put forward?\n4. What political ambitions did Catherine the Great and/or Frederick the Great pursue in Europe?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t6a-q1", topicId: "hist-em-eur-6", conceptId: "napoleon-attitude-towards-invasion-england",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 6 A Q1",
+    stem: "This edited extract discusses the role of Napoleon Bonaparte in Revolutionary France. Read it and answer the questions which follow.\n\nFrom 1793 onwards both the Committee of Public Safety and the Directory seriously considered an invasion of England and Ireland. Napoleon, however, had serious doubts about the success of such an invasion.\nHe submitted a report to the Directory outlining the difficulties involved. These included: the problem of avoiding the Royal Navy long enough to make the crossing to England, the impracticality of using small boats to transport thousands of men, and the fact that the French navy was not fully prepared. Instead, he proposed an expedition to the Eastern Mediterranean in order to threaten British trade with India. Moreover, there were no British warships in the Mediterranean.\nFinally, on 12 April 1798 the Directory ordered the formation of a New Army of the Orient and named Napoleon Bonaparte commander‐in‐chief.",
+    questionText: "What was Napoleon’s attitude towards an invasion of England?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He had serious doubts about (the success of) invading England", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t6a-q2", topicId: "hist-em-eur-6", conceptId: "napoleon-condition-french-navy",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 6 A Q2",
+    stem: "This edited extract discusses the role of Napoleon Bonaparte in Revolutionary France. Read it and answer the questions which follow.\n\nFrom 1793 onwards both the Committee of Public Safety and the Directory seriously considered an invasion of England and Ireland. Napoleon, however, had serious doubts about the success of such an invasion.\nHe submitted a report to the Directory outlining the difficulties involved. These included: the problem of avoiding the Royal Navy long enough to make the crossing to England, the impracticality of using small boats to transport thousands of men, and the fact that the French navy was not fully prepared. Instead, he proposed an expedition to the Eastern Mediterranean in order to threaten British trade with India. Moreover, there were no British warships in the Mediterranean.\nFinally, on 12 April 1798 the Directory ordered the formation of a New Army of the Orient and named Napoleon Bonaparte commander‐in‐chief.",
+    questionText: "According to Napoleon, what was the condition of the French navy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It was not fully prepared", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t6a-q3", topicId: "hist-em-eur-6", conceptId: "purpose-did-napoleon-propose-expedition-eastern",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 6 A Q3",
+    stem: "This edited extract discusses the role of Napoleon Bonaparte in Revolutionary France. Read it and answer the questions which follow.\n\nFrom 1793 onwards both the Committee of Public Safety and the Directory seriously considered an invasion of England and Ireland. Napoleon, however, had serious doubts about the success of such an invasion.\nHe submitted a report to the Directory outlining the difficulties involved. These included: the problem of avoiding the Royal Navy long enough to make the crossing to England, the impracticality of using small boats to transport thousands of men, and the fact that the French navy was not fully prepared. Instead, he proposed an expedition to the Eastern Mediterranean in order to threaten British trade with India. Moreover, there were no British warships in the Mediterranean.\nFinally, on 12 April 1798 the Directory ordered the formation of a New Army of the Orient and named Napoleon Bonaparte commander‐in‐chief.",
+    questionText: "For what purpose did Napoleon propose an expedition to the Eastern Mediterranean?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To threaten British trade with India", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t6a-q4", topicId: "hist-em-eur-6", conceptId: "role-napoleon-given-new-army-orient",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 6 A Q4",
+    stem: "This edited extract discusses the role of Napoleon Bonaparte in Revolutionary France. Read it and answer the questions which follow.\n\nFrom 1793 onwards both the Committee of Public Safety and the Directory seriously considered an invasion of England and Ireland. Napoleon, however, had serious doubts about the success of such an invasion.\nHe submitted a report to the Directory outlining the difficulties involved. These included: the problem of avoiding the Royal Navy long enough to make the crossing to England, the impracticality of using small boats to transport thousands of men, and the fact that the French navy was not fully prepared. Instead, he proposed an expedition to the Eastern Mediterranean in order to threaten British trade with India. Moreover, there were no British warships in the Mediterranean.\nFinally, on 12 April 1798 the Directory ordered the formation of a New Army of the Orient and named Napoleon Bonaparte commander‐in‐chief.",
+    questionText: "What role was Napoleon given in the New Army of the Orient?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Commander-in-chief", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t6a-q5", topicId: "hist-em-eur-6", conceptId: "mention-countries-invaded-napoleon",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 6 A Q5",
+    stem: "This edited extract discusses the role of Napoleon Bonaparte in Revolutionary France. Read it and answer the questions which follow.\n\nFrom 1793 onwards both the Committee of Public Safety and the Directory seriously considered an invasion of England and Ireland. Napoleon, however, had serious doubts about the success of such an invasion.\nHe submitted a report to the Directory outlining the difficulties involved. These included: the problem of avoiding the Royal Navy long enough to make the crossing to England, the impracticality of using small boats to transport thousands of men, and the fact that the French navy was not fully prepared. Instead, he proposed an expedition to the Eastern Mediterranean in order to threaten British trade with India. Moreover, there were no British warships in the Mediterranean.\nFinally, on 12 April 1798 the Directory ordered the formation of a New Army of the Orient and named Napoleon Bonaparte commander‐in‐chief.",
+    questionText: "Mention two countries invaded by Napoleon.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any TWO countries invaded by Napoleon 3M + 3M", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2017 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t6b", topicId: "hist-em-eur-6", conceptId: "establishment-american-republic-1776-1789-agricultural",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 6 B",
+    stem: "Empires in revolution, 1775‐1815",
+    questionText: "Write a short paragraph on one of the following:\n1. Establishment of the American Republic, 1776‐1789.\n2. The agricultural revolution.\n3. Tom Paine.\n4. Mary Wollstonecraft.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2017 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2017-ol-em-s3t6c", topicId: "hist-em-eur-6", conceptId: "did-manchester-become-great-industrial-city",
+    section: "3", questionRef: "2017 OL Early Modern Section 3 Topic 6 C",
+    stem: "Empires in revolution, 1775‐1815",
+    questionText: "Answer one of the following:\n1. How did Manchester become a great industrial city?\n2. Why did the revolutionaries in France succeed against Louis XVI?\n3. How did the Civil Constitution of the Clergy affect France?\n4. Why and how did cultural nationalism develop in Europe?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2018, level: "ordinary",
     paperFileid: "LC004GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
@@ -3065,7 +4897,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The impact of RTÉ, 1962‐1972",
     questionText: "What did RTÉ contribute to Irish society during the period 1962‐1972?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[3], schemePages: [7] },
+    rubric: { ...ESSAY_MARKING[4], schemePages: [7] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4895,7 +6727,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Bardic Schools",
     questionText: "What training was provided by the Bardic Schools?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [18] },
+    rubric: { ...ESSAY_MARKING[3], schemePages: [18] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8544,7 +10376,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Plantation of Laois/Offaly",
     questionText: "What was the purpose of the Plantation of Laois/Offaly and did it achieve its purpose?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [17] },
+    rubric: { ...ESSAY_MARKING[3], schemePages: [17] },
   } as SecCard,
   {
     ...base, kind: "question",

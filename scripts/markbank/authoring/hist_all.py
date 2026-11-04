@@ -93,6 +93,7 @@ EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
 ESSAY_PAPERS = {
     (2017, 'hl', 'em'),
     (2017, 'hl', 'lm'),
+    (2017, 'ol', 'em'),
     (2017, 'ol', 'lm'),
     (2018, 'hl', 'em'),
     (2018, 'hl', 'lm'),
@@ -133,6 +134,20 @@ ESSAY_PAPERS = {
 # the essay papers; each joins one at a time, as it is read and reviewed
 # (2021-2026 in lane batches 1-2, then back from 2020).
 PAPERS = sorted(ESSAY_PAPERS, key=lambda p: (p[0], p[1], FIELD_KEYS.index(p[2])))
+
+# Topic titles the SCHEME misprints, keyed (year, level, field, unit): (the
+# title it prints, a word the paper's questions under the unit and the
+# scheme's answers under it must both contain). The answers decide the join,
+# the title does not. 2017 Ordinary Early Modern heads Europe Topic 2's answers
+# with Topic 1's title, "Europe from Renaissance to Reformation, 1492-1567",
+# while the paper's Topic 2 is "Religion and power: politics in the later 16th
+# century, 1567-1609"; Topic 1 is that paper's documents question and sets no
+# Section 3 unit. The answers ("Universal grief", "About a million in debt",
+# "ONE achievement of Philip II as king of Spain") are the paper's Topic 2
+# questions on the Venetian ambassador's report on the death of Philip II.
+SCHEME_TITLE_MISPRINTS = {
+    (2017, 'ol', 'em', '3 Topic 2'): ('Europe from Renaissance to Reformation, 1492-1567', 'Philip II'),
+}
 
 # NextStepUni's own guidance under the panel, never presented as the SEC's,
 # for each way the scheme marks: (CM mode, prints an OE).
@@ -470,6 +485,16 @@ def build():
                 scheme_titles = [(u, bag(t))
                                  for u, t in S.topic_titles.items()]
                 for unit, title in sorted(P.topic_titles.items()):
+                    misprint = SCHEME_TITLE_MISPRINTS.get((year, level, field, unit))
+                    if misprint:
+                        printed, word = misprint
+                        own_text = ' '.join(v for k, v in P.asks.items() if k[0].startswith(f'{unit} '))
+                        answers = ' '.join(p for a in S.asks if a.key[0].startswith(f'{unit} ')
+                                           for _l, p, _n in a.points)
+                        if S.topic_titles.get(unit) != printed or word not in own_text or word not in answers:
+                            refuse('a recorded scheme title misprint no longer reads as recorded',
+                                   f'{year} {level} {field} {unit}')
+                        continue
                     cue = bag(title)
                     ranked = sorted(((score(cue, sb), u)
                                      for u, sb in scheme_titles),

@@ -393,19 +393,19 @@
     "refsHash": "39be4a22419bc8c6"
   },
   "history": {
-    "cards": 2613,
-    "contentHash": "dc8f0f1eff3c7993",
-    "coveragePct": 56.2,
-    "covered": 2613,
+    "cards": 2700,
+    "contentHash": "b96a0745bb5eb9c3",
+    "coveragePct": 58.1,
+    "covered": 2700,
     "excluded": 0,
     "leaves": 4647,
-    "open": 2034,
+    "open": 1947,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "c5dad2eeaf2c2bfd"
     },
-    "refsHash": "f196b76a3e95e4af"
+    "refsHash": "c12ca38cd3e87064"
   },
   "home-economics": {
     "cards": 549,
