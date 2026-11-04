@@ -2735,7 +2735,8 @@ Decisions:
 - B4(a)(ii), B5(c)(i), B7(a)(i) and B7(b)(i) print no number on the paper. The
   scheme's count is used, and each note says so.
 - B8(b): the paper prints "By 2036", and its stem keeps that. The scheme's
-  reprint says 2046.
+  reprint says 2046, and the card's note says so: "The marking scheme
+  reprints this as 2046." (coordinator, 2026-11-04).
 
 Refcheck: three short asks were read by hand (B4(a)(i), B6(a)(i), B6(c)).
 

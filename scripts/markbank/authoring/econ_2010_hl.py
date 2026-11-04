@@ -549,7 +549,9 @@ pick('sb-q8-b-i', '3-5', 'effects-of-an-ageing-population', ref('B', 8, '(b)(i)'
      H.split('1. Pressure on provision of state pensions', '2 at 5 marks.',
              ['Pressure on provision of state pensions:', 'Possible increased tax burden:', 'Increased government expenditure:',
               'Changing pattern of demand:', 'The participation rate falls:', 'Reduced mobility of labour:']),
-     2, 5, 'Two effects, ' + H.traced('2 at 5 marks.') + ' ' + H.traced('State: 2 marks. Explain: 3 marks.'),
+     2, 5, 'Two effects, ' + H.traced('2 at 5 marks.') + ' ' + H.traced('State: 2 marks. Explain: 3 marks.')
+     # The paper prints "By 2036"; the stem follows it (coordinator, 2026-11-04), and the note says what the scheme prints.
+     + ' The marking scheme reprints this as 2046.',
      stem=H.q(7, 'By 2036 one in five Irish people will be over 65 years of age', ' (i)'), **B)
 pick('sb-q8-b-ii', '3-2', 'consequences-of-rising-emigration', ref('B', 8, '(b)(ii)'),
      H.q(7, 'State and explain three economic consequences of the recent increase in emigration.', ' (25 marks)'),
