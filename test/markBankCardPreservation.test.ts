@@ -1560,6 +1560,31 @@ const economicsAdditionIds = new Set([
   'econ-2010-ol-sb-q7-b-ii', 'econ-2010-ol-sb-q7-b-iii', 'econ-2010-ol-sb-q7-c-i', 'econ-2010-ol-sb-q7-c-ii',
   'econ-2010-ol-sb-q7-c-iii', 'econ-2010-ol-sb-q8-a-i', 'econ-2010-ol-sb-q8-a-ii', 'econ-2010-ol-sb-q8-b-i',
   'econ-2010-ol-sb-q8-b-ii', 'econ-2010-ol-sb-q8-b-iii', 'econ-2010-ol-sb-q8-c',
+  // 2022 Higher, the deferred sitting (its own paper, 2026-11-04): 70, every ID new
+  'econ-2022-hl-deferred-sa-q1-a', 'econ-2022-hl-deferred-sa-q1-b', 'econ-2022-hl-deferred-sa-q2-a',
+  'econ-2022-hl-deferred-sa-q2-b', 'econ-2022-hl-deferred-sa-q3-a', 'econ-2022-hl-deferred-sa-q3-b',
+  'econ-2022-hl-deferred-sa-q4-a', 'econ-2022-hl-deferred-sa-q4-b', 'econ-2022-hl-deferred-sa-q5-a',
+  'econ-2022-hl-deferred-sa-q5-b', 'econ-2022-hl-deferred-sa-q5-c', 'econ-2022-hl-deferred-sa-q6-a',
+  'econ-2022-hl-deferred-sa-q6-b', 'econ-2022-hl-deferred-sa-q7-a', 'econ-2022-hl-deferred-sa-q7-b',
+  'econ-2022-hl-deferred-sa-q7-c', 'econ-2022-hl-deferred-sa-q8-a', 'econ-2022-hl-deferred-sa-q8-b',
+  'econ-2022-hl-deferred-sa-q9-a', 'econ-2022-hl-deferred-sa-q9-b', 'econ-2022-hl-deferred-sa-q9-c',
+  'econ-2022-hl-deferred-sa-q10-a', 'econ-2022-hl-deferred-sa-q10-b', 'econ-2022-hl-deferred-q11-a-i',
+  'econ-2022-hl-deferred-q11-a-ii', 'econ-2022-hl-deferred-q11-a-iii', 'econ-2022-hl-deferred-q11-b-i',
+  'econ-2022-hl-deferred-q11-b-ii', 'econ-2022-hl-deferred-q11-c-i', 'econ-2022-hl-deferred-q11-c-ii',
+  'econ-2022-hl-deferred-q11-c-iii', 'econ-2022-hl-deferred-q12-a-i', 'econ-2022-hl-deferred-q12-a-ii',
+  'econ-2022-hl-deferred-q12-b-i', 'econ-2022-hl-deferred-q12-b-ii', 'econ-2022-hl-deferred-q12-b-iii',
+  'econ-2022-hl-deferred-q12-c-i', 'econ-2022-hl-deferred-q12-c-ii', 'econ-2022-hl-deferred-q12-c-iii',
+  'econ-2022-hl-deferred-q13-a-i', 'econ-2022-hl-deferred-q13-a-ii', 'econ-2022-hl-deferred-q13-a-iii',
+  'econ-2022-hl-deferred-q13-b-i', 'econ-2022-hl-deferred-q13-b-ii', 'econ-2022-hl-deferred-q13-c-i',
+  'econ-2022-hl-deferred-q13-c-ii', 'econ-2022-hl-deferred-q13-c-iii', 'econ-2022-hl-deferred-q14-a-i',
+  'econ-2022-hl-deferred-q14-a-ii', 'econ-2022-hl-deferred-q14-a-iii', 'econ-2022-hl-deferred-q14-b-i',
+  'econ-2022-hl-deferred-q14-b-ii', 'econ-2022-hl-deferred-q14-c-i', 'econ-2022-hl-deferred-q14-c-ii',
+  'econ-2022-hl-deferred-q14-c-iii', 'econ-2022-hl-deferred-q15-a-i', 'econ-2022-hl-deferred-q15-a-ii',
+  'econ-2022-hl-deferred-q15-b-i', 'econ-2022-hl-deferred-q15-b-ii', 'econ-2022-hl-deferred-q15-c-i',
+  'econ-2022-hl-deferred-q15-c-ii', 'econ-2022-hl-deferred-q15-c-iii', 'econ-2022-hl-deferred-q16-a-i',
+  'econ-2022-hl-deferred-q16-a-ii', 'econ-2022-hl-deferred-q16-b-i', 'econ-2022-hl-deferred-q16-b-ii',
+  'econ-2022-hl-deferred-q16-b-iii', 'econ-2022-hl-deferred-q16-c-i', 'econ-2022-hl-deferred-q16-c-ii',
+  'econ-2022-hl-deferred-q16-c-iii',
 ]);
 const economicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('econ-'));
 /* Agricultural Science keeps its 869 pre-audit IDs frozen (438 Higher + 431
@@ -1887,7 +1912,8 @@ describe('Mark Bank card preservation', () => {
     // + 71 for 2011 Ordinary (1376 -> 1447).
     // + 54 for 2010 Higher (1447 -> 1501).
     // + 65 for 2010 Ordinary (1501 -> 1566).
-    expect(economicsAdditionIds.size).toBe(1566);
+    // + 70 for 2022 Higher, the deferred sitting (1566 -> 1636).
+    expect(economicsAdditionIds.size).toBe(1636);
     expect(economicsAliasIds).toHaveLength(36);
     for (const id of economicsAdditionIds) {
       const deck = id.includes('-hl-') ? higher : ordinary;
@@ -1904,7 +1930,7 @@ describe('Mark Bank card preservation', () => {
     }
     const additions = (level: string) => [...economicsAdditionIds].filter(id => id.includes(level)).length;
     const aliased = (level: string) => economicsAliasIds.filter(id => id.includes(level)).length;
-    expect([additions('-hl-'), aliased('-hl-'), additions('-ol-'), aliased('-ol-')]).toEqual([785, 24, 781, 12]);
+    expect([additions('-hl-'), aliased('-hl-'), additions('-ol-'), aliased('-ol-')]).toEqual([855, 24, 781, 12]);
     expect(ECON_HIGHER).toHaveLength(383 - aliased('-hl-') + additions('-hl-'));
     expect(ECON_ORDINARY).toHaveLength(314 - aliased('-ol-') + additions('-ol-'));
   });

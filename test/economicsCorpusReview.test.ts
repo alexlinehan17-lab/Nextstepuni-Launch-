@@ -6,6 +6,7 @@ import { CARDS as ORDINARY_CARDS } from '../components/MarkBank/cards/economics/
 import { isPointCard, type SecDiagramCard, type SecPointCard, type SecQuestionCard } from '../types/markBank';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import { reviewedArchiveEntries } from '../components/PaperTrail/indexLookup';
+import { PAPER_TRAIL_INDEX } from '../paperTrailData';
 import { curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/examTopics/registry';
 import reviews from '../data/examTopics/economics-sec-topic-reviews.json';
 import inventory from '../scripts/markbank/authoring/economics-source-inventory.json';
@@ -30,6 +31,7 @@ import higher2011Review from '../scripts/markbank/authoring/reviews/economics-20
 import ordinary2011Review from '../scripts/markbank/authoring/reviews/economics-2011-ol-ev.json';
 import higher2010Review from '../scripts/markbank/authoring/reviews/economics-2010-hl-ev.json';
 import ordinary2010Review from '../scripts/markbank/authoring/reviews/economics-2010-ol-ev.json';
+import higher2022DeferredReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-deferred-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -89,7 +91,11 @@ if (CARDS.length !== HIGHER_CARDS.length || ORDINARY.length !== ORDINARY_CARDS.l
   throw new Error('Economics ships a card that is not a marking-point card');
 }
 
-const sectionA = CARDS.filter(card => card.year === 2022 && card.section === 'A');
+// The 2022 Higher deferred sitting is a paper of its own ("econ-2022-hl-deferred-"):
+// the June 2022 Higher checks below read June's cards alone.
+const june = (card: { id: string }) => !card.id.includes('-deferred-');
+const sectionA = CARDS.filter(card => card.year === 2022 && june(card) && card.section === 'A');
+const cards2022Deferred = () => CARDS.filter(card => card.id.startsWith('econ-2022-hl-deferred-'));
 
 describe('Economics SEC source review (completion remains pending)', () => {
   it('carries 2024 Ordinary Irish labels, field order and the missing tariff explanation', () => {
@@ -331,9 +337,12 @@ describe('Economics SEC source review (completion remains pending)', () => {
   });
 
   it('inventories every indexed paper, including earlier years and Irish editions', () => {
-    // The reviewed window: June sittings 2010-2026 (pre-2010 and deferred
-    // papers are archive-only).
-    const indexed = reviewedArchiveEntries('economics').flatMap(entry => entry.papers.map(paper =>
+    // The reviewed window: June sittings 2010-2026 and the 2022 Higher deferred
+    // sitting in English, its own paper (pre-2010 papers are archive-only).
+    const indexed = [
+      ...reviewedArchiveEntries('economics'),
+      ...(PAPER_TRAIL_INDEX.economics ?? []).filter(entry => entry.sitting === 'deferred' && entry.lang === 'ev'),
+    ].flatMap(entry => entry.papers.map(paper =>
       [entry.year, entry.level, entry.lang, paper.doc.f].join('|'))).sort();
     const inventoried = inventory.papers.map(paper =>
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
@@ -342,7 +351,8 @@ describe('Economics SEC source review (completion remains pending)', () => {
     // Old syllabus English: every sitting from 2010 through 2020 Higher reviewed (variants 19-39).
     expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(27);
     expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(33);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(39);
+    // ... and the 2022 Higher deferred sitting (variant 40).
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(40);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -396,7 +406,7 @@ describe('Economics SEC source review (completion remains pending)', () => {
   });
 
   it('matches the independent visual census, including every reviewed tariff and source page', () => {
-    const cards = CARDS.filter(card => card.year === 2022);
+    const cards = CARDS.filter(card => card.year === 2022 && june(card));
     const tasks = paperReview.questions.flatMap(question => question.tasks);
     expect(tasks).toHaveLength(75);
     expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
@@ -681,7 +691,7 @@ print('targeted evidence mutations rejected')
       expect(card(s).figure?.solution, s).toBe(true);
       expect(card(s).questionFigure?.src, s).toContain(`economics-2022-HL-paper-${crop}-question.png`);
     }
-    for (const c of CARDS.filter(item => item.year === 2022 && item.questionFigure)) {
+    for (const c of CARDS.filter(item => item.year === 2022 && june(item) && item.questionFigure)) {
       expect(c.figure?.solution, c.id).toBe(true);
     }
     // Data figures are cropped to the data alone, not to neighbouring asks or answer boxes.
@@ -703,7 +713,7 @@ print('targeted evidence mutations rejected')
     expect(card('sa-q5-a').rows[0].group?.options).toHaveLength(4);
     expect(card('sa-q5-a').rows[0].group?.options.join(' ')).not.toContain('Adapted from');
     expect(card('q11-a-ii').rows[0].group?.options).toHaveLength(5);
-    const text = CARDS.filter(c => c.year === 2022)
+    const text = CARDS.filter(c => c.year === 2022 && june(c))
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows])).join('\n');
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'Adapted from', 'Leaving Certificate']) {
       expect(text, junk).not.toContain(junk);
@@ -2020,6 +2030,81 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     const text = ORDINARY.filter(c => c.year === 2010)
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 70 independently counted 2022 Higher deferred routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.id.startsWith('econ-2022-hl-deferred-'));
+    const tasks = higher2022DeferredReview.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(70);
+    expect(higher2022DeferredReview.fileid).toBe('LC034ALP000EV-deferred');
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    expect(cards.filter(card => card.section === 'A')).toHaveLength(23);
+    for (const question of higher2022DeferredReview.questions) {
+      const n = Number(question.n);
+      // The deferred booklet joins on its own file id, never on June's Q of the same number.
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2022, 'main', question.n,
+        'single', 'ev', 'LC034ALP000EV-deferred.pdf').flatMap(curriculumNodeIdsForExamTopic);
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.sourceMaterial?.sourceFileid, task.cardId).toBe('LC034ALP000EV-deferred');
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV-deferred');
+        expect(card.schemeCitation, task.cardId).toContain('2022 Higher Level, deferred examination');
+        expect(card.questionRef.startsWith(`2022 HL ${n <= 10 ? 'Section A ' : ''}Q${n}(`), task.cardId).toBe(true);
+        expect(card.questionRef.endsWith(' — Deferred sitting'), task.cardId).toBe(true);
+      }
+      // Section A 15, its printed (b) or (c) alternatives counted once; Section B 75.
+      const once = question.tasks.filter(task => !([5, 7, 9].includes(n) && task.key === 'c'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `Q${question.n}`).toBe(n <= 10 ? 15 : 75);
+    }
+  });
+
+  it('reads the 2022 Higher deferred scheme\'s open prices with a visible note on each card', () => {
+    const card = (s: string) => CARDS.find(c => c.id === `econ-2022-hl-deferred-${s}`)!;
+    const notes = (s: string) => card(s).rows.map(r => r.contextNote).join(' ');
+    // Q1: both tariffs printed beside (a); (a) asks for two, so it takes the 6 and (b) the 3 x 3.
+    expect(card('sa-q1-a').rows[0].group).toMatchObject({ claimMax: 2, perOption: 3 });
+    expect(card('sa-q1-b').rows[0].group).toMatchObject({ claimMax: 3, perOption: 3 });
+    expect(notes('sa-q1-a')).toContain('1 x 6 (3+3)');
+    // One response asked, "2 x 4 (2+2)" printed: the one response earns the part's 8.
+    for (const s of ['sa-q9-b', 'sa-q9-c']) {
+      expect(card(s).rows[0].group, s).toMatchObject({ claimMax: 1, perOption: 8 });
+      expect(notes(s), s).toContain('2 x 4');
+    }
+    // "7 (4+3)" with no number asked is one response, as beside the asks for one benefit.
+    for (const s of ['sa-q10-b', 'q12-c-i']) expect(card(s).rows[0].group, s).toMatchObject({ claimMax: 1, perOption: 7 });
+    // Two prices read in the order the paper asks and the scheme answers.
+    expect(card('q12-b-ii').rows.map(r => r.marks)).toEqual([6, 4]);
+    expect(card('q16-a-ii').rows.map(r => r.marks)).toEqual([8, 4]);
+    expect(card('sa-q3-b').rows.map(r => r.marks)).toEqual([3, 2]);
+    // "6 (2 x 3)" beside three effects: any two at 3.
+    expect(card('q16-b-i').rows[1].group).toMatchObject({ claimMax: 2, perOption: 3 });
+    // The scheme's misprints are named, never silently corrected in its words.
+    expect(notes('q12-a-i')).toContain('2001');
+    expect(notes('q11-b-i')).toContain('00%');
+    // One-sided printed choices are one card on the scheme's side.
+    expect(card('sa-q4-b').rows[1].verbatim.startsWith('No — ')).toBe(true);
+    expect(card('q11-a-iii').rows[0].verbatim).toBe('Expansionary');
+    expect(card('sa-q8-b').rows[0].verbatim).toBe('True');
+    // Every drawing answer is held back as the scheme's solution figure; the printed data is shown.
+    for (const c of cards2022Deferred()) {
+      if (c.rows.some(r => r.ask)) expect(c.figure?.solution, c.id).toBe(true);
+      if (c.questionFigure) {
+        expect(c.figure?.solution, c.id).toBe(true);
+        expect(c.questionFigure.includesPrompt, c.id).toBe(false);
+      }
+    }
+    const asked = cards2022Deferred().map(c => c.questionText);
+    expect(new Set(asked).size).toBe(asked.length);
+    const text = cards2022Deferred()
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'Adapted from', 'Leaving Certificate']) {
       expect(text, junk).not.toContain(junk);
     }
   });

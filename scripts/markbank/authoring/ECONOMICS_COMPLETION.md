@@ -2818,3 +2818,84 @@ Checks:
 - reconcile: 2,198/2,198 (100%), with 2010 OL at 74/74, 0 excluded, 0 open.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2022 Higher English, deferred sitting (lane, 2026-11-04)
+
+The SEC's deferred examination is a paper of its own. The archive files it
+under deferredexams/ and deferredmarkingschemes/ with the June file id, and
+Paper Trail indexes it as "LC034ALP000EV-deferred". Every card says so twice,
+in its id ("econ-2022-hl-deferred-...") and its citation ("... — Deferred
+sitting"), and reconcile reads the two together. It is the only deferred
+Economics sitting in the archive: 2022 Higher, no Ordinary, nothing later.
+
+All 40 paper pages and all 40 scheme pages were viewed. The scheme PDF page
+is the printed page, and pages 37-40 are blank and the back cover. The hand
+count of the printed asks is 70 (Section A 23, Section B 47), the same as the
+reader's. There are 70 cards, one per printed ask. Section A answers "(b) or
+(c)" in Q5, Q7 and Q9, and both alternatives are carded. Q6(b) "ANY TWO of A,
+B, OR C" is one card claimed twice at 3.
+
+Stems and asks are sliced from the deferred paper, and every marking point
+from 2022-hl-deferred.md (its text extracted with
+economics/tools/gen_md_deferred.sh). The deferred scheme draws every glyph it
+prints, so June's glyph repairs are not applied to it.
+
+Prices the scheme leaves open. Each card carries its reason in a visible note:
+- A Q1: "1 x 6 (3+3)" and "3 x 3 (1+2)" are printed together beside (a), and
+  nothing is printed beside (b). (a) asks for two consequences, so it takes
+  the 6 (3 + 3), and (b) takes the 3 × 3 (1 + 2). Together they make the
+  question's 15.
+- A Q3(b): 1 × 3 and 1 × 2 are printed beside two headings, "+ sign" and
+  "Number". Read in that order, the sign earns 3 and the number 2.
+- A Q6(a): "Any 3 x 3" is printed beside one definition with three parts in
+  bold. Each part earns 3.
+- A Q9(b) and (c) each ask for one response, but the scheme prints "2 x 4
+  (2+2)", 8 marks. The one response is assessed against the part's 8.
+- A Q10(b) and Q12(c)(i) print "7 (4+3)" and ask for no number. This is one
+  response, as the same price is beside the asks for one benefit in
+  Q12(c)(ii) and (iii).
+- Q11(b)(i): 4 (2 × 2) beside each country. That is 2 for the outcome and 2
+  for the figures.
+- Q12(b)(ii) prints "1 x 6 (3+3)" and "1 x 4 (2+2)", and Q16(a)(ii) prints
+  "1 x 8 (4+4)" and "1 x 4 (2+2)". Each is one card with two groups, read in
+  the order the paper asks and the scheme answers: the advantage or positive
+  effect earns the larger price.
+- Q16(b)(i): "6 (2 x 3)" is printed beside three effects. Any two earn 3 each.
+- Diagrams the scheme prices by label: Q2(a) has seven labels at 1, Q12(b)(i)
+  nine at 1 with eight marked explanation points, and Q15(a)(i) four at 2.
+  These are claimed label by label, lifted from the scheme. Diagrams it prices
+  without naming the elements are ask rows, each with the scheme's diagram as
+  the hidden solution: A Q4(b), Q11(c)(i) 13 × 1, Q14(b)(i) and (ii), Q14(c)(i)
+  4 × 3, Q15(b)(i) and (ii) 3 × 2, Q16(b)(i) and Q16(c)(iii).
+
+The scheme answers some printed choices on one side only, so each is one card
+on that side: A Q4(b) No, A Q8(a) Yes, A Q8(b) True, Q11(a)(iii) Expansionary,
+Q12(b)(iii) Agree, Q13(c)(i) No and Q14(a)(iii) regressive.
+
+The scheme's misprints are named in the notes, never corrected in its words.
+Q12(a)(i) heads 2021 "2001", Q11(b)(i) writes 00% for exports to Great Britain
+(the chart shows 10%), and A Q2(a) writes "form" for "from". Q14(a)(ii): the
+paper asks for a "fair" tax system and the scheme answers for a "modern" one.
+
+Topic review: 16 SEC topic reviews keyed to "LC034ALP000EV-deferred.pdf". The
+reference's 38 "Deferred Exam Paper" headings were source-blocked until now.
+They now resolve to this paper: 33 match, and 5 are reference anomalies.
+- Q8 under the market economy. It covers sustainability and market failure.
+- Q11 Part C under the market economy and under government intervention. The
+  circular flow is national income.
+- Q14 under topical questions and statistics, a study-aid heading.
+- Q15 under economic concepts. It covers the market for electric vehicles and
+  subsidies.
+
+The deferred booklet is numbered 1-16 like June's. So its reviews join on the
+booklet (registry FILE_QUESTION_TOPICS), and the Atlas's question identity
+keeps its questions apart from June's.
+
+Checks:
+- econ_review: 40/67.
+- build: 2,297 cards, 0 dropped. Every June card is byte-identical.
+- Build rule: 291 claims on this paper, 0 untraceable.
+- reconcile: 2,268/2,268 (June 2,198 + deferred 70), 0 excluded, 0 open, 0
+  orphans.
+- refcheck: 0 wrong. Two five-word asks were read by hand.
+- cardlint: clean.

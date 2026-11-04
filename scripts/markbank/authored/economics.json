@@ -73020,6 +73020,3345 @@
   "notes": ""
  },
  {
+  "id": "econ-2022-hl-deferred-sa-q1-a",
+  "topicId": "economics-4-1",
+  "conceptId": "benefits-of-fdi-inflows",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q1(a) — Deferred sitting",
+  "questionText": "Using the above data, outline two positive economic consequences associated with this increase in FDI inflows into Ireland.",
+  "stem": "The chart below shows the amounts of foreign direct investment (FDI) into Ireland between 2008 and 2019.",
+  "figureKey": "economics-2022-HL-deferred-paper-p03-q1-chart",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 3",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A positive consequence of FDI inflows — any two",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two consequences, 3 marks each. The scheme prints “1 x 6 (3+3)” and “3 x 3 (1+2)” together beside (a) and nothing beside (b). (a) asks for two consequences, so it takes the 6 (3 + 3) and (b) the 3 × 3, which makes the question’s 15.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Increased Employment - Creation of jobs is the most obvious advantage of FDI. It is estimated that 20% of all private sector employment in the State is directly or indirectly attributable to FDI. Increased FDI boosts the manufacturing as well as the services sector. This in turn creates jobs and helps reduce unemployment.",
+      "Taxation revenue - FDI contributes significant taxation revenue to the Exchequer especially corporation tax (which is over 20% of all taxation revenue for the government). FDI also generates other commercial activity across the economy and helps to increase tax revenues through income taxes and VAT (through spending).",
+      "Increase in Exports – many companies who locate in Ireland do so for access to the EU. So much of their output have global markets. This improves Irelands balance of trade/payments.",
+      "Increased Economic Growth - increased investment is an injection into the circular flow of income and will encourage further economic growth. The national income formula of C+I+G+X-M indicates that an increase in investment into the Irish economy is likely to have a multiplier effect overall.",
+      "Human Resource Development - skills gained and enhanced through training and experience boost the education and human capital quotient of the country.",
+      "Investment in research and innovation – the location of these firms may aid investment into R&D by the firms themselves and by those firms who supply them. This will boost R&D in Ireland and may further add to Ireland’s attractiveness to FDI."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q1-b",
+  "topicId": "economics-4-1",
+  "conceptId": "why-firms-invest-abroad",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q1(b) — Deferred sitting",
+  "questionText": "Outline reasons why a firm may decide to invest in countries outside their home country.",
+  "stem": "The chart below shows the amounts of foreign direct investment (FDI) into Ireland between 2008 and 2019.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 3",
+   "answer": 3,
+   "ofParts": 5,
+   "perPart": 3
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to invest abroad — any three",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three reasons, 3 marks each (1 + 2). The paper does not say how many; the scheme prints its “3 x 3 (1+2)” beside (a), and (a) asks for two consequences, so the 3 × 3 is this part’s.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Increase efficiency - companies invest in different locations so that each product can be manufactured wherever it is most cost-effective to do so e.g. Volkswagen’s headquarters are in Germany, but it produces and assembles cars in different parts of the world to cut costs. For example, it has access to the entire North American market via NAFTA from its assembly plants in Mexican states.",
+      "Cheaper labour costs – some companies locate in those countries which have lower wage costs &/or less restrictive regulations so that their costs are reduced.",
+      "Seek larger markets/profits – companies may locate in those countries which have large domestic markets &/or access to markets which are emerging. This will allow increased sales and profits.",
+      "Lower taxation rates – companies who can will locate in those countries with the lowest corporation tax rates so that profits are not taxed as heavily. In the past this was cited as a reason why companies located here.",
+      "Decrease exposure - companies invest overseas to decrease exposure to one market. This is desirable as it results in international diversification and entails benefits for the companies."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q2-a",
+  "topicId": "economics-1-0",
+  "conceptId": "a-fall-in-supply-on-the-market-diagram",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q2(a) — Deferred sitting",
+  "questionText": "Explain, with the aid of a fully labelled diagram, the impact this undersupply of logs will have on the market equilibrium, shown below.",
+  "stem": "The shortage of timber is set to deteriorate as the supply of logs tightens in Ireland.",
+  "figureKey": "economics-2022-HL-deferred-scheme-p05-q2a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 + 3 x 1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-labels",
+    "kind": "anyN",
+    "verbatim": "The diagram — one mark for each label",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The diagram, 7 marks: the scheme prices each of its seven labels at 1 (S, S2, D, P1, P2, Q1, Q2). Supply shifts left from S to S2 and the price rises from P1 to P2. The official diagram is shown in the figure.",
+    "group": {
+     "claimMax": 7,
+     "perOption": 1,
+     "options": [
+      "S",
+      "S2",
+      "D",
+      "P1",
+      "P2",
+      "Q1",
+      "Q2"
+     ]
+    }
+   },
+   {
+    "id": "r-shift",
+    "kind": "point",
+    "verbatim": "The undersupply of logs means that the supply curve shifts to the left from S to S2.",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The explanation, 3 × 1: the supply curve shifts left."
+   },
+   {
+    "id": "r-cause",
+    "kind": "point",
+    "verbatim": "There is a decrease in supply caused by an unplanned factor (Covid -19).",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The decrease in supply has an unplanned cause."
+   },
+   {
+    "id": "r-price",
+    "kind": "point",
+    "verbatim": "The price increases form P1 to P2.",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The price rises from P1 to P2 (the scheme prints “form” for “from”)."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2022-HL-deferred-paper-p04-q2a-diagram",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q2-b",
+  "topicId": "economics-0-1",
+  "conceptId": "the-meaning-of-scarcity",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q2(b) — Deferred sitting",
+  "questionText": "Explain the meaning of the economic concept scarcity.",
+  "stem": "The shortage of timber is set to deteriorate as the supply of logs tightens in Ireland.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Scarcity — any wording",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Explain the term, 5 marks; the scheme gives three wordings of the same idea.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "The supply of resources / factors of production are limited and the demand is unlimited.",
+      "Quantity of goods and service people like to have, exceeds the amount which the country’s economy is capable of producing.",
+      "Our wants are infinite and our income is limited and therefore choices must be made."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q3-a",
+  "topicId": "economics-1-4",
+  "conceptId": "income-elasticity-of-demand-by-formula",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q3(a) — Deferred sitting",
+  "questionText": "Using an appropriate formula, calculate the income elasticity of demand (YED) for mobile phones.",
+  "stem": "The table below shows the annual average level of income in a country and the corresponding demand for mobile phones for the two years 2020 and 2021.",
+  "figureKey": "economics-2022-HL-deferred-paper-p05-q3-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 x 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-dq",
+    "kind": "point",
+    "verbatim": "Change in quantity — 125",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme prints 5 × 2: one 2 for each of the five figures in its working. The change in quantity demanded, 275 − 150."
+   },
+   {
+    "id": "r-dy",
+    "kind": "point",
+    "verbatim": "Change in income — 5,000",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The change in income, 65,000 − 60,000."
+   },
+   {
+    "id": "r-sum-y",
+    "kind": "point",
+    "verbatim": "60,000 + 65,000 (125,000)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The sum of the two incomes."
+   },
+   {
+    "id": "r-sum-q",
+    "kind": "point",
+    "verbatim": "150 + 275 (425)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The sum of the two quantities."
+   },
+   {
+    "id": "r-answer",
+    "kind": "point",
+    "verbatim": "= + 7.35",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The answer: YED = (125 ÷ 5,000) × (125,000 ÷ 425) = +7.35."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q3-b",
+  "topicId": "economics-1-4",
+  "conceptId": "reading-a-yed-figure",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q3(b) — Deferred sitting",
+  "questionText": "Using your knowledge of YED, explain the economic meaning of the figure you calculated in part (a) above.",
+  "stem": "The table below shows the annual average level of income in a country and the corresponding demand for mobile phones for the two years 2020 and 2021.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-sign",
+    "kind": "point",
+    "verbatim": "+ sign: This is a normal good – It has a positive income effect. As income increased, quantity demanded increased.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The sign, 3 marks: a positive YED is a normal good. The scheme prints 1 × 3 and 1 × 2 beside (b) and sets its answer under two headings, “+ sign” and “Number”; read in that order, the sign earns 3 and the number 2."
+   },
+   {
+    "id": "r-number",
+    "kind": "point",
+    "verbatim": "Number: +7.35 The good is income elastic – it is greater than 1 in absolute terms. The percentage increase in quantity demanded is greater than the percentage increase in income. As income rises, consumers spend proportionally more on the good. The good is a luxury good.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The number, 2 marks: greater than 1, so the good is income elastic, a luxury."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q4-a",
+  "topicId": "economics-1-3",
+  "conceptId": "why-ban-ticket-touting",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q4(a) — Deferred sitting",
+  "questionText": "Outline two reasons why the government introduced this legislation.",
+  "stem": "A new law banning ticket touting / ticket scalping came into effect in July 2021. It prohibits the reselling of tickets above face value for designated events (an attendance of above 1,000 people).",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason for the legislation — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two reasons, 4 marks each (2 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Prevent consumer exploitation – the legislation protects against profiteers seeking to unfairly gain from the resale of tickets and this prevents consumers from being exploited against unfair ticket prices.",
+      "Promote fairer access to tickets - genuine fans will now have fairer access to tickets for cultural, entertainment, recreational and sporting events.",
+      "Discourage the shadow economy – by introducing legislation (fines) it discourages ticket touts from engaging in the shadow economy. This will also benefit businesses in the legitimate economy."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q4-b",
+  "topicId": "economics-1-2",
+  "conceptId": "a-fixed-supply-of-tickets",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q4(b) — Deferred sitting",
+  "questionText": "The maximum capacity of the Croke Park stadium is 82,300 spectators. In your opinion, will the new law alter the supply curve of tickets available for the All‐Ireland finals to be held in Croke Park this year? Yes: No: Explain your answer with the aid of a fully labelled diagram.",
+  "stem": "A new law banning ticket touting / ticket scalping came into effect in July 2021. It prohibits the reselling of tickets above face value for designated events (an attendance of above 1,000 people).",
+  "figureKey": "economics-2022-HL-deferred-scheme-p07-q4b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 x 1 + 2 x 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "point",
+    "verbatim": "Explain your answer with the aid of a fully labelled diagram.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The diagram, 3 × 1: one mark for each label the scheme marks, the vertical supply line S1, the quantity Q1 and 82,300. Compare yours with the official diagram shown after you answer.",
+    "ask": true
+   },
+   {
+    "id": "r-fixed",
+    "kind": "point",
+    "verbatim": "No — The supply of tickets available for the All-Ireland finals is fixed at 82,300.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Tick NO. The scheme answers “No, the law will not change this.” and prices the two sentences that follow 2 × 2: the supply is fixed at 82,300."
+   },
+   {
+    "id": "r-unchanged",
+    "kind": "point",
+    "verbatim": "Regardless of price and the new law, the seating capacity/supply curve will not change.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The supply curve does not move, whatever the price."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q5-a",
+  "topicId": "economics-4-2",
+  "conceptId": "irelands-comparative-advantage-for-data-centres",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q5(a) — Deferred sitting",
+  "questionText": "Outline two sources of comparative advantage that Ireland offers, which helps to attract data centres in particular.",
+  "stem": "Ireland has one of the fastest growing data centre markets in Europe. Currently, most data centres in Ireland are located in Dublin with others in Cork, Limerick and Galway. (A data centre is a remote place, with many servers, used for the storage, processing and distribution of information.)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A source of comparative advantage — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two sources: the first correct one 4 marks and the second 3.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Climate – Ireland has a cool temperate climate. This is an ideal climate to attract data centres as these large storage facilities would require larger investment in cooling systems in warmer climates. This acts as a source of comparative advantage.",
+      "Educated/Skilled workforce – Data centres require a highly skilled workforce to operate them and Ireland, with its high level of skilled workforce, provides this for companies wishing to set up here.",
+      "Low taxes on profits – Companies operating in Ireland currently pay corporation tax at a rate of 12.5%. This low rate of tax is a source of comparative advantage and helps to attract many data centres to Ireland.",
+      "Access to EU markets – By locating in Ireland which is in the EU, companies have access to EU markets which has a market close to 500 million people."
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q5-b",
+  "topicId": "economics-3-5",
+  "conceptId": "benefits-of-rural-broadband",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q5(b) — Deferred sitting",
+  "questionText": "The €5.7 bn rural broadband scheme is far behind its initial roll out target. The National Broadband plan remains a focus of the Irish government. Outline two benefits of the rural broadband scheme to rural communities.",
+  "stem": "Ireland has one of the fastest growing data centre markets in Europe. Currently, most data centres in Ireland are located in Dublin with others in Cork, Limerick and Galway. (A data centre is a remote place, with many servers, used for the storage, processing and distribution of information.)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A benefit of the rural broadband scheme — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two benefits, 4 marks each (2 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Improved standard of living: the NBP will ensure that all people and businesses have access to high-speed broadband, no matter where they live or work. Once completed, all parts of Ireland will have access to a modern and reliable broadband network which should result in a more efficient service, enhanced entertainment options leading to an improved standard of living.",
+      "Option of remote/tele working – the rural broadband scheme should give rural residents the option of remote/tele working which could lead to productivity gains.",
+      "Equitable service for all - the National Broadband Plan (NBP) is the government's plan to deliver high speed broadband services to all businesses, farms and households in Ireland. It will ensure that everyone in Ireland will have equal access to a high-speed broadband service.",
+      "Protection of the environment – the scheme should help to mitigate emissions with a rise in remote/tele working which should help with the sustainable development goals.",
+      "Education – With improved access, learning outcomes should be enhanced through engaging interactive activities.",
+      "Viable rural communities – the availability of broadband should allow the continued existence of vibrant rural communities / increased economic activity / reduced pressure in urban areas."
+     ]
+    }
+   }
+  ],
+  "notes": "Answer (b) or (c)."
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q5-c",
+  "topicId": "economics-3-5",
+  "conceptId": "why-support-balanced-regional-development",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q5(c) — Deferred sitting",
+  "questionText": "Explain two reasons why government policies should support balanced regional development.",
+  "stem": "Ireland has one of the fastest growing data centre markets in Europe. Currently, most data centres in Ireland are located in Dublin with others in Cork, Limerick and Galway. (A data centre is a remote place, with many servers, used for the storage, processing and distribution of information.)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to support balanced regional development — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two reasons, 4 marks each (2 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "To promote employment creation - regional development will help maintain and create employment in rural areas.",
+      "To help maintain local services - services which are essential will be maintained e.g. education, banking, post offices, hospitals etc.",
+      "To reduce numbers leaving rural areas – if jobs are maintained then it may result in lower numbers emigrating and a decline in the urbanisation of Ireland.",
+      "To promote / support more vibrant communities – the areas will be more attractive areas to live in and this will help retain more of the population.",
+      "To promote a sustainable economy – the government must move to correct the growing disparity in the standard of living and the distribution of population between rural and urban Ireland. This means ensuring that investment and economic activity is spread broadly across the regions, and not concentrated entirely on Dublin and surrounding areas.",
+      "So that all citizens are treated fairly – government policies should aim that everyone, no matter where they live, have access to the same services, employment opportunities so that the standard of living for citizens can be equitable throughout the country."
+     ]
+    }
+   }
+  ],
+  "notes": "Answer (b) or (c)."
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q6-a",
+  "topicId": "economics-3-0",
+  "conceptId": "gnp-at-current-market-prices",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q6(a) — Deferred sitting",
+  "questionText": "Explain the term GNP at current market prices.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-output",
+    "kind": "point",
+    "verbatim": "total output / value of goods and services",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints “Any 3 x 3” beside its one definition and sets three parts of it in bold: one 3 for each part. The total output, or value, of goods and services."
+   },
+   {
+    "id": "r-irish",
+    "kind": "point",
+    "verbatim": "Irish-owned factors of production / in Ireland and elsewhere",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Produced by Irish-owned factors of production, in Ireland and elsewhere."
+   },
+   {
+    "id": "r-prices",
+    "kind": "point",
+    "verbatim": "measured by current market prices",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Measured at current market prices."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q6-b",
+  "topicId": "economics-3-0",
+  "conceptId": "gnp-gni-and-gni-star-from-the-national-accounts",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q6(b) — Deferred sitting",
+  "questionText": "The data below has been adapted from Ireland’s National Accounts for 2020. Given that Gross Domestic Product (GDP) at Current Market Prices (CMP) is €372bn, use the information above to calculate ANY TWO of the following terms A, B, OR C. State the relationships and show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-deferred-paper-p09-q6b-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure, its relationship and its working — any two",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Any two of A, B or C, 3 marks each: the relationship stated and the working to its answer. GNP €281.8 bn, GNI €282.9 bn, GNI* €207.3 bn.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "(A) GNP at current market prices = GDP +/– net factor income €372 bn - €90.2 bn = €281.8 bn",
+      "(B) GNI at CMP = GNP at current market prices + EU subsidies and – EU taxes €281.8 bn + €1.5 bn - €0.4 bn = €282.9",
+      "(C) Modified GNI at CMP (GNI*) = GNI at CMP – Adjustments €282.9 bn - €75.6 bn = €207.3"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q7-a",
+  "topicId": "economics-0-2",
+  "conceptId": "irish-measures-to-protect-the-environment",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q7(a) — Deferred sitting",
+  "questionText": "The Irish government is committed to protecting the environment. Outline two measures the government introduced in Ireland to address this aim.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure to protect the environment — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two measures: the first correct one 4 marks and the second 3.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Increased carbon tax – Budget 2022 commits €202 million in carbon tax revenue to fund the SEAI residential and community retrofit schemes and a further €10 million from the exchequer for the Solar PV scheme. This investment will support over 22,000 home energy upgrades. It will deliver warmer, healthier and more comfortable homes with lower energy bills. It will also reduce emissions from the residential sector and improve air quality",
+      "Grants for electric cars – a maximum grant of €5,000 is currently available for qualifying new battery electric vehicles when purchased privately and €3,800 for commercially bought EVs. These grants make EVs more financially viable and encourages the purchase of these vehicles over the petrol or diesel vehicles.",
+      "Grants for retrofitting houses – In Budget 2022, The Minister for Housing, Local Government and Heritage will invest €85 million as part of the Local Authority Retrofit Programme in 2022. This will deliver many retrofits of Local Authority homes next year making them more energy efficient and reduce emissions.",
+      "Investment in renewable energy - €31 million is being provided for improving energy efficiency and increasing the use of renewable energy in businesses and across the public sector"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q7-b",
+  "topicId": "economics-4-0",
+  "conceptId": "why-ireland-assists-less-developed-nations",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q7(b) — Deferred sitting",
+  "questionText": "During COP 2021, Ireland pledged to double its contribution to assist less developed nations in their fight against climate change. Outline two reasons, other than climate change, why Ireland is committed to assisting less developed nations. Note: COP 2021 (Conference of the Parties on world climate change)",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 7,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason Ireland assists less developed nations — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two reasons other than climate change, 4 marks each (2 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Attain sustainable development goals - the SDGs provide the overarching framework for Ireland’s international development policy. Irelands focus is on poverty reduction and delivering for the poorest and most vulnerable.",
+      "To promote economic development - help improve the welfare of citizens.",
+      "Humanitarian reasons - to provide help in times of urgent need and prevent deaths.",
+      "Reduce poverty, hunger etc - to help citizens survive in times of famine.",
+      "Improve access and quality of education for all - so that poverty can be reduced.",
+      "Provide access to clean water and sanitation -to help contain the spread of unnecessary disease.",
+      "Meet UN target of 0.7% of GNI to ODA: a stated aim of the Irish government."
+     ]
+    }
+   }
+  ],
+  "notes": "Answer (b) or (c)."
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q7-c",
+  "topicId": "economics-4-0",
+  "conceptId": "challenges-of-relying-on-international-aid",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q7(c) — Deferred sitting",
+  "questionText": "Outline two challenges for less developed nations of relying on international aid.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A challenge of relying on international aid — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two challenges, 4 marks each (2 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Reduced incentive to increase economic growth – by relying on international aid, there may be a reduced incentive for the governments of these nations to pursue policies which increase economic growth.",
+      "May develop a culture of dependency in some countries and this may re-enforce this dependency limiting economic growth and development.",
+      "The aid may not be in the desired form – if it focuses on food/emergency aid then economic projects that focus on developing the secondary and tertiary sectors may not take place.",
+      "Ensuring the aid gets to those most in need – if the aid ends up in the hands o f a ruling elite and/or spent on miliary materials it will not help those in most need and could lead to civil unrest.",
+      "Misuse of the international aid – if the aid is not used for infrastructural development it will not lead to economic self-sufficiency and help the productive capacity of these nations or help diversify the nations productive capacity.",
+      "Difficulties may arise when if the aid must be repaid – it may add to the nations high national debt and add to difficulties when repaying. Conditions may be attached to the aid which may limit the choices for future governments."
+     ]
+    }
+   }
+  ],
+  "notes": "Answer (b) or (c)."
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q8-a",
+  "topicId": "economics-0-2",
+  "conceptId": "is-a-world-of-8-billion-sustainable",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q8(a) — Deferred sitting",
+  "questionText": "As world population has increased, so too has CO2 emissions. World population is estimated to reach close to 8 billion by 2040. According to some experts this could be unsustainable. Do you agree with this statement? Explain your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-yes",
+    "kind": "point",
+    "verbatim": "Yes as unless human behaviour changes it may not be possible for the world’s resources to sustain / cope with a population of 8 bn.",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Agree, 7 marks. The paper asks whether you agree; the scheme answers Yes and prints no case for disagreeing."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q8-b",
+  "topicId": "economics-2-2",
+  "conceptId": "electric-cars-as-a-market-failure",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q8(b) — Deferred sitting",
+  "questionText": "5% of new private cars purchased in 2020 in Ireland were electric‐powered vehicles. This is a good example of a market failure. In your opinion, is the statement above true or false? Explain your choice. Indicate your answer by ticking (✓) the box. True: False:",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-true",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Tick TRUE, 2 marks: the scheme ticks True."
+   },
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "Market failure occurs when economic resources are not allocated efficiently, caused by the price mechanism in the market working imperfectly. This can be seen in the electric-powered vehicle market. In this market there is partial market failure as the market produces a price or the quantity supplied is unsatisfactory. The high price charged for EV’s means that the market has failed.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The explanation, 6 marks: what market failure is, and the high price of electric vehicles as a partial market failure."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q9-a",
+  "topicId": "economics-1-5",
+  "conceptId": "total-and-marginal-revenue",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q9(a) — Deferred sitting",
+  "questionText": "Complete the total revenue column and the marginal revenue column in the table above. Show all your workings.",
+  "stem": "The table below shows the daily revenue for Headhunters, a local hairdressing salon.",
+  "figureKey": "economics-2022-HL-deferred-scheme-p12-q9a-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 x 1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-total",
+    "kind": "anyN",
+    "verbatim": "Total revenue — the four cells",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme prints 7 × 1: one mark for each completed cell. Total revenue is quantity × average revenue, four cells.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "15 x 21 = €315",
+      "18 x 19 = €342",
+      "22 x 17 = €374",
+      "28 x 15 = €420"
+     ]
+    }
+   },
+   {
+    "id": "r-marginal",
+    "kind": "anyN",
+    "verbatim": "Marginal revenue — the three cells",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Marginal revenue, three cells: the change in total revenue (the scheme also divides by the change in quantity, in brackets). The completed table is shown in the figure.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "€342 - €315 = €27 (divide by 3 = €9)",
+      "€374 - €342 = €32 (divide by 4 = €8)",
+      "€420 - €374 = €46 (divide by 6 = €7.7)"
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2022-HL-deferred-paper-p12-q9-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q9-b",
+  "topicId": "economics-1-5",
+  "conceptId": "specialisation-and-the-consumer",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q9(b) — Deferred sitting",
+  "questionText": "Specialisation involved in hairdressing is beneficial to both the consumer and the hairdresser. Outline one benefit of this specialisation to the consumer.",
+  "stem": "The table below shows the daily revenue for Headhunters, a local hairdressing salon.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A benefit of specialisation to the consumer — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One benefit, 8 marks. The paper asks for one; the scheme prices this part “2 x 4 (2+2)”, 8 marks in all, and does not say how one benefit earns them, so the one benefit is assessed against the part’s 8.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Better quality / service – specialisation can lead to better quality of services if employees specialise in one task.",
+      "Lower prices – specialisation may lead to greater efficiency and thereby may lower unit costs, which if passed onto the consumer results in lower prices.",
+      "Greater efficiency – each task may be completed quicker resulting in a more efficient service."
+     ]
+    }
+   }
+  ],
+  "notes": "Answer (b) or (c)."
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q9-c",
+  "topicId": "economics-1-5",
+  "conceptId": "specialisation-and-the-salon",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q9(c) — Deferred sitting",
+  "questionText": "Outline one possible economic disadvantage of specialisation to the hairdressing salon.",
+  "stem": "The table below shows the daily revenue for Headhunters, a local hairdressing salon.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A disadvantage of specialisation to the salon — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One disadvantage, 8 marks. The paper asks for one; the scheme prices this part “2 x 4 (2+2)”, 8 marks in all, and does not say how one disadvantage earns them, so the one disadvantage is assessed against the part’s 8.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Increased training costs – to train the personnel to become specialists in areas such as colouring; cutting, styling etc.",
+      "Higher prices to consumers – the salon may pass the higher training costs onto the consumer in the form of higher prices.",
+      "Staff shortages / recruitment – if staff are ill it may be difficult to offer the service. Demand for specialists may exceed supply leading to staff shortages."
+     ]
+    }
+   }
+  ],
+  "notes": "Answer (b) or (c)."
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q10-a",
+  "topicId": "economics-3-3",
+  "conceptId": "trends-in-the-benchmark-interest-rate",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q10(a) — Deferred sitting",
+  "questionText": "Outline two key trends in interest rates using data from the above chart.",
+  "stem": "The chart below displays the benchmark interest rate in Ireland from 2008 to 2020.",
+  "figureKey": "economics-2022-HL-deferred-paper-p14-q10-chart",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A trend in interest rates — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two trends, 4 marks each (2 + 2), each with its years and rates.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "2008 - 2019: ECB reduced the benchmark interest rate from just above 4% and to 1%.",
+      "2009 – 2011: ECB increased the interest rate from 1% to 1.5%.",
+      "2011 – 2015: The interest rate was reduced from 1.5% to 0%.",
+      "2015 on: Since 2015 the interest rate has remained at 0%."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-sa-q10-b",
+  "topicId": "economics-3-3",
+  "conceptId": "low-interest-rates-and-borrowers",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q10(b) — Deferred sitting",
+  "questionText": "Explain how current interest rates may affect borrowers in Ireland.",
+  "stem": "The chart below displays the benchmark interest rate in Ireland from 2008 to 2020.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect on borrowers — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One developed effect, 7 marks (4 + 3). The paper asks for no number; the scheme’s “7 (4+3)” is one response, as it is beside the asks for one benefit in Q12(c).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Incentive to borrow – the interest rate is the cost of borrowing. If the base rate of interest is 0%, this means that interest rates that borrowers are paying will be low and thus an incentive to borrow.",
+      "More disposable income / cheaper cost of repayments – if borrowers are paying back less when the base interest rate is low, borrowers should have more disposable income to pay for other goods giving them more disposable income.",
+      "More choice – If consumers have more disposable income, they should have a bigger choice of goods and services to choose from when allocating their limited income.",
+      "Businesses reduced costs – as the cost of repayments fall it will help businesses to reduce costs and/or prevent closure of the business.",
+      "Reduced cost of repaying the national debt – it the government are borrowing then the cost of repayment will fall / may encourage increased capital investment."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q11-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "years-of-budget-surplus",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q11(a)(i) — Deferred sitting",
+  "questionText": "Using the data above name the years in which Ireland had a budget surplus.",
+  "stem": "The chart below shows Ireland’s fiscal data between 2015 and 2020.",
+  "figureKey": "economics-2022-HL-deferred-paper-p15-q11-chart",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-2018",
+    "kind": "point",
+    "verbatim": "Year 1 — 2018",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme prints 4 beside 2018 and 3 beside 2019."
+   },
+   {
+    "id": "r-2019",
+    "kind": "point",
+    "verbatim": "Year 2 — 2019",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The second year of surplus."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q11-a-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "the-2020-budget-deficit",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q11(a)(ii) — Deferred sitting",
+  "questionText": "Using the information provided in the diagram above calculate Ireland’s fiscal position in 2020. Show all your workings. State clearly the budget outcome.",
+  "stem": "The chart below shows Ireland’s fiscal data between 2015 and 2020.",
+  "figureKey": "economics-2022-HL-deferred-paper-p15-q11-chart",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-revenue",
+    "kind": "point",
+    "verbatim": "Income — €84.5 bn",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints 4 × 3 beside “€84.5 bn – €103.3 bn = - €18.8 bn” and “Deficit”: one 3 for each of its four figures and words."
+   },
+   {
+    "id": "r-expenditure",
+    "kind": "point",
+    "verbatim": "Expenditure — €103.3 bn",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Expenditure, subtracted from revenue."
+   },
+   {
+    "id": "r-balance",
+    "kind": "point",
+    "verbatim": "= - €18.8 bn",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The balance."
+   },
+   {
+    "id": "r-outcome",
+    "kind": "point",
+    "verbatim": "Deficit",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The outcome stated: a deficit."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q11-a-iii",
+  "topicId": "economics-3-1",
+  "conceptId": "expansionary-fiscal-policy-in-2020",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q11(a)(iii) — Deferred sitting",
+  "questionText": "In your opinion, in 2020 which policy was the Irish government pursuing? Tick (✓) your choice: Expansionary: Contractionary: Explain your choice using a relevant example to illustrate your understanding.",
+  "stem": "The chart below shows Ireland’s fiscal data between 2015 and 2020.",
+  "figureKey": "economics-2022-HL-deferred-paper-p15-q11-chart",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-tick",
+    "kind": "point",
+    "verbatim": "Expansionary",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "Tick EXPANSIONARY, 1 mark: the scheme ticks Expansionary."
+   },
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "The government is spending more money than it is receiving in revenues. This may involve decreasing taxes, increasing government expenditures or both in order to fight recessionary pressures. With the pandemic (Covid-19) the government increased expenditure on health (PPE, nurse on call ventilators and beds), education (PPE, teachers, SNA’s and hours) and unemployment benefit.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The explanation with an example, 5 marks: spending above revenue, with the pandemic spending on health, education and unemployment benefit."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q11-b-i",
+  "topicId": "economics-4-2",
+  "conceptId": "trade-with-the-us-and-great-britain",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q11(b)(i) — Deferred sitting",
+  "questionText": "The pie charts below display the share of total exports and total imports by the Republic of Ireland in September 2021. Using the above data, outline the effect of the relevant information on the Republic of Ireland’s Balance of Payments with the US and Great Britain (GB).",
+  "stem": "",
+  "figureKey": "economics-2022-HL-deferred-paper-p16-q11b-pies",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-us",
+    "kind": "point",
+    "verbatim": "US – Trade surplus.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme prints 4 (2 × 2) beside each country: 2 for the outcome and 2 for the figures that show it. The US: a trade surplus."
+   },
+   {
+    "id": "r-us-why",
+    "kind": "point",
+    "verbatim": "Irelands exports (29%) exceeds imports from the US (20%). More money coming into Ireland than leaving to the USA.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Exports to the US (29%) exceed imports from it (20%)."
+   },
+   {
+    "id": "r-gb",
+    "kind": "point",
+    "verbatim": "GB – Trade deficit.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Great Britain: a trade deficit."
+   },
+   {
+    "id": "r-gb-why",
+    "kind": "point",
+    "verbatim": "Irelands imports (18%) exceeds exports to the UK (00%). More money going into Great Britain than coming into Ireland.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Imports from Great Britain (18%) exceed exports to it. The scheme prints 00% for exports; the chart shows 10%."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q11-b-ii",
+  "topicId": "economics-4-2",
+  "conceptId": "a-benefit-and-a-challenge-of-imports",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q11(b)(ii) — Deferred sitting",
+  "questionText": "Outline one possible economic benefit and one possible economic challenge of imports to the Irish economy, other than the impact on the Balance of Payments.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-benefit",
+    "kind": "anyN",
+    "verbatim": "An economic benefit of imports — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One benefit, 6 marks (3 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Increased choice of goods and services - Imports allows us to benefit from a greater variety of goods and services than would be otherwise available. We can’t/don’t produce certain goods and thus must import these",
+      "Lower prices for consumers - Imports results in greater competition in the market which should lead to more competitive prices for consumers",
+      "Access to essential raw materials - Businesses have access to essential raw materials that are not available on the domestic market e.g. coal, oil",
+      "Domestic production would be too expensive - Ireland is a small economy - in many cases economies of scale would not be achieved e.g. cars."
+     ]
+    }
+   },
+   {
+    "id": "r-challenge",
+    "kind": "anyN",
+    "verbatim": "An economic challenge of imports — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One challenge, 6 marks (3 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "More dependent on other countries – This would be especially true if Ireland imports commodities, such as food, oil, and industrial materials. It's dangerous if we rely on a foreign power to keep our population fed and our factories running",
+      "Domestic companies might struggle to compete – Domestic companies in Ireland might not be able to compete with foreign companies that import similar goods and services to their businesses threatening local jobs"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q11-c-i",
+  "topicId": "economics-3-0",
+  "conceptId": "the-circular-flow-of-an-open-economy",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q11(c)(i) — Deferred sitting",
+  "questionText": "Draw a fully labelled diagram, showing the Circular Flow of Income for an open economy.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-deferred-scheme-p16-q11ci-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "13 x 1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "point",
+    "verbatim": "Draw a fully labelled diagram, showing the Circular Flow of Income for an open economy.",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "The diagram, 13 × 1: one mark for each label. The official diagram, shown after you answer, labels households, firms, government, financial institutions and foreign markets, and the flows between them: incomes, spending, tax, government expenditure, savings, investment, imports and exports.",
+    "ask": true
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q11-c-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "injections-and-leakages",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q11(c)(ii) — Deferred sitting",
+  "questionText": "Explain the terms injections and leakages using examples from your diagram above.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 x 2 + 2 + 2 x 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-injections",
+    "kind": "point",
+    "verbatim": "Injections: Injections are variables in an economy that add to the circular flow of income. These cause an increase in aggregate demand. Aggregate demand will increase by the injection times the multiplier.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Injections explained, 2 marks."
+   },
+   {
+    "id": "r-injection-examples",
+    "kind": "anyN",
+    "verbatim": "An example of an injection — any two",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Two examples, 2 marks each, from the scheme’s “Investment/Gov Expenditure/Exports”.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Investment",
+      "Gov Expenditure",
+      "Exports"
+     ]
+    }
+   },
+   {
+    "id": "r-leakages",
+    "kind": "point",
+    "verbatim": "Leakages: Leakages are the non-consumption uses of income and these reduce the money available throughout the rest of the economy and thus reduce the circular flow of income.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Leakages explained, 2 marks."
+   },
+   {
+    "id": "r-leakage-examples",
+    "kind": "anyN",
+    "verbatim": "An example of a leakage — any two",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Two examples, 2 marks each, from the scheme’s “Savings/Taxes/Imports”.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Savings",
+      "Taxes",
+      "Imports"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q11-c-iii",
+  "topicId": "economics-3-0",
+  "conceptId": "a-welfare-bonus-in-the-circular-flow",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q11(c)(iii) — Deferred sitting",
+  "questionText": "The Irish Government paid all social welfare recipients a Christmas bonus in December 2021, double their normal weekly payment. Outline how this measure might have affected the Circular Flow of Income. (Note: You do not have to redraw the Circular Flow of Income diagram.)",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This is an increase in an injection into the circular flow of income. This will lead to an increase in aggregate demand. Aggregate demand will increase by the injection times the multiplier.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The effect, 5 marks: an injection that raises aggregate demand by the injection times the multiplier."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q12-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "mortgage-market-concentration-2008-to-2021",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q12(a)(i) — Deferred sitting",
+  "questionText": "Using the data in the pie charts above, comment on the change in the mortgage market share concentration between 2008 and 2021.",
+  "stem": "The pie charts below indicate the mortgage market share of the Irish banking sector in 2008 and 2021.",
+  "figureKey": "economics-2022-HL-deferred-paper-p19-q12-pies",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-2008",
+    "kind": "point",
+    "verbatim": "2008 — There is a low concentration ratio for the banking sector in Ireland with a large number of firms.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "2008, 6 marks (3 + 3): a low concentration ratio, many firms."
+   },
+   {
+    "id": "r-2021",
+    "kind": "point",
+    "verbatim": "2021 — There is a high concentration ratio / oligopoly. The market is dominated by 3 institutions: AIB/BOI/PTSB. There has been a big fall in the number of companies offering mortgages in Ireland from 2008. Consumers have much less choice. AIB, and Bank of Ireland still have the biggest market share, but their percentage market share has increased dramatically since 2008.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "2021, 6 marks (3 + 3): a high concentration ratio, an oligopoly of three. The scheme heads this response “2001”; the paper’s chart is 2021."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q12-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "when-low-concentration-hurts-consumers",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q12(a)(ii) — Deferred sitting",
+  "questionText": "Outline two possible reasons why a low market concentration may present difficulties for consumers.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A difficulty for consumers — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two reasons: the first correct one 4 marks and the second 3.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Confusing pricing – firms may have packages which make comparisons difficult and confusing for consumers.",
+      "Competition may be limited – despite many firms being in the industry the competition may be limited and not offer much to choose form between the firms.",
+      "Lower standard of living"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q12-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "long-run-equilibrium-in-perfect-competition",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q12(b)(i) — Deferred sitting",
+  "questionText": "In the space provided below, explain with the aid of a fully labelled diagram, the long run equilibrium of a firm in perfect competition.",
+  "stem": "Neo‐classical Economists argued that the market structure perfect competition would produce the most favourable outcomes for consumers and society.",
+  "figureKey": "economics-2022-HL-deferred-scheme-p18-q12bi-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-labels",
+    "kind": "anyN",
+    "verbatim": "1 mark per label = 9 marks Price Quantity P2 Q2 C2 E D/AR MC AC",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The diagram, 1 mark for each of the 9 labels. The official diagram is shown in the figure.",
+    "group": {
+     "claimMax": 9,
+     "perOption": 1,
+     "options": [
+      "Price",
+      "Quantity",
+      "P2",
+      "Q2",
+      "C2",
+      "E",
+      "D/AR",
+      "MC",
+      "AC"
+     ]
+    }
+   },
+   {
+    "id": "r-explanation",
+    "kind": "anyN",
+    "verbatim": "The explanation — one mark for each point",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The explanation, 8 marks: the scheme marks eight points with a 1, two of them inside the last two sentences (normal profits, AR equal to AC; efficient, at the minimum of AC).",
+    "group": {
+     "claimMax": 8,
+     "perOption": 1,
+     "options": [
+      "Equilibrium is at point E (where MC=MR).",
+      "Firms produce quantity Q2.",
+      "They sell the output at price P2.",
+      "Costs are at the level C2.",
+      "Firms earn normal profits",
+      "as AR is equal to AC.",
+      "The firm is efficient",
+      "as costs are at the minimum point of the AC curve"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q12-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "perfect-competition-for-and-against",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q12(b)(ii) — Deferred sitting",
+  "questionText": "Explain one possible economic advantage and one possible economic disadvantage of perfect competition as a market structure.",
+  "stem": "Neo‐classical Economists argued that the market structure perfect competition would produce the most favourable outcomes for consumers and society.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-advantage",
+    "kind": "anyN",
+    "verbatim": "An advantage of perfect competition — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One advantage, 6 marks (3 + 3). The scheme prints “1 x 6 (3+3)” and “1 x 4 (2+2)”; read in the order the paper asks and the scheme answers, the advantage earns 6 and the disadvantage 4.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Low prices - The firm sells its products at the lowest possible prices. (there is no exploitation of consumers)",
+      "Efficiency is encouraged - the firm produces at the lowest point of the average cost curve so there is no waste of scarce resources.",
+      "Consumers are not exploited – as each firm only earns normal profit.",
+      "No advertising – as all the goods are homogenous so there is no point in wasting scarce resources on advertising and this saves the consumers having to pay higher prices."
+     ]
+    }
+   },
+   {
+    "id": "r-disadvantage",
+    "kind": "anyN",
+    "verbatim": "A disadvantage of perfect competition — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One disadvantage, 4 marks (2 + 2).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Little potential to expand or develop /no scope for economies of scale - as there are many small sellers, firms do not get large enough to benefit from economies of scale.",
+      "Little choice for consumers - as the products are homogenous, there is little choice for consumers.",
+      "Little scope for research and development - lack of SNPs makes investment in R&D unlikely."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q12-b-iii",
+  "topicId": "economics-2-0",
+  "conceptId": "advertising-in-perfect-competition",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q12(b)(iii) — Deferred sitting",
+  "questionText": "Firms in perfect competition should not engage in advertising. Do you agree or disagree with this statement? Agree: Disagree: Outline two reasons for your answer.",
+  "stem": "Neo‐classical Economists argued that the market structure perfect competition would produce the most favourable outcomes for consumers and society.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to agree — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Agree. The scheme ticks Agree and gives reasons for agreeing only: two reasons, 4 marks each (2 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Homogenous goods - since the goods are identical and no differences exist, an individual producer cannot differentiate their product so there is no point in advertising.",
+      "Increased cost / waste of scarce resources - if a firm was to advertise it would increase its own costs and decrease its profits/gain no additional revenue.",
+      "Benefits the entire industry - advertising by a single firm would not just benefit this firm but benefit the entire industry and increase costs for the individual firm."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q12-c-i",
+  "topicId": "economics-1-3",
+  "conceptId": "why-regulate-markets-for-consumers",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q12(c)(i) — Deferred sitting",
+  "questionText": "Explain why it is important for consumers that bodies like the EU regulate markets.",
+  "stem": "In 2013 the EU blocked the takeover of Aer Lingus by Ryanair in an anti‐monopoly decision.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason regulation matters to consumers — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One developed reason, 7 marks (4 + 3). The paper asks for no number; the scheme’s “7 (4+3)” is one response, as it is beside (ii) and (iii), which ask for one benefit.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Prevents exploitation – reduced competition in a market will lead to a more concentrated market and firms may exploit consumers to earn higher profits.",
+      "Higher prices – if unregulated firms may increase prices.",
+      "Prevents growth of monopolies / reduced choice – If there was no regulation of markets, firms could merge freely, and this would severely limit the choice of consumers. This would have been seen in Ireland a few years ago when Ryanair tried to purchase Aer Lingus but were stopped by the EU.",
+      "Reduced research and development – firms may be less inclined to invest in R&D if the lack of regulation results in fewer firms in the industry."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q12-c-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "monopoly-power-and-employees",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q12(c)(ii) — Deferred sitting",
+  "questionText": "Explain one benefit for employees, of a firm possessing significant monopoly power.",
+  "stem": "In 2013 the EU blocked the takeover of Aer Lingus by Ryanair in an anti‐monopoly decision.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A benefit for employees — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One benefit, 7 marks (4 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Secure employment - as there is no competition from other firm’s employees have greater security of employment.",
+      "Conditions of employment - as the firm is not forced to reduce costs employees may benefit from preferential conditions of employment.",
+      "Better rates of pay and pensions – the firm may be able to afford to give its employees better rates of pay and or better pensions."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q12-c-iii",
+  "topicId": "economics-2-0",
+  "conceptId": "monopoly-power-and-consumers",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q12(c)(iii) — Deferred sitting",
+  "questionText": "Explain one benefit for consumers, of a firm possessing significant monopoly power.",
+  "stem": "In 2013 the EU blocked the takeover of Aer Lingus by Ryanair in an anti‐monopoly decision.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A benefit for consumers — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One benefit, 7 marks (4 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Guarantee supply of product/service - The supply of the product/service may be guaranteed and provided where profit is minimal (e.g. a state monopoly) so consumers benefit e.g. provision of bus services in areas of low population.",
+      "Economies of scale - production on a large scale may help the firm benefit from economies of scale and these cost savings may be passed on to the consumer in the form of lower prices.",
+      "Potential for innovation/R&D - The (supernormal) profits that monopolies may make could be used for investment in R&D and secure their dominance in the market. Inventors/creators need patent protection otherwise they may not invent."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q13-a-i",
+  "topicId": "economics-3-2",
+  "conceptId": "why-unemployment-rose-and-is-forecast-to-fall",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q13(a)(i) — Deferred sitting",
+  "questionText": "Using the above information outline one possible reason for the changes in unemployment between 2020 and 2021 and one possible reason for the predicted trend in unemployment between 2022 and 2023.",
+  "stem": "The diagram below shows the percentage (%) unemployment rate in Ireland for 2020 and 2021 and the forecasted unemployment rate for 2022 and 2023.",
+  "figureKey": "economics-2022-HL-deferred-paper-p23-q13-chart",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-2020",
+    "kind": "point",
+    "verbatim": "2020-2021 The rate of unemployment rose from 5.9% to 7.3%. This was caused by the global pandemic Covid-19 which caused many retail stores/hospitality employers to close increasing unemployment.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "2020–2021, 5 marks: unemployment rose from 5.9% to 7.3% as the pandemic closed retail and hospitality."
+   },
+   {
+    "id": "r-2022",
+    "kind": "point",
+    "verbatim": "2022-2023 The rate of unemployment is predicted to fall from 7.2% to 5.9%. This demand is backed by high levels of savings built up during Covid-19 and this is expected to cause a surge in demand by consumers. This is predicted as demand in the economy is expected to grow now that the economy is recovering from Covid-19.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "2022–2023, 5 marks: unemployment is forecast to fall from 7.2% to 5.9% as savings fuel demand and the economy recovers."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q13-a-ii",
+  "topicId": "economics-2-1",
+  "conceptId": "labour-shortages-alongside-unemployment",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q13(a)(ii) — Deferred sitting",
+  "questionText": "Discuss why some businesses in Ireland are experiencing labour shortages, even though some people remain unemployed.",
+  "stem": "The diagram below shows the percentage (%) unemployment rate in Ireland for 2020 and 2021 and the forecasted unemployment rate for 2022 and 2023.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason for labour shortages — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One developed reason, 5 marks (3 + 2).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Skills shortage – there is a shortage of skilled labour in many sectors across the Irish economy. This shortage has been felt particularly in construction.",
+      "Wages considered unattractive – in some sectors the wages may not be good enough to attract workers such as the hospitality sector.",
+      "Exodus of foreign workers - some sectors are now suffering staff shortages because of an exodus of foreign workers leaving the State, or not coming to Ireland at all because of work visa issues / returned home during Covid 19 / high inflation in Ireland.",
+      "The pandemic unemployment payment (PUP) – the PUP was larger than the social welfare and may have acted as a disincentive to work.",
+      "Reductions in workers due to Covid – during the pandemic some workers were made redundant and left their particular sector causing labour shortages e.g. Dublin Airport."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q13-a-iii",
+  "topicId": "economics-3-2",
+  "conceptId": "effects-of-unemployment-on-the-economy",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q13(a)(iii) — Deferred sitting",
+  "questionText": "In May 2021, a report in the Social Justice Ireland Employment Monitor indicated that unemployment could exceed 390,000 – higher than the last recession. Outline two possible effects of unemployment on Irelands economy.",
+  "stem": "The diagram below shows the percentage (%) unemployment rate in Ireland for 2020 and 2021 and the forecasted unemployment rate for 2022 and 2023.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect of unemployment — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two effects, 4 marks each (2 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Increased current expenditure for the government – with less people working, the government will have to pay out more in social welfare payments.",
+      "Decreased current revenue for the government – with less people working, the government will take in less PAYE revenue. As people have less disposable income, demand will also likely fall in the economy, spending will fall resulting in less indirect tax (VAT) revenue also.",
+      "Decline in economic growth / economic activity – with reduced spending, aggregate demand will fall resulting in declining economic growth and less economic activity in towns and cities.",
+      "Increase in poverty levels – those who become unemployed will have lower incomes and so will be able to afford less essential goods and services.",
+      "Businesses may suffer – with reduced demand some businesses will face reduced sales, profits and face possible closure if unemployment persists.",
+      "Possibly less attractive to FDI – if the economy is seen to falter and facing a reduction in demand some companies may see Ireland as an unattractive location for investment."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q13-b-i",
+  "topicId": "economics-2-1",
+  "conceptId": "the-living-wage",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q13(b)(i) — Deferred sitting",
+  "questionText": "Explain the term living wage.",
+  "stem": "The Low Pay Commission will examine how Ireland can move towards a living wage of €12.90, following authorisation by the government. This is different than the national minimum wage.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It is a wage which makes possible a minimum acceptable standard of living and is grounded in social consensus (not the cost of living) It is based on the concept that work should provide an adequate income to enable individuals to afford a socially acceptable standard of living. The living wage should provide for your needs not wants (below it means you are forced to do without essentials / can’t make ends meet).",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Explain the term, 7 marks: a wage that affords a minimum, socially acceptable standard of living, set by social consensus and not by the cost of living."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q13-b-ii",
+  "topicId": "economics-2-1",
+  "conceptId": "effects-of-a-living-wage",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q13(b)(ii) — Deferred sitting",
+  "questionText": "Outline one possible economic effect on employees, businesses, and the government if Ireland did introduce the living wage of €12.90.",
+  "stem": "The Low Pay Commission will examine how Ireland can move towards a living wage of €12.90, following authorisation by the government. This is different than the national minimum wage.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 + 7 + 7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "r-employees",
+    "kind": "anyN",
+    "verbatim": "An effect on employees — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Employees: one effect, 7 marks (4 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Increased standard of living – if the government introduced the living wage, employees would have a greater level of disposable income and this would improve their standard of living.",
+      "Greater choice - employees would be able to buy more goods and services and this would give them more choice.",
+      "Incentive to work – the introduction of a living wage over the minimum wage would act as an incentive to work. The difference between the living wage and social welfare payments would be increased (also acceptable for business below)"
+     ]
+    }
+   },
+   {
+    "id": "r-businesses",
+    "kind": "anyN",
+    "verbatim": "An effect on businesses — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Businesses: one effect, 7 marks (4 + 3). The scheme also accepts “Incentive to work”, listed under employees, here.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Increased costs – if the government introduced the living wage, businesses would be forced to pay this wage. This would represent an increase in businesses costs.",
+      "Reduced profits – the increase in businesses costs would almost certainly mean that profits would be reduced.",
+      "Possible reduction in staff numbers – if the business is forced to reduce costs it may do this by reducing the size of its workforce."
+     ]
+    }
+   },
+   {
+    "id": "r-government",
+    "kind": "anyN",
+    "verbatim": "An effect on the government — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Government: one effect, 7 marks (4 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "More direct tax revenue – if more people are working (incentive to work) and more people are earning higher wages the government should be taking in more direct tax (PAYE and USC).",
+      "More indirect tax revenue – if more people are working and earning higher wages, the government should take in more indirect tax (VAT) as more people have more disposable income.",
+      "Increased government current expenditure – wages for some state employees will rise and the government must pay for this.",
+      "Better redistribution of income – if people on lower pay receive increased pay then this helps the government achieve its policy of redistributing income more equitably."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q13-c-i",
+  "topicId": "economics-3-3",
+  "conceptId": "pensioners-and-inflation",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q13(c)(i) — Deferred sitting",
+  "questionText": "In budget 2022 the government increased the old age pension by €5 per week. Given that the current rate of inflation has risen rapidly would old age pensioners be happy with this increase? Justify your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-no",
+    "kind": "point",
+    "verbatim": "No — Pensioners income has lost its ability to purchase goods and services. The current level of inflation in Ireland is 8.5%. The increase of €5 is far less than the increase in inflation rates in the economy presently and so they would not be happy with this increase. Their standard of living will fall /may have to choose between necessities (food v heat) / may fall into poverty / ill health.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Answer NO, 6 marks (3 + 3): the scheme answers No. A €5 rise is far less than the inflation rate, so pensioners can buy less and their standard of living falls."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q13-c-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "easing-high-inflation-for-citizens",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q13(c)(ii) — Deferred sitting",
+  "questionText": "Suggest two measures the Irish Government could take to alleviate the effects of high inflation on citizens.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 8,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure to ease high inflation — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two measures, 6 marks each (3 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Energy credit – the government have announced that every household paying for energy will receive credit of €200. This should have the effect of helping citizens.",
+      "Increase/extend fuel allowance - By increasing/extending the fuel allowance, it should have the effect of making it more affordable for lower income households to purchase/use gas/electricity/oil.",
+      "Increase social welfare/pensions - By increasing social welfare/pensions, it should have the effect of reducing the burden slightly of high inflation rates on fixed income holders.",
+      "Reduce VAT on gas and electricity/reduce excise duties on oil – by reducing VAT/excise duties it should have the effect of reducing prices and making it more affordable for households to purchase/use gas/electricity/oil.",
+      "Reduce income tax rates – this will allow workers keep more of their income and so cope better with higher prices.",
+      "Abolish examination fees – this will save money for those families who have family members sitting examinations.",
+      "Increase grants for 3rd level students – will allow students pay for their increased cost of living while studying.",
+      "Child minding costs – subsidise these charges as they have become increasingly expensive and this will allow parents to continue to work."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q13-c-iii",
+  "topicId": "economics-3-3",
+  "conceptId": "an-ecb-measure-against-inflation",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q13(c)(iii) — Deferred sitting",
+  "questionText": "If inflation continues at a high rate in Europe, outline one measure the ECB could implement to address these high inflation rates.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An ECB measure — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One measure, 6 marks (3 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Increase interest rates – if the ECB increase interest rates it would act as an incentive to save. This should have the effect of reducing demand pull inflation in the economy. It would also act as a disincentive to borrow as the cost of borrowing has increased. This should also have the effect of reducing demand pull inflation.",
+      "Reducing access to credit – if the ECB make accessing credit harder it should have the effect of reducing demand pull inflation in the economy.",
+      "Money supply - if money supply grows slower than real output, there will be less money chasing more goods and services available and so inflation will fall. A contractionary monetary policy stifles demand and reduces prices."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q14-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "revenues-cost-of-collection",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(a)(i) — Deferred sitting",
+  "questionText": "From the data above, calculate Revenue’s administration costs as a percentage of its gross receipts. Show all your workings.",
+  "stem": "In 2020 Revenue Commissioners in Ireland collected €82 billion in gross tax receipts while incurring administration costs of €467 million.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 x 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-cost",
+    "kind": "point",
+    "verbatim": "€467m",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme prints 4 × 2: one 2 for each of the four parts of its working, €467m over €82bn, times 100, = 0.6%."
+   },
+   {
+    "id": "r-receipts",
+    "kind": "point",
+    "verbatim": "€82bn",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The gross receipts, beneath the costs."
+   },
+   {
+    "id": "r-times",
+    "kind": "point",
+    "verbatim": "x 100",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Times 100."
+   },
+   {
+    "id": "r-answer",
+    "kind": "point",
+    "verbatim": "= 0.6%",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The answer."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q14-a-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "principles-of-a-good-tax-system",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(a)(ii) — Deferred sitting",
+  "questionText": "The data above clearly demonstrates that Revenue follows the principle of ‘economy’ while carrying out its responsibilities. Outline three other principles of a fair tax system.",
+  "stem": "In 2020 Revenue Commissioners in Ireland collected €82 billion in gross tax receipts while incurring administration costs of €467 million.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A principle of taxation — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three principles other than economy, 5 marks each (2 + 3). The paper asks for a “fair” tax system; the scheme writes “modern”.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Taxes should be equitable - the tax levied should take a higher proportion of income in tax as income rises, or the ability of each person to pay should be taken into account.",
+      "Taxes should be certain - the amount of tax a person must pay should be certain and clear. The amount of tax revenue to be collected should be also be certain.",
+      "Taxes should be convenient - the manner and timing of the taxes should be convenient to pay on the part of the taxpayer.",
+      "Taxes should not be perceived, nor act, as a disincentive - tax rates should not discourage workers from working, taxes should not discourage entrepreneurial investment.",
+      "Taxes should assist in the redistribution of income - a good tax system should help the government to redistribute income progressively from the rich to the poor.",
+      "Taxes should be consistent with and aid the national economic objectives - the taxes levied should enable to government to achieve other economic and social objectives e.g. raising excise rates on cigarettes to discourage smoking.",
+      "Taxes should have a stabilising influence on the economy - an effective system of taxation can prevent the level of economic activity from rising as fast as it would otherwise in economic growth. Similarly the system should shield the level of economic activity from falling as fast as it otherwise would in a recession",
+      "Tax evasion should not be possible - effective taxes should not be possible to evade, otherwise the tax is not fair."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q14-a-iii",
+  "topicId": "economics-3-1",
+  "conceptId": "is-local-property-tax-regressive",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(a)(iii) — Deferred sitting",
+  "questionText": "The Irish government increased the bands in Local Property Tax (LPT) in Ireland for 2022. LPT is a tax charged on the market value of residential property. Is LPT a progressive tax or a regressive tax? Justify your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-regressive",
+    "kind": "point",
+    "verbatim": "LPT is a regressive tax because it does not take into account one’s ability to pay the tax. Your house could have a high market value but your income could be low and LPT does not take your ability to pay the tax into account.",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Answer REGRESSIVE, 7 marks: the scheme answers regressive, because LPT does not take ability to pay into account."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q14-b-i",
+  "topicId": "economics-0-1",
+  "conceptId": "opportunity-cost-on-a-ppf",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(b)(i) — Deferred sitting",
+  "questionText": "Explain, and clearly illustrate using the diagram above, the opportunity cost for ABC Ltd, if it were it to increase its production of smartwatches to Sw2.",
+  "stem": "The diagram below shows the Production Possibility Frontier (PPF) for a firm called ABC Ltd who produce both mobile phones and smartwatches. The firm’s initial production combination is shown at point A.",
+  "figureKey": "economics-2022-HL-deferred-scheme-p26-q14bi-ppf",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "point",
+    "verbatim": "clearly illustrate using the diagram above",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The diagram, 4 marks: the scheme’s, shown after you answer, marks MP2 and point B where Sw2 meets the frontier.",
+    "ask": true
+   },
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "If the firm increases production of smartwatches to SW2 using the current level of resources, then fewer mobile phones would have to be manufactured shown at MP2 (Point B). This is the trade off the firm makes.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The explanation, 4 marks: more smartwatches means fewer mobile phones, MP2 at point B."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2022-HL-deferred-paper-p28-q14b-ppf",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2022-hl-deferred-q14-b-ii",
+  "topicId": "economics-0-1",
+  "conceptId": "a-chip-shortage-and-the-ppf",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(b)(ii) — Deferred sitting",
+  "questionText": "Companies across industries, globally, have warned of an ongoing struggle to source computer chips for the IT industry. Explain, and clearly demonstrate on the diagram below, how this development most likely alters the Production Possibility Frontier (PPF) for ABC Ltd.",
+  "stem": "The diagram below shows the Production Possibility Frontier (PPF) for a firm called ABC Ltd who produce both mobile phones and smartwatches. The firm’s initial production combination is shown at point A.",
+  "figureKey": "economics-2022-HL-deferred-scheme-p27-q14bii-ppf",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 2 x 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "point",
+    "verbatim": "clearly demonstrate on the diagram below",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The diagram, 4 marks: the frontier shifts inwards, as in the scheme’s diagram shown after you answer.",
+    "ask": true
+   },
+   {
+    "id": "r-shift",
+    "kind": "point",
+    "verbatim": "The PPF will shift to the left (inwards) as the production capacity falls / the shortage of chips will affect supply negatively.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The explanation, 2 × 2: the frontier shifts inwards as capacity falls."
+   },
+   {
+    "id": "r-output",
+    "kind": "point",
+    "verbatim": "Less output can be produced.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Less can be produced."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2022-HL-deferred-paper-p29-q14bii-ppf",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2022-hl-deferred-q14-c-i",
+  "topicId": "economics-1-5",
+  "conceptId": "drawing-srac-and-mc",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(c)(i) — Deferred sitting",
+  "questionText": "On one diagram, draw and fully label, the Short Run Average Cost Curve (SRAC) and the Marginal Cost Curve for ABC Ltd.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-deferred-scheme-p27-q14ci-curves",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "point",
+    "verbatim": "On one diagram, draw and fully label, the Short Run Average Cost Curve (SRAC) and the Marginal Cost Curve for ABC Ltd.",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The diagram, 12 marks. The scheme prints 4 × 3 beside its diagram (Cost and output on the axes, a U-shaped AC, MC rising through its lowest point) and does not name the four elements; compare your whole drawing with it.",
+    "ask": true
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q14-c-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "the-shape-of-the-srac",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(c)(ii) — Deferred sitting",
+  "questionText": "Explain the reasons for the shape of the SRAC.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-downward",
+    "kind": "anyN",
+    "verbatim": "Downward sloping part — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The downward-sloping part, 4 marks (2 + 2).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Specialisation/division of labour: this can occur if production increases and the firm decides to employ specialists or if existing workers concentrate on a smaller number of tasks. This can lead to greater efficiency and thereby lowers unit cost.",
+      "Greater spread of fixed costs: as a company expands, its fixed costs will not increase directly as more is produced. Fixed costs are static over a range of output and behave in a step-like fashion. Therefore, fixed costs are spread over an increasing number of units and as production increases, the fixed cost per unit falls."
+     ]
+    }
+   },
+   {
+    "id": "r-upward",
+    "kind": "point",
+    "verbatim": "The law of diminishing marginal returns / AVC per unit increases - as more and more of a variable factor is added to a fixed factor, at some stage the increase in output caused by the last unit of the variable factor will begin to decline. To produce more in the short run, a company requires increasing quantities of the variable factor (labour) per unit produced to increase output. In other words, it takes more workers to produce a given quantity of output than it did when production first began.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The upward-sloping part, 4 marks (2 × 2): diminishing marginal returns."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q14-c-iii",
+  "topicId": "economics-1-5",
+  "conceptId": "how-mc-and-ac-are-related",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(c)(iii) — Deferred sitting",
+  "questionText": "Explain the relationship between Marginal Costs (MC) and Average Costs (AC).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-below",
+    "kind": "point",
+    "verbatim": "When MC is less than AC, AC is falling.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "3 × 3: one 3 for each."
+   },
+   {
+    "id": "r-above",
+    "kind": "point",
+    "verbatim": "When MC is greater than AC, AC is rising.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "MC above AC."
+   },
+   {
+    "id": "r-equal",
+    "kind": "point",
+    "verbatim": "When MC is equal to AC, AC is at its minimum point.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "MC equal to AC."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q15-a-i",
+  "topicId": "economics-1-0",
+  "conceptId": "demand-and-supply-for-electric-vehicles",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(a)(i) — Deferred sitting",
+  "questionText": "Describe by means of a clearly labelled diagram, the market demand and supply curves for electric vehicles (i.e. electric cars and vans) in Ireland.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-deferred-scheme-p29-q15ai-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 + 2 x 2 + 2 x 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-labels",
+    "kind": "anyN",
+    "verbatim": "The diagram — two marks for each label",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The diagram, 8 marks: the scheme prices four labels at 2 (P, Q, D, S). The official diagram is shown in the figure.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "P",
+      "Q",
+      "D",
+      "S"
+     ]
+    }
+   },
+   {
+    "id": "r-demand",
+    "kind": "point",
+    "verbatim": "The demand curve for electric vehicles is downward sloping from left to right.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Demand, 2 × 2: the curve slopes down."
+   },
+   {
+    "id": "r-demand-why",
+    "kind": "point",
+    "verbatim": "As price rises, quantity demanded falls and as price falls, quantity demanded rises",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Quantity demanded falls as price rises."
+   },
+   {
+    "id": "r-supply",
+    "kind": "point",
+    "verbatim": "The supply curve for electric vehicles is upward sloping from left to right.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Supply, 2 × 2: the curve slopes up."
+   },
+   {
+    "id": "r-supply-why",
+    "kind": "point",
+    "verbatim": "As price rises, quantity supplied will rise and as price falls quantity supplied will fall.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Quantity supplied rises as price rises."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q15-a-ii",
+  "topicId": "economics-1-2",
+  "conceptId": "why-electric-vehicles-cost-more-to-make",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(a)(ii) — Deferred sitting",
+  "questionText": "Outline two reasons for the current increase in the cost of producing electric vehicles.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason costs are rising — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two reasons, 4 marks each (2 + 2). Wages and transport costs are bare headings in the scheme.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Shortage of computer chips – this is causing price of this to increase forcing prices of EV’s to rise.",
+      "Supply chain issues – as with all industries these issues are causing a delay in components reaching manufacturers and this leads to prices increases.",
+      "Price of raw materials – inflation worldwide is causing prices to rise and these increases in raw materials must be passed onto the final consumer.",
+      "Energy/electricity prices – are rising due to reduced supply; the invasion of Ukraine and the reduced supply from Russia / higher prices.",
+      "Wages",
+      "Transport costs"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q15-b-i",
+  "topicId": "economics-1-0",
+  "conceptId": "chargers-and-the-demand-for-evs",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(b)(i) — Deferred sitting",
+  "questionText": "Demonstrate, with the aid of a fully labelled diagram, in each case, the effects which each of the following is most likely to have on the market equilibrium position for electric vehicles in Ireland. Explain your answer in each case. The Government’s decision to invest heavily in the construction of a network of high‐power chargers (HPCs) across the country’s main roads.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-deferred-scheme-p30-q15bi-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 x 2 + 4 x 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "point",
+    "verbatim": "Demonstrate, with the aid of a fully labelled diagram",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The diagram, 6 marks: the scheme prints 3 × 2 beside its diagram, shown after you answer (demand shifts right to D2, with the new price and quantity), and does not name the three elements.",
+    "ask": true
+   },
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "D/C shifts to the right (D2).",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The explanation, 4 × 2: one 2 for each point. Demand shifts right to D2."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Users seen more opportunities to charge the EV / demand for EVs will increase.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Why it shifts."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "New higher equilibrium price - P2.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The new equilibrium price P2."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "New higher equilibrium quantity - Q2.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "And the new equilibrium quantity Q2."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q15-b-ii",
+  "topicId": "economics-1-0",
+  "conceptId": "technology-and-the-supply-of-evs",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(b)(ii) — Deferred sitting",
+  "questionText": "Demonstrate, with the aid of a fully labelled diagram, in each case, the effects which each of the following is most likely to have on the market equilibrium position for electric vehicles in Ireland. Explain your answer in each case. Improvements and advances in the technology used in the production of electric vehicles.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-deferred-scheme-p30-q15bii-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 x 2 + 4 x 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "point",
+    "verbatim": "Demonstrate, with the aid of a fully labelled diagram",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The diagram, 6 marks: the scheme prints 3 × 2 beside its diagram, shown after you answer (supply shifts right to S2, with the new price and quantity), and does not name the three elements.",
+    "ask": true
+   },
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "S/C shifts to the right (S2).",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The explanation, 4 × 2: one 2 for each point. Supply shifts right to S2."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The technological advance will lead to an increase in the supply of electric cars due to increased efficiency/lower unit production costs",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Why it shifts."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "New lower equilibrium price - P2.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The new equilibrium price P2."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "New higher equilibrium quantity - Q2.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "And the new equilibrium quantity Q2."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q15-c-i",
+  "topicId": "economics-1-3",
+  "conceptId": "what-a-subsidy-is",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(c)(i) — Deferred sitting",
+  "questionText": "Explain the economic term subsidy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A subsidy is a direct or indirect payment to individuals or firms, usually in the form of a cash payment from the government. Subsidies can be used by the government to reduce a business’s costs thus increasing supply of goods/services. e.g. the temporary wage subsidy scheme (TWSS) used by the government during Covid-19 was a way of reducing business’s wage costs.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Explain the term, 5 marks: a direct or indirect payment, usually from the government, that reduces a business’s costs; the scheme’s example is the TWSS."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q15-c-ii",
+  "topicId": "economics-1-3",
+  "conceptId": "the-case-for-and-against-a-subsidy",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(c)(ii) — Deferred sitting",
+  "questionText": "Discuss one economic argument in favour and one economic argument against a government granting a subsidy to a business.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-for",
+    "kind": "anyN",
+    "verbatim": "An argument in favour — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "In favour: one argument, 5 marks (2 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Lower prices for consumers - products of subsidised inputs may sell at lower prices. If the subsidies were to be withdrawn, the prices of products would rise as their production cost would go up.",
+      "Employment - pro-subsidy economists argue that subsidies to particular industries are vital to helping support businesses, and the jobs they create. Economists who promote a mixed economy often argue that subsidies are justifiable to provide the socially optimal level of goods and services which will lead to economic efficiency.",
+      "Allows industry to continue – those firms who receive subsidies may be able to reduce their costs and this will allow production to continue."
+     ]
+    }
+   },
+   {
+    "id": "r-against",
+    "kind": "anyN",
+    "verbatim": "An argument against — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Against: one argument, 5 marks (2 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Opportunity cost - the money given to an individual or a business in a subsidy could have been used to improve health care, education or a country’s infrastructure.",
+      "Higher taxes - governments cannot give money to certain industries, businesses or people without first taxing citizens to obtain the money. This means that all government subsidies come with the hidden cost of taxation.",
+      "Possible product shortages - When the government subsidises a particular product, it causes the price to go down and consumption to go up. While this will help consumers initially because of the reduction in price, it also has the effect of leading to shortages because producers may have trouble keeping up with the rise in demand.",
+      "Difficult to measure success - one of the greatest advantages of a government subsidy is that it can limit what economists call negative externalities. Subsidies can reduce the negative externality of pollution, for instance, by supporting public transportation. However, one drawback of these subsidies is that it is difficult to measure their positive externalities to quantify the extent of their success."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q15-c-iii",
+  "topicId": "economics-1-3",
+  "conceptId": "why-governments-intervene-in-markets",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(c)(iii) — Deferred sitting",
+  "questionText": "Subsidies are one method governments use to intervene in a market. Outline two reasons why a government may intervene in a market. Use appropriate examples, other than subsidies, to support your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to intervene, with an example — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two reasons, 4 marks each (2 + 2), each with an example other than subsidies.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "To prevent a market failure – the government intervened in the market for alcohol in Ireland by introducing minimum unit pricing. This was as a result of a partial market failure – the price mechanism was failing, and the price of alcohol was considered too low.",
+      "To create a just social environment and assist in redistribution of wealth – the government intervenes and assists in the redistribution of wealth through taxation – PAYE, USC (money is taken off those who are working and redistributed to those who are not in the form of social welfare payments).",
+      "To care for the environment – the government intervenes to look after the environment. They have followed a polluter pays principle with regards to the environment through the increasing of the carbon tax.",
+      "To promote balanced regional development – the government have intervened in the market for broadband to achieve balanced regional development. By implementing the National Broadband Plan, all homes/businesses in rural Ireland will have access to high speed broadband."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q16-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "trends-in-corporation-tax-receipts",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q16(a)(i) — Deferred sitting",
+  "questionText": "Outline two key trends in corporation tax receipts, using figures from the above graph.",
+  "stem": "The graph below shows Corporation Tax Receipts for the Irish Government from 2011 to 2020.",
+  "figureKey": "economics-2022-HL-deferred-paper-p35-q16-chart",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A trend in corporation tax receipts — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two trends, 4 marks each (2 + 2), each with its years and figures. The scheme writes €4m and €10m where the graph’s scale is € millions (about €4,000m and €10,000m).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Between 2011 and 2014 Receipts increased slowly from under €4m to over €4m. The world economy continued its slow recovery from the recession brought about through a housing bubble in Ireland and financial crisis (worldwide).",
+      "Between 2014 and 2018 Receipts increased dramatically from over €4m to over €10m.",
+      "Between 2018 and 2020 This positive growth continued right though to 2020 where tax receipts reached €12,000 million as a result of the world economy experiencing high levels of demand."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q16-a-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "a-15-percent-corporation-tax",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q16(a)(ii) — Deferred sitting",
+  "questionText": "Ireland’s Corporation Tax Rate is set to rise to 15%, as part of a global deal. Outline one possible positive economic effect and one possible negative economic effect for the Irish economy of this change in the rate of corporation tax.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-positive",
+    "kind": "anyN",
+    "verbatim": "A positive effect — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One positive effect, 8 marks (4 + 4). The scheme prints “1 x 8 (4+4)” and “1 x 4 (2+2)”; read in the order the paper asks and the scheme answers, the positive effect earns 8 and the negative 4.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Effects on government revenue - firms who do remain in Ireland will help to counterbalance some of the loss of revenue if firms leave through their increased corporation tax rate. The increase could lead to a temporary increase in the amount of tax collected.",
+      "Equitable taxation system - if additional revenue accrues to the government then lower personal taxation may be possible and this will favour individuals and households.",
+      "Better relationships with trade partners – Ireland has been under pressure to adapt our tax rates. By increasing our tax rate it should help Ireland's reputation that its taxation system is fair.",
+      "Less repatriated earnings from large firms – many of the highest earning firms operating in Ireland are foreign firms. By increasing the tax rate more of the income they earn in Ireland will stay in Ireland and help to benefit the Irish people."
+     ]
+    }
+   },
+   {
+    "id": "r-negative",
+    "kind": "anyN",
+    "verbatim": "A negative effect — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One negative effect, 4 marks (2 + 2).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Difficulty in attracting new FDI - if the corporation tax rate increases MNCs may consider other European countries which have a relatively cheaper cost structure.",
+      "Some firms may leave Ireland – some established firms may leave to a more cost- effective location. This could have an adverse effect on employment.",
+      "Loss of employment - If there is a withdrawal of FDI from Ireland it will have a negative impact on the demand for labour leading to increased unemployment. It will also have a higher social welfare bill due to the increases in unemployment.",
+      "Effects on government revenue - due to the withdrawal of firms from Ireland the government may receive less tax revenue in the form of corporation tax, income tax and VAT. The government will have to spend additional revenue on promoting Ireland as a hub for FDI."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q16-b-i",
+  "topicId": "economics-1-3",
+  "conceptId": "minimum-pricing-of-alcohol",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q16(b)(i) — Deferred sitting",
+  "questionText": "Explain, with the use of a fully labelled diagram, how the introduction of minimum pricing (above the market equilibrium price) for alcohol drinks will impact on the market for alcoholic drinks in Ireland.",
+  "stem": "A new law came into effect in Ireland in January 2022, setting a minimum price per gram of alcohol at 10c.",
+  "figureKey": "economics-2022-HL-deferred-scheme-p34-q16bi-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "point",
+    "verbatim": "Explain, with the use of a fully labelled diagram",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The diagram, 9 marks: the scheme’s, shown after you answer, sets Pmin above the equilibrium PE, with QD, QE and QS on the quantity axis.",
+    "ask": true
+   },
+   {
+    "id": "r-explanation",
+    "kind": "anyN",
+    "verbatim": "An effect of the minimum price — any two",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The explanation, 6 marks. The scheme prints “6 (2 x 3)” beside three effects: any two, 3 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Effect on price Through imposing a minimum price on alcohol, the price will be legally forced upwards from PE to Pmin.",
+      "Effect on demand With the increase in price there will be a fall in demand for alcohol from QE to QD.",
+      "Effect on market This will result in a surplus of alcohol as indicated above."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q16-b-ii",
+  "topicId": "economics-1-3",
+  "conceptId": "cutting-alcohol-consumption-without-price",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q16(b)(ii) — Deferred sitting",
+  "questionText": "Suggest two strategies, other than minimum pricing and taxation, the Irish government could implement to reduce the per capita consumption of alcohol.",
+  "stem": "Per capita alcohol consumption in Ireland was 10.78 litres of pure alcohol per person aged 15+ in 2019.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A strategy to reduce alcohol consumption — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two strategies, 5 marks each (2 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Education – the government could start an education campaign in primary/secondary schools outlining the dangers of alcohol and the risks associated with consuming alcohol.",
+      "Advertising campaign – the government could start an advertising campaign on TV, radio, newspapers and social media outlining the dangers of alcohol and the risks associated with consuming alcohol.",
+      "Further reduce selling times / places for alcohol sales – the government could introduce stricter laws on the selling times of alcohol / and restrict the places where alcohol can be sold.",
+      "Sponsorship – the government could introduce restrictions in relation to the advertising and sponsorship of alcohol products for major events/tournaments which encourage the consumption of alcohol.",
+      "Labels on packaging – the government could introduce labels similar to those seen with cigarettes and this is in the Public Health Act 2018. This could include health warnings and the alcohol content / energy content of alcohol / possible cancer effects on alcohol product containers."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q16-b-iii",
+  "topicId": "economics-2-2",
+  "conceptId": "social-costs-of-alcohol",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q16(b)(iii) — Deferred sitting",
+  "questionText": "The per capita consumption rate of alcohol in Ireland may involve social costs. Outline two of these possible social costs.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A social cost — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two social costs, 4 marks each (2 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Health care – a big social cost are the expenses for treating problems caused by excessive drinking. They are also causing a huge strain on our health care service.",
+      "Social problems in society – people ascribe excessive alcohol consumption as one of the main reasons for anti-social behavior in Ireland making towns and parts of cities feel unsafe.",
+      "Workplace productivity – productivity in the workplace is reduced as a result of high per capita consumption of alcohol.",
+      "Car accidents and deaths – the RSA and the Gardaí attribute alcohol as a contributing factor to road accidents and deaths in Ireland."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q16-c-i",
+  "topicId": "economics-1-1",
+  "conceptId": "derived-demand-for-land",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q16(c)(i) — Deferred sitting",
+  "questionText": "Explain the term derived demand with reference to the factor of production land.",
+  "stem": "The demand for land is referred to as a derived demand.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Derived demand means that a factor of production is demanded not for its own use but for its contribution to the production process/final product it makes. The demand for land will increase if there is an increase in the demand for housing/crops.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Explain the term, 4 marks: land is demanded for what it helps produce, so its demand rises with the demand for housing or crops."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q16-c-ii",
+  "topicId": "economics-1-2",
+  "conceptId": "characteristics-of-land",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q16(c)(ii) — Deferred sitting",
+  "questionText": "Explain two unique characteristics of land as a factor of production.",
+  "stem": "The demand for land is referred to as a derived demand.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A characteristic of land — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two characteristics, 5 marks each (3 + 2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Land is fixed in supply - an increase in price being offered for land will not bring about an increased supply. The supply curve for land is a vertical straight line. Quantities of land can be reclaimed and soil erosion may take place but these have little effect on total supply.",
+      "Land has no cost of production to society as a whole - as land is a gift provided by nature it has no cost of production to society as a whole. Any payment to land is above its supply price of zero and this is termed economic rent.",
+      "Land is a non-specific factor - land can be used for various purposes. It can be switched from agricultural use to industrial / residential use.",
+      "Lack of mobility – land cannot be moved from one place to another. Its geographical mobility is nil, but ownership or value can be transferred."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-deferred-q16-c-iii",
+  "topicId": "economics-1-0",
+  "conceptId": "the-market-for-land",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q16(c)(iii) — Deferred sitting",
+  "questionText": "Explain, with the use of a fully labelled diagram, the demand and supply curve for land.",
+  "stem": "The demand for land is referred to as a derived demand.",
+  "figureKey": "economics-2022-HL-deferred-scheme-p36-q16ciii-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 x 1 + 2 + 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "point",
+    "verbatim": "Explain, with the use of a fully labelled diagram, the demand and supply curve for land.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The diagram, 4 × 1: the scheme’s, shown after you answer, labels Price, Quantity, a vertical S and a falling D meeting it at P1.",
+    "ask": true
+   },
+   {
+    "id": "r-supply",
+    "kind": "point",
+    "verbatim": "Land is fixed in supply which means that an increase in price being offered for land will not bring about an increased supply. The supply curve for land is a vertical straight line.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Supply, 2 marks: fixed, a vertical line."
+   },
+   {
+    "id": "r-demand",
+    "kind": "point",
+    "verbatim": "The demand for land is a derived demand and is downward sloping from left to right. As price rises, quantity demanded of land falls and as price falls quantity demanded rises.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Demand, 2 marks: derived, sloping down."
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2022-ol-sa-q1-i",
   "topicId": "economics-3-5",
   "conceptId": "highest-and-lowest-forecast-growth-years",

@@ -74,15 +74,17 @@ class Paper:
     to catch.
     """
 
-    def __init__(self, year, level):
+    def __init__(self, year, level, path=None):
+        if path is None:
+            path = os.path.join(PAPERS, f'{year}-{level}-paper.pdf')
         if int(year) <= LEGACY_LAST_YEAR:
             # The old-syllabus paper heads its questions "1." in the margin and
             # restarts Section B at 1: read it the way the census reads it, and
             # key each question (section, number).
-            self.text, self.heads = text_and_heads(os.path.join(PAPERS, f'{year}-{level}-paper.pdf'))
+            self.text, self.heads = text_and_heads(path)
             self._index()
             return
-        with pymupdf.open(os.path.join(PAPERS, f'{year}-{level}-paper.pdf')) as doc:
+        with pymupdf.open(path) as doc:
             # Every paper sets its headings with non-breaking spaces.
             # Non-breaking spaces in every paper's headings; and the 2025 pair
             # map the "ti" ligature to U+019F, so "Question" reaches the text
@@ -212,13 +214,19 @@ def main():
         year, lvl, want, path_ = m.group(1), m.group(2).lower(), int(m.group(5)), m.group(6)
         if int(year) <= LEGACY_LAST_YEAR:
             want = (m.group(4), want)
-        key = (year, lvl)
+        # A deferred sitting's card ("... — Deferred sitting") is checked
+        # against the deferred paper, which the archive files under
+        # deferredexams/ with the June file id.
+        deferred = ' — Deferred sitting' in c['questionRef']
+        key = (year, lvl, deferred)
         if key not in papers:
-            papers[key] = Paper(year, lvl)
+            papers[key] = Paper(year, lvl, os.path.join(
+                ROOT, 'paper-trail-corpus', 'deferredexams', year,
+                'LC034ALP000EV.pdf' if lvl == 'hl' else 'LC034GLP000EV.pdf') if deferred else None)
         paper = papers[key]
         at = paper.locate(c['questionText'])
         if at < 0:
-            lost.append(f"{c['id']}: not found in the {year} {lvl.upper()} paper"
+            lost.append(f"{c['id']}: not found in the {year} {lvl.upper()}{' deferred' if deferred else ''} paper"
                         + (f"\n            {c['questionText'][:150]}" if show else ''))
             continue
         got = paper.question_at(at)

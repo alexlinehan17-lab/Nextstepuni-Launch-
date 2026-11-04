@@ -262,22 +262,35 @@ describe('Economics exam-topic registry', () => {
       // and development (deflation and savings are monetary policy and the
       // financial sector, emigration employment); and Section B Q8 under
       // globalisation (trade and the exchange rate are international trade).
-      matchedAssociations: 666,
-      referenceAnomalyAssociations: 237,
-      sourceBlockedAssociations: 217,
-      matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 592,
+      // The 2022 Higher deferred sitting (2026-11-04) is its own paper
+      // (LC034ALP000EV-deferred.pdf): its 38 "Deferred Exam Paper" headings,
+      // source-blocked until now, resolve to it. 33 match and five are
+      // reference anomalies: Q8 under the market economy (sustainability and
+      // market failure), Q11 Part C under the market economy and government
+      // intervention (the circular flow is national income), Q14 under topical
+      // questions and statistics (a study-aid heading) and Q15 under economic
+      // concepts (the market for electric vehicles and subsidies are the
+      // market economy and government intervention).
+      matchedAssociations: 699,
+      referenceAnomalyAssociations: 242,
+      sourceBlockedAssociations: 179,
+      matchedLogicalCards: 533,
+      matchedQuestionTopicLinks: 621,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');
 
     const blocked = evidence.associations.filter(association => association.resolution === 'source-blocked');
     expect(new Set(blocked.map(association => association.year))).toEqual(
-      new Set([2006, 2007, 2008, 2009, 2020, 2022]),
+      new Set([2006, 2007, 2008, 2009, 2020]),
     );
     expect(new Set(blocked.map(association => association.sitting))).toEqual(
-      new Set(['main', 'sample', 'deferred']),
+      new Set(['main', 'sample']),
     );
+    const deferred = evidence.associations.filter(association => association.sitting === 'deferred');
+    expect(deferred).toHaveLength(38);
+    expect(deferred.every(association => 'target' in association
+      && association.target?.fileid === 'LC034ALP000EV-deferred.pdf')).toBe(true);
     expect(blocked.every(association => (
       'reason' in association && association.reason.includes('no StudyClix-hosted')
     ))).toBe(true);
@@ -319,16 +332,17 @@ describe('Economics exam-topic registry', () => {
 
   it('exposes all old Section-B tasks and every new-format question', () => {
     expect(evidence.summary).toMatchObject({
-      localPaperVariants: 66,
-      localPhysicalMappings: 1098,
-      distinctStudentFacingQuestions: 549,
-      hostedAnchorMaps: 54,
+      localPaperVariants: 67,
+      localPhysicalMappings: 1114,
+      distinctStudentFacingQuestions: 565,
+      hostedAnchorMaps: 55,
       preservedBaselineVariants: 26,
       preservedBaselineCards: 304,
     });
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'economics');
-    expect(papers).toHaveLength(66);
-    expect(papers.reduce((count, paper) => count + paper.q.length, 0)).toBe(1098);
+    // 66 June variants and the 2022 Higher deferred sitting, numbered 1-16.
+    expect(papers).toHaveLength(67);
+    expect(papers.reduce((count, paper) => count + paper.q.length, 0)).toBe(1114);
     for (const paper of papers) {
       const expected = paper.year <= 2020
         ? [...Array.from({ length: 9 }, (_, i) => String(i + 1)), ...Array.from({ length: 8 }, (_, i) => `B${i + 1}`)]
@@ -378,11 +392,27 @@ describe('Economics exam-topic registry', () => {
     ]);
   });
 
+  it('joins the deferred sitting on its own booklet, never on June\'s question of the same number', () => {
+    const june = examTopicIdsForQuestion('economics', 'higher', 2022, 'main', '1', 'single', 'ev', 'LC034ALP000EV.pdf');
+    const deferred = examTopicIdsForQuestion(
+      'economics', 'higher', 2022, 'main', '1', 'single', 'ev', 'LC034ALP000EV-deferred.pdf');
+    // Deferred Q1 is foreign direct investment; June's Q1 is price elasticity.
+    expect(deferred).toEqual([
+      'economics-higher-52-globalisation',
+      'economics-higher-51-economic-growth-and-development',
+      'economics-higher-53-international-trade-and-competitiveness',
+    ]);
+    expect(june).toEqual(['economics-higher-22-elasticity', 'economics-higher-21-the-market-economy']);
+    const paper = topicsForPaper('economics', 2022, 'higher', 'ev', 'LC034ALP000EV-deferred.pdf');
+    expect(paper?.q.map(question => question.n)).toEqual(Array.from({ length: 16 }, (_, i) => String(i + 1)));
+  });
+
   it('ships complete hosted anchors wherever the classic map cannot address a card', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => (
-      paper.subjectId === 'economics' && (paper.year <= 2020 || (paper.year === 2025 && paper.level === 'higher'))
+      paper.subjectId === 'economics' && (paper.year <= 2020 || (paper.year === 2025 && paper.level === 'higher')
+        || paper.fileid.endsWith('-deferred.pdf'))
     ));
-    expect(papers).toHaveLength(44);
+    expect(papers).toHaveLength(45);
     for (const paper of papers) {
       const anchorPath = path.join(
         ROOT,
@@ -408,9 +438,11 @@ describe('Economics exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 549 entitled tasks through the 40-topic menu', () => {
+  it('surfaces all 565 entitled tasks through the 40-topic menu', () => {
+    // 549 June questions and the 16 of the 2022 Higher deferred sitting, a
+    // paper of its own (its questions are never collapsed into June's).
     expect(subjectAtlasStats('economics')).toMatchObject({
-      questions: 549,
+      questions: 565,
       topics: 40,
       yearMin: 2010,
       yearMax: 2026,

@@ -179,6 +179,8 @@ HAND_CHECKED = {
     'econ-2010-hl-sb-q6-a-i',         # 2010 HL p6: "(i) Explain the underlined terms." (four words; the stem carries the terms)
     'econ-2010-hl-sb-q6-c',           # 2010 HL p6: "(c) ... Outline four features of ‘Monetarism’." (five words after its stem)
     'econ-2010-ol-sb-q4-c-i',         # 2010 OL p7: "(i) Explain the two underlined terms." (five words; the stem carries the terms)
+    'econ-2022-hl-deferred-q13-b-i',  # 2022 HL deferred p24, under Question 13 (b): "(i) Explain the term living wage." (five words)
+    'econ-2022-hl-deferred-q15-c-i',  # 2022 HL deferred p33, under Question 15 (c): "(i) Explain the economic term subsidy." (five words)
 }
 
 
