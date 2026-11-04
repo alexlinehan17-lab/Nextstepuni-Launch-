@@ -91,6 +91,7 @@ EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
 # is the prototype (lane batch 1, 4 Nov 2026); the rest follow once it has
 # been reviewed.
 ESSAY_PAPERS = {
+    (2018, 'hl', 'lm'),
     (2019, 'hl', 'em'),
     (2019, 'hl', 'lm'),
     (2019, 'ol', 'em'),
@@ -294,6 +295,18 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
             return "the question's NOTE prints no CM ceiling below the maximum"
         rubric_cm['elementRule'] = {'note': ask.note,
                                     'caps': [{'when': when, 'max': top} for when, top in ask.note_caps]}
+    elif marking.get('elements'):
+        # Q4's own elements block (2018, 2019 Higher). With a ceiling it is the
+        # question's element rule, as an essay's NOTE is; without one it is a
+        # direction the examiner marks by.
+        caps = marking['elementCaps']
+        if caps:
+            if not all(0 < top < cm['max'] for _when, top in caps):
+                return "the question's NOTE prints no CM ceiling below the maximum"
+            rubric_cm['elementRule'] = {'note': marking['elements'],
+                                        'caps': [{'when': when, 'max': top} for when, top in caps]}
+        else:
+            rubric_cm['directions'] = [marking['elements'], *rubric_cm['directions']]
     guidance = [g for g in marking['schemeGuidance'] if g != rubric_cm['definition']]
     rubric = {'system': 'history-essay', 'schemeGuidance': guidance, 'cm': rubric_cm}
     if oe:

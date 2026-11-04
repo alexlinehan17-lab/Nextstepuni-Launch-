@@ -351,6 +351,48 @@ def _halve(raw, field, year):
 # with no colon (2021, 2022, 2024 Ordinary). Never the upper-case "SECTION 2:
 # IRELAND" that heads the topic-by-topic notes.
 S23_HEAD = re.compile(r'^Section 2(?: and Section 3)?\s*(?::|$)')
+SPLIT_CEILING_CM = re.compile(r'^\d\.\s+Max\.?\s*CM\s*=?\s*\d+$')
+SPLIT_CEILING_OE = re.compile(r'^Max\.?\s*OE\s*=?\s*\d+$')
+# Q4's own account of what the question asks, printed in 2018 and 2019 between
+# its head and "In question 4, marking by paragraph begins.": "There are two
+# elements in this question:" and the elements under it, line by line. 2018
+# also prints a ceiling for an answer treating one of them, "Max of 20 marks
+# CM if only one element is treated", under the CM and OE maxima.
+Q4_ELEMENTS = re.compile(r'^There are (?:two|three|TWO|THREE) elements in this question:$')
+Q4_MARKING_BEGINS = re.compile(r'^In question 4, marking by paragraph begins\.$')
+Q4_ELEMENT_CAP = re.compile(r'^Max of (\d+) marks CM (if only (?:one|ONE) element is treated)$')
+# A line of the elements block that starts a new printed item: after a line
+# that ends in a colon, a question mark or a full stop, and at and after a
+# one-line definition "Name = ..." ("Entertaining = music, comedy, etc").
+Q4_ITEM = re.compile(r'^[A-Z][\w ]{0,30} = ')
+
+
+def _q4_elements(lines):
+    """Q4's elements block, one printed item a line, and the ceiling it prints if any."""
+    start = next((i for i, l in enumerate(lines) if Q4_ELEMENTS.match(l)), None)
+    if start is None:
+        return None, []
+    end = next(i for i in range(start, len(lines)) if Q4_MARKING_BEGINS.match(lines[i]))
+    items = []
+    for line in lines[start:end]:
+        if not line or PAGE_MARK.match(line) or PAGE_FOOTER.match(line):
+            continue
+        if (not items or re.search(r'[:?.]$', items[-1]) or Q4_ITEM.match(line)
+                or Q4_ITEM.match(items[-1])):
+            items.append(line)
+        else:
+            items[-1] = f'{items[-1]} {line}'
+    caps = []
+    for line in lines[end:]:
+        m = Q4_ELEMENT_CAP.match(line)
+        if m:
+            items.append(line)
+            caps.append((m.group(2), int(m.group(1))))
+        if S23_HEAD.match(line):
+            break
+    return '\n'.join(' '.join(x.split()) for x in items), caps
+
+
 PARAGRAPH_LEAD_RUN_ON = re.compile(
     r'(?<=\.) (?=The examiner will divide the answer into paragraphs or '
     r'paragraph equivalents:$)')
@@ -373,7 +415,8 @@ PM_START = re.compile(
     r'|A paragraph or paragraph equivalent|These marks are awarded'
     r'|To mark the answer|In Sections 2 and 3|In question 4\b'
     r'|This principle\b|The proportion\b|IRELAND and EUROPE'
-    r'|Section [23]\b|\d\.\s+Contextualisation|Would you\b)')
+    r'|Section [23]\b|\d\.\s+Contextualisation|Would you\b'
+    r'|Max of \d+ marks CM\b)')
 
 
 def _note_caps(ask):
@@ -480,6 +523,14 @@ class HistScheme:
         self.lines = _halve(self.raw, field, year)
         self.pages = _halve_pages(self.raw, field, year)
         assert len(self.pages) == len(self.lines)
+        # 2018 prints an essay's ceiling over two lines, "1. Max. CM = 60" and
+        # "Max. OE = 40". They are one entry: the second is joined onto the
+        # first and its own line left blank, so line and page stay paired.
+        for i in range(len(self.lines) - 1):
+            if (SPLIT_CEILING_CM.match(self.lines[i])
+                    and SPLIT_CEILING_OE.match(self.lines[i + 1])):
+                self.lines[i] = f'{self.lines[i]} {self.lines[i + 1]}'
+                self.lines[i + 1] = ''
         self.asks = []
         self.by_key = {}
         self.refused = []
@@ -978,6 +1029,8 @@ class HistScheme:
         if missing:
             raise AssertionError(f'{self.year} {self.level} {self.field} {unit}: '
                                  f'could not read {", ".join(missing)}')
+        if unit == 'q4':
+            out['elements'], out['elementCaps'] = _q4_elements(self.lines[lo:hi])
         return out
 
     # -- marking by Core Statement (Ordinary Level) -----------------------

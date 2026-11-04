@@ -37,7 +37,7 @@ vi.mock('../components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new
 
 type EssayCard = SecRubricCard & { rubric: HistoryEssayRubric };
 /** The papers whose essays are carded so far (lane batch 2 adds one sitting a commit). */
-const CARDED_ESSAY_PAPERS = ['2019 higher em', '2019 higher lm', '2019 ordinary em', '2019 ordinary lm', '2020 higher lm', '2020 ordinary lm', '2021 higher em', '2021 higher lm', '2021 ordinary em', '2021 ordinary lm', '2022 higher em', '2022 higher lm', '2022 ordinary em', '2022 ordinary lm', '2023 higher em', '2023 higher lm', '2023 ordinary em', '2023 ordinary lm', '2024 higher em', '2024 higher lm', '2024 ordinary em', '2024 ordinary lm', '2025 higher em', '2025 higher lm', '2025 ordinary em', '2025 ordinary lm', '2026 higher em', '2026 higher lm', '2026 ordinary em', '2026 ordinary lm'];
+const CARDED_ESSAY_PAPERS = ['2018 higher lm', '2019 higher em', '2019 higher lm', '2019 ordinary em', '2019 ordinary lm', '2020 higher lm', '2020 ordinary lm', '2021 higher em', '2021 higher lm', '2021 ordinary em', '2021 ordinary lm', '2022 higher em', '2022 higher lm', '2022 ordinary em', '2022 ordinary lm', '2023 higher em', '2023 higher lm', '2023 ordinary em', '2023 ordinary lm', '2024 higher em', '2024 higher lm', '2024 ordinary em', '2024 ordinary lm', '2025 higher em', '2025 higher lm', '2025 ordinary em', '2025 ordinary lm', '2026 higher em', '2026 higher lm', '2026 ordinary em', '2026 ordinary lm'];
 const essays = [...HISTORY_HIGHER, ...HISTORY_ORDINARY]
   .filter((card): card is EssayCard => isRubricCard(card) && card.rubric.system === 'history-essay');
 const byId = (id: string) => essays.find(card => card.id === id)!;
@@ -251,6 +251,33 @@ describe('scoring by Core Statement and by a NOTE with several ceilings', () => 
     expect(historyEssayMarks(three, { ...full, [historyCapId]: 1 })).toBe(70);
     expect(historyEssayMarks(three, { ...full, [historyCapId]: 2 })).toBe(80);
     expect(historyEssayMarks(three, { ...full, [historyCapId]: 3 })).toBe(90);
+  });
+});
+
+describe('the documents question’s own note on Q4 (2018, 2019 Higher)', () => {
+  it('carries 2018’s elements and its one-element ceiling as the question’s element rule', () => {
+    const rte = byId('hist-2018-hl-lm-s1-q4');
+    expect(rte.rubric.cm.max).toBe(24);
+    expect(rte.rubric.cm.elementRule?.caps).toEqual([{ when: 'if only one element is treated', max: 20 }]);
+    expect(rte.rubric.cm.elementRule?.note.split('\n')).toEqual([
+      'There are two elements in this question:',
+      'To what extent did RTÉ entertain and to what extent did it challenge its viewers?',
+      'Entertaining = music, comedy, etc',
+      'Challenging = provocative current affairs, documentaries, etc',
+      'There were also programmes, such as the Late Late Show, which combined the entertaining and the challenging.',
+      'Max of 20 marks CM if only one element is treated',
+    ]);
+    expect(tariffReconciles(rte)).toBe(true);
+  });
+
+  it('keeps 2019’s elements, which print no ceiling, as a direction', () => {
+    const laois = byId('hist-2019-hl-em-s1-q4');
+    expect(laois.rubric.cm.elementRule).toBeUndefined();
+    expect(laois.rubric.cm.directions[0].split('\n')).toEqual([
+      'There are two elements in this question:',
+      'What was the policy of plantation in Laois/Offaly?',
+      'To what extent was it successful?',
+    ]);
   });
 });
 
