@@ -110,6 +110,8 @@ ESSAY_PAPERS = {
     (2024, 'ol', 'lm'),
     (2025, 'hl', 'em'),
     (2025, 'hl', 'lm'),
+    (2025, 'ol', 'em'),
+    (2025, 'ol', 'lm'),
 }
 
 # NextStepUni's own guidance under the panel, never presented as the SEC's,
