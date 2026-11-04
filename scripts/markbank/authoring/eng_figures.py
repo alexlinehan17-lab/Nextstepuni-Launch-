@@ -573,6 +573,15 @@ REJECTED = {
     # 2020 Higher, looked at 2026-11-04 (the residue cuts it by eye):
     **{(2020, 'hl', 8, 'a', r): 'a stray "d" from the ask in its corner'
        for r in ('i', 'ii')},
+    # 2017 Ordinary, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2017, 'ol', 3, 'b', r): 'cuts off the "Point" label and its arrow'
+       for r in ('i', 'ii')},
+    **{(2017, 'ol', 5, 'a', r): 'cuts off the first drawing of process A'
+       for r in ('i', 'ii', 'iii')},
+    (2017, 'ol', 6, 'b', None): 'carries the ask "Indentify any three of the lathe parts '
+                                'shown."',
+    (2017, 'ol', 6, 'c', 'ii'): 'the chuck alone; the card carries the OR branch\'s CNC '
+                                'lathe beside it',
     # 2017 Higher, looked at 2026-11-04 (the residue cuts each by eye):
     **{(2017, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis and its values'
        for r in ('i', 'ii', 'iii')},

@@ -703,6 +703,15 @@ SHORT_ASKS = {
     ('engineering', 2017, 'ol', 'Q7(c)(iv)'): ('B C', 'p8: the caption "(iv)" under the fourth instrument photograph; the '
                                                       'words read are the labels "B" and "C" of the OR branch\'s circuit '
                                                       'photograph'),
+    ('engineering', 2017, 'ol', 'Q4(b)(iii)'): ('Flux,', 'p5: the term "(iii) Flux," in "(i) Electric soldering iron, '
+                                                         '(ii) A sweated joint, (iii) Flux, (iv) Oxides." under "Describe '
+                                                         'any three of the following in relation to soft soldering:"'),
+    ('engineering', 2017, 'ol', 'Q5(c)(iii)'): ('PVC.', 'p6: the plastic "(iii) PVC." in "(i) Polyethylene, (ii) '
+                                                        'Polystyrene, (iii) PVC." under "Identify a suitable application '
+                                                        'for any two of the following plastics:"'),
+    **{('engineering', 2017, 'ol', f'Q6(b)({r})'): ('', f'p7: the caption "({r})" under the {n} of four lathe-part photographs, '
+                                                       'under "Indentify any three of the lathe parts shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
     **{('engineering', 2018, 'ol', f'Q2(a)({r})'): ('', f'p3: the caption "({r})" under the {n} of three furnace drawings, '
                                                        'under "Name and state the functions of each of the following furnaces."')
        for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},

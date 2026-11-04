@@ -2606,6 +2606,1649 @@
   "questionFigureIncludesPrompt": false
  },
  {
+  "id": "eng-2017-ol-q1-a",
+  "topicId": "eng-3-14",
+  "conceptId": "any-applications-drone-technology",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q1(a)",
+  "questionText": "List any two applications of drone technology.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Search and rescue.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Aerial photography.",
+    "marks": null
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '3 + 2 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q1-b",
+  "topicId": "eng-1-5",
+  "conceptId": "term-non-ferrous-metal",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q1(b)",
+  "questionText": "Explain the term non-ferrous metal.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A non-ferrous metal is a material that does not contain iron.",
+    "marks": 5
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '5 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q1-c",
+  "topicId": "eng-3-14",
+  "conceptId": "sun-renewable-energy-source-identify-non",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q1(c)",
+  "questionText": "The sun is a renewable energy source. Identify one non-renewable energy source.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Coal.",
+    "marks": 5
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '5 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q1-d",
+  "topicId": "eng-2-11",
+  "conceptId": "machine-tool-shown-application-its-use",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q1(d)",
+  "questionText": "Name the machine tool shown and state one application for its use.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Knurling tool.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Application: Used to put a grip on round bars in lathe work.",
+    "marks": null
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '3 + 2 Marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q1d-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q1-e",
+  "topicId": "eng-3-12",
+  "conceptId": "term-clearance-fit-relation-shaft-hole",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q1(e)",
+  "questionText": "Explain the term clearance fit in relation to a shaft and a hole.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A clearance fit is achieved when the largest shaft fits into the smallest hole.",
+    "marks": 5
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '5 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q1-f",
+  "topicId": "eng-2-16",
+  "conceptId": "computer-output-devices",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q1(f)",
+  "questionText": "Name two computer output devices.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Printer.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "CNC lathe.",
+    "marks": null
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '3 + 2 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q1-g",
+  "topicId": "eng-1-9",
+  "conceptId": "application-injection-moulding-process",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q1(g)",
+  "questionText": "Give one application for the injection moulding process.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The injection moulding process is used to produce components such as lunch boxes, phone covers, irregular shapes made from thermoplastic.",
+    "marks": 5
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '5 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q1-h",
+  "topicId": "eng-3-1",
+  "conceptId": "identify-each-safety-symbols-shown",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q1(h)",
+  "questionText": "Identify each of the safety symbols shown.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) Slippery surface.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) Flammable.",
+    "marks": null
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '3 + 2 Marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q1h-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q1-i",
+  "topicId": "eng-2-15",
+  "conceptId": "main-operating-features-any-following-hydraulic",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q1(i)",
+  "questionText": "Describe the main operating features of any one of the following: Hydraulic lifting platform Ratchet and pawl mechanism Scroll saw.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Hydraulic lifting platform The hydraulic lifting platform consists of a hydraulic ram attached to one side of a scissor/parallel linkage mechanism. The other side of the linkage mechanism is attached to a fixed pivot. When hydraulic oil is compressed inside the hydraulic ram, the scissor arms either move closer together or further apart. As one side of the scissor arm is secured to a fixed pivoted at the bottom, movement of the hydraulic arm opens or closes the scissor mechanism resulting in lifting or lowering the platform.",
+    "marks": 12,
+    "accepts": [
+     "Ratchet and pawl mechanism A ratchet and pawl mechanism is used when rotation is required in one direction only. As the ratchet is rotated clockwise the pawl pushes outwards as it lifts over the ratchet’s teeth. However, if the ratchet tries to rotate anti-clockwise the pawl does not release thereby preventing rotation.",
+     "Scroll saw A scroll saw includes an electric motor and a crank mechanism. The crank mechanism converts the rotary motion of the motor into reciprocating motion of a thin blade. The up and down motion of the thin blade can be used to cut intricate shapes in wood or metals. A small rubber bellows, fixed to the crank mechanism, is used to produce a small air flow which is directed at the cutting face to remove waste material as it is cut. A guard is attached to the top of the scroll saw arm and should always be used when cutting."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any one: Award 12 (11) Marks'. Section B is 'Any three parts @ 12 + 12 + 11 Marks': the card carries the 12 a part earns answered first or second; answered third it earns 11.",
+  "questionFigureKey": "engineering-2017-OL-paper-q1i-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q1-j",
+  "topicId": "eng-3-14",
+  "conceptId": "any-following-bluetooth-3-d-printer",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q1(j)",
+  "questionText": "Explain any two of the following: Bluetooth, 3-D printer, Cloud technology, GPS.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Bluetooth Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Used as a short-range wireless interconnection of mobile phones, computers, and other electronic devices.",
+    "marks": 12,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Bluetooth Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Used as a short-range wireless interconnection of mobile phones, computers, and other electronic devices.",
+      "3D printer 3D printing is an additive manufacturing process where 3D objects are produced from a digital file. Components are produced by laying down successful layers of material until the object is produced. Each layer can be seen as a thinly sliced horizontal cross-section of the eventual object. Plastics and metals are commonly used as materials.",
+      "Cloud technology Cloud technology is computing over the internet. Cloud technology provides shared processing and resources to other computers and other devices. Storing of information, photographs etc. is a popular use of cloud technology i.e. One Drive, Google Drive, Dropbox etc.",
+      "GPS GPS is a global positioning system. GPS allows detailed navigation using satalite technology to find out ones position. GPS can be used to plan how best to travel between two locations proving direction, travel time, fuel consumption etc."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any two: Award 6 + 6(5)'. Section B is 'Any three parts @ 12 + 12 + 11 Marks': the card carries the 12 a part earns answered first or second; answered third it earns 11."
+ },
+ {
+  "id": "eng-2017-ol-q1-k",
+  "topicId": "eng-3-8",
+  "conceptId": "define-term-compressive-strength-relation-properties",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q1(k)",
+  "questionText": "Define the term compressive strength in relation to the properties of materials and give one application where a material needs to be strong in compression.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Compressive strength Compressive strength is the ability of a material to be squashed or pushed together without breaking.",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Application: The legs of a chair need to be strong in compression as does the cast iron base and column of a pillar drilling machine.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Definition Award 6, Application Award 6(5)'. Section B is 'Any three parts @ 12 + 12 + 11 Marks': the card carries the 12 a part earns answered first or second; answered third it earns 11."
+ },
+ {
+  "id": "eng-2017-ol-q1-l",
+  "topicId": "eng-3-14",
+  "conceptId": "any-following-carbon-footprint-self-locking",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q1(l)",
+  "questionText": "Explain any two of the following: Carbon footprint, Self-locking nut, Pop riveting, Light emitting diode (LED).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Carbon footprint Carbon footprint is the total amount of greenhouse gas emissions by an individual or business. Usually expressed in equivalent tons of carbon dioxide (CO2).",
+    "marks": 12,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Carbon footprint Carbon footprint is the total amount of greenhouse gas emissions by an individual or business. Usually expressed in equivalent tons of carbon dioxide (CO2).",
+      "Self-locking nut A self-locking nut has a nylon insert which will tighten on a thread and prevent the nut from loosening.",
+      "Pop riveting Pop riveting is a permanent assembly technique using a pop riveting gun and rivets. The gun will pull the nail part of the rivet, deforming the other end around the pieces being assembled.",
+      "Light emitting diode (LED) A light emitting diode is a small light which will only give out light if connected in the correct way. Popular use of a light emitting diode is a power on indicator in devices such as laptops, phones, cookers etc. As they require low energy to operate, uses now include car lights, TV screens and household lighting."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any two: Award 6 + 6 (5)'. Section B is 'Any three parts @ 12 + 12 + 11 Marks': the card carries the 12 a part earns answered first or second; answered third it earns 11."
+ },
+ {
+  "id": "eng-2017-ol-q1-m",
+  "topicId": "eng-2-15",
+  "conceptId": "mechanism-shown-suggest-suitable-application",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q1(m)",
+  "questionText": "Name the mechanism shown and suggest one suitable application for it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Worm and wheel mechanism.",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Application: Lifting mechanism for a toy crane.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Name Award 6, Application Award 6(5)'. Section B is 'Any three parts @ 12 + 12 + 11 Marks': the card carries the 12 a part earns answered first or second; answered third it earns 11.",
+  "questionFigureKey": "engineering-2017-OL-paper-q1m-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q2-a-i",
+  "topicId": "eng-1-4",
+  "conceptId": "metals-produced-each-furnaces-listed-below",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q2(a)(i)",
+  "questionText": "Name the metals produced from each of the furnaces listed below: • Blast furnace • Cupola furnace • Electric arc furnace.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Blast furnace: Pig iron",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cupola furnace: Cast iron",
+    "marks": 4
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Electric arc furnace: Steel",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints 'Name of metals Award 3 @ 4 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q2-a-ii",
+  "topicId": "eng-1-4",
+  "conceptId": "aid-suitable-diagram-operation-furnaces-listed",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q2(a)(ii)",
+  "questionText": "With the aid of a suitable diagram, describe the operation of one of the furnaces listed at Q2(a)(i) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Blast Furnace Iron ore, coke and limestone provide the charge and are fed in through the top of the furnace. As the coke burns, carbon monoxide is produced, and combines with the oxygen in the ore, leaving iron. The limestone combines with impurities to form slag. The molten iron falls to the bottom of the furnace where it is tapped off from time to time. The slag floats above the molten iron and is tapped off as required.",
+    "marks": 10,
+    "accepts": [
+     "Cupola furnace Pig iron and scrap steel or cast iron, together with other elements are the raw materials. Similar to the blast furnace, the cupola furnace is coke-fired with limestone acting as a flux to trap the impurities into slag. The molten cast iron is tapped from the bottom of the furnace and cast into moulds of different shapes and sizes as required.",
+     "Electric Arc furnace Cold scrap iron or steel make up the majority of the charge together with small amounts of lime and carbon. Heat for this furnace is by an electric arc created between carbon electrodes and the charge. The lime combines with impurities producing slag. When the correct composition of steel is achieved the slag is removed and the steel tapped from the furnace."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any one description: Award 1 @ 10 Marks'.",
+  "figureKey": "engineering-2017-OL-scheme-q2aii-sol"
+ },
+ {
+  "id": "eng-2017-ol-q2-b-i",
+  "topicId": "eng-3-14",
+  "conceptId": "suitable-material-each-parts-labelled-go",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q2(b)(i)",
+  "questionText": "Name a suitable material for each of the three parts labelled on the go-cart shown below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Frame: Steel",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Wheel rim: Aluminium",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Mud guard: PVC (Thermoplastic)",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Name of material Award 3 @ 3 Marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q2bi-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q2-b-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "reason-selection-each-material",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q2(b)(ii)",
+  "questionText": "State one reason for the selection of each material.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Steel: Strong",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Aluminium: Light / will not rust",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "PVC: Light / easy to clean / flexible",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prints 'Reason Award 3 @ 2 Marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q2bi-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q2-c",
+  "topicId": "eng-1-5",
+  "conceptId": "metal-alloys-produced-any-following-combinations",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q2(c)",
+  "questionText": "Name the metal alloys produced from any two of the following combinations: (i) Copper and zinc; (ii) Lead and tin; (iii) Copper and tin.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Copper and Zinc: Brass",
+    "marks": 8,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Copper and Zinc: Brass",
+      "Lead and Tin: Solder",
+      "Copper and Tin: Bronze"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Name of alloy Award 2 @ 4 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q3-a-i",
+  "topicId": "eng-2-6",
+  "conceptId": "case-hardening",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q3(a)(i)",
+  "questionText": "Describe how to carry out each of the following heat treatment processes: (i) Case hardening;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Description Award 2 @ 6 marks', 6 for each process."
+ },
+ {
+  "id": "eng-2017-ol-q3-a-ii",
+  "topicId": "eng-2-6",
+  "conceptId": "annealing",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q3(a)(ii)",
+  "questionText": "Describe how to carry out each of the following heat treatment processes: (ii) Annealing.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The metal is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slowly as possible. This can be achieved by leaving the metal in the furnace while the furnace is cooling down.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Description Award 2 @ 6 marks', 6 for each process."
+ },
+ {
+  "id": "eng-2017-ol-q3-b-i",
+  "topicId": "eng-2-6",
+  "conceptId": "how-point-centre-punch-shown-hardened",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q3(b)(i)",
+  "questionText": "Describe how the point of the centre punch shown is hardened and tempered.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hardening: The point of the centre punch is hardened by heating the point to approx. 800 ⁰C i.e. a cherry red color. The point is then immediately quenched in water.",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Tempering: Tempering the point is achieved by heating the point again to approx. 230 ⁰C – 350 ⁰C (a light brown color) and then cooling in oil or water.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Describe - Hardening Award 1 @ 6 marks' and 'Describe -Tempering Award 1 @ 6 marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q3-b-ii",
+  "topicId": "eng-2-6",
+  "conceptId": "why-necessary-temper-point-centre-punch",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q3(b)(ii)",
+  "questionText": "Explain why it is necessary to temper the point of the centre punch shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The point of the centre punch is tempered to reduce the brittleness and increase the toughness of the point.",
+    "marks": 7
+   }
+  ],
+  "notes": "The scheme prints 'Explanation Award 1 @ 7 marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q3-c",
+  "topicId": "eng-3-1",
+  "conceptId": "identify-any-items-protective-clothing-should",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q3(c)",
+  "questionText": "Identify any two items of protective clothing that should be worn when using water as a coolant during heat treatment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Goggles,",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Gloves.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Identify Award 2 @ 3 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q3-d",
+  "topicId": "eng-3-8",
+  "conceptId": "any-following-terms",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q3(d)",
+  "questionText": "Explain any two of the following terms: (i) Malleability, (ii) Tensile strength, (iii) Work hardening. OR (i) State one advantage for the use of robotics in manufacturing. (ii) State one disadvantage for the use of robotics in manufacturing.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Malleability: Malleability is the ability of a material to be hammered / formed into a flat sheet without breaking.",
+    "marks": 8,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Malleability: Malleability is the ability of a material to be hammered / formed into a flat sheet without breaking.",
+      "Tensile strength: Tensile strength is the ability of a material to withstand being pulled apart or stretched.",
+      "Work hardening: When a metal is hammered or shaped when cold it becomes hard and brittle at the point where the cold - working occurs. Some metals are prone to work hardening, copper and aluminium are typical examples where hardness values can be increased by cold working."
+     ]
+    },
+    "route": "a"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Robotics offer precision placement of components in manufacturing.",
+    "marks": 4,
+    "route": "b"
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Robots are expensive and need qualified personnel to service and programme.",
+    "marks": 4,
+    "route": "b"
+   }
+  ],
+  "notes": "The paper sets two (d)s either side of an OR, the metal properties and robotics in manufacturing; the scheme prices both at 8, \"Award 2 @ 4 Marks\" and \"Award 1 @ 4 Marks\" twice, so they are one card, each branch a route."
+ },
+ {
+  "id": "eng-2017-ol-q4-a-i",
+  "topicId": "eng-2-10",
+  "conceptId": "each-oxy-acetylene-flames-shown-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q4(a)(i)",
+  "questionText": "Name each of the oxy-acetylene flames shown at A, B and C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Oxidising flame",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Carburising flame",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: Neutral flame",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Name Award 3 @ 3 Marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q4a-crop",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Oxidising flame",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Carburising flame",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Neutral flame",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2017-ol-q4-a-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "proportions-oxygen-acetylene-required-each-flames",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q4(a)(ii)",
+  "questionText": "State the proportions of oxygen and acetylene required for each of the flames shown at A, B and C above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: (Oxidising flame) An oxidising flame has more oxygen than acetylene.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: (Carburising flame) A carburising flame contains a greater ratio of acetylene than oxygen.",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: (Neutral flame) A neutral flame has equal proportions of acetylene and oxygen.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Proportions Award 3 @ 3 Marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q4a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q4-b",
+  "topicId": "eng-2-10",
+  "conceptId": "any-following-relation-soft-soldering",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q4(b)",
+  "questionText": "Describe any three of the following in relation to soft soldering: (i) Electric soldering iron, (ii) A sweated joint, (iii) Flux, (iv) Oxides.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Electric soldering iron An electric soldering iron is used to heat up the materials and melt the solder when producing a soldered joint. The soldering iron contains an electric element which heats up the soldering tip when electricity is allowed to passed through it.",
+    "marks": 9,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Electric soldering iron An electric soldering iron is used to heat up the materials and melt the solder when producing a soldered joint. The soldering iron contains an electric element which heats up the soldering tip when electricity is allowed to passed through it.",
+      "A sweated joint A sweated joint is produced when two pieces of material which have a thin layer of solder on their outside are brought together and heated. The solder melts on both pieces allowing the solder to fuse (sweat) together. When the joint is allowed to cool, a permanent joint between both materials is produced.",
+      "Flux Flux is used to clean the materials being soldered. Flux also protects the joint from oxidation during soldering.",
+      "Oxides Oxides (rust) form on a metal when exposed to oxygen. This can prevent a soldering joint forming correctly."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Description, any three: Award 3 @ 3 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q4-c-i",
+  "topicId": "eng-2-10",
+  "conceptId": "joining-process-uses-welding-machine-shown",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q4(c)(i)",
+  "questionText": "Describe the joining process which uses the welding machine shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Spot welding is performed by placing the electrodes either side of the two pieces and when an electric current flows between the electrodes the joint in the middle of the two pieces heats up and melts creating a nugget weld.",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints 'Explanation Award 3 @ 4 Marks', 4 for each part answered.",
+  "questionFigureKey": "engineering-2017-OL-paper-q4ci-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q4-c-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "term-tapping-size-hole",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q4(c)(ii)",
+  "questionText": "Explain the term tapping size hole.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A tapping size hole is drilled smaller than the size of the tap which is used to thread the hole i.e. for a M6 threaded hole the tapping size hole would be drilled 4.8mm dia.",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints 'Explanation Award 3 @ 4 Marks', 4 for each part answered."
+ },
+ {
+  "id": "eng-2017-ol-q4-c-iii",
+  "topicId": "eng-2-10",
+  "conceptId": "function-flashback-arrestor-when-using-oxy",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q4(c)(iii)",
+  "questionText": "Describe the function of a flashback arrestor when using oxy-acetylene equipment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The function of a flashback arrester is to prevent the flame travelling back from the torch to the gas cylinder.",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints 'Explanation Award 3 @ 4 Marks', 4 for each part answered."
+ },
+ {
+  "id": "eng-2017-ol-q4-c-iv",
+  "topicId": "eng-3-1",
+  "conceptId": "safety-precautions-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q4(c)(iv)",
+  "questionText": "State two safety precautions to be observed when using adhesives to join materials.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ventilation is required,",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Avoid contact with hands / skin.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Explanation Award 3 @ 4 Marks', 4 for each part answered."
+ },
+ {
+  "id": "eng-2017-ol-q4-d",
+  "topicId": "eng-3-1",
+  "conceptId": "reasons-why-important-wear-goggles-dark",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q4(d)",
+  "questionText": "State two reasons why it is important to wear goggles with a dark lens when gas welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To protect the eyes from light and heat damage.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To protect the eyes from sparks and debris.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Reasons Award 2 @ 3 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q5-a-i",
+  "topicId": "eng-1-9",
+  "conceptId": "plastic-manufacturing-process-shown-plastic-manufacturing",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q5(a)(i)",
+  "questionText": "Two plastic manufacturing processes are shown at A and B. Name the plastic manufacturing process shown at A and the plastic manufacturing process shown at B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: - Vacuum forming",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: - Blow moulding",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Name of process Award 2 @ 3 Marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q5a-crop",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Vacuum forming",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Blow moulding",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2017-ol-q5-a-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "main-differences-between-process-process-b",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q5(a)(ii)",
+  "questionText": "Outline the main differences between process A and process B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "In process A, the thermoplastic is heated, the mould is lifted up into the softened plastic sheet and a vacuum is then applied to suck the plastic sheet around the shape of the mould.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "In process B, a soft hot thermoplastic tube (parision) is fed in between two half moulds. Hot air is then forced into the tube causing the plastic to stretch out and fill the shape of the mould.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Describe difference Award 2 @ 3 Marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q5a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q5-a-iii",
+  "topicId": "eng-1-9",
+  "conceptId": "each-process-identify-suitable-component-produced",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q5(a)(iii)",
+  "questionText": "For each process, identify a suitable component produced.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Vacuum forming: Biscuits trays",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Blow Moulding: Bottles",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Identify Component Award 2 @ 3 Marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q5a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q5-b",
+  "topicId": "eng-1-9",
+  "conceptId": "any-following-terms-associated-plastics",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q5(b)",
+  "questionText": "Describe any three of the following terms associated with plastics: (i) Thermoplastic; (ii) Elastic memory; (iii) Thermosetting plastic; (iv) Plastic dip coating tank.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Thermoplastic Thermoplastic is a plastic which can soften over and over again. Thermoplastic can also be recycled.",
+    "marks": 15,
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Thermoplastic Thermoplastic is a plastic which can soften over and over again. Thermoplastic can also be recycled.",
+      "Elastic memory Elastic memory is where a thermoplastic product will return to its original manufactured state if heated a seconded time.",
+      "Thermosetting plastic Thermosetting plastic is a plastic which cannot be re-softened a second time. It is difficult to recycle a thermosetting plastic.",
+      "Plastic dip coating tank A plastic dip coating tank is a container which holds powered thermoplastic material. A metal piece is heated to approx.. 180⁰C and dipped into the power which needs to be aerated (fluidized). The plastic power sticks to the hot metal and melts forming a protective coating around the piece. The metal piece is removed and allowed to cool."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Award 3 @ 5 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q5-c",
+  "topicId": "eng-1-9",
+  "conceptId": "identify-suitable-application-any-following-plastics",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q5(c)",
+  "questionText": "Identify a suitable application for any two of the following plastics: (i) Polyethylene, (ii) Polystyrene, (iii) PVC.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Polyethylene: Shopping bags / bottles",
+    "marks": 6,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Polyethylene: Shopping bags / bottles",
+      "Polystyrene: Disposable cups / packaging",
+      "PVC: Gutter down pipes / Insulation on electrical wires"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any two applications: Award 2 @ 3 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q5-d",
+  "topicId": "eng-1-9",
+  "conceptId": "cab-car-shown-made-acrylic-process",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q5(d)",
+  "questionText": "The cab of the car shown is made from acrylic. Describe a process which can be used to form the bends on the acrylic cab shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To bend the acrylic cab a strip heater is used to heat the acrylic on the bend line. This softens the acrylic and when soft enough, the acrylic can be bent over a former of the required angle and allowed to cool and set in position. The angle can be measured with a protractor.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Description Award 1 @ 6 Marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q5d-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q6-a-i",
+  "topicId": "eng-2-11",
+  "conceptId": "reason-using-cutting-fluids-when-machining",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q6(a)(i)",
+  "questionText": "Give one reason for using cutting fluids when machining.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cutting fluids are used to help lubricate the cutting process, reduce the production of heat and wash away swarf.",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints '1 reason for each part Award 3 @ 5 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q6-a-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "reason-changing-speed-chuck-when-machining",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q6(a)(ii)",
+  "questionText": "Give one reason for changing the speed of the chuck when machining on a centre lathe.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reasons for changing the speed of the chuck include, the diameter of the workpiece, diameter of drill piece and machining operation.",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints '1 reason for each part Award 3 @ 5 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q6-a-iii",
+  "topicId": "eng-2-11",
+  "conceptId": "reason-why-lathe-cutting-tool-must",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q6(a)(iii)",
+  "questionText": "Give one reason why a lathe cutting tool must be positioned on centre before machining.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "If the cutting tool is on-centre it will cut to the middle with the minimum force. If it is below centre, a small piece will remain uncut at the centre and climbing can be an issue. While if above centre, rubbing and a poor finish will result.",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints '1 reason for each part Award 3 @ 5 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q6-b",
+  "topicId": "eng-2-11",
+  "conceptId": "indentify-any-lathe-parts-shown",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q6(b)",
+  "questionText": "Indentify any three of the lathe parts shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "(i) Centre drill",
+    "marks": 15,
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "(i) Centre drill",
+      "(ii) Tailstock",
+      "(iii) Parting off tool",
+      "(iv) Chuck"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any three: Identify Award 3 @ 5 Marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q6b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q6-c-i",
+  "topicId": "eng-2-11",
+  "conceptId": "chuck-or-do-letters-cad-cam",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q6(c)(i)",
+  "questionText": "A chuck for use in a centre lathe is shown. Name this chuck. OR A CNC lathe used for CAD/CAM technology is shown. What do the letters CAD/CAM stand for?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: 3-jaw self-centering chuck.",
+    "marks": 5,
+    "route": "a"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "CAD / CAM: Computer Aided Design / Computer Aided Manufacture",
+    "marks": 5,
+    "route": "b"
+   }
+  ],
+  "notes": "The scheme prints 'Award 1 @ 5 Marks' for each (i). The paper sets two (c)s either side of an OR, the lathe chuck and the CNC lathe; the scheme prices their romans alike, (i) \"Award 1 @ 5 Marks\", (ii) \"Award 2 @ 3+2 Marks\" and (iii) \"Award 1 @ 5 Marks\", so each roman is one card, each branch a route.",
+  "questionFigureKey": "engineering-2017-OL-paper-q6c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q6-c-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "other-methods-holding-work-centre-lathe",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q6(c)(ii)",
+  "questionText": "A chuck for use in a centre lathe is shown. Name two other methods for holding work on a centre lathe. OR A CNC lathe used for CAD/CAM technology is shown. Describe two advantages of using CAD/CAM technology in industry.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "4-jaw independent chuck,",
+    "marks": 3,
+    "route": "a"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "faceplate.",
+    "marks": 2,
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Precision of product.",
+    "marks": 3,
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Easy to make alterations",
+    "marks": 2,
+    "route": "b"
+   }
+  ],
+  "notes": "The scheme prints 'Award 2 @ 3+2 Marks' for each (ii), each pair in the order the scheme names them. The paper sets two (c)s either side of an OR, the lathe chuck and the CNC lathe; the scheme prices their romans alike, (i) \"Award 1 @ 5 Marks\", (ii) \"Award 2 @ 3+2 Marks\" and (iii) \"Award 1 @ 5 Marks\", so each roman is one card, each branch a route.",
+  "questionFigureKey": "engineering-2017-OL-paper-q6c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q6-c-iii",
+  "topicId": "eng-2-11",
+  "conceptId": "safety-precaution-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q6(c)(iii)",
+  "questionText": "A chuck for use in a centre lathe is shown. State one safety precaution to be observed when using this type of chuck. OR A CNC lathe used for CAD/CAM technology is shown. State one safety precaution to be observed when operating a CNC lathe.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Remove chuck key before use.",
+    "marks": 5,
+    "route": "a"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Perform a simulation of the machining process to ensure no collisions.",
+    "marks": 5,
+    "route": "b"
+   }
+  ],
+  "notes": "The scheme prints 'Award 1 @ 5 Marks' for each (iii). The paper sets two (c)s either side of an OR, the lathe chuck and the CNC lathe; the scheme prices their romans alike, (i) \"Award 1 @ 5 Marks\", (ii) \"Award 2 @ 3+2 Marks\" and (iii) \"Award 1 @ 5 Marks\", so each roman is one card, each branch a route.",
+  "questionFigureKey": "engineering-2017-OL-paper-q6c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q7-a",
+  "topicId": "eng-3-12",
+  "conceptId": "any-following-terms-relation-limits-fits",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q7(a)",
+  "questionText": "Describe any two of the following terms in relation to limits and fits: (i) Interference fit, (ii) Tolerance, (iii) Lower limit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Interference fit Interference fit results when the smallest shaft is bigger than the largest hole. Force is needed to assemble the parts together.",
+    "marks": 10,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Interference fit Interference fit results when the smallest shaft is bigger than the largest hole. Force is needed to assemble the parts together.",
+      "Tolerance Tolerance is the difference between the upper and lower limits of a component to manufactured. Tolerance = 0.14mm",
+      "Lower Limit The lower limit is the smallest size a component can be manufactured to and still be acceptable."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Description Award 2 @ 5 Marks'."
+ },
+ {
+  "id": "eng-2017-ol-q7-b",
+  "topicId": "eng-3-12",
+  "conceptId": "hole-shaft-assembly-manufactured-dimensions-shown",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q7(b)",
+  "questionText": "A hole and shaft assembly is manufactured to the dimensions shown. State the: (i) Nominal diameter of the shaft; (ii) Smallest diameter of the shaft; (iii) Largest diameter of the hole; (iv) The type of fit which will result from the assembly of the smallest shaft and the largest hole.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) Nominal diameter of the shaft; 40.00 mm",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) Smallest diameter of the shaft; 39.95 mm",
+    "marks": 5
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(iii) Largest diameter of the hole; 39.05 mm",
+    "marks": 5
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "(iv) Interference fit.",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints 'Calculations/Name Award 4 @ 5 Marks'.",
+  "questionFigureKey": "engineering-2017-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q7-c",
+  "topicId": "eng-3-12",
+  "conceptId": "any-instruments-shown-application-each-instrument",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q7(c)",
+  "questionText": "Name any three of the instruments shown and give one application for each instrument named.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "(i) Outside calipers - for gauging the outside diameter of round bars.",
+    "marks": 15,
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "(i) Outside calipers - for gauging the outside diameter of round bars.",
+      "(ii) Vee block & clamp - used for holding round bars when drilling or marking out.",
+      "(iii) Digital calipers - used to accurately display the inside, outside and depth measurements of components.",
+      "(iv) Feeler gauges - used to accurately set the gap / distance between two Surfaces i.e. spark plug."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any three: Name & application Award 3 @ 5 Marks'. The paper sets two (c)s either side of an OR: the instruments (c), carded at the letter, and the electronic components (c), whose (i) and (ii) are carded apart.",
+  "questionFigureKey": "engineering-2017-OL-paper-q7c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2017-ol-q7-c-i",
+  "topicId": "eng-2-16",
+  "conceptId": "any-electronic-components-labelled-b-c",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q7(c)(i)",
+  "questionText": "Name any three of the electronic components labelled A, B, C or D.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A:Battery,",
+    "marks": 9,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "A:Battery,",
+      "B:Switch,",
+      "C:Variable resistor,",
+      "D:Motor."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Name Award 3 @ 3 Marks'. The paper sets two (c)s either side of an OR: the instruments (c), carded at the letter, and the electronic components (c), whose (i) and (ii) are carded apart.",
+  "questionFigureKey": "engineering-2017-OL-paper-q7cor-crop",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Battery:",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Switch:",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Variable resistor:",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Motor:",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2017-ol-q7-c-ii",
+  "topicId": "eng-2-16",
+  "conceptId": "function-each-electronic-components-named",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q7(c)(ii)",
+  "questionText": "State the function of each of the electronic components named.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Battery: Provides electricity energy.",
+    "marks": 6,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Battery: Provides electricity energy.",
+      "Switch: Turns on or off a circuit.",
+      "Variable resistor: Slows down the flow of current in a circuit.",
+      "Motor: Converts electricity energy into mechanical energy (rotary)."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Function Award 3 @ 2 Marks'. The paper sets two (c)s either side of an OR: the instruments (c), carded at the letter, and the electronic components (c), whose (i) and (ii) are carded apart.",
+  "questionFigureKey": "engineering-2017-OL-paper-q7cor-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
   "id": "eng-2018-hl-q2-a-i",
   "topicId": "eng-3-7",
   "conceptId": "method-may-be-used-protect-steel",

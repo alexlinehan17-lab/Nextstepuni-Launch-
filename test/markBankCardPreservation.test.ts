@@ -1019,7 +1019,7 @@ const decks = [
 ] as const;
 
 // [count, idHash] of eng_residue/additions.json, re-pinned as each sitting lands.
-const ENGINEERING_ADDITIONS = [695, 'e842ff2f1a821185b28c4be3b386ba383b9a2cfd20af7f123b7a7d0df0d714a2'] as const;
+const ENGINEERING_ADDITIONS = [745, '7102185d117897d098b28fcdea92b9de0b82a9376f62865c90f593841458cd94'] as const;
 const idHash = (ids: readonly string[]) => createHash('sha256')
   .update([...ids].sort().join('\n'))
   .digest('hex');
@@ -1372,6 +1372,7 @@ describe('Mark Bank card preservation', () => {
     //   2018 HL: +76 (1043 -> 1119)
     //   2018 OL: +54 (1119 -> 1173)
     //   2017 HL: +76 (1173 -> 1249)
+    //   2017 OL: +50 (1249 -> 1299)
     const live = new Set([...ENGINEERING_HIGHER, ...ENGINEERING_ORDINARY].map(card => card.id));
     for (const id of engineeringAdditionIds) expect(live.has(id), `missing Engineering addition ${id}`).toBe(true);
     expect(engineeringAdditionIds.size).toBe(ENGINEERING_ADDITIONS[0]);
