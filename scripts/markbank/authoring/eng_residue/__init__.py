@@ -32,6 +32,7 @@ wrong, and the reviewed card takes its place under the same id.
 """
 import importlib
 import os
+import re
 import sys
 
 DIR = os.path.dirname(os.path.abspath(__file__))
@@ -102,6 +103,31 @@ def build(A, year, level, built, figure_keys, topic_for_part, keeps_stem,
         for row, m in zip(card['rows'], marks):
             row['kind'], row['marks'] = 'point', m
         card['notes'] = f"The scheme prints '{printed}'."
+    # A part the scheme prices with a bracketed alternative ("7 (6) Marks",
+    # "4 (3) + 3 Marks": the price a part earns, and in brackets the lower one
+    # it earns when marked among the rest) that the automatic author carded at
+    # the bracketed value. A student cannot know in advance which price a part
+    # will be marked at, and the scheme leads with the primary one, so the card
+    # carries the PRINTED primary price and the note says when the bracketed
+    # one applies. Rows and ids stay; only the prices change, to the ones
+    # printed beside them.
+    for cid, (marks, printed, note) in getattr(mod, 'PRIMARY', {}).items():
+        hit = [c for c in A.cards if c['id'] == cid]
+        if not hit or not re.search(r'\d\s*\(\d+\)', printed or ''):
+            raise SystemExit(f'eng_residue {year} {level} {cid}: PRIMARY entry for a '
+                             f'card the author does not build, or with no bracketed price')
+        card = hit[0]
+        if len(card['rows']) != len(marks):
+            raise SystemExit(f'eng_residue {year} {level} {cid}: {len(card["rows"])} rows '
+                             f'do not take {marks}')
+        if card['totalMarks'] == sum(marks) and [r.get('marks') for r in card['rows']] == marks:
+            raise SystemExit(f'eng_residue {year} {level} {cid}: already at the primary '
+                             f'price; the PRIMARY entry is stale')
+        card['tariffModel'] = {'kind': 'fixed'}
+        for row, m in zip(card['rows'], marks):
+            row['kind'], row['marks'] = 'point', m
+        card['totalMarks'] = sum(marks)
+        card['notes'] = f"The scheme prints '{printed}'. {note}"
     # An option of a printed list the automatic author carded on its own,
     # because the reader priced that roman and refused its siblings. The
     # printed choice is ONE card, at the letter, so the option's card is

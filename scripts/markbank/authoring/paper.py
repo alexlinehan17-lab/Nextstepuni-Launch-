@@ -304,6 +304,19 @@ WELDED_HEADS = {
     # split off, Question 4's head filed as the tail of Q3(g), and its (a)-(d)
     # were read as repeats of Q3's letters and lost.
     ('biology', 2012, 'ol'): ['(g) An organ is a group of systems. T F'],
+    # 2016 OL Engineering page 3 sets Question 2's "(a)" on a line of its own
+    # under the head, and the text layer reads it into the head's block after
+    # "(45 marks)", with no full stop before it for TRAILING_MARKER to carry.
+    # With no (a) read, (b), (c) and (d) were not taken as letters either, and
+    # Question 2's asks filed as three letterless romans.
+    ('engineering', 2016, 'ol'): ['Question 2. (45 marks)'],
+    # 2014 OL Engineering page 2 reads Q1(j)-(m) as one block that ends "(m)
+    # Name the two drive systems shown at (i) and (ii). (i) (ii)": the last two
+    # markers are the labels printed beside the two drive photographs, and
+    # TRAILING_MARKER carried the "(ii)" into a part of its own (census
+    # Q1(m)(i) 'and', Q1(m)(ii) holding the page footer). Split off after the
+    # ask, the labels stand as a block FIGURE_BLOCKS takes out.
+    ('engineering', 2014, 'ol'): ['(m) Name the two drive systems shown at (i) and (ii).'],
 }
 # Subjects where a letter going BACKWARDS inside a question is never a new
 # part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'
@@ -334,6 +347,11 @@ _BARE_RUN = re.compile(r'^\([a-h]\)(?:\s+\([a-h]\))+$')
 # lose (i)-(m). 2012 and 2014 OL lose no caption romans. On the Higher papers it
 # moves other readings (Q8(a)(i)) and is never on.
 BARE_ROMAN_RUNS = {('engineering', y, 'ol') for y in (2010, 2013, 2016, 2017, 2018, 2019, 2026)}
+# 2015 OL, switched on once FIGURE_BLOCKS takes Q1(h)'s and Q1(m)'s captions
+# out first (below): the split then recovers Q2(a)(ii), the second furnace
+# drawing's caption, and Q6(a)(iii), the third lathe component's, both printed
+# on paper page 3 and page 5 (rendered and read 2026-11-04).
+BARE_ROMAN_RUNS.add(('engineering', 2015, 'ol'))
 _BARE_ROMAN = r'\((?:i{1,3}|iv|vi{0,3}|ix|x)\)'
 _BARE_ROMAN_RUN = re.compile(rf'^{_BARE_ROMAN}(?:\s+{_BARE_ROMAN})+$')
 # Chemistry prints 'Leaving Certificate Examination, 2021' (comma), Physics
@@ -612,6 +630,28 @@ FIGURE_BLOCKS[('engineering', 2026, 'ol')] = ['saddle seat frame', 'tyre', 'moun
 # thread rolled at (ii) shown below"); read as markers, the captions made a
 # Q1(m)(ii) holding the page footer and the Section B heading. One ask, no parts.
 FIGURE_BLOCKS[('engineering', 2011, 'hl')] = ['(i) (ii)']
+# 2015 OL Engineering paper page 2. Q1(h) captions its two thread pictures
+# "(i)" and "(ii)" ("Name the thread forms suitable for each of the following:
+# (i) Engineering machine vice, (ii) Machine screw.", the names set on the same
+# line), and the text layer hands the two labels over as a block of their own
+# after Section B's "(i) Describe the main operating features ...": read as
+# markers they made the letter (i) a roman run, the census counting Q1(i)(i)
+# "...of the following: A" and Q1(i)(ii) "Spot welding machine ...". Q1(m)
+# names its two tool photographs "(i)" and "(ii)" in its own sentence ("Name
+# the two cutting tools shown at (i) and (ii).") and the labels came as two
+# more blocks, making a Q1(m)(i) with no words and a Q1(m)(ii) holding the
+# page footer. "A" is (g)'s label on the cam drawing ("Name the mechanism
+# labelled A"), read into Q1(i)'s words. All four are the pictures' labels:
+# no ask is printed there, so each part is one ask, as 2011 HL Q1(m) is.
+FIGURE_BLOCKS[('engineering', 2015, 'ol')] = ['(i) (ii)', '(i)', '(ii)', 'A']
+# 2014 OL Engineering paper page 2, the same two layouts: Q1(g) captions its
+# two thread drawings "(i)" and "(ii)" ("Identify the two thread forms
+# shown."), and the text layer sets the pair as a block of its own after
+# Section B's "(i) Describe ...", where, read as markers, it made the letter
+# (i) a roman run (the census counted Q1(i)(i) and Q1(i)(ii)); Q1(m)'s two
+# photograph labels, split off its block by WELDED_HEADS, are the same pair.
+# One ask each.
+FIGURE_BLOCKS[('engineering', 2014, 'ol')] = ['(i) (ii)']
 _TRAILING_OR = re.compile(r'\s+OR\s*$')
 _BARE_MARKER = re.compile(r'^\((?:[ivx]{1,4}|[a-m])\)$')
 

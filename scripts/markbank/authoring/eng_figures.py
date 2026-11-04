@@ -573,6 +573,60 @@ REJECTED = {
     # 2020 Higher, looked at 2026-11-04 (the residue cuts it by eye):
     **{(2020, 'hl', 8, 'a', r): 'a stray "d" from the ask in its corner'
        for r in ('i', 'ii')},
+    # 2016 Ordinary, looked at 2026-11-04 (the residue cuts each by eye):
+    (2016, 'ol', 1, 'm', None): 'takes in the page footer "Page 2 of 7"',
+    **{(2016, 'ol', 2, 'a', r): 'takes in Question 2\'s head and (a)\'s prose'
+       for r in ('i', 'ii')},
+    **{(2016, 'ol', 5, 'a', r): 'cuts off the first drawing of A and half of C'
+       for r in ('i', 'ii')},
+    (2016, 'ol', 6, 'a', None): 'cuts the four drawings off at the waist',
+    # 2016 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2016, 'hl', 2, 'b', r): 'the axes sketch alone; the card shows it under the '
+                                'results table'
+       for r in ('i', 'ii', 'iii')},
+    **{(2016, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis values'
+       for r in ('i', 'ii', 'iii')},
+    **{(2016, 'hl', 3, 'c', r): 'a stray glyph from the prose at its left edge'
+       for r in ('i', 'ii')},
+    **{(2016, 'hl', 4, 'c', r): 'takes in (c)\'s prose beside the cooling curve'
+       for r in ('i', 'ii')},
+    **{(2016, 'hl', 8, 'c', r): 'a stray glyph from the prose at its left edge'
+       for r in ('i', 'ii')},
+    # 2017 Ordinary, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2017, 'ol', 3, 'b', r): 'cuts off the "Point" label and its arrow'
+       for r in ('i', 'ii')},
+    **{(2017, 'ol', 5, 'a', r): 'cuts off the first drawing of process A'
+       for r in ('i', 'ii', 'iii')},
+    (2017, 'ol', 6, 'b', None): 'carries the ask "Indentify any three of the lathe parts '
+                                'shown."',
+    (2017, 'ol', 6, 'c', 'ii'): 'the chuck alone; the card carries the OR branch\'s CNC '
+                                'lathe beside it',
+    # 2017 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2017, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis and its values'
+       for r in ('i', 'ii', 'iii')},
+    **{(2017, 'hl', 4, 'a', r): 'takes in (a)\'s prose beside the spring'
+       for r in ('i', 'ii')},
+    **{(2017, 'hl', 7, 'c', r): 'the magnetic chuck alone; the card carries the OR '
+                                'branch\'s 3-D printer beside it'
+       for r in ('i', 'ii')},
+    (2017, 'hl', 8, 'c', 'i'): 'a stray glyph from the ask at its left edge',
+    (2017, 'hl', 8, 'c', 'ii'): 'takes in (c)\'s prose beside the car',
+    # 2014 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2014, 'hl', 1, 'o', r): 'cuts off B and the containment structure\'s label'
+       for r in ('i', 'ii')},
+    **{(2014, 'hl', 3, 'b', r): 'cuts off the temperature axis and its values'
+       for r in ('i', 'ii')},
+    **{(2014, 'hl', 4, 'a', r): 'takes in the page\'s "(50 marks)"'
+       for r in ('i', 'ii')},
+    **{(2014, 'hl', 6, 'a', r): 'cuts off the label "casing for games controller"'
+       for r in ('i', 'ii')},
+    (2014, 'hl', 8, 'a', None): 'takes in the page\'s "(50 marks)"',
+    # 2015 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2015, 'hl', 2, 'b', r): 'cuts off the stress axis, its values and the fractured '
+                                'specimen at C'
+       for r in ('i', 'ii')},
+    **{(2015, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis and its values'
+       for r in ('i', 'ii')},
 }
 
 

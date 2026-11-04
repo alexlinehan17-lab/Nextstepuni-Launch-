@@ -22,8 +22,8 @@ def S(page, *rect):
     return lift(Y, L, 'scheme', page, rect)
 
 
-def P(page, *rect, more=()):
-    return lift(Y, L, 'paper', page, rect, more=more)
+def P(page, *rect, more=(), items=()):
+    return lift(Y, L, 'paper', page, rect, more=more, items=items)
 
 
 _B2 = (80, 202, 510, 235)        # paper p3: (b)'s lead-in
@@ -147,8 +147,12 @@ CARDS = [
     # ---- Question 1, Section B ("Any three parts @ 12 + 12 + 11 marks") ----
     dict(key=(1, 'i', None),
          why='The three tools are photographed and captioned under (i); scheme p6 '
-             'describes each under its name, "Any one", "Award 12 (11) Marks".',
+             'describes each under its name, "Any one", "Award 12 (11) Marks". The '
+             'question is lifted with each caption on its own line, as the paper '
+             'sets them under their pictures.',
          topic='eng-2-11', stem=False,
+         question_lift=P(2, 60, 469, 390, 487, items=[(60, 580, 155, 598), (270, 580, 320, 598),
+                                                 (445, 580, 505, 598)]),
          lifted=[[join(S(6, 76, 118, 165, 133), S(6, 76, 133, 447, 236)),
                   join(S(6, 76, 250, 116, 265), S(6, 76, 265, 447, 338)),
                   join(S(6, 76, 353, 127, 368), S(6, 76, 368, 444, 455))]],

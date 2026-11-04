@@ -692,9 +692,45 @@ SHORT_ASKS = {
     **{('engineering', 2013, 'ol', f'Q7(c)({r})'): ('', f'p6: the caption "({r})" under the {n} of four instrument drawings, '
                                                        'under "Name any three of the instruments shown and give one application for each instrument named."')
        for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    # 2014 OL, each opened on its page (2026-11-04).
+    **{('engineering', 2014, 'ol', f'Q7(c)({r})'): ('', f'p6: the caption "({r})" under the {n} of four instrument photographs, '
+                                                       'under "Name any three of the instruments shown and give one '
+                                                       'application of each instrument named."; the OR branch\'s (c) '
+                                                       'captions only (i) to (iii)')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iv', 'fourth'))},
+    # 2015 OL, each opened on its page (2026-11-04).
+    **{('engineering', 2015, 'ol', f'Q2(a)({r})'): ('', f'p3: the caption "({r})" over the {n} of three furnace drawings, '
+                                                       'under "Name each of the furnaces shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    ('engineering', 2015, 'ol', 'Q2(d)(i)'): ('Brass,', 'p3: the alloy "(i) Brass," in "(i) Brass, (ii) Solder." under '
+                                                        '"Name the metals used to produce each of the alloys listed below:"'),
+    ('engineering', 2015, 'ol', 'Q4(a)(i)'): ('Flux,', 'p4: the term "(i) Flux," in "(i) Flux, (ii) Sweating, (iii) Cored '
+                                                       'solder, (iv) Tinning." under "Describe any three of the following '
+                                                       'soft soldering terms:"'),
+    **{('engineering', 2015, 'ol', f'Q6(a)({r})'): ('', f'p5: the caption "({r})" under the {n} of four lathe-component '
+                                                       'photographs, under "Identify any three of the lathe components shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2015, 'ol', 'Q6(b)(iv)'): ('Feed.', 'p5: the term "(iv) Feed." in "(i) Taper turning, (ii) Spindle '
+                                                        'speed, (iii) Cutting fluids, (iv) Feed." under "Explain any three of '
+                                                        'the following in relation to machining:"'),
+    **{('engineering', 2015, 'ol', f'Q7(c)({r})'): ('', f'p6: the caption "({r})" under the {n} of four instrument photographs, '
+                                                       'under "Name any three of the instruments shown and give one '
+                                                       'application for each instrument named."; the OR branch\'s (c) '
+                                                       'captions only (i) to (iii)')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iv', 'fourth'))},
     **{('engineering', 2016, 'ol', f'Q6(a)({r})'): ('', f'p6: the caption "({r})" under the {n} of four lathe-operation drawings, '
                                                        'under "Name any three of the lathe operations shown."')
        for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2016, 'ol', 'Q2(b)(i)'): ('Steel', 'p3: the metal "(i) Steel" in "(i) Steel (ii) Pig iron (iii) '
+                                                       'Cast iron." under "For each of the metals listed below, name a '
+                                                       'suitable furnace used in the production of the metal:"'),
+    ('engineering', 2016, 'ol', 'Q6(b)(iv)'): ('Swarf.', 'p6: the term "(iv) Swarf." in "(i) Four jaw chuck (ii) '
+                                                         'Clearance angle (iii) Pilot hole (iv) Swarf." under "Describe '
+                                                         'any three of the following in relation to machining:"'),
+    **{('engineering', 2016, 'ol', f'Q7(c)({r})'): ('', f'p7: the caption "({r})" under the {n} of four instrument photographs, '
+                                                       'under "Name any three of the instruments shown and give one '
+                                                       'application for each instrument named."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iv', 'fourth'))},
     ('engineering', 2017, 'ol', 'Q1(h)(i)'): ('', 'p2: the caption "(i)" under the first of two safety symbols, under '
                                                   '"Identify each of the safety symbols shown."'),
     ('engineering', 2017, 'ol', 'Q7(c)(iii)'): ('', 'p8: the caption "(iii)" under the third of four instrument photographs, '
@@ -703,6 +739,15 @@ SHORT_ASKS = {
     ('engineering', 2017, 'ol', 'Q7(c)(iv)'): ('B C', 'p8: the caption "(iv)" under the fourth instrument photograph; the '
                                                       'words read are the labels "B" and "C" of the OR branch\'s circuit '
                                                       'photograph'),
+    ('engineering', 2017, 'ol', 'Q4(b)(iii)'): ('Flux,', 'p5: the term "(iii) Flux," in "(i) Electric soldering iron, '
+                                                         '(ii) A sweated joint, (iii) Flux, (iv) Oxides." under "Describe '
+                                                         'any three of the following in relation to soft soldering:"'),
+    ('engineering', 2017, 'ol', 'Q5(c)(iii)'): ('PVC.', 'p6: the plastic "(iii) PVC." in "(i) Polyethylene, (ii) '
+                                                        'Polystyrene, (iii) PVC." under "Identify a suitable application '
+                                                        'for any two of the following plastics:"'),
+    **{('engineering', 2017, 'ol', f'Q6(b)({r})'): ('', f'p7: the caption "({r})" under the {n} of four lathe-part photographs, '
+                                                       'under "Indentify any three of the lathe parts shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
     **{('engineering', 2018, 'ol', f'Q2(a)({r})'): ('', f'p3: the caption "({r})" under the {n} of three furnace drawings, '
                                                        'under "Name and state the functions of each of the following furnaces."')
        for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
@@ -744,11 +789,11 @@ SHORT_ASKS = {
 
 # A paper whose question marks add up to a different total from its sitting's
 # other years because its FORMAT differs, each total checked on the paper's
-# own question heads. Engineering Ordinary 2017-2019 print Question 1 at
+# own question heads. Engineering Ordinary 2014-2019 print Question 1 at
 # "(65 marks)" and Questions 2-7 at "(45 marks)" (335), where 2021 on print
 # seven questions at 50 (350). The checksum stands down only while the reader
 # sums exactly the printed total.
-PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2017, 2018, 2019)}
+PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2014, 2015, 2016, 2017, 2018, 2019)}
 
 
 def short_ask_ok(subject, year, level, flag):
@@ -974,9 +1019,29 @@ def key_label(k, subject=None):
 # Subjects whose papers may print a question's tariff BEFORE its head in the
 # text layer ("(50 marks) Question 4."); see marks_by_question.
 TARIFF_FIRST_HEADS = {'engineering'}
+# A head set at the END of the block that carries the previous question's last
+# ask, its tariff after it: 2016 OL Engineering page 3 reads "(d) Name two
+# ferrous metals and two non-ferrous metals. Question 3. (45 marks)" as one
+# block, so the head was never at a block start, Question 3's 45 was offered to
+# Question 2 (already priced) and dropped, and the paper summed to 290 over six
+# questions where it prints 335 over seven. The part reader splits the head
+# off already (INLINE_QHEAD). Keyed by sitting, read for that sitting alone.
+TRAILING_HEAD_MARKS = {('engineering', 2016, 'ol')}
+TRAILING_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?\)\s*$', re.I)
+# A head set INSIDE a block, between one question's last ask and the next
+# question's first: 2015 OL Engineering page 3 reads "(d) Name the metals used
+# to produce each of the alloys listed below: (i) Brass, (ii) Solder. Question
+# 3. (45 marks) (a) Explain any two of the following: ..." as one block, and
+# page 4 the same for Question 5; 2014 OL does it for Questions 3 and 5 as
+# well. Neither head was ever at a block start, both 45s were dropped, and each
+# paper summed to 245 over five questions where it prints 335 over seven.
+# Every head in such a block is read, with the tariff printed straight after
+# it. Keyed by sitting, read for those sittings alone.
+INLINE_HEAD_MARKS = {('engineering', 2014, 'ol'), ('engineering', 2015, 'ol')}
+INLINE_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?\)', re.I)
 
 
-def marks_by_question(P_files, subject):
+def marks_by_question(P_files, subject, sitting=None):
     """{(section?, q): marks} read independently of the part reader.
 
     An independent pass on purpose: if this map and the part reader disagree
@@ -1014,6 +1079,21 @@ def marks_by_question(P_files, subject):
                     h = re.match(r'^(?:Question\s+(\d{1,2})\b|(\d{1,2})\.\s+)',
                                  un)
                     block = un
+            if sitting in INLINE_HEAD_MARKS:
+                heads = list(INLINE_HEAD.finditer(block))
+                if heads:
+                    for m in heads:
+                        q = int(m.group(1))
+                        if (section, q) not in out:
+                            out[(section, q)] = int(m.group(2))
+                    continue
+            if not h and sitting in TRAILING_HEAD_MARKS:
+                tail = TRAILING_HEAD.search(block.strip())
+                if tail:
+                    q = int(tail.group(1))
+                    if (section, q) not in out:
+                        out[(section, q)] = int(tail.group(2))
+                    continue
             if h:
                 q = int(h.group(1) or h.group(2))
             m = MARKS.search(block)
@@ -3936,7 +4016,8 @@ def census_subject(subject):
                 marks = {(None, 0): total} if total else {}
             elif marks is None:
                 marks = marks_by_question(files if cfg['mode'] != 'papers' else
-                                          [f for f in files], subject)
+                                          [f for f in files], subject,
+                                          sitting=(subject, year, level))
             papers.append({
                 'year': year, 'level': level, 'paper': label,
                 'leafCount': len(leaves),
@@ -3950,7 +4031,12 @@ def census_subject(subject):
     # is the expectation and a deviating year has lost or invented content.
     sums = collections.Counter()
     for p in papers:
-        if p.get('marksSum'):
+        # A paper in PRINTED_TOTALS has a format of its own, its total checked
+        # on its own heads, so it is no evidence about the other years': with
+        # Engineering Ordinary 2014-2019 at 335 and 2021-2026 at 350, counting
+        # them made the mode a six-six tie, and the tie flagged every 350 paper.
+        if p.get('marksSum') and \
+                (subject, p['year'], p['level']) not in PRINTED_TOTALS:
             sums[(p['level'], p.get('paper'), p['marksSum'])] += 1
     expected = {}
     for (level, label, total), n in sums.items():
