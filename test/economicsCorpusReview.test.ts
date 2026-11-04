@@ -11,6 +11,7 @@ import reviews from '../data/examTopics/economics-sec-topic-reviews.json';
 import inventory from '../scripts/markbank/authoring/economics-source-inventory.json';
 import higher2019Review from '../scripts/markbank/authoring/reviews/economics-2019-hl-ev.json';
 import ordinary2019Review from '../scripts/markbank/authoring/reviews/economics-2019-ol-ev.json';
+import higher2020Review from '../scripts/markbank/authoring/reviews/economics-2020-hl-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -320,10 +321,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    // 2019 Higher and Ordinary English (old syllabus) are the nineteenth and twentieth reviewed variants.
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(46);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(52);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(20);
+    // Old syllabus: 2019 Higher and Ordinary and 2020 Higher English are the nineteenth to twenty-first reviewed variants.
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(45);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(51);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(21);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -1065,6 +1066,72 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     const text = ORDINARY.filter(c => c.year === 2019)
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 75 independently counted 2020 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2020);
+    const tasks = higher2020Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(75);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2020Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2020, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2020 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each stance counted once.
+      const once = question.tasks.filter(task => !task.cardId.endsWith('-no'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('prices 2020 Higher ladders as printed and keeps every crop to the part the ask needs', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2020-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // One ladder across two parts is one card claimed at the printed steps.
+    expect(card('sa-q1').rows[0].group!.perOptionSteps).toEqual([10, 6]);
+    expect(card('sa-q7').rows[0].group!.perOptionSteps).toEqual([9, 4, 4]);
+    expect(card('sa-q8').rows[0].group!.perOptionSteps).toEqual([9, 4, 4]);
+    expect(card('sb-q3-c').rows[0].group!.perOptionSteps).toEqual([8, 7, 5, 5]);
+    expect(card('sb-q3-c').rows[0].group!.options).toHaveLength(15);
+    // A question crop never replaces the typed ask: each is the printed data, beside it.
+    for (const c of CARDS.filter(item => item.year === 2020 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+      expect(c.questionFigure?.src, c.id).not.toMatch(/-question\.png$/);
+    }
+    for (const [s, crop] of [['sa-q4-i', 'p06-q4i-diagram'], ['sa-q9-ii', 'p11-q9-diagram'],
+      ['sb-q1-b-i', 'p13-q1bi-diagram'], ['sb-q2-b-i', 'p17-q2bi-diagram'], ['sb-q2-b-ii', 'p18-q2bii-diagram'],
+      ['sb-q4-b-i', 'p25-q4bi-table'], ['sb-q4-b-ii', 'p25-q4bii-graph'], ['sb-q8-b-iv', 'p39-q8biv-working'],
+      ['sb-q8-b-v', 'p39-q8bv-working']] as const) {
+      expect(card(s).figure?.solution, s).toBe(true);
+      expect(card(s).figure?.src, s).toContain(`economics-2020-HL-scheme-${crop}.png`);
+    }
+    // A drawn answer the scheme prints no words for is claimed as the card's own ask.
+    for (const s of ['sa-q4-i', 'sb-q2-b-ii', 'sb-q4-b-ii']) {
+      const ask = card(s).rows.find(r => r.ask)!;
+      expect(card(s).questionText, s).toContain(ask.verbatim);
+    }
+    expect(card('sb-q8-b-iv').rows[0].verbatim).toBe('0.1');
+    expect(card('sb-q1-b-ii').rows[0].group!.options).toContain(
+      'Age restrictions: raise the legal age for the consumption of alcohol from 18 to 21.');
+    const text = CARDS.filter(c => c.year === 2020)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '1st:', '2nd:', '1st x', '1st @']) {
       expect(text, junk).not.toContain(junk);
     }
   });

@@ -125,6 +125,9 @@ HAND_CHECKED = {
     'econ-2019-ol-sb-q3-b-i',         # 2019 OL p7: "(i) Explain the term underlined above." (five words)
     'econ-2019-ol-sb-q4-c-i',         # 2019 OL p7: "(i) Explain the term opportunity cost." (five words)
     'econ-2019-ol-sb-q8-b-i',         # 2019 OL p10: "(i) Explain the term infrastructure." (four words)
+    'econ-2020-hl-sa-q6-i',           # 2020 HL p4: "(i) Define the term fiscal policy:" (five words)
+    'econ-2020-hl-sb-q3-a-i',         # 2020 HL p8: "(i) Define the underlined term." (four words)
+    'econ-2020-hl-sb-q4-c-i',         # 2020 HL p9: "(i) Define internal economies of scale." (five words)
 }
 
 

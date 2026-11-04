@@ -140,12 +140,19 @@ describe('Economics exam-topic registry', () => {
       // labour market), Q8 (scarcity, not Government Intervention), Section B
       // Q4 (international trade, not globalisation), Q5(b)-(c) twice (interest
       // rates and post-office closures, neither globalisation nor a formula)
-      // and Q6 (taxation and the Budget, not Government Intervention).
-      matchedAssociations: 810,
-      referenceAnomalyAssociations: 93,
+      // and Q6 (taxation and the Budget, not Government Intervention). The 2020
+      // Higher review added eight: Section A Q3 and Section B Q3 under
+      // Government Intervention (unemployment policy; employment, MNCs and the
+      // pay gap), Section B Q5(a)-(b) under employment (enterprise and the
+      // marginal revenue product of labour), Section B Q8 under economic
+      // concepts (national income terms), and four topical-questions headings
+      // (Section A Q5, Q7 and Q8 and Section B Q1(c)), a heading no syllabus
+      // node falls back to.
+      matchedAssociations: 802,
+      referenceAnomalyAssociations: 101,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 728,
+      matchedQuestionTopicLinks: 720,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

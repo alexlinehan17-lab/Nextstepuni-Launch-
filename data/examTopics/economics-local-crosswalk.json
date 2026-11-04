@@ -18,11 +18,11 @@
     "referenceReportedAssociations": 1851,
     "referenceOfficialAssociations": 1120,
     "referenceMockAssociations": 731,
-    "matchedAssociations": 810,
+    "matchedAssociations": 802,
     "sourceBlockedAssociations": 217,
-    "referenceAnomalyAssociations": 93,
+    "referenceAnomalyAssociations": 101,
     "matchedLogicalCards": 517,
-    "matchedQuestionTopicLinks": 728,
+    "matchedQuestionTopicLinks": 720,
     "retainedLocalLogicalCards": 32,
     "localPaperVariants": 66,
     "localPhysicalMappings": 1098,
@@ -531,7 +531,7 @@
       "section": "B",
       "question": 8,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -539,7 +539,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "B8"
-      }
+      },
+      "reason": "Reviewed SEC source: Transfer payments, benefits-in-kind, net factor income, the national income identity and the multiplier are National Income (3-0); the national debt and the NTMA are Fiscal Policy & the Budget (3-1). Nine tasks totalling 75. a 7 + 7 + 7 (5 + 2) the three terms, each with an example. b 6 @ 5: (i) G 60,000; (ii) Y 250,000; (iii) MPM; (iv) 0.1 (working printed as a fraction; hidden crop); (v) the multiplier 2.5 (5, hidden crop) and its meaning (5). c(i) 6; c(ii) 6 (3 + 3) the NTMA and one other function from eight; c(iii) 3 x 4 (2 + 2) from five."
     },
     {
       "topicId": "economics-higher-11-economic-concepts",
@@ -3264,7 +3265,7 @@
       "section": "A",
       "question": 3,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -3272,7 +3273,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "3"
-      }
+      },
+      "reason": "Reviewed SEC source: Unemployment from automation and the policy to reduce it are Employment & Unemployment (3-2). a 4 + 4 the type (structural / technological) and its explanation; b 8 (4 + 4) one policy from five."
     },
     {
       "topicId": "economics-higher-24-government-intervention",
@@ -3302,7 +3304,7 @@
       "section": "B",
       "question": 3,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -3310,7 +3312,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "B3"
-      }
+      },
+      "reason": "Reviewed SEC source: Full employment is Employment & Unemployment (3-2); the risks of MNCs relocating are Globalisation (4-1); the gender pay gap is The Labour Market (2-1). Five tasks, four cards, totalling 75. a(i) 8; a(ii) 3 x 6 (3 + 3) over the benefits (six) and challenges (six) together, as one menu. b 4 x 6 (3 + 3) from seven. c one cell, 1st: 8, 2nd: 7, 2 x 5, beside (c)(ii) and printed for (c) as a whole in the summary: one ladder over the two reasons of (i) and the two measures of (ii), not tied to a part. One card for (c), claimed at 8, 7, 5, 5."
     },
     {
       "topicId": "economics-higher-24-government-intervention",
@@ -7634,7 +7637,7 @@
       "section": "B",
       "question": 5,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -7642,7 +7645,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "B5"
-      }
+      },
+      "reason": "Reviewed SEC source: Enterprise as a factor of production is Scarcity & Choice (0-1); marginal product and marginal revenue product of labour are The Labour Market (2-1); price and income elasticity are Elasticity (1-4). Eight tasks totalling 75. a(i) 9; a(ii) 4 x 4 (2 + 2) from nine. b(i) 18: the six marginal products at 2 each and the six marginal revenue products at 1 each (the scheme’s workings); b(ii) 6; b(iii) 6. c(i) 7; c(ii) 7 one reason from two; c(iii) 6."
     },
     {
       "topicId": "economics-higher-43-employment",
@@ -10702,7 +10706,7 @@
       "section": "A",
       "question": 5,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -10710,7 +10714,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "5"
-      }
+      },
+      "reason": "Reviewed SEC source: Bank branch closures, their causes and their effects are Financial Sector (3-4). a 8 one reason from four; b 2 x 4 two effects from three. The (i)/(ii) under (b) are ruled answer slots."
     },
     {
       "topicId": "economics-higher-61-topical-questions-and-statistics",
@@ -10721,7 +10726,7 @@
       "section": "A",
       "question": 7,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -10729,7 +10734,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "7"
-      }
+      },
+      "reason": "Reviewed SEC source: Regulating the gig economy and zero-hour contracts is The Labour Market (2-1). One cell, 1st x 9 & 2 x 4, beside both (a) and (b): one ladder over the three arguments (two in favour, one against), not tied to a part. One card for the question, claimed at 9, 4, 4."
     },
     {
       "topicId": "economics-higher-61-topical-questions-and-statistics",
@@ -10740,7 +10746,7 @@
       "section": "A",
       "question": 8,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -10748,7 +10754,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "8"
-      }
+      },
+      "reason": "Reviewed SEC source: Declining economic activity in towns and rural areas, and the measures to address it, are Economic Growth (3-5), as balanced regional development is filed. One cell, 1st x 9 & 2 x 4, beside both (a) and (b): one ladder over the two effects and the one measure, not tied to a part. One card for the question, claimed at 9, 4, 4."
     },
     {
       "topicId": "economics-higher-61-topical-questions-and-statistics",
@@ -10759,7 +10766,7 @@
       "section": "B",
       "question": 1,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -10767,7 +10774,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "B1"
-      }
+      },
+      "reason": "Reviewed SEC source: Diminishing marginal utility is The Consumer (1-1); the alcohol advertising ban’s effect on equilibrium is The Market Economy (1-0) and the other measures Government Intervention (1-3); rising demand for rail is The Consumer (1-1) and investment in rail infrastructure Economic Growth (3-5). Eight tasks totalling 75. a(i) 9; a(ii) 4 the marginal utilities 15, 12, 10, 7 (the scheme’s workings); a(iii) 4; a(iv) 2 x 4 from three. b(i) diagram 5 (D1, D2, S1, lower price and quantity, 1 each) + explanation 5; hidden solution diagram. b(ii) 3 x 5 from ten. c(i) 7 one reason from five; c(ii) 3 x 6 over the case for (seven) and against (five) together, as one menu."
     },
     {
       "topicId": "economics-higher-61-topical-questions-and-statistics",
@@ -20773,7 +20781,7 @@
     "subjectId": "economics",
     "authority": "SEC question paper; canonical curriculum node IDs",
     "reviewedAt": "2026-11-04",
-    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2019 Higher and Ordinary English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 46 physical variants pending.",
+    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2019 Higher and Ordinary English and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 45 physical variants pending.",
     "questions": [
       {
         "level": "higher",
@@ -26260,6 +26268,271 @@
         ],
         "reason": "Full employment and emigration are Employment & Unemployment (3-2); infrastructure, broadband and rural decline are Economic Growth (3-5). Six tasks totalling 75. a any three of four terms, 1 @ 11 and 2 @ 5. b(i) 6 (two accepted statements); b(ii) 2 @ 8 (5 + 3), one advantage for households and one for firms: two heading rows; b(iii) 8 (5 + 3) one example and reason from four. c(i) 2 @ 6 (4 + 2) from four; c(ii) 2 @ 6 (4 + 2) from six.",
         "paperSha256": "a61f520579e16d5e570f6cf1603f69a76176d513dbe8b49c40bd2cfbb03ba056"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "1",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-1-1"
+        ],
+        "reason": "The substitution and income effects of a price fall are The Consumer (1-1). 1st @ 10, 2nd @ 6 over the two effects (substitution and income): one card, both claimed at 10 then 6.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "2",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-4-0"
+        ],
+        "reason": "Economic development and its social costs are Growth & Development (4-0). 1 @ 8 the explanation of economic development and 2 @ 4 two social costs from four: one card.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "3",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-3-2"
+        ],
+        "reason": "Unemployment from automation and the policy to reduce it are Employment & Unemployment (3-2). a 4 + 4 the type (structural / technological) and its explanation; b 8 (4 + 4) one policy from five.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "4",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-1-0"
+        ],
+        "reason": "A shift in the equilibrium of the beef market is The Market Economy (1-0). i 8 the four equilibrium labels P1, P2, Q1, Q2 priced as one 8 (hidden solution diagram); ii 4 + 4 the tick (b) and its explanation.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "5",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-3-4"
+        ],
+        "reason": "Bank branch closures, their causes and their effects are Financial Sector (3-4). a 8 one reason from four; b 2 x 4 two effects from three. The (i)/(ii) under (b) are ruled answer slots.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "6",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1",
+          "economics-1-3"
+        ],
+        "reason": "Fiscal policy is Fiscal Policy & the Budget (3-1); Keynes’s case for government intervention in an economy is also read as Government Intervention (1-3). i 9 the definition; ii 2 for the circled choice + 2 x 3 two reasons: the scheme credits YES and NO with different lists, so two stance routes.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "7",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          5
+        ],
+        "canonicalNodeIds": [
+          "economics-2-1"
+        ],
+        "reason": "Regulating the gig economy and zero-hour contracts is The Labour Market (2-1). One cell, 1st x 9 & 2 x 4, beside both (a) and (b): one ladder over the three arguments (two in favour, one against), not tied to a part. One card for the question, claimed at 9, 4, 4.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "8",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          5
+        ],
+        "canonicalNodeIds": [
+          "economics-3-5"
+        ],
+        "reason": "Declining economic activity in towns and rural areas, and the measures to address it, are Economic Growth (3-5), as balanced regional development is filed. One cell, 1st x 9 & 2 x 4, beside both (a) and (b): one ladder over the two effects and the one measure, not tied to a part. One card for the question, claimed at 9, 4, 4.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "9",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          6
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0"
+        ],
+        "reason": "The kinked demand curve of an oligopoly is Market Structures (2-0). i labels 3 x 3; ii P1, Q1 and E at 1 each (hidden solution diagram); iii 5 price rigidity. 17.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "B1",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          7
+        ],
+        "canonicalNodeIds": [
+          "economics-1-1",
+          "economics-1-0",
+          "economics-1-3",
+          "economics-3-5"
+        ],
+        "reason": "Diminishing marginal utility is The Consumer (1-1); the alcohol advertising ban’s effect on equilibrium is The Market Economy (1-0) and the other measures Government Intervention (1-3); rising demand for rail is The Consumer (1-1) and investment in rail infrastructure Economic Growth (3-5). Eight tasks totalling 75. a(i) 9; a(ii) 4 the marginal utilities 15, 12, 10, 7 (the scheme’s workings); a(iii) 4; a(iv) 2 x 4 from three. b(i) diagram 5 (D1, D2, S1, lower price and quantity, 1 each) + explanation 5; hidden solution diagram. b(ii) 3 x 5 from ten. c(i) 7 one reason from five; c(ii) 3 x 6 over the case for (seven) and against (five) together, as one menu.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "B2",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          8
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0"
+        ],
+        "reason": "Imperfect competition, its short- and long-run equilibrium and non-price competition are Market Structures (2-0). Seven tasks, eight routes; 75 with the (c)(iii) stance counted once. a(i) 5 one reason from three; a(ii) 3 x 5 from six. b(i) diagram 9 (9 @ 1, the nine elements in the scheme’s table) + explanation 9 (9 @ 1, the nine printed bullets); hidden solution diagram. b(ii) diagram 6 + explanation 6; hidden solution diagram. c(i) 6; c(ii) 2 x 3 two examples from eight + 5 why they are effective; c(iii) 2 x 4: the scheme credits YES and NO with different lists, so two stance routes.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "B3",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          8
+        ],
+        "canonicalNodeIds": [
+          "economics-3-2",
+          "economics-4-1",
+          "economics-2-1"
+        ],
+        "reason": "Full employment is Employment & Unemployment (3-2); the risks of MNCs relocating are Globalisation (4-1); the gender pay gap is The Labour Market (2-1). Five tasks, four cards, totalling 75. a(i) 8; a(ii) 3 x 6 (3 + 3) over the benefits (six) and challenges (six) together, as one menu. b 4 x 6 (3 + 3) from seven. c one cell, 1st: 8, 2nd: 7, 2 x 5, beside (c)(ii) and printed for (c) as a whole in the summary: one ladder over the two reasons of (i) and the two measures of (ii), not tied to a part. One card for (c), claimed at 8, 7, 5, 5.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "B4",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          9
+        ],
+        "canonicalNodeIds": [
+          "economics-1-5",
+          "economics-1-3"
+        ],
+        "reason": "Short-run losses, cost control, marginal and average cost and internal economies of scale are Costs of Production, Revenue & Profit (1-5); why the EU’s competition enforcer blocks a merger is Government Intervention (1-3). Seven tasks totalling 75. a(i) 5; a(ii) 15 (3 x 5) from four. b(i) 10 (10 x 1) the five marginal and five average total costs (hidden completed table); b(ii) graph 10 (10 x 1, hidden solution graph) + explanation 5. c(i) 10; c(ii) 3 x 4 from six; c(iii) 2 x 4 (2 + 2) from four.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "B5",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          10
+        ],
+        "canonicalNodeIds": [
+          "economics-0-1",
+          "economics-2-1",
+          "economics-1-4"
+        ],
+        "reason": "Enterprise as a factor of production is Scarcity & Choice (0-1); marginal product and marginal revenue product of labour are The Labour Market (2-1); price and income elasticity are Elasticity (1-4). Eight tasks totalling 75. a(i) 9; a(ii) 4 x 4 (2 + 2) from nine. b(i) 18: the six marginal products at 2 each and the six marginal revenue products at 1 each (the scheme’s workings); b(ii) 6; b(iii) 6. c(i) 7; c(ii) 7 one reason from two; c(iii) 6.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "B6",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          11
+        ],
+        "canonicalNodeIds": [
+          "economics-4-2"
+        ],
+        "reason": "Tariffs, subsidies, protectionism, the EU single market and export markets are International Trade & Competitiveness (4-2). Seven tasks totalling 75. a(i) 2 x 6 tariffs and subsidies; a(ii) 6 (3 + 3) one reason from four; a(iii) 12 (3 x 4) from five. b(i) 7 + 6 printed beside the free trade area and the common market; b(ii) 12 (3 x 4) from six. c(i) 10 (2 x 5) from four; c(ii) 10 (2 x 5) from nine.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "B7",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          11
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1"
+        ],
+        "reason": "The carbon tax, current and capital spending, tolls and an empty home tax are Fiscal Policy & the Budget (3-1). Seven tasks, eight routes; 75 with the (c)(i) stance counted once. a(i) 7; a(ii) 18 (3 x 6) over the positive (six) and negative (five) consequences together, as one menu. b(i) 8 (2 x 4) the current and the capital example; b(ii) 12 (3 x 4) from four, one social or economic benefit required; b(iii) 5 + 5 (3 + 2) one for and one against, two heading rows. c(i) 8: the scheme credits YES and NO with different lists, so two stance routes; c(ii) 12 (3 x 4) from nine.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2020,
+        "n": "B8",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          12
+        ],
+        "canonicalNodeIds": [
+          "economics-3-0",
+          "economics-3-1"
+        ],
+        "reason": "Transfer payments, benefits-in-kind, net factor income, the national income identity and the multiplier are National Income (3-0); the national debt and the NTMA are Fiscal Policy & the Budget (3-1). Nine tasks totalling 75. a 7 + 7 + 7 (5 + 2) the three terms, each with an example. b 6 @ 5: (i) G 60,000; (ii) Y 250,000; (iii) MPM; (iv) 0.1 (working printed as a fraction; hidden crop); (v) the multiplier 2.5 (5, hidden crop) and its meaning (5). c(i) 6; c(ii) 6 (3 + 3) the NTMA and one other function from eight; c(iii) 3 x 4 (2 + 2) from five.",
+        "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
       }
     ]
   }

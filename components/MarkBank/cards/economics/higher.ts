@@ -1951,6 +1951,2071 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q1", topicId: "economics-1-1", conceptId: "substitution-and-income-effects",
+    section: "A", questionRef: "2020 HL Section A Q1",
+    questionText: "A fall in the price of a consumer product has both a substitution effect and an income effect. Explain each of the underlined terms.",
+    tariffModel: {"kind":"fixed","notation":"1st @ 10, 2nd @ 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each effect explained", marks: 16, contextNote: "Both effects: the first correct explanation 10 marks, the second 6.", openList: true, group: {"claimMax":2,"perOption":10,"options":["Substitution effect: consumers will demand more of the relatively cheaper good, as they switch their consumption away from relatively more expensive substitute goods – due to increased marginal utility for the relatively cheaper good.","Income effect: consumers experience an increase in their real income/purchasing power as they can purchase the same quantity of the good using less income. With increased real income consumers will purchase more of all normal goods (and less of inferior goods, including giffen goods)."],"perOptionSteps":[10,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q2", topicId: "economics-4-0", conceptId: "economic-development-and-social-costs",
+    section: "A", questionRef: "2020 HL Section A Q2",
+    questionText: "Citizens in some Less Developed Countries may experience social costs when these countries pursue economic development. Explain the underlined term and outline two possible social costs which these citizens may experience.",
+    tariffModel: {"kind":"fixed","notation":"1 @ 8 and 2 @ 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-development", kind: "point", verbatim: "Economic development refers to an increase in a country’s GDP per capita / level of income / standard of living / output following a fundamental change to the structure of society e.g. improvements in education, healthcare, infrastructure etc.", marks: 8, contextNote: "The explanation of economic development, 8 marks.", openList: true },
+    { id: "r-costs", kind: "anyN", verbatim: "A social cost — any two", marks: 8, contextNote: "Two social costs, 4 marks each.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Damage to environment: increasing economic development may lead to increased pollution; disfigurement of the landscape; large scale urban sprawl. The loss of the forests in Brazil is a result of the desire for economic development. Increased carbon emissions.","Population movement: development may results in the large scale movement of people from rural to urban areas with the possible creation of shanty towns / ghettoes and consequent social problems.","Loss of traditional cultural values: with improved mass communication / transport systems there may be a risk to those values which are deemed important as a society / those values which were once considered traditional may be lost. A rural / urban divide may develop.","Quality of life issues: development may result in an increase in income but the cost may include increased travelling times to work; longer working hours; separation of families etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q3-a", topicId: "economics-3-2", conceptId: "structural-unemployment-from-automation",
+    section: "A", questionRef: "2020 HL Section A Q3(a)",
+    stem: "Up to 800 million global workers will lose their jobs by 2030 and be replaced by robotic automation.",
+    questionText: "Name the type of unemployment these workers will experience. Give a reason for your answer.",
+    tariffModel: {"kind":"fixed","notation":"4 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-type", kind: "point", verbatim: "Structural / Technological Unemployment", marks: 4, contextNote: "The type, 4 marks.", openList: true },
+    { id: "r-explanation", kind: "point", verbatim: "Is a form of unemployment caused by a mismatch between the skills that workers in the economy can offer, and the skills demanded of workers by employers.", marks: 4, accepts: ["Technological unemployment may be caused by new technology and innovation / people lose jobs due to advances in machinery / the introduction of labour saving devices."], contextNote: "The explanation, 4 marks. The scheme also accepts its explanation of technological unemployment.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q3-b", topicId: "economics-3-2", conceptId: "policy-for-structural-unemployment",
+    section: "A", questionRef: "2020 HL Section A Q3(b)",
+    stem: "Up to 800 million global workers will lose their jobs by 2030 and be replaced by robotic automation.",
+    questionText: "Outline one policy response that the Irish government could take to reduce this type of unemployment in Ireland.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 8","answer":1,"ofParts":5,"perPart":8}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A government policy — any one", marks: 8, contextNote: "One policy, 8 marks (4 + 4).", openList: true, group: {"claimMax":1,"perOption":8,"options":["The government must provide retraining schemes for these unemployed workers so they can gain skills which are currently in demand.","The government could also provide subsidies to firms that provide training to displaced workers.","The government could provide relocation grants to those who are structurally unemployed so they can relocate to where their skills are still demanded.","The European Globalisation Adjustment Fund is one of the ways the EU is helping to tackle unemployment.","The governments’ springboard+ upskilling initiative in higher education offers free courses at certificate, degree and masters level leading to qualifications in areas where there are employment opportunities in the economy."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q4-i", topicId: "economics-1-0", conceptId: "labelling-a-shift-in-equilibrium",
+    section: "A", questionRef: "2020 HL Section A Q4(i)",
+    stem: "The following diagram represents a change in equilibrium for the Irish beef market.",
+    questionText: "Complete the above diagram by labelling the initial equilibrium price and quantity and new equilibrium price and quantity.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Complete the above diagram by labelling the initial equilibrium price and quantity and new equilibrium price and quantity.", marks: 8, contextNote: "The four labels on the completed diagram, 8 marks. The scheme prices them as one 8; its completed diagram is shown with the answer.", openList: true, ask: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2020-HL-paper-p03-q4-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p03-q4-diagram.png",
+          "srcHash": "335a625b618b27481e80378d23558ff9",
+          "alt": "A diagram with Price on the vertical axis and Quantity on the horizontal: a downward-sloping line D1 and two upward-sloping lines, S1 and S2 to its right, with arrows pointing right. D1 crosses S1 at E1 and S2 at E2, lower and to the right.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2020-HL-scheme-p06-q4i-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-scheme-p06-q4i-diagram.png",
+          "srcHash": "cab913f2bb9d3067b70969477617def2",
+          "alt": "The marking scheme’s completed diagram: Price against Quantity, a downward-sloping demand line D1 and two upward-sloping supply lines, S1 and S2 to its right, with arrows pointing right. Dashed lines run from E1 to P1 and Q1, and from E2 to the lower price P2 and the higher quantity Q2.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q4-ii", topicId: "economics-1-0", conceptId: "what-shifts-supply-to-the-right",
+    section: "A", questionRef: "2020 HL Section A Q4(ii)",
+    stem: "The following diagram represents a change in equilibrium for the Irish beef market.",
+    questionText: "Indicate by means of a tick (✓) which of the following statements would cause the equilibrium to shift from E1 to E2? Tick one option only and explain your answer. (a) Irish farmers’ growing fears about Brexit. (b) An increase in a subsidy from the Irish government for beef farmers. (c) An increase in the number of vegetarian consumers in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"4 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-tick", kind: "point", verbatim: "(b) An increase in a subsidy from the Irish government for beef farmers.", marks: 4, contextNote: "The tick, 4 marks.", openList: true },
+    { id: "r-explanation", kind: "point", verbatim: "An increase is a subsidy for beef farmers may help them to reduce costs and so entice farmers to produce more beef, shifting supply to the right from S1 to S2.", marks: 4, contextNote: "The explanation, 4 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p03-q4-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p03-q4-diagram.png",
+          "srcHash": "335a625b618b27481e80378d23558ff9",
+          "alt": "A diagram with Price on the vertical axis and Quantity on the horizontal: a downward-sloping line D1 and two upward-sloping lines, S1 and S2 to its right, with arrows pointing right. D1 crosses S1 at E1 and S2 at E2, lower and to the right.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q5-a", topicId: "economics-3-4", conceptId: "why-bank-branches-close",
+    section: "A", questionRef: "2020 HL Section A Q5(a)",
+    stem: "Permanent Trustee Savings Bank (PTSB) plans to close about one fifth of its 77 branches in Ireland.",
+    questionText: "Outline one possible reason for the closure of these PTSB branches.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 8","answer":1,"ofParts":4,"perPart":8}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason for the closures — any one", marks: 8, contextNote: "One reason, 8 marks.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Decrease costs PTSB wants to reduce its operational costs and closing branches will help reduce costs / maintain (increase) profits.","Increase in the use of online / mobile banking / services available online: as the number of services available online has increased there has been less need for footfall in physical banks. / As bank customers become more accustomed to using technology there is less need for physical financial institutions.","Advances in technology: the use of smartphones and tablet devices means that consumers no longer have a need for ‘counter’ services and can carry out all major transactions “on-the-go”.","Offset reduction in income to the bank: the banking sector seeks to offset the impact on their income of very low central bank and market interest rates and muted demand for loans."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q5-b", topicId: "economics-3-4", conceptId: "effects-of-bank-branch-closures",
+    section: "A", questionRef: "2020 HL Section A Q5(b)",
+    stem: "Permanent Trustee Savings Bank (PTSB) plans to close about one fifth of its 77 branches in Ireland.",
+    questionText: "Outline two economic effects of these closures on the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 4","answer":2,"ofParts":3,"perPart":4}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An economic effect — any two", marks: 8, contextNote: "Two effects, 4 marks each.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Rise in unemployment in the banking sector: as the number of bank branches reduces, the number of employees required will be reduced. The reduced demand for banking staff will lead to increased unemployment and increased government spending on unemployment benefit. Some employees may be offered jobs in a new location resulting in increased costs / inconvenience in getting to work.","Loss of banking services to the local community: banking will become a more difficult/ less appealing process for people who do not have transport to bank branches which are located further away. Those customers who are averse to the use of technology will find banking a more difficult/ less appealing process.","Fall in demand for other goods and services: with reduced accessibility to financial institutions there may be less borrowing and thus reduced demand for goods and services. Less people may shop / do business in the locality and this can reduce economic activity in the town."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q6-i", topicId: "economics-3-1", conceptId: "fiscal-policy",
+    section: "A", questionRef: "2020 HL Section A Q6(i)",
+    stem: "John Maynard Keynes supported the use of fiscal policy by government in an economy.",
+    questionText: "Define the term fiscal policy:",
+    tariffModel: {"kind":"fixed","notation":"9","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fiscal policy refers to those actions taken by the government which influence the size, timing and magnitude of government spending and taxation.", marks: 9, accepts: ["Is any change in government spending and taxation that is designed to change overall spending in an economy / the use of government spending and taxation to influence economic growth."], contextNote: "The definition, 9 marks. The scheme also accepts its second statement.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q6-ii-yes", topicId: "economics-3-1", conceptId: "keynes-and-government-intervention",
+    section: "A", questionRef: "2020 HL Section A Q6(ii) — yes",
+    stem: "John Maynard Keynes supported the use of fiscal policy by government in an economy.",
+    questionText: "Do you agree with Keynes support of government intervention in an economy? Yes / No. Place a circle around your choice and outline two reasons for your answer. Justify the choice: YES.",
+    tariffModel: {"kind":"fixed","notation":"2 + 2 x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-choice", kind: "point", verbatim: "Yes.", marks: 2, contextNote: "Circling YES, 2 marks.", openList: true },
+    { id: "r-reasons", kind: "anyN", verbatim: "A reason for answering YES — any two", marks: 6, contextNote: "Two reasons, 3 marks each. The scheme credits YES and NO, each with its own list.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Achieve sustainable economic growth: the best way for a country to achieve sustainable economic growth and avoid large booms followed by prolonged recessions is through government intervention in the economy to either dampen down growth in booms or encourage growth in recessions.","Help create employment: intervention by the government helps foster employment creation directly by the state or by aiding enterprise through the operation of incentives.","Redistribution of wealth: government can raise taxation and use this revenue to provide a basic incomes to those who may need it.","Provision of essential services: government can raise taxation and use this revenue to provide essential services for citizens of the country.","Protection of consumers: legislation and regulation may help consumers from exploitation by firms / prevent the growth of private monopolies."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q6-ii-no", topicId: "economics-3-1", conceptId: "keynes-and-government-intervention",
+    section: "A", questionRef: "2020 HL Section A Q6(ii) — no",
+    stem: "John Maynard Keynes supported the use of fiscal policy by government in an economy.",
+    questionText: "Do you agree with Keynes support of government intervention in an economy? Yes / No. Place a circle around your choice and outline two reasons for your answer. Justify the choice: NO.",
+    tariffModel: {"kind":"fixed","notation":"2 + 2 x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-choice", kind: "point", verbatim: "No.", marks: 2, contextNote: "Circling NO, 2 marks.", openList: true },
+    { id: "r-reasons", kind: "anyN", verbatim: "A reason for answering NO — any two", marks: 6, contextNote: "Two reasons, 3 marks each. The scheme credits YES and NO, each with its own list.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Anti laissez faire: laissez faire policy dictates that the economy will gravitate towards the natural unemployment level based upon the capacity of the economy and the demand for and supply of goods and services in the economy. Government intervention is an unnecessary approach to economic management.","Funding by borrowing / increased taxation: government involvement may mean additional funding and / or increased taxation which will be borne by the taxpayer.","Costly / inefficient state services: the services provided may be at higher prices due to lack of competition in the market and /or may be inefficient.","Discourage private enterprise / stifle economic growth: costs for business may increase due to increased taxes and /or increased regulation. This could have the effect of reducing economic activity within the state."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q7", topicId: "economics-2-1", conceptId: "regulating-the-gig-economy",
+    section: "A", questionRef: "2020 HL Section A Q7",
+    stem: "The continuing rise of the ‘gig economy’ has been phenomenal. However, some workers seek an increase in regulation associated with the ‘gig economy’ and zero‐hour contracts. (Note: A gig economy is an economy where firms tend to hire independent workers and freelancers on a short term / payment‐by‐task basis e.g. Deliveroo riders, instead of full‐time employees).",
+    questionText: "Outline two arguments in favour of increased regulation of the ‘gig economy’. Outline one argument against increased regulation of the ‘gig economy’.",
+    tariffModel: {"kind":"fixed","notation":"1st x 9 & 2 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Two arguments in favour and one against", marks: 17, contextNote: "Two arguments in favour (the first four listed) and one against (the last three). The scheme prices the three on one ladder across (a) and (b): the first credited 9 marks, the other two 4 each.", openList: true, group: {"claimMax":3,"perOption":9,"options":["Protection of employee rights: employees in the past may have been exploited through zero-hour contracts where they must always be available for work but are not guaranteed any work and consequently are only paid for hours worked.","Certainty to the employee’s standard of living: if regulated then hours of work and pay will be guaranteed and this will help employee improve their standard of living; be available for another part-time job; have a more secure source of income and be able improve planning for their future.","Quality of service: regulation may ensure that some services are delivered in a safe and secure way for both employees and consumers e.g. taxi services.","Prevent the growth of the shadow economy: by regulating the gig economy it may prevent workers being paid on a cash only basis and this may benefit all citizens.","Disincentive to work: the fact that employees can work under such flexible conditions / contracts is what may make this job appealing to employees. Increased regulation may act as a disincentive to some people taking jobs in some sectors.","Cost increases: if employees are offered more rigid contracts it may mean that they being paid to work even though demand is low. This will increase the cost of production for the firm and could lead to a reduction in profits.","Reduced flexibility for employees / employers: increased regulation may mean that both employees and employers face reduced flexibility and this may not suit either resulting in a loss / reduction in the provision of some services."],"perOptionSteps":[9,4,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q8", topicId: "economics-3-5", conceptId: "decline-of-towns-and-rural-areas",
+    section: "A", questionRef: "2020 HL Section A Q8",
+    stem: "Some citizens are concerned with the decline in economic activity in some towns and rural areas in Ireland.",
+    questionText: "Explain two economic effects of this decline in economic activity on the Irish economy. Outline one measure which the government could take to address this economic decline.",
+    tariffModel: {"kind":"fixed","notation":"1st x 9 & 2 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Two economic effects and one measure", marks: 17, contextNote: "Two effects (the first four listed) and one measure (the last four). The scheme prices the three on one ladder across (a) and (b): the first credited 9 marks, the other two 4 each.", openList: true, group: {"claimMax":3,"perOption":9,"options":["Regional variations in employment levels: with decreased employment opportunities in certain regions of the country it may lead to increased unemployment within specific regions of the country and with most employment taking place in large urban areas it may mean that the economy is overly dependent upon certain sectors of the economy.","Falling population in some areas/overcrowding in others: the lack of jobs and resources in certain areas of the country may force people to look for employment in the already overcrowded parts of Ireland. Younger people may emigrate from the locality.","Pressure on Irish transport networks: people who remain in less developed regions but seek employment in developed regions will contribute to pressure on Irish transport networks. They may also contribute to the trend of urban sprawl outside of large cities and overcapacity commuter belt.","Under-utilisation of local infrastructure / decline in investment / loss of local services: if there is a decline in economic activity, local infrastructure will not be used as intensively which may lead to deterioration and/or no incentive to invest further e.g. roads; lighting etc. The local school may not be viable and children may then have to switch to alternative schools. A decline in economic activity means there will be less retailers /service providers.","Business incentives to locate in certain regions / tax breaks / FDI: if the government or their agencies were to offer incentives to businesses such as grants, subsidies and tax- breaks to locate in certain regions in Ireland this may be the spur needed to do so. Thus, helping to alleviate economic decline and may encourage investment by foreign and indigenous firms.","Improve / maintain the infrastructure: improve local roads to facilitate access. If high speed broadband is made available this will encourage the growth of businesses in the area. Planning for housing could be restricted to the town centre to utilise the existing services.","Provide grants for local communities to develop community enterprises: community centres may provide a focal point for a community and might foster community spirit which will promote co-operation; enterprise and social activities. Grants for tourist related ventures might be provided.","Improve / maintain local services: Ensure that the local post office; garda station and primary school remain open and this will ensure that these vital services are available locally and thus encourage people to live there."],"perOptionSteps":[9,4,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q9-i", topicId: "economics-2-0", conceptId: "labelling-an-oligopoly-diagram",
+    section: "A", questionRef: "2020 HL Section A Q9(i)",
+    stem: "The diagram below represents the long‐run equilibrium of a firm in Oligopoly.",
+    questionText: "Write in full the label (not abbreviation) for each of the lines numbered 1 to 3. Use the answer box provided.",
+    tariffModel: {"kind":"fixed","notation":"3 x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1 — Marginal Cost", marks: 3, contextNote: "Line 1, 3 marks.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "2 — Demand/ Average Revenue", marks: 3, contextNote: "Line 2, 3 marks.", openList: true },
+    { id: "r-3", kind: "point", verbatim: "3 — Marginal Revenue", marks: 3, contextNote: "Line 3, 3 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p06-q9-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p06-q9-diagram.png",
+          "srcHash": "783e8d777c11cc1fa80c209a12d1da91",
+          "alt": "A diagram with Quantity on the horizontal axis and three lines numbered 1 to 3: line 2 a demand curve with a kink, line 3 a marginal revenue line that drops vertically below the kink and then falls again, and line 1 a U-shaped curve rising through the vertical gap.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q9-ii", topicId: "economics-2-0", conceptId: "equilibrium-of-an-oligopoly",
+    section: "A", questionRef: "2020 HL Section A Q9(ii)",
+    stem: "The diagram below represents the long‐run equilibrium of a firm in Oligopoly.",
+    questionText: "Show on the diagram the equilibrium point (E); the price charged (P1) and the quantity produced (Q1) by this firm.",
+    tariffModel: {"kind":"fixed","notation":"P1 = 1, Q1 = 1, E = 1","answer":null,"ofParts":null,"perPart":null}, totalMarks: 3,
+    rows: [
+    { id: "r-p1", kind: "point", verbatim: "P1", marks: 1, contextNote: "P1, 1 mark.", openList: true },
+    { id: "r-q1", kind: "point", verbatim: "Q1", marks: 1, contextNote: "Q1, 1 mark.", openList: true },
+    { id: "r-e", kind: "point", verbatim: "E", marks: 1, contextNote: "E, 1 mark.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2020-HL-paper-p06-q9-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p06-q9-diagram.png",
+          "srcHash": "783e8d777c11cc1fa80c209a12d1da91",
+          "alt": "A diagram with Quantity on the horizontal axis and three lines numbered 1 to 3: line 2 a demand curve with a kink, line 3 a marginal revenue line that drops vertically below the kink and then falls again, and line 1 a U-shaped curve rising through the vertical gap.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2020-HL-scheme-p11-q9-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-scheme-p11-q9-diagram.png",
+          "srcHash": "ae54797fb18090c5f3c25f295b3dccb8",
+          "alt": "The marking scheme’s completed diagram: Price against Quantity, a kinked demand curve D=AR with a broken MR line below the kink and a U-shaped MC curve passing through the gap in MR at E. A dashed line from the kink meets the price axis at P1, and a dashed line down from the kink through E meets the quantity axis at Q1.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sa-q9-iii", topicId: "economics-2-0", conceptId: "price-rigidity",
+    section: "A", questionRef: "2020 HL Section A Q9(iii)",
+    stem: "The diagram below represents the long‐run equilibrium of a firm in Oligopoly.",
+    questionText: "With reference to the diagram explain the term price rigidity.",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Price rigidity, in the diagram above, refers to the fact that price tend not to change from P1 as the firm is fearful of the likely reaction of its competitors / it would lead to a decrease in total revenue for the firm.", marks: 5, contextNote: "The explanation, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p06-q9-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p06-q9-diagram.png",
+          "srcHash": "783e8d777c11cc1fa80c209a12d1da91",
+          "alt": "A diagram with Quantity on the horizontal axis and three lines numbered 1 to 3: line 2 a demand curve with a kink, line 3 a marginal revenue line that drops vertically below the kink and then falls again, and line 1 a U-shaped curve rising through the vertical gap.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q1-a-i", topicId: "economics-1-1", conceptId: "law-of-diminishing-marginal-utility",
+    section: "B", questionRef: "2020 HL Section B Q1(a)(i)",
+    stem: "The table below illustrates the Law of Diminishing Marginal Utility.",
+    questionText: "Explain the Law of Diminishing Marginal Utility.",
+    tariffModel: {"kind":"fixed","notation":"9","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The law of diminishing marginal utility states that as an increasing amount of a good is consumed a point will be reached eventually where the addition to total utility (marginal utility) will begin to decline.", marks: 9, contextNote: "The explanation, 9 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q1-a-ii", topicId: "economics-1-1", conceptId: "calculating-marginal-utility",
+    section: "B", questionRef: "2020 HL Section B Q1(a)(ii)",
+    stem: "The table below illustrates the Law of Diminishing Marginal Utility.",
+    questionText: "Using the table above calculate the marginal utility at A, B, C and D (show all workings in your answer book).",
+    tariffModel: {"kind":"fixed","notation":"4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "25 - 10 = 15, 37 – 25 = 12, 47 – 37 = 10, 54 – 47 = 7", marks: 4, contextNote: "The four marginal utilities, A 15, B 12, C 10 and D 7, 4 marks: the scheme’s workings.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p07-q1a-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p07-q1a-table.png",
+          "srcHash": "b10be1d5480513f545541ad67e0e8815",
+          "alt": "A table: No. of Units Consumed 1, 2, 3, 4, 5; Total Utility in Units / Utils 10, 25, 37, 47, 54; Marginal Utility in Units / Utils 10, A, B, C, D.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q1-a-iii", topicId: "economics-1-1", conceptId: "where-diminishing-marginal-utility-sets-in",
+    section: "B", questionRef: "2020 HL Section B Q1(a)(iii)",
+    stem: "The table below illustrates the Law of Diminishing Marginal Utility.",
+    questionText: "State at what point diminishing marginal utility sets in and explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The law of diminishing marginal utility sets in after the 2nd unit is consumed /on the consumption of the 3rd unit. As the additional/marginal utility gained from the consumption of the third unit (12) is less than the additional/marginal utility gained from the consumption of the second unit.", marks: 4, contextNote: "The point and its explanation, 4 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p07-q1a-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p07-q1a-table.png",
+          "srcHash": "b10be1d5480513f545541ad67e0e8815",
+          "alt": "A table: No. of Units Consumed 1, 2, 3, 4, 5; Total Utility in Units / Utils 10, 25, 37, 47, 54; Marginal Utility in Units / Utils 10, A, B, C, D.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q1-a-iv", topicId: "economics-1-1", conceptId: "assumptions-of-diminishing-marginal-utility",
+    section: "B", questionRef: "2020 HL Section B Q1(a)(iv)",
+    stem: "The table below illustrates the Law of Diminishing Marginal Utility.",
+    questionText: "State and explain two assumptions underlying this law.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 4","answer":2,"ofParts":3,"perPart":4}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An assumption — any two", marks: 8, contextNote: "Two assumptions, 4 marks each.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Consumer’s income / taste doesn’t change during the consumption period: if the consumer’s income / taste changes, they may purchase a different combination of goods which affects their level of utility.","A certain minimum quantity (the origin) must be consumed for the law to apply: Whole units must be consumed e.g. a whole orange as opposed to an orange segment.","No time has elapsed between the consumption of successive units: if enough time elapses between the consumption of each unit then marginal utility will not decline. E.g. consumption of a muffin every minute vs. consumption of a muffin every Tuesday."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q1-b-i", topicId: "economics-1-0", conceptId: "advertising-ban-and-the-alcohol-market",
+    section: "B", questionRef: "2020 HL Section B Q1(b)(i)",
+    stem: "The Public Health (Alcohol) Act 2018 prohibits the advertising of alcohol in parks, on trains and buses or within 200 metres of a school or playground.",
+    questionText: "Explain, with the aid of a labelled diagram, the likely impact of the above measures on the market equilibrium of alcohol in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"5 + 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-diagram", kind: "point", verbatim: "D1, D2, S1, Indication of lower equilibrium price and lower quantity: 1 mark each = 5 marks.", marks: 5, contextNote: "The diagram, 5 marks: 1 for each element the scheme names. The completed diagram is in the figure.", openList: true },
+    { id: "r-explanation", kind: "point", verbatim: "As there are now less eligible places for alcohol companies to advertise their products their advertising will become less effective. This will lead to a decrease in the demand for alcohol, shifting D1 to the left to D2. Quantity will decrease from Q1 to Q2 and price will decrease from P1 to P2.", marks: 5, contextNote: "The explanation, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-scheme-p13-q1bi-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-scheme-p13-q1bi-diagram.png",
+          "srcHash": "98a1332685f6ce81799ce473d4b1c08c",
+          "alt": "The marking scheme’s diagram: Price against Quantity, an upward-sloping supply curve S and two downward-sloping demand curves, D1 and D2 to its left. The equilibrium moves from E1 (P1, Q1) to E2 at a lower price P2 and a lower quantity Q2, with a downward arrow beside the price axis.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q1-b-ii", topicId: "economics-1-3", conceptId: "reducing-alcohol-consumption",
+    section: "B", questionRef: "2020 HL Section B Q1(b)(ii)",
+    stem: "The Public Health (Alcohol) Act 2018 prohibits the advertising of alcohol in parks, on trains and buses or within 200 metres of a school or playground.",
+    questionText: "Discuss three other possible measures which could be introduced to help reduce the consumption of alcohol in Ireland.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":9,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A measure — any three", marks: 15, contextNote: "Three measures, 5 marks each.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Taxes: increase taxes such as excise duty/VAT on alcohol which may reduce consumption.","Regulate availability: Restrict opening hours for pubs and off-licences so that there will be less eligible times / opportunities to purchase alcohol.","Introduce limits to the amount of alcohol that can be bought in outlets: If shops and outlets implement a limit on the amount of alcohol which can be purchased by an individual customer in an individual transaction it may reduce the amount of alcohol consumed.","Age restrictions: raise the legal age for the consumption of alcohol from 18 to 21.","Sale points: restrict the number of places selling alcohol e.g. ban the sale of alcohol in petrol stations/ restrict the availability of licences. Create a barrier or enclosure so alcohol is kept away from the rest of the store.","Consumer awareness: provide advertising campaigns to raise awareness of the risks of excessive alcohol consumption / not allowing alcohol purchases qualify for loyalty points. Allow for labelling which warns about the risks of consuming too much alcohol: cancers; heart disease and drinking during pregnancy.","Increase minimum pricing: this will ban the sale of alcohol at ‘low’ prices and so help reduce consumption.","Introduce harsher penalties for businesses in breach of their licence: if businesses are seen to be flouting the law, revoke their liquor licences.","Ban drinks industry sponsorship of sporting events: this may break the link between sports events and alcohol and this may help reduce the consumption of alcohol, particularly amongst younger people."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q1-c-i", topicId: "economics-1-1", conceptId: "rising-demand-for-rail",
+    section: "B", questionRef: "2020 HL Section B Q1(c)(i)",
+    stem: "Iarnród Éireann (Irish Rail) has warned that overcrowding on trains may worsen as additional train carriages will not arrive until late 2021 at the earliest.",
+    questionText: "State and explain one reason why the demand for train services in Ireland has increased recently.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 7","answer":1,"ofParts":5,"perPart":7}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any one", marks: 7, contextNote: "One reason, 7 marks.", openList: true, group: {"claimMax":1,"perOption":7,"options":["Recovery in the Irish economy / increases in employment: as the Irish economy recovered from the great recession and the levels of employment around the country increased there was an increased demand for public transport.","Housing crisis: as people cannot find properties close to their area of employment, they must travel long distances, increasing demand for rail tickets.","Lack of regional development/ Lack of rural employment: as some areas of the country are far more developed and offer far more employment opportunities than others, people are required to travel long distances to seek employment. (Alternatives are expensive or unfeasible).","Changes in population: the changing demographic structure in Ireland means that there are more elderly people making use of free rail travel. Some consumers are switching to rail transport, where available, due to concern for the environment.","More consumers availing of the Taxsaver Commuter Ticket Scheme: this is designed to help reduce the cost for workers using public transport. The Taxsaver scheme covers, bus, rail and the Luas tram system. The Taxsaver scheme is operated in conjunction with the Revenue Commissioners. Employees can save between 31% and 52% of travel costs as a result of tax, PRSI and USC savings by using a TaxSaver ticket."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q1-c-ii", topicId: "economics-3-5", conceptId: "investing-in-the-railways",
+    section: "B", questionRef: "2020 HL Section B Q1(c)(ii)",
+    stem: "Iarnród Éireann (Irish Rail) has warned that overcrowding on trains may worsen as additional train carriages will not arrive until late 2021 at the earliest.",
+    questionText: "Discuss the case for and against increased investment by the Government in Ireland’s railways.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 6","answer":3,"ofParts":12,"perPart":6}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A point for or against — any three", marks: 18, contextNote: "Three points across the case for and the case against, 6 marks each. The scheme prices the three together, 3 x 6, without a split between the sides.", openList: true, group: {"claimMax":3,"perOption":6,"options":["For — Facilitates geographic mobility: It allows people to travel more easily between different parts of the country, from home to work and so increases the geographical mobility of labour.","For — Balanced regional development: Improved rail infrastructure could lead to a better standard of living in regions and so promote regional development e.g. West of Ireland.","For — Less road traffic congestion: Greater use of rail transport may reduce traffic congestion as the economy continues to grow.","For — Relatively environmentally friendly compared to travelling by car: Could encourage the use of public transport so less fossil fuels will be used thereby saving scarce resources.","For — Improved infrastructure: Investment is needed so that a quality service is provided to consumers on an on-going basis. As a result of investment, travelling times may decrease which may increase demand by both individual users and firms.","For — Social benefit: It provides a mode of transport for those people who do not have a private mode of transport so therefore it is socially desirable etc.","For — Cost effective for the state: interest rates are low and so the cost of repayment is low and this makes the investment cost effective.","Against — Very capital intensive: as the capital required is quite high it will have major funding implications for government which will increase state borrowing. Ireland currently has a high national debt.","Against — It is very long-term investment: it might be too expensive as it is very long-term investment and investment in buses may be a better and more cost-effective measure in the short-term.","Against — Opportunity cost: subsidising lines that are not making returns involves an opportunity cost such as investing in road improvements.","Against — Cost to the taxpayer: the taxpayer may be tasked with footing the bill of an inefficient and unprofitable service. Irish Rail received a PSO subvention of €110.6 million in 2016.","Against — Unfair to those not serviced by rail services: not everyone will benefit from the investment as train services are not available in every part of the country."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q2-a-i", topicId: "economics-2-0", conceptId: "why-microbrewing-is-imperfectly-competitive",
+    section: "B", questionRef: "2020 HL Section B Q2(a)(i)",
+    stem: "Bord Bia has reported that the number of microbreweries in Ireland has increased to 75 in 2018 (a fivefold increase since 2012). Each brewery produces a range of products, such as lagers, stouts and beers. This market is thus an imperfectly competitive market.",
+    questionText: "Explain one reason why the above industry is imperfectly competitive.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 5","answer":1,"ofParts":3,"perPart":5}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any one", marks: 5, contextNote: "One reason, 5 marks.", openList: true, group: {"claimMax":1,"perOption":5,"options":["There are many small firms who operate independently and can influence prices.","There are no barriers to entry/exit. Firms can enter and exit the industry without restriction which is why there has been a fivefold increase since 2012.","Product Differentiation. The firms in this industry have differentiated their products. Products are differentiated through packaging and flavours in order to attract customers/build brand loyalty."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q2-a-ii", topicId: "economics-2-0", conceptId: "characteristics-of-imperfect-competition",
+    section: "B", questionRef: "2020 HL Section B Q2(a)(ii)",
+    stem: "Bord Bia has reported that the number of microbreweries in Ireland has increased to 75 in 2018 (a fivefold increase since 2012). Each brewery produces a range of products, such as lagers, stouts and beers. This market is thus an imperfectly competitive market.",
+    questionText: "State and explain three other key characteristics of this market structure (other than your answer to (i) above).",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":6,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A characteristic — any three", marks: 15, contextNote: "Three characteristics other than your answer to (i), 5 marks each.", openList: true, group: {"claimMax":3,"perOption":5,"options":["There are many small firms who operate independently and can change their own price.","There are no barriers to entry/exit. Firms can enter and exit the industry without restriction which is why there has been a fivefold increase since 2012.","Product Differentiation. The firms in this industry have differentiated their products. Products are differentiated through packaging and flavours in order to attract customers/build brand loyalty.","There are many buyers who operate independently and cannot individually influence price.","Reasonable knowledge within the industry. All firms in the industry are aware of the profits earned by other firms in the industry. Consumers may not be aware of all prices/products available within the industry.","Each firm seeks to maximise profits. Firms produce MC = MR and MC cuts MR from below in order to maximise profits."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q2-b-i", topicId: "economics-2-0", conceptId: "short-run-equilibrium-in-imperfect-competition",
+    section: "B", questionRef: "2020 HL Section B Q2(b)(i)",
+    stem: "Bord Bia has reported that the number of microbreweries in Ireland has increased to 75 in 2018 (a fivefold increase since 2012). Each brewery produces a range of products, such as lagers, stouts and beers. This market is thus an imperfectly competitive market.",
+    questionText: "Explain, with the aid of a labelled diagram, the equilibrium position of a firm in short‐run imperfect competition.",
+    tariffModel: {"kind":"fixed","notation":"Diagram 9 + explanation 9","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    rows: [
+    { id: "r-diagram", kind: "anyN", verbatim: "The diagram — each correctly labelled element", marks: 9, contextNote: "The diagram, 9 marks: 1 for each of the nine elements in the scheme’s table. The completed diagram is in the figure.", openList: true, group: {"claimMax":9,"perOption":1,"options":["D=AR","MR","MC","AC","Correct Equilibrium point - E","P1","C1","Q1","SNP accurately shown"]} },
+    { id: "r-explanation", kind: "anyN", verbatim: "The explanation — each point", marks: 9, contextNote: "The explanation, 9 marks: 1 for each of the nine points, under equilibrium, price and output, cost, supernormal profit and inefficiency.", openList: true, group: {"claimMax":9,"perOption":1,"options":["Occurs at point E where","MC = MR [and MC is rising].","The firm produces Q1.","and sells it at P1.","The cost is shown at C1 (point Y).","The firm is earning SNP (P1,C1,Y,X)","because AR > AC .","The firm is not producing at the lowest point on the AC curve.","It is thus inefficient/wasteful of resources."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-scheme-p17-q2bi-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-scheme-p17-q2bi-diagram.png",
+          "srcHash": "8cf8dc132e279beef781147125224f5d",
+          "alt": "The marking scheme’s completed diagram: Price against Quantity, a downward-sloping D=AR line, a steeper MR line, a U-shaped AC curve and an MC curve rising through the lowest point of AC. MC crosses MR at E; a dashed line up from E meets AC at Y and D=AR at X, and down to Q1. Dashed lines from X and Y meet the price axis at P1 and C1, and the rectangle between them is labelled SNP. Beneath it a row of nine cells reads D=AR, MR, MC, AC, Correct Equilibrium point - E, P1, C1, Q1, SNP accurately shown.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q2-b-ii", topicId: "economics-2-0", conceptId: "entry-of-new-firms-in-imperfect-competition",
+    section: "B", questionRef: "2020 HL Section B Q2(b)(ii)",
+    stem: "Bord Bia has reported that the number of microbreweries in Ireland has increased to 75 in 2018 (a fivefold increase since 2012). Each brewery produces a range of products, such as lagers, stouts and beers. This market is thus an imperfectly competitive market.",
+    questionText: "With the aid of a labelled diagram, explain the impact which the entry of new firms would have on the equilibrium of the firm in (b)(i) above.",
+    tariffModel: {"kind":"fixed","notation":"6 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-diagram", kind: "point", verbatim: "With the aid of a labelled diagram", marks: 6, contextNote: "The diagram, 6 marks. The scheme prices it as one 6 and prints the completed diagram, shown with the answer.", openList: true, ask: true },
+    { id: "r-explanation", kind: "point", verbatim: "As more and more firms enter the industry: • Each incumbent firm will lose some of its customers as they are competed away. • This will cause the firm’s demand curve to shift to the left to D2. • Firms will stop entering the industry once AR = ATC at this point only Normal Profits are earned. This is the long run equilibrium of the firm in imperfect competition.", marks: 6, contextNote: "The explanation, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-scheme-p18-q2bii-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-scheme-p18-q2bii-diagram.png",
+          "srcHash": "81635e53b4a3912e725e52a54d81a3db",
+          "alt": "The marking scheme’s diagram: Price against Quantity, a demand line D2=AR2 and its MR line, a U-shaped ATC curve and an MC curve. D2=AR2 just touches ATC at A; MC crosses MR at E directly below A. A dashed line from A meets the price axis at P1/C1 and a dashed line down through E meets the quantity axis at Q1.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q2-c-i", topicId: "economics-2-0", conceptId: "non-price-competition",
+    section: "B", questionRef: "2020 HL Section B Q2(c)(i)",
+    questionText: "Firms in some industries tend to engage in non‐price competition. Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Non-price competition is a situation whereby in order to avoid self-defeating competition with rival firms through changing prices, they attempt to maintain their price and entice consumers / increase market share through other methods.", marks: 6, contextNote: "The explanation, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q2-c-ii", topicId: "economics-2-0", conceptId: "effective-non-price-measures",
+    section: "B", questionRef: "2020 HL Section B Q2(c)(ii)",
+    stem: "Firms in some industries tend to engage in non‐price competition.",
+    questionText: "Outline two examples of effective non‐price competitive measures used by firms. Why do you consider these to be effective for the firms?",
+    tariffModel: {"kind":"fixed","notation":"2 x 3 + 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 11,
+    rows: [
+    { id: "r-examples", kind: "anyN", verbatim: "A non-price measure — any two", marks: 6, contextNote: "Two examples, 3 marks each.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Clubcards/Loyalty cards/Money-off vouchers.","Free car park","Coupons","24hr opening hours","Free gifts/giveaways","Buy one get one free","Convenient location","Advertising, promotion and branding"]} },
+    { id: "r-why", kind: "point", verbatim: "These measures can be considered as effective competitive methods if they create brand loyalty and encourage consumers to continue to purchase from these firms.", marks: 5, contextNote: "Why they are effective, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q2-c-iii-yes", topicId: "economics-2-0", conceptId: "is-non-price-competition-good-for-consumers",
+    section: "B", questionRef: "2020 HL Section B Q2(c)(iii) — yes",
+    stem: "Firms in some industries tend to engage in non‐price competition.",
+    questionText: "Is non‐price competition beneficial to consumers? Outline two reasons for your answer. Justify the choice: YES.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 4","answer":2,"ofParts":4,"perPart":4}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason for answering YES — any two", marks: 8, contextNote: "Two reasons, 4 marks each. The scheme credits YES and NO, each with its own list.", openList: true, group: {"claimMax":2,"perOption":4,"options":["It allows for price stability which makes it easier for consumers to budget for the future accurately.","Consumer Loyalty is rewarded: customers feel that their custom is recognised, and they are encouraged to continue to purchase from this business.","Informative advertising leads to well-informed consumers: the more informed consumers are the easier it is for them to make decision about what products to purchase and how to get the best value for money.","A more diverse shopping experience: Through changing the product and the shopping experience consumers benefit from greater variety and choice."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q2-c-iii-no", topicId: "economics-2-0", conceptId: "is-non-price-competition-good-for-consumers",
+    section: "B", questionRef: "2020 HL Section B Q2(c)(iii) — no",
+    stem: "Firms in some industries tend to engage in non‐price competition.",
+    questionText: "Is non‐price competition beneficial to consumers? Outline two reasons for your answer. Justify the choice: NO.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 4","answer":2,"ofParts":3,"perPart":4}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason for answering NO — any two", marks: 8, contextNote: "Two reasons, 4 marks each. The scheme credits YES and NO, each with its own list.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Can get goods at cheaper prices: if there was price competition then consumers would get the good at a cheaper price and so more value from their limited income. With non- price competition consumers may end up paying for these measures e.g. advertising.","Higher disposable income: with lower prices consumers will now have a higher disposable income resulting in a better standard of living as they can afford more goods/services.","More choice: as consumers may now have more disposable income it is they who decide how they use it not a firm who makes special offers for which the consumer may pay."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q3-a-i", topicId: "economics-3-2", conceptId: "full-employment",
+    section: "B", questionRef: "2020 HL Section B Q3(a)(i)",
+    stem: "The Irish economist Alan McQuaid said that we are as close to full employment as possible. “We are almost back to Celtic Tiger levels of employment”.",
+    questionText: "Define the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Full employment refers to the scenario where all those members of the labour force who are willing and able to work at existing wages are employed (usually benchmarked at approximately 4% unemployment.)", marks: 8, contextNote: "The definition, 8 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q3-a-ii", topicId: "economics-3-2", conceptId: "benefits-and-challenges-of-full-employment",
+    section: "B", questionRef: "2020 HL Section B Q3(a)(ii)",
+    stem: "The Irish economist Alan McQuaid said that we are as close to full employment as possible. “We are almost back to Celtic Tiger levels of employment”.",
+    questionText: "Discuss the possible economic benefits and challenges of full employment in the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 6","answer":3,"ofParts":12,"perPart":6}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A benefit or a challenge — any three", marks: 18, contextNote: "Three points across the benefits and the challenges, 6 marks each (3 + 3). The scheme prices the three together, 3 x 6, without a split between them.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Possible economic benefits — Increased standard of living for citizens: higher incomes will enable the citizens to buy more goods and services.","Possible economic benefits — Fall in social welfare bill / Increase in tax revenues: as more people are employed the government will be paying out less in social welfare payments. With high employment the government will collect more revenue from direct and indirect taxation.","Possible economic benefits — Increased aggregate demand / Economic growth: full employment will increase aggregate demand for goods & services in the economy and this will increase economic growth and GNP.","Possible economic benefits — Increased investment: full employment encourages further investment as demand is rising and expectations are more positive about the future.","Possible economic benefits — An increase in confidence in the economy: both business and consumers will have more confidence in the economy which should encourage higher economic growth in the future.","Possible economic benefits — Reduces inequality and may prevent poverty: when people are in employment, their income rises and the level of poverty in the country may fall helping to reduce inequality within the country.","Possible challenges — Possible skilled labour shortages: it may make it difficult for employers to meet production targets. Employers may need to recruit workers from overseas.","Possible challenges — Possible wage demands: where there is a shortage of workers, employers may have to increase wage rates in order to retain existing employees and attract new employees.","Possible challenges — Pressure on the state infrastructure: with more people working there will be pressure on transport, public services, schools, housing etc. The lack of affordable homes and school places may it difficult for to attract FDI.","Possible challenges — Loss of service: in those sectors with low wage rates it may be difficult to attract workers and the quality of service may deteriorate or discontinue.","Possible challenges — Inflationary pressures: increasing incomes and spending tend to fuel inflation in the economy.","Possible challenges — Negative Balance of Payments Impact: increasing incomes and MPM increase the demand for imports and the Balance of Trade may fall into deficit."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q3-b", topicId: "economics-4-1", conceptId: "risks-if-mncs-relocate",
+    section: "B", questionRef: "2020 HL Section B Q3(b)",
+    stem: "Ireland is an attractive location for many multinational companies (MNCs).",
+    questionText: "Discuss four possible economic risks for the Irish economy if some of the MNCs currently in Ireland, choose to re‐locate outside Ireland.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 6","answer":4,"ofParts":6,"perPart":6}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An economic risk — any four", marks: 24, contextNote: "Four risks, 6 marks each (3 + 3).", openList: true, group: {"claimMax":4,"perOption":6,"options":["Taxation revenues: multinationals pay most of Ireland’s Corporation Tax, which is hugely volatile, and would leave the government finances in a vulnerable position should these firms decide to leave Ireland. The government received a record corporation tax take of €3.1 billion in November 2019 which is due to a windfall driven by big payments from multinationals.","Loss of employment: if some MNCs decided to move out of Ireland, then the effects on the local and national economy could be significant. Over 1,100 foreign companies have decided to place Ireland at the hub of their European operations employing thousands of people and thousand more as an indirect result of these investments. There may be large-scale unemployment of these firms decide to relocate to another country. Foreign companies in Ireland employ 240,000 workers.","Effects on economic growth: the loss of jobs, incomes, profits and a fall in exports would have a major negative impact on Ireland’s economic growth both in the short- term and longer term.","Increased difficulty in attracting FDI: if some MNCs re-located outside Ireland it could signal to other MNCs who are considering locating in Ireland that the country has become unattractive for FDI. This would make the job of the IDA more difficult in attracting FDI and may put pressure on the government to offer further inducements to these MNCs.","Loss of skills in the workforce: those workers who become unemployed and are mobile may emigrate and these skills are then lost to the Irish economy. This may mean that funding will have to be provided in the future to upskill workers.","Effect on regional development: some of these companies create a lot of jobs in towns / cities around Ireland. Their re-location would significantly affect these regions and make it very difficult to achieve regional development within Ireland. The restructuring of the Novartis pharmaceutical company in Co. Cork and the Molex plant in Shannon."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q3-c", topicId: "economics-2-1", conceptId: "the-gender-pay-gap",
+    section: "B", questionRef: "2020 HL Section B Q3(c)",
+    stem: "Despite being better educated overall, women aged 25‐64 with a third level degree in Ireland earn 28% less than their male counterparts, according to the OECD.",
+    questionText: "Outline two reasons why gender pay inequality continues to exist in the Irish economy. Discuss two measures the Irish government could take to help reduce gender pay inequality in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"1st: 8, 2nd: 7, 2 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Two reasons and two measures", marks: 25, contextNote: "Two reasons for the gap (the first seven listed, (i)) and two government measures (the last eight, (ii)). The scheme prices the four on one ladder across (i) and (ii): the first credited 8 marks, the second 7, the other two 5 each.", openList: true, group: {"claimMax":4,"perOption":8,"options":["Discrimination in the workplace: women and men may not be paid the same wages even though they do the same work due to illegal discrimination in the workplace.","Lack of enforcement by State agencies: state agencies do not enforce the existing legislation or may not take legal action against offenders.","Balancing work and family responsibilities: some women work shorter hours and often part-time to combine family responsibilities and paid work. Career progression can be interrupted by maternity leave.","‘Glass ceiling’/fewer women in senior and leadership positions: women are under- represented in most senior positions, in politics and in certain sectors within the economy such as on boards of management.","Different jobs, different sectors: women and men carry out different jobs and often work in different sectors. In health and social work women make up 80% of workers.","Undervaluing of women’s work and skills: women’s skills and competencies are often undervalued, especially in occupations where they are in the majority. This is reflected in lower rates of pay.","Gender role of women / tradition: some people may still consider that a woman’s role in society is to stay in the home and rear children and this may still cause rates to be lower in some societies.","Awareness - raising Campaign: governments could put in place measures to raise awareness on gender equality and company good practice. A widespread advertising campaign during ‘European Equal Pay Day’ might raise awareness of the gender pay gap and initiate change. The Gender pay Gap Information Bill 2019 would require the introduction of pay gap reporting for any organisation with more than 50 employees.","Collective Agreements: social partners could make provisions in collective agreements on gender equality and require companies to report on salaries and plans to close the gender pay gap.","Labour Inspections / name and shame the offenders: labour inspectors could be trained to carry out inspections on equal pay violations and publish names of offenders.","Audits by companies: gender equality plans and audits enable companies to measure their progress in implementing gender equality and equal pay.","Make pay systems transparent: transparent pay systems are very important in implementing equal pay e.g. software to help companies analyse pay and staffing structures and verify if equal pay exists.","Gender Equality Studies: a government could implement studies into the issue and take action to implement strategies to close the gender pay gap.","Implement / enforce existing laws: governments could also ensure that current laws are enforced by taking legal cases against offenders.","Education on gender stereotyping: policies could be pursued which challenge ‘traditional’ views of women in schools, home and in the workplace."],"perOptionSteps":[8,7,5,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q4-a-i", topicId: "economics-1-5", conceptId: "staying-open-at-a-loss",
+    section: "B", questionRef: "2020 HL Section B Q4(a)(i)",
+    stem: "The cost of doing business in Ireland can be described as ‘high cost, slowly increasing’. The slow growth in costs is welcome from a cost competitiveness perspective.",
+    questionText: "In the short‐run firms may stay in the industry even if they are making a loss. Explain this statement.",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "If a firm’s total revenue is greater than its total variable costs, then it will continue to produce in the short run. Any revenue generated above the firm’s variable cost can contribute towards paying the fixed costs i.e. the loss by producing would be smaller than by closing down.", marks: 5, contextNote: "The explanation, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q4-a-ii", topicId: "economics-1-5", conceptId: "why-control-costs",
+    section: "B", questionRef: "2020 HL Section B Q4(a)(ii)",
+    stem: "The cost of doing business in Ireland can be described as ‘high cost, slowly increasing’. The slow growth in costs is welcome from a cost competitiveness perspective.",
+    questionText: "State and explain three reasons why it is important for a business to control its costs.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":4,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any three", marks: 15, contextNote: "Three reasons, 5 marks each.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Lower prices / increased demand / profits increase: a business may be able to lower its prices, and this may entice consumers to purchase more goods/services. Increased demand will result in increased sales and profits and a more secure future for the business.","Increased competitiveness: with lower costs, prices may fall for these goods. Businesses exporting goods may find that the demand for their exports will increase as they are more competitive.","Better use of scarce resources / reduced waste: all businesses will want to control their costs so that they are not wasting scarce resources.","Survival of business: the firm must have enough money to pay its bills as they fall due. If costs are greater than revenue, the firm will be forced out of business in the long run. The firm must earn profit if it is to survive in business."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q4-b-i", topicId: "economics-1-5", conceptId: "marginal-and-average-total-cost",
+    section: "B", questionRef: "2020 HL Section B Q4(b)(i)",
+    stem: "The table below shows cost data of a firm.",
+    questionText: "Calculate the marginal cost and average total cost at each unit of output. Show all your workings in your answer book.",
+    tariffModel: {"kind":"fixed","notation":"10 (10 x 1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each cost", marks: 10, contextNote: "The five marginal costs and five average total costs, 1 mark each. The completed table is in the figure.", openList: true, group: {"claimMax":10,"perOption":1,"options":["MC1 — 10","MC2 — 7","MC3 — 9","MC4 — 16","MC5 — 28","ATC1 — 20","ATC2 — 13.5","ATC3 — 12","ATC4 — 13","ATC5 — 16"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2020-HL-paper-p09-q4b-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p09-q4b-table.png",
+          "srcHash": "4aa7aff66736842c764507657cb4a052",
+          "alt": "A table: Output (Q) 0, 1, 2, 3, 4, 5; Total Cost (TC) 10, 20, 27, 36, 52, 80.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2020-HL-scheme-p25-q4bi-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-scheme-p25-q4bi-table.png",
+          "srcHash": "03b40f297373a57f9ba6c440b82180ae",
+          "alt": "The marking scheme’s completed table. Output 0 to 5; Total Cost 10, 20, 27, 36, 52, 80; Marginal Cost -, 10, 7, 9, 16, 28; Average Total Cost -, 20, 13.5, 12, 13, 16.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q4-b-ii", topicId: "economics-1-5", conceptId: "marginal-and-average-cost-curves",
+    section: "B", questionRef: "2020 HL Section B Q4(b)(ii)",
+    stem: "The table below shows cost data of a firm.",
+    questionText: "Draw one graph showing marginal cost and average total cost and explain the relationship between both curves (you may use graph paper if you wish).",
+    tariffModel: {"kind":"fixed","notation":"10 (10 x 1) + 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "r-graph", kind: "point", verbatim: "Draw one graph showing marginal cost and average total cost", marks: 10, contextNote: "The graph, 10 marks (10 x 1): the scheme’s plotted graph is shown with the answer.", openList: true, ask: true },
+    { id: "r-explanation", kind: "point", verbatim: "When the marginal cost is lower than the average cost the average cost is falling, i.e. it is being pulled down by the marginal cost When the marginal cost is greater than the average cost the average cost is rising, i.e. it is being pulled up by the marginal cost Average cost is equal to marginal cost at its minimum point.", marks: 5, contextNote: "The relationship between the curves, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2020-HL-paper-p09-q4b-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p09-q4b-table.png",
+          "srcHash": "4aa7aff66736842c764507657cb4a052",
+          "alt": "A table: Output (Q) 0, 1, 2, 3, 4, 5; Total Cost (TC) 10, 20, 27, 36, 52, 80.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2020-HL-scheme-p25-q4bii-graph",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-scheme-p25-q4bii-graph.png",
+          "srcHash": "573c34d8e7b465cb975b04d840873212",
+          "alt": "The marking scheme’s graph, Marginal Cost vs Average Cost: € Cost from 0 to 30 against Output from 1 to 6. MC passes through 10, 7, 9, 16 and 28 at outputs 1 to 5; ATC through 20, 13.5, 12, 13 and 16. MC falls below ATC, then rises through ATC at its lowest point, between outputs 3 and 4.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q4-c-i", topicId: "economics-1-5", conceptId: "internal-economies-of-scale",
+    section: "B", questionRef: "2020 HL Section B Q4(c)(i)",
+    stem: "Fiat Chrysler and Peugeot are engaged in merger talks (to form one company) while the proposed merger between Siemens and Alstom (train manufacturers) has been blocked by the EU’s competition enforcer.",
+    questionText: "Define internal economies of scale.",
+    tariffModel: {"kind":"fixed","notation":"10","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Internal economies of scale refer to the decreases / in average total cost accruing to a firm as it increases its scale of production.", marks: 10, contextNote: "The definition, 10 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q4-c-ii", topicId: "economics-1-5", conceptId: "merger-economies-of-scale",
+    section: "B", questionRef: "2020 HL Section B Q4(c)(ii)",
+    stem: "Fiat Chrysler and Peugeot are engaged in merger talks (to form one company) while the proposed merger between Siemens and Alstom (train manufacturers) has been blocked by the EU’s competition enforcer.",
+    questionText: "Outline three internal economies of scale which Fiat Chrysler/Peugeot may experience following the merger.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 4","answer":3,"ofParts":6,"perPart":4}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An internal economy of scale — any three", marks: 12, contextNote: "Three economies of scale, 4 marks each.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Managerial economies / labour economies: there may be increased specialisation of worker on their specific tasks leading to increases in productivity of the firm. Only the best managers from both firms will be kept on board reducing the costs of administrative / unproductive staff.","Purchasing economies: the scale of production of the overall firm will now be larger and thus they may be able to purchase raw materials on a larger scale. Bulk buying may lead to lower per unit costs.","Technical economies: as the firms merge, they may be able to pool resources to afford the most advanced technology which will reduce production costs per unit.","Economies in use of raw materials: the firm can use the same basic components on all its vehicles and so there is less chance of resources being wasted.","Economies in distribution: post-merger the firm will have more enterprises in more locations which requires may result in transportation costs for raw materials and finished products.","Marketing economies: the firm can spread the cost of marketing across a wider range of output thus reducing the cost on a per unit basis. A single specialist marketing team can be better utilised across a wider range of vehicles."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q4-c-iii", topicId: "economics-1-3", conceptId: "blocking-a-merger",
+    section: "B", questionRef: "2020 HL Section B Q4(c)(iii)",
+    stem: "Fiat Chrysler and Peugeot are engaged in merger talks (to form one company) while the proposed merger between Siemens and Alstom (train manufacturers) has been blocked by the EU’s competition enforcer.",
+    questionText: "Outline two reasons why the EU’s competition enforcer might move to block the proposed merger.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 4","answer":2,"ofParts":4,"perPart":4}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 8, contextNote: "Two reasons, 4 marks each (2 + 2).", openList: true, group: {"claimMax":2,"perOption":4,"options":["Exploitation of consumers: reduced competition in the market will lead to a more concentrated market which may exploit consumers in order to maximise profits.","Higher prices: with less competition between firms, prices are likely to increase.","Reduced research and development: firms may be less inclined to invest in research and development if there are fewer firms to compete against.","Reduced quantity and choice for consumers: the overall number of cars produced may decrease as the firms drop production of cars from their previous product line. This reduces both the quantity of available cars and the choice of types for consumers."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q5-a-i", topicId: "economics-0-1", conceptId: "enterprise",
+    section: "B", questionRef: "2020 HL Section B Q5(a)(i)",
+    stem: "An American survey has ranked Ireland as the eighth most entrepreneurial society in the world.",
+    questionText: "Define the factor of production enterprise.",
+    tariffModel: {"kind":"fixed","notation":"9","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Enterprise is the factor which helps to produce wealth by supplying initiative/ ideas and organises / controls all the other factors of production in the hopes of earning a profit and bears the risk involved.", marks: 9, contextNote: "The definition, 9 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q5-a-ii", topicId: "economics-0-1", conceptId: "why-entrepreneurship-matters",
+    section: "B", questionRef: "2020 HL Section B Q5(a)(ii)",
+    stem: "An American survey has ranked Ireland as the eighth most entrepreneurial society in the world.",
+    questionText: "Discuss four economic reasons why entrepreneurship is important to the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 4","answer":4,"ofParts":9,"perPart":4}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any four", marks: 16, contextNote: "Four reasons, 4 marks each (2 + 2).", openList: true, group: {"claimMax":4,"perOption":4,"options":["Creates employment: entrepreneurs need workers to produce goods and services. Takes pressure off the government by creating a healthy private sector which creates jobs.","Organises production: entrepreneurs organise the other factors of production into production units which is integral to the production of output in a country.","Decides what prices to be charged: entrepreneurs decide what prices to charge for their goods and services hoping there will be a demand at these price levels. These individual price decisions combine to determine the inflation rate of a country and its national competitiveness.","Decides what commodities will be produced: entrepreneurs decide which goods and services are going to be produced and in what quantities, by anticipating consumer demand.","Encourages further investment / innovation: entrepreneurs put both their money and skills into a business in the hope of making a profit and this may encourage further investment in the economy, if successful.","Provides an outlet for savers funds: entrepreneurs provide an investment outlet for savers funds, generating a return on savings.","Generates revenue for the government: entrepreneurs help generate revenue for the government through taxation revenues in the form of corporation tax and also through the avenues of income tax and V.A.T.","May increase exports: if the goods are exported this will improve Ireland’s balance of payments position. If exports are greater than imports Ireland experiences a balance of payments surplus.","Creates income and wealth within the country: successful entrepreneurs create flows of income for themselves and others. They also generate assets creating a stock of wealth which helps increase the standard of living."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q5-b-i", topicId: "economics-2-1", conceptId: "marginal-revenue-product-of-labour",
+    section: "B", questionRef: "2020 HL Section B Q5(b)(i)",
+    stem: "The table below shows possible employment levels, output, costs and revenue data of a firm.",
+    questionText: "Calculate the marginal product and marginal revenue product of labour for this firm. Show all your workings in your answer book.",
+    tariffModel: {"kind":"fixed","notation":"6 x 2 + 6 x 1","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    rows: [
+    { id: "r-mp", kind: "anyN", verbatim: "Each marginal product", marks: 12, contextNote: "The six marginal products, 2 marks each.", openList: true, group: {"claimMax":6,"perOption":2,"options":["MP2: 25 – 10 = 15","MP3: 45 – 25 = 20","MP4: 60 – 45 = 15","MP5: 70 – 60 = 10","MP6: 77 – 70 = 7","MP7: 82 – 77 = 5"]} },
+    { id: "r-mrp", kind: "anyN", verbatim: "Each marginal revenue product", marks: 6, contextNote: "The six marginal revenue products, 1 mark each.", openList: true, group: {"claimMax":6,"perOption":1,"options":["MRP2: 15 x 20 = 300","MRP3: 20 x 20 = 400","MRP4: 15 x 20 = 300","MRP5: 10 x 20 = 200","MRP6: 7 x 20 = 140","MRP7: 5 x 20 = 100"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p10-q5b-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p10-q5b-table.png",
+          "srcHash": "f0f303b2267c0a4c9972f589d0870be7",
+          "alt": "A table of seven rows headed Units of labour employed, Total output per week (units), Marginal product (units), Price of output, Marginal revenue product of labour and Marginal cost of labour. Units 1 to 7 give total output 10, 25, 45, 60, 70, 77 and 82; price €20 and marginal cost €140 in every row; the first row alone shows marginal product 10 and marginal revenue product €200, the rest blank.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q5-b-ii", topicId: "economics-2-1", conceptId: "diminishing-marginal-returns",
+    section: "B", questionRef: "2020 HL Section B Q5(b)(ii)",
+    stem: "The table below shows possible employment levels, output, costs and revenue data of a firm.",
+    questionText: "State at what point the law of diminishing marginal returns applies to labour in the above situation. Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The law of diminishing marginal returns sets in after the third unit is produced/ on the production the fourth unit. • This can be seen as, the additional output produced by the 4th worker is less than the output produced by the 3rd worker. • Each additional worker contributes less additional output than the previous worker from this point onwards.", marks: 6, contextNote: "The point and its explanation, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p10-q5b-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p10-q5b-table.png",
+          "srcHash": "f0f303b2267c0a4c9972f589d0870be7",
+          "alt": "A table of seven rows headed Units of labour employed, Total output per week (units), Marginal product (units), Price of output, Marginal revenue product of labour and Marginal cost of labour. Units 1 to 7 give total output 10, 25, 45, 60, 70, 77 and 82; price €20 and marginal cost €140 in every row; the first row alone shows marginal product 10 and marginal revenue product €200, the rest blank.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q5-b-iii", topicId: "economics-2-1", conceptId: "how-many-workers-to-employ",
+    section: "B", questionRef: "2020 HL Section B Q5(b)(iii)",
+    stem: "The table below shows possible employment levels, output, costs and revenue data of a firm.",
+    questionText: "How many workers should be employed in the above firm? Explain your reason.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "This firm should employ 6 employees. • The marginal revenue earned from employing the 6th worker is equal to the marginal cost of employing the 6th worker. • If less is employed below 6 then profits could be increased by employing more labour. Employing more than 6 workers would result in a loss to the employer. • This is the optimal number of employees.", marks: 6, contextNote: "The number and its reason, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p10-q5b-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p10-q5b-table.png",
+          "srcHash": "f0f303b2267c0a4c9972f589d0870be7",
+          "alt": "A table of seven rows headed Units of labour employed, Total output per week (units), Marginal product (units), Price of output, Marginal revenue product of labour and Marginal cost of labour. Units 1 to 7 give total output 10, 25, 45, 60, 70, 77 and 82; price €20 and marginal cost €140 in every row; the first row alone shows marginal product 10 and marginal revenue product €200, the rest blank.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q5-c-i", topicId: "economics-1-4", conceptId: "normal-or-inferior-good",
+    section: "B", questionRef: "2020 HL Section B Q5(c)(i)",
+    stem: "An Irish firm which sells its product in both the EU and US markets provides you with the following information:",
+    questionText: "Explain whether you consider this good to be normal or inferior?",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "This good is a normal good. This is shown as it has a positive income elasticity of demand, indicating that if income increases more of this good will be purchased.", marks: 7, contextNote: "The answer and its reason, 7 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p10-q5c-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p10-q5c-table.png",
+          "srcHash": "9586700369890daef16ae73bdc9a6c56",
+          "alt": "A table with columns EU and US: Price elasticity of demand –0.8 and –2.4; Income elasticity of demand +0.72 and +2.8.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q5-c-ii", topicId: "economics-1-4", conceptId: "why-price-elasticity-differs",
+    section: "B", questionRef: "2020 HL Section B Q5(c)(ii)",
+    stem: "An Irish firm which sells its product in both the EU and US markets provides you with the following information:",
+    questionText: "Suggest one reason for the difference in the price elasticity of demand for this product in each market.",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any one", marks: 7, contextNote: "One reason, 7 marks. The scheme first states the difference: The good has a lower price elasticity of demand in the European Union than it does in the United States. i.e. percentage change in quantity demanded is less than percentage change in price in the European Union but not in the United States.", openList: true, group: {"claimMax":1,"perOption":7,"options":["The good may have greater brand loyalty in the European market than it does in the United States. If consumers are loyal to the brand in one market but not in another it may mean they have more power to increase price without a significant decrease in quantity.","The good may have greater availability of close substitutes in the American market but not in the European market. If the price increases in the American market a large proportion of customers will switch but the European customers are unable to do this."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p10-q5c-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p10-q5c-table.png",
+          "srcHash": "9586700369890daef16ae73bdc9a6c56",
+          "alt": "A table with columns EU and US: Price elasticity of demand –0.8 and –2.4; Income elasticity of demand +0.72 and +2.8.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q5-c-iii", topicId: "economics-1-4", conceptId: "where-to-charge-a-higher-price",
+    section: "B", questionRef: "2020 HL Section B Q5(c)(iii)",
+    stem: "An Irish firm which sells its product in both the EU and US markets provides you with the following information:",
+    questionText: "If the firm wishes to maximise total sales revenue advise the firm in which market a higher price should be charged. Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In the European market. The demand in the EU is price inelastic therefore the firm should charge the higher price here as consumers are less responsive to price changes than those in the US market and so the demand will not change alot. • Whereas in the US the demand is price elastic for the product and if the firm were to increase its price the percentage decrease in quantity demanded will be greater than the percentage increase in price this will lead to an decrease in total revenue.", marks: 6, contextNote: "The market and the reason, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p10-q5c-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p10-q5c-table.png",
+          "srcHash": "9586700369890daef16ae73bdc9a6c56",
+          "alt": "A table with columns EU and US: Price elasticity of demand –0.8 and –2.4; Income elasticity of demand +0.72 and +2.8.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q6-a-i", topicId: "economics-4-2", conceptId: "tariffs-and-subsidies",
+    section: "B", questionRef: "2020 HL Section B Q6(a)(i)",
+    stem: "In October 2019 the World Trade Organisation allowed the US to place tariffs on European goods in retaliation for the EU subsidising Airbus, the airplane manufacturer.",
+    questionText: "Explain the terms tariffs and subsidies.",
+    tariffModel: {"kind":"fixed","notation":"2 x 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-tariffs", kind: "point", verbatim: "Tariffs refer to taxes placed upon imports which makes them more expensive for consumers in to deter their consumption.", marks: 6, contextNote: "Tariffs, 6 marks.", openList: true },
+    { id: "r-subsidies", kind: "point", verbatim: "Subsidies are payments from the government / EU, to domestic producers to support and encourage the production of a particular good / reduce the producers’ average production costs.", marks: 6, contextNote: "Subsidies, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q6-a-ii", topicId: "economics-4-2", conceptId: "why-the-eu-subsidises-airbus",
+    section: "B", questionRef: "2020 HL Section B Q6(a)(ii)",
+    stem: "In October 2019 the World Trade Organisation allowed the US to place tariffs on European goods in retaliation for the EU subsidising Airbus, the airplane manufacturer.",
+    questionText: "Explain why the EU would give subsidies to a company such as Airbus?",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 6","answer":1,"ofParts":4,"perPart":6}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any one", marks: 6, contextNote: "One reason, 6 marks (3 + 3).", openList: true, group: {"claimMax":1,"perOption":6,"options":["European employment: through supporting this company it allows them to produce more output which requires more labour thus increasing employment in Europe including in spin-off industries which support airplane manufacture.","European economic growth: these subsidies will allow this firm to produce more output at a lower cost. If the output produced is increasing year on year it will support economic growth within Europe and thus support improved standard of living within this region.","Research and development: the EU recognises the value of research and development and so provides support to this firm in order to encourage technological progress.","Encourage European (and International) trade: through this support from the EU it allows Airbus to become highly specialised in their production, lowering costs and making them more internationally competitive thereby encouraging trade. It also encourages Airbus to source raw materials throughout Europe."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q6-a-iii", topicId: "economics-4-2", conceptId: "arguments-against-protectionism",
+    section: "B", questionRef: "2020 HL Section B Q6(a)(iii)",
+    stem: "In October 2019 the World Trade Organisation allowed the US to place tariffs on European goods in retaliation for the EU subsidising Airbus, the airplane manufacturer.",
+    questionText: "Discuss the arguments against trade protectionism.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 4","answer":3,"ofParts":5,"perPart":4}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An argument against protectionism — any three", marks: 12, contextNote: "Three arguments, 4 marks each.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Firms may become over dependent on the protection: measures such as these may, create inefficiency within the firm as they have a safety net. The firm may feel less need to innovate or improve their product as they already have an advantage over their foreign competitors.","May lead to retaliation: the US are displeased with this unfair advantage and have placed tariffs on European goods in response. The current economic climate hints at hostility on many trade fronts with the US and China also involved in trade disputes.","Inequality: some firms may receive government support while others must survive without it. This is inherently unfair. Small start-ups may already struggle to compete against the cost structure of large firms, if protectionist measures are put in place it may deter new firms altogether.","Reduction in world output: the law of comparative advantage assumes that if countries specialise then production of world output will increase. With protectionism less output will be produced globally.","Employment levels: with free trade would output would rise and with this employment levels."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q6-b-i", topicId: "economics-4-2", conceptId: "free-trade-area-and-common-market",
+    section: "B", questionRef: "2020 HL Section B Q6(b)(i)",
+    stem: "As a member of the EU, Irish businesses enjoy free access to the world’s largest single market with a population of 512 million.",
+    questionText: "Distinguish between a free trade area and a common market (such as the EU).",
+    tariffModel: {"kind":"fixed","notation":"7 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 13,
+    rows: [
+    { id: "r-fta", kind: "point", verbatim: "A Free Trade Area means that member countries can trade freely without tariffs being imposed on one another.", marks: 7, contextNote: "A free trade area, 7 marks.", openList: true },
+    { id: "r-cm", kind: "point", verbatim: "A common market: member countries agree to trade freely with each other and impose common tariffs on countries that are outside the union. It also allow free movement of labour and capital between members.", marks: 6, contextNote: "A common market, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q6-b-ii", topicId: "economics-4-2", conceptId: "benefits-of-eu-membership",
+    section: "B", questionRef: "2020 HL Section B Q6(b)(ii)",
+    stem: "As a member of the EU, Irish businesses enjoy free access to the world’s largest single market with a population of 512 million.",
+    questionText: "Discuss three economic benefits to Ireland from continued EU membership.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 4","answer":3,"ofParts":5,"perPart":4}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A benefit — any three", marks: 12, contextNote: "Three benefits, 4 marks each.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Free Trade Area / larger market / trade expansion: being a member of the EU allows Ireland access to an increased market size of over 500 million people. These customers can be exported to tariff free. Ireland also benefits from the collective agreements that the EU negotiates with other countries outside the EU. Trade is also made easier within the EU with the removal of barriers / Irish firms can bid for public sector contracts within the EU.","Capital Funding: Ireland has received large amounts of capital funding from the EU throughout its years of membership which has supported activities such as improvement in infrastructure; re-training grants; Erasmus funding etc.","Freedom movement of capital / labour: we have the freedom to live and work in any other member state without the requirement for a visa. Membership allows access to increased study / job opportunities. Also allows access to EU capital markets.","Foreign Direct Investment: Ireland operates as an export hub on the doorstep of Europe, this location provides an incentive to American firms to provide FDI into Ireland in order to access this market.","EU legislation and policies: Ireland is protected by the policies and arrangements which the EU has agreed with EU member states and external countries such as the CAP and the Fisheries Policy. Workers and consumers are protected by EU legislation."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q6-c-i", topicId: "economics-4-2", conceptId: "advantages-of-new-export-markets",
+    section: "B", questionRef: "2020 HL Section B Q6(c)(i)",
+    stem: "Irish beef exports to China are set to grow from €9m last year to €120m by the end of 2020.",
+    questionText: "Outline the economic advantages of growing new export markets for the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":4,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An advantage — any two", marks: 10, contextNote: "Two advantages, 5 marks each.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Access to larger markets/ Increased sales and profits: As Ireland is a very small market, entering this foreign market gives Irish SMEs access to more customers and more opportunity to expand. If Irish SMEs can sell more goods abroad this will boost their revenue and consequently their profits.","Economies of scale: If they are successful in increasing sales abroad, they will be able to increase production and gain the advantages of large scale production and benefit from economies of scale.","Diversifying risk / Brexit: rather than being overly dependent on the home/UK market Irish SMEs have the opportunity to have a range of customers in different markets and would suffer less should demand in the home/UK market fall.","Easier to access finance: larger firms are able to raise finance for future expansion more easily and find it easier to access credit."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q6-c-ii", topicId: "economics-4-2", conceptId: "difficulties-entering-the-chinese-market",
+    section: "B", questionRef: "2020 HL Section B Q6(c)(ii)",
+    stem: "Irish beef exports to China are set to grow from €9m last year to €120m by the end of 2020.",
+    questionText: "Discuss two possible difficulties which Irish exporting companies may experience in entering the Chinese market.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":9,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A difficulty — any two", marks: 10, contextNote: "Two difficulties, 5 marks each.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Transport costs: these increase the prices of the exports. As Ireland is an island nation these costs can be significant and can make our goods more expensive.","Labour costs: labour costs in Ireland tend to be high which will increase costs of production and make it difficult to compete with goods produced in other countries.","Exchange rate risks (in trading outside Eurozone countries): if the Euro rises in value relative to the trading partners, then Irish exports become more expensive and this presents a challenge when Irish firms are trying to compete abroad.","Language skills: a lack of language skills has always been a challenge for Irish business but poses more of a challenge in the emerging markets in Asia.","Bureaucracy in other countries/regulatory hurdles: these regulatory hurdles, particularly outside the EU, hinder the possibility for Irish SMEs to expand. It is challenging for Irish SMEs to break into new markets.","Level of costs: if coming from a small market Irish SMEs don’t have the benefits of economies of scale compared to large MNCs and this makes it difficult for them to attract business, based on price.","Competitiveness: if the inflation rate in Ireland is higher than that of our competitors, then this makes Irish goods less attractive abroad. Other costs e.g. insurance costs, utilities such as electricity, gas, broadband etc. are generally higher in Ireland than in other European countries –increase costs of production and will affect the competitiveness of Irish firms abroad.","Accessing credit: if Irish firms can’t get access to credit from banks to fund expansion it will make it difficult for them to enter international markets.","Capacity of the firm: Irish SMEs may not have the capacity to meet demand for their products abroad if they successfully secure contracts."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q7-a-i", topicId: "economics-3-1", conceptId: "the-carbon-tax-as-a-regressive-tax",
+    section: "B", questionRef: "2020 HL Section B Q7(a)(i)",
+    stem: "In Budget 2020 the government increased the rate of carbon tax by €6 to €26 per tonne.",
+    questionText: "Why do some people consider the carbon tax to be a regressive tax?",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The carbon tax can be considered regressive as it is an indirect tax which will be charged at same rate from every customer for every unit of carbon produced. Therefore, as the rate of tax is constant for all customers, people on lower incomes will spend a larger proportion of their income on the tax than those on higher incomes, thus it is a regressive tax.", marks: 7, accepts: ["Takes a higher percentage of income from low income tax-payers than from high income tax-payers / The proportion of taxation falls as income increases."], contextNote: "The explanation, 7 marks. The scheme also accepts its shorter statement.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q7-a-ii", topicId: "economics-3-1", conceptId: "consequences-of-the-carbon-tax-rise",
+    section: "B", questionRef: "2020 HL Section B Q7(a)(ii)",
+    stem: "In Budget 2020 the government increased the rate of carbon tax by €6 to €26 per tonne.",
+    questionText: "Outline the possible positive and negative economic consequences of the above measure for the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 6","answer":3,"ofParts":11,"perPart":6}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A positive or negative consequence — any three", marks: 18, contextNote: "Three consequences across the positive and the negative, 6 marks each. The scheme prices the three together, 3 x 6, without a split between them.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Positive — Less consumption of demerit goods: because the fuels which it is placed on are demerit goods which negatively impact the environment. The taxes would focus on polluter pays policy.","Positive — Closer to achieving EU targets: the government is failing to meet its environmental protection EU targets. Increasing this tax would bring Ireland closer to achieving these. Would avoid penalty payments for not meeting targets.","Positive — Additional tax revenue: it would also generate additional revenue for the government. (Including all points relating to what this additional revenue could be spent on i.e. improving state services.)","Positive — Changing consumer mindsets: it would encourage businesses and households to transition to sustainable sources of energy and Ireland would preserve non-renewable resources. These taxes would entice households and businesses to switch to more sustainable resources and change consumer patterns.","Positive — Evasion impossible: as the indirect tax is included in the selling price of the good or service it is impossible to evade.","Positive — No disincentive to work: a taxpayer can adjust their expenditure patterns to reduce their tax liability and thus it does not act as a disincentive to work as with direct taxes.","Negative — Higher household costs: the poorest households spend a higher percentage of their income on fuels for heating and transportation while higher income individuals spend a proportionately greater amount on services which usually have lower than average carbon emissions per unit of output. Emissions increase more slowly as income increases.","Negative — Higher business costs: the carbon tax would add to business costs thereby conflicting with the government’s priorities of creating jobs, reducing income inequality and attracting investment.","Negative — Falling international competitiveness: the carbon tax would have a detrimental effect on export competitiveness as cost increases may lead to higher export prices and possibly reduced demand for exports.","Negative — Pressure on public transport: carbon taxes may be considered as anti-rural due to the lack of public transport in rural areas. Public transport may be at or over capacity.","Negative — Will increase inflation: indirect taxes raise the prices of goods and services and hence the cost of living, possibly causing demands for further wage increases."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q7-b-i", topicId: "economics-3-1", conceptId: "current-and-capital-spending",
+    section: "B", questionRef: "2020 HL Section B Q7(b)(i)",
+    stem: "In Budget 2020 the government gave the green light for the construction of the N5 dual carriageway in Mayo and increased funding for An Garda Síochána (Ireland’s National Police) to help deliver new recruits.",
+    questionText: "Identify one example of current government expenditure and one example of capital government expenditure from the above measures. Explain your choice in each case.",
+    tariffModel: {"kind":"fixed","notation":"8 (2 x 4)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-current", kind: "point", verbatim: "Current government expenditure: expenditure for An Garda Siochána. This is current expenditure as it is for the day-to-day running of the country.", marks: 4, contextNote: "The current example and why, 4 marks.", openList: true },
+    { id: "r-capital", kind: "point", verbatim: "Capital government expenditure: expenditure for construction of the dual carriageway. This is expenditure on long-term projects to increase the productive capacity of the country. The benefits accrue to the citizens over a long period of time.", marks: 4, contextNote: "The capital example and why, 4 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q7-b-ii", topicId: "economics-3-1", conceptId: "benefits-of-garda-spending",
+    section: "B", questionRef: "2020 HL Section B Q7(b)(ii)",
+    stem: "In Budget 2020 the government gave the green light for the construction of the N5 dual carriageway in Mayo and increased funding for An Garda Síochána (Ireland’s National Police) to help deliver new recruits.",
+    questionText: "Discuss the social benefits and economic benefits of increased spending on An Garda Siochána.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 4","answer":3,"ofParts":4,"perPart":4}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A benefit — any three", marks: 12, contextNote: "Three benefits, 4 marks each (3 x 4). Must have one social /economic benefit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Injection into the circular flow of income: the additional earnings by the gardaí will be spent back into the economy which will have a multiplier effect on national income.","More employment/more spending: the additional funding provided to the gardaí will allow more people to gain employment, earn wages and spending on goods and services in the economy.","More legitimate businesses / less shadow market activity: with more spending in the economy and a greater police presence this will encourage the growth of legitimate businesses and discourage the growth of the shadow economy.","Less crime: with a greater police presence across the country it will provide greater security for communities allowing for a greater piece of mind for households and businesses."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q7-b-iii", topicId: "economics-3-1", conceptId: "toll-roads",
+    section: "B", questionRef: "2020 HL Section B Q7(b)(iii)",
+    stem: "In Budget 2020 the government gave the green light for the construction of the N5 dual carriageway in Mayo and increased funding for An Garda Síochána (Ireland’s National Police) to help deliver new recruits.",
+    questionText: "Outline one argument for and one argument against making new sections of motorways toll roads.",
+    tariffModel: {"kind":"fixed","notation":"5 + 5 (3 + 2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-for", kind: "anyN", verbatim: "For — any one", marks: 5, contextNote: "One argument for, 5 marks (3 + 2).", openList: true, group: {"claimMax":1,"perOption":5,"options":["Higher quality: the use of toll funds may improve the quality of the road in question and help reduce the number of road traffic accidents.","Financing construction / maintenance: revenue earned could help fund the development /maintenance of this road.","More efficient transport: times saved by all users and may help reduce emissions."]} },
+    { id: "r-against", kind: "anyN", verbatim: "Against — any one", marks: 5, contextNote: "One argument against, 5 marks (3 + 2).", openList: true, group: {"claimMax":1,"perOption":5,"options":["Other motor taxes: road-users may feel that they are being charged too many taxes as they already pay motor tax and tax on petrol/diesel. Cost if living rises.","Regressive: as the toll charged is the same rate for all road users regardless of income earned, it takes a higher proportion from low income earners than high income earners.","Firms face higher costs: which may be passed onto the consumer and/or they may seek alternative routes."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q7-c-i-yes", topicId: "economics-3-1", conceptId: "an-empty-home-tax",
+    section: "B", questionRef: "2020 HL Section B Q7(c)(i) — yes",
+    stem: "An empty home tax is needed to tackle the homelessness crisis says McVerry Trust. (Note: an empty home tax applies to residences that are unoccupied for long periods of time). (Source: Irish Times, September 2019)",
+    questionText: "In your opinion, is this empty home tax a good idea? Explain your answer. Justify the choice: YES.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 8","answer":1,"ofParts":3,"perPart":8}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason for answering YES — any one", marks: 8, contextNote: "One reason, 8 marks. The scheme credits YES and NO, each with its own list.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Encourage people to sell the vacant property: this may spur people to sell the vacant property and so those people who actually need a home can now get access to one.","Misallocation of resources/opportunity cost/market failure: an economy in which there is a homeless crisis and at the same time idle houses is clearly suffering from market failure as resources are being misallocated. Those who need homes have none whilst those who have them are not using them.","Maye ease the housing crisis: the housing crisis is one of the most persistent economic issues in Ireland in recent years and is costing the state in providing emergency accommodation. This cost may be reduced."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q7-c-i-no", topicId: "economics-3-1", conceptId: "an-empty-home-tax",
+    section: "B", questionRef: "2020 HL Section B Q7(c)(i) — no",
+    stem: "An empty home tax is needed to tackle the homelessness crisis says McVerry Trust. (Note: an empty home tax applies to residences that are unoccupied for long periods of time). (Source: Irish Times, September 2019)",
+    questionText: "In your opinion, is this empty home tax a good idea? Explain your answer. Justify the choice: NO.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 8","answer":1,"ofParts":2,"perPart":8}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason for answering NO — any one", marks: 8, contextNote: "One reason, 8 marks. The scheme credits YES and NO, each with its own list.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Extra tax unfair on top of LPT: this tax may be seen to be unfair as it taxes people who already pay taxes for owning homes.","Nanny state / interference in the market system: it may be seen that the government is overprotective or as interfering unduly with personal choices."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q7-c-ii", topicId: "economics-3-1", conceptId: "reducing-homelessness",
+    section: "B", questionRef: "2020 HL Section B Q7(c)(ii)",
+    stem: "An empty home tax is needed to tackle the homelessness crisis says McVerry Trust. (Note: an empty home tax applies to residences that are unoccupied for long periods of time). (Source: Irish Times, September 2019)",
+    questionText: "Suggest three alternative measures the government could take to help reduce homelessness in Ireland.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 4","answer":3,"ofParts":8,"perPart":4}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A measure — any three", marks: 12, contextNote: "Three measures, 4 marks each.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Social housing: the more social housing the government supplies the greater the overall supply of housing will be, which will help to alleviate the crisis.","Modular housing: these low-cost, fast-build houses / apartments could allow rapid increases in the number of houses available which could help to meet some of the market demand for houses.","Build up, not out: if cities around Ireland are rezoned to allow the construction of high-rise buildings, it will allow for much denser population in certain areas and will drive down the cost of housing in the area.","Rezone land: if more land is rezoned from agricultural and commercial zoning to domestic zoning it will afford people more opportunities to build houses","Reduce tax / charges on construction of homes / rental income: this may encourage more investors to build houses and/or provide properties for rental. Local Authority charges can act as a disincentive for investment.","Increase the levy on land hoarders: In January 2020 the rate of levy in Dublin was increased from 3 per cent to 7 per cent. This may make more land available for building.","Increased provision of emergency accommodation (as happened in 2018 due to falling temperatures): this will help in the short run only though.","Rent freeze in Rent Pressure Zones: these are located in parts of the country where rents are highest and rising, and where households have the greatest difficulty finding affordable accommodation."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q8-a", topicId: "economics-3-0", conceptId: "transfer-payments-benefits-in-kind-and-nfi",
+    section: "B", questionRef: "2020 HL Section B Q8(a)",
+    questionText: "Explain the following economic terms, giving an appropriate example in each case: • Transfer Payments; • Benefits‐in‐kind; • Net Factor Income from the Rest of the World.",
+    tariffModel: {"kind":"fixed","notation":"7 + 7 + 7 (5 + 2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 21,
+    rows: [
+    { id: "r-transfer", kind: "point", verbatim: "Transfer Payments: payments for which no factor of production is provided / payments for which no work is done. e.g. unemployment benefit", marks: 7, contextNote: "Transfer payments with an example, 7 marks (5 + 2).", openList: true },
+    { id: "r-bik", kind: "point", verbatim: "Benefits-in-kind: payment in any non-monetary form / payment made in the form of goods or services. e.g. use of a company car.", marks: 7, contextNote: "Benefits-in-kind with an example, 7 marks (5 + 2).", openList: true },
+    { id: "r-nfi", kind: "point", verbatim: "Net Factor Income from the Rest of the World: All income earned by Irish factors of production abroad repatriated to Ireland² minus¹ all income earned by foreign factors of production in Ireland repatriated back to country of origin². e.g. income send back to Ireland by Ryanair less income earned by Facebook.", marks: 7, contextNote: "Net factor income with an example, 7 marks (5 + 2). The small raised figures are the scheme’s own, as it prints them.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q8-b-i", topicId: "economics-3-0", conceptId: "government-spending-from-the-identity",
+    section: "B", questionRef: "2020 HL Section B Q8(b)(i)",
+    stem: "The following table shows National Income (Y), Consumption (C), Investment (I), Government Spending (G), Exports (X) and Imports (M) for 2018 and 2019. Use this data to answer the following: (Show all your workings in your answer book.)",
+    questionText: "Calculate the level of government spending in 2018.",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "G = 60,000", marks: 5, contextNote: "G, 5 marks, with the scheme’s working: 200,000 = 70,000 + 50,000 + G + 80,000 – 60,000.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p12-q8b-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p12-q8b-table.png",
+          "srcHash": "71b752c3c108229d3186f4ec3a7b2352",
+          "alt": "A table with columns Y, C, I, G, X and M. 2018: €200,000, €70,000, €50,000, ?, €80,000, €60,000. 2019: ?, €105,000, €55,000, €65,000, €90,000, €65,000.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q8-b-ii", topicId: "economics-3-0", conceptId: "national-income-from-the-identity",
+    section: "B", questionRef: "2020 HL Section B Q8(b)(ii)",
+    stem: "The following table shows National Income (Y), Consumption (C), Investment (I), Government Spending (G), Exports (X) and Imports (M) for 2018 and 2019. Use this data to answer the following: (Show all your workings in your answer book.)",
+    questionText: "Calculate the level of National Income in 2019.",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Y = 250,000", marks: 5, contextNote: "Y, 5 marks, with the scheme’s working: Y = 105,000 + 55,000 + 65,000 + 90,000 – 65,000.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p12-q8b-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p12-q8b-table.png",
+          "srcHash": "71b752c3c108229d3186f4ec3a7b2352",
+          "alt": "A table with columns Y, C, I, G, X and M. 2018: €200,000, €70,000, €50,000, ?, €80,000, €60,000. 2019: ?, €105,000, €55,000, €65,000, €90,000, €65,000.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q8-b-iii", topicId: "economics-3-0", conceptId: "marginal-propensity-to-import",
+    section: "B", questionRef: "2020 HL Section B Q8(b)(iii)",
+    stem: "The following table shows National Income (Y), Consumption (C), Investment (I), Government Spending (G), Exports (X) and Imports (M) for 2018 and 2019. Use this data to answer the following: (Show all your workings in your answer book.)",
+    questionText: "Define marginal propensity to import (MPM).",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The marginal propensity to import is the proportion of each extra unit of income received which is spent on imported goods and services.", marks: 5, contextNote: "The definition, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2020-HL-paper-p12-q8b-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p12-q8b-table.png",
+          "srcHash": "71b752c3c108229d3186f4ec3a7b2352",
+          "alt": "A table with columns Y, C, I, G, X and M. 2018: €200,000, €70,000, €50,000, ?, €80,000, €60,000. 2019: ?, €105,000, €55,000, €65,000, €90,000, €65,000.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q8-b-iv", topicId: "economics-3-0", conceptId: "calculating-the-mpm",
+    section: "B", questionRef: "2020 HL Section B Q8(b)(iv)",
+    stem: "The following table shows National Income (Y), Consumption (C), Investment (I), Government Spending (G), Exports (X) and Imports (M) for 2018 and 2019. Use this data to answer the following: (Show all your workings in your answer book.)",
+    questionText: "Calculate the marginal propensity to import (MPM).",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "0.1", marks: 5, contextNote: "The MPM, 5 marks. The scheme sets the working as a fraction, the change in imports over the change in income; the figure shows it as printed.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2020-HL-paper-p12-q8b-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p12-q8b-table.png",
+          "srcHash": "71b752c3c108229d3186f4ec3a7b2352",
+          "alt": "A table with columns Y, C, I, G, X and M. 2018: €200,000, €70,000, €50,000, ?, €80,000, €60,000. 2019: ?, €105,000, €55,000, €65,000, €90,000, €65,000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2020-HL-scheme-p39-q8biv-working",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-scheme-p39-q8biv-working.png",
+          "srcHash": "7889785746f6084857a76ba0fadac258",
+          "alt": "The marking scheme’s working set as fractions: change in imports over change in income equals 65,000 – 60,000 over 250,000 – 200,000, equals 5,000 over 50,000, equals 0.1.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q8-b-v", topicId: "economics-3-0", conceptId: "the-multiplier",
+    section: "B", questionRef: "2020 HL Section B Q8(b)(v)",
+    stem: "The following table shows National Income (Y), Consumption (C), Investment (I), Government Spending (G), Exports (X) and Imports (M) for 2018 and 2019. Use this data to answer the following: (Show all your workings in your answer book.)",
+    questionText: "Calculate the value of the multiplier and explain the economic meaning of the figure calculated.",
+    tariffModel: {"kind":"fixed","notation":"5 + 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-multiplier", kind: "point", verbatim: "Multiplier = 2.5", marks: 5, contextNote: "The multiplier, 5 marks. The scheme sets the MPC and the multiplier as fractions; the figure shows them as printed.", openList: true },
+    { id: "r-meaning", kind: "point", verbatim: "This figure means that any injection into the economy (circular flow of income) will have a 2.5 times greater effect on national income than the size of the initial injection.", marks: 5, contextNote: "Its economic meaning, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2020-HL-paper-p12-q8b-table",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-paper-p12-q8b-table.png",
+          "srcHash": "71b752c3c108229d3186f4ec3a7b2352",
+          "alt": "A table with columns Y, C, I, G, X and M. 2018: €200,000, €70,000, €50,000, ?, €80,000, €60,000. 2019: ?, €105,000, €55,000, €65,000, €90,000, €65,000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2020-HL-scheme-p39-q8bv-working",
+          "src": "/exam-figures/economics/markbank/economics-2020-HL-scheme-p39-q8bv-working.png",
+          "srcHash": "109e4d52164b049895d6880660e2d723",
+          "alt": "The marking scheme’s workings set as fractions. Change in consumption over change in income equals 105,000 – 70,000 over 250,000 – 200,000, equals 35,000 over 50,000, equals 0.7; MPS = 1 – 0.7 = 0.3. Left: 1 over (1-MPC) + MPM, then 1 over (1-0.7) + 0.1, Multiplier = 2.5. Right: 1 over MPS + MPM, then 1 over 0.3 + 0.1, Multiplier = 2.5.",
+          "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q8-c-i", topicId: "economics-3-1", conceptId: "the-national-debt",
+    section: "B", questionRef: "2020 HL Section B Q8(c)(i)",
+    questionText: "Ireland’s national debt reached €206 billion at the end of 2018. Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "National debt is the total/cumulative amount of government domestic and foreign borrowing which is outstanding.", marks: 6, contextNote: "The explanation, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q8-c-ii", topicId: "economics-3-1", conceptId: "the-ntma",
+    section: "B", questionRef: "2020 HL Section B Q8(c)(ii)",
+    stem: "Ireland’s national debt reached €206 billion at the end of 2018.",
+    questionText: "Name the agency responsible for managing Ireland’s national debt. State and explain one other function of this agency.",
+    tariffModel: {"kind":"fixed","notation":"6 (3 + 3)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-name", kind: "point", verbatim: "The National Treasury Management Agency NTMA", marks: 3, contextNote: "The agency, 3 marks.", openList: true },
+    { id: "r-function", kind: "anyN", verbatim: "One other function — any one", marks: 3, contextNote: "One other function, 3 marks. The scheme states the agency’s core function as: Its core function is borrowing for the exchequer and debt management in order to ensure liquidity for the exchequer and to minimise the interest burden over the medium term.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Borrowing on behalf of the Irish Government / sale of government bonds.","Managing the National Pension Reserve Fund.","Managing other government funds such as the Social Insurance Fund and Dormant Account Fund.","Borrowing on behalf of the Housing Finance Agency.","Providing financial advice, possibly funding, and providing guarantees for all major public investment projects carried out by the National Development Finance Agency operating through the NTMA.","Providing a Central Treasury Service for the taking of deposits and lending to local government bodies, and liquidity management for the Central Bank and Financial Services Authority of Ireland.","Personal injuries claims brought against Government departments and other State Authorities/ the State’s Clinical Indemnity Scheme managed by the NTMA as the State Claims Agency.","Acting as Ireland’s agent for the purchase of carbon credits."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2020 Higher Level — © State Examinations Commission.",
+    id: "econ-2020-hl-sb-q8-c-iii", topicId: "economics-3-1", conceptId: "risks-of-the-national-debt",
+    section: "B", questionRef: "2020 HL Section B Q8(c)(iii)",
+    stem: "Ireland’s national debt reached €206 billion at the end of 2018.",
+    questionText: "Outline three risks to the Irish economy arising from the above level of national debt.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 4","answer":3,"ofParts":5,"perPart":4}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A risk — any three", marks: 12, contextNote: "Three risks, 4 marks each (2 + 2).", openList: true, group: {"claimMax":3,"perOption":4,"options":["Opportunity costs involved / loss of public services: with more funds being used to meet our annual interest repayments the government has less funds available for other purposes. The government has cut spending on public services, resulting in deterioration in provision of some services e.g. the health service; education service","Increased burden on current and future taxpayers: the increase will mean that the government will have to consider increasing future taxes on future taxpayers.","Annual interest repayments: the increasing national debt means that the annual cost of repaying our national debt is rising. Interest payments are payments for past consumption and they are made at the expense of current consumption.","Loss of economic sovereignty / damage Ireland’s credit rating: when a country cannot fund itself it can apply to external bodies, such as the IMF, for funding. However to get the funding a country has to accept conditions as specified by the external bodies. The difficulty to pay back our debt may be harmful to our international credit rating.","Circular flow of income: with more money leaving the country a smaller amount remains here thereby reducing our circular flow of national income. This could reduce the level of economic activity within the country."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Economics 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",

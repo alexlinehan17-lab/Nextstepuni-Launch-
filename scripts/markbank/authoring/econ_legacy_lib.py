@@ -21,7 +21,7 @@ from econ_lib import JUNK, as_option, defurnish, tidy
 
 BLOCKS_MARK = '<!-- pdf-block-order: appended by append-scheme-blocks.py -->'
 UNDERSCORES = re.compile(r'\s*_{2,}\s*')
-TAIL = re.compile(r'(?:\s+(?:\d{1,2}\.|\((?:i{1,3}|iv|vi{0,3}|ix|x)\)|OR|or|graded|\+|&|Q\s+Possible responses\s+Max(?:\s+Mark)?)|\s*•)\s*$')
+TAIL = re.compile(r'(?:(?:\s+\d(?:st|nd|rd|th)\s*:\s*\d{1,2}\b)+|\s+(?:\d{1,2}\.|\((?:i{1,3}|iv|vi{0,3}|ix|x)\)|OR|or|graded|\+|&|(?:Q\s+)?Possible responses\s+Max(?:\s+Mark)?)|\s*•)\s*$')
 # The marks column's "graded" printed at the END of a line follows the slice
 # rather than splitting it; cut there, the slice is still contiguous.
 TRAILING_GRADED = re.compile(r'\s+(?:graded|&)\s*$')
@@ -201,6 +201,20 @@ class Old(Sheet):
         if b < 0:
             raise ValueError(f'end anchor {end!r} not found after {start!r}')
         return flat[a:b + (len(end) if include_end else 0)]
+
+
+def beside_ask(card, key):
+    """Bind the printed data (a diagram or table, never the whole question) that
+    the student needs before the reveal, when the card's figure slot already
+    holds its hidden solution. The typed stem and ask stay on the card
+    (questionFigureIncludesPrompt false): a whole old-syllabus question set at
+    phone width puts its text near 8 px, and the coordinator's rule (2026-11-04)
+    is to crop to the part the ask needs wherever the text would fall under
+    about 12 px on a 390 px phone."""
+    if not card.get('figureKey'):
+        raise ValueError(f"{card['id']}: no solution in the figure slot; bind the data as the figure")
+    card['questionFigureKey'] = key
+    card['questionFigureIncludesPrompt'] = False
 
 
 class OldDeck(Deck):

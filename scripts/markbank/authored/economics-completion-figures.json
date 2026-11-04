@@ -4179,5 +4179,357 @@
     },
     "lettersVisible": [],
     "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-scheme-p06-q4i-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2020 HL Section A Q4(i)",
+    "description": "The marking scheme’s completed diagram: Price against Quantity, a downward-sloping demand line D1 and two upward-sloping supply lines, S1 and S2 to its right, with arrows pointing right. Dashed lines run from E1 to P1 and Q1, and from E2 to the lower price P2 and the higher quantity Q2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2020/LC034ALP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        110,
+        462,
+        390,
+        625
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-scheme-p11-q9-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2020 HL Section A Q9(ii)",
+    "description": "The marking scheme’s completed diagram: Price against Quantity, a kinked demand curve D=AR with a broken MR line below the kink and a U-shaped MC curve passing through the gap in MR at E. A dashed line from the kink meets the price axis at P1, and a dashed line down from the kink through E meets the quantity axis at Q1.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2020/LC034ALP000EV.pdf",
+      "page": 11,
+      "rectPoints": [
+        318,
+        118,
+        530,
+        295
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-scheme-p13-q1bi-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2020 HL Section B Q1(b)(i)",
+    "description": "The marking scheme’s diagram: Price against Quantity, an upward-sloping supply curve S and two downward-sloping demand curves, D1 and D2 to its left. The equilibrium moves from E1 (P1, Q1) to E2 at a lower price P2 and a lower quantity Q2, with a downward arrow beside the price axis.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2020/LC034ALP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        115,
+        95,
+        380,
+        262
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-scheme-p17-q2bi-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2020 HL Section B Q2(b)(i)",
+    "description": "The marking scheme’s completed diagram: Price against Quantity, a downward-sloping D=AR line, a steeper MR line, a U-shaped AC curve and an MC curve rising through the lowest point of AC. MC crosses MR at E; a dashed line up from E meets AC at Y and D=AR at X, and down to Q1. Dashed lines from X and Y meet the price axis at P1 and C1, and the rectangle between them is labelled SNP. Beneath it a row of nine cells reads D=AR, MR, MC, AC, Correct Equilibrium point - E, P1, C1, Q1, SNP accurately shown.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2020/LC034ALP000EV.pdf",
+      "page": 17,
+      "rectPoints": [
+        68,
+        115,
+        508,
+        422
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-scheme-p18-q2bii-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2020 HL Section B Q2(b)(ii)",
+    "description": "The marking scheme’s diagram: Price against Quantity, a demand line D2=AR2 and its MR line, a U-shaped ATC curve and an MC curve. D2=AR2 just touches ATC at A; MC crosses MR at E directly below A. A dashed line from A meets the price axis at P1/C1 and a dashed line down through E meets the quantity axis at Q1.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2020/LC034ALP000EV.pdf",
+      "page": 18,
+      "rectPoints": [
+        115,
+        145,
+        415,
+        372
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-scheme-p25-q4bi-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2020 HL Section B Q4(b)(i)",
+    "description": "The marking scheme’s completed table. Output 0 to 5; Total Cost 10, 20, 27, 36, 52, 80; Marginal Cost -, 10, 7, 9, 16, 28; Average Total Cost -, 20, 13.5, 12, 13, 16.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2020/LC034ALP000EV.pdf",
+      "page": 25,
+      "rectPoints": [
+        100,
+        122,
+        475,
+        245
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-scheme-p25-q4bii-graph.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2020 HL Section B Q4(b)(ii)",
+    "description": "The marking scheme’s graph, Marginal Cost vs Average Cost: € Cost from 0 to 30 against Output from 1 to 6. MC passes through 10, 7, 9, 16 and 28 at outputs 1 to 5; ATC through 20, 13.5, 12, 13 and 16. MC falls below ATC, then rises through ATC at its lowest point, between outputs 3 and 4.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2020/LC034ALP000EV.pdf",
+      "page": 25,
+      "rectPoints": [
+        70,
+        388,
+        498,
+        602
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-scheme-p39-q8biv-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2020 HL Section B Q8(b)(iv)",
+    "description": "The marking scheme’s working set as fractions: change in imports over change in income equals 65,000 – 60,000 over 250,000 – 200,000, equals 5,000 over 50,000, equals 0.1.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2020/LC034ALP000EV.pdf",
+      "page": 39,
+      "rectPoints": [
+        105,
+        370,
+        440,
+        408
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-scheme-p39-q8bv-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2020 HL Section B Q8(b)(v)",
+    "description": "The marking scheme’s workings set as fractions. Change in consumption over change in income equals 105,000 – 70,000 over 250,000 – 200,000, equals 35,000 over 50,000, equals 0.7; MPS = 1 – 0.7 = 0.3. Left: 1 over (1-MPC) + MPM, then 1 over (1-0.7) + 0.1, Multiplier = 2.5. Right: 1 over MPS + MPM, then 1 over 0.3 + 0.1, Multiplier = 2.5.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2020/LC034ALP000EV.pdf",
+      "page": 39,
+      "rectPoints": [
+        75,
+        460,
+        500,
+        645
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-paper-p03-q4-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2020 HL Section A Q4",
+    "description": "A diagram with Price on the vertical axis and Quantity on the horizontal: a downward-sloping line D1 and two upward-sloping lines, S1 and S2 to its right, with arrows pointing right. D1 crosses S1 at E1 and S2 at E2, lower and to the right.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2020/LC034ALP000EV.pdf",
+      "page": 3,
+      "rectPoints": [
+        150,
+        385,
+        405,
+        540
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-paper-p06-q9-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2020 HL Section A Q9",
+    "description": "A diagram with Quantity on the horizontal axis and three lines numbered 1 to 3: line 2 a demand curve with a kink, line 3 a marginal revenue line that drops vertically below the kink and then falls again, and line 1 a U-shaped curve rising through the vertical gap.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2020/LC034ALP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        343,
+        95,
+        545,
+        271
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-paper-p07-q1a-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2020 HL Section B Q1(a)",
+    "description": "A table: No. of Units Consumed 1, 2, 3, 4, 5; Total Utility in Units / Utils 10, 25, 37, 47, 54; Marginal Utility in Units / Utils 10, A, B, C, D.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2020/LC034ALP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        93,
+        194,
+        504,
+        256
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-paper-p09-q4b-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2020 HL Section B Q4(b)",
+    "description": "A table: Output (Q) 0, 1, 2, 3, 4, 5; Total Cost (TC) 10, 20, 27, 36, 52, 80.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2020/LC034ALP000EV.pdf",
+      "page": 9,
+      "rectPoints": [
+        113,
+        218,
+        513,
+        261
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-paper-p10-q5b-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2020 HL Section B Q5(b)",
+    "description": "A table of seven rows headed Units of labour employed, Total output per week (units), Marginal product (units), Price of output, Marginal revenue product of labour and Marginal cost of labour. Units 1 to 7 give total output 10, 25, 45, 60, 70, 77 and 82; price €20 and marginal cost €140 in every row; the first row alone shows marginal product 10 and marginal revenue product €200, the rest blank.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2020/LC034ALP000EV.pdf",
+      "page": 10,
+      "rectPoints": [
+        121,
+        199,
+        526,
+        369
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-paper-p10-q5c-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2020 HL Section B Q5(c)",
+    "description": "A table with columns EU and US: Price elasticity of demand –0.8 and –2.4; Income elasticity of demand +0.72 and +2.8.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2020/LC034ALP000EV.pdf",
+      "page": 10,
+      "rectPoints": [
+        131,
+        539,
+        521,
+        586
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2020-HL-paper-p12-q8b-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2020 HL Section B Q8(b)",
+    "description": "A table with columns Y, C, I, G, X and M. 2018: €200,000, €70,000, €50,000, ?, €80,000, €60,000. 2019: ?, €105,000, €55,000, €65,000, €90,000, €65,000.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2020/LC034ALP000EV.pdf",
+      "page": 12,
+      "rectPoints": [
+        136,
+        206,
+        519,
+        259
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
   }
 ]

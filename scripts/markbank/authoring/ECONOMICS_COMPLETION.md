@@ -1486,3 +1486,82 @@ were found and fixed:
   (rect 65, 276, 380, 376), and its manifest hash is updated in place.
 Both changes touch these two cards only: the deck diff is those two rows and
 one srcHash.
+
+## 2020 Higher English, old syllabus (lane, 2026-11-04)
+
+The last old-syllabus Higher paper. 2020 has no Ordinary paper in this archive.
+All 12 paper pages and 44 scheme pages were viewed:
+- scheme pp1-4 are the cover, notes, index and the Summary of Mark
+  Allocations, which agrees with every tariff;
+- scheme pp41-44 are blank or the back cover.
+
+There are 75 routes for the 75 printed asks. Section A has 17 asks and Section
+B has 58. Census `economics/census/census-2020-hl.py`; review and Atlas mappings
+`record/record-2020-hl.py`; bindings `record/bind-2020-hl.py`; 16 crops
+`crops/crop-2020-hl.py`. The scheme .md comes from the 2019 recipe (extract
+`--marks-column`, tables, blocks for this file only, columns, fractions,
+maths), which reproduces 2019-hl.md byte for byte.
+
+Decisions on tariffs the scheme does not attribute:
+- Cross-part ladders are one card each, claimed at the printed steps. The
+  2019 OL Q9 precedent applies.
+  - Section A Q7: "1st x 9 & 2 x 4" beside (a) and (b), two arguments for and
+    one against.
+  - Section A Q8: the same tariff over two effects and one measure.
+  - Section B Q3(c): "1st: 8, 2nd: 7, 2 x 5", printed beside (c)(ii) and
+    printed for (c) as a whole in the summary, over two reasons and two
+    measures. That menu has 15 options. `econ_lib.MAX_OPTIONS` was 14 and
+    claimed to mirror `optionCapFor('B')`, which is now 25, so it is synced to
+    25. The build already allowed 25.
+- Section A Q1 "1st @ 10, 2nd @ 6" over the two effects: one menu, steps 10
+  and 6.
+- Some "N x M" cells sit over two printed sides: Section B Q1(c)(ii) (for and
+  against), Q3(a)(ii) (benefits and challenges) and Q7(a)(ii) (positive and
+  negative). Each is one menu. Every option is named by the scheme's side
+  heading ("For — ...") and traces by halves.
+- Diagrams the scheme prices without printed words become ask rows, with the
+  scheme's print as the hidden solution: Section A Q4(i) (8), Section B
+  Q2(b)(ii) diagram (6) and Q4(b)(ii) graph (10).
+- Section B Q4(b)(i) "10 (10 x 1)": the ten values are label-value options
+  ("MC1 — 10", "ATC2 — 13.5"). The scheme's printed ATC workings divide 20 by
+  each output, although the answers it prints are right. Those workings are
+  not shown, and the hidden crop is the completed table alone.
+- Stance routes are Section A Q6(ii), Section B Q2(c)(iii) and Q7(c)(i): YES
+  and NO each get their own list.
+
+New coordinator rule on crops: no whole-question crops. Where a card's figure
+slot holds the solution, the paper's data (the diagram or table alone) is the
+question figure, and the typed stem and ask stay
+(`econ_legacy_lib.beside_ask`, `questionFigureIncludesPrompt: false`). The
+Q9 diagram is cut clear of its answer box. The wide tables (Section B Q1(a),
+Q4(b), Q5(b) and Q8(b), about 400 pt) still set near 9-10 px on a 390 px
+phone. They are the data the ask needs and cannot be cut smaller.
+
+Lifting fixes in `econ_legacy_lib` (2019 output byte-identical):
+- TAIL also trims a page header that has no "Q" and a "1st: 8 2nd:7" ladder
+  left at an option's end.
+- The B1(b)(ii) age-restriction measure is sliced on its own, because the tail
+  trim took its closing "21." for a numeral.
+- B2(c)(i) and B8(c)(i) both read "Explain the underlined term.", so each
+  reads its stem sentence as part of the ask, passing the duplicate-question
+  guard.
+
+Refcheck: Section A Q6(i), Section B Q3(a)(i) and Q4(c)(i) are short asks,
+read by hand against paper pp4, 8 and 9.
+
+Topic review: 8 commercial headings are recorded as reference anomalies:
+- Section A Q3 and Section B Q3 under government intervention.
+- Section B Q5(a)-(b) under employment.
+- Section B Q8 under economic concepts.
+- Four topical-questions headings (Section A Q5, Q7 and Q8, and Section B
+  Q1(c)). No syllabus node falls back to that heading.
+
+Checks:
+- econ_review: 21/66.
+- build: 1,064 cards, 0 dropped.
+- Build rule: 317 claims, 0 untraceable (40 by halves).
+- provcheck: 41 more halves-only claims and the ask row, which it does not
+  know.
+- reconcile: 1,004/2,206, with 2020 HL at 75/75, 0 excluded and 0 orphans.
+- refcheck: 0 wrong.
+- cardlint: clean.
