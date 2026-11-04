@@ -716,13 +716,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "People will still want to own a car and will buy a hybrid or electric one as a means to help the environment. The costs of hybrid vehicles can be prohibitive though. State grants and tax reliefs may assist people in buying hybrid vehicles. The total number of vehicles on the road is expected to fall by about half from its current level by 2050. With fewer private vehicles needing to be parked, vast areas of land currently wasted on parking will be available for other uses, such as housing.",
     "marks": 10,
-    "accepts": [
-     "Ultimately, hybrid cars can have immense power to reduce emissions and make the environment a better place if their drivers choose to make it so. Hybrid vehicles operate in a more fuel-efficient manner. There will also be a reduction in noise pollution as a result of the use of hybrid powered vehicles in urban settings.",
-     "Hybrid vehicles can be expensive to maintain and service. Along with an internal combustion engine to service, battery packs and traction motors also need additional maintenance and service at regular intervals. Specialised mechanics capable of identifying issues with hybrid vehicles are needed also. Damage to hybrid vehicles, depending on the area of damage can lead to very expensive bills to make the car road worthy again."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "People will still want to own a car and will buy a hybrid or electric one as a means to help the environment. The costs of hybrid vehicles can be prohibitive though. State grants and tax reliefs may assist people in buying hybrid vehicles. The total number of vehicles on the road is expected to fall by about half from its current level by 2050. With fewer private vehicles needing to be parked, vast areas of land currently wasted on parking will be available for other uses, such as housing.",
+      "Ultimately, hybrid cars can have immense power to reduce emissions and make the environment a better place if their drivers choose to make it so. Hybrid vehicles operate in a more fuel-efficient manner. There will also be a reduction in noise pollution as a result of the use of hybrid powered vehicles in urban settings.",
+      "Hybrid vehicles can be expensive to maintain and service. Along with an internal combustion engine to service, battery packs and traction motors also need additional maintenance and service at regular intervals. Specialised mechanics capable of identifying issues with hybrid vehicles are needed also. Damage to hybrid vehicles, depending on the area of damage can lead to very expensive bills to make the car road worthy again."
+     ]
+    }
    }
   ],
   "stem": "Answer all of the following:",
@@ -1432,17 +1437,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "In a Solid Solution alloy, the two metals are completely soluble in each other in all three states. The solid solution can be substitutional or interstitial in nature.",
     "marks": 16,
-    "accepts": [
-     "In a Partial Solubility alloy the two metals are completely soluble in the liquid phase.",
-     "Both metals are also soluble in each other (in a solid state) to a limited degree. This is denoted by the Solvus Lines.",
-     "Crystalline Structures - these structures have regular, geometric and repeating molecular patterns i.e. BCC, FCC CPH.",
-     "Amorphous Structures - these structures have irregular and non-geometric patterns.",
-     "Eutectic transformation is where the metal goes from a liquid state to a solid state without going through a pasty stage.",
-     "Eutectoid transformation is a solid to solid transformation of a metal such as steel at 0.83% carbon at 723°C."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "In a Solid Solution alloy, the two metals are completely soluble in each other in all three states. The solid solution can be substitutional or interstitial in nature.",
+      "In a Partial Solubility alloy the two metals are completely soluble in the liquid phase.",
+      "Both metals are also soluble in each other (in a solid state) to a limited degree. This is denoted by the Solvus Lines.",
+      "Crystalline Structures - these structures have regular, geometric and repeating molecular patterns i.e. BCC, FCC CPH.",
+      "Amorphous Structures - these structures have irregular and non-geometric patterns.",
+      "Eutectic transformation is where the metal goes from a liquid state to a solid state without going through a pasty stage.",
+      "Eutectoid transformation is a solid to solid transformation of a metal such as steel at 0.83% carbon at 723°C."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two @ 8 + 8'."
@@ -3316,13 +3326,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Solder: Lead & Tin",
     "marks": 8,
-    "accepts": [
-     "Bronze: Copper & Tin",
-     "Brass: Copper & Zinc"
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Solder: Lead & Tin",
+      "Bronze: Copper & Tin",
+      "Brass: Copper & Zinc"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
@@ -3344,14 +3359,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Quenching is when a hot metal is cooled very quickly i.e. when a cherry red metal is moved about when dipped into cold water.",
     "marks": 14,
-    "accepts": [
-     "Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.",
-     "Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰C and allowed to cool down as slow as possible. This can be achieved by leaving the metal in the furnace while the furnace is cooling down.",
-     "Work hardening is when a metal becomes hard and brittle because of been hammered or shaped when cold. Some metals are more prone to work hardening, than others. Copper and aluminum are typical examples and need to be continually annealed if subjected to a lot of cold shaping or forming."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "Quenching is when a hot metal is cooled very quickly i.e. when a cherry red metal is moved about when dipped into cold water.",
+      "Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.",
+      "Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰C and allowed to cool down as slow as possible. This can be achieved by leaving the metal in the furnace while the furnace is cooling down.",
+      "Work hardening is when a metal becomes hard and brittle because of been hammered or shaped when cold. Some metals are more prone to work hardening, than others. Copper and aluminum are typical examples and need to be continually annealed if subjected to a lot of cold shaping or forming."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 7 marks (14)'."
@@ -3438,12 +3458,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Wear heat resistant gloves when preforming heat treatment of metals.",
     "marks": 8,
-    "accepts": [
-     "Do not leave hot metals lying around in case people accidently pick up the piece."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Wear heat resistant gloves when preforming heat treatment of metals.",
+      "Do not leave hot metals lying around in case people accidently pick up the piece."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
@@ -3537,18 +3562,23 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "The ability of a material to be hammered and/or formed without breaking.",
     "marks": 12,
-    "accepts": [
-     "Robotics offer precision placement of components in manufacturing.",
-     "Robotics offer precision when performing manufacturing processes such as welding & paint spraying.",
-     "The ability of a material to withstand being squashed or pushed together.",
-     "Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.",
-     "The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).",
-     "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.",
-     "The ability of a material to withstand being pulled apart or stretched."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "The ability of a material to be hammered and/or formed without breaking.",
+      "Robotics offer precision placement of components in manufacturing.",
+      "Robotics offer precision when performing manufacturing processes such as welding & paint spraying.",
+      "The ability of a material to withstand being squashed or pushed together.",
+      "Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.",
+      "The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).",
+      "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.",
+      "The ability of a material to withstand being pulled apart or stretched."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 6 marks (12)'."
@@ -3594,12 +3624,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "The surfaces to be joined must be perfectly clean and coated with flux.",
     "marks": 6,
-    "accepts": [
-     "A good flow of heat to the joint is essential. Before applying the solder, the joint must be brought to the temperature at which the solder melts."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "The surfaces to be joined must be perfectly clean and coated with flux.",
+      "A good flow of heat to the joint is essential. Before applying the solder, the joint must be brought to the temperature at which the solder melts."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 3 marks (15)'."
@@ -3807,12 +3842,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Avoid leaving a hot soldering iron on a desk after use.",
     "marks": 8,
-    "accepts": [
-     "Avoid touching your hand or skin with the hot tip of the soldering iron when in use."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Avoid leaving a hot soldering iron on a desk after use.",
+      "Avoid touching your hand or skin with the hot tip of the soldering iron when in use."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
@@ -3931,13 +3971,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Basin: Polypropylene (PP)",
     "marks": 10,
-    "accepts": [
-     "Toothbrush: Nylon",
-     "Shampoo bottle: Polyvinylchloride (PVC)"
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Basin: Polypropylene (PP)",
+      "Toothbrush: Nylon",
+      "Shampoo bottle: Polyvinylchloride (PVC)"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 5 marks (10)'.",
@@ -3961,12 +4006,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Always work in a well-ventilated area.",
     "marks": 8,
-    "accepts": [
-     "Wear protective goggles / gloves to protect from adhesive sticking to the skin."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Always work in a well-ventilated area.",
+      "Wear protective goggles / gloves to protect from adhesive sticking to the skin."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
@@ -4592,14 +4642,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Reactive machines are basic in that they do not store “memories” or use past experiences to determine future actions. They simply perceive the world and react to it. IBM’s Deep Blue, which defeated chess grandmaster Kasporov, is a reactive machine that sees the pieces on a chess board and reacts to them. It cannot refer to any of its prior experiences, and cannot improve with practice.",
     "marks": 10,
-    "accepts": [
-     "Limited Memory machines can retain data for a short period of time. While they can use this data for a specific period of time, they cannot add it to a library of their experiences. Many self-driving cars use Limited Memory technology: they store data such as the recent speed of nearby cars, the distance of such cars, the speed limit, and other information that can help them navigate roads.",
-     "Psychology tells us that people have thoughts, emotions, memories, and mental models that drive their behaviour. Theory of Mind researchers hope to build computers that imitate our mental models, by forming representations about the world, and about other agents and entities in it. One goal of these researchers is to build computers that relate to humans and perceive human intelligence and how people’s emotions are impacted by events and the environment. While plenty of computers use models, a computer with a “mind” does not yet exist.",
-     "Self-aware machines are the stuff of science fiction, though many AI enthusiasts believe them to be the ultimate goal of AI development. Even if a machine can operate as a person does, for example by preserving itself, predicting its own needs and demands, and relating to others as an equal, the question of whether a machines can become truly self-aware, or “conscious”, is best left for philosophers."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Reactive machines are basic in that they do not store “memories” or use past experiences to determine future actions. They simply perceive the world and react to it. IBM’s Deep Blue, which defeated chess grandmaster Kasporov, is a reactive machine that sees the pieces on a chess board and reacts to them. It cannot refer to any of its prior experiences, and cannot improve with practice.",
+      "Limited Memory machines can retain data for a short period of time. While they can use this data for a specific period of time, they cannot add it to a library of their experiences. Many self-driving cars use Limited Memory technology: they store data such as the recent speed of nearby cars, the distance of such cars, the speed limit, and other information that can help them navigate roads.",
+      "Psychology tells us that people have thoughts, emotions, memories, and mental models that drive their behaviour. Theory of Mind researchers hope to build computers that imitate our mental models, by forming representations about the world, and about other agents and entities in it. One goal of these researchers is to build computers that relate to humans and perceive human intelligence and how people’s emotions are impacted by events and the environment. While plenty of computers use models, a computer with a “mind” does not yet exist.",
+      "Self-aware machines are the stuff of science fiction, though many AI enthusiasts believe them to be the ultimate goal of AI development. Even if a machine can operate as a person does, for example by preserving itself, predicting its own needs and demands, and relating to others as an equal, the question of whether a machines can become truly self-aware, or “conscious”, is best left for philosophers."
+     ]
+    }
    }
   ],
   "stem": "Answer all of the following:",
@@ -4622,15 +4677,20 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Predictive maintenance utilises actual measured usage, operating conditions and equipment feedback to generate individualised predictions of impending issues.",
     "marks": 10,
-    "accepts": [
-     "Minimise the risk of failure: i.e. spot when something isn’t working and implement a fix before a failure;",
-     "Find existing relationships in data: i.e. examine available data, see where anomalies lie and predict parameters to change.",
-     "AI-lead supply chain optimisation software amplifies important decisions by using cognitive predictions and recommendations on optimal actions. This can help enhance overall supply chain performance. It also helps manufacturers with possible implications across various scenarios in terms of time, cost, and revenue.",
-     "The use of smart cameras and related AI-enabled software is helping manufacturers achieve improved quality inspection at speeds, latency, and costs beyond the capabilities of human inspectors."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Predictive maintenance utilises actual measured usage, operating conditions and equipment feedback to generate individualised predictions of impending issues.",
+      "Minimise the risk of failure: i.e. spot when something isn’t working and implement a fix before a failure;",
+      "Find existing relationships in data: i.e. examine available data, see where anomalies lie and predict parameters to change.",
+      "AI-lead supply chain optimisation software amplifies important decisions by using cognitive predictions and recommendations on optimal actions. This can help enhance overall supply chain performance. It also helps manufacturers with possible implications across various scenarios in terms of time, cost, and revenue.",
+      "The use of smart cameras and related AI-enabled software is helping manufacturers achieve improved quality inspection at speeds, latency, and costs beyond the capabilities of human inspectors."
+     ]
+    }
    }
   ],
   "stem": "Answer all of the following:",
@@ -5433,18 +5493,23 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Dislocations can move as far as grain boundaries under a shear stress. Fine grained metals are stronger, stiffer and harder than coarse grained metals.",
     "marks": 16,
-    "accepts": [
-     "Dislocations promote material malleability. The motion of dislocations allows slip deformation to occur.",
-     "Heat treatments can impact on dislocation density caused by cold working.",
-     "Ferrous metals (e.g. steel) may rust. This may cause early failure of steel products.",
-     "An oxide layer can form on some metals such as aluminium giving a dull colour.",
-     "Other metals may tarnish due to corrosion e,g. copper can turn a green colour.",
-     "The presence of water (especially acidic water) can initiate electrochemical reactions in some metals e.g. stainless steel or zinc are impacted by seawater.",
-     "Rusal Aughinish Alumina is the largest alumina refinery in Europe. In this refinery bauxite is refined into alumina."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Dislocations can move as far as grain boundaries under a shear stress. Fine grained metals are stronger, stiffer and harder than coarse grained metals.",
+      "Dislocations promote material malleability. The motion of dislocations allows slip deformation to occur.",
+      "Heat treatments can impact on dislocation density caused by cold working.",
+      "Ferrous metals (e.g. steel) may rust. This may cause early failure of steel products.",
+      "An oxide layer can form on some metals such as aluminium giving a dull colour.",
+      "Other metals may tarnish due to corrosion e,g. copper can turn a green colour.",
+      "The presence of water (especially acidic water) can initiate electrochemical reactions in some metals e.g. stainless steel or zinc are impacted by seawater.",
+      "Rusal Aughinish Alumina is the largest alumina refinery in Europe. In this refinery bauxite is refined into alumina."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two @ 8 + 8'."
@@ -7101,14 +7166,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Furnace tapping is the process of removing slag and hot metal from the furnace. The tapping hole, usually located slightly above the floor of the furnace, is used for tapping (removing) slag and hot metal from the furnace.",
     "marks": 15,
-    "accepts": [
-     "The charge is the material melted in the furnace. It can be made up of material such as ore, scrap iron/steel, coke, limestone, etc.",
-     "The refractory lining of a furnace is a protective layer inside the furnace that acts as a form of insulation to withstand high temperatures.",
-     "Slag is a material produced during metal production. It is a glass-like by- product, left over after the metal has been separated from its ore. Slag floats on top of the metal and generally removes waste in metal smelting but can also help control the temperature of the molten metal."
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Furnace tapping is the process of removing slag and hot metal from the furnace. The tapping hole, usually located slightly above the floor of the furnace, is used for tapping (removing) slag and hot metal from the furnace.",
+      "The charge is the material melted in the furnace. It can be made up of material such as ore, scrap iron/steel, coke, limestone, etc.",
+      "The refractory lining of a furnace is a protective layer inside the furnace that acts as a form of insulation to withstand high temperatures.",
+      "Slag is a material produced during metal production. It is a glass-like by- product, left over after the metal has been separated from its ore. Slag floats on top of the metal and generally removes waste in metal smelting but can also help control the temperature of the molten metal."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
@@ -7208,14 +7278,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.",
     "marks": 14,
-    "accepts": [
-     "Normalising is a heat treatment process that is used to make a metal more ductile and tough after processes such as thermal or mechanical hardening.",
-     "Normalising steel involves heating it to a temperature typically in the range of 830°-950°and then cooling in air. The heating and slow cooling changes the microstructure of the steel, altering its mechanical properties.",
-     "Tempering removes some of the hardness while increasing the toughness of a metal. It is achieved by heating the metal to a specific temperature which is determined by the colour of the metal. On heating, colours appear and when the correct colour is achieved i.e., light straw appears at approx. 250° - 350°, it is quenched in cold water."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.",
+      "Normalising is a heat treatment process that is used to make a metal more ductile and tough after processes such as thermal or mechanical hardening.",
+      "Normalising steel involves heating it to a temperature typically in the range of 830°-950°and then cooling in air. The heating and slow cooling changes the microstructure of the steel, altering its mechanical properties.",
+      "Tempering removes some of the hardness while increasing the toughness of a metal. It is achieved by heating the metal to a specific temperature which is determined by the colour of the metal. On heating, colours appear and when the correct colour is achieved i.e., light straw appears at approx. 250° - 350°, it is quenched in cold water."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 7 marks (14)'."
@@ -7237,17 +7312,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is moved about when dipped into cold water.",
     "marks": 14,
-    "accepts": [
-     "If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.",
-     "Low carbon steel contains less than 0.03% of carbon.",
-     "Medium carbon steel contains between 0.03% and 0.06% carbon.",
-     "High carbon steel contains more than 0.06% carbon.",
-     "To ensure high carbon steel is hardened correctly the steel must be raised to the correct temperature before cooling. This critical temperature is known as it’s hardening temperature.",
-     "Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is moved about when dipped into cold water.",
+      "If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.",
+      "Low carbon steel contains less than 0.03% of carbon.",
+      "Medium carbon steel contains between 0.03% and 0.06% carbon.",
+      "High carbon steel contains more than 0.06% carbon.",
+      "To ensure high carbon steel is hardened correctly the steel must be raised to the correct temperature before cooling. This critical temperature is known as it’s hardening temperature.",
+      "Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 7 marks (14)'."
@@ -7299,17 +7379,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.",
     "marks": 12,
-    "accepts": [
-     "Performing operations from a distance Example",
-     "Melting point is the temperature at which a metal changes its state from solid to liquid.",
-     "Gardening: Robotic lawnmowers",
-     "This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.",
-     "Manufacturing: Robotic welding",
-     "The property of elasticity is the ability of an object or material to return to its original shape after being stretched."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.",
+      "Performing operations from a distance Example",
+      "Melting point is the temperature at which a metal changes its state from solid to liquid.",
+      "Gardening: Robotic lawnmowers",
+      "This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.",
+      "Manufacturing: Robotic welding",
+      "The property of elasticity is the ability of an object or material to return to its original shape after being stretched."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 6 marks (12)'."
@@ -7391,14 +7476,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.",
     "marks": 12,
-    "accepts": [
-     "The welding helmet protects your eyes and skin from severe sparks, ultraviolet and infrared rays emitted by the arc.",
-     "The electrode holder has and insulated handle and is used to hold the electrode when welding.",
-     "The welding curtain is a flame-retardant shield used to deflect welding and grinding sparks. They also absorb harmful UV light to protect bystanders within the vicinity of the welder."
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.",
+      "The welding helmet protects your eyes and skin from severe sparks, ultraviolet and infrared rays emitted by the arc.",
+      "The electrode holder has and insulated handle and is used to hold the electrode when welding.",
+      "The welding curtain is a flame-retardant shield used to deflect welding and grinding sparks. They also absorb harmful UV light to protect bystanders within the vicinity of the welder."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any three parts @ 4 marks (12)'."
@@ -7509,12 +7599,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Check the hoses for any damage before you start welding.",
     "marks": 8,
-    "accepts": [
-     "Make sure the gas cylinders are secure and cannot fall over."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Check the hoses for any damage before you start welding.",
+      "Make sure the gas cylinders are secure and cannot fall over."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
@@ -7592,14 +7687,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Thermosetting plastic is a plastic which remains hard when heated.",
     "marks": 12,
-    "accepts": [
-     "Thermoplastic is a plastic which softens when heated.",
-     "Fibreglass is a composite, made of woven glass fibres, held together with a polyester resin. The combination of materials forms an extremely strong and durable composite.",
-     "Elastic memory describes the ability of a plastic to return to it’s original shape after being formed. The plastic remembers it’s original shape and will return to this shape if heated i.e. it is a smart material."
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Thermosetting plastic is a plastic which remains hard when heated.",
+      "Thermoplastic is a plastic which softens when heated.",
+      "Fibreglass is a composite, made of woven glass fibres, held together with a polyester resin. The combination of materials forms an extremely strong and durable composite.",
+      "Elastic memory describes the ability of a plastic to return to it’s original shape after being formed. The plastic remembers it’s original shape and will return to this shape if heated i.e. it is a smart material."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any three parts @ 4 marks (12)'."
@@ -7621,15 +7721,20 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Number plate: Acrylic",
     "marks": 10,
-    "accepts": [
-     "Dashboard: Polypropylene (PP), Styrene, Polycarbonate, ABS.",
-     "Seat belts: Polyvinylchloride (PVC)",
-     "Door handles: Acrylonitrile Butadiene Styrene (ABS)",
-     "Headlights: Acrylic / Polycarbonate"
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Number plate: Acrylic",
+      "Dashboard: Polypropylene (PP), Styrene, Polycarbonate, ABS.",
+      "Seat belts: Polyvinylchloride (PVC)",
+      "Door handles: Acrylonitrile Butadiene Styrene (ABS)",
+      "Headlights: Acrylic / Polycarbonate"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'.",
@@ -7653,12 +7758,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Do not leave pieces of hot plastic unattended on the bench / work area.",
     "marks": 8,
-    "accepts": [
-     "Wear protective gloves if handling hot sheets of plastic."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Do not leave pieces of hot plastic unattended on the bench / work area.",
+      "Wear protective gloves if handling hot sheets of plastic."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
@@ -7680,14 +7790,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Cutting fluid is used when machining metals to, improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.",
     "marks": 18,
-    "accepts": [
-     "This is the speed at which the chuck rotates in RPM. This speed can be adjusted using the gears.",
-     "This is the distance the cutting tool is moved into the workpiece when cutting.",
-     "Feed is the amount per revolution at which the drill moves into the material being drilled."
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Cutting fluid is used when machining metals to, improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.",
+      "This is the speed at which the chuck rotates in RPM. This speed can be adjusted using the gears.",
+      "This is the distance the cutting tool is moved into the workpiece when cutting.",
+      "Feed is the amount per revolution at which the drill moves into the material being drilled."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any three parts @ 6 marks (18)'."
@@ -8323,15 +8438,20 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Extended reality (XR) is transforming gaming and entertainment by providing immersive experiences that blend the virtual and real worlds. With virtual reality (VR), players can be fully immersed in realistic virtual environments, interacting with objects and characters.",
     "marks": 10,
-    "accepts": [
-     "Augmented reality (AR) overlays digital content onto the real world, enabling interactive gaming experiences in our physical surroundings. Mixed reality (MR) combines virtual and physical elements, creating seamless and interactive experiences. These XR technologies also extend to location-based entertainment, live streaming and gamified experiences, enriching the way we play games and consume entertainment content.",
-     "Extended reality (XR) is changing vehicle design and development by providing immersive and efficient tools for engineers and designers. Through virtual reality (VR), designers can create and evaluate vehicle prototypes in realistic virtual environments, allowing for quicker designs and cost savings. Augmented reality (AR) enables engineers to overlay digital information onto physical vehicles, aiding in assembly, maintenance and troubleshooting processes.",
-     "Surgeons can use virtual reality (VR) to plan complex procedures, visualise patient-specific anatomy and practice surgical techniques in a realistic virtual environment, leading to improved precision and reduced risks. In physiotherapy, augmented reality (AR) can assist therapists by guiding exercises, tracking progress and enhancing rehabilitation processes.",
-     "With virtual reality (VR), potential buyers can explore realistic 3D virtual tours of properties from anywhere, saving time and travel costs. Augmented reality (AR) allows users to overlay digital information, such as furniture placement or renovation possibilities, onto real-world spaces, enabling them to visualise and customise properties before making purchasing decisions."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Extended reality (XR) is transforming gaming and entertainment by providing immersive experiences that blend the virtual and real worlds. With virtual reality (VR), players can be fully immersed in realistic virtual environments, interacting with objects and characters.",
+      "Augmented reality (AR) overlays digital content onto the real world, enabling interactive gaming experiences in our physical surroundings. Mixed reality (MR) combines virtual and physical elements, creating seamless and interactive experiences. These XR technologies also extend to location-based entertainment, live streaming and gamified experiences, enriching the way we play games and consume entertainment content.",
+      "Extended reality (XR) is changing vehicle design and development by providing immersive and efficient tools for engineers and designers. Through virtual reality (VR), designers can create and evaluate vehicle prototypes in realistic virtual environments, allowing for quicker designs and cost savings. Augmented reality (AR) enables engineers to overlay digital information onto physical vehicles, aiding in assembly, maintenance and troubleshooting processes.",
+      "Surgeons can use virtual reality (VR) to plan complex procedures, visualise patient-specific anatomy and practice surgical techniques in a realistic virtual environment, leading to improved precision and reduced risks. In physiotherapy, augmented reality (AR) can assist therapists by guiding exercises, tracking progress and enhancing rehabilitation processes.",
+      "With virtual reality (VR), potential buyers can explore realistic 3D virtual tours of properties from anywhere, saving time and travel costs. Augmented reality (AR) allows users to overlay digital information, such as furniture placement or renovation possibilities, onto real-world spaces, enabling them to visualise and customise properties before making purchasing decisions."
+     ]
+    }
    }
   ],
   "stem": "Answer all of the following:",
@@ -8354,13 +8474,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "XR devices like virtual reality (VR) headsets and augmented reality (AR) glasses often capture and collect personal data, raising concerns about data privacy and security. XR experiences may involve the collection and processing of sensitive user information, such as biometric data, location data and behavioural patterns, these may lead to privacy breaches or unauthorised access. There is a risk of increased surveillance and the potential for invasion of personal space and privacy in both public and private settings.",
     "marks": 10,
-    "accepts": [
-     "Prolonged use of XR devices, such as virtual reality (VR) headsets, may isolate individuals from their physical surroundings and limit face-to-face interactions, potentially leading to a decrease in social connections. The immersive nature of XR experiences can make it challenging to maintain a healthy balance between virtual and real-world relationships resulting in a loss of social skills and decreased empathy. The potential for anonymity in XR environments may lead to online harassment, bullying or other negative social behaviours.",
-     "The initial investment required for high-quality XR devices, such as VR headsets or AR glasses, can be prohibitive for individuals with limited financial resources. The development and implementation of XR applications often involve specialised expertise and resources, leading to extra expenses. Maintaining and updating XR hardware and software can also have ongoing costs, making it a barrier for widespread adoption and accessibility."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "XR devices like virtual reality (VR) headsets and augmented reality (AR) glasses often capture and collect personal data, raising concerns about data privacy and security. XR experiences may involve the collection and processing of sensitive user information, such as biometric data, location data and behavioural patterns, these may lead to privacy breaches or unauthorised access. There is a risk of increased surveillance and the potential for invasion of personal space and privacy in both public and private settings.",
+      "Prolonged use of XR devices, such as virtual reality (VR) headsets, may isolate individuals from their physical surroundings and limit face-to-face interactions, potentially leading to a decrease in social connections. The immersive nature of XR experiences can make it challenging to maintain a healthy balance between virtual and real-world relationships resulting in a loss of social skills and decreased empathy. The potential for anonymity in XR environments may lead to online harassment, bullying or other negative social behaviours.",
+      "The initial investment required for high-quality XR devices, such as VR headsets or AR glasses, can be prohibitive for individuals with limited financial resources. The development and implementation of XR applications often involve specialised expertise and resources, leading to extra expenses. Maintaining and updating XR hardware and software can also have ongoing costs, making it a barrier for widespread adoption and accessibility."
+     ]
+    }
    }
   ],
   "stem": "Answer all of the following:",
@@ -10647,15 +10772,20 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "The water-cooled oxygen lance is used to blow oxygen over the hot metal in the Basic Oxygen Furnace during the steel making process. The oxygen ignites the carbon dissolved in the steel, and converts it into carbon dioxide and carbon monoxide, which in turn raises the temperature of the furnace to 1700°C. This helps in melting the steel and reducing the carbon content and impurities in the steel. The lance is kept cool by water passing through the walls of the lance.",
     "marks": 15,
-    "accepts": [
-     "Pig iron is a produced when iron ore is smelted in the ‘Blast Furnace’. Pig iron has a high carbon content, making it very brittle.",
-     "Carbon electrodes are used in the ‘Electric Arc Furnace’ to produce heat.",
-     "The heat is generated by means of an electric arc produced between the charge and the electrodes.",
-     "Iron ore is mined and is used as the raw material to make pig iron."
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "The water-cooled oxygen lance is used to blow oxygen over the hot metal in the Basic Oxygen Furnace during the steel making process. The oxygen ignites the carbon dissolved in the steel, and converts it into carbon dioxide and carbon monoxide, which in turn raises the temperature of the furnace to 1700°C. This helps in melting the steel and reducing the carbon content and impurities in the steel. The lance is kept cool by water passing through the walls of the lance.",
+      "Pig iron is a produced when iron ore is smelted in the ‘Blast Furnace’. Pig iron has a high carbon content, making it very brittle.",
+      "Carbon electrodes are used in the ‘Electric Arc Furnace’ to produce heat.",
+      "The heat is generated by means of an electric arc produced between the charge and the electrodes.",
+      "Iron ore is mined and is used as the raw material to make pig iron."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'any three @ 5marks (15)'."
@@ -10704,13 +10834,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Reason: Increases the grip for the driver when holding the steering wheel.",
     "marks": 6,
-    "accepts": [
-     "Reason: Can be easily moulded into the shape needed.",
-     "Reason: Light but strong"
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Reason: Increases the grip for the driver when holding the steering wheel.",
+      "Reason: Can be easily moulded into the shape needed.",
+      "Reason: Light but strong"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Three reasons @ 2 marks (15)'."
@@ -10780,13 +10915,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Annealing is a heat treatment procedure used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.",
     "marks": 14,
-    "accepts": [
-     "Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.",
-     "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "Annealing is a heat treatment procedure used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.",
+      "Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.",
+      "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'any two @ 7 marks (14)'."
@@ -10856,12 +10996,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Wear heat resistant gloves when preforming heat treatment of metals.",
     "marks": 10,
-    "accepts": [
-     "Do not leave hot metals lying around in case people accidently pick up the piece."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Wear heat resistant gloves when preforming heat treatment of metals.",
+      "Do not leave hot metals lying around in case people accidently pick up the piece."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'any two @ 5 marks (10)'."
@@ -10883,13 +11028,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.",
     "marks": 6,
-    "accepts": [
-     "Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.",
-     "Surgical robots are beginning to be used for general surgeries. Robotic assisted surgical systems use robotic arms with tiny surgical instruments that are controlled by surgeons, potentially allowing for expert surgeons to operate remotely from anywhere in the world."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.",
+      "Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.",
+      "Surgical robots are beginning to be used for general surgeries. Robotic assisted surgical systems use robotic arms with tiny surgical instruments that are controlled by surgeons, potentially allowing for expert surgeons to operate remotely from anywhere in the world."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'two areas @ 3 marks'."
@@ -10911,12 +11061,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.",
     "marks": 6,
-    "accepts": [
-     "Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.",
+      "Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two ways @ 3 marks (12)'."
@@ -11034,14 +11189,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "A welding plant is a device used for fusing / welding metals together. The welding plant creates an electrical arc between the welding rod and the metals being joined. The arc generates enough heat to melt the welding rod and metals, fusing the joint between the two pieces of metal. The welding plant can produce temperatures up to 3,600℃ needed to melt metals.",
     "marks": 12,
-    "accepts": [
-     "The chipping hammer is used to remove the slag which forms on top of the welded joint after arc welding.",
-     "Leather aprons are fireproof and help protect against heat and flames. The leather apron is worn during welding and helps protect the welder against sparks, spatter, slag, and some flames that are often encountered during welding work.",
-     "An electrode holder is a device that holds the electrode / welding rod during the welding process. The handle is insulated to protect the user from the current flowing to the electrode."
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "A welding plant is a device used for fusing / welding metals together. The welding plant creates an electrical arc between the welding rod and the metals being joined. The arc generates enough heat to melt the welding rod and metals, fusing the joint between the two pieces of metal. The welding plant can produce temperatures up to 3,600℃ needed to melt metals.",
+      "The chipping hammer is used to remove the slag which forms on top of the welded joint after arc welding.",
+      "Leather aprons are fireproof and help protect against heat and flames. The leather apron is worn during welding and helps protect the welder against sparks, spatter, slag, and some flames that are often encountered during welding work.",
+      "An electrode holder is a device that holds the electrode / welding rod during the welding process. The handle is insulated to protect the user from the current flowing to the electrode."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any three parts @ 4 marks (12)'."
@@ -11166,12 +11326,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Wear suitable gloves to avoid the adhesives coming in contact with your skin.",
     "marks": 8,
-    "accepts": [
-     "Work in a well-ventilated area as adhesives can produce harmful fumes."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Wear suitable gloves to avoid the adhesives coming in contact with your skin.",
+      "Work in a well-ventilated area as adhesives can produce harmful fumes."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two precautions @ 4 marks (8)'."
@@ -11249,14 +11414,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated.",
     "marks": 12,
-    "accepts": [
-     "Thermosetting plastic is a plastic which remains hard when heated.",
-     "Pre-heated items for coating are dipped into a tank of plastic powder which fuses and sticks to the product. The item is removed and allowed to cool causing the plastic to form a protective coating around the product.",
-     "Thermoplastic is a plastic which softens when heated. Thermoplastics can be recycled and used again."
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated.",
+      "Thermosetting plastic is a plastic which remains hard when heated.",
+      "Pre-heated items for coating are dipped into a tank of plastic powder which fuses and sticks to the product. The item is removed and allowed to cool causing the plastic to form a protective coating around the product.",
+      "Thermoplastic is a plastic which softens when heated. Thermoplastics can be recycled and used again."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any three parts @ 4 marks (12)'."
@@ -11278,14 +11448,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Toy racing car: Polystyrene (HIPS) / PVC / ABS",
     "marks": 10,
-    "accepts": [
-     "Bevel gears: Nylon",
-     "Urea-Formaldehyde (UF)",
-     "Food container: Polystyrene"
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Toy racing car: Polystyrene (HIPS) / PVC / ABS",
+      "Bevel gears: Nylon",
+      "Urea-Formaldehyde (UF)",
+      "Food container: Polystyrene"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'.",
@@ -11309,12 +11484,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Do not leave pieces of hot plastic unattended on the bench / work area.",
     "marks": 8,
-    "accepts": [
-     "Wear protective gloves if handling hot sheets of plastic."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Do not leave pieces of hot plastic unattended on the bench / work area.",
+      "Wear protective gloves if handling hot sheets of plastic."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two precautions @ 4 marks (8)'."
@@ -11362,14 +11542,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts the material. It provides clearance between the cutting tool face and the workpiece. This ensures a reduction in friction and heat build-up, while providing longer tool life and better surface finish.",
     "marks": 15,
-    "accepts": [
-     "This is the speed at which the chuck rotates in RPM. This speed can be adjusted by selecting different gear train settings within the gear box.",
-     "The rake angle is ground on a cutting tool to provide a sharp edge for cutting. The rake angle allows the swarf to pass over the cutting tool and away from the cutting area.",
-     "Feed is the amount per revolution at which the cutting tool moves into the material being machined."
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts the material. It provides clearance between the cutting tool face and the workpiece. This ensures a reduction in friction and heat build-up, while providing longer tool life and better surface finish.",
+      "This is the speed at which the chuck rotates in RPM. This speed can be adjusted by selecting different gear train settings within the gear box.",
+      "The rake angle is ground on a cutting tool to provide a sharp edge for cutting. The rake angle allows the swarf to pass over the cutting tool and away from the cutting area.",
+      "Feed is the amount per revolution at which the cutting tool moves into the material being machined."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'any three @ 5 marks (15)'."
@@ -11391,12 +11576,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Knurling / Parting off.",
     "marks": 6,
-    "accepts": [
-     "CNC - Computer Numerical Control."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Knurling / Parting off.",
+      "CNC - Computer Numerical Control."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'two processes @ 3 marks'."
@@ -11446,14 +11636,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Safety glasses or shield.",
     "marks": 8,
-    "accepts": [
-     "A lab coat / overall to ensure no lose clothing can get caught in the spinning chuck.",
-     "CNC machines can manufacture complicated products.",
-     "CNC machines support the automation of mass production."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Safety glasses or shield.",
+      "A lab coat / overall to ensure no lose clothing can get caught in the spinning chuck.",
+      "CNC machines can manufacture complicated products.",
+      "CNC machines support the automation of mass production."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'two items @ 4 marks (20)'."
@@ -11475,13 +11670,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "The shaft is always smaller than the hole.",
     "marks": 12,
-    "accepts": [
-     "The largest dimension a piece can be manufactured to.",
-     "The shaft can be larger or smaller than the hole."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "The shaft is always smaller than the hole.",
+      "The largest dimension a piece can be manufactured to.",
+      "The shaft can be larger or smaller than the hole."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'any two @ 6 marks (12)'."
@@ -12216,13 +12416,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Effective ballast water management is crucial for mitigating the environmental impact of container ships. While there are challenges associated with chemical use and energy consumption, the overall benefits of preventing invasive species and protecting water quality are important.",
     "marks": 10,
-    "accepts": [
-     "Oil leakage from container ships poses significant immediate and long-term environmental threats including marine pollution, harm to marine life, habitat destruction and ecosystem disruption. However, through design improvements, maintenance practices, effective response plans and regulatory compliance, the risks and impacts of oil leakage can be significantly reduced.",
-     "Reducing emissions from the use of fossil fuels on container ships has predominantly positive environmental impacts such as mitigating climate change, improving air quality, and protecting ecosystems. However, it also presents challenges, such as the environmental impact of alternative fuel production and the energy requirements of emissions reduction technologies."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Effective ballast water management is crucial for mitigating the environmental impact of container ships. While there are challenges associated with chemical use and energy consumption, the overall benefits of preventing invasive species and protecting water quality are important.",
+      "Oil leakage from container ships poses significant immediate and long-term environmental threats including marine pollution, harm to marine life, habitat destruction and ecosystem disruption. However, through design improvements, maintenance practices, effective response plans and regulatory compliance, the risks and impacts of oil leakage can be significantly reduced.",
+      "Reducing emissions from the use of fossil fuels on container ships has predominantly positive environmental impacts such as mitigating climate change, improving air quality, and protecting ecosystems. However, it also presents challenges, such as the environmental impact of alternative fuel production and the energy requirements of emissions reduction technologies."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two @ 5 + 5'."
@@ -14661,13 +14866,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Blast furnace: Pig iron.",
     "marks": 15,
-    "accepts": [
-     "Cupola furnace: Cast iron",
-     "Electric arc furnace: Steel"
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Blast furnace: Pig iron.",
+      "Cupola furnace: Cast iron",
+      "Electric arc furnace: Steel"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Three parts @ 5 marks (15)'."
@@ -14798,17 +15008,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Normalising steel will reduce its hardness and improve its ductility.",
     "marks": 14,
-    "accepts": [
-     "Steel is heated to a cherry red colour, approx. 900°C and allowed to cool down at room temperature (faster than annealing).",
-     "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about.",
-     "If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.",
-     "Low carbon steel contains less than 0.03% of carbon.",
-     "Medium carbon steel contains between 0.03% and 0.06% carbon.",
-     "High carbon steel contains more than 0.06% carbon."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "Normalising steel will reduce its hardness and improve its ductility.",
+      "Steel is heated to a cherry red colour, approx. 900°C and allowed to cool down at room temperature (faster than annealing).",
+      "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about.",
+      "If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.",
+      "Low carbon steel contains less than 0.03% of carbon.",
+      "Medium carbon steel contains between 0.03% and 0.06% carbon.",
+      "High carbon steel contains more than 0.06% carbon."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 7 marks (14)'."
@@ -14830,12 +15045,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Wear heat resistant gloves when preforming heat treatment of metals.",
     "marks": 10,
-    "accepts": [
-     "Wear a face shield to protect from hot splashes."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Wear heat resistant gloves when preforming heat treatment of metals.",
+      "Wear a face shield to protect from hot splashes."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
@@ -14857,12 +15077,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Valve A (blue) is used to turn on and off the flow of oxygen.",
     "marks": 6,
-    "accepts": [
-     "Valve B (red) is used to turn on and off the flow of acetylene."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Valve A (blue) is used to turn on and off the flow of oxygen.",
+      "Valve B (red) is used to turn on and off the flow of acetylene."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 3 marks'."
@@ -14884,13 +15109,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Oxidising flame",
     "marks": 6,
-    "accepts": [
-     "Neutral flame",
-     "Carburising flame"
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Oxidising flame",
+      "Neutral flame",
+      "Carburising flame"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 3 marks (12)'."
@@ -14912,14 +15142,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.",
     "marks": 15,
-    "accepts": [
-     "The welding mask protects your eyes and face from heat and sparks, as well as ultraviolet and infrared rays emitted by the arc.",
-     "Leather gloves are used to protect the user’s hands and arms from burns due to molten splatter when welding. They also protect the user from burns when handling hot metals.",
-     "Welding magnets are strong magnets that can be used to hold workpieces in place while the workpieces are being welded."
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.",
+      "The welding mask protects your eyes and face from heat and sparks, as well as ultraviolet and infrared rays emitted by the arc.",
+      "Leather gloves are used to protect the user’s hands and arms from burns due to molten splatter when welding. They also protect the user from burns when handling hot metals.",
+      "Welding magnets are strong magnets that can be used to hold workpieces in place while the workpieces are being welded."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
@@ -15035,12 +15270,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Wear a suitable mask to protect from the fumes produced by the flux.",
     "marks": 8,
-    "accepts": [
-     "Allow all pipes and fittings to cool down before handling."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Wear a suitable mask to protect from the fumes produced by the flux.",
+      "Allow all pipes and fittings to cool down before handling."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
@@ -15090,14 +15330,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Polyvinyl Chloride (PVC) - Water pipes",
     "marks": 10,
-    "accepts": [
-     "Nylon - Gears",
-     "Polystyrene (PS) - Polystyrene foam for packaging",
-     "Acrylonitrile Butadiene Styrene (ABS) - Wall sockets"
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Polyvinyl Chloride (PVC) - Water pipes",
+      "Nylon - Gears",
+      "Polystyrene (PS) - Polystyrene foam for packaging",
+      "Acrylonitrile Butadiene Styrene (ABS) - Wall sockets"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
@@ -15119,12 +15364,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Do not leave a piece of plastic unattended on the strip heater.",
     "marks": 10,
-    "accepts": [
-     "Remember to turn the strip heater off when finished using it."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Do not leave a piece of plastic unattended on the strip heater.",
+      "Remember to turn the strip heater off when finished using it."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
@@ -15146,13 +15396,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Air is forced through a tank containing powder causing the powder to act like a fluid. Pre-heated items for coating are dipped into the tank. The hot item melts the powder which sticks to its surface. It can then be heated again to provide a fully fused plastic surface.",
     "marks": 10,
-    "accepts": [
-     "Thermosetting plastic is a plastic once set, remains hard even when heated again.",
-     "3D printing is an additive manufacturing process that creates physical objects from a digital design. The process works by extruding thin layers of melted plastic on top of each other. The layers are allowed to fuse and solidify, creating a 3D object."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Air is forced through a tank containing powder causing the powder to act like a fluid. Pre-heated items for coating are dipped into the tank. The hot item melts the powder which sticks to its surface. It can then be heated again to provide a fully fused plastic surface.",
+      "Thermosetting plastic is a plastic once set, remains hard even when heated again.",
+      "3D printing is an additive manufacturing process that creates physical objects from a digital design. The process works by extruding thin layers of melted plastic on top of each other. The layers are allowed to fuse and solidify, creating a 3D object."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
@@ -15200,15 +15455,20 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.",
     "marks": 15,
-    "accepts": [
-     "A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.",
-     "This is the distance the cutting tool is moved into the workpiece when cutting.",
-     "A pilot hole must be drilled before using a large drill.",
-     "This keeps the large drill central as it guides the drill through the piece when drilling."
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.",
+      "A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.",
+      "This is the distance the cutting tool is moved into the workpiece when cutting.",
+      "A pilot hole must be drilled before using a large drill.",
+      "This keeps the large drill central as it guides the drill through the piece when drilling."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
@@ -15257,13 +15517,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Wear safety goggles.",
     "marks": 8,
-    "accepts": [
-     "Do not remove swarf using hands.",
-     "Do not leave a CNC laser machine operating unattended."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Wear safety goggles.",
+      "Do not remove swarf using hands.",
+      "Do not leave a CNC laser machine operating unattended."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 4 marks (20)'."
@@ -16118,16 +16383,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Green hydrogen is hydrogen produced using renewable energy sources without emitting carbon dioxide (CO₂). The most common method for producing green hydrogen is electrolysis, which splits water (H₂O) into hydrogen (H₂) and oxygen (O₂) using electricity from renewable sources like solar, wind, or hydro power.",
     "marks": 10,
-    "accepts": [
-     "Hydrogen can store energy for long periods, balancing supply and demand in renewable energy systems. It can be produced when renewable energy is abundant (e.g. solar or wind power) and stored for use when energy demand is high, making it an effective solution for stabilising energy grids and providing backup power.",
-     "Hydrogen is highly flammable and burns with a flame that is nearly invisible.",
-     "The storage of hydrogen under high pressure requires strong, lightweight tanks.",
-     "Hydrogen can make metals brittle increasing the likelihood of cracking and pipe failure.",
-     "Leaks are difficult to detect as hydrogen in colourless and odourless."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Green hydrogen is hydrogen produced using renewable energy sources without emitting carbon dioxide (CO₂). The most common method for producing green hydrogen is electrolysis, which splits water (H₂O) into hydrogen (H₂) and oxygen (O₂) using electricity from renewable sources like solar, wind, or hydro power.",
+      "Hydrogen can store energy for long periods, balancing supply and demand in renewable energy systems. It can be produced when renewable energy is abundant (e.g. solar or wind power) and stored for use when energy demand is high, making it an effective solution for stabilising energy grids and providing backup power.",
+      "Hydrogen is highly flammable and burns with a flame that is nearly invisible.",
+      "The storage of hydrogen under high pressure requires strong, lightweight tanks.",
+      "Hydrogen can make metals brittle increasing the likelihood of cracking and pipe failure.",
+      "Leaks are difficult to detect as hydrogen in colourless and odourless."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two @ 5 + 5'."
@@ -18322,13 +18592,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Tracks: ‐",
     "marks": 6,
-    "accepts": [
-     "Reason: Light, flexible and shock absorption Digging bucket: ‐",
-     "Reason: Strong, durable and wear resistant."
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Tracks: ‐",
+      "Reason: Light, flexible and shock absorption Digging bucket: ‐",
+      "Reason: Strong, durable and wear resistant."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Three parts @ 2 marks (6)'.",
@@ -18382,12 +18657,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "PPE 1 – Wear heat resistant gloves to protect the hands.",
     "marks": 10,
-    "accepts": [
-     "PPE 2 – Wear a face shield to protect the face from high temperatures."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "PPE 1 – Wear heat resistant gloves to protect the hands.",
+      "PPE 2 – Wear a face shield to protect the face from high temperatures."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
@@ -18409,14 +18689,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "The welding curtain is a flame‐retardant shield used to deflect welding and grinding sparks. They also absorb harmful UV light to protect bystanders within the vicinity of the welder.",
     "marks": 15,
-    "accepts": [
-     "The chipping hammer is used to remove the slag which forms on top of the welded joint after arc welding.",
-     "An electrode holder is a device that holds the electrode / welding rod during the welding process. The handle is insulated which protects the user from current flowing to the electrode.",
-     "The welding mask protects your eyes and face from severe sparks, ultraviolet and infrared rays emitted by the arc when welding."
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "The welding curtain is a flame‐retardant shield used to deflect welding and grinding sparks. They also absorb harmful UV light to protect bystanders within the vicinity of the welder.",
+      "The chipping hammer is used to remove the slag which forms on top of the welded joint after arc welding.",
+      "An electrode holder is a device that holds the electrode / welding rod during the welding process. The handle is insulated which protects the user from current flowing to the electrode.",
+      "The welding mask protects your eyes and face from severe sparks, ultraviolet and infrared rays emitted by the arc when welding."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
@@ -18555,14 +18840,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "A: Compression moulding B: Blow moulding C: Vacuum forming. ii) Describe any one plastic manufacturing process:",
     "marks": 9,
-    "accepts": [
-     "Plastic A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released.",
-     "Air Parison Split mould Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened moulding.",
-     "A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away."
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "A: Compression moulding B: Blow moulding C: Vacuum forming. ii) Describe any one plastic manufacturing process:",
+      "Plastic A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released.",
+      "Air Parison Split mould Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened moulding.",
+      "A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Three parts @ 3 marks (9)'.",
@@ -18586,14 +18876,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Thermosetting plastic is a plastic which remains hard when heated.",
     "marks": 10,
-    "accepts": [
-     "Laminating is a bonding process which produces a sheet material manufactured from multiple layers of paper with a top layer of plastic, usually 1.5 mm thick, with a decorative finish. It can be used in flat sheets or heat‐formed and bent and adhered to single curved base material. It is commonly referred to by the brand name \"Formica.\"",
-     "Thermoplastic is a plastic which softens when heated.",
-     "This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Thermosetting plastic is a plastic which remains hard when heated.",
+      "Laminating is a bonding process which produces a sheet material manufactured from multiple layers of paper with a top layer of plastic, usually 1.5 mm thick, with a decorative finish. It can be used in flat sheets or heat‐formed and bent and adhered to single curved base material. It is commonly referred to by the brand name \"Formica.\"",
+      "Thermoplastic is a plastic which softens when heated.",
+      "This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
@@ -18615,14 +18910,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Vehicle chassis – Acrylic",
     "marks": 10,
-    "accepts": [
-     "Battery holder – Polypropylene or Nylon",
-     "3D printed part – PLA",
-     "Gears ‐ Nylon"
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Vehicle chassis – Acrylic",
+      "Battery holder – Polypropylene or Nylon",
+      "3D printed part – PLA",
+      "Gears ‐ Nylon"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Two parts @ 5 marks'.",
@@ -18646,14 +18946,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Cutting fluids are used when machining metals to improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.",
     "marks": 15,
-    "accepts": [
-     "Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts a piece. It provides clearance between the cutting tool face and the workpiece",
-     "This is the distance the cutting tool is moved into the workpiece when cutting",
-     "Swarf is the waste material produced when the chip is cut from a workpiece"
-    ]
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Cutting fluids are used when machining metals to improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.",
+      "Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts a piece. It provides clearance between the cutting tool face and the workpiece",
+      "This is the distance the cutting tool is moved into the workpiece when cutting",
+      "Swarf is the waste material produced when the chip is cut from a workpiece"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
@@ -18675,13 +18980,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Knurling",
     "marks": 6,
-    "accepts": [
-     "Drilling",
-     "CAD software enables developers to work more quickly, cut production costs and decrease errors."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Knurling",
+      "Drilling",
+      "CAD software enables developers to work more quickly, cut production costs and decrease errors."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two @ 3 marks (6)'."
@@ -18730,13 +19040,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Wear goggles.",
     "marks": 8,
-    "accepts": [
-     "Protective clothing i.e. gloves",
-     "High precision and capable of producing highly complex parts."
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Wear goggles.",
+      "Protective clothing i.e. gloves",
+      "High precision and capable of producing highly complex parts."
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two @ 4 mark'."
@@ -18809,12 +19124,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Smart phones",
     "marks": 6,
-    "accepts": [
-     "Computers"
-    ]
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Smart phones",
+      "Computers"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints 'Any two @ 3 marks (6)'."

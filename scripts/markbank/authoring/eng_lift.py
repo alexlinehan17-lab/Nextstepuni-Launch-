@@ -88,16 +88,25 @@ def _lines(year, level, doc, page, rect):
     return [(y, sorted(ws, key=lambda w: w[0])) for y, ws in rows]
 
 
-def lift(year, level, doc, page, rect, *, bullet=True):
-    """The text inside rect on page (1-based) of the paper or scheme."""
-    rows = _lines(year, level, doc, page, rect)
+def lift(year, level, doc, page, rect, *, bullet=True, more=()):
+    """The text inside rect on page (1-based) of the paper or scheme.
+
+    `more` adds further rectangles on the same page, read in turn: a printed
+    sentence whose own column is interrupted by a picture's caption ("any one
+    of the following:" with "electronic component" set beside it, over the
+    captions of the three pictures it means).
+    """
+    rows = []
+    for r in (rect, *more):
+        rows += _lines(year, level, doc, page, r)
     text = ' '.join(' '.join(w[4] for w in ws) for _, ws in rows)
     text = unligature(' '.join(text.replace('\xa0', ' ').split()))
     if bullet:
         text = BULLET.sub('', text).strip()
     if not text:
         raise ValueError(f'{year} {level} {doc} p{page} {rect}: the box lifts nothing')
-    return Lift(text, (year, level, doc, page, tuple(rect)))
+    return Lift(text, (year, level, doc, page, tuple(rect))
+                if not more else (year, level, doc, page, tuple(rect), tuple(map(tuple, more))))
 
 
 START = '<!-- markbank:eng-lifts -->'
@@ -137,9 +146,11 @@ def record(year, level):
     lifts = _lifts_in(getattr(mod, 'CARDS', []), []) if mod else []
     lines, seen = [], set()
     for lf in lifts:
-        y, l, doc, page, rect = lf.source
+        y, l, doc, page, rect = lf.source[:5]
         if doc != 'scheme' or (y, l) != (year, level) or str(lf) in seen:
             continue
+        if len(lf.source) > 5:
+            raise SystemExit(f'{lf[:40]!r}: a scheme row is one rectangle')
         seen.add(str(lf))
         lines.append(f'p{page} [{", ".join(f"{v:g}" for v in rect)}] {lf}')
     md = os.path.join(BASE, 'schemes', f'{year}-{level}.md')

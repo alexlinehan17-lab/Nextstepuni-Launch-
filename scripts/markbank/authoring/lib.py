@@ -415,7 +415,7 @@ class Author:
              row_kind='point', notation=None, spread=False, context=None,
              omit=(), source='md', card_id=None, from_run=None, from_runs=None,
              tick=None, first_sentence=False, ladder=None, lifted=None,
-             special=None):
+             special=None, question_lift=None, group=None):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         clean = self.subject in QUESTION_CLEANING
@@ -575,6 +575,21 @@ class Author:
             if without:
                 question, furniture_removed = without, True
 
+        # The paper's own words for this part, lifted off the page by
+        # rectangle (eng_lift.lift on the PAPER), where the reader's block is
+        # wrong -- a caption swept into the middle of the sentence, which no
+        # trailing-furniture strip reaches. Replaces the reader's text whole;
+        # nothing is joined on, because the rectangle already says what the
+        # part prints.
+        if question_lift is not None:
+            src = getattr(question_lift, 'source', None)
+            if not clean or not src or src[2] != 'paper':
+                raise Refused(f'{ref}: question_lift takes a rectangle lifted from '
+                              f'the paper (eng_lift.lift), for a cleaning subject')
+            question, flagged_override = str(question_lift), True
+        else:
+            flagged_override = False
+
         if clean and not question:
             raise Refused(f'{ref}: the paper has no text for this part')
 
@@ -605,6 +620,8 @@ class Author:
         flagged = self.paper.suspect(q, letter, roman)
         if flagged and (furniture_removed or joined_kids) \
                 and PAPER_TERMINAL.search(question.strip()):
+            flagged = False
+        if flagged_override:
             flagged = False
         if not first_sentence and flagged and not checked:
             raise Refused(
@@ -702,13 +719,13 @@ class Author:
                 raise Refused(f'{ref}: lifted= is for reviewed cleaning-subject parts')
             candidates, picks = [], []
             for entry in lifted:
-                group = list(entry) if isinstance(entry, (list, tuple)) else [entry]
-                for item in group:
+                grp = list(entry) if isinstance(entry, (list, tuple)) else [entry]
+                for item in grp:
                     if not hasattr(item, 'source'):
                         raise Refused(f'{ref}: lifted= takes rectangles lifted by '
                                       f'eng_lift.lift, not {type(item).__name__} {item!r:.40}')
-                picks.append(list(range(len(candidates), len(candidates) + len(group))))
-                candidates.extend(str(item) for item in group)
+                picks.append(list(range(len(candidates), len(candidates) + len(grp))))
+                candidates.extend(str(item) for item in grp)
             if use is None:
                 use = [p if len(p) > 1 else p[0] for p in picks]
         elif tick is None:
@@ -807,11 +824,25 @@ class Author:
                 spare = [c for c in spare if c in fine]
 
         rows = []
-        for i, (group, m) in enumerate(zip(groups, marks), start=1):
+        for i, (opts, m) in enumerate(zip(groups, marks), start=1):
             row = {'id': f'r-{i}',
-                   'kind': 'alt' if len(group) > 1 and not spread else row_kind,
-                   'verbatim': group[0], 'marks': m}
-            accepts = group[1:] + spare
+                   'kind': 'alt' if len(opts) > 1 and not spread else row_kind,
+                   'verbatim': opts[0], 'marks': m}
+            accepts = opts[1:] + spare
+            # "Any two @ 5": the student claims up to two of the scheme's
+            # options at five each. As an alt row the list was ONE claim worth
+            # the whole ten, so a student who knew one answer scored both
+            # marks. A cleaning subject's choice rule becomes the anyN group
+            # every other deck uses (claimMax, perOption, the options), where
+            # it names two or more; "any one" stays the alt row it already is.
+            if clean and group and group[0] > 1 and row_kind == 'anyN' \
+                    and len(rows) == 0 and len(opts) >= group[0]:
+                n_claim, per = group
+                row = {'id': f'r-{i}', 'kind': 'anyN', 'verbatim': opts[0],
+                       'marks': n_claim * per,
+                       'group': {'claimMax': n_claim, 'perOption': per,
+                                 'options': list(opts)}}
+                accepts = []
             if accepts:
                 row['accepts'] = accepts
             if i == 1 and context:

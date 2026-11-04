@@ -984,7 +984,7 @@ def main():
                            labels=labels,
                            use=[[i for i, _ in keep[:MAX_ROWS]]],
                            marks=[n * per], tariff='fixed',
-                           row_kind='anyN', total=n * per,
+                           row_kind='anyN', total=n * per, group=(n, per),
                            question_figure=question_fig, figure=answer_fig,
                            stem=keeps_stem(stem, figure),
                            notes=f'The scheme prints {notation_here!r}.')

@@ -195,7 +195,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the metals used to produce any two of the alloys listed below: (i) Solder, (ii) Bronze, (iii) Brass.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Solder: Lead & Tin", marks: 8, accepts: ["Bronze: Copper & Tin","Brass: Copper & Zinc"] },
+    { id: "r-1", kind: "anyN", verbatim: "Solder: Lead & Tin", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Solder: Lead & Tin","Bronze: Copper & Tin","Brass: Copper & Zinc"]} },
     ],
   } as SecCard,
   {
@@ -208,7 +208,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following processes: (i) Quenching, (ii) Case hardening, (iii) Annealing, (iv) Work hardening.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Quenching is when a hot metal is cooled very quickly i.e. when a cherry red metal is moved about when dipped into cold water.", marks: 14, accepts: ["Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.","Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰C and allowed to cool down as slow as possible. This can be achieved by leaving the metal in the furnace while the furnace is cooling down.","Work hardening is when a metal becomes hard and brittle because of been hammered or shaped when cold. Some metals are more prone to work hardening, than others. Copper and aluminum are typical examples and need to be continually annealed if subjected to a lot of cold shaping or forming."] },
+    { id: "r-1", kind: "anyN", verbatim: "Quenching is when a hot metal is cooled very quickly i.e. when a cherry red metal is moved about when dipped into cold water.", marks: 14, group: {"claimMax":2,"perOption":7,"options":["Quenching is when a hot metal is cooled very quickly i.e. when a cherry red metal is moved about when dipped into cold water.","Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.","Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰C and allowed to cool down as slow as possible. This can be achieved by leaving the metal in the furnace while the furnace is cooling down.","Work hardening is when a metal becomes hard and brittle because of been hammered or shaped when cold. Some metals are more prone to work hardening, than others. Copper and aluminum are typical examples and need to be continually annealed if subjected to a lot of cold shaping or forming."]} },
     ],
   } as SecCard,
   {
@@ -250,7 +250,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed during the heat treatment of metals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Wear heat resistant gloves when preforming heat treatment of metals.", marks: 8, accepts: ["Do not leave hot metals lying around in case people accidently pick up the piece."] },
+    { id: "r-1", kind: "anyN", verbatim: "Wear heat resistant gloves when preforming heat treatment of metals.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Wear heat resistant gloves when preforming heat treatment of metals.","Do not leave hot metals lying around in case people accidently pick up the piece."]} },
     ],
   } as SecCard,
   {
@@ -293,7 +293,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following terms: (i) Malleability, OR State two advantages of robotics in manufacturing. (ii) Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment. (iii) Ductility, (iv) Tensile strength.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The ability of a material to be hammered and/or formed without breaking.", marks: 12, accepts: ["Robotics offer precision placement of components in manufacturing.","Robotics offer precision when performing manufacturing processes such as welding & paint spraying.","The ability of a material to withstand being squashed or pushed together.","Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.","The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).","A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","The ability of a material to withstand being pulled apart or stretched."] },
+    { id: "r-1", kind: "anyN", verbatim: "The ability of a material to be hammered and/or formed without breaking.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["The ability of a material to be hammered and/or formed without breaking.","Robotics offer precision placement of components in manufacturing.","Robotics offer precision when performing manufacturing processes such as welding & paint spraying.","The ability of a material to withstand being squashed or pushed together.","Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.","The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).","A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","The ability of a material to withstand being pulled apart or stretched."]} },
     ],
   } as SecCard,
   {
@@ -319,7 +319,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe two steps necessary to ensure a successful soft soldered joint.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The surfaces to be joined must be perfectly clean and coated with flux.", marks: 6, accepts: ["A good flow of heat to the joint is essential. Before applying the solder, the joint must be brought to the temperature at which the solder melts."] },
+    { id: "r-1", kind: "anyN", verbatim: "The surfaces to be joined must be perfectly clean and coated with flux.", marks: 6, group: {"claimMax":2,"perOption":3,"options":["The surfaces to be joined must be perfectly clean and coated with flux.","A good flow of heat to the joint is essential. Before applying the solder, the joint must be brought to the temperature at which the solder melts."]} },
     ],
   } as SecCard,
   {
@@ -444,7 +444,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when using an electrical soldering iron.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Avoid leaving a hot soldering iron on a desk after use.", marks: 8, accepts: ["Avoid touching your hand or skin with the hot tip of the soldering iron when in use."] },
+    { id: "r-1", kind: "anyN", verbatim: "Avoid leaving a hot soldering iron on a desk after use.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Avoid leaving a hot soldering iron on a desk after use.","Avoid touching your hand or skin with the hot tip of the soldering iron when in use."]} },
     ],
   } as SecCard,
   {
@@ -509,7 +509,7 @@ export const CARDS: SecCard[] = [
     questionText: "Select any two of the household items shown below and name a plastic material which is suitable to produce each: (i) Basin (ii) Toothbrush (iii) Shampoo bottle.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Basin: Polypropylene (PP)", marks: 10, accepts: ["Toothbrush: Nylon","Shampoo bottle: Polyvinylchloride (PVC)"] },
+    { id: "r-1", kind: "anyN", verbatim: "Basin: Polypropylene (PP)", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Basin: Polypropylene (PP)","Toothbrush: Nylon","Shampoo bottle: Polyvinylchloride (PVC)"]} },
     ],
     questionFigure: {
           "candId": "engineering-2021-OL-paper-q5ci-art",
@@ -531,7 +531,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when using an adhesive to bond acrylic.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Always work in a well-ventilated area.", marks: 8, accepts: ["Wear protective goggles / gloves to protect from adhesive sticking to the skin."] },
+    { id: "r-1", kind: "anyN", verbatim: "Always work in a well-ventilated area.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Always work in a well-ventilated area.","Wear protective goggles / gloves to protect from adhesive sticking to the skin."]} },
     ],
   } as SecCard,
   {
@@ -833,7 +833,7 @@ export const CARDS: SecCard[] = [
     questionText: "In relation to metal production, explain any three of the following furnace terms: Tapping hole, Charge, Refractory lining, Slag.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Furnace tapping is the process of removing slag and hot metal from the furnace. The tapping hole, usually located slightly above the floor of the furnace, is used for tapping (removing) slag and hot metal from the furnace.", marks: 15, accepts: ["The charge is the material melted in the furnace. It can be made up of material such as ore, scrap iron/steel, coke, limestone, etc.","The refractory lining of a furnace is a protective layer inside the furnace that acts as a form of insulation to withstand high temperatures.","Slag is a material produced during metal production. It is a glass-like by- product, left over after the metal has been separated from its ore. Slag floats on top of the metal and generally removes waste in metal smelting but can also help control the temperature of the molten metal."] },
+    { id: "r-1", kind: "anyN", verbatim: "Furnace tapping is the process of removing slag and hot metal from the furnace. The tapping hole, usually located slightly above the floor of the furnace, is used for tapping (removing) slag and hot metal from the furnace.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["Furnace tapping is the process of removing slag and hot metal from the furnace. The tapping hole, usually located slightly above the floor of the furnace, is used for tapping (removing) slag and hot metal from the furnace.","The charge is the material melted in the furnace. It can be made up of material such as ore, scrap iron/steel, coke, limestone, etc.","The refractory lining of a furnace is a protective layer inside the furnace that acts as a form of insulation to withstand high temperatures.","Slag is a material produced during metal production. It is a glass-like by- product, left over after the metal has been separated from its ore. Slag floats on top of the metal and generally removes waste in metal smelting but can also help control the temperature of the molten metal."]} },
     ],
   } as SecCard,
   {
@@ -885,7 +885,7 @@ export const CARDS: SecCard[] = [
     questionText: "The head of a steel axe is annealed, normalised, and tempered during manufacture. Describe any two of the following processes: (i) Annealing; (ii) Normalising; (iii) Tempering.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.", marks: 14, accepts: ["Normalising is a heat treatment process that is used to make a metal more ductile and tough after processes such as thermal or mechanical hardening.","Normalising steel involves heating it to a temperature typically in the range of 830°-950°and then cooling in air. The heating and slow cooling changes the microstructure of the steel, altering its mechanical properties.","Tempering removes some of the hardness while increasing the toughness of a metal. It is achieved by heating the metal to a specific temperature which is determined by the colour of the metal. On heating, colours appear and when the correct colour is achieved i.e., light straw appears at approx. 250° - 350°, it is quenched in cold water."] },
+    { id: "r-1", kind: "anyN", verbatim: "Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.", marks: 14, group: {"claimMax":2,"perOption":7,"options":["Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.","Normalising is a heat treatment process that is used to make a metal more ductile and tough after processes such as thermal or mechanical hardening.","Normalising steel involves heating it to a temperature typically in the range of 830°-950°and then cooling in air. The heating and slow cooling changes the microstructure of the steel, altering its mechanical properties.","Tempering removes some of the hardness while increasing the toughness of a metal. It is achieved by heating the metal to a specific temperature which is determined by the colour of the metal. On heating, colours appear and when the correct colour is achieved i.e., light straw appears at approx. 250° - 350°, it is quenched in cold water."]} },
     ],
   } as SecCard,
   {
@@ -898,7 +898,7 @@ export const CARDS: SecCard[] = [
     questionText: "In relation to the heat treatment of steel, explain any two of the following: (i) Quenching, (ii) Carbon content, (iii) Hardening temperature, (iv) Case hardening.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is moved about when dipped into cold water.", marks: 14, accepts: ["If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.","Low carbon steel contains less than 0.03% of carbon.","Medium carbon steel contains between 0.03% and 0.06% carbon.","High carbon steel contains more than 0.06% carbon.","To ensure high carbon steel is hardened correctly the steel must be raised to the correct temperature before cooling. This critical temperature is known as it’s hardening temperature.","Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core."] },
+    { id: "r-1", kind: "anyN", verbatim: "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is moved about when dipped into cold water.", marks: 14, group: {"claimMax":2,"perOption":7,"options":["Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is moved about when dipped into cold water.","If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.","Low carbon steel contains less than 0.03% of carbon.","Medium carbon steel contains between 0.03% and 0.06% carbon.","High carbon steel contains more than 0.06% carbon.","To ensure high carbon steel is hardened correctly the steel must be raised to the correct temperature before cooling. This critical temperature is known as it’s hardening temperature.","Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core."]} },
     ],
   } as SecCard,
   {
@@ -925,7 +925,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following metal properties: OR Give one example of the use of robotics in any two of the following: (i) Brittleness, OR medicine; (ii) gardening; (iii) manufacturing. (ii) Melting point, (iii) Toughness, (iv) Elasticity.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.", marks: 12, accepts: ["Performing operations from a distance Example","Melting point is the temperature at which a metal changes its state from solid to liquid.","Gardening: Robotic lawnmowers","This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.","Manufacturing: Robotic welding","The property of elasticity is the ability of an object or material to return to its original shape after being stretched."] },
+    { id: "r-1", kind: "anyN", verbatim: "A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.","Performing operations from a distance Example","Melting point is the temperature at which a metal changes its state from solid to liquid.","Gardening: Robotic lawnmowers","This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.","Manufacturing: Robotic welding","The property of elasticity is the ability of an object or material to return to its original shape after being stretched."]} },
     ],
   } as SecCard,
   {
@@ -966,7 +966,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the purpose of any three of the following in manual metal arc welding: (i) Earth clamp, (ii) Welding helmet, (iii) Electrode holder, (iv) Welding curtain.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.", marks: 12, accepts: ["The welding helmet protects your eyes and skin from severe sparks, ultraviolet and infrared rays emitted by the arc.","The electrode holder has and insulated handle and is used to hold the electrode when welding.","The welding curtain is a flame-retardant shield used to deflect welding and grinding sparks. They also absorb harmful UV light to protect bystanders within the vicinity of the welder."] },
+    { id: "r-1", kind: "anyN", verbatim: "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.", marks: 12, group: {"claimMax":3,"perOption":4,"options":["The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.","The welding helmet protects your eyes and skin from severe sparks, ultraviolet and infrared rays emitted by the arc.","The electrode holder has and insulated handle and is used to hold the electrode when welding.","The welding curtain is a flame-retardant shield used to deflect welding and grinding sparks. They also absorb harmful UV light to protect bystanders within the vicinity of the welder."]} },
     ],
   } as SecCard,
   {
@@ -1021,7 +1021,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when gas welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Check the hoses for any damage before you start welding.", marks: 8, accepts: ["Make sure the gas cylinders are secure and cannot fall over."] },
+    { id: "r-1", kind: "anyN", verbatim: "Check the hoses for any damage before you start welding.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Check the hoses for any damage before you start welding.","Make sure the gas cylinders are secure and cannot fall over."]} },
     ],
   } as SecCard,
   {
@@ -1078,7 +1078,7 @@ export const CARDS: SecCard[] = [
     questionText: "In relation to plastic technology, describe any three of the following: (i) Thermosetting plastics; (ii) Thermoplastics; (iii) Fibreglass; (iv) Elastic memory.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Thermosetting plastic is a plastic which remains hard when heated.", marks: 12, accepts: ["Thermoplastic is a plastic which softens when heated.","Fibreglass is a composite, made of woven glass fibres, held together with a polyester resin. The combination of materials forms an extremely strong and durable composite.","Elastic memory describes the ability of a plastic to return to it’s original shape after being formed. The plastic remembers it’s original shape and will return to this shape if heated i.e. it is a smart material."] },
+    { id: "r-1", kind: "anyN", verbatim: "Thermosetting plastic is a plastic which remains hard when heated.", marks: 12, group: {"claimMax":3,"perOption":4,"options":["Thermosetting plastic is a plastic which remains hard when heated.","Thermoplastic is a plastic which softens when heated.","Fibreglass is a composite, made of woven glass fibres, held together with a polyester resin. The combination of materials forms an extremely strong and durable composite.","Elastic memory describes the ability of a plastic to return to it’s original shape after being formed. The plastic remembers it’s original shape and will return to this shape if heated i.e. it is a smart material."]} },
     ],
   } as SecCard,
   {
@@ -1091,7 +1091,7 @@ export const CARDS: SecCard[] = [
     questionText: "Plastic is a common material found in cars. Select any two of the car parts labelled in the diagram and name a suitable plastic that could be used for their manufacture.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Number plate: Acrylic", marks: 10, accepts: ["Dashboard: Polypropylene (PP), Styrene, Polycarbonate, ABS.","Seat belts: Polyvinylchloride (PVC)","Door handles: Acrylonitrile Butadiene Styrene (ABS)","Headlights: Acrylic / Polycarbonate"] },
+    { id: "r-1", kind: "anyN", verbatim: "Number plate: Acrylic", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Number plate: Acrylic","Dashboard: Polypropylene (PP), Styrene, Polycarbonate, ABS.","Seat belts: Polyvinylchloride (PVC)","Door handles: Acrylonitrile Butadiene Styrene (ABS)","Headlights: Acrylic / Polycarbonate"]} },
     ],
     questionFigure: {
           "candId": "engineering-2022-OL-paper-q5c-art",
@@ -1113,7 +1113,7 @@ export const CARDS: SecCard[] = [
     questionText: "List two safety precautions to be observed when working with hot plastics.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Do not leave pieces of hot plastic unattended on the bench / work area.", marks: 8, accepts: ["Wear protective gloves if handling hot sheets of plastic."] },
+    { id: "r-1", kind: "anyN", verbatim: "Do not leave pieces of hot plastic unattended on the bench / work area.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Do not leave pieces of hot plastic unattended on the bench / work area.","Wear protective gloves if handling hot sheets of plastic."]} },
     ],
   } as SecCard,
   {
@@ -1126,7 +1126,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any three of the following in relation to the machining of metals: (i) Cutting fluid, (ii) Spindle speed, (iii) Depth of cut, (iv) Feed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Cutting fluid is used when machining metals to, improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.", marks: 18, accepts: ["This is the speed at which the chuck rotates in RPM. This speed can be adjusted using the gears.","This is the distance the cutting tool is moved into the workpiece when cutting.","Feed is the amount per revolution at which the drill moves into the material being drilled."] },
+    { id: "r-1", kind: "anyN", verbatim: "Cutting fluid is used when machining metals to, improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.", marks: 18, group: {"claimMax":3,"perOption":6,"options":["Cutting fluid is used when machining metals to, improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.","This is the speed at which the chuck rotates in RPM. This speed can be adjusted using the gears.","This is the distance the cutting tool is moved into the workpiece when cutting.","Feed is the amount per revolution at which the drill moves into the material being drilled."]} },
     ],
   } as SecCard,
   {
@@ -1380,7 +1380,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any three of the following furnace-related terms: (i) Water-cooled oxygen lance, (ii) Pig iron, (iii) Carbon electrodes, (iv) Iron ore.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The water-cooled oxygen lance is used to blow oxygen over the hot metal in the Basic Oxygen Furnace during the steel making process. The oxygen ignites the carbon dissolved in the steel, and converts it into carbon dioxide and carbon monoxide, which in turn raises the temperature of the furnace to 1700°C. This helps in melting the steel and reducing the carbon content and impurities in the steel. The lance is kept cool by water passing through the walls of the lance.", marks: 15, accepts: ["Pig iron is a produced when iron ore is smelted in the ‘Blast Furnace’. Pig iron has a high carbon content, making it very brittle.","Carbon electrodes are used in the ‘Electric Arc Furnace’ to produce heat.","The heat is generated by means of an electric arc produced between the charge and the electrodes.","Iron ore is mined and is used as the raw material to make pig iron."] },
+    { id: "r-1", kind: "anyN", verbatim: "The water-cooled oxygen lance is used to blow oxygen over the hot metal in the Basic Oxygen Furnace during the steel making process. The oxygen ignites the carbon dissolved in the steel, and converts it into carbon dioxide and carbon monoxide, which in turn raises the temperature of the furnace to 1700°C. This helps in melting the steel and reducing the carbon content and impurities in the steel. The lance is kept cool by water passing through the walls of the lance.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["The water-cooled oxygen lance is used to blow oxygen over the hot metal in the Basic Oxygen Furnace during the steel making process. The oxygen ignites the carbon dissolved in the steel, and converts it into carbon dioxide and carbon monoxide, which in turn raises the temperature of the furnace to 1700°C. This helps in melting the steel and reducing the carbon content and impurities in the steel. The lance is kept cool by water passing through the walls of the lance.","Pig iron is a produced when iron ore is smelted in the ‘Blast Furnace’. Pig iron has a high carbon content, making it very brittle.","Carbon electrodes are used in the ‘Electric Arc Furnace’ to produce heat.","The heat is generated by means of an electric arc produced between the charge and the electrodes.","Iron ore is mined and is used as the raw material to make pig iron."]} },
     ],
   } as SecCard,
   {
@@ -1406,7 +1406,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one reason for the selection of each material.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Reason: Increases the grip for the driver when holding the steering wheel.", marks: 6, accepts: ["Reason: Can be easily moulded into the shape needed.","Reason: Light but strong"] },
+    { id: "r-1", kind: "anyN", verbatim: "Reason: Increases the grip for the driver when holding the steering wheel.", marks: 6, group: {"claimMax":3,"perOption":2,"options":["Reason: Increases the grip for the driver when holding the steering wheel.","Reason: Can be easily moulded into the shape needed.","Reason: Light but strong"]} },
     ],
   } as SecCard,
   {
@@ -1445,7 +1445,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following heat treatment procedures: (i) Annealing, (ii) Case hardening, (iii) Quenching.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Annealing is a heat treatment procedure used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.", marks: 14, accepts: ["Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.","Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about."] },
+    { id: "r-1", kind: "anyN", verbatim: "Annealing is a heat treatment procedure used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.", marks: 14, group: {"claimMax":2,"perOption":7,"options":["Annealing is a heat treatment procedure used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.","Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.","Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about."]} },
     ],
   } as SecCard,
   {
@@ -1484,7 +1484,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify two safety precautions to be observed when working with hot metals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Wear heat resistant gloves when preforming heat treatment of metals.", marks: 10, accepts: ["Do not leave hot metals lying around in case people accidently pick up the piece."] },
+    { id: "r-1", kind: "anyN", verbatim: "Wear heat resistant gloves when preforming heat treatment of metals.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Wear heat resistant gloves when preforming heat treatment of metals.","Do not leave hot metals lying around in case people accidently pick up the piece."]} },
     ],
   } as SecCard,
   {
@@ -1497,7 +1497,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following metal properties: Toughness, OR Describe two areas where robotic technology is used in health care.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.", marks: 6, accepts: ["Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.","Surgical robots are beginning to be used for general surgeries. Robotic assisted surgical systems use robotic arms with tiny surgical instruments that are controlled by surgeons, potentially allowing for expert surgeons to operate remotely from anywhere in the world."] },
+    { id: "r-1", kind: "anyN", verbatim: "This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.", marks: 6, group: {"claimMax":2,"perOption":3,"options":["This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.","Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.","Surgical robots are beginning to be used for general surgeries. Robotic assisted surgical systems use robotic arms with tiny surgical instruments that are controlled by surgeons, potentially allowing for expert surgeons to operate remotely from anywhere in the world."]} },
     ],
   } as SecCard,
   {
@@ -1510,7 +1510,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following metal properties: Ductility, OR State two ways in which exoskeleton suits can help the recovery process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.", marks: 6, accepts: ["Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves."] },
+    { id: "r-1", kind: "anyN", verbatim: "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.", marks: 6, group: {"claimMax":2,"perOption":3,"options":["A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves."]} },
     ],
   } as SecCard,
   {
@@ -1566,7 +1566,7 @@ export const CARDS: SecCard[] = [
     questionText: "State the function of any three of the following in manual metal arc welding: (i) Welding plant, (ii) Chipping hammer, (iii) Leather apron, (iv) Electrode holder.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A welding plant is a device used for fusing / welding metals together. The welding plant creates an electrical arc between the welding rod and the metals being joined. The arc generates enough heat to melt the welding rod and metals, fusing the joint between the two pieces of metal. The welding plant can produce temperatures up to 3,600℃ needed to melt metals.", marks: 12, accepts: ["The chipping hammer is used to remove the slag which forms on top of the welded joint after arc welding.","Leather aprons are fireproof and help protect against heat and flames. The leather apron is worn during welding and helps protect the welder against sparks, spatter, slag, and some flames that are often encountered during welding work.","An electrode holder is a device that holds the electrode / welding rod during the welding process. The handle is insulated to protect the user from the current flowing to the electrode."] },
+    { id: "r-1", kind: "anyN", verbatim: "A welding plant is a device used for fusing / welding metals together. The welding plant creates an electrical arc between the welding rod and the metals being joined. The arc generates enough heat to melt the welding rod and metals, fusing the joint between the two pieces of metal. The welding plant can produce temperatures up to 3,600℃ needed to melt metals.", marks: 12, group: {"claimMax":3,"perOption":4,"options":["A welding plant is a device used for fusing / welding metals together. The welding plant creates an electrical arc between the welding rod and the metals being joined. The arc generates enough heat to melt the welding rod and metals, fusing the joint between the two pieces of metal. The welding plant can produce temperatures up to 3,600℃ needed to melt metals.","The chipping hammer is used to remove the slag which forms on top of the welded joint after arc welding.","Leather aprons are fireproof and help protect against heat and flames. The leather apron is worn during welding and helps protect the welder against sparks, spatter, slag, and some flames that are often encountered during welding work.","An electrode holder is a device that holds the electrode / welding rod during the welding process. The handle is insulated to protect the user from the current flowing to the electrode."]} },
     ],
   } as SecCard,
   {
@@ -1650,7 +1650,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when working with adhesives.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Wear suitable gloves to avoid the adhesives coming in contact with your skin.", marks: 8, accepts: ["Work in a well-ventilated area as adhesives can produce harmful fumes."] },
+    { id: "r-1", kind: "anyN", verbatim: "Wear suitable gloves to avoid the adhesives coming in contact with your skin.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Wear suitable gloves to avoid the adhesives coming in contact with your skin.","Work in a well-ventilated area as adhesives can produce harmful fumes."]} },
     ],
   } as SecCard,
   {
@@ -1707,7 +1707,7 @@ export const CARDS: SecCard[] = [
     questionText: "In relation to plastic technology, describe any three of the following: (i) Elastic memory; (ii) Thermosetting plastics; (iii) Plastic dip coating; (iv) Thermoplastic.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated.", marks: 12, accepts: ["Thermosetting plastic is a plastic which remains hard when heated.","Pre-heated items for coating are dipped into a tank of plastic powder which fuses and sticks to the product. The item is removed and allowed to cool causing the plastic to form a protective coating around the product.","Thermoplastic is a plastic which softens when heated. Thermoplastics can be recycled and used again."] },
+    { id: "r-1", kind: "anyN", verbatim: "This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated.", marks: 12, group: {"claimMax":3,"perOption":4,"options":["This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated.","Thermosetting plastic is a plastic which remains hard when heated.","Pre-heated items for coating are dipped into a tank of plastic powder which fuses and sticks to the product. The item is removed and allowed to cool causing the plastic to form a protective coating around the product.","Thermoplastic is a plastic which softens when heated. Thermoplastics can be recycled and used again."]} },
     ],
   } as SecCard,
   {
@@ -1720,7 +1720,7 @@ export const CARDS: SecCard[] = [
     questionText: "Select any two of the products shown below and name a plastic material which is suitable for the manufacture of each product: (i) Toy car, (ii) Bevel gears, (iii) Electrical socket, (iv) Food container.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Toy racing car: Polystyrene (HIPS) / PVC / ABS", marks: 10, accepts: ["Bevel gears: Nylon","Urea-Formaldehyde (UF)","Food container: Polystyrene"] },
+    { id: "r-1", kind: "anyN", verbatim: "Toy racing car: Polystyrene (HIPS) / PVC / ABS", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Toy racing car: Polystyrene (HIPS) / PVC / ABS","Bevel gears: Nylon","Urea-Formaldehyde (UF)","Food container: Polystyrene"]} },
     ],
     questionFigure: {
           "candId": "engineering-2023-OL-paper-q5ci-art",
@@ -1742,7 +1742,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when working with hot plastics.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Do not leave pieces of hot plastic unattended on the bench / work area.", marks: 8, accepts: ["Wear protective gloves if handling hot sheets of plastic."] },
+    { id: "r-1", kind: "anyN", verbatim: "Do not leave pieces of hot plastic unattended on the bench / work area.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Do not leave pieces of hot plastic unattended on the bench / work area.","Wear protective gloves if handling hot sheets of plastic."]} },
     ],
   } as SecCard,
   {
@@ -1777,7 +1777,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any three of the following in relation to machining: (i) Clearance angle, (ii) Spindle speed, (iii) Rake angle, (iv) Feed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts the material. It provides clearance between the cutting tool face and the workpiece. This ensures a reduction in friction and heat build-up, while providing longer tool life and better surface finish.", marks: 15, accepts: ["This is the speed at which the chuck rotates in RPM. This speed can be adjusted by selecting different gear train settings within the gear box.","The rake angle is ground on a cutting tool to provide a sharp edge for cutting. The rake angle allows the swarf to pass over the cutting tool and away from the cutting area.","Feed is the amount per revolution at which the cutting tool moves into the material being machined."] },
+    { id: "r-1", kind: "anyN", verbatim: "Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts the material. It provides clearance between the cutting tool face and the workpiece. This ensures a reduction in friction and heat build-up, while providing longer tool life and better surface finish.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts the material. It provides clearance between the cutting tool face and the workpiece. This ensures a reduction in friction and heat build-up, while providing longer tool life and better surface finish.","This is the speed at which the chuck rotates in RPM. This speed can be adjusted by selecting different gear train settings within the gear box.","The rake angle is ground on a cutting tool to provide a sharp edge for cutting. The rake angle allows the swarf to pass over the cutting tool and away from the cutting area.","Feed is the amount per revolution at which the cutting tool moves into the material being machined."]} },
     ],
   } as SecCard,
   {
@@ -1790,7 +1790,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name two lathe processes used in the manufacture of the thumbscrew. OR What does CNC stand for?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Knurling / Parting off.", marks: 6, accepts: ["CNC - Computer Numerical Control."] },
+    { id: "r-1", kind: "anyN", verbatim: "Knurling / Parting off.", marks: 6, group: {"claimMax":2,"perOption":3,"options":["Knurling / Parting off.","CNC - Computer Numerical Control."]} },
     ],
   } as SecCard,
   {
@@ -1816,7 +1816,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name two items of personal protective equipment (PPE) that should be worn when operating a lathe. OR List two advantages of using CNC machines in manufacturing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Safety glasses or shield.", marks: 8, accepts: ["A lab coat / overall to ensure no lose clothing can get caught in the spinning chuck.","CNC machines can manufacture complicated products.","CNC machines support the automation of mass production."] },
+    { id: "r-1", kind: "anyN", verbatim: "Safety glasses or shield.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Safety glasses or shield.","A lab coat / overall to ensure no lose clothing can get caught in the spinning chuck.","CNC machines can manufacture complicated products.","CNC machines support the automation of mass production."]} },
     ],
   } as SecCard,
   {
@@ -1829,7 +1829,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following terms in relation to limits and fits: (i) Clearance fit, (ii) Upper limit, (iii) Transition fit.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The shaft is always smaller than the hole.", marks: 12, accepts: ["The largest dimension a piece can be manufactured to.","The shaft can be larger or smaller than the hole."] },
+    { id: "r-1", kind: "anyN", verbatim: "The shaft is always smaller than the hole.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["The shaft is always smaller than the hole.","The largest dimension a piece can be manufactured to.","The shaft can be larger or smaller than the hole."]} },
     ],
   } as SecCard,
   {
@@ -2047,7 +2047,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the metals produced from each of the furnaces listed below: (i) Blast furnace, (ii) Cupola furnace, (iii) Electric arc furnace.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Blast furnace: Pig iron.", marks: 15, accepts: ["Cupola furnace: Cast iron","Electric arc furnace: Steel"] },
+    { id: "r-1", kind: "anyN", verbatim: "Blast furnace: Pig iron.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["Blast furnace: Pig iron.","Cupola furnace: Cast iron","Electric arc furnace: Steel"]} },
     ],
   } as SecCard,
   {
@@ -2139,7 +2139,7 @@ export const CARDS: SecCard[] = [
     questionText: "In relation to the heat treatment of steel, explain any two of the following: (i) Normalising, (ii) Quenching, (iii) Carbon content.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Normalising steel will reduce its hardness and improve its ductility.", marks: 14, accepts: ["Steel is heated to a cherry red colour, approx. 900°C and allowed to cool down at room temperature (faster than annealing).","Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about.","If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.","Low carbon steel contains less than 0.03% of carbon.","Medium carbon steel contains between 0.03% and 0.06% carbon.","High carbon steel contains more than 0.06% carbon."] },
+    { id: "r-1", kind: "anyN", verbatim: "Normalising steel will reduce its hardness and improve its ductility.", marks: 14, group: {"claimMax":2,"perOption":7,"options":["Normalising steel will reduce its hardness and improve its ductility.","Steel is heated to a cherry red colour, approx. 900°C and allowed to cool down at room temperature (faster than annealing).","Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about.","If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.","Low carbon steel contains less than 0.03% of carbon.","Medium carbon steel contains between 0.03% and 0.06% carbon.","High carbon steel contains more than 0.06% carbon."]} },
     ],
   } as SecCard,
   {
@@ -2152,7 +2152,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed during the heat treatment of metals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Wear heat resistant gloves when preforming heat treatment of metals.", marks: 10, accepts: ["Wear a face shield to protect from hot splashes."] },
+    { id: "r-1", kind: "anyN", verbatim: "Wear heat resistant gloves when preforming heat treatment of metals.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Wear heat resistant gloves when preforming heat treatment of metals.","Wear a face shield to protect from hot splashes."]} },
     ],
   } as SecCard,
   {
@@ -2165,7 +2165,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the function of valve A and the function of valve B.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Valve A (blue) is used to turn on and off the flow of oxygen.", marks: 6, accepts: ["Valve B (red) is used to turn on and off the flow of acetylene."] },
+    { id: "r-1", kind: "anyN", verbatim: "Valve A (blue) is used to turn on and off the flow of oxygen.", marks: 6, group: {"claimMax":2,"perOption":3,"options":["Valve A (blue) is used to turn on and off the flow of oxygen.","Valve B (red) is used to turn on and off the flow of acetylene."]} },
     ],
   } as SecCard,
   {
@@ -2178,7 +2178,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name two flame types that can be produced in oxy-acetylene welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Oxidising flame", marks: 6, accepts: ["Neutral flame","Carburising flame"] },
+    { id: "r-1", kind: "anyN", verbatim: "Oxidising flame", marks: 6, group: {"claimMax":2,"perOption":3,"options":["Oxidising flame","Neutral flame","Carburising flame"]} },
     ],
   } as SecCard,
   {
@@ -2191,7 +2191,7 @@ export const CARDS: SecCard[] = [
     questionText: "State the function of any three of the following in manual metal arc welding: (i) Earth clamp, (ii) Welding mask, (iii) Leather gloves, (iv) Welding magnet.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.", marks: 15, accepts: ["The welding mask protects your eyes and face from heat and sparks, as well as ultraviolet and infrared rays emitted by the arc.","Leather gloves are used to protect the user’s hands and arms from burns due to molten splatter when welding. They also protect the user from burns when handling hot metals.","Welding magnets are strong magnets that can be used to hold workpieces in place while the workpieces are being welded."] },
+    { id: "r-1", kind: "anyN", verbatim: "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.","The welding mask protects your eyes and face from heat and sparks, as well as ultraviolet and infrared rays emitted by the arc.","Leather gloves are used to protect the user’s hands and arms from burns due to molten splatter when welding. They also protect the user from burns when handling hot metals.","Welding magnets are strong magnets that can be used to hold workpieces in place while the workpieces are being welded."]} },
     ],
   } as SecCard,
   {
@@ -2265,7 +2265,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when soldering copper pipes and fittings.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Wear a suitable mask to protect from the fumes produced by the flux.", marks: 8, accepts: ["Allow all pipes and fittings to cool down before handling."] },
+    { id: "r-1", kind: "anyN", verbatim: "Wear a suitable mask to protect from the fumes produced by the flux.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Wear a suitable mask to protect from the fumes produced by the flux.","Allow all pipes and fittings to cool down before handling."]} },
     ],
   } as SecCard,
   {
@@ -2291,7 +2291,7 @@ export const CARDS: SecCard[] = [
     questionText: "Select any two of the plastic materials listed below and identify one suitable product which can be manufactured from each of the plastic materials selected.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Polyvinyl Chloride (PVC) - Water pipes", marks: 10, accepts: ["Nylon - Gears","Polystyrene (PS) - Polystyrene foam for packaging","Acrylonitrile Butadiene Styrene (ABS) - Wall sockets"] },
+    { id: "r-1", kind: "anyN", verbatim: "Polyvinyl Chloride (PVC) - Water pipes", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Polyvinyl Chloride (PVC) - Water pipes","Nylon - Gears","Polystyrene (PS) - Polystyrene foam for packaging","Acrylonitrile Butadiene Styrene (ABS) - Wall sockets"]} },
     ],
   } as SecCard,
   {
@@ -2304,7 +2304,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when using a strip heater.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Do not leave a piece of plastic unattended on the strip heater.", marks: 10, accepts: ["Remember to turn the strip heater off when finished using it."] },
+    { id: "r-1", kind: "anyN", verbatim: "Do not leave a piece of plastic unattended on the strip heater.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Do not leave a piece of plastic unattended on the strip heater.","Remember to turn the strip heater off when finished using it."]} },
     ],
   } as SecCard,
   {
@@ -2317,7 +2317,7 @@ export const CARDS: SecCard[] = [
     questionText: "In relation to plastic technology, describe any two of the following: (i) Plastic dip coating, (ii) Thermosetting plastics, (iii) 3D Printing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Air is forced through a tank containing powder causing the powder to act like a fluid. Pre-heated items for coating are dipped into the tank. The hot item melts the powder which sticks to its surface. It can then be heated again to provide a fully fused plastic surface.", marks: 10, accepts: ["Thermosetting plastic is a plastic once set, remains hard even when heated again.","3D printing is an additive manufacturing process that creates physical objects from a digital design. The process works by extruding thin layers of melted plastic on top of each other. The layers are allowed to fuse and solidify, creating a 3D object."] },
+    { id: "r-1", kind: "anyN", verbatim: "Air is forced through a tank containing powder causing the powder to act like a fluid. Pre-heated items for coating are dipped into the tank. The hot item melts the powder which sticks to its surface. It can then be heated again to provide a fully fused plastic surface.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Air is forced through a tank containing powder causing the powder to act like a fluid. Pre-heated items for coating are dipped into the tank. The hot item melts the powder which sticks to its surface. It can then be heated again to provide a fully fused plastic surface.","Thermosetting plastic is a plastic once set, remains hard even when heated again.","3D printing is an additive manufacturing process that creates physical objects from a digital design. The process works by extruding thin layers of melted plastic on top of each other. The layers are allowed to fuse and solidify, creating a 3D object."]} },
     ],
   } as SecCard,
   {
@@ -2352,7 +2352,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any three of the following in relation to machining: (i) Rake angle, engineering component (ii) Chuck key, (iii) Depth of cut, (iv) Pilot hole.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.", marks: 15, accepts: ["A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.","This is the distance the cutting tool is moved into the workpiece when cutting.","A pilot hole must be drilled before using a large drill.","This keeps the large drill central as it guides the drill through the piece when drilling."] },
+    { id: "r-1", kind: "anyN", verbatim: "The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.","A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.","This is the distance the cutting tool is moved into the workpiece when cutting.","A pilot hole must be drilled before using a large drill.","This keeps the large drill central as it guides the drill through the piece when drilling."]} },
     ],
   } as SecCard,
   {
@@ -2378,7 +2378,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when using a centre lathe. OR Identify one safety precaution to be observed when using a CNC laser cutter.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Wear safety goggles.", marks: 8, accepts: ["Do not remove swarf using hands.","Do not leave a CNC laser machine operating unattended."] },
+    { id: "r-1", kind: "anyN", verbatim: "Wear safety goggles.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Wear safety goggles.","Do not remove swarf using hands.","Do not leave a CNC laser machine operating unattended."]} },
     ],
   } as SecCard,
   {
@@ -2660,7 +2660,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one reason for the selection of each material named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Tracks: ‐", marks: 6, accepts: ["Reason: Light, flexible and shock absorption Digging bucket: ‐","Reason: Strong, durable and wear resistant."] },
+    { id: "r-1", kind: "anyN", verbatim: "Tracks: ‐", marks: 6, group: {"claimMax":3,"perOption":2,"options":["Tracks: ‐","Reason: Light, flexible and shock absorption Digging bucket: ‐","Reason: Strong, durable and wear resistant."]} },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q2ci-art",
@@ -2696,7 +2696,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two items of personal protective equipment (PPE) that should be worn when working with hot metals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "PPE 1 – Wear heat resistant gloves to protect the hands.", marks: 10, accepts: ["PPE 2 – Wear a face shield to protect the face from high temperatures."] },
+    { id: "r-1", kind: "anyN", verbatim: "PPE 1 – Wear heat resistant gloves to protect the hands.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["PPE 1 – Wear heat resistant gloves to protect the hands.","PPE 2 – Wear a face shield to protect the face from high temperatures."]} },
     ],
   } as SecCard,
   {
@@ -2709,7 +2709,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the function of any three of the following items used in manual metal arc welding: (i) Welding curtain, (ii) Chipping hammer, (iii) Electrode holder, (iv) Welding shield.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The welding curtain is a flame‐retardant shield used to deflect welding and grinding sparks. They also absorb harmful UV light to protect bystanders within the vicinity of the welder.", marks: 15, accepts: ["The chipping hammer is used to remove the slag which forms on top of the welded joint after arc welding.","An electrode holder is a device that holds the electrode / welding rod during the welding process. The handle is insulated which protects the user from current flowing to the electrode.","The welding mask protects your eyes and face from severe sparks, ultraviolet and infrared rays emitted by the arc when welding."] },
+    { id: "r-1", kind: "anyN", verbatim: "The welding curtain is a flame‐retardant shield used to deflect welding and grinding sparks. They also absorb harmful UV light to protect bystanders within the vicinity of the welder.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["The welding curtain is a flame‐retardant shield used to deflect welding and grinding sparks. They also absorb harmful UV light to protect bystanders within the vicinity of the welder.","The chipping hammer is used to remove the slag which forms on top of the welded joint after arc welding.","An electrode holder is a device that holds the electrode / welding rod during the welding process. The handle is insulated which protects the user from current flowing to the electrode.","The welding mask protects your eyes and face from severe sparks, ultraviolet and infrared rays emitted by the arc when welding."]} },
     ],
   } as SecCard,
   {
@@ -2795,7 +2795,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name each of the plastic manufacturing processes shown at A, B and C.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A: Compression moulding B: Blow moulding C: Vacuum forming. ii) Describe any one plastic manufacturing process:", marks: 9, accepts: ["Plastic A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released.","Air Parison Split mould Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened moulding.","A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away."] },
+    { id: "r-1", kind: "anyN", verbatim: "A: Compression moulding B: Blow moulding C: Vacuum forming. ii) Describe any one plastic manufacturing process:", marks: 9, group: {"claimMax":3,"perOption":3,"options":["A: Compression moulding B: Blow moulding C: Vacuum forming. ii) Describe any one plastic manufacturing process:","Plastic A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released.","Air Parison Split mould Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened moulding.","A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away."]} },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q5ai-art",
@@ -2817,7 +2817,7 @@ export const CARDS: SecCard[] = [
     questionText: "In relation to plastic technology, describe any two of the following: (i) Thermosetting plastic, (ii) Laminating, (iii) Thermoplastic, (iv) Elastic memory.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Thermosetting plastic is a plastic which remains hard when heated.", marks: 10, accepts: ["Laminating is a bonding process which produces a sheet material manufactured from multiple layers of paper with a top layer of plastic, usually 1.5 mm thick, with a decorative finish. It can be used in flat sheets or heat‐formed and bent and adhered to single curved base material. It is commonly referred to by the brand name \"Formica.\"","Thermoplastic is a plastic which softens when heated.","This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated."] },
+    { id: "r-1", kind: "anyN", verbatim: "Thermosetting plastic is a plastic which remains hard when heated.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Thermosetting plastic is a plastic which remains hard when heated.","Laminating is a bonding process which produces a sheet material manufactured from multiple layers of paper with a top layer of plastic, usually 1.5 mm thick, with a decorative finish. It can be used in flat sheets or heat‐formed and bent and adhered to single curved base material. It is commonly referred to by the brand name \"Formica.\"","Thermoplastic is a plastic which softens when heated.","This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated."]} },
     ],
   } as SecCard,
   {
@@ -2830,7 +2830,7 @@ export const CARDS: SecCard[] = [
     questionText: "Select any two of the items shown below and name a suitable plastic material for each of the parts identified.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Vehicle chassis – Acrylic", marks: 10, accepts: ["Battery holder – Polypropylene or Nylon","3D printed part – PLA","Gears ‐ Nylon"] },
+    { id: "r-1", kind: "anyN", verbatim: "Vehicle chassis – Acrylic", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Vehicle chassis – Acrylic","Battery holder – Polypropylene or Nylon","3D printed part – PLA","Gears ‐ Nylon"]} },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q5di-art",
@@ -2852,7 +2852,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any three of the following in relation to machining: (i) Cutting fluid, (ii) Clearance angle, (iii) Depth of cut, (iv) Swarf.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Cutting fluids are used when machining metals to improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.", marks: 15, accepts: ["Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts a piece. It provides clearance between the cutting tool face and the workpiece","This is the distance the cutting tool is moved into the workpiece when cutting","Swarf is the waste material produced when the chip is cut from a workpiece"] },
+    { id: "r-1", kind: "anyN", verbatim: "Cutting fluids are used when machining metals to improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["Cutting fluids are used when machining metals to improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.","Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts a piece. It provides clearance between the cutting tool face and the workpiece","This is the distance the cutting tool is moved into the workpiece when cutting","Swarf is the waste material produced when the chip is cut from a workpiece"]} },
     ],
   } as SecCard,
   {
@@ -2865,7 +2865,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name any two centre lathe processes used to manufacture the stunt bike pegs. OR Outline one advantage of using CAD in the design and manufacturing process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Knurling", marks: 6, accepts: ["Drilling","CAD software enables developers to work more quickly, cut production costs and decrease errors."] },
+    { id: "r-1", kind: "anyN", verbatim: "Knurling", marks: 6, group: {"claimMax":2,"perOption":3,"options":["Knurling","Drilling","CAD software enables developers to work more quickly, cut production costs and decrease errors."]} },
     ],
   } as SecCard,
   {
@@ -2891,7 +2891,7 @@ export const CARDS: SecCard[] = [
     questionText: "Specify any two items of personal protective equipment (PPE) that should be worn when operating a centre lathe. OR Give two advantages of using CNC machines.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Wear goggles.", marks: 8, accepts: ["Protective clothing i.e. gloves","High precision and capable of producing highly complex parts."] },
+    { id: "r-1", kind: "anyN", verbatim: "Wear goggles.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Wear goggles.","Protective clothing i.e. gloves","High precision and capable of producing highly complex parts."]} },
     ],
   } as SecCard,
   {
@@ -2930,7 +2930,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two examples where a Printed Circuit Board (PCB) may be used.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Smart phones", marks: 6, accepts: ["Computers"] },
+    { id: "r-1", kind: "anyN", verbatim: "Smart phones", marks: 6, group: {"claimMax":2,"perOption":3,"options":["Smart phones","Computers"]} },
     ],
   } as SecCard,
   {

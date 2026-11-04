@@ -36,14 +36,27 @@ from eng_lift import path_for                               # noqa: E402
 DPI = 200
 
 
+def _boxes(spec):
+    """[(page, rect)] this crop is cut from: one box, or several stacked."""
+    return [tuple(b) for b in spec['parts']] if spec.get('parts') \
+        else [(spec['page'], spec['rect'])]
+
+
 def crop_words(year, level, spec):
+    out = []
+    masks = [pymupdf.Rect(*m) for m in spec.get('mask', ())]
     with pymupdf.open(path_for(year, level, spec['doc'])) as doc:
-        page = doc[spec['page'] - 1]
-        r = pymupdf.Rect(*spec['rect'])
-        words = [w for w in page.get_text('words')
-                 if r.contains(pymupdf.Point((w[0] + w[2]) / 2, (w[1] + w[3]) / 2))]
-    words.sort(key=lambda w: (round(w[3]), w[0]))
-    return ' '.join(w[4] for w in words)
+        for page_no, rect in _boxes(spec):
+            page = doc[page_no - 1]
+            r = pymupdf.Rect(*rect)
+            words = [w for w in page.get_text('words')
+                     if r.contains(pymupdf.Point((w[0] + w[2]) / 2, (w[1] + w[3]) / 2))
+                     and not any(m.contains(pymupdf.Point((w[0] + w[2]) / 2,
+                                                          (w[1] + w[3]) / 2))
+                                 for m in masks)]
+            words.sort(key=lambda w: (round(w[3]), w[0]))
+            out.append(' '.join(w[4] for w in words))
+    return ' '.join(out)
 
 
 def describe(year, level, spec):
@@ -67,8 +80,8 @@ def describe(year, level, spec):
 
 def render(year, level, spec, out):
     with pymupdf.open(path_for(year, level, spec['doc'])) as doc:
-        page = doc[spec['page'] - 1]
         if spec.get('image'):
+            page = doc[spec['page'] - 1]
             # The embedded photograph itself, where the page sets prose over
             # or against its edges and no rectangle takes the picture without
             # a fragment of a neighbouring line: the image whose placement on
@@ -87,8 +100,41 @@ def render(year, level, spec, out):
                         pix.save(out)
                         return
             raise SystemExit(f'{out}: no image placed at {spec["rect"]} on page {spec["page"]}')
-        pix = page.get_pixmap(clip=pymupdf.Rect(*spec['rect']), dpi=DPI)
-        pix.save(out)
+        from PIL import Image, ImageDraw
+        tiles = []
+        for page_no, rect in _boxes(spec):
+            pg = doc[page_no - 1]
+            clip = pymupdf.Rect(*rect)
+            pix = pg.get_pixmap(clip=clip, dpi=DPI)
+            im = Image.frombytes('RGB', (pix.width, pix.height), pix.samples)
+            # White out page text that falls inside the box but belongs to
+            # the prose beside the picture -- the ask's own line running
+            # into a photograph's top edge. Only page FURNITURE is masked,
+            # and the mask is part of the reviewed spec, never a guess.
+            k = DPI / 72
+            draw = ImageDraw.Draw(im)
+            for m in spec.get('mask', ()):
+                mr = pymupdf.Rect(*m) & clip
+                if not mr.is_empty:
+                    draw.rectangle([(mr.x0 - clip.x0) * k, (mr.y0 - clip.y0) * k,
+                                    (mr.x1 - clip.x0) * k, (mr.y1 - clip.y0) * k],
+                                   fill='white')
+            tiles.append(im)
+        if len(tiles) == 1:
+            tiles[0].save(out)
+            return
+        # Several boxes, one below the other, left-aligned with a band of
+        # white between them: one answer the scheme prints in pieces (a
+        # labelled diagram for each furnace a candidate may choose).
+        gap = int(12 * DPI / 72)
+        sheet = Image.new('RGB', (max(t.width for t in tiles),
+                                  sum(t.height for t in tiles) + gap * (len(tiles) - 1)),
+                          'white')
+        y = 0
+        for t in tiles:
+            sheet.paste(t, (0, y))
+            y += t.height + gap
+        sheet.save(out)
 
 
 def main():
