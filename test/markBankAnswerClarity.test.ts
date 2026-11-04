@@ -481,10 +481,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => row.kind === 'point' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
     // "… 5M + 5M Max =" left on a row by the tariff reader: the printed split is the row's note now.
     expect(rows.filter(({ row }) => /\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=\s*$/i.test(row.verbatim)).map(({ card }) => card.id)).toEqual([]);
-    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(7);
+    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(9);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(101);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(107);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['Chapel bell', 'convent chimes', 'organ'],
@@ -521,6 +521,17 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(answeredSplit.rows.map(row => [row.verbatim.split('. ')[0], row.marks, row.contextNote])).toEqual([
       ['Document A is a primary source', 5, undefined],
       ['It is the recollection/words of a North Vietnamese soldier who fought against the US in Vietnam', 5, 'Reason = 5M'],
+    ]);
+    // Priced statements, the older Ordinary comparison part (2016 OL Q2): each statement at its printed
+    // marks, and document points the closing split prices, one term to a document.
+    const statements = cards.find(card => card.id === 'hist-2016-ol-lm-s1-q2a')!;
+    expect(statements.rows.map(row => [row.verbatim.split(' ').slice(0, 4).join(' '), row.marks])).toEqual([
+      ['Yes. Ellen Wilkinson took', 2], ['Document A is from', 4], ['Document B states that', 4],
+    ]);
+    expect(statements.rows[0].contextNote).toBe('Must be clearly stated');
+    const splitPriced = cards.find(card => card.id === 'hist-2016-ol-lm-s1-q2b')!;
+    expect(splitPriced.rows.map(row => [row.verbatim.split(' ').slice(0, 3).join(' '), row.marks])).toEqual([
+      ['Document B', 2], ['Document A describes', 4], ['Document B gives', 4],
     ]);
     // Closed by the part's marks printed bare: "... searchlights = 3M" / "... against the sky = 2M 5M" (2016 HL Q1(d)).
     const bareTotal = cards.find(card => card.id === 'hist-2016-hl-lm-s1-q1d')!;

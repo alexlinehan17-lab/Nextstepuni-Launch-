@@ -64,16 +64,14 @@ describe('the printed breaks in a History stem', () => {
 
   it('never flattens a printed table into a stem: the chart is the card’s question figure', () => {
     const charted = HISTORY_ORDINARY.filter(c => 'questionFigure' in c && c.questionFigure);
-    expect(charted.map(c => c.id).sort()).toEqual([
-      'hist-2018-ol-lm-s2t3a-q1', 'hist-2018-ol-lm-s2t3a-q2', 'hist-2018-ol-lm-s2t3a-q3', 'hist-2018-ol-lm-s2t3a-q4', 'hist-2018-ol-lm-s2t3a-q5',
-      'hist-2020-ol-lm-s2t6a-q1', 'hist-2020-ol-lm-s2t6a-q2', 'hist-2020-ol-lm-s2t6a-q3', 'hist-2020-ol-lm-s2t6a-q4', 'hist-2020-ol-lm-s2t6a-q5',
-    ]);
+    const CHARTED_UNITS = ['hist-2016-ol-lm-s2t5a', 'hist-2018-ol-lm-s2t3a', 'hist-2020-ol-lm-s2t6a'];
+    expect(charted.map(c => c.id).sort()).toEqual(CHARTED_UNITS.flatMap(unit => [1, 2, 3, 4, 5].map(q => `${unit}-q${q}`)));
     for (const card of charted) {
       const figure = 'questionFigure' in card ? card.questionFigure! : undefined;
       // An illustration beside the stem and the question, never in place of them.
       expect(figure?.includesPrompt, card.id).toBe(false);
-      expect(figure?.src, card.id).toMatch(/^\/exam-figures\/history\/history-20(?:18|20)-ol-lm-s2t[36]a-table\.png$/);
-      expect(figure?.alt, card.id).toMatch(/^The chart printed on the paper: .*Columns: PARTY \| .*Rows: Fianna Fáil \| /);
+      expect(figure?.src, card.id).toBe(`/exam-figures/history/${card.id.replace(/^hist-/, 'history-').replace(/-q\d$/, '')}-table.png`);
+      expect(figure?.alt, card.id).toMatch(/^The chart printed on the paper: .*\. Columns: .+ \| .+\. Rows: .+\.$/);
       expect(card.stem, card.id).not.toContain('\n');
     }
     expect(stemOf('hist-2018-ol-lm-s2t3a-q1')).toBe('The chart below shows the results of the 1948 general election. Read it and answer the questions which follow.');
