@@ -546,6 +546,15 @@ REJECTED = {
     (2026, 'ol', 1, 'm', None): 'takes in Q1(l)\'s "(iii) Pilot hole." above it',
     **{(2026, 'ol', 7, 'b', r): 'cuts off the "Body" and "Hole" dimensions the ask reads'
        for r in ('i', 'ii', 'iii', 'iv')},
+    # 2018 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2018, 'hl', 1, 'o', r): 'cuts off propellers B and C and their letters'
+       for r in ('i', 'ii')},
+    **{(2018, 'hl', 2, 'b', r): 'cuts off the strain axis and its "Strain (%)" label'
+       for r in ('i', 'ii', 'iii')},
+    **{(2018, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis and its values'
+       for r in ('i', 'ii', 'iii')},
+    **{(2018, 'hl', 4, 'a', r): 'cuts off the defect letters A and B'
+       for r in ('i', 'ii')},
     # 2019 Ordinary, looked at 2026-11-04 (the residue cuts each by eye):
     (2019, 'ol', 1, 'b', None): 'takes in the descender of (a)\'s "bandsaw." above it',
     **{(2019, 'ol', 5, 'c', r): 'the products without their captions; the letter card '
