@@ -43,7 +43,7 @@ describe('provcheck applies the build\'s rule', () => {
   });
 
   test('a claim the scheme does not print is still reported', () => {
-    const [card] = authored('chemistry').filter(c => c.id === 'chem-2021-hl-q9-c-i') as Array<{ rows: Array<{ ask?: boolean; verbatim: string }> }>;
+    const [card] = authored('chemistry').filter(c => c.id === 'chem-2021-hl-q9-c-i');
     const broken = { ...card, rows: [{ id: 'r1', kind: 'point', verbatim: 'a marking point no scheme ever printed', marks: 3 }] };
     expect(provcheck([broken])).toMatch(/UNTRACEABLE chem-2021-hl-q9-c-i :: a marking point no scheme ever printed/);
   });
