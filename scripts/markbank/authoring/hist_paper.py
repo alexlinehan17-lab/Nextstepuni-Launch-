@@ -122,6 +122,13 @@ PART = re.compile(r'^([ABC])\s*\((\d{2})\s*marks\)\s*$')
 MISPRINTS = {
     # (year, level, field): {printed line: the line the SEC meant}
     (2021, 'ol', 'em'): {'B 30 marks)': 'B (30 marks)'},
+    # 2018 Ordinary Later Modern, Ireland Topic 3 (page 6): the third part's
+    # head is printed "(40 marks)", its letter missing from the page itself
+    # (not only from the text layer). Every other topic on the paper prints
+    # "C (40 marks)", and the scheme prices "C - Max CM = 30 marks Max OE = 10
+    # marks" under the topic. Unread, the part's four questions ran on as
+    # part B's, and the census lost the ask.
+    (2018, 'ol', 'lm'): {'(40 marks)': 'C (40 marks)'},
 }
 EXTRA = re.compile(r'^Answer the questions below if you are following the '
                    r'Alternative Instructions', re.I)

@@ -49,7 +49,9 @@ describe('the printed breaks in a History stem', () => {
       // A unit set on a picture (2019 OL "This picture taken from Le Perin magazine ...") prints
       // the instruction alone: no extract, so no gap.
       expect(parts.length, card.id).toBeLessThanOrEqual(2);
-      expect(parts[0], card.id).toMatch(/[.?!:]$/);
+      // The instruction is a finished sentence on its own line; a chart's title may sit
+      // directly under it, inside the same block (2018 OL "RESULTS OF THE 1948 GENERAL ELECTION").
+      expect(parts[0].split('\n')[0], card.id).toMatch(/[.?!:]$/);
       expect(card.stem, card.id).not.toMatch(/ \n|\n |\n{3}/);
     }
     expect(partA.filter(c => !c.stem!.includes('\n\n')).every(c => /^(?:This|The|In this) (?:picture|photograph|cartoon|illustration|poster|chart)\b/.test(c.stem!))).toBe(true);
