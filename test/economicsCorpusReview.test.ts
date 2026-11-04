@@ -22,6 +22,7 @@ import higher2015Review from '../scripts/markbank/authoring/reviews/economics-20
 import ordinary2015Review from '../scripts/markbank/authoring/reviews/economics-2015-ol-ev.json';
 import higher2014Review from '../scripts/markbank/authoring/reviews/economics-2014-hl-ev.json';
 import ordinary2014Review from '../scripts/markbank/authoring/reviews/economics-2014-ol-ev.json';
+import higher2013Review from '../scripts/markbank/authoring/reviews/economics-2013-hl-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -331,10 +332,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    // Old syllabus English: every sitting from 2014 through 2020 Higher reviewed (variants 19-31).
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(35);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(41);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(31);
+    // Old syllabus English: every sitting from 2013 Higher through 2020 Higher reviewed (variants 19-32).
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(34);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(40);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(32);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -1515,6 +1516,68 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     expect(text).not.toMatch(/(?:^|[\s"])x [A-Z]/);
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'Visible Invisible',
       'Statement TRUE FALSE', '¨']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 57 independently counted 2013 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2013);
+    const tasks = higher2013Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(57);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2013Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2013, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2013 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with B6(a)(i)'s two alternatives counted once.
+      const total = question.tasks.filter(task => !task.cardId.endsWith('-balance-sheet'))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2013 Higher ladders at their printed steps and keeps both credit-creation alternatives', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2013-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // First-correct-response ladders, each at its printed steps.
+    for (const [id, steps] of [['sa-q5', [6, 5, 5]], ['sa-q7', [5, 4, 4, 4]], ['sa-q9', [5, 4, 4, 4]], ['sb-q1-a-i', [7, 4]],
+      ['sb-q3-a', [7, 7, 7, 4]], ['sb-q4-c', [10, 5]], ['sb-q5-c-ii', [8, 4]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // The paradox of thrift is priced 7 + 6 + 4 over one answer the scheme does not divide.
+    expect(card('sa-q6').tariffModel.kind).toBe('questionTotal');
+    // Section B Q6(a)(i): one route per alternative the scheme prints, each 20.
+    expect(card('sb-q6-a-i-reserve-ratio').rows.map(r => r.marks)).toEqual([4, 4, 4, 4, 4]);
+    expect(card('sb-q6-a-i-balance-sheet').rows.map(r => r.marks)).toEqual([4, 6, 10]);
+    // The monopoly diagram's ten points, then the explanation under its five numbered heads.
+    expect(card('sb-q2-b').rows.map(r => r.marks)).toEqual([10, 4, 4, 2, 3, 2]);
+    // A diagram the scheme prices without words is claimed by its own ask, beside the hidden figure.
+    for (const row of card('sb-q3-b').rows.filter(r => r.id.endsWith('-diagram'))) {
+      expect(card('sb-q3-b').questionText, row.id).toContain(row.verbatim);
+    }
+    expect(card('sb-q3-b').figure?.solution).toBe(true);
+    for (const c of CARDS.filter(item => item.year === 2013 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = CARDS.filter(c => c.year === 2013)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // No stem carries a table's text: each table is the crop beside the ask.
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'Disposable Income Savings',
+      'STATEMENT ELASTIC', ' at 1m', ' at 2m']) {
       expect(text, junk).not.toContain(junk);
     }
   });

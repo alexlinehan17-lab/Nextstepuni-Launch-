@@ -207,12 +207,18 @@ describe('Economics exam-topic registry', () => {
       // market (costs, the entrepreneur and location are filed under their own
       // topics); Section B Q8(a) under growth and development (emigration is
       // employment and unemployment); and Section A Q2 under globalisation
-      // (visible and invisible trade are international trade).
-      matchedAssociations: 722,
-      referenceAnomalyAssociations: 181,
+      // (visible and invisible trade are international trade). The 2013
+      // Higher review added six: Section A Q9 and Section B Q8(b) and Q8(c)
+      // under topical questions and statistics (a study-aid heading);
+      // Section A Q8 under costs of production (the APC is national income);
+      // and Section B Q8(a) and Q8(b) under government intervention (youth
+      // unemployment is employment and unemployment, the national debt
+      // fiscal policy).
+      matchedAssociations: 716,
+      referenceAnomalyAssociations: 187,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 646,
+      matchedQuestionTopicLinks: 642,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

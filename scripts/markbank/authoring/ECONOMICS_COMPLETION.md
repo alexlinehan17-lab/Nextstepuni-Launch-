@@ -2228,3 +2228,62 @@ Checks:
 - reconcile: 1,675/2,197, with 2014 OL at 69/69.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2013 Higher English, old syllabus (lane, 2026-11-04)
+
+All 8 paper pages and 40 scheme pages were viewed:
+- paper p8 is blank;
+- scheme pp1-4 are the cover, the note on published schemes, the title page
+  and the support notes with the index, and pp38-40 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 57 routes for the 57 printed asks (11 in Section A, 46 in Section B).
+A Q9(a)-(b) is one card, because the scheme prices its four answers on one
+ladder (5 + 4 + 4 + 4). B6(a)(i) has one route for each of the scheme's two
+alternatives, and the question's 75 counts one of them: A, the reserve ratio
+(four steps at 4 and the numerical example's four starred figures at 1), and
+B, the balance sheets (4 + 6 and an explanation of five steps at 2). 10 crops:
+9 hidden scheme solutions and 1 paper data crop.
+
+Decisions:
+- A Q1: "Any 2 points at 8 marks each" over one printed answer. Its three
+  sentences are the menu.
+- A Q6: the scheme prices its one answer "7 marks + 6 marks + 4 marks" and does
+  not divide the answer into points, so the card is questionTotal with unpriced
+  rows.
+- A Q8: the definition 9, then the working's three starred figures at 2 and
+  its two bolded figures at 1, with the working as the hidden crop and the
+  paper's table beside the ask.
+- B1(b)(i)-(iii): the diagram's five elements at 1, then the shift 1, the reason
+  2, the new price 1 and the new quantity 1. The scheme's "at 1m" / "at 2m"
+  tails are cut from each slice.
+- B2(b): the diagram's ten numbered points at 1, then one row per numbered head
+  of the 15-mark explanation (any 2 of 3 at 2; output and price at 2; cost 2;
+  SNPs 2 + 1; waste 1 + 1).
+- B3(b): each market's diagram 5 is claimed by the card's own ask (its words on
+  the paper), beside the hidden crop of both diagrams. The explanations are
+  7 (4 + 3) and 8 (4 + 4).
+- B1(c)(ii): each effect 3 and the net effect 4. The scheme accepts either
+  direction, by which effect is greater.
+- Ladders are claimed at their printed steps: A Q5 6 + 5 + 5, A Q7 5 + 4 + 4 + 4,
+  B1(a)(i) 7 + 4, B3(a) 7 + 7 + 7 + 4, B4(c) 10 + 5, B5(c)(ii) 8 + 4.
+
+Refcheck: one short ask was read by hand (B2(c)(i)).
+
+Topic review: 6 reference anomalies, each a commercial heading the review files
+elsewhere. A Q9, B8(b) and B8(c) sit under topical questions and statistics (a
+study-aid heading). A Q8 sits under costs of production, but the APC is
+national income. B8(a) and B8(b) sit under government intervention, but youth
+unemployment is employment and unemployment, and the national debt fiscal
+policy. Topical questions and statistics now has no question in the Ask the
+papers topic index, so it leaves that index (928 -> 927 topic identities).
+
+Checks:
+- econ_review: 32/66.
+- build: 1,786 cards, 0 dropped.
+- Build rule: 335 claims on this paper, 0 untraceable (19 trace by halves).
+- reconcile: 1,732/2,197, with 2013 HL at 57/57.
+- refcheck: 0 wrong.
+- cardlint: clean.

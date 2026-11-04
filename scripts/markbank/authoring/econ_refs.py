@@ -164,6 +164,7 @@ HAND_CHECKED = {
     'econ-2014-ol-sb-q6-a-i',         # 2014 OL p8: "(a) Explain the following terms: (i) Barter;" (the ask with its own term)
     'econ-2014-ol-sb-q6-a-ii',        # 2014 OL p8: "(a) Explain the following terms: ... (ii) Money;"
     'econ-2014-ol-sb-q6-a-iii',       # 2014 OL p8: "(a) Explain the following terms: ... (iii) Price Inflation."
+    'econ-2013-hl-sb-q2-c-i',         # 2013 HL p4: "(i) Explain the term ‘competitive advertising’." (five words)
 }
 
 

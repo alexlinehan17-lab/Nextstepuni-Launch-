@@ -7039,5 +7039,225 @@
     },
     "lettersVisible": [],
     "labelMeanings": []
+  },
+  {
+    "file": "economics-2013-HL-scheme-p07-q8-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2013 HL Section A Q8",
+    "description": "The marking scheme’s working: €34,000* - €5,200* = €28,800*; €28,800 over €34,000 = 0.847 or 84.7%, the answer and the income it is divided by in bold.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2013/LC034ALP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        60,
+        543,
+        288,
+        640
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2013-HL-scheme-p10-q1bi-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2013 HL Section B Q1(b)(i)",
+    "description": "The marking scheme’s diagram: P against Q, a rising S and a falling D1, with D2 to its left and an arrow pointing left. Arrows run left to P1 and to the lower P2, and down to Q1 and to the lower Q2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2013/LC034ALP000EV.pdf",
+      "page": 10,
+      "rectPoints": [
+        188,
+        88.5,
+        374,
+        229
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2013-HL-scheme-p10-q1bii-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2013 HL Section B Q1(b)(ii)",
+    "description": "The marking scheme’s diagram: P against Q, a falling D and a rising S1, with S2 to its right and an arrow pointing right. Arrows run left to P1 and to the lower P2, and down to Q1 and to the higher Q2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2013/LC034ALP000EV.pdf",
+      "page": 10,
+      "rectPoints": [
+        195,
+        336.5,
+        384,
+        476
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2013-HL-scheme-p10-q1biii-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2013 HL Section B Q1(b)(iii)",
+    "description": "The marking scheme’s diagram: P against Q, a rising S and a falling D1, with D2 to its right and an arrow pointing right. Arrows run left to P1 and to the higher P2, and down to Q1 and to the higher Q2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2013/LC034ALP000EV.pdf",
+      "page": 10,
+      "rectPoints": [
+        205,
+        585,
+        376,
+        696
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2013-HL-scheme-p14-q2b-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2013 HL Section B Q2(b)",
+    "description": "The marking scheme’s diagram: Price against Qty, a falling AR line and a steeper MR line, a U-shaped AC curve and an MC curve rising through E, where it cuts MR. A line from Q1 rises through E to AC and to B on AR; arrows run left to C1 and P1 on the price axis.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2013/LC034ALP000EV.pdf",
+      "page": 14,
+      "rectPoints": [
+        45,
+        85,
+        365,
+        352
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2013-HL-scheme-p17-q3b-diagrams.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2013 HL Section B Q3(b)",
+    "description": "The marking scheme’s two labour market diagrams with their explanations. A free labour market: Wage Rate against Qty. of labour, S/C labour rising and D/C labour falling, crossing level with WE. A labour market where a trade union has negotiated a minimum wage: the S/C labour runs horizontally at WMIN and then rises; D/C labour falls through it.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2013/LC034ALP000EV.pdf",
+      "page": 17,
+      "rectPoints": [
+        40,
+        108,
+        525,
+        688
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2013-HL-scheme-p23-q5bi-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2013 HL Section B Q5(b)(i)",
+    "description": "The marking scheme’s circular flow of income for an open economy: HOUSEHOLDS (Incomes) and FIRMS (Output), with Incomes for supplying F.O.P’s from firms to households and Spending on the output of firms from households to firms. From households: Tax to GOVERNMENT, Savings to FINANCIAL INSTITUTIONS and Imports to FOREIGN MARKETS; to firms: Government Expenditure, Investment and Exports.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2013/LC034ALP000EV.pdf",
+      "page": 23,
+      "rectPoints": [
+        45,
+        388,
+        552,
+        702
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2013-HL-scheme-p26-q6ai-example.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2013 HL Section B Q6(a)(i)",
+    "description": "The marking scheme’s formula and numerical example: Increase in credit = Increase in Cash Deposits x 1 over Banks Reserve Ratio. A person deposits €100 into a bank; the reserve ratio is 10%: €100* x 1* over 10% = €1,000* [- €100 = €900*], 1 mark per asterisked figure.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2013/LC034ALP000EV.pdf",
+      "page": 26,
+      "rectPoints": [
+        25,
+        286,
+        572,
+        446
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2013-HL-scheme-p26-q6ai-balance-sheets.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2013 HL Section B Q6(a)(i)",
+    "description": "The marking scheme’s two balance sheets of a bank. The first (4 marks): cash lodged by X 100 against X’s deposit 100. The second (6 marks): cash lodged by X 100 and a loan of 900, total assets 1,000, against deposits 100 and new deposits 900, total liabilities 1,000.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2013/LC034ALP000EV.pdf",
+      "page": 26,
+      "rectPoints": [
+        25,
+        482,
+        572,
+        640
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2013-HL-paper-p03-q8-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2013 HL Section A Q8",
+    "description": "A table: Year 2012; Disposable Income €34,000; Savings €5,200.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2013/LC034ALP000EV.pdf",
+      "page": 3,
+      "rectPoints": [
+        296,
+        333,
+        542,
+        374
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
   }
 ]
