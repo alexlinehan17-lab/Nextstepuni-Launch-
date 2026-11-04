@@ -749,8 +749,9 @@ const decks = [
    * 2022 Higher, the 8 asks the August cards missed: 285 -> 293.
    * 2022 Ordinary, the 16 asks the August cards missed: 189 -> 205.
    * 2021 Higher, the 9 asks the August cards missed: 293 -> 302.
-   * 2021 Ordinary, the 4 asks the August cards missed: 205 -> 209. */
-  ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 302, 'ab94ce0d8371ac4659f724ec52c8ba030d7a54fe1fb67fa100b7b7c963dd7a74'],
+   * 2021 Ordinary, the 4 asks the August cards missed: 205 -> 209.
+   * 2020 Higher, every printed ask (the bank held none): 302 -> 349. */
+  ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 349, 'b07d7a033083b872f285eb38351e896537910b26eea9163f3545bd385eb049b5'],
   ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 209, '0b23541a2ef2edb043a521588cbd0309767b660022d1eccba3e1eb042b6983b8'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
    * so a later regeneration cannot silently omit or replace any of its cards. */
@@ -1458,6 +1459,7 @@ describe('Mark Bank card preservation', () => {
     // 2022 Ordinary residue, 16 asks, 16 cards: 23,505.
     // 2021 Higher residue, 9 asks, 9 cards: 23,514.
     // 2021 Ordinary residue, 4 asks, 4 cards: 23,518.
+    // 2020 Higher, 47 asks, 47 cards: 23,565.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1474,9 +1476,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_518 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_565 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_518 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_565 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length

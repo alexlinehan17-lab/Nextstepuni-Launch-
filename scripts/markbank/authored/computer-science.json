@@ -17866,5 +17866,1681 @@
   "stem": "The linear search algorithm shown below is to be applied to the following data set: L = [10, 25, 21, 15, 85, 69, 74, 22, 19, 6]",
   "questionFigureKey": "computer-science-2021-OL-paper-q10-algo",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q1",
+  "topicId": "cs-2-2",
+  "conceptId": "given-javascript-variable-declarations-result-javascript",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q1",
+  "questionText": "Given the following JavaScript variable declarations, state the result of each of the JavaScript expressions in the table below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "a * b 10",
+    "marks": 1,
+    "contextNote": "Each correct item 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "a ** b 25",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "a / b 2.5",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "b % a 2",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "++a 6",
+    "marks": 1
+   }
+  ],
+  "questionFigureKey": "computer-science-2020-HL-paper-q1-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q2-a",
+  "topicId": "cs-2-3",
+  "conceptId": "terms-storage-capacity-do-letters-gb",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q2(a)",
+  "questionText": "In terms of storage capacity, what do the letters GB and TB stand for?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "GB: Gigabyte",
+    "marks": 1,
+    "contextNote": "Each correct item 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "TB: Terabyte",
+    "marks": 1
+   }
+  ],
+  "stem": "Many modern laptops have a hard‐disk drive (HDD) which can exceed 1TB in capacity. If you are buying a laptop you may also have the option of a solid‐state drive (SSD) with a capacity of 512GB."
+ },
+ {
+  "id": "cs-2020-hl-q2-b",
+  "topicId": "cs-2-3",
+  "conceptId": "assuming-neither-cost-nor-capacity-were",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q2(b)",
+  "questionText": "Assuming that neither cost nor capacity were issues, explain why you might opt for the SSD rather than the HDD.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Assuming that neither cost nor capacity were issues, explain why you might opt for the SSD rather than the HDD.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "SSD is smaller, faster, quieter",
+      "SSD has no moving parts - more reliable, durable, better for transportation, etc.",
+      "SSD is completely electronic - consumes less power",
+      "SSD is safe from magnets"
+     ]
+    },
+    "contextNote": "Very good description - clear understanding demonstrated 3 marks Good description - clear information, lacking full understanding 2 marks Fair description - limited understanding 1 mark"
+   }
+  ],
+  "stem": "Many modern laptops have a hard‐disk drive (HDD) which can exceed 1TB in capacity. If you are buying a laptop you may also have the option of a solid‐state drive (SSD) with a capacity of 512GB."
+ },
+ {
+  "id": "cs-2020-hl-q3",
+  "topicId": "cs-2-3",
+  "conceptId": "program-counter-special-register-processor-computer",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q3",
+  "questionText": "The program counter is a special register in the processor of a computer. Outline the purpose of the program counter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Contains address of the instruction to be executed in memory or similar",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     5
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 5 marks Good description - clear information, lacking full understanding 3 marks Fair description - limited understanding 1 mark"
+   }
+  ]
+ },
+ {
+  "id": "cs-2020-hl-q4-a",
+  "topicId": "cs-2-3",
+  "conceptId": "when-referring-world-wide-web-infrastructure",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q4(a)",
+  "questionText": "When referring to World Wide Web infrastructure, what is meant by the term protocol?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Any one of the above points:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Rules and procedures for network communication or similar",
+      "An agreed way to communicate between two computers/devices/processes"
+     ]
+    },
+    "contextNote": "Any one of the above points: Good description - clear information 2 marks Fair description - limited understanding 1 mark"
+   }
+  ],
+  "stem": "The World Wide Web (WWW) and the network infrastructure that supports it allow for seamless transmission of data such as web pages, voice applications and streaming services. This is all possible due to the protocols that it uses."
+ },
+ {
+  "id": "cs-2020-hl-q4-b",
+  "topicId": "cs-2-3",
+  "conceptId": "purpose-such-protocol",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q4(b)",
+  "questionText": "State the name and purpose of one such protocol.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "HTTP, HTTPS, TCP, IP, VOIP, or similar (Ethernet, SMTP, FTP, Telnet) Others: Echo, finger, Gopher, POP3, DNS, UDP",
+    "marks": 1,
+    "contextNote": "Name 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Protocol Purpose",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "HTTP — High level protocol used to support the exchange of WWW documents (typically HTML)",
+      "HTTPS — HTTP + added security layer / encryption-decryption",
+      "TCP — Low level protocol – sender breaks messages into packets hands over to IP (for routing) and re-assembles and orders at the destination",
+      "IP — Responsible for the routing of packets from source/sending process/device to destination process/device via a network of inter-connected computers/devices",
+      "VOIP — The transmission of voice over IP"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Purpose: Good description - clear information 2 marks Fair description - limited understanding 1 mark"
+   }
+  ],
+  "stem": "The World Wide Web (WWW) and the network infrastructure that supports it allow for seamless transmission of data such as web pages, voice applications and streaming services. This is all possible due to the protocols that it uses."
+ },
+ {
+  "id": "cs-2020-hl-q5-a",
+  "topicId": "cs-2-3",
+  "conceptId": "value-c-when-inputs-b-both",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q5(a)",
+  "questionText": "What is the value of C when the inputs A and B are both 0?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0 / False",
+    "marks": 3,
+    "contextNote": "First correct 3 marks Second correct 2 marks Incorrect 0 mark"
+   }
+  ],
+  "stem": "The half‐adder logic circuit shown below generates two outputs, S and C, from two inputs, A and B.",
+  "questionFigureKey": "computer-science-2020-HL-paper-q5-circuit",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q5-b",
+  "topicId": "cs-2-3",
+  "conceptId": "value-s-when-inputs-b-both",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q5(b)",
+  "questionText": "What is the value of S when the inputs A and B are both 1?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0 / False",
+    "marks": 2,
+    "contextNote": "First correct 3 marks Second correct 2 marks Incorrect 0 mark"
+   }
+  ],
+  "stem": "The half‐adder logic circuit shown below generates two outputs, S and C, from two inputs, A and B.",
+  "questionFigureKey": "computer-science-2020-HL-paper-q5-circuit",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q6-a",
+  "topicId": "cs-2-3",
+  "conceptId": "encoding-standards-such-ascii-important",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q6(a)",
+  "questionText": "Why are encoding standards such as ASCII important?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Any one of the above points:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Allows data to be encoded in a standard way",
+      "Provides a means of representing data as information",
+      "Allows for worldwide communication in electronic form or similar"
+     ]
+    },
+    "contextNote": "Any one of the above points: Good description - clear understanding demonstrated 3 marks Fair description - limited understanding 2 mark"
+   }
+  ],
+  "stem": "The American Standard Code for Information Interchange (ASCII) is a character encoding standard adopted by the Institute of Electrical and Electronics Engineers (IEEE) in 1963."
+ },
+ {
+  "id": "cs-2020-hl-q6-b",
+  "topicId": "cs-2-3",
+  "conceptId": "limitation-ascii",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q6(b)",
+  "questionText": "State one limitation of ASCII.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Limitation:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Does not allow for emojis, etc",
+      "Does not support symbols from different languages",
+      "Not enough symbols to support certain languages with large character sets",
+      "And similar"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Good description - clear information 2 marks Fair description - limited understanding 1 mark"
+   }
+  ],
+  "stem": "The American Standard Code for Information Interchange (ASCII) is a character encoding standard adopted by the Institute of Electrical and Electronics Engineers (IEEE) in 1963.",
+  "figureKey": "computer-science-2020-HL-scheme-q6b"
+ },
+ {
+  "id": "cs-2020-hl-q7",
+  "topicId": "cs-2-3",
+  "conceptId": "8-bit-binary-representation-ascii-character",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q7",
+  "questionText": "The 8‐bit binary representation for the ASCII character K is shown below. Convert this binary number to hexadecimal notation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "4B",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     5
+    ],
+    "contextNote": "Correct 5 marks Half correct 3 marks Response with some merit 1 mark"
+   }
+  ],
+  "questionFigureKey": "computer-science-2020-HL-paper-q7-binary",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q8",
+  "topicId": "cs-2-2",
+  "conceptId": "diagram-sets-out-operation-bubble-sort",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q8",
+  "questionText": "The diagram below sets out the operation of the bubble sort algorithm to sort the list of integers [8, 5, 9, 7, 6]. The algorithm works by scanning over the data in four passes. The diagram is complete for pass 1 and started for pass 2. Complete the diagram for passes 2, 3 and 4. You only need to fill in the numbers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The diagram below sets out the operation of the bubble sort algorithm to sort the list of integers [8, 5, 9, 7, 6]. The algorithm works by scanning over the data in four passes. The diagram is complete for pass 1 and started for pass 2. Complete the diagram for passes 2, 3 and 4. You only need to fill in the numbers.",
+    "marks": 5,
+    "ask": true
+   }
+  ],
+  "figureKey": "computer-science-2020-HL-scheme-q8",
+  "questionFigureKey": "computer-science-2020-HL-paper-q8-passes",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q9",
+  "topicId": "cs-2-4",
+  "conceptId": "data-set-shows-raw-data-collected",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q9",
+  "questionText": "The data set below shows the raw data collected from the result of a 100m school race. List three problems with the data in the data set.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "List three problems with the data in the data set.",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Repeated record Ogene",
+      "Blank surname",
+      "Dot after F",
+      "Small f",
+      "Negative age",
+      "77 age anomaly",
+      "Comma in time",
+      "Space in time, no decimal point"
+     ],
+     "perOptionSteps": [
+      2,
+      2,
+      1
+     ]
+    },
+    "contextNote": "First two problems 2 marks (each) Third problem 1 mark"
+   }
+  ],
+  "questionFigureKey": "computer-science-2020-HL-paper-q9-data",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q10",
+  "topicId": "cs-2-2",
+  "conceptId": "illustrations-show-html-code-resulting-web",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q10",
+  "questionText": "The illustrations below show HTML code and the resulting web page as it would be displayed in a typical web browser. Some of the code has been replaced with the numbers 1 – 4. Complete the table below with the missing code.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Number Missing Code",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "html",
+      "Menu",
+      "ul",
+      "href"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      1,
+      1
+     ]
+    },
+    "contextNote": "First item correct 2 marks Additional item correct 1 mark"
+   }
+  ],
+  "figureKey": "computer-science-2020-HL-scheme-q10",
+  "questionFigureKey": "computer-science-2020-HL-paper-q10-html",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q11",
+  "topicId": "cs-2-2",
+  "conceptId": "intention-javascript-function-return-student-grade",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q11",
+  "questionText": "The intention of the JavaScript function below is to return a student grade descriptor based on a percentage grade as shown in the table to the right. The code runs without any syntax errors but it does not always return the correct grade descriptor. Outline one way in which the function could be modified so that it works as intended.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Outline one way in which the function could be modified so that it works as intended.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Change 2nd if to else",
+      "Rearrange code with correct example.",
+      "Similar suitable answer."
+     ]
+    },
+    "openList": true,
+    "contextNote": "Very good description - clear understanding demonstrated 5 marks Good description - clear information, lacking full understanding 3 marks Fair description - limited understanding 1 mark"
+   }
+  ],
+  "questionFigureKey": "computer-science-2020-HL-paper-q11-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q12",
+  "topicId": "cs-1-1",
+  "conceptId": "travelling-salesperson-problem-commonly-study-algorithms",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2020 HL Q12",
+  "questionText": "The travelling salesperson problem is commonly used in the study of algorithms and appears in formats similar to the problem below. “Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city once and returns to the original city?” Why would heuristics be considered a good approach to solving a problem such as this?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Why would heuristics be considered a good approach to solving a problem such as this?",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Heuristics will find the best approximate solution when it would take too long to calculate. The best actual solution or similar answer.",
+      "Heuristics is a guess which can be based on previous experience or rule of thumb."
+     ]
+    },
+    "contextNote": "Very good description - clear understanding demonstrated 5 marks Good description - clear information, lacking full understanding 3 marks Fair description - limited understanding 1 mark"
+   }
+  ],
+  "questionFigureKey": "computer-science-2020-HL-paper-q12-graph",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q13-a-i",
+  "topicId": "cs-2-2",
+  "conceptId": "above-search-algorithm",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q13(a)(i)",
+  "questionText": "State the name of the above search algorithm.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Linear search",
+    "marks": 2
+   }
+  ],
+  "stem": "In his book The Art of Computer Programming, Donald Knuth states that “searching is the most time‐consuming part of many programs, and the substitution of a good search method for a bad one often leads to a substantial increase in speed.” The Python code below shows an implementation of a search algorithm. Examine the code and answer the questions that follow:",
+  "questionFigureKey": "computer-science-2020-HL-paper-q13-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q13-a-ii",
+  "topicId": "cs-2-4",
+  "conceptId": "data-type-variable-called-found",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q13(a)(ii)",
+  "questionText": "What is the data type of the variable called found?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Boole / Boolean",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Boole / Boolean (2 marks) True / False (1 mark)"
+   }
+  ],
+  "stem": "In his book The Art of Computer Programming, Donald Knuth states that “searching is the most time‐consuming part of many programs, and the substitution of a good search method for a bad one often leads to a substantial increase in speed.” The Python code below shows an implementation of a search algorithm. Examine the code and answer the questions that follow:",
+  "questionFigureKey": "computer-science-2020-HL-paper-q13-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q13-a-iii",
+  "topicId": "cs-2-2",
+  "conceptId": "step-through-algorithm-finds-zoe-list",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q13(a)(iii)",
+  "questionText": "Step through how the algorithm finds the name Zoe in the list called names.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Starts at index 0 – checks/compares first name. Name is John. Found stays as false. Index increased by 1 – checks/compares second name. Name is Mary. Found stays as false. Index increased by 1 – checks/compares third name. Name is Zoe. Found changes to true. Exits while loop and prints Zoe, index 2. Or any similar relevant explanation.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     5
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 5 marks Good description - clear information, lacking full understanding 3 marks Fair description - limited understanding 1 mark"
+   }
+  ],
+  "stem": "In his book The Art of Computer Programming, Donald Knuth states that “searching is the most time‐consuming part of many programs, and the substitution of a good search method for a bad one often leads to a substantial increase in speed.” The Python code below shows an implementation of a search algorithm. Examine the code and answer the questions that follow:",
+  "questionFigureKey": "computer-science-2020-HL-paper-q13-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q13-a-iv",
+  "topicId": "cs-2-2",
+  "conceptId": "would-value-index-after-running-algorithm",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q13(a)(iv)",
+  "questionText": "What would be the value of index after running the algorithm if the user entered a name that was not present in the list called names?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Index = 5",
+    "marks": 2
+   }
+  ],
+  "stem": "In his book The Art of Computer Programming, Donald Knuth states that “searching is the most time‐consuming part of many programs, and the substitution of a good search method for a bad one often leads to a substantial increase in speed.” The Python code below shows an implementation of a search algorithm. Examine the code and answer the questions that follow:",
+  "questionFigureKey": "computer-science-2020-HL-paper-q13-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q13-a-v",
+  "topicId": "cs-2-2",
+  "conceptId": "worst-case-time-complexity-search-algorithm",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q13(a)(v)",
+  "questionText": "What is the worst‐case time complexity of this search algorithm? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Worst case: O(n) / length of list",
+    "marks": 1,
+    "contextNote": "Answer 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Worst case would mean that the item is not in the list so each item is searched before being found or not found or similar. In a list of n items there would be at most n comparisons -> worst case.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Explanation: Good description - clear information 2 marks Fair description - limited understanding 1 mark"
+   }
+  ],
+  "stem": "In his book The Art of Computer Programming, Donald Knuth states that “searching is the most time‐consuming part of many programs, and the substitution of a good search method for a bad one often leads to a substantial increase in speed.” The Python code below shows an implementation of a search algorithm. Examine the code and answer the questions that follow:",
+  "questionFigureKey": "computer-science-2020-HL-paper-q13-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q13-b-i",
+  "topicId": "cs-2-2",
+  "conceptId": "disadvantage-binary-search-algorithm",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q13(b)(i)",
+  "questionText": "State one disadvantage of the binary search algorithm.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "State one disadvantage of the binary search algorithm.",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "The data set being searched must be sorted and remain sorted.",
+      "Can be slower than linear search (average performance is O(log n) vs. average of linear search is O(n/2).",
+      "More complicated than linear search and unnecessary for small data sets.",
+      "Only works on data with a “less-than” relationship.",
+      "Data has to be of the same type.",
+      "Or similar answer."
+     ]
+    },
+    "openList": true,
+    "contextNote": "Any suitable answer 2 marks"
+   }
+  ],
+  "stem": "In his book The Art of Computer Programming, Donald Knuth states that “searching is the most time‐consuming part of many programs, and the substitution of a good search method for a bad one often leads to a substantial increase in speed.” Binary search is generally regarded as a highly efficient search algorithm."
+ },
+ {
+  "id": "cs-2020-hl-q13-b-ii",
+  "topicId": "cs-2-2",
+  "conceptId": "step-through-binary-search-algorithm-finds",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q13(b)(ii)",
+  "questionText": "Step through how the binary search algorithm finds the integer 28 in the list L shown below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "1. Compares 28 to the value in mid (18). It is greater so subarray to the left is dismissed. Now left is = 28, mid = 41, right = 50 (Note: mid may also be 35 depending on code implementation – do not deduct marks) 2. Compares 28 to the value in mid(41 or 35). It is smaller so subarray to the right is dismissed. Now left = 28, mid = 35, right = 41 3. Compares 28 to the value in mid (35). It is smaller so subarray to the right is dismissed. Now left = 28, mid = 28, right =28. Returns index 4 Similar explanations acceptable.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     5
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 5 marks Good description - clear information, lacking full understanding 3 marks Fair description - limited understanding 1 mark"
+   }
+  ],
+  "stem": "In his book The Art of Computer Programming, Donald Knuth states that “searching is the most time‐consuming part of many programs, and the substitution of a good search method for a bad one often leads to a substantial increase in speed.” Binary search is generally regarded as a highly efficient search algorithm.",
+  "figureKey": "computer-science-2020-HL-scheme-q13b-ii",
+  "questionFigureKey": "computer-science-2020-HL-paper-q13b-list",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q13-b-iii",
+  "topicId": "cs-2-2",
+  "conceptId": "maximum-number-comparisons-binary-search-algorithm",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q13(b)(iii)",
+  "questionText": "What is the maximum number of comparisons the binary search algorithm would need to make if the value to be searched for did not exist in a list of 8 items?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "4",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Correct answer 2 marks Any relevant roughwork 1 mark"
+   }
+  ],
+  "stem": "In his book The Art of Computer Programming, Donald Knuth states that “searching is the most time‐consuming part of many programs, and the substitution of a good search method for a bad one often leads to a substantial increase in speed.” Binary search is generally regarded as a highly efficient search algorithm."
+ },
+ {
+  "id": "cs-2020-hl-q13-c",
+  "topicId": "cs-2-2",
+  "conceptId": "study-algorithmic-efficiency-considered-important-computer",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q13(c)",
+  "questionText": "Why is the study of algorithmic efficiency considered to be important in computer science?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "It is important to understand the time and efficiency so that different algorithms can be compared, particularly as data sets grow. It allows for the best algorithm to be selected for the specific problem. The best algorithm should be the fastest and/or use least amount of memory.",
+    "marks": 7,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     7
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 7 marks Good description - clear information, lacking full understanding 5 marks Fair description - limited understanding 3 marks"
+   }
+  ],
+  "stem": "In his book The Art of Computer Programming, Donald Knuth states that “searching is the most time‐consuming part of many programs, and the substitution of a good search method for a bad one often leads to a substantial increase in speed.”"
+ },
+ {
+  "id": "cs-2020-hl-q14-a",
+  "topicId": "cs-1-2",
+  "conceptId": "importance-turing-machines-computational-tool",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q14(a)",
+  "questionText": "Explain the importance of Turing Machines as a computational tool.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Can compute anything that is possible to be computed or any similar explanation.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 4 marks Good description - clear information, lacking full understanding 3 marks Fair description - limited understanding 2 mark"
+   }
+  ],
+  "stem": "Alan Turing is widely regarded as one of the founders of computer science because of his work on the development of the Turing Machine and the Turing Test."
+ },
+ {
+  "id": "cs-2020-hl-q14-b-i",
+  "topicId": "cs-1-2",
+  "conceptId": "significance-s2",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q14(b)(i)",
+  "questionText": "What is the significance of state S2?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "What is the significance of state S2?",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "S2 is the end/final/halt state.",
+      "The FSM is finished computing.",
+      "The problem is computable if it reaches this state (deterministic).",
+      "Any similar explanation."
+     ]
+    },
+    "openList": true,
+    "contextNote": "Good explanation - clear information 2 marks Fair explanation - limited understanding 1 mark"
+   }
+  ],
+  "stem": "Alan Turing is widely regarded as one of the founders of computer science because of his work on the development of the Turing Machine and the Turing Test. The illustration below depicts a Finite State Machine which, for a particular Turing Machine, defines two states, S1 and S2, and three transitions. Study the illustration and answer the questions that follow.",
+  "questionFigureKey": "computer-science-2020-HL-paper-q14-fsm",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q14-b-ii",
+  "topicId": "cs-1-2",
+  "conceptId": "complete-transition-table-based-above-finite",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q14(b)(ii)",
+  "questionText": "Complete the state transition table below based on the above Finite State Machine. The first row has already been completed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "S1 1 1 S1",
+    "marks": 1,
+    "contextNote": "Each correct row 1 mark (rows can be in any order)"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "S1 B 0 S2",
+    "marks": 1
+   }
+  ],
+  "stem": "Alan Turing is widely regarded as one of the founders of computer science because of his work on the development of the Turing Machine and the Turing Test. The illustration below depicts a Finite State Machine which, for a particular Turing Machine, defines two states, S1 and S2, and three transitions. Study the illustration and answer the questions that follow.",
+  "questionFigureKey": "computer-science-2020-HL-paper-q14-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q14-b-iii",
+  "topicId": "cs-1-2",
+  "conceptId": "starting-initial-s1-input-10110b-tape",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q14(b)(iii)",
+  "questionText": "Starting from an initial state of S1 and an input of 10110B, as shown on the tape diagram below, show how the Turing Machine produces an output of 101100. In your answer you should trace the computation clearly by showing the contents of the tape at the end of each state transition. You should complete the tape and the current state for each row. You can assume that the read/write head is moved one place to the right at the end of each step. The first two rows have been completed for you.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Starting from an initial state of S1 and an input of 10110B, as shown on the tape diagram below, show how the Turing Machine produces an output of 101100. In your answer you should trace the computation clearly by showing the contents of the tape at the end of each state transition. You should complete the tape and the current state for each row. You can assume that the read/write head is moved one place to the right at the end of each step. The first two rows have been completed for you.",
+    "marks": 4,
+    "ask": true
+   }
+  ],
+  "stem": "Alan Turing is widely regarded as one of the founders of computer science because of his work on the development of the Turing Machine and the Turing Test. The illustration below depicts a Finite State Machine which, for a particular Turing Machine, defines two states, S1 and S2, and three transitions. Study the illustration and answer the questions that follow.",
+  "figureKey": "computer-science-2020-HL-scheme-q14b-iii",
+  "questionFigureKey": "computer-science-2020-HL-paper-q14-tape",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q14-c",
+  "topicId": "cs-1-2",
+  "conceptId": "discuss-quotation-above-focusing-potential-positive",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q14(c)",
+  "questionText": "Discuss the quotation above, focusing on the potential positive and negative effects of AI on society.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Positives:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Positive impact on human life e.g. identifying cancer, predicting weather, etc.",
+      "Improving daily life – traffic management, shopping suggestions, etc.",
+      "Analysing large datasets, self-learning (machine learning) that humans could not do.",
+      "Always available, no emotional decisions, faster decisions, more accuracy.",
+      "New inventions, solutions or ideas that humans may not think of.",
+      "Any similar suitable answer."
+     ]
+    },
+    "openList": true,
+    "contextNote": "Mark 2 best points for positive and 2 best points for negative. For each of the 4 points (2 positive/2 negative): Good description - clear information 2 marks Fair description - limited understanding 1 marks"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Negatives:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Data privacy issues and potential misuse with the use of existing datasets.",
+      "Ethical issues – no emotion in decision e.g. law, drones in war.",
+      "Unemployment – replace humans in jobs.",
+      "No innovation or creativity – AI is limited by the algorithms on which it is based.",
+      "Risk of creating sentient machines that develop a conscience.",
+      "Any similar suitable answer."
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "stem": "In the mid‐20th century, Turing carried out what is now generally regarded as the earliest substantial work in the field of Artificial Intelligence (AI). There is a lot of controversy and discussion about the area of AI in recent times. Bill Gates stated that “humans should be worried about the threat posed by artificial intelligence”."
+ },
+ {
+  "id": "cs-2020-hl-q15-a",
+  "topicId": "cs-1-3",
+  "conceptId": "whether-would-use-staged-iterative-development",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q15(a)",
+  "questionText": "State whether you would use a staged or iterative development process for the project. Justify your answer by giving two reasons for your decision.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Any suitable reasons that demonstrate understanding. Example reasons for a staged approach include simplicity and clarity. Example reasons for an iterative approach include flexibility and focus on end-user. It is also easy to understand and use.",
+    "marks": 4,
+    "parts": [
+     {
+      "id": "p-1",
+      "verbatim": "Reason 1:",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "p-2",
+      "verbatim": "Reason 2:",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "For each reason: Good description - clear understanding demonstrated 2 marks Fair description - limited understanding 1 mark"
+   }
+  ],
+  "stem": "Rock Paper Scissors is a popular two player game in which each player simultaneously picks one of three objects – rock, paper or scissors. The rules to determine the winner are relatively straightforward: - Rock beats Scissors - Paper beats Rock - Scissors beats Paper If both players choose the same object, the result is a draw (tie). You have been asked to design and develop an interactive computerised Rock Paper Scissors game."
+ },
+ {
+  "id": "cs-2020-hl-q15-b",
+  "topicId": "cs-1-3",
+  "conceptId": "project-manager-main-tasks-will-form",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q15(b)",
+  "questionText": "As project manager one of your main tasks will be to form a project team and assign roles and responsibilities to the team members. Identify two roles that would be appropriate for this project and for each role outline two responsibilities associated with that role.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Role Responsibilities",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Project Manager (Leader/Team Leader) — Planning, monitoring, resourcing, communication",
+      "Analyst — Understands the problem and define the system scope",
+      "Designer — Creates a representation of the system using tools and algorithms",
+      "Programmer / Developer / Coder / Software Engineer — Implements design – writes the programs – unit test",
+      "Testers/Testing — Determines whether the system works as intended",
+      "Any similar role"
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each role: Any relevant role 2 marks Role description rather than name 1 mark Any relevant responsibility related to role 1 mark for each"
+   }
+  ],
+  "stem": "Rock Paper Scissors is a popular two player game in which each player simultaneously picks one of three objects – rock, paper or scissors. The rules to determine the winner are relatively straightforward: - Rock beats Scissors - Paper beats Rock - Scissors beats Paper If both players choose the same object, the result is a draw (tie). You have been asked to design and develop an interactive computerised Rock Paper Scissors game."
+ },
+ {
+  "id": "cs-2020-hl-q15-c-i",
+  "topicId": "cs-1-3",
+  "conceptId": "compare-interfaces-terms-types-applications-functionality",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q15(c)(i)",
+  "questionText": "Compare the two interfaces in terms of the types of applications and the functionality they offer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Type of application: — The game shown in UI1 looks like a web application probably running on a web browser but possibly running on a mobile device such as a tablet. The game shown in UI2 looks a lot more traditional – most likely a windows application running off a desktop or laptop device.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Good comparison - clear information, good understanding 2 marks Fair comparison - limited understanding 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "The basic functionality offered by both examples a game of RPS in which the user plays against the computer/bot. UI1 offers the following additional functionality:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Social media integration (Facebook and Twitter).",
+      "Ability to set and play at different levels (the screen shows the computer is at veteran level).",
+      "A log of the result history (UI2 just shows the result of the most recent game).",
+      "A display of the number of draws (ties).",
+      "UI 1 is more user friendly because it just requires one click to play whereas in UI2 the user is required to choose their move and then click the play button (possibly twice as many clicks)."
+     ]
+    },
+    "contextNote": "Mark 2 best points for comparison of functionality. For each point: Good comparison - clear information, good understanding 2 marks Fair comparison - limited understanding 1 mark"
+   }
+  ],
+  "stem": "Rock Paper Scissors is a popular two player game in which each player simultaneously picks one of three objects – rock, paper or scissors. The rules to determine the winner are relatively straightforward: - Rock beats Scissors - Paper beats Rock - Scissors beats Paper If both players choose the same object, the result is a draw (tie). You have been asked to design and develop an interactive computerised Rock Paper Scissors game. Your project team has identified two user interfaces that they observed in other Rock Paper Scissors games.",
+  "questionFigureKey": "computer-science-2020-HL-paper-q15-ui",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q15-c-ii",
+  "topicId": "cs-1-2",
+  "conceptId": "provide-examples-adaptive-technology-could-incorporated",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2020 HL Q15(c)(ii)",
+  "questionText": "Provide two examples of how adaptive technology could be incorporated into a game of Rock Paper Scissors.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Possible answers",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "voice recognition",
+      "hand gestures",
+      "touch screen interface",
+      "VR/AR (virtual reality/augmented reality)"
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each relevant example 1 mark"
+   }
+  ],
+  "stem": "Rock Paper Scissors is a popular two player game in which each player simultaneously picks one of three objects – rock, paper or scissors. The rules to determine the winner are relatively straightforward: - Rock beats Scissors - Paper beats Rock - Scissors beats Paper If both players choose the same object, the result is a draw (tie). You have been asked to design and develop an interactive computerised Rock Paper Scissors game."
+ },
+ {
+  "id": "cs-2020-hl-q16-a-i",
+  "topicId": "cs-2-2",
+  "conceptId": "insert-comment-say-initialise-score-appropriate",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2020 HL Q16(a)(i)",
+  "questionText": "Insert a comment to say ‘initialise score’ in an appropriate location in the program.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using included solution or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     5
+    ],
+    "contextNote": "(i) 5 marks (A-5 scale) 5 marks Correct response Correct implementation using included solution or similar. 3 marks Almost correct response Comment in inappropriate location. 2 mark Response with some merit Any reasonable attempt at inserting a comment."
+   }
+  ],
+  "stem": "A password strength meter is a mechanism that can be used to safeguard against setting weak passwords. When a user is creating a password for the first time or changing an existing password, a password strength meter can be used to show how resistant the password is to attack. Meters have rules they use to assign points for password strengthening measures such as including combinations of uppercase and lowercase letters as well as numbers and special symbols. This program is designed to calculate and display a score that indicates the strength of a password entered by the user. The variable score is used to store the password strength. This variable is initially set to zero and additional points are added based on the following rules: 1. The password contains more than seven characters: +5 points 2. The password contains at least one lowercase letter: +1 point 3. The password contains a mix of lowercase and uppercase letters. +5 points A sample run of the program is shown below: Enter a password: sunshine 6 Here the user enters the password sunshine and the program calculates and displays a score of 6. This is because the password contains more than seven characters (5 points) and contains lowercase letters (1 point).",
+  "figureKey": "computer-science-2020-HL-scheme-q16a-i",
+  "questionFigureKey": "computer-science-2020-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q16-a-ii",
+  "topicId": "cs-2-2",
+  "conceptId": "amend-program-so-displays-lines-output",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2020 HL Q16(a)(ii)",
+  "questionText": "Amend the program so that is displays two lines of output as follows: - the first line will display the word Password: followed by the password that was entered by the user, and - the second line will display the word Score: followed by the calculated score for that password. When the program is run the output may look as follows: Enter a password: sunshine Password: sunshine Score: 6",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using included solution or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "(ii) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using included solution or similar. 4 marks Almost correct response Correct implementation of only one output using included solution or similar. Minor string concatenation error. 3 marks Response about half-right Correct implementation using included solution or similar but with one syntax error. Only prints both variables (without text). String and variable printed on separate lines. Any other similar half-right response. 2 marks Response with some merit Attempted use of print or similar."
+   }
+  ],
+  "stem": "A password strength meter is a mechanism that can be used to safeguard against setting weak passwords. When a user is creating a password for the first time or changing an existing password, a password strength meter can be used to show how resistant the password is to attack. Meters have rules they use to assign points for password strengthening measures such as including combinations of uppercase and lowercase letters as well as numbers and special symbols. This program is designed to calculate and display a score that indicates the strength of a password entered by the user. The variable score is used to store the password strength. This variable is initially set to zero and additional points are added based on the following rules: 1. The password contains more than seven characters: +5 points 2. The password contains at least one lowercase letter: +1 point 3. The password contains a mix of lowercase and uppercase letters. +5 points A sample run of the program is shown below: Enter a password: sunshine 6 Here the user enters the password sunshine and the program calculates and displays a score of 6. This is because the password contains more than seven characters (5 points) and contains lowercase letters (1 point).",
+  "figureKey": "computer-science-2020-HL-scheme-q16a-ii",
+  "questionFigureKey": "computer-science-2020-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q16-a-iii",
+  "topicId": "cs-2-2",
+  "conceptId": "currently-program-uppercase-letters-hard-coded",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2020 HL Q16(a)(iii)",
+  "questionText": "Currently in the program, the uppercase letters are hard‐coded as the string: \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\" Replace the use of this string with a variable, in a manner similar to that used to represent the lowercase letters. The output of the program should not be changed. You should name the variable UPPER_CASE_LETTERS.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using included solution or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "(iii) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using included solution or similar. 4 marks Almost correct response Correct design of solution evident but syntax/semantic error in implementation. 3 marks Response about half-right Correct implementation of variable declaration but not used in if statement. Variable name changed in if statement but not declared. Any other similar half-right response. 2 mark Response with some merit Any attempt at creating variable or any relevant attempt at changing if statement."
+   }
+  ],
+  "stem": "A password strength meter is a mechanism that can be used to safeguard against setting weak passwords. When a user is creating a password for the first time or changing an existing password, a password strength meter can be used to show how resistant the password is to attack. Meters have rules they use to assign points for password strengthening measures such as including combinations of uppercase and lowercase letters as well as numbers and special symbols. This program is designed to calculate and display a score that indicates the strength of a password entered by the user. The variable score is used to store the password strength. This variable is initially set to zero and additional points are added based on the following rules: 1. The password contains more than seven characters: +5 points 2. The password contains at least one lowercase letter: +1 point 3. The password contains a mix of lowercase and uppercase letters. +5 points A sample run of the program is shown below: Enter a password: sunshine 6 Here the user enters the password sunshine and the program calculates and displays a score of 6. This is because the password contains more than seven characters (5 points) and contains lowercase letters (1 point).",
+  "figureKey": "computer-science-2020-HL-scheme-q16a-iii",
+  "questionFigureKey": "computer-science-2020-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q16-a-iv",
+  "topicId": "cs-2-2",
+  "conceptId": "implement-new-rule-rule-4-so",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2020 HL Q16(a)(iv)",
+  "questionText": "Implement a new rule (rule 4) so that the score is increased by 2 points if the password contains at least one uppercase letter. When the program is run the output may look as follows: Enter a password: Sunshine Password: Sunshine Score: 13",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using included solution or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "(iv) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using included solution or similar. 4 marks Almost correct response Correct design of solution evident but syntax/semantic error in implementation. 3 marks Response about half-right Attempted use of conditional statement or similar. 2 marks Response with some merit Value of the score changed correctly but not inside conditional statement or similar."
+   }
+  ],
+  "stem": "A password strength meter is a mechanism that can be used to safeguard against setting weak passwords. When a user is creating a password for the first time or changing an existing password, a password strength meter can be used to show how resistant the password is to attack. Meters have rules they use to assign points for password strengthening measures such as including combinations of uppercase and lowercase letters as well as numbers and special symbols. This program is designed to calculate and display a score that indicates the strength of a password entered by the user. The variable score is used to store the password strength. This variable is initially set to zero and additional points are added based on the following rules: 1. The password contains more than seven characters: +5 points 2. The password contains at least one lowercase letter: +1 point 3. The password contains a mix of lowercase and uppercase letters. +5 points A sample run of the program is shown below: Enter a password: sunshine 6 Here the user enters the password sunshine and the program calculates and displays a score of 6. This is because the password contains more than seven characters (5 points) and contains lowercase letters (1 point).",
+  "figureKey": "computer-science-2020-HL-scheme-q16a-iv",
+  "questionFigureKey": "computer-science-2020-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q16-a-v",
+  "topicId": "cs-2-2",
+  "conceptId": "implement-new-rule-rule-5-so",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2020 HL Q16(a)(v)",
+  "questionText": "Implement a new rule (rule 5) so that the score is increased by 5 points if the password contains at least one digit (any integer in the range 0 to 9: +5 points). When the program is run the output may look as follows: Enter a password: 3Sunshine Password: 3Sunshine Score: 18",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using included solution or similar.",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10
+    ],
+    "contextNote": "(v) 10 marks (C-10 scale) 10 marks Correct response Correct implementation using included solution or similar. 8 marks Almost correct response Correct design of solution evident but syntax/semantic error in implementation. Correct design of solution but flag not initialised. 6 marks Response more than half-right Correct implementation of solution to determine that the password contains at least one digit (e.g. flag is set correctly by searching through the string for digits, but not tested). 4 marks Response about half-right Attempted use of conditional statement to test flag. Any reasonable attempt to create digits variable, list or flag or use of isdigit() function on whole password. 2 marks Response with some merit Value of the score changed correctly but no attempt to set or test flag."
+   }
+  ],
+  "stem": "A password strength meter is a mechanism that can be used to safeguard against setting weak passwords. When a user is creating a password for the first time or changing an existing password, a password strength meter can be used to show how resistant the password is to attack. Meters have rules they use to assign points for password strengthening measures such as including combinations of uppercase and lowercase letters as well as numbers and special symbols. This program is designed to calculate and display a score that indicates the strength of a password entered by the user. The variable score is used to store the password strength. This variable is initially set to zero and additional points are added based on the following rules: 1. The password contains more than seven characters: +5 points 2. The password contains at least one lowercase letter: +1 point 3. The password contains a mix of lowercase and uppercase letters. +5 points A sample run of the program is shown below: Enter a password: sunshine 6 Here the user enters the password sunshine and the program calculates and displays a score of 6. This is because the password contains more than seven characters (5 points) and contains lowercase letters (1 point).",
+  "figureKey": "computer-science-2020-HL-scheme-q16a-v",
+  "questionFigureKey": "computer-science-2020-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q16-a-vi",
+  "topicId": "cs-2-2",
+  "conceptId": "implement-new-rule-rule-6-so",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2020 HL Q16(a)(vi)",
+  "questionText": "Implement a new rule (rule 6) so that the score is increased by: • 1 point if the first character of the password is a digit • 1 point if the last character of the password is a digit • 2 extra points if both the first and the last characters of the password are digits When the program is run the output may look as follows: Enter a password: 3Sunshine7 Password: 3Sunshine7 Score: 22",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using included solution or similar (optimal).",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "(vi) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using included solution or similar (optimal). Do not award full marks if solution is inside the for loop. 4 marks Almost correct response Correct design of solution evident but syntax/semantic error in implementation. Correct implementation but the if statements are inside the for loop (suboptimal). 3 marks Response about half-right Implements any part of the rule correctly using the included solution or similar. 2 marks Response with some merit Attempted use of any combination of conditional statement and string index. Use of conditional statements and attempt at finding a specific character in the string. Value of the score changed correctly."
+   }
+  ],
+  "stem": "A password strength meter is a mechanism that can be used to safeguard against setting weak passwords. When a user is creating a password for the first time or changing an existing password, a password strength meter can be used to show how resistant the password is to attack. Meters have rules they use to assign points for password strengthening measures such as including combinations of uppercase and lowercase letters as well as numbers and special symbols. This program is designed to calculate and display a score that indicates the strength of a password entered by the user. The variable score is used to store the password strength. This variable is initially set to zero and additional points are added based on the following rules: 1. The password contains more than seven characters: +5 points 2. The password contains at least one lowercase letter: +1 point 3. The password contains a mix of lowercase and uppercase letters. +5 points A sample run of the program is shown below: Enter a password: sunshine 6 Here the user enters the password sunshine and the program calculates and displays a score of 6. This is because the password contains more than seven characters (5 points) and contains lowercase letters (1 point).",
+  "figureKey": "computer-science-2020-HL-scheme-q16a-vi",
+  "questionFigureKey": "computer-science-2020-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q16-a-vii",
+  "topicId": "cs-2-2",
+  "conceptId": "implement-new-rule-rule-7-so",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2020 HL Q16(a)(vii)",
+  "questionText": "Implement a new rule (rule 7) so that the score is reduced by 10 points if the password contains only digits. When the program is run the output may look as follows: Enter a password: 1234 Password: 1234 Score: -1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using included solution or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "(vii) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using included solution or similar. 4 marks Almost correct response Correct design of solution evident but syntax/semantic error in implementation. 3 marks Response about half-right Relevant attempt at including a condition to test any of digits, lowercase and uppercase. 2 marks Response with some merit Value of the score changed correctly."
+   }
+  ],
+  "stem": "A password strength meter is a mechanism that can be used to safeguard against setting weak passwords. When a user is creating a password for the first time or changing an existing password, a password strength meter can be used to show how resistant the password is to attack. Meters have rules they use to assign points for password strengthening measures such as including combinations of uppercase and lowercase letters as well as numbers and special symbols. This program is designed to calculate and display a score that indicates the strength of a password entered by the user. The variable score is used to store the password strength. This variable is initially set to zero and additional points are added based on the following rules: 1. The password contains more than seven characters: +5 points 2. The password contains at least one lowercase letter: +1 point 3. The password contains a mix of lowercase and uppercase letters. +5 points A sample run of the program is shown below: Enter a password: sunshine 6 Here the user enters the password sunshine and the program calculates and displays a score of 6. This is because the password contains more than seven characters (5 points) and contains lowercase letters (1 point).",
+  "figureKey": "computer-science-2020-HL-scheme-q16a-vii",
+  "questionFigureKey": "computer-science-2020-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q16-a-viii",
+  "topicId": "cs-2-2",
+  "conceptId": "change-rule-1-so-score-adjusted",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2020 HL Q16(a)(viii)",
+  "questionText": "Change rule 1 so that the score is adjusted according to the password lengths as shown in the following table. The table below shows the scores that would be awarded for a variety of passwords. You could use this information to test your program.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using included solution or similar (optimal).",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10
+    ],
+    "contextNote": "(viii) 10 marks (C-10 scale) 10 marks Correct response Correct implementation using included solution or similar (optimal). 8 marks Almost correct response Correct implementation using multiple if statements instead of using elif (suboptimal). 6 marks Response more than half-right Code runs but solution is incorrect due to one semantic error e.g. error in conditionals. Any two parts of the solution correctly implemented. Correct implementation using included solution or similar but one syntax error (e.g. relational operators correctly identified and combined using the logical and operator or similar). 4 marks Response about half-right Attempted use of conditional statement and relational operators (correctly identified) or similar. 2 marks Response with some merit Value of the score changed correctly."
+   }
+  ],
+  "stem": "A password strength meter is a mechanism that can be used to safeguard against setting weak passwords. When a user is creating a password for the first time or changing an existing password, a password strength meter can be used to show how resistant the password is to attack. Meters have rules they use to assign points for password strengthening measures such as including combinations of uppercase and lowercase letters as well as numbers and special symbols. This program is designed to calculate and display a score that indicates the strength of a password entered by the user. The variable score is used to store the password strength. This variable is initially set to zero and additional points are added based on the following rules: 1. The password contains more than seven characters: +5 points 2. The password contains at least one lowercase letter: +1 point 3. The password contains a mix of lowercase and uppercase letters. +5 points A sample run of the program is shown below: Enter a password: sunshine 6 Here the user enters the password sunshine and the program calculates and displays a score of 6. This is because the password contains more than seven characters (5 points) and contains lowercase letters (1 point).",
+  "figureKey": "computer-science-2020-HL-scheme-q16a-viii",
+  "questionFigureKey": "computer-science-2020-HL-paper-q16a-viii",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q16-b-i",
+  "topicId": "cs-2-2",
+  "conceptId": "amend-program-so-output-displayed-format",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2020 HL Q16(b)(i)",
+  "questionText": "Amend the program so that the output is displayed in the following format: Score Password ----- -------- 1 sun 6 Sun 11 Sunshine 0 12345 5 123456789",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using included solution or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "(i) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using included solution or similar. 4 marks Almost correct response Correct design of solution evident but syntax/semantic error in implementation. Correct implementation but display incorrect (e.g. did not use \\t). 3 marks Response about half-right Correct use of only one print statement or similar. Variables are displayed on separate lines. 2 marks Response with some merit Attempt at using print statement or similar."
+   }
+  ],
+  "stem": "This program is very similar to that provided for part (a) with two main differences: - The code to calculate the password score is contained in a function definition called calculate_score. This function accepts a parameter called password and returns the calculated score. - Instead of prompting the user to enter a single password this program, uses a list of hard‐coded passwords called test_passwords. When the program is run it loops through each password in the list test_passwords. As it does so, it calculates and displays the score of each password.",
+  "figureKey": "computer-science-2020-HL-scheme-q16b-i",
+  "questionFigureKey": "computer-science-2020-HL-paper-q16b-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q16-b-ii",
+  "topicId": "cs-2-2",
+  "conceptId": "insert-line-code-change-password-contained",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2020 HL Q16(b)(ii)",
+  "questionText": "Insert a line of code to change the password contained at index 4 of the list test_passwords from 123456789 to Moonlight. When the program is run the output may look as follows: Score Password ----- -------- 1 sun 6 Sun 11 Sunshine 0 12345 11 Moonlight",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using included solution or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "(ii) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using included solution or similar. 4 marks Almost correct response Correct design of solution evident but syntax/semantic error in implementation. Changes the wrong password (e.g. index 5) or similar. 3 marks Response about half-right Good attempt at changing the password. 2 marks Response with some merit Hard-coded change of the password in the list."
+   }
+  ],
+  "stem": "This program is very similar to that provided for part (a) with two main differences: - The code to calculate the password score is contained in a function definition called calculate_score. This function accepts a parameter called password and returns the calculated score. - Instead of prompting the user to enter a single password this program, uses a list of hard‐coded passwords called test_passwords. When the program is run it loops through each password in the list test_passwords. As it does so, it calculates and displays the score of each password.",
+  "figureKey": "computer-science-2020-HL-scheme-q16b-ii",
+  "questionFigureKey": "computer-science-2020-HL-paper-q16b-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q16-b-iii",
+  "topicId": "cs-2-2",
+  "conceptId": "amend-program-so-determines-displays-weakest",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2020 HL Q16(b)(iii)",
+  "questionText": "Amend the program so that it determines and displays the weakest password in the list along with its score. When the program is run the output may look as follows: Score Password ----- -------- 1 sun 6 Sun 11 Sunshine 0 12345 11 Moonlight The weakest password is: 12345 Score: 0",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using included solution or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "(iii) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using included solution or similar. 4 marks Almost correct response Correct design of solution evident but syntax/semantic error in implementation. Evidence of attempt to use loop to find the weakest password. 3 marks Response about half-right Program runs but incorrect implementation – identifies the wrong password but has used variables and conditional statement. 2 marks Response with some merit Not working but creates variable(s) and uses conditional statement. Only uses conditional statement and does not store the password in a variable. Creates a variable to store the password but no conditional. Evidence of link between weakest password and the score. Hard-coded password displayed in the correct message. Attempt at sorting list of scores."
+   }
+  ],
+  "stem": "This program is very similar to that provided for part (a) with two main differences: - The code to calculate the password score is contained in a function definition called calculate_score. This function accepts a parameter called password and returns the calculated score. - Instead of prompting the user to enter a single password this program, uses a list of hard‐coded passwords called test_passwords. When the program is run it loops through each password in the list test_passwords. As it does so, it calculates and displays the score of each password.",
+  "figureKey": "computer-science-2020-HL-scheme-q16b-iii",
+  "questionFigureKey": "computer-science-2020-HL-paper-q16b-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q16-b-iv",
+  "topicId": "cs-2-2",
+  "conceptId": "write-function-definition-called-strong-accepts",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2020 HL Q16(b)(iv)",
+  "questionText": "Write a function definition called is_strong which accepts a password as a parameter and returns True if the password is strong; False otherwise. A password is deemed strong if it contains more than seven characters and both lowercase and uppercase letters. The first line of the function definition will look like this: def is_strong(password):",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using included solution or similar.",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8,
+     10
+    ],
+    "contextNote": "(iv) 10 marks (C-10 scale) 10 marks Correct response Correct implementation using included solution or similar. 8 marks Almost correct response Correct design of solution evident but syntax/semantic error in implementation. 6 marks Response more than half-right Correct implementation of test for any two of length, lowercase and uppercase inside the function definition. Function returns Boolean value. 4 marks Response about half-right Correct implementation of test for any one of length, lowercase and uppercase inside the function definition. 2 marks Response with some merit Reasonable attempt at defining function (e.g. function header and body placed at an appropriate location in the program)."
+   }
+  ],
+  "stem": "This program is very similar to that provided for part (a) with two main differences: - The code to calculate the password score is contained in a function definition called calculate_score. This function accepts a parameter called password and returns the calculated score. - Instead of prompting the user to enter a single password this program, uses a list of hard‐coded passwords called test_passwords. When the program is run it loops through each password in the list test_passwords. As it does so, it calculates and displays the score of each password.",
+  "figureKey": "computer-science-2020-HL-scheme-q16b-iv",
+  "questionFigureKey": "computer-science-2020-HL-paper-q16b-code",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2020-hl-q16-b-v",
+  "topicId": "cs-2-2",
+  "conceptId": "modify-program-so-calls-function-strong",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "computer-science",
+  "section": "C",
+  "questionRef": "2020 HL Q16(b)(v)",
+  "questionText": "Modify the program so that it calls the function is_strong for each password in the list test_passwords and displays all the strong passwords. When the program is run the output may look as follows: Score Password ----- -------- 1 sun 6 Sun 11 Sunshine 0 12345 11 Moonlight The weakest password is: 12345 Score: 0 The strong passwords are: Sunshine Moonlight",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct implementation using included solution or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "(v) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using included solution or similar. Correct code but returns incorrect solution due incorrect function definition in previous question (no double penalty). 4 marks Almost correct response Correct design of solution evident but syntax/semantic error in implementation. 3 marks Response about half-right Correct solution but without using function calls or similar. Correct use of loop and conditional only or similar. 2 marks Response with some merit Attempt at making function call (outside loop/conditional). Use of print statement."
+   }
+  ],
+  "stem": "This program is very similar to that provided for part (a) with two main differences: - The code to calculate the password score is contained in a function definition called calculate_score. This function accepts a parameter called password and returns the calculated score. - Instead of prompting the user to enter a single password this program, uses a list of hard‐coded passwords called test_passwords. When the program is run it loops through each password in the list test_passwords. As it does so, it calculates and displays the score of each password.",
+  "figureKey": "computer-science-2020-HL-scheme-q16b-v",
+  "questionFigureKey": "computer-science-2020-HL-paper-q16b-code",
+  "questionFigureIncludesPrompt": false
  }
 ]
