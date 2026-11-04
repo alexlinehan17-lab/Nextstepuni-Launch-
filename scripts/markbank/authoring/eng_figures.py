@@ -546,6 +546,9 @@ REJECTED = {
     (2026, 'ol', 1, 'm', None): 'takes in Q1(l)\'s "(iii) Pilot hole." above it',
     **{(2026, 'ol', 7, 'b', r): 'cuts off the "Body" and "Hole" dimensions the ask reads'
        for r in ('i', 'ii', 'iii', 'iv')},
+    # 2018 Ordinary, looked at 2026-11-04 (the residue cuts it by eye):
+    (2018, 'ol', 1, 'f', None): 'takes in the end of (d)\'s line above and the USB cable\'s '
+                                'corner',
     # 2018 Higher, looked at 2026-11-04 (the residue cuts each by eye):
     **{(2018, 'hl', 1, 'o', r): 'cuts off propellers B and C and their letters'
        for r in ('i', 'ii')},

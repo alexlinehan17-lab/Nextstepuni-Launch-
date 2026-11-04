@@ -711,6 +711,9 @@ SHORT_ASKS = {
                                                     'application of each instrument named."'),
     ('engineering', 2018, 'ol', 'Q7(c)(iv)'): ('A', 'p8: the caption "(iv)" under the fourth instrument photograph; the word '
                                                     'read is the label "A" of the OR branch\'s circuit photograph'),
+    ('engineering', 2018, 'ol', 'Q6(c)(iv)'): ('CAM.', 'p7: the term "(iv) CAM." in "(i) Safety guard (ii) Stepper motor '
+                                                       '(iii) Part programme (iv) CAM." under the OR branch\'s "Describe any '
+                                                       'three of the following in relation to the operation of a CNC lathe:"'),
     **{('engineering', 2019, 'ol', f'Q6(a)({r})'): ('', f'p7: the caption "({r})" under the {n} of four lathe-part photographs, '
                                                        'under "Name any three of the lathe parts shown."')
        for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
