@@ -1121,7 +1121,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Allow strengthening to start earlier (weight taken off injured limb), measurable outcomes, etc.",
+    "verbatim": "• Rehabilitation from injury: Allow strengthening to start earlier (weight taken off injured limb), measurable outcomes, etc.",
     "marks": 4,
     "openList": true
    },
@@ -21790,7 +21790,7 @@
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Solar irradiance sensors measure the intensity of sunlight to determine the energy available for conversion.",
+    "verbatim": "• Sensors: Solar irradiance sensors measure the intensity of sunlight to determine the energy available for conversion.",
     "marks": null,
     "openList": true
    },

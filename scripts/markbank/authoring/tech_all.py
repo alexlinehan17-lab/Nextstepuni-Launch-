@@ -76,6 +76,10 @@ NOT_A_POINT = re.compile(
     r'|answer\s+\d\([a-d]\)\s+(?:and|or)\s+\d\([a-d]\)'
     r'|[^.?!]{0,28}:)\s*$', re.I)
 
+# A scheme line that is nothing but a bulleted label: "• Rehabilitation from
+# injury:".
+BULLET_LABEL = re.compile(r'^[\u2022\u25aa\u25cf\u25e6]\s*[^:\u2022]{2,60}:$')
+
 # The examiner's closing remark on a list -- "Suggested elements, other
 # viable answers accepted." under 2026 Higher Q11's three -- is not a fourth
 # element. It is dropped only where other points stand: where it is the
@@ -378,7 +382,14 @@ def reflow(points, scheme_norm=''):
             # three layouts, 2025 Higher 12). Longer and it is a sentence.
             heading = (prev.endswith(':') and len(prev) <= 40
                        and not re.search(r'[.?!]', prev) and not CALCULATION.search(text)
-                       and not EXAMINER_LEAD.match(prev) and not NOT_A_POINT.match(prev))
+                       and not EXAMINER_LEAD.match(prev)
+                       # A bulleted label is a heading at any length: the
+                       # short-colon rule below would otherwise throw away
+                       # "• Rehabilitation from injury:" (28 characters) as
+                       # no point while "• Professional athletics and
+                       # sports:" (35) joined its answer -- 2019 Higher 3(a)
+                       # shipped its first row without its lead.
+                       and (BULLET_LABEL.match(prev) or not NOT_A_POINT.match(prev)))
             if heading:
                 joined = f'{prev} {text}'
                 if not scheme_norm or SCHEME_NORM(joined) in scheme_norm:
