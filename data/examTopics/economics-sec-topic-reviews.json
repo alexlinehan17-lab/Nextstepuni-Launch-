@@ -2,7 +2,7 @@
   "subjectId": "economics",
   "authority": "SEC question paper; canonical curriculum node IDs",
   "reviewedAt": "2026-11-04",
-  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2012-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 31 physical variants pending.",
+  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2011 Higher, 2012-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 30 physical variants pending.",
   "questions": [
     {
       "level": "higher",
@@ -9558,6 +9558,272 @@
       ],
       "reason": "The current budget deficit, progressive tax, VAT, carbon taxes, the household charge, the NTMA and the national debt are Fiscal Policy & the Budget (3-1); nationalisation is also Government Intervention (1-3), and economic recession Economic Growth (3-5). Six tasks totalling 75. a any three of the four terms at 7: one card. b(i) the three taxes at 5; b(ii) one effect each for households, retailers and the current budget deficit at 5 (2 + 3): three heading rows. c(i) 8; c(ii) 6; c(iii) 2 at 5 (2 + 3) from seven.",
       "paperSha256": "c7dc8684cc5019e3a5a9ed353fb0c05bc3d8a3348436f42552f3af21fc74d26a"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "1",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-3-3"
+      ],
+      "reason": "Constructing the CPI is Monetary Policy & Inflation (3-3). Four steps from five at 4.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "2",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-1-0"
+      ],
+      "reason": "A mixed economy is The Market Economy (1-0), as earlier reviews file economic systems. 16 (12 + 4): the definition 12 and the two examples 4 between them, 2 each, from five (read in printed order, as 2014 HL prices its explanation 12 and example 4).",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "3",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "reason": "Perfect competition, imperfect competition and monopoly are Market Structures (2-0). One card for the four statements, 4 each: the paper numbers them (i)-(iv), and the card covers all four.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "4",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1"
+      ],
+      "reason": "The NTMA and the national debt are Fiscal Policy & the Budget (3-1). Three areas from nine: 10 + 4 + 2.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "5",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-2-1"
+      ],
+      "reason": "Occupational mobility of labour is The Labour Market (2-1). 16 (12 + 4): the definition 12 and the two factors 4 between them, 2 each, from four (read as Q2 is).",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "6",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-4-2"
+      ],
+      "reason": "A falling euro against the dollar is International Trade & Competitiveness (4-2). Two effects from five: 9 + 8.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "7",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-4-1"
+      ],
+      "reason": "Multinationals re-locating to Southeast Asia are Globalisation (4-1). Three reasons from five: 10 + 5 + 2.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "8",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-1-4"
+      ],
+      "reason": "Cross elasticity of demand is Elasticity (1-4). 17 (8 + 5 + 2 + 2), read in printed order: the formula and working 8 (hidden working crop), the answer 5, complement 2, the negative CED 2.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "9",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-3-4"
+      ],
+      "reason": "Mortgage arrears and what lenders can do are Financial Sector (3-4). Two reasons from four and two actions from six on one ladder: 5 + 4 + 4 + 4.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "B1",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-1-1"
+      ],
+      "reason": "Individual and market demand, movements along and shifts in demand, diminishing marginal utility and the equi-marginal principle are The Consumer (Demand) (1-1). Six tasks totalling 75. a(i) the two definitions 6, which the scheme does not divide: questionTotal, unpriced rows; a(ii) each consumer’s diagram 3 (its axes and D/C at 1), the market diagram 5 (its axes at 1 and the cumulative D/C 3) and the explanation 3 (hidden solution diagrams). b(i) a movement along 8 and a shift 8, each with its diagram (hidden solution diagrams); b(ii) 2 at 7 from six. c(i) 2 at 6 from four; c(ii) 13 (9 + 4), the working 9 and the answer 4 in printed order (hidden working crop).",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "B2",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "reason": "Oligopoly, the kinked demand curve and price and non-price competition are Market Structures (2-0). Four cards for six asks totalling 75. a(i) 3 at 5 from six; a(ii) 2 at 5 from four. b(i)-(ii) one card, as the scheme prices one diagram for both: the diagram 9 (its nine elements at 1, hidden solution diagram), the shape 8 and the equilibrium 8, neither divided. c(i)-(ii) one card, as the scheme prices the two reasons and two benefits on one ladder: 7 + 6 + 6 + 6.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "B3",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-2-1",
+        "economics-3-5",
+        "economics-2-2",
+        "economics-3-0"
+      ],
+      "reason": "Marginal revenue productivity is The Labour Market (2-1); investment and what influences it are Economic Growth (3-5) and also National Income (3-0); public transport against new roads is externalities, Market Failure (2-2), as 2014 HL files a public investment’s social costs and benefits. Six tasks totalling 75. a(i) 5; a(ii) 2 at 5 from seven; a(iii) 2 at 5 from three. b(i) 3 at 5 from six; b(ii) 3 at 5 from eight. c 2 advantages at 5 from seven + 2 disadvantages at 5 from seven.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "B4",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-1-5",
+        "economics-4-2",
+        "economics-1-2",
+        "economics-2-2"
+      ],
+      "reason": "Marginal and average cost, profit and the short-run AC curve are Costs of Production, Revenue & Profit (1-5); falling costs and competitiveness are International Trade & Competitiveness (4-2); restrictions on business growth are The Firm (Supply) (1-2); the private and social costs of an oil spill are externalities, Market Failure (2-2). Five tasks totalling 75. a(i) the three calculations 12, which the scheme does not divide: questionTotal, unpriced rows (the paper’s table beside the ask, hidden working crop); a(ii) the diagram 12 and the explanation 6 (hidden solution diagram). b(i) 3 at 5 from six; b(ii) 3 at 5 from six. c two private costs from eight and two social costs from five on one ladder: 4 + 4 + 4 + 3.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "B5",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-1-3"
+      ],
+      "reason": "Fiscal policy, reducing the deficit and the public sector wage bill are Fiscal Policy & the Budget (3-1); privatisation is Government Intervention (1-3), as earlier reviews file it. Five tasks totalling 75. a(i) 10; a(ii) 4 at 5 from eight. b(i) 5; b(ii) four arguments in favour OR four against is a printed choice and the scheme credits each with its own column, 4 at 5: one route each, counted once. c four measures from five: 7 + 7 + 3 + 3.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "B6",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-3-4",
+        "economics-3-3"
+      ],
+      "reason": "The functions of money, the lender of last resort and bank regulation are Financial Sector (3-4); monetary policy and rising interest rates are Monetary Policy & Inflation (3-3). Five tasks totalling 75. a(i) the four functions at 5; a(ii) 8; a(iii) 7. b 4 at 5 from six. c 4 at 5 from nine.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "B7",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-3-5"
+      ],
+      "reason": "GDP, GNP and the multiplier are National Income (3-0); the effects of faster economic growth are Economic Growth (3-5). Six tasks totalling 75. a(i) GDP 7 + GNP 7; a(ii) 16 over three reasons for an ask of two: 8 each. b(i) 8; b(ii) 8 by either method (hidden working crop); b(iii) 9 over three points the scheme does not divide: questionTotal, unpriced rows. c 4 at 5 from eleven, positive and negative.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2011,
+      "n": "B8",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-3-5",
+        "economics-3-2",
+        "economics-3-1"
+      ],
+      "reason": "The census and its uses are Economic Growth (3-5), as 2016 OL and 2017 OL file it; net outward migration and measures to reduce unemployment are Employment & Unemployment (3-2); the EU/IMF financial support is Fiscal Policy & the Budget (3-1). Four tasks totalling 75. a 4 at 5 from eight, at least one for government and one for business. b the compulsory point 4 + 3 other points at 7 from five. c(i) 2 at 5 from eight; c(ii) 4 at 5 from ten, positive and negative.",
+      "paperSha256": "a376c0faf34bd22444047fe5c486e93d7819d2a90766554e78a711652d9442b2"
     }
   ]
 }

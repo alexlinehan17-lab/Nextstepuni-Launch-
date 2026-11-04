@@ -30,6 +30,1323 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sa-q1", topicId: "economics-3-3", conceptId: "constructing-the-cpi",
+    section: "A", questionRef: "2011 HL Section A Q1",
+    questionText: "State four steps involved in constructing a Consumer Price Index (CPI).",
+    tariffModel: {"kind":"fixed","notation":"4 @ 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A step — any four", marks: 16, contextNote: "Four steps, 4 points x 4 marks each = 16 marks.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Determine the commodities to be included in the index. What the average Irish family buys frequently and in large quantities (National Average Family Shopping Basket).","Determine prices in the base year.","Calculate a Simple Price Index (SPI) for each commodity.","Determine the weight to be attached to each commodity.","Multiply the SPI for each commodity by its ‘weight’ and add to derive the CPI."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sa-q2", topicId: "economics-1-0", conceptId: "ireland-as-a-mixed-economy",
+    section: "A", questionRef: "2011 HL Section A Q2",
+    questionText: "Define a mixed economy. State two examples of economic activity which supports the view that Ireland is a mixed economy.",
+    tariffModel: {"kind":"fixed","notation":"12 + 2 @ 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-definition", kind: "point", verbatim: "An economy that incorporates elements of both central planning (government involvement) and private enterprise in its economic system.", marks: 12, contextNote: "The definition, 12 marks: the scheme prints 16 marks (12+4) beneath its definition and its examples, read here in that order, the definition 12 and the two examples 4 between them (2014 HL prices an explanation 12 and its example 4 the same way).", openList: true },
+    { id: "r-examples", kind: "anyN", verbatim: "An example — any two", marks: 4, contextNote: "Two examples, the 4 marks shared between them, 2 each.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Existence of Social Partnership Allows for the involvement of the government and other social partners in setting and achieving targets, over a specified period of time.","Existence of semi-state bodies and private enterprise Both producing goods and supplying services in areas like transport, energy and communications.","Government Departments / Regulators Regulate economic activities through their actions e.g. the financial services regulator.","Legislation passed by Government Controls the activities of individuals / firms, such as the various labour laws e.g. Minimum Wage Law / Planning Laws / Companies Acts etc.","Use of taxation / government expenditure The use of fiscal policy by the government affects economic activity and can alter market outcomes."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sa-q3", topicId: "economics-2-0", conceptId: "which-market-structure",
+    section: "A", questionRef: "2011 HL Section A Q3(i)–(iv)",
+    questionText: "Name the market structure (Perfect Competition, Imperfect Competition or Monopoly) to which each statement below is most likely to apply: (i) The firm has a perfectly elastic demand curve. (ii) The product of the firm is unique. (iii) Restaurants could be an example of this market structure. (iv) Average costs of the firm are at a minimum.",
+    tariffModel: {"kind":"fixed","notation":"4 @ 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-i", kind: "point", verbatim: "The firm has a perfectly elastic demand curve. — Perfect Competition", marks: 4, contextNote: "Statement (i), 4 marks: 4 correct responses x 4 marks each = 16 marks.", openList: true },
+    { id: "r-ii", kind: "point", verbatim: "The product of the firm is unique. — Monopoly", marks: 4, contextNote: "Statement (ii), 4 marks: 4 correct responses x 4 marks each = 16 marks.", openList: true },
+    { id: "r-iii", kind: "point", verbatim: "Restaurants could be an example of this market structure. — Imperfect Competition", marks: 4, contextNote: "Statement (iii), 4 marks: 4 correct responses x 4 marks each = 16 marks.", openList: true },
+    { id: "r-iv", kind: "point", verbatim: "Average costs of the firm are at a minimum. — Perfect Competition", marks: 4, contextNote: "Statement (iv), 4 marks: 4 correct responses x 4 marks each = 16 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sa-q4", topicId: "economics-3-1", conceptId: "what-the-ntma-does",
+    section: "A", questionRef: "2011 HL Section A Q4",
+    questionText: "Outline three areas of responsibility of the National Treasury Management Agency (NTMA).",
+    tariffModel: {"kind":"fixed","notation":"10 + 4 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An area of responsibility — any three", marks: 16, contextNote: "Three areas: 16 marks (10+4+2), the first correct 10, the 2nd 4 and the 3rd 2.", openList: true, group: {"claimMax":3,"perOption":10,"options":["Borrowing on behalf of the Irish Government / sale of government bonds.","Managing the Irish National Debt on behalf of the government.","Managing the National Pension Reserve Fund.","Managing other government funds such as the Social Insurance Fund and Dormant Account Fund.","Borrowing on behalf of the Housing Finance Agency.","Providing financial advice, possibly funding, and providing guarantees for all major public investment projects carried out by the National Development Finance Agency operating through the NTMA.","Providing a Central Treasury Service for the taking of deposits and lending to local government bodies, and liquidity management for the Central Bank and Financial Services Authority of Ireland.","Personal injuries claims brought against Government departments and other State Authorities/ the State’s Clinical Indemnity Scheme managed by the NTMA as the State Claims Agency.","Acting as Ireland’s agent for the purchase of carbon credits."],"perOptionSteps":[10,4,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sa-q5", topicId: "economics-2-1", conceptId: "occupational-mobility-of-labour",
+    section: "A", questionRef: "2011 HL Section A Q5",
+    questionText: "Define the term occupational mobility of labour. Outline two factors which can influence it.",
+    tariffModel: {"kind":"fixed","notation":"12 + 2 @ 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-definition", kind: "point", verbatim: "the ability/ease of a worker to move from one job to another.", marks: 12, contextNote: "The definition, 12 marks: the scheme prints 16 marks (12+4) beneath its definition and its factors, read here in that order, the definition 12 and the two factors 4 between them.", openList: true },
+    { id: "r-factors", kind: "anyN", verbatim: "A factor — any two", marks: 4, contextNote: "Two factors, the 4 marks shared between them, 2 each.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Availability and access to affordable education courses","Availability and access to training, re-training courses and courses to update skills.","Government policies which aid mobility i.e. work permits; elimination of language / cultural barriers; offering internship programmes.","Reduced barriers for entry to some occupations e.g. journalism; medicine, teaching etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sa-q6", topicId: "economics-4-2", conceptId: "a-falling-euro-against-the-dollar",
+    section: "A", questionRef: "2011 HL Section A Q6",
+    questionText: "Outline two possible economic effects for the Irish economy of the euro (€) falling in value relative to the US dollar ($).",
+    tariffModel: {"kind":"fixed","notation":"9 + 8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: 17, contextNote: "Two effects: 17 marks (9 + 8 ), the first correct 9 and the 2nd 8.", openList: true, group: {"claimMax":2,"perOption":9,"options":["Import prices (from US) dearer Price of imports from US increased. This will result in a higher import bill for Irish producers / decrease in imports from the US. The cost of Irish people visiting the US is dearer so less Irish people may holiday there.","Export prices (to US) cheaper Price of exports from Ireland to US decrease and therefore are easier to sell. This may result in increased exports to the US. The cost of Americans visiting Ireland is cheaper so more Americans may holiday here.","Employment opportunities With a possible increase in exports, employment in those industries which depend on Irish exports to the US may increase.","Economic growth may increase With job creation, spending within the economy may rise. Expenditure by the government on social welfare would decrease. Combined, these will impact positively on the rate of economic growth.","US Investment in Ireland It may be less costly for US firms to purchase capital goods/invest in Ireland, so investment may increase."],"perOptionSteps":[9,8]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sa-q7", topicId: "economics-4-1", conceptId: "why-multinationals-move-to-southeast-asia",
+    section: "A", questionRef: "2011 HL Section A Q7",
+    questionText: "State three reasons why multinational firms are re-locating to countries like Vietnam, Indonesia and Thailand in Southeast Asia.",
+    tariffModel: {"kind":"fixed","notation":"10 + 5 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any three", marks: 17, contextNote: "Three reasons: 17 marks (10+5+2), the first correct 10, the 2nd 5 and the 3rd 2.", openList: true, group: {"claimMax":3,"perOption":10,"options":["Lower wage costs: wage rates outside Ireland are lower.","Lower costs of production: firms may avail of more competitive energy prices; utility charges; insurance costs; professional fees etc.","Less restrictive regulatory framework: regulations may be less strict making it easier to operate e.g. protection of the environment may face less regulation.","Emerging economies are in a growth phase: access to growing international markets/new markets.","Development in communications technology: access to speedier broadband."],"perOptionSteps":[10,5,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sa-q8", topicId: "economics-1-4", conceptId: "cross-elasticity-of-good-a",
+    section: "A", questionRef: "2011 HL Section A Q8",
+    stem: "A consumer buys 20 units of Good A when the price of Good B is €8. When the price of Good B rises to €10 (the price of Good A remaining unchanged) the consumer buys 12 units of Good A.",
+    questionText: "Using an appropriate formula, calculate this consumer’s cross elasticity of demand for Good A. (Show your workings.) Is Good A a substitute for, or a complement to, Good B? Explain you answer.",
+    tariffModel: {"kind":"fixed","notation":"8 + 5 + 2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-working", kind: "point", verbatim: "Using an appropriate formula", marks: 8, contextNote: "The formula and working, 8 marks: the scheme prints 17 marks (8+5+2+2) beneath its formula and working, its answer, “Complement” and its reason, read here in that order. The working is shown with the answer: the change in A (-8) over the change in B’s price (€2), times (€8 + €10) over (20 + 12).", openList: true, ask: true },
+    { id: "r-answer", kind: "point", verbatim: "= - 2.25", marks: 5, contextNote: "The answer, 5 marks.", openList: true },
+    { id: "r-complement", kind: "point", verbatim: "Good A is a Complement.", marks: 2, contextNote: "A complement, 2 marks.", openList: true },
+    { id: "r-why", kind: "point", verbatim: "It has a negative CED.", marks: 2, contextNote: "Why, 2 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2011-HL-scheme-p08-q8-working",
+          "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p08-q8-working.png",
+          "srcHash": "5e29ff9814fb861fa5d050c487fabd49",
+          "alt": "The marking scheme’s working: the formula, the change in QA over the change in PB, times (PB1 + PB2) over (QA1 + QA2); then -8 over €2, times (€8 + €10) (18) over (20 + 12) (32); = -2.25.",
+          "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sa-q9", topicId: "economics-3-4", conceptId: "mortgage-arrears",
+    section: "A", questionRef: "2011 HL Section A Q9",
+    stem: "In September 2010 approximately 5.1% of mortgage accounts were in arrears (behind on mortgage payments) of 90 days or more.",
+    questionText: "Outline two economic reasons for this development and two actions financial institutions could take to help mortgage customers.",
+    tariffModel: {"kind":"fixed","notation":"5 + 4 + 4 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Two reasons and two actions", marks: 17, contextNote: "Two reasons and two actions, on one ladder: 17 marks (5+4+4+4), the first correct answer 5 and the next three 4 each.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Two reasons — Increased interest rates resulting in increased costs of borrowing.","Two reasons — Increased unemployment: resulting in a loss of income and difficulty in repaying mortgage.","Two reasons — Economic recession: employees have lower incomes resulting from tax increases/reductions in pay.","Two reasons — Reckless lending/ borrowing: • 100% mortgages were issued and now lenders are unable to repay debt; • People borrowed too much and now can’t meet the repayments.","Two actions — Re-schedule the loan contract: Extend the loan repayment period, thereby reducing the monthly repayment.","Two actions — Interest only payments: Defer capital repayments until a later day so monthly payment falls.","Two actions — No penalty payments such as extra interest charges for those in arrears","Two actions — Debt / equity swaps: Take part ownership of the property in return for reduced repayments.","Two actions — Debt forgiveness for those with no foreseeable chance of repayment-cancel their debt.","Two actions — Re-value properties at market value and base interest repayments on this value."],"perOptionSteps":[5,4,4,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q1-a-i", topicId: "economics-1-1", conceptId: "individual-and-market-demand",
+    section: "B", questionRef: "2011 HL Section B Q1(a)(i)",
+    questionText: "Define the economic terms: individual (consumer) demand; market demand.",
+    tariffModel: {"kind":"questionTotal","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-individual", kind: "point", verbatim: "Individual demand — the quantity of a good an individual consumer demands at different prices.", marks: null, contextNote: "Individual demand.", openList: true },
+    { id: "r-market", kind: "point", verbatim: "Market demand — total quantity of a good that all consumers demand at different prices.", marks: null, contextNote: "Market demand. Claim the complete answer: the scheme prices the two definitions 6 marks together, without dividing them.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q1-a-ii", topicId: "economics-1-1", conceptId: "adding-up-to-market-demand",
+    section: "B", questionRef: "2011 HL Section B Q1(a)(ii)",
+    questionText: "Explain, with the aid of labelled diagrams, the relationship between individual (consumer) demand and market demand.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3 + 5 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 14,
+    rows: [
+    { id: "r-consumers", kind: "anyN", verbatim: "Each consumer’s diagram — each element", marks: 6, contextNote: "2 diagrams x 3 marks each: Graduated P axis; Graduated Q axis; labelled D/C (1 mark each). The completed diagrams are shown with the answer.", openList: true, group: {"claimMax":6,"perOption":1,"options":["Consumer A — Graduated P axis","Consumer A — Graduated Q axis","Consumer A — labelled D/C","Consumer B — Graduated P axis","Consumer B — Graduated Q axis","Consumer B — labelled D/C"]} },
+    { id: "r-market-axes", kind: "anyN", verbatim: "The market diagram — each axis", marks: 2, contextNote: "The market diagram’s two axes, 1 mark each, of its Market diagram: 5 marks.", openList: true, group: {"claimMax":2,"perOption":1,"options":["Graduated P axis","Graduated Q axis"]} },
+    { id: "r-market-dc", kind: "point", verbatim: "Correct cumulative D/C", marks: 3, contextNote: "The market diagram’s demand curve, 3 marks.", openList: true },
+    { id: "r-explanation", kind: "point", verbatim: "To derive the market demand add the quantity demanded by each individual consumer at each price to calculate the overall quantity demanded by the market at each price.", marks: 3, contextNote: "The explanation, 3 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2011-HL-scheme-p09-q1aii-diagrams",
+          "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p09-q1aii-diagrams.png",
+          "srcHash": "e20570df89acd56c10105cfedea11f1a",
+          "alt": "The marking scheme’s three demand diagrams, P against Q (units), each a falling D line through three points at €15, €10 and €5. Consumer A: 20, 40 and 60 units (3 marks). Consumer B: 40, 60 and 80 units (3 marks). Market: 60, 100 and 140 units (5 marks). Circled numbers mark the marks for each axis and curve.",
+          "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q1-b-i", topicId: "economics-1-1", conceptId: "movement-along-or-shift-in-demand",
+    section: "B", questionRef: "2011 HL Section B Q1(b)(i)",
+    questionText: "Distinguish between the economic meanings of a ‘movement along a demand curve’ and a ‘shift in a demand curve’ for concert tickets. Illustrate your answer using diagrams.",
+    tariffModel: {"kind":"fixed","notation":"8 + 8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-movement", kind: "point", verbatim: "Movement along a demand curve — Caused by a change in the selling price of the good itself, ceteris paribus/all other things being equal.", marks: 8, contextNote: "A movement along, 8 marks, with its diagram (shown with the answer): the scheme does not divide the 8.", openList: true },
+    { id: "r-shift", kind: "point", verbatim: "Shift in a demand curve — If any of the factors other than the price of the good itself change this will result in a shift in the demand curve.", marks: 8, contextNote: "A shift, 8 marks, with its diagram: the scheme does not divide the 8.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2011-HL-scheme-p10-q1bi-diagrams",
+          "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p10-q1bi-diagrams.png",
+          "srcHash": "9f99e8b1e23a4459e1d0e6ad19f1146d",
+          "alt": "The marking scheme’s two diagrams. A movement along: one falling D/C, the price falling from P1 to P2 and the quantity rising from Q1 to Q2, an arrow down along the curve. A shift in a demand curve, with the scheme’s explanation: D/C 1 and D/C2 to its right, an arrow pointing right.",
+          "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q1-b-ii", topicId: "economics-1-1", conceptId: "what-shifts-demand-for-concert-tickets",
+    section: "B", questionRef: "2011 HL Section B Q1(b)(ii)",
+    questionText: "State and explain two factors that would cause a shift in a demand curve for concert tickets. In each case explain how the factor affects the demand curve.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 7","answer":2,"ofParts":6,"perPart":7}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A factor — any two", marks: 14, contextNote: "Two factors, 2 x 7 marks each: each with how it shifts the curve.", openList: true, group: {"claimMax":2,"perOption":7,"options":["Income levels — If income rises then the demand for concert tickets will increase, assuming concert tickets is a normal good.","Taste / Preference — If the consumer’s preference for the artist/event becomes stronger then the demand for concert tickets will increase.","Expectations about the future — If consumers expects the performance not to repeated they may increase their demand. If they expect ticket price to rise in the future they may buy the ticket now and demand will increase.","Unplanned events — Factors such as the weather may influence the current demand for tickets e.g. good weather may increase demand for an outdoor event.","Change in price of substitute good — If the price of tickets for an alternative concert increased then demand for tickets for this concert may increase.","Change in price of complementary good — If the price of hotel accommodation near the concert venue decreased then demand for the concert tickets may increase."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q1-c-i", topicId: "economics-1-1", conceptId: "assumptions-of-diminishing-marginal-utility",
+    section: "B", questionRef: "2011 HL Section B Q1(c)(i)",
+    stem: "The Law of Diminishing Marginal Utility states that as more of a product is consumed, eventually each additional unit of the good provides less additional utility (marginal utility).",
+    questionText: "Explain two assumptions underlying the Law of Diminishing Marginal Utility.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":4,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An assumption — any two", marks: 12, contextNote: "Two assumptions, 2 x 6 marks each.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Applies after a certain point called the origin. The origin is the minimum quantity of the commodity which can be used effectively and until this stage has been reached, marginal utility may not diminish.","It does not apply to Addictive goods. The consumer may gain increasing marginal utility by consuming each additional unit of an addictive good.","Time lapse between consumption of successive units. Sufficient time has not elapsed between the consumption of successive units. If a person eats a number of oranges, each additional orange consumed will give diminished marginal utility. However, if a person eats one on a Monday, one on a Thursday and one on Sunday, because of the time which has elapsed between the consumption of each extra orange marginal utility may not diminish.","‘Other factors’ affecting utility do not change. The law is based on the assumption that other factors which may affect a consumer’s utility do not change including income levels, the nature of successive units of the commodity; and the consumer’s taste for the commodity."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q1-c-ii", topicId: "economics-1-1", conceptId: "the-equi-marginal-principle-at-work",
+    section: "B", questionRef: "2011 HL Section B Q1(c)(ii)",
+    stem: "The Law of Diminishing Marginal Utility states that as more of a product is consumed, eventually each additional unit of the good provides less additional utility (marginal utility). A consumer in equilibrium buys 6 health bars at €0.80 each and 9 cartons of juice at €1.50 each. The marginal utility of the 6th health bar is 40 utils.",
+    questionText: "Using the Equi-Marginal Principle of Consumer Behaviour calculate the marginal utility of the ninth carton of juice. (Show all your workings.)",
+    tariffModel: {"kind":"fixed","notation":"9 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 13,
+    rows: [
+    { id: "r-working", kind: "point", verbatim: "Using the Equi-Marginal Principle of Consumer Behaviour", marks: 9, contextNote: "The working, 9 marks: the scheme prints 13 marks (9+4) beneath its working and its answer, read here in that order. The working is shown with the answer: 40 over 80 equals X over 150.", openList: true, ask: true },
+    { id: "r-answer", kind: "point", verbatim: "= 75 utils", marks: 4, contextNote: "The answer, 4 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2011-HL-scheme-p11-q1cii-working",
+          "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p11-q1cii-working.png",
+          "srcHash": "8485c45fa1f15721e8f601a823a1d43b",
+          "alt": "The marking scheme’s working: 40 over 80 = X over 150; = 75 utils.",
+          "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q2-a-i", topicId: "economics-2-0", conceptId: "features-of-oligopoly",
+    section: "B", questionRef: "2011 HL Section B Q2(a)(i)",
+    stem: "Some Telecoms’ analysts believe the main mobile operators in Ireland – Vodafone, O2, Meteor and 3 – control an oligopoly and have little reason to make the market really competitive. (The Irish Times, November, 2010)",
+    questionText: "Outline three key features of an oligopolistic market.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":6,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A feature — any three", marks: 15, contextNote: "Three features, 3 features x 5 marks each.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Few Sellers in the industry. Because of this each seller can influence the price of the commodity and /or the output sold.","Interdependence between firms. Firms in oligopoly do not act independently of each other. They will each take into the account the likely reactions of their competitors, hence prices tend to be rigid.","Product Differentiation occurs. The commodities which firms sell are close substitutes. Firms will engage in advertising to persuade consumers to buy their product rather than a competitor’s product.","Barriers to entry. These are common in an oligopolistic market as existing firms will wish to maintain their share of the market. Examples of barriers include: high costs of setting up in the industry, brand proliferation etc.","Collusion may occur. Firms within the industry may meet to control the output in the industry and/or control prices e.g. OPEC.","Non-price competition is more common than price competition. Due to the fear of how competitors will react, firms tend not to engage in price competition but rather they engage in non-price competition to gain consumers."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q2-a-ii", topicId: "economics-2-0", conceptId: "objectives-other-than-profit",
+    section: "B", questionRef: "2011 HL Section B Q2(a)(ii)",
+    stem: "Some Telecoms’ analysts believe the main mobile operators in Ireland – Vodafone, O2, Meteor and 3 – control an oligopoly and have little reason to make the market really competitive. (The Irish Times, November, 2010) Firms in an oligopolistic market may have objectives other than profit maximisation.",
+    questionText: "Outline two objectives firms in oligopoly may have, other than achieving the maximum level of profits.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":4,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An objective — any two", marks: 10, contextNote: "Two objectives, 2 x 5 marks each.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Prevent government market intervention/interference Firms may fear that the existence of supernormal profits would attract government intervention into the market and thereby restrict the firm’s activities.","Discourage the entry of new firms into the industry Firms may set prices at a low level which is intended to discourage the entry of new firms into the industry (limit pricing). By pursuing this policy they are forsaking higher present profits for potentially higher future profits.","Maximisation of sales / increased share of market Once a minimum level of profit is earned to reward shareholders, provide funds for reinvestment etc. the firm may concentrate on maximising sales; increasing its share of the market. It may wish to achieve economies of scale; decrease the level of sales of rival firms; become the most dominant firm in the market.","Maintain adequate profits. • The owners of the business may prefer to earn stable/moderate levels of profits rather than constantly striving for large supernormal profits as this is what they are satisfied with. • Where the managers are not owners they may tend towards a more conservative approach rather than a dynamic drive to profit maximisation."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q2-b", topicId: "economics-2-0", conceptId: "the-kinked-demand-curve",
+    section: "B", questionRef: "2011 HL Section B Q2(b)(i)–(ii)",
+    questionText: "Using one clearly labelled diagram: (i) Explain the shape of the ‘kinked’ demand curve facing a firm in oligopoly. (ii) Explain the long run equilibrium position of this firm.",
+    tariffModel: {"kind":"fixed","notation":"9 + 8 + 8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    rows: [
+    { id: "r-diagram", kind: "anyN", verbatim: "The diagram — each element", marks: 9, contextNote: "The diagram, 9 marks for the nine elements the scheme lists beside it, 1 each. The completed diagram is shown with the answer.", openList: true, group: {"claimMax":9,"perOption":1,"options":["Price axis","Quantity axis","Kinked D/C","Distinct MR curve","MC","AC","P1","Q1","Point G"]} },
+    { id: "r-shape", kind: "point", verbatim: "Demand curve - AB — If this firm increases its price others will leave their prices unchanged so this firm will lose many customers – this portion of the D/C is elastic. — Demand curve – BC — If this firm lowers its price others will match this price decrease so this firm will gain few additional customers – this portion of the D/C is inelastic.", marks: 8, contextNote: "(i) The shape of the demand curve, 8 marks: AB elastic and BC inelastic, which the scheme does not divide.", openList: true },
+    { id: "r-equilibrium", kind: "point", verbatim: "Equilibrium occurs at point G where (a) MC = MR & (b) MC is rising. — The firm will produce Q1 and sell this output at price P1 — The firm’s cost of production is shown at point G. — Should costs rise between points D and E then market price tends to remain constant at P1. — This firm is earning SNPs because AR exceeds AC or barriers to entry exist.", marks: 8, contextNote: "(ii) The long run equilibrium, 8 marks: the scheme lists five points and does not divide the 8.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2011-HL-scheme-p14-q2b-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p14-q2b-diagram.png",
+          "srcHash": "8e2b14763e5685e16f3dfa14bc54b206",
+          "alt": "The marking scheme’s diagram with its list of nine elements (Price axis, Quantity axis, Kinked D/C, Distinct MR curve, MC, AC, P1, Q1, Point G): P against Q, a demand curve ABC kinked at B level with P1, an MR curve with a vertical gap from D to E below B, an MC curve rising through the gap and a U-shaped AC curve, meeting at G above Q1.",
+          "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q2-c", topicId: "economics-2-0", conceptId: "price-and-non-price-competition",
+    section: "B", questionRef: "2011 HL Section B Q2(c)(i)–(ii)",
+    stem: "It is suggested that consumers prefer price competition in the market place, yet there are benefits for consumers arising from non-price competition.",
+    questionText: "(i) Explain two reasons why consumers may prefer price competition. (ii) Describe two benefits to consumers of non-price competition.",
+    tariffModel: {"kind":"fixed","notation":"7 + 6 + 6 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Two reasons and two benefits", marks: 25, contextNote: "Two reasons for (i) and two benefits for (ii), on one ladder: 25 marks (7+6+6+6), the first correct answer 7 and the next three 6 each.", openList: true, group: {"claimMax":4,"perOption":7,"options":["Reasons why consumers may prefer price competition — Lower prices / value for money Consumers will benefit from availability of commodities at lower prices. Consumers will be able to get better value for their limited income.","Reasons why consumers may prefer price competition — Higher disposable income With lower prices consumers will now have a higher disposable income, resulting in a better standard of living.","Reasons why consumers may prefer price competition — More choice As consumers have a greater disposable income they can now choose how to spend this additional income.","Reasons why consumers may prefer price competition — Preferable to non-price competitive measure because: • Consumers pay for non-price competitive measures e.g. advertising; • Offers may be unwanted / of little value; tokens may go unused etc.","Benefits of non-price competition — Consumer loyalty rewarded Consumers can, by shopping in selected stores, receive loyalty points which can be used as they wish.","Benefits of non-price competition — Stability in prices Non-price competition means prices will not be constantly changing and so consumers do not have to worry that they are losing out on bargains / may be better able to budget.","Benefits of non-price competition — Better quality commodities / services Firms may improve the quality of their commodities; offer better service and/ or after sales service to consumers.","Benefits of non-price competition — Allows consumers to save and / or avail of ‘free’ gifts With regular shopping consumers can ‘save’ their loyalty points for those time periods when they incur additional expenses e.g. Christmas; Easter etc. Consumers may benefit from ‘free’ gifts from retailers e.g. free turkeys at Christmas.","Benefits of non-price competition — More informed consumers Through advertising consumers may acquire more information about products and services and so can make more informed choices."],"perOptionSteps":[7,6,6,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q3-a-i", topicId: "economics-2-1", conceptId: "marginal-revenue-productivity",
+    section: "B", questionRef: "2011 HL Section B Q3(a)(i)",
+    questionText: "Define the term Marginal Revenue Productivity (MRP) of a factor of production.",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The extra revenue earned when an additional unit of a factor of production is employed.", marks: 5, contextNote: "The definition, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q3-a-ii", topicId: "economics-2-1", conceptId: "what-influences-mrp",
+    section: "B", questionRef: "2011 HL Section B Q3(a)(ii)",
+    questionText: "State and explain two factors that can influence MRP.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":7,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A factor — any two", marks: 10, contextNote: "Two factors, 2 points x 5 marks each.", openList: true, group: {"claimMax":2,"perOption":5,"options":["The productivity/ commitment of the factor. The more productive each additional factor employed is then the more MRP that factor will earn. The more conscientious a person is then the more productive that person will be.","The selling price of the output. If the selling price obtained on the market is rising or constant (and not falling) then the higher will be that factor’s MRP.","The Law of Demand. On the market, the law of demand dictates that in order for more to be bought then price must be reduced – this affects the MRP obtained by the firm.","Quality / Specialised nature of the factors/Unique talent. If the quality of the factor used improves then that factor may become more efficient and so additional output will be produced, resulting in increased MRP.","Training/Education provided for the factors. If the factor is more highly trained / has attained a good standard of education then it may become more skilled, resulting in increased efficiency and more output.","Expertise of the entrepreneur. If the entrepreneur has expertise in organising the production unit, then each factor may be more productive and work to its maximum efficiency.","Law of Diminishing Marginal Returns. As each additional unit of a factor is used a point will be reached where the additional output produced will decline and so MRP will decline."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q3-a-iii", topicId: "economics-2-1", conceptId: "measuring-mrp",
+    section: "B", questionRef: "2011 HL Section B Q3(a)(iii)",
+    questionText: "Outline two difficulties that may arise in measuring MRP.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":3,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A difficulty — any two", marks: 10, contextNote: "Two difficulties, 2 points x 5 marks each.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Not all factors produce physical output. Where services are provided no physical output is produced and so MRP cannot be measured.","Output not sold in the market place. In the public sector where output is not sold in the market it is difficult to calculate MRP.","Combination of capital and labour to produce additional output. It is difficult to measure the contribution of each individual factor."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q3-b-i", topicId: "economics-3-5", conceptId: "why-investment-matters",
+    section: "B", questionRef: "2011 HL Section B Q3(b)(i)",
+    stem: "‘Capital Investment has been an important driver of economic advancement in Ireland over the past ten years, providing the capacity and scope for growth’. (The National Recovery Plan 2011 – 2014)",
+    questionText: "State and explain three reasons why investment is important for the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":6,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any three", marks: 15, contextNote: "Three reasons, 3 points x 5 marks each.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Increased productive capacity Greater investment allows the country to produce more output / it replaces worn-out capital resources.","Increased labour productivity More investment allows labour to become more efficient. Investment allows workers to use more up-to-date capital goods, making them more efficient.","Increased employment Extra investment increases aggregate demand resulting in the demand for more employees to meet this additional demand for goods & services.","Increased GNP Increased investment leads to higher GNP, greater demand, increased spending and a higher standard of living.","Investment generates future wealth for the economy Investment into the economy means that we are safeguarding the future wealth creating capacity of the country, by ensuring that we have capital goods in the future.","Increased Government Revenues An increase in investment will increase economic activity. This will generate additional revenues for the government for use within society."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q3-b-ii", topicId: "economics-3-5", conceptId: "what-drives-investment-now",
+    section: "B", questionRef: "2011 HL Section B Q3(b)(ii)",
+    stem: "‘Capital Investment has been an important driver of economic advancement in Ireland over the past ten years, providing the capacity and scope for growth’. (The National Recovery Plan 2011 – 2014)",
+    questionText: "Describe three factors that currently influence the level of investment in the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":8,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A factor — any three", marks: 15, contextNote: "Three factors, 3 points x 5 marks each.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Rates of interest / Cost of borrowing As rates of interest increase, the cost of borrowing increases. Thus the lower will be the profit earned. Hence investment will fall / MEC may fall.","Business people's expectations Currently many business people are pessimistic about the economy and so they are less likely to invest. Irish business people are more pessimistic about the future for various reasons: potentially higher tax rates in Ireland; higher interest rates; poor economic growth rates.","Government economic policies If government policy is favourable towards investment then investment tends to rise. Examples of favourable policies currently include: attractive state grants; a policy to maintain corporation tax at current levels; continued development of infrastructure etc. The government policy to provide additional training places; reduced VAT for some industries and reduced PRSI for additional workers hired may help attract investment into Ireland.","The international economic climate Ireland is an open economy, which relies on foreign investment. If the international economic climate is in a slump then this may result in a fall in demand which will cause Irish businesses to suffer.","The Marginal Efficiency of Capital The greater the potential MEC for any possible investment project then the more likely the investment will take place.","Stability in the banking sector The policy of the state to stabilise the banking sector should help the flow of credit, and so encourage risk taking.","The cost of capital goods The greater the cost of capital goods the lower the profitability of the investment, hence investment tends to fall.","Availability of a skilled English speaking workforce The workforce is English speaking which may attract investment. People have time to re-train during the current period of unemployment. Ireland currently has a pool of highly skilled workers."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q3-c", topicId: "economics-2-2", conceptId: "public-transport-or-new-roads",
+    section: "B", questionRef: "2011 HL Section B Q3(c)",
+    questionText: "Advise the Minister for Transport on two possible economic advantages and two possible economic disadvantages of investing in public transport, rather than investing in the construction of new roads.",
+    tariffModel: {"kind":"fixed","notation":"2 @ 5 + 2 @ 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "r-advantages", kind: "anyN", verbatim: "An advantage — any two", marks: 10, contextNote: "Two advantages, 2 x 5 marks.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Better use of scarce resources There will be less fossil fuels used per passenger, thereby saving scarce resources.","Improved public infrastructure/Regional Development This will benefit society and lead to a better standard of living from the enhanced public transport facilities. Further development of rural areas leading to geographical mobility of labour","Reduced CO2 emissions / Environment better protected If more people use public transport and limit the use of cars it will result in reduced emissions / less penalties under Kyoto agreement.","Reduced traffic congestion With the possibility of less road traffic the costs associated with traffic congestion should fall.","Reduced imports If more people use public transport then it may result in a reduction in the import of cars and of oil.","Increased employment If demand increases then there may be more employment provided by transport providers.","Benefits to transport providers If more people use public transport then revenue for providers will increase allowing for continuity of service; may help reduce subsidies payable from the state; and may allow economies of scale to be achieved, resulting in lower prices."]} },
+    { id: "r-disadvantages", kind: "anyN", verbatim: "A disadvantage — any two", marks: 10, contextNote: "Two disadvantages, 5 marks each. “May argue the opposite of this point” sits beside the advantage of increased employment.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Investment may be costlier than investment in roads The cost of investing in public transport may be greater than the cost of building roads.","People in rural areas disadvantaged. If the investment is confined to areas with large populations then people in rural areas cannot avail of these services.","Loss of taxation revenues If private transport users reduce their use then it may result in a loss of VAT; excise duties ; motor taxes to the state.","Subsidies from the state Public transport may require continued subsidies from government to encourage its use e.g. subsidy for CIE etc.","Behaviour of roads users unchanged If the number of roads users is not reduced then the investment in public transport may have been wasteful of resources.","May argue the opposite of this point","Costs of not investing in roads The road infrastructure may deteriorate; the costs for business may increase; Ireland may fall behind in international road developments."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q4-a-i", topicId: "economics-1-5", conceptId: "marginal-cost-average-cost-and-profit",
+    section: "B", questionRef: "2011 HL Section B Q4(a)(i)",
+    stem: "The table below shows the short run production costs for a small firm producing and selling kitchen furniture.",
+    questionText: "Using the information in the table above calculate the following: • The marginal cost of producing the 4th unit. • The average cost of producing 5 units. • The profit earned by the firm selling 5 units of output at €1,200 per unit. (Show your workings.)",
+    tariffModel: {"kind":"questionTotal","notation":"12","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-mc", kind: "point", verbatim: "€3,300 – €2,250 = €1,050", marks: null, contextNote: "The marginal cost of the 4th unit.", openList: true },
+    { id: "r-ac", kind: "point", verbatim: "€900", marks: null, contextNote: "The average cost of 5 units: €4,500 over 5.", openList: true },
+    { id: "r-profit", kind: "point", verbatim: "5 x €1,200 (€6,000) – €4,500 = €1,500", marks: null, contextNote: "The profit. Claim the complete answer: the scheme prices the three calculations 12 marks together, without dividing them. The working is shown with the answer.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2011-HL-paper-p05-q4-table",
+          "src": "/exam-figures/economics/markbank/economics-2011-HL-paper-p05-q4-table.png",
+          "srcHash": "13439ecc5c6ef11cd9458774b3e25652",
+          "alt": "A table of a firm’s short-run costs in euro by number of units of output: 1 unit, Fixed Costs 400, Variable Costs 600, Total Costs 1,000; 2 units, 400, 1,200, 1,600; 3 units, 400, 1,850, 2,250; 4 units, 400, 2,900, 3,300; 5 units, 400, 4,100, 4,500.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2011-HL-scheme-p20-q4ai-working",
+          "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p20-q4ai-working.png",
+          "srcHash": "c6a3cf72b0d6ec85dfb80943138e0566",
+          "alt": "The marking scheme’s working. The marginal cost of the 4th unit: €3,300 – €2,250 = €1,050. The average cost of 5 units: €4,500 over 5 = €900. The profit selling 5 units at €1,200: 5 x €1,200 (€6,000) – €4,500 = €1,500.",
+          "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q4-a-ii", topicId: "economics-1-5", conceptId: "the-short-run-average-cost-curve",
+    section: "B", questionRef: "2011 HL Section B Q4(a)(ii)",
+    stem: "The table below shows the short run production costs for a small firm producing and selling kitchen furniture.",
+    questionText: "Using the information in the table above, draw the firm’s short run average cost (AC) curve. Explain the reasons for its shape.",
+    tariffModel: {"kind":"fixed","notation":"12 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    rows: [
+    { id: "r-diagram", kind: "point", verbatim: "draw the firm’s short run average cost (AC) curve", marks: 12, contextNote: "The diagram, 12 marks: the AC curve plotted from the table, falling to its lowest point at 3 units and rising after, as the figure shows.", openList: true, ask: true },
+    { id: "r-explanation", kind: "point", verbatim: "Slopes downward: — Declining FC per unit / FC spread over a larger number of units of output — Specialisation of labour: helps reduce cost per unit — Slopes upward: — Increasing VC per unit because of the Law of Diminishing Marginal returns", marks: 6, contextNote: "The explanation, 6 marks: why it slopes down (either reason) and why it slopes up, which the scheme does not divide.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2011-HL-paper-p05-q4-table",
+          "src": "/exam-figures/economics/markbank/economics-2011-HL-paper-p05-q4-table.png",
+          "srcHash": "13439ecc5c6ef11cd9458774b3e25652",
+          "alt": "A table of a firm’s short-run costs in euro by number of units of output: 1 unit, Fixed Costs 400, Variable Costs 600, Total Costs 1,000; 2 units, 400, 1,200, 1,600; 3 units, 400, 1,850, 2,250; 4 units, 400, 2,900, 3,300; 5 units, 400, 4,100, 4,500.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2011-HL-scheme-p20-q4aii-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p20-q4aii-diagram.png",
+          "srcHash": "3f3a18643002fc8262d04b0b185ad5cf",
+          "alt": "The marking scheme’s AC curve, Costs € against output (units): 1,000 at 1, 800 at 2, 750 at 3, 825 at 4 and 900 at 5, falling to its lowest at 3 units and rising after. Beside it the reasons: it slopes downward because of declining FC per unit or the specialisation of labour, and upward because of increasing VC per unit under the Law of Diminishing Marginal Returns.",
+          "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q4-b-i", topicId: "economics-4-2", conceptId: "falling-costs-and-the-irish-economy",
+    section: "B", questionRef: "2011 HL Section B Q4(b)(i)",
+    stem: "‘The cost of doing business in Ireland is falling. However, some costs continue to increase or remain relatively high’. (National Competitiveness Council Report, 2010)",
+    questionText: "Discuss the economic advantages of falling costs of production for the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":6,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An advantage — any three", marks: 15, contextNote: "Three advantages, 3 points x 5 marks each.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Increased competitiveness With lower costs prices may fall for Irish goods and exports may become cheaper.","Lower prices With lower prices inflation may fall and this may entice consumers to purchase more goods.","Increased demand Businesses may have increased demand resulting in increased sales, profits and a more secure future. Tax revenue to the government may also increase.","Increased employment With rising demand businesses may increase their demand for labour / maintain existing labour.","Attract investment / Improve international reputation Lower costs for businesses will encourage expansion and attract foreign firms into Ireland.","Profits may increase As a result of lower costs business profits may increase, leading to an increase in CPT revenues."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q4-b-ii", topicId: "economics-1-2", conceptId: "what-holds-irish-businesses-back",
+    section: "B", questionRef: "2011 HL Section B Q4(b)(ii)",
+    stem: "‘The cost of doing business in Ireland is falling. However, some costs continue to increase or remain relatively high’. (National Competitiveness Council Report, 2010)",
+    questionText: "Outline possible restrictions on the growth of businesses in the Irish economy at present.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":6,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A restriction — any three", marks: 15, contextNote: "Three restrictions, 3 points x 5 marks each.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Limited availability of credit The banking crisis has resulted in a lack of credit, which is a major obstacle to the expansion of business.","Reduction in domestic demand The continuing recession has resulted in a major drop in spending resulting in a drop in domestic demand and less opportunities for business.","Restrictive wage agreements The existence of the minimum wage; the existence of JLC agreements limits the ability of firms to hire labour which restricts the ability of firm to expand/ grow.","Legislative requirements / framework Permission may have to be obtained from the local authority; state body etc. For example if a person wants to extend a restaurant then certain requirements must be fulfilled.","Merger / takeover legislation Some businesses wishing to expand may face an investigation under EU (Irish) merger and takeover legislation. The proposed takeover of Aer Lingus by Ryanair was prohibited under EU laws.","High costs of production. Businesses find it difficult to expand due to high operating costs e.g. rates; utility costs; insurance costs; costs of raw materials; and high interest rates makes borrowing more expensive."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q4-c", topicId: "economics-2-2", conceptId: "the-costs-of-the-bp-oil-spill",
+    section: "B", questionRef: "2011 HL Section B Q4(c)",
+    stem: "The British Petroleum (BP) oil spill in the Gulf of Mexico in 2010 is estimated to have cost a total of $40 bn.",
+    questionText: "Identify two costs for BP and two costs to society associated with this oil spill.",
+    tariffModel: {"kind":"fixed","notation":"4 + 4 + 4 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Two costs for BP and two costs to society", marks: 15, contextNote: "Two private and two social costs, on one ladder: 15 marks (4+4+4+3), the first three correct 4 each and the 4th 3.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Costs for BP – Private costs — Cost of repairing the defective oil rig BP must pay for the equipment, labour and other associated costs.","Costs for BP – Private costs — Clean-up costs They must pay for the clean-up of the affected waters and the shoreline.","Costs for BP – Private costs — Compensation costs For those fishermen and businesses who lost business due to the oil spill.","Costs for BP – Private costs — Reduction in share price / asset value The market value of the company fell and shareholders must bear this cost.","Costs for BP – Private costs — Reduction in profits Lost production resulted in reduced sales and lower profits.","Costs for BP – Private costs — Lost oil Until the well was capped BP lost tons of oil which cost the company.","Costs for BP – Private costs — Reputational damage The company gained a lot of bad publicity which has adversely affected the image of the company.","Costs for BP – Private costs — Fines by government The company faces major fines from the US government for breaches of safety and the resulting damage.","Costs to society – Social costs — Environmental damage Society suffers due to the damage to the waters, wildlife and natural beauty of the area.","Costs to society – Social costs — Cost of investigation / clean-up Taxpayers must pay for the costs of the investigation into the disaster and clean-up costs to communities.","Costs to society – Social costs — Disruption to local communities / tourism The spill has resulted in a downturn in economic activity in the affected communities / leading to job losses.","Costs to society – Social costs — Damage to food chain The oil spill may result in restricted supply of (fish) thereby forcing prices upwards.","Costs to society – Social costs — Higher oil prices The reduction in supply led to shortages and higher international oil prices."],"perOptionSteps":[4,4,4,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q5-a-i", topicId: "economics-3-1", conceptId: "fiscal-policy",
+    section: "B", questionRef: "2011 HL Section B Q5(a)(i)",
+    stem: "The Budget is a statement of the Government’s fiscal policy. The Irish Government, in its National Recovery Plan 2011-2014 committed to reducing the General Government Deficit to under 3% of GDP by 2014.",
+    questionText: "Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"10","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any action taken by the government which influences the timing, magnitude and structure of current revenue and expenditure.", marks: 10, contextNote: "Fiscal policy, 10 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q5-a-ii", topicId: "economics-3-1", conceptId: "effects-of-cutting-the-deficit",
+    section: "B", questionRef: "2011 HL Section B Q5(a)(ii)",
+    stem: "The Budget is a statement of the Government’s fiscal policy. The Irish Government, in its National Recovery Plan 2011-2014 committed to reducing the General Government Deficit to under 3% of GDP by 2014.",
+    questionText: "State and explain four possible economic effects on the Irish economy of the government’s plan to significantly reduce the deficit over the next four years.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":8,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any four", marks: 20, contextNote: "Four effects, 4 points x 5 marks each.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Reduced standard of living Taxpayers will have lower disposable incomes due to higher taxes and their standard of living will fall.","Public services: loss / deterioration / introduction of charges Some public services may be discontinued (bus transport routes / less Special Needs Assistants); others may fall in standard (health services) while more may have to paid for example household charges.","Changed ownership of strategic state assets Some state bodies may be privatised affecting consumers (prices), employees (non-employment) and the government (revenue).","Public Sector Effects The numbers employed in the public sector will fall; wages may be reduced and this may add further to the numbers unemployed.","Level of economic activity / demand fall Lower disposable incomes has reduced domestic demand and this may result in an increase in the numbers unemployed.","Growth in the black economy More people may be willing to participate in the black economy due to reduced incomes and the possibility of lower prices being charged in the black market.","Widening gap between rich and poor Cutbacks in rate of social welfare payments; coupled with stricter eligibility requirements may mean that social welfare recipients suffer. Changes in taxation and expenditure cuts may have a greater effect on lower income groups.","Public unrest People may become involved in protests / strikes which may disrupt economic activity. Some citizens may decide to emigrate seeking a better future."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q5-b-i", topicId: "economics-1-3", conceptId: "privatisation",
+    section: "B", questionRef: "2011 HL Section B Q5(b)(i)",
+    stem: "It has been suggested that in order to reduce the National Debt the government should privatise state owned companies in the coming years.",
+    questionText: "Explain the term ‘privatisation’.",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "This is the sale of a state owned company to private owners.", marks: 5, contextNote: "Privatisation, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q5-b-ii-favour", topicId: "economics-1-3", conceptId: "for-or-against-privatisation",
+    section: "B", questionRef: "2011 HL Section B Q5(b)(ii) — arguments in favour",
+    stem: "It has been suggested that in order to reduce the National Debt the government should privatise state owned companies in the coming years.",
+    questionText: "Outline four economic arguments in favour of privatisation OR outline four economic arguments against privatisation. Justify the choice: IN FAVOUR.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":7,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "arguments in favour — any four", marks: 20, contextNote: "Four arguments, 4 points x 5 marks each. The scheme credits arguments in favour and against, each with its own column.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Improved quality / choice of services Privatised firm may improve the quality / efficiency / choice of the service provided.","More competitive prices Consumers may be offered more competitive prices on goods / services.","Continuity of supply The newly privatised companies may have access to new sources of funds and as they are not subject to government interference their long term prospects for survival may improve – ensuring continuity of supply for consumers.","Employment opportunities If the new firm increases its market share then this may result in a growth in employment within the industry / additional job security for existing employees.","More rewards/Incentives for innovation Employees may reap more rewards for their innovations within the privatised industry e.g higher bonuses etc.","Revenue from sale /reduce borrowing The government could use the revenue from the sale of the firm to help reduce its level of borrowings.","Shedding of loss making companies By selling loss making companies the financial burden on the state / taxpayers is removed."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q5-b-ii-against", topicId: "economics-1-3", conceptId: "for-or-against-privatisation",
+    section: "B", questionRef: "2011 HL Section B Q5(b)(ii) — arguments against",
+    stem: "It has been suggested that in order to reduce the National Debt the government should privatise state owned companies in the coming years.",
+    questionText: "Outline four economic arguments in favour of privatisation OR outline four economic arguments against privatisation. Justify the choice: AGAINST.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":7,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "arguments against — any four", marks: 20, contextNote: "Four arguments, 4 points x 5 marks each. The scheme credits arguments in favour and against, each with its own column.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Loss of non-profit making services Non-profit making services may be discontinued in an effort to reduce costs.","Standards of service / increased prices The quality of services provided by the new company may deteriorate in an effort to save costs. Prices may be increased to increase revenue. Charges for services which were considered ‘free’ may be introduced.","Curtailment in Pay / Pensions increases / Changes to working conditions The new owners may limit the pay / pension increases due to its employees or change its employees’ conditions of employment resulting in a worsening of these.","Loss of jobs / reduced job security / increased social welfare bill Jobs may be lost through rationalisation of services, meaning higher social welfare costs.","Loss of a state resource / critical infrastructure This company has been financed by taxpayers in the past. With its sale, taxpayers now lose critical infrastructure, which they once owned.","Costs of the Sale All costs in preparation for the sale such as legal work must be paid for by the taxpayer.","Foreign ownership Overseas buyers can become owners of a previously Irish company and so control of the asset can go outside the state."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q5-c", topicId: "economics-3-1", conceptId: "cutting-the-public-sector-wage-bill",
+    section: "B", questionRef: "2011 HL Section B Q5(c)",
+    stem: "‘The number of staff in the Irish public sector grew by 15.5% from 2001 to 2008, according to OECD statistics’. (Report on the Sources of Ireland’s Banking Crisis, 2010)",
+    questionText: "Discuss four measures the Minister for Finance could take to reduce the public sector wage bill.",
+    tariffModel: {"kind":"fixed","notation":"7 + 7 + 3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A measure — any four", marks: 20, contextNote: "Four measures: 20 marks (7+7+3+3), the first two correct 7 each and the next two 3 each.", openList: true, group: {"claimMax":4,"perOption":7,"options":["Reduce the numbers employed in the sector Do not fill vacancies when they occur / natural wastage. Introduce a voluntary redundancy package e.g. as in the HSE.","Reduce rates of pay per employee Pay new entrants into the sector lower rates of pay than existing employees. Adjust pension entitlements to reduce the cost of future pensions.","Change terms of employment Defer incremental pay increases. Negotiate pay reductions for state employees / wage freeze. Cap the pay of higher paid civil servants. Ban overtime for state employees/offer career breaks.","Change pension entitlements Reduce the pensions given to current pension holders.","Outsource services e.g. IT / Payroll This will mean that less staff is required in the public sector to provide these services."],"perOptionSteps":[7,7,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q6-a-i", topicId: "economics-3-4", conceptId: "the-functions-of-money",
+    section: "B", questionRef: "2011 HL Section B Q6(a)(i)",
+    stem: "Money is usually defined by reference to the functions it performs.",
+    questionText: "Outline four functions of money.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":4,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A function — all four", marks: 20, contextNote: "Four functions, 4 functions x 5 marks each.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Medium of exchange • Money allows people to buy goods and services/ allows exchange between buyers and sellers • Allows the buying and selling of goods/services to be broken into two distinct activities.","Measure of Value • Money enables a price to be put on goods & services.","Store of Wealth • Allows people to save for the future/can be used to make purchases in the future.","Standard for Deferred Payment • Money is capable of measuring value for a future date. • Money makes credit trading (i.e. buying & selling) possible."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q6-a-ii", topicId: "economics-3-3", conceptId: "monetary-policy",
+    section: "B", questionRef: "2011 HL Section B Q6(a)(ii)",
+    stem: "Money is usually defined by reference to the functions it performs.",
+    questionText: "Explain the term ‘Monetary Policy’.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Those actions by the ECB, which influences the money supply, interest rates and the availability of credit.", marks: 8, contextNote: "Monetary policy, 8 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q6-a-iii", topicId: "economics-3-4", conceptId: "the-lender-of-last-resort",
+    section: "B", questionRef: "2011 HL Section B Q6(a)(iii)",
+    stem: "Money is usually defined by reference to the functions it performs.",
+    questionText: "Explain a central bank’s function as ‘lender of last resort’.",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The central bank offers credit to financial institutions experiencing financial difficulties / liquidity problems and are unable to obtain necessary funds elsewhere.", marks: 7, contextNote: "The explanation, 7 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q6-b", topicId: "economics-3-4", conceptId: "why-regulate-the-banks",
+    section: "B", questionRef: "2011 HL Section B Q6(b)",
+    stem: "Many believe that a lack of supervision (‘light-touch regulation’) of financial institutions in Ireland contributed significantly to the banking crisis.",
+    questionText: "Discuss the economic reasons why commercial banks in Ireland should be regulated.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":6,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any four", marks: 20, contextNote: "Four reasons, 4 points x 5 marks each.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Protect consumers Regulation will ensure that the interests of the banks’ consumers are protected and that savers’ deposits are secure.","Proper lending policies Regulation will ensure that the banks follow correct lending procedures and that excessive / reckless lending is avoided.","Banking system stability Regulation will ensure that the banking system should remain stable.","Economic stability / confidence Proper regulation may ensure that the banks operate efficiently resulting in public confidence in the banking system/ allow for the flow of credit and for economic growth of the economy.","Less need for government intervention If the banks are properly regulated then there will be less need for the government to become involved as it has had to do with the guarantees for savers deposits; nationalisation of Anglo Irish Bank; and the setting up of NAMA.","Less need for EU / IMF funds If banks are properly regulated it should result in the government not having to resort to funds from the EU/IMF to capitalise the banks."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q6-c", topicId: "economics-3-3", conceptId: "rising-interest-rates",
+    section: "B", questionRef: "2011 HL Section B Q6(c)",
+    stem: "It is being suggested that the ECB will increase interest rates in the 2011/2012 period.",
+    questionText: "Explain the economic effects of rising interest rates on the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":9,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any four", marks: 20, contextNote: "Four effects, 4 points x 5 marks each.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Borrowing discouraged Borrowing is more expensive resulting in higher loan repayments, which will reduce spending power, resulting in a lower standard of living.","Savings encouraged With a higher rate of return people may find it more attractive to save, and so they will reduce their spending.","Increased mortgage repayments The cost of monthly repayments increases, resulting in reduced disposable income and a lower standard of living.","Increased cost of servicing the National Debt With higher domestic interest rates the cost of repaying the internal portion of the national debt rises.","Increased costs of production / reduced competitiveness Cost of production will increase resulting in higher domestic prices. This will reduce the competitiveness of Irish exports and may lead to reduction in sales.","Disincentive to Invest The MEC will fall resulting in lower profits and this may discourage investors / it becomes more expensive for businesses to borrow and so they may not invest.","Economic Growth hindered With possible lower investment, future economic growth in Ireland may be damaged.","Taxation revenue effects With additional savings the government may receive additional revenue through DIRT. However, with lower spending the revenue from VAT and excise duties may fall. If unemployment increases there will be a reduction in income tax revenue.","Increases in Unemployment Lower consumer spending, falling demand for Irish exports, a reduction in investment and a decline in economic growth may result in an increase in the numbers unemployed."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q7-a-i", topicId: "economics-3-0", conceptId: "gdp-and-gnp",
+    section: "B", questionRef: "2011 HL Section B Q7(a)(i)",
+    questionText: "Define the following terms: • Gross Domestic Product at Current Market Prices; • Gross National Product at Factor Cost.",
+    tariffModel: {"kind":"fixed","notation":"7 + 7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 14,
+    rows: [
+    { id: "r-gdp", kind: "point", verbatim: "Gross Domestic Product at Current Market Prices — The total output produced by the factors of production in the domestic economy irrespective of whether the factors are owned by Irish nationals or foreigners at current market prices.", marks: 7, contextNote: "GDP, 7 marks.", openList: true },
+    { id: "r-gnp", kind: "point", verbatim: "Gross National Product at Factor Cost — The total output produced ( value of goods & services ) by Irish owned factors of production in Ireland and elsewhere valued at payments to the factors of production.", marks: 7, contextNote: "GNP, 7 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q7-a-ii", topicId: "economics-3-0", conceptId: "why-gdp-exceeds-gnp",
+    section: "B", questionRef: "2011 HL Section B Q7(a)(ii)",
+    questionText: "Explain two reasons why GDP in Ireland at present is larger than GNP.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 8","answer":2,"ofParts":3,"perPart":8}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 16, contextNote: "Two reasons, 8 each: the scheme prints 16 marks beneath three reasons for an ask of two.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Repatriation of profits by foreign multinationals in Ireland.","Repayment of interest on the foreign element of our National Debt.","Remittances of immigrants in Ireland sent abroad."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q7-b-i", topicId: "economics-3-0", conceptId: "the-multiplier",
+    section: "B", questionRef: "2011 HL Section B Q7(b)(i)",
+    questionText: "Explain what is meant by the term ‘Multiplier’.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The multiplier shows the relationship between an (initial) injection into the circular flow of income and the eventual total increase in national income resulting from the injection.", marks: 8, contextNote: "The explanation, 8 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q7-b-ii", topicId: "economics-3-0", conceptId: "the-irish-multiplier",
+    section: "B", questionRef: "2011 HL Section B Q7(b)(ii)",
+    stem: "It has been estimated that in the Irish economy: MPT = 0.22, MPM = 0.30, MPS 0.28.",
+    questionText: "Calculate the value of the Multiplier in the Irish economy.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1.25", marks: 8, contextNote: "The multiplier, 8 marks by either of the scheme’s two methods: 1 over (MPS + MPT + MPM), or 1 over (1 – (MPC – MPT – MPM)). The working is shown with the answer.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2011-HL-scheme-p30-q7bii-working",
+          "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p30-q7bii-working.png",
+          "srcHash": "6dddf61bb71b893dbd829fb64949de22",
+          "alt": "The marking scheme’s two methods, 8 marks each. Method 1: 1 over (MPS + MPT + MPM) = 1 over (0.28 + 0.22 + 0.3) = 1 over 0.8 = 1.25. Method 2: MPC = 1 – MPS = 1 – 0.28 = 0.72, then 1 over (1 – (MPC – MPT – MPM)) = 1 over (1 – (0.72 – 0.22 – 0.3)) = 1 over 0.8 = 1.25.",
+          "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q7-b-iii", topicId: "economics-3-0", conceptId: "taxes-and-the-multiplier",
+    section: "B", questionRef: "2011 HL Section B Q7(b)(iii)",
+    questionText: "Outline briefly how taxes affect the value of the Multiplier.",
+    tariffModel: {"kind":"questionTotal","notation":"9","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Taxes decrease spending within the economy / taxes are a leakage from the circular flow of national income.", marks: null, contextNote: "Taxes are a leakage.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "When spending decreases less economic activity is generated within the economy.", marks: null, contextNote: "Less activity.", openList: true },
+    { id: "r-3", kind: "point", verbatim: "The value/the magnitude of the multiplier decreases.", marks: null, contextNote: "The multiplier falls. Claim the complete answer: the scheme prices its three points 9 marks together, without dividing them.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q7-c", topicId: "economics-3-5", conceptId: "effects-of-faster-growth",
+    section: "B", questionRef: "2011 HL Section B Q7(c)",
+    stem: "‘The Irish Government predicts that the rate of economic growth in 2011 will be 1.75%’. (The National Recovery Plan 2011-2014)",
+    questionText: "Discuss the economic effects of an increase in the rate of economic growth on the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":11,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any four", marks: 20, contextNote: "Four effects, positive or negative: 4 points x 5 marks each.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Positive economic effects — Increased employment Economic growth will lead to increased demand with more labour being demanded to produce this.","Positive economic effects — Improved government finances With a rise in spending – indirect tax revenue rises; more people at work will result in an increase in direct tax revenue; expenditure on social welfare should fall.","Positive economic effects — Effects on Balance of Payments If the increase in the rate of economic growth is export led then the balance of payments position improves.","Positive economic effects — Improved standard of living Economic growth will result in increased wealth in the economy allowing us to buy more goods and services / a reduction in poverty / better state services.","Positive economic effects — Effects on migration If jobs opportunities exist then people who had planned to emigrate may stay here and more immigrants may be attracted to the economy.","Positive economic effects — Investment opportunities Economic growth indicates a growing economy and this may attract additional investment.","Negative economic effects — Inflationary pressures With a rise in the level of economic activity the level of demand- pull inflation will rise.","Negative economic effects — Use of scarce resources Economic growth results in an increased demand for scarce resources e.g. oil. The increased demand may involve damage to the environment.","Negative economic effects — Increased demand for imports Economic growth increases incomes and spending power and demand for imports may rise, worsening the balance of payments position.","Negative economic effects — Revised expectations by citizens With economic growth citizens may alter their expectations of government and expect more services from the state e.g. revised taxes; growth in incomes; wage demands etc.","Negative economic effects — Uneven distribution of wealth If the increase in wealth is not fairly distributed then the gap between rich and poor may widen."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q8-a", topicId: "economics-3-5", conceptId: "uses-of-the-2011-census",
+    section: "B", questionRef: "2011 HL Section B Q8(a)",
+    questionText: "Discuss the economic uses of the 2011 Census of Population data for Government and Business.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":8,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A use — any four", marks: 20, contextNote: "Four uses, 4 points x 5 marks each. Candidates must have a minimum of one from each.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Government — Infrastructural requirements It helps the government plan for the construction of future infrastructural requirements e.g. how many primary schools; hospitals etc. are required.","Government — Provision of essential services It indicates where the additional services are required and what the manpower requirements are to ensure those services are provided e.g. numbers of teachers; doctors etc.","Government — Pension planning The government can predict more accurately what provision it should make for pensions in the future.","Government — Demographic changes / Regional policy It provides information on demographic changes nationally. On a regional basis it helps the government plan for the future needs of the regions.","Government — Qualifications of workforce It provides details of the educational qualifications; levels of training attained by the workforce which can help the government plan for future developments in education and training services.","Business — Future levels of consumer demand Producers can predict more accurately future demand for their goods and services.","Business — Population data Detailed information on the population such as age, gender, marital status, number of children, religion etc. is provided – and so business firms have detailed information on their markets.","Business — Labour market The data can be used by business firms to determine if they can meet their future labour requirements."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q8-b", topicId: "economics-3-2", conceptId: "why-net-outward-migration-is-high",
+    section: "B", questionRef: "2011 HL Section B Q8(b)",
+    stem: "‘Ireland is experiencing the highest level of net outward migration since 1989’. (The Central Statistics Office, 2010)",
+    questionText: "Discuss the reasons why Ireland is now experiencing a high level of net outward migration.",
+    tariffModel: {"kind":"fixed","notation":"4 + 3 @ 7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    rows: [
+    { id: "r-compulsory", kind: "point", verbatim: "Foreign nationals returning to their home countries With the decline in the economy many foreign nationals who came to Ireland for work in the ‘boom’ period are now returning home because of the lack of employment opportunities and the high cost of living in Ireland.", marks: 4, contextNote: "1 Compulsory point: 4 marks.", openList: true },
+    { id: "r-other", kind: "anyN", verbatim: "Another reason — any three", marks: 21, contextNote: "Three other reasons, 3 other points x 7 marks each.", openList: true, group: {"claimMax":3,"perOption":7,"options":["Economic recession in Ireland This has resulted in increasing unemployment and with fewer available job opportunities people are emigrating / FDI is relocating to low cost economies.","Wage rates in Ireland Wage rates in Ireland are falling. This means that the standard of living is declining and so people are seeking a better standard of living abroad.","Prospects for economic recovery Some people are concerned for their future in Ireland and see their prospects as poor. They are seeking opportunities for a better lifestyle elsewhere e.g. Canada / Australia / United States.","Job opportunities abroad / emigration of skilled workers Those people who can are emigrating to find available jobs in those countries where vacancies exist e.g. Canada; Australia and London (construction jobs in UK in the lead up to the 2012 Olympics). Some skilled workers, as part of their professional development, emigrate to develop their skills.","Rising levels of taxation in Ireland. The introduction of the various income levies / new taxes have resulted in a reduced standard of living. Those people who are mobile may seek a higher standard of living abroad."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q8-c-i", topicId: "economics-3-2", conceptId: "measures-against-unemployment",
+    section: "B", questionRef: "2011 HL Section B Q8(c)(i)",
+    stem: "‘The unemployment rate in Ireland in December 2010 was 13.6%’. (The Central Statistics Office)",
+    questionText: "Discuss two economic measures which the Government could take in order to reduce the level of unemployment in Ireland.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":8,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A measure — any two", marks: 10, contextNote: "Two measures, 2 points x 5 marks each.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Reduce taxation If the government reduced rates of VAT this would help reduce prices. This may encourage people to spend, thereby increasing demand and lead to an increased demand for labour.","Subsidise additional labour employed The government has reduced the rate of PRSI on additional labour hired. This helps reduce the cost of labour and may encourage employers to hire additional labour.","Reduce costs for business The government could, through regulation, force those firms supplying utilities to reduce their prices. This could reduce the costs for businesses, which may lead to a reduction in consumer prices. Demand may increase resulting in an increased demand for labour. This may decrease export prices thereby increasing aggregate demand, resulting in employment.","Government prudent management of the economy If public confidence is restored then people will start to spend, resulting in increased aggregate demand and boosting employment. Prudent economic management of the economy is essential to help restore confidence.","Infrastructural development Funding of improvements in the capital and social infrastructure e.g. the renovation / construction of schools etc, directly leads to employment in the construction industry and, through the multiplier effect, leads to increasing spending and growth in employment.","Maintain a low corporation profits tax base / attract high value added FDI The low rate of CPT is seen as an essential element in Ireland’s ability to continue to attract mobile foreign direct investment. This can be used as part of a packages used to encourage companies to locate here and so increase employment.","Investment in education / training The government must continue to invest in education and training. This investment will allow workers to up-skill and so acquire those skills in demand currently. Develop an internship programme.","Banking stability – availability of credit If the government can re-capitalise and rationalise the banks successfully then credit may become available which will boost investment, thereby encouraging economic growth and employment."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Higher Level — © State Examinations Commission.",
+    id: "econ-2011-hl-sb-q8-c-ii", topicId: "economics-3-1", conceptId: "the-eu-imf-financial-support",
+    section: "B", questionRef: "2011 HL Section B Q8(c)(ii)",
+    stem: "‘The unemployment rate in Ireland in December 2010 was 13.6%’. (The Central Statistics Office) At the end of the year 2010, the EU and the IMF agreed €85bn of financial support for Ireland.",
+    questionText: "Discuss the economic effects of this financial support on the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":10,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any four", marks: 20, contextNote: "Four effects, positive or negative: 4 points x 5 marks each.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Positive economic effects — Pay public sector workers The support means that these workers can continue to be paid.","Positive economic effects — Maintain public services Essential services can continue to be provided e.g. schools, hospitals, security, prison service etc. Without the financial support the provision of these services would cease.","Positive economic effects — Continuity of a banking system The financial support means that the banks can continue to operate and this may mean: (a) that the economic system can function (b) banking jobs are at less risk.","Positive economic effects — Acceptance of tax adjustments Citizens may more readily accept the need for taxation measures which will ensure the survival of the economy.","Positive economic effects — Acceptance of wage moderation The need for financial support may encourage all workers to accept the need for wages reductions / increased productivity.","Negative economic effects — High cost of repayment The high rate of interest on these loans is a further drain on scarce state resources. Inability to borrow in international markets.","Negative economic effects — Taxation increases / expenditure cuts The loans must be repaid and this means a combination of taxation increases and / or expenditure cuts which will reduce the standard of living.","Negative economic effects — Loss of economic sovereignty Economic policies in Ireland will now be dictated by the EU/IMF, rather than by the Irish government.","Negative economic effects — Loss of confidence in economy Citizens may lose confidence in the government’s ability to manage its economic affairs. This may lead to a fall in spending. It may deter investment in the economy resulting in less FDI, unemployment, the ‘brain drain’.","Negative economic effects — Unemployment / Emigration With reductions in spending and a drop in investment there may be an increase in unemployment and this may result in an increase in emigration."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2011 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2012, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2012 Higher Level — © State Examinations Commission.",

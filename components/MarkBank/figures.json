@@ -57671,5 +57671,112 @@
     "year": 2012,
     "level": "ordinary",
     "attribution": "SEC Leaving Certificate Economics 2012 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2011-HL-scheme-p08-q8-working": {
+    "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p08-q8-working.png",
+    "md5": "5e29ff9814fb861fa5d050c487fabd49",
+    "alt": "The marking scheme’s working: the formula, the change in QA over the change in PB, times (PB1 + PB2) over (QA1 + QA2); then -8 over €2, times (€8 + €10) (18) over (20 + 12) (32); = -2.25.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 HL Section A Q8",
+    "year": 2011,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission"
+  },
+  "economics-2011-HL-scheme-p09-q1aii-diagrams": {
+    "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p09-q1aii-diagrams.png",
+    "md5": "e20570df89acd56c10105cfedea11f1a",
+    "alt": "The marking scheme’s three demand diagrams, P against Q (units), each a falling D line through three points at €15, €10 and €5. Consumer A: 20, 40 and 60 units (3 marks). Consumer B: 40, 60 and 80 units (3 marks). Market: 60, 100 and 140 units (5 marks). Circled numbers mark the marks for each axis and curve.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 HL Section B Q1(a)(ii)",
+    "year": 2011,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission"
+  },
+  "economics-2011-HL-scheme-p10-q1bi-diagrams": {
+    "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p10-q1bi-diagrams.png",
+    "md5": "9f99e8b1e23a4459e1d0e6ad19f1146d",
+    "alt": "The marking scheme’s two diagrams. A movement along: one falling D/C, the price falling from P1 to P2 and the quantity rising from Q1 to Q2, an arrow down along the curve. A shift in a demand curve, with the scheme’s explanation: D/C 1 and D/C2 to its right, an arrow pointing right.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 HL Section B Q1(b)(i)",
+    "year": 2011,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission"
+  },
+  "economics-2011-HL-scheme-p11-q1cii-working": {
+    "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p11-q1cii-working.png",
+    "md5": "8485c45fa1f15721e8f601a823a1d43b",
+    "alt": "The marking scheme’s working: 40 over 80 = X over 150; = 75 utils.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 HL Section B Q1(c)(ii)",
+    "year": 2011,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission"
+  },
+  "economics-2011-HL-scheme-p14-q2b-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p14-q2b-diagram.png",
+    "md5": "8e2b14763e5685e16f3dfa14bc54b206",
+    "alt": "The marking scheme’s diagram with its list of nine elements (Price axis, Quantity axis, Kinked D/C, Distinct MR curve, MC, AC, P1, Q1, Point G): P against Q, a demand curve ABC kinked at B level with P1, an MR curve with a vertical gap from D to E below B, an MC curve rising through the gap and a U-shaped AC curve, meeting at G above Q1.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 HL Section B Q2(b)(i)–(ii)",
+    "year": 2011,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission"
+  },
+  "economics-2011-HL-scheme-p20-q4ai-working": {
+    "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p20-q4ai-working.png",
+    "md5": "c6a3cf72b0d6ec85dfb80943138e0566",
+    "alt": "The marking scheme’s working. The marginal cost of the 4th unit: €3,300 – €2,250 = €1,050. The average cost of 5 units: €4,500 over 5 = €900. The profit selling 5 units at €1,200: 5 x €1,200 (€6,000) – €4,500 = €1,500.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 HL Section B Q4(a)(i)",
+    "year": 2011,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission"
+  },
+  "economics-2011-HL-scheme-p20-q4aii-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p20-q4aii-diagram.png",
+    "md5": "3f3a18643002fc8262d04b0b185ad5cf",
+    "alt": "The marking scheme’s AC curve, Costs € against output (units): 1,000 at 1, 800 at 2, 750 at 3, 825 at 4 and 900 at 5, falling to its lowest at 3 units and rising after. Beside it the reasons: it slopes downward because of declining FC per unit or the specialisation of labour, and upward because of increasing VC per unit under the Law of Diminishing Marginal Returns.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 HL Section B Q4(a)(ii)",
+    "year": 2011,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission"
+  },
+  "economics-2011-HL-scheme-p30-q7bii-working": {
+    "src": "/exam-figures/economics/markbank/economics-2011-HL-scheme-p30-q7bii-working.png",
+    "md5": "6dddf61bb71b893dbd829fb64949de22",
+    "alt": "The marking scheme’s two methods, 8 marks each. Method 1: 1 over (MPS + MPT + MPM) = 1 over (0.28 + 0.22 + 0.3) = 1 over 0.8 = 1.25. Method 2: MPC = 1 – MPS = 1 – 0.28 = 0.72, then 1 over (1 – (MPC – MPT – MPM)) = 1 over (1 – (0.72 – 0.22 – 0.3)) = 1 over 0.8 = 1.25.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 HL Section B Q7(b)(ii)",
+    "year": 2011,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission"
+  },
+  "economics-2011-HL-paper-p05-q4-table": {
+    "src": "/exam-figures/economics/markbank/economics-2011-HL-paper-p05-q4-table.png",
+    "md5": "13439ecc5c6ef11cd9458774b3e25652",
+    "alt": "A table of a firm’s short-run costs in euro by number of units of output: 1 unit, Fixed Costs 400, Variable Costs 600, Total Costs 1,000; 2 units, 400, 1,200, 1,600; 3 units, 400, 1,850, 2,250; 4 units, 400, 2,900, 3,300; 5 units, 400, 4,100, 4,500.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 HL Section B Q4(a)",
+    "year": 2011,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission"
   }
 }

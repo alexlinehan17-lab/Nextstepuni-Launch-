@@ -26,6 +26,7 @@ import higher2013Review from '../scripts/markbank/authoring/reviews/economics-20
 import ordinary2013Review from '../scripts/markbank/authoring/reviews/economics-2013-ol-ev.json';
 import higher2012Review from '../scripts/markbank/authoring/reviews/economics-2012-hl-ev.json';
 import ordinary2012Review from '../scripts/markbank/authoring/reviews/economics-2012-ol-ev.json';
+import higher2011Review from '../scripts/markbank/authoring/reviews/economics-2011-hl-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -335,10 +336,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    // Old syllabus English: every sitting from 2012 through 2020 Higher reviewed (variants 19-35).
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(31);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(37);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(35);
+    // Old syllabus English: every sitting from 2011 Higher through 2020 Higher reviewed (variants 19-36).
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(30);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(36);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(36);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -1771,6 +1772,69 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'CANON A B C D',
       'Germany 1600 litres']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 51 independently counted 2011 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2011);
+    const tasks = higher2011Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(51);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2011Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2011, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2011 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each stance counted once.
+      const total = question.tasks.filter(task => !task.cardId.endsWith('-against')).reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2011 Higher ladders at their printed steps and reads its bracketed tariffs in printed order', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2011-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // "17 marks (10+5+2)" over a list of responses is a ladder, claimed in the order the answers are correct.
+    for (const [id, steps] of [['sa-q4', [10, 4, 2]], ['sa-q6', [9, 8]], ['sa-q7', [10, 5, 2]], ['sa-q9', [5, 4, 4, 4]],
+      ['sb-q2-c', [7, 6, 6, 6]], ['sb-q4-c', [4, 4, 4, 3]], ['sb-q5-c', [7, 7, 3, 3]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // Over printed parts of different kinds it is read in printed order, and the note says so.
+    expect(card('sa-q2').rows.map(r => r.marks)).toEqual([12, 4]);
+    expect(card('sa-q2').rows[0].contextNote).toContain('16 marks (12+4)');
+    expect(card('sa-q8').rows.map(r => r.marks)).toEqual([8, 5, 2, 2]);
+    expect(card('sa-q8').rows[0].contextNote).toContain('read here in that order');
+    // Asks the scheme prices together are one card each, cited as a range.
+    for (const [id, cite] of [['sa-q3', '(i)–(iv)'], ['sb-q2-b', '(b)(i)–(ii)'], ['sb-q2-c', '(c)(i)–(ii)']] as const) {
+      expect(card(id).questionRef, id).toContain(cite);
+    }
+    // Section B Q5(b)(ii): in favour OR against, one route each, the same total.
+    expect(card('sb-q5-b-ii-favour').totalMarks).toBe(card('sb-q5-b-ii-against').totalMarks);
+    // Undivided prices claim the complete answer.
+    for (const id of ['sb-q1-a-i', 'sb-q4-a-i', 'sb-q7-b-iii']) {
+      expect(card(id).tariffModel.kind, id).toBe('questionTotal');
+    }
+    for (const c of CARDS.filter(item => item.year === 2011 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = CARDS.filter(c => c.year === 2011)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'Step 2:',
+      'Number of units of output Fixed Costs', 'CO emissions / 2']) {
       expect(text, junk).not.toContain(junk);
     }
   });

@@ -2552,3 +2552,72 @@ Checks:
 - reconcile: 1,934/2,198, with 2012 OL at 71/71.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2011 Higher English, old syllabus (lane, 2026-11-04)
+
+All 8 paper pages and 40 scheme pages were viewed:
+- paper p8 is blank;
+- scheme pp1-4 are the cover, a blank page, the title page and the support
+  notes with the index, and pp36-40 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+This scheme prints its short tariffs as a total with its parts in brackets
+("17 marks (10+5+2)"). Over a list of responses that is a ladder, claimed in the
+order the answers are correct. Over printed parts of different kinds it is read
+in the order the parts are printed, and the card's note says so.
+
+There are 51 routes for the 55 printed asks (12 in Section A, 43 in Section B).
+Three cards each cover asks that the scheme prices together:
+- A Q3(i)-(iv): four statements at 4.
+- B2(b)(i)-(ii): one diagram 9 (its nine elements at 1), the shape 8 and the
+  equilibrium 8.
+- B2(c)(i)-(ii): two reasons and two benefits on one ladder, 7 + 6 + 6 + 6.
+B5(b)(ii) (four arguments in favour OR four against) has one route each, and
+the question's 75 counts one of them. 9 crops: 8 hidden scheme solutions and 1
+paper data crop.
+
+Decisions:
+- A Q2 and A Q5 "16 marks (12+4)": the definition 12, then the two examples
+  (or factors) 4 between them, 2 each. 2014 HL prints "Explanation: 12 marks /
+  Example: 4 marks" the same way. The notes say so.
+- A Q8 "17 marks (8+5+2+2)": the formula and working 8 (claimed by the ask's
+  own words, beside the hidden working), the answer -2.25 5, "Complement" 2
+  and its reason 2, in printed order.
+- B1(c)(ii) "13 marks (9+4)": the working 9 and the answer 4, in printed
+  order.
+- B7(a)(ii): "16 marks" is printed beneath three reasons for an ask of two,
+  read here as 8 each. The note says so.
+- B1(a)(i) (two definitions, 6), B4(a)(i) (three calculations, 12) and
+  B7(b)(iii) (three points, 9) price their answers without dividing them, so
+  they are questionTotal with unpriced rows.
+- B1(a)(ii): each consumer's diagram 3 (its axes and D/C at 1), the market
+  diagram 5 (its axes at 1 and the cumulative D/C 3) and the explanation 3.
+- B1(b)(i): a movement along and a shift, 8 each with its diagram, which the
+  scheme does not divide.
+- B4(a)(ii): the diagram 12 (claimed by the ask's own words) and the
+  explanation 6.
+- B3(c): the scheme's "May argue the opposite of this point" sits beside the
+  advantage of increased employment, and the note says so.
+- B8(b): the compulsory point 4, then three other points at 7.
+- Ladders across groups claim two of each where the paper asks for two of
+  each: A Q9 5 + 4 + 4 + 4 and B4(c) 4 + 4 + 4 + 3.
+
+Refcheck: four short asks were read by hand (B5(a)(i), B5(b)(i), B6(a)(i),
+B6(a)(ii)).
+
+Topic review: 2 reference anomalies, each a commercial heading the review files
+elsewhere:
+- A Q2 under government intervention: a mixed economy is the market economy,
+  as earlier reviews file economic systems.
+- A Q7 under international trade: multinationals re-locating are
+  globalisation.
+
+Checks:
+- econ_review: 36/66.
+- build: 2,037 cards, 0 dropped.
+- Build rule: 278 claims on this paper, 0 untraceable (61 trace by halves).
+- reconcile: 1,989/2,198, with 2011 HL at 55/55.
+- refcheck: 0 wrong.
+- cardlint: clean.

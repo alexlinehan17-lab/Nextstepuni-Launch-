@@ -238,12 +238,16 @@ describe('Economics exam-topic registry', () => {
       // national income, multinationals are globalisation); Section B Q5
       // under employment (its national income terms are filed under their
       // own topic); and Section A Q8 under economic growth and development
-      // (emigration is employment and unemployment).
-      matchedAssociations: 690,
-      referenceAnomalyAssociations: 213,
+      // (emigration is employment and unemployment). The 2011 Higher review
+      // added two: Section A Q2 under government intervention (a mixed
+      // economy is the market economy, as earlier reviews file economic
+      // systems) and Section A Q7 under international trade (multinationals
+      // re-locating are globalisation).
+      matchedAssociations: 688,
+      referenceAnomalyAssociations: 215,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 616,
+      matchedQuestionTopicLinks: 614,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');
