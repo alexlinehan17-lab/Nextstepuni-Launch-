@@ -117,9 +117,12 @@ describe('StudyClix official-question parity', () => {
             continue;
           }
 
+          // A year can hold a June entry and a deferred-sitting entry (from
+          // 2022); the paper is looked for in each, as findIndexedItem does.
           const indexedPaper = (PAPER_TRAIL_INDEX[crosswalk.subjectId] ?? [])
-            .find(entry => entry.year === year && entry.level === target.level && entry.lang === target.lang)
-            ?.papers.find(paper => paper.doc.f === target.fileid);
+            .filter(entry => entry.year === year && entry.level === target.level && entry.lang === target.lang)
+            .flatMap(entry => entry.papers)
+            .find(paper => paper.doc.f === target.fileid);
           if (!indexedPaper) {
             failures.push(`${crosswalk.subjectId}|${association.topicId}|${association.heading}: unindexed ${target.fileid}`);
             continue;

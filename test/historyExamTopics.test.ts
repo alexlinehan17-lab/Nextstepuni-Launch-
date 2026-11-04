@@ -105,17 +105,20 @@ describe('History exam-topic registry', () => {
   it('reconciles all 466 factual headings and records every official-source boundary', () => {
     expect(crosswalk.summary).toMatchObject({
       referenceHeadingAssociations: 466,
-      matchedHeadingAssociations: 405,
-      sourceBlockedHeadingAssociations: 59,
+      matchedHeadingAssociations: 428,
+      sourceBlockedHeadingAssociations: 36,
       referenceAnomalyAssociations: 2,
-      matchedLocalCardLinks: 501,
+      matchedLocalCardLinks: 530,
       referenceMappedPrintedQuestions: 501,
     });
     expect(crosswalk.policy.excludedContent).toContain('No commercial mock question');
 
     const blocked = crosswalk.associations.filter(association => association.resolution === 'source-blocked');
+    // The 2022 and 2023 deferred sittings are in the Atlas as papers of their
+    // own (fileid "...-deferred.pdf"), so their headings now resolve; only the
+    // years before the local corpus begins stay blocked.
     expect(new Set(blocked.map(association => association.year))).toEqual(
-      new Set([2008, 2009, 2022, 2023]),
+      new Set([2008, 2009]),
     );
     expect(blocked.every(association => (
       'reason' in association
@@ -134,8 +137,8 @@ describe('History exam-topic registry', () => {
 
   it('retains all headings as level-aware part metadata', () => {
     const references = examQuestionPartReferencesForSubject('history');
-    expect(references).toHaveLength(562);
-    expect(references.filter(reference => reference.level === 'higher')).toHaveLength(298);
+    expect(references).toHaveLength(568);
+    expect(references.filter(reference => reference.level === 'higher')).toHaveLength(304);
     expect(references.filter(reference => reference.level === 'ordinary')).toHaveLength(264);
     expect(new Set(references.map(reference => (
       `${reference.level}|${reference.topicId}|${reference.subdivision}`
@@ -163,21 +166,21 @@ describe('History exam-topic registry', () => {
 
   it('adds every independently selectable official task without replacing a prior identity', () => {
     expect(crosswalk.summary).toMatchObject({
-      localPaperVariants: 68,
-      localQuestionMappings: 1028,
+      localPaperVariants: 72,
+      localQuestionMappings: 1089,
       distinctLocalQuestions: 514,
-      referenceMappedLocalQuestions: 1002,
-      retainedLocalQuestions: 26,
+      referenceMappedLocalQuestions: 1062,
+      retainedLocalQuestions: 27,
       preservedBaselinePaperVariants: 18,
       preservedBaselineCards: 72,
-      addedLocalPaperVariants: 50,
-      addedLocalCards: 956,
-      hostedPaperAnchorMaps: 68,
+      addedLocalPaperVariants: 54,
+      addedLocalCards: 1017,
+      hostedPaperAnchorMaps: 72,
     });
 
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'history');
-    expect(papers).toHaveLength(68);
-    expect(papers.reduce((count, paper) => count + paper.q.length, 0)).toBe(1028);
+    expect(papers).toHaveLength(72);
+    expect(papers.reduce((count, paper) => count + paper.q.length, 0)).toBe(1089);
     for (const paper of papers) {
       expect(paper.q.filter(question => /^[1-4]$/.test(question.n))).toHaveLength(4);
       expect(paper.q.filter(question => /^[IE][1-6]$/.test(question.n))).toHaveLength(11);
@@ -242,8 +245,11 @@ describe('History exam-topic registry', () => {
       const anchorMap = JSON.parse(fs.readFileSync(anchorPath, 'utf8'));
       expect(isAnswerMap(anchorMap), anchorPath).toBe(true);
       expect(anchorMap.paperOnly).toBe(1);
+      // A deferred sitting has no answer map, so its paper-only map also opens
+      // the documents question's four questions.
+      const deferred = paper.fileid.endsWith('-deferred.pdf');
       const expectedNumbers = paper.q
-        .filter(question => /^(?:[IE][1-6]|ALT)$/.test(question.n))
+        .filter(question => (deferred ? /^(?:[1-4]|[IE][1-6]|ALT)$/ : /^(?:[IE][1-6]|ALT)$/).test(question.n))
         .map(question => question.n);
       expect(anchorMap.q.map((question: { n: string }) => question.n)).toEqual(expectedNumbers);
       expect(anchorMap.q.every((question: { mode: string }) => question.mode === 'pagejump'))
