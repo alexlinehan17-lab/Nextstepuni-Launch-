@@ -61,8 +61,10 @@ const EXACT_ANSWER_CARD = /Cluastuiscint|Léamhthuiscint/;
 
 /** Literature cards price what the student must do rather than list answers;
  *  their Eolas tariff is cut into rows by cards/irish/tariffs.ts, as is the last
- *  reading question's composite tariff when the answer cutter cannot read it. */
-const LITERATURE_CARD = /Prose|Poetry|Literature/;
+ *  reading question's composite tariff when the answer cutter cannot read it.
+ *  Reviewed cards cite the paper's own Irish headings (Prós, Filíocht, Litríocht),
+ *  the generated corpus the English ones; both name the same printed questions. */
+const LITERATURE_CARD = /Prose|Poetry|Literature|Prós|Filíocht|Litríocht/;
 const COMPOSITE_READING = /Léamhthuiscint .* Ceist 6/;
 const PRICED = /\d+\s*m?h?arc\b/;
 
