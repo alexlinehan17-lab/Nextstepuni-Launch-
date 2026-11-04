@@ -1391,7 +1391,8 @@ class HistScheme:
             if q4_only:
                 caps = [CS_Q4_ONLY.match(t) for t in q4_only]
                 if all(0 < int(m.group('max')) < ceiling for m in caps):
-                    rule = {'note': ' '.join(q4_only),
+                    # One printed line per element cap, kept as printed.
+                    rule = {'note': '\n'.join(q4_only),
                             'caps': [{'when': ' '.join(m.group('when').split()), 'max': int(m.group('max'))}
                                      for m in caps]}
             for text in q4_notes:

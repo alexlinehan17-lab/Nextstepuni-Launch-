@@ -1427,7 +1427,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The secession of Katanga, 1960-1965",
     questionText: "Why did Katanga break away from the Congo and how did outsiders become involved in the crisis that followed?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[0], cm: { ...ESSAY_MARKING[0].cm, elementRule: {"note":"NB: Why did Katanga break away? ONLY = Max 10M How did outsiders become involved in the crisis? ONLY = Max 10M","caps":[{"when":"Why did Katanga break away? ONLY","max":10},{"when":"How did outsiders become involved in the crisis? ONLY","max":10}]} }, schemePages: [7,8] },
+    rubric: { ...ESSAY_MARKING[0], cm: { ...ESSAY_MARKING[0].cm, elementRule: {"note":"NB: Why did Katanga break away? ONLY = Max 10M\nHow did outsiders become involved in the crisis? ONLY = Max 10M","caps":[{"when":"Why did Katanga break away? ONLY","max":10},{"when":"How did outsiders become involved in the crisis? ONLY","max":10}]} }, schemePages: [7,8] },
   } as SecCard,
   {
     ...base, kind: "question",
