@@ -23,6 +23,7 @@ import higher2019P2 from '../components/MarkBank/cards/irish/higher-2019-p2-auth
 import ordinary2019P1 from '../components/MarkBank/cards/irish/ordinary-2019-p1-authored.json';
 import ordinary2019P2 from '../components/MarkBank/cards/irish/ordinary-2019-p2-authored.json';
 import higher2018P1 from '../components/MarkBank/cards/irish/higher-2018-p1-authored.json';
+import higher2018P2 from '../components/MarkBank/cards/irish/higher-2018-p2-authored.json';
 import ordinary2022P1 from '../scripts/markbank/authored/irish-ordinary-2022-p1-component-review.json';
 import ordinary2022P2 from '../components/MarkBank/cards/irish/ordinary-2022-p2-authored.json';
 import higher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
@@ -142,6 +143,7 @@ const NEW_PAPER_TWO = [
   { file: ordinary2020P2, fileid: 'LC001GLP200IV.pdf', cards: 52, readingWhole: 10 },
   { file: higher2019P2, fileid: 'LC001ALP200IV.pdf', cards: 60, readingWhole: 12 },
   { file: ordinary2019P2, fileid: 'LC001GLP200IV.pdf', cards: 50, readingWhole: 10 },
+  { file: higher2018P2, fileid: 'LC001ALP200IV.pdf', cards: 61, readingWhole: 12 },
 ];
 
 describe('Irish archive review: new Paper 2 cards', () => {

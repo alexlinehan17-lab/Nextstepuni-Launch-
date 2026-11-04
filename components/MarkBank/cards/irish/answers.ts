@@ -93,8 +93,9 @@ const SECTION_SUMMARY = /^(?:Freagair Léamhthuiscint|Tá Ceist \d+\s*[–-]\s*\
  *  it suffices or what it must contain, a direction. */
 const SUFFICES = /\((?:Is leor|aon|Ní mór|Tá gá le)\s[^()]*(?:\([^()]*\)[^()]*)*\)/g;
 /** "… nó áitiúla = 1 mharc (gan ‘in 2024’ sa fhreagra)", "… = 2 mharc (Gan ainmneacha an dá thír luaite, …)": the qualifier is the condition of the answer it
- *  follows. It stays on that row, as a second slice: "… nó áitiúla: (gan ‘in 2024’ sa fhreagra) · 1m". */
-const QUALIFIED_PRICE = /\s*(=\s*\d+\s*m?h?arc\b)\s*(\([Gg]an\s[^()=]*\))/g;
+ *  follows, as "= 0 marc (gá le cáiliú)" (2018 Higher B 1(b)(ii)) is. It stays on that row, as a second slice:
+ *  "… nó áitiúla: (gan ‘in 2024’ sa fhreagra) · 1m". */
+const QUALIFIED_PRICE = /\s*(=\s*\d+\s*m?h?arc\b)\s*(\((?:[Gg]an|gá le)\s[^()=]*\))/g;
 /** "… in áit faoi leith (2 mharc) in imeacht tréimhse áirithe ama (1 mharc) = 3 mharc" (2020 Higher A 1(a)): one answer
  *  printing how its own price divides. Where the bracketed prices add up to the price after them they are part of the
  *  answer's text, not tariffs: a word joiner (U+2060) holds each one together until the rows are cut, then goes. */
@@ -314,6 +315,18 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   const seen = new Set<string>();
   return { ok: true, allocation: { parts: built, directions: directions.filter(note => note && !seen.has(note) && seen.add(note)) } };
 }
+
+/** One printed answer carrying every point a ladder prices ("… ar oíche áirithe (pointe amháin eolais) agus eolas cruinn …
+ *  (an dara pointe eolais)", 2018 Higher A 1(a)): on the card the student claims how many of its points they made, so the
+ *  answer steps through the ladder ([0, 2, 3]) rather than paying its first rung alone. Applied where a card's criterion
+ *  takes its rows (factory.ts), after any slot card has read the part's ladder. */
+export const stepSingleAnswerLadders = (allocation: IrishAllocation): IrishAllocation => ({
+  ...allocation,
+  parts: allocation.parts.map(part => (part.ladder && part.ladder.length > 1 && part.rows.length === 1
+    ? { id: part.id, ...(part.prompt ? { prompt: part.prompt } : {}), tariff: part.tariff, ...(part.samples ? { samples: part.samples } : {}),
+      rows: [{ ...part.rows[0], marks: part.tariff, steps: [0, ...part.ladder] }] }
+    : part)),
+});
 
 export function irishAnswersFor(source: IrishAnswerSource): IrishAllocation | undefined {
   const result = parseIrishAnswers(source);

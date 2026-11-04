@@ -298,6 +298,13 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
     kept = kept.slice(0, half);
   }
   parts.length = 0; parts.push(...kept);
+  // A criterion whose only printed price is its band table's header (2018 Higher Ceist 4A–E and 2B print no "Eolas = 35 marc"
+  // of their own; "Catagóir Eolas (35 marc) Gaeilge (5 mharc)" prices them): one judgement over the criterion, its own words
+  // the row, as a sub-question priced whole with nothing under it. Only where nothing else priced it.
+  if (parts.length === 0 && !loose.length && loosePrompt
+    && bands.some(band => Number(/^Catagóir\s+Eolas\s*\((\d+)\s*m?h?arc\)/.exec(band)?.[1]) === source.totalMarks)) {
+    parts.push({ prompt: loosePrompt, tariff: source.totalMarks, rows: [], samples: [] });
+  }
   if (parts.length === 0) return { ok: false, reason: 'no priced sub-question' };
 
   const built: IrishAnswerPart[] = [];
