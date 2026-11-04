@@ -286,6 +286,7 @@ SCHEME_MISPRINTS = {
 BULLET = re.compile(r'^[•●▪·]\s*(.*)$')
 TRAILING_M = re.compile(r'\s*(\d{1,3})M\s*(?:max)?\s*$', re.I)
 WHOLE_SCALE = re.compile(r'\b(?:Answer to be marked|answer as a whole and mark) on a sliding scale out of (\d{1,2})\b', re.I)
+PARTIAL_RULE = re.compile(r'^Answers? referring\b.*\bonly\b', re.I)
 # The ask's CEILING, wherever the SEC writes it: "Max = 10M", "max 10M",
 # "Max. 5m". It is the authority on what a part is worth, because the flat
 # figures beside it are the split ("5M + 5M") or a partial-credit rule ("If
@@ -586,9 +587,16 @@ PARAGRAPH_LEAD_RUN_ON = re.compile(
 CS_START = re.compile(
     r'^(?:•|\d\.\s+Contextualisation|Mark by the principle|A Core Statement may be'
     r'|To apply the principle|Here, in question 4|Note\b|[ABC]\.\s|Cumulative Mark\b'
+    # 2013 Early Modern letters the three parts without a stop: "B This answer ..."
+    r'|[ABC] (?=This answer|A stimulus|A short|A longer|Typically)'
     r'|Overall Evaluation\b|This is the total mark|In awarding\b|The marking of parts'
     r'|Each Topic is divided|LC 20\d\d:|(?:Excellent|Very good|Good|Fair|Poor|Weak|Very weak):\s*\d'
-    r'|\(maximum:|IRELAND and|Section [23]\b|\(\d{3} marks\))')
+    r'|\(maximum:|IRELAND and|Section [23]\b|\(\d{3} marks\)'
+    # 2013's Q4 ceilings, one to a line: "NB: Why did Katanga break away? ONLY =
+    # Max 10M" / "How did outsiders become involved in the crisis? ONLY = Max 10M"
+    r'|NB:|[A-Z][^=]*\? ONLY = Max)')
+# One of those ceilings: the element the answer treats alone, and its maximum.
+CS_Q4_ONLY = re.compile(r'^(?:NB:\s*)?(?P<when>[A-Z][^=]*\? ONLY) = Max (?P<max>\d+)M$')
 PM_BAND = re.compile(
     r'^(Excellent|Very good|Good|Fair|Poor|Weak|Very weak):\s*(\d+)-(\d+)\s*(marks?)\b\s*(.*)$')
 PM_CEILING = re.compile(
@@ -928,6 +936,12 @@ class HistScheme:
         flat = None
         out = []
         for line in lines:
+            # A partial-credit rule printed after the part's own marks, "10M" /
+            # "Answers referring only to a strength OR a weakness = Max 5M"
+            # (2013 Higher), is not its ceiling. ("Answer referring to one
+            # document only = 5M max 10M" carries the ceiling too, and is.)
+            if PARTIAL_RULE.match(line) and len(re.findall(r'\d+\s*M\b', line)) == 1:
+                continue
             for m in MAX_M.finditer(line):
                 value = int(m.group(1))
                 if lettered and parent_total is not None and value == parent_total:
@@ -1330,6 +1344,7 @@ class HistScheme:
         q4, q4_pages = logical(q4_lo, q4_hi)
         cs = {'statementKinds': [], 'procedure': []}
         q4_notes, q4_guidance, ceiling = [], [], None
+        q4_only = []
         mode = None
         # The head; a reprinted question (2022 on) joins onto it, since it opens
         # no logical line of its own.
@@ -1355,6 +1370,9 @@ class HistScheme:
             if re.match(r'^Note\b', text):
                 q4_notes.append(text)
                 continue
+            if CS_Q4_ONLY.match(text):
+                q4_only.append(text)
+                continue
             raise AssertionError(f'{self.year} {self.level} {self.field} q4: unread line {text!r}')
         per = [int(m.group(1)) for p in cs['procedure']
                for m in [re.search(r'Each completed Core Statement is awarded (\d+) marks', p)] if m]
@@ -1370,6 +1388,12 @@ class HistScheme:
             # State” For one element only, max 12M" (2015). It is Q4's element
             # rule, as a Higher Q4's NOTE is, not a direction.
             rule = None
+            if q4_only:
+                caps = [CS_Q4_ONLY.match(t) for t in q4_only]
+                if all(0 < int(m.group('max')) < ceiling for m in caps):
+                    rule = {'note': ' '.join(q4_only),
+                            'caps': [{'when': ' '.join(m.group('when').split()), 'max': int(m.group('max'))}
+                                     for m in caps]}
             for text in q4_notes:
                 m = CS_Q4_CAP.match(text)
                 if m and rule is None and 0 < int(m.group('max')) < ceiling:
@@ -1387,7 +1411,7 @@ class HistScheme:
                'schemeGuidance': [], 'pages': sorted(s23_pages | q4_pages)}
         state = None
         for text in s23:
-            m = re.match(rf'^{unit}\. This answer will be marked by the principle of Core Statement', text)
+            m = re.match(rf'^{unit}\.? This answer will be marked by the principle of Core Statement', text)
             if m:
                 out['schemeGuidance'].append(text)
                 mm = re.search(r'maximum Cumulative Mark of (\d+) will be allowed for Core Statements and a maximum of (\d+) marks', text)

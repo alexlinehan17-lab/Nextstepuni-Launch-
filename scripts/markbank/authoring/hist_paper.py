@@ -149,6 +149,11 @@ MISPRINTS = {
     # 6, Section 3 prints Europe Topic 2 as a unit of its own, and the case
     # study is Meiler Magrath. The Irish edition prints "Éire: Topaic 2".
     (2014, 'ol', 'em'): {'Europe and the wider world: Topic2': 'Ireland: Topic 2'},
+    # 2013 Ordinary prints two part heads without their letter, both checked
+    # on the rendered page: "(40 marks)" over Later Modern Ireland Topic 2 C
+    # (page 5) and "(30 marks)" over Early Modern Europe Topic 6 B (page 14).
+    (2013, 'ol', 'lm'): {'(40 marks)': 'C (40 marks)'},
+    (2013, 'ol', 'em'): {'(30 marks)': 'B (30 marks)'},
 }
 EXTRA = re.compile(r'^Answer the questions below if you are following the '
                    r'Alternative Instructions', re.I)
@@ -358,6 +363,38 @@ def layout(stem_lines):
     return out
 
 
+def _numbered_extract(printed_lines, misprints):
+    """Line indices of an extract's own numbered paragraphs.
+
+    2013 Ordinary Early Modern prints Sir John Davies's letter as five
+    numbered points ("1. First the land assigned to the natives ...") above
+    its five questions ("1. What proclamation did Sir John Davies make ...?").
+    Read as questions, the letter's points opened Q1-Q5 and the real questions
+    ran on behind them. A numbered line is the extract's when it sits between
+    a Part A head and that unit's "Source:" line and questions follow the
+    source line, before the unit's next head."""
+    texts = [misprints.get(' '.join(p[2].split()), ' '.join(p[2].split())) for p in printed_lines]
+    head = re.compile(r'^(?:[ABC]\s*\(\d{2}\s*marks\)\s*$)')
+    out = set()
+    start = None
+    for i, text in enumerate(texts):
+        if head.match(text) or SECTION.match(text) or TOPIC.match(text) or EXTRA.match(text):
+            start = i if (text.startswith('A') or EXTRA.match(text)) else None
+            continue
+        if start is not None and SOURCE_LINE.match(text):
+            numbered = [j for j in range(start + 1, i) if QNUM.match(texts[j])]
+            after = []
+            for j in range(i + 1, len(texts)):
+                if head.match(texts[j]) or SECTION.match(texts[j]) or TOPIC.match(texts[j]):
+                    break
+                if QNUM.match(texts[j]):
+                    after.append(j)
+            if numbered and after:
+                out.update(numbered)
+            start = None
+    return out
+
+
 class HistPaper:
     """One sitting of one field: every ask the paper prints.
 
@@ -434,11 +471,17 @@ class HistPaper:
             token = f'{section} Topic {topic}'
             return f'{token} {part}' if part else token
 
-        for printed in lines(self.path):
+        printed_lines = list(lines(self.path))
+        numbered_extract = _numbered_extract(printed_lines, misprints)
+        for index, printed in enumerate(printed_lines):
             pno, _x, raw = printed[:3]
             page = pno
             line = ' '.join(raw.split())
             line = misprints.get(line, line)
+            if index in numbered_extract and not stem_closed:
+                # A numbered paragraph of the extract itself, not a question.
+                stem_buf.append((line, printed))
+                continue
             if not line:
                 continue
             if self.cover_marks is None:

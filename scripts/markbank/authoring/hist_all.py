@@ -422,6 +422,17 @@ NO_PRINTED_ANSWER = 'The scheme prints no answer here: any correct one earns the
 TARIFF_WORDING = re.compile(r'^(?:ONE|TWO|THREE|[Oo]ne valid|[Tt]wo valid|[Aa]ny valid|Any (?:ONE|TWO|THREE))\b(?![^.]*\.\s*\S)')
 
 
+def unit_source_pages(P, unit):
+    """The pages a Part A unit's questions are read from: its own page, and the
+    page its stem sends the student to ("The picture marked Y on page 15
+    shows ...", 2013-2014 Ordinary), where the picture is printed."""
+    pages = [P.unit_pages[unit]]
+    m = re.search(r'\bon page (\d+)\b', P.stems.get(unit) or '')
+    if m and int(m.group(1)) not in pages:
+        pages.append(int(m.group(1)))
+    return pages
+
+
 def split_card(P, year, level, field, key, ask, section, topic_id, ref):
     """A part the scheme prices component by component, answering each: one
     row per component at its printed marks (hist_scheme
@@ -462,7 +473,7 @@ def split_card(P, year, level, field, key, ask, section, topic_id, ref):
     else:
         # A Part A answer priced component by component (2016 Ordinary A4).
         card['sourceMaterial'] = source_material(
-            P, year, level, field, unit, [P.unit_pages[unit]], 'The extract', 'OFFICIAL EXTRACT')
+            P, year, level, field, unit, unit_source_pages(P, unit), 'The extract', 'OFFICIAL EXTRACT')
     return card
 
 
@@ -805,7 +816,7 @@ def build():
                         card['questionFigureKey'] = figure_key(year, level, field, unit)
                         card['questionFigureIncludesPrompt'] = False
                     pages = (P.document_pages if unit == '1'
-                             else [P.unit_pages[unit]])
+                             else unit_source_pages(P, unit))
                     card['sourceMaterial'] = source_material(
                         P, year, level, field, unit, pages,
                         'The documents' if unit == '1' else 'The extract',

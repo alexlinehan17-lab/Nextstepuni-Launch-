@@ -2151,7 +2151,8 @@ export const CARDS: SecCard[] = [
           "label": "OFFICIAL EXTRACT",
           "title": "The extract",
           "pages": [
-                10
+                10,
+                15
           ],
           "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
@@ -2175,7 +2176,8 @@ export const CARDS: SecCard[] = [
           "label": "OFFICIAL EXTRACT",
           "title": "The extract",
           "pages": [
-                10
+                10,
+                15
           ],
           "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
@@ -2199,7 +2201,8 @@ export const CARDS: SecCard[] = [
           "label": "OFFICIAL EXTRACT",
           "title": "The extract",
           "pages": [
-                10
+                10,
+                15
           ],
           "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
@@ -2223,7 +2226,8 @@ export const CARDS: SecCard[] = [
           "label": "OFFICIAL EXTRACT",
           "title": "The extract",
           "pages": [
-                10
+                10,
+                15
           ],
           "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
@@ -2248,7 +2252,8 @@ export const CARDS: SecCard[] = [
           "label": "OFFICIAL EXTRACT",
           "title": "The extract",
           "pages": [
-                10
+                10,
+                15
           ],
           "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."

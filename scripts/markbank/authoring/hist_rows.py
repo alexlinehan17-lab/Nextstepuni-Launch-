@@ -46,6 +46,7 @@ INLINE = re.compile(r'\s*\(\s*(\d+)\s*[Mm]\s*\)')
 # in the same answer, and only when the prices then add up to the tariff.
 INLINE_LOOSE = re.compile(r'\s*\(\s*(\d+)\s*[Mm]?\s*\)')
 BARE_M = re.compile(r'\s*\(\s*()[Mm]\s*\)')
+MULTIPLIED = re.compile(r'\s*\((\d+)\s*M\s*x\s*(\d+)\)', re.I)
 PAIR = re.compile(r'\s*\(\s*(\d+)\s*[Mm]\s*\+\s*(\d+)\s*[Mm]\s*\)')
 DANGLING = re.compile(r'\s*(\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=)\s*$', re.I)
 JOINER = re.compile(r'^(?:and/or|and|with|plus|or|&)\b\s*', re.I)
@@ -134,6 +135,23 @@ def split_priced(card):
     if (tokens and len(loose) > len(tokens) and sum(int(t.group(1)) for t in tokens) < total
             and sum(int(t.group(1)) for t in loose) == total):
         tokens = loose
+    elif (not tokens and len(loose) >= 2 and all(0 < int(t.group(1)) < total for t in loose)
+            and sum(int(t.group(1)) for t in loose) == total):
+        # Every price printed without its M: "DMP prevented looting (3) and the
+        # call-out of the military (3)" (2013 Ordinary, (6)). Read only when
+        # the bracketed figures add up to the tariff exactly.
+        tokens = loose
+    mult = MULTIPLIED.search(text)
+    if not tokens and mult and int(mult.group(1)) * int(mult.group(2)) == total:
+        # "Civilisation, wealth and manufactures (2M x 3)" (2013 Ordinary, (6)):
+        # each of the named items at its price, when the count is the items'.
+        items = [tidy(x) for x in re.split(r',\s*|\s+and\s+', text[:mult.start()]) if tidy(x)]
+        if len(items) == int(mult.group(2)) and not text[mult.end():].strip():
+            rows[:] = [{'id': f'r-{i}', 'kind': 'point', 'verbatim': item, 'marks': int(mult.group(1))}
+                       for i, item in enumerate(items, start=1)]
+            if row.get('contextNote'):
+                rows[0]['contextNote'] = row['contextNote']
+            return card
     bare = list(BARE_M.finditer(text))
     if (tokens and len(bare) == 1 and bare[0].start() > tokens[-1].end()
             and 0 < total - sum(int(t.group(1)) for t in tokens)):
