@@ -17255,55 +17255,6 @@
   "notes": "The scheme prints '6 marks'."
  },
  {
-  "id": "eng-2024-ol-q1-k",
-  "topicId": "eng-3-14",
-  "conceptId": "any-following-drone-technology-autonomous-vehicle",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q1(k)",
-  "questionText": "Explain any one of the following: (i) Drone technology, (ii) Autonomous vehicle, (iii) Solar energy.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Drones are unmanned aircrafts. A drone is a flying robot that can be remotely controlled or fly autonomously using software-controlled flight plans that work in conjunction with onboard sensors and a global positioning system (GPS). To fly, drones must have a power source, such as battery or fuel. They also have rotors, propellers and a frame.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "The frame of a drone is typically made of a lightweight, composite material to reduce weight and increase manoeuvrability.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "An autonomous vehicle is a vehicle capable of sensing its environment and operating without human involvement. A human passenger is not required to take control of the vehicle at any time, nor is a human passenger required to be present in the vehicle at all. An autonomous car can go anywhere a traditional car goes and do everything that an experienced human driver does.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Autonomous vehicles for Digital Warehousing .",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Solar energy is light, heat, and other forms of energy given off by the sun. Solar energy can be collected and used to heat buildings and to make electricity.",
-    "marks": null
-   }
-  ],
-  "stem": "Give brief answers to any eight of the following:",
-  "notes": "The scheme prints '6 marks'."
- },
- {
   "id": "eng-2024-ol-q1-l",
   "topicId": "eng-3-8",
   "conceptId": "define-term-brittleness-material-brittle",
@@ -17405,63 +17356,6 @@
   "notes": "The scheme prints 'Three parts @ 5 marks (15)'."
  },
  {
-  "id": "eng-2024-ol-q2-b-iii",
-  "topicId": "eng-1-4",
-  "conceptId": "how-charge-heated",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q2(b)(iii)",
-  "questionText": "Describe how the charge is heated.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 3,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "The coke is burned to produce heat.",
-    "marks": 3,
-    "accepts": [
-     "Cupola furnace",
-     "Heating the charge: - Heat for this furnace is produced by an electric arc created between carbon electrodes and the charge."
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'One part @ 3 marks (12)'."
- },
- {
-  "id": "eng-2024-ol-q2-c-ii",
-  "topicId": "eng-3-14",
-  "conceptId": "reason-selection-each-material",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q2(c)(ii)",
-  "questionText": "State one reason for the selection of each material.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Frame",
-    "marks": 6,
-    "accepts": [
-     "Reason: Light, but strong Weighted plates"
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'Three parts @ 2 marks (15)'.",
-  "questionFigureKey": "engineering-2024-OL-paper-q2ci-art",
-  "questionFigureIncludesPrompt": false
- },
- {
   "id": "eng-2024-ol-q2-d-i",
   "topicId": "eng-2-10",
   "conceptId": "advantage-using-temporary-joining-process",
@@ -17512,43 +17406,6 @@
   "notes": "The scheme prints 'One part @ 4 marks (8)'.",
   "questionFigureKey": "engineering-2024-OL-paper-q2dii-art",
   "questionFigureIncludesPrompt": false
- },
- {
-  "id": "eng-2024-ol-q3-a",
-  "topicId": "eng-2-6",
-  "conceptId": "relation-heat-treatment-steel-any-following",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q3(a)",
-  "questionText": "In relation to the heat treatment of steel, explain any two of the following: (i) Normalising, (ii) Quenching, (iii) Carbon content.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 14,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Normalising steel will reduce its hardness and improve its ductility.",
-    "marks": 14,
-    "group": {
-     "claimMax": 2,
-     "perOption": 7,
-     "options": [
-      "Normalising steel will reduce its hardness and improve its ductility.",
-      "Steel is heated to a cherry red colour, approx. 900°C and allowed to cool down at room temperature (faster than annealing).",
-      "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about.",
-      "If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.",
-      "Low carbon steel contains less than 0.03% of carbon.",
-      "Medium carbon steel contains between 0.03% and 0.06% carbon.",
-      "High carbon steel contains more than 0.06% carbon."
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme prints 'Any two parts @ 7 marks (14)'."
  },
  {
   "id": "eng-2024-ol-q3-c",
@@ -17777,7 +17634,7 @@
  },
  {
   "id": "eng-2024-ol-q4-d",
-  "topicId": "eng-1-5",
+  "topicId": "eng-2-10",
   "conceptId": "safety-precautions-be-observed-when-soldering",
   "level": "ordinary",
   "year": 2024,
@@ -17806,34 +17663,6 @@
    }
   ],
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
- },
- {
-  "id": "eng-2024-ol-q5-a-ii",
-  "topicId": "eng-2-13",
-  "conceptId": "aid-labelled-diagram-any-manufacturing-processes",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q5(a)(ii)",
-  "questionText": "Describe with the aid of a labelled diagram any one of the manufacturing processes, named by you, at Q5 (a)(i) above.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 11,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly and is then ejected. Injection moulding is used for the rapid moulding of components.",
-    "marks": 11,
-    "accepts": [
-     "Blow Molulding Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is formed by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould.",
-     "Final shape Mould Vacuum A vacuum former is a plastic thermoforming machine that is used to produce parts which are precisely formed on one side. The former contains a heating element, a height adjustable table, which is porous, and an air pump. The heating element is used to heat up and soften a sheet of plastic which has been clamped into a frame. When the plastic sheet begins to sag, a mould, placed on the porous table, is lifted into the plastic sheet. The air pump is then turned on creating a vacuum below the mould. This causes the plastic sheet to pull against the mould, forming the final shape. After cooling, the mould is lowered, and the plastic part is removed."
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'One part @ 11 marks (20)'."
  },
  {
   "id": "eng-2024-ol-q5-b",
@@ -17935,151 +17764,6 @@
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
  },
  {
-  "id": "eng-2024-ol-q6-a",
-  "topicId": "eng-2-11",
-  "conceptId": "engineering-component-shown-be-manufactured-centre",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q6(a)",
-  "questionText": "The engineering component shown is to be manufactured on a centre lathe. Identify three lathe processes used to manufacture the engineering component.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 15,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Parallel turning / Facing / Knurling / Drilling / Undercutting / Parting off / Taper turning.",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints 'Any three parts @ 5 marks (15)'.",
-  "questionFigureKey": "engineering-2024-OL-paper-q6a-art",
-  "questionFigureIncludesPrompt": false
- },
- {
-  "id": "eng-2024-ol-q6-b",
-  "topicId": "eng-2-11",
-  "conceptId": "any-following-relation-machining-rake-angle",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q6(b)",
-  "questionText": "Explain any three of the following in relation to machining: (i) Rake angle, engineering component (ii) Chuck key, (iii) Depth of cut, (iv) Pilot hole.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 15,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.",
-    "marks": 15,
-    "group": {
-     "claimMax": 3,
-     "perOption": 5,
-     "options": [
-      "The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.",
-      "A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.",
-      "This is the distance the cutting tool is moved into the workpiece when cutting.",
-      "A pilot hole must be drilled before using a large drill.",
-      "This keeps the large drill central as it guides the drill through the piece when drilling."
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
- },
- {
-  "id": "eng-2024-ol-q6-c-ii",
-  "topicId": "eng-2-11",
-  "conceptId": "identify-use-centre-lathe-part-or",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q6(c)(ii)",
-  "questionText": "Identify one use for this centre lathe part. OR List two advantages of using a CNC laser cutter in engineering manufacture.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Mass production of complex parts.",
-    "marks": 6,
-    "accepts": [
-     "High level of precision accuracy."
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'One part @ 6 marks'."
- },
- {
-  "id": "eng-2024-ol-q6-c-iii",
-  "topicId": "eng-2-11",
-  "conceptId": "safety-precautions-be-observed-when-using",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q6(c)(iii)",
-  "questionText": "State two safety precautions to be observed when using a centre lathe. OR Identify one safety precaution to be observed when using a CNC laser cutter.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Wear safety goggles.",
-    "marks": 8,
-    "group": {
-     "claimMax": 2,
-     "perOption": 4,
-     "options": [
-      "Wear safety goggles.",
-      "Do not remove swarf using hands.",
-      "Do not leave a CNC laser machine operating unattended."
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme prints 'Two parts @ 4 marks (20)'."
- },
- {
-  "id": "eng-2024-ol-q7-a-i",
-  "topicId": "eng-3-12",
-  "conceptId": "any-types-fit-hole-shaft-assembly",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q7(a)(i)",
-  "questionText": "Name any two types of fit in a hole and shaft assembly.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Clearance / Interference / Transition fit",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints 'Any two parts @ 3 marks'."
- },
- {
   "id": "eng-2024-ol-q7-a-ii",
   "topicId": "eng-3-12",
   "conceptId": "any-fits-named-q7-i-above",
@@ -18108,76 +17792,6 @@
   "notes": "The scheme prints 'Any one part @ 6 (12)'."
  },
  {
-  "id": "eng-2024-ol-q7-b",
-  "topicId": "eng-3-12",
-  "conceptId": "waste-pipe-plug-machined-dimensions-shown",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q7(b)",
-  "questionText": "A waste pipe and plug are machined to the dimensions shown below.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 20,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Nominal diameter of the hole; 24.00 mm",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Smallest diameter of the shaft; 24.97 mm",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Largest diameter of the hole; 24.05 mm",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Type of fit; Interference fit",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '20 marks'.",
-  "questionFigureKey": "engineering-2024-OL-paper-q7bi-art",
-  "questionFigureIncludesPrompt": false
- },
- {
-  "id": "eng-2024-ol-q7-b-iv",
-  "topicId": "eng-3-12",
-  "conceptId": "type-fit-will-result-assembly-smallest",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 OL Q7(b)(iv)",
-  "questionText": "The type of fit which will result from the assembly of the smallest shaft and the largest hole.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Type of fit; Interference fit",
-    "marks": 5
-   }
-  ],
-  "notes": "The scheme prints 'One part @ 5 marks (20)'.",
-  "questionFigureKey": "engineering-2024-OL-paper-q7bi-art",
-  "questionFigureIncludesPrompt": false
- },
- {
   "id": "eng-2024-ol-q7-c-iii",
   "topicId": "eng-2-16",
   "conceptId": "advantage-using-crocodile-clips-when-assembling",
@@ -18200,6 +17814,944 @@
    }
   ],
   "notes": "The scheme prints 'Any one part @ 6 marks (18)'."
+ },
+ {
+  "id": "eng-2024-ol-q1-h",
+  "topicId": "eng-2-11",
+  "conceptId": "type-chuck-shown-suitable-use",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q1(h)",
+  "questionText": "Name the type of chuck shown and give one suitable use for it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Four jaw independent chuck",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Use: Used for eccentric turning or for gripping square or irregular shapes.",
+    "marks": 3
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "questionFigureKey": "engineering-2024-OL-paper-q1h-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q1-k",
+  "topicId": "eng-3-14",
+  "conceptId": "any-following-drone-technology-autonomous-vehicle",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q1(k)",
+  "questionText": "Explain any one of the following: (i) Drone technology, (ii) Autonomous vehicle, (iii) Solar energy.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Drones are unmanned aircrafts. A drone is a flying robot that can be remotely controlled or fly autonomously using software-controlled flight plans that work in conjunction with onboard sensors and a global positioning system (GPS). To fly, drones must have a power source, such as battery or fuel. They also have rotors, propellers and a frame. The frame of a drone is typically made of a lightweight, composite material to reduce weight and increase manoeuvrability.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "An autonomous vehicle is a vehicle capable of sensing its environment and operating without human involvement. A human passenger is not required to take control of the vehicle at any time, nor is a human passenger required to be present in the vehicle at all. An autonomous car can go anywhere a traditional car goes and do everything that an experienced human driver does.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Solar energy is light, heat, and other forms of energy given off by the sun. Solar energy can be collected and used to heat buildings and to make electricity.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints 'Any one explanation: Award 6 Marks'."
+ },
+ {
+  "id": "eng-2024-ol-q2-b-i",
+  "topicId": "eng-1-4",
+  "conceptId": "draw-labelled-diagram-selected-furnace",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q2(b)(i)",
+  "questionText": "Select one of the furnaces listed at Q2 (a) above and answer each of the following: Draw a labelled diagram of the selected furnace;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Select one of the furnaces listed at Q2 (a) above and answer each of the following: Draw a labelled diagram of the selected furnace;",
+    "marks": 6,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(i) Labelled diagram Award 6 Marks', for any one of the three furnaces.",
+  "figureKey": "engineering-2024-OL-scheme-q2bi-sol"
+ },
+ {
+  "id": "eng-2024-ol-q2-b-ii",
+  "topicId": "eng-1-4",
+  "conceptId": "materials-used-charge",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q2(b)(ii)",
+  "questionText": "Select one of the furnaces listed at Q2 (a) above and answer each of the following: List the materials used in the charge;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Blast furnace: Iron ore Coke Limestone",
+    "marks": 3,
+    "accepts": [
+     "Cupola furnace Pig iron Scrap steel Carbon Coke Limestone",
+     "Electric arc furnace Scrap iron/steel Carbon Limestone"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Award 3 Marks', for the furnace selected."
+ },
+ {
+  "id": "eng-2024-ol-q2-b-iii",
+  "topicId": "eng-1-4",
+  "conceptId": "how-charge-heated",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q2(b)(iii)",
+  "questionText": "Select one of the furnaces listed at Q2 (a) above and answer each of the following: Describe how the charge is heated.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Blast furnace: The coke is burned to produce heat.",
+    "marks": 3,
+    "accepts": [
+     "Cupola furnace The coke is burned to produce heat.",
+     "Electric arc furnace Heat for this furnace is produced by an electric arc created between carbon electrodes and the charge."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Award 3 Marks', for the furnace selected."
+ },
+ {
+  "id": "eng-2024-ol-q2-c-i",
+  "topicId": "eng-3-14",
+  "conceptId": "suitable-material-each-parts-labelled-leg",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q2(c)(i)",
+  "questionText": "Name one suitable material for each of the parts labelled on the leg press weight machine.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Seat (i) Material: Vinyl",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Frame (i) Material: Steel tube",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Weighted plates (i) Material: Cast iron",
+    "marks": 3
+   }
+  ],
+  "questionFigureKey": "engineering-2024-OL-paper-q2ci-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q2-c-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "reason-selection-each-material",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q2(c)(ii)",
+  "questionText": "State one reason for the selection of each material.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Seat (i) Material: Vinyl (ii) Reason: Comfortable and easy to clean.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Frame (i) Material: Steel tube (ii) Reason: Light, but strong",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Weighted plates (i) Material: Cast iron (ii) Reason: Can be poured into a designed shape, heavy metal",
+    "marks": 2
+   }
+  ],
+  "questionFigureKey": "engineering-2024-OL-paper-q2ci-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q3-a",
+  "topicId": "eng-2-6",
+  "conceptId": "relation-heat-treatment-steel-any-following",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q3(a)",
+  "questionText": "In relation to the heat treatment of steel, explain any two of the following: (i) Normalising, (ii) Quenching, (iii) Carbon content.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Normalising: Normalising steel will reduce its hardness and improve its ductility. Steel is heated to a cherry red colour, approx. 900°C and allowed to cool down at room temperature (faster than annealing).",
+    "marks": 14,
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "Normalising: Normalising steel will reduce its hardness and improve its ductility. Steel is heated to a cherry red colour, approx. 900°C and allowed to cool down at room temperature (faster than annealing).",
+      "Quenching: Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about.",
+      "Carbon content: If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e. • Low carbon steel contains less than 0.03% of carbon. • Medium carbon steel contains between 0.03% and 0.06% carbon. • High carbon steel contains more than 0.06% carbon."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Award 2 @ 7 Marks'."
+ },
+ {
+  "id": "eng-2024-ol-q3-b",
+  "topicId": "eng-2-6",
+  "conceptId": "coil-spring-shown-annealed-hardened-tempered",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q3(b)",
+  "questionText": "The coil spring shown is annealed, hardened and tempered during the manufacturing process. Describe any two of the following heat treatment processes: (i) Annealing, (ii) Hardening, (iii) Tempering.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Annealing: Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900°C and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increasing the ductility and malleability of a metal.",
+    "marks": 14,
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "Annealing: Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900°C and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increasing the ductility and malleability of a metal.",
+      "Hardening: To harden a component made of high carbon steel, it is first heated to a cherry red colour, approx. 800°C / 900°C, or until it loses its magnetic properties. The steel is then immediately quenched in water or oil.",
+      "Tempering: Tempering removes some of the hardness while increasing the toughness of a metal. It is achieved by heating the metal to a specific temperature which is determined by the colour of the metal. On heating, colours appear and when the correct colour is achieved i.e., light straw appears at approx. 250° - 350°, it is quenched in cold water."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Award 2 @ 7 Marks'.",
+  "questionFigureKey": "engineering-2024-OL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q3-d",
+  "topicId": "eng-3-8",
+  "conceptId": "any-following-metal-properties-or-advantage",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q3(d)",
+  "questionText": "Explain any two of the following metal properties: (i) Elasticity, (ii) Melting point, (iii) Compressive strength.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Elasticity: The property of elasticity is the ability of an object or material to return to its original shape after being stretched.",
+    "marks": 12,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Elasticity: The property of elasticity is the ability of an object or material to return to its original shape after being stretched.",
+      "Melting point: Melting point is the temperature at which a metal changes its state from solid to liquid.",
+      "Compressive strength: Compressive strength is the ability of a material to withstand heavy loads before failure."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Award 2 @ 6 Marks'. The paper sets this (d) and the robotics (d) beneath it either side of an OR."
+ },
+ {
+  "id": "eng-2024-ol-q3-d-i",
+  "topicId": "eng-3-14",
+  "conceptId": "elasticity-or-robotic-lawn-mowing",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q3(d)(i)",
+  "questionText": "State one advantage for each of the robotic processes shown below: Robotic lawn mowing,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Robotic lawn mowing: A robotic lawnmower is autonomous, it can cut the grass at any time during the day or night, it does not need a human to operate it.",
+    "marks": 4
+   }
+  ],
+  "notes": "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\".",
+  "questionFigureKey": "engineering-2024-OL-paper-q3di-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q3-d-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "melting-point-or-robotic-waste-sorting",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q3(d)(ii)",
+  "questionText": "State one advantage for each of the robotic processes shown below: Robotic waste sorting,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Robotic waste sorting: Robotic waste sorting can operate continuously, is more efficient. It is also more hygienic as humans do not have to handle contaminated waste products.",
+    "marks": 4
+   }
+  ],
+  "notes": "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\".",
+  "questionFigureKey": "engineering-2024-OL-paper-q3dii-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q3-d-iii",
+  "topicId": "eng-3-14",
+  "conceptId": "compressive-strength-or-robotic-welding",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q3(d)(iii)",
+  "questionText": "State one advantage for each of the robotic processes shown below: Robotic welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Robotic welding: Robotic welding can continually produce a much higher level of quality and precision and integrates well with mass production processes.",
+    "marks": 4
+   }
+  ],
+  "notes": "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\".",
+  "questionFigureKey": "engineering-2024-OL-paper-q3diii-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q5-a-i",
+  "topicId": "eng-1-9",
+  "conceptId": "plastic-manufacturing-process-used-production-each",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q5(a)(i)",
+  "questionText": "Name a plastic manufacturing process used in the production of each of the items shown above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Chair – Injection moulding",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Water bottle – Blow moulding",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Toy car – Vacuum forming",
+    "marks": 3
+   }
+  ],
+  "questionFigureKey": "engineering-2024-OL-paper-q5a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q5-a-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "aid-labelled-diagram-any-manufacturing-processes",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q5(a)(ii)",
+  "questionText": "Describe with the aid of a labelled diagram any one of the manufacturing processes, named by you, at Q5 (a)(i) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Injection moulding: Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly and is then ejected. Injection moulding is used for the rapid moulding of components.",
+    "marks": 11,
+    "accepts": [
+     "Blow Molulding Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is formed by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould.",
+     "Vacuum forming A vacuum former is a plastic thermoforming machine that is used to produce parts which are precisely formed on one side. The former contains a heating element, a height adjustable table, which is porous, and an air pump. The heating element is used to heat up and soften a sheet of plastic which has been clamped into a frame. When the plastic sheet begins to sag, a mould, placed on the porous table, is lifted into the plastic sheet. The air pump is then turned on creating a vacuum below the mould. This causes the plastic sheet to pull against the mould, forming the final shape. After cooling, the mould is lowered, and the plastic part is removed."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '(Award 1 @ 11 Marks)'.",
+  "figureKey": "engineering-2024-OL-scheme-q5aii-sol",
+  "questionFigureKey": "engineering-2024-OL-paper-q5a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q6-a",
+  "topicId": "eng-2-11",
+  "conceptId": "engineering-component-shown-be-manufactured-centre",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q6(a)",
+  "questionText": "The engineering component shown is to be manufactured on a centre lathe. Identify three lathe processes used to manufacture the engineering component.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Parallel turning",
+    "marks": 15,
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Parallel turning",
+      "Facing",
+      "Knurling",
+      "Drilling",
+      "Undercutting",
+      "Parting off",
+      "Taper turning."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Award 3 @ 5 Marks'.",
+  "questionFigureKey": "engineering-2024-OL-paper-q6a-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q6-b",
+  "topicId": "eng-2-11",
+  "conceptId": "any-following-relation-machining-rake-angle",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q6(b)",
+  "questionText": "Explain any three of the following in relation to machining: (i) Rake angle, (ii) Chuck key, (iii) Depth of cut, (iv) Pilot hole.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Rake angle: The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.",
+    "marks": 15,
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Rake angle: The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.",
+      "Chuck key: A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.",
+      "Dept of cut: This is the distance the cutting tool is moved into the workpiece when cutting.",
+      "Pilot hole: A pilot hole must be drilled before using a large drill. This keeps the large drill central as it guides the drill through the piece when drilling."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Award 3 @ 5 Marks'."
+ },
+ {
+  "id": "eng-2024-ol-q6-c-i",
+  "topicId": "eng-2-11",
+  "conceptId": "centre-lathe-part-shown-or-term",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q6(c)(i)",
+  "questionText": "A part for a centre lathe is shown opposite. Name the centre lathe part shown. OR CNC Laser cutting is frequently used in schools and industry as part of the manufacturing process. Explain the term CNC.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tailstock",
+    "marks": 6,
+    "route": "a"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "CNC - Computer Numerical Control.",
+    "marks": 6,
+    "route": "b"
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR; the scheme prints 'Award 1 @ 6 Marks' for each (i).",
+  "questionFigureKey": "engineering-2024-OL-paper-q6ci-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q6-c-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-use-centre-lathe-part-or",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q6(c)(ii)",
+  "questionText": "A part for a centre lathe is shown opposite. Identify one use for this centre lathe part.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Drilling / Supporting long work / Reaming / Threading",
+    "marks": 6
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR, the centre lathe part and CNC laser cutting; the scheme prices their (ii)s and (iii)s differently, so each branch is a card of its own.",
+  "questionFigureKey": "engineering-2024-OL-paper-q6ci-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q6-c-ii-or",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-use-centre-lathe-part-or",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q6(c)(ii) — CNC laser cutting",
+  "questionText": "CNC Laser cutting is frequently used in schools and industry as part of the manufacturing process. List two advantages of using a CNC laser cutter in engineering manufacture.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mass production of complex parts.",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "High level of precision accuracy.",
+    "marks": 4
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR, the centre lathe part and CNC laser cutting; the scheme prices their (ii)s and (iii)s differently, so each branch is a card of its own.",
+  "questionFigureKey": "engineering-2024-OL-paper-q6cii-or-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q6-c-iii",
+  "topicId": "eng-2-11",
+  "conceptId": "safety-precautions-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q6(c)(iii)",
+  "questionText": "A part for a centre lathe is shown opposite. State two safety precautions to be observed when using a centre lathe.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wear safety goggles.",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Do not remove swarf using hands.",
+    "marks": 4
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR, the centre lathe part and CNC laser cutting; the scheme prices their (ii)s and (iii)s differently, so each branch is a card of its own.",
+  "questionFigureKey": "engineering-2024-OL-paper-q6ci-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q6-c-iii-or",
+  "topicId": "eng-2-11",
+  "conceptId": "safety-precautions-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q6(c)(iii) — CNC laser cutting",
+  "questionText": "CNC Laser cutting is frequently used in schools and industry as part of the manufacturing process. Identify one safety precaution to be observed when using a CNC laser cutter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Do not leave a CNC laser machine operating unattended.",
+    "marks": 6
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR, the centre lathe part and CNC laser cutting; the scheme prices their (ii)s and (iii)s differently, so each branch is a card of its own.",
+  "questionFigureKey": "engineering-2024-OL-paper-q6cii-or-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q7-a-i",
+  "topicId": "eng-3-12",
+  "conceptId": "any-types-fit-hole-shaft-assembly",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q7(a)(i)",
+  "questionText": "Name any two types of fit in a hole and shaft assembly.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Clearance",
+    "marks": 6,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Clearance",
+      "Interference",
+      "Transition fit"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Award 2 @ 3 Marks'."
+ },
+ {
+  "id": "eng-2024-ol-q7-b",
+  "topicId": "eng-3-12",
+  "conceptId": "waste-pipe-plug-machined-dimensions-shown",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q7(b)",
+  "questionText": "A waste pipe and plug are machined to the dimensions shown below. State the: (i) Nominal diameter of the hole; (ii) Smallest diameter of the shaft; (iii) Largest diameter of the hole;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nominal diameter of the hole; 24.00 mm",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Smallest diameter of the shaft; 24.97 mm",
+    "marks": 5
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Largest diameter of the hole; 24.05 mm",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints 'Award 4 @ 5 Marks' for (i)-(iv); (iv) is carded on its own.",
+  "questionFigureKey": "engineering-2024-OL-paper-q7bi-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q7-b-iv",
+  "topicId": "eng-3-12",
+  "conceptId": "type-fit-will-result-assembly-smallest",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q7(b)(iv)",
+  "questionText": "A waste pipe and plug are machined to the dimensions shown below. State the: The type of fit which will result from the assembly of the smallest shaft and the largest hole.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Interference fit",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints 'Award 4 @ 5 Marks' for (i)-(iv).",
+  "questionFigureKey": "engineering-2024-OL-paper-q7bi-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q7-c",
+  "topicId": "eng-3-12",
+  "conceptId": "any-instruments-shown-application-each-instrument",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q7(c)",
+  "questionText": "Name any three of the instruments shown and give one application of each instrument named.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "(i) Vee block & clamp",
+    "marks": 9,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "(i) Vee block & clamp",
+      "(ii) Engineering Ruler",
+      "(iii) Digital vernier callipers",
+      "(iv) Engineering protractor"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "(i) Vee block & clamp Used for holding round bars when drilling or marking out.",
+    "marks": 9,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "(i) Vee block & clamp Used for holding round bars when drilling or marking out.",
+      "(ii) Engineering Ruler Used for accurate measurement, and as a guide for marking out lines on material.",
+      "(iii) Digital vernier callipers Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.",
+      "(iv) Engineering protractor Use for checking or accurately marking out angles on material."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Name Award 3 @ 3 Marks, Application Award 3 @ 3 Marks'.",
+  "questionFigureKey": "engineering-2024-OL-paper-q7c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-ol-q7-c-i",
+  "topicId": "eng-2-16",
+  "conceptId": "electronic-components-labelled-b-c",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q7(c)(i)",
+  "questionText": "The test circuit shown uses crocodile clips for assembly. Name the three electronic components labelled A, B and C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A - Battery",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B - Toggle switch",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C - L.E.D.",
+    "marks": 2
+   }
+  ],
+  "notes": "The paper sets this (c) as the alternative, after an OR, to \"(c) Name any three of the instruments shown\".",
+  "figureKey": "engineering-2024-OL-paper-q7ci-crop",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Battery",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Toggle switch",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "L.E.D.",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2024-ol-q7-c-ii",
+  "topicId": "eng-2-16",
+  "conceptId": "draw-electronic-symbol-each-electronic-components",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q7(c)(ii)",
+  "questionText": "The test circuit shown uses crocodile clips for assembly. Draw the electronic symbol for each of the electronic components A, B and C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Battery:",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Toggle switch:",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "L.E.D.:",
+    "marks": 2
+   }
+  ],
+  "notes": "The paper sets this (c) as the alternative, after an OR, to \"(c) Name any three of the instruments shown\".",
+  "figureKey": "engineering-2024-OL-scheme-q7cii-sol",
+  "questionFigureKey": "engineering-2024-OL-paper-q7ci-crop",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-hl-q1-a",

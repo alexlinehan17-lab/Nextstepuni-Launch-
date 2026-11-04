@@ -415,10 +415,19 @@ class Author:
              row_kind='point', notation=None, spread=False, context=None,
              omit=(), source='md', card_id=None, from_run=None, from_runs=None,
              tick=None, first_sentence=False, ladder=None, lifted=None,
-             special=None, question_lift=None, group=None, routes=None):
+             special=None, question_lift=None, group=None, routes=None,
+             ref_note=None):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         clean = self.subject in QUESTION_CLEANING
+        # The second branch of a printed OR that the scheme prices differently
+        # is a card of its own; the deck keeps one card per questionRef, so
+        # its reference carries the branch after a dash, which reconcile
+        # reads as the same part ("Q6(c)(ii) — CNC laser cutting").
+        if ref_note:
+            if not clean:
+                raise Refused(f'{ref}: ref_note= is for reviewed cleaning-subject parts')
+            ref = f'{ref} \u2014 {ref_note}'
         question = self.paper.text(q, letter, roman)
         if not clean and not question:
             raise Refused(f'{ref}: the paper has no text for this part')
