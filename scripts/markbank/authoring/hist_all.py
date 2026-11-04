@@ -81,8 +81,11 @@ from hist_topics import topic_for, concept_for, TITLES        # noqa: E402
 from hist_rows import split_priced                           # noqa: E402
 from align import bag, score                                  # noqa: E402
 
-YEARS = (2021, 2022, 2023, 2024, 2025)
+YEARS = (2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('hl', 'ol')
+# The sittings carded, each added whole as its papers are read and reviewed.
+SITTINGS = [(year, level) for year in YEARS for level in LEVELS
+            if year <= 2025 or (year, level) in set()]
 FIELD_KEYS = ('lm', 'em')
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
@@ -383,8 +386,8 @@ def build():
         refused[reason] += 1
         examples[reason].append(ref)
 
-    for year in YEARS:
-        for level in LEVELS:
+    for year, level in SITTINGS:
+        if True:
             for field in FIELD_KEYS:
                 P = HistPaper(year, level, field)
                 S = HistScheme(year, level, field)

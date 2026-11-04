@@ -27937,59 +27937,53 @@
     "kind": "point",
     "verbatim": "Yes, both documents agree that the Lockwood committee rejected Derry as the site of a new university for Northern Ireland and both documents show that the government of Northern Ireland accepted Lockwood’s recommendation",
     "marks": null,
-    "openList": true
+    "openList": true,
+    "contextNote": "Accept answers which argue that both documents disagree with the contents of the Lockwood Report."
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "Accept answers which argue that both documents disagree with the contents of the Lockwood Report.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
     "kind": "point",
     "verbatim": "Lockwood’s recommendation is implied in doc A. The reaction of the people of Derry is “an intense feeling of disbelief” regarding Lockwood’s conclusion.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-4",
+    "id": "r-3",
     "kind": "point",
     "verbatim": "In doc A, the people of Derry organise a protest against Lockwood’s recommendation.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-5",
+    "id": "r-4",
     "kind": "point",
     "verbatim": "There is “outrage” among many people in Derry when they realise that a number of prominent Unionist figures in the city had not supported the city as the site for the new university, according to doc A.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-6",
+    "id": "r-5",
     "kind": "point",
     "verbatim": "Doc A states that Prime Minister O’Neill ignored the protest and that the Stormont government decided to site the North’s second university at Coleraine.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-7",
+    "id": "r-6",
     "kind": "point",
     "verbatim": "The first paragraph of doc B clearly states that the Lockwood Report “recommended the siting of a new university for Northern Ireland at Coleraine” and that Derry was “bypassed”.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-8",
+    "id": "r-7",
     "kind": "point",
     "verbatim": "The people of Derry use “direct action of a modest sort” to protest against the recommendation.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-9",
+    "id": "r-8",
     "kind": "point",
     "verbatim": "Doc B implies that the government accepted Lockwood’s recommendation as it states that the demands for the university to be sited in Derry “failed”.",
     "marks": null,
@@ -74080,41 +74074,36 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Accept either primary or secondary provided a valid reason is given",
-    "marks": null
+    "verbatim": "Primary source: Don Anderson reported on the UWC strike as it happened and was an eye- witness to the events he describes",
+    "marks": null,
+    "contextNote": "Accept either primary or secondary provided a valid reason is given"
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "Primary source: Don Anderson reported on the UWC strike as it happened and was an eye- witness to the events he describes",
-    "marks": null
-   },
-   {
-    "id": "r-3",
     "kind": "point",
     "verbatim": "He is therefore a primary source",
     "marks": null
    },
    {
-    "id": "r-4",
+    "id": "r-3",
     "kind": "point",
     "verbatim": "OR Secondary source: this book of recollections was published in 2022, nearly 50 years after the events it describes",
     "marks": null
    },
    {
-    "id": "r-5",
+    "id": "r-4",
     "kind": "point",
     "verbatim": "In 2022, Don Anderson is not giving a primary account of events in 1974, but is reflecting back on them nearly 50 years later",
     "marks": null
    },
    {
-    "id": "r-6",
+    "id": "r-5",
     "kind": "point",
     "verbatim": "Therefore, this should be taken as a secondary source",
     "marks": null
    },
    {
-    "id": "r-7",
+    "id": "r-6",
     "kind": "point",
     "verbatim": "Primary/secondary and a valid reason",
     "marks": null,
@@ -102205,59 +102194,48 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Accept either primary or secondary provided a valid reason is given",
-    "marks": null
+    "verbatim": "Primary source: Ilya Zbarsky was an eye witness who attended the 1938 show trial",
+    "marks": null,
+    "contextNote": "Accept either primary or secondary provided a valid reason is given — Do not award any marks if a valid reason is not given"
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "Do not award any marks if a valid reason is not given",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Primary source: Ilya Zbarsky was an eye witness who attended the 1938 show trial",
-    "marks": null
-   },
-   {
-    "id": "r-4",
     "kind": "point",
     "verbatim": "He gives us a first-hand account of how the trial was conducted",
     "marks": null
    },
    {
-    "id": "r-5",
+    "id": "r-3",
     "kind": "point",
     "verbatim": "This is his personal memoir explaining how he felt at the time, “I became convinced that the accused men were guilty”",
     "marks": null
    },
    {
-    "id": "r-6",
+    "id": "r-4",
     "kind": "point",
     "verbatim": "Secondary source: Ilya Zbarsky’s memoir was published in 1998, sixty years after the events it describes",
     "marks": null
    },
    {
-    "id": "r-7",
+    "id": "r-5",
     "kind": "point",
     "verbatim": "In 1998, Zbarsky is not giving a primary account of the events of 1938, but is reflecting back on them after a gap of sixty years",
     "marks": null
    },
    {
-    "id": "r-8",
+    "id": "r-6",
     "kind": "point",
     "verbatim": "Therefore, this could be taken as a secondary source",
     "marks": null
    },
    {
-    "id": "r-9",
+    "id": "r-7",
     "kind": "point",
     "verbatim": "It is an edited extract and could therefore be taken as a secondary source",
     "marks": null
    },
    {
-    "id": "r-10",
+    "id": "r-8",
     "kind": "point",
     "verbatim": "Primary/secondary and a valid reason",
     "marks": null,
@@ -111837,9 +111815,10 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Yes and/or no, as to whether the points made in doc A are convincing. Answers should refer to the doc and may also use relevant contextual knowledge.",
+    "verbatim": "Yes and/or no, as to whether the points made in doc A are convincing.",
     "marks": null,
-    "openList": true
+    "openList": true,
+    "contextNote": "Answers should refer to the doc and may also use relevant contextual knowledge."
    },
    {
     "id": "r-2",
@@ -111908,47 +111887,41 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Candidates should assess the value of this newspaper editorial as a historical source on the Jarrow March.",
+    "verbatim": "The candidate may attempt to define what a newspaper editorial is: an opinion piece giving the editor’s point of view on an event in the news of the time. Unlike a newspaper report/article, an editorial does not give a full account of the event in question.",
     "marks": null,
-    "openList": true
+    "openList": true,
+    "contextNote": "Candidates should assess the value of this newspaper editorial as a historical source on the Jarrow March."
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "The candidate may attempt to define what a newspaper editorial is: an opinion piece giving the editor’s point of view on an event in the news of the time. Unlike a newspaper report/article, an editorial does not give a full account of the event in question.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
     "kind": "point",
     "verbatim": "It is of value because this is a primary source, written as the Jarrow March was in progress. A newspaper editor would usually have expert knowledge of current events and would be used to evaluating the circumstances and personalities relating to current events.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-4",
+    "id": "r-3",
     "kind": "point",
     "verbatim": "However, as editor of The Irish Times, this editor did not have first-hand experience of the march and was relying on reports made by other journalists to provide him with information on the march.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-5",
+    "id": "r-4",
     "kind": "point",
     "verbatim": "This editorial allows us to see how the Jarrow March was viewed at the time. The editor attempts to be even-handed in his treatment of the events in question. He seems to agree with the government that such marches “certainly are useless”, but he also thinks that the government statement takes “too narrow a view of the matter”, and that governments can be “unimaginative and lazy”.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-6",
+    "id": "r-5",
     "kind": "point",
     "verbatim": "He shows that there was public sympathy for the marchers at the time. He says the marchers’ aim was simply to make “a plea for work” and to draw attention to the “desperate conditions” in Jarrow.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-7",
+    "id": "r-6",
     "kind": "point",
     "verbatim": "This editorial lacks detailed factual information about the march. A historian should read newspaper reports as well as newspaper editorials to learn more about the key daily developments during the march.",
     "marks": null,
@@ -135026,8 +134999,9 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Answers should use both documents to support their points Doc A says that the problem was that his wife, Catherine of Aragon, did not provide a son and heir",
-    "marks": null
+    "verbatim": "Doc A says that the problem was that his wife, Catherine of Aragon, did not provide a son and heir",
+    "marks": null,
+    "contextNote": "Answers should use both documents to support their points"
    },
    {
     "id": "r-3",

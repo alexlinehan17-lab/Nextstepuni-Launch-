@@ -101,6 +101,19 @@ EXTRA_HEAD = re.compile(
     r'^Extra (?:Section|Part) A questions on page \d+ of the '
     r'exam(?:ination)? paper', re.I)
 LETTER_HEAD = re.compile(r'^\(([a-f])\)\s*(.*)$')
+# SEC misprints in a scheme's own lettering, keyed (year, level, field):
+# {(question, printed letter): (the paper's letter, a word the answer must
+# contain)}. The paper wins on the address; the word guards the relabel so
+# it can never move an answer that is not the one described.
+SCHEME_MISPRINTS = {
+    # 2026 Higher Early Modern letters its Criticism parts "(c)" and "(d)",
+    # running on from Comparison's (a) and (b). The paper prints Q3(a) "Would
+    # you consider document A to be an objective source?" and Q3(b) "In what
+    # ways is document B a useful source ...", and the scheme's (c) answers
+    # whether doc A is "objective" and its (d) opens "Doc B is a useful
+    # historical source on the Laois Offaly Plantation".
+    (2026, 'hl', 'em'): {(3, 'c'): ('a', 'objective'), (3, 'd'): ('b', 'useful')},
+}
 BULLET = re.compile(r'^[•●▪·]\s*(.*)$')
 TRAILING_M = re.compile(r'\s*(\d{1,3})M\s*(?:max)?\s*$', re.I)
 # The ask's CEILING, wherever the SEC writes it: "Max = 10M", "max 10M",
@@ -192,6 +205,27 @@ INSTRUCTION_POINT = re.compile(
     r'|Look for\b|Answers? (?:could|may|might) include'
     r'|Points? could include|The answer could contain)', re.I)
 
+# A sentence that tells the candidate or the examiner what the answer must
+# do, set inside the scheme's model answer: "Candidates should refer to the doc
+# in their answers.", "A clear understanding of the meaning of 'objective' is
+# necessary to gain marks in the very good to excellent range.", "Points should
+# be supported by reference to doc B.", "Accept either primary or secondary
+# provided a valid reason is given". It is the scheme's own direction, so it is
+# kept, but on the row beside it as its note: a student cannot claim it.
+INSTRUCTION_OPENING = (r'(?:Candidates should\b|Answers? should\b|A clear understanding of\b'
+                       r'|Points should be supported\b|Comments on the limitations\b'
+                       r'|Accept (?:answers|either|both|any)\b|Do not award\b)')
+INSTRUCTION_SENTENCE = re.compile('^' + INSTRUCTION_OPENING, re.I)
+# Where an instruction follows a sentence ending in a capital ("... the early
+# history of the GAA. Points should be supported ..."), the sentence splitter
+# keeps the two together to protect initials; an instruction opening is never
+# an initial, so it starts a sentence of its own.
+INSTRUCTION_BREAK = re.compile(r'(?<=[.?!])\s+(?=' + INSTRUCTION_OPENING + ')')
+# The same instruction printed with no full stop before the answer it heads:
+# "Answers should use both documents to support their points Doc A says ..."
+INSTRUCTION_RUN_ON = re.compile(
+    r'^((?:Answers? should|Candidates should)\b[^.]*?)\s+(Doc(?:ument)?\s+[AB]\b.*)$')
+
 # The document label the SEC prints at the END of a printed line rather than on
 # one of its own — "...be kept within the city walls, etc. Doc B" in the 2023
 # Early Modern scheme. Left in place it closes a marking row with the heading
@@ -275,6 +309,49 @@ def _note_caps(ask):
     ask.note_caps = [(' '.join(when.split()), int(top))
                      for when, top in NOTE_CAP.findall(ask.note)]
     ask.note_max = ask.note_caps[0][1] if ask.note_caps else None
+
+
+def _sentences_kept(text):
+    """The sentences of one point, each with its own closing punctuation."""
+    out, start = [], 0
+    for m in SENTENCE.finditer(text):
+        cut = m.start() + len(m.group(0).rstrip())
+        out.append(text[start:cut].strip())
+        start = cut
+    out.append(text[start:].strip())
+    return [part.strip() for piece in out for part in INSTRUCTION_BREAK.split(piece) if part.strip()]
+
+
+def _directions_to_notes(points):
+    """Move instruction sentences off the rows, onto the note of the row beside them.
+
+    A point that is nothing but instructions gives them to the previous row
+    (the summary they qualify), or to the next where it comes first.
+    """
+    kept, waiting = [], []
+    for label, point, note in points:
+        m = INSTRUCTION_RUN_ON.match(point)
+        lead = [m.group(1)] if m else []
+        if m:
+            point = m.group(2)
+        sentences = _sentences_kept(point)
+        directions = lead + [x for x in sentences if INSTRUCTION_SENTENCE.match(x)]
+        answer = ' '.join(x for x in sentences if not INSTRUCTION_SENTENCE.match(x))
+        # Joined as hist_all joins a row's notes, with " — ": the splitter
+        # that cut these points took their closing stops with it.
+        if not answer:
+            if kept:
+                l, p, n = kept[-1]
+                kept[-1] = (l, p, ' — '.join(x for x in (n, *directions) if x))
+            else:
+                waiting.extend(directions)
+            continue
+        kept.append((label, answer, ' — '.join(x for x in (*waiting, *directions, note) if x) or None))
+        waiting = []
+    if waiting and kept:
+        l, p, n = kept[-1]
+        kept[-1] = (l, p, ' — '.join(x for x in (n, *waiting) if x))
+    return kept
 
 
 def _halve_pages(raw, field):
@@ -487,8 +564,13 @@ class HistScheme:
                 m = LETTER_HEAD.match(line)
                 if m and dbq_q is not None:
                     close()
-                    cur = Ask(('1', dbq_q, m.group(1), None), 'stated',
+                    letter = m.group(1)
+                    fix = SCHEME_MISPRINTS.get((self.year, self.level, self.field), {}).get((dbq_q, letter))
+                    if fix:
+                        letter = fix[0]
+                    cur = Ask(('1', dbq_q, letter, None), 'stated',
                               None, '')
+                    cur.misprint_word = fix[1] if fix else None
                     buf = [m.group(2)]
                     continue
             if cur is not None:
@@ -496,6 +578,10 @@ class HistScheme:
         close()
 
     def _add(self, ask):
+        word = getattr(ask, 'misprint_word', None)
+        if word and word not in ' '.join(p for _l, p, _n in ask.points).lower() + ask.cue.lower():
+            raise AssertionError(f'{self.year} {self.level} {self.field} {ask.key}: '
+                                 f'relabelled scheme answer does not mention {word!r}')
         if ask.key in self.by_key:
             self.refused.append((ask.key, 'the scheme prices this ask twice'))
             return
@@ -646,7 +732,7 @@ class HistScheme:
                 note = m.group(0).strip()
                 point = point[:m.start()].strip().rstrip(';,')
             repaired.append((label, point, note))
-        ask.points = repaired
+        ask.points = _directions_to_notes(repaired)
         ask.cue = ' '.join((' '.join(p for _l, p, _n in ask.points)).split())
         if not ask.points:
             # Nothing but tariff arithmetic under this head — 2021 Ordinary
