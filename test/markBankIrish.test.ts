@@ -23,6 +23,7 @@ import reviewedHigher2023P2 from '../components/MarkBank/cards/irish/higher-2023
 import reviewedOrdinary2023P2 from '../components/MarkBank/cards/irish/ordinary-2023-p2-authored.json';
 import reviewedOrdinary2022P2 from '../components/MarkBank/cards/irish/ordinary-2022-p2-authored.json';
 import reviewedHigher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
+import reviewedHigher2021P2 from '../components/MarkBank/cards/irish/higher-2021-p2-authored.json';
 import reviewedOrdinary2025P1 from '../scripts/markbank/authored/irish-ordinary-2025-p1-component-review.json';
 import reviewedOrdinary2025P2 from '../components/MarkBank/cards/irish/ordinary-2025-p2-authored.json';
 import reviewedOrdinary2024P2 from '../components/MarkBank/cards/irish/ordinary-2024-p2-authored.json';
@@ -99,7 +100,7 @@ const census = JSON.parse(readFileSync(resolve(
 const manifest = authoredJson as unknown as IrishManifest;
 // These pins cover the legacy census output. Paper-reviewed components ship
 // beside it and carry their own regression files (2026 Higher and Ordinary Papers 1 and 2).
-const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards, ...reviewedHigher2025P2.cards, ...reviewedOrdinary2025P2.cards, ...reviewedOrdinary2024P2.cards, ...reviewedHigher2023P2.cards, ...reviewedOrdinary2023P2.cards, ...reviewedOrdinary2022P2.cards, ...reviewedHigher2022P2.cards].map(card => card.id));
+const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards, ...reviewedHigher2025P2.cards, ...reviewedOrdinary2025P2.cards, ...reviewedOrdinary2024P2.cards, ...reviewedHigher2023P2.cards, ...reviewedOrdinary2023P2.cards, ...reviewedOrdinary2022P2.cards, ...reviewedHigher2022P2.cards, ...reviewedHigher2021P2.cards].map(card => card.id));
 const HIGHER = HIGHER_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 // Reviewed legacy components keep their cards here, corrected in place (IDs unchanged).
 // 2025, 2024, 2023, 2022 and 2021 HL Paper 1 and 2025/2024 OL Paper 1 also attached each retained card's printed page; 2025 OL Paper 2
@@ -107,7 +108,7 @@ const HIGHER = HIGHER_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 const SOURCED_BY_REVIEW = new Set<string>([...reviewedHigher2025P1.cardIds, ...reviewedHigher2024P1.cardIds, ...reviewedHigher2023P1.cardIds, ...reviewedHigher2022P1.cardIds, ...reviewedHigher2021P1.cardIds, ...reviewedOrdinary2025P1.cardIds, ...reviewedOrdinary2024P1.cardIds, ...reviewedOrdinary2023P1.cardIds, ...reviewedOrdinary2022P1.cardIds, ...reviewedOrdinary2021P1.cardIds,
   ...[...reviewedOrdinary2025P2.review.legacyCardIds, ...reviewedOrdinary2024P2.review.legacyCardIds, ...reviewedOrdinary2023P2.review.legacyCardIds, ...reviewedOrdinary2022P2.review.legacyCardIds].filter(id => /-(prose-2[ab]|poetry-3b)-/.test(id))]);
 // Retained listening segments and whole reading questions now mark each printed part separately.
-const REVIEWED_MULTI = new Set<string>([...reviewedHigher2025P1.listeningSegmentCardIds, ...reviewedHigher2024P1.listeningSegmentCardIds, ...reviewedHigher2023P1.listeningSegmentCardIds, ...reviewedHigher2022P1.listeningSegmentCardIds, ...reviewedHigher2021P1.listeningSegmentCardIds, ...reviewedHigher2025P2.review.readingWholeCardIds, ...reviewedHigher2023P2.review.readingWholeCardIds, ...reviewedHigher2022P2.review.readingWholeCardIds,
+const REVIEWED_MULTI = new Set<string>([...reviewedHigher2025P1.listeningSegmentCardIds, ...reviewedHigher2024P1.listeningSegmentCardIds, ...reviewedHigher2023P1.listeningSegmentCardIds, ...reviewedHigher2022P1.listeningSegmentCardIds, ...reviewedHigher2021P1.listeningSegmentCardIds, ...reviewedHigher2025P2.review.readingWholeCardIds, ...reviewedHigher2023P2.review.readingWholeCardIds, ...reviewedHigher2022P2.review.readingWholeCardIds, ...reviewedHigher2021P2.review.readingWholeCardIds,
   ...reviewedOrdinary2025P1.listeningSegmentCardIds, ...reviewedOrdinary2024P1.listeningSegmentCardIds, ...reviewedOrdinary2023P1.listeningSegmentCardIds, ...reviewedOrdinary2022P1.listeningSegmentCardIds, ...reviewedOrdinary2021P1.listeningSegmentCardIds, ...reviewedOrdinary2025P2.review.readingWholeCardIds, ...reviewedOrdinary2024P2.review.readingWholeCardIds, ...reviewedOrdinary2023P2.review.readingWholeCardIds, ...reviewedOrdinary2022P2.review.readingWholeCardIds]);
 // Reviewed Ordinary compositions use the full 0–40 scale: the printed short-attempt columns include odd values.
 const FULL_SCALE_COMPOSITION = new Set<string>([...reviewedOrdinary2025P1.compositionRouteCardIds, ...reviewedOrdinary2024P1.compositionRouteCardIds, ...reviewedOrdinary2023P1.compositionRouteCardIds, ...reviewedOrdinary2022P1.compositionRouteCardIds, ...reviewedOrdinary2021P1.compositionRouteCardIds]);
@@ -272,7 +273,8 @@ describe('Irish prompt, paper and source integrity', () => {
 
   it('retains all compulsory Q4F parts and their published allocations, including cross-page scheme guidance', () => {
     const reviewed = [
-      [2021, [19, 7, 9], [46, 49], 'Cén t-atmaisféar'],
+      // 2021 since its paper review: 4F's answers span PDF 46-48; its Gaeilge table is the section's (PDF 30).
+      [2021, [19, 7, 9], [46, 48], 'Cén t-atmaisféar'],
       [2022, [19, 8, 8], [48, 50], 'Cén mheadaracht'],
       [2023, [19, 7, 9], [47, 49], 'Chloífinn fuath is díoltas'],
       [2024, [19, 7, 9], [47, 50], 'Sin é do dhoras'],

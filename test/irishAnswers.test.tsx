@@ -68,9 +68,11 @@ describe('Irish scheme text becomes sub-questions and rows', () => {
   });
 
   it('reads reading braces: "{3 mharc}" prices bullets, "3 mharc + 2 mharc = 5 mharc" is a ladder with rules as directions', () => {
-    const higher = allocationOf('irish-2021-hl-p2-reading-a-q1');
-    expect(higher.parts.map(part => [part.tariff, part.rows.length])).toEqual([[3, 2], [2, 4], [2, 2]]);
-    expect(higher.parts[0].rows[0]).toMatchObject({ marks: 3 });
+    // The 2021 Higher reading questions mark each printed part as its own criterion since their paper review.
+    const higher = byId('irish-2021-hl-p2-reading-a-q1');
+    const higherParts = (higher.rubric.system === 'irish' ? higher.rubric.criteria : []).flatMap(criterion => criterion.allocation?.parts ?? []);
+    expect(higherParts.map(part => [part.tariff, part.rows.length])).toEqual([[3, 2], [2, 4], [2, 2]]);
+    expect(higherParts[0].rows[0]).toMatchObject({ marks: 3 });
     const ordinary = allocationOf('irish-2021-ol-p2-reading-b-q1');
     expect(ordinary.parts.map(part => [part.tariff, part.ladder, part.rows.length])).toEqual([[5, [3, 5], 2], [5, [3, 5], 4]]);
     expect(ordinary.directions).toEqual([
@@ -96,9 +98,11 @@ describe('Irish scheme text becomes sub-questions and rows', () => {
     if (card.rubric.system !== 'irish') throw new Error('not irish');
     expect(card.rubric.criteria[0].allocation).toBeUndefined();
     expect(parseIrishAnswers({ id: card.id, totalMarks: 10, questionRef: card.questionRef, questionText: card.questionText, guidance: card.rubric.criteria[0].guidance }).ok).toBe(false);
+    // Since the 2021 Higher paper review, Q6 marks (a) and each 6(b) trait as its own criterion, each with rows.
     const q6 = byId('irish-2021-hl-p2-reading-a-q6');
     if (q6.rubric.system !== 'irish') throw new Error('not irish');
-    expect(q6.rubric.criteria[0].allocation?.parts.map(part => part.tariff)).toEqual([3, 12]);
+    expect(q6.rubric.criteria.map(criterion => [criterion.id, criterion.allocation?.parts.map(part => part.tariff)]))
+      .toEqual([['grammar', [3]], ['trait-1', [6]], ['trait-2', [6]]]);
   });
 });
 

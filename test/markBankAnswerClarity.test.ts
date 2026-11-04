@@ -287,9 +287,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     };
     for (const { card, criteria } of irishCards) for (const criterion of criteria) if (criterion.allocation) checkAllocation(card, criterion);
     const unstructured = (criteria: typeof irishCards[number]['criteria']) => criteria.some(criterion => priced(criterion) && !criterion.allocation);
-    expect(exact).toHaveLength(569);
+    expect(exact).toHaveLength(617);
     const structured = exact.filter(({ criteria }) => !unstructured(criteria));
-    expect(structured).toHaveLength(567);
+    expect(structured).toHaveLength(615);
 
     // What is still prose, pinned by id: two 2021 Ordinary reading excerpts on main's cards whose answers the scheme
     // prices in a shape answers.ts does not read yet (unpriced bullets under a ladder). They had no rows on main

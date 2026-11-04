@@ -27,6 +27,7 @@ import higher2023P2 from './higher-2023-p2-authored.json';
 import ordinary2023P2 from './ordinary-2023-p2-authored.json';
 import ordinary2022P2 from './ordinary-2022-p2-authored.json';
 import higher2022P2 from './higher-2022-p2-authored.json';
+import higher2021P2 from './higher-2021-p2-authored.json';
 import { irishAnswersFor } from './answers';
 import { irishTariffsFor } from './tariffs';
 import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
@@ -61,7 +62,7 @@ interface AuthoredIrishCard {
 }
 
 // Paper-reviewed components ship as their own files beside the legacy census output.
-const DATA = [...authored.cards, ...higher2026P1.cards, ...higher2026P2.cards, ...ordinary2026P1.cards, ...ordinary2026P2.cards, ...higher2025P2.cards, ...ordinary2025P2.cards, ...ordinary2024P2.cards, ...higher2023P2.cards, ...ordinary2023P2.cards, ...ordinary2022P2.cards, ...higher2022P2.cards] as AuthoredIrishCard[];
+const DATA = [...authored.cards, ...higher2026P1.cards, ...higher2026P2.cards, ...ordinary2026P1.cards, ...ordinary2026P2.cards, ...higher2025P2.cards, ...ordinary2025P2.cards, ...ordinary2024P2.cards, ...higher2023P2.cards, ...ordinary2023P2.cards, ...ordinary2022P2.cards, ...higher2022P2.cards, ...higher2021P2.cards] as AuthoredIrishCard[];
 
 /** Listening and reading cards carry the scheme's exact answers; cut them
  *  into rows where the parts add up to the criterion (cards/irish/answers.ts).
