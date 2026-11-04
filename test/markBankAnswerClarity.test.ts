@@ -481,12 +481,13 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => row.kind === 'point' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
     // "… 5M + 5M Max =" left on a row by the tariff reader: the printed split is the row's note now.
     expect(rows.filter(({ row }) => /\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=\s*$/i.test(row.verbatim)).map(({ card }) => card.id)).toEqual([]);
-    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(12);
+    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(14);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(131);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(138);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
+      ['A new life', 'Better wages', 'Better work standards'],
       ['Chapel bell', 'convent chimes', 'organ'],
       ['Church renewal', 'Christian unity', 'Opening to the contemporary world'],
       ['Civil rights', 'Assassination', 'Vietnam'],
@@ -508,6 +509,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Salt fish', 'hides', 'cattle', 'hobby-horses'],
       ['Stoking the fire', 'Fetching water', 'Bringing in stacks of bread'],
       ['Tapestries', 'Mirrors', 'Candle holders', 'Upholstered furniture'],
+      ['They dressed badly', 'wore shaggy jackets', 'kept their hands in their pockets', 'did not speak clearly.'],
       ['To watch over everyone', 'To warn in a friendly was those who are misbehaving', 'To report to ministers if necessary'],
       ['Training', 'Maintenance allowance', 'Bonus pay'],
     ]);

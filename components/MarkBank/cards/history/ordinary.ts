@@ -1035,6 +1035,1839 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s1-q1a", topicId: "hist-lm-eur-5", conceptId: "population-congo",
+    section: "1", questionRef: "2013 OL Later Modern Section 1 Q1(a)",
+    stem: "Case study: The secession of Katanga, 1960-1965",
+    questionText: "According to document A, what is the population of the Congo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "13,600,000", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s1-q1b", topicId: "hist-lm-eur-5", conceptId: "many-congolese-army",
+    section: "1", questionRef: "2013 OL Later Modern Section 1 Q1(b)",
+    stem: "Case study: The secession of Katanga, 1960-1965",
+    questionText: "According to document A, how many are in the Congolese army?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "25,000", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s1-q1c", topicId: "hist-lm-eur-5", conceptId: "many-dialects-spoken-congo",
+    section: "1", questionRef: "2013 OL Later Modern Section 1 Q1(c)",
+    stem: "Case study: The secession of Katanga, 1960-1965",
+    questionText: "According to document A, how many dialects are spoken in the Congo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "400", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s1-q1d", topicId: "hist-lm-eur-5", conceptId: "who-became-president-independent-congo",
+    section: "1", questionRef: "2013 OL Later Modern Section 1 Q1(d)",
+    stem: "Case study: The secession of Katanga, 1960-1965",
+    questionText: "According to document B, who became the president of independent Congo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kasavubu", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s1-q1e", topicId: "hist-lm-eur-5", conceptId: "when-did-resistance-katanga-come-end",
+    section: "1", questionRef: "2013 OL Later Modern Section 1 Q1(e)",
+    stem: "Case study: The secession of Katanga, 1960-1965",
+    questionText: "According to document B, when did resistance in Katanga come to an end?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1964", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s1-q2a", topicId: "hist-lm-eur-5", conceptId: "congolese-disunited",
+    section: "1", questionRef: "2013 OL Later Modern Section 1 Q2(a)",
+    stem: "Case study: The secession of Katanga, 1960-1965",
+    questionText: "Do both documents suggest that the Congolese are disunited? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A and Document B agree that Congolese are disunited", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Document A states that in 1960 some of the 200 tribes were “still warring”.", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Document B states: The peace which followed the elections of May 1960 was shattered by “tribal differences”. OR The government was challenged by a “separatist movement “ in Katanga. OR The Congo then moved into “full-scale civil war”.", marks: 4, contextNote: "Mark quality of explanation on its merits. — Reference to both documents = 4M + 4M Max = 10M" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s1-q2b", topicId: "hist-lm-eur-5", conceptId: "reflect-international-interest-congo",
+    section: "1", questionRef: "2013 OL Later Modern Section 1 Q2(b)",
+    stem: "Case study: The secession of Katanga, 1960-1965",
+    questionText: "Do both documents reflect international interest in the Congo? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Both documents reflect international interest in the Congo", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Document A states that there were no Congolese doctors, lawyers, engineers or army officers in the country. So whatever doctors, lawyers, engineers or army officers there were must have been foreigners, which shows international interest in the country.", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Document B states that Belgium conducted national elections in the Congo in 1960. OR A UN peace-keeping force was sent to the Congo, which shows international interest.", marks: 4, contextNote: "Mark quality of explanation on its merits. — One point from each document = 4M + 4M Max = 10M" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s1-q3a", topicId: "hist-lm-eur-5", conceptId: "social-problems-noted",
+    section: "1", questionRef: "2013 OL Later Modern Section 1 Q3(a)",
+    stem: "Case study: The secession of Katanga, 1960-1965",
+    questionText: "What social problems are noted in document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Congolese people are “primitive”. Some of the 200 tribes are “still warring”. 400 local dialects spoken. Only half the people are literate. Very few university graduates. No Congolese professionals or army officers.", marks: 10 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s1-q3b", topicId: "hist-lm-eur-5", conceptId: "did-full-scale-civil-war-develop",
+    section: "1", questionRef: "2013 OL Later Modern Section 1 Q3(b)",
+    stem: "Case study: The secession of Katanga, 1960-1965",
+    questionText: "According to document B, why did a full-scale civil war develop in the Congo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "There were “tribal differences” in the new state. A separatist movement in Katanga challenged the government. The UN peace-keeping force was not effective.", marks: 10 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s1-q4", topicId: "hist-lm-eur-5", conceptId: "did-katanga-break-away-congo-did",
+    section: "1", questionRef: "2013 OL Later Modern Section 1 Q4",
+    stem: "Case study: The secession of Katanga, 1960-1965",
+    questionText: "Why did Katanga break away from the Congo and how did outsiders become involved in the crisis that followed?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[0], cm: { ...ESSAY_MARKING[0].cm, elementRule: {"note":"NB: Why did Katanga break away? ONLY = Max 10M How did outsiders become involved in the crisis? ONLY = Max 10M","caps":[{"when":"Why did Katanga break away? ONLY","max":10},{"when":"How did outsiders become involved in the crisis? ONLY","max":10}]} }, schemePages: [7,8] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t1a-q1", topicId: "hist-lm-irl-1", conceptId: "asenath-nicholson-ireland",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 1 A Q1",
+    stem: "This is historian Maureen Murphy’s description of Asenath Nicholson. Study it and answer the questions that follow.\n\nHad you been travelling in Ireland in 1844-1845, you might have seen – or heard about – an extraordinary American woman who was walking through the countryside singing hymns, reading the Bible and distributing religious tracts from the depths of her large, black, bearskin muff.\nShe wore Indian rubber shoes, a polka coat, a bonnet and – when they weren’t missing – silver- rimmed spectacles. A number of doctors offered to remove the large wart on her face. She recorded with some indignation that people stared at her.\nShe was Asenath Hatch Nicholson: teacher, reformer, abolitionist, writer and traveller, and she had come to Ireland to investigate the condition of the Irish poor.",
+    questionText: "Why was Asenath Nicholson in Ireland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To spread religion/ To investigate the condition of the poor", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t1a-q2", topicId: "hist-lm-irl-1", conceptId: "she-travelling-through-countryside",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 1 A Q2",
+    stem: "This is historian Maureen Murphy’s description of Asenath Nicholson. Study it and answer the questions that follow.\n\nHad you been travelling in Ireland in 1844-1845, you might have seen – or heard about – an extraordinary American woman who was walking through the countryside singing hymns, reading the Bible and distributing religious tracts from the depths of her large, black, bearskin muff.\nShe wore Indian rubber shoes, a polka coat, a bonnet and – when they weren’t missing – silver- rimmed spectacles. A number of doctors offered to remove the large wart on her face. She recorded with some indignation that people stared at her.\nShe was Asenath Hatch Nicholson: teacher, reformer, abolitionist, writer and traveller, and she had come to Ireland to investigate the condition of the Irish poor.",
+    questionText: "How was she travelling through the countryside?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "On foot", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t1a-q3", topicId: "hist-lm-irl-1", conceptId: "she-dressed",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 1 A Q3",
+    stem: "This is historian Maureen Murphy’s description of Asenath Nicholson. Study it and answer the questions that follow.\n\nHad you been travelling in Ireland in 1844-1845, you might have seen – or heard about – an extraordinary American woman who was walking through the countryside singing hymns, reading the Bible and distributing religious tracts from the depths of her large, black, bearskin muff.\nShe wore Indian rubber shoes, a polka coat, a bonnet and – when they weren’t missing – silver- rimmed spectacles. A number of doctors offered to remove the large wart on her face. She recorded with some indignation that people stared at her.\nShe was Asenath Hatch Nicholson: teacher, reformer, abolitionist, writer and traveller, and she had come to Ireland to investigate the condition of the Irish poor.",
+    questionText: "How was she dressed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bearskin muff/ Rubber shoes/ Polka coat/ Bonnet.", marks: 6, contextNote: "Any TWO" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t1a-q4", topicId: "hist-lm-irl-1", conceptId: "shown-she-religious-person",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 1 A Q4",
+    stem: "This is historian Maureen Murphy’s description of Asenath Nicholson. Study it and answer the questions that follow.\n\nHad you been travelling in Ireland in 1844-1845, you might have seen – or heard about – an extraordinary American woman who was walking through the countryside singing hymns, reading the Bible and distributing religious tracts from the depths of her large, black, bearskin muff.\nShe wore Indian rubber shoes, a polka coat, a bonnet and – when they weren’t missing – silver- rimmed spectacles. A number of doctors offered to remove the large wart on her face. She recorded with some indignation that people stared at her.\nShe was Asenath Hatch Nicholson: teacher, reformer, abolitionist, writer and traveller, and she had come to Ireland to investigate the condition of the Irish poor.",
+    questionText: "How is it shown that she was a religious person?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sang hymns/ Read Bible/ Distributed religious tracts.", marks: 6, contextNote: "Any TWO" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t1a-q5", topicId: "hist-lm-irl-1", conceptId: "attitude-charles-trevelyan-famine",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 1 A Q5",
+    stem: "This is historian Maureen Murphy’s description of Asenath Nicholson. Study it and answer the questions that follow.\n\nHad you been travelling in Ireland in 1844-1845, you might have seen – or heard about – an extraordinary American woman who was walking through the countryside singing hymns, reading the Bible and distributing religious tracts from the depths of her large, black, bearskin muff.\nShe wore Indian rubber shoes, a polka coat, a bonnet and – when they weren’t missing – silver- rimmed spectacles. A number of doctors offered to remove the large wart on her face. She recorded with some indignation that people stared at her.\nShe was Asenath Hatch Nicholson: teacher, reformer, abolitionist, writer and traveller, and she had come to Ireland to investigate the condition of the Irish poor.",
+    questionText: "What, briefly, was the attitude of Charles Trevelyan to the Famine?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid point about Trevelyan’s attitude to the Famine.", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t1b", topicId: "hist-lm-irl-1", conceptId: "tithe-war-industrial-development-belfast-william",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 1 B",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Write a short paragraph on one of the following:\n1. The Tithe War.\n2. Industrial development in Belfast.\n3. William Dargan.\n4. The Fenians in Ireland.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t1c", topicId: "hist-lm-irl-1", conceptId: "catholic-emancipation-did-daniel-connell-campaign",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 1 C",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Answer one of the following:\n1. What was Catholic Emancipation and how did Daniel O’Connell campaign for it?\n2. What did William Carleton and/or Mother Mary Aikenhead contribute to Irish affairs?\n3. What did Thomas Davis contribute to the Young Ireland movement?\n4. How important was Cardinal Paul Cullen in Irish affairs?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t2a-q1", topicId: "hist-lm-irl-2", conceptId: "magistrates-when-trouble-begin",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 2 A Q1",
+    stem: "This is an edited extract from a letter (dated 13/9/1913) in which Capt. V.M. Vallance, a cavalry officer, comments on the situation in Dublin during the strike and lockout. Study it and answer the questions that follow.\n\nThe strikes here do not seem to be coming to a head, though the magistrates say that the trouble will not begin until next week, when the strike pay runs out and they begin to feel the pinch, and loot shops.\nThe methods of the DMP (Dublin Metropolitan Police) have been criticised as overly severe, but, on the other hand, they prevented looting and the military being called out.\nIn this place the danger is not from the strikers but from the thousands of looting roughs. There is no other city on earth, I believe, where there is less industry. Guinness’s brewery and the Tramway Company are the only employment in the town.",
+    questionText: "According to the magistrates, when would trouble begin?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Next week/ Following week/ When strike pay would run out", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t2a-q2", topicId: "hist-lm-irl-2", conceptId: "trouble-expected",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 2 A Q2",
+    stem: "This is an edited extract from a letter (dated 13/9/1913) in which Capt. V.M. Vallance, a cavalry officer, comments on the situation in Dublin during the strike and lockout. Study it and answer the questions that follow.\n\nThe strikes here do not seem to be coming to a head, though the magistrates say that the trouble will not begin until next week, when the strike pay runs out and they begin to feel the pinch, and loot shops.\nThe methods of the DMP (Dublin Metropolitan Police) have been criticised as overly severe, but, on the other hand, they prevented looting and the military being called out.\nIn this place the danger is not from the strikers but from the thousands of looting roughs. There is no other city on earth, I believe, where there is less industry. Guinness’s brewery and the Tramway Company are the only employment in the town.",
+    questionText: "What trouble was expected?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Looting", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t2a-q3", topicId: "hist-lm-irl-2", conceptId: "defence-dmp-offered",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 2 A Q3",
+    stem: "This is an edited extract from a letter (dated 13/9/1913) in which Capt. V.M. Vallance, a cavalry officer, comments on the situation in Dublin during the strike and lockout. Study it and answer the questions that follow.\n\nThe strikes here do not seem to be coming to a head, though the magistrates say that the trouble will not begin until next week, when the strike pay runs out and they begin to feel the pinch, and loot shops.\nThe methods of the DMP (Dublin Metropolitan Police) have been criticised as overly severe, but, on the other hand, they prevented looting and the military being called out.\nIn this place the danger is not from the strikers but from the thousands of looting roughs. There is no other city on earth, I believe, where there is less industry. Guinness’s brewery and the Tramway Company are the only employment in the town.",
+    questionText: "What defence of the DMP is offered?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "DMP prevented looting", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "the call-out of the military", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t2a-q4", topicId: "hist-lm-irl-2", conceptId: "does-writer-account-dublin-high-rate",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 2 A Q4",
+    stem: "This is an edited extract from a letter (dated 13/9/1913) in which Capt. V.M. Vallance, a cavalry officer, comments on the situation in Dublin during the strike and lockout. Study it and answer the questions that follow.\n\nThe strikes here do not seem to be coming to a head, though the magistrates say that the trouble will not begin until next week, when the strike pay runs out and they begin to feel the pinch, and loot shops.\nThe methods of the DMP (Dublin Metropolitan Police) have been criticised as overly severe, but, on the other hand, they prevented looting and the military being called out.\nIn this place the danger is not from the strikers but from the thousands of looting roughs. There is no other city on earth, I believe, where there is less industry. Guinness’s brewery and the Tramway Company are the only employment in the town.",
+    questionText: "How does the writer account for Dublin’s high rate of unemployment?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Only two companies (Guinness and Tramways) are employers/ Less industry in Dublin", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t2a-q5", topicId: "hist-lm-irl-2", conceptId: "part-did-william-martin-murphy-play",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 2 A Q5",
+    stem: "This is an edited extract from a letter (dated 13/9/1913) in which Capt. V.M. Vallance, a cavalry officer, comments on the situation in Dublin during the strike and lockout. Study it and answer the questions that follow.\n\nThe strikes here do not seem to be coming to a head, though the magistrates say that the trouble will not begin until next week, when the strike pay runs out and they begin to feel the pinch, and loot shops.\nThe methods of the DMP (Dublin Metropolitan Police) have been criticised as overly severe, but, on the other hand, they prevented looting and the military being called out.\nIn this place the danger is not from the strikers but from the thousands of looting roughs. There is no other city on earth, I believe, where there is less industry. Guinness’s brewery and the Tramway Company are the only employment in the town.",
+    questionText: "What part did William Martin Murphy play in the 1913 strike and lockout?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid piece of evidence of WM Murphy’s role in 1913.", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t2b", topicId: "hist-lm-irl-2", conceptId: "gaa-between-1884-1891-gaelic-league",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 2 B",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Write a short paragraph on one of the following:\n1. The GAA between 1884 and 1891.\n2. The Gaelic League.\n3. The Belfast shipyards.\n4. The first Sinn Féin party.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t2c", topicId: "hist-lm-irl-2", conceptId: "part-did-charles-stewart-parnell-play",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 2 C",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Answer one of the following:\n1. What part did Charles Stewart Parnell play in both the land and Home Rule movements?\n2. How did Isabella Tod and/or Hanna Sheehy-Skeffington seek improvements for women?\n3. Why did Edward Carson oppose Home Rule for Ireland and how did he campaign against it?\n4. What did W.B. Yeats contribute to Irish affairs?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t3a-q1", topicId: "hist-lm-irl-3", conceptId: "policy-did-valera-declare-september-1939",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 3 A Q1",
+    stem: "This edited extract discusses Ireland’s policy of neutrality during World War II. Read it and answer the questions which follow.\n\nWhen war broke out in Europe in September 1939, de Valera declared a policy of neutrality for the Irish state. All parties in the Dáil supported this policy. When James Dillon, Deputy Leader of Fine Gael, broke ranks in 1942 to declare that Ireland should join with the United States in opposing Hitler, he was promptly expelled from the party.\nNeutrality was popular amongst the general population and de Valera knew that invasion by Germany or by Britain was not in their best interests.\nWhen the war ended in May 1945, de Valera had successfully maintained Ireland’s position as a neutral country.",
+    questionText: "What policy did de Valera declare in September 1939?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Neutrality", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t3a-q2", topicId: "hist-lm-irl-3", conceptId: "did-james-dillon-break-ranks-1942",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 3 A Q2",
+    stem: "This edited extract discusses Ireland’s policy of neutrality during World War II. Read it and answer the questions which follow.\n\nWhen war broke out in Europe in September 1939, de Valera declared a policy of neutrality for the Irish state. All parties in the Dáil supported this policy. When James Dillon, Deputy Leader of Fine Gael, broke ranks in 1942 to declare that Ireland should join with the United States in opposing Hitler, he was promptly expelled from the party.\nNeutrality was popular amongst the general population and de Valera knew that invasion by Germany or by Britain was not in their best interests.\nWhen the war ended in May 1945, de Valera had successfully maintained Ireland’s position as a neutral country.",
+    questionText: "How did James Dillon break ranks in 1942?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He called for Ireland to join USA in opposing Hitler/ He called for and end to neutrality", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t3a-q3", topicId: "hist-lm-irl-3", conceptId: "action-did-fine-gael-party-take",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 3 A Q3",
+    stem: "This edited extract discusses Ireland’s policy of neutrality during World War II. Read it and answer the questions which follow.\n\nWhen war broke out in Europe in September 1939, de Valera declared a policy of neutrality for the Irish state. All parties in the Dáil supported this policy. When James Dillon, Deputy Leader of Fine Gael, broke ranks in 1942 to declare that Ireland should join with the United States in opposing Hitler, he was promptly expelled from the party.\nNeutrality was popular amongst the general population and de Valera knew that invasion by Germany or by Britain was not in their best interests.\nWhen the war ended in May 1945, de Valera had successfully maintained Ireland’s position as a neutral country.",
+    questionText: "What action did the Fine Gael party take in relation to Dillon?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fine Gael expelled Dillon", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t3a-q4", topicId: "hist-lm-irl-3", conceptId: "did-ireland-succeed-maintaining-neutrality-throughout",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 3 A Q4",
+    stem: "This edited extract discusses Ireland’s policy of neutrality during World War II. Read it and answer the questions which follow.\n\nWhen war broke out in Europe in September 1939, de Valera declared a policy of neutrality for the Irish state. All parties in the Dáil supported this policy. When James Dillon, Deputy Leader of Fine Gael, broke ranks in 1942 to declare that Ireland should join with the United States in opposing Hitler, he was promptly expelled from the party.\nNeutrality was popular amongst the general population and de Valera knew that invasion by Germany or by Britain was not in their best interests.\nWhen the war ended in May 1945, de Valera had successfully maintained Ireland’s position as a neutral country.",
+    questionText: "Did Ireland succeed in maintaining neutrality throughout the war years?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Yes", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t3a-q5", topicId: "hist-lm-irl-3", conceptId: "major-impact-world-war-ireland-north",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 3 A Q5",
+    stem: "This edited extract discusses Ireland’s policy of neutrality during World War II. Read it and answer the questions which follow.\n\nWhen war broke out in Europe in September 1939, de Valera declared a policy of neutrality for the Irish state. All parties in the Dáil supported this policy. When James Dillon, Deputy Leader of Fine Gael, broke ranks in 1942 to declare that Ireland should join with the United States in opposing Hitler, he was promptly expelled from the party.\nNeutrality was popular amongst the general population and de Valera knew that invasion by Germany or by Britain was not in their best interests.\nWhen the war ended in May 1945, de Valera had successfully maintained Ireland’s position as a neutral country.",
+    questionText: "What major impact had World War II on Ireland, North or South?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid way in which World War II affected Ireland", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t3b", topicId: "hist-lm-irl-3", conceptId: "home-rule-bill-1912-1914-patrick",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 3 B",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "Write a short paragraph on one of the following:\n1. The Home Rule Bill, 1912-1914.\n2. Patrick Pearse.\n3. The 1918 general election.\n4. Evie Hone.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t3c", topicId: "hist-lm-irl-3", conceptId: "part-did-michael-collins-play-negotiating",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 3 C",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "Answer one of the following:\n1. What part did Michael Collins play in negotiating and defending the Anglo-Irish Treaty?\n2. What was the importance of the 1932 Eucharistic Congress for both Church and State?\n3. What did Éamon de Valera achieve as head of government during the period 1932-1939?\n4. How did the Unionist Party govern Northern Ireland between 1920 and 1949?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t4a-q1", topicId: "hist-lm-irl-4", conceptId: "opportunities-did-britain-provide-irish-diaspora",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 4 A Q1",
+    stem: "This edited extract discusses Irish emigrant attitudes towards British society and British attitudes towards the Irish. Read it and answer the questions which follow.\n\nIrish emigrants to Britain had a curious attitude towards British society in general. While accepting that Britain and its people were providing them with a new life with better wages and work standards, a sense of gratitude remained absent.\nThis attitude stemmed from the hardship of having to leave their homes in Ireland. Moreover, they strongly believed that having to leave home was rooted in Britain’s neglect and misgovernment of Ireland. For these reasons, the loyalty of the Irish diaspora in Britain lay with the home country or with their fellow Irish in Britain, and not with British society in general.\nThe British response was to reject the Irish and it was not long before they became the outcasts of British society based on their cultural, religious and lifestyle choices.",
+    questionText: "What opportunities did Britain provide the Irish diaspora?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["A new life","Better wages","Better work standards"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t4a-q2", topicId: "hist-lm-irl-4", conceptId: "irish-not-grateful-british-society",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 4 A Q2",
+    stem: "This edited extract discusses Irish emigrant attitudes towards British society and British attitudes towards the Irish. Read it and answer the questions which follow.\n\nIrish emigrants to Britain had a curious attitude towards British society in general. While accepting that Britain and its people were providing them with a new life with better wages and work standards, a sense of gratitude remained absent.\nThis attitude stemmed from the hardship of having to leave their homes in Ireland. Moreover, they strongly believed that having to leave home was rooted in Britain’s neglect and misgovernment of Ireland. For these reasons, the loyalty of the Irish diaspora in Britain lay with the home country or with their fellow Irish in Britain, and not with British society in general.\nThe British response was to reject the Irish and it was not long before they became the outcasts of British society based on their cultural, religious and lifestyle choices.",
+    questionText: "Why were the Irish not grateful to British society?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Irish were not grateful because they felt that it was Britain’s fault that they had to emigrate in the first place", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t4a-q3", topicId: "hist-lm-irl-4", conceptId: "whom-did-irish-diaspora-remain-loyal",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 4 A Q3",
+    stem: "This edited extract discusses Irish emigrant attitudes towards British society and British attitudes towards the Irish. Read it and answer the questions which follow.\n\nIrish emigrants to Britain had a curious attitude towards British society in general. While accepting that Britain and its people were providing them with a new life with better wages and work standards, a sense of gratitude remained absent.\nThis attitude stemmed from the hardship of having to leave their homes in Ireland. Moreover, they strongly believed that having to leave home was rooted in Britain’s neglect and misgovernment of Ireland. For these reasons, the loyalty of the Irish diaspora in Britain lay with the home country or with their fellow Irish in Britain, and not with British society in general.\nThe British response was to reject the Irish and it was not long before they became the outcasts of British society based on their cultural, religious and lifestyle choices.",
+    questionText: "To whom did the Irish diaspora remain loyal?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To the home country (Ireland) or their fellow-Irish in Britain", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t4a-q4", topicId: "hist-lm-irl-4", conceptId: "british-response-irish-diaspora",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 4 A Q4",
+    stem: "This edited extract discusses Irish emigrant attitudes towards British society and British attitudes towards the Irish. Read it and answer the questions which follow.\n\nIrish emigrants to Britain had a curious attitude towards British society in general. While accepting that Britain and its people were providing them with a new life with better wages and work standards, a sense of gratitude remained absent.\nThis attitude stemmed from the hardship of having to leave their homes in Ireland. Moreover, they strongly believed that having to leave home was rooted in Britain’s neglect and misgovernment of Ireland. For these reasons, the loyalty of the Irish diaspora in Britain lay with the home country or with their fellow Irish in Britain, and not with British society in general.\nThe British response was to reject the Irish and it was not long before they became the outcasts of British society based on their cultural, religious and lifestyle choices.",
+    questionText: "What was the British response to the Irish diaspora?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To reject the Irish/ To treat the Irish as outcasts", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t4a-q5", topicId: "hist-lm-irl-4", conceptId: "apart-britain-countries-did-irish-emigrate",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 4 A Q5",
+    stem: "This edited extract discusses Irish emigrant attitudes towards British society and British attitudes towards the Irish. Read it and answer the questions which follow.\n\nIrish emigrants to Britain had a curious attitude towards British society in general. While accepting that Britain and its people were providing them with a new life with better wages and work standards, a sense of gratitude remained absent.\nThis attitude stemmed from the hardship of having to leave their homes in Ireland. Moreover, they strongly believed that having to leave home was rooted in Britain’s neglect and misgovernment of Ireland. For these reasons, the loyalty of the Irish diaspora in Britain lay with the home country or with their fellow Irish in Britain, and not with British society in general.\nThe British response was to reject the Irish and it was not long before they became the outcasts of British society based on their cultural, religious and lifestyle choices.",
+    questionText: "Apart from Britain, to what two countries did the Irish emigrate during the nineteenth century?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "TWO valid countries: eg Canada, Australia", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t4b", topicId: "hist-lm-irl-4", conceptId: "grosse-isle-orange-order-canada-australia",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 4 B",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Write a short paragraph on one of the following:\n1. Grosse Isle.\n2. The Orange Order in Canada and Australia.\n3. Archbishop Daniel Mannix.\n4. Irish participation in politics in the US.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t4c", topicId: "hist-lm-irl-4", conceptId: "impact-irish-american-relations-john-devoy",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 4 C",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Answer one of the following:\n1. What was the impact on Irish-American relations of John Devoy?\n2. During the period 1922-1966, what was the extent of emigration from Ireland?\n3. What did Maureen O’Hara contribute to the creation of Irish images through film?\n4. What were the aims of the Holy Ghost mission to Nigeria, 1945-1966, and how successful was it in achieving its aims?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t5a-q1", topicId: "hist-lm-irl-5", conceptId: "organisation-did-brian-faulkner-join",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 5 A Q1",
+    stem: "This edited extract from The Irish Times (14/12/1966) relates to the Apprentice Boys of Derry. Study it and answer the questions that follow.\n\nThe Northern Ireland Minister for Commerce, Mr Brian Faulkner, was initiated into the Apprentice Boys of Derry Order last night in Derry city.\nThis ceremony can only be performed within the walls of Derry, and Mr. Faulkner made a special journey for the purpose.\nAmong the members of the Order is the Prime Minister of Northern Ireland, Captain Terence O’Neill, who was initiated not long after he became Prime Minister.",
+    questionText: "What organisation did Brian Faulkner join?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Apprentice Boys", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t5a-q2", topicId: "hist-lm-irl-5", conceptId: "did-faulkner-travel-derry",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 5 A Q2",
+    stem: "This edited extract from The Irish Times (14/12/1966) relates to the Apprentice Boys of Derry. Study it and answer the questions that follow.\n\nThe Northern Ireland Minister for Commerce, Mr Brian Faulkner, was initiated into the Apprentice Boys of Derry Order last night in Derry city.\nThis ceremony can only be performed within the walls of Derry, and Mr. Faulkner made a special journey for the purpose.\nAmong the members of the Order is the Prime Minister of Northern Ireland, Captain Terence O’Neill, who was initiated not long after he became Prime Minister.",
+    questionText: "Why did Faulkner have to travel to Derry?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because the ceremony to initiate him could only take place within the city walls", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t5a-q3", topicId: "hist-lm-irl-5", conceptId: "office-held-brian-faulkner-time",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 5 A Q3",
+    stem: "This edited extract from The Irish Times (14/12/1966) relates to the Apprentice Boys of Derry. Study it and answer the questions that follow.\n\nThe Northern Ireland Minister for Commerce, Mr Brian Faulkner, was initiated into the Apprentice Boys of Derry Order last night in Derry city.\nThis ceremony can only be performed within the walls of Derry, and Mr. Faulkner made a special journey for the purpose.\nAmong the members of the Order is the Prime Minister of Northern Ireland, Captain Terence O’Neill, who was initiated not long after he became Prime Minister.",
+    questionText: "What office was held by Brian Faulkner at the time?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Minister for Commerce", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t5a-q4", topicId: "hist-lm-irl-5", conceptId: "office-held-captain-terence-neill",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 5 A Q4",
+    stem: "This edited extract from The Irish Times (14/12/1966) relates to the Apprentice Boys of Derry. Study it and answer the questions that follow.\n\nThe Northern Ireland Minister for Commerce, Mr Brian Faulkner, was initiated into the Apprentice Boys of Derry Order last night in Derry city.\nThis ceremony can only be performed within the walls of Derry, and Mr. Faulkner made a special journey for the purpose.\nAmong the members of the Order is the Prime Minister of Northern Ireland, Captain Terence O’Neill, who was initiated not long after he became Prime Minister.",
+    questionText: "What office was held by Captain Terence O’Neill?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prime Minister", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t5a-q5", topicId: "hist-lm-irl-5", conceptId: "activities-apprentice-boys-derry-considered-controversial",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 5 A Q5",
+    stem: "This edited extract from The Irish Times (14/12/1966) relates to the Apprentice Boys of Derry. Study it and answer the questions that follow.\n\nThe Northern Ireland Minister for Commerce, Mr Brian Faulkner, was initiated into the Apprentice Boys of Derry Order last night in Derry city.\nThis ceremony can only be performed within the walls of Derry, and Mr. Faulkner made a special journey for the purpose.\nAmong the members of the Order is the Prime Minister of Northern Ireland, Captain Terence O’Neill, who was initiated not long after he became Prime Minister.",
+    questionText: "Why were the activities of the Apprentice Boys of Derry considered controversial?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t5b", topicId: "hist-lm-irl-5", conceptId: "society-economy-northern-ireland-1949-1969",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 5 B",
+    stem: "Politics and society in Northern Ireland, 1949-1993",
+    questionText: "Write a short paragraph on one of the following:\n1. Society and economy in Northern Ireland, 1949-1969.\n2. Seamus Heaney.\n3. The Anglo-Irish Agreement, 1985.\n4. The impact of the “Troubles” on the economy of Northern Ireland.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t5c", topicId: "hist-lm-irl-5", conceptId: "did-terence-neill-attempt-bring-change",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 5 C",
+    stem: "Politics and society in Northern Ireland, 1949-1993",
+    questionText: "Answer one of the following:\n1. How did Terence O’Neill attempt to bring about change in Northern Ireland?\n2. Why was it decided not to locate a university in Derry and how was Derry affected by that decision?\n3. Why did the power-sharing executive, 1973-1974, end in failure?\n4. What part did Bernadette Devlin and/or Ian Paisley play in the affairs of Northern Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t6a-q1", topicId: "hist-lm-irl-6", conceptId: "foreign-news-covered",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 6 A Q1",
+    stem: "In this edited extract from Window and Mirror: RTÉ television, 1961-2011 (Dublin, 2011), John Bowman quotes from a critical report on the RTÉ newsroom (dated May, 1971). Study it and answer the questions which follow.\n\nForeign news was covered ‘in a slap-dash, meaningless way’. The provinces were largely ignored.\nThere was ‘a lack of discipline, rehearsal and pride’; also a lack of analysis or any elements of news creation in the bulletins.\nAs for newsroom reporters, they ‘dressed badly, wore shaggy jackets, kept their hands in their pockets, and had poor diction’.",
+    questionText: "How was foreign news covered?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In a slap-dash", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "meaningless", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t6a-q2", topicId: "hist-lm-irl-6", conceptId: "criticism-made-news-bulletins",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 6 A Q2",
+    stem: "In this edited extract from Window and Mirror: RTÉ television, 1961-2011 (Dublin, 2011), John Bowman quotes from a critical report on the RTÉ newsroom (dated May, 1971). Study it and answer the questions which follow.\n\nForeign news was covered ‘in a slap-dash, meaningless way’. The provinces were largely ignored.\nThere was ‘a lack of discipline, rehearsal and pride’; also a lack of analysis or any elements of news creation in the bulletins.\nAs for newsroom reporters, they ‘dressed badly, wore shaggy jackets, kept their hands in their pockets, and had poor diction’.",
+    questionText: "What criticism is made of the news bulletins?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bulletins showed a lack of analysis or news creation/ Lack of discipline, rehearsal and pride", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t6a-q3", topicId: "hist-lm-irl-6", conceptId: "said-newsroom-attitude-provinces",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 6 A Q3",
+    stem: "In this edited extract from Window and Mirror: RTÉ television, 1961-2011 (Dublin, 2011), John Bowman quotes from a critical report on the RTÉ newsroom (dated May, 1971). Study it and answer the questions which follow.\n\nForeign news was covered ‘in a slap-dash, meaningless way’. The provinces were largely ignored.\nThere was ‘a lack of discipline, rehearsal and pride’; also a lack of analysis or any elements of news creation in the bulletins.\nAs for newsroom reporters, they ‘dressed badly, wore shaggy jackets, kept their hands in their pockets, and had poor diction’.",
+    questionText: "What is said to be the newsroom’s attitude to the provinces?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They largely ignored the provinces", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t6a-q4", topicId: "hist-lm-irl-6", conceptId: "evidence-find-lack-pride-part-newsroom",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 6 A Q4",
+    stem: "In this edited extract from Window and Mirror: RTÉ television, 1961-2011 (Dublin, 2011), John Bowman quotes from a critical report on the RTÉ newsroom (dated May, 1971). Study it and answer the questions which follow.\n\nForeign news was covered ‘in a slap-dash, meaningless way’. The provinces were largely ignored.\nThere was ‘a lack of discipline, rehearsal and pride’; also a lack of analysis or any elements of news creation in the bulletins.\nAs for newsroom reporters, they ‘dressed badly, wore shaggy jackets, kept their hands in their pockets, and had poor diction’.",
+    questionText: "What evidence do you find of ‘a lack of pride’ on the part of the newsroom reporters?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["They dressed badly","wore shaggy jackets","kept their hands in their pockets","did not speak clearly."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t6a-q5", topicId: "hist-lm-irl-6", conceptId: "did-breand-heithir-contribute-impact-irish",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 6 A Q5",
+    stem: "In this edited extract from Window and Mirror: RTÉ television, 1961-2011 (Dublin, 2011), John Bowman quotes from a critical report on the RTÉ newsroom (dated May, 1971). Study it and answer the questions which follow.\n\nForeign news was covered ‘in a slap-dash, meaningless way’. The provinces were largely ignored.\nThere was ‘a lack of discipline, rehearsal and pride’; also a lack of analysis or any elements of news creation in the bulletins.\nAs for newsroom reporters, they ‘dressed badly, wore shaggy jackets, kept their hands in their pockets, and had poor diction’.",
+    questionText: "How did Breandán Ó hEithir contribute to the impact of RTÉ on Irish society?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid point about Breandán Ó hEithir’s contribution.", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t6b", topicId: "hist-lm-irl-6", conceptId: "changes-education-health-social-welfare-impact",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 6 B",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. Changes in education, health and social welfare.\n2. The impact of the EEC on Irish fisheries.\n3. The impact of Vatican II on Irish society.\n4. Garret FitzGerald.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s2t6c", topicId: "hist-lm-irl-6", conceptId: "did-lemass-attempt-strengthen-economy-improve",
+    section: "2", questionRef: "2013 OL Later Modern Section 2 Topic 6 C",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Answer one of the following:\n1. How did Seán Lemass attempt to strengthen the economy and improve relations with Northern Ireland?\n2. What did Jack Lynch achieve as Taoiseach?\n3. How did Sylvia Meehan and/or Mary Robinson contribute to the changing role of women?\n4. How did T.K. Whitaker and/or Archbishop J.C. McQuaid influence Irish affairs?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t1a-q1", topicId: "hist-lm-eur-1", conceptId: "did-metternich-always-deny",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 1 A Q1",
+    stem: "This edited extract describes the system of Metternich. Read it and answer the questions which follow.\n\nMetternich always denied that he had a ‘system’ of any sort. It is true that he dealt with revolutionary threats in different ways according to the circumstances.\nIn some areas direct action was easier than in others. In Italy he could threaten individual Italian states because of the Austrian presence in Lombardy and Venetia. In Germany he could act directly through the parliament of the German Confederation.\nThrough the ‘Congress System’ he could use less direct methods to safeguard Europe and the Austrian Empire from revolution.",
+    questionText: "What did Metternich always deny?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The existence of any “Metternich system”", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t1a-q2", topicId: "hist-lm-eur-1", conceptId: "metternich-deal-revolutionary-threats-italy",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 1 A Q2",
+    stem: "This edited extract describes the system of Metternich. Read it and answer the questions which follow.\n\nMetternich always denied that he had a ‘system’ of any sort. It is true that he dealt with revolutionary threats in different ways according to the circumstances.\nIn some areas direct action was easier than in others. In Italy he could threaten individual Italian states because of the Austrian presence in Lombardy and Venetia. In Germany he could act directly through the parliament of the German Confederation.\nThrough the ‘Congress System’ he could use less direct methods to safeguard Europe and the Austrian Empire from revolution.",
+    questionText: "How could Metternich deal with revolutionary threats in Italy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He could threaten some Italian states because of his country’s presence in Lombardy and Venetia", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t1a-q3", topicId: "hist-lm-eur-1", conceptId: "metternich-deal-revolutionary-threats-germany",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 1 A Q3",
+    stem: "This edited extract describes the system of Metternich. Read it and answer the questions which follow.\n\nMetternich always denied that he had a ‘system’ of any sort. It is true that he dealt with revolutionary threats in different ways according to the circumstances.\nIn some areas direct action was easier than in others. In Italy he could threaten individual Italian states because of the Austrian presence in Lombardy and Venetia. In Germany he could act directly through the parliament of the German Confederation.\nThrough the ‘Congress System’ he could use less direct methods to safeguard Europe and the Austrian Empire from revolution.",
+    questionText: "How could Metternich deal with revolutionary threats in Germany?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He could use his influence through the parliament of the German Confederation", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t1a-q4", topicId: "hist-lm-eur-1", conceptId: "through-system-metternich-safeguard-austrian-empire",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 1 A Q4",
+    stem: "This edited extract describes the system of Metternich. Read it and answer the questions which follow.\n\nMetternich always denied that he had a ‘system’ of any sort. It is true that he dealt with revolutionary threats in different ways according to the circumstances.\nIn some areas direct action was easier than in others. In Italy he could threaten individual Italian states because of the Austrian presence in Lombardy and Venetia. In Germany he could act directly through the parliament of the German Confederation.\nThrough the ‘Congress System’ he could use less direct methods to safeguard Europe and the Austrian Empire from revolution.",
+    questionText: "Through what system could Metternich safeguard the Austrian Empire?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The “Congress System”", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t1a-q5", topicId: "hist-lm-eur-1", conceptId: "did-system-metternich-finally-come-end",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 1 A Q5",
+    stem: "This edited extract describes the system of Metternich. Read it and answer the questions which follow.\n\nMetternich always denied that he had a ‘system’ of any sort. It is true that he dealt with revolutionary threats in different ways according to the circumstances.\nIn some areas direct action was easier than in others. In Italy he could threaten individual Italian states because of the Austrian presence in Lombardy and Venetia. In Germany he could act directly through the parliament of the German Confederation.\nThrough the ‘Congress System’ he could use less direct methods to safeguard Europe and the Austrian Empire from revolution.",
+    questionText: "How did the system of Metternich finally come to an end?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid point about the end of the “Metternich system”", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t1b", topicId: "hist-lm-eur-1", conceptId: "giuseppe-mazzini-mikhail-bakunin-urban-growth",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 1 B",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Write a short paragraph on one of the following:\n1. Giuseppe Mazzini.\n2. Mikhail Bakunin.\n3. Urban growth and migration.\n4. Developments in science.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t1c", topicId: "hist-lm-eur-1", conceptId: "problems-did-balkan-nationalism-cause-peace",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 1 C",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Answer one of the following:\n1. What problems did Balkan nationalism cause for the peace of Europe?\n2. Why did the 1848 Revolution in Germany end in failure?\n3. How did Robert Owen and/or Robert Peel seek to improve conditions in Britain?\n4. How did Otto von Bismarck contribute to moves towards German unity?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t2a-q1", topicId: "hist-lm-eur-2", conceptId: "speed-wagonette-level-road",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 2 A Q1",
+    stem: "Picture X on page 15 shows an advertisement from 1896. In it the Daimler car company launches its Wagonette on the British market. Study it and answer the questions which follow.",
+    questionText: "What speed can the Wagonette do on a level road?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "12 miles per hour", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11,
+                15
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t2a-q2", topicId: "hist-lm-eur-2", conceptId: "sort-engine-does",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 2 A Q2",
+    stem: "Picture X on page 15 shows an advertisement from 1896. In it the Daimler car company launches its Wagonette on the British market. Study it and answer the questions which follow.",
+    questionText: "What sort of engine does it have?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An internal combustion engine/ Twin-cylinder engine/ Six horse- power engine", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11,
+                15
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t2a-q3", topicId: "hist-lm-eur-2", conceptId: "made-appeal-lover-countryside",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 2 A Q3",
+    stem: "Picture X on page 15 shows an advertisement from 1896. In it the Daimler car company launches its Wagonette on the British market. Study it and answer the questions which follow.",
+    questionText: "How is it made to appeal to the lover of the countryside?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because it gives chance to enjoy the fresh air or the scenic views", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11,
+                15
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t2a-q4", topicId: "hist-lm-eur-2", conceptId: "evidence-does-advertisement-offer-aimed-rich",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 2 A Q4",
+    stem: "Picture X on page 15 shows an advertisement from 1896. In it the Daimler car company launches its Wagonette on the British market. Study it and answer the questions which follow.",
+    questionText: "What evidence does the advertisement offer that it was aimed at rich people?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To the nobility and gentry", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11,
+                15
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t2a-q5", topicId: "hist-lm-eur-2", conceptId: "did-karl-benz-contribute-early-history",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 2 A Q5",
+    stem: "Picture X on page 15 shows an advertisement from 1896. In it the Daimler car company launches its Wagonette on the British market. Study it and answer the questions which follow.",
+    questionText: "How did Karl Benz contribute to the early history of the motor car?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid point about Karl Benz and the early motor cars.", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11,
+                15
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t2b", topicId: "hist-lm-eur-2", conceptId: "bismarck-foreign-policy-second-international-wilfred",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 2 B",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Write a short paragraph on one of the following:\n1. Bismarck’s foreign policy.\n2. The Second International.\n3. Wilfred Owen.\n4. The Paris Peace Settlement.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t2c", topicId: "hist-lm-eur-2", conceptId: "problems-caused-bismarck-relations-catholic-church",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 2 C",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Answer one of the following:\n1. What problems were caused by Bismarck’s relations with the Catholic Church in Germany?\n2. How successful was Wilhelm II’s foreign policy (including his naval policy)?\n3. What did women contribute to the workforce during World War I?\n4. How did Marie Curie and/or the Krupp family contribute to science/technology?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t3a-q1", topicId: "hist-lm-eur-3", conceptId: "occasion-described",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 3 A Q1",
+    stem: "This edited extract refers to the first of Stalin’s show trials which opened in Moscow on 19 August, 1936. Study it and answer the questions which follow.\n\nThe 350 spectators were mainly NKVD clerks in plain clothes, foreign journalists and diplomats.\nOn a raised platform in the centre the three judges sat. The chief prosecutor, Vyshinsky, sat on the audience’s left. The sixteen defendants, guarded by NKVD troopers with fixed bayonets, sat to the right.\nStalin was said to be lurking in a recessed gallery with darkened windows from where puffs of pipe smoke were alleged to be emanating.",
+    questionText: "What occasion is described?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(The first) show trial", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t3a-q2", topicId: "hist-lm-eur-3", conceptId: "who-outside-soviet-union-attended-trial",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 3 A Q2",
+    stem: "This edited extract refers to the first of Stalin’s show trials which opened in Moscow on 19 August, 1936. Study it and answer the questions which follow.\n\nThe 350 spectators were mainly NKVD clerks in plain clothes, foreign journalists and diplomats.\nOn a raised platform in the centre the three judges sat. The chief prosecutor, Vyshinsky, sat on the audience’s left. The sixteen defendants, guarded by NKVD troopers with fixed bayonets, sat to the right.\nStalin was said to be lurking in a recessed gallery with darkened windows from where puffs of pipe smoke were alleged to be emanating.",
+    questionText: "Who, from outside the Soviet Union, attended the trial?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Foreign journalists", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "diplomats", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t3a-q3", topicId: "hist-lm-eur-3", conceptId: "troopers-armed-did",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 3 A Q3",
+    stem: "This edited extract refers to the first of Stalin’s show trials which opened in Moscow on 19 August, 1936. Study it and answer the questions which follow.\n\nThe 350 spectators were mainly NKVD clerks in plain clothes, foreign journalists and diplomats.\nOn a raised platform in the centre the three judges sat. The chief prosecutor, Vyshinsky, sat on the audience’s left. The sixteen defendants, guarded by NKVD troopers with fixed bayonets, sat to the right.\nStalin was said to be lurking in a recessed gallery with darkened windows from where puffs of pipe smoke were alleged to be emanating.",
+    questionText: "How were the troopers armed and what did they do?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Armed with bayonets", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "They guarded the defendants", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t3a-q4", topicId: "hist-lm-eur-3", conceptId: "writer-sure-stalin-present",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 3 A Q4",
+    stem: "This edited extract refers to the first of Stalin’s show trials which opened in Moscow on 19 August, 1936. Study it and answer the questions which follow.\n\nThe 350 spectators were mainly NKVD clerks in plain clothes, foreign journalists and diplomats.\nOn a raised platform in the centre the three judges sat. The chief prosecutor, Vyshinsky, sat on the audience’s left. The sixteen defendants, guarded by NKVD troopers with fixed bayonets, sat to the right.\nStalin was said to be lurking in a recessed gallery with darkened windows from where puffs of pipe smoke were alleged to be emanating.",
+    questionText: "Is the writer sure that Stalin was present? Explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Any ONE valid explanation", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t3a-q5", topicId: "hist-lm-eur-3", conceptId: "did-stalin-set-show-trials",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 3 A Q5",
+    stem: "This edited extract refers to the first of Stalin’s show trials which opened in Moscow on 19 August, 1936. Study it and answer the questions which follow.\n\nThe 350 spectators were mainly NKVD clerks in plain clothes, foreign journalists and diplomats.\nOn a raised platform in the centre the three judges sat. The chief prosecutor, Vyshinsky, sat on the audience’s left. The sixteen defendants, guarded by NKVD troopers with fixed bayonets, sat to the right.\nStalin was said to be lurking in a recessed gallery with darkened windows from where puffs of pipe smoke were alleged to be emanating.",
+    questionText: "Why did Stalin set up show trials?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason why Stalin set up show trials.", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t3b", topicId: "hist-lm-eur-3", conceptId: "vladimir-ilyich-lenin-fascism-italy-hitler",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 3 B",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "Write a short paragraph on one of the following:\n1. Vladimir Ilyich Lenin.\n2. Fascism in Italy.\n3. Hitler’s foreign policy, 1933-1939.\n4. Winston Churchill.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t3c", topicId: "hist-lm-eur-3", conceptId: "social-economic-changes-did-stalin-bring",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 3 C",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "Answer one of the following:\n1. What social and economic changes did Stalin bring about in Soviet Russia?\n2. How did J.M. Keynes and/or those who participated in the Jarrow March (October 1936) react to economic problems in Britain?\n3. What part did Joseph Goebbels and/or Leni Riefenstahl play in Nazi Germany?\n4. What did Charlie Chaplin and/or Bing Crosby contribute to entertainment?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t4a-q1", topicId: "hist-lm-eur-4", conceptId: "position-held-imre-nagy",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 4 A Q1",
+    stem: "In this edited extract, which relates to the Hungarian Uprising, Imre Nagy speaks on Hungarian radio, 5.20 a.m. on 4 November, 1956. Read it an answer the questions which follow.\n\nThis is Imre Nagy, chairman of the Council of Ministers of the Hungarian Peoples’ Republic, speaking.\nIn the early hours of this morning, the Soviet troops launched an attack against our capital city, with the obvious intention of overthrowing the lawful, democratic, Hungarian government.\nOur troops are fighting. The government remains in place.\nI inform the people of the country and world public opinion of this.",
+    questionText: "What position was held by Imre Nagy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Chairman of the Council of Ministers (of the Hungarian People’s Republic)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t4a-q2", topicId: "hist-lm-eur-4", conceptId: "event-reporting",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 4 A Q2",
+    stem: "In this edited extract, which relates to the Hungarian Uprising, Imre Nagy speaks on Hungarian radio, 5.20 a.m. on 4 November, 1956. Read it an answer the questions which follow.\n\nThis is Imre Nagy, chairman of the Council of Ministers of the Hungarian Peoples’ Republic, speaking.\nIn the early hours of this morning, the Soviet troops launched an attack against our capital city, with the obvious intention of overthrowing the lawful, democratic, Hungarian government.\nOur troops are fighting. The government remains in place.\nI inform the people of the country and world public opinion of this.",
+    questionText: "What event was he reporting?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Soviet troops’ attack on Budapest/ the capital city", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t4a-q3", topicId: "hist-lm-eur-4", conceptId: "reassurances-does-offer-his-listeners",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 4 A Q3",
+    stem: "In this edited extract, which relates to the Hungarian Uprising, Imre Nagy speaks on Hungarian radio, 5.20 a.m. on 4 November, 1956. Read it an answer the questions which follow.\n\nThis is Imre Nagy, chairman of the Council of Ministers of the Hungarian Peoples’ Republic, speaking.\nIn the early hours of this morning, the Soviet troops launched an attack against our capital city, with the obvious intention of overthrowing the lawful, democratic, Hungarian government.\nOur troops are fighting. The government remains in place.\nI inform the people of the country and world public opinion of this.",
+    questionText: "What reassurances does he offer his listeners?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "That Hungarian troops are fighting", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "The government remains in place", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t4a-q4", topicId: "hist-lm-eur-4", conceptId: "did-nagy-result-happened-morning",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 4 A Q4",
+    stem: "In this edited extract, which relates to the Hungarian Uprising, Imre Nagy speaks on Hungarian radio, 5.20 a.m. on 4 November, 1956. Read it an answer the questions which follow.\n\nThis is Imre Nagy, chairman of the Council of Ministers of the Hungarian Peoples’ Republic, speaking.\nIn the early hours of this morning, the Soviet troops launched an attack against our capital city, with the obvious intention of overthrowing the lawful, democratic, Hungarian government.\nOur troops are fighting. The government remains in place.\nI inform the people of the country and world public opinion of this.",
+    questionText: "What did Nagy do as a result of what had happened that morning?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He spoke on radio (to inform Hungary and the world)/ He gave reassurance to the people", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t4a-q5", topicId: "hist-lm-eur-4", conceptId: "finally-happened-imre-nagy",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 4 A Q5",
+    stem: "In this edited extract, which relates to the Hungarian Uprising, Imre Nagy speaks on Hungarian radio, 5.20 a.m. on 4 November, 1956. Read it an answer the questions which follow.\n\nThis is Imre Nagy, chairman of the Council of Ministers of the Hungarian Peoples’ Republic, speaking.\nIn the early hours of this morning, the Soviet troops launched an attack against our capital city, with the obvious intention of overthrowing the lawful, democratic, Hungarian government.\nOur troops are fighting. The government remains in place.\nI inform the people of the country and world public opinion of this.",
+    questionText: "What finally happened to Imre Nagy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid point about the end of Nagy’s career", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t4b", topicId: "hist-lm-eur-4", conceptId: "simone-beauvoir-oil-crisis-1973-john",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 4 B",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Write a short paragraph on one of the following:\n1. Simone de Beauvoir.\n2. The Oil Crisis, 1973.\n3. John Lennon.\n4. Impact of the computer on society.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t4c", topicId: "hist-lm-eur-4", conceptId: "leadership-did-nikita-khrushchev-provide-domestic",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 4 C",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Answer one of the following questions:\n1. What leadership did Nikita Khrushchev provide in domestic and/or foreign affairs?\n2. How did Jean Monnet and/or Jacques Delors contribute to moves towards European unity?\n3. What was the impact on the Catholic Church of the Second Vatican Council?\n4. What leadership did Margaret Thatcher provide in domestic and/or foreign affairs?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t6a-q1", topicId: "hist-lm-eur-6", conceptId: "where-when-incident-taking-place",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 6 A Q1",
+    stem: "Picture Y on page 15 is the cover of the U.S. magazine Life (16/4/1965). It shows a helicopter crew in action during the Vietnam War. Study it and answer the following questions.",
+    questionText: "Where and when is the incident taking place?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vietnam", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "1965", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14,
+                15
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t6a-q2", topicId: "hist-lm-eur-6", conceptId: "weapon-use",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 6 A Q2",
+    stem: "Picture Y on page 15 is the cover of the U.S. magazine Life (16/4/1965). It shows a helicopter crew in action during the Vietnam War. Study it and answer the following questions.",
+    questionText: "What weapon is in use?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Machine gun/ Surface-to-air missiles", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14,
+                15
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t6a-q3", topicId: "hist-lm-eur-6", conceptId: "harm-crew-suffered",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 6 A Q3",
+    stem: "Picture Y on page 15 is the cover of the U.S. magazine Life (16/4/1965). It shows a helicopter crew in action during the Vietnam War. Study it and answer the following questions.",
+    questionText: "What harm has the crew suffered?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Drastic/ Fatal/ “a dying pilot”", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14,
+                15
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t6a-q4", topicId: "hist-lm-eur-6", conceptId: "evidence-its-cover-does-life-take",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 6 A Q4",
+    stem: "Picture Y on page 15 is the cover of the U.S. magazine Life (16/4/1965). It shows a helicopter crew in action during the Vietnam War. Study it and answer the following questions.",
+    questionText: "From the evidence of its cover, does Life take a positive or negative view of the American war effort? Briefly explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Positive: Praises the “brave crew” of the helicopter Negative: Suggests that helicopters are “vulnerable” and losing a “deadly fight”", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14,
+                15
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t6a-q5", topicId: "hist-lm-eur-6", conceptId: "did-eventually-leave-vietnam",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 6 A Q5",
+    stem: "Picture Y on page 15 is the cover of the U.S. magazine Life (16/4/1965). It shows a helicopter crew in action during the Vietnam War. Study it and answer the following questions.",
+    questionText: "Why did the US eventually leave Vietnam?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason why the US left Vietnam", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14,
+                15
+          ],
+          "attribution": "SEC History 2013 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t6b", topicId: "hist-lm-eur-6", conceptId: "harry-truman-organization-man-billy-graham",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 6 B",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. Harry Truman.\n2. “Organization Man”.\n3. Billy Graham.\n4. SALT and Star Wars.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2013, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2013 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2013-ol-lm-s3t6c", topicId: "hist-lm-eur-6", conceptId: "did-joe-mccarthy-contribute-red-scare",
+    section: "3", questionRef: "2013 OL Later Modern Section 3 Topic 6 C",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "Answer one of the following:\n1. How did Joe McCarthy contribute to a “red scare” in the US?\n2. What problems did one or more of the following pose for the US: Berlin; Korea; Cuba?\n3. What did Muhammad Ali and/or Marilyn Monroe contribute to the rise of the mass media in modern America?\n4. In what ways did the life and work of Betty Friedan reflect the changing role of women and the family in modern America? Picture X Picture Y",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2014, level: "ordinary",
     paperFileid: "LC004GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",

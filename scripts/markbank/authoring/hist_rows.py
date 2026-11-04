@@ -207,6 +207,13 @@ def split_priced(card):
     if rest:
         if cut + 1 < len(tokens):
             _note(pieces[-1], rest)
+        elif tokens is loose and not any(t.group(0).strip().lower().endswith('m)') for t in tokens):
+            # Every price a bare figure, and the phrase runs on past the last
+            # one: "In a slap-dash (3) meaningless (3) way" (2013 Ordinary,
+            # (6)). The scheme prices the words BEFORE each figure, so the rows
+            # are those priced spans; the run-on word is priced by neither, and
+            # joined on it would make a row the scheme never prints whole.
+            pass
         else:
             pieces[-1]['verbatim'] = f"{pieces[-1]['verbatim']} {rest}"
     if any(not piece['verbatim'] for piece in pieces):
