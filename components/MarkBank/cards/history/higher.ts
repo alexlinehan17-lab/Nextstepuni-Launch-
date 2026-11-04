@@ -922,6 +922,145 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
      }
     ],
     "directions": [
+     "In awarding OE marks, the examiner should not expect answers of more than 40% in quantity compared to the answers to the longer topic questions in Sections 2 and 3."
+    ]
+   },
+   "markingGuideNote": "Place each paragraph you wrote, in the order you wrote it, on the one band that fits it. The CM stops at its maximum, so a paragraph past it counts 0m. Then place your whole answer on one OE band.",
+   "schemeFileid": "LC004ALP000EV",
+   "cm": {
+    "mode": "paragraph",
+    "max": 24,
+    "definition": "These marks are awarded for historical content which is accurate and relevant to the question asked.",
+    "paragraphLead": "A paragraph or paragraph equivalent may be one of the following:",
+    "paragraphKinds": [
+     "(i) A relevant introduction giving the background situation and/or defining the terms and explaining the approach;",
+     "(ii) An episode, phase or stage in a sequence of events;",
+     "(iii) An aspect of a topic/issue, with supporting factual references;",
+     "(iv) A point in an argument or discussion, with supporting factual references;",
+     "(v) An explanation of a concept or term, with supporting factual references;",
+     "(vi) A number of significant, relevant statements of fact, explanation or comment which, although not connected or related, can be taken together and assessed as a paragraph equivalent;",
+     "(vii) A good concluding paragraph or summation, which is not mere repetition."
+    ],
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       11,
+       12
+      ],
+      "printed": "Excellent: 11-12 marks",
+      "descriptor": "Outstanding piece of analysis, exposition or commentary. Clearly expressed, accurate and substantial information."
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "printed": "Very good: 8-10 marks",
+      "descriptor": "Very good material, accurately and clearly expressed."
+     },
+     {
+      "label": "Good",
+      "marks": [
+       6,
+       7
+      ],
+      "printed": "Good: 6-7 marks",
+      "descriptor": "Worthwhile information, reasonably well expressed."
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4,
+       5
+      ],
+      "printed": "Fair: 3-5 marks",
+      "descriptor": "Limited information/barely expressed"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks",
+      "descriptor": "Trivial/irrelevant/grave errors."
+     }
+    ],
+    "directions": [
+     "(Summation which is mere repetition = max 4 marks)"
+    ]
+   }
+  },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "In question 4, marking by paragraph begins.",
+    "The examiner will divide the answer into paragraphs or paragraph equivalents."
+   ],
+   "oe": {
+    "max": 16,
+    "lead": "In awarding OE, the examiner will consider how well the candidate deals with the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "printed": "Excellent: 14-16 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "printed": "Very good: 11-13 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       6,
+       7,
+       8,
+       9,
+       10
+      ],
+      "printed": "Good: 6-10 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       4,
+       5
+      ],
+      "printed": "Fair: 4-5 marks"
+     },
+     {
+      "label": "Weak",
+      "marks": [
+       2,
+       3
+      ],
+      "printed": "Weak: 2-3 marks"
+     },
+     {
+      "label": "Very weak",
+      "marks": [
+       0,
+       1
+      ],
+      "printed": "Very weak: 0-1 mark"
+     }
+    ],
+    "directions": [
      "In awarding OE marks, the examiner should not expect answers of more than 40% in quantity compared to the answers to the longer topic questions in Sections 2 and 3.",
      "Material which narrates the events of the Congress without reference to their significance = no more than Fair on OE"
     ]
@@ -995,145 +1134,6 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
     "directions": [
      "(Summation which is mere repetition = max 4 marks)",
      "The question asks about the significance of the Eucharistic Congress. This can mean the social, political, ecclesiastical, national, international and historical significance of the Congress."
-    ]
-   }
-  },
-  {
-   "system": "history-essay",
-   "schemeGuidance": [
-    "In question 4, marking by paragraph begins.",
-    "The examiner will divide the answer into paragraphs or paragraph equivalents."
-   ],
-   "oe": {
-    "max": 16,
-    "lead": "In awarding OE, the examiner will consider how well the candidate deals with the set question. The following grading table will apply:",
-    "bands": [
-     {
-      "label": "Excellent",
-      "marks": [
-       14,
-       15,
-       16
-      ],
-      "printed": "Excellent: 14-16 marks"
-     },
-     {
-      "label": "Very good",
-      "marks": [
-       11,
-       12,
-       13
-      ],
-      "printed": "Very good: 11-13 marks"
-     },
-     {
-      "label": "Good",
-      "marks": [
-       6,
-       7,
-       8,
-       9,
-       10
-      ],
-      "printed": "Good: 6-10 marks"
-     },
-     {
-      "label": "Fair",
-      "marks": [
-       4,
-       5
-      ],
-      "printed": "Fair: 4-5 marks"
-     },
-     {
-      "label": "Weak",
-      "marks": [
-       2,
-       3
-      ],
-      "printed": "Weak: 2-3 marks"
-     },
-     {
-      "label": "Very weak",
-      "marks": [
-       0,
-       1
-      ],
-      "printed": "Very weak: 0-1 mark"
-     }
-    ],
-    "directions": [
-     "In awarding OE marks, the examiner should not expect answers of more than 40% in quantity compared to the answers to the longer topic questions in Sections 2 and 3."
-    ]
-   },
-   "markingGuideNote": "Place each paragraph you wrote, in the order you wrote it, on the one band that fits it. The CM stops at its maximum, so a paragraph past it counts 0m. Then place your whole answer on one OE band.",
-   "schemeFileid": "LC004ALP000EV",
-   "cm": {
-    "mode": "paragraph",
-    "max": 24,
-    "definition": "These marks are awarded for historical content which is accurate and relevant to the question asked.",
-    "paragraphLead": "A paragraph or paragraph equivalent may be one of the following:",
-    "paragraphKinds": [
-     "(i) A relevant introduction giving the background situation and/or defining the terms and explaining the approach;",
-     "(ii) An episode, phase or stage in a sequence of events;",
-     "(iii) An aspect of a topic/issue, with supporting factual references;",
-     "(iv) A point in an argument or discussion, with supporting factual references;",
-     "(v) An explanation of a concept or term, with supporting factual references;",
-     "(vi) A number of significant, relevant statements of fact, explanation or comment which, although not connected or related, can be taken together and assessed as a paragraph equivalent;",
-     "(vii) A good concluding paragraph or summation, which is not mere repetition."
-    ],
-    "bands": [
-     {
-      "label": "Excellent",
-      "marks": [
-       11,
-       12
-      ],
-      "printed": "Excellent: 11-12 marks",
-      "descriptor": "Outstanding piece of analysis, exposition or commentary. Clearly expressed, accurate and substantial information."
-     },
-     {
-      "label": "Very good",
-      "marks": [
-       8,
-       9,
-       10
-      ],
-      "printed": "Very good: 8-10 marks",
-      "descriptor": "Very good material, accurately and clearly expressed."
-     },
-     {
-      "label": "Good",
-      "marks": [
-       6,
-       7
-      ],
-      "printed": "Good: 6-7 marks",
-      "descriptor": "Worthwhile information, reasonably well expressed."
-     },
-     {
-      "label": "Fair",
-      "marks": [
-       3,
-       4,
-       5
-      ],
-      "printed": "Fair: 3-5 marks",
-      "descriptor": "Limited information/barely expressed"
-     },
-     {
-      "label": "Poor",
-      "marks": [
-       0,
-       1,
-       2
-      ],
-      "printed": "Poor: 0-2 marks",
-      "descriptor": "Trivial/irrelevant/grave errors."
-     }
-    ],
-    "directions": [
-     "(Summation which is mere repetition = max 4 marks)"
     ]
    }
   },
@@ -3872,6 +3872,752 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s1-q1a", topicId: "hist-em-irl-2", conceptId: "important-irish-leader-relative-meiler-magrath",
+    section: "1", questionRef: "2014 HL Early Modern Section 1 Q1(a)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "Which important Irish leader was a relative of Meiler Magrath, according to document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Shane O’Neill (prince of Ulster)", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Higher Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s1-q1b", topicId: "hist-em-irl-2", conceptId: "letters-confiscated",
+    section: "1", questionRef: "2014 HL Early Modern Section 1 Q1(b)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "What letters were confiscated, according to document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Letters confirming the appointment of Richard Creagh as Archbishop of Armagh", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Higher Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s1-q1c", topicId: "hist-em-irl-2", conceptId: "english-bishop-considered-meiler-magrath-suitable",
+    section: "1", questionRef: "2014 HL Early Modern Section 1 Q1(c)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "Which English bishop considered Meiler Magrath suitable for a church appointment in Ireland, according to document B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Bishop of London", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Higher Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s1-q1d", topicId: "hist-em-irl-2", conceptId: "instructions-did-queen-elizabeth-sidney-meiler",
+    section: "1", questionRef: "2014 HL Early Modern Section 1 Q1(d)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "What instructions did Queen Elizabeth I give to Sidney about Meiler Magrath, according to document B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To appoint some Bishops or other learned men to confer with him", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "that he should be treated more favourably because of his conformity", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Higher Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s1-q2a", topicId: "hist-em-irl-2", conceptId: "agree-character-meiler-magrath",
+    section: "1", questionRef: "2014 HL Early Modern Section 1 Q2(a)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "Do documents A and B agree about the character of Meiler Magrath? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Documents A and B partly agree about the character of Meiler Magrath", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Document A stresses his qualities of diligence and determination, while Document B does not", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Document B records that Magrath had offended aginst English law, while Document A does not", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Both documents agree that Magrath was suitable for appointment as a Bishop and that, in such a position, he could prove a very useful ally", marks: null },
+    { id: "r-5", kind: "point", verbatim: "The documents seem to agree that Magrath could be easily cultivated as he responds well to gestures of gratitude or favourable treatment.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Higher Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s1-q2b", topicId: "hist-em-irl-2", conceptId: "agree-suitability-meiler-magrath-church-appointment",
+    section: "1", questionRef: "2014 HL Early Modern Section 1 Q2(b)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "Do documents A and B agree about the suitability of Meiler Magrath for a church appointment? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Both documents agree that Meiler Magrath is suitable for appointment as a Bishop", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Document A states that he had been “worthy to be raised to the episcopacy because of his virtues” and that he will be of “great use” to Creagh in the diocese of Armagh", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Document B states that he is deemed “a fit person ... to be appointed to some ministry” and that he will be found to be “right and serviceable for the church” in Ireland.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Higher Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s1-q3a", topicId: "hist-em-irl-2", conceptId: "evidence-there-writer-considered-meiler-magrath",
+    section: "1", questionRef: "2014 HL Early Modern Section 1 Q3(a)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "What evidence is there in document A that the writer considered Meiler Magrath to be on good terms with church authorities in Rome?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A stresses Magrath’s success in procuring copies of the confiscated letters appointing Creagh as Archbishop of Armagh", marks: null },
+    { id: "r-2", kind: "point", verbatim: "This success suggests that Magrath must have been on good terms with senior church figures in Rome", marks: null },
+    { id: "r-3", kind: "point", verbatim: "The writer of Document A is described here as “an important and influential Jesuit in Rome”", marks: null },
+    { id: "r-4", kind: "point", verbatim: "This could mean that he would be unlikely to write so positively about Magrath unless he was also a supporter of the Pope", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Magrath had been appointed Catholic Bishop of Down and Connor, hardly likely if he was not a supporter of the Pope.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Higher Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s1-q3b", topicId: "hist-em-irl-2", conceptId: "evidence-there-writer-considered-meiler-magrath",
+    section: "1", questionRef: "2014 HL Early Modern Section 1 Q3(b)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "What evidence is there in document B that the writer considered Meiler Magrath to be a supporter of the Queen and her claims?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document B is a letter from the Queen herself to her deputy in Ireland", marks: null },
+    { id: "r-2", kind: "point", verbatim: "She accepts the opinion of the Bishop of London and others that Magrath should be appointed as a Bishop", marks: null },
+    { id: "r-3", kind: "point", verbatim: "She asks her deputy to arrange for other Bishops and scholars to confer with Magrath and that he be treated more favourably because of his “conformity”", marks: null },
+    { id: "r-4", kind: "point", verbatim: "All of this suggests that she accepts Magrath, which she wouldn’t do unless she considered him to be a supporter of hers.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Higher Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s1-q4", topicId: "hist-em-irl-2", conceptId: "meiler-magrath-controversial-figure-during-reign",
+    section: "1", questionRef: "2014 HL Early Modern Section 1 Q4",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "Why was Meiler Magrath a controversial figure during the reign of Elizabeth I?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[5], schemePages: [22,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t1-q1", topicId: "hist-em-irl-1", conceptId: "new-law-made-sir-edward-poynings",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 1 Q1",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "What new law was made by Sir Edward Poynings in 1494 and why was it important?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t1-q2", topicId: "hist-em-irl-1", conceptId: "extent-did-religious-change-take-place",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 1 Q2",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "To what extent did religious change take place in Ireland during the reigns of Henry VIII and Edward VI?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Henry VIII + Edward VI) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t1-q3", topicId: "hist-em-irl-1", conceptId: "main-features-urban-life-trade-ireland",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 1 Q3",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "What were the main features of urban life and trade in Ireland, 1494-1558?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t1-q4", topicId: "hist-em-irl-1", conceptId: "role-bardic-schools-cultural-life-ireland",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 1 Q4",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "What was the role of Bardic schools in the cultural life of Ireland, 1494-1558?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t3-q1", topicId: "hist-em-irl-3", conceptId: "extent-did-rules-governing-plantation-ulster",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 3 Q1",
+    stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
+    questionText: "To what extent did the rules governing the Plantation of Ulster inhibit good relations between the settlers and the natives of that province?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t3-q2", topicId: "hist-em-irl-3", conceptId: "causes-1641-war-ireland",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 3 Q2",
+    stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
+    questionText: "What were the causes of the 1641 war in Ireland?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t3-q3", topicId: "hist-em-irl-3", conceptId: "impact-cromwell-ireland",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 3 Q3",
+    stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
+    questionText: "What was the impact of Cromwell on Ireland?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t3-q4", topicId: "hist-em-irl-3", conceptId: "figure-such-piaras-feirit-under-threat",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 3 Q4",
+    stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
+    questionText: "Why was a figure such as Piaras Feiritéar under threat in Ireland, 1603-1660?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t4-q1", topicId: "hist-em-irl-4", conceptId: "who-represented-parliament-1689-did-achieve",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 4 Q1",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "Who was represented in the Parliament of 1689 and what did it achieve?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t4-q2", topicId: "hist-em-irl-4", conceptId: "role-patrick-sarsfield-war-kings",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 4 Q2",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "What was the role of Patrick Sarsfield in the War of the Two Kings?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t4-q3", topicId: "hist-em-irl-4", conceptId: "aims-cattle-navigation-acts-did-affect",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 4 Q3",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "What were the aims of the Cattle and Navigation Acts and how did they affect Irish trade?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (aims + effects) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t4-q4", topicId: "hist-em-irl-4", conceptId: "during-period-1660-1715-extent-ireland",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 4 Q4",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "During the period 1660-1715, to what extent was Ireland influenced by one or more of the following: the Jacobite poets; political pamphleteering; the emergence of science?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t5-q1", topicId: "hist-em-irl-5", conceptId: "main-features-irish-rural-economy-1715",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 5 Q1",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "What were the main features of the Irish rural economy, 1715-1770?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t5-q2", topicId: "hist-em-irl-5", conceptId: "during-period-1715-1770-extent-penal",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 5 Q2",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "During the period 1715-1770, to what extent were the Penal Laws against Catholics enforced?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t5-q3", topicId: "hist-em-irl-5", conceptId: "sheehy-brought-trial-trial-conducted-outcome",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 5 Q3",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "Why was Fr. Sheehy brought to trial, how was the trial conducted, and what was the outcome?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (why + how + outcome) If only TWO, Max. CM = 50","caps":[{"when":"If only TWO","max":50}]} }, schemePages: [24,25,27] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t5-q4", topicId: "hist-em-irl-5", conceptId: "contribution-conolly-family-arthur-guinness-irish",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 5 Q4",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "What was the contribution of the Conolly family and/or Arthur Guinness to Irish life, 1715-1770?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t6-q1", topicId: "hist-em-irl-6", conceptId: "impact-american-war-independence-ireland",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 6 Q1",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "What was the impact of the American War of Independence on Ireland?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t6-q2", topicId: "hist-em-irl-6", conceptId: "aims-united-irishmen-successful-achieving-them",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 6 Q2",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "What were the aims of the United Irishmen and how successful were they in achieving them?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (aims + achievement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t6-q3", topicId: "hist-em-irl-6", conceptId: "did-ireland-trade-economy-develop-1770",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 6 Q3",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "How did Ireland’s trade and economy develop, 1770-1815?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s2t6-q4", topicId: "hist-em-irl-6", conceptId: "contribution-eibhl-dhubh-chonaill-gaelic-culture",
+    section: "2", questionRef: "2014 HL Early Modern Section 2 Topic 6 Q4",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "What was the contribution of Eibhlín Dhubh Ní Chonaill to Gaelic culture?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t1-q1", topicId: "hist-em-eur-1", conceptId: "contribution-niccolo-machiavelli-jacob-fugger-his",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 1 Q1",
+    stem: "Europe from Renaissance to Reformation, 1492-1567",
+    questionText: "What was the contribution of Niccolo Machiavelli and/or Jacob Fugger to his chosen field of endeavour?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t1-q2", topicId: "hist-em-eur-1", conceptId: "did-discovery-new-world-affect-europe",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 1 Q2",
+    stem: "Europe from Renaissance to Reformation, 1492-1567",
+    questionText: "How did the discovery of the New World affect Europe socially and economically?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t1-q3", topicId: "hist-em-eur-1", conceptId: "did-henry-viii-divorce-catherine-aragon",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 1 Q3",
+    stem: "Europe from Renaissance to Reformation, 1492-1567",
+    questionText: "How did Henry VIII’s divorce of Catherine of Aragon influence politics and religion in England?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (politics + religion) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t1-q4", topicId: "hist-em-eur-1", conceptId: "distinguished-calvin-luther-religious-reformers",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 1 Q4",
+    stem: "Europe from Renaissance to Reformation, 1492-1567",
+    questionText: "What distinguished Calvin and/or Luther as religious reformers?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t2-q1", topicId: "hist-em-eur-2", conceptId: "impact-spain-defeat-spanish-armada-revolt",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 2 Q1",
+    stem: "Religion and power: politics in the later 16th century, 1567-1609",
+    questionText: "What was the impact on Spain of the defeat of the Spanish Armada and/or the revolt of the Netherlands?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t2-q2", topicId: "hist-em-eur-2", conceptId: "did-port-antwerp-decline",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 2 Q2",
+    stem: "Religion and power: politics in the later 16th century, 1567-1609",
+    questionText: "Why did the port of Antwerp decline?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t2-q3", topicId: "hist-em-eur-2", conceptId: "important-council-trent-counter-reformation",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 2 Q3",
+    stem: "Religion and power: politics in the later 16th century, 1567-1609",
+    questionText: "How important was the Council of Trent in the Counter-Reformation?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t2-q4", topicId: "hist-em-eur-2", conceptId: "did-tycho-brahe-contribute-science-did",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 2 Q4",
+    stem: "Religion and power: politics in the later 16th century, 1567-1609",
+    questionText: "How did Tycho Brahe contribute to science and/or how did Michel de Montaigne contribute to literature?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t3-q1", topicId: "hist-em-eur-3", conceptId: "did-inquisition-see-galileo-threat-did",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 3 Q1",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "Why did the Inquisition see Galileo as a threat and how did it deal with him?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why + how) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t3-q2", topicId: "hist-em-eur-3", conceptId: "consequences-thirty-years-war-hapsburg-empire",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 3 Q2",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "What were the consequences of the Thirty Years War for the Hapsburg Empire?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t3-q3", topicId: "hist-em-eur-3", conceptId: "did-cardinal-richelieu-contribute-development-french",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 3 Q3",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "How did Cardinal Richelieu contribute to the development of French absolutism?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t3-q4", topicId: "hist-em-eur-3", conceptId: "key-social-economic-developments-europe-1609",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 3 Q4",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "What were the key social and economic developments in Europe, 1609-1660?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t4-q1", topicId: "hist-em-eur-4", conceptId: "extent-court-versailles-statement-absolute-monarchy",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 4 Q1",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "To what extent was the Court of Versailles a statement of absolute monarchy in France?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t4-q2", topicId: "hist-em-eur-4", conceptId: "far-reaching-reforms-peter-great-russia",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 4 Q2",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "How far-reaching were the reforms of Peter the Great in Russia?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t4-q3", topicId: "hist-em-eur-4", conceptId: "factors-led-restoration-subsequent-fall-stuart",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 4 Q3",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "What factors led to the restoration and subsequent fall of the Stuart monarchy in England?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (restoration + fall) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t4-q4", topicId: "hist-em-eur-4", conceptId: "important-contributions-isaac-newton-gottfried-wilhelm",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 4 Q4",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "How important were the contributions of Isaac Newton and Gottfried Wilhelm Leibnitz to the sciences?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Newton + Leibnitz) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t5-q1", topicId: "hist-em-eur-5", conceptId: "causes-american-revolution",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 5 Q1",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "What were the causes of the American Revolution?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t5-q2", topicId: "hist-em-eur-5", conceptId: "during-period-1715-1775-significant-developments",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 5 Q2",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "During the period 1715-1775, what significant developments took place in international trade?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t5-q3", topicId: "hist-em-eur-5", conceptId: "effective-leader-catherine-great-russia-frederick",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 5 Q3",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "How effective a leader was Catherine the Great of Russia and/or Frederick the Great of Prussia?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t5-q4", topicId: "hist-em-eur-5", conceptId: "key-political-social-ideas-enlightenment",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 5 Q4",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "What were the key political and social ideas of the Enlightenment?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t6-q1", topicId: "hist-em-eur-6", conceptId: "causes-french-revolution",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 6 Q1",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "What were the causes of the French Revolution?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t6-q2", topicId: "hist-em-eur-6", conceptId: "aims-achievements-committee-public-safety",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 6 Q2",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "What were the aims and achievements of the Committee of Public Safety?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (aims + achievements) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t6-q3", topicId: "hist-em-eur-6", conceptId: "did-agricultural-industrial-revolutions-bring-social",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 6 Q3",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "How did the agricultural and industrial revolutions bring about social and economic change in Europe?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (agricultural + industrial) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "higher",
+    paperFileid: "LC096ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2014 Higher Level — © State Examinations Commission.",
+    id: "hist-2014-hl-em-s3t6-q4", topicId: "hist-em-eur-6", conceptId: "napoleon-impact-europe",
+    section: "3", questionRef: "2014 HL Early Modern Section 3 Topic 6 Q4",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "What was Napoleon’s impact on Europe?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2015, level: "higher",
     paperFileid: "LC004ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Higher Level — © State Examinations Commission.",
@@ -4091,7 +4837,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Eucharistic Congress, 1932",
     questionText: "What was the significance of the Eucharistic Congress, 1932?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [9,10] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [9,10] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4841,7 +5587,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Lordship of Tír Eoghain",
     questionText: "Why did Hugh O’Neill’s challenge to royal power in Ireland ultimately fail?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [22,23] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [22,23] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6339,7 +7085,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: Calvin’s Geneva",
     questionText: "To what extent did Calvinism become an international movement?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [22,23] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [22,23] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7836,7 +8582,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: Seville, the port of the New World",
     questionText: "What was the impact of the discovery of the New World on Seville?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [22,23] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [22,23] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8585,7 +9331,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The impact of RTÉ, 1962‐1972",
     questionText: "During the period 1962‐1972, to what extent did RTÉ both entertain and challenge its viewers?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"There are two elements in this question:\nTo what extent did RTÉ entertain and to what extent did it challenge its viewers?\nEntertaining = music, comedy, etc\nChallenging = provocative current affairs, documentaries, etc\nThere were also programmes, such as the Late Late Show, which combined the entertaining and the challenging.\nMax of 20 marks CM if only one element is treated","caps":[{"when":"if only one element is treated","max":20}]} }, schemePages: [9,10] },
+    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"There are two elements in this question:\nTo what extent did RTÉ entertain and to what extent did it challenge its viewers?\nEntertaining = music, comedy, etc\nChallenging = provocative current affairs, documentaries, etc\nThere were also programmes, such as the Late Late Show, which combined the entertaining and the challenging.\nMax of 20 marks CM if only one element is treated","caps":[{"when":"if only one element is treated","max":20}]} }, schemePages: [9,10] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9336,7 +10082,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Bardic Schools",
     questionText: "What was distinctive about the Bardic Schools?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [22,23] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [22,23] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10083,7 +10829,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The First Programme for Economic Expansion, 1958‐1963",
     questionText: "To what extent did the First Programme for Economic Expansion, 1958‐1963, achieve its aims?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [9,10] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [9,10] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11606,7 +12352,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: Lyndon Johnson and Vietnam, 1963-1968",
     questionText: "How did US involvement in Vietnam affect the presidency of Lyndon Johnson?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [8,9] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [8,9] },
   } as SecCard,
   {
     ...base, kind: "rubric",
