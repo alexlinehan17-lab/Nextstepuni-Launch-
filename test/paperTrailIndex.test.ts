@@ -78,7 +78,8 @@ describe('Paper Trail index entries', () => {
         expect(paper.answers).toBeUndefined();
       }
     }
-    expect(PAPER_TRAIL_INDEX.irish.flatMap(e=>e.papers).filter(p=>!p.scheme)).toEqual([]);
+    // Every 2010-2026 component has its scheme; the 1995-2009 archive is outside the entitled corpus.
+    expect(PAPER_TRAIL_INDEX.irish.filter(e=>e.year>=2010).flatMap(e=>e.papers).filter(p=>!p.scheme)).toEqual([]);
   });
 
   it('indexes the complete 2026 Geography paper and companion set', () => {

@@ -1,6 +1,6 @@
 {
   "subject": "irish",
-  "scope": "Every Irish paper component in PAPER_TRAIL_INDEX, all years and levels",
+  "scope": "Every Irish paper component of a main sitting 2010-2026 in PAPER_TRAIL_INDEX, all levels",
   "warning": "Presence of cards or Atlas section anchors does not establish question-level completeness.",
   "summary": {
     "papers": 91,

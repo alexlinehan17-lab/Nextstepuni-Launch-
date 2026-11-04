@@ -17,6 +17,7 @@ import fitz
 
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / 'scripts/markbank/authored/irish-archive-inventory.json'
+FIRST_YEAR = 2010
 
 
 def document(corpus: Path, kind: str, year: int, fileid: str | None) -> dict | None:
@@ -40,7 +41,11 @@ def inventory(corpus: Path) -> dict:
         "import {paperIndex} from './scripts/markbank/paperIndex.mjs';"
         'process.stdout.write(JSON.stringify(paperIndex.irish));',
     ], cwd=ROOT, capture_output=True, text=True, check=True)
-    entries = json.loads(result.stdout)
+    # The lane's scope is every MAIN sitting 2010-2026. PAPER_TRAIL_INDEX now also
+    # holds 1995-2009 and the 2022-2025 deferred sittings; the deferred sittings are
+    # carded as their own later stage, and pre-2010 is outside the entitled corpus.
+    entries = [entry for entry in json.loads(result.stdout)
+               if entry['year'] >= FIRST_YEAR and entry.get('sitting') != 'deferred']
     cards = [c for name in ['authored.json', 'foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json', 'foundation-2016-authored.json', 'foundation-2015-authored.json', 'foundation-2014-authored.json', 'foundation-2013-authored.json', 'foundation-2012-authored.json', 'foundation-2011-authored.json', 'foundation-2011-aural-authored.json', 'foundation-2010-authored.json', 'foundation-2026-authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json', 'ordinary-2026-p2-authored.json', 'higher-2025-p2-authored.json', 'ordinary-2025-p2-authored.json', 'ordinary-2024-p2-authored.json', 'higher-2023-p2-authored.json', 'ordinary-2023-p2-authored.json']
              for c in json.loads((ROOT / 'components/MarkBank/cards/irish' / name).read_text())['cards']]
     foundations = [json.loads((ROOT / 'components/MarkBank/cards/irish' / name).read_text())
@@ -101,7 +106,7 @@ def inventory(corpus: Path) -> dict:
                 assert parity, 'Reviewed paper lost Bank/Atlas task parity'
     return {
         'subject': 'irish',
-        'scope': 'Every Irish paper component in PAPER_TRAIL_INDEX, all years and levels',
+        'scope': 'Every Irish paper component of a main sitting 2010-2026 in PAPER_TRAIL_INDEX, all levels',
         'warning': 'Presence of cards or Atlas section anchors does not establish question-level completeness.',
         'summary': {
             'papers': len(rows),

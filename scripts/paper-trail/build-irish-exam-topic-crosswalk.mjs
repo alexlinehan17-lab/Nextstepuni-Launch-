@@ -297,7 +297,9 @@ const cloneAnchor = (source, fallbackPage, label) => {
 
 const baselineByFile = new Map(preservationBaseline.map(paper => [paper.year + '|' + paper.fileid, paper]));
 const paperFiles = fs.readdirSync(PAPERS_ROOT, { withFileTypes: true })
-  .filter(entry => entry.isDirectory() && /^20\d\d$/.test(entry.name))
+  // The local archive now reaches back to 1995; the entitled corpus this
+  // crosswalk covers is 2010-2026, so older years are never counted here.
+  .filter(entry => entry.isDirectory() && /^20\d\d$/.test(entry.name) && Number(entry.name) >= 2010)
   .flatMap(entry => fs.readdirSync(path.join(PAPERS_ROOT, entry.name))
     .filter(file => /^LC001[AGB]LP(?:100|200|A00|000)IV\.pdf$/i.test(file))
     .map(file => ({ year: Number(entry.name), file })))
