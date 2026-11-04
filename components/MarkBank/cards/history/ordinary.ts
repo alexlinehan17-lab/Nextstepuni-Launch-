@@ -297,6 +297,203 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
     "directions": []
    }
   },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "Mark by the principle of Core Statement. Max = 20M"
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m.",
+   "schemeFileid": "LC004GLP000EV",
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "Here, in question 4 of the DBQ, the examiner will be looking to award 5 marks each to four Core Statements for the full 20 marks allocation.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   }
+  },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band.",
+   "schemeFileid": "LC004GLP000EV",
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   }
+  },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band.",
+   "schemeFileid": "LC004GLP000EV",
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   }
+  },
 ];
 
 export const CARDS: SecCard[] = [
@@ -11791,6 +11988,18 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s1-q4", topicId: "hist-lm-eur-3", conceptId: "ways-did-show-trials-affect-stalin",
+    section: "1", questionRef: "2024 OL Later Modern Section 1 Q4",
+    stem: "Case study: Stalin’s show trials",
+    questionText: "In what ways did the show trials affect Stalin’s Russia?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[5], schemePages: [11] },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC004GLP000EV",
@@ -11909,6 +12118,30 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2024 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s2t1b", topicId: "hist-lm-irl-1", conceptId: "tithe-war-william-dargan-mother-mary",
+    section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 1 B",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Write a short paragraph on one of the following:\n1. The Tithe War.\n2. William Dargan.\n3. Mother Mary Aikenhead.\n4. Industrial development in Belfast.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s2t1c", topicId: "hist-lm-irl-1", conceptId: "did-daniel-connell-campaign-catholic-emancipation",
+    section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 1 C",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Answer one of the following:\n1. How did Daniel O’Connell campaign for Catholic Emancipation in 1829?\n2. In what ways did Charles Trevelyan and/or Asenath Nicholson respond to the Famine?\n3. How did the writings of William Carleton contribute to our understanding of Irish life?\n4. From your studies, what did you learn about James Stephens and Fenianism?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12031,6 +12264,30 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s2t2b", topicId: "hist-lm-irl-2", conceptId: "home-rule-movement-under-isaac-butt",
+    section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 2 B",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Write a short paragraph on one of the following:\n1. The Home Rule movement under Isaac Butt.\n2. Educational reforms: schools and universities.\n3. Edward Carson.\n4. Hanna Sheehy-Skeffington.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s2t2c", topicId: "hist-lm-irl-2", conceptId: "did-charles-stewart-parnell-michael-davitt",
+    section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 2 C",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Answer one of the following:\n1. How did Charles Stewart Parnell and/or Michael Davitt contribute to the movement for land reform?\n2. What developments took place within the GAA between 1884 and 1891?\n3. What events took place in Dublin during the 1913 strike and lockout?\n4. In what ways did Douglas Hyde and/or W.B. Yeats contribute to cultural revival in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,13] },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC004GLP000EV",
@@ -12149,6 +12406,30 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2024 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s2t3b", topicId: "hist-lm-irl-3", conceptId: "impact-world-war-ireland-countess-markievicz",
+    section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 3 B",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "Write a short paragraph on one of the following:\n1. The impact of World War I on Ireland.\n2. Countess Markievicz.\n3. W.T. Cosgrave.\n4. Developments in education, 1922-1949.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s2t3c", topicId: "hist-lm-irl-3", conceptId: "important-role-michael-collins-irish-affairs",
+    section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 3 C",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "Answer one of the following:\n1. How important was the role of Michael Collins in Irish affairs?\n2. What preparations were made by Church and by State to ensure the success of the Eucharistic Congress, 1932?\n3. How successfully did Éamon de Valera manage Irish affairs between 1932 and 1939?\n4. What did the people of Belfast experience during World War II?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12272,6 +12553,30 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s2t4b", topicId: "hist-lm-irl-4", conceptId: "john-devoy-molly-maguires-orange-order",
+    section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 4 B",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Write a short paragraph on one of the following:\n1. John Devoy.\n2. The Molly Maguires.\n3. The Orange Order in Canada and Australia.\n4. Bishop Edward Galvin.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s2t4c", topicId: "hist-lm-irl-4", conceptId: "successful-amon-valera-mission-america-june",
+    section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 4 C",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Answer one of the following:\n1. How successful was Éamon de Valera’s mission to America, June 1919 – December 1920?\n2. What were the achievements of Archbishop Daniel Mannix and/or Mother Mary Martin?\n3. What was the experience of Domhnall Mac Amhlaigh as an Irish immigrant in Britain?\n4. In what ways did Maureen O’Hara and/or Paul O’Dwyer illustrate the Irish-American experience?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,14] },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC004GLP000EV",
@@ -12390,6 +12695,30 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2024 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s2t5b", topicId: "hist-lm-irl-5", conceptId: "bernadette-devlin-james-molyneaux-cultural-response",
+    section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 5 B",
+    stem: "Politics and society in Northern Ireland, 1949-1993",
+    questionText: "Write a short paragraph on one of the following:\n1. Bernadette Devlin.\n2. James Molyneaux.\n3. Cultural response to the “Troubles”.\n4. The Downing Street Declaration, 1993.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s2t5c", topicId: "hist-lm-irl-5", conceptId: "reforms-introduced-health-housing-1949-1969",
+    section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 5 C",
+    stem: "Politics and society in Northern Ireland, 1949-1993",
+    questionText: "Answer one of the following:\n1. What reforms were introduced in health and housing, 1949-1969?\n2. What did the Apprentice Boys of Derry celebrate and why did their celebrations cause controversy?\n3. What was the Sunningdale Agreement, 1973, and was it successful?\n4. How did one of the following influence events in Northern Ireland: John Hume; Gerry Adams; Ian Paisley?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12513,6 +12842,30 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s2t6b", topicId: "hist-lm-irl-6", conceptId: "changing-attitudes-irish-language-1949-1989",
+    section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 6 B",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. Changing attitudes to the Irish language, 1949-1989.\n2. Irish involvement in the UN.\n3. Charles Haughey.\n4. Breandán Ó hEithir.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s2t6c", topicId: "hist-lm-irl-6", conceptId: "impact-irish-life-1962-1972-did",
+    section: "2", questionRef: "2024 OL Later Modern Section 2 Topic 6 C",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Answer one of the following:\n1. What was the impact of RTÉ on Irish life, 1962-1972?\n2. Did membership of the EEC help or hinder the development of Irish fisheries? Argue your case.\n3. From your studies, how significant was the contribution of Sylvia Meehan and/or Mary Robinson to Irish life?\n4. What did Garrett FitzGerald achieve during his two terms in office as Taoiseach?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,14] },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC004GLP000EV",
@@ -12631,6 +12984,30 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2024 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s3t1b", topicId: "hist-lm-eur-1", conceptId: "system-metternich-1815-1848-developments-science",
+    section: "3", questionRef: "2024 OL Later Modern Section 3 Topic 1 B",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Write a short paragraph on one of the following:\n1. The system of Metternich, 1815-1848.\n2. Developments in science.\n3. Giuseppe Mazzini.\n4. Serfdom in Russia.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s3t1c", topicId: "hist-lm-eur-1", conceptId: "did-robert-owen-hope-achieve-new",
+    section: "3", questionRef: "2024 OL Later Modern Section 3 Topic 1 C",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Answer one of the following:\n1. What did Robert Owen hope to achieve at New Lanark and did he succeed?\n2. For what reasons did the 1848 Revolution in Germany end in failure?\n3. In what ways did Baron Haussmann improve the city of Paris?\n4. From your studies, what did you learn about Karl Marx and/or Mikhail Bakunin?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12754,6 +13131,30 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s3t2b", topicId: "hist-lm-eur-2", conceptId: "anti-semitism-france-pope-leo-xiii",
+    section: "3", questionRef: "2024 OL Later Modern Section 3 Topic 2 B",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Write a short paragraph on one of the following:\n1. Anti-Semitism in France.\n2. Pope Leo XIII.\n3. The Second International.\n4. Wilfred Owen.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s3t2c", topicId: "hist-lm-eur-2", conceptId: "successes-failures-bismarck-chancellor-germany-did",
+    section: "3", questionRef: "2024 OL Later Modern Section 3 Topic 2 C",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Answer one of the following:\n1. What were the successes and failures of Bismarck as Chancellor of Germany?\n2. How did the invention and early history of the motor car change life in Europe?\n3. What did women contribute to the war effort during World War I?\n4. What was significant about the life and work of Marie Curie and/or Rosa Luxemburg?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,15] },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC004GLP000EV",
@@ -12872,6 +13273,30 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2024 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s3t4b", topicId: "hist-lm-eur-4", conceptId: "marshall-aid-jean-monnet-impact-oil",
+    section: "3", questionRef: "2024 OL Later Modern Section 3 Topic 4 B",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Write a short paragraph on one of the following:\n1. Marshall Aid.\n2. Jean Monnet.\n3. The impact of the Oil Crisis, 1973.\n4. Pope John Paul II.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s3t4c", topicId: "hist-lm-eur-4", conceptId: "significant-role-imre-nagy-nikita-khrushchev",
+    section: "3", questionRef: "2024 OL Later Modern Section 3 Topic 4 C",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Answer one of the following:\n1. How significant was the role of Imre Nagy and/or Nikita Khrushchev during the Hungarian Uprising, 1956?\n2. What impact did Jacques Delors and/or Margaret Thatcher have on European affairs?\n3. In what ways did Mikhail Gorbachev attempt to reform Soviet Russia?\n4. What did Simone de Beauvoir and/or John Lennon contribute to modern culture?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12995,6 +13420,30 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s3t5b", topicId: "hist-lm-eur-5", conceptId: "suez-crisis-1956-charles-gaulle-algeria",
+    section: "3", questionRef: "2024 OL Later Modern Section 3 Topic 5 B",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "Write a short paragraph on one of the following:\n1. The Suez Crisis, 1956.\n2. Charles de Gaulle and Algeria.\n3. The Lomé Conventions.\n4. Nadine Gordimer.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s3t5c", topicId: "hist-lm-eur-5", conceptId: "did-david-ben-gurion-gamal-abdul",
+    section: "3", questionRef: "2024 OL Later Modern Section 3 Topic 5 C",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "Answer one of the following:\n1. How did David Ben-Gurion and/or Gamal Abdul Nasser deal with Arab-Israeli conflict?\n2. For what reasons did Katanga break away from the Congo and why did this lead to war?\n3. What problems did development workers encounter in Africa, 1945-1990?\n4. How did the government of Britain and/or France deal with problems in race relations?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,16] },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC004GLP000EV",
@@ -13113,6 +13562,30 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2024 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s3t6b", topicId: "hist-lm-eur-6", conceptId: "joe-mccarthy-cuban-missile-crisis-billy",
+    section: "3", questionRef: "2024 OL Later Modern Section 3 Topic 6 B",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. Joe McCarthy.\n2. The Cuban Missile Crisis.\n3. Billy Graham.\n4. SALT and Star Wars.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-lm-s3t6c", topicId: "hist-lm-eur-6", conceptId: "part-played-martin-luther-king-montgomery",
+    section: "3", questionRef: "2024 OL Later Modern Section 3 Topic 6 C",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "Answer one of the following:\n1. What part was played by Martin Luther King in the Montgomery bus boycott, 1956?\n2. During the 1960s and 1970s, how did the anti-war movement develop in the United States?\n3. How was a successful moon landing achieved in 1969 and what was its importance?\n4. What did Betty Friedan and/or Marilyn Monroe contribute to American life?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -13465,6 +13938,18 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s1-q4", topicId: "hist-em-eur-1", conceptId: "ways-did-discovery-new-world-affect",
+    section: "1", questionRef: "2024 OL Early Modern Section 1 Q4",
+    stem: "Case study: Seville, the port of the New World",
+    questionText: "In what ways did the discovery of the New World affect Seville?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[4], schemePages: [23] },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC096GLP000EV",
@@ -13584,6 +14069,30 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2024 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s2t1b", topicId: "hist-em-irl-1", conceptId: "gear-9th-earl-kildare-towns-guilds",
+    section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 1 B",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "Write a short paragraph on one of the following:\n1. Gearóid Óg, 9th Earl of Kildare.\n2. Towns and guilds.\n3. The monasteries and their dissolution.\n4. The Bardic Schools.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s2t1c", topicId: "hist-em-irl-1", conceptId: "did-gear-8th-earl-kildare-become",
+    section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 1 C",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "Answer one of the following:\n1. How did Gearóid Mór, 8th Earl of Kildare, become so powerful?\n2. What policies did Sir Anthony St. Leger implement and were they successful?\n3. What were the policies in Ireland of Queen Mary I?\n4. How important was Manus O’Donnell as a chieftain and as a scholar?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -13706,6 +14215,30 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s2t2b", topicId: "hist-em-irl-2", conceptId: "richard-creagh-policy-composition-tadhg-dall",
+    section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 2 B",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
+    questionText: "Write a short paragraph on one of the following:\n1. Richard Creagh.\n2. The policy of composition.\n3. Tadhg Dall Ó hUiginn.\n4. The Pale and the burden of the army.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s2t2c", topicId: "hist-em-irl-2", conceptId: "main-features-elizabethan-dublin-did-james",
+    section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 2 C",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
+    questionText: "Answer one of the following:\n1. What were the main features of Elizabethan Dublin?\n2. Why did James Fitzmaurice Fitzgerald lead a revolt in Munster and what was its outcome?\n3. What leadership did Hugh O’Neill provide in the Nine Years’ War?\n4. Why is the clerical career of Meiler Magrath considered controversial?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [23,24,25] },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC096GLP000EV",
@@ -13824,6 +14357,30 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2024 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s2t3b", topicId: "hist-em-irl-3", conceptId: "sir-arthur-chichester-elizabeth-butler-countess",
+    section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 3 B",
+    stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660",
+    questionText: "Write a short paragraph on one of the following:\n1. Sir Arthur Chichester.\n2. Elizabeth Butler, Countess of Ormond.\n3. The state of Ireland in 1641.\n4. Cromwellian transplantations.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s2t3c", topicId: "hist-em-irl-3", conceptId: "did-sir-thomas-wentworth-earl-strafford",
+    section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 3 C",
+    stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660",
+    questionText: "Answer one of the following:\n1. How did Sir Thomas Wentworth (Earl of Strafford) make enemies in Ireland and how did they contribute to his downfall?\n2. What did Richard Boyle, and his family, contribute to Irish affairs?\n3. How did Archbishop Rinuccini influence events in Ireland?\n4. What did Owen Roe O’Neill achieve in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -13946,6 +14503,30 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s2t4b", topicId: "hist-em-irl-4", conceptId: "robert-boyle-cattle-navigation-acts-ibh",
+    section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 4 B",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "Write a short paragraph on one of the following:\n1. Robert Boyle.\n2. The Cattle and Navigation Acts.\n3. Dáibhí Ó Bruadair.\n4. Samuel Louis Crommelin.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s2t4c", topicId: "hist-em-irl-4", conceptId: "penal-laws-applied-oliver-plunkett-effect",
+    section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 4 C",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "Answer one of the following:\n1. Why were the Penal Laws applied to Oliver Plunkett and with what effect?\n2. What important developments took place in Restoration Dublin?\n3. What were the successes and failures of the military career of Patrick Sarsfield?\n4. How did William Molyneux contribute to Irish life?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [23,24,26] },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC096GLP000EV",
@@ -14066,6 +14647,30 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s2t5b", topicId: "hist-em-irl-5", conceptId: "ponsonbys-dean-jonathan-swift-increase-smuggling",
+    section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 5 B",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "Write a short paragraph on one of the following:\n1. The Ponsonbys.\n2. Dean Jonathan Swift.\n3. The increase in smuggling.\n4. Na Cúirteanna Filíochta.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s2t5c", topicId: "hist-em-irl-5", conceptId: "evidence-given-trial-nicholas-sheehy-outcome",
+    section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 5 C",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "Answer one of the following:\n1. What evidence was given at the trial of Fr. Nicholas Sheehy and what was the outcome?\n2. What conditions gave rise to the Whiteboys and what methods did they use?\n3. How did Turlough O’Carolan contribute to Irish life?\n4. How did Arthur Guinness contribute to the development of industry in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [23,24,26] },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC096GLP000EV",
@@ -14184,6 +14789,30 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2024 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s2t6b", topicId: "hist-em-irl-6", conceptId: "mary-anne-mccracken-georgian-culture-eibhl",
+    section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 6 B",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "Write a short paragraph on one of the following:\n1. Mary Anne McCracken.\n2. Georgian culture.\n3. Eibhlín Dhubh Ní Chonaill.\n4. The Act of Union.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,26] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s2t6c", topicId: "hist-em-irl-6", conceptId: "conditions-led-rise-belfast-did-wolfe",
+    section: "2", questionRef: "2024 OL Early Modern Section 2 Topic 6 C",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "Answer one of the following:\n1. What conditions led to the rise of Belfast?\n2. What did Wolfe Tone hope to achieve and why did he fail?\n3. What did Nano Nagle contribute to Irish life?\n4. For what reasons was the establishment of Maynooth College important?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [23,24,26] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -14307,6 +14936,30 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s3t2b", topicId: "hist-em-eur-2", conceptId: "council-trent-sir-walter-raleigh-michel",
+    section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 2 B",
+    stem: "Religion and power: politics in the later sixteenth century, 1567-1609",
+    questionText: "Write a short paragraph on one of the following:\n1. The Council of Trent.\n2. Sir Walter Raleigh.\n3. Michel de Montaigne.\n4. The Holy Roman Empire under Rudolf II.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,27] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s3t2c", topicId: "hist-em-eur-2", conceptId: "part-played-matteo-ricci-jesuit-mission",
+    section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 2 C",
+    stem: "Religion and power: politics in the later sixteenth century, 1567-1609",
+    questionText: "Answer one of the following:\n1. What part was played by Matteo Ricci in the Jesuit mission in China?\n2. What was the purpose of the Spanish Armada and why did it fail?\n3. How important was the role of William the Silent in the Revolt of the Netherlands?\n4. What did you find interesting about the life and work of Tycho Brahe?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [23,24,27] },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC096GLP000EV",
@@ -14425,6 +15078,30 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2024 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s3t3b", topicId: "hist-em-eur-3", conceptId: "queen-christina-sweden-witch-hunting-europe",
+    section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 3 B",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "Write a short paragraph on one of the following:\n1. Queen Christina of Sweden.\n2. Witch-hunting in Europe.\n3. The Papacy and the Jesuits.\n4. How the Thirty Years’ War began.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,27] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s3t3c", topicId: "hist-em-eur-3", conceptId: "part-did-marie-medici-play-affairs",
+    section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 3 C",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "Answer one of the following:\n1. What part did Marie de’ Medici play in the affairs of France?\n2. How did the Dutch establish an empire in Asia and what was its impact on the home country?\n3. What scientific discoveries were made by Galileo and why were they controversial?\n4. What were the achievements of Claudio Monteverdi and/or Peter Paul Rubens?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -14546,6 +15223,30 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2024 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s3t4b", topicId: "hist-em-eur-4", conceptId: "expansion-cities-war-spanish-succession-sir",
+    section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 4 B",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "Write a short paragraph on one of the following:\n1. The expansion of cities.\n2. The War of the Spanish Succession.\n3. Sir Henry Morgan.\n4. The court of Versailles.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,27] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s3t4c", topicId: "hist-em-eur-4", conceptId: "aims-english-east-india-company-did",
+    section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 4 C",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "Answer one of the following:\n1. What were the aims of the English East India Company and how did its activities benefit England?\n2. Who were the Streltsy and how did Peter the Great respond to their rebellion?\n3. What challenges did Poland face under John Sobieski?\n4. What was the influence of Isaac Newton and/or Gottfried Wilhelm Leibnitz?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -14670,6 +15371,30 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s3t5b", topicId: "hist-em-eur-5", conceptId: "maria-theresa-robert-clive-road-canal",
+    section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 5 B",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "Write a short paragraph on one of the following:\n1. Maria Theresa.\n2. Robert Clive.\n3. Road and canal building.\n4. The Encyclopédie.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s3t5c", topicId: "hist-em-eur-5", conceptId: "main-achievements-frederick-great-home-abroad",
+    section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 5 C",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "Answer one of the following:\n1. What were the main achievements of Frederick the Great, at home and abroad?\n2. What were the main features of life on a West Indies slave plantation?\n3. What ideas did Voltaire and/or Rousseau contribute to the Enlightenment?\n4. Why was the Boston Tea Party, 1773, an important event?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [23,24,28] },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC096GLP000EV",
@@ -14788,6 +15513,30 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC History 2024 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s3t6b", topicId: "hist-em-eur-6", conceptId: "agricultural-revolution-abolition-slave-trade-napoleon",
+    section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 6 B",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "Write a short paragraph on one of the following:\n1. The Agricultural Revolution.\n2. The abolition of the slave trade.\n3. Napoleon’s invasion of Russia.\n4. Tom Paine.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,28] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2024 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2024-ol-em-s3t6c", topicId: "hist-em-eur-6", conceptId: "did-manchester-become-great-industrial-city",
+    section: "3", questionRef: "2024 OL Early Modern Section 3 Topic 6 C",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "Answer one of the following:\n1. How did Manchester become a great industrial city?\n2. How did the activities of the Committee of Public Safety affect France?\n3. What ideas were put forward by Madame de Staël and/or Mary Wollstonecraft?\n4. What cultural achievements do you attribute to Ludwig van Beethoven?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [23,24,28] },
   } as SecCard,
   {
     ...base, kind: "question",
