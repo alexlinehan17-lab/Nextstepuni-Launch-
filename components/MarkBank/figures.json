@@ -57092,5 +57092,73 @@
     "year": 2014,
     "level": "higher",
     "attribution": "SEC Leaving Certificate Economics 2014 Higher Level — © State Examinations Commission"
+  },
+  "economics-2014-OL-scheme-p06-q5-working": {
+    "src": "/exam-figures/economics/markbank/economics-2014-OL-scheme-p06-q5-working.png",
+    "md5": "24fdca9bf8f649e7e6125162018f5214",
+    "alt": "The marking scheme’s answer table. Workings: Y = C + I + G + X – M; Y = €3,200m + €500m - €400m. Answer: €3,300m.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2014 OL Section A Q5",
+    "year": 2014,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2014 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2014-OL-scheme-p09-q1a-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2014-OL-scheme-p09-q1a-diagram.png",
+    "md5": "716a2761cc81898fb03588711c0066a6",
+    "alt": "The marking scheme’s completed diagram: P against Quantity, a falling AR line, a steeper MR line, a U-shaped AC curve and an MC curve rising through E, where it cuts MR. A vertical line from Q1 rises through E to AC and AR; arrows run left from AC to C1 and from AR to P1 on the price axis.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2014 OL Section B Q1(a)(ii)",
+    "year": 2014,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2014 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2014-OL-paper-p03-q6-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2014-OL-paper-p03-q6-diagram.png",
+    "md5": "781951de8eadcff39b0957ceffc5e74c",
+    "alt": "A diagram: Wage Rate on the vertical axis and Quantity of labour on the horizontal. The supply curve S runs horizontally at W1 and then rises.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2014 OL Section A Q6",
+    "year": 2014,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2014 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2014-OL-paper-p04-q9-table": {
+    "src": "/exam-figures/economics/markbank/economics-2014-OL-paper-p04-q9-table.png",
+    "md5": "fa778a54f5731e23ca56ee84fedd92eb",
+    "alt": "The printed formula, ∆Q over ∆P times P1 + P2 over Q1 + Q2, and a table of its six symbols: ∆Q, P1, P2 and Q2 blank; ∆P Change in the price of the good; Q1 Original quantity demanded of the good.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2014 OL Section A Q9",
+    "year": 2014,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2014 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2014-OL-paper-p05-q1-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2014-OL-paper-p05-q1-diagram.png",
+    "md5": "c4b24613a488dd493d5028758914e657",
+    "alt": "A diagram with P on the vertical axis and Quantity on the horizontal: a falling AR line, a steeper MR line, a U-shaped AC curve and an MC curve rising through E, where it cuts MR. A vertical line rises from Q1 through E to dots on AC and AR. The labels P, MC, AC, AR and MR are circled.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2014 OL Section B Q1(a)",
+    "year": 2014,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2014 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2014-OL-paper-p06-q2b-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2014-OL-paper-p06-q2b-diagram.png",
+    "md5": "f3a43a34a3070af4d9c2e47f2396cafd",
+    "alt": "A diagram: P against Q, a falling line D1 and a parallel falling line D2 to its right, with an arrow pointing from D1 to D2.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2014 OL Section B Q2(b)",
+    "year": 2014,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2014 Ordinary Level — © State Examinations Commission"
   }
 }

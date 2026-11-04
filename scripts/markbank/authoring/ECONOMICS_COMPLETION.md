@@ -2160,3 +2160,71 @@ Checks:
 - reconcile: 1,606/2,197, with 2014 HL at 54/54.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2014 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 36 scheme pages were viewed:
+- paper pp10-12 are blank;
+- scheme pp1-4 are the cover, the note on published schemes, the title page
+  and the support notes with the index, and pp35-36 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 70 routes for the 69 printed asks (9 in Section A, 60 in Section B).
+B1(b)(ii)-(iii) is one card, because the scheme prices a barrier with its note
+(2 x 7). B4(c) asks for ANY TWO of three budget measures, and the scheme lists
+each measure's own arguments for and against. So each measure is a route at
+12 (the 1st correct response 8, the 2nd 4), and the question's 75 counts two
+of them. 6 crops: 2 hidden scheme solutions and 4 paper data crops.
+
+Decisions:
+- As in the 2014 Higher scheme, bullets are SymbolMT and the text layer
+  reports them as "x". No slice crosses one.
+- Items that must be read to answer are typed from the text layer: the A Q1
+  and A Q3 statements (ruled blanks set as an ellipsis), the A Q2 and A Q6
+  statements, and the A Q8 lists, column by column. The A Q9 formula and its
+  table are the crop beside the ask. That crop blanks the stem's line and the
+  ask's line printed beside the formula (a whiteout that touches nothing in
+  the formula or the table).
+- The paper asks "Explain ... the underlined term(s)." five times. Each of
+  those cards carries its own stem in the question, so the card names its term
+  and no two cards ask the same words.
+- Ladders are claimed at their printed steps: A Q1 8 + 4 + 4, A Q2
+  10 + 2 + 2 + 2, A Q3 12 + 4, A Q4 10 + 6, A Q6 7 + 7 + 3, A Q7 11 + 6, A Q8
+  and A Q9 8 + 3 + 3 + 3, B1(a)(ii) 6 + 4, B4(b)(i) 5 + 4, B5(a)(ii) 8 + 4,
+  B5(b)(ii)-(iii), B5(c)(ii), B6(c)(i)-(ii) and B8(a)(ii) 6 + 4, B8(b)(ii)
+  7 + 4 + 4, B8(c)(i) 8 + 4.
+- B8(b)(ii) prices the three areas by order, not by area. It is one ladder
+  over the scheme's statement-with-explanation pairs, and the note names each
+  area's statements. The B3(c)(ii) areas are priced 7 each, so that card has
+  three heading rows.
+- A Q5: "5 correct components: 3 marks each / Correct answer: 1 marks": the
+  working is one 15-mark row and the answer a 1-mark row, with the scheme's
+  answer table as the hidden crop.
+- B5(a)(i): the scheme prices an example of each cost at 2 but prints none. The
+  two example rows carry its own words, "One correct example:".
+- A Q9: the scheme's ΔQ is mangled in the text layer, so the options are the
+  four definitions. The note names the blank symbols in the table's order.
+
+Refcheck: five short asks were read by hand (B1(b)(i), B2(b)(i),
+B6(a)(i)-(iii)).
+
+Topic review: 15 reference anomalies, each a commercial heading the review
+files elsewhere. A Q5 and A Q9 sit under formulas, and B6, B7 and B8(b)-(c)
+under acronyms (study-aid headings). A Q1 sits under the market economy, but
+the definition of economics is scarcity and choice. A Q4 and A Q7 sit under
+government intervention, but public sector pay and a tax relief are fiscal
+policy. B3 sits under government intervention, but economic systems are the
+market economy, as earlier reviews file them. B7 sits under government
+intervention, but tariffs and quotas are international trade. B8(b)-(c) sits
+under government intervention and globalisation. B5 sits under the labour
+market, B8(a) under growth and development, and A Q2 under globalisation.
+
+Checks:
+- econ_review: 31/66.
+- build: 1,729 cards, 0 dropped.
+- Build rule: 278 claims on this paper, 0 untraceable (54 trace by halves).
+- reconcile: 1,675/2,197, with 2014 OL at 69/69.
+- refcheck: 0 wrong.
+- cardlint: clean.

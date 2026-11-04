@@ -6907,5 +6907,137 @@
     },
     "lettersVisible": [],
     "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-OL-scheme-p06-q5-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2014 OL Section A Q5",
+    "description": "The marking scheme’s answer table. Workings: Y = C + I + G + X – M; Y = €3,200m + €500m - €400m. Answer: €3,300m.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2014/LC034GLP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        55,
+        112,
+        562,
+        190
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-OL-scheme-p09-q1a-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2014 OL Section B Q1(a)(ii)",
+    "description": "The marking scheme’s completed diagram: P against Quantity, a falling AR line, a steeper MR line, a U-shaped AC curve and an MC curve rising through E, where it cuts MR. A vertical line from Q1 rises through E to AC and AR; arrows run left from AC to C1 and from AR to P1 on the price axis.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2014/LC034GLP000EV.pdf",
+      "page": 9,
+      "rectPoints": [
+        24,
+        96,
+        500,
+        380
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-OL-paper-p03-q6-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2014 OL Section A Q6",
+    "description": "A diagram: Wage Rate on the vertical axis and Quantity of labour on the horizontal. The supply curve S runs horizontally at W1 and then rises.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2014/LC034GLP000EV.pdf",
+      "page": 3,
+      "rectPoints": [
+        120,
+        508,
+        370,
+        622
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-OL-paper-p04-q9-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2014 OL Section A Q9",
+    "description": "The printed formula, ∆Q over ∆P times P1 + P2 over Q1 + Q2, and a table of its six symbols: ∆Q, P1, P2 and Q2 blank; ∆P Change in the price of the good; Q1 Original quantity demanded of the good.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2014/LC034GLP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        55,
+        524,
+        562,
+        752
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-OL-paper-p05-q1-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2014 OL Section B Q1(a)",
+    "description": "A diagram with P on the vertical axis and Quantity on the horizontal: a falling AR line, a steeper MR line, a U-shaped AC curve and an MC curve rising through E, where it cuts MR. A vertical line rises from Q1 through E to dots on AC and AR. The labels P, MC, AC, AR and MR are circled.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2014/LC034GLP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        24,
+        210,
+        500,
+        490
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-OL-paper-p06-q2b-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2014 OL Section B Q2(b)",
+    "description": "A diagram: P against Q, a falling line D1 and a parallel falling line D2 to its right, with an arrow pointing from D1 to D2.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2014/LC034GLP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        92,
+        214,
+        345,
+        390
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
   }
 ]

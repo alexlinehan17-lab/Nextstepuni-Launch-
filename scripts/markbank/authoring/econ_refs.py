@@ -159,6 +159,11 @@ HAND_CHECKED = {
     'econ-2015-ol-sb-q3-a-i',         # 2015 OL p7: "(i) Explain the underlined term above." (five words)
     'econ-2015-ol-sb-q5-b-i',         # 2015 OL p8: "(i) Explain the economic term embargo." (six words)
     'econ-2014-hl-sb-q7-a-ii',        # 2014 HL p8: "(ii) Outline three characteristics of LDCs." (five words)
+    'econ-2014-ol-sb-q1-b-i',         # 2014 OL p5: "(i) Explain the underlined term." (four words; the stem carries the term)
+    'econ-2014-ol-sb-q2-b-i',         # 2014 OL p6: "(i) Explain the Law of Demand." (five words)
+    'econ-2014-ol-sb-q6-a-i',         # 2014 OL p8: "(a) Explain the following terms: (i) Barter;" (the ask with its own term)
+    'econ-2014-ol-sb-q6-a-ii',        # 2014 OL p8: "(a) Explain the following terms: ... (ii) Money;"
+    'econ-2014-ol-sb-q6-a-iii',       # 2014 OL p8: "(a) Explain the following terms: ... (iii) Price Inflation."
 }
 
 

@@ -30,6 +30,1743 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sa-q1", topicId: "economics-0-1", conceptId: "what-economics-studies",
+    section: "A", questionRef: "2014 OL Section A Q1",
+    questionText: "Complete the following statement: Economics is a … science. It examines how scarce … are used to satisfy our infinite … .",
+    tariffModel: {"kind":"fixed","notation":"8 + 4 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each word placed", marks: 16, contextNote: "The three words, as the scheme completes the statement: Economics is a SOCIAL science. It examines how scarce RESOURCES / FACTORS OF PRODUCTION / INPUTS are used to satisfy our infinite WANTS. The first correct response 8 marks, the 2nd and 3rd 4 each.", openList: true, group: {"claimMax":3,"perOption":8,"options":["SOCIAL","RESOURCES / FACTORS OF PRODUCTION / INPUTS","WANTS"],"perOptionSteps":[8,4,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sa-q2", topicId: "economics-4-2", conceptId: "visible-and-invisible-trade",
+    section: "A", questionRef: "2014 OL Section A Q2",
+    questionText: "Indicate by means of a tick (✓) the category to which each good or service belongs: Irish farmers selling beef in the UK. Irish rugby supporters travelling to France. Americans using Aer Lingus to travel to Ireland. Irish consumers buying Abercrombie hoodies from USA on-line.",
+    tariffModel: {"kind":"fixed","notation":"10 + 2 + 2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each statement ticked", marks: 16, contextNote: "All four: the first correct response 10 marks, the 2nd, 3rd and 4th 2 each.", openList: true, group: {"claimMax":4,"perOption":10,"options":["Visible exports — Irish farmers selling beef in the UK","Invisible imports — Irish rugby supporters travelling to France","Invisible exports — Americans using Aer Lingus to travel to Ireland","Visible imports — Irish consumers buying Abercrombie hoodies from USA on-line"],"perOptionSteps":[10,2,2,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sa-q3", topicId: "economics-1-1", conceptId: "diminishing-marginal-utility",
+    section: "A", questionRef: "2014 OL Section A Q3",
+    questionText: "Choose the correct word from the bracketed words to complete the following statement: As (increasing / decreasing) … quantities of a good are consumed, the marginal utility gained from consuming each extra unit of the good will eventually (rise / fall) … .",
+    tariffModel: {"kind":"fixed","notation":"12 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each word chosen", marks: 16, contextNote: "Both words, as the scheme completes the statement: As INCREASING (increasing / decreasing) quantities of a good are consumed, the marginal utility gained from consuming each extra unit of the good will eventually FALL (rise / fall). The first correct response 12 marks, the 2nd 4.", openList: true, group: {"claimMax":2,"perOption":12,"options":["INCREASING","FALL"],"perOptionSteps":[12,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sa-q4", topicId: "economics-3-1", conceptId: "lower-public-sector-pay",
+    section: "A", questionRef: "2014 OL Section A Q4",
+    questionText: "Outline one economic effect which a decrease in public sector pay may have for each of the following:",
+    tariffModel: {"kind":"fixed","notation":"10 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "One effect for each — retailers and the government’s finances", marks: 16, contextNote: "One effect for retailers and one for the government’s finances: the 1st correct response 10 marks, the 2nd 6.", openList: true, group: {"claimMax":2,"perOption":10,"options":["Retailers in Ireland — Reduced demand / fewer sales / lower profits With falling wage levels disposable income falls, leading to reduced demand for the retailers' goods/services resulting in reduced sales. With lower sales, profits for retailers will decline.","Retailers in Ireland — Reduction in employment If sales / profits decline then these retailers may reduce their workforce and/or put some employees on reduced hours.","Retailers in Ireland — Closure of some retailers: Some retailers may be forced to close down.","Government Finances — Reduced current expenditure / government borrowing The pay bill for public sector workers will fall reducing the current expenditure of the government / may help the government reduce its borrowings.","Government Finances — Reduced tax revenue. With lower incomes direct tax revenues will fall e.g. income taxes. Also, if business activity declines then the amount of CPT may decline. Reduced disposable income will lower spending, lowering indirect taxes. This will result in a reduction in tax revenues.","Government Finances — Increased social welfare payments Falling demand for goods and services may lead to business redundancies. Public sector workers at low grades may have to receive supplementary income payments / medical cards."],"perOptionSteps":[10,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sa-q5", topicId: "economics-3-0", conceptId: "national-income-from-its-parts",
+    section: "A", questionRef: "2014 OL Section A Q5",
+    questionText: "Suppose C + I + G = €3,200m, calculate the National Income (Y) if exports (X) are €500m and imports (M) are €400m. (Show all your workings).",
+    tariffModel: {"kind":"fixed","notation":"15 + 1","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-working", kind: "point", verbatim: "Y = C + I + G + X – M; Y = €3,200m + €500m - €400m", marks: 15, contextNote: "5 correct components: 3 marks each. The figure shows the working as printed.", openList: true },
+    { id: "r-answer", kind: "point", verbatim: "€ 3,300m", marks: 1, contextNote: "The answer, 1 mark.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2014-OL-scheme-p06-q5-working",
+          "src": "/exam-figures/economics/markbank/economics-2014-OL-scheme-p06-q5-working.png",
+          "srcHash": "24fdca9bf8f649e7e6125162018f5214",
+          "alt": "The marking scheme’s answer table. Workings: Y = C + I + G + X – M; Y = €3,200m + €500m - €400m. Answer: €3,300m.",
+          "attribution": "SEC Leaving Certificate Economics 2014 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sa-q6", topicId: "economics-2-1", conceptId: "a-unions-minimum-wage",
+    section: "A", questionRef: "2014 OL Section A Q6",
+    stem: "The diagram below represents the supply curve of labour in a market where a trade union has negotiated a minimum wage.",
+    questionText: "Tick (✓) True or False after each of the following statements: W1 is the minimum wage rate in the above diagram. Trade Union members will work below wage rate W1. As the wage rate increases above W1, the supply of labour decreases.",
+    tariffModel: {"kind":"fixed","notation":"7 + 7 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each statement marked", marks: 17, contextNote: "All three: the 1st and 2nd correct responses 7 marks each, the 3rd 3. The scheme prints the third statement as “Above W1, as the wage rate increases, …”.", openList: true, group: {"claimMax":3,"perOption":7,"options":["TRUE — W1 is the minimum wage rate in the above diagram","FALSE — Trade Union members will work below wage rate W1.","FALSE — Above W1, as the wage rate increases, the supply of labour decreases."],"perOptionSteps":[7,7,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2014-OL-paper-p03-q6-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2014-OL-paper-p03-q6-diagram.png",
+          "srcHash": "781951de8eadcff39b0957ceffc5e74c",
+          "alt": "A diagram: Wage Rate on the vertical axis and Quantity of labour on the horizontal. The supply curve S runs horizontally at W1 and then rises.",
+          "attribution": "SEC Leaving Certificate Economics 2014 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sa-q7", topicId: "economics-3-1", conceptId: "the-home-renovation-incentive",
+    section: "A", questionRef: "2014 OL Section A Q7",
+    stem: "The Home Renovation Incentive Scheme introduced in Budget 2014 entitles homeowners to claim tax relief on renovation work carried out in their homes.",
+    questionText: "State one economic effect which this scheme may have for each of the following:",
+    tariffModel: {"kind":"fixed","notation":"11 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "One effect for each — Irish businesses and homeowners", marks: 17, contextNote: "One effect for businesses and one for homeowners: the 1st correct response 11 marks, the 2nd 6.", openList: true, group: {"claimMax":2,"perOption":11,"options":["Irish businesses — Demand for products Increased demand will result in increased sales and profits in the domestic economy.","Irish businesses — Employment / Reduction in unemployment rates for people in building trade If sales increase more workers will be required / existing employment maybe more secure.","Irish businesses — Opportunities for expansion. Businesses in the home improvement sector may be able to expand and benefit from cost efficiencies.","Irish businesses — ‘Legitimate’ businesses may develop. Demand for services from those engaged in the black economy may decline allowing ‘legitimate’ businesses to grow.","Homeowners — Improved standard of living / increased disposable incomes An improved home will improve the quality of their lives.","Homeowners — Value of property may increase With the renovation the value of the property may increase.","Homeowners — More affordable / net cost of home improvement falls The tax relief makes it cheaper and so more affordable for more people to improve their homes.","Homeowners — Speedier repayment of borrowings The tax relief, when received, may be offset against borrowings and so loans may be repaid quickly.","Homeowners — Future energy bills reduced Improvements in building standards and energy conservation leading to reduced energy bills."],"perOptionSteps":[11,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sa-q8", topicId: "economics-0-0", conceptId: "economists-and-their-ideas",
+    section: "A", questionRef: "2014 OL Section A Q8",
+    questionText: "Match the economic ideas listed below with the associated economist: Economic Idea: A. Canons of Taxation B. Liquidity Preference Theory C. Theory of Population and Food Supply D. Worker exploitation in a capitalist system Economist: 1. John Maynard Keynes 2. Karl Marx 3. Adam Smith 4. Thomas Malthus",
+    tariffModel: {"kind":"fixed","notation":"8 + 3 + 3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each idea matched", marks: 17, contextNote: "All four: the 1st correct response 8 marks, the 2nd, 3rd and 4th 3 each.", openList: true, group: {"claimMax":4,"perOption":8,"options":["A. Canons of Taxation — 3. Adam Smith","B. Liquidity Preference Theory — 1. John Maynard Keynes","C. Theory of Population and Food Supply — 4. Thomas Malthus","D. Worker exploitation in a capitalist system — 2. Karl Marx"],"perOptionSteps":[8,3,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sa-q9", topicId: "economics-1-4", conceptId: "the-symbols-of-ped",
+    section: "A", questionRef: "2014 OL Section A Q9",
+    stem: "A formula for measuring Price Elasticity of Demand (PED) is as follows:",
+    questionText: "Complete the following table to indicate what each of the above symbols stands for:",
+    tariffModel: {"kind":"fixed","notation":"8 + 3 + 3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each blank symbol", marks: 17, contextNote: "The four symbols the table leaves blank, in its order: ΔQ, P1, P2 and Q2 (ΔP and Q1 are printed). The 1st correct response 8 marks, the 2nd, 3rd and 4th 3 each.", openList: true, group: {"claimMax":4,"perOption":8,"options":["Change in the quantity demanded of the good","Original price of the good.","New / current price of the good","New / current quantity demanded of the good"],"perOptionSteps":[8,3,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2014-OL-paper-p04-q9-table",
+          "src": "/exam-figures/economics/markbank/economics-2014-OL-paper-p04-q9-table.png",
+          "srcHash": "fa778a54f5731e23ca56ee84fedd92eb",
+          "alt": "The printed formula, ∆Q over ∆P times P1 + P2 over Q1 + Q2, and a table of its six symbols: ∆Q, P1, P2 and Q2 blank; ∆P Change in the price of the good; Q1 Original quantity demanded of the good.",
+          "attribution": "SEC Leaving Certificate Economics 2014 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q1-a-i", topicId: "economics-2-0", conceptId: "labels-of-monopoly",
+    section: "B", questionRef: "2014 OL Section B Q1(a)(i)",
+    stem: "The diagram below represents a Monopoly firm in equilibrium. Copy the diagram into your answer book.",
+    questionText: "State what each of the five labels circled above represents.",
+    tariffModel: {"kind":"fixed","notation":"5 @ 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "r-p", kind: "point", verbatim: "P — Price", marks: 4, contextNote: "P, 4 marks.", openList: true },
+    { id: "r-ac", kind: "point", verbatim: "AC — Average Cost", marks: 4, contextNote: "AC, 4 marks.", openList: true },
+    { id: "r-mc", kind: "point", verbatim: "MC — Marginal Cost", marks: 4, contextNote: "MC, 4 marks.", openList: true },
+    { id: "r-ar", kind: "point", verbatim: "AR — Average Revenue", marks: 4, contextNote: "AR, 4 marks.", openList: true },
+    { id: "r-mr", kind: "point", verbatim: "MR — Marginal Revenue", marks: 4, contextNote: "MR, 4 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2014-OL-paper-p05-q1-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2014-OL-paper-p05-q1-diagram.png",
+          "srcHash": "c4b24613a488dd493d5028758914e657",
+          "alt": "A diagram with P on the vertical axis and Quantity on the horizontal: a falling AR line, a steeper MR line, a U-shaped AC curve and an MC curve rising through E, where it cuts MR. A vertical line rises from Q1 through E to dots on AC and AR. The labels P, MC, AC, AR and MR are circled.",
+          "attribution": "SEC Leaving Certificate Economics 2014 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q1-a-ii", topicId: "economics-2-0", conceptId: "equilibrium-of-the-monopolist",
+    section: "B", questionRef: "2014 OL Section B Q1(a)(ii)",
+    stem: "The diagram below represents a Monopoly firm in equilibrium. Copy the diagram into your answer book.",
+    questionText: "The firm is in equilibrium at point E and produces output Q1. Show on your diagram: • The price the firm will charge for Q1. (use label P1) • The average cost of producing this output. (use label C1)",
+    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each label shown", marks: 10, contextNote: "C1 and P1: the 1st correct response 6 marks, the 2nd 4. The completed diagram is shown with the answer.", openList: true, group: {"claimMax":2,"perOption":6,"options":["C1 the average cost of producing this output","P1 the price charged for this output"],"perOptionSteps":[6,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2014-OL-paper-p05-q1-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2014-OL-paper-p05-q1-diagram.png",
+          "srcHash": "c4b24613a488dd493d5028758914e657",
+          "alt": "A diagram with P on the vertical axis and Quantity on the horizontal: a falling AR line, a steeper MR line, a U-shaped AC curve and an MC curve rising through E, where it cuts MR. A vertical line rises from Q1 through E to dots on AC and AR. The labels P, MC, AC, AR and MR are circled.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2014 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2014-OL-scheme-p09-q1a-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2014-OL-scheme-p09-q1a-diagram.png",
+          "srcHash": "716a2761cc81898fb03588711c0066a6",
+          "alt": "The marking scheme’s completed diagram: P against Quantity, a falling AR line, a steeper MR line, a U-shaped AC curve and an MC curve rising through E, where it cuts MR. A vertical line from Q1 rises through E to AC and AR; arrows run left from AC to C1 and from AR to P1 on the price axis.",
+          "attribution": "SEC Leaving Certificate Economics 2014 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q1-b-i", topicId: "economics-2-0", conceptId: "a-statutory-monopoly",
+    section: "B", questionRef: "2014 OL Section B Q1(b)(i)",
+    stem: "A legal/statutory monopoly is a barrier to entry.",
+    questionText: "Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The government may grant a company the sole right to supply a good or service so that there is a legal restriction on competition.", marks: 7, contextNote: "The explanation, 7 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q1-b-ii", topicId: "economics-2-0", conceptId: "other-barriers-to-entry",
+    section: "B", questionRef: "2014 OL Section B Q1(b)(ii)–(iii)",
+    stem: "A legal/statutory monopoly is a barrier to entry.",
+    questionText: "State two other barriers to entry facing firms wishing to enter a monopoly market. Write brief notes on each of these.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 7","answer":2,"ofParts":6,"perPart":7}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A barrier, with its note — any two", marks: 14, contextNote: "Two barriers, 7 marks each: the scheme prices (ii) and (iii) together.", openList: true, group: {"claimMax":2,"perOption":7,"options":["Ownership of a Patent / Copyright A patent / copyright will confer the sole right on a business to a particular manufacturing process for a particular commodity.","Trade Agreements & Collusion. Firms may enter into trade agreements with other suppliers i.e. collude with them so that no other firm can supply the commodity to a particular segment of the market.","Ownership of raw materials A company may acquire the sole right to the available raw materials thereby becoming a monopoly in that particular market e.g. an oil exploration company.","Industry requires a large investment in capital / Economies of scale For some industries the capital required to get established in that industry is so large that only the company which can raise the necessary capital can operate in the market.","Mergers / Takeovers By merging with a competitor or buying out the competitor a firm may become a monopoly supplier in that industry.","Monopolies based on fear, force or threats An individual or group of individuals may, by fear, force or threats, stop other individuals competing with the supplier e.g. the supply of illegal drugs."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q1-c-i", topicId: "economics-2-0", conceptId: "advantages-of-the-bus-monopoly",
+    section: "B", questionRef: "2014 OL Section B Q1(c)(i)",
+    stem: "Dublin Bus has a monopoly on bus services on certain routes in Dublin. Some people have suggested that there should be increased competition for bus services in Dublin.",
+    questionText: "State and explain two advantages of this statutory monopoly for consumers.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":2,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An advantage — any two", marks: 12, contextNote: "Two advantages, 6 marks each.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Convenient and reliable service Dublin Bus offers a wide range of convenient services for the public and these services prove to be reliable in most areas served.","Provision of public services Dublin Bus provides services to all parts of Dublin City and Dublin County even to areas where it may be unprofitable to do so. This service is provided in areas of Dublin where the LUAS; suburban train transport or DART do not operate."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q1-c-ii", topicId: "economics-2-0", conceptId: "benefits-of-bus-competition",
+    section: "B", questionRef: "2014 OL Section B Q1(c)(ii)",
+    stem: "Dublin Bus has a monopoly on bus services on certain routes in Dublin. Some people have suggested that there should be increased competition for bus services in Dublin.",
+    questionText: "State and explain two reasons why increased competition may benefit consumers.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":3,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 12, contextNote: "Two reasons, 6 marks each.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Improved quality of service The new firms may improve the quality / efficiency of the service i.e. more convenient times; better quality buses; faster transport times.","Lower prices The new firms may offer consumers more competitive prices on its services.","Increased availability of service With increased suppliers more routes may be added and frequency of service may also increase."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q2-a-i", topicId: "economics-0-1", conceptId: "what-makes-an-economic-good",
+    section: "B", questionRef: "2014 OL Section B Q2(a)(i)",
+    stem: "An economic good is scarce and transferable, and provides the consumer with utility.",
+    questionText: "Explain any two of the underlined terms.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 7","answer":2,"ofParts":3,"perPart":7}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A term — any two", marks: 14, contextNote: "Two terms, 7 marks each.", openList: true, group: {"claimMax":2,"perOption":7,"options":["Scarce There must be less of the good available than is being demanded, otherwise people would not be prepared to pay a price for it.","Transferable Ownership must be capable of being given from one person to another.","Utility The good must provide the consumer with satisfaction."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q2-a-ii", topicId: "economics-0-1", conceptId: "is-good-health-an-economic-good",
+    section: "B", questionRef: "2014 OL Section B Q2(a)(ii)",
+    stem: "An economic good is scarce and transferable, and provides the consumer with utility.",
+    questionText: "Is good health an economic good? Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No. It is not transferable from one person to another.", marks: 7, contextNote: "The answer with its reason, 7 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q2-b-i", topicId: "economics-1-1", conceptId: "the-law-of-demand",
+    section: "B", questionRef: "2014 OL Section B Q2(b)(i)",
+    stem: "The diagram below represents a shift in the demand curve for new cars in Ireland.",
+    questionText: "Explain the Law of Demand.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "This states that as price increases / quantity demanded for the good falls (all other things being equal).", marks: 6, contextNote: "The explanation, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q2-b-ii", topicId: "economics-1-1", conceptId: "why-demand-for-new-cars-rose",
+    section: "B", questionRef: "2014 OL Section B Q2(b)(ii)",
+    stem: "The diagram below represents a shift in the demand curve for new cars in Ireland.",
+    questionText: "State and explain two reasons why the demand curve for new cars might shift to the right.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":4,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 12, contextNote: "Two reasons, 6 marks each.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Availability of offers from motor dealers — Some companies are offering loans at low or zero interest rates. Also some are offering attractive trade- in allowances.","Preference for lower annual car tax rates — People who can afford to do so are changing their cars due the lower annual car tax rates for new cars/ reduced maintenance costs.","Preference for better fuel efficiency — People are changing cars so as to get a more fuel efficient car and therefore reduce their running costs.","Increased confidence in economy — Increased employment; increased incomes for some employees and an increase in economic growth has resulted in increased confidence resulting in an increase in car sales."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2014-OL-paper-p06-q2b-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2014-OL-paper-p06-q2b-diagram.png",
+          "srcHash": "f3a43a34a3070af4d9c2e47f2396cafd",
+          "alt": "A diagram: P against Q, a falling line D1 and a parallel falling line D2 to its right, with an arrow pointing from D1 to D2.",
+          "attribution": "SEC Leaving Certificate Economics 2014 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q2-b-iii", topicId: "economics-0-2", conceptId: "electric-cars-for-society",
+    section: "B", questionRef: "2014 OL Section B Q2(b)(iii)",
+    stem: "The diagram below represents a shift in the demand curve for new cars in Ireland.",
+    questionText: "Outline one economic advantage to society of increased use of electric cars.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 6","answer":1,"ofParts":3,"perPart":6}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An advantage — any one", marks: 6, contextNote: "One advantage, 6 marks.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Reduced emissions / cleaner environment With a switch to electric cars there will be less emissions and this is better for the environment.","Newer vehicles on roads (Safety) People will switch from older vehicles and this should make roads safer with less accidents.","Less waste of scarce resources / reduced reliance on oil/gas There may be reduced use of fossil fuels."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q2-c-i", topicId: "economics-1-3", conceptId: "curbing-alcohol-consumption",
+    section: "B", questionRef: "2014 OL Section B Q2(c)(i)",
+    stem: "“The government is considering the introduction of a minimum price for alcohol to combat alcohol abuse.” (The Irish Times, October 2013)",
+    questionText: "State and explain one other measure the government could take to reduce alcohol consumption.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 6","answer":1,"ofParts":8,"perPart":6}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A measure — any one", marks: 6, contextNote: "One measure, 6 marks.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Taxes: increase taxes (excise duty/VAT) on alcohol.","Opening hours: restrict opening hours may limit the time available for the consumption of alcohol.","Introduce limits to the amount that can be bought similar to purchases of certain medicines in pharmacies.","Age restrictions: raise the legal age for the consumption of alcohol.","Sales points: restrict the number of places selling alcohol.","Sponsorship: ban the Drinks’ Industry advertising / sponsoring events.","Consumer Awareness: use advertising campaigns to raise awareness of the dangers of excessive alcohol consumption.","Increased penalties: enforce harsher penalties on businesses who sell to underage drinkers."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q2-c-ii", topicId: "economics-1-3", conceptId: "drinking-less-for-individuals",
+    section: "B", questionRef: "2014 OL Section B Q2(c)(ii)",
+    stem: "“The government is considering the introduction of a minimum price for alcohol to combat alcohol abuse.” (The Irish Times, October 2013)",
+    questionText: "Discuss two possible benefits to individuals if they reduce their alcohol consumption.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":5,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A benefit — any two", marks: 12, contextNote: "Two benefits, 6 marks each.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Greater disposable income: if individuals buy less alcohol then they will have more disposable income.","Healthier lifestyle: individuals may be healthier with less ill effects from alcohol consumption.","Reduced spending on healthcare: with reduced illnesses people will spend less on doctor visits; healthcare etc.","Reduced healthcare insurance premiums: as a person consumes less alcohol the risk of ill health may be reduced and this may result in cheaper insurance premiums.","Increased productivity: if a worker is healthier / happier then they may be more productive in work resulting in a possible increase in pay."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q2-c-iii", topicId: "economics-2-2", conceptId: "drinking-less-for-society",
+    section: "B", questionRef: "2014 OL Section B Q2(c)(iii)",
+    stem: "“The government is considering the introduction of a minimum price for alcohol to combat alcohol abuse.” (The Irish Times, October 2013)",
+    questionText: "Discuss two possible benefits to society if the consumption of alcohol falls.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":4,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A benefit — any two", marks: 12, contextNote: "Two benefits, 6 marks each.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Reduction in absenteeism: workers may be absent less frequently / less payments on social welfare/more productive economy.","Reduced pressure on hospitals: fewer people being admitted to A&E departments.","Reduction in alcohol related deaths / reduction in crime levels: less social costs to society.","Population healthier: resulting in reduced demand for health services."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q3-a-i", topicId: "economics-1-0", conceptId: "planned-and-mixed-economies",
+    section: "B", questionRef: "2014 OL Section B Q3(a)(i)",
+    questionText: "The economy in China is changing from a centrally planned economic system to a mixed economic system. Explain each of the underlined terms.",
+    tariffModel: {"kind":"fixed","notation":"4 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-planned", kind: "point", verbatim: "Centrally planned economic system — Resources are allocated by the state through a central planning mechanism. All the factors of production are owned by the state on behalf of the people, apart from labour.", marks: 4, contextNote: "The centrally planned economic system, 4 marks.", openList: true },
+    { id: "r-mixed", kind: "point", verbatim: "Mixed economic system — An economy that incorporates elements of both central planning (government involvement/public sector) and private enterprise (private sector) in its economic system.", marks: 4, contextNote: "The mixed economic system, 4 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q3-a-ii", topicId: "economics-1-0", conceptId: "examples-of-the-two-systems",
+    section: "B", questionRef: "2014 OL Section B Q3(a)(ii)",
+    stem: "The economy in China is changing from a centrally planned economic system to a mixed economic system.",
+    questionText: "State one other example of a centrally planned economic system and one other example of a mixed economic system.",
+    tariffModel: {"kind":"fixed","notation":"4 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-planned", kind: "anyN", verbatim: "A centrally planned economic system — any one", marks: 4, contextNote: "A centrally planned economy, 4 marks.", openList: true, group: {"claimMax":1,"perOption":4,"options":["North Korea","Cuba"]} },
+    { id: "r-mixed", kind: "point", verbatim: "Mixed economic system — Ireland.", marks: 4, contextNote: "A mixed economy, 4 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q3-a-iii", topicId: "economics-1-0", conceptId: "gains-from-a-mixed-economy",
+    section: "B", questionRef: "2014 OL Section B Q3(a)(iii)",
+    stem: "The economy in China is changing from a centrally planned economic system to a mixed economic system.",
+    questionText: "Outline one possible economic advantage for Chinese citizens of this change towards a mixed economic system.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 4","answer":1,"ofParts":5,"perPart":4}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An advantage — any one", marks: 4, contextNote: "One advantage, 4 marks.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Increased individual choice / reduced government interference With the involvement of private enterprise consumers will have wider choice of goods / services.","More competitive prices / improved efficiency With greater competition consumers may be offered cheaper prices. Private firms tend to be more efficient as they are driven by the profit motive.","Individuals can set up their own businesses Unlike a centrally planned economy individuals may now be able to benefit from private enterprise and be rewarded.","Greater incentive to work With the possibility of greater rewards (pay / profits) workers may work harder thereby increasing productivity and output.","Higher standard of living If workers earn higher pay/individuals earn profits from businesses and consumers have a wider choice of goods / services at lower prices, then standards of living may rise."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q3-b-i", topicId: "economics-4-0", conceptId: "economic-growth-defined",
+    section: "B", questionRef: "2014 OL Section B Q3(b)(i)",
+    questionText: "Some Less Developed Countries (LDCs) experience difficulties in trying to achieve economic growth. Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Economic growth: an increase in the rate of growth of GNP /GDP / national income /output", marks: 5, contextNote: "The explanation, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q3-b-ii", topicId: "economics-4-0", conceptId: "other-difficulties-of-ldcs",
+    section: "B", questionRef: "2014 OL Section B Q3(b)(ii)",
+    stem: "Some Less Developed Countries (LDCs) experience difficulties in trying to achieve economic growth.",
+    questionText: "Outline two other economic difficulties which LDCs may experience.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":8,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A difficulty — any two", marks: 10, contextNote: "Two difficulties, 5 marks each.", openList: true, group: {"claimMax":2,"perOption":5,"options":["High population growth rates in LDCs","Famine in LDCs / low life expectancy","Over-dependence on one crop in LDCs","Poor infrastructure in LDCs","Low per capita incomes in LDCs","Poor levels of education/literacy in LDCs","Exploitation by multinationals; individuals within the country and foreign countries","Political corruption / less stable political institutions"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q3-b-iii", topicId: "economics-4-0", conceptId: "how-irish-citizens-can-help",
+    section: "B", questionRef: "2014 OL Section B Q3(b)(iii)",
+    stem: "Some Less Developed Countries (LDCs) experience difficulties in trying to achieve economic growth.",
+    questionText: "Outline two measures which Irish citizens could take to help improve the standard of living of citizens in LDCs.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":4,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A measure — any two", marks: 10, contextNote: "Two measures, 5 marks each.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Buy goods produced in LDCs / buy Fair Trade products This could result in more money flowing into LDCs. Citizens can help by buying ‘fair trade’ products which could ensure higher prices for producers and hence a better standard of living for citizens in LDCs.","Campaigns: for debt reduction / change in government policies / MNCs policies Through campaigns citizens can highlight the importance of debt reduction in LDCs and thereby change public opinion / government policy. They can exert pressure on governments in the developed world to change their trade policies and ensure a fairer treatment of LDCs. Citizens can, through various measures (e.g. boycotts of products), ensure that MNCs do not exploit the people or resources of LDCs.","Volunteer to work in a LDC Citizens could work in an LDC and provide a necessary service e.g. teach, build or provide healthcare etc.","Donations / Financial aid Citizens could donate food, clothes, livestock etc so as to help citizens in LDCs."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q3-c-i", topicId: "economics-3-0", conceptId: "measuring-the-economy",
+    section: "B", questionRef: "2014 OL Section B Q3(c)(i)",
+    stem: "In recent years Ireland has been in recession and has experienced little or no economic growth.",
+    questionText: "What is the name of the official measurement of the size of the economy?",
+    tariffModel: {"kind":"fixed","notation":"9","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A measure — any one", marks: 9, contextNote: "The measurement, 9 marks.", openList: true, group: {"claimMax":1,"perOption":9,"options":["Gross National Product / GNP","Gross Domestic Product / GDP"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q3-c-ii", topicId: "economics-3-5", conceptId: "who-gains-from-growth",
+    section: "B", questionRef: "2014 OL Section B Q3(c)(ii)",
+    stem: "In recent years Ireland has been in recession and has experienced little or no economic growth.",
+    questionText: "Outline one benefit of economic growth to each of the following in the Irish economy: • Irish citizens; • Retailers; • Government finances.",
+    tariffModel: {"kind":"fixed","notation":"3 x 7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 21,
+    rows: [
+    { id: "r-citizens", kind: "anyN", verbatim: "Irish citizens — any one", marks: 7, contextNote: "One benefit for Irish citizens, 7 marks.", openList: true, group: {"claimMax":1,"perOption":7,"options":["Employment opportunities — If sales increase more workers will be required / existing jobs may be made more secure.","Increased standard of living — Citizens will have a higher disposable income.","Improved state services — If state revenues improve then the government may improve state services / develop state infrastructure.","Less need to emigrate — If more jobs are created then fewer citizens may need to emigrate."]} },
+    { id: "r-retailers", kind: "anyN", verbatim: "Retailers — any one", marks: 7, contextNote: "One benefit for retailers, 7 marks.", openList: true, group: {"claimMax":1,"perOption":7,"options":["Increased sales / profits — Sales increase and so too will profits.","Expansion / less risk of closure — Increased sales will allow businesses continue in production / expand"]} },
+    { id: "r-government", kind: "anyN", verbatim: "Government finances — any one", marks: 7, contextNote: "One benefit for government finances, 7 marks.", openList: true, group: {"claimMax":1,"perOption":7,"options":["Tax revenues — Increased employment will result in increased tax revenues. CPT will increase if profits rise. VAT/ Excise duties should increase.","Social welfare spending — Expenditure on social welfare should fall if employment rises.","Reduced borrowing — The improvement in the state’s finances may mean that the level of state borrowing will fall / Government would meet budgetary targets."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q4-a-i", topicId: "economics-3-1", conceptId: "value-added-tax",
+    section: "B", questionRef: "2014 OL Section B Q4(a)(i)",
+    stem: "In Budget 2014 The Minister for Finance decided to retain the reduced 9% VAT rate in the tourism sector and to remove the €3 Airport travel tax.",
+    questionText: "Explain the term ‘Value Added Tax’.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "This is a tax on goods and services.", marks: 6, accepts: ["This is a tax on spending."], contextNote: "The explanation, 6 marks. The scheme also accepts its second statement.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q4-a-ii", topicId: "economics-3-1", conceptId: "both-taxes-are-indirect",
+    section: "B", questionRef: "2014 OL Section B Q4(a)(ii)",
+    stem: "In Budget 2014 The Minister for Finance decided to retain the reduced 9% VAT rate in the tourism sector and to remove the €3 Airport travel tax.",
+    questionText: "Are the taxes underlined above direct taxes or indirect taxes? Explain your answers.",
+    tariffModel: {"kind":"fixed","notation":"2 x 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-vat", kind: "point", verbatim: "VAT — Indirect. It is a tax on goods and services", marks: 6, contextNote: "VAT, indirect, with its explanation, 6 marks.", openList: true },
+    { id: "r-airport", kind: "point", verbatim: "Airport Travel Tax — Indirect. It is a tax on using this service", marks: 6, contextNote: "The airport travel tax, indirect, with its explanation, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q4-a-iii", topicId: "economics-3-1", conceptId: "why-the-minister-kept-the-measures",
+    section: "B", questionRef: "2014 OL Section B Q4(a)(iii)",
+    stem: "In Budget 2014 The Minister for Finance decided to retain the reduced 9% VAT rate in the tourism sector and to remove the €3 Airport travel tax.",
+    questionText: "Discuss two possible economic reasons why the Minister for Finance decided on the above measures.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":4,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 12, contextNote: "Two reasons, 6 marks each.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Encourage tourism By making prices cheaper more tourists may be attracted to Ireland.","Protect / create jobs Jobs will be protected / created. If airlines increase the number of passengers then employment may increase. It has been estimated by the Minister of State for Tourism and Sport that an extra 14,500 jobs were created in 2013 through these measures (RTE, May 2014).","Encourage spending / economic growth If prices in restaurants / hotels etc. become more competitive then Irish residents may be encouraged to increase spend, leading to growth in the domestic economy. If the number of tourists increase then spending rises, boosting demand, resulting in a higher GDP.","Increase tax revenues If spending increases then the amount of VAT collected will increase. If employment increases then income tax revenue will increase. If there is a growth in businesses CPT increases."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q4-b-i", topicId: "economics-3-1", conceptId: "austerity-measures",
+    section: "B", questionRef: "2014 OL Section B Q4(b)(i)",
+    stem: "The Budget 2014 is considered to be an ‘austerity’ budget. NOTE: ‘Austerity’ refers to measures taken by the government to reduce government budget deficits.",
+    questionText: "State two examples of austerity measures introduced by the Irish government in recent years.",
+    tariffModel: {"kind":"fixed","notation":"5 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An example — any two", marks: 9, contextNote: "Two examples: the 1st 5 marks, the 2nd 4.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Reduction in public sector pay.","Introduction of local property tax (LPT).","Reduction in child benefit.","Reduced entitlements under social protection","Increase in prescription registration charges.","Increase in third level education registration charge etc."],"perOptionSteps":[5,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q4-b-ii", topicId: "economics-3-1", conceptId: "austerity-and-citizens",
+    section: "B", questionRef: "2014 OL Section B Q4(b)(ii)",
+    stem: "The Budget 2014 is considered to be an ‘austerity’ budget. NOTE: ‘Austerity’ refers to measures taken by the government to reduce government budget deficits.",
+    questionText: "Outline two economic effects which austerity measures may have on Irish citizens.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":6,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: 12, contextNote: "Two effects, 6 marks each.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Increased unemployment / emigration Reduced state services leads to less disposable income, which leads to business closures, leading to unemployment. Some people have been forced to emigrate, having being made redundant here.","Loss of business confidence / lack of investment With increased austerity and less disposable income available, loss of confidence in the Irish economy has led to entrepreneurs looking abroad seeking investment opportunities.","Reduction in aggregate demand / spending / lack of economic growth As a direct result of government cuts in welfare payments etc. there is less disposable income available for consumption, so aggregate demand decreases leading to reduction in economic growth.","Fall in living standards With the austerity measures which were introduced by the government, there has been an increase in stealth taxes (regressive) and new forms of taxation such as the local property tax etc. The above have resulted in a fall in standards of living. Some citizens resort to the black economy.","Increased indebtedness Within the economy, the increase in stealth taxes may lead to increased indebtedness. The high levels of personal debt is now having a negative impact on banks, credit unions etc.","Loss of some state services Some citizens have been adversely affected by the loss of medical cards; loss of SNAs. People with disabilities have lost personal assistants."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q4-c-jobseekers", topicId: "economics-3-1", conceptId: "arguing-the-budget-2014-measures",
+    section: "B", questionRef: "2014 OL Section B Q4(c) — jobseekers",
+    questionText: "Outline one economic argument in favour of and one economic argument against ANY TWO of the following government measures announced in Budget 2014: Answer for: A reduction in Jobseekers Allowance (i.e. dole payment) to €100 for unemployed people under 25 years.",
+    tariffModel: {"kind":"fixed","notation":"8 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "One argument in favour and one against", marks: 12, contextNote: "One argument in favour of this measure and one against: the 1st correct response 8 marks, the 2nd 4 (Two measures: 1st correct response: 8 marks / 2nd correct response: 4 marks). Any two of the three measures are answered.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Economic argument in favour — Decreased expenditure / borrowing The government will spend less and so will require less borrowing to fund expenditure.","Economic argument in favour — Opportunity cost Money saved can be used to fund youth employment initiatives: work, education and training initiatives.","Economic argument in favour — Incentive to education / training The reduced payment may act as an incentive to return to education.","Economic argument against — Inequitable The lower payment penalises those who are unable to find work /suitable training.","Economic argument against — Emigration Younger people may feel that there is no alternative other than emigrate from Ireland.","Economic argument against — Burden on families Families may have to support family members and this puts additional strain on household finances. May be forced to seek help from voluntary organisation."],"perOptionSteps":[8,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q4-c-dirt", topicId: "economics-3-1", conceptId: "arguing-the-budget-2014-measures",
+    section: "B", questionRef: "2014 OL Section B Q4(c) — dirt",
+    questionText: "Outline one economic argument in favour of and one economic argument against ANY TWO of the following government measures announced in Budget 2014: Answer for: Increase in rate of Deposit Interest Retention Tax (DIRT) from 33% to 41%.",
+    tariffModel: {"kind":"fixed","notation":"8 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "One argument in favour and one against", marks: 12, contextNote: "One argument in favour of this measure and one against: the 1st correct response 8 marks, the 2nd 4 (Two measures: 1st correct response: 8 marks / 2nd correct response: 4 marks). Any two of the three measures are answered.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Economic argument in favour — Government revenue This increase may raise tax revenues for the state.","Economic argument in favour — Less need to raise direct taxes / not act as a disincentive to work With revenue earned from this it may reduce the need for the government to increase direct taxation. As income taxes are not raised then this tax will not act as a disincentive to work.","Economic argument in favour — Economic The cost of collection for the state should be low as each financial institution will collect the tax.","Economic argument in favour — Progressive Only those who can save will pay this higher tax and so it may be considered progressive.","Economic argument in favour — Encourage spending People may save less and spend more boosting domestic spending, aiding economic growth and job growth.","Economic argument against — Discourage savings The increased tax may discourage people from saving resulting in greater indebtedness.","Economic argument against — Reduced availability of loans Financial institutions may reduce the amount of loans created, due to fall in savings."],"perOptionSteps":[8,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q4-c-tobacco", topicId: "economics-3-1", conceptId: "arguing-the-budget-2014-measures",
+    section: "B", questionRef: "2014 OL Section B Q4(c) — tobacco",
+    questionText: "Outline one economic argument in favour of and one economic argument against ANY TWO of the following government measures announced in Budget 2014: Answer for: Increase in excise duty on tobacco (e.g. 10c increase on a packet of 20 cigarettes).",
+    tariffModel: {"kind":"fixed","notation":"8 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "One argument in favour and one against", marks: 12, contextNote: "One argument in favour of this measure and one against: the 1st correct response 8 marks, the 2nd 4 (Two measures: 1st correct response: 8 marks / 2nd correct response: 4 marks). Any two of the three measures are answered.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Economic argument in favour — Government revenue This increase will help raise tax revenues for the state.","Economic argument in favour — Reduce consumption / personal health Consumption of tobacco products may fall and so the health of consumers should improve. It may discourage younger people from smoking.","Economic argument in favour — Reduced healthcare costs As less people may become ill the costs of healthcare to society should fall.","Economic argument in favour — Opportunity cost The money saved on healthcare can be put to some other use by the government.","Economic argument against — Standard of living Disposable incomes will fall for smokers and this will lead to a lower standard of living.","Economic argument against — Inflation Prices of tobacco related products rise and this is included in the Consumer Price Index.","Economic argument against — Smuggling/black economy may increase As cigarettes become more expensive more consumers may switch to smuggled cigarettes.","Economic argument against — Tax revenue If consumption falls and/or smuggling increases then the tax revenue collected by the government may fall."],"perOptionSteps":[8,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q5-a-i", topicId: "economics-1-5", conceptId: "fixed-and-variable-costs",
+    section: "B", questionRef: "2014 OL Section B Q5(a)(i)",
+    stem: "Irish businesses face many challenges in attempting to control their costs.",
+    questionText: "Define fixed cost and variable cost and state one example of each.",
+    tariffModel: {"kind":"fixed","notation":"5 + 4 + 2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 13,
+    rows: [
+    { id: "r-fixed", kind: "point", verbatim: "Fixed Costs — Costs which do not change/remain fixed when output changes", marks: 5, contextNote: "Fixed costs, 5 marks.", openList: true },
+    { id: "r-variable", kind: "point", verbatim: "Variable Costs — Costs which change as output changes", marks: 4, contextNote: "Variable costs, 4 marks.", openList: true },
+    { id: "r-fixed-example", kind: "point", verbatim: "Fixed Costs — One correct example:", marks: 2, contextNote: "An example of a fixed cost, 2 marks: the scheme prints no example.", openList: true },
+    { id: "r-variable-example", kind: "point", verbatim: "Variable Costs — One correct example:", marks: 2, contextNote: "An example of a variable cost, 2 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q5-a-ii", topicId: "economics-1-5", conceptId: "why-control-costs",
+    section: "B", questionRef: "2014 OL Section B Q5(a)(ii)",
+    stem: "Irish businesses face many challenges in attempting to control their costs.",
+    questionText: "State and explain two reasons why it is important for a business to control its costs.",
+    tariffModel: {"kind":"fixed","notation":"8 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 12, contextNote: "Two reasons: the 1st correct response 8 marks, the 2nd 4.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Lower prices / increased demand / profits increase A business may be able to lower its prices and this may entice consumers to purchase more goods/ services. Increased demand will result in increased sales and profits and a more secure future for the business.","Increased employment With rising demand businesses may increase their demand for labour / maintain existing labour.","Increased competitiveness With lower costs, prices may fall for these goods. Businesses exporting goods may find that the demand for their exports will increase as they are more competitive.","Better use of scarce resources / reduced waste All businesses will want to control their costs so that they are not wasting scarce resources.","Survival of business The firm must have enough money to pay its bills as they fall due. If costs are greater than revenue, the firm will be forced out of business in the long run. The firm must earn profit if it is to survive in business. \u0003"],"perOptionSteps":[8,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q5-b-i", topicId: "economics-0-1", conceptId: "the-entrepreneur",
+    section: "B", questionRef: "2014 OL Section B Q5(b)(i)",
+    questionText: "Patrick Joy was named Entrepreneur of the Year in 2013. He is the founder of Suretank, a Louth-based manufacturer of cargo-carrying units for the offshore oil and gas industry. Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An entrepreneur undertakes the risk in setting up a business.", marks: 5, accepts: ["An entrepreneur combines the other factors of production into a production unit."], contextNote: "The explanation, 5 marks. The scheme also accepts its second statement.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q5-b-ii", topicId: "economics-0-1", conceptId: "why-entrepreneurs-matter",
+    section: "B", questionRef: "2014 OL Section B Q5(b)(ii)",
+    stem: "Patrick Joy was named Entrepreneur of the Year in 2013. He is the founder of Suretank, a Louth-based manufacturer of cargo-carrying units for the offshore oil and gas industry.",
+    questionText: "Outline two reasons why entrepreneurs are essential for the Irish economy.",
+    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 10, contextNote: "Two reasons: the 1st correct response 6 marks, the 2nd 4.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Help create jobs/employment If successful the entrepreneur will help create employment.","Improve the Balance of Payments If the goods produced are exported, this will help improve the Balance of Payments position.","Encourage further investment / help create wealth Entrepreneurs put their money and skills into a business in the hope of making a profit which may encourage further investment in the economy, if successful.","Innovation: new products Successful entrepreneurs may invest part of their profits into developing new products which benefit society."],"perOptionSteps":[6,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q5-b-iii", topicId: "economics-0-1", conceptId: "encouraging-entrepreneurs",
+    section: "B", questionRef: "2014 OL Section B Q5(b)(iii)",
+    stem: "Patrick Joy was named Entrepreneur of the Year in 2013. He is the founder of Suretank, a Louth-based manufacturer of cargo-carrying units for the offshore oil and gas industry.",
+    questionText: "Outline two actions which the government could take to encourage entrepreneurship in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An action — any two", marks: 10, contextNote: "Two actions: the 1st correct response 6 marks, the 2nd 4.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Encourage Enterprise education Greater emphasis on enterprise education in schools and colleges could be encouraged and more individuals may be willing to undertake the risks involved.","Government policies A reduction in VAT rates may increase demand for goods and provide greater investment opportunities. If the government reduced the regulations involved in setting up a business more people might become entrepreneurs. If they offer grants and other incentives for establishing a business then more people might do so / create a favourable business environment.","Labour market skills If the government improved worker skills through increased training / education then this increasingly skilled workforce may lead to growth in entrepreneurship.","Develop the country’s infrastructure Investment in communications technology through the provision of broadband access, makes it easier for people to start a business.","Stability in the banking sector By stabilising the banks the government may make it possible for the banks to provide credit and so encourage people to borrow and establish a business."],"perOptionSteps":[6,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q5-c-i", topicId: "economics-0-1", conceptId: "the-other-factors-of-production",
+    section: "B", questionRef: "2014 OL Section B Q5(c)(i)",
+    stem: "Businesses need factors of production to produce output or provide a service.",
+    questionText: "State and explain the three factors of production, other than enterprise.",
+    tariffModel: {"kind":"fixed","notation":"3 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "r-land", kind: "point", verbatim: "Land — Anything supplied by nature which helps in the production of output.", marks: 5, contextNote: "Land, 5 marks.", openList: true },
+    { id: "r-labour", kind: "point", verbatim: "Labour — The human effort involved in the production of output.", marks: 5, contextNote: "Labour, 5 marks.", openList: true },
+    { id: "r-capital", kind: "point", verbatim: "Capital — Man-made wealth / machinery used in the production of output.", marks: 5, contextNote: "Capital, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q5-c-ii", topicId: "economics-1-2", conceptId: "choosing-a-location",
+    section: "B", questionRef: "2014 OL Section B Q5(c)(ii)",
+    stem: "Businesses need factors of production to produce output or provide a service.",
+    questionText: "Outline two economic factors which an entrepreneur should consider when choosing a suitable location for his/her business in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A factor — any two", marks: 10, contextNote: "Two factors: the 1st correct response 6 marks, the 2nd 4.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Availability of services A business may require good efficient transport infrastructure to get their goods to the market, source raw materials etc. They will also require electricity; banking; broadband and other ancillary services.","Land for expansion / cost of land / rent of commercial property If the business plans to extend it will require land, at a reasonable price for expansion. Rents for commercial property had fallen due to the recession.","Regulations: environmental / planning A particular industry may be subject to certain environment regulations and these must be checked with the appropriate authority. Firms must ensure that appropriate planning permission is available from the local authority.","Workforce availability A business will require a skilled / English speaking workforce with diverse language skills, IT skills so training could be reduced.","Government incentives There may be tax incentives / grants towards location in certain areas of the country. The availability of advance factories.","Proximity to the market / raw materials A business which relies on a steady flow of consumers must locate close to the market i.e. a boutique. A business which requires large amount of raw materials must locate close to the availability of these e.g. a power generating station.","Social infrastructure Businesses will consider the availability of schools, hospitals, parks etc so that the workforce can have a good lifestyle."],"perOptionSteps":[6,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q6-a-i", topicId: "economics-3-4", conceptId: "barter",
+    section: "B", questionRef: "2014 OL Section B Q6(a)(i)",
+    questionText: "Explain the following terms: Barter",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Swapping/the direct exchange of one item for another.", marks: 7, contextNote: "Barter, 7 marks: 3 correct answers: 7 marks each.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q6-a-ii", topicId: "economics-3-4", conceptId: "money",
+    section: "B", questionRef: "2014 OL Section B Q6(a)(ii)",
+    questionText: "Explain the following terms: Money",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Anything which is acceptable in payment for a debt / buying a good", marks: 7, contextNote: "Money, 7 marks: 3 correct answers: 7 marks each.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q6-a-iii", topicId: "economics-3-3", conceptId: "price-inflation",
+    section: "B", questionRef: "2014 OL Section B Q6(a)(iii)",
+    questionText: "Explain the following terms: Price Inflation.",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An increase in prices of goods / services over a period of time.", marks: 7, contextNote: "Price Inflation, 7 marks: 3 correct answers: 7 marks each.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q6-b-i", topicId: "economics-3-3", conceptId: "the-ecb",
+    section: "B", questionRef: "2014 OL Section B Q6(b)(i)",
+    stem: "In November 2013 the ECB reduced interest rates.",
+    questionText: "What do the initials ECB represent?",
+    tariffModel: {"kind":"fixed","notation":"9","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "European Central Bank", marks: 9, contextNote: "The name, 9 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q6-b-ii", topicId: "economics-3-3", conceptId: "the-interest-rate",
+    section: "B", questionRef: "2014 OL Section B Q6(b)(ii)",
+    questionText: "In November 2013 the ECB reduced interest rates. Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Interest rate: the price of money / the cost of borrowing / the return on savings", marks: 6, contextNote: "The explanation, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q6-b-iii", topicId: "economics-3-3", conceptId: "effects-of-lower-interest-rates",
+    section: "B", questionRef: "2014 OL Section B Q6(b)(iii)",
+    stem: "In November 2013 the ECB reduced interest rates.",
+    questionText: "Discuss three possible economic effects of a reduction in interest rates on the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":6,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any three", marks: 15, contextNote: "Three effects, 5 marks each.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Borrowing encouraged / reduced mortgage repayments Borrowing is cheaper resulting in cheaper loan repayments which will increase spending power. The cost of monthly repayments (on tracker mortgages) decreases resulting in increased disposable income.","Savings discouraged / spending encouraged With a lower rate of return people may find it less attractive to save and so they may increase their spending.","Cost of Servicing the National Debt With lower domestic interest rates the cost of repaying the internal portion of the national debt falls.","Costs of Production / increased competitiveness Cost of production will decrease resulting in possible lower domestic prices. This will increase the competitiveness of Irish firms' exports and may lead to an increase in sales.","Economic Growth encouraged The incentive to invest increases, leading to economic growth/employment and increased economic activity.","Taxation revenues Less DIRT due to reduced savings. Increased VAT/excise duties due to increased spending. If employment increases there will be an increase in income tax revenues etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q6-c-i", topicId: "economics-3-4", conceptId: "functions-of-commercial-banks",
+    section: "B", questionRef: "2014 OL Section B Q6(c)(i)",
+    stem: "A number of retail banks have shut down operations in Ireland in recent times and some credit unions are in financial difficulty.",
+    questionText: "Outline two functions of commercial/retail banks.",
+    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A function — any two", marks: 10, contextNote: "Two functions: the 1st correct response 6 marks, the 2nd 4.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Savings Facilities Commercial banks offer security for depositors’ funds and pay interest on their savings.","Lending A range of loans, overdrafts and mortgages are provided by commercial banks.","Operate cheque system/current accounts They enable the business community and the general public to make payments by cheque/they provide an efficient clearing system for cheques.","24 Hour Banking / Computerised Transfer of Money/Automated Bill Payment Banks provide ATM’s, telephone banking and internet banking and a wide range of automated fund transfer facilities such as standing orders, direct debits, credit transfers and pay-path.","Foreign Exchange Commercial banks have a range of facilities which enable international traders and the public to make or receive payment in foreign currencies e.g. eurocheques, foreign currency etc."],"perOptionSteps":[6,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q6-c-ii", topicId: "economics-3-4", conceptId: "fewer-banks",
+    section: "B", questionRef: "2014 OL Section B Q6(c)(ii)",
+    stem: "A number of retail banks have shut down operations in Ireland in recent times and some credit unions are in financial difficulty.",
+    questionText: "Outline two economic effects of the reduction in the number of banks on the Irish economy.",
+    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: 10, contextNote: "Two effects: the 1st correct response 6 marks, the 2nd 4.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Inconvenience/ loss of service to customers The customer may have to make alternative arrangements for their banking service which may increase their costs for banking. Lodging monies / transacting business will be more difficult as customers will have to make alternative banking arrangements.","Loss of jobs / re-location of employees Some employees may lose their jobs with the closure of the branch and some employees in the spin-off service industries in the towns. Some employees may be offered jobs in a new location resulting in increased costs / inconvenience in getting to work.","Reduced economic activity in rural areas Less people may shop / do business in the local area where the bank has closed and this can reduce economic activity in the town.","Increased pressure on Post Office When a bank branch closed there may be increased demand for services in the local post office resulting in pressure on Post Office services.","Reduced profits / Reduction in share price If the bank suffers a loss of customers then profits may decline resulting in reduced dividends to shareholders. The loss of confidence by shareholders with the possibility of reduced profits may result in a decreasing share price resulting in a reduction in the value of the shareholders’ investment.","Increase in on line banking / need for improved broadband facilities Customers may now be forced to use on-line banking facilities and this may lead to a demand for improved broadband access, particularly in rural areas."],"perOptionSteps":[6,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q6-c-iii", topicId: "economics-3-4", conceptId: "credit-unions-in-difficulty",
+    section: "B", questionRef: "2014 OL Section B Q6(c)(iii)",
+    stem: "A number of retail banks have shut down operations in Ireland in recent times and some credit unions are in financial difficulty.",
+    questionText: "Outline one reason why some credit unions are in financial difficulty.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 4","answer":1,"ofParts":3,"perPart":4}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any one", marks: 4, contextNote: "One reason, 4 marks.", openList: true, group: {"claimMax":1,"perOption":4,"options":["High Bad debts Some CUs are experiencing an increase in bad debts as some of their borrowers cannot repay their loans.","Too many loans extended / loans of too high value extended / inadequate reserves Some CUs issued too many loans or issued loans of too high a value (some mortgage loans). Some credit unions over extended their loans and now require funding from government/ taxpayers to remain in business.","Poor governance of CU / Inadequate stress testing of borrowers Management in some CUs was deficient (poor lending policies adopted). Credit unions did not adequately assess the ability of borrowers to repay loans if changes occurred in their financial/ economic circumstances."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q7-a-i", topicId: "economics-4-2", conceptId: "the-wto",
+    section: "B", questionRef: "2014 OL Section B Q7(a)(i)",
+    stem: "In December 2013 the WTO reached agreement with member countries in relation to reducing barriers to free trade.",
+    questionText: "What do the initials WTO stand for?",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "World Trade Organisation", marks: 7, contextNote: "The name, 7 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q7-a-ii", topicId: "economics-4-2", conceptId: "tariffs-and-quotas",
+    section: "B", questionRef: "2014 OL Section B Q7(a)(ii)",
+    stem: "In December 2013 the WTO reached agreement with member countries in relation to reducing barriers to free trade.",
+    questionText: "Define each of the following barriers to free trade: tariffs and quotas.",
+    tariffModel: {"kind":"fixed","notation":"2 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-tariffs", kind: "point", verbatim: "Tariffs — This is a tax on imported goods", marks: 4, contextNote: "Tariffs, 4 marks.", openList: true },
+    { id: "r-quotas", kind: "point", verbatim: "Quotas — This is a limit on the quantity of goods which can be imported", marks: 4, contextNote: "Quotas, 4 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q7-a-iii", topicId: "economics-4-2", conceptId: "why-countries-protect",
+    section: "B", questionRef: "2014 OL Section B Q7(a)(iii)",
+    stem: "In December 2013 the WTO reached agreement with member countries in relation to reducing barriers to free trade.",
+    questionText: "Discuss two reasons why some countries impose barriers to free trade.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":6,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 10, contextNote: "Two reasons, 5 marks each.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Protect domestic industries New industries may have difficulty competing with established industries from other countries and so the government may choose to protect them by limiting competitive imports.","Protect domestic employment Foreign competition costs people their jobs. By limiting imports such jobs may be protected.","Protect against ‘Cheap Labour’ economies Domestic firms may not be able to compete with those countries who gain their advantage by paying their workers low wages. A government may restrict imports from these countries.","National Security Free trade may result in the spread of animal diseases i.e. foot and mouth disease. During such crisis the government banned the importation of cattle to protect this vital industry.","To protect human rights / Political motives Some countries may apply sanctions to those countries in which human rights abuses exist.","Production of strategic goods The production of certain commodities which a country deems essential to the operation of the economy (energy, food) may be safeguarded from competition to ensure continuity of supply."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q7-b-i", topicId: "economics-4-2", conceptId: "an-open-economy",
+    section: "B", questionRef: "2014 OL Section B Q7(b)(i)",
+    questionText: "Ireland is an example of an \"open economy\". Explain this statement.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Open economy: one that engages in trade (importing and exporting).", marks: 6, contextNote: "The explanation, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q7-b-ii", topicId: "economics-4-2", conceptId: "benefits-of-more-exports",
+    section: "B", questionRef: "2014 OL Section B Q7(b)(ii)",
+    questionText: "Outline two benefits for the Irish economy of increased exports.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 8","answer":2,"ofParts":6,"perPart":8}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A benefit — any two", marks: 16, contextNote: "Two benefits, 8 marks each.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Employment creation Exports mean increased demand for goods produced in Ireland, leading to increased employment.","Increased GNP / Economic growth The monies received from exports will lead to increased incomes within the country.","Increased sales / profits Domestic firms can increase their sales/profits by exporting their excess output onto a foreign market / economies of scale.","Earn foreign currencies The receipt of foreign currencies can boost our country’s reserves / provides the finance to help pay for imports.","Attract investment Strong exports will increase confidence in the country and may help attract further investment into Ireland.","Government finances Increased economic activity will generate increased tax revenues for the government e.g. VAT / PAYE / CPT."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q7-b-iii", topicId: "economics-4-2", conceptId: "making-exports-competitive",
+    section: "B", questionRef: "2014 OL Section B Q7(b)(iii)",
+    questionText: "State and explain two factors which could make Irish exports more competitive.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 4","answer":2,"ofParts":4,"perPart":4}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A factor — any two", marks: 8, contextNote: "Two factors, 4 marks each.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Value of the Euro v. that of other currencies: Dollar / Sterling If the value of the euro falls against other currencies then the price of that Irish exports will fall and thus Irish exports will be more competitive.","Irish inflation rates v. that of competitors If the level of inflation is lower in Ireland than in the export markets then Irish goods have a price advantage.","Costs of production As Ireland is an island nation production costs (e.g. transport costs) can be significant when exporting goods from Ireland and must be incorporated into the final price. If oil prices fall then the cost of transport will fall resulting in lower export prices.","Wage Costs If wage costs in Ireland fall below that in export markets, then this reduction may result in lower prices in the export market."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q7-c-i", topicId: "economics-4-1", conceptId: "the-eu",
+    section: "B", questionRef: "2014 OL Section B Q7(c)(i)",
+    stem: "Croatia is the newest member of the EU, bringing the number of member states to 28.",
+    questionText: "What do the initials EU stand for?",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "European Union", marks: 5, contextNote: "The name, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q7-c-ii", topicId: "economics-4-1", conceptId: "effects-of-eu-enlargement",
+    section: "B", questionRef: "2014 OL Section B Q7(c)(ii)",
+    stem: "Croatia is the newest member of the EU, bringing the number of member states to 28.",
+    questionText: "Discuss three economic effects for the Irish economy of more countries joining the EU.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 5","answer":3,"ofParts":8,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any three", marks: 15, contextNote: "Three effects, 5 marks each, positive or negative.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Positive economic effects — Larger market / Expansion of Trade Increased sales opportunities for Irish firms. Irish consumers now have the opportunity to avail of a larger variety of goods/services.","Positive economic effects — Profitable Investment opportunities Irish firms may see that their profits could increase if they made investments in the new member countries.","Positive economic effects — Source of Labour / New Skills Irish firms may be able to meet their demand for labour by employing citizens from these countries / new skills may also be available.","Positive economic effects — Wage demands moderate If labour from these countries becomes available to Irish firms this may lead to a possible moderation in wage demands within Ireland.","Negative economic effects — Lower costs of production Firms in the new member states have lower costs of production making it difficult for Irish firms to compete. Due to the higher cost base facing Irish firms, Irish consumers may travel to avail of cheaper services resulting in reduced demand for Irish services e.g. dental / health services.","Negative economic effects — Decline in funds for investment in Ireland Irish citizens may invest in the new member states resulting in less funds being available for investment at home.","Negative economic effects — Increase in immigration Immigration may increase. This may put increased pressure on the state’s infrastructure i.e. the health and education sectors.","Negative economic effects — EU funds As more of EU funds will be needed in the new countries to develop their agriculture / industry this may result in less funds being available for Irish Agriculture / Industry and/or as the EU requires greater finance it may be necessary for Ireland to become a net contributor to the EU."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q8-a-i", topicId: "economics-3-2", conceptId: "emigration-and-immigration",
+    section: "B", questionRef: "2014 OL Section B Q8(a)(i)",
+    questionText: "“Ireland has gone from having the highest net immigration levels in Europe to the highest net emigration levels in just six years.” (The Irish Times, November 2013) Explain each of the underlined terms.",
+    tariffModel: {"kind":"fixed","notation":"2 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-emigration", kind: "point", verbatim: "Emigration: Movement of Irish nationals to reside elsewhere.", marks: 5, contextNote: "Emigration, 5 marks.", openList: true },
+    { id: "r-immigration", kind: "point", verbatim: "Immigration: Movement of foreign nationals to reside in Ireland", marks: 5, contextNote: "Immigration, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q8-a-ii", topicId: "economics-3-2", conceptId: "why-emigration-rose",
+    section: "B", questionRef: "2014 OL Section B Q8(a)(ii)",
+    stem: "“Ireland has gone from having the highest net immigration levels in Europe to the highest net emigration levels in just six years.” (The Irish Times, November 2013)",
+    questionText: "Discuss two reasons why emigration levels have increased.",
+    tariffModel: {"kind":"fixed","notation":"6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 10, contextNote: "Two reasons: the 1st correct response 6 marks, the 2nd 4.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Economic recession in Ireland / Job opportunities abroad The economic recession has resulted in increasing unemployment, with fewer available job opportunities. People are emigrating to find jobs in other countries where vacancies exist e.g. Canada; Australia.","Wage rates in Ireland Wage rates in Ireland are falling. This means that the standard of living is declining and so people are seeking a better standard of living abroad.","Rising levels of taxation in Ireland The introduction of the various income levies / new taxes are encouraging people to move abroad.","Develop skills abroad Some skilled workers, as part of their professional development, emigrate to develop their skills further.","More optimistic outlook abroad / Existence of Irish networks abroad Some people are emigrating because the outlook abroad is more positive. The existence of Irish communities abroad makes emigration easier."],"perOptionSteps":[6,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q8-a-iii", topicId: "economics-3-2", conceptId: "effects-of-emigration",
+    section: "B", questionRef: "2014 OL Section B Q8(a)(iii)",
+    stem: "“Ireland has gone from having the highest net immigration levels in Europe to the highest net emigration levels in just six years.” (The Irish Times, November 2013)",
+    questionText: "Outline one positive economic effect and one negative economic effect of increased emigration for the Irish economy.",
+    tariffModel: {"kind":"fixed","notation":"5 + 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-positive", kind: "anyN", verbatim: "Positive effects — any one", marks: 5, contextNote: "One positive effect, 5 marks.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Unemployment reduced Those people who emigrate may have been unemployed if they remained in Ireland. This reduces the strain on government finances to fund increasing social welfare payments.","Emigrants remittances to Ireland / New skills. Emigrants send monies back to Ireland. The CSO estimates for emigrants remittances for 2013 was €776m. In the long term emigrants may return home with newly acquired skills.","Contacts / Export opportunities Irish emigrants may set up business providing jobs to new emigrants, improving skills and providing an outlet for Irish exporters e.g. O’Neill’s GAA jerseys.","Less demand for state services With a declining population the demand for state service may decline e.g. schools, health care, transport etc. This may result in an improved financial position for the government."]} },
+    { id: "r-negative", kind: "anyN", verbatim: "Negative effects — any one", marks: 5, contextNote: "One negative effect, 5 marks.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Possible higher dependency ratio / Increased taxation Young, active population leaving leading to a higher possible dependency ratio in Ireland resulting in the need for the government to finance this increasing dependent population.","Opportunity cost The state loses out on its investment in the education/training of these citizens. Ireland may be educating workers for foreign countries.","Loss of skills within the economy / \"Brain Drain\" The Irish economy loses out on those workers / graduates who have acquired the skills needed to help the economy. The ‘brain drain’ may deprive the country of much needed skills.","Smaller domestic market As the domestic market contracts there may be reduced opportunities for investment by businesses / entrepreneurs as there is reduced demand for goods and services.","Upward pressure on Irish wage levels The highly trained and skilled are more mobile thus they leave. To try to retain these workers businesses may have to increase wage levels."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q8-b-i", topicId: "economics-3-2", conceptId: "the-cso",
+    section: "B", questionRef: "2014 OL Section B Q8(b)(i)",
+    stem: "“Unemployment is at its lowest level since 2009, according to the latest figures from the CSO.” (RTE News November 2013)",
+    questionText: "What do the initials CSO stand for?",
+    tariffModel: {"kind":"fixed","notation":"10","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Central Statistics Office", marks: 10, contextNote: "The name, 10 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q8-b-ii", topicId: "economics-3-2", conceptId: "effects-of-falling-unemployment",
+    section: "B", questionRef: "2014 OL Section B Q8(b)(ii)",
+    stem: "“Unemployment is at its lowest level since 2009, according to the latest figures from the CSO.” (RTE News November 2013)",
+    questionText: "Discuss one economic effect which a fall in unemployment may have on each of the following: • Retailers in Ireland; • Government finances; • Ireland’s Balance of Trade (i.e. Visible exports less Visible imports).",
+    tariffModel: {"kind":"fixed","notation":"7 + 4 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "One effect on each — retailers, the government’s finances and the Balance of Trade", marks: 15, contextNote: "One effect for each area: the 1st correct response 7 marks, the 2nd and 3rd 4 each. The scheme’s effects by area: retailers, increased profits or expansion; the government’s finances, tax revenues, social welfare spending, reduced state borrowing or fewer social problems; the Balance of Trade, increased imports, imports of raw materials or increased exports.", openList: true, group: {"claimMax":3,"perOption":7,"options":["Increased Profits — More employment leading to increased spending power. Sales increase and so too will profits.","Expansion — Retailers may be able to expand / continue in production.","Tax revenues — Increased employment will result in increased income tax revenues. CPT will increase if profits rise. VAT/ Excise duties should increase with increased spending","Social welfare spending — Expenditure on social welfare should fall if employment rises","Reduced state borrowing — The improvement in the state’s finances may mean that the level of state borrowing will fall.","Less social problems — Fewer resources required to combat anti-social behaviour due to boredom and poverty / less health issues like depression etc as people happier in work.","Increased imports — Spending power increases and thus imports of consumer goods may rise.","Imports of raw materials — Businesses may expand and require increased imports of raw materials.","Increased exports — If unemployment is falling this may suggest that businesses are expanding and so they may be exporting more."],"perOptionSteps":[7,4,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q8-c-i", topicId: "economics-3-1", conceptId: "other-economic-aims",
+    section: "B", questionRef: "2014 OL Section B Q8(c)(i)",
+    stem: "Increasing employment is one of the economic aims of the Irish government.",
+    questionText: "State and explain two other economic aims of the government.",
+    tariffModel: {"kind":"fixed","notation":"8 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An aim — any two", marks: 12, contextNote: "Two aims: the 1st correct response 8 marks, the 2nd 4.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Sustainable government finances / reduce borrowing The government must try to reduce our national debt and make it sustainable so that we can afford to repay it. Pressure exists on the government to control expenditure, in particular the cost of providing public service.","Achieve economic growth One measure is to try to improve competitiveness of Irish exporting industries so that exports will increase, resulting in increased incomes.","Provide efficient state services The government aims to improve services within the state such as health, education etc. The aim is to provide services at lower costs to the taxpayer.","Infrastructural development / broadband access As many businesses in Ireland (MNCs) trade worldwide there is a need for high speed broadband. This has resulted in the recent investment by the government in improving broadband access.","Promote balanced regional development The provision of advance factories in regional areas to promote development in areas other than in the larger urban areas.","Boost exports / improve competitiveness / attracting investment / upskill the workforce By taking steps to improve competitiveness, the government hopes that Irish exports will continue to grow. The also aim to reduce cost of utilities. This may make Ireland more attractive for FDI. Trade missions engaged in by the IDA and Enterprise Ireland to China etc., also aim to increase FDI."],"perOptionSteps":[8,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2014 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2014-ol-sb-q8-c-ii", topicId: "economics-3-1", conceptId: "measures-for-the-aims",
+    section: "B", questionRef: "2014 OL Section B Q8(c)(ii)",
+    stem: "Increasing employment is one of the economic aims of the Irish government.",
+    questionText: "Explain one measure the government could take to achieve each economic aim you have stated in (i) above.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 4","answer":2,"ofParts":4,"perPart":4}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A measure — one for each aim", marks: 8, contextNote: "Two measures, 4 marks each: possible responses.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Provide efficient state services The government could eliminate waste and/or reduce duplication of state services. The reduction in the number of local authorities may help reduce costs.","Infrastructural development The government can speed up the process of improving broadband access in regional areas. This may encourage more people to start a business.","Broader tax base The government could introduce a ‘sugar tax’ so that tax revenue increases further and, at the same time, achieve a reduction in obesity levels in Ireland.","Sustainable government finances The government should adhere to its plans to reduce the deficit to 3% of GDP by 2015. This will help reduce out need to borrow and boost confidence in the country which may attract more FDI."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2015, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",

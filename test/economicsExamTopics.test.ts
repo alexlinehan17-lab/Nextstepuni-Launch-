@@ -192,12 +192,27 @@ describe('Economics exam-topic registry', () => {
       // intervention (corporation tax is fiscal policy); Section A Q8 under
       // government intervention and under growth and development (emigration
       // is employment and unemployment); and Section B Q6 under national
-      // income (the current budget is fiscal policy).
-      matchedAssociations: 737,
-      referenceAnomalyAssociations: 166,
+      // income (the current budget is fiscal policy). The 2014 Higher review
+      // added none. The 2014 Ordinary review added fifteen: Section A Q5 and
+      // Q9 under formulas and Section B Q6, Q7 and Q8(b)-(c) under acronyms
+      // (study-aid headings); Section A Q1 under the market economy (the
+      // definition of economics is scarcity and choice); Section A Q4 and Q7
+      // under government intervention (public sector pay and a tax relief are
+      // fiscal policy); Section B Q3 under government intervention (economic
+      // systems are the market economy, as earlier reviews file them);
+      // Section B Q7 under government intervention (tariffs and quotas are
+      // international trade, the EU globalisation); Section B Q8(b)-(c) under
+      // government intervention and globalisation (unemployment is employment,
+      // the government's aims fiscal policy); Section B Q5 under the labour
+      // market (costs, the entrepreneur and location are filed under their own
+      // topics); Section B Q8(a) under growth and development (emigration is
+      // employment and unemployment); and Section A Q2 under globalisation
+      // (visible and invisible trade are international trade).
+      matchedAssociations: 722,
+      referenceAnomalyAssociations: 181,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 661,
+      matchedQuestionTopicLinks: 646,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');
