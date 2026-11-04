@@ -75,6 +75,85 @@
  },
  {
   "subjectId": "history-early-modern",
+  "level": "ordinary",
+  "lang": "ev",
+  "year": 2023,
+  "fileid": "LC096GLP000EV.pdf",
+  "paperKey": "single",
+  "q": [
+   {
+    "n": "1",
+    "primary": "history-0-6",
+    "secondary": "history-0-4"
+   },
+   {
+    "n": "2",
+    "primary": "history-0-6",
+    "secondary": "history-0-4"
+   },
+   {
+    "n": "3",
+    "primary": "history-0-6",
+    "secondary": "history-0-4"
+   },
+   {
+    "n": "4",
+    "primary": "history-0-6",
+    "secondary": "history-0-4"
+   },
+   {
+    "n": "I1",
+    "primary": "history-0-0"
+   },
+   {
+    "n": "I3",
+    "primary": "history-0-8"
+   },
+   {
+    "n": "I4",
+    "primary": "history-0-12"
+   },
+   {
+    "n": "I5",
+    "primary": "history-0-16"
+   },
+   {
+    "n": "I6",
+    "primary": "history-0-20"
+   },
+   {
+    "n": "E1",
+    "primary": "history-1-0"
+   },
+   {
+    "n": "E2",
+    "primary": "history-1-4"
+   },
+   {
+    "n": "E3",
+    "primary": "history-1-8"
+   },
+   {
+    "n": "E4",
+    "primary": "history-1-12"
+   },
+   {
+    "n": "E5",
+    "primary": "history-1-16"
+   },
+   {
+    "n": "E6",
+    "primary": "history-1-20"
+   },
+   {
+    "n": "ALT",
+    "primary": "history-0-6",
+    "secondary": "history-0-4"
+   }
+  ]
+ },
+ {
+  "subjectId": "history-early-modern",
   "level": "higher",
   "lang": "ev",
   "year": 2022,
