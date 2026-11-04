@@ -1213,6 +1213,7 @@ class HistScheme:
         ask.notation = f'{ask.total}M' if ask.total is not None else ''
 
         lead, points, notes = [], [], []
+        cue_splits = False      # a cue under an unfinished restated task
         doc = None              # the document heading currently in force
         mode = 'lead'
         for is_grid, line in zip(grid, cleaned):
@@ -1225,6 +1226,7 @@ class HistScheme:
             if CUE.match(line):
                 notes.append(line)
                 mode = 'points'
+                cue_splits = not points and bool(lead) and not re.search(r'[.?!:]$', lead[-1].strip())
                 continue
             m = DOC_HEAD.match(line)
             if m:
@@ -1245,6 +1247,14 @@ class HistScheme:
                 continue
             if mode == 'points' and points:
                 points[-1][1].append(line)
+                continue
+            if mode == 'points' and cue_splits:
+                # The answers under a cue printed below the restated task,
+                # which ends in no stop ("Strengths and weaknesses of Document
+                # B as a historical source" / "One strength well developed =
+                # max 5M" / the answers, 2010 Higher Q3(b)), never join the
+                # task's words. A finished sentence already ends there.
+                points.append([doc, [line], False])
                 continue
             lead.append(line)
 
