@@ -1,5 +1,170 @@
 [
  {
+  "file": "technology-2018-HL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a floor-standing bandsaw: a tall upright frame with a table at waist height and control buttons on its side.",
+  "questionRef": "2018 HL Section A Q5",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   434,
+   314,
+   541,
+   514
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Circuit: a 500 ohm resistor in series with a 2 kilohm and a 3 kilohm resistor connected in parallel.",
+  "questionRef": "2018 HL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   394,
+   615,
+   525,
+   686
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Cutaway rendering of a gearbox: shafts carrying several gear wheels and bearings inside an open casing.",
+  "questionRef": "2018 HL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   341,
+   79,
+   562,
+   216
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendering of a cam-operated device: a toothed wheel on a black upright, a part circled in red and lettered A at the top of the wheel, and a linkage running down to a cam labelled Cam C.",
+  "questionRef": "2018 HL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   360,
+   455,
+   536,
+   728
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendering of an eight-pin integrated circuit chip, printed NE555, standing on its legs.",
+  "questionRef": "2018 HL Section A Q13",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   52,
+   446,
+   190,
+   584
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secA-q14-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a blue gearbox housing with its input shaft labelled Input shaft A and output shaft labelled Output shaft B, and a close-up of the input shaft labelled Metal key in groove.",
+  "questionRef": "2018 HL Section A Q14",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   78,
+   108,
+   536,
+   262
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secA-q15-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing in pictorial view of a fire extinguisher: a cylinder with a valve head, gauge, handle and nozzle.",
+  "questionRef": "2018 HL Section A Q15",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   362,
+   440,
+   488,
+   766
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secB-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Circuit of a solar engine: a solar cell, a component lettered A, an IC, two transistors (one lettered B) and a motor M.",
+  "questionRef": "2018 HL Section B Q2(d)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   318,
+   662,
+   575,
+   770
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendering of a gantry robot: a carriage running on rails along two axes, with a vertical arm carrying the gripper.",
+  "questionRef": "2018 HL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   405,
+   524,
+   572,
+   633
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Circuit: an LDR above a 15 kilohm resistor gives point A, and a 20 kilohm above a 30 kilohm resistor gives point B, the two feeding the inputs of an op-amp between +6 V and 0 V, with output Vout.",
+  "questionRef": "2018 HL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   322,
+   251,
+   578,
+   392
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secC-q4c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a fidget spinner, and a table of seven hole sizes in mm: 3D Printer 16.08, 16.04, 16.10, 15.90, 16.08, 16.04, 15.02, sigma = .391; Laser Cutter 15.98, 15.96, 16.04, 16.03, 15.98, 16.02, 16.02, sigma = .030.",
+  "questionRef": "2018 HL Section C Q4(c)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   78,
+   112,
+   560,
+   292
+  ]
+ },
+ {
   "file": "technology-2019-HL-paper-secA-q2-art.png",
   "kind": "figure",
   "truncated": false,
@@ -4545,6 +4710,66 @@
   ]
  },
  {
+  "file": "technology-2018-HL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a rescue winch mounted above the door of a red helicopter, an orange hook weight hanging from its cable.",
+  "questionRef": "2018 HL Section A Q12",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   303,
+   152,
+   553,
+   370
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secB-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Graphic of a fleet of solar drones at different heights (30,000, 60,000 and 90,000 ft marked), each beaming a green cone of coverage down onto the houses and town below.",
+  "questionRef": "2018 HL Section B Q2(c)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   347,
+   497,
+   575,
+   620
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Diagram of a height check: Light 1 and Light 2 shine across to two sensors, Light 1 at the maximum height, with a child walking between.",
+  "questionRef": "2018 HL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   358,
+   616,
+   578,
+   740
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secC-q4d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two graphs of sales against time in months: Graph A a smooth rise to a gentle peak and slight fall; Graph B flat, then a sudden tall spike and a steep fall.",
+  "questionRef": "2018 HL Section C Q4(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   108,
+   536,
+   532,
+   668
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -4737,6 +4962,36 @@
    114,
    238,
    229
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secC-q4b-iii-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An empty cause and effect diagram leading to Problem, with the headings Equipment, Materials, Personnel, Environmental, Methods and Machines.",
+  "questionRef": "2018 HL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   140,
+   395,
+   480,
+   547
+  ]
+ },
+ {
+  "file": "technology-2018-HL-paper-secC-q4c-i-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a fidget spinner, the table of hole sizes in mm (3D Printer 16.08, 16.04, 16.10, 15.90, 16.08, 16.04, 15.02, sigma = .391; Laser Cutter 15.98, 15.96, 16.04, 16.03, 15.98, 16.02, 16.02, sigma = .030), and the formula Cp = Tolerance Range over 6 sigma.",
+  "questionRef": "2018 HL Section C Q4(c)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   78,
+   112,
+   560,
+   366
   ]
  },
  {
@@ -6154,5 +6409,125 @@
   "description": "The marking scheme's own answer to 2019 OL Section C 2(d)(ii), as the State Examinations Commission printed it: a table of A, B, C, D and E with two rows, 1 0 1 1 1 and 0 1 1 1 1.",
   "solution": true,
   "questionRef": "2019 OL Section C Q2(d)(ii)"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secA-q6.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2018 HL Section A Q6, as the State Examinations Commission printed it: resistors in parallel, 1/Rt = 1/2000 + 1/3000; total 500 + 1200 = 1700 ohms; beside it the circuit, and the note (Correct formula - 3 marks).",
+  "solution": true,
+  "questionRef": "2018 HL Section A Q6"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secA-q11-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2018 HL Section A Q11, as the State Examinations Commission printed it: the cam-operated device with the ratchet and pawl circled at A, the follower linkage lettered B and Cam C at its foot.",
+  "solution": true,
+  "questionRef": "2018 HL Section A Q11(ii)"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secA-q12.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2018 HL Section A Q12, as the State Examinations Commission printed it: PE = mgh, so h = PE over mg = 7014.15 over 65 x 9.81 = 11 m (Alt Formula: Work = Force x Distance).",
+  "solution": true,
+  "questionRef": "2018 HL Section A Q12"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secB-q2c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2018 HL Section B 2(c)(i), as the State Examinations Commission printed it: the drone-fleet image with arrows to two notes: Solar drones orbit at a predetermined height and distance apart; Drones provide an overlapping area of coverage. This ensures that there are no areas without coverage.",
+  "solution": true,
+  "questionRef": "2018 HL Section B Q2(c)(i)"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secB-q3b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own suggested solution for 2018 HL Section B 3(b)(iii), as the State Examinations Commission printed it: a photograph of a four-wheeled robot base with omni-directional wheels.",
+  "solution": true,
+  "questionRef": "2018 HL Section B Q3(b)(iii)"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secC-q1b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2018 HL Section C 1(b)(i), as the State Examinations Commission printed it: a flowchart from Start to Request entry and the decision Check ID, which loops back on No; on Yes, Open door, Wait 60 sec., Close door and End.",
+  "solution": true,
+  "questionRef": "2018 HL Section C Q1(b)(i)"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secC-q1c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own illustration for 2018 HL Section C 1(c)(ii), as the State Examinations Commission printed it: a robot gripper with two curved fingers.",
+  "solution": true,
+  "questionRef": "2018 HL Section C Q1(c)(ii)"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secC-q1d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2018 HL Section C 1(d)(i), as the State Examinations Commission printed it: a push-button operated 3/2 valve, ports numbered 1, 2 and 3, feeding a single-acting spring-return cylinder through a flow control valve.",
+  "solution": true,
+  "questionRef": "2018 HL Section C Q1(d)(i)"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secC-q2d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2018 HL Section C 2(d)(i), as the State Examinations Commission printed it: Light 1 and Light 2, each through a switch, feeding an AND gate to the Output.",
+  "solution": true,
+  "questionRef": "2018 HL Section C Q2(d)(i)"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secC-q4b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2018 HL Section C 4(b)(iii), as the State Examinations Commission printed it: a cause and effect diagram leading to Problem, with causes under each heading: Equipment (Malfunction, Set-up/specification), Materials (Choice of materials, Finish), Personnel (Training, Expertise), Environmental (Location, Weather), Methods (Accuracy, Assembly), Machines (Repair, Suitability).",
+  "solution": true,
+  "questionRef": "2018 HL Section C Q4(b)(iii)"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secC-q4c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2018 HL Section C 4(c)(i), as the State Examinations Commission printed it: Cp = Tolerance Range over 6 sigma; 3D Printer: (16.1 - 15.9) over (6 x .391) = 0.085; Laser cutter: (16.1 - 15.9) over (6 x .030) = 1.11.",
+  "solution": true,
+  "questionRef": "2018 HL Section C Q4(c)(i)"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secC-q5a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own table for 2018 HL Section C 5(a), as the State Examinations Commission printed it: Strength, Durability, Weight and Cost for Steel, Aluminium, Titanium and Carbon fibre.",
+  "solution": true,
+  "questionRef": "2018 HL Section C Q5(a)"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secC-q5b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2018 HL Section C 5(b)(ii), as the State Examinations Commission printed it: a photograph of the light mounted with a notched flexible strap, with an arrow to the link.",
+  "solution": true,
+  "questionRef": "2018 HL Section C Q5(b)(ii)"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secC-q5c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2018 HL Section C 5(c)(ii), as the State Examinations Commission printed it: six numbered stages of blow moulding, from the parison in the open mould to the finished bottle.",
+  "solution": true,
+  "questionRef": "2018 HL Section C Q5(c)(ii)"
+ },
+ {
+  "file": "technology-2018-HL-scheme-secC-q5d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2018 HL Section C 5(d)(ii), as the State Examinations Commission printed it: a striker suspended above a helmet, labelled striker.",
+  "solution": true,
+  "questionRef": "2018 HL Section C Q5(d)(ii)"
  }
 ]

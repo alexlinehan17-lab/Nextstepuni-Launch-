@@ -1620,6 +1620,161 @@ WHITEOUT.update({
     'technology-2019-HL-paper-secC-q2b-art': [(356, 333, 372, 377)],
 })
 
+# 2018 Higher. PAPER pictures each ask points at ("shown", "the given image",
+# "the table below", "Graph A ... Graph B", "the headings outlined above").
+BY_EYE.update({
+    'technology-2018-HL-paper-secA-q5-art': ('014', 2, (434, 314, 541, 514)),
+    # The three-resistor network, without the "Calculation:" box beside it.
+    'technology-2018-HL-paper-secA-q6-art': ('014', 2, (394, 615, 525, 686)),
+    'technology-2018-HL-paper-secA-q7-art': ('014', 3, (341, 79, 562, 216)),
+    # The cam-operated device with its letter A and "Cam C".
+    'technology-2018-HL-paper-secA-q11-art': ('014', 4, (360, 455, 536, 728)),
+    # The winch photograph; its left edge sits under the Calculation box.
+    'technology-2018-HL-paper-secA-q12-art': ('014', 5, (303, 152, 553, 370)),
+    'technology-2018-HL-paper-secA-q13-art': ('014', 5, (52, 446, 190, 584)),
+    # The housing with "Metal key in groove", "Input shaft A", "Output shaft B".
+    'technology-2018-HL-paper-secA-q14-art': ('014', 6, (78, 108, 536, 262)),
+    'technology-2018-HL-paper-secA-q15-art': ('014', 6, (362, 440, 488, 766)),
+    # 2(c)'s "given image" of the drone fleet, and 2(d)'s solar engine circuit
+    # with its components A and B.
+    'technology-2018-HL-paper-secB-q2c-art': ('015', 1, (347, 497, 575, 620)),
+    'technology-2018-HL-paper-secB-q2d-art': ('015', 1, (318, 662, 575, 770)),
+    'technology-2018-HL-paper-secC-q1c-art': ('015', 3, (405, 524, 572, 633)),
+    # The comparator circuit with points A and B.
+    'technology-2018-HL-paper-secC-q2b-art': ('015', 4, (322, 251, 578, 392)),
+    # The height sensor arrangement, Light 1/2 and the two sensors.
+    'technology-2018-HL-paper-secC-q2d-art': ('015', 4, (358, 616, 578, 740)),
+    # The cause and effect diagram whose headings (iii) builds on.
+    'technology-2018-HL-paper-secC-q4b-iii-art': ('015', 6, (140, 395, 480, 547)),
+    # 4(c): the fidget spinner and the table of measured holes; (i) also
+    # carries the Cp formula printed under its ask as a fraction.
+    'technology-2018-HL-paper-secC-q4c-art': ('015', 7, (78, 112, 560, 292)),
+    'technology-2018-HL-paper-secC-q4c-i-art': ('015', 7, (78, 112, 560, 366)),
+    # Graphs A and B.
+    'technology-2018-HL-paper-secC-q4d-art': ('015', 7, (108, 536, 532, 668)),
+})
+FIGURE_SHARED.update({
+    # 2(c)'s stem: "The output from the circuit in 2(b) above controls a
+    # mains-powered electric motor via a relay."
+    'technology-2018-HL-paper-secC-q2c-art': 'technology-2018-HL-paper-secC-q2b-art',
+})
+WHITEOUT.update({
+    # 2(d)(i)'s "...sensor outputs ... maximum height." beside the figure.
+    'technology-2018-HL-paper-secC-q2d-art': [(356, 668, 404, 700)],
+    # 4(c)'s stem paragraphs beside the spinner photograph, and (i)'s ask
+    # above its formula.
+    'technology-2018-HL-paper-secC-q4c-art': [(76, 110, 442, 242)],
+    'technology-2018-HL-paper-secC-q4c-i-art': [(76, 110, 442, 242), (76, 298, 580, 332)],
+    # Answer text and a tariff set against the scheme's pictures.
+    'technology-2018-HL-scheme-secC-q5d-ii': [(386, 726, 446, 757)],
+    'technology-2018-HL-scheme-secC-q1c-ii': [(461, 620, 478, 634)],
+})
+# The scheme's own drawn answers, cut from the 2018 Higher marking scheme.
+SOLUTIONS.update({
+    'technology-2018-HL-scheme-secA-q6': (4, (80, 615, 545, 722),
+        "The marking scheme's own answer to 2018 HL Section A Q6, as the State "
+        "Examinations Commission printed it: resistors in parallel, 1/Rt = "
+        "1/2000 + 1/3000; total 500 + 1200 = 1700 ohms; beside it the circuit, "
+        "and the note (Correct formula - 3 marks)."),
+    'technology-2018-HL-scheme-secA-q11-ii': (6, (358, 455, 552, 728),
+        "The marking scheme's own picture for 2018 HL Section A Q11, as the "
+        "State Examinations Commission printed it: the cam-operated device with "
+        "the ratchet and pawl circled at A, the follower linkage lettered B and "
+        "Cam C at its foot."),
+    'technology-2018-HL-scheme-secA-q12': (7, (76, 205, 302, 364),
+        "The marking scheme's own answer to 2018 HL Section A Q12, as the State "
+        "Examinations Commission printed it: PE = mgh, so h = PE over mg = "
+        "7014.15 over 65 x 9.81 = 11 m (Alt Formula: Work = Force x Distance)."),
+    'technology-2018-HL-scheme-secB-q2c-i': (11, (104, 522, 545, 585),
+        "The marking scheme's own answer to 2018 HL Section B 2(c)(i), as the "
+        "State Examinations Commission printed it: the drone-fleet image with "
+        "arrows to two notes: Solar drones orbit at a predetermined height and "
+        "distance apart; Drones provide an overlapping area of coverage. This "
+        "ensures that there are no areas without coverage."),
+    # The photograph only: the annotation beside it is the row.
+    'technology-2018-HL-scheme-secB-q3b-iii': (12, (205, 358, 328, 456),
+        "The marking scheme's own suggested solution for 2018 HL Section B "
+        "3(b)(iii), as the State Examinations Commission printed it: a "
+        "photograph of a four-wheeled robot base with omni-directional wheels."),
+    'technology-2018-HL-scheme-secC-q1b-i': (13, (422, 252, 524, 470),
+        "The marking scheme's own answer to 2018 HL Section C 1(b)(i), as the "
+        "State Examinations Commission printed it: a flowchart from Start to "
+        "Request entry and the decision Check ID, which loops back on No; on "
+        "Yes, Open door, Wait 60 sec., Close door and End."),
+    'technology-2018-HL-scheme-secC-q1c-ii': (13, (420, 560, 470, 632),
+        "The marking scheme's own illustration for 2018 HL Section C "
+        "1(c)(ii), as the State Examinations Commission printed it: a robot "
+        "gripper with two curved fingers."),
+    'technology-2018-HL-scheme-secC-q1d-i': (13, (300, 655, 545, 722),
+        "The marking scheme's own answer to 2018 HL Section C 1(d)(i), as the "
+        "State Examinations Commission printed it: a push-button operated 3/2 "
+        "valve, ports numbered 1, 2 and 3, feeding a single-acting spring-return "
+        "cylinder through a flow control valve."),
+    'technology-2018-HL-scheme-secC-q2d-i': (14, (176, 632, 410, 714),
+        "The marking scheme's own answer to 2018 HL Section C 2(d)(i), as the "
+        "State Examinations Commission printed it: Light 1 and Light 2, each "
+        "through a switch, feeding an AND gate to the Output."),
+    'technology-2018-HL-scheme-secC-q4b-iii': (16, (64, 537, 553, 714),
+        "The marking scheme's own answer to 2018 HL Section C 4(b)(iii), as the "
+        "State Examinations Commission printed it: a cause and effect diagram "
+        "leading to Problem, with causes under each heading: Equipment "
+        "(Malfunction, Set-up/specification), Materials (Choice of materials, "
+        "Finish), Personnel (Training, Expertise), Environmental (Location, "
+        "Weather), Methods (Accuracy, Assembly), Machines (Repair, Suitability)."),
+    'technology-2018-HL-scheme-secC-q4c-i': (17, (90, 115, 525, 178),
+        "The marking scheme's own answer to 2018 HL Section C 4(c)(i), as the "
+        "State Examinations Commission printed it: Cp = Tolerance Range over "
+        "6 sigma; 3D Printer: (16.1 - 15.9) over (6 x .391) = 0.085; Laser "
+        "cutter: (16.1 - 15.9) over (6 x .030) = 1.11."),
+    'technology-2018-HL-scheme-secC-q5a': (18, (58, 90, 555, 198),
+        "The marking scheme's own table for 2018 HL Section C 5(a), as the State "
+        "Examinations Commission printed it: Strength, Durability, Weight and "
+        "Cost for Steel, Aluminium, Titanium and Carbon fibre."),
+    'technology-2018-HL-scheme-secC-q5b-ii': (18, (411, 306, 520, 386),
+        "The marking scheme's own answer to 2018 HL Section C 5(b)(ii), as the "
+        "State Examinations Commission printed it: a photograph of the light "
+        "mounted with a notched flexible strap, with an arrow to the link."),
+    'technology-2018-HL-scheme-secC-q5c-ii': (18, (352, 540, 534, 607),
+        "The marking scheme's own answer to 2018 HL Section C 5(c)(ii), as the "
+        "State Examinations Commission printed it: six numbered stages of blow "
+        "moulding, from the parison in the open mould to the finished bottle."),
+    'technology-2018-HL-scheme-secC-q5d-ii': (18, (386, 690, 542, 760),
+        "The marking scheme's own answer to 2018 HL Section C 5(d)(ii), as the "
+        "State Examinations Commission printed it: a striker suspended above a "
+        "helmet, labelled striker."),
+})
+ASK_ONLY.update({
+    # A worked calculation set as fractions: the crop is the answer.
+    'technology-2018-HL-scheme-secA-q6',
+    'technology-2018-HL-scheme-secA-q12',
+    'technology-2018-HL-scheme-secC-q4c-i',
+    # Notes set in two columns around a picture, and a diagram whose
+    # lettering the text layer reads as fragments.
+    'technology-2018-HL-scheme-secB-q2c-i',
+    'technology-2018-HL-scheme-secC-q4b-iii',
+})
+LABEL_ZONES.setdefault((2018, 'hl'), []).extend([
+    # Q11's device reprinted with A, B and Cam C beside (ii)'s ask.
+    (6, (358, 455, 552, 728)),
+    # Q14's housing reprinted with its labels.
+    (8, (76, 126, 545, 268)),
+    # 3(b)(iii)'s left-hand caption, set beside the annotation it shares rows
+    # with.
+    (12, (88, 385, 200, 420)),
+    # 1(b)'s flowchart, its boxes read between (i), (ii) and (iii).
+    (13, (422, 252, 524, 470)),
+    # 2(d)(i)'s gate drawing.
+    (14, (176, 632, 410, 714)),
+    # 4(b)(iii)'s cause and effect diagram and its heading.
+    (16, (30, 520, 553, 714)),
+    # 4(d)'s two graphs, reprinted above (i).
+    (17, (100, 330, 480, 430)),
+    # 5(a)'s column headings.
+    (18, (60, 96, 555, 112)),
+    # 5(d)(ii)'s "striker" label, on the ask's own line.
+    (18, (390, 696, 426, 712)),
+])
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -1636,6 +1791,15 @@ ASK_ZONES = {
     # 2019 Higher Option 5(d)'s two picture captions.
     (2019, 'hl', 'C', 5, 'd', 'i'): ('039', 8, [(460, 596, 545, 626), (405, 757, 530, 775)]),
     (2019, 'hl', 'C', 5, 'd', 'ii'): ('039', 8, [(460, 596, 545, 626), (405, 757, 530, 775)]),
+    # 2018 Higher Q7's answer-box labels "Feature 1" and "Feature 2".
+    (2018, 'hl', 'A', 7, None, None): ('014', 3, [(78, 103, 130, 193)]),
+    # 2018 Higher Q14's photograph labels, read onto the end of its stem:
+    # "shaft" is set with the ft ligature, so only folded words match.
+    (2018, 'hl', 'A', 14, None, 'i'): ('014', 6, [(78, 108, 536, 262)]),
+    (2018, 'hl', 'A', 14, None, 'ii'): ('014', 6, [(78, 108, 536, 262)]),
+    # 2018 Higher 4(c)'s table of measured holes, flattened onto its stem.
+    (2018, 'hl', 'C', 4, 'c', 'i'): ('015', 7, [(82, 250, 512, 290)]),
+    (2018, 'hl', 'C', 4, 'c', 'ii'): ('015', 7, [(82, 250, 512, 290)]),
 }
 
 

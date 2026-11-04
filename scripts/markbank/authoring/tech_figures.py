@@ -988,6 +988,71 @@ REVIEWED.update({
         'https://www.rugbyworldcup.com/supporters.',
 })
 
+# 2018 Higher (Technology lane, 4 November 2026).
+REVIEWED.update({
+    'technology-2018-HL-paper-secA-q5-art':
+        'Photograph of a floor-standing bandsaw: a tall upright frame with a '
+        'table at waist height and control buttons on its side.',
+    'technology-2018-HL-paper-secA-q6-art':
+        'Circuit: a 500 ohm resistor in series with a 2 kilohm and a 3 kilohm '
+        'resistor connected in parallel.',
+    'technology-2018-HL-paper-secA-q7-art':
+        'Cutaway rendering of a gearbox: shafts carrying several gear wheels and '
+        'bearings inside an open casing.',
+    'technology-2018-HL-paper-secA-q11-art':
+        'Rendering of a cam-operated device: a toothed wheel on a black upright, '
+        'a part circled in red and lettered A at the top of the wheel, and a '
+        'linkage running down to a cam labelled Cam C.',
+    'technology-2018-HL-paper-secA-q12-art':
+        'Photograph of a rescue winch mounted above the door of a red '
+        'helicopter, an orange hook weight hanging from its cable.',
+    'technology-2018-HL-paper-secA-q13-art':
+        'Rendering of an eight-pin integrated circuit chip, printed NE555, '
+        'standing on its legs.',
+    'technology-2018-HL-paper-secA-q14-art':
+        'Photograph of a blue gearbox housing with its input shaft labelled '
+        'Input shaft A and output shaft labelled Output shaft B, and a close-up '
+        'of the input shaft labelled Metal key in groove.',
+    'technology-2018-HL-paper-secA-q15-art':
+        'Line drawing in pictorial view of a fire extinguisher: a cylinder with '
+        'a valve head, gauge, handle and nozzle.',
+    'technology-2018-HL-paper-secB-q2c-art':
+        'Graphic of a fleet of solar drones at different heights (30,000, 60,000 '
+        'and 90,000 ft marked), each beaming a green cone of coverage down onto '
+        'the houses and town below.',
+    'technology-2018-HL-paper-secB-q2d-art':
+        'Circuit of a solar engine: a solar cell, a component lettered A, an '
+        'IC, two transistors (one lettered B) and a motor M.',
+    'technology-2018-HL-paper-secC-q1c-art':
+        'Rendering of a gantry robot: a carriage running on rails along two '
+        'axes, with a vertical arm carrying the gripper.',
+    'technology-2018-HL-paper-secC-q2b-art':
+        'Circuit: an LDR above a 15 kilohm resistor gives point A, and a 20 '
+        'kilohm above a 30 kilohm resistor gives point B, the two feeding the '
+        'inputs of an op-amp between +6 V and 0 V, with output Vout.',
+    'technology-2018-HL-paper-secC-q2d-art':
+        'Diagram of a height check: Light 1 and Light 2 shine across to two '
+        'sensors, Light 1 at the maximum height, with a child walking between.',
+    'technology-2018-HL-paper-secC-q4b-iii-art':
+        'An empty cause and effect diagram leading to Problem, with the '
+        'headings Equipment, Materials, Personnel, Environmental, Methods and '
+        'Machines.',
+    'technology-2018-HL-paper-secC-q4c-art':
+        'Photograph of a fidget spinner, and a table of seven hole sizes in mm: '
+        '3D Printer 16.08, 16.04, 16.10, 15.90, 16.08, 16.04, 15.02, sigma = '
+        '.391; Laser Cutter 15.98, 15.96, 16.04, 16.03, 15.98, 16.02, 16.02, '
+        'sigma = .030.',
+    'technology-2018-HL-paper-secC-q4c-i-art':
+        'Photograph of a fidget spinner, the table of hole sizes in mm (3D '
+        'Printer 16.08, 16.04, 16.10, 15.90, 16.08, 16.04, 15.02, sigma = .391; '
+        'Laser Cutter 15.98, 15.96, 16.04, 16.03, 15.98, 16.02, 16.02, sigma = '
+        '.030), and the formula Cp = Tolerance Range over 6 sigma.',
+    'technology-2018-HL-paper-secC-q4d-art':
+        'Two graphs of sales against time in months: Graph A a smooth rise to a '
+        'gentle peak and slight fall; Graph B flat, then a sudden tall spike and '
+        'a steep fall.',
+})
+
 # 2019 Ordinary (Technology lane, 4 November 2026).
 REVIEWED.update({
     # Pictures the 2019 stems point at, added after the batch browser check.

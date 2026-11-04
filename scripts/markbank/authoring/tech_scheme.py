@@ -120,7 +120,11 @@ FURNITURE = re.compile(
     # ...and an option's breakdown on a line of its own, "(a) - 10 marks,
     # (b) - 16 marks, (c) OR (d) - 14 marks" (2019 Higher Option 2).
     r'|^\(a\)\s*[-\u2013]\s*\d{1,2}\s*marks?\s*,'
-    r'|^OR\s*$', re.I)
+    r'|^OR\s*$'
+    # The page's running footer, "Page 2 of 9" (2018 Higher): set after a
+    # block's tariff, it fell into the next block and shipped as 3(a)'s first
+    # row. And Section A's own, "Section A - Page 2 of 7".
+    r'|^(?:Section\s+[ABC]\s*[-\u2013]\s*)?Page\s+\d+\s+of\s+\d+(?:\s+Page\s+\d+\s+of\s+\d+)?\s*$', re.I)
 
 # The examiner talking to the examiner rather than stating an answer, and the
 # scheme's own lead-in to a list. Neither is a marking point.

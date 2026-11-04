@@ -169,6 +169,15 @@ TOPIC_OVERRIDES = {
     'tech-2019-ol-b3a-ii': 'tech-core-ict',
     'tech-2019-ol-b3b-iii': 'tech-core-materials', # manufacturing the VR viewer
     'tech-2019-ol-b3d-i': 'tech-core-energy',      # greenhouse gas emissions
+    # 2018 Higher.
+    'tech-2018-hl-a1-ii': 'tech-core-materials',   # computer aided manufacture
+    'tech-2018-hl-a13': 'tech-core-graphics',      # orthographic views (of an IC chip)
+    'tech-2018-hl-b2c-i': 'tech-core-ict',         # drone fleet giving on-line coverage
+    'tech-2018-hl-b3b-i': 'tech-core-materials',   # choosing the casing's plastic
+    'tech-2018-hl-b3c-i': 'tech-core-ict',         # paperless ticketing (computer control)
+    'tech-2018-hl-b3c-ii': 'tech-core-ict',
+    'tech-2018-hl-b3d-i': 'tech-core-materials',   # workplace and workshop safety
+    'tech-2018-hl-b3d-ii': 'tech-core-materials',
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]
