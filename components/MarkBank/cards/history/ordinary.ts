@@ -19552,4 +19552,3894 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s1-q1a", topicId: "hist-lm-irl-2", conceptId: "did-bands-play",
+    section: "1", questionRef: "2026 OL Later Modern Section 1 Q1(a)",
+    stem: "Case study: The GAA to 1891",
+    questionText: "What did the bands play, according to document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The bands played national airs", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s1-q1b", topicId: "hist-lm-irl-2", conceptId: "who-swarmed-onto-field",
+    section: "1", questionRef: "2026 OL Later Modern Section 1 Q1(b)",
+    stem: "Case study: The GAA to 1891",
+    questionText: "According to document A, who swarmed onto the field?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The crowd of onlookers/the Cork fans", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s1-q1c", topicId: "hist-lm-irl-2", conceptId: "against-whom-did-moycarkey-compete",
+    section: "1", questionRef: "2026 OL Later Modern Section 1 Q1(c)",
+    stem: "Case study: The GAA to 1891",
+    questionText: "According to document A, against whom did Moycarkey compete?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Cork National Hurling Club", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s1-q1d", topicId: "hist-lm-irl-2", conceptId: "did-tipperary-teams-travel-cork",
+    section: "1", questionRef: "2026 OL Later Modern Section 1 Q1(d)",
+    stem: "Case study: The GAA to 1891",
+    questionText: "How did the Tipperary teams travel to Cork, according to document B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By train", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s1-q1e", topicId: "hist-lm-irl-2", conceptId: "who-won-overall",
+    section: "1", questionRef: "2026 OL Later Modern Section 1 Q1(e)",
+    stem: "Case study: The GAA to 1891",
+    questionText: "According to document B, who won overall?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Cork teams", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s1-q2a", topicId: "hist-lm-irl-2", conceptId: "depict-lively-well-supported-event",
+    section: "1", questionRef: "2026 OL Later Modern Section 1 Q2(a)",
+    stem: "Case study: The GAA to 1891",
+    questionText: "Do both documents depict a lively, well‐supported event? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Both docs depict a lively, well-supported event.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The biggest crowd ever attended the games Five bands accompanied the Tipperary players Crowd invaded the pitch Deafening cheers for the Cork teams", marks: null, contextNote: "Doc A" },
+    { id: "r-3", kind: "point", verbatim: "Five Tipperary teams played challenge matches against Cork teams More than 20,000 people attended the tournament An occasion full of pageantry and music", marks: null, contextNote: "Doc B" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s1-q2b", topicId: "hist-lm-irl-2", conceptId: "criticise-behaviour-cork-supporters",
+    section: "1", questionRef: "2026 OL Later Modern Section 1 Q2(b)",
+    stem: "Case study: The GAA to 1891",
+    questionText: "Do both documents criticise the behaviour of the Cork supporters? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Both documents describe the behaviour of the Cork supporters, with doc B more critical of their behaviour than doc A.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Praises the crowd as “good-humoured”", marks: null, contextNote: "Doc A" },
+    { id: "r-3", kind: "point", verbatim: "Says they “swarmed” onto the field and “obstructed” the Tipperary players Says that there would have been the best hurling ever seen “if the crowd kept off the field”", marks: null, contextNote: "Doc A" },
+    { id: "r-4", kind: "point", verbatim: "He implies they did not give “fair play” to the visiting teams", marks: null, contextNote: "Doc A" },
+    { id: "r-5", kind: "point", verbatim: "“Not a single cheer” for the visiting teams The writer does not strongly criticise the crowd, perhaps because these would be the people buying this newspaper.", marks: null, contextNote: "Doc A" },
+    { id: "r-6", kind: "point", verbatim: "The writer refers to the “continuous interference” with play, which is a criticism of the Cork supporters", marks: null, contextNote: "Doc B" },
+    { id: "r-7", kind: "point", verbatim: "He says this interference “hurt the chances of the Tipperary men”, showing that the Cork supporters had not allowed a fair contest to take place.", marks: null, contextNote: "Doc B" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s1-q3a", topicId: "hist-lm-irl-2", conceptId: "think-reliable-historical-source-reason",
+    section: "1", questionRef: "2026 OL Later Modern Section 1 Q3(a)",
+    stem: "Case study: The GAA to 1891",
+    questionText: "Do you think that document A is a reliable historical source? Give a reason for your answer, referring to the document.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Answers can argue for/against the reliability of the source", marks: null },
+    { id: "r-2", kind: "point", verbatim: "It is a primary source written by somebody who attended the games", marks: null },
+    { id: "r-3", kind: "point", verbatim: "It provides factual information about the size of the crowd, the presence of five bands and the behaviour of the crowd, etc", marks: null },
+    { id: "r-4", kind: "point", verbatim: "It is a Cork newspaper writing for a Cork readership and therefore hesitates to criticise the way the Cork crowd interfered with the run of play", marks: null },
+    { id: "r-5", kind: "point", verbatim: "An implied yes/no with a valid reason can earn Max =", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s1-q3b", topicId: "hist-lm-irl-2", conceptId: "example-historian-paul-rouse-made-use",
+    section: "1", questionRef: "2026 OL Later Modern Section 1 Q3(b)",
+    stem: "Case study: The GAA to 1891",
+    questionText: "Give one example of how historian Paul Rouse made use of evidence from document A to write about the history of the GAA in document B. Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "There is a direct link between the two documents: In doc A, the newspaper reporter said “we venture to remark that if the crowd had kept off the field and given fair play to the visitors, the contest would have provided the best hurling ever seen”", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Paul Rouse (doc B) uses this evidence to say that “even the local papers” noted the behaviour of the home crowd which had hurt the chances of the Tipperary men", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Answer must clearly make a link between the two documents Max =", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s1-q4", topicId: "hist-lm-irl-2", conceptId: "ways-did-gaa-develop-years-1884",
+    section: "1", questionRef: "2026 OL Later Modern Section 1 Q4",
+    stem: "Case study: The GAA to 1891",
+    questionText: "In what ways did the GAA develop in the years 1884 to 1891?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[5], schemePages: [10] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t1a-q1", topicId: "hist-lm-irl-1", conceptId: "opening-event-described",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 1 A Q1",
+    stem: "In this edited extract, The Freeman’s Journal (August, 1850) describes the opening procession of the Synod of Thurles. Read it and answer the questions which follow. Every window in the neighbouring houses was crowded with spectators during the procession of bishops and priests. The large bell of the chapel and the chimes of the convent were heard at intervals. Despite the immense crowds, so complete was the respectful silence that, even at a considerable distance, the organ of the chapel could be heard.",
+    questionText: "The opening of what event is described?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Synod of Thurles", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t1a-q2", topicId: "hist-lm-irl-1", conceptId: "who-took-part-procession",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 1 A Q2",
+    stem: "In this edited extract, The Freeman’s Journal (August, 1850) describes the opening procession of the Synod of Thurles. Read it and answer the questions which follow. Every window in the neighbouring houses was crowded with spectators during the procession of bishops and priests. The large bell of the chapel and the chimes of the convent were heard at intervals. Despite the immense crowds, so complete was the respectful silence that, even at a considerable distance, the organ of the chapel could be heard.",
+    questionText: "Who took part in the procession?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bishops and priests", marks: 6, contextNote: "(3m + 3m)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t1a-q3", topicId: "hist-lm-irl-1", conceptId: "religious-buildings-mentioned",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 1 A Q3",
+    stem: "In this edited extract, The Freeman’s Journal (August, 1850) describes the opening procession of the Synod of Thurles. Read it and answer the questions which follow. Every window in the neighbouring houses was crowded with spectators during the procession of bishops and priests. The large bell of the chapel and the chimes of the convent were heard at intervals. Despite the immense crowds, so complete was the respectful silence that, even at a considerable distance, the organ of the chapel could be heard.",
+    questionText: "What religious buildings are mentioned?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Chapel and convent", marks: 6, contextNote: "(3m + 3m)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t1a-q4", topicId: "hist-lm-irl-1", conceptId: "sounds-heard",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 1 A Q4",
+    stem: "In this edited extract, The Freeman’s Journal (August, 1850) describes the opening procession of the Synod of Thurles. Read it and answer the questions which follow. Every window in the neighbouring houses was crowded with spectators during the procession of bishops and priests. The large bell of the chapel and the chimes of the convent were heard at intervals. Despite the immense crowds, so complete was the respectful silence that, even at a considerable distance, the organ of the chapel could be heard.",
+    questionText: "What sounds were to be heard?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "any two", marks: null, group: {"claimMax":2,"perOption":3,"options":["Chapel bell","convent chimes","organ"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t1a-q5", topicId: "hist-lm-irl-1", conceptId: "decision-reached-synod-thurles",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 1 A Q5",
+    stem: "In this edited extract, The Freeman’s Journal (August, 1850) describes the opening procession of the Synod of Thurles. Read it and answer the questions which follow. Every window in the neighbouring houses was crowded with spectators during the procession of bishops and priests. The large bell of the chapel and the chimes of the convent were heard at intervals. Despite the immense crowds, so complete was the respectful silence that, even at a considerable distance, the organ of the chapel could be heard.",
+    questionText: "What was one decision reached at the Synod of Thurles?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE decision of the Synod of Thurles", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t1b", topicId: "hist-lm-irl-1", conceptId: "tithe-war-william-carleton-charles-kickham",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 1 B",
+    stem: "Ireland and the Union, 1815‐1870",
+    questionText: "Write a short paragraph on one of the following:\n1. The Tithe War.\n2. William Carleton.\n3. Charles Kickham.\n4. Industrial development in Belfast.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t1c", topicId: "hist-lm-irl-1", conceptId: "during-period-1815-1870-impact-emigration",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 1 C",
+    stem: "Ireland and the Union, 1815‐1870",
+    questionText: "Answer one of the following:\n1. During the period 1815‐1870, what was the impact of emigration on Ireland?\n2. What were successes and failures in the career of Daniel O’Connell?\n3. What was the importance of Thomas Davis and/or James Stephens?\n4. What did Asenath Nicholson and/or Mother Mary Aikenhead contribute to Irish life?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t3a-q1", topicId: "hist-lm-irl-3", conceptId: "position-held-kathleen-connell",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 3 A Q1",
+    stem: "This is an edited extract from the diary of Kathleen O’Connell (Éamon de Valera’s personal secretary), 7 December 1921, the day after the signing of the Anglo‐Irish Treaty. Read it and answer the questions which follow. Treaty published in all the papers this morning. President de Valera in an awful state. Oh what a disappointment to our bright hopes. What a farce. Cabinet meeting at 11. De Valera was thinking of recalling the delegation from London and asking for the resignation of Ministers Griffith, Collins and Barton. Griffith’s statement that Ireland has achieved freedom is such a farce. Partition of our country and remaining as British subjects is the “freedom” we are to have.",
+    questionText: "What position was held by Kathleen O’Connell?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "De Valera’s personal secretary/secretary", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t3a-q2", topicId: "hist-lm-irl-3", conceptId: "condition-valera",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 3 A Q2",
+    stem: "This is an edited extract from the diary of Kathleen O’Connell (Éamon de Valera’s personal secretary), 7 December 1921, the day after the signing of the Anglo‐Irish Treaty. Read it and answer the questions which follow. Treaty published in all the papers this morning. President de Valera in an awful state. Oh what a disappointment to our bright hopes. What a farce. Cabinet meeting at 11. De Valera was thinking of recalling the delegation from London and asking for the resignation of Ministers Griffith, Collins and Barton. Griffith’s statement that Ireland has achieved freedom is such a farce. Partition of our country and remaining as British subjects is the “freedom” we are to have.",
+    questionText: "In what condition was de Valera?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He was in an “awful” state", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t3a-q3", topicId: "hist-lm-irl-3", conceptId: "valera-thinking-asking",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 3 A Q3",
+    stem: "This is an edited extract from the diary of Kathleen O’Connell (Éamon de Valera’s personal secretary), 7 December 1921, the day after the signing of the Anglo‐Irish Treaty. Read it and answer the questions which follow. Treaty published in all the papers this morning. President de Valera in an awful state. Oh what a disappointment to our bright hopes. What a farce. Cabinet meeting at 11. De Valera was thinking of recalling the delegation from London and asking for the resignation of Ministers Griffith, Collins and Barton. Griffith’s statement that Ireland has achieved freedom is such a farce. Partition of our country and remaining as British subjects is the “freedom” we are to have.",
+    questionText: "What was de Valera thinking of asking for?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Recalling the delegation from London/The resignation of the Ministers", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t3a-q4", topicId: "hist-lm-irl-3", conceptId: "did-kathleen-connell-think-griffith-version",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 3 A Q4",
+    stem: "This is an edited extract from the diary of Kathleen O’Connell (Éamon de Valera’s personal secretary), 7 December 1921, the day after the signing of the Anglo‐Irish Treaty. Read it and answer the questions which follow. Treaty published in all the papers this morning. President de Valera in an awful state. Oh what a disappointment to our bright hopes. What a farce. Cabinet meeting at 11. De Valera was thinking of recalling the delegation from London and asking for the resignation of Ministers Griffith, Collins and Barton. Griffith’s statement that Ireland has achieved freedom is such a farce. Partition of our country and remaining as British subjects is the “freedom” we are to have.",
+    questionText: "What did Kathleen O’Connell think of Griffith’s version of Irish freedom?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "She calls it a “farce”/she opposes it", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t3a-q5", topicId: "hist-lm-irl-3", conceptId: "political-organisation-associated-arthur-griffith",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 3 A Q5",
+    stem: "This is an edited extract from the diary of Kathleen O’Connell (Éamon de Valera’s personal secretary), 7 December 1921, the day after the signing of the Anglo‐Irish Treaty. Read it and answer the questions which follow. Treaty published in all the papers this morning. President de Valera in an awful state. Oh what a disappointment to our bright hopes. What a farce. Cabinet meeting at 11. De Valera was thinking of recalling the delegation from London and asking for the resignation of Ministers Griffith, Collins and Barton. Griffith’s statement that Ireland has achieved freedom is such a farce. Partition of our country and remaining as British subjects is the “freedom” we are to have.",
+    questionText: "What was one political organisation associated with Arthur Griffith?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE political organisation associated with Griffith", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t3b", topicId: "hist-lm-irl-3", conceptId: "patrick-pearse-war-independence-1919-1921",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 3 B",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
+    questionText: "Write a short paragraph on one of the following:\n1. Patrick Pearse.\n2. The War of Independence, 1919‐1921.\n3. The Eucharistic Congress, 1932.\n4. The fortunes of the Irish language, 1922‐1949.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t3c", topicId: "hist-lm-irl-3", conceptId: "role-countess-markievicz-evie-hone-irish",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 3 C",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
+    questionText: "Answer one of the following:\n1. What was the role of Countess Markievicz and/or Evie Hone in Irish affairs?\n2. What part did Michael Collins play in negotiating and defending the Anglo‐Irish Treaty?\n3. How did Éamon de Valera handle Anglo‐Irish relations, 1932‐1939?\n4. What problems did Belfast experience during World War II?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t4a-q1", topicId: "hist-lm-irl-4", conceptId: "groups-came-dominate-five-points",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 4 A Q1",
+    stem: "This edited extract deals with the Five Points district, a poor quarter of New York. Read it and answer the questions which follow. The two poorest groups of New Yorkers – Irish Catholic immigrants and African‐Americans – quickly came to dominate Five Points. The neighbourhood’s raucous saloons and dancehalls made it notorious. So, too, did the drunken brawls that the two groups engaged in. However, its drunks and crooks were outnumbered by hardworking, law‐abiding immigrants, who saved money to support aged parents back in Ireland and to bring more of their countrymen to America. They also sought to protect themselves against the contagious diseases, such as cholera and measles, that spread like wildfire.",
+    questionText: "What two groups came to dominate Five Points?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Irish Catholic immigrants and African-Americans", marks: 6, contextNote: "(3m + 3m)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t4a-q2", topicId: "hist-lm-irl-4", conceptId: "feature-life-there-became-notorious",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 4 A Q2",
+    stem: "This edited extract deals with the Five Points district, a poor quarter of New York. Read it and answer the questions which follow. The two poorest groups of New Yorkers – Irish Catholic immigrants and African‐Americans – quickly came to dominate Five Points. The neighbourhood’s raucous saloons and dancehalls made it notorious. So, too, did the drunken brawls that the two groups engaged in. However, its drunks and crooks were outnumbered by hardworking, law‐abiding immigrants, who saved money to support aged parents back in Ireland and to bring more of their countrymen to America. They also sought to protect themselves against the contagious diseases, such as cholera and measles, that spread like wildfire.",
+    questionText: "What was one feature of the life there that became notorious?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Raucous saloons/dancehalls/drunken brawls/crooks", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t4a-q3", topicId: "hist-lm-irl-4", conceptId: "reason-immigrants-saved-money",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 4 A Q3",
+    stem: "This edited extract deals with the Five Points district, a poor quarter of New York. Read it and answer the questions which follow. The two poorest groups of New Yorkers – Irish Catholic immigrants and African‐Americans – quickly came to dominate Five Points. The neighbourhood’s raucous saloons and dancehalls made it notorious. So, too, did the drunken brawls that the two groups engaged in. However, its drunks and crooks were outnumbered by hardworking, law‐abiding immigrants, who saved money to support aged parents back in Ireland and to bring more of their countrymen to America. They also sought to protect themselves against the contagious diseases, such as cholera and measles, that spread like wildfire.",
+    questionText: "What was one reason why immigrants saved money?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To send to elderly parents in Ireland/to pay for others to come to the US", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t4a-q4", topicId: "hist-lm-irl-4", conceptId: "five-points-unhealthy-place-live",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 4 A Q4",
+    stem: "This edited extract deals with the Five Points district, a poor quarter of New York. Read it and answer the questions which follow. The two poorest groups of New Yorkers – Irish Catholic immigrants and African‐Americans – quickly came to dominate Five Points. The neighbourhood’s raucous saloons and dancehalls made it notorious. So, too, did the drunken brawls that the two groups engaged in. However, its drunks and crooks were outnumbered by hardworking, law‐abiding immigrants, who saved money to support aged parents back in Ireland and to bring more of their countrymen to America. They also sought to protect themselves against the contagious diseases, such as cholera and measles, that spread like wildfire.",
+    questionText: "Why was Five Points an unhealthy place in which to live?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Contagious diseases spread like wildfire", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t4a-q5", topicId: "hist-lm-irl-4", conceptId: "reason-many-irish-people-emigrated-nineteenth",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 4 A Q5",
+    stem: "This edited extract deals with the Five Points district, a poor quarter of New York. Read it and answer the questions which follow. The two poorest groups of New Yorkers – Irish Catholic immigrants and African‐Americans – quickly came to dominate Five Points. The neighbourhood’s raucous saloons and dancehalls made it notorious. So, too, did the drunken brawls that the two groups engaged in. However, its drunks and crooks were outnumbered by hardworking, law‐abiding immigrants, who saved money to support aged parents back in Ireland and to bring more of their countrymen to America. They also sought to protect themselves against the contagious diseases, such as cholera and measles, that spread like wildfire.",
+    questionText: "Give one reason why so many Irish people emigrated to the US in the nineteenth century.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t4b", topicId: "hist-lm-irl-4", conceptId: "grosse-isle-orange-order-canada-mother",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 4 B",
+    stem: "The Irish diaspora, 1840‐1966",
+    questionText: "Write a short paragraph on one of the following:\n1. Grosse Isle.\n2. The Orange Order in Canada.\n3. Mother Mary Martin.\n4. Maureen O’Hara.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t4c", topicId: "hist-lm-irl-4", conceptId: "achievements-archbishop-daniel-mannix-bishop-edward",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 4 C",
+    stem: "The Irish diaspora, 1840‐1966",
+    questionText: "Answer one of the following:\n1. What were the achievements of Archbishop Daniel Mannix and/or Bishop Edward Galvin?\n2. How successful was Éamon de Valera’s mission to America, June 1919‐December 1920?\n3. What problems faced Irish immigrants in Britain, 1920‐1966?\n4. What was the impact of Joe Kennedy and/or John F. Kennedy?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t5a-q1", topicId: "hist-lm-irl-5", conceptId: "problem-expected-arise-derry",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 5 A Q1",
+    stem: "This edited extract, from a report prepared for the Dublin government, anticipated problems linked to the activities of Apprentice Boys in Derry in August 1969. Read it and answer the questions which follow. The immediate problem is Derry. We are gravely concerned at the possibility of widespread discord [conflict] and bloodshed in Derry on 12th August. We understand that at the Apprentice Boys march on that day there are plans for 73 bands, compared with the usual 17 or so. This will mean a presence of some 30,000 persons, representing the extreme Protestant element. We feel that the British government, with the Northern authorities, should take all possible action in advance, to ensure that bloodshed does not occur.",
+    questionText: "What problem was expected to arise in Derry?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Problems linked to the activities of the ABOD/widespread discord and bloodshed", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t5a-q2", topicId: "hist-lm-irl-5", conceptId: "when-feared-trouble-arise",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 5 A Q2",
+    stem: "This edited extract, from a report prepared for the Dublin government, anticipated problems linked to the activities of Apprentice Boys in Derry in August 1969. Read it and answer the questions which follow. The immediate problem is Derry. We are gravely concerned at the possibility of widespread discord [conflict] and bloodshed in Derry on 12th August. We understand that at the Apprentice Boys march on that day there are plans for 73 bands, compared with the usual 17 or so. This will mean a presence of some 30,000 persons, representing the extreme Protestant element. We feel that the British government, with the Northern authorities, should take all possible action in advance, to ensure that bloodshed does not occur.",
+    questionText: "When was it feared trouble would arise?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "12th August", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "1969", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t5a-q3", topicId: "hist-lm-irl-5", conceptId: "many-people-derry-march",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 5 A Q3",
+    stem: "This edited extract, from a report prepared for the Dublin government, anticipated problems linked to the activities of Apprentice Boys in Derry in August 1969. Read it and answer the questions which follow. The immediate problem is Derry. We are gravely concerned at the possibility of widespread discord [conflict] and bloodshed in Derry on 12th August. We understand that at the Apprentice Boys march on that day there are plans for 73 bands, compared with the usual 17 or so. This will mean a presence of some 30,000 persons, representing the extreme Protestant element. We feel that the British government, with the Northern authorities, should take all possible action in advance, to ensure that bloodshed does not occur.",
+    questionText: "How many people would be in Derry for the march?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "30,000 people", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t5a-q4", topicId: "hist-lm-irl-5", conceptId: "did-apprentice-boys-represent-writer",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 5 A Q4",
+    stem: "This edited extract, from a report prepared for the Dublin government, anticipated problems linked to the activities of Apprentice Boys in Derry in August 1969. Read it and answer the questions which follow. The immediate problem is Derry. We are gravely concerned at the possibility of widespread discord [conflict] and bloodshed in Derry on 12th August. We understand that at the Apprentice Boys march on that day there are plans for 73 bands, compared with the usual 17 or so. This will mean a presence of some 30,000 persons, representing the extreme Protestant element. We feel that the British government, with the Northern authorities, should take all possible action in advance, to ensure that bloodshed does not occur.",
+    questionText: "What did the Apprentice Boys represent, according to the writer?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The extreme Protestant element", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t5a-q5", topicId: "hist-lm-irl-5", conceptId: "aim-apprentice-boys-derry",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 5 A Q5",
+    stem: "This edited extract, from a report prepared for the Dublin government, anticipated problems linked to the activities of Apprentice Boys in Derry in August 1969. Read it and answer the questions which follow. The immediate problem is Derry. We are gravely concerned at the possibility of widespread discord [conflict] and bloodshed in Derry on 12th August. We understand that at the Apprentice Boys march on that day there are plans for 73 bands, compared with the usual 17 or so. This will mean a presence of some 30,000 persons, representing the extreme Protestant element. We feel that the British government, with the Northern authorities, should take all possible action in advance, to ensure that bloodshed does not occur.",
+    questionText: "What was one aim of the Apprentice Boys of Derry?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE aim of the ABOD", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t5b", topicId: "hist-lm-irl-5", conceptId: "conn-patricia-mccluskey-seamus-heaney-power",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 5 B",
+    stem: "Politics and society in Northern Ireland, 1949‐1993",
+    questionText: "Write a short paragraph on one of the following:\n1. Conn and Patricia McCluskey.\n2. Seamus Heaney.\n3. Why the power‐sharing executive collapsed, 1974.\n4. The impact of the “Troubles” on the economy of Northern Ireland.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t5c", topicId: "hist-lm-irl-5", conceptId: "did-terence-neill-attempt-bring-change",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 5 C",
+    stem: "Politics and society in Northern Ireland, 1949‐1993",
+    questionText: "Answer one of the following:\n1. How did Terence O’Neill attempt to bring about change in Northern Ireland?\n2. Why did the establishment of a university at Coleraine provoke controversy?\n3. What influence had Bernadette Devlin and/or Gerry Adams on the affairs of Northern Ireland?\n4. How did Margaret Thatcher respond to the “Troubles” in Northern Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t6a-q1", topicId: "hist-lm-irl-6", conceptId: "who-celebrated-clock-mass",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 6 A Q1",
+    stem: "In this edited extract journalist Patsy McGarry recalls the impact of Vatican II. Read it and answer the questions which follow. The second Vatican Council had begun in 1962. Every Sunday when he was back in Ballaghaderreen from Rome, Bishop James Fergus would celebrate the Children’s Mass at 10 o’clock. He would tell us about what was happening at the Council and the changes it might bring. I was excited by the opening of the Catholic Church to the world and by the promise of greater social justice. I saw the gloom of the Cathedral eliminated by bright colours, with the priest facing us at Mass and speaking in English or Irish, instead of Latin.",
+    questionText: "Who celebrated the 10 o’clock Mass?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bishop James Fergus", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t6a-q2", topicId: "hist-lm-irl-6", conceptId: "news-did-celebrant-bring",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 6 A Q2",
+    stem: "In this edited extract journalist Patsy McGarry recalls the impact of Vatican II. Read it and answer the questions which follow. The second Vatican Council had begun in 1962. Every Sunday when he was back in Ballaghaderreen from Rome, Bishop James Fergus would celebrate the Children’s Mass at 10 o’clock. He would tell us about what was happening at the Council and the changes it might bring. I was excited by the opening of the Catholic Church to the world and by the promise of greater social justice. I saw the gloom of the Cathedral eliminated by bright colours, with the priest facing us at Mass and speaking in English or Irish, instead of Latin.",
+    questionText: "What news did the celebrant bring?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "News from the (Vatican) Council", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t6a-q3", topicId: "hist-lm-irl-6", conceptId: "development-excited-writer",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 6 A Q3",
+    stem: "In this edited extract journalist Patsy McGarry recalls the impact of Vatican II. Read it and answer the questions which follow. The second Vatican Council had begun in 1962. Every Sunday when he was back in Ballaghaderreen from Rome, Bishop James Fergus would celebrate the Children’s Mass at 10 o’clock. He would tell us about what was happening at the Council and the changes it might bring. I was excited by the opening of the Catholic Church to the world and by the promise of greater social justice. I saw the gloom of the Cathedral eliminated by bright colours, with the priest facing us at Mass and speaking in English or Irish, instead of Latin.",
+    questionText: "What was one development that excited the writer?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The opening of the Catholic Church to the world/the promise of greater social justice", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t6a-q4", topicId: "hist-lm-irl-6", conceptId: "change-mass-welcomed-writer",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 6 A Q4",
+    stem: "In this edited extract journalist Patsy McGarry recalls the impact of Vatican II. Read it and answer the questions which follow. The second Vatican Council had begun in 1962. Every Sunday when he was back in Ballaghaderreen from Rome, Bishop James Fergus would celebrate the Children’s Mass at 10 o’clock. He would tell us about what was happening at the Council and the changes it might bring. I was excited by the opening of the Catholic Church to the world and by the promise of greater social justice. I saw the gloom of the Cathedral eliminated by bright colours, with the priest facing us at Mass and speaking in English or Irish, instead of Latin.",
+    questionText: "What was one change in the Mass welcomed by the writer?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The priest would face the congregation/the Mass would be in English or Irish, not in Latin", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t6a-q5", topicId: "hist-lm-irl-6", conceptId: "impact-archbishop-john-charles-mcquaid-irish",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 6 A Q5",
+    stem: "In this edited extract journalist Patsy McGarry recalls the impact of Vatican II. Read it and answer the questions which follow. The second Vatican Council had begun in 1962. Every Sunday when he was back in Ballaghaderreen from Rome, Bishop James Fergus would celebrate the Children’s Mass at 10 o’clock. He would tell us about what was happening at the Council and the changes it might bring. I was excited by the opening of the Catholic Church to the world and by the promise of greater social justice. I saw the gloom of the Cathedral eliminated by bright colours, with the priest facing us at Mass and speaking in English or Irish, instead of Latin.",
+    questionText: "What was one impact of Archbishop John Charles McQuaid on Irish life?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE impact of Archbishop McQuaid", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t6b", topicId: "hist-lm-irl-6", conceptId: "changes-irish-education-1949-1989-irish",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 6 B",
+    stem: "Government, economy and society in the Republic of Ireland, 1949‐1989",
+    questionText: "Write a short paragraph on one of the following:\n1. Changes in Irish education, 1949‐1989.\n2. Irish involvement in the United Nations (UN).\n3. Sylvia Meehan.\n4. Garret FitzGerald.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s2t6c", topicId: "hist-lm-irl-6", conceptId: "contribution-whitaker-irish-affairs-impact-eec",
+    section: "2", questionRef: "2026 OL Later Modern Section 2 Topic 6 C",
+    stem: "Government, economy and society in the Republic of Ireland, 1949‐1989",
+    questionText: "Answer one of the following:\n1. What was the contribution of T.K. Whitaker to Irish affairs?\n2. What was the impact of the EEC on Irish fisheries?\n3. What was the contribution of Gay Byrne and/or Breandán Ó hEithir to Irish cultural life?\n4. What problems faced Jack Lynch as Taoiseach and how did he respond to them?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t1a-q1", topicId: "hist-lm-eur-1", conceptId: "position-held-baron-haussmann",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 1 A Q1",
+    stem: "This edited extract refers to Haussmann’s Paris. Read it and answer the questions which follow. The most famous project of urban renewal was begun by Baron Haussmann soon after his appointment as Prefect of the Seine in 1853. His aim was to rid Paris of its ancient narrow streets and replace them with broad boulevards. This would remove what had been ideal sites for the construction of barricades by revolutionary crowds and open the city to the forces of order. His grand schemes reduced the Île de la Cité’s population from 15,000 to 5,000, devastating nearly all the private dwellings there at one stroke. ‘It was the gutting of Old Paris,’ he boasted in his memoirs. Now the way was open for the construction of grand public buildings, such as the Opéra and the creation of the major railway stations.",
+    questionText: "What position was held by Baron Haussmann?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prefect of the Seine", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t1a-q2", topicId: "hist-lm-eur-1", conceptId: "his-aim",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 1 A Q2",
+    stem: "This edited extract refers to Haussmann’s Paris. Read it and answer the questions which follow. The most famous project of urban renewal was begun by Baron Haussmann soon after his appointment as Prefect of the Seine in 1853. His aim was to rid Paris of its ancient narrow streets and replace them with broad boulevards. This would remove what had been ideal sites for the construction of barricades by revolutionary crowds and open the city to the forces of order. His grand schemes reduced the Île de la Cité’s population from 15,000 to 5,000, devastating nearly all the private dwellings there at one stroke. ‘It was the gutting of Old Paris,’ he boasted in his memoirs. Now the way was open for the construction of grand public buildings, such as the Opéra and the creation of the major railway stations.",
+    questionText: "What was his aim?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To get rid of the ancient narrow streets/to build broad boulevards", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t1a-q3", topicId: "hist-lm-eur-1", conceptId: "cit-affected",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 1 A Q3",
+    stem: "This edited extract refers to Haussmann’s Paris. Read it and answer the questions which follow. The most famous project of urban renewal was begun by Baron Haussmann soon after his appointment as Prefect of the Seine in 1853. His aim was to rid Paris of its ancient narrow streets and replace them with broad boulevards. This would remove what had been ideal sites for the construction of barricades by revolutionary crowds and open the city to the forces of order. His grand schemes reduced the Île de la Cité’s population from 15,000 to 5,000, devastating nearly all the private dwellings there at one stroke. ‘It was the gutting of Old Paris,’ he boasted in his memoirs. Now the way was open for the construction of grand public buildings, such as the Opéra and the creation of the major railway stations.",
+    questionText: "How was the Île de la Cité affected?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The population was reduced from 15,000 to 5,000/destruction of private dwellings", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t1a-q4", topicId: "hist-lm-eur-1", conceptId: "way-haussmann-work-improved-transport-paris",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 1 A Q4",
+    stem: "This edited extract refers to Haussmann’s Paris. Read it and answer the questions which follow. The most famous project of urban renewal was begun by Baron Haussmann soon after his appointment as Prefect of the Seine in 1853. His aim was to rid Paris of its ancient narrow streets and replace them with broad boulevards. This would remove what had been ideal sites for the construction of barricades by revolutionary crowds and open the city to the forces of order. His grand schemes reduced the Île de la Cité’s population from 15,000 to 5,000, devastating nearly all the private dwellings there at one stroke. ‘It was the gutting of Old Paris,’ he boasted in his memoirs. Now the way was open for the construction of grand public buildings, such as the Opéra and the creation of the major railway stations.",
+    questionText: "What was one way in which Haussmann’s work improved transport in Paris?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Broader streets/new railway stations", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t1a-q5", topicId: "hist-lm-eur-1", conceptId: "way-haussmann-work-improved-sanitation-paris",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 1 A Q5",
+    stem: "This edited extract refers to Haussmann’s Paris. Read it and answer the questions which follow. The most famous project of urban renewal was begun by Baron Haussmann soon after his appointment as Prefect of the Seine in 1853. His aim was to rid Paris of its ancient narrow streets and replace them with broad boulevards. This would remove what had been ideal sites for the construction of barricades by revolutionary crowds and open the city to the forces of order. His grand schemes reduced the Île de la Cité’s population from 15,000 to 5,000, devastating nearly all the private dwellings there at one stroke. ‘It was the gutting of Old Paris,’ he boasted in his memoirs. Now the way was open for the construction of grand public buildings, such as the Opéra and the creation of the major railway stations.",
+    questionText: "What was one way in which Haussmann’s work improved sanitation in Paris?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE improvement to sanitation", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t1b", topicId: "hist-lm-eur-1", conceptId: "system-metternich-karl-marx-robert-owen",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 1 B",
+    stem: "Nationalism and state formation in Europe, 1815‐1871",
+    questionText: "Write a short paragraph on one of the following:\n1. The system of Metternich.\n2. Karl Marx.\n3. Robert Owen’s New Lanark.\n4. Serfdom in Russia.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t1c", topicId: "hist-lm-eur-1", conceptId: "did-1848-revolution-germany-fail-did",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 1 C",
+    stem: "Nationalism and state formation in Europe, 1815‐1871",
+    questionText: "Answer one of the following:\n1. Why did the 1848 revolution in Germany fail?\n2. What did Giuseppe Mazzini contribute to Italian unity?\n3. During the years 1815‐1871, what important changes took place in one or more of the following: music; art; literature?\n4. What key developments took place in science and technology, 1815‐1871?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,14] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t2a-q1", topicId: "hist-lm-eur-2", conceptId: "germany-changed-recent-decades-low",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 2 A Q1",
+    stem: "In this edited extract, German Chancellor Bernhard von Bülow, in a speech to the Reichstag, 11 December 1899, explains the background to the naval policy of Wilhelm II. Read it and answer the questions which follow. Recent decades have brought power and prosperity to Germany. This has not been welcomed by others. There is a great deal of envy of us in the world, political envy and economic envy. We shall retain our power only if we realise that without a strong army and a strong navy, there can be no security for us. We are a nation soon to have a population of sixty million. We live in the centre of Europe – but we hope to expand in all directions.",
+    questionText: "How had Germany changed in recent decades, according to Bülow?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Germany is now powerful/prosperous", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t2a-q2", topicId: "hist-lm-eur-2", conceptId: "things-did-germany-need-its-security",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 2 A Q2",
+    stem: "In this edited extract, German Chancellor Bernhard von Bülow, in a speech to the Reichstag, 11 December 1899, explains the background to the naval policy of Wilhelm II. Read it and answer the questions which follow. Recent decades have brought power and prosperity to Germany. This has not been welcomed by others. There is a great deal of envy of us in the world, political envy and economic envy. We shall retain our power only if we realise that without a strong army and a strong navy, there can be no security for us. We are a nation soon to have a population of sixty million. We live in the centre of Europe – but we hope to expand in all directions.",
+    questionText: "What two things did Germany need for its security?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A strong army and a strong navy", marks: 6, contextNote: "(3m + 3m)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t2a-q3", topicId: "hist-lm-eur-2", conceptId: "population-germany",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 2 A Q3",
+    stem: "In this edited extract, German Chancellor Bernhard von Bülow, in a speech to the Reichstag, 11 December 1899, explains the background to the naval policy of Wilhelm II. Read it and answer the questions which follow. Recent decades have brought power and prosperity to Germany. This has not been welcomed by others. There is a great deal of envy of us in the world, political envy and economic envy. We shall retain our power only if we realise that without a strong army and a strong navy, there can be no security for us. We are a nation soon to have a population of sixty million. We live in the centre of Europe – but we hope to expand in all directions.",
+    questionText: "What was the population of Germany?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "60 million people", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t2a-q4", topicId: "hist-lm-eur-2", conceptId: "did-germany-hope",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 2 A Q4",
+    stem: "In this edited extract, German Chancellor Bernhard von Bülow, in a speech to the Reichstag, 11 December 1899, explains the background to the naval policy of Wilhelm II. Read it and answer the questions which follow. Recent decades have brought power and prosperity to Germany. This has not been welcomed by others. There is a great deal of envy of us in the world, political envy and economic envy. We shall retain our power only if we realise that without a strong army and a strong navy, there can be no security for us. We are a nation soon to have a population of sixty million. We live in the centre of Europe – but we hope to expand in all directions.",
+    questionText: "What did Germany hope to do?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To expand in all directions", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t2a-q5", topicId: "hist-lm-eur-2", conceptId: "did-britain-respond-wilhelm-naval-policy",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 2 A Q5",
+    stem: "In this edited extract, German Chancellor Bernhard von Bülow, in a speech to the Reichstag, 11 December 1899, explains the background to the naval policy of Wilhelm II. Read it and answer the questions which follow. Recent decades have brought power and prosperity to Germany. This has not been welcomed by others. There is a great deal of envy of us in the world, political envy and economic envy. We shall retain our power only if we realise that without a strong army and a strong navy, there can be no security for us. We are a nation soon to have a population of sixty million. We live in the centre of Europe – but we hope to expand in all directions.",
+    questionText: "Briefly, how did Britain respond to Wilhelm II’s naval policy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE aspect of the British response", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t2b", topicId: "hist-lm-eur-2", conceptId: "anti-semitism-russia-second-international-1889",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 2 B",
+    stem: "Nation states and international tensions, 1871‐1920",
+    questionText: "Write a short paragraph on one of the following:\n1. Anti‐Semitism in Russia.\n2. The Second International, 1889‐1914.\n3. Marie Curie.\n4. Wilfred Owen.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t2c", topicId: "hist-lm-eur-2", conceptId: "successes-failures-otto-von-bismarck-chancellor",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 2 C",
+    stem: "Nation states and international tensions, 1871‐1920",
+    questionText: "Answer one of the following:\n1. What were successes and failures of Otto von Bismarck as Chancellor of Germany?\n2. What did women contribute to the war effort during World War I?\n3. What were the achievements of the Krupp family and/or Karl Benz?\n4. What was Woodrow Wilson’s contribution to the affairs of Europe?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,14] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t3a-q1", topicId: "hist-lm-eur-3", conceptId: "transport-improved",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 3 A Q1",
+    stem: "This edited extract describes Moscow in the 1930s. Read it and answer the questions which follow. Moscow was transformed in a few years from a rundown city of churches into an imperial capital with apartment blocks, department stores, places of culture, parks and sporting arenas. Streets were cleared to build broad avenues for cars that rolled off the production lines. The metro stations were like cathedrals, with spacious halls, marble floors, chandeliers and depictions of the achievements of the Five Year Plans. All of this stood in stark contrast to the people’s squalid living conditions in apartments where several families shared a few divided rooms and a kitchen.",
+    questionText: "How had transport improved?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Broad avenues for cars/new metro stations", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t3a-q2", topicId: "hist-lm-eur-3", conceptId: "metro-stations-shown-impressive",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 3 A Q2",
+    stem: "This edited extract describes Moscow in the 1930s. Read it and answer the questions which follow. Moscow was transformed in a few years from a rundown city of churches into an imperial capital with apartment blocks, department stores, places of culture, parks and sporting arenas. Streets were cleared to build broad avenues for cars that rolled off the production lines. The metro stations were like cathedrals, with spacious halls, marble floors, chandeliers and depictions of the achievements of the Five Year Plans. All of this stood in stark contrast to the people’s squalid living conditions in apartments where several families shared a few divided rooms and a kitchen.",
+    questionText: "How were the metro stations shown to be impressive?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They are like cathedrals/spacious/marble floors/chandeliers", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t3a-q3", topicId: "hist-lm-eur-3", conceptId: "provided-those-who-wished-lead-healthy",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 3 A Q3",
+    stem: "This edited extract describes Moscow in the 1930s. Read it and answer the questions which follow. Moscow was transformed in a few years from a rundown city of churches into an imperial capital with apartment blocks, department stores, places of culture, parks and sporting arenas. Streets were cleared to build broad avenues for cars that rolled off the production lines. The metro stations were like cathedrals, with spacious halls, marble floors, chandeliers and depictions of the achievements of the Five Year Plans. All of this stood in stark contrast to the people’s squalid living conditions in apartments where several families shared a few divided rooms and a kitchen.",
+    questionText: "What was provided for those who wished to lead a healthy life?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Parks/sporting arenas", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t3a-q4", topicId: "hist-lm-eur-3", conceptId: "hardship-endured-poor",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 3 A Q4",
+    stem: "This edited extract describes Moscow in the 1930s. Read it and answer the questions which follow. Moscow was transformed in a few years from a rundown city of churches into an imperial capital with apartment blocks, department stores, places of culture, parks and sporting arenas. Streets were cleared to build broad avenues for cars that rolled off the production lines. The metro stations were like cathedrals, with spacious halls, marble floors, chandeliers and depictions of the achievements of the Five Year Plans. All of this stood in stark contrast to the people’s squalid living conditions in apartments where several families shared a few divided rooms and a kitchen.",
+    questionText: "What was one hardship endured by the poor?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Squalid living conditions/over-crowding/shared kitchens", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t3a-q5", topicId: "hist-lm-eur-3", conceptId: "achievement-five-year-plans",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 3 A Q5",
+    stem: "This edited extract describes Moscow in the 1930s. Read it and answer the questions which follow. Moscow was transformed in a few years from a rundown city of churches into an imperial capital with apartment blocks, department stores, places of culture, parks and sporting arenas. Streets were cleared to build broad avenues for cars that rolled off the production lines. The metro stations were like cathedrals, with spacious halls, marble floors, chandeliers and depictions of the achievements of the Five Year Plans. All of this stood in stark contrast to the people’s squalid living conditions in apartments where several families shared a few divided rooms and a kitchen.",
+    questionText: "What was one achievement of the Five Year Plans?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE achievement of the Five-Year Plans", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t3b", topicId: "hist-lm-eur-3", conceptId: "keynes-hitler-foreign-policy-1933-1939",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 3 B",
+    stem: "Dictatorship and democracy in Europe, 1920‐1945",
+    questionText: "Write a short paragraph on one of the following:\n1. J.M. Keynes.\n2. Hitler’s foreign policy, 1933‐1939.\n3. The fall of France, 1940.\n4. Josef Stalin as war leader during World War II.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t3c", topicId: "hist-lm-eur-3", conceptId: "did-benito-mussolini-manage-church-relations",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 3 C",
+    stem: "Dictatorship and democracy in Europe, 1920‐1945",
+    questionText: "Answer one of the following:\n1. How did Benito Mussolini manage church‐state relations in Italy?\n2. Why did the Jarrow March take place, October 1936, and did it achieve its aims?\n3. What was the contribution of Joseph Goebbels and/or Leni Riefenstahl to Nazi Germany?\n4. How did Charlie Chaplin and/or Bing Crosby contribute to popular culture?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,14] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t4a-q1", topicId: "hist-lm-eur-4", conceptId: "when-did-soviet-army-arrive-budapest",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 4 A Q1",
+    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building. At the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles. People are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long. The Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
+    questionText: "When did the Soviet army arrive in Budapest?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "4th November", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "1956", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t4a-q2", topicId: "hist-lm-eur-4", conceptId: "suggested-hungarians-not-well-armed",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 4 A Q2",
+    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building. At the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles. People are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long. The Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
+    questionText: "How was it suggested that the Hungarians were not well‐armed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They have “no heavy weapons”/using hand grenades against tanks", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t4a-q3", topicId: "hist-lm-eur-4", conceptId: "outcome-battle-writer",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 4 A Q3",
+    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building. At the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles. People are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long. The Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
+    questionText: "What would be the outcome of the battle, according to the writer?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Defeat/death/will not be able to resist the Russians for long", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t4a-q4", topicId: "hist-lm-eur-4", conceptId: "did-hungarians-want-outside-world-writer",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 4 A Q4",
+    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building. At the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles. People are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long. The Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
+    questionText: "What did the Hungarians want from the outside world, according to the writer?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Support from the UN/A little encouragement", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t4a-q5", topicId: "hist-lm-eur-4", conceptId: "part-did-imre-nagy-play-affairs",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 4 A Q5",
+    stem: "On the morning of 4 November 1956, the Soviet army invaded Budapest, Hungary. This edited extract notes what a journalist could see and hear from the windows of a newspaper building. At the moment there is silence. It may be the silence before the storm. We have no heavy weapons, only light machine‐guns and rifles. People are jumping up at the tanks, throwing hand grenades and then slamming the drivers’ windows. The Hungarian people are not afraid of death. It is only a pity that they cannot resist for long. The Soviet tanks are getting nearer and there is heavy artillery. What is the United Nations doing? Give us a little encouragement.",
+    questionText: "Briefly, what part did Imre Nagy play in the affairs of Hungary?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE key point relating to Imre Nagy", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t4b", topicId: "hist-lm-eur-4", conceptId: "marshall-aid-development-nuclear-power-john",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 4 B",
+    stem: "Division and realignment in Europe, 1945‐1992",
+    questionText: "Write a short paragraph on one of the following:\n1. Marshall Aid.\n2. The development of nuclear power.\n3. John Lennon.\n4. Pope John Paul II.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t4c", topicId: "hist-lm-eur-4", conceptId: "did-berlin-become-divided-city-importance",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 4 C",
+    stem: "Division and realignment in Europe, 1945‐1992",
+    questionText: "Answer one of the following:\n1. How did Berlin become a divided city and what was the importance of the Berlin Blockade, 1948‐ 1949?\n2. What was the 1973 Oil Crisis and how did it affect life and work in Europe?\n3. What was the impact of Jacques Delors and/or Margaret Thatcher on European affairs?\n4. How successful a leader was Mikhail Gorbachev, at home and abroad?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,15] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t5a-q1", topicId: "hist-lm-eur-5", conceptId: "position-held-harold-macmillan-time-writing",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 5 A Q1",
+    stem: "In this edited extract, Harold Macmillan, then UK Chancellor of the Exchequer, recalls a meeting with a US delegation that took place in London a couple of days after Egypt’s Gamal Abdul Nasser nationalised the Suez Canal. Read it and answer the questions which follow. I met the Americans at 6.30. We had an hour’s talk. I told them as plainly as I could, that we must get Nasser out, either by diplomacy or war. It was a question not only of honour but of survival for us. I think they were quite alarmed for they had hoped to find me less extreme. If we keep the Americans really frightened, they will help us get what we want – international control of the Suez Canal and the collapse of Nasser.",
+    questionText: "What position was held by Harold Macmillan at the time of writing?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Chancellor of the Exchequer", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t5a-q2", topicId: "hist-lm-eur-5", conceptId: "where-long-did-macmillan-meet-his",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 5 A Q2",
+    stem: "In this edited extract, Harold Macmillan, then UK Chancellor of the Exchequer, recalls a meeting with a US delegation that took place in London a couple of days after Egypt’s Gamal Abdul Nasser nationalised the Suez Canal. Read it and answer the questions which follow. I met the Americans at 6.30. We had an hour’s talk. I told them as plainly as I could, that we must get Nasser out, either by diplomacy or war. It was a question not only of honour but of survival for us. I think they were quite alarmed for they had hoped to find me less extreme. If we keep the Americans really frightened, they will help us get what we want – international control of the Suez Canal and the collapse of Nasser.",
+    questionText: "Where, and for how long, did Macmillan meet his visitors?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "London and one hour", marks: 6, contextNote: "(3m + 3m)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t5a-q3", topicId: "hist-lm-eur-5", conceptId: "macmillan-recent-developments-important",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 5 A Q3",
+    stem: "In this edited extract, Harold Macmillan, then UK Chancellor of the Exchequer, recalls a meeting with a US delegation that took place in London a couple of days after Egypt’s Gamal Abdul Nasser nationalised the Suez Canal. Read it and answer the questions which follow. I met the Americans at 6.30. We had an hour’s talk. I told them as plainly as I could, that we must get Nasser out, either by diplomacy or war. It was a question not only of honour but of survival for us. I think they were quite alarmed for they had hoped to find me less extreme. If we keep the Americans really frightened, they will help us get what we want – international control of the Suez Canal and the collapse of Nasser.",
+    questionText: "Why, according to Macmillan, were recent developments important for the UK?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They were a matter of honour/survival", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t5a-q4", topicId: "hist-lm-eur-5", conceptId: "did-macmillan-hope-americans-help-him",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 5 A Q4",
+    stem: "In this edited extract, Harold Macmillan, then UK Chancellor of the Exchequer, recalls a meeting with a US delegation that took place in London a couple of days after Egypt’s Gamal Abdul Nasser nationalised the Suez Canal. Read it and answer the questions which follow. I met the Americans at 6.30. We had an hour’s talk. I told them as plainly as I could, that we must get Nasser out, either by diplomacy or war. It was a question not only of honour but of survival for us. I think they were quite alarmed for they had hoped to find me less extreme. If we keep the Americans really frightened, they will help us get what we want – international control of the Suez Canal and the collapse of Nasser.",
+    questionText: "What did Macmillan hope the Americans would help him to achieve?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Control of the Suez Canal/the collapse of Nasser", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t5a-q5", topicId: "hist-lm-eur-5", conceptId: "outcome-suez-crisis",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 5 A Q5",
+    stem: "In this edited extract, Harold Macmillan, then UK Chancellor of the Exchequer, recalls a meeting with a US delegation that took place in London a couple of days after Egypt’s Gamal Abdul Nasser nationalised the Suez Canal. Read it and answer the questions which follow. I met the Americans at 6.30. We had an hour’s talk. I told them as plainly as I could, that we must get Nasser out, either by diplomacy or war. It was a question not only of honour but of survival for us. I think they were quite alarmed for they had hoped to find me less extreme. If we keep the Americans really frightened, they will help us get what we want – international control of the Suez Canal and the collapse of Nasser.",
+    questionText: "Briefly, what was the outcome of the Suez Crisis?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE main outcome", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t5b", topicId: "hist-lm-eur-5", conceptId: "british-withdrawal-india-1945-1947-lom",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 5 B",
+    stem: "European retreat from empire and the aftermath, 1945‐1990",
+    questionText: "Write a short paragraph on one of the following:\n1. British withdrawal from India, 1945‐1947.\n2. The Lomé Conventions.\n3. Ho Chi Minh.\n4. Achmad Sukarno.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t5c", topicId: "hist-lm-eur-5", conceptId: "challenges-faced-development-workers-africa-did",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 5 C",
+    stem: "European retreat from empire and the aftermath, 1945‐1990",
+    questionText: "Answer one of the following:\n1. What challenges were faced by development workers in Africa?\n2. Why did Katanga secede from the Congo and in what ways did this affect the region?\n3. How did developments in Algeria and/or race relations at home cause problems for France?\n4. What were the main achievements of Chinua Achebe?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,15] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t6a-q1", topicId: "hist-lm-eur-6", conceptId: "did-billy-graham-want-preserved",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 6 A Q1",
+    stem: "This is an edited extract from a letter from the religious leader Billy Graham to President Eisenhower (2 December 1957). Read it and answer the questions which follow. Sacrifice and renewed dedication will be needed if the American way of life is to be preserved. We Americans are growing soft. Our amusements and greed for money are acting as a sedative. We almost need compulsory scientific training in all our schools, as well as compulsory physical training for all our young people. The American people need to be encouraged to look to God who is the source of all our spiritual and moral strength.",
+    questionText: "What did Billy Graham want preserved?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The American way of life", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t6a-q2", topicId: "hist-lm-eur-6", conceptId: "did-think-americans-growing-soft",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 6 A Q2",
+    stem: "This is an edited extract from a letter from the religious leader Billy Graham to President Eisenhower (2 December 1957). Read it and answer the questions which follow. Sacrifice and renewed dedication will be needed if the American way of life is to be preserved. We Americans are growing soft. Our amusements and greed for money are acting as a sedative. We almost need compulsory scientific training in all our schools, as well as compulsory physical training for all our young people. The American people need to be encouraged to look to God who is the source of all our spiritual and moral strength.",
+    questionText: "Why did he think Americans were growing soft?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "American amusements/greed for money", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t6a-q3", topicId: "hist-lm-eur-6", conceptId: "needed-schools",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 6 A Q3",
+    stem: "This is an edited extract from a letter from the religious leader Billy Graham to President Eisenhower (2 December 1957). Read it and answer the questions which follow. Sacrifice and renewed dedication will be needed if the American way of life is to be preserved. We Americans are growing soft. Our amusements and greed for money are acting as a sedative. We almost need compulsory scientific training in all our schools, as well as compulsory physical training for all our young people. The American people need to be encouraged to look to God who is the source of all our spiritual and moral strength.",
+    questionText: "What was needed in schools?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Compulsory scientific training/compulsory physical training", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t6a-q4", topicId: "hist-lm-eur-6", conceptId: "where-american-people-find-spiritual-moral",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 6 A Q4",
+    stem: "This is an edited extract from a letter from the religious leader Billy Graham to President Eisenhower (2 December 1957). Read it and answer the questions which follow. Sacrifice and renewed dedication will be needed if the American way of life is to be preserved. We Americans are growing soft. Our amusements and greed for money are acting as a sedative. We almost need compulsory scientific training in all our schools, as well as compulsory physical training for all our young people. The American people need to be encouraged to look to God who is the source of all our spiritual and moral strength.",
+    questionText: "Where could American people find spiritual and moral strength?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In God", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t6a-q5", topicId: "hist-lm-eur-6", conceptId: "achievement-billy-graham",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 6 A Q5",
+    stem: "This is an edited extract from a letter from the religious leader Billy Graham to President Eisenhower (2 December 1957). Read it and answer the questions which follow. Sacrifice and renewed dedication will be needed if the American way of life is to be preserved. We Americans are growing soft. Our amusements and greed for money are acting as a sedative. We almost need compulsory scientific training in all our schools, as well as compulsory physical training for all our young people. The American people need to be encouraged to look to God who is the source of all our spiritual and moral strength.",
+    questionText: "What, briefly, was one achievement of Billy Graham?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE achievement of Billy Graham", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t6b", topicId: "hist-lm-eur-6", conceptId: "economy-1945-1968-marilyn-monroe-muhammad",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 6 B",
+    stem: "The United States and the world, 1945‐1989",
+    questionText: "Write a short paragraph on one of the following:\n1. The US economy, 1945‐1968.\n2. Marilyn Monroe.\n3. Muhammad Ali.\n4. Multiculturalism in the US, 1968‐1989.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-s3t6c", topicId: "hist-lm-eur-6", conceptId: "did-joe-mccarthy-become-controversial-figure",
+    section: "3", questionRef: "2026 OL Later Modern Section 3 Topic 6 C",
+    stem: "The United States and the world, 1945‐1989",
+    questionText: "Answer one of the following:\n1. How and why did Joe McCarthy become a controversial figure?\n2. What was the role of Martin Luther King in the Montgomery bus boycott?\n3. How did the US achieve a moon landing in 1969 and what was its importance?\n4. In what ways did Betty Friedan criticise aspects of American life?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,15] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-extra-a-q1", topicId: "hist-lm-irl-2", conceptId: "when-where-did-meeting-take-place",
+    section: "2", questionRef: "2026 OL Later Modern Section Extra A Q1",
+    stem: "In this edited extract, Parnell announces Gladstone’s acceptance of Home Rule. Read it and answer the questions which follow. In March, 1886, when we were on the eve of the Home Rule Bill, Parnell summoned a few of us to the Westminster Palace Hotel, London, to hear the result of his conversation with Gladstone. We met on a raw, foggy night with our hearts on fire. The thought that a British Prime Minister had agreed to our dream quickened our pulses. As Parnell revealed details, however, we grew disheartened at the meanness of Gladstone’s offer, especially as regards finance. Towards midnight, disappointed, we went out into the fog and frost.",
+    questionText: "When and where did the meeting take place?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Westminster Palace Hotel and March 1886", marks: 6, contextNote: "(3m + 3m)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-extra-a-q2", topicId: "hist-lm-irl-2", conceptId: "revealed-meeting",
+    section: "2", questionRef: "2026 OL Later Modern Section Extra A Q2",
+    stem: "In this edited extract, Parnell announces Gladstone’s acceptance of Home Rule. Read it and answer the questions which follow. In March, 1886, when we were on the eve of the Home Rule Bill, Parnell summoned a few of us to the Westminster Palace Hotel, London, to hear the result of his conversation with Gladstone. We met on a raw, foggy night with our hearts on fire. The thought that a British Prime Minister had agreed to our dream quickened our pulses. As Parnell revealed details, however, we grew disheartened at the meanness of Gladstone’s offer, especially as regards finance. Towards midnight, disappointed, we went out into the fog and frost.",
+    questionText: "What was to be revealed at the meeting?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The outcome of Parnell’s conversation with Gladstone", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-extra-a-q3", topicId: "hist-lm-irl-2", conceptId: "those-present-enthusiastic-first",
+    section: "2", questionRef: "2026 OL Later Modern Section Extra A Q3",
+    stem: "In this edited extract, Parnell announces Gladstone’s acceptance of Home Rule. Read it and answer the questions which follow. In March, 1886, when we were on the eve of the Home Rule Bill, Parnell summoned a few of us to the Westminster Palace Hotel, London, to hear the result of his conversation with Gladstone. We met on a raw, foggy night with our hearts on fire. The thought that a British Prime Minister had agreed to our dream quickened our pulses. As Parnell revealed details, however, we grew disheartened at the meanness of Gladstone’s offer, especially as regards finance. Towards midnight, disappointed, we went out into the fog and frost.",
+    questionText: "Why were those present enthusiastic at first?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They thought that the British Prime Minister had agreed to their dream (of Home Rule)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-extra-a-q4", topicId: "hist-lm-irl-2", conceptId: "disappointed-end-meeting",
+    section: "2", questionRef: "2026 OL Later Modern Section Extra A Q4",
+    stem: "In this edited extract, Parnell announces Gladstone’s acceptance of Home Rule. Read it and answer the questions which follow. In March, 1886, when we were on the eve of the Home Rule Bill, Parnell summoned a few of us to the Westminster Palace Hotel, London, to hear the result of his conversation with Gladstone. We met on a raw, foggy night with our hearts on fire. The thought that a British Prime Minister had agreed to our dream quickened our pulses. As Parnell revealed details, however, we grew disheartened at the meanness of Gladstone’s offer, especially as regards finance. Towards midnight, disappointed, we went out into the fog and frost.",
+    questionText: "Why were they disappointed by the end of the meeting?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They thought that Gladstone’s offer was mean/limited/poorly financed", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-lm-extra-a-q5", topicId: "hist-lm-irl-2", conceptId: "outcome-vote-first-home-rule-bill",
+    section: "2", questionRef: "2026 OL Later Modern Section Extra A Q5",
+    stem: "In this edited extract, Parnell announces Gladstone’s acceptance of Home Rule. Read it and answer the questions which follow. In March, 1886, when we were on the eve of the Home Rule Bill, Parnell summoned a few of us to the Westminster Palace Hotel, London, to hear the result of his conversation with Gladstone. We met on a raw, foggy night with our hearts on fire. The thought that a British Prime Minister had agreed to our dream quickened our pulses. As Parnell revealed details, however, we grew disheartened at the meanness of Gladstone’s offer, especially as regards finance. Towards midnight, disappointed, we went out into the fog and frost.",
+    questionText: "What was the outcome of the vote on the First Home Rule Bill, 8 June 1886?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The First Home Rule Bill was defeated", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s1-q1a", topicId: "hist-em-irl-1", conceptId: "gaelic-chieftains-laois-offaly-receive-land",
+    section: "1", questionRef: "2026 OL Early Modern Section 1 Q1(a)",
+    stem: "Case study: The Plantation of Laois‐Offaly",
+    questionText: "Which Gaelic chieftains in Laois‐Offaly were to receive land, according to document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The co-operative Gaelic chieftains of Laois and Offaly", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s1-q1b", topicId: "hist-em-irl-1", conceptId: "where-receive-land",
+    section: "1", questionRef: "2026 OL Early Modern Section 1 Q1(b)",
+    stem: "Case study: The Plantation of Laois‐Offaly",
+    questionText: "Where were they to receive land, according to document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "On the western third of the territory along the River Shannon", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s1-q1c", topicId: "hist-em-irl-1", conceptId: "earlier-philipstown",
+    section: "1", questionRef: "2026 OL Early Modern Section 1 Q1(c)",
+    stem: "Case study: The Plantation of Laois‐Offaly",
+    questionText: "According to document A, what was the earlier name of Philipstown?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fort Governor", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s1-q1d", topicId: "hist-em-irl-1", conceptId: "crops-not-planted",
+    section: "1", questionRef: "2026 OL Early Modern Section 1 Q1(d)",
+    stem: "Case study: The Plantation of Laois‐Offaly",
+    questionText: "Why could crops not be planted, according to document B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The growing season of the year is over", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s1-q1e", topicId: "hist-em-irl-1", conceptId: "who-decide-rents-paid",
+    section: "1", questionRef: "2026 OL Early Modern Section 1 Q1(e)",
+    stem: "Case study: The Plantation of Laois‐Offaly",
+    questionText: "Who was to decide what rents were to be paid, according to document B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lord Deputy Sussex would decide on rents to be paid.", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s1-q2a", topicId: "hist-em-irl-1", conceptId: "note-required-those-who-receive-land",
+    section: "1", questionRef: "2026 OL Early Modern Section 1 Q2(a)",
+    stem: "Case study: The Plantation of Laois‐Offaly",
+    questionText: "Do the documents note what is to be required of those who receive land? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Both documents note what is to be required of those who receive land.", marks: null, contextNote: "Answers should use both documents to support their points" },
+    { id: "r-2", kind: "point", verbatim: "those who received land were to farm it, build houses of stone and timber and following English law and customs.", marks: null, contextNote: "Doc A" },
+    { id: "r-3", kind: "point", verbatim: "They were to pay rents and to increase tillage.", marks: null, contextNote: "Doc B" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s1-q2b", topicId: "hist-em-irl-1", conceptId: "garrisons-already-existence",
+    section: "1", questionRef: "2026 OL Early Modern Section 1 Q2(b)",
+    stem: "Case study: The Plantation of Laois‐Offaly",
+    questionText: "What garrisons were already in existence? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Garrisons are mentioned in both documents", marks: null },
+    { id: "r-2", kind: "point", verbatim: "There were existing garrisons at Fort Protector (Maryborough) and Fort Governor (Philipstown).", marks: null, contextNote: "Doc A" },
+    { id: "r-3", kind: "point", verbatim: "Laois and Offaly are occupied “only by our garrisons”, but their exact locations are not given.", marks: null, contextNote: "Doc B" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s1-q3a", topicId: "hist-em-irl-1", conceptId: "primary-source-secondary-source-reason",
+    section: "1", questionRef: "2026 OL Early Modern Section 1 Q3(a)",
+    stem: "Case study: The Plantation of Laois‐Offaly",
+    questionText: "Is document A a primary source or a secondary source? Give a reason for your answer, referring to the document.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A is a secondary source", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Give one reason, such as: It is from a book by Steven G. Ellis, published in 1985, over 400 years after the events in question", marks: null },
+    { id: "r-3", kind: "point", verbatim: "The extract is written in the past tense (e.g., “All were to farm the land…”), not as contemporary instructions to the new settlers", marks: null },
+    { id: "r-4", kind: "point", verbatim: "The doc refers to instructions from Queen Marry to Sussex, writing about them from a historical, not contemporary point of view.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s1-q3b", topicId: "hist-em-irl-1", conceptId: "evidence-there-queen-elizabeth-not-pleased",
+    section: "1", questionRef: "2026 OL Early Modern Section 1 Q3(b)",
+    stem: "Case study: The Plantation of Laois‐Offaly",
+    questionText: "What evidence is there in document B that Queen Elizabeth was not pleased with the progress of the Plantation of Laois‐Offaly? Support your answer with reference to the document.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document B shows that Queen Elizabeth I was not happy with the progress of the Plantation: She says that the two counties are “not yet planted”", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The counties are “unpopulated wastes”", marks: null },
+    { id: "r-3", kind: "point", verbatim: "They are costing her money and the cost “can only increase”", marks: null },
+    { id: "r-4", kind: "point", verbatim: "The best time of year for farming and building is already over.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s1-q4", topicId: "hist-em-irl-1", conceptId: "purpose-plantation-laois-offaly-did-achieve",
+    section: "1", questionRef: "2026 OL Early Modern Section 1 Q4",
+    stem: "Case study: The Plantation of Laois‐Offaly",
+    questionText: "What was the purpose of the Plantation of Laois‐Offaly and did it achieve its purpose?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[4], schemePages: [19] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t2a-q1", topicId: "hist-em-irl-2", conceptId: "church-did-meiler-magrath-leave",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 2 A Q1",
+    stem: "In this edited extract historian Richard Bagwell (1840‐1918) criticises Meiler Magrath. Read it and answer the questions which follow. Meiler Magrath was no credit either to the Catholic Church which he deserted or the Protestant Church which he joined. In 1607 he had been Archbishop of Cashel and Bishop of Emly for thirty‐six years. Both dioceses were found to be in a terrible state. Emly Cathedral was in ruins and things were little better in Cashel. “In the two dioceses,” it was reported, “there is not one minister to teach the people their duties to God and His Majesty.”",
+    questionText: "Which church did Meiler Magrath leave?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Catholic Church", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t2a-q2", topicId: "hist-em-irl-2", conceptId: "church-did-join",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 2 A Q2",
+    stem: "In this edited extract historian Richard Bagwell (1840‐1918) criticises Meiler Magrath. Read it and answer the questions which follow. Meiler Magrath was no credit either to the Catholic Church which he deserted or the Protestant Church which he joined. In 1607 he had been Archbishop of Cashel and Bishop of Emly for thirty‐six years. Both dioceses were found to be in a terrible state. Emly Cathedral was in ruins and things were little better in Cashel. “In the two dioceses,” it was reported, “there is not one minister to teach the people their duties to God and His Majesty.”",
+    questionText: "Which church did he join?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Protestant Church", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t2a-q3", topicId: "hist-em-irl-2", conceptId: "diocese-associated-him",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 2 A Q3",
+    stem: "In this edited extract historian Richard Bagwell (1840‐1918) criticises Meiler Magrath. Read it and answer the questions which follow. Meiler Magrath was no credit either to the Catholic Church which he deserted or the Protestant Church which he joined. In 1607 he had been Archbishop of Cashel and Bishop of Emly for thirty‐six years. Both dioceses were found to be in a terrible state. Emly Cathedral was in ruins and things were little better in Cashel. “In the two dioceses,” it was reported, “there is not one minister to teach the people their duties to God and His Majesty.”",
+    questionText: "What was one diocese associated with him?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cashel/Emly", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t2a-q4", topicId: "hist-em-irl-2", conceptId: "condition-emly-cathedral",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 2 A Q4",
+    stem: "In this edited extract historian Richard Bagwell (1840‐1918) criticises Meiler Magrath. Read it and answer the questions which follow. Meiler Magrath was no credit either to the Catholic Church which he deserted or the Protestant Church which he joined. In 1607 he had been Archbishop of Cashel and Bishop of Emly for thirty‐six years. Both dioceses were found to be in a terrible state. Emly Cathedral was in ruins and things were little better in Cashel. “In the two dioceses,” it was reported, “there is not one minister to teach the people their duties to God and His Majesty.”",
+    questionText: "In what condition was Emly Cathedral?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It was in ruins", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t2a-q5", topicId: "hist-em-irl-2", conceptId: "meiler-magrath-sometimes-use-negotiator-elizabethan",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 2 A Q5",
+    stem: "In this edited extract historian Richard Bagwell (1840‐1918) criticises Meiler Magrath. Read it and answer the questions which follow. Meiler Magrath was no credit either to the Catholic Church which he deserted or the Protestant Church which he joined. In 1607 he had been Archbishop of Cashel and Bishop of Emly for thirty‐six years. Both dioceses were found to be in a terrible state. Emly Cathedral was in ruins and things were little better in Cashel. “In the two dioceses,” it was reported, “there is not one minister to teach the people their duties to God and His Majesty.”",
+    questionText: "Why was Meiler Magrath sometimes of use as a negotiator in Elizabethan Ireland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t2b", topicId: "hist-em-irl-2", conceptId: "archbishop-adam-loftus-grace-malley-elizabethan",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 2 B",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
+    questionText: "Write a short paragraph on one of the following:\n1. Archbishop Adam Loftus.\n2. Grace O’Malley.\n3. Elizabethan Dublin.\n4. Recusancy in Ireland, 1559‐1603.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t2c", topicId: "hist-em-irl-2", conceptId: "aims-shane-neill-did-achieve-them",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 2 C",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
+    questionText: "Answer one of the following:\n1. What were the aims of Shane O’Neill and did he achieve them?\n2. Why was Tadhg Dall Ó hUiginn important in Gaelic Ireland?\n3. Why was there a plantation in Munster and how was it organised?\n4. What leadership did Hugh O’Neill provide in the Nine Years’ War?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t3a-q1", topicId: "hist-em-irl-3", conceptId: "when-did-elizabeth-butler-become-countess",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 3 A Q1",
+    stem: "This edited extract refers to Elizabeth Butler, Countess of Ormond. Read it and answer the questions which follow. In 1633, Elizabeth Butler became the Countess of Ormond on her husband’s succession to the earldom. On the outbreak of the 1641 rebellion she moved to Kilkenny Castle, the family seat [residence]. When the city became the capital of the Catholic Confederation she assisted Protestant refugees, giving them shelter in the Castle. In 1647, she followed her husband to England on his surrender of Dublin to parliamentary forces. When he decided to renew his fight for the Royalist cause she departed for France.",
+    questionText: "When did Elizabeth Butler become Countess of Ormond?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1633", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t3a-q2", topicId: "hist-em-irl-3", conceptId: "where-did-she-move-1641",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 3 A Q2",
+    stem: "This edited extract refers to Elizabeth Butler, Countess of Ormond. Read it and answer the questions which follow. In 1633, Elizabeth Butler became the Countess of Ormond on her husband’s succession to the earldom. On the outbreak of the 1641 rebellion she moved to Kilkenny Castle, the family seat [residence]. When the city became the capital of the Catholic Confederation she assisted Protestant refugees, giving them shelter in the Castle. In 1647, she followed her husband to England on his surrender of Dublin to parliamentary forces. When he decided to renew his fight for the Royalist cause she departed for France.",
+    questionText: "To where did she move in 1641?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kilkenny Castle", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t3a-q3", topicId: "hist-em-irl-3", conceptId: "did-she-assist-protestant-refugees",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 3 A Q3",
+    stem: "This edited extract refers to Elizabeth Butler, Countess of Ormond. Read it and answer the questions which follow. In 1633, Elizabeth Butler became the Countess of Ormond on her husband’s succession to the earldom. On the outbreak of the 1641 rebellion she moved to Kilkenny Castle, the family seat [residence]. When the city became the capital of the Catholic Confederation she assisted Protestant refugees, giving them shelter in the Castle. In 1647, she followed her husband to England on his surrender of Dublin to parliamentary forces. When he decided to renew his fight for the Royalist cause she departed for France.",
+    questionText: "How did she assist Protestant refugees?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "She gave them shelter at the Castle", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t3a-q4", topicId: "hist-em-irl-3", conceptId: "did-she-england-1647",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 3 A Q4",
+    stem: "This edited extract refers to Elizabeth Butler, Countess of Ormond. Read it and answer the questions which follow. In 1633, Elizabeth Butler became the Countess of Ormond on her husband’s succession to the earldom. On the outbreak of the 1641 rebellion she moved to Kilkenny Castle, the family seat [residence]. When the city became the capital of the Catholic Confederation she assisted Protestant refugees, giving them shelter in the Castle. In 1647, she followed her husband to England on his surrender of Dublin to parliamentary forces. When he decided to renew his fight for the Royalist cause she departed for France.",
+    questionText: "Why did she go to England in 1647?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Her husband had surrendered to parliamentary forces", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t3a-q5", topicId: "hist-em-irl-3", conceptId: "elizabeth-butler-important-historical-figure",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 3 A Q5",
+    stem: "This edited extract refers to Elizabeth Butler, Countess of Ormond. Read it and answer the questions which follow. In 1633, Elizabeth Butler became the Countess of Ormond on her husband’s succession to the earldom. On the outbreak of the 1641 rebellion she moved to Kilkenny Castle, the family seat [residence]. When the city became the capital of the Catholic Confederation she assisted Protestant refugees, giving them shelter in the Castle. In 1647, she followed her husband to England on his surrender of Dublin to parliamentary forces. When he decided to renew his fight for the Royalist cause she departed for France.",
+    questionText: "Why, briefly, was Elizabeth Butler an important historical figure?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t3b", topicId: "hist-em-irl-3", conceptId: "sir-arthur-chichester-trial-strafford-1641",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 3 B",
+    stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
+    questionText: "Write a short paragraph on one of the following:\n1. Sir Arthur Chichester.\n2. The trial of Strafford, 1641.\n3. The depositions of 1641.\n4. Keating’s Foras Feasa.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t3c", topicId: "hist-em-irl-3", conceptId: "purpose-irish-college-louvain-did-achieve",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 3 C",
+    stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
+    questionText: "Answer one of the following:\n1. What was the purpose of the Irish College in Louvain and what did it achieve?\n2. How did Archbishop Rinuccini and/or Owen Roe O’Neill influence events in Ireland?\n3. What was the importance of Piaras Feiritéar and/or Luke Wadding?\n4. What were the main events of Cromwell’s campaign in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t4a-q1", topicId: "hist-em-irl-4", conceptId: "rapparees",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 4 A Q1",
+    stem: "Rapparees were outlaws and bandits who robbed houses and travellers or extorted protection money. This edited extract, from their time, describes how they operated. Read it and answer the questions which follow. When the rapparees do not wish to show their faces on the bogs they sink down into long grass, so that it would be as easy to find a hare as one of them. They hide their weapons in this way: they take the lock off their musket and put it in their pocket or hide it in some dry place; they close the muzzle with a cork and the touch‐hole with a small feather; they throw the weapon itself into running water or a pond. But, when they want to do mischief, they can be ready in an hour. Everyone knows where to find his weapon, though you do not.",
+    questionText: "What were rapparees?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Outlaws/bandits", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t4a-q2", topicId: "hist-em-irl-4", conceptId: "where-did-hide-lock-off-musket",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 4 A Q2",
+    stem: "Rapparees were outlaws and bandits who robbed houses and travellers or extorted protection money. This edited extract, from their time, describes how they operated. Read it and answer the questions which follow. When the rapparees do not wish to show their faces on the bogs they sink down into long grass, so that it would be as easy to find a hare as one of them. They hide their weapons in this way: they take the lock off their musket and put it in their pocket or hide it in some dry place; they close the muzzle with a cork and the touch‐hole with a small feather; they throw the weapon itself into running water or a pond. But, when they want to do mischief, they can be ready in an hour. Everyone knows where to find his weapon, though you do not.",
+    questionText: "Where did they hide the lock off their musket?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In their pocket/in a dry place", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t4a-q3", topicId: "hist-em-irl-4", conceptId: "where-did-hide-weapon-itself",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 4 A Q3",
+    stem: "Rapparees were outlaws and bandits who robbed houses and travellers or extorted protection money. This edited extract, from their time, describes how they operated. Read it and answer the questions which follow. When the rapparees do not wish to show their faces on the bogs they sink down into long grass, so that it would be as easy to find a hare as one of them. They hide their weapons in this way: they take the lock off their musket and put it in their pocket or hide it in some dry place; they close the muzzle with a cork and the touch‐hole with a small feather; they throw the weapon itself into running water or a pond. But, when they want to do mischief, they can be ready in an hour. Everyone knows where to find his weapon, though you do not.",
+    questionText: "Where did they hide the weapon itself?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Running water/pond", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t4a-q4", topicId: "hist-em-irl-4", conceptId: "long-did-take-get-ready-mischief",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 4 A Q4",
+    stem: "Rapparees were outlaws and bandits who robbed houses and travellers or extorted protection money. This edited extract, from their time, describes how they operated. Read it and answer the questions which follow. When the rapparees do not wish to show their faces on the bogs they sink down into long grass, so that it would be as easy to find a hare as one of them. They hide their weapons in this way: they take the lock off their musket and put it in their pocket or hide it in some dry place; they close the muzzle with a cork and the touch‐hole with a small feather; they throw the weapon itself into running water or a pond. But, when they want to do mischief, they can be ready in an hour. Everyone knows where to find his weapon, though you do not.",
+    questionText: "How long did they take to get ready to do mischief?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "One hour", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t4a-q5", topicId: "hist-em-irl-4", conceptId: "political-view-associated-rapparees-tories",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 4 A Q5",
+    stem: "Rapparees were outlaws and bandits who robbed houses and travellers or extorted protection money. This edited extract, from their time, describes how they operated. Read it and answer the questions which follow. When the rapparees do not wish to show their faces on the bogs they sink down into long grass, so that it would be as easy to find a hare as one of them. They hide their weapons in this way: they take the lock off their musket and put it in their pocket or hide it in some dry place; they close the muzzle with a cork and the touch‐hole with a small feather; they throw the weapon itself into running water or a pond. But, when they want to do mischief, they can be ready in an hour. Everyone knows where to find his weapon, though you do not.",
+    questionText: "What was one political view associated with rapparees and tories?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE political view", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t4b", topicId: "hist-em-irl-4", conceptId: "parliament-1689-oliver-plunkett-robert-boyle",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 4 B",
+    stem: "Establishing a colonial ascendancy, 1660‐1715",
+    questionText: "Write a short paragraph on one of the following:\n1. The Parliament of 1689.\n2. Oliver Plunkett.\n3. Robert Boyle.\n4. Restoration Dublin.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t4c", topicId: "hist-em-irl-4", conceptId: "extent-policies-charles-unpopular-ireland-themes",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 4 C",
+    stem: "Establishing a colonial ascendancy, 1660‐1715",
+    questionText: "Answer one of the following:\n1. To what extent were the policies of Charles II unpopular in Ireland?\n2. What were the themes of the Jacobite poets?\n3. How successful was Patrick Sarsfield as a military leader?\n4. What was the contribution of Samuel Louis Crommelin to Irish affairs?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t5a-q1", topicId: "hist-em-irl-5", conceptId: "who-rented-house-much-rent",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 5 A Q1",
+    stem: "This is an edited extract from an account of a house in Suffolk Street, Dublin, rented in 1752 by William Fitzwilliam. Read it and answer the questions which follow. It is not very large but it has many conveniences. The rent is seventy pounds a year and I have taken it for three years. Underground there is a good front kitchen with stoves and a scullery, with a supply of water three days a week. There is a good back kitchen, with boilers. Also, a good larder, wine cellar and vaults for coals. The ground floor has a front parlour, back parlour and a large salon. There are closets on all three floors and two good attics.",
+    questionText: "Who rented the house and how much was the rent?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "William Fitzwilliam and £70 per year", marks: 6, contextNote: "(3m + 3m)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t5a-q2", topicId: "hist-em-irl-5", conceptId: "scullery-equipped",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 5 A Q2",
+    stem: "This is an edited extract from an account of a house in Suffolk Street, Dublin, rented in 1752 by William Fitzwilliam. Read it and answer the questions which follow. It is not very large but it has many conveniences. The rent is seventy pounds a year and I have taken it for three years. Underground there is a good front kitchen with stoves and a scullery, with a supply of water three days a week. There is a good back kitchen, with boilers. Also, a good larder, wine cellar and vaults for coals. The ground floor has a front parlour, back parlour and a large salon. There are closets on all three floors and two good attics.",
+    questionText: "How was the scullery equipped?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It has a supply of water", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t5a-q3", topicId: "hist-em-irl-5", conceptId: "vaults",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 5 A Q3",
+    stem: "This is an edited extract from an account of a house in Suffolk Street, Dublin, rented in 1752 by William Fitzwilliam. Read it and answer the questions which follow. It is not very large but it has many conveniences. The rent is seventy pounds a year and I have taken it for three years. Underground there is a good front kitchen with stoves and a scullery, with a supply of water three days a week. There is a good back kitchen, with boilers. Also, a good larder, wine cellar and vaults for coals. The ground floor has a front parlour, back parlour and a large salon. There are closets on all three floors and two good attics.",
+    questionText: "What were the vaults for?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Coal", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t5a-q4", topicId: "hist-em-irl-5", conceptId: "accommodation-available-top-house",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 5 A Q4",
+    stem: "This is an edited extract from an account of a house in Suffolk Street, Dublin, rented in 1752 by William Fitzwilliam. Read it and answer the questions which follow. It is not very large but it has many conveniences. The rent is seventy pounds a year and I have taken it for three years. Underground there is a good front kitchen with stoves and a scullery, with a supply of water three days a week. There is a good back kitchen, with boilers. Also, a good larder, wine cellar and vaults for coals. The ground floor has a front parlour, back parlour and a large salon. There are closets on all three floors and two good attics.",
+    questionText: "What accommodation was available at the top of the house?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Two attics", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t5a-q5", topicId: "hist-em-irl-5", conceptId: "important-building-associated-georgian-dublin",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 5 A Q5",
+    stem: "This is an edited extract from an account of a house in Suffolk Street, Dublin, rented in 1752 by William Fitzwilliam. Read it and answer the questions which follow. It is not very large but it has many conveniences. The rent is seventy pounds a year and I have taken it for three years. Underground there is a good front kitchen with stoves and a scullery, with a supply of water three days a week. There is a good back kitchen, with boilers. Also, a good larder, wine cellar and vaults for coals. The ground floor has a front parlour, back parlour and a large salon. There are closets on all three floors and two good attics.",
+    questionText: "Name one important building associated with Georgian Dublin.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE building", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t5b", topicId: "hist-em-irl-5", conceptId: "ponsonbys-margaret-peg-woffington-turlough-carolan",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 5 B",
+    stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
+    questionText: "Write a short paragraph on one of the following:\n1. The Ponsonbys.\n2. Margaret (Peg) Woffington.\n3. Turlough O’Carolan.\n4. Na Cúirteanna Filíochta.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t5c", topicId: "hist-em-irl-5", conceptId: "conditions-gave-rise-whiteboys-methods-successful",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 5 C",
+    stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
+    questionText: "Answer one of the following:\n1. What conditions gave rise to the Whiteboys and were their methods successful?\n2. What evidence was given at the trial of Father Nicholas Sheehy and what was its outcome?\n3. In what ways did Dean Swift contribute to Irish affairs?\n4. How did Arthur Guinness contribute to the development of Irish industry?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t6a-q1", topicId: "hist-em-irl-6", conceptId: "soon-after-attack-letter-written",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 6 A Q1",
+    stem: "This edited extract, from a letter dated 27 March 1772, describes an attack by Steel Boys on a “big house” in Co. Wexford. Read it and answer the questions which follow. Last night 200 of them came to my Uncle Daniel’s about 12 o’clock. They set fire to his barn and stable, a hay stack and a quantity of straw in another stack. They took shelter and fired constantly at the house. Its defenders, although they fired out, could not get a clean shot at them. Further loss consists of a large quantity of oats, some wheat, and timber which had been stored in the stable. Almost all of their fodder is gone. All their windows were broken. But the horses were saved.",
+    questionText: "How soon after the attack was this letter written?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The following day", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t6a-q2", topicId: "hist-em-irl-6", conceptId: "did-steel-boys-set-fire",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 6 A Q2",
+    stem: "This edited extract, from a letter dated 27 March 1772, describes an attack by Steel Boys on a “big house” in Co. Wexford. Read it and answer the questions which follow. Last night 200 of them came to my Uncle Daniel’s about 12 o’clock. They set fire to his barn and stable, a hay stack and a quantity of straw in another stack. They took shelter and fired constantly at the house. Its defenders, although they fired out, could not get a clean shot at them. Further loss consists of a large quantity of oats, some wheat, and timber which had been stored in the stable. Almost all of their fodder is gone. All their windows were broken. But the horses were saved.",
+    questionText: "What did the Steel Boys set on fire?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Barn/stable/hay stack/straw", marks: 6, contextNote: "(any two, 3m + 3m)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t6a-q3", topicId: "hist-em-irl-6", conceptId: "foodstuff-lost-attack",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 6 A Q3",
+    stem: "This edited extract, from a letter dated 27 March 1772, describes an attack by Steel Boys on a “big house” in Co. Wexford. Read it and answer the questions which follow. Last night 200 of them came to my Uncle Daniel’s about 12 o’clock. They set fire to his barn and stable, a hay stack and a quantity of straw in another stack. They took shelter and fired constantly at the house. Its defenders, although they fired out, could not get a clean shot at them. Further loss consists of a large quantity of oats, some wheat, and timber which had been stored in the stable. Almost all of their fodder is gone. All their windows were broken. But the horses were saved.",
+    questionText: "What was one foodstuff lost in the attack?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oats/wheat/fodder for livestock", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t6a-q4", topicId: "hist-em-irl-6", conceptId: "damage-done-house",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 6 A Q4",
+    stem: "This edited extract, from a letter dated 27 March 1772, describes an attack by Steel Boys on a “big house” in Co. Wexford. Read it and answer the questions which follow. Last night 200 of them came to my Uncle Daniel’s about 12 o’clock. They set fire to his barn and stable, a hay stack and a quantity of straw in another stack. They took shelter and fired constantly at the house. Its defenders, although they fired out, could not get a clean shot at them. Further loss consists of a large quantity of oats, some wheat, and timber which had been stored in the stable. Almost all of their fodder is gone. All their windows were broken. But the horses were saved.",
+    questionText: "What damage was done to the house?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "All the windows were broken", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t6a-q5", topicId: "hist-em-irl-6", conceptId: "aim-whiteboys",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 6 A Q5",
+    stem: "This edited extract, from a letter dated 27 March 1772, describes an attack by Steel Boys on a “big house” in Co. Wexford. Read it and answer the questions which follow. Last night 200 of them came to my Uncle Daniel’s about 12 o’clock. They set fire to his barn and stable, a hay stack and a quantity of straw in another stack. They took shelter and fired constantly at the house. Its defenders, although they fired out, could not get a clean shot at them. Further loss consists of a large quantity of oats, some wheat, and timber which had been stored in the stable. Almost all of their fodder is gone. All their windows were broken. But the horses were saved.",
+    questionText: "What was one aim of the Whiteboys?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE aim", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t6b", topicId: "hist-em-irl-6", conceptId: "henry-grattan-orange-order-arthur-leary",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 6 B",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
+    questionText: "Write a short paragraph on one of the following:\n1. Henry Grattan.\n2. The Orange Order.\n3. Fr. Arthur O’Leary.\n4. Why Ireland’s population grew, 1770‐1815.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s2t6c", topicId: "hist-em-irl-6", conceptId: "did-eibhl-dhubh-chonaill-nano-nagle",
+    section: "2", questionRef: "2026 OL Early Modern Section 2 Topic 6 C",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
+    questionText: "Answer one of the following:\n1. What did Eibhlín Dhubh Ní Chonaill and/or Nano Nagle contribute to Irish life?\n2. What factors led to the rise of Belfast?\n3. What did Wolfe Tone hope to achieve and why did he fail?\n4. What main events took place during the Wexford Rebellion, 1798?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t1a-q1", topicId: "hist-em-eur-1", conceptId: "way-couple-should-arrive-church",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 1 A Q1",
+    stem: "This edited extract refers to Calvin’s Geneva. Read it and answer the questions which follow. When the time comes for the marriage service the parties should arrive at church without drummers or fiddlers. They shall present themselves in a way proper to Christians, before the church bell rings, so that the marriage can be blessed before the sermon. If they are late or negligent, then they should be sent away. Also, during married life, when children arrive, the use of the names of the patron saints is forbidden. That would be an encouragement to superstition and idolatry. The names of kings are forbidden too.",
+    questionText: "What was one way in which the couple should arrive at church?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They should arrive on time/without musicians", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t1a-q2", topicId: "hist-em-eur-1", conceptId: "happen-late",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 1 A Q2",
+    stem: "This edited extract refers to Calvin’s Geneva. Read it and answer the questions which follow. When the time comes for the marriage service the parties should arrive at church without drummers or fiddlers. They shall present themselves in a way proper to Christians, before the church bell rings, so that the marriage can be blessed before the sermon. If they are late or negligent, then they should be sent away. Also, during married life, when children arrive, the use of the names of the patron saints is forbidden. That would be an encouragement to superstition and idolatry. The names of kings are forbidden too.",
+    questionText: "What was to happen if they were late?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They should be sent away", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t1a-q3", topicId: "hist-em-eur-1", conceptId: "names-not-used-children",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 1 A Q3",
+    stem: "This edited extract refers to Calvin’s Geneva. Read it and answer the questions which follow. When the time comes for the marriage service the parties should arrive at church without drummers or fiddlers. They shall present themselves in a way proper to Christians, before the church bell rings, so that the marriage can be blessed before the sermon. If they are late or negligent, then they should be sent away. Also, during married life, when children arrive, the use of the names of the patron saints is forbidden. That would be an encouragement to superstition and idolatry. The names of kings are forbidden too.",
+    questionText: "What names were not to be used for children?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The names of patron saints and kings (3m +3m)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t1a-q4", topicId: "hist-em-eur-1", conceptId: "these-names-forbidden",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 1 A Q4",
+    stem: "This edited extract refers to Calvin’s Geneva. Read it and answer the questions which follow. When the time comes for the marriage service the parties should arrive at church without drummers or fiddlers. They shall present themselves in a way proper to Christians, before the church bell rings, so that the marriage can be blessed before the sermon. If they are late or negligent, then they should be sent away. Also, during married life, when children arrive, the use of the names of the patron saints is forbidden. That would be an encouragement to superstition and idolatry. The names of kings are forbidden too.",
+    questionText: "Why were these names forbidden?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They would encourage superstition/idolatry", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t1a-q5", topicId: "hist-em-eur-1", conceptId: "religious-idea-put-forward-calvin",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 1 A Q5",
+    stem: "This edited extract refers to Calvin’s Geneva. Read it and answer the questions which follow. When the time comes for the marriage service the parties should arrive at church without drummers or fiddlers. They shall present themselves in a way proper to Christians, before the church bell rings, so that the marriage can be blessed before the sermon. If they are late or negligent, then they should be sent away. Also, during married life, when children arrive, the use of the names of the patron saints is forbidden. That would be an encouragement to superstition and idolatry. The names of kings are forbidden too.",
+    questionText: "What was one religious idea put forward by Calvin?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE religious idea", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t1b", topicId: "hist-em-eur-1", conceptId: "development-printing-niccol-machiavelli-jacob-fugger",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 1 B",
+    stem: "Europe from Renaissance to Reformation, 1492‐1567",
+    questionText: "Write a short paragraph on one of the following:\n1. The development of printing.\n2. Niccolò Machiavelli.\n3. Jacob Fugger.\n4. The Counter‐Reformation.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t1c", topicId: "hist-em-eur-1", conceptId: "did-henry-viii-want-divorce-catherine",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 1 C",
+    stem: "Europe from Renaissance to Reformation, 1492‐1567",
+    questionText: "Answer one of the following:\n1. Why did Henry VIII want to divorce Catherine of Aragon and what steps did he take to do so?\n2. What were the achievements of Michelangelo Buonarroti?\n3. In what ways did the discovery of the New World affect Europe?\n4. What part did Martin Luther play in the Reformation in Germany?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t2a-q1", topicId: "hist-em-eur-2", conceptId: "did-jesuit-fathers-fear",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 2 A Q1",
+    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China. For fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public. As well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people. They hoped to impress the Chinese by example and by the sanctity [holiness] of their lives. They wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
+    questionText: "What did the Jesuit Fathers fear?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They feared causing suspicion among the Chinese", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t2a-q2", topicId: "hist-em-eur-2", conceptId: "thing-studied",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 2 A Q2",
+    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China. For fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public. As well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people. They hoped to impress the Chinese by example and by the sanctity [holiness] of their lives. They wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
+    questionText: "What was one thing they studied?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Chinese language/Chinese writing/the customs of the people", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t2a-q3", topicId: "hist-em-eur-2", conceptId: "did-hope-impress-chinese",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 2 A Q3",
+    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China. For fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public. As well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people. They hoped to impress the Chinese by example and by the sanctity [holiness] of their lives. They wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
+    questionText: "How did they hope to impress the Chinese?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By example/by sanctity", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t2a-q4", topicId: "hist-em-eur-2", conceptId: "features-garment-worn-them",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 2 A Q4",
+    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China. For fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public. As well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people. They hoped to impress the Chinese by example and by the sanctity [holiness] of their lives. They wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
+    questionText: "What were the features of the garment worn by them?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A long robe reaching to the heels and wide sleeves", marks: 6, contextNote: "(3m + 3m)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t2a-q5", topicId: "hist-em-eur-2", conceptId: "achievement-jesuit-mission-china",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 2 A Q5",
+    stem: "In this edited extract Matteo Ricci writes about the beginning of the Jesuit mission in China. For fear the new religion might cause suspicion among the Chinese, the Fathers did not speak openly about religious matters when they first appeared in public. As well as receiving visitors, they spent time studying the Chinese language, the methods of writing and the customs of the people. They hoped to impress the Chinese by example and by the sanctity [holiness] of their lives. They wore the ordinary Chinese outer garment, which was somewhat similar to their own religious habits: a long robe reaching down to the heels and very wide sleeves.",
+    questionText: "What was one achievement of the Jesuit mission in China?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE achievement", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t2b", topicId: "hist-em-eur-2", conceptId: "techniques-land-use-europe-1567-1609",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 2 B",
+    stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
+    questionText: "Write a short paragraph on one of the following:\n1. Techniques of land use in Europe, 1567‐1609.\n2. The rise of Muscovy.\n3. Jacobus Arminius.\n4. Tycho Brahe.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t2c", topicId: "hist-em-eur-2", conceptId: "purpose-spanish-armada-did-fail-role",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 2 C",
+    stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
+    questionText: "Answer one of the following:\n1. What was the purpose of the Spanish Armada and why did it fail?\n2. What role did William the Silent play in the Revolt of the Netherlands?\n3. How successful a ruler of France was Catherine de Medici?\n4. Why is Michel de Montaigne considered a key personality of this period?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t3a-q1", topicId: "hist-em-eur-3", conceptId: "key-feature-climate-change-mentioned",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 3 A Q1",
+    stem: "This edited extract refers to climate change. Read it and answer the questions which follow. Environmental historians now recognise the seventeenth century as a period of intense climate change, the peak of the Little Ice Age – a period of severe cooling in which average yearly temperatures, in the northern hemisphere, plunged by as much as two degrees Celsius. Crop failure led to food shortages. An unusual rate of volcanic activity hurled enough sulphur dioxide into the upper stratosphere to dim the sun for decades, contributing to already low temperatures and stunting crops. All of which led to a search for people to blame. In southern Germany in 1626 a spring hailstorm, followed by sudden Arctic temperatures, prompted the torture and execution of 900 men and women, accused of creating the storm by witchcraft.",
+    questionText: "What was one key feature of the climate change mentioned?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It was a period of severe cooling/temperatures dropped by 2°C", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t3a-q2", topicId: "hist-em-eur-3", conceptId: "led-food-shortages",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 3 A Q2",
+    stem: "This edited extract refers to climate change. Read it and answer the questions which follow. Environmental historians now recognise the seventeenth century as a period of intense climate change, the peak of the Little Ice Age – a period of severe cooling in which average yearly temperatures, in the northern hemisphere, plunged by as much as two degrees Celsius. Crop failure led to food shortages. An unusual rate of volcanic activity hurled enough sulphur dioxide into the upper stratosphere to dim the sun for decades, contributing to already low temperatures and stunting crops. All of which led to a search for people to blame. In southern Germany in 1626 a spring hailstorm, followed by sudden Arctic temperatures, prompted the torture and execution of 900 men and women, accused of creating the storm by witchcraft.",
+    questionText: "What led to food shortages?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Crop failures", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t3a-q3", topicId: "hist-em-eur-3", conceptId: "dimmed-sun",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 3 A Q3",
+    stem: "This edited extract refers to climate change. Read it and answer the questions which follow. Environmental historians now recognise the seventeenth century as a period of intense climate change, the peak of the Little Ice Age – a period of severe cooling in which average yearly temperatures, in the northern hemisphere, plunged by as much as two degrees Celsius. Crop failure led to food shortages. An unusual rate of volcanic activity hurled enough sulphur dioxide into the upper stratosphere to dim the sun for decades, contributing to already low temperatures and stunting crops. All of which led to a search for people to blame. In southern Germany in 1626 a spring hailstorm, followed by sudden Arctic temperatures, prompted the torture and execution of 900 men and women, accused of creating the storm by witchcraft.",
+    questionText: "What dimmed the sun?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Volcanic activity", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t3a-q4", topicId: "hist-em-eur-3", conceptId: "weather-conditions-led-events-1526",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 3 A Q4",
+    stem: "This edited extract refers to climate change. Read it and answer the questions which follow. Environmental historians now recognise the seventeenth century as a period of intense climate change, the peak of the Little Ice Age – a period of severe cooling in which average yearly temperatures, in the northern hemisphere, plunged by as much as two degrees Celsius. Crop failure led to food shortages. An unusual rate of volcanic activity hurled enough sulphur dioxide into the upper stratosphere to dim the sun for decades, contributing to already low temperatures and stunting crops. All of which led to a search for people to blame. In southern Germany in 1626 a spring hailstorm, followed by sudden Arctic temperatures, prompted the torture and execution of 900 men and women, accused of creating the storm by witchcraft.",
+    questionText: "What weather conditions led to the events of 1526?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A hailstorm", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t3a-q5", topicId: "hist-em-eur-3", conceptId: "witch-hunting",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 3 A Q5",
+    stem: "This edited extract refers to climate change. Read it and answer the questions which follow. Environmental historians now recognise the seventeenth century as a period of intense climate change, the peak of the Little Ice Age – a period of severe cooling in which average yearly temperatures, in the northern hemisphere, plunged by as much as two degrees Celsius. Crop failure led to food shortages. An unusual rate of volcanic activity hurled enough sulphur dioxide into the upper stratosphere to dim the sun for decades, contributing to already low temperatures and stunting crops. All of which led to a search for people to blame. In southern Germany in 1626 a spring hailstorm, followed by sudden Arctic temperatures, prompted the torture and execution of 900 men and women, accused of creating the storm by witchcraft.",
+    questionText: "What was “witch‐hunting”?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Brief explanation", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t3b", topicId: "hist-em-eur-3", conceptId: "women-work-family-claudio-monteverdi-dutch",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 3 B",
+    stem: "The eclipse of Old Europe, 1609‐1660",
+    questionText: "Write a short paragraph on one of the following:\n1. Women, work and family.\n2. Claudio Monteverdi.\n3. The Dutch empire in Asia.\n4. Albrecht von Wallenstein.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t3c", topicId: "hist-em-eur-3", conceptId: "did-catalans-revolt-revolt-put-down",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 3 C",
+    stem: "The eclipse of Old Europe, 1609‐1660",
+    questionText: "Answer one of the following:\n1. Why did the Catalans revolt and how was the revolt put down?\n2. What did Cardinal Richelieu contribute to the rise of French absolutism?\n3. What were the achievements of Peter Paul Rubens and/or Gian Lorenzo Bernini?\n4. What were the achievements of Galileo and/or Descartes?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t4a-q1", topicId: "hist-em-eur-4", conceptId: "feature-architecture-moscow",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 4 A Q1",
+    stem: "This edited extract refers to early eighteenth‐century Moscow. Read it and answer the questions which follow. Moscow was a dangerous and violent place. The town consisted almost entirely of wooden buildings. Clustered together in narrow streets, they were the subject of devastating fires. In the summer of 1706 the English Ambassador had to flee his house as fire took hold. “God be thanked my house still stands,” he wrote, “but all the street around me is burnt down!” Moscow was notorious for its beggars and thieves. It was an expensive place in which to live. “My pocket is empty,” the Ambassador complained. He soon came to realise that nothing could be achieved without generous bribes and presents to the Russian ministers.",
+    questionText: "What was one feature of the architecture of Moscow?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Wooden buildings/narrow streets", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t4a-q2", topicId: "hist-em-eur-4", conceptId: "moscow-notorious",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 4 A Q2",
+    stem: "This edited extract refers to early eighteenth‐century Moscow. Read it and answer the questions which follow. Moscow was a dangerous and violent place. The town consisted almost entirely of wooden buildings. Clustered together in narrow streets, they were the subject of devastating fires. In the summer of 1706 the English Ambassador had to flee his house as fire took hold. “God be thanked my house still stands,” he wrote, “but all the street around me is burnt down!” Moscow was notorious for its beggars and thieves. It was an expensive place in which to live. “My pocket is empty,” the Ambassador complained. He soon came to realise that nothing could be achieved without generous bribes and presents to the Russian ministers.",
+    questionText: "For what was Moscow notorious?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Its beggars and thieves", marks: 6, contextNote: "(3m + 3m)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t4a-q3", topicId: "hist-em-eur-4", conceptId: "did-english-ambassador-flee-his-home",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 4 A Q3",
+    stem: "This edited extract refers to early eighteenth‐century Moscow. Read it and answer the questions which follow. Moscow was a dangerous and violent place. The town consisted almost entirely of wooden buildings. Clustered together in narrow streets, they were the subject of devastating fires. In the summer of 1706 the English Ambassador had to flee his house as fire took hold. “God be thanked my house still stands,” he wrote, “but all the street around me is burnt down!” Moscow was notorious for its beggars and thieves. It was an expensive place in which to live. “My pocket is empty,” the Ambassador complained. He soon came to realise that nothing could be achieved without generous bribes and presents to the Russian ministers.",
+    questionText: "Why did the English Ambassador flee his home?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "There was a fire", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t4a-q4", topicId: "hist-em-eur-4", conceptId: "did-come-realise",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 4 A Q4",
+    stem: "This edited extract refers to early eighteenth‐century Moscow. Read it and answer the questions which follow. Moscow was a dangerous and violent place. The town consisted almost entirely of wooden buildings. Clustered together in narrow streets, they were the subject of devastating fires. In the summer of 1706 the English Ambassador had to flee his house as fire took hold. “God be thanked my house still stands,” he wrote, “but all the street around me is burnt down!” Moscow was notorious for its beggars and thieves. It was an expensive place in which to live. “My pocket is empty,” the Ambassador complained. He soon came to realise that nothing could be achieved without generous bribes and presents to the Russian ministers.",
+    questionText: "What did he come to realise?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He had to offer bribes/presents to get anything done", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t4a-q5", topicId: "hist-em-eur-4", conceptId: "reason-expansion-cities-1660-1715",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 4 A Q5",
+    stem: "This edited extract refers to early eighteenth‐century Moscow. Read it and answer the questions which follow. Moscow was a dangerous and violent place. The town consisted almost entirely of wooden buildings. Clustered together in narrow streets, they were the subject of devastating fires. In the summer of 1706 the English Ambassador had to flee his house as fire took hold. “God be thanked my house still stands,” he wrote, “but all the street around me is burnt down!” Moscow was notorious for its beggars and thieves. It was an expensive place in which to live. “My pocket is empty,” the Ambassador complained. He soon came to realise that nothing could be achieved without generous bribes and presents to the Russian ministers.",
+    questionText: "What was one reason for the expansion of cities, 1660‐1715?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t4b", topicId: "hist-em-eur-4", conceptId: "anti-popery-england-poland-under-sobieski",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 4 B",
+    stem: "Europe in the age of Louis XIV, 1660‐1715",
+    questionText: "Write a short paragraph on one of the following:\n1. Anti‐Popery in England.\n2. Poland under Sobieski.\n3. The Grand Tour.\n4. Peter the Great’s travels abroad.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t4c", topicId: "hist-em-eur-4", conceptId: "did-louis-xiv-establish-his-court",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 4 C",
+    stem: "Europe in the age of Louis XIV, 1660‐1715",
+    questionText: "Answer one of the following:\n1. Why did Louis XIV establish his court at Versailles and what were the characteristics of life there?\n2. What were the main events in the career of Sir Henry Morgan?\n3. What changes took place in agriculture during the period 1660‐1715?\n4. What were the achievements of Isaac Newton and/or Gottfried Wilhelm Leibnitz?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t5a-q1", topicId: "hist-em-eur-5", conceptId: "who-attacked-east-india-company-settlement",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 5 A Q1",
+    stem: "This edited extract refers to Robert Clive. Read it and answer the questions which follow. In 1756 the Nawab of Bengal attacked the English East India Company’s settlement at Calcutta. His treatment of his English prisoners, many of whom suffocated in the soon legendary “Black Hole of Calcutta”, gave additional offence. The East India Company’s army, commanded by its employee, Robert Clive, took the city and then, on 22 June 1757, won a battle over the Nawab’s much larger forces at Plassey, about 100 miles from Calcutta. Clive emerged as Governor and Commander‐in‐Chief of Bengal, by which time the Mughal Emperor had granted the East India Company responsibility for the administration of the area, including the right to collect taxes.",
+    questionText: "Who attacked the East India Company’s settlement in Calcutta?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Nawab of Bengal", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t5a-q2", topicId: "hist-em-eur-5", conceptId: "happened-black-hole-calcutta",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 5 A Q2",
+    stem: "This edited extract refers to Robert Clive. Read it and answer the questions which follow. In 1756 the Nawab of Bengal attacked the English East India Company’s settlement at Calcutta. His treatment of his English prisoners, many of whom suffocated in the soon legendary “Black Hole of Calcutta”, gave additional offence. The East India Company’s army, commanded by its employee, Robert Clive, took the city and then, on 22 June 1757, won a battle over the Nawab’s much larger forces at Plassey, about 100 miles from Calcutta. Clive emerged as Governor and Commander‐in‐Chief of Bengal, by which time the Mughal Emperor had granted the East India Company responsibility for the administration of the area, including the right to collect taxes.",
+    questionText: "What happened in the “Black Hole of Calcutta”?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "English prisoners suffocated", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t5a-q3", topicId: "hist-em-eur-5", conceptId: "disadvantage-did-robert-clive-plassey",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 5 A Q3",
+    stem: "This edited extract refers to Robert Clive. Read it and answer the questions which follow. In 1756 the Nawab of Bengal attacked the English East India Company’s settlement at Calcutta. His treatment of his English prisoners, many of whom suffocated in the soon legendary “Black Hole of Calcutta”, gave additional offence. The East India Company’s army, commanded by its employee, Robert Clive, took the city and then, on 22 June 1757, won a battle over the Nawab’s much larger forces at Plassey, about 100 miles from Calcutta. Clive emerged as Governor and Commander‐in‐Chief of Bengal, by which time the Mughal Emperor had granted the East India Company responsibility for the administration of the area, including the right to collect taxes.",
+    questionText: "What disadvantage did Robert Clive have at Plassey?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He had a much smaller army", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t5a-q4", topicId: "hist-em-eur-5", conceptId: "major-concession-made-mughal-emperor",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 5 A Q4",
+    stem: "This edited extract refers to Robert Clive. Read it and answer the questions which follow. In 1756 the Nawab of Bengal attacked the English East India Company’s settlement at Calcutta. His treatment of his English prisoners, many of whom suffocated in the soon legendary “Black Hole of Calcutta”, gave additional offence. The East India Company’s army, commanded by its employee, Robert Clive, took the city and then, on 22 June 1757, won a battle over the Nawab’s much larger forces at Plassey, about 100 miles from Calcutta. Clive emerged as Governor and Commander‐in‐Chief of Bengal, by which time the Mughal Emperor had granted the East India Company responsibility for the administration of the area, including the right to collect taxes.",
+    questionText: "What major concession was made by the Mughal Emperor?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He let the East India Company be in charge of administration/taxation", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t5a-q5", topicId: "hist-em-eur-5", conceptId: "circumstances-clive-death",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 5 A Q5",
+    stem: "This edited extract refers to Robert Clive. Read it and answer the questions which follow. In 1756 the Nawab of Bengal attacked the English East India Company’s settlement at Calcutta. His treatment of his English prisoners, many of whom suffocated in the soon legendary “Black Hole of Calcutta”, gave additional offence. The East India Company’s army, commanded by its employee, Robert Clive, took the city and then, on 22 June 1757, won a battle over the Nawab’s much larger forces at Plassey, about 100 miles from Calcutta. Clive emerged as Governor and Commander‐in‐Chief of Bengal, by which time the Mughal Emperor had granted the East India Company responsibility for the administration of the area, including the right to collect taxes.",
+    questionText: "What were the circumstances of Clive’s death?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE relevant fact", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t5b", topicId: "hist-em-eur-5", conceptId: "maria-theresa-austria-poverty-disease-population",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 5 B",
+    stem: "Establishing empires, 1715‐1775",
+    questionText: "Write a short paragraph on one of the following:\n1. Maria Theresa of Austria.\n2. Poverty, disease and population growth.\n3. Road and canal building.\n4. The salon.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t5c", topicId: "hist-em-eur-5", conceptId: "importance-encyclop-die-important-leader-catherine",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 5 C",
+    stem: "Establishing empires, 1715‐1775",
+    questionText: "Answer one of the following:\n1. What was the importance of the Encyclopédie?\n2. How important a leader was Catherine the Great?\n3. In what ways did the West Indies slave plantations contribute to international trade?\n4. What did you learn about the life and work of Benjamin Franklin?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t6a-q1", topicId: "hist-em-eur-6", conceptId: "revolutionary-tribunal-set",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 6 A Q1",
+    stem: "This edited extract notes an aspect of the French Reign of Terror. Read it and answer the questions which follow. In the capital sat the highest court of revolutionary France, the Revolutionary Tribunal of Paris, which had been established in the spring of 1793 to deal with enemies of the revolution. Its activities were stepped up in October, 1793, when the desire for vengeance against traitors to the republic seems to have reached its peak. Among the most prominent victims at this time were the Queen, Marie Antoinette, and several former generals who had not shown sufficient enthusiasm for the new regime. All met their death on the guillotine which stood on the Place de la Revolution. The Revolutionary Tribunal was responsible for 2,639 victims. Estimates of the total number of victims under the Reign of Terror reach 20,000.",
+    questionText: "Why was the Revolutionary Tribunal set up?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To deal with enemies of the revolution", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t6a-q2", topicId: "hist-em-eur-6", conceptId: "reached-its-peak-october-1793",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 6 A Q2",
+    stem: "This edited extract notes an aspect of the French Reign of Terror. Read it and answer the questions which follow. In the capital sat the highest court of revolutionary France, the Revolutionary Tribunal of Paris, which had been established in the spring of 1793 to deal with enemies of the revolution. Its activities were stepped up in October, 1793, when the desire for vengeance against traitors to the republic seems to have reached its peak. Among the most prominent victims at this time were the Queen, Marie Antoinette, and several former generals who had not shown sufficient enthusiasm for the new regime. All met their death on the guillotine which stood on the Place de la Revolution. The Revolutionary Tribunal was responsible for 2,639 victims. Estimates of the total number of victims under the Reign of Terror reach 20,000.",
+    questionText: "What reached its peak by October, 1793?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The desire for vengeance against traitors", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t6a-q3", topicId: "hist-em-eur-6", conceptId: "prominent-victims-tribunal-mentioned",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 6 A Q3",
+    stem: "This edited extract notes an aspect of the French Reign of Terror. Read it and answer the questions which follow. In the capital sat the highest court of revolutionary France, the Revolutionary Tribunal of Paris, which had been established in the spring of 1793 to deal with enemies of the revolution. Its activities were stepped up in October, 1793, when the desire for vengeance against traitors to the republic seems to have reached its peak. Among the most prominent victims at this time were the Queen, Marie Antoinette, and several former generals who had not shown sufficient enthusiasm for the new regime. All met their death on the guillotine which stood on the Place de la Revolution. The Revolutionary Tribunal was responsible for 2,639 victims. Estimates of the total number of victims under the Reign of Terror reach 20,000.",
+    questionText: "What prominent victims of the Tribunal are mentioned?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Queen Marie Antoinette and several generals", marks: 6, contextNote: "(3m + 3m)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t6a-q4", topicId: "hist-em-eur-6", conceptId: "where-victims-executed",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 6 A Q4",
+    stem: "This edited extract notes an aspect of the French Reign of Terror. Read it and answer the questions which follow. In the capital sat the highest court of revolutionary France, the Revolutionary Tribunal of Paris, which had been established in the spring of 1793 to deal with enemies of the revolution. Its activities were stepped up in October, 1793, when the desire for vengeance against traitors to the republic seems to have reached its peak. Among the most prominent victims at this time were the Queen, Marie Antoinette, and several former generals who had not shown sufficient enthusiasm for the new regime. All met their death on the guillotine which stood on the Place de la Revolution. The Revolutionary Tribunal was responsible for 2,639 victims. Estimates of the total number of victims under the Reign of Terror reach 20,000.",
+    questionText: "How and where were the victims executed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The guillotine at Place de la Revolution (3m +3m)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t6a-q5", topicId: "hist-em-eur-6", conceptId: "impact-france-reign-terror",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 6 A Q5",
+    stem: "This edited extract notes an aspect of the French Reign of Terror. Read it and answer the questions which follow. In the capital sat the highest court of revolutionary France, the Revolutionary Tribunal of Paris, which had been established in the spring of 1793 to deal with enemies of the revolution. Its activities were stepped up in October, 1793, when the desire for vengeance against traitors to the republic seems to have reached its peak. Among the most prominent victims at this time were the Queen, Marie Antoinette, and several former generals who had not shown sufficient enthusiasm for the new regime. All met their death on the guillotine which stood on the Place de la Revolution. The Revolutionary Tribunal was responsible for 2,639 victims. Estimates of the total number of victims under the Reign of Terror reach 20,000.",
+    questionText: "What, briefly, was the impact on France of the Reign of Terror?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE aspect if its impact", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t6b", topicId: "hist-em-eur-6", conceptId: "mary-wollstonecraft-agricultural-revolution-civil-constitution",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 6 B",
+    stem: "Empires in revolution, 1775‐1815",
+    questionText: "Write a short paragraph on one of the following:\n1. Mary Wollstonecraft.\n2. The Agricultural Revolution.\n3. The Civil Constitution of the Clergy.\n4. Madame de Staël.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-s3t6c", topicId: "hist-em-eur-6", conceptId: "did-louis-xvi-become-unpopular-france",
+    section: "3", questionRef: "2026 OL Early Modern Section 3 Topic 6 C",
+    stem: "Empires in revolution, 1775‐1815",
+    questionText: "Answer one of the following:\n1. Why did Louis XVI become unpopular in France and how was he overthrown?\n2. How did Manchester become a great industrial city?\n3. What changes did Napoleon make in France and Europe?\n4. What developments led to the abolition of the slave trade?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-extra-a-q1", topicId: "hist-em-irl-1", conceptId: "who-employed-poet",
+    section: "2", questionRef: "2026 OL Early Modern Section Extra A Q1",
+    stem: "This edited extract refers to bardic schools and to those who were trained in them. Read it and answer the questions which follow. The file [“poet” or “bard”], the product of the bardic schools, was employed by a patron, the local chieftain, to praise him and his family, to note his famous ancestors, and to mourn his death. The filí were an extremely influential group in society and it was they who set the written standard of Irish. Poetry was a profession, usually handed down from father to son. It required a special training in language, which was provided by bardic schools.",
+    questionText: "Who employed the poet?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A patron/local chieftain", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-extra-a-q2", topicId: "hist-em-irl-1", conceptId: "duty-poet-while-his-employer-alive",
+    section: "2", questionRef: "2026 OL Early Modern Section Extra A Q2",
+    stem: "This edited extract refers to bardic schools and to those who were trained in them. Read it and answer the questions which follow. The file [“poet” or “bard”], the product of the bardic schools, was employed by a patron, the local chieftain, to praise him and his family, to note his famous ancestors, and to mourn his death. The filí were an extremely influential group in society and it was they who set the written standard of Irish. Poetry was a profession, usually handed down from father to son. It required a special training in language, which was provided by bardic schools.",
+    questionText: "What was the duty of the poet while his employer was alive?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To praise him and his family/to note his famous ancestors", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-extra-a-q3", topicId: "hist-em-irl-1", conceptId: "required-poet-when-his-employer-died",
+    section: "2", questionRef: "2026 OL Early Modern Section Extra A Q3",
+    stem: "This edited extract refers to bardic schools and to those who were trained in them. Read it and answer the questions which follow. The file [“poet” or “bard”], the product of the bardic schools, was employed by a patron, the local chieftain, to praise him and his family, to note his famous ancestors, and to mourn his death. The filí were an extremely influential group in society and it was they who set the written standard of Irish. Poetry was a profession, usually handed down from father to son. It required a special training in language, which was provided by bardic schools.",
+    questionText: "What was required of the poet when his employer died?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To mourn him", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-extra-a-q4", topicId: "hist-em-irl-1", conceptId: "special-training-did-poet-where-did",
+    section: "2", questionRef: "2026 OL Early Modern Section Extra A Q4",
+    stem: "This edited extract refers to bardic schools and to those who were trained in them. Read it and answer the questions which follow. The file [“poet” or “bard”], the product of the bardic schools, was employed by a patron, the local chieftain, to praise him and his family, to note his famous ancestors, and to mourn his death. The filí were an extremely influential group in society and it was they who set the written standard of Irish. Poetry was a profession, usually handed down from father to son. It required a special training in language, which was provided by bardic schools.",
+    questionText: "What special training did the poet have and where did he acquire it?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A special training in language at a bardic school (3m +3m)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2026 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2026-ol-em-extra-a-q5", topicId: "hist-em-irl-1", conceptId: "role-brehon-gaelic-ireland",
+    section: "2", questionRef: "2026 OL Early Modern Section Extra A Q5",
+    stem: "This edited extract refers to bardic schools and to those who were trained in them. Read it and answer the questions which follow. The file [“poet” or “bard”], the product of the bardic schools, was employed by a patron, the local chieftain, to praise him and his family, to note his famous ancestors, and to mourn his death. The filí were an extremely influential group in society and it was they who set the written standard of Irish. Poetry was a profession, usually handed down from father to son. It required a special training in language, which was provided by bardic schools.",
+    questionText: "Briefly, what was the role of the brehon in Gaelic Ireland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE aspect of the role of the brehon", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC History 2026 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
 ];
