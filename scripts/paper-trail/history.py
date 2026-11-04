@@ -142,6 +142,35 @@ def line_records(page: fitz.Page) -> list[tuple[str, float]]:
     return records
 
 
+def deferred_dqb_anchors(document: fitz.Document, pdf_path: Path) -> list[dict]:
+    """The documents question's four questions on a deferred paper's page 2.
+
+    A June paper's questions 1-4 open from its answer map; a deferred
+    sitting has none, so its paper-only map carries them: each a page jump to
+    the printed "1." to "4." on page 2, ending where the next begins."""
+    page = document[1]
+    starts = [(int(m.group(1)), y) for text, y in line_records(page)
+              for m in [re.match(r"^([1-4])\.(?:\s|$)", text)] if m]
+    if [number for number, _y in starts] != [1, 2, 3, 4]:
+        raise RuntimeError(f"{pdf_path}: documents questions 1-4 not found on page 2: {starts}")
+    out = []
+    for index, (number, y) in enumerate(starts):
+        end = starts[index + 1][1] if index + 1 < len(starts) else 1.0
+        out.append({
+            "n": str(number),
+            "pP": 2,
+            "pY": [round(y, 4), round(end, 4)],
+            "region": [{"p": 1}],
+            "mode": "pagejump",
+            "conf": 0.5,
+            "label": f"Section 1 · Documents-based question {number}",
+            "printOrder": index + 1,
+            "endP": 2,
+            "endY": round(end, 4),
+        })
+    return out
+
+
 def topic_anchors(
     document: fitz.Document,
     pdf_path: Path,
@@ -392,6 +421,7 @@ def main() -> None:
                 anchors,
                 dqb,
             )
+            dqb_anchors = deferred_dqb_anchors(document, paper_path) if deferred else []
 
         dqb_key = f"{dqb[0]}{dqb[1]}"
         prior_dqb = (deferred_dqb_topics if deferred else dqb_topics_by_year).setdefault(entry["year"], dqb_key)
@@ -455,11 +485,11 @@ def main() -> None:
         papers.append(paper)
         corrections.extend(paper_corrections)
 
-        hosted_questions: list[dict] = []
+        hosted_questions: list[dict] = list(dqb_anchors)
         card_anchors = anchors + ([alternative] if alternative else [])
-        for index, anchor in enumerate(card_anchors):
-            if index + 1 < len(card_anchors):
-                next_anchor = card_anchors[index + 1]
+        for index, anchor in enumerate(card_anchors, start=len(dqb_anchors)):
+            if index - len(dqb_anchors) + 1 < len(card_anchors):
+                next_anchor = card_anchors[index - len(dqb_anchors) + 1]
                 end = (next_anchor["page"], next_anchor["y"])
                 if anchor["family"] == "I" and next_anchor["family"] == "E":
                     end = section_three

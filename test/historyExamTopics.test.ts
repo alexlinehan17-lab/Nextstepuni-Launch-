@@ -245,8 +245,11 @@ describe('History exam-topic registry', () => {
       const anchorMap = JSON.parse(fs.readFileSync(anchorPath, 'utf8'));
       expect(isAnswerMap(anchorMap), anchorPath).toBe(true);
       expect(anchorMap.paperOnly).toBe(1);
+      // A deferred sitting has no answer map, so its paper-only map also opens
+      // the documents question's four questions.
+      const deferred = paper.fileid.endsWith('-deferred.pdf');
       const expectedNumbers = paper.q
-        .filter(question => /^(?:[IE][1-6]|ALT)$/.test(question.n))
+        .filter(question => (deferred ? /^(?:[1-4]|[IE][1-6]|ALT)$/ : /^(?:[IE][1-6]|ALT)$/).test(question.n))
         .map(question => question.n);
       expect(anchorMap.q.map((question: { n: string }) => question.n)).toEqual(expectedNumbers);
       expect(anchorMap.q.every((question: { mode: string }) => question.mode === 'pagejump'))
