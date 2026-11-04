@@ -484,7 +484,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(7);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(88);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(94);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['Chapel bell', 'convent chimes', 'organ'],
@@ -509,6 +509,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Green ribbons', 6, [0, 3, 6], 'ribbons = 3m'],
       ['Massive German air raids', 6, [0, 3, 6], 'air raids alone = 3m'],
       ['One opinion', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
+      // A lower-priced alternative on a line of its own: 2017 OL Q1(e) "Swastika 8M" / "Germanic cross = 4M".
+      ['Swastika', 8, [0, 4, 8], 'Germanic cross = 4M'],
       ['The original six members had access to Irish, British and Danish fisheries', 6, [0, 3, 6], 'access to Irish fisheries alone = 3m'],
     ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);

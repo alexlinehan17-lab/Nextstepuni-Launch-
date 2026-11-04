@@ -799,6 +799,13 @@ class HistScheme:
         # stripped: "One opinion = 5M" is the scheme dividing a total, and once
         # the 5M has been removed "One opinion =" no longer looks like it.
         grid = [bool(GRID_LINE.match(line)) for line in text]
+        # An alternative answer the scheme prices below the part's own marks,
+        # on a line of its own: 2017 Ordinary Q1(e) "Swastika 8M" over
+        # "Germanic cross = 4M". Kept, price and all, for the card's row.
+        ask.partials = [(m.group(1).strip(), int(m.group(2)))
+                        for line, is_grid in zip(text, grid) if is_grid
+                        for m in [COMPONENT.match(' '.join(line.split()))]
+                        if m and not m.group(1).lower().startswith('max')]
         parent = (self.dbq_totals.get(ask.key[1]) if ask.key[0] == '1'
                   else None)
         ask.total, cleaned = self._tariff(

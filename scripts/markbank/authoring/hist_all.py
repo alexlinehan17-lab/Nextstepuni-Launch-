@@ -93,6 +93,7 @@ EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
 ESSAY_PAPERS = {
     (2017, 'hl', 'em'),
     (2017, 'hl', 'lm'),
+    (2017, 'ol', 'lm'),
     (2018, 'hl', 'em'),
     (2018, 'hl', 'lm'),
     (2018, 'ol', 'em'),
@@ -626,6 +627,16 @@ def build():
                             row['contextNote'] = ' — '.join(notes)
                         rows.append(row)
 
+                    partials = [(alt, n) for alt, n in getattr(ask, 'partials', [])
+                                if 0 < n < (ask.total or 0)]
+                    if single and len(partials) == 1:
+                        # The scheme's lower-priced alternative ("Germanic cross
+                        # = 4M" under "Swastika 8M") is a step on the one row,
+                        # as a printed partial ("ribbons = 3m") already is.
+                        alt, n = partials[0]
+                        rows[0] = {'id': 'r-1', 'kind': 'criterion', 'verbatim': rows[0]['verbatim'],
+                                   'marks': ask.total, 'permittedMarks': [0, n, ask.total],
+                                   'contextNote': ' — '.join(x for x in (rows[0].get('contextNote'), f'{alt} = {n}M') if x)}
                     card = {
                         'id': card_id(year, level, field, key),
                         'subjectId': 'history',
