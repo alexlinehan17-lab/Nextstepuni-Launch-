@@ -484,7 +484,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(23);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(179);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(182);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['A new life', 'Better wages', 'Better work standards'],
@@ -545,6 +545,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['By launching the Dreadnought', 6, [0, 3, 6], '‘Quickly’ ALONE = 3M'],
       ['Clonmel prison', 6, [0, 3, 6], 'Clonmel only (3m), prison only (3m)'],
       ['Compare role of poet as set out in Document A with role of poet as set out in Document B', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Compare the evidence in both documents', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Cusack was its founder/ One of its first Secretaries', 6, [0, 3, 6], 'Supporter ONLY = 3M'],
       ['Do the documents agree about Irish attitudes to divorce? Yes or no, with supporting points from each document.', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Do the documents agree about Irish attitudes to marriage? Yes or no, with supporting points from each document.', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
@@ -559,6 +560,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['One opinion', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Opinions of him differed from pure white to deepest black/ from hero to villain', 6, [0, 3, 6], '„Opinions of him differed‟ only = 3M'],
       ['Oriental rugs', 8, [0, 4, 8], 'Rugs ONLY = 4M'],
+      ['Primary or secondary?', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Private/ family houses', 6, [0, 3, 6], '„Houses‟ only = 3M'],
       ['Reasons given for selecting phrase', 8, [0, 4, 8], 'Examples: If it is true that masked and armed men blocked roads, it is objective; If it is true that workers were threatened at workplaces such as H & W, it is objective; If it is not true that such things happened, it is biased. — Mark quality of explanation on its merits. — Max = 10M'],
       ['Residents and foreign-owned businesses in the town', 5, [0, 3, 5], 'TWO groups = 5m, ONE group = 3m'],
@@ -575,7 +577,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Von Eckstadt Vienna 1848', 6, [0, 3, 6], 'Any TWO @ 3M each'],
       ['We can see men, women and children – presumably families', 6, [0, 3, 6], 'Children ONLY = 3M'],
       ['Which is more sympathetic to bardic poets, A or B?', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Yes or No? Candidate makes choice and gives at least two reasons for choice', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Yes or No? One reason only required', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Yes or No?', 10, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'The scheme prints no answer here: any correct one earns the marks.'],
     ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
     // 2020 OL Q3(a) prices each component and answers the one that needs an answer:

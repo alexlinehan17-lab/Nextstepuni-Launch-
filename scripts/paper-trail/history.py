@@ -190,11 +190,41 @@ def topic_anchors(
                 and observed == [1, 2, 3, 4, 5]
                 and expected == [1, 2, 3, 4, 6]
             )
-            if not known_2010_ol_typo:
+            # The Irish edition of 2010 Ordinary Early Modern heads its last
+            # Section 2 topic "Éire: Topaic 5" (page 8) over "Deireadh na
+            # ríochta Éireannaí agus bunú an Aontais, 1770-1815", the end of
+            # the Irish kingdom: Topic 6, as the English edition prints it.
+            known_2010_ol_em_irish_typo = (
+                entry["year"] == 2010
+                and entry["level"] == "ordinary"
+                and entry["lang"] == "iv"
+                and family == "I"
+                and observed == [2, 3, 4, 5, 5]
+                and expected == [2, 3, 4, 5, 6]
+            )
+            if not (known_2010_ol_typo or known_2010_ol_em_irish_typo):
                 raise RuntimeError(
                     f"{pdf_path}: unexpected {family} topic sequence "
                     f"{observed}; expected {expected}"
                 )
+            if known_2010_ol_em_irish_typo:
+                corrections.append(
+                    {
+                        "year": 2010,
+                        "level": "ordinary",
+                        "lang": "iv",
+                        "printedHeading": "Éire: Topaic 5",
+                        "resolvedTopic": "Éire: Topaic 6",
+                        "evidence": (
+                            "The block title is Deireadh na ríochta Éireannaí agus bunú "
+                            "an Aontais, 1770-1815, and the English edition heads the same "
+                            "block Ireland: Topic 6."
+                        ),
+                    }
+                )
+                for anchor, number in zip(anchors, expected):
+                    mapped.append({**anchor, "family": family, "number": number})
+                continue
             corrections.append(
                 {
                     "year": 2010,
