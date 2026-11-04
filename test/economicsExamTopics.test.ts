@@ -230,12 +230,20 @@ describe('Economics exam-topic registry', () => {
       // growth and development (entrepreneurship is scarcity and choice) and
       // Q3(c) under costs of production (the survival of small firms is
       // market structures); and Section B Q8(b) under national income (the
-      // Live Register is employment and unemployment).
-      matchedAssociations: 699,
-      referenceAnomalyAssociations: 204,
+      // Live Register is employment and unemployment). The 2012 Ordinary
+      // review added nine: Section A Q5 and Section B Q4 and Q8 under
+      // acronyms and Section B Q5 under formulas (study-aid headings);
+      // Section A Q4, Section B Q5 and Q7(c) under government intervention
+      // (austerity is fiscal policy, national income and the multiplier are
+      // national income, multinationals are globalisation); Section B Q5
+      // under employment (its national income terms are filed under their
+      // own topic); and Section A Q8 under economic growth and development
+      // (emigration is employment and unemployment).
+      matchedAssociations: 690,
+      referenceAnomalyAssociations: 213,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 625,
+      matchedQuestionTopicLinks: 616,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

@@ -170,6 +170,7 @@ HAND_CHECKED = {
     'econ-2012-hl-sa-q5-a',           # 2012 HL p2: "(a) Explain this statement." (three words; the stem carries the statement)
     'econ-2012-hl-sa-q6-ii',          # 2012 HL p3: "(ii) The size of the Multiplier." (five words)
     'econ-2012-hl-sb-q8-c-i',         # 2012 HL p7: "(i) Explain the above statement." (four words; the stem carries the statement)
+    'econ-2012-ol-sb-q7-c-i',         # 2012 OL p8: "(i) Name two MNCs in Ireland." (five words)
 }
 
 

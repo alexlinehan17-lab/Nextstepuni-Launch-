@@ -7765,5 +7765,247 @@
     },
     "lettersVisible": [],
     "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-OL-scheme-p09-q1a-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 OL Section B Q1(a)(ii)",
+    "description": "The marking scheme’s diagram: the vertical axis numbered 1 and the horizontal axis 5, a thick falling line 4, a steeper falling line labelled MR, a U-shaped curve 3 just touching line 4 at a dot, and a curve 2 rising steeply through the dot E where it crosses MR. An arrow runs left from the dot on line 4 to P1 / C1 on the vertical axis, and a line drops from that dot through E to Q1 on the horizontal axis; a second Q1 is printed at the left end of the horizontal axis.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034GLP000EV.pdf",
+      "page": 9,
+      "rectPoints": [
+        17,
+        68.5,
+        505,
+        345
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-OL-scheme-p12-q2a-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 OL Section B Q2(a)(ii)",
+    "description": "The marking scheme’s diagram: the vertical axis numbered 1 and the horizontal axis 2, a falling line labelled Demand and a vertical line 3 crossing it. An arrow runs left from the crossing to P1 on the vertical axis, and Q1 is marked on the horizontal axis below the vertical line.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034GLP000EV.pdf",
+      "page": 12,
+      "rectPoints": [
+        165,
+        104,
+        392,
+        270
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-OL-scheme-p24-q5bii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 OL Section B Q5(b)(ii)",
+    "description": "The marking scheme’s working: 1 over 0.3 + 0.2, = 2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034GLP000EV.pdf",
+      "page": 24,
+      "rectPoints": [
+        255,
+        210,
+        332,
+        276
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-OL-scheme-p29-q7aiii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 OL Section B Q7(a)(iii)",
+    "description": "The marking scheme’s table of output after specialisation. Germany: Wine 0, Cars 1200* x 2* = 2400*. France: Wine 800* x 2* = 1600*, Cars 0. Total Output: Wine 1600*, Cars 2400*. Its Marks column reads 3 figures x 1 mark each for Germany and for France, and 2 figures x 1 marks each for the total; each starred figure earns a mark.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034GLP000EV.pdf",
+      "page": 29,
+      "rectPoints": [
+        38,
+        576,
+        560,
+        666
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-OL-paper-p02-q1b-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2012 OL Section A Q1(b)",
+    "description": "A table of four canons beside four explanations, printed in rows A 1, B 2, C 3 and D 4: A Equity, B Certainty, C Convenience and D Economy; 1 The tax revenue collected should be greater than the costs of collection; 2 The tax should be collected in a way and at a time which accommodates the taxpayer; 3 Takes a higher proportion of an individual’s income in tax as income increases; 4 An individual’s tax bill should be clear.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2012/LC034GLP000EV.pdf",
+      "page": 2,
+      "rectPoints": [
+        32,
+        160,
+        576,
+        250
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-OL-paper-p03-q6-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2012 OL Section A Q6",
+    "description": "The printed formula, ∆Q over ∆P times P1 + P2 over Q1 + Q2; the sentence “Complete the following table to indicate what each of the above symbols stands for:”; and a table of the six symbols ∆Q, ∆P, P1, P2, Q1 and Q2, each with a space beside it. Two are filled in: ∆Q, Change in the quantity demanded of the good, and Q1, Original quantity of the good demanded.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2012/LC034GLP000EV.pdf",
+      "page": 3,
+      "rectPoints": [
+        46,
+        40,
+        564,
+        213
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-OL-paper-p04-q1-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2012 OL Section B Q1(a)",
+    "description": "A diagram with the vertical axis numbered 1 and the horizontal axis 5: a thick falling line 4, a steeper falling line labelled MR, a U-shaped curve 3 touching line 4 at a dot, and a curve 2 rising steeply through a dot labelled E where it crosses MR.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2012/LC034GLP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        22,
+        174.5,
+        496,
+        442
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-OL-paper-p05-q2a-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2012 OL Section B Q2(a)",
+    "description": "A diagram with the vertical axis numbered 1 and the horizontal axis 2: a falling line labelled Demand and a vertical line 3 crossing it.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2012/LC034GLP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        170,
+        96,
+        395,
+        243
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-OL-paper-p05-q2b-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2012 OL Section B Q2(b)",
+    "description": "A diagram with the vertical axis numbered 1 and the horizontal axis 2: a vertical line 3 and two parallel falling lines, Demand 1 and Demand 2 to its right, with arrows pointing right from Demand 1 towards Demand 2.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2012/LC034GLP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        142,
+        393,
+        415,
+        542
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-OL-paper-p07-q5b-formula.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2012 OL Section B Q5(b)",
+    "description": "The printed formula: 1 over MPS + MPM.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2012/LC034GLP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        328,
+        129,
+        408,
+        161
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-OL-paper-p08-q7a-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2012 OL Section B Q7(a)",
+    "description": "A table of output per worker per week: Germany, Wine 1600 litres and Cars 1200 units; France, Wine 800 litres and Cars 400 units; Total Output, Wine 2400 litres and Cars 1600 units.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2012/LC034GLP000EV.pdf",
+      "page": 8,
+      "rectPoints": [
+        96,
+        78,
+        564,
+        203
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
   }
 ]

@@ -273,19 +273,19 @@
     "refsHash": "4bab4f79d784d94c"
   },
   "economics": {
-    "cards": 1916,
-    "contentHash": "f59c56917840d6ca",
-    "coveragePct": 84.8,
-    "covered": 1863,
+    "cards": 1986,
+    "contentHash": "0e6a30ebd9559f87",
+    "coveragePct": 88.0,
+    "covered": 1934,
     "excluded": 0,
     "leaves": 2198,
-    "open": 335,
+    "open": 264,
     "orphans": 0,
     "papers": {
       "count": 33,
       "hash": "fd2ae3c6caa8ebea"
     },
-    "refsHash": "04cba34092836961"
+    "refsHash": "dc21c337a00173ea"
   },
   "engineering": {
     "cards": 554,

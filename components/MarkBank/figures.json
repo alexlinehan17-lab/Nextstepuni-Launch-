@@ -57546,5 +57546,130 @@
     "year": 2012,
     "level": "higher",
     "attribution": "SEC Leaving Certificate Economics 2012 Higher Level — © State Examinations Commission"
+  },
+  "economics-2012-OL-scheme-p09-q1a-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2012-OL-scheme-p09-q1a-diagram.png",
+    "md5": "179604d75b3201a971ef47562db352fb",
+    "alt": "The marking scheme’s diagram: the vertical axis numbered 1 and the horizontal axis 5, a thick falling line 4, a steeper falling line labelled MR, a U-shaped curve 3 just touching line 4 at a dot, and a curve 2 rising steeply through the dot E where it crosses MR. An arrow runs left from the dot on line 4 to P1 / C1 on the vertical axis, and a line drops from that dot through E to Q1 on the horizontal axis; a second Q1 is printed at the left end of the horizontal axis.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2012 OL Section B Q1(a)(ii)",
+    "year": 2012,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2012 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2012-OL-scheme-p12-q2a-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2012-OL-scheme-p12-q2a-diagram.png",
+    "md5": "2612a404b3ad7d2f4d5957fc8e5e0f6b",
+    "alt": "The marking scheme’s diagram: the vertical axis numbered 1 and the horizontal axis 2, a falling line labelled Demand and a vertical line 3 crossing it. An arrow runs left from the crossing to P1 on the vertical axis, and Q1 is marked on the horizontal axis below the vertical line.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2012 OL Section B Q2(a)(ii)",
+    "year": 2012,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2012 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2012-OL-scheme-p24-q5bii-working": {
+    "src": "/exam-figures/economics/markbank/economics-2012-OL-scheme-p24-q5bii-working.png",
+    "md5": "2c519c1e1097b50a8614cb3e683062c4",
+    "alt": "The marking scheme’s working: 1 over 0.3 + 0.2, = 2.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2012 OL Section B Q5(b)(ii)",
+    "year": 2012,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2012 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2012-OL-scheme-p29-q7aiii-working": {
+    "src": "/exam-figures/economics/markbank/economics-2012-OL-scheme-p29-q7aiii-working.png",
+    "md5": "3fe81b7274559672c1aaf12049dca413",
+    "alt": "The marking scheme’s table of output after specialisation. Germany: Wine 0, Cars 1200* x 2* = 2400*. France: Wine 800* x 2* = 1600*, Cars 0. Total Output: Wine 1600*, Cars 2400*. Its Marks column reads 3 figures x 1 mark each for Germany and for France, and 2 figures x 1 marks each for the total; each starred figure earns a mark.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2012 OL Section B Q7(a)(iii)",
+    "year": 2012,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2012 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2012-OL-paper-p02-q1b-table": {
+    "src": "/exam-figures/economics/markbank/economics-2012-OL-paper-p02-q1b-table.png",
+    "md5": "eab024296d3a81857f1452d83600689a",
+    "alt": "A table of four canons beside four explanations, printed in rows A 1, B 2, C 3 and D 4: A Equity, B Certainty, C Convenience and D Economy; 1 The tax revenue collected should be greater than the costs of collection; 2 The tax should be collected in a way and at a time which accommodates the taxpayer; 3 Takes a higher proportion of an individual’s income in tax as income increases; 4 An individual’s tax bill should be clear.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2012 OL Section A Q1(b)",
+    "year": 2012,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2012 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2012-OL-paper-p03-q6-table": {
+    "src": "/exam-figures/economics/markbank/economics-2012-OL-paper-p03-q6-table.png",
+    "md5": "1467c7d37693f925ac30bcd936cdbd1d",
+    "alt": "The printed formula, ∆Q over ∆P times P1 + P2 over Q1 + Q2; the sentence “Complete the following table to indicate what each of the above symbols stands for:”; and a table of the six symbols ∆Q, ∆P, P1, P2, Q1 and Q2, each with a space beside it. Two are filled in: ∆Q, Change in the quantity demanded of the good, and Q1, Original quantity of the good demanded.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2012 OL Section A Q6",
+    "year": 2012,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2012 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2012-OL-paper-p04-q1-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2012-OL-paper-p04-q1-diagram.png",
+    "md5": "60a49675c3e4ced0e5b1be1ede5c6419",
+    "alt": "A diagram with the vertical axis numbered 1 and the horizontal axis 5: a thick falling line 4, a steeper falling line labelled MR, a U-shaped curve 3 touching line 4 at a dot, and a curve 2 rising steeply through a dot labelled E where it crosses MR.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2012 OL Section B Q1(a)",
+    "year": 2012,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2012 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2012-OL-paper-p05-q2a-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2012-OL-paper-p05-q2a-diagram.png",
+    "md5": "efb1fde0b954cc0edb9e1536669ea10d",
+    "alt": "A diagram with the vertical axis numbered 1 and the horizontal axis 2: a falling line labelled Demand and a vertical line 3 crossing it.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2012 OL Section B Q2(a)",
+    "year": 2012,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2012 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2012-OL-paper-p05-q2b-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2012-OL-paper-p05-q2b-diagram.png",
+    "md5": "ea14e3f9041b9d81f55979d141eb3d4c",
+    "alt": "A diagram with the vertical axis numbered 1 and the horizontal axis 2: a vertical line 3 and two parallel falling lines, Demand 1 and Demand 2 to its right, with arrows pointing right from Demand 1 towards Demand 2.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2012 OL Section B Q2(b)",
+    "year": 2012,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2012 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2012-OL-paper-p07-q5b-formula": {
+    "src": "/exam-figures/economics/markbank/economics-2012-OL-paper-p07-q5b-formula.png",
+    "md5": "53441d5f12bd3830eb1f236b810ac86f",
+    "alt": "The printed formula: 1 over MPS + MPM.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2012 OL Section B Q5(b)",
+    "year": 2012,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2012 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2012-OL-paper-p08-q7a-table": {
+    "src": "/exam-figures/economics/markbank/economics-2012-OL-paper-p08-q7a-table.png",
+    "md5": "bbfe80243a3ec59b1564275433aef39e",
+    "alt": "A table of output per worker per week: Germany, Wine 1600 litres and Cars 1200 units; France, Wine 800 litres and Cars 400 units; Total Output, Wine 2400 litres and Cars 1600 units.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2012 OL Section B Q7(a)",
+    "year": 2012,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2012 Ordinary Level — © State Examinations Commission"
   }
 }

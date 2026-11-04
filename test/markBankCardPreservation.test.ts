@@ -1477,6 +1477,24 @@ const economicsAdditionIds = new Set([
   'econ-2012-hl-sb-q7-b-ii', 'econ-2012-hl-sb-q7-c', 'econ-2012-hl-sb-q8-a-i-push', 'econ-2012-hl-sb-q8-a-i-pull',
   'econ-2012-hl-sb-q8-a-ii', 'econ-2012-hl-sb-q8-b-i', 'econ-2012-hl-sb-q8-b-ii', 'econ-2012-hl-sb-q8-c-i',
   'econ-2012-hl-sb-q8-c-ii',
+  // 2012 Ordinary (old syllabus, the paper's first cards, 2026-11-04): 70, none replacing a frozen ID
+  'econ-2012-ol-sa-q1-a', 'econ-2012-ol-sa-q1-b', 'econ-2012-ol-sa-q2', 'econ-2012-ol-sa-q3', 'econ-2012-ol-sa-q4',
+  'econ-2012-ol-sa-q5', 'econ-2012-ol-sa-q6', 'econ-2012-ol-sa-q7', 'econ-2012-ol-sa-q8', 'econ-2012-ol-sa-q9',
+  'econ-2012-ol-sb-q1-a-i', 'econ-2012-ol-sb-q1-a-ii', 'econ-2012-ol-sb-q1-b-i', 'econ-2012-ol-sb-q1-b-ii',
+  'econ-2012-ol-sb-q1-c-i', 'econ-2012-ol-sb-q1-c-ii', 'econ-2012-ol-sb-q2-a-i', 'econ-2012-ol-sb-q2-a-ii',
+  'econ-2012-ol-sb-q2-a-iii', 'econ-2012-ol-sb-q2-b-i', 'econ-2012-ol-sb-q2-b-ii', 'econ-2012-ol-sb-q2-b-iii',
+  'econ-2012-ol-sb-q2-c-i', 'econ-2012-ol-sb-q2-c-ii', 'econ-2012-ol-sb-q3-a-i', 'econ-2012-ol-sb-q3-a-ii',
+  'econ-2012-ol-sb-q3-a-iii', 'econ-2012-ol-sb-q3-b-i', 'econ-2012-ol-sb-q3-b-ii', 'econ-2012-ol-sb-q3-b-iii',
+  'econ-2012-ol-sb-q3-c-i', 'econ-2012-ol-sb-q3-c-ii', 'econ-2012-ol-sb-q4-a-i', 'econ-2012-ol-sb-q4-a-ii',
+  'econ-2012-ol-sb-q4-a-iii', 'econ-2012-ol-sb-q4-b-i', 'econ-2012-ol-sb-q4-b-ii', 'econ-2012-ol-sb-q4-b-iii',
+  'econ-2012-ol-sb-q4-c-i', 'econ-2012-ol-sb-q4-c-ii', 'econ-2012-ol-sb-q4-c-iii', 'econ-2012-ol-sb-q5-a-i',
+  'econ-2012-ol-sb-q5-a-ii', 'econ-2012-ol-sb-q5-a-iii', 'econ-2012-ol-sb-q5-b-i', 'econ-2012-ol-sb-q5-b-ii',
+  'econ-2012-ol-sb-q5-c-i', 'econ-2012-ol-sb-q5-c-ii', 'econ-2012-ol-sb-q5-c-iii', 'econ-2012-ol-sb-q6-a-i',
+  'econ-2012-ol-sb-q6-a-ii', 'econ-2012-ol-sb-q6-a-iii', 'econ-2012-ol-sb-q6-b-i', 'econ-2012-ol-sb-q6-b-ii',
+  'econ-2012-ol-sb-q6-c-i', 'econ-2012-ol-sb-q6-c-ii', 'econ-2012-ol-sb-q7-a-i', 'econ-2012-ol-sb-q7-a-ii',
+  'econ-2012-ol-sb-q7-a-iii', 'econ-2012-ol-sb-q7-b-i', 'econ-2012-ol-sb-q7-b-ii', 'econ-2012-ol-sb-q7-c-i',
+  'econ-2012-ol-sb-q7-c-ii', 'econ-2012-ol-sb-q7-c-iii', 'econ-2012-ol-sb-q8-a', 'econ-2012-ol-sb-q8-b-i',
+  'econ-2012-ol-sb-q8-b-ii', 'econ-2012-ol-sb-q8-c-i', 'econ-2012-ol-sb-q8-c-ii', 'econ-2012-ol-sb-q8-c-iii',
 ]);
 const economicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('econ-'));
 /* Agricultural Science keeps its 869 pre-audit IDs frozen (438 Higher + 431
@@ -1799,7 +1817,8 @@ describe('Mark Bank card preservation', () => {
     // + 57 for 2013 Higher (1068 -> 1125).
     // + 70 for 2013 Ordinary (1125 -> 1195).
     // + 60 for 2012 Higher (1195 -> 1255).
-    expect(economicsAdditionIds.size).toBe(1255);
+    // + 70 for 2012 Ordinary (1255 -> 1325).
+    expect(economicsAdditionIds.size).toBe(1325);
     expect(economicsAliasIds).toHaveLength(36);
     for (const id of economicsAdditionIds) {
       const deck = id.includes('-hl-') ? higher : ordinary;
@@ -1816,7 +1835,7 @@ describe('Mark Bank card preservation', () => {
     }
     const additions = (level: string) => [...economicsAdditionIds].filter(id => id.includes(level)).length;
     const aliased = (level: string) => economicsAliasIds.filter(id => id.includes(level)).length;
-    expect([additions('-hl-'), aliased('-hl-'), additions('-ol-'), aliased('-ol-')]).toEqual([680, 24, 575, 12]);
+    expect([additions('-hl-'), aliased('-hl-'), additions('-ol-'), aliased('-ol-')]).toEqual([680, 24, 645, 12]);
     expect(ECON_HIGHER).toHaveLength(383 - aliased('-hl-') + additions('-hl-'));
     expect(ECON_ORDINARY).toHaveLength(314 - aliased('-ol-') + additions('-ol-'));
   });

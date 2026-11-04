@@ -2491,3 +2491,64 @@ Checks:
 - reconcile: 1,863/2,198, with 2012 HL at 55/55.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2012 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 40 scheme pages were viewed:
+- paper pp10-12 are blank;
+- scheme pp1-4 are the cover, a blank page, the title page and the support
+  notes with the index, and pp36-40 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 70 routes for the 71 printed asks (10 in Section A, 61 in Section B).
+B1(b)(ii)-(iii) is one card, because the scheme prices each characteristic
+stated (4) and explained (3) together. No printed choice is credited with a
+list for each side. 11 crops: 4 hidden scheme solutions and 7 paper data
+crops.
+
+Decisions:
+- A Q1(b): both printed lists are typed after the ask, each column read down
+  as printed (as 2016 OL A Q5), and the canons table is the crop beside it.
+  The four matches are claimed 4 + 4 + 3 + 3.
+- A Q5: "5 at 2 marks each" beneath the five words of European Union and
+  International Monetary Fund is read as 2 a word: EU 4, IMF 6. The note says
+  so.
+- Ladders across groups claim one answer for each group, and the note names
+  the groups (the app does not show a group's label): A Q7 12 + 5, A Q8
+  11 + 6, A Q9 9 + 4 + 4, B1(c)(ii) 8 + 4 + 4, B4(c)(iii) 7 + 4 + 4.
+- B2(b)(i): the scheme prices the factor "2 at 4 marks each" and how it shifts
+  the curve "2 at 3 marks each". Each option is a factor with its how, claimed
+  at 7 (4 + 3). The note says so.
+- B3(a)(ii): the scheme prints "3 marks" beside "costs which do not change"
+  and "1 marks" beside "as output changes", and "One correct example: 2
+  marks" without an example. Each cost is three rows: 3, 1 and the example 2,
+  each with its reading in the note. The fixed-cost definition after "or" is
+  accepted on the 3 and 1 rows.
+- B7(a)(iii): the scheme's starred figures, 3 + 3 + 2 (8 workings at 1).
+- The paper prints "Explain the underlined term." for ten parts. A question
+  the deck has already seen is refused, so each of those cards carries its
+  stem in its question (as 2013 OL does).
+
+Refcheck: one short ask was read by hand (B7(c)(i)).
+
+Topic review: 9 reference anomalies, each a commercial heading the review files
+elsewhere:
+- A Q5, B4 and B8 under acronyms and B5 under formulas (study-aid headings).
+- A Q4 under government intervention: austerity is fiscal policy.
+- B5 under government intervention and under employment: its terms are
+  national income.
+- B7(c) under government intervention: multinationals are globalisation.
+- A Q8 under economic growth and development: emigration is employment and
+  unemployment.
+A Q9 is filed under employment and unemployment as well, as its third group is
+Irish employment levels.
+
+Checks:
+- econ_review: 35/66.
+- build: 1,986 cards, 0 dropped.
+- Build rule: 330 claims on this paper, 0 untraceable (48 trace by halves).
+- reconcile: 1,934/2,198, with 2012 OL at 71/71.
+- refcheck: 0 wrong.
+- cardlint: clean.
