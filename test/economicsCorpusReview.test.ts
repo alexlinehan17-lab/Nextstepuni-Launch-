@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { execFileSync } from 'node:child_process';
-import { existsSync, readdirSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { CARDS as HIGHER_CARDS } from '../components/MarkBank/cards/economics/higher';
 import { CARDS as ORDINARY_CARDS } from '../components/MarkBank/cards/economics/ordinary';
 import { isPointCard, type SecDiagramCard, type SecPointCard, type SecQuestionCard } from '../types/markBank';
@@ -805,9 +805,13 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     expect(definitions.rows[0].verbatim).toContain('Individual Demand refers');
     expect(definitions.rows[1].verbatim).toContain('Market Demand refers');
     expect(demand.rows.map(r => r.marks)).toEqual([7, 8]);
-    expect(exclusions).toHaveLength(1);
-    expect(exclusions[0].ref).toBe('2024 HL Section A Q10(a)(i)');
-    expect(exclusions[0].evidence).toContain('Part (i) has been completed for you');
+    // 2024 HL Section A Q10(a)(i) is printed completed for the candidate ("Part (i) has been
+    // completed for you", worked to Ans: €325 bn): printed matter, not an ask. It is out of the
+    // census denominator (PRINTED_EXAMPLES in paper_census.py), so no exclusion is needed for it.
+    expect(exclusions).toEqual([]);
+    const census = readFileSync('scripts/markbank/authoring/paper_census.py', 'utf8');
+    expect(census).toContain("('economics', 2024, 'hl', 'Q10(a)(i)')");
+    expect(census).toContain('Part (i) has been');
   });
 
   it('matches the independent Ordinary census, tariffs, source pages and Atlas topics', () => {

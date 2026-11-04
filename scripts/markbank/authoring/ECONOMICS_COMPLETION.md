@@ -1279,3 +1279,48 @@ committed harness too: `browser/browser-2022-hl-iv.mjs`, `-2023-` and `-2024-`
 English guidance the re-reviews replaced and were refreshed to the current text;
 all three pass (9, 12 and 18 cases). The other one-off Codex scripts in
 `tmp/economics-audit/` stay superseded, as recorded above.
+
+## Old-syllabus census and the 2024 HL printed example (lane, 2026-11-04)
+
+Scope moved on from the 13 October boundary above: the 4 November lane brief
+puts 2010-2020 in scope under the Economics Topic Atlas taxonomy the Atlas
+already uses for those papers (`1`-`9`, `B1`-`B8`); Syllabus X-Ray links for
+old-syllabus cards are not required.
+
+**2024 HL Section A Q10(a)(i) is printed matter, not an ask.** Paper p12 says
+"use the information above to calculate part (ii). Part (i) has been completed
+for you." and prints (i) worked through to "Ans: €325 bn"; scheme p14 prices
+(a) at 6 for the (ii) calculation (GNI €326.5 bn). The leaf leaves the
+denominator through `PRINTED_EXAMPLES` in paper_census.py (keyed, text-pinned,
+raises a `printed-example` flag if the reader stops extracting the recorded
+text), so `exclusions/economics.json` is empty and excluded is 0.
+
+**The census now reads 2010-2020** with `econ_legacy_census.py`. The generic
+merged walker found 8 to 46 asks per old paper because Section B restarts at
+Question 1 (rejected as going backwards, all eight long questions filed under
+Section A Q9), numbered table rows ("3. Cyclical unemployment ...") read as
+heads, and ruled answer slots "(i)____" read as parts. Every old paper prints
+seventeen bold left-margin heads (9 + 8) and marked section banners, so the
+walker reads lines by position and weight and keys asks (section, q, letter,
+roman); reconcile matches a 4-part key only under the cited section. Its own
+check: each Section B question's printed part marks must sum to its printed 75
+(all 168 do); each Section A question must print its marks (all 189 do).
+
+Asks per sitting: 2010 HL 54 / OL 73, 2011 55 / 81, 2012 55 / 71, 2013 57 / 76,
+2014 54 / 69, 2015 57 / 80, 2016 67 / 82, 2017 66 / 65, 2018 70 / 70,
+2019 70 / 67, 2020 HL 75: 1,414 old-syllabus asks. Hand counts from rendered
+pages, all exact: 2010 HL 54, 2019 HL 70, 2020 HL 75, 2014 OL 69, 2017 OL 65,
+2019 OL 67, and 2011 OL Section A 17. Three page-read rules came out of those
+counts: a letter after a letterless roman labels a table row (2020 HL A Q4(ii)
+"Tick one option only" over rows (a)-(c)); romans may print out of order in a
+grid (2015 OL A Q1, (ii) (iv) above (i) (iii)); two very short asks are recorded
+in `SHORT_ASKS` (2010 OL A Q1(i) "IMF", 2014 OL B Q6(a)(ii) "Money;").
+
+Economics: 792/1,219 covered, 1 excluded, 426 open, 40 flags before; 792/2,206,
+0 excluded, 1,414 open, 0 flags after. Proof that nothing else moved (isolated
+measurement tree, all 54 subjects): every other subject's census and reconcile
+JSON identical; Economics 2021-2026 reconcile rows identical except 2024 HL
+(75 -> 74 leaves, excluded 1 -> 0); census identical except that leaf and the
+2025/2026 HL marks-checksum flags, which compared those papers against the
+misread old-paper sum of 66 and no longer fire because the checksum now compares
+each era with itself (`era` on the old papers).

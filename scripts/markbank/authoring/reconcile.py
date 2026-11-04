@@ -535,6 +535,15 @@ def match_leaves(ref, leaves, sections_mode):
                     sec, kq, kl, kr = k
                     if ref['section'] and str(sec) != str(ref['section']):
                         continue
+                elif len(k) == 4:
+                    # A merged-mode paper keyed by section all the same: the
+                    # old-syllabus Economics paper restarts Section B at
+                    # Question 1 (econ_legacy_census.py), so "Q1" names two
+                    # questions and only the section tells them apart. A
+                    # citation that names no section matches neither.
+                    sec, kq, kl, kr = k
+                    if str(sec) != str(ref['section']):
+                        continue
                 else:
                     kq, kl, kr = k[-3], k[-2], k[-1]
                 if kq != q:
