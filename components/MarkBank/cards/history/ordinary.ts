@@ -1035,6 +1035,1830 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s1-q1a", topicId: "hist-lm-irl-3", conceptId: "did-writer-usually-travel",
+    section: "1", questionRef: "2014 OL Later Modern Section 1 Q1(a)",
+    stem: "Case study: The Treaty negotiations, October-December, 1921",
+    questionText: "According to document A, how did the writer usually travel?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Third class", marks: 8, contextNote: "Train ONLY = 4M", permittedMarks: [0,4,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s1-q1b", topicId: "hist-lm-irl-3", conceptId: "where-did-entertainment-described-take-place",
+    section: "1", questionRef: "2014 OL Later Modern Section 1 Q1(b)",
+    stem: "Case study: The Treaty negotiations, October-December, 1921",
+    questionText: "Where did the entertainment described in document B take place?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Hans Place", marks: 8, contextNote: "London ONLY = 4M", permittedMarks: [0,4,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s1-q1c", topicId: "hist-lm-irl-3", conceptId: "train-carpeted",
+    section: "1", questionRef: "2014 OL Later Modern Section 1 Q1(c)",
+    stem: "Case study: The Treaty negotiations, October-December, 1921",
+    questionText: "In document A, how was the train carpeted?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Oriental rugs", marks: 8, contextNote: "Rugs ONLY = 4M", permittedMarks: [0,4,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s1-q1d", topicId: "hist-lm-irl-3", conceptId: "did-collins-group-prefer",
+    section: "1", questionRef: "2014 OL Later Modern Section 1 Q1(d)",
+    stem: "Case study: The Treaty negotiations, October-December, 1921",
+    questionText: "In document B, what did Collins’ group prefer?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Preferred horseplay (to formalities)", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s1-q1e", topicId: "hist-lm-irl-3", conceptId: "role-did-kathleen-mckenna-play-treaty",
+    section: "1", questionRef: "2014 OL Later Modern Section 1 Q1(e)",
+    stem: "Case study: The Treaty negotiations, October-December, 1921",
+    questionText: "What role did Kathleen McKenna play in the Treaty negotiations in London?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A secretary", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s1-q2a", topicId: "hist-lm-irl-3", conceptId: "did-occasions-involve-meal",
+    section: "1", questionRef: "2014 OL Later Modern Section 1 Q2(a)",
+    stem: "Case study: The Treaty negotiations, October-December, 1921",
+    questionText: "In documents A and B, did both occasions involve a meal? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In Document A and Document B both occasions involved a meal", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Document A states that “a delicious lunch was served”.", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Document B states “when the feast was at its height” OR that there were “tangerine oranges, apples and nuts” on the table.", marks: 4, contextNote: "Mark quality of explanation on its merits. — Reference to both documents = 4M + 4M Max = 10M" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s1-q2b", topicId: "hist-lm-irl-3", conceptId: "took-place-first-journey-entertainment-reason",
+    section: "1", questionRef: "2014 OL Later Modern Section 1 Q2(b)",
+    stem: "Case study: The Treaty negotiations, October-December, 1921",
+    questionText: "Which took place first, the journey in document A or the entertainment in document B? Give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The journey in Document A took place before the entertainment in Document B", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Document A describes part of the journey (the train from Holyhead) to London for the Irish delegation to the Treaty negotiations.", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Document B describes an incident (at an evening’s entertainment) at Hans Place in London during the Treaty negotiations. It stands to reason that their journey to London must have happened before they could be present at an incident in London!", marks: 4, contextNote: "Mark quality of explanation on its merits. — Both documents must be mentioned. — One point from each document = 4M + 4M Max = 10M" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s1-q3a", topicId: "hist-lm-irl-3", conceptId: "shown-writer-travelling-special-train",
+    section: "1", questionRef: "2014 OL Later Modern Section 1 Q3(a)",
+    stem: "Case study: The Treaty negotiations, October-December, 1921",
+    questionText: "How is it shown in document A that the writer was travelling in a ‘special’ train?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "We know that it’s a “special train” because the writer tells us that it was – twice", marks: null },
+    { id: "r-2", kind: "point", verbatim: "She says it was a train “such as would be reserved for royalty”", marks: null },
+    { id: "r-3", kind: "point", verbatim: "She speaks of “luxuriously travelling” in a “spacious compartment” with impressive decoration, furniture and carpets.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s1-q3b", topicId: "hist-lm-irl-3", conceptId: "does-writer-attempt-show-sides-collins",
+    section: "1", questionRef: "2014 OL Later Modern Section 1 Q3(b)",
+    stem: "Case study: The Treaty negotiations, October-December, 1921",
+    questionText: "In document B, how does the writer attempt to show two sides of Collins’ character?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "On the one hand Collins was “exuberant” as seen in the “horseplay” of throwing food and cushions. On the other hand he was religious as seen in his attendance at daily Mass.", marks: 10 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s1-q4", topicId: "hist-lm-irl-3", conceptId: "part-did-arthur-griffith-michael-collins",
+    section: "1", questionRef: "2014 OL Later Modern Section 1 Q4",
+    stem: "Case study: The Treaty negotiations, October-December, 1921",
+    questionText: "What part did Arthur Griffith and/or Michael Collins play in the Treaty negotiations in London, October-December, 1921?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[0], schemePages: [7,8] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t1a-q1", topicId: "hist-lm-irl-1", conceptId: "where-did-connell-stop-his-way",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 1 A Q1",
+    stem: "In Waterford to support his candidate, Villiers Stuart, in the 1826 election, Daniel O’Connell stopped at Kilmacthomas which belonged to the rival Beresfords. This is an edited extract from his letter to his wife. Read it and answer the questions which follow.\n\nWe breakfasted at Kilmacthomas, a town belonging to the Beresfords but the people belong to us. They came out to meet us with green boughs and such shouting as you can have no idea of.\nI harangued them (addressed them forcefully) from the window of the inn, and we had a good deal of laughing at the bloody Beresfords.\nConsider how popular our movement must be when here, a Beresford town – every man their tenant – we had such a reception.",
+    questionText: "Where did O’Connell stop on his way to Waterford?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Kilmacthomas", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t1a-q2", topicId: "hist-lm-irl-1", conceptId: "reception-did-connell-receive",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 1 A Q2",
+    stem: "In Waterford to support his candidate, Villiers Stuart, in the 1826 election, Daniel O’Connell stopped at Kilmacthomas which belonged to the rival Beresfords. This is an edited extract from his letter to his wife. Read it and answer the questions which follow.\n\nWe breakfasted at Kilmacthomas, a town belonging to the Beresfords but the people belong to us. They came out to meet us with green boughs and such shouting as you can have no idea of.\nI harangued them (addressed them forcefully) from the window of the inn, and we had a good deal of laughing at the bloody Beresfords.\nConsider how popular our movement must be when here, a Beresford town – every man their tenant – we had such a reception.",
+    questionText: "What reception did O’Connell receive?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They came to meet him with green boughs and shouts/He received a great reception", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t1a-q3", topicId: "hist-lm-irl-1", conceptId: "where-did-connell-address-crowd",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 1 A Q3",
+    stem: "In Waterford to support his candidate, Villiers Stuart, in the 1826 election, Daniel O’Connell stopped at Kilmacthomas which belonged to the rival Beresfords. This is an edited extract from his letter to his wife. Read it and answer the questions which follow.\n\nWe breakfasted at Kilmacthomas, a town belonging to the Beresfords but the people belong to us. They came out to meet us with green boughs and such shouting as you can have no idea of.\nI harangued them (addressed them forcefully) from the window of the inn, and we had a good deal of laughing at the bloody Beresfords.\nConsider how popular our movement must be when here, a Beresford town – every man their tenant – we had such a reception.",
+    questionText: "From where did O’Connell address the crowd?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "From the window of the inn", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t1a-q4", topicId: "hist-lm-irl-1", conceptId: "way-kilmacthomas-beresford-town",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 1 A Q4",
+    stem: "In Waterford to support his candidate, Villiers Stuart, in the 1826 election, Daniel O’Connell stopped at Kilmacthomas which belonged to the rival Beresfords. This is an edited extract from his letter to his wife. Read it and answer the questions which follow.\n\nWe breakfasted at Kilmacthomas, a town belonging to the Beresfords but the people belong to us. They came out to meet us with green boughs and such shouting as you can have no idea of.\nI harangued them (addressed them forcefully) from the window of the inn, and we had a good deal of laughing at the bloody Beresfords.\nConsider how popular our movement must be when here, a Beresford town – every man their tenant – we had such a reception.",
+    questionText: "In what way was Kilmacthomas ‘a Beresford town’?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The town belonged to the Beresfords/ They were the landlords", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t1a-q5", topicId: "hist-lm-irl-1", conceptId: "did-daniel-connell-finally-achieve-1829",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 1 A Q5",
+    stem: "In Waterford to support his candidate, Villiers Stuart, in the 1826 election, Daniel O’Connell stopped at Kilmacthomas which belonged to the rival Beresfords. This is an edited extract from his letter to his wife. Read it and answer the questions which follow.\n\nWe breakfasted at Kilmacthomas, a town belonging to the Beresfords but the people belong to us. They came out to meet us with green boughs and such shouting as you can have no idea of.\nI harangued them (addressed them forcefully) from the window of the inn, and we had a good deal of laughing at the bloody Beresfords.\nConsider how popular our movement must be when here, a Beresford town – every man their tenant – we had such a reception.",
+    questionText: "What did Daniel O’Connell finally achieve in 1829?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Catholic Emancipation", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t1b", topicId: "hist-lm-irl-1", conceptId: "irish-countryside-1815-charles-trevelyan-famine",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 1 B",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Write a short paragraph on one of the following:\n1. The Irish countryside in 1815.\n2. Charles Trevelyan and the Famine.\n3. Reforms of the Liberal government.\n4. Fenianism.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t1c", topicId: "hist-lm-irl-1", conceptId: "did-daniel-connell-campaign-repeal-act",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 1 C",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Answer one of the following:\n1. How did Daniel O’Connell campaign for Repeal of the Act of Union?\n2. What did William Dargan contribute to economy and society in Ireland?\n3. What did William Carleton and/or Thomas Davis contribute to Irish culture?\n4. What decisions concerning the Catholic Church in Ireland were made at the Synod of Thurles, 1850?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t2a-q1", topicId: "hist-lm-irl-2", conceptId: "sort-persons-formed-core-group-clubs",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 2 A Q1",
+    stem: "This edited extract comments on the early history of the GAA. Read it and answer the questions which follow.\n\nIn towns across the country, shop assistants formed the core group of the most successful clubs. Clubs associated with the grocery and bar trade dominated the early years of the GAA in Dublin.\nThe Raparees club was composed mainly of barmen. Its headquarters was at the public house of John Connell, one of its leading players, at Cork Street.\nThe Charles Kickham club drew its players mainly from the drapery trade. It was centred on the drapers’ stores of Henry Street.",
+    questionText: "What sort of persons formed the core group of clubs in towns across the country?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Shop assistants", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t2a-q2", topicId: "hist-lm-irl-2", conceptId: "service-did-john-connell-provide-raparees",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 2 A Q2",
+    stem: "This edited extract comments on the early history of the GAA. Read it and answer the questions which follow.\n\nIn towns across the country, shop assistants formed the core group of the most successful clubs. Clubs associated with the grocery and bar trade dominated the early years of the GAA in Dublin.\nThe Raparees club was composed mainly of barmen. Its headquarters was at the public house of John Connell, one of its leading players, at Cork Street.\nThe Charles Kickham club drew its players mainly from the drapery trade. It was centred on the drapers’ stores of Henry Street.",
+    questionText: "What service did John Connell provide for the Raparees?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "His pub was their headquarters/ He was one of their leading players", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t2a-q3", topicId: "hist-lm-irl-2", conceptId: "sort-person-typically-played-charles-kickham",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 2 A Q3",
+    stem: "This edited extract comments on the early history of the GAA. Read it and answer the questions which follow.\n\nIn towns across the country, shop assistants formed the core group of the most successful clubs. Clubs associated with the grocery and bar trade dominated the early years of the GAA in Dublin.\nThe Raparees club was composed mainly of barmen. Its headquarters was at the public house of John Connell, one of its leading players, at Cork Street.\nThe Charles Kickham club drew its players mainly from the drapery trade. It was centred on the drapers’ stores of Henry Street.",
+    questionText: "What sort of person, typically, played with the Charles Kickham club?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Drapers", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t2a-q4", topicId: "hist-lm-irl-2", conceptId: "where-kickhams-centred",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 2 A Q4",
+    stem: "This edited extract comments on the early history of the GAA. Read it and answer the questions which follow.\n\nIn towns across the country, shop assistants formed the core group of the most successful clubs. Clubs associated with the grocery and bar trade dominated the early years of the GAA in Dublin.\nThe Raparees club was composed mainly of barmen. Its headquarters was at the public house of John Connell, one of its leading players, at Cork Street.\nThe Charles Kickham club drew its players mainly from the drapery trade. It was centred on the drapers’ stores of Henry Street.",
+    questionText: "Where were the Kickhams centred?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Drapers’ stores", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "of Henry Street", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t2a-q5", topicId: "hist-lm-irl-2", conceptId: "did-michael-cusack-contribute-gaa",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 2 A Q5",
+    stem: "This edited extract comments on the early history of the GAA. Read it and answer the questions which follow.\n\nIn towns across the country, shop assistants formed the core group of the most successful clubs. Clubs associated with the grocery and bar trade dominated the early years of the GAA in Dublin.\nThe Raparees club was composed mainly of barmen. Its headquarters was at the public house of John Connell, one of its leading players, at Cork Street.\nThe Charles Kickham club drew its players mainly from the drapery trade. It was centred on the drapers’ stores of Henry Street.",
+    questionText: "How did Michael Cusack contribute to the GAA?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid piece of evidence of Cusack’s role in the GAA.", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t2b", topicId: "hist-lm-irl-2", conceptId: "elections-1885-1886-isabella-tod-edward",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 2 B",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Write a short paragraph on one of the following:\n1. The elections of 1885 and 1886.\n2. Isabella Tod.\n3. Edward Carson.\n4. The Co-operative Movement.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t2c", topicId: "hist-lm-irl-2", conceptId: "did-michael-davitt-charles-stewart-parnell",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 2 C",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Answer one of the following:\n1. What did Michael Davitt and/or Charles Stewart Parnell contribute to land agitation and land reform?\n2. What did Douglas Hyde and/or William Butler Yeats contribute to Irish cultural life?\n3. How did James Larkin influence events in Dublin during 1913?\n4. What were the successes and failures in the political career of John Redmond?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t4a-q1", topicId: "hist-lm-irl-4", conceptId: "did-liverpool-become-important-irish-centre",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 4 A Q1",
+    stem: "This edited extract discusses the number of Irish emigrants arriving in Liverpool during and after the Famine. Read it and answer the questions which follow.\n\nBecause Liverpool was relatively close to Ireland, this city was to become an important Irish centre for emigrants throughout the nineteenth century. The Irish lived mostly in the city centre or in the dockland area of the city. Liverpool also acted as the main port of departure for many Irish aiming to sail across the Atlantic to America.\nIn 1846, for example, more than 280,000 Irish arrived in Liverpool, while some 300,000 arrived the following year. Further waves of emigrants meant that between 1849 and 1853 an estimated 850,000 Irish had arrived in Liverpool.\nMost Irish arriving in Liverpool had ambitions of moving on to America but probably less than half of them succeeded in doing so. As a consequence, by 1851 there were more Irish-born in Liverpool than in Cork. Despite continued migration to America, a decade later a staggering one quarter of the population of Liverpool remained Irish-born.",
+    questionText: "Why did Liverpool become an important Irish centre for emigrants?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because Liverpool was relatively close to Ireland/ Main port of departure", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t4a-q2", topicId: "hist-lm-irl-4", conceptId: "many-irish-emigrants-arrived-liverpool-1847",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 4 A Q2",
+    stem: "This edited extract discusses the number of Irish emigrants arriving in Liverpool during and after the Famine. Read it and answer the questions which follow.\n\nBecause Liverpool was relatively close to Ireland, this city was to become an important Irish centre for emigrants throughout the nineteenth century. The Irish lived mostly in the city centre or in the dockland area of the city. Liverpool also acted as the main port of departure for many Irish aiming to sail across the Atlantic to America.\nIn 1846, for example, more than 280,000 Irish arrived in Liverpool, while some 300,000 arrived the following year. Further waves of emigrants meant that between 1849 and 1853 an estimated 850,000 Irish had arrived in Liverpool.\nMost Irish arriving in Liverpool had ambitions of moving on to America but probably less than half of them succeeded in doing so. As a consequence, by 1851 there were more Irish-born in Liverpool than in Cork. Despite continued migration to America, a decade later a staggering one quarter of the population of Liverpool remained Irish-born.",
+    questionText: "How many Irish emigrants arrived in Liverpool in 1847?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "300,000", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t4a-q3", topicId: "hist-lm-irl-4", conceptId: "proportion-irish-emigrants-liverpool-moved-america",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 4 A Q3",
+    stem: "This edited extract discusses the number of Irish emigrants arriving in Liverpool during and after the Famine. Read it and answer the questions which follow.\n\nBecause Liverpool was relatively close to Ireland, this city was to become an important Irish centre for emigrants throughout the nineteenth century. The Irish lived mostly in the city centre or in the dockland area of the city. Liverpool also acted as the main port of departure for many Irish aiming to sail across the Atlantic to America.\nIn 1846, for example, more than 280,000 Irish arrived in Liverpool, while some 300,000 arrived the following year. Further waves of emigrants meant that between 1849 and 1853 an estimated 850,000 Irish had arrived in Liverpool.\nMost Irish arriving in Liverpool had ambitions of moving on to America but probably less than half of them succeeded in doing so. As a consequence, by 1851 there were more Irish-born in Liverpool than in Cork. Despite continued migration to America, a decade later a staggering one quarter of the population of Liverpool remained Irish-born.",
+    questionText: "What proportion of Irish emigrants in Liverpool moved on to America?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Less than half", marks: 6, contextNote: "Half ONLY = 3M", permittedMarks: [0,3,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t4a-q4", topicId: "hist-lm-irl-4", conceptId: "1851-there-more-irish-born-liverpool",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 4 A Q4",
+    stem: "This edited extract discusses the number of Irish emigrants arriving in Liverpool during and after the Famine. Read it and answer the questions which follow.\n\nBecause Liverpool was relatively close to Ireland, this city was to become an important Irish centre for emigrants throughout the nineteenth century. The Irish lived mostly in the city centre or in the dockland area of the city. Liverpool also acted as the main port of departure for many Irish aiming to sail across the Atlantic to America.\nIn 1846, for example, more than 280,000 Irish arrived in Liverpool, while some 300,000 arrived the following year. Further waves of emigrants meant that between 1849 and 1853 an estimated 850,000 Irish had arrived in Liverpool.\nMost Irish arriving in Liverpool had ambitions of moving on to America but probably less than half of them succeeded in doing so. As a consequence, by 1851 there were more Irish-born in Liverpool than in Cork. Despite continued migration to America, a decade later a staggering one quarter of the population of Liverpool remained Irish-born.",
+    questionText: "By 1851 there were more Irish-born in Liverpool than in what Irish city?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cork", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t4a-q5", topicId: "hist-lm-irl-4", conceptId: "reason-many-people-emigrated-ireland-during",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 4 A Q5",
+    stem: "This edited extract discusses the number of Irish emigrants arriving in Liverpool during and after the Famine. Read it and answer the questions which follow.\n\nBecause Liverpool was relatively close to Ireland, this city was to become an important Irish centre for emigrants throughout the nineteenth century. The Irish lived mostly in the city centre or in the dockland area of the city. Liverpool also acted as the main port of departure for many Irish aiming to sail across the Atlantic to America.\nIn 1846, for example, more than 280,000 Irish arrived in Liverpool, while some 300,000 arrived the following year. Further waves of emigrants meant that between 1849 and 1853 an estimated 850,000 Irish had arrived in Liverpool.\nMost Irish arriving in Liverpool had ambitions of moving on to America but probably less than half of them succeeded in doing so. As a consequence, by 1851 there were more Irish-born in Liverpool than in Cork. Despite continued migration to America, a decade later a staggering one quarter of the population of Liverpool remained Irish-born.",
+    questionText: "Give one reason why so many people emigrated from Ireland during the 1840s.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t4b", topicId: "hist-lm-irl-4", conceptId: "gaa-irish-diaspora-archbishop-daniel-mannix",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 4 B",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Write a short paragraph on one of the following:\n1. The GAA and the Irish diaspora.\n2. Archbishop Daniel Mannix.\n3. Anti-Irish sentiment in Britain and the US.\n4. John F. Kennedy.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t4c", topicId: "hist-lm-irl-4", conceptId: "conditions-did-irish-emigrants-experience-grosse",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 4 C",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Answer one of the following:\n1. What conditions did Irish emigrants experience at Grosse Isle?\n2. What were the aims of de Valera in America (June, 1919-December, 1920) and how successful was he in achieving them?\n3. What problems did the Holy Ghost mission to Nigeria encounter between 1945 and 1966?\n4. What did Bishop Edward Galvin and/or Mother Mary Martin contribute to the Irish diaspora?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t5a-q1", topicId: "hist-lm-irl-5", conceptId: "did-strike-affect-preparation-food-drink",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 5 A Q1",
+    stem: "In this edited extract The Daily Mail describes the state to which Belfast had been reduced during the second week of the Ulster Workers’ Council strike, May 1974. Read it and answer the questions which follow.\n\nYou can’t have a breakfast egg or bacon – the shelves are bare.\nYou can’t make a hot drink because there’s no electricity.\nYou can’t catch a bus because there aren’t any.\nYou can’t post a letter because it won’t arrive.\nPetrol is so scarce some people are trying to run their cars on paint thinners.",
+    questionText: "How did the strike affect the preparation of food or drink?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No bacon and egg in the shops/ No electricity to make a hot drink", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t5a-q2", topicId: "hist-lm-irl-5", conceptId: "did-affect-public-transport",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 5 A Q2",
+    stem: "In this edited extract The Daily Mail describes the state to which Belfast had been reduced during the second week of the Ulster Workers’ Council strike, May 1974. Read it and answer the questions which follow.\n\nYou can’t have a breakfast egg or bacon – the shelves are bare.\nYou can’t make a hot drink because there’s no electricity.\nYou can’t catch a bus because there aren’t any.\nYou can’t post a letter because it won’t arrive.\nPetrol is so scarce some people are trying to run their cars on paint thinners.",
+    questionText: "How did it affect public transport?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No buses", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t5a-q3", topicId: "hist-lm-irl-5", conceptId: "did-affect-communications",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 5 A Q3",
+    stem: "In this edited extract The Daily Mail describes the state to which Belfast had been reduced during the second week of the Ulster Workers’ Council strike, May 1974. Read it and answer the questions which follow.\n\nYou can’t have a breakfast egg or bacon – the shelves are bare.\nYou can’t make a hot drink because there’s no electricity.\nYou can’t catch a bus because there aren’t any.\nYou can’t post a letter because it won’t arrive.\nPetrol is so scarce some people are trying to run their cars on paint thinners.",
+    questionText: "How did it affect communications?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No post", marks: 6, contextNote: "No buses = 0M" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t5a-q4", topicId: "hist-lm-irl-5", conceptId: "did-some-private-motorists-react-shortage",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 5 A Q4",
+    stem: "In this edited extract The Daily Mail describes the state to which Belfast had been reduced during the second week of the Ulster Workers’ Council strike, May 1974. Read it and answer the questions which follow.\n\nYou can’t have a breakfast egg or bacon – the shelves are bare.\nYou can’t make a hot drink because there’s no electricity.\nYou can’t catch a bus because there aren’t any.\nYou can’t post a letter because it won’t arrive.\nPetrol is so scarce some people are trying to run their cars on paint thinners.",
+    questionText: "How did some private motorists react to the shortage of petrol?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They tried to run their cars on paint thinners", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t5a-q5", topicId: "hist-lm-irl-5", conceptId: "step-did-brian-faulkner-take-1974",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 5 A Q5",
+    stem: "In this edited extract The Daily Mail describes the state to which Belfast had been reduced during the second week of the Ulster Workers’ Council strike, May 1974. Read it and answer the questions which follow.\n\nYou can’t have a breakfast egg or bacon – the shelves are bare.\nYou can’t make a hot drink because there’s no electricity.\nYou can’t catch a bus because there aren’t any.\nYou can’t post a letter because it won’t arrive.\nPetrol is so scarce some people are trying to run their cars on paint thinners.",
+    questionText: "What step did Brian Faulkner take on 27 May, 1974, in response to the strike?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Faulkner resigned (as PM)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t5b", topicId: "hist-lm-irl-5", conceptId: "conn-patricia-mccluskey-downing-street-declaration",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 5 B",
+    stem: "Politics and society in Northern Ireland, 1949-1993",
+    questionText: "Write a short paragraph on one of the following:\n1. Conn and Patricia McCluskey.\n2. The Downing Street Declaration, 1993.\n3. Ian Paisley.\n4. Cultural responses to the “Troubles”.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t5c", topicId: "hist-lm-irl-5", conceptId: "main-terms-sunningdale-agreement-did-activities",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 5 C",
+    stem: "Politics and society in Northern Ireland, 1949-1993",
+    questionText: "Answer one of the following:\n1. What were the main terms of the Sunningdale Agreement?\n2. How did the activities of the Apprentice Boys of Derry cause unrest in that city?\n3. What were the arguments for and against siting the new university at Coleraine?\n4. How did John Hume and/or Margaret Thatcher respond to the “Troubles” in Northern Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t6a-q1", topicId: "hist-lm-irl-6", conceptId: "kind-administrator-lemass",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 6 A Q1",
+    stem: "This edited extract from a CIA briefing document ahead of President John F. Kennedy’s Irish visit (June 1963) refers to the Taoiseach, Seán Lemass. Read it and answer the questions which follow.\n\nIntelligent and shrewd, he is an efficient and hard-working administrator.\nWhile he has an engaging personality and friendly manner, he is said to be capable of great bitterness toward those who have offended him.\nAccording to some reports, he is not against using political patronage to get things done.\nHe is an inveterate gambler and, as a result, has at times been involved in serious financial difficulties.",
+    questionText: "According to the document, what kind of administrator is Lemass?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Efficient","Hard-working","Intelligent","Shrewd"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t6a-q2", topicId: "hist-lm-irl-6", conceptId: "lemass-praised",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 6 A Q2",
+    stem: "This edited extract from a CIA briefing document ahead of President John F. Kennedy’s Irish visit (June 1963) refers to the Taoiseach, Seán Lemass. Read it and answer the questions which follow.\n\nIntelligent and shrewd, he is an efficient and hard-working administrator.\nWhile he has an engaging personality and friendly manner, he is said to be capable of great bitterness toward those who have offended him.\nAccording to some reports, he is not against using political patronage to get things done.\nHe is an inveterate gambler and, as a result, has at times been involved in serious financial difficulties.",
+    questionText: "How is Lemass praised?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Intelligent and shrewd","Efficient and hard-working","Engaging and friendly"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t6a-q3", topicId: "hist-lm-irl-6", conceptId: "reason-lemass-use-political-patronage",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 6 A Q3",
+    stem: "This edited extract from a CIA briefing document ahead of President John F. Kennedy’s Irish visit (June 1963) refers to the Taoiseach, Seán Lemass. Read it and answer the questions which follow.\n\nIntelligent and shrewd, he is an efficient and hard-working administrator.\nWhile he has an engaging personality and friendly manner, he is said to be capable of great bitterness toward those who have offended him.\nAccording to some reports, he is not against using political patronage to get things done.\nHe is an inveterate gambler and, as a result, has at times been involved in serious financial difficulties.",
+    questionText: "According to the document, for what reason might Lemass use political patronage?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To get things done/ Pragmatism/ A means to an end", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t6a-q4", topicId: "hist-lm-irl-6", conceptId: "lemass-financial-difficulties-times",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 6 A Q4",
+    stem: "This edited extract from a CIA briefing document ahead of President John F. Kennedy’s Irish visit (June 1963) refers to the Taoiseach, Seán Lemass. Read it and answer the questions which follow.\n\nIntelligent and shrewd, he is an efficient and hard-working administrator.\nWhile he has an engaging personality and friendly manner, he is said to be capable of great bitterness toward those who have offended him.\nAccording to some reports, he is not against using political patronage to get things done.\nHe is an inveterate gambler and, as a result, has at times been involved in serious financial difficulties.",
+    questionText: "According to the document, why is Lemass in financial difficulties at times?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because he is a gambler", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t6a-q5", topicId: "hist-lm-irl-6", conceptId: "did-lemass-attempt-improve-relations-northern",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 6 A Q5",
+    stem: "This edited extract from a CIA briefing document ahead of President John F. Kennedy’s Irish visit (June 1963) refers to the Taoiseach, Seán Lemass. Read it and answer the questions which follow.\n\nIntelligent and shrewd, he is an efficient and hard-working administrator.\nWhile he has an engaging personality and friendly manner, he is said to be capable of great bitterness toward those who have offended him.\nAccording to some reports, he is not against using political patronage to get things done.\nHe is an inveterate gambler and, as a result, has at times been involved in serious financial difficulties.",
+    questionText: "How did Seán Lemass attempt to improve relations with Northern Ireland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid point about Lemass and relations with Northern Ireland", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t6b", topicId: "hist-lm-irl-6", conceptId: "irish-involvement-changes-irish-education-1949",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 6 B",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. Irish involvement in the UN.\n2. Changes in Irish education, 1949-1989.\n3. Archbishop John Charles McQuaid.\n4. Sylvia Meehan.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s2t6c", topicId: "hist-lm-irl-6", conceptId: "contained-first-programme-economic-expansion-1958",
+    section: "2", questionRef: "2014 OL Later Modern Section 2 Topic 6 C",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Answer one of the following:\n1. What was contained in the First Programme for Economic Expansion, 1958-1963?\n2. What was the impact of RTÉ on Irish society between 1962 and 1972?\n3. How did the EEC influence the development of Irish fisheries?\n4. How did Jack Lynch, as Taoiseach, respond to the challenges facing his government?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t1a-q1", topicId: "hist-lm-eur-1", conceptId: "french-districts-paris-known",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 1 A Q1",
+    stem: "This edited extract describes some of Haussmann’s plan to remodel the city of Paris. Read it and answer the questions which follow.\n\nThe next step in Haussmann’s plan was to divide the city into arrondissements, or districts. The decision to divide Paris into these new districts came about in 1853 at the same time as the decision to modernise the city completely. The plan meant the destruction of the old quarters in the city centre and the building of large new quarters in their place.\nThe original plan called for twelve districts, but in 1860 twenty districts were created. The districts started at the centre, on the banks of the Seine, and spiralled outwards. With the division of the city into arrondissements came the need for a new water and sewer system.\nWhen construction on the new Paris began, the city centre was still served by a medieval network of sewers. Aided by his chief engineer, Eugene Belgrand, Haussmann began construction in 1857 on a new sewer system that could handle the large amounts of wastewaters coming from the city that would be funnelled into the Seine downstream from Paris.",
+    questionText: "By what French name were the districts of Paris known?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Arrondissements", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t1a-q2", topicId: "hist-lm-eur-1", conceptId: "under-haussmann-plan-happened-old-quarters",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 1 A Q2",
+    stem: "This edited extract describes some of Haussmann’s plan to remodel the city of Paris. Read it and answer the questions which follow.\n\nThe next step in Haussmann’s plan was to divide the city into arrondissements, or districts. The decision to divide Paris into these new districts came about in 1853 at the same time as the decision to modernise the city completely. The plan meant the destruction of the old quarters in the city centre and the building of large new quarters in their place.\nThe original plan called for twelve districts, but in 1860 twenty districts were created. The districts started at the centre, on the banks of the Seine, and spiralled outwards. With the division of the city into arrondissements came the need for a new water and sewer system.\nWhen construction on the new Paris began, the city centre was still served by a medieval network of sewers. Aided by his chief engineer, Eugene Belgrand, Haussmann began construction in 1857 on a new sewer system that could handle the large amounts of wastewaters coming from the city that would be funnelled into the Seine downstream from Paris.",
+    questionText: "Under Haussmann’s plan, what happened to the old quarters in the city centre?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Old quarters were knocked down/ cleared away", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t1a-q3", topicId: "hist-lm-eur-1", conceptId: "after-1860-into-many-districts-city",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 1 A Q3",
+    stem: "This edited extract describes some of Haussmann’s plan to remodel the city of Paris. Read it and answer the questions which follow.\n\nThe next step in Haussmann’s plan was to divide the city into arrondissements, or districts. The decision to divide Paris into these new districts came about in 1853 at the same time as the decision to modernise the city completely. The plan meant the destruction of the old quarters in the city centre and the building of large new quarters in their place.\nThe original plan called for twelve districts, but in 1860 twenty districts were created. The districts started at the centre, on the banks of the Seine, and spiralled outwards. With the division of the city into arrondissements came the need for a new water and sewer system.\nWhen construction on the new Paris began, the city centre was still served by a medieval network of sewers. Aided by his chief engineer, Eugene Belgrand, Haussmann began construction in 1857 on a new sewer system that could handle the large amounts of wastewaters coming from the city that would be funnelled into the Seine downstream from Paris.",
+    questionText: "After 1860, into how many districts was the city divided?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Twenty", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t1a-q4", topicId: "hist-lm-eur-1", conceptId: "who-helped-haussmann-construct-new-sewer",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 1 A Q4",
+    stem: "This edited extract describes some of Haussmann’s plan to remodel the city of Paris. Read it and answer the questions which follow.\n\nThe next step in Haussmann’s plan was to divide the city into arrondissements, or districts. The decision to divide Paris into these new districts came about in 1853 at the same time as the decision to modernise the city completely. The plan meant the destruction of the old quarters in the city centre and the building of large new quarters in their place.\nThe original plan called for twelve districts, but in 1860 twenty districts were created. The districts started at the centre, on the banks of the Seine, and spiralled outwards. With the division of the city into arrondissements came the need for a new water and sewer system.\nWhen construction on the new Paris began, the city centre was still served by a medieval network of sewers. Aided by his chief engineer, Eugene Belgrand, Haussmann began construction in 1857 on a new sewer system that could handle the large amounts of wastewaters coming from the city that would be funnelled into the Seine downstream from Paris.",
+    questionText: "Who helped Haussmann to construct a new sewer system?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Eugene) Belgrand", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t1a-q5", topicId: "hist-lm-eur-1", conceptId: "major-building-built-part-haussmann-plan",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 1 A Q5",
+    stem: "This edited extract describes some of Haussmann’s plan to remodel the city of Paris. Read it and answer the questions which follow.\n\nThe next step in Haussmann’s plan was to divide the city into arrondissements, or districts. The decision to divide Paris into these new districts came about in 1853 at the same time as the decision to modernise the city completely. The plan meant the destruction of the old quarters in the city centre and the building of large new quarters in their place.\nThe original plan called for twelve districts, but in 1860 twenty districts were created. The districts started at the centre, on the banks of the Seine, and spiralled outwards. With the division of the city into arrondissements came the need for a new water and sewer system.\nWhen construction on the new Paris began, the city centre was still served by a medieval network of sewers. Aided by his chief engineer, Eugene Belgrand, Haussmann began construction in 1857 on a new sewer system that could handle the large amounts of wastewaters coming from the city that would be funnelled into the Seine downstream from Paris.",
+    questionText: "Name one major building which was built as part of Haussmann’s plan.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE building built as part of Haussmann’s plan", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t1b", topicId: "hist-lm-eur-1", conceptId: "clemens-metternich-serfdom-russia-otto-von",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 1 B",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Write a short paragraph on one of the following:\n1. Clemens Metternich.\n2. Serfdom in Russia.\n3. Otto von Bismarck.\n4. Developments in science, 1815-1871.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t1c", topicId: "hist-lm-eur-1", conceptId: "solutions-did-karl-marx-mikhail-bakunin",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 1 C",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Answer one of the following:\n1. What solutions did Karl Marx and/or Mikhail Bakunin offer to the problems of society?\n2. What conditions of work did Robert Owen introduce in his model village at New Lanark?\n3. What influence had Feargus O’Connor on events in Britain?\n4. How did Giuseppe Mazzini contribute to moves towards Italian unity?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t2a-q1", topicId: "hist-lm-eur-2", conceptId: "when-whom-poster-issued",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 2 A Q1",
+    stem: "The picture marked Y on page 15 shows a Ministry of Munitions poster from 1918 appealing for more female workers for the aircraft industry. Study it and answer the questions below.",
+    questionText: "When and by whom was the poster issued?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Government/ Ministry of Munitions", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "1918", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t2a-q2", topicId: "hist-lm-eur-2", conceptId: "poster-needed",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 2 A Q2",
+    stem: "The picture marked Y on page 15 shows a Ministry of Munitions poster from 1918 appealing for more female workers for the aircraft industry. Study it and answer the questions below.",
+    questionText: "According to the poster, what was needed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "More aeroplanes", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t2a-q3", topicId: "hist-lm-eur-2", conceptId: "whom-poster-directed",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 2 A Q3",
+    stem: "The picture marked Y on page 15 shows a Ministry of Munitions poster from 1918 appealing for more female workers for the aircraft industry. Study it and answer the questions below.",
+    questionText: "At whom was the poster directed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Women", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t2a-q4", topicId: "hist-lm-eur-2", conceptId: "incentives-offered",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 2 A Q4",
+    stem: "The picture marked Y on page 15 shows a Ministry of Munitions poster from 1918 appealing for more female workers for the aircraft industry. Study it and answer the questions below.",
+    questionText: "What incentives were offered?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Training","Maintenance allowance","Bonus pay"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t2a-q5", topicId: "hist-lm-eur-2", conceptId: "did-most-women-workforce-during-world",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 2 A Q5",
+    stem: "The picture marked Y on page 15 shows a Ministry of Munitions poster from 1918 appealing for more female workers for the aircraft industry. Study it and answer the questions below.",
+    questionText: "Did most of the women in the workforce during World War I keep their jobs after the war? Briefly explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Any ONE valid reason", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t2b", topicId: "hist-lm-eur-2", conceptId: "anti-semitism-russia-marie-curie-serbia",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 2 B",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Write a short paragraph on one of the following:\n1. Anti-Semitism in Russia.\n2. Marie Curie.\n3. Serbia as a fulcrum of Great Power rivalry.\n4. Woodrow Wilson’s part in European affairs.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t2c", topicId: "hist-lm-eur-2", conceptId: "successful-bismarck-foreign-policy-main-developments",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 2 C",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Answer one of the following:\n1. How successful was Bismarck’s foreign policy?\n2. What were the main developments in the invention and early history of the motor car?\n3. What did you learn about World War I from your study of Wilfred Owen?\n4. How did the activities of Rosa Luxemburg influence events in Germany?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t3a-q1", topicId: "hist-lm-eur-3", conceptId: "year-did-hitler-move-into-apartment",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 3 A Q1",
+    stem: "In this edited extract the historian, Edgar Feuchtwanger, remembers being Hitler’s neighbour as a boy growing up in Munich. Read it and answer the questions which follow.\n\nIn 1929, when I was five, Hitler moved into a large apartment about 100 yards from where I lived on Grillparzer Strasse in a similar flat with my parents.\nHitler was nearly always in uniform. The bottom flat in his block had been taken over by his SS bodyguards. Three long Mercedes cars were parked by the kerbside.\nSuddenly the chauffeurs would come out and start the engines. The blackshirt bodyguards came out, their jackboots clattering on the pavement.\nThen the Führer himself came, giving a hasty salute. He would take his seat by the driver of the first car and the motorcade would roar off.",
+    questionText: "In what year did Hitler move into an apartment in Munich?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1929", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t3a-q2", topicId: "hist-lm-eur-3", conceptId: "hitler-usually-dressed",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 3 A Q2",
+    stem: "In this edited extract the historian, Edgar Feuchtwanger, remembers being Hitler’s neighbour as a boy growing up in Munich. Read it and answer the questions which follow.\n\nIn 1929, when I was five, Hitler moved into a large apartment about 100 yards from where I lived on Grillparzer Strasse in a similar flat with my parents.\nHitler was nearly always in uniform. The bottom flat in his block had been taken over by his SS bodyguards. Three long Mercedes cars were parked by the kerbside.\nSuddenly the chauffeurs would come out and start the engines. The blackshirt bodyguards came out, their jackboots clattering on the pavement.\nThen the Führer himself came, giving a hasty salute. He would take his seat by the driver of the first car and the motorcade would roar off.",
+    questionText: "How was Hitler usually dressed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In uniform", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t3a-q3", topicId: "hist-lm-eur-3", conceptId: "bodyguards-dressed",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 3 A Q3",
+    stem: "In this edited extract the historian, Edgar Feuchtwanger, remembers being Hitler’s neighbour as a boy growing up in Munich. Read it and answer the questions which follow.\n\nIn 1929, when I was five, Hitler moved into a large apartment about 100 yards from where I lived on Grillparzer Strasse in a similar flat with my parents.\nHitler was nearly always in uniform. The bottom flat in his block had been taken over by his SS bodyguards. Three long Mercedes cars were parked by the kerbside.\nSuddenly the chauffeurs would come out and start the engines. The blackshirt bodyguards came out, their jackboots clattering on the pavement.\nThen the Führer himself came, giving a hasty salute. He would take his seat by the driver of the first car and the motorcade would roar off.",
+    questionText: "How were the bodyguards dressed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Blackshirts/ Jackboots", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t3a-q4", topicId: "hist-lm-eur-3", conceptId: "mercedes-car-did-hitler-travel",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 3 A Q4",
+    stem: "In this edited extract the historian, Edgar Feuchtwanger, remembers being Hitler’s neighbour as a boy growing up in Munich. Read it and answer the questions which follow.\n\nIn 1929, when I was five, Hitler moved into a large apartment about 100 yards from where I lived on Grillparzer Strasse in a similar flat with my parents.\nHitler was nearly always in uniform. The bottom flat in his block had been taken over by his SS bodyguards. Three long Mercedes cars were parked by the kerbside.\nSuddenly the chauffeurs would come out and start the engines. The blackshirt bodyguards came out, their jackboots clattering on the pavement.\nThen the Führer himself came, giving a hasty salute. He would take his seat by the driver of the first car and the motorcade would roar off.",
+    questionText: "In which Mercedes car did Hitler travel?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In the first car", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t3a-q5", topicId: "hist-lm-eur-3", conceptId: "economic-event-1929-aided-hitler-rise",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 3 A Q5",
+    stem: "In this edited extract the historian, Edgar Feuchtwanger, remembers being Hitler’s neighbour as a boy growing up in Munich. Read it and answer the questions which follow.\n\nIn 1929, when I was five, Hitler moved into a large apartment about 100 yards from where I lived on Grillparzer Strasse in a similar flat with my parents.\nHitler was nearly always in uniform. The bottom flat in his block had been taken over by his SS bodyguards. Three long Mercedes cars were parked by the kerbside.\nSuddenly the chauffeurs would come out and start the engines. The blackshirt bodyguards came out, their jackboots clattering on the pavement.\nThen the Führer himself came, giving a hasty salute. He would take his seat by the driver of the first car and the motorcade would roar off.",
+    questionText: "What economic event of 1929 aided Hitler’s rise to power?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Wall Street Crash/ The Great Depression/ Collapse of US investment in European reconstruction", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t3b", topicId: "hist-lm-eur-3", conceptId: "vladimir-ilyich-lenin-church-relations-italy",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 3 B",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "Write a short paragraph on one of the following:\n1. Vladimir Ilyich Lenin.\n2. Church-state relations in Italy under Mussolini.\n3. The Vichy state.\n4. The Holocaust.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t3c", topicId: "hist-lm-eur-3", conceptId: "remberg-rallies-importance-did-stalin-show",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 3 C",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "Answer one of the following:\n1. What were the Nüremberg Rallies and what was their importance?\n2. How did Stalin’s show trials affect life in the Soviet Union?\n3. What did Bing Crosby and/or Charlie Chaplin contribute to the world of radio and cinema?\n4. How effective was Winston Churchill as leader of Britain during World War II?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t4a-q1", topicId: "hist-lm-eur-4", conceptId: "who-prime-minister-britain-time",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 4 A Q1",
+    stem: "In this edited extract, Nikita Khrushchev, who visited Britain in 1956, remembers his meeting with Queen Elizabeth II. Read it and answer the questions which follow.\n\nThe next day we had an appointment to visit Queen Elizabeth. We had told Prime Minister Eden that if the Queen didn’t mind receiving us in our business suits, it was fine. We weren’t going to get dressed up in tails and top hats.\nThe Queen met us as we came into the palace. She had her husband and two of her children with her. She gave us a guided tour of the palace and then invited us to have tea with her.\nThe Queen was particularly interested in our plane, the Tu-104, which flew our mail to us. It was one of the first jet passenger planes in the world and we wanted our hosts to know about it.",
+    questionText: "Who was Prime Minister of Britain at this time?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Anthony) Eden", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t4a-q2", topicId: "hist-lm-eur-4", conceptId: "conditions-russians-willing-meet-queen",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 4 A Q2",
+    stem: "In this edited extract, Nikita Khrushchev, who visited Britain in 1956, remembers his meeting with Queen Elizabeth II. Read it and answer the questions which follow.\n\nThe next day we had an appointment to visit Queen Elizabeth. We had told Prime Minister Eden that if the Queen didn’t mind receiving us in our business suits, it was fine. We weren’t going to get dressed up in tails and top hats.\nThe Queen met us as we came into the palace. She had her husband and two of her children with her. She gave us a guided tour of the palace and then invited us to have tea with her.\nThe Queen was particularly interested in our plane, the Tu-104, which flew our mail to us. It was one of the first jet passenger planes in the world and we wanted our hosts to know about it.",
+    questionText: "On what conditions were the Russians willing to meet the Queen?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "On condition that she would meet them in their business suits", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "On condition that they wouldn’t have to dress up (in tails and top hats)", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t4a-q3", topicId: "hist-lm-eur-4", conceptId: "did-queen-entertain-her-guests",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 4 A Q3",
+    stem: "In this edited extract, Nikita Khrushchev, who visited Britain in 1956, remembers his meeting with Queen Elizabeth II. Read it and answer the questions which follow.\n\nThe next day we had an appointment to visit Queen Elizabeth. We had told Prime Minister Eden that if the Queen didn’t mind receiving us in our business suits, it was fine. We weren’t going to get dressed up in tails and top hats.\nThe Queen met us as we came into the palace. She had her husband and two of her children with her. She gave us a guided tour of the palace and then invited us to have tea with her.\nThe Queen was particularly interested in our plane, the Tu-104, which flew our mail to us. It was one of the first jet passenger planes in the world and we wanted our hosts to know about it.",
+    questionText: "How did the Queen entertain her guests?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "She invited them to have tea with her/ She gave them a guided tour of the palace", marks: 6, contextNote: "Any ONE" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t4a-q4", topicId: "hist-lm-eur-4", conceptId: "russians-proud-104",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 4 A Q4",
+    stem: "In this edited extract, Nikita Khrushchev, who visited Britain in 1956, remembers his meeting with Queen Elizabeth II. Read it and answer the questions which follow.\n\nThe next day we had an appointment to visit Queen Elizabeth. We had told Prime Minister Eden that if the Queen didn’t mind receiving us in our business suits, it was fine. We weren’t going to get dressed up in tails and top hats.\nThe Queen met us as we came into the palace. She had her husband and two of her children with her. She gave us a guided tour of the palace and then invited us to have tea with her.\nThe Queen was particularly interested in our plane, the Tu-104, which flew our mail to us. It was one of the first jet passenger planes in the world and we wanted our hosts to know about it.",
+    questionText: "Why were the Russians proud of the Tu-104?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The Tu-104 was one of the first jet passenger planes in the world", marks: 6, contextNote: "Plane ONLY = 3M", permittedMarks: [0,3,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t4a-q5", topicId: "hist-lm-eur-4", conceptId: "meant-stalinisation",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 4 A Q5",
+    stem: "In this edited extract, Nikita Khrushchev, who visited Britain in 1956, remembers his meeting with Queen Elizabeth II. Read it and answer the questions which follow.\n\nThe next day we had an appointment to visit Queen Elizabeth. We had told Prime Minister Eden that if the Queen didn’t mind receiving us in our business suits, it was fine. We weren’t going to get dressed up in tails and top hats.\nThe Queen met us as we came into the palace. She had her husband and two of her children with her. She gave us a guided tour of the palace and then invited us to have tea with her.\nThe Queen was particularly interested in our plane, the Tu-104, which flew our mail to us. It was one of the first jet passenger planes in the world and we wanted our hosts to know about it.",
+    questionText: "What is meant by de-Stalinisation?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid point to explain de-Stalinisation", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t4b", topicId: "hist-lm-eur-4", conceptId: "marshall-aid-jean-monnet-oil-crisis",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 4 B",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Write a short paragraph on one of the following:\n1. Marshall Aid.\n2. Jean Monnet.\n3. The Oil Crisis, 1973.\n4. Margaret Thatcher.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t4c", topicId: "hist-lm-eur-4", conceptId: "did-uprising-take-place-hungary-1956",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 4 C",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Answer one of the following questions:\n1. Why did an uprising take place in Hungary in 1956 and what was the outcome of that uprising?\n2. What was the importance for the Catholic Church of the Second Vatican Council?\n3. In what ways did Mikhail Gorbachev change the domestic and/or foreign affairs of the Soviet Union?\n4. How did Alexander Solzhenitsyn and/or Simone de Beauvoir contribute to literature and social criticism, East and West?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t5a-q1", topicId: "hist-lm-eur-5", conceptId: "who-colons-algeria",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 5 A Q1",
+    stem: "This edited extract gives an account of the struggle for Algerian independence from France. Read it and answer the questions that follow.\n\nThere were over a million French settlers, known as colons, living in Algeria.\nIn 1954 a militant nationalist group of Algerians, known as the National Liberation Front (FLN), led by Ben Bella, launched a guerrilla war. The French responded by sending more troops and by 1960 they had some 700,000 troops engaged in war against the FLN. In Paris the French government dared not consider independence for Algeria as it would incur the wrath of the million settlers and their supporters in France.\nAs French opinion was divided on the matter, many demanded the return of General de Gaulle to head a new government. In December 1958 de Gaulle was elected President of France. President de Gaulle soon realised that a military victory was unattainable.\nFollowing peace talks, it was agreed that Algeria should become independent in July 1962.",
+    questionText: "Who were the colons in Algeria?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "French settlers", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t5a-q2", topicId: "hist-lm-eur-5", conceptId: "who-led-algerian-national-liberation-front",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 5 A Q2",
+    stem: "This edited extract gives an account of the struggle for Algerian independence from France. Read it and answer the questions that follow.\n\nThere were over a million French settlers, known as colons, living in Algeria.\nIn 1954 a militant nationalist group of Algerians, known as the National Liberation Front (FLN), led by Ben Bella, launched a guerrilla war. The French responded by sending more troops and by 1960 they had some 700,000 troops engaged in war against the FLN. In Paris the French government dared not consider independence for Algeria as it would incur the wrath of the million settlers and their supporters in France.\nAs French opinion was divided on the matter, many demanded the return of General de Gaulle to head a new government. In December 1958 de Gaulle was elected President of France. President de Gaulle soon realised that a military victory was unattainable.\nFollowing peace talks, it was agreed that Algeria should become independent in July 1962.",
+    questionText: "Who led the Algerian National Liberation Front (FLN)?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ben Bella", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t5a-q3", topicId: "hist-lm-eur-5", conceptId: "government-paris-afraid-consider-independence-algeria",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 5 A Q3",
+    stem: "This edited extract gives an account of the struggle for Algerian independence from France. Read it and answer the questions that follow.\n\nThere were over a million French settlers, known as colons, living in Algeria.\nIn 1954 a militant nationalist group of Algerians, known as the National Liberation Front (FLN), led by Ben Bella, launched a guerrilla war. The French responded by sending more troops and by 1960 they had some 700,000 troops engaged in war against the FLN. In Paris the French government dared not consider independence for Algeria as it would incur the wrath of the million settlers and their supporters in France.\nAs French opinion was divided on the matter, many demanded the return of General de Gaulle to head a new government. In December 1958 de Gaulle was elected President of France. President de Gaulle soon realised that a military victory was unattainable.\nFollowing peace talks, it was agreed that Algeria should become independent in July 1962.",
+    questionText: "Why was the government in Paris afraid to consider independence for Algeria?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because it would anger the million French settlers (colons) in Algeria (and their supporters in France)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t5a-q4", topicId: "hist-lm-eur-5", conceptId: "coming-power-france-did-gaulle-realise",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 5 A Q4",
+    stem: "This edited extract gives an account of the struggle for Algerian independence from France. Read it and answer the questions that follow.\n\nThere were over a million French settlers, known as colons, living in Algeria.\nIn 1954 a militant nationalist group of Algerians, known as the National Liberation Front (FLN), led by Ben Bella, launched a guerrilla war. The French responded by sending more troops and by 1960 they had some 700,000 troops engaged in war against the FLN. In Paris the French government dared not consider independence for Algeria as it would incur the wrath of the million settlers and their supporters in France.\nAs French opinion was divided on the matter, many demanded the return of General de Gaulle to head a new government. In December 1958 de Gaulle was elected President of France. President de Gaulle soon realised that a military victory was unattainable.\nFollowing peace talks, it was agreed that Algeria should become independent in July 1962.",
+    questionText: "On coming to power in France, what did de Gaulle realise?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "That a military victory was unattainable", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t5a-q5", topicId: "hist-lm-eur-5", conceptId: "territory-asia-did-french-withdraw-1950s",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 5 A Q5",
+    stem: "This edited extract gives an account of the struggle for Algerian independence from France. Read it and answer the questions that follow.\n\nThere were over a million French settlers, known as colons, living in Algeria.\nIn 1954 a militant nationalist group of Algerians, known as the National Liberation Front (FLN), led by Ben Bella, launched a guerrilla war. The French responded by sending more troops and by 1960 they had some 700,000 troops engaged in war against the FLN. In Paris the French government dared not consider independence for Algeria as it would incur the wrath of the million settlers and their supporters in France.\nAs French opinion was divided on the matter, many demanded the return of General de Gaulle to head a new government. In December 1958 de Gaulle was elected President of France. President de Gaulle soon realised that a military victory was unattainable.\nFollowing peace talks, it was agreed that Algeria should become independent in July 1962.",
+    questionText: "From what territory in Asia did the French withdraw in the 1950s?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Indo-China/ Vietnam", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t5b", topicId: "hist-lm-eur-5", conceptId: "david-ben-gurion-julius-nyerere-policy",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 5 B",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "Write a short paragraph on one of the following:\n1. David Ben-Gurion.\n2. Julius Nyerere and the policy of ujamaa.\n3. The Suez Crisis, 1956.\n4. How Britain became a multi-racial society.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t5c", topicId: "hist-lm-eur-5", conceptId: "did-britain-withdraw-india-did-action",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 5 C",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "Answer one of the following:\n1. Why did Britain withdraw from India and how did this action affect India?\n2. Why did Katanga break away from the Congo and why did outsiders become involved, 1960-1965?\n3. What were typical problems faced by development workers in Africa?\n4. What were the strengths and weaknesses as leaders of Ho Chi Minh and/or Achmad Sukarno?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t6a-q1", topicId: "hist-lm-eur-6", conceptId: "advice-did-writer-family-seek",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 6 A Q1",
+    stem: "In this edited extract Lara Marlowe (Irish Times, 24/10/2012) recalls her family’s reaction to the Cuban Missile Crisis, October 1962. Read it and answer the questions which follow.\n\nWe sought instructions on how to survive a missile strike from the local civil defence office. Mom ordered a prefabricated metal shelter which was lowered into a hole in our back garden. A flight of steps led down to our bunker, which was stocked with bottled water and tinned food.\nMy father’s death and talk of radiation sickness stamped my childhood with a sense of impending doom.",
+    questionText: "What advice did the writer’s family seek?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Advice as to how to survive a missile strike", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t6a-q2", topicId: "hist-lm-eur-6", conceptId: "did-family-build-its-own-shelter",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 6 A Q2",
+    stem: "In this edited extract Lara Marlowe (Irish Times, 24/10/2012) recalls her family’s reaction to the Cuban Missile Crisis, October 1962. Read it and answer the questions which follow.\n\nWe sought instructions on how to survive a missile strike from the local civil defence office. Mom ordered a prefabricated metal shelter which was lowered into a hole in our back garden. A flight of steps led down to our bunker, which was stocked with bottled water and tinned food.\nMy father’s death and talk of radiation sickness stamped my childhood with a sense of impending doom.",
+    questionText: "Did the family build its own shelter? Explain your answer briefly.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "ONE valid explanation", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t6a-q3", topicId: "hist-lm-eur-6", conceptId: "shelter-stocked",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 6 A Q3",
+    stem: "In this edited extract Lara Marlowe (Irish Times, 24/10/2012) recalls her family’s reaction to the Cuban Missile Crisis, October 1962. Read it and answer the questions which follow.\n\nWe sought instructions on how to survive a missile strike from the local civil defence office. Mom ordered a prefabricated metal shelter which was lowered into a hole in our back garden. A flight of steps led down to our bunker, which was stocked with bottled water and tinned food.\nMy father’s death and talk of radiation sickness stamped my childhood with a sense of impending doom.",
+    questionText: "How was the shelter stocked?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bottled water", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "tinned food", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t6a-q4", topicId: "hist-lm-eur-6", conceptId: "concerns-writer-during-her-childhood",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 6 A Q4",
+    stem: "In this edited extract Lara Marlowe (Irish Times, 24/10/2012) recalls her family’s reaction to the Cuban Missile Crisis, October 1962. Read it and answer the questions which follow.\n\nWe sought instructions on how to survive a missile strike from the local civil defence office. Mom ordered a prefabricated metal shelter which was lowered into a hole in our back garden. A flight of steps led down to our bunker, which was stocked with bottled water and tinned food.\nMy father’s death and talk of radiation sickness stamped my childhood with a sense of impending doom.",
+    questionText: "What concerns had the writer during her childhood?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Her father’s death","Talk of radiation sickness","Sense of impending doom","Concern about missile strikes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t6a-q5", topicId: "hist-lm-eur-6", conceptId: "did-cuban-missile-crisis-come-end",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 6 A Q5",
+    stem: "In this edited extract Lara Marlowe (Irish Times, 24/10/2012) recalls her family’s reaction to the Cuban Missile Crisis, October 1962. Read it and answer the questions which follow.\n\nWe sought instructions on how to survive a missile strike from the local civil defence office. Mom ordered a prefabricated metal shelter which was lowered into a hole in our back garden. A flight of steps led down to our bunker, which was stocked with bottled water and tinned food.\nMy father’s death and talk of radiation sickness stamped my childhood with a sense of impending doom.",
+    questionText: "How did the Cuban Missile Crisis come to an end?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid point about how the Cuban Missile Crisis came to an end", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t6b", topicId: "hist-lm-eur-6", conceptId: "economic-boom-1945-1968-urban-poverty",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 6 B",
+    stem: "The United States and world, 1945-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. The US economic boom, 1945-1968.\n2. Urban poverty, drugs and crime.\n3. Betty Friedan.\n4. The US withdrawal from Vietnam.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-lm-s3t6c", topicId: "hist-lm-eur-6", conceptId: "problems-did-harry-truman-face-1945",
+    section: "3", questionRef: "2014 OL Later Modern Section 3 Topic 6 C",
+    stem: "The United States and world, 1945-1989",
+    questionText: "Answer one of the following:\n1. What problems did Harry Truman face, 1945-1953, and how did he tackle them?\n2. What did the Montgomery bus boycott (1956) contribute to the Civil Rights movement?\n3. How did the US achieve a moon landing in 1969 and what was its importance?\n4. In what ways did Billy Graham promote religion in modern America? Y",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9,13] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2015, level: "ordinary",
     paperFileid: "LC004GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
@@ -3199,7 +5023,7 @@ export const CARDS: SecCard[] = [
     questionText: "What exports from Dublin did Chiericati mention?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Salt fish, hides, cattle, hobby-horses", marks: 6, contextNote: "Any THREE @ 2M each" },
+    { id: "r-1", kind: "anyN", verbatim: "Any THREE", marks: null, group: {"claimMax":3,"perOption":2,"options":["Salt fish","hides","cattle","hobby-horses"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3415,7 +5239,7 @@ export const CARDS: SecCard[] = [
     questionText: "What kinds of game were preserved for the Lord Lieutenant and his Council in 1661?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pheasant, partridge, grouse, hares", marks: 6, contextNote: "Any THREE @ 2M each" },
+    { id: "r-1", kind: "anyN", verbatim: "Any THREE", marks: null, group: {"claimMax":3,"perOption":2,"options":["Pheasant","partridge","grouse","hares"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3463,7 +5287,7 @@ export const CARDS: SecCard[] = [
     questionText: "What methods of capturing game are recorded in the above proclamation?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hawks, nets, guns, setting dogs, greyhounds", marks: 6, contextNote: "Any THREE @ 2M each" },
+    { id: "r-1", kind: "anyN", verbatim: "Any THREE", marks: null, group: {"claimMax":3,"perOption":2,"options":["Hawks","nets","guns","setting dogs","greyhounds"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6180,7 +8004,7 @@ export const CARDS: SecCard[] = [
     questionText: "How was it hoped that the council would improve the Catholic Church?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Church renewal/ Christian unity/ Opening to the contemporary world", marks: 6, contextNote: "Any TWO @ 3M each" },
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Church renewal","Christian unity","Opening to the contemporary world"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6469,7 +8293,7 @@ export const CARDS: SecCard[] = [
     questionText: "What problems occupied the rest of the American population?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Civil rights/ Assassination/ Vietnam", marks: 6, contextNote: "Any TWO @ 3M each" },
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Civil rights","Assassination","Vietnam"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7119,7 +8943,7 @@ export const CARDS: SecCard[] = [
     questionText: "How does the Drogheda massacre stand out in the opinion of Morrill?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mercilessness/ ruthlessness and calculation/ hot- and cold-bloodiness 1", marks: 6, contextNote: "Any TWO @ 3M each" },
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Mercilessness","ruthlessness and calculation","hot- and cold-bloodiness 1"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7888,7 +9712,7 @@ export const CARDS: SecCard[] = [
     questionText: "By 1650, what new trading posts had the Dutch obtained in Asia?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Moluccas, Java, Malaya, India, Ceylon, Taiwan", marks: 6, contextNote: "Any THREE @ 2M each" },
+    { id: "r-1", kind: "anyN", verbatim: "Any THREE", marks: null, group: {"claimMax":3,"perOption":2,"options":["Moluccas","Java","Malaya","India","Ceylon","Taiwan"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9238,7 +11062,7 @@ export const CARDS: SecCard[] = [
     questionText: "What developments contributed to Derry’s growing sense of isolation?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Closure of rail link to Donegal/ Closure of rail link to Dublin/ Downgrading of rail link to Belfast", marks: 6, contextNote: "Any TWO @ 3M each" },
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Closure of rail link to Donegal","Closure of rail link to Dublin","Downgrading of rail link to Belfast"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10853,7 +12677,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the author’s view of the qualities and character of the nobles who are leaving?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Distinguished/ Of illustrious or noble families/ Renowned for great deeds or achievements/ Valour or prowess", marks: 6, contextNote: "Any TWO @ 3M each" },
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Distinguished","Of illustrious or noble families","Renowned for great deeds or achievements","Valour or prowess"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11430,7 +13254,7 @@ export const CARDS: SecCard[] = [
     questionText: "In what wars was Philip II involved, according to the extract?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "England/ France/ Flanders", marks: 6, contextNote: "Any TWO @ 3M each" },
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["England","France","Flanders"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14505,7 +16329,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention two luxury goods bought by James Butler.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tapestries/ Mirrors/ Candle holders/ Upholstered furniture", marks: 6, contextNote: "Any TWO @ 3M each" },
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Tapestries","Mirrors","Candle holders","Upholstered furniture"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16209,7 +18033,7 @@ export const CARDS: SecCard[] = [
     questionText: "What are the men doing?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Stoking the fire/ Fetching water/ Bringing in stacks of bread", marks: 6, contextNote: "Any TWO @ 3M each" },
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Stoking the fire","Fetching water","Bringing in stacks of bread"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

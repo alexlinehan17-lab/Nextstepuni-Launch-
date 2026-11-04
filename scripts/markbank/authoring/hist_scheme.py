@@ -132,7 +132,8 @@ SPLIT_TARIFF = re.compile(r'\s*\((\d{1,3})\)$')
 # "The mystical quality of the ritual was exaggerated; lights played eerily
 # against the sky = 2M 5M" (2016 Higher Q1(d)).
 SPLIT_BARE_TOTAL = re.compile(r'(?<=M)\s+(\d{1,3})M$')
-INLINE_COMPONENT = re.compile(r'\s*([A-Z][^=]*?)\s*=\s*(\d{1,3})M\b')
+# A component may open on a figure: "Government/ Ministry of Munitions = 3M 1918 = 3M (6)" (2014).
+INLINE_COMPONENT = re.compile(r'\s*([A-Z0-9][^=]*?)\s*=\s*(\d{1,3})M\b')
 
 
 def _answered_split(text):
@@ -365,6 +366,9 @@ INSTRUCTION_TAIL = re.compile(
     # "Liberty, equality, fraternity All THREE @ 2M each" (2017 Ordinary), in
     # capitals only: "all three members of the City Commission" is an answer.
     r'|(?-i:All (?:TWO|THREE|FOUR))\b[^.]*\.?'
+    # "Efficient/ Hard-working/ Intelligent/ Shrewd TWO @ 3M each" (2014): the
+    # count and price per alternative, in capitals, with no "Any".
+    r'|(?-i:(?:ONE|TWO|THREE) @ \d+M(?: each)?)'
     r'|If only (?:ONE|TWO)\b[^.]*\.?'
     r'|\(?(?:any )?(?:one|two) elements? only = \d+m\)?'
     r'|\(?any two,? \d+m \+ \d+m\)?'

@@ -481,18 +481,33 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => row.kind === 'point' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
     // "… 5M + 5M Max =" left on a row by the tariff reader: the printed split is the row's note now.
     expect(rows.filter(({ row }) => /\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=\s*$/i.test(row.verbatim)).map(({ card }) => card.id)).toEqual([]);
-    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(10);
+    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(12);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(117);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(123);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['Chapel bell', 'convent chimes', 'organ'],
+      ['Church renewal', 'Christian unity', 'Opening to the contemporary world'],
+      ['Civil rights', 'Assassination', 'Vietnam'],
+      ['Closure of rail link to Donegal', 'Closure of rail link to Dublin', 'Downgrading of rail link to Belfast'],
       ['Dental services', 'spectacles', 'drugs'],
+      ['Distinguished', 'Of illustrious or noble families', 'Renowned for great deeds or achievements', 'Valour or prowess'],
+      ['Efficient', 'Hard-working', 'Intelligent', 'Shrewd'],
+      ['England', 'France', 'Flanders'],
+      ['Hawks', 'nets', 'guns', 'setting dogs', 'greyhounds'],
+      ['Her father’s death', 'Talk of radiation sickness', 'Sense of impending doom', 'Concern about missile strikes'],
+      ['Intelligent and shrewd', 'Efficient and hard-working', 'Engaging and friendly'],
       ['Liverpool', 'Manchester', 'Birmingham', 'Leeds'],
+      ['Mercilessness', 'ruthlessness and calculation', 'hot- and cold-bloodiness 1'],
+      ['Moluccas', 'Java', 'Malaya', 'India', 'Ceylon', 'Taiwan'],
       ['On railways', 'as news vendors', 'bootblacks', 'lamplighters', 'barbers'],
-      // "To watch over everyone/ ... / To report to ministers if necessary Any TWO @ 4M" / "8M" (2016 OL Q1(a)).
+      ['Pheasant', 'partridge', 'grouse', 'hares'],
+      ['Salt fish', 'hides', 'cattle', 'hobby-horses'],
+      ['Stoking the fire', 'Fetching water', 'Bringing in stacks of bread'],
+      ['Tapestries', 'Mirrors', 'Candle holders', 'Upholstered furniture'],
       ['To watch over everyone', 'To warn in a friendly was those who are misbehaving', 'To report to ministers if necessary'],
+      ['Training', 'Maintenance allowance', 'Bonus pay'],
     ]);
     // A row that is the scheme pricing an answer it does not print says so.
     // ("ONE valid export (e.g. wool, butter, etc.)" prints its examples, so it is an answer.)
@@ -503,23 +518,24 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(tariffWording.filter(({ row }) => !(row.contextNote ?? '').includes('The scheme prints no answer here')).map(({ card }) => card.id)).toEqual([]);
     // A six-mark answer with a printed partial ("Green ribbons (ribbons = 3m)") is a stepped row: the partial is its note.
     expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks, row.contextNote]).sort()).toEqual([
-      // 2015 OL Later Modern: "Battleship/ Warship (Ship = 3M) (6)".
+      // Each a printed partial or alternative as a step on its row ("Green ribbons (ribbons = 3m)",
+      // "Swastika 8M" / "Germanic cross = 4M"), a price for an answer the scheme does not print
+      // ("One opinion = 5M"), or the bank's unprinted row where the scheme prints no answer at all.
       ['Battleship/ Warship', 6, [0, 3, 6], 'Ship = 3M'],
-      // 2019 OL Later Modern A4: "By launching the Dreadnought (‘Quickly’ ALONE = 3M) (6)".
       ['By launching the Dreadnought', 6, [0, 3, 6], '‘Quickly’ ALONE = 3M'],
       ['Clonmel prison', 6, [0, 3, 6], 'Clonmel only (3m), prison only (3m)'],
-      // 2021 OL Later Modern Q3(b): the scheme prices "One opinion = 5M / Explanation = 5M" and prints no answer.
       ['Explanation', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Green ribbons', 6, [0, 3, 6], 'ribbons = 3m'],
+      ['Hans Place', 8, [0, 4, 8], 'London ONLY = 4M'],
+      ['Less than half', 6, [0, 3, 6], 'Half ONLY = 3M'],
       ['Massive German air raids', 6, [0, 3, 6], 'air raids alone = 3m'],
       ['One opinion', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
-      // A lower-priced alternative on a line of its own: 2017 OL Q1(e) "Swastika 8M" / "Germanic cross = 4M".
+      ['Oriental rugs', 8, [0, 4, 8], 'Rugs ONLY = 4M'],
       ['Swastika', 8, [0, 4, 8], 'Germanic cross = 4M'],
+      ['The Tu-104 was one of the first jet passenger planes in the world', 6, [0, 3, 6], 'Plane ONLY = 3M'],
       ['The original six members had access to Irish, British and Danish fisheries', 6, [0, 3, 6], 'access to Irish fisheries alone = 3m'],
-      // 2015 OL Early Modern Q3(a): the scheme answers only (b), under "(a)"; this part gets the bank's
-      // unprinted row, worth what the paper's Q3 (20) leaves after (b)'s 10M.
-      ['The scheme prints no answer for this part.', 10, undefined,
-        'The scheme prints one Criticism answer, under (a), and it is about the King’s proclamation (document B), which part (b) asks about. It prints nothing for this part.'],
+      ['The scheme prints no answer for this part.', 10, undefined, 'The scheme prints one Criticism answer, under (a), and it is about the King’s proclamation (document B), which part (b) asks about. It prints nothing for this part.'],
+      ['Third class', 8, [0, 4, 8], 'Train ONLY = 4M'],
     ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
     // 2020 OL Q3(a) prices each component and answers the one that needs an answer:

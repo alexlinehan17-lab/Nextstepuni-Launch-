@@ -58,8 +58,10 @@ PARTIAL = re.compile(r'^(?P<head>.*\S)\s*\((?P<note>[^()]*?=\s*(?P<n>\d+)\s*[Mm]
 # the bracket onto the row's note.
 # ... and "To watch over everyone/ ... / To report to ministers if necessary Any
 # TWO @ 4M" (2016 Ordinary Q1(a)), the price per alternative, unbracketed.
+# Also "Efficient/ Hard-working/ Intelligent/ Shrewd TWO @ 3M each" and "Salt
+# fish, hides, cattle, hobby-horses Any THREE @ 2M each" (2014-2019 Ordinary).
 ANY_OF_NOTE = re.compile(r'^(?:\((any (one|two|three))(?: for)?\s*(\d+)m(?:\s*\+\s*(\d+)m)*\)'
-                         r'|(Any (?:ONE|TWO|THREE)) @ (\d+)M)$', re.I)
+                         r'|((?:Any )?(?:ONE|TWO|THREE)) @ (\d+)M(?: each)?)$', re.I)
 WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4}
 
 
@@ -116,8 +118,13 @@ def split_priced(card):
             lead, count, per = any_of.group(1), WORDS[any_of.group(2).lower()], int(any_of.group(3))
         else:
             lead = any_of.group(5)
-            count, per = WORDS[lead.split()[1].lower()], int(any_of.group(6))
+            count, per = WORDS[lead.split()[-1].lower()], int(any_of.group(6))
+            if not lead.lower().startswith('any'):
+                lead = f'Any {lead}'
         options = [tidy(x) for x in text.split('/') if tidy(x)]
+        if len(options) == 1:
+            # The alternatives listed with commas: "Nantes, Bordeaux, Lisbon, Cadiz".
+            options = [tidy(x) for x in text.split(',') if tidy(x)]
         if count * per == total and len(options) > count:
             rows[:] = [{'id': row['id'], 'kind': 'anyN', 'verbatim': lead, 'marks': None,
                         'group': {'claimMax': count, 'perOption': per, 'options': options}}]
@@ -134,6 +141,12 @@ def split_priced(card):
         # last price printed without its figure takes what the tariff leaves.
         tokens = tokens + bare
     partial = PARTIAL.match(text)
+    if not tokens and partial and int(partial.group('n')) == 0:
+        # A bracketed answer the scheme credits with nothing, "No post (No buses
+        # = 0M)" (2014 Ordinary): the bracket is the row's note, never a step.
+        row['verbatim'] = tidy(partial.group('head'))
+        _note(row, ' '.join(partial.group('note').split()))
+        return card
     if not tokens and partial and 0 < int(partial.group('n')) < total:
         rows[:] = [{'id': row['id'], 'kind': 'criterion', 'verbatim': tidy(partial.group('head')),
                     'marks': total, 'contextNote': ' '.join(partial.group('note').split()),
