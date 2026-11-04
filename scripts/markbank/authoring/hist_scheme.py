@@ -351,6 +351,9 @@ def _halve(raw, field, year):
 # with no colon (2021, 2022, 2024 Ordinary). Never the upper-case "SECTION 2:
 # IRELAND" that heads the topic-by-topic notes.
 S23_HEAD = re.compile(r'^Section 2(?: and Section 3)?\s*(?::|$)')
+PARAGRAPH_LEAD_RUN_ON = re.compile(
+    r'(?<=\.) (?=The examiner will divide the answer into paragraphs or '
+    r'paragraph equivalents:$)')
 # Marking by Core Statement: the printed lines that open a new logical line.
 CS_START = re.compile(
     r'^(?:•|\d\.\s+Contextualisation|Mark by the principle|A Core Statement may be'
@@ -879,6 +882,13 @@ class HistScheme:
             else:
                 logical[-1] = f'{logical[-1]} {line}'
         logical = [' '.join(l.split()) for l in logical]
+        # 2017-2019 print the paragraph list's lead at the end of the "To mark
+        # the answer ..." paragraph rather than on a line of its own: "...
+        # which the syllabus demands. The examiner will divide the answer into
+        # paragraphs or paragraph equivalents:". It is the same sentence, so it
+        # is cut off at its own full stop and read as the lead.
+        logical = [piece for text in logical
+                   for piece in PARAGRAPH_LEAD_RUN_ON.split(text)]
         out = {'schemeGuidance': [], 'cm': {'bands': [], 'directions': [],
                                             'paragraphKinds': []},
                'oe': {'bands': [], 'directions': []}, 'pages': sorted(pages)}
