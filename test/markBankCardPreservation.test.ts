@@ -783,8 +783,8 @@ const decks = [
   /* Technology is the sixteenth subject and the first to be authored end to
    * end from a paper-anchored census in one pass. Enrolled explicitly so a
    * later regeneration cannot silently omit or replace any of its cards. */
-  ['technology:higher', TECHNOLOGY_HIGHER, 357, 'ae8ad195ca373cef2d8923c83a848613215aa9413c2cd7bda7d6796c4d64370c'],
-  ['technology:ordinary', TECHNOLOGY_ORDINARY, 359, '43e668303c30fef288ee0e09d8b5d3384105085e23cc10d288903ed29d1ab687'],
+  ['technology:higher', TECHNOLOGY_HIGHER, 587, '1d3600446805ab2f2eeb48058610757d2d5d3d554f52977264010a15d9960fc4'],
+  ['technology:ordinary', TECHNOLOGY_ORDINARY, 501, '462352d0cf35eceddd6d466761efb0fa348d6de93ebf73c9d6b85188f7b1d439'],
   /* 2026-09-10: History, the nineteenth subject, and the first carded
    * against TWO papers per sitting — a candidate sits either the Later
    * Modern or the Early Modern field of study, and both are now in the
@@ -1261,6 +1261,13 @@ const biologyAdditionIds = new Set([...BIO_HIGHER, ...BIO_ORDINARY]
 const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('bio-'));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name === 'technology:higher') {
+    // The reviewed split of 2024 Higher B3(d) replaces its one old card with
+    // two independently priced tasks. Keep the old progress identity in the
+    // frozen set through its alias; the two child IDs are additions.
+    const splitIds = new Set(['tech-2024-hl-b3d-i', 'tech-2024-hl-b3d-ii']);
+    return [...ids.filter(id => !splitIds.has(id)), 'tech-2024-hl-b3d'];
+  }
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
   if (name.startsWith('economics:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -1413,6 +1420,16 @@ describe('Mark Bank card preservation', () => {
     // (chemistry-audit-ledger.json "added": 2010-2020 and 2026 carded for the
     // first time, and the parts the 2021-2025 sittings had joined or missed)
     // and withdraw 34 shipped ids onto aliases: + chemistryAdded - 34.
+    // Technology (2026-10-28, the every-printed-ask lane): its 716 frozen
+    // cards gain 99 -- 2026 Higher carded part by part (83 asks, 83 cards)
+    // and 16 in-window parts that had been refused for a missing picture or
+    // a drawn answer -- and withdraw none: 22,970 + 99 = 23,069. Then 2026
+    // Ordinary, 84 asks, 84 cards: 23,153. Then the in-window residue of
+    // 2021-2025 (every open or excluded ask carded, 101 cards): 23,254.
+    // Then 2020 Higher (87 asks, 87 cards; no 2020 Ordinary paper was set)
+    // and 2022 OL C2(d) split into (i) and (ii), the old id aliased onto (i):
+    // 23,254 + 87 + 1 = 23,342. Then the whole-bank audit: 2024 HL B3(d)
+    // split the same way (the scheme misprints its "(ii)" as "(iii)"): 23,343.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1429,9 +1446,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(22_970 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_343 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(22_970 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_343 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
@@ -1785,9 +1802,14 @@ describe('Mark Bank card preservation', () => {
     const chemistryAuditAliases = chemistryWithdrawn.map(([id]) => id)
       .filter(id => !['chem-2023-ol-q10-a-iii-iv-fig', 'chem-2023-ol-q6-b-i-iv'].includes(id));
     expect(chemistryWithdrawn).toHaveLength(54);
+    // ...and the Technology lane's one split (tech- keys): 2022 OL C2(d), shipped
+    // as a single card whose row was the truth table welded to its two asks, now
+    // carded as (i) and (ii) with the old id reading its progress from (i).
+    const technologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('tech-'));
+    expect(technologyAliasIds).toEqual(['tech-2022-ol-c2d', 'tech-2024-hl-b3d']);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
       + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
-      + chemistryAuditAliases.length);
+      + chemistryAuditAliases.length + technologyAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -1844,7 +1866,9 @@ describe('Mark Bank card preservation', () => {
     // Chemistry counts its live frozen cards (876 less the 34 shipped ids it
     // withdrew, now alias keys: net 0), and its audit aliased eighteen
     // pre-audit ids the base build never shipped (+18).
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768 + 18);
+    // Technology is a new subject, outside this tally; its alias key is not
+    // one of these cards.
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length - technologyAliasIds.length).toBe(9_768 + 18);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
