@@ -55871,5 +55871,72 @@
   "year": 2025,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-paper-q1-code": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q1-code.png",
+  "md5": "03b4d183c1dcbf30af2e9c835bd2fda9",
+  "alt": "The seven-line Python program printed with Question 1 (age read as an integer; print A if age > 16, B if age < 16, otherwise C), above the table whose Column A lists the values 21, -1, 0, 16, 100 and 15 and whose Column B (Program output) is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q1",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-paper-q5-code": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q5-code.png",
+  "md5": "a4cba64e5687dcc4537bf1b72d45f8a7",
+  "alt": "The five-line Python program printed with Question 5 (name = \"John\", age = 17, student = True, exam_marks = [71, 82, 75, 93, 65], average_mark = 77.2), above the table whose Column A lists name, age, student, exam_marks and average_mark and whose Column B (Python data type) is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q5",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-paper-q11-boxes": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q11-boxes.png",
+  "md5": "d94985b404f60dd3d74ac4ef58d73744",
+  "alt": "The boxes printed with Question 11: an initial state of 13, 54, 4, 81, 92, 26, blank rows for Swaps 1 to 4, and Swap 5 (Final state) filled in as 4, 13, 26, 54, 81, 92.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q11",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-paper-q16a-code": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16a-code.png",
+  "md5": "1ca11eb5b380ea9e4a9710d89373afd5",
+  "alt": "The eleven-line program Question16_A.py as printed in the Section C booklet: two comment lines, print(\"The program\"), length = float(input(\"What length is the room?: \")), width = 20, area = length * width, and print(\"The area of the floor is:\", area).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q16(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-scheme-q16a": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-scheme-q16a.png",
+  "md5": "af878682143d87ec5fd9a3afa469d037",
+  "alt": "The marking scheme's possible solution to Question 16(a), lines 1 to 27: print(\"Welcome to the Tilers Mate\") marked (i); the width read with float(input()) marked (iii); cost_per_square_metre = 15 marked (iv); the length and width printed in metres, marked (ii) and (iii); the cost per square metre printed, (iv); the total cost calculated and printed, (v); and the discount messages for totals over 1000, from 100 to 1000, and below 100, (vi).",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q16(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-paper-q9-table": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q9-table.png",
+  "md5": "e963dd13cd248bbca89be670888a10f1",
+  "alt": "The six statements printed with Question 9, each with an empty True box and an empty False box: The Internet and the World Wide Web are the same thing; HTTP is a mark-up language for making web pages; A URL is an address for a web page; Data is communicated over the World Wide Web using HTTP; HTTPS is more secure than HTTP; The server sends the first communication in the client-server model.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q9",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
  }
 }
