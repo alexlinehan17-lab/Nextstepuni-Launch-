@@ -34,8 +34,9 @@ const OPENER = new RegExp(String.raw`\(\s*${MARC}\s*\)|\{\s*${MARC}(?::\s*((?:\d
 const PRICED = new RegExp(String.raw`([^•¶\n]{2,400}?)\s*=\s*${MARC}${SUM}(?!\s*(?:ar|an|ceann)\b)`, 'g');
 const SAMPLES = /\b(?:Freagraí samplacha|Pointí eolais féideartha|(?<!\bas\s)Samplaí|Freagra samplach|Sampla cruinn:)\s*:?\s*/i;
 const BAND_TABLE = /\bCatagóir\b[\s\S]*?Lag\/An-lag[^•]*?\d+\s*-\s*\d+(?:\s+\d+\s*-\s*\d+)*/;
-/** "5 phointe eolais ag teastáil (5 mharc an ceann ar an gcéad trí phointe eolais + 4 mharc an ceann ar an dá phointe eolais eile)". */
-const LADDER = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann ar an g?c?[ée]ad\s+(\w+)\s+phointe eolais(?:\s*\+\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\w+)\s+phointe eolais eile)?\s*\)/i;
+/** "5 phointe eolais ag teastáil (5 mharc an ceann ar an gcéad trí phointe eolais + 4 mharc an ceann ar an dá phointe eolais eile)".
+ *  The counts are words with fadas ("dá", "trí"), so they are read as \S+: a \w+ never matched them. */
+const LADDER = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann ar an g?c?[ée]ad\s+(\S+)\s+phointe eolais(?:\s*\+\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe eolais eile)?\s*\)/i;
 const NOTE = /(?<=^|\s|\()(?:Nóta:|Ní mór(?=\s)|Is leor(?=\s)|Caithfidh(?=\s)|Bainfear(?=\s)|Gearrfar(?=\s)|Glacfar(?=\s)|Tabharfar(?=\s)|Mura mbíonn(?=\s)|Cuir lúibíní(?=\s)|Dá bharr sin(?=\s)|Gan tréith(?=\s)|Tá [^\s]+ mharc ag gabháil(?=\s)|Sampla cruinn gan(?=\s)|Is samplaí de fhreagraí(?=\s)|Léirigh na marcanna(?=\s)|Ag bun(?=\s))[^•{}¶]*?(?:[.?!](?=\s|\)|$)|(?=\s\(?(?:i|ii|iii|iv|v)\)\s|\sNóta:|\sTreoir:|\s•|\s¶|\s\(\d+\s*m?h?arc\)|\s\{\d|$))/g;
 const DEDUCTION = /\[Gaeilge lochtach:[^\]]*\]/g;
 /** "Trí phointe eolais ag teastáil anseo: 2 mharc an ceann ar na trí phointe eolais": how a row divides, a direction. */
@@ -161,6 +162,26 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
     if (eachPoint && tokens.length === 0 && !parts.length && !loose.length && Number(eachPoint[1]) * Number(eachPoint[2]) === source.totalMarks) {
       tokens.push({ kind: 'row', text: tidy(eachPoint[0]), marks: source.totalMarks, steps: range(source.totalMarks),
         at: eachPoint.index, end: eachPoint.index + eachPoint[0].length });
+    }
+    // "Na heachtraí is mó a tharlaíonn don duine sin = 22 marc 5 phointe eolais ag teastáil (5 mharc an ceann ar an gcéad dhá
+    // phointe eolais + 4 mharc an ceann ar na trí phointe eolais eile)" (Ordinary 2B, 2018-2026): the priced line names what
+    // the points are about and the ladder printed straight after its price prices them. The ladder's own words are the row,
+    // in the ladder's steps ([0, 5, 10, 14, 18, 22]), as where the scheme prints the ladder alone (2020 2B(b)); the line is
+    // the part's lead where nothing is printed before it, and otherwise a note, as printed with its price. Only where the
+    // ladder follows the line's price directly and adds up to exactly that price.
+    const leadLadder = LADDER.exec(body);
+    const ladderedRow = leadLadder && tokens.find((token): token is Extract<Token, { kind: 'row' }> => token.kind === 'row'
+      && !token.steps && token.end <= leadLadder.index && body.slice(token.end, leadLadder.index).trim() === '');
+    if (leadLadder && ladderedRow) {
+      const firstCount = WORDS[leadLadder[3].toLowerCase()] ?? Number(leadLadder[3]);
+      const values = [...Array(firstCount).fill(Number(leadLadder[2])),
+        ...Array(Math.max(0, Number(leadLadder[1]) - firstCount)).fill(leadLadder[4] ? Number(leadLadder[4]) : Number(leadLadder[2]))];
+      if (values.reduce((acc, value) => acc + value, 0) === ladderedRow.marks) {
+        const first = tokens.every(token => token === ladderedRow || token.at > ladderedRow.at);
+        if (!first) directions.push(tidy(body.slice(ladderedRow.at, ladderedRow.end)));
+        tokens.splice(tokens.indexOf(ladderedRow), 1, { kind: 'row', text: tidy(leadLadder[0].slice(0, leadLadder[0].indexOf('('))),
+          marks: ladderedRow.marks, steps: cumulative(values), at: first ? leadLadder.index : ladderedRow.at, end: leadLadder.index + leadLadder[0].length });
+      }
     }
     tokens.sort((a, b) => a.at - b.at);
     debug?.push(...tokens.map(token => token.kind === 'open' ? `  OPEN ${token.tariff} ladder=${token.ladder ?? ''} @${token.at}` : `  ROW ${token.marks} steps=${token.steps ?? ''} "${token.text.slice(0, 60)}" @${token.at}`));
