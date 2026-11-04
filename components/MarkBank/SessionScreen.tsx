@@ -64,6 +64,10 @@ import {
 import type { MarkBankGrade } from './scheduler';
 import { figureUrl } from '../../utils/figureUrl';
 import { getSubjectHex } from '../../utils/subjectColors';
+import { anyNHeading, marksWord, unclaimedName } from './sessionText';
+import RouteHeading from './RouteHeading';
+import FigureZoom from './FigureZoom';
+import { cardRoutes, routeDisplayOrder, routeHeadAt, routeSelection } from './routes';
 import WaysInPanel, {
   WaysInAttemptReview,
   emptyWaysInWork,
@@ -95,10 +99,6 @@ import { frenchMarks, type FrenchScoreId } from './frenchRubric';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
 import { stemWithListBreaks } from './stemText';
-import { anyNHeading, marksWord, unclaimedName } from './sessionText';
-import RouteHeading from './RouteHeading';
-import FigureZoom from './FigureZoom';
-import { cardRoutes, routeDisplayOrder, routeHeadAt, routeSelection } from './routes';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
