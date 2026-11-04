@@ -2859,6 +2859,1845 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s1-q1a", topicId: "hist-em-irl-2", conceptId: "who-bishop-down-connor-1565",
+    section: "1", questionRef: "2014 OL Early Modern Section 1 Q1(a)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "According to document A, who was Bishop of Down and Connor in 1565?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Meiler Magrath", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s1-q1b", topicId: "hist-em-irl-2", conceptId: "important-irish-prince-relative-meiler-magrath",
+    section: "1", questionRef: "2014 OL Early Modern Section 1 Q1(b)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "From document A, what important Irish prince was a relative of Meiler Magrath?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Shane O’Neill", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s1-q1c", topicId: "hist-em-irl-2", conceptId: "meiler-magrath-done-others-unable",
+    section: "1", questionRef: "2014 OL Early Modern Section 1 Q1(c)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "According to document A, what had Meiler Magrath done that others had been unable to do?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He has obtained copies of the confiscated papal letters (confirming the appointment of Richard Creagh as Archbishop of Armagh)", marks: 10 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s1-q1d", topicId: "hist-em-irl-2", conceptId: "bishop-london-opinion-meiler-magrath",
+    section: "1", questionRef: "2014 OL Early Modern Section 1 Q1(d)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "From document B, what was the Bishop of London’s opinion of Meiler Magrath?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He is a fit person to return to that realm (Ireland) to be appointed to some sort of ministry", marks: 10 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s1-q1e", topicId: "hist-em-irl-2", conceptId: "instructions-did-queen-sidney-meiler-magrath",
+    section: "1", questionRef: "2014 OL Early Modern Section 1 Q1(e)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "From document B, what instructions did the Queen give Sidney about Meiler Magrath?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To appoint some bishops or other learned men to speak with Magrath and that he be treated with more favour because of his conformity", marks: 10 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s1-q2a", topicId: "hist-em-irl-2", conceptId: "agree-meiler-magrath-suitable-churchman",
+    section: "1", questionRef: "2014 OL Early Modern Section 1 Q2(a)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "Do documents A and B agree that Meiler Magrath is suitable to be a churchman? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Documents A and B agree that Meiler Magrath is suitable to be a churchman", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Document A states that he had been considered worthy to be appointed bishop because of his virtues", marks: null },
+    { id: "r-3", kind: "point", verbatim: "He is a man of great energy and enthusiasm, care and diligence", marks: null },
+    { id: "r-4", kind: "point", verbatim: "The writer believes that he will be of great use to Archbishop Creagh in Armagh", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Document B states that the Bishop of London considers Magrath suitable for church appointment", marks: null },
+    { id: "r-6", kind: "point", verbatim: "The writer of the letter, Queen Elizabeth herself, agrees", marks: null },
+    { id: "r-7", kind: "point", verbatim: "She says that he shall be found right and serviceable for the church in Ireland", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Because he has turned his back on Rome, others might now follow his example.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s1-q2b", topicId: "hist-em-irl-2", conceptId: "gives-greater-praise-meiler-magrath",
+    section: "1", questionRef: "2014 OL Early Modern Section 1 Q2(b)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "Which document, A or B, gives the greater praise of Meiler Magrath? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A gives greater praise to Meiler Magrath Document A stresses many of Magrath’s good qualities", marks: null },
+    { id: "r-2", kind: "point", verbatim: "He made exceptional efforts to obtain copes of the confiscated papal letter and he succeeded where the proctor of the Jesuit order in Rome had failed", marks: null },
+    { id: "r-3", kind: "point", verbatim: "This greatly impressed the writer, himself a Jesuit based in Rome", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Magrath is described as a man of great ‘energy and enthusiasm’ who works with ‘care and diligence’", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Document B does not actually praise Magrath for any particular qualities", marks: null },
+    { id: "r-6", kind: "point", verbatim: "The Queen acknowledges that he has turned his back on Rome and that the Bishop of London deems him fit for church appointment in Ireland", marks: null },
+    { id: "r-7", kind: "point", verbatim: "She says that he will be ‘right and serviceable’ as an Irish bishop, but it could not be described as a glowing reference.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s1-q3a", topicId: "hist-em-irl-2", conceptId: "evidence-find-meiler-magrath-capable-man",
+    section: "1", questionRef: "2014 OL Early Modern Section 1 Q3(a)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "What evidence do you find in document A that Meiler Magrath was a capable man?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A tells us that through his ‘exceptional efforts’ Magrath convinced the Pope to give him fresh copies of the letters appointing Creagh as Archbishop of Armagh", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The writer, who is described here as an important and influential Jesuit in Rome, is most impressed by this achievement", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Also, Magrath would not have been appointed Catholic Bishop of Down and Connor unless he had the support of the Pope.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s1-q3b", topicId: "hist-em-irl-2", conceptId: "evidence-find-meiler-magrath-able-convince",
+    section: "1", questionRef: "2014 OL Early Modern Section 1 Q3(b)",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "What evidence do you find in document B that Meiler Magrath was able to convince people that he was loyal to the Queen?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "We know that he must have convinced people that he was loyal to the Queen because the Queen herself wrote this letter and it is clear from the letter that she now accepts him", marks: null },
+    { id: "r-2", kind: "point", verbatim: "She refers at the start to his previous loyalty to the Pope but, now that the Bishop of London and others have approved of him, she calls on Sidney to make arrangements for his return to Ireland", marks: null },
+    { id: "r-3", kind: "point", verbatim: "She believes that he will be found ‘right and serviceable’ for the Irish church and she hopes he may serve as a good example to others to leave the Catholic church.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s1-q4", topicId: "hist-em-irl-2", conceptId: "meiler-magrath-important-during-reign-elizabeth",
+    section: "1", questionRef: "2014 OL Early Modern Section 1 Q4",
+    stem: "Case study: Meiler Magrath’s clerical career",
+    questionText: "Why was Meiler Magrath important during the reign of Elizabeth I?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[0], schemePages: [20] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t1a-q1", topicId: "hist-em-irl-1", conceptId: "who-paid-education-gerald-kildare",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 1 A Q1",
+    stem: "Read the following edited extract from the historian, Philip Wilson, and answer the questions which follow.\n\nGerald of Kildare escaped to France in March, 1540. After leading a wandering life for many months, he made his way to Rome. There he received a liberal education at the expense of his kinsman, the famous Reginald Pole.\nAt the age of eighteen he joined the Knights of Malta and he served with distinction against the Turks in Tripoli.\nIn the reign of Edward VI he went to England. He appeared at court and received the honour of knighthood.\nThe accession of Mary Tudor, a Catholic sovereign, and the appointment of his relative and benefactor, Reginald Pole, to be Archbishop of Canterbury and Cardinal Legate, removed the last obstacle to his fortune.",
+    questionText: "Who paid for the education of Gerald of Kildare?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Reginald Pole", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t1a-q2", topicId: "hist-em-irl-1", conceptId: "where-did-gerald-kildare-serve-military",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 1 A Q2",
+    stem: "Read the following edited extract from the historian, Philip Wilson, and answer the questions which follow.\n\nGerald of Kildare escaped to France in March, 1540. After leading a wandering life for many months, he made his way to Rome. There he received a liberal education at the expense of his kinsman, the famous Reginald Pole.\nAt the age of eighteen he joined the Knights of Malta and he served with distinction against the Turks in Tripoli.\nIn the reign of Edward VI he went to England. He appeared at court and received the honour of knighthood.\nThe accession of Mary Tudor, a Catholic sovereign, and the appointment of his relative and benefactor, Reginald Pole, to be Archbishop of Canterbury and Cardinal Legate, removed the last obstacle to his fortune.",
+    questionText: "Where did Gerald of Kildare serve as a military man?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tripoli", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t1a-q3", topicId: "hist-em-irl-1", conceptId: "honour-did-gerald-kildare-receive-going",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 1 A Q3",
+    stem: "Read the following edited extract from the historian, Philip Wilson, and answer the questions which follow.\n\nGerald of Kildare escaped to France in March, 1540. After leading a wandering life for many months, he made his way to Rome. There he received a liberal education at the expense of his kinsman, the famous Reginald Pole.\nAt the age of eighteen he joined the Knights of Malta and he served with distinction against the Turks in Tripoli.\nIn the reign of Edward VI he went to England. He appeared at court and received the honour of knighthood.\nThe accession of Mary Tudor, a Catholic sovereign, and the appointment of his relative and benefactor, Reginald Pole, to be Archbishop of Canterbury and Cardinal Legate, removed the last obstacle to his fortune.",
+    questionText: "What honour did Gerald of Kildare receive on going to court in the reign of Edward VI?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Knighthood", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t1a-q4", topicId: "hist-em-irl-1", conceptId: "events-removed-last-obstacle-fortunes-gerald",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 1 A Q4",
+    stem: "Read the following edited extract from the historian, Philip Wilson, and answer the questions which follow.\n\nGerald of Kildare escaped to France in March, 1540. After leading a wandering life for many months, he made his way to Rome. There he received a liberal education at the expense of his kinsman, the famous Reginald Pole.\nAt the age of eighteen he joined the Knights of Malta and he served with distinction against the Turks in Tripoli.\nIn the reign of Edward VI he went to England. He appeared at court and received the honour of knighthood.\nThe accession of Mary Tudor, a Catholic sovereign, and the appointment of his relative and benefactor, Reginald Pole, to be Archbishop of Canterbury and Cardinal Legate, removed the last obstacle to his fortune.",
+    questionText: "What two events removed the last obstacle to the fortunes of Gerald of Kildare?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mary Tudor becoming Queen", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Reginald Pole becoming Archbishop of Canterbury and Cardinal Legate", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t1a-q5", topicId: "hist-em-irl-1", conceptId: "aim-geraldine-league",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 1 A Q5",
+    stem: "Read the following edited extract from the historian, Philip Wilson, and answer the questions which follow.\n\nGerald of Kildare escaped to France in March, 1540. After leading a wandering life for many months, he made his way to Rome. There he received a liberal education at the expense of his kinsman, the famous Reginald Pole.\nAt the age of eighteen he joined the Knights of Malta and he served with distinction against the Turks in Tripoli.\nIn the reign of Edward VI he went to England. He appeared at court and received the honour of knighthood.\nThe accession of Mary Tudor, a Catholic sovereign, and the appointment of his relative and benefactor, Reginald Pole, to be Archbishop of Canterbury and Cardinal Legate, removed the last obstacle to his fortune.",
+    questionText: "Give one aim of the Geraldine League.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any TWO valid aims of the Geraldine League (3M x 2)", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t1b", topicId: "hist-em-irl-1", conceptId: "kildare-rebellion-1534-policy-surrender-regrant",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 1 B",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "Write a short paragraph on one of the following:\n1. The Kildare rebellion, 1534-35.\n2. The policy of surrender and regrant.\n3. Towns and guilds.\n4. Con Bacach O’Neill.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t1c", topicId: "hist-em-irl-1", conceptId: "did-gear-eighth-earl-kildare-become",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 1 C",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "Answer one of the following:\n1. How did Gearóid Mór, the eighth Earl of Kildare, become rich and powerful?\n2. How successful was the plantation of Laois and Offaly?\n3. What was the importance for Gaelic culture of the Bardic Schools?\n4. What rights and protections had women under Gaelic law?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t3a-q1", topicId: "hist-em-irl-3", conceptId: "cargo-seized-nicholas-kenny-1632",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 3 A Q1",
+    stem: "This edited extract discusses the demand for silk in the early seventeenth century. Read it and answer the questions which follow.\n\nIn an attempt to encourage the local economy, a 1555 order forbade merchants to import anything that could be made in Dublin.\nThere were claims about 1610 that young Munster men mortgaged themselves to buy silk stockings, which they kept locked in irons for fear they would be stolen.\nIn 1632 the Dublin port authorities seized a cargo of silk hat bands and silk lace from a local merchant, Nicholas Kenny.\nIn 1649 a devout widow, Ellen Shee, bequeathed her red silk petticoat to our Lady’s Church, Kilkenny, to honour the Lord by making it into an antependium (a covering to be hung down in front of the altar).\nSilk cloths, particularly velvets, were in such demand that Dutch and English merchants regularly tried to evade the law by importing such items themselves.",
+    questionText: "What cargo was seized from Nicholas Kenny in 1632?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Silk (hat bands, lace and points)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t3a-q2", topicId: "hist-em-irl-3", conceptId: "evidence-suggests-silk-stockings-valuable",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 3 A Q2",
+    stem: "This edited extract discusses the demand for silk in the early seventeenth century. Read it and answer the questions which follow.\n\nIn an attempt to encourage the local economy, a 1555 order forbade merchants to import anything that could be made in Dublin.\nThere were claims about 1610 that young Munster men mortgaged themselves to buy silk stockings, which they kept locked in irons for fear they would be stolen.\nIn 1632 the Dublin port authorities seized a cargo of silk hat bands and silk lace from a local merchant, Nicholas Kenny.\nIn 1649 a devout widow, Ellen Shee, bequeathed her red silk petticoat to our Lady’s Church, Kilkenny, to honour the Lord by making it into an antependium (a covering to be hung down in front of the altar).\nSilk cloths, particularly velvets, were in such demand that Dutch and English merchants regularly tried to evade the law by importing such items themselves.",
+    questionText: "What evidence in the extract suggests that silk stockings were valuable?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Young Munster men mortgaged themselves to buy silk stockings OR they kept silk stockings locked in irons for fear they would be stolen", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t3a-q3", topicId: "hist-em-irl-3", conceptId: "gift-did-ellen-shee-leave-our",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 3 A Q3",
+    stem: "This edited extract discusses the demand for silk in the early seventeenth century. Read it and answer the questions which follow.\n\nIn an attempt to encourage the local economy, a 1555 order forbade merchants to import anything that could be made in Dublin.\nThere were claims about 1610 that young Munster men mortgaged themselves to buy silk stockings, which they kept locked in irons for fear they would be stolen.\nIn 1632 the Dublin port authorities seized a cargo of silk hat bands and silk lace from a local merchant, Nicholas Kenny.\nIn 1649 a devout widow, Ellen Shee, bequeathed her red silk petticoat to our Lady’s Church, Kilkenny, to honour the Lord by making it into an antependium (a covering to be hung down in front of the altar).\nSilk cloths, particularly velvets, were in such demand that Dutch and English merchants regularly tried to evade the law by importing such items themselves.",
+    questionText: "What gift did Ellen Shee leave to Our Lady’s Church in Kilkenny and how was it to be used?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Red silk petticoat", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "to be used as an antependium", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t3a-q4", topicId: "hist-em-irl-3", conceptId: "did-dutch-english-merchants-regularly-import",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 3 A Q4",
+    stem: "This edited extract discusses the demand for silk in the early seventeenth century. Read it and answer the questions which follow.\n\nIn an attempt to encourage the local economy, a 1555 order forbade merchants to import anything that could be made in Dublin.\nThere were claims about 1610 that young Munster men mortgaged themselves to buy silk stockings, which they kept locked in irons for fear they would be stolen.\nIn 1632 the Dublin port authorities seized a cargo of silk hat bands and silk lace from a local merchant, Nicholas Kenny.\nIn 1649 a devout widow, Ellen Shee, bequeathed her red silk petticoat to our Lady’s Church, Kilkenny, to honour the Lord by making it into an antependium (a covering to be hung down in front of the altar).\nSilk cloths, particularly velvets, were in such demand that Dutch and English merchants regularly tried to evade the law by importing such items themselves.",
+    questionText: "What did Dutch and English merchants regularly import?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Silk cloths OR velvets", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t3a-q5", topicId: "hist-em-irl-3", conceptId: "apart-silk-commodities-traded-into-out",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 3 A Q5",
+    stem: "This edited extract discusses the demand for silk in the early seventeenth century. Read it and answer the questions which follow.\n\nIn an attempt to encourage the local economy, a 1555 order forbade merchants to import anything that could be made in Dublin.\nThere were claims about 1610 that young Munster men mortgaged themselves to buy silk stockings, which they kept locked in irons for fear they would be stolen.\nIn 1632 the Dublin port authorities seized a cargo of silk hat bands and silk lace from a local merchant, Nicholas Kenny.\nIn 1649 a devout widow, Ellen Shee, bequeathed her red silk petticoat to our Lady’s Church, Kilkenny, to honour the Lord by making it into an antependium (a covering to be hung down in front of the altar).\nSilk cloths, particularly velvets, were in such demand that Dutch and English merchants regularly tried to evade the law by importing such items themselves.",
+    questionText: "Apart from silk, name two commodities which were traded into or out of Ireland in this period.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE traded commodity", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t3b", topicId: "hist-em-irl-3", conceptId: "elizabeth-butler-countess-ormond-depositions-1641",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 3 B",
+    stem: "Kingdom versus colony: The struggle for mastery in Ireland, 1603-1660",
+    questionText: "Write a short paragraph on one of the following:\n1. Elizabeth Butler, Countess of Ormond.\n2. The depositions of 1641.\n3. Richard Boyle and his family.\n4. State plantation policy.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t3c", topicId: "hist-em-irl-3", conceptId: "importance-trial-strafford-did-owen-roe",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 3 C",
+    stem: "Kingdom versus colony: The struggle for mastery in Ireland, 1603-1660",
+    questionText: "Answer one of the following:\n1. What was the importance of the trial of Strafford?\n2. What did Owen Roe O’Neill achieve in Ireland?\n3. Why was Louvain founded and how did it influence culture and religion in Ireland?\n4. How did Archbishop Rinuccini and/or Luke Wadding influence events in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t4a-q1", topicId: "hist-em-irl-4", conceptId: "where-cattle-grazed-during-summer-west",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 4 A Q1",
+    stem: "This is an account of land use in Connaught to the west of Galway city by Roderick O’Flaherty, a scholar and landowner. Read it and answer the questions which follow.\n\nThey dwell for the most part next the borders of the country where commonly is the best land. In summer time they drive their cattle to the mountains where those who look after the cattle live in small cabins for that season.\nThe tract of land on the south side of the barony by Galway Bay is a good pasture for cattle. But it is so craggy and full of stones, and so destitute of deep earth, that a plough can go in very few spots. Yet the tenants by digging, manure it so well that they have corn for themselves, their landlords and the market.\nNever were gardens tilled with more care. They carry seaweeds on horses from the shore daily from Michaelmas until after sowing time. Sometimes on spring tide low waters they go as far down as they can, and cut seaweed with knives, to have it cast up again by the sea. With this seaweed they muck the land and dig up earth to cover it daily.",
+    questionText: "Where were cattle grazed during the summer in west Connaught?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "On the mountains", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t4a-q2", topicId: "hist-em-irl-4", conceptId: "where-did-those-who-looked-after",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 4 A Q2",
+    stem: "This is an account of land use in Connaught to the west of Galway city by Roderick O’Flaherty, a scholar and landowner. Read it and answer the questions which follow.\n\nThey dwell for the most part next the borders of the country where commonly is the best land. In summer time they drive their cattle to the mountains where those who look after the cattle live in small cabins for that season.\nThe tract of land on the south side of the barony by Galway Bay is a good pasture for cattle. But it is so craggy and full of stones, and so destitute of deep earth, that a plough can go in very few spots. Yet the tenants by digging, manure it so well that they have corn for themselves, their landlords and the market.\nNever were gardens tilled with more care. They carry seaweeds on horses from the shore daily from Michaelmas until after sowing time. Sometimes on spring tide low waters they go as far down as they can, and cut seaweed with knives, to have it cast up again by the sea. With this seaweed they muck the land and dig up earth to cover it daily.",
+    questionText: "Where did those who looked after the cattle live in summertime?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In small cabins", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t4a-q3", topicId: "hist-em-irl-4", conceptId: "ploughs-little-used-west-connaught",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 4 A Q3",
+    stem: "This is an account of land use in Connaught to the west of Galway city by Roderick O’Flaherty, a scholar and landowner. Read it and answer the questions which follow.\n\nThey dwell for the most part next the borders of the country where commonly is the best land. In summer time they drive their cattle to the mountains where those who look after the cattle live in small cabins for that season.\nThe tract of land on the south side of the barony by Galway Bay is a good pasture for cattle. But it is so craggy and full of stones, and so destitute of deep earth, that a plough can go in very few spots. Yet the tenants by digging, manure it so well that they have corn for themselves, their landlords and the market.\nNever were gardens tilled with more care. They carry seaweeds on horses from the shore daily from Michaelmas until after sowing time. Sometimes on spring tide low waters they go as far down as they can, and cut seaweed with knives, to have it cast up again by the sea. With this seaweed they muck the land and dig up earth to cover it daily.",
+    questionText: "Why were ploughs little used in west Connaught?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Too craggy/ Too stony/ Not enough deep earth", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t4a-q4", topicId: "hist-em-irl-4", conceptId: "crop-did-tenants-produce-west-connaught",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 4 A Q4",
+    stem: "This is an account of land use in Connaught to the west of Galway city by Roderick O’Flaherty, a scholar and landowner. Read it and answer the questions which follow.\n\nThey dwell for the most part next the borders of the country where commonly is the best land. In summer time they drive their cattle to the mountains where those who look after the cattle live in small cabins for that season.\nThe tract of land on the south side of the barony by Galway Bay is a good pasture for cattle. But it is so craggy and full of stones, and so destitute of deep earth, that a plough can go in very few spots. Yet the tenants by digging, manure it so well that they have corn for themselves, their landlords and the market.\nNever were gardens tilled with more care. They carry seaweeds on horses from the shore daily from Michaelmas until after sowing time. Sometimes on spring tide low waters they go as far down as they can, and cut seaweed with knives, to have it cast up again by the sea. With this seaweed they muck the land and dig up earth to cover it daily.",
+    questionText: "What crop did the tenants produce in west Connaught?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Corn", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t4a-q5", topicId: "hist-em-irl-4", conceptId: "reason-conditions-among-peasantry-varied-across",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 4 A Q5",
+    stem: "This is an account of land use in Connaught to the west of Galway city by Roderick O’Flaherty, a scholar and landowner. Read it and answer the questions which follow.\n\nThey dwell for the most part next the borders of the country where commonly is the best land. In summer time they drive their cattle to the mountains where those who look after the cattle live in small cabins for that season.\nThe tract of land on the south side of the barony by Galway Bay is a good pasture for cattle. But it is so craggy and full of stones, and so destitute of deep earth, that a plough can go in very few spots. Yet the tenants by digging, manure it so well that they have corn for themselves, their landlords and the market.\nNever were gardens tilled with more care. They carry seaweeds on horses from the shore daily from Michaelmas until after sowing time. Sometimes on spring tide low waters they go as far down as they can, and cut seaweed with knives, to have it cast up again by the sea. With this seaweed they muck the land and dig up earth to cover it daily.",
+    questionText: "Give one reason why conditions among the peasantry varied across Ireland at this time.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason why conditions among the peasantry varied", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t4b", topicId: "hist-em-irl-4", conceptId: "emergence-science-ireland-popish-plot-1678",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 4 B",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "Write a short paragraph on one of the following:\n1. The emergence of science in Ireland.\n2. The Popish Plot, 1678.\n3. William Molyneux.\n4. Oliver Plunkett.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t4c", topicId: "hist-em-irl-4", conceptId: "did-decisions-parliament-1689-cause-controversy",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 4 C",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "Answer one of the following:\n1. Why did the decisions of the Parliament of 1689 cause controversy?\n2. What were the concerns of the Jacobite poets in Ireland?\n3. What changes took place in Dublin following the Restoration of 1660?\n4. Was the career of Patrick Sarsfield a success or a failure? Explain your answer.",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t5a-q1", topicId: "hist-em-irl-5", conceptId: "much-cork-direct-exports-went-english",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 5 A Q1",
+    stem: "The historian, David Dickson, wrote about trade to and from Cork and south Munster. Read this edited extract and answer the questions that follow.\n\nCork’s direct exports to the English plantations were about a sixth of the value of the city’s total exports in the first half of the eighteenth century. Trade with Spain, Portugal and France was worth roughly twice as much. There was much traffic with Nantes and Bordeaux. Cork-owned vessels converged on these destinations as well as on Lisbon and Cadiz. Relatives of Cork merchants settled in these and in lesser ports and operated partnerships.\nThe Irish merchant colony in eighteenth-century Cadiz, while strongly Munster in origin, was in fact more Waterford than Cork in its make-up and was Waterford’s most important European destination between the 1740s and the 1760s. For Cork it was the Portuguese capital (Lisbon) which became the most important southern European commercial colony by the second quarter of the eighteenth century, reflecting the scale of the trade there in butter, hides, woollens and barley and the return trade in wines, Brazilian sugar and salt.",
+    questionText: "How much of Cork’s direct exports went to English plantations?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "One sixth", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t5a-q2", topicId: "hist-em-irl-5", conceptId: "european-cities-cork-traded",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 5 A Q2",
+    stem: "The historian, David Dickson, wrote about trade to and from Cork and south Munster. Read this edited extract and answer the questions that follow.\n\nCork’s direct exports to the English plantations were about a sixth of the value of the city’s total exports in the first half of the eighteenth century. Trade with Spain, Portugal and France was worth roughly twice as much. There was much traffic with Nantes and Bordeaux. Cork-owned vessels converged on these destinations as well as on Lisbon and Cadiz. Relatives of Cork merchants settled in these and in lesser ports and operated partnerships.\nThe Irish merchant colony in eighteenth-century Cadiz, while strongly Munster in origin, was in fact more Waterford than Cork in its make-up and was Waterford’s most important European destination between the 1740s and the 1760s. For Cork it was the Portuguese capital (Lisbon) which became the most important southern European commercial colony by the second quarter of the eighteenth century, reflecting the scale of the trade there in butter, hides, woollens and barley and the return trade in wines, Brazilian sugar and salt.",
+    questionText: "Name three European cities with which Cork traded.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Any THREE", marks: null, group: {"claimMax":3,"perOption":2,"options":["Nantes","Bordeaux","Lisbon","Cadiz"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t5a-q3", topicId: "hist-em-irl-5", conceptId: "city-cork-most-important-european-trading",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 5 A Q3",
+    stem: "The historian, David Dickson, wrote about trade to and from Cork and south Munster. Read this edited extract and answer the questions that follow.\n\nCork’s direct exports to the English plantations were about a sixth of the value of the city’s total exports in the first half of the eighteenth century. Trade with Spain, Portugal and France was worth roughly twice as much. There was much traffic with Nantes and Bordeaux. Cork-owned vessels converged on these destinations as well as on Lisbon and Cadiz. Relatives of Cork merchants settled in these and in lesser ports and operated partnerships.\nThe Irish merchant colony in eighteenth-century Cadiz, while strongly Munster in origin, was in fact more Waterford than Cork in its make-up and was Waterford’s most important European destination between the 1740s and the 1760s. For Cork it was the Portuguese capital (Lisbon) which became the most important southern European commercial colony by the second quarter of the eighteenth century, reflecting the scale of the trade there in butter, hides, woollens and barley and the return trade in wines, Brazilian sugar and salt.",
+    questionText: "Which city was Cork’s most important European trading destination?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lisbon", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t5a-q4", topicId: "hist-em-irl-5", conceptId: "city-waterford-most-important-european-trading",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 5 A Q4",
+    stem: "The historian, David Dickson, wrote about trade to and from Cork and south Munster. Read this edited extract and answer the questions that follow.\n\nCork’s direct exports to the English plantations were about a sixth of the value of the city’s total exports in the first half of the eighteenth century. Trade with Spain, Portugal and France was worth roughly twice as much. There was much traffic with Nantes and Bordeaux. Cork-owned vessels converged on these destinations as well as on Lisbon and Cadiz. Relatives of Cork merchants settled in these and in lesser ports and operated partnerships.\nThe Irish merchant colony in eighteenth-century Cadiz, while strongly Munster in origin, was in fact more Waterford than Cork in its make-up and was Waterford’s most important European destination between the 1740s and the 1760s. For Cork it was the Portuguese capital (Lisbon) which became the most important southern European commercial colony by the second quarter of the eighteenth century, reflecting the scale of the trade there in butter, hides, woollens and barley and the return trade in wines, Brazilian sugar and salt.",
+    questionText: "Which city was Waterford’s most important European trading destination?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cadiz", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t5a-q5", topicId: "hist-em-irl-5", conceptId: "did-provisions-trade-expand-during-period",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 5 A Q5",
+    stem: "The historian, David Dickson, wrote about trade to and from Cork and south Munster. Read this edited extract and answer the questions that follow.\n\nCork’s direct exports to the English plantations were about a sixth of the value of the city’s total exports in the first half of the eighteenth century. Trade with Spain, Portugal and France was worth roughly twice as much. There was much traffic with Nantes and Bordeaux. Cork-owned vessels converged on these destinations as well as on Lisbon and Cadiz. Relatives of Cork merchants settled in these and in lesser ports and operated partnerships.\nThe Irish merchant colony in eighteenth-century Cadiz, while strongly Munster in origin, was in fact more Waterford than Cork in its make-up and was Waterford’s most important European destination between the 1740s and the 1760s. For Cork it was the Portuguese capital (Lisbon) which became the most important southern European commercial colony by the second quarter of the eighteenth century, reflecting the scale of the trade there in butter, hides, woollens and barley and the return trade in wines, Brazilian sugar and salt.",
+    questionText: "Why did the provisions trade expand during this period?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason for the expansion of the provisions trade", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t5b", topicId: "hist-em-irl-5", conceptId: "dean-swift-pamphleteering-planned-towns-model",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 5 B",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "Write a short paragraph on one of the following:\n1. Dean Swift’s pamphleteering.\n2. Planned towns and model villages.\n3. Charles Lucas.\n4. Na Cúirteanna Filíochta.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t5c", topicId: "hist-em-irl-5", conceptId: "did-ponsonbys-use-power-did-achieve",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 5 C",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "Answer one of the following:\n1. How did the Ponsonbys use their power and what did they achieve?\n2. What conditions in rural Ireland led to the emergence of the Whiteboys and what tactics did they use?\n3. What evidence did the witnesses for the prosecution give in the trial of Father Sheehy?\n4. What did Margaret (Peg) Woffington achieve and/or how vibrant was theatre in Dublin, 1715-1770?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t6a-q1", topicId: "hist-em-irl-6", conceptId: "common-people-classes-gentry-ireland",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 6 A Q1",
+    stem: "Sir Jonah Barrington (1760-1834), barrister, judge and M.P. for Tuam, wrote amusing memoirs. Read the following edited extract and answer the questions which follow.\n\nIn those days the common people separated the gentry into three classes: half-mounted gentlemen; gentlemen every inch of them; and gentlemen to the backbone.\nThe half-mounted gentlemen possessed about 200 acres of land each. They generally had good clever horses, which could leap over anything. The riders generally wore buckskin breeches and boots well greased, and carried large thong whips heavily loaded with lead at the butt-end, so that they were always prepared to horsewhip a man or knock his brains out.\nThese half-mounted gentlemen exercised the authority of keeping the ground clear at horse races and at all public meetings. Their business was to ride around the inside of the ground, which they generally did with spirit, trampling over some, knocking down others, and slashing everybody who encroached upon the proper limits.",
+    questionText: "According to the common people, what were the three classes of gentry in Ireland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Half-mounted gentlemen", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Gentlemen every inch of them", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "Gentlemen to the backbone", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t6a-q2", topicId: "hist-em-irl-6", conceptId: "much-land-did-half-mounted-gentlemen",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 6 A Q2",
+    stem: "Sir Jonah Barrington (1760-1834), barrister, judge and M.P. for Tuam, wrote amusing memoirs. Read the following edited extract and answer the questions which follow.\n\nIn those days the common people separated the gentry into three classes: half-mounted gentlemen; gentlemen every inch of them; and gentlemen to the backbone.\nThe half-mounted gentlemen possessed about 200 acres of land each. They generally had good clever horses, which could leap over anything. The riders generally wore buckskin breeches and boots well greased, and carried large thong whips heavily loaded with lead at the butt-end, so that they were always prepared to horsewhip a man or knock his brains out.\nThese half-mounted gentlemen exercised the authority of keeping the ground clear at horse races and at all public meetings. Their business was to ride around the inside of the ground, which they generally did with spirit, trampling over some, knocking down others, and slashing everybody who encroached upon the proper limits.",
+    questionText: "About how much land did the half-mounted gentlemen possess?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "200 acres", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t6a-q3", topicId: "hist-em-irl-6", conceptId: "did-half-mounted-gentlemen-usually-dress",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 6 A Q3",
+    stem: "Sir Jonah Barrington (1760-1834), barrister, judge and M.P. for Tuam, wrote amusing memoirs. Read the following edited extract and answer the questions which follow.\n\nIn those days the common people separated the gentry into three classes: half-mounted gentlemen; gentlemen every inch of them; and gentlemen to the backbone.\nThe half-mounted gentlemen possessed about 200 acres of land each. They generally had good clever horses, which could leap over anything. The riders generally wore buckskin breeches and boots well greased, and carried large thong whips heavily loaded with lead at the butt-end, so that they were always prepared to horsewhip a man or knock his brains out.\nThese half-mounted gentlemen exercised the authority of keeping the ground clear at horse races and at all public meetings. Their business was to ride around the inside of the ground, which they generally did with spirit, trampling over some, knocking down others, and slashing everybody who encroached upon the proper limits.",
+    questionText: "How did the half-mounted gentlemen usually dress?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Buckskin breeches", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "boots", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t6a-q4", topicId: "hist-em-irl-6", conceptId: "role-played-half-mounted-gentlemen-public",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 6 A Q4",
+    stem: "Sir Jonah Barrington (1760-1834), barrister, judge and M.P. for Tuam, wrote amusing memoirs. Read the following edited extract and answer the questions which follow.\n\nIn those days the common people separated the gentry into three classes: half-mounted gentlemen; gentlemen every inch of them; and gentlemen to the backbone.\nThe half-mounted gentlemen possessed about 200 acres of land each. They generally had good clever horses, which could leap over anything. The riders generally wore buckskin breeches and boots well greased, and carried large thong whips heavily loaded with lead at the butt-end, so that they were always prepared to horsewhip a man or knock his brains out.\nThese half-mounted gentlemen exercised the authority of keeping the ground clear at horse races and at all public meetings. Their business was to ride around the inside of the ground, which they generally did with spirit, trampling over some, knocking down others, and slashing everybody who encroached upon the proper limits.",
+    questionText: "What role was played by the half-mounted gentlemen at public meetings?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Keeping the ground clear/ Keeping the crowd back", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t6a-q5", topicId: "hist-em-irl-6", conceptId: "cause-rural-discontent-time",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 6 A Q5",
+    stem: "Sir Jonah Barrington (1760-1834), barrister, judge and M.P. for Tuam, wrote amusing memoirs. Read the following edited extract and answer the questions which follow.\n\nIn those days the common people separated the gentry into three classes: half-mounted gentlemen; gentlemen every inch of them; and gentlemen to the backbone.\nThe half-mounted gentlemen possessed about 200 acres of land each. They generally had good clever horses, which could leap over anything. The riders generally wore buckskin breeches and boots well greased, and carried large thong whips heavily loaded with lead at the butt-end, so that they were always prepared to horsewhip a man or knock his brains out.\nThese half-mounted gentlemen exercised the authority of keeping the ground clear at horse races and at all public meetings. Their business was to ride around the inside of the ground, which they generally did with spirit, trampling over some, knocking down others, and slashing everybody who encroached upon the proper limits.",
+    questionText: "Give one cause of rural discontent at this time.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid cause of rural discontent", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t6b", topicId: "hist-em-irl-6", conceptId: "grattan-parliament-mary-anne-mccracken-act",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 6 B",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "Write a short paragraph on one of the following:\n1. Grattan’s Parliament.\n2. Mary Anne McCracken.\n3. The Act of Union.\n4. Nano Nagle.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s2t6c", topicId: "hist-em-irl-6", conceptId: "conditions-led-wexford-rising-did-end",
+    section: "2", questionRef: "2014 OL Early Modern Section 2 Topic 6 C",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "Answer one of the following:\n1. What conditions led to the Wexford Rising and why did it end in failure?\n2. What did Wolfe Tone hope to achieve and why did he not succeed in his aims?\n3. How important was the establishment of Maynooth College for culture and religion in Ireland?\n4. What factors led to the rise of Belfast in the period 1770-1815?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t1a-q1", topicId: "hist-em-eur-1", conceptId: "who-commissioned-leonardo-paint-mona-lisa",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 1 A Q1",
+    stem: "Giorgio Vasari (1511-1574) described the painting of the Mona Lisa by Leonardo da Vinci. Read this edited account and answer the questions which follow.\n\nLeonardo undertook to execute the portrait of his wife, Mona Lisa, for Francesco del Giocondo. He worked on this painting for four years, and then he left it unfinished; and today it is in the possession of King Francis of France, at Fontainebleau.\nIf one wanted to see how faithfully art can imitate nature, one could readily notice it from this head; for here Leonardo reproduced every living detail. The eyes had their natural lustre and moistness. The eyebrows were completely natural. The nose was finely painted, with rosy and delicate nostrils as in life.\nLeonardo also employed singers and musicians or jesters to keep her full of merriment and to chase away the sadness that painters usually give to portraits. As a result, in this painting of Leonardo’s there was a smile so pleasing that it seemed divine rather than human; and those who saw it were amazed to find that it was as alive as the original.",
+    questionText: "Who commissioned Leonardo to paint the Mona Lisa?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Francesco del Giocondo", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t1a-q2", topicId: "hist-em-eur-1", conceptId: "where-painting-mona-lisa-when-vasari",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 1 A Q2",
+    stem: "Giorgio Vasari (1511-1574) described the painting of the Mona Lisa by Leonardo da Vinci. Read this edited account and answer the questions which follow.\n\nLeonardo undertook to execute the portrait of his wife, Mona Lisa, for Francesco del Giocondo. He worked on this painting for four years, and then he left it unfinished; and today it is in the possession of King Francis of France, at Fontainebleau.\nIf one wanted to see how faithfully art can imitate nature, one could readily notice it from this head; for here Leonardo reproduced every living detail. The eyes had their natural lustre and moistness. The eyebrows were completely natural. The nose was finely painted, with rosy and delicate nostrils as in life.\nLeonardo also employed singers and musicians or jesters to keep her full of merriment and to chase away the sadness that painters usually give to portraits. As a result, in this painting of Leonardo’s there was a smile so pleasing that it seemed divine rather than human; and those who saw it were amazed to find that it was as alive as the original.",
+    questionText: "Where was the painting of the Mona Lisa when Vasari wrote his account?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "With King Francis of France/ At Fontainebleau", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t1a-q3", topicId: "hist-em-eur-1", conceptId: "does-vasari-nose-mona-lisa",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 1 A Q3",
+    stem: "Giorgio Vasari (1511-1574) described the painting of the Mona Lisa by Leonardo da Vinci. Read this edited account and answer the questions which follow.\n\nLeonardo undertook to execute the portrait of his wife, Mona Lisa, for Francesco del Giocondo. He worked on this painting for four years, and then he left it unfinished; and today it is in the possession of King Francis of France, at Fontainebleau.\nIf one wanted to see how faithfully art can imitate nature, one could readily notice it from this head; for here Leonardo reproduced every living detail. The eyes had their natural lustre and moistness. The eyebrows were completely natural. The nose was finely painted, with rosy and delicate nostrils as in life.\nLeonardo also employed singers and musicians or jesters to keep her full of merriment and to chase away the sadness that painters usually give to portraits. As a result, in this painting of Leonardo’s there was a smile so pleasing that it seemed divine rather than human; and those who saw it were amazed to find that it was as alive as the original.",
+    questionText: "How does Vasari describe the nose of the Mona Lisa?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Finely painted", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Rosy and delicate nostrils", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t1a-q4", topicId: "hist-em-eur-1", conceptId: "did-leonardo-hire-entertainers-while-painted",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 1 A Q4",
+    stem: "Giorgio Vasari (1511-1574) described the painting of the Mona Lisa by Leonardo da Vinci. Read this edited account and answer the questions which follow.\n\nLeonardo undertook to execute the portrait of his wife, Mona Lisa, for Francesco del Giocondo. He worked on this painting for four years, and then he left it unfinished; and today it is in the possession of King Francis of France, at Fontainebleau.\nIf one wanted to see how faithfully art can imitate nature, one could readily notice it from this head; for here Leonardo reproduced every living detail. The eyes had their natural lustre and moistness. The eyebrows were completely natural. The nose was finely painted, with rosy and delicate nostrils as in life.\nLeonardo also employed singers and musicians or jesters to keep her full of merriment and to chase away the sadness that painters usually give to portraits. As a result, in this painting of Leonardo’s there was a smile so pleasing that it seemed divine rather than human; and those who saw it were amazed to find that it was as alive as the original.",
+    questionText: "Why did Leonardo hire entertainers while he painted?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To keep his subject amused", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t1a-q5", topicId: "hist-em-eur-1", conceptId: "meaning-word-renaissance",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 1 A Q5",
+    stem: "Giorgio Vasari (1511-1574) described the painting of the Mona Lisa by Leonardo da Vinci. Read this edited account and answer the questions which follow.\n\nLeonardo undertook to execute the portrait of his wife, Mona Lisa, for Francesco del Giocondo. He worked on this painting for four years, and then he left it unfinished; and today it is in the possession of King Francis of France, at Fontainebleau.\nIf one wanted to see how faithfully art can imitate nature, one could readily notice it from this head; for here Leonardo reproduced every living detail. The eyes had their natural lustre and moistness. The eyebrows were completely natural. The nose was finely painted, with rosy and delicate nostrils as in life.\nLeonardo also employed singers and musicians or jesters to keep her full of merriment and to chase away the sadness that painters usually give to portraits. As a result, in this painting of Leonardo’s there was a smile so pleasing that it seemed divine rather than human; and those who saw it were amazed to find that it was as alive as the original.",
+    questionText: "What is the meaning of the word ‘Renaissance’?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Revival or re-birth", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "of art and literature", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t1b", topicId: "hist-em-eur-1", conceptId: "christopher-columbus-discovery-new-world-michelangelo",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 1 B",
+    stem: "Europe from Renaissance to Reformation, 1492-1567",
+    questionText: "Write a short paragraph on one of the following:\n1. Christopher Columbus and the discovery of the New World.\n2. Michelangelo Buonarroti.\n3. The Counter-Reformation.\n4. Seville, the port of the New World.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t1c", topicId: "hist-em-eur-1", conceptId: "did-henry-viii-divorce-catherine-aragon",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 1 C",
+    stem: "Europe from Renaissance to Reformation, 1492-1567",
+    questionText: "Answer one of the following:\n1. How did the Henry VIII’s divorce of Catherine of Aragon influence politics and religion in England?\n2. What did Desiderius Erasmus and/or Pieter Breughel the Elder contribute to culture and/or art?\n3. What part did Martin Luther play in bringing about the Reformation in Germany?\n4. How did Geneva become such an important city for religious change?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t2a-q1", topicId: "hist-em-eur-2", conceptId: "who-first-jesuit-study-chinese-literature",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 2 A Q1",
+    stem: "This is an edited extract from the journals of the Jesuit priest Matteo Ricci. Read it and answer the questions which follow.\n\nIt is distinctive of the Chinese that all their religious doctrine is spread by written books, rather than by the spoken word. Father Ricci was the first Jesuit to begin the study of Chinese literature.\nHe began by teaching the first principles of Geography and of Astronomy and, though in the beginning he taught nothing that was not known to an educated European, his teaching was simply astounding and something beyond their imagining. Many of them confessed that up to that time, their ignorance of the better things had rendered them stubborn and proud but that now their eyes were really being opened to the more serious things of life.\nFather Ricci wrote twenty-five tracts on different moral questions. These were pamphlets which the Chinese called Opinions and Sentences. They were read by some of his Chinese friends before they were published and met with their wholehearted approval.",
+    questionText: "Who was the first Jesuit to study Chinese literature?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Father Matteo) Ricci", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t2a-q2", topicId: "hist-em-eur-2", conceptId: "scientific-subjects-did-matteo-ricci-first",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 2 A Q2",
+    stem: "This is an edited extract from the journals of the Jesuit priest Matteo Ricci. Read it and answer the questions which follow.\n\nIt is distinctive of the Chinese that all their religious doctrine is spread by written books, rather than by the spoken word. Father Ricci was the first Jesuit to begin the study of Chinese literature.\nHe began by teaching the first principles of Geography and of Astronomy and, though in the beginning he taught nothing that was not known to an educated European, his teaching was simply astounding and something beyond their imagining. Many of them confessed that up to that time, their ignorance of the better things had rendered them stubborn and proud but that now their eyes were really being opened to the more serious things of life.\nFather Ricci wrote twenty-five tracts on different moral questions. These were pamphlets which the Chinese called Opinions and Sentences. They were read by some of his Chinese friends before they were published and met with their wholehearted approval.",
+    questionText: "What scientific subjects did Matteo Ricci first teach to the Chinese?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Geography", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Astronomy", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t2a-q3", topicId: "hist-em-eur-2", conceptId: "reaction-those-chinese-who-encountered-his",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 2 A Q3",
+    stem: "This is an edited extract from the journals of the Jesuit priest Matteo Ricci. Read it and answer the questions which follow.\n\nIt is distinctive of the Chinese that all their religious doctrine is spread by written books, rather than by the spoken word. Father Ricci was the first Jesuit to begin the study of Chinese literature.\nHe began by teaching the first principles of Geography and of Astronomy and, though in the beginning he taught nothing that was not known to an educated European, his teaching was simply astounding and something beyond their imagining. Many of them confessed that up to that time, their ignorance of the better things had rendered them stubborn and proud but that now their eyes were really being opened to the more serious things of life.\nFather Ricci wrote twenty-five tracts on different moral questions. These were pamphlets which the Chinese called Opinions and Sentences. They were read by some of his Chinese friends before they were published and met with their wholehearted approval.",
+    questionText: "What was the reaction of those Chinese who encountered his scientific teaching?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They were astounded/ It was beyond their imagining/ They admitted their ignorance had made them stubborn and proud/ It had opened their eyes", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t2a-q4", topicId: "hist-em-eur-2", conceptId: "did-chinese-his-writings-moral-questions",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 2 A Q4",
+    stem: "This is an edited extract from the journals of the Jesuit priest Matteo Ricci. Read it and answer the questions which follow.\n\nIt is distinctive of the Chinese that all their religious doctrine is spread by written books, rather than by the spoken word. Father Ricci was the first Jesuit to begin the study of Chinese literature.\nHe began by teaching the first principles of Geography and of Astronomy and, though in the beginning he taught nothing that was not known to an educated European, his teaching was simply astounding and something beyond their imagining. Many of them confessed that up to that time, their ignorance of the better things had rendered them stubborn and proud but that now their eyes were really being opened to the more serious things of life.\nFather Ricci wrote twenty-five tracts on different moral questions. These were pamphlets which the Chinese called Opinions and Sentences. They were read by some of his Chinese friends before they were published and met with their wholehearted approval.",
+    questionText: "What name did the Chinese give to his writings about moral questions?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Opinions and Sentences", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t2a-q5", topicId: "hist-em-eur-2", conceptId: "successful-jesuit-mission-china-reason",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 2 A Q5",
+    stem: "This is an edited extract from the journals of the Jesuit priest Matteo Ricci. Read it and answer the questions which follow.\n\nIt is distinctive of the Chinese that all their religious doctrine is spread by written books, rather than by the spoken word. Father Ricci was the first Jesuit to begin the study of Chinese literature.\nHe began by teaching the first principles of Geography and of Astronomy and, though in the beginning he taught nothing that was not known to an educated European, his teaching was simply astounding and something beyond their imagining. Many of them confessed that up to that time, their ignorance of the better things had rendered them stubborn and proud but that now their eyes were really being opened to the more serious things of life.\nFather Ricci wrote twenty-five tracts on different moral questions. These were pamphlets which the Chinese called Opinions and Sentences. They were read by some of his Chinese friends before they were published and met with their wholehearted approval.",
+    questionText: "How successful was the Jesuit mission to China? Give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid point as a measure of the success of the mission", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t2b", topicId: "hist-em-eur-2", conceptId: "catherine-medici-tycho-brahe-astronomy-close",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 2 B",
+    stem: "Religion and power: politics in the later 16th century, 1567-1609",
+    questionText: "Write a short paragraph on one of the following:\n1. Catherine de Medici.\n2. Tycho Brahe and astronomy.\n3. The close of the Council of Trent.\n4. The rise of Muscovy.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t2c", topicId: "hist-em-eur-2", conceptId: "role-did-admiral-coligny-play-french",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 2 C",
+    stem: "Religion and power: politics in the later 16th century, 1567-1609",
+    questionText: "Answer one of the following:\n1. What role did Admiral Coligny play in the French Wars of Religion?\n2. Why did Philip II send an Armada to England and what was the outcome?\n3. What were the causes of the decline of the port of Antwerp?\n4. How successful was Elizabeth I as ruler of England?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t3a-q1", topicId: "hist-em-eur-3", conceptId: "did-queen-christina-dislike-swedish-lutheranism",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 3 A Q1",
+    stem: "The following is an account of Queen Christina of Sweden and her interaction with Descartes, the French philosopher. Read it and answer the questions which follow.\n\nFrom an early age Queen Christina of Sweden found the narrow intolerance of Swedish Lutheranism unsympathetic and by 1648 she had lost her faith. “I no longer believe in the religion in which I was brought up,” she wrote.\nIn 1646, when she was already struggling with her spiritual crisis, she had been given a book written by the French philosopher, Descartes. His Catholicism greatly impressed her. They began a lengthy correspondence.\nIn 1649 she invited him to Stockholm. Descartes was disappointed on his arrival by his rather casual reception. Queen Christina seems to have disliked him when they actually met.\nDescartes was also very distressed by the bad weather. “I think men’s thoughts freeze here in winter, like the waters. I am not in my element here.” He survived the cold only a few months before dying of pneumonia. His influence over Christina lived on after him.",
+    questionText: "What did Queen Christina dislike about Swedish Lutheranism?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Its narrow intolerance", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t3a-q2", topicId: "hist-em-eur-3", conceptId: "did-queen-christina-write-her-religion",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 3 A Q2",
+    stem: "The following is an account of Queen Christina of Sweden and her interaction with Descartes, the French philosopher. Read it and answer the questions which follow.\n\nFrom an early age Queen Christina of Sweden found the narrow intolerance of Swedish Lutheranism unsympathetic and by 1648 she had lost her faith. “I no longer believe in the religion in which I was brought up,” she wrote.\nIn 1646, when she was already struggling with her spiritual crisis, she had been given a book written by the French philosopher, Descartes. His Catholicism greatly impressed her. They began a lengthy correspondence.\nIn 1649 she invited him to Stockholm. Descartes was disappointed on his arrival by his rather casual reception. Queen Christina seems to have disliked him when they actually met.\nDescartes was also very distressed by the bad weather. “I think men’s thoughts freeze here in winter, like the waters. I am not in my element here.” He survived the cold only a few months before dying of pneumonia. His influence over Christina lived on after him.",
+    questionText: "What did Queen Christina write about her religion in 1648?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "‘I no longer believe in the religion in which I was brought up’/ That she had lost her faith", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t3a-q3", topicId: "hist-em-eur-3", conceptId: "impressed-queen-christina-descartes",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 3 A Q3",
+    stem: "The following is an account of Queen Christina of Sweden and her interaction with Descartes, the French philosopher. Read it and answer the questions which follow.\n\nFrom an early age Queen Christina of Sweden found the narrow intolerance of Swedish Lutheranism unsympathetic and by 1648 she had lost her faith. “I no longer believe in the religion in which I was brought up,” she wrote.\nIn 1646, when she was already struggling with her spiritual crisis, she had been given a book written by the French philosopher, Descartes. His Catholicism greatly impressed her. They began a lengthy correspondence.\nIn 1649 she invited him to Stockholm. Descartes was disappointed on his arrival by his rather casual reception. Queen Christina seems to have disliked him when they actually met.\nDescartes was also very distressed by the bad weather. “I think men’s thoughts freeze here in winter, like the waters. I am not in my element here.” He survived the cold only a few months before dying of pneumonia. His influence over Christina lived on after him.",
+    questionText: "What impressed Queen Christina about Descartes?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "His Catholicism", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t3a-q4", topicId: "hist-em-eur-3", conceptId: "distressed-descartes-sweden",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 3 A Q4",
+    stem: "The following is an account of Queen Christina of Sweden and her interaction with Descartes, the French philosopher. Read it and answer the questions which follow.\n\nFrom an early age Queen Christina of Sweden found the narrow intolerance of Swedish Lutheranism unsympathetic and by 1648 she had lost her faith. “I no longer believe in the religion in which I was brought up,” she wrote.\nIn 1646, when she was already struggling with her spiritual crisis, she had been given a book written by the French philosopher, Descartes. His Catholicism greatly impressed her. They began a lengthy correspondence.\nIn 1649 she invited him to Stockholm. Descartes was disappointed on his arrival by his rather casual reception. Queen Christina seems to have disliked him when they actually met.\nDescartes was also very distressed by the bad weather. “I think men’s thoughts freeze here in winter, like the waters. I am not in my element here.” He survived the cold only a few months before dying of pneumonia. His influence over Christina lived on after him.",
+    questionText: "What distressed Descartes in Sweden?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The bad weather", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t3a-q5", topicId: "hist-em-eur-3", conceptId: "did-sweden-come-rising-power-time",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 3 A Q5",
+    stem: "The following is an account of Queen Christina of Sweden and her interaction with Descartes, the French philosopher. Read it and answer the questions which follow.\n\nFrom an early age Queen Christina of Sweden found the narrow intolerance of Swedish Lutheranism unsympathetic and by 1648 she had lost her faith. “I no longer believe in the religion in which I was brought up,” she wrote.\nIn 1646, when she was already struggling with her spiritual crisis, she had been given a book written by the French philosopher, Descartes. His Catholicism greatly impressed her. They began a lengthy correspondence.\nIn 1649 she invited him to Stockholm. Descartes was disappointed on his arrival by his rather casual reception. Queen Christina seems to have disliked him when they actually met.\nDescartes was also very distressed by the bad weather. “I think men’s thoughts freeze here in winter, like the waters. I am not in my element here.” He survived the cold only a few months before dying of pneumonia. His influence over Christina lived on after him.",
+    questionText: "How did Sweden come to be a rising power at this time?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid point about Sweden’s rising power", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t3b", topicId: "hist-em-eur-3", conceptId: "cardinal-richelieu-anglicans-puritans-witch-hunting",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 3 B",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "Write a short paragraph on one of the following:\n1. Cardinal Richelieu.\n2. Anglicans and Puritans.\n3. Witch-hunting.\n4. The revolt of the Catalans.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t3c", topicId: "hist-em-eur-3", conceptId: "important-netherlands-its-empire-asia-galileo",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 3 C",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "Answer one of the following:\n1. How important to the Netherlands was its empire in Asia?\n2. Why was Galileo tried by the Inquisition and what was the outcome?\n3. How did Albrecht von Wallenstein influence the course of the Thirty Years War?\n4. What did one or more of the following contribute to culture: Claudio Monteverdi; Peter Paul Rubens; Gian Lorenzo Bernini?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t4a-q1", topicId: "hist-em-eur-4", conceptId: "did-archbishop-novgorod-peter-great-samson",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 4 A Q1",
+    stem: "The Archbishop of Novgorod spoke at the funeral of Peter the Great and gave his assessment of the Tsar’s reign. Read the following edited extract from the speech and answer the questions which follow.\n\nHe was your Samson, O Russia! He found you with little strength and left you strong as a rock. He carried out enterprises hitherto unknown in Russia – the building and launching of ships. He was your Moses, O Russia! Are not his laws the unbreakable chains repressing crime? O Russia! He was your Solomon, receiving from the Lord abundance of wisdom and reason.\nDo we not have proof in the new intellectual disciplines that he introduced and in his efforts to instruct his people in knowledge, inventions and techniques unknown to us? And what of the ranks and titles, the civil laws, the well-chosen regulations regarding social life, the new customs and rules of conduct, the improvements introduced into our external appearance?\nWe look at ourselves and are astonished to see our fatherland visibly changed and become incomparably superior to what it was.",
+    questionText: "How did the Archbishop of Novgorod compare Peter the Great to Samson?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He found you (Russia) with little strength and left you strong as a rock", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t4a-q2", topicId: "hist-em-eur-4", conceptId: "new-enterprises-did-peter-great-introduce",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 4 A Q2",
+    stem: "The Archbishop of Novgorod spoke at the funeral of Peter the Great and gave his assessment of the Tsar’s reign. Read the following edited extract from the speech and answer the questions which follow.\n\nHe was your Samson, O Russia! He found you with little strength and left you strong as a rock. He carried out enterprises hitherto unknown in Russia – the building and launching of ships. He was your Moses, O Russia! Are not his laws the unbreakable chains repressing crime? O Russia! He was your Solomon, receiving from the Lord abundance of wisdom and reason.\nDo we not have proof in the new intellectual disciplines that he introduced and in his efforts to instruct his people in knowledge, inventions and techniques unknown to us? And what of the ranks and titles, the civil laws, the well-chosen regulations regarding social life, the new customs and rules of conduct, the improvements introduced into our external appearance?\nWe look at ourselves and are astonished to see our fatherland visibly changed and become incomparably superior to what it was.",
+    questionText: "What new enterprises did Peter the Great introduce into Russia?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Shipbuilding", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t4a-q3", topicId: "hist-em-eur-4", conceptId: "did-archbishop-peter-great-moses",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 4 A Q3",
+    stem: "The Archbishop of Novgorod spoke at the funeral of Peter the Great and gave his assessment of the Tsar’s reign. Read the following edited extract from the speech and answer the questions which follow.\n\nHe was your Samson, O Russia! He found you with little strength and left you strong as a rock. He carried out enterprises hitherto unknown in Russia – the building and launching of ships. He was your Moses, O Russia! Are not his laws the unbreakable chains repressing crime? O Russia! He was your Solomon, receiving from the Lord abundance of wisdom and reason.\nDo we not have proof in the new intellectual disciplines that he introduced and in his efforts to instruct his people in knowledge, inventions and techniques unknown to us? And what of the ranks and titles, the civil laws, the well-chosen regulations regarding social life, the new customs and rules of conduct, the improvements introduced into our external appearance?\nWe look at ourselves and are astonished to see our fatherland visibly changed and become incomparably superior to what it was.",
+    questionText: "How did the Archbishop compare Peter the Great to Moses?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "His laws are the unbreakable chain repressing crime", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t4a-q4", topicId: "hist-em-eur-4", conceptId: "did-peter-great-change-social-life",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 4 A Q4",
+    stem: "The Archbishop of Novgorod spoke at the funeral of Peter the Great and gave his assessment of the Tsar’s reign. Read the following edited extract from the speech and answer the questions which follow.\n\nHe was your Samson, O Russia! He found you with little strength and left you strong as a rock. He carried out enterprises hitherto unknown in Russia – the building and launching of ships. He was your Moses, O Russia! Are not his laws the unbreakable chains repressing crime? O Russia! He was your Solomon, receiving from the Lord abundance of wisdom and reason.\nDo we not have proof in the new intellectual disciplines that he introduced and in his efforts to instruct his people in knowledge, inventions and techniques unknown to us? And what of the ranks and titles, the civil laws, the well-chosen regulations regarding social life, the new customs and rules of conduct, the improvements introduced into our external appearance?\nWe look at ourselves and are astonished to see our fatherland visibly changed and become incomparably superior to what it was.",
+    questionText: "How did Peter the Great change social life according to the Archbishop?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Ranks and titles","Civil laws","New social regulations","New customs and rules"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t4a-q5", topicId: "hist-em-eur-4", conceptId: "did-peter-great-move-his-capital",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 4 A Q5",
+    stem: "The Archbishop of Novgorod spoke at the funeral of Peter the Great and gave his assessment of the Tsar’s reign. Read the following edited extract from the speech and answer the questions which follow.\n\nHe was your Samson, O Russia! He found you with little strength and left you strong as a rock. He carried out enterprises hitherto unknown in Russia – the building and launching of ships. He was your Moses, O Russia! Are not his laws the unbreakable chains repressing crime? O Russia! He was your Solomon, receiving from the Lord abundance of wisdom and reason.\nDo we not have proof in the new intellectual disciplines that he introduced and in his efforts to instruct his people in knowledge, inventions and techniques unknown to us? And what of the ranks and titles, the civil laws, the well-chosen regulations regarding social life, the new customs and rules of conduct, the improvements introduced into our external appearance?\nWe look at ourselves and are astonished to see our fatherland visibly changed and become incomparably superior to what it was.",
+    questionText: "Why did Peter the Great move his capital from Moscow?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t4b", topicId: "hist-em-eur-4", conceptId: "bastien-prestre-vauban-jean-baptiste-colbert",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 4 B",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "Write a short paragraph on one of the following:\n1. Sébastien le Prestre de Vauban.\n2. Jean Baptiste Colbert.\n3. The Huguenots.\n4. The Grand Tour.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,25] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t4c", topicId: "hist-em-eur-4", conceptId: "influence-court-versailles-life-europe-did",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 4 C",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "Answer one of the following:\n1. What influence had the court of Versailles on life in Europe?\n2. Why did Louis XIV engage in wars against the Dutch, 1660-1697, and what was the outcome of these wars?\n3. What did Isaac Newton and/or Gottfried Wilhelm Leibnitz contribute to scientific knowledge?\n4. What were the aims and achievements of the (English) East India Company in this period?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,25] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t5a-q1", topicId: "hist-em-eur-5", conceptId: "disease-general-fatal-england-lady-montague",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 5 A Q1",
+    stem: "Lady Mary Wortley Montague wrote from Adrianople (1 April 1718) to her friend in England. She described the way the Turks inoculated against smallpox. She may have influenced later pioneers like Edward Jenner. Read the following edited extract and answer the questions which follow.\n\nThe smallpox, so fatal and so general among us, is here entirely harmless, by an invention of ‘ingrafting’. There is a set of old women who perform the operation, every autumn, in the month of September, when the great heat is abated.\nPeople send to one another to know if any of their family has a mind to have the smallpox. They make parties for this purpose, 15 or 16 together. The old woman comes with a nutshell full of the matter of the best sort of smallpox, and asks what vein you please to have opened. She opens it with a large needle and puts into the vein as much matter as can lie upon the head of her needle, and after that, binds up the little wound, with a hollow bit of shell; and in this manner opens four or five veins.\nThe children play together the rest of the day and are in perfect health to the eighth day. Then the fever begins to seize them, and they keep to their beds for two days. In eight more days they are as well as before their illness. There is no example of anyone who has died as a result.",
+    questionText: "What disease was general and fatal in England according to Lady Montague?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Smallpox", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t5a-q2", topicId: "hist-em-eur-5", conceptId: "invention-made-disease-harmless-turkey-lady",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 5 A Q2",
+    stem: "Lady Mary Wortley Montague wrote from Adrianople (1 April 1718) to her friend in England. She described the way the Turks inoculated against smallpox. She may have influenced later pioneers like Edward Jenner. Read the following edited extract and answer the questions which follow.\n\nThe smallpox, so fatal and so general among us, is here entirely harmless, by an invention of ‘ingrafting’. There is a set of old women who perform the operation, every autumn, in the month of September, when the great heat is abated.\nPeople send to one another to know if any of their family has a mind to have the smallpox. They make parties for this purpose, 15 or 16 together. The old woman comes with a nutshell full of the matter of the best sort of smallpox, and asks what vein you please to have opened. She opens it with a large needle and puts into the vein as much matter as can lie upon the head of her needle, and after that, binds up the little wound, with a hollow bit of shell; and in this manner opens four or five veins.\nThe children play together the rest of the day and are in perfect health to the eighth day. Then the fever begins to seize them, and they keep to their beds for two days. In eight more days they are as well as before their illness. There is no example of anyone who has died as a result.",
+    questionText: "What invention made this disease harmless in Turkey, according to Lady Montague?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ingrafting/ Inoculation", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t5a-q3", topicId: "hist-em-eur-5", conceptId: "who-inoculates-children-against-smallpox-turkey",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 5 A Q3",
+    stem: "Lady Mary Wortley Montague wrote from Adrianople (1 April 1718) to her friend in England. She described the way the Turks inoculated against smallpox. She may have influenced later pioneers like Edward Jenner. Read the following edited extract and answer the questions which follow.\n\nThe smallpox, so fatal and so general among us, is here entirely harmless, by an invention of ‘ingrafting’. There is a set of old women who perform the operation, every autumn, in the month of September, when the great heat is abated.\nPeople send to one another to know if any of their family has a mind to have the smallpox. They make parties for this purpose, 15 or 16 together. The old woman comes with a nutshell full of the matter of the best sort of smallpox, and asks what vein you please to have opened. She opens it with a large needle and puts into the vein as much matter as can lie upon the head of her needle, and after that, binds up the little wound, with a hollow bit of shell; and in this manner opens four or five veins.\nThe children play together the rest of the day and are in perfect health to the eighth day. Then the fever begins to seize them, and they keep to their beds for two days. In eight more days they are as well as before their illness. There is no example of anyone who has died as a result.",
+    questionText: "Who inoculates children against smallpox in Turkey and when is it done, according to Lady Montague?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Old women", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "In September", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t5a-q4", topicId: "hist-em-eur-5", conceptId: "inoculation-carried-out",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 5 A Q4",
+    stem: "Lady Mary Wortley Montague wrote from Adrianople (1 April 1718) to her friend in England. She described the way the Turks inoculated against smallpox. She may have influenced later pioneers like Edward Jenner. Read the following edited extract and answer the questions which follow.\n\nThe smallpox, so fatal and so general among us, is here entirely harmless, by an invention of ‘ingrafting’. There is a set of old women who perform the operation, every autumn, in the month of September, when the great heat is abated.\nPeople send to one another to know if any of their family has a mind to have the smallpox. They make parties for this purpose, 15 or 16 together. The old woman comes with a nutshell full of the matter of the best sort of smallpox, and asks what vein you please to have opened. She opens it with a large needle and puts into the vein as much matter as can lie upon the head of her needle, and after that, binds up the little wound, with a hollow bit of shell; and in this manner opens four or five veins.\nThe children play together the rest of the day and are in perfect health to the eighth day. Then the fever begins to seize them, and they keep to their beds for two days. In eight more days they are as well as before their illness. There is no example of anyone who has died as a result.",
+    questionText: "How is the inoculation carried out?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A vein is opened with a large needle", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "A pinhead of smallpox matter is inserted", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t5a-q5", topicId: "hist-em-eur-5", conceptId: "there-much-disease-time",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 5 A Q5",
+    stem: "Lady Mary Wortley Montague wrote from Adrianople (1 April 1718) to her friend in England. She described the way the Turks inoculated against smallpox. She may have influenced later pioneers like Edward Jenner. Read the following edited extract and answer the questions which follow.\n\nThe smallpox, so fatal and so general among us, is here entirely harmless, by an invention of ‘ingrafting’. There is a set of old women who perform the operation, every autumn, in the month of September, when the great heat is abated.\nPeople send to one another to know if any of their family has a mind to have the smallpox. They make parties for this purpose, 15 or 16 together. The old woman comes with a nutshell full of the matter of the best sort of smallpox, and asks what vein you please to have opened. She opens it with a large needle and puts into the vein as much matter as can lie upon the head of her needle, and after that, binds up the little wound, with a hollow bit of shell; and in this manner opens four or five veins.\nThe children play together the rest of the day and are in perfect health to the eighth day. Then the fever begins to seize them, and they keep to their beds for two days. In eight more days they are as well as before their illness. There is no example of anyone who has died as a result.",
+    questionText: "Why was there so much disease at this time?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason why there was so much disease", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t5b", topicId: "hist-em-eur-5", conceptId: "maria-theresa-mercantilism-road-canal-building",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 5 B",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "Write a short paragraph on one of the following:\n1. Maria Theresa.\n2. Mercantilism.\n3. Road and canal building.\n4. Voltaire.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,25] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t5c", topicId: "hist-em-eur-5", conceptId: "circumstances-led-boston-tea-party-1773",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 5 C",
+    stem: "Establishing empires, 1715-1775",
+    questionText: "Answer one of the following:\n1. What circumstances led to the Boston Tea Party, 1773?\n2. How influential was the Encyclopédie?\n3. How did Catherine the Great and/or Frederick the Great influence events in Europe?\n4. Who established the West Indies slave plantations and how were they organised?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,25] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t6a-q1", topicId: "hist-em-eur-6", conceptId: "did-king-louis-xvi-arrive-place",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 6 A Q1",
+    stem: "On 21 January 1793 King Louis XVI went to the scaffold accompanied by Abbé Henry Edgeworth, an Irish priest resident in France. Read the following edited extract from his account and answer the questions which follow.\n\nAs soon as the king left the carriage, three guards surrounded him and would have taken off his clothes, but he repulsed them with haughtiness. The guards surrounded him again, and would have seized his hands. “What are you attempting?” said the king, drawing back his hands. “To bind you,” answered the wretches. “To bind me,” said the king with an indignant air. “No! I shall never consent to that: do what you have been ordered, but you shall never bind me.”\nThe path leading to the scaffold was extremely rough and difficult to pass; the king was obliged to lean on my arm, and from the slowness with which he proceeded, I feared for a moment that his courage might fail; but when he arrived at the last step, I felt that he suddenly let go my arm, and I saw him cross with a firm foot the breadth of the whole scaffold; silence, and in a loud voice I heard him pronounce distinctly these memorable words: ‘I die innocent of all the crimes laid to my charge; I pardon those who have occasioned my death; and I pray to God that my blood which you are going to shed may never be visited on France.’",
+    questionText: "How did King Louis XVI arrive at the place of execution?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By carriage", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t6a-q2", topicId: "hist-em-eur-6", conceptId: "did-king-not-consent",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 6 A Q2",
+    stem: "On 21 January 1793 King Louis XVI went to the scaffold accompanied by Abbé Henry Edgeworth, an Irish priest resident in France. Read the following edited extract from his account and answer the questions which follow.\n\nAs soon as the king left the carriage, three guards surrounded him and would have taken off his clothes, but he repulsed them with haughtiness. The guards surrounded him again, and would have seized his hands. “What are you attempting?” said the king, drawing back his hands. “To bind you,” answered the wretches. “To bind me,” said the king with an indignant air. “No! I shall never consent to that: do what you have been ordered, but you shall never bind me.”\nThe path leading to the scaffold was extremely rough and difficult to pass; the king was obliged to lean on my arm, and from the slowness with which he proceeded, I feared for a moment that his courage might fail; but when he arrived at the last step, I felt that he suddenly let go my arm, and I saw him cross with a firm foot the breadth of the whole scaffold; silence, and in a loud voice I heard him pronounce distinctly these memorable words: ‘I die innocent of all the crimes laid to my charge; I pardon those who have occasioned my death; and I pray to God that my blood which you are going to shed may never be visited on France.’",
+    questionText: "To what did the king not consent?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To be bound", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t6a-q3", topicId: "hist-em-eur-6", conceptId: "type-path-led-scaffold",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 6 A Q3",
+    stem: "On 21 January 1793 King Louis XVI went to the scaffold accompanied by Abbé Henry Edgeworth, an Irish priest resident in France. Read the following edited extract from his account and answer the questions which follow.\n\nAs soon as the king left the carriage, three guards surrounded him and would have taken off his clothes, but he repulsed them with haughtiness. The guards surrounded him again, and would have seized his hands. “What are you attempting?” said the king, drawing back his hands. “To bind you,” answered the wretches. “To bind me,” said the king with an indignant air. “No! I shall never consent to that: do what you have been ordered, but you shall never bind me.”\nThe path leading to the scaffold was extremely rough and difficult to pass; the king was obliged to lean on my arm, and from the slowness with which he proceeded, I feared for a moment that his courage might fail; but when he arrived at the last step, I felt that he suddenly let go my arm, and I saw him cross with a firm foot the breadth of the whole scaffold; silence, and in a loud voice I heard him pronounce distinctly these memorable words: ‘I die innocent of all the crimes laid to my charge; I pardon those who have occasioned my death; and I pray to God that my blood which you are going to shed may never be visited on France.’",
+    questionText: "What type of path led to the scaffold?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Extremely rough/ Difficult to pass", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t6a-q4", topicId: "hist-em-eur-6", conceptId: "word-suggests-louis-forgave-his-executioners",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 6 A Q4",
+    stem: "On 21 January 1793 King Louis XVI went to the scaffold accompanied by Abbé Henry Edgeworth, an Irish priest resident in France. Read the following edited extract from his account and answer the questions which follow.\n\nAs soon as the king left the carriage, three guards surrounded him and would have taken off his clothes, but he repulsed them with haughtiness. The guards surrounded him again, and would have seized his hands. “What are you attempting?” said the king, drawing back his hands. “To bind you,” answered the wretches. “To bind me,” said the king with an indignant air. “No! I shall never consent to that: do what you have been ordered, but you shall never bind me.”\nThe path leading to the scaffold was extremely rough and difficult to pass; the king was obliged to lean on my arm, and from the slowness with which he proceeded, I feared for a moment that his courage might fail; but when he arrived at the last step, I felt that he suddenly let go my arm, and I saw him cross with a firm foot the breadth of the whole scaffold; silence, and in a loud voice I heard him pronounce distinctly these memorable words: ‘I die innocent of all the crimes laid to my charge; I pardon those who have occasioned my death; and I pray to God that my blood which you are going to shed may never be visited on France.’",
+    questionText: "What word in the extract suggests that Louis forgave his executioners?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "‘Pardon’", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t6a-q5", topicId: "hist-em-eur-6", conceptId: "main-cause-french-revolution",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 6 A Q5",
+    stem: "On 21 January 1793 King Louis XVI went to the scaffold accompanied by Abbé Henry Edgeworth, an Irish priest resident in France. Read the following edited extract from his account and answer the questions which follow.\n\nAs soon as the king left the carriage, three guards surrounded him and would have taken off his clothes, but he repulsed them with haughtiness. The guards surrounded him again, and would have seized his hands. “What are you attempting?” said the king, drawing back his hands. “To bind you,” answered the wretches. “To bind me,” said the king with an indignant air. “No! I shall never consent to that: do what you have been ordered, but you shall never bind me.”\nThe path leading to the scaffold was extremely rough and difficult to pass; the king was obliged to lean on my arm, and from the slowness with which he proceeded, I feared for a moment that his courage might fail; but when he arrived at the last step, I felt that he suddenly let go my arm, and I saw him cross with a firm foot the breadth of the whole scaffold; silence, and in a loud voice I heard him pronounce distinctly these memorable words: ‘I die innocent of all the crimes laid to my charge; I pardon those who have occasioned my death; and I pray to God that my blood which you are going to shed may never be visited on France.’",
+    questionText: "What was the main cause of the French Revolution?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid cause of the French Revolution", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2014 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t6b", topicId: "hist-em-eur-6", conceptId: "abolition-slave-trade-mary-wollstonecraft-emancipation",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 6 B",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "Write a short paragraph on one of the following:\n1. The abolition of the slave trade.\n2. Mary Wollstonecraft.\n3. Emancipation of the Jews.\n4. Ludwig van Beethoven.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [20,21,25] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2014 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2014-ol-em-s3t6c", topicId: "hist-em-eur-6", conceptId: "purpose-committee-public-safety-did-set",
+    section: "3", questionRef: "2014 OL Early Modern Section 3 Topic 6 C",
+    stem: "Empires in revolution, 1775-1815",
+    questionText: "Answer one of the following:\n1. What was the purpose of the Committee of Public Safety and how did it set about achieving its aims?\n2. How did the Civil Constitution of the Clergy affect the French Revolution?\n3. What lasting reforms did Napoleon introduce in France?\n4. What factors gave rise to the growth of Manchester?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [20,21,25] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2015, level: "ordinary",
     paperFileid: "LC004GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",

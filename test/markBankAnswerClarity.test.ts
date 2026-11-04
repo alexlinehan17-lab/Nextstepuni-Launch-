@@ -484,7 +484,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(12);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(123);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(131);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['Chapel bell', 'convent chimes', 'organ'],
@@ -501,8 +501,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Liverpool', 'Manchester', 'Birmingham', 'Leeds'],
       ['Mercilessness', 'ruthlessness and calculation', 'hot- and cold-bloodiness 1'],
       ['Moluccas', 'Java', 'Malaya', 'India', 'Ceylon', 'Taiwan'],
+      ['Nantes', 'Bordeaux', 'Lisbon', 'Cadiz'],
       ['On railways', 'as news vendors', 'bootblacks', 'lamplighters', 'barbers'],
       ['Pheasant', 'partridge', 'grouse', 'hares'],
+      ['Ranks and titles', 'Civil laws', 'New social regulations', 'New customs and rules'],
       ['Salt fish', 'hides', 'cattle', 'hobby-horses'],
       ['Stoking the fire', 'Fetching water', 'Bringing in stacks of bread'],
       ['Tapestries', 'Mirrors', 'Candle holders', 'Upholstered furniture'],

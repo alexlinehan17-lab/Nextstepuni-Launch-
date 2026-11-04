@@ -143,6 +143,12 @@ MISPRINTS = {
     # Topic 6 B (page 14), both checked on the rendered page. Every other
     # topic prints "B (30 marks)".
     (2015, 'ol', 'em'): {'30 marks)': 'B (30 marks)', '(30 marks)': 'B (30 marks)'},
+    # 2014 Ordinary Early Modern heads its documents question "Europe and the
+    # wider world: Topic2" on page 2, while its cover sets "Documents-based
+    # question (Ireland: Topic 2)", Section 2 offers Ireland Topics 1, 3, 4, 5,
+    # 6, Section 3 prints Europe Topic 2 as a unit of its own, and the case
+    # study is Meiler Magrath. The Irish edition prints "Éire: Topaic 2".
+    (2014, 'ol', 'em'): {'Europe and the wider world: Topic2': 'Ireland: Topic 2'},
 }
 EXTRA = re.compile(r'^Answer the questions below if you are following the '
                    r'Alternative Instructions', re.I)
