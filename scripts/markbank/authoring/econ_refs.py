@@ -167,6 +167,9 @@ HAND_CHECKED = {
     'econ-2013-hl-sb-q2-c-i',         # 2013 HL p4: "(i) Explain the term ‘competitive advertising’." (five words)
     'econ-2013-ol-sb-q4-b-i',         # 2013 OL p6: "(i) Explain the term 'VAT'." (four words)
     'econ-2013-ol-sb-q7-c-ii',        # 2013 OL p8: "(ii) Name one other Irish MNC." (five words)
+    'econ-2012-hl-sa-q5-a',           # 2012 HL p2: "(a) Explain this statement." (three words; the stem carries the statement)
+    'econ-2012-hl-sa-q6-ii',          # 2012 HL p3: "(ii) The size of the Multiplier." (five words)
+    'econ-2012-hl-sb-q8-c-i',         # 2012 HL p7: "(i) Explain the above statement." (four words; the stem carries the statement)
 }
 
 

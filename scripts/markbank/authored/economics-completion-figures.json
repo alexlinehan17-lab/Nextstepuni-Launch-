@@ -7435,5 +7435,335 @@
     },
     "lettersVisible": [],
     "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-scheme-p06-q4-ticks.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 HL Section A Q4",
+    "description": "The marking scheme’s completed table: a tick for Repetitive tasks, workers are bored under (b) Diseconomy of Scale, Internal; for R&D costs are shared by many firms under (a) Economy of Scale, External; for Discounts are available for bulk buying under (a) Economy of Scale, Internal; and for Inadequate infrastructure under (b) Diseconomy of Scale, External.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034ALP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        60,
+        397,
+        540,
+        500
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-scheme-p07-q6i-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 HL Section A Q6(i)",
+    "description": "The marking scheme’s working for the MPS, two ways. Savings = Y – C: Year 1 €24,000 – €15,000 = €9,000, Year 2 €34,000 – €22,000 = €12,000, so MPS = €3,000 over €10,000 = 0.3 or 30%. Or the MPC: the rise in C €7,000 over the rise in Y €10,000 = 0.7 or 70%, and MPS = 1 – 0.7 = 0.3.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034ALP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        40,
+        176,
+        540,
+        343
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-scheme-p07-q6ii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 HL Section A Q6(ii)",
+    "description": "The marking scheme’s working for the multiplier. Increase in imports: €12,000 – €7,000 = €5,000; MPM = €5,000 over €10,000 = 0.5 or 50%. Method 1: 1 over (MPS + MPM) = 1 over (0.3 + 0.5) = 1 over 0.8 = 1.25. Method 2: MPC = 1 – MPS = 0.7, then 1 over (1 – (MPC – MPM)) = 1 over (1 – (0.7 – 0.5)) = 1 over 0.8 = 1.25.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034ALP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        40,
+        385,
+        540,
+        690
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-scheme-p11-q1b-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 HL Section B Q1(b)",
+    "description": "The marking scheme’s table for the three products. Product A (-2.8): decrease price; elastic; the % rise in demand exceeds the % fall in price; total revenue will increase. Product B (-1.0): leave price unchanged; unit elastic; the % changes in demand and price are equal; revenue unchanged. Product C (-0.5): increase price; inelastic; the % rise in price exceeds the % fall in demand; revenue will increase. Beneath each, its demand curve: shallow for A, at 45 degrees for B, steep for C, each marked with the old and new price and quantity; 10 marks each.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034ALP000EV.pdf",
+      "page": 11,
+      "rectPoints": [
+        30,
+        196,
+        560,
+        620
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-scheme-p14-q2bi-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 HL Section B Q2(b)(i)",
+    "description": "The marking scheme’s diagram: P against Q, a horizontal D = AR = MR line at P1, a U-shaped AC curve and an MC curve rising through it. MC cuts D = AR = MR at A; a line from A drops to Q1, passing B on the AC curve below.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034ALP000EV.pdf",
+      "page": 14,
+      "rectPoints": [
+        60,
+        155,
+        590,
+        440
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-scheme-p15-q2bii-diagrams.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 HL Section B Q2(b)(ii)",
+    "description": "The marking scheme’s two diagrams. Market: P against Q, a falling D, supply shifting right from S1 to S2 (an arrow), the price falling from P1 to P2 (an arrow down). Firm: P against Q, the new D = AR = MR line at P2 touching the lowest point of the U-shaped AC curve at E, where MC crosses it; a line drops from E to Q2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034ALP000EV.pdf",
+      "page": 15,
+      "rectPoints": [
+        28,
+        130,
+        575,
+        380
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-scheme-p21-q4ai-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 HL Section B Q4(a)(i)",
+    "description": "The marking scheme’s diagram: C against Q, a U-shaped LRAC curve and a smaller U-shaped SRAC curve touching it from above near its left end.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034ALP000EV.pdf",
+      "page": 21,
+      "rectPoints": [
+        28,
+        118,
+        560,
+        325
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-scheme-p21-q4aii-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 HL Section B Q4(a)(ii)",
+    "description": "The marking scheme’s diagram: C against Q, a U-shaped AC curve and an MC curve that falls, turns and rises steeply, cutting AC at its lowest point.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034ALP000EV.pdf",
+      "page": 21,
+      "rectPoints": [
+        28,
+        503,
+        440,
+        675
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-scheme-p23-q4ci-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 HL Section B Q4(c)(i)",
+    "description": "The marking scheme’s short-run working in euro: Raw Materials 2,000; Labour 1,600; Total variable costs 3,600, over 2; Minimum price per boat 1,800.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034ALP000EV.pdf",
+      "page": 23,
+      "rectPoints": [
+        125,
+        245,
+        395,
+        346
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-scheme-p23-q4cii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 HL Section B Q4(c)(ii)",
+    "description": "The marking scheme’s long-run working in euro: Raw Materials 2,000; Labour 1,600; Rent 1,200; Normal profit 1,000; Total costs 5,800, over 2; Minimum price per boat 2,900.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034ALP000EV.pdf",
+      "page": 23,
+      "rectPoints": [
+        125,
+        510,
+        395,
+        642
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-scheme-p32-q7aiii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2012 HL Section B Q7(a)(iii)",
+    "description": "The marking scheme’s working. UK: 1 unit of Food is the equivalent of 0.25 units of clothing; 1 unit of Clothing of 4 units of food. China: 1 unit of Food is the equivalent of 0.33 units of clothing; 1 item of Clothing of 3 units of food. So the possible terms of trade for FOOD lie between 0.25 and 0.3 units of clothing, and for CLOTHING between 4 and 3 units of food.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2012/LC034ALP000EV.pdf",
+      "page": 32,
+      "rectPoints": [
+        28,
+        450,
+        560,
+        688
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-paper-p02-q4-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2012 HL Section A Q4",
+    "description": "A table to tick: four statements (Repetitive tasks, workers are bored; R&D costs are shared by many firms; Discounts are available for bulk buying; Inadequate infrastructure) against (a) Economy of Scale, Internal and External, and (b) Diseconomy of Scale, Internal and External.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2012/LC034ALP000EV.pdf",
+      "page": 2,
+      "rectPoints": [
+        70,
+        483,
+        560,
+        594
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-paper-p03-q6-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2012 HL Section A Q6",
+    "description": "A table: Year 1, National Income €24,000, Consumption €15,000, Investment €6,000, Exports €10,000, Imports €7,000; Year 2, National Income €34,000, Consumption €22,000, Investment €8,000, Exports €16,000, Imports €12,000.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2012/LC034ALP000EV.pdf",
+      "page": 3,
+      "rectPoints": [
+        70,
+        47,
+        545,
+        97
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-paper-p06-q5a-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2012 HL Section B Q5(a)",
+    "description": "A table: world population of 1 to 7 billion reached in 1804, 1927, 1960, 1974, 1987, 1999 and 2012, the years elapsed between them -, 123, 33, 14, 13, 12 and 13.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2012/LC034ALP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        68,
+        117,
+        552,
+        178
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2012-HL-paper-p07-q7a-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2012 HL Section B Q7(a)",
+    "description": "A table of output per worker per week: United Kingdom, Food 40 units and Clothing 10 units; China, Food 60 units and Clothing 20 units; Total Output, Food 100 units and Clothing 30 units.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2012/LC034ALP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        100,
+        86,
+        450,
+        178
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
   }
 ]

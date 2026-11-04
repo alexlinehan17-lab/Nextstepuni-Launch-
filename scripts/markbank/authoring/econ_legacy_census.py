@@ -64,6 +64,18 @@ CROSSREF_AFTER = re.compile(r'^\s*(?:,|above\b|\)|and\b|or\b)')
 CROSSREF_BEFORE = re.compile(r'\b(?:part|parts|Question|question)\s*$')
 UNDERSCORES = re.compile(r'_{3,}')
 INLINE_NEXT = re.compile(r'\band\s+\(([b-h])\)\s+(?=[A-Z])')
+# The next roman printed INSIDE the line it shares with the open one, after
+# the open roman's question mark: 2012 HL Section B Q4(c) sets "(i) in the
+# short run?     (ii) in the long run?" on one line, two asks the scheme prices
+# apart (15 and 10).
+INLINE_NEXT_ROMAN = re.compile(r'\?\s+\((i{1,3}|iv|vi{0,3}|ix|x)\)\s+(?=\S)')
+# A letter that CONTINUES a sentence labels something the ask names, not a
+# part: 2012 HL Section A Q4 asks "whether it is an internal or external", the
+# line breaking before "(a) economy of scale or (b) diseconomy of scale", and
+# its table repeats both letters as column heads. A part's letter opens its
+# ask with a capital; this one runs on in lower case. Its letters stay labels
+# for the rest of the question.
+LABEL_LETTERS = re.compile(r'\(([a-h])\)\s+(?=[a-z])')
 # A letter whose ask chooses among the romans printed beneath it: "Outline the
 # key contributions ... by any three of the following economists: (i) Adam
 # Smith (ii) Milton Friedman ..." (2017 HL Section B Q7(c)). The romans are the
@@ -135,6 +147,7 @@ def census_legacy(year, level, path=None):
     q_marks, part_marks = {}, {}
     section = q = letter = roman = None
     prev_text = ''
+    labels = {}         # (section, q) -> letters printed as labels inside a sentence
 
     def key():
         return (section, q, letter, roman)
@@ -171,6 +184,9 @@ def census_legacy(year, level, path=None):
             after = rest[m.end():]
             if CROSSREF_AFTER.match(after) or (rest is text and CROSSREF_BEFORE.search(prev_text)):
                 break
+            if lm and (LABEL_LETTERS.match(rest) or lm.group(1) in labels.get((section, q), ())):
+                labels.setdefault((section, q), set()).update(LABEL_LETTERS.findall(rest))
+                break
             # These papers print the letter ABOVE the roman, "(a) (i)". A letter
             # after a roman that has no letter over it labels a row inside that
             # roman: 2020 HL Section A Q4(ii) is "Tick one option only" over a
@@ -194,6 +210,22 @@ def census_legacy(year, level, path=None):
                 parts.setdefault(key(), [])
                 rest = tail
                 continue
+            # A roman printed AGAIN under the open letter, opening an ask of its
+            # own: the paper's misprint for the next one due. 2010 OL Section B
+            # Q6(b) prints "(i) Name two commercial banks ... (i) Discuss two
+            # main functions ... (ii) Outline one economic reason ...", three
+            # asks the scheme numbers (i)-(iii); each repeat takes the next
+            # roman not yet keyed under the letter.
+            if rm and roman is not None:
+                tail = after.strip()
+                nxt = lines[i + 1][2] if i + 1 < len(lines) else ''
+                opens = tail or nxt
+                if opens[:1].isupper() and not opens.startswith('_'):
+                    keyed = sum(1 for k in parts if k[:3] == (section, q, letter) and k[3])
+                    roman = ROMANS[keyed]
+                    parts.setdefault(key(), [])
+                    rest = tail
+                    continue
             break
         rest = UNDERSCORES.sub(' ', rest).strip()
         # The next letter printed INSIDE the line it shares with the open one:
@@ -206,6 +238,13 @@ def census_legacy(year, level, path=None):
             if before:
                 parts.setdefault(key(), []).append(before)
             letter, roman = im.group(1), None
+            parts.setdefault(key(), [])
+            rest = rest[im.end():].strip()
+        im = INLINE_NEXT_ROMAN.search(rest) if rest and roman else None
+        if im and ROMANS.index(roman) + 1 < len(ROMANS) and im.group(1) == ROMANS[ROMANS.index(roman) + 1] \
+                and (section, q, letter, im.group(1)) not in parts:
+            parts.setdefault(key(), []).append(rest[:im.start() + 1].strip())
+            roman = im.group(1)
             parts.setdefault(key(), [])
             rest = rest[im.end():].strip()
         if rest and not FURNITURE.match(rest):

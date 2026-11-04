@@ -2383,3 +2383,111 @@ Reading the screenshots found two faults, and both are fixed:
   Balance Sheet of a Bank, with a note saying which sheet it is. The sheets
   themselves remain the hidden crop.
 Those two cards were run again on all four views after the fix.
+
+## Old-syllabus census: three more reader faults (lane, 2026-11-04)
+
+A hand count of 2010-2012 from the rendered pages found three places where
+`econ_legacy_census.py` keyed the paper wrongly. The fixes are in that file,
+which only the Economics census (`paper_census.census_subject`, behind
+`subject == 'economics'`) and `econ_refcheck.py` import:
+- A letter that continues a sentence in lower case is a label, not a part.
+  2012 HL Section A Q4 asks "whether it is an internal or external", the line
+  breaking before "(a) economy of scale or (b) diseconomy of scale", and its
+  table repeats both letters as column heads. It had been keyed Q4(a) and
+  Q4(b). It is one ask, Q4.
+- The next roman printed inside the open roman's line, after its question
+  mark, is a part. 2012 HL Section B Q4(c) prints "(i) in the short run?
+  (ii) in the long run?" on one line, and the scheme prices them 15 and 10.
+  (c)(ii) had been lost.
+- A roman printed again under the open letter, opening an ask, takes the next
+  roman not yet keyed. 2010 OL Section B Q6(b) prints "(i) Name ... (i) Discuss
+  ... (ii) Outline ...", three asks that the scheme numbers (i)-(iii). One had
+  been lost, and "Outline" had been keyed (ii).
+
+A before/after census of all 21 old-syllabus sittings changes exactly these
+keys and nothing else:
+- 2012 HL: Q4(a) and Q4(b) become Q4, and B Q4(c)(ii) is added. The paper
+  stays at 55 (A 13 -> 12, B 42 -> 43).
+- 2010 OL: B Q6(b)(iii) is added (73 -> 74).
+- Every other key and its text is unchanged. Economics goes 2,197 -> 2,198.
+
+The other four 2010-2012 sittings agree with the hand count key for key.
+
+## 2012 Higher English, old syllabus (lane, 2026-11-04)
+
+All 8 paper pages and 40 scheme pages were viewed:
+- paper p8 is blank;
+- scheme pp1-4 are the cover, the note on published schemes, the title page
+  and the support notes with the index, and pp39-40 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 60 routes for the 55 printed asks (12 in Section A, 43 in Section B).
+Five extra routes come from choices where the scheme credits each side or
+option with its own answer, and each question's total counts one of them:
+- A Q8: Yes / No.
+- B5(c)(ii): Yes / No.
+- B8(a)(i): two push OR two pull factors.
+- B7(a)(ii): the scheme's three options. Option 1 is three bullets at 3 + 3 + 2.
+  Options 2 and 3 are 8 each, undivided.
+15 crops: 11 hidden scheme solutions and 4 paper data crops.
+
+Decisions:
+- A Q4: one card with the four statements' ticks at 4. Each row reads the
+  statement, the scheme's column group and its column ("— (b) Diseconomy of
+  Scale — Internal"). The ticked table is the hidden crop, and the paper's
+  table sits beside the ask.
+- Prices the scheme does not divide are questionTotal, with unpriced rows and
+  a note that says so: A Q5(b) (the example and its reason, 6), A Q9(b) (the
+  answer and its explanation, 9), B6(b)(i) (the explanations and examples, 8)
+  and B7(a)(ii) options 2 and 3 (8 each).
+- A Q8: the scheme prints "(1+8+8) marks" beneath one answer for each side.
+  The answer is 1, then the explanation is two points at 8. Yes is read as its
+  two sentences. No is read as its point and its "e.g." example. The note says
+  this.
+- Where a breakdown is printed beneath points without saying which point earns
+  which, the ladder is claimed in the order the answers are correct, and the
+  note says so: B5(c)(i) "10 (4+4+2)" over its population, food supply and
+  outcome points, and B8(c)(i) "13 (9+4)" over its two bullets.
+- B4(a)(i) "13 (6+3+4)" is read in the order printed: the diagram 6, SRAC 3,
+  LRAC 4. The note says so. Each diagram row is claimed by the ask's own
+  words ("With the aid of two clearly labelled diagrams"), beside the hidden
+  diagram. B4(a)(ii) "12 (6+6)" is the diagram 6 and the scheme's three MC/AC
+  lines 6.
+- B1(b): each product's column is one row at 10. The row holds the price
+  change, the type of good, the reason and the effect on total revenue. The
+  demand curves are in the hidden crop. The scheme does not divide the 10.
+- B2(b): the scheme lists 7 diagram elements under "7 marks", and 4 market
+  and 4 firm elements under "4 marks" each, so each element is claimed at 1.
+  The notes say so. Each explanation is 5 at 2.
+- B7(a)(iii): "4 at 3 marks" sits beneath six lines of working: four
+  equivalences and the two possible terms of trade. The card offers all six
+  and claims four, and the note says the scheme does not say which four. The
+  FOOD line keeps the scheme's own "0.3".
+- B8(b)(i): the rate 14.8% (May 2012: 432,907) is 5 marks, and the scheme's
+  forecast rate (14.1%) is an accepted alternative.
+- Ladders are claimed at their printed steps: A Q1 and A Q2 6 + 5 + 5, A Q7
+  6 + 6 + 5, B6(b)(iii) 4 + 3.
+
+Refcheck: three short asks were read by hand: A Q5(a), A Q6(ii) and B8(c)(i).
+
+Topic review: 6 reference anomalies, each a commercial heading the review files
+elsewhere:
+- A Q3 under employment: the black economy is national income.
+- A Q7 under national income: savings are the financial sector.
+- A Q9 under government intervention: the household charge is fiscal policy.
+- B3(b) under economic growth and development: entrepreneurship is scarcity
+  and choice.
+- B3(c) under costs of production: the survival of small firms is market
+  structures, as 2016 HL files it.
+- B8(b) under national income: the Live Register is employment and
+  unemployment.
+
+Checks:
+- econ_review: 34/66.
+- build: 1,916 cards, 0 dropped.
+- Build rule: 298 claims on this paper, 0 untraceable (23 trace by halves).
+- reconcile: 1,863/2,198, with 2012 HL at 55/55.
+- refcheck: 0 wrong.
+- cardlint: clean.

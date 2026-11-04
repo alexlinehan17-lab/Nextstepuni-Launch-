@@ -24,6 +24,7 @@ import higher2014Review from '../scripts/markbank/authoring/reviews/economics-20
 import ordinary2014Review from '../scripts/markbank/authoring/reviews/economics-2014-ol-ev.json';
 import higher2013Review from '../scripts/markbank/authoring/reviews/economics-2013-hl-ev.json';
 import ordinary2013Review from '../scripts/markbank/authoring/reviews/economics-2013-ol-ev.json';
+import higher2012Review from '../scripts/markbank/authoring/reviews/economics-2012-hl-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -333,10 +334,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    // Old syllabus English: every sitting from 2013 through 2020 Higher reviewed (variants 19-33).
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(33);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(39);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(33);
+    // Old syllabus English: every sitting from 2012 Higher through 2020 Higher reviewed (variants 19-34).
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(32);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(38);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(34);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -1639,6 +1640,78 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     expect(text).not.toMatch(/"\d\. [A-Z]/);
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'Statement Explanation',
       'Quantity Demanded', 'ANSWER BOX']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 60 independently counted 2012 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2012);
+    const tasks = higher2012Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(60);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2012Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2012, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2012 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each stance counted once.
+      const total = question.tasks.filter(task => !['-no', '-pull', '-option-2', '-option-3'].some(s => task.cardId.endsWith(s))).reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2012 Higher ladders at their printed steps and keeps one route per credited side or option', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2012-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // First-correct-response ladders, each at its printed steps.
+    for (const [id, steps] of [['sa-q1', [6, 5, 5]], ['sa-q2', [6, 5, 5]], ['sa-q7', [6, 6, 5]], ['sb-q5-c-i', [4, 4, 2]],
+      ['sb-q6-b-iii', [4, 3]], ['sb-q8-c-i', [9, 4]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // Answers the scheme prices whole, without dividing them, claim the complete answer.
+    for (const id of ['sa-q5-b', 'sa-q9-b', 'sb-q6-b-i', 'sb-q7-a-ii-option-2', 'sb-q7-a-ii-option-3']) {
+      expect(card(id).tariffModel.kind, id).toBe('questionTotal');
+    }
+    // A printed choice the scheme credits side by side: one route per side, the same total.
+    for (const [a, b] of [['sa-q8-yes', 'sa-q8-no'], ['sb-q5-c-ii-yes', 'sb-q5-c-ii-no'], ['sb-q8-a-i-push', 'sb-q8-a-i-pull'],
+      ['sb-q7-a-ii-option-1', 'sb-q7-a-ii-option-2'], ['sb-q7-a-ii-option-1', 'sb-q7-a-ii-option-3']] as const) {
+      expect(card(a).totalMarks, a).toBe(card(b).totalMarks);
+      expect(card(a).questionRef.split(' — ')[0], a).toBe(card(b).questionRef.split(' — ')[0]);
+    }
+    // Section B Q4(c)(ii) is printed inside the line of (c)(i), and is its own card.
+    expect(card('sb-q4-c-i').totalMarks + card('sb-q4-c-ii').totalMarks).toBe(25);
+    // Section A Q4's "(a) economy of scale or (b) diseconomy of scale" labels the table; one card, four ticks.
+    expect(card('sa-q4').rows.map(r => r.marks)).toEqual([4, 4, 4, 4]);
+    // A diagram the scheme prices without words is claimed by its own ask, beside the hidden figure.
+    for (const id of ['sb-q4-a-i', 'sb-q4-a-ii']) {
+      const row = card(id).rows.find(r => r.id === 'r-diagram')!;
+      expect(card(id).questionText, id).toContain(row.verbatim);
+      expect(card(id).figure?.solution, id).toBe(true);
+    }
+    // A price chosen where the scheme leaves the split open says so in its note.
+    expect(card('sb-q4-a-i').rows[0].contextNote).toContain('read here in that order');
+    expect(card('sb-q7-a-iii').rows[0].contextNote).toContain('does not say which four');
+    for (const c of CARDS.filter(item => item.year === 2012 && item.level === 'higher' && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = CARDS.filter(c => c.year === 2012 && c.level === 'higher')
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // No stem carries a table's text: each table is the crop beside the ask.
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'National Income Consumption',
+      'Population in Billions', 'United Kingdom 40 units', 'Statement Internal']) {
       expect(text, junk).not.toContain(junk);
     }
   });

@@ -222,12 +222,20 @@ describe('Economics exam-topic registry', () => {
       // consumer spending national income); Section B Q3 and Q5(a)-(b) under
       // government intervention (labour and the public sector are filed under
       // their own topics); and Section B Q5(c) under globalisation (the black
-      // economy is national income).
-      matchedAssociations: 705,
-      referenceAnomalyAssociations: 198,
+      // economy is national income). The 2012 Higher review added six:
+      // Section A Q3 under employment (the black economy is national
+      // income); Section A Q7 under national income (savings are the
+      // financial sector); Section A Q9 under government intervention (the
+      // household charge is fiscal policy); Section B Q3(b) under economic
+      // growth and development (entrepreneurship is scarcity and choice) and
+      // Q3(c) under costs of production (the survival of small firms is
+      // market structures); and Section B Q8(b) under national income (the
+      // Live Register is employment and unemployment).
+      matchedAssociations: 699,
+      referenceAnomalyAssociations: 204,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 631,
+      matchedQuestionTopicLinks: 625,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

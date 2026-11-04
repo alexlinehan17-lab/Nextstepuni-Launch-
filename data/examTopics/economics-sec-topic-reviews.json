@@ -2,7 +2,7 @@
   "subjectId": "economics",
   "authority": "SEC question paper; canonical curriculum node IDs",
   "reviewedAt": "2026-11-04",
-  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2013-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 33 physical variants pending.",
+  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2012 Higher, 2013-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 32 physical variants pending.",
   "questions": [
     {
       "level": "higher",
@@ -9014,6 +9014,272 @@
       ],
       "reason": "DIRT is Fiscal Policy & the Budget (3-1), as 2015 OL files it; savings, the banks and the characteristics of money are Financial Sector (3-4); the ECB is Monetary Policy & Inflation (3-3); the euro’s advantages and disadvantages for Ireland are Globalisation (4-1), and its interest rates also Monetary Policy & Inflation (3-3). Eight tasks totalling 75. a(i) 7; a(ii) 2 at 5 (2 + 3) from nine; a(iii) one advantage 4 + one disadvantage 4: two heading rows. b(i) one reason at 6 (3 + 3) from three; b(ii) one effect per group at 6 (3 + 3): three heading rows. c(i) 6; c(ii) durable 4 + two other characteristics at 4 from five; c(iii) one advantage 4 + one disadvantage 4: two heading rows.",
       "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "1",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-1-1"
+      ],
+      "reason": "Shifts in the demand curve for bottled water are The Consumer (Demand) (1-1). Three reasons from six: 6 + 5 + 5.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "2",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-3-3"
+      ],
+      "reason": "The ECB is Monetary Policy & Inflation (3-3). Three areas of responsibility from five: 6 + 5 + 5.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "3",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-3-1"
+      ],
+      "reason": "The black economy is National Income (3-0); its effects for the Exchequer are also Fiscal Policy & the Budget (3-1). Two reasons at 4 from four + two effects for the Exchequer at 4 from five: one card, two rows.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "4",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-1-5"
+      ],
+      "reason": "Internal and external economies and diseconomies of scale are Costs of Production, Revenue & Profit (1-5). The four ticks at 4: one card. The paper’s “(a) economy of scale or (b) diseconomy of scale” labels the table’s two column groups and is not two parts.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "5",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-1-4"
+      ],
+      "reason": "Income elasticity of demand and inferior goods are Elasticity (1-4). a 10; b 6 for the example and its reason, which the scheme does not divide: questionTotal, unpriced rows.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "6",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0"
+      ],
+      "reason": "The marginal propensity to save and the multiplier are National Income (3-0). i 9 and ii 8, each claimed with its answer beside the hidden working (the paper’s table beside the ask).",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "7",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-3-4"
+      ],
+      "reason": "The rate of savings and the factors affecting it are Financial Sector (3-4). Three factors from five: 6 + 6 + 5.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "8",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "reason": "Imperfect competition and the waste of resources are Market Structures (2-0). Yes / No is a printed choice and the scheme credits each side with its own answer: one route each, counted once. Each 1 + 8 + 8: the answer 1, then the explanation’s two points at 8.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "9",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1"
+      ],
+      "reason": "The household charge, its advantages for the Exchequer and progressive and regressive taxes are Fiscal Policy & the Budget (3-1). a 2 advantages at 4 from six; b 9 for the answer and its explanation, which the scheme does not divide: questionTotal, unpriced rows.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "B1",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-1-1",
+        "economics-1-4"
+      ],
+      "reason": "The equi-marginal principle and the assumptions of consumer behaviour are The Consumer (Demand) (1-1); price and cross elasticity of demand are Elasticity (1-4). Five tasks totalling 75. a(i) 10; a(ii) 3 at 5 from three. b 10 a product, which the scheme does not divide between the price change, the type of good, the reason, the effect on total revenue and the demand curve (hidden solution table). c(i) and c(ii) each 10 (4 + 6): the answer 4 and the explanation 6.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "B2",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "reason": "Perfect competition, its short-run equilibrium, the entry of new firms and the contrast with monopoly are Market Structures (2-0). Five tasks totalling 75. a(i) 6 + 4 (the price taker 6, then either explanation 4); a(ii) 2 at 5 from four. b(i) the diagram 7 (its seven elements at 1) + the explanation 5 at 2 (hidden solution diagram); b(ii) the market diagram 4 + the firm diagram 4 (their elements at 1) + the explanation 5 at 2 (hidden solution diagrams). c the four headings 6 + 6 + 4 + 4.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "B3",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-2-1",
+        "economics-0-1",
+        "economics-2-0"
+      ],
+      "reason": "Supply price, transfer earnings and economic rent are factor incomes, The Labour Market (2-1); the entrepreneur and entrepreneurship are Scarcity & Choice (0-1); the survival of small firms is Market Structures (2-0), as 2016 HL files it. Five tasks totalling 75. a(i) the two terms at 5; a(ii) economic rent 5 + 2 circumstances at 5 from four. b(i) 3 at 5 from nine; b(ii) 3 at 5 from nine. c 4 at 5 from eight.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "B4",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-1-5",
+        "economics-1-2"
+      ],
+      "reason": "Short- and long-run average cost, marginal cost and the minimum price in the short and long run are Costs of Production, Revenue & Profit (1-5); where a firm locates is The Firm (Supply) (1-2), as 2014 HL files it. Five tasks totalling 75. a(i) 13 (6 + 3 + 4): the diagram 6, SRAC 3, LRAC 4 (hidden solution diagram); a(ii) 12 (6 + 6): the diagram 6, the relationship 6 (hidden solution diagram). b 5 at 5 from nineteen, within and across countries. c(i) 15 (9 + 6): the minimum price 9, its explanation 6; c(ii) 10 (6 + 4): the minimum price 6, its explanation 4. The paper prints (c)(ii) inside the line of (c)(i).",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "B5",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-3-5",
+        "economics-4-0",
+        "economics-0-0"
+      ],
+      "reason": "World population growth and its effects on the Irish economy are Economic Growth (3-5); economic growth in developing countries is Growth & Development (4-0); Malthus’s theory of population is Economics as a Way of Thinking (0-0) and also Economic Growth (3-5). Six tasks totalling 75. a(i) 2 at 5 from six; a(ii) 4 at 5 from six. b(i) 3 at 5 from seven; b(ii) one advantage 5 from six + one disadvantage 5 from four. c(i) 10 (4 + 4 + 2); c(ii) Yes / No is a printed choice and the scheme credits each side with its own column, 2 points at 5: one route each, counted once.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "B6",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-1-3"
+      ],
+      "reason": "The government’s economic aims and direct and indirect taxes are Fiscal Policy & the Budget (3-1); a tax on sugary foods is Government Intervention (1-3), as 2013 OL files a sugar tax; students contributing to the cost of third-level education is Government Intervention (1-3) and also Fiscal Policy & the Budget (3-1). Five tasks totalling 75. a 4 at 5 from twelve, each with a current statistic. b(i) 8 for the explanations and examples, which the scheme does not divide: questionTotal, unpriced rows; b(ii) 2 advantages at 5 from six + 2 disadvantages at 5 from six; b(iii) the 1st correct point 4 and the 2nd 3, from four. c 2 arguments in favour at 5 from four + 2 against at 5 from five.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "B7",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-3-5"
+      ],
+      "reason": "Comparative advantage, the terms of trade, competitiveness and the gains from trade are International Trade & Competitiveness (4-2); the effects of slower euro-area growth on the Irish economy are also Economic Growth (3-5). Six tasks totalling 75. a(i) 10 (6 + 4); a(ii) 8 by any of the scheme’s three options, each credited with its own points: option 1 3 + 3 + 2, options 2 and 3 8 undivided (questionTotal): one route each, counted once; a(iii) 4 at 3. b(i) 3 at 5 from six; b(ii) 2 at 5 from three. c 4 at 5 from eight.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2012,
+      "n": "B8",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-3-2",
+        "economics-3-1",
+        "economics-0-0"
+      ],
+      "reason": "Emigration, its push and pull factors and consequences and the Live Register are Employment & Unemployment (3-2); Keynes’s use of fiscal policy for full employment is Fiscal Policy & the Budget (3-1), and his other concepts Economics as a Way of Thinking (0-0). Six tasks totalling 75. a(i) two push OR two pull factors is a printed choice and the scheme credits each with its own column, 2 at 5: one route each, counted once; a(ii) 2 negative at 5 from five + 2 positive at 5 from four. b(i) 5; b(ii) 3 at 5 from five. c(i) 13 (9 + 4); c(ii) 2 at 6 from seven.",
+      "paperSha256": "7a4570603467a8c28d5af5a174dc13e1430a50f5ffba901364a6011afbda46a0"
     }
   ]
 }
