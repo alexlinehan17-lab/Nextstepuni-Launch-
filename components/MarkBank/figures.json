@@ -51184,5 +51184,143 @@
   "year": 2021,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-paper-q1d-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-paper-q1d-crop.png",
+  "md5": "a68afdf7cb53b59aa7fcc77bb6272667",
+  "alt": "The table or diagram printed with 2022 HL Q1(d), as the State Examinations Commission set it. It reads: output shaft.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q1(d)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-paper-q1k-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-paper-q1k-crop.png",
+  "md5": "f0a16abed5d970bb8bb7ee25374055a1",
+  "alt": "The table or diagram printed with 2022 HL Q1(k), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q1(k)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-paper-q1m-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-paper-q1m-crop.png",
+  "md5": "5b38c7650ebeff5c870175e4721732fe",
+  "alt": "The table or diagram printed with 2022 HL Q1(m), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q1(m)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-paper-q5b-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-paper-q5b-crop.png",
+  "md5": "cc475839535bbe4d9c983d71dee027d5",
+  "alt": "The table or diagram printed with 2022 HL Q5(b), as the State Examinations Commission set it. It reads: (b) The table shows the solidification temperatures for various alloys of metal A and metal B. % of metal B in the alloy 0 10 20 30 40 50 60 70 80 90 100 Start of solidification (°C) 1120 1225 1295 1345 1390 1420 1445 1468 1485 1495 1500 End of solidification (°C) 1120 1128 1150 1170 1195 1225 1260 1295 1350 1420 1500.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q5(b)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-paper-q8biv-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-paper-q8biv-crop.png",
+  "md5": "0416f75a2d31666a029520178335a63d",
+  "alt": "The table or diagram printed with 2022 HL Q8(b)(iv), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(b)(iv)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-paper-q9a-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-paper-q9a-crop.png",
+  "md5": "3aafae898025498780d3a711aaf6f282",
+  "alt": "The table or diagram printed with 2022 HL Q9(a), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q9(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-scheme-q1e-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-scheme-q1e-sol.png",
+  "md5": "1ea759e29b0f2e0862c6bcd1225e322b",
+  "alt": "The marking scheme's printed answer for 2022 HL Q1(e), as the State Examinations Commission set it. It reads: Flat on motor output shaft Grub screw to secure pulley onto shaft..",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q1(e)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-scheme-q2aii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-scheme-q2aii-sol.png",
+  "md5": "54b8f46dc0de711fc577a073e1c83412",
+  "alt": "The marking scheme's printed answer for 2022 HL Q2(a)(ii), as the State Examinations Commission set it. It reads: Artificial Intelligence Machine learning uses algorithms to learn from data and make informed decisions based on what it has learned. Deep learning structures algorithms in layers to create an “artificial neural network” that can learn and make intelligent decisions on its own.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q2(a)(ii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-scheme-q3bi-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-scheme-q3bi-sol.png",
+  "md5": "fa504b0c541c146e170f1512f4a40edd",
+  "alt": "The marking scheme's printed answer for 2022 HL Q3(b)(i), as the State Examinations Commission set it. It reads: 400 Metal A (N/mm²) 300 Stress 200 Metal B 100 2 4 6 8 Strain (x1000).",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q3(b)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-scheme-q5bi-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-scheme-q5bi-sol.png",
+  "md5": "9ec268945c4c27f6c448074671c4c5ae",
+  "alt": "The marking scheme's printed answer for 2022 HL Q5(b)(i), as the State Examinations Commission set it. It reads: Liquidus line (i) A B C 1400°C °C Solidus line Temperature 44% B 70% B 88% B % Metal B.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q5(b)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-scheme-q5bii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-scheme-q5bii-sol.png",
+  "md5": "4cfb2bf01f206812fd5dd48e907228e3",
+  "alt": "The marking scheme's printed answer for 2022 HL Q5(b)(ii), as the State Examinations Commission set it. It reads: Ratio of Liquid to solid = |AB| = 70 - 44 = 26 |BC| 88 - 70 18.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q5(b)(ii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-scheme-q8cii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-scheme-q8cii-sol.png",
+  "md5": "dab69a1af3802dc1a74f7dd896485dc6",
+  "alt": "The marking scheme's printed answer for 2022 HL Q8(c)(ii), as the State Examinations Commission set it. It reads: Moving clamp Locking lever.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(c)(ii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
  }
 }

@@ -5469,31 +5469,6 @@
   ]
  },
  {
-  "id": "eng-2022-hl-q3-b-i",
-  "topicId": "eng-3-8",
-  "conceptId": "using-graph-paper-supplied-plot-stress",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2022 HL Q3(b)(i)",
-  "questionText": "Using the graph paper supplied, plot the stress-strain diagram for metal A and the stress-strain diagram for metal B on the same graph axes, as shown opposite.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "2 4 6 8",
-    "marks": 10
-   }
-  ],
-  "questionFigureKey": "engineering-2022-HL-paper-q3bi-art",
-  "questionFigureIncludesPrompt": false
- },
- {
   "id": "eng-2022-hl-q3-b-ii",
   "topicId": "eng-3-8",
   "conceptId": "reference-metal-b-aid-diagram-profile",
@@ -5981,7 +5956,7 @@
  },
  {
   "id": "eng-2022-hl-q5-b-iii",
-  "topicId": "eng-1-2",
+  "topicId": "eng-1-3",
   "conceptId": "melting-point-metal-melting-point-metal",
   "level": "higher",
   "year": 2022,
@@ -6047,7 +6022,7 @@
  },
  {
   "id": "eng-2022-hl-q5-c-ii",
-  "topicId": "eng-3-1",
+  "topicId": "eng-3-7",
   "conceptId": "possible-corrosive-effects-environment-metal-objects",
   "level": "higher",
   "year": 2022,
@@ -7423,6 +7398,389 @@
     "marks": null
    }
   ]
+ },
+ {
+  "id": "eng-2022-hl-q1-d",
+  "topicId": "eng-2-15",
+  "conceptId": "single-ratio-gearbox-motor-shown-opposite",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q1(d)",
+  "questionText": "The single ratio gearbox motor shown opposite is suitable for model and light industrial applications and has a gear ratio of 100:1. Explain what is meant by 100:1 gear ratio motor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The 100:1 ratio on this motor indicates that the output shaft is rotating 100 times slower than the input shaft. Therefore, if the input shaft is rotating at 2000rpm the output shaft is rotating at 20rpm. This is achieved by a series of gear reductions in a compound gear train.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "questionFigureKey": "engineering-2022-HL-paper-q1d-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2022-hl-q1-e",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-how-pulley-may-be",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q1(e)",
+  "questionText": "Describe, with the aid of a diagram, how a pulley may be securely attached to the output shaft of the gearbox motor shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A pulley may be securely attached in a number of ways to the output shaft of the motor.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "One such way is to use a pulley with a hub which can accommodate a grub screw. This grub screw will tighten against the flat part of the output shaft of the motor, holding it securely in place.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'.",
+  "figureKey": "engineering-2022-HL-scheme-q1e-sol",
+  "questionFigureKey": "engineering-2022-HL-paper-q1d-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2022-hl-q1-k",
+  "topicId": "eng-1-5",
+  "conceptId": "identify-reasons-use-titanium-manufacture-sport",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q1(k)",
+  "questionText": "Identify two reasons for the use of titanium in the manufacture of sport equipment, such as in modern golf clubs, as shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Titanium is strong, long lasting and lightweight. Titanium is lighter than stainless steel and allows the designer to manufacturer a much larger club head that meets the weight specifications of a normal driver. Titanium does not corrode either.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '3 + 2'.",
+  "questionFigureKey": "engineering-2022-HL-paper-q1k-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2022-hl-q1-m",
+  "topicId": "eng-3-14",
+  "conceptId": "photovoltaic-power-stations-solar-farms-contain",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q1(m)",
+  "questionText": "Photovoltaic power stations (solar farms) contain a large array of solar panels, as shown, that supply electricity to the power grid. Outline one advantage and one disadvantage of solar farms in Ireland.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Renewable energy source.",
+    "marks": 3,
+    "accepts": [
+     "Reduced electricity bills.",
+     "Diverse applications.",
+     "Low maintenance costs."
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Weather dependent.",
+    "marks": 2,
+    "accepts": [
+     "Expensive to initially set-up.",
+     "Use up lots of space.",
+     "Solar energy is expensive to store."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '3 + 2': any one advantage, then any one disadvantage.",
+  "questionFigureKey": "engineering-2022-HL-paper-q1m-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2022-hl-q2-a-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "basic-difference-between-machine-learning-deep",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q2(a)(ii)",
+  "questionText": "Explain the basic difference between machine learning and deep learning.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Machine learning is the general term for when computers learn from data. It describes the intersect of computer science and statistics where algorithms are used to perform a specific task without being explicitly programmed; instead, they recognise patterns in the data and make predictions once new data arrives.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Deep learning algorithms can be regarded both as a sophisticated and mathematically complex evolution of machine learning algorithms. Deep learning describes algorithms that analyses data with a logic structure similar to how a human would draw conclusions.",
+    "marks": null
+   }
+  ],
+  "stem": "Answer all of the following:",
+  "notes": "The scheme prints '5'.",
+  "figureKey": "engineering-2022-HL-scheme-q2aii-sol"
+ },
+ {
+  "id": "eng-2022-hl-q3-b-i",
+  "topicId": "eng-3-8",
+  "conceptId": "using-graph-paper-supplied-plot-stress",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q3(b)(i)",
+  "questionText": "Using the graph paper supplied, plot the stress-strain diagram for metal A and the stress-strain diagram for metal B on the same graph axes, as shown opposite.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Using the graph paper supplied, plot the stress-strain diagram for metal A and the stress-strain diagram for metal B on the same graph axes, as shown opposite.",
+    "marks": 10,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints 'Draw graphs on same axes', 10 marks.",
+  "figureKey": "engineering-2022-HL-scheme-q3bi-sol",
+  "questionFigureKey": "engineering-2022-HL-paper-q3bi-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2022-hl-q5-b-i",
+  "topicId": "eng-1-3",
+  "conceptId": "draw-equilibrium-diagram-according-given-data",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q5(b)(i)",
+  "questionText": "Draw the equilibrium diagram according to the given data and label the liquidus and solidus lines.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the equilibrium diagram according to the given data and label the liquidus and solidus lines.",
+    "marks": 10,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "figureKey": "engineering-2022-HL-scheme-q5bi-sol",
+  "questionFigureKey": "engineering-2022-HL-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2022-hl-q5-b-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "alloy-containing-70-metal-b-determine",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q5(b)(ii)",
+  "questionText": "For the alloy containing 70% metal B, determine from the diagram the ratio of the phases at 1400 °C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "For the alloy containing 70% metal B, determine from the diagram the ratio of the phases at 1400 °C.",
+    "marks": 4,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "figureKey": "engineering-2022-HL-scheme-q5bii-sol",
+  "questionFigureKey": "engineering-2022-HL-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2022-hl-q8-b-iv",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-benefits-using-step-cone-drill",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q8(b)(iv)",
+  "questionText": "Identify two benefits of using a step cone drill bit as shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Don’t have to constantly change drill bits to increase the size of the hole.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Excellent for drilling large holes in sheet material.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Safer technique for drilling larger hole in sheet material.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Shorter length and easy to manoeuvre.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Deburring ability.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Smooth hole finish.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'.",
+  "questionFigureKey": "engineering-2022-HL-paper-q8biv-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2022-hl-q8-c-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "aid-diagram-s-method-securely-clamping",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q8(c)(ii)",
+  "questionText": "Describe, with the aid of diagram(s), a method of securely clamping metals in a horizontal bandsaw. OR Describe the following CNC terms: • Simulation; • Tool offsets.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A traditional machine vice can be used with a horizontal bandsaw saw. A variety of clamping devices, including quick release and hydraulic clamps, can also be used as the workpiece usually needs to be held securely.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The device shown has a moveable clamp that runs on a guide rail. This is pushed on to the material to be clamped and then locked in place. A cam operated locking lever tightens on to the material. This type of vise is particularly useful for tubular materials as the gripping strength can be gauged to avoid crushing the material.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "CNC simulation tools are mathematical applications designed to predict the behaviour, performance and outcome of programmed manufacturing processes. They provide the means for testing and verifying the CNC program, usually written in G-code, before the instructions are sent to the machine. From verifying code integrity to preventing any issues that could damage physical components, CNC simulation tools can provide insights into how the whole process can be optimised.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Tool offsets: Programming on a CNC machine is done with reference to the centre point of the cutter. Tool offsets are the set of values that move the centre point of the cutter to the correct position for cutting a work piece using a specific tool.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '10' for the bandsaw branch and '4 + 4' for the CNC branch's (ii).",
+  "figureKey": "engineering-2022-HL-scheme-q8cii-sol"
+ },
+ {
+  "id": "eng-2022-hl-q9-a-ii",
+  "topicId": "eng-2-15",
+  "conceptId": "discuss-advantages-using-mechanism-musical-instrument",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q9(a)(ii)",
+  "questionText": "Discuss two advantages of using this mechanism in the musical instrument shown.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 4"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Worm drives offer a high speed reduction thus one turn of the worm will result in a limited turn of the worm gear.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Setting the correct pitch of the string is much easier to attain.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Once set, the worm gear cannot turn the worm so the string will not “slip” backwards due to the tension on it.",
+    "marks": null
+   }
+  ],
+  "questionFigureKey": "engineering-2022-HL-paper-q9a-crop",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2022-ol-q1-a",
