@@ -535,6 +535,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['By launching the Dreadnought', 6, [0, 3, 6], '‘Quickly’ ALONE = 3M'],
       ['Clonmel prison', 6, [0, 3, 6], 'Clonmel only (3m), prison only (3m)'],
       ['Explanation', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Famine, Civil War, Political instability', 5, [0, 3, 5], 'Threats: two = 5M; one = 3M; “wolf and tiger” alone = 0'],
       ['Green ribbons', 6, [0, 3, 6], 'ribbons = 3m'],
       ['Hans Place', 8, [0, 4, 8], 'London ONLY = 4M'],
       ['Less than half', 6, [0, 3, 6], 'Half ONLY = 3M'],
