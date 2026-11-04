@@ -4266,7 +4266,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "Why was Fr. Sheehy brought to trial, how was the trial conducted, and what was the outcome?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (why + how + outcome) If only TWO, Max. CM = 50","caps":[{"when":"If only TWO","max":50}]} }, schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (why + how + outcome) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5341,7 +5341,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "Why did the Montgomery bus boycott (1956) take place, how was it carried out, and to what extent was it successful?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (why + how + successful?) If only TWO, Max. CM = 50","caps":[{"when":"If only TWO","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (why + how + successful?) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5623,7 +5623,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "What were the roles of the lords, freeholders and churls in Gaelic society?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (lords + freeholders + churls) If only TWO, Max. CM = 50","caps":[{"when":"If only TWO","max":50}]} }, schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (lords + freeholders + churls) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5635,7 +5635,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Why was a policy of plantation introduced in Laois and Offaly, how was it carried out, and to what extent was it successful?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (why + how + how successful) If only TWO, Max. CM = 50","caps":[{"when":"If only TWO","max":50}]} }, schemePages: [23,24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (why + how + how successful) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [23,24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5767,7 +5767,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What were the main causes of agrarian unrest, what forms did the unrest take and what were its results, 1715-1770?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (causes + forms of unrest + results) If only TWO, Max. CM = 50","caps":[{"when":"If only TWO","max":50}]} }, schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (causes + forms of unrest + results) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5827,7 +5827,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Who founded Maynooth College, why was it founded, and to what extent were the aims of its founders achieved?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (founders + reasons + aims achieved) If only TWO, Max. CM = 50","caps":[{"when":"If only TWO","max":50}]} }, schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (founders + reasons + aims achieved) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",

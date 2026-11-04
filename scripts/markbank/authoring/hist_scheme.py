@@ -764,7 +764,11 @@ class HistScheme:
                 # line ("If only ONE, ..." or "If only TWO, ..."), or the end of
                 # a bracket it broke mid-way ("(Civil Constitution of the
                 # Clergy + Committee of Public" / "Safety)").
-                if (essay.note is not None and essay.note_max is None
+                # A second ceiling on a line of its own continues the NOTE too:
+                # "NOTE: THREE elements (why + how + outcome)" / "If only TWO,
+                # Max. CM = 50" / "If only ONE, Max CM = 40" (2014 Higher).
+                if (essay.note is not None
+                        and (essay.note_max is None or re.match(r'^If only\b', line, re.I))
                         and (NOTE_CONT.match(line) or NOTE_ASIDE.match(line)
                              or essay.note.count('(') > essay.note.count(')'))
                         and not ESSAY.match(line) and not TOPIC_HEAD.match(line)):

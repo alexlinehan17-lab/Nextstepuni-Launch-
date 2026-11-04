@@ -12306,11 +12306,15 @@
      "(Summation which is mere repetition = max. 4 marks)"
     ],
     "elementRule": {
-     "note": "NOTE: THREE elements (why + how + outcome) If only TWO, Max. CM = 50",
+     "note": "NOTE: THREE elements (why + how + outcome) If only TWO, Max. CM = 50 If only ONE, Max CM = 40",
      "caps": [
       {
        "when": "If only TWO",
        "max": 50
+      },
+      {
+       "when": "If only ONE",
+       "max": 40
       }
      ]
     }
@@ -26547,11 +26551,15 @@
      "(Summation which is mere repetition = max. 4 marks)"
     ],
     "elementRule": {
-     "note": "NOTE: THREE elements (why + how + successful?) If only TWO, Max. CM = 50",
+     "note": "NOTE: THREE elements (why + how + successful?) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40",
      "caps": [
       {
        "when": "If only TWO",
        "max": 50
+      },
+      {
+       "when": "If only ONE",
+       "max": 40
       }
      ]
     }
@@ -28070,11 +28078,15 @@
      "(Summation which is mere repetition = max. 4 marks)"
     ],
     "elementRule": {
-     "note": "NOTE: THREE elements (lords + freeholders + churls) If only TWO, Max. CM = 50",
+     "note": "NOTE: THREE elements (lords + freeholders + churls) If only TWO, Max. CM = 50 If only ONE, Max CM = 40",
      "caps": [
       {
        "when": "If only TWO",
        "max": 50
+      },
+      {
+       "when": "If only ONE",
+       "max": 40
       }
      ]
     }
@@ -28269,11 +28281,15 @@
      "(Summation which is mere repetition = max. 4 marks)"
     ],
     "elementRule": {
-     "note": "NOTE: THREE elements (why + how + how successful) If only TWO, Max. CM = 50",
+     "note": "NOTE: THREE elements (why + how + how successful) If only TWO, Max. CM = 50 If only ONE, Max CM = 40",
      "caps": [
       {
        "when": "If only TWO",
        "max": 50
+      },
+      {
+       "when": "If only ONE",
+       "max": 40
       }
      ]
     }
@@ -30406,11 +30422,15 @@
      "(Summation which is mere repetition = max. 4 marks)"
     ],
     "elementRule": {
-     "note": "NOTE: THREE elements (causes + forms of unrest + results) If only TWO, Max. CM = 50",
+     "note": "NOTE: THREE elements (causes + forms of unrest + results) If only TWO, Max. CM = 50 If only ONE, Max CM = 40",
      "caps": [
       {
        "when": "If only TWO",
        "max": 50
+      },
+      {
+       "when": "If only ONE",
+       "max": 40
       }
      ]
     }
@@ -31370,11 +31390,15 @@
      "(Summation which is mere repetition = max. 4 marks)"
     ],
     "elementRule": {
-     "note": "NOTE: THREE elements (founders + reasons + aims achieved) If only TWO, Max. CM = 50",
+     "note": "NOTE: THREE elements (founders + reasons + aims achieved) If only TWO, Max. CM = 50 If only ONE, Max CM = 40",
      "caps": [
       {
        "when": "If only TWO",
        "max": 50
+      },
+      {
+       "when": "If only ONE",
+       "max": 40
       }
      ]
     }
