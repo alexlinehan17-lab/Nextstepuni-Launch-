@@ -103,7 +103,13 @@ FURNITURE = re.compile(
     r'|Copyright notice|Acknowledgements?\b'
     r'|This examination paper|Any subsequent use|The Commission does not'
     r'|examination paper has been prepared|owner, and which may'
-    r'|accept liability|Monday|Tuesday|Wednesday|Thursday|Friday'
+    r'|accept liability'
+    # The examination's own date line ("WEDNESDAY, 16 JUNE – AFTERNOON, 2.00 –
+    # 4.50", "Wednesday 15th June"), and never a dated line of an extract:
+    # "Thursday, 11 October. He sailed west-south-west." (2011 Ordinary Early
+    # Modern, Columbus's log) was dropped as furniture. A date line names June
+    # and carries no sentence of its own.
+    r'|(?:Monday|Tuesday|Wednesday|Thursday|Friday)\b(?=[^.]*\b(?:JUNE|June)\b)(?![^.]*\.\s+[A-Z])'
     r'|\d{4}\.\s*M\d+|\d{4}L\d+|Page \d+$|Page \d+ of \d+$|\d{1,3}$)', re.I)
 
 # Where the examination material stops.
