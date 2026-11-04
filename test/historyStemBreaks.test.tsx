@@ -41,15 +41,18 @@ describe('the printed breaks in a History stem', () => {
     );
   });
 
-  it('gives every Ordinary Part A stem one gap, after a finished instruction sentence', () => {
+  it('gives every Ordinary Part A extract one gap, after a finished instruction sentence', () => {
     const partA = HISTORY_ORDINARY.filter(c => /-s(?:2|3)t\d+a-q\d$|-xa-q\d$/.test(c.id) && c.stem);
     expect(partA.length).toBeGreaterThan(600);
     for (const card of partA) {
       const parts = card.stem!.split('\n\n');
-      expect(parts, card.id).toHaveLength(2);
+      // A unit set on a picture (2019 OL "This picture taken from Le Perin magazine ...") prints
+      // the instruction alone: no extract, so no gap.
+      expect(parts.length, card.id).toBeLessThanOrEqual(2);
       expect(parts[0], card.id).toMatch(/[.?!:]$/);
       expect(card.stem, card.id).not.toMatch(/ \n|\n |\n{3}/);
     }
+    expect(partA.filter(c => !c.stem!.includes('\n\n')).every(c => /^(?:This|The|In this) (?:picture|photograph|cartoon|illustration|poster|chart)\b/.test(c.stem!))).toBe(true);
   });
 
   it('keeps a dated diary entry whole: its hanging indent is the rest of the entry', () => {

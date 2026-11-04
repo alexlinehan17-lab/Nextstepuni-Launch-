@@ -484,7 +484,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(7);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(72);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(77);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['Chapel bell', 'convent chimes', 'organ'],
@@ -500,6 +500,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(tariffWording.filter(({ row }) => !(row.contextNote ?? '').includes('The scheme prints no answer here')).map(({ card }) => card.id)).toEqual([]);
     // A six-mark answer with a printed partial ("Green ribbons (ribbons = 3m)") is a stepped row: the partial is its note.
     expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks, row.contextNote]).sort()).toEqual([
+      // 2019 OL Later Modern A4: "By launching the Dreadnought (‘Quickly’ ALONE = 3M) (6)".
+      ['By launching the Dreadnought', 6, [0, 3, 6], '‘Quickly’ ALONE = 3M'],
       ['Clonmel prison', 6, [0, 3, 6], 'Clonmel only (3m), prison only (3m)'],
       // 2021 OL Later Modern Q3(b): the scheme prices "One opinion = 5M / Explanation = 5M" and prints no answer.
       ['Explanation', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
