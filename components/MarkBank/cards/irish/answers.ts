@@ -79,7 +79,7 @@ const BULLET = '';
 const tidy = (value: string) => value.replace(/\s+/g, ' ').replace(/^[\s;,.•]+|[\s;,]+$/g, '').trim();
 const cumulative = (terms: number[]) => terms.map((_, index) => terms.slice(0, index + 1).reduce((a, b) => a + b, 0));
 
-interface Draft { prompt?: string; tariff: number; ladder?: number[]; rows: { text: string; marks?: number }[] }
+interface Draft { prompt?: string; tariff: number; ladder?: number[]; rows: { text: string; marks?: number }[]; ruled?: number[] }
 
 /** A reviewed card's criterion carries its own sub-question first, then lines that are not its answers:
  *  the scheme's "Nóta: …" for the part ("Má tá dhá phointe eolais i gceist, tá 3 mharc …"), which is an
@@ -187,7 +187,18 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
     if (!current) return 'answer before any sub-question';
     let answers = 0;
     for (const [index, item] of items.entries()) {
-      if (RULE.test(item)) { directions.push(item); continue; }
+      if (RULE.test(item)) {
+        directions.push(item);
+        // "5 mharc An chéad phíosa eolais atá ceart = 3 mharc; an dara píosa eolais atá ceart = 2 mharc" (2018 Ordinary
+        // Reading B 1(b)): the rules price the part's ladder where no "3 mharc + 2 mharc = 5 mharc" does. Their prices
+        // become the ladder once they add up to the part's tariff, so its answers are claimed in order, first 3 then 2.
+        if (marks !== undefined && index === items.length - 1 && !current.ladder && current.rows.length === 0) {
+          current.ruled = [...(current.ruled ?? []), marks];
+          const ruled = current.ruled;
+          if (ruled.length > 1 && ruled.reduce((a, b) => a + b, 0) === current.tariff) current.ladder = cumulative(ruled);
+        }
+        continue;
+      }
       if (DIRECTION.test(item)) { directions.push(item); continue; }
       answers += 1;
       // The bullets before the priced one are its alternatives at the same
