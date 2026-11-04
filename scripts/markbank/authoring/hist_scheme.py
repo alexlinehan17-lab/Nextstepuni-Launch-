@@ -87,11 +87,17 @@ ESSAY = re.compile(r'^(\d)\.\s+Max\.?\s*CM\s*=?\s*(\d+)\s+Max\.?\s*OE\s*=?\s*(\d
 # clause onto a line of its own, and 2025 opens one NOTE with a stray "(".
 NOTE_HEAD = re.compile(r'^\(?NOTE\s*:', re.I)
 NOTE_CONT = re.compile(r'^If only\b', re.I)
+# A NOTE's own aside on a line of its own, between its head and its ceiling:
+# "NOTE: TWO elements" / "(two of the GAA, the Gaelic League and/or W.B.
+# Yeats)" / "If only ONE, Max. CM = 50" (2020 Higher).
+NOTE_ASIDE = re.compile(r'^\([^()]*\)$')
 NOTE_MAX = re.compile(r'\bMax\.?\s*CM\s*=\s*(\d+)')
 # Every ceiling a NOTE prints, in its own words and order: "If only ONE, Max.
 # CM = 40 If only TWO, Max. CM = 50" (2023) and "If only TWO, Max CM = 50 If
 # only ONE, Max CM = 40" (2025 Early Modern) are two ceilings each.
-NOTE_CAP = re.compile(r'(If only (?:ONE|TWO|THREE|FOUR))\s*,\s*Max\.?\s*CM\s*=\s*(\d+)', re.I)
+# The count may carry its noun: "If only ONE former colony, Max. CM = 50"
+# (2020 Higher, Europe Topic 5 Q3, whose NOTE is "colonies (plural)").
+NOTE_CAP = re.compile(r'(If only (?:ONE|TWO|THREE|FOUR)(?: [a-z][\w-]*)*)\s*,\s*Max\.?\s*CM\s*=\s*(\d+)', re.I)
 # An Ordinary Level Part A answer.
 A_LINE = re.compile(r'^A(\d)\.\s*(.*)$')
 # The whole scheme entry for an Ordinary Level part B or C.
@@ -251,24 +257,41 @@ SENTENCE = re.compile(
     r'(?<!Fr)(?<!Rev)(?<!Prof)(?<!Sr)(?<!Co)(?<!No)'
     r'[.?!]["\u201d]?\s+(?=[A-Z\u201c"])')
 
-def _halve(raw, field):
+# The years the SEC set ONE field of study. In 2020 it set no Early Modern
+# paper at either level (paper_census.py declares that sitting absent, with
+# its evidence), and its two schemes print LATER MODERN alone.
+ONE_FIELD = {2020: 'lm'}
+
+
+def _field_bounds(lines, field, year):
+    """The first and last-plus-one line of one field of study's half."""
+    starts = {}
+    for key, pat in FIELD_TITLE.items():
+        hits = [i for i, l in enumerate(lines) if pat.match(l.strip())]
+        expected = 1 if ONE_FIELD.get(year, key) == key else 0
+        if len(hits) != expected:
+            raise AssertionError(
+                f'{key}: expected {expected} "{pat.pattern}" title line(s), '
+                f'found {len(hits)}')
+        if hits:
+            starts[key] = hits[0]
+    if field not in starts:
+        raise AssertionError(f'{year} prints no {field} field of study')
+    if 'em' in starts and 'lm' in starts and starts['lm'] >= starts['em']:
+        raise AssertionError('Early Modern is printed before Later Modern')
+    lo = starts[field]
+    hi = starts['em'] if field == 'lm' and 'em' in starts else len(lines)
+    return lo, hi
+
+
+def _halve(raw, field, year):
     """The lines of ONE field of study, in order."""
     lines = []
     for line in raw.split('\n'):
         if APPENDED.match(line):
             break
         lines.append(line.rstrip())
-    starts = {}
-    for key, pat in FIELD_TITLE.items():
-        hits = [i for i, l in enumerate(lines) if pat.match(l.strip())]
-        if len(hits) != 1:
-            raise AssertionError(
-                f'{key}: expected one "{pat.pattern}" title line, found {len(hits)}')
-        starts[key] = hits[0]
-    if starts['lm'] >= starts['em']:
-        raise AssertionError('Early Modern is printed before Later Modern')
-    lo = starts[field]
-    hi = starts['em'] if field == 'lm' else len(lines)
+    lo, hi = _field_bounds(lines, field, year)
     return [l.strip() for l in lines[lo:hi]]
 
 
@@ -356,7 +379,7 @@ def _directions_to_notes(points):
     return kept
 
 
-def _halve_pages(raw, field):
+def _halve_pages(raw, field, year):
     """The scheme page of every line _halve() returns, in the same order.
 
     The same boundaries as _halve(), read again with the "## Page N" markers
@@ -372,12 +395,7 @@ def _halve_pages(raw, field):
         if m:
             page = int(m.group(1))
         pages.append(page)
-    starts = {}
-    for key, pat in FIELD_TITLE.items():
-        hits = [i for i, l in enumerate(lines) if pat.match(l.strip())]
-        starts[key] = hits[0]
-    lo = starts[field]
-    hi = starts['em'] if field == 'lm' else len(lines)
+    lo, hi = _field_bounds(lines, field, year)
     return pages[lo:hi]
 
 
@@ -412,8 +430,8 @@ class HistScheme:
             raise FileNotFoundError(self.path)
         with open(self.path, encoding='utf-8') as fh:
             self.raw = fh.read()
-        self.lines = _halve(self.raw, field)
-        self.pages = _halve_pages(self.raw, field)
+        self.lines = _halve(self.raw, field, year)
+        self.pages = _halve_pages(self.raw, field, year)
         assert len(self.pages) == len(self.lines)
         self.asks = []
         self.by_key = {}
@@ -460,7 +478,7 @@ class HistScheme:
                 # a bracket it broke mid-way ("(Civil Constitution of the
                 # Clergy + Committee of Public" / "Safety)").
                 if (essay.note is not None and essay.note_max is None
-                        and (NOTE_CONT.match(line)
+                        and (NOTE_CONT.match(line) or NOTE_ASIDE.match(line)
                              or essay.note.count('(') > essay.note.count(')'))
                         and not ESSAY.match(line) and not TOPIC_HEAD.match(line)):
                     essay.note = f'{essay.note} {line}'

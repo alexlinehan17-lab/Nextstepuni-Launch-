@@ -5,9 +5,9 @@
     python3 scripts/markbank/authoring/hist_all.py > scripts/markbank/authored/history.json
     python3 scripts/markbank/authoring/hist_all.py --exclusions   # rewrite the ledger
 
-Census-driven. Twenty papers — ten Later Modern and ten Early Modern, 2021-2025
-at both levels — print 1,430 asks between them, and this walks that census
-rather than choosing what to card.
+Census-driven. It walks every ask each carded paper prints (PAPERS: 2021-2026
+at both levels and in both fields, then back a paper at a time from 2020, the
+one year the SEC set Later Modern alone) rather than choosing what to card.
 
 WHAT IS CARDED, AND WHAT IS EXCLUDED
 ------------------------------------
@@ -81,11 +81,7 @@ from hist_topics import topic_for, concept_for, TITLES        # noqa: E402
 from hist_rows import split_priced                           # noqa: E402
 from align import bag, score                                  # noqa: E402
 
-YEARS = (2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('hl', 'ol')
-# The sittings carded, each added whole as its papers are read and reviewed.
-SITTINGS = [(year, level) for year in YEARS for level in LEVELS
-            if year <= 2026]
 FIELD_KEYS = ('lm', 'em')
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
@@ -95,6 +91,7 @@ EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
 # is the prototype (lane batch 1, 4 Nov 2026); the rest follow once it has
 # been reviewed.
 ESSAY_PAPERS = {
+    (2020, 'hl', 'lm'),
     (2021, 'hl', 'em'),
     (2021, 'hl', 'lm'),
     (2021, 'ol', 'em'),
@@ -120,6 +117,10 @@ ESSAY_PAPERS = {
     (2026, 'ol', 'em'),
     (2026, 'ol', 'lm'),
 }
+# The papers carded. A paper is carded whole, essays included, so these are
+# the essay papers; each joins one at a time, as it is read and reviewed
+# (2021-2026 in lane batches 1-2, then back from 2020).
+PAPERS = sorted(ESSAY_PAPERS, key=lambda p: (p[0], p[1], FIELD_KEYS.index(p[2])))
 
 # NextStepUni's own guidance under the panel, never presented as the SEC's,
 # for each way the scheme marks: (CM mode, prints an OE).
@@ -391,9 +392,9 @@ def build():
         refused[reason] += 1
         examples[reason].append(ref)
 
-    for year, level in SITTINGS:
+    for year, level, field in PAPERS:
         if True:
-            for field in FIELD_KEYS:
+            if True:
                 P = HistPaper(year, level, field)
                 S = HistScheme(year, level, field)
 
