@@ -154,6 +154,14 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
       if (more.length) row.steps = cumulative([first, ...more]);
       tokens.push({ kind: 'row', ...row, at: phraseStart + (raw.length - clause.length), end: match.index! + match[0].length });
     }
+    // "5 phointe eolais agus 5 mharc ar gach pointe eolais" with nothing priced before it (2019 Ordinary 2A(b) An Lasair Choille,
+    // whose key opens on the title alone, with no "(25 marc)"): the points' own words are the criterion's row, at the total
+    // they add to, in single marks (each point is 2 for the bare point + 3 for development); what precedes them is the prompt.
+    const eachPoint = /(\d+)\s*phointe eolais agus (\d+)\s*m?h?arc ar gach pointe eolais/i.exec(body);
+    if (eachPoint && tokens.length === 0 && !parts.length && !loose.length && Number(eachPoint[1]) * Number(eachPoint[2]) === source.totalMarks) {
+      tokens.push({ kind: 'row', text: tidy(eachPoint[0]), marks: source.totalMarks, steps: range(source.totalMarks),
+        at: eachPoint.index, end: eachPoint.index + eachPoint[0].length });
+    }
     tokens.sort((a, b) => a.at - b.at);
     debug?.push(...tokens.map(token => token.kind === 'open' ? `  OPEN ${token.tariff} ladder=${token.ladder ?? ''} @${token.at}` : `  ROW ${token.marks} steps=${token.steps ?? ''} "${token.text.slice(0, 60)}" @${token.at}`));
     // The prompt is the sub-question as printed, up to the first note the scheme sets inside it
@@ -290,6 +298,13 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
     kept = kept.slice(0, half);
   }
   parts.length = 0; parts.push(...kept);
+  // A criterion whose only printed price is its band table's header (2018 Higher Ceist 4A–E and 2B print no "Eolas = 35 marc"
+  // of their own; "Catagóir Eolas (35 marc) Gaeilge (5 mharc)" prices them): one judgement over the criterion, its own words
+  // the row, as a sub-question priced whole with nothing under it. Only where nothing else priced it.
+  if (parts.length === 0 && !loose.length && loosePrompt
+    && bands.some(band => Number(/^Catagóir\s+Eolas\s*\((\d+)\s*m?h?arc\)/.exec(band)?.[1]) === source.totalMarks)) {
+    parts.push({ prompt: loosePrompt, tariff: source.totalMarks, rows: [], samples: [] });
+  }
   if (parts.length === 0) return { ok: false, reason: 'no priced sub-question' };
 
   const built: IrishAnswerPart[] = [];

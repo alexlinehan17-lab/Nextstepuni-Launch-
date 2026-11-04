@@ -68,7 +68,8 @@ const FURNITURE = /^(?:Eolas\s*\(|Iomlán|Móriomlán|Cuid [ABC]\b|I gcás\b|\d+
 const PROMPT = /^(?:An (?:Chéad|Dara|Tríú) Mhír\s*)?(?:\d+\.\s|\(?[a-z]\)\s|\((?:i|ii|iii|iv)\)\s)/i;
 /** A sub-question starting inside a bullet's text: "… sa saol acadúil (b) (i) Cén toradh…?". */
 const INNER_PROMPT = /\s(?=(?:(?:\([b-d]\)\s|\((?:i|ii|iii|iv)\)\s|(?:An (?:Dara|Tríú) Mhír\s*)?\d+\.\s(?:\(a\)\s)?[A-ZÁÉÍÓÚ])[^•]*(?:\?|\(Alt \d+\)|\.)|(?:Luaigh|Scríobh síos|Tabhair|Cén|Cad|Cá|Conas|Cathain|Cé)\s[^•]*\(Alt \d+\))\s*$)/;
-const NEXT_QUESTION = /(?:^|\s)(\d+)\.\s+(?:\(a\)\s+)?[A-ZÁÉÍÓÚ]/g;
+/** A question number: one or two digits, so a year ending a sentence ("ar an 20 Iúil 1969. Tabhair …", 2019 Higher B 1(a)) is not one. */
+const NEXT_QUESTION = /(?:^|\s)(\d{1,2})\.\s+(?:\(a\)\s+)?[A-ZÁÉÍÓÚ]/g;
 /** Where the lifted excerpt runs on into the scheme's next section, and the rule it ends with. */
 const LEAK = /\s(?=(?:Eolas\s*\(\d+\)|Móriomlán|Iomlán\b|Freagair do rogha|I gcás A, B|\d+ Roinn ar an bpáipéar|An Mharcáil:|Cuid [ABC]\s*\(\d+|Léirigh na marcanna|Don Scrúdaitheoir|Na hIomláin|CEIST \d+ \(A \+ B\)|LÉAMHTHUISCINT - \d+ marc))/;
 /** The language deduction the scheme prints beside the answers: Higher as a sentence, Ordinary in square brackets. */
@@ -78,7 +79,7 @@ const BULLET = '';
 const tidy = (value: string) => value.replace(/\s+/g, ' ').replace(/^[\s;,.•]+|[\s;,]+$/g, '').trim();
 const cumulative = (terms: number[]) => terms.map((_, index) => terms.slice(0, index + 1).reduce((a, b) => a + b, 0));
 
-interface Draft { prompt?: string; tariff: number; ladder?: number[]; rows: { text: string; marks?: number }[] }
+interface Draft { prompt?: string; tariff: number; ladder?: number[]; rows: { text: string; marks?: number }[]; ruled?: number[] }
 
 /** A reviewed card's criterion carries its own sub-question first, then lines that are not its answers:
  *  the scheme's "Nóta: …" for the part ("Má tá dhá phointe eolais i gceist, tá 3 mharc …"), which is an
@@ -88,16 +89,27 @@ interface Draft { prompt?: string; tariff: number; ladder?: number[]; rows: { te
 const PART_NOTE = /^Nóta:/;
 const SECTION_SUMMARY = /^(?:Freagair Léamhthuiscint|Tá Ceist \d+\s*[–-]\s*\d+ ar cómharc|Order-dependent award)/;
 /** "(Is leor aon trí cinn as na ceithre cinn: …)", "(Ní mór ‘…’ a bheith sa fhreagra chun an dara marc a
- *  ghnóthú)" after an answer: how much of it suffices or what it must contain, a direction. */
-const SUFFICES = /\((?:Is leor|aon|Ní mór)\s[^()]*(?:\([^()]*\)[^()]*)*\)/g;
-/** "… nó áitiúla = 1 mharc (gan ‘in 2024’ sa fhreagra)": the qualifier is the condition of the answer it
- *  follows. It stays on that row, as a second slice: "… nó áitiúla: (gan ‘in 2024’ sa fhreagra) · 1m". */
-const QUALIFIED_PRICE = /\s*(=\s*\d+\s*m?h?arc\b)\s*(\(gan\s[^()=]*\))/g;
+ *  ghnóthú)", "(Tá gá le ‘conradh’ … a lua sa fhreagra chun an dá mharc a bhronnadh.)" after an answer: how much of
+ *  it suffices or what it must contain, a direction. */
+const SUFFICES = /\((?:Is leor|aon|Ní mór|Tá gá le)\s[^()]*(?:\([^()]*\)[^()]*)*\)/g;
+/** "… nó áitiúla = 1 mharc (gan ‘in 2024’ sa fhreagra)", "… = 2 mharc (Gan ainmneacha an dá thír luaite, …)": the qualifier is the condition of the answer it
+ *  follows, as "= 0 marc (gá le cáiliú)" (2018 Higher B 1(b)(ii)) is. It stays on that row, as a second slice:
+ *  "… nó áitiúla: (gan ‘in 2024’ sa fhreagra) · 1m". */
+const QUALIFIED_PRICE = /\s*(=\s*\d+\s*m?h?arc\b)\s*(\((?:[Gg]an|gá le)\s[^()=]*\))/g;
 /** "… in áit faoi leith (2 mharc) in imeacht tréimhse áirithe ama (1 mharc) = 3 mharc" (2020 Higher A 1(a)): one answer
  *  printing how its own price divides. Where the bracketed prices add up to the price after them they are part of the
  *  answer's text, not tariffs: a word joiner (U+2060) holds each one together until the rows are cut, then goes. */
 const INLINE_SPLIT = /(?:[^•=()]*\(\d+\s*m?h?arc\)){2,}[^•=()]*(?==\s*(\d+)\s*m?h?arc\b)/g;
 const HELD = '\u2060';
+/** "{2 mharc} • D’ísligh sé an cíos (1 mharc) agus dháil sé bia … (1 mharc)" (2019 Higher A 2(b)(i)): the part's one answer
+ *  printing how its price divides, with no price after it. Where the bracketed prices add up to the brace they are the
+ *  answer's text, held as INLINE_SPLIT holds them, and the brace prices the answer. */
+const BRACED_SPLIT = /(\{(\d+)\s*m?h?arc\}\s*•\s*)((?:[^•=(){}]*\(\d+\s*m?h?arc\)){2,}[^•=(){}]*?)\s*$/;
+
+/** "Báisteach/fearthainn = 2 mharc (báisteach/fearthainn throm = 3 mharc)" (2019 Ordinary Fógra a Dó 2(a)): a bracketed answer
+ *  at its own single price, printed straight after another answer's price, is one more answer, not a note. A bracketed
+ *  direction or qualifier ("(Is leor …", "(Ní mór …", "(Gan …", "(Tá gá le …") is never an answer. */
+const BRACKETED_ANSWER = /(=\s*\d+\s*m?h?arc\b)\s*\((?!\s*(?:Is leor|aon|Ní mór|[Gg]an|Tá gá le)\s)([^()=+:]+?)\s*(=\s*\d+\s*m?h?arc\b)\)/g;
 
 /** Whether a line is the card's printed question, read past the paper's hyphens and spacing. */
 const letters = (value: string) => value.toLowerCase().replace(/[^a-záéíóú]+/g, '');
@@ -120,11 +132,16 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
     const split = [...answer.matchAll(/\((\d+)\s*m?h?arc\)/g)].reduce((sum, m) => sum + Number(m[1]), 0);
     return split === Number(total) ? answer.replace(/\((\d+)\s*(m?h?arc)\)/g, `($1${HELD}$2)`) : answer;
   });
+  text = text.replace(BRACED_SPLIT, (whole: string, head: string, total: string, answer: string) => {
+    const split = [...answer.matchAll(/\((\d+)\s*m?h?arc\)/g)].reduce((sum, m) => sum + Number(m[1]), 0);
+    return split === Number(total) ? `${head}${answer.replace(/\((\d+)\s*(m?h?arc)\)/g, `($1${HELD}$2)`)} = ${total} mharc` : whole;
+  });
   // A price printed inside the qualifier's brackets, "(gan aon cháiliú = 1 mharc)", reads as the qualified price above.
   text = text.replace(/\s*\((gan\s[^()=]*?)\s*(=\s*\d+\s*m?h?arc\b)\)/g, (_, qualifier: string, price: string) => `: (${qualifier}) ${price}`);
   // A split printed before the brace, "(Dhá bhealach: 2 mharc + 1 mharc) {3 mharc}", is the brace's own split.
   text = text.replace(/\((Dhá\s[^():]*):\s*(\d+\s*m?h?arc\b(?:\s*\+\s*\d+\s*m?h?arc\b)+)\)\s*\{\s*(\d+\s*m?h?arc\b)\s*\}/g,
     (_, label: string, split: string, total: string) => `(${label}) {${total}: ${split}}`);
+  text = text.replace(BRACKETED_ANSWER, (_, price: string, answer: string, own: string) => `${price} ${answer.trim()} ${own}`);
   text = text.replace(SUFFICES, note => { directions.push(tidy(note)); return ' '; });
   text = text.replace(/\s+/g, ' ').trim().replace(HEADER, '');
   text = text.replace(NOTE, (_, note: string) => { directions.push(tidy(note)); return ' '; });
@@ -170,7 +187,18 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
     if (!current) return 'answer before any sub-question';
     let answers = 0;
     for (const [index, item] of items.entries()) {
-      if (RULE.test(item)) { directions.push(item); continue; }
+      if (RULE.test(item)) {
+        directions.push(item);
+        // "5 mharc An chéad phíosa eolais atá ceart = 3 mharc; an dara píosa eolais atá ceart = 2 mharc" (2018 Ordinary
+        // Reading B 1(b)): the rules price the part's ladder where no "3 mharc + 2 mharc = 5 mharc" does. Their prices
+        // become the ladder once they add up to the part's tariff, so its answers are claimed in order, first 3 then 2.
+        if (marks !== undefined && index === items.length - 1 && !current.ladder && current.rows.length === 0) {
+          current.ruled = [...(current.ruled ?? []), marks];
+          const ruled = current.ruled;
+          if (ruled.length > 1 && ruled.reduce((a, b) => a + b, 0) === current.tariff) current.ladder = cumulative(ruled);
+        }
+        continue;
+      }
       if (DIRECTION.test(item)) { directions.push(item); continue; }
       answers += 1;
       // The bullets before the priced one are its alternatives at the same
@@ -298,6 +326,18 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   const seen = new Set<string>();
   return { ok: true, allocation: { parts: built, directions: directions.filter(note => note && !seen.has(note) && seen.add(note)) } };
 }
+
+/** One printed answer carrying every point a ladder prices ("… ar oíche áirithe (pointe amháin eolais) agus eolas cruinn …
+ *  (an dara pointe eolais)", 2018 Higher A 1(a)): on the card the student claims how many of its points they made, so the
+ *  answer steps through the ladder ([0, 2, 3]) rather than paying its first rung alone. Applied where a card's criterion
+ *  takes its rows (factory.ts), after any slot card has read the part's ladder. */
+export const stepSingleAnswerLadders = (allocation: IrishAllocation): IrishAllocation => ({
+  ...allocation,
+  parts: allocation.parts.map(part => (part.ladder && part.ladder.length > 1 && part.rows.length === 1
+    ? { id: part.id, ...(part.prompt ? { prompt: part.prompt } : {}), tariff: part.tariff, ...(part.samples ? { samples: part.samples } : {}),
+      rows: [{ ...part.rows[0], marks: part.tariff, steps: [0, ...part.ladder] }] }
+    : part)),
+});
 
 export function irishAnswersFor(source: IrishAnswerSource): IrishAllocation | undefined {
   const result = parseIrishAnswers(source);

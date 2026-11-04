@@ -187,7 +187,7 @@ def build():
                 f'W-{group}-{roman}', f'composition-{group.lower()}-{roman}', f'Ceapadóireacht {group}({roman})', body + f'\n\nAn rogha don chárta seo: {group}({roman}).',
                 topic, [7], [10, 11, 12, 13], [
                     criterion('tasc', 'An Tasc', 2, [marking.split('An tÁbhar (8 marc)')[0]], permitted=[0, 2]),
-                    criterion('abhar', 'An tÁbhar', 8, [marking.split('An tÁbhar (8 marc)', 1)[1].split('An Cumas Gaeilge (40 marc)')[0]], 'indicative'),
+                    criterion('abhar', 'An tÁbhar', 8, [marking.split('An tÁbhar (8 marc)', 1)[1].split('An Cumas Gaeilge (40 marc)')[0]]),
                     criterion('gaeilge', 'An Cumas Gaeilge', 40, [marking.split('An Cumas Gaeilge (40 marc)', 1)[1], symbols, table40, table_short,
                                                                     'Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted.'])],
                 ['Lean an fhoirm scríbhneoireachta a iarrtar sa cheist.', 'Coinnigh ceangal cinnte leanúnach idir an teideal agus an t-ábhar.', 'Leathleathanach nó mar sin.'],
