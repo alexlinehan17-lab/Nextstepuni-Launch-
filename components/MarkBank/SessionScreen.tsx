@@ -95,6 +95,7 @@ import { frenchMarks, type FrenchScoreId } from './frenchRubric';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
 import { stemWithListBreaks } from './stemText';
+import { anyNHeading, marksWord } from './sessionText';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -710,9 +711,7 @@ const MarkRowView: React.FC<{
                 card) has no value per option, and printed "undefined marks
                 each" on 34 shipped cards; it states the choice alone and the
                 card's footnote says how the marks are given. */}
-            {requiresAll ? `All ${g.claimMax} of these` : `Any ${g.claimMax} of these`}{g.perOptionSteps
-              ? ` — ${g.perOptionSteps.slice(0, g.claimMax).join(' then ')} marks`
-              : Number.isFinite(g.perOption) ? ` — ${g.perOption} marks each` : ''}
+            {anyNHeading(g)}
           </span>
           {showMarks && (
             <span style={{
@@ -2665,7 +2664,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           by a declared edge rather than adrift in a wide window. */}
       {studyReview?.banner}
       {paperLayout ? <header className="mb-paper-session-heading">
-        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{assessmentCard.totalMarks} marks · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
+        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle ref={studyTitleRef} tabIndex={studyReview ? -1 : undefined}>{studyReview ? studyReview.topicTitle(assessmentCard) : reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{assessmentCard.totalMarks} {marksWord(assessmentCard.totalMarks)} · Question {studyReview ? position + 1 : Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
         <div><Button variant="outline" aria-label={expanded?'Contract to compact view':'Expand to full screen'} aria-pressed={expanded} onClick={()=>setExpanded(value=>!value)}>{expanded?<Minimize2 size={16}/>:<Maximize2 size={16}/>}<span>{expanded?'Contract':'Expand'}</span></Button><Button ref={leaveButtonRef} variant="ghost" size="icon" aria-label="Close practice" onClick={openExitConfirmation}><X size={18}/></Button></div>
       </header> : <div style={{
         position: 'sticky', top: 0, zIndex: 3,
@@ -3116,7 +3115,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                           <React.Fragment key={id}>
                           {taskGroup && (
                             <h3 style={{ margin: '24px 0 8px', paddingTop: 12, borderTop: `1px solid ${HAIRLINE_2}`, font: `600 16px/1.4 ${SERIF}`, color: INK }}>
-                              {taskGroup.label} · {taskGroup.marks} marks
+                              {taskGroup.label} · {taskGroup.marks} {marksWord(taskGroup.marks)}
                             </h3>
                           )}
                           <MarkRowView
@@ -3177,7 +3176,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       {assessmentCard.tariffModel.kind === 'bestNofParts' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
                           Answer any {assessmentCard.tariffModel.answer} of these {assessmentCard.tariffModel.ofParts} —
-                          {' '}{assessmentCard.tariffModel.perPart} marks each.
+                          {' '}{assessmentCard.tariffModel.perPart} {marksWord(assessmentCard.tariffModel.perPart)} each.
                         </p>
                       )}
                     </>
