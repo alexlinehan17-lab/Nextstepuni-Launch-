@@ -97,6 +97,7 @@ import { questionParts } from './questionParts';
 import { stemWithListBreaks } from './stemText';
 import { anyNHeading, marksWord, unclaimedName } from './sessionText';
 import RouteHeading from './RouteHeading';
+import FigureZoom from './FigureZoom';
 import { cardRoutes, routeDisplayOrder, routeHeadAt, routeSelection } from './routes';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
@@ -2904,13 +2905,14 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                  stem AND the retyped ask: re-telling either alongside the
                  print could only duplicate or contradict it. */
               <figure style={{ margin: '14px 0 0' }}>
-                <img
+                {/* Opens full screen to zoom: a wide crop sets 7.5-10 px text on a phone. */}
+                <FigureZoom
                   src={figureUrl(questionFigure.src)} alt={questionFigure.alt}
-                  style={{ maxWidth: '100%', maxHeight: 720, objectFit: 'contain', display: 'block' }}
+                  imgStyle={{ maxWidth: '100%', maxHeight: 720, objectFit: 'contain', display: 'block' }}
+                  kicker={printedQuestionReplacesText ? 'Printed question' : 'Figure'}
+                  caption={questionFigure.attribution}
+                  captionStyle={{ marginTop: 6, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}
                 />
-                <figcaption style={{ marginTop: 6, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}>
-                  {questionFigure.attribution}
-                </figcaption>
               </figure>
             )}
 
@@ -2942,19 +2944,18 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                  answer printed in the question area answers the question for
                  the student before they have tried it. */
               <figure style={{ margin: '16px -18px 0', padding: '14px 18px 0', borderTop: `1px solid ${HAIRLINE_2}` }}>
-                <div style={{ textAlign: 'center' }}>
-                  <img
-                    src={figureUrl(figure.src)} alt={figure.alt}
-                    style={{ maxWidth: '100%', maxHeight: 640, objectFit: 'contain', display: 'inline-block' }}
-                    /* 640, not 340: a Maths figure is a worked solution to be READ, and
-                       a tall one shrank to a 126px-wide thumbnail. Both bounds only ever
-                       shrink an image, so a wide diagram -- already limited by width --
-                       is unaffected and nothing is upscaled into blur. */
-                  />
-                </div>
-                <figcaption style={{ marginTop: 8, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}>
-                  {figure.attribution}
-                </figcaption>
+                <FigureZoom
+                  src={figureUrl(figure.src)} alt={figure.alt}
+                  imgWrapStyle={{ textAlign: 'center' }}
+                  imgStyle={{ maxWidth: '100%', maxHeight: 640, objectFit: 'contain', display: 'inline-block' }}
+                  /* 640, not 340: a Maths figure is a worked solution to be READ, and
+                     a tall one shrank to a 126px-wide thumbnail. Both bounds only ever
+                     shrink an image, so a wide diagram -- already limited by width --
+                     is unaffected and nothing is upscaled into blur. */
+                  kicker={figure.solution ? 'Marking scheme' : 'Figure'}
+                  caption={figure.attribution}
+                  captionStyle={{ marginTop: 8, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}
+                />
               </figure>
             )}
 
