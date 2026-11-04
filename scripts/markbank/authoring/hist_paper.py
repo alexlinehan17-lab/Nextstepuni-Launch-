@@ -314,10 +314,18 @@ def _opens_paragraph(prev, line, edge, right, verse):
 
 
 def paragraphs(stem_lines):
-    """The printed lines of an extract as the paper sets them out, as text."""
-    return '\n\n'.join(
-        '\n'.join(' '.join(' '.join(t for t, _l in para).split()) for para in block)
-        for block in layout(stem_lines) if block)
+    """The printed lines of an extract as the paper sets them out, as text.
+
+    The instruction and the extract are two blocks, a blank line between
+    them. Where the paper also leaves a gap between the extract's own
+    paragraphs (2010-2012 Ordinary), each paragraph still opens a new line,
+    as it does on every paper from 2013, and the one blank line stays the
+    instruction's."""
+    blocks = ['\n'.join(' '.join(' '.join(t for t, _l in para).split()) for para in block)
+              for block in layout(stem_lines) if block]
+    if len(blocks) > 2:
+        blocks = [blocks[0], '\n'.join(blocks[1:])]
+    return '\n\n'.join(blocks)
 
 
 def layout(stem_lines):

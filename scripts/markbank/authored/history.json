@@ -17635,6 +17635,4728 @@
   "stem": "Empires in revolution, 1775-1815"
  },
  {
+  "id": "hist-2012-ol-lm-s1-q1a",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "1",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "gandhi-doing",
+  "questionRef": "2012 OL Later Modern Section 1 Q1(a)",
+  "questionText": "In document A, what is Gandhi doing?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reading",
+    "marks": 8
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: British withdrawal from India, 1945-1947",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s1-q1b",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "1",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "gandhi-dressed",
+  "questionRef": "2012 OL Later Modern Section 1 Q1(b)",
+  "questionText": "In document A, how is Gandhi dressed?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wearing a loincloth/ wearing very little",
+    "marks": 8
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: British withdrawal from India, 1945-1947",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s1-q1c",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "1",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "anything-did-gandhi-say-author",
+  "questionRef": "2012 OL Later Modern Section 1 Q1(c)",
+  "questionText": "According to document B, what, if anything, did Gandhi say to the author?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gandhi said nothing to her",
+    "marks": 8
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: British withdrawal from India, 1945-1947",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s1-q1d",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "1",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "gandhi-aim",
+  "questionRef": "2012 OL Later Modern Section 1 Q1(d)",
+  "questionText": "From document B, what was Gandhi’s aim?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To lead his people to freedom/ Indian independence",
+    "marks": 8
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: British withdrawal from India, 1945-1947",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s1-q1e",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "1",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "does-author-digest-her-experience",
+  "questionRef": "2012 OL Later Modern Section 1 Q1(e)",
+  "questionText": "According to document B, how does the author digest her experience?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "By writing a book about it",
+    "marks": 8
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: British withdrawal from India, 1945-1947",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s1-q2a",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "1",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "agree-gandhi-appearance",
+  "questionRef": "2012 OL Later Modern Section 1 Q2(a)",
+  "questionText": "Do documents A and B agree on Gandhi’s appearance? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Document A and Document B agree",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Document A shows him in his loincloth, sitting cross-legged, wearing spectacles and reading",
+    "marks": 4
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Document B states all of these four points in words",
+    "marks": 4,
+    "contextNote": "Mark quality of explanation on its merits. — Reference to both documents = 4M + 4M Max = 10M"
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints 'Reference to both documents = 4M + 4M Max = 10M' for this ask: each component at its printed marks.",
+  "stem": "Case study: British withdrawal from India, 1945-1947",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s1-q2b",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "1",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "shown-does-gandhi-enjoy-luxurious-lifestyle",
+  "questionRef": "2012 OL Later Modern Section 1 Q2(b)",
+  "questionText": "As shown in the documents, A and B, does Gandhi enjoy a luxurious lifestyle? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gandhi does not enjoy a luxurious lifestyle",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Document A shows his room to be without furniture or ornament/ He is dressed simply and is content",
+    "marks": 4
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Document B describes him as a “little old man” and the writer seems surprised that such a simple man could now be so important in his country‟s affairs",
+    "marks": 4,
+    "contextNote": "Mark quality of explanation on its merits. — Allow overlap with answer to 2(a). — Two points to support answer = 4M + 4M Max = 10M"
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints 'Two points to support answer = 4M + 4M Max = 10M' for this ask: each component at its printed marks.",
+  "stem": "Case study: British withdrawal from India, 1945-1947",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s1-q3a",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "1",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "does-writer-support-gandhi-leader",
+  "questionRef": "2012 OL Later Modern Section 1 Q3(a)",
+  "questionText": "Does the writer of document B support Gandhi as a leader? Explain your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "She supports Gandhi OR She does not support Gandhi When she is shown in to Gandhi‟s room, she seems to be impressed by the simplicity of his lifestyle",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This makes it sound like she approves of him",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "She asks “could this be the man?” which makes her sound surprised that such a person “had kindled the imagination of the world”",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "This makes it sound like she admires him.",
+    "marks": null
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
+  "stem": "Case study: British withdrawal from India, 1945-1947",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s1-q3b",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "1",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "think-more-useful-historian",
+  "questionRef": "2012 OL Later Modern Section 1 Q3(b)",
+  "questionText": "Which of the documents, A or B, do you think is the more useful to the historian? Explain your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Candidate may answer: Document A; Document B; Neither Document",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Document A is a visual source and the advantage of that is that we can see for ourselves – we can look upon the scene as it actually was on the day",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Here we can even begin to feel the atmosphere in the room",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Document B restates in words much of what can be seen in Document A. But it does go further, telling us that Gandhi was leading his country to freedom and had kindled the imagination of the world",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Also she admits that photographs only snatch highlights and that maybe they do not probe deeper into the issues",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Both Document A and Document B have their merits as historical sources and it may be possible to argue that neither one is more useful to the historian than the other",
+    "marks": null
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
+  "stem": "Case study: British withdrawal from India, 1945-1947",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s1-q4",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "1",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "reasons-did-british-partition-india-1947",
+  "questionRef": "2012 OL Later Modern Section 1 Q4",
+  "questionText": "For what reasons did the British partition India in 1947?",
+  "totalMarks": 20,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "Mark by the principle of Core Statement. Max = 20M"
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "Here, in question 4 of the Documents-based Question, the examiner will be looking to award 5 marks each to four Core Statements for the full 20 marks allocation.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": [],
+    "elementRule": {
+     "note": "NB: What are the reasons why Britain partitioned India in 1947? = Max 20M\nWhat are the reasons why Britain left India in 1947? = Max 10M",
+     "caps": [
+      {
+       "when": "What are the reasons why Britain left India in 1947?",
+       "max": 10
+      }
+     ]
+    }
+   },
+   "schemePages": [
+    8
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m."
+  },
+  "notes": "Later Modern field of study. The scheme prints '4. Contextualisation (20 marks) Mark by the principle of Cor' for this ask and no model answer.",
+  "stem": "Case study: British withdrawal from India, 1945-1947"
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t1a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "sort-visitors-came-thurles-train",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 1 A Q1",
+  "questionText": "What sort of visitors came to Thurles by train?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Clergy",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Laity",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a report in the Freeman’s Journal on the opening of the Synod of Thurles, 1850. Read it and answer the questions that follow.\n\nEach succeeding train arriving at Thurles came fully laden with visitors, both clergy and laity. The hotels in the town were crowded from the previous day, and temporary accommodation was eagerly sought.\nEven the private houses of the townspeople were required for the purpose of accommodating the crowds who could not obtain room in the hotels. The shops and warehouses were closed.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t1a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "temporary-accommodation-eagerly-sought",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 1 A Q2",
+  "questionText": "Why was temporary accommodation eagerly sought?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Because all the hotels were already crowded",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a report in the Freeman’s Journal on the opening of the Synod of Thurles, 1850. Read it and answer the questions that follow.\n\nEach succeeding train arriving at Thurles came fully laden with visitors, both clergy and laity. The hotels in the town were crowded from the previous day, and temporary accommodation was eagerly sought.\nEven the private houses of the townspeople were required for the purpose of accommodating the crowds who could not obtain room in the hotels. The shops and warehouses were closed.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t1a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "where-did-those-who-not-find",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 1 A Q3",
+  "questionText": "Where did those who could not find rooms in the hotels seek accommodation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Private/ family houses",
+    "marks": 6,
+    "contextNote": "„Houses‟ only = 3M",
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ]
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a report in the Freeman’s Journal on the opening of the Synod of Thurles, 1850. Read it and answer the questions that follow.\n\nEach succeeding train arriving at Thurles came fully laden with visitors, both clergy and laity. The hotels in the town were crowded from the previous day, and temporary accommodation was eagerly sought.\nEven the private houses of the townspeople were required for the purpose of accommodating the crowds who could not obtain room in the hotels. The shops and warehouses were closed.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t1a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "business-usual-thurles-reason",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 1 A Q4",
+  "questionText": "Was it business as usual in Thurles? Give a reason for your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Business as usual OR Not business as usual",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The shops and warehouses were closed/ The hotels were all crowded",
+    "marks": 3,
+    "contextNote": "Any ONE valid reason for 3M"
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '(6)' for this ask: each component at its printed marks.",
+  "stem": "This is an edited extract from a report in the Freeman’s Journal on the opening of the Synod of Thurles, 1850. Read it and answer the questions that follow.\n\nEach succeeding train arriving at Thurles came fully laden with visitors, both clergy and laity. The hotels in the town were crowded from the previous day, and temporary accommodation was eagerly sought.\nEven the private houses of the townspeople were required for the purpose of accommodating the crowds who could not obtain room in the hotels. The shops and warehouses were closed.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t1a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "did-cardinal-paul-cullen-convene-synod",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 1 A Q5",
+  "questionText": "Why did Cardinal Paul Cullen convene the Synod of Thurles, 1850?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid explanation",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a report in the Freeman’s Journal on the opening of the Synod of Thurles, 1850. Read it and answer the questions that follow.\n\nEach succeeding train arriving at Thurles came fully laden with visitors, both clergy and laity. The hotels in the town were crowded from the previous day, and temporary accommodation was eagerly sought.\nEven the private houses of the townspeople were required for the purpose of accommodating the crowds who could not obtain room in the hotels. The shops and warehouses were closed.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t1b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "william-carleton-mother-mary-aikenhead-reforms",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 1 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. William Carleton.\n2. Mother Mary Aikenhead.\n3. Reforms of the Liberal government.\n4. Industrial development in Belfast.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    10
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Ireland and the Union, 1815-1870"
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t1c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "did-daniel-connell-set-winning-repeal",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 1 C",
+  "questionText": "Answer one of the following:\n1. How did Daniel O’ Connell set about winning Repeal of the Act of Union and why did he fail?\n2. What were the responses of Charles Trevelyan and/or Asenath Nicholson to the Famine?\n3. What did William Dargan contribute to economy and society in Ireland?\n4. What did Thomas Davis and/or Charles Kickham contribute to Irish affairs?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    10
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Ireland and the Union, 1815-1870"
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t2a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "bill-introduced-house-commons-april-1886",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 2 A Q1",
+  "questionText": "What Bill was introduced in the House of Commons on 8 April, 1886?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The (First) Home Rule Bill",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract the journalist Frank Harris sketches the scene in the House of Commons, London, 8 April, 1886, when the First Home Rule Bill was introduced. Read it and answer the questions that follow.\n\nThe House was so crowded that members sat about on the steps and even on the arms of benches and on each other’s knees. Every diplomat in London seemed to be present.\nBishops, in their black, sat next to Indian princes by the dozen who, blazing with diamonds, lent a rich Oriental flavour to the scene.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t2a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "does-writer-show-house-crowded",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 2 A Q2",
+  "questionText": "How does the writer show that the House was crowded?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Any TWO",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Members sat on the steps",
+      "They sat on the arms of benches",
+      "They sat on each other‟s knees"
+     ]
+    }
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract the journalist Frank Harris sketches the scene in the House of Commons, London, 8 April, 1886, when the First Home Rule Bill was introduced. Read it and answer the questions that follow.\n\nThe House was so crowded that members sat about on the steps and even on the arms of benches and on each other’s knees. Every diplomat in London seemed to be present.\nBishops, in their black, sat next to Indian princes by the dozen who, blazing with diamonds, lent a rich Oriental flavour to the scene.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t2a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "colour-did-bishops-wear",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 2 A Q3",
+  "questionText": "What colour did the bishops wear?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Black",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract the journalist Frank Harris sketches the scene in the House of Commons, London, 8 April, 1886, when the First Home Rule Bill was introduced. Read it and answer the questions that follow.\n\nThe House was so crowded that members sat about on the steps and even on the arms of benches and on each other’s knees. Every diplomat in London seemed to be present.\nBishops, in their black, sat next to Indian princes by the dozen who, blazing with diamonds, lent a rich Oriental flavour to the scene.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t2a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "there-many-indian-princes-present-reason",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 2 A Q4",
+  "questionText": "Were there many Indian princes present? Give a reason for your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Yes",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "It says that they were there “by the dozen”",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '(6)' for this ask: each component at its printed marks.",
+  "stem": "In this edited extract the journalist Frank Harris sketches the scene in the House of Commons, London, 8 April, 1886, when the First Home Rule Bill was introduced. Read it and answer the questions that follow.\n\nThe House was so crowded that members sat about on the steps and even on the arms of benches and on each other’s knees. Every diplomat in London seemed to be present.\nBishops, in their black, sat next to Indian princes by the dozen who, blazing with diamonds, lent a rich Oriental flavour to the scene.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t2a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "evidence-does-offer-other-countries-interested",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 2 A Q5",
+  "questionText": "What evidence does the extract offer that other countries might have been interested in the proceedings?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid piece of evidence: Many diplomats from other countries were present/ Many Indian princes were present",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract the journalist Frank Harris sketches the scene in the House of Commons, London, 8 April, 1886, when the First Home Rule Bill was introduced. Read it and answer the questions that follow.\n\nThe House was so crowded that members sat about on the steps and even on the arms of benches and on each other’s knees. Every diplomat in London seemed to be present.\nBishops, in their black, sat next to Indian princes by the dozen who, blazing with diamonds, lent a rich Oriental flavour to the scene.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t2b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "isabella-tod-operative-movement-belfast-shipyards",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 2 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Isabella Tod.\n2. The Co-operative Movement.\n3. The Belfast shipyards.\n4. W.B. Yeats.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    10
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Movements for political and social reform, 1870-1914"
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t2c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "did-michael-davitt-contribute-land-agitation",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 2 C",
+  "questionText": "Answer one of the following:\n1. What did Michael Davitt contribute to land agitation and land reform?\n2. What problems did the GAA encounter between 1884 and 1891?\n3. How did James Connolly and/or James Larkin seek improvements for workers?\n4. What part did Edward Carson play in defending unionism in Ireland?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    10
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Movements for political and social reform, 1870-1914"
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t3a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "when-where-event-taking-place",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 3 A Q1",
+  "questionText": "When and where is the event taking place?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1932",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Dublin",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '(6)' for this ask: each component at its printed marks.",
+  "stem": "In this photograph Mass is being celebrated on O’Connell Bridge, Dublin during the Eucharistic Congress, 1932. Study it and answer the questions that follow.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t3a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "religious-ceremony-taking-place",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 3 A Q2",
+  "questionText": "What religious ceremony is taking place?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Benediction/ Mass",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this photograph Mass is being celebrated on O’Connell Bridge, Dublin during the Eucharistic Congress, 1932. Study it and answer the questions that follow.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t3a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "evidence-there-photograph-event-organised-carefully",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 3 A Q3",
+  "questionText": "What evidence is there in the photograph that the event has been organised carefully?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid piece of evidence: Because the people are lined out in a planned fashion/ Empty spaces suggest that stewards kept the crowds in check/ There are banners, flags, etc",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this photograph Mass is being celebrated on O’Connell Bridge, Dublin during the Eucharistic Congress, 1932. Study it and answer the questions that follow.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t3a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "location-decorated",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 3 A Q4",
+  "questionText": "How is the location decorated?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Flags/ Banners/ Bunting",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this photograph Mass is being celebrated on O’Connell Bridge, Dublin during the Eucharistic Congress, 1932. Study it and answer the questions that follow.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t3a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "way-eucharistic-congress-1932-success-government",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 3 A Q5",
+  "questionText": "In what way was the Eucharistic Congress, 1932, a success for the government and/or the Catholic Church?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid way in which Congress was a success",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this photograph Mass is being celebrated on O’Connell Bridge, Dublin during the Eucharistic Congress, 1932. Study it and answer the questions that follow.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t3b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "importance-the1918-election-countess-markievicz-evie",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 3 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The importance of the1918 election.\n2. Countess Markievicz.\n3. Evie Hone.\n4. The Unionist Party in power in Northern Ireland.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    10
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The pursuit of sovereignty and the impact of partition, 1912-1949"
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t3c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "discussed-treaty-negotiations-london-october-december",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 3 C",
+  "questionText": "Answer one of the following:\n1. What was discussed at the Treaty negotiations in London (October-December, 1921) and how did these discussions affect Ireland?\n2. What did W.T. Cosgrave achieve as head of government, 1923-1932?\n3. How did Éamon de Valera conduct Anglo-Irish relations between 1932 and 1945?\n4. What was the impact of World War II on Belfast?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    10
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The pursuit of sovereignty and the impact of partition, 1912-1949"
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t4a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "when-did-ellis-island-officially-open",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 4 A Q1",
+  "questionText": "When did Ellis Island officially open?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1892",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract describes how an Irish girl, Annie Moore, became the first person in the world to enter America through Ellis Island in 1892. Read it and answer the questions that follow.\n\nWhen Ellis Island officially opened on 1 January, 1892, the first passenger registered through the world famous immigration station was a young Irish girl named Annie Moore. Travelling with her two young brothers, Annie departed Queenstown (now Cobh) Co. Cork on 20 December 1891, on board the SS Nevada, one of 148 steerage passengers.\nThe ship arrived in New York on Thursday evening, 31 December. They were processed through Ellis Island the following morning, New Year’s Day, and also Annie’s fifteenth birthday. To her surprise, Annie was greeted by a host of city, state and federal officers. They presented her with a certificate and a ten-dollar gold coin in recognition of her being the first immigrant to enter America through Ellis Island.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t4a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "many-passengers-travelled-steerage",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 4 A Q2",
+  "questionText": "How many passengers travelled steerage?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "148",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract describes how an Irish girl, Annie Moore, became the first person in the world to enter America through Ellis Island in 1892. Read it and answer the questions that follow.\n\nWhen Ellis Island officially opened on 1 January, 1892, the first passenger registered through the world famous immigration station was a young Irish girl named Annie Moore. Travelling with her two young brothers, Annie departed Queenstown (now Cobh) Co. Cork on 20 December 1891, on board the SS Nevada, one of 148 steerage passengers.\nThe ship arrived in New York on Thursday evening, 31 December. They were processed through Ellis Island the following morning, New Year’s Day, and also Annie’s fifteenth birthday. To her surprise, Annie was greeted by a host of city, state and federal officers. They presented her with a certificate and a ten-dollar gold coin in recognition of her being the first immigrant to enter America through Ellis Island.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t4a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "when-did-ship-arrive-new-york",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 4 A Q3",
+  "questionText": "When did the ship arrive in New York?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "31 December",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract describes how an Irish girl, Annie Moore, became the first person in the world to enter America through Ellis Island in 1892. Read it and answer the questions that follow.\n\nWhen Ellis Island officially opened on 1 January, 1892, the first passenger registered through the world famous immigration station was a young Irish girl named Annie Moore. Travelling with her two young brothers, Annie departed Queenstown (now Cobh) Co. Cork on 20 December 1891, on board the SS Nevada, one of 148 steerage passengers.\nThe ship arrived in New York on Thursday evening, 31 December. They were processed through Ellis Island the following morning, New Year’s Day, and also Annie’s fifteenth birthday. To her surprise, Annie was greeted by a host of city, state and federal officers. They presented her with a certificate and a ten-dollar gold coin in recognition of her being the first immigrant to enter America through Ellis Island.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t4a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "annie-surprised-when-she-entered-ellis",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 4 A Q4",
+  "questionText": "Why was Annie surprised when she entered Ellis Island?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid reason: She didn‟t expect to be greeted personally by important people/ She didn‟t expect to be presented with a certificate and a gold coin",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract describes how an Irish girl, Annie Moore, became the first person in the world to enter America through Ellis Island in 1892. Read it and answer the questions that follow.\n\nWhen Ellis Island officially opened on 1 January, 1892, the first passenger registered through the world famous immigration station was a young Irish girl named Annie Moore. Travelling with her two young brothers, Annie departed Queenstown (now Cobh) Co. Cork on 20 December 1891, on board the SS Nevada, one of 148 steerage passengers.\nThe ship arrived in New York on Thursday evening, 31 December. They were processed through Ellis Island the following morning, New Year’s Day, and also Annie’s fifteenth birthday. To her surprise, Annie was greeted by a host of city, state and federal officers. They presented her with a certificate and a ten-dollar gold coin in recognition of her being the first immigrant to enter America through Ellis Island.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t4a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "apart-non-european-country-did-many",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 4 A Q5",
+  "questionText": "Apart from the US, to what non-European country did many Irish people emigrate?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid country: eg Canada, Australia",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract describes how an Irish girl, Annie Moore, became the first person in the world to enter America through Ellis Island in 1892. Read it and answer the questions that follow.\n\nWhen Ellis Island officially opened on 1 January, 1892, the first passenger registered through the world famous immigration station was a young Irish girl named Annie Moore. Travelling with her two young brothers, Annie departed Queenstown (now Cobh) Co. Cork on 20 December 1891, on board the SS Nevada, one of 148 steerage passengers.\nThe ship arrived in New York on Thursday evening, 31 December. They were processed through Ellis Island the following morning, New Year’s Day, and also Annie’s fifteenth birthday. To her surprise, Annie was greeted by a host of city, state and federal officers. They presented her with a certificate and a ten-dollar gold coin in recognition of her being the first immigrant to enter America through Ellis Island.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t4b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "orange-order-canada-domhnall-mac-amhlaigh",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 4 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The Orange Order in Canada.\n2. Domhnall Mac Amhlaigh.\n3. John F. Kennedy.\n4. The creation of Irish images through film and music.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    11
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The Irish diaspora, 1840-1966"
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t4c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "conditions-did-irish-experience-britain-during",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 4 C",
+  "questionText": "Answer one of the following:\n1. What conditions did the Irish experience in Britain and/or the US during the nineteenth century?\n2. What were the aims of de Valera in America (June, 1919- December, 1920) and how successful was he in achieving them?\n3. Why and to where did the Irish emigrate during the period, 1920-1966?\n4. How did one or more of the following represent the Catholic Church: Archbishop Mannix; Bishop Edward Galvin; Mother Mary Martin?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    11
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The Irish diaspora, 1840-1966"
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t5a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "leaders-attended-conference-chequers",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 5 A Q1",
+  "questionText": "What leaders attended the conference at Chequers?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Heath/ British Prime Minister",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Lynch/ Irish Taoiseach",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract Paddy Devlin reflects on events relating to Northern Ireland in September, 1971. Read it and answer the questions that follow.\n\nShocked by the rise of violence in 1971, the British and Irish governments began to consider the way ahead at a two-day conference at Chequers on 6 -7 September. Both the British Prime Minister Edward Heath and the Irish Taoiseach Jack Lynch attended.\nI do not think that Jack Lynch ever received the credit for successfully persuading Edward Heath to adopt a major change of policy on Northern Ireland. Until then, Heath had listened only to Brian Faulkner who told him that internment would solve the IRA problem, halt the violence, and restore everything to normal.\nAfter Chequers, Heath challenged Faulkner and told him that a political solution was needed, not military oppression.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t5a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "author-credit-should-given-jack-lynch",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 5 A Q2",
+  "questionText": "According to the author, what credit should be given to Jack Lynch?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Credit for persuading Heath to adopt a major policy change",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract Paddy Devlin reflects on events relating to Northern Ireland in September, 1971. Read it and answer the questions that follow.\n\nShocked by the rise of violence in 1971, the British and Irish governments began to consider the way ahead at a two-day conference at Chequers on 6 -7 September. Both the British Prime Minister Edward Heath and the Irish Taoiseach Jack Lynch attended.\nI do not think that Jack Lynch ever received the credit for successfully persuading Edward Heath to adopt a major change of policy on Northern Ireland. Until then, Heath had listened only to Brian Faulkner who told him that internment would solve the IRA problem, halt the violence, and restore everything to normal.\nAfter Chequers, Heath challenged Faulkner and told him that a political solution was needed, not military oppression.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t5a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "faulkner-solution-violence-northern-ireland",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 5 A Q3",
+  "questionText": "What was Faulkner’s solution to violence in Northern Ireland?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Internment/ Military suppression",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract Paddy Devlin reflects on events relating to Northern Ireland in September, 1971. Read it and answer the questions that follow.\n\nShocked by the rise of violence in 1971, the British and Irish governments began to consider the way ahead at a two-day conference at Chequers on 6 -7 September. Both the British Prime Minister Edward Heath and the Irish Taoiseach Jack Lynch attended.\nI do not think that Jack Lynch ever received the credit for successfully persuading Edward Heath to adopt a major change of policy on Northern Ireland. Until then, Heath had listened only to Brian Faulkner who told him that internment would solve the IRA problem, halt the violence, and restore everything to normal.\nAfter Chequers, Heath challenged Faulkner and told him that a political solution was needed, not military oppression.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t5a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "after-meeting-chequers-did-heath-tell",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 5 A Q4",
+  "questionText": "After the meeting at Chequers, what did Heath tell Faulkner in relation to violence in Northern Ireland?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "He told him to find a political solution",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract Paddy Devlin reflects on events relating to Northern Ireland in September, 1971. Read it and answer the questions that follow.\n\nShocked by the rise of violence in 1971, the British and Irish governments began to consider the way ahead at a two-day conference at Chequers on 6 -7 September. Both the British Prime Minister Edward Heath and the Irish Taoiseach Jack Lynch attended.\nI do not think that Jack Lynch ever received the credit for successfully persuading Edward Heath to adopt a major change of policy on Northern Ireland. Until then, Heath had listened only to Brian Faulkner who told him that internment would solve the IRA problem, halt the violence, and restore everything to normal.\nAfter Chequers, Heath challenged Faulkner and told him that a political solution was needed, not military oppression.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t5a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "did-heath-suspend-stormont-introduce-direct",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 5 A Q5",
+  "questionText": "Why did Heath suspend Stormont and introduce direct rule in 1972?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid reason",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract Paddy Devlin reflects on events relating to Northern Ireland in September, 1971. Read it and answer the questions that follow.\n\nShocked by the rise of violence in 1971, the British and Irish governments began to consider the way ahead at a two-day conference at Chequers on 6 -7 September. Both the British Prime Minister Edward Heath and the Irish Taoiseach Jack Lynch attended.\nI do not think that Jack Lynch ever received the credit for successfully persuading Edward Heath to adopt a major change of policy on Northern Ireland. Until then, Heath had listened only to Brian Faulkner who told him that internment would solve the IRA problem, halt the violence, and restore everything to normal.\nAfter Chequers, Heath challenged Faulkner and told him that a political solution was needed, not military oppression.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t5b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "welfare-northern-ireland-bernadette-devlin-republican",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 5 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The welfare state in Northern Ireland.\n2. Bernadette Devlin.\n3. Republican and Loyalist terrorism.\n4. Cultural responses to the “Troubles”.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    11
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Politics and society in Northern Ireland, 1949-1993"
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t5c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "reasons-coleraine-not-derry-chosen-site",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 5 C",
+  "questionText": "Answer one of the following:\n1. For what reasons was Coleraine, and not Derry, chosen as the site for a new university in Northern Ireland?\n2. What part did Terence O’Neill play in the politics of Northern Ireland?\n3. How did the Apprentice Boys of Derry cause such controversy in Northern Ireland?\n4. What was agreed at Sunningdale, and why did the power-sharing executive fail, 1973-1974?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    11
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Politics and society in Northern Ireland, 1949-1993"
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t6a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "1970-news-did-people-ireland-hear",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 6 A Q1",
+  "questionText": "On 6 May, 1970, what news did the people of Ireland hear?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The sacking of Haughey and Blaney",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract from his memoir, Hurler on the Ditch (2005), Michael Mills describes, as political correspondent of the Irish Press, breaking news in May, 1970. Read it and answer the questions that follow.\n\nOn 6 May, 1970 the country awoke to the news that Jack Lynch had sacked two of his most senior ministers, Charles J. Haughey and Neil Blaney.\nI was woken from my sleep at 2 a.m. by a sub-editor on the staff of the Irish Press. He had been instructed, by the editor, to take a taxi out to my house and to make sure that I arrived back at the office to prepare a story on the dramatic announcement.\nThe result was a story in that morning’s Irish Press, which asked more questions than it answered. By eleven o’clock that morning, however, I felt I had sufficient information to say publicly, on an RTÉ current affairs programme, that the sackings were connected with an attempt to bring in guns for Northern Ireland through Dublin Airport.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t6a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "instructions-did-sub-editor-mills",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 6 A Q2",
+  "questionText": "What instructions did the sub-editor give Mills?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "He was told to go to the Irish Press office/ to prepare a story",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract from his memoir, Hurler on the Ditch (2005), Michael Mills describes, as political correspondent of the Irish Press, breaking news in May, 1970. Read it and answer the questions that follow.\n\nOn 6 May, 1970 the country awoke to the news that Jack Lynch had sacked two of his most senior ministers, Charles J. Haughey and Neil Blaney.\nI was woken from my sleep at 2 a.m. by a sub-editor on the staff of the Irish Press. He had been instructed, by the editor, to take a taxi out to my house and to make sure that I arrived back at the office to prepare a story on the dramatic announcement.\nThe result was a story in that morning’s Irish Press, which asked more questions than it answered. By eleven o’clock that morning, however, I felt I had sufficient information to say publicly, on an RTÉ current affairs programme, that the sackings were connected with an attempt to bring in guns for Northern Ireland through Dublin Airport.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t6a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "when-mills-sufficient-information-public-statement",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 6 A Q3",
+  "questionText": "When had Mills sufficient information to make a public statement on RTE?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "By 11 o‟clock that morning",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract from his memoir, Hurler on the Ditch (2005), Michael Mills describes, as political correspondent of the Irish Press, breaking news in May, 1970. Read it and answer the questions that follow.\n\nOn 6 May, 1970 the country awoke to the news that Jack Lynch had sacked two of his most senior ministers, Charles J. Haughey and Neil Blaney.\nI was woken from my sleep at 2 a.m. by a sub-editor on the staff of the Irish Press. He had been instructed, by the editor, to take a taxi out to my house and to make sure that I arrived back at the office to prepare a story on the dramatic announcement.\nThe result was a story in that morning’s Irish Press, which asked more questions than it answered. By eleven o’clock that morning, however, I felt I had sufficient information to say publicly, on an RTÉ current affairs programme, that the sackings were connected with an attempt to bring in guns for Northern Ireland through Dublin Airport.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t6a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "mills-sackings-ministers-connected",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 6 A Q4",
+  "questionText": "According to Mills, with what were the sackings of the two ministers connected?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "An attempt to bring guns into Northern Ireland (through Dublin Airport)",
+    "marks": 6,
+    "contextNote": "„To bring in guns‟ only = 3M",
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ]
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract from his memoir, Hurler on the Ditch (2005), Michael Mills describes, as political correspondent of the Irish Press, breaking news in May, 1970. Read it and answer the questions that follow.\n\nOn 6 May, 1970 the country awoke to the news that Jack Lynch had sacked two of his most senior ministers, Charles J. Haughey and Neil Blaney.\nI was woken from my sleep at 2 a.m. by a sub-editor on the staff of the Irish Press. He had been instructed, by the editor, to take a taxi out to my house and to make sure that I arrived back at the office to prepare a story on the dramatic announcement.\nThe result was a story in that morning’s Irish Press, which asked more questions than it answered. By eleven o’clock that morning, however, I felt I had sufficient information to say publicly, on an RTÉ current affairs programme, that the sackings were connected with an attempt to bring in guns for Northern Ireland through Dublin Airport.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t6a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "did-government-jack-lynch-fail-win",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 6 A Q5",
+  "questionText": "Why did the government of Jack Lynch fail to win the general election of 1973?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid reason",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract from his memoir, Hurler on the Ditch (2005), Michael Mills describes, as political correspondent of the Irish Press, breaking news in May, 1970. Read it and answer the questions that follow.\n\nOn 6 May, 1970 the country awoke to the news that Jack Lynch had sacked two of his most senior ministers, Charles J. Haughey and Neil Blaney.\nI was woken from my sleep at 2 a.m. by a sub-editor on the staff of the Irish Press. He had been instructed, by the editor, to take a taxi out to my house and to make sure that I arrived back at the office to prepare a story on the dramatic announcement.\nThe result was a story in that morning’s Irish Press, which asked more questions than it answered. By eleven o’clock that morning, however, I felt I had sufficient information to say publicly, on an RTÉ current affairs programme, that the sackings were connected with an attempt to bring in guns for Northern Ireland through Dublin Airport.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t6b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "irish-involvement-impact-1962-1972-sylvia",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 6 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Irish involvement in the UN.\n2. The impact of RTÉ, 1962-1972.\n3. Sylvia Meehan.\n4. Archbishop John Charles McQuaid.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    11
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Government, economy and society in the Republic of Ireland, 1949-1989"
+ },
+ {
+  "id": "hist-2012-ol-lm-s2t6c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "did-whitaker-contribute-economic-development-ireland",
+  "questionRef": "2012 OL Later Modern Section 2 Topic 6 C",
+  "questionText": "Answer one of the following:\n1. How did T. K. Whitaker contribute to economic development in Ireland?\n2. Did membership of the EEC in 1973 help or hinder Irish fisheries? Explain your answer.\n3. What were the successes and failures in the political career of Charles Haughey as Taoiseach?\n4. How did Garret FitzGerald influence Irish affairs?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    11
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Government, economy and society in the Republic of Ireland, 1949-1989"
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t1a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "who-writing-where-when",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 1 A Q1",
+  "questionText": "Who is writing, where and when?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Von Eckstadt Vienna 1848",
+    "marks": 6,
+    "contextNote": "Any TWO @ 3M each",
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ]
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract from the diary (1848) of Count von Eckstadt describes revolutionary activity in Vienna in March, 1848. Read it and answer the questions that follow.\n\n• The streets assume a threatening aspect. Popular orators are surrounded by groups of supporters.\n• Four battalions stand at the gates of the palace. Artillery is brought up and loaded.\nThe chancellery is surrounded by troops.\n• The cry ‘Dawn with Metternich!’ is heard on all sides and becomes the watchword.\n• Bayonet attacks. Several deaths. Prince Metternich resigns.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t1a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "threatening-aspect-did-streets-assume",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 1 A Q2",
+  "questionText": "What ‘threatening aspect’ did the streets assume?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any ONE valid point",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract from the diary (1848) of Count von Eckstadt describes revolutionary activity in Vienna in March, 1848. Read it and answer the questions that follow.\n\n• The streets assume a threatening aspect. Popular orators are surrounded by groups of supporters.\n• Four battalions stand at the gates of the palace. Artillery is brought up and loaded.\nThe chancellery is surrounded by troops.\n• The cry ‘Dawn with Metternich!’ is heard on all sides and becomes the watchword.\n• Bayonet attacks. Several deaths. Prince Metternich resigns.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t1a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "done-protect-palace",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 1 A Q3",
+  "questionText": "What was done to protect the palace?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any ONE point from bulletpoint 2",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract from the diary (1848) of Count von Eckstadt describes revolutionary activity in Vienna in March, 1848. Read it and answer the questions that follow.\n\n• The streets assume a threatening aspect. Popular orators are surrounded by groups of supporters.\n• Four battalions stand at the gates of the palace. Artillery is brought up and loaded.\nThe chancellery is surrounded by troops.\n• The cry ‘Dawn with Metternich!’ is heard on all sides and becomes the watchword.\n• Bayonet attacks. Several deaths. Prince Metternich resigns.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t1a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "likely-cause-deaths",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 1 A Q4",
+  "questionText": "What was the likely cause of the deaths?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bayonet attacks",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract from the diary (1848) of Count von Eckstadt describes revolutionary activity in Vienna in March, 1848. Read it and answer the questions that follow.\n\n• The streets assume a threatening aspect. Popular orators are surrounded by groups of supporters.\n• Four battalions stand at the gates of the palace. Artillery is brought up and loaded.\nThe chancellery is surrounded by troops.\n• The cry ‘Dawn with Metternich!’ is heard on all sides and becomes the watchword.\n• Bayonet attacks. Several deaths. Prince Metternich resigns.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t1a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "office-did-metternich-hold-affected-events",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 1 A Q5",
+  "questionText": "What office did Metternich hold, and how was he affected by the events of 1848?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Chancellor",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "He had to resign",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract from the diary (1848) of Count von Eckstadt describes revolutionary activity in Vienna in March, 1848. Read it and answer the questions that follow.\n\n• The streets assume a threatening aspect. Popular orators are surrounded by groups of supporters.\n• Four battalions stand at the gates of the palace. Artillery is brought up and loaded.\nThe chancellery is surrounded by troops.\n• The cry ‘Dawn with Metternich!’ is heard on all sides and becomes the watchword.\n• Bayonet attacks. Several deaths. Prince Metternich resigns.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t1b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "karl-marx-balkan-nationalism-greece-serbia",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 1 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Karl Marx.\n2. Balkan nationalism: Greece and Serbia.\n3. Serfdom in Russia.\n4. Otto von Bismarck.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    12
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Nationalism and state formation in Europe, 1815-1871"
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t1c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "did-robert-owen-set-model-village",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 1 C",
+  "questionText": "Answer one of the following:\n1. Why did Robert Owen set up the model village of New Lanark and how successful was it?\n2. What improvements did Haussmann make to the city of Paris?\n3. What part did Napoleon III play in the affairs of France?\n4. What did Giuseppe Mazzini contribute to moves towards Italian unity?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    12
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Nationalism and state formation in Europe, 1815-1871"
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t2a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "morning-july-when-did-british-stop",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 2 A Q1",
+  "questionText": "On the morning of 1 July, when did the British stop shelling the German trenches?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "7.30",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract a German soldier describes the first day of the Battle of the Somme on1 July, 1916. Read it and answer the questions that follow.\n\nAt 7.30 a.m. the hurricane of British shells stopped. Our men at once clambered up the steep shafts leading from the dugouts to the daylight, and ran to the nearest shell holes. The machine-guns were hurriedly pulled out of the dugouts and placed in position. Then a series of lines were seen moving from the British trenches. The first line was quickly followed by a second line and then a third and fourth.\nWhen the first line of British soldiers were within a few hundred yards, the rattle of machine-guns and rifle fire broke out along the whole line of our shell holes. The British advance rapidly crumbled under the hail of German shells and bullets.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t2a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "when-shelling-stopped-did-germans",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 2 A Q2",
+  "questionText": "When the shelling stopped, what did the Germans do?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They clambered",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "up from dugouts and ran to nearest shell holes",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract a German soldier describes the first day of the Battle of the Somme on1 July, 1916. Read it and answer the questions that follow.\n\nAt 7.30 a.m. the hurricane of British shells stopped. Our men at once clambered up the steep shafts leading from the dugouts to the daylight, and ran to the nearest shell holes. The machine-guns were hurriedly pulled out of the dugouts and placed in position. Then a series of lines were seen moving from the British trenches. The first line was quickly followed by a second line and then a third and fourth.\nWhen the first line of British soldiers were within a few hundred yards, the rattle of machine-guns and rifle fire broke out along the whole line of our shell holes. The British advance rapidly crumbled under the hail of German shells and bullets.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t2a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "did-germans-machine-guns",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 2 A Q3",
+  "questionText": "What did the Germans do with their machine-guns?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They pulled",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "them out of the dugouts and placed in position",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract a German soldier describes the first day of the Battle of the Somme on1 July, 1916. Read it and answer the questions that follow.\n\nAt 7.30 a.m. the hurricane of British shells stopped. Our men at once clambered up the steep shafts leading from the dugouts to the daylight, and ran to the nearest shell holes. The machine-guns were hurriedly pulled out of the dugouts and placed in position. Then a series of lines were seen moving from the British trenches. The first line was quickly followed by a second line and then a third and fourth.\nWhen the first line of British soldiers were within a few hundred yards, the rattle of machine-guns and rifle fire broke out along the whole line of our shell holes. The British advance rapidly crumbled under the hail of German shells and bullets.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t2a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "point-did-germans-begin-using-machine",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 2 A Q4",
+  "questionText": "At what point did the Germans begin using their machine-guns?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "When the first line of British soldiers were within a few hundred yards",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract a German soldier describes the first day of the Battle of the Somme on1 July, 1916. Read it and answer the questions that follow.\n\nAt 7.30 a.m. the hurricane of British shells stopped. Our men at once clambered up the steep shafts leading from the dugouts to the daylight, and ran to the nearest shell holes. The machine-guns were hurriedly pulled out of the dugouts and placed in position. Then a series of lines were seen moving from the British trenches. The first line was quickly followed by a second line and then a third and fourth.\nWhen the first line of British soldiers were within a few hundred yards, the rattle of machine-guns and rifle fire broke out along the whole line of our shell holes. The British advance rapidly crumbled under the hail of German shells and bullets.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t2a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "apart-somme-major-battle-western-front",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 2 A Q5",
+  "questionText": "Apart from the Somme, name one major battle on the Western Front, 1914-1918.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any ONE battle from the Western Front:, eg: Ypres, Verdun.",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract a German soldier describes the first day of the Battle of the Somme on1 July, 1916. Read it and answer the questions that follow.\n\nAt 7.30 a.m. the hurricane of British shells stopped. Our men at once clambered up the steep shafts leading from the dugouts to the daylight, and ran to the nearest shell holes. The machine-guns were hurriedly pulled out of the dugouts and placed in position. Then a series of lines were seen moving from the British trenches. The first line was quickly followed by a second line and then a third and fourth.\nWhen the first line of British soldiers were within a few hundred yards, the rattle of machine-guns and rifle fire broke out along the whole line of our shell holes. The British advance rapidly crumbled under the hail of German shells and bullets.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t2b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "anti-semitism-france-pope-leo-xiii",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 2 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Anti-Semitism in France.\n2. Pope Leo XIII.\n3. Marie Curie.\n4. The invention and early history of the motor car.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    12
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Nation states and international tensions, 1871-1920"
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t2c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "successful-bismarck-foreign-policy-naval-policy",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 2 C",
+  "questionText": "Answer one of the following:\n1. How successful was Bismarck’s foreign policy?\n2. What was the naval policy of Wilhelm II and how did it affect one or more other countries?\n3. What did you learn about World War I from your study of Douglas Haig and/or Wilfred Owen?\n4. In what ways did Woodrow Wilson influence the peace settlement following World War I?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    12
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Nation states and international tensions, 1871-1920"
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t3a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "event-depicted",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 3 A Q1",
+  "questionText": "What event is depicted?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The Nazi-Soviet Non-aggression Pact",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "Marriage/agreement between Hitler and Stalin (3M only) — Marriage/wedding only = 0M"
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This London Evening Standard cartoon (2/9/1939) comments on the non-aggression pact between Nazi Germany and Stalin’s Russia which had been signed in Moscow ten days earlier. Study it and answer the questions that follow.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t3a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "where-when-did-event-take-place",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 3 A Q2",
+  "questionText": "Where and when did that event take place?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Moscow",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "August 1939",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This London Evening Standard cartoon (2/9/1939) comments on the non-aggression pact between Nazi Germany and Stalin’s Russia which had been signed in Moscow ten days earlier. Study it and answer the questions that follow.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t3a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "who-bride-groom",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 3 A Q3",
+  "questionText": "Who are the ‘bride’ and ‘groom’?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Stalin",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Hitler",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This London Evening Standard cartoon (2/9/1939) comments on the non-aggression pact between Nazi Germany and Stalin’s Russia which had been signed in Moscow ten days earlier. Study it and answer the questions that follow.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t3a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "symbol-nazi-germany-stalin-russia-shown",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 3 A Q4",
+  "questionText": "What symbol of Nazi Germany or Stalin’s Russia is shown on the wedding cake?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Swastika OR the hammer and sickle",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This London Evening Standard cartoon (2/9/1939) comments on the non-aggression pact between Nazi Germany and Stalin’s Russia which had been signed in Moscow ten days earlier. Study it and answer the questions that follow.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t3a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "action-did-hitler-take-june-1941",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 3 A Q5",
+  "questionText": "What action did Hitler take, in June, 1941, that ended the relationship depicted in the cartoon?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The invasion of the Soviet Union",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This London Evening Standard cartoon (2/9/1939) comments on the non-aggression pact between Nazi Germany and Stalin’s Russia which had been signed in Moscow ten days earlier. Study it and answer the questions that follow.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t3b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "charlie-chaplin-church-relations-italy-under",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 3 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Charlie Chaplin.\n2. Church-state relations in Italy under Mussolini.\n3. The Third Republic in France, 1920-1940.\n4. Anti-Semitism and the Holocaust.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    12
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Dictatorship and democracy in Europe, 1920-1945"
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t3c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "changes-did-stalin-bring-soviet-russia",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 3 C",
+  "questionText": "Answer one of the following:\n1. What changes did Stalin bring about in Soviet Russia?\n2. Why did the Jarrow March (October, 1936) take place and what did it achieve?\n3. What was the importance for Nazi Germany of the Nuremberg Rallies?\n4. What did Winston Churchill contribute to British victory in World War II?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    12
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Dictatorship and democracy in Europe, 1920-1945"
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t4a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "whom-security-chief-volkovoi-unpopular",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 4 A Q1",
+  "questionText": "With whom was the security chief, Volkovoi, unpopular?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The prisoners",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "the prison guards",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, Alexander Solzhenitsyn describes life in a Soviet labour camp. Read it and answer the questions that follow.\n\nLieutenant Volkovoi, the security chief, was as unpopular with the prisoners as with the guards. Everyone was afraid of him. He was a wolf indeed and looked it. He was tall, dark and with a scowl. At first, in 1949, he had been in the habit of carrying a whip of plaited leather, as thick as his forearm. He was said to have used it for flogging prisoners in their cells.\nNow for some reason, Volkovoi had stopped carrying his whip.\nThere were three thousand six hundred and fifty three such days in a ten-year sentence. The three extra days were for leap years.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t4a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "does-author-volkovoi-appearance",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 4 A Q2",
+  "questionText": "How does the author describe Volkovoi’s appearance?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Any TWO",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "He was tall",
+      "dark",
+      "scowling",
+      "wolf-like"
+     ]
+    }
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, Alexander Solzhenitsyn describes life in a Soviet labour camp. Read it and answer the questions that follow.\n\nLieutenant Volkovoi, the security chief, was as unpopular with the prisoners as with the guards. Everyone was afraid of him. He was a wolf indeed and looked it. He was tall, dark and with a scowl. At first, in 1949, he had been in the habit of carrying a whip of plaited leather, as thick as his forearm. He was said to have used it for flogging prisoners in their cells.\nNow for some reason, Volkovoi had stopped carrying his whip.\nThere were three thousand six hundred and fifty three such days in a ten-year sentence. The three extra days were for leap years.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t4a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "purpose-volkovoi-carried-leather-whip",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 4 A Q3",
+  "questionText": "For what purpose had Volkovoi carried a leather whip?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "For flogging prisoners",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, Alexander Solzhenitsyn describes life in a Soviet labour camp. Read it and answer the questions that follow.\n\nLieutenant Volkovoi, the security chief, was as unpopular with the prisoners as with the guards. Everyone was afraid of him. He was a wolf indeed and looked it. He was tall, dark and with a scowl. At first, in 1949, he had been in the habit of carrying a whip of plaited leather, as thick as his forearm. He was said to have used it for flogging prisoners in their cells.\nNow for some reason, Volkovoi had stopped carrying his whip.\nThere were three thousand six hundred and fifty three such days in a ten-year sentence. The three extra days were for leap years.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t4a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "did-prisoners-serve-extra-days-ten",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 4 A Q4",
+  "questionText": "Why did prisoners serve three extra days in a ten-year sentence?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To make up for the extra leap year days",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, Alexander Solzhenitsyn describes life in a Soviet labour camp. Read it and answer the questions that follow.\n\nLieutenant Volkovoi, the security chief, was as unpopular with the prisoners as with the guards. Everyone was afraid of him. He was a wolf indeed and looked it. He was tall, dark and with a scowl. At first, in 1949, he had been in the habit of carrying a whip of plaited leather, as thick as his forearm. He was said to have used it for flogging prisoners in their cells.\nNow for some reason, Volkovoi had stopped carrying his whip.\nThere were three thousand six hundred and fifty three such days in a ten-year sentence. The three extra days were for leap years.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t4a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "soviet-russia-solzhenitsyn-known-dissident-writer",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 4 A Q5",
+  "questionText": "In Soviet Russia, why was Solzhenitsyn known as a dissident writer?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Because he disagreed with the Soviet system",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, Alexander Solzhenitsyn describes life in a Soviet labour camp. Read it and answer the questions that follow.\n\nLieutenant Volkovoi, the security chief, was as unpopular with the prisoners as with the guards. Everyone was afraid of him. He was a wolf indeed and looked it. He was tall, dark and with a scowl. At first, in 1949, he had been in the habit of carrying a whip of plaited leather, as thick as his forearm. He was said to have used it for flogging prisoners in their cells.\nNow for some reason, Volkovoi had stopped carrying his whip.\nThere were three thousand six hundred and fifty three such days in a ten-year sentence. The three extra days were for leap years.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t4b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "berlin-crisis-1948-1949-marshall-aid",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 4 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The Berlin Crisis, 1948-1949.\n2. Marshall Aid.\n3. Margaret Thatcher.\n4. Advances in nuclear power and/or the computer.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Division and realignment in Europe, 1945-1992"
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t4c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "did-hungarian-uprising-1956-take-place",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 4 C",
+  "questionText": "Answer one of the following questions:\n1. Why did the Hungarian Uprising of 1956 take place and why did it end in failure?\n2. How did the oil crisis in 1973 affect social and economic conditions in Europe?\n3. What was the impact of the Second Vatican Council on the Catholic Church?\n4. What leadership did Mikhail Gorbachev provide in domestic and/or foreign affairs?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Division and realignment in Europe, 1945-1992"
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t6a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "author-widely-believed-there-communist-conspiracy",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 6 A Q1",
+  "questionText": "According to the author, why was it widely believed that there was a communist conspiracy against the US?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Because of the cunning of Senator McCarthy (in promoting the idea)",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, the American historian, Samuel Eliot Morison, comments on the activities of Senator Joe McCarthy. Read it and answer the questions that follow.\n\nThe theory that there was a communist conspiracy would never have been so widely believed but for the cunning of Senator Joseph R. McCarthy.\nOpinions of him vary from pure white to deepest black. He was probably simply a plain rogue who wanted power to make presidents and officials jump while he cracked the whip.\nIn the opinion of many, he aimed at becoming president himself. He was cruel and greedy and did nothing for the people of his native state. He was one of the biggest liars in our history.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t6a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "widely-did-opinions-mccarthy-vary",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 6 A Q2",
+  "questionText": "How widely did opinions about McCarthy vary?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Opinions of him differed from pure white to deepest black/ from hero to villain",
+    "marks": 6,
+    "contextNote": "„Opinions of him differed‟ only = 3M",
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ]
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, the American historian, Samuel Eliot Morison, comments on the activities of Senator Joe McCarthy. Read it and answer the questions that follow.\n\nThe theory that there was a communist conspiracy would never have been so widely believed but for the cunning of Senator Joseph R. McCarthy.\nOpinions of him vary from pure white to deepest black. He was probably simply a plain rogue who wanted power to make presidents and officials jump while he cracked the whip.\nIn the opinion of many, he aimed at becoming president himself. He was cruel and greedy and did nothing for the people of his native state. He was one of the biggest liars in our history.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t6a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "author-opinion-mccarthy",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 6 A Q3",
+  "questionText": "What is the author’s opinion of McCarthy?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Writer says McCarthy was probably a rogue who wanted power OR He was a cruel/ greedy/ lazy/ liar",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, the American historian, Samuel Eliot Morison, comments on the activities of Senator Joe McCarthy. Read it and answer the questions that follow.\n\nThe theory that there was a communist conspiracy would never have been so widely believed but for the cunning of Senator Joseph R. McCarthy.\nOpinions of him vary from pure white to deepest black. He was probably simply a plain rogue who wanted power to make presidents and officials jump while he cracked the whip.\nIn the opinion of many, he aimed at becoming president himself. He was cruel and greedy and did nothing for the people of his native state. He was one of the biggest liars in our history.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t6a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "opinion-many-mccarthy-aim",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 6 A Q4",
+  "questionText": "In the opinion of many, what was McCarthy’s aim?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "His aim was to become President",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, the American historian, Samuel Eliot Morison, comments on the activities of Senator Joe McCarthy. Read it and answer the questions that follow.\n\nThe theory that there was a communist conspiracy would never have been so widely believed but for the cunning of Senator Joseph R. McCarthy.\nOpinions of him vary from pure white to deepest black. He was probably simply a plain rogue who wanted power to make presidents and officials jump while he cracked the whip.\nIn the opinion of many, he aimed at becoming president himself. He was cruel and greedy and did nothing for the people of his native state. He was one of the biggest liars in our history.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t6a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "did-soviet-relations-after-1945-help",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 6 A Q5",
+  "questionText": "How did Soviet-US relations after 1945 help McCarthy to create a “red scare”?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "During Cold War the Soviet Union was “officially” the enemy, which made it easier for McCarthy to promote the “red scare”",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, the American historian, Samuel Eliot Morison, comments on the activities of Senator Joe McCarthy. Read it and answer the questions that follow.\n\nThe theory that there was a communist conspiracy would never have been so widely believed but for the cunning of Senator Joseph R. McCarthy.\nOpinions of him vary from pure white to deepest black. He was probably simply a plain rogue who wanted power to make presidents and officials jump while he cracked the whip.\nIn the opinion of many, he aimed at becoming president himself. He was cruel and greedy and did nothing for the people of his native state. He was one of the biggest liars in our history.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2012 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t6b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "multinational-corporation-1945-1968-urban-poverty",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 6 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The multinational corporation, 1945-1968.\n2. Urban poverty, drugs and violence.\n3. Marilyn Monroe.\n4. Mohammad Ali.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The United Stated and world, 1945-1989"
+ },
+ {
+  "id": "hist-2012-ol-lm-s3t6c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2012,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "did-president-harry-truman-conduct-foreign",
+  "questionRef": "2012 OL Later Modern Section 3 Topic 6 C",
+  "questionText": "Answer one of the following:\n1. How did President Harry Truman conduct foreign affairs between 1945 and1953?\n2. What problems did President Johnson encounter in dealing with Vietnam?\n3. What type of person was the “Organization Man” and how did he reflect American values?\n4. In what ways did Billy Graham represent religion in modern American culture?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner‟s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    8,
+    9,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The United Stated and world, 1945-1989"
+ },
+ {
   "id": "hist-2013-hl-lm-s1-q1a",
   "subjectId": "history",
   "level": "higher",

@@ -464,6 +464,10 @@ GRID_LINE = re.compile(
     r'|Each (?:reason|group|point)\b.{0,60}\bto be marked\b'
     r'|One strength and one weakness to be marked'
     r'|Answer offering\b'
+    # The syllabus's key personality and concept a unit touches, printed
+    # under its last answer: "Solzhenitsyn = key personality Dissident writer
+    # = key concept" (2012 Ordinary Europe Topic 4 A5). Not an answer.
+    r'|[A-Z][\w ]{0,40}= key (?:personality|concept)\b'
     r'|Look for (?:two|three|ONE|TWO)\b'
     r'|One reason, well explained'
     r'|Max\.?\s*=|Max\.?\s*CM|Max\.?\s*OE'

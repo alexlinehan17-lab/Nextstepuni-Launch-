@@ -481,10 +481,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => row.kind === 'point' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
     // "… 5M + 5M Max =" left on a row by the tariff reader: the printed split is the row's note now.
     expect(rows.filter(({ row }) => /\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=\s*$/i.test(row.verbatim)).map(({ card }) => card.id)).toEqual([]);
-    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(14);
+    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(16);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(143);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(154);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['A new life', 'Better wages', 'Better work standards'],
@@ -497,9 +497,11 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Efficient', 'Hard-working', 'Intelligent', 'Shrewd'],
       ['England', 'France', 'Flanders'],
       ['Hawks', 'nets', 'guns', 'setting dogs', 'greyhounds'],
+      ['He was tall', 'dark', 'scowling', 'wolf-like'],
       ['Her father’s death', 'Talk of radiation sickness', 'Sense of impending doom', 'Concern about missile strikes'],
       ['Intelligent and shrewd', 'Efficient and hard-working', 'Engaging and friendly'],
       ['Liverpool', 'Manchester', 'Birmingham', 'Leeds'],
+      ['Members sat on the steps', 'They sat on the arms of benches', 'They sat on each other‟s knees'],
       ['Mercilessness', 'ruthlessness and calculation', 'hot- and cold-bloodiness 1'],
       ['Moluccas', 'Java', 'Malaya', 'India', 'Ceylon', 'Taiwan'],
       ['Nantes', 'Bordeaux', 'Lisbon', 'Cadiz'],
@@ -527,6 +529,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       // Each a printed partial or alternative as a step on its row ("Green ribbons (ribbons = 3m)",
       // "Swastika 8M" / "Germanic cross = 4M"), a price for an answer the scheme does not print
       // ("One opinion = 5M"), or the bank's unprinted row where the scheme prints no answer at all.
+      ['An attempt to bring guns into Northern Ireland (through Dublin Airport)', 6, [0, 3, 6], '„To bring in guns‟ only = 3M'],
       ['Any TWO countries invaded by Napoleon 3M + 3M', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO features from second paragraph of text @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO of Beethoven’s compositions 3 + 3', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
@@ -541,16 +544,20 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Less than half', 6, [0, 3, 6], 'Half ONLY = 3M'],
       ['Massive German air raids', 6, [0, 3, 6], 'air raids alone = 3m'],
       ['One opinion', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['Opinions of him differed from pure white to deepest black/ from hero to villain', 6, [0, 3, 6], '„Opinions of him differed‟ only = 3M'],
       ['Oriental rugs', 8, [0, 4, 8], 'Rugs ONLY = 4M'],
+      ['Private/ family houses', 6, [0, 3, 6], '„Houses‟ only = 3M'],
       ['Residents and foreign-owned businesses in the town', 5, [0, 3, 5], 'TWO groups = 5m, ONE group = 3m'],
       ['Swastika', 8, [0, 4, 8], 'Germanic cross = 4M'],
       ['TWO New World commodities (@ 3M each) which were landed at Seville', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['TWO countries which were rivals to Dutch trade @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['TWO valid aims of the Apprentice Boys of Derry 3M x 2', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
+      ['The Nazi-Soviet Non-aggression Pact', 6, [0, 3, 6], 'Marriage/agreement between Hitler and Stalin (3M only) — Marriage/wedding only = 0M'],
       ['The Tu-104 was one of the first jet passenger planes in the world', 6, [0, 3, 6], 'Plane ONLY = 3M'],
       ['The original six members had access to Irish, British and Danish fisheries', 6, [0, 3, 6], 'access to Irish fisheries alone = 3m'],
       ['The scheme prints no answer for this part.', 10, undefined, 'The scheme prints one Criticism answer, under (a), and it is about the King’s proclamation (document B), which part (b) asks about. It prints nothing for this part.'],
       ['Third class', 8, [0, 4, 8], 'Train ONLY = 4M'],
+      ['Von Eckstadt Vienna 1848', 6, [0, 3, 6], 'Any TWO @ 3M each'],
     ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
     // 2020 OL Q3(a) prices each component and answers the one that needs an answer:
