@@ -850,7 +850,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, how is Charles Trevelyan associated with the Great Famine?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "One valid link between Trevelyan and Famine Ireland", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "One valid link between Trevelyan and Famine Ireland", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1286,7 +1286,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did many Irish people emigrate to England in the 1950s?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid answer", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid answer", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1575,7 +1575,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, explain one way in which RTÉ contributed to change in Irish society?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid answer", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid answer", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1721,7 +1721,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Generally, NO", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "ONE valid explanation", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "ONE valid explanation", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2010,7 +2010,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Leni Riefenstahl contribute to the Nuremberg Rallies?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid contribution", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid contribution", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2154,7 +2154,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was the policy of ‘peaceful coexistence’ associated with Khrushchev?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid explanation", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid explanation", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3267,7 +3267,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one reason why there was agrarian unrest in Ireland, 1715-1770.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3556,7 +3556,7 @@ export const CARDS: SecCard[] = [
     questionText: "Apart from silver, what other goods from the New World reached Seville?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE other good/product", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE other good/product", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3701,7 +3701,7 @@ export const CARDS: SecCard[] = [
     questionText: "In what ways did Richelieu extend French absolutism?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid way", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid way", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3847,7 +3847,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did Peter the Great make several trips abroad?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4526,7 +4526,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why was it considered necessary to hold the Synod of Thurles in 1850?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4671,7 +4671,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what did Archbishop Croke contribute to the GAA?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid contribution", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid contribution", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4816,7 +4816,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, on return from London, how was the Treaty received in Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reaction", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reaction", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4962,7 +4962,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one achievement of de Valera in America (June 1919-December 1920)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5106,7 +5106,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one change in the status of women during the 1970s.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid change", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid change", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5252,7 +5252,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did trade unionism and/or socialism hope to achieve for factory workers?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid aspiration", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid aspiration", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5396,7 +5396,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one achievement of Bismarck.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5540,7 +5540,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one characteristic of fascism associated with Mussolini.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid characteristic", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid characteristic", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5829,7 +5829,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one reason why North African families settled in France.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5973,7 +5973,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one reason why Lyndon Johnson sent American troops to Vietnam.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6936,7 +6936,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one aim of the United Irishmen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid aim", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid aim", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7082,7 +7082,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did Henry VIII wish to divorce his wife, Catherine of Aragon?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7226,7 +7226,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention one cause of the conflict between Philip II and the Netherlands.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid cause", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid cause", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7371,7 +7371,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why were the Moluccas worth capturing?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7515,7 +7515,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why is this era known as the ‘Restoration Period’?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7659,7 +7659,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one achievement of Benjamin Franklin?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7803,7 +7803,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did the French government want to bring the Catholic Church under closer control?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8191,7 +8191,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one cause of the Famine in Ireland during the 1840s?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid cause", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid cause", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8336,7 +8336,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why did Edward Carson oppose Home Rule?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8480,7 +8480,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why was the Eucharistic Congress considered a success?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8625,7 +8625,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why did so many people leave Ireland during the nineteenth century?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8769,7 +8769,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what do you consider a major achievement of Seán Lemass as Taoiseach?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9010,7 +9010,7 @@ export const CARDS: SecCard[] = [
     questionText: "In which areas of work was female labour active?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "On railways/as news vendors/bootblacks/lamplighters/barbers (", marks: 6, contextNote: "Any two for 3m + 3m)" },
+    { id: "r-1", kind: "anyN", verbatim: "Any two", marks: null, group: {"claimMax":2,"perOption":3,"options":["On railways","as news vendors","bootblacks","lamplighters","barbers"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9058,7 +9058,7 @@ export const CARDS: SecCard[] = [
     questionText: "Apart from work mentioned in the extract, how did women contribute to the war effort?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid contribution", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid contribution", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9203,7 +9203,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what was the purpose of the Nuremberg Rallies in the 1930s?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid point", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid point", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9347,7 +9347,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, in what way were motorists affected by the 1973 Oil Crisis?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "One valid point", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "One valid point", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9492,7 +9492,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why did Katanga break away from Congo, 1960-1965?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9636,7 +9636,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what was the outcome of the Cuban Missile Crisis?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid outcome", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid outcome", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9780,7 +9780,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why were the activities of the Apprentice Boys of Derry considered controversial?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10147,7 +10147,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what was the importance of the file/bard in Gaelic Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid point", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid point", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10292,7 +10292,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what did Owen Roe O’Neill achieve on his return to Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10580,7 +10580,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why was there much agrarian unrest in Ireland, 1715-1770?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10724,7 +10724,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one problem faced by Maynooth College in its early years?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid problem", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid problem", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10870,7 +10870,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Success/failure", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "ONE valid reason", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "ONE valid reason", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11015,7 +11015,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was the aim of the Spanish Armada?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid aim", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid aim", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11159,7 +11159,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, how did the Inquisition respond to Galileo?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid way", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid way", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11304,7 +11304,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what was the purpose of the (English) East India Company?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid purpose", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid purpose", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11448,7 +11448,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one achievement of Frederick William I as King of Prussia?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11592,7 +11592,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, how did the Industrial Revolution create problems for workers?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid problem", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid problem", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11737,7 +11737,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was the outcome of the Nine Years’ War for Hugh O’Neill, Earl of Tyrone?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid outcome", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid outcome", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12031,7 +12031,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why had the Catholic population fallen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Famine/disease/emigration (", marks: 6, contextNote: "any one or more reasons)" },
+    { id: "r-1", kind: "point", verbatim: "Famine/disease/emigration", marks: 6, contextNote: "(any one or more reasons)" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12103,7 +12103,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one decision reached at the Synod of Thurles, 1850?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE decision", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE decision", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12680,7 +12680,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one argument made in favour of building a new university in Coleraine?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid argument", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid argument", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12825,7 +12825,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one important achievement of T.K. Whitaker?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid achievement", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12969,7 +12969,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one other reform associated with Sir Robert Peel?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reform associated with Peel", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reform associated with Peel", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13114,7 +13114,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, how did Britain respond to German naval expansion?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid response", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid response", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13403,7 +13403,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what was one problem facing India after independence?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE problem identified", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE problem identified", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13547,7 +13547,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one reason why the U.S. became involved in Vietnam.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13691,7 +13691,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why was unemployment so high in Britain in the 1930s?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14054,7 +14054,7 @@ export const CARDS: SecCard[] = [
     questionText: "Apart from marriage laws, give one difference between Gaelic law and European law.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid difference", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid difference", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14342,7 +14342,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why was the Irish college at Louvain established?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14774,7 +14774,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why did the Wexford Rebellion end in failure?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14919,7 +14919,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what was one reason for the decline of the port of Antwerp?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15063,7 +15063,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one other external problem facing the Spanish Crown at this time?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE other problem", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE other problem", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15208,7 +15208,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one problem facing travellers in Europe at that time?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid problem", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid problem", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15354,7 +15354,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, how did Catherine II expand the borders of Russia?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid example", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid example", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15498,7 +15498,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one reason why revolution broke out in France in 1789.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15642,7 +15642,7 @@ export const CARDS: SecCard[] = [
     questionText: "The King’s daughter, Mary, became Queen Mary I in 1553. Briefly, why did she become known as “Bloody Mary”?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16004,7 +16004,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one way that Catholics benefited from Emancipation?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE benefit of Catholic Emancipation", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE benefit of Catholic Emancipation", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16148,7 +16148,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was the role of Dublin Castle in Irish affairs at that time?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE aspect of the role of Dublin Castle", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE aspect of the role of Dublin Castle", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16292,7 +16292,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what was one contribution of Richard Dawson Bates to the affairs of Northern Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE contribution of Richard Dawson Bates", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE contribution of Richard Dawson Bates", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16436,7 +16436,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one achievement of de Valera in America, June 1919 - December 1920?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE achievement of De Valera in America", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE achievement of De Valera in America", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16508,7 +16508,7 @@ export const CARDS: SecCard[] = [
     questionText: "For what services was there a rush?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Dental services/spectacles/drugs (", marks: 6, contextNote: "any two for 3m + 3m)" },
+    { id: "r-1", kind: "anyN", verbatim: "any two", marks: null, group: {"claimMax":2,"perOption":3,"options":["Dental services","spectacles","drugs"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16580,7 +16580,7 @@ export const CARDS: SecCard[] = [
     questionText: "Apart from health-care, what was one way in which Northern Ireland benefitted from the British Welfare State?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE other benefit of the welfare state", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE other benefit of the welfare state", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16724,7 +16724,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one other contribution by Garret FitzGerald to Irish life?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE other contribution of Garret FitzGerald", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE other contribution of Garret FitzGerald", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16868,7 +16868,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one political decision reached at the Congress of Vienna?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE political decision", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE political decision", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17157,7 +17157,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one way in which Pope John Paul II contributed to change in Europe?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE contribution of Pope John Paul II", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE contribution of Pope John Paul II", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17301,7 +17301,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one example of international involvement in the Congo up to 1965?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE example.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE example.", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17445,7 +17445,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was the outcome of the Apollo 11 launch?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid outcome", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid outcome", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17590,7 +17590,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one reason why Stalin established show trials.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17953,7 +17953,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one duty of a Lord Deputy?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid duty", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid duty", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18097,7 +18097,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why was Grace O’Malley an important person in the Ireland of her time?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18385,7 +18385,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why did smuggling flourish in Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE Valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE Valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18529,7 +18529,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one reason for the emergence of the Whiteboys?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18673,7 +18673,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one aim of the United Irishmen?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid aim", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid aim", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18817,7 +18817,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one action taken by England to defeat the Spanish Armada?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid action", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid action", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18961,7 +18961,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one reason for the restoration of Charles II to the throne of England, 1660?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE other reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE other reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19105,7 +19105,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one way in which Louis XIV strengthened France’s frontiers?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid way", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid way", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19395,7 +19395,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why was the Bastille attacked on 14 July, 1789?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -19539,7 +19539,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why were goods from Spain expensive in the New World?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",

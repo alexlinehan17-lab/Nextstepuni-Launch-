@@ -482,7 +482,18 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
     expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(59);
-    expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options)).toEqual([['Liverpool', 'Manchester', 'Birmingham', 'Leeds']]);
+    // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
+    expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
+      ['Dental services', 'spectacles', 'drugs'],
+      ['Liverpool', 'Manchester', 'Birmingham', 'Leeds'],
+      ['On railways', 'as news vendors', 'bootblacks', 'lamplighters', 'barbers'],
+    ]);
+    // A row that is the scheme pricing an answer it does not print says so.
+    // ("ONE valid export (e.g. wool, butter, etc.)" prints its examples, so it is an answer.)
+    const tariffWording = rows.filter(({ row }) => /^(?:ONE|TWO|THREE|One valid|Two valid|Any valid)\b/.test(row.verbatim)
+      && !/\be\.g\./.test(row.verbatim));
+    expect(tariffWording.length).toBeGreaterThan(80);
+    expect(tariffWording.filter(({ row }) => !(row.contextNote ?? '').includes('The scheme prints no answer here')).map(({ card }) => card.id)).toEqual([]);
     // A six-mark answer with a printed partial ("Green ribbons (ribbons = 3m)") is a stepped row: the partial is its note.
     expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks, row.contextNote]).sort()).toEqual([
       ['Clonmel prison', 6, [0, 3, 6], 'Clonmel only (3m), prison only (3m)'],

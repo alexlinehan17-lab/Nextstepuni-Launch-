@@ -48,6 +48,10 @@ LIST_LEAD = re.compile(r'^(Any\s+(one|two|three|four))\s*:\s*', re.I)
 # A partial the scheme prints in a bracket at the END of a one-line answer:
 # "Massive German air raids (air raids alone = 3m)".
 PARTIAL = re.compile(r'^(?P<head>.*\S)\s*\((?P<note>[^()]*?=\s*(?P<n>\d+)\s*[Mm])\)\s*$')
+# "Chapel bell/convent chimes/organ (any two for 3m + 3m)": the scheme's
+# alternatives, any two of which earn 3m each. hist_scheme has already lifted
+# the bracket onto the row's note.
+ANY_OF_NOTE = re.compile(r'^\((any (one|two|three))(?: for)?\s*(\d+)m(?:\s*\+\s*(\d+)m)*\)$', re.I)
 WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4}
 
 
@@ -98,6 +102,15 @@ def split_priced(card):
                 rows[:] = [group]
         return card
 
+    any_of = ANY_OF_NOTE.match(row.get('contextNote') or '')
+    if any_of:
+        count = WORDS[any_of.group(2).lower()]
+        per = int(any_of.group(3))
+        options = [tidy(x) for x in text.split('/') if tidy(x)]
+        if count * per == total and len(options) > count:
+            rows[:] = [{'id': row['id'], 'kind': 'anyN', 'verbatim': any_of.group(1), 'marks': None,
+                        'group': {'claimMax': count, 'perOption': per, 'options': options}}]
+            return card
     tokens = list(INLINE.finditer(text))
     partial = PARTIAL.match(text)
     if not tokens and partial and 0 < int(partial.group('n')) < total:

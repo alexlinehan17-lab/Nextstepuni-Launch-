@@ -186,7 +186,9 @@ GRID_WORDS = re.compile(
 # not part of the answer and must not be recited to a student as one, so it is
 # lifted off the row and kept as the row's contextNote.
 INSTRUCTION_TAIL = re.compile(
-    r'\s*(?:Any (?:TWO|THREE|ONE)\b[^.]*\.?'
+    # The clause may sit in brackets, "Dental services/spectacles/drugs (any
+    # two for 3m + 3m)": its opening bracket goes with it, not left on the row.
+    r'\s*\(?(?:Any (?:TWO|THREE|ONE)\b[^.]*\.?'
     r'|If only (?:ONE|TWO)\b[^.]*\.?'
     r'|\(?(?:any )?(?:one|two) elements? only = \d+m\)?'
     r'|\(?any two,? \d+m \+ \d+m\)?'

@@ -338,6 +338,7 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
 PRICED_COMPONENT = re.compile(r'([A-Z][A-Za-z \u2019\'-]{1,40}?)\s*=\s*(\d{1,3})M\b')
 TARIFF_CEILING = re.compile(r'\bMax\.?\s*=\s*(\d{1,3})M\b')
 NO_PRINTED_ANSWER = 'The scheme prints no answer here: any correct one earns the marks.'
+TARIFF_WORDING = re.compile(r'^(?:ONE|TWO|THREE|One valid|Two valid|Any valid)\b(?![^.]*\.\s*\S)')
 
 
 def tariff_only_card(P, year, level, field, key, ask, section, topic_id, ref):
@@ -586,7 +587,15 @@ def build():
                     # The marks the SEC prints inside a Part A line ("Sods
                     # (3M) and saplings (3M)") are rows, not one claim
                     # (hist_rows.py).
-                    cards.append(split_priced(card))
+                    card = split_priced(card)
+                    # A row that is the scheme pricing an answer it does not
+                    # print ("ONE valid reason", "ONE decision of the Synod of
+                    # Thurles") says so, in the bank's fixed words.
+                    for row in card['rows']:
+                        if TARIFF_WORDING.match(row['verbatim']):
+                            row['contextNote'] = ' — '.join(
+                                x for x in (row.get('contextNote'), NO_PRINTED_ANSWER) if x)
+                    cards.append(card)
     return (cards, exclusions, refused, examples, title_pairs, tariff_checks,
             extra_topic_checks, title_variants)
 
