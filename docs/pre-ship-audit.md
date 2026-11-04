@@ -169,6 +169,8 @@ Verify the GCDashboard query still works (it does — each returned doc is autho
 - Fix: Restrict the same-school read on users/{userId} to only the fields the peer features need, or stop exposing real names in peer contexts (use first-name-only or a chosen display handle). Move the name actually shown to peers into the curated islandPublic projection (built by the Cloud Function) and remove the broad same-school read on the full users doc, keeping reads to self + admin + same-school GC.
 - _Verifier correction:_ Evidence inaccuracy: usePeerIslands.ts does NOT read the users doc — it queries only islandPublic (line 57-59). The same-school users read rule is in fact unused by any student-facing client path (the only users-by-school query is GCDashboard.tsx, a GC staff feature already covered by the separate G
 
+- _Update 2026-10-17 (year islands):_ the islandPublic projection is now readable only by students at the same school AND in the same year group, carries the first name only, and can be switched off by its owner. See `compliance/PEER_ISLAND_REFACTOR_PLAN.md` §9.
+
 **[perf] Three.js (327KB gzip) and jspdf (138KB gzip) are modulepreloaded on first paint despite only being used in lazy routes**  
 - File: `dist/index.html (generated from vite.config.ts manualChunks)` (vite.config.ts build.rollupOptions.output.manualChunks ('vendor-three', 'vendor-jspdf'); index.html <link rel=modulepreload>)
 - Impact: Every student downloads ~465KB gzip (Three.js + jspdf) on first load even though Three.js is only needed in the Journey map and jspdf only in the Guidance-Counsellor PDF export — code paths most students never touch. On Irish mobile/3G that is multiple seconds of wasted transfer and parse/compile on low-end phones before first interaction.

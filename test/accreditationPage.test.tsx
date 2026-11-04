@@ -91,10 +91,10 @@ describe('References page', () => {
       render(<AccreditationPage onBack={onBack} />);
       fireEvent.click(screen.getByRole('button', { name: 'The Science of Hope, 5 verified sources' }));
 
-      fireEvent.click(screen.getByRole('button', { name: 'Go back' }));
+      fireEvent.click(screen.getByRole('button', { name: 'Back to references' }));
       expect(onBack).not.toHaveBeenCalled();
 
-      fireEvent.click(screen.getByRole('button', { name: 'Go back' }));
+      fireEvent.click(screen.getByRole('button', { name: 'Back to home' }));
       expect(onBack).toHaveBeenCalledTimes(1);
     } finally {
       Object.defineProperty(window, 'innerWidth', { configurable: true, value: originalWidth });

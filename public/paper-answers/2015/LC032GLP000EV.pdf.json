@@ -1,0 +1,1706 @@
+{
+  "band": [
+    1,
+    17
+  ],
+  "component": "",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC032GLP000EV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "1",
+      "pP": 2,
+      "pY": [
+        0.0745,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 4,
+          "r": [
+            0.0,
+            0.054,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0661
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "2",
+      "pP": 3,
+      "pY": [
+        0.0745,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.0541,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.066
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "3",
+      "pP": 4,
+      "pY": [
+        0.0594,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.054,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.066
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "4",
+      "pP": 5,
+      "pY": [
+        0.0594,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.054,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.066
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "5",
+      "pP": 6,
+      "pY": [
+        0.1264,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.054,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.066
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "6",
+      "pP": 7,
+      "pY": [
+        0.0594,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.054,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.066
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "7",
+      "pP": 8,
+      "pY": [
+        0.078,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.054,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.066
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "8",
+      "pP": 9,
+      "pY": [
+        0.136,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0.0,
+            0.054,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.066
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "9",
+      "pP": 10,
+      "pY": [
+        0.0594,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0.0,
+            0.054,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 16,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "n": "1(a)",
+      "label": "Question 1(a) · Sole trader trading and profit and loss account",
+      "pP": 2,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Trading and Profit and Loss Account for the year ended 31/12/2014.",
+        "focus": null,
+        "marks": 80
+      }
+    },
+    {
+      "n": "1(b)",
+      "label": "Question 1(b) · Sole trader balance sheet",
+      "pP": 2,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Balance Sheet as at 31/12/2014.",
+        "focus": null,
+        "marks": 40
+      }
+    },
+    {
+      "n": "2(a)",
+      "label": "Question 2(a) · Doctor’s opening capital",
+      "pP": 3,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate Dr. Wallace’s Capital on 01/01/2014.",
+        "focus": null,
+        "marks": 20
+      }
+    },
+    {
+      "n": "2(b)",
+      "label": "Question 2(b) · Doctor’s income and expenditure account",
+      "pP": 3,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare Dr. Wallace’s Income and Expenditure Account for the year ended 31/12/2014.",
+        "focus": null,
+        "marks": 40
+      }
+    },
+    {
+      "n": "3(a)",
+      "label": "Question 3(a) · Adjusted bank account",
+      "pP": 4,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Show Julia Lyons’s Adjusted Bank Account and bring down the adjusted balance.",
+        "focus": null,
+        "marks": 35
+      }
+    },
+    {
+      "n": "3(b)",
+      "label": "Question 3(b) · Bank reconciliation statement",
+      "pP": 4,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a statement on 31/03/2015 reconciling the adjusted Bank Account balance with the Bank Statement balance.",
+        "focus": null,
+        "marks": 25
+      }
+    },
+    {
+      "n": "4(a)",
+      "label": "Question 4(a) · Journal entries to correct errors",
+      "pP": 5,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Journalise the necessary corrections.",
+        "focus": null,
+        "marks": 35
+      }
+    },
+    {
+      "n": "4(b)",
+      "label": "Question 4(b) · Corrected net profit",
+      "pP": 5,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Statement of Corrected Net Profit if net profit as per accounts is €18,400.",
+        "focus": null,
+        "marks": 25
+      }
+    },
+    {
+      "n": "5(a)",
+      "label": "Question 5(a) · Profitability, stock turnover and share-capital calculations",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "You are required to calculate: (to 2 decimal places where appropriate.)\nThe Gross Profit margin.\nThe Rate of Stock Turnover.\nThe Return on Capital Employed.\nHow many more shares can Springfield Ltd issue/sell?",
+        "focus": null,
+        "marks": 40
+      }
+    },
+    {
+      "n": "5(b)(i)",
+      "label": "Question 5(b)(i) · Explain 9% debentures (2021/2022)",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain the following terms and state how they apply to the above Accounts.\n9% Debentures (2021/2022)",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(b)(ii)",
+      "label": "Question 5(b)(ii) · Explain trade debtors",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain the following terms and state how they apply to the above Accounts.\nTrade Debtors",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(b)(iii)",
+      "label": "Question 5(b)(iii) · Explain depreciation",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain the following terms and state how they apply to the above Accounts.\nDepreciation",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(b)(iv)",
+      "label": "Question 5(b)(iv) · Explain interest paid",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain the following terms and state how they apply to the above Accounts.\nInterest Paid",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(c)",
+      "label": "Question 5(c) · Acid test ratio and liquidity",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the Acid Test Ratio for 2014.\nWhat does this ratio tell us about Springfield Ltd?",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(d)",
+      "label": "Question 5(d) · Assess Springfield’s profitability",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "The Return on Capital Employed for Springfield Ltd in 2013 was 19%.\nComment on the profitability of Springfield Ltd in 2014.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "6(a)",
+      "label": "Question 6(a) · Reconcile operating profit to cash flow",
+      "pP": 7,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Reconcile the operating profit to net cash inflow/outflow from operating activities.",
+        "focus": null,
+        "marks": 30
+      }
+    },
+    {
+      "n": "6(b)",
+      "label": "Question 6(b) · Cash flow statement",
+      "pP": 7,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the Cash Flow Statement of Rodgers Ltd for the year ended 31/12/2014 using the following headings:\nOperating activities\nReturns on investments and servicing of finance\nTaxation\nCapital expenditure and financial investment\nEquity dividends paid\nFinancing.",
+        "focus": null,
+        "marks": 65
+      }
+    },
+    {
+      "n": "6(c)",
+      "label": "Question 6(c) · Reconcile cash flow to net debt",
+      "pP": 7,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Reconcile the Net Cash Flow to Movement in Net Debt.",
+        "focus": null,
+        "marks": 5
+      }
+    },
+    {
+      "n": "7(a)",
+      "label": "Question 7(a) · Opening capital from incomplete records",
+      "pP": 8,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate Mary Henderson’s Capital on 01/01/2014.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "7(b)-sales",
+      "label": "Question 7(b)-sales · Total sales using a control account",
+      "pP": 8,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate Mary Henderson’s Total Sales and Total Purchases using Control Accounts.",
+        "focus": "Calculate Mary Henderson’s total sales using the relevant control account.",
+        "marks": 10
+      }
+    },
+    {
+      "n": "7(b)-purchases",
+      "label": "Question 7(b)-purchases · Total purchases using a control account",
+      "pP": 8,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate Mary Henderson’s Total Sales and Total Purchases using Control Accounts.",
+        "focus": "Calculate Mary Henderson’s total purchases using the relevant control account.",
+        "marks": 10
+      }
+    },
+    {
+      "n": "7(c)",
+      "label": "Question 7(c) · Trading and profit and loss from incomplete records",
+      "pP": 8,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Trading and Profit and Loss Account for the year ended 31/12/2014.",
+        "focus": null,
+        "marks": 30
+      }
+    },
+    {
+      "n": "7(d)",
+      "label": "Question 7(d) · Balance sheet from incomplete records",
+      "pP": 8,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Balance Sheet as at 31/12/2014.",
+        "focus": null,
+        "marks": 40
+      }
+    },
+    {
+      "n": "8(a)-production-fixed",
+      "label": "Question 8(a)-production-fixed · Production fixed overhead absorption rate",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the overhead absorption rate (both Fixed and Variable) for each Department based on Direct Labour Hours.",
+        "focus": "Calculate the fixed overhead absorption rate for Production based on direct labour hours.",
+        "marks": 10
+      }
+    },
+    {
+      "n": "8(a)-production-variable",
+      "label": "Question 8(a)-production-variable · Production variable overhead absorption rate",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the overhead absorption rate (both Fixed and Variable) for each Department based on Direct Labour Hours.",
+        "focus": "Calculate the variable overhead absorption rate for Production based on direct labour hours.",
+        "marks": 10
+      }
+    },
+    {
+      "n": "8(a)-packing-fixed",
+      "label": "Question 8(a)-packing-fixed · Packing fixed overhead absorption rate",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the overhead absorption rate (both Fixed and Variable) for each Department based on Direct Labour Hours.",
+        "focus": "Calculate the fixed overhead absorption rate for Packing based on direct labour hours.",
+        "marks": 10
+      }
+    },
+    {
+      "n": "8(a)-packing-variable",
+      "label": "Question 8(a)-packing-variable · Packing variable overhead absorption rate",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the overhead absorption rate (both Fixed and Variable) for each Department based on Direct Labour Hours.",
+        "focus": "Calculate the variable overhead absorption rate for Packing based on direct labour hours.",
+        "marks": 10
+      }
+    },
+    {
+      "n": "8(b)",
+      "label": "Question 8(b) · Total cost of Job 671",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the total cost of Job No. 671.",
+        "focus": null,
+        "marks": 24
+      }
+    },
+    {
+      "n": "8(c)",
+      "label": "Question 8(c) · Selling price of Job 671",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the selling price of Job No. 671 if the mark up on cost is 20%.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "8(d)",
+      "label": "Question 8(d) · Why calculate product costs?",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "State two reasons why a business needs to calculate the cost price of a product.",
+        "focus": null,
+        "marks": 6
+      }
+    },
+    {
+      "n": "9(a)",
+      "label": "Question 9(a) · Sales budget",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Sales Budget in units and in €.",
+        "focus": null,
+        "marks": 16
+      }
+    },
+    {
+      "n": "9(b)",
+      "label": "Question 9(b) · Production budget",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Production Budget.",
+        "focus": null,
+        "marks": 18
+      }
+    },
+    {
+      "n": "9(c)",
+      "label": "Question 9(c) · Material usage budget",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Material Usage Budget.",
+        "focus": null,
+        "marks": 16
+      }
+    },
+    {
+      "n": "9(d)",
+      "label": "Question 9(d) · Material purchases budget",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Material Purchases Budget in units and €.",
+        "focus": null,
+        "marks": 16
+      }
+    },
+    {
+      "n": "9(e)",
+      "label": "Question 9(e) · Labour budget",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Labour (wages) Budget.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "9(f)",
+      "label": "Question 9(f) · Purpose of a material usage budget",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Why would Gaelic Ltd prepare the Materials Usage Budget?",
+        "focus": null,
+        "marks": 4
+      }
+    }
+  ],
+  "schemeFileid": "LC032GLP000EV.pdf",
+  "v": 1,
+  "maxCropPages": 1
+}

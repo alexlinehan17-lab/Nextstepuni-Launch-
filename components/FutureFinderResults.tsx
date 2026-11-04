@@ -77,7 +77,7 @@ interface FutureFinderResultsProps {
   onToggleSave: (code: string) => void;
   onToggleCompare: (r: DisplayResult) => void;
   onRemoveCompare: (code: string) => void;
-  onRetake: () => void;
+  onRetake?: () => void;
   onOpenCareerPaths?: (careerStrings: string[]) => void;
   explainer?: React.ComponentType<{ onClose: () => void }>;
   scoreBreakdownLabels?: ScoreBreakdownLabels;
@@ -177,7 +177,7 @@ function ResultsPhase({
   onToggleCompare: (r: DisplayResult) => void;
   onSelectCourse: (r: DisplayResult) => void;
   onCompare: () => void;
-  onRetake: () => void;
+  onRetake?: () => void;
   onOpenCareerPaths?: (careerStrings: string[]) => void;
   explainer?: React.ComponentType<{ onClose: () => void }>;
 }) {
@@ -204,9 +204,9 @@ function ResultsPhase({
           >
             <Eye size={14} /> How this works
           </button>
-          <button onClick={onRetake} className="flex items-center gap-1.5 text-xs font-semibold text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">
+          {onRetake && <button onClick={onRetake} className="flex items-center gap-1.5 text-xs font-semibold text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">
             <RotateCcw size={14} /> Retake
-          </button>
+          </button>}
         </div>
       </div>
 
@@ -232,7 +232,7 @@ function ResultsPhase({
 
       {/* Sort & Filter controls */}
       <div className="flex flex-wrap gap-2 mb-4">
-        <div className="flex items-center gap-1 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-0.5">
+        <div className="inline-flex items-center gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1">
           {([['match', 'Recommended'], ['points', 'Points']] as const).map(([key, label]) => {
             const active = sortMode === key;
             const isPoints = key === 'points';
@@ -241,8 +241,8 @@ function ResultsPhase({
                 key={key}
                 onClick={() => { if (isPoints && active && onPointsDirToggle) onPointsDirToggle(); else onSortChange(key); }}
                 title={isPoints ? (active ? `Points: ${pointsAsc ? 'low → high' : 'high → low'} — tap to flip` : 'Sort by points') : undefined}
-                className={`px-3 py-1.5 rounded-md text-xs font-semibold transition-colors inline-flex items-center gap-1 ${
-                  active ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-white shadow-sm' : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
+                className={`min-h-9 shrink-0 whitespace-nowrap rounded-lg border px-3 text-[13px] font-semibold transition-colors inline-flex items-center gap-1 ${
+                  active ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm' : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'
                 }`}
               >
                 {isPoints && active && (pointsAsc ? <ArrowUp size={12} /> : <ArrowDown size={12} />)}
@@ -265,7 +265,7 @@ function ResultsPhase({
 
       {/* Compare bar */}
       {compareCourses.length > 0 && (
-        <div className="mb-4 p-3 rounded-xl border flex items-center justify-between bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.2)' }}>
+        <div className="mb-4 p-3 rounded-xl border flex items-center justify-between bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.2)' }}>
           <span className="text-xs font-semibold" style={{ color: COLORS.accent }}>
             {compareCourses.length} course{compareCourses.length > 1 ? 's' : ''} selected for comparison
           </span>
@@ -328,7 +328,7 @@ function ResultCard({
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: rank * 0.04, duration: 0.3 }}
-      className="group rounded-xl border hover:shadow-md cursor-pointer overflow-hidden transition-all bg-[#FAF7F4] dark:bg-zinc-900"
+      className="group rounded-xl border hover:shadow-md cursor-pointer overflow-hidden transition-all bg-white dark:bg-zinc-900"
       style={{ borderColor: 'rgba(0,0,0,0.07)' }}
       onClick={onClick}
     >
@@ -456,7 +456,7 @@ function DetailPhase({
         <ChevronLeft size={16} /> Back to results
       </button>
 
-      <div className="bg-[#FAF7F4] dark:bg-zinc-900 overflow-hidden" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: '12px' }}>
+      <div className="bg-white dark:bg-zinc-900 overflow-hidden" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: '12px' }}>
         {/* Header */}
         <div className="p-6" style={{ backgroundColor: COLORS.accent }}>
           <div className="flex items-center gap-2 mb-2 flex-wrap">
@@ -497,7 +497,7 @@ function DetailPhase({
 
           {/* Your Points section */}
           {c.typicalPoints === 0 ? (
-            <div className="p-4 rounded-xl border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
+            <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
               <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Entry Requirements</h4>
               <p className="text-sm text-zinc-700 dark:text-zinc-300">
                 {c.pathwayType === 'apprenticeship'
@@ -506,7 +506,7 @@ function DetailPhase({
               </p>
             </div>
           ) : autoPoints > 0 ? (
-            <div className="p-4 rounded-xl border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
+            <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
               <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Your Points</h4>
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div>
@@ -559,13 +559,13 @@ function DetailPhase({
             <h4 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">Subjects That Help</h4>
             <div className="flex flex-wrap gap-2">
               {c.subjectBonus.map(sub => (
-                <span key={sub} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-[#FAF7F4] dark:bg-zinc-900" style={{ color: COLORS.accent }}>{sub}</span>
+                <span key={sub} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700" style={{ color: COLORS.accent }}>{sub}</span>
               ))}
             </div>
           </div>
 
           {/* Why this suits you — show up to 5 reasons */}
-          <div className="p-4 rounded-xl border bg-[#FAF7F4] dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
+          <div className="p-4 rounded-xl border bg-white dark:bg-zinc-900" style={{ borderColor: 'rgba(242,107,31,0.15)' }}>
             <h4 className="text-sm font-bold mb-3 flex items-center gap-2" style={{ color: COLORS.accent }}>
               <Heart size={16} style={{ color: COLORS.accent }} /> Why This Suits You
             </h4>
@@ -873,7 +873,7 @@ function ScoringExplainerModal({ onClose }: { onClose: () => void }) {
         <div className="px-6 pb-6 pt-2 shrink-0 border-t border-black/[0.04] dark:border-white/[0.06]">
           <button
             onClick={onClose}
-            className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
+            className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
           >
             Got it
           </button>

@@ -27,7 +27,7 @@ beforeEach(() => {
 });
 
 describe('Topic Vault — ReviseByTopic', () => {
-  test('renders the subject picker (level 0)', () => {
+  test('opens directly on a topic map with a subject picker', () => {
     render(
       <ReviseByTopic
         subjects={[{ id: richestSubject(), label: label(richestSubject()) }]}
@@ -38,7 +38,7 @@ describe('Topic Vault — ReviseByTopic', () => {
       />,
     );
     expect(screen.getByText(/Topic Atlas/i)).toBeInTheDocument();
-    expect(screen.getByText(/Every question the SEC has asked, mapped by topic/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Choose a subject' })).toBeInTheDocument();
   });
 
   test('drills subject → topic list → question feed without crashing', () => {
@@ -53,10 +53,8 @@ describe('Topic Vault — ReviseByTopic', () => {
       />,
     );
     // Level 0 → 1: pick the subject tile.
-    fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${label(sid)}`) }));
-    expect(screen.getByText(/Pick a topic — every question ever asked on it is inside/i)).toBeInTheDocument();
     // The volume header band prints real stats: questions, topics, and a sane year span.
-    expect(screen.getByText(/[\d,]+ questions · \d+ topics · \d{4}–\d{4}/)).toBeInTheDocument();
+    expect(screen.getByText(/[\d,]+ questions · \d{4}–\d{4}/)).toBeInTheDocument();
 
     // The first topic renders as a row; drill into its first course-specific
     // occurrence. Overlapping specifications may intentionally reuse a label.
@@ -81,7 +79,6 @@ describe('Topic Vault — ReviseByTopic', () => {
         onBack={noop}
       />,
     );
-    fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${label(sid)}`) }));
     const search = screen.getByLabelText(/Search topics/i);
     fireEvent.change(search, { target: { value: 'zzzznotatopiczzz' } });
     expect(screen.getByText(/No topics match/i)).toBeInTheDocument();

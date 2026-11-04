@@ -22,6 +22,9 @@ export const MARK_BANK_SESSION_SIZE = 12;
  */
 export function listeningExerciseKey(card: SecCard): string | null {
   if (!card.audioMaterial) return null;
+  // French listening cards each carry one independently scored task. The Irish
+  // combined assessment path cannot assess their French rubric criteria.
+  if (card.subjectId === 'french') return null;
   return [
     card.subjectId,
     card.year,

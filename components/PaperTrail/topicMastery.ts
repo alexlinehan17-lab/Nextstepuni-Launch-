@@ -14,7 +14,7 @@
 
 import { allMarks } from './attemptStore';
 import { loadDeck } from './reviewStore';
-import { topicLabel, topicsForPaper } from './topics';
+import { browseTopicIdsForQuestion, topicLabel, topicsForPaper } from './topics';
 import { type PaperLang, type PaperLevel } from '../../types/paperTrail';
 
 /** Stability (days) at which a card counts as fully retained for mastery. */
@@ -73,16 +73,21 @@ export function masteryForSubject(uid: string | undefined, subjectId: string): T
   for (const m of allMarks(uid)) {
     if (m.subjectId !== subjectId) continue;
     const tags = topicsForPaper(m.subjectId, m.year, m.level as PaperLevel, m.lang as PaperLang, m.fileid);
-    const primary = tags?.q.find(q => q.n === m.n)?.primary;
-    if (!primary) continue;
+    const question = tags?.q.find(q => q.n === m.n);
+    if (!tags || !question) continue;
     const pct = m.max ? (m.score / m.max) * 100 : m.score;
-    bump(primary, { accSum: pct, accN: 1 });
+    for (const id of new Set(browseTopicIdsForQuestion(tags, question))) {
+      bump(id, { accSum: pct, accN: 1 });
+    }
   }
 
   // Review-card stability → topic (only cards actually reviewed).
   for (const c of loadDeck(uid)) {
-    if (c.subjectId !== subjectId || !c.topicId || c.stability == null) continue;
-    bump(c.topicId, { stabSum: c.stability, stabN: 1 });
+    if (c.subjectId !== subjectId || c.stability == null) continue;
+    const tags = topicsForPaper(c.subjectId, c.year, c.level, c.lang, c.fileid);
+    const question = tags?.q.find(q => q.n === c.n);
+    const ids = tags && question ? browseTopicIdsForQuestion(tags, question) : (c.topicId ? [c.topicId] : []);
+    for (const id of new Set(ids)) bump(id, { stabSum: c.stability, stabN: 1 });
   }
 
   const out: TopicMastery[] = [];

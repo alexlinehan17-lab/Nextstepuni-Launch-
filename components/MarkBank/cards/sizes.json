@@ -1,43 +1,43 @@
 {
  "biology": {
-  "higher": 673,
-  "ordinary": 686
+  "higher": 2705,
+  "ordinary": 2835
  },
  "chemistry": {
-  "higher": 496,
-  "ordinary": 380
+  "higher": 1862,
+  "ordinary": 1507
  },
  "physics": {
   "higher": 570,
   "ordinary": 563
  },
  "agricultural-science": {
-  "higher": 438,
-  "ordinary": 431
+  "higher": 1207,
+  "ordinary": 1257
  },
  "business": {
-  "higher": 272,
-  "ordinary": 334
+  "higher": 877,
+  "ordinary": 1111
  },
  "home-economics": {
   "higher": 283,
   "ordinary": 266
  },
  "economics": {
-  "higher": 383,
-  "ordinary": 314
+  "higher": 469,
+  "ordinary": 384
  },
  "construction-studies": {
-  "higher": 255,
-  "ordinary": 250
+  "higher": 735,
+  "ordinary": 526
  },
  "maths": {
-  "higher": 398,
-  "ordinary": 435
+  "higher": 413,
+  "ordinary": 441
  },
  "english": {
-  "higher": 210,
-  "ordinary": 440
+  "higher": 738,
+  "ordinary": 1947
  },
  "irish": {
   "higher": 461,
@@ -45,19 +45,158 @@
   "foundation": 1003
  },
  "art": {
-  "higher": 222,
-  "ordinary": 240
+  "higher": 902,
+  "ordinary": 854
  },
  "geography": {
-  "higher": 445,
-  "ordinary": 309
+  "higher": 2007,
+  "ordinary": 2146
  },
  "computer-science": {
   "higher": 209,
   "ordinary": 127
  },
  "engineering": {
-  "higher": 313,
+  "higher": 360,
+  "ordinary": 194
+ },
+ "religious-education": {
+  "higher": 135,
   "ordinary": 153
+ },
+ "lcvp": {
+  "common": 314
+ },
+ "technology": {
+  "higher": 588,
+  "ordinary": 501
+ },
+ "history": {
+  "higher": 80,
+  "ordinary": 669
+ },
+ "french": {
+  "higher": 883,
+  "ordinary": 1237
+ },
+ "applied-maths": {
+  "higher": 716,
+  "ordinary": 770
+ },
+ "german": {
+  "higher": 111,
+  "ordinary": 153
+ },
+ "spanish": {
+  "higher": 204,
+  "ordinary": 143
+ },
+ "italian": {
+  "higher": 172,
+  "ordinary": 178
+ },
+ "russian": {
+  "higher": 83,
+  "ordinary": 116
+ },
+ "japanese": {
+  "higher": 339,
+  "ordinary": 261
+ },
+ "classical-studies": {
+  "higher": 240,
+  "ordinary": 276
+ },
+ "latin": {
+  "higher": 145,
+  "ordinary": 82
+ },
+ "polish": {
+  "higher": 115,
+  "ordinary": 122
+ },
+ "arabic": {
+  "higher": 125,
+  "ordinary": 125
+ },
+ "portuguese": {
+  "higher": 94,
+  "ordinary": 79
+ },
+ "romanian": {
+  "higher": 50
+ },
+ "dutch": {
+  "higher": 42
+ },
+ "lithuanian": {
+  "higher": 163,
+  "ordinary": 143
+ },
+ "latvian": {
+  "higher": 20
+ },
+ "czech": {
+  "higher": 15
+ },
+ "ancient-greek": {
+  "higher": 369,
+  "ordinary": 14
+ },
+ "modern-greek": {
+  "higher": 79
+ },
+ "hungarian": {
+  "higher": 168
+ },
+ "bulgarian": {
+  "higher": 141
+ },
+ "slovakian": {
+  "higher": 140
+ },
+ "swedish": {
+  "higher": 121
+ },
+ "estonian": {
+  "higher": 107
+ },
+ "finnish": {
+  "higher": 90
+ },
+ "croatian": {
+  "higher": 100
+ },
+ "danish": {
+  "higher": 79
+ },
+ "slovenian": {
+  "higher": 23
+ },
+ "mandarin-chinese": {
+  "higher": 114,
+  "ordinary": 87
+ },
+ "ukrainian": {
+  "higher": 20
+ },
+ "dcg": {
+  "higher": 307,
+  "ordinary": 238
+ },
+ "physical-education": {
+  "higher": 382,
+  "ordinary": 390
+ },
+ "maltese": {
+  "higher": 29
+ },
+ "politics-and-society": {
+  "higher": 263,
+  "ordinary": 360
+ },
+ "accounting": {
+  "higher": 721,
+  "ordinary": 644
  }
 }

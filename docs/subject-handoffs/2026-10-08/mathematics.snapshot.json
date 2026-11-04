@@ -1,0 +1,66 @@
+{
+  "subject": "mathematics",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Mathematics-Completion-20261007",
+  "branch": "codex/mathematics-corpus-completion-20261007",
+  "sourceHead": "49ff5053e9c785f9e538e9dd39050ef4fac6682f",
+  "snapshotCommit": "5a82720762ab05a7298c4d5ee03ee1083e746a05",
+  "snapshotRef": "refs/checkpoints/portable-subjects-20261008/mathematics",
+  "snapshotTree": "3e26caceccf0c872b91cf3401df07960c859f982",
+  "changedPaths": 390,
+  "capturedLocalFiles": 380,
+  "capturedLocalBytes": 105753294,
+  "exactFileBytesVerified": true,
+  "handoff": "mathematics.md",
+  "excluded": [
+    {
+      "path": "public/papers/lc/mathematics/2020/paper/LC003BLP000EV.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "public/papers/lc/mathematics/2020/scheme/LC003BLP000EV.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "public/papers/lc/mathematics/2025/paper/LC003ALP100EV.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "public/papers/lc/mathematics/2025/paper/LC003ALP200EV.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "public/papers/lc/mathematics/2025/paper/LC003BLP000EV.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "public/papers/lc/mathematics/2025/paper/LC003GLP100EV.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "public/papers/lc/mathematics/2025/paper/LC003GLP200EV.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "public/papers/lc/mathematics/2025/scheme/LC003ALP000EV.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "public/papers/lc/mathematics/2025/scheme/LC003BLP000EV.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "public/papers/lc/mathematics/2025/scheme/LC003GLP000EV.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "public/papers/lc/mathematics/2026/paper/LC003BLP000EV.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "public/papers/lc/mathematics/2026/scheme/LC003BLP000EV.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    }
+  ],
+  "originalCheckpointCommit": "d2ad79473ce06a9a8ff06537c64d75e604444aa2",
+  "snapshotBase": "7c71a9b9a107102ac9cfb7132553905a1cd48bd6"
+}

@@ -6,6 +6,7 @@ import {
   findCanonicalTopic,
   getCurriculumCohortNotice,
   resolveCurriculumSpecification,
+  resolveSubjectId,
   specificationContainsId,
 } from '../curriculumRegistry';
 import {
@@ -60,7 +61,7 @@ describe('versioned curriculum registry', () => {
       expect(specification.lastExamYear).toBe(2026);
       expect(specification.groups[0].title).toBe(firstGroup);
       expect(specification.groups.some((group) => group.title.startsWith('Strand 1:'))).toBe(false);
-      expect(resolveCurriculumSpecification(subject, 2027)).toBeUndefined();
+      expect(resolveCurriculumSpecification(subject, 2027)?.id).toBe(`${subject === 'Ancient Greek' ? 'ancient-greek' : subject.toLowerCase()}:2027`);
     }
   });
 
@@ -193,9 +194,11 @@ describe('versioned curriculum registry', () => {
     }
 
     const mathematics = getCurriculumCohortNotice('Mathematics', 2028);
-    expect(mathematics?.title).toBe('Current specification — exams through 2028');
-    expect(mathematics?.message).toContain('first examined in 2029');
-    expect(resolveCurriculumSpecification('Mathematics', 2029)).toBeUndefined();
+    expect(mathematics?.title).toBe('Current specification — exams through 2029');
+    expect(mathematics?.message).toContain('earliest possible first examination year');
+    expect(resolveCurriculumSpecification('Mathematics', 2029)?.id).toBe('mathematics:2015');
+    expect(resolveCurriculumSpecification('Home Economics', 2029)?.id).toBe('home-economics:current');
+    expect(resolveCurriculumSpecification('Mathematics', 2030)).toBeUndefined();
 
     const english = getCurriculumCohortNotice('English', 2028);
     expect(english?.message).toContain('earliest possible first examination year');
@@ -252,6 +255,12 @@ describe('versioned curriculum registry', () => {
     ]);
   });
 
+  /* Sixty seconds, not the thirty every other test gets. This one walks EVERY
+   * card in the bank against the canonical curriculum, so its cost grows with
+   * the bank: adding Polish — the twenty-fourth subject, 238 cards and two more decks — pushed it past thirty seconds under the full suite's
+   * parallel load, while it still finishes in fourteen on its own. Raising the
+   * ceiling for the two whole-bank tests keeps the global thirty in place for
+   * everything else, where a test that runs long really is hung. */
   it('resolves every Mark Bank card into the correct canonical specification', async () => {
     const subjectForTopic = new Map<string, string>();
     for (const subject of MARK_BANK_SUBJECTS) {
@@ -265,9 +274,14 @@ describe('versioned curriculum registry', () => {
       for (const card of cards) {
         const subjectId = subjectForTopic.get(card.topicId);
         expect(subjectId, `${card.id}: no subject owns ${card.topicId}`).toBe(deck.subjectId);
-        const spec = resolveCurriculumSpecification(subjectId!, Math.max(2027, card.year))!;
+        // Historical card metadata must remain reachable in the specification
+        // it belongs to; a new cohort must not erase original-paper identities.
+        const spec = CURRICULUM_SPECIFICATIONS.find(candidate => candidate.subjectId === resolveSubjectId(subjectId!) && findCanonicalTopic(candidate, card.topicId));
+        expect(spec, `${card.id}: no specification for ${subjectId}`).toBeDefined();
         expect(findCanonicalTopic(spec, card.topicId), `${card.id}: ${card.topicId} absent from ${spec.id}`).toBeDefined();
       }
     }
-  });
+    // Its own timeout: it loads and walks EVERY built deck, so its work grows
+    // with the bank. At 15,600 cards it runs a little over the 30s default.
+  }, 180_000);
 });

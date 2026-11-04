@@ -1,0 +1,1685 @@
+{
+  "agsci-2010-hl-scheme-p05-tooth": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2010-hl-scheme-p05-tooth.png",
+    "md5": "85c2ad97b31e16ee1957df64d85517e1",
+    "alt": "Official marking-scheme drawing of a longitudinal section through a tooth, showing the crown and root, outer enamel, dentin, pulp, gum, periodontium, cementum, bone, blood vessels and nerves. The diagram has a two-mark tariff; four correctly positioned labels earn two marks each.",
+    "attribution": "SEC Agricultural Science 2010 Higher Level marking scheme, PDF page 5 — © State Examinations Commission. Diagram credited in the scheme to Virtualmedicalcentre.com.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2010/LC024ALP000EV.pdf",
+    "sourceSha256": "120a5729e8e4d01ea5411df25c54e509c95ea099fb55cb52466f045c72909174",
+    "pdfPage": 5,
+    "cropRect": [
+      0.18,
+      0.214,
+      0.406,
+      0.33
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2010-hl-scheme-p11-punnett": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2010-hl-scheme-p11-punnett.png",
+    "md5": "125b85c6c84bf94a3c2d08c04069e634",
+    "alt": "Official Punnett square. The black parent contributes B or b and the brown parent contributes b. The two offspring cells are Bb, Black, and bb, Brown.",
+    "attribution": "SEC Agricultural Science 2010 Higher Level marking scheme, PDF page 11 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2010/LC024ALP000EV.pdf",
+    "sourceSha256": "120a5729e8e4d01ea5411df25c54e509c95ea099fb55cb52466f045c72909174",
+    "pdfPage": 11,
+    "cropRect": [
+      0.15,
+      0.356,
+      0.468,
+      0.45
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2010-ol-paper-cell": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2010-ol-paper-cell.png",
+    "md5": "737594a7057c53d7d9f228d8f2f1a1d0",
+    "alt": "Original plant-cell diagram, labelled A, B and C, with a chloroplast already named.",
+    "attribution": "SEC Agricultural Science 2010 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2010/LC024GLP000EV.pdf",
+    "sourceSha256": "4ee8be5bf23d55308b3d08007dad8c0a181c2e7a6cad0e501c4385272fa7e6f0",
+    "pdfPage": 5,
+    "cropRect": [
+      0.56,
+      0.128,
+      0.91,
+      0.334
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2010-ol-paper-heart": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2010-ol-paper-heart.png",
+    "md5": "57d0732161a44fc4ef74577593cb1577",
+    "alt": "Original sheep-heart diagram with labels A, B and C and their leader lines.",
+    "attribution": "SEC Agricultural Science 2010 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2010/LC024GLP000EV.pdf",
+    "sourceSha256": "4ee8be5bf23d55308b3d08007dad8c0a181c2e7a6cad0e501c4385272fa7e6f0",
+    "pdfPage": 8,
+    "cropRect": [
+      0.34,
+      0.1,
+      0.63,
+      0.292
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2010-ol-paper-reproductive": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2010-ol-paper-reproductive.png",
+    "md5": "4d2ab667df5a3da47a00b2e6ad3ca779",
+    "alt": "Original cow reproductive-system diagram with labels A, B and C; an oviduct is named.",
+    "attribution": "SEC Agricultural Science 2010 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2010/LC024GLP000EV.pdf",
+    "sourceSha256": "4ee8be5bf23d55308b3d08007dad8c0a181c2e7a6cad0e501c4385272fa7e6f0",
+    "pdfPage": 8,
+    "cropRect": [
+      0.359,
+      0.508,
+      0.688,
+      0.718
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2010-ol-paper-mitosis": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2010-ol-paper-mitosis.png",
+    "md5": "d82913925e042e2aee553754168b9c0b",
+    "alt": "Original metaphase diagram showing labels L and M and their leader lines.",
+    "attribution": "SEC Agricultural Science 2010 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2010/LC024GLP000EV.pdf",
+    "sourceSha256": "4ee8be5bf23d55308b3d08007dad8c0a181c2e7a6cad0e501c4385272fa7e6f0",
+    "pdfPage": 11,
+    "cropRect": [
+      0.3,
+      0.465,
+      0.735,
+      0.7
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-hl-paper-heart": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-hl-paper-heart.png",
+    "md5": "e7c3a633de3020ddf2df61f1de14d7b8",
+    "alt": "Original dissected mammalian-heart diagram with labels A, B, C, D, X and Y and their leader lines.",
+    "attribution": "SEC Agricultural Science 2011 Higher Level exampapers, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2011/LC024ALP000EV.pdf",
+    "sourceSha256": "19975eb5d04e868becd63819eb5a3325929f6c774cff8e6abd4b72a1d3fb4ed9",
+    "pdfPage": 4,
+    "cropRect": [
+      0.177,
+      0.153,
+      0.56,
+      0.383
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-hl-scheme-p10-punnett": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-hl-scheme-p10-punnett.png",
+    "md5": "5c3a1312e3b1d4bcd4668cb82066cf13",
+    "alt": "Official four-by-four Punnett square for HhLl crossed with HhLl. Both parents form HL, Hl, hL and hl gametes; all sixteen offspring genotypes are shown.",
+    "attribution": "SEC Agricultural Science 2011 Higher Level markingschemes, PDF page 10 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2011/LC024ALP000EV.pdf",
+    "sourceSha256": "9979d05e915b789dd55e9ac742066987f4b26c75820485b15b1436ed5d06e9ba",
+    "pdfPage": 10,
+    "cropRect": [
+      0.25,
+      0.245,
+      0.774,
+      0.441
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-ol-paper-bean": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-bean.png",
+    "md5": "a8e1d5d6baaec1a6d7fe1d73812ab090",
+    "alt": "Original germinating broad-bean seed diagram with labels A and B and both leader lines.",
+    "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2011/LC024GLP000EV.pdf",
+    "sourceSha256": "b7b85bb61a0e55572f8d576f7ad7cdc45d7311496297cf37b8c4b146b5fba748",
+    "pdfPage": 2,
+    "cropRect": [
+      0.629,
+      0.318,
+      0.875,
+      0.557
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-ol-paper-fertiliser": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-fertiliser.png",
+    "md5": "f56d46c0a0b36ac9628e959270d642d7",
+    "alt": "Original photograph of a compound fertilizer bag marked 16-4-8.",
+    "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2011/LC024GLP000EV.pdf",
+    "sourceSha256": "b7b85bb61a0e55572f8d576f7ad7cdc45d7311496297cf37b8c4b146b5fba748",
+    "pdfPage": 3,
+    "cropRect": [
+      0.58,
+      0.29,
+      0.875,
+      0.51
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-ol-paper-organisms": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-organisms.png",
+    "md5": "0386441da253995a35785585a281b01b",
+    "alt": "Original two photographs from Question 4, preserving the left and right organisms in their printed order.",
+    "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2011/LC024GLP000EV.pdf",
+    "sourceSha256": "b7b85bb61a0e55572f8d576f7ad7cdc45d7311496297cf37b8c4b146b5fba748",
+    "pdfPage": 4,
+    "cropRect": [
+      0.314,
+      0.108,
+      0.928,
+      0.23
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-ol-paper-soil-triangle": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-soil-triangle.png",
+    "md5": "017a9d9a514652c9420c956ad7668e11",
+    "alt": "Original soil texture triangle with all percentage axes and the table of sand, silt and clay percentages for samples A, B and C.",
+    "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 7 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2011/LC024GLP000EV.pdf",
+    "sourceSha256": "b7b85bb61a0e55572f8d576f7ad7cdc45d7311496297cf37b8c4b146b5fba748",
+    "pdfPage": 7,
+    "cropRect": [
+      0.09,
+      0.47,
+      0.919,
+      0.894
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-ol-paper-cell-division": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-cell-division.png",
+    "md5": "6618a3719ef8229ce73f2b63f1639227",
+    "alt": "Original cell-division diagrams A and B, including parent-cell labels, DNA-replication arrows and daughter cells.",
+    "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2011/LC024GLP000EV.pdf",
+    "sourceSha256": "b7b85bb61a0e55572f8d576f7ad7cdc45d7311496297cf37b8c4b146b5fba748",
+    "pdfPage": 9,
+    "cropRect": [
+      0.289,
+      0.619,
+      0.737,
+      0.829
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2012-hl-scheme-growth-curve": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2012-hl-scheme-growth-curve.png",
+    "md5": "0df2fb4c488e90fee80e44c49f463144",
+    "alt": "Official calf-to-beef growth curve. Weight in kg on the vertical axis and time on the horizontal; first winter 200 kg, second winter 460 kg, and compensatory growth indicated by an arrow.",
+    "attribution": "SEC Agricultural Science 2012 Higher Level marking scheme, PDF page 11 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2012/LC024ALP000EV.pdf",
+    "sourceSha256": "eb8f1a690343c38320680ed8425bdf0365e4ea1e4afe240d478026bf8909fdc1",
+    "pdfPage": 11,
+    "cropRect": [
+      0.33,
+      0.2,
+      0.78,
+      0.373
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2012-hl-scheme-oat-cross": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2012-hl-scheme-oat-cross.png",
+    "md5": "5047eec381a38646ee1f01be44f0b77a",
+    "alt": "Official hybrid oat cross: BE × BE, gametes B and E from each parent, offspring BB, BE, BE and EE, with matching straw lengths 500 mm, 650 mm and 800 mm. The source labels the intercross offspring F1; the accompanying note explains the generation label.",
+    "attribution": "SEC Agricultural Science 2012 Higher Level marking scheme, PDF page 12 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2012/LC024ALP000EV.pdf",
+    "sourceSha256": "eb8f1a690343c38320680ed8425bdf0365e4ea1e4afe240d478026bf8909fdc1",
+    "pdfPage": 12,
+    "cropRect": [
+      0.265,
+      0.292,
+      0.93,
+      0.497
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2026-hl-scheme-cow-reproductive-system": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-hl-scheme-cow-reproductive-system.png",
+    "md5": "2a991a089f4801a9e9864722c772e308",
+    "alt": "Official labelled diagram of the cow’s reproductive system: uterus, cervix, vagina, vulva, ovary, oviduct and uterine horns.",
+    "attribution": "SEC Agricultural Science 2026 Higher Level marking scheme, PDF page 25 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2026/LC024ALP000EV.pdf",
+    "sourceSha256": "efc3a2aa5656657aaec9364c23caf927f47078ecd622976e97b10628f8ecf6a6",
+    "pdfPage": 25,
+    "cropRect": [
+      0.3,
+      0.612,
+      0.725,
+      0.762
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2026-ol-scheme-root-hair": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-scheme-root-hair.png",
+    "md5": "6a3b901b206ce377e2ce094e95a7bf7b",
+    "alt": "Official root diagram with the root-hair region on the right-hand side outlined in red: the scheme accepts an R placed anywhere on or around the root hair.",
+    "attribution": "SEC Agricultural Science 2026 Ordinary Level marking scheme, PDF page 13 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2026/LC024GLP000EV.pdf",
+    "sourceSha256": "5d408c95790f05c59a313f8b2e30ed789d36ddfbbe23da59474d5db79a7e1e8a",
+    "pdfPage": 13,
+    "cropRect": [
+      0.555,
+      0.123,
+      0.8,
+      0.219
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2026-ol-scheme-weaning-region": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-scheme-weaning-region.png",
+    "md5": "a9eeee7855ee5efcfe209a2b144c4744",
+    "alt": "Official sheep production timeline (housing, mid-season lambing, finishing, finishing, breeding) with the accepted weaning region marked in yellow on the red line beneath the two finishing stages.",
+    "attribution": "SEC Agricultural Science 2026 Ordinary Level marking scheme, PDF page 18 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2026/LC024GLP000EV.pdf",
+    "sourceSha256": "5d408c95790f05c59a313f8b2e30ed789d36ddfbbe23da59474d5db79a7e1e8a",
+    "pdfPage": 18,
+    "cropRect": [
+      0.285,
+      0.387,
+      0.8,
+      0.545
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2026-ol-paper-farm-hazards": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-farm-hazards.png",
+    "md5": "3e237257a115016f777a517036aee260",
+    "alt": "Original hand-sketched farmyard map: livestock shed, milking parlour and handling unit, feed storage area, slurry tank, silage pit, machinery shed and farmhouse, with hazard triangles A, B and C.",
+    "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2026/LC024GLP000EV.pdf",
+    "sourceSha256": "b63e7223ff6e0b724984b51db9b1813f37d19496570b7614694abc85f5702e2f",
+    "pdfPage": 6,
+    "cropRect": [
+      0.22,
+      0.172,
+      0.748,
+      0.546
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2026-ol-paper-sedimentation": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-sedimentation.png",
+    "md5": "a8c5f798278de7ffc83ad4ed53fb5a76",
+    "alt": "Original sedimentation set-up: two cylinders with funnels and beakers of soil being poured, soil samples 1 and 2, and leader lines labelled A and B.",
+    "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 15 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2026/LC024GLP000EV.pdf",
+    "sourceSha256": "b63e7223ff6e0b724984b51db9b1813f37d19496570b7614694abc85f5702e2f",
+    "pdfPage": 15,
+    "cropRect": [
+      0.215,
+      0.14,
+      0.885,
+      0.41
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2026-ol-paper-udder": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-udder.png",
+    "md5": "66075871ddb7f88e952c3829ff7f9301",
+    "alt": "Original cut-away udder diagram with arrows labelled A, B, C and D.",
+    "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 35 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2026/LC024GLP000EV.pdf",
+    "sourceSha256": "b63e7223ff6e0b724984b51db9b1813f37d19496570b7614694abc85f5702e2f",
+    "pdfPage": 35,
+    "cropRect": [
+      0.12,
+      0.165,
+      0.9,
+      0.515
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2026-ol-paper-pig-digestive": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2026-ol-paper-pig-digestive.png",
+    "md5": "3a672da7e5aefde74f7d54304165f42c",
+    "alt": "Original pig digestive-system diagram labelled oesophagus, duodenum, ileum and appendix, with pointers A, B and C on unlabelled organs.",
+    "attribution": "SEC Agricultural Science 2026 Ordinary Level examination paper, PDF page 13 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2026/LC024GLP000EV.pdf",
+    "sourceSha256": "b63e7223ff6e0b724984b51db9b1813f37d19496570b7614694abc85f5702e2f",
+    "pdfPage": 13,
+    "cropRect": [
+      0.09,
+      0.205,
+      0.885,
+      0.552
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-hl-paper-indicator-plants": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-indicator-plants.png",
+    "md5": "7188791890775f4eea07e77e416ac1a6",
+    "alt": "Original Question 13(a)(ii) plate: the word list Ragwort, Meadow Thistle, Nettle and Primrose above four colour photographs lettered A to D: pale yellow flowers among crinkled leaves, a dense clump of serrated green leaves, tall stems of bright yellow daisy-like flowers, and a single purple thistle head.",
+    "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 22 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024ALP000EV.pdf",
+    "sourceSha256": "6dce8f33e8e14be906d7d48b0585be29982238a2579ab0d1ac1cadb2a2f0cd84",
+    "pdfPage": 22,
+    "cropRect": [
+      0.13,
+      0.112,
+      0.9,
+      0.294
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-hl-paper-liveweight-graph": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-liveweight-graph.png",
+    "md5": "d73f0bc16610489b11b6a64e67396812",
+    "alt": "Original line graph, Average Liveweight Gain of Dairy Beef Calves: liveweight (kg) against age (weeks) from 0 to 15, each point labelled 40, 45, 51, 57, 62, 68, 74, 80, 86, 92, 98, 103, 108, 113, 119 and 125 kg.",
+    "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 30 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024ALP000EV.pdf",
+    "sourceSha256": "6dce8f33e8e14be906d7d48b0585be29982238a2579ab0d1ac1cadb2a2f0cd84",
+    "pdfPage": 30,
+    "cropRect": [
+      0.12,
+      0.135,
+      0.91,
+      0.392
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-hl-paper-ipm-pyramid": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-ipm-pyramid.png",
+    "md5": "caba8e4bbec3e897ce173144c514fdfc",
+    "alt": "Original Integrated Pest Management pyramid: Prevention at the base, then Cultural / Sanitation, Physical / Mechanical, Biological, and Chemical (Pesticide) at the narrow top.",
+    "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 39 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024ALP000EV.pdf",
+    "sourceSha256": "6dce8f33e8e14be906d7d48b0585be29982238a2579ab0d1ac1cadb2a2f0cd84",
+    "pdfPage": 39,
+    "cropRect": [
+      0.4,
+      0.065,
+      0.915,
+      0.258
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-hl-paper-soil-structure": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-soil-structure.png",
+    "md5": "d25aaa525a101d32e0170b50feff11f3",
+    "alt": "Original Question 9(b) plate: the list Moderate quality, Poor quality, Good quality above three circular photographs of soil lettered A, B and C, each with a ruler for scale: A a fine, dark, crumbly soil with roots, B smaller angular clods, C large pale blocky clods.",
+    "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 14 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024ALP000EV.pdf",
+    "sourceSha256": "6dce8f33e8e14be906d7d48b0585be29982238a2579ab0d1ac1cadb2a2f0cd84",
+    "pdfPage": 14,
+    "cropRect": [
+      0.14,
+      0.47,
+      0.87,
+      0.666
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-hl-paper-breeds-ab": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-hl-paper-breeds-ab.png",
+    "md5": "f803f80805f38c540dce1fb28b987beb",
+    "alt": "Original Question 18(a)(ii) photographs: A a deep red-brown bull with a white face, belly and legs wearing a halter; B a black-and-white cow standing side-on in grass.",
+    "attribution": "SEC Agricultural Science 2024 Higher Level examination paper, PDF page 37 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024ALP000EV.pdf",
+    "sourceSha256": "6dce8f33e8e14be906d7d48b0585be29982238a2579ab0d1ac1cadb2a2f0cd84",
+    "pdfPage": 37,
+    "cropRect": [
+      0.15,
+      0.262,
+      0.85,
+      0.456
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-ol-paper-grazing-direction": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-paper-grazing-direction.png",
+    "md5": "c63cf2767a62da3518a9c67bdc607bab",
+    "alt": "Original Question 1 strip-grazing diagram and part (a): a field drawn as four vertical bands with three cows and a trough in the third band and a box A with a red arrow on its left boundary, above the instruction to tick the direction of grazing and two boxes, a right-pointing arrow and a left-pointing arrow.",
+    "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024GLP000EV.pdf",
+    "sourceSha256": "dfdcb939847873c973368e2d59e01a1b9420a160d187398e4fed01131c273275",
+    "pdfPage": 3,
+    "cropRect": [
+      0.08,
+      0.16,
+      0.88,
+      0.578
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-ol-scheme-grazing-direction": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-scheme-grazing-direction.png",
+    "md5": "77618692e1d6a60d15d9d4054e1a4607",
+    "alt": "Official marking-scheme answer for Question 1(a): the box beside the left-pointing arrow is ticked.",
+    "attribution": "SEC Agricultural Science 2024 Ordinary Level marking scheme, PDF page 12 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2024/LC024GLP000EV.pdf",
+    "sourceSha256": "b728e72363e7d7b7123f38884f637fcfad73adf2e32c6aaf57dce95eae52690e",
+    "pdfPage": 12,
+    "cropRect": [
+      0.215,
+      0.137,
+      0.848,
+      0.195
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-ol-paper-chart-choice": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-paper-chart-choice.png",
+    "md5": "27e0b2c2579ba1eef039917aa79e436d",
+    "alt": "Original Question 13(b)(iii): the instruction to tick the most suitable chart or graph, above three small charts lettered A, B and C, a line graph, a bar chart and a pie chart, each with an empty tick box.",
+    "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper, PDF page 21 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024GLP000EV.pdf",
+    "sourceSha256": "dfdcb939847873c973368e2d59e01a1b9420a160d187398e4fed01131c273275",
+    "pdfPage": 21,
+    "cropRect": [
+      0.09,
+      0.222,
+      0.91,
+      0.434
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-ol-paper-grass-growth": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-paper-grass-growth.png",
+    "md5": "570d03d377b4a46afd1849a3d6c1d25e",
+    "alt": "Original Question 14(a)(ii): the instruction to place an X at the best time of year to cut grass for silage, above a curve of grass growth against time of year from January to December with a tall first peak and a lower second peak.",
+    "attribution": "SEC Agricultural Science 2024 Ordinary Level examination paper, PDF page 22 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2024/LC024GLP000EV.pdf",
+    "sourceSha256": "dfdcb939847873c973368e2d59e01a1b9420a160d187398e4fed01131c273275",
+    "pdfPage": 22,
+    "cropRect": [
+      0.13,
+      0.31,
+      0.96,
+      0.522
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2024-ol-scheme-grass-growth-x": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2024-ol-scheme-grass-growth-x.png",
+    "md5": "bc9e9e7e6dcb3a03ab51c21f54352df4",
+    "alt": "Official marking-scheme answer for Question 14(a)(ii): the grass-growth curve under Spring, Summer, Autumn and Winter headings, with the X placed above the top of the first, higher peak.",
+    "attribution": "SEC Agricultural Science 2024 Ordinary Level marking scheme, PDF page 18 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2024/LC024GLP000EV.pdf",
+    "sourceSha256": "b728e72363e7d7b7123f38884f637fcfad73adf2e32c6aaf57dce95eae52690e",
+    "pdfPage": 18,
+    "cropRect": [
+      0.33,
+      0.188,
+      0.76,
+      0.33
+    ],
+    "reviewedAt": "2026-10-11"
+  },
+  "agsci-2023-hl-paper-goat-cow-table": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2023-hl-paper-goat-cow-table.png",
+    "md5": "f29bd1cf2f54e2ae0fc6a16569459ca6",
+    "alt": "Original Question 7(a) table comparing goat and cow dairy farming. Main breeds, the worked example: goat Saanen and Alpine, cow Holstein Friesian and Jersey. Goat column: lactation length 300 days, gestation length 150 days, oestrus length 12 – 48 hours, breeding programme: high yielding goats don’t have to be bred each year. The cow column is blank for lactation length, gestation length, oestrus length and breeding programme.",
+    "attribution": "SEC Agricultural Science 2023 Higher Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2023/LC024ALP000EV.pdf",
+    "sourceSha256": "059f553f84ee5e11732cc00a8dedb3163785170a8c1b292ec234326ddeb6c118",
+    "pdfPage": 10,
+    "cropRect": [
+      0.13,
+      0.212,
+      0.91,
+      0.428
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2023-hl-paper-udder": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2023-hl-paper-udder.png",
+    "md5": "2af19f9a9c7e32bc670f1e607feb3228",
+    "alt": "Original Question 18(a)(i) cross-section of a cow’s udder with four arrows lettered A to D: A points at a teat at the lower left, B at the green band inside the top of the udder, C at the thin pale membrane dividing the inside at the top right, and D at the orange body of the udder near the hind teats.",
+    "attribution": "SEC Agricultural Science 2023 Higher Level examination paper, PDF page 37 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2023/LC024ALP000EV.pdf",
+    "sourceSha256": "059f553f84ee5e11732cc00a8dedb3163785170a8c1b292ec234326ddeb6c118",
+    "pdfPage": 37,
+    "cropRect": [
+      0.14,
+      0.205,
+      0.545,
+      0.386
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2023-hl-paper-cmt-steps": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2023-hl-paper-cmt-steps.png",
+    "md5": "690e399c4d210e941c1d1703522a5a09",
+    "alt": "Original Question 18(a)(v) California Mastitis Test steps, four captioned photographs lettered A to D above an answer row numbered 1 to 4. A: Take a sample of milk from each quarter onto each well of the paddle. B: Add equal amounts of CMT solution and rotate in circular motion. C: High cell count mixture will thicken to a gel. D: Pour off excess milk.",
+    "attribution": "SEC Agricultural Science 2023 Higher Level examination paper, PDF page 38 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2023/LC024ALP000EV.pdf",
+    "sourceSha256": "059f553f84ee5e11732cc00a8dedb3163785170a8c1b292ec234326ddeb6c118",
+    "pdfPage": 38,
+    "cropRect": [
+      0.17,
+      0.143,
+      0.83,
+      0.552
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2023-ol-paper-ewe-mothering": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2023-ol-paper-ewe-mothering.png",
+    "md5": "382c8dbeee442c0bb589f7b97e83b415",
+    "alt": "Original Question 7 diagram and table. Ewe Mothering Ability, scored on the attentive behaviour of the ewe toward her lambs, on a line from 1 to 5: 1 Very poor, no interest in lambs; 2 Poor; 3 Average, moderately attentive but not protective; 4 Good; 5 Very Good, very attentive and protective. Below, the table: ewe 106, score 5, the worked example \"Very good, attentive mother and will protect lambs from predators and the weather\"; ewe 107, score 3, implication blank; ewe 108, score 1, implication blank.",
+    "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2023/LC024GLP000EV.pdf",
+    "sourceSha256": "98bdf03549315bcde81f97140f8d530f1081839c7aa7014c1ac8d00fda548510",
+    "pdfPage": 10,
+    "cropRect": [
+      0.06,
+      0.136,
+      0.94,
+      0.742
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2023-ol-paper-compacted-soil": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2023-ol-paper-compacted-soil.png",
+    "md5": "d04e62fec1f33c6da0589ca335c867f8",
+    "alt": "Original Question 15(a)(ii) diagrams with a key: soil particle (orange), water (blue outline) and air (empty). Sample A is a loose layer of rounded particles each ringed with water and with air spaces between them; sample B is a thinner layer of the same particles packed tightly together with little air space.",
+    "attribution": "SEC Agricultural Science 2023 Ordinary Level examination paper, PDF page 26 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2023/LC024GLP000EV.pdf",
+    "sourceSha256": "98bdf03549315bcde81f97140f8d530f1081839c7aa7014c1ac8d00fda548510",
+    "pdfPage": 26,
+    "cropRect": [
+      0.22,
+      0.341,
+      0.82,
+      0.502
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2022-hl-paper-calf-shed-airflow": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2022-hl-paper-calf-shed-airflow.png",
+    "md5": "18985bf83b0108f51f1e520e94abdc9c",
+    "alt": "Original Question 14(c)(ii): a photograph of a farmer letting off a smoke bomb among calves in a shed, and below it a cross-section of a calf shed with an open ridge at the top of the pitched roof, open sides under the eaves, two pens of calves on straw and an arrow from the smoke bomb marked X on the floor between them.",
+    "attribution": "SEC Agricultural Science 2022 Higher Level examination paper, PDF page 25 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2022/LC024ALP000EV.pdf",
+    "sourceSha256": "690cca40b2798863c397126cac71dc076d4fd3d6cb38395fee63c57625dc8f7f",
+    "pdfPage": 25,
+    "cropRect": [
+      0.1,
+      0.533,
+      0.92,
+      0.897
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2022-hl-scheme-calf-shed-airflow": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2022-hl-scheme-calf-shed-airflow.png",
+    "md5": "8776f5413d25e0008f433d4878379ff4",
+    "alt": "Official marking-scheme answer for Question 14(c)(ii): the shed cross-section with arrows coming in at each side under the eaves, rising diagonally towards the centre and going out through the open ridge in the roof; \"Correct indication of arrows coming in at side / going out through roof\", 4 + 1.",
+    "attribution": "SEC Agricultural Science 2022 Higher Level marking scheme, PDF page 26 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2022/LC024ALP000EV.pdf",
+    "sourceSha256": "9e868b6c11ecf6bf71da03b8ced52b3be4aa80bbacb205b5fd418b555abd1a40",
+    "pdfPage": 26,
+    "cropRect": [
+      0.08,
+      0.43,
+      0.95,
+      0.672
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2022-ol-paper-grass-growth-curve": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2022-ol-paper-grass-growth-curve.png",
+    "md5": "e7f42f04dfadff11667c8b9e9bdc524e",
+    "alt": "Original Question 16(a) line graph, Grass Growth Curve and Feed Demand: yield of DM (kg/ha) from 0 to 90 against the months February to November. The solid blue grass-growth line rises from 10 in February to a peak of 78 in May, falls to 50 in July, rises to 60 in August and falls to 5 in November; the dashed red feed-demand line runs from about 58 in April to 60 in June, 42 in July, 46 in August, 30 in September and 33 in November.",
+    "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper, PDF page 29 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2022/LC024GLP000EV.pdf",
+    "sourceSha256": "93a3be61e0ec5891f6ac6a2660fc1a98732fc9ff21a4b3c1e50681db1fe14194",
+    "pdfPage": 29,
+    "cropRect": [
+      0.06,
+      0.112,
+      0.94,
+      0.38
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2021-hl-paper-sheep-milk-pie": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2021-hl-paper-sheep-milk-pie.png",
+    "md5": "a0fa7a3cf3b6414bb0eb87889925d6ab",
+    "alt": "Original Question 10(c) pie chart, Sheep Milk Composition: water 84%, fat 7%, lactose 5% and protein 4%.",
+    "attribution": "SEC Agricultural Science 2021 Higher Level examination paper, PDF page 15 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2021/LC024ALP000EV.pdf",
+    "sourceSha256": "d60e656eff0863123d5c8152f114bcd323ed0cf81144676becf1f367c2b9d4e3",
+    "pdfPage": 15,
+    "cropRect": [
+      0.52,
+      0.495,
+      0.92,
+      0.82
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2021-hl-paper-organic-fertiliser-dm-graph": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2021-hl-paper-organic-fertiliser-dm-graph.png",
+    "md5": "13c35ec469773a51f1fbd3682b58ca23",
+    "alt": "Original Question 15(b) bar chart: total available kg DM / ha (800 to 4000) from November to March for five autumn treatments. Control 1000, 1200, 2000, 2400, 3400; slurry low (22,000 litres / hectare) 1200, 1600, 2700, 3100, 3800; slurry high (33,000 litres / hectare) 1300, 1700, 2600, 3000, 3500; farmyard manure low (12 tonnes / hectare) 1100, 1500, 2300, 2800, 3900; farmyard manure high (25 tonnes / hectare) 1400, 1800, 2800, 3200, 3700.",
+    "attribution": "SEC Agricultural Science 2021 Higher Level examination paper, PDF page 33 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2021/LC024ALP000EV.pdf",
+    "sourceSha256": "d60e656eff0863123d5c8152f114bcd323ed0cf81144676becf1f367c2b9d4e3",
+    "pdfPage": 33,
+    "cropRect": [
+      0.06,
+      0.12,
+      0.94,
+      0.425
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2021-hl-paper-reference-soil-index": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2021-hl-paper-reference-soil-index.png",
+    "md5": "febc3d7f3bee552949630547ed6dd592",
+    "alt": "Original Question 17(b)(i): a blank answer table (Nutrient: P, K; Field 2), an aerial map marking Field 1 and Field 2, and the Reference Soil Index table. Index 1 very low, response to fertilisers definite, P 0 – 3.0, K 0 - 50; index 2 low, likely, P 3.1 – 5.0, K 51 - 100; index 3 medium, unlikely, P 5.1 – 8.0, K 101 – 150; index 4 high, none, P ≥ 8.1, K ≥ 151 (soil test range for each index, mg/l).",
+    "attribution": "SEC Agricultural Science 2021 Higher Level examination paper, PDF page 41 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2021/LC024ALP000EV.pdf",
+    "sourceSha256": "d60e656eff0863123d5c8152f114bcd323ed0cf81144676becf1f367c2b9d4e3",
+    "pdfPage": 41,
+    "cropRect": [
+      0.06,
+      0.095,
+      0.94,
+      0.41
+    ],
+    "reviewedAt": "2026-10-12"
+  },
+  "agsci-2020-ol-paper-soil-sieves": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2020-ol-paper-soil-sieves.png",
+    "md5": "529258a8498b98b1a91205e4b12f586c",
+    "alt": "Original Question 1(a) photograph: two stacks of round metal soil sieves with mesh bases, a single sieve on its side and a lid.",
+    "attribution": "SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2020/LC024GLP000EV.pdf",
+    "sourceSha256": "ad07041e0062736f05423d160ee9bd758976c40ef0911391cb78d06da487f247",
+    "pdfPage": 2,
+    "cropRect": [
+      0.72,
+      0.36,
+      0.94,
+      0.53
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2020-ol-paper-farm-machinery": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2020-ol-paper-farm-machinery.png",
+    "md5": "42bdde9079a8adafa6d0394e971fc86c",
+    "alt": "Original Question 4 photographs lettered A to F: A a field roller, B a tractor-mounted slurry agitator, C a bale grabber, D a reversible plough turning soil, E a circular round feeder, F a muck spreader.",
+    "attribution": "SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2020/LC024GLP000EV.pdf",
+    "sourceSha256": "ad07041e0062736f05423d160ee9bd758976c40ef0911391cb78d06da487f247",
+    "pdfPage": 4,
+    "cropRect": [
+      0.09,
+      0.155,
+      0.85,
+      0.63
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2020-ol-paper-ruminant-stomach": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2020-ol-paper-ruminant-stomach.png",
+    "md5": "fea07b135c2a374ebbc0f1f48a7961b0",
+    "alt": "Original Question 6 outline of the ruminant stomach: the oesophagus A enters at the top right; B is the large left chamber, C a small chamber at the right, D a round chamber in the centre and E the chamber below it.",
+    "attribution": "SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2020/LC024GLP000EV.pdf",
+    "sourceSha256": "ad07041e0062736f05423d160ee9bd758976c40ef0911391cb78d06da487f247",
+    "pdfPage": 5,
+    "cropRect": [
+      0.585,
+      0.54,
+      0.935,
+      0.712
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2020-ol-paper-excretory-system": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2020-ol-paper-excretory-system.png",
+    "md5": "9d46c2919ed7be1bcc8da18834f136a3",
+    "alt": "Original Question 12(b) diagram of the excretory system: A points to a bean-shaped organ at the top, B to a tube running down from it, and C to the sac at the bottom.",
+    "attribution": "SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2020/LC024GLP000EV.pdf",
+    "sourceSha256": "ad07041e0062736f05423d160ee9bd758976c40ef0911391cb78d06da487f247",
+    "pdfPage": 11,
+    "cropRect": [
+      0.735,
+      0.375,
+      0.995,
+      0.565
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2020-ol-paper-flower": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2020-ol-paper-flower.png",
+    "md5": "496d0d37340e9de8791b0bb6e8a968e9",
+    "alt": "Original Question 12(c) section of a flower: A points to a large outer petal, B to a stalked structure inside the petals, D to the tip of the central stalk, E to the swollen base of the central structure and C to a small body inside it.",
+    "attribution": "SEC Agricultural Science 2020 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2020/LC024GLP000EV.pdf",
+    "sourceSha256": "ad07041e0062736f05423d160ee9bd758976c40ef0911391cb78d06da487f247",
+    "pdfPage": 11,
+    "cropRect": [
+      0.62,
+      0.635,
+      0.97,
+      0.83
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-wormery": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-wormery.png",
+    "md5": "525e1c253bf154285671724388c77241",
+    "alt": "Original Question 1(b) photograph: an empty, narrow glass-sided wormery frame standing on wooden feet.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 2,
+    "cropRect": [
+      0.7,
+      0.55,
+      0.95,
+      0.72
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-farm-machinery": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-farm-machinery.png",
+    "md5": "e6a3fb5fb3a57b8ffcf703207e7cf6ad",
+    "alt": "Original Question 2 photographs lettered A to F: A a silage wagon behind a tractor, B a rotary tedder, C a creep feeder with lambs, D a shear grab, E a grain silo with an auger, F a combine harvester.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 3,
+    "cropRect": [
+      0.09,
+      0.1175,
+      0.9,
+      0.68
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-cereals": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-cereals.png",
+    "md5": "44dbac5e2ab501842f3304a5313bd145",
+    "alt": "Original Question 5(a) photographs lettered A to C: A ears with long awns, B loose drooping panicles, C a bundle of plump ears without long awns.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 5,
+    "cropRect": [
+      0.1,
+      0.115,
+      0.95,
+      0.3
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-clover-nodules": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-clover-nodules.png",
+    "md5": "38aad4b0c7232b5f5b2ce75ac8f90457",
+    "alt": "Original Question 7 photograph: the roots of a clover plant covered in small round nodules.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 7 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 7,
+    "cropRect": [
+      0.37,
+      0.1,
+      0.63,
+      0.305
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-farrowing-crate": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-farrowing-crate.png",
+    "md5": "9c2d3e0fbcd3d57b6d11d2cd56722234",
+    "alt": "Original Question 8(a)(iii) photograph: a sow lying in a farrowing crate with bonhams suckling beside the bars.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 8,
+    "cropRect": [
+      0.35,
+      0.37,
+      0.65,
+      0.515
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-stubble-turnips": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-stubble-turnips.png",
+    "md5": "4f0a6486b87aa2072ba664ee646dbeed",
+    "alt": "Original Question 9(c) photograph: a row of stubble turnips with leafy tops, partly lifted from the soil.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 9,
+    "cropRect": [
+      0.24,
+      0.48,
+      0.57,
+      0.63
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-milking-parlour": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-milking-parlour.png",
+    "md5": "af4ec8d75257a1a2da438da26f086e50",
+    "alt": "Original Question 12(b) photograph: cows standing either side of the pit of a herringbone milking parlour with milking units attached.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 12 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 12,
+    "cropRect": [
+      0.29,
+      0.285,
+      0.735,
+      0.505
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2019-ol-paper-sheep-heart": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2019-ol-paper-sheep-heart.png",
+    "md5": "fb55b6ac9139320eb9b215d62b7525d4",
+    "alt": "Original Question 13(b) diagram of a dissected sheep heart: A and the aorta at the top, B on the left, C on the upper right above the tricuspid valve label, and D pointing into the lower chamber.",
+    "attribution": "SEC Agricultural Science 2019 Ordinary Level examination paper, PDF page 13 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2019/LC024GLP000EV.pdf",
+    "sourceSha256": "d5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8",
+    "pdfPage": 13,
+    "cropRect": [
+      0.3,
+      0.31,
+      0.73,
+      0.475
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2018-ol-paper-sedimentation-cylinder": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2018-ol-paper-sedimentation-cylinder.png",
+    "md5": "def4769d3e606a594c1b6830d46045c2",
+    "alt": "Original Question 1(a) diagram: a graduated cylinder of settled soil and water; A points to material floating at the top, B to the cloudy water, and silt, fine sand and coarse sand are labelled from the top of the sediment down.",
+    "attribution": "SEC Agricultural Science 2018 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2018/LC024GLP000EV.pdf",
+    "sourceSha256": "e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092",
+    "pdfPage": 2,
+    "cropRect": [
+      0.6088,
+      0.42,
+      0.9,
+      0.72
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2018-ol-paper-liver-fluke-hosts": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2018-ol-paper-liver-fluke-hosts.png",
+    "md5": "e3bea927ec4d01ce524d42489b53d2e0",
+    "alt": "Original Question 3 photographs: a water snail, a sheep, and an adult liver fluke.",
+    "attribution": "SEC Agricultural Science 2018 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2018/LC024GLP000EV.pdf",
+    "sourceSha256": "e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092",
+    "pdfPage": 3,
+    "cropRect": [
+      0.05,
+      0.38,
+      0.9,
+      0.545
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2018-ol-paper-ruminant-stomach": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2018-ol-paper-ruminant-stomach.png",
+    "md5": "f5b625ad730c7fd25fba1cea70b49599",
+    "alt": "Original Question 4 diagram of the ruminant stomach: A points into the large left chamber, B to the small upper chamber, C to the round central chamber and D to the lower chamber leading to the duodenum.",
+    "attribution": "SEC Agricultural Science 2018 Ordinary Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2018/LC024GLP000EV.pdf",
+    "sourceSha256": "e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092",
+    "pdfPage": 4,
+    "cropRect": [
+      0.22,
+      0.14,
+      0.76,
+      0.375
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2018-ol-paper-grass-flower": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2018-ol-paper-grass-flower.png",
+    "md5": "50f67f77439e1e171a10fe8afdb73e92",
+    "alt": "Original Question 6 diagram of a grass flower: A points to a stalk holding an anther, B to a feathery structure in the centre, and C to a hanging anther on the right.",
+    "attribution": "SEC Agricultural Science 2018 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2018/LC024GLP000EV.pdf",
+    "sourceSha256": "e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092",
+    "pdfPage": 6,
+    "cropRect": [
+      0.26,
+      0.1,
+      0.74,
+      0.355
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2018-ol-paper-mitosis": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2018-ol-paper-mitosis.png",
+    "md5": "91d574ebc51f437f5200704a23c8ac58",
+    "alt": "Original Question 10(a) diagram of a dividing cell: chromosomes lined up across the middle with fibres running to each pole; A points to a chromosome on the equator and B to a fibre.",
+    "attribution": "SEC Agricultural Science 2018 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2018/LC024GLP000EV.pdf",
+    "sourceSha256": "e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092",
+    "pdfPage": 9,
+    "cropRect": [
+      0.38,
+      0.1,
+      0.66,
+      0.23
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2018-ol-paper-photosynthesis": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2018-ol-paper-photosynthesis.png",
+    "md5": "67c89bc8fcf37efa9c0842e951a0c97c",
+    "alt": "Original Question 13 diagram: pond weed under an inverted funnel in a beaker of water, a test tube collecting gas above it, and light shining from the left.",
+    "attribution": "SEC Agricultural Science 2018 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2018/LC024GLP000EV.pdf",
+    "sourceSha256": "e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092",
+    "pdfPage": 11,
+    "cropRect": [
+      0.34,
+      0.36,
+      0.74,
+      0.575
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-burning-soil": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-burning-soil.png",
+    "md5": "403ecf6ba6f0ae8d2a33f82a2948942a",
+    "alt": "Original Question 1(a) diagram: a crucible holding a dry soil sample on a tripod over a Bunsen burner.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 3,
+    "cropRect": [
+      0.32,
+      0.315,
+      0.7,
+      0.52
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-farm-machinery": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-farm-machinery.png",
+    "md5": "f9f4cf16f94efdddfe6afe95846eee67",
+    "alt": "Original Question 2 photographs lettered A to F: A a cattle crush, B a bale wrapper wrapping a round bale, C a crop sprayer, D a slurry tank, E a power harrow, F a combine harvester.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 4,
+    "cropRect": [
+      0.06,
+      0.165,
+      0.94,
+      0.545
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-germination-flasks": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-germination-flasks.png",
+    "md5": "cd756f68be01247c091dc095a0f19cae",
+    "alt": "Original Question 5 diagram: two vacuum flasks, A holding germinating peas and B boiled peas, each with a thermometer through a cotton wool plug.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 6,
+    "cropRect": [
+      0.26,
+      0.095,
+      0.7,
+      0.405
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-butterfly-life-cycle": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-butterfly-life-cycle.png",
+    "md5": "852d21da1851a21da51f9d8d9188f1a9",
+    "alt": "Original Question 6 life cycle of the cabbage white butterfly: W an adult butterfly, X an egg, Y a caterpillar and Z a pupa hanging from a stem, joined by arrows in a circle.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 7 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 7,
+    "cropRect": [
+      0.2,
+      0.1,
+      0.75,
+      0.46
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-cow-skull": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-cow-skull.png",
+    "md5": "7a3b7fc13e6fa86cbb24c66179de16ba",
+    "alt": "Original Question 8(b) photograph of a cow’s skull: A points to the front teeth of the lower jaw and B to the cheek teeth.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 9,
+    "cropRect": [
+      0.32,
+      0.36,
+      0.68,
+      0.522
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-cow-heart": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-cow-heart.png",
+    "md5": "39b7102cca43890884da541e8f2e3bf0",
+    "alt": "Original Question 8(d) section through a cow’s heart: A points to an upper chamber, B to the large vessel leaving the top, C to the central dividing wall and D to a lower chamber.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 9,
+    "cropRect": [
+      0.58,
+      0.7,
+      0.89,
+      0.915
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-reseeding-plants": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-reseeding-plants.png",
+    "md5": "c82fe9b62446ea081c493292646ad3c4",
+    "alt": "Original Question 10(a) pictures: A a photograph of a grass in seed, B a drawing of a clover plant with round flower heads and three-part leaves.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 11,
+    "cropRect": [
+      0.09,
+      0.115,
+      0.92,
+      0.345
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-leaf-section": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-leaf-section.png",
+    "md5": "6e40fd991d04049319a302133acce6ae",
+    "alt": "Original Question 12(a) section of a leaf: B points to the tall column-shaped cells under the upper surface and A to an opening in the lower surface.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 12 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 12,
+    "cropRect": [
+      0.26,
+      0.1,
+      0.83,
+      0.33
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-stem-section": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-stem-section.png",
+    "md5": "c1925ad49e225ab52eb0882c300b44b9",
+    "alt": "Original Question 12(b) cross section of a plant stem: a ring of oval structures near the edge, two of them ringed and labelled X.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 12 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 12,
+    "cropRect": [
+      0.39,
+      0.53,
+      0.67,
+      0.68
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2017-ol-paper-milk-pie-chart": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2017-ol-paper-milk-pie-chart.png",
+    "md5": "2437970a3b3c8607ce6551be8cd597fe",
+    "alt": "Original Question 13(a) pie chart, Composition of milk: minerals 0.8%, protein 3.2%, butterfat 3.8%, lactose 4.6% and A 87.5%.",
+    "attribution": "SEC Agricultural Science 2017 Ordinary Level examination paper, PDF page 13 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2017/LC024GLP000EV.pdf",
+    "sourceSha256": "ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310",
+    "pdfPage": 13,
+    "cropRect": [
+      0.28,
+      0.13,
+      0.8,
+      0.365
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-hl-paper-milk-table": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-hl-paper-milk-table.png",
+    "md5": "5504cfb625382e9cfb0cf790614061a4",
+    "alt": "Original Question 5(a) table of three dairy breeds: Breed, Milk Yield (kg), Fat (%) and Protein (%); A 4350, 5.3, 4.1; B 6450, 4.1, 3.5; C 5240, 4.8, 3.9.",
+    "attribution": "SEC Agricultural Science 2016 Higher Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024ALP000EV.pdf",
+    "sourceSha256": "0d0d58001042c543419ee3edc4acb58c9179f901acee5f8573ae9ae4949b12cd",
+    "pdfPage": 4,
+    "cropRect": [
+      0.16,
+      0.63,
+      0.92,
+      0.718
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-soil-flasks": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-soil-flasks.png",
+    "md5": "482ae8b8505420597e32be515d029415",
+    "alt": "Original Question 1(b) apparatus: two conical flasks, A with fresh soil in a muslin bag and B with sterile soil in a muslin bag, each hanging above limewater in a stoppered flask.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 2,
+    "cropRect": [
+      0.16,
+      0.4735,
+      0.92,
+      0.665
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-lab-equipment": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-lab-equipment.png",
+    "md5": "d9b5b714cc7352aabc378aa820762df5",
+    "alt": "Original Question 4 photographs lettered A to E: A a long thin wire loop on a handle, B a small clear jar with two tubes through its lid, C a hand-held optical instrument with an eyepiece and a hinged prism cover, D a stack of metal sieves marked by mesh size with a lid and base, E a leafy shoot sealed into apparatus with a long horizontal capillary tube dipping into a beaker.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 5,
+    "cropRect": [
+      0.085,
+      0.138,
+      0.8,
+      0.675
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-flower-strawberry": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-flower-strawberry.png",
+    "md5": "b83ff9c5d1ccc5271c9085be34906418",
+    "alt": "Original Question 5 diagrams: a half-flower with leader lines A and B to the outer parts and C and D to the centre and base, the part (a) questions, then a strawberry plant with a long trailing growth marked X that carries small new plants along it.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 6,
+    "cropRect": [
+      0.08,
+      0.0848,
+      0.93,
+      0.655
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-invertebrates": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-invertebrates.png",
+    "md5": "9750b1fc6827066096d2ef6a26ecd1a3",
+    "alt": "Original Question 6 photographs: A a flat leaf-shaped dark invertebrate, B a slender long-legged winged insect, C a rounded eight-legged dark invertebrate.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 7 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 7,
+    "cropRect": [
+      0.11,
+      0.095,
+      0.92,
+      0.335
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-barley-tramlines": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-barley-tramlines.png",
+    "md5": "a3d7d6a757826061f4f718ac1fef8d4a",
+    "alt": "Original Question 7 photographs: ears of barley close up, and a field of barley crossed by parallel tramlines.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 8,
+    "cropRect": [
+      0.13,
+      0.1,
+      0.82,
+      0.262
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-respiratory-system": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-respiratory-system.png",
+    "md5": "552d3b7adbda03869721456534256651",
+    "alt": "Original Question 9(a) diagram of the lungs of a farm animal: A points to the central tube at the top, B to where it branches into the lungs, C to the curved sheet beneath the lungs, and D to a small cluster at the end of the finest branches.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 10,
+    "cropRect": [
+      0.21,
+      0.1,
+      0.79,
+      0.3515
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-urinary-system": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-urinary-system.png",
+    "md5": "b5e541944e6e09e7885b462c0c3c8982",
+    "alt": "Original Question 9(b) diagram of the urinary system: two bean-shaped organs (one labelled Kidney); X points to a tube running down from one of them, Y to the sac both tubes enter, and Z to the tube leaving the base of the sac.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 10,
+    "cropRect": [
+      0.28,
+      0.5235,
+      0.79,
+      0.742
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2015-ol-paper-spring-cereals": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-spring-cereals.png",
+    "md5": "725b39cad9711bcf882bf481103953a0",
+    "alt": "Original Question 4 photographs of four spring cereals lettered A to D: A a drooping ear with long awns, B a large cob with rows of kernels opening out of its husk, C loose open heads of hanging spikelets against the sky, D a dense stand of upright compact ears.",
+    "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2015/LC024GLP000EV.pdf",
+    "sourceSha256": "9b807c836452b0b7fccef5d621b7c808374f284bd4b69236f34ca1a7b5d43ba7",
+    "pdfPage": 4,
+    "cropRect": [
+      0.11,
+      0.145,
+      0.83,
+      0.505
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2015-ol-paper-habitat-apparatus": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-habitat-apparatus.png",
+    "md5": "815d67fc74ad831e8e6734c783ac1cd8",
+    "alt": "Original Question 5 photographs lettered A to D: A a square frame divided into a grid lying on grass, B a small capped jar with two flexible tubes, C a cloth bag on a hoop at the end of a handle, D a slim glass instrument with a bulb at the top and a pointed metal tip.",
+    "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2015/LC024GLP000EV.pdf",
+    "sourceSha256": "9b807c836452b0b7fccef5d621b7c808374f284bd4b69236f34ca1a7b5d43ba7",
+    "pdfPage": 5,
+    "cropRect": [
+      0.13,
+      0.16,
+      0.8,
+      0.632
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2015-ol-paper-earthworm": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-earthworm.png",
+    "md5": "7b1e9096b18d093d1cbecb39cdf242ed",
+    "alt": "Original Question 10(c) drawing of a long, segmented, cylindrical organism with a smooth swollen band near one end.",
+    "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2015/LC024GLP000EV.pdf",
+    "sourceSha256": "9b807c836452b0b7fccef5d621b7c808374f284bd4b69236f34ca1a7b5d43ba7",
+    "pdfPage": 9,
+    "cropRect": [
+      0.29,
+      0.252,
+      0.6,
+      0.395
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2015-ol-paper-ruminant-stomach": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-ruminant-stomach.png",
+    "md5": "47f11e5917ba28a162f8d86aa780994a",
+    "alt": "Original Question 11 diagram of the ruminant stomach: one leader line labelled Rumen points into the large left chamber, B to the small upper chamber beside it, C to the round central chamber and D to the chamber on the lower right.",
+    "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2015/LC024GLP000EV.pdf",
+    "sourceSha256": "9b807c836452b0b7fccef5d621b7c808374f284bd4b69236f34ca1a7b5d43ba7",
+    "pdfPage": 10,
+    "cropRect": [
+      0.22,
+      0.155,
+      0.68,
+      0.312
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2015-ol-paper-milk-composition": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-milk-composition.png",
+    "md5": "cdc46803c2b26cbfb4dd6a81bb9ef23d",
+    "alt": "Original Question 13(c) table of the average composition of cow’s milk: A 87.5%, Lactose 4.6%, Fats 3.8%, B 3.3%, Minerals and vitamins 0.8%.",
+    "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 12 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2015/LC024GLP000EV.pdf",
+    "sourceSha256": "9b807c836452b0b7fccef5d621b7c808374f284bd4b69236f34ca1a7b5d43ba7",
+    "pdfPage": 12,
+    "cropRect": [
+      0.23,
+      0.448,
+      0.77,
+      0.575
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-hl-paper-oat-plant": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-hl-paper-oat-plant.png",
+    "md5": "305306ea6e241354acd4fcfdb49fc935",
+    "alt": "Original Question 1(j) drawing of a cereal plant with loose, drooping, branched heads of hanging grains; A points to one of the hanging units on a branch, B to the stem where the head branches out.",
+    "attribution": "SEC Agricultural Science 2014 Higher Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024ALP000EV.pdf",
+    "sourceSha256": "c69165b7f74f3a6bd4f5d73343243a1a90ca27c5fa12c9097a0eb11cb8930d85",
+    "pdfPage": 2,
+    "cropRect": [
+      0.606,
+      0.35,
+      0.88,
+      0.572
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-hl-paper-soil-water-table": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-hl-paper-soil-water-table.png",
+    "md5": "04f15ec9891d65d6af6a5ce730912ebb",
+    "alt": "Original Question 5(d) table of the water content of three soil samples: % water at field capacity and % water at wilting point; A 8 and 3, B 22 and 11, C 28 and 19.",
+    "attribution": "SEC Agricultural Science 2014 Higher Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024ALP000EV.pdf",
+    "sourceSha256": "c69165b7f74f3a6bd4f5d73343243a1a90ca27c5fa12c9097a0eb11cb8930d85",
+    "pdfPage": 4,
+    "cropRect": [
+      0.155,
+      0.252,
+      0.825,
+      0.342
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-ol-paper-cereal-equipment": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-cereal-equipment.png",
+    "md5": "4fac913810b88a40634cdf2416772bdb",
+    "alt": "Original Question 2 photographs lettered A to E: A a heavy ribbed cylinder on a towing frame, B a self-propelled harvester with a cutting header, C a frame of curved spring tines, D a tractor-drawn machine with a hopper over rows of coulters, E a self-propelled machine with folded spray booms.",
+    "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024GLP000EV.pdf",
+    "sourceSha256": "9b45f4d47b5ce5deb0c1d70a46aea8093f17b3bd9460f05b9a2e04f6a6529958",
+    "pdfPage": 3,
+    "cropRect": [
+      0.08,
+      0.1855,
+      0.92,
+      0.75
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-ol-paper-cranefly": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-cranefly.png",
+    "md5": "8ccfba21f6223ea0cfdae3d6b5a0db3c",
+    "alt": "Original Question 4 drawings of a crop pest: a long-legged winged adult insect, labelled Adult, and its legless segmented larva, labelled Larva.",
+    "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024GLP000EV.pdf",
+    "sourceSha256": "9b45f4d47b5ce5deb0c1d70a46aea8093f17b3bd9460f05b9a2e04f6a6529958",
+    "pdfPage": 5,
+    "cropRect": [
+      0.3,
+      0.1,
+      0.7,
+      0.38
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-ol-paper-sheep-skull": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-sheep-skull.png",
+    "md5": "d9596156a4b1e2e099d7f38aa8710146",
+    "alt": "Original Question 6 photograph of a sheep skull seen from the side, with the teeth of the lower jaw and the back of the upper jaw visible.",
+    "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024GLP000EV.pdf",
+    "sourceSha256": "9b45f4d47b5ce5deb0c1d70a46aea8093f17b3bd9460f05b9a2e04f6a6529958",
+    "pdfPage": 6,
+    "cropRect": [
+      0.62,
+      0.47,
+      0.97,
+      0.64
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-ol-paper-liver-fluke": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-liver-fluke.png",
+    "md5": "ac07aa7f6e23c492213f2554161e5879",
+    "alt": "Original Question 10(d) photograph of an adult liver fluke: a flat leaf-shaped body with branching internal markings.",
+    "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024GLP000EV.pdf",
+    "sourceSha256": "9b45f4d47b5ce5deb0c1d70a46aea8093f17b3bd9460f05b9a2e04f6a6529958",
+    "pdfPage": 9,
+    "cropRect": [
+      0.29,
+      0.235,
+      0.66,
+      0.38
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-ol-paper-mitosis": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-mitosis.png",
+    "md5": "b339aaf3e42c087daca0f45b3bd4e1d5",
+    "alt": "Original Question 12(a) diagram of a dividing cell: chromosomes lined up across the middle of the cell, with spindle fibres running to each pole.",
+    "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024GLP000EV.pdf",
+    "sourceSha256": "9b45f4d47b5ce5deb0c1d70a46aea8093f17b3bd9460f05b9a2e04f6a6529958",
+    "pdfPage": 10,
+    "cropRect": [
+      0.13,
+      0.13,
+      0.4,
+      0.3
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2013-hl-paper-soil-test-table": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2013-hl-paper-soil-test-table.png",
+    "md5": "14b050f38699fe51acac7ceb9d662185",
+    "alt": "Original Question 2(a) table of soil test results: nitrogen test high, low, medium; phosphorus test high, medium, medium; potassium test low, low, medium; for Results A, B and C.",
+    "attribution": "SEC Agricultural Science 2013 Higher Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2013/LC024ALP000EV.pdf",
+    "sourceSha256": "d238ab2a28d168a1fe5bbf3c6f47d423964d41bd0d88808e0f82d0bb0402c3d5",
+    "pdfPage": 2,
+    "cropRect": [
+      0.11,
+      0.676,
+      0.945,
+      0.752
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2013-ol-paper-farm-machinery": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2013-ol-paper-farm-machinery.png",
+    "md5": "0b71e70ee5ba3c0ec47ad733a3798c53",
+    "alt": "Original Question 2 photographs lettered A to E: A a tractor-mounted implement with rows of spring tines on rotating arms, B a self-propelled harvester with a wide cutting header, C a frame carrying a few long curved deep tines, D a frame of angled concave steel discs, E a heavy smooth cylinder on a drawbar.",
+    "attribution": "SEC Agricultural Science 2013 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2013/LC024GLP000EV.pdf",
+    "sourceSha256": "4681992b7ebd6dc0340ad28122b85dd60f0caf6642481bb1a0f9a123b257d249",
+    "pdfPage": 3,
+    "cropRect": [
+      0.09,
+      0.13,
+      0.875,
+      0.722
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2013-ol-paper-plant-cell": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2013-ol-paper-plant-cell.png",
+    "md5": "d30864b7c2ab7c67cd0114a4fc87192d",
+    "alt": "Original Question 12(b) diagram of a plant cell with the cell membrane labelled; A points into the cell contents near the membrane, B to the dark round body, C to a small oval body at the edge of the large central space, D to the large central space, E to the outer boundary.",
+    "attribution": "SEC Agricultural Science 2013 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2013/LC024GLP000EV.pdf",
+    "sourceSha256": "4681992b7ebd6dc0340ad28122b85dd60f0caf6642481bb1a0f9a123b257d249",
+    "pdfPage": 10,
+    "cropRect": [
+      0.19,
+      0.212,
+      0.62,
+      0.395
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2013-ol-paper-grass-species": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2013-ol-paper-grass-species.png",
+    "md5": "fbd5ca0e6a4ef00651af271f6463bdee",
+    "alt": "Original Question 13(b) photographs of four grass flower heads lettered A to D: A a long zig-zag spike of flattened spikelets set edge-on, B a dense soft cylindrical spike, C a loose spike of awned spikelets, D an open branching head with dense one-sided clusters.",
+    "attribution": "SEC Agricultural Science 2013 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2013/LC024GLP000EV.pdf",
+    "sourceSha256": "4681992b7ebd6dc0340ad28122b85dd60f0caf6642481bb1a0f9a123b257d249",
+    "pdfPage": 11,
+    "cropRect": [
+      0.18,
+      0.262,
+      0.83,
+      0.472
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2012-ol-paper-clover-nodules": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2012-ol-paper-clover-nodules.png",
+    "md5": "135a51d85c707db695c288af7d8bdb2e",
+    "alt": "Original Question 1 drawing of a clover root labelled clover root, with rounded swellings labelled root nodules along its side roots.",
+    "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2012/LC024GLP000EV.pdf",
+    "sourceSha256": "ca9b4547982ff4a881b82f3930596bccf39345b57e8367461935a729435c12fb",
+    "pdfPage": 2,
+    "cropRect": [
+      0.63,
+      0.34,
+      0.99,
+      0.535
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2012-ol-paper-soil-animals": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2012-ol-paper-soil-animals.png",
+    "md5": "1f44da80c87a4cf625c8c9fb7ce92766",
+    "alt": "Original Question 2 photographs: a fat grey legless larva lying on soil at the base of young plants, and a long segmented worm on soil.",
+    "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2012/LC024GLP000EV.pdf",
+    "sourceSha256": "ca9b4547982ff4a881b82f3930596bccf39345b57e8367461935a729435c12fb",
+    "pdfPage": 3,
+    "cropRect": [
+      0.33,
+      0.115,
+      0.9,
+      0.262
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2012-ol-paper-ruminant-stomach": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2012-ol-paper-ruminant-stomach.png",
+    "md5": "8553eb8c28a4f677480a0334c8547db1",
+    "alt": "Original Question 12(c) outline of the ruminant stomach with In and Out arrows; A marks the large left chamber, B a small chamber at the upper right, C a chamber at the lower right, and D labelled Omasum.",
+    "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2012/LC024GLP000EV.pdf",
+    "sourceSha256": "ca9b4547982ff4a881b82f3930596bccf39345b57e8367461935a729435c12fb",
+    "pdfPage": 8,
+    "cropRect": [
+      0.13,
+      0.415,
+      0.76,
+      0.66
+    ],
+    "reviewedAt": "2026-10-14"
+  }
+}

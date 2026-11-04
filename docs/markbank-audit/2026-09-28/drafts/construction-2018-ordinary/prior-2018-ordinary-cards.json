@@ -1,0 +1,952 @@
+[
+  {
+    "id": "cons-2018-ol-q1-a",
+    "topicId": "cons-2-4",
+    "conceptId": "vertical-section-through-strip-foundation-215",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q1(a)",
+    "questionText": "To a scale of 1:5 draw a vertical section through the strip foundation, the 215 mm wall, the ground floor and the centre of the door up to a point 500 mm above finished floor level. Show 600 mm width of floor on each side of the wall and include three typical dimensions on your drawing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q1-a-r1",
+        "kind": "anyN",
+        "verbatim": "To a scale of 1:5 draw a vertical section through the strip foundation, the 215 mm wall, the ground floor and the centre",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "15 mm internal plaster with skim coat",
+            "120 × 50 mm doorframe",
+            "60 mm flush panel door",
+            "65 × 15 mm architrave and 100 × 15 mm skirting board",
+            "20 mm tongue and groove floating hardwood floor",
+            "100 mm smooth concrete floor",
+            "250 mm floor insulation with thermal blocks",
+            "200 mm concrete sub-floor",
+            "Radon barrier",
+            "30 mm sand blinding",
+            "200 mm hardcore",
+            "Reinforced concrete foundation",
+            "215 mm concrete block wall",
+            "Any three typical dimensions"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q3-b",
+    "topicId": "cons-5-3",
+    "conceptId": "advantage-wood-burning-stove-heat-water",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q3(b)",
+    "questionText": "Discuss one advantage of using a wood-burning stove to heat water for the house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 7",
+      "answer": 1,
+      "ofParts": 9,
+      "perPart": 7
+    },
+    "totalMarks": 7,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss one advantage of using a wood-burning stove to heat water for the house",
+        "marks": 7,
+        "openList": true,
+        "contextNote": "Discuss one advantage of using a wood-burning stove to heat water for the house",
+        "group": {
+          "claimMax": 1,
+          "perOption": 7,
+          "options": [
+            "Wood is renewable and less expensive",
+            "Modern wood burning stoves are highly efficient",
+            "Stoves are designed to heat domestic hot water",
+            "Trees will almost re-absorb as much CO2 released by burning wood",
+            "Wood burning stoves can supplement other forms of central heating",
+            "The world supply of fossil fuels is dwindling making wood burning stoves a viable option",
+            "Wood logs are essentially made from waste wood – inexpensive, recycled, carbon neutral",
+            "Homes with wood burning stoves feel warm and inviting",
+            "Grow your own, fast growing species e.g. willow"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q4-a",
+    "topicId": "cons-2-4",
+    "conceptId": "environmental-reason-why-strip-foundation-considered",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q4(a)",
+    "questionText": "Discuss one environmental reason why a strip foundation is considered the most suitable foundation for this house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 10,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q4-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss one environmental reason why a strip foundation is considered the most suitable foundation for this house.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "The foundation uses minimum ground area",
+            "Minimum excavation needed",
+            "Less machinery used. Less fuel used",
+            "Minimum amount of concrete, aggregate and steel used",
+            "The strip foundation is widely used",
+            "Easy to set out",
+            "This form of foundation has proved successful over many years",
+            "Relatively easily constructed",
+            "Easily filled and levelled",
+            "This contributes to making strip foundations easy on the environment"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q6-c",
+    "topicId": "cons-1-8",
+    "conceptId": "recommend-other-item-personal-protective-equipment",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q6(c)",
+    "questionText": "Recommend one other item of personal protective equipment (PPE) which should be worn by workers on a construction site. Give one reason for your recommendation.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 5",
+      "answer": 1,
+      "ofParts": 4,
+      "perPart": 5
+    },
+    "totalMarks": 5,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Reason",
+        "marks": 5,
+        "openList": true,
+        "contextNote": "Reason",
+        "group": {
+          "claimMax": 1,
+          "perOption": 5,
+          "options": [
+            "This is to protect the eyes from sharp objects",
+            "To protect the eyes from grit and dust",
+            "To protect the eyes when cutting concrete or steel",
+            "Protects the eyes when using an angle grinder or when welding"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q7-c",
+    "topicId": "cons-1-1",
+    "conceptId": "advantage-storing-rainwater-underground-tank",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q7(c)",
+    "questionText": "Discuss one advantage of storing rainwater in an underground tank.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q7-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss one advantage of storing rainwater in an underground tank.",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Underground tanks take up no space in small sites",
+            "They can be placed under lawns or driveways",
+            "These tanks reduce the risk of algae growth caused by daylight and fluctuations in temperature",
+            "Aboveground rainwater tanks can be look unsightly",
+            "Underground water is at a constant temperature and will not freeze in cold weather",
+            "Underground tanks are usually larger and store more water"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q3-a",
+    "topicId": "cons-5-2",
+    "conceptId": "wood-burning-stove-back-boiler-shown",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q3(a)",
+    "questionText": "A wood-burning stove with a back boiler, as shown, is used to heat water for a dwelling house. Using a single-line labelled diagram, show the pipework required to supply hot water to a shower. Include the following in your diagram: • wood-burning stove • rising main and cold water storage tank • hot water cylinder and expansion tank • pipework to shower and all necessary valves.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 11,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "A wood-burning stove with a back boiler, as shown, is used to heat water for a dwelling house. Using a single-line label",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "The scheme groups its answer under: Secondary circulation; Primary circulation",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "15 mm rising main",
+            "Water storage tank and overflow 22 mm min",
+            "22 mm cold feed from water storage tank to hot water cylinder",
+            "Hot water cylinder",
+            "22 mm expansion pipe from hot water cylinder",
+            "22 mm hot water supply to shower",
+            "Wood-burning stove",
+            "28 mm primary flow and return to and from wood-burning stove and hot",
+            "22 mm cold feed from expansion tank and 22 mm expansion pipe",
+            "Expansion tank and overflow 22 mm min",
+            "Valves"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q1-b",
+    "topicId": "cons-1-1",
+    "conceptId": "typical-design-detailing-prevent-radon-gas",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q1(b)",
+    "questionText": "Show on your drawing the typical design detailing to prevent radon gas from entering the rooms through the floor.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 4",
+      "answer": 1,
+      "ofParts": 2,
+      "perPart": 4
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q1-b-r1",
+        "kind": "anyN",
+        "verbatim": "Show on your drawing the typical design detailing to prevent radon gas from entering the rooms through the floor.",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Specification – typical details",
+            "Show clearly on your drawing how to prevent radon gas from entering into the rooms"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q2-b",
+    "topicId": "cons-4-6",
+    "conceptId": "clearly-steps-followed-applying-surface-finish",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q2(b)",
+    "questionText": "On your sketch show clearly the steps to be followed in applying a surface finish to the insulation. Specify the materials to be used for the surface finish.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 4",
+      "answer": 3,
+      "ofParts": 10,
+      "perPart": 4
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q2-b-r1",
+        "kind": "anyN",
+        "verbatim": "The surface finish is applied as follows",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "The surface finish is applied as follows",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "The heads of the fixings are filled with the base coat",
+            "A base coat of acrylic plaster A is applied to the surface of the insulation S",
+            "This coat is applied in the same way as traditional plaster",
+            "A reinforcing mesh B is applied to the wet plaster",
+            "Base coat and mesh is applied around window and door openings",
+            "The next coat C is applied in preparation for the final coat",
+            "The final acrylic coat D is then applied using a steel trowel",
+            "The finish is available in a range of colours",
+            "The new finish is maintenance free for 10-15 years",
+            "Other proprietary finishes are available such as with a brick effect"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q5-b",
+    "topicId": "cons-3-10",
+    "conceptId": "how-roof-ventilated-eaves",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q5(b)",
+    "questionText": "On your drawing show how the roof is ventilated at the eaves.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 4",
+      "answer": 1,
+      "ofParts": 2,
+      "perPart": 4
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q5-b-r1",
+        "kind": "anyN",
+        "verbatim": "Show on your drawing how the flat roof is ventilated",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Show on your drawing how the flat roof is ventilated",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Vents are incorporated in the soffit to allow air flow into flat roof space",
+            "Cross battens allow air to circulate freely between joists"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q6-b",
+    "topicId": "cons-1-8",
+    "conceptId": "design-feature-above-safety-items-helps",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q6(b)",
+    "questionText": "Using notes and freehand sketches, describe one design feature of each of the above safety items that helps to protect the worker from injury.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 3 + 1 x 3 + 1 x 3",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "High-visibility vest",
+        "marks": 3,
+        "openList": true,
+        "contextNote": "High-visibility vest",
+        "group": {
+          "claimMax": 1,
+          "perOption": 3,
+          "options": [
+            "The high visibility vest is made of a bright colour",
+            "The colour gives easy recognition",
+            "Fluorescent/bright orange and fluorescent/bright yellow are the traditional colours for high-visibility vest",
+            "The fluorescent material achieves visibility during the brighter part of the day",
+            "It has vertical and horizontal reflective strips",
+            "The reflective strips are designed to be seen during the darker hours of the day",
+            "To be effective the strips require some form of artificial light",
+            "This creates a retro-reflection"
+          ]
+        }
+      },
+      {
+        "id": "cons-2018-ol-q6-b-r2",
+        "kind": "anyN",
+        "verbatim": "Protective footwear",
+        "marks": 3,
+        "openList": true,
+        "contextNote": "Protective footwear",
+        "group": {
+          "claimMax": 1,
+          "perOption": 3,
+          "options": [
+            "The safety boots provide extra safety for workers on the site",
+            "They are of sturdy, durable construction",
+            "This helps protect the foot",
+            "The steel toe cap A protects the toes from falling objects",
+            "Steel, aluminium and plastic toe caps are currently used",
+            "A mid sole plate B is used to protect the sole from punctures below",
+            "The material of the sole protects from corrosive substances",
+            "The heel is further strengthened for added protection",
+            "Heel caps are made from card, bonded leather, thermoplastic foil or thermoplastic rubber",
+            "The heel cap offers protection against turning on the ankle",
+            "The inside of the footwear is padded to give comfort to wearer’s feet"
+          ]
+        }
+      },
+      {
+        "id": "cons-2018-ol-q6-b-r3",
+        "kind": "anyN",
+        "verbatim": "Safety helmet",
+        "marks": 3,
+        "openList": true,
+        "contextNote": "Safety helmet",
+        "group": {
+          "claimMax": 1,
+          "perOption": 3,
+          "options": [
+            "The helmet is made of sturdy material and protects the head from falling objects",
+            "The helmet also protects the head from protruding objects",
+            "The shell S of the helmet is usually made from high density polyethylene, thermoplastic or fibreglass",
+            "The nylon harness H is the assembly that provides a means of maintaining the helmet in position on the user's head",
+            "The harness absorbs the kinetic energy within the shell during impact",
+            "This spreads the force evenly over the head",
+            "Some helmets have a sweatband"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q7-a",
+    "topicId": "cons-5-2",
+    "conceptId": "given-pipework-necessary-collect-rainwater-from",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q7(a)",
+    "questionText": "Draw the given sketch and show the pipework necessary to collect the rainwater from the roof and to convey it to the underground storage tank. Label the main components and give their typical sizes.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 4",
+      "answer": 3,
+      "ofParts": 9,
+      "perPart": 4
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "Draw the given sketch and show the pipework necessary to collect the rainwater from the roof and to convey it to the und",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "125 mm eaves gutter",
+            "65 mm offset bends",
+            "65 mm downpipe",
+            "Gully trap with filter for leaves",
+            "100 mm underground pipe to filter",
+            "Filter with overflow pipe",
+            "100 mm underground pipe from filter to underground tank",
+            "Underground tank",
+            "Overflow pipe"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q7-b",
+    "topicId": "cons-5-2",
+    "conceptId": "stored-rainwater-used-flushing-toilet-pipework",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q7(b)",
+    "questionText": "The stored rainwater is used for flushing a toilet. Show, using notes and freehand sketches, the pipework and pump necessary to take the water from the underground tank to a storage tank in the attic. Show also how to connect the toilet cistern to the storage tank in the attic. Include the necessary valves.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 4",
+      "answer": 4,
+      "ofParts": 10,
+      "perPart": 4
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "The stored rainwater is used for flushing a toilet. Show, using notes and freehand sketches, the pipework and pump neces",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "12 mm suction pipe with floating filter",
+            "12 mm pipe with rainwater from filter",
+            "Pump, with power supply, to pump to 230 litres minimum tank in the rainwater from underground tank to attic storage tank in the attic",
+            "12 mm pipe to toilet cistern",
+            "12 mm pipe with rainwater to filter",
+            "Control valve",
+            "Stop valve",
+            "Toilet cistern",
+            "Filter",
+            "Typical sizes of components"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q9-a",
+    "topicId": "cons-3-3",
+    "conceptId": "how-blockwork-over-opening-typically-supported",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q9(a)",
+    "questionText": "Show, using notes and freehand sketches, how the blockwork over the opening is typically supported.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 9,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q9-a-r1",
+        "kind": "anyN",
+        "verbatim": "Show, using notes and freehand sketches, how the blockwork over the opening is typically supported.",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "The pre-stressed concrete lintel is a method used to support the blockwork",
+            "The concrete lintel rests on opposite sides of the opening",
+            "The concrete lintel projects inwards over the supporting walls for a distance D of 100mm",
+            "The width of the lintel is 100mm with a thickness of 65mm",
+            "The lintel is set on mortar at both ends",
+            "Blockwork is built in at either end and then on top of the lintel",
+            "Smaller blocks are used to bring the levels in line",
+            "A reinforced concrete lintel may be used",
+            "Steel lintel may be used to support the blockwork"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q2-c",
+    "topicId": "cons-1-1",
+    "conceptId": "advantage-disadvantage-applying-external-system-insulation",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q2(c)",
+    "questionText": "Discuss one advantage and one disadvantage of applying an external system of insulation to the walls of a house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q2-c-r1",
+        "kind": "anyN",
+        "verbatim": "Advantage Disadvantage",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Advantage Disadvantage",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Energy bills are reduced",
+            "It is an expensive method of adding",
+            "Heat loss through external walls is insulation to a house reduced",
+            "The new finish projects out from",
+            "Improves the BER rating existing walls",
+            "Improves the U-value",
+            "Changes are made to window cills to",
+            "The house will be warmer avoid cold bridge effect",
+            "No loss of internal floor area",
+            "Rainwater downpipes must be",
+            "A range of colours available refitted",
+            "Improves the appearance of the",
+            "Difficult to work with existing soffit house and looks well when complete board",
+            "The internal area of the house is not"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 17 acceptable points under \"Advantage Disadvantage\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2018-ol-q5-a",
+    "topicId": "cons-3-8",
+    "conceptId": "vertical-section-through-eaves-flat-roof",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q5(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the eaves of the flat roof and through the external wall. Show the typical construction details from 500 mm below the roof joists, through the external wall, wallplate, fascia, soffit, and roof joists and include the roof surface. Show 1.5 metres length of roof joist and include three typical dimensions on your drawing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q5-a-r1",
+        "kind": "anyN",
+        "verbatim": "To a scale of 1:5, draw a vertical section through the eaves of the flat roof and through the external wall. Show the ty",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "Weather proofing with 3 layers of",
+            "Wallplate 100 mm × 75 mm tied to bituminous felt blockwork with wallplate straps",
+            "Marine plywood decking 18 - 25 mm",
+            "Cavity closed with fire stopping",
+            "Battens 50 × 50 mm on insulation or proprietary cavity barrier",
+            "Firring piece to 1:40 slope or non-combustible tile or slate",
+            "Breathable roofing membrane",
+            "15 mm internal plaster",
+            "Roof / ceiling joists 200 mm × 50 mm",
+            "Concrete block inner leaf 100 mm",
+            "Roof insulation min 200 mm to",
+            "Full-fill cavity insulation comply with current Building",
+            "Concrete block outer leaf 100 mm Regulations",
+            "19 mm external render"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 26 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2018-ol-q9-b",
+    "topicId": "cons-1-1",
+    "conceptId": "how-doorframe-held-square-while-being",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q9(b)",
+    "questionText": "Show, using notes and freehand sketches, how the doorframe is held square while it is being fitted and show one method of fixing the doorframe to the wall.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 4",
+      "answer": 4,
+      "ofParts": 14,
+      "perPart": 4
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q9-b-r1",
+        "kind": "anyN",
+        "verbatim": "Show, using notes and freehand sketches, how the doorframe is held square while it is being fitted and show one method o",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "Temporary wooden strip is fixed diagonally at one or both corners",
+            "The corners are checked for square",
+            "A strip is fixed at the bottom of the frame to keep the uprights parallel and the correct distance apart",
+            "The frame is now ready for fitting",
+            "These temporary fixtures can be removed when the frame is fixed in place",
+            "Suitable screws are used to fix the doorframe to the wall",
+            "The position for the screws is marked on the frame",
+            "A larger hole is drilled",
+            "The hole for the screws is then drilled through the centre",
+            "The exact position for the screws is then marked on the wall",
+            "Holes are drilled in concrete for the plastic plugs B",
+            "Frame is put back in position",
+            "Screws are then inserted",
+            "Metal frame fixings are also used"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2018-ol-q2-a",
+    "topicId": "cons-1-1",
+    "conceptId": "method-applying-external-insulation-system-wall",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q2(a)",
+    "questionText": "Using notes and freehand sketches show one suitable method of applying an external insulation system to the wall. Specify the typical thickness of the insulation.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 4",
+      "answer": 3,
+      "ofParts": 3,
+      "perPart": 4
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q2-a-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches show one suitable method of applying an external insulation system to the wall. Specif",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "Valid description one",
+            "Valid description two",
+            "Thickness of insulation"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q9-c-advantage",
+    "topicId": "cons-1-1",
+    "conceptId": "advantage-disadvantage-fitting-glazed-double-doors-advantage",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q9(c) — Advantage",
+    "questionText": "Discuss one advantage of fitting glazed double doors between the sitting room and the dining room.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 4",
+      "answer": 1,
+      "ofParts": 8,
+      "perPart": 4
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q9-c-advantage-r1",
+        "kind": "anyN",
+        "verbatim": "Advantage",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Advantage",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "The double doors open up the area",
+            "More space available",
+            "Make the rooms feel bigger",
+            "They create a private area when needed",
+            "They create a quiet area as required",
+            "People arriving into one section will be visible",
+            "Allows sunlight / daylight into the both rooms",
+            "Allows wheelchair accessibility between both rooms"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2018-ol-q9-c-disadvantage",
+    "topicId": "cons-1-1",
+    "conceptId": "advantage-disadvantage-fitting-glazed-double-doors-disadvantage",
+    "level": "ordinary",
+    "year": 2018,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2018 OL Q9(c) — Disadvantage",
+    "questionText": "Discuss one disadvantage of fitting glazed double doors between the sitting room and the dining room.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 4",
+      "answer": 1,
+      "ofParts": 6,
+      "perPart": 4
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2018-ol-q9-c-disadvantage-r1",
+        "kind": "anyN",
+        "verbatim": "Disadvantage",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Disadvantage",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Glazed areas can be dangerous",
+            "It creates a huge area",
+            "Difficult to heat",
+            "Not private",
+            "Reduces space for wall fittings",
+            "Reduces floor space for furniture"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  }
+]

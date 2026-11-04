@@ -6,20 +6,28 @@ Politely walks the archive's browse form (single stateful POST endpoint) to
 produce an authoritative manifest of every exam paper / marking scheme in
 scope, with the archive's own human-readable labels.
 
-Scope (per approved plan):
-  - exampapers + markingschemes (no deferred materials)
-  - LC  2010-2026
-  - LCA 2010-2026
-  - JC  2017-2026 minus 2020/2021 (cancelled); new-spec filtering happens at
-    decode time, not here — the manifest stays complete for audit.
+Scope (SCOPE below — view x exam x years):
+  - exampapers:      LC + LCA 1995-2026 (the archive's full year list);
+                     JC 2017-2026 minus 2020/2021 (cancelled)
+  - markingschemes:  LC + LCA 2001-2026 (the archive publishes no schemes
+                     before 2001); JC as above
+  - deferredexams / deferredmarkingschemes: the SEC's deferred sitting
+    (2022-2025). LC is the only examination the archive offers there; LCA and
+    JC are probed anyway so subjects.json records the empty lists.
+  - Junior Certificate before 2017 is deliberately out: old-syllabus
+    Junior Certificate, a different programme from the new Junior Cycle.
+    JC new-spec filtering happens at decode time, not here — the manifest
+    stays complete for audit.
 
 Politeness: single-threaded, ~1.6s between requests, exponential backoff on
 HTTP 429/5xx, identifying User-Agent with contact address. One-time run.
 
 Output: scripts/paper-trail/out/manifest.jsonl  (one JSON object per file)
         scripts/paper-trail/out/subjects.json   (per year x exam subject lists)
+        scripts/paper-trail/out/empty-combos.jsonl (subject listings with 0 files)
 
-Resume-safe: combos already present in manifest.jsonl are skipped on re-run.
+Resume-safe: combos already present in manifest.jsonl (or recorded as empty
+in empty-combos.jsonl) are skipped on re-run.
 """
 
 import json
@@ -42,12 +50,26 @@ MANIFEST = os.path.join(OUT_DIR, "manifest.jsonl")
 SUBJECTS = os.path.join(OUT_DIR, "subjects.json")
 DELAY = 1.6
 
-VIEWS = ["exampapers", "markingschemes"]
-YEARS = {
-    "lc": [str(y) for y in range(2010, 2027)],
-    "lb": [str(y) for y in range(2010, 2027)],
-    "jc": ["2017", "2018", "2019", "2022", "2023", "2024", "2025", "2026"],
+# Annual refresh: bump CURRENT_YEAR (and DEFERRED_YEARS once the archive
+# lists the new year's deferred sitting).
+CURRENT_YEAR = 2026
+DEFERRED_YEARS = [str(y) for y in range(2022, 2026)]
+JC_YEARS = ["2017", "2018", "2019", "2022", "2023", "2024", "2025", "2026"]
+
+
+def _span(lo):
+    return [str(y) for y in range(lo, CURRENT_YEAR + 1)]
+
+
+SCOPE = {
+    "exampapers": {"lc": _span(1995), "lb": _span(1995), "jc": JC_YEARS},
+    "markingschemes": {"lc": _span(2001), "lb": _span(2001), "jc": JC_YEARS},
+    "deferredexams": {"lc": DEFERRED_YEARS, "lb": DEFERRED_YEARS, "jc": DEFERRED_YEARS},
+    "deferredmarkingschemes": {"lc": DEFERRED_YEARS, "lb": DEFERRED_YEARS, "jc": DEFERRED_YEARS},
 }
+# Most valuable first: the deferred sittings are current-syllabus papers.
+VIEWS = ["deferredexams", "deferredmarkingschemes", "exampapers", "markingschemes"]
+EMPTY = os.path.join(OUT_DIR, "empty-combos.jsonl")
 
 F = "MaterialArchive__noTable__"
 
@@ -142,6 +164,14 @@ def main():
                 except json.JSONDecodeError:
                     pass
         log(f"resume: {len(done)} subject-combos already enumerated")
+    if os.path.exists(EMPTY):
+        with open(EMPTY) as f:
+            for line in f:
+                try:
+                    r = json.loads(line)
+                    done.add((r["view"], r["year"], r["exam"], r["subjectId"]))
+                except json.JSONDecodeError:
+                    pass
 
     subjects_index = {}
     if os.path.exists(SUBJECTS):
@@ -149,9 +179,10 @@ def main():
             subjects_index = json.load(f)
 
     out = open(MANIFEST, "a")
+    empty_out = open(EMPTY, "a")
     total_files = 0
     for view in VIEWS:
-        for exam, years in YEARS.items():
+        for exam, years in SCOPE[view].items():
             for year in years:
                 key = f"{view}|{exam}|{year}"
                 if key in subjects_index:
@@ -185,9 +216,14 @@ def main():
                             + "\n"
                         )
                     out.flush()
+                    if not files:
+                        empty_out.write(json.dumps({"view": view, "exam": exam, "year": year,
+                                                    "subjectId": sid, "subjectName": sname}) + "\n")
+                        empty_out.flush()
                     total_files += len(files)
                     log(f"  {sname}: {len(files)} files (running total {total_files})")
     out.close()
+    empty_out.close()
     log(f"DONE — {total_files} new file rows")
 
 

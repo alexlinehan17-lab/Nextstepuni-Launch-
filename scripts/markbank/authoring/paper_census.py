@@ -44,9 +44,11 @@ import json
 import os
 import re
 import sys
+import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import paper as PP  # noqa: E402
+from strip_pages import strip_cut, strip_lines  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -54,13 +56,44 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
 # mode + how a component code maps to a display name. Subjects not listed use
 # 'merged' with no component split.
 SUBJECTS = {
-    'biology': {'mode': 'merged'},
+    'accounting': {'mode': 'accounting-reviewed'},
+    # Biology's carded corpus starts at 2021, the first sitting carded in
+    # 2026-08 and the scope of its committed coverage baseline. The papers
+    # folder also holds the 2010-2020 sittings, fetched for Paper Trail; read
+    # as a side effect they turned a 1,636-ask ledger into 4,677 asks with no
+    # card ever written against them (the trap recorded in
+    # markbank-card-text-corrections). The window is a DECISION, like DCG's:
+    # widen it when those sittings are audited, never by fetching. 'also'
+    # admits one earlier sitting at a time, as each is carded paper by paper
+    # (bio_review_<year>_<level>.py); 'from' moves back a year once both of
+    # its levels are.
+    'biology': {'mode': 'merged', 'from': 2010, 'also': []},
     'chemistry': {'mode': 'merged'},
     'physics': {'mode': 'merged'},
     'agricultural-science': {'mode': 'merged'},
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},
+    # One booklet per sitting, Section A short questions and Section B long
+    # questions numbered straight through, so the generic merged walker reads
+    # it. It was carded before this table existed and so was never registered
+    # here -- eng_all.py called census_subject() directly, which falls through
+    # to the merged default, and reconcile --all iterates SUBJECTS and so
+    # walked straight past 466 shipping cards. Registering it puts Engineering
+    # under the same ratchet as every other subject.
+    'engineering': {'mode': 'merged'},
+    # One booklet per sitting numbered Q1..Q18 straight through its three
+    # sections — Section A short questions, Section B the case study,
+    # Section C the long questions — so the generic merged walker reads it.
+    # 2020 sat an altered examination that stops at Q16 and set no Ordinary
+    # paper at all.
+    'physical-education': {'mode': 'merged'},
     'maths': {'mode': 'papers', 'papers': {'100': 'Paper 1', '200': 'Paper 2'}},
+    # One booklet per sitting, questions 1..10 running on, both sides of the
+    # 2023 syllabus break. The old papers set 'Question 1' as a bare '1.' in a
+    # left gutter and the new ones head it 'Question 1' in the answer booklet;
+    # both are QHEAD's own two spellings, so the generic merged walker reads
+    # them once the subset fonts are repaired (see MANGLED_PAPERS).
+    'applied-maths': {'mode': 'merged'},
     # English choices and holistic subparts cannot be represented by the
     # generic leaf parser. `english_census.py` is its paper-only denominator;
     # this entry keeps it inside every `--all` coverage run.
@@ -77,35 +110,426 @@ SUBJECTS = {
     # selectable Part Two A/B/C task. Its dedicated census also records the
     # historical map/aerial tasks held until their companion sources exist.
     'geography': {'mode': 'geography'},
+    # Design & Communication Graphics is sat as TWO booklets on one morning
+    # under one marking scheme: M81A carries Section A (Core short questions,
+    # A-1 to A-4, any three answered at 20 marks each) and M81BC carries
+    # Section B (Core long questions, B-1 to B-3, any two at 60) and Section C
+    # (Applied Graphics, C-1 to C-5 -- one question per OPTION, one answered,
+    # at 60). The section letter is printed INSIDE the address the SEC uses --
+    # "A-1", "C-4" -- so the section is the numbering scope and every sitting
+    # prints Questions 1..4, 1..3 and 1..5 inside it.
+    #
+    # Its own walker, for two reasons neither Business nor Technology has.
+    # Section A is set SIDEWAYS in quadrants on an A3 sheet (/Rotate 90, text
+    # at dir (0,-1)), so the generic reader interleaves its four questions;
+    # dcg_paper.rows() puts the sheet back the right way up and cuts it into
+    # the columns the markers themselves name. And the SEC's component code
+    # does not say which booklet is which -- 2011 swaps 000 and 014 -- so the
+    # booklet is identified by the markers it prints, not by its file name.
+    #
+    # The window is 2019 and later, and it is a decision, not the file
+    # listing: the corpus on disk holds 2010-2026 and every sitting of it
+    # reads, but Paper Trail labels the second booklet "Section B" in
+    # 2012-2018 and "Exam Paper" in 2010-2011 where the SEC's cover says
+    # "Sections B and C" -- so a Section C card from those years resolves to
+    # no paper at all, and roughly 270 cards would ship with no link to the
+    # document they came from. 2019 is where the SEC settled the pair of
+    # components the index names correctly, 014 "Section A" and 039 "Section
+    # B&C". It is three years wider than the bank's 2021-2025 default and it
+    # includes 2026, whose scheme is published and on disk.
+    'dcg': {'mode': 'sections', 'walker': 'dcg', 'from': 2019},
+    'politics-and-society': {'mode': 'politics'},
     'business': {'mode': 'sections'},
+    # LCVP's Link Modules paper is COMMON level — one paper, sat by everyone,
+    # filed under the level token 'cl'. Three sections that each restart at
+    # Q.1, so the keys carry the section; but its own walker rather than the
+    # Business/Home-Ec one, because two things here are LCVP's alone: every
+    # head is printed "Q.1" (the shared QHEAD reads "1." and "Question 1"),
+    # and Section C reprints EVERY question as a contents listing before
+    # setting them, which the forward-only walker would have read as the
+    # section itself and then rejected the real questions as going backwards.
+    'lcvp': {'mode': 'sections', 'walker': 'lcvp'},
     'home-economics': {'mode': 'sections'},
     # Two booklets: 038 carries Section A (short answer, attempt any nine) and
     # Section B (long questions, attempt any two); 040 carries Section C, one
     # programming question answered on a computer. The sections are named on
     # the page, so the census reads them rather than the booklet code.
     'computer-science': {'mode': 'sections'},
+    # Two booklets: 014 carries Section A (core short questions, all answered)
+    # and 039 carries Section B (two core long questions) and Section C (five
+    # options, one answered). The sections are named on the page, and each
+    # section restarts its numbering at 1, so the census reads the sections.
+    # The window is a DECISION: 2021-2025 shipped first; the archive 2010-2020
+    # and 2026 are admitted one sitting at a time, as each is carded under the
+    # year lane (2026-10-28), so census, ledger and deck measure the same thing.
+    'technology': {'mode': 'sections', 'from': 2021, 'also': [[2026, 'hl'], [2026, 'ol'], [2020, 'hl']]},
+    # Religious Education restarts nothing and numbers almost nothing: three
+    # UNITS hold ten lettered SECTIONS, and only Section A (Unit One) prints
+    # "Question 1..3" at all. Sections B-J address their asks by part alone,
+    # so an ask's key there carries q=None and its citation reads
+    # "Section E Q(b)(ii)". Keys are still (section, q, letter, roman), so the
+    # ledger reads it in `sections` mode; only the walker differs.
+    'religious-education': {'mode': 'sections', 'walker': 're'},
+    # History is TWO papers per sitting, not one: a candidate sits either the
+    # Later Modern field of study or the Early Modern field, and the SEC prints
+    # them as separate papers (subjects 004 and 096) under one marking scheme.
+    # The field is therefore a component, exactly as Maths' two booklets are,
+    # and a citation names it: "2021 HL Early Modern Section 1 Q1(a)".
+    #
+    # Inside a paper the numbering restarts twice over. Sections 2 and 3 are
+    # divided into TOPICS that each set questions 1..4 (Higher) or parts A, B
+    # and C (Ordinary), so a bare question number addresses nothing: the
+    # section token carries the topic and the Ordinary part with it, and a key
+    # reads ('2 Topic 1 A', 1, None, None) -> "Section 2 Topic 1 A Q1".
+    'history': {'mode': 'sections', 'walker': 'history',
+                'components': {'lm': 'Later Modern', 'em': 'Early Modern'}},
+    # French sits TWO booklets at one sitting — the written paper and a
+    # separate Listening Comprehension Test with its own SEC file id — and
+    # numbers both from 1 inside every section, so the section carries the
+    # address. Its section token is compound where the paper's own is not
+    # enough to address an ask: Section A prints two reading comprehensions at
+    # Higher and four at Ordinary, each numbering its questions from 1, so
+    # "A1" is Section A's first comprehension and "LC" the listening test's
+    # Section C. Its own walker, because both booklets are printed
+    # bilingually in columns and the generic reader has no notion of a column.
+    'french': {'mode': 'sections', 'walker': 'lang'},
+    # German sits the same two booklets as French and numbers both from 1
+    # inside every section, so the section carries the address — but its
+    # sections are the paper's own TEXTS rather than a lettered Section A:
+    # "T1" is TEXT I's reading comprehension, "AG" the applied grammar, "AT"
+    # the Äußerung zum Thema, "SP" the Schriftliche Produktion and "L1" the
+    # first part of the Listening Comprehension Test. Its own walker, because
+    # both booklets are printed bilingually in columns AND a German ask is
+    # addressed three levels deep, "2.(b)(ii)", which the French walker's
+    # (question, letter) key cannot hold.
+    'german': {'mode': 'sections', 'walker': 'de'},
+    # Spanish sits THREE documents at one sitting: the written paper, a
+    # separate Listening Comprehension Test with its own SEC file id, and — at
+    # Higher — a two-page LOOSE SHEET carrying the Section B article, which is
+    # the text every Section B question is about and which the question paper
+    # does not contain. Its own walker, because its section tokens carry a
+    # CHOICE the paper's numbering cannot: Higher Section A prints Question 1
+    # twice over, once as prescribed literature and once as a journalistic
+    # text, and each alternative numbers its own questions from 1. "A1a" is the
+    # literature route, "A1b" the journalistic one, "A2" the section's second
+    # question, and "L" the listening test.
+    'spanish': {'mode': 'sections', 'walker': 'es'},
+    # Italian sits the same two booklets as French and the same three sections
+    # in the written one, but nothing else about it is French: its Higher paper
+    # is set in ITALIAN rather than bilingually, its scheme never reprints the
+    # question it is answering, and its Section B is a printed choice of three
+    # routes at Higher and five publicity pieces at Ordinary. So it has its own
+    # walker, keyed on the section token the paper itself prints — "B2A" is
+    # the first of the two prescribed novels, "LB3" the listening test's third
+    # dialogue — and its own join: with no reprinted question there is nothing
+    # to score wording against, so the scheme is paired to the paper by ORDER
+    # inside a section, under the two checks that make order safe (see
+    # census_it).
+    'italian': {'mode': 'sections', 'walker': 'italian'},
+    # Russian sits the same two booklets as French — a bilingual written paper
+    # and a separate Listening Comprehension Test — and its section token
+    # names the printed QUESTION rather than a letter, because the paper
+    # numbers "Question 1" three times in one sitting: once in Section I, once
+    # in Section II and once in the listening booklet. "C1" is Higher's first
+    # comprehension, "GR" the grammar, "MM" Ordinary's mix-and-match and "L2"
+    # the listening test's second section; see UNIT_NAME in ru_scheme.py. Its
+    # own walker, because the reading asks are located the way French's are —
+    # by the question the scheme reprints above its answers (Law 4) — while
+    # every other question of the paper is read from the paper alone.
+    'russian': {'mode': 'sections', 'walker': 'ru'},
+    # Japanese sits the same two booklets as French — the written paper (SEC
+    # component 000) and a Listening Comprehension Test (A00) — and heads the
+    # written one in Japanese: 問題1 … 問題5, the first three reading
+    # comprehension and the last two written production. Inside a question the
+    # SEC heads its parts "Cuid A / Part A" or with a bare letter at the
+    # margin ("B: KANJI", "C: GRAMADACH / GRAMMAR"), and each part numbers its
+    # own items from 1 — or prints bare romans with no number above them.
+    #
+    # So the section token carries the question AND the part: "2B" is 問題2's
+    # kanji section, "3D" its grammar section, "4" the composition, which heads
+    # no parts, and "LC" the listening booklet's Part C. A citation reads
+    # "2024 HL Section 2B Q1(i)".
+    #
+    # Its own walker for two reasons no other language has. The pages carry a
+    # SECOND LAYER OF TYPE — furigana, a kana reading set small above the kanji
+    # it glosses — which the generic reader interleaves into the line below it
+    # and destroys (ja_text.py folds it back in brackets). And the scheme's own
+    # part letters disagree with the paper's: 2024 Ordinary heads question 2's
+    # four parts "A.", "B.", "Part B." and "Part C." where the paper heads them
+    # "A.", "B.", "C. KANJI" and "D.", so the two are paired in printed ORDER
+    # under the checks in ja_flags — Law 4.
+    'japanese': {'mode': 'sections', 'walker': 'ja'},
+    # Arabic is the modern language that needs NO section token. It is examined
+    # by ONE booklet — there is no Listening Comprehension Test — and it
+    # numbers 1 to 15 straight through its four printed parts, so an ask is
+    # addressed by its number and its part letter alone: "2025 HL Q11(a)". The
+    # part letters the SEC prints are (أ) to (ه) and the citation letters them
+    # a to e, in that same abjad order, the way Japanese cites its romans.
+    #
+    # Its own walker, for a reason no other subject in the bank has: the pages
+    # are RIGHT TO LEFT, and every generic reader here returns them reversed,
+    # visually ordered, or with the letters inside a ligature backwards. See
+    # ara_text.py, which is what makes an Arabic page readable at all, and
+    # ARABIC.md for what that cost.
+    'arabic': {'mode': 'merged', 'walker': 'ara'},
+    # Classical Studies is TWO papers under one slug, either side of the 2023
+    # syllabus break, and the census reads both:
+    #
+    #   * 2021-2022 print TEN TOPICS, each setting questions "(i)" to "(iv)"
+    #     with lettered parts under them. The topic and the roman TOGETHER are
+    #     the address — there is no question number at all — so the section
+    #     token carries both and an ask is cited "2021 HL Topic 1(i) Q(a)".
+    #   * 2023-2025 print Section A (Questions 1-10) and Section B (Questions
+    #     11-16) with the numbering running ON across the two, so the section
+    #     is NOT part of the address and the section token is None: an ask is
+    #     cited "2024 HL Q3(b)". Keying those under 'A' and 'B' would have
+    #     made Section B look like a paper whose first question is Q11.
+    #
+    # Its own walker, because neither shape is one the generic reader can key:
+    # the old paper glues a whole topic into ONE pymupdf block, and the new one
+    # prices the question while the scheme prices its parts.
+    'classical-studies': {'mode': 'sections', 'walker': 'clas'},
+    # Latin is a language whose paper is nothing like the six modern ones: one
+    # booklet, no listening test, five questions numbered straight through,
+    # and no answer-language rule. What it does have is a CHOICE at the third
+    # level of its address. Questions 1, 2 and 3 each print two or four routes
+    # a candidate picks one of, and the paper calls them what the census keys
+    # them: "Answer either Section A or Section B." So the section token is
+    # the ROUTE — 'A', 'B', 'C', 'D' — and it is None for Questions 4 and 5,
+    # which print no routes at all.
+    #
+    # 'numbering' says the routes do NOT restart the numbering: Question 1
+    # Section A and Question 3 Section A are both Section A, and the questions
+    # run 1-5 across the whole paper. Without it every route reported a
+    # question-gap for the questions it does not appear in — Sections C and D
+    # exist only under Question 2 — and the routeless prefix reported that the
+    # paper's first question was Q4.
+    #
+    # 'label': 'roman-major' says the paper prints the ROMAN above the LETTER:
+    # its address reads "3. A. (ii) (a)", not "3(a)(ii)". The key keeps the
+    # letter in the letter slot and the roman in the roman slot, so every
+    # continuity check and reconcile's part matcher are untouched; only the
+    # printed citation follows the paper.
+    'latin': {'mode': 'sections', 'walker': 'lat',
+              'numbering': 'continuous', 'label': 'roman-major'},
+    # Polish is a NON-CURRICULAR EU language (SEC subject 548) and its shape is
+    # its own. It is sat at ONE level up to 2021 — the SEC's file letter is 'A'
+    # and its cover says "Higher Level", so it is Higher-only, not LCVP's
+    # common 'C' — and at TWO from 2022, when the examination was rebuilt: a
+    # written booklet holding Section A Reading and Section B Written
+    # Production, plus a Listening Comprehension Test in its own booklet
+    # (component A00) that did not exist before.
+    #
+    # The section token is the paper's own: 'A' and 'B' for the two sections
+    # the written booklet tabs in its margin, 'LA' to 'LE' for the listening
+    # booklet's five parts, and 'I' and 'II' for the two parts of the 2021
+    # examination, which numbers questions the later papers letter. A citation
+    # reads "2024 HL Section A Q1(b)(ii)" or "2021 HL Section I Q1(a)".
+    #
+    # Its own walker, for a reason none of the six carded languages has: the
+    # SEC prints Polish in SEPARATE English and Irish editions rather than one
+    # bilingual booklet, so there are no columns to cut apart — and the one
+    # marker that is genuinely ambiguous, "(i)", is settled on the printed
+    # column plus the letter sequence rather than on wording (see pl_paper).
+    'polish': {'mode': 'sections', 'walker': 'pl'},
+    # Portuguese, Romanian and Dutch are the family Polish opened, and they
+    # share ONE reader (eu_paper/eu_scheme) rather than three copies of it —
+    # what differs between them is marker vocabulary, not structure.
+    #
+    # The section token is the paper's own: 'A' and 'B' for the two parts the
+    # modern written booklet tabs in its margin, 'LA' to 'LE' for the listening
+    # booklet's five parts, and 'I', 'II' or 'III' for the parts of the
+    # CLASSIC examination — which is Portuguese up to 2021 and every Romanian
+    # and Dutch sitting in the corpus. A citation reads "2024 HL Section A
+    # Q1(b)(ii)" or "2021 HL Section I Q1(a)".
+    #
+    # The two eras price their asks in different DOCUMENTS, and that is the
+    # fact this family turns on: the modern scheme prices every ask and the
+    # classic one prints no marks at all, so the classic tariff is read from
+    # the question paper's own right-hand margin. Both are printed; neither is
+    # inferred.
+    'portuguese': {'mode': 'sections', 'walker': 'eu'},
+    # Romanian (SEC 553) and Dutch (SEC 017) are the same examination as
+    # Portuguese was up to 2021 and still is: ONE booklet sat at ONE level in
+    # every year of the corpus, with no Listening Comprehension Test at all —
+    # so a missing '-A00-paper' for these two is the corpus being complete,
+    # not a fetch failure. Their parts are 'I', 'II' and, from 2023, 'III',
+    # and their asks are priced by the QUESTION PAPER, not by the scheme.
+    'romanian': {'mode': 'sections', 'walker': 'eu'},
+    'dutch': {'mode': 'sections', 'walker': 'eu'},
+    # The nine remaining non-curricular EU languages are Romanian's and
+    # Dutch's twins and read on the same walker: one booklet a year, one
+    # level, no Listening Comprehension Test, three parts numbered I, II and
+    # III (and only two in the 2021 and 2022 sittings), with the tariff
+    # printed on the QUESTION PAPER. Their parts are named in their own
+    # languages — "I. RÉSZ", "Първа част", "ČASŤ I", "Del I", "I ÜLESANNE",
+    # "I TEHTÄVÄ", "I. dio", "Opgave I", "1. DEL" — which is a line in
+    # eu_paper.LANGS and not a walker of their own. A citation reads
+    # "2024 HL Section I Q1(a)".
+    'hungarian': {'mode': 'sections', 'walker': 'eu'},
+    'bulgarian': {'mode': 'sections', 'walker': 'eu'},
+    'slovakian': {'mode': 'sections', 'walker': 'eu'},
+    'swedish': {'mode': 'sections', 'walker': 'eu'},
+    'estonian': {'mode': 'sections', 'walker': 'eu'},
+    'finnish': {'mode': 'sections', 'walker': 'eu'},
+    'croatian': {'mode': 'sections', 'walker': 'eu'},
+    'danish': {'mode': 'sections', 'walker': 'eu'},
+    'slovenian': {'mode': 'sections', 'walker': 'eu'},
+    # Maltese (SEC 557) and Ukrainian (SEC 570) are the same CLASSIC
+    # examination Romanian and Dutch sit, in two more languages: one
+    # Higher-only booklet, no Ordinary paper and no Listening Comprehension
+    # Test, three parts of which only the first sets numbered questions. They
+    # join the same reader rather than getting two more copies of it — what
+    # differs between them is marker vocabulary, not structure.
+    #
+    # Two facts about their marker vocabulary that no other subject on this
+    # reader has. Maltese letters its parts in the MALTESE alphabet, a) b) ċ)
+    # d) e), and its marking scheme letters the same five in the LATIN one, so
+    # a scheme letter is folded to the paper's run by position (the paper wins
+    # on the address). And Ukrainian sets the roman of "ЧАСТИНА I" with the
+    # LATIN I on its paper and the CYRILLIC І on its scheme.
+    'maltese': {'mode': 'sections', 'walker': 'eu'},
+    'ukrainian': {'mode': 'sections', 'walker': 'eu'},
+    # Lithuanian, Latvian and Czech are the NON-CURRICULAR EU languages after
+    # Polish (SEC subjects 550, 549 and 547) and share one reader, lt_paper /
+    # lt_scheme, because they are one examination printed in three languages.
+    # The corpus holds them from 2010, not 2021, so the denominator covers
+    # THREE printed shapes rather than Polish's two:
+    #
+    #   2010-2020  I DALIS six questions on one text, II DALIS a commentary,
+    #              III DALIS an essay — 100 marks, one level, one booklet
+    #   2021       I DALIS and II DALIS only, out of 70
+    #   2022-2026  Dalis A Skaitymas and Dalis B Rašymas in one booklet, plus
+    #              a Listening Comprehension Test in its own ('A00'), at two
+    #              levels — Lithuanian only; Latvian and Czech never made
+    #              this change and print the old paper in every year
+    #
+    # The section token is the paper's own: 'A' and 'B' for the two Dalis
+    # banners, 'LA' to 'LE' for the listening booklet's five parts, and 'I',
+    # 'II' and 'III' for the old examination's parts, which restart their
+    # numbering. A citation reads "2024 HL Section A Q1(b)" or
+    # "2015 HL Section I Q1(a)".
+    'lithuanian': {'mode': 'sections', 'walker': 'lt'},
+    'latvian': {'mode': 'sections', 'walker': 'lt'},
+    'czech': {'mode': 'sections', 'walker': 'lt'},
+    # Ancient Greek is Latin's sibling and is keyed the same way: the section
+    # token is the printed ROUTE a candidate chooses ("Answer Section A or
+    # Section B"), the questions run 1-4 across all of them, and the paper
+    # prints the ROMAN above the LETTER — "3. A. (ii) (a)". Its own walker for
+    # one reason Latin does not have: every sitting before 2023 sets its Greek
+    # in the SPIonic font with no ToUnicode map, so the pages are unreadable
+    # until agr_text decodes them.
+    #
+    # Question 4 changed shape in 2021 — eight essay topics printed as two
+    # routes of four before it and as one run of eight after — so routes are
+    # DETECTED per question and never assumed.
+    'ancient-greek': {'mode': 'sections', 'walker': 'agr',
+                      'numbering': 'continuous', 'label': 'roman-major'},
+    # Modern Greek is a NON-CURRICULAR EU language (SEC subject 019) and the
+    # simplest paper in the bank: one booklet, ONE level in every year on disk,
+    # no Listening Comprehension Test, one passage and three numbered GROUPS.
+    # The section token is the group's own number — '1' comprehension, '2'
+    # commentary, '3' essay — and 'I'/'II' for 2021, which prints "Μέρος
+    # πρώτο" and "Μέρος δεύτερο" instead and sets no commentary at all. That
+    # is the token Polish's 2021 paper uses for the same reason.
+    #
+    # Its own walker because the passage is set in NUMBERED PARAGRAPHS: 2013
+    # runs "1." to "9." down two pages of prose before a question is asked,
+    # printed exactly like the question numbers that follow.
+    'modern-greek': {'mode': 'sections', 'walker': 'mgr'},
+    # Mandarin Chinese is a CURRICULAR modern language first examined in 2022
+    # (SEC subject 566) and sat in two booklets: the written paper (component
+    # 000), whose margin tabs its two sections "Section A Reading" and "Section
+    # B Writing", and a Listening Comprehension Test (A00) headed Section A to
+    # Section E. So the section token is the paper's own — 'A' and 'B' for the
+    # written booklet, 'LA' to 'LE' for the listening one — and a citation
+    # reads "2024 HL Section A Q1(c)(i)".
+    #
+    # Its own walker for two reasons. The pages are set in a NON-LATIN script
+    # and two of them are set in a subset font with a broken ToUnicode map, so
+    # man_text.py repairs those two before any marker is read (there is no
+    # pinyin anywhere in the corpus — see man_text for what was measured). And
+    # every ask on the paper is followed by a printed ANSWER BOX whose labels
+    # are ordinary text — "Dublin Standard Time:", "Animal 1:", a bare "(i)" —
+    # which the generic reader takes for asks; the SEC draws those boxes as
+    # black frames and draws nothing else that way, so the page's own furniture
+    # separates a box from the reading passage printed inside one just like it.
+    'mandarin-chinese': {'mode': 'sections', 'walker': 'man'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
 # "Section 1", "Section A" as a header — never "Sections 2 and 3", which is a
 # cover line for a whole booklet, because \b cannot fall inside "Sections".
 SECTION = re.compile(r'\bSection\s+([A-Z]|\d{1,2})\b')
+# A marker block the walker can see, standing for "a new booklet starts here".
+FILE_BREAK = '\x00FILE-BREAK\x00'
+
+# Where a booklet stops setting questions and starts talking about itself.
+BACK_MATTER = re.compile(
+    r'^(?:Answerbook for Section|Acknowledgements\b|Copyright notice\b)')
+# Through xv, because a list can run that long: the Japanese kanji sections at
+# Ordinary print thirteen items and answer any ten, and a list that stopped at
+# xii reported a gap in a run that has none.
+# The alphabet a part letter may be printed in. Latin everywhere in this bank
+# but Bulgarian, whose paper letters Question 1's five expressions "а) б) в)
+# г) д)" — Cyrillic а to д, five letters that look like Latin ones and are
+# not. Checked against the Latin alphabet, all five reported a letter-gap in
+# every one of the seventeen Bulgarian sittings.
+LETTER_ALPHABETS = ('abcdefghijklmnopqrstuvwxyz',
+                    'абвгдежзийклмнопрстуфхцчшщъьюя')
+
+
+def _letter_run(letters):
+    """The run these letters would be if none were missing, in THEIR alphabet.
+
+    The alphabet is chosen by the letters themselves and the run still starts
+    at that alphabet's OWN first letter, so a Latin run that begins at "b" is
+    still a gap — the check is unchanged for every subject already shipped.
+    """
+    if not letters:
+        return []
+    first = min(letters)
+    for alpha in LETTER_ALPHABETS:
+        if first in alpha:
+            return list(alpha[:len(letters)])
+    return [chr(ord('a') + i) for i in range(len(letters))]
+
+
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
-          'xi', 'xii']
+          'xi', 'xii', 'xiii', 'xiv', 'xv']
 
 
 def sittings(subject):
-    """[(year, level, [component codes])] for every paper PDF on disk.
+    """[(year, level, [component codes])] for every paper PDF in the window.
 
     The corpus IS the file listing — Construction Studies holds 2016-2025
     where the others hold 2021-2025, and hard-coding a span would silently
     ignore half of its papers.
+
+    A subject may state a window anyway, with `'from'` in SUBJECTS, and then
+    the window is a DECISION rather than a side effect of what happened to be
+    fetched. DCG needs one: its corpus holds 2010-2026, and the papers before
+    2019 cannot be linked to the document they were printed in, because Paper
+    Trail labels the second booklet of those years "Section B" (2012-2018) or
+    "Exam Paper" (2010-2011) where the SEC's own cover says "Sections B and
+    C". Every Section C card of those years would ship with no paper link at
+    all. Stating the bound here keeps the census, the ledger and the deck
+    measuring the same thing; deleting the older papers would hide it.
     """
     root = PP.papers_dir(subject)
+    first = SUBJECTS.get(subject, {}).get('from')
+    # Sittings admitted ahead of the window, one at a time, as each is audited.
+    also = {tuple(s) for s in SUBJECTS.get(subject, {}).get('also', [])}
     found = collections.defaultdict(list)
     for f in sorted(os.listdir(root)):
-        m = re.fullmatch(r'(\d{4})-(hl|ol)(?:-(\d+))?-paper\.pdf', f)
-        if m:
+        # 'cl' is the common-level token: LCVP is examined at one level, and
+        # the SEC's own file id says so with the level letter C.
+        # The component token is not always numeric. Maths files its two
+        # booklets as 100/200, but History's two FIELDS OF STUDY are 'lm' and
+        # 'em' — separate papers sat by different candidates on the same
+        # afternoon, and a digits-only pattern found neither of them.
+        m = re.fullmatch(r'(\d{4})-(hl|ol|cl)(?:-([a-z0-9]+))?-paper\.pdf', f)
+        if m and (first is None or int(m.group(1)) >= first or (int(m.group(1)), m.group(2)) in also):
             found[(int(m.group(1)), m.group(2))].append(m.group(3))
     return [(y, l, comps) for (y, l), comps in sorted(found.items())]
 
@@ -123,67 +547,281 @@ def leaves_of(parts):
     return sorted(out, key=lambda k: tuple(str(x) for x in k))
 
 
-def continuity_flags(parts, texts):
-    """Every gap in the numbering, which is where keying bugs surface."""
+def _letter_run(subject):
+    """The alphabet this subject's part letters run through.
+
+    Not always the Latin one. Maltese letters its parts a) b) ċ) d) e),
+    because ċ is the third letter of the MALTESE alphabet — and checked
+    against the Latin run every Maltese sitting reported a letter-gap
+    ("letters found: ['a', 'b', 'd', 'e', 'ċ']") on a question with no gap in
+    it, because ċ also sorts after e.
+    """
+    try:
+        from eu_paper import cfg                              # noqa: E402
+        run = cfg(subject, 'letters')
+    except Exception:                                          # noqa: BLE001
+        run = None
+    return list(run) if run else [chr(ord('a') + i) for i in range(12)]
+
+
+def _letters_in_order(subject, letters):
+    run = _letter_run(subject)
+    return sorted(letters, key=lambda c: (run.index(c) if c in run else 99, c))
+
+
+# Printed asks the census reads as too short to be a question, each checked on
+# its page and carded: the paper prints the ask once as a lead-in and then each
+# term, table row or answer box on its own ("Explain the following terms used in
+# genetics:" over "Gene"), so the leaf's own text is just that term. Keyed
+# (subject, year, level, census label) -> (the exact text the census extracts,
+# what the page prints). The empty-leaf flag stands down only while the reader
+# extracts exactly that text: a change in what it reads raises the flag again.
+SHORT_ASKS = {
+    **{('biology', 2020, 'ol', f'Q5({x})'): ('', 'p5: an empty answer box under cell drawing; the ask is Q5\'s '
+                                               'lead-in "Select the cell name from the following list and insert '
+                                               'it into the appropriate box underneath each"')
+       for x in 'abcdefg'},
+    ('biology', 2021, 'ol', 'Q3(b)'): ('Eye', 'Column A row "Eye" of the match-a-structure table; the ask is Q3\'s '
+                                              'lead-in "Choose each structure from the following list"'),
+    ('biology', 2021, 'ol', 'Q3(c)'): ('Lungs', 'Column A row "Lungs" of the same table'),
+    ('biology', 2021, 'ol', 'Q12(a)(ii)'): ('Gene', 'the term "Gene" under "Explain the following terms used in '
+                                                    'genetics:"'),
+    ('biology', 2018, 'ol', 'Q10(a)(i)'): ('Niche', 'the term "Niche" under "Explain the following terms used in '
+                                                    'ecology:"'),
+    ('biology', 2018, 'ol', 'Q11(a)(ii)'): ('Gene', 'the term "Gene" under "Explain the following terms used in '
+                                                    'genetics:"'),
+    ('biology', 2024, 'hl', 'Q7(c)(i)'): ('Plant', 'the organism "Plant" under "Give one application of genetic '
+                                                   'engineering for each of the following:"'),
+    ('biology', 2025, 'hl', 'Q15(a)(ii)'): ('Niche', 'the term "Niche" under "Explain the following three '
+                                                     'ecological terms:"'),
+    ('biology', 2025, 'ol', 'Q8(b)(iv)'): ('Lipid', 'the biomolecule "Lipid" under "Briefly describe how you tested '
+                                                    'for the presence of the following biomolecules:"'),
+    ('biology', 2013, 'hl', 'Q14(b)(iii)'): ('ADP.', 'p13: the topic "ADP." under "Write notes on each of the '
+                                                     'following topics."'),
+    ('biology', 2013, 'ol', 'Q10(a)(i)'): ('Gene.', 'p8: the term "Gene." under "Explain the following terms used in '
+                                                   'genetics:"'),
+    ('biology', 2013, 'ol', 'Q11(a)(ii)'): ('Niche.', 'p9: the term "Niche." under "Explain the following terms as '
+                                                     'used in ecology:"'),
+}
+
+
+def short_ask_ok(subject, year, level, flag):
+    """An empty-leaf flag on a printed ask recorded in SHORT_ASKS, read as recorded."""
+    entry = SHORT_ASKS.get((subject, year, level, flag.get('where')))
+    return bool(entry) and flag.get('type') == 'empty-leaf' and flag.get('detail') == f'extracted text: {entry[0]!r}'
+
+
+def continuity_flags(parts, texts, subject=None, continuous=False):
+    """Every gap in the numbering, which is where keying bugs surface.
+
+    `continuous` says the section token is NOT a numbering scope. Latin's is a
+    printed CHOICE ROUTE — "Answer either Section A or Section B" — and its
+    questions run 1-5 across the whole paper, so the question run is checked
+    once over the paper rather than once per route. Checked per route it
+    reported that Section C's first question was Q2 (Question 2 is the only
+    question that sets four passages) and that the routeless prefix carrying
+    Questions 4 and 5 started at Q4 — four false gaps a sitting, all saying
+    the same thing about a paper with no gap in it.
+    """
     flags = []
     keys = set(parts)
-    prefixes = sorted({k[:-3] for k in keys})     # () or (section,)
+    # A section token of None sorts against a string, which Python refuses:
+    # Latin's Questions 4 and 5 print no route at all while Questions 1-3 do,
+    # so one paper carries both kinds of prefix.
+    prefixes = sorted({k[:-3] for k in keys},
+                      key=lambda p: tuple('' if x is None else str(x)
+                                          for x in p))
+    scoped = not (continuous and len(prefixes) > 1)
+    if not scoped:
+        qs = sorted({k[-3] for k in keys
+                     if isinstance(k[-3], int) and k[-3] > 0})
+        want = list(range(min(qs), min(qs) + len(qs))) if qs else []
+        if qs != want or (qs and qs[0] > 1):
+            flags.append({'type': 'question-gap', 'where': 'all sections',
+                          'detail': f'questions found: {qs}'})
+    roman_major = subject in ROMAN_MAJOR
+    # Sorted by the STRING of the prefix: one paper may key some of its asks
+    # under a section token and some under none, which is what Polish does —
+    # its written booklet numbers straight through its two sections while its
+    # listening booklet restarts inside each of its five — and sorting None
+    # beside 'LA' raises before a single flag is computed.
+    prefixes = sorted({k[:-3] for k in keys},
+                      key=lambda pre: tuple(str(x) for x in pre))
     for pre in prefixes:
         # Negative numbers are printed choice VARIANTS (Construction Studies
         # sets Q10 twice joined by OR; the alternative files under -10) and sit
-        # outside the run.
-        # Negative numbers are choice variants, and 'ABQ' is Business's
-        # headless compulsory question — neither sits in the numeric run.
+        # outside the run, and so does 'ABQ', Business's headless compulsory
+        # question.
         qs = sorted({k[-3] for k in keys if k[:-3] == pre
                      and isinstance(k[-3], int) and k[-3] > 0})
-        want = list(range(min(qs), min(qs) + len(qs))) if qs else []
-        if qs != want:
-            flags.append({'type': 'question-gap', 'where': str(pre or ''),
-                          'detail': f'questions found: {qs}'})
-        # A paper starts at Question 1. A census that starts later has LOST a
-        # leading question — Economics lost Q1 twice with no flag firing,
-        # because a gap detector only sees interior holes.
-        if qs and isinstance(qs[0], int) and qs[0] > 1:
-            flags.append({'type': 'question-gap', 'where': str(pre or ''),
-                          'detail': f'first question found is Q{qs[0]}'})
-        for q in qs:
-            letters = sorted({k[-2] for k in keys
-                              if k[:-3] == pre and k[-3] == q and k[-2]})
+        # The interior-gap and leading-question checks, ONCE. They were run
+        # twice — a copy inside `if scoped:` without the runs-on exemption
+        # below and a copy outside it that ignored `scoped` altogether — which
+        # a merge left behind, and which reported eight false question-gaps a
+        # census on the two subjects whose sections number straight through.
+        # The question RUN belongs to the paper, not to the prefix, wherever
+        # the prefix is a printed CHOICE rather than a scope — which is what
+        # `continuous` says and what `scoped` computes. Checked per prefix
+        # anyway (this block used to run unconditionally, with a copy of
+        # itself above it under `if scoped`), Ancient Greek's Ordinary paper
+        # reported a gap in Sections A and B for holding Questions 1 and 3:
+        # Question 1 prints four passages A-D and Question 3 prints two essay
+        # routes A and B, and Question 2 prints no route at all. Twenty false
+        # gaps across ten sittings, all saying the same thing about a paper
+        # with no gap in it.
+        if scoped:
+            want = list(range(min(qs), min(qs) + len(qs))) if qs else []
+            if qs != want:
+                flags.append({'type': 'question-gap', 'where': str(pre or ''),
+                              'detail': f'questions found: {qs}'})
+            # A paper starts at Question 1. A census that starts later has
+            # LOST a leading question — Economics lost Q1 twice with no flag
+            # firing, because a gap detector only sees interior holes.
+            #
+            # Unless the numbering RUNS ON: Polish tabs Questions 1 and 2
+            # "Część A" and Questions 3 to 5 "Część B" in one booklet, and
+            # Portuguese does the same with "Parte A" and "Parte B", so
+            # "Część A" and Questions 3 to 5 "Część B" in one booklet, so
+            # Section B's first question is Q3 and nothing at all is missing.
+            # The exemption is evidence, not a guess — every question below
+            # this one has to be printed under some OTHER prefix of the same
+            # paper, which a genuinely lost leading question never is.
+            elsewhere = {k[-3] for k in keys if k[:-3] != pre
+                         and isinstance(k[-3], int)}
+            runs_on = qs and isinstance(qs[0], int) and qs[0] > 1 and all(
+                n in elsewhere for n in range(1, qs[0]))
+            if qs and isinstance(qs[0], int) and qs[0] > 1 and not runs_on:
+                flags.append({'type': 'question-gap', 'where': str(pre or ''),
+                              'detail': f'first question found is Q{qs[0]}'})
+        # A headless question (Religious Education's Sections B-J) sits
+        # outside the numeric run but still prints a lettered run that can
+        # gain a hole, so it is walked here as well.
+        headless = [None] if any(k[:-3] == pre and k[-3] is None
+                                 for k in keys) else []
+        for q in qs + headless:
+            here = [k for k in keys if k[:-3] == pre and k[-3] == q]
+            if roman_major:
+                # The paper numbers the ROMAN above the LETTER — Latin sets
+                # "3. A. (ii) (a)" — so the roman run belongs to the question
+                # and the letter run to the roman. Checked the science way
+                # round, every one of Question 3's five parts reported a
+                # roman-gap for holding "(ii)" and no "(i)": the (i) is the
+                # translation printed beside them, not beneath them.
+                roms = sorted({k[-1] for k in here if k[-1]},
+                              key=lambda r: (ROMANS.index(r)
+                                             if r in ROMANS else 99, r))
+                if roms and roms != ROMANS[:len(roms)]:
+                    flags.append({'type': 'roman-gap',
+                                  'where': f'{pre or ""} Q{q}',
+                                  'detail': f'romans found: {roms}'})
+                for roman in {k[-1] for k in here}:
+                    letters = sorted({k[-2] for k in here
+                                      if k[-1] == roman and k[-2]})
+                    expect = _letter_run(letters)
+                    letters = _letters_in_order(subject, {
+                        k[-2] for k in here if k[-1] == roman and k[-2]})
+                    expect = _letter_run(subject)[:len(letters)]
+                    if letters and letters != expect:
+                        flags.append({
+                            'type': 'letter-gap',
+                            'where': f'{pre or ""} Q{q}({roman or ""})',
+                            'detail': f'letters found: {letters}'})
+                continue
+            # Chemistry's alternatives key a letter with its part, "lA" and
+            # "lB" for Q4(l)A and B (chemistry_choice_parts): both are (l)
+            # in the run of letters.
+            letters = _letters_in_order(subject, {
+                k[-2][0] if subject == 'chemistry' and re.fullmatch(r'[a-l][AB]', str(k[-2]))
+                else k[-2] for k in here if k[-2]})
             if letters:
-                expect = [chr(ord('a') + i) for i in range(len(letters))]
+                expect = _letter_run(letters)
+                expect = _letter_run(subject)[:len(letters)]
                 if letters != expect:
                     flags.append({'type': 'letter-gap',
                                   'where': f'{pre or ""} Q{q}',
                                   'detail': f'letters found: {letters}'})
-            for letter in {k[-2] for k in keys if k[:-3] == pre and k[-3] == q}:
-                roms = sorted({k[-1] for k in keys if k[:-3] == pre
-                               and k[-3] == q and k[-2] == letter and k[-1]},
-                              key=lambda r: ROMANS.index(r) if r in ROMANS else 99)
-                if roms and roms != ROMANS[:len(roms)]:
+            for letter in {k[-2] for k in here}:
+                roms = {k[-1] for k in here if k[-2] == letter and k[-1]}
+                if roms and not _sub_run_ok(roms):
                     flags.append({'type': 'roman-gap',
                                   'where': f'{pre or ""} Q{q}({letter or ""})',
-                                  'detail': f'romans found: {roms}'})
+                                  'detail': f'sub-markers found: {sorted(roms)}'})
     for k in leaves_of(parts):
         text = texts.get(k, '')
         # isalnum, not ASCII: the papers set variables in the Mathematical
         # Alphanumeric block, and stripping those flagged "Find |AD|." as empty.
-        if sum(c.isalnum() for c in text) < 6 and len(text) < 16:
-            flags.append({'type': 'empty-leaf', 'where': key_label(k),
+        # A CJK character is worth six Latin ones here, which is the whole floor:
+        # ONE kanji is a whole ask in the Japanese kanji sections — "Write the
+        # meaning of 今" — and counting characters flagged seventy of them empty.
+        weight = sum(6 if '\u3040' <= c <= '\u9fff' else 1
+                     for c in text if c.isalnum())
+        if weight < 6 and len(text) < 16:
+            flags.append({'type': 'empty-leaf',
+                          'where': key_label(k, subject),
                           'detail': f'extracted text: {text!r}'})
     return flags
 
 
-def key_label(k):
+# Subjects whose papers number a part's ROMAN level above its LETTER level.
+# Latin sets "3. A. (ii) (a)" — question, route, roman, letter — where every
+# science paper sets "3(a)(ii)". The census key is the same shape either way
+# (the letter in the letter slot, the roman in the roman slot), so nothing
+# downstream changes; what changes is the order the two are PRINTED in, and a
+# citation has to name the address the candidate saw.
+ROMAN_MAJOR = {'latin', 'ancient-greek'}
+
+
+def _sub_run_ok(marks):
+    """Is this a complete run of sub-markers, in the notation the paper uses?
+
+    Almost every paper in the bank numbers the third level of an address in
+    ROMANS, and this checked that alone. The Baltic languages number it in
+    DIGITS wherever the sub-parts are the rows of a table: 2026 Ordinary
+    Lithuanian prices Q1(h) "3 Marks (3 x 1)" over three statements the paper
+    numbers "1." to "3.", and 2024 Ordinary numbers a sentence-matching task
+    the same way, while the ordering task on the SAME page is numbered "(i)"
+    to "(vi)". Both are complete runs and neither is a gap; a roman-only test
+    reported every digit run as one.
+    """
+    marks = set(marks)
+    if all(str(m).isdigit() for m in marks):
+        nums = sorted(int(m) for m in marks)
+        return nums == list(range(1, len(nums) + 1))
+    order = sorted(marks, key=lambda r: ROMANS.index(r) if r in ROMANS else 99)
+    return order == ROMANS[:len(order)]
+
+
+def key_label(k, subject=None):
     """(section?, q, letter, roman) -> 'Section A Q3(b)(ii)'."""
     parts = list(k)
     q, letter, roman = parts[-3], parts[-2], parts[-1]
-    head = f'Section {parts[0]} ' if len(parts) == 4 else ''
+    # A section token of None means the subject is keyed in sections mode but
+    # this paper does not address an ask by section: Classical Studies numbers
+    # Questions 1-16 straight through Sections A and B, so "Section A Q3" would
+    # name an address the paper never prints. A token that already names its
+    # own unit — "Topic 1(i)" — prints itself, without a "Section" in front.
+    head = ''
+    if len(parts) == 4 and parts[0] is not None:
+        head = (f'{parts[0]} ' if str(parts[0]).startswith('Topic ')
+                else f'Section {parts[0]} ')
     tail = ('ABQ' if q == 'ABQ'
+            # A headless section — Religious Education's Sections B-J — is
+            # addressed by its part alone. The paper prints no number, so the
+            # label prints none either.
+            else 'Q' if q is None
             else f'Q{-q}-alt' if isinstance(q, int) and q < 0 else f'Q{q}')
-    if letter:
-        tail += f'({letter})'
-    if roman:
-        tail += f'({roman})'
+    for token in ((roman, letter) if subject in ROMAN_MAJOR
+                  else (letter, roman)):
+        if token and re.fullmatch(r'[a-l][AB]', str(token)):
+            tail += f'({token[0]}){token[1]}'   # Chemistry's Q11(d)A, Q4(l)B
+        elif token:
+            tail += f'({token})'
+    # A unit that is priced WHOLE and numbers nothing beneath it — History's
+    # Ordinary parts B and C, which the scheme answers with one ceiling each —
+    # is addressed by its section alone. A bare "Q" after it would name a
+    # question the paper does not print.
+    if q is None and letter is None and roman is None:
+        return head.strip()
     return head + tail
 
 
@@ -198,7 +836,7 @@ def marks_by_question(P_files, subject):
     section = None
     q = None
     for path in P_files:
-        for block in PP._blocks(path):
+        for block in PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None):
             s = SECTION.search(block[:80])
             if s and len(block) < 200:
                 section = s.group(1)
@@ -259,12 +897,367 @@ def complete_leading_romans(parts, texts, stem=lambda q, letter: ''):
     return parts
 
 
+# Agricultural Science before the 2019 specification's first sitting (2021)
+# was a different booklet: dense eight- or twelve-page papers where PyMuPDF
+# hands whole questions back as ONE block ("1. Answer any six of the
+# following: (a) ... (j) ..."), so paper.py's block-leading markers never see
+# Question 1 or the Option questions, and several Ordinary pages are set as two
+# overlapping text runs that interleave mid-word. Read those papers as LINES
+# rebuilt from word positions instead, and key every marker against what the
+# numbering allows next. Gated to this subject and these years only: every
+# other subject's census goes through census_merged/census_sections untouched.
+AGRI_LEGACY_LAST_YEAR = 2020
+# "Question n 2.": a run overlapping itself repeats the word's last letter.
+LEG_HEAD = re.compile(r'^(?:Question\s*(?:[A-Za-z]\s+)?)?(\d{1,2})\s*\.(?=\s|$)')
+LEG_MARK = re.compile(r'^\(\s*([a-z]{1,4})\s*\)\s*')
+LEG_MARKS = re.compile(r'\b\d{1,3}\s*marks?\b', re.I)
+LEG_OPTION_TWO = re.compile(r'\bOption\s+Two\b', re.I)
+LEG_LETTERS = 'abcdefghijklmnop'
+
+
+def _agri_legacy_lines(path):
+    """Text lines rebuilt from glyph positions, page by page.
+
+    Some legacy pages print every glyph twice at the same origin, and the
+    word reader then interleaves the copies ("(ii i)" for "(ii)"). A glyph
+    already seen at the same position is the same glyph.
+    """
+    import fitz                                   # noqa: E402  (PyMuPDF)
+    lines = []
+    with fitz.open(path) as pdf:
+        for page in pdf:
+            seen, rows = set(), collections.defaultdict(list)
+            for block in page.get_text('rawdict')['blocks']:
+                for line in block.get('lines', []):
+                    for span in line['spans']:
+                        for ch in span['chars']:
+                            x, y = ch['origin']
+                            glyph = (round(x, 1), round(y, 1), ch['c'])
+                            if glyph not in seen:
+                                seen.add(glyph)
+                                rows[round(y / 3)].append((x, ch['c']))
+            merged = []
+            for key in sorted(rows):
+                if merged and key - merged[-1][0] <= 1:
+                    merged[-1][1].extend(rows[key])
+                else:
+                    merged.append([key, list(rows[key])])
+            lines.extend(
+                re.sub(r'\s+', ' ', ''.join(c for _, c in sorted(cs, key=lambda t: t[0]))).strip()
+                for _, cs in merged)
+    return lines
+
+
+def _agri_legacy_tokens(lines):
+    """[(kind, value, text)] — leading markers peeled off each line in order."""
+    tokens = []
+    for line in lines:
+        s = line.strip()
+        if LEG_OPTION_TWO.search(s):
+            tokens.append(('option2', None, ''))
+        while s:
+            m = LEG_HEAD.match(s)
+            if m:
+                # 'Question 5.' names itself; a bare '5.' needs the marks guard.
+                tokens.append(('head', int(m.group(1)),
+                               'explicit' if s.startswith('Question') else ''))
+                s = s[m.end():].lstrip()
+                continue
+            m = LEG_MARK.match(s)
+            if m:
+                tokens.append(('mark', m.group(1), ''))
+                s = s[m.end():].lstrip()
+                continue
+            break
+        if s:
+            tokens.append(('text', None, s))
+        if LEG_MARKS.search(line):
+            tokens.append(('marks', None, ''))
+    return tokens
+
+
+def _roman_after(roman):
+    return 'i' if roman is None else (
+        ROMANS[ROMANS.index(roman) + 1] if roman in ROMANS[:-1] else None)
+
+
+def _letter_after(letter):
+    return 'a' if letter is None else (
+        LEG_LETTERS[LEG_LETTERS.index(letter) + 1]
+        if letter in LEG_LETTERS[:-1] else None)
+
+
+def census_agri_legacy(year, level):
+    path = os.path.join(PP.papers_dir('agricultural-science'),
+                        f'{year}-{level}-paper.pdf')
+    tokens = _agri_legacy_tokens(_agri_legacy_lines(path))
+    parts, texts = set(), collections.defaultdict(str)
+    q = letter = roman = None
+    marks_seen = restart = False
+    key = None
+    for i, (kind, value, text) in enumerate(tokens):
+        if kind == 'marks':
+            marks_seen = True
+        elif kind == 'option2':
+            restart = True
+        elif kind == 'head':
+            # A question opens only where the numbering allows it: 1 first,
+            # then the next number once the previous question has printed its
+            # marks — "2. The contents of the rumen", a numbered list inside
+            # Question 1, is not Question 2. "Question 3." names itself (the
+            # 2017-2020 Ordinary short questions print no marks line). Option
+            # Two re-opens its number.
+            if (q is None and value == 1) or (q is not None and (
+                    ((marks_seen or text == 'explicit') and value == q + 1)
+                    or (restart and value == q))):
+                q, letter, roman, key = value, None, None, (value, None, None)
+                marks_seen = restart = False
+                parts.add(key)
+        elif kind == 'mark' and q is not None:
+            as_letter = value == _letter_after(letter)
+            as_roman = value == _roman_after(roman)
+            if not as_letter and not as_roman and roman and value == roman:
+                # A numeral printed twice: 2012 HL Q5(b) runs (i), (ii), (ii),
+                # (iv). When the run resumes one further on, the repeat is
+                # the missing numeral, as the scheme and the cards read it.
+                later = next((v for k2, v, _ in tokens[i + 1:]
+                              if k2 in ('mark', 'head')), None)
+                if later == _roman_after(_roman_after(roman)):
+                    value, as_roman = _roman_after(roman), True
+            if not as_letter and not as_roman and letter and value == letter:
+                # A letter printed twice: 2018 OL Q13 prints (a), then a second
+                # (a) where the scheme has (b), then (c). When the next letter
+                # after the missing one follows (before the missing one or the
+                # next question does), the repeat is the missing letter.
+                missing = _letter_after(letter)
+                for kind2, value2, _ in tokens[i + 1:]:
+                    if kind2 == 'head' or (kind2 == 'mark' and value2 == missing):
+                        break
+                    if kind2 == 'mark' and value2 == _letter_after(missing):
+                        value, as_letter = missing, True
+                        break
+            if as_letter and as_roman:
+                # "(i)" after (h): the ninth letter, unless a "(ii)" follows
+                # before "(j)" does — then it opens romans under (h).
+                follow = _roman_after(value)
+                nxt = _letter_after(value)
+                as_roman = False
+                for kind2, value2, _ in tokens[i + 1:]:
+                    if kind2 == 'head':
+                        break
+                    if kind2 == 'mark' and value2 in (follow, nxt):
+                        as_roman = value2 == follow
+                        break
+                as_letter = not as_roman
+            if as_letter:
+                letter, roman, key = value, None, (q, value, None)
+                parts.add(key)
+            elif as_roman:
+                roman, key = value, (q, letter, value)
+                parts.add(key)
+        elif kind == 'text' and key is not None:
+            texts[key] = (texts[key] + ' ' + text).strip()
+    # A question key is a leaf only when the question prints no parts.
+    for k in [k for k in parts if k[1] is None and k[2] is None]:
+        if any(o[0] == k[0] and o != k for o in parts):
+            parts.discard(k)
+    return parts, dict(texts), [path]
+
+
 def census_merged(subject, year, level, component=None):
     P = PP.Paper(subject, year, level, component=component)
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
+    if subject == 'chemistry':
+        parts, texts = chemistry_choice_parts(year, level, parts, texts)
+    if subject == 'construction-studies':
+        from construction_census_repairs import apply_construction_census_repairs
+        parts, texts = apply_construction_census_repairs(year, level, parts, texts)
     return parts, texts, P.files
+
+
+def chemistry_choice_parts(year, level, parts, texts):
+    """Chemistry's "Answer part A or part B." as two sets of asks, not one.
+
+    Q4(l) and Q11(d) print two whole alternative parts, A and B, each with its
+    own romans. The paper reader keyed both by (question, letter, roman), so
+    B's (i) landed on A's (i): the census counted 2026 OL Q11(d) as six asks
+    where the paper prints eleven, and a card for A's (i) covered B's (i)
+    too. The alternatives are read with chem_print's part reader, which tells
+    "A" and "B" apart from the instruction above them, and keyed with the
+    letter carrying the alternative -- (11, 'dA', 'i') -- printed as
+    "Q11(d)A(i)", the way the cards cite them.
+
+    The 2014-2020 papers set the same choice at Q4(k) and Q11(c), and their
+    alternatives were counted as one leaf (Q4(k)) or as B's romans landing on
+    A's: 2020 HL lost twelve asks that way. A choice is taken only where the
+    paper reader already holds that question's lettered part, so a page the
+    part reader cannot follow (2010-2013) adds nothing that is not there.
+    """
+    import chem_print
+    lvl = 'hl' if level in ('higher', 'hl') else 'ol'
+    path = os.path.join(PP.papers_dir('chemistry'), f'{year}-{lvl}-paper.pdf')
+    # (2013 OL sets each head in one run with its words: chem_print.split_heads,
+    # gated to the sittings in chem_print.OLD_OL_HEADS; every other paper as read.)
+    segs, _ = chem_print.segments(chem_print.split_heads(chem_print.read_lines(path), year, lvl),
+                                  answers=False)
+    choice = {}
+    if (year, lvl) in chem_print.PAPER_ALT_LETTERS:
+        # (2013 HL prints Q11(c)'s choice "Answer either part A or part B.": its
+        # alternatives are read as chem_print.Printed reads them, PAPER_ALT_LETTERS.)
+        segs, _ = chem_print.segments(chem_print.split_heads(chem_print.read_lines(path), year, lvl),
+                                      answers=False, alt_letters=chem_print.PAPER_ALT_LETTERS[(year, lvl)])
+    for sg in segs:
+        q, letter, roman, alt = sg.key
+        if alt:
+            choice.setdefault((int(q), letter), []).append(sg)
+    if not choice:
+        return parts, texts
+    parts, texts = set(parts), dict(texts)
+    for (q, letter), sgs in choice.items():
+        if not any(k[-3] == q and k[-2] == letter for k in parts):
+            continue                # not a part the paper reader found
+        for k in [k for k in parts if k[-3] == q and k[-2] == letter]:
+            parts.discard(k)
+            texts.pop(k, None)
+        for sg in sgs:
+            _, _, roman, alt = sg.key
+            has_romans = any(o.key[3] == alt and o.key[2] for o in sgs)
+            if roman is None and has_romans:
+                continue            # the alternative's lead-in, not an ask
+            k = (q, letter + alt, roman)
+            parts.add(k)
+            texts[k] = chem_print.joined(sg.text)
+        if (year, lvl) in CHOICE_LEADING_ROMANS:
+            # 2018 OL Q11(c)A: romans set inside the alternative's lead-in.
+            for sg in sgs:
+                _, _, roman, alt = sg.key
+                if roman is not None:
+                    continue
+                mine = {k for k in parts if k[-3] == q and k[-2] == letter + alt}
+                lead = chem_print.joined(sg.text)
+                parts |= complete_leading_romans(mine, texts, stem=lambda _q, _l, t=lead: t)
+    return parts, texts
+
+
+# 2018 OL Q11(c)A (paper page 10) sets its first two romans inside the
+# alternative's opening sentence -- "How do most metals compare to most
+# plastics in terms of (i) hardness, (ii) lustre?" -- and breaks to markers of
+# their own only at (iii) and (iv). chemistry_choice_parts skips that sentence
+# as the alternative's lead-in, so (i) and (ii) went with it (census flag
+# "roman-gap Q11(cA)"); the scheme prices them "(6 + 3)" (PDF page 18). The
+# lead-in supplies them, as complete_leading_romans does for a letter's own
+# text. Applied to every Chemistry sitting the rule adds these two asks and no
+# other; gated so that a future sitting's reading moves only by its own audit.
+CHOICE_LEADING_ROMANS = {(2018, 'ol')}
+
+
+# Stimulus prose from the last census_sections() walk of each sitting, for
+# authoring passes that need it. Written as a side table rather than returned,
+# so census_subject()'s contract with every other reader is unchanged.
+SECTION_STEMS = {}
+
+
+# A short-question head printed over an empty row, the next head below it in
+# the same PDF block: '2.' then blank lines then '3. Choose ...'. The 2019
+# Ordinary paper sets Q2's ask in a column beside its two phone images, so
+# the ask is a separate block and sorts after Q3's opening line. The second
+# head must open an ask on its own line: two numbered answer rows ('1.' over
+# '2.', 2022 OL Q6) are not heads.
+RUN_IN_HEAD = re.compile(r'^\s*(\d{1,2})\.\s*\n(?:\s*\n)+[^\S\n]*(\d{1,2})\.[^\S\n]*[A-Za-z]')
+
+
+def _business_blocks(path):
+    """paper._blocks for Business, with two repairs: a run-in head, and a
+    page cut into overlapping vertical strips (strip_pages.py), which is read
+    as its rebuilt lines, one block per printed line.
+
+    When a block opens with a bare head 'N.' whose next printed line is the
+    head 'N+1.', the blocks that start between those two lines are N's ask
+    (a column beside a picture). They are moved to sit after 'N.', before
+    'N+1.', so the walker files their parts under N rather than N+1. Every
+    other page reads exactly as paper._blocks reads it.
+    """
+    with PP.pymupdf.open(path) as doc:
+        for page in doc:
+            if strip_cut(page):
+                for line in strip_lines(page):
+                    if line and not PP.PAGE_FURNITURE.match(line):
+                        yield line
+                continue
+            blocks = sorted(page.get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
+            i = 0
+            while i < len(blocks):
+                b = blocks[i]
+                m = RUN_IN_HEAD.match(b[4])
+                if not m or int(m.group(2)) != int(m.group(1)) + 1:
+                    i += 1
+                    continue
+                cut = next(line['bbox'][1] for blk in page.get_text('dict')['blocks']
+                           if blk['number'] == b[5] for line in blk.get('lines', [])
+                           if ''.join(s['text'] for s in line['spans']).strip().startswith(m.group(2) + '.'))
+                column = [x for x in blocks if x is not b and b[1] <= x[1] < cut]
+                keep = lambda xs: [x for x in xs if not any(x is c for c in column)]
+                head = (*b[:4], b[4][:m.start(2)], *b[5:])
+                rest = (*b[:4], b[4][m.start(2):], *b[5:])
+                blocks = keep(blocks[:i]) + [head] + column + [rest] + keep(blocks[i + 1:])
+                i = blocks.index(rest)
+            for b in blocks:
+                for chunk in _paragraph_heads(b[4]):
+                    for text in PP._split_own_line_markers(chunk):
+                        if text and not PP.PAGE_FURNITURE.match(text):
+                            yield text
+
+
+# A head that opens its own paragraph inside a block: '...Surplus Deficit' then
+# a blank line then '10. Column 1 is a list...' (2014 OL). Joined into one line
+# the head follows a bare word, so the inline-head splitter (which wants a full
+# stop or bracket before it) never sees it and the question vanished. A head
+# here is a number, a full stop and a capital on a line of its own after a
+# blank line; lone '1.' answer rows carry no text and stay put.
+PARAGRAPH_HEAD = re.compile(r'^[ \t\xa0]*\d{1,2}\.[ \t\xa0]+[A-Z(]')
+
+
+BARE_HEAD = re.compile(r'^[ \t\xa0]*\d{1,2}\.[ \t\xa0]*$')
+
+
+def _paragraph_heads(raw):
+    # The head may also sit alone on its line with the ask on the next one:
+    # 'USC' then blank lines then '2.' then 'Name levels 3, 4, and 5...' (2013
+    # OL). A bare number counts only when the next line with text opens with
+    # a capital or bracket, so a column of '1.' '2.' answer rows does not.
+    lines = raw.split('\n')
+    chunks, cur, blank = [], [], False
+    for k, line in enumerate(lines):
+        bare = False
+        if BARE_HEAD.match(line):
+            ahead = next((x for x in lines[k + 1:] if x.strip()), '')
+            bare = bool(re.match(r'^[ \t\xa0]*[A-Z(]', ahead))
+        if blank and (PARAGRAPH_HEAD.match(line) or bare) and any(x.strip() for x in cur):
+            chunks.append('\n'.join(cur))
+            cur = []
+        cur.append(line)
+        blank = not line.strip()
+    chunks.append('\n'.join(cur))
+    return chunks
+
+
+# Technology, Sections B and C: a block that continues the roman part above it
+# (see the walker). Prose, not lettering.
+TECH_CONTINUES = re.compile(
+    r'^(?:\u2022|\d{1,2}\.\s)'
+    r'|^(?:\S+\s+){4,}\S*[.?:]\s*$'
+    # The tail of a wrapped sentence: "2(b) above." after "...the Adibot
+    # robot, shown in", or "above." on its own.
+    r'|^(?:\d\([a-d]\)\s+)?[a-z][^.?!]{0,40}[.?!]\s*$')
+TECH_ASKS = re.compile(
+    r'^(?:\u2022|(?:briefly\s+)?(?:calculate|compare|complete|define|describe'
+    r'|determine|differentiate|discuss|distinguish|draw|explain|give|identify'
+    r'|indicate|label|list|name|outline|redraw|sketch|state|suggest|show'
+    r'|select|using|use|what|why|write)\b)', re.I)
+TECH_PAGE_FURNITURE = re.compile(
+    r'Leaving Certificate|Please turn over|Do not write on this page', re.I)
 
 
 def census_sections(subject, year, level):
@@ -296,35 +1289,152 @@ def census_sections(subject, year, level):
     # splits applied, so the neighbour guards can see the whole paper.
     blocks = []
     for path in P.files:
-        for block in PP._blocks(path):
-            for text in PP.INLINE_QHEAD.split(block):
+        # A booklet boundary closes whatever question was open. The sitting's
+        # SECTIONS run on across the two booklets, but a question does not:
+        # the last question of Technology's Section A booklet was absorbing
+        # the cover of the Section B and C booklet -- "Coimisiun na Scruduithe
+        # Stait ... 136 marks Instructions" -- through the continuation rule.
+        blocks.append(FILE_BREAK)
+        for block in (_business_blocks(path) if subject == 'business' else
+                      PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None)):
+            # The answerbook's own back matter -- its instructions, its ruled
+            # pages, the image acknowledgements and the copyright notice --
+            # follows the last question in the SAME booklet, and the walker
+            # ran straight on into it: the last question of Technology's
+            # Section A came out carrying two thousand characters of "Start
+            # each question on a new page" and a list of image URLs. Skipped
+            # per FILE, not for the sitting, because the next booklet's
+            # questions come after it.
+            if BACK_MATTER.match(block):
+                break
+            if subject == 'business':
+                # A part marker can extract with a stray space, '(C )' in the
+                # 2026 OL Section 2 paper, which hid its (C) under (B).
+                block = re.sub(r'\(([A-H]) \)', r'(\1)', block)
+            # Business short questions can share a PDF block with the previous
+            # question's underscore answer rules. Those rules have no sentence
+            # punctuation, so the ordinary inline-head splitter misses Q2/Q3
+            # and later numbered asks in the 2013 paper. A short question can
+            # also follow the previous one's figures ('... Current Liabilities
+            # €136,000 15. In the following table ...', 2026 OL; likewise
+            # 2015 OL Q15 and 2017 OL Q7), again with no punctuation between.
+            chunks = (re.split(r'(?<=_)\s+(?=\d{1,2}\.\s+)'
+                              r'|\s+(?=\d{1,2}\.\s+\([a-z]\)\s+[A-Z])'
+                              r'|(?<=\d)\s+(?=\d{1,2}\.\s+[A-Z][a-z]+\s)', block)
+                      if subject == 'business' else [block])
+            for text in (part for chunk in chunks for part in PP.INLINE_QHEAD.split(chunk)):
+                if subject == 'business':
+                    # Roman labels beside empty ruled answer slots are not
+                    # independent printed asks. Keep actual roman prose.
+                    text = re.sub(r'\((?:i{1,3}|iv|v)\)\s*(?=_{3,})', '', text)
+                    text = re.sub(r'_{3,}', '', text)
                 # Capital markers mid-block: Business glues "(B) Outline..."
-                # onto the tail of (A)'s prose.
+                # onto the tail of (A)'s prose. For Business, leave lowercase
+                # markers to INLINE_MARKER below, after preserving a leading
+                # "1. (a)"; splitting that early loses Q1 before a question is
+                # active. A capital marker at the end of a block can introduce
+                # a separate source box, and an opening quotation is prose too.
                 for text in re.split(
+                        r'\s(?=\([A-H]\)(?:\s+[A-Z(0-9\u201c\u2018\x27"]|$))' if subject == 'business' else
                         r'\s(?=\((?:[A-H]|[a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
                         r'\s+[A-Z(0-9\u201c"])', text):
                     # Home Economics Section C glues its elective sub-heads:
                     # "or 1.(c)" / "and 3.(b)" / "4.(a)" — split each onto its
                     # own line so the walker can read it as a head.
                     for text in re.split(r'\s(?=(?:and\s+|or\s+)?\d\.\([a-z])', text):
-                        text = text.strip()
-                        if not text:
-                            continue
-                        head = re.match(r'(\d{1,2}\.)\s+(?=\()', text)
-                        prefix = ''
-                        if head:
-                            prefix, text = head.group(1) + ' ', text[head.end():]
-                        pieces = [x.strip() for x in PP.INLINE_MARKER.split(text)
-                                  if x.strip()]
-                        for i, piece in enumerate(pieces):
-                            blocks.append((prefix + piece) if i == 0 else piece)
+                        # Technology heads Section C's options "Option 3 -
+                        # Information and Communication Technology" and every
+                        # long part "3(a)" with no dot, both glued onto the
+                        # prose that follows. Without the split the whole of
+                        # Section C — five 40-mark options per paper — is
+                        # invisible, which is what its census showed.
+                        if subject == 'technology':
+                            # "Answer 1(c) or 1(d)" is the rubric that offers
+                            # the alternatives, not a part head; splitting on
+                            # it keyed a part (c) whose whole text was "or".
+                            text = re.sub(r'Answer\s+\d{1,2}\([a-d]\)\s+(?:and|or)\s+'
+                                          r'\d{1,2}\([a-d]\)', ' ', text)
+                        # "2(c)" may END a piece: the roman split above cuts
+                        # the block before " (i)", which leaves the letter
+                        # marker as the last token of the piece before it, and
+                        # a rule demanding whitespace after the marker never
+                        # saw it. Eight lettered parts across three Higher
+                        # papers were invisible -- and their romans filed
+                        # themselves under the letter above.
+                        for text in (re.split(r'\s(?=(?:Option\s+\d\b|\d{1,2}\([a-d]\)(?:\s|$)))', text)
+                                     if subject == 'technology' else [text]):
+                            text = text.strip()
+                            if not text:
+                                continue
+                            head = re.match(r'(\d{1,2}\.)\s+(?=\()', text)
+                            prefix = ''
+                            if head:
+                                prefix, text = head.group(1) + ' ', text[head.end():]
+                            pieces = [x.strip() for x in PP.INLINE_MARKER.split(text)
+                                      if x.strip()]
+                            for i, piece in enumerate(pieces):
+                                blocks.append((prefix + piece) if i == 0 else piece)
+
+    # Numbered True/False statements can be complete sentences, so neither
+    # the short-option nor matching-column guards below recognise them.
+    # Keep a consecutive list beginning at 1 after an explicit True/False
+    # instruction as content of its question (2016 HL Q3), not new heads.
+    statement_rows = set()
+    if subject == 'business':
+        for i, text in enumerate(blocks):
+            if not re.search(r'\btrue\s+or\s+false\b', text, re.I):
+                continue
+            rows = []
+            for j in range(i + 1, len(blocks)):
+                # A real next question can continue the numeric sequence
+                # but open with a part marker, e.g. 2026 HL "6. (i)".
+                row = re.match(r'^(\d{1,2})\.\s+[A-Z]', blocks[j])
+                if not row or int(row.group(1)) != len(rows) + 1:
+                    break
+                rows.append(j)
+            if len(rows) >= 2:
+                statement_rows.update(rows)
 
     # A lone number beside other lone numbers is a matching-table row or an
     # answerbook rule, not a head — the same neighbour argument paper.py makes
     # for axis labels. 2022 HL Business lost Q2-Q5 to a matching table.
     lone = [i for i, t in enumerate(blocks)
             if re.fullmatch(r'[-\u2212]?\d{1,2}\.?', t.strip())]
-    scaffold = {i for i in lone if i - 1 in lone or i + 1 in lone}
+
+    def _value(i):
+        return int(blocks[i].strip().rstrip('.').replace('\u2212', '-'))
+
+    # A lone number belongs to a RUN of them -- an answerbook's ruled lines, a
+    # matching table's rows, a graph axis -- and a run steps by one, or repeats
+    # (a page number printed above the head that shares its value). A lone
+    # number whose lone neighbours are neither is not part of their run: 2022
+    # Higher Technology sets the answer lines "1." and "2." for Question 4
+    # immediately above the head "5.", and treating "5." as more scaffolding
+    # lost Question 5 whole, its two parts filed under Question 4.
+    scaffold = {i for i in lone
+                if any(j in lone and abs(_value(i) - _value(j)) <= 1
+                       for j in (i - 1, i + 1))}
+    if subject == 'business':
+        # A matching table can extract a numbered term and a lettered
+        # explanation in the same block. Its long prose is not a sequence of
+        # new questions (2014 Section 1 Q2 previously swallowed Q3–Q5).
+        matching_rows = {i for i, t in enumerate(blocks) if re.match(
+            r'^\d{1,2}\.\s+[^.?!]{1,60}\s+[A-Z]\.\s+', t)}
+        scaffold.update(i for i in matching_rows
+                        if i - 1 in matching_rows or i + 1 in matching_rows)
+        # The table's last term can extract alone, its explanation in the
+        # next block: '4. Court of Auditors D. Is responsible...' then
+        # '5. Council of the European Union (Council of Ministers)' then
+        # 'E. Is responsible...' (2010 HL Q4). Read as a head, that row became
+        # Question 5 and the real '5. (a)' lost its part. A bare numbered
+        # term between a matching row (or a lettered explanation) and a
+        # lettered explanation is a row of the table, not a question.
+        lettered = re.compile(r'^[A-Z]\.\s')
+        for i, t in enumerate(blocks):
+            if 0 < i < len(blocks) - 1 and re.fullmatch(r'\d{1,2}\.\s+[^.?!]{1,80}', t.strip()) \
+                    and (i - 1 in matching_rows or lettered.match(blocks[i - 1])) \
+                    and lettered.match(blocks[i + 1]):
+                scaffold.add(i)
     # A run of short numbered lines is an option list inside a question
     # ('1. Merger  2. Strategic alliance  ...'), not a run of question heads —
     # walking it re-keyed four Business sittings' Section 1.
@@ -343,6 +1453,12 @@ def census_sections(subject, year, level):
     parts, stems = {}, {}
     section, q, letter, roman = None, None, None, None
     for index, text in enumerate(blocks):
+        if text is FILE_BREAK:
+            q, letter, roman = None, None, None
+            continue
+        if index in statement_rows and q is not None:
+            stems.setdefault((section, q, letter), []).append(text)
+            continue
         if index in scaffold:
             continue
         # A marker-only block — "(B)" alone, its content following — is a real
@@ -352,9 +1468,13 @@ def census_sections(subject, year, level):
         # every (B).
         # A section header is a heading, not a mention: anchored at the block
         # start, never containing a second "Section" (booklet covers read
-        # "Section B and Section C"), and short or marks-bearing.
+        # "Section B and Section C"), and short or marks-bearing. A real
+        # Business heading can repeat its own section in the answering
+        # instructions, so there only a DIFFERENT section disqualifies it.
         sh = re.match(r'(?:SECTION|Section)\s+([A-C]|\d{1,2})\b(.{0,160})', text)
-        if sh and 'Section' not in sh.group(2) \
+        if sh and (all(other == sh.group(1) for other in re.findall(
+                r'\bSection\s+([A-C]|\d{1,2})\b', sh.group(2), re.I))
+                   if subject == 'business' else 'Section' not in sh.group(2)) \
                 and (len(text) < 200 or 'marks' in sh.group(2).lower()):
             # Two guards, both earned. Sections only move FORWARD — the
             # answerbook repeats earlier sections' names and re-opening one
@@ -371,14 +1491,41 @@ def census_sections(subject, year, level):
                 section, q, letter, roman = sh.group(1), None, None, None
             # 'Section 2 Applied Business Question 80 marks' is one block —
             # the header AND the headless compulsory question it opens.
-            if re.search(r'Applied\s+Business\s+Question', sh.group(2)):
+            if re.search(r'Applied\s+Business\s+Question', sh.group(2),
+                         re.I if subject == 'business' else 0):
                 q = 'ABQ'
             continue
         # The Applied Business Question: compulsory, 80 marks, and headless —
         # it never says "Question N", so it needs its own key.
-        if re.match(r'Applied\s+Business\s+Question', text):
+        if re.match(r'Applied\s+Business\s+Question', text,
+                    re.I if subject == 'business' else 0):
             q, letter, roman = 'ABQ', None, None
             continue
+        # Technology: Section C's five options are headed "Option N - Name",
+        # and every long part in Sections B and C is "N(a)" with no dot.
+        if subject == 'technology':
+            op = re.match(r'Option\s+(\d)\b', text)
+            if op:
+                q, letter, roman = int(op.group(1)), None, None
+                continue
+            nl = re.match(r'(\d{1,2})\(([a-d])\)\s*', text)
+            # A head opens a part; a reference to one mid-sentence does not.
+            # 2023 Ordinary 1(c) says "...the novelty light in 1(b) above." and
+            # wraps so that "1(b) above." starts a block, which re-opened 1(b)
+            # and welded 1(c)'s two asks onto 1(b)'s cards.
+            # Nor one followed by a roman and a lower-case word: 2021 Ordinary
+            # 3(b)(ii) wraps "...the processes at" / "3(b) (i) has the lesser
+            # environmental impact." and read as a head it cut the ask at "at".
+            after = re.sub(r'^\(\s*(?:i{1,3}|iv|v)\s*\)\s*', '', text[nl.end():].strip()) if nl else ''
+            if nl and section in ('B', 'C') \
+                    and (not after or not after[:1].islower()):
+                q, letter, roman = int(nl.group(1)), nl.group(2), None
+                key = (section, q, letter, None)
+                parts.setdefault(key, [])
+                rest = text[nl.end():].strip()
+                if rest:
+                    parts[key].append(rest)
+                continue
         # Home Economics Section C: "Elective 1 – Home Design..." heads the
         # elective, whose sub-heads then use the elective's own number.
         el = re.match(r'Elective\s+(\d)\b', text)
@@ -395,11 +1542,23 @@ def census_sections(subject, year, level):
             if rest:
                 parts[key].append(rest)
             continue
+        if subject == 'business':
+            # The 2019 Ordinary paper (and its single-booklet predecessors)
+            # sets its long-question heads in capitals: 'QUESTION 1 Read the
+            # information supplied...'. Unread, its whole Section 2 vanished
+            # from the census and every card citing it read as an orphan.
+            text = re.sub(r'^QUESTION\s+(\d{1,2})\b', r'Question \1', text)
         m = PP.QHEAD.match(text)
         if not m:
             un = PP.RUBRIC_HEAD.sub('', text, count=1)
             if un != text:
                 text, m = un, PP.QHEAD.match(un)
+                # The 2015 Ordinary rubric runs into the next heading: '...from
+                # either Part 1 or Part 2. PART 1'. Stripping the rubric leaves
+                # '2. PART 1', which read as Question 2 and filed all of Section 2
+                # Q1 under Q2. A part heading is not a question head.
+                if subject == 'business' and m and re.match(r'\d{1,2}\.\s+PART\s+\d\b', un):
+                    m = None
         if not m and isinstance(q, int):
             # Business Section 1 sets some heads as a bare '6.' in a block of
             # its own, the ask following. Only the next number due, never one
@@ -410,6 +1569,20 @@ def census_sections(subject, year, level):
             ln = re.match(r'^(\d{1,2})\.?$', text)
             if ln and int(ln.group(1)) == q + 1:
                 ahead = ' '.join(blocks[index + 1:index + 5])
+                # A footer page number after the last question is followed
+                # by the booklet's back matter, not an ask: the 2022 OL
+                # Section 2 page-10 footer opened a phantom Q10 whose 'text'
+                # was the back cover's date line.
+                if subject == 'business' and re.search(
+                        r'There is no examination material|Copyright notice'
+                        r'|\b(?:Mon|Tues|Wednes|Thurs|Fri)day\s+\d{1,2}\s+\w+\s+(?:Morning|Afternoon)', ahead):
+                    continue
+                # A figure label just above the real head: the 2013 OL Maslow
+                # pyramid's '3.' sits directly before '3. Outline three
+                # reasons...', which would then read as stem, not head.
+                if subject == 'business' and index + 1 < len(blocks) \
+                        and re.match(rf'{q + 1}\.\s', blocks[index + 1]):
+                    continue
                 prose = re.sub(
                     r'\b(Question|Part|Start each question on a new page'
                     r'|SECTION|Section)\b', '', ahead)
@@ -457,7 +1630,72 @@ def census_sections(subject, year, level):
             continue
         if PP.FURNITURE.match(text):
             continue
+        if subject == 'technology' and section == 'A' and roman \
+                and (section, q, None, roman) in parts \
+                and (text[:1].islower() or text.startswith('\u2022')
+                     or TECH_CONTINUES.match(text) or TECH_ASKS.match(text)
+                     or text.startswith('Note:')) \
+                and not TECH_PAGE_FURNITURE.search(text):
+            # ...and a sentence of its own under the roman: 2024 Ordinary
+            # 9(ii) is "The hairdryer has a power rating of 2 kW." and then
+            # "Calculate how much it will cost..." in the next block, 2022
+            # Ordinary 11(ii) the same with "Note: V = I x R" under it. Read
+            # as the question's stem, (ii) lost its ask and (i) gained it.
+            # Section A wraps a roman's ask into a block of its own too: 2024
+            # Higher 11(i) is "...a mass of 1800 kg with" / "an effort force of
+            # 200 N. Assume g = 9.81 m/s2", and the second block was its stem.
+            parts[(section, q, None, roman)].append(text)
+            continue
+        if subject == 'technology' and section in ('B', 'C') and letter \
+                and not roman and (section, q, letter, None) in parts \
+                and TECH_CONTINUES.match(text) \
+                and not TECH_PAGE_FURNITURE.search(text):
+            # The same, for the lettered part itself before any roman has
+            # opened: 3(d) wraps its one ask over two blocks ("...by air
+            # (planes)," / "land (trucks), and sea (ships)..."), 4(d) prints
+            # its context, a picture, and only then "Describe, with annotated
+            # sketches...", and 5(d) ends "in terms of:" above three bullets.
+            # Read as a stem, each ask shipped cut in half. Where romans do
+            # follow, the letter's text is their stimulus either way.
+            parts[(section, q, letter, None)].append(text)
+            continue
+        if subject == 'technology' and section in ('B', 'C') and letter \
+                and roman and (section, q, letter, roman) in parts \
+                and TECH_CONTINUES.match(text) \
+                and not TECH_PAGE_FURNITURE.search(text):
+            # A stimulus is printed ABOVE the parts it introduces. Prose
+            # that arrives after a roman has opened, under the same letter,
+            # is that roman's own text continuing in a block of its own:
+            # 2026 Higher 2(b)(iii) sets its data in one paragraph and
+            # "Calculate the time to fully discharge the battery." in the
+            # next, and 4(b)(i)'s three bullets follow its colon. Read as
+            # a stem, the ask lost its question and its siblings gained
+            # it. Only prose qualifies -- a bulleted or numbered list, or
+            # five words closed by a full stop, question mark or colon.
+            # A figure's caption ("Print head module"), its labels ("A D B
+            # Motor") and a table's cells carry no sentence and stay out,
+            # as does the page's own furniture.
+            parts[(section, q, letter, roman)].append(text)
+            if not TECH_ASKS.match(text):
+                # Data printed under (i) -- "Option A - Use skilled labour
+                # to assemble: Cost: EUR 8.50 per unit" -- is what (ii)
+                # and (iii) calculate from as well, so it is the letter's
+                # stem too; the author drops a stem its own ask repeats. A
+                # follow-on ask ("Name an electronic component...") and a
+                # bulleted enumeration belong to their roman alone.
+                stems.setdefault((section, q, letter), []).append(text)
+            continue
         stems.setdefault((section, q, letter), []).append(text)
+
+    # Business sometimes puts the capital part marker before a source box
+    # in a separate PDF block. Its prose accumulated as a stem, so retain it
+    # at that already-observed part. Do not manufacture parts from stems, or
+    # promote empty roman answer lines into separately marked questions.
+    if subject == 'business':
+        for (section_, q_, letter_), lines in stems.items():
+            key = (section_, q_, letter_, None)
+            if letter_ is not None and key in parts:
+                parts[key].extend(lines)
 
     # Drop keys that never accumulated text (unlabelled blanks), THEN adopt
     # whole questions — the order matters, because a phantom part suppresses
@@ -476,9 +1714,1690 @@ def census_sections(subject, year, level):
         parts[(section_, q_, None, None)] = list(lines)
 
     texts = {k: PP.unligature(' '.join(' '.join(v).split())) for k, v in parts.items()}
+    # The stimulus prose printed above a question's parts, keyed the same way.
+    # The census itself does not need it -- a leaf is counted, not shown -- but
+    # an authoring pass does: "Explain the term UHD." is the whole of a leaf
+    # whose subject is named only in the sentence above it.
+    SECTION_STEMS[(subject, year, level)] = {
+        k: PP.unligature(' '.join(' '.join(v).split()))
+        for k, v in stems.items()}
     return set(parts), texts, P.files
 
 
+def census_lang(subject, year, level):
+    """French: the written booklet and the listening booklet, read together.
+
+    THE DENOMINATOR IS THE PAPER, and in this subject the paper needs help
+    saying which of its printed markers is a question. A reading comprehension
+    sets its passage in NUMBERED PARAGRAPHS — "1. Billie vit en banlieue
+    parisienne…" — at the same margin and in the same shape as "1. (a) Comment
+    Billie décrit-elle sa ville…". No feature of the layout separates them.
+
+    So the reading asks are the printed blocks that the scheme's own reprinted
+    question locates (fr_paper.find, which is align.py's rule), and the census
+    then checks the paper INDEPENDENTLY in two ways:
+
+      * every reading comprehension's item tariffs must add up to the total
+        that comprehension prints on its own head. If the paper printed an ask
+        the scheme did not price, that sum would be short — and it is short in
+        exactly five comprehensions, each of which fr_scheme.py pins on one
+        named ask (see its _checksum);
+      * every printed marker block the scheme did NOT claim is scanned, and one
+        that reads like a question — it ends in a question mark, or cites the
+        passage section the answer is in — is FLAGGED. A passage paragraph
+        never does either.
+
+    Section B and the listening booklet need no such help: both print their own
+    heads, and both are read from the paper alone.
+    """
+    import re as _re
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from fr_paper import FrPaper                              # noqa: E402
+    from fr_scheme import FrScheme                            # noqa: E402
+
+    P = FrPaper(year, level, subject)
+    S = FrScheme(year, level, subject)
+    # A readable text file is not proof that this parser understood its layout.
+    # Older schemes use Roman sections and paired 7+1 allocations. Without
+    # this guard they silently census zero reading tasks after PDF extraction.
+    expected_reading = set(range(1, 3 if level == 'hl' else 5))
+    priced_reading = {ask.rc for ask in S.reading()}
+    if set(S.rc_totals) != expected_reading or priced_reading != expected_reading:
+        raise ValueError(
+            f'French {year} {level}: unsupported or incomplete reading-scheme layout; '
+            f'expected comprehensions {sorted(expected_reading)}, '
+            f'found headings {sorted(S.rc_totals)} and priced tasks {sorted(priced_reading)}')
+    texts = {}
+    claimed = set()
+    for ask in S.reading():
+        hit = P.find(ask.rc, ask.item, None if ask.letter_to else ask.letter, ask.cue)
+        if hit is None:
+            raise ValueError(
+                f'French {year} {level}: priced reading task has no matched paper question: '
+                f'A{ask.rc} Q{ask.item}({ask.letter or ""})')
+        text = hit[0]
+        group = getattr(S, 'paper_question_groups', {}).get(f'A{ask.rc}-Q{ask.item}')
+        if group:
+            group_text = []
+            for item in group['questions']:
+                grouped_ask = P.find(ask.rc, item, None, group['paperCues'][str(item)])
+                if grouped_ask is None:
+                    raise ValueError(f'French {year} {level}: shared tariff has no paper question A{ask.rc} Q{item}')
+                group_text.append(f'Question {item}: {grouped_ask[0]}')
+                claimed.add((ask.rc, item, None))
+            text = '\n\n'.join(group_text)
+        section = f'A{ask.rc}'
+        if ask.letter_to:
+            # One head, four printed answer lines: "1.(a - d)" prices a
+            # matching task whose parts the paper prints as (a) to (d), each
+            # with its own answer space, so each is a leaf.
+            for letter in _letters(ask.letter, ask.letter_to):
+                part = P.candidates(ask.rc, ask.item, letter)
+                body = max((b.text for b in part), key=len, default='')
+                texts[(section, ask.item, letter, None)] = f'{text} ({letter}) {body}'.strip()
+                claimed.add((ask.rc, ask.item, letter))
+        else:
+            texts[(section, ask.item, ask.letter, None)] = text
+            claimed.add((ask.rc, ask.item, ask.letter))
+
+    for q, letter, text, _page in P.section_b_asks():
+        texts[('B', q, letter, None)] = text
+
+    aural = P.aural_asks()
+    lettered = {(sec, item) for sec, item, letter, _t in aural if letter}
+    for sec, item, letter, text in aural:
+        if letter is None and (sec, item) in lettered:
+            continue                     # a head whose lettered parts are the asks
+        section = sec if sec in {'I', 'II', 'III', 'IV', 'V'} else f'L{sec}'
+        texts[(section, item, letter, None)] = text
+
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S, claimed
+
+
+def census_ara(subject, year, level):
+    """Arabic: one booklet, numbered 1 to 15 across four printed parts.
+
+    THE DENOMINATOR IS THE PAPER and it can be read from the paper alone: the
+    part heads say which numbers may open a question, and every ask is opened
+    by a printed number or a printed part letter under one. The scheme is read
+    beside it to price the asks and to be CHECKED against them, which is what
+    ara_flags does.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from ara_paper import AraPaper                              # noqa: E402
+    from ara_scheme import AraScheme                            # noqa: E402
+
+    P = AraPaper(year, level)
+    S = AraScheme(year, level)
+    texts = {}
+    for ask in P.leaves:
+        texts[(ask.question, ask.letter, None)] = ask.text
+    return set(texts), texts, [P.path], P, S
+
+
+def ara_flags(P, S):
+    """What the paper and the scheme disagree about. See census_ara.
+
+    The paper's own checks — every sitting sets 37 leaves and its tariffs sum
+    to the 400 marks its cover prints — plus the two that make the number-join
+    to the scheme safe (Law 4): the scheme totals every question the same as
+    the paper prices it, and its part letters are the paper's letters in the
+    paper's order.
+    """
+    out = []
+    paper_flags, _total = P.flags()
+    for detail in paper_flags:
+        out.append({'type': 'paper', 'where': f'{P.year} {P.level.upper()}',
+                    'detail': detail})
+    for detail in S.flags(P):
+        out.append({'type': 'scheme', 'where': f'{P.year} {P.level.upper()}',
+                    'detail': detail})
+    return out
+
+
+def census_ja(subject, year, level):
+    """Japanese: the written booklet and the listening booklet, read together.
+
+    THE DENOMINATOR IS THE PAPER, and here it can be read from the paper
+    alone: every ask the SEC sets is opened by a printed marker under a printed
+    part head, and ja_paper.py walks them. The scheme is read beside it — not
+    to say which asks exist, but to price them and to be CHECKED against them,
+    which is what ja_flags does.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from ja_paper import JaPaper                                # noqa: E402
+    from ja_scheme import JaScheme                              # noqa: E402
+
+    P = JaPaper(year, level, subject)
+    S = JaScheme(year, level, subject)
+    texts = {}
+    for ask in P.all_asks():
+        texts[ask.key] = ask.text
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
+
+def ja_flags(P, S):
+    """What the paper and the scheme disagree about. See census_ja.
+
+    Three checks, and they are the only reason pairing the two documents by
+    printed ORDER is safe (Law 4):
+
+      * each component sets the same NUMBER of parts in both documents;
+      * paired part for paired part, both hold the same number of asks;
+      * every question's scheme tariffs add up to the total the PAPER prints
+        on its own 問題 head.
+
+    A part that fails any of them is flagged, never quietly re-keyed — the
+    asks under it stay open in the ledger until the disagreement is settled.
+    """
+    flags = []
+    paper = collections.OrderedDict()
+    for ask in P.asks():
+        paper.setdefault(ask.section, []).append(ask)
+    aural = collections.OrderedDict()
+    for ask in P.aural_asks():
+        aural.setdefault(ask.section, []).append(ask)
+    scheme = S.by_part()
+    groups = [
+        ('reading', [k for k in paper if k[0] in '123'],
+         [k for k in scheme if k[0] == 'R']),
+        ('written production', [k for k in paper if k[0] in '45'],
+         [k for k in scheme if k[0] == 'W']),
+        ('listening', list(aural), [k for k in scheme if k[0] == 'L']),
+    ]
+    for name, pkeys, skeys in groups:
+        if len(pkeys) != len(skeys):
+            flags.append({
+                'type': 'scheme-parts',
+                'where': name,
+                'detail': f'the paper heads {len(pkeys)} part(s) '
+                          f'({", ".join(map(str, pkeys))}) and the scheme '
+                          f'{len(skeys)}; they cannot be paired in order'})
+            continue
+        for pk, sk in zip(pkeys, skeys):
+            pn = len(paper.get(pk) or aural.get(pk) or [])
+            sn = len(scheme[sk])
+            if pn != sn:
+                flags.append({
+                    'type': 'scheme-count',
+                    'where': f'Section {pk}',
+                    'detail': f'the paper prints {pn} ask(s) here and the '
+                              f'scheme prices {sn}'})
+    # The tariff checksum is read off the PART HEADS, not off the leaves.
+    # Almost every part of this paper is a CHOICE — "Write the meaning of any
+    # FIVE of the following Kanji", six items printed and five answered — so
+    # the leaves under a part are worth MORE than the part is, by design, and
+    # adding them up flags thirty-four questions that are priced correctly.
+    # A part head states what the part is worth whatever the candidate picks.
+    for q, printed in sorted(P.question_marks.items()):
+        parts = [k for k in S.by_part() if k[0] in ('R', 'W') and k[1] == q]
+        heads = [S.part_marks.get(k) for k in parts]
+        if not parts or any(h is None for h in heads):
+            continue
+        if sum(heads) != printed:
+            flags.append({
+                'type': 'tariff-checksum',
+                'where': f'Q{q}',
+                'detail': f'the scheme heads this question\'s parts '
+                          f'{sum(heads)} against the {printed} the paper '
+                          f'prints on its own head'})
+    return flags
+
+
+def census_de(subject, year, level):
+    """German: the written booklet and the listening booklet, read together.
+
+    THE DENOMINATOR IS THE PAPER. The reading asks are the printed blocks the
+    scheme's own reprinted question locates (de_paper.find, which is align.py's
+    rule), and the twenty asks whose scheme prints an answer KEY rather than a
+    question — the Ordinary paragraph-headings, matching and true/false
+    questions — are located by their printed address, which is the only thing
+    both documents state about them.
+
+    Everything else is read from the paper alone and needs no help: the applied
+    grammar prints "1." and "2." and a candidate answers one; Äußerung zum
+    Thema and Schriftliche Produktion print "(a)" and "(b)" the same way; and
+    the listening booklet numbers its own four parts.
+
+    The census then checks the paper INDEPENDENTLY in three ways, in
+    `de_flags`: every scheme ask must have found a printed block, every printed
+    reading block must have been claimed by a scheme ask, and the item counts
+    of the listening booklet must equal the splits the scheme prints on the
+    heads of its own four parts.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from de_paper import DePaper                               # noqa: E402
+    from de_scheme import DeScheme                             # noqa: E402
+
+    P = DePaper(year, level, subject)
+    S = DeScheme(year, level, subject)
+    texts = {}
+    claimed = set()
+    for ask in S.reading():
+        hit = P.find(ask.unit, ask.q, ask.letter, ask.roman, ask.cue)
+        if hit is None:
+            hit = P.by_key(ask.unit, ask.q, ask.letter, ask.roman)
+        if hit is None:
+            continue
+        texts[ask.key] = hit[0]
+        claimed.add(ask.key)
+    for q, text, _page in P.grammar_alternatives():
+        texts[('AG', q, None, None)] = text
+    for unit in ('AT', 'SP'):
+        for letter, text, _page in P.written_alternatives(unit):
+            texts[(unit, None, letter, None)] = text
+    for part, item, roman, text in P.aural_asks():
+        texts[(f'L{part}', item, None, roman)] = text
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S, claimed
+
+
+# A printed block that reads like a question rather than a stray fragment: it
+# ends in a question mark, or it names the place in the text its answer is
+# found, which is what every German reading ask does.
+LOOKS_LIKE_ASK_DE = re.compile(
+    r'\?\s*$|\((?:Zeile[n]?|line|lines|Par\.|Absatz|Abschnitt|Alt|Introduction|'
+    r'Einleitung|R[ée]amhr[áa]|Headline|Tipp)[^)]*\)\s*$', re.I)
+
+
+def de_flags(P, S, claimed):
+    """What the two documents disagree about. See census_de."""
+    flags = []
+    for ask in S.reading():
+        if ask.key not in claimed:
+            flags.append({
+                'type': 'unpaired-ask', 'where': S.ref(ask),
+                'detail': f'the scheme prices this ask and no printed block on '
+                          f'the paper matches its wording: "{ask.cue[:70]}"'})
+    for block in P.blocks:
+        if block.key in claimed or len(block.text) > 400:
+            continue
+        if not LOOKS_LIKE_ASK_DE.search(block.text):
+            continue
+        flags.append({
+            'type': 'unpriced-ask',
+            'where': f'Section {block.key[0]} Q{block.q}'
+                     f'{f"({block.letter})" if block.letter else ""}'
+                     f'{f"({block.roman})" if block.roman else ""}',
+            'detail': f'the paper prints {block.text[:70]!r}, which no scheme '
+                      f'ask claims'})
+    items = collections.defaultdict(set)
+    for part, item, _roman, _text in P.aural_asks():
+        items[part].add(item)
+    for part in sorted(set(items) | {int(u[1]) for u in S.unit_splits
+                                     if u.startswith('L')}):
+        printed = S.unit_splits.get(f'L{part}')
+        if printed is None:
+            flags.append({
+                'type': 'listening-head', 'where': f'Listening part {part}',
+                'detail': 'the scheme prints no tariff on this part\'s own head, '
+                          'so its item count cannot be checked against the paper'})
+        elif len(printed) != len(items.get(part, ())):
+            flags.append({
+                'type': 'listening-count', 'where': f'Listening part {part}',
+                'detail': f'the paper prints {len(items.get(part, ()))} items and '
+                          f'the scheme prices {len(printed)}'})
+    return flags
+
+def census_es(subject, year, level):
+    """Spanish: the written paper, the loose sheet and the listening booklet.
+
+    THE DENOMINATOR IS THE PAPER. Every leaf here is a marker the paper itself
+    prints with an ask beside it, read by es_paper.py; the scheme is consulted
+    only to CHECK the reading, never to produce it.
+
+    Two things this paper does that a generic reader cannot see:
+
+      * Higher Section A's journalistic text is printed in NUMBERED PARAGRAPHS
+        at the same margin and in the same shape as its questions, so "1." on
+        the page is as likely to open the article as the ask. The questions are
+        the last run of markers in the region (es_paper.Region.ask_blocks);
+      * a "Give three details" ask is followed by "1.", "2." and "3." printed
+        alone on the answer lines. A marker with nothing after it is an answer
+        box, and is not counted.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from es_paper import EsPaper                              # noqa: E402
+    from es_scheme import EsScheme                            # noqa: E402
+
+    P = EsPaper(year, level, subject)
+    S = EsScheme(year, level, subject)
+    texts = {k: v[0] for k, v in P.leaves().items()}
+    for q, letter, text, _page in P.aural_asks():
+        texts[('L', q, letter, None)] = text
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
+
+def es_flags(P, S):
+    """What the PAPER prints that the scheme does not agree with.
+
+    Three independent checks, because the two documents share three things and
+    a mis-read shows up in a different one of them each time:
+
+      * the SECTION total, printed on the paper's own section head and again on
+        the scheme's;
+      * the QUESTION tariff, printed beside the question on the paper and on
+        the scheme's question head;
+      * the text's own TITLE, printed above the article on the paper and above
+        its answers in the scheme.
+
+    Plus the fourth thing that is not an agreement at all: a leaf the paper
+    prints that no scheme ask claims and no band grid covers.
+    """
+    flags = []
+    for letter, printed in sorted(P.section_marks.items()):
+        want = S.unit_totals.get(letter)
+        if want is not None and want != printed:
+            flags.append({
+                'type': 'section-total', 'where': f'Section {letter}',
+                'detail': f'the paper prints {printed} marks, the scheme {want}'})
+    for token, region in sorted(P.regions.items()):
+        for item, stem in sorted(region.stems().items()):
+            key = _es_scheme_key(token, item)
+            want = S.q_totals.get(key)
+            got = stem.marks
+            if want is not None and got is not None and want != got:
+                flags.append({
+                    'type': 'tariff-disagreement', 'where': f'{token} Q{item}',
+                    'detail': f'the paper prices this question {got}, '
+                              f'the scheme {want}'})
+        # Section B's text is not in the question paper, so its title is the
+        # one printed on the loose sheet.
+        title = ((region.title or P.insert_title) if token == 'B'
+                 else region.title)
+        want_title = S.titles.get(_es_title_key(token))
+        if title and want_title and not _title_agrees(title, want_title):
+            flags.append({
+                'type': 'title-disagreement', 'where': token,
+                'detail': f'the paper heads this text {title!r}, '
+                          f'the scheme {want_title!r}'})
+    priced = {a.key for a in S.asks}
+    grid_cover = set()
+    for (sec, q, letter, _roman) in S.grids:
+        grid_cover.add((sec, q, letter))
+    for key in sorted(P.leaves(), key=lambda k: tuple(str(x) for x in k)):
+        section, q, letter, roman = key
+        if (section, q, letter, roman) in priced:
+            continue
+        # A scheme ask priced WHOLE covers every part the paper prints beneath
+        # it: Higher Section A's Q.4 journalistic ask is one 6-mark question
+        # whose two phrases the paper prints as (a) and (b).
+        if (section, q, None, None) in priced or (section, None, letter, None) in priced:
+            continue
+        if (section, q, letter) in grid_cover or (section, q, None) in grid_cover:
+            continue
+        flags.append({
+            'type': 'unpriced-ask', 'where': key_label(key),
+            'detail': 'the paper prints this ask and no scheme entry claims it'})
+    return flags
+
+
+def census_it(subject, year, level):
+    """Italian: the written booklet and the listening booklet, read together.
+
+    THE DENOMINATOR IS THE PAPER, and this paper says which of its printed
+    markers is a question without any help from the scheme: a passage, an
+    advertisement or a literary extract is printed on a page with nothing to
+    write on, and the questions on the page after it with ruled lines under
+    them. So the reading asks are read from the paper alone (it_paper.py),
+    which is what French could not do.
+
+    What the paper cannot do alone is say whether the reader lost one, and the
+    scheme is the independent check for that — TWICE:
+
+      * every reading section prints what it is worth on its own head, and the
+        tariffs of the asks beneath it add up to that figure in all ten
+        sittings, in every section (it_scheme.audit);
+      * the number of asks the scheme prices in a section equals the number the
+        paper prints in it, in all ten sittings and all 385 asks.
+
+    Where the two disagree about an ask's NAME they are flagged and the paper
+    wins: the SEC leaves the "(a)" off the first part of an item four times in
+    the corpus — 2024 Ordinary prices "2." where the paper prints "2. (a)" —
+    and the paper is what a student is holding.
+
+    The marks checksum flags 2021 and 2022 at both levels, and that is the
+    paper changing rather than the reader losing anything. Those two sittings
+    print "Freagair Roinn A nó Roinn B / Answer either Section A or Section B"
+    at Higher and set ONE of two reading comprehensions at Ordinary, and their
+    written booklets say so on their own covers: 160 marks at Higher and 180 at
+    Ordinary, against 220 for each of 2023, 2024 and 2025. Every ask printed in
+    the section a candidate did not answer is still an ask the paper printed,
+    so all of them are censused.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from it_paper import ItPaper                              # noqa: E402
+    from it_scheme import ItScheme                            # noqa: E402
+
+    P = ItPaper(year, level, subject)
+    S = ItScheme(year, level, subject)
+    texts = {}
+    for section, item, letter, text, _page in P.asks():
+        texts[(section, item, letter, None)] = text
+    for route, item, text, _page in P.essay_asks():
+        texts[(f'B3{route}', item, None, None)] = text
+    for item, letter, text, _page in P.writing_asks():
+        texts[('C', item, letter, None)] = text
+    for section, item, text in P.aural_asks():
+        texts[(f'L{section}', item, None, None)] = text
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
+
+def es_flags(P, S):
+    """What the PAPER prints that the scheme does not agree with.
+
+    Three independent checks, because the two documents share three things and
+    a mis-read shows up in a different one of them each time:
+
+      * the SECTION total, printed on the paper's own section head and again on
+        the scheme's;
+      * the QUESTION tariff, printed beside the question on the paper and on
+        the scheme's question head;
+      * the text's own TITLE, printed above the article on the paper and above
+        its answers in the scheme.
+
+    Plus the fourth thing that is not an agreement at all: a leaf the paper
+    prints that no scheme ask claims and no band grid covers.
+    """
+    flags = []
+    for letter, printed in sorted(P.section_marks.items()):
+        want = S.unit_totals.get(letter)
+        if want is not None and want != printed:
+            flags.append({
+                'type': 'section-total', 'where': f'Section {letter}',
+                'detail': f'the paper prints {printed} marks, the scheme {want}'})
+    for token, region in sorted(P.regions.items()):
+        for item, stem in sorted(region.stems().items()):
+            key = _es_scheme_key(token, item)
+            want = S.q_totals.get(key)
+            got = stem.marks
+            if want is not None and got is not None and want != got:
+                flags.append({
+                    'type': 'tariff-disagreement', 'where': f'{token} Q{item}',
+                    'detail': f'the paper prices this question {got}, '
+                              f'the scheme {want}'})
+        # Section B's text is not in the question paper, so its title is the
+        # one printed on the loose sheet.
+        title = ((region.title or P.insert_title) if token == 'B'
+                 else region.title)
+        want_title = S.titles.get(_es_title_key(token))
+        if title and want_title and not _title_agrees(title, want_title):
+            flags.append({
+                'type': 'title-disagreement', 'where': token,
+                'detail': f'the paper heads this text {title!r}, '
+                          f'the scheme {want_title!r}'})
+    priced = {a.key for a in S.asks}
+    grid_cover = set()
+    for (sec, q, letter, _roman) in S.grids:
+        grid_cover.add((sec, q, letter))
+    for key in sorted(P.leaves(), key=lambda k: tuple(str(x) for x in k)):
+        section, q, letter, roman = key
+        if (section, q, letter, roman) in priced:
+            continue
+        # A scheme ask priced WHOLE covers every part the paper prints beneath
+        # it: Higher Section A's Q.4 journalistic ask is one 6-mark question
+        # whose two phrases the paper prints as (a) and (b).
+        if (section, q, None, None) in priced or (section, None, letter, None) in priced:
+            continue
+        if (section, q, letter) in grid_cover or (section, q, None) in grid_cover:
+            continue
+        flags.append({
+            'type': 'unpriced-ask', 'where': key_label(key),
+            'detail': 'the paper prints this ask and no scheme entry claims it'})
+    return flags
+
+
+def _es_scheme_key(token, item):
+    if token in ('A1a', 'A1b', 'B'):
+        return (token, item)
+    m = re.fullmatch(r'A(\d)', token)
+    return ('A', int(m.group(1))) if m else (token, item)
+
+
+def _es_title_key(token):
+    if token in ('A1a', 'A1b'):
+        return (token, None)
+    if token == 'B':
+        return ('B', None)
+    m = re.fullmatch(r'A(\d)', token)
+    if m:
+        return ('A', int(m.group(1)))
+    if re.fullmatch(r'A2[ab]', token):
+        return ('A2', token[2])
+    return (token, None)
+
+
+def _title_words(text):
+    """A title's content words, accent-folded, for comparison."""
+    folded = ''.join(c for c in unicodedata.normalize('NFKD', (text or '').lower())
+                     if not unicodedata.combining(c))
+    return {w for w in re.findall(r'[a-z0-9]+', folded) if len(w) > 1}
+
+
+def _title_agrees(a, b):
+    """Do the paper's and the scheme's titles name the same text?
+
+    Scored on shared words rather than on the string, because the two
+    documents render the SAME title three ways: the paper breaks a long one
+    across two printed lines ("ESPAÑA GANA EL / MUNDIAL"), it spells a number
+    the scheme sets as a numeral ("CINCO MILLONES" against "5 MILLONES"), and
+    one of them mis-keys a letter ("SAN CRISTÓBAL" against the scheme's "SAN
+    CRISTÓBOL"). Requiring the strings to contain one another reported all
+    three as disagreements and would have buried a title naming a DIFFERENT
+    text under them. Two thirds of the shorter side's words is the bar: the
+    worst real pair in the corpus shares five of six.
+    """
+    x, y = _title_words(a), _title_words(b)
+    if not x or not y:
+        return True
+    return len(x & y) / min(len(x), len(y)) >= 0.66
+
+
+def es_cover_marks(paths):
+    """The totals the booklets print on their own covers, added."""
+    import pymupdf
+    total = 0
+    for path in paths:
+        with pymupdf.open(path) as doc:
+            m = re.search(r'(\d{2,3})\s*marks\b', doc[0].get_text(), re.I)
+        if m:
+            total += int(m.group(1))
+    return total
+
+def it_flags(P, S):
+    """What the paper and the scheme disagree about. See census_it."""
+    flags = list(P.flags)
+    paper = P.asks()
+    for token in sorted({a[0] for a in paper} | {a.section for a in S.asks}):
+        pp = [a for a in paper if a[0] == token]
+        ss = [a for a in S.asks if a.section == token]
+        if len(pp) != len(ss):
+            flags.append({
+                'type': 'scheme-count',
+                'where': f'Section {token}',
+                'detail': f'the paper prints {len(pp)} ask(s) here and the '
+                          f'scheme prices {len(ss)}'})
+            continue
+        for a, b in zip(pp, ss):
+            if (a[1], a[2]) != (b.item, b.letter):
+                flags.append({
+                    'type': 'scheme-key',
+                    'where': f'Section {token}',
+                    'detail': f'the paper prints {a[1]}{a[2] or ""} where the '
+                              f'scheme prices {b.item or ""}{b.letter or ""}; '
+                              f'they are paired in printed order and the '
+                              f'paper\'s name is the one cited'})
+    for token, printed in sorted(S.section_totals.items()):
+        asks = [a for a in S.asks if a.section == token]
+        if not asks or any(a.total is None for a in asks):
+            continue
+        got = sum(a.total for a in asks)
+        if got != printed:
+            flags.append({
+                'type': 'tariff-checksum',
+                'where': f'Section {token}',
+                'detail': f'the scheme prices its asks {got} against the '
+                          f'{printed} it prints on the section head'})
+    return flags
+
+
+def _letters(first, last):
+    lo, hi = LETTERS.index(first), LETTERS.index(last)
+    return list(LETTERS[lo:hi + 1])
+
+
+LETTERS = 'abcdefgh'
+# A printed block that reads like a question rather than a passage paragraph:
+# it ends in a question mark, or it names the passage section the answer is in,
+# which is what every French reading ask does and no paragraph of the passage
+# ever does.
+LOOKS_LIKE_ASK = re.compile(r'\?\s*$|\((?:Section|Roinn)\s*\d\)\s*$', re.I)
+
+
+def lang_flags(P, S, claimed):
+    """What the PAPER prints that the scheme never priced. See census_lang."""
+    flags = []
+    for block in P.blocks:
+        key = (block.rc, block.item, block.letter)
+        # Short AND question-shaped. A paragraph of the passage can end in a
+        # rhetorical question — 2025 Higher's fifth runs to four hundred
+        # characters and closes with one — and flagging it as a lost ask would
+        # bury the real signal under one false alarm per paper.
+        if (key in claimed or len(block.text) > 300
+                or not LOOKS_LIKE_ASK.search(block.text)):
+            continue
+        flags.append({
+            'type': 'unpriced-ask',
+            'where': f'Q.{block.rc} {block.item}{f"({block.letter})" if block.letter else ""}',
+            'detail': f'the paper prints {block.text[:70]!r}, which no scheme ask claims'})
+    for ask in S.reading():
+        if ask.fault:
+            flags.append({'type': 'tariff-disagreement',
+                          'where': S.ref(ask), 'detail': ask.fault})
+    return flags
+
+
+def lang_cover_marks(paths):
+    """The totals the two booklets print on their own covers, added.
+
+    French has no per-question tariff on the paper at all — the marks live in
+    the scheme — so there is nothing to sum question by question. The covers
+    state what the sitting is worth, and a year that disagrees with its
+    siblings has lost a booklet.
+    """
+    import pymupdf
+    total = 0
+    for path in paths:
+        with pymupdf.open(path) as doc:
+            m = re.search(r'(\d{2,3})\s*marks\b', doc[0].get_text(), re.I)
+        if m:
+            total += int(m.group(1))
+    return total
+
+
+def census_ru(subject, year, level):
+    """Russian: the written booklet and the listening booklet, read together.
+
+    THE DENOMINATOR IS THE PAPER, and this paper needs the same help French's
+    does to say which of its printed markers is a question: a comprehension
+    sets its passage in NUMBERED PARAGRAPHS at the same margin and in the same
+    shape as its questions. So the reading asks are the printed blocks the
+    scheme's own reprinted question locates (ru_paper.find, which is align.py's
+    rule), and the PAPER's address is the one keyed even where the scheme
+    disagrees — the 2021 Ordinary scheme numbers the retrieval text's last two
+    asks "(vii)" and "(vii)" where the paper prints "(vii)" and "(viii)".
+
+    Everything else is read from the paper alone and needs no help. Each of
+    the paper's other printed questions is ONE leaf — the grammar, the
+    matching task, the structuring-discourse gap-fill, the short essay — with
+    two exceptions the paper itself numbers: Higher's language-awareness
+    questions, which print a choice of two tasks and price both ("Answer ONE
+    of the following: Q. 1.2(i) or 1.2(ii)"), and the guided-writing and
+    extended-writing questions, which number their alternatives 1, 2 and 3.
+
+    The census then checks the paper INDEPENDENTLY, in `ru_flags`: every
+    scheme ask must have found a printed block, no two may have found the
+    same one, and every unit that prints a total must be reached exactly by
+    its own asks.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from ru_paper import RuPaper                                # noqa: E402
+    from ru_scheme import RuScheme, READING_UNITS               # noqa: E402
+
+    P = RuPaper(year, level, subject)
+    S = RuScheme(year, level, subject)
+    texts = {}
+    claimed = set()
+    for ask in S.asks:
+        if ask.unit not in READING_UNITS:
+            continue
+        hit = P.find(ask.unit, ask.item, ask.roman, ask.cue, claimed)
+        if hit is None:
+            continue
+        text, _page, block = hit
+        claimed.add(id(block))
+        texts[(block.unit, block.item, None, block.roman)] = text
+
+    for unit in RU_WHOLE_UNITS:
+        if unit not in P.unit_pages:
+            continue
+        romans = P.choice_romans(unit) if unit in RU_CHOICE_UNITS else []
+        items = P.unit_items(unit) if unit in RU_NUMBERED_UNITS else []
+        head = ' '.join(P.unit_head.get(unit, unit).split())
+        if romans:
+            for r in romans:
+                texts[(unit, None, None, r)] = f'{head} ({r})'
+        elif items:
+            for i in items:
+                texts[(unit, i, None, None)] = f'{head} {i}'
+        else:
+            texts[(unit, None, None, None)] = head
+
+    for unit, item, roman, text in P.aural_asks():
+        texts[(unit, item, None, roman)] = text
+
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S, claimed
+
+
+# The paper's other printed questions, each of which is one census leaf unless
+# the paper numbers alternatives inside it.
+RU_WHOLE_UNITS = ('LA1', 'LA2', 'CA1', 'SD', 'GR', 'SE', 'GW', 'MM', 'SA', 'EW')
+RU_CHOICE_UNITS = ('LA1', 'LA2', 'CA1')
+RU_NUMBERED_UNITS = ('GW', 'EW')
+
+
+def ru_flags(P, S, claimed):
+    """What the paper and the scheme disagree about. See census_ru."""
+    flags = []
+    seen = set()
+    for ask in S.asks:
+        if ask.unit not in {'C1', 'C2', 'IR1', 'IR2', 'CD'}:
+            continue
+        hit = P.find(ask.unit, ask.item, ask.roman, ask.cue, seen)
+        if hit is None:
+            flags.append({
+                'type': 'unmatched-scheme-ask',
+                'where': S.ref(ask),
+                'detail': f'the scheme prices {ask.cue[:70]!r} and no printed '
+                          f'question in that unit matches its wording'})
+            continue
+        block = hit[2]
+        seen.add(id(block))
+        if (block.item, block.roman) != (ask.item, ask.roman):
+            flags.append({
+                'type': 'scheme-key',
+                'where': S.ref(ask),
+                'detail': f'the paper prints this ask as '
+                          f'{block.item or ""}{f"({block.roman})" if block.roman else ""} '
+                          f'and the paper\'s name is the one cited'})
+    for unit, printed, got, _n in S.checksum():
+        if printed is not None and printed != got:
+            flags.append({
+                'type': 'tariff-checksum',
+                'where': f'{S.year} {S.level.upper()} {unit}',
+                'detail': f'the scheme prices its asks {got} against the '
+                          f'{printed} it prints on the unit head'})
+    return flags
+
+def census_lat(subject, year, level):
+    """Latin: the printed ask, in the route the paper prints it under.
+
+    THE DENOMINATOR IS THE PAPER. `lat_paper.LatPaper` reads it; the scheme is
+    read beside it only so the two can be CHECKED against each other, never so
+    the scheme can supply an ask the paper does not print.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from lat_paper import LatPaper                             # noqa: E402
+    from lat_scheme import LatScheme                           # noqa: E402
+
+    P = LatPaper(year, level, subject)
+    S = LatScheme(year, level, subject)
+    texts = {}
+    for ask in P.asks():
+        texts[ask.key] = f'{ask.stem} {ask.text}'.strip()
+    return set(texts), texts, [P.path], P, S
+
+
+# What Question 1's cover prints, and what the routes beneath it must add to.
+def lat_flags(P, S):
+    """Everything that would be true if both readers read the same paper."""
+    flags = []
+    asks = P.asks()
+    paper_keys = {a.key for a in asks}
+    scheme = S.entries()
+
+    # 1. Every question the paper sets is priced on its own head, the five
+    #    heads add up to the total printed on the cover, and each of Question
+    #    1 Section B's items is priced on its own line to that same total.
+    qs = sorted({a.q for a in asks})
+    if qs != [1, 2, 3, 4, 5]:
+        flags.append({'type': 'question-gap', 'where': 'paper',
+                      'detail': f'questions found: {qs}'})
+    missing = [q for q in qs if q not in P.question_marks]
+    if missing:
+        flags.append({'type': 'unpriced-question', 'where': 'paper',
+                      'detail': f'no printed tariff on the head of Q{missing}'})
+    cover = _lat_cover_marks(P)
+    printed = sum(P.question_marks.values())
+    if cover and printed != cover:
+        flags.append({'type': 'marks-checksum', 'where': 'paper',
+                      'detail': f'the five question heads print {printed} '
+                                f'marks, the cover prints {cover}'})
+    for q in qs:
+        for route in sorted({a.section for a in asks if a.q == q and a.section}):
+            items = [a for a in asks if a.q == q and a.section == route
+                     and a.roman and not a.letter and a.marks
+                     and not a.inherited]
+            if len(items) < 3:
+                continue      # a route of one or two asks states no run to sum
+            total = sum(a.marks for a in items)
+            want = P.question_marks.get(q)
+            if want and total != want:
+                flags.append({
+                    'type': 'marks-checksum', 'where': f'Q{q} Section {route}',
+                    'detail': f'its {len(items)} printed items sum to {total}, '
+                              f'the question head prints {want}'})
+
+    # 2. Every address the scheme prices is one the paper prints, or the
+    #    parent of one. A scheme entry with no printed ask beneath it is
+    #    either a head the reader mis-keyed or an answer to a question nobody
+    #    sat, and both need saying out loud.
+    for key in sorted(scheme, key=str):
+        if key in paper_keys:
+            continue
+        if any(p[1] == key[1]
+               and (key[0] is None or p[0] == key[0])
+               and (key[2] is None or p[2] == key[2])
+               and (key[3] is None or p[3] == key[3]) for p in paper_keys):
+            # The scheme priced a level ABOVE the printed ask. A route-less
+            # (None, q, None, None) is the question's own head — "Answer
+            # Section A or Section B in this question:- [75]", followed by the
+            # positive-marking preamble — which is rubric, not an orphan.
+            continue
+        if not _lat_states_content(scheme[key]):
+            continue          # a head or a rubric, which prices nothing
+        flags.append({'type': 'scheme-orphan', 'where': str(key),
+                      'detail': 'the scheme states content at an address the '
+                                'paper does not print'})
+    return flags
+
+
+def _lat_cover_marks(P):
+    """The total the paper prints on its own front page."""
+    for _page, text in P._stream()[:12]:
+        m = re.search(r'\(?(\d{3})\s*marks\)?', text, re.I)
+        if m:
+            return int(m.group(1))
+    return None
+
+
+def _lat_states_content(entry):
+    """Does this scheme entry say anything beyond its own arithmetic?"""
+    for line in entry.lines:
+        bare = re.sub(r'[^A-Za-z ]+', ' ', line)
+        words = [w for w in bare.split() if len(w) > 3]
+        if len(words) >= 4:
+            return True
+    return False
+
+def census_agr(subject, year, level):
+    """Ancient Greek: the printed ask, in the route the paper prints it under.
+
+    THE DENOMINATOR IS THE PAPER. `agr_paper.AgrPaper` reads it — including
+    eleven sittings for which the SEC published no marking scheme at all, which
+    are censused exactly like the rest and excluded, never dropped. The scheme
+    is read beside it only so the two can be CHECKED against each other.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from agr_paper import AgrPaper                             # noqa: E402
+    from agr_scheme import AgrScheme, has_scheme               # noqa: E402
+
+    P = AgrPaper(year, level, subject)
+    S = AgrScheme(year, level, subject) if has_scheme(year, level, subject) \
+        else None
+    texts = {a.key: f'{a.stem} {a.text}'.strip() for a in P.asks()}
+    return set(texts), texts, [P.path], P, S
+
+
+def agr_flags(P, S):
+    """Where the paper and the scheme disagree about what was asked."""
+    flags = list(P.flags)
+    asks = P.asks()
+    qs = sorted({a.q for a in asks})
+    want = [1, 2, 3, 4] if P.level == 'hl' else [1, 2, 3]
+    if qs != want:
+        flags.append({'type': 'question-gap', 'where': 'paper',
+                      'detail': f'questions found: {qs}, expected {want}'})
+    cover = P.cover_marks()
+    printed = sum(P.question_marks.values())
+    if cover and printed and printed != cover:
+        flags.append({'type': 'marks-checksum', 'where': 'paper',
+                      'detail': f'the question heads print {printed} marks, '
+                                f'the cover prints {cover}'})
+    if S is None:
+        # Not a fault: the SEC published no scheme for this sitting. Saying so
+        # is what keeps its asks from looking like a reader failure.
+        flags.append({'type': 'no-scheme', 'where': f'{P.year} {P.level}',
+                      'detail': 'the SEC published no marking scheme for this '
+                                'sitting; every ask on it is excluded'})
+        return flags
+    entries = S.entries()
+    paper_keys = {a.key for a in asks}
+    for key in sorted(entries, key=str):
+        entry = entries[key]
+        if key in paper_keys or not (entry.answer or entry.marks):
+            continue
+        if any(p[1] == key[1] and (key[0] is None or p[0] == key[0])
+               and (key[2] is None or p[2] == key[2])
+               and (key[3] is None or p[3] == key[3]) for p in paper_keys):
+            continue          # priced or answered a level ABOVE the printed ask
+        flags.append({'type': 'scheme-orphan', 'where': key_label(key),
+                      'detail': 'the scheme states content at an address the '
+                                'paper does not print'})
+    for ask in asks:
+        if ask.kind not in ('comprehension', 'literature'):
+            continue          # the translation asks; the scheme prices the source
+        entry = entries.get(ask.key)
+        if entry is None or entry.marks is None:
+            flags.append({'type': 'unpriced-ask',
+                          'where': key_label(ask.key, P.subject),
+                          'detail': 'the paper prints this ask and the scheme '
+                                    'prices no ask at that address'})
+    return flags
+
+
+def census_mgr(subject, year, level):
+    """Modern Greek: the three printed groups and the asks under them."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from mgr_paper import MgrPaper                             # noqa: E402
+    from mgr_scheme import MgrScheme, has_scheme               # noqa: E402
+
+    P = MgrPaper(year, level, subject)
+    S = MgrScheme(year, level, subject) if has_scheme(year, level, subject) \
+        else None
+    texts = {a.key: f'{a.stem} {a.text}'.strip() for a in P.asks()}
+    return set(texts), texts, [P.path], P, S
+
+
+def mgr_flags(P, S):
+    """Everything that would be true if both readers read the same paper."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from mgr_scheme import answers                             # noqa: E402
+    flags = list(P.flags)
+    secs = [s for s in dict.fromkeys(a.section for a in P.asks())]
+    total = sum(P.section_marks.get(s, 0) for s in secs)
+    cover = P.cover_marks()
+    if cover and total and total != cover:
+        flags.append({'type': 'marks-checksum', 'where': 'paper',
+                      'detail': f'its {len(secs)} group heads print {total} '
+                                f'marks, the cover prints {cover}'})
+    for ask in P.asks():
+        if ask.marks is None:
+            flags.append({'type': 'unpriced-ask',
+                          'where': key_label(ask.key),
+                          'detail': 'neither the ask nor the group head it '
+                                    'sits under states a tariff'})
+    if S is None:
+        return flags
+    _got, faults = answers(P.year, P.level, P.subject)
+    return flags + faults
+
+
+def census_man(subject, year, level):
+    """Mandarin Chinese: the written booklet and the listening booklet beside it.
+
+    THE DENOMINATOR IS THE PAPER, and both booklets are read: the Listening
+    Comprehension Test is never carded — the recording is the ask — but a
+    hundred marks of asks it prints belong in the denominator, and the way to
+    be sure of that is to read them rather than to assume them.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from man_paper import ManPaper                               # noqa: E402
+    from man_scheme import ManScheme, has_scheme                 # noqa: E402
+
+    P = ManPaper(year, level, subject)
+    S = ManScheme(year, level, subject) if has_scheme(year, level, subject) \
+        else None
+    texts = {ask.key: ask.full_text for ask in P.asks()}
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
+
+def man_flags(P, S):
+    """Where the paper and the scheme disagree about what was asked.
+
+    The two documents are read independently — the paper for its asks, the
+    scheme for its prices — so every ask one holds and the other does not is a
+    reader fault, an SEC misprint or a real difference, and all three get
+    looked at rather than reconciled away. This is Law 3's independent check:
+    the census's own continuity flags see only interior gaps, and an ask keyed
+    under its NEIGHBOUR's letter leaves no gap at all.
+    """
+    flags = list(P.flags)
+    if S is None:
+        return flags
+    texts = {a.key: a.full_text for a in P.asks()}
+    S.split_against(texts.get)
+    flags += S.flags
+    paper = {a.key for a in P.reading_asks()}
+    scheme = {a.key for a in S.leaves() if a.unit == 'reading'}
+    # An ask the scheme prices ONE LEVEL UP is priced, not missing: 2023 Higher
+    # sets Question 1(a) as a four-row table on the paper and the scheme
+    # prices the letter once, "(4 x 2 marks)".
+    parents = {(s, q, letter) for s, q, letter, _r in scheme}
+    order = (lambda k: tuple('' if x is None else str(x) for x in k))
+    for key in sorted(paper - scheme, key=order):
+        if (key[0], key[1], key[2]) in parents:
+            continue
+        flags.append({'type': 'ask-not-in-scheme',
+                      'where': f'{P.year} {P.level} {key_label(key)}',
+                      'detail': 'the paper prints this ask and the scheme '
+                                'prices nothing at its address'})
+    for key in sorted(scheme - paper, key=order):
+        if any(k[:3] == key[:3] for k in paper):
+            continue
+        flags.append({'type': 'ask-not-in-paper',
+                      'where': f'{P.year} {P.level} {key_label(key)}',
+                      'detail': 'the scheme prices this ask and no paper '
+                                'prints it'})
+    return flags
+
+
+def census_dcg(subject, year, level):
+    """Design & Communication Graphics: both booklets of one sitting.
+
+    THE DENOMINATOR IS THE PAPER, and both booklets are read. The SEC's
+    component code is not the booklet's identity -- 2011 files Section A as
+    000 and Sections B and C as 014, the other way round from every other year
+    -- so trusting the code would have censused one sitting's Section A twice
+    and its Sections B and C never, which is the wholesale loss Law 3 exists
+    to catch.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from dcg_paper import load as load_paper                    # noqa: E402
+    from dcg_scheme import DcgScheme, has_scheme                # noqa: E402
+
+    P = load_paper(year, level, subject)
+    S = DcgScheme(year, level, subject) if has_scheme(year, level, subject) \
+        else None
+    texts = {ask.key: ask.full_text for ask in P.asks()}
+    return set(texts), texts, list(P.files), P, S
+
+
+def dcg_flags(P, S):
+    """Where the paper and the scheme disagree about what was asked.
+
+    The two documents are read independently -- the paper for its asks, the
+    scheme for its prices -- so Law 3's independent check is simply to set the
+    two ask sets beside each other. The census's own continuity flags see only
+    interior gaps, and a part keyed under its NEIGHBOUR's letter leaves none.
+
+    The paper's own shape is asserted first, because this subject has one and
+    it never varies: Sections A, B and C print four, three and five questions
+    in every one of the 33 sittings on disk.
+    """
+    flags = list(P.flags)
+    import dcg_paper as DP                                      # noqa: E402
+    shape = collections.Counter(k[0] for k in P.questions)
+    for section, want in DP.SECTION_SHAPE.items():
+        if shape[section] != want:
+            flags.append({
+                'type': 'section-shape',
+                'where': f'{P.year} {P.level} Section {section}',
+                'detail': f'{shape[section]} question(s) printed, every other '
+                          f'sitting prints {want}'})
+    if S is None:
+        flags.append({'type': 'no-scheme',
+                      'where': f'{P.year} {P.level}',
+                      'detail': 'no marking scheme on disk for this sitting'})
+        return flags
+    flags += S.flags
+    # The independent marks check, and the one this subject can actually make:
+    # the PAPER states on its cover what a question of each section is worth,
+    # and the SCHEME prints a "Total =" at the foot of every question. Two
+    # documents, read by two readers, that have to agree 12 times a sitting.
+    for key in sorted(set(P.questions) & set(S.questions)):
+        want = P.section_marks.get(key[0])
+        got = S.questions[key].total
+        if want and got and want != got:
+            flags.append({
+                'type': 'question-total',
+                'where': f'{P.year} {P.level} {key[0]}-{key[1]}',
+                'detail': f'the scheme totals this question at {got} and the '
+                          f'paper\'s cover prices a Section {key[0]} question '
+                          f'at {want}'})
+    for key, fault in S.faults():
+        flags.append({'type': 'scheme-arithmetic',
+                      'where': f'{P.year} {P.level} {key[0]}-{key[1]}',
+                      'detail': fault})
+    # A question the paper prints and the scheme never prices, or the reverse.
+    paper_q = set(P.questions)
+    scheme_q = set(S.questions)
+    for key in sorted(paper_q - scheme_q):
+        flags.append({'type': 'question-not-in-scheme',
+                      'where': f'{P.year} {P.level} {key[0]}-{key[1]}',
+                      'detail': 'the paper sets this question and the scheme '
+                                'prices nothing under it'})
+    for key in sorted(scheme_q - paper_q):
+        flags.append({'type': 'question-not-in-paper',
+                      'where': f'{P.year} {P.level} {key[0]}-{key[1]}',
+                      'detail': 'the scheme prices this question and no '
+                                'booklet prints it'})
+    # And the level below: a part the paper prints that the scheme prices
+    # nothing for. Checked on WORDING, not on the scheme's own letters --
+    # Law 4: the scheme numbers independently of the paper, and 2021 Ordinary
+    # B-3 letters "End View" (b) where the paper letters it (c). Checked on
+    # letters this fired on three sittings whose scheme prices every ask,
+    # which is a flag that trains a reader to ignore flags.
+    from dcg_scheme import CUE_FLOOR, cue_score                 # noqa: E402
+    for key in sorted(paper_q & scheme_q):
+        units = S.questions[key].units
+        if not units:
+            continue
+        for letter, roman, text in P.questions[key]['parts']:
+            if roman is not None or not text:
+                continue
+            if any(u.letter == letter for u in units):
+                continue
+            if max((cue_score(u.title, text) for u in units), default=0.0) \
+                    >= CUE_FLOOR:
+                continue
+            flags.append({'type': 'part-not-in-scheme',
+                          'where': f'{P.year} {P.level} {key[0]}-{key[1]}'
+                                   f'({letter})',
+                          'detail': 'the paper letters this part and no '
+                                    'priced unit of the scheme carries its '
+                                    'address or its words'})
+    return flags
+
+
+def census_pl(subject, year, level):
+    """Polish: the written booklet and, from 2022, the listening booklet.
+
+    THE DENOMINATOR IS THE PAPER, and this paper can be read from the paper
+    alone. Its reading passage is set in numbered paragraphs, exactly as
+    French's is, but it letters its questions "(a)" to "(l)" — so no printed
+    marker is ambiguous between passage and ask, and no wording has to be
+    scored to find one. The scheme is read beside it to price the asks and to
+    be CHECKED against them, which is what pl_flags does.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from pl_paper import PlPaper                                # noqa: E402
+    from pl_scheme import PlScheme                              # noqa: E402
+
+    P = PlPaper(year, level, subject)
+    S = PlScheme(year, level, subject)
+    texts = {ask.key: ask.full_text for ask in P.all_asks()}
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
+
+def pl_flags(P, S):
+    """Where the paper and the scheme disagree about what was asked.
+
+    The two documents are read independently — the paper for its asks, the
+    scheme for its prices — so every ask one holds and the other does not is a
+    reader fault, an SEC misprint or a real difference, and all three have to
+    be looked at rather than reconciled away. This is Law 3's independent
+    check: the census's own continuity flags see only interior gaps, and an
+    ask keyed under its NEIGHBOUR's letter leaves no gap at all.
+    """
+    flags = list(P.flags)
+    paper = {a.key for a in P.reading_asks()}
+    scheme = {a.key for a in S.reading()}
+    # An ask the scheme prices ONE LEVEL UP is priced, not missing. 2022 Higher
+    # numbers Question 2(i)'s four true/false statements (i) to (iv) and the
+    # scheme prices the table once, "(4 x 1m)", printing its statements with no
+    # markers at all; the same shape answers every tick-one-box question in the
+    # corpus. Counting those as unpriced reported five flags on a table the SEC
+    # priced in full.
+    priced_parents = {(a.section, a.q, a.letter) for a in S._asks
+                      if a.roman is None and a.per is not None}
+    for key in sorted(paper - scheme, key=str):
+        if (key[0], key[1], key[2]) in priced_parents:
+            continue
+        flags.append({'type': 'unpriced-ask', 'where': key_label(key),
+                      'detail': 'the paper prints this ask and the scheme '
+                                'prices no ask at that address'})
+    paper_parents = {(a.section, a.q, a.letter) for a in P.reading_asks()}
+    for key in sorted(scheme - paper, key=str):
+        if (key[0], key[1], key[2]) in paper_parents:
+            continue                     # the paper numbers what the scheme
+        flags.append({'type': 'orphan-scheme-ask', 'where': key_label(key),
+                      'detail': 'the scheme prices this address and the paper '
+                                'prints no ask there'})
+    for ask in S.reading():
+        if ask.fault:
+            flags.append({'type': 'tariff-disagreement',
+                          'where': key_label(ask.key), 'detail': ask.fault})
+    return flags
+
+
+def census_eu(subject, year, level):
+    """Portuguese, Romanian and Dutch: the written booklet and, where the SEC
+    sets one, the Listening Comprehension booklet.
+
+    THE DENOMINATOR IS THE PAPER, and this paper can be read from the paper
+    alone: its reading passage is set in numbered paragraphs, exactly as
+    French's is, but it letters its questions "(a)" to "(l)", so no printed
+    marker is ambiguous between passage and ask. The scheme is read beside it
+    to price the asks and to be CHECKED against them, which is what eu_flags
+    does.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from eu_paper import EuPaper                                # noqa: E402
+    from eu_scheme import EuScheme                              # noqa: E402
+
+    P = EuPaper(year, level, subject)
+    try:
+        S = EuScheme(year, level, subject)
+    except FileNotFoundError:
+        # THE DENOMINATOR IS THE PAPER. Danish 2010 and Slovenian 2022 are
+        # sittings the corpus holds a question paper for and no scheme, and
+        # dropping them would take ten and thirteen printed asks out of the
+        # count this bank measures itself against. The paper is censused; the
+        # asks are refused, one by one, in eu_all.
+        S = None
+    texts = {ask.key: ask.full_text for ask in P.all_asks()}
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
+def census_lt(subject, year, level):
+    """Lithuanian, Latvian and Czech: the booklets one sitting prints.
+
+    THE DENOMINATOR IS THE PAPER, and these papers can be read from the paper
+    alone: they letter their questions "(a)" to "(k)" and number their reading
+    passages, so no printed marker is ambiguous between passage and ask, and
+    no wording has to be scored to find one. The scheme is read beside it to
+    price the asks and to be CHECKED against them, which is what lt_flags
+    does.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from lt_paper import LtPaper                                # noqa: E402
+    from lt_scheme import LtScheme                              # noqa: E402
+
+    P = LtPaper(year, level, subject)
+    S = LtScheme(year, level, subject)
+    texts = {ask.key: ask.full_text for ask in P.all_asks()}
+    files = [P.path] + ([P.aural_path] if P.aural_path else [])
+    return set(texts), texts, files, P, S
+
+
+def eu_flags(P, S):
+    """Where the paper and the scheme disagree about what was asked.
+
+    The two documents are read independently — the paper for its asks, the
+    scheme for its prices — so every ask one holds and the other does not is a
+    reader fault, an SEC misprint or a real difference, and all three have to
+    be looked at rather than reconciled away.
+
+    Plus the check that only this family can make: a MODERN scheme prints the
+    total on each question's own head, and the asks the reader priced under
+    that question must add up to it. It is the arithmetic that decides whether
+    three answers priced "4 marks" each are three alternative wordings of one
+    four-mark ask or four items of a twelve-mark list, and a question whose
+    total does not close is flagged rather than guessed at.
+    """
+    from eu_scheme import pairs_by_question                    # noqa: E402
+
+    flags = list(P.flags)
+    reading = P.reading_asks()
+    made, _how = pairs_by_question(reading, S.reading())
+    matched = {a.key for a in made.values() if a is not None}
+    priced_parents = {(a.section, a.q, a.letter) for a in S._asks
+                      if a.roman is None and a.per is not None}
+    for ask in reading:
+        if made.get(ask.key) is not None:
+            continue
+        if (ask.section, ask.q, ask.letter) in priced_parents:
+            continue
+        flags.append({'type': 'unpriced-ask', 'where': key_label(ask.key),
+                      'detail': 'the paper prints this ask and the scheme '
+                                'prices no ask that pairs with it'})
+    paper_parents = {(a.section, a.q, a.letter) for a in reading}
+    for ask in S.reading():
+        if ask.key in matched:
+            continue
+        if (ask.section, ask.q, ask.letter) in paper_parents:
+            continue
+        flags.append({'type': 'orphan-scheme-ask', 'where': key_label(ask.key),
+                      'detail': 'the scheme prices this ask and the paper '
+                                'prints none that pairs with it'})
+    for ask in S.reading():
+        if ask.fault:
+            flags.append({'type': 'tariff-disagreement',
+                          'where': key_label(ask.key), 'detail': ask.fault})
+    # The CLASSIC paper's own arithmetic, which is the independent check for
+    # the two subjects whose scheme prints no marks at all: the tariffs the
+    # paper prints against the first part's asks must add up to the total it
+    # prints on that part's own head.
+    if P.era == 'classic':
+        for head, (want, _denom) in P._part_totals().items():
+            asks = [a for a in P.reading_asks() if a.tariff]
+            if not asks:
+                continue
+            got = sum(a.tariff[2] for a in asks)
+            if got != want:
+                flags.append({'type': 'part-total', 'where': head,
+                              'detail': f'the paper heads this part {want} '
+                                        f'and the asks it prices under it add '
+                                        f'to {got}'})
+            break
+    for (section, q), want, got in S.unsettled:
+        flags.append({'type': 'question-total',
+                      'where': f'Section {section} Q{q}',
+                      'detail': f'the scheme heads this question {want} marks '
+                                f'and the asks it prices under it add to '
+                                f'{got}'})
+    return flags
+
+
+def lt_flags(P, S):
+    """Where the paper and the scheme disagree about what was asked.
+
+    The two documents are read independently — the paper for its asks, the
+    scheme for its prices — so every ask one holds and the other does not is a
+    reader fault, an SEC omission or a real difference, and all three have to
+    be looked at rather than reconciled away. This is Law 3's independent
+    check: the census's own continuity flags see only interior gaps, and an
+    ask keyed under its NEIGHBOUR's letter leaves no gap at all.
+    """
+    flags = list(P.flags)
+    paper = {a.key for a in P.reading_asks()}
+    scheme = {a.key for a in S.reading()}
+    # An ask the scheme prices ONE LEVEL UP is priced, not missing: the
+    # true/false tables are priced on the letter, "(3 x 1)", with their
+    # statements printed under it and no marks beside any of them.
+    priced_parents = {(a.section, a.q, a.letter) for a in S._asks
+                      if a.roman is None and a.per is not None}
+    for key in sorted(paper - scheme, key=str):
+        if (key[0], key[1], key[2]) in priced_parents:
+            continue
+        flags.append({'type': 'unpriced-ask', 'where': key_label(key),
+                      'detail': 'the paper prints this ask and the scheme '
+                                'prices no ask at that address'})
+    paper_parents = {(a.section, a.q, a.letter) for a in P.reading_asks()}
+    # A question the paper prints WHOLE, with no lettered part under it. The
+    # old examination's five-mark questions are answered by a model paragraph,
+    # and several Latvian schemes set that paragraph out as a lettered list of
+    # their own — "a) J.Mažeiks veicināja neatkarības procesu…", "b) 1991.gadā
+    # …" — which is the scheme organising ITS answer, not an ask the paper
+    # forgot to print. Reported as orphans it was twenty-one flags in one
+    # sitting saying the same thing about a paper with nothing missing.
+    whole = {(a.section, a.q) for a in P.reading_asks() if a.letter is None}
+    for key in sorted(scheme - paper, key=str):
+        if (key[0], key[1], key[2]) in paper_parents:
+            continue                     # the paper numbers what the scheme
+        if (key[0], key[1]) in whole and key[3] is None:
+            continue                     # the scheme's own model answer, lettered
+        flags.append({'type': 'orphan-scheme-ask', 'where': key_label(key),
+                      'detail': 'the scheme prices this address and the paper '
+                                'prints no ask there'})
+    for ask in S.reading():
+        if ask.fault:
+            flags.append({'type': 'tariff-disagreement',
+                          'where': key_label(ask.key), 'detail': ask.fault})
+    return flags
+
+def census_clas(subject, year, level):
+    """Classical Studies: the printed ask, in whichever of its two papers.
+
+    THE DENOMINATOR IS THE PAPER. `cl_paper.ClPaper` reads it — the ten-topic
+    paper of 2021-2022 and the Section A/B paper of 2023-2025 — and the scheme
+    is read beside it only so the two can be CHECKED against each other, never
+    so the scheme can supply an ask the paper does not print.
+
+    The check is unusually strong here, because the two documents share an
+    address. In the old paper every one of the 388 printed parts has exactly
+    one scheme entry at the same (topic, roman, letter) and no scheme entry is
+    left over; in the new one every scheme entry lands on a printed ask, at its
+    own address or at the letter or question it was priced under. `clas_flags`
+    asserts both, and asserts the tariffs agree.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from cl_paper import ClPaper                               # noqa: E402
+    from cl_scheme import ClScheme                             # noqa: E402
+
+    P = ClPaper(year, level, subject)
+    S = ClScheme(year, level, subject)
+    texts = {}
+    for ask in P.asks():
+        texts[ask.key] = f'{ask.stem} {ask.text}'.strip()
+    return set(texts), texts, [P.path], P, S
+
+
+def clas_flags(P, S):
+    """Everything that would be true if both readers read the same paper."""
+    flags = []
+    paper_keys = {a.key for a in P.asks()}
+    scheme = S.by_key()
+    for key in sorted(scheme, key=str):
+        if key in paper_keys:
+            continue
+        # The scheme may price a LETTER whole where the paper prints romans
+        # under it, or a QUESTION whole where the paper prints alternatives.
+        if any(p[:3] == key[:3] for p in paper_keys):
+            continue
+        if key[2] is None and any(p[:2] == key[:2] for p in paper_keys):
+            continue
+        flags.append({'type': 'scheme-orphan', 'where': str(key),
+                      'detail': 'the scheme prices an address the paper '
+                                'does not print'})
+    if P.era == 'topics':
+        totals = collections.defaultdict(int)
+        for ask in P.asks():
+            totals[ask.section] += ask.marks or 0
+        if len(totals) != 40:
+            flags.append({'type': 'question-count', 'where': 'topics',
+                          'detail': f'{len(totals)} questions, expected 40 '
+                                    '(ten topics x four questions)'})
+        for section, total in sorted(totals.items()):
+            if total != 50:
+                flags.append({'type': 'marks-checksum', 'where': section,
+                              'detail': f'parts sum to {total}, the paper '
+                                        'prints fifty marks per question'})
+        for key in sorted(paper_keys, key=str):
+            if key not in scheme:
+                flags.append({'type': 'unpriced-ask',
+                              'where': key_label(key),
+                              'detail': 'no scheme entry at this address'})
+    else:
+        qs = sorted({a.q for a in P.asks() if a.q})
+        if qs != list(range(1, 17)):
+            flags.append({'type': 'question-gap', 'where': 'Questions',
+                          'detail': f'questions found: {qs}'})
+        missing = [q for q in range(1, 11)
+                   if (None, q) not in P.question_marks]
+        if missing:
+            flags.append({'type': 'unpriced-question', 'where': 'Section A',
+                          'detail': f'no printed tariff on Q{missing}'})
+    for key in sorted(paper_keys & set(scheme), key=str):
+        ask = next(a for a in P.asks() if a.key == key)
+        entry = scheme[key]
+        if ask.marks and entry.marks and ask.marks != entry.marks \
+                and not ask.inherited \
+                and key not in _CLAS_TARIFF_SPLITS.get(
+                    (P.year, P.level), ()):
+            flags.append({'type': 'tariff-disagreement',
+                          'where': key_label(key),
+                          'detail': f'paper prints {ask.marks}, scheme '
+                                    f'prints {entry.marks}'})
+    return flags
+
+
+# Where the SEC's own two documents price the SAME printed part differently.
+# Every one was read off both PDFs before it was entered here, and each is one
+# of two shapes:
+#
+#   * the two documents SPLIT a fifty-mark question differently and both add
+#     up — 2021 Higher Topic 1(i) is 40+10 on the paper and 35+15 in the
+#     scheme, 2021 Higher Topic 4(ii) is 20+10+20 against 20+15+15;
+#   * the scheme's printed total contradicts the scheme's OWN split, and the
+#     split agrees with the paper — 2022 Higher Topic 8(iii)(d) reads
+#     "(8, 7.) (20 marks)" over a part the paper prices at 15, and 2022
+#     Ordinary Topic 9(iv)(b) reads "(10, 10.) (10 marks)" over a part the
+#     paper prices at 20. In both the sub-totals are right and the total is
+#     the misprint.
+#
+# The paper wins in every case, which is the bank's rule when the two
+# disagree, and a card carries the paper's tariff.
+_CLAS_TARIFF_SPLITS = {
+    (2021, 'hl'): {('Topic 1(i)', None, 'a', None),
+                   ('Topic 1(i)', None, 'b', None),
+                   ('Topic 4(ii)', None, 'b', None),
+                   ('Topic 4(ii)', None, 'c', None),
+                   ('Topic 4(iii)', None, 'b', None)},
+    (2022, 'hl'): {('Topic 8(iii)', None, 'd', None)},
+    (2022, 'ol'): {('Topic 9(iv)', None, 'b', None)},
+}
+
+
+def census_re(subject, year, level):
+    """Religious Education: its own reader, for the reasons re_paper.py gives.
+
+    The generic sections walker cannot see this paper. It requires a question
+    head before it will key a part, and eight of the ten sections here print
+    none — Section B opens straight into "(a)". Reading this sitting with it
+    censuses Section A alone and calls the other 80% of the paper absent.
+    """
+    from re_paper import RePaper                             # noqa: E402
+    P = RePaper(year, level)
+    texts = {k: v for k, v in P.asks.items()}
+    return set(texts), texts, [P.path]
+
+
+def census_history(subject, year, level, field):
+    """History: its own reader, for the reasons hist_paper.py gives.
+
+    Two things the generic sections walker cannot do here. It reads ONE paper
+    per sitting, and History sets two — the Later Modern and Early Modern
+    fields of study. And it keys an ask by (section, question), where a History
+    ask is addressed by section, TOPIC, Ordinary part and question, because
+    every topic on the paper restarts at 1.
+    """
+    from hist_paper import HistPaper                         # noqa: E402
+    P = HistPaper(year, level, field)
+    return set(P.asks), dict(P.asks), [P.path], dict(P.marks), P.cover_marks
+
+
+def re_cover_marks(path):
+    """The total the paper prints on its own cover.
+
+    Religious Education has no per-question checksum to sum: a candidate
+    answers four of the ten sections, so adding up every printed tariff counts
+    questions nobody sits. The cover states the total outright.
+    """
+    import pymupdf
+    with pymupdf.open(path) as doc:
+        m = re.search(r'Total Marks\s+(\d+)', doc[0].get_text())
+    return int(m.group(1)) if m else None
+# ---------------------------------------------------------------- LCVP ----
+# LCVP prints every question head as "Q.1", never "1." or "Question 1", and
+# glues it onto whatever precedes it: "PART 2 Q.4 ...", "Answer all three
+# questions. Q.1 ...", and two questions in one block ("... (2 marks) Q.3 ...").
+LCVP_HEAD = re.compile(r'Q\.\s*(\d{1,2})\b')
+LCVP_SPLIT = re.compile(r'\s*(?=Q\.\s*\d{1,2}\b)')
+# Section C reprints every question as a contents listing — "Q.4 Pages 27 to
+# 29 Ireland has embraced diversity ... (a) ... (b) ..." — before setting the
+# questions themselves. Read as questions those rows would walk the counter to
+# Q.7 and every real question after them would be rejected as going backwards,
+# which is exactly how Business lost four sittings' Section 1. The listing rows
+# are the ones that carry their page range, and no real head does.
+LCVP_INDEX = re.compile(r'\bPages\s+\d+\s+to\s+\d+', re.I)
+# A section header the SEC sets over the section itself always prices it
+# ("Section A Audio Visual 30 marks"). The cover page's examiner mark table
+# and the instructions page name the same sections WITHOUT their marks, and
+# the cover table also prints bare "Q.1".."Q.6" cells, which walked the
+# counter to 6 before the paper began and threw all of Section A away.
+LCVP_SECTION = re.compile(r'^Section\s+([A-C])\b(.{0,200})', re.S)
+LCVP_MARKS = re.compile(r'\(?\s*(\d{1,3})\s*marks?\b\s*\)?', re.I)
+LCVP_FURNITURE = re.compile(
+    r'^(?:Leaving Certificate Vocational Programme'
+    r'|Examiner only'
+    r'|page running'
+    r'|Do not write on this page'
+    r'|You may use this page for extra work'
+    r'|Make sure to label extra work'
+    r'|Copyright notice'
+    r'|Answer all (?:eight|three) questions'
+    r'|Answer your chosen questions'
+    r'|Answer any four questions'
+    r'|This section has (?:six|seven) questions'
+    r'|To help you decide'
+    # "PART 2" / "Part 3" head the three showings of the Section A DVD; they
+    # are not asks and, left in, they land in the previous question's text.
+    r'|(?:PART|Part)\s+\d\s*$)', re.I)
+
+
+def census_lcvp(subject, year, level):
+    """LCVP's own section walker. See LCVP_HEAD/LCVP_INDEX above for why."""
+    root = PP.papers_dir(subject)
+    files = sorted(os.path.join(root, f) for f in os.listdir(root)
+                   if re.fullmatch(rf'{year}-{level}-paper\.pdf', f))
+    if not files:
+        raise FileNotFoundError(f'no {year} {level} paper for {subject}')
+
+    chunks = [c.strip() for path in files for block in PP._blocks(path)
+              for c in LCVP_SPLIT.split(block) if c.strip()]
+
+    parts, stems, marks = {}, {}, {}
+    section = q = letter = roman = None
+    started = False          # nothing counts before the first priced section
+    index = False            # inside Section C's contents listing
+    if True:
+        if True:
+            for position, chunk in enumerate(chunks):
+                sh = LCVP_SECTION.match(chunk)
+                if sh and 'Section' not in sh.group(2) \
+                        and LCVP_MARKS.search(sh.group(2)):
+                    # 2021 and 2022 head their Section B/C pages "Section B –
+                    # Case Study and Section C – General Questions 100 marks",
+                    # a cover line for both; the second "Section" rejects it.
+                    if section is None or sh.group(1) >= section:
+                        section, q, letter, roman = sh.group(1), None, None, None
+                        started, index = True, False
+                    continue
+                if not started:
+                    continue
+                head = LCVP_HEAD.match(chunk)
+                if head:
+                    index = bool(LCVP_INDEX.search(chunk))
+                    if index:
+                        continue
+                    found = int(head.group(1))
+                    if q is not None and found <= q:
+                        continue          # a repeat, not a new question
+                    q, letter, roman = found, None, None
+                    rest = chunk[head.end():].strip()
+                    # The question's own tariff, wherever the SEC set it: after
+                    # the ask in Sections A and B ("Q.1 Name the manager of the
+                    # charity shop. (1 mark)") and before it in Section C
+                    # ("Q.1 25 marks Marketing is an essential part of
+                    # business."). Leftmost wins, so a part's own marks further
+                    # down the same block never displace the question's.
+                    m = LCVP_MARKS.search(rest)
+                    if m:
+                        marks[(section, q)] = int(m.group(1))
+                        if m.start() == 0:
+                            rest = rest[m.end():].strip()
+                    chunk = rest
+                    if not chunk:
+                        continue
+                if index or q is None:
+                    continue
+                for piece in PP.INLINE_MARKER.split(chunk):
+                    piece = piece.strip()
+                    if not piece or LCVP_FURNITURE.match(piece):
+                        continue
+                    # Sections A and B price the QUESTION and nothing under
+                    # it, so a tariff found anywhere inside one is that
+                    # question's — 2025 sets Q.6's "(6 marks)" on the line
+                    # after its (ii). Section C prices every part, so a token
+                    # found below its head would be a part's and is not taken.
+                    if section in ('A', 'B') and (section, q) not in marks:
+                        m = LCVP_MARKS.search(piece)
+                        if m:
+                            marks[(section, q)] = int(m.group(1))
+                    fl, fr, rest = PP._leading(piece)
+                    if fl or fr:
+                        if fl:
+                            letter, roman = fl, fr
+                        else:
+                            roman = fr
+                        key = (section, q, letter, roman)
+                        parts.setdefault(key, [])
+                        if rest:
+                            parts[key].append(rest)
+                        continue
+                    # 2023 sets the case study's title, "Ballyfert", ABOVE
+                    # its own "Section B Case Study" header, so top-to-bottom
+                    # order hands it to Section A's last question and it
+                    # shipped inside that leaf's text. A short, unpunctuated
+                    # line immediately before a section header belongs to the
+                    # section it names, not to the question it follows.
+                    if len(piece) < 40 and not re.search(r'[.?!:]$', piece) \
+                            and position + 1 < len(chunks) \
+                            and LCVP_SECTION.match(chunks[position + 1]):
+                        continue
+                    stems.setdefault((section, q, letter), []).append(piece)
+
+    parts = {k: v for k, v in parts.items() if any(x.strip() for x in v)}
+    for (section_, q_, letter_), lines in list(stems.items()):
+        if letter_ is not None or not lines:
+            continue
+        if any(k[0] == section_ and k[1] == q_ for k in parts):
+            continue
+        parts[(section_, q_, None, None)] = list(lines)
+    texts = {k: PP.unligature(' '.join(' '.join(v).split()))
+             for k, v in parts.items()}
+    stems = {k: PP.unligature(' '.join(' '.join(v).split()))
+             for k, v in stems.items()}
+    return set(parts), texts, files, marks, stems
 IRISH_DECK = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'irish')
 
 
@@ -498,6 +3417,15 @@ def irish_manifest_files():
 
 
 def census_subject(subject):
+    if subject == 'accounting':
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('accounting_coverage', os.path.join(ROOT, 'scripts', 'markbank', 'accounting', 'coverage.py'))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module.census_accounting()
+    if subject == 'applied-maths':
+        from applied_census import census_applied_maths
+        return census_applied_maths()
     cfg = SUBJECTS.get(subject, {'mode': 'merged'})
     if cfg['mode'] == 'geography':
         path = os.path.join(
@@ -525,8 +3453,9 @@ def census_subject(subject):
                 'marksSum': None, 'marksQuestions': 0, 'flags': [],
             })
         return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
-    if cfg['mode'] == 'art':
-        path = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.json')
+    if cfg['mode'] in ('art', 'politics'):
+        filename = 'politics-census.json' if cfg['mode'] == 'politics' else 'art-census.json'
+        path = os.path.join(ROOT, 'scripts', 'markbank', 'authored', filename)
         payload = json.load(open(path, encoding='utf-8'))
         papers = []
         for source in payload['papers']:
@@ -589,10 +3518,17 @@ def census_subject(subject):
         # Import lazily so the ordinary census remains independent of PyMuPDF
         # until English is actually requested.
         from english_census import build as build_english  # noqa: E402
+        from english_publish import bridged_published_papers  # noqa: E402
         payload = build_english()
+        # A bridged legacy paper is now counted by its published reviewed
+        # tasks (coverage_census_papers below), not by its legacy asks.
+        bridged = bridged_published_papers()
         papers = []
         for source in payload['papers']:
             paper_number = int(source['component']) // 100
+            level_code = {'higher': 'hl', 'ordinary': 'ol'}.get(source['level'], source['level'])
+            if f"english-{source['year']}-{level_code}-p{paper_number}" in bridged:
+                continue
             asks = [ask for ask in payload['asks']
                     if ask['year'] == source['year']
                     and ask['level'] == source['level']
@@ -607,17 +3543,100 @@ def census_subject(subject):
                 } for ask in asks],
                 'marksSum': None, 'marksQuestions': 0, 'flags': [],
             })
+        # Reviewed papers published paper by paper (english_publish.py), and
+        # every remaining non-legacy paper declared open with its candidate
+        # tasks, so the ratchet never hides outstanding English work.
+        from english_publish import coverage_census_papers  # noqa: E402
+        for row in coverage_census_papers():
+            papers.append({
+                'year': row['year'], 'level': row['level'],
+                'paper': f"Paper {row['paper']}",
+                'leafCount': len(row['leaves']),
+                'leaves': [{'key': [cid], 'label': label, 'text': '',
+                            'status': 'authored' if row['status'] == 'published' else 'queued'}
+                           for cid, label in row['leaves']],
+                'marksSum': None, 'marksQuestions': 0, 'flags': [],
+            })
         return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
     papers = []
     for year, level, comps in sittings(subject):
         if cfg['mode'] == 'papers':
             units = [(cfg['papers'].get(c, c), c) for c in comps if c]
+        elif cfg.get('components'):
+            # A subject whose sitting is two SEPARATE papers a candidate
+            # chooses between, rather than two booklets of one paper. Each is
+            # censused whole and named in the citation.
+            units = sorted((cfg['components'][c], c) for c in comps if c)
+            missing = sorted(set(cfg['components']) - {c for c in comps if c})
+            if missing:
+                raise AssertionError(
+                    f'{subject} {year} {level}: no paper on disk for '
+                    f'{", ".join(cfg["components"][m] for m in missing)}')
         else:
             units = [(None, None)]
         for label, comp in units:
+            marks = None
+            cover = None
             try:
-                if cfg['mode'] == 'sections':
+                if cfg.get('walker') == 'history':
+                    parts, texts, files, marks, cover = census_history(
+                        subject, year, level, comp)
+                elif cfg.get('walker') == 'lang':
+                    parts, texts, files, P_, S_, claimed_ = census_lang(
+                        subject, year, level)
+                elif cfg.get('walker') == 'de':
+                    parts, texts, files, P_, S_, claimed_ = census_de(
+                        subject, year, level)
+                elif cfg.get('walker') == 'es':
+                    parts, texts, files, P_, S_ = census_es(subject, year, level)
+                elif cfg.get('walker') == 'italian':
+                    parts, texts, files, P_, S_ = census_it(
+                        subject, year, level)
+                elif cfg.get('walker') == 'ru':
+                    parts, texts, files, P_, S_, claimed_ = census_ru(
+                        subject, year, level)
+                elif cfg.get('walker') == 'ja':
+                    parts, texts, files, P_, S_ = census_ja(
+                        subject, year, level)
+                elif cfg.get('walker') == 'ara':
+                    parts, texts, files, P_, S_ = census_ara(
+                        subject, year, level)
+                elif cfg.get('walker') == 'clas':
+                    parts, texts, files, P_, S_ = census_clas(
+                        subject, year, level)
+                elif cfg.get('walker') == 'lat':
+                    parts, texts, files, P_, S_ = census_lat(
+                        subject, year, level)
+                elif cfg.get('walker') == 'dcg':
+                    parts, texts, files, P_, S_ = census_dcg(
+                        subject, year, level)
+                elif cfg.get('walker') == 'pl':
+                    parts, texts, files, P_, S_ = census_pl(
+                        subject, year, level)
+                elif cfg.get('walker') == 'eu':
+                    parts, texts, files, P_, S_ = census_eu(
+                        subject, year, level)
+                elif cfg.get('walker') == 'lt':
+                    parts, texts, files, P_, S_ = census_lt(
+                        subject, year, level)
+                elif cfg.get('walker') == 'agr':
+                    parts, texts, files, P_, S_ = census_agr(
+                        subject, year, level)
+                elif cfg.get('walker') == 'mgr':
+                    parts, texts, files, P_, S_ = census_mgr(
+                        subject, year, level)
+                elif cfg.get('walker') == 'man':
+                    parts, texts, files, P_, S_ = census_man(
+                        subject, year, level)
+                elif cfg.get('walker') == 're':
+                    parts, texts, files = census_re(subject, year, level)
+                elif cfg.get('walker') == 'lcvp':
+                    parts, texts, files, marks, _stems = census_lcvp(
+                        subject, year, level)
+                elif cfg['mode'] == 'sections':
                     parts, texts, files = census_sections(subject, year, level)
+                elif subject == 'agricultural-science' and year <= AGRI_LEGACY_LAST_YEAR:
+                    parts, texts, files = census_agri_legacy(year, level)
                 else:
                     parts, texts, files = census_merged(subject, year, level, comp)
             except Exception as e:                       # noqa: BLE001
@@ -625,13 +3644,169 @@ def census_subject(subject):
                                'error': f'{type(e).__name__}: {e}'})
                 continue
             leaves = leaves_of(parts)
-            flags = continuity_flags(parts, texts)
-            marks = marks_by_question(files if cfg['mode'] != 'papers' else
-                                      [f for f in files], subject)
+            flags = continuity_flags(
+                parts, texts, subject,
+                continuous=cfg.get('numbering') == 'continuous')
+            flags = [f for f in flags if not short_ask_ok(subject, year, level, f)]
+            if cfg.get('walker') == 'history':
+                # A History paper is almost entirely CHOICE: eleven topics are
+                # printed and a candidate answers two. Adding up every printed
+                # tariff would count questions nobody sits, so the checksum is
+                # the total the paper states on its own cover.
+                marks = {(None, 0): cover} if cover else {}
+            elif cfg.get('walker') == 'lang':
+                flags += lang_flags(P_, S_, claimed_)
+                marks = {(None, 0): lang_cover_marks(files)}
+            elif cfg.get('walker') == 'de':
+                flags += de_flags(P_, S_, claimed_)
+                marks = {(None, 0): lang_cover_marks(files)}
+            elif cfg.get('walker') == 'es':
+                flags += es_flags(P_, S_)
+                marks = {(None, 0): es_cover_marks(files)}
+            elif cfg.get('walker') == 'italian':
+                flags += it_flags(P_, S_)
+                marks = {(None, 0): lang_cover_marks(files)}
+            elif cfg.get('walker') == 'ru':
+                flags += ru_flags(P_, S_, claimed_)
+                marks = {(None, 0): lang_cover_marks(files)}
+            elif cfg.get('walker') == 'ja':
+                flags += ja_flags(P_, S_)
+                marks = {(None, 0): lang_cover_marks(files)}
+            elif cfg.get('walker') == 'lat':
+                flags += lat_flags(P_, S_)
+                # The paper's own total changed with the 2023 syllabus: 300
+                # marks over five questions before it, 400 after, with
+                # Question 2 going from one translation to two and Question 5
+                # from two essays to three. Naming the era keeps the
+                # cross-year checksum comparing each paper with its OWN kind;
+                # without it every 2021 and 2022 sitting reported a 100-mark
+                # shortfall against the later ones.
+                label = f'{_lat_cover_marks(P_)}-mark paper'
+                # Latin's paper is a CHOICE at three of its five questions —
+                # two routes at Questions 1 and 3, four passages at Question 2
+                # — so adding up every printed tariff counts asks nobody sits.
+                # The checksum is the total the paper prints on its cover.
+                marks = {(None, 0): _lat_cover_marks(P_)}
+            elif cfg.get('walker') == 'ara':
+                flags += ara_flags(P_, S_)
+                # Part 2 is a printed CHOICE — nine literature alternatives of
+                # which a candidate answers four — so adding every printed
+                # tariff would count questions nobody sits. The checksum is the
+                # 400 marks the paper's own cover states.
+                marks = {(None, 0): 400}
+            elif cfg.get('walker') == 'clas':
+                flags += clas_flags(P_, S_)
+                # The 2023 syllabus change made this a different paper: 200
+                # marks over ten topics before it, 400 over Sections A and B
+                # after. Naming the era keeps the cross-year marks checksum
+                # comparing each paper with its OWN kind, which is what the
+                # checksum is for; without it every old sitting reported a
+                # 200-mark "shortfall" against the new ones.
+                label = ('Ten Topics' if P_.era == 'topics'
+                         else 'Sections A and B')
+                # A Classical Studies paper is almost entirely CHOICE — four
+                # questions out of forty in the old paper, one essay out of
+                # five in the new — so adding up every printed tariff would
+                # count questions nobody sits. The checksum is the total the
+                # paper states on its own cover.
+                marks = {(None, 0): 400 if P_.era == 'sections' else 200}
+            elif cfg.get('walker') == 'dcg':
+                flags += dcg_flags(P_, S_)
+                # The 2021 and 2022 sittings are the SEC's Covid reduction and
+                # a different paper: their covers print "Sections B and C (120
+                # marks)" and merge the two into one pool of eight questions a
+                # candidate answers any two of, where every other year prints
+                # 180 and sets two of Section B's three plus one Applied
+                # Graphics option of five. Naming the era keeps the cross-year
+                # checksum comparing each paper with its OWN kind; without it
+                # all four of those sittings reported a 60-mark shortfall
+                # against a paper nobody sat.
+                label = f'{P_.cover_marks()}-mark paper'
+                # DCG is a CHOICE paper at every section -- three questions of
+                # four in Section A, two of three in Section B, one of five in
+                # Section C -- so adding up every printed tariff counts asks
+                # nobody sits. The checksum is the total the two booklets
+                # state on their own covers: 60 marks plus 180.
+                marks = {(None, 0): P_.cover_marks()}
+            elif cfg.get('walker') == 'pl':
+                flags += pl_flags(P_, S_)
+                marks = {(None, 0): P_.cover_marks()}
+            elif cfg.get('walker') == 'eu':
+                if S_ is not None:
+                    flags += eu_flags(P_, S_)
+                else:
+                    flags.append('no marking scheme published for this '
+                                 'sitting; the paper is censused alone')
+                # The examination was REBUILT in 2022: one 70-mark booklet sat
+                # at a single level became a 180-mark written paper at two
+                # levels with a 100-mark Listening Comprehension Test beside
+                # it. Naming the era keeps the cross-year checksum comparing
+                # each paper with its OWN kind; without it every classic
+                # sitting reported a shortfall against the modern ones.
+                # The examination was REBUILT in 2022 and rebalanced again
+                # in 2023: one 70-mark booklet sat at a single level became a
+                # 130-mark written paper plus a 100-mark Listening
+                # Comprehension Test, and then a 180-mark written paper when
+                # Part A went from one compulsory comprehension to two.
+                # Naming the era AND the total keeps the cross-year checksum
+                # comparing each paper with its own kind, which is what the
+                # checksum is for.
+                total = P_.cover_marks()
+                label = f'{total}-mark {P_.era} paper'
+                marks = {(None, 0): total}
+            elif cfg.get('walker') == 'lt':
+                flags += lt_flags(P_, S_)
+                # The examination was rebuilt in 2022 and rebuilt again inside
+                # that: 100 marks over three parts before 2021, 70 over two in
+                # 2021, and from 2022 a written booklet plus a listening one.
+                # Naming the era keeps the cross-year marks checksum comparing
+                # each paper with its OWN kind; without it every sitting before
+                # 2022 reported a shortfall against the later ones.
+                #
+                # 2022 is its own kind again, at Higher: Section A prints
+                # "50 taškų" and the paper's own rubric is "Atlikite pirmą
+                # ARBA antrą užduotį" — answer the first OR the second reading
+                # task — where every later sitting sets both and prints 100.
+                # The census counts both routes, as it counts every printed
+                # choice, and the checksum compares that sitting with the
+                # other sittings that print the same total.
+                label = f'{P_.cover_marks()}-mark paper'
+                marks = {(None, 0): P_.cover_marks()}
+            elif cfg.get('walker') == 'agr':
+                flags += agr_flags(P_, S_)
+                # The paper's own total was cut for the two Covid sittings —
+                # 400 marks in every other year, 280 at Higher and 265 at
+                # Ordinary in 2021 and 2022, with more choice to make up for
+                # it. Naming the era keeps the cross-year checksum comparing
+                # each paper with its OWN kind.
+                label = f'{P_.cover_marks()}-mark paper'
+                # Ancient Greek is a CHOICE at every question — two routes at
+                # 1 and 3, four passages of which two are answered at 2, three
+                # topics of eight at 4 — so adding up every printed tariff
+                # counts asks nobody sits. The checksum is the cover total.
+                marks = {(None, 0): P_.cover_marks()}
+            elif cfg.get('walker') == 'man':
+                flags += man_flags(P_, S_)
+                label = 'written + listening'
+                marks = {(None, 0): sum(
+                    v for k, v in P_.section_marks.items()
+                    if k in ('A', 'B'))}
+            elif cfg.get('walker') == 'mgr':
+                flags += mgr_flags(P_, S_)
+                # 100 marks in every year but the two Covid sittings, which
+                # print 70 and set no commentary group.
+                label = f'{P_.cover_marks()}-mark paper'
+                marks = {(None, 0): P_.cover_marks()}
+            elif cfg.get('walker') == 're':
+                total = re_cover_marks(files[0])
+                marks = {(None, 0): total} if total else {}
+            elif marks is None:
+                marks = marks_by_question(files if cfg['mode'] != 'papers' else
+                                          [f for f in files], subject)
             papers.append({
                 'year': year, 'level': level, 'paper': label,
                 'leafCount': len(leaves),
-                'leaves': [{'key': list(k), 'label': key_label(k),
+                'leaves': [{'key': list(k), 'label': key_label(k, subject),
                             'text': texts.get(k, '')[:160]} for k in leaves],
                 'marksSum': sum(marks.values()) if marks else None,
                 'marksQuestions': len(marks),
@@ -650,7 +3825,11 @@ def census_subject(subject):
             expected[(level, label)] = (total, n)
     for p in papers:
         if p.get('marksSum') and expected.get((p['level'], p.get('paper'))):
-            want = expected[(p['level'], p.get('paper'))][0]
+            want, n = expected[(p['level'], p.get('paper'))]
+            # Two sittings that disagree name no expectation: Technology 2020
+            # Higher prints 128 and 2021 Higher 64, and a tie flagged 2021.
+            if n < 2:
+                continue
             if p['marksSum'] != want:
                 p['flags'].append({
                     'type': 'marks-checksum',

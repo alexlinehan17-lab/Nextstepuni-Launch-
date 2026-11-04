@@ -6,7 +6,6 @@
 import React, { useState, useMemo, useEffect, useLayoutEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import Puifin, { type PuifinPose } from './ui/Puifin';
 import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff } from 'lucide-react';
 import PrimaryActionButton from './ui/PrimaryActionButton';
 import {
@@ -22,6 +21,7 @@ import { getDefaultExamDate } from '../utils/examDates';
 import NorthStarOnboarding from './NorthStarOnboarding';
 import { COLORS } from '../design/tokens';
 import { trackFunnel } from '../utils/funnel';
+import { guestStorage } from './onboarding/guest';
 
 interface OnboardingProps {
   userId: string;
@@ -39,6 +39,10 @@ interface OnboardingProps {
    *  with the right curriculum already set without needing the year-picker
    *  step. */
   transitionTargetYear?: 'TY' | '5th';
+  /** Guest setup (no account): the draft lives in sessionStorage via
+   *  components/onboarding/guest.ts, nothing is written to Firestore, and the
+   *  final button reads "Dive in". See AppRouter's guest branch. */
+  guest?: boolean;
 }
 
 type Step = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
@@ -57,47 +61,29 @@ interface OnboardingDraft {
   restDays: string[];
 }
 
-// ─── The Guide — a painted blob that asks each step's question in a
-//     hand-drawn speech bubble. One guide, one question, per screen (the
-//     Duolingo/Brilliant conversational register, in our own language). ───
-const OnboardingGuide: React.FC<{ tint: string; ink: string; question: React.ReactNode; sub?: React.ReactNode; tilt?: number; pose?: PuifinPose }> = ({ tint, ink, question, sub, tilt = 0, pose = 'perch' }) => (
-  <div className="mx-auto mb-7 flex w-full max-w-xl items-start gap-3.5 text-left">
-    <motion.span
-      aria-hidden="true"
-      initial={{ scale: 0.6, opacity: 0, rotate: tilt - 10 }}
-      animate={{ scale: 1, opacity: 1, rotate: tilt }}
-      transition={{ duration: 0.45, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
-      className="relative mt-1 h-14 w-14 shrink-0"
-    >
-      {/* The step's tint survives as Puifín's perch-disc. */}
-      <span className="absolute inset-0 rounded-full" style={{ backgroundColor: tint, boxShadow: `inset 0 0 0 1.5px ${ink}26` }} />
-      <span className="absolute inset-x-0 bottom-0 flex justify-center">
-        <Puifin pose={pose} size={52} />
-      </span>
-    </motion.span>
-    <motion.div
-      initial={{ opacity: 0, scale: 0.92, x: -6 }}
-      animate={{ opacity: 1, scale: 1, x: 0 }}
-      transition={{ duration: 0.4, delay: 0.16, ease: [0.16, 1, 0.3, 1] }}
-      className="relative min-w-0 flex-1 rounded-2xl border-2 border-[#1A1A1A] bg-white px-5 py-4 shadow-[3px_3px_0_0_#1A1A1A] dark:border-zinc-200 dark:bg-zinc-900"
-      style={{ transformOrigin: 'left center' }}
-    >
-      <span aria-hidden="true" className="absolute -left-[8px] top-6 h-3.5 w-3.5 rotate-45 border-b-2 border-l-2 border-[#1A1A1A] bg-white dark:border-zinc-200 dark:bg-zinc-900" />
-      <p className="font-serif text-[21px] font-bold leading-snug text-[#1A1A1A] dark:text-white">{question}</p>
-      {sub && <p className="mt-1 text-[13px] leading-relaxed text-[#78716C] dark:text-zinc-400">{sub}</p>}
-    </motion.div>
-  </div>
+const OnboardingHeading: React.FC<{ question: React.ReactNode; sub?: React.ReactNode }> = ({ question, sub }) => (
+  <MotionDiv
+    initial={{ opacity: 0, y: 8 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+    className="mx-auto mb-7 w-full max-w-xl text-left"
+  >
+    <h2 className="font-serif text-[28px] font-bold leading-snug text-[#1A1A1A] dark:text-white">{question}</h2>
+    {sub && <p className="mt-2 text-sm leading-relaxed text-[#78716C] dark:text-zinc-400">{sub}</p>}
+  </MotionDiv>
 );
 
 const onboardingDraftKey = (userId: string, mode: string) => `nextstepuni:onboarding-draft:v1:${userId}:${mode}`;
 
-function writeOnboardingDraft(userId: string, mode: string, draft: OnboardingDraft): void {
-  try { localStorage.setItem(onboardingDraftKey(userId, mode), JSON.stringify(draft)); } catch { /* storage may be unavailable */ }
+type DraftStorage = Pick<Storage, 'getItem' | 'setItem' | 'removeItem'>;
+
+function writeOnboardingDraft(storage: DraftStorage, userId: string, mode: string, draft: OnboardingDraft): void {
+  try { storage.setItem(onboardingDraftKey(userId, mode), JSON.stringify(draft)); } catch { /* storage may be unavailable */ }
 }
 
-function readOnboardingDraft(userId: string, mode: string): OnboardingDraft | null {
+function readOnboardingDraft(storage: DraftStorage, userId: string, mode: string): OnboardingDraft | null {
   try {
-    const raw = localStorage.getItem(onboardingDraftKey(userId, mode));
+    const raw = storage.getItem(onboardingDraftKey(userId, mode));
     if (!raw) return null;
     const draft = JSON.parse(raw) as Partial<OnboardingDraft>;
     if (draft.version !== 1 || typeof draft.step !== 'number' || draft.step < 1 || draft.step > TOTAL_STEPS) return null;
@@ -158,14 +144,14 @@ const PILL_BASE = 'border-2 border-[#1A1A1A] font-bold font-sans transition-all 
 
 function getCurrentGradePillClass(isSelected: boolean): string {
   return isSelected
-    ? `${PILL_BASE} bg-[#1A1A1A] text-[#FDF8F0]`
-    : `${PILL_BASE} bg-[#FDF8F0] text-[#1A1A1A]`;
+    ? `${PILL_BASE} bg-[#1A1A1A] text-white`
+    : `${PILL_BASE} bg-white text-[#1A1A1A]`;
 }
 
 function getTargetGradePillClass(isSelected: boolean): string {
   return isSelected
-    ? `${PILL_BASE} bg-[#F26B1F] text-[#FDF8F0]`
-    : `${PILL_BASE} bg-[#FDF8F0] text-[#1A1A1A]`;
+    ? `${PILL_BASE} bg-[#F26B1F] text-white`
+    : `${PILL_BASE} bg-white text-[#1A1A1A]`;
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -288,9 +274,14 @@ const AnimatedNumber: React.FC<{ value: number; prefix?: string; className?: str
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
-const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, onSkip, mode = 'fresh', transitionTargetYear }) => {
+const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, onSkip, mode = 'fresh', transitionTargetYear, guest = false }) => {
   const isTransition = mode === 'transition-to-senior';
-  const draft = useMemo(() => readOnboardingDraft(userId, mode), [userId, mode]);
+  // A guest's draft is tab-scoped (sessionStorage) and must survive the
+  // unauthenticated-boot storage clear; an account's draft stays where it was.
+  const storage: DraftStorage = guest ? guestStorage : localStorage;
+  const draft = useMemo(() => readOnboardingDraft(storage, userId, mode), [storage, userId, mode]);
+  const finishLabel = guest ? 'Dive in' : 'Start Learning';
+  const firstName = userName.split(' ')[0] || userName;
   // In transition mode, we skip the welcome/year/mode steps and start
   // at Step 5 (Subjects). The target year is pre-set from the modal
   // pick, so the year picker never renders.
@@ -338,15 +329,15 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
       northStarData, restDays: Array.from(restDays),
     };
     latestDraftRef.current = next;
-    writeOnboardingDraft(userId, mode, next);
-  }, [userId, mode, step, selectedSubjects, subjectConfigs, subjectBands, examDate, yearGroup, essentialsMode, northStarData, restDays]);
+    writeOnboardingDraft(storage, userId, mode, next);
+  }, [storage, userId, mode, step, selectedSubjects, subjectConfigs, subjectBands, examDate, yearGroup, essentialsMode, northStarData, restDays]);
 
   // Preserve the latest synchronous snapshot when iOS backgrounds or evicts
   // the WebView. pagehide covers reload/navigation; visibilitychange covers an
   // app moving to the background before iOS has decided whether to retain it.
   useEffect(() => {
     const persistLatestDraft = () => {
-      if (latestDraftRef.current) writeOnboardingDraft(userId, mode, latestDraftRef.current);
+      if (latestDraftRef.current) writeOnboardingDraft(storage, userId, mode, latestDraftRef.current);
     };
     const persistWhenHidden = () => {
       if (document.visibilityState === 'hidden') persistLatestDraft();
@@ -357,7 +348,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
       window.removeEventListener('pagehide', persistLatestDraft);
       document.removeEventListener('visibilitychange', persistWhenHidden);
     };
-  }, [userId, mode]);
+  }, [storage, userId, mode]);
 
   // Every stage is a new screen. Carrying the previous stage's scroll offset
   // into the next one made the content appear to open halfway down the page.
@@ -414,12 +405,15 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
   const completeOnboarding = async (northStar?: NorthStar) => {
     trackFunnel('onboarding_completed');
     await onComplete(buildProfile(), northStar, essentialsMode);
-    try { localStorage.removeItem(onboardingDraftKey(userId, mode)); } catch { /* storage may be unavailable */ }
+    // A guest's answers are kept: "Create your account" on the Dive-in page
+    // leaves them behind for a later adoption into the new account.
+    if (guest) return;
+    try { storage.removeItem(onboardingDraftKey(userId, mode)); } catch { /* storage may be unavailable */ }
   };
 
   const skipOnboarding = () => {
     trackFunnel('onboarding_skipped');
-    try { localStorage.removeItem(onboardingDraftKey(userId, mode)); } catch { /* storage may be unavailable */ }
+    try { storage.removeItem(onboardingDraftKey(userId, mode)); } catch { /* storage may be unavailable */ }
     onSkip();
   };
 
@@ -730,12 +724,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step1" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 <div className="flex items-center justify-center min-h-[60vh]">
                   <div className="text-center w-full max-w-lg mx-auto">
-                    <OnboardingGuide
-                      tint="#FBE9DC"
-                      ink="#B5500F"
-                      tilt={-3}
-                      pose="wave"
-                      question={`Hi ${userName.split(' ')[0] || userName} — I'm Puifín, your guide here.`}
+                    <OnboardingHeading
+                      question={`Hi ${firstName} — welcome to NextStepUni.`}
                       sub="Two minutes of setup and the whole app fits itself around you. One question at a time."
                     />
 
@@ -770,10 +760,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step2" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 <div className="flex flex-col items-center justify-center min-h-[60vh] py-6">
                   <div className="text-center w-full max-w-xl mx-auto">
-                    <OnboardingGuide
-                      tint="#DCE9F2"
-                      ink="#33658A"
-                      tilt={2}
+                    <OnboardingHeading
                       question="What year are you in?"
                       sub="Pick your year — the whole app shapes itself around it."
                     />
@@ -796,7 +783,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={yr}
                               onClick={() => setYearGroup(yr)}
                               className={`group flex flex-col items-center justify-center py-5 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                                selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
                               }`}
                             >
                               <span className="text-2xl font-bold leading-none">{yr}</span>
@@ -831,7 +818,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={yr}
                               onClick={() => setYearGroup(yr)}
                               className={`group flex flex-col items-center justify-center py-5 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                                selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
                               }`}
                             >
                               <span className="text-2xl font-bold leading-none">{label}</span>
@@ -859,7 +846,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={yr}
                               onClick={() => setYearGroup(yr)}
                               className={`group flex flex-col items-center justify-center py-5 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                                selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
                               }`}
                             >
                               <span className="text-2xl font-bold leading-none">{yr === 'LCA1' ? 'Year 1' : 'Year 2'}</span>
@@ -891,7 +878,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={String(option.id)}
                               type="button"
                               onClick={() => setEssentialsMode(option.id)}
-                              className={`rounded-2xl border-2 border-[#1A1A1A] px-4 py-4 text-left shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${selected ? 'bg-[#F26B1F] text-white' : 'bg-[#FDF8F0] text-[#1A1A1A]'}`}
+                              className={`rounded-2xl border-2 border-[#1A1A1A] px-4 py-4 text-left shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'}`}
                             >
                               <p className="font-bold">{option.title}</p>
                               <p className={`mt-1 text-xs leading-relaxed ${selected ? 'text-white/80' : 'text-[#78716C]'}`}>{option.desc}</p>
@@ -910,10 +897,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step3" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[60vh]">
                   <div className="text-center w-full max-w-lg mx-auto">
-                    <OnboardingGuide
-                      tint="#EFEAF3"
-                      ink="#5B4A7E"
-                      tilt={-2}
+                    <OnboardingHeading
                       question="How do you like to learn?"
                       sub="Choose the style that suits you best — you can change this any time in Settings."
                     />
@@ -936,11 +920,11 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                             // Same border-2 / 4-6px black drop-shadow / press
                             // translate as the rest of onboarding.
                             className={`flex-1 py-6 px-5 rounded-2xl border-2 border-[#1A1A1A] text-left font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                              selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                              selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
                             }`}
                           >
                             <p className="text-base font-bold mb-1">{opt.title}</p>
-                            <p className={`text-xs ${selected ? 'text-[#FDF8F0]/85' : 'text-[#78716C]'}`}>{opt.desc}</p>
+                            <p className={`text-xs ${selected ? 'text-white/85' : 'text-[#78716C]'}`}>{opt.desc}</p>
                           </button>
                         );
                       })}
@@ -986,10 +970,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                     <p className="text-sm text-[#1A1A1A] dark:text-zinc-200">Let's set up your Leaving Cert profile.</p>
                   </div>
                 )}
-                <OnboardingGuide
-                  tint="#E8F2EC"
-                  ink="#1F5F3E"
-                  tilt={2}
+                <OnboardingHeading
                   question={isTransition ? 'Which Leaving Cert subjects are you taking?' : 'Which subjects are you carrying?'}
                   sub={<>
                     Tap to select {curriculumLevel === 'junior' ? 'your subjects' : 'your Leaving Cert subjects'}.{' '}
@@ -1013,15 +994,15 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                                 onClick={() => toggleSubject(subj.name)}
                                 className={`group flex items-center gap-2.5 px-4 py-3 rounded-2xl border-2 border-[#1A1A1A] font-sans font-medium text-[15px] transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
                                   selected
-                                    ? 'bg-[#F26B1F] text-[#FDF8F0]'
-                                    : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                    ? 'bg-[#F26B1F] text-white'
+                                    : 'bg-white text-[#1A1A1A]'
                                 }`}
                               >
                                 <span
                                   className="w-2.5 h-2.5 rounded-full shrink-0"
                                   style={{
                                     backgroundColor: selected ? 'transparent' : dotHex,
-                                    boxShadow: selected ? 'inset 0 0 0 1.5px #FDF8F0' : 'none',
+                                    boxShadow: selected ? 'inset 0 0 0 1.5px #FFFFFF' : 'none',
                                   }}
                                   aria-hidden
                                 />
@@ -1040,10 +1021,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
             {/* Step 6: Grade Configuration */}
             {step === 6 && curriculumLevel === 'junior' && (
               <MotionDiv key="step6-jc" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
-                <OnboardingGuide
-                  tint="#F6EEDF"
-                  ink="#8A6B2D"
-                  tilt={-2}
+                <OnboardingHeading
                   question="Where are you now — and where are you headed?"
                   sub="For each subject, set your current band and where you're aiming."
                 />
@@ -1060,7 +1038,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                       <div
                         key={name}
                         className="rounded-2xl overflow-hidden border-2 border-[#1A1A1A] shadow-[4px_4px_0_0_#1A1A1A]"
-                        style={{ backgroundColor: '#FDF8F0' }}
+                        style={{ backgroundColor: '#FFFFFF' }}
                       >
                         {/* Subject header row */}
                         <div className="flex items-center justify-between px-4 pt-3 pb-2 border-b-2 border-[#1A1A1A]/10">
@@ -1073,8 +1051,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                                   onClick={() => updateBand(name, 'level', lvl)}
                                   className={`px-2.5 py-1 rounded-md text-[10px] font-bold border-2 border-[#1A1A1A] transition-all duration-150 shadow-[2px_2px_0_0_#1A1A1A] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[0px_0px_0_0_#1A1A1A] ${
                                     band.level === lvl
-                                      ? 'bg-[#1A1A1A] text-[#FDF8F0]'
-                                      : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                      ? 'bg-[#1A1A1A] text-white'
+                                      : 'bg-white text-[#1A1A1A]'
                                   }`}
                                 >
                                   {lvl === 'higher' ? 'Higher' : 'Ordinary'}
@@ -1121,7 +1099,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                                     disabled={disabled}
                                     className={`flex-1 min-w-[70px] py-2 rounded-lg text-[10px] ${
                                       disabled
-                                        ? 'border-2 border-[#1A1A1A]/15 bg-[#FDF8F0]/40 text-[#1A1A1A]/25 cursor-not-allowed font-bold'
+                                        ? 'border-2 border-[#1A1A1A]/15 bg-white/40 text-[#1A1A1A]/25 cursor-not-allowed font-bold'
                                         : b === band.targetBand
                                           ? getTargetGradePillClass(true)
                                           : getTargetGradePillClass(false)
@@ -1149,10 +1127,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                     <p className="text-sm text-[#1A1A1A] dark:text-zinc-200">Pick where you are now and where you're aiming for your Leaving Cert.</p>
                   </div>
                 )}
-                <OnboardingGuide
-                  tint="#F6EEDF"
-                  ink="#8A6B2D"
-                  tilt={2}
+                <OnboardingHeading
                   question="Where are you now — and where are you headed?"
                   sub="For each subject, set where you are now and where you want to be."
                 />
@@ -1170,7 +1145,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                       <div
                         key={name}
                         className="rounded-2xl overflow-hidden border-2 border-[#1A1A1A] shadow-[4px_4px_0_0_#1A1A1A]"
-                        style={{ backgroundColor: '#FDF8F0' }}
+                        style={{ backgroundColor: '#FFFFFF' }}
                       >
                         {/* Subject header row */}
                         <div className="flex items-center justify-between px-4 pt-3 pb-2 border-b-2 border-[#1A1A1A]/10">
@@ -1182,8 +1157,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                                 onClick={() => updateConfig(name, 'level', lvl)}
                                 className={`px-2.5 py-1 rounded-md text-[10px] font-bold border-2 border-[#1A1A1A] transition-all duration-150 shadow-[2px_2px_0_0_#1A1A1A] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[0px_0px_0_0_#1A1A1A] ${
                                   config.level === lvl
-                                    ? 'bg-[#1A1A1A] text-[#FDF8F0]'
-                                    : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                                    ? 'bg-[#1A1A1A] text-white'
+                                    : 'bg-white text-[#1A1A1A]'
                                 }`}
                               >
                                 {lvl === 'higher' ? 'Higher' : 'Ordinary'}
@@ -1226,7 +1201,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                                     disabled={disabled}
                                     className={`flex-1 py-2 rounded-lg text-[11px] ${
                                       disabled
-                                        ? 'border-2 border-[#1A1A1A]/15 bg-[#FDF8F0]/40 text-[#1A1A1A]/25 cursor-not-allowed font-bold'
+                                        ? 'border-2 border-[#1A1A1A]/15 bg-white/40 text-[#1A1A1A]/25 cursor-not-allowed font-bold'
                                         : g === config.targetGrade
                                           ? getTargetGradePillClass(true)
                                           : getTargetGradePillClass(false)
@@ -1262,10 +1237,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step7" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
                 <div className="w-full max-w-2xl mx-auto py-4 sm:py-8">
                   <div className="text-center">
-                    <OnboardingGuide
-                      tint="#ECEFF0"
-                      ink="#46555E"
-                      tilt={-2}
+                    <OnboardingHeading
                       question="When do the exams land?"
                       sub={needsExamDate
                         ? 'Add your exam date and choose the days that need to stay free — the year gets paced backwards from it.'
@@ -1289,7 +1261,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                           />
                         </label>
                         {daysLeft > 0 && (
-                          <div className="flex min-w-32 items-center justify-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-[#FDF8F0] px-5 py-3">
+                          <div className="flex min-w-32 items-center justify-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-white px-5 py-3">
                             <span className="font-apercu text-3xl font-black leading-none text-[#1A1A1A]">{daysLeft}</span>
                             <span className="text-left text-[10px] font-bold uppercase leading-tight tracking-[0.12em] text-[#8A8178]">days<br />to go</span>
                           </div>
@@ -1313,7 +1285,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                               key={day}
                               type="button"
                               onClick={() => toggleRestDay(day)}
-                              className={`flex min-h-16 items-center justify-between rounded-2xl border-2 border-[#1A1A1A] px-4 py-3 font-sans shadow-[3px_3px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${isRest ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'}`}
+                              className={`flex min-h-16 items-center justify-between rounded-2xl border-2 border-[#1A1A1A] px-4 py-3 font-sans shadow-[3px_3px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none ${isRest ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'}`}
                             >
                               <span className="text-xs font-bold uppercase tracking-wider">{DAY_SHORTS[day]}</span>
                               {isRest ? <CalendarOff size={17} /> : <Check size={17} />}
@@ -1336,10 +1308,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
               <MotionDiv key="step8" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ duration: 0.3, ease: 'easeInOut' }}>
                 <div className="flex items-center justify-center min-h-[50vh]">
                   <div className="text-center w-full max-w-lg mx-auto">
-                    <OnboardingGuide
-                      tint="#F6EAED"
-                      ink="#84495A"
-                      tilt={2}
+                    <OnboardingHeading
                       question="Which days are off-limits?"
                       sub="Rest is part of the plan — tap the days study isn't possible and the sessions redistribute around them."
                     />
@@ -1361,12 +1330,12 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                             // Study day = cream fill. Same press animation
                             // as the year + grade pickers.
                             className={`flex flex-col items-center justify-center gap-2 py-4 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${
-                              isRest ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'
+                              isRest ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
                             }`}
                           >
                             <span className="text-[11px] font-bold uppercase tracking-wider">{DAY_SHORTS[day]}</span>
                             {isRest
-                              ? <CalendarOff size={16} className="text-[#FDF8F0]" />
+                              ? <CalendarOff size={16} className="text-white" />
                               : <Check size={16} className="text-[#1A1A1A]" />}
                           </button>
                         );
@@ -1389,12 +1358,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
             {/* Step 9: Review and launch */}
             {step === 9 && (
               <MotionDiv key="step9" variants={stepVariants} initial="hidden" animate="visible" exit="exit" custom={direction} transition={{ type: 'spring', stiffness: 250, damping: 28, mass: 0.8 }}>
-                <OnboardingGuide
-                  tint="#E8F2EC"
-                  ink="#1F5F3E"
-                  tilt={-2}
-                  pose="cheer"
-                  question={`You're ready, ${userName.split(' ')[0] || userName}.`}
+                <OnboardingHeading
+                  question={guest ? "You're ready." : `You're ready, ${firstName}.`}
                   sub="Here's the plan we built together — review it, then start learning."
                 />
 
@@ -1526,9 +1491,9 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                   <button
                     type="button"
                     onClick={() => void completeOnboarding(northStarData ?? undefined)}
-                    className="flex min-w-48 items-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-8 py-3 text-sm font-semibold text-[#FDF8F0] shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-none"
+                    className="flex min-w-48 items-center gap-2 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] px-8 py-3 text-sm font-semibold text-white shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-none"
                   >
-                    <span className="flex-1 text-center">Start Learning</span>
+                    <span className="flex-1 text-center">{finishLabel}</span>
                     <ArrowRight size={14} />
                   </button>
                   <button type="button" onClick={goBack} className="flex items-center gap-1.5 text-sm font-medium text-[#8A8178] transition-colors hover:text-[#1A1A1A]">
@@ -1561,7 +1526,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                       transition={{ duration: 0.5, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
                       className="font-serif text-3xl sm:text-4xl font-bold mb-2 text-[#1A1A1A] dark:text-white"
                     >
-                      You're all set, {userName.split(' ')[0] || userName}.
+                      {guest ? "You're all set." : `You're all set, ${firstName}.`}
                     </motion.h2>
 
                     <motion.p
@@ -1620,7 +1585,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                       className="flex justify-center"
                     >
                       <PrimaryActionButton
-                        label="Start Learning"
+                        label={finishLabel}
                         onClick={() => void completeOnboarding(northStarData ?? undefined)}
                         icon={ArrowRight}
                         variant="dark"
@@ -1645,7 +1610,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
                 disabled={!canProceed()}
                 // Chunky orange CTA matching the year/subject pickers'
                 // shadow language. Disabled state drops the shadow + dims.
-                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-40 disabled:cursor-not-allowed disabled:shadow-[2px_2px_0_0_#1A1A1A] disabled:translate-x-0 disabled:translate-y-0 disabled:hover:translate-y-0"
+                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] disabled:opacity-40 disabled:cursor-not-allowed disabled:shadow-[2px_2px_0_0_#1A1A1A] disabled:translate-x-0 disabled:translate-y-0 disabled:hover:translate-y-0"
                 style={{ minWidth: 160 }}
               >
                 <span className="flex-1 text-center">{step === 1 ? 'Get Started' : 'Next'}</span>
@@ -1654,10 +1619,10 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
             ) : (
               <button
                 onClick={() => void completeOnboarding(northStarData ?? undefined)}
-                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]"
+                className="flex items-center gap-2 px-8 py-3 font-semibold text-sm rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]"
                 style={{ minWidth: 160 }}
               >
-                <span className="flex-1 text-center">Start learning</span>
+                <span className="flex-1 text-center">{guest ? 'Dive in' : 'Start learning'}</span>
                 <ArrowRight size={14} />
               </button>
             )}

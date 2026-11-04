@@ -34665,13 +34665,13 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "voltmeter in parallel with ﬁlament bulb",
+    "verbatim": "voltmeter in parallel with filament bulb",
     "marks": 3
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "ammeter in series with ﬁlament bulb",
+    "verbatim": "ammeter in series with filament bulb",
     "marks": 3
    },
    {
@@ -34781,7 +34781,7 @@
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "anƟclockwise moments calculated",
+    "verbatim": "anticlockwise moments calculated",
     "marks": 3
    }
   ],
@@ -34822,7 +34822,7 @@
     "verbatim": "tuning fork",
     "marks": 4,
     "accepts": [
-     "metre sƟck"
+     "metre stick"
     ]
    }
   ],
@@ -34859,13 +34859,13 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "points ploƩed",
+    "verbatim": "points plotted",
     "marks": 3
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "line of best ﬁt",
+    "verbatim": "line of best fit",
     "marks": 3
    }
   ],
@@ -34927,13 +34927,13 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "points ploƩed",
+    "verbatim": "points plotted",
     "marks": 3
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "curve of best ﬁt drawn",
+    "verbatim": "curve of best fit drawn",
     "marks": 3
    }
   ],
@@ -35029,7 +35029,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "applied force, fricƟonal force, gravitaƟonal force, normal/reacƟon force",
+    "verbatim": "applied force, frictional force, gravitational force, normal/reaction force",
     "marks": 7
    }
   ],
@@ -35053,7 +35053,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "equaƟon of moƟon given; e.g. s = ut + ½ at2",
+    "verbatim": "equation of motion given; e.g. s = ut + ½ at2",
     "marks": 3,
     "contextNote": "The diagram prints the particles 20 m apart: X is projected up from the ground as Y is projected down from a point 20 m above it, with g = 9.8 m s–2."
    },
@@ -35096,13 +35096,13 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "two reﬂected rays",
+    "verbatim": "two reflected rays",
     "marks": 2
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "magniﬁed virtual image",
+    "verbatim": "magnified virtual image",
     "marks": 2
    }
   ],
@@ -35126,7 +35126,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "four nodes, three anƟnodes on a string ﬁxed at both ends",
+    "verbatim": "four nodes, three antinodes on a string fixed at both ends",
     "marks": 4
    }
   ],
@@ -35151,13 +35151,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "p-n juncƟon with depleƟon layer",
+    "verbatim": "p-n junction with depletion layer",
     "marks": 4
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "negaƟvely charged secƟon, posiƟvely charged secƟon, neutral secƟon",
+    "verbatim": "negatively charged section, positively charged section, neutral section",
     "marks": 3
    }
   ]
@@ -35239,14 +35239,14 @@
     "verbatim": "each slit acts as a source",
     "marks": 6,
     "accepts": [
-     "waves diﬀract",
+     "waves diffract",
      "waves meet"
     ]
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "construcƟve interference gives bright fringes",
+    "verbatim": "constructive interference gives bright fringes",
     "marks": 3
    }
   ],
@@ -35432,7 +35432,7 @@
     "verbatim": "reference to energy of incident proton",
     "marks": 4,
     "accepts": [
-     "reference to energy released in the reacƟon"
+     "reference to energy released in the reaction"
     ],
     "contextNote": "The total, 2.801 × 10–12 J, agrees with the measured kinetic energy of the alpha particles, 2.77 × 10–12 J."
    },
@@ -35495,7 +35495,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "arrangement as bridge recƟﬁer",
+    "verbatim": "arrangement as bridge rectifier",
     "marks": 3
    },
    {
@@ -35554,13 +35554,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "light ray showing reﬂecƟon in ﬁbre",
+    "verbatim": "light ray showing reflection in fibre",
     "marks": 4
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "stated: i > C or total internal reﬂecƟon",
+    "verbatim": "stated: i > C or total internal reflection",
     "marks": 2
    }
   ],

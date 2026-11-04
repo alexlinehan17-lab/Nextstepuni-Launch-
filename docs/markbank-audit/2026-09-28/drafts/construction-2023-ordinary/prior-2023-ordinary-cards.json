@@ -1,0 +1,1255 @@
+[
+  {
+    "id": "cons-2023-ol-q1-b",
+    "topicId": "cons-3-3",
+    "conceptId": "connecting-the-inner-and-outer-leaves",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q1(b)",
+    "questionText": "On your drawing, show the typical design detailing to connect the inner and outer leaves of the external wall.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "3",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q1-b-r1",
+        "kind": "point",
+        "verbatim": "Wall tie clearly identified",
+        "marks": 3,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q2-a",
+    "topicId": "cons-6-3",
+    "conceptId": "why-energy-upgrade-grants-exist",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q2(a)",
+    "questionText": "Discuss two reasons why energy upgrade grants are available for old houses.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q2-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons why energy upgrade grants are available for old houses.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "To improve the BER of the house",
+            "To reduce the energy usage of the home and in turn reduce carbon emissions",
+            "To encourage owners to upgrade existing houses instead of building new houses",
+            "To make older houses energy efficient, sustainable, and economical to heat",
+            "To encourage greener living for the inhabitants"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q2-c",
+    "topicId": "cons-6-3",
+    "conceptId": "other-energy-upgrades-for-an-old-house",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q2(c)",
+    "questionText": "On a separate sketch show, using notes and freehand sketches, one other possible energy upgrade the homeowner could carry out to their house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 14",
+      "answer": 1,
+      "ofParts": 5,
+      "perPart": 14
+    },
+    "totalMarks": 14,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q2-c-r1",
+        "kind": "anyN",
+        "verbatim": "On a separate sketch show, using notes and freehand sketches, one other possible energy upgrade the homeowner could carr",
+        "marks": 14,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 14,
+          "options": [
+            "Increase insulation at roof level",
+            "Install solar panels to supplement electricity from the grid",
+            "Replace the heating system to a more energy efficient method",
+            "Replace open fireplace with a wood burning stove",
+            "Upgrade to high performance windows Any alternative detailing which complies with current Building Regulations is acceptable"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q3-a",
+    "topicId": "cons-5-2",
+    "conceptId": "pipework-for-a-solar-installation",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q3(a)",
+    "questionText": "Draw a large freehand sketch of the given house. On your sketch, show the pipework necessary to connect the solar collector to the hot water cylinder and supply hot water to a shower.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "8 x 5",
+      "answer": 8,
+      "ofParts": 12,
+      "perPart": 5
+    },
+    "totalMarks": 40,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "Typical details",
+        "marks": 40,
+        "openList": true,
+        "contextNote": "Typical details",
+        "group": {
+          "claimMax": 8,
+          "perOption": 5,
+          "options": [
+            "Solar collector",
+            "Ø22 mm cold feed to collector",
+            "Ø22 mm hot return to cylinder",
+            "250 l cylinder",
+            "Circulation pump",
+            "24 l solar expansion vessel",
+            "Storage tank",
+            "Ø22 mm cold feed to cylinder",
+            "Ø28 mm expansion pipe",
+            "Ø22 mm hot water to shower",
+            "Shower unit",
+            "Stop valves and drain valve"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q3-b",
+    "topicId": "cons-6-4",
+    "conceptId": "where-to-locate-solar-panels",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q3(b)",
+    "questionText": "Discuss two considerations when deciding the location of solar panels on a house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two considerations when deciding the location of solar panels on a house.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Orientation of roof",
+            "Position and proximity of neighbouring buildings",
+            "The pitch of the roof",
+            "Type of roof on the house, ability of the roof to support and secure the panels",
+            "Usable area of the roof",
+            "Space of the surrounding garden and possible shading from neighbouring trees/plants",
+            "Ease for maintenance and cleaning so it continues to work efficiently"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q4-a",
+    "topicId": "cons-3-8",
+    "conceptId": "advantages-of-prefabricated-trussed-rafters",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q4(a)",
+    "questionText": "Discuss two advantages of using prefabricated trussed rafters to construct a roof.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q4-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of using prefabricated trussed rafters to construct a roof.",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Less waste produced in the construction compared to cut roofs",
+            "Quicker roof construction time on-site",
+            "Uses material more efficiently compared to cut roof construction",
+            "Can produce open plan dwellings, as the truss is not reliant on internal walls for support Any other valid reason will be accepted"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q4-b",
+    "topicId": "cons-3-8",
+    "conceptId": "how-a-trussed-rafter-is-fixed",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q4(b)",
+    "questionText": "Using notes and a freehand sketch, show the typical construction details of how a trussed rafter is secured on the external wall of a house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "5 x 6",
+      "answer": 5,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q4-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and a freehand sketch, show the typical construction details of how a trussed rafter is secured on the exter",
+        "marks": 30,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 5,
+          "perOption": 6,
+          "options": [
+            "External insulated walls are finished with a cavity closer",
+            "Wall plates 100 mm × 75 mm are securely fixed to the external wall with 1200 mm galvanised steel straps",
+            "Truss rafters are prefabricated off site",
+            "Nail plates are mechanically fixed at all joints and structural locations for strength and rigidity",
+            "Truss clips are attached on to the wall plate at 400 mm intervals",
+            "The truss rafter is lifted onto the truss clips and secured in place"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q5-a",
+    "topicId": "cons-3-10",
+    "conceptId": "vertical-section-wall-and-flat-roof-eaves",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q5(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the external wall and the eaves of the flat roof. On your drawing, show the typical construction details from a level 450 mm below the wallplate, through the external wall and eaves. Show 900 mm length of roof joist.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "8 x 5",
+      "answer": 8,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 40,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q5-a-r1",
+        "kind": "anyN",
+        "verbatim": "Specification – typical detail",
+        "marks": 40,
+        "openList": true,
+        "contextNote": "Specification – typical detail",
+        "group": {
+          "claimMax": 8,
+          "perOption": 5,
+          "options": [
+            "19 mm external render",
+            "Concrete block outer leaf 100 mm",
+            "Full fill insulated cavity 200 mm",
+            "Wall tie",
+            "Concrete block inner leaf 100 mm",
+            "15 mm internal plaster",
+            "100 mm × 75 mm wall plate",
+            "Cavity closer",
+            "Waterproof membrane",
+            "150 mm insulation",
+            "Breather membrane",
+            "20 mm plywood decking",
+            "Firring piece",
+            "200 × 50 mm insulated ceiling joist"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 17 acceptable points under \"Specification – typical detail\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2023-ol-q6-a",
+    "topicId": "cons-9-4",
+    "conceptId": "safety-in-the-construction-studies-room",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q6(a)",
+    "questionText": "State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations: • using a jigsaw • using epoxy adhesive.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 4",
+      "answer": 4,
+      "ofParts": 9,
+      "perPart": 4
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q6-a-r1",
+        "kind": "anyN",
+        "verbatim": "Using a jigsaw • Use a dust mask during operation",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Using a jigsaw • Use a dust mask during operation",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "Use ear protection to reduce damage to hearing",
+            "Use eye protection to protect from dust and flying chips of material",
+            "Ensure leads are not a trip hazard",
+            "Ensure work piece is secured from movement while using the jigsaw Using epoxy",
+            "Ensure the work zone is well ventilated adhesive",
+            "Use skin and clothing protection",
+            "Use a respirator mask to prevent inhaling epoxy vapours",
+            "Use eye protection to prevent the risk of contact with eyes",
+            "Ensure work area is clear to avoid slips if the epoxy leaks Any other suitable specific precaution will be accepted"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q6-b",
+    "topicId": "cons-9-4",
+    "conceptId": "safety-precautions-with-workshop-equipment",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q6(b)",
+    "questionText": "Using notes and freehand sketches, describe three specific safety precautions to be observed when woodturning on a lathe. Give one reason for each safety precaution outlined.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 8",
+      "answer": 3,
+      "ofParts": 6,
+      "perPart": 8
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "Give one reason for each",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "Give one reason for each",
+        "group": {
+          "claimMax": 3,
+          "perOption": 8,
+          "options": [
+            "Close fitting, protective clothing must be worn",
+            "Long and loose hair must be tied back",
+            "Face visor must be worn",
+            "Dust mask or breathing protection must be used",
+            "The tool rest must be positioned at the correct height and distance to the workpiece",
+            "The correct RPM should be used depending on the size of the work piece"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q6-c",
+    "topicId": "cons-9-1",
+    "conceptId": "why-a-workshop-is-kept-tidy",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q6(c)",
+    "questionText": "Discuss two reasons why it is important to maintain an organised and tidy environment in a Construction Studies room.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons why it is important to maintain an organised and tidy environment in a Construction Studies room.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Reduces the risk of trip hazards",
+            "Easier to locate tools and work material",
+            "Reduces time lost when locating tools and work pieces",
+            "Reduces damage to tools and machines",
+            "Organised storage of off-cuts promotes material reuse and reduces material waste",
+            "Promotes neatness and correct procedure when working on practical projects Any other suitable reason will be accepted"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q7-a",
+    "topicId": "cons-1-1",
+    "conceptId": "advantages-of-a-large-utility-room",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q7(a)",
+    "questionText": "Discuss two advantages of including a large utility room in the design of a new home.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of including a large utility room in the design of a new home.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Creates extra usable kitchen space",
+            "Place to store outdoor shoes and clothing to keep the house hygienic",
+            "Place to position washing machine to reduce the sound interrupting the kitchen",
+            "Extra storage for bulky items from the house",
+            "Secure space for family pet during the day and night",
+            "Space to hang and air freshly washed clothing"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q7-b",
+    "topicId": "cons-1-1",
+    "conceptId": "laying-out-a-utility-room",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q7(b)",
+    "questionText": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the utility room: • sink • washing machine • storage units • seating / boot area. Give one reason for selecting each location.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 5",
+      "answer": 4,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the utili",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 5,
+          "options": [
+            "sink",
+            "washing machine",
+            "storage units",
+            "seating / boot area",
+            "Located close to window to allow natural light access to work area",
+            "Located by window to allow user to have a view of the outdoors",
+            "Located on an external wall for ease of connection to wastewater disposal washing machine",
+            "Located on an external wall for ease of wastewater disposal",
+            "Access to electrical sockets",
+            "Located on external wall for access to water supply storage units",
+            "Located by wall to prevent blocking occupants entering and exiting the home",
+            "Located by wall so the units can be supported and attached for strength and stability",
+            "Located close to the washing machine to allow storage of laundry and washing detergents seating / boot area",
+            "Located by a wall to allow the seating to be fixed securely to it"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 28 marks for this part. The 20 on this card are the marks it states answers for; the other 8 go to Sketch (8) — the drawing itself and anything the scheme prices without saying what earns it. The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2023-ol-q9-a",
+    "topicId": "cons-3-7",
+    "conceptId": "choosing-a-material-for-a-front-door",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q9(a)",
+    "questionText": "Specify a suitable material for a new front door, and give two reasons for your choice.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 4",
+      "answer": 3,
+      "ofParts": 14,
+      "perPart": 4
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q9-a-r1",
+        "kind": "anyN",
+        "verbatim": "Suitable material for front door",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Suitable material for front door",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "Cedar",
+            "Larch",
+            "Oak",
+            "Teak",
+            "uPVC",
+            "Aluminium Two reasons for your choice",
+            "Durability",
+            "Some wood species don’t require preservative treatment due to natural oils",
+            "Naturally resistant to insect attack",
+            "Naturally resistant to moisture",
+            "Aluminium and uPVC don’t require regular maintenance",
+            "Install ramp to main entrance of a slope 1:20. (minimum width 1200 mm) with a level landing pad turning circle at the entrance",
+            "Remove driveway material that may cause trips and falls and install a smooth slip resistant material. Patterned concrete, paving stones, tarmacadam",
+            "Glass panel to observe who is at the door"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 18 acceptable points under \"Suitable material for front door\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2023-ol-q9-c",
+    "topicId": "cons-1-1",
+    "conceptId": "an-accessible-front-entrance",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q9(c)",
+    "questionText": "Discuss two reasons why the owners would wish to create a front entrance that is accessible for all.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q9-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons why the owners would wish to create a front entrance that is accessible for all.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Increase the resale value of the property as costly modification will be eliminated",
+            "Future proof the home to the needs of the family throughout its life. Prams, buggies, shopping carts, walking aids, wheelchairs",
+            "Reduces costly future renovations",
+            "Sustainable living as retro fitting at a later stage uses additional resources and energy"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q1-a",
+    "topicId": "cons-3-2",
+    "conceptId": "vertical-section-external-wall-and-floor",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q1(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the external wall and first floor. On your drawing show the typical construction details from a level 400 mm below the plasterboard ceiling to a level 400 mm above the hardwood floor. Show an internal floor width of 900 mm. Include four typical dimensions.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 11,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q1-a-r1",
+        "kind": "anyN",
+        "verbatim": "To a scale of 1:5, draw a vertical section through the external wall and first floor. On your drawing show the typical c",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "Concrete block outer leaf with internal plaster",
+            "Full fill cavity with wall tie",
+            "Concrete block inner leaf with render",
+            "Joist hanger",
+            "Ceiling joist",
+            "Airtight tape",
+            "Plasterboard",
+            "Plywood decking",
+            "Tongue & groove flooring",
+            "Skirting board",
+            "Any 4 typical dimensions"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q5-b",
+    "topicId": "cons-3-4",
+    "conceptId": "keeping-the-cavity-clear-of-mortar",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q5(b)",
+    "questionText": "On your drawing show the typical design detailing to ensure that the cavity is closed at wallplate level.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q5-b-r1",
+        "kind": "point",
+        "verbatim": "Cavity closer",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q9-b",
+    "topicId": "cons-1-1",
+    "conceptId": "modifying-a-front-entrance",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q9(b)",
+    "questionText": "Using notes and freehand sketches, show two modifications to the front entrance area that would allow access to the house for a person with limited mobility.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 13",
+      "answer": 2,
+      "ofParts": 2,
+      "perPart": 13
+    },
+    "totalMarks": 26,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q9-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show two modifications to the front entrance area that would allow access to the hous",
+        "marks": 26,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 13,
+          "options": [
+            "Modification 1 to entrance notes + sketch",
+            "Modification 2 to entrance notes + sketch"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q8-None-concrete-mixer",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-concrete-mixer",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q8 — Concrete mixer",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • concrete mixer.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q8-None-concrete-mixer-r1",
+        "kind": "anyN",
+        "verbatim": "Concrete mixer",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Concrete mixer",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Concrete mixers have a rotating drum designed to turn raw materials in to concrete without segregation",
+            "Small batch (on-site) mixers can be electrical or operated by a petrol or diesel engine. Mixer is hand loaded and can produce up to 200 litres of concrete per batch on site",
+            "Since small batch mixers are loaded by hand, quality control is difficult to regulate",
+            "Larger quantities of concrete are mixed off site in a mixing plant and transported to site by a ready mixed concrete truck",
+            "Usual capacity of ready-mix trucks is 4 – 6 cubic meters",
+            "Quality control of ready mix is better regulated, mix can be poured directly into work area"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q8-None-smart-radiator-valve",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-smart-radiator-valve",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q8 — Smart radiator valve",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • smart radiator valve.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q8-None-smart-radiator-valve-r1",
+        "kind": "anyN",
+        "verbatim": "Smart radiator valve",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Smart radiator valve",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Smart valves can be fitted to new or existing radiators",
+            "Measures the room temperature using integrated sensors",
+            "Can signal to reduce or to increase the flow of hot water to the radiator",
+            "Smart radiator valves can be controlled from smart devices when home owners are away",
+            "Allows each room to have a different temperature compared to traditional heating systems with only one or two heating zones",
+            "Reduces energy cost and usage as the smart valve will control and retain the set temperature"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q8-None-ridge-tile",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-ridge-tile",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q8 — Ridge tile",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • ridge tile.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q8-None-ridge-tile-r1",
+        "kind": "anyN",
+        "verbatim": "Ridge tile",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Ridge tile",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Sits on the apex of a roof and protects the roof by sealing the intersection of the two roof planes",
+            "Traditionally, ridge tiles are fixed using mortar to bond them to the tiles. Modern tile manufacturers have intergrated fixing systems to secure the ridge tile without mortar",
+            "Ridge tiles are made from similar materials as the roof covering and can come in a variety of colours and profiles",
+            "Some ridge tiles are used as a decorative finish to the horizontal line along the top of the roof"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q8-None-triple-glazing",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-triple-glazing",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q8 — Triple glazing",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • triple glazing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q8-None-triple-glazing-r1",
+        "kind": "anyN",
+        "verbatim": "Triple glazing",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Triple glazing",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Triple glazing is made up of three panes of glass instead of the traditional one or two panes",
+            "The cavity between each pane of glass is usually filled with an inert gas such as argon, xenon or krypton",
+            "Together with the extra pane, this can help to reduce noise transmission and increase energy efficiency",
+            "Triple glazing is better at insulating homes compared to double glazing, resulting in improved thermal comfort",
+            "Triple glazing is much heavier and thicker than double glazing so may not suit all frame types",
+            "Triple glazing may prevent solar gain into a home so some homeowners may not install triple glazing on the southern elevation of the building"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q8-None-balusters",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-balusters",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q8 — Balusters",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • balusters.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q8-None-balusters-r1",
+        "kind": "anyN",
+        "verbatim": "Balusters",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Balusters",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A baluster is a vertical member between the handrail and string on a stairs",
+            "The term baluster is interchangeable with the word spindle in stairs construction",
+            "A baluster can be a moulded shaft, square, or lathe-turned in form",
+            "Balusters should not allow a 100 mm diameter sphere pass between them",
+            "Balusters can be manufactured from a range of materials such as wood, iron, and plastic"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q8-None-cedar-cladding",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-cedar-cladding",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q8 — Cedar cladding",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • cedar cladding.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q8-None-cedar-cladding-r1",
+        "kind": "anyN",
+        "verbatim": "Cedar cladding",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Cedar cladding",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Cedar wood has natural durability giving an expected life of over 60 years without preservative treatment",
+            "Treatment of cladding is only necessary if the weathered silver-grey colour is not desired",
+            "Cedar cladding can be secured horizontally or vertically to battens",
+            "Cedar reacts with ferrous materials and should be fixed with stainless steel or galvanised fixings",
+            "Canadian cedar is the most commonly used variety due to its rich warm colours compared to European grown cedar",
+            "Cedar cladding has a low embodied energy compared to other external finishes"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q8-None-bridle-joint",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-bridle-joint",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q8 — Bridle joint",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • bridle joint.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q8-None-bridle-joint-r1",
+        "kind": "anyN",
+        "verbatim": "Bridle joint",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Bridle joint",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A bridle joint is a common strong woodworking joint with a large gluing area",
+            "The joint can be a Tee-bridle or Corner bridle joint",
+            "Bridle Joints involve the removal of one-third of the material from one piece and two-thirds of the material from the other piece",
+            "Suitable joining method for any corner angle or Tee type of frame joint configuration",
+            "The corner bridle joint can be used in frame construction",
+            "The Tee bridle can be used in table construction to join rails to uprights"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q8-None-wood-pellet-stove",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-wood-pellet-stove",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q8 — Wood pellet stove",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • wood pellet stove.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q8-None-wood-pellet-stove-r1",
+        "kind": "anyN",
+        "verbatim": "Wood pellet stove",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Wood pellet stove",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Provides heat to a home by burning renewable pellets made of condensed biomass materials or compressed wood",
+            "Compressed wood pellets are made from organic matter like sawdust and waste wood from logging, manufacturing, forest debris, and crop waste that is dried and pressed into pellet form",
+            "Similar to other renewable energy systems, a pellet stove can provide considerable savings for home heating costs by enhancing the heat in all or part of your home",
+            "Using an auger to steadily feed fuel from a storage hopper into a burn area, it produces a constant flame that requires little adjustments",
+            "Pellet stoves are a low-cost heating alternative that have a smaller impact on the environment than traditional heating sources",
+            "Pellet fuel expels extremely low emissions making a pellet stove a highly environmentally-friendly and cost-effective option"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-ol-q8-None-floor-screed",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-floor-screed",
+    "level": "ordinary",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 OL Q8 — Floor screed",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • floor screed.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-ol-q8-None-floor-screed-r1",
+        "kind": "anyN",
+        "verbatim": "Floor screed",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Floor screed",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "The final layer of the floor upon which a finished flooring material may be placed",
+            "There are a number of methods to installing floor screed",
+            "Tradition methods use a combination of sand, cement and water, usually in a sand/cement mix ratio of anywhere between 3:1 and 5:1",
+            "Modern methods include free flowing calcium sulphate liquid products which will self-level when poured on to the subfloor",
+            "Most self-levelling screeds are designed to be used with underfloor heating (UFH). Liquid floor screed is ideally placed at depths of between 50 - 75mm in conjunction with UFH",
+            "UFH pipes are clipped to the rigid insulation and the screed poured directly on top of the pipes"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  }
+]

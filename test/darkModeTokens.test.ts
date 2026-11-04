@@ -56,6 +56,9 @@ describe('dark mode tokens', () => {
       // equivalent — on a dark ground the authored colours already pass.
       '--accent-text',
       '--warning-text',
+      // The one orange (Kobra's --nsu-orange, also Tailwind's accent) is the
+      // same in both themes, as it is in approved-ui-theme.css.
+      '--nsu-orange',
     ]);
     const missing = [...light.keys()]
       .filter(k => !dark.has(k) && !themeIndependent.has(k));
@@ -132,8 +135,10 @@ describe('dark mode compatibility layer', () => {
 describe('screens opt into a dark treatment', () => {
   // Every screen here rendered white cards under near-white text before the fix.
   const needsCompat = [
-    'components/LoginPage.tsx',
-    'components/ResetPasswordPage.tsx',
+    // LoginPage's themed root is owned by its shared account card.
+    'components/AccountCard.tsx',
+    // Password reset and every other email-action screen share AuthActionCard.
+    'components/AuthActionCard.tsx',
     'components/AccreditationPage.tsx',
     'components/CutContentPage.tsx',
     'components/WipTools.tsx',

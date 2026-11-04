@@ -1,0 +1,124 @@
+.setup-flow .setup-appearance {
+  border-top: 1px solid var(--setup-line);
+  padding: 28px 0 4px;
+  margin: 0 0 22px;
+}
+.desk-flow .setup-appearance { width: 100%; padding-top: 22px; }
+.setup-appearance legend {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 8px;
+  font: 500 28px/1.2 'Source Serif 4', Georgia, serif;
+  letter-spacing: -.5px;
+}
+.setup-appearance > p {
+  clear: both;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--setup-muted);
+  margin: 0;
+}
+.setup-appearance-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+.setup-appearance-card {
+  position: relative;
+  min-width: 0;
+  padding: 7px;
+  border: 1px solid var(--setup-line);
+  border-radius: 13px;
+  background: var(--setup-bg);
+  color: var(--setup-ink);
+  cursor: pointer;
+  transition: border-color .16s, box-shadow .16s;
+}
+.setup-appearance-card:hover { border-color: var(--setup-ink); }
+.setup-appearance-card[data-selected=true] {
+  border-color: var(--setup-ink);
+  box-shadow: 0 0 0 1px var(--setup-ink);
+}
+.setup-appearance-card:has(input:focus-visible) {
+  outline: 3px solid var(--setup-ink);
+  outline-offset: 4px;
+}
+.setup-appearance-card > input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+.setup-appearance:disabled .setup-appearance-card,
+.setup-appearance:disabled input { cursor: default; }
+.setup-appearance-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 6px 6px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.setup-appearance-name > i {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--setup-muted);
+  border-radius: 50%;
+}
+.setup-appearance-card[data-selected=true] .setup-appearance-name > i {
+  background: #f26b1f;
+  border-color: #f26b1f;
+  color: #1a1a1a;
+}
+.setup-appearance-preview {
+  border: 1px solid #dedbd6;
+  border-radius: 7px;
+  background: #fff;
+  color: #1a1a1a;
+  overflow: hidden;
+}
+.setup-appearance-preview[data-mode=dark] {
+  background: #1a1a1a;
+  color: #fff;
+  border-color: #454545;
+}
+.setup-appearance-mini-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #88888840;
+}
+.setup-appearance-mini-nav b { font-size: 9px; letter-spacing: -.3px; }
+.setup-appearance-mini-nav > i { width: 8px; height: 8px; background: #f26b1f; border-radius: 50%; }
+.setup-appearance-mini-content { padding: 14px 12px; }
+.setup-appearance-mini-content > small { display: block; font-size: 7px; letter-spacing: .1em; opacity: .7; margin-bottom: 9px; }
+.setup-appearance-mini-content > strong { display: block; font: 500 20px/1.1 'Source Serif 4', Georgia, serif; letter-spacing: -.4px; }
+.setup-appearance-mini-subjects { display: grid; grid-template-columns: 1fr auto; gap: 9px; border-top: 1px solid #88888840; padding-top: 10px; margin-top: 16px; }
+.setup-appearance-mini-subjects span { font-size: 8px; opacity: .8; }
+.setup-appearance-mini-subjects i { width: 25px; height: 3px; background: #f26b1f; align-self: center; border-radius: 2px; }
+.setup-appearance-mini-subjects i:last-child { width: 17px; }
+.setup-appearance-mini-action { display: flex; align-items: center; justify-content: space-between; background: #f26b1f; color: #1a1a1a; padding: 8px; margin-top: 15px; border-radius: 5px; font-size: 8px; }
+.setup-appearance .setup-appearance-help { font-size: 14px; margin-top: 16px; }
+.setup-flow[data-step=summary][data-surface=ink] { color-scheme: dark; }
+.desk-flow[data-step=summary][data-surface=paper] .desk-ready-note em { color: #c44d0f; }
+@media(prefers-reduced-motion: reduce) {
+  .setup-appearance-card { transition: none; }
+}
+@media(max-width: 400px) {
+  .setup-appearance-options { gap: 10px; }
+  .setup-appearance-card { padding: 5px; }
+  .setup-appearance-mini-content { padding: 12px 9px; }
+  .setup-appearance-mini-content > strong { font-size: 17px; }
+  .setup-appearance-mini-nav { padding: 9px; }
+  .setup-appearance-mini-subjects i { width: 19px; }
+  .setup-appearance-name { padding-inline: 3px; }
+}

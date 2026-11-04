@@ -1,110 +1,34 @@
 import path from 'path';
 import type { IncomingMessage, ServerResponse } from 'http';
-import { defineConfig, type Plugin } from 'vite';
+import { createFilter, defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
-import { pdfjsAssets } from './scripts/vite/pdfjsAssets';
-import {
-  PRIVACY_NOTICE,
-  TERMS_OF_USE,
-  LEGAL_TITLES,
-  PRIVACY_POLICY_VERSION,
-  LEGAL_LAST_UPDATED,
-  SUPPORT_EMAIL,
-  LEGAL_URL_RE,
-  type LegalDoc,
-  type Section,
-} from './components/legal/legalContent';
+import { standaloneDocumentRoutes } from './utils/pwaNavigation';
+import { createReadStream, readdirSync, readFileSync, statSync } from 'node:fs';
+import type { LegalDoc } from './components/legal/legalContent';
+import { renderLegalPage } from './components/legal/legalPage';
+import { PDFJS_RESOURCE_DIRS, pdfjsResourceFile, pdfjsResourceRoot } from './components/PaperTrail/pdfjsResources';
 
-// ── Public legal pages ──────────────────────────────────────────────────────
-// Emit /privacy.html + /terms.html from the SAME source the in-app modal uses
-// (components/legal/legalContent.ts), so the published policy can never drift
-// from what students accept in-app. Apple App Review requires a publicly
-// reachable privacy-policy URL — Firebase Hosting serves these straight from
-// dist (canonical URL: <your-domain>/privacy.html).
-const escHtml = (s: string) =>
-  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+// The app and public documents share the same copy, renderer helpers and CSS.
+const legalStyles = () => readFileSync(new URL('./components/legal/legal-document.css', import.meta.url), 'utf8');
 
-/** Escape first, then turn bare source URLs into anchors. Order matters: doing
- *  it the other way round would escape the markup we just generated. */
-const escHtmlLinked = (s: string) => {
-  LEGAL_URL_RE.lastIndex = 0;
-  return escHtml(s).replace(
-    LEGAL_URL_RE,
-    (url) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`,
-  );
-};
-
-function renderSections(sections: Section[]): string {
-  return sections
-    .map((section) => {
-      const parts: string[] = [];
-      let bullets: string[] = [];
-      const flush = () => {
-        if (bullets.length) {
-          parts.push(
-            `<ul>${bullets.map((b) => `<li>${escHtmlLinked(b.replace(/^•\s*/, ''))}</li>`).join('')}</ul>`,
-          );
-          bullets = [];
-        }
-      };
-      for (const line of section.body) {
-        if (line.startsWith('• ')) bullets.push(line);
-        else {
-          flush();
-          parts.push(`<p>${escHtmlLinked(line)}</p>`);
-        }
-      }
-      flush();
-      return `<section><h2>${escHtml(section.heading)}</h2>${parts.join('')}</section>`;
-    })
-    .join('\n');
-}
-
-function renderLegalPage(doc: LegalDoc): string {
-  const title = LEGAL_TITLES[doc];
-  const sections = doc === 'privacy' ? PRIVACY_NOTICE : TERMS_OF_USE;
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="index, follow" />
-<title>${escHtml(title)} · NextStepUni</title>
-<style>
-  :root { color-scheme: light; }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: #FAFBF6; color: #1a1a1a; line-height: 1.6;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased; }
-  main { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
-  .brand { font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #7a7068; margin: 0 0 14px; }
-  h1 { font-family: Georgia, "Source Serif 4", serif; font-size: 30px; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.01em; }
-  .meta { color: #9e9186; font-size: 13px; margin: 0 0 36px; }
-  h2 { font-family: Georgia, "Source Serif 4", serif; font-size: 19px; font-weight: 600; margin: 32px 0 8px; }
-  p, li { color: #3a3530; font-size: 15px; }
-  p { margin: 0 0 10px; }
-  ul { margin: 0 0 10px; padding-left: 20px; }
-  li { margin: 0 0 6px; }
-  a { color: #F26B1F; }
-  footer { margin-top: 48px; padding-top: 22px; border-top: 1px solid #e5e2dd; color: #7a7068; font-size: 13px; }
-  footer p { color: #7a7068; font-size: 13px; margin: 0 0 6px; }
-</style>
-</head>
-<body>
-<main>
-  <p class="brand">NextStepUni</p>
-  <h1>${escHtml(title)}</h1>
-  <p class="meta">Version ${escHtml(PRIVACY_POLICY_VERSION)} · Last updated ${escHtml(LEGAL_LAST_UPDATED)}</p>
-  ${renderSections(sections)}
-  <footer>
-    <p>Questions? Contact <a href="mailto:${escHtml(SUPPORT_EMAIL)}">${escHtml(SUPPORT_EMAIL)}</a>.</p>
-    <p>NextStepUni Ltd</p>
-    <p><a href="/privacy.html">Privacy Notice</a> &middot; <a href="/terms.html">Terms of Use</a></p>
-  </footer>
-</main>
-</body>
-</html>`;
+/**
+ * /landing is a Firebase hosting rewrite to /landing-dev.html (firebase.json).
+ * The dev and preview servers mirror it, so the sign-in card's "See the
+ * landing page" link works on localhost the way it does live.
+ */
+function landingRoute(): Plugin {
+  const rewrite = (req: IncomingMessage, _res: ServerResponse, next: () => void) => {
+    const [pathname, query] = (req.url || '').split('?');
+    if (pathname === '/landing') req.url = '/landing-dev.html' + (query ? `?${query}` : '');
+    if (pathname === '/certle' || pathname === '/certle/') req.url = '/certle.html' + (query ? `?${query}` : '');
+    next();
+  };
+  return {
+    name: 'landing-route',
+    configureServer(server) { server.middlewares.use(rewrite); },
+    configurePreviewServer(server) { server.middlewares.use(rewrite); },
+  };
 }
 
 function legalStaticPages(): Plugin {
@@ -119,15 +43,135 @@ function legalStaticPages(): Plugin {
     configureServer(server) {
       server.middlewares.use((req: IncomingMessage, res: ServerResponse, next: () => void) => {
         const url = (req.url || '').split('?')[0];
-        const doc = routes[url];
+        const archive = url.match(/^\/legal\/2026-09-24\/(privacy|terms)\.html$/);
+        const doc = routes[url] || (archive?.[1] as LegalDoc | undefined);
         if (!doc) return next();
         res.setHeader('Content-Type', 'text/html; charset=utf-8');
-        res.end(renderLegalPage(doc));
+        res.end(renderLegalPage(doc, legalStyles(), !!archive));
       });
     },
     generateBundle() {
-      this.emitFile({ type: 'asset', fileName: 'privacy.html', source: renderLegalPage('privacy') });
-      this.emitFile({ type: 'asset', fileName: 'terms.html', source: renderLegalPage('terms') });
+      this.emitFile({ type: 'asset', fileName: 'privacy.html', source: renderLegalPage('privacy', legalStyles()) });
+      this.emitFile({ type: 'asset', fileName: 'terms.html', source: renderLegalPage('terms', legalStyles()) });
+      for (const doc of ['privacy', 'terms'] as const) this.emitFile({ type: 'asset', fileName: `legal/2026-09-24/${doc}.html`, source: renderLegalPage(doc, legalStyles(), true) });
+    },
+  };
+}
+
+/**
+ * pdf.js runtime data (wasm decoders, CMaps, standard fonts) at the versioned
+ * path the Paper Trail passes to getDocument. Served from node_modules in dev,
+ * emitted into dist for production. Why the app needs it:
+ * components/PaperTrail/pdfjsResources.ts.
+ */
+function pdfjsResources(): Plugin {
+  const pkgDir = path.resolve(__dirname, 'node_modules/pdfjs-dist');
+  const { version } = JSON.parse(readFileSync(path.join(pkgDir, 'package.json'), 'utf8')) as { version: string };
+  const contentTypes: Record<string, string> = { '.wasm': 'application/wasm', '.js': 'text/javascript', '.ttf': 'font/ttf' };
+  return {
+    name: 'pdfjs-resources',
+    configureServer(server) {
+      server.middlewares.use((req: IncomingMessage, res: ServerResponse, next: () => void) => {
+        const file = pdfjsResourceFile((req.url || '').split('?')[0], version);
+        if (!file) return next();
+        const abs = path.join(pkgDir, file);
+        let found = false;
+        try { found = statSync(abs).isFile(); } catch { /* missing */ }
+        if (!found) { res.statusCode = 404; res.end(); return; }
+        res.setHeader('Content-Type', contentTypes[path.extname(abs)] ?? 'application/octet-stream');
+        createReadStream(abs).pipe(res);
+      });
+    },
+    generateBundle() {
+      const root = pdfjsResourceRoot(version).slice(1);
+      for (const dir of PDFJS_RESOURCE_DIRS) {
+        for (const name of readdirSync(path.join(pkgDir, dir))) {
+          this.emitFile({ type: 'asset', fileName: `${root}${dir}/${name}`, source: readFileSync(path.join(pkgDir, dir, name)) });
+        }
+      }
+    },
+  };
+}
+
+// Keep lazy-tool payloads OUT of the precache. The runtime app-chunks
+// rule (NetworkFirst on /assets/*.js) still caches each one the moment a
+// student actually opens the tool, so the only thing given up is having
+// it available offline before first use.
+//
+// Why this matters more than it looks. Every deploy rewrites every asset
+// hash, so the whole precache is re-downloaded by every returning
+// browser. Measured against the live site on 2026-08-28, the precache was
+// 4.4MB compressed and took ~4s to pull on a fast connection with six
+// parallel connections — and it runs in the background exactly while a
+// student is trying to log in or sign up, competing with the auth and
+// callable requests they are waiting on. Half of it, 2.24MB across 21
+// files, was exam corpus and lazy tool data that nobody on the login
+// screen has any use for.
+//
+// The subject corpora (higher-*/ordinary-*), Catch-Up Lane, Command Word
+// and three.js are all behind lazy routes. Precaching them bought
+// offline-before-first-use and cost every user a slow session after
+// every deploy. Bad trade; they are runtime-cached instead.
+//
+// Only lazy chunks may be listed: bootPrecacheGuard() fails the build if
+// the app shell imports one of them.
+const PRECACHE_IGNORES = [
+  '**/pdf.worker*.js', '**/vendor-pdfjs*.js', '**/DiagramVault*.js',
+  // pdf.js decoders and fonts, fetched by the worker only when a paper
+  // needs them (vite.config.ts pdfjsResources).
+  '**/pdfjs-*/**',
+  // Foundation decks are the same lazy subject corpora; the Irish
+  // Foundation deck passed the 3 MiB precache ceiling with the 2010 paper.
+  '**/higher-*.js', '**/ordinary-*.js', '**/foundation-*.js',
+  // Subject factories and Atlas registries are fetched with their lazy
+  // tools and cached by app-chunks; keep growing corpora out of install.
+  '**/factory-*.js', '**/reviewed-*.js',
+  // Reviewed Business rubric cards (cards/business/rubric.ts), shared
+  // by both Business level decks and past the 3 MB precache ceiling.
+  '**/rubric-*.js',
+  '**/exam-topic-data-*.js', '**/paper-topic-data-*.js',
+  '**/markbank-french-*.js',
+  '**/catchUpLaneData*.js', '**/commandWordData*.js',
+  '**/vendor-three*.js',
+  // PDF export libraries — only pulled in when a student or GC actually
+  // exports something.
+  '**/vendor-jspdf*.js', '**/html2canvas*.js',
+];
+const PRECACHE_MAX_BYTES = 3 * 1024 * 1024;
+
+/**
+ * Everything the app shell imports at boot must be in the service worker
+ * precache. A returning visitor's worker answers the first visit after a
+ * deploy with the previous shell. Any boot import the precache does not
+ * hold is then fetched from the network under its old hash, the hosting
+ * rewrite answers with index.html, the module fails its MIME check, and
+ * the page stays white until the student refreshes. That happened from
+ * #232 (2026-10-14), when the shell started importing exam-topic-data.
+ */
+function bootPrecacheGuard(): Plugin {
+  const ignored = createFilter(PRECACHE_IGNORES, null, { resolve: false });
+  return {
+    name: 'boot-precache-guard',
+    apply: 'build',
+    generateBundle(_options, bundle) {
+      const shell = Object.values(bundle).find((out) => out.type === 'chunk' && out.isEntry && out.name === 'main');
+      if (shell?.type !== 'chunk') return;
+      const boot = new Set<string>();
+      const visit = (fileName: string) => {
+        const chunk = bundle[fileName];
+        if (boot.has(fileName) || chunk?.type !== 'chunk') return;
+        boot.add(fileName);
+        chunk.imports.forEach(visit);
+      };
+      visit(shell.fileName);
+      const uncached = [...boot].filter((fileName) => {
+        const chunk = bundle[fileName];
+        return ignored(fileName) || (chunk.type === 'chunk' && Buffer.byteLength(chunk.code) > PRECACHE_MAX_BYTES);
+      });
+      if (uncached.length) {
+        this.error(`The app shell imports ${uncached.join(', ')} at boot, and the service worker does not precache ${uncached.length === 1 ? 'it' : 'them'}. `
+          + 'The first visit after a deploy would load a white page. Keep those chunks lazy (check manualChunks), or stop excluding them from the precache.');
+      }
     },
   };
 }
@@ -140,8 +184,10 @@ export default defineConfig(() => {
       },
       plugins: [
         react(),
-        pdfjsAssets(),
+        landingRoute(),
         legalStaticPages(),
+        pdfjsResources(),
+        bootPrecacheGuard(),
         VitePWA({
           registerType: 'autoUpdate',
           // Don't auto-inject the SW registration. We register manually in
@@ -155,6 +201,9 @@ export default defineConfig(() => {
             'icons/north-star-icon-192x192.png',
             'icons/north-star-icon-512x512.png',
             'fonts/*.otf',
+            'fonts/abc-diatype-*.woff2',
+            'fonts/dm-sans-wordmark-bold.woff2',
+            'sounds/study-bloom-*.wav',
           ],
           manifest: {
             name: 'Nextstep Learning Lab',
@@ -180,47 +229,16 @@ export default defineConfig(() => {
             // `autoUpdate` client can reload each tab onto the current bundle.
             skipWaiting: true,
             clientsClaim: true,
-        // Keep lazy-tool payloads OUT of the precache. The runtime app-chunks
-        // rule (NetworkFirst on /assets/*.js) still caches each one the moment a
-        // student actually opens the tool, so the only thing given up is having
-        // it available offline before first use.
-        //
-        // Why this matters more than it looks. Every deploy rewrites every asset
-        // hash, so the whole precache is re-downloaded by every returning
-        // browser. Measured against the live site on 2026-08-28, the precache was
-        // 4.4MB compressed and took ~4s to pull on a fast connection with six
-        // parallel connections — and it runs in the background exactly while a
-        // student is trying to log in or sign up, competing with the auth and
-        // callable requests they are waiting on. Half of it, 2.24MB across 21
-        // files, was exam corpus and lazy tool data that nobody on the login
-        // screen has any use for.
-        //
-        // The subject corpora (higher-*/ordinary-*), Catch-Up Lane, Command Word
-        // and three.js are all behind lazy routes. Precaching them bought
-        // offline-before-first-use and cost every user a slow session after
-        // every deploy. Bad trade; they are runtime-cached instead.
-        globIgnores: [
-          '**/pdf.worker*.js', '**/vendor-pdfjs*.js', '**/DiagramVault*.js',
-          '**/pdfjs-*/**',
-          // Foundation decks are the same lazy subject corpora; the Irish
-          // Foundation deck passed the 3 MiB precache ceiling with the 2010 paper.
-          '**/higher-*.js', '**/ordinary-*.js', '**/foundation-*.js',
-          // Mark Bank card factories hold the same lazy corpora (reached only through
-          // the per-level decks above); the Irish factory passed 3 MiB with 2025 OL Paper 1.
-          '**/factory-*.js',
-          '**/catchUpLaneData*.js', '**/commandWordData*.js',
-          '**/vendor-three*.js',
-          // PDF export libraries — only pulled in when a student or GC actually
-          // exports something.
-          '**/vendor-jspdf*.js', '**/html2canvas*.js',
-        ],
-            maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
+            globIgnores: PRECACHE_IGNORES,
+            maximumFileSizeToCacheInBytes: PRECACHE_MAX_BYTES,
             navigateFallback: 'index.html',
             // Legal pages are real static files (privacy.html / terms.html) emitted
             // by legalStaticPages(). Keep them OUT of the SPA navigate-fallback so an
             // installed PWA serves the actual page (not the app shell) — the public
             // Privacy Policy URL Apple/users hit must resolve to the notice itself.
-            navigateFallbackDenylist: [/\/privacy(\.html)?$/, /\/terms(\.html)?$/],
+            // The landing page is its own document: a returning visitor's service
+            // worker must not answer /landing with the cached app shell.
+            navigateFallbackDenylist: standaloneDocumentRoutes,
             runtimeCaching: [
               // Paper Trail answer sidecars — small per-paper coordinate JSON on
               // Firebase Storage. SWR: serve cache instantly, refetch in the
@@ -265,8 +283,14 @@ export default defineConfig(() => {
                 options: { cacheName: 'tool-icons-v1', expiration: { maxEntries: 60, maxAgeSeconds: 60 * 60 * 24 * 30 } },
               },
               // Static assets and 3D models — cache first
+              // Approved Journey sprites are versioned and cached only on use.
               {
-                urlPattern: /\/(assets|models)\/.*\.(glb|png|jpg|svg|webp|woff2?|wasm)$/i,
+                urlPattern: /\/journey-art\/visitors\/.*\.webp$/i,
+                handler: 'CacheFirst',
+                options: { cacheName: 'journey-visitors-v1', expiration: { maxEntries: 24, maxAgeSeconds: 60 * 60 * 24 * 90, purgeOnQuotaError: true } },
+              },
+              {
+                urlPattern: /\/(assets|models)\/.*\.(glb|png|jpg|svg|webp|woff2?)$/i,
                 handler: 'CacheFirst',
                 options: { cacheName: 'app-assets', expiration: { maxAgeSeconds: 60 * 60 * 24 * 30 } },
               },
@@ -312,6 +336,15 @@ export default defineConfig(() => {
         // document the accepted ceiling rather than emit a warning. (item 18)
         chunkSizeWarningLimit: 1200,
         rollupOptions: {
+          // Two documents: the app, and the landing page. The other *-dev.html
+          // harnesses stay out of the build; the landing page is live at
+          // /landing-dev.html (and /landing via a hosting rewrite).
+          input: {
+            main: path.resolve(__dirname, 'index.html'),
+            landing: path.resolve(__dirname, 'landing-dev.html'),
+            certle: path.resolve(__dirname, 'certle.html'),
+            landingDemo: path.resolve(__dirname, 'landing-demo.html'),
+          },
           output: {
             // Function form (not the object/array form) so EVERY module id is
             // classified deterministically. Audit 2026-06-01: the old object
@@ -322,6 +355,11 @@ export default defineConfig(() => {
             // first keeps it in vendor-react; three/jspdf then stay in their
             // own chunks, reachable only via the lazy Journey / PDF routes.
             manualChunks(id) {
+              // Both French levels share these reviewed corpora. Give each
+              // category its own chunk so the complete deck stays within cache
+              // limits, and runtime-cache it with the other lazy subject decks.
+              const frenchCards = id.match(/\/components\/MarkBank\/cards\/french\/(writing|reading|cloze|listening)\.(?:json|ts)$/);
+              if (frenchCards) return `markbank-french-${frenchCards[1]}`;
               // Paper Trail's generated corpus index and audited exam-topic
               // registries are static data, used only by the lazy Paper Trail
               // route. Keep both outside its interactive viewer chunk, and in
@@ -329,8 +367,21 @@ export default defineConfig(() => {
               // subject must not push either the renderer over the 2 MiB raw-JS
               // ceiling or the static-data chunks over the 1.2 MB warning
               // threshold. They are still fetched only when Paper Trail opens.
+              // French's reviewed task identities (every writing route, cloze gap,
+              // reading and listening task, 2010-2026) are the largest exam-topic
+              // registry; on their own they keep exam-topic-data under the 3 MiB
+              // precache ceiling instead of silently dropping it from the cache.
+              if (id.includes('/data/examTopics/french-')) return 'exam-topic-french';
               if (id.includes('/data/examTopics/')) return 'exam-topic-data';
               if (id.includes('/data/paperTrail/')) return 'paper-topic-data';
+              // The exam-topic registry resolves specifications through the
+              // curriculum registry, which the app shell also imports at boot.
+              // Rollup files a manual chunk's unassigned dependencies inside
+              // it, so these modules landed in exam-topic-data and the shell
+              // imported all ~5 MB of static exam data (with paper-topic-data
+              // and exam-topic-french) on every load. Give them their own chunk.
+              if (/\/(curriculumRegistry|curriculum)\.ts$/.test(id) || id.includes('/data/curriculum/')
+                || /\/components\/MarkBank\/(deck\.ts|cards\/sizes\.json)$/.test(id)) return 'curriculum';
               // Vite's __vitePreload helper and Rollup's CJS interop helpers are
               // used by EVERY lazy import()/CJS dep in the eager entry. If they
               // land inside a heavy lazy vendor chunk (they were ending up in

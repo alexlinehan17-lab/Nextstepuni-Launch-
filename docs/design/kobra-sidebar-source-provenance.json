@@ -1,0 +1,203 @@
+{
+  "fetchedAtUTC": "2026-10-04T14:49:18.857Z",
+  "source": "https://kobra.systems/r/",
+  "components": [
+    {
+      "name": "sidebar",
+      "dependencies": [
+        "@base-ui/react",
+        "@tabler/icons-react",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/ui/sidebar.tsx",
+          "bytes": 21617,
+          "sha256": "5cfefbf5b87eac98435f93fe6cf84c6d137c7daa6ff2b2ebed1c065891bdb62f"
+        },
+        {
+          "path": "hooks/use-mobile.ts",
+          "bytes": 534,
+          "sha256": "0f80363be97fa55037f1b453dfa816361763d0f60bf77bfc4db81d3d4c099866"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "dependencies": [
+        "@base-ui/react",
+        "@tabler/icons-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/dropdown-menu.tsx",
+          "bytes": 10060,
+          "sha256": "a31b372d2ef3cddbed5f5b9eb36d839504b4c0ee6cb6fdda140d58dcffdbd3be"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/avatar.tsx",
+          "bytes": 3862,
+          "sha256": "f7eecc5b71a0cb7f5701a53f6147502cabc5df5c12cd16403115f6cb06778cc2"
+        }
+      ]
+    },
+    {
+      "name": "kbd",
+      "files": [
+        {
+          "path": "components/ui/kbd.tsx",
+          "bytes": 1512,
+          "sha256": "33439bfc42933b87a8b9418f5f728332a4f667c40c698cf5f44dce146fb91dc1"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "dependencies": [
+        "@base-ui/react",
+        "@tabler/icons-react",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/ui/dialog.tsx",
+          "bytes": 6234,
+          "sha256": "247f99cd7964a93e94b269959aba896817549fa62ac720f1804802844afa36dd"
+        }
+      ]
+    },
+    {
+      "name": "resizable",
+      "dependencies": [
+        "react-resizable-panels"
+      ],
+      "files": [
+        {
+          "path": "components/ui/resizable.tsx",
+          "bytes": 1628,
+          "sha256": "aeaa7cff0bfa15bfd2d8a7553dda6dd641e2a717c64a424262e0141c4885eff3"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/ui/button.tsx",
+          "bytes": 7512,
+          "sha256": "8dfec60d66229ad67826df8ca9127ac34d9995a60623ba98725da91c8661fb8a"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/input.tsx",
+          "bytes": 1265,
+          "sha256": "42c42fcd29937f2bb230e4624139c95d7cf7098f8dbfef42e010e9d7fe535460"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/separator.tsx",
+          "bytes": 603,
+          "sha256": "b52f291dd392c737aba8f5412b028863eeb714a43f1a05fce6e621ae5b9eac32"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "dependencies": [
+        "@base-ui/react",
+        "@tabler/icons-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/sheet.tsx",
+          "bytes": 4735,
+          "sha256": "f52f9336889c8ea891879713a7c94714c7d066b3863ec7b1fa4b29d982433129"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "files": [
+        {
+          "path": "components/ui/skeleton.tsx",
+          "bytes": 439,
+          "sha256": "b5fa4fe847026e42a298334fd390ba2ad781963cdc057ba10e8d6243f4b20d56"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "dependencies": [
+        "@base-ui/react",
+        "torph"
+      ],
+      "files": [
+        {
+          "path": "components/ui/tooltip.tsx",
+          "bytes": 9731,
+          "sha256": "775bc8844578757040d2ef0fe24d1d9d369253a1c1f585429c163e7bd426aada"
+        },
+        {
+          "path": "lib/joined-script.ts",
+          "bytes": 216,
+          "sha256": "2bb35c72a9e0cf1f428807f7809670c31830b5e8cf22949014dc9b1b54ca3e90"
+        }
+      ]
+    },
+    {
+      "name": "sound",
+      "fetchedAtUTC": "2026-10-05T09:20:58.458Z",
+      "dependencies": [
+        "@web-kits/audio"
+      ],
+      "files": [
+        {
+          "path": "components/ui/sound.tsx",
+          "bytes": 19750,
+          "sha256": "b0229531a354d503b20f04bc76aba51c9f5cabb2963de431f4a15ef6fdf60261"
+        }
+      ]
+    }
+  ],
+  "sidebarResize": {
+    "source": "https://kobra.systems/assets/component-gallery-CRRSDTSW.js",
+    "fetchedAtUTC": "2026-10-05T09:20:58.459Z",
+    "sha256": "0020f90bb7dcf0180baffba4558aa30d28e3468b22f09f3f4a6bb4e18bd130b0",
+    "adaptation": "Resize sidebar separator from the current single-layout sidebar example. Preserves pointer capture, delta-based sizing, width bounds, 16px keyboard steps and double-click reset.",
+    "adaptations": [
+      "NextStepUni ink divider styling and viewport-aware width bounds.",
+      "Persisted device width preference.",
+      "Pointer-capture loss and unmount cleanup."
+    ]
+  },
+  "soundAdaptations": [
+    "Shared document listener ownership prevents duplicate cues across sidebar, page scopes and portals.",
+    "Untrusted pointer events synthesized by Motion are ignored because the real keyboard event already plays its cue."
+  ]
+}

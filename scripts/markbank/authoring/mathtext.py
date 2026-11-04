@@ -189,17 +189,144 @@ BAR_MAX_HEIGHT, BAR_MIN_WIDTH, BAR_MAX_WIDTH = 3.0, 4.0, 140.0
 REACH, SAME_COLUMN, GRID_MIN_WIDTH, SAME_LINE, LINE_TOL = 16.0, 2.0, 25.0, 6.0, 3.5
 
 
-def _bars(page):
+_CHARCACHE = {}
+_ANON = []          # nameless documents, pinned so their id() stays theirs
+
+
+def page_key(page):
+    """A cache key that still means this page after the document is closed.
+
+    id() is unique only among LIVE objects. Every reader in this bank opens one
+    scheme, reads it, and drops it before opening the next, so the next
+    document is regularly allocated at the freed address and inherits the
+    previous one's cached characters. That is not a slow leak: it is silent
+    corruption of the glyph geometry the fraction splice runs on, and two
+    identical runs of am_scheme.py disagreed on six of Applied Mathematics'
+    priced steps because of it -- one run read 2023 Ordinary Q8(a)(ii) as
+    "1.0069^60(12000) = A((1.0069^60 - 1)/0.0069) so A = EUR244.93" and the
+    next as "1.0069^60-1 ) so A = EUR244.93". A document's FILE NAME is what
+    identifies it; a document opened from a stream has none, so that one is
+    pinned instead, which is what makes its id honest.
+    """
+    doc = page.parent
+    name = getattr(doc, 'name', None)
+    if not name:
+        if not any(d is doc for d in _ANON):
+            _ANON.append(doc)
+        return (id(doc), page.number)
+    return (name, page.number)
+
+
+def _chars(page):
+    """[(char, bbox)] for every printed glyph on the page."""
+    key = page_key(page)
+    if key not in _CHARCACHE:
+        out = []
+        for b in page.get_text('rawdict')['blocks']:
+            for ln in b.get('lines', []):
+                for sp in ln.get('spans', []):
+                    for c in sp['chars']:
+                        if c['c'].strip():
+                            out.append((c['c'], c['bbox']))
+        _CHARCACHE[key] = out
+    return _CHARCACHE[key]
+
+
+def _is_notation_rule(page, r, radicals=False):
+    """A thin rule that is NOT a fraction bar.
+
+    Three of them, all found by reading what the schemes actually draw:
+
+      * a STRIKETHROUGH, drawn THROUGH the words it cancels — the Applied
+        Maths scheme crosses out the edges Kruskal's algorithm rejects,
+        "|OA| = 62";
+      * an UNDERLINE, drawn along the baseline of a run of words — the same
+        scheme heads its two alternative solutions "Kruskal's algorithm" and
+        "Prim's algorithm" that way;
+      * a RADICAL's overbar, drawn over the expression under the sqrt sign,
+        with the sqrt glyph itself ending where the bar begins.
+
+    Each one was spliced as a fraction: the first two welded two rows of a
+    two-column table into one line, and the third turned "t = 5 +- sqrt(2) s"
+    and the row above it into one unreadable string.
+
+    What separates each from a fraction bar is measured, not assumed. A
+    strikethrough crosses a glyph's MIDDLE; a fraction bar sits at the very
+    edge of the glyph above or below it, which is why the test is on the
+    distance from the glyph's centre and not on its bounding box (a bounding
+    box test threw away a quarter of the fraction bars in the Maths schemes:
+    a tight "1/4" draws its bar inside the denominator's box). An underline
+    runs beneath SEVERAL glyphs of one line at once, which no fraction bar
+    does — a fraction's denominator sits below the bar, not on it.
+    """
+    centre = (r.y0 + r.y1) / 2
+    above = []
+    for ch, bb in _chars(page):
+        if bb[0] >= r.x1 or bb[2] <= r.x0:
+            if ch in '\u221a\u0da5\u0da9' and abs(bb[2] - r.x0) <= 3.5 \
+                    and bb[1] - 2 <= centre <= bb[3] + 2:
+                return True                  # a radical's own overbar
+            continue
+        # The same radical test, for a sqrt sign that OVERLAPS its own bar.
+        # A sqrt sign is drawn to MEET the bar it opens, and where the two meet
+        # the glyph box and the rule can overlap: the Applied Maths scheme sets
+        # "t = 5 +- sqrt(2) s" with the sign ending at x=106.16 and the bar
+        # beginning at x=106.14, two hundredths of a point, and the test above
+        # never ran. The bar was then spliced as a fraction and swallowed the
+        # priced step printed on the line above it.
+        #
+        # Asked only when the caller says to. It is a strict widening -- more
+        # rules called notation, so fewer fractions spliced -- and on the
+        # Mathematics schemes it leaves the card count alone but moves one card
+        # between two sittings and rewrites ten question texts, which is
+        # another agent's paused ledger to move. Applied Mathematics asks for
+        # it; Mathematics can adopt it when it is ready to re-measure.
+        if radicals and ch in '\u221a\u0da5\u0da9' \
+                and abs(bb[2] - r.x0) <= 3.5 \
+                and bb[1] - 2 <= centre <= bb[3] + 2:
+            return True
+        height = bb[3] - bb[1]
+        if height <= 0:
+            continue
+        # Struck through. Restricted to letters and digits: a stretched
+        # bracket's glyph box spans a whole fraction, so the bar crosses its
+        # middle by construction, and counting those threw away real bars.
+        # Demangled first: a stretched bracket is stored as an Ethiopic
+        # syllable, and Python calls that alphanumeric — so the raw test let
+        # every tall bracket count as a struck letter and threw away three
+        # hundred of the Maths schemes' own fraction bars.
+        plain = demangle(ch)
+        if (plain.isascii() and plain.isalnum() and height <= 20
+                and abs(centre - (bb[1] + bb[3]) / 2) <= 0.3 * height):
+            return True
+        # An underline is drawn ON the baseline, which sits a little ABOVE the
+        # glyph box's foot -- the box carries the font's descent even for a
+        # word with no descender in it, so "Kruskal's algorithm" is underlined
+        # 1.5 points inside its own box.
+        if -4.0 <= centre - bb[3] <= 3.0:
+            above.append((bb[0], ch))        # sitting on this glyph's baseline
+    # Underlined. A numerator sits on the bar too, so what marks an underline
+    # is that what sits on it is a WORD — four letters running together, which
+    # a numerator is not ("sin 2a", "84 + g", "2f"). The Applied Maths scheme
+    # heads its alternative solutions "Kruskal's algorithm" and "Prim's
+    # algorithm" this way and the splice welded the two columns under them
+    # into one line.
+    word = ''.join(demangle(c) for _x, c in sorted(above))
+    return bool(re.search(r'[A-Za-z]{6}', word))
+
+
+def _bars(page, radicals=False):
     """Thin rules that are not part of a grid: a table redraws its column
     border at every row, a fraction bar is drawn once."""
     rules = [d['rect'] for d in page.get_drawings()
              if d['rect'].height <= BAR_MAX_HEIGHT
              and BAR_MIN_WIDTH <= d['rect'].width <= BAR_MAX_WIDTH]
-    return [r for r in rules
-            if not (r.width >= GRID_MIN_WIDTH and any(
-                o is not r and abs(o.y0 - r.y0) > 2
-                and abs(o.x0 - r.x0) <= SAME_COLUMN
-                and abs(o.x1 - r.x1) <= SAME_COLUMN for o in rules))]
+    rules = [r for r in rules
+             if not (r.width >= GRID_MIN_WIDTH and any(
+                 o is not r and abs(o.y0 - r.y0) > 2
+                 and abs(o.x0 - r.x0) <= SAME_COLUMN
+                 and abs(o.x1 - r.x1) <= SAME_COLUMN for o in rules))]
+    return [r for r in rules if not _is_notation_rule(page, r, radicals)]
 
 
 def _mid(w):
@@ -223,8 +350,13 @@ def _close(cur):
     return (x0, y0, x1, y1, subscripts(superscripts(''.join(t for _, t in cur))))
 
 
-def words(page):
+def words(page, fix=None):
     """The page's words, each already read the way line_text() reads a line.
+
+    `fix` is an optional {(origin x, origin y): character} table for a font
+    whose ToUnicode map names the wrong LETTER — see am_glyphs.py, which
+    derives one from the glyph ids. Optional because only Applied Maths has
+    been measured to need it; passing nothing reads exactly as before.
 
     PyMuPDF's own get_text('words') carries no font size, so an exponent inside
     a fraction was flattened -- the scheme's "(28^2 + 4^2 - 30^2)/(2(28)(4))"
@@ -234,8 +366,8 @@ def words(page):
     splice reads it unchanged.
     """
     out = []
-    for b in page.get_text('rawdict')['blocks']:
-        for ln in b.get('lines', []):
+    for bi, b in enumerate(page.get_text('rawdict')['blocks']):
+        for li, ln in enumerate(b.get('lines', [])):
             weight = {}
             for sp in ln.get('spans', []):
                 for ch in sp['chars']:
@@ -245,18 +377,25 @@ def words(page):
                 continue
             base = max(weight, key=lambda k: (weight[k], k))
             cur, prev_y, prev_x1 = [], None, None
-            for sp in ln.get('spans', []):
-                for ch in sp['chars']:
+            for si, sp in enumerate(ln.get('spans', [])):
+                for ci, ch in enumerate(sp['chars']):
                     box = ch['bbox']
-                    if not ch['c'].strip() or (prev_x1 is not None
-                                               and box[0] - prev_x1 > 1.2):
+                    here = ch['c']
+                    if fix:
+                        key = (bi, li, si, ci)
+                        if key in fix:
+                            here = fix[key]
+                            if here is None:
+                                continue   # a zero-advance echo — am_glyphs
+                    if not here.strip() or (prev_x1 is not None
+                                            and box[0] - prev_x1 > 1.2):
                         if cur:
                             out.append(_close(cur))
                             cur = []
                     prev_x1 = box[2]
-                    if not ch['c'].strip():
+                    if not here.strip():
                         continue
-                    t = demangle(ch['c'])
+                    t = demangle(here)
                     tiny = sp['size'] <= base - 1.5
                     small = tiny and prev_y is not None
                     # A real exponent or index sits a few points off its base.
@@ -282,13 +421,18 @@ def words(page):
     return out
 
 
-def fractions(page, cut=None):
-    """[(x0, top, bottom, text)] -- each stacked fraction read back into a line."""
+def fractions(page, cut=None, fix=None, radicals=False):
+    """[(x0, top, bottom, text)] -- each stacked fraction read back into a line.
+
+    `radicals` widens the radical-overbar test to sqrt signs that overlap their
+    own bar; see _is_notation_rule. Off by default so a caller that has already
+    baselined its output does not move.
+    """
     if cut is None:
         cut = reader_cut(page)
-    found = [w for w in words(page) if w[4].strip()]
+    found = [w for w in words(page, fix) if w[4].strip()]
     out, band = [], []
-    for bar in sorted(_bars(page), key=lambda r: (r.y0, r.x0)) + [None]:
+    for bar in sorted(_bars(page, radicals), key=lambda r: (r.y0, r.x0)) + [None]:
         if band and (bar is None or bar.y0 - band[0].y0 > SAME_LINE):
             piece = _splice(found, band, cut)
             if piece:
@@ -324,6 +468,41 @@ def _bracket(side):
     return f'({s})' if re.search(r'[\s+\u2212\u2013\u2014-]', s) else s
 
 
+# Anything a side of a fraction can be MADE of: a digit or letter in any of
+# the blocks these fonts set maths in, a Greek letter, a raised or lowered
+# digit, or a radical. A run with none of these states no quantity.
+QUANTITY = re.compile(
+    r'[0-9A-Za-zͰ-Ͽ⁰-₟√'
+    r'\U0001d400-\U0001d7ffĀ-῿]')
+
+
+def _straddles(w, bar):
+    """Is this word printed THROUGH the bar rather than on one side of it?
+
+    A numerator ends at the bar and a denominator begins at it -- either may
+    cross it by a point, because a tight fraction draws its rule inside the
+    glyph box above or below. What no side of a fraction does is stand a
+    quarter of its own height clear on BOTH sides, which is what a character
+    set on the surrounding line does: the 2023 Higher scheme prints
+    "0² = 22.5² − 45s₃/t , i.e. s₃ = 11.25t" and the comma after the fraction
+    runs from 8 points above the rule to 7 below it. Three points wide, it
+    passed the overlap test on the bar's own right-hand slack and was read as
+    the NUMERATOR -- so the card offered "," where the SEC printed "45s₃".
+
+    Held to words with no letter, digit or Greek in them, because a word's box
+    is the union of its characters' and a STRETCHED BRACKET spans the whole
+    fraction by construction: "sin^-1 (1/2)" extracts "(1" as one word whose
+    box runs the height of the bracket, and measuring that one alone threw
+    away 268 of the 1,757 fractions in the Maths schemes. A side of a fraction
+    always states a quantity; a lone comma, full stop or equals sign is the
+    punctuation of the line the fraction is set in.
+    """
+    height = w[3] - w[1]
+    if height <= 0 or QUANTITY.search(w[4]):
+        return False
+    return (bar.y0 - w[1] >= 0.25 * height) and (w[3] - bar.y1 >= 0.25 * height)
+
+
 def _splice(words, band, cut=300):
     pieces, claimed, top, bottom = [], [], None, None
     side = band[0].x0 >= cut
@@ -333,9 +512,11 @@ def _splice(words, band, cut=300):
         # Sorted on the word's MIDPOINT: an exponent sets its glyph box from the
         # top, so a denominator like "d^2" starts fractionally ABOVE the bar.
         above = [w for w in words
-                 if bar.y0 - REACH < _mid(w) < bar.y0 and _over(w, x0, x1)]
+                 if bar.y0 - REACH < _mid(w) < bar.y0 and _over(w, x0, x1)
+                 and not _straddles(w, bar)]
         below = [w for w in words
-                 if bar.y1 < _mid(w) < bar.y1 + REACH and _over(w, x0, x1)]
+                 if bar.y1 < _mid(w) < bar.y1 + REACH and _over(w, x0, x1)
+                 and not _straddles(w, bar)]
         num = _one_line(above, key=lambda w: -_mid(w))
         den = _one_line(below, key=lambda w: _mid(w))
         if not num or not den:
@@ -381,7 +562,7 @@ def column_cut(page):
 
     So take the boundary from the page: a little left of its own header.
     """
-    key = (id(page.parent), page.number)
+    key = page_key(page)
     if key in _CUTCACHE:
         return _CUTCACHE[key]
     cut = DEFAULT_CUT
@@ -618,6 +799,16 @@ def clean_like(paths, fragment):
 
     Returns the fragment merely demangled when it cannot be located -- better a
     readable line than none, though it will be missing its exponents.
+
+    ASK IT FOR ONE BLOCK AT A TIME. _locate below matches a PREFIX and then
+    takes a window as long as the whole fragment, so a fragment that is really
+    several of the paper's blocks joined -- a part's setup and the romans under
+    it, say -- spends that window on the markers and command words printed
+    between them and runs off one end. Applied Maths asked for a part's blocks
+    joined and got the NEXT QUESTION back in place of the part's own opening
+    sentence; the same call, block by block, is exact on all 535 of that
+    subject's blocks. maths_lib.py already cleans piece by piece for this
+    reason.
     """
     ck = (tuple(paths), fragment)
     if ck in _LIKECACHE:

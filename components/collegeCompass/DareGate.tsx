@@ -93,7 +93,7 @@ const DareGate: React.FC<DareGateProps> = ({ categoryId, onCategoryChange }) => 
       </div>
 
       {category && (
-        <div className="rounded-xl p-3 mb-4" style={{ backgroundColor: '#F9F9F7' }}>
+        <div className="rounded-xl p-3 mb-4" style={{ backgroundColor: '#FFFFFF' }}>
           <p className="text-xs text-[#1A1A1A] mb-1.5 flex items-center gap-1.5">
             <Stethoscope size={13} style={{ color: COLORS.success }} />
             <span><span className="font-bold">Who confirms it:</span> {category.appropriateProfessional} — a GP alone isn’t enough.</span>
@@ -145,7 +145,7 @@ const DareGate: React.FC<DareGateProps> = ({ categoryId, onCategoryChange }) => 
       {/* Outcome */}
       <div
         className="rounded-xl px-4 py-3 text-center mb-4"
-        style={{ backgroundColor: both ? COLORS.successTint : '#F9F9F7' }}
+        style={{ backgroundColor: both ? COLORS.successTint : '#FFFFFF' }}
       >
         <p className="text-sm font-bold" style={{ color: both ? COLORS.successDarkText : '#1A1A1A' }}>
           {both

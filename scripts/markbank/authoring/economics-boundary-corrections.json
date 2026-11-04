@@ -1,0 +1,65 @@
+{
+  "scope": "Targeted omissions only; not full-paper completion evidence.",
+  "reviewedAt": "2026-10-07",
+  "corrections": [
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "question": "Section A Q3(i)–(ii)",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "cardId": "econ-2021-ol-sa-q3-i",
+      "marks": 15,
+      "reason": "Calculation and elastic interpretation retained together; no invented separate interpretation tariff.",
+      "lang": "ev",
+      "fileid": "LC034GLP000EV.pdf",
+      "paperSha256": "b01d03ceb002ae7dffbb38d9f1f077bfe78445b3dfb7bf951eb1ee4e9a3bf344",
+      "schemeSha256": "8bb86951565caab5f29da91a2796a908e76511b6bdff92c7652a74927d4541d6"
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "question": "Q12(a)(i)–(iii)",
+      "paperPages": [
+        13,
+        14,
+        15
+      ],
+      "schemePages": [
+        16
+      ],
+      "cardId": "econ-2022-ol-q12-a-i",
+      "marks": 28,
+      "reason": "One jointly marked diagram includes both curves and equilibrium labels; old supply-only card resolves through a progress alias.",
+      "lang": "ev",
+      "fileid": "LC034GLP000EV.pdf",
+      "paperSha256": "af77736574bbdde7b287156703f1a8272cb215bc607b1f93e9625ef374676bac",
+      "schemeSha256": "6e1d0553aa9509ad04664d652ce983d55d9d4d883cfb896892359985933444b0"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "question": "Q16(a)(i)",
+      "paperPages": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "schemePages": [
+        35
+      ],
+      "cardId": "econ-2023-hl-q16-a-i",
+      "marks": 8,
+      "reason": "The definitions are retained as their own task (individual demand 4 + market demand 4); the diagram and explanation (7 + 8) are econ-2023-hl-q16-a-ii. Re-review 2026-10-12 split the earlier aggregate 23.",
+      "lang": "ev",
+      "fileid": "LC034ALP000EV.pdf",
+      "paperSha256": "a13a6d0775bcafed1e226fe5a38bb7dfba3dcbb694a53e400e62669a309f8e94",
+      "schemeSha256": "fb6401260aec4446c13ac5665af2e890289640db08326376c2b4058f8a956390"
+    }
+  ]
+}

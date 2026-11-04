@@ -18,6 +18,8 @@ import { Check, ChevronDown } from 'lucide-react';
 import PageHeader from './ui/PageHeader';
 import { type CourseData } from './Library';
 import { LEARNING_PATHS, type LearningPath } from '../learningPaths';
+import { availableLearningPaths } from '../utils/courseVisibility';
+import type { CurriculumLevel } from '../utils/authUtils';
 
 type UserProgress = {
   [moduleId: string]: { unlockedSection: number };
@@ -28,6 +30,7 @@ interface LearningPathsViewProps {
   userProgress: UserProgress;
   onSelectModule: (moduleId: string) => void;
   onBack: () => void;
+  curriculumLevel?: CurriculumLevel;
 }
 
 // Editorial metadata layered on top of LEARNING_PATHS — eyebrow label,
@@ -65,8 +68,10 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
   userProgress,
   onSelectModule,
   onBack,
+  curriculumLevel,
 }) => {
   const [expandedPathId, setExpandedPathId] = useState<string | null>(null);
+  const paths = useMemo(() => availableLearningPaths(LEARNING_PATHS, allCourses, curriculumLevel), [allCourses, curriculumLevel]);
 
   const isModuleComplete = (moduleId: string) => {
     const course = allCourses.find(c => c.id === moduleId);
@@ -88,7 +93,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
   };
 
   const recommendedPathId = useMemo(() => {
-    const unfinished = LEARNING_PATHS.filter(path => getFirstIncomplete(path));
+    const unfinished = paths.filter(path => getFirstIncomplete(path));
     if (unfinished.length === 0) return null;
     return unfinished
       .map(path => {
@@ -101,18 +106,18 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
         return { id: path.id, score: (hasActiveModule ? 100 : 0) + (completed / Math.max(1, path.moduleIds.length)) };
       })
       .sort((a, b) => b.score - a.score)[0]?.id ?? null;
-  }, [allCourses, userProgress]);
+  }, [allCourses, userProgress, paths]);
 
   return (
     <div className="product-shell learning-paths-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] pb-32 transition-colors duration-500">
-      <div className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-4 md:px-10 dark:border-zinc-800 dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
+      <div data-student-page-header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-4 md:px-10 dark:border-zinc-800 dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
         <div className="mx-auto max-w-7xl"><PageHeader onBack={onBack} eyebrow="Guided learning" title="Learning Paths" compact /></div>
       </div>
       <div className="max-w-5xl mx-auto px-4 pt-32 sm:px-6">
 
         {/* ── Card grid ── */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          {LEARNING_PATHS.map((path, i) => {
+          {paths.map((path, i) => {
             const meta = PATH_META[path.id] ?? { eyebrow: 'Path', iconPath: '/assets/worlds/learn-book.png', accent: '#7DA37A', iconScale: 1.0, blobPath: BLOB_PATHS[0] };
             const completed = path.moduleIds.filter(id => isModuleComplete(id)).length;
             const total = path.moduleIds.length;
@@ -129,8 +134,8 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                 transition={{ duration: 0.5, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] as number[] }}
                 className="overflow-hidden"
                 style={{
-                  background: '#FFFFFF',
-                  border: '1px solid #E8E2D8',
+                  background: 'var(--surface-paper)',
+                  border: '1px solid var(--outline-soft)',
                   borderRadius: 22,
                   boxShadow: '0 4px 28px rgba(28,25,23,0.06), 0 1px 3px rgba(28,25,23,0.04)',
                 }}
@@ -218,7 +223,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                       marginTop: 6,
                     }}
                   >
-                    {path.subtitle}
+                    {total} modules available to you
                   </p>
 
                   {/* Description */}

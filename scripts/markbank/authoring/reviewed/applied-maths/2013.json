@@ -1,0 +1,3782 @@
+{
+  "subjectId": "applied-mathematics",
+  "year": 2013,
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Visual sweep of every page of both English question papers and marking schemes; task boundaries, allocations, shared instructions and topic assignments checked against rendered pages.",
+  "papers": [
+    {
+      "level": "higher",
+      "paperSha256": "d522264aac4484b07be1d7d9e221aeb24a4ebc50f169603e7cc12ed78cd1083b",
+      "schemeSha256": "6b658adb434fc96d45ef645af3e9b9e923b1f7f0a8dc3b13a5ebeb95cb180fee",
+      "questionPages": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "printedTaskCount": 34,
+      "practiceTaskCount": 37,
+      "availableMarks": 500,
+      "questionMarks": {
+        "1": 50,
+        "2": 50,
+        "3": 50,
+        "4": 50,
+        "5": 50,
+        "6": 50,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      },
+      "tasks": [
+        {
+          "ref": "Q1(a)",
+          "idSuffix": "1-a",
+          "questionText": "Calculate the time interval between the instants that the ball is 39.2 m above the point of projection.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.355
+            ]
+          ],
+          "schemePage": 4,
+          "schemeRegion": [
+            0.05,
+            0.195,
+            0.96,
+            0.665
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q1(b)(i)",
+          "idSuffix": "1-b-i",
+          "questionText": "Draw a speed-time graph for the motion of the lift.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.355
+            ]
+          ],
+          "schemePage": 5,
+          "schemeRegion": [
+            0.05,
+            0.31,
+            0.96,
+            0.46
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q1(b)(ii)",
+          "idSuffix": "1-b-ii",
+          "questionText": "Show that v = (1/2)f(t − t₁).",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.355
+            ]
+          ],
+          "schemePage": 5,
+          "schemeRegion": [
+            0.05,
+            0.475,
+            0.96,
+            0.52195
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q1(b)(iii)",
+          "idSuffix": "1-b-iii",
+          "questionText": "Show that t₁ = √(t² − 4d/f).",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.355
+            ]
+          ],
+          "schemePage": 5,
+          "schemeRegion": [
+            0.05,
+            0.525,
+            0.96,
+            0.74882
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q2(a)(i)",
+          "idSuffix": "2-a-i",
+          "questionText": "Find the distance between the cars when B is at the intersection.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-higher-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.405,
+              0.96,
+              0.84081
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.35,
+            0.96,
+            0.43276
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q2(a)(ii)",
+          "idSuffix": "2-a-ii",
+          "questionText": "If the shortest distance between the cars is 36 m, find the value of θ.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-higher-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.405,
+              0.96,
+              0.84081
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.435,
+            0.96,
+            0.70307
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q2(b)",
+          "idSuffix": "2-b",
+          "questionText": "Find the direction in which P should fly in order to intercept Q.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-higher-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.405,
+              0.96,
+              0.84081
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.2306,
+            0.96,
+            0.75
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(a)(i)",
+          "idSuffix": "3-a-i",
+          "questionText": "Show that R = 2u² sin α cos α/g.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-projectiles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.411
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.275,
+            0.96,
+            0.48
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(a)(ii)",
+          "idSuffix": "3-a-ii",
+          "questionText": "Find the value of α.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-projectiles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.411
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.49,
+            0.96,
+            0.755
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(b)",
+          "idSuffix": "3-b",
+          "questionText": "Find the value of θ that will give a maximum range up the inclined plane.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-projectiles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.411
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.235,
+            0.96,
+            0.74
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q4(a)(i)",
+          "idSuffix": "4-a-i",
+          "questionText": "Find the tension in the string when the lift remains at rest.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.455,
+              0.96,
+              0.88519
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.285,
+            0.96,
+            0.48601
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q4(a)(ii)",
+          "idSuffix": "4-a-ii",
+          "questionText": "Find the tension in the string when the lift is rising vertically with constant acceleration g/8.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.455,
+              0.96,
+              0.88519
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.5,
+            0.96,
+            0.74938
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q4(b)",
+          "idSuffix": "4-b",
+          "questionText": "Find the tension in the string in terms of m₁, m₂ and m₃.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.455,
+              0.96,
+              0.88519
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.325,
+            0.96,
+            0.83
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(a)(i)",
+          "idSuffix": "5-a-i",
+          "questionText": "Find the speed, in terms of u and e, of each sphere after the collision.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.48
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.245,
+            0.96,
+            0.40819
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(a)(ii)",
+          "idSuffix": "5-a-ii",
+          "questionText": "Find the value of e if the magnitude of the impulse imparted to each sphere as a result of the collision is 2mu.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.48
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.41,
+            0.96,
+            0.635
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(b)(i)",
+          "idSuffix": "5-b-i",
+          "questionText": "Find the value of the coefficient of restitution between the ball and the table.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.48
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.27,
+            0.96,
+            0.49354
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(b)(ii)",
+          "idSuffix": "5-b-ii",
+          "questionText": "Find the value of the coefficient of restitution between the ball and this thickness of paper.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.48
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.495,
+            0.96,
+            0.61935
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(b)(iii)",
+          "idSuffix": "5-b-iii",
+          "questionText": "What thickness of paper is required in order that the rebound will be one-sixteenth of the height of the fall?",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.48
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.62342,
+            0.96,
+            0.91007
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(a)(i)",
+          "idSuffix": "6-a-i",
+          "questionText": "Find the value of d when the block is in equilibrium.",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-higher-hydrostatics"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.515,
+              0.96,
+              0.94
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.21578,
+            0.96,
+            0.475
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(a)(ii)",
+          "idSuffix": "6-a-ii",
+          "questionText": "Find the period of the motion of the block if it is pushed down 0.3 m from the equilibrium position and then released.",
+          "topicId": "applied-mathematics-2-13",
+          "examTopicIds": [
+            "applied-mathematics-higher-simple-harmonic-motion"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.515,
+              0.96,
+              0.94
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.21578,
+            0.96,
+            0.74939
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(b)(i)",
+          "idSuffix": "6-b-i",
+          "questionText": "Find the tension in each part of the string in terms of m, l and ω.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.515,
+              0.96,
+              0.94
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.05369,
+            0.96,
+            0.735
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(b)(ii)",
+          "idSuffix": "6-b-ii",
+          "questionText": "At a given instant both parts of the string are cut. Find the time (in terms of l) which elapses before the mass strikes the horizontal surface.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-projectiles"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.515,
+              0.96,
+              0.94
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.75,
+            0.96,
+            0.88
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q7(a)",
+          "idSuffix": "7-a",
+          "questionText": "Find the acute angle θ.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-higher-statics-centre-of-gravity"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.48
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.19,
+            0.96,
+            0.535
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q7(b)(i) — Reaction at C",
+          "idSuffix": "7-b-i-c",
+          "questionText": "Find the reaction at A and the reaction at C.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-higher-statics-centre-of-gravity"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.48
+            ]
+          ],
+          "schemePage": 17,
+          "schemeRegion": [
+            0.05,
+            0.25212,
+            0.96,
+            0.60356
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻².",
+          "practiceFocus": "Reaction at C"
+        },
+        {
+          "ref": "Q7(b)(i) — Reaction at A",
+          "idSuffix": "7-b-i-a",
+          "questionText": "Find the reaction at A and the reaction at C.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-higher-statics-centre-of-gravity"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.48
+            ]
+          ],
+          "schemePage": 17,
+          "schemeRegion": [
+            0.05,
+            0.53279,
+            0.96,
+            0.68483
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻².",
+          "practiceFocus": "Reaction at A"
+        },
+        {
+          "ref": "Q7(b)(ii)",
+          "idSuffix": "7-b-ii",
+          "questionText": "Show that the tension in the string is q(1 + b)W/(2√(1 − q²)).",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-higher-statics-centre-of-gravity"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.48
+            ]
+          ],
+          "schemePage": 17,
+          "schemeRegion": [
+            0.05,
+            0.62004,
+            0.96,
+            0.87169
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q8(a)",
+          "idSuffix": "8-a",
+          "questionText": "Prove that the moment of inertia of a uniform circular disc, of mass m and radius r, about an axis through its centre perpendicular to its plane is (1/2)mr².",
+          "topicId": "applied-mathematics-2-12",
+          "examTopicIds": [
+            "applied-mathematics-higher-rigid-body-motion-moments-of-inertia"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.50705,
+              0.96,
+              0.835
+            ]
+          ],
+          "schemePage": 18,
+          "schemeRegion": [
+            0.05,
+            0.17,
+            0.96,
+            0.55
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q8(b)(i)",
+          "idSuffix": "8-b-i",
+          "questionText": "Find the period of small oscillations of the compound pendulum.",
+          "topicId": "applied-mathematics-2-12",
+          "examTopicIds": [
+            "applied-mathematics-higher-rigid-body-motion-moments-of-inertia"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.50705,
+              0.96,
+              0.835
+            ]
+          ],
+          "schemePage": 19,
+          "schemeRegion": [
+            0.05,
+            0.262,
+            0.96,
+            0.75
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q8(b)(ii)",
+          "idSuffix": "8-b-ii",
+          "questionText": "Find the length of the equivalent simple pendulum.",
+          "topicId": "applied-mathematics-2-12",
+          "examTopicIds": [
+            "applied-mathematics-higher-rigid-body-motion-moments-of-inertia"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.50705,
+              0.96,
+              0.835
+            ]
+          ],
+          "schemePage": 19,
+          "schemeRegion": [
+            0.05,
+            0.78,
+            0.96,
+            0.88
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q9(a) — Volume V₁",
+          "idSuffix": "9-a-v1",
+          "questionText": "Find the value of V₁ and the value of V₂.",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-higher-hydrostatics"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.315
+            ]
+          ],
+          "schemePage": 20,
+          "schemeRegion": [
+            0.05,
+            0.22,
+            0.96,
+            0.615
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻².",
+          "practiceFocus": "Volume V₁"
+        },
+        {
+          "ref": "Q9(a) — Volume V₂",
+          "idSuffix": "9-a-v2",
+          "questionText": "Find the value of V₁ and the value of V₂.",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-higher-hydrostatics"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.315
+            ]
+          ],
+          "schemePage": 20,
+          "schemeRegion": [
+            0.05,
+            0.625,
+            0.96,
+            0.685
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻².",
+          "practiceFocus": "Volume V₂"
+        },
+        {
+          "ref": "Q9(b)",
+          "idSuffix": "9-b",
+          "questionText": "Find the value of a.",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-higher-hydrostatics"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.96,
+              0.315
+            ]
+          ],
+          "schemePage": 21,
+          "schemeRegion": [
+            0.05,
+            0.225,
+            0.96,
+            0.65928
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q10(a)",
+          "idSuffix": "10-a",
+          "questionText": "If x² dy/dx − 7 = 0 and y = 1 when x = 7, find the value of y when x = 14.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.427,
+              0.96,
+              0.805
+            ]
+          ],
+          "schemePage": 22,
+          "schemeRegion": [
+            0.05,
+            0.46,
+            0.96,
+            0.80547
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q10(b)(i) — Velocity at t = 3",
+          "idSuffix": "10-b-i-velocity",
+          "questionText": "Find its velocity and its distance from O at time t = 3.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.427,
+              0.96,
+              0.805
+            ]
+          ],
+          "schemePage": 23,
+          "schemeRegion": [
+            0.05,
+            0.045,
+            0.96,
+            0.20787
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻².",
+          "practiceFocus": "Velocity at t = 3"
+        },
+        {
+          "ref": "Q10(b)(i) — Distance from O at t = 3",
+          "idSuffix": "10-b-i-distance",
+          "questionText": "Find its velocity and its distance from O at time t = 3.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.427,
+              0.96,
+              0.805
+            ]
+          ],
+          "schemePage": 23,
+          "schemeRegion": [
+            0.05,
+            0.18491,
+            0.96,
+            0.34298
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻².",
+          "practiceFocus": "Distance from O at t = 3"
+        },
+        {
+          "ref": "Q10(b)(ii)",
+          "idSuffix": "10-b-ii",
+          "questionText": "Find the value of t when the speed of the particle is 80 m s⁻¹.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.427,
+              0.96,
+              0.805
+            ]
+          ],
+          "schemePage": 23,
+          "schemeRegion": [
+            0.05,
+            0.345,
+            0.96,
+            0.535
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q10(c)",
+          "idSuffix": "10-c",
+          "questionText": "After how many more minutes will it be one-fifth full?",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.427,
+              0.96,
+              0.805
+            ]
+          ],
+          "schemePage": 23,
+          "schemeRegion": [
+            0.05,
+            0.56,
+            0.96,
+            0.88
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        }
+      ],
+      "selectionDirectives": [
+        {
+          "page": 1,
+          "text": "Six questions to be answered. All questions carry equal marks.",
+          "decision": "Whole-examination choice; all printed questions included."
+        }
+      ],
+      "selectionReview": [
+        {
+          "wording": "Six questions to be answered. All questions carry equal marks.",
+          "decision": "Whole-examination choice; all printed questions included."
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice.",
+      "boundaryReview": "Q5(a)(i) the two speeds share their final 5-mark bracket, and Q6(b)(i) the two tensions share their final 5-mark bracket. Q7(b)(i) reactions C and A are separately marked 10 each, Q9(a) volumes V1 and V2 are separately marked 20 and 5, and Q10(b)(i) velocity and distance are separately marked 5 and 10, so these are split. Common preparatory steps belong to the first scored output and are not counted twice. No finite answer-option pools occur."
+    },
+    {
+      "level": "ordinary",
+      "paperSha256": "6a1d05dd87779445954adad7e258a8b15332b85a7be380060f9bca5cd79fa946",
+      "schemeSha256": "6aa68735fb2e7f09a419449ab286afc4699d21b5a9b10987044aefbf2e3f36e3",
+      "questionPages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "printedTaskCount": 38,
+      "practiceTaskCount": 41,
+      "availableMarks": 450,
+      "questionMarks": {
+        "1": 50,
+        "2": 50,
+        "3": 50,
+        "4": 50,
+        "5": 50,
+        "6": 50,
+        "7": 50,
+        "8": 50,
+        "9": 50
+      },
+      "tasks": [
+        {
+          "ref": "Q1(i)",
+          "idSuffix": "1-i",
+          "questionText": "Find the deceleration.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.077,
+              0.96,
+              0.305
+            ]
+          ],
+          "schemePage": 4,
+          "schemeRegion": [
+            0.05,
+            0.295,
+            0.96,
+            0.38046
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q1(ii)",
+          "idSuffix": "1-ii",
+          "questionText": "Find the acceleration.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.077,
+              0.96,
+              0.305
+            ]
+          ],
+          "schemePage": 4,
+          "schemeRegion": [
+            0.05,
+            0.385,
+            0.96,
+            0.47258
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q1(iii)",
+          "idSuffix": "1-iii",
+          "questionText": "Find |PQ|, the distance from P to Q.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.077,
+              0.96,
+              0.305
+            ]
+          ],
+          "schemePage": 4,
+          "schemeRegion": [
+            0.05,
+            0.478,
+            0.96,
+            0.74
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q1(iv)",
+          "idSuffix": "1-iv",
+          "questionText": "Find the speed of the car 12 seconds before it passes Q.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.077,
+              0.96,
+              0.305
+            ]
+          ],
+          "schemePage": 4,
+          "schemeRegion": [
+            0.05,
+            0.74,
+            0.96,
+            0.825
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q1(v)",
+          "idSuffix": "1-v",
+          "questionText": "Find the average speed of the car between P and Q.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.077,
+              0.96,
+              0.305
+            ]
+          ],
+          "schemePage": 4,
+          "schemeRegion": [
+            0.05,
+            0.825,
+            0.96,
+            0.906
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q2(i)",
+          "idSuffix": "2-i",
+          "questionText": "Find the velocity of C in terms of i⃗ and j⃗.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.305,
+              0.96,
+              0.635
+            ]
+          ],
+          "schemePage": 5,
+          "schemeRegion": [
+            0.05,
+            0.372,
+            0.96,
+            0.50175
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(ii)",
+          "idSuffix": "2-ii",
+          "questionText": "Find the velocity of B relative to C in terms of i⃗ and j⃗.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.305,
+              0.96,
+              0.635
+            ]
+          ],
+          "schemePage": 5,
+          "schemeRegion": [
+            0.05,
+            0.37327,
+            0.96,
+            0.5
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(iii) — Magnitude of relative velocity",
+          "idSuffix": "2-iii-magnitude",
+          "questionText": "Find the magnitude and direction of the velocity of B relative to C.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.305,
+              0.96,
+              0.635
+            ]
+          ],
+          "schemePage": 5,
+          "schemeRegion": [
+            0.05,
+            0.531,
+            0.96,
+            0.59769
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate.",
+          "practiceFocus": "Magnitude of relative velocity"
+        },
+        {
+          "ref": "Q2(iii) — Direction of relative velocity",
+          "idSuffix": "2-iii-direction",
+          "questionText": "Find the magnitude and direction of the velocity of B relative to C.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.305,
+              0.96,
+              0.635
+            ]
+          ],
+          "schemePage": 5,
+          "schemeRegion": [
+            0.05,
+            0.57184,
+            0.96,
+            0.67652
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate.",
+          "practiceFocus": "Direction of relative velocity"
+        },
+        {
+          "ref": "Q2(iv)",
+          "idSuffix": "2-iv",
+          "questionText": "Find the time it takes B to cross the river.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.305,
+              0.96,
+              0.635
+            ]
+          ],
+          "schemePage": 5,
+          "schemeRegion": [
+            0.05,
+            0.708,
+            0.96,
+            0.7781
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(v)",
+          "idSuffix": "2-v",
+          "questionText": "Find |PQ|, the distance from P to Q.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.305,
+              0.96,
+              0.635
+            ]
+          ],
+          "schemePage": 5,
+          "schemeRegion": [
+            0.05,
+            0.79,
+            0.96,
+            0.87582
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(i)",
+          "idSuffix": "3-i",
+          "questionText": "Find the time taken to reach the maximum height.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.636,
+              0.96,
+              0.92
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.31,
+            0.96,
+            0.39
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(ii)",
+          "idSuffix": "3-ii",
+          "questionText": "Find the maximum height above ground level.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.636,
+              0.96,
+              0.92
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.42617,
+            0.96,
+            0.50873
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(iii)",
+          "idSuffix": "3-iii",
+          "questionText": "Find the time of flight.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.636,
+              0.96,
+              0.92
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.54384,
+            0.96,
+            0.63
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(iv)",
+          "idSuffix": "3-iv",
+          "questionText": "Find |AB|, the distance from A to B.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.636,
+              0.96,
+              0.92
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.66286,
+            0.96,
+            0.719
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(v)",
+          "idSuffix": "3-v",
+          "questionText": "Find the speed of the particle as it strikes the ground.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.636,
+              0.96,
+              0.92
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.739,
+            0.96,
+            0.86898
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(a)(i)",
+          "idSuffix": "4-a-i",
+          "questionText": "Show on separate diagrams the forces acting on each particle.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.078,
+              0.96,
+              0.636
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.33862,
+            0.96,
+            0.50176
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q4(a)(ii)",
+          "idSuffix": "4-a-ii",
+          "questionText": "Find the common acceleration of the particles.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.078,
+              0.96,
+              0.636
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.51,
+            0.96,
+            0.74166
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q4(a)(iii)",
+          "idSuffix": "4-a-iii",
+          "questionText": "Find the tension in the string.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.078,
+              0.96,
+              0.636
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.76872,
+            0.96,
+            0.8657
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q4(b)(i)",
+          "idSuffix": "4-b-i",
+          "questionText": "Find the common acceleration of the particles.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.078,
+              0.96,
+              0.636
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.325,
+            0.96,
+            0.69
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q4(b)(ii)",
+          "idSuffix": "4-b-ii",
+          "questionText": "Find the tension in the string.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.078,
+              0.96,
+              0.636
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.7,
+            0.96,
+            0.785
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q5(i)",
+          "idSuffix": "5-i",
+          "questionText": "Find the speed of A and the speed of B after the collision.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-impacts-collisions"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.65,
+              0.96,
+              0.905
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.28509,
+            0.96,
+            0.56651
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q5(ii)",
+          "idSuffix": "5-ii",
+          "questionText": "Find the loss in kinetic energy due to the collision.",
+          "topicId": "applied-mathematics-2-6",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-work-energy-power-momentum"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.65,
+              0.96,
+              0.905
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.59567,
+            0.96,
+            0.77042
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q5(iii)",
+          "idSuffix": "5-iii",
+          "questionText": "Find the magnitude of the impulse imparted to B due to the collision.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-impacts-collisions"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.65,
+              0.96,
+              0.905
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.801,
+            0.96,
+            0.85878
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q6(a)(i)",
+          "idSuffix": "6-a-i",
+          "questionText": "Find the value of x.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-centre-of-gravity"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.075,
+              0.96,
+              0.437
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.355,
+            0.96,
+            0.43053
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q6(a)(ii)",
+          "idSuffix": "6-a-ii",
+          "questionText": "Find the value of q.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-centre-of-gravity"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.075,
+              0.96,
+              0.437
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.40504,
+            0.96,
+            0.50702
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q6(b) — Horizontal coordinate, including shared area calculations",
+          "idSuffix": "6-b-x",
+          "questionText": "Find the co-ordinates of the centre of gravity of the remaining lamina.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-centre-of-gravity"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.075,
+              0.96,
+              0.437
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.54,
+            0.96,
+            0.79405
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻².",
+          "practiceFocus": "Horizontal coordinate, including shared area calculations"
+        },
+        {
+          "ref": "Q6(b) — Vertical coordinate",
+          "idSuffix": "6-b-y",
+          "questionText": "Find the co-ordinates of the centre of gravity of the remaining lamina.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-centre-of-gravity"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.075,
+              0.96,
+              0.437
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.814,
+            0.96,
+            0.87966
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻².",
+          "practiceFocus": "Vertical coordinate"
+        },
+        {
+          "ref": "Q7(a)",
+          "idSuffix": "7-a",
+          "questionText": "Find the coefficient of friction between the ladder and the ground.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-statics"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.415,
+              0.96,
+              0.905
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.325,
+            0.96,
+            0.78
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q7(b)(i)",
+          "idSuffix": "7-b-i",
+          "questionText": "Show on a diagram the forces acting on the particle.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-statics"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.415,
+              0.96,
+              0.905
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.34434,
+            0.96,
+            0.51757
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q7(b)(ii) — Horizontal force equation",
+          "idSuffix": "7-b-ii-horizontal",
+          "questionText": "Write down the two equations that arise from resolving these forces horizontally and vertically.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-statics"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.415,
+              0.96,
+              0.905
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.48814,
+            0.96,
+            0.543
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻².",
+          "practiceFocus": "Horizontal force equation"
+        },
+        {
+          "ref": "Q7(b)(ii) — Vertical force equation",
+          "idSuffix": "7-b-ii-vertical",
+          "questionText": "Write down the two equations that arise from resolving these forces horizontally and vertically.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-statics"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.415,
+              0.96,
+              0.905
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.54832,
+            0.96,
+            0.6
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻².",
+          "practiceFocus": "Vertical force equation"
+        },
+        {
+          "ref": "Q7(b)(iii)",
+          "idSuffix": "7-b-iii",
+          "questionText": "Solve these equations to find the tension in each of the strings.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-statics"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.415,
+              0.96,
+              0.905
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.60713,
+            0.96,
+            0.88
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(a)(i)",
+          "idSuffix": "8-a-i",
+          "questionText": "Find the acceleration of the particle.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.073,
+              0.96,
+              0.49
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.257,
+            0.96,
+            0.38397
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(a)(ii)",
+          "idSuffix": "8-a-ii",
+          "questionText": "Find the time taken to complete one revolution.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.073,
+              0.96,
+              0.49
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.407,
+            0.96,
+            0.665
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(b)(i)",
+          "idSuffix": "8-b-i",
+          "questionText": "Find the value of r.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.073,
+              0.96,
+              0.49
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.39457,
+            0.96,
+            0.46312
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(b)(ii)",
+          "idSuffix": "8-b-ii",
+          "questionText": "Show on a diagram all the forces acting on the particle.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.073,
+              0.96,
+              0.49
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.475,
+            0.96,
+            0.598
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(b)(iii)",
+          "idSuffix": "8-b-iii",
+          "questionText": "Find the reaction force between the particle and the surface of the cone.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.073,
+              0.96,
+              0.49
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.609,
+            0.96,
+            0.684
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(b)(iv)",
+          "idSuffix": "8-b-iv",
+          "questionText": "Calculate the speed of the particle.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.073,
+              0.96,
+              0.49
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.718,
+            0.96,
+            0.86756
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q9(a)",
+          "idSuffix": "9-a",
+          "questionText": "Find the weight of the cylinder.",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-hydrostatics"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.49,
+              0.96,
+              0.94361
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.425,
+            0.96,
+            0.56
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q9(b)",
+          "idSuffix": "9-b",
+          "questionText": "Find the tension in the string.",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-hydrostatics"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.49,
+              0.96,
+              0.94361
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.56,
+            0.96,
+            0.864
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                3,
+                10
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        }
+      ],
+      "selectionDirectives": [
+        {
+          "page": 1,
+          "text": "Six questions to be answered. All questions carry equal marks.",
+          "decision": "Whole-examination choice; all printed questions included."
+        }
+      ],
+      "selectionReview": [
+        {
+          "wording": "Six questions to be answered. All questions carry equal marks.",
+          "decision": "Whole-examination choice; all printed questions included."
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice.",
+      "boundaryReview": "Q2(iii) magnitude and direction have distinct 5-mark placements. Q4(a)(i) paired diagrams share one 10-mark placement; Q4(b)(i) includes its preparatory force diagrams. Q5(i) paired speeds share the final 5-mark placement. Q6(b) x and y coordinates have separate 10- and 5-mark placements, with the three common 5-mark area steps assigned to the first output (x:25, y:5). Q7(b)(ii) horizontal and vertical equations have separate 5-mark placements; Q7(b)(iii) paired tensions share the final 5 marks. No finite answer-option pools occur."
+    }
+  ]
+}

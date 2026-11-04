@@ -7,9 +7,10 @@
 
 import React, { useState, lazy, Suspense } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import BackButton from './ui/BackButton';
 import { MotionDiv } from './Motion';
 import {
-  ArrowLeft, CheckCircle2,
+  CheckCircle2,
   ChevronRight, Lock, BookOpen,
   Zap, Brain, Target, Shield, Compass, Star,
   Sun, Moon, Home, PanelLeft, Award, Settings, LogOut, Layers, RefreshCw, User, Bell
@@ -236,7 +237,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
             onClick={() => setSidebarOpen(!sidebarOpen)}
             className="flex items-center gap-3 px-3 py-3 w-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors shrink-0"
           >
-            <div className="w-9 h-9 rounded-lg overflow-hidden shrink-0 bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center">
+            <div className="w-9 h-9 rounded-full overflow-hidden shrink-0 bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center">
               {userAvatarSeed ? (
                 <Avatar seed={userAvatarSeed} alt="Avatar" className="w-full h-full object-cover" />
               ) : (
@@ -452,12 +453,10 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
       {/* Main content area */}
       <div className={`flex flex-col items-center pt-24 md:pt-32 pb-24 md:pb-12 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${hasSidebar ? (sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]') : ''}`}>
 
-      <header ref={headerRef} className="fixed top-0 left-0 right-0 z-[60] border-b border-zinc-200/50 dark:border-white/[0.06] px-4 md:px-10 bg-white dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}>
+      <header data-student-page-header ref={headerRef} className="fixed top-0 left-0 right-0 z-[60] border-b border-zinc-200/50 dark:border-white/[0.06] px-4 md:px-10 bg-white dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '16px' }}>
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4 md:gap-8">
-            <button onClick={onBack} className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
-              <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
-            </button>
+            <BackButton onClick={onBack} label="Back to learning paths" />
             <div className="hidden md:block h-10 w-px bg-zinc-200 dark:bg-zinc-800" />
             <div>
               <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">Module</p>

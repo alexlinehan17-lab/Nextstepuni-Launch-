@@ -1,0 +1,10 @@
+{
+  "asset": "public/assets/tools/coursework-companion.png",
+  "tool": "Built-in image_gen",
+  "prompt": "Create a single production app illustration for NextStepUni's Coursework Studio Launchpad tool. Square 1024 x 1024 transparent PNG. A tangible open project folder holding three overlapping sheets of paper, with a small paper clip and one short orange index tab. Coherent single centred physical object, not a collage. Opaque white paper and folder interiors, confident thick slightly irregular black hand-drawn contours, rounded corners, minimal inner detail: two short black writing strokes and a simple outlined diagram on the sheets. One restrained burnt orange #F26B1F tab is the only saturated detail. Friendly editorial ink illustration matching a hand-drawn school stationery icon family. Flat colour, no photographic textures, no gradients, no drop shadow, no background blob, no text, no letters, no numbers, no characters, no stars or sparkles. Keep the whole artwork inside the central 720 x 720 area with generous transparent margin on all sides so it remains readable at 80px and is safe within a cropped Launchpad icon viewport. All physical object surfaces must be opaque white, exterior canvas genuinely transparent.",
+  "checked": [
+    "Opaque white surfaces, black contours, restrained orange tab",
+    "Transparent RGBA canvas",
+    "Used by Launchpad ToolArtwork and ToolIconBlob"
+  ]
+}

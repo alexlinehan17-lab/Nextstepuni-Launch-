@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "higher",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "reviewedAt": "2026-10-07T20:15:17.671243+00:00",
+  "authoringReview": "scripts/markbank/authored/construction-studies-2015-higher-reviewed.json",
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+    "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+  },
+  "expectedRuntimeCards": 48,
+  "reason": "2015 Higher main English theory: all ten printed question numbers, the separate Q10 alternative and 48 source-reviewed tasks reconciled with lifted wording; every printed choice is one card (choice is not a route). Practical/Irish/other papers remain open.",
+  "questions": [
+    {
+      "n": "1",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-doors",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-question-1-drawing-questions",
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "n": "2",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "n": "3",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "n": "4",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-condensation-air-tightness",
+        "construction-studies-higher-conservation-restoration",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "n": "5",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-heat-u-value-calculations",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "n": "6",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "n": "7",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-floors",
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-wood-rot-ventilation"
+      ]
+    },
+    {
+      "n": "8",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-fireplaces-fire-prevention",
+        "construction-studies-higher-hot-water-space-heating"
+      ]
+    },
+    {
+      "n": "9",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-condensation-air-tightness",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "n": "10",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-condensation-air-tightness",
+        "construction-studies-higher-hot-water-space-heating",
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-wood-rot-ventilation"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "cardId": "cons-2015-hl-q1-a",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-3-7",
+        "cons-3-3",
+        "cons-4-2",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "2015 outgoing Construction Studies: scaled detail drawing, external door, external wall, solid ground-floor junction and thermal insulation are explicit in(a); accessibility in(b)is the external door threshold. These stable IDs are checked against curriculumRegistry for2015.",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-higher-question-1-drawing-questions",
+        "construction-studies-higher-doors",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q1-b",
+      "markBankTopicId": "cons-3-7",
+      "canonicalTopicIds": [
+        "cons-3-7"
+      ],
+      "canonicalTopicReview": "2015 outgoing Construction Studies: scaled detail drawing, external door, external wall, solid ground-floor junction and thermal insulation are explicit in(a); accessibility in(b)is the external door threshold. These stable IDs are checked against curriculumRegistry for2015.",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-higher-doors"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q1-complete",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-3-7",
+        "cons-3-3",
+        "cons-4-2",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-higher-question-1-drawing-questions",
+        "construction-studies-higher-doors",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q2-a",
+      "markBankTopicId": "cons-3-2",
+      "canonicalTopicIds": [
+        "cons-3-2"
+      ],
+      "canonicalTopicReview": "Construction Studies2015: external-envelope functions in(a), external-wall construction and performance evaluation in(b)/(c). No new-course remapping.",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q2-b",
+      "markBankTopicId": "cons-3-2",
+      "canonicalTopicIds": [
+        "cons-3-2",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Construction Studies2015: external-envelope functions in(a), external-wall construction and performance evaluation in(b)/(c). No new-course remapping.",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q2-c",
+      "markBankTopicId": "cons-3-2",
+      "canonicalTopicIds": [
+        "cons-3-2",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Construction Studies2015: external-envelope functions in(a), external-wall construction and performance evaluation in(b)/(c). No new-course remapping.",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q2-complete",
+      "markBankTopicId": "cons-3-2",
+      "canonicalTopicIds": [
+        "cons-3-2",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-a-A",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-a-B",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-a",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-b",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-c",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-complete",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q4-a",
+      "markBankTopicId": "cons-1-1",
+      "canonicalTopicIds": [
+        "cons-1-1",
+        "cons-1-2",
+        "cons-6-6",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "The union of the three printed items: conservation of vernacular buildings (1.1) and their setting (1.2), with breathable fabric and condensation control (6.6) and insulation (6.2).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-higher-conservation-restoration",
+        "construction-studies-higher-condensation-air-tightness",
+        "construction-studies-higher-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q4-b",
+      "markBankTopicId": "cons-1-1",
+      "canonicalTopicIds": [
+        "cons-1-1",
+        "cons-3-8",
+        "cons-3-9",
+        "cons-3-5",
+        "cons-3-6",
+        "cons-4-2",
+        "cons-4-3",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "The union of the three surveyed areas, all conservation work (1.1): the cut roof and its covering (3.8, 3.9), sash windows (3.5, 3.6), the suspended timber floor (4.2, 4.3) and their insulation (6.2).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-higher-conservation-restoration",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q4-complete",
+      "markBankTopicId": "cons-1-1",
+      "canonicalTopicIds": [
+        "cons-1-1",
+        "cons-1-2",
+        "cons-6-6",
+        "cons-6-2",
+        "cons-3-8",
+        "cons-3-9",
+        "cons-3-5",
+        "cons-3-6",
+        "cons-4-2",
+        "cons-4-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-higher-conservation-restoration",
+        "construction-studies-higher-condensation-air-tightness",
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-floors"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q5-a",
+      "markBankTopicId": "cons-6-1",
+      "canonicalTopicIds": [
+        "cons-6-1"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification: U-value resistance/transmittance is cons-6-1; annual heat-loss and running costs cons-6-3. Window-head water exclusion retains cons-3-4 DPC/lintels and cons-3-6 window-head details. Compound cards retain their full constituent topic union. The rubric heading naming a ground floor is a source typo; this printed question and all numerical layers describe an external wall.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-u-value-calculations"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q5-b-new",
+      "markBankTopicId": "cons-6-3",
+      "canonicalTopicIds": [
+        "cons-6-3"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification: U-value resistance/transmittance is cons-6-1; annual heat-loss and running costs cons-6-3. Window-head water exclusion retains cons-3-4 DPC/lintels and cons-3-6 window-head details. Compound cards retain their full constituent topic union. The rubric heading naming a ground floor is a source typo; this printed question and all numerical layers describe an external wall.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-u-value-calculations"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q5-b-existing",
+      "markBankTopicId": "cons-6-3",
+      "canonicalTopicIds": [
+        "cons-6-3"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification: U-value resistance/transmittance is cons-6-1; annual heat-loss and running costs cons-6-3. Window-head water exclusion retains cons-3-4 DPC/lintels and cons-3-6 window-head details. Compound cards retain their full constituent topic union. The rubric heading naming a ground floor is a source typo; this printed question and all numerical layers describe an external wall.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-u-value-calculations"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q5-b",
+      "markBankTopicId": "cons-6-3",
+      "canonicalTopicIds": [
+        "cons-6-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-u-value-calculations"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q5-c",
+      "markBankTopicId": "cons-3-4",
+      "canonicalTopicIds": [
+        "cons-3-4",
+        "cons-3-6"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification: U-value resistance/transmittance is cons-6-1; annual heat-loss and running costs cons-6-3. Window-head water exclusion retains cons-3-4 DPC/lintels and cons-3-6 window-head details. Compound cards retain their full constituent topic union. The rubric heading naming a ground floor is a source typo; this printed question and all numerical layers describe an external wall.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-walls",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q5-complete",
+      "markBankTopicId": "cons-6-1",
+      "canonicalTopicIds": [
+        "cons-6-1",
+        "cons-6-3",
+        "cons-3-4",
+        "cons-3-6"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-u-value-calculations",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-a",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-6-2",
+        "cons-6-4"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification. The source house explicitly combines environmental design, insulation and solar gain: part(a)retains built environment cons-1-2, insulating materials cons-6-2 and solar gain cons-6-4. Part(b)and NZEB discussion concern environmental design/lifetime resource use under cons-1-2; they do not require a numerical heat-loss calculation or a separate current-regulations test. Complete cards retain all constituent nodes. Solar/insulation topics supplement the reviewed environmental-design Atlas topic only where explicit in(a).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-b",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "All three printed items concern designing a house for low environmental impact (1.2).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-c",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification. The source house explicitly combines environmental design, insulation and solar gain: part(a)retains built environment cons-1-2, insulating materials cons-6-2 and solar gain cons-6-4. Part(b)and NZEB discussion concern environmental design/lifetime resource use under cons-1-2; they do not require a numerical heat-loss calculation or a separate current-regulations test. Complete cards retain all constituent nodes. Solar/insulation topics supplement the reviewed environmental-design Atlas topic only where explicit in(a).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-complete",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-6-2",
+        "cons-6-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q7-a",
+      "markBankTopicId": "cons-3-8",
+      "canonicalTopicIds": [
+        "cons-3-8",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-4-3",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "2015 outgoing: traditional cut roof forms/coverings, supporting wall, suspended attic floor and insulation are explicit content of(a). Ventilation(b)retains roofing and humidity/ventilation nodes. The drawing is response format for Q7, not the separate Atlas category specifically called Question1DrawingQuestions. Composite cards retain all constituent topics.",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q7-b-eaves",
+      "markBankTopicId": "cons-3-9",
+      "canonicalTopicIds": [
+        "cons-3-9",
+        "cons-6-5"
+      ],
+      "canonicalTopicReview": "2015 outgoing: traditional cut roof forms/coverings, supporting wall, suspended attic floor and insulation are explicit content of(a). Ventilation(b)retains roofing and humidity/ventilation nodes. The drawing is response format for Q7, not the separate Atlas category specifically called Question1DrawingQuestions. Composite cards retain all constituent topics.",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q7-b-ridge",
+      "markBankTopicId": "cons-3-9",
+      "canonicalTopicIds": [
+        "cons-3-9",
+        "cons-6-5"
+      ],
+      "canonicalTopicReview": "2015 outgoing: traditional cut roof forms/coverings, supporting wall, suspended attic floor and insulation are explicit content of(a). Ventilation(b)retains roofing and humidity/ventilation nodes. The drawing is response format for Q7, not the separate Atlas category specifically called Question1DrawingQuestions. Composite cards retain all constituent topics.",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q7-b",
+      "markBankTopicId": "cons-3-9",
+      "canonicalTopicIds": [
+        "cons-3-9",
+        "cons-6-5"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q7-complete",
+      "markBankTopicId": "cons-3-8",
+      "canonicalTopicIds": [
+        "cons-3-8",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-4-3",
+        "cons-6-2",
+        "cons-6-5"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q8-a",
+      "markBankTopicId": "cons-5-3",
+      "canonicalTopicIds": [
+        "cons-5-3",
+        "cons-5-2"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification: heating controls and hot/cold water systems are explicit in the zoned stove/solar-water system. Collector location is part of the water-heating design. Chimney location uses fireplaces/flues; hot press uses cylinder/pipework and heat-conservation nodes. Composite tasks retain the union.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q8-b",
+      "markBankTopicId": "cons-5-2",
+      "canonicalTopicIds": [
+        "cons-5-2",
+        "cons-5-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification: heating controls and hot/cold water systems are explicit in the zoned stove/solar-water system. Collector location is part of the water-heating design. Chimney location uses fireplaces/flues; hot press uses cylinder/pipework and heat-conservation nodes. Composite tasks retain the union.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q8-c-chimney",
+      "markBankTopicId": "cons-5-7",
+      "canonicalTopicIds": [
+        "cons-5-7"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification: heating controls and hot/cold water systems are explicit in the zoned stove/solar-water system. Collector location is part of the water-heating design. Chimney location uses fireplaces/flues; hot press uses cylinder/pipework and heat-conservation nodes. Composite tasks retain the union.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-fireplaces-fire-prevention"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q8-c-hotpress",
+      "markBankTopicId": "cons-5-2",
+      "canonicalTopicIds": [
+        "cons-5-2",
+        "cons-5-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification: heating controls and hot/cold water systems are explicit in the zoned stove/solar-water system. Collector location is part of the water-heating design. Chimney location uses fireplaces/flues; hot press uses cylinder/pipework and heat-conservation nodes. Composite tasks retain the union.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q8-c",
+      "markBankTopicId": "cons-5-7",
+      "canonicalTopicIds": [
+        "cons-5-7",
+        "cons-5-2",
+        "cons-5-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-fireplaces-fire-prevention",
+        "construction-studies-higher-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q8-complete",
+      "markBankTopicId": "cons-5-3",
+      "canonicalTopicIds": [
+        "cons-5-3",
+        "cons-5-2",
+        "cons-5-7"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-hot-water-space-heating",
+        "construction-studies-higher-fireplaces-fire-prevention"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-a",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-4-3",
+        "cons-3-6",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "Every location is a thermal-bridge insulation detail (6.2) at a junction of the external wall (3.3) with the roof eaves (3.9), the upper floor (4.3), the window cill (3.6) or the ground floor (4.2).",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-b",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-6-6"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-condensation-air-tightness"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-complete",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-4-3",
+        "cons-3-6",
+        "cons-4-2",
+        "cons-6-6"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-condensation-air-tightness"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-a",
+      "markBankTopicId": "cons-6-5",
+      "canonicalTopicIds": [
+        "cons-6-5",
+        "cons-6-6",
+        "cons-5-3",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "The union of the three printed items: airtightness and ventilation (6.5, 6.6), space heating (5.3) and heat loss (6.2) in Passive House design.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-condensation-air-tightness",
+        "construction-studies-higher-hot-water-space-heating",
+        "construction-studies-higher-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-b",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-c",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-7-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-complete",
+      "markBankTopicId": "cons-6-5",
+      "canonicalTopicIds": [
+        "cons-6-5",
+        "cons-6-6",
+        "cons-5-3",
+        "cons-6-2",
+        "cons-6-4",
+        "cons-7-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-condensation-air-tightness",
+        "construction-studies-higher-hot-water-space-heating",
+        "construction-studies-higher-wood-rot-ventilation",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-alt-discussion",
+      "markBankTopicId": "cons-7-4",
+      "canonicalTopicIds": [
+        "cons-7-4",
+        "cons-3-5"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-alt-glazing",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-alt-guidelines",
+      "markBankTopicId": "cons-7-4",
+      "canonicalTopicIds": [
+        "cons-7-4",
+        "cons-3-5",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-alt-complete",
+      "markBankTopicId": "cons-7-4",
+      "canonicalTopicIds": [
+        "cons-7-4",
+        "cons-3-5",
+        "cons-3-6",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    }
+  ]
+}

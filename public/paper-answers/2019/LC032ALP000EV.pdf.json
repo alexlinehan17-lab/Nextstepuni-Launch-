@@ -1,0 +1,2523 @@
+{
+  "band": [
+    1,
+    29
+  ],
+  "component": "",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC032ALP000EV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "1",
+      "pP": 2,
+      "pY": [
+        0.1294,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 3,
+          "r": [
+            0.0,
+            0.0937,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0883
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "2",
+      "pP": 4,
+      "pY": [
+        0.0702,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.0763,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0884
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "3",
+      "pP": 5,
+      "pY": [
+        0.0702,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0764,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.7751
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "4",
+      "pP": 6,
+      "pY": [
+        0.0702,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.7631,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0883
+          ]
+        }
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "schemeRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        }
+      ],
+      "practiceTask": {
+        "prompt": "Record on a tabular statement the effect each of the above transactions had on the relevant asset and liability and ascertain the total assets and liabilities on 31/12/2018.",
+        "focus": null,
+        "marks": 60
+      }
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "5",
+      "pP": 8,
+      "pY": [
+        0.1281,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0763,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0883
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "6",
+      "pP": 10,
+      "pY": [
+        0.0702,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0.0,
+            0.0763,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 16,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 17,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 18,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0883
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "7",
+      "pP": 12,
+      "pY": [
+        0.0702,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 18,
+          "r": [
+            0.0,
+            0.0763,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 19,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 20,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 21,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.6546
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "8",
+      "pP": 14,
+      "pY": [
+        0.1281,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 21,
+          "r": [
+            0.0,
+            0.6426,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 24,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 25,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.7522
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "9",
+      "pP": 16,
+      "pY": [
+        0.0702,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 25,
+          "r": [
+            0.0,
+            0.7402,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 26,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 27,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 28,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "n": "1(a)",
+      "label": "Question 1(a) · Company: trading and profit and loss account",
+      "pP": 2,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a trading and profit and loss account for the year ended 31/12/2018.",
+        "focus": null,
+        "marks": 75
+      }
+    },
+    {
+      "n": "1(b)",
+      "label": "Question 1(b) · Company: balance sheet",
+      "pP": 2,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a balance sheet as at 31/12/2018.",
+        "focus": null,
+        "marks": 45
+      }
+    },
+    {
+      "n": "2(a)",
+      "label": "Question 2(a) · Adjusted creditors control account",
+      "pP": 4,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the adjusted creditors’ ledger control account.",
+        "focus": null,
+        "marks": 24
+      }
+    },
+    {
+      "n": "2(b)",
+      "label": "Question 2(b) · Adjusted schedule of creditors",
+      "pP": 4,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the adjusted schedule of creditors showing the original balance.",
+        "focus": null,
+        "marks": 28
+      }
+    },
+    {
+      "n": "2(c)",
+      "label": "Question 2(c) · Purpose of creditors control and contra entries",
+      "pP": 4,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain the purpose of a creditors’ control account.\nExplain how a contra entry may arise.",
+        "focus": null,
+        "marks": 8
+      }
+    },
+    {
+      "n": "3(a)(i)-land-buildings",
+      "label": "Question 3(a)(i)-land-buildings · Land and buildings account",
+      "pP": 5,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the relevant ledger accounts in respect of the above transactions for the years ended 31/12/2014 to 31/12/2018.\n(Bank account and profit and loss account not required.)",
+        "focus": "Prepare the land and buildings account for all relevant years from 2014 to 2018.",
+        "marks": 12
+      }
+    },
+    {
+      "n": "3(a)(i)-revaluation",
+      "label": "Question 3(a)(i)-revaluation · Revaluation reserve account",
+      "pP": 5,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the relevant ledger accounts in respect of the above transactions for the years ended 31/12/2014 to 31/12/2018.\n(Bank account and profit and loss account not required.)",
+        "focus": "Prepare the revaluation reserve account for all relevant years from 2014 to 2018.",
+        "marks": 10
+      }
+    },
+    {
+      "n": "3(a)(i)-repairs",
+      "label": "Question 3(a)(i)-repairs · Repairs account",
+      "pP": 5,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the relevant ledger accounts in respect of the above transactions for the years ended 31/12/2014 to 31/12/2018.\n(Bank account and profit and loss account not required.)",
+        "focus": "Prepare the repairs account for all relevant years from 2014 to 2018.",
+        "marks": 1
+      }
+    },
+    {
+      "n": "3(a)(i)-depreciation",
+      "label": "Question 3(a)(i)-depreciation · Provision for depreciation account",
+      "pP": 5,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the relevant ledger accounts in respect of the above transactions for the years ended 31/12/2014 to 31/12/2018.\n(Bank account and profit and loss account not required.)",
+        "focus": "Prepare the provision for depreciation account for all relevant years from 2014 to 2018.",
+        "marks": 16
+      }
+    },
+    {
+      "n": "3(a)(i)-disposal",
+      "label": "Question 3(a)(i)-disposal · Disposal account",
+      "pP": 5,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the relevant ledger accounts in respect of the above transactions for the years ended 31/12/2014 to 31/12/2018.\n(Bank account and profit and loss account not required.)",
+        "focus": "Prepare the disposal account for all relevant years from 2014 to 2018.",
+        "marks": 7
+      }
+    },
+    {
+      "n": "3(a)(i)-revenue-reserve",
+      "label": "Question 3(a)(i)-revenue-reserve · Revenue reserve account",
+      "pP": 5,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the relevant ledger accounts in respect of the above transactions for the years ended 31/12/2014 to 31/12/2018.\n(Bank account and profit and loss account not required.)",
+        "focus": "Prepare the revenue reserve account for all relevant years from 2014 to 2018.",
+        "marks": 2
+      }
+    },
+    {
+      "n": "3(a)(ii)",
+      "label": "Question 3(a)(ii) · Fixed assets: balance sheet extract",
+      "pP": 5,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Show the relevant extract from the balance sheet as at 31/12/2018.",
+        "focus": null,
+        "marks": 4
+      }
+    },
+    {
+      "n": "3(b)",
+      "label": "Question 3(b) · Capital, revenue expenditure and revaluation reserves",
+      "pP": 5,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Distinguish between capital and revenue expenditure.\nExplain what is meant by a revenue reserve in the context of revaluation.",
+        "focus": null,
+        "marks": 8
+      }
+    },
+    {
+      "n": "5(a)(i)",
+      "label": "Question 5(a)(i) · Cash sales from debtors collection period",
+      "pP": 8,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "You are required to calculate the following for 2018: (where appropriate calculations should be made to two decimal places).\nCash sales if the period of credit given to debtors is 1.5 months.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(a)(ii)",
+      "label": "Question 5(a)(ii) · Dividend yield",
+      "pP": 8,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "You are required to calculate the following for 2018: (where appropriate calculations should be made to two decimal places).\nDividend yield.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(a)(iii)",
+      "label": "Question 5(a)(iii) · Dividend cover",
+      "pP": 8,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "You are required to calculate the following for 2018: (where appropriate calculations should be made to two decimal places).\nDividend cover.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(a)(iv)",
+      "label": "Question 5(a)(iv) · Return on capital employed",
+      "pP": 8,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "You are required to calculate the following for 2018: (where appropriate calculations should be made to two decimal places).\nReturn on capital employed.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(a)(v)",
+      "label": "Question 5(a)(v) · Price earnings ratio",
+      "pP": 8,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "You are required to calculate the following for 2018: (where appropriate calculations should be made to two decimal places).\nPrice earnings ratio.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(b)",
+      "label": "Question 5(b) · Assess Shannon plc for ordinary shareholders",
+      "pP": 8,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Indicate if the ordinary shareholders would be satisfied with the performance, state of affairs and prospects of the company. Use relevant ratios and other information to support your answer.",
+        "focus": null,
+        "marks": 40
+      }
+    },
+    {
+      "n": "5(c)",
+      "label": "Question 5(c) · Assess Gener8 liquidity before acquisition",
+      "pP": 8,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the current ratio for Gener8 Ltd.\nCalculate the acid test ratio for Gener8 Ltd.\nUsing the calculated figures explain why it is important for Shannon plc to analyse the liquidity position for Gener8 Ltd.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "6(a)",
+      "label": "Question 6(a) · Club: accumulated fund",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Show the club’s accumulated fund (capital) on 01/01/2018.",
+        "focus": null,
+        "marks": 30
+      }
+    },
+    {
+      "n": "6(b)",
+      "label": "Question 6(b) · Club: income and expenditure account",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Show the income and expenditure account for the year ending 31/12/2018.",
+        "focus": null,
+        "marks": 35
+      }
+    },
+    {
+      "n": "6(c)",
+      "label": "Question 6(c) · Club: balance sheet",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Show the club’s balance sheet as at 31/12/2018.",
+        "focus": null,
+        "marks": 25
+      }
+    },
+    {
+      "n": "6(d)",
+      "label": "Question 6(d) · Advise on funding a driving range",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "The club would like to build a new driving range at a cost of €350,000.\nOutline the options available to the club in funding this project with reference to the accounts.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "7(a)(i)",
+      "label": "Question 7(a)(i) · Abridged profit and loss account",
+      "pP": 12,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare an abridged profit and loss account to ascertain the operating profit for the year ending 31/12/2018.",
+        "focus": null,
+        "marks": 18
+      }
+    },
+    {
+      "n": "7(a)(ii)-operating",
+      "label": "Question 7(a)(ii)-operating · Reconcile operating profit to cash flow",
+      "pP": 12,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the cash flow statement of Jackson plc for the year ended 31/12/2018 including reconciliation statements.",
+        "focus": "Prepare the reconciliation of operating profit to net cash flow from operating activities.",
+        "marks": 17
+      }
+    },
+    {
+      "n": "7(a)(ii)-cash-flow",
+      "label": "Question 7(a)(ii)-cash-flow · Cash flow statement",
+      "pP": 12,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the cash flow statement of Jackson plc for the year ended 31/12/2018 including reconciliation statements.",
+        "focus": "Prepare the cash flow statement of Jackson plc.",
+        "marks": 48
+      }
+    },
+    {
+      "n": "7(a)(ii)-net-debt",
+      "label": "Question 7(a)(ii)-net-debt · Reconcile cash flow to net debt",
+      "pP": 12,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the cash flow statement of Jackson plc for the year ended 31/12/2018 including reconciliation statements.",
+        "focus": "Prepare the reconciliation of net cash flow to movement in net debt.",
+        "marks": 5
+      }
+    },
+    {
+      "n": "7(b)",
+      "label": "Question 7(b) · Non-cash items and cash movements outside profit",
+      "pP": 12,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain what is meant by a non-cash item.\nGive three examples, using the figures provided.\nExplain two items that affect cash but not profit.",
+        "focus": null,
+        "marks": 12
+      }
+    },
+    {
+      "n": "8(a)",
+      "label": "Question 8(a) · Apportion overheads to departments",
+      "pP": 14,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the overhead to be absorbed by each department showing clearly the basis of apportionment used.",
+        "focus": null,
+        "marks": 26
+      }
+    },
+    {
+      "n": "8(b)",
+      "label": "Question 8(b) · Transfer service department costs",
+      "pP": 14,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Transfer the service department costs to production departments X and Y.",
+        "focus": null,
+        "marks": 8
+      }
+    },
+    {
+      "n": "8(c)-x",
+      "label": "Question 8(c)-x · Overhead absorption rate: production X",
+      "pP": 14,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        },
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate a suitable overhead absorption rate for each department.",
+        "focus": "Calculate a suitable overhead absorption rate for production department X.",
+        "marks": 6
+      }
+    },
+    {
+      "n": "8(c)-y",
+      "label": "Question 8(c)-y · Overhead absorption rate: production Y",
+      "pP": 14,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        },
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate a suitable overhead absorption rate for each department.",
+        "focus": "Calculate a suitable overhead absorption rate for production department Y.",
+        "marks": 6
+      }
+    },
+    {
+      "n": "8(d)",
+      "label": "Question 8(d) · Selling price of job 925",
+      "pP": 14,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        },
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the selling price of Job No. 925.",
+        "focus": null,
+        "marks": 22
+      }
+    },
+    {
+      "n": "8(e)",
+      "label": "Question 8(e) · Service overheads and costing methods",
+      "pP": 14,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 24,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain why it is necessary to transfer service department overheads to production departments.\nDistinguish between the allocation, apportionment and absorption of costs.",
+        "focus": null,
+        "marks": 12
+      }
+    },
+    {
+      "n": "9(a)",
+      "label": "Question 9(a) · Production budget",
+      "pP": 16,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a production budget (in units).",
+        "focus": null,
+        "marks": 12
+      }
+    },
+    {
+      "n": "9(b)",
+      "label": "Question 9(b) · Raw materials purchases budget",
+      "pP": 16,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a raw materials purchases budget (in units and €).",
+        "focus": null,
+        "marks": 18
+      }
+    },
+    {
+      "n": "9(c)",
+      "label": "Question 9(c) · Production cost and manufacturing budget",
+      "pP": 16,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a production cost/manufacturing budget.",
+        "focus": null,
+        "marks": 23
+      }
+    },
+    {
+      "n": "9(d)-unit-cost",
+      "label": "Question 9(d)-unit-cost · Unit cost of budgeted closing stock",
+      "pP": 16,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a budgeted trading account (you are required to calculate the unit cost of budgeted closing stock of both products).",
+        "focus": "Calculate the unit cost of budgeted closing stock of both products.",
+        "marks": 12
+      }
+    },
+    {
+      "n": "9(d)-trading",
+      "label": "Question 9(d)-trading · Budgeted trading account",
+      "pP": 16,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a budgeted trading account (you are required to calculate the unit cost of budgeted closing stock of both products).",
+        "focus": "Prepare the budgeted trading account.",
+        "marks": 9
+      }
+    },
+    {
+      "n": "9(e)",
+      "label": "Question 9(e) · Reasons for product costing",
+      "pP": 16,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain three reasons for product costing.",
+        "focus": null,
+        "marks": 6
+      }
+    }
+  ],
+  "schemeFileid": "LC032ALP000EV.pdf",
+  "v": 1,
+  "maxCropPages": 2
+}

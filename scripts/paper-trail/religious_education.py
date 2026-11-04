@@ -46,7 +46,10 @@ def paper_index() -> list[dict]:
         raise RuntimeError("Could not locate Religious Education in paperTrailData.ts")
     # The generated TypeScript array has a legal trailing comma; remove it for
     # Python's strict JSON parser.
-    return json.loads(re.sub(r",\s*]$", "]", match.group(1)))
+    # Reviewed window only: June sittings from 2010. The deferred sitting and the
+    # 1995-2009 archive papers carry no answer maps or Mark Bank cards.
+    return [entry for entry in json.loads(re.sub(r",\s*]$", "]", match.group(1)))
+            if not entry.get("sitting") and entry["year"] >= 2010]
 
 
 def expected_page(letter: str, page_number: int) -> bool:

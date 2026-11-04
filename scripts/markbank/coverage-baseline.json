@@ -1,227 +1,815 @@
 {
- "agricultural-science": {
-  "cards": 869,
-  "contentHash": "9e8d8bd3223f17cf",
-  "coveragePct": 93.6,
-  "covered": 888,
-  "excluded": 3,
-  "leaves": 952,
-  "open": 61,
-  "orphans": 2,
-  "papers": {
-   "count": 10,
-   "hash": "4f4a401f6defdc36"
+  "accounting": {
+    "cards": 1365,
+    "contentHash": "613a9f2bdeb0486a",
+    "coveragePct": 100.0,
+    "covered": 1365,
+    "excluded": 0,
+    "leaves": 1365,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 68,
+      "hash": "88fb291dee0789bc"
+    },
+    "refsHash": "8606f8982dc6e154"
   },
-  "refsHash": "967a2d72ff0648b1"
- },
- "art": {
-  "cards": 462,
-  "contentHash": "f84ca9f2c3b181ad",
-  "coveragePct": 100.0,
-  "covered": 462,
-  "excluded": 0,
-  "leaves": 462,
-  "open": 0,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "289b620d2a5e9d7e"
+  "agricultural-science": {
+    "cards": 2464,
+    "contentHash": "a56c69312551bb35",
+    "coveragePct": 100.0,
+    "covered": 2842,
+    "excluded": 0,
+    "leaves": 2842,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 34,
+      "hash": "cc3b10d8b4ed8ab5"
+    },
+    "refsHash": "e0d39c458d72982a"
   },
-  "refsHash": "7ba094263d991baa"
- },
- "biology": {
-  "cards": 1359,
-  "contentHash": "c2a3c05984956b25",
-  "coveragePct": 93.8,
-  "covered": 1535,
-  "excluded": 0,
-  "leaves": 1636,
-  "open": 101,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "55091726a504e556"
+  "ancient-greek": {
+    "cards": 383,
+    "contentHash": "a367719c91764025",
+    "coveragePct": 100.0,
+    "covered": 387,
+    "excluded": 371,
+    "leaves": 758,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 27,
+      "hash": "211caedff97f5a80"
+    },
+    "refsHash": "2ecf53681016b22d"
   },
-  "refsHash": "2b9fe1cf969dd64a"
- },
- "business": {
-  "cards": 606,
-  "contentHash": "9e450e8c7727014e",
-  "coveragePct": 94.6,
-  "covered": 677,
-  "excluded": 0,
-  "leaves": 716,
-  "open": 39,
-  "orphans": 6,
-  "papers": {
-   "count": 20,
-   "hash": "eee231038910ba2c"
+  "applied-maths": {
+    "cards": 1486,
+    "contentHash": "f015af7cba454cda",
+    "coveragePct": 100.0,
+    "covered": 1486,
+    "excluded": 0,
+    "leaves": 1486,
+    "nativeSchemes": 65,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 66,
+      "hash": "445d863125e8baac"
+    },
+    "refsHash": "32b700ecc5e47388",
+    "sourceEditions": 66,
+    "sourceTaskLinks": 2972
   },
-  "refsHash": "4ad16765c129d1c4"
- },
- "chemistry": {
-  "cards": 876,
-  "contentHash": "c25588239df13956",
-  "coveragePct": 92.5,
-  "covered": 1120,
-  "excluded": 0,
-  "leaves": 1211,
-  "open": 91,
-  "orphans": 0,
-  "papers": {
-   "count": 10,
-   "hash": "bf2ca1ce05646d41"
+  "arabic": {
+    "cards": 250,
+    "contentHash": "73dfdfae9085941a",
+    "coveragePct": 100.0,
+    "covered": 250,
+    "excluded": 120,
+    "leaves": 370,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 10,
+      "hash": "bb185f784adfa4d5"
+    },
+    "refsHash": "7a1ca0dfb9d8a129"
   },
-  "refsHash": "f83cdbf7ec4449ee"
- },
- "computer-science": {
-  "cards": 336,
-  "contentHash": "a98238edb379ba3a",
-  "coveragePct": 82.2,
-  "covered": 398,
-  "excluded": 0,
-  "leaves": 484,
-  "open": 86,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "4eb8d8bb7c8ce50b"
+  "art": {
+    "cards": 1756,
+    "contentHash": "836c645d0f080984",
+    "coveragePct": 100.0,
+    "covered": 1756,
+    "excluded": 0,
+    "leaves": 1756,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 50,
+      "hash": "fc024eb5d16de25b"
+    },
+    "refsHash": "4fef6e53e28af5ba"
   },
-  "refsHash": "ba197c3dcfdb616b"
- },
- "construction-studies": {
-  "cards": 505,
-  "contentHash": "3483e3ebcdef110e",
-  "coveragePct": 81.8,
-  "covered": 419,
-  "excluded": 0,
-  "leaves": 512,
-  "open": 93,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "63522e1ef5a10ab2"
+  "biology": {
+    "cards": 5540,
+    "contentHash": "33808b0a2e3ee089",
+    "coveragePct": 100.0,
+    "covered": 4928,
+    "excluded": 0,
+    "leaves": 4928,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 50,
+      "hash": "4fd05441da103297"
+    },
+    "refsHash": "32a1d05fcfa8198c"
   },
-  "refsHash": "ab5312971b0e0217"
- },
- "economics": {
-  "cards": 697,
-  "contentHash": "e8c99dae50bd0cba",
-  "coveragePct": 100.0,
-  "covered": 651,
-  "excluded": 7,
-  "leaves": 658,
-  "open": 0,
-  "orphans": 0,
-  "papers": {
-   "count": 10,
-   "hash": "d356131d0d2d0e2e"
+  "bulgarian": {
+    "cards": 141,
+    "contentHash": "19d141129fe89fa4",
+    "coveragePct": 100.0,
+    "covered": 141,
+    "excluded": 78,
+    "leaves": 219,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "4d409f9708da65de"
+    },
+    "refsHash": "98027c9761a7d3b1"
   },
-  "refsHash": "ffceb66a16576771"
- },
- "engineering": {
-  "cards": 466,
-  "contentHash": "2e63624d137d2218",
-  "coveragePct": 72.6,
-  "covered": 585,
-  "excluded": 0,
-  "leaves": 806,
-  "open": 221,
-  "orphans": 0,
-  "papers": {
-   "count": 10,
-   "hash": "d6f8e4ccadef7bbf"
+  "business": {
+    "cards": 1988,
+    "contentHash": "8c53f2ed50e3e2fc",
+    "coveragePct": 100.0,
+    "covered": 2173,
+    "excluded": 0,
+    "leaves": 2173,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 48,
+      "hash": "473899bda3fb160b"
+    },
+    "refsHash": "4b71b53d9940c654"
   },
-  "refsHash": "99445e531f46b857"
- },
- "english": {
-  "cards": 650,
-  "contentHash": "45a6d15c88c98b41",
-  "coveragePct": 100.0,
-  "covered": 660,
-  "excluded": 0,
-  "leaves": 660,
-  "open": 0,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "5a9e0ab3f863aa4f"
+  "chemistry": {
+    "cards": 3369,
+    "contentHash": "1373456627274212",
+    "coveragePct": 100.0,
+    "covered": 3496,
+    "excluded": 0,
+    "leaves": 3496,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 34,
+      "hash": "a5df30dd2d14a50b"
+    },
+    "refsHash": "69f459852daa8c02"
   },
-  "refsHash": "9d6d1eb35ccbe04d"
- },
- "geography": {
-  "cards": 754,
-  "contentHash": "845a31914f2d9854",
-  "coveragePct": 100.0,
-  "covered": 563,
-  "excluded": 85,
-  "leaves": 648,
-  "open": 0,
-  "orphans": 0,
-  "papers": {
-   "count": 24,
-   "hash": "7d40addba29edb98"
+  "classical-studies": {
+    "cards": 516,
+    "contentHash": "5329cf932e3d9e7c",
+    "coveragePct": 100.0,
+    "covered": 525,
+    "excluded": 115,
+    "leaves": 640,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "c9ca46e8bf1480bc"
+    },
+    "refsHash": "d22e9502e212efb6"
   },
-  "refsHash": "a4cecb0559e11239"
- },
- "home-economics": {
-  "cards": 549,
-  "contentHash": "dd6afae3967936b8",
-  "coveragePct": 95.3,
-  "covered": 545,
-  "excluded": 0,
-  "leaves": 572,
-  "open": 27,
-  "orphans": 1,
-  "papers": {
-   "count": 20,
-   "hash": "6b57d840bf971638"
+  "computer-science": {
+    "cards": 336,
+    "contentHash": "a98238edb379ba3a",
+    "coveragePct": 82.2,
+    "covered": 398,
+    "excluded": 0,
+    "leaves": 484,
+    "open": 86,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "4eb8d8bb7c8ce50b"
+    },
+    "refsHash": "ba197c3dcfdb616b"
   },
-  "refsHash": "d68011c4e1a644b2"
- },
- "irish": {
-  "cards": 857,
-  "contentHash": "5c1c2a6266f65c68",
-  "coveragePct": 100.0,
-  "covered": 857,
-  "excluded": 0,
-  "leaves": 857,
-  "open": 0,
-  "orphans": 0,
-  "papers": {
-   "count": 30,
-   "hash": "9d84f99397f0fb11"
+  "construction-studies": {
+    "cards": 1261,
+    "contentHash": "c95372f8985a6f0a",
+    "coveragePct": 100.0,
+    "covered": 845,
+    "excluded": 0,
+    "leaves": 845,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 63,
+      "hash": "7a382fe186c759ea"
+    },
+    "refsHash": "7ac2f5d4293ded21"
   },
-  "refsHash": "148844b4fc020781"
- },
- "maths": {
-  "cards": 833,
-  "contentHash": "b03ee0576c972395",
-  "coveragePct": 95.3,
-  "covered": 943,
-  "excluded": 0,
-  "leaves": 989,
-  "open": 46,
-  "orphans": 0,
-  "papers": {
-   "count": 20,
-   "hash": "dd8222a2e1b8d8d6"
+  "croatian": {
+    "cards": 100,
+    "contentHash": "2a79e729a0bc71d9",
+    "coveragePct": 100.0,
+    "covered": 100,
+    "excluded": 67,
+    "leaves": 167,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 13,
+      "hash": "1b6552f0658d264b"
+    },
+    "refsHash": "949a64de37c58396"
   },
-  "refsHash": "8374d11c7ed5963f"
- },
- "physics": {
-  "cards": 1133,
-  "contentHash": "b8febbbaaa07244b",
-  "coveragePct": 95.2,
-  "covered": 1119,
-  "excluded": 46,
-  "leaves": 1224,
-  "open": 59,
-  "orphans": 6,
-  "papers": {
-   "count": 10,
-   "hash": "aedd9969b3ce025e"
+  "czech": {
+    "cards": 15,
+    "contentHash": "6c302051f1a4dede",
+    "coveragePct": 100.0,
+    "covered": 75,
+    "excluded": 144,
+    "leaves": 219,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "325d56e0739fd63d"
+    },
+    "refsHash": "7013eb0f4ad094fa"
   },
-  "refsHash": "83bd7bc978ad6302"
- }
+  "danish": {
+    "cards": 79,
+    "contentHash": "bdee40da04ff574f",
+    "coveragePct": 100.0,
+    "covered": 79,
+    "excluded": 46,
+    "leaves": 125,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 13,
+      "hash": "d51ea34693abb0f0"
+    },
+    "refsHash": "b8748a474c6a2507"
+  },
+  "dcg": {
+    "cards": 545,
+    "contentHash": "36de9f64f1b6b8b9",
+    "coveragePct": 100.0,
+    "covered": 478,
+    "excluded": 0,
+    "leaves": 478,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 66,
+      "hash": "9c8982e337e2c8b1"
+    },
+    "refsHash": "f905271c383d21ea"
+  },
+  "dutch": {
+    "cards": 42,
+    "contentHash": "e9c0193ea33db730",
+    "coveragePct": 100.0,
+    "covered": 42,
+    "excluded": 21,
+    "leaves": 63,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 5,
+      "hash": "b3a5be1d5053e77e"
+    },
+    "refsHash": "4bab4f79d784d94c"
+  },
+  "economics": {
+    "cards": 853,
+    "contentHash": "71508a355e28403e",
+    "coveragePct": 100.0,
+    "covered": 792,
+    "excluded": 1,
+    "leaves": 793,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 12,
+      "hash": "9af332fc7210be3d"
+    },
+    "refsHash": "02e4590c91471059"
+  },
+  "engineering": {
+    "cards": 554,
+    "contentHash": "be3d66f30f1d86b3",
+    "coveragePct": 83.2,
+    "covered": 679,
+    "excluded": 0,
+    "leaves": 816,
+    "open": 137,
+    "orphans": 0,
+    "papers": {
+      "count": 10,
+      "hash": "d6f8e4ccadef7bbf"
+    },
+    "refsHash": "9804a181ceb67113"
+  },
+  "english": {
+    "cards": 2685,
+    "contentHash": "267c86a433787b88",
+    "coveragePct": 100.0,
+    "covered": 2685,
+    "excluded": 0,
+    "leaves": 2685,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "5a9e0ab3f863aa4f"
+    },
+    "refsHash": "0791d22855f00c38"
+  },
+  "estonian": {
+    "cards": 107,
+    "contentHash": "72b058dd3ac09b0d",
+    "coveragePct": 100.0,
+    "covered": 107,
+    "excluded": 64,
+    "leaves": 171,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 15,
+      "hash": "be94459f5763acb6"
+    },
+    "refsHash": "3d27c9b51da457f1"
+  },
+  "finnish": {
+    "cards": 90,
+    "contentHash": "da84d2baef185349",
+    "coveragePct": 100.0,
+    "covered": 90,
+    "excluded": 77,
+    "leaves": 167,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 13,
+      "hash": "f03b7ec1b6337cd6"
+    },
+    "refsHash": "b09aab8adfbbe234"
+  },
+  "french": {
+    "cards": 2120,
+    "contentHash": "cb31f9d606064fb4",
+    "coveragePct": 100.0,
+    "covered": 1876,
+    "excluded": 0,
+    "leaves": 1876,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 68,
+      "hash": "f1bfcddb8b7e2aff"
+    },
+    "refsHash": "9aa653ddbc92b175"
+  },
+  "geography": {
+    "cards": 4153,
+    "contentHash": "c5cb46da46ff07b8",
+    "coveragePct": 100.0,
+    "covered": 3869,
+    "excluded": 0,
+    "leaves": 3869,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 24,
+      "hash": "7d40addba29edb98"
+    },
+    "refsHash": "3616d976252aed5a"
+  },
+  "german": {
+    "cards": 264,
+    "contentHash": "4cfabcd723419e57",
+    "coveragePct": 100.0,
+    "covered": 264,
+    "excluded": 276,
+    "leaves": 540,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "a5deb2d915c7c90e"
+    },
+    "refsHash": "39be4a22419bc8c6"
+  },
+  "history": {
+    "cards": 749,
+    "contentHash": "5a5803ac3a0f3bfe",
+    "coveragePct": 100.0,
+    "covered": 749,
+    "excluded": 681,
+    "leaves": 1430,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "cb5c8677ec1bca17"
+    },
+    "refsHash": "eab7907b0ead2f31"
+  },
+  "home-economics": {
+    "cards": 549,
+    "contentHash": "dd6afae3967936b8",
+    "coveragePct": 95.3,
+    "covered": 545,
+    "excluded": 0,
+    "leaves": 572,
+    "open": 27,
+    "orphans": 1,
+    "papers": {
+      "count": 20,
+      "hash": "6b57d840bf971638"
+    },
+    "refsHash": "d68011c4e1a644b2"
+  },
+  "hungarian": {
+    "cards": 168,
+    "contentHash": "c52d6a0ce676b831",
+    "coveragePct": 100.0,
+    "covered": 168,
+    "excluded": 51,
+    "leaves": 219,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "e3b0a73bce59703d"
+    },
+    "refsHash": "65d66ad3a304022c"
+  },
+  "irish": {
+    "cards": 400,
+    "contentHash": "186eafb2efa5dee5",
+    "coveragePct": 100.0,
+    "covered": 400,
+    "excluded": 0,
+    "leaves": 400,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 30,
+      "hash": "9d84f99397f0fb11"
+    },
+    "refsHash": "02b0f7ad91f8e59d"
+  },
+  "italian": {
+    "cards": 350,
+    "contentHash": "7df0d826a57f097d",
+    "coveragePct": 100.0,
+    "covered": 380,
+    "excluded": 325,
+    "leaves": 705,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "b817ee80bd176c86"
+    },
+    "refsHash": "7bc73bbdfb897f41"
+  },
+  "japanese": {
+    "cards": 600,
+    "contentHash": "f8ca05bcde10a040",
+    "coveragePct": 95.6,
+    "covered": 600,
+    "excluded": 456,
+    "leaves": 1105,
+    "open": 49,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "8c702243c6947eae"
+    },
+    "refsHash": "d23fe40d77f543ca"
+  },
+  "latin": {
+    "cards": 227,
+    "contentHash": "33bb32809e144f2d",
+    "coveragePct": 100.0,
+    "covered": 237,
+    "excluded": 91,
+    "leaves": 328,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 8,
+      "hash": "eca81927b9c1e198"
+    },
+    "refsHash": "ecd84fa7c53eb9c0"
+  },
+  "latvian": {
+    "cards": 20,
+    "contentHash": "43eb8b6b9bc1be46",
+    "coveragePct": 100.0,
+    "covered": 68,
+    "excluded": 150,
+    "leaves": 218,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "f66362d289720cbb"
+    },
+    "refsHash": "cbfff690c93f65b8"
+  },
+  "lcvp": {
+    "cards": 314,
+    "contentHash": "6a646d6cb0a40740",
+    "coveragePct": 91.2,
+    "covered": 320,
+    "excluded": 13,
+    "leaves": 365,
+    "open": 32,
+    "orphans": 0,
+    "papers": {
+      "count": 8,
+      "hash": "1c8389e1e899dda9"
+    },
+    "refsHash": "478f16348f57b546"
+  },
+  "lithuanian": {
+    "cards": 306,
+    "contentHash": "0d11f6d500d72a7a",
+    "coveragePct": 100.0,
+    "covered": 306,
+    "excluded": 520,
+    "leaves": 826,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 32,
+      "hash": "a95df1b95d3c2107"
+    },
+    "refsHash": "15602894c57e4cf0"
+  },
+  "maltese": {
+    "cards": 29,
+    "contentHash": "30ba73ce24958549",
+    "coveragePct": 73.7,
+    "covered": 29,
+    "excluded": 27,
+    "leaves": 76,
+    "open": 20,
+    "orphans": 0,
+    "papers": {
+      "count": 6,
+      "hash": "33e3be70d6c6fac1"
+    },
+    "refsHash": "528ec21bd8e43b8b"
+  },
+  "mandarin-chinese": {
+    "cards": 201,
+    "contentHash": "82e2ed4c09522481",
+    "coveragePct": 100.0,
+    "covered": 218,
+    "excluded": 482,
+    "leaves": 700,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "a831dae7b231e378"
+    },
+    "refsHash": "25434d529fd64aae"
+  },
+  "maths": {
+    "cards": 854,
+    "contentHash": "dcd14a7f50bdb548",
+    "coveragePct": 98.5,
+    "covered": 974,
+    "excluded": 0,
+    "leaves": 989,
+    "open": 15,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "dd8222a2e1b8d8d6"
+    },
+    "refsHash": "a84c4dc9f66c30aa"
+  },
+  "modern-greek": {
+    "cards": 79,
+    "contentHash": "3086b6b9da802dad",
+    "coveragePct": 100.0,
+    "covered": 79,
+    "excluded": 63,
+    "leaves": 142,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 16,
+      "hash": "6c618224f47c0b52"
+    },
+    "refsHash": "98497719950dbd78"
+  },
+  "physical-education": {
+    "cards": 772,
+    "contentHash": "751f4b855c8fbccc",
+    "coveragePct": 100.0,
+    "covered": 741,
+    "excluded": 0,
+    "leaves": 741,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 13,
+      "hash": "0dbddd431bb256fe"
+    },
+    "refsHash": "95be090e951fe8e2"
+  },
+  "physics": {
+    "cards": 1133,
+    "contentHash": "5991102c908f5746",
+    "coveragePct": 95.2,
+    "covered": 1119,
+    "excluded": 46,
+    "leaves": 1224,
+    "open": 59,
+    "orphans": 6,
+    "papers": {
+      "count": 10,
+      "hash": "aedd9969b3ce025e"
+    },
+    "refsHash": "83bd7bc978ad6302"
+  },
+  "polish": {
+    "cards": 237,
+    "contentHash": "408ba0b39d9d0167",
+    "coveragePct": 100.0,
+    "covered": 243,
+    "excluded": 310,
+    "leaves": 553,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "593a0709ee51ab08"
+    },
+    "refsHash": "727a4af11e33aa55"
+  },
+  "politics-and-society": {
+    "cards": 623,
+    "contentHash": "f946d3de64a000fe",
+    "coveragePct": 100.0,
+    "covered": 623,
+    "excluded": 0,
+    "leaves": 623,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "6c53167dc5584a52"
+    },
+    "refsHash": "38694d71adeb29ca"
+  },
+  "portuguese": {
+    "cards": 173,
+    "contentHash": "1ad70be44482d80a",
+    "coveragePct": 100.0,
+    "covered": 173,
+    "excluded": 329,
+    "leaves": 502,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "193d6de2ff2d009f"
+    },
+    "refsHash": "c737847455bc4dc6"
+  },
+  "religious-education": {
+    "cards": 288,
+    "contentHash": "674bdf82cd359c98",
+    "coveragePct": 100.0,
+    "covered": 288,
+    "excluded": 0,
+    "leaves": 288,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 10,
+      "hash": "df029832e957a46e"
+    },
+    "refsHash": "608205b9e7e5d4b8"
+  },
+  "romanian": {
+    "cards": 50,
+    "contentHash": "b9e5b706d1bb83fa",
+    "coveragePct": 100.0,
+    "covered": 50,
+    "excluded": 13,
+    "leaves": 63,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 5,
+      "hash": "cb6697c0963fc51f"
+    },
+    "refsHash": "8dc6e8622a1ca48e"
+  },
+  "russian": {
+    "cards": 199,
+    "contentHash": "03c94a04a0fd121a",
+    "coveragePct": 100.0,
+    "covered": 199,
+    "excluded": 280,
+    "leaves": 479,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 20,
+      "hash": "7a5c7fc1aab05875"
+    },
+    "refsHash": "593a9b48a2ff7170"
+  },
+  "slovakian": {
+    "cards": 140,
+    "contentHash": "b1158a5ae2100565",
+    "coveragePct": 100.0,
+    "covered": 140,
+    "excluded": 66,
+    "leaves": 206,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 16,
+      "hash": "98ac9e228b1556db"
+    },
+    "refsHash": "c23b4287c1b66666"
+  },
+  "slovenian": {
+    "cards": 23,
+    "contentHash": "d320fe895ee424e5",
+    "coveragePct": 100.0,
+    "covered": 23,
+    "excluded": 39,
+    "leaves": 62,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 5,
+      "hash": "e70003a7f221a331"
+    },
+    "refsHash": "718ba95fb160a884"
+  },
+  "spanish": {
+    "cards": 347,
+    "contentHash": "67db6091348bf049",
+    "coveragePct": 100.0,
+    "covered": 347,
+    "excluded": 306,
+    "leaves": 653,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 25,
+      "hash": "b66ea47a460f5d10"
+    },
+    "refsHash": "5da5beef5d9ac549"
+  },
+  "swedish": {
+    "cards": 121,
+    "contentHash": "a0cb45f67ea58b4d",
+    "coveragePct": 100.0,
+    "covered": 121,
+    "excluded": 63,
+    "leaves": 184,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 16,
+      "hash": "3f4a29c9d6671847"
+    },
+    "refsHash": "a952dfaa733dd380"
+  },
+  "technology": {
+    "cards": 1089,
+    "contentHash": "56dbe226ce68e3cb",
+    "coveragePct": 100.0,
+    "covered": 1092,
+    "excluded": 0,
+    "leaves": 1092,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 66,
+      "hash": "ca3702486591454b"
+    },
+    "refsHash": "0a88fb0456d99ad2"
+  },
+  "ukrainian": {
+    "cards": 20,
+    "contentHash": "1a7cf959461a3660",
+    "coveragePct": 100.0,
+    "covered": 20,
+    "excluded": 6,
+    "leaves": 26,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 2,
+      "hash": "8cb689ef44820e29"
+    },
+    "refsHash": "ced75cb491569d9f"
+  }
 }

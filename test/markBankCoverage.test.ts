@@ -32,6 +32,20 @@ import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
+import { CARDS as APPLIED_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
+import { CARDS as APPLIED_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
+
+import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
+import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
+import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
+import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
+
+import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/accounting/higher';
+import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
+import { CARDS as BUSINESS_HIGHER } from '../components/MarkBank/cards/business/higher';
+import { CARDS as BUSINESS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
+import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
+import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
@@ -42,6 +56,15 @@ const irishManifests = (): string[] => [...readFileSync(resolve(
   .matchAll(/^import \w+ from '\.\/([\w-]+\.json)';/gm)].map((m) => m[1]);
 
 const deckCards = (subject: string): { id: string; ref: string }[] => {
+  if (subject === 'accounting') return [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
+  if (subject === 'french') {
+    return [...FRENCH_HIGHER, ...FRENCH_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
+  if (subject === 'applied-maths') {
+    return [...APPLIED_HIGHER, ...APPLIED_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
   if (subject === 'english') {
     return [...ENGLISH_HIGHER, ...ENGLISH_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
@@ -54,12 +77,27 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
     return [...ART_HIGHER, ...ART_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
   }
+  if (subject === 'politics-and-society') {
+    return [...POLITICS_HIGHER, ...POLITICS_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
+  if (subject === 'business') {
+    // The runtime deck appends source-reviewed rubric cards and expanded
+    // printed routes to the literal cards; reconcile.py counts the same set.
+    return [...BUSINESS_HIGHER, ...BUSINESS_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
   if (subject === 'geography') {
     return [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
   }
+  if (subject === 'physical-education') {
+    return [...PE_HIGHER, ...PE_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
   const out: { id: string; ref: string }[] = [];
-  for (const level of ['higher', 'ordinary']) {
+  // 'common' is the level a one-level subject ships under — LCVP's Link
+  // Modules. Leaving it out of this walk reported the whole deck as missing.
+  for (const level of ['higher', 'ordinary', 'common']) {
     const path = resolve(
       __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
     let text: string;
@@ -68,7 +106,7 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
     } catch {
       continue;
     }
-    for (const chunk of text.split(/\.\.\.base,\s*kind:/).slice(1)) {
+    for (const chunk of text.split(/^\s*\.\.\.base,/m).slice(1)) {
       const id = chunk.match(/\bid: "([^"]+)"/);
       const ref = chunk.match(/questionRef: "([^"]+)"/);
       if (id && ref) out.push({ id: id[1], ref: ref[1] });
@@ -82,12 +120,50 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
 // disambiguating suffix ("Q13(a)(iii) Name", "Q12(b)(ii) 1–2") — reconcile
 // parses the address and ignores the suffix, and this mirror does the same.
 // What CANNOT pass is a ref with no parseable address at all.
-const HEAD =
-  /^(\d{4}) (HL|OL)(?: Paper (\d))?(?: Section ([A-Za-z0-9]+))?(?: E(\d))? (?:Q(\d{1,2})(-alt)?|ABQ)/;
+// The question number is OPTIONAL: Religious Education's Sections B-J print
+// none, so its citations read "2023 HL Section E Q(b)(ii)".
+// CL is LCVP's common level, the third the SEC prints.
+// History adds two things. Its two FIELDS OF STUDY are separate papers a
+// candidate chooses between, so the citation names one — "2021 HL Early
+// Modern ...". And its Sections 2 and 3 restart their numbering inside every
+// TOPIC, so the section token carries the topic and, at Ordinary, the A/B/C
+// part: "Section 2 Topic 1 A Q1". A part priced whole with nothing numbered
+// beneath it drops the Q entirely ("Section 2 Topic 1 B"), and the extra Part
+// A of 2023-2025 Ordinary is cited "Section Extra A Q1".
+// Classical Studies' syllabus to 2022 prints no sections and no question
+// numbers: ten TOPICS, each setting questions "(i)" to "(iv)" with lettered
+// parts under them, so the topic and the roman together are the address and
+// the citation reads "2021 HL Topic 1(i) Q(a)". Its 2023 paper numbers
+// Questions 1-16 straight through Sections A and B and cites "2024 HL Q3(b)".
+const ADDRESS =
+  '^(\\d{4}) (HL|OL|CL)'
+  + '(?: (?:Later|Early) Modern)?'
+  + '(?: Paper (\\d))?'
+  + '(?: Topic \\d{1,2}\\((?:i{1,3}|iv|v)\\))?'
+  + '(?: Section ((?:Extra )?[A-Za-z0-9]+(?: Topic \\d{1,2})?(?: [A-C]\\b)?))?'
+  + '(?: E(\\d))?';
+const QTOKEN = '(?: (?:Q(\\d{1,2})?(-alt)?|ABQ))';
+// Either the citation carries a question token, or it ENDS at its section —
+// which only a unit the paper numbers nothing beneath may do. Anchoring the
+// second form is what stops "2021 HL" alone from matching every citation and
+// letting the whole address through as an ignorable suffix.
+const HEAD = new RegExp(`${ADDRESS}${QTOKEN}|${ADDRESS}$`);
 // The bare A/B between tokens is Chemistry's printed option question —
 // "Q11(d)A(i)" answers option A of part (d).
+// A sub-marker may be a DIGIT: the Baltic languages number the rows of a
+// true/false table "1." to "5." where every science paper numbers them "(i)"
+// to "(v)", and the citation names the address the candidate saw.
+// A part marker may be CYRILLIC: the Bulgarian paper letters Question 1's five
+// expressions "а) б) в) г) д)", which look like Latin letters and are not.
+// Same class as reconcile.py's PART_TOKEN, which this mirrors.
+
+// A part letter is not always a LATIN letter either: Maltese letters the five
+// expressions of every Question 1 "a) b) ċ) d) e)", because ċ is the third
+// letter of the Maltese alphabet, and the citation names the marker the
+// candidate saw. The four accented letters that alphabet adds — ċ ġ ħ ż —
+// join the class here and in reconcile.py's PART_TOKEN, which is its mirror.
 const TAIL =
-  /^(?:\s*(?:\(\s*[A-Za-z]{1,4}\s*\)|[AB]\b|[,–—-]|and\b))*(?:[\s\d].*)?$/;
+  /^(?:\s*(?:\(\s*(?:[A-Za-zċĊġĠħĦżŻ\u0430-\u044f\u0410-\u042f]{1,4}|\d{1,2})\s*\)|[AB]\b|[,–—-]|and\b))*(?:[\s\d].*)?$/;
 
 describe('Mark Bank paper-coverage ratchet', () => {
   it.each(SUBJECTS)('%s deck matches its measured baseline', (subject) => {
@@ -108,7 +184,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // display ordering is not the manifest ordering. Coverage pins identity,
     // not presentation order.
     if (subject === 'english' || subject === 'irish' || subject === 'art'
-      || subject === 'geography') identities.sort();
+      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education' || subject === 'applied-maths' || subject === 'accounting' || subject === 'business') identities.sort();
     const digest = createHash('sha256')
       .update(identities.join('\n'))
       .digest('hex').slice(0, 16);
@@ -121,8 +197,12 @@ describe('Mark Bank paper-coverage ratchet', () => {
   it.each(SUBJECTS)('%s citations all parse under the grammar', (subject) => {
     const bad = deckCards(subject)
       .filter(({ ref }) => {
+        if (subject === 'accounting') return !/^\d{4} (?:HL|OL) Q[1-9][A-Z]?(?:\([a-z0-9]+\))*(?:-[a-z0-9()-]+)?$/.test(ref);
         if (subject === 'english') {
-          return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] QA\((?:i|ii|iii)(?:\)\((?:a|b))?\)|Text [1-3] QB|Composing [1-7]|Single Text [A-I](?:\((?:i|ii)\)| Q[1-4])|Comparative [A-C] Q[12]|Unseen Poetry Q[12]|Prescribed Poetry (?:[1-5]|[A-F] Q(?:1|2\((?:i|ii|iii)\))))$/.test(ref);
+          // Legacy 2021-2025 cards bundle linked parts; reviewed published
+          // papers are atomic, so a part label may follow the question and a
+          // finite route appends its label after " · ".
+          return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] Q(?:A|B)(?:\((?:i|ii|iii)\)(?:\((?:a|b)\))?)?|Composing [1-7]|Single Text [A-I](?:\((?:i|ii)\)| Q[1-4](?:\((?:a|b|c|i|ii|iii)\))?)|Comparative [A-C] Q[12](?:\((?:a|b)\)(?:\((?:i|ii)\))?)?|Unseen Poetry Q[1-3](?:\((?:a|b)\))?|Prescribed Poetry (?:Q?[1-5]|[A-F] Q[12](?:\((?:a|b|c|i|ii|iii)\))?))(?: · .+)?$/.test(ref);
         }
         if (subject === 'irish') {
           // Generated 2021–2025 corpus plus the reviewed components: listening
@@ -133,7 +213,9 @@ describe('Mark Bank paper-coverage ratchet', () => {
           return !/^\d{4} (?:HL|OL) Paper [12] (?:(?:Cluastuiscint )?Cuid [ABC] · (?:Fógra|Comhrá|Píosa) a (?:hAon|Dó)(?: · An (?:Chéad Mhír|Dara Mír))?(?: · Ceist [1-9](?:\([a-e]\))?)?|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6](?:\([ab]\)(?:\((?:i|ii)\))?)?(?: · (?:Pointe|Freagra|Léargas|Dúshlán|Sampla|Ceist|Cúis|Tréith) [1-9])?|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\)|(?:Prós 2|Filíocht 3)[AB]\([a-c]\) · .+|Litríocht 4[A-F](?: ·|\.) .+)$/.test(ref);
         }
         if (subject === 'geography') {
-          return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?: · .+)?$/.test(ref);
+          // Reviewed sittings cite the printed part: "Q2(ii)(a)", "Q5A(iii)", "Q8A(vii)";
+          // 2017 Ordinary prints four lettered statements under Q4(i), (a)-(d).
+          return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?:\((?:i|ii|iii|iv|v|vi|vii|viii)\))?(?:\([a-d]\))?(?: · .+)?$/.test(ref);
         }
         const core = ref.split(/\s+[—–-]\s+/)[0];
         const m = core.match(HEAD);
@@ -158,14 +240,44 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // The refs hash pins addresses; this pins everything else — questionText,
     // rows, figure bindings. A card gutted in place trips here.
     const h = createHash('sha256');
-    for (const level of ['higher', 'ordinary']) {
+    for (const level of ['higher', 'ordinary', 'common']) {
       const path = resolve(
         __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
       try { h.update(readFileSync(path)); } catch { /* single-level deck */ }
     }
     if (subject === 'english' || subject === 'irish' || subject === 'art'
-      || subject === 'geography') {
-      for (const name of subject === 'irish' ? ['factory.ts', ...irishManifests()] : ['factory.ts', 'authored.json']) {
+      || subject === 'geography' || subject === 'politics-and-society' || subject === 'accounting') {
+      // Geography's claimable rows are cut from its lines at load (allocation.ts); Art's from its printed table (answers.ts).
+      const names = subject === 'english'
+        ? ['factory.ts', 'authored.json', 'published-higher.json', 'published-ordinary.json']
+        : subject === 'geography' ? ['factory.ts', 'authored.json', 'allocation.ts']
+          : subject === 'art' ? ['factory.ts', 'authored.json', 'answers.ts']
+            : subject === 'politics-and-society' ? ['factory.ts', 'authored.json', 'answers.ts', 'corrections.ts', 'corrections.json']
+            : subject === 'irish' ? ['factory.ts', ...irishManifests(), 'answers.ts', 'tariffs.ts']
+            : subject === 'accounting' ? ['factory.ts', 'authored.json', 'rows.json']
+            : ['factory.ts', 'authored.json'];
+      for (const name of names) {
+        h.update(readFileSync(resolve(
+          __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
+      }
+    }
+    if (subject === 'physical-education' || subject === 'applied-maths') {
+      // PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
+      for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json', 'answers.ts'] : ['reviewed.ts', 'reviewed.json']) {
+        h.update(readFileSync(resolve(
+          __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
+      }
+    }
+    if (subject === 'business') {
+      // Same files and order as reconcile.py's content hash.
+      for (const name of ['rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts']) {
+        h.update(readFileSync(resolve(
+          __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
+      }
+    }
+    if (subject === 'french') {
+      // Same files and order as reconcile.py's content hash, listening included.
+      for (const name of ['writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json', 'answers.ts']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }

@@ -1,0 +1,21 @@
+[
+ {"id": "chem-2013-hl-q1-d", "ask": "Describe how the burette was rinsed and filled", "answer": "rinse with a little of the thiosulfate solution", "figure": true},
+ {"id": "chem-2013-hl-q1-f", "ask": "Calculate the concentration of iodine", "answer": "0.00047 mol l⁻¹", "solution": true},
+ {"id": "chem-2013-hl-q2-a", "ask": "simple chemical test to confirm", "answer": "suitable metal (e.g. Mg) – gas evolved"},
+ {"id": "chem-2013-hl-q2-c", "ask": "used chromatography to separate", "answer": "dissolve mixture in eluent*", "solution": true},
+ {"id": "chem-2013-hl-q2-e", "ask": "Identify the flaw in the assembly", "answer": "put in steam trap*", "figure": true},
+ {"id": "chem-2013-hl-q3-d", "ask": "State two ways of ensuring", "answer": "reading to 0.2°C or better"},
+ {"id": "chem-2013-hl-q3-e", "ask": "Hence calculate the heat of reaction", "answer": "– 57.96 ( – 58) kJ", "solution": true},
+ {"id": "chem-2013-hl-q4-h", "ask": "State Charles’ law.", "answer": "for a definite mass of gas at constant pressure", "solution": true},
+ {"id": "chem-2013-hl-q4-k-b", "ask": "formation of ozone in the stratosphere", "answer": "O• + O₂ → O₃"},
+ {"id": "chem-2013-hl-q5-c", "ask": "", "answer": "Zeeman effect (splitting of spectral lines)", "figure": true},
+ {"id": "chem-2013-hl-q6-b-ii", "ask": "", "answer": "C(CH₃)₄", "figure": true, "solution": true},
+ {"id": "chem-2013-hl-q6-c", "ask": "", "answer": "2H₂O → 2H₂ + O₂ ΔH = 571.6 kJ", "figure": true, "solution": true},
+ {"id": "chem-2013-hl-q7-e", "ask": "Draw a reaction profile diagram", "answer": "exothermic reaction shown", "solution": true},
+ {"id": "chem-2013-hl-q8-c", "ask": "", "answer": "polarisation of chlorine molecule by double bond", "figure": true, "solution": true},
+ {"id": "chem-2013-hl-q9-c-expression", "ask": "", "answer": "Expression inverted (0)", "figure": true, "solution": true},
+ {"id": "chem-2013-hl-q10-b-ii", "ask": "What mass of aluminium powder", "answer": "× 27 = 432 g", "solution": true},
+ {"id": "chem-2013-hl-q11-a-i", "ask": "Name the elements labelled B and P", "answer": "P is sulfur (sulphur)", "figure": true},
+ {"id": "chem-2013-hl-q11-b-ph", "ask": "Calculate the pH of an ammonium hydroxide solution", "answer": "pH = – log 5.3 × 10⁻¹² = 11.28 (11.3)", "solution": true},
+ {"id": "chem-2013-hl-q11-c-b-site", "ask": "", "answer": "river (Avoca) water for cooling", "figure": true}
+]

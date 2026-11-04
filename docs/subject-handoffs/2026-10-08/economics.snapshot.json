@@ -1,0 +1,17 @@
+{
+  "subject": "economics",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Economics-Completion-20261007",
+  "branch": "codex/economics-corpus-completion-20261007",
+  "sourceHead": "8deb273f1b13341dcfa85204f7e4d784b638b21f",
+  "snapshotCommit": "d500a868d1e8994500d8de813505da01b26eea5f",
+  "snapshotRef": "refs/checkpoints/portable-subjects-20261008/economics",
+  "snapshotTree": "0fc3818e12e975e09f44ba095b52d4a1b38d4208",
+  "changedPaths": 1300,
+  "capturedLocalFiles": 1307,
+  "capturedLocalBytes": 195184038,
+  "exactFileBytesVerified": true,
+  "handoff": "economics.md",
+  "excluded": [],
+  "originalCheckpointCommit": "acfe3dec8488e211cf99b540e5f0c99227041f79",
+  "snapshotBase": "4c1accc328f29cd34161d09ce21b8729f7c1c546"
+}

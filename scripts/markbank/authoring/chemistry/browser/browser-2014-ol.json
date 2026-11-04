@@ -1,0 +1,19 @@
+[
+ {"id": "chem-2014-ol-q1-b-i-iii", "ask": "the liquid A,", "answer": "calcium(II) dicarbide", "figure": true},
+ {"id": "chem-2014-ol-q2-a", "ask": "", "answer": "solutions of known concentration", "figure": true},
+ {"id": "chem-2014-ol-q2-f", "ask": "Name a suitable indicator for this titration.", "answer": "red (pink, peach)", "figure": true},
+ {"id": "chem-2014-ol-q2-g-i", "ask": "in moles per litre", "answer": "25 × M = 17.4 × 0.13"},
+ {"id": "chem-2014-ol-q3-c", "ask": "Draw a labelled diagram of a suitable apparatus", "answer": "suitable diagram (mix and match collection system)", "solution": true},
+ {"id": "chem-2014-ol-q3-d", "ask": "", "answer": "smooth curve correctly drawn", "figure": true, "solution": true},
+ {"id": "chem-2014-ol-q4-i", "ask": "Calculate the percentage by mass of sulfur", "answer": "40 %", "solution": true},
+ {"id": "chem-2014-ol-q4-k-b", "ask": "Name the polymer.", "answer": "polyvinyl chloride", "figure": true},
+ {"id": "chem-2014-ol-q5-b-noble-gases", "ask": "Why do the elements of group 18", "answer": "stable electron arrangement"},
+ {"id": "chem-2014-ol-q6-b-balanced-equation", "ask": "Copy the equation into your answer book and balance it.", "answer": "CH₄ + 2O₂ → CO₂ + 2H₂O", "figure": true},
+ {"id": "chem-2014-ol-q8-b", "ask": "", "answer": "valid safety step", "figure": true, "solution": true},
+ {"id": "chem-2014-ol-q10-a-iii", "ask": "", "answer": "Crimson (Red)", "figure": true, "solution": true},
+ {"id": "chem-2014-ol-q10-b-i-ii", "ask": "molecules of ammonia, are in the sample?", "answer": "3 × 10²³ molecules", "solution": true},
+ {"id": "chem-2014-ol-q10-c-ii", "ask": "", "answer": "notation its text cannot carry", "figure": true, "solution": true},
+ {"id": "chem-2014-ol-q11-a", "ask": "", "answer": "F steam distillation", "figure": true},
+ {"id": "chem-2014-ol-q11-c-a-i", "ask": "Suggest two reasons in support of the suitability", "answer": "skilled workforce available"},
+ {"id": "chem-2014-ol-q11-c-b-iii", "ask": "What particles occupy the lattice points in sodium chloride crystals?", "answer": "positive ions / Na⁺", "figure": true}
+]

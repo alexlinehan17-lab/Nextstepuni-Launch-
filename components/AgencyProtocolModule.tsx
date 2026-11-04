@@ -1,205 +1,56 @@
+import { BrandedEngineCard,BrandedMindsetSorter } from './learning/WideFeatures';
+import { moduleFill } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence, Reorder } from 'framer-motion';
+import { AnimatePresence,motion,Reorder } from 'framer-motion';
 import {
-  Target, Users, Settings, ShieldAlert, Zap, Map,
-  Lightbulb, Activity, Brain, GripVertical,
-  AlertTriangle, CheckCircle2, X, Star,
+Activity,
+AlertTriangle,
+Brain,
+CheckCircle2,
+GripVertical,
+Lightbulb,
+Map,
+Settings,ShieldAlert,
+Target,Users,
+X,
+Zap
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { blueTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { Cite } from './ModuleReferences';
+import React,{ useEffect,useState } from 'react';
 import { AGENCY_PROTOCOL_REFERENCE_LIST } from '../data/references/agencyProtocol';
+import { COLORS } from '../design/tokens';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useModuleResponses } from '../hooks/useModuleResponses';
 import { useNorthStar } from '../hooks/useNorthStar';
-import { COLORS } from '../design/tokens';
-import NorthStarCallout from './NorthStarCallout';
+import { blueTheme } from '../moduleThemes';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
+import NorthStarCallout from './NorthStarCallout';
 
 const theme = blueTheme;
 
 /* ═══ Shared press-down spring config ═══ */
 const press = { type: 'spring' as const, stiffness: 400, damping: 25 };
 
-/* ═══════════════════════════════════════════════════════
-   FlipCard — pastel front, teal back, hard offset shadow
-   ═══════════════════════════════════════════════════════ */
-const FLIP_COLORS = [
-  { fill: '#93C5FD', border: '#2563EB', shadow: '#2563EB', text: '#1E3A8A', darkFill: '#1E3A5C' },
-  { fill: '#FCD34D', border: '#D97706', shadow: '#D97706', text: '#78350F', darkFill: '#78350F' },
-  { fill: '#6EE7B7', border: '#059669', shadow: '#059669', text: '#064E3B', darkFill: '#064E3B' },
-];
-
-const FlipCard = ({ front, back, frontIcon: FrontIcon, backIcon: _BackIcon, colorIndex = 0 }: { front: React.ReactNode, back: React.ReactNode, frontIcon: any, backIcon: any, colorIndex?: number }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
-  const c = FLIP_COLORS[colorIndex % FLIP_COLORS.length];
-  return (
-    <motion.div
-      className="w-full h-60 [perspective:1000px] cursor-pointer select-none"
-      onClick={() => setIsFlipped(!isFlipped)}
-      whileHover={{ x: -2, y: -2 }}
-      whileTap={{ x: 2, y: 2 }}
-      transition={press}
-    >
-      <motion.div
-        className="relative w-full h-full"
-        style={{ transformStyle: 'preserve-3d' }}
-        animate={{ rotateY: isFlipped ? 180 : 0 }}
-        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-      >
-        {/* Front */}
-        <div
-          className="absolute w-full h-full [backface-visibility:hidden] p-6 flex flex-col items-center justify-center text-center"
-          style={{
-            backgroundColor: c.fill,
-            border: `2.5px solid ${c.border}`,
-            borderRadius: 18,
-            boxShadow: `4px 4px 0px 0px ${c.shadow}`,
-          }}
-        >
-          <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: c.border }}>
-            <FrontIcon size={20} style={{ color: '#fff' }} />
-          </div>
-          <p className="text-sm font-bold leading-snug" style={{ color: c.text }}>{front}</p>
-          <div className="absolute bottom-3 left-0 right-0 flex justify-center">
-            <span className="px-3 py-1 rounded-full text-[9px] font-bold uppercase tracking-wider text-white" style={{ backgroundColor: c.border }}>Tap to flip</span>
-          </div>
-        </div>
-        {/* Back */}
-        <div
-          className="absolute w-full h-full [backface-visibility:hidden] p-6 flex flex-col items-center justify-center text-center"
-          style={{
-            transform: 'rotateY(180deg)',
-            backgroundColor: COLORS.accent,
-            border: `2.5px solid ${COLORS.accentDark}`,
-            borderRadius: 18,
-            boxShadow: `4px 4px 0px 0px ${COLORS.accentDark}`,
-          }}
-        >
-          <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: 'rgba(255,255,255,0.2)' }}>
-            <Star size={20} style={{ color: '#fff' }} />
-          </div>
-          <p className="text-[9px] font-bold uppercase tracking-widest text-white/50 mb-1">Horsepower</p>
-          <p className="text-sm font-bold leading-snug text-white">{back}</p>
-        </div>
-      </motion.div>
-    </motion.div>
-  );
-};
+const FlipCard = BrandedEngineCard;
 
 /* ═══════════════════════════════════════════════════════
    MindsetSorter — chunky chips into coloured lanes
    ═══════════════════════════════════════════════════════ */
-const MindsetSorter = () => {
-  const initialThoughts = [
-    { id: 1, text: "I'm useless at this subject.", type: 'passenger' },
-    { id: 2, text: "My study method failed me.", type: 'driver' },
-    { id: 3, text: "The teacher hates me.", type: 'passenger' },
-    { id: 4, text: "What strategy can I try next?", type: 'driver' },
-  ];
-
-  const [thoughts, setThoughts] = useState(initialThoughts);
-  const [passenger, setPassenger] = useState<typeof initialThoughts>([]);
-  const [driver, setDriver] = useState<typeof initialThoughts>([]);
-  const allSorted = thoughts.length === 0;
-
-  const handleSort = (thought: typeof initialThoughts[0], lane: 'passenger' | 'driver') => {
-    setThoughts(prev => prev.filter(t => t.id !== thought.id));
-    if (lane === 'passenger') setPassenger(prev => [...prev, thought]);
-    else setDriver(prev => [...prev, thought]);
-  };
-
-  return (
-    <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <div className="text-center mb-6">
-        <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white">Driver vs. Passenger</h4>
-        <p className="text-sm text-zinc-500 mt-1">Sort each thought into the right lane</p>
-      </div>
-
-      {/* Drop zones */}
-      <div className="grid grid-cols-2 gap-4 mb-6">
-        <div className="bg-white dark:bg-zinc-900" style={{ border: '2.5px solid #1C1917', borderRadius: 18, boxShadow: '4px 4px 0px 0px #1C1917', overflow: 'hidden' }}>
-          <div style={{ backgroundColor: '#DC2626', padding: '10px 16px', borderBottom: '2.5px solid #1C1917' }}>
-            <p className="text-[13px] font-medium tracking-wider uppercase text-white text-center">Passenger</p>
-          </div>
-          <div className="p-4 min-h-[100px]">
-            <AnimatePresence>
-              {passenger.map(p => (
-                <motion.div key={p.id} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="text-center mb-2" style={{ backgroundColor: '#FFFFFF', border: '2px solid #DC2626', borderRadius: 12, boxShadow: '2px 2px 0px 0px #DC2626', padding: '8px 12px', fontSize: '13px', fontWeight: 700, color: '#7F1D1D' }}>
-                  {p.text}
-                </motion.div>
-              ))}
-            </AnimatePresence>
-          </div>
-        </div>
-        <div className="bg-white dark:bg-zinc-900" style={{ border: '2.5px solid #1C1917', borderRadius: 18, boxShadow: '4px 4px 0px 0px #1C1917', overflow: 'hidden' }}>
-          <div style={{ backgroundColor: '#3A8D5F', padding: '10px 16px', borderBottom: '2.5px solid #1C1917' }}>
-            <p className="text-[13px] font-medium tracking-wider uppercase text-white text-center">Driver</p>
-          </div>
-          <div className="p-4 min-h-[100px]">
-            <AnimatePresence>
-              {driver.map(d => (
-                <motion.div key={d.id} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} className="text-center mb-2" style={{ backgroundColor: '#FFFFFF', border: '2px solid #3A8D5F', borderRadius: 12, boxShadow: '2px 2px 0px 0px #3A8D5F', padding: '8px 12px', fontSize: '13px', fontWeight: 700, color: '#1F5F3E' }}>
-                  {d.text}
-                </motion.div>
-              ))}
-            </AnimatePresence>
-          </div>
-        </div>
-      </div>
-
-      {/* Thought chips */}
-      <AnimatePresence>
-        {thoughts.map(thought => (
-          <motion.div
-            key={thought.id}
-            layout
-            exit={{ opacity: 0, scale: 0.8, transition: { duration: 0.2 } }}
-            className="mb-3 p-4 flex items-center justify-between gap-3"
-            style={{
-              backgroundColor: '#FFFFFF',
-              border: '2.5px solid #1C1917',
-              borderRadius: 14,
-              boxShadow: '3px 3px 0px 0px #1C1917',
-            }}
-          >
-            <p className="text-sm font-bold text-zinc-800 flex-1">&ldquo;{thought.text}&rdquo;</p>
-            <div className="flex gap-2 shrink-0">
-              <motion.button whileTap={{ scale: 0.9 }} onClick={() => handleSort(thought, 'passenger')} className="px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-wider text-white" style={{ backgroundColor: '#DC2626' }}>
-                <X size={12} className="inline -mt-0.5" />
-              </motion.button>
-              <motion.button whileTap={{ scale: 0.9 }} onClick={() => handleSort(thought, 'driver')} className="px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-wider text-white" style={{ backgroundColor: '#3A8D5F' }}>
-                <CheckCircle2 size={12} className="inline -mt-0.5" />
-              </motion.button>
-            </div>
-          </motion.div>
-        ))}
-      </AnimatePresence>
-
-      {allSorted && (
-        <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="text-center py-3">
-          <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold text-white" style={{ backgroundColor: '#3A8D5F', boxShadow: '3px 3px 0px 0px #1F5F3E' }}>
-            <CheckCircle2 size={16} /> All sorted!
-          </span>
-        </motion.div>
-      )}
-    </div>
-  );
-};
+const MindsetSorter = BrandedMindsetSorter;
 
 /* ═══ Reorder item colours ═══ */
 const REORDER_COLORS = [
   { bg: COLORS.accent, border: COLORS.accentDark },
-  { bg: '#EA580C', border: '#C2410C' },
-  { bg: '#2563EB', border: '#1D4ED8' },
-  { bg: '#D97706', border: '#B45309' },
+  { bg: "var(--module-danger-text)", border: "var(--module-line)" },
+  { bg: "var(--module-ink)", border: "var(--module-line)" },
+  { bg: "var(--module-danger-text)", border: "var(--module-line)" },
 ];
 
 
@@ -278,20 +129,20 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
               </MicroCommitment>
 
               {/* Input form */}
-              <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <h4 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white text-center mb-6">Program Your Destination</h4>
+              <div className="wr-destination my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <h4 className="font-serif text-xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center mb-6">Program Your Destination</h4>
                 <div className="space-y-4 max-w-lg mx-auto">
                   <div>
-                    <label className="block text-xs font-medium text-zinc-500 mb-1.5">The Destination (Your Dream Course/Career)</label>
-                    <input value={futureSelf} onChange={(e) => setFutureSelf(e.target.value)} onBlur={() => saveResponse('futureSelf', futureSelf)} placeholder="e.g., Computer Science at Trinity" className="w-full bg-white dark:bg-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }} />
+                    <label className="block text-xs font-medium text-[var(--module-muted)] mb-1.5">The Destination (Your Dream Course/Career)</label>
+                    <input value={futureSelf} onChange={(e) => setFutureSelf(e.target.value)} onBlur={() => saveResponse('futureSelf', futureSelf)} placeholder="e.g., Computer Science at Trinity" className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-4 py-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }} />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium text-zinc-500 mb-1.5">The First Turn (One Small Action Tomorrow)</label>
-                    <input value={dailyAction} onChange={(e) => setDailyAction(e.target.value)} onBlur={() => saveResponse('dailyAction', dailyAction)} placeholder="e.g., 20 minutes of Maths revision" className="w-full bg-white dark:bg-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }} />
+                    <label className="block text-xs font-medium text-[var(--module-muted)] mb-1.5">The First Turn (One Small Action Tomorrow)</label>
+                    <input value={dailyAction} onChange={(e) => setDailyAction(e.target.value)} onBlur={() => saveResponse('dailyAction', dailyAction)} placeholder="e.g., 20 minutes of Maths revision" className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-4 py-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }} />
                   </div>
                   {futureSelf && dailyAction && (
-                    <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="p-4 rounded-xl text-center" style={{ backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', boxShadow: '3px 3px 0px 0px #3A8D5F' }}>
-                      <p className="text-sm font-bold" style={{ color: '#1F5F3E' }}><CheckCircle2 size={14} className="inline -mt-0.5 mr-1" /> Route locked in. The journey starts now.</p>
+                    <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="p-4 rounded-xl text-center" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none' }}>
+                      <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}><CheckCircle2 size={14} className="inline -mt-0.5 mr-1" /> Route locked in. The journey starts now.</p>
                     </motion.div>
                   )}
                 </div>
@@ -330,14 +181,14 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
               </MicroCommitment>
 
               {/* Branching Scenario */}
-              <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+              <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
                 <div className="flex justify-center mb-4">
-                  <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider" style={{ backgroundColor: '#FCD34D', border: '2px solid #D97706', color: '#78350F', boxShadow: '2px 2px 0px 0px #D97706' }}>
+                  <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", color: "var(--module-danger-text)", boxShadow: 'none' }}>
                     Scenario
                   </span>
                 </div>
-                <h4 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white text-center">The Confusion</h4>
-                <p className="text-sm text-zinc-500 text-center mt-1 mb-6">You don't understand the teacher's explanation. What's your move?</p>
+                <h4 className="font-serif text-xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Confusion</h4>
+                <p className="text-sm text-[var(--module-muted)] text-center mt-1 mb-6">You don't understand the teacher's explanation. What's your move?</p>
 
                 <div className="space-y-3 max-w-lg mx-auto">
                   <AnimatePresence>
@@ -346,23 +197,23 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
                       <motion.button
                         layout
                         exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
-                        whileHover={!scenarioChoice ? { x: -2, y: -2, boxShadow: '6px 6px 0px 0px #1C1917' } : {}}
-                        whileTap={!scenarioChoice ? { x: 2, y: 2, boxShadow: '1px 1px 0px 0px #1C1917' } : {}}
+                        whileHover={!scenarioChoice ? { x: -2, y: -2, boxShadow: 'none' } : {}}
+                        whileTap={!scenarioChoice ? { x: 2, y: 2, boxShadow: 'none' } : {}}
                         transition={press}
                         onClick={() => { if (!scenarioChoice) { setScenarioChoice('passive'); saveResponse('scenarioChoice', 'passive'); } }}
-                        className="w-full text-left p-5 flex items-center gap-4 bg-white dark:bg-zinc-800"
+                        className="w-full text-left p-5 flex items-center gap-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"
                         style={{
-                          border: '2.5px solid #1C1917',
+                          border: "2.5px solid var(--module-line)",
                           borderRadius: 16,
-                          boxShadow: scenarioChoice === 'passive' ? '2px 2px 0px 0px #1C1917' : '4px 4px 0px 0px #1C1917',
-                        }}
+                          boxShadow: 'none',
+                        }} data-wide-button="true"
                       >
-                        <div className="w-10 h-10 flex items-center justify-center shrink-0" style={{ backgroundColor: '#DC2626', borderRadius: 12 }}>
-                          <X size={18} style={{ color: '#fff' }} />
+                        <div className="w-10 h-10 flex items-center justify-center shrink-0" style={{ backgroundColor: "var(--module-danger)", borderRadius: 12 }}>
+                          <X size={18} style={{ color: "var(--module-on-fill)" }} />
                         </div>
                         <div>
-                          <p className="text-[10px] font-bold uppercase tracking-wider mb-0.5 text-zinc-500">Passenger Move</p>
-                          <p className="text-sm font-semibold text-zinc-800 dark:text-white">Say nothing and hope you figure it out later.</p>
+                          <p className="text-[10px] font-bold uppercase tracking-wider mb-0.5 text-[var(--module-muted)]">Passenger Move</p>
+                          <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Say nothing and hope you figure it out later.</p>
                         </div>
                       </motion.button>
                     )}
@@ -372,23 +223,23 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
                       <motion.button
                         layout
                         exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
-                        whileHover={!scenarioChoice ? { x: -2, y: -2, boxShadow: '6px 6px 0px 0px #1C1917' } : {}}
-                        whileTap={!scenarioChoice ? { x: 2, y: 2, boxShadow: '1px 1px 0px 0px #1C1917' } : {}}
+                        whileHover={!scenarioChoice ? { x: -2, y: -2, boxShadow: 'none' } : {}}
+                        whileTap={!scenarioChoice ? { x: 2, y: 2, boxShadow: 'none' } : {}}
                         transition={press}
                         onClick={() => { if (!scenarioChoice) { setScenarioChoice('agentic'); saveResponse('scenarioChoice', 'agentic'); } }}
-                        className="w-full text-left p-5 flex items-center gap-4 bg-white dark:bg-zinc-800"
+                        className="w-full text-left p-5 flex items-center gap-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"
                         style={{
-                          border: '2.5px solid #1C1917',
+                          border: "2.5px solid var(--module-line)",
                           borderRadius: 16,
-                          boxShadow: scenarioChoice === 'agentic' ? '2px 2px 0px 0px #1C1917' : '4px 4px 0px 0px #1C1917',
-                        }}
+                          boxShadow: 'none',
+                        }} data-wide-button="true"
                       >
-                        <div className="w-10 h-10 flex items-center justify-center shrink-0" style={{ backgroundColor: '#3A8D5F', borderRadius: 12 }}>
-                          <CheckCircle2 size={18} style={{ color: '#fff' }} />
+                        <div className="w-10 h-10 flex items-center justify-center shrink-0" style={{ backgroundColor: "var(--module-success)", borderRadius: 12 }}>
+                          <CheckCircle2 size={18} style={{ color: "var(--module-on-fill)" }} />
                         </div>
                         <div>
-                          <p className="text-[10px] font-bold uppercase tracking-wider mb-0.5 text-zinc-500">Driver Move</p>
-                          <p className="text-sm font-semibold text-zinc-800 dark:text-white">Ask a strategic question to clarify.</p>
+                          <p className="text-[10px] font-bold uppercase tracking-wider mb-0.5 text-[var(--module-muted)]">Driver Move</p>
+                          <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Ask a strategic question to clarify.</p>
                         </div>
                       </motion.button>
                     )}
@@ -398,15 +249,15 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
                 <AnimatePresence>
                   {scenarioChoice && (
                     <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="mt-5 max-w-lg mx-auto">
-                      <div className="bg-white dark:bg-zinc-900 overflow-hidden" style={{ border: '2.5px solid #1C1917', borderRadius: 18, boxShadow: '4px 4px 0px 0px #1C1917' }}>
+                      <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] overflow-hidden" style={{ border: "2.5px solid var(--module-line)", borderRadius: 18, boxShadow: 'none' }}>
                         {/* Coloured header bar */}
-                        <div style={{ backgroundColor: scenarioChoice === 'passive' ? '#DC2626' : '#3A8D5F', padding: '10px 16px', borderBottom: '2.5px solid #1C1917' }}>
-                          <p className="text-[13px] font-medium tracking-wider uppercase text-white text-center">
+                        <div style={{ backgroundColor: moduleFill(scenarioChoice === 'passive' ? "var(--module-danger)" : "var(--module-success)"), padding: '10px 16px', borderBottom: "2.5px solid var(--module-line)" }}>
+                          <p className="text-[13px] font-medium tracking-wider uppercase text-[var(--module-ink)] text-center">
                             {scenarioChoice === 'passive' ? 'Roadblock ahead!' : 'Route recalculated!'}
                           </p>
                         </div>
                         <div className="p-5">
-                          <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+                          <p className="text-sm leading-relaxed text-[var(--module-ink)] dark:text-[var(--module-muted)]">
                             {scenarioChoice === 'passive'
                               ? "You've missed a turn. The feeling of being \"lost\" grows, making it harder to catch up later."
                               : "You get a clear direction, help others in the car, and show the teacher you're a co-pilot. This is Agentic Engagement."
@@ -440,28 +291,28 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
                 <p>Write this 'Reframe' on a small piece of paper: "This is hard because it's a high-level problem. Solving it is a step toward my goal." Fold it up and put it in your wallet or pencil case.</p>
               </MicroCommitment>
 
-              <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <h4 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white text-center mb-6">The Mental Suspension System</h4>
+              <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <h4 className="font-serif text-xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center mb-6">The Mental Suspension System</h4>
                 {/* Negative thought — coral card */}
-                <div className="p-4 mb-4 rounded-xl" style={{ backgroundColor: '#FCA5A5', border: '2px solid #DC2626' }}>
-                  <p className="text-sm font-bold flex items-center gap-2" style={{ color: '#7F1D1D' }}>
+                <div className="p-4 mb-4 rounded-xl" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)" }}>
+                  <p className="text-sm font-bold flex items-center gap-2" style={{ color: "var(--module-danger-text)" }}>
                     <AlertTriangle size={14} /> &ldquo;I'll never be able for Higher Level Maths.&rdquo;
                   </p>
                 </div>
                 {/* Reframe input */}
                 <div>
-                  <label className="block text-xs font-medium text-zinc-500 mb-2 ml-1">Your reframe</label>
+                  <label className="block text-xs font-medium text-[var(--module-muted)] mb-2 ml-1">Your reframe</label>
                   <input
                     value={responses['reframeText'] || ''}
                     onChange={(e) => saveResponse('reframeText', e.target.value)}
                     placeholder="e.g., Maths is hard right now, but I haven't tried every approach yet."
-                    className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all"
-                    style={{ border: '1.5px solid #E7E5E4' }}
+                    className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none transition-all"
+                    style={{ border: "1.5px solid var(--module-line)" }}
                   />
                 </div>
                 {responses['reframeText'] && (
-                  <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="mt-4 p-4 rounded-xl" style={{ backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', boxShadow: '3px 3px 0px 0px #3A8D5F' }}>
-                    <p className="text-sm font-bold" style={{ color: '#1F5F3E' }}><CheckCircle2 size={14} className="inline -mt-0.5 mr-1" /> Suspension installed. Pothole → speed bump.</p>
+                  <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="mt-4 p-4 rounded-xl" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none' }}>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}><CheckCircle2 size={14} className="inline -mt-0.5 mr-1" /> Suspension installed. Pothole → speed bump.</p>
                   </motion.div>
                 )}
               </div>
@@ -490,9 +341,9 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
               <p>{essentials ? 'Build your Driver identity through daily action. Arrange your protocol below, then fill in your route plan.' : "A Driver identity isn't something you find; it's something you build through deliberate, daily action. It's the route plan that guides you when motivation is low and the road is long. First, arrange your protocol components into your personal pre-drive checklist."}</p>
 
               {/* Reorder checklist */}
-              <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <h4 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white text-center mb-2">Pre-Drive Checklist</h4>
-                <p className="text-sm text-zinc-500 text-center mb-6">Drag to reorder by priority</p>
+              <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <h4 className="font-serif text-xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center mb-2">Pre-Drive Checklist</h4>
+                <p className="text-sm text-[var(--module-muted)] text-center mb-6">Drag to reorder by priority</p>
                 <Reorder.Group axis="y" values={battlePlanItems} onReorder={setBattlePlanItems} className="space-y-3 max-w-md mx-auto">
                   {battlePlanItems.map((item, i) => {
                     const c = REORDER_COLORS[i % REORDER_COLORS.length];
@@ -500,18 +351,18 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
                       <Reorder.Item
                         key={item.id}
                         value={item}
-                        className="flex items-center gap-3 cursor-grab active:cursor-grabbing bg-white dark:bg-zinc-800"
+                        className="flex items-center gap-3 cursor-grab active:cursor-grabbing bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"
                         style={{
-                          border: '2.5px solid #1C1917',
+                          border: "2.5px solid var(--module-line)",
                           borderRadius: 16,
                           padding: '14px 16px',
-                          boxShadow: '4px 4px 0px 0px #1C1917',
+                          boxShadow: 'none',
                         }}
-                        whileDrag={{ scale: 1.03, y: -2, boxShadow: '6px 6px 0px 0px #1C1917' }}
+                        whileDrag={{ scale: 1.03, y: -2, boxShadow: 'none' }}
                       >
-                        <GripVertical size={18} className="text-zinc-400 shrink-0" style={{ opacity: 0.5 }} />
-                        <span className="w-9 h-9 rounded-xl flex items-center justify-center text-xs font-bold text-white shrink-0" style={{ backgroundColor: c.bg, border: `2px solid ${c.border}` }}>{i + 1}</span>
-                        <span className="text-sm font-bold text-zinc-800 dark:text-zinc-200">{item.text}</span>
+                        <GripVertical size={18} className="text-[var(--module-muted)] shrink-0" style={{ opacity: 0.5 }} />
+                        <span className="w-9 h-9 rounded-xl flex items-center justify-center text-xs font-bold text-[var(--module-ink)] shrink-0" style={{ backgroundColor: moduleFill(c.bg), border: `2px solid ${c.border}` }}>{i + 1}</span>
+                        <span className="text-sm font-bold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{item.text}</span>
                       </Reorder.Item>
                     );
                   })}
@@ -519,20 +370,20 @@ const AgencyProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgr
               </div>
 
               {/* Final route plan inputs */}
-              <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <h4 className="font-serif text-xl font-semibold text-zinc-900 dark:text-white text-center mb-6">Finalise Your Route Plan</h4>
+              <div className="my-14 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <h4 className="font-serif text-xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center mb-6">Finalise Your Route Plan</h4>
                 <div className="space-y-4 max-w-lg mx-auto">
                   <div>
-                    <label className="block text-xs font-medium text-zinc-500 mb-1.5">My Destination (LC Goal)</label>
-                    <input value={responses['routeDestination'] || ''} onChange={(e) => saveResponse('routeDestination', e.target.value)} placeholder="e.g., 500 points for Engineering at UCD" className="w-full bg-white dark:bg-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }} />
+                    <label className="block text-xs font-medium text-[var(--module-muted)] mb-1.5">My Destination (LC Goal)</label>
+                    <input value={responses['routeDestination'] || ''} onChange={(e) => saveResponse('routeDestination', e.target.value)} placeholder="e.g., 500 points for Engineering at UCD" className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-4 py-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }} />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium text-zinc-500 mb-1.5">My Custom Engine (My Advantage)</label>
-                    <input value={responses['routeEngine'] || ''} onChange={(e) => saveResponse('routeEngine', e.target.value)} placeholder="e.g., I'm good at staying calm under pressure." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }} />
+                    <label className="block text-xs font-medium text-[var(--module-muted)] mb-1.5">My Custom Engine (My Advantage)</label>
+                    <input value={responses['routeEngine'] || ''} onChange={(e) => saveResponse('routeEngine', e.target.value)} placeholder="e.g., I'm good at staying calm under pressure." className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-4 py-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }} />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium text-zinc-500 mb-1.5">My First Turn (Classroom Hack)</label>
-                    <input value={responses['routeHack'] || ''} onChange={(e) => saveResponse('routeHack', e.target.value)} placeholder="e.g., Tomorrow in Maths, ask the teacher to explain the 'why'." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }} />
+                    <label className="block text-xs font-medium text-[var(--module-muted)] mb-1.5">My First Turn (Classroom Hack)</label>
+                    <input value={responses['routeHack'] || ''} onChange={(e) => saveResponse('routeHack', e.target.value)} placeholder="e.g., Tomorrow in Maths, ask the teacher to explain the 'why'." className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-4 py-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }} />
                   </div>
                 </div>
               </div>

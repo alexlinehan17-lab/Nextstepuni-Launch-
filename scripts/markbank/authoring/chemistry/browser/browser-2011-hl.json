@@ -1,0 +1,21 @@
+[
+ {"id": "chem-2011-hl-q1-a", "ask": "Describe how the 25.0 cm³ sample of the original bleach", "answer": "add dropwise (by dropper, by wash bottle, other suitable method)"},
+ {"id": "chem-2011-hl-q1-e-i", "ask": "Calculate the concentration of NaClO in moles per litre", "answer": "0.0322 / 0.032 M", "solution": true},
+ {"id": "chem-2011-hl-q2-a", "ask": "", "answer": "anti-bumping granules", "figure": true, "solution": true},
+ {"id": "chem-2011-hl-q2-b-iv", "ask": "Identify one safety feature of the apparatus drawn", "answer": "Air-tight seals", "figure": true},
+ {"id": "chem-2011-hl-q3-b-i", "ask": "What solid was collected", "answer": "charcoal / C / insoluble solid", "figure": true},
+ {"id": "chem-2011-hl-q4-e", "ask": "Calculate the value of x", "answer": "MgSO₄.xH₂O = 246 / water = 126", "solution": true},
+ {"id": "chem-2011-hl-q4-k-b", "ask": "greenhouse factor of a gas", "answer": "to carbon dioxide, which is given a value of 1"},
+ {"id": "chem-2011-hl-q5-b", "ask": "Sixty-two elements were known when Mendeleev", "answer": "to suit (fit) properties to groups", "figure": true},
+ {"id": "chem-2011-hl-q6-b", "ask": "how crude oil is separated into useful substances", "answer": "vapour moves up through a series of trays (levels)", "solution": true},
+ {"id": "chem-2011-hl-q6-e", "ask": "", "answer": "C + ½O₂ → CO ΔH = –111 kJ", "figure": true, "solution": true},
+ {"id": "chem-2011-hl-q7-d-calc", "ask": "Calculate the pH of a 0.2 M solution of a weak acid", "answer": "⇒ [H⁺] = 3.5 × 10⁻³", "solution": true},
+ {"id": "chem-2011-hl-q8-a-evidence", "ask": "State three pieces of experimental evidence", "answer": "inhibitors (e.g. oxygen) slow reaction", "solution": true},
+ {"id": "chem-2011-hl-q9-a-calculation", "ask": "", "answer": "x = 0.53 – 0.54 mol", "figure": true, "solution": true},
+ {"id": "chem-2011-hl-q9-b-cooling", "ask": "When test tube C was placed in a beaker", "answer": "cooling always shifts in the exothermic (heat producing) direction", "figure": true},
+ {"id": "chem-2011-hl-q10-a-profile", "ask": "", "answer": "catalysed and uncatalysed curves correctly shown", "figure": true, "solution": true},
+ {"id": "chem-2011-hl-q10-c-shoe", "ask": "Explain why the carbon–12 to carbon–14 isotope ratio", "answer": "carbon–14 decayed (changed to nitrogen)", "figure": true},
+ {"id": "chem-2011-hl-q11-a-i", "ask": "Describe how the BOD was reduced by about 30%", "answer": "and settlement (sedimentation, grit channels)"},
+ {"id": "chem-2011-hl-q11-c-a-iii", "ask": "Draw two repeating units of the Teflon polymer.", "answer": "– CF₂ – CF₂ – CF₂ – CF₂ –", "solution": true},
+ {"id": "chem-2011-hl-q11-c-b-outline", "ask": "Outline the chemical processes", "answer": "reaction of oxygen atom (radical) with oxygen molecule forming ozone", "solution": true}
+]

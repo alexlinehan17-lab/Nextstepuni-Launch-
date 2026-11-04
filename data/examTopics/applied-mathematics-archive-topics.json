@@ -1,0 +1,38 @@
+[
+  {
+    "id": "applied-mathematics-higher-relative-velocity",
+    "level": "higher",
+    "curriculumNodeId": "applied-mathematics-2-9",
+    "specificationYear": 2010
+  },
+  {
+    "id": "applied-mathematics-higher-statics-centre-of-gravity",
+    "level": "higher",
+    "curriculumNodeId": "applied-mathematics-2-10",
+    "specificationYear": 2010
+  },
+  {
+    "id": "applied-mathematics-higher-hydrostatics",
+    "level": "higher",
+    "curriculumNodeId": "applied-mathematics-2-11",
+    "specificationYear": 2010
+  },
+  {
+    "id": "applied-mathematics-higher-rigid-body-motion-moments-of-inertia",
+    "level": "higher",
+    "curriculumNodeId": "applied-mathematics-2-12",
+    "specificationYear": 2010
+  },
+  {
+    "id": "applied-mathematics-higher-simple-harmonic-motion",
+    "level": "higher",
+    "curriculumNodeId": "applied-mathematics-2-13",
+    "specificationYear": 2010
+  },
+  {
+    "id": "applied-mathematics-higher-dimensional-analysis",
+    "level": "higher",
+    "curriculumNodeId": "applied-mathematics-2-8",
+    "specificationYear": 2023
+  }
+]

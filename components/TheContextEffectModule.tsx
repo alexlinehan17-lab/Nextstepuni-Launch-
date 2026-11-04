@@ -1,19 +1,21 @@
+import { BrandedLocationScore } from './learning/WideFeatures';
+import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
-import { Map, Repeat, Activity, Brain, Wrench } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { purpleTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { Cite } from './ModuleReferences';
+import { AnimatePresence,motion } from 'framer-motion';
+import { Activity,Brain,Map,Repeat,Wrench } from 'lucide-react';
+import React,{ useState } from 'react';
 import { CONTEXT_EFFECT_REFERENCE_LIST } from '../data/references/contextEffect';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { purpleTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { ConceptCardGrid,Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
+import { MotionDiv } from './Motion';
 
 const theme = purpleTheme;
 
@@ -64,14 +66,14 @@ const ContextMemoryComparison = () => {
   };
 
   const samePhases = [
-    { label: 'Building', x1: 0, x2: 0.33, color: '#6ee7b7' },
-    { label: 'Strengthening', x1: 0.33, x2: 0.66, color: '#34d399' },
-    { label: 'Accessible', x1: 0.66, x2: 1, color: '#10b981' },
+    { label: 'Building', x1: 0, x2: 0.33, color: "var(--module-success-text)" },
+    { label: 'Strengthening', x1: 0.33, x2: 0.66, color: "var(--module-success-text)" },
+    { label: 'Accessible', x1: 0.66, x2: 1, color: "var(--module-success-text)" },
   ];
   const diffPhases = [
-    { label: 'Building', x1: 0, x2: 0.33, color: '#fca5a5' },
-    { label: 'Cues missing', x1: 0.33, x2: 0.66, color: '#f87171' },
-    { label: 'Inaccessible', x1: 0.66, x2: 1, color: '#ef4444' },
+    { label: 'Building', x1: 0, x2: 0.33, color: "var(--module-ink)" },
+    { label: 'Cues missing', x1: 0.33, x2: 0.66, color: "var(--module-danger-text)" },
+    { label: 'Inaccessible', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
   ];
 
   const Chart = ({ encoding, retrieval, phases, areaColor, areaId, label }: {
@@ -86,67 +88,67 @@ const ContextMemoryComparison = () => {
         </linearGradient>
       </defs>
       {[0.25, 0.5, 0.75, 1.0].map((v) => (
-        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
       ))}
-      <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+      <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
 
       {/* Encoding area */}
       <motion.path d={buildArea(encoding)} fill={`url(#${areaId})`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} />
       {/* Encoding line (solid) */}
       <motion.path d={buildLine(encoding)} fill="none" stroke={areaColor} strokeWidth="2.5" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, ease: 'easeOut' }} />
       {/* Retrieval line (dashed) */}
-      <motion.path d={buildLine(retrieval)} fill="none" stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }} />
+      <motion.path d={buildLine(retrieval)} fill="none" stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }} />
       {/* Encoding dots */}
       {encoding.map((v, i) => (
         <motion.circle key={i} cx={toX(i / (encoding.length - 1))} cy={toY(v)} r="3.5" fill={areaColor} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.3 }} />
       ))}
 
-      <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
-      <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
+      <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
+      <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
       {xLabels.map((m, i) => (
-        <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>
+        <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{m}</text>
       ))}
       {phases.map((p, i) => (
         <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
       ))}
-      <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{label}</text>
+      <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">{label}</text>
       <line x1={W - padR - 120} x2={W - padR - 104} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-      <text x={W - padR - 100} y={17} fontSize="8" fill="#a1a1aa">Learning Strength</text>
-      <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="4 2" />
-      <text x={W - padR - 24} y={17} fontSize="8" fill="#a1a1aa">Recall</text>
+      <text x={W - padR - 100} y={17} fontSize="8" fill="var(--module-surface)">Learning Strength</text>
+      <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="4 2" />
+      <text x={W - padR - 24} y={17} fontSize="8" fill="var(--module-surface)">Recall</text>
     </svg>
   );
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">How Your Study Spot Affects Your Memory</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">What happens to your memory when the environment changes?</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">How Your Study Spot Affects Your Memory</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">What happens to your memory when the environment changes?</p>
 
       {!revealed ? (
         <div className="text-center">
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">You study perfectly in your bedroom. But what happens when you sit down in the exam hall?</p>
-          <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-purple-500 text-white hover:bg-purple-600 transition-colors">
+          <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">You study perfectly in your bedroom. But what happens when you sit down in the exam hall?</p>
+          <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-solid)] text-[var(--module-ink)] hover:bg-[var(--module-solid)] transition-colors" data-wide-button="true">
             See the Context Effect
           </button>
         </div>
       ) : (
         <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
           <div className="grid md:grid-cols-2 gap-4 mb-5">
-            <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
-              <Chart encoding={encodingStrength} retrieval={sameRetrieval} phases={samePhases} areaColor="#10b981" areaId="same-ctx-grad" label="Same Context (Study & Test)" />
+            <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] p-3">
+              <Chart encoding={encodingStrength} retrieval={sameRetrieval} phases={samePhases} areaColor="var(--module-success-text)" areaId="same-ctx-grad" label="Same Context (Study & Test)" />
             </div>
-            <div className="rounded-lg border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 p-3">
-              <Chart encoding={encodingStrength} retrieval={diffRetrieval} phases={diffPhases} areaColor="#ef4444" areaId="diff-ctx-grad" label="Different Context (Study vs Test)" />
+            <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] p-3">
+              <Chart encoding={encodingStrength} retrieval={diffRetrieval} phases={diffPhases} areaColor="var(--module-danger-text)" areaId="diff-ctx-grad" label="Different Context (Study vs Test)" />
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
-              <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Same-place recall</strong> works because familiar surroundings help your brain find what it learned. But exams are in a DIFFERENT place. If your memories depend on your study spot, they become fragile.</p>
+            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+              <span className="text-[var(--module-success-text)] text-lg mt-0.5"></span>
+              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Same-place recall</strong> works because familiar surroundings help your brain find what it learned. But exams are in a DIFFERENT place. If your memories depend on your study spot, they become fragile.</p>
             </div>
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
-              <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">When the exam hall strips away all your familiar clues</strong>, place-dependent memories become unreachable. You need knowledge that works anywhere, not just in your bedroom.</p>
+            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+              <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
+              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">When the exam hall strips away all your familiar clues</strong>, place-dependent memories become unreachable. You need knowledge that works anywhere, not just in your bedroom.</p>
             </div>
           </div>
         </MotionDiv>
@@ -205,9 +207,9 @@ const ContextCueExplorer = () => {
   const lostPercent = selectedCount > 0 ? Math.round(((selectedCount - survivingCount) / selectedCount) * 100) : 0;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Study Environment Audit</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Pick the things that are around you when you study, then see how many of them will be there in the exam hall.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your Study Environment Audit</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Pick the things that are around you when you study, then see how many of them will be there in the exam hall.</p>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5 mb-6">
         {STUDY_CUES.map((cue) => {
@@ -218,16 +220,16 @@ const ContextCueExplorer = () => {
               onClick={() => toggleCue(cue.id)}
               className="flex items-center gap-3 text-left transition-all duration-200"
               style={{
-                backgroundColor: isSelected ? '#FDEEDF' : '#FFFFFF',
-                border: isSelected ? '2px solid #F26B1F' : '2px solid #d0cdc8',
+                backgroundColor: moduleFill(isSelected ? "var(--module-surface)" : "var(--module-surface)"),
+                border: isSelected ? "2px solid var(--module-line)" : "2px solid var(--module-line)",
                 borderRadius: 14,
                 padding: '14px 18px',
-                color: isSelected ? '#8C3A0E' : '#9e9186',
+                color: moduleText(isSelected ? "var(--module-danger-text)" : "var(--module-muted)"),
                 cursor: revealed ? 'default' : 'pointer',
-              }}
+              }} data-wide-button="true" data-selected={!!(isSelected)} data-tone="coral" aria-pressed={!!(isSelected)}
             >
-              <span style={{ flexShrink: 0, color: isSelected ? '#F26B1F' : '#9e9186' }}>{CUE_ICONS[cue.id]}</span>
-              <span style={{ fontSize: 14, fontWeight: isSelected ? 600 : 500, color: isSelected ? '#8C3A0E' : '#5a5550' }}>{cue.label}</span>
+              <span style={{ flexShrink: 0, color: moduleText(isSelected ? "var(--module-danger-text)" : "var(--module-muted)") }}>{CUE_ICONS[cue.id]}</span>
+              <span style={{ fontSize: 14, fontWeight: isSelected ? 600 : 500, color: moduleText(isSelected ? "var(--module-danger-text)" : "var(--module-ink)") }}>{cue.label}</span>
             </button>
           );
         })}
@@ -235,8 +237,8 @@ const ContextCueExplorer = () => {
 
       {selectedCount > 0 && !revealed && (
         <div className="text-center">
-          <p className="text-sm mb-3" style={{ color: '#7a7068' }}>{selectedCount} cue{selectedCount !== 1 ? 's' : ''} selected</p>
-          <button onClick={() => setRevealed(true)} style={{ backgroundColor: '#F26B1F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>
+          <p className="text-sm mb-3" style={{ color: "var(--module-muted)" }}>{selectedCount} cue{selectedCount !== 1 ? 's' : ''} selected</p>
+          <button onClick={() => setRevealed(true)} style={{ backgroundColor: "var(--module-danger)", borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">
             See the Exam Hall
           </button>
         </div>
@@ -247,27 +249,27 @@ const ContextCueExplorer = () => {
           <MotionDiv initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
             <div className="grid md:grid-cols-2 gap-4 mb-6">
               {/* Study room */}
-              <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '16px 20px' }}>
-                <p className="font-serif font-semibold mb-2" style={{ fontSize: 14, color: '#1a1a1a' }}>Your Study Room — {selectedCount} cues</p>
+              <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '16px 20px' }}>
+                <p className="font-serif font-semibold mb-2" style={{ fontSize: 14, color: "var(--module-ink)" }}>Your Study Room — {selectedCount} cues</p>
                 <div className="flex flex-wrap gap-1.5">
                   {STUDY_CUES.filter((c) => selectedCues.has(c.id)).map((c) => (
-                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: '#FDEEDF', border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: '#8C3A0E' }}>
-                      <span style={{ color: '#F26B1F' }}>{CUE_ICONS[c.id]}</span> {c.label}
+                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: "var(--module-surface)", border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: "var(--module-danger-text)" }}>
+                      <span style={{ color: "var(--module-danger-text)" }}>{CUE_ICONS[c.id]}</span> {c.label}
                     </span>
                   ))}
                 </div>
               </div>
               {/* Exam hall */}
-              <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '16px 20px' }}>
-                <p className="font-serif font-semibold mb-2" style={{ fontSize: 14, color: '#1a1a1a' }}>The Exam Hall — {survivingCount} cue{survivingCount !== 1 ? 's' : ''} remain</p>
+              <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '16px 20px' }}>
+                <p className="font-serif font-semibold mb-2" style={{ fontSize: 14, color: "var(--module-ink)" }}>The Exam Hall — {survivingCount} cue{survivingCount !== 1 ? 's' : ''} remain</p>
                 <div className="flex flex-wrap gap-1.5">
                   {STUDY_CUES.filter((c) => selectedCues.has(c.id) && c.survivesExam).map((c) => (
-                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: '#FDEEDF', border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: '#8C3A0E' }}>
-                      <span style={{ color: '#F26B1F' }}>{CUE_ICONS[c.id]}</span> {c.label}
+                    <span key={c.id} className="inline-flex items-center gap-1.5" style={{ backgroundColor: "var(--module-surface)", border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 10px', fontSize: 12, fontWeight: 500, color: "var(--module-danger-text)" }}>
+                      <span style={{ color: "var(--module-danger-text)" }}>{CUE_ICONS[c.id]}</span> {c.label}
                     </span>
                   ))}
                   {survivingCount === 0 && (
-                    <span className="italic" style={{ fontSize: 12, color: '#A8746E' }}>Nothing matches — your brain has zero familiar clues to help you remember</span>
+                    <span className="italic" style={{ fontSize: 12, color: "var(--module-ink)" }}>Nothing matches — your brain has zero familiar clues to help you remember</span>
                   )}
                 </div>
               </div>
@@ -275,21 +277,21 @@ const ContextCueExplorer = () => {
 
             {/* Stacked bar */}
             <div className="mb-4">
-              <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', marginBottom: 6, textTransform: 'uppercase' as const }}>Memory clues that survive</p>
-              <div className="flex" style={{ border: '2px solid #1a1a1a', borderRadius: 100, height: 28, overflow: 'hidden' }}>
+              <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", marginBottom: 6, textTransform: 'uppercase' as const }}>Memory clues that survive</p>
+              <div className="flex" style={{ border: "2px solid var(--module-line)", borderRadius: 100, height: 28, overflow: 'hidden' }}>
                 {survivingCount > 0 && (
-                  <MotionDiv className="h-full flex items-center justify-center" style={{ backgroundColor: '#F26B1F' }} initial={{ width: 0 }} animate={{ width: `${100 - lostPercent}%` }} transition={{ duration: 0.8, ease: 'easeOut' }}>
-                    {(100 - lostPercent) > 15 && <span style={{ fontSize: 11, fontWeight: 600, color: '#FFFFFF' }}>{100 - lostPercent}% survive</span>}
+                  <MotionDiv className="h-full flex items-center justify-center" style={{ backgroundColor: "var(--module-danger)" }} initial={{ width: 0 }} animate={{ width: `${100 - lostPercent}%` }} transition={{ duration: 0.8, ease: 'easeOut' }}>
+                    {(100 - lostPercent) > 15 && <span style={{ fontSize: 11, fontWeight: 600, color: "var(--module-on-fill)" }}>{100 - lostPercent}% survive</span>}
                   </MotionDiv>
                 )}
-                <MotionDiv className="h-full flex items-center justify-center" style={{ backgroundColor: '#d0cdc8' }} initial={{ width: 0 }} animate={{ width: `${lostPercent}%` }} transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}>
-                  {lostPercent > 15 && <span style={{ fontSize: 11, fontWeight: 600, color: '#5a5550' }}>{lostPercent}% lost</span>}
+                <MotionDiv className="h-full flex items-center justify-center" style={{ backgroundColor: "var(--module-surface)" }} initial={{ width: 0 }} animate={{ width: `${lostPercent}%` }} transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}>
+                  {lostPercent > 15 && <span style={{ fontSize: 11, fontWeight: 600, color: "var(--module-ink)" }}>{lostPercent}% lost</span>}
                 </MotionDiv>
               </div>
             </div>
 
-            <div style={{ border: '1px solid #d0cdc8', backgroundColor: '#F1F0ED', borderRadius: 10, padding: '12px 16px' }}>
-              <p className="text-sm" style={{ color: '#7a7068' }}>
+            <div style={{ border: "1px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: 10, padding: '12px 16px' }}>
+              <p className="text-sm" style={{ color: "var(--module-muted)" }}>
                 <strong>You lost {lostPercent}% of the clues your brain uses to remember.</strong>{' '}
                 {lostPercent >= 75
                   ? 'Your memories are tied tightly to your study spot. Studying in different places would help your brain remember without needing those clues.'
@@ -357,86 +359,86 @@ const NoiseLevelCurve = () => {
   const creativePeakY = 0.97;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
       <div className="text-center mb-6">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Research Evidence</span>
-        <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The Noise-Performance Curve</h4>
-        <p className="text-sm mt-1" style={{ color: '#7a7068' }}>How noise level affects how well your brain performs.</p>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Research Evidence</span>
+        <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>The Noise-Performance Curve</h4>
+        <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>How noise level affects how well your brain performs.</p>
       </div>
 
       {!revealed ? (
         <div className="text-center">
-          <p className="text-sm mb-4" style={{ color: '#7a7068' }}>Is silence always best for studying? Or does a little noise actually help?</p>
-          <button onClick={() => setRevealed(true)} style={{ backgroundColor: '#F26B1F', borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>
+          <p className="text-sm mb-4" style={{ color: "var(--module-muted)" }}>Is silence always best for studying? Or does a little noise actually help?</p>
+          <button onClick={() => setRevealed(true)} style={{ backgroundColor: "var(--module-danger)", borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">
             See the Noise Curve
           </button>
         </div>
       ) : (
         <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-          <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: '28px 24px' }}>
+          <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: '28px 24px' }}>
             <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
               {/* Grid lines */}
               {[0.25, 0.5, 0.75, 1.0].map((v) => (
-                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#f0ece6" strokeWidth="1" />
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-on-fill)" strokeWidth="1" />
               ))}
-              <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#d0cdc8" strokeWidth="1.5" />
-              <line x1={padL} y1={padT} x2={padL} y2={toY(0)} stroke="#d0cdc8" strokeWidth="1.5" />
+              <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeWidth="1.5" />
+              <line x1={padL} y1={padT} x2={padL} y2={toY(0)} stroke="var(--module-muted)" strokeWidth="1.5" />
 
               {/* Sweet spot zone */}
               <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill="rgba(242,107,31,0.06)" rx="4" />
               <rect x={toX(0.22)} y={padT} width={toX(0.62) - toX(0.22)} height={chartH} fill="none" stroke="rgba(242,107,31,0.15)" strokeWidth="1" strokeDasharray="4 3" rx="4" />
 
               {/* Zone labels */}
-              <text x={toX(0.08)} y={toY(0.05)} fontSize="10" fill="#9e9186" textAnchor="middle" fontWeight="600">Too quiet</text>
-              <text x={toX(0.88)} y={toY(0.05)} fontSize="10" fill="#9e9186" textAnchor="middle" fontWeight="600">Too loud</text>
+              <text x={toX(0.08)} y={toY(0.05)} fontSize="10" fill="var(--module-muted)" textAnchor="middle" fontWeight="600">Too quiet</text>
+              <text x={toX(0.88)} y={toY(0.05)} fontSize="10" fill="var(--module-muted)" textAnchor="middle" fontWeight="600">Too loud</text>
 
               {/* Sweet spot label — positioned above chart to avoid overlap */}
               <rect x={toX(0.42) - 32} y={padT - 20} width="64" height="16" rx="8" fill="white" stroke="rgba(242,107,31,0.2)" strokeWidth="1" />
-              <text x={toX(0.42)} y={padT - 9} fontSize="9" fill="#8C3A0E" textAnchor="middle" fontWeight="700">Sweet spot</text>
+              <text x={toX(0.42)} y={padT - 9} fontSize="9" fill="var(--module-danger)" textAnchor="middle" fontWeight="700">Sweet spot</text>
 
               {/* Area fill */}
               <motion.path d={buildArea(curvePoints)} fill="rgba(242,107,31,0.08)" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} />
 
               {/* Curve line */}
-              <motion.path d={buildCurve(curvePoints)} fill="none" stroke="#F26B1F" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5, ease: 'easeOut' }} />
+              <motion.path d={buildCurve(curvePoints)} fill="none" stroke="var(--module-danger-text)" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5, ease: 'easeOut' }} />
 
               {/* Focused/Analytical marker — offset left to avoid overlap */}
-              <motion.circle cx={toX(focusedPeakX)} cy={toY(focusedPeakY)} r="6" fill="#F26B1F" stroke="white" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.0 }} />
+              <motion.circle cx={toX(focusedPeakX)} cy={toY(focusedPeakY)} r="6" fill="var(--module-danger)" stroke="white" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.0 }} />
               <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}>
-                <line x1={toX(focusedPeakX)} y1={toY(focusedPeakY) - 8} x2={toX(focusedPeakX) - 30} y2={toY(focusedPeakY) - 35} stroke="#d0cdc8" strokeWidth="1" />
+                <line x1={toX(focusedPeakX)} y1={toY(focusedPeakY) - 8} x2={toX(focusedPeakX) - 30} y2={toY(focusedPeakY) - 35} stroke="var(--module-muted)" strokeWidth="1" />
                 <rect x={toX(focusedPeakX) - 72} y={toY(focusedPeakY) - 47} width="84" height="18" rx="9" fill="white" stroke="rgba(242,107,31,0.2)" strokeWidth="1" />
-                <text x={toX(focusedPeakX) - 30} y={toY(focusedPeakY) - 34} fontSize="9" fill="#F26B1F" textAnchor="middle" fontWeight="600">Focused tasks</text>
+                <text x={toX(focusedPeakX) - 30} y={toY(focusedPeakY) - 34} fontSize="9" fill="var(--module-danger)" textAnchor="middle" fontWeight="600">Focused tasks</text>
               </motion.g>
 
               {/* Creative/Conceptual marker — offset right */}
-              <motion.circle cx={toX(creativePeakX)} cy={toY(creativePeakY)} r="6" fill="#F26B1F" stroke="white" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.3 }} />
+              <motion.circle cx={toX(creativePeakX)} cy={toY(creativePeakY)} r="6" fill="var(--module-danger)" stroke="white" strokeWidth="2.5" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 1.3 }} />
               <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }}>
-                <line x1={toX(creativePeakX)} y1={toY(creativePeakY) - 8} x2={toX(creativePeakX) + 30} y2={toY(creativePeakY) - 35} stroke="#d0cdc8" strokeWidth="1" />
+                <line x1={toX(creativePeakX)} y1={toY(creativePeakY) - 8} x2={toX(creativePeakX) + 30} y2={toY(creativePeakY) - 35} stroke="var(--module-muted)" strokeWidth="1" />
                 <rect x={toX(creativePeakX) - 12} y={toY(creativePeakY) - 47} width="84" height="18" rx="9" fill="white" stroke="rgba(242,107,31,0.2)" strokeWidth="1" />
-                <text x={toX(creativePeakX) + 30} y={toY(creativePeakY) - 34} fontSize="9" fill="#F26B1F" textAnchor="middle" fontWeight="600">Creative tasks</text>
+                <text x={toX(creativePeakX) + 30} y={toY(creativePeakY) - 34} fontSize="9" fill="var(--module-danger)" textAnchor="middle" fontWeight="600">Creative tasks</text>
               </motion.g>
 
               {/* X-axis labels */}
               {noiseLabels.map((label, i) => (
-                <text key={label} x={toX(i / (noiseLabels.length - 1))} y={toY(0) + 16} fontSize="11" fill="#b0a898" textAnchor="middle">{label}</text>
+                <text key={label} x={toX(i / (noiseLabels.length - 1))} y={toY(0) + 16} fontSize="11" fill="var(--module-surface)" textAnchor="middle">{label}</text>
               ))}
 
               {/* Axis labels */}
-              <text x={W / 2} y={H - 4} fontSize="11" fill="#9e9186" textAnchor="middle" letterSpacing="0.05em">Noise Level →</text>
-              <text x={12} y={H / 2} fontSize="11" fill="#9e9186" textAnchor="middle" letterSpacing="0.05em" transform={`rotate(-90, 12, ${H / 2})`}>Performance →</text>
-              <text x={padL + 2} y={toY(1.0) - 4} fontSize="11" fill="#b0a898">High</text>
-              <text x={padL + 2} y={toY(0) - 4} fontSize="11" fill="#b0a898">Low</text>
+              <text x={W / 2} y={H - 4} fontSize="11" fill="var(--module-muted)" textAnchor="middle" letterSpacing="0.05em">Noise Level →</text>
+              <text x={12} y={H / 2} fontSize="11" fill="var(--module-muted)" textAnchor="middle" letterSpacing="0.05em" transform={`rotate(-90, 12, ${H / 2})`}>Performance →</text>
+              <text x={padL + 2} y={toY(1.0) - 4} fontSize="11" fill="var(--module-surface)">High</text>
+              <text x={padL + 2} y={toY(0) - 4} fontSize="11" fill="var(--module-surface)">Low</text>
             </svg>
           </div>
 
           <div className="grid md:grid-cols-2 gap-3 mt-4">
-            <div className="flex items-start gap-3" style={{ borderLeft: '3px solid #F26B1F', backgroundColor: '#FDEEDF', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F26B1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
-              <p style={{ fontSize: 14, color: '#8C3A0E' }}><strong>Focused tasks</strong> (maths problems, memorisation) work best in quiet spots. Silence lets you concentrate without distraction.</p>
+            <div className="flex items-start gap-3" style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--module-danger-text)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
+              <p style={{ fontSize: 14, color: "var(--module-danger-text)" }}><strong>Focused tasks</strong> (maths problems, memorisation) work best in quiet spots. Silence lets you concentrate without distraction.</p>
             </div>
-            <div className="flex items-start gap-3" style={{ borderLeft: '3px solid #d0cdc8', backgroundColor: '#f4f0eb', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7a7068" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8 6 6 0 006 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 018.91 14"/></svg>
-              <p style={{ fontSize: 14, color: '#7a7068' }}><strong style={{ color: '#5a5550' }}>Creative tasks</strong> (understanding concepts, making connections) benefit from a bit of background noise. The buzz of a cafe nudges your brain into bigger-picture thinking.</p>
+            <div className="flex items-start gap-3" style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--module-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8 6 6 0 006 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 018.91 14"/></svg>
+              <p style={{ fontSize: 14, color: "var(--module-muted)" }}><strong style={{ color: "var(--module-ink)" }}>Creative tasks</strong> (understanding concepts, making connections) benefit from a bit of background noise. The buzz of a cafe nudges your brain into bigger-picture thinking.</p>
             </div>
           </div>
         </MotionDiv>
@@ -468,9 +470,9 @@ const TaskEnvironmentMatcher = () => {
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Match the Task to the Environment</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">For each study task, decide: quiet or moderate noise?</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Match the Task to the Environment</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">For each study task, decide: quiet or moderate noise?</p>
 
       <div className="space-y-3 mb-6">
         {TASK_ITEMS.map((task) => {
@@ -479,23 +481,23 @@ const TaskEnvironmentMatcher = () => {
           const _isWrong = submitted && answer !== task.correct;
           return (
             <div key={task.id} className="rounded-xl p-3 transition-colors" style={{
-              backgroundColor: submitted ? (isCorrect ? '#6EE7B7' : '#FCA5A5') : '#FFFFFF',
-              border: submitted ? `2.5px solid ${isCorrect ? '#059669' : '#DC2626'}` : '1.5px solid #E7E5E4',
-              boxShadow: submitted ? `3px 3px 0px 0px ${isCorrect ? '#059669' : '#DC2626'}` : 'none',
+              backgroundColor: moduleFill(submitted ? (isCorrect ? "var(--module-success-soft)" : "var(--module-surface)") : "var(--module-surface)"),
+              border: submitted ? `2.5px solid ${isCorrect ? "var(--module-line)" : "var(--module-line)"}` : "1.5px solid var(--module-line)",
+              boxShadow: 'none',
             }}>
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-                <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-200 flex-1">{task.label}</p>
+                <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] flex-1">{task.label}</p>
                 <div className="flex gap-2">
                   <button
                     onClick={() => setAnswer(task.id, 'quiet')}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold ${submitted ? 'cursor-default' : 'cursor-pointer'}`}
                     style={{
-                      backgroundColor: answer === 'quiet' ? '#93C5FD' : '#FFFFFF',
-                      border: `2px solid ${answer === 'quiet' ? '#2563EB' : '#1C1917'}`,
+                      backgroundColor: moduleFill(answer === 'quiet' ? "var(--module-surface)" : "var(--module-surface)"),
+                      border: `2px solid ${answer === 'quiet' ? "var(--module-line)" : "var(--module-line)"}`,
                       borderRadius: 10,
-                      boxShadow: answer === 'quiet' ? 'none' : '2px 2px 0px 0px #1C1917',
-                      color: answer === 'quiet' ? '#1E3A8A' : '#1C1917',
-                    }}
+                      boxShadow: 'none',
+                      color: moduleText(answer === 'quiet' ? "var(--module-ink)" : "var(--module-ink)"),
+                    }} data-wide-button="true" data-selected={!!(answer === 'quiet')} data-tone="orange" aria-pressed={!!(answer === 'quiet')}
                   >
                     Quiet
                   </button>
@@ -503,12 +505,12 @@ const TaskEnvironmentMatcher = () => {
                     onClick={() => setAnswer(task.id, 'moderate')}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold ${submitted ? 'cursor-default' : 'cursor-pointer'}`}
                     style={{
-                      backgroundColor: answer === 'moderate' ? '#FCD34D' : '#FFFFFF',
-                      border: `2px solid ${answer === 'moderate' ? '#D97706' : '#1C1917'}`,
+                      backgroundColor: moduleFill(answer === 'moderate' ? "var(--module-surface)" : "var(--module-surface)"),
+                      border: `2px solid ${answer === 'moderate' ? "var(--module-line)" : "var(--module-line)"}`,
                       borderRadius: 10,
-                      boxShadow: answer === 'moderate' ? 'none' : '2px 2px 0px 0px #1C1917',
-                      color: answer === 'moderate' ? '#78350F' : '#1C1917',
-                    }}
+                      boxShadow: 'none',
+                      color: moduleText(answer === 'moderate' ? "var(--module-danger-text)" : "var(--module-ink)"),
+                    }} data-wide-button="true" data-selected={!!(answer === 'moderate')} data-tone="coral" aria-pressed={!!(answer === 'moderate')}
                   >
                     Moderate Noise
                   </button>
@@ -517,11 +519,11 @@ const TaskEnvironmentMatcher = () => {
               {submitted && (
                 <MotionDiv initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} transition={{ duration: 0.3 }}>
                   <div className="mt-2 flex items-start gap-2">
-                    <span className={`text-sm mt-0.5 ${isCorrect ? 'text-emerald-500' : 'text-rose-500'}`}>
+                    <span className={`text-sm mt-0.5 ${isCorrect ? "text-[var(--module-success-text)]" : "text-[var(--module-danger-text)]"}`}>
                       {isCorrect ? '✓' : '✗'}
                     </span>
-                    <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                      <strong className={isCorrect ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}>
+                    <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)]">
+                      <strong className={isCorrect ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}>
                         {isCorrect ? 'Correct' : `Correct answer: ${task.correct === 'quiet' ? 'Quiet' : 'Moderate Noise'}`}
                       </strong>{' — '}
                       {task.reason}
@@ -536,7 +538,7 @@ const TaskEnvironmentMatcher = () => {
 
       {!submitted && allAnswered && (
         <div className="text-center">
-          <button onClick={() => setSubmitted(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-purple-500 text-white hover:bg-purple-600 transition-colors">
+          <button onClick={() => setSubmitted(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-solid)] text-[var(--module-ink)] hover:bg-[var(--module-solid)] transition-colors" data-wide-button="true">
             Check My Answers
           </button>
         </div>
@@ -546,12 +548,12 @@ const TaskEnvironmentMatcher = () => {
         {submitted && (
           <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
             <div className="p-4 rounded-xl text-center" style={{
-              backgroundColor: score >= 5 ? '#6EE7B7' : score >= 3 ? '#FCD34D' : '#FCA5A5',
-              border: `2.5px solid ${score >= 5 ? '#059669' : score >= 3 ? '#D97706' : '#DC2626'}`,
-              boxShadow: `3px 3px 0px 0px ${score >= 5 ? '#059669' : score >= 3 ? '#D97706' : '#DC2626'}`,
+              backgroundColor: moduleFill(score >= 5 ? "var(--module-success-soft)" : score >= 3 ? "var(--module-surface)" : "var(--module-surface)"),
+              border: `2.5px solid ${score >= 5 ? "var(--module-line)" : score >= 3 ? "var(--module-line)" : "var(--module-line)"}`,
+              boxShadow: 'none',
             }}>
-              <p className="text-3xl font-bold text-zinc-800 dark:text-white mb-1">{score}/{TASK_ITEMS.length}</p>
-              <p className="text-sm text-zinc-500 dark:text-zinc-400">
+              <p className="text-3xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-1">{score}/{TASK_ITEMS.length}</p>
+              <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)]">
                 {score === 6
                   ? 'Perfect! You understand exactly how to match tasks to environments.'
                   : score >= 4
@@ -570,12 +572,12 @@ const TaskEnvironmentMatcher = () => {
 const PLANNER_SUBJECTS = ['Biology', 'Maths', 'English', 'History'];
 const PLANNER_DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
 const PLANNER_LOCATIONS = [
-  { id: 'none', label: '—', bgClass: 'bg-zinc-100 dark:bg-zinc-700', textClass: 'text-zinc-400 dark:text-zinc-500' },
-  { id: 'bedroom', label: 'Bedroom', bgClass: 'bg-blue-100 dark:bg-blue-900/50', textClass: 'text-blue-700 dark:text-blue-300' },
-  { id: 'kitchen', label: 'Kitchen', bgClass: 'bg-amber-100 dark:bg-amber-900/50', textClass: 'text-amber-700 dark:text-amber-300' },
-  { id: 'library', label: 'Library', bgClass: 'bg-emerald-100 dark:bg-emerald-900/50', textClass: 'text-emerald-700 dark:text-emerald-300' },
-  { id: 'cafe', label: 'Cafe', bgClass: 'bg-purple-100 dark:bg-purple-900/50', textClass: 'text-purple-700 dark:text-purple-300' },
-  { id: 'school', label: 'School', bgClass: 'bg-rose-100 dark:bg-rose-900/50', textClass: 'text-rose-700 dark:text-rose-300' },
+  { id: 'none', label: '—', bgClass: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", textClass: "text-[var(--module-muted)] dark:text-[var(--module-muted)]" },
+  { id: 'bedroom', label: 'Bedroom', bgClass: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", textClass: "text-[var(--module-ink)] dark:text-[var(--module-ink)]" },
+  { id: 'kitchen', label: 'Kitchen', bgClass: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", textClass: "text-[var(--module-ink)] dark:text-[var(--module-ink)]" },
+  { id: 'library', label: 'Library', bgClass: "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)]", textClass: "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" },
+  { id: 'cafe', label: 'Cafe', bgClass: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", textClass: "text-[var(--module-ink)] dark:text-[var(--module-ink)]" },
+  { id: 'school', label: 'School', bgClass: "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)]", textClass: "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]" },
 ];
 
 const StudyLocationPlanner = () => {
@@ -607,43 +609,37 @@ const StudyLocationPlanner = () => {
   const overallScore = Math.round(subjectScores.reduce((a, b) => a + b, 0) / PLANNER_SUBJECTS.length);
 
   const getVerdict = (score: number): { label: string; colorClass: string } => {
-    if (score >= 80) return { label: 'Great variety (strong)', colorClass: 'text-emerald-600 dark:text-emerald-400' };
-    if (score >= 50) return { label: 'Some variety', colorClass: 'text-amber-600 dark:text-amber-400' };
-    return { label: 'Stuck in one spot (risky)', colorClass: 'text-rose-600 dark:text-rose-400' };
+    if (score >= 80) return { label: 'Great variety (strong)', colorClass: "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" };
+    if (score >= 50) return { label: 'Some variety', colorClass: "text-[var(--module-ink)] dark:text-[var(--module-ink)]" };
+    return { label: 'Stuck in one spot (risky)', colorClass: "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]" };
   };
 
-  // Ring gauge SVG
-  const ringRadius = 40;
-  const ringCircumference = 2 * Math.PI * ringRadius;
-  const ringOffset = ringCircumference - (overallScore / 100) * ringCircumference;
-
-  return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Weekly Location Planner</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Click each cell to assign a study location. Mix up your spots across the week so your knowledge works anywhere.</p>
+  return <div className="wr-skin" data-wide="StudyLocationPlanner"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your Weekly Location Planner</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Click each cell to assign a study location. Mix up your spots across the week so your knowledge works anywhere.</p>
 
       {/* Planner grid */}
       <div className="overflow-x-auto mb-6">
         <table className="w-full border-collapse text-center">
           <thead>
             <tr>
-              <th className="p-2 text-xs font-bold text-zinc-400 dark:text-zinc-500 text-left w-24"></th>
+              <th className="p-2 text-xs font-bold text-[var(--module-muted)] dark:text-[var(--module-muted)] text-left w-24"></th>
               {PLANNER_DAYS.map((day) => (
-                <th key={day} className="p-2 text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">{day}</th>
+                <th key={day} className="p-2 text-xs font-bold text-[var(--module-muted)] dark:text-[var(--module-muted)] uppercase tracking-wider">{day}</th>
               ))}
             </tr>
           </thead>
           <tbody>
             {PLANNER_SUBJECTS.map((subject, si) => (
               <tr key={subject}>
-                <td className="p-2 text-sm font-semibold text-zinc-700 dark:text-zinc-200 text-left">{subject}</td>
+                <td className="p-2 text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] text-left">{subject}</td>
                 {PLANNER_DAYS.map((_, di) => {
                   const loc = PLANNER_LOCATIONS[grid[si][di]];
                   return (
                     <td key={di} className="p-1">
                       <button
                         onClick={() => cycleCell(si, di)}
-                        className={`w-full py-2 px-1 rounded-md text-[11px] font-bold border border-transparent transition-all duration-150 ${loc.bgClass} ${loc.textClass} ${scored ? 'cursor-default' : 'cursor-pointer hover:scale-105 active:scale-95'}`}
+                        className={`w-full py-2 px-1 rounded-md text-[11px] font-bold border border-transparent transition-all duration-150 ${loc.bgClass} ${loc.textClass} ${scored ? 'cursor-default' : 'cursor-pointer hover:scale-105 active:scale-95'}`} data-wide-button="true" data-selected={grid[si][di] > 0} aria-label={PLANNER_SUBJECTS[si] + ', ' + PLANNER_DAYS[di] + ': ' + loc.label} disabled={scored}
                       >
                         {loc.label}
                       </button>
@@ -667,7 +663,7 @@ const StudyLocationPlanner = () => {
 
       {hasAnyFilled && !scored && (
         <div className="text-center">
-          <button onClick={() => setScored(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-purple-500 text-white hover:bg-purple-600 transition-colors">
+          <button onClick={() => setScored(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-solid)] text-[var(--module-ink)] hover:bg-[var(--module-solid)] transition-colors" data-wide-button="true">
             See My Score
           </button>
         </div>
@@ -676,26 +672,7 @@ const StudyLocationPlanner = () => {
       <AnimatePresence>
         {scored && (
           <MotionDiv initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
-            <div className="flex flex-col items-center mb-6">
-              <svg width="100" height="100" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r={ringRadius} fill="none" stroke="#e4e4e7" className="dark:stroke-zinc-700" strokeWidth="8" />
-                <motion.circle
-                  cx="50" cy="50" r={ringRadius}
-                  fill="none"
-                  stroke={overallScore >= 60 ? '#10b981' : overallScore >= 30 ? '#f59e0b' : '#ef4444'}
-                  strokeWidth="8"
-                  strokeLinecap="round"
-                  strokeDasharray={ringCircumference}
-                  strokeDashoffset={ringCircumference}
-                  animate={{ strokeDashoffset: ringOffset }}
-                  transition={{ duration: 1, ease: 'easeOut' }}
-                  transform="rotate(-90 50 50)"
-                />
-                <text x="50" y="46" textAnchor="middle" fontSize="18" fontWeight="bold" fill="currentColor" className="text-zinc-800 dark:text-white">{overallScore}</text>
-                <text x="50" y="60" textAnchor="middle" fontSize="9" fill="#a1a1aa">/ 100</text>
-              </svg>
-              <p className="text-sm font-bold text-zinc-700 dark:text-zinc-200 mt-2">Location Variety Score</p>
-            </div>
+            <BrandedLocationScore score={overallScore}/>
 
             <div className="space-y-2">
               {PLANNER_SUBJECTS.map((subject, si) => {
@@ -703,17 +680,17 @@ const StudyLocationPlanner = () => {
                 const v = getVerdict(s);
                 const filledDays = grid[si].filter((val) => val > 0).length;
                 return (
-                  <div key={subject} className="flex items-center gap-3 p-2.5 rounded-lg bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-700">
-                    <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-200 w-20">{subject}</span>
-                    <div className="flex-1 h-2 rounded-full bg-zinc-200 dark:bg-zinc-700 overflow-hidden">
+                  <div key={subject} className="flex items-center gap-3 p-2.5 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                    <span className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] w-20">{subject}</span>
+                    <div className="flex-1 h-2 rounded-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] overflow-hidden">
                       <MotionDiv
-                        className={`h-full rounded-full ${s >= 80 ? 'bg-emerald-500' : s >= 50 ? 'bg-amber-500' : 'bg-rose-500'}`}
+                        className={`h-full rounded-full ${s >= 80 ? "bg-[var(--module-success)]" : s >= 50 ? "bg-[var(--module-surface)]" : "bg-[var(--module-danger)]"}`}
                         initial={{ width: 0 }}
                         animate={{ width: `${s}%` }}
                         transition={{ duration: 0.6, ease: 'easeOut' }}
                       />
                     </div>
-                    <span className="text-xs font-bold w-8 text-right text-zinc-500 dark:text-zinc-400">{s}%</span>
+                    <span className="text-xs font-bold w-8 text-right text-[var(--module-muted)] dark:text-[var(--module-muted)]">{s}%</span>
                     <span className={`text-xs font-bold w-44 text-right ${v.colorClass}`}>
                       {filledDays === 0 ? 'No sessions planned' : v.label}
                     </span>
@@ -722,21 +699,20 @@ const StudyLocationPlanner = () => {
               })}
             </div>
 
-            <div className="mt-4 p-3 rounded-lg bg-purple-50 dark:bg-purple-950/30 border border-purple-200 dark:border-purple-900">
-              <p className="text-sm text-zinc-600 dark:text-zinc-300">
+            <div className="mt-4 p-3 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+              <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]">
                 {overallScore >= 70
-                  ? <><strong className="text-emerald-600 dark:text-emerald-400">Excellent variety!</strong> Your study plan means your knowledge will work anywhere, including the exam hall.</>
+                  ? <><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Excellent variety!</strong> Your study plan means your knowledge will work anywhere, including the exam hall.</>
                   : overallScore >= 40
-                  ? <><strong className="text-amber-600 dark:text-amber-400">Good start, but more variety would help.</strong> Try adding a second or third spot for each subject so your memories are not tied to one place.</>
-                  : <><strong className="text-rose-600 dark:text-rose-400">Your knowledge is stuck in one spot.</strong> Each subject should be studied in at least 2 different places across the week so you can remember it anywhere.</>
+                  ? <><strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">Good start, but more variety would help.</strong> Try adding a second or third spot for each subject so your memories are not tied to one place.</>
+                  : <><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Your knowledge is stuck in one spot.</strong> Each subject should be studied in at least 2 different places across the week so you can remember it anywhere.</>
                 }
               </p>
             </div>
           </MotionDiv>
         )}
       </AnimatePresence>
-    </div>
-  );
+    </div></div>;
 };
 
 // --- MODULE COMPONENT ---

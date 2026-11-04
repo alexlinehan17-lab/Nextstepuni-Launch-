@@ -1,0 +1,2 @@
+Score selected style { selected: 'true', background: 'rgb(237, 133, 71)' }
+QA completed; errors []

@@ -1,0 +1,56 @@
+{
+  "method": "OpenAI built-in image generation",
+  "commonPrompt": "Use case: stylized-concept, reference-guided character illustration.\nCreate one NEW Star Crew subject avatar. Attached image is STYLE AND CHARACTER FAMILY REFERENCE ONLY. Invent the requested new pose and props; do not copy the guitarist composition or instrument.\nFamily: faceless little white person with a large blank round head, rounded white limbs, simple white mitten hands, and one chunky orange five-point star. Warm playful independent editorial illustration in black ink with orange fill on pure white.\nCrucial art direction: this must feel drawn by a human illustrator with a soft black felt-tip pen. Lively slightly imperfect contours, small natural changes of line weight, rounded organic forms, asymmetry and expressive body language. Orange can have a very subtle marker-fill character inside its shape. Keep clean white everywhere else. Avoid mechanically smooth uniform SVG curves, clip-art geometry, symbol charts, front-facing presentation boards, perfect circles, vector-icon symmetry, 3D, gradients, cast shadows, facial features and extra decoration.\nComposition: full character and full single orange star plus essential prop, a compact balanced silhouette inside the middle 76 percent of a square white canvas, plenty of white margin on all sides so it fits a circular crop. Clear at 64px. Black and white with warm vivid orange around #ff771c only. No border, background scene, watermark or title.\nNew subject direction: ",
+  "revisions": [
+    {
+      "id": "ancient-greek",
+      "file": "ancient-greek-v4.png",
+      "character": "The Storyteller",
+      "reference": "music-v2.png",
+      "detail": "Ancient Greek language: a charming little ancient storyteller wearing a small orange laurel wreath around the upper sides of the otherwise completely blank round head. The wreath is five or six simple loosely drawn orange leaves, not a crown. They sit on the left shoulder of the star with one rounded foot dangling and the other knee tucked up, leaning back a little as if enthusiastically reciting a story. Their right mitten makes a modest open conversational gesture at chest height. Their left mitten holds a soft, unfurling white parchment scroll which drapes diagonally across their lap, with a clearly curled upper edge and lower end. On the exposed scroll show ONLY the exact handwritten lowercase Greek letters 'α β γ' in black, clearly separate and fully visible. No Latin letters, no tablet, no writing board, no book, no toga. A jaunty head tilt, curved back and soft flowing parchment give this a spontaneous characterful storybook feeling. The distinctive orange laurel and curled scroll must read immediately; keep props compact."
+    },
+    {
+      "id": "design-and-communication-graphics",
+      "file": "design-and-communication-graphics-v3.png",
+      "character": "The Drafter",
+      "reference": "music-v2.png",
+      "detail": "Design and Communication Graphics: a playful young drafter actively using an OVERSIZED hinged drawing compass, roughly torso-height, to scribe a broad curved arc on a small loose white sheet that curls over the top of their orange star. They kneel sideways on the star, one knee planted and the other foot braced, body stretched forward toward the compass with a cheerful absorbed head tilt. One mitten firmly grips the round hinge at the top of the compass, the other steadies the curling edge of the paper. Make the compass unmistakable: two open slender black-outlined legs hinged at a circular top, one simple pointed pivot leg and one chunky orange pencil leg, both touching the same sheet. Draw the compass organically with a few bold imperfect strokes, not intricate engineering geometry. Just one sweeping ink arc on the paper; no cube, no grid, no ruler, no flat rigid board, no text. Pose feels like the little character is wrangling a wonderfully oversized tool. Keep the complete orange star visibly prominent underneath and all limbs readable."
+    },
+    {
+      "id": "religious-education",
+      "file": "religious-education-v3.png",
+      "character": "The Candle Keeper",
+      "reference": "music-v2.png",
+      "detail": "Religious Education: an intimate reflective candle-lighting moment. The little white character sits sideways with legs folded comfortably on a slightly wonky orange star, torso curved gently forward and blank head bowed toward a lit votive candle. Their two rounded mitten hands carefully cup a small shallow white candle saucer at chest height. A short stout white candle with a visible irregular melted wax rim, one small wax drip and a single orange flame stands on the saucer. The free upper hand curves protectively beside the flame, while the lower hand supports the saucer, both visibly part of the two arms. A small closed white book with black page edges and one orange ribbon bookmark rests quietly beside their folded knee on the star; it has no lettering or symbols. The candle is the clear focal prop, large enough to recognise at avatar size. Evoke contemplation, ritual and care through posture. Avoid a book held up at the viewer, question marks, religion-logo collections, symbol boards, yoga mudras, halo or rays. A tender, unposed hand-inked little storybook scene; all of the star and character remain visible."
+    }
+  ],
+  "generatedSources": [
+    {
+      "id": "design-and-communication-graphics",
+      "file": "design-and-communication-graphics-v3.png",
+      "character": "The Drafter",
+      "reference": "music-v2.png",
+      "detail": "Design and Communication Graphics: a playful young drafter actively using an OVERSIZED hinged drawing compass, roughly torso-height, to scribe a broad curved arc on a small loose white sheet that curls over the top of their orange star. They kneel sideways on the star, one knee planted and the other foot braced, body stretched forward toward the compass with a cheerful absorbed head tilt. One mitten firmly grips the round hinge at the top of the compass, the other steadies the curling edge of the paper. Make the compass unmistakable: two open slender black-outlined legs hinged at a circular top, one simple pointed pivot leg and one chunky orange pencil leg, both touching the same sheet. Draw the compass organically with a few bold imperfect strokes, not intricate engineering geometry. Just one sweeping ink arc on the paper; no cube, no grid, no ruler, no flat rigid board, no text. Pose feels like the little character is wrangling a wonderfully oversized tool. Keep the complete orange star visibly prominent underneath and all limbs readable.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-cfb21bcc-fc2a-439b-96e9-c131da11c9ee.png",
+      "ok": true
+    },
+    {
+      "id": "ancient-greek",
+      "file": "ancient-greek-v4.png",
+      "character": "The Storyteller",
+      "reference": "music-v2.png",
+      "detail": "Ancient Greek language: a charming little ancient storyteller wearing a small orange laurel wreath around the upper sides of the otherwise completely blank round head. The wreath is five or six simple loosely drawn orange leaves, not a crown. They sit on the left shoulder of the star with one rounded foot dangling and the other knee tucked up, leaning back a little as if enthusiastically reciting a story. Their right mitten makes a modest open conversational gesture at chest height. Their left mitten holds a soft, unfurling white parchment scroll which drapes diagonally across their lap, with a clearly curled upper edge and lower end. On the exposed scroll show ONLY the exact handwritten lowercase Greek letters 'α β γ' in black, clearly separate and fully visible. No Latin letters, no tablet, no writing board, no book, no toga. A jaunty head tilt, curved back and soft flowing parchment give this a spontaneous characterful storybook feeling. The distinctive orange laurel and curled scroll must read immediately; keep props compact.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-20fc251a-12fa-4a73-85f9-f2ece03177ce.png",
+      "ok": true
+    },
+    {
+      "id": "religious-education",
+      "file": "religious-education-v3.png",
+      "character": "The Candle Keeper",
+      "reference": "music-v2.png",
+      "detail": "Religious Education: an intimate reflective candle-lighting moment. The little white character sits sideways with legs folded comfortably on a slightly wonky orange star, torso curved gently forward and blank head bowed toward a lit votive candle. Their two rounded mitten hands carefully cup a small shallow white candle saucer at chest height. A short stout white candle with a visible irregular melted wax rim, one small wax drip and a single orange flame stands on the saucer. The free upper hand curves protectively beside the flame, while the lower hand supports the saucer, both visibly part of the two arms. A small closed white book with black page edges and one orange ribbon bookmark rests quietly beside their folded knee on the star; it has no lettering or symbols. The candle is the clear focal prop, large enough to recognise at avatar size. Evoke contemplation, ritual and care through posture. Avoid a book held up at the viewer, question marks, religion-logo collections, symbol boards, yoga mudras, halo or rays. A tender, unposed hand-inked little storybook scene; all of the star and character remain visible.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-975c14e6-0907-4a51-bc09-db1aa1f5bdd9.png",
+      "ok": true
+    }
+  ]
+}

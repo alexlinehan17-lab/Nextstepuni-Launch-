@@ -1,0 +1,1283 @@
+{
+  "subjectId": "economics",
+  "year": 2023,
+  "level": "higher",
+  "lang": "iv",
+  "fileid": "LC034ALP000IV",
+  "status": "paper-and-scheme-boundaries-reviewed",
+  "paperSha256": "4bc2952017ed31528a156b374e0cb9bbd79de11c7445a35abd5d50132add1c20",
+  "schemeSha256": "104129e169ba456f625350f284cfbde0e9e4d097be5df976c9a7f75c77dcc7de",
+  "visuallyInspectedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "visuallyInspectedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "unreviewedPaperPages": [],
+  "unreviewedSchemePages": [],
+  "questions": [
+    {
+      "n": "1",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "description": "Fully labelled vertical supply diagram and explanation",
+          "cardId": "econ-2023-hl-sa-q1-a",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "description": "Two price-discrimination conditions",
+          "cardId": "econ-2023-hl-sa-q1-b",
+          "topicId": "economics-2-0"
+        }
+      ],
+      "boundaryReason": "Paper p3 / scheme p5: identical fixed-capacity supply diagram 3+3 and two price-discrimination conditions 2x3. Praghas/Líon are price/quantity. Open examples, no finite choices.",
+      "canonicalNodeIds": [
+        "economics-1-2",
+        "economics-2-0"
+      ],
+      "topicReason": "Fixed-capacity supply uses The Firm (Supply); the conditions for price discrimination concern monopoly power and market segmentation under Market Structures (NCCA specification pp20–21).",
+      "equivalenceReason": "Paper p3 / scheme p5: identical fixed-capacity supply diagram 3+3 and two price-discrimination conditions 2x3. Praghas/Líon are price/quantity. Open examples, no finite choices."
+    },
+    {
+      "n": "2",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        6,
+        7
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "description": "Inelastic tick and explanation",
+          "cardId": "econ-2023-hl-sa-q2-a",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "description": "Two retailer uses of PED",
+          "cardId": "econ-2023-hl-sa-q2-b",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "c",
+          "marks": 6,
+          "description": "One advantage AND one disadvantage of unchanged petrol excise",
+          "cardId": "econ-2023-hl-sa-q2-c-adv",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "boundaryReason": "Paper p4 / scheme pp6–7: same objective inelastic-petrol tick+reason 1+5; choose (b) two PED uses 2x3 or (c) BOTH an advantage and disadvantage of excise duty 2x3. The two required sides are not optional routes.",
+      "canonicalNodeIds": [
+        "economics-1-4",
+        "economics-3-1",
+        "economics-1-3"
+      ],
+      "topicReason": "PED classification and revenue uses belong to Elasticity. Excise duties in Budget 2023 test fiscal policy and government intervention.",
+      "equivalenceReason": "Paper p4 / scheme pp6–7: same objective inelastic-petrol tick+reason 1+5; choose (b) two PED uses 2x3 or (c) BOTH an advantage and disadvantage of excise duty 2x3. The two required sides are not optional routes."
+    },
+    {
+      "n": "3",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "description": "Complete utility table with workings",
+          "cardId": "econ-2023-hl-sa-q3-a",
+          "topicId": "economics-1-1",
+          "answerGuidance": "Irish marking detail: each of the three missing utility-table entries earns 1 mark for the correct answer and 1 for correct working (6 marks in total)."
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "description": "Identify diminishing marginal utility starting point and explain",
+          "cardId": "econ-2023-hl-sa-q3-b",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "c",
+          "marks": 6,
+          "description": "Evaluate given unequal MU/P ratios and explain",
+          "cardId": "econ-2023-hl-seca-q3-c",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "boundaryReason": "Paper p5 / scheme p8: same utility table and three blanks, total6; the Irish scheme additionally states 1 for each correct answer and 1 for its working. Alternatives diminishing MU6 and unequal MU/P6 match. Required numerical choices are objective.",
+      "canonicalNodeIds": [
+        "economics-1-1"
+      ],
+      "topicReason": "Total/marginal utility and equal marginal utility per euro test rational consumer behaviour (NCCA 2.2); the ratios are not elasticity.",
+      "equivalenceReason": "Paper p5 / scheme p8: same utility table and three blanks, total6; the Irish scheme additionally states 1 for each correct answer and 1 for its working. Alternatives diminishing MU6 and unequal MU/P6 match. Required numerical choices are objective."
+    },
+    {
+      "n": "4",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        9
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "description": "Complete average/marginal cost figures",
+          "cardId": "econ-2023-hl-sa-q4-a",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "description": "Disagree and explain short-run variable-cost condition",
+          "cardId": "econ-2023-hl-sa-q4-b",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "c",
+          "marks": 6,
+          "description": "Explain the MC/AC relationship",
+          "cardId": "econ-2023-hl-sa-q4-c",
+          "topicId": "economics-1-5"
+        }
+      ],
+      "boundaryReason": "Paper p6 / scheme p9: same cost table and alternatives, explicitly 6/6/6. Table marking is 2+2+1+1; shutdown answer is disagree because AVC, not total cost, governs short-run production. Part(c) requires all three MC/AC relationships together for6.",
+      "canonicalNodeIds": [
+        "economics-1-5"
+      ],
+      "topicReason": "Average/marginal costs and the short-run production condition belong to Costs, Revenue and Profit (NCCA 2.3).",
+      "equivalenceReason": "Paper p6 / scheme p9: same cost table and alternatives, explicitly 6/6/6. Table marking is 2+2+1+1; shutdown answer is disagree because AVC, not total cost, governs short-run production. Part(c) requires all three MC/AC relationships together for6."
+    },
+    {
+      "n": "5",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        10
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "description": "Classify C efficient, A inefficient, B impossible",
+          "cardId": "econ-2023-hl-sa-q5-a",
+          "topicId": "economics-0-1",
+          "answerGuidance": "Irish source correction: use C for efficient, A for inefficient and B for impossible, as printed in the actual question. The Irish scheme uses P instead of C in its diagram/table."
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "description": "Justify all three classifications",
+          "cardId": "econ-2023-hl-sa-q5-b",
+          "topicId": "economics-0-1",
+          "answerGuidance": "Irish source correction: C is efficient because it lies on the frontier; A is inefficient because it lies inside; B is currently impossible because it lies outside. The Irish scheme inconsistently substitutes P for C and misnames the inefficient point."
+        }
+      ],
+      "boundaryReason": "Paper p7 / scheme p10: both paper editions use C on the frontier, A inside and B outside. Irish scheme substitutes P in its diagram/table and misnames A as C in the inefficient-point prose. Follow the source paper and correct geometry. Classification6 and all justifications6 remain equivalent.",
+      "canonicalNodeIds": [
+        "economics-0-1"
+      ],
+      "topicReason": "The PPF and scarce-resource efficiency belong to Scarcity and Choice (NCCA 1.2).",
+      "equivalenceReason": "Paper p7 / scheme p10: both paper editions use C on the frontier, A inside and B outside. Irish scheme substitutes P in its diagram/table and misnames A as C in the inefficient-point prose. Follow the source paper and correct geometry. Classification6 and all justifications6 remain equivalent."
+    },
+    {
+      "n": "6",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        11
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "description": "Classify all three taxes",
+          "cardId": "econ-2023-hl-seca-q6-a",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "description": "Three canons of direct taxation",
+          "cardId": "econ-2023-hl-sa-q6-b",
+          "topicId": "economics-3-1",
+          "answerGuidance": "Irish source note: the paper says indirect taxes (cánacha indíreacha). The official scheme acknowledges a translation error and accepts discussion of any taxation principles. Give the three principles requested; the task remains worth 6 marks."
+        }
+      ],
+      "boundaryReason": "Paper p8 / scheme p11: all tax classifications6 match. Irish(b) mistranslates direct taxes as indirect taxes. The scheme expressly acknowledges the translation error and accepts discussion of all taxation principles. The shared six-mark canon task therefore applies with the broader Irish acceptance made explicit; the physical prompts are not asserted identical.",
+      "canonicalNodeIds": [
+        "economics-3-1"
+      ],
+      "topicReason": "Tax classifications and canons concern fiscal policy and the budget framework (NCCA 4.2).",
+      "equivalenceReason": "Paper p8 / scheme p11: all tax classifications6 match. Irish(b) mistranslates direct taxes as indirect taxes. The scheme expressly acknowledges the translation error and accepts discussion of all taxation principles. The shared six-mark canon task therefore applies with the broader Irish acceptance made explicit; the physical prompts are not asserted identical."
+    },
+    {
+      "n": "7",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        12
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "description": "Supply-left rental diagram and explanation",
+          "cardId": "econ-2023-hl-sa-q7-a",
+          "topicId": "economics-1-0",
+          "answerGuidance": "Irish graph labels: É denotes demand in the paper. In the solution drawing, supply shifts left from S to S1 and rent rises from Pe to Pe1. Follow the drawing; the scheme prose incorrectly refers to S1→S2 and Pe1→Pe2."
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "description": "Two reasons for vacant-property tax",
+          "cardId": "econ-2023-hl-sa-q7-b",
+          "topicId": "economics-1-3"
+        }
+      ],
+      "boundaryReason": "Paper p9 / scheme p12: same rental supply shift3+explanation3 and two vacant-property-tax reasons6. Irish paper labels demand É; scheme D. Both schemes have wrong prose S1→S2/Pe1→Pe2; their actual drawing is S→S1/Pe→Pe1. Preserve the correct economic direction and labels.",
+      "canonicalNodeIds": [
+        "economics-1-0",
+        "economics-1-3"
+      ],
+      "topicReason": "The rental supply shift and new equilibrium belong to The Market Economy (NCCA 2.1); vacant property tax tests government intervention (2.4).",
+      "equivalenceReason": "Paper p9 / scheme p12: same rental supply shift3+explanation3 and two vacant-property-tax reasons6. Irish paper labels demand É; scheme D. Both schemes have wrong prose S1→S2/Pe1→Pe2; their actual drawing is S→S1/Pe→Pe1. Preserve the correct economic direction and labels."
+    },
+    {
+      "n": "8",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "description": "Justify ECB rate increase",
+          "cardId": "econ-2023-hl-sa-q8-a",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "description": "Yes and explain Eurozone monetary-policy constraint",
+          "cardId": "econ-2023-hl-sa-q8-b",
+          "topicId": "economics-3-3"
+        }
+      ],
+      "boundaryReason": "Paper p10 / scheme p13: ECB rate-rise reason6 and loss of independent monetary-policy control6 match. Ceapaim/Ní cheapaim is an objective classification: Yes, membership limits control, not two evaluative routes.",
+      "canonicalNodeIds": [
+        "economics-3-3"
+      ],
+      "topicReason": "ECB interest rates and Eurozone control of monetary policy belong to Monetary Policy and Price Level (NCCA 4.4).",
+      "equivalenceReason": "Paper p10 / scheme p13: ECB rate-rise reason6 and loss of independent monetary-policy control6 match. Tá/Níl is an objective classification: Yes, membership limits control, not two evaluative routes."
+    },
+    {
+      "n": "9",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        13
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "description": "Define diminishing marginal returns",
+          "cardId": "econ-2023-hl-sa-q9-a",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "description": "Two specialisation cost advantages",
+          "cardId": "econ-2023-hl-sa-q9-b",
+          "topicId": "economics-1-5"
+        }
+      ],
+      "boundaryReason": "Paper p11 / scheme p13: law of diminishing marginal returns6 and two specialisation cost advantages6. The illustrative Chinese industries are context, not a finite answer pool.",
+      "canonicalNodeIds": [
+        "economics-1-5",
+        "economics-0-1"
+      ],
+      "topicReason": "Diminishing marginal returns and lower production costs belong to Costs, Revenue and Profit (2.3); specialisation also connects directly to Scarcity and Choice (1.2).",
+      "equivalenceReason": "Paper p11 / scheme p13: law of diminishing marginal returns6 and two specialisation cost advantages6. The illustrative Chinese industries are context, not a finite answer pool."
+    },
+    {
+      "n": "10",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        14
+      ],
+      "tasks": [
+        {
+          "key": "B",
+          "marks": 6,
+          "description": "Calculate GNI at current market prices with relationship and working",
+          "cardId": "econ-2023-hl-sa-q10",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "C",
+          "marks": 6,
+          "description": "Calculate modified GNI at current market prices with relationship and working",
+          "cardId": "econ-2023-hl-sa-q10-c",
+          "topicId": "economics-3-0"
+        }
+      ],
+      "boundaryReason": "Paper p12 / scheme p14: A is already completed. B and C are independently priced at6 each, with identical data, GNI324.2 and modified GNI235.2 billion. No card for completed A.",
+      "canonicalNodeIds": [
+        "economics-3-0"
+      ],
+      "topicReason": "GNI and modified GNI calculations are National Income (NCCA 4.1).",
+      "equivalenceReason": "Paper p12 / scheme p14: A is already completed. B and C are independently priced at6 each, with identical data, GNI324.2 and modified GNI235.2 billion. No card for completed A."
+    },
+    {
+      "n": "11",
+      "paperPages": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "schemePages": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 8,
+          "description": "Population percentage change with working",
+          "cardId": "econ-2023-hl-q11-a-i",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "a/ii",
+          "marks": 10,
+          "description": "Two causes of population growth",
+          "cardId": "econ-2023-hl-q11-a-ii",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "a/iii",
+          "marks": 10,
+          "description": "One negative AND one positive effect on government finances",
+          "cardId": "econ-2023-hl-q11-a-iii-neg",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 6,
+          "description": "Define labour",
+          "cardId": "econ-2023-hl-q11-b-i",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 9,
+          "description": "Two geographical-mobility factors",
+          "cardId": "econ-2023-hl-q11-b-ii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b/iii",
+          "marks": 9,
+          "description": "Two government measures to increase mobility",
+          "cardId": "econ-2023-hl-q11-b-iii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 5,
+          "description": "Negative HDI effect and explanation",
+          "cardId": "econ-2023-hl-q11-c-i",
+          "topicId": "economics-4-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 9,
+          "description": "Two inequality policies with justification",
+          "cardId": "econ-2023-hl-q11-c-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/iii",
+          "marks": 9,
+          "description": "One disadvantage of EACH selected inequality policy",
+          "cardId": "econ-2023-hl-q11-c-iii",
+          "topicId": "economics-3-1",
+          "answerGuidance": "The Irish scheme omits this task’s mark cell. The matching English scheme gives 9 marks (5 + 4) and requires one disadvantage for each of the two policies you proposed."
+        }
+      ],
+      "boundaryReason": "Paper pp13–16 / scheme pp15–18: all nine tasks and source data match, including both positive/negative exchequer effects together10 and HDI negative1+reason4. Irish p18 omits the c(iii) tariff and the English one-disadvantage-per-policy note; English p18 explicitly supplies9 (5+4) for the identical two-policy response. Other tariffs8,10,10,6,9,9,5,9 match.",
+      "canonicalNodeIds": [
+        "economics-3-5",
+        "economics-3-1",
+        "economics-2-1",
+        "economics-4-0"
+      ],
+      "topicReason": "Population change relates to growth; government finances and inequality policies to Fiscal Policy; factor labour and mobility to The Labour Market; HDI to Development.",
+      "equivalenceReason": "Paper pp13–16 / scheme pp15–18: all nine tasks and source data match, including both positive/negative exchequer effects together10 and HDI negative1+reason4. Irish p18 omits the c(iii) tariff and the English one-disadvantage-per-policy note; English p18 explicitly supplies9 (5+4) for the identical two-policy response. Other tariffs8,10,10,6,9,9,5,9 match.",
+      "allocationEvidence": {
+        "lang": "ev",
+        "fileid": "LC034ALP000EV",
+        "schemePages": [
+          18
+        ],
+        "reason": "Paper pp13–16 / scheme pp15–18: all nine tasks and source data match, including both positive/negative exchequer effects together10 and HDI negative1+reason4. Irish p18 omits the c(iii) tariff and the English one-disadvantage-per-policy note; English p18 explicitly supplies9 (5+4) for the identical two-policy response. Other tariffs8,10,10,6,9,9,5,9 match."
+      }
+    },
+    {
+      "n": "12",
+      "paperPages": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "schemePages": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 12,
+          "description": "Three perfect-competition characteristics",
+          "cardId": "econ-2023-hl-q12-a-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 4,
+          "description": "One reason milk no longer perfectly competitive",
+          "cardId": "econ-2023-hl-q12-a-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/iii",
+          "marks": 17,
+          "description": "Perfect-competition long-run diagram AND explanation",
+          "cardId": "econ-2023-hl-q12-a-iii",
+          "topicId": "economics-2-0",
+          "answerGuidance": "Irish diagram note: the horizontal-axis label C denotes quantity/output, called Q in the explanation. Keep output distinct from C used for costs on the vertical axis. English Q notation is also shown in the solution."
+        },
+        {
+          "key": "b/i",
+          "marks": 9,
+          "description": "Calculate HHI with workings",
+          "cardId": "econ-2023-hl-q12-b-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 5,
+          "description": "Highly concentrated classification and explanation",
+          "cardId": "econ-2023-hl-q12-b-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/iii",
+          "marks": 10,
+          "description": "One advantage AND one disadvantage of perfect competition",
+          "cardId": "econ-2023-hl-q12-b-iii-adv",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c",
+          "marks": 18,
+          "description": "Arguments for AND against windfall tax",
+          "cardId": "econ-2023-hl-q12-c",
+          "topicId": "economics-1-3"
+        }
+      ],
+      "boundaryReason": "Paper pp17–20 / scheme pp19–22: same seven tasks, HHI3172 and high concentration. PC diagram17=9+8. Irish diagram uses C on the quantity axis while its explanation says Q; either denotes output, separate from C as cost on the vertical axis. Part(b)(iii) requires both sides10 (6+4); windfall-tax discussion requires both headings18 with three arguments8+5+5, not a choose-one stance.",
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-1-3"
+      ],
+      "topicReason": "Perfect competition, HHI and concentration belong to Market Structures (NCCA 3.1); the proposed windfall tax is Government Intervention (2.4).",
+      "equivalenceReason": "Paper pp17–20 / scheme pp19–22: same seven tasks, HHI3172 and high concentration. PC diagram17=9+8. Irish diagram uses C on the quantity axis while its explanation says Q; either denotes output, separate from C as cost on the vertical axis. Part(b)(iii) requires both sides10 (6+4); windfall-tax discussion requires both headings18 with three arguments8+5+5, not a choose-one stance."
+    },
+    {
+      "n": "13",
+      "paperPages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "schemePages": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 13,
+          "description": "Draw fully labelled open circular-flow diagram",
+          "cardId": "econ-2023-hl-q13-a-i",
+          "topicId": "economics-3-0",
+          "answerGuidance": "Irish scheme correction: the flow from households to financial institutions is savings (coigilteas), not spending (caiteachas). The other leakages are taxation and imports."
+        },
+        {
+          "key": "a/ii",
+          "marks": 12,
+          "description": "Explain injections AND leakages with two examples of EACH from diagram",
+          "cardId": "econ-2023-hl-q13-a-ii",
+          "topicId": "economics-3-0",
+          "answerGuidance": "Irish marking note: the scheme omits the 2 beside the leakage definition. The matching English scheme explicitly gives 2 for each definition and 4 for its two examples, for 12 marks altogether. Savings is the financial-institution leakage."
+        },
+        {
+          "key": "a/iii",
+          "marks": 8,
+          "description": "Two hidden-economy effects",
+          "cardId": "econ-2023-hl-q13-a-iii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 6,
+          "description": "Calculate MPS with workings",
+          "cardId": "econ-2023-hl-q13-b-i-mps",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 8,
+          "description": "Calculate open-economy multiplier",
+          "cardId": "econ-2023-hl-q13-b-ii-multiplier",
+          "topicId": "economics-3-0",
+          "answerGuidance": "Irish scheme correction: use k = 1 ÷ (MPS + MPM), or 1 ÷ (1 − MPC + MPM). With MPC = 0.7 and MPM = 0.2 this gives 2. The second formula printed in the Irish scheme has an incorrect minus sign/bracketing."
+        },
+        {
+          "key": "b/iii",
+          "marks": 8,
+          "description": "Calculate government injection for full employment",
+          "cardId": "econ-2023-hl-q13-b-iii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 12,
+          "description": "Two risks of MNC tax reliance",
+          "cardId": "econ-2023-hl-q13-b-i",
+          "topicId": "economics-4-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 8,
+          "description": "Two international-competitiveness factors",
+          "cardId": "econ-2023-hl-q13-b-ii",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "Paper pp21–24 / scheme pp23–26: same eight tasks and data. Irish p23 mislabels the household-to-financial-institutions leakage Caiteachas (spending), which is savings, and omits the leakage-definition2 cell; English p23 explicitly gives both definitions2 and two examples2x2 per term, total12. Irish p24 alternate multiplier denominator has a minus-sign/bracketing error; correct primary formula1/(MPS+MPM)=2 and the English equivalent1/[1−(MPC−MPM)] agree. MPS.3 and injection125m match. Other tariffs13,8,6,8,8,12,8 match.",
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-4-1",
+        "economics-4-2"
+      ],
+      "topicReason": "Circular flow, injections/leakages, hidden economy and multiplier calculations are National Income (4.1); MNC dependence is Globalisation (5.2); competitiveness is International Trade (5.3).",
+      "equivalenceReason": "Paper pp21–24 / scheme pp23–26: same eight tasks and data. Irish p23 mislabels the household-to-financial-institutions leakage Caiteachas (spending), which is savings, and omits the leakage-definition2 cell; English p23 explicitly gives both definitions2 and two examples2x2 per term, total12. Irish p24 alternate multiplier denominator has a minus-sign/bracketing error; correct primary formula1/(MPS+MPM)=2 and the English equivalent1/[1−(MPC−MPM)] agree. MPS.3 and injection125m match. Other tariffs13,8,6,8,8,12,8 match.",
+      "allocationEvidence": {
+        "lang": "ev",
+        "fileid": "LC034ALP000EV",
+        "schemePages": [
+          23
+        ],
+        "reason": "Paper pp21–24 / scheme pp23–26: same eight tasks and data. Irish p23 mislabels the household-to-financial-institutions leakage Caiteachas (spending), which is savings, and omits the leakage-definition2 cell; English p23 explicitly gives both definitions2 and two examples2x2 per term, total12. Irish p24 alternate multiplier denominator has a minus-sign/bracketing error; correct primary formula1/(MPS+MPM)=2 and the English equivalent1/[1−(MPC−MPM)] agree. MPS.3 and injection125m match. Other tariffs13,8,6,8,8,12,8 match."
+      }
+    },
+    {
+      "n": "14",
+      "paperPages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "schemePages": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 8,
+          "description": "Analyse one unemployment trend with figures",
+          "cardId": "econ-2023-hl-q14-a-i",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "a/ii",
+          "marks": 4,
+          "description": "Two reasons survey better than Live Register; historical attempt credit",
+          "cardId": "econ-2023-hl-q14-a-ii",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "a/iii",
+          "marks": 14,
+          "description": "Two unemployment types with examples",
+          "cardId": "econ-2023-hl-q14-a-iii",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "b/i",
+          "marks": 6,
+          "description": "Define full employment",
+          "cardId": "econ-2023-hl-q14-b-i",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "b/ii",
+          "marks": 8,
+          "description": "Two OTHER government objectives with justification",
+          "cardId": "econ-2023-hl-q14-b-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/iii",
+          "marks": 12,
+          "description": "PUP private benefit, external benefit AND cost bearer",
+          "cardId": "econ-2023-hl-q14-b-iii",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 7,
+          "description": "Define trade protection",
+          "cardId": "econ-2023-hl-q14-c-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "c/ii",
+          "marks": 8,
+          "description": "Two reasons for trade protection",
+          "cardId": "econ-2023-hl-q15-b-ii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "c/iii",
+          "marks": 8,
+          "description": "Two disadvantages of protection",
+          "cardId": "econ-2023-hl-q15-b-iii",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "Paper pp25–28 / scheme pp27–30: identical nine tasks, unemployment data and five open types. Irish scheme confirms four automatic marks for attempting the misnamed QNHS question (should be LFS). Trend changes are percentage points, not percentage changes. PUP task requires private benefit, external benefit and cost bearer3x4. Trade protection7 and two reasons8/two disadvantages8 match.",
+      "canonicalNodeIds": [
+        "economics-3-2",
+        "economics-3-1",
+        "economics-0-1",
+        "economics-4-2",
+        "economics-2-2"
+      ],
+      "topicReason": "Unemployment data/types and full employment are Employment (4.3); government objectives are Fiscal Policy; the PUP cost-benefit question directly matches Scarcity and Choice (1.2) and its external benefits also connect to Market Failure (3.3); trade protection is International Trade (5.3).",
+      "equivalenceReason": "Paper pp25–28 / scheme pp27–30: identical nine tasks, unemployment data and five open types. Irish scheme confirms four automatic marks for attempting the misnamed QNHS question (should be LFS). Trend changes are percentage points, not percentage changes. PUP task requires private benefit, external benefit and cost bearer3x4. Trade protection7 and two reasons8/two disadvantages8 match."
+    },
+    {
+      "n": "15",
+      "paperPages": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "schemePages": [
+        31,
+        32,
+        33,
+        34
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 6,
+          "description": "Electricity-price trend with figures AND consumer impact",
+          "cardId": "econ-2023-hl-q15-a-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "a/ii",
+          "marks": 8,
+          "description": "Distinguish demand-pull AND cost-push inflation",
+          "cardId": "econ-2023-hl-q15-a-ii",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "a/iii",
+          "marks": 19,
+          "description": "Calculate weighted price index with whole table/working",
+          "cardId": "econ-2023-hl-q15-a-iii",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b/i",
+          "marks": 8,
+          "description": "Define monetary policy",
+          "cardId": "econ-2023-hl-q15-b-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b/ii",
+          "marks": 6,
+          "description": "Euro depreciation classification and explanation",
+          "cardId": "econ-2023-hl-q15-b-ii-depreciation",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/iii/yes",
+          "marks": 8,
+          "description": "Justify concern about euro-dollar appreciation",
+          "cardId": "econ-2023-hl-q15-b-iii-euro",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/iii/no",
+          "marks": 8,
+          "description": "Justify lack of concern about euro-dollar appreciation",
+          "cardId": "econ-2023-hl-q15-b-iii-euro-no",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "c/i",
+          "marks": 7,
+          "description": "Main reason for household electricity credit",
+          "cardId": "econ-2023-hl-q15-c-i",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/ii",
+          "marks": 7,
+          "description": "One disadvantage of electricity credit",
+          "cardId": "econ-2023-hl-q15-c-ii",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/iii",
+          "marks": 6,
+          "description": "Explain why electricity credit does not encourage reduced use",
+          "cardId": "econ-2023-hl-q15-c-iii",
+          "topicId": "economics-1-3",
+          "answerGuidance": "Irish scheme correction: the printed answer Uimhir means number and is a translation error. The intended answer is Ní dóigh liom (No), consistent with the explanation that the credit does not directly reward using less electricity."
+        }
+      ],
+      "boundaryReason": "Paper pp29–32 / scheme pp31–34: identical CPI data/result112.2 and tariffs6,8,19,8,6,8,7,7,6; concern about euro appreciation has both justified Yes/No routes at8. Depreciation against sterling and No for energy-saving incentive are objective. Irish electricity-price question omits English using-figures wording but scheme explicitly requires source data for full marks. Both schemes use incorrect euro units in prose: graph is euro cents/kWh, roughly23→27. Irish c(iii) scheme translates No as Uimhir (number); the accompanying explanation clearly means Ní dóigh liom.",
+      "canonicalNodeIds": [
+        "economics-3-3",
+        "economics-4-2",
+        "economics-1-3"
+      ],
+      "topicReason": "Electricity-price trends, inflation, CPI and monetary policy are Monetary Policy and Price Level (4.4); exchange rates belong to International Trade (5.3); electricity credit is Government Intervention (2.4).",
+      "equivalenceReason": "Paper pp29–32 / scheme pp31–34: identical CPI data/result112.2 and tariffs6,8,19,8,6,8,7,7,6; concern about euro appreciation has both justified Yes/No routes at8. Depreciation against sterling and No for energy-saving incentive are objective. Irish electricity-price question omits English using-figures wording but scheme explicitly requires source data for full marks. Both schemes use incorrect euro units in prose: graph is euro cents/kWh, roughly23→27. Irish c(iii) scheme translates No as Uimhir (number); the accompanying explanation clearly means Ní dóigh liom."
+    },
+    {
+      "n": "16",
+      "paperPages": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "schemePages": [
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 8,
+          "description": "Distinguish individual and market demand",
+          "cardId": "econ-2023-hl-q16-a-i",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 15,
+          "description": "Draw/explain free-transport car-demand shift",
+          "cardId": "econ-2023-hl-q16-a-ii",
+          "topicId": "economics-1-0",
+          "answerGuidance": "Irish scheme correction: D1→D2 is a leftward shift of demand (éileamh), not supply (soláthar). Free school transport substitutes for car travel, reducing equilibrium price and quantity."
+        },
+        {
+          "key": "a/iii",
+          "marks": 5,
+          "description": "Government-failure classification and explanation",
+          "cardId": "econ-2023-hl-q16-a-iii",
+          "topicId": "economics-2-2"
+        },
+        {
+          "key": "b/i",
+          "marks": 5,
+          "description": "Toxic-waste market-failure classification and explanation",
+          "cardId": "econ-2023-hl-q16-b-i",
+          "topicId": "economics-2-2"
+        },
+        {
+          "key": "b/ii",
+          "marks": 8,
+          "description": "Two circular-economy transition challenges",
+          "cardId": "econ-2023-hl-q16-b-ii",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "b/iii",
+          "marks": 10,
+          "description": "Two food-waste initiatives",
+          "cardId": "econ-2023-hl-q16-b-iii",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "c/i",
+          "marks": 12,
+          "description": "One argument FOR AND one AGAINST herd reduction",
+          "cardId": "econ-2023-hl-q16-c-i-for",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "c/ii",
+          "marks": 12,
+          "description": "Two consumer effects of deposit return",
+          "cardId": "econ-2023-hl-q16-c-ii",
+          "topicId": "economics-0-2"
+        }
+      ],
+      "boundaryReason": "Paper pp33–36 / scheme pp35–39: same seven tasks. Definitions plus car-demand shift share the published4+4+7+8 aggregate23, with no reliable split. Government failure5, pollution failure5, circular-economy challenges8, government food-waste initiatives10, herd BOTH sides12 (7+5) and deposit-return effects12 (7+5) match. Irish herd prompt uses plural arguments, with the same two required headings and first/second response tariff; not either/or routes. Irish scheme incorrectly calls D1→D2 a supply shift: it is the demand shift caused by substituting free school transport for car travel.",
+      "canonicalNodeIds": [
+        "economics-1-0",
+        "economics-2-2",
+        "economics-0-2",
+        "economics-1-1"
+      ],
+      "topicReason": "Individual/market demand and the car-market equilibrium task span Consumer Demand and The Market Economy (2.1/2.2); government and pollution failures are Market Failure (3.3); circular economy, waste, herd and return scheme are Sustainability (1.3).",
+      "equivalenceReason": "Paper pp33–36 / scheme pp35–39: same seven tasks. Definitions plus car-demand shift share the published4+4+7+8 aggregate23, with no reliable split. Government failure5, pollution failure5, circular-economy challenges8, government food-waste initiatives10, herd BOTH sides12 (7+5) and deposit-return effects12 (7+5) match. Irish herd prompt uses plural arguments, with the same two required headings and first/second response tariff; not either/or routes. Irish scheme incorrectly calls D1→D2 a supply shift: it is the demand shift caused by substituting free school transport for car travel.",
+      "staleReasonNote": "Mirror split; IV reasons not re-reviewed."
+    }
+  ],
+  "reviewNote": "All40 Irish paper pages and44 Irish scheme pages visually inspected. Scheme40–43 covers the separate research project,44 is back cover. All73 logical English task routes match the Irish paper, with explicit notes for translation errors, missing mark cells and diagram/formula differences. The SEC expressly broadens Q6(b) acceptance after its translation error. Required headings and open example menus are not finite alternatives. This is one reviewed physical edition, not a complete Economics corpus claim.",
+  "selections": [
+    {
+      "page": 2,
+      "text": "Freagair 8 gceist as 10 gceist sa roinn seo.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam choice of eight short or four long questions; every question remains available for practice."
+    },
+    {
+      "page": 2,
+      "text": "Tá rogha inmheánach i gceisteanna 2, 3 agus 4.",
+      "classification": "finite-route",
+      "reason": "Internal alternatives occur in Q2, Q3 and Q4; retain each separately priced b/c task."
+    },
+    {
+      "page": 2,
+      "text": "Freagair 4 cheist as 6 cheist.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam choice of eight short or four long questions; every question remains available for practice."
+    },
+    {
+      "page": 2,
+      "text": "Scríobh do chuid freagraí le peann gorm nó le peann dubh.",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative writing, extra-page or copyright instruction; no practice route."
+    },
+    {
+      "page": 2,
+      "text": "obair bhreise i gcúl an leabhráin. Lipéadaigh aon obair bhreise go soiléir le huimhir na ceiste",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative writing, extra-page or copyright instruction; no practice route."
+    },
+    {
+      "page": 2,
+      "text": "i láthair an scrúdaitheora. Mar sin is féidir nach bhfeicfidh an scrúdaitheoir aon rud",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative writing, extra-page or copyright instruction; no practice route."
+    },
+    {
+      "page": 3,
+      "text": "Freagair 8 gceist as 10 gceist",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam choice of eight short or four long questions; every question remains available for practice."
+    },
+    {
+      "page": 4,
+      "text": "(a) Roghnaigh, agus úsáid á baint agat as tic (), cé acu a mheastar éileamh praghasleaisteach",
+      "classification": "answer-classification",
+      "reason": "Objective petrol PED classification and reason: inelastic, not evaluative either/or routes."
+    },
+    {
+      "page": 4,
+      "text": "nó éileamh praghas‐neamhleaisteach a bheith ar pheitreal.",
+      "classification": "answer-classification",
+      "reason": "Objective petrol PED classification and reason: inelastic, not evaluative either/or routes."
+    },
+    {
+      "page": 4,
+      "text": "Freagair (b) nó (c)",
+      "classification": "finite-route",
+      "reason": "Q2 choose b or c, each6. Part c requires both advantage and disadvantage together."
+    },
+    {
+      "page": 4,
+      "text": "NÓ",
+      "classification": "finite-route",
+      "reason": "Q2 choose b or c, each6. Part c requires both advantage and disadvantage together."
+    },
+    {
+      "page": 5,
+      "text": "Freagair (b) nó (c)",
+      "classification": "finite-route",
+      "reason": "Q3 choose b or c, each6. Table part a remains a separate6-mark task."
+    },
+    {
+      "page": 5,
+      "text": "NÓ",
+      "classification": "finite-route",
+      "reason": "Q3 choose b or c, each6. Table part a remains a separate6-mark task."
+    },
+    {
+      "page": 6,
+      "text": "Freagair (b) nó (c)",
+      "classification": "finite-route",
+      "reason": "Q4 choose b or c, each6. Table part a remains a separate6-mark task."
+    },
+    {
+      "page": 6,
+      "text": "iomlána a chlúdach. An aontaíonn tú nó an easaontaíonn tú leis an ráiteas sin?",
+      "classification": "answer-classification",
+      "reason": "Q4(b) is objectively disagree: short-run production depends on covering AVC, not total cost."
+    },
+    {
+      "page": 6,
+      "text": "Aontaím: Easaontaím:",
+      "classification": "answer-classification",
+      "reason": "Q4(b) is objectively disagree: short-run production depends on covering AVC, not total cost."
+    },
+    {
+      "page": 6,
+      "text": "NÓ",
+      "classification": "finite-route",
+      "reason": "Q4 choose b or c, each6. Table part a remains a separate6-mark task."
+    },
+    {
+      "page": 7,
+      "text": "Sainaithin ón léaráid thuas cé acu rogha (A, B nó C) a thaispeánann, pointe táirgiúlachta atá:",
+      "classification": "answer-classification",
+      "reason": "All three PPF classifications are required from the actual diagram: C/A/B. These are objective answers, not a choice of one practice route."
+    },
+    {
+      "page": 7,
+      "text": "Roghnaigh litir amháin do gach ceann A, B nó C",
+      "classification": "answer-classification",
+      "reason": "All three PPF classifications are required from the actual diagram: C/A/B. These are objective answers, not a choice of one practice route."
+    },
+    {
+      "page": 7,
+      "text": "(b) Cosain gach ceann de na roghanna a rinne tú in (a) thuas.",
+      "classification": "required-headings",
+      "reason": "Justify all three preceding PPF classifications in the single6-mark response."
+    },
+    {
+      "page": 8,
+      "text": "(a) I ngach cás thíos, úsáid tic () chun a chur in iúl cé acu sampla de cháin dhíreach nó de cháin",
+      "classification": "answer-classification",
+      "reason": "Classify every listed tax as direct/indirect; no evaluative alternative."
+    },
+    {
+      "page": 9,
+      "text": "Taispeáin ar an léaráid thíos an dóigh a n‐athróidh an fhorbairt seo staid chothromaíochta",
+      "classification": "not-a-task-selection",
+      "reason": "An dóigh means how the rental-market change occurs; draw the required supply shift, no route selection."
+    },
+    {
+      "page": 10,
+      "text": "(b) An bhfuil tionchar ag ballraíocht i limistéar an euro ar chumas na hÉireann beartas",
+      "classification": "answer-classification",
+      "reason": "Q8(b) objectively asks whether euro membership constrains Irish monetary policy. Tá/Yes is correct; the scheme explains loss of national control, not alternative evaluative stances."
+    },
+    {
+      "page": 10,
+      "text": "airgeadaíochta a chur i bhfeidhm in Éirinn? Tá: Níl:",
+      "classification": "answer-classification",
+      "reason": "Q8(b) objectively asks whether euro membership constrains Irish monetary policy. Tá/Yes is correct; the scheme explains loss of national control, not alternative evaluative stances."
+    },
+    {
+      "page": 11,
+      "text": "dealraimh, níl aon tionchar ag dlí an toraidh imeallaigh laghdaithigh air seo.",
+      "classification": "not-a-task-selection",
+      "reason": "Aon appears in the source claim about diminishing returns; it is not a selection instruction."
+    },
+    {
+      "page": 13,
+      "text": "Freagair 4 cheist as 6 cheist",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam choice of eight short or four long questions; every question remains available for practice."
+    },
+    {
+      "page": 14,
+      "text": "(b) Ceann de na tosca táirgeachta is ea saothar.",
+      "classification": "not-a-task-selection",
+      "reason": "Labour is described as one factor of production; the student is not selecting a factor."
+    },
+    {
+      "page": 15,
+      "text": "(i) Dá dtitfeadh an t‐ionchas saoil in Éirinn, an mbeadh tionchar dearfach nó tionchar",
+      "classification": "answer-classification",
+      "reason": "The direction of the HDI effect is objective: lower life expectancy lowers HDI."
+    },
+    {
+      "page": 17,
+      "text": "(a) Más mian le tomhaltóirí bainne a cheannach i margadh na hÉireann cuirtear flúirse roghanna",
+      "classification": "not-a-task-selection",
+      "reason": "Milk choices describe the market context; they are not answer routes."
+    },
+    {
+      "page": 19,
+      "text": "(ii) An gceapfá go bhfuil an margadh seo iomaíoch, comhchruinnithe go measartha, nó",
+      "classification": "answer-classification",
+      "reason": "HHI3172 objectively identifies a highly concentrated market; no evaluative alternatives."
+    },
+    {
+      "page": 29,
+      "text": "an ngraf thuas agus mínigh an dóigh a raibh tionchar aige sin ar thomhaltóirí in Éirinn.",
+      "classification": "not-a-task-selection",
+      "reason": "An dóigh means how the electricity-price trend affects consumers, not a choice of answer routes."
+    },
+    {
+      "page": 31,
+      "text": "ardú nó ag titim i gcoinne an phuint steirling (£)?",
+      "classification": "answer-classification",
+      "reason": "The supplied sterling-per-euro series objectively shows euro depreciation."
+    },
+    {
+      "page": 31,
+      "text": "(iii) Ar cheart don Rialtas na hÉireann a bheith buartha dá mbeadh ráta malairte an Euro",
+      "classification": "finite-route",
+      "reason": "Q15(b)(iii) has two justified evaluative routes, Yes and No, each8 marks. Both are mechanically expanded."
+    },
+    {
+      "page": 31,
+      "text": "Ba cheart: Níor cheart: Cosain do fhreagra.",
+      "classification": "finite-route",
+      "reason": "Q15(b)(iii) has two justified evaluative routes, Yes and No, each8 marks. Both are mechanically expanded."
+    },
+    {
+      "page": 32,
+      "text": "(iii) An dóigh leat go spreagann an idirghabháil rialtais thuas úsáideoirí leictreachais chun a",
+      "classification": "answer-classification",
+      "reason": "Q15(c)(iii) objectively tests the energy-saving incentive. Níl/No is the scheme answer; the credit does not directly reward reduced consumption."
+    },
+    {
+      "page": 32,
+      "text": "Tá: Níl:",
+      "classification": "answer-classification",
+      "reason": "Q15(c)(iii) objectively tests the energy-saving incentive. Níl/No is the scheme answer; the credit does not directly reward reduced consumption."
+    },
+    {
+      "page": 33,
+      "text": "An léiríonn an riaráiste sin gur theip ar an rialtas? Mínigh do fhreagra.",
+      "classification": "answer-classification",
+      "reason": "Q16(a)(iii) objectively identifies government failure from the school-transport shortage. Tá/Yes with explanation5; no scheme-supported No route."
+    },
+    {
+      "page": 33,
+      "text": "Tá: Níl:",
+      "classification": "answer-classification",
+      "reason": "Q16(a)(iii) objectively identifies government failure from the school-transport shortage. Tá/Yes with explanation5; no scheme-supported No route."
+    },
+    {
+      "page": 34,
+      "text": "(i) An léiríonn seo cliseadh margaidh? Cosain do fhreagra.",
+      "classification": "answer-classification",
+      "reason": "Q16(b)(i) objectively identifies pollution as market failure. Tá/Yes with explanation5; no scheme-supported No route."
+    },
+    {
+      "page": 34,
+      "text": "Tá: Níl:",
+      "classification": "answer-classification",
+      "reason": "Q16(b)(i) objectively identifies pollution as market failure. Tá/Yes with explanation5; no scheme-supported No route."
+    },
+    {
+      "page": 36,
+      "text": "plaisteach nó ar an gcanna. Gheobhaidh custaiméirí a gcuid airgid ar ais nuair a",
+      "classification": "not-a-task-selection",
+      "reason": "Bottle/can and return-location alternatives describe the deposit-return scheme, not finite answer selections."
+    },
+    {
+      "page": 36,
+      "text": "thabharfaidh siad an gabhdán ar ais chuig an miondíoltóir nó chuig ionad bailiúcháin",
+      "classification": "not-a-task-selection",
+      "reason": "Bottle/can and return-location alternatives describe the deposit-return scheme, not finite answer selections."
+    },
+    {
+      "page": 37,
+      "text": "Leathanach Breise más rogha leat é a úsáid",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative writing, extra-page or copyright instruction; no practice route."
+    },
+    {
+      "page": 38,
+      "text": "Leathanach Breise más rogha leat é a úsáid",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative writing, extra-page or copyright instruction; no practice route."
+    },
+    {
+      "page": 39,
+      "text": "Leathanach Breise más rogha leat é a úsáid",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative writing, extra-page or copyright instruction; no practice route."
+    },
+    {
+      "page": 40,
+      "text": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe Stáit",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative writing, extra-page or copyright instruction; no practice route."
+    },
+    {
+      "page": 40,
+      "text": "Cearta Gaolmhara, 2000. Ní údaraítear aon úsáid dá éis chun aon chríche ach amháin chun na críche dá bhfuil sé",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative writing, extra-page or copyright instruction; no practice route."
+    },
+    {
+      "page": 40,
+      "text": "beartaithe. Ní ghlacann an Coimisiún aon dliteanas as sárú ar bith ar chearta tríú páirtí a eascraíonn as dáileadh",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative writing, extra-page or copyright instruction; no practice route."
+    },
+    {
+      "page": 36,
+      "text": "2024. Íocfaidh duine ar bith a cheannóidh deoch éarlais bheag ar an mbuidéal",
+      "classification": "not-a-task-selection",
+      "reason": "Duine ar bith means anyone buying a drink in the deposit-return context; no candidate answer selection. The full page has been visually checked."
+    }
+  ],
+  "reviewedAt": "2026-10-07",
+  "completeSubject": false,
+  "curriculumSource": "https://www.curriculumonline.ie/getmedia/3342d8a2-1e22-4f17-b82b-a8134fe16eb3/LCEconomics_0219_EN.pdf",
+  "equivalentTo": {
+    "lang": "ev",
+    "fileid": "LC034ALP000EV"
+  }
+}

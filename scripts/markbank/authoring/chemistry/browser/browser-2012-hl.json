@@ -1,0 +1,22 @@
+[
+ {"id": "chem-2012-hl-q1-a", "ask": "", "answer": "no need to standardise by titration", "figure": true},
+ {"id": "chem-2012-hl-q1-d", "ask": "Name a suitable indicator for this titration.", "answer": "Bromocresol green", "solution": true},
+ {"id": "chem-2012-hl-q1-e-i", "ask": "", "answer": "0.12 M", "figure": true, "solution": true},
+ {"id": "chem-2012-hl-q2-a", "ask": "Draw a labelled diagram showing the arrangement", "answer": "ethanol on glass wool (or other suitable material) positioned correctly", "solution": true},
+ {"id": "chem-2012-hl-q2-c", "ask": "test the gas produced for unsaturation", "answer": "Acidified manganate(VII)* solution", "solution": true},
+ {"id": "chem-2012-hl-q2-e", "ask": "maximum number of 75 cm³ test tubes", "answer": "605 (601 / 600) ÷ 75 = 8 test tubes of ethene", "solution": true},
+ {"id": "chem-2012-hl-q3-c", "ask": "Explain why the pressure of the vapour", "answer": "the plunger (in apparatus B*) is free to move (moves)", "figure": true},
+ {"id": "chem-2012-hl-q4-e", "ask": "balance the following equation", "answer": "Cu + 2NO₃⁻ + 4H⁺ → Cu²⁺ + 2NO₂ + 2H₂O", "figure": true},
+ {"id": "chem-2012-hl-q4-k-b", "ask": "scrubbing of waste acidic gases", "answer": "lime (CaO) / limestone (CaCO₃)"},
+ {"id": "chem-2012-hl-q5-a", "ask": "Write the electron configuration (s, p) of an oxygen atom", "answer": "2px²2py¹2pz¹", "solution": true},
+ {"id": "chem-2012-hl-q6-b", "ask": "", "answer": "2,2,4-trimethylpentane / isooctane", "figure": true, "solution": true},
+ {"id": "chem-2012-hl-q6-e", "ask": "Calculate the heat of formation of the hydrocarbon", "answer": "8C + 9H₂ → C₈H₁₈ ΔH = – 224 kJ", "solution": true},
+ {"id": "chem-2012-hl-q7-b-excess", "ask": "State the problem that would arise", "answer": "(iv) pH too high (too basic) / causes hardness / affects taste"},
+ {"id": "chem-2012-hl-q8-d", "ask": "", "answer": "catalyst: nickel / palladium / platinum", "figure": true},
+ {"id": "chem-2012-hl-q9-a-plot", "ask": "", "answer": "axes correctly scaled", "figure": true, "solution": true},
+ {"id": "chem-2012-hl-q10-b-ii", "ask": "", "answer": "pH = - log [H⁺] = 2.85", "figure": true, "solution": true},
+ {"id": "chem-2012-hl-q10-c-iii", "ask": "What mass of aluminium was used", "answer": "≡0.0002 mol Al", "figure": true},
+ {"id": "chem-2012-hl-q11-a-v", "ask": "Draw a labelled diagram to show the new structure", "answer": "nucleus {central mass (core) shown and labelled", "solution": true},
+ {"id": "chem-2012-hl-q11-b-calculation", "ask": "", "answer": "0.0793 ÷ 0.0007 × 0.1607", "figure": true, "solution": true},
+ {"id": "chem-2012-hl-q11-c-b-iv", "ask": "fixed by lightning", "answer": "NO₂ combines with moisture (H₂O) to give nitrite (nitrate)"}
+]

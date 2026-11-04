@@ -23,7 +23,7 @@ const IndependenceScene: React.FC<SceneProps> = ({ unlockedMilestones }) => {
   return (
     <group>
       {/* Ground plane */}
-      <Ground color={COLORS.cream} size={[12, 10]} />
+      <Ground color="#FFFFFF" size={[12, 10]} />
 
       {/* Room shell — cross-section apartment */}
       <Room

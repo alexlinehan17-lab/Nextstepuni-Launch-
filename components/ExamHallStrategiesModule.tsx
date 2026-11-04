@@ -1,20 +1,21 @@
+import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
-import { Cpu, ClipboardList, ListFilter, PlayCircle, BarChart2, HeartPulse, HardHat } from 'lucide-react';
-import { type ModuleProgress } from '../types';
+import { AnimatePresence,motion } from 'framer-motion';
+import { BarChart2,ClipboardList,Cpu,HardHat,HeartPulse,ListFilter,PlayCircle } from 'lucide-react';
+import React,{ useEffect,useRef,useState } from 'react';
+import { EXAM_HALL_STRATEGIES_REFERENCE_LIST } from '../data/references/examHallStrategies';
+import { COLORS } from '../design/tokens';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { amberTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
-import { EXAM_HALL_STRATEGIES_REFERENCE_LIST } from '../data/references/examHallStrategies';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { COLORS } from '../design/tokens';
+import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
+import { MotionDiv } from './Motion';
 
 const theme = amberTheme;
 
@@ -30,7 +31,7 @@ const triageQuestions = [
     { text: 'Q4 — Comprehension: Summarise the main argument of Text 3 in your own words (max 80 words).', subject: 'Paper 1', marks: 15, correct: 'green' as const, reason: 'A short summary with a word limit — read, condense, write. Minimal risk, fast completion.' },
 ];
 
-const TriageSimulator = () => {
+export const TriageSimulator = () => {
     const [phase, setPhase] = useState<'ready' | 'drill' | 'done'>('ready');
     const [qIndex, setQIndex] = useState(0);
     const [choices, setChoices] = useState<(string | null)[]>(Array(triageQuestions.length).fill(null));
@@ -48,7 +49,7 @@ const TriageSimulator = () => {
         };
     }, []);
 
-    const colorMap = { green: { bg: 'bg-emerald-100 dark:bg-emerald-900/30', border: 'border-emerald-300 dark:border-emerald-700', text: 'text-emerald-700 dark:text-emerald-300', label: 'Do First', dot: 'bg-emerald-500' }, amber: { bg: 'bg-amber-100 dark:bg-amber-900/30', border: 'border-amber-300 dark:border-amber-700', text: 'text-amber-700 dark:text-amber-300', label: 'Do Second', dot: 'bg-amber-500' }, red: { bg: 'bg-rose-100 dark:bg-rose-900/30', border: 'border-rose-300 dark:border-rose-700', text: 'text-rose-700 dark:text-rose-300', label: 'Do Last', dot: 'bg-rose-500' } };
+    const colorMap = { green: { bg: "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", text: "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]", label: 'Do First', dot: "bg-[var(--module-success)]" }, amber: { bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", text: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", label: 'Do Second', dot: "bg-[var(--module-orange)]" }, red: { bg: "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", text: "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]", label: 'Do Last', dot: "bg-[var(--module-danger)]" } };
 
     React.useEffect(() => {
         if (phase !== 'drill' || showFeedback) return;
@@ -90,35 +91,35 @@ const TriageSimulator = () => {
 
     if (phase === 'ready') {
         return (
-            <div className="my-10 rounded-2xl p-8 md:p-12 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">Triage Drill</h4>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-2 max-w-md mx-auto">Reading time has started. You have <strong className="text-zinc-700 dark:text-zinc-200">40 seconds</strong> to categorise 8 exam questions as:</p>
+            <div className="my-10 rounded-2xl p-8 md:p-12 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Triage Drill</h4>
+                <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-2 max-w-md mx-auto">Reading time has started. You have <strong className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">40 seconds</strong> to categorise 8 exam questions as:</p>
                 <div className="flex justify-center gap-3 mb-6">
                     {(['green', 'amber', 'red'] as const).map(c => (
                         <span key={c} className={`px-3 py-1 rounded-full text-xs font-bold ${colorMap[c].bg} ${colorMap[c].text} border ${colorMap[c].border}`}>{colorMap[c].label}</span>
                     ))}
                 </div>
-                <button onClick={startDrill} className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm rounded-lg transition-colors">Start Triage</button>
+                <button onClick={startDrill} className="px-6 py-3 bg-[var(--module-surface)] hover:bg-[var(--module-surface)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">Start Triage</button>
             </div>
         );
     }
 
     if (phase === 'done') {
         return (
-            <div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Triage Results</h4>
+            <div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Triage Results</h4>
                 <div className="flex justify-center gap-4 my-5">
-                    <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
-                        <div className="text-2xl font-bold text-zinc-800 dark:text-white">{score}/{triageQuestions.length}</div>
-                        <div className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">Correct</div>
+                    <div className="text-center px-5 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
+                        <div className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{score}/{triageQuestions.length}</div>
+                        <div className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">Correct</div>
                     </div>
-                    <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
-                        <div className="text-2xl font-bold text-zinc-800 dark:text-white">{Math.round(totalTime)}s</div>
-                        <div className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">Total Time</div>
+                    <div className="text-center px-5 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
+                        <div className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{Math.round(totalTime)}s</div>
+                        <div className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">Total Time</div>
                     </div>
-                    <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
-                        <div className="text-2xl font-bold text-zinc-800 dark:text-white">{answerTimes.length > 0 ? (answerTimes.reduce((a,b) => a+b, 0) / answerTimes.length).toFixed(1) : '—'}s</div>
-                        <div className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">Avg / Question</div>
+                    <div className="text-center px-5 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
+                        <div className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{answerTimes.length > 0 ? (answerTimes.reduce((a,b) => a+b, 0) / answerTimes.length).toFixed(1) : '—'}s</div>
+                        <div className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">Avg / Question</div>
                     </div>
                 </div>
                 <div className="space-y-2.5 mb-6">
@@ -127,21 +128,21 @@ const TriageSimulator = () => {
                         const correct = got === q.correct;
                         const c = colorMap[q.correct];
                         return (
-                            <div key={i} className={`p-3 rounded-lg border ${correct ? `${c.bg} ${c.border}` : 'bg-zinc-50 dark:bg-zinc-700/50 border-zinc-200 dark:border-zinc-600'}`}>
+                            <div key={i} className={`p-3 rounded-lg border ${correct ? `${c.bg} ${c.border}` : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"}`}>
                                 <div className="flex items-start gap-2.5">
                                     <span className={`mt-1 w-2 h-2 rounded-full flex-shrink-0 ${c.dot}`} />
                                     <div className="flex-1 min-w-0">
                                         <div className="flex items-center gap-2 flex-wrap">
-                                            <span className="text-xs font-bold text-zinc-400">{q.subject} · {q.marks}m</span>
+                                            <span className="text-xs font-bold text-[var(--module-muted)]">{q.subject} · {q.marks}m</span>
                                             {correct ? (
-                                                <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">Correct</span>
+                                                <span className="text-xs font-bold text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Correct</span>
                                             ) : (
-                                                <span className="text-xs font-bold text-rose-600 dark:text-rose-400">You said {got ? colorMap[got as keyof typeof colorMap].label : 'nothing'} — should be {c.label}</span>
+                                                <span className="text-xs font-bold text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">You said {got ? colorMap[got as keyof typeof colorMap].label : 'nothing'} — should be {c.label}</span>
                                             )}
-                                            {answerTimes[i] !== undefined && <span className="text-xs text-zinc-400">{answerTimes[i].toFixed(1)}s</span>}
+                                            {answerTimes[i] !== undefined && <span className="text-xs text-[var(--module-muted)]">{answerTimes[i].toFixed(1)}s</span>}
                                         </div>
-                                        <p className="text-sm text-zinc-600 dark:text-zinc-300 mt-0.5">{q.text}</p>
-                                        {!correct && <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 italic">{q.reason}</p>}
+                                        <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] mt-0.5">{q.text}</p>
+                                        {!correct && <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 italic">{q.reason}</p>}
                                     </div>
                                 </div>
                             </div>
@@ -149,10 +150,10 @@ const TriageSimulator = () => {
                     })}
                 </div>
                 {score < triageQuestions.length && (
-                    <p className="text-sm text-zinc-500 dark:text-zinc-400 text-center mb-4 italic">The goal is speed <strong>and</strong> accuracy. In the real exam, a wrong triage means wasting time on hard questions while easy marks go uncollected.</p>
+                    <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] text-center mb-4 italic">The goal is speed <strong>and</strong> accuracy. In the real exam, a wrong triage means wasting time on hard questions while easy marks go uncollected.</p>
                 )}
                 <div className="text-center">
-                    <button onClick={startDrill} className="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm rounded-lg transition-colors">Run Drill Again</button>
+                    <button onClick={startDrill} className="px-5 py-2.5 bg-[var(--module-surface)] hover:bg-[var(--module-surface)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">Run Drill Again</button>
                 </div>
             </div>
         );
@@ -163,35 +164,34 @@ const TriageSimulator = () => {
     const isWrong = showFeedback && choices[qIndex] !== q.correct;
     const timerPct = (timeLeft / 40) * 100;
 
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+    return <div className="wr-skin" data-wide="TriageSimulator"><div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
             <div className="flex items-center justify-between mb-4">
-                <h4 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white">Triage Drill</h4>
+                <h4 className="font-serif text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Triage Drill</h4>
                 <div className="flex items-center gap-3">
-                    <span className="text-xs font-bold text-zinc-400">{qIndex + 1} / {triageQuestions.length}</span>
-                    <span className={`text-sm font-bold tabular-nums ${timeLeft <= 10 ? 'text-rose-500' : 'text-zinc-600 dark:text-zinc-300'}`}>{timeLeft}s</span>
+                    <span className="text-xs font-bold text-[var(--module-muted)]">{qIndex + 1} / {triageQuestions.length}</span>
+                    <span className={`text-sm font-bold tabular-nums ${timeLeft <= 10 ? "text-[var(--module-danger-text)]" : "text-[var(--module-ink)] dark:text-[var(--module-muted)]"}`}>{timeLeft}s</span>
                 </div>
             </div>
             {/* Timer bar */}
-            <div className="w-full h-1.5 bg-zinc-100 dark:bg-zinc-700 rounded-full mb-5">
-                <motion.div className={`h-full rounded-full ${timeLeft <= 10 ? 'bg-rose-500' : 'bg-amber-500'}`} animate={{ width: `${timerPct}%` }} transition={{ duration: 0.3 }} />
+            <div className="w-full h-1.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full mb-5">
+                <motion.div className={`h-full rounded-full ${timeLeft <= 10 ? "bg-[var(--module-danger)]" : "bg-[var(--module-surface)]"}`} animate={{ width: `${timerPct}%` }} transition={{ duration: 0.3 }} />
             </div>
             {/* Question card */}
             <AnimatePresence mode="wait">
                 <motion.div key={qIndex} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }}
                     className={`p-5 rounded-xl border min-h-[100px] flex flex-col justify-center mb-5 transition-colors ${
-                        isCorrect ? 'bg-emerald-50 dark:bg-emerald-900/30 border-emerald-300 dark:border-emerald-700' :
-                        isWrong ? 'bg-rose-50 dark:bg-rose-900/30 border-rose-300 dark:border-rose-700' :
-                        'bg-zinc-50 dark:bg-zinc-700/50 border-zinc-200 dark:border-zinc-600'
+                        isCorrect ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
+                        isWrong ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
+                        "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"
                     }`}>
                     <div className="flex items-center gap-2 mb-2">
-                        <span className="text-xs font-bold text-amber-600 dark:text-amber-400">{q.subject}</span>
-                        <span className="text-xs text-zinc-400">·</span>
-                        <span className="text-xs font-semibold text-zinc-400">{q.marks} marks</span>
+                        <span className="text-xs font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{q.subject}</span>
+                        <span className="text-xs text-[var(--module-muted)]">·</span>
+                        <span className="text-xs font-semibold text-[var(--module-muted)]">{q.marks} marks</span>
                     </div>
-                    <p className="font-semibold text-zinc-700 dark:text-zinc-200 text-sm">{q.text}</p>
+                    <p className="font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] text-sm">{q.text}</p>
                     {showFeedback && (
-                        <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className={`text-xs mt-3 italic ${isCorrect ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+                        <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className={`text-xs mt-3 italic ${isCorrect ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}`}>
                             {isCorrect ? 'Correct! ' : `Not quite — this is "${colorMap[q.correct].label}". `}{q.reason}
                         </motion.p>
                     )}
@@ -207,11 +207,11 @@ const TriageSimulator = () => {
                         <button key={c} onClick={() => handleChoice(c)} disabled={showFeedback}
                             className="p-3 font-bold text-sm transition-all"
                             style={
-                                isAnswer ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } :
-                                selected && !isAnswer ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } :
-                                { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: showFeedback ? 'none' : '3px 3px 0px 0px #1C1917', cursor: showFeedback ? 'default' : 'pointer' }
-                            }>
-                            <div className={`w-3 h-3 rounded-full ${cm.dot} mx-auto mb-1.5`} />
+                                isAnswer ? { backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-success-text)" } :
+                                selected && !isAnswer ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" } :
+                                { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', cursor: showFeedback ? 'default' : 'pointer' }
+                            } data-wide-button="true" data-triage-choice={c} data-selected={selected || isAnswer} data-tone={isAnswer ? 'mint' : 'coral'} aria-pressed={selected}>
+                            <span data-triage-choice-marker={c} aria-hidden="true" />
                             {cm.label}
                         </button>
                     );
@@ -220,14 +220,10 @@ const TriageSimulator = () => {
             {/* Progress dots */}
             <div className="flex justify-center gap-1.5 mt-5">
                 {triageQuestions.map((_, i) => (
-                    <div key={i} className={`w-2 h-2 rounded-full transition-colors ${
-                        i < qIndex ? (choices[i] === triageQuestions[i].correct ? 'bg-emerald-500' : 'bg-rose-500') :
-                        i === qIndex ? 'bg-amber-500' : 'bg-zinc-200 dark:bg-zinc-600'
-                    }`} />
+                    <span key={i} data-triage-progress={choices[i] !== null ? (choices[i] === triageQuestions[i].correct ? "correct" : "incorrect") : i === qIndex ? "current" : "pending"} role="img" aria-label={`Question ${i + 1}: ${choices[i] !== null ? (choices[i] === triageQuestions[i].correct ? "correct" : "incorrect") : i === qIndex ? "current" : "not answered"}`} />
                 ))}
             </div>
-        </div>
-    );
+        </div></div>;
 }
 
 const MPMCalculator = () => {
@@ -237,31 +233,31 @@ const MPMCalculator = () => {
     const mpm = (time - buffer) / marks;
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
              <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 22, color: '#1a1a1a' }}>Minutes-Per-Mark Calculator</h4>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 22, color: "var(--module-ink)" }}>Minutes-Per-Mark Calculator</h4>
              </div>
              <div className="grid grid-cols-3 gap-4">
                 <div>
-                    <label style={{ fontSize: 14, fontWeight: 600, color: '#1a1a1a' }}>Total Time (mins)</label>
-                    <input type="number" value={time} onChange={e=>setTime(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
+                    <label style={{ fontSize: 14, fontWeight: 600, color: "var(--module-ink)" }}>Total Time (mins)</label>
+                    <input type="number" value={time} onChange={e=>setTime(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '12px 16px', fontSize: 16, color: "var(--module-ink)" }} onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }} onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }} />
                 </div>
                 <div>
-                    <label style={{ fontSize: 14, fontWeight: 600, color: '#1a1a1a' }}>Total Marks</label>
-                    <input type="number" value={marks} onChange={e=>setMarks(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
+                    <label style={{ fontSize: 14, fontWeight: 600, color: "var(--module-ink)" }}>Total Marks</label>
+                    <input type="number" value={marks} onChange={e=>setMarks(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '12px 16px', fontSize: 16, color: "var(--module-ink)" }} onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }} onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }} />
                 </div>
                 <div>
-                    <label style={{ fontSize: 14, fontWeight: 600, color: '#1a1a1a' }}>Buffer (mins)</label>
-                    <input type="number" value={buffer} onChange={e=>setBuffer(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
+                    <label style={{ fontSize: 14, fontWeight: 600, color: "var(--module-ink)" }}>Buffer (mins)</label>
+                    <input type="number" value={buffer} onChange={e=>setBuffer(parseInt(e.target.value))} className="w-full outline-none mt-1" style={{ border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '12px 16px', fontSize: 16, color: "var(--module-ink)" }} onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }} onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }} />
                 </div>
              </div>
-             <div className="mt-6 text-center" style={{ backgroundColor: COLORS.accentTint, border: `2px solid ${COLORS.accent}`, borderRadius: 14, padding: '20px 24px' }}>
-                <span style={{ fontSize: 16, color: '#1a1a1a' }}>Your MPM is </span>
-                <span className="font-serif font-bold" style={{ fontSize: 22, color: COLORS.accent }}>{mpm.toFixed(2)}</span>
-                <span style={{ fontSize: 16, color: '#1a1a1a' }}>. A 20-mark question gets </span>
-                <span className="font-serif font-bold" style={{ fontSize: 22, color: COLORS.accent }}>{(mpm*20).toFixed(1)}</span>
-                <span style={{ fontSize: 16, color: '#1a1a1a' }}> minutes.</span>
+             <div className="mt-6 text-center" style={{ backgroundColor: moduleFill(COLORS.accentTint), border: `2px solid ${COLORS.accent}`, borderRadius: 14, padding: '20px 24px' }}>
+                <span style={{ fontSize: 16, color: "var(--module-ink)" }}>Your MPM is </span>
+                <span className="font-serif font-bold" style={{ fontSize: 22, color: 'var(--module-accent-text)' }}>{mpm.toFixed(2)}</span>
+                <span style={{ fontSize: 16, color: "var(--module-ink)" }}>. A 20-mark question gets </span>
+                <span className="font-serif font-bold" style={{ fontSize: 22, color: 'var(--module-accent-text)' }}>{(mpm*20).toFixed(1)}</span>
+                <span style={{ fontSize: 16, color: "var(--module-ink)" }}> minutes.</span>
              </div>
         </div>
     )
@@ -275,13 +271,13 @@ const BoxBreathingVisualizer = () => {
     const totalCycles = 3;
 
     const phases = [
-      { label: 'Breathe In', color: 'text-cyan-500' },
-      { label: 'Hold', color: 'text-sky-400' },
-      { label: 'Breathe Out', color: 'text-[#F26B1F]' },
-      { label: 'Hold', color: 'text-sky-400' },
+      { label: 'Breathe In', color: "text-[var(--module-ink)]" },
+      { label: 'Hold', color: "text-[var(--module-ink)]" },
+      { label: 'Breathe Out', color: "text-[var(--module-danger-text)]" },
+      { label: 'Hold', color: "text-[var(--module-ink)]" },
     ];
 
-    const arcColors = ['#06b6d4', '#38bdf8', '#14b8a6', '#38bdf8'];
+    const arcColors = ["var(--module-ink)", "var(--module-ink)", "var(--module-success-text)", "var(--module-ink)"];
     const radius = 88;
 
     const getArcPath = (index: number) => {
@@ -332,9 +328,9 @@ const BoxBreathingVisualizer = () => {
     const done = !active && cycle === 0 && phase === 0;
 
     return (
-     <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">4-4-4-4 Box Breathing</h4>
-         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Feeling panicked? Run this protocol. 4 seconds per phase, 3 cycles.</p>
+     <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+         <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">4-4-4-4 Box Breathing</h4>
+         <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Feeling panicked? Run this protocol. 4 seconds per phase, 3 cycles.</p>
 
          <div className="flex justify-center mb-6">
            <div className="relative w-52 h-52">
@@ -356,10 +352,10 @@ const BoxBreathingVisualizer = () => {
                ))}
              </svg>
 
-             <div className={`absolute -top-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 0 ? 'text-cyan-500 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Inhale</div>
-             <div className={`absolute top-1/2 -right-10 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 1 ? 'text-sky-400 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Hold</div>
-             <div className={`absolute -bottom-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 2 ? 'text-[#F26B1F] opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Exhale</div>
-             <div className={`absolute top-1/2 -left-8 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 3 ? 'text-sky-400 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Hold</div>
+             <div className={`absolute -top-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 0 ? "text-[var(--module-ink)] opacity-100" : "text-[var(--module-muted)] dark:text-[var(--module-ink)] opacity-60"}`}>Inhale</div>
+             <div className={`absolute top-1/2 -right-10 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 1 ? "text-[var(--module-ink)] opacity-100" : "text-[var(--module-muted)] dark:text-[var(--module-ink)] opacity-60"}`}>Hold</div>
+             <div className={`absolute -bottom-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 2 ? "text-[var(--module-danger-text)] opacity-100" : "text-[var(--module-muted)] dark:text-[var(--module-ink)] opacity-60"}`}>Exhale</div>
+             <div className={`absolute top-1/2 -left-8 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 3 ? "text-[var(--module-ink)] opacity-100" : "text-[var(--module-muted)] dark:text-[var(--module-ink)] opacity-60"}`}>Hold</div>
 
              <div className="absolute inset-0 flex items-center justify-center">
                <motion.div
@@ -367,7 +363,7 @@ const BoxBreathingVisualizer = () => {
                    scale: active ? breathScale : 1,
                  }}
                  transition={{ duration: 3.8, ease: 'easeInOut' }}
-                 className="w-28 h-28 rounded-full bg-cyan-50 dark:bg-cyan-950/30 border-2 border-cyan-200 dark:border-cyan-800/50 flex flex-col items-center justify-center"
+                 className="w-28 h-28 rounded-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-2 border-[var(--module-line)] dark:border-[var(--module-line)] flex flex-col items-center justify-center"
                >
                  {active ? (
                    <>
@@ -375,14 +371,14 @@ const BoxBreathingVisualizer = () => {
                        key={`${phase}-${count}`}
                        initial={{ scale: 1.2, opacity: 0 }}
                        animate={{ scale: 1, opacity: 1 }}
-                       className="text-3xl font-bold text-cyan-600 dark:text-cyan-400"
+                       className="text-3xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]"
                      >
                        {count}
                      </motion.p>
                      <p className={`text-[10px] font-bold ${phases[phase].color}`}>{phases[phase].label}</p>
                    </>
                  ) : (
-                   <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500">Ready</p>
+                   <p className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)]">Ready</p>
                  )}
                </motion.div>
              </div>
@@ -392,7 +388,7 @@ const BoxBreathingVisualizer = () => {
          {active && (
            <div className="flex justify-center gap-2 mb-6">
              {Array.from({ length: totalCycles }).map((_, i) => (
-               <div key={i} className={`w-2 h-2 rounded-full transition-colors ${i < cycle ? 'bg-cyan-500' : i === cycle ? 'bg-cyan-300' : 'bg-zinc-200 dark:bg-zinc-700'}`} />
+               <div key={i} className={`w-2 h-2 rounded-full transition-colors ${i < cycle ? "bg-[var(--module-solid)]" : i === cycle ? "bg-[var(--module-surface)]" : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"}`} />
              ))}
            </div>
          )}
@@ -401,14 +397,14 @@ const BoxBreathingVisualizer = () => {
            {!active ? (
              <button
                onClick={handleStart}
-               className="px-6 py-2.5 bg-cyan-500 text-white font-bold text-sm rounded-xl hover:bg-cyan-600 shadow-lg shadow-cyan-500/20 transition-all"
+               className="px-6 py-2.5 bg-[var(--module-solid)] text-[var(--module-ink)] font-bold text-sm rounded-xl hover:bg-[var(--module-solid)] shadow-none shadow-none transition-all" data-wide-button="true"
              >
                {done ? 'Begin' : 'Start Again'}
              </button>
            ) : (
              <button
                onClick={() => setActive(false)}
-               className="px-6 py-2.5 bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-bold text-sm rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-all"
+               className="px-6 py-2.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] font-bold text-sm rounded-xl hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] transition-all" data-wide-button="true"
              >
                Stop
              </button>
@@ -512,18 +508,18 @@ const DumpSheetBuilder = () => {
 
     if (phase === 'ready') {
         return (
-            <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 22, color: '#1a1a1a' }}>Dump Sheet Drill</h4>
-                <p className="text-sm mt-1 mb-6 max-w-lg mx-auto" style={{ color: '#7a7068' }}>Practice the brain dump that should be your first action in every exam.</p>
+            <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 22, color: "var(--module-ink)" }}>Dump Sheet Drill</h4>
+                <p className="text-sm mt-1 mb-6 max-w-lg mx-auto" style={{ color: "var(--module-muted)" }}>Practice the brain dump that should be your first action in every exam.</p>
                 <div className="flex items-center justify-center gap-3 mb-6 flex-wrap">
-                    <span style={{ backgroundColor: COLORS.accentTint, border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: COLORS.accentDarkText }}>30s to memorise</span>
-                    <span style={{ color: '#d0cdc8' }}>→</span>
-                    <span style={{ backgroundColor: COLORS.accentTint, border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: COLORS.accentDarkText }}>60s to recall</span>
-                    <span style={{ color: '#d0cdc8' }}>→</span>
-                    <span style={{ backgroundColor: COLORS.accentTint, border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: COLORS.accentDarkText }}>See your score</span>
+                    <span style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>30s to memorise</span>
+                    <span style={{ color: "var(--module-muted)" }}>→</span>
+                    <span style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>60s to recall</span>
+                    <span style={{ color: "var(--module-muted)" }}>→</span>
+                    <span style={{ backgroundColor: moduleFill(COLORS.accentTint), border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600, color: moduleText(COLORS.accentDarkText) }}>See your score</span>
                 </div>
-                <motion.button onClick={startDrill} whileTap={{ y: 3 }} className="text-white font-semibold" style={{ backgroundColor: COLORS.accent, borderRadius: 100, padding: '13px 28px', fontSize: 15, borderBottom: `3px solid ${COLORS.accentDark}`, boxShadow: `0 4px 0 ${COLORS.accentDark}` }}>Start Drill</motion.button>
+                <motion.button onClick={startDrill} whileTap={{ y: 3 }} className="text-[var(--module-ink)] font-semibold" style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 100, padding: '13px 28px', fontSize: 15, borderBottom: `3px solid ${COLORS.accentDark}`, boxShadow: 'none' }} data-wide-button="true">Start Drill</motion.button>
             </div>
         );
     }
@@ -532,23 +528,23 @@ const DumpSheetBuilder = () => {
         const pct = (memoriseTime / 30) * 100;
         const low = isTimerLow(memoriseTime, 30);
         return (
-            <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-4" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
+            <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-4" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Active Recall</span>
                 <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-serif font-semibold" style={{ fontSize: 22, color: '#1a1a1a' }}>Memorise These Facts</h4>
-                    <span style={{ backgroundColor: low ? '#F1F0ED' : COLORS.successTint, border: `1.5px solid ${low ? '#d0cdc8' : 'rgba(58,141,95,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
-                        <span className="font-serif font-bold" style={{ fontSize: 18, color: low ? '#A8746E' : COLORS.success }}>{memoriseTime}</span>
-                        <span style={{ fontSize: 13, color: '#9e9186', marginLeft: 2 }}>s</span>
+                    <h4 className="font-serif font-semibold" style={{ fontSize: 22, color: "var(--module-ink)" }}>Memorise These Facts</h4>
+                    <span style={{ backgroundColor: moduleFill(low ? "var(--module-surface)" : COLORS.successTint), border: `1.5px solid ${low ? "var(--module-line)" : 'rgba(58,141,95,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
+                        <span className="font-serif font-bold" style={{ fontSize: 18, color: moduleText(low ? "var(--module-ink)" : COLORS.success) }}>{memoriseTime}</span>
+                        <span style={{ fontSize: 13, color: "var(--module-muted)", marginLeft: 2 }}>s</span>
                     </span>
                 </div>
-                <div style={{ height: 4, backgroundColor: '#e0dbd4', borderRadius: 2, marginBottom: 24 }}>
-                    <motion.div style={{ height: '100%', backgroundColor: COLORS.accent, borderRadius: 2 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
+                <div style={{ height: 4, backgroundColor: "var(--module-surface)", borderRadius: 2, marginBottom: 24 }}>
+                    <motion.div style={{ height: '100%', backgroundColor: moduleFill(COLORS.accent), borderRadius: 2 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     {dumpSheetFacts.map((fact, i) => (
-                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="flex items-start gap-3 bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '16px 18px' }}>
-                            <span className="flex items-center justify-center shrink-0" style={{ width: 28, height: 28, borderRadius: '50%', backgroundColor: COLORS.accent, fontSize: 13, fontWeight: 700, color: '#FFFFFF' }}>{i + 1}</span>
-                            <span style={{ fontSize: 14, color: '#1a1a1a', lineHeight: 1.5 }}>{fact.text}</span>
+                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="flex items-start gap-3 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '16px 18px' }}>
+                            <span className="flex items-center justify-center shrink-0" style={{ width: 28, height: 28, borderRadius: '50%', backgroundColor: moduleFill(COLORS.accent), fontSize: 13, fontWeight: 700, color: "var(--module-on-fill)" }}>{i + 1}</span>
+                            <span style={{ fontSize: 14, color: "var(--module-ink)", lineHeight: 1.5 }}>{fact.text}</span>
                         </MotionDiv>
                     ))}
                 </div>
@@ -560,27 +556,27 @@ const DumpSheetBuilder = () => {
         const pct = (recallTime / 60) * 100;
         const low = isTimerLow(recallTime, 60);
         return (
-            <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+            <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
                 <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-serif font-semibold" style={{ fontSize: 22, color: '#1a1a1a' }}>Write Everything You Remember</h4>
-                    <span style={{ backgroundColor: low ? '#F1F0ED' : COLORS.successTint, border: `1.5px solid ${low ? '#d0cdc8' : 'rgba(58,141,95,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
-                        <span className="font-serif font-bold" style={{ fontSize: 18, color: low ? '#A8746E' : COLORS.success }}>{recallTime}</span>
-                        <span style={{ fontSize: 13, color: '#9e9186', marginLeft: 2 }}>s</span>
+                    <h4 className="font-serif font-semibold" style={{ fontSize: 22, color: "var(--module-ink)" }}>Write Everything You Remember</h4>
+                    <span style={{ backgroundColor: moduleFill(low ? "var(--module-surface)" : COLORS.successTint), border: `1.5px solid ${low ? "var(--module-line)" : 'rgba(58,141,95,0.25)'}`, borderRadius: 20, padding: '5px 14px' }}>
+                        <span className="font-serif font-bold" style={{ fontSize: 18, color: moduleText(low ? "var(--module-ink)" : COLORS.success) }}>{recallTime}</span>
+                        <span style={{ fontSize: 13, color: "var(--module-muted)", marginLeft: 2 }}>s</span>
                     </span>
                 </div>
-                <div style={{ height: 4, backgroundColor: '#e0dbd4', borderRadius: 2, marginBottom: 16 }}>
-                    <motion.div style={{ height: '100%', backgroundColor: COLORS.accent, borderRadius: 2 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
+                <div style={{ height: 4, backgroundColor: "var(--module-surface)", borderRadius: 2, marginBottom: 16 }}>
+                    <motion.div style={{ height: '100%', backgroundColor: moduleFill(COLORS.accent), borderRadius: 2 }} animate={{ width: `${pct}%` }} transition={{ duration: 0.3 }} />
                 </div>
-                <p className="text-sm mb-4" style={{ color: '#7a7068' }}>Don't worry about order or exact wording.</p>
+                <p className="text-sm mb-4" style={{ color: "var(--module-muted)" }}>Don't worry about order or exact wording.</p>
                 <textarea
                     value={recallText}
                     onChange={e => setRecallText(e.target.value)}
                     disabled={recallTime <= 0}
                     placeholder="Start typing everything you remember..."
                     className="w-full h-48 outline-none font-serif"
-                    style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '14px 16px', fontSize: 15, color: '#1a1a1a', lineHeight: 1.6, resize: 'none' as const }}
+                    style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '14px 16px', fontSize: 15, color: "var(--module-ink)", lineHeight: 1.6, resize: 'none' as const }}
                     onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
-                    onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }}
+                    onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }}
                     autoFocus
                 />
             </div>
@@ -590,32 +586,32 @@ const DumpSheetBuilder = () => {
     // Results phase
     const score = results.filter(Boolean).length;
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif font-bold text-center" style={{ fontSize: 22, color: '#1a1a1a' }}>Results</h4>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif font-bold text-center" style={{ fontSize: 22, color: "var(--module-ink)" }}>Results</h4>
             <div className="text-center my-5">
-                <div className="inline-block" style={{ backgroundColor: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '16px 24px' }}>
-                    <span className="font-serif font-bold" style={{ fontSize: 40, color: COLORS.success }}>{score}</span>
-                    <span className="font-serif" style={{ fontSize: 20, color: '#9e9186' }}>/{dumpSheetFacts.length} recalled</span>
+                <div className="inline-block" style={{ backgroundColor: moduleFill(COLORS.successTint), border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '16px 24px' }}>
+                    <span className="font-serif font-bold" style={{ fontSize: 40, color: moduleText(COLORS.success) }}>{score}</span>
+                    <span className="font-serif" style={{ fontSize: 20, color: "var(--module-muted)" }}>/{dumpSheetFacts.length} recalled</span>
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
                 {dumpSheetFacts.map((fact, i) => {
                     const recalled = results[i];
                     return (
-                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="flex items-start gap-3 bg-white dark:bg-zinc-900" style={{ border: recalled ? `2px solid ${COLORS.success}` : '2px solid #d0cdc8', borderRadius: 14, padding: '14px 16px' }}>
-                            <span className="flex items-center justify-center shrink-0 mt-0.5" style={{ width: 22, height: 22, borderRadius: '50%', backgroundColor: recalled ? COLORS.success : '#A8746E', fontSize: 12, fontWeight: 700, color: '#FFFFFF' }}>
+                        <MotionDiv key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }} className="flex items-start gap-3 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: recalled ? `2px solid ${COLORS.success}` : "2px solid var(--module-line)", borderRadius: 14, padding: '14px 16px' }}>
+                            <span className="flex items-center justify-center shrink-0 mt-0.5" style={{ width: 22, height: 22, borderRadius: '50%', backgroundColor: moduleFill(recalled ? COLORS.success : "var(--module-solid)"), fontSize: 12, fontWeight: 700, color: "var(--module-on-fill)" }}>
                                 {recalled ? '✓' : '✗'}
                             </span>
-                            <span style={{ fontSize: 14, color: '#1a1a1a', lineHeight: 1.5 }}>{fact.text}</span>
+                            <span style={{ fontSize: 14, color: "var(--module-ink)", lineHeight: 1.5 }}>{fact.text}</span>
                         </MotionDiv>
                     );
                 })}
             </div>
-            <div style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: COLORS.accentTint, borderRadius: '0 10px 10px 0', padding: '12px 16px', marginBottom: 16 }}>
-                <p className="text-sm italic" style={{ color: COLORS.accentDarkText }}>In the real exam, your dump sheet is a safety net — facts already on the page are safe even if stress makes them harder to recall. Do this in the first 2 minutes of every paper.</p>
+            <div style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: moduleFill(COLORS.accentTint), borderRadius: '0 10px 10px 0', padding: '12px 16px', marginBottom: 16 }}>
+                <p className="text-sm italic" style={{ color: moduleText(COLORS.accentDarkText) }}>In the real exam, your dump sheet is a safety net — facts already on the page are safe even if stress makes them harder to recall. Do this in the first 2 minutes of every paper.</p>
             </div>
             <div className="text-center">
-                <button onClick={tryAgain} style={{ backgroundColor: COLORS.accent, borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Try Again</button>
+                <button onClick={tryAgain} style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">Try Again</button>
             </div>
         </div>
     );
@@ -633,9 +629,9 @@ const attackQuestions = [
 const optimalOrder = ['q3', 'q1', 'q5', 'q2', 'q6', 'q4'];
 
 const difficultyConfig = {
-    green: { bg: 'bg-emerald-100 dark:bg-emerald-900/30', text: 'text-emerald-700 dark:text-emerald-300', border: 'border-emerald-300 dark:border-emerald-700', dot: 'bg-emerald-500', label: 'Confident' },
-    amber: { bg: 'bg-amber-100 dark:bg-amber-900/30', text: 'text-amber-700 dark:text-amber-300', border: 'border-amber-300 dark:border-amber-700', dot: 'bg-amber-500', label: 'Manageable' },
-    red: { bg: 'bg-rose-100 dark:bg-rose-900/30', text: 'text-rose-700 dark:text-rose-300', border: 'border-rose-300 dark:border-rose-700', dot: 'bg-rose-500', label: 'Hardest' },
+    green: { bg: "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)]", text: "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", dot: "bg-[var(--module-success)]", label: 'Confident' },
+    amber: { bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", text: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", dot: "bg-[var(--module-surface)]", label: 'Manageable' },
+    red: { bg: "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)]", text: "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", dot: "bg-[var(--module-danger)]", label: 'Hardest' },
 };
 
 const shuffleArray = <T,>(arr: T[]): T[] => {
@@ -690,14 +686,14 @@ const OrderOfAttackOptimizer = () => {
     const score = checked ? computeScore() : 0;
 
     return (
-        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Order of Attack</h4>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8 text-center max-w-lg mx-auto">Sequence these 6 exam questions for maximum momentum. Click questions in the order you would attempt them.</p>
+        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Order of Attack</h4>
+            <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-8 text-center max-w-lg mx-auto">Sequence these 6 exam questions for maximum momentum. Click questions in the order you would attempt them.</p>
 
             <div className="flex flex-col md:flex-row gap-6">
                 {/* Question cards */}
                 <div className="flex-1 space-y-2.5">
-                    <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Questions</p>
+                    <p className="text-xs font-bold text-[var(--module-muted)] uppercase tracking-wider mb-2">Questions</p>
                     {displayOrder.map(q => {
                         const dc = difficultyConfig[q.difficulty];
                         const selected = sequence.includes(q.id);
@@ -710,18 +706,18 @@ const OrderOfAttackOptimizer = () => {
                                 whileTap={!checked ? { scale: 0.98 } : {}}
                                 className={`p-4 rounded-xl border cursor-pointer transition-all ${
                                     selected
-                                        ? 'bg-zinc-100 dark:bg-zinc-700/40 border-zinc-200 dark:border-zinc-600 opacity-50'
-                                        : 'bg-zinc-50 dark:bg-zinc-700/50 border-zinc-200 dark:border-zinc-600 hover:border-amber-300 dark:hover:border-amber-600'
+                                        ? "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)] opacity-50"
+                                        : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)] hover:border-[var(--module-line)] dark:hover:border-[var(--module-line)]"
                                 } ${checked ? 'cursor-default' : ''}`}
                             >
                                 <div className="flex items-center gap-3">
                                     {seqNum && (
-                                        <span className="w-6 h-6 rounded-full bg-amber-500 text-white text-xs font-bold flex items-center justify-center flex-shrink-0">{seqNum}</span>
+                                        <span className="w-6 h-6 rounded-full bg-[var(--module-surface)] text-[var(--module-ink)] text-xs font-bold flex items-center justify-center flex-shrink-0">{seqNum}</span>
                                     )}
                                     <div className="flex-1 min-w-0">
-                                        <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-200">{q.label}</p>
+                                        <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{q.label}</p>
                                         <div className="flex items-center gap-2 mt-1">
-                                            <span className="text-xs font-bold text-zinc-400">{q.marks} marks</span>
+                                            <span className="text-xs font-bold text-[var(--module-muted)]">{q.marks} marks</span>
                                             <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold ${dc.bg} ${dc.text} border ${dc.border}`}>{dc.label}</span>
                                         </div>
                                     </div>
@@ -733,7 +729,7 @@ const OrderOfAttackOptimizer = () => {
 
                 {/* Sequence list */}
                 <div className="md:w-64 flex-shrink-0">
-                    <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Your Sequence</p>
+                    <p className="text-xs font-bold text-[var(--module-muted)] uppercase tracking-wider mb-2">Your Sequence</p>
                     <div className="space-y-2 min-h-[120px]">
                         <AnimatePresence>
                             {sequence.map((id, i) => {
@@ -749,19 +745,19 @@ const OrderOfAttackOptimizer = () => {
                                         animate={{ opacity: 1, x: 0 }}
                                         exit={{ opacity: 0, x: -20 }}
                                         className={`p-3 rounded-lg border flex items-center gap-2.5 ${
-                                            inZone ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-300 dark:border-emerald-700' :
-                                            outZone ? 'bg-rose-50 dark:bg-rose-900/20 border-rose-300 dark:border-rose-700' :
-                                            'bg-zinc-50 dark:bg-zinc-700/50 border-zinc-200 dark:border-zinc-600'
+                                            inZone ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
+                                            outZone ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
+                                            "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"
                                         }`}
                                     >
                                         <span className={`w-6 h-6 rounded-full text-white text-xs font-bold flex items-center justify-center flex-shrink-0 ${
-                                            inZone ? 'bg-emerald-500' : outZone ? 'bg-rose-500' : 'bg-amber-500'
+                                            inZone ? "bg-[var(--module-success)]" : outZone ? "bg-[var(--module-danger)]" : "bg-[var(--module-surface)]"
                                         }`}>{i + 1}</span>
                                         <div className="min-w-0">
-                                            <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-200 truncate">{q.label.split(':')[0]}</p>
+                                            <p className="text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] truncate">{q.label.split(':')[0]}</p>
                                             <div className="flex items-center gap-1.5">
                                                 <span className={`w-1.5 h-1.5 rounded-full ${dc.dot}`} />
-                                                <span className="text-[10px] text-zinc-400">{q.marks}m</span>
+                                                <span className="text-[10px] text-[var(--module-muted)]">{q.marks}m</span>
                                             </div>
                                         </div>
                                     </MotionDiv>
@@ -769,7 +765,7 @@ const OrderOfAttackOptimizer = () => {
                             })}
                         </AnimatePresence>
                         {sequence.length === 0 && !checked && (
-                            <p className="text-xs text-zinc-400 dark:text-zinc-500 italic text-center py-6">Click questions to build your sequence...</p>
+                            <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] italic text-center py-6">Click questions to build your sequence...</p>
                         )}
                     </div>
 
@@ -781,16 +777,16 @@ const OrderOfAttackOptimizer = () => {
                                 disabled={sequence.length < 6}
                                 className={`w-full py-2.5 font-bold text-sm rounded-lg transition-all ${
                                     sequence.length === 6
-                                        ? 'bg-amber-500 hover:bg-amber-600 text-white'
-                                        : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-400 dark:text-zinc-500 cursor-not-allowed'
-                                }`}
+                                        ? "bg-[var(--module-surface)] hover:bg-[var(--module-surface)] text-[var(--module-ink)]"
+                                        : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-muted)] dark:text-[var(--module-muted)] cursor-not-allowed"
+                                }`} data-wide-button="true" data-selected={!!(sequence.length === 6)} data-tone="orange" aria-pressed={!!(sequence.length === 6)}
                             >
                                 {sequence.length === 6 ? 'Check Strategy' : `Select ${6 - sequence.length} more`}
                             </button>
                         ) : (
                             <button
                                 onClick={handleReset}
-                                className="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm rounded-lg transition-colors"
+                                className="w-full py-2.5 bg-[var(--module-surface)] hover:bg-[var(--module-surface)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true"
                             >
                                 Try Again
                             </button>
@@ -803,33 +799,33 @@ const OrderOfAttackOptimizer = () => {
             {checked && (
                 <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="mt-8">
                     <div className="flex items-center justify-center gap-3 mb-5">
-                        <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
-                            <div className="text-2xl font-bold text-zinc-800 dark:text-white">{score}/6</div>
-                            <div className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">In Optimal Zone</div>
+                        <div className="text-center px-5 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
+                            <div className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{score}/6</div>
+                            <div className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">In Optimal Zone</div>
                         </div>
                     </div>
 
-                    <div className="p-5 rounded-xl bg-zinc-50 dark:bg-zinc-700/50 border border-zinc-200 dark:border-zinc-600 mb-5">
-                        <p className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-3">Optimal Order</p>
+                    <div className="p-5 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)] mb-5">
+                        <p className="text-xs font-bold text-[var(--module-muted)] uppercase tracking-wider mb-3">Optimal Order</p>
                         <div className="space-y-1.5">
                             {optimalOrder.map((id, i) => {
                                 const q = attackQuestions.find(aq => aq.id === id)!;
                                 const dc = difficultyConfig[q.difficulty];
                                 return (
                                     <div key={id} className="flex items-center gap-2.5">
-                                        <span className="w-5 h-5 rounded-full bg-zinc-300 dark:bg-zinc-600 text-zinc-600 dark:text-zinc-300 text-[10px] font-bold flex items-center justify-center flex-shrink-0">{i + 1}</span>
+                                        <span className="w-5 h-5 rounded-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] text-[10px] font-bold flex items-center justify-center flex-shrink-0">{i + 1}</span>
                                         <span className={`w-1.5 h-1.5 rounded-full ${dc.dot}`} />
-                                        <span className="text-xs text-zinc-600 dark:text-zinc-300">{q.label}</span>
-                                        <span className="text-[10px] text-zinc-400">{q.marks}m</span>
+                                        <span className="text-xs text-[var(--module-ink)] dark:text-[var(--module-muted)]">{q.label}</span>
+                                        <span className="text-[10px] text-[var(--module-muted)]">{q.marks}m</span>
                                     </div>
                                 );
                             })}
                         </div>
                     </div>
 
-                    <div className="p-5 rounded-xl bg-amber-50 dark:bg-amber-900/15 border border-amber-200 dark:border-amber-800/40">
-                        <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                            <strong className="text-zinc-800 dark:text-white">Why this order?</strong> Greens first builds confidence and banks marks early. Your brain warms up on familiar material, creating <strong>psychological momentum</strong>. Within each colour zone, tackle the highest-mark questions first to maximise early points. Save the hardest question (Red) for last — by then you are in flow state and have already secured most of your grade.
+                    <div className="p-5 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                        <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] leading-relaxed">
+                            <strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">Why this order?</strong> Greens first builds confidence and banks marks early. Your brain warms up on familiar material, creating <strong>psychological momentum</strong>. Within each colour zone, tackle the highest-mark questions first to maximise early points. Save the hardest question (Red) for last — by then you are in flow state and have already secured most of your grade.
                         </p>
                     </div>
                 </MotionDiv>

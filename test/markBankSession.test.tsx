@@ -24,9 +24,11 @@ import SessionScreen, {
   showsRowMarks,
   suggestGrade,
 } from '@/components/MarkBank/SessionScreen';
-import { tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
+import { isRubricCard, tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
 import { CARDS as ART_HIGHER } from '@/components/MarkBank/cards/art/higher';
 import { CARDS as IRISH_HIGHER } from '@/components/MarkBank/cards/irish/higher';
+import { CARDS as ECONOMICS_HIGHER } from '@/components/MarkBank/cards/economics/higher';
+import { CARDS as ECONOMICS_ORDINARY } from '@/components/MarkBank/cards/economics/ordinary';
 
 vi.mock('@/components/PaperTrail/vaultDocs', () => ({
   // Source-reader interaction is independent of PDF rasterisation. Keep the
@@ -265,14 +267,14 @@ describe('the question comes first and stays', () => {
 
     fireEvent.click(screen.getByRole('button', { name: /Read TEXT 1/i }));
     expect(screen.getByRole('dialog', { name: /The Underdog Effect/i })).toBeInTheDocument();
-    expect(screen.getByText('Printed page 2')).toBeInTheDocument();
+    expect(screen.getByText('PDF page 2')).toBeInTheDocument();
     expect(screen.queryByText('Oesophagus')).not.toBeInTheDocument();
 
     const pages = screen.getByLabelText('TEXT 1 pages');
     fireEvent.touchStart(pages, { touches: [{ clientX: 320, clientY: 360 }] });
     fireEvent.touchEnd(pages, { changedTouches: [{ clientX: 80, clientY: 365 }] });
     expect(screen.getByLabelText('Page 2 of 2')).toBeInTheDocument();
-    expect(screen.getByText('Printed page 3')).toBeInTheDocument();
+    expect(screen.getByText('PDF page 3')).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: /Previous source page/i }));
     expect(screen.getByLabelText('Page 1 of 2')).toBeInTheDocument();
@@ -280,6 +282,95 @@ describe('the question comes first and stays', () => {
     fireEvent.keyDown(screen.getByRole('dialog'), { key: 'Escape' });
     expect(screen.queryByRole('dialog', { name: /The Underdog Effect/i })).not.toBeInTheDocument();
     expect(screen.getByRole('button', { name: /Reveal the marking scheme/i })).toBeInTheDocument();
+  });
+
+  test('opens the Economics demand graph before reveal while keeping the worked calculation hidden', () => {
+    const economicsCard = ECONOMICS_HIGHER.find(item => item.id === 'econ-2022-hl-sa-q1-a')!;
+    renderSession([economicsCard]);
+    expect(economicsCard.kind).toBe('question');
+    if (economicsCard.kind !== 'question' || !economicsCard.figure) throw new Error('Missing solution figure');
+    expect(economicsCard.figure.solution).toBe(true);
+    expect(screen.queryByAltText(economicsCard.figure.alt)).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Read ENGLISH QUESTION PAGE/i }));
+    expect(screen.getByRole('dialog', { name: 'English question 1' })).toBeInTheDocument();
+    // The reader labels every page by its PDF page number (main, #232).
+    expect(screen.getByText('PDF page 3')).toBeInTheDocument();
+    fireEvent.keyDown(screen.getByRole('dialog'), { key: 'Escape' });
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Reveal the marking scheme/i })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByAltText(economicsCard.figure.alt)).toBeInTheDocument();
+  });
+
+  test('closes the source reader with Escape after the last-page control loses focus', () => {
+    const economicsCard = ECONOMICS_HIGHER.find(item => item.id === 'econ-2022-hl-sa-q6-a-b')!;
+    renderSession([economicsCard]);
+    fireEvent.click(screen.getByRole('button', { name: /Read IRISH QUESTION PAGE/i }));
+    const next = screen.getByRole('button', { name: 'Next source page' });
+    next.focus();
+    fireEvent.click(next);
+    expect(next).toBeDisabled();
+    expect(screen.getByLabelText('Page 2 of 2')).toBeInTheDocument();
+    // Chrome blurs a focused navigation control when it becomes disabled.
+    next.blur();
+    fireEvent.keyDown(document.body, { key: 'Escape' });
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    expect(document.body).not.toHaveAttribute('data-scroll-lock');
+  });
+
+  test.each(['econ-2022-hl-q12-b-ii', 'econ-2022-hl-q15-a-iii', 'econ-2022-hl-q16-c-i'])(
+    'reveals the completed Economics diagram only with the answer: %s', id => {
+      const card = ECONOMICS_HIGHER.find(item => item.id === id)!;
+      if (card.kind !== 'question' || !card.figure) throw new Error('Missing solution diagram');
+      renderSession([card]);
+      expect(screen.queryByAltText(card.figure.alt)).not.toBeInTheDocument();
+      if (card.questionFigure) expect(screen.getByAltText(card.questionFigure.alt)).toBeInTheDocument();
+      fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+      expect(screen.getByAltText(card.figure.alt)).toBeInTheDocument();
+    },
+  );
+
+  test('assesses the FDI response as a whole without asking for every example', () => {
+    const economicsCard = ECONOMICS_HIGHER.find(item => item.id === 'econ-2022-hl-sa-q4-c')!;
+    renderSession([economicsCard]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText('Check your complete response.')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Select all/ })).not.toBeInTheDocument();
+    expect(screen.getByText(/Give two reasons.*not three compulsory points/)).toBeInTheDocument();
+  });
+
+  test('assesses a definition and example together at the confirmed eight-mark boundary', () => {
+    const economicsCard = ECONOMICS_ORDINARY.find(item => item.id === 'econ-2022-ol-q16-c-ii')!;
+    renderSession([economicsCard]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText('Check your complete response.')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Select all/ })).not.toBeInTheDocument();
+    expect(screen.getByText(/Explain the hidden economy and give one example other than/)).toBeInTheDocument();
+    expect(screen.getByText(/Assess your complete answer against the 8-mark total/)).toBeInTheDocument();
+  });
+
+  test('keeps a multi-row complete route under one published total', () => {
+    const economicsCard = ECONOMICS_HIGHER.find(item => item.id === 'econ-2022-hl-sa-q6-a-b')!;
+    renderSession([economicsCard]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText('Check your complete response.')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Select all/ })).not.toBeInTheDocument();
+    expect(screen.getByText(/Explain the market diagram: supernormal profit attracts entry/)).toBeInTheDocument();
+    expect(screen.getByText(/Answer \(b\) as well as both diagrams and their explanations/)).toBeInTheDocument();
+    expect(screen.getByText(/Assess your complete answer against the 15-mark total/)).toBeInTheDocument();
+  });
+
+  test('opens the Irish edition and reveals its distinct labels only with the answer', () => {
+    const economicsCard = ECONOMICS_ORDINARY.find(item => item.id === 'econ-2022-ol-sa-q2-i')!;
+    renderSession([economicsCard]);
+    expect(screen.queryByText(/Príomhoifig Staidrimh/)).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Read IRISH QUESTION PAGE/ }));
+    expect(screen.getByRole('dialog', { name: /Irish question 2/ })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Open the original illustration sheet/ }))
+      .toHaveAttribute('href', expect.stringContaining('LC034GLP000IV.pdf'));
+    fireEvent.keyDown(document.body, { key: 'Escape' });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText(/POS stands for Príomhoifig Staidrimh/)).toBeInTheDocument();
   });
 
   test('does not lose a rapid Next click to an intermediate source-page scroll', async () => {
@@ -348,7 +439,8 @@ describe('the question comes first and stays', () => {
     fireEvent.click(screen.getByRole('button', { name: /Set Coherence and Focus to 7 marks/i }));
     fireEvent.click(screen.getByRole('button', { name: /Set Subject Knowledge to 14 marks/i }));
     fireEvent.click(screen.getByRole('button', { name: /Set Relevant Examples to 7 marks/i }));
-    fireEvent.click(screen.getByRole('button', { name: /Set Visual Language to 7 marks/i }));
+    // The audited label as the scheme prints it.
+    fireEvent.click(screen.getByRole('button', { name: /Set Visual Language \(terminology and\/or sketches\) to 7 marks/i }));
     expect(screen.getByText('35 / 50')).toBeInTheDocument();
   });
 
@@ -374,6 +466,66 @@ describe('the question comes first and stays', () => {
     expect(rendered.querySelectorAll('[data-question-depth="1"]')).toHaveLength(4);
     expect(rendered.querySelector('[data-question-depth="0"]'))
       .toHaveStyle({ display: 'grid', gridTemplateColumns: '34px minmax(0, 1fr)' });
+  });
+
+  test('leaves a bracketed symbol or a reference to an earlier part inside the part that prints it', () => {
+    // Synthetic, shaped like Chemistry 2026 OL Q5(a): "(B)" is an element
+    // symbol and "(ii)" a reference back, not printed part labels.
+    const question = '(i) Say what the term means. '
+      + '(ii) Write down the values for element one (B) and element two (Cl) from the table. '
+      + '(iii) Use the values you wrote down in (ii) to predict the bond type. '
+      + '(iv) Name two shapes.';
+    renderSession([card({ questionText: question })]);
+
+    const rendered = screen.getByTestId('mark-bank-question-text');
+    const parts = [...rendered.querySelectorAll('[data-question-depth="0"]')];
+    expect(parts.map(part => part.firstElementChild?.textContent)).toEqual(['(i)', '(ii)', '(iii)', '(iv)']);
+    expect(rendered.querySelectorAll('[data-question-depth="1"]')).toHaveLength(0);
+    expect(parts[1]).toHaveTextContent('element one (B) and element two (Cl) from the table.');
+    expect(parts[2]).toHaveTextContent('Use the values you wrote down in (ii) to predict the bond type.');
+  });
+
+  test('keeps "part (b) above" in the part that refers to it', () => {
+    renderSession([card({ questionText: '(a) Name it. (b) Describe it. (c) Justify your answer at part (b) above.' })]);
+
+    const parts = [...screen.getByTestId('mark-bank-question-text').querySelectorAll('[data-question-depth="0"]')];
+    expect(parts.map(part => part.firstElementChild?.textContent)).toEqual(['(a)', '(b)', '(c)']);
+    expect(parts[2]).toHaveTextContent('Justify your answer at part (b) above.');
+  });
+
+  test('sets a printed bullet list in the stem one item to a line', () => {
+    // Synthetic, shaped like Art 2018 OL Q4.
+    renderSession([card({ stem: 'Choose one of the following and answer (a), (b) and (c):\n• First building\n• Second building.' })]);
+
+    const stem = screen.getByText(/Choose one of the following/);
+    expect(stem).toHaveStyle({ whiteSpace: 'pre-line' });
+    expect(stem.textContent).toBe('Choose one of the following and answer (a), (b) and (c):\n• First building\n• Second building.');
+  });
+
+  test('runs any other line break in the stem on as ordinary prose', () => {
+    renderSession([card({ stem: 'The table shows the results\nof the trial.\n\nStudy it carefully.' })]);
+
+    expect(screen.getByText(/The table shows/).textContent).toBe('The table shows the results of the trial. Study it carefully.');
+  });
+
+  test('still splits at a part that follows one the card leaves out', () => {
+    renderSession([card({ questionText: '(i) What is meant by the term? (iii) Give one advantage. (b) (ii) Does it rise?' })]);
+
+    const rendered = screen.getByTestId('mark-bank-question-text');
+    expect([...rendered.querySelectorAll('[data-question-depth="0"]')].map(part => part.firstElementChild?.textContent))
+      .toEqual(['(i)', '(iii)', '(ii)']);
+    expect([...rendered.querySelectorAll('[data-question-depth="1"]')].map(part => part.firstElementChild?.textContent))
+      .toEqual(['(b)']);
+  });
+
+  test('still restarts the numerals under each new lettered part', () => {
+    renderSession([card({ questionText: '(a) (i) One. (ii) Two. (b) (i) Three. (ii) Four.' })]);
+
+    const rendered = screen.getByTestId('mark-bank-question-text');
+    expect([...rendered.querySelectorAll('[data-question-depth="0"]')].map(part => part.firstElementChild?.textContent))
+      .toEqual(['(a)', '(i)', '(ii)', '(i)', '(ii)']);
+    expect(rendered.querySelectorAll('[data-question-depth="1"]')).toHaveLength(1);
+    expect(rendered).toHaveTextContent('Four.');
   });
 
   test('shows and grades an Irish listening section once, then advances past every child card', () => {
@@ -402,14 +554,23 @@ describe('the question comes first and stays', () => {
     expect(screen.getByText('1 of 2 this review')).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
-    // Each printed question is its own criterion at its published tariff (2025 scheme).
-    for (const [label, marks] of [
-      ['Fógra a hAon · Ceist 1(a)', 2], ['Fógra a hAon · Ceist 1(b)', 2], ['Fógra a hAon · Ceist 2', 4], ['Fógra a hAon · Ceist 3', 2],
-      ['Fógra a Dó · Ceist 1', 2], ['Fógra a Dó · Ceist 2(a)', 2], ['Fógra a Dó · Ceist 2(b)', 2], ['Fógra a Dó · Ceist 3', 2],
-    ] as const) {
-      const scheme = screen.getByText(label).closest('section')!;
-      fireEvent.click(within(scheme).getByRole('button', { name: `Set ${label} to ${marks} marks` }));
-    }
+    const firstScheme = screen.getByText('Fógra a hAon · Tuiscint / Eolas').closest('section')!;
+    const secondScheme = screen.getByText('Fógra a Dó · Tuiscint / Eolas').closest('section')!;
+    // Each fógra's scheme is cut into sub-questions and rows: claim the full
+    // answers of every sub-question so each extract earns its whole tariff.
+    const claimFullMarks = (scope: HTMLElement, card: SecCard) => {
+      if (!isRubricCard(card) || card.rubric.system !== 'irish') throw new Error('not an Irish card');
+      for (const part of card.rubric.criteria[0].allocation!.parts) {
+        const rows = part.ladder
+          ? part.rows.slice(0, part.ladder.length)
+          : [...part.rows].sort((a, b) => b.marks - a.marks).slice(0, Math.max(1, Math.floor(part.tariff / Math.max(...part.rows.map(row => row.marks)))));
+        for (const row of rows) {
+          fireEvent.click(within(scope).getByRole('button', { name: part.ladder ? row.text : `${row.text} · ${row.marks}m` }));
+        }
+      }
+    };
+    claimFullMarks(firstScheme, listening[0]);
+    claimFullMarks(secondScheme, listening[1]);
     expect(screen.getByText('18 / 18')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /^Got it/i }));
     expect(onGrade).toHaveBeenCalledTimes(2);
@@ -431,6 +592,7 @@ describe('the question comes first and stays', () => {
       questionText: '1. The male reproductive parts of the flower. 2. The female reproductive parts of the flower.',
     })]);
     fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^02Read$/i }));
 
     expect(screen.getByText('1 of 3')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /Next question line/i }));
@@ -459,7 +621,7 @@ describe('the question comes first and stays', () => {
     expect(screen.queryByText(/Small intestine|Large intestine/)).not.toBeInTheDocument();
   });
 
-  test('keeps each exact printed sub-question beside its planning field', () => {
+  test('breaks each printed item down beside its own planning field', () => {
     renderSession([card({
       stem: 'Give the collective name for:',
       questionText: '1. The male reproductive parts of the flower. 2. The female reproductive parts of the flower.',
@@ -467,15 +629,17 @@ describe('the question comes first and stays', () => {
     fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
     fireEvent.click(screen.getByRole('button', { name: /^03Plan$/i }));
 
-    expect(screen.getByText('1. The male reproductive parts of the flower.')).toBeInTheDocument();
-    expect(screen.getByText('2. The female reproductive parts of the flower.')).toBeInTheDocument();
-    expect(screen.getByRole('textbox', { name: /Plan idea 1: Part 1$/i })).toBeInTheDocument();
-    expect(screen.getByText(/visible parts: 1, 2\./i)).toBeInTheDocument();
+    // Each printed item gets its own space, named by the item, and the
+    // lead-in's key part sits under every one of them.
+    expect(screen.getByRole('textbox', { name: /Plan idea 1: 1\. The male reproductive parts of the flower$/i })).toBeInTheDocument();
+    expect(screen.getByRole('textbox', { name: /Plan idea 2: 2\. The female reproductive parts of the flower$/i })).toBeInTheDocument();
+    expect(screen.getAllByText('the collective name for')).toHaveLength(2);
   });
 
   test('can temporarily hide the full question while keeping the focused line available', () => {
     renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^02Read$/i }));
     const questionPane = screen.getByTestId('mark-bank-question-pane');
     expect(questionPane).not.toHaveAttribute('hidden');
 
@@ -510,15 +674,40 @@ describe('the question comes first and stays', () => {
     )).not.toThrow();
   });
 
-  test('announces stage changes and omits empty task-map categories', () => {
+  test('names the printed item each part covers', () => {
+    renderSession([card({ questionText: 'Explain the following types of reward: Commission, Flexitime.' })]);
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+
+    const parts = screen.getByRole('list', { name: /Key parts of the question/i });
+    expect(within(parts).getAllByText('Item')).toHaveLength(2);
+    expect(within(parts).getByText('Commission')).toBeInTheDocument();
+    expect(within(parts).getByText('Flexitime')).toBeInTheDocument();
+  });
+
+  test('shows a part it cannot read exactly as printed, never drops it', () => {
+    renderSession([card({ questionText: '(i) Name the parts labelled A and B. (ii) Maslow / McGregor believed that once a need is satisfied it stops motivating.' })]);
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+
+    const parts = screen.getByRole('list', { name: /Key parts of the question/i });
+    expect(within(parts).getByText('Read it as printed')).toBeInTheDocument();
+    expect(within(parts).getByText(/Maslow \/ McGregor believed/)).toBeInTheDocument();
+  });
+
+  test('opens on the key parts, announces stage changes and omits empty slots', () => {
     renderSession([card({ questionText: 'State one feature.' })]);
     fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
-    fireEvent.click(screen.getByRole('button', { name: /^02Understand$/i }));
 
-    expect(screen.getByRole('status')).toHaveTextContent(/Understand stage/i);
-    expect(screen.getByText('Instruction')).toBeInTheDocument();
-    expect(screen.queryByText('Information supplied')).not.toBeInTheDocument();
-    expect(screen.queryByText(/No separate lead-in/i)).not.toBeInTheDocument();
+    expect(screen.getByRole('status')).toHaveTextContent(/Break it down stage/i);
+    const parts = screen.getByRole('list', { name: /Key parts of the question/i });
+    expect(within(parts).getByText('Do')).toBeInTheDocument();
+    expect(within(parts).getByText('State')).toBeInTheDocument();
+    expect(within(parts).getByText('How many')).toBeInTheDocument();
+    expect(within(parts).getByText('one feature')).toBeInTheDocument();
+    expect(within(parts).queryByText('Only counts if')).not.toBeInTheDocument();
+    expect(within(parts).queryByText('Use')).not.toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /^02Read$/i }));
+    expect(screen.getByRole('status')).toHaveTextContent(/Read stage/i);
   });
 
   test('keeps a typed attempt beside the scheme without saving or grading it', () => {
@@ -567,11 +756,11 @@ describe('the question comes first and stays', () => {
     fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
     expect(screen.getByRole('heading', { name: /Work with the wording/i })).toBeInTheDocument();
 
-    fireEvent.click(screen.getByRole('button', { name: /^Leave$/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^Leave review$/i }));
     const dialog = screen.getByRole('dialog', { name: /Your completed cards are safe/i });
     expect(screen.queryByRole('heading', { name: /Work with the wording/i })).not.toBeInTheDocument();
     const keepReviewing = screen.getByRole('button', { name: /Keep reviewing/i });
-    const leaveSession = screen.getByRole('button', { name: /Leave session/i });
+    const leaveSession = within(dialog).getByRole('button', { name: /^Leave review$/i });
     expect(keepReviewing).toHaveFocus();
 
     fireEvent.keyDown(dialog, { key: 'Tab', shiftKey: true });
@@ -580,7 +769,7 @@ describe('the question comes first and stays', () => {
     expect(keepReviewing).toHaveFocus();
 
     fireEvent.keyDown(dialog, { key: 'Escape' });
-    await waitFor(() => expect(screen.getByRole('button', { name: /^Leave$/i })).toHaveFocus());
+    await waitFor(() => expect(screen.getByRole('button', { name: /^Leave review$/i })).toHaveFocus());
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
   });
 
@@ -606,6 +795,7 @@ describe('the question comes first and stays', () => {
     try {
       renderSession([card({ stem: 'Read the graph carefully.' })]);
       fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+      fireEvent.click(screen.getByRole('button', { name: /^02Read$/i }));
       fireEvent.click(screen.getByRole('button', { name: /Read this line/i }));
       expect(speak).toHaveBeenCalledTimes(1);
       expect(speak.mock.calls[0][0]).toMatchObject({
@@ -671,6 +861,24 @@ describe('claiming marks', () => {
     // The label is its own span; the count lives beside it, so read the band.
     const strip = screen.getByText(/Not claimed yet/i).parentElement!;
     await waitFor(() => expect(strip.textContent).toMatch(/\b2\b/), { timeout: 1000 });
+  });
+
+  test('names unclaimed points in the scheme\'s own case', () => {
+    // Regression: the band lowercased every name, so a gamete "R" read as "r"
+    // and the formula "C H O" as "c h o" — a different answer from the scheme's.
+    const c = card({
+      totalMarks: 6,
+      rows: [
+        row({ id: 'r1', verbatim: 'Gamete — R', marks: 3 }),
+        row({ id: 'r2', verbatim: 'Elements — C H O', marks: 3 }),
+      ],
+    });
+    renderSession([c]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    const strip = screen.getByText(/Not claimed yet/i).parentElement!;
+    expect(strip.textContent).toContain('Gamete — R');
+    expect(strip.textContent).toContain('C H O');
+    expect(strip.textContent).not.toMatch(/c h o/);
   });
 
   test('the marks-left figure can never exceed the marks on the card', async () => {
@@ -764,6 +972,23 @@ describe('claiming marks', () => {
     fireEvent.click(screen.getByRole('button', { name: /zygospore formed/ }));
     fireEvent.click(screen.getByRole('button', { name: /diploid nuclei formed/ }));
     expect(screen.getByText(/You claimed 6 of 12 marks/)).toBeInTheDocument();
+  });
+
+  test('a menu priced only as a whole states the choice without a per-option value', () => {
+    // An orderedSplit card ("[6+2+2+2]") prints no value for any one option,
+    // and its group carries none; the label once read "undefined marks each".
+    const c = card({
+      totalMarks: 12,
+      tariffModel: { kind: 'orderedSplit', notation: '[6+2+2+2]' },
+      rows: [row({ id: 'r1', verbatim: 'with deionised water', marks: null }), row({
+        id: 'g', kind: 'anyN', verbatim: 'add drop by drop', marks: null,
+        group: { claimMax: 2, options: ['add drop by drop', 'swirl solution', 'rinse inside of flask'] } as never,
+      })],
+    });
+    renderSession([c]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText('Any 2 of these')).toBeInTheDocument();
+    expect(screen.queryByText(/undefined/)).not.toBeInTheDocument();
   });
 
   test('stops a student claiming more of a group than the examiner marks', () => {
@@ -870,6 +1095,7 @@ describe('a diagram card always decodes its figure', () => {
     };
     renderSession([diagram]);
     fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^02Read$/i }));
     fireEvent.click(screen.getByRole('button', { name: /Focus on this line/i }));
 
     expect(screen.getByTestId('mark-bank-question-pane')).toHaveAttribute('hidden');
@@ -927,6 +1153,14 @@ describe('grading', () => {
     fireEvent.click(screen.getByRole('button', { name: /Oesophagus/ }));
     expect(screen.getByText(/You claimed 2 of 4 marks — that looks like Shaky/i)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Shaky' })).toHaveAttribute('data-suggested');
+  });
+
+  test('preserves dominant and recessive allele symbols in the unclaimed-points summary', () => {
+    renderSession([card({ totalMarks: 2, rows: [row({ verbatim: 'HhLl', marks: 2 })] })]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    const strip = screen.getByText(/Not claimed yet/i).parentElement!;
+    expect(strip).toHaveTextContent('HhLl');
+    expect(strip).not.toHaveTextContent('hhll');
   });
 
   test('says the decision is the student\'s', () => {
@@ -1054,9 +1288,9 @@ describe('grading', () => {
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
     expect(onGrade).toHaveBeenCalledTimes(1);
-    fireEvent.click(screen.getByRole('button', { name: /^Leave$/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^Leave review$/i }));
     expect(screen.getByRole('dialog', { name: /Your completed cards are safe/i })).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: /Leave session/i }));
+    fireEvent.click(within(screen.getByRole('dialog', { name: /Your completed cards are safe/i })).getByRole('button', { name: /^Leave review$/i }));
     expect(onExit).toHaveBeenCalled();
   });
 });
@@ -1138,4 +1372,20 @@ describe('a menu option claimed once cannot be claimed again', () => {
     expect(after[1].hasAttribute('disabled'), 'the sibling menu still offers the claimed answer').toBe(true);
     expect(after[1].textContent).toMatch(/Already claimed above/);
   });
+});
+
+test('paper review keeps the draft and marking state across expand and contract', async () => {
+  const onGrade = vi.fn();
+  const onFinish = vi.fn();
+  render(<SessionScreen paperLayout cards={[card()]} subjectLabel="Biology" onGrade={onGrade} onFinish={onFinish} onExit={vi.fn()} />);
+  fireEvent.change(screen.getByRole('textbox', {name:'Your answer'}), {target:{value:'Oesophagus and stomach'}});
+  fireEvent.click(screen.getByRole('button', {name:'Expand to full screen'}));
+  expect(screen.getByRole('dialog')).toHaveAttribute('data-expanded', 'true');
+  fireEvent.click(screen.getByRole('button', {name:/Reveal the marking scheme/i}));
+  fireEvent.click(screen.getByRole('button', {name:'Contract to compact view'}));
+  expect(screen.getByRole('textbox', {name:'Your answer'})).toHaveValue('Oesophagus and stomach');
+  expect(screen.getByRole('dialog')).toHaveAttribute('data-expanded', 'false');
+  fireEvent.click(screen.getByRole('button', {name:'Got it'}));
+  expect(onGrade).toHaveBeenCalledOnce();
+  expect(onFinish).toHaveBeenCalledOnce();
 });

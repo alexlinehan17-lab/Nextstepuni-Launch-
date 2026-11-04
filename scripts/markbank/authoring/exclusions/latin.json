@@ -1,0 +1,457 @@
+[
+ {
+  "ref": "2021 HL Section A Q1",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "Translate into Latin: | ½ ½ 1 1 1 1 ½ ½ ½ 1 ½ | When the Roman citizens heard the news, they were so disturbed that the consul, who had | 1 ½ 1 ½ 2 1 ½ 2 1 1 1 | come to the city to find money, immediately fled from Rome. The messengers had announced | 1 ½ 2 1 ½ 1 ½ 1 2 ½ | that Caesar was already approaching Rome with his army and that his enemies should quickly | 2 1 1 1 ½ 1 2 ½ ½ ½ 1 1 | leave the city. The people"
+ },
+ {
+  "ref": "2021 HL Section A Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Translate any one of the passages A, B, C, D: [65] | illi haec inter se dubiis de rebus agebant | certantes/8 : castra Aeneas aciemque movebat./5 | nuntius ingenti per regia tumultu | ecce ruit,/8 magnisque urbem terroribus implet:/5 | instructos acie Tiberino a flumine Teucros/6 | Tyrrhenamque manum totis descendere campis./7 | extemplo turbati animi, concussaque vulgi | pectora,/8 et arrectae stimulis haud mollibus"
+ },
+ {
+  "ref": "2021 HL Section A Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Translate into English (60) | Mago proximae silentio noctis profectus, quantum pati viae per vulnus poterat itineribus | extentis, ad mare in Ligures Ingaunos pervenit/10. Ibi eum legati ab Carthagine paucis ante | diebus in sinum Gallicum appulsis navibus adierunt, iubentes primo quoque tempore in | Africam traicere:/12 id et fratrem eius Hannibalem‐nam ad eum quoque isse legatos eadem | iubentes‐facturum;/6 non in "
+ },
+ {
+  "ref": "2021 HL Section B Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "certus es ire tamen miseramque relinquere Didon,/7 | atque idem venti vela fidemque ferent?/6 | certus es, Aenea, cum foedere solvere naves,/7 | quaeque ubi sint nescis Italia regna sequi?/6 | nec nova Carthago nec te crescentia tangent | moenia/8, nec sceptro tradita summa tuo?/5 | facta fugis, facienda petis/4: quaerenda per orbem | altera, quaesita est altera terra tibi./9 | ut terram invenias, qui eam tibi tradet"
+ },
+ {
+  "ref": "2021 HL Section B Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Translate into English (60) | in somnis, ecce, ante oculos maestissimus Hector | visus adesse mihi, largosque effundere fletus,/8 | raptatus bigis, ut quondam, aterque cruento | pulvere, perque pedes traiectus lora tumentes./8 | hei mihi, qualis erat ! quantum mutatus ab illo | Hectore, qui redit exuvias indutus Achilli,/8 | vel Danaum Phrygios iaculatus puppibus ignes ! | squalentem barbam, et concretos sanguine cri"
+ },
+ {
+  "ref": "2021 HL Section C Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Nec diu in pacto mansit /3 nam inde ab Carthagine allatum est,/3 ut Hasdrubal | primo quoque tempore in Italiam exercitum duceret./6 Quae vulgata res per | Hispaniam omnium ferme animos ad Romanos avertit/6. Itaque Hasdrubal extemplo | litteras Carthaginem mittit/6, indicans, quanto fama profectionis suae damno | fuisset/6 ; si vero inde pergeret, priusquam Hiberum transiret, Romanorum | Hispaniam fore/7 ; namque pra"
+ },
+ {
+  "ref": "2021 HL Section D Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Nunc homo audacissimus atque amentissimus hoc cogitat./5 Intellegit me ita | paratum atque instructum in iudicium venire,/5 ut non modo in auribus vestris sed in | oculis omnium sua furta atque crimina defixurus sim/8. Videt senatores multos esse | testes audaciae suae/5, videt multos equites Romanos, frequentes praeterea cives | atque socios/6, quibus ipse insignes iniurias fecerit./4 Videt etiam tot graves ab | ami"
+ },
+ {
+  "ref": "2021 HL Q4(ii)",
+  "reason": "the scheme prices the principal parts and never states them: it prints the split and the verb that is worth more, and no part of any verb",
+  "schemeEvidence": "(2 + 1 + 1) each for any three verbs to max of 10. (2 + 2 for moror) (10)"
+ },
+ {
+  "ref": "2021 HL Q4(iii)",
+  "reason": "the scheme prices the scansion by deduction and never prints the scanned line — it names the metre in five of the eight sittings and states the quantities in none of them, and the quantities are eight of the ten marks",
+  "schemeEvidence": "Metre 2 marks. Minus 2 each for any wrong syllables (8) (Sapphic) (10)"
+ },
+ {
+  "ref": "2021 HL Q4(i)(a)",
+  "reason": "the scheme prices this ask and states no grammatical answer under it",
+  "schemeEvidence": "(a) or (b) 4 + 3 + 3 (10)"
+ },
+ {
+  "ref": "2021 HL Q4(i)(b)",
+  "reason": "the scheme prices this ask and states no grammatical answer under it",
+  "schemeEvidence": "(a) or (b) 4 + 3 + 3 (10)"
+ },
+ {
+  "ref": "2021 OL Section A Q1(a)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "Five sentences @ 15 marks each | penalty system applies as follows: | Major error = minus 3. i.e. for omission of verb, wrong construction or mood but only one | block penalty to be applied per construction. | Lesser error = minus 2. i.e. wrong voice, tense, case, omission of noun, adjective or | pronoun, ‘ut’, ‘ne’, ‘se’ etc. | Minor error = minus 1. i.e. incorrect gender, degree of adjective or adverb, misspelling "
+ },
+ {
+  "ref": "2021 OL Section A Q1(b)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "Five sentences @ 15 marks each | penalty system applies as follows: | Major error = minus 3. i.e. for omission of verb, wrong construction or mood but only one | block penalty to be applied per construction. | Lesser error = minus 2. i.e. wrong voice, tense, case, omission of noun, adjective or | pronoun, ‘ut’, ‘ne’, ‘se’ etc. | Minor error = minus 1. i.e. incorrect gender, degree of adjective or adverb, misspelling "
+ },
+ {
+  "ref": "2021 OL Section A Q1(c)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "Five sentences @ 15 marks each | penalty system applies as follows: | Major error = minus 3. i.e. for omission of verb, wrong construction or mood but only one | block penalty to be applied per construction. | Lesser error = minus 2. i.e. wrong voice, tense, case, omission of noun, adjective or | pronoun, ‘ut’, ‘ne’, ‘se’ etc. | Minor error = minus 1. i.e. incorrect gender, degree of adjective or adverb, misspelling "
+ },
+ {
+  "ref": "2021 OL Section A Q1(d)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "Five sentences @ 15 marks each | penalty system applies as follows: | Major error = minus 3. i.e. for omission of verb, wrong construction or mood but only one | block penalty to be applied per construction. | Lesser error = minus 2. i.e. wrong voice, tense, case, omission of noun, adjective or | pronoun, ‘ut’, ‘ne’, ‘se’ etc. | Minor error = minus 1. i.e. incorrect gender, degree of adjective or adverb, misspelling "
+ },
+ {
+  "ref": "2021 OL Section A Q1(e)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "Five sentences @ 15 marks each | penalty system applies as follows: | Major error = minus 3. i.e. for omission of verb, wrong construction or mood but only one | block penalty to be applied per construction. | Lesser error = minus 2. i.e. wrong voice, tense, case, omission of noun, adjective or | pronoun, ‘ut’, ‘ne’, ‘se’ etc. | Minor error = minus 1. i.e. incorrect gender, degree of adjective or adverb, misspelling "
+ },
+ {
+  "ref": "2021 OL Section A Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Ovid | Luna fuit 3/ specto…..cernam 7/ quod…..habent 10/ nunc…..curro 12/ alta…..pedes 11/ | interea…..Theseu 11/ reddebant…..tuum 11."
+ },
+ {
+  "ref": "2021 OL Section A Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Translate into English (60) | Iam…..naves 5/itaque…..agri 6/ quae…..continebatur 4/ dimissa…..transvexit 7/ | multis…..diem 9/ in…..interfectis 4/ raro…..excedentem 10/ respexisse…..duxisset 15."
+ },
+ {
+  "ref": "2021 OL Section B Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Virgil | Hos…..tumultu 10/ ecce…..urbe 11/ legati…..ferunt 5/ nihil…..actum 5/ | tantorum…..operum 6/ nil…..aurum 6/ nec…..preces 6/ alia…..Latinis 4/ | quaerenda…..petendum 12."
+ },
+ {
+  "ref": "2021 OL Section B Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Translate into English (60) | Primus…..caterva 7/ Laocoon…..arce 7/ et…..cives 7/ creditis….hostes 3/ aut…..Danaum 7/ | sic…..Ulixes 2/ aut…..Achivi 7/ aut……urbi 14/ aut….error 3/ equo…..Teucri 3."
+ },
+ {
+  "ref": "2021 OL Section C Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Caesar | Postridie…..Caesar 4/ priusquam…..reciperent 8/ in…..erant 7/ exercitum……contendit 12/ | id…..conatus 6/ quod…..audiebat 6/ propter…..potuit 9/Caesar…..coepit 13."
+ },
+ {
+  "ref": "2021 OL Section D Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Livy | Postero…..dictator 12/ cum…..respondit 12/ tum…..suorum 5/ et…..coepisset 9/ | auxilium…..implorabat 4/ et…..defendisset 10/ orabat……ferret 7/ neve…..sineret 6."
+ },
+ {
+  "ref": "2021 OL Q4(i)",
+  "reason": "the scheme prices the four noun forms and never states any of them",
+  "schemeEvidence": "Four nouns (3 + 3 + 3 + 1) (10)"
+ },
+ {
+  "ref": "2021 OL Q4(ii)",
+  "reason": "the scheme prices the principal parts and never states them: it prints the split and the verb that is worth more, and no part of any verb",
+  "schemeEvidence": "Three verbs (4 + 3 + 3) (10)"
+ },
+ {
+  "ref": "2021 OL Q4(iii)",
+  "reason": "the scheme prices the scansion by deduction and never prints the scanned line — it names the metre in five of the eight sittings and states the quantities in none of them, and the quantities are eight of the ten marks",
+  "schemeEvidence": "Each correct foot merits 2 marks to a maximum of 10 (10)."
+ },
+ {
+  "ref": "2022 HL Section A Q1",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "Translate into Latin | ½ 1 1 2 2 ½ ½ 2 | When the citizens of Brundisium were preparing to flee, some scouts announced that the | 1 2 1 ½ 1 ½ 1 2 1 ½ | enemy had pitched their camp near the road. (15 ) This news terrified the people so much | ½ 2 1 ½ ½ 1 1 1 | that they abandoned their homes in sudden flight. (10 ½ ) The soldiers of the garrison in | 1 2 ½ 1 ½ 2 1 ½ 1 | Brundisium feared that the enemy would soon cap"
+ },
+ {
+  "ref": "2022 HL Section A Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Virgil | iam pater Aeneas, iam curvo in litore Tarchon | constituere pyras.10/ huc corpora quisque suorum | more tulere patrum;7/ subiectisque ignibus atris | conditur in tenebras altum caligine caelum.11/ | ter circum accensos, cincti fulgentibus armis, | decurrere rogos;10/ ter maestum funeris ignem | lustravere in equis, ululatusque ore dedere.11/ | spargitur et tellus lacrimis, sparguntur et arma.8/ | it caelo cl"
+ },
+ {
+  "ref": "2022 HL Section A Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "(60) | Translate | Conspectum tam triste supplicium fregit animos Campanorum.4/ Concursus ad curiam populi factus | coegit Loesium senatum vocare;5/ et primoribus, qui iam diu publicis consiliis aberant,4/ propalam | minabantur, nisi venirent in senatum,4/ circa domos eorum ituros se et in publicum omnes vi | extracturos esse.5/ Is timor frequentem senatum magistratui praebuit.4/ Ibi cum ceteri de legatis | mittendis"
+ },
+ {
+  "ref": "2022 HL Section B Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Catullus | Verani, omnibus e meis amicis | antistans mihi milibus trecentis,12/ | venistine domum ad tuos Penates 6/ | fratresque unanimos anumque matrem?6/ | venisti. O mihi nuntii beati! 5/ | visam te incolumem audiamque Hiberum | narrantem loca,9/ facta, nationes, | ut mos est tuus,6/ applicansque collum | iucundum os oculosque suaviabor.9/ | o quantum est hominum beatiorum, 6/ | quid me laetius est beatiusve 6/"
+ },
+ {
+  "ref": "2022 HL Section B Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "(60) Translate | ‘Anchisa generate, deum certissima proles,4/ | Cocyti stagna alta vides Stygiam paludem,4/ | di cuius iurare timent et fallere numen.4/ | haec omnis, quam cernis, inops inhumata turba est;4/ | portitor ille Charon; hi, quos vehit unda, sepulti;4/ | nec ripas datur horrendas et rauca fluenta | transportare prius quam sedibus ossa quierunt.8/ | centum errant annos volitantque haec litora circum;4/ | tu"
+ },
+ {
+  "ref": "2022 HL Section C Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Livy | Cum navigaret Hispaniae praeter oram, Mago 4/, haud procul Carthagine Nova expositis in terram | militibus proximos depopulatus agros, inde ad urbem classem appulit. 10/ Ibi cum interdiu milites | in navibus tenuisset, 4/ nocte in litus expositos, ad partem eam muri, qua capta Carthago ab | Romanis fuerat, ducit; 8/ nec praesidio satis valido urbem teneri ratus. 4/ Ceterum nuntii ex agris | trepidi simul popul"
+ },
+ {
+  "ref": "2022 HL Section D Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Sallust | Adherbal ubi intellegit regnum aut relinquendum esse aut armis retinendum, 7/ copias parat et | Jugurthae obvius procedit. 3/ Interim haud longe a mari, prope Cirtam oppidum, uterque exercitus | consedit; 7/ et quia diei vesper erat, proelium non inceptum. 5/ Ubi multum noctis processit, | obscuro etiam tum lumine, milites Iugurthae, signo dato, castra hostium invadunt; 11/ alios | semisomnos alios arma cap"
+ },
+ {
+  "ref": "2022 HL Q4(ii)",
+  "reason": "the scheme prices the principal parts and never states them: it prints the split and the verb that is worth more, and no part of any verb",
+  "schemeEvidence": "(2+1+1) to max of 10. (10)"
+ },
+ {
+  "ref": "2022 HL Q4(iii)",
+  "reason": "the scheme prices the scansion by deduction and never prints the scanned line — it names the metre in five of the eight sittings and states the quantities in none of them, and the quantities are eight of the ten marks",
+  "schemeEvidence": "Naming Metre, 2 marks. Then -2 for any wrong syllables (exclude final syll) (10)"
+ },
+ {
+  "ref": "2022 HL Q4(i)(a)",
+  "reason": "the scheme prices this ask and states no grammatical answer under it",
+  "schemeEvidence": "4+3+3—lenient marking scheme (10)"
+ },
+ {
+  "ref": "2022 HL Q4(i)(b)",
+  "reason": "the scheme prices this ask and states no grammatical answer under it",
+  "schemeEvidence": "4+3+3—lenient marking scheme (10)"
+ },
+ {
+  "ref": "2022 OL Section A Q1(a)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "[75] | Five sentences @ 15 marks each | penalty system applies as follows: | Major error= -3. i.e. for omission of verb, wrong construction or mood but only one block penalty | to be applied per construction. | Lesser error = -2. i.e. wrong voice, tense, case, omission of noun, adjective or pronoun, “ut”, “ne”, | “se” etc. | Minor error = -1. i.e. incorrect gender, degree of adjective or adverb, misspelling or vocabu"
+ },
+ {
+  "ref": "2022 OL Section A Q1(b)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "[75] | Five sentences @ 15 marks each | penalty system applies as follows: | Major error= -3. i.e. for omission of verb, wrong construction or mood but only one block penalty | to be applied per construction. | Lesser error = -2. i.e. wrong voice, tense, case, omission of noun, adjective or pronoun, “ut”, “ne”, | “se” etc. | Minor error = -1. i.e. incorrect gender, degree of adjective or adverb, misspelling or vocabu"
+ },
+ {
+  "ref": "2022 OL Section A Q1(c)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "[75] | Five sentences @ 15 marks each | penalty system applies as follows: | Major error= -3. i.e. for omission of verb, wrong construction or mood but only one block penalty | to be applied per construction. | Lesser error = -2. i.e. wrong voice, tense, case, omission of noun, adjective or pronoun, “ut”, “ne”, | “se” etc. | Minor error = -1. i.e. incorrect gender, degree of adjective or adverb, misspelling or vocabu"
+ },
+ {
+  "ref": "2022 OL Section A Q1(d)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "[75] | Five sentences @ 15 marks each | penalty system applies as follows: | Major error= -3. i.e. for omission of verb, wrong construction or mood but only one block penalty | to be applied per construction. | Lesser error = -2. i.e. wrong voice, tense, case, omission of noun, adjective or pronoun, “ut”, “ne”, | “se” etc. | Minor error = -1. i.e. incorrect gender, degree of adjective or adverb, misspelling or vocabu"
+ },
+ {
+  "ref": "2022 OL Section A Q1(e)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "[75] | Five sentences @ 15 marks each | penalty system applies as follows: | Major error= -3. i.e. for omission of verb, wrong construction or mood but only one block penalty | to be applied per construction. | Lesser error = -2. i.e. wrong voice, tense, case, omission of noun, adjective or pronoun, “ut”, “ne”, | “se” etc. | Minor error = -1. i.e. incorrect gender, degree of adjective or adverb, misspelling or vocabu"
+ },
+ {
+  "ref": "2022 OL Section A Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Virgil | Interea…….reliquit 9/ ignarique…….oris 9/portus…….ingens ipse 11/ sed…….ruinis 9/ | interdumque…….nubem 9/turbine……. favilla 9/ attolitque…….. lambit 9."
+ },
+ {
+  "ref": "2022 OL Section A Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Translate into English (60) | Id…….sunt. 15/ Ut…….P. Cornelius, 6/ cui…….Italia, 6/ neque…….revocabat. 6/Fabius | Maximus…….ducebat:12 / qui……. cepisse. 15."
+ },
+ {
+  "ref": "2022 OL Section B Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Ovid | Troia………….virisque; 11/ Iam…….vias 11/ | ibis Dardanias……..urbes 10/ teque…….deam.11/ dona…….sorores,11/ | Illiades…….dabit 11."
+ },
+ {
+  "ref": "2022 OL Section B Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Translate into English: (60) | Nec…….flebant 8/ et…….ferebant 7/ principio…….secto 8/ ingentem…….atris 7 / intexunt…….armis | 14/ pars…….ungunt 16."
+ },
+ {
+  "ref": "2022 OL Section C Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Caesar | Germani…….audito 5/cum…….viderent 4/ armis…….eiecerunt .10/ Cum…….pervenissent | 7/reliqua……praecipitaverunt 12/ atque…. perierunt 8/ Nostri…….receperunt 9/ Caesar…….fecit 10."
+ },
+ {
+  "ref": "2022 OL Section D Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Livy | Tum…….processit 6/ et…….habet, 8/ procedat…….melior.’ 12 / Diu…….fuit 4 /, cum…….nollent. 10 / | Tum…….pergit: 3/ ‘si…….beluae, 4/ qui……. deiecit’ 18."
+ },
+ {
+  "ref": "2022 OL Q4(i)",
+  "reason": "the scheme prices the four noun forms and never states any of them",
+  "schemeEvidence": "Four nouns: 3+3+2+2"
+ },
+ {
+  "ref": "2022 OL Q4(ii)",
+  "reason": "the scheme prices the principal parts and never states them: it prints the split and the verb that is worth more, and no part of any verb",
+  "schemeEvidence": "(2+1+1) or (2+2) - 3 verbs to max 10."
+ },
+ {
+  "ref": "2022 OL Q4(iii)",
+  "reason": "the scheme prices the scansion by deduction and never prints the scanned line — it names the metre in five of the eight sittings and states the quantities in none of them, and the quantities are eight of the ten marks",
+  "schemeEvidence": "Each correct foot merits 2 marks to a maximum of 10."
+ },
+ {
+  "ref": "2023 HL Section A Q1",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "Translate into Latin. | ½ 1 1 2 1 2 ½ | In the morning, the commander of the fleet saw the enemy approaching in the distance. He | ½ 2 1 ½ 2 ½ 2 1 ½ 1 | immediately called together the sailors and ordered them to prepare to fight the enemy. | ½ ½ 1 2 1 1 2 ½ ½ ½ 2 | However, when the men saw the enemy fleet, they were so terrified that they were unwilling to | 2 1 1 2 ½ ½ 2 ½ ½ ½ 2 | sieze arms. The commander was ver"
+ },
+ {
+  "ref": "2023 HL Section A Q2(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "hastam alii galeamque ferunt;/4 nam cetera Turnus | victor habet./4 tum maesta phalanx Teucrique sequuntur/6 | Tyrrhenique omnes et versis Arcades armis./6 | postquam omnis longe comitum processerat ordo,/7 | substitit Aeneas, gemituque haec addidit alto:/6 | ‘nos alias hinc ad lacrimas eadem horrida belli | fata vocant:/9 salve aeternum mihi, maxime Palla, | aeternumque vale.’/7 nec plura effatus ad altos | tendebat"
+ },
+ {
+  "ref": "2023 HL Section A Q2(ii)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "ipse tridente suo terram percussit,/7 at illa | intremuit motuque vias patefecit aquarum./9 | exspatiata ruunt per apertos flumina campos/8 | cumque satis arbusta simul pecudesque virosque/8 | tectaque cumque suis rapiunt penetralia sacris./9 | si qua domus mansit potuitque resistere tanto | indeiecta malo,/10 culmen tamen altior huius | unda tegit,/7 pressaeque latent sub gurgite turres./7"
+ },
+ {
+  "ref": "2023 HL Section A Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Translate (60) | Ab eodem imperatore classem magnam et ornatam, quae ducibus Sertorianis ad Italiam studio | inflammata raperetur, superatam esse atque depressam;/10 magnas hostium praeterea copias | multis proeliis esse deletas patefactumque nostris legionibus esse Pontum,/8 qui antea populo | Romano ex omni aditu clausus fuisset;/5 Sinopen atque Amisum, quibus in oppidis erant domicilia | regis, omnibus rebus ornat"
+ },
+ {
+  "ref": "2023 HL Section B Q2(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Senatum in aedem Iovis convocavi,/4 quod domi meae paene interfectus eram,/4 et rem omnem | senatoribus narravi./4 Tum huc Catilina venit./2 Quis senator eum appelavit?/3 Quis salutavit? | Quis eum non ut ferocissimum hostem aspexit?/6 Principes etiam senatus partem illam | subselliorum, ad quam ille accesserat, inanem reliquerunt./10 | Quaesivi a Catilina utrum in nocturno conventu apud M. Laecam fuisset necne./8 Cu"
+ },
+ {
+  "ref": "2023 HL Section B Q2(ii)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Deinde ubi dies advenit et Boccho nuntiatum est Jugurtham haud procul abesse,/8 cum paucis | amicis et quaestore nostro procedit in tumulum facillimum visu omnibus/8. Eodem Jugurtha cum | plerisque aliis inermis, ut imperatum erat,/6 accedit ac statim signo dato undique ab insidiis | invaditur./4 Ceteri occisi, Jugurtha Sullae vinctus traditur et ab eo ad Marium deductus est./7 Per | idem tempus adversus Gallos ab du"
+ },
+ {
+  "ref": "2023 HL Section B Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Translate (60) | at pius Aeneas, per noctem plurima volvens,/4 | ut primum lux alma data est,/3 exire locosque | explorare novos, quas vento accesserit oras,/6 | qui teneant—nam inculta videt—hominesne feraene/5 | quaerere constituit sociosque exacta referre,/4 | classem in convexo nemorum sub rupe cavata/5 | arboribus clausam circum atque horrentibus umbris | occulit;/6 ipse uno graditur comitatus Achate,/4 | bina m"
+ },
+ {
+  "ref": "2023 HL Q4(ii)",
+  "reason": "the scheme prices the principal parts and never states them: it prints the split and the verb that is worth more, and no part of any verb",
+  "schemeEvidence": "(2+1+1) for each verb (utor:2+2), to max of 10. (10)"
+ },
+ {
+  "ref": "2023 HL Q4(iii)",
+  "reason": "the scheme prices the scansion by deduction and never prints the scanned line — it names the metre in five of the eight sittings and states the quantities in none of them, and the quantities are eight of the ten marks",
+  "schemeEvidence": "Sapphic Metre: 2 marks. -2 for any wrong syllables (10)"
+ },
+ {
+  "ref": "2023 OL Section A Q1(a)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "[75] | Five sentences, 15 marks each | deduction system per incorrect word applies as follows: | Major error= -3. i.e. for omission of verb, wrong construction or mood | Lesser error = -2. i.e. wrong voice, tense, case, omission of noun, adjective or pronoun, “ut”, “ne”, | “se” etc. | Minor error = -1. i.e. incorrect gender, degree of adjective or adverb, misspelling or vocabulary | error. | Or"
+ },
+ {
+  "ref": "2023 OL Section A Q1(b)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "[75] | Five sentences, 15 marks each | deduction system per incorrect word applies as follows: | Major error= -3. i.e. for omission of verb, wrong construction or mood | Lesser error = -2. i.e. wrong voice, tense, case, omission of noun, adjective or pronoun, “ut”, “ne”, | “se” etc. | Minor error = -1. i.e. incorrect gender, degree of adjective or adverb, misspelling or vocabulary | error. | Or"
+ },
+ {
+  "ref": "2023 OL Section A Q1(c)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "[75] | Five sentences, 15 marks each | deduction system per incorrect word applies as follows: | Major error= -3. i.e. for omission of verb, wrong construction or mood | Lesser error = -2. i.e. wrong voice, tense, case, omission of noun, adjective or pronoun, “ut”, “ne”, | “se” etc. | Minor error = -1. i.e. incorrect gender, degree of adjective or adverb, misspelling or vocabulary | error. | Or"
+ },
+ {
+  "ref": "2023 OL Section A Q1(d)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "[75] | Five sentences, 15 marks each | deduction system per incorrect word applies as follows: | Major error= -3. i.e. for omission of verb, wrong construction or mood | Lesser error = -2. i.e. wrong voice, tense, case, omission of noun, adjective or pronoun, “ut”, “ne”, | “se” etc. | Minor error = -1. i.e. incorrect gender, degree of adjective or adverb, misspelling or vocabulary | error. | Or"
+ },
+ {
+  "ref": "2023 OL Section A Q1(e)",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "[75] | Five sentences, 15 marks each | deduction system per incorrect word applies as follows: | Major error= -3. i.e. for omission of verb, wrong construction or mood | Lesser error = -2. i.e. wrong voice, tense, case, omission of noun, adjective or pronoun, “ut”, “ne”, | “se” etc. | Minor error = -1. i.e. incorrect gender, degree of adjective or adverb, misspelling or vocabulary | error. | Or"
+ },
+ {
+  "ref": "2023 OL Section A Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Ovid | tunc…esses; 10/ illa…meae, 10/ et…arsi, 11/ ardet…deos. 12/ et…trahebant; 10/ | abstulerant…tui. 12"
+ },
+ {
+  "ref": "2023 OL Section A Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Translate into English (60) | Vident…aegrius; 12/ cuius…venerit, 6/ tamen…retardatos. 6/ Hi…rogant, 4/ ut…existimetis, 7/ | quorum…magis, 5/ quod…defendant, 10/ tamen…different. 10"
+ },
+ {
+  "ref": "2023 OL Section B Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Virgil | ibat…aevo, 6/ et…ingrediens, 14/ varioque…levabat. 8/ miratur…Aeneas, 14/ | capiturque…priorum. 23"
+ },
+ {
+  "ref": "2023 OL Section B Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Translate into English. (60) | ‘Aeole…vento 12/ gens…penates 13/ incute…ponto 13/ sunt…nymphae 8/ quarum…dicabo’ 14."
+ },
+ {
+  "ref": "2023 OL Section C Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Caesar | Interim…accredit; 6/ equites…evocant. 8/ Nullo…discedunt. 9/ Subito…emittit. 10/ | Perterritis…petant 13/ et…deberet. 10/ Labienus…occiderint 9."
+ },
+ {
+  "ref": "2023 OL Section D Q2",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Livy | Nero…advenit, 7/ Porcius…adsecutus est. 8/ Ubi…instruxit; 16/ media…est. 5/ | Hasdrubal…vidit, 10 / in…collocat; 6/ circa…point. 7/ Ligures…sunt. 6"
+ },
+ {
+  "ref": "2023 OL Q4(i)",
+  "reason": "the scheme prices the four noun forms and never states any of them",
+  "schemeEvidence": "Four nouns, 2 marks each = 8"
+ },
+ {
+  "ref": "2023 OL Q4(ii)",
+  "reason": "the scheme prices the principal parts and never states them: it prints the split and the verb that is worth more, and no part of any verb",
+  "schemeEvidence": "(2+1+1) for each of three verbs = 12"
+ },
+ {
+  "ref": "2023 OL Q4(iii)",
+  "reason": "the scheme prices the scansion by deduction and never prints the scanned line — it names the metre in five of the eight sittings and states the quantities in none of them, and the quantities are eight of the ten marks",
+  "schemeEvidence": "Apply a positive marking scheme, to a maximum of 10 marks. | • Each correct foot merits 2 marks. | • Each correct identification of a long or a short syllable merits 1 mark."
+ },
+ {
+  "ref": "2024 HL Section A Q1",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "Translate into Latin:- | ½ ½ 2 1 2 1 ½ 1 ½ 1 1 2 | When Hannibal was staying at Capua, he invited Calavius and his son to dinner. The young man said | ½ 2 ½ ½ ½ 2 2 ½ ½ 2 1 ½ 1 | that he was sick; therefore, Hannibal was not able to persuade him to drink the wine. After dinner | ½ ½ 1 2 1 ½ 1 ½ 2 ½ 1 | on the same night, the young man led his father into the garden in order to speak to him. The son | 2 1 ½ ½ 1 ½ 2 ½ "
+ },
+ {
+  "ref": "2024 HL Section A Q2(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Virgil Principio sociis edicit signa sequantur/7 | atque animos aptent armis pugnaeque parent se./7 | iamque in conspectu Teucros habet et sua castra,/7 | stans celsa in puppi,/4 clipeum cum deinde sinistra | extulit ardentem./7 clamorem ad sidera tollunt | Dardanidae e muris./7 spes addita suscitat iras./4 | at Rutulo regi ducibusque ea mira videri | Ausoniis,/8 donec versas ad litora puppes | respiciunt totumque ad"
+ },
+ {
+  "ref": "2024 HL Section A Q2(ii)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Ovid ipse gubernator tollens ad sidera palmas/8 | exposcit votis, immemor artis, opem./8 | quocumque aspexi, nihil est nisi mortis imago,/8 | quam dubia timeo mente timensque precor./8 | attigero portum, portu terrebor ab ipso:/8 | plus habet infesta terra timoris aqua./8 | nam simul insidiis hominum pelagique laboro,/9 | et faciunt geminos ensis et unda metus./8"
+ },
+ {
+  "ref": "2024 HL Section A Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "(60) Translate | Inde, ne mora atque otium animos sollicitaret, cum reliquis copiis Pyrenaeum transgreditur et ad | oppidum Iliberri castra locat/8. Galli quamquam Italiae bellum inferri audiebant, tamen, quia vi | subactos trans Pyrenaeum Hispanos fama erat praesidiaque valida imposita,/8 metu servitutis ad | arma consternati Ruscinonem aliquot populi convenient/6. Quod ubi Hannibali nuntiatum est, | moram magis qua"
+ },
+ {
+  "ref": "2024 HL Section B Q2(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Livy | P. Cornelius cum omnibus matronis obviam ire statuae deae iussus est ut eam de nave acciperet/9 | et in terram elatam matronis traderet/4. Postquam navis ad ostium amnis Tiberini accessit/4, sicut | erat iussus, Cornelius, in mare evectus, ab sacerdotibus deam accepit extulitque in terram/10. | Matronae primores civitatis, inter quas unius Claudiae Quintae insigne est nomen, statuam | acceperunt;/10 cuius fama"
+ },
+ {
+  "ref": "2024 HL Section B Q2(ii)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Sallust | Romanus imperator, ubi nullam videt occasionem pugnandi ab hoste dari,/6 urbem Zamam | statuit oppugnare,/4 ratus Jugurtham suis laborantibus auxilio venturum,/5 ibique proelium | futurum./3 At ille, cum a perfugis cognovisset quae pararentur,/5 magnis itineribus Metellum | antevenit atque oppidanos hortatur ut moenia defendant/8; praeterea pollicetur se | in tempore cum exercitu adfore./6 | Ita compositis "
+ },
+ {
+  "ref": "2024 HL Section B Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "(60) Translate | tum quoque communi portam statione tenebant./4 | Nisus ait: “dine hunc ardorem mentibus addunt,/4 | Euryale, an sua cuique deus fit dira cupido?/4 | aut pugnam aut aliquid iamdudum invadere magnum | mens agitat mihi/6, nec placida contenta quiete est./3 | cernis quae Rutulos habeat fiducia rerum:/4 | lumina rara micant, somno vinoque soluti | procubuere, silent late loca./6 percipe porro | quid dubit"
+ },
+ {
+  "ref": "2024 HL Q4(ii)",
+  "reason": "the scheme prices the principal parts and never states them: it prints the split and the verb that is worth more, and no part of any verb",
+  "schemeEvidence": "(2+1+1) to max of 10. (2+2 for precor) (10)"
+ },
+ {
+  "ref": "2024 HL Q4(iii)",
+  "reason": "the scheme prices the scansion by deduction and never prints the scanned line — it names the metre in five of the eight sittings and states the quantities in none of them, and the quantities are eight of the ten marks",
+  "schemeEvidence": "Metre-Alcaic= 2 marks. -2 for any wrong syllables (10)"
+ },
+ {
+  "ref": "2025 HL Section A Q1",
+  "reason": "the scheme states no model translation for this ask — it prints the ENGLISH the candidate is given, with a per-word tariff written above it, or a table of deductions, and never the Latin that would be the answer",
+  "schemeEvidence": "Translate into Latin:- | ½ ½ 2 1 1 1 ½ 2 1 2 1 | When Porsenna was besieging Rome, a young man called Mucius promised that he would kill the king. | ½ 2 1 ½ 1 ½ 2 1 1 ½ 2 | Mucius hid a sword beneath his toga, and entered the camp of the enemy in secret. He saw a | ½ ½ 2 1 1 ½ ½ 2 ½ ½ 2 | secretary, who was giving money to the soldiers, and, because he believed that this secretary was the | 1 2 1 ½ 1 2 ½ ½ 2 1 ½ ½ 1 "
+ },
+ {
+  "ref": "2025 HL Section A Q2(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Virgil | Aeneas primique duces et pulcher Iulus/6 | corpora sub ramis deponunt arboris altae,/6 | instituuntque dapes et adorea liba per herbam | subiciunt epulis/9 (sic Iuppiter ipse monebat)/3 | 'heus, etiam mensas consumimus?' inquit Iulus,/6 | nec plura, adludens./3 ea vox audita laborum | prima tulit finem/6, primamque loquentis ab ore | eripuit pater/6 ac stupefactus numine pressit./3 | continuo 'salve fatis mi"
+ },
+ {
+  "ref": "2025 HL Section A Q2(ii)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Catullus | Marrucine Asini, manu sinistra | non belle uteris:/10 in ioco atque vino | tollis lintea neglegentiorum./10 | hoc salsum esse putas? fugit te, inepte:/7 | quamvis sordida res et invenusta est./7 | non credis mihi?/3 | quare aut hendecasyllabos trecentos | exspecta,/8 aut mihi linteum remitte,/6 | quod me non movet aestimatione,/7 | verum est mnemosynum mei sodalis./7"
+ },
+ {
+  "ref": "2025 HL Section A Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "(60) Translate | Postero die, ut a praesenti motu averteret animum eius, in tribunal escendit et contionem advocari | iussit/9. Ibi Masinissam, primum regem adpellatum eximiisque ornatum laudibus, aurea corona, aurea | patera/9, sella curuli et scipione eburno, toga picta et palmata tunica donat/6. Addit verbis honorem/2: | neque magnificentius quicquam triumpho apud Romanos neque triumphantibus ampliorem eo | ornatu"
+ },
+ {
+  "ref": "2025 HL Section B Q2(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Cicero | Illo tempore Segestanis maxima cum cura haec Diana redditur/6; reportatur Segestam;/2 in suis | antiquis sedibus summa cum gratulatione civium reponitur/7. Haec erat posita excelsa in basi,/3 in qua | magnis litteris P. Africani nomen erat incisum /5eumque Carthagine capta Dianam restituisse | scriptum./5 | Colebatur a civibus, ab omnibus advenis videbatur;/5 cum quaestor essem, nihil mihi ab illis est | dem"
+ },
+ {
+  "ref": "2025 HL Section B Q2(ii)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "Livy | Pacuvius Calavius Capuae erat nobilis ac popularis homo./5 Senatum convocavit et dixit,/2 “claudam in | curia vos et viam saluti vestrae inveniam./5” Fide data, egressus est et claudi curiam iubet/4 | praesidiumque in vestibulo relinquit ne quis adire curiam neve egredi possit./8 | Tum vocato ad contionem populo,/3 “quod saepe” inquit, “optavistis, Campani/4: clausos omnes | senatores in curia accipite, solos,"
+ },
+ {
+  "ref": "2025 HL Section B Q3(i)",
+  "reason": "the scheme states no model translation for this ask — it prints the LATIN the candidate is given, cut into units with a mark after each, and never the English that would be the answer",
+  "schemeEvidence": "(60) Translate | dividimus muros et moenia pandimus urbis/4. | accingunt omnes operi pedibusque rotarum | subiciunt lapsus/6 et stuppea vincula collo | intendunt/3. scandit fatalis machina muros, | feta armis./4 pueri circum innuptaeque puellae | sacra canunt/4 funemque manu contingere gaudent;/4 | illa subit mediaeque minans inlabitur urbi/4. | o patria, o divom domus Ilium et incluta bello | moenia Dardanidum/6! qu"
+ },
+ {
+  "ref": "2025 HL Q4(ii)",
+  "reason": "the scheme prices the principal parts and never states them: it prints the split and the verb that is worth more, and no part of any verb",
+  "schemeEvidence": "(2+1 to+1) max of 10. (2+2 for loquor) (10)"
+ },
+ {
+  "ref": "2025 HL Q4(iii)",
+  "reason": "the scheme prices the scansion by deduction and never prints the scanned line — it names the metre in five of the eight sittings and states the quantities in none of them, and the quantities are eight of the ten marks",
+  "schemeEvidence": "Metre 2 marks. -2 for any wrong syllables (10)—Alcaic line"
+ }
+]

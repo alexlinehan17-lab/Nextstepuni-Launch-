@@ -3,220 +3,77 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect, useRef } from 'react';
-import { motion, useAnimationControls } from 'framer-motion';
-import { MotionButton, MotionSpan } from './Motion';
-import { Flame, TrendingUp, Target, Zap, Award, Crown, Mountain, Footprints, Coins, type LucideIcon } from 'lucide-react';
-import { type GamificationState, type StreakTier, getStreakTier } from '../gamificationConfig';
-import { type StreakData } from '../hooks/useStreak';
+import React, { useEffect, useRef, useState } from 'react';
+import { MotionButton, useReducedMotion } from './Motion';
+import Avatar from './Avatar';
+import type { GamificationState } from '../gamificationConfig';
+import type { StreakData } from '../hooks/useStreak';
+import './student-header.css';
 
-const RANK_ICONS: Record<string, LucideIcon> = {
-  Footprints,
-  TrendingUp,
-  Target,
-  Zap,
-  Award,
-  Crown,
-  Mountain,
-};
-
-const STREAK_TIER_STYLES: Record<StreakTier, string> = {
-  none: 'text-zinc-400 dark:text-zinc-500',
-  small: 'text-orange-400',
-  medium: 'text-orange-500',
-  large: 'text-orange-500',
-  monthly: 'text-amber-400',
-};
-
-// ─── Animated Counter Hook ─────────────────────────────────────────────────
-
-function useAnimatedCounter(target: number, duration = 800): { display: number; isAnimating: boolean } {
-  const [display, setDisplay] = useState(target);
-  const [isAnimating, setIsAnimating] = useState(false);
-  const prevRef = useRef(target);
-  const frameRef = useRef<number>(0);
+function useAnimatedPoints(value: number, reducedMotion: boolean | null): number {
+  const [display, setDisplay] = useState(value);
+  const previous = useRef(value);
 
   useEffect(() => {
-    const prev = prevRef.current;
-    prevRef.current = target;
-
-    // Skip animation on first render or if value hasn't changed
-    if (prev === target) return;
-
-    const diff = target - prev;
-    if (diff === 0) return;
-
-    setIsAnimating(true);
-    const startTime = performance.now();
-
-    const animate = (now: number) => {
-      const elapsed = now - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      // Ease out cubic
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setDisplay(Math.round(prev + diff * eased));
-
-      if (progress < 1) {
-        frameRef.current = requestAnimationFrame(animate);
-      } else {
-        setDisplay(target);
-        setIsAnimating(false);
-      }
-    };
-
-    frameRef.current = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(frameRef.current);
-  }, [target, duration]);
-
-  return { display, isAnimating };
-}
-
-// ─── Animated Points Display ────────────────────────────────────────────────
-
-const AnimatedPoints: React.FC<{ value: number; size: 'sm' | 'xs' }> = ({ value, size }) => {
-  const { display, isAnimating } = useAnimatedCounter(value);
-  const coinControls = useAnimationControls();
-  const prevValueRef = useRef(value);
-
-  useEffect(() => {
-    if (prevValueRef.current !== value && value > prevValueRef.current) {
-      // Coin bounce when points increase
-      coinControls.start({
-        scale: [1, 1.4, 1],
-        rotate: [0, -15, 15, 0],
-        transition: { duration: 0.5, ease: 'easeOut' },
-      });
+    if (reducedMotion || previous.current === value) {
+      previous.current = value;
+      setDisplay(value);
+      return;
     }
-    prevValueRef.current = value;
-  }, [value, coinControls]);
+    const from = previous.current;
+    const start = performance.now();
+    let frame: number;
+    const animate = (now: number) => {
+      const progress = Math.min((now - start) / 650, 1);
+      const next = Math.round(from + (value - from) * (1 - Math.pow(1 - progress, 3)));
+      previous.current = next;
+      setDisplay(next);
+      if (progress < 1) frame = requestAnimationFrame(animate);
+    };
+    frame = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(frame);
+  }, [value, reducedMotion]);
 
-  const textClass = size === 'sm'
-    ? 'text-xs font-bold'
-    : 'text-[10px] font-bold';
-
-  return (
-    <div className="flex items-center gap-1">
-      <motion.div animate={coinControls}>
-        <Coins size={size === 'sm' ? 12 : 10} className="text-amber-500" />
-      </motion.div>
-      <MotionSpan
-        className={`${textClass} tabular-nums ${isAnimating ? 'text-amber-500' : 'text-zinc-500 dark:text-zinc-400'}`}
-        animate={isAnimating ? { scale: [1, 1.08, 1] } : {}}
-        transition={{ duration: 0.3 }}
-      >
-        {display}
-      </MotionSpan>
-    </div>
-  );
-};
-
-// ─── Component ──────────────────────────────────────────────────────────────
+  return display;
+}
 
 interface TrainingPulseProps {
   gamificationState: GamificationState;
   onOpenProgress: () => void;
   streak: StreakData;
   pointsBalance: number;
+  avatar: string;
 }
 
-const TrainingPulse: React.FC<TrainingPulseProps> = ({
-  gamificationState,
-  onOpenProgress,
-  streak,
-  pointsBalance,
-}) => {
+const TrainingPulse: React.FC<TrainingPulseProps> = ({ gamificationState, onOpenProgress, streak, pointsBalance, avatar }) => {
   const { currentRank, rankProgress, nextRank } = gamificationState;
-  const RankIcon = RANK_ICONS[currentRank.icon] || Footprints;
-  const streakTier = getStreakTier(streak.currentStreak);
+  const reducedMotion = useReducedMotion();
+  const points = useAnimatedPoints(pointsBalance, reducedMotion);
+  const progress = nextRank ? Math.max(0, Math.min(100, rankProgress)) : 100;
+  const progressLabel = nextRank ? `${progress}% to ${nextRank.title}` : 'Highest rank reached';
 
   return (
-    <>
-      {/* Desktop: Horizontal pill */}
-      <MotionButton
-        onClick={onOpenProgress}
-        aria-label={`${currentRank.title}; ${rankProgress}% to ${nextRank?.title ?? 'the highest rank'}; ${pointsBalance} Journey Points. Open milestones.`}
-        title="Open progress and milestones"
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-        className="hidden md:flex items-center gap-3 px-4 py-2 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]"
-      >
-        {/* Rank badge */}
-        <div className="flex items-center gap-1.5">
-          <div
-            className="w-7 h-7 rounded-full flex items-center justify-center"
-            style={{ backgroundColor: `${currentRank.colorHex}18` }}
-          >
-            <RankIcon size={14} style={{ color: currentRank.colorHex }} />
-          </div>
-          <span className="text-xs font-bold text-zinc-700 dark:text-zinc-200">{currentRank.title}</span>
-        </div>
-
-        {/* XP progress bar */}
-        {nextRank && (
-          <div className="w-16 h-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden" role="progressbar" aria-label="Rank progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={rankProgress}>
-            <motion.div
-              className="h-full rounded-full"
-              style={{ backgroundColor: currentRank.colorHex }}
-              initial={{ width: 0 }}
-              animate={{ width: `${rankProgress}%` }}
-              transition={{ duration: 0.8, ease: 'easeOut' }}
-            />
-          </div>
-        )}
-
-        {/* Streak */}
-        {streak.currentStreak > 0 && (
-          <div className="flex items-center gap-1">
-            <Flame
-              size={14}
-              className={`${STREAK_TIER_STYLES[streakTier]} ${streakTier === 'large' || streakTier === 'monthly' ? 'animate-pulse' : ''}`}
-            />
-            <span className="text-xs font-bold text-zinc-600 dark:text-zinc-300">{streak.currentStreak}</span>
-          </div>
-        )}
-
-        {/* Animated points balance */}
-        <AnimatedPoints value={pointsBalance} size="sm" />
-      </MotionButton>
-
-      {/* Mobile: Compact badge — shown inline in header area */}
-      <MotionButton
-        onClick={onOpenProgress}
-        aria-label={`${currentRank.title}; ${rankProgress}% rank progress. Open milestones.`}
-        whileTap={{ scale: 0.95 }}
-        className="flex md:hidden items-center gap-2 px-3 py-1.5 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]"
-      >
-        {/* Mini rank badge */}
-        <div
-          className="w-6 h-6 rounded-full flex items-center justify-center"
-          style={{ backgroundColor: `${currentRank.colorHex}18` }}
-        >
-          <RankIcon size={12} style={{ color: currentRank.colorHex }} />
-        </div>
-
-        {/* Mini progress ring */}
-        <svg aria-hidden="true" className="w-5 h-5 -rotate-90" viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="9" stroke={currentRank.colorHex} strokeWidth="2.5" fill="transparent" className="opacity-15" />
-          <circle
-            cx="12" cy="12" r="9"
-            stroke={currentRank.colorHex}
-            strokeWidth="2.5"
-            fill="transparent"
-            strokeDasharray={`${2 * Math.PI * 9}`}
-            strokeDashoffset={`${2 * Math.PI * 9 * (1 - rankProgress / 100)}`}
-            strokeLinecap="round"
-          />
-        </svg>
-
-        {/* Streak count */}
-        {streak.currentStreak > 0 && (
-          <div className="flex items-center gap-0.5">
-            <Flame size={12} className={STREAK_TIER_STYLES[streakTier]} />
-            <span className="text-[10px] font-bold text-zinc-600 dark:text-zinc-300">{streak.currentStreak}</span>
-          </div>
-        )}
-      </MotionButton>
-    </>
+    <MotionButton
+      type="button"
+      onClick={onOpenProgress}
+      aria-label={`${currentRank.title}; ${progressLabel}; ${streak.currentStreak} day streak; ${pointsBalance} Journey Points. Open milestones.`}
+      title="Open progress and milestones"
+      whileHover={reducedMotion ? undefined : { y: -2 }}
+      whileTap={reducedMotion ? undefined : { scale: 0.98 }}
+      className="nsu-training-pulse"
+    >
+      <span className="nsu-rank-orbit" style={{ '--nsu-rank-progress': `${progress}%` } as React.CSSProperties} aria-hidden="true">
+        <Avatar seed={avatar || 'star-crew:beanie'} className="nsu-rank-avatar" />
+      </span>
+      <span className="nsu-rank-copy">
+        <strong>{currentRank.title}</strong>
+        <small>{progressLabel}</small>
+      </span>
+      <span className="nsu-rank-stats" aria-hidden="true">
+        <span><strong>{streak.currentStreak}</strong><small>day streak</small></span>
+        <span><strong>{points.toLocaleString('en-IE')}</strong><small>Journey Points</small></span>
+      </span>
+    </MotionButton>
   );
 };
 

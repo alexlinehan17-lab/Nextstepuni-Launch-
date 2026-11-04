@@ -1305,11 +1305,38 @@ def scheme_text_exports() -> dict[str, str]:
     return exports
 
 
+def recut_excerpts(cards: list[dict]) -> list[dict]:
+    """Every reading and literature card's excerpt re-cut across its pages, as irish_excerpts.py cuts an authored file."""
+    import irish_excerpts
+    for card in cards:
+        if 'Léamhthuiscint' in card['questionRef']:
+            guide = irish_excerpts.recut(card)
+            target = card['criteria'][0]
+        elif irish_excerpts.LITERATURE.search(card['questionRef']):
+            indicative = [criterion for criterion in card['criteria'] if criterion['guidanceKind'] == 'indicative']
+            # An option already split into one criterion per printed part (the restored
+            # Dánta Breise tasks) was lifted whole from the scheme; re-cutting the option
+            # into its first part would weld every part's text into it.
+            if len(indicative) != 1:
+                continue
+            guide = irish_excerpts.literature_recut(card)
+            target = indicative[0]
+        else:
+            continue
+        if guide and target:
+            target['guidance'] = guide
+    return cards
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
-    cards, route_reviews = apply_review(build_corpus())
+    # A reading question that runs onto a second page, and a literature option
+    # cut at 1,550 characters, lose their tariff; irish_excerpts re-cuts both
+    # across the pages from the scheme text this run writes (irish_excerpts.py).
+    # The re-cut runs first: the paper reviews below replace the cards they review.
+    cards, route_reviews = apply_review(recut_excerpts(build_corpus()))
     cards, reading_review = apply_reading_review(cards)
     cards, literature_review = apply_literature_review(cards)
     # Paper-reviewed 2025 components keep their legacy IDs here; additions ship beside this file.

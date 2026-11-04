@@ -97,7 +97,8 @@ export function readChoice(uid: string | undefined): DeckChoice | null {
     if (!raw) return null;
     const parsed = JSON.parse(raw) as DeckChoice;
     if (!parsed?.subjectId) return null;
-    return parsed.level === 'ordinary' || parsed.level === 'higher' || parsed.level === 'foundation' ? parsed : null;
+    return parsed.level === 'ordinary' || parsed.level === 'higher'
+      || parsed.level === 'common' || parsed.level === 'foundation' ? parsed : null;
   } catch {
     return null;
   }

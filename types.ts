@@ -7,6 +7,15 @@ export type CardStyleId = 'default' | 'glass' | 'neon' | 'flat' | 'gradient';
 
 export type ModuleProgress = {
   unlockedSection: number;
+  /** Reading checkpoints, separate from evidence of using a study strategy.
+   * Legacy unlockedSection remains the compatible Passport/points counter. */
+  reading?: {
+    sectionsByMode: Record<string, string[]>;
+    lastSectionId: string;
+    lastSectionIndex: number;
+    lastMode: 'full' | 'essentials';
+    lastVisitedAt: string;
+  };
 };
 
 /** The five-point confidence scale captured after a study session. */
@@ -99,10 +108,28 @@ export interface UserSettings {
   defaultWorkMinutes: number;
   showDashboard?: boolean;
   essentialsMode?: boolean;
-  /** Reading comfort: multiplier on module reading text (0.9–1.2, default 1). */
+  /** Reading comfort: multiplier on module reading text (0.9–2, default 1). */
   readingScale?: number;
   /** Reading comfort: 'relaxed' opens up line spacing in module reading text. */
   readingSpacing?: 'normal' | 'relaxed';
+  /**
+   * Which local notifications the student has chosen (services/notifications).
+   * Absent means they have not been asked yet; the device permission is
+   * separate and lives with the operating system or browser.
+   */
+  notifications?: NotificationPreferences;
+  /**
+   * A short recall quiz after each saved study session, built from Mark Bank
+   * questions on what was just studied (student feedback, 16 and 23 Oct 2026).
+   * Absent means on: the student turns it off, not on.
+   */
+  studyQuiz?: boolean;
+}
+
+/** One switch per kind of notification. Absent: not asked yet. */
+export interface NotificationPreferences {
+  /** One notification when a timed study session's time is up. */
+  studyTimer?: boolean;
 }
 
 export type NorthStarCategory =

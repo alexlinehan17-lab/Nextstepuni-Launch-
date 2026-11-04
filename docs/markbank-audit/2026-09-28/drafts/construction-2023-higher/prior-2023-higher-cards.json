@@ -1,0 +1,1496 @@
+[
+  {
+    "id": "cons-2023-hl-q1-a",
+    "topicId": "cons-3-8",
+    "conceptId": "vertical-section-roof-eaves-to-ridge",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q1(a)",
+    "questionText": "To a scale of 1:10, draw a vertical section through one half of the roof structure from eaves up to the ridge. Show one external wall and one rafter length. Include the typical construction details from 600 mm below the ceiling joist up to the ridge and include three courses of tiles at eaves.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "5 x 4 + 3 x 4 + 4 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 48,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q1-a-r1",
+        "kind": "anyN",
+        "verbatim": "External timber frame wall - typical detailing",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "External timber frame wall - typical detailing",
+        "group": {
+          "claimMax": 5,
+          "perOption": 4,
+          "options": [
+            "External render",
+            "Concrete block + tie",
+            "Firestopping / cavity closer",
+            "Air space / residual cavity",
+            "Breather membrane",
+            "Racking board",
+            "250 × 50 mm Stud",
+            "Insulation",
+            "Air barrier membrane",
+            "Insulated service cavity",
+            "Plasterboard / skim"
+          ]
+        }
+      },
+      {
+        "id": "cons-2023-hl-q1-a-r2",
+        "kind": "anyN",
+        "verbatim": "Roof structure- typical detailing",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Roof structure- typical detailing",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "Prefabricated roof truss 200 × 50 mm @ 400 - 600 mm centres",
+            "Gang nail plates",
+            "Attic insulation",
+            "Insulated plasterboard (50 mm insulation + 12.5 mm plasterboard)",
+            "Air-barrier / airtightness membrane / joint taping"
+          ]
+        }
+      },
+      {
+        "id": "cons-2023-hl-q1-a-r3",
+        "kind": "anyN",
+        "verbatim": "Eaves detail- typical detailing",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Eaves detail- typical detailing",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "Fascia / soffit / gutter (Any two)",
+            "Tilting fillet",
+            "Ventilation",
+            "Wind tightness barrier",
+            "Roof breather membrane",
+            "Tiling battens 40 × 40 mm @ 400 mm centre",
+            "Counter battens",
+            "Three courses of concrete tiles Any other relevant points"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q2-a-communication",
+    "topicId": "cons-1-8",
+    "conceptId": "maintaining-a-safe-working-environment-communication",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q2(a) — Communication",
+    "questionText": "Discuss in detail the importance of each of the following in maintaining a safe working environment on a construction site: • communication.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 8,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q2-a-communication-r1",
+        "kind": "anyN",
+        "verbatim": "Communication",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Communication",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Important that open and clear communication takes place between co-workers for teams to coordinate together so work is undertaken in a safe work place",
+            "Important that regular site meetings and communication takes place so all onsite workers and neighbouring building residents know of hazardous operations being undertaken at times during the construction",
+            "Clear visible and easy to understand signage should be exhibited at entrance to site and throughout construction site",
+            "Clear concise communication should be given to inexperienced workers",
+            "Establish a formal communication chain within a construction site. All site workers should have a point of contact to receive and give the accurate information to the correct people at the right time",
+            "Have one central location where all project communication can be found – e.g. a site office or mobile app",
+            "Always have a designated safety officer on site to ensure that both verbal and virtual communications are coordinated",
+            "All communications should be clear, concise, and to the point using understandable terms to avoid misinterpretation which may lead to accidents Any other relevant points:"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q2-a-supervision",
+    "topicId": "cons-1-8",
+    "conceptId": "maintaining-a-safe-working-environment-supervision",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q2(a) — Supervision",
+    "questionText": "Discuss in detail the importance of each of the following in maintaining a safe working environment on a construction site: • supervision.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 8,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q2-a-supervision-r1",
+        "kind": "anyN",
+        "verbatim": "Supervision",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Supervision",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Supervision of inexperienced workers by experienced workers should be established to ensure safe and best practice is undertaken",
+            "Designated site safety supervisor should be adequately trained to carry out supervisory responsibilities on site",
+            "Supervision of hazardous operations should be in place to reduce risk of injury to other workers and to the public",
+            "Supervisors on a constructions site ensure that health and safety is effectively managed. Their role involves planning and allocating work, making decisions, monitoring performance and compliance, providing leadership, and building teamwork. Their roles and responsibilities have the potential to adversely impact safety performance",
+            "People in a supervisory role should be provided with regular appropriate training courses to ensure they have knowledge of local hazards and control measures; and the experience and credibility to gain respect from others to enforce the rules effectively",
+            "Supervisors also need to have other skills such as leadership, communication and ability to direct teams",
+            "Young inexperienced workers may need very close and constant supervision",
+            "High-risk activities will need to be closely monitored by supervisors Any other relevant points:"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q2-a-training",
+    "topicId": "cons-1-8",
+    "conceptId": "maintaining-a-safe-working-environment-training",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q2(a) — Training",
+    "questionText": "Discuss in detail the importance of each of the following in maintaining a safe working environment on a construction site: • training.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 8,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q2-a-training-r1",
+        "kind": "anyN",
+        "verbatim": "Training",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Training",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "All workers on a construction site are legally obliged to possess a current valid Safe Pass Certificate",
+            "Safety officer ensures all workers are properly trained to carry out tasks and identify hazards to reduce injuries to construction workers",
+            "Ongoing focussed training required to guard against complacency of experienced workers",
+            "Inexperienced and new workers to site should be mentored by experienced workers",
+            "Younger and inexperienced workers require additional training and support to highlight hazardous operations and processes",
+            "Training highlights possible risks on site and develops an awareness among workers",
+            "Young workers in particular are at high risk on a construction site and may need additional training",
+            "Training should be provided to all workers before operating machinery or undertaking new procedures or practices"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q2-b-site-access",
+    "topicId": "cons-1-8",
+    "conceptId": "best-practice-guidelines-on-site-site-access",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q2(b) — Site access",
+    "questionText": "Using notes and freehand sketches, outline two specific best practice guidelines that should be observed for each of the following on a construction site: • site access.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 8",
+      "answer": 2,
+      "ofParts": 14,
+      "perPart": 8
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q2-b-site-access-r1",
+        "kind": "anyN",
+        "verbatim": "Site access",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Site access",
+        "group": {
+          "claimMax": 2,
+          "perOption": 8,
+          "options": [
+            "Site access should be controlled with security fencing and/or hoarding to prevent unauthorised personnel and vehicles from accessing the site",
+            "All signs must be clearly visible and comply with standards, both at the entrance point and on its approach to warn people of its existence",
+            "Random testing of construction workers should be undertaken to ensure personnel have the ability to carry out onsite operations",
+            "Safe pass and CSCS accreditations should be inspected of any new construction personnel",
+            "All new personnel to the site should undergo a site induction by the safety officer",
+            "Location and contact details of Site Health and Safety officers, contact details and location of local hospital should be highlighted",
+            "The entrance and perimeter of a site must be identified by suitable signs",
+            "There should be appropriate sight lines visible for all vehicles exiting the site",
+            "If possible, the site should be fenced to control access, both for safety purposes, and to prevent damage, theft or vandalism",
+            "Hoarding is a temporary construction, of at least 2.4m that is more difficult to climb than fencing and prevents viewing of the site interior",
+            "Designated turnstiles, security gates, facial recognition technology and site security staff used to ensure that only authorised personnel can enter and exit",
+            "Electronic access control systems (ACS) such as",
+            "ACS provides up-to-date and accurate accounting for on-site personnel and can assist with controlling health and safety",
+            "A sign-in and reception area - located at the site entrance to document any visitors to the site"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 15 acceptable points under \"Site access\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2023-hl-q2-b-using-a-ladder",
+    "topicId": "cons-1-8",
+    "conceptId": "best-practice-guidelines-on-site-using-a-ladder",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q2(b) — Using a ladder",
+    "questionText": "Using notes and freehand sketches, outline two specific best practice guidelines that should be observed for each of the following on a construction site: • using a ladder.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 8",
+      "answer": 2,
+      "ofParts": 10,
+      "perPart": 8
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q2-b-using-a-ladder-r1",
+        "kind": "anyN",
+        "verbatim": "Using a ladder",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Using a ladder",
+        "group": {
+          "claimMax": 2,
+          "perOption": 8,
+          "options": [
+            "A ladder should only be used after a risk assessment has been undertaken and the associated risks are deemed low and the duration of use, short",
+            "A pre-use check should be carried out on the ladder prior to use and at the beginning of each day",
+            "The 1-in-4 rule should be used to ensure the ladder is at the safest angle. This is where the ladder should be one unit of measurement out for every four units up (a 74o angle)",
+            "The ladder should be secured at the bottom and top if it is going to be a permanent structure on site to go between scaffolding levels",
+            "A ladder should only be used on firm level ground. The ladder should be secured to prevent it from slipping either outwards or sideways",
+            "The location of overhead power lines should be noted. No work within 6 m horizontally of any overhead power line unless it has been made dead",
+            "If the task requires being on the ladder for 30 minutes or more, alternative equipment should be used",
+            "The ladder should extend at least 1 metre or three rungs above where the operator is working",
+            "Always maintain three points of contact when climbing or descending",
+            "When carrying something it is essential that the free hand should always be placed on the underside of the ladder uprights. This technique has the advantage of allowing the individual to slide their free hand along the upright which maintains contact with the ladder while climbing or descending"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 15 acceptable points under \"Site access\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2023-hl-q2-c",
+    "topicId": "cons-1-8",
+    "conceptId": "why-a-site-needs-a-safety-statement",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q2(c)",
+    "questionText": "Discuss two reasons why all construction sites must have a safety statement.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 9,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q2-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons why all construction sites must have a safety statement.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "It is a legal requirement - under the Safety, Health and",
+            "A Safety Statement safeguards the health and safety of all workers and visitors on a construction site",
+            "A Safety Statement identifies hazards and risks on a construction site. The Statement puts a plan in place to control the hazards and reduce the risk of injuries if an accident was to occur",
+            "All risk assessment results are recorded in the site safety statement",
+            "Health and Safety Authority inspectors visiting construction sites will want to inspect and assess the safety statement",
+            "Assess the level of risk associated with each hazard",
+            "A safety statement helps reduce injury to workers, hence reducing loss of productivity, compensation pay-outs and increased insurance costs",
+            "Employers are ethically bound to do all they can to ensure that employees do not suffer illness, a serious accident or death",
+            "Moral obligation to help prevent injury or ill health at work"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q3-a",
+    "topicId": "cons-1-1",
+    "conceptId": "design-considerations-for-a-first-floor-living-area",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q3(a)",
+    "questionText": "Discuss in detail, three design considerations for the proposed new kitchen/dining and living area on the first floor.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 7,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, three design considerations for the proposed new kitchen/dining and living area on the first floor.",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "The Work Triangle",
+            "Circulation Space",
+            "Access & Egress",
+            "Services",
+            "Visual",
+            "Auditory/Tactile",
+            "Olfactory"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q3-b",
+    "topicId": "cons-1-1",
+    "conceptId": "revised-internal-layout",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q3(b)",
+    "questionText": "Using notes and freehand sketches, show a revised internal layout for the kitchen/dining and living area that incorporates each of the design considerations you outlined at 3(a) above. Justify your choices.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 2",
+      "answer": 3,
+      "ofParts": 7,
+      "perPart": 2
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show a revised internal layout for the kitchen/dining and living area that incorporat",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 2,
+          "options": [
+            "The Work Triangle",
+            "Circulation Space",
+            "Access & Egress",
+            "Services",
+            "Visual",
+            "Olfactory",
+            "Auditory/Tactile"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q3-c-advantages",
+    "topicId": "cons-1-1",
+    "conceptId": "living-space-on-the-first-floor-advantages",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q3(c) — Advantages",
+    "questionText": "Discuss two advantages of locating a kitchen/dining and living area on the first floor of a dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q3-c-advantages-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Advantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Better unobstructed views to the outside surrounding environment",
+            "Greater use of natural light in the rooms that are used primarily during the daytime hours",
+            "Rooms that don’t need light during the daytime hours: bathrooms, bedrooms, store rooms can be located on the ground floor",
+            "Useful solution on difficult sites that are steep or have restricted ground floor space",
+            "Living areas on the first floor of a house will have greater privacy from neighbouring two-story dwellings. Traditionally, living rooms on the ground floor use hedges, fences and curtains which in turn block out the view and light"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q3-c-disadvantages",
+    "topicId": "cons-1-1",
+    "conceptId": "living-space-on-the-first-floor-disadvantages",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q3(c) — Disadvantages",
+    "questionText": "Discuss two disadvantages of locating a kitchen/dining and living area on the first floor of a dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q3-c-disadvantages-r1",
+        "kind": "anyN",
+        "verbatim": "Disadvantages",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Disadvantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Kitchen leaks can have a more damaging effect to rooms beneath compare to if the kitchen was located on the ground floor",
+            "The house is not futureproofed for increased mobility needs in later life. Persons with reduced mobility will find it difficult to use stairs regularly throughout the day for the use of the kitchen",
+            "Installing new appliances or furniture is more difficult when the main living rooms are up a flight of stairs",
+            "A kitchen and social rooms located on the first floor will have no access to the garden and outdoors unless expensive balconies are installed at the design stage",
+            "Extra costs are associated with having living and kitchen on the first floor. Extra supports for the kitchen appliances will be required as well as improved sound insulation to reduce noise transmitted to the bedrooms beneath"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q4-a",
+    "topicId": "cons-1-1",
+    "conceptId": "features-of-vernacular-irish-architecture",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q4(a)",
+    "questionText": "Discuss in detail, using notes and freehand sketches, three features of vernacular Irish architecture evident in the cottage shown.",
+    "stem": "",
+    "figureKey": "construction-studies-2023-hl-paper-p003-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 5",
+      "answer": 6,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q4-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, using notes and freehand sketches, three features of vernacular Irish architecture evident in the cot",
+        "marks": 30,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 6,
+          "perOption": 5,
+          "options": [
+            "Single storey structure with a steep pitched simple form roof",
+            "The position of the chimney relative to the front door identified the two types of vernacular dwelling found throughout the Irish landscape. (Direct Entry Type cottage and Lobby Entry Type cottage)",
+            "The proximity of the two chimneys to the front door shown in the graphic suggests this is a Direct Entry Type dwelling",
+            "Rectangular, narrow and one room deep. Narrow design was due to the scarcity of timber for roofing",
+            "Main entrance and window openings placed on the long elevation of the dwelling. These were relatively small in scale which helped to minimise weakening the walls",
+            "A centrally placed chimney to provide heat, meal preparations and an evening communal gathering point for the occupants",
+            "A half-door construction or half door placed outside the full door rather than the door cut in half. For protection from the weather",
+            "Vernacular cottages were built of local stone. In most circumstances these external stone walls would be rendered in a lime render, inside and out",
+            "Uncoursed, random rubble stonework was generally rendered",
+            "Coursed, random rubble stonework was generally left exposed and very much higher quality stonework",
+            "Lime render is breathable and facilitated rain-soaked walls to release the trapped moisture to the outside",
+            "The external walls were whitewashed with lime wash every few years hence the Irish landscape was dotted with such whitewashed buildings Uncoursed random rubble",
+            "Lime wash is caustic, and will burn skin if in contact. It was used stonework because it was cheap, readily available and had the ability to act as a disinfectant",
+            "Windows were timber & typically sash type frames with wide interior cills due to the thickness of the walls"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 21 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2023-hl-q4-b",
+    "topicId": "cons-1-2",
+    "conceptId": "refurbishing-an-old-cottage",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q4(b)",
+    "questionText": "Discuss the importance of any two of the following when carrying out a refurbishment of an old cottage built in the vernacular tradition: B B A A • choice of materials • craft skills • respect for local character.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 7",
+      "answer": 2,
+      "ofParts": 3,
+      "perPart": 7
+    },
+    "totalMarks": 14,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q4-b-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss the importance of any two of the following when carrying out a refurbishment of an old cottage built in the vern",
+        "marks": 14,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 7,
+          "options": [
+            "Choice of materials",
+            "Crafts skills",
+            "Respect for local character"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q4-c",
+    "topicId": "cons-1-2",
+    "conceptId": "why-refurbish-traditional-cottages",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q4(c)",
+    "questionText": "Discuss two reasons to refurbish and maintain traditional Irish cottages.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 8",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 8
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q4-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons to refurbish and maintain traditional Irish cottages.",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 8,
+          "options": [
+            "The reuse of existing buildings can help reduce the demand for new housing in the area. The existing building can be refurbished and provided to new occupants in the community quicker than a full new build dwelling",
+            "An existing building will in most situations obtain planning permission sooner than a ‘New Build’",
+            "The traditional Irish cottage is a visual language of the original building location. It was not designed by an architect but instead the design and form happened casually because of the needs to have a dwelling in a certain place. This gives us an insight into the community and traditions of the locality from the past",
+            "By reusing and upcycling the existing cottage, it reduces embodied carbon as the foundations, floors, walls, and roofing material is already there. The greenest building is the one that is already built",
+            "The wider community benefits from refurbished vernacular dwellings that might otherwise be neglected and become dilapidated. An increase in population and visual appeal to the area will help to rejuvenate the community",
+            "Maintaining our traditional buildings can contribute to increased tourism and consequently greater spending in the locality, increasing local employment and reducing the need for migration or emigration"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q6-a",
+    "topicId": "cons-6-3",
+    "conceptId": "design-features-for-low-environmental-impact",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q6(a)",
+    "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
+    "stem": "",
+    "figureKey": "construction-studies-2023-hl-paper-p005-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 5",
+      "answer": 6,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q6-a-r1",
+        "kind": "anyN",
+        "verbatim": "Three feature of the design that contribute to the house having a low environment impact",
+        "marks": 30,
+        "openList": true,
+        "contextNote": "Three feature of the design that contribute to the house having a low environment impact",
+        "group": {
+          "claimMax": 6,
+          "perOption": 5,
+          "options": [
+            "Any reference, a note or sketch, that correctly identifies the orientation of the given building",
+            "Timber frame construction from local sources which reduces transport movements; has lower carbon emissions and a reduction in localised air pollution",
+            "Less embodied energy required to produce timber frame construction compared to a double leaf, concrete block, cavity wall construction design detail",
+            "Locally sourced timber cladding Irish Larch, Cedar, Douglas Fir - from FSC certified forests are lower in embodied energy than imported timber & suitable for a low environmental building",
+            "Locally sourced timber contributes to carbon sequestration (creates a carbon store/sink) in direct contrast to concrete production",
+            "The house has large south facing glazed openings which fill all main living spaces with natural light – Narrow, one room wide spaces",
+            "Reduced use of electric light bulbs – power generated currently predominantly using fossil fuels",
+            "The heat from the sun entering through the large openings reduces the need for using non- renewable methods of heating theses spaces",
+            "Small, high-performance windows/glazing on the north side reduces heat loss and saves energy",
+            "Simple building form that takes advantage of the orientation of the sun",
+            "High levels of insulation in the floor, walls and roof construction",
+            "One room deep design enables light and heat from solar gain to enter the single space building via the south, east, and west",
+            "High-performance glazing throughout the dwelling - having a U-value of at least 0.8 w/m2 k - will significantly reduce heating costs",
+            "L-Shape design takes advantage of the buildings orientation and allows light to enter a greater number of rooms throughout the day. It also provides natural shelter from the wind"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 18 acceptable points under \"Three feature of the design that contribute to the house having a low environment impact\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2023-hl-q6-b",
+    "topicId": "cons-6-3",
+    "conceptId": "reducing-operational-energy-demand",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q6(b)",
+    "questionText": "Reducing operational energy demand is an important consideration in designing for low environmental impact. Using notes and freehand sketches, discuss in detail each of the following technologies and how each would further reduce the energy demand of the house: • photovoltaic panels • air-to-water heat pump • evacuated tubes.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 3",
+      "answer": 6,
+      "ofParts": 14,
+      "perPart": 3
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "Reducing operational energy demand is an important consideration in designing for low environmental impact. Using notes ",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "The scheme groups its answer under: Photovoltaic panels; May 1st 2023 3; Air-to-water heat pump; Evacuated Tubes",
+        "group": {
+          "claimMax": 6,
+          "perOption": 3,
+          "options": [
+            "Solar energy can be turned into electricity using photovoltaic (PV) panels, which converts solar energy/light into electrical energy using silicon cells",
+            "Photovoltaic panels are becoming more economic for domestic electricity generation with the introduction of a zero rate of VAT for the supply and installation of 1 panels for private dwellings since",
+            "PV cells produce direct current (DC). An inverter converts the DC 4 voltage from the panel into alternating current (AC) which is used in homes",
+            "Photovoltaic panels reduce the use of mains electricity, currently largely generated using fossil fuels, by replacing some of the mains 1. Photovoltaic panel power electricity from renewable sources 2. Inverter",
+            "3. Generation meter Average annual consumption of electricity per household is 4.7 kW. 4. Fuse box An area of 21.0 m2 of photovoltaic panels produces on average 3.12 5. Smart meter kW of electricity per annum",
+            "Microgeneration schemes allows homeowners sell any excess electricity back to Ireland’s National grid",
+            "The Air to Water (ATW) system has an outdoor unit. Using a fan, the unit takes heat from the air outside and transfers the heat to a coolant liquid which circulated in a closed pipe system",
+            "A compressor further increases the temperature of the coolant liquid which transfers the heat to a hot water tank via a heat exchanger",
+            "The cooled coolant then returns to the outdoor unit to begin the cycle again",
+            "Meanwhile, the newly heated water in the tank is circulated in a separate system to radiators or underfloor heating pipes, heating the house or fused for domestic hot water",
+            "Currently Air to Water heat pumps have a “Co-efficiency of Performance” (C.O.P.) of between 3 - 4",
+            "Solar evacuated tubes are a type of solar thermal technology that converts sunlight into energy for primarily water heating",
+            "The evacuated tubes consist of a glass outer tube and an inner tube with a heat pipe containing a small amount of liquid",
+            "The air between the two tubes is evacuated to create a vacuum, which minimizes heat loss due to convection and conduction"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 20 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2023-hl-q6-c",
+    "topicId": "cons-6-3",
+    "conceptId": "advantages-of-reducing-energy-demand",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q6(c)",
+    "questionText": "Discuss in detail two advantages of reducing energy demand in the home.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Advantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Environmental- Increased efficiency can lower greenhouse gas (GHG) emissions",
+            "Reduces the pollution that is emitted from non-renewable sources of energy",
+            "Help stabilise electricity prices and volatility",
+            "Economic benefits to home owners by reducing utility bills",
+            "Money saved can be put to better use in the household",
+            "The long-term benefits of reducing energy demand can also reduce the need to invest in new electricity generation and transmission infrastructure"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q7-a",
+    "topicId": "cons-3-2",
+    "conceptId": "vertical-section-door-external-wall-ground-floor",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q7(a)",
+    "questionText": "To a scale of 1:10, draw a vertical section through the centre of the door, external wall and ground floor. Show the typical construction details from a level 400 mm below the finished floor, through the door, up to a level 400 mm above the concrete lintels.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4 x 4 + 4 x 4 + 4 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 48,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "Head of the door",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Head of the door",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "External & internal render",
+            "Cavity wall",
+            "Wall tie",
+            "Full-fill insulated cavity",
+            "Cavity closer",
+            "Stepped Damp proof tray/course",
+            "Reinforced concrete lintels"
+          ]
+        }
+      },
+      {
+        "id": "cons-2023-hl-q7-a-r2",
+        "kind": "anyN",
+        "verbatim": "External door",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "External door",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "Airtightness tape at Door frame head",
+            "Thermally broken doorframe",
+            "External door with sheeting",
+            "Door insulation",
+            "Proprietary insulated door threshold",
+            "15 mm upstand or 15° slope",
+            "Airtightness tape at door threshold"
+          ]
+        }
+      },
+      {
+        "id": "cons-2023-hl-q7-a-r3",
+        "kind": "anyN",
+        "verbatim": "Floor Level",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Floor Level",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "Skirting board",
+            "Concrete floor tiles",
+            "Concrete floor",
+            "Floor insulation",
+            "Radon barrier",
+            "Vertical insulation – thermal break",
+            "Drainage channel",
+            "Entrance- Level surface"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q7-b",
+    "topicId": "cons-3-4",
+    "conceptId": "preventing-moisture-at-the-threshold",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q7(b)",
+    "questionText": "On your drawing, show the typical design detailing that will prevent the ingress of moisture at the threshold.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 4",
+      "answer": 1,
+      "ofParts": 3,
+      "perPart": 4
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "On your drawing, show the typical design detailing that will prevent the ingress of moisture at the threshold.",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Threshold drainage channel",
+            "Sloped threshold cill",
+            "Threshold upstand"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q8-a",
+    "topicId": "cons-5-5",
+    "conceptId": "functional-requirements-of-wastewater-treatment",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q8(a)",
+    "questionText": "Discuss in detail, three functional requirements of a typical wastewater treatment system for a dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 8",
+      "answer": 3,
+      "ofParts": 11,
+      "perPart": 8
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q8-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, three functional requirements of a typical wastewater treatment system for a dwelling house.",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 8,
+          "options": [
+            "Efficiently and safely remove waste from the dwelling",
+            "Treat the waste before it is discharged from the system and into the environment",
+            "The pipework must be accessible so that maintenance can be carried out",
+            "Pipes and fittings must be sound to prevent leaking, both inwards and outwards",
+            "Ensure pipework gradient of 1:60 to prevent the build-up of solids which would block the pipe",
+            "Pipework should be corrosion and abrasive resistant so that it does not get damaged by chemicals inside or gravel /stones on the outside",
+            "The system must function effectively within the site boundaries and not impact on neighbours or the water course",
+            "To not contaminate natural habitats",
+            "The chosen system should be of the correct capacity to effectively treat all wastewater relative to the number of occupants in the dwelling",
+            "Ensure foul odours are adequately carried off",
+            "Changes in direction of the sewer line require access so access chambers must be installed"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q8-c",
+    "topicId": "cons-5-5",
+    "conceptId": "why-wastewater-must-be-treated",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q8(c)",
+    "questionText": "Discuss two reasons why it is important to properly treat and dispose of wastewater from a dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q8-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons why it is important to properly treat and dispose of wastewater from a dwelling house.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "To prevent the contamination of nearby household wells or water tables with harmful bacteria and viruses",
+            "To protect humans and animals from coming in contact with waste water containing harmful organisms",
+            "To minimise the generation of foul odours and emissions and affecting the public",
+            "To protect lakes, rivers, and coastal waters",
+            "Poorly treated wastewater contains excessive amounts of phosphorus and nitrogen which have a damaging effect on the biodiversity of nearby water resources",
+            "The main aim of proper wastewater treatment is to remove as much of the suspended solids as possible before the remaining water, called effluent, is discharged back to the environment Decaying solid materials use up oxygen in water which is harmful to plants and animals"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q9-a",
+    "topicId": "cons-3-6",
+    "conceptId": "functional-requirements-of-a-glazing-system",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q9(a)",
+    "questionText": "Discuss in detail, using notes and freehand sketches, two functional requirements of a modern glazing system for a dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 4",
+      "answer": 4,
+      "ofParts": 12,
+      "perPart": 4
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q9-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, using notes and freehand sketches, two functional requirements of a modern glazing system for a dwell",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "Admit an abundance of daylight. Well designed and positioned windows at the design stage of a building will ensure adequate daylight to the building depending on room location/orientation and the rooms’ function",
+            "Buildings / windows - that are designed with the surrounding environment in mind will also allow occupants to have a view of the surrounding environment and nature",
+            "Allow sufficient solar gain into the rooms and subsequently - prevent it from leaving",
+            "Reduced energy costs. Carefully positioned and oriented glazing reduces significant need for artificial lighting and fossil fuel heating leading to more sustainable living",
+            "Glazing placed on the east façade will allow morning light and heat enter the building",
+            "South façade glazing will allow midday thermal and light gains",
+            "West façade glazing will allow evening gains",
+            "Glazing on roofs and other slanted surfaces can give consistent daylight and can be up to three times more effective than vertical window",
+            "Ability to prevent overheating. New advances in glazing technology, dynamic glass/smart glass, enables the glazing to change opacity to reduce glare and heat load into the building",
+            "EC smart glass changes transmittance by applying an electrical current by the switch of a button",
+            "Emergency escape. Windows on upper floors may provide an alternative means of evacuating or rescue. Windows should have an openable section which provides an unobstructed clear open area of at least 0.33 m2. The height and width should be not less than 450 mm. The bottom of the opening should not be more than 1100 mm above floor level",
+            "Sound reduction into the building. Glazing units and frames should give the occupants protection from outside noise. For glazing units to perform, they must be fitted and bonded to the building fabric using an airtight system"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q9-c-advantages",
+    "topicId": "cons-3-6",
+    "conceptId": "advantages-and-disadvantages-of-triple-glazing-advantages",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q9(c) — Advantages",
+    "questionText": "Discuss two advantages of installing triple glazing in a modern window framing system.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q9-c-advantages-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Advantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Reduced energy costs",
+            "Reduced heat loss through the building fabric",
+            "Improved acoustic insulation",
+            "Reduced condensation. Condensation forms on window panes when excess moisture in the air collides with cold surfaces. Windows are prone to condensation when it is colder outside than inside. To get rid of condensation, ventilation is needed with a subsequent loss in heat",
+            "Double glazing reduces thermal transmittance. The inner pane of glass is not as cold as the outside and moisture doesn’t form. Triple glazing can reduce the cold on the inner pane of glass even more with its super thermal efficiency, resulting in less condensation on the inside of windows"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q9-c-disadvantages",
+    "topicId": "cons-3-6",
+    "conceptId": "advantages-and-disadvantages-of-triple-glazing-disadvantages",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q9(c) — Disadvantages",
+    "questionText": "Discuss two disadvantages of installing triple glazing in a modern window framing system.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q9-c-disadvantages-r1",
+        "kind": "anyN",
+        "verbatim": "Disadvantages",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Disadvantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Higher glazing costs. Double glazing is less expensive than triple glazing units. Triple glazing could add up to 30 % to the glazing cost of a building",
+            "Overheating issues. If the building design plan includes extensive triple glazing, especially on the southern elevation, overheating can occur during summer months. To counteract overheating, an external solar shading system or an increase in thermal mass internally may have to be installed",
+            "Weight issues. Triple glazing units are heavier and difficult to install. Triple glazing may require structural support around the window frame to with-stand the weight. With triple glazing, the added weight means hinges and opening mechanisms need to be more complex, which contributes to their higher cost. Bi-fold doors usually come double glazed due to the glazing weight",
+            "Retrofit difficulties. Triple glazing is not suitable for retro fitting into existing door and window frames in most cases. The thickness and weight of the triple glazed units are incompatible with many existing frames so an entire new frame and unit would have to be installed"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q10-a",
+    "topicId": "cons-6-3",
+    "conceptId": "passive-house-design",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q10(a)",
+    "questionText": "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: • foundation design • solar shading • thermally efficient building envelope.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 5 + 1 x 5 + 1 x 5 + 1 x 5",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q10-a-r1",
+        "kind": "anyN",
+        "verbatim": "Foundation design",
+        "marks": 5,
+        "openList": true,
+        "contextNote": "Foundation design",
+        "group": {
+          "claimMax": 1,
+          "perOption": 5,
+          "options": [
+            "Foundation should be highly insulated to achieve a U- value of between 0.1 - 0.15 W/m²K",
+            "No thermal bridges at the wall-floor junction to prevent heat loss and moisture ingress",
+            "Use aerated concrete blocks at critical junctions",
+            "Use insulation that has high compressive strength",
+            "For insulated Passive raft-type foundations, the concrete slab is entirely surrounded by a ‘bowl’ of insulation. The concrete is never in direct contact with the ground",
+            "The type of foundation system used"
+          ]
+        }
+      },
+      {
+        "id": "cons-2023-hl-q10-a-r2",
+        "kind": "anyN",
+        "verbatim": "Solar shading",
+        "marks": 5,
+        "openList": true,
+        "contextNote": "Solar shading",
+        "group": {
+          "claimMax": 1,
+          "perOption": 5,
+          "options": [
+            "The lack of solar shading in a Passive house can lead to overheating within the building",
+            "The method should allow sun to enter during winter months when the sun is lower in the sky but block the stronger summer sun, which is at a steeper angle, from entering during the summer months",
+            "Solar shading can be in the form of an overhang or deeper eaves",
+            "Vertical or horizontal brise-soleil are made from individual components set at an angle fixed to the outside of the building",
+            "Mechanical shading such as adjustable brise- soleil, external roller blinds, awnings and sliding screens can be adjusted and used to control solar gain at different times of the day and year",
+            "A brise-soleil can be any material ranging from metal, plastic or timber",
+            "Internal blinds and shades will reduce solar gain but will also impact the level of natural light entering the building",
+            "Natural vegetation can be effective, environmentally friendly and aesthetically pleasing and come in the form of trees or climbing plants"
+          ]
+        }
+      },
+      {
+        "id": "cons-2023-hl-q10-a-r3",
+        "kind": "anyN",
+        "verbatim": "Thermal efficient building envelope (TEBE)",
+        "marks": 5,
+        "openList": true,
+        "contextNote": "Thermal efficient building envelope (TEBE)",
+        "group": {
+          "claimMax": 1,
+          "perOption": 5,
+          "options": [
+            "The envelope of a building is where the passing of energy occurs",
+            "Where a building envelope has been designed to be airtight and thermally efficient, a continuous red Line is shown on the internal side of the external wall on drawings",
+            "All components of the building’s envelope require to be at their optimum thermal performance including foundations, walls, windows and roof",
+            "There should be no break in insulation or airtightness around the entire building",
+            "By reducing the amount of energy that passes through the external envelope, the internal building temperature is more constant and predictable",
+            "The greater the efficiency of the building envelope, the more energy efficient the building",
+            "A TEBE reduces the reliance on the MHRV system to heat or cool the building",
+            "TEBE reduces the energy consumption and costs, but it also gives the homeowner better control over the internal temperature, which increases occupant comfort",
+            "Less energy is needed to heat or cool the building therefore reducing the buildings carbon footprint",
+            "Universal Design caters for changing needs of people over time so that they can continue living in their own homes and communities as they get older or become disabled",
+            "People of diverse abilities should be able to use buildings and places comfortably and safely, as far as possible without special assistance",
+            "Given the diversity of the population, a Universal Design approach, which caters for the broadest range of users from the outset, can result in buildings and places that can be used and enjoyed by everyone and for their entire life",
+            "The proportion of the world’s population aged over 65 is set to more than double by 2050",
+            "Design focussed on principles of extending standard design to a person with some type of performance limitation is to maximize the number of potential people who can readily use a building for the entirety of their life"
+          ]
+        }
+      },
+      {
+        "id": "cons-2023-hl-q10-a-r4",
+        "kind": "anyN",
+        "verbatim": "Older People (NCAOP)",
+        "marks": 5,
+        "openList": true,
+        "contextNote": "Older People (NCAOP)",
+        "group": {
+          "claimMax": 1,
+          "perOption": 5,
+          "options": [
+            "Benefits of Universal Design include flexibility and ease of adaptability to meet people’s changing needs over time in a cost and energy effective way",
+            "Homes built with Universal Design in mind can create an enabling home environment for the widest possible number of people by providing opportunities for easy adaptations"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 22 acceptable points under \"Thermal efficient building envelope (TEBE)\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2023-hl-q10-c",
+    "topicId": "cons-6-3",
+    "conceptId": "where-to-locate-a-low-energy-feature",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q10(c)",
+    "questionText": "Discuss in detail, two design considerations that need to be taken into account when deciding on the location of a MVHR unit in a dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 7",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 7
+    },
+    "totalMarks": 14,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q10-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, two design considerations that need to be taken into account when deciding on the location of a MVHR ",
+        "marks": 14,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 7,
+          "options": [
+            "Accessibility",
+            "Noise",
+            "Aesthetics",
+            "Optimum Functionality"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q1-b",
+    "topicId": "cons-6-5",
+    "conceptId": "ventilation-detailing-at-the-eaves",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q1(b)",
+    "questionText": "On your drawing, indicate the typical design detailing to ensure ventilation of the roof structure.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q1-b-r1",
+        "kind": "point",
+        "verbatim": "Design detailing to ensure ventilation of the roof",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q5-b",
+    "topicId": "cons-6-1",
+    "conceptId": "calculating-heat-loss-through-a-roof",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q5(b)",
+    "questionText": "Using the U-value of the roof obtained at 5(a) above and the following data, calculate the cost of heat lost annually through this roof: • dimensions of flat roof 8.5 metres × 4.5 metres • average internal temperature 18 °C • average external temperature 5 °C • heating period 8 hours daily for 36 weeks per annum • cost of oil €1.25 per litre • calorific value of oil 37350 kJ per litre • 1000 watts 1 kJ per second.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "5 x 3",
+      "answer": 5,
+      "ofParts": 5,
+      "perPart": 3
+    },
+    "totalMarks": 15,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q5-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using the U-value of the roof obtained at 5(a) above and the following data, calculate the cost of heat lost annually th",
+        "marks": 15,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 5,
+          "perOption": 3,
+          "options": [
+            "Heat loss formula and calculation",
+            "Heating duration - calculation for one year",
+            "k/Joules - calculation for one year",
+            "Litres of oil - calculation for one year",
+            "Annual cost – calculation of heat loss PA"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2023-hl-q9-b",
+    "topicId": "cons-8-2",
+    "conceptId": "reverberation-in-a-living-room",
+    "level": "higher",
+    "year": 2023,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2023 HL Q9(b)",
+    "questionText": "The sketch shows a living room which measures 4.5 metres long by 4.2 metres wide. The living room has a vertical window and unobstructed views. An average illumination of 500 lux of daylight is required on the work plane. Calculate using the degree of efficiency method, or any other suitable method, the appropriate area of glazing required to provide the stated illumination. Assuming the illumination of a standard overcast sky to be 5000 lux.",
+    "stem": "",
+    "figureKey": "construction-studies-2023-hl-paper-p005-i1",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 4",
+      "answer": 7,
+      "ofParts": 7,
+      "perPart": 4
+    },
+    "totalMarks": 28,
+    "rows": [
+      {
+        "id": "cons-2023-hl-q9-b-r1",
+        "kind": "anyN",
+        "verbatim": "The sketch shows a living room which measures 4.5 metres long by 4.2 metres wide. The living room has a vertical window ",
+        "marks": 28,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 7,
+          "perOption": 4,
+          "options": [
+            "Formula",
+            "Correct entry into formula",
+            "Floor area",
+            "Using formula Li = Lo × WF × E",
+            "Solve for w (window area) line 1",
+            "Solve for w (window area) line 2",
+            "Window area"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  }
+]

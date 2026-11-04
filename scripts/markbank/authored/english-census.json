@@ -912,11 +912,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text A Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -927,7 +927,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text A Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -938,7 +938,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text A Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -949,7 +949,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text A Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -960,11 +960,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text B Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -975,7 +975,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text B Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -986,7 +986,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text B Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -997,7 +997,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text B Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1008,11 +1008,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text C Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -1023,7 +1023,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text C Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1034,7 +1034,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text C Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1045,7 +1045,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text C Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1056,11 +1056,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text D Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -1071,7 +1071,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text D Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1082,7 +1082,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text D Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1093,7 +1093,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text D Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1104,11 +1104,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text E Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -1119,7 +1119,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text E Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1130,7 +1130,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text E Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1141,7 +1141,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text E Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1152,11 +1152,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text F Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -1167,7 +1167,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text F Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1178,7 +1178,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text F Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1189,7 +1189,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text F Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1200,11 +1200,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text G Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -1215,7 +1215,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text G Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1226,7 +1226,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text G Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1237,7 +1237,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text G Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1248,11 +1248,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text H Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -1263,7 +1263,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text H Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1274,7 +1274,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text H Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1285,7 +1285,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text H Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1296,11 +1296,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text I Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -1311,7 +1311,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text I Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1322,7 +1322,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text I Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -1333,7 +1333,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2021 OL Paper 2 Single Text I Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2454,11 +2454,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text A Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -2469,7 +2469,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text A Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2480,7 +2480,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text A Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2491,7 +2491,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text A Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2502,11 +2502,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text B Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -2517,7 +2517,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text B Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2528,7 +2528,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text B Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2539,7 +2539,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text B Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2550,11 +2550,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text C Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -2565,7 +2565,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text C Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2576,7 +2576,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text C Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2587,7 +2587,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text C Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2598,11 +2598,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text D Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -2613,7 +2613,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text D Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2624,7 +2624,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text D Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2635,7 +2635,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text D Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2646,11 +2646,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text E Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -2661,7 +2661,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text E Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2672,7 +2672,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text E Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2683,7 +2683,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text E Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2694,11 +2694,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text F Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -2709,7 +2709,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text F Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2720,7 +2720,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text F Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2731,7 +2731,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text F Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2742,11 +2742,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text G Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -2757,7 +2757,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text G Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2768,7 +2768,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text G Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2779,7 +2779,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text G Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2790,11 +2790,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text H Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -2805,7 +2805,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text H Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2816,7 +2816,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text H Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2827,7 +2827,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text H Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2838,11 +2838,11 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text I Q1",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [
         "(a) 10 marks",
         "(b) 10 marks",
-        "(c) 10 marks"
+        "(c) 15 marks"
       ],
       "status": "authored"
     },
@@ -2853,7 +2853,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text I Q2",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2864,7 +2864,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text I Q3",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },
@@ -2875,7 +2875,7 @@
       "paper": 2,
       "section": "Single Text",
       "questionRef": "2022 OL Paper 2 Single Text I Q4",
-      "marks": 30,
+      "marks": 35,
       "printedParts": [],
       "status": "authored"
     },

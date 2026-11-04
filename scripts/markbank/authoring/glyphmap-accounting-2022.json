@@ -1,0 +1,3181 @@
+{
+ "fonts": {
+  "HL": [
+   "MGCHCA+Calibri",
+   "MGCHDB+Cambria",
+   "MGCHJB+Calibri,Bold",
+   "MGCHPA+TimesNewRoman",
+   "MGCJBK+Arial,Bold",
+   "MGCJCK+Calibri,Italic",
+   "MGCJHK+Arial",
+   "MGCLHA+TimesNewRoman,Bold",
+   "MGCMGL+Calibri,BoldItalic"
+  ],
+  "OL": [
+   "MILKAP+Calibri",
+   "MILKBB+Cambria",
+   "MILKJA+Calibri,Bold",
+   "MILLGO+Calibri,BoldItalic",
+   "MILMBL+TimesNewRoman,Bold",
+   "MILMLI+Arial,Bold",
+   "MILNEG+Arial",
+   "MILODC+TimesNewRoman"
+  ]
+ },
+ "codepoint_is_glyph_id": {
+  "HL": {
+   "glyphs_matched": 45591,
+   "glyphs_differing": 3,
+   "notes": [
+    "p25 TimesNewRoman: 2 glyph(s) differ (space glyphs MuPDF merged)",
+    "p38 Calibri: 1 glyph(s) differ (space glyphs MuPDF merged)"
+   ]
+  },
+  "OL": {
+   "glyphs_matched": 20142,
+   "glyphs_differing": 1,
+   "notes": [
+    "p5 Calibri,Bold: 1 glyph(s) differ (space glyphs MuPDF merged)"
+   ]
+  }
+ },
+ "how_to_apply": "Code point = glyph id of the embedded subset; the map is per font FAMILY (rawdict span['font'].split(',')[0]: Calibri / Cambria / TimesNewRoman / Arial). 'map' is the Calibri family (Calibri, Calibri,Bold, Calibri,Italic, Calibri,BoldItalic share one glyph order). Read glyphs with rawdict or texttrace: get_text('words') drops every code point below U+0020, which deletes Calibri A B C D E and Times digits. A U+0020 inside these spans is a gap MuPDF synthesised, not a glyph.",
+ "map": {
+  "U+0004": "A",
+  "U+0011": "B",
+  "U+0012": "C",
+  "U+0018": "D",
+  "U+001C": "E",
+  "U+0026": "F",
+  "U+0027": "G",
+  "U+002C": "H",
+  "U+002F": "I",
+  "U+003A": "J",
+  "U+003C": "K",
+  "U+003E": "L",
+  "U+0044": "M",
+  "U+0045": "N",
+  "U+004B": "O",
+  "U+0057": "P",
+  "U+0059": "Q",
+  "U+005A": "R",
+  "U+005E": "S",
+  "U+0064": "T",
+  "U+0068": "U",
+  "U+0073": "V",
+  "U+0074": "W",
+  "U+0102": "a",
+  "U+010F": "b",
+  "U+0110": "c",
+  "U+011A": "d",
+  "U+011E": "e",
+  "U+0128": "f",
+  "U+0150": "g",
+  "U+015A": "h",
+  "U+015D": "i",
+  "U+0169": "j",
+  "U+016C": "k",
+  "U+016F": "l",
+  "U+0175": "m",
+  "U+0176": "n",
+  "U+017D": "o",
+  "U+0189": "p",
+  "U+018B": "q",
+  "U+018C": "r",
+  "U+0190": "s",
+  "U+019A": "t",
+  "U+01B5": "u",
+  "U+01C0": "v",
+  "U+01C1": "w",
+  "U+01C6": "x",
+  "U+01C7": "y",
+  "U+0355": ",",
+  "U+0357": ":",
+  "U+0358": ".",
+  "U+035B": "’",
+  "U+036C": "/",
+  "U+0372": "-",
+  "U+0374": "–",
+  "U+037E": "(",
+  "U+037F": ")",
+  "U+0380": "[",
+  "U+0381": "]",
+  "U+0398": "&",
+  "U+03A6": "€",
+  "U+03EC": "0",
+  "U+03ED": "1",
+  "U+03EE": "2",
+  "U+03EF": "3",
+  "U+03F0": "4",
+  "U+03F1": "5",
+  "U+03F2": "6",
+  "U+03F3": "7",
+  "U+03F4": "8",
+  "U+03F5": "9",
+  "U+0439": "%",
+  "U+0441": "=",
+  "U+0003": " "
+ },
+ "map_by_family": {
+  "Calibri": {
+   "U+0004": "A",
+   "U+0011": "B",
+   "U+0012": "C",
+   "U+0018": "D",
+   "U+001C": "E",
+   "U+0026": "F",
+   "U+0027": "G",
+   "U+002C": "H",
+   "U+002F": "I",
+   "U+003A": "J",
+   "U+003C": "K",
+   "U+003E": "L",
+   "U+0044": "M",
+   "U+0045": "N",
+   "U+004B": "O",
+   "U+0057": "P",
+   "U+0059": "Q",
+   "U+005A": "R",
+   "U+005E": "S",
+   "U+0064": "T",
+   "U+0068": "U",
+   "U+0073": "V",
+   "U+0074": "W",
+   "U+0102": "a",
+   "U+010F": "b",
+   "U+0110": "c",
+   "U+011A": "d",
+   "U+011E": "e",
+   "U+0128": "f",
+   "U+0150": "g",
+   "U+015A": "h",
+   "U+015D": "i",
+   "U+0169": "j",
+   "U+016C": "k",
+   "U+016F": "l",
+   "U+0175": "m",
+   "U+0176": "n",
+   "U+017D": "o",
+   "U+0189": "p",
+   "U+018B": "q",
+   "U+018C": "r",
+   "U+0190": "s",
+   "U+019A": "t",
+   "U+01B5": "u",
+   "U+01C0": "v",
+   "U+01C1": "w",
+   "U+01C6": "x",
+   "U+01C7": "y",
+   "U+0355": ",",
+   "U+0357": ":",
+   "U+0358": ".",
+   "U+035B": "’",
+   "U+036C": "/",
+   "U+0372": "-",
+   "U+0374": "–",
+   "U+037E": "(",
+   "U+037F": ")",
+   "U+0380": "[",
+   "U+0381": "]",
+   "U+0398": "&",
+   "U+03A6": "€",
+   "U+03EC": "0",
+   "U+03ED": "1",
+   "U+03EE": "2",
+   "U+03EF": "3",
+   "U+03F0": "4",
+   "U+03F1": "5",
+   "U+03F2": "6",
+   "U+03F3": "7",
+   "U+03F4": "8",
+   "U+03F5": "9",
+   "U+0439": "%",
+   "U+0441": "=",
+   "U+0003": " "
+  },
+  "TimesNewRoman": {
+   "U+000F": ",",
+   "U+0011": ".",
+   "U+0013": "0",
+   "U+0014": "1",
+   "U+0015": "2",
+   "U+0016": "3",
+   "U+0017": "4",
+   "U+0018": "5",
+   "U+0019": "6",
+   "U+001C": "9",
+   "U+003E": "[",
+   "U+0040": "]",
+   "U+0003": " "
+  }
+ },
+ "collisions_between_families": [
+  {
+   "cp": "U+0011",
+   "by_family": {
+    "Calibri": "B",
+    "TimesNewRoman": "."
+   }
+  },
+  {
+   "cp": "U+0018",
+   "by_family": {
+    "Calibri": "D",
+    "TimesNewRoman": "5"
+   }
+  },
+  {
+   "cp": "U+001C",
+   "by_family": {
+    "Calibri": "E",
+    "TimesNewRoman": "9"
+   }
+  },
+  {
+   "cp": "U+003E",
+   "by_family": {
+    "Calibri": "L",
+    "TimesNewRoman": "["
+   }
+  }
+ ],
+ "nfc_aliases": {
+  "Calibri": {
+   "U+02B9": {
+    "char": "–",
+    "nfc_of": "U+0374"
+   },
+   "U+003B": {
+    "char": "(",
+    "nfc_of": "U+037E"
+   }
+  }
+ },
+ "evidence": {
+  "U+0004": {
+   "char": "A",
+   "n_independent": 115,
+   "by_kind": {
+    "vocab": 42,
+    "context": 73
+   },
+   "examples": [
+    "\u0004ĚŵŝŶŝƐƚƌĂƚŝŽŶ → Administration",
+    "\u0004ĐĐŽƌĚŝŶŐůǇ͕ → Accordingly,",
+    "\u0004ƐƐƵŵƉƚŝŽŶƐ → Assumptions",
+    "\u0004ĚǀĞƌƚŝƐŝŶŐ → Advertising",
+    "\u0004ƉƉůŝĐĂƚŝŽŶ → Application"
+   ]
+  },
+  "U+0011": {
+   "char": "B",
+   "n_independent": 71,
+   "by_kind": {
+    "vocab": 22,
+    "context": 49
+   },
+   "examples": [
+    "\u0011ƌĞĂŬͲĞǀĞŶ → Break-even",
+    "\u0011ƵŝůĚŝŶŐƐ → Buildings",
+    "\u0011ƵĚŐĞƚŝŶŐ → Budgeting",
+    "\u0011ƵŝůĚŝŶŐ → Building",
+    ";\u0011ĂůĂŶĐĞ → (Balance"
+   ]
+  },
+  "U+0012": {
+   "char": "C",
+   "n_independent": 128,
+   "by_kind": {
+    "vocab": 45,
+    "context": 83
+   },
+   "examples": [
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "tŽƌƚŚͬ\u0012ĂƉŝƚĂů → Worth/Capital",
+    "&ƵŶĚͬ\u0012ĂƉŝƚĂů → Fund/Capital",
+    "\u0012ĂůĐƵůĂƚŝŽŶ͕ → Calculation,",
+    "\u0012ŽŶƚƌŝďƵƚŝŽŶ → Contribution"
+   ]
+  },
+  "U+0018": {
+   "char": "D",
+   "n_independent": 83,
+   "by_kind": {
+    "vocab": 27,
+    "context": 56
+   },
+   "examples": [
+    "\u0018ĞƉƌĞĐŝĂƚŝŽŶ͗ → Depreciation:",
+    "\u0018ĞƉƌĞĐŝĂƚŝŽŶ → Depreciation",
+    "\u0018ŝƐƚƌŝďƵƚŝŽŶ → Distribution",
+    "\u0018ŝƐƚŝŶŐƵŝƐŚ → Distinguish",
+    "\u0018ĞďĞŶƚƵƌĞƐ → Debentures"
+   ]
+  },
+  "U+001C": {
+   "char": "E",
+   "n_independent": 64,
+   "by_kind": {
+    "vocab": 25,
+    "context": 39
+   },
+   "examples": [
+    "\u001cǆĂŵŝŶĂƚŝŽŶƐ → Examinations",
+    "\u001cǆƉĞŶĚŝƚƵƌĞ → Expenditure",
+    "D\u0004Eh&\u0004\u0012dhZ\u001c → MANUFACTURE",
+    "\u001cǆĂŵŝŶĞƌƐ → Examiners",
+    "\u001cǆĂŵŝŶĞƌ͕ → Examiner,"
+   ]
+  },
+  "U+0026": {
+   "char": "F",
+   "n_independent": 62,
+   "by_kind": {
+    "vocab": 21,
+    "context": 41
+   },
+   "examples": [
+    "&ƵŶĚͬ\u0012ĂƉŝƚĂů → Fund/Capital",
+    "D\u0004Eh&\u0004\u0012dhZ\u001c → MANUFACTURE",
+    "&ŝŶĂŶĐŝĂů → Financial",
+    "&ŝŶĂŶĐŝŶŐ → Financing",
+    "&ƵƌŶŝƚƵƌĞ → Furniture"
+   ]
+  },
+  "U+0027": {
+   "char": "G",
+   "n_independent": 17,
+   "by_kind": {
+    "vocab": 9,
+    "context": 8
+   },
+   "examples": [
+    "'ŽǀĞƌŶŵĞŶƚ → Government",
+    "'ŽŽĚǁŝůů → Goodwill",
+    "'ĞŶĞƌĂů → General",
+    "'ĞĂƌŝŶŐ → Gearing",
+    "'ƌŽƐƐ → Gross"
+   ]
+  },
+  "U+002C": {
+   "char": "H",
+   "n_independent": 15,
+   "by_kind": {
+    "vocab": 7,
+    "context": 8
+   },
+   "examples": [
+    ",ŽǁĞǀĞƌ͕ → However,",
+    ",ŽǁĞǀĞƌ → However",
+    ",ŽƵƌƐͿ → Hours)",
+    ",ŽƵƌƐ → Hours",
+    ",ŝƌĞ → Hire"
+   ]
+  },
+  "U+002F": {
+   "char": "I",
+   "n_independent": 71,
+   "by_kind": {
+    "vocab": 24,
+    "context": 47
+   },
+   "examples": [
+    "/ŶƚĞƌƉƌĞƚĂƚŝŽŶ → Interpretation",
+    "/ŶǀĞƐƚŵĞŶƚƐ → Investments",
+    "/ŶĨŽƌŵĂƚŝŽŶ → Information",
+    "/ŶǀĞƐƚŵĞŶƚ → Investment",
+    "/ŶƚĂŶŐŝďůĞ → Intangible"
+   ]
+  },
+  "U+003A": {
+   "char": "J",
+   "n_independent": 8,
+   "by_kind": {
+    "vocab": 5,
+    "context": 3
+   },
+   "examples": [
+    ":ŽƵƌŶĂů → Journal",
+    ":ƵŶĞ → June",
+    ":ƵůǇ → July",
+    ":ŽĂŶ → Joan",
+    ":Žď → Job"
+   ]
+  },
+  "U+003C": {
+   "char": "K",
+   "n_independent": 2,
+   "by_kind": {
+    "vocab": 2
+   },
+   "examples": [
+    "<ŐƐ → Kgs",
+    "<Ő → Kg"
+   ]
+  },
+  "U+003E": {
+   "char": "L",
+   "n_independent": 86,
+   "by_kind": {
+    "vocab": 26,
+    "context": 60
+   },
+   "examples": [
+    ">ŝĂďŝůŝƚŝĞƐ → Liabilities",
+    "WƌŽĨŝƚͬ>ŽƐƐ → Profit/Loss",
+    ">ŝƋƵŝĚŝƚǇ → Liquidity",
+    ">ŽĚŐĞŵĞŶƚ → Lodgement",
+    ";>ĂďŽƵƌ → (Labour"
+   ]
+  },
+  "U+0044": {
+   "char": "M",
+   "n_independent": 57,
+   "by_kind": {
+    "vocab": 27,
+    "context": 30
+   },
+   "examples": [
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "DĂŶƵĨĂĐƚƵƌŝŶŐ → Manufacturing",
+    "DĂƚŚĞŵĂƚŝĐĂů → Mathematical",
+    "DĂŶƵĨĂĐƚƵƌĞ → Manufacture",
+    "DĂŝŶƚĞŶĂŶĐĞ → Maintenance"
+   ]
+  },
+  "U+0045": {
+   "char": "N",
+   "n_independent": 88,
+   "by_kind": {
+    "vocab": 51,
+    "context": 36,
+    "shape": 1
+   },
+   "examples": [
+    "D\u0004Eh&\u0004\u0012dhZ\u001c → MANUFACTURE",
+    "\u0012ĂƉŝƚĂůͬEĞƚ → Capital/Net",
+    "EŽŶͲĐĂƐŚ → Non-cash",
+    "EƵŵďĞƌ → Number",
+    "E͘\u0011͘s͘ → N.B.V."
+   ]
+  },
+  "U+004B": {
+   "char": "O",
+   "n_independent": 43,
+   "by_kind": {
+    "vocab": 16,
+    "context": 27
+   },
+   "examples": [
+    "KǀĞƌŚĞĂĚƐ͗ → Overheads:",
+    "KǀĞƌŚĞĂĚƐ → Overheads",
+    "KƉĞƌĂƚŝŶŐ → Operating",
+    "KƌĚŝŶĂƌǇ → Ordinary",
+    "KƌŝŐŝŶĂů → Original"
+   ]
+  },
+  "U+0057": {
+   "char": "P",
+   "n_independent": 99,
+   "by_kind": {
+    "vocab": 39,
+    "context": 60
+   },
+   "examples": [
+    "tŽƌŬͲŝŶͲWƌŽŐƌĞƐƐ → Work-in-Progress",
+    "WƌŽĨŝƚĂďŝůŝƚǇ → Profitability",
+    "WƌŽĨŝƚͬ>ŽƐƐ → Profit/Loss",
+    "WƌĞĨĞƌĞŶĐĞ → Preference",
+    "WƌŽĚƵĐƚŝŽŶ → Production"
+   ]
+  },
+  "U+0059": {
+   "char": "Q",
+   "n_independent": 5,
+   "by_kind": {
+    "vocab": 3,
+    "context": 2
+   },
+   "examples": [
+    "YƵĞƐƚŝŽŶ → Question",
+    ";YƵŝĐŬ → (Quick",
+    "Yϱ → Q5",
+    ";YƵŝĐŬ → (Quick  [in “Test (Quick Ratio)”]",
+    "Yϱ → Q5  [in “Q5 Interpretation”]"
+   ]
+  },
+  "U+005A": {
+   "char": "R",
+   "n_independent": 80,
+   "by_kind": {
+    "vocab": 32,
+    "context": 48
+   },
+   "examples": [
+    "ZĞĐŽŶĐŝůŝĂƚŝŽŶ → Reconciliation",
+    "ZĞǀĂůƵĂƚŝŽŶ → Revaluation",
+    "D\u0004Eh&\u0004\u0012dhZ\u001c → MANUFACTURE",
+    "ZĞĐŽǀĞƌĞĚ → Recovered",
+    "ZĞƐŽƵƌĐĞƐ → Resources"
+   ]
+  },
+  "U+005E": {
+   "char": "S",
+   "n_independent": 103,
+   "by_kind": {
+    "vocab": 36,
+    "context": 67
+   },
+   "examples": [
+    "^ƵďƐĐƌŝƉƚŝŽŶƐ → Subscriptions",
+    "^ŚĂƌĞŚŽůĚĞƌƐ → Shareholders",
+    "^ĞĐƵƌŝƚŝĞƐ → Securities",
+    "^ƚĂƚŝŽŶĞƌǇ → Stationery",
+    "^ĞƌǀŝĐŝŶŐ → Servicing"
+   ]
+  },
+  "U+0064": {
+   "char": "T",
+   "n_independent": 86,
+   "by_kind": {
+    "vocab": 25,
+    "context": 61
+   },
+   "examples": [
+    "D\u0004Eh&\u0004\u0012dhZ\u001c → MANUFACTURE",
+    "dƌĂŶƐĨĞƌ͘ → Transfer.",
+    "dĂŶŐŝďůĞ → Tangible",
+    "dĂǆĂƚŝŽŶ → Taxation",
+    "dƌĂĚŝŶŐ͕ → Trading,"
+   ]
+  },
+  "U+0068": {
+   "char": "U",
+   "n_independent": 11,
+   "by_kind": {
+    "vocab": 6,
+    "context": 5
+   },
+   "examples": [
+    "D\u0004Eh&\u0004\u0012dhZ\u001c → MANUFACTURE",
+    "hƐŝŶŐ → Using",
+    "hŶŝƚƐ → Units",
+    "\u0012͘W͘h → C.P.U",
+    "hŶŝƚ → Unit"
+   ]
+  },
+  "U+0073": {
+   "char": "V",
+   "n_independent": 22,
+   "by_kind": {
+    "vocab": 14,
+    "context": 8
+   },
+   "examples": [
+    "sĂƌŝĂƚŝŽŶƐ → Variations",
+    "sĂůƵĂƚŝŽŶ → Valuation",
+    "sĞŚŝĐůĞƐ → Vehicles",
+    "sĂƌŝĂďůĞ → Variable",
+    "sŽůƵŵĞ → Volume"
+   ]
+  },
+  "U+0074": {
+   "char": "W",
+   "n_independent": 47,
+   "by_kind": {
+    "vocab": 30,
+    "context": 17
+   },
+   "examples": [
+    "tŽƌŬͲŝŶͲWƌŽŐƌĞƐƐ → Work-in-Progress",
+    "tŽƌƚŚͬ\u0012ĂƉŝƚĂů → Worth/Capital",
+    "tŽƌŬŝŶŐƐ͗ → Workings:",
+    "tŽƌŬŝŶŐƐ → Workings",
+    "tŽƌŬŝŶŐ → Working"
+   ]
+  },
+  "U+0102": {
+   "char": "a",
+   "n_independent": 1290,
+   "by_kind": {
+    "vocab": 433,
+    "context": 857
+   },
+   "examples": [
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "ŝŶƚĞƌƉƌĞƚĂƚŝŽŶ → interpretation",
+    "\u0004ĚŵŝŶŝƐƚƌĂƚŝŽŶ → Administration",
+    "ZĞĐŽŶĐŝůŝĂƚŝŽŶ → Reconciliation",
+    "ĂƉƉƌŽǆŝŵĂƚŝŽŶ͘ → approximation."
+   ]
+  },
+  "U+010F": {
+   "char": "b",
+   "n_independent": 279,
+   "by_kind": {
+    "vocab": 103,
+    "context": 176
+   },
+   "examples": [
+    "ƌĞƐƉŽŶƐŝďŝůŝƚǇ → responsibility",
+    "ůĂŶĚͬďƵŝůĚŝŶŐƐ → land/buildings",
+    "WƌŽĨŝƚĂďŝůŝƚǇ → Profitability",
+    "^ƵďƐĐƌŝƉƚŝŽŶƐ → Subscriptions",
+    "ƐƵďƐĞƋƵĞŶƚůǇ → subsequently"
+   ]
+  },
+  "U+0110": {
+   "char": "c",
+   "n_independent": 684,
+   "by_kind": {
+    "vocab": 259,
+    "context": 423,
+    "shape": 2
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ → income/expenditure",
+    "ƐƵƌƉůƵƐͬĚĞĨŝĐŝƚ → surplus/deficit",
+    "ZĞĐŽŶĐŝůŝĂƚŝŽŶ → Reconciliation"
+   ]
+  },
+  "U+011A": {
+   "char": "d",
+   "n_independent": 640,
+   "by_kind": {
+    "vocab": 240,
+    "context": 400
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ → income/expenditure",
+    "ƐƵƌƉůƵƐͬĚĞĨŝĐŝƚ → surplus/deficit",
+    "\u0004ĚŵŝŶŝƐƚƌĂƚŝŽŶ → Administration",
+    "ĚŝƐŝŵƉƌŽǀĞŵĞŶƚ → disimprovement"
+   ]
+  },
+  "U+011E": {
+   "char": "e",
+   "n_independent": 1855,
+   "by_kind": {
+    "vocab": 656,
+    "context": 1199
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ → income/expenditure",
+    "ǁŽƌŬͲŝŶͲƉƌŽŐƌĞƐƐ → work-in-progress",
+    "ƐƵƌƉůƵƐͬĚĞĨŝĐŝƚ → surplus/deficit",
+    "ŝŶƚĞƌƉƌĞƚĂƚŝŽŶ → interpretation"
+   ]
+  },
+  "U+0128": {
+   "char": "f",
+   "n_independent": 384,
+   "by_kind": {
+    "vocab": 93,
+    "context": 291
+   },
+   "examples": [
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "ƐƵƌƉůƵƐͬĚĞĨŝĐŝƚ → surplus/deficit",
+    "ŵĂŶƵĨĂĐƚƵƌŝŶŐ → manufacturing",
+    "WƌŽĨŝƚĂďŝůŝƚǇ → Profitability",
+    "ƐŝŐŶŝĨŝĐĂŶƚůǇ → significantly"
+   ]
+  },
+  "U+0150": {
+   "char": "g",
+   "n_independent": 354,
+   "by_kind": {
+    "vocab": 152,
+    "context": 201,
+    "shape": 1
+   },
+   "examples": [
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "ǁŽƌŬͲŝŶͲƉƌŽŐƌĞƐƐ → work-in-progress",
+    "ŶŽƚĞƐͬǁŽƌŬŝŶŐƐ → notes/workings",
+    "ůĂŶĚͬďƵŝůĚŝŶŐƐ → land/buildings",
+    "ŵĂŶƵĨĂĐƚƵƌŝŶŐ → manufacturing"
+   ]
+  },
+  "U+015A": {
+   "char": "h",
+   "n_independent": 519,
+   "by_kind": {
+    "vocab": 126,
+    "context": 393
+   },
+   "examples": [
+    "ƐƚƌĂŝŐŚƚͲůŝŶĞ → straight-line",
+    "ƐŚĂƌĞŚŽůĚĞƌƐ͘ → shareholders.",
+    "tŽƌƚŚͬ\u0012ĂƉŝƚĂů → Worth/Capital",
+    "DĂƚŚĞŵĂƚŝĐĂů → Mathematical",
+    "ƚĞĐŚŶŽůŽŐǇͿ͘ → technology)."
+   ]
+  },
+  "U+015D": {
+   "char": "i",
+   "n_independent": 1189,
+   "by_kind": {
+    "vocab": 427,
+    "context": 761,
+    "shape": 1
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ → income/expenditure",
+    "ǁŽƌŬͲŝŶͲƉƌŽŐƌĞƐƐ → work-in-progress",
+    "ƐƵƌƉůƵƐͬĚĞĨŝĐŝƚ → surplus/deficit"
+   ]
+  },
+  "U+0169": {
+   "char": "j",
+   "n_independent": 7,
+   "by_kind": {
+    "vocab": 3,
+    "context": 4
+   },
+   "examples": [
+    "\u0004ĚũƵƐƚĞĚ → Adjusted",
+    "ƐƵďũĞĐƚ → subject",
+    "ũƵƐƚ → just",
+    "\u0004ĚũƵƐƚĞĚ → Adjusted  [in “per Adjusted Bank”]",
+    "\u0004ĚũƵƐƚĞĚ → Adjusted  [in “Adjusted Bank”]"
+   ]
+  },
+  "U+016C": {
+   "char": "k",
+   "n_independent": 107,
+   "by_kind": {
+    "vocab": 33,
+    "context": 73,
+    "shape": 1
+   },
+   "examples": [
+    "ǁŽƌŬͲŝŶͲƉƌŽŐƌĞƐƐ → work-in-progress",
+    "ŶŽƚĞƐͬǁŽƌŬŝŶŐƐ → notes/workings",
+    "ďŽŽŬŬĞĞƉŝŶŐ → bookkeeping",
+    "\u0011ƌĞĂŬͲĞǀĞŶ → Break-even",
+    "tŽƌŬŝŶŐƐ͗ → Workings:"
+   ]
+  },
+  "U+016F": {
+   "char": "l",
+   "n_independent": 567,
+   "by_kind": {
+    "vocab": 230,
+    "context": 337
+   },
+   "examples": [
+    "ƐƵƌƉůƵƐͬĚĞĨŝĐŝƚ → surplus/deficit",
+    "ƌĞƐƉŽŶƐŝďŝůŝƚǇ → responsibility",
+    "ZĞĐŽŶĐŝůŝĂƚŝŽŶ → Reconciliation",
+    "ůĂŶĚͬďƵŝůĚŝŶŐƐ → land/buildings",
+    "ƐƚƌĂŝŐŚƚͲůŝŶĞ → straight-line"
+   ]
+  },
+  "U+0175": {
+   "char": "m",
+   "n_independent": 388,
+   "by_kind": {
+    "vocab": 153,
+    "context": 235
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ → income/expenditure",
+    "\u0004ĚŵŝŶŝƐƚƌĂƚŝŽŶ → Administration",
+    "ĂƉƉƌŽǆŝŵĂƚŝŽŶ͘ → approximation.",
+    "ĚŝƐŝŵƉƌŽǀĞŵĞŶƚ → disimprovement"
+   ]
+  },
+  "U+0176": {
+   "char": "n",
+   "n_independent": 1282,
+   "by_kind": {
+    "vocab": 443,
+    "context": 838,
+    "shape": 1
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ → income/expenditure",
+    "ǁŽƌŬͲŝŶͲƉƌŽŐƌĞƐƐ → work-in-progress",
+    "ŝŶƚĞƌƉƌĞƚĂƚŝŽŶ → interpretation"
+   ]
+  },
+  "U+017D": {
+   "char": "o",
+   "n_independent": 1134,
+   "by_kind": {
+    "vocab": 344,
+    "context": 790
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ → income/expenditure",
+    "ǁŽƌŬͲŝŶͲƉƌŽŐƌĞƐƐ → work-in-progress",
+    "ŝŶƚĞƌƉƌĞƚĂƚŝŽŶ → interpretation"
+   ]
+  },
+  "U+0189": {
+   "char": "p",
+   "n_independent": 400,
+   "by_kind": {
+    "vocab": 154,
+    "context": 246
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ → income/expenditure",
+    "ǁŽƌŬͲŝŶͲƉƌŽŐƌĞƐƐ → work-in-progress",
+    "ƐƵƌƉůƵƐͬĚĞĨŝĐŝƚ → surplus/deficit",
+    "ŝŶƚĞƌƉƌĞƚĂƚŝŽŶ → interpretation"
+   ]
+  },
+  "U+018B": {
+   "char": "q",
+   "n_independent": 43,
+   "by_kind": {
+    "vocab": 17,
+    "context": 26
+   },
+   "examples": [
+    "ƐƵďƐĞƋƵĞŶƚůǇ → subsequently",
+    "ƌĞƋƵŝƌĞŵĞŶƚƐ → requirements",
+    "\u001cƋƵŝƉŵĞŶƚ → Equipment",
+    ">ŝƋƵŝĚŝƚǇ → Liquidity",
+    "ĂĚĞƋƵĂƚĞ͘ → adequate."
+   ]
+  },
+  "U+018C": {
+   "char": "r",
+   "n_independent": 1142,
+   "by_kind": {
+    "vocab": 432,
+    "context": 710
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ → income/expenditure",
+    "ǁŽƌŬͲŝŶͲƉƌŽŐƌĞƐƐ → work-in-progress",
+    "ƐƵƌƉůƵƐͬĚĞĨŝĐŝƚ → surplus/deficit"
+   ]
+  },
+  "U+0190": {
+   "char": "s",
+   "n_independent": 1051,
+   "by_kind": {
+    "vocab": 396,
+    "context": 654,
+    "shape": 1
+   },
+   "examples": [
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "ǁŽƌŬͲŝŶͲƉƌŽŐƌĞƐƐ → work-in-progress",
+    "ƐƵƌƉůƵƐͬĚĞĨŝĐŝƚ → surplus/deficit",
+    "ƌĞƐƉŽŶƐŝďŝůŝƚǇ → responsibility",
+    "\u0004ĚŵŝŶŝƐƚƌĂƚŝŽŶ → Administration"
+   ]
+  },
+  "U+019A": {
+   "char": "t",
+   "n_independent": 1350,
+   "by_kind": {
+    "vocab": 433,
+    "context": 916,
+    "shape": 1
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ → income/expenditure",
+    "ƐƵƌƉůƵƐͬĚĞĨŝĐŝƚ → surplus/deficit",
+    "ŝŶƚĞƌƉƌĞƚĂƚŝŽŶ → interpretation"
+   ]
+  },
+  "U+01B5": {
+   "char": "u",
+   "n_independent": 590,
+   "by_kind": {
+    "vocab": 231,
+    "context": 358,
+    "shape": 1
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ → income/expenditure",
+    "ƐƵƌƉůƵƐͬĚĞĨŝĐŝƚ → surplus/deficit",
+    "ĐŝƌĐƵŵƐƚĂŶĐĞƐ͘ → circumstances."
+   ]
+  },
+  "U+01C0": {
+   "char": "v",
+   "n_independent": 238,
+   "by_kind": {
+    "vocab": 93,
+    "context": 145
+   },
+   "examples": [
+    "ĚŝƐŝŵƉƌŽǀĞŵĞŶƚ → disimprovement",
+    "ĐŽŶƐĞƌǀĂƚŝǀĞ͘ → conservative.",
+    "ĂůƚĞƌŶĂƚŝǀĞƐ → alternatives",
+    "ƌĞŝŶǀĞƐƚŝŶŐ͕ → reinvesting,",
+    "ŝŶǀĞƐƚŵĞŶƚƐ͘ → investments."
+   ]
+  },
+  "U+01C1": {
+   "char": "w",
+   "n_independent": 173,
+   "by_kind": {
+    "vocab": 74,
+    "context": 99
+   },
+   "examples": [
+    "ǁŽƌŬͲŝŶͲƉƌŽŐƌĞƐƐ → work-in-progress",
+    "ŶŽƚĞƐͬǁŽƌŬŝŶŐƐ → notes/workings",
+    "ĞůƐĞǁŚĞƌĞ͘ → elsewhere.",
+    "ďŽƌƌŽǁŝŶŐ → borrowing",
+    "ĂǁĂƌĚĞĚ͕ → awarded,"
+   ]
+  },
+  "U+01C6": {
+   "char": "x",
+   "n_independent": 113,
+   "by_kind": {
+    "vocab": 36,
+    "context": 77
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ → income/expenditure",
+    "ĂƉƉƌŽǆŝŵĂƚŝŽŶ͘ → approximation.",
+    "ĂƉƉƌŽǆŝŵĂƚĞůǇ → approximately",
+    "\u001cǆĂŵŝŶĂƚŝŽŶƐ → Examinations"
+   ]
+  },
+  "U+01C7": {
+   "char": "y",
+   "n_independent": 250,
+   "by_kind": {
+    "vocab": 95,
+    "context": 155
+   },
+   "examples": [
+    "ƌĞƐƉŽŶƐŝďŝůŝƚǇ → responsibility",
+    "WƌŽĨŝƚĂďŝůŝƚǇ → Profitability",
+    "ƐŝŐŶŝĨŝĐĂŶƚůǇ → significantly",
+    "ĂƉƉƌŽǆŝŵĂƚĞůǇ → approximately",
+    "ƐƵďƐĞƋƵĞŶƚůǇ → subsequently"
+   ]
+  },
+  "U+0355": {
+   "char": ",",
+   "n_independent": 149,
+   "by_kind": {
+    "vocab": 43,
+    "context": 63,
+    "shape": 43
+   },
+   "examples": [
+    "ĞǆĂŵŝŶĂƚŝŽŶ͕ → examination,",
+    "\u0004ĐĐŽƌĚŝŶŐůǇ͕ → Accordingly,",
+    "ĐĂůĐƵůĂƚŝŽŶ͕ → calculation,",
+    "ƌĞŝŶǀĞƐƚŝŶŐ͕ → reinvesting,",
+    "ĐĂŶĚŝĚĂƚĞƐ͕ → candidates,"
+   ]
+  },
+  "U+0357": {
+   "char": ":",
+   "n_independent": 29,
+   "by_kind": {
+    "vocab": 10,
+    "context": 14,
+    "shape": 5
+   },
+   "examples": [
+    "\u0018ĞƉƌĞĐŝĂƚŝŽŶ͗ → Depreciation:",
+    "\u0012ƌĞĚŝƚŽƌƐ͗ → Creditors:",
+    "KǀĞƌŚĞĂĚƐ͗ → Overheads:",
+    "tŽƌŬŝŶŐƐ͗ → Workings:",
+    "^ƚŽĐŬƐ͗ → Stocks:"
+   ]
+  },
+  "U+0358": {
+   "char": ".",
+   "n_independent": 232,
+   "by_kind": {
+    "vocab": 95,
+    "context": 103,
+    "shape": 34
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "ĂƉƉƌŽǆŝŵĂƚŝŽŶ͘ → approximation.",
+    "ĐŝƌĐƵŵƐƚĂŶĐĞƐ͘ → circumstances.",
+    "ĚĞƉƌĞĐŝĂƚŝŽŶ͘ → depreciation.",
+    "ƐŚĂƌĞŚŽůĚĞƌƐ͘ → shareholders."
+   ]
+  },
+  "U+035B": {
+   "char": "’",
+   "n_independent": 10,
+   "by_kind": {
+    "vocab": 4,
+    "context": 6
+   },
+   "examples": [
+    "ĐĂŶĚŝĚĂƚĞƐ͛ → candidates’",
+    "ĐŽŵƉĂŶǇ͛Ɛ → company’s",
+    "ǇĞĂƌ͛Ɛ → year’s",
+    "Ĩŝƌŵ͛Ɛ → firm’s",
+    "ĐĂŶĚŝĚĂƚĞƐ͛ → candidates’  [in “all candidates’ work.”]"
+   ]
+  },
+  "U+036C": {
+   "char": "/",
+   "n_independent": 78,
+   "by_kind": {
+    "vocab": 16,
+    "context": 48,
+    "shape": 14
+   },
+   "examples": [
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ͘ → income/expenditure.",
+    "\u0012ŽƐƚͬDĂŶƵĨĂĐƚƵƌŝŶŐ → Cost/Manufacturing",
+    "ŝŶĐŽŵĞͬĞǆƉĞŶĚŝƚƵƌĞ → income/expenditure",
+    "ƐƵƌƉůƵƐͬĚĞĨŝĐŝƚ → surplus/deficit",
+    "ŶŽƚĞƐͬǁŽƌŬŝŶŐƐ → notes/workings"
+   ]
+  },
+  "U+0372": {
+   "char": "-",
+   "n_independent": 24,
+   "by_kind": {
+    "vocab": 8,
+    "context": 10,
+    "shape": 6
+   },
+   "examples": [
+    "ǁŽƌŬͲŝŶͲƉƌŽŐƌĞƐƐ → work-in-progress",
+    "ƐƚƌĂŝŐŚƚͲůŝŶĞ → straight-line",
+    "\u0011ƌĞĂŬͲĞǀĞŶ → Break-even",
+    "EŽŶͲĐĂƐŚ → Non-cash",
+    "ͲͲͲͲͲͲͲͲ → --------"
+   ],
+   "class_refinement": "dash class; advance 0.306 em → '-'"
+  },
+  "U+0374": {
+   "char": "–",
+   "n_independent": 9,
+   "by_kind": {
+    "vocab": 1,
+    "context": 7,
+    "shape": 1
+   },
+   "examples": [
+    "ʹ → -",
+    "ʹ → -  [in “profit - preference”]",
+    "ʹ → -  [in “Assets - Closing”]",
+    "ʹ → -  [in “mark - Penalty,”]",
+    "ʹ → -  [in “2 - Incomplete”]"
+   ],
+   "class_refinement": "dash class; advance 0.498 em → '–'"
+  },
+  "U+037E": {
+   "char": "(",
+   "n_independent": 92,
+   "by_kind": {
+    "vocab": 37,
+    "context": 32,
+    "shape": 23
+   },
+   "examples": [
+    ";\u0011ĂůĂŶĐĞ → (Balance",
+    ";DĂĐŚŝŶĞ → (Machine",
+    ";ĂƐƐĞƚƐ → (assets",
+    ";>ĂďŽƵƌ → (Labour",
+    ";YƵŝĐŬ → (Quick"
+   ]
+  },
+  "U+037F": {
+   "char": ")",
+   "n_independent": 92,
+   "by_kind": {
+    "vocab": 38,
+    "context": 28,
+    "shape": 26
+   },
+   "examples": [
+    "ƚĞĐŚŶŽůŽŐǇͿ͘ → technology).",
+    "ŵŽŶƚŚƐͿ → months)",
+    "ZĂƚŝŽͿ → Ratio)",
+    "^ŚĞĞƚͿ → Sheet)",
+    ",ŽƵƌƐͿ → Hours)"
+   ]
+  },
+  "U+0380": {
+   "char": "[",
+   "n_independent": 26,
+   "by_kind": {
+    "context": 14,
+    "shape": 12
+   },
+   "examples": [
+    "ϯϭͬϭϮͬϮϬϮϭ΀ϭ΁ → 31/12/2021[1]  [in “ended 31/12/2021[1]”]",
+    "΀ϭ΁ → [1]  [in “Administration [1]”]",
+    "΀ϭ΁ → [1]  [in “Distribution [1]”]",
+    "΀ϭ΁ → [1]  [in “Investments [1]”]",
+    "΀ϯ΁ → [3]  [in “Activities [3]”]"
+   ]
+  },
+  "U+0381": {
+   "char": "]",
+   "n_independent": 26,
+   "by_kind": {
+    "context": 14,
+    "shape": 12
+   },
+   "examples": [
+    "ϯϭͬϭϮͬϮϬϮϭ΀ϭ΁ → 31/12/2021[1]  [in “ended 31/12/2021[1]”]",
+    "΀ϭ΁ → [1]  [in “Administration [1]”]",
+    "΀ϭ΁ → [1]  [in “Distribution [1]”]",
+    "΀ϭ΁ → [1]  [in “Investments [1]”]",
+    "΀ϯ΁ → [3]  [in “Activities [3]”]"
+   ]
+  },
+  "U+0398": {
+   "char": "&",
+   "n_independent": 13,
+   "by_kind": {
+    "vocab": 2,
+    "context": 11
+   },
+   "examples": [
+    "WΘ> → P&L",
+    "Θ → &",
+    "Θ → &  [in “Selling & Distribution”]",
+    "Θ → &  [in “Plant & Machinery”]",
+    "Θ → &  [in “Wages & Salaries”]"
+   ]
+  },
+  "U+03A6": {
+   "char": "€",
+   "n_independent": 45,
+   "by_kind": {
+    "vocab": 1,
+    "context": 23,
+    "shape": 21
+   },
+   "examples": [
+    "Φ → €",
+    "ΦϮϱϬ͕ϬϬϬ → €250,000  [in “cost €250,000 but”]",
+    "ΦϭϮϬ͕ϬϬϬ → €120,000  [in “of €120,000 this”]",
+    "ΦϮϬϵ͕ϬϬϬ → €209,000  [in “Costs €209,000 =”]",
+    "ΦϱϬϬ͕ϬϬϬ → €500,000  [in “of €500,000 is”]"
+   ]
+  },
+  "U+03EC": {
+   "char": "0",
+   "n_independent": 4,
+   "by_kind": {
+    "page": 4
+   },
+   "examples": [
+    "ϭϬ → 10  [footer, HL PDF page 10]",
+    "ϮϬ → 20  [footer, HL PDF page 20]",
+    "ϯϬ → 30  [footer, HL PDF page 30]",
+    "ϰϬ → 40  [footer, HL PDF page 40]"
+   ]
+  },
+  "U+03ED": {
+   "char": "1",
+   "n_independent": 20,
+   "by_kind": {
+    "page": 20
+   },
+   "examples": [
+    "ϭϬ → 10  [footer, HL PDF page 10]",
+    "ϭϭ → 11  [footer, HL PDF page 11]",
+    "ϭϮ → 12  [footer, HL PDF page 12]",
+    "ϭϯ → 13  [footer, HL PDF page 13]",
+    "ϭϰ → 14  [footer, HL PDF page 14]"
+   ]
+  },
+  "U+03EE": {
+   "char": "2",
+   "n_independent": 13,
+   "by_kind": {
+    "page": 13
+   },
+   "examples": [
+    "ϭϮ → 12  [footer, HL PDF page 12]",
+    "ϮϬ → 20  [footer, HL PDF page 20]",
+    "Ϯϭ → 21  [footer, HL PDF page 21]",
+    "ϮϮ → 22  [footer, HL PDF page 22]",
+    "Ϯϯ → 23  [footer, HL PDF page 23]"
+   ]
+  },
+  "U+03EF": {
+   "char": "3",
+   "n_independent": 15,
+   "by_kind": {
+    "page": 15
+   },
+   "examples": [
+    "ϭϯ → 13  [footer, HL PDF page 13]",
+    "Ϯϯ → 23  [footer, HL PDF page 23]",
+    "ϯϬ → 30  [footer, HL PDF page 30]",
+    "ϯϭ → 31  [footer, HL PDF page 31]",
+    "ϯϮ → 32  [footer, HL PDF page 32]"
+   ]
+  },
+  "U+03F0": {
+   "char": "4",
+   "n_independent": 7,
+   "by_kind": {
+    "page": 7
+   },
+   "examples": [
+    "ϭϰ → 14  [footer, HL PDF page 14]",
+    "Ϯϰ → 24  [footer, HL PDF page 24]",
+    "ϯϰ → 34  [footer, HL PDF page 34]",
+    "ϰϬ → 40  [footer, HL PDF page 40]",
+    "ϭϰ → 14  [footer, OL PDF page 14]"
+   ]
+  },
+  "U+03F1": {
+   "char": "5",
+   "n_independent": 6,
+   "by_kind": {
+    "page": 6
+   },
+   "examples": [
+    "ϭϱ → 15  [footer, HL PDF page 15]",
+    "Ϯϱ → 25  [footer, HL PDF page 25]",
+    "ϯϱ → 35  [footer, HL PDF page 35]",
+    "ϭϱ → 15  [footer, OL PDF page 15]",
+    "ϱ → 5  [footer, HL PDF page 5]"
+   ]
+  },
+  "U+03F2": {
+   "char": "6",
+   "n_independent": 6,
+   "by_kind": {
+    "page": 6
+   },
+   "examples": [
+    "ϭϲ → 16  [footer, HL PDF page 16]",
+    "Ϯϲ → 26  [footer, HL PDF page 26]",
+    "ϯϲ → 36  [footer, HL PDF page 36]",
+    "ϭϲ → 16  [footer, OL PDF page 16]",
+    "ϲ → 6  [footer, HL PDF page 6]"
+   ]
+  },
+  "U+03F3": {
+   "char": "7",
+   "n_independent": 6,
+   "by_kind": {
+    "page": 6
+   },
+   "examples": [
+    "ϭϳ → 17  [footer, HL PDF page 17]",
+    "Ϯϳ → 27  [footer, HL PDF page 27]",
+    "ϯϳ → 37  [footer, HL PDF page 37]",
+    "ϭϳ → 17  [footer, OL PDF page 17]",
+    "ϳ → 7  [footer, HL PDF page 7]"
+   ]
+  },
+  "U+03F4": {
+   "char": "8",
+   "n_independent": 6,
+   "by_kind": {
+    "page": 6
+   },
+   "examples": [
+    "ϭϴ → 18  [footer, HL PDF page 18]",
+    "Ϯϴ → 28  [footer, HL PDF page 28]",
+    "ϯϴ → 38  [footer, HL PDF page 38]",
+    "ϭϴ → 18  [footer, OL PDF page 18]",
+    "ϴ → 8  [footer, HL PDF page 8]"
+   ]
+  },
+  "U+03F5": {
+   "char": "9",
+   "n_independent": 5,
+   "by_kind": {
+    "page": 5
+   },
+   "examples": [
+    "ϭϵ → 19  [footer, HL PDF page 19]",
+    "Ϯϵ → 29  [footer, HL PDF page 29]",
+    "ϯϵ → 39  [footer, HL PDF page 39]",
+    "ϵ → 9  [footer, HL PDF page 9]",
+    "ϵ → 9  [footer, OL PDF page 9]"
+   ]
+  },
+  "U+0439": {
+   "char": "%",
+   "n_independent": 37,
+   "by_kind": {
+    "context": 24,
+    "shape": 13
+   },
+   "examples": [
+    "Ϯϴ͘ϭϲй → 28.16%  [in “out 28.16% of”]",
+    "ϲ͘ϴϭй͘ → 6.81%.  [in “is 6.81%. In”]",
+    "ϳ͘ϳϵй → 7.79%  [in “of 7.79% from”]",
+    "ϱ͘ϱϲй → 5.56%  [in “by 5.56% from”]",
+    "ϰ͘ϱϲй͘ → 4.56%.  [in “was 4.56%.”]"
+   ]
+  },
+  "U+0441": {
+   "char": "=",
+   "n_independent": 12,
+   "by_kind": {
+    "vocab": 1,
+    "context": 10,
+    "shape": 1
+   },
+   "examples": [
+    "с → =",
+    "с → =  [in “€209,000 = 19,000units”]",
+    "с → =  [in “Safety = Budgeted”]",
+    "с → =  [in “unit = 800,000”]",
+    "с → =  [in “units = 21,000”]"
+   ]
+  },
+  "U+0003": {
+   "char": " ",
+   "n_independent": 1467,
+   "by_kind": {
+    "context": 1467
+   },
+   "examples": [
+    "Reconciliation Statement",
+    "Accumulated Fund/Capital",
+    "Cost/Manufacturing Budget",
+    "income/expenditure account",
+    "Production Cost/Manufacturing"
+   ],
+   "blank_glyph_in_subsets": {
+    "MGCHCA+Calibri": true,
+    "MGCHDB+Cambria": true,
+    "MGCHJB+Calibri,Bold": true,
+    "MGCHPA+TimesNewRoman": true,
+    "MGCJBK+Arial,Bold": true,
+    "MGCJCK+Calibri,Italic": true,
+    "MGCJHK+Arial": true,
+    "MGCLHA+TimesNewRoman,Bold": true,
+    "MGCMGL+Calibri,BoldItalic": true,
+    "MILKAP+Calibri": true,
+    "MILKBB+Cambria": true,
+    "MILKJA+Calibri,Bold": true,
+    "MILLGO+Calibri,BoldItalic": true,
+    "MILMBL+TimesNewRoman,Bold": true,
+    "MILMLI+Arial,Bold": true,
+    "MILNEG+Arial": true,
+    "MILODC+TimesNewRoman": true
+   }
+  }
+ },
+ "evidence_by_family": {
+  "TimesNewRoman": {
+   "U+000F": {
+    "char": ",",
+    "n_independent": 1,
+    "by_kind": {
+     "outline": 1
+    },
+    "examples": [
+     "TimesNewRoman gid 15: glyf outline + advance identical to macOS Times New Roman.ttf gid 15 = U+002C"
+    ]
+   },
+   "U+0011": {
+    "char": ".",
+    "n_independent": 1,
+    "by_kind": {
+     "outline": 1
+    },
+    "examples": [
+     "TimesNewRoman,Bold gid 17: glyf outline + advance identical to macOS Times New Roman Bold.ttf gid 17 = U+002E"
+    ]
+   },
+   "U+0013": {
+    "char": "0",
+    "n_independent": 1,
+    "by_kind": {
+     "outline": 1
+    },
+    "examples": [
+     "TimesNewRoman gid 19: glyf outline + advance identical to macOS Times New Roman.ttf gid 19 = U+0030"
+    ]
+   },
+   "U+0014": {
+    "char": "1",
+    "n_independent": 2,
+    "by_kind": {
+     "outline": 2
+    },
+    "examples": [
+     "TimesNewRoman,Bold gid 20: glyf outline + advance identical to macOS Times New Roman Bold.ttf gid 20 = U+0031",
+     "TimesNewRoman gid 20: glyf outline + advance identical to macOS Times New Roman.ttf gid 20 = U+0031"
+    ]
+   },
+   "U+0015": {
+    "char": "2",
+    "n_independent": 2,
+    "by_kind": {
+     "outline": 2
+    },
+    "examples": [
+     "TimesNewRoman,Bold gid 21: glyf outline + advance identical to macOS Times New Roman Bold.ttf gid 21 = U+0032",
+     "TimesNewRoman gid 21: glyf outline + advance identical to macOS Times New Roman.ttf gid 21 = U+0032"
+    ]
+   },
+   "U+0016": {
+    "char": "3",
+    "n_independent": 1,
+    "by_kind": {
+     "outline": 1
+    },
+    "examples": [
+     "TimesNewRoman gid 22: glyf outline + advance identical to macOS Times New Roman.ttf gid 22 = U+0033"
+    ]
+   },
+   "U+0017": {
+    "char": "4",
+    "n_independent": 1,
+    "by_kind": {
+     "outline": 1
+    },
+    "examples": [
+     "TimesNewRoman,Bold gid 23: glyf outline + advance identical to macOS Times New Roman Bold.ttf gid 23 = U+0034"
+    ]
+   },
+   "U+0018": {
+    "char": "5",
+    "n_independent": 1,
+    "by_kind": {
+     "outline": 1
+    },
+    "examples": [
+     "TimesNewRoman gid 24: glyf outline + advance identical to macOS Times New Roman.ttf gid 24 = U+0035"
+    ]
+   },
+   "U+0019": {
+    "char": "6",
+    "n_independent": 1,
+    "by_kind": {
+     "outline": 1
+    },
+    "examples": [
+     "TimesNewRoman gid 25: glyf outline + advance identical to macOS Times New Roman.ttf gid 25 = U+0036"
+    ]
+   },
+   "U+001C": {
+    "char": "9",
+    "n_independent": 1,
+    "by_kind": {
+     "outline": 1
+    },
+    "examples": [
+     "TimesNewRoman gid 28: glyf outline + advance identical to macOS Times New Roman.ttf gid 28 = U+0039"
+    ]
+   },
+   "U+003E": {
+    "char": "[",
+    "n_independent": 2,
+    "by_kind": {
+     "outline": 2
+    },
+    "examples": [
+     "TimesNewRoman,Bold gid 62: glyf outline + advance identical to macOS Times New Roman Bold.ttf gid 62 = U+005B",
+     "TimesNewRoman gid 62: glyf outline + advance identical to macOS Times New Roman.ttf gid 62 = U+005B"
+    ]
+   },
+   "U+0040": {
+    "char": "]",
+    "n_independent": 2,
+    "by_kind": {
+     "outline": 2
+    },
+    "examples": [
+     "TimesNewRoman,Bold gid 64: glyf outline + advance identical to macOS Times New Roman Bold.ttf gid 64 = U+005D",
+     "TimesNewRoman gid 64: glyf outline + advance identical to macOS Times New Roman.ttf gid 64 = U+005D"
+    ]
+   },
+   "U+0003": {
+    "char": " ",
+    "n_independent": 5,
+    "by_kind": {
+     "context": 5
+    },
+    "examples": [
+     "750 [1]",
+     "780 [1]",
+     "9,500 [1]",
+     "1,100 [1]",
+     "120,000 [1]"
+    ],
+    "blank_glyph_in_subsets": {
+     "MGCHCA+Calibri": true,
+     "MGCHDB+Cambria": true,
+     "MGCHJB+Calibri,Bold": true,
+     "MGCHPA+TimesNewRoman": true,
+     "MGCJBK+Arial,Bold": true,
+     "MGCJCK+Calibri,Italic": true,
+     "MGCJHK+Arial": true,
+     "MGCLHA+TimesNewRoman,Bold": true,
+     "MGCMGL+Calibri,BoldItalic": true,
+     "MILKAP+Calibri": true,
+     "MILKBB+Cambria": true,
+     "MILKJA+Calibri,Bold": true,
+     "MILLGO+Calibri,BoldItalic": true,
+     "MILMBL+TimesNewRoman,Bold": true,
+     "MILMLI+Arial,Bold": true,
+     "MILNEG+Arial": true,
+     "MILODC+TimesNewRoman": true
+    }
+   }
+  }
+ },
+ "local_font_check": [
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman",
+   "gid": 3,
+   "cp": "U+0003",
+   "local_char": " ",
+   "glyf_identical": true,
+   "advance": 512
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman",
+   "gid": 15,
+   "cp": "U+000F",
+   "local_char": ",",
+   "glyf_identical": true,
+   "advance": 512
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman",
+   "gid": 19,
+   "cp": "U+0013",
+   "local_char": "0",
+   "glyf_identical": true,
+   "advance": 1024
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman",
+   "gid": 20,
+   "cp": "U+0014",
+   "local_char": "1",
+   "glyf_identical": true,
+   "advance": 1024
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman",
+   "gid": 21,
+   "cp": "U+0015",
+   "local_char": "2",
+   "glyf_identical": true,
+   "advance": 1024
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman",
+   "gid": 22,
+   "cp": "U+0016",
+   "local_char": "3",
+   "glyf_identical": true,
+   "advance": 1024
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman",
+   "gid": 24,
+   "cp": "U+0018",
+   "local_char": "5",
+   "glyf_identical": true,
+   "advance": 1024
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman",
+   "gid": 25,
+   "cp": "U+0019",
+   "local_char": "6",
+   "glyf_identical": true,
+   "advance": 1024
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman",
+   "gid": 28,
+   "cp": "U+001C",
+   "local_char": "9",
+   "glyf_identical": true,
+   "advance": 1024
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman",
+   "gid": 62,
+   "cp": "U+003E",
+   "local_char": "[",
+   "glyf_identical": true,
+   "advance": 682
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman",
+   "gid": 64,
+   "cp": "U+0040",
+   "local_char": "]",
+   "glyf_identical": true,
+   "advance": 682
+  },
+  {
+   "pdf": "HL",
+   "font": "Arial,Bold",
+   "gid": 3,
+   "cp": "U+0003",
+   "local_char": " ",
+   "glyf_identical": true,
+   "advance": 569
+  },
+  {
+   "pdf": "HL",
+   "font": "Arial",
+   "gid": 3,
+   "cp": "U+0003",
+   "local_char": " ",
+   "glyf_identical": true,
+   "advance": 569
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman,Bold",
+   "gid": 3,
+   "cp": "U+0003",
+   "local_char": " ",
+   "glyf_identical": true,
+   "advance": 512
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman,Bold",
+   "gid": 20,
+   "cp": "U+0014",
+   "local_char": "1",
+   "glyf_identical": true,
+   "advance": 1024
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman,Bold",
+   "gid": 21,
+   "cp": "U+0015",
+   "local_char": "2",
+   "glyf_identical": true,
+   "advance": 1024
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman,Bold",
+   "gid": 62,
+   "cp": "U+003E",
+   "local_char": "[",
+   "glyf_identical": true,
+   "advance": 682
+  },
+  {
+   "pdf": "HL",
+   "font": "TimesNewRoman,Bold",
+   "gid": 64,
+   "cp": "U+0040",
+   "local_char": "]",
+   "glyf_identical": true,
+   "advance": 682
+  },
+  {
+   "pdf": "OL",
+   "font": "TimesNewRoman,Bold",
+   "gid": 3,
+   "cp": "U+0003",
+   "local_char": " ",
+   "glyf_identical": true,
+   "advance": 512
+  },
+  {
+   "pdf": "OL",
+   "font": "TimesNewRoman,Bold",
+   "gid": 17,
+   "cp": "U+0011",
+   "local_char": ".",
+   "glyf_identical": true,
+   "advance": 512
+  },
+  {
+   "pdf": "OL",
+   "font": "TimesNewRoman,Bold",
+   "gid": 23,
+   "cp": "U+0017",
+   "local_char": "4",
+   "glyf_identical": true,
+   "advance": 1024
+  },
+  {
+   "pdf": "OL",
+   "font": "Arial,Bold",
+   "gid": 3,
+   "cp": "U+0003",
+   "local_char": " ",
+   "glyf_identical": true,
+   "advance": 569
+  },
+  {
+   "pdf": "OL",
+   "font": "Arial",
+   "gid": 3,
+   "cp": "U+0003",
+   "local_char": " ",
+   "glyf_identical": true,
+   "advance": 569
+  },
+  {
+   "pdf": "OL",
+   "font": "TimesNewRoman",
+   "gid": 3,
+   "cp": "U+0003",
+   "local_char": " ",
+   "glyf_identical": true,
+   "advance": 512
+  }
+ ],
+ "residue": [
+  {
+   "family": "Calibri",
+   "cp": "U+043D",
+   "glyph_id": 1085,
+   "count": 59,
+   "visual_reading_not_in_map": "+",
+   "example_lines": [
+    "760,400 ⟨043D⟩ 11,000 – 62,000",
+    "148,000 ⟨043D⟩ 740 – 60,300",
+    "12,750 ⟨043D⟩ 34,875 OR",
+    "1,125 ⟨043D⟩ 46,500",
+    "1,650,000 ⟨043D⟩ 10,800"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_043D.png"
+  },
+  {
+   "family": "Calibri",
+   "cp": "U+039B",
+   "glyph_id": 923,
+   "count": 20,
+   "visual_reading_not_in_map": "@",
+   "example_lines": [
+    "Ordinary shares ⟨039B⟩ €1 each",
+    "4% Preference shares ⟨039B⟩ €1 each",
+    "225,000 ⟨039B⟩ 12⟨042A⟩% ⟨039B⟩ 12/12  months =",
+    "60,000 ⟨039B⟩ 12⟨042A⟩% ⟨039B⟩ 6/12  months =",
+    "56,000  ⟨039B⟩ 20% ⟨039B⟩ 12/12 months"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_039B.png"
+  },
+  {
+   "family": "Calibri",
+   "cp": "U+038E",
+   "glyph_id": 910,
+   "count": 9,
+   "visual_reading_not_in_map": "*",
+   "example_lines": [
+    "Gross Profit / 25 ⟨038E⟩ 100",
+    "(1,050 – 420) ⟨038E⟩ 2 = 1,260 = 5%",
+    "8% ⟨038E⟩ 9/12 =6%",
+    "(15,200 ⟨038E⟩ €360) ⟨043D⟩ (8,400 ⟨038E⟩ €410)",
+    "(900 ⟨038E⟩ €210) ⟨043D⟩ (750 ⟨038E⟩ €290)"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_038E.png"
+  },
+  {
+   "family": "Cambria",
+   "cp": "U+008B",
+   "glyph_id": 139,
+   "count": 8,
+   "visual_reading_not_in_map": "i",
+   "example_lines": [
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": "i",
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Cambria_008B.png"
+  },
+  {
+   "family": "Cambria",
+   "cp": "U+0096",
+   "glyph_id": 150,
+   "count": 6,
+   "visual_reading_not_in_map": "t",
+   "example_lines": [
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": "t",
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Cambria_0096.png"
+  },
+  {
+   "family": "Cambria",
+   "cp": "U+0083",
+   "glyph_id": 131,
+   "count": 6,
+   "visual_reading_not_in_map": "a",
+   "example_lines": [
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": "a",
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Cambria_0083.png"
+  },
+  {
+   "family": "Cambria",
+   "cp": "U+008F",
+   "glyph_id": 143,
+   "count": 6,
+   "visual_reading_not_in_map": "m",
+   "example_lines": [
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": "m",
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Cambria_008F.png"
+  },
+  {
+   "family": "Cambria",
+   "cp": "U+0090",
+   "glyph_id": 144,
+   "count": 6,
+   "visual_reading_not_in_map": "n",
+   "example_lines": [
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": "n",
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Cambria_0090.png"
+  },
+  {
+   "family": "Cambria",
+   "cp": "U+0091",
+   "glyph_id": 145,
+   "count": 6,
+   "visual_reading_not_in_map": "o",
+   "example_lines": [
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": "o",
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Cambria_0091.png"
+  },
+  {
+   "family": "Cambria",
+   "cp": "U+0095",
+   "glyph_id": 149,
+   "count": 6,
+   "visual_reading_not_in_map": "s",
+   "example_lines": [
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": "s",
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Cambria_0095.png"
+  },
+  {
+   "family": "Calibri",
+   "cp": "U+0440",
+   "glyph_id": 1088,
+   "count": 4,
+   "visual_reading_not_in_map": "÷",
+   "example_lines": [
+    "4,500 ⟨0440⟩ 30 x 70",
+    "(64,000 ⟨043D⟩ 1,000) ⟨0440⟩ 4",
+    "440,000 x (96% ⟨0440⟩ 6)",
+    "(75,000 x .04) ⟨0440⟩ 12 x 9"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_0440.png"
+  },
+  {
+   "family": "Calibri",
+   "cp": "U+0079",
+   "glyph_id": 121,
+   "count": 4,
+   "visual_reading_not_in_map": "X",
+   "example_lines": [
+    "Creditors  ⟨0079⟩  12",
+    "21,000  ⟨0079⟩  12",
+    "70,000  ⟨0079⟩ 20",
+    "⟨0079⟩"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_0079.png"
+  },
+  {
+   "family": "Calibri",
+   "cp": "U+042A",
+   "glyph_id": 1066,
+   "count": 4,
+   "visual_reading_not_in_map": "½",
+   "example_lines": [
+    "225,000 ⟨039B⟩ 12⟨042A⟩% ⟨039B⟩ 12/12  months =",
+    "60,000 ⟨039B⟩ 12⟨042A⟩% ⟨039B⟩ 6/12  months =",
+    "12,000 ⟨039B⟩ 12⟨042A⟩% ⟨039B⟩ 12/12  months",
+    "47,000 ⟨039B⟩ 12⟨042A⟩% ⟨039B⟩ 6/12  months"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_042A.png"
+  },
+  {
+   "family": "Calibri",
+   "cp": "U+0396",
+   "glyph_id": 918,
+   "count": 4,
+   "visual_reading_not_in_map": "'",
+   "example_lines": [
+    "The expenses and revenues relating to that particular activity are entered in a ⟨0396⟩spec",
+    "profit and loss account⟨0396⟩ and the profit is then transferred to the income and expendi",
+    "Explain,  ⟨0396⟩under-absorption⟨0396⟩ of overheads and how it might arise in a manufactur"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_0396.png"
+  },
+  {
+   "family": "Calibri",
+   "cp": "U+0382",
+   "glyph_id": 898,
+   "count": 3,
+   "visual_reading_not_in_map": "{",
+   "example_lines": [
+    "Reconciliation of operating profit to net cash flow from operating activities. ⟨0382⟩13⟨03",
+    "⟨0382⟩34⟨0383⟩",
+    "⟨0382⟩5⟨0383⟩"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_0382.png"
+  },
+  {
+   "family": "Calibri",
+   "cp": "U+0383",
+   "glyph_id": 899,
+   "count": 3,
+   "visual_reading_not_in_map": "}",
+   "example_lines": [
+    "Reconciliation of operating profit to net cash flow from operating activities. ⟨0382⟩13⟨03",
+    "⟨0382⟩34⟨0383⟩",
+    "⟨0382⟩5⟨0383⟩"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_0383.png"
+  },
+  {
+   "family": "Cambria",
+   "cp": "U+0016",
+   "glyph_id": 22,
+   "count": 2,
+   "visual_reading_not_in_map": "S",
+   "example_lines": [
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Cambria_0016.png"
+  },
+  {
+   "family": "Cambria",
+   "cp": "U+0087",
+   "glyph_id": 135,
+   "count": 2,
+   "visual_reading_not_in_map": "e",
+   "example_lines": [
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Cambria_0087.png"
+  },
+  {
+   "family": "Cambria",
+   "cp": "U+0008",
+   "glyph_id": 8,
+   "count": 2,
+   "visual_reading_not_in_map": "E",
+   "example_lines": [
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Cambria_0008.png"
+  },
+  {
+   "family": "Cambria",
+   "cp": "U+009A",
+   "glyph_id": 154,
+   "count": 2,
+   "visual_reading_not_in_map": "x",
+   "example_lines": [
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Cambria_009A.png"
+  },
+  {
+   "family": "Cambria",
+   "cp": "U+0006",
+   "glyph_id": 6,
+   "count": 2,
+   "visual_reading_not_in_map": "C",
+   "example_lines": [
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091",
+    "⟨0016⟩⟨0096⟩⟨0083⟩⟨0096⟩⟨0087⟩ ⟨0008⟩⟨009A⟩⟨0083⟩⟨008F⟩⟨008B⟩⟨0090⟩⟨0083⟩⟨0096⟩⟨008B⟩⟨0091"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Cambria_0006.png"
+  },
+  {
+   "family": "Calibri",
+   "cp": "U+007A",
+   "glyph_id": 122,
+   "count": 2,
+   "visual_reading_not_in_map": "Y",
+   "example_lines": [
+    "PA⟨007A⟩E",
+    "PA⟨007A⟩E & PRSI"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_007A.png"
+  },
+  {
+   "family": "Calibri",
+   "cp": "U+0376",
+   "glyph_id": 886,
+   "count": 2,
+   "visual_reading_not_in_map": "—",
+   "example_lines": [
+    "A Cash gain ⟨0376⟩ increases profit and cash, e.g., investment income €3,700.",
+    "A Non-cash gain ⟨0376⟩ increases profits but not cash, e.g. profit on sale of fixed asset "
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_0376.png"
+  },
+  {
+   "family": "Calibri",
+   "cp": "U+034D",
+   "glyph_id": 845,
+   "count": 2,
+   "visual_reading_not_in_map": "?",
+   "example_lines": [
+    "(c) (i) What is the purpose of preparing a trial balance⟨034D⟩",
+    "(ii) Why would a company choose one method over another⟨034D⟩"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_034D.png"
+  },
+  {
+   "family": "Calibri",
+   "cp": "U+043F",
+   "glyph_id": 1087,
+   "count": 1,
+   "visual_reading_not_in_map": "×",
+   "example_lines": [
+    "1,260 /5 ⟨043F⟩ 100  =  25,200"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_043F.png"
+  },
+  {
+   "family": "Calibri",
+   "cp": "U+0356",
+   "glyph_id": 854,
+   "count": 1,
+   "visual_reading_not_in_map": ";",
+   "example_lines": [
+    "because⟨0356⟩"
+   ],
+   "word_evidence": [],
+   "solver_guess_dropped_by_gate": null,
+   "local_font_identical_glyph": [],
+   "crop": "/private/tmp/claude-501/-Users-alexlinehan/a42cc3fb-5c3d-4161-a835-78b770598f43/scratchpad/acc-glyph-2022-crops/Calibri_0356.png"
+  }
+ ],
+ "readability": {
+  "definition": "repaired tokens with >=1 affected glyph, edge punctuation trimmed, alphabetic, len>=2; in_vocab = lowercase form occurs in the 2010-2026 (not 2022) scheme vocabulary",
+  "words": 6310,
+  "in_vocab": 6167,
+  "fraction": 0.9773,
+  "per_style": {
+   "Calibri": {
+    "words": 5195,
+    "in_vocab": 5078,
+    "fraction": 0.9775
+   },
+   "Calibri,Bold": {
+    "words": 1124,
+    "in_vocab": 1094,
+    "fraction": 0.9733
+   },
+   "Calibri,Italic": {
+    "words": 50,
+    "in_vocab": 48,
+    "fraction": 0.96
+   }
+  },
+  "out_of_vocab_top": [
+   [
+    "McSharry",
+    5
+   ],
+   [
+    "Golden",
+    4
+   ],
+   [
+    "Portland",
+    4
+   ],
+   [
+    "Summer",
+    4
+   ],
+   [
+    "McGuigan",
+    3
+   ],
+   [
+    "consumers",
+    3
+   ],
+   [
+    "Mullins",
+    3
+   ],
+   [
+    "McCormack",
+    2
+   ],
+   [
+    "Fletcher",
+    2
+   ],
+   [
+    "barely",
+    2
+   ],
+   [
+    "consumer",
+    2
+   ],
+   [
+    "markets",
+    2
+   ],
+   [
+    "theft",
+    2
+   ],
+   [
+    "Avail",
+    2
+   ],
+   [
+    "Hockey",
+    2
+   ],
+   [
+    "transposition",
+    2
+   ],
+   [
+    "Dawn",
+    2
+   ],
+   [
+    "Fahey",
+    2
+   ],
+   [
+    "Foley",
+    2
+   ],
+   [
+    "summer",
+    2
+   ],
+   [
+    "Boathouse",
+    2
+   ],
+   [
+    "Royalties",
+    1
+   ],
+   [
+    "Puspure",
+    1
+   ],
+   [
+    "Proceeds",
+    1
+   ],
+   [
+    "Keogh",
+    1
+   ],
+   [
+    "subtraction",
+    1
+   ],
+   [
+    "Diminishing",
+    1
+   ],
+   [
+    "depending",
+    1
+   ],
+   [
+    "Np",
+    1
+   ],
+   [
+    "adversely",
+    1
+   ],
+   [
+    "excessively",
+    1
+   ],
+   [
+    "relative",
+    1
+   ],
+   [
+    "Confectionary",
+    1
+   ],
+   [
+    "global",
+    1
+   ],
+   [
+    "recovers",
+    1
+   ],
+   [
+    "post",
+    1
+   ],
+   [
+    "pandemic",
+    1
+   ],
+   [
+    "calorie",
+    1
+   ],
+   [
+    "cocoa",
+    1
+   ],
+   [
+    "functional",
+    1
+   ],
+   [
+    "confectionery",
+    1
+   ],
+   [
+    "snacking",
+    1
+   ],
+   [
+    "convenience",
+    1
+   ],
+   [
+    "taste",
+    1
+   ],
+   [
+    "snacks",
+    1
+   ],
+   [
+    "established",
+    1
+   ],
+   [
+    "conduct",
+    1
+   ],
+   [
+    "demands",
+    1
+   ],
+   [
+    "tastes",
+    1
+   ],
+   [
+    "Inflation",
+    1
+   ],
+   [
+    "challenges",
+    1
+   ],
+   [
+    "regard",
+    1
+   ],
+   [
+    "unclear",
+    1
+   ],
+   [
+    "Recommendation",
+    1
+   ],
+   [
+    "insolvent",
+    1
+   ],
+   [
+    "passed",
+    1
+   ],
+   [
+    "overvaluing",
+    1
+   ],
+   [
+    "undervaluing",
+    1
+   ],
+   [
+    "margins",
+    1
+   ],
+   [
+    "old",
+    1
+   ]
+  ]
+ },
+ "solver": {
+  "rounds": 6,
+  "accept_log": [
+   [
+    1,
+    1,
+    "U+011E",
+    "Calibri",
+    "e",
+    258,
+    2
+   ],
+   [
+    1,
+    1,
+    "U+015D",
+    "Calibri",
+    "i",
+    229,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+0176",
+    "Calibri",
+    "n",
+    204,
+    2
+   ],
+   [
+    1,
+    1,
+    "U+019A",
+    "Calibri",
+    "t",
+    198,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+0102",
+    "Calibri",
+    "a",
+    170,
+    3
+   ],
+   [
+    1,
+    1,
+    "U+0190",
+    "Calibri",
+    "s",
+    167,
+    2
+   ],
+   [
+    1,
+    1,
+    "U+018C",
+    "Calibri",
+    "r",
+    166,
+    2
+   ],
+   [
+    1,
+    1,
+    "U+017D",
+    "Calibri",
+    "o",
+    133,
+    3
+   ],
+   [
+    1,
+    1,
+    "U+0110",
+    "Calibri",
+    "c",
+    116,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+016F",
+    "Calibri",
+    "l",
+    104,
+    2
+   ],
+   [
+    1,
+    1,
+    "U+011A",
+    "Calibri",
+    "d",
+    94,
+    2
+   ],
+   [
+    1,
+    1,
+    "U+01B5",
+    "Calibri",
+    "u",
+    88,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+0189",
+    "Calibri",
+    "p",
+    71,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+0150",
+    "Calibri",
+    "g",
+    66,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+0175",
+    "Calibri",
+    "m",
+    53,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+01C0",
+    "Calibri",
+    "v",
+    45,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+015A",
+    "Calibri",
+    "h",
+    38,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+010F",
+    "Calibri",
+    "b",
+    36,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+01C7",
+    "Calibri",
+    "y",
+    32,
+    2
+   ],
+   [
+    1,
+    1,
+    "U+0128",
+    "Calibri",
+    "f",
+    30,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+03ED",
+    "Calibri",
+    "1",
+    21,
+    5
+   ],
+   [
+    1,
+    1,
+    "U+0358",
+    "Calibri",
+    ".",
+    20,
+    2
+   ],
+   [
+    1,
+    1,
+    "U+01C6",
+    "Calibri",
+    "x",
+    19,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+0012",
+    "Calibri",
+    "C",
+    19,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+0004",
+    "Calibri",
+    "A",
+    17,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+03EE",
+    "Calibri",
+    "2",
+    14,
+    3
+   ],
+   [
+    1,
+    1,
+    "U+01C1",
+    "Calibri",
+    "w",
+    13,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+005E",
+    "Calibri",
+    "S",
+    11,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+036C",
+    "Calibri",
+    "/",
+    11,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+0044",
+    "Calibri",
+    "M",
+    8,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+005A",
+    "Calibri",
+    "R",
+    8,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+001C",
+    "Calibri",
+    "E",
+    6,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+016C",
+    "Calibri",
+    "k",
+    6,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+018B",
+    "Calibri",
+    "q",
+    5,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+002F",
+    "Calibri",
+    "I",
+    4,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+0372",
+    "Calibri",
+    "-",
+    4,
+    1
+   ],
+   [
+    1,
+    1,
+    "U+0073",
+    "Calibri",
+    "V",
+    3,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+004B",
+    "Calibri",
+    "O",
+    3,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+0018",
+    "Calibri",
+    "D",
+    3,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+008F",
+    "Cambria",
+    "m",
+    2,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+008B",
+    "Cambria",
+    "i",
+    2,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+0090",
+    "Cambria",
+    "n",
+    2,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+0091",
+    "Cambria",
+    "o",
+    2,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+0095",
+    "Cambria",
+    "s",
+    2,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+0045",
+    "Calibri",
+    "N",
+    2,
+    0
+   ],
+   [
+    1,
+    1,
+    "U+0074",
+    "Calibri",
+    "W",
+    2,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+0057",
+    "Calibri",
+    "P",
+    39,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+0355",
+    "Calibri",
+    ",",
+    35,
+    2
+   ],
+   [
+    2,
+    1,
+    "U+037F",
+    "Calibri",
+    ")",
+    28,
+    1
+   ],
+   [
+    2,
+    1,
+    "U+037E",
+    "Calibri",
+    "(",
+    26,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+0064",
+    "Calibri",
+    "T",
+    24,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+0011",
+    "Calibri",
+    "B",
+    20,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+003E",
+    "Calibri",
+    "L",
+    19,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+0026",
+    "Calibri",
+    "F",
+    18,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+03EF",
+    "Calibri",
+    "3",
+    16,
+    1
+   ],
+   [
+    2,
+    1,
+    "U+0027",
+    "Calibri",
+    "G",
+    7,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+0357",
+    "Calibri",
+    ":",
+    7,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+03F2",
+    "Calibri",
+    "6",
+    7,
+    2
+   ],
+   [
+    2,
+    1,
+    "U+03F0",
+    "Calibri",
+    "4",
+    7,
+    2
+   ],
+   [
+    2,
+    1,
+    "U+03F1",
+    "Calibri",
+    "5",
+    7,
+    2
+   ],
+   [
+    2,
+    1,
+    "U+0068",
+    "Calibri",
+    "U",
+    6,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+03F4",
+    "Calibri",
+    "8",
+    6,
+    1
+   ],
+   [
+    2,
+    1,
+    "U+03F3",
+    "Calibri",
+    "7",
+    6,
+    1
+   ],
+   [
+    2,
+    1,
+    "U+002C",
+    "Calibri",
+    "H",
+    6,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+03F5",
+    "Calibri",
+    "9",
+    5,
+    1
+   ],
+   [
+    2,
+    1,
+    "U+0169",
+    "Calibri",
+    "j",
+    3,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+035B",
+    "Calibri",
+    "’",
+    3,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+0096",
+    "Cambria",
+    "t",
+    2,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+0083",
+    "Cambria",
+    "a",
+    2,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+0059",
+    "Calibri",
+    "Q",
+    2,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+003C",
+    "Calibri",
+    "K",
+    2,
+    0
+   ],
+   [
+    2,
+    1,
+    "U+003A",
+    "Calibri",
+    "J",
+    2,
+    0
+   ],
+   [
+    3,
+    1,
+    "U+03EC",
+    "Calibri",
+    "0",
+    9,
+    0
+   ],
+   [
+    5,
+    2,
+    "U+03A6",
+    "Calibri",
+    "€",
+    32,
+    0
+   ],
+   [
+    5,
+    2,
+    "U+0439",
+    "Calibri",
+    "%",
+    29,
+    0
+   ],
+   [
+    5,
+    2,
+    "U+0380",
+    "Calibri",
+    "[",
+    21,
+    1
+   ],
+   [
+    5,
+    2,
+    "U+0381",
+    "Calibri",
+    "]",
+    21,
+    0
+   ],
+   [
+    5,
+    2,
+    "U+0398",
+    "Calibri",
+    "&",
+    12,
+    0
+   ],
+   [
+    5,
+    2,
+    "U+0441",
+    "Calibri",
+    "=",
+    11,
+    0
+   ],
+   [
+    5,
+    2,
+    "U+0374",
+    "Calibri",
+    "-",
+    7,
+    0
+   ]
+  ]
+ }
+}

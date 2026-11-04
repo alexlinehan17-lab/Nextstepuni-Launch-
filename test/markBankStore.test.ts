@@ -223,8 +223,8 @@ describe('card variants', () => {
     );
   });
 
-  it('caps rows at five so one card stays one memory and fits a phone', () => {
-    expect(MAX_ROWS).toBe(5);
+  it('allows the six marking groups in a complete three-comparison route', () => {
+    expect(MAX_ROWS).toBe(6);
     expect(secCard().rows.length).toBeLessThanOrEqual(MAX_ROWS);
   });
 
@@ -280,6 +280,22 @@ describe('the review survives, which is the whole point', () => {
     const memory = { s: 12, d: 4.4, last: NOW, reps: 3, lapses: 0, state: 2 as const };
     const deck = { v: 1, updatedAt: NOW, cards: { [legacyId]: memory } };
     expect(store.memoryFor(deck, canonicalId)).toEqual(memory);
+  });
+
+  it('keeps English review memory across every Higher Level legacy bridge', async () => {
+    const published = (await import('../components/MarkBank/cards/english/published-higher.json')).default as unknown as {
+      bridgedLegacyIds: string[]; bridgeAliases: Record<string, string>; cards: Array<{ id: string }>;
+    };
+    expect(published.bridgedLegacyIds.length).toBeGreaterThanOrEqual(42);
+    const live = new Set(published.cards.map(card => card.id));
+    for (const legacyId of published.bridgedLegacyIds) {
+      const memory = { s: 9, d: 4.8, last: NOW, reps: 2, lapses: 0, state: 2 as const };
+      const deck = { v: 1, updatedAt: NOW, cards: { [legacyId]: memory } };
+      // Same-id: the reviewed card reads its own id. Alias: it reads the legacy id.
+      const servedBy = published.bridgeAliases[legacyId] ?? legacyId;
+      expect(live.has(servedBy), servedBy).toBe(true);
+      expect(store.memoryFor(deck, servedBy), legacyId).toEqual(memory);
+    }
   });
 
   it('survives corrupt localStorage instead of taking the tool down', () => {

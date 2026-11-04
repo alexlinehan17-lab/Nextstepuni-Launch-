@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NextStepUni — Modules design directions</title>
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;font-family:system-ui,sans-serif;background:#fff;color:#232323}
+    .review-bar{height:54px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 16px;border-bottom:1px solid #ddd;background:#fff;overflow-x:auto}
+    .review-bar>div{display:flex;align-items:center;gap:5px;flex-shrink:0}.review-label{font-size:11px;color:#777;margin-right:12px;white-space:nowrap}
+    button{font:inherit;font-size:12px;white-space:nowrap;background:transparent;color:inherit;border:0;cursor:pointer;padding:9px 12px;border-radius:6px;min-height:36px}
+    button[aria-pressed=true]{background:#efefef;color:#181818}button:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+    .stage{height:calc(100% - 54px);display:flex;justify-content:center;background:#e9e9e9}
+    iframe{display:block;width:100%;height:100%;border:0;background:#fff}.stage[data-device=mobile] iframe{width:390px;max-width:100%}
+    body[data-theme=dark]{color:#ddd;background:#141414}body[data-theme=dark] .review-bar{background:#181818;border-color:#333}body[data-theme=dark] button[aria-pressed=true]{background:#303030;color:#fff}body[data-theme=dark] .stage{background:#0d0d0d}
+    @media(max-width:650px){.review-label{display:none}.review-bar{padding:0 8px;gap:16px}button{padding:8px}.review-bar>div:last-child button[data-device=desktop]{display:none}}
+  </style>
+</head>
+<body>
+  <nav class="review-bar" aria-label="Compare module design directions">
+    <div><span class="review-label">Local design study</span><button type="button" data-direction="toolbar" aria-pressed="false">A · Toolbar</button><button type="button" data-direction="rail" aria-pressed="false">B · Topic rail</button><button type="button" data-direction="list" aria-pressed="true">C · Index</button></div>
+    <div><button type="button" data-theme="light" aria-pressed="true">Light</button><button type="button" data-theme="dark" aria-pressed="false">Dark</button><button type="button" data-device="desktop" aria-pressed="true">Desktop</button><button type="button" data-device="mobile" aria-pressed="false">Phone</button></div>
+  </nav>
+  <div class="stage" data-device="desktop"><iframe src="/?view=modules" title="NextStepUni modules design comparison" data-demo-account="true" data-app-preview="desktop" data-module-routes-preview="true" data-module-discovery-direction="list"></iframe></div>
+  <script>
+    const frame = document.querySelector('iframe');
+    let theme = new URLSearchParams(window.location.search).get('theme') === 'dark' ? 'dark' : 'light';
+    function send(detail) { frame.contentWindow.dispatchEvent(new frame.contentWindow.CustomEvent('nextstepuni:module-design-review', { detail })); }
+    function select(group, value) { document.querySelectorAll(`button[data-${group}]`).forEach(button => button.setAttribute('aria-pressed', String(button.dataset[group] === value))); }
+    document.body.dataset.theme = theme;
+    select('theme', theme);
+    document.querySelector('.review-bar').addEventListener('click', event => {
+      const button = event.target.closest('button');
+      if (!button) return;
+      if (button.dataset.direction) { select('direction', button.dataset.direction); frame.setAttribute('data-module-discovery-direction', button.dataset.direction); if (frame.contentDocument.querySelector('[data-discovery-direction]')) send({ direction: button.dataset.direction }); else frame.contentWindow.location.href = '/?view=modules'; }
+      if (button.dataset.theme) { theme = button.dataset.theme; select('theme', theme); document.body.dataset.theme = theme; send({ theme }); }
+      if (button.dataset.device) { select('device', button.dataset.device); document.querySelector('.stage').dataset.device = button.dataset.device; frame.setAttribute('data-app-preview', button.dataset.device); frame.contentWindow.location.href = '/?view=modules'; }
+    });
+    frame.addEventListener('load', () => {
+      const observer = new MutationObserver(() => { if (frame.contentDocument.querySelector('[data-discovery-direction]')) { observer.disconnect(); send({ theme }); } });
+      observer.observe(frame.contentDocument, { childList: true, subtree: true });
+      if (frame.contentDocument.querySelector('[data-discovery-direction]')) { observer.disconnect(); send({ theme }); }
+    });
+  </script>
+</body>
+</html>

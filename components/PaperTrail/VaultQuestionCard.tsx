@@ -12,11 +12,12 @@
  * We never show a crop we can't stand over.
  */
 
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { BookOpenCheck, Check, ChevronDown, ExternalLink, Plus, Scale } from 'lucide-react';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import { type PaperAnswerMap, type PaperAnswerQuestion } from '../../types/paperTrail';
 import CropView from './CropView';
+import SourceMaterialReader from '../MarkBank/SourceMaterialReader';
 import { paperRegionFor, schemeRegionFor } from './paperRegion';
 import { vaultPdf } from './vaultDocs';
 import {
@@ -25,8 +26,12 @@ import {
   mergePaperAnchorMetadata,
   resolveSibling,
 } from './vaultResolve';
-import { type TopicSibling } from './topics';
+import { questionLabel, type TopicSibling } from './topics';
 import { lensFor } from '../../data/markingLens';
+import { physicalEducationTask } from './physicalEducationTasks';
+const PhysicalEducationTaskCard = lazy(() => import('./PhysicalEducationTaskCard'));
+import { frenchAudioForPaper } from './frenchAudio';
+import FrenchPaperAudio from './FrenchPaperAudio';
 import AudioSourcePlayer from '../MarkBank/AudioSourcePlayer';
 
 const INK = '#1a1a1a';
@@ -116,7 +121,7 @@ interface Props {
   onOpenInPaper: () => void;
 }
 
-const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, onOpenInPaper }) => {
+const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, onOpenInPaper }) => {
   const [visible, setVisible] = useState(false);
   const [state, setState] = useState<CardState>({ s: 'idle' });
   const [lensOpen, setLensOpen] = useState(false);
@@ -126,6 +131,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
   const rootRef = useRef<HTMLDivElement | null>(null);
 
   const resolved = useMemo(() => resolveSibling(sibling), [sibling]);
+  const audioSource = useMemo(() => frenchAudioForPaper(sibling), [sibling]);
   // Marking Lens — the scheme-grounded marks breakdown, where one is authored.
   // Independent of the crop state: it teaches even when no crop can render.
   const lens = useMemo(() => lensFor(sibling), [sibling]);
@@ -188,6 +194,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
   ].filter(Boolean) as string[];
 
   const canReveal = state.s === 'ready' && state.schemeUrl !== null && state.q.mode === 'crop';
+  const isAccountingTask = sibling.subjectId === 'accounting' && state.s === 'ready' && Boolean(state.q.practiceTask);
 
   return (
     <div
@@ -203,7 +210,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
           {sibling.year}
         </span>
         <span className="min-w-0 truncate text-[13px]" style={{ color: '#7a7068' }}>
-          {[...meta, (state.s === 'ready' && state.q.label) || `Question ${sibling.n}`].join(' · ')}
+          {[...meta, (state.s === 'ready' && state.q.label) || questionLabel(sibling)].join(' · ')}
         </span>
         <span className="flex-1" />
         <button
@@ -227,18 +234,35 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
       </div>
 
       {/* Body */}
+      {visible && audioSource && <FrenchPaperAudio source={audioSource} />}
       {state.s === 'ready' ? (
         // Stays light in dark mode too — the card itself is forced white
         // (design system), so a zinc-950 strip here read as a black band.
         <div className="px-3 pt-3 pb-1 bg-[#fafafa]">
+          {state.q.practiceTask && (
+            <div className="px-1 pb-4" style={{ color: INK }}>
+              <p className="text-[13px] font-semibold whitespace-pre-line">{state.q.practiceTask.prompt}</p>
+              {state.q.practiceTask.focus && <p className="text-[13px] mt-2">{state.q.practiceTask.focus}</p>}
+              <p className="text-[12px] mt-2 font-semibold">{state.q.practiceTask.marks} marks · Full figures and instructions {isAccountingTask ? 'in the source reader' : 'below'}</p>
+            </div>
+          )}
           {state.q.audioMaterial && <AudioSourcePlayer source={state.q.audioMaterial} />}
           {state.q.practiceInstruction && <p className="mb-3 text-sm font-semibold text-[#2a2520]">{state.q.practiceInstruction}</p>}
-          <CropView
+          {isAccountingTask ? (
+            <div className="mark-bank-theme pb-3">
+              <SourceMaterialReader subjectId={sibling.subjectId} year={sibling.year} paperFileid={sibling.fileid}
+                source={{ kind: 'source-table', label: `Question ${sibling.n}`, title: 'Figures, tables and instructions',
+                  pages: [...new Set(state.region.map(region => region.p))],
+                  regions: state.region.map(region => ({ ...region, r: region.r ?? [0, 0, 1, 1] })),
+                  presentationNote: 'Original examination pages, preserving every table, figure and adjustment.',
+                  attribution: '© State Examinations Commission' }} />
+            </div>
+          ) : <CropView
             pdf={state.pdf}
             region={state.region}
             ariaLabel={paperCropLabel}
             failText="Couldn’t render this question — open the full paper."
-          />
+          />}
         </div>
       ) : state.s === 'fallback' ? (
         <button onClick={onOpenInPaper} className="w-full text-left px-4 py-3 text-[13px]" style={{ color: '#5a5550' }}>
@@ -246,9 +270,9 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
         </button>
       ) : (
         <div className="px-4 py-6">
-          <div className="h-3 rounded-full mb-2 animate-pulse" style={{ backgroundColor: '#f0efec', width: '82%' }} />
-          <div className="h-3 rounded-full mb-2 animate-pulse" style={{ backgroundColor: '#f0efec', width: '64%' }} />
-          <div className="h-3 rounded-full animate-pulse" style={{ backgroundColor: '#f0efec', width: '73%' }} />
+          <div className="h-3 rounded-full mb-2 animate-pulse" style={{ backgroundColor: 'var(--surface-soft)', width: '82%' }} />
+          <div className="h-3 rounded-full mb-2 animate-pulse" style={{ backgroundColor: 'var(--surface-soft)', width: '64%' }} />
+          <div className="h-3 rounded-full animate-pulse" style={{ backgroundColor: 'var(--surface-soft)', width: '73%' }} />
         </div>
       )}
 
@@ -333,14 +357,28 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
                 <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-2 px-1" style={{ color: '#9e9186' }}>
                   Marking scheme — © State Examinations Commission
                 </p>
-                {schemePdf && state.s === 'ready' ? (
-                  <CropView pdf={schemePdf} region={schemeRegionFor(state.q)} />
+                {state.s === 'ready' && state.q.schemeNote && (
+                  <p className="text-[13px] leading-relaxed mb-3 px-1" style={{ color: INK }}>
+                    {state.q.schemeNote}
+                  </p>
+                )}
+                {isAccountingTask ? (
+                  <div className="mark-bank-theme">
+                    <SourceMaterialReader subjectId={sibling.subjectId} year={sibling.year} paperFileid={sibling.fileid}
+                      source={{ kind: 'marking-scheme', label: `Question ${sibling.n}`, title: 'Worked solution and mark allocation',
+                        pages: [...new Set(schemeRegionFor(state.q).map(region => region.p))],
+                        regions: schemeRegionFor(state.q).map(region => ({ ...region, r: region.r ?? [0, 0, 1, 1] })),
+                        presentationNote: 'Original SEC marking scheme. Use the allocation for this task; page numbers refer to the PDF.',
+                        attribution: '© State Examinations Commission' }} />
+                  </div>
+                ) : schemePdf && state.s === 'ready' ? (
+                  <CropView pdf={schemePdf} region={schemeRegionFor(state.q)} trim responsive />
                 ) : schemeFailed ? (
                   <p className="text-[12px] py-3 text-center" style={{ color: '#5a5550' }}>
                     Couldn’t load the scheme — open the question in the full paper instead.
                   </p>
                 ) : (
-                  <div className="h-3 rounded-full my-4 animate-pulse mx-1" style={{ backgroundColor: '#f0efec', width: '70%' }} />
+                  <div className="h-3 rounded-full my-4 animate-pulse mx-1" style={{ backgroundColor: 'var(--surface-soft)', width: '70%' }} />
                 )}
               </div>
             )}
@@ -349,7 +387,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
           <button
             onClick={onOpenInPaper}
             className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-[13px] font-semibold"
-            style={{ color: ACCENT, borderTop: '2px solid #f0efec' }}
+            style={{ color: ACCENT, borderTop: '2px solid var(--outline-soft)' }}
           >
             <BookOpenCheck size={15} /> Open beside its marking scheme
           </button>
@@ -360,4 +398,11 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
   );
 };
 
+const VaultQuestionCard: React.FC<Props> = props => {
+  const task = physicalEducationTask(props.sibling);
+  if (task) return <Suspense fallback={<p role="status">Loading question…</p>}>
+    <PhysicalEducationTaskCard key={task.cardId} task={task} saved={props.saved} onToggleReview={props.onToggleReview} onOpenInPaper={props.onOpenInPaper} />
+  </Suspense>;
+  return <LegacyVaultQuestionCard {...props} />;
+};
 export default VaultQuestionCard;

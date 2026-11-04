@@ -1,0 +1,20 @@
+[
+ {"id": "chem-2011-ol-q1-a-i-ii", "ask": "Name the separation technique carried out using this arrangement of apparatus.", "answer": "ethanoic acid / ethanol", "figure": true},
+ {"id": "chem-2011-ol-q1-b-iii-explain", "ask": "Explain what happens to the liquid in the round-bottomed flask", "answer": "vapour cooled (condensed) in condenser", "figure": true},
+ {"id": "chem-2011-ol-q2-f", "ask": "Name a suitable indicator for this titration.", "answer": "bromothymol blue", "solution": true},
+ {"id": "chem-2011-ol-q2-h", "ask": "Calculate the concentration of the hydrochloric acid solution in moles per litre.", "answer": "0.11 M", "solution": true},
+ {"id": "chem-2011-ol-q3-b", "ask": "Draw a labelled diagram of a suitable arrangement of apparatus", "answer": "delivery tube to means of collection of oxygen"},
+ {"id": "chem-2011-ol-q3-c-iii", "ask": "Use your graph to find the time at which the reaction was finished.", "answer": "11 – 12 minutes", "figure": true},
+ {"id": "chem-2011-ol-q4-g", "ask": "", "answer": "notation its text cannot carry", "figure": true, "solution": true},
+ {"id": "chem-2011-ol-q4-i", "ask": "Calculate the percentage by mass of nitrogen in ammonium nitrate", "answer": "35 %", "solution": true},
+ {"id": "chem-2011-ol-q4-k-b", "ask": "Name the non-metallic element generally found in steel", "answer": "carbon"},
+ {"id": "chem-2011-ol-q6-d-ii", "ask": "Write a balanced equation for the complete combustion of ethyne in oxygen.", "answer": "sooty / smoky / luminous flame", "figure": true},
+ {"id": "chem-2011-ol-q9-a", "ask": "", "answer": "3: pH adjustment", "figure": true},
+ {"id": "chem-2011-ol-q9-b", "ask": "Describe the processes carried out in any two of these stages", "answer": "removal of nitrates (phosphates)"},
+ {"id": "chem-2011-ol-q10-a", "ask": "Describe how you would carry out a flame test on a sample of a salt.", "answer": "place in hottest part"},
+ {"id": "chem-2011-ol-q10-b-ii", "ask": "Describe a simple experiment you carried out to demonstrate the use of", "answer": "Prepare column (flush with solvent or water)", "solution": true},
+ {"id": "chem-2011-ol-q10-c-iii", "ask": "Indicate which substance is oxidised and which substance is reduced", "answer": "Mg loses electrons / chlorine gains electrons", "figure": true},
+ {"id": "chem-2011-ol-q11-b-iii", "ask": "What mass of aluminium chloride was formed?", "answer": "13.35", "figure": true},
+ {"id": "chem-2011-ol-q11-c-a-i", "ask": "State two possible consequences of an increased greenhouse effect.", "answer": "melting of ice caps", "figure": true},
+ {"id": "chem-2011-ol-q11-c-b", "ask": "Name the English scientist, pictured on the right, who isolated", "answer": "Humphry Davy", "figure": true}
+]

@@ -215,7 +215,7 @@ const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent,
                       onChange={e => setReflectDrafts(p => ({ ...p, [d.day]: e.target.value }))}
                       rows={2}
                       className="w-full text-[13.5px] rounded-lg p-2.5 outline-none resize-none border-2 border-zinc-200 focus:border-[#0E9AA8] mb-3"
-                      style={{ backgroundColor: '#F6F6F4', color: '#2a2622' }}
+                      style={{ backgroundColor: 'var(--surface-paper)', color: '#2a2622' }}
                       placeholder="One line, just for you (optional)"
                     />
 
@@ -305,7 +305,7 @@ const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent,
             <p className="text-[13px] mb-4" style={{ color: '#7a7068' }}>This is a loop, not a you-problem.</p>
             <div className="space-y-2 mb-5">
               {LOOP_STEPS.map((l, i) => (
-                <MotionDiv key={i} initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.12 * i }} className="rounded-xl px-3.5 py-2.5" style={{ backgroundColor: '#F6F6F4' }}>
+                <MotionDiv key={i} initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.12 * i }} className="rounded-xl px-3.5 py-2.5" style={{ backgroundColor: 'var(--surface-paper)' }}>
                   <p className="text-[14px] font-semibold" style={{ color: INK }}>{l.label}</p>
                   <p className="text-[12.5px] leading-snug" style={{ color: '#6a625b' }}>{l.note}</p>
                 </MotionDiv>
@@ -330,7 +330,7 @@ const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent,
               {(northStarWhy ? [northStarWhy, ...WHY_OPTIONS] : WHY_OPTIONS).map((w, i) => {
                 const on = why === w;
                 return (
-                  <button key={i} onClick={() => setWhy(w)} className="w-full text-left rounded-xl px-4 py-3 transition-colors flex items-center gap-2.5" style={{ backgroundColor: on ? CYAN_TINT : '#F6F6F4', border: on ? `2px solid ${CYAN}` : '2px solid transparent' }}>
+                  <button key={i} onClick={() => setWhy(w)} className="w-full text-left rounded-xl px-4 py-3 transition-colors flex items-center gap-2.5" style={{ backgroundColor: on ? CYAN_TINT : 'var(--surface-paper)', border: on ? `2px solid ${CYAN}` : '2px solid var(--outline-soft)' }}>
                     <span className="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style={on ? { backgroundColor: CYAN } : { border: '2px solid #d0cdc8' }}>{on && <Check size={12} strokeWidth={3} className="text-white" />}</span>
                     <span className="text-[14px]" style={{ color: '#2a2622' }}>{w}{i === 0 && northStarWhy ? ' ✦' : ''}</span>
                   </button>
@@ -353,7 +353,7 @@ const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent,
               {OBSTACLES.map(o => {
                 const on = obstacleIds.includes(o.id);
                 return (
-                  <button key={o.id} onClick={() => toggleObstacle(o.id)} className="w-full text-left rounded-xl px-4 py-3 transition-colors flex items-center gap-2.5" style={{ backgroundColor: on ? CYAN_TINT : '#F6F6F4', border: on ? `2px solid ${CYAN}` : '2px solid transparent' }}>
+                  <button key={o.id} onClick={() => toggleObstacle(o.id)} className="w-full text-left rounded-xl px-4 py-3 transition-colors flex items-center gap-2.5" style={{ backgroundColor: on ? CYAN_TINT : 'var(--surface-paper)', border: on ? `2px solid ${CYAN}` : '2px solid var(--outline-soft)' }}>
                     <span className="w-5 h-5 rounded-md flex items-center justify-center shrink-0" style={on ? { backgroundColor: CYAN } : { border: '2px solid #d0cdc8' }}>{on && <Check size={12} strokeWidth={3} className="text-white" />}</span>
                     <span className="text-[14px]" style={{ color: '#2a2622' }}>{o.label}</span>
                   </button>
@@ -386,7 +386,7 @@ const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent,
             {label('Your if-then plan')}
             <div className="rounded-xl px-4 py-3 mb-2 border-2 border-zinc-200 dark:border-zinc-700">
               <p className="text-[13.5px] font-medium mb-2" style={{ color: '#2a2622' }}>{primary.ifThen.trigger}…</p>
-              <textarea value={actionText} onChange={e => setActionText(e.target.value)} rows={2} className="w-full text-[13.5px] rounded-lg p-2 outline-none resize-none border border-zinc-200 focus:border-[#0E9AA8]" style={{ backgroundColor: '#F6F6F4', color: '#2a2622' }} placeholder="…then I’ll…" />
+              <textarea value={actionText} onChange={e => setActionText(e.target.value)} rows={2} className="w-full text-[13.5px] rounded-lg p-2 outline-none resize-none border border-zinc-200 focus:border-[#0E9AA8]" style={{ backgroundColor: 'var(--surface-paper)', color: '#2a2622' }} placeholder="…then I’ll…" />
             </div>
             <p className="text-[11px] mb-4" style={{ color: CYAN_DARK_TEXT }}>Read it back to yourself once — that’s what makes it stick.</p>
 
@@ -395,7 +395,7 @@ const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent,
               {PEER_SCRIPTS.map((s, i) => {
                 const on = script === s;
                 return (
-                  <button key={i} onClick={() => setScript(s)} className="w-full text-left rounded-lg px-3 py-2 text-[13.5px] transition-colors" style={{ backgroundColor: on ? CYAN_TINT : '#F6F6F4', border: on ? `2px solid ${CYAN}` : '2px solid transparent', color: '#2a2622' }}>“{s}”</button>
+                  <button key={i} onClick={() => setScript(s)} className="w-full text-left rounded-lg px-3 py-2 text-[13.5px] transition-colors" style={{ backgroundColor: on ? CYAN_TINT : 'var(--surface-paper)', border: on ? `2px solid ${CYAN}` : '2px solid var(--outline-soft)', color: '#2a2622' }}>“{s}”</button>
                 );
               })}
             </div>
@@ -417,7 +417,7 @@ const Comeback: React.FC<ComebackProps> = ({ saved, onSave, onExit, onGoContent,
 
             <div className="flex flex-wrap gap-1.5 mb-2">
               {SUPPORT_PEOPLE.map(p => (
-                <button key={p.id} onClick={() => setPerson(p.role)} className="rounded-full px-3 py-1.5 text-[12.5px] font-medium transition-colors" style={{ backgroundColor: person === p.role ? CYAN : '#F6F6F4', color: person === p.role ? '#fff' : '#2a2622' }}>{p.role}{p.deis ? ' · DEIS' : ''}</button>
+                <button key={p.id} onClick={() => setPerson(p.role)} className="rounded-full px-3 py-1.5 text-[12.5px] font-medium transition-colors" style={{ backgroundColor: person === p.role ? CYAN : 'var(--surface-paper)', color: person === p.role ? '#fff' : '#2a2622' }}>{p.role}{p.deis ? ' · DEIS' : ''}</button>
               ))}
             </div>
             <input value={person} onChange={e => setPerson(e.target.value)} className={`${inputCls} mb-4`} placeholder="…or type their name" />

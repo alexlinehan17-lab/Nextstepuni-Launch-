@@ -1,0 +1,146 @@
+/* ── Sit the paper: the entry box and the exam hall ─────────────────────────
+   Everything here honours prefers-reduced-motion and ?static=1: the hall
+   carries data-instant then, and every animation in it is switched off. */
+
+/* ── The picker in the Frame ─────────────────────────────────────────────── */
+.hallpick__grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 28px 40px; align-items: start; }
+.hallpick { border: 0; padding: 0; margin: 0; min-width: 0; }
+.hallpick__row {
+  display: grid; grid-template-columns: 12px minmax(0, 1fr) auto; gap: 14px; align-items: center;
+  padding: 10px 0; border-top: 1px solid rgba(26, 26, 26, 0.14);
+  font-family: 'DM Sans', 'DM Sans Fallback', system-ui, sans-serif; font-size: 15px; line-height: 1.35; color: #1A1A1A;
+  cursor: pointer;
+}
+.hallpick__row:first-of-type { border-top: 0; padding-top: 4px; }
+.hallpick__sq { width: 12px; height: 12px; border: 1.5px solid #1A1A1A; background: #FFFFFF; transition: background-color 120ms ease; }
+.hallpick__row:hover .hallpick__sq { background: #FDEEDF; }
+.hallpick__row[data-on] .hallpick__sq { background: #1A1A1A; }
+.hallpick__row[data-on] .hallpick__label { font-weight: 600; }
+.hallpick__time {
+  font-family: 'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: #5F5A55; white-space: nowrap; font-variant-numeric: tabular-nums lining-nums;
+}
+.hallpick__row:has(input:focus-visible) { outline: 2px solid #B84A0C; outline-offset: 2px; border-radius: 4px; }
+.hallpick__preview { margin: 0; width: 200px; }
+.hallpick__preview img { display: block; width: 100%; height: auto; aspect-ratio: 595 / 842; border: 1px solid #1A1A1A; box-shadow: 0 1px 0 0 #1A1A1A; background: #FFFFFF; }
+.hallpick__preview figcaption { margin-top: 10px; font-family: 'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace; font-size: 11px; line-height: 1.6; color: #766A5F; }
+@media (max-width: 767px) {
+  .hallpick__grid { grid-template-columns: minmax(0, 1fr); }
+  .hallpick__preview { display: none; }
+}
+
+/* ── The page behind recedes ───────────────────────────────────────────────
+   While the hall is open the landing page scales back a touch about the
+   middle of the window (--hall-oy is set to that point on open). No blur:
+   the hall's own lights do the dimming. */
+html.landing-hall-open .landing-page { transform-origin: 50% var(--hall-oy, 50vh); }
+html.landing-hall-open:not(.landing-hall-instant) .landing-page { transition: transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1); }
+html.landing-hall-instant .landing-page { transition: none !important; }
+html.landing-hall-receded .landing-page { transform: scale(0.96); }
+
+/* ── The hall ────────────────────────────────────────────────────────────── */
+.hall {
+  position: fixed; inset: 0; height: 100dvh; z-index: 1000;
+  font-family: 'DM Sans', 'DM Sans Fallback', system-ui, sans-serif; color: #1A1A1A;
+  outline: none; touch-action: none;
+}
+.hall__lights { position: absolute; inset: 0; background: #E9E9E9; }
+.hall__room { position: absolute; inset: 0; display: grid; grid-template-rows: auto auto minmax(0, 1fr); overflow: hidden; }
+
+/* The wall: the clock, and the sitting as the cover prints it. */
+.hall__wall { padding: clamp(20px, 4vh, 40px) 24px 0; text-align: center; }
+.hall__clock {
+  margin: 0; font-family: 'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace;
+  font-size: clamp(44px, 8vw, 96px); line-height: 1; letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums lining-nums; color: #1A1A1A;
+}
+.hall__sitting {
+  margin: 12px auto 0; max-width: 60ch;
+  font-family: 'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace; font-size: 11px; line-height: 1.6; letter-spacing: 0.14em; color: #5F5A55;
+}
+/* The desk's far edge, an ink hairline. */
+.hall__edge { display: block; height: 1.5px; background: #1A1A1A; margin-top: clamp(18px, 3.4vh, 32px); transform-origin: left center; }
+
+/* The desk: the paper, and the paper's own instructions beside it. On a wide
+   screen the paper stays put and a long set of instructions scrolls in its
+   own column; on a phone the whole desk scrolls (below). */
+.hall__desk {
+  --hall-paper-h: min(60vh, 640px);
+  display: grid; grid-template-columns: auto minmax(0, 52ch); justify-content: center; align-items: start;
+  gap: clamp(28px, 5vw, 72px); padding: clamp(24px, 4.5vh, 44px) clamp(24px, 6vw, 96px) 28px;
+  min-height: 0; overflow: hidden; overscroll-behavior: contain; touch-action: pan-y;
+}
+/* The notes stand no taller than the paper, so a long list is cut on the paper's own bottom edge and scrolls. */
+.hall__notes { max-height: var(--hall-paper-h); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; padding-right: 12px; }
+.hall__paper { height: var(--hall-paper-h); width: calc(var(--hall-paper-h) * 0.7067); perspective: 1800px; }
+.hall__sheet { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; }
+.hall__face {
+  position: absolute; inset: 0; width: 100%; height: 100%; display: block;
+  background: #FFFFFF; border: 1px solid #1A1A1A; box-shadow: 0 1px 0 0 #1A1A1A;
+  backface-visibility: hidden; -webkit-backface-visibility: hidden;
+}
+.hall__face--front { object-fit: cover; }
+.hall__face--back { transform: rotateY(180deg); }
+.hall__notes { padding-top: 2px; }
+.hall__begin {
+  margin: 0; font-family: 'Source Serif 4', 'Source Serif 4 Fallback', Georgia, serif; font-style: italic; font-weight: 400;
+  font-size: clamp(26px, 3vw, 40px); line-height: 1.1; letter-spacing: -0.01em; color: #1A1A1A;
+}
+.hall__instructions {
+  list-style: none; margin: 22px 0 0; padding: 0;
+  font-family: 'Source Serif 4', 'Source Serif 4 Fallback', Georgia, serif; font-size: 15px; line-height: 1.5; color: #1A1A1A;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+}
+.hall__instructions li + li { margin-top: 8px; }
+.hall__source { margin: 18px 0 0; font-family: 'Apercu Mono Pro', 'Roboto Mono', ui-monospace, monospace; font-size: 11px; line-height: 1.6; color: #5F5A55; }
+.hall__leave { position: absolute; top: 18px; right: 22px; z-index: 2; }
+
+/* ── Opening: lights, desk edge, the paper lands face-down, turns, then the clock ── */
+.hall[data-phase="opening"] .hall__lights { animation: hall-in 600ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.hall[data-phase="opening"] .hall__leave { animation: hall-in 300ms ease both; }
+.hall[data-phase="opening"] .hall__edge { animation: hall-edge 700ms cubic-bezier(0.2, 0.8, 0.2, 1) 300ms both; }
+.hall[data-phase="opening"] .hall__paper { animation: hall-land 520ms cubic-bezier(0.2, 0.8, 0.2, 1) 700ms both; }
+.hall[data-phase="opening"] .hall__sheet { animation: hall-turn 700ms cubic-bezier(0.4, 0, 0.2, 1) 1400ms both; }
+.hall[data-phase="opening"] .hall__wall { animation: hall-in 500ms ease 1500ms both; }
+.hall[data-phase="opening"] .hall__instructions,
+.hall[data-phase="opening"] .hall__source { animation: hall-in 500ms ease 1900ms both; }
+.hall[data-phase="opening"] .hall__begin { animation: hall-rise 600ms cubic-bezier(0.2, 0.8, 0.2, 1) 2100ms both; }
+
+/* ── Ending: "Pens down.", the paper collected up the desk, the lights back ── */
+.hall[data-phase="closing"] .hall__begin { animation: hall-rise 300ms ease both; }
+.hall[data-phase="closing"] .hall__paper { animation: hall-collect 700ms cubic-bezier(0.6, 0, 0.9, 0.4) 300ms forwards; }
+.hall[data-phase="closing"] .hall__instructions,
+.hall[data-phase="closing"] .hall__source { animation: hall-out 300ms ease 300ms forwards; }
+.hall[data-phase="closing"] .hall__room,
+.hall[data-phase="closing"] .hall__lights { animation: hall-out 600ms ease 900ms forwards; }
+
+@keyframes hall-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes hall-out { to { opacity: 0; } }
+@keyframes hall-edge { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes hall-land { from { opacity: 0; transform: translateY(-36px) scale(1.04); } to { opacity: 1; transform: none; } }
+@keyframes hall-turn { from { transform: rotateY(180deg); } to { transform: rotateY(360deg); } }
+@keyframes hall-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes hall-collect { to { transform: translateY(-120vh) rotate(-1.5deg); } }
+
+/* Reduced motion and ?static=1: every state at once. */
+.hall[data-instant], .hall[data-instant] * { animation: none !important; transition: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .hall, .hall * { animation: none !important; transition: none !important; }
+  html.landing-hall-open .landing-page { transition: none !important; }
+}
+
+/* ── Phones: the hall fills the screen, the paper fits, the clock at the top, the way out under the thumb ── */
+@media (max-width: 767px) {
+  .hall__wall { padding: 18px 16px 0; }
+  .hall__edge { margin-top: 16px; }
+  .hall__desk { grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 22px; padding: 20px 20px calc(96px + env(safe-area-inset-bottom)); overflow-y: auto; }
+  .hall__desk { --hall-paper-h: min(46dvh, calc((100vw - 40px) / 0.7067)); }
+  .hall__notes { width: 100%; max-width: 52ch; max-height: none; overflow: visible; padding-right: 0; }
+  .hall__instructions { font-size: 14px; }
+  .hall__leave {
+    top: auto; right: 0; left: 0; bottom: 0; display: flex;
+    padding: 12px 20px calc(12px + env(safe-area-inset-bottom));
+    background: #E9E9E9; border-top: 1px solid rgba(26, 26, 26, 0.14);
+  }
+  .hall__leave .landing-btn { width: 100%; }
+}

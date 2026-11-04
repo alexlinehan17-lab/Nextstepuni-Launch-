@@ -1,0 +1,4 @@
+{"name":"desktop","paperSecondPage":"Q3(I) · QUESTION AND CONTEXT · QUESTION PAGES\nOriginal question pages\nPDF PAGE 9\n1 / 3\nPDF PAGE 10\n2 / 3\nPDF PAGE 11\n3 / 3\n© State Examinations Commission\nOriginal SEC examination layout, including mathematical notation and diagrams.\nOpen the original paper"}
+{"name":"desktop","errors":[],"mark":"Your mark: 5 / 5","overflow":false,"reviewBounds":{"left":174,"right":1266,"scrollLeft":0}}
+{"name":"phone","paperSecondPage":"Q3(I) · QUESTION AND CONTEXT · QUESTION PAGES\nOriginal question pages\n−\n100%\n+\nPDF PAGE 9\n1 / 3\nPDF PAGE 10\n2 / 3\nPDF PAGE 11\n3 / 3\n© State Examinations Commission\nOpen the original paper"}
+{"name":"phone","errors":[],"mark":"Your mark: 5 / 5","overflow":false,"reviewBounds":{"left":0,"right":390,"scrollLeft":0}}

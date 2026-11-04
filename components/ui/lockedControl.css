@@ -1,0 +1,12 @@
+.locked-control, .locked-control *, .landing-locked, .landing-locked * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Cg fill='white' stroke='%231a1a1a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='6' y='12' width='16' height='12' rx='3'/%3E%3Cpath d='M9 12V8a5 5 0 0 1 10 0v4' fill='none'/%3E%3Cpath d='M14 17v3'/%3E%3C/g%3E%3C/svg%3E") 14 14, not-allowed !important;
+}
+.locked-control-shake { animation: locked-control-shake .32s ease-in-out both !important; }
+@keyframes locked-control-shake {
+  0%, 100% { translate: 0; }
+  20%, 60% { translate: -3px 0; }
+  40%, 80% { translate: 3px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .locked-control-shake { animation: none !important; }
+}

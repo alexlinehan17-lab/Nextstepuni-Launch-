@@ -1,3 +1,5 @@
+import './module-cards.css';
+import { ModuleOutcome } from './learning/ModuleDiscovery';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -235,8 +237,8 @@ export default function ModuleShowcase({
                 key={item.id}
                 type="button"
                 onClick={() => onSelectCourse(item.id)}
-                className="group w-full rounded-xl border-[1.5px] bg-white p-4 text-left transition-transform active:scale-[0.985] dark:bg-zinc-900"
-                style={{ borderColor: itemInProgress ? '#F26B1F' : '#383838' }}
+                className="world-ink-card group w-full rounded-xl border-[1.5px] bg-white p-4 text-left transition-transform active:scale-[0.985] dark:bg-zinc-900"
+                style={{ borderColor: itemInProgress ? '#F26B1F' : 'var(--module-card-border, #383838)' }}
               >
                 <div className="flex items-start gap-3">
                   <span
@@ -258,6 +260,7 @@ export default function ModuleShowcase({
                     <p className="mt-2 line-clamp-2 text-[12px] leading-relaxed text-zinc-600 dark:text-zinc-400">
                       {item.description}
                     </p>
+                    <ModuleOutcome course={item} />
 
                     <div className="mt-3 flex items-center gap-2.5">
                       <span className="h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: `${theme.deep}1F` }}>
@@ -295,12 +298,7 @@ export default function ModuleShowcase({
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ type: 'spring', stiffness: 240, damping: 32, opacity: { duration: 0.18 } }}
-              className="rounded-[24px] md:rounded-[28px] overflow-hidden"
-              style={{
-                background: '#FFFFFF',
-                border: `1px solid ${theme.blob}66`,
-                boxShadow: '0 4px 18px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.04)',
-              }}
+              className="world-ink-card rounded-[24px] md:rounded-[28px] overflow-hidden"
             >
               <div className="p-6 md:p-9 lg:p-10">
                 {/* ── Eyebrow row — full width, above both columns ── */}
@@ -356,7 +354,7 @@ export default function ModuleShowcase({
                     )}
 
                     {/* Begins with panel — muted secondary chip */}
-                    <div className="mt-5 px-3 py-2 rounded-lg" style={{ background: '#F1F0ED', border: '1px solid #d0cdc8' }}>
+                    <div className="world-section-preview mt-5 px-3 py-2 rounded-lg" style={{ background: 'var(--surface-soft)', border: '1px solid var(--outline-soft)' }}>
                       <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: theme.deep }}>
                         {isInProgress
                           ? `Up next · Section ${startStep} of ${course.sectionsCount}`
@@ -368,7 +366,7 @@ export default function ModuleShowcase({
                     <div className="mt-6 flex flex-col items-start gap-3">
                       <button
                         onClick={() => onSelectCourse(course.id)}
-                        className="group inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
+                        className="world-primary-action group inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
                         style={{
                           ...tones.cta(rawTheme),
                           boxShadow: `0 6px 16px ${tones.cta(rawTheme).background}55`,
@@ -407,11 +405,11 @@ export default function ModuleShowcase({
                           return (
                             <div
                               key={i}
-                              className="flex items-start gap-3 py-2"
-                              style={{ borderTop: i === 0 ? 'none' : '1px solid rgba(0,0,0,0.04)' }}
+                              className="world-section-row flex items-start gap-3 py-2"
+                              style={{ borderTop: i === 0 ? 'none' : '1px solid var(--outline-soft)' }}
                             >
                               <span
-                                className="shrink-0 mt-0.5 flex items-center justify-center"
+                                className={`${sectionDone ? '' : 'world-section-number '}shrink-0 mt-0.5 flex items-center justify-center`}
                                 style={{
                                   width: 22, height: 22, borderRadius: '50%',
                                   backgroundColor: sectionDone ? theme.mid : '#e0dbd4',
@@ -438,7 +436,7 @@ export default function ModuleShowcase({
                 </AnimatePresence>
 
                 {/* ── Metadata footer — full width below both columns ── */}
-                <div className="mt-7 pt-5 flex flex-wrap items-baseline gap-x-8 gap-y-3" style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}>
+                <div className="mt-7 pt-5 flex flex-wrap items-baseline gap-x-8 gap-y-3" style={{ borderTop: '1px solid var(--outline-soft)' }}>
                   <div className="flex items-baseline gap-2">
                     <span className="font-mono text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: theme.deep }}>Progress</span>
                     <span className="text-[13px] font-medium" style={{ color: isCompleted ? tones.midText(rawTheme) : 'var(--ink-primary)' }}>
@@ -485,7 +483,7 @@ export default function ModuleShowcase({
                       <div
                         key={c.id}
                         aria-current="true"
-                        className="shrink-0 w-[260px] md:w-[280px] rounded-2xl overflow-hidden snap-start cursor-default"
+                        className="world-current-card shrink-0 w-[260px] md:w-[280px] rounded-2xl overflow-hidden snap-start cursor-default"
                         style={{
                           background: '#FFFFFF',
                           border: `1px dashed ${theme.mid}55`,
@@ -519,12 +517,7 @@ export default function ModuleShowcase({
                       transition={{ type: 'spring', stiffness: 240, damping: 32 }}
                       onClick={() => goTo(originalIdx)}
                       whileHover={{ y: -2 }}
-                      className="shrink-0 w-[260px] md:w-[280px] text-left rounded-2xl overflow-hidden snap-start transition-shadow hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-                      style={{
-                        background: '#FFFFFF',
-                        border: `1px solid ${theme.blob}66`,
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                      }}
+                      className="world-ink-card shrink-0 w-[260px] md:w-[280px] text-left rounded-2xl overflow-hidden snap-start transition-shadow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
                     >
                       <div className="flex flex-col h-full p-5 min-h-[220px]">
                         <div className="flex justify-center -mt-4 -mb-2">

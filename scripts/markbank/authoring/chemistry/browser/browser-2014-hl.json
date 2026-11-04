@@ -1,0 +1,21 @@
+[
+ {"id": "chem-2014-hl-q1-a", "ask": "", "answer": "concentration (molarity) known (found, got, etc.) by another titration", "figure": true},
+ {"id": "chem-2014-hl-q1-b", "ask": "Describe in detail how the chemist should have dissolved", "answer": "wash (rinse) into beaker of deionised (distilled, pure) water"},
+ {"id": "chem-2014-hl-q1-f", "ask": "Calculate the percentage water of crystallisation", "answer": "54 – 54.4%", "solution": true},
+ {"id": "chem-2014-hl-q2-a-reflux", "ask": "What is the purpose of refluxing in Stage 1", "answer": "without losing volatile material", "figure": true},
+ {"id": "chem-2014-hl-q2-e", "ask": "", "answer": "propane-1,2,3-triol / glycerol / glycerine", "figure": true, "solution": true},
+ {"id": "chem-2014-hl-q3-c", "ask": "", "answer": "6 points correctly plotted", "figure": true, "solution": true},
+ {"id": "chem-2014-hl-q4-c", "ask": "", "answer": "Allow if francium not written", "figure": true, "solution": true},
+ {"id": "chem-2014-hl-q4-f", "ask": "What is meant by one mole of a substance?", "answer": "amount containing as many particles* as"},
+ {"id": "chem-2014-hl-q4-k-a", "ask": "Give two uses for the oxygen gas", "answer": "steel-making"},
+ {"id": "chem-2014-hl-q5-a-configuration", "ask": "Write the electron configuration (s, p)", "answer": "1s² 2s² 2px² 2py² 2pz² 3s² 3px¹ 3py¹", "solution": true},
+ {"id": "chem-2014-hl-q5-c", "ask": "Explain how the graph provides evidence", "answer": "line emission (absorption) spectra of elements", "figure": true},
+ {"id": "chem-2014-hl-q6-d-calculation", "ask": "Calculate the heat of combustion of butane", "answer": "4C + 4O₂ → 4CO₂ ΔH = – 1574 kJ", "solution": true},
+ {"id": "chem-2014-hl-q7-b", "ask": "Identify the two substances acting as bases", "answer": "NO₂⁻", "figure": true},
+ {"id": "chem-2014-hl-q8-d-ii", "ask": "", "answer": "chain reaction occurs / propagation steps repeat", "figure": true, "solution": true},
+ {"id": "chem-2014-hl-q9-b", "ask": "", "answer": "0.9 mol", "figure": true, "solution": true},
+ {"id": "chem-2014-hl-q9-c-i-ii", "ask": "What effect, if any, would an increase in", "answer": "value decreases", "figure": true},
+ {"id": "chem-2014-hl-q10-a-ii", "ask": "", "answer": "Allow 3 for methyl even if not expanded", "figure": true, "solution": true},
+ {"id": "chem-2014-hl-q10-c-balancing", "ask": "Hence, or otherwise, balance the equation.", "answer": "3Cd + 8H⁺ + 2NO₃⁻ → 3Cd²⁺ + 2NO + 4H₂O"},
+ {"id": "chem-2014-hl-q11-c-b-i", "ask": "", "answer": "regular solids", "figure": true}
+]

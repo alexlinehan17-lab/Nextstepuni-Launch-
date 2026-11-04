@@ -66,7 +66,7 @@ async function noteUse(cache: Cache, url: string): Promise<void> {
 }
 
 /**
- * Fetch a corpus PDF, cache-first. Returns the bytes, or null when both the
+ * Fetch a corpus document (PDF or original image), cache-first. Returns the bytes, or null when both the
  * cache and the network fail (the caller then lets pdf.js try its own URL
  * loader, which surfaces the existing retry / open-in-browser UI).
  */

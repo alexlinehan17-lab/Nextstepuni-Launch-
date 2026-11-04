@@ -9,13 +9,31 @@
  * is unavailable. Sound can be muted via setEnabled(false).
  */
 
-import { useRef, useCallback } from 'react';
+import { useRef, useCallback, useEffect } from 'react';
 
 type Tone = 'swipe' | 'save' | 'skip' | 'tap' | 'complete';
 
 export function useDeckSound() {
   const ctxRef = useRef<AudioContext | null>(null);
   const enabledRef = useRef(true);
+  const timers = useRef(new Set<number>());
+
+  const stop = useCallback(() => {
+    timers.current.forEach(timer => window.clearTimeout(timer));
+    timers.current.clear();
+    const context = ctxRef.current;
+    ctxRef.current = null;
+    if (context && context.state !== 'closed') void context.close().catch(() => {});
+  }, []);
+  useEffect(() => stop, [stop]);
+
+  const later = useCallback((callback: () => void, delay: number) => {
+    const timer = window.setTimeout(() => {
+      timers.current.delete(timer);
+      if (enabledRef.current) callback();
+    }, delay);
+    timers.current.add(timer);
+  }, []);
 
   const getCtx = useCallback((): AudioContext | null => {
     if (typeof window === 'undefined') return null;
@@ -42,6 +60,7 @@ export function useDeckSound() {
       g.connect(c.destination);
       o.start();
       o.stop(c.currentTime + durSec + 0.03);
+      o.onended = () => { o.disconnect(); g.disconnect(); };
     },
     [],
   );
@@ -55,20 +74,23 @@ export function useDeckSound() {
         if (tone === 'swipe') blip(c, 300, 0.18, 'sine', 0.05, 500);
         else if (tone === 'save') {
           blip(c, 523, 0.12, 'sine', 0.06);
-          window.setTimeout(() => { const c2 = getCtx(); if (c2) blip(c2, 784, 0.16, 'sine', 0.06); }, 85);
+          later(() => { const c2 = getCtx(); if (c2) blip(c2, 784, 0.16, 'sine', 0.06); }, 85);
         } else if (tone === 'skip') blip(c, 240, 0.12, 'sine', 0.035, 170);
         else if (tone === 'tap') blip(c, 460, 0.06, 'triangle', 0.035);
         else if (tone === 'complete') {
           [523, 659, 784, 1047].forEach((f, i) =>
-            window.setTimeout(() => { const cc = getCtx(); if (cc) blip(cc, f, 0.22, 'sine', 0.055); }, i * 110),
+            later(() => { const cc = getCtx(); if (cc) blip(cc, f, 0.22, 'sine', 0.055); }, i * 110),
           );
         }
       } catch { /* ignore audio errors */ }
     },
-    [getCtx, blip],
+    [getCtx, blip, later],
   );
 
-  const setEnabled = useCallback((v: boolean) => { enabledRef.current = v; }, []);
+  const setEnabled = useCallback((v: boolean) => {
+    enabledRef.current = v;
+    if (!v) stop();
+  }, [stop]);
 
   return { play, setEnabled };
 }

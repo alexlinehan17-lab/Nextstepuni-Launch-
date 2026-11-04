@@ -1,0 +1,1173 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "higher",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "status": "Q8 draft only; source and exact Atlas preflight required before integration.",
+  "tasks": [
+    {
+      "questionNumber": "8",
+      "card": {
+        "id": "cons-2015-hl-q8-a",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-5-3",
+        "conceptId": "zoned-heating-and-hot-water-a",
+        "questionRef": "2015 HL Q8(a)",
+        "stem": "A wood-burning stove combined with a solar collector is to provide central heating AND hot water for a three-bedroom, two-storey dwelling house. The design must show two independently controlled heating zones, one on each floor, with three radiators on EACH floor, control-valve locations and typical pipe sizes. The solar collector is for water heating (solar thermal). Part (c) asks for two design considerations when selecting locations for BOTH the chimney and the hot press, using notes and freehand sketches and justifying the choices.",
+        "questionText": "Using notes and a single-line diagram, show a typical layout for BOTH central heating and domestic hot water, supplied by the wood-burning stove combined with the solar collector. Show two independently controlled heating zones, one per floor, and three radiators on each floor. Locate control valves and give typical pipe sizes.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 40,
+        "rows": [
+          {
+            "id": "system",
+            "kind": "criterion",
+            "verbatim": "Design of zoned plumbing system",
+            "marks": 36,
+            "contextNote": "Award the best NINE acceptable system details, each sketch 3 plus annotation 1, capped at 36. The source menu includes stove; radiator flow/return; radiators; zone valves and thermostats; header/expansion/storage tank and feeds; expansion pipe/vessel; primary flow/return; pump/valves; solar collector, flow/return and pump; twin-coil cylinder; control panel; expansion and temperature-reducing vessels. Preserve both heat sources, two independently controlled zones and six radiators. For the optional pump/valves criterion, any two applicable radiator/isolating/drain-off components satisfy that ONE detail; do not award an extra 4 marks per item. Notes on the source diagram identify zone thermostats T1/T2 although the drawn labels repeat T2; retain two independent controls.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36
+            ]
+          },
+          {
+            "id": "sizes",
+            "kind": "criterion",
+            "verbatim": "Sizes of pipework (any 2)",
+            "marks": 4,
+            "contextNote": "Two appropriate labelled pipe sizes at 2 marks each. Published examples: 22 mm flow/return, 15 mm upstands and 28 mm expansion. The 300-litre twin-coil cylinder and 230-litre cold-water store are capacities, NOT pipe diameters, and do not earn these pipe-size marks. Suitable alternative coherent system sizes are accepted; this is not a closed choose-two pool of three fixed answers.",
+            "permittedMarks": [
+              0,
+              2,
+              4
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q8-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q8-system",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Stove, solar hot water and independently controlled heating zones",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The original stove and collector illustrations and complete scheme diagrams are retained. The scheme is an exam model, not an installation specification. Its PV electricity statistic does not answer this solar-thermal water-heating question."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 22,
+          "textSha256": "ef157504b4721e01d0bc28b70dc6fb5a8ab436f41d0ad82381193e9dd43dad96"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 23,
+          "textSha256": "9c12c0805b3fc3c192cfff4403640cf78e65e7d65ec9b1176f79e7d239fcb1f1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 39,
+          "textSha256": "216b1017df458bd861e9b2d26af8d69e443e1fee4bd5e2b05ce474d9ed1578c5"
+        }
+      ],
+      "boundaryReview": "Q8(a)40 = best nine details at sketch3/annotation1 (36) plus two pipe sizes2each (4). Q8(b)8 = notes4/sketch4. Q8(c)12 = chimney6 and hot press6, each notes3/sketch3. Whole question60.",
+      "selectionReview": "One complete printed route. Best-nine construction details and pump/valves(any2) are indicative scheme marking-menu criteria, not finite printed question choices. Any two appropriate pipe sizes are open design/numeric responses. The two location considerations are open responses and both chimney and hot press are required; do not invent a separate per-consideration tariff.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q8-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q8-system"
+      ]
+    },
+    {
+      "questionNumber": "8",
+      "card": {
+        "id": "cons-2015-hl-q8-b",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-5-2",
+        "conceptId": "zoned-heating-and-hot-water-b",
+        "questionRef": "2015 HL Q8(b)",
+        "stem": "A wood-burning stove combined with a solar collector is to provide central heating AND hot water for a three-bedroom, two-storey dwelling house. The design must show two independently controlled heating zones, one on each floor, with three radiators on EACH floor, control-valve locations and typical pipe sizes. The solar collector is for water heating (solar thermal). Part (c) asks for two design considerations when selecting locations for BOTH the chimney and the hot press, using notes and freehand sketches and justifying the choices.",
+        "questionText": "Using notes and freehand sketches, show a preferred location for the solar collector that will ensure its maximum efficiency in the specified water-heating system.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 8,
+        "rows": [
+          {
+            "id": "notes",
+            "kind": "criterion",
+            "verbatim": "Preferred location for solar collector",
+            "marks": 4,
+            "contextNote": "Explain a suitable unshaded location, normally facing south, with a coherent roof/ground/wall placement and appropriate tilt. The 2015 scheme gives a 45° optimum tilt and approximately 15° east/west tolerance as examples. Avoid chimney/tree shade and consider roof support, insulation and overheating. Its PV domestic-electricity statistic is unrelated to the required solar-thermal water-heating answer; do not substitute photovoltaic electricity generation.",
+            "permittedMarks": [
+              0,
+              4
+            ]
+          },
+          {
+            "id": "sketch",
+            "kind": "criterion",
+            "verbatim": "Preferred location for solar collector",
+            "marks": 4,
+            "contextNote": "Show the preferred location with a freehand sketch: collector orientation and an appropriate inclined installation, unobstructed sunlight and its relationship to the building. Keep the complete source orientation and tilt illustrations available. The awkward source phrase inclined to horizontal means an inclination relative to the horizontal, not a requirement to lay the collector flat.",
+            "permittedMarks": [
+              0,
+              4
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q8-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q8-collector",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Stove, solar hot water and independently controlled heating zones",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The original stove and collector illustrations and complete scheme diagrams are retained. The scheme is an exam model, not an installation specification. Its PV electricity statistic does not answer this solar-thermal water-heating question."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 22,
+          "textSha256": "ef157504b4721e01d0bc28b70dc6fb5a8ab436f41d0ad82381193e9dd43dad96"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 23,
+          "textSha256": "9c12c0805b3fc3c192cfff4403640cf78e65e7d65ec9b1176f79e7d239fcb1f1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 39,
+          "textSha256": "216b1017df458bd861e9b2d26af8d69e443e1fee4bd5e2b05ce474d9ed1578c5"
+        }
+      ],
+      "boundaryReview": "Q8(a)40 = best nine details at sketch3/annotation1 (36) plus two pipe sizes2each (4). Q8(b)8 = notes4/sketch4. Q8(c)12 = chimney6 and hot press6, each notes3/sketch3. Whole question60.",
+      "selectionReview": "One complete printed route. Best-nine construction details and pump/valves(any2) are indicative scheme marking-menu criteria, not finite printed question choices. Any two appropriate pipe sizes are open design/numeric responses. The two location considerations are open responses and both chimney and hot press are required; do not invent a separate per-consideration tariff.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q8-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q8-collector"
+      ]
+    },
+    {
+      "questionNumber": "8",
+      "card": {
+        "id": "cons-2015-hl-q8-c-chimney",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-5-7",
+        "conceptId": "zoned-heating-and-hot-water-c-chimney",
+        "questionRef": "2015 HL Q8(c) — chimney location",
+        "stem": "A wood-burning stove combined with a solar collector is to provide central heating AND hot water for a three-bedroom, two-storey dwelling house. The design must show two independently controlled heating zones, one on each floor, with three radiators on EACH floor, control-valve locations and typical pipe sizes. The solar collector is for water heating (solar thermal). Part (c) asks for two design considerations when selecting locations for BOTH the chimney and the hot press, using notes and freehand sketches and justifying the choices.",
+        "questionText": "Using notes and freehand sketches, discuss the design-stage considerations for locating the chimney in the specified house and justify your choices. This is the chimney component of part (c), whose full prompt requires two considerations for BOTH chimney and hot press.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "notes",
+            "kind": "criterion",
+            "verbatim": "Chimney",
+            "marks": 3,
+            "contextNote": "Explain and justify a coherent chimney location, for example an internal wall and grouping chimney, hot press and bathroom to shorten service runs. Internal chimney-breast thermal mass can release stored heat to adjoining rooms. This is the published 3-mark notes allowance for the chimney location, not 3 marks for each open example.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": "sketch",
+            "kind": "criterion",
+            "verbatim": "Chimney",
+            "marks": 3,
+            "contextNote": "Sketch the proposed chimney location in the building, showing its relationship to adjoining spaces and grouped services so that it supports the design justification. The source shows the internal chimney and surrounding rooms. Separate published 3-mark sketch allowance.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q8-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q8-locations",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Stove, solar hot water and independently controlled heating zones",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The original stove and collector illustrations and complete scheme diagrams are retained. The scheme is an exam model, not an installation specification. Its PV electricity statistic does not answer this solar-thermal water-heating question."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 22,
+          "textSha256": "ef157504b4721e01d0bc28b70dc6fb5a8ab436f41d0ad82381193e9dd43dad96"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 23,
+          "textSha256": "9c12c0805b3fc3c192cfff4403640cf78e65e7d65ec9b1176f79e7d239fcb1f1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 39,
+          "textSha256": "216b1017df458bd861e9b2d26af8d69e443e1fee4bd5e2b05ce474d9ed1578c5"
+        }
+      ],
+      "boundaryReview": "Q8(a)40 = best nine details at sketch3/annotation1 (36) plus two pipe sizes2each (4). Q8(b)8 = notes4/sketch4. Q8(c)12 = chimney6 and hot press6, each notes3/sketch3. Whole question60.",
+      "selectionReview": "One complete printed route. Best-nine construction details and pump/valves(any2) are indicative scheme marking-menu criteria, not finite printed question choices. Any two appropriate pipe sizes are open design/numeric responses. The two location considerations are open responses and both chimney and hot press are required; do not invent a separate per-consideration tariff.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q8-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q8-locations"
+      ]
+    },
+    {
+      "questionNumber": "8",
+      "card": {
+        "id": "cons-2015-hl-q8-c-hotpress",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-5-2",
+        "conceptId": "zoned-heating-and-hot-water-c-hotpress",
+        "questionRef": "2015 HL Q8(c) — hot-press location",
+        "stem": "A wood-burning stove combined with a solar collector is to provide central heating AND hot water for a three-bedroom, two-storey dwelling house. The design must show two independently controlled heating zones, one on each floor, with three radiators on EACH floor, control-valve locations and typical pipe sizes. The solar collector is for water heating (solar thermal). Part (c) asks for two design considerations when selecting locations for BOTH the chimney and the hot press, using notes and freehand sketches and justifying the choices.",
+        "questionText": "Using notes and freehand sketches, discuss the design-stage considerations for locating the hot press in the specified house and justify your choices. This is the hot-press component of part (c), whose full prompt requires two considerations for BOTH chimney and hot press.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "notes",
+            "kind": "criterion",
+            "verbatim": "Hot press",
+            "marks": 3,
+            "contextNote": "Explain and justify locating the cylinder and associated controls close to the boiler, with short insulated flow/return and distribution pipes. Short runs reduce heat loss, the volume of water to heat and warm-up time; insulate cylinder, pipes and tanks. This is one shared 3-mark notes allowance, not a new tariff for every illustrative reason.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": "sketch",
+            "kind": "criterion",
+            "verbatim": "Hot press",
+            "marks": 3,
+            "contextNote": "Sketch the hot press/cylinder location and its relationship to the boiler and pipe routes. Use the complete source plan, insulated-pipe and boiler/cylinder illustrations to support the justification. Separate published 3-mark sketch allowance.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q8-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q8-locations",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Stove, solar hot water and independently controlled heating zones",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The original stove and collector illustrations and complete scheme diagrams are retained. The scheme is an exam model, not an installation specification. Its PV electricity statistic does not answer this solar-thermal water-heating question."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 22,
+          "textSha256": "ef157504b4721e01d0bc28b70dc6fb5a8ab436f41d0ad82381193e9dd43dad96"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 23,
+          "textSha256": "9c12c0805b3fc3c192cfff4403640cf78e65e7d65ec9b1176f79e7d239fcb1f1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 39,
+          "textSha256": "216b1017df458bd861e9b2d26af8d69e443e1fee4bd5e2b05ce474d9ed1578c5"
+        }
+      ],
+      "boundaryReview": "Q8(a)40 = best nine details at sketch3/annotation1 (36) plus two pipe sizes2each (4). Q8(b)8 = notes4/sketch4. Q8(c)12 = chimney6 and hot press6, each notes3/sketch3. Whole question60.",
+      "selectionReview": "One complete printed route. Best-nine construction details and pump/valves(any2) are indicative scheme marking-menu criteria, not finite printed question choices. Any two appropriate pipe sizes are open design/numeric responses. The two location considerations are open responses and both chimney and hot press are required; do not invent a separate per-consideration tariff.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q8-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q8-locations"
+      ]
+    },
+    {
+      "questionNumber": "8",
+      "card": {
+        "id": "cons-2015-hl-q8-c",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-5-7",
+        "conceptId": "zoned-heating-and-hot-water-c",
+        "questionRef": "2015 HL Q8(c) — both locations",
+        "stem": "A wood-burning stove combined with a solar collector is to provide central heating AND hot water for a three-bedroom, two-storey dwelling house. The design must show two independently controlled heating zones, one on each floor, with three radiators on EACH floor, control-valve locations and typical pipe sizes. The solar collector is for water heating (solar thermal). Part (c) asks for two design considerations when selecting locations for BOTH the chimney and the hot press, using notes and freehand sketches and justifying the choices.",
+        "questionText": "Using notes and freehand sketches, discuss two considerations that should be taken into account at the design stage when selecting a location for BOTH the chimney and the hot press. Justify your design choices.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 12,
+        "rows": [
+          {
+            "id": "c-chimney-notes",
+            "kind": "criterion",
+            "verbatim": "Chimney",
+            "marks": 3,
+            "contextNote": "Explain and justify a coherent chimney location, for example an internal wall and grouping chimney, hot press and bathroom to shorten service runs. Internal chimney-breast thermal mass can release stored heat to adjoining rooms. This is the published 3-mark notes allowance for the chimney location, not 3 marks for each open example.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": "c-chimney-sketch",
+            "kind": "criterion",
+            "verbatim": "Chimney",
+            "marks": 3,
+            "contextNote": "Sketch the proposed chimney location in the building, showing its relationship to adjoining spaces and grouped services so that it supports the design justification. The source shows the internal chimney and surrounding rooms. Separate published 3-mark sketch allowance.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": "c-hotpress-notes",
+            "kind": "criterion",
+            "verbatim": "Hot press",
+            "marks": 3,
+            "contextNote": "Explain and justify locating the cylinder and associated controls close to the boiler, with short insulated flow/return and distribution pipes. Short runs reduce heat loss, the volume of water to heat and warm-up time; insulate cylinder, pipes and tanks. This is one shared 3-mark notes allowance, not a new tariff for every illustrative reason.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": "c-hotpress-sketch",
+            "kind": "criterion",
+            "verbatim": "Hot press",
+            "marks": 3,
+            "contextNote": "Sketch the hot press/cylinder location and its relationship to the boiler and pipe routes. Use the complete source plan, insulated-pipe and boiler/cylinder illustrations to support the justification. Separate published 3-mark sketch allowance.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q8-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q8-locations",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Stove, solar hot water and independently controlled heating zones",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The original stove and collector illustrations and complete scheme diagrams are retained. The scheme is an exam model, not an installation specification. Its PV electricity statistic does not answer this solar-thermal water-heating question."
+        },
+        "taskGroups": [
+          {
+            "label": "c-chimney",
+            "sourceCardId": "cons-2015-hl-q8-c-chimney",
+            "marks": 6,
+            "rowIds": [
+              "c-chimney-notes",
+              "c-chimney-sketch"
+            ]
+          },
+          {
+            "label": "c-hotpress",
+            "sourceCardId": "cons-2015-hl-q8-c-hotpress",
+            "marks": 6,
+            "rowIds": [
+              "c-hotpress-notes",
+              "c-hotpress-sketch"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 22,
+          "textSha256": "ef157504b4721e01d0bc28b70dc6fb5a8ab436f41d0ad82381193e9dd43dad96"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 23,
+          "textSha256": "9c12c0805b3fc3c192cfff4403640cf78e65e7d65ec9b1176f79e7d239fcb1f1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 39,
+          "textSha256": "216b1017df458bd861e9b2d26af8d69e443e1fee4bd5e2b05ce474d9ed1578c5"
+        }
+      ],
+      "boundaryReview": "Q8(a)40 = best nine details at sketch3/annotation1 (36) plus two pipe sizes2each (4). Q8(b)8 = notes4/sketch4. Q8(c)12 = chimney6 and hot press6, each notes3/sketch3. Whole question60.",
+      "selectionReview": "One complete printed route. Best-nine construction details and pump/valves(any2) are indicative scheme marking-menu criteria, not finite printed question choices. Any two appropriate pipe sizes are open design/numeric responses. The two location considerations are open responses and both chimney and hot press are required; do not invent a separate per-consideration tariff.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q8-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q8-locations"
+      ]
+    },
+    {
+      "questionNumber": "8",
+      "card": {
+        "id": "cons-2015-hl-q8-complete",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-5-3",
+        "conceptId": "zoned-heating-and-hot-water-complete",
+        "questionRef": "2015 HL Q8 — complete",
+        "stem": "A wood-burning stove combined with a solar collector is to provide central heating AND hot water for a three-bedroom, two-storey dwelling house. The design must show two independently controlled heating zones, one on each floor, with three radiators on EACH floor, control-valve locations and typical pipe sizes. The solar collector is for water heating (solar thermal). Part (c) asks for two design considerations when selecting locations for BOTH the chimney and the hot press, using notes and freehand sketches and justifying the choices.",
+        "questionText": "Using notes and a single-line diagram, show a typical layout for BOTH central heating and domestic hot water, supplied by the wood-burning stove combined with the solar collector. Show two independently controlled heating zones, one per floor, and three radiators on each floor. Locate control valves and give typical pipe sizes.\n\nUsing notes and freehand sketches, show a preferred location for the solar collector that will ensure its maximum efficiency in the specified water-heating system.\n\nUsing notes and freehand sketches, discuss two considerations that should be taken into account at the design stage when selecting a location for BOTH the chimney and the hot press. Justify your design choices.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-system",
+            "kind": "criterion",
+            "verbatim": "Design of zoned plumbing system",
+            "marks": 36,
+            "contextNote": "Award the best NINE acceptable system details, each sketch 3 plus annotation 1, capped at 36. The source menu includes stove; radiator flow/return; radiators; zone valves and thermostats; header/expansion/storage tank and feeds; expansion pipe/vessel; primary flow/return; pump/valves; solar collector, flow/return and pump; twin-coil cylinder; control panel; expansion and temperature-reducing vessels. Preserve both heat sources, two independently controlled zones and six radiators. For the optional pump/valves criterion, any two applicable radiator/isolating/drain-off components satisfy that ONE detail; do not award an extra 4 marks per item. Notes on the source diagram identify zone thermostats T1/T2 although the drawn labels repeat T2; retain two independent controls.",
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36
+            ]
+          },
+          {
+            "id": "a-sizes",
+            "kind": "criterion",
+            "verbatim": "Sizes of pipework (any 2)",
+            "marks": 4,
+            "contextNote": "Two appropriate labelled pipe sizes at 2 marks each. Published examples: 22 mm flow/return, 15 mm upstands and 28 mm expansion. The 300-litre twin-coil cylinder and 230-litre cold-water store are capacities, NOT pipe diameters, and do not earn these pipe-size marks. Suitable alternative coherent system sizes are accepted; this is not a closed choose-two pool of three fixed answers.",
+            "permittedMarks": [
+              0,
+              2,
+              4
+            ]
+          },
+          {
+            "id": "b-notes",
+            "kind": "criterion",
+            "verbatim": "Preferred location for solar collector",
+            "marks": 4,
+            "contextNote": "Explain a suitable unshaded location, normally facing south, with a coherent roof/ground/wall placement and appropriate tilt. The 2015 scheme gives a 45° optimum tilt and approximately 15° east/west tolerance as examples. Avoid chimney/tree shade and consider roof support, insulation and overheating. Its PV domestic-electricity statistic is unrelated to the required solar-thermal water-heating answer; do not substitute photovoltaic electricity generation.",
+            "permittedMarks": [
+              0,
+              4
+            ]
+          },
+          {
+            "id": "b-sketch",
+            "kind": "criterion",
+            "verbatim": "Preferred location for solar collector",
+            "marks": 4,
+            "contextNote": "Show the preferred location with a freehand sketch: collector orientation and an appropriate inclined installation, unobstructed sunlight and its relationship to the building. Keep the complete source orientation and tilt illustrations available. The awkward source phrase inclined to horizontal means an inclination relative to the horizontal, not a requirement to lay the collector flat.",
+            "permittedMarks": [
+              0,
+              4
+            ]
+          },
+          {
+            "id": "c-c-chimney-notes",
+            "kind": "criterion",
+            "verbatim": "Chimney",
+            "marks": 3,
+            "contextNote": "Explain and justify a coherent chimney location, for example an internal wall and grouping chimney, hot press and bathroom to shorten service runs. Internal chimney-breast thermal mass can release stored heat to adjoining rooms. This is the published 3-mark notes allowance for the chimney location, not 3 marks for each open example.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": "c-c-chimney-sketch",
+            "kind": "criterion",
+            "verbatim": "Chimney",
+            "marks": 3,
+            "contextNote": "Sketch the proposed chimney location in the building, showing its relationship to adjoining spaces and grouped services so that it supports the design justification. The source shows the internal chimney and surrounding rooms. Separate published 3-mark sketch allowance.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": "c-c-hotpress-notes",
+            "kind": "criterion",
+            "verbatim": "Hot press",
+            "marks": 3,
+            "contextNote": "Explain and justify locating the cylinder and associated controls close to the boiler, with short insulated flow/return and distribution pipes. Short runs reduce heat loss, the volume of water to heat and warm-up time; insulate cylinder, pipes and tanks. This is one shared 3-mark notes allowance, not a new tariff for every illustrative reason.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": "c-c-hotpress-sketch",
+            "kind": "criterion",
+            "verbatim": "Hot press",
+            "marks": 3,
+            "contextNote": "Sketch the hot press/cylinder location and its relationship to the boiler and pipe routes. Use the complete source plan, insulated-pipe and boiler/cylinder illustrations to support the justification. Separate published 3-mark sketch allowance.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q8-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q8-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Stove, solar hot water and independently controlled heating zones",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The original stove and collector illustrations and complete scheme diagrams are retained. The scheme is an exam model, not an installation specification. Its PV electricity statistic does not answer this solar-thermal water-heating question."
+        },
+        "taskGroups": [
+          {
+            "label": "a",
+            "sourceCardId": "cons-2015-hl-q8-a",
+            "marks": 40,
+            "rowIds": [
+              "a-system",
+              "a-sizes"
+            ]
+          },
+          {
+            "label": "b",
+            "sourceCardId": "cons-2015-hl-q8-b",
+            "marks": 8,
+            "rowIds": [
+              "b-notes",
+              "b-sketch"
+            ]
+          },
+          {
+            "label": "c",
+            "sourceCardId": "cons-2015-hl-q8-c",
+            "marks": 12,
+            "rowIds": [
+              "c-c-chimney-notes",
+              "c-c-chimney-sketch",
+              "c-c-hotpress-notes",
+              "c-c-hotpress-sketch"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 22,
+          "textSha256": "ef157504b4721e01d0bc28b70dc6fb5a8ab436f41d0ad82381193e9dd43dad96"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 23,
+          "textSha256": "9c12c0805b3fc3c192cfff4403640cf78e65e7d65ec9b1176f79e7d239fcb1f1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 39,
+          "textSha256": "216b1017df458bd861e9b2d26af8d69e443e1fee4bd5e2b05ce474d9ed1578c5"
+        }
+      ],
+      "boundaryReview": "Q8(a)40 = best nine details at sketch3/annotation1 (36) plus two pipe sizes2each (4). Q8(b)8 = notes4/sketch4. Q8(c)12 = chimney6 and hot press6, each notes3/sketch3. Whole question60.",
+      "selectionReview": "One complete printed route. Best-nine construction details and pump/valves(any2) are indicative scheme marking-menu criteria, not finite printed question choices. Any two appropriate pipe sizes are open design/numeric responses. The two location considerations are open responses and both chimney and hot press are required; do not invent a separate per-consideration tariff.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q8-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q8-scheme"
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "cardId": "cons-2015-hl-q8-a",
+      "markBankTopicId": "cons-5-3",
+      "canonicalTopicIds": [
+        "cons-5-3",
+        "cons-5-2"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification: heating controls and hot/cold water systems are explicit in the zoned stove/solar-water system. Collector location is part of the water-heating design. Chimney location uses fireplaces/flues; hot press uses cylinder/pipework and heat-conservation nodes. Composite tasks retain the union.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q8-b",
+      "markBankTopicId": "cons-5-2",
+      "canonicalTopicIds": [
+        "cons-5-2",
+        "cons-5-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification: heating controls and hot/cold water systems are explicit in the zoned stove/solar-water system. Collector location is part of the water-heating design. Chimney location uses fireplaces/flues; hot press uses cylinder/pipework and heat-conservation nodes. Composite tasks retain the union.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q8-c-chimney",
+      "markBankTopicId": "cons-5-7",
+      "canonicalTopicIds": [
+        "cons-5-7"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification: heating controls and hot/cold water systems are explicit in the zoned stove/solar-water system. Collector location is part of the water-heating design. Chimney location uses fireplaces/flues; hot press uses cylinder/pipework and heat-conservation nodes. Composite tasks retain the union.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-fireplaces-fire-prevention"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q8-c-hotpress",
+      "markBankTopicId": "cons-5-2",
+      "canonicalTopicIds": [
+        "cons-5-2",
+        "cons-5-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification: heating controls and hot/cold water systems are explicit in the zoned stove/solar-water system. Collector location is part of the water-heating design. Chimney location uses fireplaces/flues; hot press uses cylinder/pipework and heat-conservation nodes. Composite tasks retain the union.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q8-c",
+      "markBankTopicId": "cons-5-7",
+      "canonicalTopicIds": [
+        "cons-5-7",
+        "cons-5-2",
+        "cons-5-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification: heating controls and hot/cold water systems are explicit in the zoned stove/solar-water system. Collector location is part of the water-heating design. Chimney location uses fireplaces/flues; hot press uses cylinder/pipework and heat-conservation nodes. Composite tasks retain the union.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-fireplaces-fire-prevention",
+        "construction-studies-higher-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q8-complete",
+      "markBankTopicId": "cons-5-3",
+      "canonicalTopicIds": [
+        "cons-5-3",
+        "cons-5-2",
+        "cons-5-7"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification: heating controls and hot/cold water systems are explicit in the zoned stove/solar-water system. Collector location is part of the water-heating design. Chimney location uses fireplaces/flues; hot press uses cylinder/pipework and heat-conservation nodes. Composite tasks retain the union.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-hot-water-space-heating",
+        "construction-studies-higher-fireplaces-fire-prevention"
+      ]
+    }
+  ],
+  "questionFigures": [
+    {
+      "key": "construction-studies-2015-HL-q8-original",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "rect": [
+            58,
+            569,
+            572,
+            783
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": false,
+      "sha256": "4a1231184486cbfdebb3db8cff06dfcf15e7f80249ad3ebee48c5d6a65300272",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q8-system",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 22,
+          "rect": [
+            40,
+            54,
+            568,
+            779
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "38034c3fab263ef6b2cd79aa3a6f45b3c374cead8e8ce2f95cb4b7bf8ff5892c",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q8-collector",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 22,
+          "rect": [
+            40,
+            54,
+            568,
+            779
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 23,
+          "rect": [
+            57,
+            54,
+            567,
+            327
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "16d2479785b7198314cac485e60f2fa7c5830223825a5d28c28cfb682378c8f2",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q8-locations",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 23,
+          "rect": [
+            55,
+            333,
+            568,
+            779
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "de911b63ae705f0c5da18e636762565b6a7b7438fe88ace9cf3706003662ccb2",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q8-scheme",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 22,
+          "rect": [
+            40,
+            54,
+            568,
+            779
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 23,
+          "rect": [
+            57,
+            54,
+            567,
+            327
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 23,
+          "rect": [
+            55,
+            333,
+            568,
+            779
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "b463f004b1d08882d57a6b61025f41bfd369a56b86626b4e42dd2dcbbadeb581",
+      "visuallyInspected": true
+    }
+  ],
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+    "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+  },
+  "selectionLedger": {
+    "pattern": "\\b(?:choose|select|one\\s+of|any\\s+\\w+|either|or|answer\\s+\\w+)\\b",
+    "rows": [
+      {
+        "page": 1,
+        "start": 209,
+        "match": "Answer Question",
+        "context": "er Level (300 marks) Friday, 12 June Afternoon, 2:00 to 5:00 (a) Answer Question 1 and four other questions. (b) All questions carry equal marks. (c) Answers must be written in ink",
+        "classification": "Whole-paper selection: Q1 compulsory plus four others; coverage does not require five-question exam-session combinations."
+      },
+      {
+        "page": 2,
+        "start": 1263,
+        "match": "any two",
+        "context": " used and include typical dimensions. (c) Evaluate the design of any two of the wall types at 2(b) above. Recommend a preferred external wall type for a new house and justi",
+        "classification": "Open dependent selection among three wall types previously chosen by the student; no closed named pool."
+      },
+      {
+        "page": 2,
+        "start": 1926,
+        "match": "or",
+        "context": "lding a single-storey extension onto the rear of the house at A. or (ii) building a detached, free-standing space in the garden at B. (a) Discuss in detail two advanta",
+        "classification": "Two design options, A/B. Part(a)requires BOTH; part(b)chooses ONE, two finite routes."
+      },
+      {
+        "page": 2,
+        "start": 2103,
+        "match": "Select",
+        "context": "o disadvantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design an",
+        "classification": "Q3(b)choose one of A/B: two finite routes."
+      },
+      {
+        "page": 2,
+        "start": 2110,
+        "match": "one of",
+        "context": "vantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design and inter",
+        "classification": "Q3(b)same directive, two finite routes."
+      },
+      {
+        "page": 3,
+        "start": 45,
+        "match": "any two",
+        "context": "Page 3 of 5 4. (a) Discuss the importance of any two of the following in the eco-refurbishment of an old house built in the vernacular tradition: • resp",
+        "classification": "Q4(a)choose2of3 principles:3pairs."
+      },
+      {
+        "page": 3,
+        "start": 281,
+        "match": "One of",
+        "context": "als. (b) A row of single-storey cottages is shown in the sketch. One of the cottages is in need of significant refurbishment. A survey of the cottage reveals: • un-insulat",
+        "classification": "Narrative identifies one cottage, not an answer selection."
+      },
+      {
+        "page": 3,
+        "start": 522,
+        "match": "Select",
+        "context": "-glazed with sliding sash • un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps invol",
+        "classification": "Q4(b)choose2of3 upgrades:3pairs."
+      },
+      {
+        "page": 3,
+        "start": 529,
+        "match": "any two",
+        "context": " with sliding sash • un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps involved in u",
+        "classification": "Q4(b)same directive:3pairs; independent of(a),9whole routes."
+      },
+      {
+        "page": 4,
+        "start": 516,
+        "match": "any two",
+        "context": "(b) Using notes and freehand sketches, discuss the importance of any two of the following in designing a house to have low environmental impact: • compact form • flexible d",
+        "classification": "Q6(b)choose2of3 design principles:3pairs."
+      },
+      {
+        "page": 5,
+        "start": 423,
+        "match": "Select",
+        "context": "s and the ground floor is an insulated solid concrete floor. (a) Select any three locations from those circled on the drawing and, using notes and freehand sketches, show ",
+        "classification": "Q9(a)choose3of4 circled junctions:4triples."
+      },
+      {
+        "page": 5,
+        "start": 430,
+        "match": "any three",
+        "context": "he ground floor is an insulated solid concrete floor. (a) Select any three locations from those circled on the drawing and, using notes and freehand sketches, show best pract",
+        "classification": "Q9(a)same directive:4triples."
+      },
+      {
+        "page": 5,
+        "start": 807,
+        "match": "any two",
+        "context": "notes and freehand sketches, discuss in detail the importance of any two of the following in the design of a Passive House: • airtight building envelope • space heating dem",
+        "classification": "Q10primary(a)choose2of3:3pairs."
+      },
+      {
+        "page": 5,
+        "start": 1177,
+        "match": "OR",
+        "context": "of carefully designed solar shading for the Passive House shown. OR 10. Light is what architecture is all about. It is as fundamental for the soul as air, fire, earth ",
+        "classification": "Q10 alternative branch: primary3routes OR alternative1route."
+      },
+      {
+        "page": 5,
+        "start": 1305,
+        "match": "one of",
+        "context": "ental for the soul as air, fire, earth and water. Light has been one of the key elements of architecture since the Modern movement began (and glass technology improved) at",
+        "classification": "Quotation narrative, not an answer directive."
+      }
+    ],
+    "unclassified": 0,
+    "sourceHashes": {
+      "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+      "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+    }
+  },
+  "corrections": [],
+  "addedIds": [
+    "cons-2015-hl-q8-a",
+    "cons-2015-hl-q8-b",
+    "cons-2015-hl-q8-c-chimney",
+    "cons-2015-hl-q8-c-hotpress",
+    "cons-2015-hl-q8-c",
+    "cons-2015-hl-q8-complete"
+  ],
+  "routeLedger": {
+    "wholeRoutes": [
+      {
+        "id": "cons-2015-hl-q8-complete",
+        "parts": [
+          "a",
+          "b",
+          "c"
+        ],
+        "marks": 60
+      }
+    ],
+    "requiredHeatingZones": 2,
+    "requiredRadiatorsPerFloor": 3,
+    "requiredLocations": [
+      "chimney",
+      "hotpress"
+    ],
+    "nonChoices": [
+      "best-nine indicative scheme detail menu",
+      "pump/valves(any2) within one optional marking criterion",
+      "two appropriate pipe sizes are open responses",
+      "two open considerations for both required locations"
+    ]
+  }
+}

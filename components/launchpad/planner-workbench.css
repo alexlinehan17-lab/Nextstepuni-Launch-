@@ -1,0 +1,27 @@
+.nsu-planner .pp-main { padding-inline:clamp(0px,2vw,28px); }
+.nsu-planner .pp-block > .ks-subject-art { width:48px; height:52px; object-fit:contain; flex-shrink:0; }
+.nsu-planner .pp-detail-heading > .ks-subject-art { width:148px; height:148px; object-fit:contain; margin:auto; }
+.nsu-planner .pp-ledger-row > .ks-subject-art { width:52px; height:52px; object-fit:contain; }
+.nsu-planner .pp-day-detail-blocks .ks-subject-art { width:72px; height:76px; }
+.pp-school-event { font-size:12px; border-bottom:1px solid var(--border); padding-bottom:10px; margin-bottom:10px; }
+.pp-cue { margin-top:22px; padding-top:18px; border-top:1px solid var(--border); font-size:13px; }
+.pp-cue summary { cursor:pointer; }
+.pp-cue p { font-size:11px; color:var(--muted-foreground); line-height:1.8; margin:16px 0 0; }
+.pp-cue-triggers { display:flex; flex-wrap:wrap; gap:6px; margin:18px 0; }
+.pp-cue-triggers [aria-pressed=true] { outline:1px solid var(--nsu-orange); }
+.pp-cue textarea { display:block; width:100%; border:1px solid var(--border); border-radius:10px; padding:12px; min-height:80px; background:var(--background); margin:10px 0 16px; }
+.pp-rest-settings { display:grid; grid-template-columns:1fr 1fr; gap:13px; }
+.pp-rest-settings legend { margin-bottom:16px; }
+.pp-rest-settings label { display:flex; gap:10px; align-items:center; font-size:14px; }
+.pp-duration-setting { display:flex; justify-content:space-between; align-items:center; gap:20px; margin:16px 0; }
+.pp-duration-setting select { padding:10px; background:var(--background); border:1px solid var(--border); border-radius:10px; }
+.pp-explanation { padding:18px 0 10px; color:var(--muted-foreground); font-size:14px; line-height:1.8; }
+.pp-explanation > [data-slot='button'] { padding-inline:0; justify-content:flex-start; }
+.pp-summary { display:flex; gap:14px; flex-wrap:wrap; border-top:1px solid var(--border); padding:16px 0; font-size:12px; color:var(--muted-foreground); }
+.pp-summary button { text-decoration:underline; text-underline-offset:3px; }
+.pp-empty-week { padding: 32px 0; }
+.pp-empty-week h2 { font: 600 28px/1.2 var(--nsu-serif); }
+.pp-empty-week p { color: var(--muted-foreground); margin: 12px 0 20px; }
+
+.pp-workload .pp-explain-toggle { display:flex; align-items:center; text-align:left; gap:16px; padding:14px 10px; }
+.pp-explain-toggle[aria-expanded=true] svg { rotate:180deg; }

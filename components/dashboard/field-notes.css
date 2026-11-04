@@ -1,0 +1,161 @@
+.student-home .sh-hero {
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(32px, 4.5vw, 64px);
+}
+.student-home .field-notes-scope {
+  min-width: 0;
+  background: transparent;
+}
+.field-notes {
+  padding: 26px;
+  border-radius: 20px;
+}
+.student-home .field-notes.nsu-paper-card {
+  box-shadow: var(--home-card-shadow);
+}
+.field-notes .fn-eyebrow {
+  font:
+    500 12px/1.5 'DM Sans',
+    sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  margin: 0 0 20px;
+}
+.fn-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.field-notes .fn-heading h2 {
+  font: 500 30px/1.15 var(--nsu-serif);
+  letter-spacing: -0.7px;
+  margin: 0;
+}
+.fn-heading > div {
+  min-width: 0;
+}
+.fn-heading > img {
+  width: clamp(65px, 7vw, 115px);
+  height: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.fn-time {
+  display: flex;
+  align-items: baseline;
+  gap: 13px;
+  margin: 18px 0 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.fn-time strong {
+  font:
+    700 clamp(40px, 3.5vw, 58px) / 1 'DM Sans',
+    sans-serif;
+  letter-spacing: -0.06em;
+  white-space: nowrap;
+}
+.fn-time small {
+  font-size: 0.35em;
+  letter-spacing: -0.02em;
+  margin-left: 4px;
+  font-weight: 500;
+  color: var(--muted-foreground);
+}
+.fn-heading p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted-foreground);
+  margin: 0;
+}
+.fn-rhythm {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 12px;
+  margin: 28px 0 23px;
+}
+.field-notes .fn-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  min-width: 0;
+  border: 0;
+  background: none;
+  color: var(--muted-foreground);
+  cursor: pointer;
+  font-size: 12px;
+}
+.fn-bar-space {
+  height: 106px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+}
+.fn-bar {
+  display: block;
+  width: 100%;
+  max-width: 30px;
+  background: var(--nsu-orange);
+  border-radius: 3px 3px 0 0;
+  transform-origin: bottom;
+}
+.fn-day:focus-visible {
+  outline: 2px solid var(--nsu-orange);
+  outline-offset: 5px;
+  border-radius: 3px;
+}
+.fn-facts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+.fn-facts strong {
+  color: var(--foreground);
+  font-weight: 700;
+}
+.field-notes .fn-progress {
+  margin: 15px 0 -6px;
+  padding-left: 0;
+  font-size: 14px;
+}
+@media (max-width: 1100px) {
+  .student-home .sh-hero {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .student-home .sh-hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .field-notes {
+    padding: 26px 22px;
+  }
+  .fn-heading > img {
+    width: 105px;
+  }
+  .fn-time strong {
+    font-size: 54px;
+  }
+}
+@media (max-width: 390px) {
+  .fn-heading > img {
+    width: 75px;
+  }
+  .fn-time strong {
+    font-size: 43px;
+  }
+  .fn-rhythm {
+    gap: 9px;
+  }
+}

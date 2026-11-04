@@ -28,6 +28,7 @@ export interface LaunchpadToolSummary {
 }
 
 interface LaunchpadGuidanceProps {
+  compact?: boolean;
   tools: LaunchpadToolSummary[];
   /** Tools the student can launch in their current setup state. The explainer
    * still shows the full catalogue, but recommendations never point at a
@@ -44,6 +45,7 @@ const ACCENT = '#F26B1F';
 
 const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
   tools,
+  compact = false,
   availableToolIds,
   recommendation,
   onRecommendationChange,
@@ -104,6 +106,10 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
 
   return (
     <>
+      {compact ? <div className="lp-guide-actions">
+        <button type="button" onClick={() => open('explain')}>Meet the tools <ArrowRight size={15} /></button>
+        <button type="button" onClick={() => open('recommend')}>Help me choose <ArrowRight size={15} /></button>
+      </div> : <>
       <section aria-labelledby="launchpad-help-heading" className={`mb-6 sm:mb-8 ${mobileAppDesign ? '[&_button]:min-h-11' : ''}`}>
         <div className="mb-3 sm:mb-4">
           <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">Not sure where to begin?</p>
@@ -153,6 +159,7 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
           </div>
         )}
       </section>
+      </>}
 
       {createPortal(<AnimatePresence>
         {mode && (

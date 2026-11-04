@@ -4,6 +4,25 @@ const config: CapacitorConfig = {
   appId: 'com.nextstepuni.app',
   appName: 'NextStepUni',
   webDir: 'dist',
+  ios: {
+    backgroundColor: '#FFFFFF',
+    // The web app owns safe-area padding; native insets would apply it twice.
+    contentInset: 'never',
+  },
+  plugins: {
+    StatusBar: {
+      overlaysWebView: true,
+      style: 'LIGHT',
+    },
+    LocalNotifications: {
+      // Android status-bar icon (res/drawable) and its tint.
+      smallIcon: 'ic_stat_nextstepuni',
+      iconColor: '#F26B1F',
+      // iOS, when the app is open and a notification did not say otherwise.
+      // The study timer always says (services/notifications: foreground).
+      presentationOptions: ['banner', 'list', 'sound'],
+    },
+  },
   experimental: {
     ios: {
       spm: {

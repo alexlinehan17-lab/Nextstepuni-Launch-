@@ -1,26 +1,30 @@
+import { moduleFill,moduleText } from './learning/brandTokens';
 
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MotionPolygon } from './Motion';
 import {
-  Brain, Target, Shield, Eye, Settings
+Brain,
+Eye,Settings,
+Shield,
+Target
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
+import React,{ useState } from 'react';
+import { SELF_EFFICACY_REFERENCE_LIST } from '../data/references/selfEfficacy';
+import { COLORS } from '../design/tokens';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { useNorthStar } from '../hooks/useNorthStar';
 import { roseTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
+import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
+import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
-import { SELF_EFFICACY_REFERENCE_LIST } from '../data/references/selfEfficacy';
-import { useNorthStar } from '../hooks/useNorthStar';
+import { ConceptCardGrid,Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
+import { MotionPolygon } from './Motion';
 import NorthStarCallout from './NorthStarCallout';
-import { COLORS } from '../design/tokens';
-import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = roseTheme;
 
@@ -79,19 +83,19 @@ const EfficacyRadar: React.FC = () => {
   const scoreLabel = average >= 7 ? 'Strong foundation — now let\'s make it bulletproof.' : average >= 4 ? 'Building confidence across your domains.' : 'Room to grow — this module will help.';
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
       {/* Section chip + title */}
       <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)' }}>Self-Assessment</span>
-        <h4 className="font-serif text-2xl font-bold" style={{ color: '#1a1a1a' }}>Self-Efficacy Radar</h4>
-        <p className="text-sm mt-1 max-w-md mx-auto" style={{ color: '#7a7068' }}>
+        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)' }}>Self-Assessment</span>
+        <h4 className="font-serif text-2xl font-bold" style={{ color: "var(--module-ink)" }}>Self-Efficacy Radar</h4>
+        <p className="text-sm mt-1 max-w-md mx-auto" style={{ color: "var(--module-muted)" }}>
           Rate your belief in your ability across these 6 domains (1 = no confidence, 10 = total confidence).
         </p>
       </div>
 
       {/* Radar Chart — in a bordered card */}
       <div className="flex justify-center mb-8">
-        <div className="bg-white dark:bg-zinc-900 p-6 inline-block" style={{ border: '2px solid #1a1a1a', borderRadius: 16 }}>
+        <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] p-6 inline-block" style={{ border: "2px solid var(--module-line)", borderRadius: 16 }}>
           <svg
             viewBox={`0 0 ${size} ${size}`}
             className="w-full max-w-xs"
@@ -103,7 +107,7 @@ const EfficacyRadar: React.FC = () => {
                 key={scale}
                 points={hexagonPoints(maxR * scale)}
                 fill={gi % 2 === 0 ? 'rgba(242,107,31,0.04)' : 'rgba(242,107,31,0.02)'}
-                stroke="#e0dbd4"
+                stroke="var(--module-muted)"
                 strokeWidth="1.5"
               />
             ))}
@@ -112,7 +116,7 @@ const EfficacyRadar: React.FC = () => {
             {Array.from({ length: 6 }, (_, i) => {
               const pt = pointOnHex(i, maxR);
               return (
-                <line key={i} x1={cx} y1={cy} x2={pt.x} y2={pt.y} stroke="#e0dbd4" strokeWidth="1" />
+                <line key={i} x1={cx} y1={cy} x2={pt.x} y2={pt.y} stroke="var(--module-muted)" strokeWidth="1" />
               );
             })}
 
@@ -133,7 +137,7 @@ const EfficacyRadar: React.FC = () => {
               const r = (v / 10) * maxR;
               const pt = pointOnHex(i, r);
               return (
-                <circle key={i} cx={pt.x} cy={pt.y} r="5" fill={COLORS.accent} stroke="#fff" strokeWidth="2" />
+                <circle key={i} cx={pt.x} cy={pt.y} r="5" fill={COLORS.accent} stroke="var(--module-on-fill)" strokeWidth="2" />
               );
             })}
 
@@ -145,7 +149,7 @@ const EfficacyRadar: React.FC = () => {
                 y={pt.y}
                 textAnchor="middle"
                 dominantBaseline="middle"
-                fill="#5a5550"
+                fill="var(--module-muted)"
                 fontSize="10"
                 fontWeight="500"
               >
@@ -175,8 +179,8 @@ const EfficacyRadar: React.FC = () => {
         {EFFICACY_DOMAINS.map((domain, i) => (
           <div key={domain}>
             <div className="flex justify-between items-baseline mb-1.5">
-              <label className="text-[15px] font-medium" style={{ color: '#1a1a1a' }}>{domain}</label>
-              <span className="text-sm font-bold tabular-nums" style={{ color: COLORS.accent }}>{values[i]}</span>
+              <label className="text-[15px] font-medium" style={{ color: "var(--module-ink)" }}>{domain}</label>
+              <span className="text-sm font-bold tabular-nums" style={{ color: 'var(--module-accent-text)' }}>{values[i]}</span>
             </div>
             <input
               type="range"
@@ -195,16 +199,16 @@ const EfficacyRadar: React.FC = () => {
       </div>
 
       {/* Score card */}
-      <div className="max-w-xs mx-auto bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: '20px 28px' }}>
-        <p className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: '#9e9186', letterSpacing: '0.1em' }}>Your Self-Efficacy Score</p>
-        <p className="font-serif font-bold mt-1" style={{ fontSize: 48, color: COLORS.accent, lineHeight: 1.1 }}>{average.toFixed(1)}</p>
-        <p className="text-[13px] mt-1" style={{ color: '#9e9186' }}>{scoreLabel}</p>
+      <div className="max-w-xs mx-auto bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: '20px 28px' }}>
+        <p className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--module-muted)", letterSpacing: '0.1em' }}>Your Self-Efficacy Score</p>
+        <p className="font-serif font-bold mt-1" style={{ fontSize: 48, color: 'var(--module-accent-text)', lineHeight: 1.1 }}>{average.toFixed(1)}</p>
+        <p className="text-[13px] mt-1" style={{ color: "var(--module-muted)" }}>{scoreLabel}</p>
         {lowDomains.length > 0 && (
           <motion.p
             key={lowDomains.join(',')}
             initial={{ opacity: 0, y: 4 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mt-3 text-sm text-amber-700 dark:text-amber-400"
+            className="mt-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)]"
           >
             Your belief in <span className="font-bold">{lowDomains[0]}</span> is low — this module will show you how to build it up.
           </motion.p>
@@ -216,18 +220,18 @@ const EfficacyRadar: React.FC = () => {
 const RoleModelSelector = () => {
     const [choice, setChoice] = useState<null | 'mastery' | 'coping'>(null);
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Which Story Builds More Belief?</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">You're struggling with a subject. Which of these role models is more helpful?</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Which Story Builds More Belief?</h4>
+             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">You're struggling with a subject. Which of these role models is more helpful?</p>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <button onClick={() => setChoice('mastery')} className="p-6 rounded-xl text-left flex flex-col justify-between h-48" style={{ backgroundColor: choice === 'mastery' ? '#FCA5A5' : '#FFFFFF', border: `2.5px solid ${choice === 'mastery' ? '#DC2626' : '#1C1917'}`, borderRadius: 14, boxShadow: choice === 'mastery' ? 'none' : '3px 3px 0px 0px #1C1917', color: choice === 'mastery' ? '#7F1D1D' : '#1C1917' }}>
+                <button onClick={() => setChoice('mastery')} className="p-6 rounded-xl text-left flex flex-col justify-between h-48" style={{ backgroundColor: moduleFill(choice === 'mastery' ? "var(--module-surface)" : "var(--module-surface)"), border: `2.5px solid ${choice === 'mastery' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(choice === 'mastery' ? "var(--module-danger-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(choice === 'mastery')} data-tone="coral" aria-pressed={!!(choice === 'mastery')}>
                     <div>
                         <p className="font-bold text-lg">The Genius (Mastery Model)</p>
                         <p className="text-xs mt-1">A past pupil who always got top marks, found school easy, and never really had to study.</p>
                     </div>
                     <p className="text-xs font-mono self-end">"Just work hard."</p>
                 </button>
-                 <button onClick={() => setChoice('coping')} className="p-6 rounded-xl text-left flex flex-col justify-between h-48" style={{ backgroundColor: choice === 'coping' ? '#6EE7B7' : '#FFFFFF', border: `2.5px solid ${choice === 'coping' ? '#059669' : '#1C1917'}`, borderRadius: 14, boxShadow: choice === 'coping' ? 'none' : '3px 3px 0px 0px #1C1917', color: choice === 'coping' ? '#064E3B' : '#1C1917' }}>
+                 <button onClick={() => setChoice('coping')} className="p-6 rounded-xl text-left flex flex-col justify-between h-48" style={{ backgroundColor: moduleFill(choice === 'coping' ? "var(--module-success-soft)" : "var(--module-surface)"), border: `2.5px solid ${choice === 'coping' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(choice === 'coping' ? "var(--module-success-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(choice === 'coping')} data-tone="mint" aria-pressed={!!(choice === 'coping')}>
                     <div>
                         <p className="font-bold text-lg">The Grafter (Coping Model)</p>
                         <p className="text-xs mt-1">A past pupil who used to struggle in tests, changed how they studied, and completely turned things around.</p>
@@ -235,7 +239,7 @@ const RoleModelSelector = () => {
                      <p className="text-xs font-mono self-end">"Here's how I recovered."</p>
                 </button>
              </div>
-             {choice === 'coping' && <motion.p initial={{opacity:0}} animate={{opacity:1}} className="text-center mt-4 text-sm text-emerald-700 font-bold">Correct. Seeing someone struggle and bounce back is way more motivating than watching someone who made it look easy.</motion.p>}
+             {choice === 'coping' && <motion.p initial={{opacity:0}} animate={{opacity:1}} className="text-center mt-4 text-sm text-[var(--module-success-text)] font-bold">Correct. Seeing someone struggle and bounce back is way more motivating than watching someone who made it look easy.</motion.p>}
         </div>
     );
 };
@@ -255,37 +259,37 @@ const IcebergInteractive = () => {
         <div className="my-10">
             {/* Section chip + title */}
             <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)' }}>Reflection Activity</span>
-                <h4 className="font-serif text-2xl font-bold" style={{ color: '#1a1a1a' }}>The Success Iceberg</h4>
-                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Success is what people see. Process is what it takes.</p>
+                <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)' }}>Reflection Activity</span>
+                <h4 className="font-serif text-2xl font-bold" style={{ color: "var(--module-ink)" }}>The Success Iceberg</h4>
+                <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Success is what people see. Process is what it takes.</p>
             </div>
 
             {/* Iceberg card */}
-            <div className="max-w-lg mx-auto overflow-hidden" style={{ border: '2px solid #1a1a1a', borderRadius: 16 }}>
+            <div className="max-w-lg mx-auto overflow-hidden" style={{ border: "2px solid var(--module-line)", borderRadius: 16 }}>
 
                 {/* TOP: Above the waterline — sky */}
-                <div className="flex flex-col items-center justify-center text-center" style={{ backgroundColor: '#dbeafe', padding: '24px 28px', minHeight: 140 }}>
-                    <span className="text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: '#bfdbfe', color: '#1e40af', borderRadius: 20, padding: '3px 10px' }}>Above the waterline</span>
-                    <p className="font-serif font-bold text-xl" style={{ color: '#1e3a8a' }}>Visible Success</p>
-                    <p className="text-[13px] mt-1" style={{ color: '#3b82f6' }}>The result people see and celebrate</p>
+                <div className="flex flex-col items-center justify-center text-center" style={{ backgroundColor: "var(--module-surface)", padding: '24px 28px', minHeight: 140 }}>
+                    <span className="text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-ink)", borderRadius: 20, padding: '3px 10px' }}>Above the waterline</span>
+                    <p className="font-serif font-bold text-xl" style={{ color: "var(--module-ink)" }}>Visible Success</p>
+                    <p className="text-[13px] mt-1" style={{ color: "var(--module-ink)" }}>The result people see and celebrate</p>
                 </div>
 
                 {/* WATERLINE */}
-                <div className="relative" style={{ height: 3, background: `linear-gradient(to right, #93c5fd, ${COLORS.accent})` }}>
-                    <span className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] bg-white px-2" style={{ color: '#5a5550' }}>~ waterline ~</span>
+                <div className="relative" style={{ height: 3, background: moduleFill(`linear-gradient(to right, #93c5fd, ${COLORS.accent})`) }}>
+                    <span className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] bg-[var(--module-surface)] px-2" style={{ color: "var(--module-ink)" }}>~ waterline ~</span>
                 </div>
 
                 {/* BOTTOM: Below the waterline */}
-                <div style={{ backgroundColor: '#F8F8F8', padding: '24px 28px', minHeight: 220 }}>
-                    <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: 'rgba(242,107,31,0.1)', color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '3px 10px' }}>Below the waterline</span>
-                    <p className="font-serif font-bold text-lg" style={{ color: '#1a1a1a' }}>The Invisible Process</p>
-                    <p className="text-xs mb-4" style={{ color: '#7a7068' }}>What actually made it happen — that nobody sees</p>
+                <div style={{ backgroundColor: "var(--module-surface)", padding: '24px 28px', minHeight: 220 }}>
+                    <span className="inline-block text-[10px] font-bold uppercase tracking-wider mb-2" style={{ backgroundColor: 'var(--module-surface)', color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '3px 10px' }}>Below the waterline</span>
+                    <p className="font-serif font-bold text-lg" style={{ color: "var(--module-ink)" }}>The Invisible Process</p>
+                    <p className="text-xs mb-4" style={{ color: "var(--module-muted)" }}>What actually made it happen — that nobody sees</p>
 
                     {/* Entered items */}
                     {inputs.length > 0 && (
                         <div className="flex flex-wrap gap-2 mb-4">
                             {inputs.map((input, i) => (
-                                <span key={i} className="text-[13px] font-medium" style={{ backgroundColor: 'rgba(242,107,31,0.1)', border: '1.5px solid rgba(242,107,31,0.25)', color: COLORS.accentDarkText, borderRadius: 20, padding: '4px 12px' }}>{input}</span>
+                                <span key={i} className="text-[13px] font-medium" style={{ backgroundColor: 'var(--module-surface)', border: '1.5px solid rgba(242,107,31,0.25)', color: moduleText(COLORS.accentDarkText), borderRadius: 20, padding: '4px 12px' }}>{input}</span>
                             ))}
                         </div>
                     )}
@@ -297,15 +301,15 @@ const IcebergInteractive = () => {
                         placeholder="e.g., failed attempts, asking for help..."
                         className="w-full text-sm outline-none"
                         style={{
-                            backgroundColor: '#FFFFFF',
-                            border: '1.5px solid #E7E5E4',
+                            backgroundColor: "var(--module-surface)",
+                            border: "1.5px solid var(--module-line)",
                             borderRadius: 12,
                             padding: '14px 16px',
-                            color: '#1a1a1a',
+                            color: "var(--module-ink)",
                             fontSize: 14,
                         }}
                         onFocus={(e) => { e.currentTarget.style.borderColor = COLORS.accent; }}
-                        onBlur={(e) => { e.currentTarget.style.borderColor = '#E7E5E4'; }}
+                        onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-on-fill)"; }}
                         onKeyDown={(e) => {
                             if (e.key === 'Enter' && textVal.trim()) {
                                 addItem(textVal);
@@ -321,7 +325,7 @@ const IcebergInteractive = () => {
                                 key={s}
                                 onClick={() => addItem(s)}
                                 className="text-xs transition-opacity hover:opacity-80"
-                                style={{ backgroundColor: 'rgba(242,107,31,0.08)', border: '1px solid rgba(242,107,31,0.2)', color: COLORS.accentDarkText, borderRadius: 20, padding: '4px 10px' }}
+                                style={{ backgroundColor: 'var(--module-surface)', border: '1px solid rgba(242,107,31,0.2)', color: moduleText(COLORS.accentDarkText), borderRadius: 20, padding: '4px 10px' }} data-wide-button="true"
                             >
                               + {s}
                             </button>

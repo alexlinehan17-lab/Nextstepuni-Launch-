@@ -7,7 +7,8 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import { Home, Compass, ChartNoAxesCombined, Timer, Mountain } from 'lucide-react';
-import { UserProfile, MobileProfileSheet } from './components/UserProfileMenu';
+import { MobileProfileSheet } from './components/UserProfileMenu';
+import NextStepUniSidebar from './components/navigation/NextStepUniSidebar';
 import { type CategoryType } from './components/KnowledgeTree';
 import AppRouter from './components/AppRouter';
 import OfflineBanner from './components/OfflineBanner';
@@ -20,13 +21,13 @@ import { type YearGroup, type StudentSubject } from './components/subjectData';
 import { type PastJCData } from './types';
 import StudyPassportModal from './components/StudyPassportModal';
 import { db } from './firebase';
-import { doc, getDoc, setDoc, updateDoc, arrayUnion, writeBatch, increment, runTransaction } from 'firebase/firestore';
+import { doc, setDoc, writeBatch } from 'firebase/firestore';
 import { type ModuleProgress, type NorthStar } from './types';
 import { createDirectionProfile } from './services/directionProfile';
 import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles } from './courseData';
 import { filterCoursesForStudent } from './utils/courseVisibility';
-import { awaitWriteOrTimeout, saveInBackground } from './utils/firestoreWrite';
+import { saveInBackground } from './utils/firestoreWrite';
 import { useSettings } from './hooks/useSettings';
 import { useTodaysFocus } from './hooks/useTodaysFocus';
 import { useStrategyMastery } from './hooks/useStrategyMastery';
@@ -34,19 +35,14 @@ import { useWeeklyChallenge } from './hooks/useWeeklyChallenge';
 import { useRecommendation } from './hooks/useRecommendation';
 import { useQuests } from './hooks/useQuests';
 import './utils/bootParams'; // eager URL snapshot for deep-link params (must run before NavigationContext rewrites the URL)
-import TrainingPulse from './components/TrainingPulse';
 import AchievementToast from './components/AchievementToast';
 import RankUpModal from './components/RankUpModal';
 import StreakCelebration from './components/StreakCelebration';
 import { useGamification } from './hooks/useGamification';
-import { createStarterState } from './hooks/useIslandShop';
-import { findBestLandPlacement } from './components/journey/hex/hexGeometry';
-import { type IslandState } from './types';
 import { type AthleteRank, type AchievementDefinition } from './gamificationConfig';
 import { type StudentSubjectProfile } from './components/subjectData';
 import NorthStarEditModal from './components/NorthStarEditModal';
 import ChangeSubjectsModal from './components/ChangeSubjectsModal';
-import NotificationBell from './components/NotificationBell';
 import { POINTS, isModuleJustCompleted, isCategoryJustCompleted } from './journeyPointsConfig';
 import { SettingsContext } from './contexts/SettingsContext';
 import { useAuth } from './contexts/AuthContext';
@@ -61,7 +57,12 @@ import { DEMO_STUDENT_UID } from './data/devStudent';
 import SiteGuide, { type GuideAction } from './components/SiteGuide';
 import FeedbackModal from './components/FeedbackModal';
 import { useMobileAppDesign } from './hooks/useMobileAppDesign';
+import './components/mobile-editorial.css';
 import { trackProgrammeEvent } from './utils/programmeAnalytics';
+import { StudySessionProvider } from './contexts/StudySessionContext';
+import StudyMiniTimer from './components/study/StudyMiniTimer';
+import { onNotificationOpen } from './services/notifications';
+import './services/studyTimerDemo'; // inert unless a DEBUG native build asks (simulator checks)
 
 /* ── Mobile Bottom Navigation Bar ── */
 interface MobileBottomNavProps {
@@ -89,22 +90,23 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
   return createPortal(
     <nav
       aria-label={mobileAppDesign ? 'Main navigation' : undefined}
-      className="fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-white dark:bg-zinc-900 border-t-[1.5px] border-[#383838] dark:border-zinc-700"
+      className="editorial-bottom-nav fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-white dark:bg-zinc-900 border-t-[1.5px] border-[#383838] dark:border-zinc-700"
       style={{ paddingBottom: 'var(--sab, 0px)' }}
     >
       <div className="mx-auto flex h-16 max-w-md items-center justify-around px-1">
         {tabs.map((tab) => {
-          const isActive = tab.id === viewState || (tab.id === 'tree' && (mobileAppDesign ? ['category', 'modules', 'module', 'learning-paths'].includes(viewState) : viewState === 'category'));
+          const isActive = tab.id === viewState || (tab.id === 'dashboard' && viewState === 'insights') || (tab.id === 'tree' && (mobileAppDesign ? ['category', 'modules', 'module', 'learning-paths'].includes(viewState) : viewState === 'category'));
           return (
             <button
               key={tab.id}
               type="button"
-              aria-current={mobileAppDesign && isActive ? 'page' : undefined}
+              aria-current={isActive ? 'page' : undefined}
               data-coach={mobileAppDesign && tab.id === 'innovation-zone' ? 'launchpad' : undefined}
               onClick={tab.action}
-              className={`relative flex h-full min-w-0 flex-1 flex-col items-center justify-center gap-0.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[rgba(var(--accent),0.45)] ${isActive ? 'text-[#B94712] dark:text-[#FF9A64]' : 'text-zinc-500 dark:text-zinc-400'}`}
+              className={`relative flex h-full min-w-0 flex-1 flex-col items-center justify-center gap-0.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[rgba(var(--accent),0.45)] ${isActive ? 'text-zinc-900 dark:text-white' : 'text-zinc-500 dark:text-zinc-400'}`}
             >
-              <span className={`flex h-8 w-11 items-center justify-center rounded-xl border transition-colors ${isActive ? 'border-[#F26B1F] bg-[#FDEBDD] dark:border-orange-400 dark:bg-orange-950/60' : 'border-transparent'}`}>
+              {isActive && <span className="editorial-nav-rule" aria-hidden="true" />}
+              <span className="flex h-8 w-11 items-center justify-center">
                 <tab.icon size={20} strokeWidth={isActive ? 2 : 1.6} />
               </span>
               <span className="text-[10px] font-semibold tracking-tight">{tab.label}</span>
@@ -149,7 +151,7 @@ const App: React.FC = () => {
     northStar, setNorthStar,
     timetableCompletions,
     pointsData, streak,
-    unlockedAvatarSeeds, setUnlockedAvatarSeeds,
+    setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
     unlockedCardStyles, setUnlockedCardStyles,
     dismissedGuides, setDismissedGuides,
@@ -193,7 +195,8 @@ const App: React.FC = () => {
   const [mobileProfileOpen, setMobileProfileOpen] = useState(false);
   const [timetableBlockContext, setTimetableBlockContext] = useState<{ subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string } | null>(null);
   const [unreadNotificationCount, setUnreadNotificationCount] = useState(0);
-  const { settings, updateSetting, isLoaded: _settingsLoaded } = useSettings(user?.uid, user?.avatar);
+  const handleAvatarChange = useCallback((avatar: string) => patchUser({ avatar }), [patchUser]);
+  const { settings, updateSetting, isLoaded: _settingsLoaded } = useSettings(user?.uid, user?.avatar, handleAvatarChange);
   const { recommendation } = useTodaysFocus(userProgress, ALL_COURSES);
 
   // Gamification
@@ -220,46 +223,6 @@ const App: React.FC = () => {
     setToastQueue(q => q.slice(1));
     setCurrentToast(next);
   }, [toastQueue, currentToast]);
-
-  // Grant 3 grass tiles on rank-up
-  const grantRankUpTiles = async (uid: string) => {
-    try {
-      const island: IslandState | undefined = uid === DEMO_STUDENT_UID
-        ? rawProgressDoc.islandState
-        : (await getDoc(doc(db, 'progress', uid))).data()?.islandState;
-      if (!island || !island.placements) return;
-      const occupied = new Set<string>();
-      for (const p of island.placements) {
-        if (p.type === 'hex') occupied.add(`${p.q},${p.r}`);
-      }
-      const now = new Date().toISOString();
-      const tiles: IslandState['placements'] = [];
-      for (let i = 0; i < 3; i++) {
-        const pos = findBestLandPlacement(occupied);
-        occupied.add(`${pos.q},${pos.r}`);
-        tiles.push({ itemId: 'terrain-grass', model: 'grass.glb', type: 'hex', q: pos.q, r: pos.r, purchasedAt: now });
-      }
-      if (uid === DEMO_STUDENT_UID) {
-        updateDemoProgress(current => ({
-          ...current,
-          islandState: current.islandState ? {
-            ...current.islandState,
-            placements: [...current.islandState.placements, ...tiles],
-            lastPurchaseTimestamp: now,
-          } : current.islandState,
-        }));
-        return;
-      }
-      // Atomic append (arrayUnion) so a concurrent purchase/claim can't clobber
-      // these rank-up tiles via a whole-array overwrite. (audit item 18)
-      saveInBackground(updateDoc(doc(db, 'progress', uid), {
-        'islandState.placements': arrayUnion(...tiles),
-        'islandState.lastPurchaseTimestamp': now,
-      }), 'App.grantRankUpTiles', undefined, { silent: true });
-    } catch (err) {
-      console.error('Failed to grant rank-up tiles:', err);
-    }
-  };
 
   // Detect rank changes within one authenticated student session. Loading a
   // saved points total on login establishes the baseline; logout or switching
@@ -291,7 +254,7 @@ const App: React.FC = () => {
     }
     if (observation.rankUp && trackingUid) {
       setRankUpModal(observation.rankUp);
-      grantRankUpTiles(trackingUid);
+      // Meadow rewards are claimed transactionally when the island opens.
     }
   }, [
     user,
@@ -440,6 +403,8 @@ const App: React.FC = () => {
         );
       }
 
+      // Resume-only checkpoints must not rerun rewards or mastery calculations.
+      if (newSection === prevSection) return;
       pointsData.reload();
 
       if (newSection > prevSection) {
@@ -482,7 +447,6 @@ const App: React.FC = () => {
   const handleGoToInnovationZone = () => { nav.navigateToInnovationZone(); };
 
   const handleGoToDashboard = () => { nav.navigateToDashboard(); };
-  const handleGoToMilestones = () => { nav.navigateToDashboard('milestones'); };
 
   const _handleGoToLearningPaths = () => { nav.navigateToLearningPaths(); };
 
@@ -492,6 +456,14 @@ const App: React.FC = () => {
     setTimetableBlockContext(null);
     nav.navigateToStudySession();
   };
+
+  // Tapping "Time's up" brings the student back to the study room, including
+  // a tap that launched the app (onNotificationOpen holds it until now).
+  const openStudyFromNotification = useRef(handleGoToStudy);
+  openStudyFromNotification.current = handleGoToStudy;
+  useEffect(() => onNotificationOpen(route => {
+    if (route === 'study-session') openStudyFromNotification.current();
+  }), []);
 
   const handleStudyFromTimetable = useCallback((block: { subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string }) => {
     setTimetableBlockContext(block);
@@ -523,7 +495,6 @@ const App: React.FC = () => {
         ...(northStarData ? {
           northStar: northStarData,
           directionProfile: createDirectionProfile(northStarData),
-          islandState: createStarterState(northStarData.category),
         } : {}),
       }));
       setStudentProfile(profile);
@@ -599,7 +570,6 @@ const App: React.FC = () => {
     if (northStarData) {
       saveData.northStar = northStarData;
       saveData.directionProfile = createDirectionProfile(northStarData);
-      saveData.islandState = createStarterState(northStarData.category);
       setNorthStar(northStarData);
     }
     setDoc(progressDocRef, saveData, { merge: true }).catch(rollback);
@@ -871,6 +841,28 @@ const App: React.FC = () => {
       });
   };
 
+  // "i cant change my exam date" (feedback, 16 Oct 2026). The date drives the
+  // planner, countdowns and Mark Bank's scheduling, so it saves straight onto
+  // the subject profile, optimistically, exactly like a subjects edit.
+  const handleExamDateSave = (examStartDate: string) => {
+    if (!studentProfile) return;
+    const profile: StudentSubjectProfile = { ...studentProfile, examStartDate, updatedAt: new Date().toISOString() };
+    if (!user) { setStudentProfile(profile); return; }
+    const previousProfile = studentProfile;
+    setStudentProfile(profile);
+    if (user.uid === DEMO_STUDENT_UID) {
+      updateDemoProgress(current => ({ ...current, subjectProfile: profile }));
+      showToast('Exam date updated.', 'success');
+      return;
+    }
+    setDoc(doc(db, 'progress', user.uid), { subjectProfile: profile }, { merge: true })
+      .catch(err => {
+        console.error('Failed to save exam date:', err);
+        showToast('Couldn\'t save your exam date — please try again', 'error');
+        setStudentProfile(previousProfile);
+      });
+  };
+
   const _handleBackToTree = () => { nav.goBack(); };
 
   const _handleBackToCategory = () => { nav.goBack(); };
@@ -898,87 +890,6 @@ const App: React.FC = () => {
     }
   }, [user?.uid, showToast, updateDemoProgress]);
 
-  const handlePurchaseAvatar = useCallback(async (seed: string, price: number): Promise<boolean> => {
-    if (!user?.uid) return false;
-    if (unlockedAvatarSeeds.includes(seed)) return true;
-
-    if (pointsData.balance < price) {
-      showToast(`You need ${price - pointsData.balance} more JP to unlock this avatar.`, 'error');
-      return false;
-    }
-
-    if (user.uid === DEMO_STUDENT_UID) {
-      const nextSeeds = Array.from(new Set([...unlockedAvatarSeeds, seed]));
-      updateDemoProgress(current => ({
-        ...current,
-        pointsData: {
-          ...current.pointsData,
-          totalSpent: (current.pointsData?.totalSpent ?? 0) + price,
-        },
-        cosmeticUnlocks: {
-          ...current.cosmeticUnlocks,
-          avatarSeeds: nextSeeds,
-        },
-      }));
-      setUnlockedAvatarSeeds(nextSeeds);
-      showToast('Avatar unlocked and ready to use.', 'success');
-      return true;
-    }
-
-    try {
-      const progressRef = doc(db, 'progress', user.uid);
-      let transactionFailure: unknown;
-      const transactionWrite = runTransaction(db, async transaction => {
-        const snapshot = await transaction.get(progressRef);
-        const data = snapshot.data();
-        const alreadyUnlocked = (data?.cosmeticUnlocks?.avatarSeeds as string[] | undefined)?.includes(seed);
-        if (alreadyUnlocked) return;
-
-        const earned = Number(data?.pointsData?.totalEarned ?? 0);
-        const spent = Number(data?.pointsData?.totalSpent ?? 0);
-        if (earned - spent < price) throw new Error('INSUFFICIENT_JP');
-
-        transaction.set(progressRef, {
-          pointsData: { totalSpent: increment(price) },
-          cosmeticUnlocks: { avatarSeeds: arrayUnion(seed) },
-        }, { merge: true });
-      }).catch(error => {
-        transactionFailure = error;
-        throw error;
-      });
-
-      const outcome = await awaitWriteOrTimeout(transactionWrite, 'App.purchaseAvatar');
-      if (outcome === 'pending') {
-        showToast('Avatar purchase is waiting for a connection. Try again when you are online.', 'error');
-        pointsData.reload();
-        return false;
-      }
-      if (outcome === 'failed') {
-        if (transactionFailure instanceof Error && transactionFailure.message === 'INSUFFICIENT_JP') {
-          showToast('Your JP balance changed. Earn a little more and try again.', 'error');
-        } else {
-          showToast("Couldn't unlock that avatar — check your connection.", 'error');
-        }
-        pointsData.reload();
-        return false;
-      }
-
-      setUnlockedAvatarSeeds(Array.from(new Set([...unlockedAvatarSeeds, seed])));
-      pointsData.reload();
-      showToast('Avatar unlocked and ready to use.', 'success');
-      return true;
-    } catch (error) {
-      if (error instanceof Error && error.message === 'INSUFFICIENT_JP') {
-        showToast('Your JP balance changed. Earn a little more and try again.', 'error');
-      } else {
-        console.error('Failed to purchase avatar:', error);
-        showToast("Couldn't unlock that avatar — check your connection.", 'error');
-      }
-      pointsData.reload();
-      return false;
-    }
-  }, [pointsData, setUnlockedAvatarSeeds, showToast, unlockedAvatarSeeds, updateDemoProgress, user?.uid]);
-
   // AppRouter owns the progress-hydration loading state so the account-setup
   // animation stays mounted continuously from registration into onboarding.
   // Keep every piece of student chrome gated here: mounting counters against
@@ -1003,6 +914,7 @@ const App: React.FC = () => {
     transitionToSeniorMode, transitionTargetYear: (transitionToSeniorMode ? (user?.yearGroup === 'TY' ? 'TY' : '5th') : undefined) as 'TY' | '5th' | undefined,
     handleProgressUpdate,
     setSettingsOpen, setPassportOpen, setChangeSubjectsOpen, setNorthStarEditOpen,
+    handleExamDateSave,
     setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
     setUnlockedCardStyles,
@@ -1012,38 +924,18 @@ const App: React.FC = () => {
     hasUnreadNotifications: unreadNotificationCount > 0,
   };
 
+  // One study session for the whole app, so the timer keeps counting while a
+  // student uses Mark Bank, Paper Trail or the Topic Atlas (mini timer).
+  const studyUid = user && !user.isAdmin && !isSchoolStaff(user.role) ? user.uid : undefined;
+
   return (
     <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
+    <StudySessionProvider uid={studyUid} userProgress={userProgress} allCourses={studentCourses} roomOpen={viewState === 'study-session'}>
     <OfflineBanner />
     <div className="min-h-screen bg-white dark:bg-zinc-950">
+      {/* Achievements remain available while account controls live in the sidebar. */}
       {user && userProgressReady && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
-        <div className={`fixed top-6 right-6 z-[100] ${viewState === 'my-journey' ? 'hidden' : 'hidden md:block'}`}>
-          <div className="flex items-center gap-2">
-            <div>
-              {gamification.isLoaded && (
-                <TrainingPulse
-                  gamificationState={gamification.state}
-                  onOpenProgress={handleGoToMilestones}
-                  streak={streak}
-                  pointsBalance={pointsData.balance}
-                />
-              )}
-              <AchievementToast
-                achievement={currentToast}
-                onDismiss={() => setCurrentToast(null)}
-              />
-            </div>
-            <NotificationBell uid={user.uid} onUnreadCountChange={setUnreadNotificationCount} />
-            <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={studentCourses.length} onOpenNorthStar={() => setNorthStarEditOpen(true)} hasNorthStar={northStar !== null} unlockedThemes={unlockedThemes} />
-          </div>
-        </div>
-      )}
-
-      {/* Mobile achievement toast — TrainingPulse removed on mobile per design feedback.
-          AchievementToast still needs a mount point on mobile so it appears
-          unobtrusively at top-left when a new achievement fires. */}
-      {user && userProgressReady && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
-        <div className="fixed top-4 left-4 z-[100] md:hidden pointer-events-none">
+        <div className="fixed top-4 left-4 md:top-auto md:left-auto md:bottom-6 md:right-6 z-[150] pointer-events-none">
           <div className="pointer-events-auto">
             <AchievementToast
               achievement={currentToast}
@@ -1053,7 +945,15 @@ const App: React.FC = () => {
         </div>
       )}
 
-      <AppRouter {...routerProps} />
+      {user && userProgressReady && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin ? (
+        <NextStepUniSidebar user={user} settings={settings} updateSetting={updateSetting}
+          onLogout={handleLogout} onOpenSettings={() => setSettingsOpen(true)}
+          onOpenPassport={() => setPassportOpen(true)} onOpenSiteGuide={() => setSiteGuideOpen(true)}
+          onOpenFeedback={() => setFeedbackOpen(true)} onUnreadCountChange={setUnreadNotificationCount}
+          completedCount={completedCount} totalCount={studentCourses.length} unreadCount={unreadNotificationCount}>
+          <AppRouter {...routerProps} />
+        </NextStepUniSidebar>
+      ) : <AppRouter {...routerProps} />}
 
       {user && userProgressReady && !user.isAdmin && !isSchoolStaff(user.role) && (
         <>
@@ -1099,6 +999,7 @@ const App: React.FC = () => {
           onGoToInsights={handleGoToInsights}
           onGoToReferences={() => nav.navigateToAccreditation()}
           onGoToYearPlans={() => nav.navigateToYearPlans()}
+          onGoToYourSetup={() => nav.navigateToYourSetup()}
           onOpenSiteGuide={() => setSiteGuideOpen(true)}
           onOpenFeedback={() => setFeedbackOpen(true)}
           completedCount={completedCount}
@@ -1116,11 +1017,6 @@ const App: React.FC = () => {
             onClose={() => setSettingsOpen(false)}
             settings={settings}
             updateSetting={updateSetting}
-            unlockedAvatarSeeds={unlockedAvatarSeeds}
-            pointsBalance={pointsData.balance}
-            onPurchaseAvatar={handlePurchaseAvatar}
-            unlockedThemes={unlockedThemes}
-            unlockedCardStyles={unlockedCardStyles}
             userName={user?.name}
             userSchool={user?.school}
             userYearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
@@ -1194,7 +1090,12 @@ const App: React.FC = () => {
           })()}
         />
       )}
+
+      {studyUid && userProgressReady && viewState !== 'study-session' && viewState !== 'onboarding' && (
+        <StudyMiniTimer onOpen={handleGoToStudy} view={viewState} />
+      )}
     </div>
+    </StudySessionProvider>
     </SettingsContext.Provider>
   );
 };

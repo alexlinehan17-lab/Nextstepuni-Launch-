@@ -3,11 +3,12 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
+import Avatar from './Avatar';
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, LogOut, Settings, Flame, ChevronRight, Trophy, Award, BarChart3, Star, X, BookOpen, CalendarRange, HelpCircle, MessageSquare } from 'lucide-react';
-import { type SessionUser, getAvatarUrl, handleAvatarError } from '../utils/authUtils';
+import { Sun, Moon, LogOut, Settings, Flame, ChevronRight, Trophy, Award, BarChart3, Star, X, BookOpen, CalendarRange, HelpCircle, MessageSquare, SlidersHorizontal } from 'lucide-react';
+import { type SessionUser } from '../utils/authUtils';
 import { type UserSettings } from '../types';
 import { type StreakData } from '../hooks/useStreak';
 import { type FocusRecommendation } from '../hooks/useTodaysFocus';
@@ -53,8 +54,8 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settin
 
   return (
     <div className="relative" ref={dropdownRef}>
-      <button onClick={() => setIsOpen(!isOpen)} className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] rounded-full">
-        <img src={getAvatarUrl(displayAvatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" onError={(e) => handleAvatarError(e, displayAvatar)} />
+      <button onClick={() => setIsOpen(!isOpen)} aria-label="Open profile and settings" aria-expanded={isOpen} className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] rounded-full">
+        <Avatar seed={displayAvatar} alt="User Avatar" className="w-11 h-11 rounded-full bg-zinc-200" />
       </button>
       <AnimatePresence>
         {isOpen && (
@@ -66,7 +67,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settin
           >
             {/* User info */}
             <div className="flex items-center gap-3 border-b border-zinc-200/50 dark:border-white/10 pb-3 mb-3">
-              <img src={getAvatarUrl(displayAvatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" onError={(e) => handleAvatarError(e, displayAvatar)} />
+              <Avatar seed={displayAvatar} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
               <div>
                 <p className="font-bold text-zinc-800 dark:text-white">{user.name}</p>
                 <p className="text-xs text-zinc-500">{user.isAdmin ? 'Admin' : 'Student'}</p>
@@ -192,6 +193,8 @@ interface MobileProfileSheetProps {
   onGoToInsights: () => void;
   onGoToReferences: () => void;
   onGoToYearPlans: () => void;
+  /** Everything the student set up in onboarding, with its editors. */
+  onGoToYourSetup?: () => void;
   onOpenSiteGuide: () => void;
   onOpenFeedback: () => void;
   completedCount: number;
@@ -201,7 +204,7 @@ interface MobileProfileSheetProps {
   unlockedThemes: string[];
 }
 
-export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, onGoToInsights: _onGoToInsights, onGoToReferences, onGoToYearPlans, onOpenSiteGuide, onOpenFeedback, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes: _unlockedThemes }) => {
+export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, onGoToInsights: _onGoToInsights, onGoToReferences, onGoToYearPlans, onGoToYourSetup, onOpenSiteGuide, onOpenFeedback, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes: _unlockedThemes }) => {
   const displayAvatar = avatarOverride || user.avatar;
   const sheetRef = useRef<HTMLDivElement>(null);
   useModal(isOpen, onClose, sheetRef);
@@ -216,9 +219,10 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 z-[95] bg-black/40 md:hidden"
+            className="fixed inset-0 z-[95] bg-black/40"
           />
-          {/* Sheet */}
+          {/* Sheet — iPads use the mobile app design without a sidebar, so the
+              sheet opens on tablet widths too, centred rather than full-bleed. */}
           <motion.div
             ref={sheetRef}
             key="profile-sheet"
@@ -230,7 +234,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
             aria-modal="true"
             aria-labelledby="mobile-profile-title"
             tabIndex={-1}
-            className="fixed bottom-0 left-0 right-0 z-[96] md:hidden bg-white dark:bg-zinc-900 rounded-t-2xl border-t border-zinc-200 dark:border-zinc-800 max-h-[85vh] overflow-y-auto"
+            className="fixed bottom-0 left-0 right-0 z-[96] mx-auto bg-white dark:bg-zinc-900 rounded-t-2xl border-t border-zinc-200 dark:border-zinc-800 max-h-[85vh] overflow-y-auto md:max-w-[560px] md:border-x"
             style={{ paddingBottom: 'var(--sab, 0px)' }}
           >
             {/* Drag handle */}
@@ -242,7 +246,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
               {/* User info */}
               <div className="sticky top-0 z-10 -mx-5 mb-4 flex items-center justify-between border-b border-zinc-100 bg-white/95 px-5 py-3 backdrop-blur-xl dark:border-zinc-800 dark:bg-zinc-900/95">
                 <div className="flex items-center gap-3">
-                  <img src={getAvatarUrl(displayAvatar)} alt="Avatar" className="w-12 h-12 rounded-full bg-zinc-200" onError={(e) => handleAvatarError(e, displayAvatar)} />
+                  <Avatar seed={displayAvatar} alt="Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
                   <div>
                     <h2 id="mobile-profile-title" className="font-bold text-zinc-800 dark:text-white">{user.name}</h2>
                     <p className="text-xs text-zinc-500">Student</p>
@@ -309,6 +313,12 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                 <section aria-labelledby="profile-direction-heading">
                   <p id="profile-direction-heading" className="mb-1 px-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-zinc-400 dark:text-zinc-500">Direction</p>
                   <div className="divide-y divide-zinc-100 rounded-2xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-700">
+                    {onGoToYourSetup && (
+                      <button onClick={() => { onClose(); onGoToYourSetup(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                        <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><SlidersHorizontal size={16} className="text-zinc-700 dark:text-zinc-300" /></div>
+                        <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">Your setup</span>
+                      </button>
+                    )}
                     {hasNorthStar && (
                       <button onClick={() => { onClose(); onOpenNorthStar(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
                         <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><Star size={16} className="text-amber-500" /></div>
@@ -332,7 +342,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                     </button>
                     <button onClick={() => { onClose(); onOpenFeedback(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
                       <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><MessageSquare size={16} className="text-zinc-500" /></div>
-                      <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">Help us improve</span>
+                      <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">Give feedback</span>
                     </button>
                   </div>
                 </section>

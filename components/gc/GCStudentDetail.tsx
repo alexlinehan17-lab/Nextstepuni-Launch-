@@ -2,6 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+import Avatar from '../Avatar';
 
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
@@ -9,7 +10,6 @@ import { MotionDiv } from '../Motion';
 import { ArrowLeft, Flame, Coins, ChevronDown, ChevronRight, BookOpen, AlertTriangle, X, Compass, BarChart3, Brain, Lightbulb, Heart, UserPlus, TrendingDown, TrendingUp, CheckCircle, MinusCircle, Flag, type LucideIcon } from 'lucide-react';
 import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
-import { getAvatarUrl } from '../../utils/authUtils';
 import { getSchoolName } from '../../schoolData';
 import { getPointsForGrade, LC_SUBJECTS } from '../subjectData';
 import { ARCHETYPES, CAPABILITY_KEYS, JOURNEY_SCORING_VERSION, STAT_LABELS, type CapabilityKey } from '../journeySimulatorData';
@@ -92,7 +92,7 @@ const INNOVATION_TOOLS: { id: string; title: string; jcTitle?: string; curriculu
   { id: 'journey',          title: 'Academic Journey Simulator', curriculum: 'senior' },
   { id: 'cao-simulator',    title: 'Points Passport · Grade Planner', curriculum: 'senior' },
   { id: 'flashcards',       title: 'Flashcard Studio',           curriculum: 'both' },
-  { id: 'planner',          title: 'Spaced Repetition Timetable', curriculum: 'both' },
+  { id: 'planner',          title: 'Planner & Study', curriculum: 'both' },
   { id: 'war-room',         title: 'War Room',                   curriculum: 'senior' },
   { id: 'comeback',         title: 'Comeback Engine',            curriculum: 'both' },
   { id: 'future-finder',    title: 'Future Finder', jcTitle: 'Subject Explorer', curriculum: 'both' },
@@ -268,8 +268,8 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
     <div className="sticky top-0 z-10 bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800 px-6 py-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3 min-w-0">
-          <img
-            src={getAvatarUrl(student.user.avatar)}
+          <Avatar
+            seed={student.user.avatar}
             alt=""
             className="w-10 h-10 rounded-full bg-zinc-200 dark:bg-zinc-700 ring-2 ring-[rgba(var(--accent),0.2)] shrink-0"
           />
@@ -345,8 +345,8 @@ export const GCStudentDetail: React.FC<GCStudentDetailProps> = ({ student, allCo
           >
             <ArrowLeft size={18} className="text-zinc-600 dark:text-zinc-300" />
           </button>
-          <img
-            src={getAvatarUrl(student.user.avatar)}
+          <Avatar
+            seed={student.user.avatar}
             alt=""
             className="w-14 h-14 rounded-full bg-zinc-200 ring-2 ring-[rgba(var(--accent),0.2)]"
           />

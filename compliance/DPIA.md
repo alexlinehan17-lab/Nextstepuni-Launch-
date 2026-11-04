@@ -65,7 +65,7 @@ release gate for the final Year-2 DPIA.
 - `flareCounts`, `rescueCount`, `lighthouseLevel` (peer-support gamification metrics)
 - `strategyMastery`, `sm2States`, `teachBacksSeen`, `dismissedGuides`
 
-**`settings/{uid}`** — UI preferences only: language, avatar seed, dark mode toggle, accent theme, card style, default work minutes, flares animation toggle, dashboard visibility, essentials mode toggle (firestore.rules `match /settings/{userId}`).
+**`settings/{uid}`** — UI preferences only: language, avatar seed, dark mode toggle, accent theme, card style, default work minutes, flares animation toggle, dashboard visibility, essentials mode toggle, study timer notification choice (on/off only; the "time's up" notification and the iOS Lock Screen timer are scheduled and shown on the device itself, with no server push and nothing sent to a third party) (firestore.rules `match /settings/{userId}`).
 
 **`responses/{userId}`** — `{ [moduleId]: responseData }`. Free-text responses to module exercises. Some prompts elicit reflective writing; see Section 1.4 on special category data.
 
@@ -158,13 +158,18 @@ The Processor's intended retention policy is: **TBC — Alex to confirm intended
 
 ### 2.1 Lawful basis
 
-The Processor's working position is that processing is carried out under:
+Publication update — 4 October 2026 (owner-confirmed facts; not a solicitor certification):
 
-- **Article 6(1)(e) — public interest task**: the school is the Controller, acting *in loco parentis* to deliver a state-curriculum-aligned educational service. **Reviewer note: this presumes the Department of Education / individual schools accept Controller status; legal counsel must confirm with at least one participating school's data protection lead before relying on this basis.**
-- combined with **parental consent at the point of school enrolment** in the programme, in line with Irish DPC guidance on processing children's data and Article 8 GDPR.
-- For Article 9 categories that may incidentally arise in free-text reflections (Section 1.4), **Article 9(2)(g) — substantial public interest (education)** is the proposed condition, supported by Section 41 of the Data Protection Act 2018. **Reviewer note: legal counsel to confirm.**
+- The owner confirms executed school data-processing agreements and school approval of the programme lawful basis. Schools control programme delivery; Article 6(1)(e) must be supported by each school's actual statutory educational/guidance functions and purpose-specific instructions. Obtain the executed agreements and school notice for the evidence file.
+- The owner confirms the student programme is 16+. The app records an explicit eligibility confirmation without collecting DOB. Article 8 parental authorisation is not an additional legal basis for public-task processing. Contractual capacity for 16–17-year-olds remains a separate question.
+- Delete the former claim that section 41 of the Data Protection Act 2018 supplies a general education condition under Article 9(2)(g). It does not. Schools must identify an appropriate Article 9 condition before intentional special-category processing, including any sensitive support tags; restrict/remove unnecessary incidental disclosures. This remains a purpose-specific legal/operational review item.
+- NextStepUni acts as controller for its own enquiries, feedback, service administration and legal/security purposes, as described in the published notice. Document its Article 6(1)(f) necessity and children's-rights balancing assessments; the school DPA does not itself authorise an independent company purpose.
+- The actual database is London, UK (outside the EEA). Firebase Authentication is US-only. Assess transfers service by service and retain the applicable provider terms/safeguards; a database region does not establish whole-platform residency.
+- New and returning student/school-staff accounts must have a current server-recorded agreement before private account use. Company operators, local demos and password recovery are outside that school-user agreement flow. The old `consent` field is historical and is not treated as either current terms agreement or GDPR consent. Version-specific records are included in export and erasure.
 
-The Processor (NextStepUni Ltd) acts under Article 28 as Processor on behalf of each participating school as Controller. PwC Ireland is a sponsor, not a Controller and not a Processor; PwC receives no student-level data.
+The published Privacy Notice and Terms use the company identity confirmed by the owner: NextStepUni Limited, CRO 818010, contact address 75 Grange Park Road. The company should complete its full postal details in the evidence register. Sponsor access remains limited to anonymised reporting, with no identifiable student records or account access.
+
+Retain the unresolved operational retention, special-category and school-specific transparency findings elsewhere in this DPIA; publication does not close them or stand in for executed contract review.
 
 ### 2.2 Data minimisation analysis
 
@@ -204,6 +209,7 @@ Risks are scored on likelihood × severity (Low / Medium / High) using the Irish
   - Code changes (2026-04-29) and end-to-end deploy chronology (2026-04-30, including a post-deploy fix to the `/islandPublic` rule for query verification, and the hosting deploy that completed the refactor): `compliance/REMEDIATION_LOG.md`.
   - Smoke test verified end-to-end on 2026-04-30 with two same-school test accounts. The backfill script was deliberately not run; new projections are populated organically as students perform progress writes.
 - **Product decision (Alex, 2026-04-29):** the `category` field (NorthStarCategory — values such as `college`, `independence`, `prove-myself`, `creative`, `change-maker`) is included in the `/islandPublic` projection, deliberately and not silently. The rationale recorded for the audit trail: this is a soft, self-chosen aspiration field (not a special category under GDPR Article 9); the value is already implicit in the rendered island theme (water colour, scene preset), so excluding the data field without removing the visual would be cosmetic rather than meaningful; and peer-visibility of the North Star is intrinsic to the Peer Island feature's social-motivation purpose. Privacy impact assessed as low.
+- **Revision 2026-10-17 (year islands; staged, not yet deployed):** the projection now carries the current `paperIsland` (schema 2) instead of the deleted legacy `islandState`, and its readers are narrowed from the whole school to the same school **and** the same year group. Students control it with a "Show my island to my year" switch (default on; off deletes the projection). The `category` field above, the `score` and the `updatedAt` timestamp are no longer projected; first name, avatar, school, year group and the island's tiles are. Staff, disabled accounts, graduates and students with no school or year get no projection. Residual risk: `yearGroup` is self-declared, so the effective worst case remains the same-school scope assessed above. Full record: `compliance/PEER_ISLAND_REFACTOR_PLAN.md` §9.
 - Description (as identified): `firestore.rules` previously contained, inside `match /progress/{userId}`, a "Peer Islands" rule (formerly at lines 60–63 of the rules file) that allowed any authenticated student to read any other same-school student's full `progress` document, including study sessions, topic mastery and reflective debrief text.
 - Likelihood (as identified): **Medium** — no special skills required; could be triggered from the browser console by any logged-in student.
 - Severity (as identified): **High** — exposed Article 9-adjacent reflective content; permitted cohort-wide enumeration of grades and confidence ratings.

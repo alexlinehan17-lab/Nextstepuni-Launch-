@@ -1,0 +1,21 @@
+/*
+ * Leaving the landing page for the app is a real navigation, and the browser
+ * carries starguy across it: this document opts into cross-document view
+ * transitions, and leave.ts names him at the moment of departure. Chrome 126+
+ * and Safari 18.2+ animate; everything else simply navigates.
+ */
+@view-transition { navigation: auto; }
+
+::view-transition-group(starguy) {
+  animation-duration: 0.65s;
+  animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.2s;
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) { animation: none !important; }
+}

@@ -24,7 +24,7 @@ export function emptyTopicMasteryV2(): TopicMasteryV2 {
   return { schemaVersion: TOPIC_MASTERY_SCHEMA_VERSION, topics: {}, unresolved: {} };
 }
 
-function uniqueLabelMatch(refs: SyllabusCoverageTopic[], label: string): SyllabusCoverageTopic | undefined {
+function uniqueLabelMatch<T extends Pick<SyllabusCoverageTopic, 'id' | 'name'> & { code?: string }>(refs: T[], label: string): T | undefined {
   const target = normalise(label);
   const matches = refs.filter((ref) => normalise(ref.name) === target || (ref.code && normalise(ref.code) === target));
   return matches.length === 1 ? matches[0] : undefined;
@@ -48,7 +48,7 @@ export function migrateTopicMastery(
     const specification = subjectId
       ? resolveCurriculumSpecification(subjectId, examinationYearFromDate(examDate))
       : undefined;
-    const refs = specification ? getSyllabusTopicRefs(subjectName, examDate) : [];
+    const refs = specification?.status === 'verified' ? specification.groups.flatMap(group => [{ id: group.id, name: group.title }, ...group.topics.map(node => ({ id: node.id, name: node.title }))]) : [];
 
     for (const [topicName, entry] of Object.entries(subjectTopics)) {
       const ref = uniqueLabelMatch(refs, topicName);
@@ -123,6 +123,7 @@ export function upsertCanonicalMastery(
   topic: string,
   entry: TopicMasteryEntry,
   examDate?: string | null,
+  canonicalTopicId?: string,
 ): TopicMasteryV2 {
   const next: TopicMasteryV2 = {
     schemaVersion: TOPIC_MASTERY_SCHEMA_VERSION,
@@ -133,7 +134,10 @@ export function upsertCanonicalMastery(
   const specification = subjectId
     ? resolveCurriculumSpecification(subjectId, examinationYearFromDate(examDate))
     : undefined;
-  const ref = specification ? uniqueLabelMatch(getSyllabusTopicRefs(subject, examDate), topic) : undefined;
+  const explicit = canonicalTopicId && specification?.status === 'verified'
+    ? specification.groups.flatMap(group => [{ id: group.id, name: group.title }, ...group.topics.map(node => ({ id: node.id, name: node.title }))]).find(node => node.id === canonicalTopicId)
+    : undefined;
+  const ref = canonicalTopicId ? explicit : specification ? uniqueLabelMatch(getSyllabusTopicRefs(subject, examDate), topic) : undefined;
   if (subjectId && specification && ref) {
     const key = canonicalMasteryKey(specification.id, ref.id);
     next.topics[key] = {

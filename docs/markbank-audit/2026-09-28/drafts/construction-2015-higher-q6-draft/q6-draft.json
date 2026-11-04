@@ -1,0 +1,1849 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "higher",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "status": "Draft only; source, choice-route, figure and canonical/Atlas checks required before integration.",
+  "tasks": [
+    {
+      "questionNumber": "6",
+      "card": {
+        "id": "cons-2015-hl-q6-a",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "low-impact-design-a",
+        "questionRef": "2015 HL Q6(a)",
+        "stem": "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "questionText": "Using notes and freehand sketches, discuss three distinct features of the shown house design that ensure low environmental impact.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 30,
+        "rows": [
+          {
+            "id": "feature-1",
+            "kind": "criterion",
+            "verbatim": "Low environmental impact – features of house",
+            "marks": 10,
+            "contextNote": "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "feature-2",
+            "kind": "criterion",
+            "verbatim": "Low environmental impact – features of house",
+            "marks": 10,
+            "contextNote": "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "feature-3",
+            "kind": "criterion",
+            "verbatim": "Low environmental impact – features of house",
+            "marks": 10,
+            "contextNote": "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
+        },
+        "figureKey": "construction-studies-2015-HL-q6-compact"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 18,
+          "textSha256": "f4a8d3e31ead2959911a9795169f46406e3642e76f46b472447f85c28615551d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 19,
+          "textSha256": "2f5ce60023bddd9de7aaf13c175a2867366d0910ebf72faf3136de227d21b9bb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 20,
+          "textSha256": "7a98782b47e7245fc1cc026cb815c5f1a0a4d907b8a10b3296c6345e736470ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 37,
+          "textSha256": "1739fa80ba14617d85eab8769672ff12a0e0fadaf0d5e7487216b21a5e803014"
+        }
+      ],
+      "boundaryReview": "Part(a)30: three features, each notes5/sketch5. Part(b)20: two selected principles, each notes5/sketch5. Part(c)10: relevant point4 plus developed discussion6. Complete question60.",
+      "selectionReview": "Part(a)three features is an open pool: no arbitrary combinations of the indicative scheme list. Part(b)has exactly three named principles and chooses two, yielding three pairs. Part(c)requests one developed discussion; the scheme examples are not a finite selection. Three complete60-mark routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q6-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q6-compact"
+      ]
+    },
+    {
+      "questionNumber": "6",
+      "card": {
+        "id": "cons-2015-hl-q6-b-compact-form",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "low-impact-design-b-compact-form",
+        "questionRef": "2015 HL Q6(b) — compact form",
+        "stem": "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "questionText": "Using notes and freehand sketches, discuss the importance of compact form in designing a house with low environmental impact.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 10,
+        "rows": [
+          {
+            "id": "principle",
+            "kind": "criterion",
+            "verbatim": "reduced external surface area minimizes heat loss through the outer envelope",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain that an efficient form can reduce external envelope area for useful accommodation, reducing heat loss and materials needed for the envelope, land take and visual impact. Illustrate the relationship between form, plan and envelope, using the source house where appropriate. Compare like accommodation: compactness does not by itself prove that every house has a smaller internal volume. The source sketch illustrates the plan; it is not a required exact plan to copy.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
+        },
+        "figureKey": "construction-studies-2015-HL-q6-compact"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 18,
+          "textSha256": "f4a8d3e31ead2959911a9795169f46406e3642e76f46b472447f85c28615551d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 19,
+          "textSha256": "2f5ce60023bddd9de7aaf13c175a2867366d0910ebf72faf3136de227d21b9bb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 20,
+          "textSha256": "7a98782b47e7245fc1cc026cb815c5f1a0a4d907b8a10b3296c6345e736470ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 37,
+          "textSha256": "1739fa80ba14617d85eab8769672ff12a0e0fadaf0d5e7487216b21a5e803014"
+        }
+      ],
+      "boundaryReview": "Part(a)30: three features, each notes5/sketch5. Part(b)20: two selected principles, each notes5/sketch5. Part(c)10: relevant point4 plus developed discussion6. Complete question60.",
+      "selectionReview": "Part(a)three features is an open pool: no arbitrary combinations of the indicative scheme list. Part(b)has exactly three named principles and chooses two, yielding three pairs. Part(c)requests one developed discussion; the scheme examples are not a finite selection. Three complete60-mark routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q6-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q6-compact"
+      ]
+    },
+    {
+      "questionNumber": "6",
+      "card": {
+        "id": "cons-2015-hl-q6-b-flexible-design",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "low-impact-design-b-flexible-design",
+        "questionRef": "2015 HL Q6(b) — flexible design",
+        "stem": "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "questionText": "Using notes and freehand sketches, discuss the importance of flexible design in designing a house with low environmental impact.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 10,
+        "rows": [
+          {
+            "id": "principle",
+            "kind": "criterion",
+            "verbatim": "dwelling can respond, over time, to the changes of lifestyle",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how an adaptable layout accommodates changing users and needs without major rebuilding or replacement, extending the useful life of the house and conserving resources. Illustrate a relevant arrangement, such as a room usable as office or occasional bedroom, adaptable bathroom/access provision, or a changeable internal division. Relate the sketch to the original plan and retain structural sense. The source’s example removing a hallway division is illustrative, not an instruction to remove an arbitrary load-bearing wall.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
+        },
+        "figureKey": "construction-studies-2015-HL-q6-flexible-maintenance"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 18,
+          "textSha256": "f4a8d3e31ead2959911a9795169f46406e3642e76f46b472447f85c28615551d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 19,
+          "textSha256": "2f5ce60023bddd9de7aaf13c175a2867366d0910ebf72faf3136de227d21b9bb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 20,
+          "textSha256": "7a98782b47e7245fc1cc026cb815c5f1a0a4d907b8a10b3296c6345e736470ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 37,
+          "textSha256": "1739fa80ba14617d85eab8769672ff12a0e0fadaf0d5e7487216b21a5e803014"
+        }
+      ],
+      "boundaryReview": "Part(a)30: three features, each notes5/sketch5. Part(b)20: two selected principles, each notes5/sketch5. Part(c)10: relevant point4 plus developed discussion6. Complete question60.",
+      "selectionReview": "Part(a)three features is an open pool: no arbitrary combinations of the indicative scheme list. Part(b)has exactly three named principles and chooses two, yielding three pairs. Part(c)requests one developed discussion; the scheme examples are not a finite selection. Three complete60-mark routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q6-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q6-flexible-maintenance"
+      ]
+    },
+    {
+      "questionNumber": "6",
+      "card": {
+        "id": "cons-2015-hl-q6-b-low-maintenance",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "low-impact-design-b-low-maintenance",
+        "questionRef": "2015 HL Q6(b) — low maintenance",
+        "stem": "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "questionText": "Using notes and freehand sketches, discuss the importance of low maintenance in designing a house with low environmental impact.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 10,
+        "rows": [
+          {
+            "id": "principle",
+            "kind": "criterion",
+            "verbatim": "reduces the use of energy and materials over the lifetime of the dwelling",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how durable materials, robust construction and maintainable details reduce recurring material/energy inputs, delay replacement and help retain the building’s environmental performance and appearance. Illustrate a suitable detail or design feature and explain its lifetime benefit. Low maintenance does not mean no inspection or upkeep. The adjacent source landscape drawing is an example, not the only acceptable sketch.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
+        },
+        "figureKey": "construction-studies-2015-HL-q6-flexible-maintenance"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 18,
+          "textSha256": "f4a8d3e31ead2959911a9795169f46406e3642e76f46b472447f85c28615551d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 19,
+          "textSha256": "2f5ce60023bddd9de7aaf13c175a2867366d0910ebf72faf3136de227d21b9bb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 20,
+          "textSha256": "7a98782b47e7245fc1cc026cb815c5f1a0a4d907b8a10b3296c6345e736470ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 37,
+          "textSha256": "1739fa80ba14617d85eab8769672ff12a0e0fadaf0d5e7487216b21a5e803014"
+        }
+      ],
+      "boundaryReview": "Part(a)30: three features, each notes5/sketch5. Part(b)20: two selected principles, each notes5/sketch5. Part(c)10: relevant point4 plus developed discussion6. Complete question60.",
+      "selectionReview": "Part(a)three features is an open pool: no arbitrary combinations of the indicative scheme list. Part(b)has exactly three named principles and chooses two, yielding three pairs. Part(c)requests one developed discussion; the scheme examples are not a finite selection. Three complete60-mark routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q6-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q6-flexible-maintenance"
+      ]
+    },
+    {
+      "questionNumber": "6",
+      "card": {
+        "id": "cons-2015-hl-q6-c",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "low-impact-design-c",
+        "questionRef": "2015 HL Q6(c)",
+        "stem": "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "questionText": "Discuss in detail the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 10,
+        "rows": [
+          {
+            "id": "discussion",
+            "kind": "criterion",
+            "verbatim": "Discussion of NZEB design for 21st century",
+            "marks": 10,
+            "contextNote": "Award 4 marks for a relevant point and 6 for its developed discussion, total 10. Explain why very low energy demand, high energy performance and appropriate renewable supply matter for long-term resource use, climate impact, energy costs/security or fair access to resources. Develop the reasoning rather than reciting a list. The scheme describes very high energy performance with the small remaining demand met to a significant extent by renewables on-site or nearby; NZEB does not require every building to be off-grid. Its 2019/2021 introduction dates are historical context from the 2015 scheme, not current legal guidance and not a required answer. Other relevant, developed arguments are accepted.",
+            "permittedMarks": [
+              0,
+              4,
+              6,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 18,
+          "textSha256": "f4a8d3e31ead2959911a9795169f46406e3642e76f46b472447f85c28615551d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 19,
+          "textSha256": "2f5ce60023bddd9de7aaf13c175a2867366d0910ebf72faf3136de227d21b9bb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 20,
+          "textSha256": "7a98782b47e7245fc1cc026cb815c5f1a0a4d907b8a10b3296c6345e736470ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 37,
+          "textSha256": "1739fa80ba14617d85eab8769672ff12a0e0fadaf0d5e7487216b21a5e803014"
+        }
+      ],
+      "boundaryReview": "Part(a)30: three features, each notes5/sketch5. Part(b)20: two selected principles, each notes5/sketch5. Part(c)10: relevant point4 plus developed discussion6. Complete question60.",
+      "selectionReview": "Part(a)three features is an open pool: no arbitrary combinations of the indicative scheme list. Part(b)has exactly three named principles and chooses two, yielding three pairs. Part(c)requests one developed discussion; the scheme examples are not a finite selection. Three complete60-mark routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q6-original"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "6",
+      "card": {
+        "id": "cons-2015-hl-q6-b-compact-form-and-flexible-design",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "low-impact-design-b-compact-form-and-flexible-design",
+        "questionRef": "2015 HL Q6(b) — compact form and flexible design",
+        "stem": "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "questionText": "Using notes and freehand sketches, discuss the importance of compact form in designing a house with low environmental impact.\n\nUsing notes and freehand sketches, discuss the importance of flexible design in designing a house with low environmental impact.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 20,
+        "rows": [
+          {
+            "id": "b-compact-form-principle",
+            "kind": "criterion",
+            "verbatim": "reduced external surface area minimizes heat loss through the outer envelope",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain that an efficient form can reduce external envelope area for useful accommodation, reducing heat loss and materials needed for the envelope, land take and visual impact. Illustrate the relationship between form, plan and envelope, using the source house where appropriate. Compare like accommodation: compactness does not by itself prove that every house has a smaller internal volume. The source sketch illustrates the plan; it is not a required exact plan to copy.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "b-flexible-design-principle",
+            "kind": "criterion",
+            "verbatim": "dwelling can respond, over time, to the changes of lifestyle",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how an adaptable layout accommodates changing users and needs without major rebuilding or replacement, extending the useful life of the house and conserving resources. Illustrate a relevant arrangement, such as a room usable as office or occasional bedroom, adaptable bathroom/access provision, or a changeable internal division. Relate the sketch to the original plan and retain structural sense. The source’s example removing a hallway division is illustrative, not an instruction to remove an arbitrary load-bearing wall.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
+        },
+        "figureKey": "construction-studies-2015-HL-q6-scheme",
+        "taskGroups": [
+          {
+            "label": "b-compact-form",
+            "sourceCardId": "cons-2015-hl-q6-b-compact-form",
+            "marks": 10,
+            "rowIds": [
+              "b-compact-form-principle"
+            ]
+          },
+          {
+            "label": "b-flexible-design",
+            "sourceCardId": "cons-2015-hl-q6-b-flexible-design",
+            "marks": 10,
+            "rowIds": [
+              "b-flexible-design-principle"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 18,
+          "textSha256": "f4a8d3e31ead2959911a9795169f46406e3642e76f46b472447f85c28615551d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 19,
+          "textSha256": "2f5ce60023bddd9de7aaf13c175a2867366d0910ebf72faf3136de227d21b9bb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 20,
+          "textSha256": "7a98782b47e7245fc1cc026cb815c5f1a0a4d907b8a10b3296c6345e736470ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 37,
+          "textSha256": "1739fa80ba14617d85eab8769672ff12a0e0fadaf0d5e7487216b21a5e803014"
+        }
+      ],
+      "boundaryReview": "Part(a)30: three features, each notes5/sketch5. Part(b)20: two selected principles, each notes5/sketch5. Part(c)10: relevant point4 plus developed discussion6. Complete question60.",
+      "selectionReview": "Part(a)three features is an open pool: no arbitrary combinations of the indicative scheme list. Part(b)has exactly three named principles and chooses two, yielding three pairs. Part(c)requests one developed discussion; the scheme examples are not a finite selection. Three complete60-mark routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q6-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q6-scheme"
+      ]
+    },
+    {
+      "questionNumber": "6",
+      "card": {
+        "id": "cons-2015-hl-q6-complete-compact-form-and-flexible-design",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "low-impact-design-complete-compact-form-and-flexible-design",
+        "questionRef": "2015 HL Q6 — complete: compact form and flexible design",
+        "stem": "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "questionText": "Using notes and freehand sketches, discuss three distinct features of the shown house design that ensure low environmental impact.\n\nUsing notes and freehand sketches, discuss the importance of compact form in designing a house with low environmental impact.\n\nUsing notes and freehand sketches, discuss the importance of flexible design in designing a house with low environmental impact.\n\nDiscuss in detail the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-feature-1",
+            "kind": "criterion",
+            "verbatim": "Low environmental impact – features of house",
+            "marks": 10,
+            "contextNote": "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "a-feature-2",
+            "kind": "criterion",
+            "verbatim": "Low environmental impact – features of house",
+            "marks": 10,
+            "contextNote": "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "a-feature-3",
+            "kind": "criterion",
+            "verbatim": "Low environmental impact – features of house",
+            "marks": 10,
+            "contextNote": "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "b-compact-form-and-flexible-design-b-compact-form-principle",
+            "kind": "criterion",
+            "verbatim": "reduced external surface area minimizes heat loss through the outer envelope",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain that an efficient form can reduce external envelope area for useful accommodation, reducing heat loss and materials needed for the envelope, land take and visual impact. Illustrate the relationship between form, plan and envelope, using the source house where appropriate. Compare like accommodation: compactness does not by itself prove that every house has a smaller internal volume. The source sketch illustrates the plan; it is not a required exact plan to copy.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "b-compact-form-and-flexible-design-b-flexible-design-principle",
+            "kind": "criterion",
+            "verbatim": "dwelling can respond, over time, to the changes of lifestyle",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how an adaptable layout accommodates changing users and needs without major rebuilding or replacement, extending the useful life of the house and conserving resources. Illustrate a relevant arrangement, such as a room usable as office or occasional bedroom, adaptable bathroom/access provision, or a changeable internal division. Relate the sketch to the original plan and retain structural sense. The source’s example removing a hallway division is illustrative, not an instruction to remove an arbitrary load-bearing wall.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "c-discussion",
+            "kind": "criterion",
+            "verbatim": "Discussion of NZEB design for 21st century",
+            "marks": 10,
+            "contextNote": "Award 4 marks for a relevant point and 6 for its developed discussion, total 10. Explain why very low energy demand, high energy performance and appropriate renewable supply matter for long-term resource use, climate impact, energy costs/security or fair access to resources. Develop the reasoning rather than reciting a list. The scheme describes very high energy performance with the small remaining demand met to a significant extent by renewables on-site or nearby; NZEB does not require every building to be off-grid. Its 2019/2021 introduction dates are historical context from the 2015 scheme, not current legal guidance and not a required answer. Other relevant, developed arguments are accepted.",
+            "permittedMarks": [
+              0,
+              4,
+              6,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
+        },
+        "figureKey": "construction-studies-2015-HL-q6-scheme",
+        "taskGroups": [
+          {
+            "label": "a",
+            "sourceCardId": "cons-2015-hl-q6-a",
+            "marks": 30,
+            "rowIds": [
+              "a-feature-1",
+              "a-feature-2",
+              "a-feature-3"
+            ]
+          },
+          {
+            "label": "b-compact-form-and-flexible-design",
+            "sourceCardId": "cons-2015-hl-q6-b-compact-form-and-flexible-design",
+            "marks": 20,
+            "rowIds": [
+              "b-compact-form-and-flexible-design-b-compact-form-principle",
+              "b-compact-form-and-flexible-design-b-flexible-design-principle"
+            ]
+          },
+          {
+            "label": "c",
+            "sourceCardId": "cons-2015-hl-q6-c",
+            "marks": 10,
+            "rowIds": [
+              "c-discussion"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 18,
+          "textSha256": "f4a8d3e31ead2959911a9795169f46406e3642e76f46b472447f85c28615551d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 19,
+          "textSha256": "2f5ce60023bddd9de7aaf13c175a2867366d0910ebf72faf3136de227d21b9bb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 20,
+          "textSha256": "7a98782b47e7245fc1cc026cb815c5f1a0a4d907b8a10b3296c6345e736470ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 37,
+          "textSha256": "1739fa80ba14617d85eab8769672ff12a0e0fadaf0d5e7487216b21a5e803014"
+        }
+      ],
+      "boundaryReview": "Part(a)30: three features, each notes5/sketch5. Part(b)20: two selected principles, each notes5/sketch5. Part(c)10: relevant point4 plus developed discussion6. Complete question60.",
+      "selectionReview": "Part(a)three features is an open pool: no arbitrary combinations of the indicative scheme list. Part(b)has exactly three named principles and chooses two, yielding three pairs. Part(c)requests one developed discussion; the scheme examples are not a finite selection. Three complete60-mark routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q6-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q6-scheme"
+      ]
+    },
+    {
+      "questionNumber": "6",
+      "card": {
+        "id": "cons-2015-hl-q6-b-compact-form-and-low-maintenance",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "low-impact-design-b-compact-form-and-low-maintenance",
+        "questionRef": "2015 HL Q6(b) — compact form and low maintenance",
+        "stem": "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "questionText": "Using notes and freehand sketches, discuss the importance of compact form in designing a house with low environmental impact.\n\nUsing notes and freehand sketches, discuss the importance of low maintenance in designing a house with low environmental impact.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 20,
+        "rows": [
+          {
+            "id": "b-compact-form-principle",
+            "kind": "criterion",
+            "verbatim": "reduced external surface area minimizes heat loss through the outer envelope",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain that an efficient form can reduce external envelope area for useful accommodation, reducing heat loss and materials needed for the envelope, land take and visual impact. Illustrate the relationship between form, plan and envelope, using the source house where appropriate. Compare like accommodation: compactness does not by itself prove that every house has a smaller internal volume. The source sketch illustrates the plan; it is not a required exact plan to copy.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "b-low-maintenance-principle",
+            "kind": "criterion",
+            "verbatim": "reduces the use of energy and materials over the lifetime of the dwelling",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how durable materials, robust construction and maintainable details reduce recurring material/energy inputs, delay replacement and help retain the building’s environmental performance and appearance. Illustrate a suitable detail or design feature and explain its lifetime benefit. Low maintenance does not mean no inspection or upkeep. The adjacent source landscape drawing is an example, not the only acceptable sketch.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
+        },
+        "figureKey": "construction-studies-2015-HL-q6-scheme",
+        "taskGroups": [
+          {
+            "label": "b-compact-form",
+            "sourceCardId": "cons-2015-hl-q6-b-compact-form",
+            "marks": 10,
+            "rowIds": [
+              "b-compact-form-principle"
+            ]
+          },
+          {
+            "label": "b-low-maintenance",
+            "sourceCardId": "cons-2015-hl-q6-b-low-maintenance",
+            "marks": 10,
+            "rowIds": [
+              "b-low-maintenance-principle"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 18,
+          "textSha256": "f4a8d3e31ead2959911a9795169f46406e3642e76f46b472447f85c28615551d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 19,
+          "textSha256": "2f5ce60023bddd9de7aaf13c175a2867366d0910ebf72faf3136de227d21b9bb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 20,
+          "textSha256": "7a98782b47e7245fc1cc026cb815c5f1a0a4d907b8a10b3296c6345e736470ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 37,
+          "textSha256": "1739fa80ba14617d85eab8769672ff12a0e0fadaf0d5e7487216b21a5e803014"
+        }
+      ],
+      "boundaryReview": "Part(a)30: three features, each notes5/sketch5. Part(b)20: two selected principles, each notes5/sketch5. Part(c)10: relevant point4 plus developed discussion6. Complete question60.",
+      "selectionReview": "Part(a)three features is an open pool: no arbitrary combinations of the indicative scheme list. Part(b)has exactly three named principles and chooses two, yielding three pairs. Part(c)requests one developed discussion; the scheme examples are not a finite selection. Three complete60-mark routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q6-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q6-scheme"
+      ]
+    },
+    {
+      "questionNumber": "6",
+      "card": {
+        "id": "cons-2015-hl-q6-complete-compact-form-and-low-maintenance",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "low-impact-design-complete-compact-form-and-low-maintenance",
+        "questionRef": "2015 HL Q6 — complete: compact form and low maintenance",
+        "stem": "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "questionText": "Using notes and freehand sketches, discuss three distinct features of the shown house design that ensure low environmental impact.\n\nUsing notes and freehand sketches, discuss the importance of compact form in designing a house with low environmental impact.\n\nUsing notes and freehand sketches, discuss the importance of low maintenance in designing a house with low environmental impact.\n\nDiscuss in detail the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-feature-1",
+            "kind": "criterion",
+            "verbatim": "Low environmental impact – features of house",
+            "marks": 10,
+            "contextNote": "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "a-feature-2",
+            "kind": "criterion",
+            "verbatim": "Low environmental impact – features of house",
+            "marks": 10,
+            "contextNote": "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "a-feature-3",
+            "kind": "criterion",
+            "verbatim": "Low environmental impact – features of house",
+            "marks": 10,
+            "contextNote": "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "b-compact-form-and-low-maintenance-b-compact-form-principle",
+            "kind": "criterion",
+            "verbatim": "reduced external surface area minimizes heat loss through the outer envelope",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain that an efficient form can reduce external envelope area for useful accommodation, reducing heat loss and materials needed for the envelope, land take and visual impact. Illustrate the relationship between form, plan and envelope, using the source house where appropriate. Compare like accommodation: compactness does not by itself prove that every house has a smaller internal volume. The source sketch illustrates the plan; it is not a required exact plan to copy.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "b-compact-form-and-low-maintenance-b-low-maintenance-principle",
+            "kind": "criterion",
+            "verbatim": "reduces the use of energy and materials over the lifetime of the dwelling",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how durable materials, robust construction and maintainable details reduce recurring material/energy inputs, delay replacement and help retain the building’s environmental performance and appearance. Illustrate a suitable detail or design feature and explain its lifetime benefit. Low maintenance does not mean no inspection or upkeep. The adjacent source landscape drawing is an example, not the only acceptable sketch.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "c-discussion",
+            "kind": "criterion",
+            "verbatim": "Discussion of NZEB design for 21st century",
+            "marks": 10,
+            "contextNote": "Award 4 marks for a relevant point and 6 for its developed discussion, total 10. Explain why very low energy demand, high energy performance and appropriate renewable supply matter for long-term resource use, climate impact, energy costs/security or fair access to resources. Develop the reasoning rather than reciting a list. The scheme describes very high energy performance with the small remaining demand met to a significant extent by renewables on-site or nearby; NZEB does not require every building to be off-grid. Its 2019/2021 introduction dates are historical context from the 2015 scheme, not current legal guidance and not a required answer. Other relevant, developed arguments are accepted.",
+            "permittedMarks": [
+              0,
+              4,
+              6,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
+        },
+        "figureKey": "construction-studies-2015-HL-q6-scheme",
+        "taskGroups": [
+          {
+            "label": "a",
+            "sourceCardId": "cons-2015-hl-q6-a",
+            "marks": 30,
+            "rowIds": [
+              "a-feature-1",
+              "a-feature-2",
+              "a-feature-3"
+            ]
+          },
+          {
+            "label": "b-compact-form-and-low-maintenance",
+            "sourceCardId": "cons-2015-hl-q6-b-compact-form-and-low-maintenance",
+            "marks": 20,
+            "rowIds": [
+              "b-compact-form-and-low-maintenance-b-compact-form-principle",
+              "b-compact-form-and-low-maintenance-b-low-maintenance-principle"
+            ]
+          },
+          {
+            "label": "c",
+            "sourceCardId": "cons-2015-hl-q6-c",
+            "marks": 10,
+            "rowIds": [
+              "c-discussion"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 18,
+          "textSha256": "f4a8d3e31ead2959911a9795169f46406e3642e76f46b472447f85c28615551d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 19,
+          "textSha256": "2f5ce60023bddd9de7aaf13c175a2867366d0910ebf72faf3136de227d21b9bb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 20,
+          "textSha256": "7a98782b47e7245fc1cc026cb815c5f1a0a4d907b8a10b3296c6345e736470ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 37,
+          "textSha256": "1739fa80ba14617d85eab8769672ff12a0e0fadaf0d5e7487216b21a5e803014"
+        }
+      ],
+      "boundaryReview": "Part(a)30: three features, each notes5/sketch5. Part(b)20: two selected principles, each notes5/sketch5. Part(c)10: relevant point4 plus developed discussion6. Complete question60.",
+      "selectionReview": "Part(a)three features is an open pool: no arbitrary combinations of the indicative scheme list. Part(b)has exactly three named principles and chooses two, yielding three pairs. Part(c)requests one developed discussion; the scheme examples are not a finite selection. Three complete60-mark routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q6-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q6-scheme"
+      ]
+    },
+    {
+      "questionNumber": "6",
+      "card": {
+        "id": "cons-2015-hl-q6-b-flexible-design-and-low-maintenance",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "low-impact-design-b-flexible-design-and-low-maintenance",
+        "questionRef": "2015 HL Q6(b) — flexible design and low maintenance",
+        "stem": "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "questionText": "Using notes and freehand sketches, discuss the importance of flexible design in designing a house with low environmental impact.\n\nUsing notes and freehand sketches, discuss the importance of low maintenance in designing a house with low environmental impact.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 20,
+        "rows": [
+          {
+            "id": "b-flexible-design-principle",
+            "kind": "criterion",
+            "verbatim": "dwelling can respond, over time, to the changes of lifestyle",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how an adaptable layout accommodates changing users and needs without major rebuilding or replacement, extending the useful life of the house and conserving resources. Illustrate a relevant arrangement, such as a room usable as office or occasional bedroom, adaptable bathroom/access provision, or a changeable internal division. Relate the sketch to the original plan and retain structural sense. The source’s example removing a hallway division is illustrative, not an instruction to remove an arbitrary load-bearing wall.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "b-low-maintenance-principle",
+            "kind": "criterion",
+            "verbatim": "reduces the use of energy and materials over the lifetime of the dwelling",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how durable materials, robust construction and maintainable details reduce recurring material/energy inputs, delay replacement and help retain the building’s environmental performance and appearance. Illustrate a suitable detail or design feature and explain its lifetime benefit. Low maintenance does not mean no inspection or upkeep. The adjacent source landscape drawing is an example, not the only acceptable sketch.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
+        },
+        "figureKey": "construction-studies-2015-HL-q6-flexible-maintenance",
+        "taskGroups": [
+          {
+            "label": "b-flexible-design",
+            "sourceCardId": "cons-2015-hl-q6-b-flexible-design",
+            "marks": 10,
+            "rowIds": [
+              "b-flexible-design-principle"
+            ]
+          },
+          {
+            "label": "b-low-maintenance",
+            "sourceCardId": "cons-2015-hl-q6-b-low-maintenance",
+            "marks": 10,
+            "rowIds": [
+              "b-low-maintenance-principle"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 18,
+          "textSha256": "f4a8d3e31ead2959911a9795169f46406e3642e76f46b472447f85c28615551d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 19,
+          "textSha256": "2f5ce60023bddd9de7aaf13c175a2867366d0910ebf72faf3136de227d21b9bb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 20,
+          "textSha256": "7a98782b47e7245fc1cc026cb815c5f1a0a4d907b8a10b3296c6345e736470ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 37,
+          "textSha256": "1739fa80ba14617d85eab8769672ff12a0e0fadaf0d5e7487216b21a5e803014"
+        }
+      ],
+      "boundaryReview": "Part(a)30: three features, each notes5/sketch5. Part(b)20: two selected principles, each notes5/sketch5. Part(c)10: relevant point4 plus developed discussion6. Complete question60.",
+      "selectionReview": "Part(a)three features is an open pool: no arbitrary combinations of the indicative scheme list. Part(b)has exactly three named principles and chooses two, yielding three pairs. Part(c)requests one developed discussion; the scheme examples are not a finite selection. Three complete60-mark routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q6-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q6-flexible-maintenance"
+      ]
+    },
+    {
+      "questionNumber": "6",
+      "card": {
+        "id": "cons-2015-hl-q6-complete-flexible-design-and-low-maintenance",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "low-impact-design-complete-flexible-design-and-low-maintenance",
+        "questionRef": "2015 HL Q6 — complete: flexible design and low maintenance",
+        "stem": "Use the original elevation and ground-floor plan. The house has three bedrooms and a bathroom upstairs. Its external walls are timber-frame construction with a rendered concrete-block outer leaf. It is designed to maximise solar energy and have low environmental impact. Part (a) discusses THREE design features using notes and freehand sketches. Part (b) selects any TWO of compact form, flexible design and low maintenance, again using notes and freehand sketches. Part (c) discusses the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "questionText": "Using notes and freehand sketches, discuss three distinct features of the shown house design that ensure low environmental impact.\n\nUsing notes and freehand sketches, discuss the importance of flexible design in designing a house with low environmental impact.\n\nUsing notes and freehand sketches, discuss the importance of low maintenance in designing a house with low environmental impact.\n\nDiscuss in detail the importance of designing nearly zero energy buildings (NZEB) for the 21st century.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-feature-1",
+            "kind": "criterion",
+            "verbatim": "Low environmental impact – features of house",
+            "marks": 10,
+            "contextNote": "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "a-feature-2",
+            "kind": "criterion",
+            "verbatim": "Low environmental impact – features of house",
+            "marks": 10,
+            "contextNote": "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "a-feature-3",
+            "kind": "criterion",
+            "verbatim": "Low environmental impact – features of house",
+            "marks": 10,
+            "contextNote": "For this distinct design feature, award notes 5 and a relevant freehand sketch 5. Discuss how it lowers this house’s environmental impact and relate the sketch to the supplied elevation, plan or wall construction. Suitable examples include solar orientation and south-facing glazing; an insulated timber-frame envelope; efficient use of the two-storey/attic volume and materials; a suitably positioned heat source; renewable-energy systems; water conservation; or appropriate planting. These are illustrative, open choices, not three compulsory items. Do not credit the same feature twice. The scheme’s blanket statement that wood stoves are carbon neutral is not a universal conclusion, and its annual electricity figure uses kW (power) rather than an energy unit; neither claim is required for credit. Explain a defensible environmental benefit instead.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "b-flexible-design-and-low-maintenance-b-flexible-design-principle",
+            "kind": "criterion",
+            "verbatim": "dwelling can respond, over time, to the changes of lifestyle",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how an adaptable layout accommodates changing users and needs without major rebuilding or replacement, extending the useful life of the house and conserving resources. Illustrate a relevant arrangement, such as a room usable as office or occasional bedroom, adaptable bathroom/access provision, or a changeable internal division. Relate the sketch to the original plan and retain structural sense. The source’s example removing a hallway division is illustrative, not an instruction to remove an arbitrary load-bearing wall.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "b-flexible-design-and-low-maintenance-b-low-maintenance-principle",
+            "kind": "criterion",
+            "verbatim": "reduces the use of energy and materials over the lifetime of the dwelling",
+            "marks": 10,
+            "contextNote": "Award notes 5 and relevant freehand sketches 5, total 10. Discuss the importance of this selected principle for low environmental impact; written discussion alone does not earn the sketch marks. The source lists examples, not a compulsory point count. Explain how durable materials, robust construction and maintainable details reduce recurring material/energy inputs, delay replacement and help retain the building’s environmental performance and appearance. Illustrate a suitable detail or design feature and explain its lifetime benefit. Low maintenance does not mean no inspection or upkeep. The adjacent source landscape drawing is an example, not the only acceptable sketch.",
+            "permittedMarks": [
+              0,
+              5,
+              10
+            ]
+          },
+          {
+            "id": "c-discussion",
+            "kind": "criterion",
+            "verbatim": "Discussion of NZEB design for 21st century",
+            "marks": 10,
+            "contextNote": "Award 4 marks for a relevant point and 6 for its developed discussion, total 10. Explain why very low energy demand, high energy performance and appropriate renewable supply matter for long-term resource use, climate impact, energy costs/security or fair access to resources. Develop the reasoning rather than reciting a list. The scheme describes very high energy performance with the small remaining demand met to a significant extent by renewables on-site or nearby; NZEB does not require every building to be off-grid. Its 2019/2021 introduction dates are historical context from the 2015 scheme, not current legal guidance and not a required answer. Other relevant, developed arguments are accepted.",
+            "permittedMarks": [
+              0,
+              4,
+              6,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q6-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Low environmental impact house",
+          "pages": [
+            1,
+            4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation, plan and wall construction retained. Scheme examples are illustrative, not a checklist of mandatory features. Its historical energy and carbon statements need the qualifications in the marking notes."
+        },
+        "figureKey": "construction-studies-2015-HL-q6-scheme",
+        "taskGroups": [
+          {
+            "label": "a",
+            "sourceCardId": "cons-2015-hl-q6-a",
+            "marks": 30,
+            "rowIds": [
+              "a-feature-1",
+              "a-feature-2",
+              "a-feature-3"
+            ]
+          },
+          {
+            "label": "b-flexible-design-and-low-maintenance",
+            "sourceCardId": "cons-2015-hl-q6-b-flexible-design-and-low-maintenance",
+            "marks": 20,
+            "rowIds": [
+              "b-flexible-design-and-low-maintenance-b-flexible-design-principle",
+              "b-flexible-design-and-low-maintenance-b-low-maintenance-principle"
+            ]
+          },
+          {
+            "label": "c",
+            "sourceCardId": "cons-2015-hl-q6-c",
+            "marks": 10,
+            "rowIds": [
+              "c-discussion"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 18,
+          "textSha256": "f4a8d3e31ead2959911a9795169f46406e3642e76f46b472447f85c28615551d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 19,
+          "textSha256": "2f5ce60023bddd9de7aaf13c175a2867366d0910ebf72faf3136de227d21b9bb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 20,
+          "textSha256": "7a98782b47e7245fc1cc026cb815c5f1a0a4d907b8a10b3296c6345e736470ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 37,
+          "textSha256": "1739fa80ba14617d85eab8769672ff12a0e0fadaf0d5e7487216b21a5e803014"
+        }
+      ],
+      "boundaryReview": "Part(a)30: three features, each notes5/sketch5. Part(b)20: two selected principles, each notes5/sketch5. Part(c)10: relevant point4 plus developed discussion6. Complete question60.",
+      "selectionReview": "Part(a)three features is an open pool: no arbitrary combinations of the indicative scheme list. Part(b)has exactly three named principles and chooses two, yielding three pairs. Part(c)requests one developed discussion; the scheme examples are not a finite selection. Three complete60-mark routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q6-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q6-scheme"
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "cardId": "cons-2015-hl-q6-a",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-6-2",
+        "cons-6-4"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification. The source house explicitly combines environmental design, insulation and solar gain: part(a)retains built environment cons-1-2, insulating materials cons-6-2 and solar gain cons-6-4. Part(b)and NZEB discussion concern environmental design/lifetime resource use under cons-1-2; they do not require a numerical heat-loss calculation or a separate current-regulations test. Complete cards retain all constituent nodes. Solar/insulation topics supplement the reviewed environmental-design Atlas topic only where explicit in(a).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-b-compact-form",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification. The source house explicitly combines environmental design, insulation and solar gain: part(a)retains built environment cons-1-2, insulating materials cons-6-2 and solar gain cons-6-4. Part(b)and NZEB discussion concern environmental design/lifetime resource use under cons-1-2; they do not require a numerical heat-loss calculation or a separate current-regulations test. Complete cards retain all constituent nodes. Solar/insulation topics supplement the reviewed environmental-design Atlas topic only where explicit in(a).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-b-flexible-design",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification. The source house explicitly combines environmental design, insulation and solar gain: part(a)retains built environment cons-1-2, insulating materials cons-6-2 and solar gain cons-6-4. Part(b)and NZEB discussion concern environmental design/lifetime resource use under cons-1-2; they do not require a numerical heat-loss calculation or a separate current-regulations test. Complete cards retain all constituent nodes. Solar/insulation topics supplement the reviewed environmental-design Atlas topic only where explicit in(a).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-b-low-maintenance",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification. The source house explicitly combines environmental design, insulation and solar gain: part(a)retains built environment cons-1-2, insulating materials cons-6-2 and solar gain cons-6-4. Part(b)and NZEB discussion concern environmental design/lifetime resource use under cons-1-2; they do not require a numerical heat-loss calculation or a separate current-regulations test. Complete cards retain all constituent nodes. Solar/insulation topics supplement the reviewed environmental-design Atlas topic only where explicit in(a).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-c",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification. The source house explicitly combines environmental design, insulation and solar gain: part(a)retains built environment cons-1-2, insulating materials cons-6-2 and solar gain cons-6-4. Part(b)and NZEB discussion concern environmental design/lifetime resource use under cons-1-2; they do not require a numerical heat-loss calculation or a separate current-regulations test. Complete cards retain all constituent nodes. Solar/insulation topics supplement the reviewed environmental-design Atlas topic only where explicit in(a).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-b-compact-form-and-flexible-design",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification. The source house explicitly combines environmental design, insulation and solar gain: part(a)retains built environment cons-1-2, insulating materials cons-6-2 and solar gain cons-6-4. Part(b)and NZEB discussion concern environmental design/lifetime resource use under cons-1-2; they do not require a numerical heat-loss calculation or a separate current-regulations test. Complete cards retain all constituent nodes. Solar/insulation topics supplement the reviewed environmental-design Atlas topic only where explicit in(a).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-complete-compact-form-and-flexible-design",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-6-2",
+        "cons-6-4"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification. The source house explicitly combines environmental design, insulation and solar gain: part(a)retains built environment cons-1-2, insulating materials cons-6-2 and solar gain cons-6-4. Part(b)and NZEB discussion concern environmental design/lifetime resource use under cons-1-2; they do not require a numerical heat-loss calculation or a separate current-regulations test. Complete cards retain all constituent nodes. Solar/insulation topics supplement the reviewed environmental-design Atlas topic only where explicit in(a).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-b-compact-form-and-low-maintenance",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification. The source house explicitly combines environmental design, insulation and solar gain: part(a)retains built environment cons-1-2, insulating materials cons-6-2 and solar gain cons-6-4. Part(b)and NZEB discussion concern environmental design/lifetime resource use under cons-1-2; they do not require a numerical heat-loss calculation or a separate current-regulations test. Complete cards retain all constituent nodes. Solar/insulation topics supplement the reviewed environmental-design Atlas topic only where explicit in(a).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-complete-compact-form-and-low-maintenance",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-6-2",
+        "cons-6-4"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification. The source house explicitly combines environmental design, insulation and solar gain: part(a)retains built environment cons-1-2, insulating materials cons-6-2 and solar gain cons-6-4. Part(b)and NZEB discussion concern environmental design/lifetime resource use under cons-1-2; they do not require a numerical heat-loss calculation or a separate current-regulations test. Complete cards retain all constituent nodes. Solar/insulation topics supplement the reviewed environmental-design Atlas topic only where explicit in(a).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-b-flexible-design-and-low-maintenance",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification. The source house explicitly combines environmental design, insulation and solar gain: part(a)retains built environment cons-1-2, insulating materials cons-6-2 and solar gain cons-6-4. Part(b)and NZEB discussion concern environmental design/lifetime resource use under cons-1-2; they do not require a numerical heat-loss calculation or a separate current-regulations test. Complete cards retain all constituent nodes. Solar/insulation topics supplement the reviewed environmental-design Atlas topic only where explicit in(a).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q6-complete-flexible-design-and-low-maintenance",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-6-2",
+        "cons-6-4"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification. The source house explicitly combines environmental design, insulation and solar gain: part(a)retains built environment cons-1-2, insulating materials cons-6-2 and solar gain cons-6-4. Part(b)and NZEB discussion concern environmental design/lifetime resource use under cons-1-2; they do not require a numerical heat-loss calculation or a separate current-regulations test. Complete cards retain all constituent nodes. Solar/insulation topics supplement the reviewed environmental-design Atlas topic only where explicit in(a).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-heat-loss-insulation"
+      ]
+    }
+  ],
+  "questionFigures": [
+    {
+      "key": "construction-studies-2015-HL-q6-original",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 4,
+          "rect": [
+            58,
+            54,
+            568,
+            354
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": false,
+      "sha256": "33daba414158309ce10a38c89c79cfad42446037b341df1b0b598c55c9b5fe80",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q6-compact",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 18,
+          "rect": [
+            54,
+            54,
+            570,
+            701
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "5931b04cca40d094e5652ebbfb4435378b79e29f467cee95be8056836fe4095d",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q6-flexible-maintenance",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 19,
+          "rect": [
+            54,
+            54,
+            574,
+            450
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "91c252913c992294e207903b98c709b0b9fb1b9b9d8c7f3feb74475818b844d8",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q6-scheme",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 18,
+          "rect": [
+            54,
+            54,
+            570,
+            701
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 19,
+          "rect": [
+            54,
+            54,
+            574,
+            450
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "777111a16bb2725d489f0ae900fe4df0b1afc2a6cdc3f39d3af23eb9e8b1b95e",
+      "visuallyInspected": true
+    }
+  ],
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+    "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+  },
+  "selectionLedger": {
+    "pattern": "\\b(?:choose|select|one\\s+of|any\\s+\\w+|either|or|answer\\s+\\w+)\\b",
+    "rows": [
+      {
+        "page": 1,
+        "start": 209,
+        "match": "Answer Question",
+        "context": "er Level (300 marks) Friday, 12 June Afternoon, 2:00 to 5:00 (a) Answer Question 1 and four other questions. (b) All questions carry equal marks. (c) Answers must be written in ink",
+        "classification": "Whole-paper selection: Q1 compulsory plus four others; coverage does not require five-question exam-session combinations."
+      },
+      {
+        "page": 2,
+        "start": 1263,
+        "match": "any two",
+        "context": " used and include typical dimensions. (c) Evaluate the design of any two of the wall types at 2(b) above. Recommend a preferred external wall type for a new house and justi",
+        "classification": "Open dependent selection among three wall types previously chosen by the student; no closed named pool."
+      },
+      {
+        "page": 2,
+        "start": 1926,
+        "match": "or",
+        "context": "lding a single-storey extension onto the rear of the house at A. or (ii) building a detached, free-standing space in the garden at B. (a) Discuss in detail two advanta",
+        "classification": "Two design options, A/B. Part(a)requires BOTH; part(b)chooses ONE, two finite routes."
+      },
+      {
+        "page": 2,
+        "start": 2103,
+        "match": "Select",
+        "context": "o disadvantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design an",
+        "classification": "Q3(b)choose one of A/B: two finite routes."
+      },
+      {
+        "page": 2,
+        "start": 2110,
+        "match": "one of",
+        "context": "vantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design and inter",
+        "classification": "Q3(b)same directive, two finite routes."
+      },
+      {
+        "page": 3,
+        "start": 45,
+        "match": "any two",
+        "context": "Page 3 of 5 4. (a) Discuss the importance of any two of the following in the eco-refurbishment of an old house built in the vernacular tradition: • resp",
+        "classification": "Q4(a)choose2of3 principles:3pairs."
+      },
+      {
+        "page": 3,
+        "start": 281,
+        "match": "One of",
+        "context": "als. (b) A row of single-storey cottages is shown in the sketch. One of the cottages is in need of significant refurbishment. A survey of the cottage reveals: • un-insulat",
+        "classification": "Narrative identifies one cottage, not an answer selection."
+      },
+      {
+        "page": 3,
+        "start": 522,
+        "match": "Select",
+        "context": "-glazed with sliding sash • un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps invol",
+        "classification": "Q4(b)choose2of3 upgrades:3pairs."
+      },
+      {
+        "page": 3,
+        "start": 529,
+        "match": "any two",
+        "context": " with sliding sash • un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps involved in u",
+        "classification": "Q4(b)same directive:3pairs; independent of(a),9whole routes."
+      },
+      {
+        "page": 4,
+        "start": 516,
+        "match": "any two",
+        "context": "(b) Using notes and freehand sketches, discuss the importance of any two of the following in designing a house to have low environmental impact: • compact form • flexible d",
+        "classification": "Q6(b)choose2of3 design principles:3pairs."
+      },
+      {
+        "page": 5,
+        "start": 423,
+        "match": "Select",
+        "context": "s and the ground floor is an insulated solid concrete floor. (a) Select any three locations from those circled on the drawing and, using notes and freehand sketches, show ",
+        "classification": "Q9(a)choose3of4 circled junctions:4triples."
+      },
+      {
+        "page": 5,
+        "start": 430,
+        "match": "any three",
+        "context": "he ground floor is an insulated solid concrete floor. (a) Select any three locations from those circled on the drawing and, using notes and freehand sketches, show best pract",
+        "classification": "Q9(a)same directive:4triples."
+      },
+      {
+        "page": 5,
+        "start": 807,
+        "match": "any two",
+        "context": "notes and freehand sketches, discuss in detail the importance of any two of the following in the design of a Passive House: • airtight building envelope • space heating dem",
+        "classification": "Q10primary(a)choose2of3:3pairs."
+      },
+      {
+        "page": 5,
+        "start": 1177,
+        "match": "OR",
+        "context": "of carefully designed solar shading for the Passive House shown. OR 10. Light is what architecture is all about. It is as fundamental for the soul as air, fire, earth ",
+        "classification": "Q10 alternative branch: primary3routes OR alternative1route."
+      },
+      {
+        "page": 5,
+        "start": 1305,
+        "match": "one of",
+        "context": "ental for the soul as air, fire, earth and water. Light has been one of the key elements of architecture since the Modern movement began (and glass technology improved) at",
+        "classification": "Quotation narrative, not an answer directive."
+      }
+    ],
+    "unclassified": 0,
+    "sourceHashes": {
+      "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+      "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+    }
+  },
+  "corrections": [],
+  "addedIds": [
+    "cons-2015-hl-q6-a",
+    "cons-2015-hl-q6-b-compact-form",
+    "cons-2015-hl-q6-b-flexible-design",
+    "cons-2015-hl-q6-b-low-maintenance",
+    "cons-2015-hl-q6-c",
+    "cons-2015-hl-q6-b-compact-form-and-flexible-design",
+    "cons-2015-hl-q6-complete-compact-form-and-flexible-design",
+    "cons-2015-hl-q6-b-compact-form-and-low-maintenance",
+    "cons-2015-hl-q6-complete-compact-form-and-low-maintenance",
+    "cons-2015-hl-q6-b-flexible-design-and-low-maintenance",
+    "cons-2015-hl-q6-complete-flexible-design-and-low-maintenance"
+  ],
+  "routeLedger": {
+    "aOpenFeatures": 3,
+    "bPool": [
+      "compact-form",
+      "flexible-design",
+      "low-maintenance"
+    ],
+    "bChoose": 2,
+    "bPairs": [
+      [
+        "compact-form",
+        "flexible-design"
+      ],
+      [
+        "compact-form",
+        "low-maintenance"
+      ],
+      [
+        "flexible-design",
+        "low-maintenance"
+      ]
+    ],
+    "wholeRoutes": [
+      {
+        "id": "cons-2015-hl-q6-complete-compact-form-and-flexible-design",
+        "b": [
+          "compact-form",
+          "flexible-design"
+        ],
+        "parts": [
+          "a",
+          "b-compact-form-and-flexible-design",
+          "c"
+        ],
+        "marks": 60
+      },
+      {
+        "id": "cons-2015-hl-q6-complete-compact-form-and-low-maintenance",
+        "b": [
+          "compact-form",
+          "low-maintenance"
+        ],
+        "parts": [
+          "a",
+          "b-compact-form-and-low-maintenance",
+          "c"
+        ],
+        "marks": 60
+      },
+      {
+        "id": "cons-2015-hl-q6-complete-flexible-design-and-low-maintenance",
+        "b": [
+          "flexible-design",
+          "low-maintenance"
+        ],
+        "parts": [
+          "a",
+          "b-flexible-design-and-low-maintenance",
+          "c"
+        ],
+        "marks": 60
+      }
+    ],
+    "nonChoices": [
+      "part(a)illustrative design features",
+      "NZEB discussion examples"
+    ]
+  }
+}

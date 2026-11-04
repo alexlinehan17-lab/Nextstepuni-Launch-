@@ -6,6 +6,9 @@ import { CARDS as HIGHER } from '../components/MarkBank/cards/english/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import authoredJson from '../components/MarkBank/cards/english/authored.json';
+import { generatedCardsForLevel } from '../components/MarkBank/cards/english/factory';
+import publishedHigher from '../components/MarkBank/cards/english/published-higher.json';
+import publishedOrdinary from '../components/MarkBank/cards/english/published-ordinary.json';
 import {
   effectivePclmScores,
   pclmMarks,
@@ -56,6 +59,7 @@ interface AuthoredCard {
 interface EnglishManifest {
   cardCount: number;
   cards: AuthoredCard[];
+  withdrawnAliases: Record<string, string>;
 }
 
 const census = JSON.parse(readFileSync(
@@ -64,8 +68,22 @@ const census = JSON.parse(readFileSync(
 )) as EnglishCensus;
 const manifest = authoredJson as unknown as EnglishManifest;
 type EnglishCard = SecRubricCard & { rubric: PclmRubric };
-const ALL = [...HIGHER, ...ORDINARY] as EnglishCard[];
+// Reviewed full-corpus papers are published alongside the legacy manifest
+// (see test/markBankEnglishPublished.test.ts). These legacy assertions cover
+// the preserved 2021–2025 runtime cards, which must stay exactly as they were.
+// A bridged paper (2025 HL P1/P2) is served by its reviewed published cards:
+// each of its legacy ids is kept by that card or is a progress alias, which
+// test/markBankEnglishPublished.test.ts proves; its legacy runtime card is gone.
+const PUBLISHED_IDS = new Set([...publishedHigher.cards, ...publishedOrdinary.cards].map(card => card.id));
+const BRIDGED = new Set([...publishedHigher.bridgedLegacyIds, ...publishedOrdinary.bridgedLegacyIds]);
+const LEGACY_HIGHER = HIGHER.filter(card => !PUBLISHED_IDS.has(card.id));
+const LEGACY_ORDINARY = ORDINARY.filter(card => !PUBLISHED_IDS.has(card.id));
+const ALL = [...LEGACY_HIGHER, ...LEGACY_ORDINARY] as EnglishCard[];
 const byId = new Map(ALL.map(card => [card.id, card]));
+// Every legacy runtime card as the factory builds it, bridged or not: the PCLM
+// scoring tests below exercise the factory and scorer, not which deck serves it.
+const LEGACY_BUILT = new Map([...generatedCardsForLevel('higher'), ...generatedCardsForLevel('ordinary')]
+  .map(card => [card.id, card as EnglishCard]));
 
 const comparable = (value: string) => value
   .normalize('NFKC')
@@ -146,15 +164,21 @@ describe('English all-question census', () => {
   it('maps all 660 authored tasks to 650 canonical practice identities', () => {
     const authored = census.asks.filter(ask => ask.status === 'authored');
     const canonicalAuthoredIds = [...new Set(authored.map(ask =>
-      CARD_ID_ALIASES[ask.id] ?? ask.id))].sort();
-    expect(HIGHER).toHaveLength(210);
-    expect(ORDINARY).toHaveLength(440);
-    expect(ALL).toHaveLength(650);
+      manifest.withdrawnAliases[ask.id] ?? ask.id))].sort();
+    const bridgedAt = (level: 'higher' | 'ordinary') => manifest.cards
+      .filter(card => card.level === level && BRIDGED.has(card.id)).length;
+    expect(BRIDGED.size).toBeGreaterThanOrEqual(42);
+    expect(LEGACY_HIGHER).toHaveLength(210 - bridgedAt('higher'));
+    expect(LEGACY_ORDINARY).toHaveLength(440 - bridgedAt('ordinary'));
+    expect(ALL).toHaveLength(650 - BRIDGED.size);
     expect(manifest.cardCount).toBe(650);
-    expect(new Set(ALL.map(card => card.id)).size).toBe(650);
+    expect(new Set(ALL.map(card => card.id)).size).toBe(650 - BRIDGED.size);
     expect(canonicalAuthoredIds).toHaveLength(650);
-    expect(ALL.map(card => card.id).sort()).toEqual(canonicalAuthoredIds);
+    expect([...ALL.map(card => card.id), ...BRIDGED].sort()).toEqual(canonicalAuthoredIds);
     expect(manifest.cards.map(card => card.id).sort()).toEqual(canonicalAuthoredIds);
+    // Every census ask still reaches a live card, through an alias where bridged.
+    const live = new Set([...HIGHER, ...ORDINARY].map(card => card.id));
+    expect(authored.filter(ask => !live.has(CARD_ID_ALIASES[ask.id] ?? ask.id)).map(ask => ask.id)).toEqual([]);
   });
 
   it('keeps compulsory linked parts together while recording each separate tariff', () => {
@@ -176,6 +200,7 @@ describe('English prompt and source integrity', () => {
       if (trace.shared === 0 || trace.encoded !== authored.schemeTraceScore) {
         weak.push(authored.questionRef + ' -> p.' + String(authored.schemePage));
       }
+      if (BRIDGED.has(authored.id)) continue;
       const runtime = byId.get(authored.id)!;
       expect(runtime.questionRef, authored.id).toBe(authored.questionRef);
       expect(runtime.totalMarks, authored.id).toBe(authored.totalMarks);
@@ -198,7 +223,7 @@ describe('English prompt and source integrity', () => {
     const withSource = manifest.cards.filter(card => card.sourceMaterial);
     expect(withSource).toHaveLength(217);
 
-    for (const authored of withSource) {
+    for (const authored of withSource.filter(card => !BRIDGED.has(card.id))) {
       const runtime = byId.get(authored.id)!;
       const source = runtime.sourceMaterial;
       expect(source, authored.questionRef).toBeDefined();
@@ -243,9 +268,11 @@ describe('English prompt and source integrity', () => {
       'english-2024-ol-p1-t2-a-ii',
       'english-2024-ol-p1-t3-a-iii-b',
     ];
+    // A bridged paper serves these ids from its reviewed published card, which keeps the reader.
+    const served = new Map([...HIGHER, ...ORDINARY].map(card => [card.id, card]));
     for (const id of restoredContextDependentIds) {
       const authored = manifest.cards.find(card => card.id === id);
-      const runtime = byId.get(id);
+      const runtime = served.get(id);
       expect(authored?.sourceMaterial, id).toBeDefined();
       expect(runtime?.sourceMaterial, id).toBeDefined();
       expect(authored?.taskRequirements, id).toContain(
@@ -277,6 +304,33 @@ describe('English PCLM cards', () => {
     expect(ALL.filter(card => !tariffReconciles(card)).map(card => card.questionRef)).toEqual([]);
   });
 
+  it('retains the 2021–2022 Ordinary Single Text adjustment and its published PCLM allocation', () => {
+    const adjusted = ALL.filter(card => card.level === 'ordinary'
+      && (card.year === 2021 || card.year === 2022)
+      && card.questionRef.includes('Single Text'));
+    // SEC Ordinary schemes, PDF p.19: all nine texts have four 35-mark
+    // questions. Q1 is 10+10+15; Q2–4 use P=11,C=11,L=11,M=2. 72 legacy cards,
+    // minus any now served by a bridged reviewed paper.
+    const legacyAdjusted = manifest.cards.filter(card => card.level === 'ordinary'
+      && (card.year === 2021 || card.year === 2022) && card.questionRef.includes('Single Text'));
+    expect(legacyAdjusted).toHaveLength(72);
+    expect(adjusted).toHaveLength(legacyAdjusted.filter(card => !BRIDGED.has(card.id)).length);
+    for (const card of adjusted) {
+      expect(card.totalMarks, card.id).toBe(35);
+      const assessment = card.rubric.assessment;
+      if (card.id.endsWith('-q1')) {
+        expect(assessment.mode, card.id).toBe('composite');
+        if (assessment.mode !== 'composite') throw new Error(card.id);
+        expect(assessment.components.map(part => part.totalMarks), card.id).toEqual([10, 10, 15]);
+      } else {
+        expect(assessment.mode, card.id).toBe('discrete');
+        if (assessment.mode !== 'discrete') throw new Error(card.id);
+        expect(assessment.criteria.map(criterion => criterion.maxMarks), card.id).toEqual([11, 11, 11, 2]);
+        expect(pclmMarks(card, { purpose: 11, coherence: 11, language: 11, mechanics: 2 }), card.id).toBe(35);
+      }
+    }
+  });
+
   it('keeps Higher and Ordinary grade families separate', () => {
     for (const card of ALL) {
       const assessment = card.rubric.assessment;
@@ -290,14 +344,24 @@ describe('English PCLM cards', () => {
 
   it('preserves the SEC marking mode of every linked component', () => {
     const composites = ALL.filter(card => card.rubric.assessment.mode === 'composite');
-    expect(composites).toHaveLength(125);
+    // The legacy manifest bundles 125 cards of linked parts (265 combined, 60
+    // discrete). A bridged paper serves its parts as separate reviewed tasks.
+    const linked = manifest.cards.filter(card => card.printedParts.length > 0);
+    const parts = (cards: AuthoredCard[]) => cards.flatMap(card => card.printedParts
+      .map(part => Number(part.match(/(\d+)\s+marks?$/i)![1])));
+    expect([linked.length, parts(linked).filter(m => m <= 20).length, parts(linked).filter(m => m > 20).length])
+      .toEqual([125, 265, 60]);
+    const served = linked.filter(card => !BRIDGED.has(card.id));
+    expect(composites).toHaveLength(served.length);
     const components = composites.flatMap(card => {
       const assessment = card.rubric.assessment;
       if (assessment.mode !== 'composite') throw new Error('unreachable');
       return assessment.components.map(component => ({ card, component }));
     });
-    expect(components.filter(({ component }) => component.mode === 'combined')).toHaveLength(265);
-    expect(components.filter(({ component }) => component.mode === 'discrete')).toHaveLength(60);
+    expect(components.filter(({ component }) => component.mode === 'combined'))
+      .toHaveLength(parts(served).filter(m => m <= 20).length);
+    expect(components.filter(({ component }) => component.mode === 'discrete'))
+      .toHaveLength(parts(served).filter(m => m > 20).length);
     expect(components.filter(({ component }) => component.totalMarks <= 20
       && component.mode !== 'combined').map(({ card }) => card.questionRef)).toEqual([]);
     expect(components.filter(({ component }) => component.totalMarks > 20
@@ -305,7 +369,7 @@ describe('English PCLM cards', () => {
   });
 
   it('enforces the primacy-of-Purpose cap independently of the renderer', () => {
-    const card = ALL.find(entry =>
+    const card = [...LEGACY_BUILT.values()].find(entry =>
       entry.totalMarks === 50 && entry.rubric.assessment.mode === 'discrete')!;
     const scores = { purpose: 9, coherence: 15, language: 14, mechanics: 5 } as const;
     expect(effectivePclmScores(card, scores)).toEqual({
@@ -316,14 +380,14 @@ describe('English PCLM cards', () => {
   });
 
   it('uses one combined SEC grid for a short response', () => {
-    const card = byId.get('english-2025-hl-p1-t1-a-i')!;
+    const card = LEGACY_BUILT.get('english-2024-hl-p1-t1-a-i')!;
     expect(card.rubric.assessment.mode).toBe('combined');
     expect(pclmMarks(card, { combined: 12 })).toBe(12);
     expect(suggestPclmGrade(card, { combined: 12 })).toBe('got');
   });
 
   it('scores every compulsory linked part on its own grid', () => {
-    const single = byId.get('english-2025-ol-p2-single-a-q1')!;
+    const single = LEGACY_BUILT.get('english-2025-ol-p2-single-a-q1')!;
     expect(single.rubric.assessment.mode).toBe('composite');
     if (single.rubric.assessment.mode !== 'composite') throw new Error('unreachable');
     expect(single.rubric.assessment.components.map(component => [
@@ -335,7 +399,7 @@ describe('English PCLM cards', () => {
       'component:a': 10, 'component:b': 8, 'component:c': 6,
     })).toBe(24);
 
-    const comparative = byId.get('english-2025-ol-p2-comparative-a-q1')!;
+    const comparative = LEGACY_BUILT.get('english-2025-ol-p2-comparative-a-q1')!;
     expect(comparative.rubric.assessment.mode).toBe('composite');
     if (comparative.rubric.assessment.mode !== 'composite') throw new Error('unreachable');
     expect(comparative.rubric.assessment.components.map(component => [
@@ -364,7 +428,7 @@ describe('English PCLM cards', () => {
       'component:b:mechanics': 4,
     });
 
-    const higherComparative = byId.get('english-2025-hl-p2-comparative-a-q1')!;
+    const higherComparative = LEGACY_BUILT.get('english-2024-hl-p2-comparative-a-q1')!;
     expect(higherComparative.rubric.assessment.mode).toBe('composite');
     if (higherComparative.rubric.assessment.mode !== 'composite') throw new Error('unreachable');
     expect(higherComparative.rubric.assessment.components.map(component => [

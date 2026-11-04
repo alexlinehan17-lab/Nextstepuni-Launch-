@@ -63,7 +63,9 @@ describe('Politics and Society exam-topic registry', () => {
   });
 
   it('normalises lettered and data-based sections to Paper Trail card identities', () => {
-    const references = examQuestionPartReferencesForSubject('politics-and-society');
+    // Historical reference headers remain intact beside new exact task links.
+    const references = examQuestionPartReferencesForSubject('politics-and-society')
+      .filter(reference => !reference.markBankCardId);
     expect(references).toHaveLength(550);
     expect(references.filter(reference => reference.sitting === 'main')).toHaveLength(467);
     expect(references.filter(reference => reference.sitting === 'deferred')).toHaveLength(27);

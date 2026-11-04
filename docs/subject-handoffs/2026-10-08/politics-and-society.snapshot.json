@@ -1,0 +1,17 @@
+{
+  "subject": "politics-and-society",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Politics-Completion-20261007",
+  "branch": "codex/politics-corpus-completion-20261007",
+  "sourceHead": "de9273e33e3be8f6b29657f8d43877d7082107db",
+  "snapshotCommit": "d256e014f6c9711b208727744dc74b4a3262b2ca",
+  "snapshotRef": "refs/checkpoints/portable-subjects-20261008/politics-and-society",
+  "snapshotTree": "4aa74e13b417dbcc8bd938f8fc4a20a5fe62f1a8",
+  "changedPaths": 257,
+  "capturedLocalFiles": 257,
+  "capturedLocalBytes": 51045585,
+  "exactFileBytesVerified": true,
+  "handoff": "politics-and-society.md",
+  "excluded": [],
+  "originalCheckpointCommit": "19747d068ba65a2f8c9bd52a29f0f212fbf4a123",
+  "snapshotBase": "e75d5b4c0fced3223b75a3b57dc404419f5454bb"
+}

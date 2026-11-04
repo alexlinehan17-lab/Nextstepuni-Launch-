@@ -101,8 +101,8 @@ const AdminFunnelPanel: React.FC = () => {
     <section aria-label="First-run funnel">
       <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h2 className="font-serif text-xl font-semibold text-[#1A1A1A]">Are students getting in?</h2>
-          <p className="mt-1 text-sm text-[#7A7068]">
+          <h2 className="font-sans text-xl font-semibold text-[var(--admin-ink)]">Are students getting in?</h2>
+          <p className="mt-1 text-sm text-[var(--admin-muted)]">
             Each student is counted once per visit, at the furthest step they reached.
           </p>
         </div>
@@ -113,11 +113,11 @@ const AdminFunnelPanel: React.FC = () => {
               type="button"
               onClick={() => setRange(option.id)}
               aria-pressed={range === option.id}
-              className="rounded-full border-2 px-3 py-1.5 text-xs font-bold"
+              className="rounded-full border px-3 py-1.5 text-xs font-bold"
               style={{
-                borderColor: range === option.id ? '#F26B1F' : '#1A1A1A',
-                backgroundColor: range === option.id ? '#F26B1F' : '#FFFFFF',
-                color: range === option.id ? '#FFFFFF' : '#1A1A1A',
+                borderColor: range === option.id ? 'var(--admin-accent)' : 'var(--admin-rule)',
+                backgroundColor: range === option.id ? 'var(--admin-accent)' : 'var(--admin-surface)',
+                color: range === option.id ? 'var(--admin-action-ink)' : 'var(--admin-ink)',
               }}
             >
               {option.label}
@@ -127,7 +127,7 @@ const AdminFunnelPanel: React.FC = () => {
             type="button"
             onClick={() => void load()}
             aria-label="Refresh funnel counts"
-            className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-[#1A1A1A] bg-white text-[#1A1A1A]"
+            className="flex h-8 w-8 items-center justify-center rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] text-[var(--admin-ink)]"
           >
             <RefreshCw size={14} className={isLoading ? 'animate-spin' : undefined} />
           </button>
@@ -135,21 +135,21 @@ const AdminFunnelPanel: React.FC = () => {
       </div>
 
       {error && (
-        <p role="alert" className="mb-4 flex items-start gap-2 rounded-r-[10px] border-l-[3px] border-[#F26B1F] bg-[#FDEEDF] px-4 py-3 text-sm italic text-[#8C3A0E]">
+        <p role="alert" className="mb-4 flex items-start gap-2 rounded-lg border border-[var(--admin-accent)] bg-[var(--admin-warning-bg)] px-4 py-3 text-sm text-[var(--admin-accent)]">
           <TriangleAlert size={16} className="mt-0.5 shrink-0" />
           {error}
         </p>
       )}
 
       {throughRate !== null && (
-        <div className="mb-6 rounded-2xl border-2 border-[#1A1A1A] bg-white p-5">
-          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">
+        <div className="mb-6 rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5">
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--admin-muted)]">
             Made an account → finished setup
           </p>
-          <p className="mt-1 font-serif text-4xl font-bold" style={{ color: throughRate >= 70 ? '#3A8D5F' : '#F26B1F' }}>
+          <p className="mt-1 font-sans text-4xl font-bold" style={{ color: throughRate >= 70 ? 'var(--admin-success)' : 'var(--admin-accent)' }}>
             {throughRate}%
           </p>
-          <p className="mt-1 text-sm text-[#7A7068]">
+          <p className="mt-1 text-sm text-[var(--admin-muted)]">
             {completed} of {started}. If this drops, the front door is broken — check the newest step with a fall-off below.
           </p>
         </div>
@@ -162,16 +162,16 @@ const AdminFunnelPanel: React.FC = () => {
           const lost = Math.max(0, previous - value);
           const width = top > 0 ? Math.round((value / top) * 100) : 0;
           return (
-            <li key={step} className="rounded-xl border-2 border-[#1A1A1A] bg-white p-4">
+            <li key={step} className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-4">
               <div className="flex items-baseline justify-between gap-4">
-                <span className="text-sm font-semibold text-[#1A1A1A]">{STEP_LABELS[step]}</span>
-                <span className="font-serif text-xl font-bold tabular-nums text-[#1A1A1A]">{value}</span>
+                <span className="text-sm font-semibold text-[var(--admin-ink)]">{STEP_LABELS[step]}</span>
+                <span className="font-sans text-xl font-bold tabular-nums text-[var(--admin-ink)]">{value}</span>
               </div>
-              <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-[#E0DBD4]">
-                <div className="h-full rounded-full" style={{ width: `${width}%`, background: '#F26B1F' }} />
+              <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-[var(--admin-track)]">
+                <div className="h-full rounded-full" style={{ width: `${width}%`, background: 'var(--admin-accent)' }} />
               </div>
               {index > 0 && lost > 0 && (
-                <p className="mt-2 text-xs text-[#7A7068]">
+                <p className="mt-2 text-xs text-[var(--admin-muted)]">
                   &minus;{lost} lost here{previous > 0 ? ` (${Math.round((lost / previous) * 100)}%)` : ''}
                 </p>
               )}
@@ -180,7 +180,7 @@ const AdminFunnelPanel: React.FC = () => {
         })}
       </ol>
 
-      <p className="mt-5 text-xs leading-relaxed text-[#7A7068]">
+      <p className="mt-5 text-xs leading-relaxed text-[var(--admin-muted)]">
         Skipped onboarding: <strong>{counts.onboarding_skipped ?? 0}</strong>. Students who abandon on the
         registration form itself are not counted — writing here requires a signed-in account, so that gap is
         deliberate (see <code>utils/funnel.ts</code>).

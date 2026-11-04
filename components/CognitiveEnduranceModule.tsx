@@ -1,21 +1,25 @@
+import { BrandedSleepView } from './learning/WideFeatures';
 
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
-  Battery, Brain, Moon, Coffee, HeartPulse, SlidersHorizontal
+Battery,Brain,
+Coffee,HeartPulse,
+Moon,
+SlidersHorizontal
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { orangeTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { Cite } from './ModuleReferences';
+import React,{ useState } from 'react';
 import { COGNITIVE_ENDURANCE_REFERENCE_LIST } from '../data/references/cognitiveEndurance';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { orangeTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 
 const theme = orangeTheme;
 
@@ -64,14 +68,14 @@ const AllostaticLoadComparison = () => {
     };
 
     const noRecPhases = [
-        { label: 'Manageable', x1: 0, x2: 0.33, color: '#fca5a5' },
-        { label: 'Accumulating', x1: 0.33, x2: 0.66, color: '#f87171' },
-        { label: 'Burnout', x1: 0.66, x2: 1, color: '#ef4444' },
+        { label: 'Manageable', x1: 0, x2: 0.33, color: "var(--module-ink)" },
+        { label: 'Accumulating', x1: 0.33, x2: 0.66, color: "var(--module-danger-text)" },
+        { label: 'Burnout', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
     ];
     const recPhases = [
-        { label: 'Build + recover', x1: 0, x2: 0.33, color: '#3A8D5F' },
-        { label: 'Sustain', x1: 0.33, x2: 0.66, color: '#3A8D5F' },
-        { label: 'Peak form', x1: 0.66, x2: 1, color: '#3A8D5F' },
+        { label: 'Build + recover', x1: 0, x2: 0.33, color: "var(--module-success-text)" },
+        { label: 'Sustain', x1: 0.33, x2: 0.66, color: "var(--module-success-text)" },
+        { label: 'Peak form', x1: 0.66, x2: 1, color: "var(--module-success-text)" },
     ];
 
     const Chart = ({ primary, secondary, phases, areaColor, areaId, areaData, label }: {
@@ -87,10 +91,10 @@ const AllostaticLoadComparison = () => {
             </defs>
             {/* Grid lines */}
             {[0.25, 0.5, 0.75, 1.0].map(v => (
-                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
             ))}
             {/* Baseline */}
-            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
             {/* Area fill */}
             <motion.path
                 d={buildArea(areaData)}
@@ -109,7 +113,7 @@ const AllostaticLoadComparison = () => {
             {/* Secondary line (dashed — Performance) */}
             <motion.path
                 d={buildLine(secondary)}
-                fill="none" stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
+                fill="none" stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
                 initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
                 transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
             />
@@ -120,58 +124,58 @@ const AllostaticLoadComparison = () => {
                 />
             ))}
             {/* Y-axis labels */}
-            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
-            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
             {/* Month labels */}
             {months.map((m, i) => (
-                <text key={m} x={toX(i / (months.length - 1))} y={toY(0) + 14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>
+                <text key={m} x={toX(i / (months.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{m}</text>
             ))}
             {/* Phase labels */}
             {phases.map((p, i) => (
                 <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
             ))}
             {/* Chart label */}
-            <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{label}</text>
+            <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">{label}</text>
             {/* Legend */}
             <line x1={W - padR - 108} x2={W - padR - 92} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-            <text x={W - padR - 88} y={17} fontSize="8" fill="#a1a1aa">Stress Load</text>
-            <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="4 2" />
-            <text x={W - padR - 24} y={17} fontSize="8" fill="#a1a1aa">Performance</text>
+            <text x={W - padR - 88} y={17} fontSize="8" fill="var(--module-surface)">Stress Load</text>
+            <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="4 2" />
+            <text x={W - padR - 24} y={17} fontSize="8" fill="var(--module-surface)">Performance</text>
         </svg>
     );
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Recovery Effect</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Same exams. Same syllabus. One student recovers strategically.</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Recovery Effect</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Same exams. Same syllabus. One student recovers strategically.</p>
 
             {!revealed ? (
                 <div className="text-center">
-                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Two students face the same exam year. What happens when one builds in strategic recovery?</p>
-                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-orange-500 text-white hover:bg-orange-600 transition-colors">
+                    <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Two students face the same exam year. What happens when one builds in strategic recovery?</p>
+                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-orange)] text-[var(--module-ink)] hover:bg-[var(--module-orange)] transition-colors" data-wide-button="true">
                         Reveal the Recovery Effect
                     </button>
                 </div>
             ) : (
                 <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
                     <div className="grid md:grid-cols-2 gap-4 mb-5">
-                        <div className="rounded-lg border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 p-3">
+                        <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] p-3">
                             <Chart primary={noRecStress} secondary={noRecPerf} phases={noRecPhases}
-                                areaColor="#ef4444" areaId="norec-grad" areaData={noRecStress} label="No Recovery Protocol" />
+                                areaColor="var(--module-danger-text)" areaId="norec-grad" areaData={noRecStress} label="No Recovery Protocol" />
                         </div>
-                        <div className="rounded-lg border border-success/30 dark:border-success/40 bg-successTint/50 dark:bg-success/15 p-3">
+                        <div className="rounded-lg border border-success/30 dark:border-success/40 bg-[var(--module-success-soft)]/50 dark:bg-[var(--module-success)]/15 p-3">
                             <Chart primary={recStress} secondary={recPerf} phases={recPhases}
-                                areaColor="#3A8D5F" areaId="rec-grad" areaData={recPerf} label="Strategic Recovery" />
+                                areaColor="var(--module-success-text)" areaId="rec-grad" areaData={recPerf} label="Strategic Recovery" />
                         </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-4 text-sm">
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
-                            <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
-                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Without recovery</strong>, stress piles up like debt with interest. By May, you're so worn out that studying becomes pointless — you're running on fumes.</p>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                            <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
+                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Without recovery</strong>, stress piles up like debt with interest. By May, you're so worn out that studying becomes pointless — you're running on fumes.</p>
                         </div>
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-successTint dark:bg-success/15 border border-success/30 dark:border-success/40">
-                            <span className="text-success dark:text-success text-lg mt-0.5">&#x2714;</span>
-                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-success dark:text-success">Strategic recovery</strong> — proper sleep, exercise, guided relaxation — creates deliberate dips in the stress curve. You arrive at exams with energy left in the tank.</p>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 border border-success/30 dark:border-success/40">
+                            <span className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)] text-lg mt-0.5"></span>
+                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Strategic recovery</strong> — proper sleep, exercise, guided relaxation — creates deliberate dips in the stress curve. You arrive at exams with energy left in the tank.</p>
                         </div>
                     </div>
                 </motion.div>
@@ -228,41 +232,41 @@ const AllostaticLoadVisualizer = () => {
     ];
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Stress Build-Up Over Exam Season</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Your brain's stress builds up over time and spikes during exam clusters.</p>
-            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">This is why mental stamina matters — not just knowledge.</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your Stress Build-Up Over Exam Season</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">Your brain's stress builds up over time and spikes during exam clusters.</p>
+            <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">This is why mental stamina matters — not just knowledge.</p>
 
-            <div className="rounded-xl p-2 mb-4" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}>
+            <div className="rounded-xl p-2 mb-4" style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)" }}>
                 <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
                     <defs>
                         <linearGradient id="alLoadFill" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stopColor="#ef4444" stopOpacity="0.18" />
-                            <stop offset="50%" stopColor="#f97316" stopOpacity="0.08" />
-                            <stop offset="100%" stopColor="#f97316" stopOpacity="0" />
+                            <stop offset="0%" stopColor="var(--module-danger)" stopOpacity="0.18" />
+                            <stop offset="50%" stopColor="var(--module-danger)" stopOpacity="0.08" />
+                            <stop offset="100%" stopColor="var(--module-danger)" stopOpacity="0" />
                         </linearGradient>
                         <linearGradient id="alStroke" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stopColor="#fb923c" />
-                            <stop offset="65%" stopColor="#f97316" />
-                            <stop offset="85%" stopColor="#ef4444" />
-                            <stop offset="100%" stopColor="#dc2626" />
+                            <stop offset="0%" stopColor="var(--module-orange)" />
+                            <stop offset="65%" stopColor="var(--module-danger)" />
+                            <stop offset="85%" stopColor="var(--module-danger)" />
+                            <stop offset="100%" stopColor="var(--module-danger)" />
                         </linearGradient>
                     </defs>
 
                     {/* Danger zone band */}
-                    <rect x={padL} y={padT} width={chartW} height={chartH * 0.28} fill="#ef4444" opacity="0.04" />
+                    <rect x={padL} y={padT} width={chartW} height={chartH * 0.28} fill="var(--module-danger)" opacity="0.04" />
                     <line x1={padL} y1={toY(0.72)} x2={W - padR} y2={toY(0.72)}
-                        stroke="#ef4444" strokeWidth="0.6" strokeDasharray="4 3" opacity="0.3" />
+                        stroke="var(--module-danger-text)" strokeWidth="0.6" strokeDasharray="4 3" opacity="0.3" />
                     <text x={W - padR - 4} y={toY(0.72) - 4} textAnchor="end"
-                        className="text-[5px] font-bold" fill="#ef4444" opacity="0.5">DANGER ZONE</text>
+                        className="text-[5px] font-bold" fill="var(--module-danger)" opacity="0.5">DANGER ZONE</text>
 
                     {/* Y-axis gridlines + labels */}
                     {yLevels.map(({ pct, label }) => (
                         <g key={label}>
                             <line x1={padL} y1={toY(pct)} x2={W - padR} y2={toY(pct)}
-                                stroke="#d4d4d8" strokeWidth="0.4" opacity="0.6" />
+                                stroke="var(--module-muted)" strokeWidth="0.4" opacity="0.6" />
                             <text x={padL + 4} y={toY(pct) - 4} textAnchor="start"
-                                className="text-[5.5px]" fill="#a1a1aa">{label}</text>
+                                className="text-[5.5px]" fill="var(--module-surface)">{label}</text>
                         </g>
                     ))}
 
@@ -275,12 +279,12 @@ const AllostaticLoadVisualizer = () => {
                             <g key={label}>
                                 {i > 0 && (
                                     <line x1={toX(start)} y1={padT} x2={toX(start)} y2={H - padB}
-                                        stroke="#d4d4d8" strokeWidth="0.5" strokeDasharray="3 3" opacity="0.4" />
+                                        stroke="var(--module-muted)" strokeWidth="0.5" strokeDasharray="3 3" opacity="0.4" />
                                 )}
                                 <text x={toX((start + end) / 2)} y={H - padB + 14}
                                     textAnchor="middle"
                                     className="text-[7px] font-bold"
-                                    fill={isExam ? '#dc2626' : isPreExam ? '#ef4444' : isSummer ? '#3A8D5F' : '#a1a1aa'}
+                                    fill={isExam ? "var(--module-danger)" : isPreExam ? "var(--module-danger)" : isSummer ? "var(--module-success)" : "var(--module-surface)"}
                                 >
                                     {label}
                                 </text>
@@ -304,20 +308,20 @@ const AllostaticLoadVisualizer = () => {
                     />
 
                     {/* Summer recovery annotation */}
-                    <circle cx={toX(0.48)} cy={toY(0.08)} r="3" fill="#3A8D5F" />
+                    <circle cx={toX(0.48)} cy={toY(0.08)} r="3" fill="var(--module-success)" />
                     <text x={toX(0.48)} y={toY(0.08) + 12} textAnchor="middle"
-                        className="text-[5px] font-semibold" fill="#3A8D5F">Recovery</text>
+                        className="text-[5px] font-semibold" fill="var(--module-success)">Recovery</text>
 
                     {/* Peak load annotation */}
-                    <circle cx={toX(0.97)} cy={toY(0.96)} r="3" fill="#dc2626" />
+                    <circle cx={toX(0.97)} cy={toY(0.96)} r="3" fill="var(--module-danger)" />
                     <text x={toX(0.97)} y={toY(0.96) - 7} textAnchor="middle"
-                        className="text-[5px] font-bold" fill="#dc2626">Peak Load</text>
+                        className="text-[5px] font-bold" fill="var(--module-danger)">Peak Load</text>
 
                 </svg>
             </div>
 
-            <p className="text-center text-xs text-zinc-500 dark:text-zinc-400">
-                The exam spikes aren't the real danger — it's the <span className="font-semibold text-orange-600 dark:text-orange-400">stress that's been building up underneath</span> that determines whether you crash or keep going.
+            <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)]">
+                The exam spikes aren't the real danger — it's the <span className="font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">stress that's been building up underneath</span> that determines whether you crash or keep going.
             </p>
         </div>
     );
@@ -325,14 +329,6 @@ const AllostaticLoadVisualizer = () => {
 
 const SleepCycleArchitect = () => {
     const [sleepHours, setSleepHours] = useState(8);
-
-    const W = 400, H = 170;
-    const padL = 6, padR = 6, padT = 16, padB = 28;
-    const chartW = W - padL - padR;
-    const chartH = H - padT - padB;
-    const maxH = 9;
-    const toX = (h: number) => padL + (h / maxH) * chartW;
-    const toY = (d: number) => padT + d * chartH; // 0=awake(top), 1=deep(bottom)
 
     /* Hypnogram waypoints: [hour, depth 0-1]
        Early cycles: deep NREM dominant. Late cycles: REM dominant. */
@@ -354,15 +350,6 @@ const SleepCycleArchitect = () => {
         [7.7, 0.08], [8.0, 0.05], [8.5, 0],
     ];
 
-    const coords = wave.map(([h, d]) => [toX(h), toY(d)]);
-    let curvePath = `M ${coords[0][0]} ${coords[0][1]}`;
-    for (let i = 1; i < coords.length; i++) {
-        const [x, y] = coords[i];
-        const [px, py] = coords[i - 1];
-        curvePath += ` C ${px + (x - px) * 0.4} ${py}, ${px + (x - px) * 0.6} ${y}, ${x} ${y}`;
-    }
-    const areaPath = curvePath + ` L ${coords[coords.length - 1][0]} ${toY(0)} L ${toX(0)} ${toY(0)} Z`;
-
     /* REM regions for highlight + loss calculation */
     const remRegions = [
         { start: 1.45, end: 1.55 },
@@ -379,118 +366,7 @@ const SleepCycleArchitect = () => {
     }, 0);
     const remLostPct = Math.round((lostRemMin / totalRemMin) * 100);
 
-    const stages = [
-        { d: 0, label: 'Awake' },
-        { d: 0.5, label: 'Light' },
-        { d: 1.0, label: 'Deep' },
-    ];
-    const hourMarks = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Sleep Cycle Architect</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Drag the slider to cut your sleep short and see what gets sacrificed.</p>
-            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">The REM-rich later cycles are the first to go.</p>
-
-            <div className="rounded-xl p-2 mb-4" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}>
-                <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
-                    <defs>
-                        <linearGradient id="sleepFill" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stopColor="#818cf8" stopOpacity="0.03" />
-                            <stop offset="100%" stopColor="#4f46e5" stopOpacity="0.2" />
-                        </linearGradient>
-                    </defs>
-
-                    {/* Stage gridlines */}
-                    {stages.map(({ d, label }) => (
-                        <g key={label}>
-                            <line x1={padL} y1={toY(d)} x2={W - padR} y2={toY(d)}
-                                stroke="#d4d4d8" strokeWidth="0.4" opacity="0.5" />
-                            <text x={padL + 4} y={toY(d) - 4} textAnchor="start"
-                                className="text-[5.5px]" fill="#a1a1aa">{label}</text>
-                        </g>
-                    ))}
-
-                    {/* Hour tick marks */}
-                    {hourMarks.map(h => (
-                        <g key={h}>
-                            <line x1={toX(h)} y1={H - padB} x2={toX(h)} y2={H - padB + 4}
-                                stroke="#d4d4d8" strokeWidth="0.5" />
-                            <text x={toX(h)} y={H - padB + 13} textAnchor="middle"
-                                className="text-[6px]" fill="#a1a1aa">{h}h</text>
-                        </g>
-                    ))}
-
-                    {/* REM highlight bands */}
-                    {remRegions.map((r, i) => (
-                        <rect key={i} x={toX(r.start)} y={padT}
-                            width={toX(r.end) - toX(r.start)} height={chartH * 0.18}
-                            fill="#f59e0b" opacity="0.12" rx="1" />
-                    ))}
-                    {/* REM label on wider bands */}
-                    {remRegions.slice(2).map((r, i) => (
-                        <text key={i} x={toX((r.start + r.end) / 2)} y={padT + 9}
-                            textAnchor="middle" className="text-[4.5px] font-bold" fill="#d97706" opacity="0.7">REM</text>
-                    ))}
-
-                    {/* Shaded area under curve */}
-                    <path d={areaPath} fill="url(#sleepFill)" />
-
-                    {/* Hypnogram wave */}
-                    <path d={curvePath} fill="none" stroke="#6366f1" strokeWidth="2" strokeLinecap="round" />
-
-                    {/* Cut-off overlay */}
-                    <rect x={toX(sleepHours)} y={0} width={W - toX(sleepHours)} height={H}
-                        fill="currentColor" className="text-zinc-100 dark:text-zinc-800" opacity="0.82" />
-
-                    {/* Wake-up line */}
-                    {sleepHours < 9 && (
-                        <>
-                            <line x1={toX(sleepHours)} y1={padT - 2} x2={toX(sleepHours)} y2={H - padB}
-                                stroke="#ef4444" strokeWidth="1.5" strokeDasharray="4 3" />
-                            <text x={toX(sleepHours)} y={padT - 5} textAnchor="middle"
-                                className="text-[5.5px] font-bold" fill="#ef4444">WAKE UP</text>
-                        </>
-                    )}
-                </svg>
-            </div>
-
-            {/* Slider */}
-            <div className="px-2">
-                <input type="range" min="4" max="9" step="0.5" value={sleepHours}
-                    onChange={e => setSleepHours(parseFloat(e.target.value))}
-                    className="chunky-slider chunky-slider-sky" />
-                <div className="flex justify-between items-center mt-1">
-                    <span className="text-[10px] text-zinc-400 dark:text-zinc-500">4 hours</span>
-                    <span className="text-sm font-bold text-zinc-700 dark:text-zinc-200">{sleepHours} hours of sleep</span>
-                    <span className="text-[10px] text-zinc-400 dark:text-zinc-500">9 hours</span>
-                </div>
-            </div>
-
-            {/* Legend */}
-            <div className="flex justify-center gap-5 mt-4 mb-3">
-                <div className="flex items-center gap-1.5">
-                    <div className="w-3 h-2 rounded-sm bg-indigo-400" />
-                    <span className="text-[10px] text-zinc-500 dark:text-zinc-400">NREM (Deep + Light)</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                    <div className="w-3 h-2 rounded-sm bg-amber-400" />
-                    <span className="text-[10px] text-zinc-500 dark:text-zinc-400">REM Sleep</span>
-                </div>
-            </div>
-
-            {/* REM loss warning */}
-            <AnimatePresence>
-                {remLostPct > 0 && (
-                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-                        className="mt-3 p-4 bg-rose-50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-800/40 rounded-xl text-center text-sm text-zinc-700 dark:text-zinc-300"
-                    >
-                        You've lost approximately <span className="font-bold text-rose-600 dark:text-rose-400">{remLostPct}%</span> of your REM sleep — impairing problem-solving and emotional regulation.
-                    </motion.div>
-                )}
-            </AnimatePresence>
-        </div>
-    );
+    return <BrandedSleepView {...{sleepHours,setSleepHours,wave,remRegions,remLostPct}} />;
 };
 
 // --- MODULE COMPONENT ---

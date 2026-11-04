@@ -37,6 +37,7 @@ import json
 import os
 import re
 import sys
+import subprocess
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paper_census import SUBJECTS, census_subject, irish_manifest_files, key_label  # noqa: E402
@@ -47,32 +48,93 @@ DECKS = os.path.join(ROOT, 'components', 'MarkBank', 'cards')
 EXCLUSIONS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'exclusions')
 
 HEAD = re.compile(
-    r'^(?P<year>\d{4})\s+(?P<level>HL|OL)'
+    # CL is the COMMON level: LCVP's Link Modules paper is sat at one level by
+    # everyone and the SEC prints "Common Level" on its front cover.
+    r'^(?P<year>\d{4})\s+(?P<level>HL|OL|CL)'
     r'(?:\s+Paper\s+(?P<paper>\d))?'
-    r'(?:\s+Section\s+(?P<section>[A-Za-z0-9]+))?'
+    # History is examined in two FIELDS OF STUDY, printed as separate papers a
+    # candidate chooses between, and the citation names which — without it the
+    # same address exists twice in one sitting.
+    r'(?:\s+(?P<field>Later Modern|Early Modern))?'
+    # The section token may carry a TOPIC and an Ordinary part with it, because
+    # History's Sections 2 and 3 restart their numbering inside every topic:
+    # "Section 2 Topic 1 A Q1" is Part A, question 1, of Ireland Topic 1, and
+    # "Section 2 Topic 1 B" is the paragraph part, which numbers nothing under
+    # it. "Section Extra A" is the unnumbered extra Part A of 2023-2025
+    # Ordinary, which the scheme heads "Extra Section A questions".
+    # Classical Studies' old paper has no section and no question number: it
+    # prints TEN TOPICS, each setting questions "(i)" to "(iv)" with lettered
+    # parts under them, and the topic-with-roman is the whole address —
+    # "2021 HL Topic 1(i) Q(a)". It names its own unit, so it is cited without
+    # a "Section" in front of it, exactly as key_label prints it.
+    r'(?:\s+(?P<topic>Topic\s+\d{1,2}\((?:i{1,3}|iv|v)\)))?'
+    r'(?:\s+Section\s+(?P<section>(?:Extra\s+)?[A-Za-z0-9]+'
+    r'(?:\s+Topic\s+\d{1,2})?(?:\s+[A-C]\b)?))?'
     # Home Economics files Section C under an elective token ("Section C E1
     # Q1(a)(i)"); the elective is not an address the paper numbers by.
     r'(?:\s+E(?P<elective>\d))?'
-    r'\s+(?:Q(?P<q>\d{1,2})(?P<alt>-alt)?|(?P<abq>ABQ))')
+    # The number is OPTIONAL, and so is the whole Q token. Religious
+    # Education's Sections B-J print no question number at all — the section is
+    # the address — so the card cites "Section E Q(b)(ii)" and the census keys
+    # it with q=None. History goes one step further: a part priced whole, with
+    # nothing numbered beneath it, is cited by its section alone.
+    r'(?:\s+(?:Q(?P<q>\d{1,2})?(?P<alt>-alt)?|(?P<abq>ABQ)))?')
 # What may follow the question number: part tokens, separated by commas,
 # "and", or a range dash. "Q3(c)(i), (ii)" covers two romans; "Q6(a)–(e)"
 # covers five letters; "Q9(vii)–(viii)" two romans with no letter above them.
-PART_TOKEN = re.compile(r'\s*(?:\(\s*([A-Za-z]{1,4})\s*\)|([\u2013\u2014-])|(,|\band\b))')
+# A sub-marker may be a DIGIT. The Baltic languages number the rows of a
+# true/false table "1." to "5." where every science paper numbers them "(i)"
+# to "(v)", and the paper wins over the scheme on the address — so
+# "2026 OL Section A Q1(h)(2)" is a citation this grammar has to read. Before
+# it did, the parser stopped at the digit and the card claimed its whole
+# LETTER, which reported three printed asks covered by three cards that each
+# said they held all three.
+# A part marker may be CYRILLIC. The Bulgarian paper letters Question 1's
+# five expressions "а) б) в) г) д)" — five Cyrillic letters that look like
+# Latin ones and are not — and a Latin-only token class read none of them, so
+# every Bulgarian citation naming a part failed to parse and its exclusions
+# reported stale forever. The mirror of this grammar in
+# test/markBankCoverage.test.ts reads the same class.
+PART_TOKEN = re.compile(
+    r'\s*(?:\(\s*([A-Za-z\u0430-\u044f\u0410-\u042f]{1,4}|\d{1,2})\s*\)'
+    r'|([\u2013\u2014-])|(,|\band\b))')
+# A part letter is not always a LATIN letter: Maltese letters the five
+# expressions of every Question 1 "a) b) ċ) d) e)", in the Maltese alphabet,
+# and a citation names the marker the candidate saw. The mirror of this class
+# is TAIL in test/markBankCoverage.test.ts, and the two have to agree.
+PART_TOKEN = re.compile(
+    r'\s*(?:\(\s*([A-Za-z\u010b\u010a\u0121\u0120\u0127\u0126'
+    r'\u017c\u017b]{1,4}|\d{1,2})\s*\)|([\u2013\u2014-])|(,|\band\b))')
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
           'xi', 'xii']
 LETTERS = 'abcdefghijkl'
+# The Cyrillic alphabet the Bulgarian paper letters its parts with, in its own
+# printed order. Held beside LETTERS rather than folded into it, so a range
+# citation ("(а)–(в)") expands over the alphabet it was printed in.
+CYRILLIC_LETTERS = 'абвгдежзийклмн'
 
 
 def shipped_cards(subject):
     """[(id, questionRef)] straight out of the deck files that actually ship.
 
-    Split on the literal every emitted card opens with — "...base, kind:" —
-    and read the FIRST id in each chunk, which the emitter always writes
+    Split on the base spread every emitted card opens with. QA metadata and
+    the exam-year curriculum spread may occur before `kind`; requiring those
+    two properties to be adjacent silently discarded all reviewed additions.
+    Read the FIRST id in each chunk, which the emitter always writes
     before the rows. Scanning for every id: also caught the ROW ids ("r-3",
     "g-parent1") and paired each with the next card's citation, which
     invented five hundred phantom orphans in Business alone.
     """
-    if subject in ('english', 'irish', 'art', 'geography'):
+    if subject == 'accounting':
+        cards = json.load(open(os.path.join(DECKS, subject, 'authored.json'), encoding='utf-8'))['cards']
+        return [(c['id'], f"{c['year']} {'HL' if c['level'] == 'higher' else 'OL'} Q{c['taskKey']}") for c in cards]
+    if subject == 'physical-education':
+        # Same manifest as the runtime level modules; old identities are also
+        # pinned independently by the generator and preservation regression.
+        reviewed_path = os.path.join(DECKS, subject, 'reviewed.json')
+        cards = json.load(open(reviewed_path, encoding='utf-8'))['cards']
+        return [(card['id'], card['questionRef']) for card in cards]
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society'):
         # Paper-specific facts live in a reviewed generated manifest and are
         # converted to runtime cards by factory.ts; the tiny level exports do
         # not contain literal card objects for the ledger to parse.
@@ -82,26 +144,103 @@ def shipped_cards(subject):
         declared_count = payload.get('cardCount', payload.get('meta', {}).get('cardCount'))
         if declared_count != len(cards):
             raise AssertionError(f'{subject} authored manifest count is stale')
+        shipped = [(card['id'], card['questionRef']) for card in cards]
+        if subject == 'english':
+            # Reviewed papers published paper by paper by english_publish.py.
+            # A bridged legacy paper is served by its published cards only:
+            # its legacy ids are kept by those cards or registered aliases.
+            manifests = [json.load(open(os.path.join(DECKS, subject, f'published-{level}.json'),
+                                        encoding='utf-8')) for level in ('higher', 'ordinary')]
+            bridged = {cid for published in manifests for cid in published.get('bridgedLegacyIds', [])}
+            shipped = [(cid, ref) for cid, ref in shipped if cid not in bridged]
+            for published in manifests:
+                if published['cardCount'] != len(published['cards']):
+                    raise AssertionError(f"english published {published['level']} manifest count is stale")
+                shipped += [(card['id'], card['questionRef']) for card in published['cards']]
         if subject == 'irish':
             # The reviewed paper components ship beside authored.json; the
             # deck is all of them, so the ledger reads all of them.
             for name in irish_manifest_files()[1:]:
                 more = json.load(open(os.path.join(DECKS, subject, name), encoding='utf-8'))
-                cards = cards + more['cards']
-        return [(card['id'], card['questionRef']) for card in cards]
+                shipped += [(card['id'], card['questionRef']) for card in more['cards']]
+        return shipped
 
     out = []
-    for level in ('higher', 'ordinary'):
+    for level in ('higher', 'ordinary', 'common'):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if not os.path.exists(path):
             continue
-        text = open(path, encoding='utf-8').read()
-        for chunk in re.split(r'\.\.\.base,\s*kind:', text)[1:]:
+        with open(path, encoding='utf-8') as fh:
+            text = fh.read()
+        for chunk in re.split(r'^\s*\.\.\.base,', text, flags=re.M)[1:]:
             cid = re.search(r'\bid: "([^"]+)"', chunk)
             ref = re.search(r'questionRef: "([^"]+)"', chunk)
             if cid and ref:
                 out.append((cid.group(1), ref.group(1)))
+        if subject == 'french':
+            # French retains its original literal cards and appends reviewed
+            # task data. Count both, in the same order as the runtime deck.
+            for name in ('writing.json', 'reading.json', 'cloze.json', 'listening.json'):
+                data = json.load(open(os.path.join(DECKS, subject, name), encoding='utf-8'))
+                out.extend((card['id'], card['questionRef']) for card in data if card['level'] == level)
+    if subject == 'applied-maths':
+        # Mirror withReviewedCards: preserve literal identities, apply audited
+        # corrections, then append newly reviewed tasks. CI imports the actual
+        # runtime deck and pins these same identity/ref pairs.
+        with open(os.path.join(DECKS, subject, 'reviewed.json'), encoding='utf-8') as fh:
+            reviewed = json.load(fh)
+        by_id = {card['id']: card for card in reviewed}
+        assert len(by_id) == len(reviewed), 'Duplicate Applied Mathematics runtime identity'
+        originals = {cid for cid, _ in out}
+        for cid in originals & by_id.keys():
+            assert 'reviewed-card-correction' in by_id[cid]['qa']['gates'], f'Unaudited correction: {cid}'
+        out = [(cid, by_id[cid]['questionRef'] if cid in by_id else ref) for cid, ref in out]
+        out.extend((card['id'], card['questionRef']) for card in reviewed if card['id'] not in originals)
+    if subject == 'business':
+        supplement = os.path.join(DECKS, 'business', 'rubric-authored.json')
+        if os.path.exists(supplement):
+            reviewed = json.load(open(supplement, encoding='utf-8'))['cards']
+            by_id = dict(out)
+            by_id.update((card['id'], card['questionRef']) for card in reviewed)
+            route_path = os.path.join(DECKS, 'business', 'route-pools.json')
+            if os.path.exists(route_path):
+                routes = json.loads(subprocess.check_output(['node', os.path.join(
+                    ROOT, 'scripts/markbank/authoring/business_routes.mjs')], text=True))
+                by_id.update((card['id'], card['questionRef']) for card in routes)
+            out = list(by_id.items())
     return out
+
+
+def reconcile_applied(census):
+    """Exact task identities: a parent citation must not hide a missing split."""
+    expected = {leaf['key'][0]: leaf['label']
+                for paper in census['papers'] for leaf in paper['leaves']}
+    assert len(expected) == sum(len(p['leaves']) for p in census['papers']), 'Duplicate census identity'
+    cards = shipped_cards('applied-maths')
+    covered, seen = set(), set()
+    orphans = []
+    for cid, ref in cards:
+        if cid in seen or expected.get(cid) != ref:
+            orphans.append({'id': cid, 'ref': ref, 'why': 'duplicate identity or no exact reviewed task/address'})
+        else:
+            covered.add(cid)
+        seen.add(cid)
+    papers = []
+    for p in census['papers']:
+        open_refs = [leaf['label'] for leaf in p['leaves'] if leaf['key'][0] not in covered]
+        papers.append({'year': p['year'], 'level': p['level'], 'paper': None,
+                       'leaves': len(p['leaves']), 'covered': len(p['leaves']) - len(open_refs),
+                       'excluded': 0, 'open': open_refs})
+    total = len(expected)
+    return {'subject': 'applied-maths', 'mode': census['mode'],
+            'cards': len(cards), 'leaves': total, 'covered': len(covered),
+            'excluded': 0, 'open': total - len(covered),
+            'coveragePct': round(100 * len(covered) / total, 1) if total else 0.0,
+            'orphans': orphans, 'unparsed': [], 'staleExclusions': load_exclusions('applied-maths'),
+            'papers': papers, 'censusFlags': 0,
+            'sourceEditions': len(census['sourceEditions']),
+            'sourceTaskLinks': sum(p['tasks'] for p in census['sourceEditions']),
+            'nativeSchemes': sum(p['lang'] == p['schemeLang'] for p in census['sourceEditions'])}
 
 
 def reconcile_manifest(subject, census):
@@ -231,9 +370,16 @@ def _classify(tok):
     """letter or roman? A lone i/v/x is a roman FIRST; the census decides the
     rest at match time (Physics numbers parts (i)..(x) with no letters)."""
     t = tok.lower()
+    if len(t) == 1 and t in CYRILLIC_LETTERS:
+        return 'letter'
     if len(t) == 1 and t in LETTERS and t not in 'ivx':
         return 'letter'
     if all(c in 'ivx' for c in t):
+        return 'roman'
+    # A digit sits at the same level of the address as a roman — it is the
+    # third token, under the letter — so it is classified there and matched
+    # against the census key the paper's own numbering produced.
+    if t.isdigit():
         return 'roman'
     return 'letter' if len(t) == 1 else None
 
@@ -253,7 +399,12 @@ def parse_ref(ref):
     if not m:
         return None
     d = m.groupdict()
-    q = 'ABQ' if d['abq'] else int(d['q'])
+    # Everything after the year and level is optional, so "2021 HL" alone
+    # matches. A citation has to name SOMETHING beneath the sitting.
+    if not d['q'] and not d['abq'] and not d['section'] and not d['paper'] \
+            and not d.get('topic'):
+        return None
+    q = 'ABQ' if d['abq'] else (int(d['q']) if d['q'] else None)
     if d['alt'] and isinstance(q, int):
         q = -q
     paths, cur_letter, cur_roman, dash = [], None, None, False
@@ -272,9 +423,13 @@ def parse_ref(ref):
         cls = _classify(tok)
         tok = tok.lower()
         if cls == 'letter':
-            if dash and cur_letter and cur_roman is None:
-                lo, hi = sorted((LETTERS.index(cur_letter), LETTERS.index(tok)))
-                for x in LETTERS[lo + 1:hi + 1]:
+            alphabet = (CYRILLIC_LETTERS if tok in CYRILLIC_LETTERS
+                        else LETTERS)
+            if dash and cur_letter and cur_roman is None \
+                    and cur_letter in alphabet and tok in alphabet:
+                lo, hi = sorted((alphabet.index(cur_letter),
+                                 alphabet.index(tok)))
+                for x in alphabet[lo + 1:hi + 1]:
                     paths.append((x, None))
             else:
                 paths.append((tok, None))
@@ -296,9 +451,51 @@ def parse_ref(ref):
         paths = [(None, None)]
     return {
         'year': int(d['year']), 'level': d['level'].lower(),
-        'paper': f"Paper {d['paper']}" if d['paper'] else None,
-        'section': d['section'], 'q': q, 'paths': paths,
+        'paper': (f"Paper {d['paper']}" if d['paper']
+                  else d['field'] or None),
+        'section': d['section'] or (re.sub(r'\s+', ' ', d['topic']).strip()
+                                    if d.get('topic') else None),
+        'q': q, 'paths': paths,
     }
+
+
+CHOICE_REF = re.compile(r'Q\d+\s*\(([a-l])\)\s*(?:part\s+)?([AB])(?![A-Za-z])(.*)$')
+
+
+def chemistry_choice(refstr, ref):
+    """Chemistry cites an alternative part as "Q11(d)A(i)", "Q4(l) A" or
+    "Q11(d) part B(i)-(iii)"; the census keys it under the letter plus the
+    alternative, (11, 'dA', 'i'). The general grammar stops at the bare A, so
+    the citation read as the whole of Q11(d) -- both alternatives. Re-read
+    the paths after the letter with the alternative attached."""
+    if not ref:
+        return ref
+    m = CHOICE_REF.search(re.split(r'\s+[\u2014\u2013-]\s+(?!\()', refstr)[0].strip())
+    if not m:
+        return ref
+    letter = m.group(1) + m.group(2)
+    paths, roman, dash, pos, rest = [], None, False, 0, m.group(3)
+    while pos < len(rest):
+        t = PART_TOKEN.match(rest, pos)
+        if not t:
+            break
+        pos = t.end()
+        tok, is_dash, is_sep = t.group(1), t.group(2), t.group(3)
+        if is_dash:
+            dash = True
+            continue
+        if is_sep or not tok:
+            continue
+        tok = tok.lower()
+        if tok not in ROMANS:
+            break
+        if dash and roman in ROMANS:
+            lo, hi = sorted((ROMANS.index(roman), ROMANS.index(tok)))
+            paths += [(letter, x) for x in ROMANS[lo + 1:hi + 1]]
+        else:
+            paths.append((letter, tok))
+        roman, dash = tok, False
+    return dict(ref, paths=paths or [(letter, None)])
 
 
 def leaf_index(census):
@@ -354,7 +551,11 @@ def match_leaves(ref, leaves, sections_mode):
                     covered.append(k)
                 elif letter is None and roman is None:
                     covered.append(k)                   # whole-question card
-                elif letter is not None and kl == letter:
+                elif letter is not None and (kl == letter or (
+                        # A citation of the whole letter -- "Q11(d)" -- holds
+                        # both of Chemistry's alternatives, (d)A and (d)B.
+                        roman is None and isinstance(kl, str) and len(kl) == 2
+                        and kl[0] == letter and kl[1] in 'AB')):
                     if roman is None or kr == roman or kr is None:
                         covered.append(k)
                 elif letter is None and roman is not None:
@@ -386,14 +587,23 @@ def load_exclusions(subject):
     path = os.path.join(EXCLUSIONS, f'{subject}.json')
     if not os.path.exists(path):
         return []
-    return json.load(open(path, encoding='utf-8'))
+    with open(path, encoding='utf-8') as fh:
+        return json.load(fh)
 
 
 def reconcile_subject(subject, census=None):
     census = census or census_subject(subject)
+    if subject == 'accounting':
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('accounting_coverage', os.path.join(ROOT, 'scripts', 'markbank', 'accounting', 'coverage.py'))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module.reconcile_accounting(census)
+    if subject == 'applied-maths':
+        return reconcile_applied(census)
     if subject == 'geography':
         return reconcile_geography(census)
-    if subject in ('english', 'irish', 'art'):
+    if subject in ('english', 'irish', 'art', 'politics-and-society'):
         return reconcile_manifest(subject, census)
     sections_mode = census['mode'] == 'sections'
     idx = leaf_index(census)
@@ -403,6 +613,8 @@ def reconcile_subject(subject, census=None):
     cards = shipped_cards(subject)
     for cid, refstr in cards:
         ref = parse_ref(refstr)
+        if subject == 'chemistry':
+            ref = chemistry_choice(refstr, ref)
         if not ref:
             unparsed.append({'id': cid, 'ref': refstr})
             continue
@@ -417,7 +629,7 @@ def reconcile_subject(subject, census=None):
                 hit = True
         if not hit:
             orphans.append({'id': cid, 'ref': refstr,
-                            'why': 'no paper on disk for that year/level'
+                            'why': 'no readable paper census for that year/level'
                             if not candidates else
                             'cites a part the paper does not print'})
 
@@ -425,6 +637,8 @@ def reconcile_subject(subject, census=None):
     stale = []
     for entry in load_exclusions(subject):
         ref = parse_ref(entry.get('ref', ''))
+        if subject == 'chemistry':
+            ref = chemistry_choice(entry.get('ref', ''), ref)
         landed = False
         if ref:
             for pk in idx:
@@ -462,14 +676,19 @@ def reconcile_subject(subject, census=None):
         'orphans': orphans, 'unparsed': unparsed, 'staleExclusions': stale,
         'papers': papers,
         'censusFlags': sum(len(p.get('flags', [])) for p in census['papers']),
+        'unreadPapers': [p for p in census['papers'] if p.get('error')],
     }
 
 
 def report(r, show_open=False):
+    unread = r.get('unreadPapers', [])
+    incomplete = f' | INCOMPLETE CENSUS: {len(unread)} unread paper(s)' if unread else ''
     print(f"{r['subject']}: {r['covered']}/{r['leaves']} paper asks covered "
           f"({r['coveragePct']}%), {r['excluded']} excluded, {r['open']} OPEN "
           f"| {r['cards']} cards, {len(r['orphans'])} orphan(s), "
-          f"{len(r['unparsed'])} unparsed, {r['censusFlags']} census flag(s)")
+          f"{len(r['unparsed'])} unparsed, {r['censusFlags']} census flag(s){incomplete}")
+    for paper in unread[:3]:
+        print(f"    UNREAD {paper['year']} {paper['level']}: {paper['error']}")
     for o in r['orphans'][:8]:
         print(f"    ORPHAN {o['id']}: \"{o['ref']}\" — {o['why']}")
     for u in r['unparsed'][:4]:
@@ -532,19 +751,46 @@ def content_hash(subject):
     exactly that edit passing every mechanism."""
     import hashlib
     h = hashlib.sha256()
-    for level in ('higher', 'ordinary'):
+    for level in ('higher', 'ordinary', 'common'):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if os.path.exists(path):
             h.update(open(path, 'rb').read())
-    if subject in ('english', 'irish', 'art', 'geography'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'accounting'):
         # These corpora are data-driven, so the manifest and factory can
         # materially change a runtime card even when the tiny exports do not.
-        names = ('factory.ts', 'authored.json')
+        names = ['factory.ts', 'authored.json']
+        if subject == 'english':
+            names += ['published-higher.json', 'published-ordinary.json']
+        if subject == 'geography':
+            # The claimable rows a student sees are cut from the lines at load.
+            names += ['allocation.ts']
+        if subject in ('art', 'politics-and-society'):
+            # The rows and parts a student places marks on are cut from the printed table at load.
+            names += ['answers.ts']
+        if subject == 'politics-and-society':
+            # Scheme lines the lifted block lost are restored from the PDF at load.
+            names += ['corrections.ts', 'corrections.json']
         if subject == 'irish':
             # Every manifest factory.ts imports, so a card gutted inside a
-            # reviewed component file trips the pin too.
-            names = ('factory.ts', *irish_manifest_files())
+            # reviewed component file trips the pin too; listening/reading
+            # answers and literature tariffs are cut into rows at load.
+            names += [*irish_manifest_files()[1:], 'answers.ts', 'tariffs.ts']
+        if subject == 'accounting':
+            # The priced lines a student claims are lifted from the scheme PDF (acc_rows.py).
+            names += ['rows.json']
         for name in names:
+            h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+    if subject in ('physical-education', 'applied-maths'):
+        # PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
+        for name in (('factory.ts', 'reviewed.json', 'answers.ts') if subject == 'physical-education' else ('reviewed.ts', 'reviewed.json')):
+            h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+    if subject == 'business':
+        # Reviewed rubric cards and printed routes are data, not literal cards.
+        for name in ('rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts'):
+            h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+    if subject == 'french':
+        # answers.ts cuts the lifted answer lines into rows at load.
+        for name in ('writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json', 'answers.ts'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     return h.hexdigest()[:16]
 
@@ -554,7 +800,21 @@ def papers_inventory(subject):
     only (gitignored), so a deleted or swapped paper would silently shrink
     the census — this pins their names and sizes."""
     import hashlib
-    root = os.path.join(ROOT, 'examiner-reports', subject, 'papers')
+    if subject == 'accounting':
+        folder = os.path.join(ROOT, 'scripts', 'markbank', 'accounting')
+        rows = []
+        for kind in ('reviewed', 'correspondence'):
+            for name in sorted(os.listdir(os.path.join(folder, kind))):
+                if name.endswith('.json'):
+                    r = json.load(open(os.path.join(folder, kind, name), encoding='utf-8'))
+                    rows.append(f"{r['year']}:{r['fileid']}:{r['paperSha256']}:{r['schemeSha256']}")
+        return {'count': len(rows), 'hash': hashlib.sha256('\n'.join(sorted(rows)).encode()).hexdigest()[:16]}
+    if subject == 'applied-maths':
+        from applied_census import census_applied_maths
+        editions = census_applied_maths()['sourceEditions']
+        rows = sorted(f"{p['year']}:{p['level']}:{p['lang']}:{p['paperSha256']}:{p['schemeSha256']}" for p in editions)
+        return {'count': len(rows), 'hash': hashlib.sha256('\n'.join(rows).encode()).hexdigest()[:16]}
+    root = os.path.join(ROOT, 'examiner-reports', 'politics-society' if subject == 'politics-and-society' else subject, 'papers')
     rows = sorted(f'{f}:{os.path.getsize(os.path.join(root, f))}'
                   for f in os.listdir(root) if f.endswith('.pdf'))
     return {'count': len(rows),
@@ -572,7 +832,7 @@ def refs_hash(subject):
     cards = shipped_cards(subject)
     # Data-driven language decks may order their runtime cards independently
     # from the manifest. Coverage identity is the stable id/ref pair.
-    if subject in ('english', 'irish', 'art', 'geography'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting', 'business'):
         cards = sorted(cards)
     text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]
@@ -592,8 +852,16 @@ def baseline_write(results):
             'contentHash': content_hash(r['subject']),
             'excluded': r['excluded'], 'papers': papers_inventory(r['subject']),
         }
+        if r['subject'] == 'applied-maths':
+            data[r['subject']].update({k: r[k] for k in ('sourceEditions', 'sourceTaskLinks', 'nativeSchemes')})
     with open(BASELINE, 'w', encoding='utf-8') as fh:
-        json.dump(data, fh, indent=1, sort_keys=True)
+        # Two spaces, which is how the committed baseline is formatted. At
+        # indent=1 a one-subject re-measure rewrote all 272 lines of the
+        # file and buried the entry that actually moved.
+        # Two spaces, which is how the committed file is written: writing one
+        # reformatted all 270 lines of it and buried the subject that had
+        # actually been re-measured in a whole-file diff.
+        json.dump(data, fh, indent=2, sort_keys=True)
         fh.write('\n')
     print(f'baseline written: {BASELINE}')
 
@@ -627,6 +895,9 @@ def main():
                       ensure_ascii=False, indent=1)
         print(f'wrote {args.json}')
     if args.baseline == 'write':
+        if any(r['subject'] == 'applied-maths' for r in results) and any(
+                r['subject'] == 'applied-maths' and (r['open'] or r['orphans'] or r['staleExclusions']) for r in results):
+            raise SystemExit('REFUSED: Applied Mathematics baseline requires zero open tasks, orphans and exclusions')
         # Writing is not a bypass: a write that would record a regression
         # against the PREVIOUS baseline refuses, so the ratchet cannot be
         # reset by the same command that maintains it.

@@ -1,0 +1,93 @@
+{
+  "method": "OpenAI built-in image generation",
+  "commonPrompt": "Use case: precise-object-edit / stylized-concept.\nAsset: revised Star Crew subject avatar for NextStepUni. Input image 1 is the edit target, except where explicitly described as style reference. Follow the requested change; preserve the approved family style.\nOutput: one square full-resolution PNG on pure white. Black/white/orange #ff771c only. Flat hand-drawn appearance, gently uneven thick black outline. No gradients, shading, texture, shadows, watermark, border or extra decorations. Keep complete silhouette within central 76% of canvas, evenly spaced margins for a circular avatar. Never crop the character, star or props.\nRevision: ",
+  "revisions": [
+    {
+      "id": "ancient-greek",
+      "file": "ancient-greek-v2.png",
+      "reference": "ancient-greek.png",
+      "character": "The Philosopher",
+      "detail": "Change ONLY the three letters on the held tablet. Replace the existing uppercase ΑΒΓ with the exact LOWERCASE Greek sequence 'α β γ' (alpha, beta, gamma), large, clearly separated, bold black, with all three fully visible and no hand covering any letter. Alpha must be the recognisable looped Greek α, beta the lowercase β with its descender, gamma the lowercase γ with its descender. Preserve the character, thoughtful pose, proportions, white body, blank head, star, tablet, composition and black ink stroke exactly. No Latin a, B, Y and no extra text."
+    },
+    {
+      "id": "design-and-communication-graphics",
+      "file": "design-and-communication-graphics-v2.png",
+      "reference": "design-and-communication-graphics.png",
+      "character": "The Sketcher",
+      "detail": "Reimagine this DCG subject character as a lively designer absorbed in drawing. Keep exactly the Star Crew visual language, faceless white head, white rounded body, bold gently uneven black outline and one chunky orange star. Change the stiff presentation pose into a relaxed three-quarter sitting pose on the star, torso leaning forward a little and head tilted down. One large white sheet with softly curled corners rests at an angle across the lap; one hand steadies it and the other draws with a chunky orange pencil. On the sheet is a simple loose hand-sketched isometric cube, a few light black construction strokes and one small orange top face. Lines are confidently hand-drawn with slight natural wobble, NOT perfect rigid CAD geometry. No thick-framed board, no rigid ruler, no floating shapes, no labels or text. Keep the paper and pencil compact so the full figure and star remain prominent. Friendly relaxed flowing pose, readable at small size."
+    },
+    {
+      "id": "irish",
+      "file": "irish-v3.png",
+      "reference": "irish-v2.png",
+      "character": "An Scéalaí",
+      "detail": "Replace ONLY the open book held against the body with a small clearly recognisable traditional Irish harp. The harp has a gracefully curved chunky orange frame, a white interior, and five simple black vertical strings, held under the same left arm in approximately the same space as the former book. Remove every trace of the book. Preserve the blank round head, pose, orange scarf, raised greeting hand, white body, star, black line style, and speech bubble in the same relative arrangement. Preserve exact speech bubble text 'Dia duit' on two lines. The harp must have an open triangular outline with a curved upper neck, not a guitar, book or lyre. No new props."
+    },
+    {
+      "id": "music",
+      "file": "music-v2.png",
+      "reference": "music.png",
+      "character": "The Performer",
+      "detail": "Create a distinctly new Music SUBJECT avatar, using this image ONLY as the Star Crew style reference. The character now sits sideways on the single orange star and plays a small acoustic guitar with a rounded orange body, black round sound hole, white neck and a few simple black strings. One mitten supports the neck, the other strums at the sound hole. Relaxed bent knees, one foot tapping forward, head tilted toward the instrument to suggest singing and playing while the face stays completely blank. No raised waving arm and no headphones, so this is unmistakably a different character from the profile selection. Preserve the same white faceless person, rounded anatomy, thick black hand-drawn ink outlines, black/white/orange palette and friendly editorial style. Guitar neck stays inside the compact silhouette. No microphone, note symbols, text, stage, extra star or background scenery."
+    },
+    {
+      "id": "religious-education",
+      "file": "religious-education-v2.png",
+      "reference": "religious-education.png",
+      "character": "The Seeker",
+      "detail": "Redesign this as a recognisable Religious Education / study-of-world-religions character. Keep the same faceless rounded white person, chunky orange five-point star, bold black ink and simple editorial style. The character is seated upright on the star thoughtfully studying a large OPEN white book with orange covers. The outward-facing pages show THREE large clean black symbols arranged clearly across the spread: a simple upright Latin cross, a crescent moon, and a six-point Star of David formed from TWO overlapping triangles. Each symbol must be complete, distinct, correct and unobstructed; use one cross on the left page and the crescent plus six-point star separated on the right page. No question mark and no written text. One mitten supports the lower edge of the book, the other points gently toward a page. The blank head tilts down toward the faith symbols. Give the book enough prominence to read as a world-religions study book, while keeping the star and both rounded feet visible. No costume, halo, lectern, floating symbols, scenery or extra props."
+    }
+  ],
+  "generatedSources": [
+    {
+      "id": "design-and-communication-graphics",
+      "file": "design-and-communication-graphics-v2.png",
+      "reference": "design-and-communication-graphics.png",
+      "character": "The Sketcher",
+      "detail": "Reimagine this DCG subject character as a lively designer absorbed in drawing. Keep exactly the Star Crew visual language, faceless white head, white rounded body, bold gently uneven black outline and one chunky orange star. Change the stiff presentation pose into a relaxed three-quarter sitting pose on the star, torso leaning forward a little and head tilted down. One large white sheet with softly curled corners rests at an angle across the lap; one hand steadies it and the other draws with a chunky orange pencil. On the sheet is a simple loose hand-sketched isometric cube, a few light black construction strokes and one small orange top face. Lines are confidently hand-drawn with slight natural wobble, NOT perfect rigid CAD geometry. No thick-framed board, no rigid ruler, no floating shapes, no labels or text. Keep the paper and pencil compact so the full figure and star remain prominent. Friendly relaxed flowing pose, readable at small size.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-eeabe9d9-ada8-4dbf-8a82-78e8a59fc74f.png",
+      "ok": true
+    },
+    {
+      "id": "ancient-greek",
+      "file": "ancient-greek-v2.png",
+      "reference": "ancient-greek.png",
+      "character": "The Philosopher",
+      "detail": "Change ONLY the three letters on the held tablet. Replace the existing uppercase ΑΒΓ with the exact LOWERCASE Greek sequence 'α β γ' (alpha, beta, gamma), large, clearly separated, bold black, with all three fully visible and no hand covering any letter. Alpha must be the recognisable looped Greek α, beta the lowercase β with its descender, gamma the lowercase γ with its descender. Preserve the character, thoughtful pose, proportions, white body, blank head, star, tablet, composition and black ink stroke exactly. No Latin a, B, Y and no extra text.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-5412e60b-2058-464f-a394-caf702e2490f.png",
+      "ok": true
+    },
+    {
+      "id": "irish",
+      "file": "irish-v3.png",
+      "reference": "irish-v2.png",
+      "character": "An Scéalaí",
+      "detail": "Replace ONLY the open book held against the body with a small clearly recognisable traditional Irish harp. The harp has a gracefully curved chunky orange frame, a white interior, and five simple black vertical strings, held under the same left arm in approximately the same space as the former book. Remove every trace of the book. Preserve the blank round head, pose, orange scarf, raised greeting hand, white body, star, black line style, and speech bubble in the same relative arrangement. Preserve exact speech bubble text 'Dia duit' on two lines. The harp must have an open triangular outline with a curved upper neck, not a guitar, book or lyre. No new props.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-f0bc2b3f-7c25-4312-a456-dc52c498958a.png",
+      "ok": true
+    },
+    {
+      "id": "music",
+      "file": "music-v2.png",
+      "reference": "music.png",
+      "character": "The Performer",
+      "detail": "Create a distinctly new Music SUBJECT avatar, using this image ONLY as the Star Crew style reference. The character now sits sideways on the single orange star and plays a small acoustic guitar with a rounded orange body, black round sound hole, white neck and a few simple black strings. One mitten supports the neck, the other strums at the sound hole. Relaxed bent knees, one foot tapping forward, head tilted toward the instrument to suggest singing and playing while the face stays completely blank. No raised waving arm and no headphones, so this is unmistakably a different character from the profile selection. Preserve the same white faceless person, rounded anatomy, thick black hand-drawn ink outlines, black/white/orange palette and friendly editorial style. Guitar neck stays inside the compact silhouette. No microphone, note symbols, text, stage, extra star or background scenery.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-8c832562-1f4b-40b4-ac81-5ed9a529f7dc.png",
+      "ok": true
+    },
+    {
+      "id": "religious-education",
+      "file": "religious-education-v2.png",
+      "reference": "religious-education.png",
+      "character": "The Seeker",
+      "detail": "Redesign this as a recognisable Religious Education / study-of-world-religions character. Keep the same faceless rounded white person, chunky orange five-point star, bold black ink and simple editorial style. The character is seated upright on the star thoughtfully studying a large OPEN white book with orange covers. The outward-facing pages show THREE large clean black symbols arranged clearly across the spread: a simple upright Latin cross, a crescent moon, and a six-point Star of David formed from TWO overlapping triangles. Each symbol must be complete, distinct, correct and unobstructed; use one cross on the left page and the crescent plus six-point star separated on the right page. No question mark and no written text. One mitten supports the lower edge of the book, the other points gently toward a page. The blank head tilts down toward the faith symbols. Give the book enough prominence to read as a world-religions study book, while keeping the star and both rounded feet visible. No costume, halo, lectern, floating symbols, scenery or extra props.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-4d9da02b-4a7f-4d01-9b20-941694fa32cf.png",
+      "ok": true
+    }
+  ],
+  "greekSpacingRefinement": {
+    "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-cf04a460-9f51-462f-a7e9-badb50db0fd3.png",
+    "file": "ancient-greek-v3.png",
+    "prompt": "Edit this Star Crew avatar precisely. Keep the entire illustration exactly the same apart from lettering placement and the tablet-holding hand. The tablet must clearly display exactly the three LOWERCASE GREEK letters 'α β γ'. Currently the hand obscures the bottom of gamma. Make the lettering slightly smaller and move it toward the left/upper part of the tablet, leaving generous blank space on the right. Render the complete lowercase gamma γ with its distinctive descending stem fully visible BELOW the baseline: it must not look like Latin v or Greek nu ν. Move the hand that holds the tablet down to its bottom-right corner so it touches no letter. All three whole glyphs must be plainly visible and separated. Keep the blank face, pose, star, image composition, black/white/orange palette, smooth bold hand-drawn outlines, white background and no other text unchanged. Output one square PNG."
+  }
+}

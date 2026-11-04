@@ -38,10 +38,15 @@ const MANIFEST = resolve(ROOT, 'components/MarkBank/figures.json');
 
 const SUBJECT_TITLE = {
   maths: 'Mathematics',
+  // The title the SEC prints on the booklet itself, which is what the
+  // attribution line quotes: "Applied Mathematics - Higher Level".
+  'applied-maths': 'Applied Mathematics',
   biology: 'Biology', chemistry: 'Chemistry', physics: 'Physics',
   'agricultural-science': 'Agricultural Science', business: 'Business',
   'home-economics': 'Home Economics', economics: 'Economics',
   'construction-studies': 'Construction Studies',
+  technology: 'Technology',
+  engineering: 'Engineering',
 };
 
 const argv = process.argv.slice(2);
@@ -52,8 +57,18 @@ const catalogue = JSON.parse(readFileSync(cataloguePath ?? '', 'utf8'));
 const manifest = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : {};
 const skipped = [];
 // Seeded from what is already published, so a crop cannot be republished under a
-// second name by a later subject's run.
-const seenHash = new Map(Object.entries(manifest).map(([id, m]) => [m.md5, id]));
+// second name by a later subject's run. During an explicit replacement, remove
+// every name in THIS catalogue from the seed first: regenerated page-indexed
+// crops can legitimately swap bytes between i0 and i1 after a parser repairs
+// their source order. Seeding those stale entries made each half of the swap
+// look like a duplicate of the other and left both old, wrongly labelled images
+// in place even with --replace.
+const replacingNames = new Set(replace
+  ? catalogue.map((f) => String(f.file ?? '').replace(/\.png$/, ''))
+  : []);
+const seenHash = new Map(Object.entries(manifest)
+  .filter(([id]) => !replacingNames.has(id))
+  .map(([id, m]) => [m.md5, id]));
 
 for (const f of catalogue) {
   const reason =
@@ -117,7 +132,11 @@ for (const f of catalogue) {
 
 writeFileSync(MANIFEST, JSON.stringify(manifest, null, 1));
 
-const lettered = Object.values(manifest).filter(m => m.lettersVisible.length && m.labelMeanings.length);
+// Null-safe: 116 entries published before these fields existed (Computer
+// Science's code listings among them) carry neither, and the summary line
+// threw on the first of them -- after the manifest had already been
+// written, so the run looked like a failure and was not one.
+const lettered = Object.values(manifest).filter(m => m.lettersVisible?.length && m.labelMeanings?.length);
 process.stdout.write(`manifest holds ${Object.keys(manifest).length} figures (${lettered.length} lettered with scheme-stated meanings)\n`);
 process.stdout.write(`skipped ${skipped.length} from this catalogue\n`);
 const why = {};

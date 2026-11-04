@@ -5,6 +5,7 @@ const aliases: Record<string, string> = {
   'mark-bank': 'exam practice questions flashcards spaced repetition',
   planner: 'weekly study plan schedule calendar timetable',
   comeback: 'fallen behind restart catch up',
+  'coursework-companion': 'coursework projects portfolio evidence research sources feedback teacher brief investigation',
   'college-compass': 'college applications CAO deadlines',
 };
 export function matchesToolSearch(tool: { id: string; title: string; description: string; tag: string }, query: string): boolean {

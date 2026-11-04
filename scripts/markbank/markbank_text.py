@@ -15,6 +15,15 @@ LIGATURES = {
     "Ɵ": "ti",   # Ɵ  LATIN CAPITAL LETTER O WITH MIDDLE TILDE
     "Ŧ": "ti",   # Ŧ
     "Ʃ": "tt",   # Ʃ  LATIN CAPITAL LETTER ESH — "leƩers", "ploƩed", "BeƩer"
+    # Three more, derived the same way — read off the words they appear inside
+    # across the whole corpus, then confirmed by cropping the glyph and looking
+    # (2023 Ordinary Latin scheme, page 4: the text layer says "emiƫt" and the
+    # page draws "emittit"). Latin found all three; every other subject that
+    # prints them prints them for the same characters.
+    "ƫ": "tti",  # ƫ  "cuƫng", "seƫmana", "aƫtudes", "emiƫt"
+    "Ō": "ft",   # Ō  "aŌer", "theŌ", "leŌ", "shaŌ", "DraŌ"
+    "ϐ": "f",    # ϐ  "Certiϐicate" — a plain f whose ToUnicode lands in Greek,
+                 # which derive_glyphs will never map (GREEK_IS_GREEK)
     "ﬀ": "ff",
     "ﬁ": "fi",
     "ﬂ": "fl",

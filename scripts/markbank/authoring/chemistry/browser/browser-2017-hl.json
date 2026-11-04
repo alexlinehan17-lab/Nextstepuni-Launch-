@@ -1,0 +1,21 @@
+[
+ {"id": "chem-2017-hl-q1-a-i", "ask": "", "answer": "solution of known concentration (molarity)", "figure": true},
+ {"id": "chem-2017-hl-q1-c", "ask": "Describe fully the procedure used during the titrations", "answer": "read top of meniscus"},
+ {"id": "chem-2017-hl-q1-d-i", "ask": "the number of moles of Fe²⁺ ion in a 25.0 cm³ portion", "answer": "0.00225 (2.25 × 10⁻³) moles", "solution": true},
+ {"id": "chem-2017-hl-q2-b-ii", "ask": "State and explain two safety precautions", "answer": "avoid burns (cuts from flying glass, contact with chemicals)", "solution": true},
+ {"id": "chem-2017-hl-q2-e", "ask": "Calculate the maximum theoretical number of ethyne molecules", "answer": "3.2 ÷ 64∗ = 0.05 moles calcium carbide", "figure": true},
+ {"id": "chem-2017-hl-q3-b", "ask": "Describe a method you could use to determine when the same mass of sulfur", "answer": "light meter reading", "figure": true},
+ {"id": "chem-2017-hl-q3-d-ii", "ask": "", "answer": "five points plotted correctly", "figure": true, "solution": true},
+ {"id": "chem-2017-hl-q4-h-i-ii", "ask": "Write the molecular formula of eugenol.", "answer": "C₁₀H₁₂O₂", "figure": true},
+ {"id": "chem-2017-hl-q4-k-a", "ask": "Explain using balanced equations how sulfuric acid in rainwater is formed", "answer": "SO₂ + ½ O₂ + H₂O → H₂SO₄"},
+ {"id": "chem-2017-hl-q6-d-i", "ask": "Draw a structural formula for each named product.", "answer": "Its structural formula, drawn", "solution": true},
+ {"id": "chem-2017-hl-q7-b", "ask": "", "answer": "Do not accept inverted expression", "figure": true, "solution": true},
+ {"id": "chem-2017-hl-q8-a-i", "ask": "", "answer": "a drawing or notation its text cannot carry", "figure": true, "solution": true},
+ {"id": "chem-2017-hl-q9-b-i-ii", "ask": "of 0.10 M hydrochloric acid and 0.10 M sulfuric acid", "answer": "HCOOH weaker than HCl", "solution": true},
+ {"id": "chem-2017-hl-q10-a", "ask": "Draw a large, clearly-labelled diagram of an apparatus", "answer": "vapour in gas syringe", "solution": true},
+ {"id": "chem-2017-hl-q10-a-i", "ask": "Calculate the number of moles of vapour present.", "answer": "an equation font its text cannot carry", "solution": true},
+ {"id": "chem-2017-hl-q10-c-i", "ask": "Name and describe the mechanism for this reaction.", "answer": "addition of Cl⁻ to carbonium ion", "solution": true},
+ {"id": "chem-2017-hl-q11-a-i", "ask": "", "answer": "3.81 ÷ 63.5 = 0.06 moles Cu", "figure": true, "solution": true},
+ {"id": "chem-2017-hl-q11-b-after-iii", "ask": "Use electron pair repulsion theory to predict the shape", "answer": "trigonal (triangular) planar"},
+ {"id": "chem-2017-hl-q11-c-a-iii", "ask": "Explain how the air intake is liquefied", "answer": "and allowed to expand", "figure": true}
+]

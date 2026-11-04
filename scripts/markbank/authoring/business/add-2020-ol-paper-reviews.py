@@ -1,0 +1,14 @@
+from paper_review_lib import record
+record(2020, 'ordinary', {
+  'LC033GLP032EV.pdf': dict(scheme=[4] + list(range(8, 13)), notes=[
+    'Visually reviewed all 36 pages of the 2020 Ordinary Section 1 and Answerbook booklet (answer ten of fifteen at 10 marks): cover, instructions, the fifteen short questions on pages 3-8 (including the three product photographs, the EU institution table, the research-type images, the pricing tick grid, the team-formation chart, the Paul Costigan payslip, the state-agency table and the seven-stage product table), the Section 2 answerbook instructions, graph-paper and ruled answer pages and the back cover.',
+    'Each short question was checked against the allocation table on scheme page 4 and the expected responses on pages 8-12 (ticks and circles read from the rendered pages). No 2020 Ordinary card existed, so all fifteen are new. Row exercises keep the published sequences (4/3/3, 3/3/2/2, 2 x 5, 5 + 5); Q1 keeps 4 (1 + 1 + 1 + 1) for SWOT and 3 (1 + 1 + 1) for CEO and PLC; Q3 and Q9 keep 5 (3 + 2) per named term; Q11 keeps boxes A and B at 3 and C and D at 2.',
+    'All fifteen raw selection matches in this booklet are classified. Topic Atlas uses the booklet-specific p1 identity for the short questions.',
+    'This source-pinned record covers the English Ordinary booklet only. Source hashes and exact ID sets detect stale evidence; parser counts do not independently prove completeness.']),
+  'LC033GLP033EV.pdf': dict(scheme=[5, 6, 7] + list(range(13, 29)), choices=['bus-2020-ol-s2-q5aii'], notes=[
+    'Visually reviewed all twelve pages of the 2020 Ordinary Section 2 booklet (answer four of eight at 75 marks): every extract, photograph and logo, the Super Sofas advertisement, the unfair-dismissal panel, the Repak headline, the trade-in-goods table, The Wardrobe job advertisement, the blank pages 10 and 11 and the back cover. Each part was checked against allocation pages 5-7 and expected responses on pages 13-28; scheme pages 29-32 are blank.',
+    'All 52 cards are new. Sub-parts with their own published marks are separate cards. The 8/7 and 7/7/6 sequences stay unattached to open points; required named items carry their own marks (reason 8 and link to the text 7, the four factors at 2 + 2 + 1, salary and wage 3 + 2 each, Benefit-in-Kind explanation 6 and examples 2 + 2). Q3(B) keeps 1 + 1 + 1 + 2 per total and Q3(C)(i) formula 3, totals 2 + 2 and balance 3.',
+    'Choose-one choice marked alike under one topic: Q5(A)(ii) explain one of the two named insurance principles is ONE card, printing both, with the scheme’s wording for each.',
+    'All nine raw selection matches in this booklet are classified. Topic Atlas uses the booklet-specific p2 identity for Section 2.',
+    'This source-pinned record covers the English Ordinary booklet only. Source hashes and exact ID sets detect stale evidence; parser counts do not independently prove completeness.']),
+})

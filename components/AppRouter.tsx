@@ -1,20 +1,25 @@
+import { queueTopicStudy, queueTopicPractice } from '../utils/topicLaunch';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { Suspense, lazy, useEffect, useRef, useState } from 'react';
+import React, { Suspense, lazy, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import BackButton from './ui/BackButton';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Eye, EyeOff, Check } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
 import { type SessionUser, isLcaYear, isSchoolStaff } from '../utils/authUtils';
 import {
+  getRegistrationLoadingAvatar,
   isRegistrationProvisioning,
   registrationHoldRemainingMs,
   subscribeToRegistrationProvisioning,
 } from '../utils/registrationProvisioning';
 import { LoadingSpinner } from './LoadingSpinner';
+import { LoadingCrewProvider } from '../contexts/LoadingCrewContext';
+import { getToolLoadingLabel } from '../utils/loadingLabels';
 import { KnowledgeTree, type CategoryType } from './KnowledgeTree';
 import { Library } from './Library';
 
@@ -24,20 +29,23 @@ import { Library } from './Library';
 // is already lazy (moduleRegistry.ts).
 const ModuleShowcase = lazy(() => import('./ModuleShowcase'));
 import AppLaunch from './AppLaunch';
+import { LegalAgreementGate } from './legal/LegalAgreementGate';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import { toDateKey } from './subjectData';
 const LoginPage = lazy(() => import('./LoginPage'));
-const ResetPasswordPage = lazy(() => import('./ResetPasswordPage'));
+const AuthActionPage = lazy(() => import('./AuthActionPage'));
 const AdminDashboard = lazy(() => import('./AdminDashboard').then(m => ({ default: m.AdminDashboard })));
 const GCDashboard = lazy(() => import('./GCDashboard').then(m => ({ default: m.GCDashboard })));
 const DashboardView = lazy(() => import('./DashboardView'));
 const LearningPathsView = lazy(() => import('./LearningPathsView'));
 const YearPlansView = lazy(() => import('./YearPlansView'));
+const YourSetupView = lazy(() => import('./setup/YourSetupView'));
 const WipTools = lazy(() => import('./WipTools'));
 const ModulesView = lazy(() => import('./ModulesView').then(m => ({ default: m.ModulesView })));
 import { moduleComponents, InnovationZone } from '../moduleRegistry';
 import { ALL_COURSES, categoryTitles } from '../courseData';
 import { ModulePositionProvider, resolveModulePosition } from '../contexts/ModulePositionContext';
+import { moduleAvailability } from '../utils/courseVisibility';
 import { type ModuleProgress, type UserProgress, type UserSettings, type NorthStar, type StudyReflection, type TopicMasteryV2, type UnifiedMockResult } from '../types';
 import { type StreakData } from '../hooks/useStreak';
 import { type FocusRecommendation } from '../hooks/useTodaysFocus';
@@ -55,9 +63,23 @@ import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
 import { useProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
+import { isAuthActionRequest } from '../utils/authActionLink';
 import { isProgressReadyForUser } from '../utils/progressHydration';
+import {
+  GUEST_USER_ID,
+  GUEST_USER_NAME,
+  LANDING_PAGE_URL,
+  type GuestPhase,
+  endGuestSetup,
+  isGuestSetupRequested,
+  readGuestPhase,
+  restoreGuestSetupState,
+  saveGuestSetupResult,
+  setGuestPhase,
+} from './onboarding/guest';
 
 const Onboarding = lazy(() => import('./Onboarding'));
+const DiveIn = lazy(() => import('./DiveIn'));
 const JCComingSoon = lazy(() => import('./JCComingSoon'));
 const JourneyView = lazy(() => import('./journey/JourneyView'));
 const MyDirection = lazy(() => import('./MyDirection'));
@@ -70,7 +92,7 @@ const AccreditationPage = lazy(() => import('./AccreditationPage'));
 // and the lazy onboarding handoff. Stable copy and full-screen treatment stop
 // a one-second "Loading your workspace" interstitial appearing between them.
 const ACCOUNT_SETUP_LOADING = (
-  <LoadingSpinner overlay kicker="One moment" label="Setting up your account" />
+  <LoadingSpinner overlay label="Setting up your account" />
 );
 
 /* ── Module Error Boundary ── */
@@ -208,6 +230,7 @@ export interface AppRouterProps {
   setPassportOpen: (open: boolean) => void;
   setChangeSubjectsOpen: (open: boolean) => void;
   setNorthStarEditOpen: (open: boolean) => void;
+  handleExamDateSave: (examStartDate: string) => void;
 
   // Cosmetic unlocks (only setters needed at this layer; values flow through SettingsContext)
   setUnlockedAvatarSeeds: (seeds: string[]) => void;
@@ -248,13 +271,33 @@ function useRegistrationHold(): boolean {
   return held;
 }
 
+
 const AppRouter: React.FC<AppRouterProps> = (props) => {
+  const { user, userResolved, handleLogout } = useAuth();
+  const { state } = useNavigation();
+  const registrationHeld = useRegistrationHold();
+  const avatar = registrationHeld ? getRegistrationLoadingAvatar() : undefined;
+  const transitionKey = [user?.uid ?? 'guest', state.viewState, state.currentCategory, state.currentModuleId, state.activeTool].join(':');
+  return <LoadingCrewProvider avatar={avatar ?? (userResolved && user ? props.settings.avatar || user.avatar : undefined)} transitionKey={transitionKey}>
+    <LegalAgreementGate user={user} ready={userResolved && !registrationHeld && !isAuthActionRequest()} onLogout={handleLogout}>
+      <AppRouterContent {...props} />
+    </LegalAgreementGate>
+  </LoadingCrewProvider>;
+};
+
+const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   const mobileAppDesign = useMobileAppDesign();
   const nav = useNavigation();
   const registrationHeld = useRegistrationHold();
   const { updateDemoProgress, setTimetableCompletions, progressLoaded, progressDataUid } = useProgress();
   const { viewState, dashboardSection, currentCategory, currentModuleId, cameFromJourney } = nav.state;
   const { user, userResolved, needsOnboarding, handleLoginSuccess, handleLogout } = useAuth();
+
+  // Guest setup keeps its draft in sessionStorage, which the unauthenticated
+  // boot clears (AuthContext → clearLocalSessionData) before userResolved is
+  // published. Put it back once that clear has certainly run. No-op for
+  // everyone who is not mid-guest-setup.
+  useEffect(() => { if (userResolved) restoreGuestSetupState(); }, [userResolved]);
 
   const {
     studentProfile, userProgress, northStar, timetableCompletions,
@@ -269,6 +312,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     transitionToSeniorMode, transitionTargetYear,
     handleProgressUpdate,
     setSettingsOpen, setPassportOpen, setChangeSubjectsOpen, setNorthStarEditOpen,
+    handleExamDateSave,
     setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
     setUnlockedCardStyles,
@@ -281,11 +325,18 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   };
 
   const handleSelectModule = (moduleId: string) => {
+    const availability = moduleAvailability(ALL_COURSES.find(course => course.id === moduleId), user?.curriculumLevel, studentProfile);
+    if (availability === 'unavailable') return;
+    if (availability === 'coming-soon') { nav.navigateToJCComingSoon(moduleId); return; }
     nav.navigateToModule(moduleId, viewState, currentCategory);
   };
 
-  const handleBackToTree = () => { nav.goBack(); };
-  const handleBackToCategory = () => { nav.goBack(); };
+  const handleBackToTree = () => { nav.navigateToTree(); };
+  const handleBackToCategory = () => {
+    if (cameFromJourney) nav.navigateToInnovationZone('journey');
+    else if (currentCategory) nav.navigateToCategory(currentCategory);
+    else nav.navigateToModules();
+  };
   const handleGoToModules = () => { nav.navigateToModules(); };
   const handleGoToInnovationZone = () => { nav.navigateToInnovationZone(); };
   const handleGoToDashboard = () => { nav.navigateToDashboard(); };
@@ -302,18 +353,11 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   const handleGoToCutContent = () => { nav.navigateToCutContent(); };
   const handleGoToAccreditation = () => { nav.navigateToAccreditation(); };
 
-  // Firebase password-reset action URL — handled before any auth gating so the
-  // user can land here whether or not they're signed in. Triggered by either
-  // the path /reset-password or the query params mode=resetPassword + oobCode
-  // (the latter is what Firebase appends to the configured Action URL).
-  if (typeof window !== 'undefined') {
-    const params = new URLSearchParams(window.location.search);
-    const path = window.location.pathname;
-    const hasResetParams = params.get('mode') === 'resetPassword' && !!params.get('oobCode');
-    const isResetPath = path === '/reset-password' || path.startsWith('/reset-password/');
-    if (hasResetParams || isResetPath) {
-      return <Suspense fallback={<LoadingSpinner />}><ResetPasswordPage /></Suspense>;
-    }
+  // Firebase email action links (password reset, email confirmation, email
+  // recovery) — handled before any auth gating so the student can land here
+  // whether or not they're signed in. See utils/authActionLink.ts.
+  if (isAuthActionRequest()) {
+    return <Suspense fallback={<LoadingSpinner selection="random" label="Opening your link" />}><AuthActionPage /></Suspense>;
   }
 
   // Auth gate: show branded loading until userResolved, then decide login vs app.
@@ -327,7 +371,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     // signing in. Neutral copy on purpose: at this point we do not yet know
     // whether there is a session, so promising a workspace would be wrong for
     // anyone about to be shown the login form.
-    return mobileAppDesign ? <AppLaunch /> : <LoadingSpinner overlay kicker="NextStepUni" label="Getting things ready" />;
+    return mobileAppDesign ? <AppLaunch /> : <LoadingSpinner overlay selection="random" label="Opening NextStepUni" />;
   }
 
   // Registration is still provisioning: the account exists and the student is
@@ -352,8 +396,17 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     return ACCOUNT_SETUP_LOADING;
   }
 
+  // Guest setup: the landing page's "Set up without an account"
+  // (`?setup=guest`, read at boot) or a guest run already under way in this
+  // tab. Signed-out visitors only — the `user` check above this line is what
+  // keeps a signed-in student on their normal route, so this branch is
+  // unreachable for anyone with an account, whatever the URL says.
+  if (!user && isGuestSetupRequested()) {
+    return <GuestSetupRoute />;
+  }
+
   if (!user) {
-    return <Suspense fallback={<LoadingSpinner />}><LoginPage handleLoginSuccess={handleLoginSuccess} /></Suspense>;
+    return <Suspense fallback={<LoadingSpinner selection="random" label="Opening NextStepUni" />}><LoginPage handleLoginSuccess={handleLoginSuccess} /></Suspense>;
   }
 
   // Auth and progress live in separate providers. A login can publish the user
@@ -365,7 +418,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     // returning-user copy is wrong here — and it is the screen they sit on for
     // the tail of signup, so it is the one they actually read. Match the
     // wording of the registration hold that precedes it.
-    return needsOnboarding ? ACCOUNT_SETUP_LOADING : <LoadingSpinner />;
+    return needsOnboarding ? ACCOUNT_SETUP_LOADING : <LoadingSpinner selection="random" label="Opening your space" />;
   }
 
   // Force password change if flagged by GC reset
@@ -374,13 +427,13 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   }
 
   if (user.isAdmin) {
-    return <Suspense fallback={<LoadingSpinner />}><AdminDashboard allCourses={ALL_COURSES} onLogout={handleLogout} /></Suspense>;
+    return <Suspense fallback={<LoadingSpinner variant="quiet" selection="random" label="Opening your admin dashboard" />}><AdminDashboard allCourses={ALL_COURSES} onLogout={handleLogout} /></Suspense>;
   }
 
   // Guidance counsellors AND teaching staff both get the Staff Dashboard
   // (full parity — owner decision 2026-07-16).
   if (isSchoolStaff(user.role) && user.school) {
-    return <Suspense fallback={<LoadingSpinner />}><GCDashboard school={user.school} onLogout={handleLogout} allCourses={ALL_COURSES} gcName={user.name} gcUid={user.uid} role={user.role} /></Suspense>;
+    return <Suspense fallback={<LoadingSpinner variant="quiet" selection="random" label="Opening your school dashboard" />}><GCDashboard school={user.school} onLogout={handleLogout} allCourses={ALL_COURSES} gcName={user.name} gcUid={user.uid} role={user.role} /></Suspense>;
   }
 
   // Onboarding gate: render Onboarding immediately when the auth+progress
@@ -405,7 +458,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (viewState === 'study-session') {
     return (
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner variant="compact" label="Opening your study space" />}>
         <StudySessionView
           user={user}
           studentProfile={studentProfile}
@@ -418,6 +471,8 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           strategyMastery={strategyMastery.masteryMap}
           onGoToProgress={handleGoToMilestones}
           onSetUpProfile={() => nav.navigateToOnboarding()}
+          onMinimise={handleBackToTree}
+          onGoToIsland={() => nav.navigateToJourney()}
           dismissedGuides={dismissedGuides}
           onDismissGuide={handleDismissGuide}
           weeklyChallenge={weeklyChallenge}
@@ -453,12 +508,17 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (viewState === 'insights') {
     return (
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner variant="compact" label="Opening your insights" />}>
         <InsightsView
           uid={user.uid}
           streak={streak}
           strategyMastery={strategyMastery.masteryMap}
           onBack={handleBackToTree}
+        onAction={action => {
+            if (action === 'study') nav.navigateToStudySession();
+            else if (action === 'planner') nav.navigateToInnovationZone('planner');
+            else nav.navigateToDashboard('study');
+          }}
         />
       </Suspense>
     );
@@ -466,8 +526,11 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (viewState === 'dashboard') {
     return (
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner variant="compact" label="Opening your progress" />}>
         <DashboardView
+          uid={user.uid}
+          onStudyTopic={selection => { queueTopicStudy(user.uid, selection); handleGoToStudy(); }}
+          onPracticeTopic={(subjectId, topicId, level) => { queueTopicPractice(user.uid, subjectId, topicId, level); nav.navigateToInnovationZone('topic-atlas'); }}
           userProgress={userProgress}
           allCourses={studentCourses}
           categoryTitles={categoryTitles}
@@ -476,6 +539,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           onSelectModule={handleSelectModule}
           onBack={handleBackToTree}
           pointsEarned={pointsData.totalEarned}
+          pointsAvailable={pointsData.balance}
           studentProfile={studentProfile}
           studySessions={studySessions}
           studyDebriefs={studyDebriefs}
@@ -495,6 +559,8 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           onTabChange={nav.setDashboardSection}
           darkMode={settings.darkMode}
           onToggleTheme={() => updateSetting('darkMode', !settings.darkMode)}
+          onEditGrades={() => setChangeSubjectsOpen(true)}
+          onAddMockResult={() => nav.navigateToInnovationZone('points-passport')}
         />
       </Suspense>
     );
@@ -502,9 +568,10 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (viewState === 'learning-paths') {
     return (
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner variant="compact" calm label="Opening your learning paths" />}>
         <LearningPathsView
           allCourses={studentCourses}
+          curriculumLevel={user?.curriculumLevel}
           userProgress={userProgress}
           onSelectModule={handleSelectModule}
           onBack={handleBackToTree}
@@ -515,7 +582,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (viewState === 'wip-tools') {
     return (
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner variant="compact" label="Opening the Workshop" />}>
         <WipTools onBack={handleBackToTree} onOpenTool={(toolId: string) => nav.navigateToInnovationZone(toolId)} />
       </Suspense>
     );
@@ -523,7 +590,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (viewState === 'year-plans') {
     return (
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner variant="compact" calm label="Opening your year plan" />}>
         <YearPlansView
           allCourses={studentCourses}
           userProgress={userProgress}
@@ -536,9 +603,30 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     );
   }
 
+  if (viewState === 'your-setup') {
+    return (
+      <Suspense fallback={<LoadingSpinner variant="compact" calm label="Opening your setup" />}>
+        <YourSetupView
+          profile={studentProfile}
+          northStar={northStar}
+          yearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
+          darkMode={settings.darkMode}
+          onBack={handleBackToTree}
+          onFinishSetup={() => nav.navigateToOnboarding()}
+          onEditSubjects={() => setChangeSubjectsOpen(true)}
+          onSaveExamDate={handleExamDateSave}
+          onEditNorthStar={() => setNorthStarEditOpen(true)}
+          onOpenSettings={() => setSettingsOpen(true)}
+          onOpenPlanner={() => nav.navigateToInnovationZone('planner')}
+          onSetDarkMode={dark => updateSetting('darkMode', dark)}
+        />
+      </Suspense>
+    );
+  }
+
   if (viewState === 'onboarding') {
     return (
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner label="Opening your setup" />}>
         <Onboarding userId={user.uid} userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} mode={transitionToSeniorMode ? "transition-to-senior" : "fresh"} transitionTargetYear={transitionTargetYear} />
       </Suspense>
     );
@@ -549,10 +637,10 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       ? studentCourses.find(c => c.id === currentModuleId)
       : undefined;
     return (
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner variant="compact" calm label="Opening this section" />}>
         <JCComingSoon
           fromCourseTitle={fromCourse?.title}
-          onBack={handleBackToTree}
+          onBack={handleGoToModules}
         />
       </Suspense>
     );
@@ -560,7 +648,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (viewState === 'cut-content') {
     return (
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner variant="compact" label="Opening the archive" />}>
         <CutContentPage onBack={handleBackToTree} />
       </Suspense>
     );
@@ -568,7 +656,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (viewState === 'accreditation') {
     return (
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner variant="compact" label="Opening accreditation" />}>
         <AccreditationPage onBack={handleBackToTree} onOpenModule={handleSelectModule} />
       </Suspense>
     );
@@ -576,8 +664,10 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (viewState === 'my-journey') {
     return (
-      <Suspense fallback={<LoadingSpinner />}>
-        <JourneyView
+      <Suspense fallback={<LoadingSpinner variant="compact" label="Opening your journey" />}>
+        <JourneyView key={user.uid}
+          hasSeenWelcome={Boolean(dismissedGuides['journey-mode-welcome'])}
+          onDismissWelcome={() => { void handleDismissGuide('journey-mode-welcome'); }}
           onBack={handleBackToTree}
           user={user}
           northStar={northStar}
@@ -587,6 +677,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           userProgress={userProgress}
           allCourses={studentCourses}
           subjects={studentProfile?.subjects?.map((s: any) => s.subjectName) ?? []}
+          onOpenSetup={() => nav.navigateToYourSetup()}
         />
       </Suspense>
     );
@@ -594,7 +685,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (viewState === 'my-direction' && northStar && user) {
     return (
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner variant="compact" label="Opening your direction" />}>
         <MyDirection
           uid={user.uid}
           northStar={northStar}
@@ -618,6 +709,8 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       onGoToYearPlans={handleGoToYearPlans}
       onGoToWipTools={handleGoToWipTools}
       onGoToJourney={handleGoToJourney}
+      onGoToDirection={() => northStar ? nav.navigateToDirection() : setNorthStarEditOpen(true)}
+      studySessions={studySessions}
       onGoToStudy={handleGoToStudy}
       onGoToInsights={handleGoToInsights}
       onGoToCutContent={handleGoToCutContent}
@@ -661,7 +754,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (viewState === 'modules') {
     return (
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={<LoadingSpinner variant="compact" calm label="Opening your modules" />}>
         <ModulesView
           onBack={handleBackToTree}
           onSelectCategory={handleSelectCategory}
@@ -698,16 +791,14 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           className="min-h-screen bg-white dark:bg-zinc-950"
         >
           {/* Header */}
-          <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-white dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: `calc(${mobileAppDesign ? 12 : 16}px + var(--sat, 0px))`, paddingBottom: mobileAppDesign ? '12px' : '24px' }}>
+          <header data-student-page-header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-white dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: `calc(${mobileAppDesign ? 12 : 16}px + var(--sat, 0px))`, paddingBottom: mobileAppDesign ? '12px' : '24px' }}>
             <div className="flex items-center gap-4">
-              <button onClick={handleBackToTree} aria-label="Back to modules" className={`${mobileAppDesign ? 'min-h-11 min-w-11 ' : ''}p-2.5 rounded-xl transition-colors hover:bg-white/60`} style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-              </button>
+              <BackButton label="Back to modules" onClick={handleGoToModules} showLabel={!mobileAppDesign} />
             </div>
           </header>
           {/* Showcase */}
           <div className="pt-28 md:pt-32 pb-24 md:pb-12 flex items-center justify-center" style={{ minHeight: 'calc(100vh - 80px)' }}>
-            <Suspense fallback={<LoadingSpinner />}>
+            <Suspense fallback={<LoadingSpinner variant="compact" calm placement="panel" label={`Opening ${categoryTitles[currentCategory]}`} />}>
               <ModuleShowcase
                 courses={categoryCourses}
                 categoryTitle={categoryTitles[currentCategory]}
@@ -726,7 +817,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
         title={categoryTitles[currentCategory]}
         courses={categoryCourses}
         onSelectCourse={handleSelectModule}
-        onBack={handleBackToTree}
+        onBack={handleGoToLearningPaths}
         userProgress={userProgress}
         northStar={northStar}
         studentProfile={studentProfile}
@@ -748,7 +839,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   if (viewState === 'innovation-zone') {
       return (
-        <Suspense fallback={<LoadingSpinner />}>
+        <Suspense fallback={<LoadingSpinner variant="compact" label={getToolLoadingLabel(nav.state.activeTool, user.curriculumLevel)} />}>
           <InnovationZone onBack={handleBackToTree} user={user} initialSubjectProfile={studentProfile} savedJourneyResult={journeyResult} onJourneyComplete={setJourneyResult} settings={settings} updateSetting={updateSetting} onCosmeticUnlocksChange={(unlocks) => { setUnlockedAvatarSeeds(unlocks.avatarSeeds || []); setUnlockedThemes(unlocks.themeColors || []); setUnlockedCardStyles(unlocks.cardStyles || []); }} onStudyNow={handleStudyFromTimetable} dismissedGuides={dismissedGuides} onDismissGuide={handleDismissGuide} />
         </Suspense>
       );
@@ -757,16 +848,20 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'module' && currentModuleId) {
     const ModuleComponent = moduleComponents[currentModuleId];
     const modulePosition = resolveModulePosition(studentCourses, currentModuleId);
+    const availability = moduleAvailability(ALL_COURSES.find(course => course.id === currentModuleId), user?.curriculumLevel, studentProfile);
     // A registered module can still be outside this student's curriculum or
     // selected-subject catalogue. Do not let a manually entered URL bypass the
     // same visibility rules used by the selection screen.
-    if (ModuleComponent && !modulePosition) {
+    if (ModuleComponent && (!modulePosition || availability === 'unavailable')) {
       return <FallbackRedirect onRedirect={() => nav.navigateToTree()} />;
+    }
+    if (ModuleComponent && availability === 'coming-soon') {
+      return <FallbackRedirect onRedirect={() => nav.navigateToJCComingSoon(currentModuleId)} />;
     }
     if (ModuleComponent) {
       return (
         <ModuleErrorBoundary onBack={handleBackToCategory}>
-          <Suspense fallback={<LoadingSpinner />}>
+          <Suspense fallback={<LoadingSpinner variant="compact" calm label={`Opening ${studentCourses.find(course => course.id === currentModuleId)?.title ?? "your module"}`} />}>
             {cameFromJourney && (
               // Keep this in normal document flow. A fixed banner competes
               // with each module's own sticky mobile header and can obscure
@@ -818,6 +913,50 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 
   // Fallback: unknown view state — redirect to tree via effect (not during render)
   return <FallbackRedirect onRedirect={() => nav.navigateToTree()} />;
+};
+
+/**
+ * The guest branch: the SAME onboarding a new student gets, run with no
+ * account, then the "Dive in" placeholder. Nothing here touches Firestore or
+ * Auth: onComplete stores the built profile in sessionStorage (for a later
+ * adoption, not done here), onSkip goes back to the landing page, and the
+ * funnel records nothing for guests (utils/funnel.ts).
+ */
+const GuestSetupRoute: React.FC = () => {
+  const [phase, setPhaseState] = useState<GuestPhase>(() => readGuestPhase() ?? 'onboarding');
+  // The phase marker is what routes a reload back here after NavigationContext
+  // has tidied `setup=guest` out of the URL.
+  useEffect(() => { setGuestPhase(phase); }, [phase]);
+
+  if (phase === 'dive-in') {
+    return (
+      <Suspense fallback={<LoadingSpinner selection="random" label="Your next step is almost ready" />}>
+        <DiveIn
+          onCreateAccount={() => endGuestSetup({ keepDraft: true })}
+          onBackToLanding={() => endGuestSetup({ keepDraft: true })}
+        />
+      </Suspense>
+    );
+  }
+
+  return (
+    <Suspense fallback={<LoadingSpinner selection="random" label="Opening your setup" />}>
+      <Onboarding
+        userId={GUEST_USER_ID}
+        userName={GUEST_USER_NAME}
+        guest
+        mode="fresh"
+        onComplete={(profile, northStar, essentialsMode) => {
+          saveGuestSetupResult({ profile, northStar: northStar ?? null, essentialsMode: Boolean(essentialsMode) });
+          setPhaseState('dive-in');
+        }}
+        onSkip={() => {
+          endGuestSetup({ keepDraft: false });
+          window.location.assign(LANDING_PAGE_URL);
+        }}
+      />
+    </Suspense>
+  );
 };
 
 /** Password change screen — shown when a GC resets a student's password */
@@ -883,16 +1022,16 @@ const ChangePasswordModal: React.FC<{ user: SessionUser; onComplete: () => Promi
   );
 };
 
-/** Triggers a redirect via useEffect instead of during render — avoids React anti-pattern */
+/** Redirect before paint without flashing an unrelated loading scene. */
 const FallbackRedirect: React.FC<{ onRedirect: () => void }> = ({ onRedirect }) => {
   const called = useRef(false);
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!called.current) {
       called.current = true;
       onRedirect();
     }
   }, [onRedirect]);
-  return <LoadingSpinner />;
+  return null;
 };
 
 export default AppRouter;

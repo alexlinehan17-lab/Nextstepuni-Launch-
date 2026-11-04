@@ -36,7 +36,7 @@ const ModalHarness: React.FC = () => {
 describe('app audit regressions', () => {
   test('shows an accessible loading state instead of a blank route', () => {
     render(<LoadingSpinner />);
-    expect(screen.getByRole('status')).toHaveTextContent('Loading your workspace');
+    expect(screen.getByRole('status')).toHaveTextContent('Opening your space');
   });
 
   test('moves focus into a modal, closes on Escape, and restores the trigger', async () => {
@@ -93,11 +93,14 @@ describe('app audit regressions', () => {
     const profile = readFileSync(resolve(ROOT, 'components/UserProfileMenu.tsx'), 'utf8');
     const catchUp = readFileSync(resolve(ROOT, 'components/CatchUpLane/index.tsx'), 'utf8');
     const commandWords = readFileSync(resolve(ROOT, 'components/CommandWordReflex/index.tsx'), 'utf8');
-    expect(router).toContain('aria-label="Back to modules"');
+    expect(router).toContain('label="Back to modules"');
     expect(shop).toContain("'Close Island Shop'");
     expect(profile).toContain('aria-label="Close profile"');
-    expect(catchUp).toContain('aria-pressed={levelFilter === lv}');
-    expect(commandWords).toContain('aria-pressed={levelFilter === lv}');
+    expect(catchUp).toContain('aria-label="Catch-Up level"');
+    expect(catchUp).toContain('value={levelFilter}');
+    // The level filter is the shared pill tab control now (role=tab / aria-selected), not hand-rolled aria-pressed buttons.
+    expect(commandWords).toContain("import HorizontalTabs from '../ui/HorizontalTabs'");
+    expect(commandWords).toContain('value={levelFilter}');
   });
 
   test('does not duplicate Comeback Engine heading chrome or animate theme colours out of sync', () => {

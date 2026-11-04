@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Your Star Crew · nextstepuni</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{font-family:'DM Sans',sans-serif;color:#262922;background:white;--ink:#262922;--muted:#707568;--line:#dedfd8;--orange:#ff771c;font-synthesis:none}
+    *{box-sizing:border-box}body{margin:0}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer;color:inherit}a{color:inherit}button:focus-visible,a:focus-visible{outline:3px solid #bd4b0e;outline-offset:5px}
+    header{padding:22px 5vw;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);gap:20px}.wordmark{font-size:27px;font-weight:900;letter-spacing:-1.3px}.back{font-size:12px;text-decoration:none}.back:hover{text-decoration:underline}
+    main{max-width:1240px;margin:auto;padding:48px 36px 60px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}.intro{margin-bottom:34px}h1{font:500 clamp(48px,6vw,76px)/1.02 'Source Serif 4',Georgia,serif;letter-spacing:-.05em;margin:13px 0 18px}h1 em{font-weight:500}.intro p{font-size:15px;line-height:1.7;color:var(--muted);margin:0}
+    .avatar{display:block;aspect-ratio:1;flex:none;background:white;border-radius:50%;border:1px solid #d4d7cd;position:relative;overflow:hidden}.preview{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:28px;border:1.5px solid var(--ink);border-radius:12px;margin-bottom:32px}.identity{display:flex;gap:22px;align-items:center}.profile{width:150px}.identity h2{font:600 29px/1.15 'Source Serif 4',Georgia,serif;letter-spacing:-.03em;margin:7px 0}.identity p{font-size:12px;color:var(--muted);margin:0}.samples{display:flex;gap:24px;align-items:end}.sample{display:grid;justify-items:center;gap:9px}.sample-label{font-size:10px;color:var(--muted);white-space:nowrap}.surface{border:1px solid var(--line);border-radius:6px;background:transparent;padding:10px 13px;font-size:12px;white-space:nowrap}
+    .collection-head{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--ink);padding:20px 0}.collection-head p{font-size:12px;color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}.card{padding:16px;border:1.5px solid var(--ink);border-radius:14px;box-shadow:3px 4px 0 var(--ink);min-width:0}.card.active{outline:3px solid var(--orange);outline-offset:4px}.card-top{display:flex;justify-content:space-between;gap:10px;font-size:10px;color:var(--muted)}.number{font-weight:700;letter-spacing:.1em}.art-button{display:grid;place-items:center;width:100%;border:0;padding:24px 0 22px;background:transparent;border-radius:8px}.art-button .avatar{width:min(100%,156px)}.card h2{font:600 25px/1.15 'Source Serif 4',Georgia,serif;letter-spacing:-.035em;margin:0 0 7px}.card p{font-size:11px;color:var(--muted);line-height:1.5;margin:0;min-height:34px}.card-footer{border-top:1px solid var(--line);padding-top:13px;margin-top:16px;font-size:10px;display:flex;justify-content:space-between;gap:8px;color:var(--muted)}.card-footer a{text-decoration:none}.card-footer a:hover{text-decoration:underline}
+    .dark .preview,.dark .card{background:var(--ink);color:white}.dark .preview .eyebrow,.dark .preview .sample-label,.dark .preview p,.dark .card-top,.dark .card p,.dark .card-footer{color:#c4c7bd}.dark .card-footer{border-color:#575d4f}footer{border-top:1px solid var(--line);margin-top:38px;padding-top:22px;display:flex;justify-content:space-between;gap:20px;font-size:11px;line-height:1.6;color:var(--muted)}
+    @media(max-width:1000px){.preview{flex-wrap:wrap}.identity{flex:1}.samples{gap:18px}.grid{gap:22px}.card h2{font-size:22px}}
+    @media(max-width:780px){main{padding:32px 22px 50px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.preview{gap:24px}.identity{flex-basis:100%}.samples{flex:1}.profile{width:130px}.card h2{font-size:25px}}
+    @media(max-width:490px){header{padding:18px 20px}.wordmark{font-size:24px}.back{font-size:11px}main{padding:28px 18px 45px}.intro p{font-size:13px}.preview{padding:20px}.profile{width:116px}.identity{gap:17px}.identity h2{font-size:25px}.identity p{font-size:11px}.samples{gap:20px}.grid{gap:20px 15px}.card{padding:12px}.art-button{padding:20px 0}.card h2{font-size:22px}.card p{font-size:10px;min-height:45px}.card-footer{font-size:9px}.collection-head{align-items:start}.collection-head p{max-width:170px;text-align:right;font-size:11px}footer{display:block}footer span{display:block;margin-top:8px}}
+  </style>
+</head>
+<body>
+  <header><div class="wordmark">nextstepuni</div><a class="back" href="options.html">All 12 options →</a></header>
+  <main>
+    <section class="intro"><div class="eyebrow">Star Crew · The final eight</div><h1>Your <em>Star Crew.</em></h1><p>Eight little personalities, chosen by you.<br>Centred in their bubbles, with a little room to breathe.</p></section>
+    <section class="preview" aria-label="Avatar size preview">
+      <div class="identity"><div class="avatar profile" id="profile" role="img"></div><div><div class="eyebrow">A closer look</div><h2 id="previewName" aria-live="polite">01 · The Beanie</h2><p>Tap a character below to preview.</p></div></div>
+      <div class="samples"><div class="sample"><div class="avatar" data-sample style="width:32px"></div><span class="sample-label">32 · Drawer</span></div><div class="sample"><div class="avatar" data-sample style="width:48px"></div><span class="sample-label">48 · Header</span></div><div class="sample"><div class="avatar" data-sample style="width:64px"></div><span class="sample-label">64 · Profile</span></div></div>
+      <button class="surface" id="surface" type="button" aria-pressed="false">Try dark surface</button>
+    </section>
+    <div class="collection-head"><div class="eyebrow">Your chosen eight</div><p>The same framing at every size.</p></div>
+    <section class="grid" id="grid" aria-label="Your eight Star Crew avatars"></section>
+    <footer><span>01 · 02 · 05 · 07 · 08 · 09 · 11 · 12</span><a href="../star-crew-subjects-20260915/index.html">Explore the subject collection →</a></footer>
+  </main>
+  <script type="module">
+    import { frames, frameAvatar } from './framing.js';
+    const crew = [
+      {id:'01',name:'The Beanie',description:'A cosy hat. A confident little stance.'},
+      {id:'02',name:'The Reader',description:'Headphones on. Lost in a good book.'},
+      {id:'05',name:'The Skater',description:'Taking a breather between adventures.'},
+      {id:'07',name:'The Maker',description:'Always ready to draw something new.'},
+      {id:'08',name:'The Stargazer',description:'There’s always more to discover.'},
+      {id:'09',name:'The Hugger',description:'Holding on to something good.'},
+      {id:'11',name:'The Snoozer',description:'Even stars need a little rest.'},
+      {id:'12',name:'The Musician',description:'Headphones ready. Moving to their own beat.'}
+    ];
+    const grid = document.querySelector('#grid');
+    function preview(c,scroll=false){
+      document.querySelector('#previewName').textContent=`${c.id} · ${c.name}`;
+      for(const el of document.querySelectorAll('#profile,[data-sample]')) frameAvatar(el,c.id);
+      document.querySelector('#profile').setAttribute('aria-label',c.name);
+      for(const card of grid.children){const active=card.dataset.id===c.id;card.classList.toggle('active',active);card.querySelector('button').setAttribute('aria-pressed',String(active));}
+      if(scroll) document.querySelector('.preview').scrollIntoView({block:'center'});
+    }
+    for(const c of crew){
+      const card=document.createElement('article');card.className='card';card.dataset.id=c.id;
+      card.innerHTML=`<div class="card-top"><span class="number">${c.id} /</span><span>In your crew</span></div><button class="art-button" type="button" aria-label="Preview ${c.id}, ${c.name}" aria-pressed="false"><span class="avatar"></span></button><h2>${c.name}</h2><p>${c.description}</p><div class="card-footer"><span>Tap to preview</span><a href="${frames[c.id].file}" target="_blank" rel="noopener" aria-label="Open artwork for ${c.name}">Full size ↗</a></div>`;
+      frameAvatar(card.querySelector('.avatar'),c.id);
+      card.querySelector('button').addEventListener('click',()=>preview(c,true));
+      grid.append(card);
+    }
+    document.querySelector('#surface').addEventListener('click',e=>{const dark=document.body.classList.toggle('dark');e.currentTarget.setAttribute('aria-pressed',String(dark));e.currentTarget.textContent=dark?'Try light surface':'Try dark surface';});
+    preview(crew[0]);
+  </script>
+</body>
+</html>

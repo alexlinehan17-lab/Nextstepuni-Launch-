@@ -6,17 +6,18 @@
   "summary": {
     "referenceTopics": 33,
     "referenceOfficialAssociations": 369,
-    "matchedAssociations": 277,
+    "matchedAssociations": 271,
     "sourceBlockedAssociations": 92,
     "sourceBlockedByReason": {
       "before-local-corpus": 31,
       "deferred-sitting-not-in-local-corpus": 26,
       "official-sample-paper-not-in-local-corpus": 35
     },
-    "matchedLocalCardLinks": 277,
+    "matchedLocalCardLinks": 271,
     "localPaperVariants": 63,
     "localPhysicalMappings": 608,
-    "distinctStudentFacingQuestions": 318
+    "distinctStudentFacingQuestions": 318,
+    "referenceAnomalyAssociations": 6
   },
   "policy": {
     "matchedSource": "Entitled local State Examinations Commission corpus only.",
@@ -1947,7 +1948,7 @@
     {
       "topicId": "applied-mathematics-higher-networks-and-graphs",
       "heading": "2023 - Paper - Section 1 - Question 9 - (i)",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "targets": [
         {
           "level": "higher",
@@ -1957,12 +1958,13 @@
           "fileid": "LC020ALP000EV.pdf",
           "n": "9"
         }
-      ]
+      ],
+      "reason": "StudyClix files this 2023 higher heading under applied-mathematics-higher-networks-and-graphs. Decided 2026-10-11 from the SEC paper and marking scheme: A precedence table read off a project-scheduling network is critical-path work, not graph theory (no adjacency matrix, degree, cycle or tree), and Q9 already carries Optimal & Critical Paths. Evidence: Scheme PDF p15, 9(i): dependency table 'Activity | Depends directly on ...'. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "applied-mathematics-higher-networks-and-graphs",
       "heading": "2023 - Paper - Section 1 - Question 9 - (ii)-(v)",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "targets": [
         {
           "level": "higher",
@@ -1972,7 +1974,8 @@
           "fileid": "LC020ALP000EV.pdf",
           "n": "9"
         }
-      ]
+      ],
+      "reason": "StudyClix files this 2023 higher heading under applied-mathematics-higher-networks-and-graphs. Decided 2026-10-11 from the SEC paper and marking scheme: All of (ii)-(v) is critical path analysis and scheduling, which is Optimal & Critical Paths (already tagged), not Networks and Graphs. Evidence: Scheme PDF p15-16, 9(iii): 'A, E, J, L and A, E, K'. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "applied-mathematics-higher-networks-and-graphs",
@@ -2982,7 +2985,7 @@
     {
       "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
       "heading": "2024 - Question 4 - (iv)",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "targets": [
         {
           "level": "higher",
@@ -2992,7 +2995,8 @@
           "fileid": "LC020ALP000EV.pdf",
           "n": "4"
         }
-      ]
+      ],
+      "reason": "StudyClix files this 2024 higher heading under applied-mathematics-higher-uniform-accelerated-motion. Decided 2026-10-11 from the SEC paper and marking scheme: Part (iv) is a force diagram, and the motion it sets up has velocity-dependent drag (mkv), so the acceleration is not uniform. No constant-acceleration equation is used anywhere in Q4. Evidence: Scheme PDF p9 (printed p7), 4(iv): force diagram showing only 'D' and 'W = mg'. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "applied-mathematics-higher-uniform-accelerated-motion",
@@ -4302,7 +4306,7 @@
     {
       "topicId": "applied-mathematics-ordinary-networks-graphs",
       "heading": "2024 - Question 9",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "targets": [
         {
           "level": "ordinary",
@@ -4312,7 +4316,8 @@
           "fileid": "LC020GLP000EV.pdf",
           "n": "9"
         }
-      ]
+      ],
+      "reason": "StudyClix files this 2024 ordinary heading under applied-mathematics-ordinary-networks-graphs. Decided 2026-10-11 from the SEC paper and marking scheme: Every part is project scheduling and critical path work (already tagged Optimal & Critical Paths). Nothing in it is graph theory. Evidence: Scheme PDF p14 (printed p12), 9(v): 'No, there is a float of 7 hours'. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "applied-mathematics-ordinary-networks-graphs",
@@ -4407,7 +4412,7 @@
     {
       "topicId": "applied-mathematics-ordinary-networks-graphs",
       "heading": "2023 - Paper - Section 1 - Question 10",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "targets": [
         {
           "level": "ordinary",
@@ -4417,7 +4422,8 @@
           "fileid": "LC020GLP000EV.pdf",
           "n": "10"
         }
-      ]
+      ],
+      "reason": "StudyClix files this 2023 ordinary heading under applied-mathematics-ordinary-networks-graphs. Decided 2026-10-11 from the SEC paper and marking scheme: The whole question is critical path analysis (already tagged Optimal & Critical Paths), with no graph-theory content. Evidence: Scheme PDF p16, 10(ii): 'B -> D -> J -> K'; 10(iv): '233 - 88 - 66 = 79 minutes'. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "applied-mathematics-ordinary-networks-graphs",
@@ -5487,7 +5493,7 @@
     {
       "topicId": "applied-mathematics-ordinary-vectors",
       "heading": "2023 - Paper - Section 1 - Question 2 - Part b",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "targets": [
         {
           "level": "ordinary",
@@ -5497,7 +5503,8 @@
           "fileid": "LC020GLP000EV.pdf",
           "n": "2"
         }
-      ]
+      ],
+      "reason": "StudyClix files this 2023 ordinary heading under applied-mathematics-ordinary-vectors. Decided 2026-10-11 from the SEC paper and marking scheme: Resolving one force into components is routine Newton's-laws and circular-motion working (both already tagged). There is no vector algebra (i-j form, magnitude, resultant or dot product), which is what our Vectors tags are reserved for, as in 2025 HL Q5(b). Evidence: Scheme PDF p7, 2(b)(ii)-(iii): 'T cos 32 = mg' and 'T sin 32 = mrw^2'. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "applied-mathematics-ordinary-work-energy-power-momentum",

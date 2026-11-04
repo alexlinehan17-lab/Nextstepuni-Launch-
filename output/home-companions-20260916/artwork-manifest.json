@@ -1,0 +1,66 @@
+{
+  "mode": "Built-in image generation",
+  "created": "2026-09-16",
+  "artworks": [
+    {
+      "id": "lessons-a",
+      "code": "L1",
+      "generatedSource": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-6a1047d2-0d6a-40a4-b739-86251dfb60f5.png",
+      "workspaceAsset": "output/home-companions-20260916/assets/lessons-a.png"
+    },
+    {
+      "id": "lessons-b",
+      "code": "L2",
+      "generatedSource": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-95f37db8-1193-4ca6-a818-c53451dcc8d6.png",
+      "workspaceAsset": "output/home-companions-20260916/assets/lessons-b.png"
+    },
+    {
+      "id": "lessons-c",
+      "code": "L3",
+      "generatedSource": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-7c0083ec-0141-4a15-837d-f29569627bbf.png",
+      "workspaceAsset": "output/home-companions-20260916/assets/lessons-c.png"
+    },
+    {
+      "id": "launchpad-a",
+      "code": "T1",
+      "generatedSource": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-321317c1-6bdc-4c26-8833-e4eb0509251a.png",
+      "workspaceAsset": "output/home-companions-20260916/assets/launchpad-a.png"
+    },
+    {
+      "id": "launchpad-b",
+      "code": "T2",
+      "generatedSource": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-dd11d363-d7c4-4871-8877-645406328970.png",
+      "workspaceAsset": "output/home-companions-20260916/assets/launchpad-b.png"
+    },
+    {
+      "id": "launchpad-c",
+      "code": "T3",
+      "generatedSource": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-9c1601bb-57e1-48cc-b445-1d5d124a404b.png",
+      "workspaceAsset": "output/home-companions-20260916/assets/launchpad-c.png"
+    },
+    {
+      "id": "journey-a",
+      "code": "J1",
+      "generatedSource": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-d1bb3e4f-ede4-4a07-b734-ade5fef10406.png",
+      "workspaceAsset": "output/home-companions-20260916/assets/journey-a.png"
+    },
+    {
+      "id": "journey-b",
+      "code": "J2",
+      "generatedSource": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-5d2c0735-7be7-46d9-acbb-0e3fea3468aa.png",
+      "workspaceAsset": "output/home-companions-20260916/assets/journey-b.png"
+    },
+    {
+      "id": "journey-c",
+      "code": "J3",
+      "generatedSource": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-a1adb357-d0af-4249-a7dd-de6c4895d40e.png",
+      "workspaceAsset": "output/home-companions-20260916/assets/journey-c.png"
+    },
+    {
+      "id": "paths-a",
+      "code": "P1",
+      "generatedSource": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-2d2bdda1-b74a-4046-9c71-e2bcb97d10e5.png",
+      "workspaceAsset": "output/home-companions-20260916/assets/paths-a.png"
+    }
+  ]
+}

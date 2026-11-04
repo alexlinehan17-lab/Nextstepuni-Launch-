@@ -11,6 +11,9 @@
  * (which reuses the cross-year jump).
  */
 
+import ToolMasthead from '../launchpad/ToolMasthead';
+import SubjectPicker from '../launchpad/SubjectPicker';
+import { useSubjectAccess } from '../launchpad/SubjectAccess';
 import { usePulse } from '../../hooks/usePulse';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, ChevronDown as ChevronDownIcon, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
@@ -19,9 +22,12 @@ import { addCard, hasCard, removeCard } from './reviewStore';
 import { masteryForSubject, type TopicMastery } from './topicMastery';
 import { downloadPack } from './revisionPack';
 import VaultQuestionCard from './VaultQuestionCard';
+import HorizontalTabs from '../ui/HorizontalTabs';
 import { releaseVaultPdfs } from './vaultDocs';
 import { buildVaultLink, consumeInitialVaultLocation } from './vaultDeepLink';
 import { examTopicTaxonomyFor } from '../../data/examTopics/registry';
+
+const PoliticsTopicFeed = React.lazy(() => import('./PoliticsTopicFeed'));
 
 const INK = '#1a1a1a';
 const LVL: Record<string, string> = { higher: 'HL', ordinary: 'OL', foundation: 'FL', common: 'CL' };
@@ -37,15 +43,6 @@ const CATEGORY_TINT: Record<string, { bg: string; ink: string }> = {
 // Curriculum sections of the index, in reading order. The tint appears only
 // as the small dot beside each section eyebrow — rows stay white and ruled.
 const CATEGORY_ORDER = ['stem', 'language', 'business', 'social-environmental', 'practical-applied', 'arts', 'other'] as const;
-// Segmented controls — copied from the iOS/Copilot register: a soft tray,
-// the selected option raised on a white pill. Sleek, clickable, obvious.
-const SEG_TRAY = 'inline-flex items-center gap-0.5 rounded-[10px] bg-[#F1EFEC] p-[3px] dark:bg-zinc-800';
-const segBtn = (active: boolean) =>
-  `rounded-[8px] px-3 py-[5px] text-[12.5px] font-semibold transition-colors ${
-    active
-      ? 'bg-white text-[#1a1a1a] shadow-[0_1px_2px_rgba(26,23,20,0.10)] dark:bg-zinc-600 dark:text-white'
-      : 'text-[#8d857c] hover:text-[#57534e] dark:text-zinc-400 dark:hover:text-zinc-200'
-  }`;
 
 const CATEGORY_LABEL: Record<string, string> = {
   stem: 'Sciences & Maths',
@@ -64,8 +61,8 @@ interface Props {
   subjectLabel: (id: string) => string;
   /** Re-open the feed at this subject/topic — set when returning from a
    *  "Full paper" round-trip (the parent carries it on the viewer view). */
-  restore?: { subjectId: string; subtopicId: string };
-  onOpenQuestion: (t: TopicSibling, origin: { subjectId: string; subtopicId: string }) => void;
+  restore?: { subjectId: string; subtopicId: string; level?: string };
+  onOpenQuestion: (t: TopicSibling, origin: { subjectId: string; subtopicId: string; level?: string }) => void;
   onBack: () => void;
 }
 
@@ -73,14 +70,27 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   // A shared "?subject=…&topic=…" link opens the vault straight at that topic
   // (consumed once per load — see vaultDeepLink; safe, never touches history).
   const [boot] = useState(() => consumeInitialVaultLocation());
+  const canSelectSubject = useSubjectAccess();
   const [scope, setScope] = useState<'mine' | 'all'>(mineIds.length ? 'mine' : 'all');
-  const [subjectId, setSubjectId] = useState<string | null>(restore?.subjectId ?? boot?.subjectId ?? null);
-  const [subtopicId, setSubtopicId] = useState<string | null>(restore?.subtopicId ?? boot?.subtopicId ?? null);
+  const [subjectId, setSubjectState] = useState<string | null>(() => {
+    let saved = '';
+    try { saved = localStorage.getItem(`atlas.subject:${uid ?? 'guest'}`) ?? ''; } catch { /* private mode */ }
+    const candidates = [restore?.subjectId, boot?.subjectId, saved, ...mineIds, ...subjects.map(s => s.id)];
+    return candidates.find(id => id && subjects.some(s => s.id === id && canSelectSubject(s.label))) ?? null;
+  });
+  const setSubjectId = (id: string) => {
+    const selected = subjects.find(s => s.id === id);
+    if (selected && canSelectSubject(selected.label)) setSubjectState(id);
+  };
+  const [previewId, setPreviewId] = useState<string | null>(null);
+  useEffect(() => { if (subjectId) {try {localStorage.setItem(`atlas.subject:${uid ?? 'guest'}`,subjectId);} catch { /* private mode */ }} setPreviewId(null); },[subjectId,uid]);
+  const [subtopicId, setSubtopicId] = useState<string | null>(restore?.subjectId === subjectId ? restore.subtopicId : boot?.subjectId === subjectId ? boot.subtopicId ?? null : null);
   const [copied, pulseCopied, clearCopied] = usePulse(2000);
   const [sort, setSort] = useState<'reference' | 'busiest' | 'frequent'>('busiest');
-  const [levelFilter, setLevelFilter] = useState<'all' | string>('all');
+  const [levelFilter, setLevelFilter] = useState<'all' | string>(restore?.subjectId === subjectId ? restore.level ?? 'all' : 'all');
   const [yearFilter, setYearFilter] = useState<'all' | number>('all');
   const [topicQuery, setTopicQuery] = useState('');
+  const [politicsView, setPoliticsView] = useState<'tasks' | 'papers'>('tasks');
   const [revVer, setRevVer] = useState(0); // bump to re-read review-deck membership
   // Language preference — English by default, remembered per device. The feed
   // shows one edition per question; the other stays a click away.
@@ -105,7 +115,10 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     prevLevel.current = level;
   }, [level]);
   // A new topic starts with fresh level + year filters.
-  useEffect(() => { setLevelFilter('all'); setYearFilter('all'); }, [subtopicId]);
+  useEffect(() => {
+    setLevelFilter(restore?.subjectId === subjectId && restore?.subtopicId === subtopicId ? restore.level ?? 'all' : 'all');
+    setYearFilter('all');
+  }, [subtopicId, subjectId, restore?.subjectId, restore?.subtopicId, restore?.level]);
   // Reset the topic search when switching subjects.
   useEffect(() => { setTopicQuery(''); }, [subjectId]);
   // Audited exam taxonomies have a deliberate reference order. Canonical
@@ -180,8 +193,19 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
       const cur = byQ.get(key);
       if (!cur || (cur.lang !== langPref && q.lang === langPref)) byQ.set(key, q);
     }
-    return [...byQ.values()].sort((a, b) => b.year - a.year || a.level.localeCompare(b.level) || Number(a.n) - Number(b.n));
+    return [...byQ.values()].sort((a, b) => b.year - a.year || a.level.localeCompare(b.level) || a.n.localeCompare(b.n, undefined, { numeric: true }));
   }, [allEditions, langPref]);
+
+  if (subjectId === 'politics-and-society' && subtopicId && politicsView === 'tasks') {
+    return <div className="w-full max-w-2xl mx-auto pb-12">
+      <button onClick={() => setSubtopicId(null)} className="mb-5 flex items-center gap-2 rounded-lg border-2 border-[#383838] px-3 py-2 text-sm font-semibold"><ArrowLeft size={15} /> Politics and Society</button>
+      <h2 ref={headingRef} tabIndex={-1} className="mb-3 text-2xl font-semibold outline-none" style={{ fontFamily: "'Source Serif 4', serif" }}>{topicLabel(subtopicId)}</h2>
+      <button onClick={() => setPoliticsView('papers')} className="mb-5 rounded-lg border-2 border-[#383838] px-3 py-2 text-sm font-semibold">Browse full printed questions</button>
+      <React.Suspense fallback={<p role="status">Loading practice tasks…</p>}>
+        <PoliticsTopicFeed key={subtopicId} topicId={subtopicId} />
+      </React.Suspense>
+    </div>;
+  }
 
   // ── Level 2: the feed — one edition per question, newest first, real
   //    paper crops with the scheme a tap below. Quiet text controls. ──
@@ -229,25 +253,26 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
 
         <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-6" style={{ borderBottom: '1px solid #e7e3de' }}>
           {levels.length > 1 && (
-            <div className={SEG_TRAY} role="group" aria-label="Level">
-              {(['all', ...levels] as const).map(l => (
-                <button key={l} aria-pressed={levelFilter === l} onClick={() => setLevelFilter(l)}
-                  className={segBtn(levelFilter === l)}>
-                  {l === 'all' ? 'All levels' : LVL[l] ?? l}
-                  <span className="ml-1 tabular-nums font-medium" style={{ color: '#b3aca3' }}>{levelCount(l)}</span>
-                </button>
-              ))}
-            </div>
+            <HorizontalTabs
+              variant="pill"
+              size="sm"
+              label="Level"
+              className="shrink-0"
+              value={levelFilter}
+              onChange={l => setLevelFilter(l)}
+              options={['all', ...levels].map(l => ({ value: l, label: `${l === 'all' ? 'All levels' : LVL[l] ?? l} ${levelCount(l)}` }))}
+            />
           )}
           {hasIrish && (
-            <div className={SEG_TRAY} role="group" aria-label="Language">
-              {(['ev', 'iv'] as const).map(l => (
-                <button key={l} aria-pressed={langPref === l} onClick={() => pickLang(l)}
-                  className={segBtn(langPref === l)}>
-                  {l === 'ev' ? 'English' : 'Gaeilge'}
-                </button>
-              ))}
-            </div>
+            <HorizontalTabs
+              variant="pill"
+              size="sm"
+              label="Language"
+              className="shrink-0"
+              value={langPref}
+              onChange={pickLang}
+              options={[{ value: 'ev', label: 'English' }, { value: 'iv', label: 'Gaeilge' }]}
+            />
           )}
           {yearList.length > 3 && (
             <div className="relative">
@@ -257,7 +282,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 aria-label="Year"
                 className={`appearance-none cursor-pointer rounded-[10px] py-[8px] pl-3 pr-8 text-[12.5px] font-semibold outline-none transition-colors ${
                   yearFilter === 'all'
-                    ? 'bg-[#F1EFEC] text-[#8d857c] hover:text-[#57534e] dark:bg-zinc-800 dark:text-zinc-400'
+                    ? 'bg-zinc-100 text-[#8d857c] hover:text-[#57534e] dark:bg-zinc-800 dark:text-zinc-400'
                     : 'bg-white text-[#1a1a1a] shadow-[0_1px_2px_rgba(26,23,20,0.10)] ring-1 ring-[#E5E1DA] dark:bg-zinc-600 dark:text-white dark:ring-zinc-600'
                 }`}
               >
@@ -292,6 +317,8 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
           </button>
         </div>
 
+        {subjectId === 'politics-and-society' && <button onClick={() => setPoliticsView('tasks')} className="mb-5 rounded-lg border-2 border-[#383838] px-3 py-2 text-sm font-semibold">Browse individual practice tasks</button>}
+
         <div className="space-y-5">
           {referenceOnly ? (
             <p className="text-[13px] py-3 leading-relaxed" style={{ color: '#8d857c' }}>
@@ -310,7 +337,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 sibling={q}
                 saved={saved}
                 onToggleReview={() => toggleReview(q)}
-                onOpenInPaper={() => onOpenQuestion(q, { subjectId, subtopicId })}
+                onOpenInPaper={() => onOpenQuestion(q, { subjectId, subtopicId, ...(levelFilter !== 'all' ? { level: levelFilter } : {}) })}
               />
             );
           })}
@@ -328,56 +355,23 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     const strands = strandsFor(subjectId, topics.map(t => t.subtopicId));
     const topicById = new Map(topics.map(t => [t.subtopicId, t]));
     return (
-      <div className="w-full max-w-2xl mx-auto pb-12">
-        <button onClick={() => setSubjectId(null)} className="flex items-center gap-1.5 text-[13px] font-medium mb-5" style={{ color: '#7a7068' }}>
-          <ArrowLeft size={15} /> All subjects
-        </button>
-        {/* The volume's title page — the category duotone carries the
-            subject's full sixteen-year signature above its contents. */}
-        {(() => {
-          const tint = CATEGORY_TINT[categoryOf(subjectId) as string] ?? CATEGORY_TINT.other;
-          const peak = Math.max(1, ...stats.perYear.values());
-          return (
-            <div className="rounded-2xl overflow-hidden mb-5" style={{ border: '1.5px solid #383838' }}>
-              <div className="px-6 pt-5 pb-5" style={{ backgroundColor: tint.bg }}>
-                <p className="text-[10px] font-bold uppercase tracking-[0.15em]" style={{ color: tint.ink }}>
-                  {CATEGORY_LABEL[categoryOf(subjectId) as string] ?? 'Charted subject'} · Topic Atlas
-                </p>
-                <h2 ref={headingRef} tabIndex={-1} className="mt-1.5 text-[27px] font-semibold outline-none" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>{subjectLabel(subjectId)}</h2>
-                <div className="mt-4 flex items-end gap-[4px] h-[44px]" aria-hidden="true">
-                  {stats.years.map(y => (
-                    <span
-                      key={y}
-                      title={`${y}: ${stats.perYear.get(y) ?? 0} questions`}
-                      className="flex-1 rounded-[2px]"
-                      style={{
-                        maxWidth: 20,
-                        height: `${Math.max(10, Math.round(((stats.perYear.get(y) ?? 0) / peak) * 100))}%`,
-                        backgroundColor: tint.ink,
-                        opacity: 0.34,
-                      }}
-                    />
-                  ))}
-                </div>
-                <p className="mt-3 text-[12.5px] font-semibold tabular-nums" style={{ color: tint.ink }}>
-                  {stats.questions.toLocaleString()} questions · {baseTopics.length} topics · {stats.yearMin}–{stats.yearMax}
-                </p>
-              </div>
-            </div>
-          );
-        })()}
-        <p className="text-[13.5px] mb-4" style={{ color: '#5a5550' }}>
-          Pick a topic — every question ever asked on it is inside.
-        </p>
+      <div className="lp-atlas pb-12">
+        <ToolMasthead tool="topic-atlas" eyebrow="Follow the topic" title="Topic Atlas." subtitle="Past questions, connected by what they ask." />
+        <div className="lp-atlas-controls"><SubjectPicker value={subjectId} options={subjects.map(s => ({value:s.id,label:s.label}))} onChange={setSubjectId} /><p className="lp-body">{stats.questions.toLocaleString()} questions · {stats.yearMin}–{stats.yearMax}</p></div>
+        <div className="lp-atlas-workspace"><section>
         <div className="flex items-center gap-x-5 gap-y-3 flex-wrap pb-3 mb-2" style={{ borderBottom: '1px solid #e7e3de' }}>
-          <div className={SEG_TRAY} role="group" aria-label="Sort topics">
-            {([...(examTaxonomy ? ['reference'] as const : []), 'busiest', 'frequent'] as const).map(s => (
-              <button key={s} aria-pressed={sort === s} onClick={() => setSort(s)}
-                className={segBtn(sort === s)}>
-                {s === 'reference' ? 'A–Z' : s === 'busiest' ? 'Most asked' : 'Most recurrent'}
-              </button>
-            ))}
-          </div>
+          <HorizontalTabs
+            variant="pill"
+            size="sm"
+            label="Sort topics"
+            className="shrink-0"
+            value={sort}
+            onChange={s => setSort(s)}
+            options={([...(examTaxonomy ? ['reference'] as const : []), 'busiest', 'frequent'] as const).map(s => ({
+              value: s,
+              label: s === 'reference' ? 'A–Z' : s === 'busiest' ? 'Most asked' : 'Most recurrent',
+            }))}
+          />
           <span className="flex-1" />
           {sortedTopics.length > 8 && (
             <div className="relative">
@@ -388,7 +382,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 onChange={e => setTopicQuery(e.target.value)}
                 placeholder="Search topics"
                 aria-label="Search topics"
-                className="w-48 appearance-none rounded-[10px] bg-[#F1EFEC] py-[8px] pl-8 pr-8 text-[13px] outline-none transition-shadow placeholder:text-[#a8a29e] focus:ring-2 focus:ring-[rgba(242,107,31,0.28)] dark:bg-zinc-800 dark:text-zinc-100"
+                className="w-48 appearance-none rounded-[10px] bg-zinc-100 py-[8px] pl-8 pr-8 text-[13px] outline-none transition-shadow placeholder:text-[#a8a29e] focus:ring-2 focus:ring-[rgba(242,107,31,0.28)] dark:bg-zinc-800 dark:text-zinc-100"
                 style={{ color: INK }}
               />
               {topicQuery && (
@@ -442,7 +436,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                   return (
                     <button
                       key={t.subtopicId}
-                      onClick={() => setSubtopicId(t.subtopicId)}
+                      onClick={() => setSubtopicId(t.subtopicId)} onFocus={() => setPreviewId(t.subtopicId)}
                       className="group w-full flex items-center gap-3.5 rounded-xl border border-[#E5E1DA] bg-white px-4 py-3 text-left transition-all duration-150 hover:-translate-y-[1px] hover:border-[#383838] dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-400"
                     >
                       <span aria-hidden="true" className="w-6 shrink-0 text-right text-[13px] tabular-nums" style={{ fontFamily: "'Source Serif 4', serif", color: '#b3aca3' }}>
@@ -475,6 +469,8 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
             </section>
           ));
         })()}
+        <p className="lp-body mt-5 text-xs">Frequency describes past papers, not what will appear next.</p>
+        </section><aside className="lp-panel lp-atlas-preview">{(() => {const selected = topics.find(t => t.subtopicId === previewId) ?? topics[0];return selected ? <><p className="lp-eyebrow">Selected topic</p><h2 className="lp-title">{selected.label}</h2><p className="lp-body">{selected.count} questions · {selected.years} of {totalYears} years</p><p className="lp-body mt-5">Browse the original questions and open each with its linked marking scheme.</p><button className="lp-button w-full mt-6" onClick={() => setSubtopicId(selected.subtopicId)}>Explore this topic <span aria-hidden="true">→</span></button></> : <p className="lp-body">Choose a topic from the map.</p>;})()}</aside></div>
       </div>
     );
   }
@@ -523,14 +519,15 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
             ))}
           </div>
           {mineIds.length > 0 && (
-            <div className={`${SEG_TRAY} mb-2`} role="group" aria-label="Subject scope">
-              {(['mine', 'all'] as const).map(sc => (
-                <button key={sc} aria-pressed={scope === sc} onClick={() => setScope(sc)}
-                  className={segBtn(scope === sc)}>
-                  {sc === 'mine' ? 'My subjects' : 'All subjects'}
-                </button>
-              ))}
-            </div>
+            <HorizontalTabs
+              variant="pill"
+              size="sm"
+              label="Subject scope"
+              className="w-fit mb-2"
+              value={scope}
+              onChange={sc => setScope(sc)}
+              options={[{ value: 'mine', label: 'My subjects' }, { value: 'all', label: 'All subjects' }]}
+            />
           )}
           {grouped.map(group => {
             const tint = CATEGORY_TINT[group.cat] ?? CATEGORY_TINT.other;
@@ -552,6 +549,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                     <button
                       key={s.id}
                       onClick={() => setSubjectId(s.id)}
+                      disabled={!canSelectSubject(s.label)}
                       aria-label={`${s.label} — ${st.questions.toLocaleString()} questions across ${topicsForSubject(s.id).length} topics, ${st.yearMin} to ${st.yearMax}`}
                       className="group text-left rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 transition-transform duration-200 hover:-translate-y-0.5"
                       style={{ border: '1.5px solid #383838' }}

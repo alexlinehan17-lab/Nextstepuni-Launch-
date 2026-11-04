@@ -29,14 +29,25 @@
   a published mark boundary—not necessarily one numbered question. Use the
   scheme's allocation to decide whether printed parts split or remain one
   holistic response.
-- Expand every finite printed answer route. A closed choose-one pool of `n`
-  options yields `n` cards; a closed choose-`k` pool yields `C(n, k)` cards.
-  Derive these variants mechanically and pin their count, unique IDs, wording
-  and tariff in tests.
+- A printed choice is one card, not one card per combination. When the student
+  chooses which `k` of `n` printed items to answer ("any two of five", "three
+  of the following points", "two most and one least valuable"), publish ONE
+  card: the printed question verbatim with all `n` items, `k` answer slots (an
+  `anyN` row group for point-marked cards, "first/second item you chose"
+  criteria for rubric cards), and guidance listing every item's scheme wording.
+  Never rewrite the printed question to name a combination. Sessions do not
+  collapse sibling cards, so `C(n, k)` expansion floods the deck: it produced
+  286 cards for one Politics question and 360 for one English task before this
+  rule (October 2026).
+- A choose-one pool may stay as one card per printed option when the scheme
+  marks the options differently (different rows, allocations or structure) OR
+  the options sit under different syllabus topics (e.g. Geography "rivers /
+  coasts / mass movement"), so each card files under its own Topic Atlas
+  heading. Its question text stays verbatim and the option is named in
+  `questionRef`. Options that share one grid AND one topic are one card.
 - Apply selection analysis inside every split task, not just at the outer
-  numbered-question level. The Art corpus previously handled separately marked
-  parts and choose-one questions but missed the task-internal "any two of five"
-  instruction in 2025 OL Q4(a), collapsing ten valid routes into one.
+  numbered-question level, so a task-internal "any two of five" is recognised
+  and carded as one choice card with the right slots and tariff.
 - Do not fan out required headings, illustrative example lists, open choices
   such as a named artist or work, or flexible wording such as `and/or`. Those
   remain one response unless the paper requires a fixed finite selection. Keep
@@ -72,3 +83,45 @@
 - Never repeat the same label as both context and detail (for example, "Your
   current grades · your current grades"). Every phrase in a line must add new
   information.
+
+## Approved module review — 5–6 October 2026
+
+- Never use emojis. Use the established hand-drawn artwork, paper/charcoal
+  surfaces and orange accent. Scaffolding Your Focus and its A small beginning
+  prompt use the regular thinker sitting on the orange star, not a timer.
+- Controls must look clickable before hover. Selected answers need strong
+  orange, mint or coral faces with contrasting text in both themes. Keep locked
+  answers readable and triage choice/progress dots visible on selected fills.
+- Keep compact citation bubbles and their animation. Definitions stay compact,
+  bounded by the viewport, and only one remains open at a time.
+- Preserve the bridge animation, Thought Reframer circular switches, Kobra OTP,
+  flip interaction, flat orange activity ring, repeated-plan confirmation,
+  segmented study-session bar and blocked/interleaved schedule layout.
+- Bars use outlined tracks and coloured fills with aligned labels. Chart axes
+  and ticks use quiet type sized for the rendered chart, including phones.
+  Keep scales, units/context, grids and source data. Scale labels stay outside
+  rotating balance illustrations; ring scores are centred geometrically.
+- Correct Driver vs Passenger placements after the full sort. Backwards
+  planning supports mouse, touch, keyboard and visible move controls.
+- Yet examples describe skills that naturally accept "yet". Show instructions
+  once, separately from the exercise. Bring Program Your Destination closer
+  to A small beginning; centre the weekly location planner.
+- Reuse onboarding current/target grades. Remove the duplicate CAO input
+  calculator, Build Your WRAP exercise/section and the support-advice block.
+- Breathing instructions sit outside the animated ring with a separate Begin
+  button and clear timing.
+- Defer subject Mastering exercises. This review includes general active recall,
+  spacing and interleaving exercises explicitly reviewed by Alex.
+- Research figures must retain primary-source context. Roediger & Karpicke
+  (2006), Experiment 2 reports independent group averages of 40% and 61% of
+  passage ideas recalled after one week: four reading periods versus one
+  reading period plus three recall tests. Reading lasted 5 minutes per period;
+  tests lasted 10 minutes. Do not describe these as equal study time.
+- New instructions from Alex supersede these recorded decisions.
+
+## Approved focus treatment — 30 October 2026
+
+- Alex approved **Quiet white** as the app-wide and future focus treatment. Use a crisp, close warm-white edge (`#e4e2db`) on dark fields and a charcoal equivalent (`#383833`) on light fields. No orange focus beam, outer glow or stacked rings.
+- Use the shared `design/quiet-focus.css` policy for native and Kobra controls, including portals and lazy-loaded tools. Text fields, selects and textareas use a border plus 1px inset edge without layout movement. Composite input groups get one edge on the containing control.
+- Keep keyboard focus visible on buttons, links and other controls with the same neutral colour. Preserve error, success and selected-state semantics. Orange remains available for restrained brand accents, not focus outlines.
+- This supersedes older orange focus instructions. Isolated comparison pages may retain explicitly labelled alternatives; production controls must follow the approved treatment.

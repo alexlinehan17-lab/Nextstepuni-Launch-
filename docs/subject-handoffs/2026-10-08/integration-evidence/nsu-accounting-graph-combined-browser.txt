@@ -1,0 +1,77 @@
+[
+  {
+    "name": "desktop",
+    "errors": [],
+    "canvas": {
+      "width": 3145,
+      "height": 4450
+    },
+    "before": {
+      "x": 188,
+      "y": 161.59375,
+      "width": 1064,
+      "height": 1505
+    },
+    "after": {
+      "x": 188,
+      "y": 161.59375,
+      "width": 3145,
+      "height": 4450
+    },
+    "panRange": {
+      "width": 1118,
+      "total": 3282
+    },
+    "scrollLeft": 2164
+  },
+  {
+    "name": "phone",
+    "errors": [],
+    "canvas": {
+      "width": 1112,
+      "height": 1573
+    },
+    "before": {
+      "x": 13,
+      "y": 95.59375,
+      "width": 364,
+      "height": 514
+    },
+    "after": {
+      "x": 13,
+      "y": 95.59375,
+      "width": 1112,
+      "height": 1573
+    },
+    "panRange": {
+      "width": 390,
+      "total": 1138
+    },
+    "scrollLeft": 748
+  },
+  {
+    "name": "atlas-phone",
+    "errors": [],
+    "canvas": {
+      "width": 1112,
+      "height": 1573
+    },
+    "before": {
+      "x": 13,
+      "y": 95.59375,
+      "width": 364,
+      "height": 514
+    },
+    "after": {
+      "x": 13,
+      "y": 95.59375,
+      "width": 1112,
+      "height": 1573
+    },
+    "panRange": {
+      "width": 390,
+      "total": 1138
+    },
+    "scrollLeft": 748
+  }
+]

@@ -30,6 +30,7 @@ import { CARDS as physicsHigher } from '@/components/MarkBank/cards/physics/high
 import { CARDS as physicsOrdinary } from '@/components/MarkBank/cards/physics/ordinary';
 import { buildQuestionModel } from '@/components/WaysIn/questionModel';
 import { waysInSourceFromMarkBank } from '@/components/WaysIn/sources';
+import biologyPreReview from './fixtures/waysInBiologyPreReview.json';
 
 // Every built subject, not a hand-kept subset. Economics, Construction Studies
 // and Maths were absent, so nothing checked their cards through this handoff —
@@ -48,6 +49,19 @@ const cards = [
   ...mathsHigher, ...mathsOrdinary,
   ...physicsHigher, ...physicsOrdinary,
 ];
+
+// The Biology paper-by-paper review (2026-10) cards each priced ask on its own,
+// so the Biology cards the compact-list checks below were written against no
+// longer bundle several printed asks. Those checks are about the parser, so they
+// still read the bundled text those cards shipped with before the review
+// (fixtures/waysInBiologyPreReview.json, taken from the deck at 6652f80cc) on
+// top of the live card; every other card is read as it ships.
+const preReviewText = new Map(biologyPreReview.map(entry => [entry.id, entry]));
+const compactCard = (cardId: string) => {
+  const card = cards.find(candidate => candidate.id === cardId);
+  const before = preReviewText.get(cardId);
+  return card && before ? { ...card, ...before } as typeof card : card;
+};
 
 const countWords: Record<string, number> = {
   one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8,
@@ -190,7 +204,7 @@ describe('Ways In across the Mark Bank corpus', () => {
     };
 
     for (const [cardId, expected] of Object.entries(expectedLabels)) {
-      const card = cards.find(candidate => candidate.id === cardId);
+      const card = compactCard(cardId);
       expect(card, cardId).toBeDefined();
       const model = buildQuestionModel(waysInSourceFromMarkBank(card!, card!.subjectId));
       expect(model.planPrompts.map(prompt => prompt.label.toLowerCase()), cardId).toEqual(expected);
@@ -215,7 +229,7 @@ describe('Ways In across the Mark Bank corpus', () => {
     };
 
     for (const [cardId, expected] of Object.entries(expectedSources)) {
-      const card = cards.find(candidate => candidate.id === cardId);
+      const card = compactCard(cardId);
       expect(card, cardId).toBeDefined();
       const model = buildQuestionModel(waysInSourceFromMarkBank(card!, card!.subjectId));
       expect(model.planPrompts.map(prompt => prompt.sourceText), cardId).toEqual(expected);
@@ -237,15 +251,13 @@ describe('Ways In across the Mark Bank corpus', () => {
         '3. Optic nerve',
         '4. Lens',
       ],
+      // Corrected in place (2025 OL review): these IDs now carry part (i) and
+      // part (iii) only, because (ii) and (iv) ship as their own cards.
       'agsci-2025-ol-q9bi-ii': [
-        '(i) State if the input prices have increased or decreased.',
-        '(ii) Identify what your answer in part (i) above means for farmers by placing a tick in the correct box:',
-        'Costs less to produce / Cost the same to produce / Costs more to produce.',
+        'State if the input prices have increased or decreased.',
       ],
       'agsci-2025-ol-q9biii-iv': [
-        "(iii) Which agricultural enterprise's output price has increased?",
-        '(iv) Identify what your answer in part (iii) above means for farmers by placing a tick in the correct box:',
-        'Increased profit / Increased cost.',
+        'Which agricultural enterprise’s output price has increased?',
       ],
       'bio-2022-hl-q3-bc-fig': [
         '(b) Is the karyotype shown above from a female or a male?',
@@ -255,10 +267,14 @@ describe('Ways In across the Mark Bank corpus', () => {
         '(i) Is this a plant cell or an animal cell?',
         '(ii) Give two reasons for your answer in part (i) above.',
       ],
+      // The Chemistry audit carded 2025 OL Q10(b)(i)-(v) as one card (the scheme
+      // prices the five with one cell): the card prints all five asks.
       'chem-2025-ol-q10-b-i-iii': [
         '(i) Name the three states of matter.',
         '(ii) What is meant by the term ion?',
         '(iii) Classify helium (He) as an atom, a molecule or an ion.',
+        '(iv) Name two states of matter that exist at the melting point of a substance.',
+        '(v) In which state of matter do the particles vibrate around fixed positions?',
       ],
       'bio-2025-hl-q16-b-iii-fig': [
         '1. Oxygen and carbon dioxide are two gases that are exchanged between structures A and B.',
@@ -277,16 +293,20 @@ describe('Ways In across the Mark Bank corpus', () => {
         'Identify one other dish where germination is unlikely to happen.',
         'Justify your answer.',
       ],
+      // The Chemistry audit carded 2024 HL Q8(b)(iii) and (iv) apart (the scheme
+      // prices each with its own cell); this id kept its first part, (iii).
       'chem-2024-hl-q8-b-iii-iv': [
-        '(iii) A trace quantity of C4H10 is formed during reaction B.',
-        'Explain how the formation of C4H10 is evidence for the mechanism described.',
-        '(iv) Apart from the formation of C4H10, state one other piece of evidence for this mechanism.',
+        'A trace quantity of C₄H₁₀ is formed during reaction B.',
+        'Explain how the formation of C₄H₁₀ is evidence for the mechanism described.',
       ],
+      // The Chemistry audit lifts the paper's sentence printed between (iii) and
+      // (iv), and the chloride ion's charge as the paper sets it.
       'chem-2024-ol-q3-b': [
         '(ii) Identify the gas produced.',
         '(iii) Identify compound A.',
+        'When a sample of compound B was dissolved in water and mixed with a solution of barium chloride (BaCl₂) a white precipitate was produced.',
         '(iv) Identify compound B.',
-        '(v) Identify a reagent which could be used to confirm that compound C contained chloride (Cl–) ions.',
+        '(v) Identify a reagent which could be used to confirm that compound C contained chloride (Cl⁻) ions.',
       ],
       'bio-2024-ol-q16-a-ii-iii': [
         '(ii) 1. Give one function of xylem.',
@@ -313,7 +333,7 @@ describe('Ways In across the Mark Bank corpus', () => {
     };
 
     for (const [cardId, expected] of Object.entries(expectedLines)) {
-      const card = cards.find(candidate => candidate.id === cardId);
+      const card = compactCard(cardId);
       expect(card, cardId).toBeDefined();
       const model = buildQuestionModel(waysInSourceFromMarkBank(card!, card!.subjectId));
       expect(model.lines, cardId).toEqual(expected);
@@ -328,7 +348,7 @@ describe('Ways In across the Mark Bank corpus', () => {
       'bio-2024-ol-q16-b-ii-iii': ['Part 1', 'Part 2', 'Part (iii)'],
     };
     for (const [cardId, expected] of Object.entries(nestedPlanLabels)) {
-      const card = cards.find(candidate => candidate.id === cardId)!;
+      const card = compactCard(cardId)!;
       const model = buildQuestionModel(waysInSourceFromMarkBank(card, card.subjectId));
       expect(model.planPrompts.map(prompt => prompt.label), cardId).toEqual(expected);
     }

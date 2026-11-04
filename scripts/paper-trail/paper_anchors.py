@@ -614,6 +614,8 @@ def load_subject_index(subject_id):
         if not line.startswith('{"year"'):
             continue
         e = json.loads(line)
+        if e.get("sitting") or e["year"] < 2010:
+            continue  # reviewed window only: June sittings from 2010
         for p in e["papers"]:
             rows.append({
                 "year": e["year"], "level": e["level"], "lang": e["lang"],

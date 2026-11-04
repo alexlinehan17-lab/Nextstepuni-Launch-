@@ -1,0 +1,18 @@
+.pt-pe-task.mark-bank-theme { --mb-ink: #24211e; --mb-ink-2: #554d45; --mb-muted: #696058; --mb-paper: #fff; --mb-soft: #fff; --mb-border: #ded8d0; color: #24211e; background: #fff; border: 1.5px solid #383838; border-radius: 16px; overflow: hidden; font: 400 14px/1.6 'DM Sans', sans-serif; }
+.pt-pe-task-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 13px 20px; border-bottom: 1px solid #ded8d0; }
+.pt-pe-task-heading p { margin: 0; font-size: 12px; }
+.pt-pe-task-heading strong { font: 600 20px/1.3 'Source Serif 4', serif; }
+.pt-pe-task-heading > span { white-space: nowrap; font-size: 12px; font-weight: 600; }
+.pt-pe-task-body { padding: 20px; }
+.pt-pe-task-context { margin: 0 0 16px; font-size: 13px; }
+.pt-pe-task-prompt { white-space: pre-line; margin: 0 0 20px; font: 500 19px/1.5 'Source Serif 4', serif; }
+.pt-pe-task-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 16px; }
+.pt-pe-task-actions button, .pt-pe-task-reveal { min-height: 40px; padding: 8px 13px; border: 1.5px solid #383838; border-radius: 8px; color: #24211e; background: #fff; font: 600 12px/1.4 'DM Sans', sans-serif; cursor: pointer; }
+.pt-pe-task-actions button[aria-pressed=true], .pt-pe-task-reveal[aria-expanded=true] { background: #ed8547; color: #24211e; }
+.pt-pe-task-reveal { width: 100%; margin-bottom: 16px; }
+.pt-pe-task button:focus-visible { outline: 3px solid #d45b10; outline-offset: 3px; }
+.pt-pe-task .mb-source-material-trigger { width: 100%; margin: 0; border: 1.5px solid #383838; border-radius: 10px; color: #24211e; background: #fff; }
+.pt-pe-task .mb-pe-rubric .mb-source-material-trigger { margin-bottom: 20px; }
+.pt-pe-task .mb-source-material-trigger:hover { background: #f9eee4; }
+.pt-pe-task .mb-source-material-copy > span, .pt-pe-task .mb-source-material-icon { color: #ac450d; }
+@media(max-width: 500px) { .pt-pe-task-heading, .pt-pe-task-body { padding: 16px; } .pt-pe-task-prompt { font-size: 18px; } }

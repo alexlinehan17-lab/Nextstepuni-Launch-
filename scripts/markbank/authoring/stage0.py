@@ -32,6 +32,72 @@ SHIPPED = {'agricultural-science', 'biology', 'business', 'chemistry',
            'economics', 'home-economics', 'physics'}
 REJECTED = {'geography'}
 
+# THE SCORE ABOVE DECIDES NOTHING, and these four are the proof. Each was
+# measured on 10-11 September 2026 by counting the marked asks and how many
+# carry stated liftable content — the three re-measures because their standing
+# verdicts had been recorded WITHOUT a count, Physical Education because it had
+# never been assessed at all. All four score ABOVE every subject already
+# shipped (52-86% against a shipped range of 28-46%), and two of them are still
+# rejections. Read the counts, not the percentage.
+VERDICTS = {
+    'physical-education': (
+        'PASSES, and its share swings hard by sitting. 824 scheme parts over '
+        'the 13 sittings 2020-2026; 187 state an answer a student could have '
+        'written ("Barriers may include: -Facilities -Access -Finance") and '
+        '637 print a band ladder and nothing else ("Clear and accurate '
+        'definition. 2 / Some accuracy in the definition. 1"). Per sitting: '
+        '56% of 2021 Higher and 55% of 2024 Higher state answers, against 4% '
+        'of 2025 Higher and 5% of 2025 Ordinary, so one paper decides nothing. '
+        'Denominator 741 leaf asks (paper_census, merged mode). See pe_all.py.'),
+    'accounting': (
+        'UPHELD, now with the count the original verdict lacked. 10,097 ledger '
+        'rows ("Sales 659,650 [3]") against 913 prose sentences in the answers '
+        'over 34 schemes. Cut into answer RUNS: 202 prose answers, of which '
+        '105 quote that paper\'s own dataset ("The dividend cover is 1.33 '
+        'times. Last year\'s dividend cover was 1.4 times") and 97 are '
+        'dataset-free named principle ("An adverse variance is when actual '
+        'costs exceed the budgeted costs"; "When a Contingent Liability is '
+        'probable, the estimated amount should be provided for in the '
+        'accounts"). That is 2.85 cardable prose answers a sitting, and the '
+        'ORDINARY papers print almost none — 0 in eleven of seventeen '
+        'Ordinary schemes. A real fraction, but a thin one: card the theory '
+        'parts only alongside a subject, not as one.'),
+    'music': (
+        'REJECTED, and the standing verdict was HALF wrong. Music sets three '
+        'written booklets, not one, and they have to be counted separately. '
+        'COMPOSING (component 006): 2,649 priced lines, of which 1,893 are '
+        'band descriptors — "Excellent sense of shape and structure 38 - 40", '
+        '"Quality of Bass Line 20", "Very little or no attempt 1" — and the '
+        'remaining 756 are marking RULES for the candidate\'s own composition '
+        '("1 mark for each chord that fits melody and descant lines", ".5 mark '
+        'per correct bass note under each chord symbol", "Deduct .5 mark per '
+        'note if given rhythm not used"). Neither is a stated answer: a rule '
+        'for pricing what the candidate wrote is not something a student could '
+        'have written. LISTENING-CORE (008): 2,219 of 2,728 priced lines (81%) '
+        'state an answer — "Imperfect cadence 1", "F major 2", "Viola + Cello '
+        '2 + 2", "Tierce de Picardie occurs when a piece in the minor key ends '
+        'on a major tonic chord" — so "quality bands" is simply untrue of this '
+        'half. It is refused on the OTHER ground instead, and the same one the '
+        'eleven carded languages use: the recording IS the ask. The paper '
+        'prints "Excerpt 1, played three times. (a) Identify two different '
+        'instruments which play the melody in this excerpt", no audio ships in '
+        'this bank today, and the printed score is a mangled glyph stream in '
+        'the text layer. LISTENING-ELECTIVE (007) is a band-graded essay: "A '
+        'Excellent awareness and detailed knowledge of musical features of '
+        'chosen topic 10".'),
+    'dcg': (
+        'OVERTURNED — the strongest of the four. "A drawing subject" is true '
+        'and irrelevant: the scheme states the CRITERIA, exactly as '
+        'Construction Studies\' does. 4,396 priced construction steps over 33 '
+        'schemes, each its own stated requirement with its own printed mark — '
+        '"(i) Traces of required cutting planes parallel to HT in plan ... 3", '
+        '"(iii) X1Y1 parallel to line of intersection ... 6", "(iv) Draw plan '
+        'of sphere using correct radius ... 2" — under 920 priced parts. Only '
+        '209 priced steps are band-like, and every one of those is the same '
+        'row: "Presentation ... 2". Card it: the denominator is 66 papers and '
+        'the blocker is FIGURES, not content.'),
+}
+
 # A line the scheme prices.
 PRICED = re.compile(r'[\[(]\s*\d{1,3}\s*[\])]|\b\d{1,3}\s*m(?:ark)?s?\b'
                     r'|\b\d{1,2}\s*[x×]\s*\d{1,2}\b', re.I)

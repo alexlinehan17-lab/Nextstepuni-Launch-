@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "year": 2022,
+  "level": "ordinary",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "reviewedAt": "2026-10-12T15:33:48.140738+00:00",
+  "authoringReview": "scripts/markbank/authored/construction-studies-2022-ordinary-reviewed.json",
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2022/LC029GLP000EV.pdf": "69e29520c0fbe774c560c2cd91363cc5cf125b168ec3266f5ea31021f4617b0d",
+    "paper-trail-corpus/markingschemes/2022/LC029GLP000EV.pdf": "196311e890e14bc99d31a4de3318fd97ec5a2850908c00379a6d2ec108282e3b"
+  },
+  "expectedRuntimeCards": 31,
+  "reason": "2022 Ordinary main English theory Q1–Q9: 31 source-reviewed tasks (11 added, 20 pre-audit cards corrected in place under their original IDs; 8 live per-item cards withdrawn into their one choice card through progress aliases); whole theory paper reconciled against the original paper and scheme. Practical component and Irish edition remain separate work.",
+  "questions": [
+    {
+      "n": "1",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-question-one-drawing-questions",
+        "construction-studies-ordinary-windows-doors"
+      ]
+    },
+    {
+      "n": "2",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "n": "3",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-drainage",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "n": "4",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-sound",
+        "construction-studies-ordinary-windows-doors"
+      ]
+    },
+    {
+      "n": "5",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-question-one-drawing-questions",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "n": "6",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "n": "7",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "n": "8",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-drainage",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "n": "9",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "cardId": "cons-2022-ol-q1-a",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-3-7",
+        "cons-3-4",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Scaled drawing (1.5) of an external door (3.7) with its lintels and stepped DPC (3.4) in a cavity wall (3.3).",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-question-one-drawing-questions",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q1-b",
+      "markBankTopicId": "cons-3-3",
+      "canonicalTopicIds": [
+        "cons-3-3",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Closing the cavity wall (3.3) against a thermal bridge (6.2).",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q1-complete",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-3-7",
+        "cons-3-4",
+        "cons-3-3",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-question-one-drawing-questions",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q2-a",
+      "markBankTopicId": "cons-3-9",
+      "canonicalTopicIds": [
+        "cons-3-9",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Roof insulation at ceiling level (3.9) with insulating materials (6.2).",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q2-b",
+      "markBankTopicId": "cons-5-2",
+      "canonicalTopicIds": [
+        "cons-5-2",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Cold water storage (5.2) protected with insulation (6.2).",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q2-c",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-6-3"
+      ],
+      "canonicalTopicReview": "Insulation (6.2) and running costs (6.3).",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q2-complete",
+      "markBankTopicId": "cons-3-9",
+      "canonicalTopicIds": [
+        "cons-3-9",
+        "cons-6-2",
+        "cons-5-2",
+        "cons-6-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q3-a",
+      "markBankTopicId": "cons-5-4",
+      "canonicalTopicIds": [
+        "cons-5-4"
+      ],
+      "canonicalTopicReview": "Surface water, gutters and rainwater pipes (5.4).",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q3-b",
+      "markBankTopicId": "cons-5-2",
+      "canonicalTopicIds": [
+        "cons-5-2",
+        "cons-5-6"
+      ],
+      "canonicalTopicReview": "Cold water storage and supply (5.2) to a sanitary fitment (5.6).",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q3-c",
+      "markBankTopicId": "cons-5-4",
+      "canonicalTopicIds": [
+        "cons-5-4",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Rainwater (5.4) reused in a sustainable built environment (1.2).",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-drainage",
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q3-complete",
+      "markBankTopicId": "cons-5-4",
+      "canonicalTopicIds": [
+        "cons-5-4",
+        "cons-5-2",
+        "cons-5-6",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-drainage",
+        "construction-studies-ordinary-hot-water-space-heating",
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q4-a",
+      "markBankTopicId": "cons-4-5",
+      "canonicalTopicIds": [
+        "cons-4-5"
+      ],
+      "canonicalTopicReview": "Stud partitions and internal doors (4.5).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q4-b",
+      "markBankTopicId": "cons-4-5",
+      "canonicalTopicIds": [
+        "cons-4-5",
+        "cons-8-3"
+      ],
+      "canonicalTopicReview": "Stud partitions (4.5) and sound insulation (8.3).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-sound"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q4-c",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Layout design within the built environment (1.2).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q4-complete",
+      "markBankTopicId": "cons-4-5",
+      "canonicalTopicIds": [
+        "cons-4-5",
+        "cons-8-3",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-sound",
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q5-a",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-4-4"
+      ],
+      "canonicalTopicReview": "Scaled drawing (1.5) of a stairs (4.4).",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-question-one-drawing-questions",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q5-b",
+      "markBankTopicId": "cons-4-4",
+      "canonicalTopicIds": [
+        "cons-4-4",
+        "cons-10-1"
+      ],
+      "canonicalTopicReview": "Stairs (4.4) and their joints (10.1).",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q5-complete",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-4-4",
+        "cons-10-1"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-question-one-drawing-questions",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q6-a",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8"
+      ],
+      "canonicalTopicReview": "Personal protective equipment (1.8).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q6-b",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Safety on site (1.8) with power tools (9.4).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q6-c",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8"
+      ],
+      "canonicalTopicReview": "Safety precautions on site (1.8).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q6-complete",
+      "markBankTopicId": "cons-1-8",
+      "canonicalTopicIds": [
+        "cons-1-8",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q7-a",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Layout design of the built environment (1.2).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q7-b",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Layout design of the built environment (1.2).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q7-c",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "The sustainable built environment (1.2).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q7-complete",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q8-None-strip-foundation",
+      "markBankTopicId": "cons-2-4",
+      "canonicalTopicIds": [
+        "cons-2-4",
+        "cons-3-10",
+        "cons-6-5",
+        "cons-5-8",
+        "cons-1-2",
+        "cons-5-5",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-3-3",
+        "cons-9-2",
+        "cons-5-3"
+      ],
+      "canonicalTopicReview": "The union of the nine printed terms: Strip foundations (2.4). Eaves (3.10). Airtightness (6.5). Domestic electricity (5.8) from a renewable source in the built environment (1.2). Septic tanks (5.5). Joints (10.1) and the choice of joint (10.4). The Ordinary reference taxonomy has no joinery heading; the term keeps the Wood, Rot & Ventilation association used for joinery, and 10.1/10.4 are declared outside that heading’s crosswalk. Cavity walls (3.3). Power tools (9.2). The Ordinary reference taxonomy has no tools heading; the term keeps the Wood, Rot & Ventilation association used for tools and craft, and 9.2 is declared outside that heading’s crosswalk. Heating systems (5.3).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-air-tightness-condensation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-drainage",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q9-a",
+      "markBankTopicId": "cons-3-2",
+      "canonicalTopicIds": [
+        "cons-3-2",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "External cladding (3.2) in a durable timber (10.3).",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q9-b",
+      "markBankTopicId": "cons-3-5",
+      "canonicalTopicIds": [
+        "cons-3-5"
+      ],
+      "canonicalTopicReview": "Windows (3.5) letting more daylight into the house.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q9-c",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Extending a dwelling in the built environment (1.2).",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q9-complete",
+      "markBankTopicId": "cons-3-2",
+      "canonicalTopicIds": [
+        "cons-3-2",
+        "cons-10-3",
+        "cons-3-5",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    }
+  ]
+}

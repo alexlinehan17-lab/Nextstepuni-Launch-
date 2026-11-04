@@ -1,3 +1,5 @@
+import { queueTopicStudy, queueTopicPractice } from '../utils/topicLaunch';
+import { ArrowRight } from 'lucide-react';
 
 /**
  * @license
@@ -7,10 +9,9 @@
 import React, { useState, useEffect, useCallback, useRef, lazy, Suspense } from 'react';
 import { useToast } from './Toast';
 import { AnimatePresence } from 'framer-motion';
-import { MotionButton, MotionDiv } from './Motion';
+import { MotionDiv } from './Motion';
 import { FileSearch,
-    ArrowLeft,
-    Lock, Compass, Target,
+    Compass, Target,
     CalendarDays, Calculator, GitBranch,
     Map, Milestone, Highlighter, Users, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck, Waypoints
 } from 'lucide-react';
@@ -23,6 +24,7 @@ import { computeStreak } from './timetableAlgorithm';
 import { type StudyReflection, type PointsData, type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
 import SubjectOnboarding from './SubjectOnboarding';
 import { LoadingSpinner } from './LoadingSpinner';
+import { getToolLoadingLabel } from '../utils/loadingLabels';
 // Tool components are code-split: each loads its own chunk only when the
 // student opens it (rendered inside <Suspense> below). This keeps the
 // InnovationZone shell light and, crucially, defers the heavy Three.js
@@ -42,7 +44,7 @@ const MarkBank = lazy(() => import('./MarkBank/MarkBank'));
 const DiagramVault = lazy(() => import('./DiagramVault/DiagramVault'));
 const AnswerArchitect = lazy(() => import('./AnswerArchitect/AnswerArchitect'));
 const DefinitionDrill = lazy(() => import('./DefinitionDrill/DefinitionDrill'));
-const CourseworkCompanion = lazy(() => import('./CourseworkCompanion/CourseworkCompanion'));
+const CourseworkStudio = lazy(() => import('./CourseworkStudio/CourseworkStudio'));
 const HowTheyDidIt = lazy(() => import('./HowTheyDidIt'));
 const YourPossibleLife = lazy(() => import('./YourPossibleLife'));
 const OralExamTrainer = lazy(() => import('./OralExamTrainer'));
@@ -56,13 +58,17 @@ const AcademicJourneyGame = lazy(() => import('./AcademicJourneyGame'));
 import ToolErrorBoundary from './ToolErrorBoundary';
 import PointsPanel from './PointsPanel';
 import { useNavigation } from '../contexts/NavigationContext';
+import ToolMasthead, { ToolArtwork, ToolIntroduction, ToolIntroductionContext } from './launchpad/ToolMasthead';
+import LaunchpadToolCard from './launchpad/LaunchpadToolCard';
+import BackButton from './ui/BackButton';
+import { InnovationZoneIcon } from './sectionIcons';
 import { ToolHeader } from './ToolHeader';
 import ToolIconBlob, { type ToolIconKey } from './ToolIconBlob';
 import { isActiveSeniorYear, isLcaYear } from '../utils/authUtils';
 import LaunchpadGuidance from './LaunchpadGuidance';
 import { trackFunnel } from '../utils/funnel';
 import { staffMessageText } from '../data/staffEncouragement';
-import { TOOL_GUIDANCE, type ToolRecommendation } from './launchpadGuidanceData';
+import { type ToolRecommendation } from './launchpadGuidanceData';
 import { useOptionalProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
 import { type ProgressDocument } from '../services/progressRepository';
@@ -93,19 +99,19 @@ interface ToolChrome {
  * reading column. `max-w-4xl` yields 848px of usable width, which is right for a
  * page of prose and wrong for a two-pane workspace.
  */
-const WIDE_TOOLS = new Set(['mark-bank', 'your-possible-life', 'war-room', 'journey']);
+const WIDE_TOOLS = new Set(['mark-bank', 'your-possible-life', 'war-room', 'journey', 'planner', 'paper-trail', 'coursework-companion']);
 
 const TOOL_CHROME: Record<string, ToolChrome> = {
   'journey':         { themeColor: '#8B82B8', eyebrow: 'Track · Simulator',           subtitle: 'Navigate the choices of your final school year, then turn the outcome into a practical next step.', showHeader: true },
   // Compatibility alias for old links. It now opens Points Passport directly
   // on Grade Planner, so students see one points product rather than two.
-  'cao-simulator':   { themeColor: '#B8A079', eyebrow: 'Track · Points planning',      subtitle: 'Your points, mock history, grade plans and course reach in one place.',             showHeader: true  },
-  'planner':         { themeColor: '#7DA37A', eyebrow: 'Plan · Planner',              subtitle: 'A data-driven study planner powered by your subject goals.',                       showHeader: true  },
-  'war-room':        { themeColor: '#F26B1F', eyebrow: 'Plan · Strategy',             subtitle: 'Know what needs attention, understand why, and decide what to do next.', showHeader: true },
+  'cao-simulator':   { themeColor: '#B8A079', eyebrow: 'Track · Points planning',      subtitle: 'Your points, mock history, grade plans and course reach in one place.',             showHeader: false  },
+  'planner':         { themeColor: '#7DA37A', eyebrow: 'Plan · Planner',              subtitle: 'A data-driven study planner powered by your subject goals.',                       showHeader: false  },
+  'war-room':        { themeColor: '#F26B1F', eyebrow: 'Make your next move', subtitle: 'A clear focus, with the evidence behind it.', showHeader: true },
   // Comeback Engine owns its editorial page heading; the shared ToolHeader
   // repeated both the product name and the only h1 on the page.
   'comeback':        { themeColor: '#E08938', eyebrow: 'Plan · Comeback',             subtitle: 'Find your quickest wins and build a comeback plan.',                                showHeader: false },
-  'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         showHeader: true  },
+  'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         showHeader: false  },
   // The intro, quiz progress and results each provide their own stage heading.
   // Keeping the shared hero mounted above all three pushed the first action
   // beneath the fold on compact iPhones.
@@ -113,29 +119,38 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   // Compatibility alias: old Syllabus X-Ray links now open War Room directly
   // on its cohort-safe Subject Coverage view.
   'syllabus-xray':   { themeColor: '#F26B1F', eyebrow: 'Plan · Subject coverage',     subtitle: 'Your official topic map, confidence and debrief gaps in one trusted workspace.', showHeader: true  },
-  'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  showHeader: true  },
+  'points-passport': { themeColor: '#B8A079', eyebrow: 'Track · Tracker',             subtitle: 'Mock trends and grade bargains, all at a glance.',                                  showHeader: false  },
   'exam-reps':       { themeColor: '#5E9C7B', eyebrow: 'Technique · Practice',        subtitle: 'One real exam question at a time — marked the examiner’s way, so you see exactly where the marks were.', showHeader: true  },
   'college-compass': { themeColor: '#2A7D6F', eyebrow: 'Plan · Roadmap',              subtitle: 'Your year-by-year runway to college — every CAO, HEAR, DARE and scholarship deadline, in order.', showHeader: false },
-  'catch-up-lane':   { themeColor: '#0E9AA8', eyebrow: 'Catch up · Recovery',         subtitle: 'Missed some classes? Pick a subject and get caught up one quick topic at a time — no catch-up is too small.', showHeader: true  },
+  'catch-up-lane':   { themeColor: '#0E9AA8', eyebrow: 'Catch up · Recovery',         subtitle: 'Missed some classes? Pick a subject and get caught up one quick topic at a time — no catch-up is too small.', showHeader: false  },
   // No header. Mark Bank is used daily, and a tool built for daily use must not
   // re-explain itself daily: the eyebrow, title and subtitle cost ~238px at the top
   // of every screen INCLUDING every review card, which is where the exam question
   // should be. The subtitle still does its job on the tool tile, read once.
-  'mark-bank':       { themeColor: '#123B2B', eyebrow: 'Practice · Spaced repetition', subtitle: 'Real exam questions, marked point by point against the real scheme, brought back to you right before you\u2019d forget them.', showHeader: false },
-  'paper-trail':     { themeColor: '#33658A', eyebrow: 'Understand · Exam archive',   subtitle: 'Every past paper and marking scheme, free — your subjects, your level, three taps.', showHeader: true },
-  'topic-atlas':     { themeColor: '#B4530A', eyebrow: 'Understand · Topic map',      subtitle: 'Every question the SEC has ever asked, mapped by topic — with the marking scheme one tap away.', showHeader: true },
+  'mark-bank':       { themeColor: '#123B2B', eyebrow: 'Practice · Flashcards', subtitle: 'Flashcards made from real exam questions, marked point by point against the real scheme and brought back to you right before you\u2019d forget them.', showHeader: false },
+  'paper-trail':     { themeColor: '#33658A', eyebrow: 'Understand · Exam archive',   subtitle: 'Every past paper and marking scheme, free — your subjects, your level, three taps.', showHeader: false },
+  'topic-atlas':     { themeColor: '#B4530A', eyebrow: 'Understand · Topic map',      subtitle: 'Every question the SEC has ever asked, mapped by topic — with the marking scheme one tap away.', showHeader: false },
   'diagram-vault':   { themeColor: '#F26B1F', eyebrow: 'Understand · Exam diagrams',  subtitle: 'Every diagram, graph, map and chart that has come up — cropped from the paper and decoded.', showHeader: true },
   'answer-architect': { themeColor: '#F26B1F', eyebrow: 'Understand · Top-answer skeletons', subtitle: 'The mark-earning skeleton of a top answer — the beats a full-marks answer hits, in order, from the SEC scheme.', showHeader: true },
   'definition-drill': { themeColor: '#F26B1F', eyebrow: 'Understand · Key definitions', subtitle: 'Drill the exact mark-earning wording the SEC scheme awards the definition marks for.', showHeader: true },
-  'coursework-companion': { themeColor: '#F26B1F', eyebrow: 'Understand · Coursework & projects', subtitle: 'The coursework, project and practical components — marked exactly as the filed SEC scheme prints it.', showHeader: true },
-  'command-word-reflex': { themeColor: '#6366F1', eyebrow: 'Technique · Exam skills', subtitle: 'Half of exam technique is reading the question right. Spot the command word in real questions and learn what it’s really asking — and the trap that loses marks.', showHeader: true },
-  'how-they-did-it':  { themeColor: '#0E7C6B', eyebrow: 'Mindset · Real stories', subtitle: 'Real people who started where you are — money tight, learning differently, new to the country, first in the family — and the actual moves they made.', showHeader: true },
+  'coursework-companion': { themeColor: '#F26B1F', eyebrow: 'Coursework Studio', subtitle: 'Keep the evidence. Make the connection. Know your next move.', showHeader: false },
+  'command-word-reflex': { themeColor: '#6366F1', eyebrow: 'Technique · Exam skills', subtitle: 'Half of exam technique is reading the question right. Spot the command word in real questions and learn what it’s really asking — and the trap that loses marks.', showHeader: false },
+  'how-they-did-it':  { themeColor: '#0E7C6B', eyebrow: 'Real people. Useful moves.', subtitle: 'See the route they took, and a move you can borrow.', showHeader: true },
   // The experience has its own stage header and editorial title on every step.
   // A second full ToolHeader duplicated both identity and heading hierarchy.
   'your-possible-life': { themeColor: '#2E6E8E', eyebrow: 'Understand · Career discovery', subtitle: 'Explore real careers, step inside an ordinary day, and keep routes that feel worth testing.', showHeader: false },
   'oral-trainer':    { themeColor: '#4C8C5E', eyebrow: 'Technique · Speaking exam', subtitle: 'The one exam no app prepares you for — the oral. Rehearse it out loud, record yourself, and know exactly where you stand on every part.', showHeader: true },
   'examiners-chair': { themeColor: '#9E4A3E', eyebrow: 'Technique · Marking literacy', subtitle: 'Sit on the other side of the desk. Mark real-style scripts against the real SEC rules, and learn to see your own answers the way the examiner will.', showHeader: true },
 };
+
+const MOBILE_TOOL_TITLES: Record<string, string> = { 'mark-bank': 'The Mark Bank', planner: 'Your Planner' };
+const MOBILE_TOOL_EYEBROWS: Record<string, string> = {
+      'mark-bank': 'Work the real questions', planner: 'A little structure',
+      'points-passport': 'Your grades, made visible', 'future-finder-revamped': 'Start with you',
+      'paper-trail': 'Your exam archive',
+    };
+const MOBILE_TOOL_SUBTITLES: Record<string, string> = { 'mark-bank': 'Build your answer. See where the marks come from.', 'points-passport': 'Your current grades, your goal and the subjects that contribute.', 'future-finder-revamped': 'Find possibilities worth exploring.', 'paper-trail': 'Exam papers & marking schemes.', planner: 'A little structure, with room to study, revisit and rest.' };
+
 
 interface StudyNowBlock {
   subject: string;
@@ -179,8 +194,6 @@ function validatePointsData(raw: unknown): PointsData {
     };
 }
 
-/** Suspense fallback shown while a tool's code-split chunk loads. */
-const ToolLoadingFallback: React.FC = () => <LoadingSpinner />;
 const EMPTY_PROGRESS_DOC: ProgressDocument = {};
 const NOOP_DEMO_UPDATE: (updater: (current: ProgressDocument) => ProgressDocument) => void = () => {};
 
@@ -228,6 +241,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     const [reflections, setReflections] = useState<StudyReflection[]>([]);
     const [pointsData, setPointsData] = useState<PointsData>({ totalEarned: 0, totalSpent: 0 });
     const [cosmeticUnlocks, setCosmeticUnlocks] = useState<CosmeticUnlocks>({ avatarSeeds: [], themeColors: [], cardStyles: [] });
+    const [plannerSkippedBlocks, setPlannerSkippedBlocks] = useState<string[]>([]);
     const [earnedRest, setEarnedRest] = useState<EarnedRest>({ skippedSessions: [], restDayPasses: [] });
     const [schoolEvents, setSchoolEvents] = useState<SchoolEvent[]>([]);
     const [gcRecommendations, setGcRecommendations] = useState<Record<string, { fromName: string; message?: string }>>({});
@@ -286,6 +300,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             const data = rawProgressDoc;
             if (data.subjectProfile) setSubjectProfile({ restDays: [], ...data.subjectProfile });
             setTimetableCompletions(data.timetableCompletions ?? {});
+            setPlannerSkippedBlocks(Array.isArray(data.plannerSkippedBlocks) ? data.plannerSkippedBlocks.filter((id): id is string => typeof id === 'string') : []);
             if (data.timetableStreak) setTimetableStreak(data.timetableStreak);
             setReflections(data.reflections ?? []);
             setPointsData(validatePointsData(data.pointsData));
@@ -304,6 +319,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                 if (cancelled) return;
                 if (progressDoc.exists()) {
                     const data = progressDoc.data();
+                    setPlannerSkippedBlocks(Array.isArray(data.plannerSkippedBlocks) ? data.plannerSkippedBlocks.filter((id: unknown): id is string => typeof id === 'string') : []);
                     if (data.subjectProfile) {
                         setSubjectProfile({ restDays: [], ...data.subjectProfile } as StudentSubjectProfile);
                     }
@@ -496,6 +512,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
         }
     }, [executeToggle, isDemo, pointsData, timetableCompletions]);
 
+    const handleSkipPlannerBlock = (dateKey: string, blockId: string, skipped: boolean) => {
+        const key = `${dateKey}|${blockId}`;
+        const previous = plannerSkippedBlocks;
+        const next = skipped ? [...new Set([...previous, key])] : previous.filter(id => id !== key);
+        setPlannerSkippedBlocks(next);
+        if (isDemo) updateDemoProgress(current => ({ ...current, plannerSkippedBlocks: next }));
+        else if (user?.uid) saveInBackground(setDoc(doc(db, 'progress', user.uid), { plannerSkippedBlocks: next }, { merge: true }), 'InnovationZone.savePlannerSkips', () => setPlannerSkippedBlocks(previous));
+    };
+
     const handleToolClick = useCallback((toolId: string, needsProfile: boolean) => {
         if (needsProfile && !profileLoaded) return;
         if (needsProfile && !subjectProfile) {
@@ -547,25 +572,25 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-slate-100 dark:bg-slate-800/40', iconColor: 'text-slate-600 dark:text-slate-300',
             accentBarColor: 'bg-slate-500', tagBg: 'bg-slate-100 dark:bg-slate-800/40', tagText: 'text-slate-600 dark:text-slate-300',
             hoverBorder: 'hover:border-slate-400/50 dark:hover:border-slate-500/40',
-            component: subjectProfile && user ? <PointsPassport uid={user.uid} profile={subjectProfile} initialTab="planner" onOpenSettings={() => setShowOnboarding(true)} /> : null,
+            component: subjectProfile && user ? <PointsPassport uid={user.uid} profile={subjectProfile} onProfileChange={handleOnboardingComplete} initialTab="planner" onOpenSettings={() => setShowOnboarding(true)} /> : null,
         },
         {
-            id: 'planner', title: 'Spaced Repetition Timetable', description: 'A data-driven study planner powered by your subject goals.', icon: CalendarDays, needsProfile: true,
+            id: 'planner', title: 'Planner & Study', description: 'Your day, in manageable blocks.', icon: CalendarDays, needsProfile: true,
             curriculum: 'both' as const,
             tag: 'Planner', accentHex: '#6366f1', gridClass: 'md:col-span-2',
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={(_s, _t, newDuration) => persistProfileUpdate({ ...subjectProfile, defaultBlockDuration: newDuration })} onRestDaysChange={(days) => persistProfileUpdate({ ...subjectProfile, restDays: days })} /> : null,
+            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} deferredBlocks={plannerSkippedBlocks} onSkipBlock={handleSkipPlannerBlock} onPlanSettingsChange={(restDays, defaultBlockDuration) => persistProfileUpdate({ ...subjectProfile, restDays, defaultBlockDuration })} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={(_s, _t, newDuration) => persistProfileUpdate({ ...subjectProfile, defaultBlockDuration: newDuration })} onRestDaysChange={(days) => persistProfileUpdate({ ...subjectProfile, restDays: days })} /> : null,
         },
         {
-            id: 'war-room', title: 'War Room', description: 'Your strategic study command centre.', icon: Target, needsProfile: true,
+            id: 'war-room', title: 'War Room', description: 'Decide what needs your attention.', icon: Target, needsProfile: true,
             curriculum: 'senior' as const,
             tag: 'Strategy', accentHex: '#dc2626', gridClass: 'md:col-span-2',
             iconBg: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400',
             accentBarColor: 'bg-red-500', tagBg: 'bg-red-100 dark:bg-red-900/30', tagText: 'text-red-700 dark:text-red-400',
             hoverBorder: 'hover:border-red-400/50 dark:hover:border-red-500/40',
-            component: subjectProfile ? <WarRoom uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} /> : null,
+            component: subjectProfile ? <WarRoom onStudyTopic={selection => { queueTopicStudy(user!.uid, selection); nav.navigateToStudySession(); }} onPracticeTopic={(subjectId, topicId, level) => { queueTopicPractice(user!.uid, subjectId, topicId, level); setActiveTool('topic-atlas'); }} uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} /> : null,
         },
         {
             id: 'comeback', title: 'Comeback Engine', description: 'A realistic seven-day recovery plan built from your actual study pattern.', icon: Sunrise, needsProfile: true,
@@ -599,7 +624,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             component: subjectProfile ? <FutureFinder uid={user!.uid} profile={subjectProfile} onOpenCareerPaths={() => setActiveTool('your-possible-life')} /> : null,
         },
         {
-            id: 'future-finder-revamped', title: 'Future Finder', description: 'Interest-based (RIASEC) course matching — ranked CAO courses that fit who you are.', icon: Compass, needsProfile: true,
+            id: 'future-finder-revamped', title: 'Future Finder', description: 'Start with your interests. Explore possible routes.', icon: Compass, needsProfile: true,
             curriculum: 'senior' as const,
             tag: 'Career Discovery', accentHex: '#C76489', gridClass: 'md:col-span-2',
             iconBg: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-700 dark:text-pink-300',
@@ -617,16 +642,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400',
             accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
             hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
-            component: subjectProfile ? <WarRoom uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} initialMode="review" initialReviewPanel="subjects" /> : null,
+            component: subjectProfile ? <WarRoom onStudyTopic={selection => { queueTopicStudy(user!.uid, selection); nav.navigateToStudySession(); }} onPracticeTopic={(subjectId, topicId, level) => { queueTopicPractice(user!.uid, subjectId, topicId, level); setActiveTool('topic-atlas'); }} uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} initialMode="review" initialReviewPanel="subjects" /> : null,
         },
         {
-            id: 'points-passport', title: 'Points Passport', description: 'Mock trends & grade bargains at a glance.', icon: Map, needsProfile: true,
+            id: 'points-passport', title: 'Points Passport', description: 'Your grades, points and possible next moves.', icon: Map, needsProfile: true,
             curriculum: 'senior' as const,
             tag: 'Tracker', accentHex: '#0ea5e9', gridClass: 'md:col-span-2',
             iconBg: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400',
             accentBarColor: 'bg-sky-500', tagBg: 'bg-sky-100 dark:bg-sky-900/30', tagText: 'text-sky-700 dark:text-sky-400',
             hoverBorder: 'hover:border-sky-400/50 dark:hover:border-sky-500/40',
-            component: subjectProfile && user ? <PointsPassport uid={user.uid} profile={subjectProfile} onOpenSettings={() => setShowOnboarding(true)} /> : null,
+            component: subjectProfile && user ? <PointsPassport uid={user.uid} profile={subjectProfile} onProfileChange={handleOnboardingComplete} onOpenSettings={() => setShowOnboarding(true)} /> : null,
         },
         {
             // Senior-cycle only (TY/5th/6th). `seniorYearsOnly` additionally
@@ -652,13 +677,13 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             component: <CatchUpLane uid={user?.uid} studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} studentCycle={curriculumLevel === 'junior' ? 'junior-cycle' : 'leaving-cert'} />,
         },
         {
-            id: 'mark-bank', title: 'Mark Bank', description: 'Real exam questions, marked point by point \u2014 brought back before you forget.', icon: ListChecks, needsProfile: false,
+            id: 'mark-bank', title: 'Mark Bank', description: 'Flashcards from real exam questions, marked point by point \u2014 brought back before you forget.', icon: ListChecks, needsProfile: false,
             curriculum: 'senior' as const,
             tag: 'Spaced repetition', accentHex: '#123B2B', gridClass: 'md:col-span-2',
             iconBg: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-900 dark:text-emerald-300',
             accentBarColor: 'bg-emerald-800', tagBg: 'bg-emerald-100 dark:bg-emerald-900/30', tagText: 'text-emerald-900 dark:text-emerald-400',
             hoverBorder: 'hover:border-emerald-400/50 dark:hover:border-emerald-500/40',
-            component: <MarkBank uid={user?.uid} studentSubjects={subjectProfile?.subjects} />,
+            component: <MarkBank examDate={subjectProfile?.examStartDate} uid={user?.uid} studentSubjects={subjectProfile?.subjects} />,
         },
         {
             id: 'paper-trail', title: 'Paper Trail', description: 'Every SEC past paper and marking scheme — three taps away.', icon: FileSearch, needsProfile: false,
@@ -708,13 +733,13 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             component: <DefinitionDrill studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
         },
         {
-            id: 'coursework-companion', title: 'Coursework Companion', description: 'The coursework, project and practical components — and exactly how the SEC scheme marks them.', icon: FolderCheck, needsProfile: false,
+            id: 'coursework-companion', title: 'Coursework Studio', description: 'Keep your evidence, connect your thinking and move your project forward.', icon: FolderCheck, needsProfile: false,
             curriculum: 'senior' as const,
             tag: 'Coursework & projects', accentHex: '#F26B1F', gridClass: 'md:col-span-2',
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-700 dark:text-orange-300',
             accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
             hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
-            component: <CourseworkCompanion studentSubjects={subjectProfile?.subjects.map(s => s.subjectName)} />,
+            component: <CourseworkStudio uid={user?.uid} studentSubjects={subjectProfile?.subjects} examDate={subjectProfile?.examStartDate} yearGroup={user?.yearGroup} isLca={isLcaYear(user?.yearGroup)} />,
         },
         {
             id: 'oral-trainer', title: 'Irish Oral Trainer', description: 'Rehearse the Irish oral out loud, record yourself, and track your readiness on every part.', icon: Mic, needsProfile: false,
@@ -800,7 +825,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     // (curriculumLevel itself is now declared above the tools array.)
     // Workshop (WIP) tools — parked out of the main grid but still openable via
     // the sidebar Workshop page's deep-links (currentTool lookup is unfiltered).
-    const WIP_TOOL_IDS = new Set(['diagram-vault', 'answer-architect', 'definition-drill', 'oral-trainer', 'examiners-chair', 'coursework-companion']);
+    const WIP_TOOL_IDS = new Set(['diagram-vault', 'answer-architect', 'definition-drill', 'oral-trainer', 'examiners-chair']);
     const curriculumVisibleTools = tools.filter(t => {
       // Old CAO Simulator URLs and module links remain valid, but the duplicate
       // tile is removed now that all of its capability lives in Points Passport.
@@ -821,7 +846,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
 
     const filteredTools = curriculumVisibleTools.filter(tool =>
         (activeFilter === 'all' || TOOL_CATEGORIES[tool.id] === activeFilter || (mobileAppDesign && activeFilter === 'practice' && PRACTICE_TOOL_IDS.has(tool.id)))
-        && (!mobileAppDesign || matchesToolSearch(tool, toolQuery)),
+        && matchesToolSearch(tool, toolQuery),
     );
     const recommendationAvailableToolIds = curriculumVisibleTools
       .filter(tool => !tool.needsProfile || Boolean(subjectProfile))
@@ -866,10 +891,13 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     }, [recommendationStorageKey, mobileAppDesign]);
 
     const currentTool = tools.find(t => t.id === activeTool);
+    const toolTitle = currentTool ? MOBILE_TOOL_TITLES[currentTool.id] ?? currentTool.title : 'The Launchpad';
+    const toolEyebrow = currentTool ? MOBILE_TOOL_EYEBROWS[currentTool.id] ?? TOOL_CHROME[currentTool.id]?.eyebrow ?? 'Your next move' : 'Your next move';
+    const toolArtwork = (activeTool === 'syllabus-xray' ? 'war-room' : activeTool ?? 'meet-tools') as ToolIconKey;
 
   return (
     <div
-      className="product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24"
+      className={`${mobileAppDesign ? 'mobile-editorial ' : ''}${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24`}
       // Fixed header at top is ~80px tall (back button + eyebrow + title) + safe-area-inset-top.
       // The journey/war-room tools historically had a smaller header offset (pt-14)
       // which left content peeking out behind the bar. Use the same generous offset
@@ -879,8 +907,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
       }}
     >
 
-      <header
-        className="fixed top-0 left-0 right-0 z-[60] bg-[var(--surface-paper)] md:px-10 border-b border-[var(--outline-soft)]"
+      <header data-student-page-header
+        className={`lp-navigation-header fixed top-0 left-0 right-0 z-[60] bg-[var(--surface-paper)] md:px-10 border-b border-[var(--outline-soft)]`}
         style={{
           paddingTop: 'calc(16px + var(--sat, 0px))',
           paddingBottom: '16px',
@@ -888,18 +916,21 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
           paddingRight: 'calc(16px + var(--sar, 0px))',
         }}
       >
+        {mobileAppDesign ? <div className="lp-mobile-tool-header">
+          <BackButton label={activeTool ? 'Back to Launchpad' : 'Back to home'} onClick={activeTool ? () => nav.navigateToInnovationZone() : onBack} />
+          <div className="lp-mobile-tool-title"><p>{toolEyebrow}</p><h1 className="lp-navigation-title">{toolTitle}</h1></div>
+          <div aria-hidden="true">{activeTool ? <ToolArtwork tool={toolArtwork} className="lp-navigation-art" /> : <div className="lp-navigation-art"><InnovationZoneIcon /></div>}</div>
+        </div> : (
         <div className="container mx-auto flex min-w-0 items-center justify-between gap-3">
           <div className="flex min-w-0 items-center gap-3 md:gap-8">
-            <MotionButton type="button" aria-label={activeTool ? 'Back to Launchpad' : 'Back to home'} whileHover={{ y: -1 }} whileTap={{ x: 1, y: 1 }} onClick={activeTool ? () => nav.goBack() : onBack} className={`p-2.5 rounded-xl bg-[var(--surface-paper)] border-[1.5px] border-[var(--outline-strong)] shadow-[2px_2px_0_0_var(--outline-strong)] active:shadow-none transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] ${mobileAppDesign ? 'min-h-11 min-w-11 shrink-0' : ''}`}>
-              <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
-            </MotionButton>
+            <BackButton label={activeTool ? 'Back to Launchpad' : 'Back to home'} showLabel onClick={activeTool ? () => nav.navigateToInnovationZone() : onBack} />
             <div className="hidden md:block h-10 w-px bg-[var(--outline-soft)]" />
             <div className="min-w-0">
-              <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">Explore</p>
+              <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">{mobileAppDesign ? toolEyebrow : 'Explore'}</p>
               {activeTool ? (
-                <p className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</p>
+                mobileAppDesign ? <h1 className="lp-navigation-title font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white">{toolTitle}</h1> : <p className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</p>
               ) : (
-                <h1 className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</h1>
+                <h1 className="lp-navigation-title font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</h1>
               )}
             </div>
           </div>
@@ -907,15 +938,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
               A second settings action here sat underneath that fixed cluster and
               appeared as a stray button. Subject editing remains available from
               the profile/settings flow. */}
-          <div aria-hidden="true" />
+          <div aria-hidden="true">{mobileAppDesign && <ToolArtwork tool={toolArtwork} className="lp-navigation-art" />}</div>
         </div>
+        )}
       </header>
 
       {/* Tools that lay out their own work surface. `max-w-4xl` gives 848px of
           usable width, which is a reading column, not a desk: Mark Bank puts a
           question and its marking scheme side by side and needs 1092px. Tools
           listed here also own their top spacing, so `pt-16` comes off. */}
-      <main className={`relative z-10 w-full flex-grow px-4 sm:px-6 ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'} ${activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' || WIDE_TOOLS.has(activeTool ?? '') ? 'pt-0' : 'pt-6 md:pt-16'}`}>
+      <main data-tool={activeTool ?? 'catalogue'} className={`${activeTool === 'journey' ? '' : 'launchpad-approved'} relative z-10 w-full flex-grow ${activeTool === 'paper-trail' ? '' : 'px-4 sm:px-6'} ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'} ${activeTool === 'paper-trail' || activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' || WIDE_TOOLS.has(activeTool ?? '') ? 'pt-0' : 'pt-6 md:pt-16'}`}>
          <AnimatePresence mode="wait">
             {!activeTool ? (
                 <MotionDiv
@@ -927,7 +959,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                     {/* Inline points panel — replaces the old PointsExplainer modal */}
                     <PointsPanel open={showPointsPanel} onHide={hidePointsPanel} />
 
-                    <LaunchpadGuidance
+                    <div className="lp-catalogue-intro">
+                      {mobileAppDesign && <p className="lp-body">Find the right tool for the task.</p>}
+                      {!mobileAppDesign && <ToolMasthead mascot tool="meet-tools" eyebrow="Your next move" title="The Launchpad." subtitle="Find the right tool for the task in front of you." />}
+                      {!mobileAppDesign && subjectProfile && <button className="lp-panel lp-resume" onClick={() => handleToolClick(toolRecommendation?.toolId ?? 'planner', true)}>
+                        <span className="lp-eyebrow">{toolRecommendation ? 'Your recommendation' : 'A place to start'}</span>
+                        <strong className="lp-title">{toolRecommendation ? tools.find(t => t.id === toolRecommendation.toolId)?.title : 'Your plan for today'}</strong>
+                        <span>Open {toolRecommendation ? 'this tool' : 'Planner'} <ArrowRight size={18} /></span>
+                      </button>}
+                    </div>
+                    <LaunchpadGuidance compact
                       tools={curriculumVisibleTools.map(tool => ({
                         id: tool.id,
                         title: tool.title,
@@ -942,10 +983,10 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                     />
 
                     {/* Filter pills + Points trigger — same row, opposite ends */}
-                    {mobileAppDesign && <label className="mb-4 block text-sm font-semibold">Find a tool or task<input type="search" value={toolQuery} onChange={event => setToolQuery(event.target.value)} placeholder="Try “past papers”" className="mt-2 block min-h-12 w-full rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-4 text-base font-normal text-[var(--ink-primary)]" /></label>}
-                    <div className={mobileAppDesign ? "mb-3 flex flex-wrap items-center justify-between gap-3" : "mb-8 flex items-center justify-between gap-3"}>
+                    {<label className="lp-catalogue-search mb-4 block text-sm font-semibold"><span>Find a tool or task</span><input type="search" value={toolQuery} onChange={event => setToolQuery(event.target.value)} placeholder="Find a tool or task" className="mt-2 block min-h-12 w-full rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-4 text-base font-normal text-[var(--ink-primary)]" /></label>}
+                    <div className="lp-catalogue-filters mb-5 flex items-center justify-between gap-3">
                         <HorizontalTabs
-                          className={mobileAppDesign ? "min-w-0 basis-full sm:flex-1 sm:basis-0" : "min-w-0 flex-1"}
+                          className="min-w-0 flex-1"
                           variant="pill"
                           value={activeFilter}
                           label="Launchpad categories"
@@ -978,23 +1019,23 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                                 >
                                     ?
                                 </span>
-                                Points
+                                <span className="lp-points-label">Points</span>
                             </button>
                         </div>
                     </div>
-                    {mobileAppDesign && <p className="mb-5 text-sm text-[var(--ink-secondary)]" role="status">{filteredTools.length} {filteredTools.length === 1 ? 'tool' : 'tools'}{toolQuery.trim() ? ' match your search' : ''}</p>}
+                    {<p className={`${toolQuery.trim() ? "mb-5 text-sm text-[var(--ink-secondary)]" : "sr-only"}`} role="status">{filteredTools.length} {filteredTools.length === 1 ? 'tool' : 'tools'}{toolQuery.trim() ? ' match your search' : ''}</p>}
 
                     {/* Empty state for JC users when no tools are curriculum-visible.
-                        JC-visible tools now include the Spaced Repetition Timetable,
+                        JC-visible tools now include Planner & Study,
                         Comeback Engine, Subject Explorer,
                         Command-Word Reflex, How They Did It and Exploring Options.
                         This branch is now only reachable when the user filters by a
                         category that contains zero JC-visible tools — so the message
                         reflects a filter mismatch, not a roadmap gap. */}
-                    {mobileAppDesign && filteredTools.length === 0 && <div className="border-y border-[var(--outline-soft)] py-8"><h2 className="font-serif text-2xl">No matching tools.</h2><p className="mt-2 text-sm leading-relaxed text-[var(--ink-secondary)]">Try another task, or see all the tools available for your year.</p><button type="button" className="mt-4 min-h-11 text-sm font-semibold underline underline-offset-4" onClick={() => { setToolQuery(''); setActiveFilter('all'); }}>Show all tools</button></div>}
+                    {filteredTools.length === 0 && <div className="border-y border-[var(--outline-soft)] py-8"><h2 className="font-serif text-2xl">No matching tools.</h2><p className="mt-2 text-sm leading-relaxed text-[var(--ink-secondary)]">Try another task, or see all the tools available for your year.</p><button type="button" className="mt-4 min-h-11 text-sm font-semibold underline underline-offset-4" onClick={() => { setToolQuery(''); setActiveFilter('all'); }}>Show all tools</button></div>}
 
                     {!mobileAppDesign && filteredTools.length === 0 && curriculumLevel === 'junior' && (
-                      <div className="rounded-2xl p-10 text-center" style={{ backgroundColor: '#FDF8F0', border: '2px solid #1A1A1A' }}>
+                      <div className="rounded-2xl p-10 text-center" style={{ backgroundColor: '#FFFFFF', border: '2px solid #1A1A1A' }}>
                         <p className="font-serif text-xl font-bold mb-2 text-[#1A1A1A]">No tools in this category for Junior Cycle yet.</p>
                         <p className="text-sm text-[#78716C] max-w-md mx-auto">
                           Try a different category, or hit "All" to see the tools we have ready for you — including Command-Word Reflex, the Spaced Repetition Timetable and the Comeback Engine.
@@ -1002,96 +1043,12 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                       </div>
                     )}
 
-                    {/* Bento card grid */}
-                    <div style={{ display: filteredTools.length === 0 ? 'none' : 'grid', gridTemplateColumns: mobileAppDesign ? 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))' : 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
-                        {filteredTools.map((tool, i) => {
-                            const profilePending = tool.needsProfile && !profileLoaded;
-                            const locked = tool.needsProfile && profileLoaded && !subjectProfile;
-                            const gcRecommended = gcRecommendations[tool.id];
-
-                            return (
-                                <MotionButton
-                                    key={tool.id}
-                                    type="button"
-                                    disabled={profilePending}
-                                    aria-label={profilePending ? `Loading profile for ${tool.title}` : locked ? `Set up profile to unlock ${tool.title}` : `Open ${tool.title}`}
-                                    initial={{ opacity: 0, y: 16 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={mobileAppDesign ? { duration: 0.2, delay: Math.min(i, 4) * 0.025 } : { duration: 0.3, delay: i * 0.04 }}
-                                    onClick={profilePending ? undefined : () => handleToolClick(tool.id, tool.needsProfile)}
-                                    className={`flex flex-col text-left rounded-2xl border-[1.5px] overflow-hidden transition-all ${
-                                        profilePending
-                                            ? 'border-[var(--outline-soft)] cursor-not-allowed'
-                                            : 'border-[var(--outline-strong)] hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_var(--outline-strong)] cursor-pointer'
-                                    } bg-[var(--surface-paper)]`}
-                                >
-                                    <div className="grid flex-1 grid-cols-[72px_minmax(0,1fr)] gap-x-4 p-4 sm:flex sm:flex-col sm:p-6">
-                                        {/* Painted blob + hand-drawn ink illustration. Disabled state
-                                            falls back to the muted lock tile so locked tools still
-                                            communicate gating without showing the bright illustration. */}
-                                        <div className="row-span-5 mb-0 sm:mb-4">
-                                            {profilePending || locked ? (
-                                                <div
-                                                    className="flex items-center justify-center"
-                                                    style={{
-                                                        width: 72,
-                                                        height: 72,
-                                                        borderRadius: 18,
-                                                        background: '#E7E5E2',
-                                                        opacity: 0.7,
-                                                    }}
-                                                >
-                                                    <Lock size={20} className="text-zinc-500" />
-                                                </div>
-                                            ) : (
-                                                <ToolIconBlob toolId={tool.id as ToolIconKey} size={72} />
-                                            )}
-                                        </div>
-
-                                        {/* Category label */}
-                                        <p className="mb-1 text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 sm:mb-1.5">
-                                            {profilePending ? 'Checking profile' : locked ? 'Needs Profile' : tool.tag}
-                                        </p>
-
-                                        {/* Title */}
-                                        <h3 className={`mb-1 text-base font-semibold sm:mb-1.5 ${
-                                            profilePending ? 'text-zinc-400 dark:text-zinc-600' : 'text-zinc-900 dark:text-white'
-                                        }`}>
-                                            {tool.title}
-                                        </h3>
-
-                                        {/* Description */}
-                                        <p className={`${mobileAppDesign ? 'flex-1 text-[13px] leading-relaxed' : 'line-clamp-2 flex-1 text-xs leading-relaxed sm:line-clamp-none'} ${
-                                            profilePending ? 'text-zinc-400 dark:text-zinc-600' : 'text-zinc-500 dark:text-zinc-400'
-                                        }`}>
-                                            {profilePending ? 'Checking your subject profile…' : locked ? 'Add your subjects to unlock this tool.' : tool.description}
-                                        </p>
-
-                                        {!profilePending && !locked && TOOL_GUIDANCE[tool.id] && (
-                                            <p className="mt-3 hidden border-t border-[var(--outline-soft)] pt-3 text-[11px] leading-relaxed text-[var(--ink-secondary)] sm:block">
-                                                <span className="font-semibold text-[var(--ink-primary)]">Best when</span> {TOOL_GUIDANCE[tool.id].bestWhen}.
-                                            </p>
-                                        )}
-
-                                        {/* GC recommendation badge if present */}
-                                        {gcRecommended && !profilePending && !locked && (
-                                            <div className="mt-3 px-3 py-2 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200/60 dark:border-indigo-800/40">
-                                                <p className="text-[11px] font-semibold text-indigo-600 dark:text-indigo-400">
-                                                    Recommended by {gcRecommended.fromName || 'your counsellor'}
-                                                </p>
-                                            </div>
-                                        )}
-                                    </div>
-
-                                    {/* Bottom section with divider */}
-                                    <div className="hidden border-t border-zinc-100 px-6 py-3 dark:border-zinc-800/60 sm:block">
-                                        <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
-                                            {profilePending ? 'Loading profile…' : locked ? 'Set up profile' : 'Launch tool'}
-                                        </span>
-                                    </div>
-                                </MotionButton>
-                            );
-                        })}
+                    <div className="lp-tools-grid">
+                      {[...filteredTools].sort((a,b) => { const order = ['planner','paper-trail','future-finder-revamped','mark-bank','war-room','your-possible-life','comeback','points-passport','college-compass','catch-up-lane','topic-atlas','command-word-reflex','how-they-did-it','future-finder','journey']; return order.indexOf(a.id) - order.indexOf(b.id); }).map(tool => {
+                        const pending = tool.needsProfile && !profileLoaded;
+                        const locked = tool.needsProfile && profileLoaded && !subjectProfile;
+                        return <LaunchpadToolCard key={tool.id} tool={tool.id as ToolIconKey} title={tool.title} description={tool.description} pending={Boolean(pending)} locked={Boolean(locked)} recommendation={gcRecommendations[tool.id] ? gcRecommendations[tool.id].fromName || 'your counsellor' : undefined} onClick={() => handleToolClick(tool.id, tool.needsProfile)} />;
+                      })}
                     </div>
                 </MotionDiv>
             ) : (
@@ -1101,28 +1058,39 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
-                    {currentTool && TOOL_CHROME[currentTool.id]?.showHeader && (
+                    {mobileAppDesign && currentTool && <ToolIntroduction key={`${user?.uid}:${currentTool.id}`} uid={user?.uid} tool={toolArtwork} title={toolTitle} eyebrow={toolEyebrow} subtitle={MOBILE_TOOL_SUBTITLES[currentTool.id] ?? TOOL_CHROME[currentTool.id]?.subtitle ?? currentTool.description} />}
+                    {!mobileAppDesign && currentTool && TOOL_CHROME[currentTool.id]?.showHeader && (
                         <div className="mb-6">
+                            {currentTool.id === 'journey' ? (
                             <ToolHeader
                                 themeColor={TOOL_CHROME[currentTool.id].themeColor}
                                 eyebrow={TOOL_CHROME[currentTool.id].eyebrow}
                                 title={currentTool.title}
                                 subtitle={TOOL_CHROME[currentTool.id].subtitle}
-                                iconBlob={<ToolIconBlob toolId={(currentTool.id === 'cao-simulator' ? 'points-passport' : currentTool.id === 'syllabus-xray' ? 'war-room' : currentTool.id) as ToolIconKey} size={108} />}
+                                iconBlob={<ToolIconBlob toolId="journey" size={108} />}
                             />
+                            ) : <ToolMasthead
+                              tool={(currentTool.id === 'cao-simulator' ? 'points-passport' : currentTool.id === 'syllabus-xray' ? 'war-room' : currentTool.id) as ToolIconKey}
+                              eyebrow={TOOL_CHROME[currentTool.id].eyebrow}
+                              title={currentTool.title}
+                              subtitle={TOOL_CHROME[currentTool.id].subtitle}
+                            />}
+
                         </div>
                     )}
+                    <ToolIntroductionContext.Provider value={mobileAppDesign}>
                     <InnovationDataProvider uid={user?.uid} subjectProfile={subjectProfile}>
                         <ToolErrorBoundary
                             key={currentTool?.id}
                             toolName={currentTool?.title ?? 'this tool'}
-                            onBack={() => nav.goBack()}
+                            onBack={() => nav.navigateToInnovationZone()}
                         >
-                            <Suspense fallback={<ToolLoadingFallback />}>
+                            <Suspense fallback={<LoadingSpinner variant="compact" placement="panel" label={getToolLoadingLabel(activeTool, user?.curriculumLevel)} />}>
                                 {currentTool?.component}
                             </Suspense>
                         </ToolErrorBoundary>
                     </InnovationDataProvider>
+                    </ToolIntroductionContext.Provider>
                 </MotionDiv>
             )}
         </AnimatePresence>

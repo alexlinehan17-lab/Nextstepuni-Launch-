@@ -12,15 +12,28 @@ import { fireEvent, render, renderHook, screen } from '@testing-library/react';
 
 import { KnowledgeTree } from '@/components/KnowledgeTree';
 import { useSettings } from '@/hooks/useSettings';
+import NextStepUniSidebar from '@/components/navigation/NextStepUniSidebar';
+import { NavigationProvider, useNavigation } from '@/contexts/NavigationContext';
+
+// Keep the real shared sidebar and navigation; avoid account network services.
+vi.mock('@/components/NotificationBell', () => ({ default: () => null }));
 
 const noop = vi.fn();
 const goToDashboard = vi.fn();
+
+const NavigationLocation = () => <output aria-label="Current app view">{useNavigation().state.viewState}</output>;
 
 const HomeHarness = () => {
   const { settings, updateSetting } = useSettings();
 
   return (
-    <KnowledgeTree
+    <NavigationProvider><NavigationLocation /><NextStepUniSidebar
+      user={{ uid: 'dashboard-toggle-test', name: 'Demo Student', avatar: '' }}
+      settings={settings} updateSetting={updateSetting} onLogout={noop}
+      onOpenSettings={noop} onOpenPassport={noop} onOpenSiteGuide={noop}
+      onOpenFeedback={noop} onUnreadCountChange={noop} completedCount={0}
+      totalCount={0} unreadCount={0}
+    ><KnowledgeTree
       onSelectCategory={noop}
       onGoToModules={noop}
       onGoToInnovationZone={noop}
@@ -39,7 +52,7 @@ const HomeHarness = () => {
       completedCount={0}
       totalCount={0}
       uid="dashboard-toggle-test"
-    />
+    /></NextStepUniSidebar></NavigationProvider>
   );
 };
 
@@ -49,6 +62,7 @@ describe('home dashboard navigation', () => {
     localStorage.setItem('nsu-coachmarks:dashboard-toggle-test', '1');
     goToDashboard.mockClear();
     window.scrollTo = vi.fn();
+    window.history.replaceState(null, '', '/');
   });
 
   test('is off by default for a new login', () => {
@@ -61,7 +75,7 @@ describe('home dashboard navigation', () => {
 
     expect(screen.queryByRole('region', { name: 'Home dashboard' })).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: 'My Progress' }));
-    expect(goToDashboard).toHaveBeenCalledTimes(1);
+    expect(screen.getByLabelText('Current app view')).toHaveTextContent('dashboard');
     expect(screen.queryByRole('region', { name: 'Home dashboard' })).not.toBeInTheDocument();
   });
 
@@ -70,5 +84,14 @@ describe('home dashboard navigation', () => {
     render(<HomeHarness />);
     expect(screen.queryByRole('region', { name: 'Home dashboard' })).not.toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'My Progress' })).toBeInTheDocument();
+  });
+
+  // A test helper that added 100 JP per click shipped in the sidebar; Alex
+  // asked for it gone from the live app (2026-10-15).
+  test('the sidebar has no free-points button', () => {
+    render(<HomeHarness />);
+    expect(screen.getByRole('button', { name: 'My Progress' })).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /get points/i })).not.toBeInTheDocument();
+    expect(screen.queryByTitle(/Add 100 JP/)).not.toBeInTheDocument();
   });
 });

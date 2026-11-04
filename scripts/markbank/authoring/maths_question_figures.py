@@ -1089,7 +1089,7 @@ def fig_name(year, level, paper, qnum, letter, roman):
     return '-'.join(parts)
 
 
-def run(cards, write=True, probe=False, replace=False):
+def run(cards, write=True, probe=False, replace=False, prune=False):
     sittings = {}
     overrides = json.load(open(OVERRIDES)) if os.path.exists(OVERRIDES) else {}
     sidecar = json.load(open(SIDECAR)) if os.path.exists(SIDECAR) else {}
@@ -1191,6 +1191,13 @@ def run(cards, write=True, probe=False, replace=False):
             catalogue[existing] = catalogue_record
         have.add(f'{name}.png')
     if write and not probe:
+        if prune:
+            live_ids = {card['id'] for card in cards}
+            sidecar = {cid: name for cid, name in sidecar.items()
+                       if cid in live_ids}
+            live_files = {f'{name}.png' for name in sidecar.values()}
+            catalogue = [item for item in catalogue
+                         if item.get('file') in live_files]
         json.dump(sidecar, open(SIDECAR, 'w'), indent=1)
         json.dump(catalogue, open(CATALOGUE, 'w'), indent=1)
     return fails
@@ -1219,7 +1226,7 @@ def main():
         fails = run(subset)
         print(f'{len(subset) - len(fails)}/{len(subset)} planned')
     else:
-        fails = run(cards)
+        fails = run(cards, prune=True)
         print(f'{len(cards) - len(fails)}/{len(cards)} planned')
     for cid, why in fails:
         print(f'  FAIL {cid}: {why}')

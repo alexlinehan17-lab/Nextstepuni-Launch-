@@ -87,4 +87,5 @@ marking schemes in `/examiner-reports/`.
 
 - [x] Business — `subject-business.md` (corrected 4 factual errors vs 2025 marking scheme)
 - [x] Mathematics — `subject-mathematics.md` (corrected the 300-marks/two-section paper structure vs 2015 Chief Examiner report)
-- [ ] Remaining 35 — awaiting per-subject SEC reports
+- [x] English — `subject-english.md` (exam structure corrected vs 2025 marking scheme; formula-based comparative advice reversed to the 2013 Chief Examiner report)
+- [ ] Remaining 34 — awaiting per-subject SEC reports

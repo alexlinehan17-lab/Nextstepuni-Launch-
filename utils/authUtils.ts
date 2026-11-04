@@ -4,6 +4,7 @@
  */
 
 import type React from 'react';
+import { PERSONAL_STAR_CREW, getPersonalStarCrew, getAvatarName } from '../data/personalStarCrew';
 import type { YearGroup } from '../components/subjectData';
 
 // ─── Curriculum level ───────────────────────────────────────
@@ -139,30 +140,21 @@ export function isSchoolStaff(role?: string | null): boolean {
 
 // ─── Avatar Seeds ───────────────────────────────────────────
 
-export const AVATAR_SEEDS = [
-  'Mary Baker', 'Harriet Tubman', 'Ma Rainey', 'Maud Nathan',
-  'Annie Jump', 'Felisa Rincon', 'Maya Angelou', 'Elizabeth Peratrovich',
-];
+export const AVATAR_SEEDS = PERSONAL_STAR_CREW.map(avatar => avatar.id);
 
 // ─── Avatar Helpers ─────────────────────────────────────────
 
-/** Build avatar URL — DiceBear Notionists Neutral with improved background colors. */
+/** Local Star Crew artwork, with legacy/purchased DiceBear seeds kept compatible. */
 export function getAvatarUrl(seed: string): string {
+  const crew = getPersonalStarCrew(seed);
+  if (crew) return crew.src;
   return `https://api.dicebear.com/9.x/notionists-neutral/svg?seed=${encodeURIComponent(seed)}&backgroundColor=d1e8d5,c4d5f2,f2d5c4,d5c4f2,f2e6c4,c4e8f2,f2c4d1,e8e4d1`;
 }
 
-/**
- * Fallback avatar as a data URI — initials on a coloured disc. Used when
- * DiceBear fails (offline, or a school network that blocks the CDN).
- *
- * TWO initials, not one. Four of the eight picker seeds begin with M — Mary
- * Baker, Ma Rainey, Maud Nathan, Maya Angelou — so a single initial rendered
- * them as the same avatar, and a student on a blocked network could not tell
- * the options apart well enough to choose one. Two initials separate all eight,
- * and read correctly for real names too.
- */
+/** Local initials fallback for a failed image; crew IDs use their character names. */
 export function getAvatarFallback(seed: string): string {
-  const words = seed.trim().split(/\s+/).filter(Boolean);
+  const label = getPersonalStarCrew(seed) ? getAvatarName(seed).replace(/^The /, "") : seed;
+  const words = label.trim().split(/\s+/).filter(Boolean);
   const initials = (words.length > 1
     ? `${words[0].charAt(0)}${words[1].charAt(0)}`
     : (words[0] || '?').slice(0, 2)

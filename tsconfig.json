@@ -26,5 +26,5 @@
     "allowImportingTsExtensions": true,
     "noEmit": true
   },
-  "exclude": ["node_modules", "dist", "ios", "android", "scripts", "functions", "test", "vitest.config.ts"]
+  "exclude": ["components/kobra", "node_modules", "dist", "ios", "android", "scripts", "functions", "test", "vitest.config.ts"]
 }

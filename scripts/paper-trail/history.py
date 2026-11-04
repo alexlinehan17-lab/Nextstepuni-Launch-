@@ -70,7 +70,10 @@ def paper_index() -> list[dict]:
     )
     if not match:
         raise RuntimeError("Could not locate History in paperTrailData.ts")
-    return json.loads(re.sub(r",\s*]$", "]", match.group(1)))
+    # Reviewed window only: June sittings from 2010. The deferred sitting and the
+    # 1995-2009 archive papers carry no answer maps or Mark Bank cards.
+    return [entry for entry in json.loads(re.sub(r",\s*]$", "]", match.group(1)))
+            if not entry.get("sitting") and entry["year"] >= 2010]
 
 
 def identity(item: dict) -> str:

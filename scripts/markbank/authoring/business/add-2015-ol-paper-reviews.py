@@ -1,0 +1,9 @@
+from paper_review_lib import record
+record(2015, 'ordinary', {
+  'LC033GLP000EV.pdf': dict(scheme=list(range(4, 25)), choices=['bus-2015-ol-s2-q5b'], notes=[
+    'Visually reviewed all twelve pages of the 2015 Ordinary paper (one booklet; answer ten of fifteen short questions at 10 marks and four of eight long questions at 75: one from Part 1, two from Part 2 and one other): the cover and mark grid, the fifteen short questions on pages 2-5 (including the promotion tick table, the net-profit figures, the break-even chart, the matching table, the Data Protection tick and the organisation chart), the eight long questions on pages 6-10 (every extract, the two job advertisements, the expenditure pie chart and the net-profit table) and the blank pages 11-12.',
+    'Each task was checked against the allocation summary on scheme pages 4-8 and the expected responses on pages 9-24 (ticks, the break-even labels, the organisation chart, the matching key, the notice and agenda with its bold items and the bar chart read from the rendered pages). No 2015 Ordinary card existed, so all 56 are new. Calculations keep their printed lines: net profit margin formula 4, figures 2 + 2 and answer 2. Section 2 Q1(E) splits at its published 15 and 5.',
+    'One printed choice is one card: Section 2 Q5(B) any two of the three principles of insurance (10 each, marked alike). Q2(B) asks the candidate to explain one of the four factors they list, which is their own choice and is one card. Q8(D) names both stages to explain.',
+    'All twenty-five raw selection matches are classified, including the twelve printed page counters. Topic Atlas uses the single-booklet identity: short questions by number, long questions as S2Q1-S2Q8.',
+    'This source-pinned record covers the English Ordinary paper only. Source hashes and exact ID sets detect stale evidence; parser counts do not independently prove completeness.']),
+})

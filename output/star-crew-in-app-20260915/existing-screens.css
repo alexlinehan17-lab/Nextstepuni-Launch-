@@ -1,0 +1,13 @@
+/* The existing components own the page, type, grid, controls and breakpoints. */
+html,body{margin:0;background:#fff;font-family:'DM Sans',sans-serif}
+.existing-home-section{padding:34px 38px 38px}
+.existing-screen-study .study-session-page{min-height:0}
+.existing-subject-avatar{position:relative;display:block;flex-shrink:0;width:var(--crew-size);height:var(--crew-size);border:1px solid #d4d8cb;border-radius:50%;overflow:hidden;background:#fff!important}
+.existing-subject-avatar img{position:absolute;display:block;max-width:none;pointer-events:none}
+.home-subject-code.existing-subject-avatar{width:44px;height:44px;border-radius:50%;border-color:#d4d8cb}
+/* Same two-column subject grid; only the cards and their icon slots grow. */
+.ss-subjects button{min-height:96px;padding:14px 16px;gap:15px}
+.ss-subjects button>span{min-width:0;overflow-wrap:anywhere}
+.ss-subjects button i.existing-subject-avatar{width:64px;height:64px;border-radius:50%}
+.ss-timetable i.existing-subject-avatar{width:36px;height:36px;border-radius:50%}
+@media(max-width:600px){.existing-home-section{padding:24px 22px}.ss-subjects button{min-height:86px;padding:12px 10px;gap:10px}.ss-subjects button i.existing-subject-avatar{width:44px;height:44px}}

@@ -196,7 +196,7 @@ export function useQuests(
         break;
       }
       case 'module-start': {
-        const started = Object.values(userProgress).some(p => p.unlockedSection > 0);
+        const started = Object.values(userProgress).some(p => (p?.unlockedSection ?? 0) > 0);
         current = started ? 1 : 0;
         break;
       }

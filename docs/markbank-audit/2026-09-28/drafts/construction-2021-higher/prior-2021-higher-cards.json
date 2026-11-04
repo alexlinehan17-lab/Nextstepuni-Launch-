@@ -1,0 +1,1713 @@
+[
+  {
+    "id": "cons-2021-hl-q1-a",
+    "topicId": "cons-3-2",
+    "conceptId": "vertical-section-door-external-wall-ground-floor",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q1(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the centre of the door, the external wall and the ground floor. Show the typical construction details from the bottom of the strip foundation to a level 400 mm above finished floor level.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4 x 4 + 4 x 4 + 4 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 48,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q1-a-r1",
+        "kind": "anyN",
+        "verbatim": "Foundation, external wall and level entrance – typical detailing",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Foundation, external wall and level entrance – typical detailing",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "R.C. Strip foundation typical - 1350 mm × 400 mm",
+            "400 mm Blockwork - deadwork",
+            "Vertical insulation - thermal break",
+            "Entrance substructure",
+            "Level concrete entrance"
+          ]
+        }
+      },
+      {
+        "id": "cons-2021-hl-q1-a-r2",
+        "kind": "anyN",
+        "verbatim": "Solid ground floor – typical detailing",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Solid ground floor – typical detailing",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "Compacted hardcore",
+            "Sand blinding",
+            "Radon barrier / DPM",
+            "200 mm floor insulation",
+            "150 mm concrete floor / subfloor",
+            "20 mm hardwood flooring"
+          ]
+        }
+      },
+      {
+        "id": "cons-2021-hl-q1-a-r3",
+        "kind": "anyN",
+        "verbatim": "Door threshold and door – typical detailing",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Door threshold and door – typical detailing",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "Drainage channel",
+            "Concrete threshold and wrap around DPC / Proprietary insulated door threshold",
+            "15 mm upstand or 15°",
+            "Airtight tape at threshold",
+            "External door / vertical sheeting",
+            "Door insulation"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q2-a-safety-training",
+    "topicId": "cons-1-8",
+    "conceptId": "duty-of-care-on-a-construction-site-safety-training",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q2(a) — Safety training",
+    "questionText": "Under each of the following, discuss in detail the duty of care that all workers have in maintaining high safety standards on a construction site: • safety training.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 9,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q2-a-safety-training-r1",
+        "kind": "anyN",
+        "verbatim": "Safety training",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Safety training",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Construction workers are legally required to complete a safe pass course",
+            "Training is essential in order to develop awareness amongst workers of possible risks on site",
+            "Workers have a legal obligation to attend and engage in all safety training provided",
+            "Compulsory, national refresher safety training course every 3-4 years",
+            "Workers should comply with safety standards as identified at training courses",
+            "Regular monitoring of work practices",
+            "Specialist training required on equipment/machinery/vehicles before use on site",
+            "Enforcement of all good safe work practices",
+            "Obligation to obtain and maintain a Safe Pass Certification"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q2-a-personal-protective-equipment-ppe",
+    "topicId": "cons-1-8",
+    "conceptId": "duty-of-care-on-a-construction-site-personal-protective-equipment-ppe",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q2(a) — Personal Protective Equipment (PPE)",
+    "questionText": "Under each of the following, discuss in detail the duty of care that all workers have in maintaining high safety standards on a construction site: • personal protective equipment (PPE).",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 8,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q2-a-personal-protective-equipment-ppe-r1",
+        "kind": "anyN",
+        "verbatim": "Personal Protective Equipment (PPE)",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Personal Protective Equipment (PPE)",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "All construction workers are required by law to use personal protective equipment on site",
+            "Workers should not carry out any work if the correct PPE has not been provided",
+            "PPE such as Helmet, boots, high visibility clothing- waistcoat, jacket, trousers, gloves, safety glasses, ear protection, safety harness, etc",
+            "Specific PPE to be worn when undertaking specialist and dangerous tasks",
+            "Any defects in PPE provided should be reported immediately",
+            "If the workers identify an item of PPE that is required but not provided, they should immediately inform the safety officer",
+            "Ensure that all visitors to the site have appropriate PPE and if necessary, provide them with the PPE",
+            "Employers should inform their employer of any medical conditions that have that might be affected by the use of PPE"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q2-a-vigilance",
+    "topicId": "cons-1-8",
+    "conceptId": "duty-of-care-on-a-construction-site-vigilance",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q2(a) — Vigilance",
+    "questionText": "Under each of the following, discuss in detail the duty of care that all workers have in maintaining high safety standards on a construction site: • vigilance.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 10,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q2-a-vigilance-r1",
+        "kind": "anyN",
+        "verbatim": "Vigilance",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Vigilance",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Workers should be aware of and regularly review the site safety statement",
+            "Report potential hazards or area of concern they may have over the health and safety of themselves or others",
+            "Firm commitment from management to monitor and improve health and safety on site",
+            "Safety officer - responsibility on site for the regular assessment of possible risks and the development of strategies to minimise danger to employees",
+            "Awareness and reporting of any potential hazards",
+            "Ongoing review of workers work practices on site",
+            "All workers are aware of who the safety officer is on site",
+            "Clear channel for identifying and reporting risks to management",
+            "Report any accidents or near accidents",
+            "Duty on all workers to observe best practice safety regulations"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q2-b-repairing-a-chimney-stack",
+    "topicId": "cons-1-8",
+    "conceptId": "risks-in-chimney-roof-and-scaffold-work-repairing-a-chimney-stack",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q2(b) — Repairing a chimney stack",
+    "questionText": "Discuss in detail one possible risk associated with each of the following: • repairing a chimney stack.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 5,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q2-b-repairing-a-chimney-stack-r1",
+        "kind": "anyN",
+        "verbatim": "Repairing a chimney stack",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Repairing a chimney stack",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Workers could fall from the roof, ladder or scaffolding",
+            "Scaffolding itself could collapse with injury to those using it",
+            "Workers may lose their balance or slip on the roof surface or ladder",
+            "The chimney stack could fall if in an unstable state",
+            "Building materials or tools used to fix the chimney may fall from a height and pose a risk to those on the ground"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q2-b-overhead-electrical-cables",
+    "topicId": "cons-1-8",
+    "conceptId": "risks-in-chimney-roof-and-scaffold-work-overhead-electrical-cables",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q2(b) — Overhead electrical cables",
+    "questionText": "Discuss in detail one possible risk associated with each of the following: • overhead electrical cables.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 5,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q2-b-overhead-electrical-cables-r1",
+        "kind": "anyN",
+        "verbatim": "Overhead electrical cables",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Overhead electrical cables",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Electricity can “jump” or arc and kill or injure anyone working in close proximity to electricity wires",
+            "Contact can be lethal with voltages as low as 230v",
+            "Electric current can flow through wood or plastic (if damp or dirty) and cause fatal shocks",
+            "Contact with live overhead lines can cause serious injury or death",
+            "High plant or equipment e.g. excavators, MEWPs, scaffold poles, tipper vehicles and cranes, presents a particularly high risk for their operators"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q2-b-on-site-health-hygiene",
+    "topicId": "cons-1-8",
+    "conceptId": "risks-in-chimney-roof-and-scaffold-work-on-site-health-hygiene",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q2(b) — On-site health & hygiene",
+    "questionText": "Discuss in detail one possible risk associated with each of the following: • on-site health & hygiene.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 5,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q2-b-on-site-health-hygiene-r1",
+        "kind": "anyN",
+        "verbatim": "On-site health & hygiene",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "On-site health & hygiene",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Cross contamination of bacteria, fungus and viruses between workers onsite",
+            "Workers contacting infectious disease from animals, vermin and parasites",
+            "Workers consuming food in an unhealthy environment",
+            "Workers becoming ill due to stagnant or contaminated drinking water",
+            "Workers may contract Hepatitis or Covid where hygiene is poor"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q2-c",
+    "topicId": "cons-1-8",
+    "conceptId": "safety-procedures-that-eliminate-a-risk",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q2(c)",
+    "questionText": "Using notes and freehand sketches, outline two specific safety procedures that should be observed to eliminate each risk identified at 2(b) above.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "2 x 4 + 2 x 4 + 2 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q2-c-r1",
+        "kind": "anyN",
+        "verbatim": "Repairing a chimney stack",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Repairing a chimney stack",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Scaffolding should be constructed around the chimney stack to create a safe working platform",
+            "Scaffolding to be erected by certified personnel only",
+            "All scaffold should have the required safety hand rail, mid rail and toe boards fitted",
+            "Scaffolding should be tied into the house/chimney",
+            "Use of lifting machinery on level surface to allow workers access the chimney stack",
+            "Secure attachment of workers to any lifting machinery",
+            "Teleporter operators or similar should be experienced and suitably qualified to use such machinery",
+            "Use slating jacks and boards if needed on slope of roof to create working platform",
+            "Safety harness or other fall protection should be implemented",
+            "Properly secured ladders at all levels on scaffolding",
+            "Safety netting all around scaffolding-protection from falling objects"
+          ]
+        }
+      },
+      {
+        "id": "cons-2021-hl-q2-c-r2",
+        "kind": "anyN",
+        "verbatim": "Overhead electrical cables",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Overhead electrical cables",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Any work near electric overhead power lines must be carefully planned and carried out to avoid danger from accidental contact or close proximity to the lines",
+            "Bunting is erected each side of electrical cable at a distance of 6 - 10 m and at a height of 3 - 4.2 m above ground",
+            "Crossing points are erected for machinery with max. height of 4.2 m and width of 9 m",
+            "Guard rail at ground level 0.8 m to 1.4 m above ground along the cables",
+            "Warning signs at 20 m intervals along guarded area",
+            "Avoid working in the area near or under overhead lines if possible",
+            "Supervise access for plant and materials and the working of plant should be under the direct supervision of a suitable person appointed to ensure that safety precautions are observed",
+            "Exclusion – plant, equipment or hand tools that could reach beyond the safe clearance limit should not be taken under the line",
+            "Have an emergency contact number for",
+            "At least one suitably qualified first aid worker on hand/close by"
+          ]
+        }
+      },
+      {
+        "id": "cons-2021-hl-q2-c-r3",
+        "kind": "anyN",
+        "verbatim": "On-site health & hygiene",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "On-site health & hygiene",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Drinking water and water washing facilities at several locations",
+            "Ensure all enclosed workers facilities are adequately ventilated",
+            "Facilities for shelter, food preparation/consumption, personal hygiene and toilet facilities should be regularly cleaned",
+            "Wear facemasks and maintain social distancing if possible",
+            "Restrict the number of people working indoors in a small area",
+            "Clean and disinfect frequently touched surfaces such as shared tools, machines, vehicles and other equipment, handrails, ladders, doorknobs, and portable toilets",
+            "Health and hygiene signs to remind workers of their responsibilities",
+            "Limit tool sharing if possible",
+            "Practice proper hand hygiene",
+            "Maintain access logs to record details of all workers should contact tracing information be required",
+            "Modify work schedules to stagger worker in one area while maintaining productivity"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q3-a",
+    "topicId": "cons-1-1",
+    "conceptId": "design-considerations-for-a-house",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q3(a)",
+    "questionText": "Discuss in detail, three design considerations that should be taken into account in the design of this home office space to enhance health and wellbeing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 8,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, three design considerations that should be taken into account in the design of this home office space",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "Visual Comfort",
+            "Thermal Comfort",
+            "Ergonomic Comfort",
+            "Olfactory Comfort",
+            "Storage",
+            "Flexibility",
+            "Acoustic Comfort",
+            "Services"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q3-b",
+    "topicId": "cons-1-1",
+    "conceptId": "designing-a-home-office-layout",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q3(b)",
+    "questionText": "Using notes and freehand sketches, show a proposed design layout for the office space that incorporates each of the design considerations you outlined at 3(a) above.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 4",
+      "answer": 3,
+      "ofParts": 5,
+      "perPart": 4
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show a proposed design layout for the office space that incorporates each of the desi",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "Visual Comfort",
+            "Thermal Comfort",
+            "Olfactory Comfort",
+            "Ergonomic Comfort/Storage/ Flexibility",
+            "Acoustic Comfort"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 30 marks for this part. The 12 on this card are the marks it states answers for; the other 18 go to Design layout for home office space (15); Justification (3) — the drawing itself and anything the scheme prices without saying what earns it."
+  },
+  {
+    "id": "cons-2021-hl-q3-c-advantages",
+    "topicId": "cons-1-1",
+    "conceptId": "working-from-a-home-office-advantages",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q3(c) — Advantages",
+    "questionText": "Discuss two advantages of working from a home office.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 3",
+      "answer": 2,
+      "ofParts": 8,
+      "perPart": 3
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q3-c-advantages-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Advantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "reduced time lost in commute",
+            "increased free time to use for personal health and wellbeing",
+            "no transport costs",
+            "increased productivity",
+            "greater flexibility",
+            "cost reduction from buying food on the go",
+            "better work-life balance",
+            "reduced distractions"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q3-c-disadvantages",
+    "topicId": "cons-1-1",
+    "conceptId": "working-from-a-home-office-disadvantages",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q3(c) — Disadvantages",
+    "questionText": "Discuss two disadvantages of working from a home office.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 3",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 3
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q3-c-disadvantages-r1",
+        "kind": "anyN",
+        "verbatim": "Disadvantages",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Disadvantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "no social interactions with colleagues",
+            "loneliness and isolation",
+            "distractions from the home environment",
+            "being out of the loop and overlooked",
+            "creating a dedicated work space",
+            "always being available"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q4-a-availability-of-services",
+    "topicId": "cons-1-3",
+    "conceptId": "factors-when-selecting-a-site-availability-of-services",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q4(a) — Availability of services",
+    "questionText": "Using notes and freehand sketches, discuss in detail each of the following factors when selecting a site for a new house in a rural setting: • availability of services.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q4-a-availability-of-services-r1",
+        "kind": "anyN",
+        "verbatim": "Availability of services",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Availability of services",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Rural sites along main roads will generally have power and telecommunications services, but may not have a mains water supply, gas, sewerage or storm water services",
+            "Where services are not available, it is important to get an estimate for bringing them to the boundary early in the site selection process",
+            "The cost can be substantial in some cases, even over relatively short distances, and houseowners need to be aware",
+            "Remote sites may have no economical access to any services"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q4-a-existing-trees-and-hedgerows",
+    "topicId": "cons-1-3",
+    "conceptId": "factors-when-selecting-a-site-existing-trees-and-hedgerows",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q4(a) — Existing trees and hedgerows",
+    "questionText": "Using notes and freehand sketches, discuss in detail each of the following factors when selecting a site for a new house in a rural setting: • existing trees and hedgerows.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 8,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q4-a-existing-trees-and-hedgerows-r1",
+        "kind": "anyN",
+        "verbatim": "Existing trees and hedgerows",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Existing trees and hedgerows",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Existing hedgerows provide a natural sound buffer",
+            "Existing layer of privacy for the new property",
+            "Enhance the health and wellbeing of the occupants by being surrounded by mature natural landscaping",
+            "Maintains local flora and wildlife",
+            "The removal of existing large trees to build over may have a negative effect on settlement in the future",
+            "Natural integration into the countryside",
+            "Reduce costs from planting new hedgerows",
+            "Mature trees can be integrated into new house design"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q4-a-site-topography",
+    "topicId": "cons-1-3",
+    "conceptId": "factors-when-selecting-a-site-site-topography",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q4(a) — Site topography",
+    "questionText": "Using notes and freehand sketches, discuss in detail each of the following factors when selecting a site for a new house in a rural setting: • site topography.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q4-a-site-topography-r1",
+        "kind": "anyN",
+        "verbatim": "Site topography",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Site topography",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Topography is the study of the forms and features of land surface in an area",
+            "identify and use the natural sheltering features of the site; folds in the land or contours, existing trees and hedges",
+            "Do not break the horizon or skyline or build on the highest part of the site",
+            "Reduce where possible, cutting and filling into hills which can leave the landscape scarred",
+            "Avoid a sense that a house has been “dropped into” the landscape - integrated into the site landscape without incurring additional costs",
+            "Is the site low lying and susceptible to flooding?"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q4-b",
+    "topicId": "cons-1-3",
+    "conceptId": "choosing-between-two-rural-sites",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q4(b)",
+    "questionText": "Shown is an extract from a site location map. A and B are possible sites for a new house in a rural setting. Select your preferred site A or B and discuss three considerations you took into account when selecting your site.",
+    "stem": "",
+    "figureKey": "construction-studies-2021-hl-paper-p003-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 4",
+      "answer": 3,
+      "ofParts": 14,
+      "perPart": 4
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q4-b-r1",
+        "kind": "anyN",
+        "verbatim": "Shown is an extract from a site location map. A and B are possible sites for a new house in a rural setting. Select your",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "Less noise pollution as the site is located away from the main road",
+            "No existing houses in close proximity overlooking the property",
+            "Greater privacy as it is not adjacent to the main road",
+            "The lane leading to the site joins the main road on a straight point so clear sight lines can be obtained which increase safety when entering or exiting the site",
+            "Existing natural hedgerow boundary so minimal environmental visual impact",
+            "Existing tall vegetation can act as solar shading and increase privacy",
+            "Unobstructed views of the lake and forest so enhance health and wellbeing of the occupants",
+            "Access can be gained from two site parameter boundaries",
+            "Existing services are in close proximity to the site - neighbouring house already has connections with water, electricity, broadband resulting in cost-effective provision of public services",
+            "Building close to an existing dwelling is favoured by the planning authority",
+            "Reduced distance from leisure facilities, schools and employment",
+            "Site B is the smaller site and would result in minimum area for manicured lawns in the countryside",
+            "Less arable land is used as it is a smaller site",
+            "Sufficient space exists to facilitate waste-water treatment and percolation area on the site"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 15 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2021-hl-q4-c",
+    "topicId": "cons-1-3",
+    "conceptId": "sketching-a-site-and-its-boundaries",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q4(c)",
+    "questionText": "Draw a well-proportioned sketch of your selected site and the immediate boundaries.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "3 x 4 + 3 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q4-c-r1",
+        "kind": "anyN",
+        "verbatim": "House location and orientation",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "House location and orientation",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "The design / form of the building maximises solar gains by having the largest external perimeter facing south",
+            "Building’s proximity to the road where services are normally Site A located",
+            "The building is set back from the road to reduce the environmental impact on the landscape",
+            "House placed for greater privacy",
+            "The built form and its positioning is inspired by local existing vernacular architectural characteristics",
+            "Maximum daylight penetration to the living areas/spaces which ideally should be located on the",
+            "Enabling maximum solar gain and daylight into the living spaces reduces the need for unnecessary heating and lighting"
+          ]
+        }
+      },
+      {
+        "id": "cons-2021-hl-q4-c-r2",
+        "kind": "anyN",
+        "verbatim": "Road entrance and driveway Site B",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Road entrance and driveway Site B",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "Short driveway resulting in minimal hard surfaces and less strain on existing surface water disposal systems",
+            "Facilitates the planting of vegetation to help integrate the house into the landscape and increase privacy",
+            "Enables the driver to clearly see oncoming traffic from both sides",
+            "Is set back – 5 metres - so that a car waiting to enter closed gates is not obstructing traffic",
+            "Sidewalls splayed at 45° for clear vision",
+            "Meets the criteria set out by the local authority – in design and measurements"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q6-a",
+    "topicId": "cons-6-3",
+    "conceptId": "designing-for-low-environmental-impact",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q6(a)",
+    "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
+    "stem": "",
+    "figureKey": "construction-studies-2021-hl-paper-p005-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 5",
+      "answer": 6,
+      "ofParts": 8,
+      "perPart": 5
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q6-a-r1",
+        "kind": "anyN",
+        "verbatim": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contrib",
+        "marks": 30,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 6,
+          "perOption": 5,
+          "options": [
+            "Timber frame construction from local sources which reduces transport movements; has lower carbon emissions and a reduction in local air pollution",
+            "Less embodied energy required to produce timber frame construction compared to concrete block construction",
+            "One room deep design enables light to enter the room from both sides - heat from the sun entering the house will reduce heating costs",
+            "High levels of insulation used in the construction will reduce heat loss through the exterior envelope",
+            "The absence of a chimney reduces draughts and increases airtightness",
+            "Cedar cladding sourced from FSC certified forests used on the front façade",
+            "House is heated using a renewable heat source",
+            "Simple building form – building envelope area minimised to reduce energy loss through external walls"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q6-b",
+    "topicId": "cons-6-3",
+    "conceptId": "reducing-operational-energy-use",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q6(b)",
+    "questionText": "Operational energy use is an important consideration in designing for low environmental impact. Using notes and freehand sketches, discuss two features that could be added to the house that would further reduce its energy use.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 5",
+      "answer": 4,
+      "ofParts": 5,
+      "perPart": 5
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "Operational energy use is an important consideration in designing for low environmental impact. Using notes and freehand",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 5,
+          "options": [
+            "Install photovoltaic (PV) panels",
+            "Install evacuated tube / solar panel",
+            "Install of a Mechanical Heat Recovery Ventilation (MHRV) system",
+            "Install an Air to Water Heat Pump",
+            "Additional insulation"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q6-c",
+    "topicId": "cons-6-3",
+    "conceptId": "advantages-of-low-operational-energy-use",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q6(c)",
+    "questionText": "Discuss in detail two advantages of designing a house that will have a low operational energy use when the house is built.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Advantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Benefit the environment and our ecosystems by using less energy",
+            "It lowers our exposure to chemicals and pollution therefore enhancing our personal health and wellbeing",
+            "Costs less to run house",
+            "Less finite resources being consumed in the energy used to operate the house"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q7-a",
+    "topicId": "cons-3-10",
+    "conceptId": "vertical-section-chimney-stack-and-roof",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q7(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the centre of the chimney stack and roof structure. The section should show the typical construction details through the chimney stack, flue liner, chimney capping and portion of the roof structure.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4 x 5 + 4 x 5",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 40,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "Chimney stack",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "Chimney stack",
+        "group": {
+          "claimMax": 4,
+          "perOption": 5,
+          "options": [
+            "Chimney blockwork",
+            "External render",
+            "Flue liners",
+            "Lime sand fill / vermiculite",
+            "Concrete chimney capping",
+            "DPC beneath chimney capping",
+            "Lead flashing",
+            "DPC at roof level"
+          ]
+        }
+      },
+      {
+        "id": "cons-2021-hl-q7-a-r2",
+        "kind": "anyN",
+        "verbatim": "Roofing",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "Roofing",
+        "group": {
+          "claimMax": 4,
+          "perOption": 5,
+          "options": [
+            "Rafter 200 × 50 @400mm centres",
+            "Chimney trimmer 200 × 50",
+            "Windtightness OSB layer",
+            "Breather membrane",
+            "Counter battens 50 × 25",
+            "Slating Batten 50 ×",
+            "Apron lead flashing"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q7-b",
+    "topicId": "cons-3-10",
+    "conceptId": "moisture-at-the-chimney-roof-junction",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q7(b)",
+    "questionText": "On your drawing, show two typical design details to prevent the penetration of moisture at the junction of the roof and chimney stack.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 3",
+      "answer": 2,
+      "ofParts": 2,
+      "perPart": 3
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "On your drawing, show two typical design details to prevent the penetration of moisture at the junction of the roof and ",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "DPC at roof level",
+            "Lead flashing ×"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q8-a",
+    "topicId": "cons-5-3",
+    "conceptId": "heating-and-hot-water-layout",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q8(a)",
+    "questionText": "Using notes and a single-line diagram, show a typical design layout for both the heating system and hot water system. Show two independently controlled heating zones, one on each floor. Include three radiators on each floor and give the typical sizes of the pipework.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 4",
+      "answer": 7,
+      "ofParts": 8,
+      "perPart": 4
+    },
+    "totalMarks": 28,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q8-a-r1",
+        "kind": "anyN",
+        "verbatim": "Typical sizes of pipework",
+        "marks": 28,
+        "openList": true,
+        "contextNote": "Typical sizes of pipework",
+        "group": {
+          "claimMax": 7,
+          "perOption": 4,
+          "options": [
+            "Radiators ground floor and first floor",
+            "Zone thermostats",
+            "Cylinder and coil",
+            "Rising main",
+            "Feed to expansion tank",
+            "Cold feed from expansion tank",
+            "Flow pipe to radiators",
+            "Typical sizes of pipework - any two"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q8-b",
+    "topicId": "cons-5-3",
+    "conceptId": "features-that-make-a-heating-system-efficient",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q8(b)",
+    "questionText": "Using notes and freehand sketches, describe two features that increase the efficiency of the heating system. Discuss the importance of each feature identified.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 5 + 1 x 5 + 1 x 5 + 1 x 5",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q8-b-r1",
+        "kind": "anyN",
+        "verbatim": "Thermostatic radiator valves",
+        "marks": 5,
+        "openList": true,
+        "contextNote": "Thermostatic radiator valves",
+        "group": {
+          "claimMax": 1,
+          "perOption": 5,
+          "options": [
+            "Radiator temperature can be set or adjust using thermostatic values which are fitted",
+            "The valves allow greater heating control of individual radiators",
+            "Thermostatic valves are easily installed to new or existing radiators",
+            "Allows rooms to be efficiently heated to different temperatures"
+          ]
+        }
+      },
+      {
+        "id": "cons-2021-hl-q8-b-r2",
+        "kind": "anyN",
+        "verbatim": "Room thermostats",
+        "marks": 5,
+        "openList": true,
+        "contextNote": "Room thermostats",
+        "group": {
+          "claimMax": 1,
+          "perOption": 5,
+          "options": [
+            "The thermostat switches the heating to the room on and off according to the temperature chosen",
+            "A programmable room thermostat gives greater control, enabling the setting of different temperatures for different times of the day",
+            "This control reduces the excessive heating of a room",
+            "efficient use of heat energy"
+          ]
+        }
+      },
+      {
+        "id": "cons-2021-hl-q8-b-r3",
+        "kind": "anyN",
+        "verbatim": "Radiator design",
+        "marks": 5,
+        "openList": true,
+        "contextNote": "Radiator design",
+        "group": {
+          "claimMax": 1,
+          "perOption": 5,
+          "options": [
+            "Replace the radiators with new more energy efficient radiator such as – double panel or aluminium",
+            "Double panel radiators produce an increased amount of heat than standard radiators",
+            "Aluminium radiators are designed to heat up much quicker and also run at an extremely high temperature",
+            "makes them generally cheaper to run"
+          ]
+        }
+      },
+      {
+        "id": "cons-2021-hl-q8-b-r4",
+        "kind": "anyN",
+        "verbatim": "Time switches and programmers",
+        "marks": 5,
+        "openList": true,
+        "contextNote": "Time switches and programmers",
+        "group": {
+          "claimMax": 1,
+          "perOption": 5,
+          "options": [
+            "A time switch will turn the system on and off at pre-set times",
+            "A programmer allows the operation of the heating and hot water circuits independently at different times of the day",
+            "A controller gives more flexibility - it operates the system at set times and also responds to temperature fluctuations"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q8-c",
+    "topicId": "cons-5-3",
+    "conceptId": "air-to-water-heat-pump",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q8(c)",
+    "questionText": "Discuss two advantages of installing an Air-to-Water heat pump system in the house as an alternative to the stove.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 8,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q8-c-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Advantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Reduces the heating cost and increase energy efficiency heating a house",
+            "Easy installation and low maintenance",
+            "Heat pumps reduces the operational carbon emissions of a house",
+            "Reduces the burning of fossil fuels to heat a house",
+            "Heat pumps are environmentally friendly reducing harmful particulate and carbon dioxide emissions by over 60% - 80%",
+            "The installation of a domestic heat pumps are eligible for SEAI grants for homeowners",
+            "Low noise emissions and reduced heating time",
+            "Air-to-water heat pumps do not produce carbon emissions when operating"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q9-a",
+    "topicId": "cons-5-8",
+    "conceptId": "designing-a-socket-layout",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q9(a)",
+    "questionText": "Discuss in detail, three considerations when designing the layout for sockets in the electrical system of a domestic house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 4,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q9-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, three considerations when designing the layout for sockets in the electrical system of a domestic hou",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "Socket layout",
+            "Safety",
+            "Distribution board",
+            "Installation"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q9-b",
+    "topicId": "cons-5-8",
+    "conceptId": "ring-main-circuit-wiring-layout",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q9(b)",
+    "questionText": "Using notes and freehand sketches, show the design of a typical wiring layout for a ring main circuit to include: • distribution board • three electrical sockets. Indicate the typical sizes and colour coding of the electrical cables.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 5",
+      "answer": 6,
+      "ofParts": 6,
+      "perPart": 5
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q9-b-r1",
+        "kind": "anyN",
+        "verbatim": "Ring main circuit – typical detailing",
+        "marks": 30,
+        "openList": true,
+        "contextNote": "Ring main circuit – typical detailing",
+        "group": {
+          "claimMax": 6,
+          "perOption": 5,
+          "options": [
+            "Distribution board",
+            "Three sockets",
+            "Live cabling",
+            "Neutral cabling",
+            "Earth cabling",
+            "Cable size (2) and colour (3)"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q9-c",
+    "topicId": "cons-1-9",
+    "conceptId": "renewable-energy-ratio",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q9(c)",
+    "questionText": "The current Building Regulations require all new houses to have a renewable energy ratio (RER) of 20%. Discuss two benefits for the homeowner of generating their own electricity by using micro-generation to help meet this energy requirement.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q9-c-r1",
+        "kind": "anyN",
+        "verbatim": "The current Building Regulations require all new houses to have a renewable energy ratio (RER) of 20%. Discuss two benef",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Reduce household electricity costs by generating electrical power through micro-generators",
+            "The use of micro-generators will reduce the household carbon footprint",
+            "Generation of clean electricity to help combat climate change",
+            "Excess electricity can be sold back to the national grid – generate a household income",
+            "Reduce the burning of fossil fuels which release high levels of greenhouse gases and carbon dioxide into the atmosphere",
+            "Households become independent from the primarily coal-powered energy grid - reduce your reliance on grid electricity and the costs that come with it"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q10-a",
+    "topicId": "cons-6-4",
+    "conceptId": "why-solar-overheating-occurs",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q10(a)",
+    "questionText": "Discuss two reasons why solar overheating may occur in the house shown and discuss two effects solar overheating may have on occupants.",
+    "stem": "",
+    "figureKey": "construction-studies-2021-hl-paper-p007-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "2 x 6 + 2 x 6",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q10-a-r1",
+        "kind": "anyN",
+        "verbatim": "Why solar overheating may occur in the house",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Why solar overheating may occur in the house",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "House oriented with excessive south facing glazing may accumulate high levels of solar gain",
+            "Inadequate or no solar shading incorporated into the design of the house - overhangs - brise soleil",
+            "Lack of trees or vegetation about the house to provide natural solar shading",
+            "insufficient ventilation – natural or mechanical",
+            "Increasing levels of airtightness can reduce the amount of 'fresh' air entering the house",
+            "Lack of thermal mass within the fabric of the house",
+            "Triple-glazed windows reduce heat losses through conduction – little heat loss",
+            "High levels of insulation in the fabric of the house reduces heat transmission – retains heat",
+            "The activities of occupants such as cooking, bathing, showering all generate additional heat",
+            "Occupants themselves generate heat, the amount of which is dependent on their activity level",
+            "Heat gain from the house services such as - boilers, hot water storage and distribution pipework",
+            "Electrical appliances generate heat when in use - e.g. fridge"
+          ]
+        }
+      },
+      {
+        "id": "cons-2021-hl-q10-a-r2",
+        "kind": "anyN",
+        "verbatim": "Effects solar overheating may have on its occupants",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Effects solar overheating may have on its occupants",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "The occupants would be uncomfortable when using or living in an excessively warm room(s)",
+            "Excessive heat in a house may cause the dehydration of the occupants, this could lead to - headaches, lethargy, and constipation",
+            "Occupant in the house would become exhausted very quickly due to the heat – bodies overheating",
+            "Occupants could get irritable, angry or grumpy in warm indoor conditions as stress hormones may rise in tandem with the temperature",
+            "Overheating may cause occupants to sweating, leading to discomfort",
+            "Heatstroke could affect some occupants if the temperatures were very high which could lead to - red skin, headache, and dizziness",
+            "Overheating could lead to heat stress which can affect occupants in different ways - an inability to concentrate, muscle cramps, heat rash, severe thirst, confusion",
+            "High indoor temperatures affect the quality and continuity of sleep for occupants. Sleep disturbance has been linked to reduced productivity at work, as well as poor physical and mental health",
+            "Occupants’ productivity and concentration may also be reduced when in a hot environment",
+            "Increased cardiovascular strain",
+            "The reuse of local buildings can help to reduce the demand for new housing while also preserving the vernacular design of the area",
+            "Historic buildings of distinctive character need to be preserved as far as possible unchanged",
+            "The re-use or repurposing of buildings should meet the needs of a dwelling today, even if this means that considerable remodelling is needed to make the building suitable for re-use",
+            "Rather than allow a building fall into disrepair and disuse, best-practice guidelines for reuse encourage uses that meet a need today, and remodelling is necessary to make the building suitable for a new use"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 25 acceptable points under \"Effects solar overheating may have on its occupants\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2021-hl-q10-b",
+    "topicId": "cons-6-4",
+    "conceptId": "reducing-solar-overheating",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q10(b)",
+    "questionText": "Using notes and freehand sketches, suggest two ways to reduce the possibility of solar overheating while being sympathetic to the design of this house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 6",
+      "answer": 4,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q10-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, suggest two ways to reduce the possibility of solar overheating while being sympathet",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 6,
+          "options": [
+            "Overhang roof",
+            "Brise Soleil",
+            "Shutters",
+            "Thermal Mass",
+            "Natural Vegetation",
+            "Dynamic Glass"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q10-c",
+    "topicId": "cons-6-4",
+    "conceptId": "design-features-for-thermal-comfort",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q10(c)",
+    "questionText": "Using notes and freehand sketches, discuss two features of the given house design that contribute to the house responding to its rural setting.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 3",
+      "answer": 4,
+      "ofParts": 9,
+      "perPart": 3
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q10-c-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, discuss two features of the given house design that contribute to the house respondin",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 3,
+          "options": [
+            "Dome-shaped roof profile similar to haybarns found in countryside",
+            "House is rectangular, narrow and one-room deep in plan",
+            "Nestled into the contours and features of the landscape – trees, vegetation, ground terrain",
+            "External corrugated metal cladding on the upper section of the house reflects materials used in agricultural buildings",
+            "White rendered finish to the lower aspect of the house – similar to lime render finish on rural houses",
+            "Proportion of the external materials applied similar to typical agricultural haybarn",
+            "House is construction in a longhouse form",
+            "Narrow plan width - one room deep form of traditional vernacular dwellings",
+            "Minimum hard surfaces to allow vegetation to flourish about the house"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q1-b",
+    "topicId": "cons-6-2",
+    "conceptId": "preventing-a-thermal-bridge-at-the-threshold",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q1(b)",
+    "questionText": "On your drawing, show the typical design detailing that will prevent the formation of a thermal bridge at the threshold.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q1-b-r1",
+        "kind": "point",
+        "verbatim": "Design detailing to prevent a thermal bridge",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-hl-q5-b",
+    "topicId": "cons-6-1",
+    "conceptId": "insulation-thickness-for-a-target-u-value",
+    "level": "higher",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 HL Q5(b)",
+    "questionText": "It is proposed to redesign the above timber frame wall and upgrade its thermal properties to meet the Passive House standard by adding sheep wool insulation to the design of the internal leaf. Given the thermal conductivity (k) of sheep wool insulation as 0.034 W/m ⁰C, calculate the thickness of additional insulation required to achieve a U-value of 0.15 W/m2 ⁰C.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "5 x 3",
+      "answer": 5,
+      "ofParts": 5,
+      "perPart": 3
+    },
+    "totalMarks": 15,
+    "rows": [
+      {
+        "id": "cons-2021-hl-q5-b-r1",
+        "kind": "anyN",
+        "verbatim": "It is proposed to redesign the above timber frame wall and upgrade its thermal properties to meet the Passive House stan",
+        "marks": 15,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 5,
+          "perOption": 3,
+          "options": [
+            "Resistance for U- value for 0.15 W/m2 °c (using R=1/U)",
+            "Resistance from calculated U-value from part (a)",
+            "Difference in resistances (required resistance)",
+            "Application of formula R = T/k",
+            "Required thickness of insulation in mm"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  }
+]

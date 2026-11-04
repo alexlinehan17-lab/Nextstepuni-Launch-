@@ -9,7 +9,7 @@ import {
   initializeTestEnvironment,
   type RulesTestEnvironment,
 } from '@firebase/rules-unit-testing';
-import { collection, deleteDoc, doc, getDoc, getDocs, setDoc, updateDoc } from 'firebase/firestore';
+import { collection, deleteDoc, doc, getDoc, getDocs, increment, query, setDoc, updateDoc, where } from 'firebase/firestore';
 import { getBytes, ref, uploadBytes } from 'firebase/storage';
 import { ADMIN_EMAIL } from '../../utils/adminIdentity';
 
@@ -43,6 +43,27 @@ afterAll(async () => {
 });
 
 describe('Firestore ownership and staff boundaries', () => {
+  it('allows repeatable 100 JP credits to the owner while preserving spending and other progress', async () => {
+    await environment.withSecurityRulesDisabled(async context => {
+      await setDoc(doc(context.firestore(), 'progress/alice'), {
+        pointsData: { totalEarned: 250, totalSpent: 75 },
+        'module-one': { unlockedSection: 3 },
+      });
+    });
+    const db = environment.authenticatedContext('alice', { auth_time: 1 }).firestore();
+    const credit = () => setDoc(doc(db, 'progress/alice'), {
+      pointsData: { totalEarned: increment(100) },
+    }, { merge: true });
+    await assertSucceeds(Promise.all([credit(), credit()]));
+    expect((await getDoc(doc(db, 'progress/alice'))).data()).toEqual({
+      pointsData: { totalEarned: 450, totalSpent: 75 },
+      'module-one': { unlockedSection: 3 },
+    });
+    await assertFails(setDoc(doc(db, 'progress/bob'), {
+      pointsData: { totalEarned: increment(100) },
+    }, { merge: true }));
+  });
+
   it('allows a user to read their own private documents', async () => {
     const db = environment.authenticatedContext('alice', { auth_time: 1 }).firestore();
     await assertSucceeds(getDoc(doc(db, 'users/alice')));
@@ -61,6 +82,18 @@ describe('Firestore ownership and staff boundaries', () => {
     const db = environment.authenticatedContext('alice', { auth_time: 1 }).firestore();
     await assertFails(updateDoc(doc(db, 'users/alice'), { role: 'gc' }));
     await assertFails(updateDoc(doc(db, 'users/alice'), { school: 'school-b' }));
+  });
+
+  it('keeps legal agreement evidence server-only on create, update and records', async () => {
+    const db = environment.authenticatedContext('alice', { auth_time: 1 }).firestore();
+    await assertFails(updateDoc(doc(db, 'users/alice'), { legalAcceptance: { acceptedAt: 'forged' } }));
+    await assertFails(setDoc(doc(db, 'legalAgreementRecords/alice_release'), { uid: 'alice', acceptedAt: 'forged' }));
+    const fresh = environment.authenticatedContext('fresh-agreement', { auth_time: 1 }).firestore();
+    await assertFails(setDoc(doc(fresh, 'users/fresh-agreement'), { name: 'Student', avatar: 'A', legalAcceptance: { acceptedAt: 'forged' } }));
+    await environment.withSecurityRulesDisabled(async context => {
+      await setDoc(doc(context.firestore(), 'legalAgreementRecords/alice_release'), { uid: 'alice', acceptedAt: 'server-record' });
+    });
+    await assertFails(getDoc(doc(db, 'legalAgreementRecords/alice_release')));
   });
 
   it('keeps legacy isAdmin:false profiles writable without allowing escalation', async () => {
@@ -271,5 +304,105 @@ describe('Storage corpus boundary', () => {
     await assertFails(uploadBytes(ref(storage, 'papers/client-upload.pdf'), new Uint8Array([1])));
     await assertFails(uploadBytes(ref(storage, 'private/file.txt'), new Uint8Array([1])));
     await assertFails(getBytes(ref(storage, 'private/file.txt')));
+  });
+});
+
+
+describe('paper island transaction ownership', () => {
+  it('prevents clients from forging island state or refund receipts', async () => {
+    const db = environment.authenticatedContext('alice', { auth_time: 1 }).firestore();
+    await assertFails(updateDoc(doc(db, 'progress/alice'), { paperIsland: {version: 1, credits: 999} }));
+    await environment.withSecurityRulesDisabled(async context => {
+      await updateDoc(doc(context.firestore(), 'progress/alice'), {paperIsland: {version: 1, credits: 3}});
+    });
+    await assertFails(updateDoc(doc(db, 'progress/alice'), {'paperIsland.credits': 99}));
+    await assertSucceeds(updateDoc(doc(db, 'progress/alice'), {'pointsData.totalEarned': 20}));
+  });
+  it('does not permit a forged island on initial profile creation', async () => {
+    const db = environment.authenticatedContext('legacy', { auth_time: 1 }).firestore();
+    await assertFails(setDoc(doc(db, 'progress/legacy'), {paperIsland: {version: 1}, pointsData: {totalEarned: 0, totalSpent: 0}}));
+    await assertSucceeds(setDoc(doc(db, 'progress/legacy'), {subjectProfile: {}, pointsData: {totalEarned: 0, totalSpent: 0}}));
+  });
+});
+
+describe('year islands: classmates in the same school and year only', () => {
+  const island = (school: string, yearGroup?: string) => ({
+    schemaVersion: 2,
+    name: 'Classmate',
+    avatar: 'C',
+    school,
+    ...(yearGroup ? { yearGroup } : {}),
+    tiles: [{ q: 0, r: 0, kind: 'home' }],
+    tileCount: 1,
+  });
+  const as = (uid: string) => environment.authenticatedContext(uid, { auth_time: 1 }).firestore();
+  const yearQuery = (uid: string, school: string, yearGroup: string) =>
+    getDocs(query(collection(as(uid), 'islandPublic'), where('school', '==', school), where('yearGroup', '==', yearGroup)));
+
+  beforeEach(async () => {
+    await environment.withSecurityRulesDisabled(async context => {
+      const db = context.firestore();
+      await Promise.all([
+        setDoc(doc(db, 'users/a5-viewer'), { name: 'Viewer Student', avatar: 'V', school: 'school-a', yearGroup: '5th' }),
+        setDoc(doc(db, 'users/a5-hidden-viewer'), { name: 'Quiet', avatar: 'Q', school: 'school-a', yearGroup: '5th', islandVisibility: 'hidden' }),
+        setDoc(doc(db, 'users/a-no-year'), { name: 'New', avatar: 'N', school: 'school-a' }),
+        setDoc(doc(db, 'users/a-graduate'), { name: 'Grad', avatar: 'G', school: 'school-a', yearGroup: 'graduated' }),
+        setDoc(doc(db, 'users/gc-a5'), { name: 'GC', avatar: 'G', role: 'gc', school: 'school-a', yearGroup: '5th' }),
+        setDoc(doc(db, 'islandPublic/a5-classmate'), island('school-a', '5th')),
+        setDoc(doc(db, 'islandPublic/a6-older'), island('school-a', '6th')),
+        setDoc(doc(db, 'islandPublic/b5-other-school'), island('school-b', '5th')),
+        setDoc(doc(db, 'islandPublic/a-legacy'), island('school-a')),
+      ]);
+    });
+  });
+
+  it('lets a student list and open their own year group at their own school', async () => {
+    const snapshot = await assertSucceeds(yearQuery('a5-viewer', 'school-a', '5th'));
+    expect(snapshot.docs.map(d => d.id)).toEqual(['a5-classmate']);
+    await assertSucceeds(getDoc(doc(as('a5-viewer'), 'islandPublic/a5-classmate')));
+  });
+
+  it('lets a student who hides their own island still browse their year', async () => {
+    await assertSucceeds(yearQuery('a5-hidden-viewer', 'school-a', '5th'));
+  });
+
+  it('denies another year, another school, a school-wide query and a schema 1 projection', async () => {
+    await assertFails(yearQuery('a5-viewer', 'school-a', '6th'));
+    await assertFails(yearQuery('a5-viewer', 'school-b', '5th'));
+    await assertFails(getDocs(query(collection(as('a5-viewer'), 'islandPublic'), where('school', '==', 'school-a'))));
+    await assertFails(getDoc(doc(as('a5-viewer'), 'islandPublic/a6-older')));
+    await assertFails(getDoc(doc(as('a5-viewer'), 'islandPublic/b5-other-school')));
+    await assertFails(getDoc(doc(as('a5-viewer'), 'islandPublic/a-legacy')));
+  });
+
+  it('denies students with no year, graduates, staff and signed-out visitors', async () => {
+    await assertFails(getDoc(doc(as('a-no-year'), 'islandPublic/a5-classmate')));
+    await assertFails(yearQuery('a-graduate', 'school-a', 'graduated'));
+    await assertFails(getDoc(doc(as('a-graduate'), 'islandPublic/a5-classmate')));
+    await assertFails(yearQuery('gc-a5', 'school-a', '5th'));
+    await assertFails(getDoc(doc(environment.unauthenticatedContext().firestore(), 'islandPublic/a5-classmate')));
+  });
+
+  it('denies a session issued before a revocation cutoff', async () => {
+    await environment.withSecurityRulesDisabled(async context => {
+      await updateDoc(doc(context.firestore(), 'users/a5-viewer'), { sessionValidAfterSeconds: 5 });
+    });
+    await assertFails(yearQuery('a5-viewer', 'school-a', '5th'));
+  });
+
+  it('never lets a client write a projection, even their own', async () => {
+    await assertFails(setDoc(doc(as('a5-viewer'), 'islandPublic/a5-viewer'), island('school-a', '5th')));
+    await assertFails(updateDoc(doc(as('a5-viewer'), 'islandPublic/a5-classmate'), { name: 'Changed' }));
+    await assertFails(deleteDoc(doc(as('a5-viewer'), 'islandPublic/a5-classmate')));
+  });
+
+  it('accepts only the two island visibility choices', async () => {
+    const profile = doc(as('a5-viewer'), 'users/a5-viewer');
+    await assertSucceeds(updateDoc(profile, { islandVisibility: 'hidden' }));
+    await assertSucceeds(updateDoc(profile, { islandVisibility: 'year' }));
+    await assertFails(updateDoc(profile, { islandVisibility: 'school' }));
+    await assertFails(updateDoc(profile, { islandVisibility: true }));
+    const fresh = environment.authenticatedContext('fresh-visibility', { auth_time: 1 }).firestore();
+    await assertFails(setDoc(doc(fresh, 'users/fresh-visibility'), { name: 'New', avatar: 'N', islandVisibility: 'everyone' }));
   });
 });

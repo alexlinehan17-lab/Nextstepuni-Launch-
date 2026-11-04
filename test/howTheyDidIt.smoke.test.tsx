@@ -21,9 +21,9 @@ vi.mock('@/hooks/useHowTheyDidIt', () => ({
 import HowTheyDidIt from '@/components/HowTheyDidIt';
 
 describe('How They Did It', () => {
-  test('renders the barrier picker without crashing', () => {
+  test('renders the story library and barrier filters without crashing', () => {
     render(<HowTheyDidIt uid="test-uid" />);
-    expect(screen.getByText(/closest to your situation/i)).toBeInTheDocument();
+    expect(screen.getAllByRole('button', { name: /Read their story/i }).length).toBeGreaterThan(1);
     expect(screen.getByText('Everyone')).toBeInTheDocument();
   });
 });

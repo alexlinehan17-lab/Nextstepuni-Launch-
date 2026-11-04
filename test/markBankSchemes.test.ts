@@ -32,7 +32,10 @@ describe('Business marking schemes are extractor output, not editable text', () 
     : [];
 
   test('every scheme is present', () => {
-    expect(files.length).toBe(10);
+    // 2021-2025 Higher and Ordinary, plus the extractor output for the
+    // 2010-2020 and 2026 Higher and the 2010-2020 and 2026 Ordinary schemes
+    // behind the reviewed rubric cards.
+    expect(files.length).toBe(34);
   });
 
   test.each(files)('%s carries no editorial insertion', (file) => {

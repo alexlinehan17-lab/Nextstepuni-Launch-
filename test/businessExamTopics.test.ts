@@ -13,6 +13,7 @@ import businessReference from '../data/examTopics/business.json';
 import businessEvidence from '../data/examTopics/business-local-crosswalk.json';
 import curriculumCrosswalk from '../data/examTopics/business-curriculum-crosswalk.json';
 import reviewedQuestions from '../data/examTopics/business-reviewed-question-topics.json';
+import sourceReviews from '../data/examTopics/business-source-reviewed-topics.json';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { SUBJECTS as MARK_BANK_SUBJECTS } from '../components/MarkBank/deck';
 import {
@@ -136,10 +137,13 @@ describe('Business exam-topic registry', () => {
       referenceOfficialAssociations: 3075,
       referenceMockAssociations: 2437,
       referenceProviderSampleAssociations: 196,
-      matchedAssociations: 2008,
+      // 2,008 headings join an SEC paper card; 184 of them name an
+      // outgoing-course topic the directly reviewed question does not carry.
+      matchedAssociations: 1824,
+      referenceAnomalyAssociations: 184,
       sourceBlockedAssociations: 1067,
       matchedLogicalCards: 663,
-      matchedQuestionTopicLinks: 1786,
+      matchedQuestionTopicLinks: 1614,
       retainedLocalLogicalCards: 58,
     });
     expect(
@@ -156,6 +160,34 @@ describe('Business exam-topic registry', () => {
       association.resolution === 'source-blocked'
       && association.sitting === 'main'
     )).every(association => association.year < 2010)).toBe(true);
+  });
+
+  it('records every StudyClix topic the SEC review does not support, with its reason', () => {
+    const anomalies = businessEvidence.associations.filter(association => (
+      association.resolution === 'reference-anomaly'));
+    expect(anomalies).toHaveLength(184);
+    for (const association of anomalies) {
+      const target = 'target' in association ? association.target : undefined;
+      if (!target || (target.level !== 'higher' && target.level !== 'ordinary')) {
+        throw new Error(`${association.heading}: anomaly without an SEC target`);
+      }
+      const paper = topicsForPaper('business', target.year, target.level, 'ev', target.fileid);
+      const question = paper?.q.find(candidate => candidate.n === target.questionNumber);
+      expect(question, association.heading).toBeDefined();
+      const live = browseTopicIdsForQuestion(paper!, question!);
+      const key = `${association.topicId}|${association.heading}`;
+      // StudyClix's topic is not on the reviewed question; the recorded SEC
+      // topics are exactly the outgoing-course topics it does carry.
+      expect(association.course, key).toBe('old');
+      expect(live, key).not.toContain(association.topicId);
+      expect('secTopicIds' in association && association.secTopicIds, key)
+        .toEqual(live.filter(id => id.includes('-old-course-')));
+      expect(sourceReviews.questions.some(review => review.year === target.year
+        && review.level === target.level && review.paperKey === target.paperKey
+        && review.n === target.questionNumber), key).toBe(true);
+      expect('reason' in association && association.reason, key)
+        .toMatch(/^StudyClix files this \d{4} (Higher|Ordinary) heading under .+ The SEC paper and marking scheme support .+ asks “.+” Source review: .+ audited anomaly\.$/);
+    }
   });
 
   it('retains all 3,075 factual headings exactly as part-aware metadata', () => {
@@ -254,7 +286,7 @@ describe('Business exam-topic registry', () => {
         throw new Error(`Unexpected retained Business card level: ${card.level}`);
       }
       for (const lang of ['ev', 'iv'] as const) {
-        expect(examTopicIdsForQuestion(
+        const actual = examTopicIdsForQuestion(
           'business',
           card.level,
           card.year,
@@ -262,7 +294,25 @@ describe('Business exam-topic registry', () => {
           card.questionNumber,
           card.paperKey,
           lang,
-        )).toEqual(card.topicIds);
+        );
+        const correction = sourceReviews.questions.find(review => review.year === card.year
+          && review.level === card.level && review.paperKey === card.paperKey
+          && review.n === String(card.questionNumber));
+        if (correction) {
+          // Later direct SEC review can correct provider omissions without
+          // rewriting the captured evidence or removing the question itself.
+          // The review covers the examined 1999 syllabus; redeveloped-course
+          // crosswalk joins stay attached and are compared elsewhere.
+          expect([...new Set(actual.flatMap(curriculumNodeIdsForExamTopic))]
+            .filter(id => !id.startsWith('business-2027-')).sort())
+            .toEqual([...new Set([...correction.canonicalNodeIds,
+              // An ABQ review also files the paper under its printed ABQ unit group.
+              ...('abqTopicLabel' in correction
+                ? actual.filter(id => id.includes('-abq-')).flatMap(curriculumNodeIdsForExamTopic) : [])])].sort());
+          expect(correction.reason.length).toBeGreaterThan(0);
+        } else {
+          expect(actual).toEqual(card.topicIds);
+        }
       }
     }
     expect(businessEvidence.retainedLocalCards.every(card => (

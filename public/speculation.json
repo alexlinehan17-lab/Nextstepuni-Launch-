@@ -1,0 +1,10 @@
+{
+  "prerender": [
+    {
+      "urls": [
+        "/?from=landing"
+      ],
+      "eagerness": "moderate"
+    }
+  ]
+}

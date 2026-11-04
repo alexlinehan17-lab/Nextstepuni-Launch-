@@ -1,0 +1,1622 @@
+{
+  "date": "2026-10-05",
+  "scope": "All registered module components; default rendered state of every section",
+  "viewports": [
+    {
+      "width": 1440,
+      "summary": {
+        "modules": 83,
+        "sections": 505,
+        "text": 12283,
+        "failures": 0,
+        "lightPanels": 0,
+        "overflow": 0
+      },
+      "modules": [
+        {
+          "id": "agency-protocol",
+          "sections": 6,
+          "checked_text": 158,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "hope-protocol",
+          "sections": 6,
+          "checked_text": 157,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "affirming-values-protocol",
+          "sections": 5,
+          "checked_text": 103,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "best-possible-self-protocol",
+          "sections": 5,
+          "checked_text": 90,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "grammar-of-grit-protocol",
+          "sections": 5,
+          "checked_text": 110,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "agency-architecture-protocol",
+          "sections": 5,
+          "checked_text": 118,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "strategic-advantage-protocol",
+          "sections": 5,
+          "checked_text": 98,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "self-efficacy-protocol",
+          "sections": 5,
+          "checked_text": 149,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "illusion-of-competence-protocol",
+          "sections": 6,
+          "checked_text": 141,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "procrastination-protocol",
+          "sections": 8,
+          "checked_text": 182,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "neuroplasticity-protocol",
+          "sections": 6,
+          "checked_text": 117,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "myelin-manual-protocol",
+          "sections": 5,
+          "checked_text": 105,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "praise-protocol",
+          "sections": 6,
+          "checked_text": 110,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "effective-struggle-protocol",
+          "sections": 6,
+          "checked_text": 168,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "science-of-making-mistakes-protocol",
+          "sections": 5,
+          "checked_text": 100,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "autodidact-engine-protocol",
+          "sections": 6,
+          "checked_text": 137,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "power-of-yet-protocol",
+          "sections": 5,
+          "checked_text": 110,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-active-recall-protocol",
+          "sections": 6,
+          "checked_text": 105,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-spaced-repetition-protocol",
+          "sections": 6,
+          "checked_text": 152,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-interleaving-protocol",
+          "sections": 5,
+          "checked_text": 145,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "cognitive-architecture-protocol",
+          "sections": 6,
+          "checked_text": 119,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "elaborative-interrogation-protocol",
+          "sections": 6,
+          "checked_text": 111,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "cognitive-endurance-protocol",
+          "sections": 6,
+          "checked_text": 111,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mental-modelling-protocol",
+          "sections": 6,
+          "checked_text": 139,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "bimodal-brain-protocol",
+          "sections": 6,
+          "checked_text": 89,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "leaving-cert-strategy-protocol",
+          "sections": 6,
+          "checked_text": 188,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "reverse-engineering-protocol",
+          "sections": 6,
+          "checked_text": 129,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "exam-hall-strategies-protocol",
+          "sections": 7,
+          "checked_text": 200,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "exam-crisis-management-protocol",
+          "sections": 7,
+          "checked_text": 204,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "growth-mindset-protocol",
+          "sections": 6,
+          "checked_text": 150,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "controllable-variables-protocol",
+          "sections": 6,
+          "checked_text": 177,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "reframing-progress-protocol",
+          "sections": 7,
+          "checked_text": 134,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "learning-math-protocol",
+          "sections": 9,
+          "checked_text": 186,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "linking-study-future-goals-protocol",
+          "sections": 8,
+          "checked_text": 198,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "game-day-protocol",
+          "sections": 8,
+          "checked_text": 192,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "reframing-catastrophic-thoughts-protocol",
+          "sections": 8,
+          "checked_text": 157,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-foreign-languages-protocol",
+          "sections": 8,
+          "checked_text": 183,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "emotional-intelligence-protocol",
+          "sections": 7,
+          "checked_text": 166,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-the-sciences-protocol",
+          "sections": 7,
+          "checked_text": 132,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-the-humanities-protocol",
+          "sections": 5,
+          "checked_text": 92,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-english-protocol",
+          "sections": 7,
+          "checked_text": 108,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-business-protocol",
+          "sections": 6,
+          "checked_text": 115,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "applied-sciences-protocol",
+          "sections": 6,
+          "checked_text": 132,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "digital-distraction-protocol",
+          "sections": 7,
+          "checked_text": 188,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-the-creatives-protocol",
+          "sections": 6,
+          "checked_text": 114,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "points-optimization-protocol",
+          "sections": 7,
+          "checked_text": 285,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "marking-scheme-decoder-protocol",
+          "sections": 7,
+          "checked_text": 242,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "answer-engineering-protocol",
+          "sections": 7,
+          "checked_text": 263,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "learning-radar-protocol",
+          "sections": 6,
+          "checked_text": 162,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "note-taking-paradox-protocol",
+          "sections": 5,
+          "checked_text": 130,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "teaching-effect-protocol",
+          "sections": 5,
+          "checked_text": 112,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "cognitive-load-protocol",
+          "sections": 5,
+          "checked_text": 119,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "implementation-protocol",
+          "sections": 5,
+          "checked_text": 121,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "context-effect-protocol",
+          "sections": 5,
+          "checked_text": 182,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-english-protocol",
+          "sections": 6,
+          "checked_text": 195,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-irish-protocol",
+          "sections": 6,
+          "checked_text": 137,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-french-protocol",
+          "sections": 6,
+          "checked_text": 144,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-german-protocol",
+          "sections": 6,
+          "checked_text": 134,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-spanish-protocol",
+          "sections": 6,
+          "checked_text": 140,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-italian-protocol",
+          "sections": 6,
+          "checked_text": 151,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-japanese-protocol",
+          "sections": 6,
+          "checked_text": 127,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-mathematics-protocol",
+          "sections": 6,
+          "checked_text": 177,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-applied-maths-protocol",
+          "sections": 6,
+          "checked_text": 152,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-physics-protocol",
+          "sections": 6,
+          "checked_text": 167,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-chemistry-protocol",
+          "sections": 6,
+          "checked_text": 149,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-biology-protocol",
+          "sections": 6,
+          "checked_text": 168,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-computer-science-protocol",
+          "sections": 6,
+          "checked_text": 135,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-ag-science-protocol",
+          "sections": 6,
+          "checked_text": 157,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-accounting-protocol",
+          "sections": 6,
+          "checked_text": 187,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-business-protocol",
+          "sections": 6,
+          "checked_text": 176,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-economics-protocol",
+          "sections": 6,
+          "checked_text": 148,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-history-protocol",
+          "sections": 6,
+          "checked_text": 177,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-geography-protocol",
+          "sections": 6,
+          "checked_text": 151,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-politics-and-society-protocol",
+          "sections": 6,
+          "checked_text": 145,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-religious-education-protocol",
+          "sections": 6,
+          "checked_text": 154,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-classical-studies-protocol",
+          "sections": 6,
+          "checked_text": 123,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-home-economics-protocol",
+          "sections": 6,
+          "checked_text": 153,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-construction-studies-protocol",
+          "sections": 6,
+          "checked_text": 156,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-engineering-protocol",
+          "sections": 6,
+          "checked_text": 148,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-dcg-protocol",
+          "sections": 6,
+          "checked_text": 139,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-technology-protocol",
+          "sections": 6,
+          "checked_text": 145,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-art-protocol",
+          "sections": 6,
+          "checked_text": 129,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-music-protocol",
+          "sections": 6,
+          "checked_text": 134,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "summary": {
+        "modules": 83,
+        "sections": 505,
+        "text": 11900,
+        "failures": 0,
+        "lightPanels": 0,
+        "overflow": 0
+      },
+      "modules": [
+        {
+          "id": "agency-protocol",
+          "sections": 6,
+          "checked_text": 153,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "hope-protocol",
+          "sections": 6,
+          "checked_text": 65,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "affirming-values-protocol",
+          "sections": 5,
+          "checked_text": 98,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "best-possible-self-protocol",
+          "sections": 5,
+          "checked_text": 85,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "grammar-of-grit-protocol",
+          "sections": 5,
+          "checked_text": 110,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "agency-architecture-protocol",
+          "sections": 5,
+          "checked_text": 113,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "strategic-advantage-protocol",
+          "sections": 5,
+          "checked_text": 98,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "self-efficacy-protocol",
+          "sections": 5,
+          "checked_text": 64,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "illusion-of-competence-protocol",
+          "sections": 6,
+          "checked_text": 141,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "procrastination-protocol",
+          "sections": 8,
+          "checked_text": 182,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "neuroplasticity-protocol",
+          "sections": 6,
+          "checked_text": 117,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "myelin-manual-protocol",
+          "sections": 5,
+          "checked_text": 105,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "praise-protocol",
+          "sections": 6,
+          "checked_text": 110,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "effective-struggle-protocol",
+          "sections": 6,
+          "checked_text": 168,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "science-of-making-mistakes-protocol",
+          "sections": 5,
+          "checked_text": 80,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "autodidact-engine-protocol",
+          "sections": 6,
+          "checked_text": 124,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "power-of-yet-protocol",
+          "sections": 5,
+          "checked_text": 110,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-active-recall-protocol",
+          "sections": 6,
+          "checked_text": 105,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-spaced-repetition-protocol",
+          "sections": 6,
+          "checked_text": 152,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-interleaving-protocol",
+          "sections": 5,
+          "checked_text": 117,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "cognitive-architecture-protocol",
+          "sections": 6,
+          "checked_text": 119,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "elaborative-interrogation-protocol",
+          "sections": 6,
+          "checked_text": 111,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "cognitive-endurance-protocol",
+          "sections": 6,
+          "checked_text": 73,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mental-modelling-protocol",
+          "sections": 6,
+          "checked_text": 139,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "bimodal-brain-protocol",
+          "sections": 6,
+          "checked_text": 89,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "leaving-cert-strategy-protocol",
+          "sections": 6,
+          "checked_text": 188,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "reverse-engineering-protocol",
+          "sections": 6,
+          "checked_text": 124,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "exam-hall-strategies-protocol",
+          "sections": 7,
+          "checked_text": 195,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "exam-crisis-management-protocol",
+          "sections": 7,
+          "checked_text": 199,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "growth-mindset-protocol",
+          "sections": 6,
+          "checked_text": 145,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "controllable-variables-protocol",
+          "sections": 6,
+          "checked_text": 177,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "reframing-progress-protocol",
+          "sections": 7,
+          "checked_text": 134,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "learning-math-protocol",
+          "sections": 9,
+          "checked_text": 181,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "linking-study-future-goals-protocol",
+          "sections": 8,
+          "checked_text": 198,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "game-day-protocol",
+          "sections": 8,
+          "checked_text": 183,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "reframing-catastrophic-thoughts-protocol",
+          "sections": 8,
+          "checked_text": 157,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-foreign-languages-protocol",
+          "sections": 8,
+          "checked_text": 178,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "emotional-intelligence-protocol",
+          "sections": 7,
+          "checked_text": 166,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-the-sciences-protocol",
+          "sections": 7,
+          "checked_text": 127,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-the-humanities-protocol",
+          "sections": 5,
+          "checked_text": 92,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-english-protocol",
+          "sections": 7,
+          "checked_text": 108,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-business-protocol",
+          "sections": 6,
+          "checked_text": 110,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "applied-sciences-protocol",
+          "sections": 6,
+          "checked_text": 127,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "digital-distraction-protocol",
+          "sections": 7,
+          "checked_text": 183,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "mastering-the-creatives-protocol",
+          "sections": 6,
+          "checked_text": 109,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "points-optimization-protocol",
+          "sections": 7,
+          "checked_text": 280,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "marking-scheme-decoder-protocol",
+          "sections": 7,
+          "checked_text": 234,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "answer-engineering-protocol",
+          "sections": 7,
+          "checked_text": 263,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "learning-radar-protocol",
+          "sections": 6,
+          "checked_text": 162,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "note-taking-paradox-protocol",
+          "sections": 5,
+          "checked_text": 125,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "teaching-effect-protocol",
+          "sections": 5,
+          "checked_text": 112,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "cognitive-load-protocol",
+          "sections": 5,
+          "checked_text": 114,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "implementation-protocol",
+          "sections": 5,
+          "checked_text": 121,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "context-effect-protocol",
+          "sections": 5,
+          "checked_text": 182,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-english-protocol",
+          "sections": 6,
+          "checked_text": 195,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-irish-protocol",
+          "sections": 6,
+          "checked_text": 137,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-french-protocol",
+          "sections": 6,
+          "checked_text": 144,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-german-protocol",
+          "sections": 6,
+          "checked_text": 134,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-spanish-protocol",
+          "sections": 6,
+          "checked_text": 140,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-italian-protocol",
+          "sections": 6,
+          "checked_text": 151,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-japanese-protocol",
+          "sections": 6,
+          "checked_text": 127,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-mathematics-protocol",
+          "sections": 6,
+          "checked_text": 177,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-applied-maths-protocol",
+          "sections": 6,
+          "checked_text": 152,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-physics-protocol",
+          "sections": 6,
+          "checked_text": 167,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-chemistry-protocol",
+          "sections": 6,
+          "checked_text": 149,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-biology-protocol",
+          "sections": 6,
+          "checked_text": 168,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-computer-science-protocol",
+          "sections": 6,
+          "checked_text": 135,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-ag-science-protocol",
+          "sections": 6,
+          "checked_text": 157,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-accounting-protocol",
+          "sections": 6,
+          "checked_text": 187,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-business-protocol",
+          "sections": 6,
+          "checked_text": 176,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-economics-protocol",
+          "sections": 6,
+          "checked_text": 148,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-history-protocol",
+          "sections": 6,
+          "checked_text": 177,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-geography-protocol",
+          "sections": 6,
+          "checked_text": 151,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-politics-and-society-protocol",
+          "sections": 6,
+          "checked_text": 145,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-religious-education-protocol",
+          "sections": 6,
+          "checked_text": 154,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-classical-studies-protocol",
+          "sections": 6,
+          "checked_text": 123,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-home-economics-protocol",
+          "sections": 6,
+          "checked_text": 153,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-construction-studies-protocol",
+          "sections": 6,
+          "checked_text": 156,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-engineering-protocol",
+          "sections": 6,
+          "checked_text": 148,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-dcg-protocol",
+          "sections": 6,
+          "checked_text": 139,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-technology-protocol",
+          "sections": 6,
+          "checked_text": 145,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-art-protocol",
+          "sections": 6,
+          "checked_text": 129,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        },
+        {
+          "id": "subject-music-protocol",
+          "sections": 6,
+          "checked_text": 134,
+          "contrast_findings": 0,
+          "horizontal_overflow": false
+        }
+      ]
+    }
+  ],
+  "catalogue": [
+    {
+      "width": 1440,
+      "page": "modules",
+      "checked_text": 39,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "page": "architecture-mindset",
+      "checked_text": 72,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "page": "science-growth",
+      "checked_text": 60,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "page": "learning-cheat-codes",
+      "checked_text": 80,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "page": "subject-specific-science",
+      "checked_text": 48,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "page": "exam-zone",
+      "checked_text": 52,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "page": "modules",
+      "checked_text": 39,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "page": "architecture-mindset",
+      "checked_text": 72,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "page": "science-growth",
+      "checked_text": 60,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "page": "learning-cheat-codes",
+      "checked_text": 80,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "page": "subject-specific-science",
+      "checked_text": 48,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "page": "exam-zone",
+      "checked_text": 52,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    }
+  ],
+  "interactive_checks": [
+    {
+      "case": "1440/learning-radar-protocol/Reveal the Curve/hover",
+      "checked_text": 21,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/learning-radar-protocol/Reveal the Curve/active",
+      "checked_text": 38,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/learning-radar-protocol/Reveal the Timing Effect/hover",
+      "checked_text": 23,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/learning-radar-protocol/Reveal the Timing Effect/active",
+      "checked_text": 55,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/marking-scheme-decoder-protocol/Start Classifying/hover",
+      "checked_text": 33,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/marking-scheme-decoder-protocol/Start Classifying/active",
+      "checked_text": 35,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/marking-scheme-decoder-protocol/Show Upgraded Answer/hover",
+      "checked_text": 36,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/marking-scheme-decoder-protocol/Show Upgraded Answer/active",
+      "checked_text": 41,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/exam-hall-strategies-protocol/Start Triage/hover",
+      "checked_text": 30,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/exam-hall-strategies-protocol/Start Triage/active",
+      "checked_text": 36,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/exam-hall-strategies-protocol/Begin/hover",
+      "checked_text": 21,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/exam-hall-strategies-protocol/Begin/active",
+      "checked_text": 23,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/attribution/reframed",
+      "checked_text": 31,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/answer-builder/hover",
+      "checked_text": 57,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/answer-builder/selected",
+      "checked_text": 56,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/notes",
+      "checked_text": 7,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/sources",
+      "checked_text": 45,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/reading-comfort",
+      "checked_text": 10,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/completion",
+      "checked_text": 15,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/learning-radar-protocol/Reveal the Curve/hover",
+      "checked_text": 21,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/learning-radar-protocol/Reveal the Curve/active",
+      "checked_text": 38,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/learning-radar-protocol/Reveal the Timing Effect/hover",
+      "checked_text": 23,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/learning-radar-protocol/Reveal the Timing Effect/active",
+      "checked_text": 55,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/marking-scheme-decoder-protocol/Start Classifying/hover",
+      "checked_text": 33,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/marking-scheme-decoder-protocol/Start Classifying/active",
+      "checked_text": 35,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/marking-scheme-decoder-protocol/Show Upgraded Answer/hover",
+      "checked_text": 36,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/marking-scheme-decoder-protocol/Show Upgraded Answer/active",
+      "checked_text": 41,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/exam-hall-strategies-protocol/Start Triage/hover",
+      "checked_text": 30,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/exam-hall-strategies-protocol/Start Triage/active",
+      "checked_text": 36,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/exam-hall-strategies-protocol/Begin/hover",
+      "checked_text": 21,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/exam-hall-strategies-protocol/Begin/active",
+      "checked_text": 23,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/attribution/reframed",
+      "checked_text": 31,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/answer-builder/hover",
+      "checked_text": 57,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/answer-builder/selected",
+      "checked_text": 56,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/notes",
+      "checked_text": 7,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/contents",
+      "checked_text": 24,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/sources",
+      "checked_text": 45,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/reading-comfort",
+      "checked_text": 10,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/completion",
+      "checked_text": 15,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    }
+  ],
+  "final_smoke_checks": [
+    {
+      "case": "1440/pink-hover",
+      "checked_text": 22,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/humanities-feedback",
+      "checked_text": 27,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/reader",
+      "checked_text": 26,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/light-reader",
+      "checked_text": 26,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/pink-hover",
+      "checked_text": 22,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/humanities-feedback",
+      "checked_text": 27,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/reader",
+      "checked_text": 22,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/light-reader",
+      "checked_text": 22,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/Porridge (Low-GI)",
+      "checked_text": 35,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/Porridge (Low-GI)/other-state",
+      "checked_text": 35,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/Sugary Cereal (High-GI)",
+      "checked_text": 35,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "1440/Sugary Cereal (High-GI)/other-state",
+      "checked_text": 35,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/Porridge (Low-GI)",
+      "checked_text": 35,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/Porridge (Low-GI)/other-state",
+      "checked_text": 35,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/Sugary Cereal (High-GI)",
+      "checked_text": 35,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    },
+    {
+      "case": "390/Sugary Cereal (High-GI)/other-state",
+      "checked_text": 35,
+      "contrast_findings": 0,
+      "horizontal_overflow": false
+    }
+  ],
+  "validation": {
+    "typecheck": "passed",
+    "eslint_changed_components": "passed",
+    "regression_suites": 6,
+    "regression_tests_passed": 46,
+    "production_build": "passed",
+    "git_diff_check": "passed"
+  }
+}

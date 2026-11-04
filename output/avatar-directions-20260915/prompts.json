@@ -1,0 +1,49 @@
+{
+  "method": "OpenAI built-in image generation",
+  "purpose": "Avatar design exploration; current app avatars unchanged.",
+  "commonPrompt": "Use case: stylized-concept. Create a polished raster concept sheet for Nextstepuni student profile avatars. Square 1024x1024 image. Exactly FOUR distinct avatars arranged as an evenly spaced 2 by 2 sprite sheet: centers at (256,256), (768,256), (256,768), (768,768). Each fits entirely within a 360x360 area centered in its quadrant, with generous pure white empty space. No dividing lines, no text labels, no UI, no borders, no background blobs, no shadows. These will be shown as small app icons: prioritize unmistakable silhouettes and legible details. Our brand is independent, warm, editorial, hand drawn in confident imperfect black ink on white paper, accented with vivid orange #ff771c. It is for older teenage students. Avoid generic vector stock, DiceBear floating facial features, kawaii, emoji, glossy 3D, corporate Memphis art, and pastel rounded-square tiles. Make this feel like an illustrator's coherent custom avatar collection.",
+  "directions": [
+    {
+      "key": "01-star-crew",
+      "title": "Star Crew",
+      "detail": "Reference image is our existing brand mascot for STYLE AND CHARACTER LANGUAGE, not a target to replace. Develop FOUR personalisable cousins of this faceless white rounded outline person, each full-body with the same bold wobbly black contour and simple circular blank head. Top left: relaxed person in a little orange beanie with one foot resting on a small orange star. Top right: person wearing over-ear headphones, tucked into a reading pose on a single orange star. Bottom left: person carrying a little book, with a small orange scarf and one orange star beneath a foot. Bottom right: person in an orange cross-body satchel, leaning casually on a small orange star. Keep head large and body compact so all four work at avatar scale. White body interiors, no facial features. Charming assured gestures, no decorative sparkles or clutter. The star is part of the established mascot identity.",
+      "asset": "01-star-crew.png",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a07758-d620-74d1-83a4-4778fb799f4a/exec-3f194323-50b2-408f-9b5b-105a8d4d7484.png"
+    },
+    {
+      "key": "02-sketchbook-portraits",
+      "title": "Sketchbook Portraits",
+      "detail": "Use the reference solely for the confident black ink stroke and white/orange brand language. Draw FOUR entirely new distinctive close-cropped human head-and-shoulders portraits, filling their quadrants. Warm editorial sketchbook drawings, very sparse expressive facial marks within clear head outlines, not floating face parts. Four different older-teen looks: a short curly-haired person with round glasses and a small orange collar; a person with a neat bob and orange headphones around the neck; a person in a softly draped headscarf with one orange edge; a person with short tousled hair and an orange beanie. Personal and inclusive, subtly asymmetrical, calm character, not caricature. White paper faces with strong charcoal hair shapes, smooth white clothing and tiny orange accents. Keep details broad enough for a 48px avatar.",
+      "asset": "02-sketchbook-portraits.png",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a07758-d620-74d1-83a4-4778fb799f4a/exec-2c2c0170-0f7d-4a4c-9cf9-eb32297a7087.png"
+    },
+    {
+      "key": "03-desk-companions",
+      "title": "Desk Companions",
+      "detail": "Use the reference for bold imperfect black contours, simple character limbs and white/orange palette. FOUR charming everyday study objects given restrained personality: top left a standing closed book with an orange spine and tiny ink legs; top right a chunky short orange-tipped pencil with small arms; bottom left a white backpack with a large orange pocket and little feet; bottom right a white ceramic mug with an orange handle and a relaxed expression. Each has only two tiny eye marks and a single simple mouth, integrated into its body. These are sophisticated hand-drawn editorial mascots, appealing to older teens, not nursery cartoons. Large clear object silhouettes, playful poses, thick black linework and substantial white areas. No steam/sparkles/accessory clutter.",
+      "asset": "03-desk-companions.png",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a07758-d620-74d1-83a4-4778fb799f4a/exec-c5acf711-441c-4529-ad14-3c1584e7e4be.png"
+    },
+    {
+      "key": "04-fieldbook-creatures",
+      "title": "Fieldbook Creatures",
+      "detail": "The reference is STYLE inspiration from our Journey mythical fieldbook. Ignore and DO NOT reproduce its magenta background, border, volcano or detailed composition. Simplify that folk-ink language dramatically into FOUR compact, recognisable creature portrait emblems: top left a wise owl head with angular ears; top right a curious fox head in three-quarter view; bottom left a friendly small curled dragon with a bold spiral tail; bottom right a nautilus with a simple spiralled shell and only two curving tentacles. Draw black/very dark petrol ink outlines, broad white areas, restrained muted sage/blue-grey and a single warm orange accent on each. Minimal internal hatching, expressive and intriguing rather than scary or babyish. Strong graphic shapes that remain readable at 48px. No scenery, no text, no decorative frames.",
+      "asset": "04-fieldbook-creatures.png",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a07758-d620-74d1-83a4-4778fb799f4a/exec-6bdea490-4394-4077-8b4b-19cdb3bf7f98.png"
+    },
+    {
+      "key": "05-pocket-islands",
+      "title": "Pocket Islands",
+      "detail": "Reference gives our established Journey illustration style: hand-drawn black contours, white/cream architecture, sage greenery, orange details. Ignore the magenta background completely. Create FOUR miniature isometric islands as personal identity icons. Each has one simple low white hexagonal island base and just one dominant object: top left a single rounded tree beside an orange path marker; top right a tiny crooked white lighthouse with orange cap; bottom left a small white bookshop/library with orange door and one bush; bottom right an orange triangular tent beside a single dark sage sapling. Keep each island icon extremely clean and compact, simplify dramatically compared to the reference, no tiny texture or filigree. Beautiful uneven pen outlines, gentle flat sage fills, white base faces, one orange focal detail. The shape itself is the avatar, with no surrounding badge.",
+      "asset": "05-pocket-islands.png",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a07758-d620-74d1-83a4-4778fb799f4a/exec-60da2847-df8b-40a3-a097-bb7e8ade463f.png"
+    },
+    {
+      "key": "06-ink-initials",
+      "title": "Ink Initials",
+      "detail": "Use the reference only for black hand-drawn ink energy and tiny vivid orange accents. Create FOUR bespoke typographic avatar marks. One large hand-lettered capital initial in each quadrant: top left A, top right J, bottom left M, bottom right R. Letters are heavy, playful and slightly imperfect rounded sans-serif brush/marker forms, custom drawn rather than a typeset font. Each letter sits within a different subtle hand-drawn almost-circular black outline or irregular rounded paper stamp boundary, using white interior and a tiny orange offset edge, underline or tab. Extremely clean and graphic, intimate and identifiable, consistent ink weight. No faces, no mascots, no serif varsity logos, no pastel fills. Only the exact single letter specified for each quadrant. The aesthetic is a personal mark in the margin of a favourite notebook.",
+      "asset": "06-ink-initials.png",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a07758-d620-74d1-83a4-4778fb799f4a/exec-b9b0d690-3e99-40c7-ad2c-7701606b8d11.png"
+    }
+  ]
+}

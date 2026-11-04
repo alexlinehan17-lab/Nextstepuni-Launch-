@@ -1,0 +1,1015 @@
+{
+  "version": 1,
+  "date": "2026-10-08",
+  "subjects": [
+    {
+      "subject": "construction-studies",
+      "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Filled-Dark-Artwork-20260926",
+      "branch": "codex/filled-dark-artwork-20260926",
+      "sourceHead": "90efd9fcb9ee5da180e5bbbe8ebc7f0e3c6ff80f",
+      "snapshotCommit": "931e3daed2d658ed12806cb767f04131ff3e46c6",
+      "snapshotRef": "refs/checkpoints/portable-subjects-20261008/construction-studies",
+      "snapshotTree": "12fe0f63199b2ee3e1ac38003bed642d315bc243",
+      "changedPaths": 12071,
+      "capturedLocalFiles": 11946,
+      "capturedLocalBytes": 9438345680,
+      "exactFileBytesVerified": true,
+      "handoff": "construction-studies.md",
+      "excluded": [
+        {
+          "path": "docs/approved-kobra-live-release-2026-09-27.md",
+          "reason": "unrelated document, outside subject checkpoint"
+        },
+        {
+          "path": "docs/approved-launchpad-learning-rollout-2026-09-27.md",
+          "reason": "unrelated document, outside subject checkpoint"
+        },
+        {
+          "path": "docs/approved-progress-rollout-2026-09-27.md",
+          "reason": "unrelated document, outside subject checkpoint"
+        },
+        {
+          "path": "docs/approved-study-rollout-2026-09-27.md",
+          "reason": "unrelated document, outside subject checkpoint"
+        },
+        {
+          "path": "docs/kobra-implementation-audit-2026-09-27.md",
+          "reason": "unrelated document, outside subject checkpoint"
+        },
+        {
+          "path": "docs/session-release-2026-09-28.md",
+          "reason": "unrelated document, outside subject checkpoint"
+        },
+        {
+          "path": "tmp/pdfs/2026-cl-003-paper.png",
+          "reason": "unrelated temporary file"
+        },
+        {
+          "path": "tmp/pdfs/2026-cl-C00-paper.png",
+          "reason": "unrelated temporary file"
+        }
+      ],
+      "originalCheckpointCommit": "45dd664b41a86a1ef885b9dfff31498426b46312",
+      "snapshotBase": "b065c7fdabdec04caa80949bbd4ba2b9a44f0f66"
+    },
+    {
+      "subject": "english",
+      "worktree": "/Users/alexlinehan/Documents/Nextstepuni-English-Completion-20261007",
+      "branch": "codex/english-corpus-completion-20261007",
+      "sourceHead": "8deb273f1b13341dcfa85204f7e4d784b638b21f",
+      "snapshotCommit": "2f23767eaeb00cc9e25922486372e07c25409940",
+      "snapshotRef": "refs/checkpoints/portable-subjects-20261008/english",
+      "snapshotTree": "0cf8312a56dbdece1ce8bbc33246a781bd944c4a",
+      "changedPaths": 480,
+      "capturedLocalFiles": 483,
+      "capturedLocalBytes": 235847464,
+      "exactFileBytesVerified": true,
+      "handoff": "english.md",
+      "excluded": [
+        {
+          "path": "examiner-reports/english/papers/2021-hl-100-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2021-hl-200-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2021-ol-100-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2021-ol-200-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2022-hl-100-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2022-hl-200-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2022-ol-100-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2022-ol-200-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2023-hl-100-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2023-hl-200-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2023-ol-100-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2023-ol-200-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2024-hl-100-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2024-hl-200-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2024-ol-100-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2024-ol-200-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2025-hl-100-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2025-hl-200-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2025-ol-100-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/english/papers/2025-ol-200-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        }
+      ],
+      "originalCheckpointCommit": "3038fa2fdee7b457cc38c71f2f8711b2ae0bf9d5",
+      "snapshotBase": "4c1accc328f29cd34161d09ce21b8729f7c1c546"
+    },
+    {
+      "subject": "french",
+      "worktree": "/Users/alexlinehan/Documents/Nextstepuni-French-Bank-Atlas-20261007",
+      "branch": "codex/french-complete-bank-atlas-20261007",
+      "sourceHead": "fdc123c3b829b9437f4e4982a514086afb8e0776",
+      "snapshotCommit": "42291f6b95a036ce7527c18a069b0ec103822d54",
+      "snapshotRef": "refs/checkpoints/portable-subjects-20261008/french",
+      "snapshotTree": "690101d4b263610b8d24028fc888a2ff165285b0",
+      "changedPaths": 2242,
+      "capturedLocalFiles": 2268,
+      "capturedLocalBytes": 1192576109,
+      "exactFileBytesVerified": true,
+      "handoff": "french.md",
+      "excluded": [],
+      "originalCheckpointCommit": "71445392ca24efaf04c63d0e1f1048894166e0c6",
+      "snapshotBase": "4b4e4d9a868778e07a89ae970ff5cd7cb6276442"
+    },
+    {
+      "subject": "mathematics",
+      "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Mathematics-Completion-20261007",
+      "branch": "codex/mathematics-corpus-completion-20261007",
+      "sourceHead": "49ff5053e9c785f9e538e9dd39050ef4fac6682f",
+      "snapshotCommit": "5a82720762ab05a7298c4d5ee03ee1083e746a05",
+      "snapshotRef": "refs/checkpoints/portable-subjects-20261008/mathematics",
+      "snapshotTree": "3e26caceccf0c872b91cf3401df07960c859f982",
+      "changedPaths": 390,
+      "capturedLocalFiles": 380,
+      "capturedLocalBytes": 105753294,
+      "exactFileBytesVerified": true,
+      "handoff": "mathematics.md",
+      "excluded": [
+        {
+          "path": "public/papers/lc/mathematics/2020/paper/LC003BLP000EV.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "public/papers/lc/mathematics/2020/scheme/LC003BLP000EV.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "public/papers/lc/mathematics/2025/paper/LC003ALP100EV.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "public/papers/lc/mathematics/2025/paper/LC003ALP200EV.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "public/papers/lc/mathematics/2025/paper/LC003BLP000EV.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "public/papers/lc/mathematics/2025/paper/LC003GLP100EV.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "public/papers/lc/mathematics/2025/paper/LC003GLP200EV.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "public/papers/lc/mathematics/2025/scheme/LC003ALP000EV.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "public/papers/lc/mathematics/2025/scheme/LC003BLP000EV.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "public/papers/lc/mathematics/2025/scheme/LC003GLP000EV.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "public/papers/lc/mathematics/2026/paper/LC003BLP000EV.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "public/papers/lc/mathematics/2026/scheme/LC003BLP000EV.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        }
+      ],
+      "originalCheckpointCommit": "d2ad79473ce06a9a8ff06537c64d75e604444aa2",
+      "snapshotBase": "7c71a9b9a107102ac9cfb7132553905a1cd48bd6"
+    },
+    {
+      "subject": "business",
+      "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Business-Completion-20261007",
+      "branch": "codex/business-corpus-completion-20261007",
+      "sourceHead": "8deb273f1b13341dcfa85204f7e4d784b638b21f",
+      "snapshotCommit": "8bbd1be7533d0979fad294321d5047207292b1b1",
+      "snapshotRef": "refs/checkpoints/portable-subjects-20261008/business",
+      "snapshotTree": "98ee4a719cc2616dd4c98bf665c988ee388047d7",
+      "changedPaths": 1676,
+      "capturedLocalFiles": 1690,
+      "capturedLocalBytes": 121936524,
+      "exactFileBytesVerified": true,
+      "handoff": "business.md",
+      "excluded": [
+        {
+          "path": "examiner-reports/business/papers/2010-hl-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2010-ol-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2011-hl-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2011-ol-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2012-hl-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2012-ol-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2013-hl-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2013-ol-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2014-hl-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2014-ol-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2015-hl-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2015-ol-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2016-hl-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2016-ol-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2017-hl-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2017-ol-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2018-hl-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2018-ol-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2019-hl-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2019-ol-000-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2020-hl-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2020-hl-041-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2020-ol-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2020-ol-033-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2021-hl-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2021-hl-041-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2021-ol-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2021-ol-033-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2022-hl-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2022-hl-041-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2022-ol-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2022-ol-033-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2023-hl-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2023-hl-041-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2023-ol-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2023-ol-033-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2024-hl-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2024-hl-041-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2024-ol-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2024-ol-033-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2025-hl-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2025-hl-041-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2025-ol-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2025-ol-033-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2026-hl-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2026-hl-041-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2026-ol-032-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/business/papers/2026-ol-033-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        }
+      ],
+      "originalCheckpointCommit": "d813e46077beeacfcf130da408a73b086dd7727c",
+      "snapshotBase": "4c1accc328f29cd34161d09ce21b8729f7c1c546"
+    },
+    {
+      "subject": "applied-mathematics",
+      "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Applied-Mathematics-Completion-20261007",
+      "branch": "codex/applied-mathematics-bank-atlas-20261007",
+      "sourceHead": "812e0092f732bcfb20126d8f4534e21047d9b085",
+      "snapshotCommit": "30ceda6d4d62211b8702d8c710a01c697e949d19",
+      "snapshotRef": "refs/checkpoints/portable-subjects-20261008/applied-mathematics",
+      "snapshotTree": "925b9d76af86da3b810c2012d67b09350f93484f",
+      "changedPaths": 1534,
+      "capturedLocalFiles": 1550,
+      "capturedLocalBytes": 340240143,
+      "exactFileBytesVerified": true,
+      "handoff": "applied-mathematics.md",
+      "excluded": [],
+      "originalCheckpointCommit": "5113def74f0a925a0fdd6fb52c2996c81184d7dd",
+      "snapshotBase": "d9b168be56e56f3f55ceab652825b19209a1111f"
+    },
+    {
+      "subject": "irish",
+      "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Irish-Completion-20261007",
+      "branch": "codex/irish-corpus-completion-20261007",
+      "sourceHead": "7bd1e9fbc5b39e62e982435169e298813c83ccbb",
+      "snapshotCommit": "5784f892d5e83ddf5cd34d2bd916926fb9f86a4f",
+      "snapshotRef": "refs/checkpoints/portable-subjects-20261008/irish",
+      "snapshotTree": "6574f4d88309158d37ef4ed0ba77c2988420b609",
+      "changedPaths": 1319,
+      "capturedLocalFiles": 1355,
+      "capturedLocalBytes": 178127198,
+      "exactFileBytesVerified": true,
+      "handoff": "irish.md",
+      "excluded": [],
+      "originalCheckpointCommit": "b56470533cc7ee558aab2e4e5dbaa8fb4968bbad",
+      "snapshotBase": "6082638a098faaecead399b78bf17238a24945fc"
+    },
+    {
+      "subject": "agricultural-science",
+      "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Agricultural-Science-Completion-20261007",
+      "branch": "codex/agricultural-science-completion-20261007",
+      "sourceHead": "11186156ae8b3e8b694e18b7f40cb37f31d24dce",
+      "snapshotCommit": "dc0a07080cc58709314ea2df9525c8d4224154c3",
+      "snapshotRef": "refs/checkpoints/portable-subjects-20261008/agricultural-science",
+      "snapshotTree": "a906c1dc78253c24d9eff0ab5df6752ecf6d4308",
+      "changedPaths": 1046,
+      "capturedLocalFiles": 1071,
+      "capturedLocalBytes": 154185481,
+      "exactFileBytesVerified": true,
+      "handoff": "agricultural-science.md",
+      "excluded": [
+        {
+          "path": "examiner-reports/agricultural-science/papers/2010-hl-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2010-ol-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2011-hl-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2011-ol-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2012-hl-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2012-ol-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2013-hl-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2013-ol-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2014-hl-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2014-ol-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2015-hl-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2015-ol-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2016-hl-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2016-ol-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2017-hl-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2017-ol-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2018-hl-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2018-ol-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2019-hl-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2019-ol-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2020-hl-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2020-ol-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2026-hl-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/papers/2026-ol-paper.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2010-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2010-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2011-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2011-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2012-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2012-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2013-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2013-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2014-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2014-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2015-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2015-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2016-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2016-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2017-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2017-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2018-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2018-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2019-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2019-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2020-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2020-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2021-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2021-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2022-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2022-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2023-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2023-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2024-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2024-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2025-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2025-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2026-hl.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "examiner-reports/agricultural-science/schemes/2026-ol.pdf",
+          "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/@capacitor-firebase_app-check.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/@capacitor-firebase_app-check.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/@capacitor_core.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/@capacitor_core.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/@capacitor_status-bar.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/@capacitor_status-bar.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/_metadata.json",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-GEKTQRNL.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-GEKTQRNL.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-JEREUDGX.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-JEREUDGX.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-JY3VBGJA.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-JY3VBGJA.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-MHBJBAKI.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-MHBJBAKI.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-NC5BI2VN.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-NC5BI2VN.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-Q2CZSJWU.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-Q2CZSJWU.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-SNAQBZPT.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-SNAQBZPT.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-TPSXRKT4.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-TPSXRKT4.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_app-check.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_app-check.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_app.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_app.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_auth.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_auth.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_firestore.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_firestore.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_functions.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_functions.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/framer-motion.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/framer-motion.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/lucide-react.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/lucide-react.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/package.json",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/pdfjs-dist_legacy_build_pdf__mjs.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/pdfjs-dist_legacy_build_pdf__mjs.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/react-dom.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/react-dom.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/react-dom_client.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/react-dom_client.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/react.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/react.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/react_jsx-dev-runtime.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/react_jsx-dev-runtime.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/react_jsx-runtime.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/react_jsx-runtime.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/ts-fsrs.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/ts-fsrs.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/web-6OH4PSSC.js",
+          "reason": "dependency, generated cache, or local credential container"
+        },
+        {
+          "path": "tmp/agricultural-science-audit/vite-cache/deps/web-6OH4PSSC.js.map",
+          "reason": "dependency, generated cache, or local credential container"
+        }
+      ],
+      "originalCheckpointCommit": "aae8bea6112b02c7fff7dc81de7d35752c634e9e",
+      "snapshotBase": "b98eae2d733e60ef08358b071b658d0f62cf2df7"
+    },
+    {
+      "subject": "economics",
+      "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Economics-Completion-20261007",
+      "branch": "codex/economics-corpus-completion-20261007",
+      "sourceHead": "8deb273f1b13341dcfa85204f7e4d784b638b21f",
+      "snapshotCommit": "d500a868d1e8994500d8de813505da01b26eea5f",
+      "snapshotRef": "refs/checkpoints/portable-subjects-20261008/economics",
+      "snapshotTree": "0fc3818e12e975e09f44ba095b52d4a1b38d4208",
+      "changedPaths": 1300,
+      "capturedLocalFiles": 1307,
+      "capturedLocalBytes": 195184038,
+      "exactFileBytesVerified": true,
+      "handoff": "economics.md",
+      "excluded": [],
+      "originalCheckpointCommit": "acfe3dec8488e211cf99b540e5f0c99227041f79",
+      "snapshotBase": "4c1accc328f29cd34161d09ce21b8729f7c1c546"
+    },
+    {
+      "subject": "accounting",
+      "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Accounting-Completion-20261007",
+      "branch": "codex/accounting-completion-20261007",
+      "sourceHead": "8deb273f1b13341dcfa85204f7e4d784b638b21f",
+      "snapshotCommit": "307f13a5ebf2d893d23243d33a87ee2e01716bdb",
+      "snapshotRef": "refs/checkpoints/portable-subjects-20261008/accounting",
+      "snapshotTree": "2df089b4720f72f1e1ca72401bdf52cbb16cd29b",
+      "changedPaths": 1153,
+      "capturedLocalFiles": 1151,
+      "capturedLocalBytes": 318955613,
+      "exactFileBytesVerified": true,
+      "handoff": "accounting.md",
+      "excluded": [],
+      "originalCheckpointCommit": "3e8b9650ca20a8ad6a83b2116f250d63cf5533ee",
+      "snapshotBase": "4c1accc328f29cd34161d09ce21b8729f7c1c546"
+    },
+    {
+      "subject": "politics-and-society",
+      "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Politics-Completion-20261007",
+      "branch": "codex/politics-corpus-completion-20261007",
+      "sourceHead": "de9273e33e3be8f6b29657f8d43877d7082107db",
+      "snapshotCommit": "d256e014f6c9711b208727744dc74b4a3262b2ca",
+      "snapshotRef": "refs/checkpoints/portable-subjects-20261008/politics-and-society",
+      "snapshotTree": "4aa74e13b417dbcc8bd938f8fc4a20a5fe62f1a8",
+      "changedPaths": 257,
+      "capturedLocalFiles": 257,
+      "capturedLocalBytes": 51045585,
+      "exactFileBytesVerified": true,
+      "handoff": "politics-and-society.md",
+      "excluded": [],
+      "originalCheckpointCommit": "19747d068ba65a2f8c9bd52a29f0f212fbf4a123",
+      "snapshotBase": "e75d5b4c0fced3223b75a3b57dc404419f5454bb"
+    },
+    {
+      "subject": "physical-education",
+      "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Physical-Education-Completion-20261007",
+      "branch": "codex/physical-education-bank-atlas-20261007",
+      "sourceHead": "796355d45a172c36212c44e7fc022edc5d79bbee",
+      "snapshotCommit": "0f282d5bea8de40f9a1db58e5b710a797ed466dd",
+      "snapshotRef": "refs/checkpoints/portable-subjects-20261008/physical-education",
+      "snapshotTree": "6d07a769284e89856635c337103871b58a3e0801",
+      "changedPaths": 384,
+      "capturedLocalFiles": 378,
+      "capturedLocalBytes": 155289262,
+      "exactFileBytesVerified": true,
+      "handoff": "physical-education.md",
+      "excluded": [],
+      "originalCheckpointCommit": "bd7cd65dae35fbce95f14311c5e70c84d5c390a8",
+      "snapshotBase": "0304bacab77aad2ada58e323e0b479fd5db53ee9"
+    }
+  ]
+}

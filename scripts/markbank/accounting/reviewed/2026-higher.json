@@ -1,0 +1,2094 @@
+{
+  "year": 2026,
+  "level": "higher",
+  "fileid": "LC032ALP000EV.pdf",
+  "reviewedAt": "2026-10-07",
+  "reviewedBy": "Codex visual PDF audit",
+  "paperSha256": "b5af4fb82c347e903fe90428fd808fcaa9548e7c0393fafdf08ad92ee1140f9f",
+  "schemeSha256": "4a31bff8ba9127b0051c41ee81165cad7b46634e739e9f0643082b08c1e7b59b",
+  "visualPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "visualSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "markingGuidePages": [
+    35
+  ],
+  "expectedTaskCount": 43,
+  "allRouteMarks": 880,
+  "tasks": [
+    {
+      "key": "1A(a)",
+      "questionNumber": 1,
+      "title": "Company: trading and profit and loss account",
+      "marks": 75,
+      "paperPages": [
+        2,
+        3
+      ],
+      "promptFragments": [
+        {
+          "page": 3,
+          "text": "Prepare a trading and profit and loss account for the year ended 31/12/2025."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-4-1",
+      "examTopicIds": [
+        "accounting-higher-final-accounts-company"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 75 marks to this task."
+    },
+    {
+      "key": "1A(b)",
+      "questionNumber": 1,
+      "title": "Company: balance sheet",
+      "marks": 45,
+      "paperPages": [
+        2,
+        3
+      ],
+      "promptFragments": [
+        {
+          "page": 3,
+          "text": "Prepare a balance sheet as at 31/12/2025."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-4-1",
+      "examTopicIds": [
+        "accounting-higher-final-accounts-company"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 45 marks to this task."
+    },
+    {
+      "key": "1B(a)",
+      "questionNumber": 1,
+      "title": "Manufacturing, trading and profit and loss account",
+      "marks": 75,
+      "paperPages": [
+        4,
+        5
+      ],
+      "promptFragments": [
+        {
+          "page": 5,
+          "text": "Prepare a manufacturing, trading and profit and loss account for the year ended 31/12/2025."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-5-0",
+      "examTopicIds": [
+        "accounting-higher-final-accounts-manufacturing"
+      ],
+      "focus": null,
+      "boundaryReason": "The manufacturing and trading/profit-and-loss accounts share the single 75-mark allocation. No separate output totals are printed; preserve the complete required accounts.",
+      "allocationEvidence": "The SEC scheme allocates 75 marks to this task."
+    },
+    {
+      "key": "1B(b)",
+      "questionNumber": 1,
+      "title": "Manufacturing: balance sheet",
+      "marks": 45,
+      "paperPages": [
+        4,
+        5
+      ],
+      "promptFragments": [
+        {
+          "page": 5,
+          "text": "Prepare a balance sheet as at 31/12/2025."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-5-0",
+      "examTopicIds": [
+        "accounting-higher-final-accounts-manufacturing"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 45 marks to this task."
+    },
+    {
+      "key": "2(a)-operating-reconciliation",
+      "questionNumber": 2,
+      "title": "Reconcile operating profit to operating cash flow",
+      "marks": 15,
+      "paperPages": [
+        6,
+        7
+      ],
+      "promptFragments": [
+        {
+          "page": 7,
+          "text": "Prepare the cash flow statement of Horan plc for the year ended 31/12/2025 including reconciliation statements."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-7-5",
+      "examTopicIds": [
+        "accounting-higher-cash-flow-statements"
+      ],
+      "focus": "Reconcile operating profit to operating cash flow.",
+      "boundaryReason": "The scheme separately prices the two reconciliation statements (15 and 5) and the cash flow statement (32). These are three distinct required statements, totalling the printed 52 marks.",
+      "allocationEvidence": "The SEC scheme allocates 15 marks to this task."
+    },
+    {
+      "key": "2(a)-net-debt-reconciliation",
+      "questionNumber": 2,
+      "title": "Reconcile net cash flow to movement in net debt",
+      "marks": 5,
+      "paperPages": [
+        6,
+        7
+      ],
+      "promptFragments": [
+        {
+          "page": 7,
+          "text": "Prepare the cash flow statement of Horan plc for the year ended 31/12/2025 including reconciliation statements."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-7-5",
+      "examTopicIds": [
+        "accounting-higher-cash-flow-statements"
+      ],
+      "focus": "Reconcile net cash flow to movement in net debt.",
+      "boundaryReason": "The scheme separately prices the two reconciliation statements (15 and 5) and the cash flow statement (32). These are three distinct required statements, totalling the printed 52 marks.",
+      "allocationEvidence": "The SEC scheme allocates 5 marks to this task."
+    },
+    {
+      "key": "2(a)-cash-flow",
+      "questionNumber": 2,
+      "title": "Cash flow statement",
+      "marks": 32,
+      "paperPages": [
+        6,
+        7
+      ],
+      "promptFragments": [
+        {
+          "page": 7,
+          "text": "Prepare the cash flow statement of Horan plc for the year ended 31/12/2025 including reconciliation statements."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-7-5",
+      "examTopicIds": [
+        "accounting-higher-cash-flow-statements"
+      ],
+      "focus": "Cash flow statement.",
+      "boundaryReason": "The scheme separately prices the two reconciliation statements (15 and 5) and the cash flow statement (32). These are three distinct required statements, totalling the printed 52 marks.",
+      "allocationEvidence": "The SEC scheme allocates 32 marks to this task."
+    },
+    {
+      "key": "2(b)",
+      "questionNumber": 2,
+      "title": "Profit, cash and solvency",
+      "marks": 8,
+      "paperPages": [
+        6,
+        7
+      ],
+      "promptFragments": [
+        {
+          "page": 7,
+          "text": "Explain why earning profit does not always result in a corresponding change in cash balances. Use figures from the accounts of Horan plc to support your answer."
+        },
+        {
+          "page": 7,
+          "text": "Cashflow statements are useful in assessing the solvency of a business."
+        },
+        {
+          "page": 7,
+          "text": "Explain the term solvency."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-7-1",
+      "examTopicIds": [
+        "accounting-higher-cash-flow-statements"
+      ],
+      "focus": null,
+      "boundaryReason": "Two required theory prompts share one 8-mark allocation; no separate tariffs.",
+      "allocationEvidence": "The SEC scheme allocates 8 marks to this task."
+    },
+    {
+      "key": "3(a)",
+      "questionNumber": 3,
+      "title": "Club: accumulated fund",
+      "marks": 20,
+      "paperPages": [
+        8,
+        9
+      ],
+      "promptFragments": [
+        {
+          "page": 9,
+          "text": "Show the club’s accumulated fund (capital) on 01/01/2025."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-5-2",
+      "examTopicIds": [
+        "accounting-higher-club-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 20 marks to this task."
+    },
+    {
+      "key": "3(b)",
+      "questionNumber": 3,
+      "title": "Club: income and expenditure account",
+      "marks": 32,
+      "paperPages": [
+        8,
+        9
+      ],
+      "promptFragments": [
+        {
+          "page": 9,
+          "text": "Show the club’s income and expenditure account for the year ending 31/12/2025."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-5-2",
+      "examTopicIds": [
+        "accounting-higher-club-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 32 marks to this task."
+    },
+    {
+      "key": "3(c)",
+      "questionNumber": 3,
+      "title": "Club levy and subscription proposal",
+      "marks": 8,
+      "paperPages": [
+        8,
+        9
+      ],
+      "promptFragments": [
+        {
+          "page": 9,
+          "text": "Outline the purpose of a levy."
+        },
+        {
+          "page": 9,
+          "text": "The club is considering a proposal to discontinue the current levy and to increase the annual subscription fee by €50 instead. As a Treasurer of Blackwater Tennis Club what advice would you give to the club?"
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-5-2",
+      "examTopicIds": [
+        "accounting-higher-club-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One shared 8-mark theory allocation. The proposal asks for reasoned advice, not selection from a fixed menu.",
+      "allocationEvidence": "The SEC scheme allocates 8 marks to this task."
+    },
+    {
+      "key": "4(a)",
+      "questionNumber": 4,
+      "title": "Adjusted creditors control account",
+      "marks": 26,
+      "paperPages": [
+        10
+      ],
+      "promptFragments": [
+        {
+          "page": 10,
+          "text": "Prepare the adjusted creditors ledger control account."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-2-2",
+      "examTopicIds": [
+        "accounting-higher-control-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 26 marks to this task."
+    },
+    {
+      "key": "4(b)",
+      "questionNumber": 4,
+      "title": "Adjusted schedule of creditors",
+      "marks": 26,
+      "paperPages": [
+        10
+      ],
+      "promptFragments": [
+        {
+          "page": 10,
+          "text": "Prepare the adjusted schedule of creditors showing the original balance."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-2-2",
+      "examTopicIds": [
+        "accounting-higher-control-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 26 marks to this task."
+    },
+    {
+      "key": "4(c)",
+      "questionNumber": 4,
+      "title": "Source books and bills payable",
+      "marks": 8,
+      "paperPages": [
+        10
+      ],
+      "promptFragments": [
+        {
+          "page": 10,
+          "text": "Identify the books of first entry and/or ledger accounts (as appropriate) that are necessary to prepare the following:"
+        },
+        {
+          "page": 10,
+          "text": "Creditors Control account."
+        },
+        {
+          "page": 10,
+          "text": "Schedule of Creditors."
+        },
+        {
+          "page": 10,
+          "text": "Explain the term bills payable in relation to the creditors control account."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-2-2",
+      "examTopicIds": [
+        "accounting-higher-control-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "Both named accounts and the explanation are required; and/or describes appropriate source records, not a finite selection. All share one 8-mark tariff.",
+      "allocationEvidence": "The SEC scheme allocates 8 marks to this task."
+    },
+    {
+      "key": "5(a)(i)",
+      "questionNumber": 5,
+      "title": "Cash purchases",
+      "marks": 10,
+      "paperPages": [
+        12,
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "You are required to calculate the following for 2025:"
+        },
+        {
+          "page": 13,
+          "text": "(where appropriate calculations should be made to two decimal places)."
+        },
+        {
+          "page": 13,
+          "text": "Cash purchases if the period of credit received is 2 months and 30% of total purchases are credit purchases."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-5",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(a)(ii)",
+      "questionNumber": 5,
+      "title": "Return on capital employed",
+      "marks": 10,
+      "paperPages": [
+        12,
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "You are required to calculate the following for 2025:"
+        },
+        {
+          "page": 13,
+          "text": "(where appropriate calculations should be made to two decimal places)."
+        },
+        {
+          "page": 13,
+          "text": "Return on capital employed."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-4",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(a)(iii)",
+      "questionNumber": 5,
+      "title": "Price earnings ratio",
+      "marks": 10,
+      "paperPages": [
+        12,
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "You are required to calculate the following for 2025:"
+        },
+        {
+          "page": 13,
+          "text": "(where appropriate calculations should be made to two decimal places)."
+        },
+        {
+          "page": 13,
+          "text": "Price earnings ratio."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-8",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(a)(iv)",
+      "questionNumber": 5,
+      "title": "Gearing",
+      "marks": 10,
+      "paperPages": [
+        12,
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "You are required to calculate the following for 2025:"
+        },
+        {
+          "page": 13,
+          "text": "(where appropriate calculations should be made to two decimal places)."
+        },
+        {
+          "page": 13,
+          "text": "Gearing."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-7",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(a)(v)",
+      "questionNumber": 5,
+      "title": "Dividend yield",
+      "marks": 10,
+      "paperPages": [
+        12,
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "You are required to calculate the following for 2025:"
+        },
+        {
+          "page": 13,
+          "text": "(where appropriate calculations should be made to two decimal places)."
+        },
+        {
+          "page": 13,
+          "text": "Dividend yield."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-8",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(b)",
+      "questionNumber": 5,
+      "title": "Debenture-holder assessment of Power plc",
+      "marks": 40,
+      "paperPages": [
+        12,
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "Indicate whether the debenture holders would be satisfied with the performance, state of affairs and prospects of the company. Use relevant ratios and other information to support your answer."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-9",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One integrated assessment. The scheme headings are required aspects of the argument and are not separate answer routes.",
+      "allocationEvidence": "The SEC scheme allocates 40 marks to this task."
+    },
+    {
+      "key": "5(c)",
+      "questionNumber": 5,
+      "title": "Company types and repayment advice",
+      "marks": 10,
+      "paperPages": [
+        12,
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "Outline two differences between a public limited company and a private limited company."
+        },
+        {
+          "page": 13,
+          "text": "Having examined the accounts of Power plc what advice would you give in order to ensure they pay the debenture in full by the due date?"
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-4-0",
+      "examTopicIds": [
+        "accounting-higher-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "The two theory prompts share one 10-mark allocation. The differences are an open response, not a closed list of alternatives.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "6(a)-profit-loss",
+      "questionNumber": 6,
+      "title": "Published profit and loss account",
+      "marks": 40,
+      "paperPages": [
+        14,
+        15
+      ],
+      "promptFragments": [
+        {
+          "page": 15,
+          "text": "Prepare the published profit and loss account for the year ended 31/12/2025 and a balance sheet as at that date in accordance with the Companies Acts and appropriate accounting standards, showing the following notes:"
+        },
+        {
+          "page": 15,
+          "text": "Accounting policy note for tangible fixed assets and stock."
+        },
+        {
+          "page": 15,
+          "text": "Operating profit."
+        },
+        {
+          "page": 15,
+          "text": "Dividends."
+        },
+        {
+          "page": 15,
+          "text": "Contingent liability."
+        },
+        {
+          "page": 15,
+          "text": "Tangible fixed assets."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-4-2",
+      "examTopicIds": [
+        "accounting-higher-published-accounts"
+      ],
+      "focus": "Prepare the published profit and loss account.",
+      "boundaryReason": "The scheme prices the profit and loss account at 40, the balance sheet at 26 and the accompanying notes at 5+5+4+3+7=24, totalling 90. Keep all required note headings together; they are not a selection pool.",
+      "allocationEvidence": "This required output carries 40 marks. The printed allocation is 40 for profit and loss, 26 for the balance sheet and 5 + 5 + 4 + 3 + 7 for the five required notes."
+    },
+    {
+      "key": "6(a)-balance-sheet",
+      "questionNumber": 6,
+      "title": "Published balance sheet",
+      "marks": 26,
+      "paperPages": [
+        14,
+        15
+      ],
+      "promptFragments": [
+        {
+          "page": 15,
+          "text": "Prepare the published profit and loss account for the year ended 31/12/2025 and a balance sheet as at that date in accordance with the Companies Acts and appropriate accounting standards, showing the following notes:"
+        },
+        {
+          "page": 15,
+          "text": "Accounting policy note for tangible fixed assets and stock."
+        },
+        {
+          "page": 15,
+          "text": "Operating profit."
+        },
+        {
+          "page": 15,
+          "text": "Dividends."
+        },
+        {
+          "page": 15,
+          "text": "Contingent liability."
+        },
+        {
+          "page": 15,
+          "text": "Tangible fixed assets."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-4-2",
+      "examTopicIds": [
+        "accounting-higher-published-accounts"
+      ],
+      "focus": "Prepare the published balance sheet.",
+      "boundaryReason": "The scheme prices the profit and loss account at 40, the balance sheet at 26 and the accompanying notes at 5+5+4+3+7=24, totalling 90. Keep all required note headings together; they are not a selection pool.",
+      "allocationEvidence": "This required output carries 26 marks. The printed allocation is 40 for profit and loss, 26 for the balance sheet and 5 + 5 + 4 + 3 + 7 for the five required notes."
+    },
+    {
+      "key": "6(a)-notes",
+      "questionNumber": 6,
+      "title": "Notes to the published accounts",
+      "marks": 24,
+      "paperPages": [
+        14,
+        15
+      ],
+      "promptFragments": [
+        {
+          "page": 15,
+          "text": "Prepare the published profit and loss account for the year ended 31/12/2025 and a balance sheet as at that date in accordance with the Companies Acts and appropriate accounting standards, showing the following notes:"
+        },
+        {
+          "page": 15,
+          "text": "Accounting policy note for tangible fixed assets and stock."
+        },
+        {
+          "page": 15,
+          "text": "Operating profit."
+        },
+        {
+          "page": 15,
+          "text": "Dividends."
+        },
+        {
+          "page": 15,
+          "text": "Contingent liability."
+        },
+        {
+          "page": 15,
+          "text": "Tangible fixed assets."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 24,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-4-2",
+      "examTopicIds": [
+        "accounting-higher-published-accounts"
+      ],
+      "focus": "Prepare all five required notes accompanying the published accounts.",
+      "boundaryReason": "The scheme prices the profit and loss account at 40, the balance sheet at 26 and the accompanying notes at 5+5+4+3+7=24, totalling 90. Keep all required note headings together; they are not a selection pool.",
+      "allocationEvidence": "This required output carries 24 marks. The printed allocation is 40 for profit and loss, 26 for the balance sheet and 5 + 5 + 4 + 3 + 7 for the five required notes."
+    },
+    {
+      "key": "6(b)",
+      "questionNumber": 6,
+      "title": "Financial regulation and directors’ responsibilities",
+      "marks": 10,
+      "paperPages": [
+        14,
+        15
+      ],
+      "promptFragments": [
+        {
+          "page": 15,
+          "text": "Explain why it is important that financial statements are properly regulated."
+        },
+        {
+          "page": 15,
+          "text": "Outline the main functions and responsibilities of a company director in relation to financial information."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-1-0",
+      "examTopicIds": [
+        "accounting-higher-published-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "Both explanations share one printed 10-mark allocation.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "7(a)",
+      "questionNumber": 7,
+      "title": "Journal corrections",
+      "marks": 50,
+      "paperPages": [
+        16,
+        17
+      ],
+      "promptFragments": [
+        {
+          "page": 17,
+          "text": "Journalise the necessary corrections."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-2-4",
+      "examTopicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ],
+      "focus": null,
+      "boundaryReason": "One required account or statement at its published allocation. The individual correction entries in the journal are component workings of the requested journal, not separate selectable paper parts.",
+      "allocationEvidence": "The SEC scheme allocates 50 marks to this task."
+    },
+    {
+      "key": "7(b)",
+      "questionNumber": 7,
+      "title": "Suspense account",
+      "marks": 8,
+      "paperPages": [
+        16,
+        17
+      ],
+      "promptFragments": [
+        {
+          "page": 17,
+          "text": "Prepare the suspense account."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-2-3",
+      "examTopicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ],
+      "focus": null,
+      "boundaryReason": "One required account or statement at its published allocation. The individual correction entries in the journal are component workings of the requested journal, not separate selectable paper parts.",
+      "allocationEvidence": "The SEC scheme allocates 8 marks to this task."
+    },
+    {
+      "key": "7(c)",
+      "questionNumber": 7,
+      "title": "Corrected net profit",
+      "marks": 14,
+      "paperPages": [
+        16,
+        17
+      ],
+      "promptFragments": [
+        {
+          "page": 17,
+          "text": "Prepare the statement of corrected net profit."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-2-4",
+      "examTopicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ],
+      "focus": null,
+      "boundaryReason": "One required account or statement at its published allocation. The individual correction entries in the journal are component workings of the requested journal, not separate selectable paper parts.",
+      "allocationEvidence": "The SEC scheme allocates 14 marks to this task."
+    },
+    {
+      "key": "7(d)",
+      "questionNumber": 7,
+      "title": "Corrected balance sheet",
+      "marks": 20,
+      "paperPages": [
+        16,
+        17
+      ],
+      "promptFragments": [
+        {
+          "page": 17,
+          "text": "Prepare the corrected balance sheet."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-2-4",
+      "examTopicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ],
+      "focus": null,
+      "boundaryReason": "One required account or statement at its published allocation. The individual correction entries in the journal are component workings of the requested journal, not separate selectable paper parts.",
+      "allocationEvidence": "The SEC scheme allocates 20 marks to this task."
+    },
+    {
+      "key": "7(e)",
+      "questionNumber": 7,
+      "title": "Trial balance and undetected errors",
+      "marks": 8,
+      "paperPages": [
+        16,
+        17
+      ],
+      "promptFragments": [
+        {
+          "page": 17,
+          "text": "What is the purpose of preparing a trial balance?"
+        },
+        {
+          "page": 17,
+          "text": "State and explain two types of errors not revealed by the trial balance."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-2-4",
+      "examTopicIds": [
+        "accounting-higher-correction-of-errorssuspense"
+      ],
+      "focus": null,
+      "boundaryReason": "Both prompts share one 8-mark allocation. Two types of error is an open knowledge response, with no finite printed option pool.",
+      "allocationEvidence": "The SEC scheme allocates 8 marks to this task."
+    },
+    {
+      "key": "8(a)",
+      "questionNumber": 8,
+      "title": "Apportion overheads",
+      "marks": 26,
+      "paperPages": [
+        18,
+        19
+      ],
+      "promptFragments": [
+        {
+          "page": 19,
+          "text": "Calculate the overhead to be absorbed by each department, stating clearly the basis of apportionment used."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 29,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-2",
+      "examTopicIds": [
+        "accounting-higher-costing-job-product-stock-valuation-oh-apportionment"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 26 marks to this task."
+    },
+    {
+      "key": "8(b)(i)",
+      "questionNumber": 8,
+      "title": "Transfer service department costs",
+      "marks": 8,
+      "paperPages": [
+        18,
+        19
+      ],
+      "promptFragments": [
+        {
+          "page": 19,
+          "text": "Transfer the service department costs to the production departments 1 and 2 on the basis of labour hours."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 29,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-2",
+      "examTopicIds": [
+        "accounting-higher-costing-job-product-stock-valuation-oh-apportionment"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 8 marks to this task."
+    },
+    {
+      "key": "8(b)(ii)",
+      "questionNumber": 8,
+      "title": "Why service costs are transferred",
+      "marks": 2,
+      "paperPages": [
+        18,
+        19
+      ],
+      "promptFragments": [
+        {
+          "page": 19,
+          "text": "Explain why it is necessary to transfer the service department overheads to the production departments."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 29,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-2",
+      "examTopicIds": [
+        "accounting-higher-costing-job-product-stock-valuation-oh-apportionment"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 2 marks to this task."
+    },
+    {
+      "key": "8(c)",
+      "questionNumber": 8,
+      "title": "Overhead absorption rates",
+      "marks": 8,
+      "paperPages": [
+        18,
+        19
+      ],
+      "promptFragments": [
+        {
+          "page": 19,
+          "text": "Calculate a suitable overhead absorption rate for each department."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 30,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-2",
+      "examTopicIds": [
+        "accounting-higher-costing-job-product-stock-valuation-oh-apportionment"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 8 marks to this task."
+    },
+    {
+      "key": "8(d)",
+      "questionNumber": 8,
+      "title": "Selling price of Job 226",
+      "marks": 18,
+      "paperPages": [
+        18,
+        19
+      ],
+      "promptFragments": [
+        {
+          "page": 19,
+          "text": "Calculate the selling price of Job No. 226."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 30,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-2",
+      "examTopicIds": [
+        "accounting-higher-costing-job-product-stock-valuation-oh-apportionment"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 18 marks to this task."
+    },
+    {
+      "key": "8(e)(i)-calculation",
+      "questionNumber": 8,
+      "title": "Calculate under/over absorption",
+      "marks": 11,
+      "paperPages": [
+        18,
+        19
+      ],
+      "promptFragments": [
+        {
+          "page": 19,
+          "text": "Using the overhead absorption rates calculated in part (c) and the table below:"
+        },
+        {
+          "page": 19,
+          "text": "Calculate the under/over absorption by department and in total for the period."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 30,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 29,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-2",
+      "examTopicIds": [
+        "accounting-higher-costing-job-product-stock-valuation-oh-apportionment"
+      ],
+      "focus": null,
+      "boundaryReason": "The scheme separately allocates 11 marks to the calculation and 3 to interpreting its figures. The actual-cost table is retained in the source.",
+      "allocationEvidence": "The SEC scheme allocates 11 marks to this task."
+    },
+    {
+      "key": "8(e)(i)-meaning",
+      "questionNumber": 8,
+      "title": "Interpret the absorption figures",
+      "marks": 3,
+      "paperPages": [
+        18,
+        19
+      ],
+      "promptFragments": [
+        {
+          "page": 19,
+          "text": "Using the overhead absorption rates calculated in part (c) and the table below:"
+        },
+        {
+          "page": 19,
+          "text": "Outline what the figures mean for Jackson Ltd."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 30,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 29,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-2",
+      "examTopicIds": [
+        "accounting-higher-costing-job-product-stock-valuation-oh-apportionment"
+      ],
+      "focus": null,
+      "boundaryReason": "This required interpretation has its own 3-mark scheme allocation. The scheme labels it (ii), but its figures match the second sentence of paper part (e)(i).",
+      "allocationEvidence": "3 marks for the interpretation of the department and overall results, separately from the 11-mark calculation and 4-mark general impact explanation."
+    },
+    {
+      "key": "8(e)(ii)",
+      "questionNumber": 8,
+      "title": "Impact of over absorption",
+      "marks": 4,
+      "paperPages": [
+        18,
+        19
+      ],
+      "promptFragments": [
+        {
+          "page": 19,
+          "text": "Explain how over absorption of overhead costs may impact a manufacturing firm."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 30,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-2",
+      "examTopicIds": [
+        "accounting-higher-costing-job-product-stock-valuation-oh-apportionment"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 4 marks to this task."
+    },
+    {
+      "key": "9(a)",
+      "questionNumber": 9,
+      "title": "Production budget",
+      "marks": 11,
+      "paperPages": [
+        20
+      ],
+      "promptFragments": [
+        {
+          "page": 20,
+          "text": "Prepare a production budget for Clarke Ltd for the four months January to April 2027."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 31,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-7",
+      "examTopicIds": [
+        "accounting-higher-budgeting-cash"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 11 marks to this task."
+    },
+    {
+      "key": "9(b)",
+      "questionNumber": 9,
+      "title": "Raw materials purchases budget",
+      "marks": 13,
+      "paperPages": [
+        20
+      ],
+      "promptFragments": [
+        {
+          "page": 20,
+          "text": "Prepare a raw materials purchases budget (in kg and €) for Clarke Ltd for the four months January to April 2027."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 31,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-7",
+      "examTopicIds": [
+        "accounting-higher-budgeting-cash"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 13 marks to this task."
+    },
+    {
+      "key": "9(c)",
+      "questionNumber": 9,
+      "title": "Cash budget",
+      "marks": 34,
+      "paperPages": [
+        20
+      ],
+      "promptFragments": [
+        {
+          "page": 20,
+          "text": "Prepare a cash budget for Clarke Ltd for the four months January to April 2027."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 32,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 31,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-6",
+      "examTopicIds": [
+        "accounting-higher-budgeting-cash"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 34 marks to this task."
+    },
+    {
+      "key": "9(d)",
+      "questionNumber": 9,
+      "title": "Budgeted trading and profit and loss account",
+      "marks": 12,
+      "paperPages": [
+        20
+      ],
+      "promptFragments": [
+        {
+          "page": 20,
+          "text": "Prepare a budgeted trading and profit and loss account for Clarke Ltd for the four months ending 30/04/2027 (if the budgeted cost of a unit of finished goods is €22)."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 31,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 32,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-6",
+      "examTopicIds": [
+        "accounting-higher-budgeting-cash"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required output; the source scheme prints this task allocation.",
+      "allocationEvidence": "The SEC scheme allocates 12 marks to this task."
+    },
+    {
+      "key": "9(e)",
+      "questionNumber": 9,
+      "title": "Budget recommendations and accounting comparisons",
+      "marks": 10,
+      "paperPages": [
+        20
+      ],
+      "promptFragments": [
+        {
+          "page": 20,
+          "text": "What recommendations would you make to Clarke Ltd based on the budgets you have prepared?"
+        },
+        {
+          "page": 20,
+          "text": "Outline two differences between management and financial accounting."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 34,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 31,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 32,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-4",
+      "examTopicIds": [
+        "accounting-higher-budgeting-cash"
+      ],
+      "focus": null,
+      "boundaryReason": "Two required explanations share one 10-mark tariff. The question asks for open recommendations and differences, not selection from a finite printed list.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    }
+  ],
+  "selectionReview": [
+    {
+      "page": 1,
+      "text": "This section has four questions (numbers 1 ‐ 4).  The first question (A or B) carries 120 marks and the",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions and both final-account routes are included. Section choices do not remove any task."
+    },
+    {
+      "page": 1,
+      "text": "Candidates should answer either QUESTION 1 (A or B) only OR attempt any TWO of the remaining",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions and both final-account routes are included. Section choices do not remove any task."
+    },
+    {
+      "page": 1,
+      "text": "Candidates should answer TWO of these questions.",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions and both final-account routes are included. Section choices do not remove any task."
+    },
+    {
+      "page": 1,
+      "text": "Candidates should answer ONE of these questions.",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions and both final-account routes are included. Section choices do not remove any task."
+    },
+    {
+      "page": 2,
+      "text": "Answer Question 1(A) OR 1(B)",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions and both final-account routes are included. Section choices do not remove any task."
+    },
+    {
+      "page": 2,
+      "text": "OR",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions and both final-account routes are included. Section choices do not remove any task."
+    },
+    {
+      "page": 2,
+      "text": "any TWO other questions",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions and both final-account routes are included. Section choices do not remove any task."
+    },
+    {
+      "page": 2,
+      "text": "1. Answer (A) OR (B)",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions and both final-account routes are included. Section choices do not remove any task."
+    },
+    {
+      "page": 3,
+      "text": "or return basis.  These goods had been recorded in the books as a credit purchase",
+      "classification": "not-a-selection",
+      "reason": "Narrative transaction wording (sale or return, employee reference, or absence of purchase/sale) is source data, not an answer choice."
+    },
+    {
+      "page": 5,
+      "text": "year by one of the firm’s employees.  An amount of €800 of this expenditure",
+      "classification": "not-a-selection",
+      "reason": "Narrative transaction wording (sale or return, employee reference, or absence of purchase/sale) is source data, not an answer choice."
+    },
+    {
+      "page": 5,
+      "text": "Finished goods were sent to a customer on 31/12/2025 on a sale or return basis.",
+      "classification": "not-a-selection",
+      "reason": "Narrative transaction wording (sale or return, employee reference, or absence of purchase/sale) is source data, not an answer choice."
+    },
+    {
+      "page": 10,
+      "text": "Identify the books of first entry and/or ledger accounts (as appropriate) that are",
+      "classification": "not-a-selection",
+      "reason": "And/or describes suitable source records for the two required accounts; it does not ask the student to select a finite subset."
+    },
+    {
+      "page": 12,
+      "text": "Answer any TWO questions",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions and both final-account routes are included. Section choices do not remove any task."
+    },
+    {
+      "page": 13,
+      "text": "(i)      Outline two differences between a public limited company and a private limited",
+      "classification": "open-response",
+      "reason": "Two differences are requested from an open field; no finite printed pool."
+    },
+    {
+      "page": 15,
+      "text": "There was no purchase or sale of buildings during the year.",
+      "classification": "not-a-selection",
+      "reason": "Narrative transaction wording (sale or return, employee reference, or absence of purchase/sale) is source data, not an answer choice."
+    },
+    {
+      "page": 17,
+      "text": "(ii) State and explain two types of errors not revealed by the trial balance.",
+      "classification": "open-response",
+      "reason": "Two error types are requested without a printed finite pool or stated total number of options."
+    },
+    {
+      "page": 18,
+      "text": "Answer ONE question",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions and both final-account routes are included. Section choices do not remove any task."
+    },
+    {
+      "page": 20,
+      "text": "(ii)   Outline two differences between management and financial accounting.",
+      "classification": "open-response",
+      "reason": "Two differences are requested from an open field; no finite printed pool."
+    },
+    {
+      "page": 24,
+      "text": "This examination paper may contain text or images for which the State Examinations",
+      "classification": "not-a-selection",
+      "reason": "Copyright notice contains no assessable task."
+    },
+    {
+      "page": 24,
+      "text": "accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent",
+      "classification": "not-a-selection",
+      "reason": "Copyright notice contains no assessable task."
+    },
+    {
+      "page": 24,
+      "text": "accept liability for any infringement of third‐party rights arising from unauthorised distribution",
+      "classification": "not-a-selection",
+      "reason": "Copyright notice contains no assessable task."
+    },
+    {
+      "page": 24,
+      "text": "or use of this examination paper.",
+      "classification": "not-a-selection",
+      "reason": "Copyright notice contains no assessable task."
+    }
+  ],
+  "legacyCorrections": {
+    "1": {
+      "paperRegion": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ]
+    }
+  }
+}

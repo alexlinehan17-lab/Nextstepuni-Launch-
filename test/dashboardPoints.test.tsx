@@ -47,7 +47,7 @@ const earnedStat = () => {
   const caption = screen.getByText('earned to date');
   const cell = caption.parentElement;
   if (!cell) throw new Error('stat cell not found');
-  return cell.querySelector('p:nth-of-type(2)')?.textContent ?? '';
+  return cell.querySelector('strong')?.textContent ?? '';
 };
 
 describe('Progress page — journey points', () => {
@@ -84,6 +84,7 @@ describe('Progress page — journey points', () => {
     const call = /<DashboardView[\s\S]*?\/>/.exec(router)?.[0];
     expect(call, 'DashboardView call site not found in AppRouter').toBeTruthy();
     expect(call).toContain('pointsEarned={pointsData.totalEarned}');
-    expect(call).not.toContain('pointsData.balance');
+    expect(call).not.toContain('pointsEarned={pointsData.balance}');
+    expect(call).toContain('pointsAvailable={pointsData.balance}');
   });
 });

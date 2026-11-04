@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * First-visit coach marks — three short spotlight steps on the home page:
- * the module tree, the Launchpad, then the "?" button, ending with the offer
+ * the module tree, the Launchpad, then the account menu, ending with the offer
  * to take the full Site Guide. Skippable at every step, shows exactly once
  * per account (localStorage). Targets are found by [data-coach="..."]; if a
  * target isn't visible (e.g. the collapsed mobile sidebar), the step renders
@@ -19,7 +19,7 @@ const STEPS: { target: string; title: string; body: string }[] = [
   {
     target: 'modules',
     title: 'Your lessons live here',
-    body: 'Interactive modules that teach you how to learn — memory, focus, exam craft. They unlock section by section.',
+    body: 'Interactive modules that teach you how to learn — memory, focus, exam craft. Browse any section; your reading and activity drafts save as you go.',
   },
   {
     target: 'launchpad',
@@ -28,8 +28,8 @@ const STEPS: { target: string; title: string; body: string }[] = [
   },
   {
     target: 'help',
-    title: 'Lost? Press this anytime',
-    body: 'The full guided tour of every core page lives behind the ? — with screenshots of exactly what each one does.',
+    title: 'Help is always here',
+    body: 'Open your account menu, then Help, for the full app guide. It walks through every core page with screenshots. You can also press ? from Home.',
   },
 ];
 
@@ -48,7 +48,7 @@ const markSeen = (uid?: string) => {
   } catch { /* private mode */ }
 };
 
-const INK = '#1a1a1a';
+const INK = 'var(--ink-primary, #1a1a1a)';
 const ACCENT = '#F26B1F';
 
 interface Props {
@@ -148,7 +148,7 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
   const captionLeft = rect ? Math.min(Math.max(12, rect.left), Math.max(12, window.innerWidth - 332)) : 0;
 
   return (
-    <div className="fixed inset-0 z-[125]" role="dialog" aria-modal="true" aria-label="Quick tour">
+    <div className="theme-compat fixed inset-0 z-[125]" role="dialog" aria-modal="true" aria-label="Quick tour">
       {rect ? (
         <div
           className="absolute rounded-xl pointer-events-none"
@@ -176,15 +176,15 @@ const FirstVisitCoachMarks: React.FC<Props> = ({ uid, onFinish, onOpenGuide }) =
           ),
         }}
       >
-        <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: '#9e9186' }}>
+        <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-1" style={{ color: 'var(--ink-muted, #9e9186)' }}>
           Quick tour · {step + 1} of {STEPS.length}
         </p>
         <h3 className="text-[16px] font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: INK }}>
           {s.title}
         </h3>
-        <p className="text-[12.5px] leading-relaxed mb-3" style={{ color: '#5a5550' }}>{s.body}</p>
+        <p className="text-[12.5px] leading-relaxed mb-3" style={{ color: 'var(--ink-secondary, #5a5550)' }}>{s.body}</p>
         <div className={`flex items-center justify-between gap-2 ${mobileAppDesign ? 'flex-wrap' : ''}`}>
-          <button onClick={finish} className={`${mobileAppDesign ? 'min-h-11 min-w-11 ' : ''}text-[12px] font-medium`} style={{ color: '#9e9186' }}>
+          <button onClick={finish} className={`${mobileAppDesign ? 'min-h-11 min-w-11 ' : ''}text-[12px] font-medium`} style={{ color: 'var(--ink-muted, #9e9186)' }}>
             Skip
           </button>
           <div className={`flex gap-2 ${mobileAppDesign ? 'flex-wrap justify-end' : ''}`}>

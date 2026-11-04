@@ -3,11 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { Award,Banknote,BookOpen,Briefcase,Car,Compass,DoorOpen,Flame,GraduationCap,HandHeart,Heart,Home,MicOff,PartyPopper,Plane,Puzzle,Rocket,Signpost,Sparkles,Star,TrendingUp,UserPlus,Users,Wallet,Wrench } from 'lucide-react';
 import React from 'react';
-import { MotionDiv } from './Motion';
-import { Star, Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen, Banknote, Car, Home, Users, Briefcase, Rocket, Award, UserPlus, TrendingUp, MicOff, Signpost, Plane, PartyPopper, HandHeart, Sparkles, Compass, Puzzle, BookOpen } from 'lucide-react';
+import { CATEGORY_COLORS,NORTH_STAR_CATEGORIES,VISION_CARDS } from '../northStarData';
 import { type NorthStar } from '../types';
-import { NORTH_STAR_CATEGORIES, VISION_CARDS, CATEGORY_COLORS } from '../northStarData';
+import { MotionDiv } from './Motion';
 
 const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
   Wallet, Heart, Wrench, GraduationCap, Flame, DoorOpen,
@@ -33,7 +33,7 @@ const NorthStarCallout: React.FC<NorthStarCalloutProps> = ({ northStar, variant,
       ? northStar.statement.slice(0, 60) + '...'
       : northStar.statement;
     return (
-      <p className="text-xs italic text-zinc-400 dark:text-zinc-500 mt-2 mb-1">
+      <p className="text-xs italic text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-1">
         <Star size={10} className="inline -mt-0.5 mr-1 text-[var(--accent-hex)]" />
         Remember: {truncated}
       </p>
@@ -55,7 +55,7 @@ const NorthStarCallout: React.FC<NorthStarCalloutProps> = ({ northStar, variant,
           <div>
             <p className="text-[10px] font-bold uppercase tracking-widest text-[var(--accent-hex)] mb-1">Your North Star</p>
             <p className={`text-sm font-semibold ${colors.text} mb-1`}>{message || category?.label}</p>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 italic leading-relaxed">
+            <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] italic leading-relaxed">
               "{northStar.statement.length > 120 ? northStar.statement.slice(0, 120) + '...' : northStar.statement}"
             </p>
           </div>
@@ -83,7 +83,7 @@ const NorthStarCallout: React.FC<NorthStarCalloutProps> = ({ northStar, variant,
           <p className={`text-base font-bold ${colors.text}`}>{category?.label}</p>
         </div>
       </div>
-      <p className="text-sm text-zinc-600 dark:text-zinc-300 italic leading-relaxed mb-4">
+      <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] italic leading-relaxed mb-4">
         "{northStar.statement}"
       </p>
       {boardCards.length > 0 && (

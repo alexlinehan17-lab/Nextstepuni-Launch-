@@ -1,0 +1,21 @@
+[
+ {"id": "chem-2010-ol-q1-c-i-iii", "ask": "How was the liquid X kept in its proper position", "answer": "Glass wool", "figure": true},
+ {"id": "chem-2010-ol-q2-d", "ask": "Describe any two of these uses.", "answer": "Washing down the sides of the titration flask", "figure": true},
+ {"id": "chem-2010-ol-q2-f", "ask": "Find the molarity of the hydrochloric acid solution", "answer": "0.09 M", "solution": true},
+ {"id": "chem-2010-ol-q3-a-colours", "ask": "In the case of each of the three salts state the flame colour observed.", "answer": "Lithium: Crimson / red", "figure": true},
+ {"id": "chem-2010-ol-q3-b-i-iii", "ask": "", "answer": "Brown ring", "figure": true, "solution": true},
+ {"id": "chem-2010-ol-q4-i", "ask": "", "answer": "notation its text cannot carry", "figure": true, "solution": true},
+ {"id": "chem-2010-ol-q4-k-b", "ask": "Explain the term alloy.", "answer": "Mixture of metals"},
+ {"id": "chem-2010-ol-q5-a-isotopes", "ask": "What term is used for atoms of the same element", "answer": "Isotopes", "figure": true},
+ {"id": "chem-2010-ol-q5-c", "ask": "Use dot and cross diagrams to describe the bonding in the ammonia", "answer": "Pyramidal", "solution": true},
+ {"id": "chem-2010-ol-q6-c", "ask": "Mention two situations in which there may be a hazardous build-up", "answer": "in sewage (effluent treatment) systems"},
+ {"id": "chem-2010-ol-q7-e-i-ii", "ask": "For each conversion, indicate a suitable reagent", "answer": "Addition / hydration"},
+ {"id": "chem-2010-ol-q8-d", "ask": "", "answer": "All points plotted correctly", "figure": true, "solution": true},
+ {"id": "chem-2010-ol-q9-a-flocculation-or-fluoridation", "ask": "explain how and why it is carried out", "answer": "Prevention of tooth decay"},
+ {"id": "chem-2010-ol-q9-b", "ask": "", "answer": "2: Biological oxidation", "figure": true},
+ {"id": "chem-2010-ol-q10-a-iii", "ask": "How many molecules did this volume contain?", "answer": "2.24 litres"},
+ {"id": "chem-2010-ol-q10-c-i", "ask": "What substance did you extract at school using steam", "answer": "Clove oil", "figure": true},
+ {"id": "chem-2010-ol-q11-b", "ask": "", "answer": "E: Alpha particles", "figure": true},
+ {"id": "chem-2010-ol-q11-c-a-chemistry-and-society", "ask": "State two ways in which chemistry benefits society.", "answer": "lowers food costs"},
+ {"id": "chem-2010-ol-q11-c-b-iv", "ask": "list three of the stages in the recycling of a plastic", "answer": "re-extruding (remoulding)"}
+]

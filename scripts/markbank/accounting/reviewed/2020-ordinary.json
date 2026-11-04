@@ -1,0 +1,1403 @@
+{
+  "year": 2020,
+  "level": "ordinary",
+  "fileid": "LC032GLP000EV.pdf",
+  "reviewedAt": "2026-10-07",
+  "reviewedBy": "Codex visual PDF audit",
+  "paperSha256": "6113ad2488d338967f7b67699c1aa6f911df93e1bfe9f101ad2303dc1bf56ef4",
+  "schemeSha256": "21ed2602ffcd7fd65c3e788da9099b8cdb6e22f77c65a25f8e66db327ad71d54",
+  "visualPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "visualSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "markingGuidePages": [],
+  "expectedTaskCount": 34,
+  "allRouteMarks": 760,
+  "tasks": [
+    {
+      "key": "1(a)",
+      "questionNumber": 1,
+      "title": "Manufacturing account",
+      "marks": 40,
+      "paperPages": [
+        2,
+        3
+      ],
+      "promptFragments": [
+        {
+          "page": 3,
+          "text": "Prepare a manufacturing account for the year ended 31/12/2019."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-5-0",
+      "examTopicIds": [
+        "accounting-ordinary-final-accounts-manufacturing"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 40 marks to this task."
+    },
+    {
+      "key": "1(b)",
+      "questionNumber": 1,
+      "title": "Manufacturing company: trading and profit and loss account",
+      "marks": 40,
+      "paperPages": [
+        2,
+        3
+      ],
+      "promptFragments": [
+        {
+          "page": 3,
+          "text": "Prepare a trading, profit and loss account for the year ended 31/12/2019."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-5-0",
+      "examTopicIds": [
+        "accounting-ordinary-final-accounts-manufacturing"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 40 marks to this task."
+    },
+    {
+      "key": "1(c)",
+      "questionNumber": 1,
+      "title": "Manufacturing company: balance sheet",
+      "marks": 40,
+      "paperPages": [
+        2,
+        3
+      ],
+      "promptFragments": [
+        {
+          "page": 3,
+          "text": "Prepare a balance sheet as at 31/12/2019."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-5-0",
+      "examTopicIds": [
+        "accounting-ordinary-final-accounts-manufacturing"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 40 marks to this task."
+    },
+    {
+      "key": "2(a)",
+      "questionNumber": 2,
+      "title": "Company: profit and loss account",
+      "marks": 35,
+      "paperPages": [
+        4
+      ],
+      "promptFragments": [
+        {
+          "page": 4,
+          "text": "Show the profit and loss account for the year ended 31/12/2019."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-4-1",
+      "examTopicIds": [
+        "accounting-ordinary-company-profit-loss"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 35 marks to this task."
+    },
+    {
+      "key": "2(b)",
+      "questionNumber": 2,
+      "title": "Company: balance sheet after appropriations",
+      "marks": 25,
+      "paperPages": [
+        4
+      ],
+      "promptFragments": [
+        {
+          "page": 4,
+          "text": "Prepare a balance sheet showing the relevant accounts after making the above provisions and appropriations."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-4-1",
+      "examTopicIds": [
+        "accounting-ordinary-company-profit-loss"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 25 marks to this task."
+    },
+    {
+      "key": "3",
+      "questionNumber": 3,
+      "title": "Tabular statement",
+      "marks": 60,
+      "paperPages": [
+        5
+      ],
+      "promptFragments": [
+        {
+          "page": 5,
+          "text": "Record on a tabular statement the effect each of the above transactions had on the relevant assets and liabilities."
+        },
+        {
+          "page": 5,
+          "text": "Show the total assets and liabilities on 31/01/2020."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-2-6",
+      "examTopicIds": [
+        "accounting-ordinary-tabular-statements"
+      ],
+      "focus": null,
+      "boundaryReason": "All transactions and final totals form one continuous table with a single 60-mark allocation.",
+      "allocationEvidence": "The SEC scheme allocates 60 marks to this task."
+    },
+    {
+      "key": "4(a)",
+      "questionNumber": 4,
+      "title": "Service firm: opening capital",
+      "marks": 20,
+      "paperPages": [
+        6
+      ],
+      "promptFragments": [
+        {
+          "page": 6,
+          "text": "Calculate Lily Moloney’s capital on 01/01/2019."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-5-5",
+      "examTopicIds": [
+        "accounting-ordinary-service-firms"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 20 marks to this task."
+    },
+    {
+      "key": "4(b)",
+      "questionNumber": 4,
+      "title": "Service firm: income and expenditure account",
+      "marks": 40,
+      "paperPages": [
+        6
+      ],
+      "promptFragments": [
+        {
+          "page": 6,
+          "text": "Prepare Lily Moloney’s income and expenditure account for the year ended 31/12/2019."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-5-5",
+      "examTopicIds": [
+        "accounting-ordinary-service-firms"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 40 marks to this task."
+    },
+    {
+      "key": "5(a)(i)",
+      "questionNumber": 5,
+      "title": "Gross profit margin",
+      "marks": 10,
+      "paperPages": [
+        8,
+        9
+      ],
+      "promptFragments": [
+        {
+          "page": 9,
+          "text": "You are required to calculate (to two decimal places where appropriate):"
+        },
+        {
+          "page": 9,
+          "text": "The gross profit margin."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-4",
+      "examTopicIds": [
+        "accounting-ordinary-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced calculation. Months/days are equivalent units for one result, not distinct candidate routes.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(a)(ii)",
+      "questionNumber": 5,
+      "title": "Acid test ratio",
+      "marks": 10,
+      "paperPages": [
+        8,
+        9
+      ],
+      "promptFragments": [
+        {
+          "page": 9,
+          "text": "You are required to calculate (to two decimal places where appropriate):"
+        },
+        {
+          "page": 9,
+          "text": "The acid test ratio."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-6",
+      "examTopicIds": [
+        "accounting-ordinary-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced calculation. Months/days are equivalent units for one result, not distinct candidate routes.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(a)(iii)",
+      "questionNumber": 5,
+      "title": "Debtors collection period",
+      "marks": 10,
+      "paperPages": [
+        8,
+        9
+      ],
+      "promptFragments": [
+        {
+          "page": 9,
+          "text": "You are required to calculate (to two decimal places where appropriate):"
+        },
+        {
+          "page": 9,
+          "text": "The period of credit given to trade debtors in months/days."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-5",
+      "examTopicIds": [
+        "accounting-ordinary-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced calculation. Months/days are equivalent units for one result, not distinct candidate routes.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(a)(iv)",
+      "questionNumber": 5,
+      "title": "Additional shares available to issue",
+      "marks": 10,
+      "paperPages": [
+        8,
+        9
+      ],
+      "promptFragments": [
+        {
+          "page": 9,
+          "text": "You are required to calculate (to two decimal places where appropriate):"
+        },
+        {
+          "page": 9,
+          "text": "How many more shares can Logan Ltd sell/issue?"
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-4-0",
+      "examTopicIds": [
+        "accounting-ordinary-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced calculation. Months/days are equivalent units for one result, not distinct candidate routes.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(b)(i)",
+      "questionNumber": 5,
+      "title": "Explain 6% debentures 2024/2025",
+      "marks": 10,
+      "paperPages": [
+        8,
+        9
+      ],
+      "promptFragments": [
+        {
+          "page": 9,
+          "text": "Explain the following terms and state how they apply to the accounts of Logan Ltd where appropriate:"
+        },
+        {
+          "page": 9,
+          "text": "6% debentures 2024/2025."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-4-0",
+      "examTopicIds": [
+        "accounting-ordinary-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(b)(ii)",
+      "questionNumber": 5,
+      "title": "Explain tangible fixed assets",
+      "marks": 10,
+      "paperPages": [
+        8,
+        9
+      ],
+      "promptFragments": [
+        {
+          "page": 9,
+          "text": "Explain the following terms and state how they apply to the accounts of Logan Ltd where appropriate:"
+        },
+        {
+          "page": 9,
+          "text": "Tangible fixed assets."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-1",
+      "examTopicIds": [
+        "accounting-ordinary-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(b)(iii)",
+      "questionNumber": 5,
+      "title": "Explain shareholders’ funds",
+      "marks": 10,
+      "paperPages": [
+        8,
+        9
+      ],
+      "promptFragments": [
+        {
+          "page": 9,
+          "text": "Explain the following terms and state how they apply to the accounts of Logan Ltd where appropriate:"
+        },
+        {
+          "page": 9,
+          "text": "Shareholders’ funds."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-1",
+      "examTopicIds": [
+        "accounting-ordinary-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(b)(iv)",
+      "questionNumber": 5,
+      "title": "Explain trade creditors",
+      "marks": 10,
+      "paperPages": [
+        8,
+        9
+      ],
+      "promptFragments": [
+        {
+          "page": 9,
+          "text": "Explain the following terms and state how they apply to the accounts of Logan Ltd where appropriate:"
+        },
+        {
+          "page": 9,
+          "text": "Trade creditors."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-1",
+      "examTopicIds": [
+        "accounting-ordinary-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(c)",
+      "questionNumber": 5,
+      "title": "Assess Logan’s liquidity",
+      "marks": 10,
+      "paperPages": [
+        8,
+        9
+      ],
+      "promptFragments": [
+        {
+          "page": 9,
+          "text": "Would Logan Ltd have difficulty paying its bills as they fall due?"
+        },
+        {
+          "page": 9,
+          "text": "Explain your answer."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-6",
+      "examTopicIds": [
+        "accounting-ordinary-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "5(d)",
+      "questionNumber": 5,
+      "title": "Return on capital employed and profitability",
+      "marks": 10,
+      "paperPages": [
+        8,
+        9
+      ],
+      "promptFragments": [
+        {
+          "page": 9,
+          "text": "The return on capital employed for Logan Ltd in 2018 was 10%."
+        },
+        {
+          "page": 9,
+          "text": "Calculate the return on capital employed for 2019."
+        },
+        {
+          "page": 9,
+          "text": "Comment on the profitability of Logan Ltd for 2019."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-8-4",
+      "examTopicIds": [
+        "accounting-ordinary-interpretation-of-accounts"
+      ],
+      "focus": null,
+      "boundaryReason": "The calculation and comparison share one 10-mark tariff.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "6(a)",
+      "questionNumber": 6,
+      "title": "Reconcile operating profit to cash flow",
+      "marks": 30,
+      "paperPages": [
+        10,
+        11
+      ],
+      "promptFragments": [
+        {
+          "page": 11,
+          "text": "Reconcile the operating profit to net cash inflow/outflow from operating activities."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-7-5",
+      "examTopicIds": [
+        "accounting-ordinary-cash-flow-statements"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 30 marks to this task."
+    },
+    {
+      "key": "6(b)",
+      "questionNumber": 6,
+      "title": "Cash flow statement",
+      "marks": 65,
+      "paperPages": [
+        10,
+        11
+      ],
+      "promptFragments": [
+        {
+          "page": 11,
+          "text": "Prepare the cash flow statement of Britton Ltd for the year ended 31/12/2019 using the following headings:"
+        },
+        {
+          "page": 11,
+          "text": "Operating activities"
+        },
+        {
+          "page": 11,
+          "text": "Return on investments and servicing of finance"
+        },
+        {
+          "page": 11,
+          "text": "Taxation"
+        },
+        {
+          "page": 11,
+          "text": "Capital expenditure and financial investment"
+        },
+        {
+          "page": 11,
+          "text": "Equity dividends paid"
+        },
+        {
+          "page": 11,
+          "text": "Financing."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-7-5",
+      "examTopicIds": [
+        "accounting-ordinary-cash-flow-statements"
+      ],
+      "focus": null,
+      "boundaryReason": "All six headings form one required statement.",
+      "allocationEvidence": "The final SEC scheme boxes 65 and its credits sum to 65, superseding the paper’s printed 60. Together with part (c)’s final 5 marks and part (a)’s 30, Q6 remains 100."
+    },
+    {
+      "key": "6(c)",
+      "questionNumber": 6,
+      "title": "Reconcile cash flow to net debt",
+      "marks": 5,
+      "paperPages": [
+        10,
+        11
+      ],
+      "promptFragments": [
+        {
+          "page": 11,
+          "text": "Reconcile the net cash flow to movement in net debt."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-7-5",
+      "examTopicIds": [
+        "accounting-ordinary-cash-flow-statements"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The final SEC scheme boxes 5 and marks five 1-mark figures, superseding the paper’s printed 10. Part (b) correspondingly increases to 65, preserving Q6’s 100 total."
+    },
+    {
+      "key": "7(a)",
+      "questionNumber": 7,
+      "title": "Incomplete records: opening capital",
+      "marks": 10,
+      "paperPages": [
+        12
+      ],
+      "promptFragments": [
+        {
+          "page": 12,
+          "text": "Calculate Paul Brett’s capital on 01/01/2019."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-6-1",
+      "examTopicIds": [
+        "accounting-ordinary-incomplete-records-control-account"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "7(b)",
+      "questionNumber": 7,
+      "title": "Sales and purchases from control accounts",
+      "marks": 20,
+      "paperPages": [
+        12
+      ],
+      "promptFragments": [
+        {
+          "page": 12,
+          "text": "Calculate Paul Brett’s total sales and total purchases using control accounts."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-6-1",
+      "examTopicIds": [
+        "accounting-ordinary-incomplete-records-control-account"
+      ],
+      "focus": null,
+      "boundaryReason": "Both control accounts and their resulting totals are mandatory in one 20-mark printed task, with a single boxed scheme tariff.",
+      "allocationEvidence": "The SEC scheme allocates 20 marks to this task."
+    },
+    {
+      "key": "7(c)",
+      "questionNumber": 7,
+      "title": "Incomplete records: trading and profit and loss account",
+      "marks": 30,
+      "paperPages": [
+        12
+      ],
+      "promptFragments": [
+        {
+          "page": 12,
+          "text": "Prepare a trading and profit and loss account for the year ended 31/12/2019."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-6-1",
+      "examTopicIds": [
+        "accounting-ordinary-incomplete-records-control-account"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 30 marks to this task."
+    },
+    {
+      "key": "7(d)",
+      "questionNumber": 7,
+      "title": "Incomplete records: balance sheet",
+      "marks": 40,
+      "paperPages": [
+        12
+      ],
+      "promptFragments": [
+        {
+          "page": 12,
+          "text": "Prepare a balance sheet as at 31/12/2019."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-6-1",
+      "examTopicIds": [
+        "accounting-ordinary-incomplete-records-control-account"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately priced required task at its published allocation.",
+      "allocationEvidence": "The SEC scheme allocates 40 marks to this task."
+    },
+    {
+      "key": "8(a)",
+      "questionNumber": 8,
+      "title": "Selling price per unit",
+      "marks": 10,
+      "paperPages": [
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "Calculate the selling price per unit."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-3",
+      "examTopicIds": [
+        "accounting-ordinary-costing-marginal"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately boxed response. Both units/value, all scenario conditions, or the definition with two open examples remain together where required.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "8(b)",
+      "questionNumber": 8,
+      "title": "Variable cost per unit",
+      "marks": 10,
+      "paperPages": [
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "Calculate the variable cost per unit."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-3",
+      "examTopicIds": [
+        "accounting-ordinary-costing-marginal"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately boxed response. Both units/value, all scenario conditions, or the definition with two open examples remain together where required.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "8(c)",
+      "questionNumber": 8,
+      "title": "Contribution per unit",
+      "marks": 10,
+      "paperPages": [
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "Calculate the contribution per unit sold."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-3",
+      "examTopicIds": [
+        "accounting-ordinary-costing-marginal"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately boxed response. Both units/value, all scenario conditions, or the definition with two open examples remain together where required.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "8(d)",
+      "questionNumber": 8,
+      "title": "Break-even units and sales value",
+      "marks": 10,
+      "paperPages": [
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "Calculate the break-even point in volume (units) and sales value (€)."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-3",
+      "examTopicIds": [
+        "accounting-ordinary-costing-marginal"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately boxed response. Both units/value, all scenario conditions, or the definition with two open examples remain together where required.",
+      "allocationEvidence": "The SEC scheme allocates 10 marks to this task."
+    },
+    {
+      "key": "8(e)",
+      "questionNumber": 8,
+      "title": "Margin of safety in units and sales value",
+      "marks": 15,
+      "paperPages": [
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "Calculate the margin of safety in volume (units) and sales value (€), if the budgeted sales for the period are 50,000 units."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-3",
+      "examTopicIds": [
+        "accounting-ordinary-costing-marginal"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately boxed response. Both units/value, all scenario conditions, or the definition with two open examples remain together where required.",
+      "allocationEvidence": "The SEC scheme allocates 15 marks to this task."
+    },
+    {
+      "key": "8(f)",
+      "questionNumber": 8,
+      "title": "Marginal costing statement after changes",
+      "marks": 20,
+      "paperPages": [
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "Prepare a marginal costing statement which includes the following:"
+        },
+        {
+          "page": 13,
+          "text": "Reduction in the selling price of €1.50"
+        },
+        {
+          "page": 13,
+          "text": "Increase in sales volume of 10%"
+        },
+        {
+          "page": 13,
+          "text": "All other costs to remain the same"
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-3",
+      "examTopicIds": [
+        "accounting-ordinary-costing-marginal"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately boxed response. Both units/value, all scenario conditions, or the definition with two open examples remain together where required.",
+      "allocationEvidence": "The SEC scheme allocates 20 marks to this task."
+    },
+    {
+      "key": "8(g)",
+      "questionNumber": 8,
+      "title": "Fixed costs and examples",
+      "marks": 5,
+      "paperPages": [
+        13
+      ],
+      "promptFragments": [
+        {
+          "page": 13,
+          "text": "Explain the term ‘fixed cost’ in relation to McBreen Ltd."
+        },
+        {
+          "page": 13,
+          "text": "Give two examples of ‘fixed costs’ that McBreen Ltd might incur."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-1",
+      "examTopicIds": [
+        "accounting-ordinary-costing-marginal"
+      ],
+      "focus": null,
+      "boundaryReason": "One separately boxed response. Both units/value, all scenario conditions, or the definition with two open examples remain together where required.",
+      "allocationEvidence": "The SEC scheme allocates 5 marks to this task."
+    },
+    {
+      "key": "9(a)",
+      "questionNumber": 9,
+      "title": "Cash budget from March to July",
+      "marks": 75,
+      "paperPages": [
+        14
+      ],
+      "promptFragments": [
+        {
+          "page": 14,
+          "text": "Prepare a cash budget on a monthly basis for the period March to July inclusive and also the total column for the period."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-6",
+      "examTopicIds": [
+        "accounting-ordinary-budgeting-cash"
+      ],
+      "focus": null,
+      "boundaryReason": "One continuous cash budget; all five months and the total column are mandatory.",
+      "allocationEvidence": "The SEC scheme allocates 75 marks to this task."
+    },
+    {
+      "key": "9(b)",
+      "questionNumber": 9,
+      "title": "Information from the cash budget",
+      "marks": 5,
+      "paperPages": [
+        14
+      ],
+      "promptFragments": [
+        {
+          "page": 14,
+          "text": "Explain two items of information Sheila can get from the prepared cash budget."
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "topicId": "accounting-9-4",
+      "examTopicIds": [
+        "accounting-ordinary-budgeting-cash"
+      ],
+      "focus": null,
+      "boundaryReason": "Two open items of information; scheme examples are not a finite printed candidate pool.",
+      "allocationEvidence": "The SEC scheme allocates 5 marks to this task."
+    }
+  ],
+  "selectionReview": [
+    {
+      "page": 1,
+      "text": "Candidates should answer either QUESTION 1 only OR attempt any TWO of the remaining three",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions are included; this paper has a single Q1 route."
+    },
+    {
+      "page": 1,
+      "text": "Candidates should answer any TWO questions.",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions are included; this paper has a single Q1 route."
+    },
+    {
+      "page": 1,
+      "text": "Candidates should answer ONE of these questions.",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions are included; this paper has a single Q1 route."
+    },
+    {
+      "page": 2,
+      "text": "Answer Question 1 OR any TWO other questions",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions are included; this paper has a single Q1 route."
+    },
+    {
+      "page": 8,
+      "text": "Answer any TWO questions",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions are included; this paper has a single Q1 route."
+    },
+    {
+      "page": 13,
+      "text": "Answer ONE question",
+      "classification": "paper-level-choice",
+      "reason": "All nine questions are included; this paper has a single Q1 route."
+    },
+    {
+      "page": 13,
+      "text": "Give two examples of ‘fixed costs’ that McBreen Ltd might incur.",
+      "classification": "open-response",
+      "reason": "Two examples or information items are requested with no finite printed pool."
+    },
+    {
+      "page": 14,
+      "text": "Explain two items of information Sheila can get from the prepared cash budget.",
+      "classification": "open-response",
+      "reason": "Two examples or information items are requested with no finite printed pool."
+    }
+  ],
+  "legacyCorrections": {}
+}

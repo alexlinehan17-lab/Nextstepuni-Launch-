@@ -1,21 +1,27 @@
+import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence,motion } from 'framer-motion';
 import {
-  Cpu, Brain, Heart, Zap, Shield, Utensils, ClipboardCheck
+Brain,
+ClipboardCheck,
+Cpu,
+Heart,
+Shield,Utensils,
+Zap
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
+import React,{ useState } from 'react';
+import { EMOTIONAL_INTELLIGENCE_REFERENCE_LIST } from '../data/references/emotionalIntelligence';
+import { COLORS } from '../design/tokens';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { cyanTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, SupportSignpost } from './ModuleShared';
+import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
-import { EMOTIONAL_INTELLIGENCE_REFERENCE_LIST } from '../data/references/emotionalIntelligence';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { COLORS } from '../design/tokens';
+import { Highlight,MicroCommitment,ReadingSection,SupportSignpost } from './ModuleShared';
 
 const theme = cyanTheme;
 
@@ -57,29 +63,29 @@ const StressResponseComparison = () => {
     };
 
     const phases = [
-        { label: 'Thinking zone', x1: 0, x2: 0.33, color: '#3A8D5F' },
-        { label: 'Tipping point', x1: 0.33, x2: 0.66, color: '#f59e0b' },
-        { label: 'Survival mode', x1: 0.66, x2: 1, color: '#ef4444' },
+        { label: 'Thinking zone', x1: 0, x2: 0.33, color: "var(--module-success-text)" },
+        { label: 'Tipping point', x1: 0.33, x2: 0.66, color: "var(--module-ink)" },
+        { label: 'Survival mode', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
     ];
 
     const Chart = () => (
         <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
             <defs>
                 <linearGradient id="pfc-grad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#3A8D5F" stopOpacity="0.4" />
-                    <stop offset="100%" stopColor="#3A8D5F" stopOpacity="0.03" />
+                    <stop offset="0%" stopColor="var(--module-success)" stopOpacity="0.4" />
+                    <stop offset="100%" stopColor="var(--module-success)" stopOpacity="0.03" />
                 </linearGradient>
                 <linearGradient id="amyg-grad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#ef4444" stopOpacity="0.4" />
-                    <stop offset="100%" stopColor="#ef4444" stopOpacity="0.03" />
+                    <stop offset="0%" stopColor="var(--module-danger)" stopOpacity="0.4" />
+                    <stop offset="100%" stopColor="var(--module-danger)" stopOpacity="0.03" />
                 </linearGradient>
             </defs>
             {/* Grid lines */}
             {[0.25, 0.5, 0.75, 1.0].map(v => (
-                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
             ))}
             {/* Baseline */}
-            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
             {/* PFC area */}
             <motion.path
                 d={buildArea(pfcData)}
@@ -99,77 +105,77 @@ const StressResponseComparison = () => {
             {/* PFC line */}
             <motion.path
                 d={buildLine(pfcData)}
-                fill="none" stroke="#3A8D5F" strokeWidth="2.5" strokeLinecap="round"
+                fill="none" stroke="var(--module-success-text)" strokeWidth="2.5" strokeLinecap="round"
                 initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
                 transition={{ duration: 1.2, ease: 'easeOut' }}
             />
             {/* Amygdala line */}
             <motion.path
                 d={buildLine(amygData)}
-                fill="none" stroke="#ef4444" strokeWidth="2.5" strokeLinecap="round"
+                fill="none" stroke="var(--module-danger-text)" strokeWidth="2.5" strokeLinecap="round"
                 initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
                 transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
             />
             {/* PFC dots */}
             {pfcData.map((v, i) => (
-                <motion.circle key={`pfc-${i}`} cx={toX(i / (pfcData.length - 1))} cy={toY(v)} r="3.5" fill="#3A8D5F"
+                <motion.circle key={`pfc-${i}`} cx={toX(i / (pfcData.length - 1))} cy={toY(v)} r="3.5" fill="var(--module-success)"
                     initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.3 }}
                 />
             ))}
             {/* Amygdala dots */}
             {amygData.map((v, i) => (
-                <motion.circle key={`amyg-${i}`} cx={toX(i / (amygData.length - 1))} cy={toY(v)} r="3.5" fill="#ef4444"
+                <motion.circle key={`amyg-${i}`} cx={toX(i / (amygData.length - 1))} cy={toY(v)} r="3.5" fill="var(--module-danger)"
                     initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.5 }}
                 />
             ))}
             {/* Y-axis labels */}
-            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
-            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
             {/* X-axis labels */}
             {labels.map((m, i) => (
-                <text key={m} x={toX(i / (labels.length - 1))} y={toY(0) + 14} fontSize="8" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>
+                <text key={m} x={toX(i / (labels.length - 1))} y={toY(0) + 14} fontSize="8" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{m}</text>
             ))}
             {/* Phase labels */}
             {phases.map((p, i) => (
                 <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
             ))}
             {/* Chart label */}
-            <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">Brain Activity Under Exam Stress</text>
+            <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">Brain Activity Under Exam Stress</text>
             {/* Legend */}
-            <line x1={W - padR - 168} x2={W - padR - 152} y1={14} y2={14} stroke="#3A8D5F" strokeWidth="2" />
-            <text x={W - padR - 148} y={17} fontSize="8" fill="#a1a1aa">Prefrontal Cortex</text>
-            <line x1={W - padR - 64} x2={W - padR - 48} y1={14} y2={14} stroke="#ef4444" strokeWidth="2" />
-            <text x={W - padR - 44} y={17} fontSize="8" fill="#a1a1aa">Amygdala</text>
+            <line x1={W - padR - 168} x2={W - padR - 152} y1={14} y2={14} stroke="var(--module-success-text)" strokeWidth="2" />
+            <text x={W - padR - 148} y={17} fontSize="8" fill="var(--module-surface)">Prefrontal Cortex</text>
+            <line x1={W - padR - 64} x2={W - padR - 48} y1={14} y2={14} stroke="var(--module-danger-text)" strokeWidth="2" />
+            <text x={W - padR - 44} y={17} fontSize="8" fill="var(--module-surface)">Amygdala</text>
         </svg>
     );
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Neural Tug of War</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">As stress rises, your thinking brain loses the battle.</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Neural Tug of War</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">As stress rises, your thinking brain loses the battle.</p>
 
             {!revealed ? (
                 <div className="text-center">
-                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Your brain has two competing systems fighting for control during an exam. What happens as the pressure builds?</p>
-                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-sky-500 text-white hover:bg-sky-600 transition-colors">
+                    <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Your brain has two competing systems fighting for control during an exam. What happens as the pressure builds?</p>
+                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-surface)] text-[var(--module-ink)] hover:bg-[var(--module-surface)] transition-colors" data-wide-button="true">
                         See the Neural Shift
                     </button>
                 </div>
             ) : (
                 <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
                     <div className="mb-5">
-                        <div className="rounded-lg border border-zinc-200 dark:border-zinc-700 bg-zinc-50/50 dark:bg-zinc-900/20 p-3">
+                        <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] p-3">
                             <Chart />
                         </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-4 text-sm">
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-successTint dark:bg-success/15 border border-success/30 dark:border-success/40">
-                            <span className="text-success text-lg mt-0.5">&#x1F9E0;</span>
-                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-success dark:text-success">Your PFC</strong> handles planning, working memory, and rational thinking. It's your exam brain. But it shuts down as cortisol rises.</p>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 border border-success/30 dark:border-success/40">
+                            <span className="text-[var(--module-success-text)] text-lg mt-0.5"></span>
+                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Your PFC</strong> handles planning, working memory, and rational thinking. It's your exam brain. But it shuts down as cortisol rises.</p>
                         </div>
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
-                            <span className="text-rose-500 text-lg mt-0.5">&#x26A1;</span>
-                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Your amygdala</strong> handles threat detection and survival. It hijacks control when stress crosses the tipping point. You can't think clearly in survival mode.</p>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                            <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
+                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Your amygdala</strong> handles threat detection and survival. It hijacks control when stress crosses the tipping point. You can't think clearly in survival mode.</p>
                         </div>
                     </div>
                 </motion.div>
@@ -188,37 +194,37 @@ const PFCShutdownSimulator = () => {
     ];
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
           <div className="text-center mb-8">
-            <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: ' 1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
-            <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>PFC Shutdown Simulator</h4>
-            <p className="text-sm mt-1" style={{ color: '#7a7068' }}>See what happens when your Amygdala hijacks your brain under exam stress.</p>
+            <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: ' 1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
+            <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>PFC Shutdown Simulator</h4>
+            <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>See what happens when your Amygdala hijacks your brain under exam stress.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             {/* Amygdala card */}
-            <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #A8746E', borderRadius: 14, padding: '20px 16px' }}>
+            <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '20px 16px' }}>
               <motion.div
                 animate={stressed ? { scale: [1, 1.1, 1] } : { scale: 1 }}
                 transition={stressed ? { duration: 1.2, repeat: Infinity } : {}}
-                style={{ width: 52, height: 52, borderRadius: '50%', background: '#F3EBE9', border: '2px solid rgba(168,116,110,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}
+                style={{ width: 52, height: 52, borderRadius: '50%', background: "var(--module-surface)", border: '2px solid rgba(168,116,110,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}
               >
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#A8746E" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--module-ink)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
                   <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
                 </svg>
               </motion.div>
-              <p className="font-serif font-bold" style={{ fontSize: 16, color: '#1a1a1a' }}>Amygdala</p>
-              <p style={{ fontSize: 13, color: '#7a7068', marginBottom: 12 }}>Threat Response</p>
+              <p className="font-serif font-bold" style={{ fontSize: 16, color: "var(--module-ink)" }}>Amygdala</p>
+              <p style={{ fontSize: 13, color: "var(--module-muted)", marginBottom: 12 }}>Threat Response</p>
 
-              <div style={{ height: 6, borderRadius: 3, backgroundColor: '#F3EBE9', overflow: 'hidden', marginBottom: 8 }}>
-                <motion.div animate={{ width: stressed ? '100%' : '20%' }} transition={{ duration: 0.8 }} style={{ height: '100%', backgroundColor: '#A8746E', borderRadius: 3 }} />
+              <div style={{ height: 6, borderRadius: 3, backgroundColor: "var(--module-surface)", overflow: 'hidden', marginBottom: 8 }}>
+                <motion.div animate={{ width: stressed ? '100%' : '20%' }} transition={{ duration: 0.8 }} style={{ height: '100%', backgroundColor: "var(--module-solid)", borderRadius: 3 }} />
               </div>
 
               <span className="inline-block text-[10px] font-bold uppercase" style={{
                 letterSpacing: '0.08em',
-                backgroundColor: stressed ? '#F3EBE9' : COLORS.successTint,
-                color: stressed ? '#7a5650' : COLORS.successDarkText,
+                backgroundColor: moduleFill(stressed ? "var(--module-surface)" : COLORS.successTint),
+                color: moduleText(stressed ? "var(--module-ink)" : COLORS.successDarkText),
                 border: stressed ? '1px solid rgba(168,116,110,0.35)' : `1px solid ${COLORS.success}4D`,
                 borderRadius: 20, padding: '3px 10px',
               }}>
@@ -227,18 +233,18 @@ const PFCShutdownSimulator = () => {
             </div>
 
             {/* PFC card */}
-            <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '20px 16px' }}>
+            <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center" style={{ border: `2px solid ${COLORS.success}`, borderRadius: 14, padding: '20px 16px' }}>
               <motion.div
                 animate={{ opacity: stressed ? 0.3 : 1 }}
                 transition={{ duration: 0.5 }}
-                style={{ width: 52, height: 52, borderRadius: '50%', background: COLORS.successTint, border: `2px solid ${COLORS.success}33`, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}
+                style={{ width: 52, height: 52, borderRadius: '50%', background: moduleFill(COLORS.successTint), border: `2px solid ${COLORS.success}33`, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}
               >
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke={COLORS.success} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M9.5 2C7 2 5 4 5 6.5c0 .8.2 1.5.5 2.1C4.2 9.3 3 10.8 3 12.5 3 15 5 17 7.5 17H9v3h6v-3h1.5C19 17 21 15 21 12.5c0-1.7-1.2-3.2-2.5-3.9.3-.6.5-1.3.5-2.1C19 4 17 2 14.5 2c-1.2 0-2.3.5-3 1.3C10.8 2.5 9.7 2 9.5 2z"/>
                 </svg>
               </motion.div>
-              <p className="font-serif font-bold" style={{ fontSize: 16, color: '#1a1a1a' }}>Prefrontal Cortex</p>
-              <p style={{ fontSize: 13, color: '#7a7068', marginBottom: 12 }}>Rational Thinking</p>
+              <p className="font-serif font-bold" style={{ fontSize: 16, color: "var(--module-ink)" }}>Prefrontal Cortex</p>
+              <p style={{ fontSize: 13, color: "var(--module-muted)", marginBottom: 12 }}>Rational Thinking</p>
 
               <div className="space-y-2 text-left">
                 {capabilities.map((cap, i) => (
@@ -249,14 +255,14 @@ const PFCShutdownSimulator = () => {
                     className="flex items-center justify-between"
                   >
                     <div>
-                      <p className="text-xs font-semibold" style={{ color: '#1a1a1a' }}>{cap.label}</p>
-                      <p style={{ fontSize: 10, color: '#9e9186' }}>{cap.desc}</p>
+                      <p className="text-xs font-semibold" style={{ color: "var(--module-ink)" }}>{cap.label}</p>
+                      <p style={{ fontSize: 10, color: "var(--module-muted)" }}>{cap.desc}</p>
                     </div>
                     <span className="text-[10px] font-bold uppercase" style={{
                       letterSpacing: '0.06em',
-                      backgroundColor: stressed ? '#f0ece6' : COLORS.successTint,
-                      color: stressed ? '#9e9186' : COLORS.successDarkText,
-                      border: stressed ? '1px solid #d0cdc8' : `1px solid ${COLORS.success}4D`,
+                      backgroundColor: moduleFill(stressed ? "var(--module-surface)" : COLORS.successTint),
+                      color: moduleText(stressed ? "var(--module-muted)" : COLORS.successDarkText),
+                      border: stressed ? "1px solid var(--module-line)" : `1px solid ${COLORS.success}4D`,
                       borderRadius: 20, padding: '2px 8px',
                     }}>
                       {stressed ? 'OFFLINE' : 'ONLINE'}
@@ -275,9 +281,9 @@ const PFCShutdownSimulator = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 6 }}
                 className="mb-6"
-                style={{ border: '1px solid #d0cdc8', backgroundColor: '#F3EBE9', borderRadius: 10, padding: '12px 16px' }}
+                style={{ border: "1px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: 10, padding: '12px 16px' }}
               >
-                <p className="text-sm italic" style={{ color: '#7a5650' }}>
+                <p className="text-sm italic" style={{ color: "var(--module-ink)" }}>
                   Cortisol is blocking the connection between your PFC and your stored knowledge. Your memory isn't gone — the pathway is temporarily offline.
                 </p>
               </motion.div>
@@ -289,15 +295,15 @@ const PFCShutdownSimulator = () => {
             <button
               onClick={() => setStressed(!stressed)}
               style={{
-                backgroundColor: stressed ? COLORS.accent : '#A8746E',
-                color: '#FFFFFF',
-                border: stressed ? `2px solid ${COLORS.accent}` : '2px solid #A8746E',
+                backgroundColor: moduleFill(stressed ? COLORS.accent : "var(--module-solid)"),
+                color: "var(--module-on-fill)",
+                border: stressed ? `2px solid ${COLORS.accent}` : "2px solid var(--module-line)",
                 borderRadius: 20,
                 padding: '12px 24px',
                 fontSize: 14,
                 fontWeight: 600,
                 cursor: 'pointer',
-              }}
+              }} data-wide-button="true" data-selected={!!(stressed)} data-tone="orange" aria-pressed={!!(stressed)}
             >
               {stressed ? 'De-escalate' : 'Trigger Stress Response'}
             </button>
@@ -319,10 +325,10 @@ const ArousalReappraisal = () => {
     // X: Valence (0=negative, 100=positive)
     // Y: Arousal (0=high, 100=low) — inverted so high arousal is at top
     const emotions = {
-      anxiety:    { x: 15, y: 12, label: 'Anxiety',    color: 'bg-rose-500' },
-      excitement: { x: 85, y: 12, label: 'Excitement', color: 'bg-success' },
-      calm:       { x: 85, y: 85, label: 'Calm',       color: 'bg-blue-500' },
-      boredom:    { x: 15, y: 85, label: 'Boredom',    color: 'bg-zinc-400' },
+      anxiety:    { x: 15, y: 12, label: 'Anxiety',    color: "bg-[var(--module-danger)]" },
+      excitement: { x: 85, y: 12, label: 'Excitement', color: "bg-[var(--module-success)]" },
+      calm:       { x: 85, y: 85, label: 'Calm',       color: "bg-[var(--module-solid)]" },
+      boredom:    { x: 15, y: 85, label: 'Boredom',    color: "bg-[var(--module-surface)]" },
     };
 
     // Dot target
@@ -333,36 +339,36 @@ const ArousalReappraisal = () => {
         : { x: emotions.anxiety.x, y: emotions.anxiety.y };
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Arousal Reappraisal</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Scenario: Your heart is racing before an exam. What do you do?</p>
-             <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">The emotion map shows two dimensions: how activated you feel (arousal) and whether it feels good or bad (valence).</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Arousal Reappraisal</h4>
+             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">Scenario: Your heart is racing before an exam. What do you do?</p>
+             <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">The emotion map shows two dimensions: how activated you feel (arousal) and whether it feels good or bad (valence).</p>
 
              {/* Emotion grid */}
              <div className="relative w-full aspect-square max-w-sm mx-auto mb-6">
                {/* Background quadrants */}
                <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 rounded-xl overflow-hidden">
-                 <div className="bg-rose-50 dark:bg-rose-950/15" />
-                 <div className="bg-successTint dark:bg-success/15" />
-                 <div className="bg-zinc-50 dark:bg-zinc-800/30" />
-                 <div className="bg-blue-50 dark:bg-blue-950/15" />
+                 <div className="bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)]" />
+                 <div className="bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15" />
+                 <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" />
+                 <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" />
                </div>
 
                {/* Axis labels */}
-               <div className="absolute top-2 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">High Arousal</div>
-               <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Low Arousal</div>
-               <div className="absolute left-2 top-1/2 -translate-y-1/2 text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 [writing-mode:vertical-lr] rotate-180">Negative</div>
-               <div className="absolute right-2 top-1/2 -translate-y-1/2 text-[9px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 [writing-mode:vertical-lr]">Positive</div>
+               <div className="absolute top-2 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-widest text-[var(--module-muted)] dark:text-[var(--module-muted)]">High Arousal</div>
+               <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-widest text-[var(--module-muted)] dark:text-[var(--module-muted)]">Low Arousal</div>
+               <div className="absolute left-2 top-1/2 -translate-y-1/2 text-[9px] font-bold uppercase tracking-widest text-[var(--module-muted)] dark:text-[var(--module-muted)] [writing-mode:vertical-lr] rotate-180">Negative</div>
+               <div className="absolute right-2 top-1/2 -translate-y-1/2 text-[9px] font-bold uppercase tracking-widest text-[var(--module-muted)] dark:text-[var(--module-muted)] [writing-mode:vertical-lr]">Positive</div>
 
                {/* Axis lines */}
-               <div className="absolute left-1/2 top-0 bottom-0 w-px bg-zinc-200 dark:bg-zinc-700" />
-               <div className="absolute top-1/2 left-0 right-0 h-px bg-zinc-200 dark:bg-zinc-700" />
+               <div className="absolute left-1/2 top-0 bottom-0 w-px bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" />
+               <div className="absolute top-1/2 left-0 right-0 h-px bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" />
 
                {/* Emotion labels */}
                {Object.values(emotions).map(e => (
                  <div key={e.label} className="absolute" style={{ left: `${e.x}%`, top: `${e.y}%`, transform: 'translate(-50%, -50%)' }}>
                    <div className={`w-3 h-3 rounded-full ${e.color} mx-auto mb-1`} />
-                   <p className="text-[10px] font-bold text-zinc-600 dark:text-zinc-300 text-center whitespace-nowrap">{e.label}</p>
+                   <p className="text-[10px] font-bold text-[var(--module-ink)] dark:text-[var(--module-muted)] text-center whitespace-nowrap">{e.label}</p>
                  </div>
                ))}
 
@@ -380,9 +386,9 @@ const ArousalReappraisal = () => {
                >
                  <div className="relative">
                    <div className={`w-6 h-6 rounded-full border-2 border-white shadow-lg ${
-                     attempt === 'reframe' ? 'bg-success' : attempt === 'calm' ? 'bg-amber-500' : 'bg-rose-500'
+                     attempt === 'reframe' ? "bg-[var(--module-success)]" : attempt === 'calm' ? "bg-[var(--module-surface)]" : "bg-[var(--module-danger)]"
                    }`} />
-                   <p className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[9px] font-bold text-zinc-500 dark:text-zinc-400 whitespace-nowrap">YOU</p>
+                   <p className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[9px] font-bold text-[var(--module-muted)] dark:text-[var(--module-muted)] whitespace-nowrap">YOU</p>
                  </div>
                </motion.div>
 
@@ -399,12 +405,12 @@ const ArousalReappraisal = () => {
                      <motion.line
                        x1={emotions.anxiety.x} y1={emotions.anxiety.y}
                        x2={emotions.excitement.x} y2={emotions.excitement.y}
-                       stroke="#3A8D5F" strokeWidth="0.8" strokeDasharray="2 2"
+                       stroke="var(--module-success-text)" strokeWidth="0.8" strokeDasharray="2 2"
                        initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
                        transition={{ duration: 0.5 }}
                      />
                    </svg>
-                   <div className="absolute text-[8px] font-bold text-success" style={{ left: '50%', top: `${emotions.anxiety.y}%`, transform: 'translate(-50%, -150%)' }}>
+                   <div className="absolute text-[8px] font-bold text-[var(--module-success-text)]" style={{ left: '50%', top: `${emotions.anxiety.y}%`, transform: 'translate(-50%, -150%)' }}>
                      Short path (same arousal)
                    </div>
                  </motion.div>
@@ -421,12 +427,12 @@ const ArousalReappraisal = () => {
                      <motion.line
                        x1={emotions.anxiety.x} y1={emotions.anxiety.y}
                        x2={emotions.calm.x} y2={emotions.calm.y}
-                       stroke="#f59e0b" strokeWidth="0.8" strokeDasharray="2 2"
+                       stroke="var(--module-ink)" strokeWidth="0.8" strokeDasharray="2 2"
                        initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
                        transition={{ duration: 1.2 }}
                      />
                    </svg>
-                   <div className="absolute text-[8px] font-bold text-amber-500" style={{ left: '55%', top: '50%', transform: 'translate(-50%, -50%)' }}>
+                   <div className="absolute text-[8px] font-bold text-[var(--module-ink)]" style={{ left: '55%', top: '50%', transform: 'translate(-50%, -50%)' }}>
                      Long path (change arousal)
                    </div>
                  </motion.div>
@@ -438,7 +444,7 @@ const ArousalReappraisal = () => {
                <button
                  onClick={() => handleAttempt('calm')}
                  className="p-4 rounded-xl text-left text-sm font-medium transition-all"
-                 style={attempt === 'calm' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}
+                 style={attempt === 'calm' ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(attempt === 'calm')} data-tone="coral" aria-pressed={!!(attempt === 'calm')}
                >
                  <p className="font-bold">"Calm down."</p>
                  <p className="text-xs mt-1 opacity-70">Try to lower your arousal</p>
@@ -446,7 +452,7 @@ const ArousalReappraisal = () => {
                <button
                  onClick={() => handleAttempt('reframe')}
                  className="p-4 rounded-xl text-left text-sm font-medium transition-all"
-                 style={attempt === 'reframe' ? { backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', borderRadius: 14, boxShadow: '3px 3px 0px 0px #3A8D5F', color: '#1F5F3E' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}
+                 style={attempt === 'reframe' ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-success-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(attempt === 'reframe')} data-tone="mint" aria-pressed={!!(attempt === 'reframe')}
                >
                  <p className="font-bold">"I'm excited!"</p>
                  <p className="text-xs mt-1 opacity-70">Reframe the same arousal</p>
@@ -457,18 +463,18 @@ const ArousalReappraisal = () => {
              <AnimatePresence mode="wait">
                {attempt === 'calm' && (
                  <motion.div key="calm-result" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
-                   className="p-4 bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50 rounded-xl text-sm"
+                   className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)] rounded-xl text-sm"
                  >
-                   <p className="font-bold text-amber-700 dark:text-amber-300 mb-1">Difficult path.</p>
-                   <p className="text-amber-600 dark:text-amber-400 text-xs">Telling yourself to "calm down" requires changing your entire arousal state — fighting your physiology. Your body is flooded with adrenaline; you can't just switch it off by willpower. The dot gets stuck halfway.</p>
+                   <p className="font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-1">Difficult path.</p>
+                   <p className="text-[var(--module-ink)] dark:text-[var(--module-ink)] text-xs">Telling yourself to "calm down" requires changing your entire arousal state — fighting your physiology. Your body is flooded with adrenaline; you can't just switch it off by willpower. The dot gets stuck halfway.</p>
                  </motion.div>
                )}
                {attempt === 'reframe' && (
                  <motion.div key="reframe-result" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
-                   className="p-4 bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/50 rounded-xl text-sm"
+                   className="p-4 bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)] rounded-xl text-sm"
                  >
-                   <p className="font-bold text-emerald-700 dark:text-emerald-300 mb-1">Easy path.</p>
-                   <p className="text-emerald-600 dark:text-emerald-400 text-xs">Anxiety and excitement feel the same in your body — same racing heart, same adrenaline. You only need to change the label, not the state. People who say "I'm excited" before a test actually perform noticeably better than those who try to calm down.</p>
+                   <p className="font-bold text-[var(--module-success-text)] dark:text-[var(--module-success-text)] mb-1">Easy path.</p>
+                   <p className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)] text-xs">Anxiety and excitement feel the same in your body — same racing heart, same adrenaline. You only need to change the label, not the state. People who say "I'm excited" before a test actually perform noticeably better than those who try to calm down.</p>
                  </motion.div>
                )}
              </AnimatePresence>
@@ -484,14 +490,14 @@ const BoxBreathing = () => {
     const totalCycles = 3;
 
     const phases = [
-      { label: 'Breathe In', color: 'text-cyan-500' },
-      { label: 'Hold', color: 'text-sky-400' },
-      { label: 'Breathe Out', color: 'text-[#F26B1F]' },
-      { label: 'Hold', color: 'text-sky-400' },
+      { label: 'Breathe In', color: "text-[var(--module-ink)]" },
+      { label: 'Hold', color: "text-[var(--module-ink)]" },
+      { label: 'Breathe Out', color: "text-[var(--module-danger-text)]" },
+      { label: 'Hold', color: "text-[var(--module-ink)]" },
     ];
 
     // Ring arc: each phase is a quarter of the circle
-    const arcColors = ['#06b6d4', '#38bdf8', '#14b8a6', '#38bdf8']; // cyan, sky, teal, sky
+    const arcColors = ["var(--module-ink)", "var(--module-ink)", "var(--module-success-text)", "var(--module-ink)"]; // cyan, sky, teal, sky
     const radius = 88;
     const circumference = 2 * Math.PI * radius;
     const _quarterArc = circumference / 4;
@@ -545,9 +551,9 @@ const BoxBreathing = () => {
     const done = !active && cycle === 0 && phase === 0;
 
     return (
-     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-         <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Box Breathing</h4>
-         <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Your emergency protocol for the exam hall. 4 seconds per phase, 3 cycles.</p>
+     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+         <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Box Breathing</h4>
+         <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Your emergency protocol for the exam hall. 4 seconds per phase, 3 cycles.</p>
 
          <div className="flex justify-center mb-6">
            <div className="relative w-52 h-52">
@@ -571,10 +577,10 @@ const BoxBreathing = () => {
              </svg>
 
              {/* Phase labels on each side */}
-             <div className={`absolute -top-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 0 ? 'text-cyan-500 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Inhale</div>
-             <div className={`absolute top-1/2 -right-10 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 1 ? 'text-sky-400 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Hold</div>
-             <div className={`absolute -bottom-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 2 ? 'text-[#F26B1F] opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Exhale</div>
-             <div className={`absolute top-1/2 -left-8 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 3 ? 'text-sky-400 opacity-100' : 'text-zinc-300 dark:text-zinc-600 opacity-60'}`}>Hold</div>
+             <div className={`absolute -top-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 0 ? "text-[var(--module-ink)] opacity-100" : "text-[var(--module-muted)] dark:text-[var(--module-ink)] opacity-60"}`}>Inhale</div>
+             <div className={`absolute top-1/2 -right-10 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 1 ? "text-[var(--module-ink)] opacity-100" : "text-[var(--module-muted)] dark:text-[var(--module-ink)] opacity-60"}`}>Hold</div>
+             <div className={`absolute -bottom-6 left-1/2 -translate-x-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 2 ? "text-[var(--module-danger-text)] opacity-100" : "text-[var(--module-muted)] dark:text-[var(--module-ink)] opacity-60"}`}>Exhale</div>
+             <div className={`absolute top-1/2 -left-8 -translate-y-1/2 text-[9px] font-bold uppercase tracking-wider transition-opacity duration-300 ${active && phase === 3 ? "text-[var(--module-ink)] opacity-100" : "text-[var(--module-muted)] dark:text-[var(--module-ink)] opacity-60"}`}>Hold</div>
 
              {/* Inner breathing circle */}
              <div className="absolute inset-0 flex items-center justify-center">
@@ -583,7 +589,7 @@ const BoxBreathing = () => {
                    scale: active ? breathScale : 1,
                  }}
                  transition={{ duration: 3.8, ease: 'easeInOut' }}
-                 className="w-28 h-28 rounded-full bg-cyan-50 dark:bg-cyan-950/30 border-2 border-cyan-200 dark:border-cyan-800/50 flex flex-col items-center justify-center"
+                 className="w-28 h-28 rounded-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-2 border-[var(--module-line)] dark:border-[var(--module-line)] flex flex-col items-center justify-center"
                >
                  {active ? (
                    <>
@@ -591,14 +597,14 @@ const BoxBreathing = () => {
                        key={`${phase}-${count}`}
                        initial={{ scale: 1.2, opacity: 0 }}
                        animate={{ scale: 1, opacity: 1 }}
-                       className="text-3xl font-bold text-cyan-600 dark:text-cyan-400"
+                       className="text-3xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]"
                      >
                        {count}
                      </motion.p>
                      <p className={`text-[10px] font-bold ${phases[phase].color}`}>{phases[phase].label}</p>
                    </>
                  ) : (
-                   <p className="text-xs font-semibold text-zinc-400 dark:text-zinc-500">Ready</p>
+                   <p className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)]">Ready</p>
                  )}
                </motion.div>
              </div>
@@ -609,7 +615,7 @@ const BoxBreathing = () => {
          {active && (
            <div className="flex justify-center gap-2 mb-6">
              {Array.from({ length: totalCycles }).map((_, i) => (
-               <div key={i} className={`w-2 h-2 rounded-full transition-colors ${i < cycle ? 'bg-cyan-500' : i === cycle ? 'bg-cyan-300' : 'bg-zinc-200 dark:bg-zinc-700'}`} />
+               <div key={i} className={`w-2 h-2 rounded-full transition-colors ${i < cycle ? "bg-[var(--module-solid)]" : i === cycle ? "bg-[var(--module-surface)]" : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"}`} />
              ))}
            </div>
          )}
@@ -618,14 +624,14 @@ const BoxBreathing = () => {
            {!active ? (
              <button
                onClick={handleStart}
-               className="px-6 py-2.5 bg-cyan-500 text-white font-bold text-sm rounded-xl hover:bg-cyan-600 shadow-lg shadow-cyan-500/20 transition-all"
+               className="px-6 py-2.5 bg-[var(--module-solid)] text-[var(--module-ink)] font-bold text-sm rounded-xl hover:bg-[var(--module-solid)] shadow-none shadow-none transition-all" data-wide-button="true"
              >
                {done ? 'Begin' : 'Start Again'}
              </button>
            ) : (
              <button
                onClick={() => setActive(false)}
-               className="px-6 py-2.5 bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-bold text-sm rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-all"
+               className="px-6 py-2.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] font-bold text-sm rounded-xl hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] transition-all" data-wide-button="true"
              >
                Stop
              </button>
@@ -691,26 +697,26 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
                   <p>For big exams, we can break EI into three skills you can actually train:</p>
                 </>
               )}
-              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Emotional Awareness</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Spotting the physical signs of stress early.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Emotional Awareness</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>Spotting the physical signs of stress early.</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Emotional Understanding</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Putting the right name on what you're feeling.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Emotional Understanding</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Putting the right name on what you're feeling.</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Emotional Regulation</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Using specific techniques to manage it.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Emotional Regulation</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Using specific techniques to manage it.</p>
                   </div>
                 </div>
               </div>
@@ -773,33 +779,33 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
               ) : (
                 <p>You now have a full toolkit — techniques that use your mind and techniques that use your body. The final step is knowing when to use what.</p>
               )}
-              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Months Before</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Build your foundation. Practice daily Body Scans and learn Box Breathing while stress is low so it's automatic when you need it.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Months Before</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>Build your foundation. Practice daily Body Scans and learn Box Breathing while stress is low so it's automatic when you need it.</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Morning Of</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Managing your energy is everything. Eat a proper breakfast, stay away from panicked friends at the school gate, and tell yourself "I'm excited" instead of "I'm terrified."</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Morning Of</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Managing your energy is everything. Eat a proper breakfast, stay away from panicked friends at the school gate, and tell yourself "I'm excited" instead of "I'm terrified."</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>In The Hall</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>If panic hits, use the "Paper Panic" drill: Stop, Breathe (3 cycles of Box Breathing), clench and release your toes, and re-engage with the easiest question on the paper.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>In The Hall</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>If panic hits, use the "Paper Panic" drill: Stop, Breathe (3 cycles of Box Breathing), clench and release your toes, and re-engage with the easiest question on the paper.</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>4</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-success)" }}>4</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Post-Exam</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>Do not — absolutely do not — compare answers with friends afterwards. It only fuels anxiety for the next paper.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}>Post-Exam</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-success-text)", opacity: 0.8 }}>Do not — absolutely do not — compare answers with friends afterwards. It only fuels anxiety for the next paper.</p>
                   </div>
                 </div>
               </div>

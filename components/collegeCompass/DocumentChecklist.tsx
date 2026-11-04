@@ -48,7 +48,7 @@ const DocumentChecklist: React.FC<DocumentChecklistProps> = ({ hearIndicators, d
       </div>
 
       {nothing ? (
-        <div className="rounded-xl px-4 py-6 text-center" style={{ backgroundColor: '#F9F9F7' }}>
+        <div className="rounded-xl px-4 py-6 text-center" style={{ backgroundColor: '#FFFFFF' }}>
           <p className="text-sm text-[#7a7068] leading-relaxed">
             Tick your situation in the HEAR and DARE checkers above — your exact list of what to gather and post builds itself here.
           </p>
@@ -83,7 +83,7 @@ const DocumentChecklist: React.FC<DocumentChecklistProps> = ({ hearIndicators, d
                 ))}
               </div>
               {pack.dare.categoryReqs.length > 0 && (
-                <div className="mt-2 rounded-xl p-3" style={{ backgroundColor: '#F9F9F7' }}>
+                <div className="mt-2 rounded-xl p-3" style={{ backgroundColor: '#FFFFFF' }}>
                   {pack.dare.categoryReqs.map((t, i) => (
                     <PostRow key={`dc${i}`} icon={Stethoscope} tint="#FFFFFF" iconColor={COLORS.success} text={t} />
                   ))}

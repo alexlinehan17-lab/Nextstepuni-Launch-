@@ -7,6 +7,7 @@
  */
 
 import type { StudyConfidenceLabel } from '../types';
+import type { StudyTopicAllocation } from '../types/studyTopics';
 
 export interface StrategyDefinition {
   moduleId: string;
@@ -30,6 +31,9 @@ export interface StudySessionRecord {
   id: string;
   date: string;
   subject: string;
+  subjectId?: string;
+  specificationId?: string;
+  topicAllocations?: StudyTopicAllocation[];
   sessionType: 'new-learning' | 'practice' | 'revision';
   plannedMinutes: number;
   actualSeconds: number;
@@ -38,7 +42,15 @@ export interface StudySessionRecord {
   pointsEarned: number;
   hadReflection: boolean;
   strategiesShown?: string[];
+  /** Student-confirmed use. Merely showing a prompt is exposure, not practice. */
+  strategiesUsed?: string[];
   confidenceAfter?: number;
   confidenceLabel?: StudyConfidenceLabel;
   reflectionMode?: 'quick' | 'full';
+  /** Minutes added with "Keep going" after the planned time ran out. */
+  extendedMinutes?: number;
+  /** JP for finishing that added time (0 if it was ended early). */
+  extensionBonus?: number;
+  /** Stopwatch session: no planned end; plannedMinutes records the time studied. */
+  openEnded?: boolean;
 }

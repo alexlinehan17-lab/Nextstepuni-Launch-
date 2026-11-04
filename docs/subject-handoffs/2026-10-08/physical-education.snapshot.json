@@ -1,0 +1,17 @@
+{
+  "subject": "physical-education",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Physical-Education-Completion-20261007",
+  "branch": "codex/physical-education-bank-atlas-20261007",
+  "sourceHead": "796355d45a172c36212c44e7fc022edc5d79bbee",
+  "snapshotCommit": "0f282d5bea8de40f9a1db58e5b710a797ed466dd",
+  "snapshotRef": "refs/checkpoints/portable-subjects-20261008/physical-education",
+  "snapshotTree": "6d07a769284e89856635c337103871b58a3e0801",
+  "changedPaths": 384,
+  "capturedLocalFiles": 378,
+  "capturedLocalBytes": 155289262,
+  "exactFileBytesVerified": true,
+  "handoff": "physical-education.md",
+  "excluded": [],
+  "originalCheckpointCommit": "bd7cd65dae35fbce95f14311c5e70c84d5c390a8",
+  "snapshotBase": "0304bacab77aad2ada58e323e0b479fd5db53ee9"
+}

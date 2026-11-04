@@ -280,13 +280,16 @@ describe('Technology exam-topic registry', () => {
     expect(paperRegionFor(ordinaryBC.q, 'C5', ordinaryBC.maxCropPages)).toHaveLength(1);
   });
 
-  it('surfaces 678 questions in Atlas and does not invent a Mark Bank deck', () => {
+  it('surfaces 678 questions in Atlas, alongside the Mark Bank deck', () => {
     expect(subjectAtlasStats('technology')).toMatchObject({
       questions: 678,
       topics: 37,
       yearMin: 2010,
       yearMax: 2026,
     });
-    expect(MARK_BANK_SUBJECTS.map(subject => String(subject.id))).not.toContain('technology');
+    // Technology gained a Mark Bank deck of its own; the Atlas reference
+    // hierarchy above is Studyclix-shaped and stays separate from the
+    // syllabus areas the deck files its cards under.
+    expect(MARK_BANK_SUBJECTS.map(subject => String(subject.id))).toContain('technology');
   });
 });

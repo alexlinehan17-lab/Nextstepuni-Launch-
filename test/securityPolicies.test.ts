@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it } from 'vitest';
 
 import { SHOP_CATALOG } from '@/islandShopData';
 import { getJourneyV2BasePrice } from '@/journeyEconomyConfig';
@@ -82,6 +82,32 @@ describe('server-owned peer interaction catalogues', () => {
 });
 
 describe('shared-device privacy', () => {
+  afterEach(() => {
+    window.localStorage.clear();
+    window.sessionStorage.clear();
+  });
+  it('preserves only anonymous daily-game history on an unauthenticated boot', async () => {
+    const publicKeys = [
+      'nextstepuni.certle.v2', 'nextstepuni.certle.stats.v1',
+      'nextstepuni.certle.draft:2026-09-12:bio-2025-hl-q3-c', 'landing.today.v1',
+    ];
+    const privateKeys = [
+      'student-draft', 'nextstepuni.certle.account',
+      'nextstepuni.certle.v2.backup', 'nextstepuni.certle.draft:student',
+    ];
+    for (const key of [...publicKeys, ...privateKeys]) window.localStorage.setItem(key, key);
+    window.sessionStorage.setItem('student-session', 'private');
+
+    await clearLocalSessionData({ preservePublicGames: true });
+
+    for (const key of publicKeys) expect(window.localStorage.getItem(key)).toBe(key);
+    for (const key of privateKeys) expect(window.localStorage.getItem(key)).toBeNull();
+    expect(window.sessionStorage.length).toBe(0);
+    // Explicit sign-out/reset/deletion must also erase the public game. Nothing
+    // captured by the boot cleanup can resurrect it after a full clear.
+    await clearLocalSessionData();
+    expect(window.localStorage.length).toBe(0);
+  });
   it('removes browser-persistent and tab-persistent account state on exit', async () => {
     window.localStorage.setItem('student-draft', 'private');
     window.sessionStorage.setItem('student-session', 'private');

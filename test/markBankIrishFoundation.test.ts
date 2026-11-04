@@ -2,8 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { CARDS as ALL_CARDS } from '../components/MarkBank/cards/irish/foundation';
 import authored from '../components/MarkBank/cards/irish/foundation-authored.json';
-import { builtDecks, cardsForTopic, loadCards } from '../components/MarkBank/deck';
-import { levelsForSubject } from '../components/MarkBank/levels';
+import { builtDecks, cardsForTopic, levelsFor, loadCards } from '../components/MarkBank/deck';
 import { readChoice, writeChoice } from '../components/MarkBank/store';
 import { combinedListeningAssessment, irishMarks, irishScoreId, listeningQuestionGroups } from '../components/MarkBank/SessionScreen';
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
@@ -16,8 +15,9 @@ describe('reviewed 2025 Irish Foundation tasks', () => {
   it('loads and remembers Foundation without changing other subjects’ available levels', async () => {
     expect(await loadCards('irish', 'foundation')).toHaveLength(1003);
     expect(builtDecks()).toContainEqual({ subjectId: 'irish', level: 'foundation', label: 'Irish Foundation' });
-    expect(levelsForSubject('irish', 2025)).toEqual(['higher', 'ordinary', 'foundation']);
-    expect(levelsForSubject('biology', 2025)).toEqual(['higher', 'ordinary']);
+    // The level picker offers the levels with a built deck (deck.ts levelsFor).
+    expect(levelsFor('irish')).toEqual(['higher', 'ordinary', 'foundation']);
+    expect(levelsFor('biology')).toEqual(['higher', 'ordinary']);
     writeChoice('foundation-review', { subjectId: 'irish', level: 'foundation' });
     expect(readChoice('foundation-review')).toEqual({ subjectId: 'irish', level: 'foundation' });
   });

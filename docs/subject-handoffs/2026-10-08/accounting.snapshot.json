@@ -1,0 +1,17 @@
+{
+  "subject": "accounting",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Accounting-Completion-20261007",
+  "branch": "codex/accounting-completion-20261007",
+  "sourceHead": "8deb273f1b13341dcfa85204f7e4d784b638b21f",
+  "snapshotCommit": "307f13a5ebf2d893d23243d33a87ee2e01716bdb",
+  "snapshotRef": "refs/checkpoints/portable-subjects-20261008/accounting",
+  "snapshotTree": "2df089b4720f72f1e1ca72401bdf52cbb16cd29b",
+  "changedPaths": 1153,
+  "capturedLocalFiles": 1151,
+  "capturedLocalBytes": 318955613,
+  "exactFileBytesVerified": true,
+  "handoff": "accounting.md",
+  "excluded": [],
+  "originalCheckpointCommit": "3e8b9650ca20a8ad6a83b2116f250d63cf5533ee",
+  "snapshotBase": "4c1accc328f29cd34161d09ce21b8729f7c1c546"
+}

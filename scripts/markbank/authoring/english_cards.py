@@ -299,7 +299,9 @@ def requirements_for(question: str, source: dict | None, printed_parts: list[str
         labels = ', '.join(part.rsplit(' ', 2)[0] for part in printed_parts)
         requirements.append(f'Complete every linked part of the question: {labels}.')
     if source:
-        requirements.append('Read and use the official source material supplied with the card.')
+        requirements.append('Refer to the named poem or poems; supplementary reading editions are supplied with the card.'
+                            if source.get('kind') in ('supplementary-text', 'linked-reading') else
+                            'Read and use the official source material supplied with the card.')
     if 'support' in lower and ('reference' in lower or 'evidence' in lower):
         requirements.append('Support the response with relevant evidence from the named text or source.')
     if 'compare' in lower:

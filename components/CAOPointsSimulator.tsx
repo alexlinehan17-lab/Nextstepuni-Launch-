@@ -7,7 +7,7 @@ import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
-  Settings, Star, RotateCcw, ChevronDown, ChevronUp, TrendingUp, Info, Compass,
+  Settings, Star, RotateCcw, ChevronDown, ChevronUp, TrendingUp, Compass,
 } from 'lucide-react';
 import {
   type StudentSubjectProfile, type Grade, type Level,
@@ -18,6 +18,7 @@ import { db } from '../firebase';
 import { reportSaveError } from '../utils/logError';
 import { useInnovationData } from '../contexts/InnovationDataContext';
 import { COLORS } from '../design/tokens';
+import HorizontalTabs from './ui/HorizontalTabs';
 import { computeBestSixBreakdown } from './pointsScenarioStore';
 import { useProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
@@ -47,6 +48,8 @@ interface CAOPointsSimulatorProps {
   profile: StudentSubjectProfile;
   uid?: string;
   onOpenSettings: () => void;
+  initialTab?: 'overview' | 'what-if';
+  overviewLocked?: boolean;
 }
 
 export interface WhatIfScenario {
@@ -126,10 +129,10 @@ const PointsCard: React.FC<{
 
 // ─── CAOPointsSimulator ──────────────────────────────────────────────────────
 
-const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, onOpenSettings }) => {
+const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, onOpenSettings, initialTab = 'overview', overviewLocked = false }) => {
   const { updateDemoProgress } = useProgress();
   const isDemo = uid === DEMO_STUDENT_UID;
-  const [activeTab, setActiveTab] = useState<'overview' | 'what-if'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'what-if'>(overviewLocked ? 'what-if' : initialTab);
   const [showGains, setShowGains] = useState(true);
   const [simSubjects, setSimSubjects] = useState<SimSubject[]>([]);
   const saveTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -240,7 +243,6 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
     return () => clearTimeout(timer);
   }, [uid, currentAnalysis.total, targetAnalysis.total, simSubjects.length, persistPatch]);
 
-  const hasMathsHL = simSubjects.some(s => s.isMaths && s.level === 'higher');
 
   const handleWhatIfGradeChange = (subjectName: string, grade: Grade) => {
     setSimSubjects(prev => {
@@ -317,7 +319,7 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
 
       {/* B. Points Summary — Mercury style: white card, confident type, no decoration */}
       <div
-        className="rounded-2xl px-6 py-5 bg-[#FAF7F4] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
+        className="rounded-2xl px-6 py-5 bg-white dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
         style={{ boxShadow: '0 1px 3px rgba(28,25,23,0.04)' }}
       >
         <div className={`grid gap-6 ${activeTab === 'what-if' ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-2'}`}>
@@ -402,28 +404,15 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
       )}
 
       {/* C. Tab Switcher */}
-      <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50 w-fit">
-        <button
-          onClick={() => setActiveTab('overview')}
-          className={`py-2 px-4 rounded-lg text-sm transition-all ${
-            activeTab === 'overview'
-              ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-medium shadow-sm'
-              : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
-          }`}
-        >
-          Overview
-        </button>
-        <button
-          onClick={() => setActiveTab('what-if')}
-          className={`py-2 px-4 rounded-lg text-sm transition-all ${
-            activeTab === 'what-if'
-              ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-medium shadow-sm'
-              : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
-          }`}
-        >
-          What-If Explorer
-        </button>
-      </div>
+      <HorizontalTabs
+        variant="pill"
+        size="md"
+        label="Points simulator view"
+        value={activeTab}
+        onChange={next => { if (next !== 'overview' || !overviewLocked) setActiveTab(next as 'overview' | 'what-if'); }}
+        options={[{ value: 'overview', label: 'Overview', locked: overviewLocked }, { value: 'what-if', label: 'What-If Explorer' }]}
+        className="w-fit"
+      />
 
       {/* D. Overview Tab */}
       <AnimatePresence mode="wait">
@@ -703,19 +692,6 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
               Quick win: upgrade {biggestGains[0].subjectName} from {biggestGains[0].fromGrade} to {biggestGains[0].toGrade} for +{biggestGains[0].netGain} points
             </p>
           )}
-        </div>
-      )}
-
-      {/* H. Maths Bonus Explainer */}
-      {hasMathsHL && (
-        <div className="flex items-start gap-3 p-3 rounded-r-lg" style={{ backgroundColor: '#FDEEDF', borderLeft: '3px solid #F26B1F' }}>
-          <Info size={16} className="flex-shrink-0 mt-0.5" style={{ color: '#F26B1F' }} />
-          <div>
-            <p className="text-xs font-medium italic" style={{ color: '#8C3A0E' }}>Maths HL Bonus</p>
-            <p className="text-xs leading-relaxed mt-1 italic" style={{ color: '#8C3A0E' }}>
-              Students taking Higher Level Mathematics receive an additional 25 CAO points for grades H1 through H6. This bonus is automatically included in all calculations above.
-            </p>
-          </div>
         </div>
       )}
     </div>

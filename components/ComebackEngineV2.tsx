@@ -5,6 +5,7 @@
  * existing progress signals, builds a seven-day plan and routes every action
  * into the app's established execution tools.
  */
+import ToolMasthead from './launchpad/ToolMasthead';
 import React, { useEffect, useMemo, useState } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import {
@@ -36,7 +37,7 @@ interface ComebackEngineProps {
   onOpenTool?: (toolId: string) => void;
 }
 
-type Stage = 'setup' | 'diagnosis' | 'plan';
+type Stage = 'capacity' | 'setup' | 'diagnosis' | 'plan';
 
 const REASONS: { id: RecoveryReason; title: string; detail: string }[] = [
   { id: 'missed-time', title: 'I missed some time', detail: 'Absence, illness or life got in the way.' },
@@ -58,7 +59,7 @@ const signalTone = {
   positive: { ink: '#1F5F3E' },
 };
 
-const shell = 'rounded-[24px] border-2 border-[#1A1A1A] bg-white dark:bg-[#202020] dark:border-[#E7E2DC] shadow-[5px_5px_0_0_#1A1A1A] dark:shadow-[5px_5px_0_0_#E7E2DC]';
+const shell = 'lp-panel';
 
 const recoveryPlanSessionKey = (uid: string) => `nextstepuni:comeback-plan:${uid}`;
 
@@ -220,22 +221,9 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
   const completionPercent = activePlan.actions.length ? Math.round(completed / activePlan.actions.length * 100) : 0;
 
   return (
-    <div className="mx-auto w-full max-w-5xl px-4 pb-14 text-[#1A1A1A] dark:text-[#F6F2EC]">
-      <div className="mb-8 grid gap-5 md:grid-cols-[1fr_auto] md:items-end">
-        <div>
-          <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.22em] text-[#A39A91]">Comeback · seven-day recovery</p>
-          <h1 className="font-serif text-4xl font-semibold tracking-[-0.025em] md:text-5xl">Comeback Engine</h1>
-          <p className="mt-3 max-w-2xl text-[15px] leading-7 text-[#6F6861] dark:text-[#C9C2BA]">
-            A smaller, evidence-led route back into study. It uses your real timetable rhythm, subject priorities and topic confidence—then sends you into the tools you already use.
-          </p>
-        </div>
-        {stage === 'plan' && (
-          <button type="button" onClick={resetPlan} className="inline-flex items-center gap-2 text-sm font-semibold text-[#6F6861] dark:text-[#D6CFC7]">
-            <RefreshCcw size={16} /> Rebuild plan
-          </button>
-        )}
-      </div>
-
+    <div className="lp-comeback mx-auto w-full max-w-5xl pb-14 text-[#1A1A1A] dark:text-[#F6F2EC]">
+      <ToolMasthead tool="comeback" eyebrow="A fresh starting point" title="The Comeback." subtitle="A smaller plan. A little momentum. Start here." />
+      {stage === 'plan' && <button type="button" onClick={resetPlan} className="mb-5 lp-button secondary"><RefreshCcw size={16} /> Rebuild plan</button>}
       <AnimatePresence mode="wait">
         {stage === 'setup' && (
           <MotionDiv key="setup" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }} className="grid gap-6 lg:grid-cols-2">
@@ -250,15 +238,20 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
                 {REASONS.map(option => {
                   const selected = reason === option.id;
                   return (
-                    <button key={option.id} type="button" onClick={() => setReason(option.id)} className={`w-full rounded-xl border-2 p-4 text-left transition-transform duration-200 ${selected ? 'border-[#1A1A1A] bg-[#FFF4EC] -translate-y-0.5' : 'border-[#DED8D1] bg-transparent hover:border-[#8D837A]'}`}>
+                    <button key={option.id} type="button" onClick={() => setReason(option.id)} className={`w-full rounded-xl border-2 p-4 text-left transition-transform duration-200 ${selected ? 'border-[#1A1A1A] bg-white -translate-y-0.5' : 'border-[#DED8D1] bg-transparent hover:border-[#8D837A]'}`}>
                       <span className="block text-sm font-bold">{option.title}</span>
                       <span className="mt-1 block text-xs leading-5 text-[#766E67] dark:text-[#BBB3AB]">{option.detail}</span>
                     </button>
                   );
                 })}
               </div>
+              <div className="lp-sticky-action mt-6"><button className="lp-button w-full" onClick={() => setStage('capacity')}>Continue <ArrowRight size={17} /></button></div>
             </section>
-
+            <aside className="lp-body hidden lg:block"><h2 className="lp-title">One step at a time.</h2><p>First, what changed. Then choose a week that feels manageable. You can review the plan before saving it.</p></aside>
+          </MotionDiv>
+        )}
+        {stage === 'capacity' && (<MotionDiv key="capacity" className="max-w-2xl mx-auto">
+          <button className="mb-4 text-sm underline" onClick={() => setStage('setup')}>Back to what changed</button>
             <section className={`${shell} p-6 md:p-8`}>
               <div className="mb-7 flex items-center gap-3">
                 <span className="font-mono text-[11px] font-bold text-[#F26B1F]">02</span>
@@ -271,7 +264,7 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
                 {CAPACITIES.map(option => {
                   const selected = capacity === option.value;
                   return (
-                    <button key={option.value} type="button" onClick={() => setCapacity(option.value)} className={`flex items-center justify-between rounded-xl border-2 px-4 py-4 text-left transition-transform duration-200 ${selected ? 'border-[#1A1A1A] bg-[#E8F2EC] -translate-y-0.5' : 'border-[#DED8D1] hover:border-[#8D837A]'}`}>
+                    <button key={option.value} type="button" onClick={() => setCapacity(option.value)} className={`flex items-center justify-between rounded-xl border-2 px-4 py-4 text-left transition-transform duration-200 ${selected ? 'border-[#1A1A1A] bg-white -translate-y-0.5' : 'border-[#DED8D1] hover:border-[#8D837A]'}`}>
                       <span><strong className="block text-sm">{option.title}</strong><span className="mt-1 block text-xs text-[#766E67] dark:text-[#BBB3AB]">{option.detail}</span></span>
                       <span className={`flex h-7 w-7 items-center justify-center rounded-full border-2 ${selected ? 'border-[#1F5F3E] bg-[#1F5F3E] text-white' : 'border-[#CFC8C0]'}`}>{selected && <Check size={15} strokeWidth={3} />}</span>
                     </button>
@@ -361,7 +354,7 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
                 </MotionDiv>
               ))}
               {completionPercent === 100 && (
-                <div className={`${shell} bg-[#E8F2EC] p-6 text-center dark:bg-[#193226]`}>
+                <div className={`${shell} bg-white p-6 text-center dark:bg-[#193226]`}>
                   <CheckCircle2 className="mx-auto text-[#1F5F3E] dark:text-[#76C499]" size={34} />
                   <h3 className="mt-3 font-serif text-2xl font-semibold">The comeback week is complete.</h3>
                   <p className="mx-auto mt-2 max-w-lg text-sm leading-6 text-[#456453] dark:text-[#B9D8C5]">You rebuilt momentum without trying to repair everything at once. Return to your normal timetable, or rebuild this plan if another small recovery week would help.</p>

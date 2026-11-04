@@ -1,0 +1,64 @@
+{
+  "method": "OpenAI built-in image generation",
+  "reference": "../avatar-directions-20260915/01-star-crew.png",
+  "originals": "Original avatars 01–04 reuse the approved sheet, displayed with CSS background positioning without changing its pixels.",
+  "commonPrompt": "Use case: stylized-concept.\nAsset type: one individual Star Crew avatar illustration for Nextstepuni, part of a coordinated 12-character collection.\nInput image 1 is a STYLE AND CHARACTER reference sheet containing the four approved originals. Generate ONE new character ONLY, not another sheet. Precisely match their visual language: blank circular white head, faceless, compact soft white full body, pleasantly uneven thick black ink outlines, simple mitten hands, rounded feet, and one chunky five-point orange star. Orange #ff771c and black on pure white. Keep the reference's friendly confident character proportions and roughly identical relative stroke weight. No facial features, no hair, no fingers, no typography, no border, no badges, no decorative sparkles, no drop shadow, no pastel blobs, no gradients, no paper texture. Older-teen editorial mascot, not babyish or glossy.\nComposition: square image with one full-body character plus star centered, the complete silhouette contained in the central 76% of the canvas in both axes, generous white margins. Clear simple silhouette readable at 48 pixels. Do not add a second person or additional tiny props.",
+  "newAvatars": [
+    {
+      "id": "05-skater",
+      "name": "The Skater",
+      "detail": "A laid-back character in a small orange backwards baseball cap, seated sideways on the single orange star with knees bent. One hand rests on the star. A very simple short white skateboard with black outline and two black wheels is tucked upright against their other arm. Compact balanced pose, skateboard is large enough to read, star remains clearly visible.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-1de73472-7356-47bb-b95b-468fb00d30f2.png",
+      "asset": "05-skater.png"
+    },
+    {
+      "id": "06-daydreamer",
+      "name": "The Daydreamer",
+      "detail": "A relaxed character reclining across the single large orange star, one rounded arm tucked behind the blank head, the other resting on their belly, ankles loosely crossed. No hat and no accessories. Let the easy stretched lounging pose carry all the personality. Keep star points clearly visible behind and under the body.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-a57dca1f-c171-47d7-87dd-2dd6a6ca2d45.png",
+      "asset": "06-daydreamer.png"
+    },
+    {
+      "id": "07-maker",
+      "name": "The Maker",
+      "detail": "A creative character wearing a simple orange artist beret, sitting on the single orange star, holding one oversized short pencil diagonally beside the body like a drawing tool. Plain white body, one hand on the star, no palette or extra objects. Keep the pencil clearly separate from the body and the star silhouette visible.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-edee031b-a730-45de-9561-22a6e83e63db.png",
+      "asset": "07-maker.png"
+    },
+    {
+      "id": "08-stargazer",
+      "name": "The Stargazer",
+      "detail": "A curious character perched on the single orange star, lifting simple chunky orange binoculars to the otherwise blank circular head with both mitten hands. Three-quarter profile with legs hanging naturally and knees bent. The binoculars must be large simple shapes, not detailed technical equipment. No sky, no other stars.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-c689dd51-222e-4e8e-8b3e-5fa84e434692.png",
+      "asset": "08-stargazer.png"
+    },
+    {
+      "id": "09-hugger",
+      "name": "The Hugger",
+      "detail": "A warm character standing with rounded feet close together, hugging the single large orange star to their chest with both mitten arms curved gently around it. Blank round head tilted subtly to one side. No hat or other accessories. Big readable star and tender simple pose, the star's lower points extend just below the hands.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-501c69b5-7d57-41a2-8e0e-6451ec37fbad.png",
+      "asset": "09-hugger.png"
+    },
+    {
+      "id": "10-trailblazer",
+      "name": "The Trailblazer",
+      "detail": "An energetic character wearing a compact orange backpack with white interior and black outline, taking a confident forward step with one rounded foot planted on the single orange star and the other behind. One mitten hand grips a backpack strap, the other swings loosely. Plain blank round head, no hat, no hiking pole or scenery.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-a5c65f74-e35e-4ca2-9431-48097afb7a26.png",
+      "asset": "10-trailblazer.png"
+    },
+    {
+      "id": "11-snoozer",
+      "name": "The Snoozer",
+      "detail": "A sleepy character in a simple orange pointed nightcap with one tiny rounded tip, curled up compactly on the single orange star, blank head resting on folded white mitten hands. One rounded knee folded toward the chest, two feet clearly separated. The relaxed silhouette conveys sleep without any face or Z text.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-3cb4c555-fd45-4d48-9d0b-e9ee17b2b5a5.png",
+      "asset": "11-snoozer.png"
+    },
+    {
+      "id": "12-wave",
+      "name": "The Musician",
+      "detail": "A cheerful welcoming character sitting squarely on the single orange star, one arm raised in an easy wave with a rounded mitten hand (no fingers), other hand resting on the star. Small orange over-ear headphones rest around their neck, not on the head. Two white rounded feet hang freely. Blank circular head and compact upright pose.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-d57453e3-06ab-4549-8e48-15be840a6a37.png",
+      "asset": "12-wave.png"
+    }
+  ]
+}

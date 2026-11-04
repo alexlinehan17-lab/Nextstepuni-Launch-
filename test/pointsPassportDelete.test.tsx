@@ -72,3 +72,22 @@ describe('Points Passport mock deletion', () => {
     expect(mocks.showToast).toHaveBeenCalledWith('February Mocks removed', 'success');
   });
 });
+
+
+describe('Points Passport grade controls', () => {
+  test('updates the selected grade while preserving the rest of the profile', () => {
+    const onProfileChange = vi.fn();
+    const {rerender} = render(<PointsPassport uid={DEMO_STUDENT_UID} profile={profile} onProfileChange={onProfileChange} />);
+    fireEvent.change(screen.getByRole('combobox', {name:'Mathematics current grade'}), {target:{value:'H2'}});
+    expect(onProfileChange).toHaveBeenCalledWith({...profile, subjects:[{...profile.subjects[0], currentGrade:'H2'}]});
+    const next = onProfileChange.mock.calls[0][0];
+    rerender(<PointsPassport uid={DEMO_STUDENT_UID} profile={next} onProfileChange={onProfileChange} />);
+    expect(screen.getByRole('combobox', {name:'Mathematics current grade'})).toHaveValue('H2');
+    expect(screen.getByRole('combobox', {name:'Mathematics target grade'})).toHaveValue('H2');
+  });
+  test('keeps the mock tracker reachable through More', async () => {
+    render(<PointsPassport uid={DEMO_STUDENT_UID} profile={profile} />);
+    fireEvent.change(screen.getByRole('combobox', {name:'More Points Passport sections'}), {target:{value:'mocks'}});
+    expect(await screen.findByRole('button', {name:'Remove February Mocks'})).toBeInTheDocument();
+  });
+});

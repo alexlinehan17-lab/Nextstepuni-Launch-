@@ -1,0 +1,13 @@
+
+> nextstepuni-app@0.0.0 test
+> vitest run test/markBankCoverage.test.ts --maxWorkers=1
+
+
+ RUN  v4.1.11 /Users/alexlinehan/Documents/Nextstepuni-Subject-Checkpoint-20261008
+
+
+ Test Files  1 passed (1)
+      Tests  163 passed (163)
+   Start at  09:32:35
+   Duration  1.50s (transform 579ms, setup 56ms, import 789ms, tests 184ms, environment 387ms)
+

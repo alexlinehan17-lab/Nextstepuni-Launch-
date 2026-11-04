@@ -1,0 +1,11 @@
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import SessionScreen from '../../../../../../components/MarkBank/SessionScreen';
+import { CARDS as HIGHER } from '../../../../../../components/MarkBank/cards/business/higher';
+import { CARDS as ORDINARY } from '../../../../../../components/MarkBank/cards/business/ordinary';
+import '../../../../../../index.css';
+const params = new URLSearchParams(location.search);
+if (params.get('theme') === 'dark') document.documentElement.classList.add('dark');
+const id = params.get('card') || 'bus-2025-hl-s2-abq-a';
+const card = [...HIGHER, ...ORDINARY].find(card => card.id === id)!;
+createRoot(document.getElementById('root')!).render(<div className="mark-bank-theme"><SessionScreen cards={[card]} subjectLabel="Business" onGrade={() => {}} onFinish={() => {}} onExit={() => {}} /></div>);

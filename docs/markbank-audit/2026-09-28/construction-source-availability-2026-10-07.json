@@ -1,0 +1,1153 @@
+{
+  "subjectId": "construction-studies",
+  "years": [
+    2015,
+    2026
+  ],
+  "note": "Local filename inventory only; not proof of exhaustive editions or task completeness. Deferred,project and practical coverage must be reconciled separately.",
+  "sources": [
+    {
+      "kind": "paper",
+      "year": 2015,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+      "sha256": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2015,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2015/LC029ALP000IV.pdf",
+      "sha256": "fda6d5dc6d0baedc5d67a8e6bbc19e9cb7fab7ad684ccd904efe18c67001b2a6",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2015,
+      "fileid": "LC029CLP018EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2015/LC029CLP018EV.pdf",
+      "sha256": "84e380bae922fea012365cfc6f7a0fa91ee829ff3c4a44c0279a7c607694b93d",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2015,
+      "fileid": "LC029CLP018IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2015/LC029CLP018IV.pdf",
+      "sha256": "84e380bae922fea012365cfc6f7a0fa91ee829ff3c4a44c0279a7c607694b93d",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2015,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf",
+      "sha256": "6a5e6c2c39fcfc5d7d3d4eebae139ed927eaaaa16fb429d0eab333c3f0d7e99f",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2015,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2015/LC029GLP000IV.pdf",
+      "sha256": "64d7062f345f651056522a3e344261d1470bae2792309904544570e32841c650",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2016,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2016/LC029ALP000EV.pdf",
+      "sha256": "a5bd5ecc2755e771f98bb2e6b13e3a95af33521592d128d05e676be556be5de9",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2016,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2016/LC029ALP000IV.pdf",
+      "sha256": "445219ef7c03877e06fa7db7105d32d1a4a794a2db60d0f035130ed4a3e1e7e6",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2016,
+      "fileid": "LC029CLP018EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2016/LC029CLP018EV.pdf",
+      "sha256": "8c1274487b26ee25d8f6719325699837faada9d2465549423ec80c026dc5c3dd",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2016,
+      "fileid": "LC029CLP018IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2016/LC029CLP018IV.pdf",
+      "sha256": "8c1274487b26ee25d8f6719325699837faada9d2465549423ec80c026dc5c3dd",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2016,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2016/LC029GLP000EV.pdf",
+      "sha256": "1dae550c6c6e5a3dbb497bb66e319afd086086453929cfe829ba581c79f6b312",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2016,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2016/LC029GLP000IV.pdf",
+      "sha256": "0a4802156edf1d00473789d56c21c2ef458f571e3d1e9ffc5a330bea458c65ad",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2017,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2017/LC029ALP000EV.pdf",
+      "sha256": "3751ae5b7139751f60b07b1c367487cabe10aa77c7953d60b762787498cf8804",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2017,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2017/LC029ALP000IV.pdf",
+      "sha256": "fe8ab44b259074483f6c7017cdc02b85720445907d4380d662ce7f73d326e8f1",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2017,
+      "fileid": "LC029CLP018EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2017/LC029CLP018EV.pdf",
+      "sha256": "52df528be1473d8e907f7c967381e04430c21fd3a542d106ff6ca984fa862bd1",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2017,
+      "fileid": "LC029CLP018IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2017/LC029CLP018IV.pdf",
+      "sha256": "52df528be1473d8e907f7c967381e04430c21fd3a542d106ff6ca984fa862bd1",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2017,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2017/LC029GLP000EV.pdf",
+      "sha256": "d3b27427c7d7cb63b783c6d94cefde26f5f5f692b8ff26a5d9d5b677b766a0e0",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2017,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2017/LC029GLP000IV.pdf",
+      "sha256": "af832e2ae1bade13e87e85cf8757b14876ae563b10c204e9c03134286eb4758e",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2018,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2018/LC029ALP000EV.pdf",
+      "sha256": "c719ee9d731d6897511c1f159d266a6a1323190112f29d9c12083b8c63685725",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2018,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2018/LC029ALP000IV.pdf",
+      "sha256": "4d058488537d9f31a934856fcb7c7d0ab94069259509cbb5b6d85db93ceb8204",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2018,
+      "fileid": "LC029CLP034EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2018/LC029CLP034EV.pdf",
+      "sha256": "43290ed2fc7ad05cf8e49c1c9383ab1d14189c86616ac81ff0f4e0e555f5d6c0",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2018,
+      "fileid": "LC029CLP034IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2018/LC029CLP034IV.pdf",
+      "sha256": "43290ed2fc7ad05cf8e49c1c9383ab1d14189c86616ac81ff0f4e0e555f5d6c0",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2018,
+      "fileid": "LC029CLP035EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2018/LC029CLP035EV.pdf",
+      "sha256": "aabe866c3d536ba15108ebfd410bc9ad2080ab4926da0e8ef3bba1be6484512d",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2018,
+      "fileid": "LC029CLP035IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2018/LC029CLP035IV.pdf",
+      "sha256": "aabe866c3d536ba15108ebfd410bc9ad2080ab4926da0e8ef3bba1be6484512d",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2018,
+      "fileid": "LC029CLP036EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2018/LC029CLP036EV.pdf",
+      "sha256": "cbf54720e024b47b4dac885c181a44c531436fc11898a1ca6a53ef7eaa64d482",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2018,
+      "fileid": "LC029CLP036IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2018/LC029CLP036IV.pdf",
+      "sha256": "cbf54720e024b47b4dac885c181a44c531436fc11898a1ca6a53ef7eaa64d482",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2018,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2018/LC029GLP000EV.pdf",
+      "sha256": "ed26d3fbdb863826bd485e22ece6b7aeabc53e70ff7dce447d623b75c98352c3",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2018,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2018/LC029GLP000IV.pdf",
+      "sha256": "1eed87156ebc7ca18b8f649f22fe872d8374a2c32ab888b33ef6fdd69d6bb5da",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2019,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2019/LC029ALP000EV.pdf",
+      "sha256": "45bad0b8a8a9d02b29f856805aa37e3385709cbfe458661f79a3104fbe769ea0",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2019,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2019/LC029ALP000IV.pdf",
+      "sha256": "3d908091c5f5b61681ef7438f0a22812930845a7a778469c3c27b9c331f78162",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2019,
+      "fileid": "LC029CLP034EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2019/LC029CLP034EV.pdf",
+      "sha256": "e9ad7fa43046fc8b55ed35580662ae444ee2676a983a0920ed4b7a8dda652fe3",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2019,
+      "fileid": "LC029CLP034IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2019/LC029CLP034IV.pdf",
+      "sha256": "e9ad7fa43046fc8b55ed35580662ae444ee2676a983a0920ed4b7a8dda652fe3",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2019,
+      "fileid": "LC029CLP035EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2019/LC029CLP035EV.pdf",
+      "sha256": "e7d5f998cef49d4b4f4f2e5673a540e4800e338e631335ff075448839069b09f",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2019,
+      "fileid": "LC029CLP035IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2019/LC029CLP035IV.pdf",
+      "sha256": "e7d5f998cef49d4b4f4f2e5673a540e4800e338e631335ff075448839069b09f",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2019,
+      "fileid": "LC029CLP036EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2019/LC029CLP036EV.pdf",
+      "sha256": "92f38f7a8f55c7bee7ea380b9c995ee96b2670845f2ba92d09625dec0303353e",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2019,
+      "fileid": "LC029CLP036IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2019/LC029CLP036IV.pdf",
+      "sha256": "92f38f7a8f55c7bee7ea380b9c995ee96b2670845f2ba92d09625dec0303353e",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2019,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2019/LC029GLP000EV.pdf",
+      "sha256": "2b3c07cfadcfded21bfd0a773f877a9d648f7c05cf990be01c0f44e981ec78d2",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2019,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2019/LC029GLP000IV.pdf",
+      "sha256": "8b666c637999f57e35adf1bad97c50d84b4cc0051f3c5205e02f3a305cdb3242",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2020,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2020/LC029ALP000EV.pdf",
+      "sha256": "22c84780da2ac7b0b034506068b6b35804d9b522dfffc51a340b0c80b5c006c5",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2020,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2020/LC029ALP000IV.pdf",
+      "sha256": "e9111bda0da23b3a1e71bbfffc0647fbcc428d3b20d645687cf8cf172e823811",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2020,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2020/LC029GLP000EV.pdf",
+      "sha256": "a35744b1da7e9a1108d6d061ebb37756af8904d0bb132e54612d729c05ec4202",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2020,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2020/LC029GLP000IV.pdf",
+      "sha256": "b7f1490d12946fde0c913f6b6357fc4a2483bb97939c1b824196ebeb476b6988",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2021,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2021/LC029ALP000EV.pdf",
+      "sha256": "4c6644e20702d03fbfedaffe0e97f0e48edc2868ca8c937300cb204de4ce273e",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2021,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2021/LC029ALP000IV.pdf",
+      "sha256": "ff04c8cc25b9e45e3187440db3a217ebfaa5b3a66a4d2dbccfbe9b4c9072834f",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2021,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2021/LC029GLP000EV.pdf",
+      "sha256": "58d741d2e4ac4bbbe000a5d8e056d8908291a8488fd9191010eb170fa96672b0",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2021,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2021/LC029GLP000IV.pdf",
+      "sha256": "cf7244f905bcb4efd2aedd5009b4325c30f0c735a5606f228170bb643ffe685b",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2022,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2022/LC029ALP000EV.pdf",
+      "sha256": "2e74b08fa90a1063dda36fc6d33cf08d67f2d83f63cc663bffb0cb598dde6bb9",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2022,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2022/LC029ALP000IV.pdf",
+      "sha256": "5378b98fe4b40cfbd478c8467daa7d8228a770c2c682fde2941fb651c2d1d8b3",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2022,
+      "fileid": "LC029CLP034EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2022/LC029CLP034EV.pdf",
+      "sha256": "266a0b350ad21e645c9b39b0e50a1690ff35eebbe92b07fc2a848858862adc05",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2022,
+      "fileid": "LC029CLP035EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2022/LC029CLP035EV.pdf",
+      "sha256": "49feffce6ada6e91134f904bf3eff2fed800e28e2f34248742c162a14229d2d6",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2022,
+      "fileid": "LC029CLP036EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2022/LC029CLP036EV.pdf",
+      "sha256": "55a825639f541d1c3b1e42f2e1ed432ba1bee109ab326d7d042b3380e9abda8d",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2022,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2022/LC029GLP000EV.pdf",
+      "sha256": "69e29520c0fbe774c560c2cd91363cc5cf125b168ec3266f5ea31021f4617b0d",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2022,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2022/LC029GLP000IV.pdf",
+      "sha256": "55aa0ce05241d7207e902e51db797395dc56a5aadc1e80c7ddc0b3b229b3cdf7",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2023,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2023/LC029ALP000EV.pdf",
+      "sha256": "194c14229122c30285677e2133d08f4855a6798893add82f3bc50e94b5ca38f5",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2023,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2023/LC029ALP000IV.pdf",
+      "sha256": "d7b21707a46d8ffbb67b79d87f2ae509a7abcc8492aa30c006a0e6c0d83b2bfe",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2023,
+      "fileid": "LC029CLP034EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2023/LC029CLP034EV.pdf",
+      "sha256": "c5034369c113f1ff36e06cc9c25a35febfdb228d9dafaca9dc67cad38eb6ef97",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2023,
+      "fileid": "LC029CLP035EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2023/LC029CLP035EV.pdf",
+      "sha256": "00a9a7dca71e2bcc142b578f2e8c8a5967b2b9fbf7db473b4c1d9a57faacdbce",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2023,
+      "fileid": "LC029CLP036EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2023/LC029CLP036EV.pdf",
+      "sha256": "9d2f63d16636ed0d90fe6b1eec8f3aceccfccc11f9dec3c846b3f0ae9296478c",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2023,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2023/LC029GLP000EV.pdf",
+      "sha256": "e0a846a2ce2454b807ef95754ed579c79a7a6cb468a158e68ad50991441e8db9",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2023,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2023/LC029GLP000IV.pdf",
+      "sha256": "9ce0e650ebc1ebc494d2c412789764d208b1dc86c5a8cb51c77119d5ce6cef34",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2024,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2024/LC029ALP000EV.pdf",
+      "sha256": "a236712dcac010ce50b394d73de5ebe0683267809ab53bca86e8678987966aeb",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2024,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2024/LC029ALP000IV.pdf",
+      "sha256": "39e88455f45fffe0513b2502cc677c85faaa630121c5c3ddc6051188cd1f7ec1",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2024,
+      "fileid": "LC029CLP034EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2024/LC029CLP034EV.pdf",
+      "sha256": "4eac062cae08165dd048a4cb36c105e6e0155194b5e366d6c7bbdc429d03f4e4",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2024,
+      "fileid": "LC029CLP035EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2024/LC029CLP035EV.pdf",
+      "sha256": "4bf017cc2116b24bb5ff81b20b98166a53ac854e53b110291bbd352d7d062f50",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2024,
+      "fileid": "LC029CLP036EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2024/LC029CLP036EV.pdf",
+      "sha256": "7aa6f871865597a71b557797b376a54621317c1cbc56a514ed35946c1ac58fa9",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2024,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2024/LC029GLP000EV.pdf",
+      "sha256": "b9be60e59ed4af7f1674036721850d9dba68e1c2bc8e5cf26fc5a09b4511ba2a",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2024,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2024/LC029GLP000IV.pdf",
+      "sha256": "7236aa3571f0bfaa09b6d39fea65a547e0019ae056db80a9248c67a4de482f1d",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2025,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2025/LC029ALP000EV.pdf",
+      "sha256": "b0779f335d38e88afcae39af2e5aa9124a53e3472aa3a9f535c7d9989ebb8dec",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2025,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2025/LC029ALP000IV.pdf",
+      "sha256": "ddc2909ea762388f17a74ba3d812820d4593c4bbf9dfef10511bd2fc1ac9240a",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2025,
+      "fileid": "LC029CLP034EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2025/LC029CLP034EV.pdf",
+      "sha256": "f55132b8dc82a3db9026a150df1b2475f5da7aacc308423766e1887520f03857",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2025,
+      "fileid": "LC029CLP035EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2025/LC029CLP035EV.pdf",
+      "sha256": "d3314dd6787ece34bc44cd3e02ae45c38f230f70356691a85ad5afc8ab88967f",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2025,
+      "fileid": "LC029CLP036EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2025/LC029CLP036EV.pdf",
+      "sha256": "fccd0d439f8e224f8a632ca7ed97445cc9a880135ac2fdc624136c3694769ff5",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2025,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2025/LC029GLP000EV.pdf",
+      "sha256": "6aca987b0c66e490252998240bde8e2ca6f30f992a425db364bb2ec643b2fa4d",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2025,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2025/LC029GLP000IV.pdf",
+      "sha256": "659e1c0890fb84d1a421d7277947a0a5dc67824454be4959fd74b40b1495dfba",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2026,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2026/LC029ALP000EV.pdf",
+      "sha256": "c470bc9009af7f39b2f4bd6c5e1182dd9ccf3190daa15ea8e3c4b75c3cebe0a4",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2026,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2026/LC029ALP000IV.pdf",
+      "sha256": "170eda61042c406e033d5347f5b527f2e06d4ce33aea7d97c7702b8094ccf19c",
+      "pages": 8,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2026,
+      "fileid": "LC029CLP034EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2026/LC029CLP034EV.pdf",
+      "sha256": "fab1603691abc48862438cb1cd3a49084a63db21ebc468ad986ffe7effe81ce6",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2026,
+      "fileid": "LC029CLP035EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2026/LC029CLP035EV.pdf",
+      "sha256": "5fb8a788ccfb43ed58a84d6b90a80c7017544892db4e7533aeb7ddda48cddd22",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2026,
+      "fileid": "LC029CLP036EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2026/LC029CLP036EV.pdf",
+      "sha256": "718fdc176fd51bb55a3d8987fff2034502e85ad233e6e3969a52c340927a4882",
+      "pages": 3,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2026,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2026/LC029GLP000EV.pdf",
+      "sha256": "3c68a9431babde5a5ba814a72fdd790ffbe44fbc3e00444dc37867e20a3003c6",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "paper",
+      "year": 2026,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2026/LC029GLP000IV.pdf",
+      "sha256": "4bbdd0409746522ca96709278e798b584bd4e660d721b7a8d1747f2150e49ed9",
+      "pages": 4,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2015,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "sha256": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef",
+      "pages": 48,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2015,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2015/LC029ALP000IV.pdf",
+      "sha256": "c7b10d4c9e70193ffedac6022af2d10c9ef7ca5be455a879cc8f3872462aad31",
+      "pages": 52,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2015,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "sha256": "ca21a4dccfd47aea12de99758ce82058a9b33138a0ab9742dba1197b47364e07",
+      "pages": 32,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2015,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2015/LC029GLP000IV.pdf",
+      "sha256": "3f50fd938ac35ccdb74c147c8e2e89d1787d05f62d71c599bcb4d0ee624cb90d",
+      "pages": 32,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2016,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2016/LC029ALP000EV.pdf",
+      "sha256": "c6e563e2a60a0c2c660cc215179795443b2c8ae93a15f5ad410bfd2f7e448f81",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2016,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2016/LC029ALP000IV.pdf",
+      "sha256": "1d4ff4807155cfc4c31c0dbc18f0b8aeff38f3ad5db57765531aafe6450eba82",
+      "pages": 48,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2016,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2016/LC029GLP000EV.pdf",
+      "sha256": "167fd55b676b7b104721282db92dff78cedb79654ada944e5ea16a41dfc6f135",
+      "pages": 32,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2016,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2016/LC029GLP000IV.pdf",
+      "sha256": "a894831c96a825e64aa0516fabcd226e0a9ccf8d56ba7e45c3b050d3dbdd03d8",
+      "pages": 32,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2017,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2017/LC029ALP000EV.pdf",
+      "sha256": "822396a75a761c0401757fdb5b6a7334fd49f049525c844b7b9437d8df9e299c",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2017,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2017/LC029ALP000IV.pdf",
+      "sha256": "efed1b1559f2159d7aecd63158c1ccff7f643b6ebacceb55113c82abba136b66",
+      "pages": 46,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2017,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2017/LC029GLP000EV.pdf",
+      "sha256": "0bd3312f2540c026eccd6a33c2b4a18eaaa690e9a5f305ed4762f2674ba8dda9",
+      "pages": 32,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2017,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2017/LC029GLP000IV.pdf",
+      "sha256": "71ff5909dc45792ffc3d09ef4a3c1ac6a70cb5b8aace183eb1e0fc2c88790193",
+      "pages": 32,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2018,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2018/LC029ALP000EV.pdf",
+      "sha256": "e511515f52851ffc803fd68b5f7e7b87709fc0523acf0149c684282bbd9f72a1",
+      "pages": 60,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2018,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2018/LC029ALP000IV.pdf",
+      "sha256": "d4bb0e77fcfd2e54fee3e1601d4e2a6ff7910790305e37e0344228a752305f2c",
+      "pages": 56,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2018,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2018/LC029GLP000EV.pdf",
+      "sha256": "7344fc028e7e7588c55886d87002958a42fe5b79a47980256560228d44000f9c",
+      "pages": 48,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2018,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2018/LC029GLP000IV.pdf",
+      "sha256": "c8e54f85a571131aa7466a2aa2908a9b76d63c912e180b8c8cb5d7853dc0f21d",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2019,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2019/LC029ALP000EV.pdf",
+      "sha256": "8b5abe8e2e0ba5d4d19c280bbdce76fde932a941cd07205edd9bb0a8c71c3edc",
+      "pages": 64,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2019,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2019/LC029ALP000IV.pdf",
+      "sha256": "62c9c05fb5aa69f9f2f1555e1b85d9414e8ee6a5117c11abfa08683f3cd3e7fe",
+      "pages": 64,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2019,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2019/LC029GLP000EV.pdf",
+      "sha256": "7545b54efb409c3f339f58869873772e0dad225735af6d1733d213571529455d",
+      "pages": 48,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2019,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2019/LC029GLP000IV.pdf",
+      "sha256": "42bc015467bddab07d0fc87f9efe1d32568775dbcaef8be79a74120e436881f8",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2020,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2020/LC029ALP000EV.pdf",
+      "sha256": "74eaba480cdb9437c28084ac9707fc46bda4ba0fa321d275ce98fe9f8523ac8d",
+      "pages": 43,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2020,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2020/LC029GLP000EV.pdf",
+      "sha256": "774f5fc6fc917e7f1e6c0e24ba6c896faf5b0327d224b1fe2cad7af9bb6c23fa",
+      "pages": 27,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2021,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2021/LC029ALP000EV.pdf",
+      "sha256": "6753b7de9d8ecb13faaf35f0c954d5b69bb31c1671aae77db7300594419840ca",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2021,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2021/LC029ALP000IV.pdf",
+      "sha256": "a82d52f9cbbe5db79e5e8054ea4719e71ad806c4a2c673a54450e87aebb2e80f",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2021,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2021/LC029GLP000EV.pdf",
+      "sha256": "88bb726b606474103cf4c1d04ef58cb78c1d4508f68a5bd766681cf40bc4c258",
+      "pages": 28,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2021,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2021/LC029GLP000IV.pdf",
+      "sha256": "3a8c827694f1b5d633734c464b970d8f19e0030834227ba89ba310a8f7924a98",
+      "pages": 28,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2022,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2022/LC029ALP000EV.pdf",
+      "sha256": "cc608ae4393ae400dcf2d2ce36bca603e0e542e2a5c937bb22fc0bea65cc0e82",
+      "pages": 56,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2022,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2022/LC029ALP000IV.pdf",
+      "sha256": "5d430103a60e93b681467566c7fe8ee71be3b6ffc5e4c043376716aa4ce8ca5b",
+      "pages": 56,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2022,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2022/LC029GLP000EV.pdf",
+      "sha256": "196311e890e14bc99d31a4de3318fd97ec5a2850908c00379a6d2ec108282e3b",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2022,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2022/LC029GLP000IV.pdf",
+      "sha256": "d0527db59a492e133dcd81e72758fc38c471f13feb01656dde6b5db691a4ab51",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2023,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2023/LC029ALP000EV.pdf",
+      "sha256": "fd7a1e74988a4af90cbb10c455f2cbe2c9ec8c724f9d690093e1b822db4fc0b4",
+      "pages": 60,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2023,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2023/LC029ALP000IV.pdf",
+      "sha256": "246c2eba4c7cc1e7ec75208c40dfc52b49f28f6215717178cb4bbf4732e9cf0b",
+      "pages": 64,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2023,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2023/LC029GLP000EV.pdf",
+      "sha256": "1018b8c0eada563d4713dab8ec9b219d47a1cec60e2b84b56e536f9222195025",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2023,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2023/LC029GLP000IV.pdf",
+      "sha256": "5690c0170992483d43151e7160444f489581f3e86f232de7fec164614be71e7c",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2024,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2024/LC029ALP000EV.pdf",
+      "sha256": "e3359c9c16e5e5e3fa55e04f64df714d982d4872cda62bcefd667250b0a89887",
+      "pages": 64,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2024,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2024/LC029ALP000IV.pdf",
+      "sha256": "73100178b0286456a1333208550ad411eb0773f6358068ffeaac06dcc148bd84",
+      "pages": 64,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2024,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2024/LC029GLP000EV.pdf",
+      "sha256": "98af6f3b1e0b30be09b447f1bd61f1f3f6ce4a69dc89ac9dd56a505703d6a8f7",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2024,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2024/LC029GLP000IV.pdf",
+      "sha256": "42f12f551f3662dd41e337d66f52f69bef1ec8e2052c782ba631ded1c11f849e",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2025,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2025/LC029ALP000EV.pdf",
+      "sha256": "c9ca8dee72bc663d239244d9cde736b284de65540f48bb7aa9763d0baed1189b",
+      "pages": 64,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2025,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2025/LC029ALP000IV.pdf",
+      "sha256": "259fce3374359142500ce709d7437a84bba7a011bfebc5e9d3daaa466a8d7a52",
+      "pages": 64,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2025,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2025/LC029GLP000EV.pdf",
+      "sha256": "ea1b7818d3caac4ff8e7b712e4abe3899245c7051ba66520d6ff81c9ca5612d9",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2025,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2025/LC029GLP000IV.pdf",
+      "sha256": "f608bf51b3fc69590162ddef1b51a388cc908282f7cff18c829a90afcd8be859",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2026,
+      "fileid": "LC029ALP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2026/LC029ALP000EV.pdf",
+      "sha256": "e78fab89d53f74c61721efaee0e3371312bc52080ecfa45e5008e98c6905cd0d",
+      "pages": 68,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2026,
+      "fileid": "LC029ALP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2026/LC029ALP000IV.pdf",
+      "sha256": "726f2ed248ce706b156c7d0a105172731391c11dffc5a966a838a36a6464776a",
+      "pages": 68,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2026,
+      "fileid": "LC029GLP000EV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2026/LC029GLP000EV.pdf",
+      "sha256": "4d5b0f5d024e248e2d1398ceb6641d3800f1c880bf01a1327977d648637a0011",
+      "pages": 40,
+      "reviewStatus": "not yet reviewed"
+    },
+    {
+      "kind": "scheme",
+      "year": 2026,
+      "fileid": "LC029GLP000IV.pdf",
+      "path": "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2026/LC029GLP000IV.pdf",
+      "sha256": "a7dbcce8171ae18bfad4354cb2f5cc61932375fce30a9a370fd9970d0cfc4ef5",
+      "pages": 44,
+      "reviewStatus": "not yet reviewed"
+    }
+  ]
+}

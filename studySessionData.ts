@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import type { StudyConfidenceLabel } from './types';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -16,23 +15,7 @@ export interface StrategyPrompt {
   prompt: string;
 }
 
-export interface StudySessionRecord {
-  id: string;
-  date: string; // YYYY-MM-DD
-  subject: string;
-  sessionType: 'new-learning' | 'practice' | 'revision';
-  plannedMinutes: number;
-  actualSeconds: number;
-  startedAt: number; // timestamp
-  completedAt: number; // timestamp
-  pointsEarned: number;
-  hadReflection: boolean;
-  strategiesShown?: string[]; // moduleIds of strategies used (auto-tracked + self-reported)
-  /** Structured debrief data used by the student dashboard. */
-  confidenceAfter?: number;
-  confidenceLabel?: StudyConfidenceLabel;
-  reflectionMode?: 'quick' | 'full';
-}
+export type { StudySessionRecord } from './utils/strategyRegistry';
 
 export interface StrategyDefinition {
   moduleId: string;
@@ -64,7 +47,18 @@ export const DURATION_PRESETS = [
 
 export const STUDY_SESSION_POINTS = {
   PER_10_MINUTES: 10,
+  /** Once per session, for finishing the extra time the student chose to add
+   *  ("Keep going"). The same size as a quick debrief; the added minutes also
+   *  earn the normal per-10-minute rate. Ending the added time early keeps the
+   *  minutes but forfeits this bonus. */
+  EXTENSION_COMPLETED: 10,
 } as const;
+
+/** "Keep going" choices offered when a countdown ends. */
+export const SESSION_EXTENSION_MINUTES = [5, 10, 15] as const;
+
+/** An open-ended (stopwatch) session completes itself after this long. */
+export const OPEN_ENDED_CAP_MINUTES = 240;
 
 // ── Subject Colors ──
 

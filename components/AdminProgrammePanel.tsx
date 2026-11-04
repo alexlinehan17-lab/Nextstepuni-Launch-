@@ -84,13 +84,13 @@ const EvidenceCard: React.FC<{
   icon: React.ReactNode;
   positive?: boolean;
 }> = ({ label, value, detail, icon, positive = false }) => (
-  <article className="rounded-xl border-2 border-[#1A1A1A] bg-white p-5">
+  <article className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5">
     <div className="flex items-start justify-between gap-3">
-      <p className="text-xs font-bold uppercase tracking-[0.13em] text-[#7A7068]">{label}</p>
-      <span className={positive ? 'text-[#3A8D5F]' : 'text-[#F26B1F]'}>{icon}</span>
+      <p className="text-xs font-bold uppercase tracking-[0.13em] text-[var(--admin-muted)]">{label}</p>
+      <span className={positive ? 'text-[var(--admin-success)]' : 'text-[var(--admin-accent)]'}>{icon}</span>
     </div>
-    <strong className="mt-3 block font-serif text-3xl font-bold tabular-nums text-[#1A1A1A]">{value}</strong>
-    <p className="mt-1 text-xs leading-relaxed text-[#7A7068]">{detail}</p>
+    <strong className="mt-3 block font-sans text-3xl font-bold tabular-nums text-[var(--admin-ink)]">{value}</strong>
+    <p className="mt-1 text-xs leading-relaxed text-[var(--admin-muted)]">{detail}</p>
   </article>
 );
 
@@ -142,16 +142,16 @@ const AdminProgrammePanel: React.FC<Props> = ({ schoolFilter, yearFilter, allCou
 
   if (isLoading && !summary) {
     return <div className="grid grid-cols-2 gap-3 lg:grid-cols-4" aria-label="Loading programme evidence">
-      {[0, 1, 2, 3].map(item => <div key={item} className="h-36 animate-pulse rounded-xl border-2 border-[#1A1A1A] bg-white" />)}
+      {[0, 1, 2, 3].map(item => <div key={item} className="h-36 animate-pulse rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)]" />)}
     </div>;
   }
 
   if (error && !summary) {
     return (
-      <div role="alert" className="rounded-r-[10px] border-l-[3px] border-[#F26B1F] bg-[#FDEEDF] px-5 py-4 text-sm italic text-[#8C3A0E]">
+      <div role="alert" className="rounded-lg border border-[var(--admin-accent)] bg-[var(--admin-warning-bg)] px-5 py-4 text-sm text-[var(--admin-accent)]">
         <p className="font-bold not-italic">Programme evidence is unavailable</p>
         <p className="mt-1">{error}</p>
-        <button type="button" onClick={() => setReloadToken(value => value + 1)} className="mt-3 rounded-full border-2 border-[#1A1A1A] bg-white px-4 py-2 text-xs font-bold not-italic text-[#1A1A1A]">Try again</button>
+        <button type="button" onClick={() => setReloadToken(value => value + 1)} className="mt-3 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-xs font-bold not-italic text-[var(--admin-ink)]">Try again</button>
       </div>
     );
   }
@@ -160,10 +160,10 @@ const AdminProgrammePanel: React.FC<Props> = ({ schoolFilter, yearFilter, allCou
 
   if (summary.enabled === false) {
     return (
-      <section className="rounded-xl border-2 border-[#1A1A1A] bg-white p-6 sm:p-8">
-        <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#F26B1F]">Governed rollout</p>
-        <h2 className="mt-2 font-serif text-2xl font-semibold text-[#1A1A1A]">Programme measurement is staged, not collecting</h2>
-        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[#7A7068]">
+      <section className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-6 sm:p-8">
+        <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--admin-accent)]">Governed rollout</p>
+        <h2 className="mt-2 font-sans text-2xl font-semibold text-[var(--admin-ink)]">Programme measurement is staged, not collecting</h2>
+        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[var(--admin-muted)]">
           The event contract, privacy controls and reporting surface are ready for review. Collection remains disabled until controller approval, the updated student-notice decision, and the Year-2 aggregate pipeline are complete.
         </p>
       </section>
@@ -172,10 +172,10 @@ const AdminProgrammePanel: React.FC<Props> = ({ schoolFilter, yearFilter, allCou
 
   if (summary.suppressed) {
     return (
-      <section className="rounded-xl border-2 border-[#1A1A1A] bg-white p-6">
-        <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#9E9186]">Privacy threshold</p>
-        <h2 className="mt-2 font-serif text-2xl font-semibold text-[#1A1A1A]">This cohort is too small to report separately</h2>
-        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[#7A7068]">
+      <section className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-6">
+        <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--admin-muted)]">Privacy threshold</p>
+        <h2 className="mt-2 font-sans text-2xl font-semibold text-[var(--admin-ink)]">This cohort is too small to report separately</h2>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--admin-muted)]">
           This selection, or one of the subgroups that could be inferred from it, is below the {summary.suppressionMinimum}-student privacy threshold. Choose a broader view or wait for the cohort to grow.
         </p>
       </section>
@@ -203,13 +203,13 @@ const AdminProgrammePanel: React.FC<Props> = ({ schoolFilter, yearFilter, allCou
               type="button"
               onClick={() => setRangeDays(option.days)}
               aria-pressed={rangeDays === option.days}
-              className={`rounded-full border-2 px-4 py-2 text-xs font-bold ${rangeDays === option.days ? 'border-[#F26B1F] bg-[#F26B1F] text-white' : 'border-[#1A1A1A] bg-white text-[#1A1A1A]'}`}
+              className={`rounded-full border px-4 py-2 text-xs font-bold ${rangeDays === option.days ? 'border-[var(--admin-accent)] bg-[var(--admin-accent)] text-[var(--admin-action-ink)]' : 'border-[var(--admin-rule)] bg-[var(--admin-surface)] text-[var(--admin-ink)]'}`}
             >
               {option.label}
             </button>
           ))}
         </div>
-        <button type="button" onClick={() => setReloadToken(value => value + 1)} disabled={isLoading} className="inline-flex items-center gap-2 rounded-full border-2 border-[#1A1A1A] bg-white px-4 py-2 text-xs font-bold text-[#1A1A1A] disabled:opacity-50">
+        <button type="button" onClick={() => setReloadToken(value => value + 1)} disabled={isLoading} className="inline-flex items-center gap-2 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-xs font-bold text-[var(--admin-ink)] disabled:opacity-50">
           <RefreshCw size={14} className={isLoading ? 'animate-spin' : undefined} /> Refresh evidence
         </button>
       </div>
@@ -240,82 +240,82 @@ const AdminProgrammePanel: React.FC<Props> = ({ schoolFilter, yearFilter, allCou
       </div>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-        <section className="rounded-xl border-2 border-[#1A1A1A] bg-white p-5 sm:p-6" aria-labelledby="weekly-participation-title">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#9E9186]">Participation</p>
-          <h2 id="weekly-participation-title" className="mt-1 font-serif text-2xl font-semibold text-[#1A1A1A]">Active students by week</h2>
+        <section className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5 sm:p-6" aria-labelledby="weekly-participation-title">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--admin-muted)]">Participation</p>
+          <h2 id="weekly-participation-title" className="mt-1 font-sans text-2xl font-semibold text-[var(--admin-ink)]">Active students by week</h2>
           <div className="mt-6 flex h-44 items-end gap-2" aria-label="Twelve-week active-student trend">
             {(summary.weeklyTrend || []).map(item => (
               <div key={item.weekStart} className="flex min-w-0 flex-1 flex-col items-center justify-end gap-2">
-                <span className="text-xs font-bold tabular-nums text-[#3A3530]">{item.activeStudents ?? '—'}</span>
-                <div className="w-full rounded-t-sm bg-[#F26B1F]" style={{ height: `${item.activeStudents === null ? 3 : Math.max(3, (item.activeStudents / trendMax) * 112)}px` }} />
-                <span className="hidden text-[11px] text-[#7A7068] sm:block">{readableDate(item.weekStart)}</span>
+                <span className="text-xs font-bold tabular-nums text-[var(--admin-body)]">{item.activeStudents ?? '—'}</span>
+                <div className="w-full rounded-t-sm bg-[var(--admin-accent)]" style={{ height: `${item.activeStudents === null ? 3 : Math.max(3, (item.activeStudents / trendMax) * 112)}px` }} />
+                <span className="hidden text-[11px] text-[var(--admin-muted)] sm:block">{readableDate(item.weekStart)}</span>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="rounded-xl border-2 border-[#1A1A1A] bg-white p-5 sm:p-6" aria-labelledby="programme-actions-title">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#9E9186]">Intentional activity</p>
-          <h2 id="programme-actions-title" className="mt-1 font-serif text-2xl font-semibold text-[#1A1A1A]">Actions completed</h2>
-          <dl className="mt-6 divide-y divide-[#DDD8D2]">
+        <section className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5 sm:p-6" aria-labelledby="programme-actions-title">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--admin-muted)]">Intentional activity</p>
+          <h2 id="programme-actions-title" className="mt-1 font-sans text-2xl font-semibold text-[var(--admin-ink)]">Actions completed</h2>
+          <dl className="mt-6 divide-y divide-[var(--admin-rule)]">
             <div className="flex items-end justify-between gap-4 py-4 first:pt-0">
-              <dt className="text-sm font-semibold text-[#3A3530]">Planned study activities</dt>
-              <dd className="font-serif text-3xl font-bold tabular-nums text-[#1A1A1A]">{displayCount(summary.planActivitiesCompleted)}</dd>
+              <dt className="text-sm font-semibold text-[var(--admin-body)]">Planned study activities</dt>
+              <dd className="font-sans text-3xl font-bold tabular-nums text-[var(--admin-ink)]">{displayCount(summary.planActivitiesCompleted)}</dd>
             </div>
             <div className="flex items-end justify-between gap-4 py-4">
-              <dt className="text-sm font-semibold text-[#3A3530]">Study sessions completed</dt>
-              <dd className="font-serif text-3xl font-bold tabular-nums text-[#1A1A1A]">{displayCount(summary.studySessionsCompleted)}</dd>
+              <dt className="text-sm font-semibold text-[var(--admin-body)]">Study sessions completed</dt>
+              <dd className="font-sans text-3xl font-bold tabular-nums text-[var(--admin-ink)]">{displayCount(summary.studySessionsCompleted)}</dd>
             </div>
             <div className="flex items-end justify-between gap-4 py-4">
               <dt>
-                <span className="block text-sm font-semibold text-[#3A3530]">Practice attempts</span>
-                <span className="mt-1 block text-xs text-[#7A7068]">{summary.strongPracticePercentage === null || summary.strongPracticePercentage === undefined ? 'Accuracy builds with new attempts' : `${summary.strongPracticePercentage}% strong or full self-marks`}</span>
+                <span className="block text-sm font-semibold text-[var(--admin-body)]">Practice attempts</span>
+                <span className="mt-1 block text-xs text-[var(--admin-muted)]">{summary.strongPracticePercentage === null || summary.strongPracticePercentage === undefined ? 'Accuracy builds with new attempts' : `${summary.strongPracticePercentage}% strong or full self-marks`}</span>
               </dt>
-              <dd className="font-serif text-3xl font-bold tabular-nums text-[#1A1A1A]">{displayCount(summary.practiceAttemptsCompleted)}</dd>
+              <dd className="font-sans text-3xl font-bold tabular-nums text-[var(--admin-ink)]">{displayCount(summary.practiceAttemptsCompleted)}</dd>
             </div>
             <div className="flex items-end justify-between gap-4 py-4 last:pb-0">
               <dt>
-                <span className="block text-sm font-semibold text-[#3A3530]">Confidence after study</span>
-                <span className="mt-1 block text-xs text-[#7A7068]">{summary.confidenceResponses === null ? 'Hidden for a small response group' : `${summary.confidenceResponses ?? 0} responses`}</span>
+                <span className="block text-sm font-semibold text-[var(--admin-body)]">Confidence after study</span>
+                <span className="mt-1 block text-xs text-[var(--admin-muted)]">{summary.confidenceResponses === null ? 'Hidden for a small response group' : `${summary.confidenceResponses ?? 0} responses`}</span>
               </dt>
-              <dd className="font-serif text-3xl font-bold tabular-nums text-[#1A1A1A]">{summary.averageConfidence === null || summary.averageConfidence === undefined ? '—' : `${summary.averageConfidence}/5`}</dd>
+              <dd className="font-sans text-3xl font-bold tabular-nums text-[var(--admin-ink)]">{summary.averageConfidence === null || summary.averageConfidence === undefined ? '—' : `${summary.averageConfidence}/5`}</dd>
             </div>
           </dl>
         </section>
       </div>
 
-      <section className="overflow-hidden rounded-xl border-2 border-[#1A1A1A] bg-white" aria-labelledby="feature-success-title">
-        <div className="border-b-2 border-[#1A1A1A] px-5 py-5 sm:px-6">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#9E9186]">Product decisions</p>
-          <h2 id="feature-success-title" className="mt-1 font-serif text-2xl font-semibold text-[#1A1A1A]">Feature starts and successful finishes</h2>
-          <p className="mt-2 text-sm text-[#7A7068]">Rows appear after at least {summary.suppressionMinimum} students have started or completed the flow.</p>
+      <section className="overflow-hidden rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)]" aria-labelledby="feature-success-title">
+        <div className="border-b border-[var(--admin-rule)] px-5 py-5 sm:px-6">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--admin-muted)]">Product decisions</p>
+          <h2 id="feature-success-title" className="mt-1 font-sans text-2xl font-semibold text-[var(--admin-ink)]">Feature starts and successful finishes</h2>
+          <p className="mt-2 text-sm text-[var(--admin-muted)]">Rows appear after at least {summary.suppressionMinimum} students have started or completed the flow.</p>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full min-w-[680px] border-collapse text-left">
-            <thead className="bg-[#F0F0F0] text-xs font-bold uppercase tracking-[0.1em] text-[#7A7068]">
+            <thead className="bg-[var(--admin-raised)] text-xs font-bold uppercase tracking-[0.1em] text-[var(--admin-muted)]">
               <tr><th className="px-5 py-3">Feature</th><th className="px-4 py-3 text-right">Exposed</th><th className="px-4 py-3 text-right">Started</th><th className="px-4 py-3 text-right">Completed</th><th className="px-5 py-3 text-right">Success</th></tr>
             </thead>
-            <tbody className="divide-y divide-[#DDD8D2]">
+            <tbody className="divide-y divide-[var(--admin-rule)]">
               {(summary.featureRows || []).length > 0 ? summary.featureRows!.map(row => (
                 <tr key={row.id}>
-                  <th scope="row" className="px-5 py-4 text-sm font-bold text-[#1A1A1A]">{featureLabel(row.id)}</th>
-                  <td className="px-4 py-4 text-right text-sm tabular-nums text-[#3A3530]">{row.exposed ?? '—'}</td>
-                  <td className="px-4 py-4 text-right text-sm tabular-nums text-[#3A3530]">{row.started}</td>
-                  <td className="px-4 py-4 text-right text-sm tabular-nums text-[#3A3530]">{row.completed ?? '—'}</td>
-                  <td className="px-5 py-4 text-right text-sm font-bold tabular-nums text-[#1A1A1A]">{row.successRate === null ? '—' : `${row.successRate}%`}</td>
+                  <th scope="row" className="px-5 py-4 text-sm font-bold text-[var(--admin-ink)]">{featureLabel(row.id)}</th>
+                  <td className="px-4 py-4 text-right text-sm tabular-nums text-[var(--admin-body)]">{row.exposed ?? '—'}</td>
+                  <td className="px-4 py-4 text-right text-sm tabular-nums text-[var(--admin-body)]">{row.started}</td>
+                  <td className="px-4 py-4 text-right text-sm tabular-nums text-[var(--admin-body)]">{row.completed ?? '—'}</td>
+                  <td className="px-5 py-4 text-right text-sm font-bold tabular-nums text-[var(--admin-ink)]">{row.successRate === null ? '—' : `${row.successRate}%`}</td>
                 </tr>
               )) : (
-                <tr><td colSpan={5} className="px-5 py-10 text-center text-sm text-[#7A7068]">Feature evidence will appear as students use this version of the app.</td></tr>
+                <tr><td colSpan={5} className="px-5 py-10 text-center text-sm text-[var(--admin-muted)]">Feature evidence will appear as students use this version of the app.</td></tr>
               )}
             </tbody>
           </table>
         </div>
       </section>
 
-      <section className="grid grid-cols-1 gap-6 rounded-xl border-2 border-[#1A1A1A] bg-white p-5 sm:p-6 lg:grid-cols-2">
+      <section className="grid grid-cols-1 gap-6 rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5 sm:p-6 lg:grid-cols-2">
         <div>
-          <div className="flex items-center gap-2 text-[#3A8D5F]"><ShieldCheck size={18} /><span className="text-xs font-bold uppercase tracking-[0.13em]">Measurement coverage</span></div>
-          <p className="mt-3 text-sm leading-relaxed text-[#3A3530]">
+          <div className="flex items-center gap-2 text-[var(--admin-success)]"><ShieldCheck size={18} /><span className="text-xs font-bold uppercase tracking-[0.13em]">Measurement coverage</span></div>
+          <p className="mt-3 text-sm leading-relaxed text-[var(--admin-body)]">
             {summary.coverage?.eventCount === null
               ? `Activity volume is hidden until ${summary.suppressionMinimum} students contribute. `
               : `${summary.coverage?.eventCount ?? 0} structured events in this period. `}
@@ -323,16 +323,16 @@ const AdminProgrammePanel: React.FC<Props> = ({ schoolFilter, yearFilter, allCou
               ? 'Measurement coverage is hidden for the current small contributor group.'
               : `${summary.coverage?.studentsWithAnalyticsId ?? 0} of ${summary.registeredStudents} students now have a separate analytics identifier.`}
           </p>
-          <p className="mt-2 text-xs leading-relaxed text-[#7A7068]">
+          <p className="mt-2 text-xs leading-relaxed text-[var(--admin-muted)]">
             {summary.measurementStartedOn
               ? `History begins ${readableDate(summary.measurementStartedOn)}. Earlier product use is not reconstructed or presented as event data.`
               : 'No programme events have been recorded yet; earlier product use will not be reconstructed.'}
           </p>
         </div>
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.13em] text-[#9E9186]">Awaiting programme input</p>
-          <ul className="mt-3 space-y-2 text-sm text-[#3A3530]">
-            {(summary.awaitingProgrammeInput || []).map(item => <li key={item} className="flex gap-2"><span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#F26B1F]" />{item}</li>)}
+          <p className="text-xs font-bold uppercase tracking-[0.13em] text-[var(--admin-muted)]">Awaiting programme input</p>
+          <ul className="mt-3 space-y-2 text-sm text-[var(--admin-body)]">
+            {(summary.awaitingProgrammeInput || []).map(item => <li key={item} className="flex gap-2"><span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--admin-accent)]" />{item}</li>)}
           </ul>
         </div>
       </section>

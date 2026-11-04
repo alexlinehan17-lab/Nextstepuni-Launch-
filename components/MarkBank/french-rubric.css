@@ -1,0 +1,50 @@
+.mb-french-rubric { color: var(--mb-ink); font-size: 13px; line-height: 1.5; }
+.mb-french-rubric h3 { font: 600 21px/1.25 Georgia, serif; margin: 5px 0 14px; }
+.mb-french-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.mb-french-requirements { padding-left: 20px; }
+.mb-french-caption { margin: 0 0 8px; font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+
+/* Claimable rows (claim-rows.css) grouped by the scheme's sub-parts. */
+.mb-french-answers { display: grid; gap: 12px; margin: 0 0 16px; }
+.mb-french-group { display: grid; gap: 7px; }
+
+/* The lifted lines as a list when they could not be cut into rows. */
+.mb-french-answer-guide { margin: 0 0 16px; }
+.mb-french-guide { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+.mb-french-guide-answer { display: grid; grid-template-columns: 16px minmax(0, 1fr); gap: 6px; padding: 8px 10px; border: 1px solid var(--mb-border); border-radius: 9px; background: var(--mb-paper); overflow-wrap: anywhere; }
+.mb-french-guide-answer > span:first-child { color: var(--mb-label); font-weight: 700; }
+.mb-french-guide-note { color: var(--mb-muted); font-size: 12px; padding: 2px 0; overflow-wrap: anywhere; }
+
+.mb-french-criterion { border-top: 1px solid var(--mb-border); padding: 15px 0; }
+.mb-french-criterion-heading, .mb-french-total { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
+.mb-french-criterion h4 { font-size: 15px; margin: 0; }
+.mb-french-criterion p, .mb-french-band ul { margin: 8px 0; }
+.mb-french-band { margin-top: 12px; }
+.mb-french-band ul { padding-left: 19px; color: var(--mb-muted); }
+.mb-french-score { display: grid; gap: 8px; margin-top: 14px; font-weight: 650; }
+.mb-french-slider > div:first-child { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font: 600 10.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-french-slider > div:first-child strong { font: 750 18px/1 'Roboto Mono', ui-monospace, monospace; color: var(--mb-ink); font-variant-numeric: tabular-nums; }
+.mb-french-slider input { width: 100%; margin: 9px 0 5px; accent-color: var(--mb-ink); }
+.mb-french-slider-ends { display: flex; justify-content: space-between; color: var(--mb-label); font: 650 9.5px/1 'Roboto Mono', ui-monospace, monospace; }
+.mb-french-attempt { min-height: 44px; border: 2px solid var(--mb-ink); border-radius: 7px; padding: 8px 12px; font: inherit; color: var(--mb-ink); background: var(--mb-paper); cursor: pointer; width: 100%; margin: 0 0 15px; text-align: left; font-weight: 650; }
+.mb-french-attempt[aria-pressed="true"] { background: #f26b1f; color: #171717; border-color: #171717; }
+.mb-french-attempt:focus-visible, .mb-french-rules summary:focus-visible { outline: 3px solid #f26b1f; outline-offset: 3px; }
+
+/* The section's general rules, folded under the answers. */
+.mb-french-rules { margin: 0 0 14px; }
+.mb-french-rules summary { min-height: 40px; padding: 8px 12px; border: 1.5px solid var(--mb-border); border-radius: 9px; cursor: pointer; font-weight: 650; color: var(--mb-ink-2); }
+.mb-french-rules[open] summary { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.mb-french-rules ul { margin: 0; padding: 10px 12px 10px 30px; border: 1.5px solid var(--mb-border); border-top: 0; border-radius: 0 0 9px 9px; color: var(--mb-muted); font-size: 12px; display: grid; gap: 4px; overflow-wrap: anywhere; }
+
+.mb-french-total { border-top: 2px solid var(--mb-ink); padding-top: 15px; }
+.mb-french-total strong { font-size: 19px; font-variant-numeric: tabular-nums; }
+.mb-french-note { color: var(--mb-muted); margin: 16px 0 0; font-size: 12px; white-space: pre-line; }
+.mb-french-practice { border-top: 1px solid var(--mb-border); margin-top: 18px; padding-top: 14px; }
+.mb-french-practice-source { color: var(--mb-muted); font-size: 12px; margin: 4px 0 8px; }
+.mb-french-practice ul { margin: 0; padding-left: 19px; }
+.mb-french-choices { border: 0; margin: 18px 0 0; padding: 0; min-width: 0; }
+.mb-french-choices legend { color: var(--mb-ink); font-size: 12px; font-weight: 650; padding: 0 0 9px; }
+.mb-french-choice { display: flex; align-items: center; gap: 12px; min-height: 44px; margin: 0 0 8px; padding: 10px 12px; border: 2px solid var(--mb-ink); border-radius: 7px; color: var(--mb-ink); background: var(--mb-paper); cursor: pointer; font-size: 15px; line-height: 1.4; }
+.mb-french-choice input { flex: 0 0 18px; width: 18px; height: 18px; margin: 0; accent-color: #171717; }
+.mb-french-choice[data-selected="true"] { color: #171717; background: #f26b1f; border-color: #171717; }
+.mb-french-choice:focus-within { outline: 3px solid #f26b1f; outline-offset: 3px; }

@@ -28,6 +28,7 @@ A part occasionally runs across two blocks, which shows up as text that stops
 without terminal punctuation. Continuation handles exactly that case and stops
 as soon as the sentence closes, so it cannot swallow a table.
 """
+import collections
 import os
 import re
 
@@ -88,6 +89,16 @@ def papers_dir(subject):
 # Q1 in the Maths corpus was lost that way, and with it its parts.
 QHEAD_AHEAD = r'(?=\d{1,2}\.\s+[A-Z(]|Question\s+\d{1,2}\b)'
 INLINE_QHEAD = re.compile(r'(?<=[.)?:])\s+' + QHEAD_AHEAD)
+# Subjects whose booklets close an ask with its ruled answer line and set the
+# next question's head straight after it in the same text block. Biology's
+# 2010-2018 single booklets do this throughout: 2017 HL page 5 is one block
+# from "4. From your knowledge of microorganisms" to "5. Indicate whether ...",
+# and the "5." follows "____" rather than a closed sentence, so INLINE_QHEAD
+# never split it and Question 5 vanished into Question 4(g). The answer line
+# ends the ask as surely as a full stop does. Every reviewed Biology sitting
+# (2018 HL, 2019-2026) censuses byte-identically with it.
+ANSWER_LINE_HEADS = {'biology'}
+INLINE_QHEAD_AFTER_LINE = re.compile(r'(?:(?<=[.)?:])|(?<=_))\s+' + QHEAD_AHEAD)
 
 RUBRIC_HEAD = re.compile(
     r'^(?:(?:SECTION|Section)\s+[A-D]\b'
@@ -104,16 +115,27 @@ RUBRIC_HEAD = re.compile(
 
 # The '\d.' head may be followed by an opening quote: Construction Studies'
 # 2019-2025 alternative Q10 opens with a quotation.
-QHEAD = re.compile('^(?:Question\\s+(\\d{1,2})\\b|(\\d{1,2})\\.\\s+(?=[A-Z(\\d"\u201c\u2018]))')
+# A head may be followed by a lower-case CAMEL-CASE product name: 2024 HL
+# Technology opens Question 13 "13. eBörd is a smart table...", and the
+# capital-only lookahead rejected it -- so Question 13's two parts filed
+# themselves under Question 12, whose own ask was then dropped as a stem with
+# children. Narrow on purpose: a second character in upper case is what makes
+# it a name rather than the running prose of "1. and then...".
+QHEAD = re.compile('^(?:Question\\s+(\\d{1,2})\\b'
+                   '|(\\d{1,2})\\.\\s+(?=[A-Z(\\d"\u201c\u2018]|[a-z][A-Z]))')
 MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
 # Letters run past (h): Chemistry's Q4 runs to (l) and Physics' lettered-choice
 # questions to (l) as well — every part after (h) was invisible and 61 shipped
-# cards orphaned against a census that had never seen their asks. 'i' is NOT in
+# cards orphaned against a census that had never seen their asks. And past (l):
+# EVERY ONE of Engineering's ten sittings sets Question 1 (a) to (m), and a
+# class stopping at l lost part (m) on all ten — ten asks the SEC printed and
+# the denominator had never counted. Widening can only ever ADD a part, since
+# MARKER anchors at the start of the line. 'i' is NOT in
 # the letter class: alone it is a roman first, and only the (h)-context rule in
 # Paper.__init__ may upgrade it. Romans run past (viii): Biology prints (ix),
 # Physics (ix)-(xii), and the old alternation topped out at viii so '(ix)'
 # could never split a block or key a part.
-LETTER = re.compile(r'[a-hj-l]')
+LETTER = re.compile(r'[a-hj-m]')
 ROMAN = re.compile(r'i{1,3}|iv|vi{0,3}|ix|xi{0,3}')
 RUBRIC = re.compile(r'^Answer (either|any|all)\b')
 # A part marker orphaned at the very end of a block: pymupdf glues a marker
@@ -137,7 +159,143 @@ MISPRINTS = {
     ('biology', 2023, 'hl'): [
         ('16. (i) Draw a large diagram', lambda t: '(b) ' + t[4:]),
     ],
+    # 2024 HL Chemistry Q2(c) prints "(ii)" twice; the second is the third
+    # part, which the scheme marks (iii) (the co-product of soap-making).
+    ('chemistry', 2024, 'hl'): [
+        ('(ii) Name the co\u2010product formed', lambda t: '(iii) ' + t[5:]),
+    ],
+    # 2020 OL prints Q14(c)'s second part as "(iii)" and its third as "(iii)"
+    # again; the scheme numbers them (ii) and (iii).
+    ('biology', 2020, 'ol'): [
+        ('(iii) What is meant by the term heterotrophic?', lambda t: '(ii)' + t[5:]),
+    ],
+    # 2018 HL prints Q14(a)'s fifth part as "(iv)" again; the scheme numbers
+    # it (v), between (iv) and (vi).
+    ('biology', 2018, 'hl'): [
+        ('(iv) The graph below shows variations', lambda t: '(v)' + t[4:]),
+    ],
+    # 2026 OL Economics page 8 sets Question 8's head in the same block as the
+    # last cell of Question 7's answer table ("Explanation 2", where 2 is the
+    # completed example), so the head is glued behind a bare number and never
+    # read. The cell is the paper's worked example, not an ask; drop it.
+    ('economics', 2026, 'ol'): [
+        ('Explanation 2 Question 8', lambda t: t[len('Explanation 2 '):]),
+    ],
+    # 2017 OL page 2 sets Question 2's dichotomous key as one block, its steps
+    # numbered "1." to "4." in the head form ("3. Animal has three pairs of
+    # legs Musca ____", "4. Animal has long cylindrical body Nematode ____").
+    # Steps 3 and 4 follow an answer line, so each split off as a head: a
+    # phantom Question 3 took key step 3, a phantom Question 4 took step 4 and
+    # the real Question 3's (a)-(e), and the real "3." and "4." heads on page 3
+    # were then rejected as repeats -- Question 4's own (a)-(e) filed as the
+    # tail of the phantom Q4(e). The step numbers are the key's, not heads.
+    ('biology', 2017, 'ol'): [
+        ('3. Animal has three pairs of legs', lambda t: t[3:]),
+        ('4. Animal has long cylindrical body', lambda t: t[3:]),
+    ],
+    # 2013 OL page 11 prints Question 13's third part as "(b)" again ("(b)
+    # Answer the following questions in relation to an investigation you
+    # carried out into fermentation by yeast cells."), after (a) and the
+    # membrane (b); the scheme (p12) numbers it (c). Read as a second (b), its
+    # five romans merged into the membrane (b)'s first five.
+    ('biology', 2013, 'ol'): [
+        ('(b) Answer the following questions in relation to an investigation you carried out into fermentation',
+         lambda t: '(c)' + t[3:]),
+    ],
+    # 2011 OL pages 12 and 13 print the heads of Questions 14 and 15 as "14.
+    # Answer any two of (a), (b), (c) (30, 30)" with no full stop after "(c)"
+    # (rendered and looked at), so the reader splits off "(c) (30, 30)" as the
+    # opening of a part (c); the real (a) and (b) then read as letters going
+    # backwards and were lost. The "(c)" of the head's own list is not a part.
+    ('biology', 2011, 'ol'): [
+        ('(c) (30, 30)', lambda t: t[len('(c) '):]),
+    ],
 }
+# A question head the text layer welds onto the END of the block before it,
+# with no closed sentence between them for INLINE_QHEAD to split at: 2020 OL
+# Biology's Q4 table ends in the cell "(e) Converts starch into maltose" and
+# the block carries on "5. A selection of different cells ...", which filed
+# the whole of Question 5 as the tail of Q4(e). Keyed by sitting, like
+# MISPRINTS: the block is split straight after the named text.
+WELDED_HEADS = {
+    ('biology', 2020, 'ol'): ['(e) Converts starch into maltose'],
+    # 2018 OL page 4 is one block from "5. Indicate whether each of the
+    # following statements" to "6. The diagram shows a plant cell.": Q5(g)'s
+    # row ends in its circle options "T F", not a full stop or an answer line,
+    # so the "6." was never split off, Question 6 vanished into Q5(g), and
+    # with no Question 6 read, the reader (due a 6) took no head after it --
+    # Questions 7 to 15 all filed as romans of Q5(g).
+    ('biology', 2018, 'ol'): ['(g) Scientific discoveries are first published in newspapers T F'],
+    # 2017 OL page 4 is one block from "5. Indicate whether the following
+    # statements" to "6. The diagram shows part of the organism Rhizopus.":
+    # Q5(g)'s row ends in its circle options "T F", so the "6." was never
+    # split off and Question 6 vanished into Q5(g). Page 5 is one block from
+    # the Section B rubric to Q7(b)(v): the page sets "(iii)" at the start of
+    # the line "1. What did you use to cut the section of stem?", and the text
+    # layer welds that marker to the end of (ii)'s answer line, so Q7(b)(iii)
+    # and its two numbered asks filed as the tail of Q7(b)(ii).
+    ('biology', 2017, 'ol'): ['(g) An immobilised enzyme is one that has lost its function. T F',
+                              'State one reason why you used a herbaceous stem rather than a woody one. '
+                              + '_' * 73],
+    # 2016 HL page 13 is one block. Q13(b)(i) ends in its bold row of parts to
+    # label, "pinna semi-circular canals stirrup ear drum cochlea Eustachian
+    # tube", with no full stop, and the page sets "(ii)" on its own line under
+    # it before "1. Briefly outline the function of the pinna." Flattened, the
+    # "(ii)" trails the last part's name with nothing to split at, so Q13(b)(ii)
+    # and its five numbered asks filed as the tail of Q13(b)(i).
+    ('biology', 2016, 'hl'): ['stirrup ear drum cochlea Eustachian tube'],
+    # 2016 OL page 3 is one block from "3. Indicate whether the following
+    # statements are true or false" to Q4(e)(ii) "One treatment for the
+    # disorder.": Q3(g)'s row ends in its circle options "T F", so the "4.
+    # The diagram shows a section of the human skeleton." was never split off,
+    # Question 4 vanished into Q3(g), and Q4(e)(i)-(ii) filed as romans of
+    # Q3(g).
+    ('biology', 2016, 'ol'): ['(g) Oxygen passes from our lungs to our blood by osmosis. T F'],
+    # 2015 OL page 13 sets Question 15's head "15. Answer any two of (a), (b),
+    # (c). (30, 30)" and, on a line of its own under it, above the three fruit
+    # photographs, the marker "(a)"; the text layer reads that marker into the
+    # head's block, after "(30, 30)" with no full stop before it for
+    # TRAILING_MARKER to carry it. With no (a) read, the inline "(b) The
+    # diagram shows the human skin." and "(c) (i) Draw a diagram of Rhizopus."
+    # were not taken as letters, and all eighteen romans of (a), (b) and (c)
+    # filed as six romans of a letterless Q15.
+    ('biology', 2015, 'ol'): ['15. Answer any two of (a), (b), (c). (30, 30)'],
+    # 2014 HL page 8 is one block from "9." to Q9(b)(ii)'s last answer line.
+    # Q9(b)(i)'s third numbered ask, "3. Where did you find the semilunar
+    # valves during the dissection?", closes on its ruled answer line, and the
+    # page sets "(ii)" on its own line under it before "1. When you
+    # investigated the effect of exercise ...". Flattened, the "(ii)" trails
+    # the answer line with no full stop before it for TRAILING_MARKER to carry
+    # it, the head split before "1." strands it there, and Q9(b)(ii) and its
+    # two numbered asks filed as the tail of Q9(b)(i).
+    ('biology', 2014, 'hl'): ['Where did you find the semilunar valves during the dissection? ' + '_' * 75],
+    # 2013 OL page 3 is one block from "3. Indicate whether the following
+    # statements are true (T) or false (F)" to "4. The diagram shows the cell
+    # cycle.": Q3(g)'s row ends in its circle options "T F", so the "4." was
+    # never split off, Question 4's head filed as the tail of Q3(g), and its
+    # (a)-(d) (the next block) were read as repeats of Q3's letters and lost.
+    ('biology', 2013, 'ol'): ['(g) Grazing food chains begin with animals. T F'],
+    # 2012 OL page 3 is one block from "3. Indicate whether each of the
+    # following statements is true (T) or false (F)" to Q4(a)'s "Does the
+    # diagram represent a root or a stem?": Q3(g)'s row "An organ is a group of
+    # systems." ends in its circle options "T F", so "4. The diagram below
+    # represents a transverse section through part of a plant." was never
+    # split off, Question 4's head filed as the tail of Q3(g), and its (a)-(d)
+    # were read as repeats of Q3's letters and lost.
+    ('biology', 2012, 'ol'): ['(g) An organ is a group of systems. T F'],
+}
+# Subjects where a letter going BACKWARDS inside a question is never a new
+# part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'
+# gametes as "(B), (b) X (b)", and the "(b)" opening a line re-opened part
+# (b) and filed all six of (c)'s romans under it.
+BACKWARD_LETTER_IS_TEXT = {'biology'}
+# Subjects whose answer tables set several bare part markers in one block:
+# 2020 OL Biology Q5 labels the boxes under its cell drawings "(a)", "(b) (c)",
+# "(d)", "(e)", "(f) (g)", and a block reading "(b) (c)" was taken as one
+# marker -- the last -- so (b) and (f) vanished and (c) to (g) jumped the run.
+# Each marker in such a block is read on its own.
+BARE_MARKER_RUNS = {'biology'}
+_BARE_RUN = re.compile(r'^\([a-h]\)(?:\s+\([a-h]\))+$')
 # Chemistry prints 'Leaving Certificate Examination, 2021' (comma), Physics
 # 'Leaving Certificate, 2021' — the strict form let footers leak into leaf
 # text.
@@ -158,9 +316,55 @@ TERMINAL = re.compile(r'[.?!]$')
 # bracket, a digit ('(vi) 90 g of...'), a quote, or a mathematical-alphanumeric
 # glyph — Chemistry 2022 OL Q10(a) opens '(vi) 𝐇...' and the [A-Z(] class lost
 # the part.
+# A gas or liquid state symbol is not a part either. 2023 HL Chemistry Q9 sets
+# the equilibrium "PCl3 (g) + Cl2 (g) ⇌ PCl5 (g) ΔH = –87.9 kJ mol–1" in its
+# stem, and the Greek capital the lookahead admits read the last "(g)" as Q9(g):
+# an ask the paper never prints, held open by the census against a question
+# whose four parts were all carded. So a "(g)" or "(l)" written straight after
+# a formula and followed by the reaction's ΔH is passed over; no part opens
+# "ΔH =" straight after a formula.
 INLINE_MARKER = re.compile(
-    r'\s(?=\((?:[a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
+    r'\s(?=\((?:[a-hj-m]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
     '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
+# Chemistry goes further: a "(g)" or "(l)" written straight after a formula is
+# that formula's state, whatever follows it. 2019 HL Q9 ends its stem's
+# equation "2A (g) -> B (g) + 3C (g)" and runs straight on with "The graph
+# shows that ...", and 2010 HL Q7 breaks its equilibrium "PCl5 (g) <-> PCl3 (g)
+# + Cl2 (g)" across lines the same way: each read as a part (g) holding the
+# equation, an ask neither paper prints. No Chemistry part from 2010 to 2026
+# opens straight after a letter or digit, so no real part is lost.
+# Subject-gated: across the other subjects the same rule moves the readings of
+# Biology OL 2011-2018 and Physics 2026 HL Q4, which are those audits' to change.
+STATE_SYMBOL_SUBJECTS = {'chemistry'}
+INLINE_MARKER_STATES = re.compile(
+    r'(?:(?<![A-Za-z0-9\u2080-\u2089])\s|\s(?!\([gl]\)\s))'
+    r'(?=\((?:[a-hj-m]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
+    '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
+# 2016 HL Chemistry Q6(e) (paper page 7, y 403-417) prints "Draw the molecular
+# structure of (i) octane, (ii) 2,2,4-trimethylpentane, (iii) ethylbenzene."
+# -- three romans inside one sentence under one mark (9), which the census keeps
+# as one ask, as it does this paper's Q4(a), Q4(e), Q7(a) and Q10(b). The digit
+# the marker lookahead admits ("(vi) 90 g of ...") split it at "(ii) 2,2,4-":
+# complete_leading_romans then made an (i) of "octane," and (iii)'s ask was
+# filed inside (ii). A piece opening with a listed text is no part on that
+# paper and is joined back to the piece before it. Gated to the sitting: no
+# other paper's reading may move because of it.
+INLINE_NOT_MARKERS = {('chemistry', 2016, 'hl'): ['(ii) 2,2,4-trimethylpentane, (iii) ethylbenzene.']}
+# 2010 OL Chemistry Q7(b) (paper page 5, x 70, y 320) prints "Give the systematic (IUPAC)
+# names for (i) C2H2, (ii) CH3COOH." on one line under one mark (6). The capital each formula
+# opens with let the marker lookahead split it: the census counted a leaf "C2H2," (flag
+# empty-leaf) and a leaf "CH3COOH. (6)", where this paper's Q2(b), Q6(a), Q7(a) and Q8(b),
+# their romans in a sentence the same way, are each one ask. Joined back, as 2016 HL's.
+INLINE_NOT_MARKERS[('chemistry', 2010, 'ol')] = ['(i) C2H2,', '(ii) CH3COOH.']
+# A block opening with a marker that is words of the question's lead-in, not a part. 2010 OL
+# Chemistry Q3 (paper page 3, x 70, y 466-481) says what the student was asked, "(i) to
+# identify the salts by means of flame tests, (ii) to confirm the identity of the anion
+# ...", before its parts (a) and (b) (18, 32). Read as a roman it made Q3 a roman-major
+# question, its (a) and (b) were then taken for lines of an ask, and the census counted
+# Q3(i)-(iii) where the paper prints Q3(a) and (b)(i)-(iii). A block opening with a listed
+# text is read as words of what is open (the ask, or else the lead-in), as CROSSREF's are.
+# Gated to the sitting: no other paper's reading may move because of it.
+PROSE_MARKER_BLOCKS = {('chemistry', 2010, 'ol'): ['(i) to identify the salts by means of flame tests,']}
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
@@ -185,11 +389,18 @@ def _next_marker(tok):
 # ask begins on it in lower case -- 2023 HL Chemistry sets "(vi)" alone and
 # then "(vii) are not involved in bonding?" on one line. A cross-reference
 # never opens a line: it sits inside a sentence ("at part (a) above").
+# The gap after the marker may be set in no-break spaces: 2022 HL Chemistry
+# prints "(iii)\xa0\xa0 sulfur (S)," and [ \t] lost Q10(c)(iii).
 LINE_OPENING_MARKER = re.compile(
     r'^\(([a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)(?:[ \t]*$|[ \t]+(?=[a-z]))')
+# Subject-gated (Chemistry, the reader that met it): the same marker with any
+# white space after it, no-break spaces included.
+ANY_SPACE_MARKER_SUBJECTS = {'chemistry'}
+LINE_OPENING_MARKER_ANY_SPACE = re.compile(
+    r'^\(([a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)(?:\s*$|\s+(?=[a-z]))')
 
 
-def _split_own_line_markers(raw):
+def _split_own_line_markers(raw, any_space=False):
     """Flatten a block, but let a marker printed ALONE on its line start one.
 
     A block is flattened to a single line, and INLINE_MARKER -- which finds the
@@ -215,7 +426,7 @@ def _split_own_line_markers(raw):
     lines = [l.strip() for l in raw.splitlines() if l.strip()]
     out, cur, last = [], [], None
     for i, line in enumerate(lines):
-        m = LINE_OPENING_MARKER.match(line)
+        m = (LINE_OPENING_MARKER_ANY_SPACE if any_space else LINE_OPENING_MARKER).match(line)
         tok = m.group(1) if m else None
         alone = m and line == m.group(0).strip()
         # Alone on its line, with the ask starting below it: a marker.
@@ -242,14 +453,241 @@ def _split_own_line_markers(raw):
     return out
 
 
-def _blocks(path):
-    """Every non-empty text block, in page then top-to-bottom, left-to-right order."""
+# Subjects whose PAPERS (not just schemes) reach the text layer through a
+# mangled subset font. Technology's papers print "SecƟon A" and "quesƟons",
+# which no marker regex matches: 2021 Ordinary censused 4 asks against its
+# neighbours' 26. The repair is opt-in per subject rather than global because
+# applying it to Chemistry also repairs a PUA delta inside an equilibrium
+# equation, and the reader then reads that equation's gas-state symbol "(g)"
+# as a part marker — a false ask, and a pre-existing marker bug (2023 HL Q9
+# already shows it) that is not this pipeline's to change by accident.
+# Applied Maths' 2023-2025 answer booklets are set in the same Word subset
+# fonts: "There are ten quesƟons on this paper" and "QuesƟon 1" are what the
+# text layer holds, so QHEAD matched nothing at all and the 2024 Higher paper
+# censused as ZERO asks. The 2021-2022 papers set their algebra in the same
+# way — "଺ହ u" for six fifths of u — and glyphmap.json already knows both.
+MANGLED_PAPERS = {'technology', 'applied-maths'}
+
+_GLYPHS = {}
+
+
+def _repair(text, subject):
+    """Undo the subset-font mangling in the paper's text layer.
+
+    Word embeds its fonts as subsets whose ToUnicode CMap is wrong, so
+    "Section A" reaches the text layer as "SecƟon A". glyphmap.json is derived
+    from the corpus by derive_glyphs.py (never hand-mapped). Every key is
+    above U+0100, so ordinary text — fadas included — is untouched.
+    """
+    if subject not in _GLYPHS:
+        import json
+        here = os.path.dirname(os.path.abspath(__file__))
+        table = {}
+        for name in ('glyphmap.json', f'glyphmap-{subject}.json'):
+            path = os.path.join(here, name)
+            if os.path.exists(path):
+                with open(path) as fh:
+                    table.update({ord(k): v for k, v in json.load(fh).items()})
+        _GLYPHS[subject] = table
+    return text.translate(_GLYPHS[subject])
+
+
+# Subjects that print a question's number in a left gutter, as its own text
+# block beside the question rather than welded to it. A lone "1." is otherwise
+# indistinguishable from the answer booklet's numbered ruled lines — which is
+# why the reader refuses it (see _all_blocks) — so the join is made here, on
+# the geometry: a marker-only block whose baseline overlaps the block to its
+# right, and which sits to the left of it, IS that block's marker.
+GUTTER_MARKERS = {'technology'}
+# Subjects whose papers set the part-level OR as the LAST LINE of the ask
+# above it rather than as a block of its own. Engineering centres the word
+# under the ask it closes, and the block segmentation takes it into that
+# block: 2023 Ordinary prints "(iii) Malleability. OR" and then a bare "(d)"
+# whose own (i) and (ii) are a different question, and "(iii) Name two items
+# of personal protective equipment (PPE) ... operating a lathe. OR" before a
+# second (c). Read as text, the word stayed on the first branch's last roman
+# and the second branch's romans welded onto the first's with nothing
+# between them -- "Toughness, Describe two areas where robotic technology is
+# used in health care." -- which is one ask with two halves, not the choice
+# the paper sets. Subject-gated, like GUTTER_MARKERS, because it is a claim
+# about how this subject's papers are typeset: no other subject's reading
+# may move because of it.
+TRAILING_OR = {'engineering'}
+# Subjects whose older papers close a question with a printed rule and set the
+# next question's head straight after it in the same block: 2010-2012 Higher
+# Chemistry reads "(d) ... (12) ___________ 3. A stopwatch was started ...",
+# and with no closed sentence before the "3." the inline head was invisible,
+# so Questions 3 and 7 of 2010, 2 of 2011 and 2, 5 and 7 of 2012 vanished from
+# the census. The rule is dropped so the head follows the closing "(12)".
+# Subject-gated: Biology, Business and Home Economics papers print the same
+# shape, and their readings must not move because of a Chemistry fix.
+RULED_HEADS = {'chemistry'}
+_RULED_HEAD = re.compile(r'\s*_{3,}\s*(?=\d{1,2}\.\s+[A-Z(])')
+# 2015 OL Chemistry (paper page 4) closes Question 4 with a rule DRAWN as a
+# vector line (y 504, x 218-395), not typed as "____", and the text layer sets
+# the next head in the same block as Q4(k)B's word list: "... calcium gold
+# mercury sodium 5. The diagram shows a small part of a sodium chloride (NaCl)
+# crystal ...". With no closed sentence before the "5." (INLINE_QHEAD) and no
+# underscores to drop (_RULED_HEAD), Question 5 was invisible and its six asks
+# were filed under Question 4 (census flag "question-gap: questions found [1, 2,
+# 3, 4, 6, 7, 8, 9, 10, 11]"). The head is split off where the page prints it.
+# Gated to the sitting: no other paper's reading may move because of it.
+DRAWN_RULE_HEADS = {('chemistry', 2015, 'ol'): ['5. The diagram shows a small part']}
+# 2012 HL Chemistry (paper page 5) sets the three conversions Q6(a) asks about in a
+# column right of its words: "(i) C6H14 (l) -> 4H2 (g) + [benzene] (l)", "(ii) C14H30 (l)
+# -> ... + X (g)", "(iii) CH3(CH2)6CH3 (l) -> [2,2,4-trimethylpentane, drawn] (l)" (x 257-538,
+# y 49-152). Its text block opens at y 23.8, above the "6." head (y 49.3), so it was read
+# first and its romans were filed under Question 5: the census counted Q5(e)(i)-(iii) holding
+# the equations and lost Q5(e) itself ("Boron trichloride (BCl3) is a colourless gas. Would
+# you expect (i) the B-Cl bonds, (ii) the BCl3 molecules, to be polar or non-polar? Justify
+# your answers." (9)). The romans number a figure's equations, which Q6(a) asks about in one
+# sentence ("For each conversion, (i) to (iii), name the process involved." (8)): no ask is
+# printed there, and the block is left out as a figure's. Gated to the sitting.
+FIGURE_BLOCKS = {('chemistry', 2012, 'hl'): [
+    '(i) C6H14 (l) → 4H2 (g) + (l) (ii) C14H30 (l) → C7H16 (l) + C3H6 (g) + X (g) '
+    '(iii) CH3(CH2)6CH3 (l) → (l)']}
+_TRAILING_OR = re.compile(r'\s+OR\s*$')
+_BARE_MARKER = re.compile(r'^\((?:[ivx]{1,4}|[a-m])\)$')
+
+
+def _before_trailing_or(text):
+    """The block without its trailing OR, or None if it carries none.
+
+    The word counts only after a closed sentence, or after a bare marker:
+    2024 Ordinary sets "(iv) OR" under the fourth of four instrument
+    photographs, whose markers carry no words of their own. A sentence that
+    merely ends on the word is not one.
+    """
+    m = _TRAILING_OR.search(text)
+    if not m:
+        return None
+    head = text[:m.start()].rstrip()
+    if head.endswith(('.', '?', '!')) or _BARE_MARKER.match(head):
+        return head
+    return None
+
+
+_MARKER_ONLY = re.compile(r'^\(?(\d{1,2}|[a-z]|[ivx]{1,4})[.)]?$')
+
+
+def _join_gutter_markers(blocks):
+    """Weld a gutter marker onto the block it heads.
+
+    The blocks arrive sorted by (top, left), so a marker set in the left
+    gutter normally comes FIRST and its question follows. Not always: the
+    marker's own box can start a few points lower than the paragraph beside it
+    -- "8." at y=290 against a question block at y=287 -- and the sort then
+    puts the marker after the text it heads. Looking only forward left those
+    markers standing alone, which cost 2021 Higher its Question 8 and 2021
+    Ordinary its Question 5: the question's text was filed under the question
+    before it, and the marker became an empty question the census then
+    dropped. So the partner is looked for on both sides, forward first.
+    """
+    out, used = [], set()
+    partner = {}
+    for i, b in enumerate(blocks):
+        text = ' '.join(b[4].split())
+        if not _MARKER_ONLY.match(text):
+            continue
+        for j in list(range(i + 1, min(i + 4, len(blocks)))) + \
+                list(range(i - 1, max(i - 4, -1), -1)):
+            o = blocks[j]
+            # An empty block is never the question: 2020 Higher boxes each
+            # short question and sets its marker in a box-high gutter block,
+            # which overlaps every blank answer-line block beneath it, and
+            # the first of those was taken as Q3's text while the question
+            # itself was filed under Q2.
+            if j in used or o[0] <= b[0] or not o[4].split() \
+                    or _MARKER_ONLY.match(' '.join(o[4].split())):
+                continue
+            # Same line, give or take a leading-height's slack.
+            if abs(o[1] - b[1]) <= 14 or (b[1] <= o[3] and o[1] <= b[3]):
+                partner[i] = j
+                used.add(j)
+                break
+    for i, b in enumerate(blocks):
+        if i in used:
+            j = next((k for k, v in partner.items() if v == i), None)
+            if j is None:
+                out.append(b)
+                continue
+            m = blocks[j]
+            out.append((min(m[0], b[0]), min(m[1], b[1]), b[2], b[3],
+                        f"{' '.join(m[4].split())} {' '.join(b[4].split())}"))
+            continue
+        if i in partner:
+            continue                 # emitted at its partner's position
+        out.append(b)
+    return out
+
+
+def _unweld(block, anchors):
+    """A block split straight after each anchor text it contains (WELDED_HEADS)."""
+    for anchor in anchors:
+        at = block.find(anchor + ' ')
+        if at >= 0:
+            cut = at + len(anchor)
+            return [block[:cut]] + _unweld(block[cut:].strip(), anchors)
+    return [block]
+
+
+# Pages whose text layer is set in overlapping vertical strips: every printed
+# line is stored as several pieces, and the glyph at each strip edge is set
+# twice at the same place ("Namme the liquidd part of thee blood."), so no
+# block holds a whole line. 2011 OL Biology pages 11-13 (Questions 13-15; the
+# pages render cleanly and the scheme reads normally). Keyed (subject, year,
+# level) -> {file name: pages}; strip_set_lines() reads those pages instead.
+STRIP_SET_PAGES = {
+    ('biology', 2011, 'ol'): {'2011-ol-paper.pdf': (11, 12, 13)},
+}
+
+
+def strip_set_lines(page):
+    """A strip-set page's printed lines as (baseline, text), top to bottom.
+
+    Every glyph is pooled from every strip, grouped into lines by baseline and
+    read left to right. A glyph set again at the same place, the same
+    character within 1pt, is a strip edge and kept once: on 2011 OL pp11-13
+    those repeats sit 0.00-0.06pt apart, a printed double letter ("ll", "ee")
+    3.3pt or more. A gap wider than 1.5pt between glyphs is a word space."""
+    rows = collections.defaultdict(list)
+    for b in page.get_text('rawdict')['blocks']:
+        for ln in b.get('lines', []):
+            for sp in ln['spans']:
+                for ch in sp['chars']:
+                    rows[round(round(ch['origin'][1], 1))].append((ch['bbox'][0], ch['bbox'][2], ch['c']))
+    out = []
+    for y in sorted(rows):
+        kept = []
+        for x0, x1, c in sorted(rows[y]):
+            if kept and c == kept[-1][2] and abs(x0 - kept[-1][0]) < 1.0:
+                continue
+            kept.append((x0, x1, c))
+        text, last = '', None
+        for x0, x1, c in kept:
+            if last is not None and x0 - last > 1.5 and not text.endswith(' ') and c != ' ':
+                text += ' '
+            text += c
+            last = x1
+        text = ' '.join(text.split())
+        if text:
+            out.append((y, text))
+    return out
+
+
+def _blocks(path, subject=None, strip_pages=(), any_space=False):
+    """Every non-empty text block, in page then top-to-bottom, left-to-right order.
+    A strip-set page (STRIP_SET_PAGES) gives one block per rebuilt line."""
     with pymupdf.open(path) as doc:
-        pages = [sorted(doc[n].get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
+        pages = [[(0, y, 0, y, t, i, 0) for i, (y, t) in enumerate(strip_set_lines(doc[n]))]
+                 if n + 1 in strip_pages else
+                 sorted(doc[n].get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
                  for n in range(doc.page_count)]
+    if subject in GUTTER_MARKERS:
+        pages = [_join_gutter_markers(p) for p in pages]
     for page in pages:
         for b in page:
-            for text in _split_own_line_markers(b[4]):
+            for text in _split_own_line_markers(_repair(b[4], subject) if subject else b[4], any_space):
                 if text and not PAGE_FURNITURE.match(text):
                     yield text
 
@@ -345,9 +783,19 @@ class Paper:
         self.path = self.files[0]
 
         self.parts, self.stems = {}, {}
+        # Keys whose words arrive only AFTER a part-level OR: the first
+        # printing of the address named a thing and asked nothing -- 2025
+        # Ordinary Engineering sets "(i)", "(ii)", "(iii) (iv)" under four
+        # instruments, then OR, then "(c) (i) State one advantage of using a
+        # Printed Circuit Board (PCB)". The text is filed exactly as before;
+        # this only records which branch it came from, so that a reader of the
+        # SCHEME, which answers both branches at one key, can answer the ask
+        # from the branch that asked it. It changes no part's text.
+        self.after_or = set()
         q = letter = roman = None
         open_key = None          # the part a continuation block may extend
         or_pending = False       # a standalone OR announces a choice variant
+        or_part = False          # ... of a PART, and of everything under it
         dot_heads = 0            # how many 'N.'-style heads were accepted
         qkind = {}               # q -> 'letter'|'roman': which marker opened it
         blocks = list(self._all_blocks())
@@ -368,18 +816,83 @@ class Paper:
         lone = [i for i, t in enumerate(blocks)
                 if re.fullmatch(r'[-\u2212]?\d{1,2}\.?', t.strip())]
         axis = {i for i in lone if i - 1 in lone or i + 1 in lone}
+        # A stacked fraction's DENOMINATOR welds itself onto the sentence set
+        # below it, and a denominator that happens to be the next question
+        # number opens that question early. 2021 Ordinary Applied Maths ends
+        # Q3(b) with "tan a = 3/4", the 4 sits on its own row, and the block
+        # reaches the walker as "4. The cliff is 98 m high and the particle
+        # lands...". Read as a head it took Q3(b)'s own (i) and (ii) with it,
+        # and the real "4. (a) Masses of 5 kg..." three blocks later was then
+        # rejected for going backwards -- so Question 4 lost both its letters
+        # and Q3(b) lost both its romans.
+        # Neither the number nor its neighbours can tell the two apart. What
+        # can is that the SEC prints a question's first part with it: the
+        # false head carries no part marker and the real one, printed later
+        # under the same number, does. A standalone OR between them means the
+        # second printing is a choice VARIANT (Construction Studies sets Q10
+        # twice that way), and then both are real.
+        def _dot(i):
+            m = re.match(r'^(\d{1,2})\.\s+', blocks[i])
+            return int(m.group(1)) if m else None
 
+        def _opens_part(i):
+            m = re.match(r'^\d{1,2}\.\s+', blocks[i])
+            return m is not None and _leading(blocks[i][m.end():])[:2] != (None, None)
+
+        dotted = collections.defaultdict(list)
+        for i in range(len(blocks)):
+            n = _dot(i)
+            if n is not None:
+                dotted[n].append(i)
+        false_heads = set()
+        for n, idx in dotted.items():
+            for a, b in zip(idx, idx[1:]):
+                if _opens_part(a) or not _opens_part(b):
+                    continue
+                if any(re.fullmatch(r'OR', blocks[k]) for k in range(a, b)):
+                    continue
+                false_heads.add(a)
+
+        or_next = False          # a TRAILING OR, taking effect after its block
         for index, text in enumerate(blocks):
+            if or_next:
+                or_pending = or_part = True
+                or_next = False
             if index in contents:
                 continue
+            if index in false_heads:
+                # The fraction denominator above. Strip it and read what
+                # follows as the prose it is -- it is the tail of the part
+                # that is open, not a new question.
+                text = re.sub(r'^\d{1,2}\.\s+', '', text)
             # A standalone OR announces that the next head, though it repeats
             # the current question number, is a printed ALTERNATIVE the
             # student may choose instead — Construction Studies HL sets Q10
             # twice this way every year. The variant files under -q so its
             # parts never collide with the first printing's.
             if re.fullmatch(r'OR', text):
-                or_pending = True
+                # The alternative runs from here to the end of the question:
+                # 2024 HL Engineering Q8 sets a second (c) with its own (i) and
+                # (ii), and each of them lands on the key its twin already
+                # holds. The flag has to outlast the (c) that opens the branch
+                # or only the (c) itself is separated and its children still
+                # weld onto their twins.
+                or_pending = or_part = True
                 continue
+            # The same OR set as the last line of the block above it (see
+            # TRAILING_OR). It announces the same choice wherever it is
+            # printed, and it is read as one only where a sentence has just
+            # closed or a bare marker stands in front of it, so a sentence
+            # that merely contains the word is left as it is. The block's own
+            # text is filed first, exactly as before -- the flag takes effect
+            # from the NEXT block, as a standalone OR printed there would --
+            # and everything after it is the alternative: or_part outlasts the
+            # (c) or (d) that re-opens the part, so its romans are separated
+            # from their twins too.
+            if self.subject in TRAILING_OR:
+                head = _before_trailing_or(text)
+                if head is not None:
+                    text, or_next = head, True
             if text.startswith('OR ') and QHEAD.match(text[3:]):
                 or_pending, text = True, text[3:]
             # 2025 HL Economics letterspaces a head as 'Question 1 2' — two
@@ -454,12 +967,26 @@ class Paper:
                     q, dot_heads = None, 0
                     self.stems = {}
                 if q is not None and not (q < found <= q + 3) and not variant:
-                    pass
+                    # A question's OWN number reprinted above one of its parts.
+                    # Two printings do this and neither is a new question: the
+                    # SEC re-heads a part carried onto a new page ("5. (b)"),
+                    # and a stacked fraction's denominator welds itself onto
+                    # the marker below it — 2021 HL Applied Maths sets
+                    # "8mu/5 <= T <= 16mu/5." with the 5 on its own row, and
+                    # the block reaches the walker as "5. (b) A smooth sphere
+                    # P has mass 2m...". Read as a head it is rejected here for
+                    # going backwards, and then the text no longer opens with a
+                    # marker, so the whole of Q5(b) was filed as a continuation
+                    # of Q5(a)(ii) and vanished from the census. Both readings
+                    # agree on what follows: it is this question's part.
+                    tail = text[m.end():].strip()
+                    if found == abs(q) and _leading(tail)[:2] != (None, None):
+                        text = tail
                 else:
                     if m.group(2):
                         dot_heads += 1
                     q = -found if variant else found
-                    or_pending = False
+                    or_pending = or_part = False
                     letter, roman, open_key = None, None, None
                     self.stems.setdefault((q, None), [])
                     rest = text[m.end():].strip()
@@ -487,6 +1014,13 @@ class Paper:
                 else:
                     self.stems.setdefault((q, letter), []).append(text)
                 continue
+            if any(text.startswith(t) for t in PROSE_MARKER_BLOCKS.get((self.subject, self.year, self.level), ())):
+                # (2010 OL Chemistry Q3's lead-in; see PROSE_MARKER_BLOCKS.)
+                if open_key:
+                    self.parts[open_key].append(text)
+                else:
+                    self.stems.setdefault((q, letter), []).append(text)
+                continue
 
             found_letter, found_roman, rest = _leading(text)
             if found_roman == 'i' and not found_letter and letter == 'h' \
@@ -499,9 +1033,17 @@ class Paper:
                 # on to (j) — Chemistry's Q4 runs (a) to (l) — and the first
                 # roman when it does not. The blocks ahead decide.
                 found_letter, found_roman = 'i', None
+            if self.subject in BACKWARD_LETTER_IS_TEXT and found_letter and letter is not None \
+                    and found_letter < letter and not or_part:
+                # See BACKWARD_LETTER_IS_TEXT: a bracketed allele, not a part.
+                if open_key:
+                    self.parts[open_key].append(text)
+                else:
+                    self.stems.setdefault((q, letter), []).append(text)
+                continue
             if found_letter and letter is not None and found_letter > letter \
                     and ord(found_letter) - ord(letter) > 1 \
-                    and found_letter not in ('j', 'k', 'l'):
+                    and found_letter not in ('j', 'k', 'l', 'm'):
                 # Letters arrive in order. A jump — (g) landing while (b) is
                 # open — is a unit in a table ("Average Daily Gain (ADG) (g)"),
                 # and keying it filed two years' worth of Agricultural Science
@@ -512,13 +1054,30 @@ class Paper:
                     self.stems.setdefault((q, letter), []).append(
                         f'({found_letter}) {rest}')
                 continue
-            if found_letter in ('j', 'k', 'l') and letter != (
+            if found_letter and letter is not None and found_letter < letter \
+                    and rest and not re.search(r'[A-Za-z]', rest):
+                # Letters never run backwards inside a question. A lower letter
+                # followed only by figures is a cross-reference a table wrapped
+                # onto a new line: 2021 OL Agricultural Science Q17(b) heads a
+                # column "Calculated at part" / "(a) 80 65 35", and keying that
+                # "(a)" filed (b)(ii) and (b)(iii) under (a) -- two printed
+                # parts read as orphans.
+                if open_key:
+                    self.parts[open_key].append(f'({found_letter}) {rest}')
+                else:
+                    self.stems.setdefault((q, letter), []).append(
+                        f'({found_letter}) {rest}')
+                continue
+            if found_letter in ('j', 'k', 'l', 'm') and letter != (
                     'i' if found_letter == 'j'
                     else chr(ord(found_letter) - 1)):
                 # The high letters only ever CONTINUE a run: (k) out of
                 # nowhere is Construction Studies' thermal-conductivity
                 # symbol, not part (k) — extending the alphabet without this
-                # guard invented a phantom Q5(k) in all ten HL papers.
+                # guard invented a phantom Q5(k) in all ten HL papers. (m) is
+                # in the tuple for the same reason and a commoner one: it is
+                # the symbol for the METRE, and admitting it without the guard
+                # gave Physics four new orphans in one run.
                 if open_key:
                     self.parts[open_key].append(f'({found_letter}) {rest}')
                 else:
@@ -546,6 +1105,34 @@ class Paper:
                 key = (q, letter, roman)
                 self.parts.setdefault(key, [])
                 if rest:
+                    # A PART-level OR. The standalone OR above announces a
+                    # choice variant, and where the variant repeats the whole
+                    # question the head handler takes it (q becomes -q, and
+                    # or_pending is cleared there). Where it repeats only a
+                    # PART, no head arrives: 2021 OL Engineering prints "(d)
+                    # Explain any two of the following terms: (i) Malleability
+                    # ...", then OR, then "(d) (i) State two advantages of
+                    # robotics in manufacturing." The second printing re-opens
+                    # keys the first already filled and the two branches ran
+                    # together into one sentence -- "Malleability, State two
+                    # advantages of robotics in manufacturing." -- which reads
+                    # as one ask with two halves rather than a choice between
+                    # two. The word the paper printed goes back between them.
+                    # Never twice over: two OR lines in a row (2025 OL English
+                    # stacks them between prescribed-poetry options) would
+                    # otherwise leave "OR OR" in the middle of the ask.
+                    # Driven by or_part, not or_pending: the flag has to
+                    # OUTLAST the (c) that opens the branch or only that (c)
+                    # is separated and its children still weld onto their
+                    # twins — 2024 HL Q8 sets a second (c) with its own (i)
+                    # and (ii). 2024 OL Q6(c)(ii) is the pair this fixes:
+                    # "Explain the term CAD." and, past the OR, "…integrated
+                    # into computer numerical control."
+                    if or_part and not self.parts[key]:
+                        self.after_or.add(key)
+                    if or_part and self.parts[key] \
+                            and self.parts[key][-1].strip() != 'OR':
+                        self.parts[key].append('OR')
                     self.parts[key].append(rest)
                 # A part that opens a group ('(a)' with prose but no roman yet)
                 # doubles as the stem for the romans beneath it.
@@ -571,6 +1158,15 @@ class Paper:
                 self.stems.setdefault((q, letter), []).append(text)
             open_key = None
 
+        # An alternative may repeat a marker and put nothing after it — 2021
+        # OL Q3 sets "(d) Explain any two of the following terms:" and then,
+        # after the OR, a bare "(d)" whose own romans carry the text. The OR
+        # placed on the letter then has nothing to join, and a part ending in
+        # "OR" reads as an ask cut off mid-choice.
+        for _blocks in self.parts.values():
+            while _blocks and _blocks[-1].strip() == 'OR':
+                _blocks.pop()
+
         self._adopt_unlettered()
 
     def _all_blocks(self):
@@ -584,14 +1180,29 @@ class Paper:
         Agricultural Science lost the parts underneath every ruled answer box.
         """
         fixes = MISPRINTS.get((self.subject, self.year, self.level), [])
+        # (2015 OL Chemistry: a head set after a drawn rule; see DRAWN_RULE_HEADS.)
+        split_at = '\\s+(?=OR\\s+\\d{1,2}\\.\\s+[A-Z("\u201c\u2018])' + ''.join(
+            '|\\s+(?=' + re.escape(h) + ')'
+            for h in DRAWN_RULE_HEADS.get((self.subject, self.year, self.level), []))
+        welded = WELDED_HEADS.get((self.subject, self.year, self.level), [])
         carry = ''
         for path in self.files:
-            for block in _blocks(path):
+            blocks = _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None,
+                             strip_pages=STRIP_SET_PAGES.get((self.subject, self.year, self.level), {})
+                             .get(os.path.basename(path), ()),
+                             any_space=self.subject in ANY_SPACE_MARKER_SUBJECTS)
+            if welded:
+                blocks = [piece for block in blocks for piece in _unweld(block, welded)]
+            for block in blocks:
+              if block in FIGURE_BLOCKS.get((self.subject, self.year, self.level), ()):
+                  continue           # (2012 HL Chemistry: a figure's numbered equations; see FIGURE_BLOCKS.)
+              if self.subject in RULED_HEADS:
+                  block = _RULED_HEAD.sub(' ', block)
               # A choice question prints its alternative welded on after a
               # standalone OR — Construction Studies HL sets Q10 twice this
               # way — and the second head must stand alone to be read at all.
-              for text in re.split('\\s+(?=OR\\s+\\d{1,2}\\.\\s+[A-Z("\u201c\u2018])', block):
-               for text in INLINE_QHEAD.split(text):
+              for text in re.split(split_at, block):
+               for text in (INLINE_QHEAD_AFTER_LINE if self.subject in ANSWER_LINE_HEADS else INLINE_QHEAD).split(text):
                 text = text.strip()
                 if not text:
                     continue
@@ -599,7 +1210,14 @@ class Paper:
                 prefix = ''
                 if head:
                     prefix, text = head.group(1) + ' ', text[head.end():]
-                pieces = [p.strip() for p in INLINE_MARKER.split(text) if p.strip()]
+                marker = (INLINE_MARKER_STATES if self.subject in STATE_SYMBOL_SUBJECTS
+                          else INLINE_MARKER)
+                pieces = [p.strip() for p in marker.split(text) if p.strip()]
+                # (2016 HL Chemistry Q6(e): a sentence's romans; see INLINE_NOT_MARKERS.)
+                for joined in INLINE_NOT_MARKERS.get((self.subject, self.year, self.level), []):
+                    at = [j for j, p in enumerate(pieces) if j and p.startswith(joined)]
+                    for j in reversed(at):
+                        pieces[j - 1:j + 1] = [pieces[j - 1] + ' ' + pieces[j]]
                 for i, piece in enumerate(pieces):
                     piece = (prefix + piece) if i == 0 else piece
                     if carry:
@@ -611,7 +1229,9 @@ class Paper:
                     if t:
                         carry = t.group(1)
                         piece = piece[:t.start(1)].rstrip()
-                    if piece:
+                    if piece and self.subject in BARE_MARKER_RUNS and _BARE_RUN.match(piece):
+                        yield from piece.split()
+                    elif piece:
                         yield piece
         if carry:
             yield carry

@@ -9,6 +9,10 @@ import { db } from '../firebase';
 import { type IslandPlacement, type NorthStarCategory } from '../types';
 
 /**
+ * @deprecated Schema 1 (legacy `islandState`, whole school). Its school-only
+ * query is denied by the year-islands rule since 2026-10-17, and the only
+ * consumer (PeerIslandsList) is not mounted. Use hooks/useYearIslands.ts.
+ *
  * PeerIsland is the in-memory shape exposed to consumers of this hook.
  * It is derived from the /islandPublic/{uid} projection (see
  * compliance/PEER_ISLAND_REFACTOR_PLAN.md and

@@ -1,0 +1,339 @@
+{
+  "subjectId": "applied-mathematics",
+  "status": "complete",
+  "scope": "Every Applied Mathematics written paper indexed in Paper Trail, 2010–2026: 33 English and 33 Irish editions. Each paper and marking scheme was visually reviewed; all independently practicable published mark boundaries were authored and mapped to canonical curriculum and Topic Atlas topics. Counts are tracking data, not the proof of completion.",
+  "englishPapers": [
+    {
+      "year": 2010,
+      "level": "hl",
+      "paperSha256": "f020b59d756d7b2a24e260a594114f69365770f64f418763cbf76e81ad3938b8",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2010.json",
+      "reviewedTasks": 35
+    },
+    {
+      "year": 2010,
+      "level": "ol",
+      "paperSha256": "97353e43a540e1e3217e769350c81917fe81660502f0206096c1346a93e5a399",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2010.json",
+      "reviewedTasks": 42
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "paperSha256": "bdd710d006371bcb79f1c5c16490223932655bd4c9eace51d1f8b557acd377a8",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2011.json",
+      "reviewedTasks": 34
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "paperSha256": "9160823d1df54589ca11a2d2f4a9673e4c825828a1cd9bf36130dfe6769c690e",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2011.json",
+      "reviewedTasks": 35
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "paperSha256": "0c36c76f4896e690087b02f024bdaf0feee3ef737965b1be196fad1baf246db4",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2012.json",
+      "reviewedTasks": 33
+    },
+    {
+      "year": 2012,
+      "level": "ol",
+      "paperSha256": "56f46717e18a9a89e7f16207a659f629cb4edbad5f80018fb6d94764e392bcff",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2012.json",
+      "reviewedTasks": 41
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "paperSha256": "d522264aac4484b07be1d7d9e221aeb24a4ebc50f169603e7cc12ed78cd1083b",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2013.json",
+      "reviewedTasks": 37
+    },
+    {
+      "year": 2013,
+      "level": "ol",
+      "paperSha256": "6a1d05dd87779445954adad7e258a8b15332b85a7be380060f9bca5cd79fa946",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2013.json",
+      "reviewedTasks": 41
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "paperSha256": "218de1b35e60c4a2bf06a50e66a06ee530d3fcc3000425b2b2d8fdb800d3358f",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2014.json",
+      "reviewedTasks": 45
+    },
+    {
+      "year": 2014,
+      "level": "ol",
+      "paperSha256": "5db45f0837fc1b6ba1fc1115ac946bb6f4903d53d25a7fb19f26438cb0b95c62",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2014.json",
+      "reviewedTasks": 44
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "paperSha256": "5ba7fc1067ac1587b2dd7381c9f6266ae7355213ad883eb4165a4473da4b2b02",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2015.json",
+      "reviewedTasks": 43
+    },
+    {
+      "year": 2015,
+      "level": "ol",
+      "paperSha256": "5ba1efd6ff4424153ea88995918d2117dde20180094507c530e40a33e8ce9a76",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2015.json",
+      "reviewedTasks": 39
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "paperSha256": "bd09ac8e49805c4ebe421e93d3f2d1c731d3895d6482788f55fe6e3f9a47e454",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2016.json",
+      "reviewedTasks": 40
+    },
+    {
+      "year": 2016,
+      "level": "ol",
+      "paperSha256": "ad4445a41cce623c0a8cfcb25909e0f99c7a58d2764a53af0c42e610d6c2a096",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2016.json",
+      "reviewedTasks": 47
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "paperSha256": "691899fece99064b540480bdffd5bcd0a2b22328acc1d0940411b6e0f28ea58f",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2017.json",
+      "reviewedTasks": 43
+    },
+    {
+      "year": 2017,
+      "level": "ol",
+      "paperSha256": "8e7f9e5108e85afffabd0ae6dbb076c3c63ce1393f5933930b094b6a61c36e7b",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2017.json",
+      "reviewedTasks": 46
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "paperSha256": "8b72652a15682d2329fd3a6a1de27c070aba03e08e2333c56627e3286e5834d8",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2018.json",
+      "reviewedTasks": 38
+    },
+    {
+      "year": 2018,
+      "level": "ol",
+      "paperSha256": "c03f5dd2237d95cf6769d6819ebc284d5e037129434e4e919c288cfa1ee42c49",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2018.json",
+      "reviewedTasks": 46
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "paperSha256": "c2941f127cc9a7c7b1ba7ed10698a195c2c9f318fceedab0542b3f40be83bad7",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2019.json",
+      "reviewedTasks": 46
+    },
+    {
+      "year": 2019,
+      "level": "ol",
+      "paperSha256": "51a2550ac5d725bb2f50f0ef744fdfddba991171a3496d0b32729d1d2049b2ca",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2019.json",
+      "reviewedTasks": 44
+    },
+    {
+      "year": 2020,
+      "level": "hl",
+      "paperSha256": "1215c3bb3d58ff6f6196cadd105c6f391c24aaa9b8710a6804a63abf5c11e728",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2020.json",
+      "reviewedTasks": 36
+    },
+    {
+      "year": 2021,
+      "level": "hl",
+      "paperSha256": "cc6c64b6286a212f4060478ffe54e6dae9d8d26663d11a03a28839e83e17b1df",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2021.json",
+      "reviewedTasks": 46
+    },
+    {
+      "year": 2021,
+      "level": "ol",
+      "paperSha256": "c685e78f4cb785212820e91e885e36d4c0046a63d78c405d6aacb7af704dfa77",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2021.json",
+      "reviewedTasks": 54
+    },
+    {
+      "year": 2022,
+      "level": "hl",
+      "paperSha256": "9b74e47e2f4594765838ceff1cd87c55979688f928037f0c5be91c4d23f8ac4d",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2022.json",
+      "reviewedTasks": 44
+    },
+    {
+      "year": 2022,
+      "level": "ol",
+      "paperSha256": "2fec80199677e524554589df1faed303826a3f275db2e9f4f815f390cc7ad50f",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2022.json",
+      "reviewedTasks": 56
+    },
+    {
+      "year": 2023,
+      "level": "hl",
+      "paperSha256": "fc03f99e625b0d2f6aa21f6a4ccf855c16eae52b99b586b31c3198d82bd4a90d",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2023.json",
+      "reviewedTasks": 51
+    },
+    {
+      "year": 2023,
+      "level": "ol",
+      "paperSha256": "6d0dcc9a25b497370e9ab063c0e27c4c47a1aaebbfda8e8dbafd495a2a1e3a06",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2023.json",
+      "reviewedTasks": 61
+    },
+    {
+      "year": 2024,
+      "level": "hl",
+      "paperSha256": "3d54587534d7f95ab9321d1420c85cb9c6affabf92af2a59f4195b5b976a26dd",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2024.json",
+      "reviewedTasks": 48
+    },
+    {
+      "year": 2024,
+      "level": "ol",
+      "paperSha256": "aee7ec318f290818393f0a7adc4b7487682f41f631e6ec25ed565fa514724761",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2024.json",
+      "reviewedTasks": 61
+    },
+    {
+      "year": 2025,
+      "level": "hl",
+      "paperSha256": "08264399581c2e7dcace1af017b632644e5fe590e8d2444a76460ac50d7be4bc",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2025.json",
+      "reviewedTasks": 52
+    },
+    {
+      "year": 2025,
+      "level": "ol",
+      "paperSha256": "50fb5ea4dc874e396fb5071ca42ad0e1884f6660c1ee7d33aaee83e2096fb6d9",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2025.json",
+      "reviewedTasks": 55
+    },
+    {
+      "year": 2026,
+      "level": "hl",
+      "paperSha256": "892ba8fa21c61c94bead0fef2ed8e184c3e283cf967ca3809dd5805ef3f4cc6c",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2026.json",
+      "reviewedTasks": 45
+    },
+    {
+      "year": 2026,
+      "level": "ol",
+      "paperSha256": "427aea301bdab3225c74ff4bf7dba7f15dc4fcccda2894bb0eb983a81b227c21",
+      "reviewState": "task-boundaries-reviewed",
+      "ledger": "scripts/markbank/authoring/reviewed/applied-maths/2026.json",
+      "reviewedTasks": 58
+    }
+  ],
+  "englishPapersReviewed": 33,
+  "englishPapersPending": 0,
+  "reviewedTasks": 1486,
+  "translatedEditionReview": "complete",
+  "nextWork": [],
+  "completedAt": "2026-10-08T07:32:51.827363+00:00",
+  "translatedPapersReviewed": 33,
+  "translatedPapersPending": 0,
+  "reviewedTasksByLevel": {
+    "higher": 716,
+    "ordinary": 770
+  },
+  "originalCardsPreserved": 383,
+  "sourceEditions": 66,
+  "distinctSourcePdfsReviewed": 131,
+  "sourceTaskLinks": 2972,
+  "nativeSchemeEditions": 65,
+  "schemeFallbacks": [
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "paperLanguage": "iv",
+      "schemeLanguage": "ev",
+      "reason": "No Irish scheme is indexed; the English marking scheme was explicitly reviewed against the Irish paper."
+    }
+  ],
+  "reconciliation": {
+    "covered": 1486,
+    "open": 0,
+    "orphans": 0,
+    "unparsed": 0,
+    "excluded": 0,
+    "staleExclusions": 0,
+    "resolvedHistoricalExclusions": 51,
+    "cardsReplacingHistoricalExclusions": 60
+  },
+  "evidence": {
+    "englishReviews": "scripts/markbank/authoring/reviewed/applied-maths/",
+    "irishReviews": "scripts/markbank/authoring/translated/applied-maths/",
+    "nativeCropReview": "scripts/markbank/authoring/translated/applied-maths-crop-review.json",
+    "nativeUiReview": "scripts/markbank/authoring/translated/applied-maths-ui-review.json",
+    "resolvedExclusions": "scripts/markbank/authoring/exclusions/resolved/applied-maths.json",
+    "coverageBaseline": "scripts/markbank/coverage-baseline.json"
+  },
+  "validation": {
+    "reviewCompiler": "passed",
+    "reconciliationAgainstIndependentVisualLedgers": "passed",
+    "originalCardIdentityAndContentPreservation": "passed",
+    "targetedRegressionTests": {
+      "status": "passed",
+      "distinctTests": 3894,
+      "files": 11,
+      "note": "The nine-file regression run was followed by passing targeted reruns after correcting the hosted-override assertion and narrowing the new exclusion test rubric. Coverage and subject showcase tests also passed."
+    },
+    "pythonReconciliationTests": {
+      "status": "passed",
+      "tests": 3
+    },
+    "productionTypecheck": "passed",
+    "testTypecheck": "passed",
+    "desktopAndPhoneReview": "passed",
+    "productionBuild": {
+      "status": "passed",
+      "viteBuildSeconds": 22.81,
+      "note": "Vite reported its advisory warning for large chunks; the app and service worker both built successfully."
+    },
+    "diffWhitespace": "passed"
+  }
+}

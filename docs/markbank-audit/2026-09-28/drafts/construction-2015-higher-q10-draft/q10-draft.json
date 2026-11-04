@@ -1,0 +1,2668 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "higher",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "status": "Q10 draft; source and exact Atlas preflight required before integration.",
+  "tasks": [
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-a-airtightness",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-5",
+        "conceptId": "passive-house-and-daylight-a-airtightness",
+        "questionRef": "2015 HL Q10(a) — Airtight building envelope",
+        "stem": "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
+        "questionText": "Using notes and freehand sketches, discuss in detail the importance of airtight building envelope in Passive House design. This is one of the two selected16-mark topics.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 16,
+        "rows": [
+          {
+            "id": "notes",
+            "kind": "criterion",
+            "verbatim": "Airtight building envelope",
+            "marks": 8,
+            "contextNote": "Explain a continuous airtight layer, carefully sealed junctions/penetrations and controlled fresh-air supply. The source examples include taped membranes, plaster continuity, service cavities and blower-door testing. Airtightness limits uncontrolled leakage; it does not eliminate conductive heat loss through the fabric. Do not confuse the airtight barrier with insulation, or omit deliberate ventilation.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "sketch",
+            "kind": "criterion",
+            "verbatim": "Airtight building envelope",
+            "marks": 8,
+            "contextNote": "Sketch an uninterrupted air-barrier line around the section and show continuity at a relevant junction or service penetration, as in the source red-line diagram.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        },
+        "figureKey": "construction-studies-2015-HL-q10-scheme"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 26,
+          "textSha256": "9a604ada8f84ac13e2ee8116a5f957613bf3954fdd039dd5ccebb3577ce74e38"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 27,
+          "textSha256": "f1b521e54eb94e620028d1a598edc2d0f602f205d06bfd16fa37692f6b7fdcb1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 28,
+          "textSha256": "47459481bf9f744aa56377564afd963edcfad85fbc7b64efc704f92eb3c3e20d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 41,
+          "textSha256": "164e18b0f7aedf8ae18476918726ab188c9c804f90d8e3bdb3aa619c53835a45"
+        }
+      ],
+      "boundaryReview": "Primary(a): any2of3, each notes8/sketch8 =16; selected pair32. Part(b)notes7/sketch7 =14; part(c)notes7/sketch7 =14. Whole60.",
+      "selectionReview": "Expand all C(3,2)=3 fixed pairs for(a) and three whole60 routes. Notes and sketches are required modes of response. Illustrative airtightness, ventilation, shading and material examples are not additional finite options.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q10-scheme"
+      ]
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-a-space-heating",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-5-3",
+        "conceptId": "passive-house-and-daylight-a-space-heating",
+        "questionRef": "2015 HL Q10(a) — Space heating demand",
+        "stem": "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
+        "questionText": "Using notes and freehand sketches, discuss in detail the importance of space heating demand in Passive House design. This is one of the two selected16-mark topics.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 16,
+        "rows": [
+          {
+            "id": "notes",
+            "kind": "criterion",
+            "verbatim": "Space heating demand",
+            "marks": 8,
+            "contextNote": "Explain the small energy demand for heating indoor spaces, distinguished from domestic hot water and total primary energy. The 2015 scheme cites space-heating demand ≤15 kWh/m² per year and heating load ≤10 W/m²; these are different quantities. Low fabric losses, controlled ventilation and useful gains reduce demand. Its primary-energy factor 2.58 and 120 kWh/m²/year criterion are historical scheme figures, not asserted as current rules.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "sketch",
+            "kind": "criterion",
+            "verbatim": "Space heating demand",
+            "marks": 8,
+            "contextNote": "Use a relevant freehand sketch to connect reduced fabric/ventilation losses and useful heat gains with the low space-heating demand. Label the mechanisms; do not treat a tariff number by itself as the required sketch.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        },
+        "figureKey": "construction-studies-2015-HL-q10-scheme"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 26,
+          "textSha256": "9a604ada8f84ac13e2ee8116a5f957613bf3954fdd039dd5ccebb3577ce74e38"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 27,
+          "textSha256": "f1b521e54eb94e620028d1a598edc2d0f602f205d06bfd16fa37692f6b7fdcb1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 28,
+          "textSha256": "47459481bf9f744aa56377564afd963edcfad85fbc7b64efc704f92eb3c3e20d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 41,
+          "textSha256": "164e18b0f7aedf8ae18476918726ab188c9c804f90d8e3bdb3aa619c53835a45"
+        }
+      ],
+      "boundaryReview": "Primary(a): any2of3, each notes8/sketch8 =16; selected pair32. Part(b)notes7/sketch7 =14; part(c)notes7/sketch7 =14. Whole60.",
+      "selectionReview": "Expand all C(3,2)=3 fixed pairs for(a) and three whole60 routes. Notes and sketches are required modes of response. Illustrative airtightness, ventilation, shading and material examples are not additional finite options.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q10-scheme"
+      ]
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-a-indoor-air",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-5",
+        "conceptId": "passive-house-and-daylight-a-indoor-air",
+        "questionRef": "2015 HL Q10(a) — Indoor air quality",
+        "stem": "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
+        "questionText": "Using notes and freehand sketches, discuss in detail the importance of indoor air quality in Passive House design. This is one of the two selected16-mark topics.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 16,
+        "rows": [
+          {
+            "id": "notes",
+            "kind": "criterion",
+            "verbatim": "Indoor air quality",
+            "marks": 8,
+            "contextNote": "Explain planned fresh-air supply, extract from wet rooms, filtration, humidity/pollutant control and heat recovery. Supply and extract streams exchange heat without mixing in the model; maintenance and correctly balanced flow matter. The source’s 0.3–0.6 air changes/hour concern designed ventilation; do not present that as the blower-door leakage test. Its plant example is explicitly of small quantitative effect and does not replace ventilation.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "sketch",
+            "kind": "criterion",
+            "verbatim": "Indoor air quality",
+            "marks": 8,
+            "contextNote": "Sketch the supply/extract routes and heat-exchanger arrangement, showing fresh filtered supply to living spaces and moisture/pollutant extraction from wet rooms. Keep the two air streams distinct, using the complete source ventilation diagrams.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        },
+        "figureKey": "construction-studies-2015-HL-q10-scheme"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 26,
+          "textSha256": "9a604ada8f84ac13e2ee8116a5f957613bf3954fdd039dd5ccebb3577ce74e38"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 27,
+          "textSha256": "f1b521e54eb94e620028d1a598edc2d0f602f205d06bfd16fa37692f6b7fdcb1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 28,
+          "textSha256": "47459481bf9f744aa56377564afd963edcfad85fbc7b64efc704f92eb3c3e20d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 41,
+          "textSha256": "164e18b0f7aedf8ae18476918726ab188c9c804f90d8e3bdb3aa619c53835a45"
+        }
+      ],
+      "boundaryReview": "Primary(a): any2of3, each notes8/sketch8 =16; selected pair32. Part(b)notes7/sketch7 =14; part(c)notes7/sketch7 =14. Whole60.",
+      "selectionReview": "Expand all C(3,2)=3 fixed pairs for(a) and three whole60 routes. Notes and sketches are required modes of response. Illustrative airtightness, ventilation, shading and material examples are not additional finite options.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q10-scheme"
+      ]
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-a-airtightness-space-heating",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-5",
+        "conceptId": "passive-house-and-daylight-a-airtightness-space-heating",
+        "questionRef": "2015 HL Q10(a) — airtightness, space-heating",
+        "stem": "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
+        "questionText": "Using notes and freehand sketches, discuss in detail the importance of airtight building envelope in Passive House design. This is one of the two selected16-mark topics.\n\nUsing notes and freehand sketches, discuss in detail the importance of space heating demand in Passive House design. This is one of the two selected16-mark topics.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 32,
+        "rows": [
+          {
+            "id": "a-airtightness-notes",
+            "kind": "criterion",
+            "verbatim": "Airtight building envelope",
+            "marks": 8,
+            "contextNote": "Explain a continuous airtight layer, carefully sealed junctions/penetrations and controlled fresh-air supply. The source examples include taped membranes, plaster continuity, service cavities and blower-door testing. Airtightness limits uncontrolled leakage; it does not eliminate conductive heat loss through the fabric. Do not confuse the airtight barrier with insulation, or omit deliberate ventilation.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-airtightness-sketch",
+            "kind": "criterion",
+            "verbatim": "Airtight building envelope",
+            "marks": 8,
+            "contextNote": "Sketch an uninterrupted air-barrier line around the section and show continuity at a relevant junction or service penetration, as in the source red-line diagram.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-space-heating-notes",
+            "kind": "criterion",
+            "verbatim": "Space heating demand",
+            "marks": 8,
+            "contextNote": "Explain the small energy demand for heating indoor spaces, distinguished from domestic hot water and total primary energy. The 2015 scheme cites space-heating demand ≤15 kWh/m² per year and heating load ≤10 W/m²; these are different quantities. Low fabric losses, controlled ventilation and useful gains reduce demand. Its primary-energy factor 2.58 and 120 kWh/m²/year criterion are historical scheme figures, not asserted as current rules.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-space-heating-sketch",
+            "kind": "criterion",
+            "verbatim": "Space heating demand",
+            "marks": 8,
+            "contextNote": "Use a relevant freehand sketch to connect reduced fabric/ventilation losses and useful heat gains with the low space-heating demand. Label the mechanisms; do not treat a tariff number by itself as the required sketch.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        },
+        "figureKey": "construction-studies-2015-HL-q10-scheme",
+        "taskGroups": [
+          {
+            "label": "a-airtightness",
+            "sourceCardId": "cons-2015-hl-q10-a-airtightness",
+            "marks": 16,
+            "rowIds": [
+              "a-airtightness-notes",
+              "a-airtightness-sketch"
+            ]
+          },
+          {
+            "label": "a-space-heating",
+            "sourceCardId": "cons-2015-hl-q10-a-space-heating",
+            "marks": 16,
+            "rowIds": [
+              "a-space-heating-notes",
+              "a-space-heating-sketch"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 26,
+          "textSha256": "9a604ada8f84ac13e2ee8116a5f957613bf3954fdd039dd5ccebb3577ce74e38"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 27,
+          "textSha256": "f1b521e54eb94e620028d1a598edc2d0f602f205d06bfd16fa37692f6b7fdcb1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 28,
+          "textSha256": "47459481bf9f744aa56377564afd963edcfad85fbc7b64efc704f92eb3c3e20d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 41,
+          "textSha256": "164e18b0f7aedf8ae18476918726ab188c9c804f90d8e3bdb3aa619c53835a45"
+        }
+      ],
+      "boundaryReview": "Primary(a): any2of3, each notes8/sketch8 =16; selected pair32. Part(b)notes7/sketch7 =14; part(c)notes7/sketch7 =14. Whole60.",
+      "selectionReview": "Expand all C(3,2)=3 fixed pairs for(a) and three whole60 routes. Notes and sketches are required modes of response. Illustrative airtightness, ventilation, shading and material examples are not additional finite options.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q10-scheme"
+      ]
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-a-airtightness-indoor-air",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-5",
+        "conceptId": "passive-house-and-daylight-a-airtightness-indoor-air",
+        "questionRef": "2015 HL Q10(a) — airtightness, indoor-air",
+        "stem": "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
+        "questionText": "Using notes and freehand sketches, discuss in detail the importance of airtight building envelope in Passive House design. This is one of the two selected16-mark topics.\n\nUsing notes and freehand sketches, discuss in detail the importance of indoor air quality in Passive House design. This is one of the two selected16-mark topics.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 32,
+        "rows": [
+          {
+            "id": "a-airtightness-notes",
+            "kind": "criterion",
+            "verbatim": "Airtight building envelope",
+            "marks": 8,
+            "contextNote": "Explain a continuous airtight layer, carefully sealed junctions/penetrations and controlled fresh-air supply. The source examples include taped membranes, plaster continuity, service cavities and blower-door testing. Airtightness limits uncontrolled leakage; it does not eliminate conductive heat loss through the fabric. Do not confuse the airtight barrier with insulation, or omit deliberate ventilation.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-airtightness-sketch",
+            "kind": "criterion",
+            "verbatim": "Airtight building envelope",
+            "marks": 8,
+            "contextNote": "Sketch an uninterrupted air-barrier line around the section and show continuity at a relevant junction or service penetration, as in the source red-line diagram.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-indoor-air-notes",
+            "kind": "criterion",
+            "verbatim": "Indoor air quality",
+            "marks": 8,
+            "contextNote": "Explain planned fresh-air supply, extract from wet rooms, filtration, humidity/pollutant control and heat recovery. Supply and extract streams exchange heat without mixing in the model; maintenance and correctly balanced flow matter. The source’s 0.3–0.6 air changes/hour concern designed ventilation; do not present that as the blower-door leakage test. Its plant example is explicitly of small quantitative effect and does not replace ventilation.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-indoor-air-sketch",
+            "kind": "criterion",
+            "verbatim": "Indoor air quality",
+            "marks": 8,
+            "contextNote": "Sketch the supply/extract routes and heat-exchanger arrangement, showing fresh filtered supply to living spaces and moisture/pollutant extraction from wet rooms. Keep the two air streams distinct, using the complete source ventilation diagrams.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        },
+        "figureKey": "construction-studies-2015-HL-q10-scheme",
+        "taskGroups": [
+          {
+            "label": "a-airtightness",
+            "sourceCardId": "cons-2015-hl-q10-a-airtightness",
+            "marks": 16,
+            "rowIds": [
+              "a-airtightness-notes",
+              "a-airtightness-sketch"
+            ]
+          },
+          {
+            "label": "a-indoor-air",
+            "sourceCardId": "cons-2015-hl-q10-a-indoor-air",
+            "marks": 16,
+            "rowIds": [
+              "a-indoor-air-notes",
+              "a-indoor-air-sketch"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 26,
+          "textSha256": "9a604ada8f84ac13e2ee8116a5f957613bf3954fdd039dd5ccebb3577ce74e38"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 27,
+          "textSha256": "f1b521e54eb94e620028d1a598edc2d0f602f205d06bfd16fa37692f6b7fdcb1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 28,
+          "textSha256": "47459481bf9f744aa56377564afd963edcfad85fbc7b64efc704f92eb3c3e20d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 41,
+          "textSha256": "164e18b0f7aedf8ae18476918726ab188c9c804f90d8e3bdb3aa619c53835a45"
+        }
+      ],
+      "boundaryReview": "Primary(a): any2of3, each notes8/sketch8 =16; selected pair32. Part(b)notes7/sketch7 =14; part(c)notes7/sketch7 =14. Whole60.",
+      "selectionReview": "Expand all C(3,2)=3 fixed pairs for(a) and three whole60 routes. Notes and sketches are required modes of response. Illustrative airtightness, ventilation, shading and material examples are not additional finite options.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q10-scheme"
+      ]
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-a-space-heating-indoor-air",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-5-3",
+        "conceptId": "passive-house-and-daylight-a-space-heating-indoor-air",
+        "questionRef": "2015 HL Q10(a) — space-heating, indoor-air",
+        "stem": "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
+        "questionText": "Using notes and freehand sketches, discuss in detail the importance of space heating demand in Passive House design. This is one of the two selected16-mark topics.\n\nUsing notes and freehand sketches, discuss in detail the importance of indoor air quality in Passive House design. This is one of the two selected16-mark topics.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 32,
+        "rows": [
+          {
+            "id": "a-space-heating-notes",
+            "kind": "criterion",
+            "verbatim": "Space heating demand",
+            "marks": 8,
+            "contextNote": "Explain the small energy demand for heating indoor spaces, distinguished from domestic hot water and total primary energy. The 2015 scheme cites space-heating demand ≤15 kWh/m² per year and heating load ≤10 W/m²; these are different quantities. Low fabric losses, controlled ventilation and useful gains reduce demand. Its primary-energy factor 2.58 and 120 kWh/m²/year criterion are historical scheme figures, not asserted as current rules.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-space-heating-sketch",
+            "kind": "criterion",
+            "verbatim": "Space heating demand",
+            "marks": 8,
+            "contextNote": "Use a relevant freehand sketch to connect reduced fabric/ventilation losses and useful heat gains with the low space-heating demand. Label the mechanisms; do not treat a tariff number by itself as the required sketch.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-indoor-air-notes",
+            "kind": "criterion",
+            "verbatim": "Indoor air quality",
+            "marks": 8,
+            "contextNote": "Explain planned fresh-air supply, extract from wet rooms, filtration, humidity/pollutant control and heat recovery. Supply and extract streams exchange heat without mixing in the model; maintenance and correctly balanced flow matter. The source’s 0.3–0.6 air changes/hour concern designed ventilation; do not present that as the blower-door leakage test. Its plant example is explicitly of small quantitative effect and does not replace ventilation.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-indoor-air-sketch",
+            "kind": "criterion",
+            "verbatim": "Indoor air quality",
+            "marks": 8,
+            "contextNote": "Sketch the supply/extract routes and heat-exchanger arrangement, showing fresh filtered supply to living spaces and moisture/pollutant extraction from wet rooms. Keep the two air streams distinct, using the complete source ventilation diagrams.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        },
+        "figureKey": "construction-studies-2015-HL-q10-scheme",
+        "taskGroups": [
+          {
+            "label": "a-space-heating",
+            "sourceCardId": "cons-2015-hl-q10-a-space-heating",
+            "marks": 16,
+            "rowIds": [
+              "a-space-heating-notes",
+              "a-space-heating-sketch"
+            ]
+          },
+          {
+            "label": "a-indoor-air",
+            "sourceCardId": "cons-2015-hl-q10-a-indoor-air",
+            "marks": 16,
+            "rowIds": [
+              "a-indoor-air-notes",
+              "a-indoor-air-sketch"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 26,
+          "textSha256": "9a604ada8f84ac13e2ee8116a5f957613bf3954fdd039dd5ccebb3577ce74e38"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 27,
+          "textSha256": "f1b521e54eb94e620028d1a598edc2d0f602f205d06bfd16fa37692f6b7fdcb1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 28,
+          "textSha256": "47459481bf9f744aa56377564afd963edcfad85fbc7b64efc704f92eb3c3e20d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 41,
+          "textSha256": "164e18b0f7aedf8ae18476918726ab188c9c804f90d8e3bdb3aa619c53835a45"
+        }
+      ],
+      "boundaryReview": "Primary(a): any2of3, each notes8/sketch8 =16; selected pair32. Part(b)notes7/sketch7 =14; part(c)notes7/sketch7 =14. Whole60.",
+      "selectionReview": "Expand all C(3,2)=3 fixed pairs for(a) and three whole60 routes. Notes and sketches are required modes of response. Illustrative airtightness, ventilation, shading and material examples are not additional finite options.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q10-scheme"
+      ]
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-b",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-4",
+        "conceptId": "passive-house-and-daylight-b",
+        "questionRef": "2015 HL Q10(b)",
+        "stem": "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
+        "questionText": "Using notes and freehand sketches, discuss the importance of thermal mass in Passive House design.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 14,
+        "rows": [
+          {
+            "id": "notes",
+            "kind": "criterion",
+            "verbatim": "Importance of thermal mass",
+            "marks": 7,
+            "contextNote": "Explain how exposed heavy materials absorb and store heat and release it later, moderating and delaying temperature peaks. The source examples include concrete floors/walls, brick and stone, with high density and heat capacity and suitable conductivity. Thermal mass must work with useful solar gain, shading and ventilation; it is not the same as thermal insulation.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          },
+          {
+            "id": "sketch",
+            "kind": "criterion",
+            "verbatim": "Importance of thermal mass",
+            "marks": 7,
+            "contextNote": "Sketch solar radiation entering glazing, absorption/storage in the floor or wall and later heat release to the occupied space, as in the source model. Make the time-shifted storage/release mechanism clear.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        },
+        "figureKey": "construction-studies-2015-HL-q10-scheme"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 26,
+          "textSha256": "9a604ada8f84ac13e2ee8116a5f957613bf3954fdd039dd5ccebb3577ce74e38"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 27,
+          "textSha256": "f1b521e54eb94e620028d1a598edc2d0f602f205d06bfd16fa37692f6b7fdcb1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 28,
+          "textSha256": "47459481bf9f744aa56377564afd963edcfad85fbc7b64efc704f92eb3c3e20d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 41,
+          "textSha256": "164e18b0f7aedf8ae18476918726ab188c9c804f90d8e3bdb3aa619c53835a45"
+        }
+      ],
+      "boundaryReview": "Primary(a): any2of3, each notes8/sketch8 =16; selected pair32. Part(b)notes7/sketch7 =14; part(c)notes7/sketch7 =14. Whole60.",
+      "selectionReview": "Expand all C(3,2)=3 fixed pairs for(a) and three whole60 routes. Notes and sketches are required modes of response. Illustrative airtightness, ventilation, shading and material examples are not additional finite options.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q10-scheme"
+      ]
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-c",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-4",
+        "conceptId": "passive-house-and-daylight-c",
+        "questionRef": "2015 HL Q10(c)",
+        "stem": "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
+        "questionText": "Using notes and freehand sketches, discuss the function of carefully designed solar shading for the Passive House shown.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 14,
+        "rows": [
+          {
+            "id": "notes",
+            "kind": "criterion",
+            "verbatim": "Carefully designed solar shading",
+            "marks": 7,
+            "contextNote": "Explain limiting excessive direct summer gain and glare while allowing useful winter sun. Source examples include correctly sized overhangs, brise-soleil, adjustable external screens, blinds and balconies without thermal bridges. Select and justify suitable design details for the illustrated house; do not treat the example list as a compulsory finite pool.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          },
+          {
+            "id": "sketch",
+            "kind": "criterion",
+            "verbatim": "Carefully designed solar shading",
+            "marks": 7,
+            "contextNote": "Sketch the chosen shading detail and the high summer/low winter sun paths, or the operation of adjustable shading, to explain the function. Retain the illustrated house as context and distinguish external interception of sunlight from internal blinds. The source provides several complete alternative model drawings.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        },
+        "figureKey": "construction-studies-2015-HL-q10-scheme"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 26,
+          "textSha256": "9a604ada8f84ac13e2ee8116a5f957613bf3954fdd039dd5ccebb3577ce74e38"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 27,
+          "textSha256": "f1b521e54eb94e620028d1a598edc2d0f602f205d06bfd16fa37692f6b7fdcb1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 28,
+          "textSha256": "47459481bf9f744aa56377564afd963edcfad85fbc7b64efc704f92eb3c3e20d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 41,
+          "textSha256": "164e18b0f7aedf8ae18476918726ab188c9c804f90d8e3bdb3aa619c53835a45"
+        }
+      ],
+      "boundaryReview": "Primary(a): any2of3, each notes8/sketch8 =16; selected pair32. Part(b)notes7/sketch7 =14; part(c)notes7/sketch7 =14. Whole60.",
+      "selectionReview": "Expand all C(3,2)=3 fixed pairs for(a) and three whole60 routes. Notes and sketches are required modes of response. Illustrative airtightness, ventilation, shading and material examples are not additional finite options.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q10-scheme"
+      ]
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-complete-airtightness-space-heating",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-5",
+        "conceptId": "passive-house-and-daylight-complete-airtightness-space-heating",
+        "questionRef": "2015 HL Q10 — complete: airtightness, space-heating",
+        "stem": "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
+        "questionText": "Using notes and freehand sketches, discuss in detail the importance of airtight building envelope in Passive House design. This is one of the two selected16-mark topics.\n\nUsing notes and freehand sketches, discuss in detail the importance of space heating demand in Passive House design. This is one of the two selected16-mark topics.\n\nUsing notes and freehand sketches, discuss the importance of thermal mass in Passive House design.\n\nUsing notes and freehand sketches, discuss the function of carefully designed solar shading for the Passive House shown.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-airtightness-notes",
+            "kind": "criterion",
+            "verbatim": "Airtight building envelope",
+            "marks": 8,
+            "contextNote": "Explain a continuous airtight layer, carefully sealed junctions/penetrations and controlled fresh-air supply. The source examples include taped membranes, plaster continuity, service cavities and blower-door testing. Airtightness limits uncontrolled leakage; it does not eliminate conductive heat loss through the fabric. Do not confuse the airtight barrier with insulation, or omit deliberate ventilation.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-airtightness-sketch",
+            "kind": "criterion",
+            "verbatim": "Airtight building envelope",
+            "marks": 8,
+            "contextNote": "Sketch an uninterrupted air-barrier line around the section and show continuity at a relevant junction or service penetration, as in the source red-line diagram.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-space-heating-notes",
+            "kind": "criterion",
+            "verbatim": "Space heating demand",
+            "marks": 8,
+            "contextNote": "Explain the small energy demand for heating indoor spaces, distinguished from domestic hot water and total primary energy. The 2015 scheme cites space-heating demand ≤15 kWh/m² per year and heating load ≤10 W/m²; these are different quantities. Low fabric losses, controlled ventilation and useful gains reduce demand. Its primary-energy factor 2.58 and 120 kWh/m²/year criterion are historical scheme figures, not asserted as current rules.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-space-heating-sketch",
+            "kind": "criterion",
+            "verbatim": "Space heating demand",
+            "marks": 8,
+            "contextNote": "Use a relevant freehand sketch to connect reduced fabric/ventilation losses and useful heat gains with the low space-heating demand. Label the mechanisms; do not treat a tariff number by itself as the required sketch.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "b-notes",
+            "kind": "criterion",
+            "verbatim": "Importance of thermal mass",
+            "marks": 7,
+            "contextNote": "Explain how exposed heavy materials absorb and store heat and release it later, moderating and delaying temperature peaks. The source examples include concrete floors/walls, brick and stone, with high density and heat capacity and suitable conductivity. Thermal mass must work with useful solar gain, shading and ventilation; it is not the same as thermal insulation.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          },
+          {
+            "id": "b-sketch",
+            "kind": "criterion",
+            "verbatim": "Importance of thermal mass",
+            "marks": 7,
+            "contextNote": "Sketch solar radiation entering glazing, absorption/storage in the floor or wall and later heat release to the occupied space, as in the source model. Make the time-shifted storage/release mechanism clear.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          },
+          {
+            "id": "c-notes",
+            "kind": "criterion",
+            "verbatim": "Carefully designed solar shading",
+            "marks": 7,
+            "contextNote": "Explain limiting excessive direct summer gain and glare while allowing useful winter sun. Source examples include correctly sized overhangs, brise-soleil, adjustable external screens, blinds and balconies without thermal bridges. Select and justify suitable design details for the illustrated house; do not treat the example list as a compulsory finite pool.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          },
+          {
+            "id": "c-sketch",
+            "kind": "criterion",
+            "verbatim": "Carefully designed solar shading",
+            "marks": 7,
+            "contextNote": "Sketch the chosen shading detail and the high summer/low winter sun paths, or the operation of adjustable shading, to explain the function. Retain the illustrated house as context and distinguish external interception of sunlight from internal blinds. The source provides several complete alternative model drawings.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        },
+        "figureKey": "construction-studies-2015-HL-q10-scheme",
+        "taskGroups": [
+          {
+            "label": "a-airtightness",
+            "sourceCardId": "cons-2015-hl-q10-a-airtightness",
+            "marks": 16,
+            "rowIds": [
+              "a-airtightness-notes",
+              "a-airtightness-sketch"
+            ]
+          },
+          {
+            "label": "a-space-heating",
+            "sourceCardId": "cons-2015-hl-q10-a-space-heating",
+            "marks": 16,
+            "rowIds": [
+              "a-space-heating-notes",
+              "a-space-heating-sketch"
+            ]
+          },
+          {
+            "label": "b",
+            "sourceCardId": "cons-2015-hl-q10-b",
+            "marks": 14,
+            "rowIds": [
+              "b-notes",
+              "b-sketch"
+            ]
+          },
+          {
+            "label": "c",
+            "sourceCardId": "cons-2015-hl-q10-c",
+            "marks": 14,
+            "rowIds": [
+              "c-notes",
+              "c-sketch"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 26,
+          "textSha256": "9a604ada8f84ac13e2ee8116a5f957613bf3954fdd039dd5ccebb3577ce74e38"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 27,
+          "textSha256": "f1b521e54eb94e620028d1a598edc2d0f602f205d06bfd16fa37692f6b7fdcb1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 28,
+          "textSha256": "47459481bf9f744aa56377564afd963edcfad85fbc7b64efc704f92eb3c3e20d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 41,
+          "textSha256": "164e18b0f7aedf8ae18476918726ab188c9c804f90d8e3bdb3aa619c53835a45"
+        }
+      ],
+      "boundaryReview": "Primary(a): any2of3, each notes8/sketch8 =16; selected pair32. Part(b)notes7/sketch7 =14; part(c)notes7/sketch7 =14. Whole60.",
+      "selectionReview": "Expand all C(3,2)=3 fixed pairs for(a) and three whole60 routes. Notes and sketches are required modes of response. Illustrative airtightness, ventilation, shading and material examples are not additional finite options.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q10-scheme"
+      ]
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-complete-airtightness-indoor-air",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-5",
+        "conceptId": "passive-house-and-daylight-complete-airtightness-indoor-air",
+        "questionRef": "2015 HL Q10 — complete: airtightness, indoor-air",
+        "stem": "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
+        "questionText": "Using notes and freehand sketches, discuss in detail the importance of airtight building envelope in Passive House design. This is one of the two selected16-mark topics.\n\nUsing notes and freehand sketches, discuss in detail the importance of indoor air quality in Passive House design. This is one of the two selected16-mark topics.\n\nUsing notes and freehand sketches, discuss the importance of thermal mass in Passive House design.\n\nUsing notes and freehand sketches, discuss the function of carefully designed solar shading for the Passive House shown.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-airtightness-notes",
+            "kind": "criterion",
+            "verbatim": "Airtight building envelope",
+            "marks": 8,
+            "contextNote": "Explain a continuous airtight layer, carefully sealed junctions/penetrations and controlled fresh-air supply. The source examples include taped membranes, plaster continuity, service cavities and blower-door testing. Airtightness limits uncontrolled leakage; it does not eliminate conductive heat loss through the fabric. Do not confuse the airtight barrier with insulation, or omit deliberate ventilation.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-airtightness-sketch",
+            "kind": "criterion",
+            "verbatim": "Airtight building envelope",
+            "marks": 8,
+            "contextNote": "Sketch an uninterrupted air-barrier line around the section and show continuity at a relevant junction or service penetration, as in the source red-line diagram.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-indoor-air-notes",
+            "kind": "criterion",
+            "verbatim": "Indoor air quality",
+            "marks": 8,
+            "contextNote": "Explain planned fresh-air supply, extract from wet rooms, filtration, humidity/pollutant control and heat recovery. Supply and extract streams exchange heat without mixing in the model; maintenance and correctly balanced flow matter. The source’s 0.3–0.6 air changes/hour concern designed ventilation; do not present that as the blower-door leakage test. Its plant example is explicitly of small quantitative effect and does not replace ventilation.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-indoor-air-sketch",
+            "kind": "criterion",
+            "verbatim": "Indoor air quality",
+            "marks": 8,
+            "contextNote": "Sketch the supply/extract routes and heat-exchanger arrangement, showing fresh filtered supply to living spaces and moisture/pollutant extraction from wet rooms. Keep the two air streams distinct, using the complete source ventilation diagrams.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "b-notes",
+            "kind": "criterion",
+            "verbatim": "Importance of thermal mass",
+            "marks": 7,
+            "contextNote": "Explain how exposed heavy materials absorb and store heat and release it later, moderating and delaying temperature peaks. The source examples include concrete floors/walls, brick and stone, with high density and heat capacity and suitable conductivity. Thermal mass must work with useful solar gain, shading and ventilation; it is not the same as thermal insulation.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          },
+          {
+            "id": "b-sketch",
+            "kind": "criterion",
+            "verbatim": "Importance of thermal mass",
+            "marks": 7,
+            "contextNote": "Sketch solar radiation entering glazing, absorption/storage in the floor or wall and later heat release to the occupied space, as in the source model. Make the time-shifted storage/release mechanism clear.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          },
+          {
+            "id": "c-notes",
+            "kind": "criterion",
+            "verbatim": "Carefully designed solar shading",
+            "marks": 7,
+            "contextNote": "Explain limiting excessive direct summer gain and glare while allowing useful winter sun. Source examples include correctly sized overhangs, brise-soleil, adjustable external screens, blinds and balconies without thermal bridges. Select and justify suitable design details for the illustrated house; do not treat the example list as a compulsory finite pool.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          },
+          {
+            "id": "c-sketch",
+            "kind": "criterion",
+            "verbatim": "Carefully designed solar shading",
+            "marks": 7,
+            "contextNote": "Sketch the chosen shading detail and the high summer/low winter sun paths, or the operation of adjustable shading, to explain the function. Retain the illustrated house as context and distinguish external interception of sunlight from internal blinds. The source provides several complete alternative model drawings.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        },
+        "figureKey": "construction-studies-2015-HL-q10-scheme",
+        "taskGroups": [
+          {
+            "label": "a-airtightness",
+            "sourceCardId": "cons-2015-hl-q10-a-airtightness",
+            "marks": 16,
+            "rowIds": [
+              "a-airtightness-notes",
+              "a-airtightness-sketch"
+            ]
+          },
+          {
+            "label": "a-indoor-air",
+            "sourceCardId": "cons-2015-hl-q10-a-indoor-air",
+            "marks": 16,
+            "rowIds": [
+              "a-indoor-air-notes",
+              "a-indoor-air-sketch"
+            ]
+          },
+          {
+            "label": "b",
+            "sourceCardId": "cons-2015-hl-q10-b",
+            "marks": 14,
+            "rowIds": [
+              "b-notes",
+              "b-sketch"
+            ]
+          },
+          {
+            "label": "c",
+            "sourceCardId": "cons-2015-hl-q10-c",
+            "marks": 14,
+            "rowIds": [
+              "c-notes",
+              "c-sketch"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 26,
+          "textSha256": "9a604ada8f84ac13e2ee8116a5f957613bf3954fdd039dd5ccebb3577ce74e38"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 27,
+          "textSha256": "f1b521e54eb94e620028d1a598edc2d0f602f205d06bfd16fa37692f6b7fdcb1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 28,
+          "textSha256": "47459481bf9f744aa56377564afd963edcfad85fbc7b64efc704f92eb3c3e20d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 41,
+          "textSha256": "164e18b0f7aedf8ae18476918726ab188c9c804f90d8e3bdb3aa619c53835a45"
+        }
+      ],
+      "boundaryReview": "Primary(a): any2of3, each notes8/sketch8 =16; selected pair32. Part(b)notes7/sketch7 =14; part(c)notes7/sketch7 =14. Whole60.",
+      "selectionReview": "Expand all C(3,2)=3 fixed pairs for(a) and three whole60 routes. Notes and sketches are required modes of response. Illustrative airtightness, ventilation, shading and material examples are not additional finite options.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q10-scheme"
+      ]
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-complete-space-heating-indoor-air",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-5-3",
+        "conceptId": "passive-house-and-daylight-complete-space-heating-indoor-air",
+        "questionRef": "2015 HL Q10 — complete: space-heating, indoor-air",
+        "stem": "This is the PRIMARY Question 10 on Passive House design. Part (a) selects any TWO of three printed topics: airtight building envelope, space heating demand and indoor air quality. Part (b) concerns thermal mass. Part (c) concerns carefully designed solar shading for the house shown in the original illustration. Use notes and freehand sketches throughout. The alternative daylight/glazing essay is a different 60-mark route; do not add it to this question.",
+        "questionText": "Using notes and freehand sketches, discuss in detail the importance of space heating demand in Passive House design. This is one of the two selected16-mark topics.\n\nUsing notes and freehand sketches, discuss in detail the importance of indoor air quality in Passive House design. This is one of the two selected16-mark topics.\n\nUsing notes and freehand sketches, discuss the importance of thermal mass in Passive House design.\n\nUsing notes and freehand sketches, discuss the function of carefully designed solar shading for the Passive House shown.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-space-heating-notes",
+            "kind": "criterion",
+            "verbatim": "Space heating demand",
+            "marks": 8,
+            "contextNote": "Explain the small energy demand for heating indoor spaces, distinguished from domestic hot water and total primary energy. The 2015 scheme cites space-heating demand ≤15 kWh/m² per year and heating load ≤10 W/m²; these are different quantities. Low fabric losses, controlled ventilation and useful gains reduce demand. Its primary-energy factor 2.58 and 120 kWh/m²/year criterion are historical scheme figures, not asserted as current rules.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-space-heating-sketch",
+            "kind": "criterion",
+            "verbatim": "Space heating demand",
+            "marks": 8,
+            "contextNote": "Use a relevant freehand sketch to connect reduced fabric/ventilation losses and useful heat gains with the low space-heating demand. Label the mechanisms; do not treat a tariff number by itself as the required sketch.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-indoor-air-notes",
+            "kind": "criterion",
+            "verbatim": "Indoor air quality",
+            "marks": 8,
+            "contextNote": "Explain planned fresh-air supply, extract from wet rooms, filtration, humidity/pollutant control and heat recovery. Supply and extract streams exchange heat without mixing in the model; maintenance and correctly balanced flow matter. The source’s 0.3–0.6 air changes/hour concern designed ventilation; do not present that as the blower-door leakage test. Its plant example is explicitly of small quantitative effect and does not replace ventilation.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-indoor-air-sketch",
+            "kind": "criterion",
+            "verbatim": "Indoor air quality",
+            "marks": 8,
+            "contextNote": "Sketch the supply/extract routes and heat-exchanger arrangement, showing fresh filtered supply to living spaces and moisture/pollutant extraction from wet rooms. Keep the two air streams distinct, using the complete source ventilation diagrams.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "b-notes",
+            "kind": "criterion",
+            "verbatim": "Importance of thermal mass",
+            "marks": 7,
+            "contextNote": "Explain how exposed heavy materials absorb and store heat and release it later, moderating and delaying temperature peaks. The source examples include concrete floors/walls, brick and stone, with high density and heat capacity and suitable conductivity. Thermal mass must work with useful solar gain, shading and ventilation; it is not the same as thermal insulation.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          },
+          {
+            "id": "b-sketch",
+            "kind": "criterion",
+            "verbatim": "Importance of thermal mass",
+            "marks": 7,
+            "contextNote": "Sketch solar radiation entering glazing, absorption/storage in the floor or wall and later heat release to the occupied space, as in the source model. Make the time-shifted storage/release mechanism clear.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          },
+          {
+            "id": "c-notes",
+            "kind": "criterion",
+            "verbatim": "Carefully designed solar shading",
+            "marks": 7,
+            "contextNote": "Explain limiting excessive direct summer gain and glare while allowing useful winter sun. Source examples include correctly sized overhangs, brise-soleil, adjustable external screens, blinds and balconies without thermal bridges. Select and justify suitable design details for the illustrated house; do not treat the example list as a compulsory finite pool.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          },
+          {
+            "id": "c-sketch",
+            "kind": "criterion",
+            "verbatim": "Carefully designed solar shading",
+            "marks": 7,
+            "contextNote": "Sketch the chosen shading detail and the high summer/low winter sun paths, or the operation of adjustable shading, to explain the function. Retain the illustrated house as context and distinguish external interception of sunlight from internal blinds. The source provides several complete alternative model drawings.",
+            "permittedMarks": [
+              0,
+              7
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House design",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        },
+        "figureKey": "construction-studies-2015-HL-q10-scheme",
+        "taskGroups": [
+          {
+            "label": "a-space-heating",
+            "sourceCardId": "cons-2015-hl-q10-a-space-heating",
+            "marks": 16,
+            "rowIds": [
+              "a-space-heating-notes",
+              "a-space-heating-sketch"
+            ]
+          },
+          {
+            "label": "a-indoor-air",
+            "sourceCardId": "cons-2015-hl-q10-a-indoor-air",
+            "marks": 16,
+            "rowIds": [
+              "a-indoor-air-notes",
+              "a-indoor-air-sketch"
+            ]
+          },
+          {
+            "label": "b",
+            "sourceCardId": "cons-2015-hl-q10-b",
+            "marks": 14,
+            "rowIds": [
+              "b-notes",
+              "b-sketch"
+            ]
+          },
+          {
+            "label": "c",
+            "sourceCardId": "cons-2015-hl-q10-c",
+            "marks": 14,
+            "rowIds": [
+              "c-notes",
+              "c-sketch"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 26,
+          "textSha256": "9a604ada8f84ac13e2ee8116a5f957613bf3954fdd039dd5ccebb3577ce74e38"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 27,
+          "textSha256": "f1b521e54eb94e620028d1a598edc2d0f602f205d06bfd16fa37692f6b7fdcb1"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 28,
+          "textSha256": "47459481bf9f744aa56377564afd963edcfad85fbc7b64efc704f92eb3c3e20d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 41,
+          "textSha256": "164e18b0f7aedf8ae18476918726ab188c9c804f90d8e3bdb3aa619c53835a45"
+        }
+      ],
+      "boundaryReview": "Primary(a): any2of3, each notes8/sketch8 =16; selected pair32. Part(b)notes7/sketch7 =14; part(c)notes7/sketch7 =14. Whole60.",
+      "selectionReview": "Expand all C(3,2)=3 fixed pairs for(a) and three whole60 routes. Notes and sketches are required modes of response. Illustrative airtightness, ventilation, shading and material examples are not additional finite options.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q10-scheme"
+      ]
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-alt-discussion",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-7-4",
+        "conceptId": "passive-house-and-daylight-alt-discussion",
+        "questionRef": "2015 HL Q10-alt — discussion",
+        "stem": "This is the ALTERNATIVE Question 10, based on the original printed passage adapted from Dermot Bannon, LOVE YOUR HOME: Secrets to a Successful Space (2014), Gill & Macmillan, ISBN 9780717164486. Read the complete passage in the attached original question. It discusses the role of light in architecture and wellbeing, changing glass technology, the limited daylight in many older Irish homes, lower-U-value glazing and the attraction of natural light. Discuss the statement, explain glazing advances and recommend THREE best-practice daylight guidelines. The passage’s description of glazing without heat loss is qualitative rhetoric: a low U-value reduces heat loss rather than eliminating it. This alternative is a single 60-mark route, not an addition to the primary Passive House question.",
+        "questionText": "Discuss the original printed statement about light, architecture and the changing use of glazing in detail.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 24,
+        "rows": [
+          {
+            "id": "point-1",
+            "kind": "criterion",
+            "verbatim": "Discussion – point 1 (3 for point, 5 for discussion)",
+            "marks": 8,
+            "contextNote": "Develop one distinct, relevant point from the passage: the importance of daylight for the quality and use of spaces; the changing architectural possibilities of glass; the contrast with older limited/draughty glazing; orientation and room layout; the relationship between light, views and occupants. Award point 3 and discussion 5, without repeating another point. Discuss the qualitative passage critically: lower U-values reduce heat loss, rather than making it zero. Historical commentary is not a current-law claim.",
+            "permittedMarks": [
+              0,
+              3,
+              5,
+              8
+            ]
+          },
+          {
+            "id": "point-2",
+            "kind": "criterion",
+            "verbatim": "Discussion – point 2 (3 for point, 5 for discussion)",
+            "marks": 8,
+            "contextNote": "Develop one distinct, relevant point from the passage: the importance of daylight for the quality and use of spaces; the changing architectural possibilities of glass; the contrast with older limited/draughty glazing; orientation and room layout; the relationship between light, views and occupants. Award point 3 and discussion 5, without repeating another point. Discuss the qualitative passage critically: lower U-values reduce heat loss, rather than making it zero. Historical commentary is not a current-law claim.",
+            "permittedMarks": [
+              0,
+              3,
+              5,
+              8
+            ]
+          },
+          {
+            "id": "point-3",
+            "kind": "criterion",
+            "verbatim": "Discussion – point 3 (3 for point, 5 for discussion)",
+            "marks": 8,
+            "contextNote": "Develop one distinct, relevant point from the passage: the importance of daylight for the quality and use of spaces; the changing architectural possibilities of glass; the contrast with older limited/draughty glazing; orientation and room layout; the relationship between light, views and occupants. Award point 3 and discussion 5, without repeating another point. Discuss the qualitative passage critically: lower U-values reduce heat loss, rather than making it zero. Historical commentary is not a current-law claim.",
+            "permittedMarks": [
+              0,
+              3,
+              5,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-alternative",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Natural light and glazing",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission. Passage adapted from Dermot Bannon (2014), Gill & Macmillan, as credited on the original paper.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 29,
+          "textSha256": "a5c2fb0dff1b554c09183b8809512b811d7d785873f7e01d40c1636d618c08f6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 30,
+          "textSha256": "79a8a287a8db043326ce5a07dc6daf76f875b4f3d96d259e87fdae257e98a739"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 42,
+          "textSha256": "ea2ec784ea345d02604940c631e76f7f23b3c917453314913d94e9be23197789"
+        }
+      ],
+      "boundaryReview": "Alternative: discussion24 = three(point3/discussion5); glazing advances6 shared; guidelines30 = three(point4/discussion6); whole60.",
+      "selectionReview": "The printed OR creates a separate alternative whole-question route. THREE daylight guidelines and THREE discussion points are open responses, not a finite list. Do not fan out illustrative scheme examples.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-alternative"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-alt-glazing",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-3-6",
+        "conceptId": "passive-house-and-daylight-alt-glazing",
+        "questionRef": "2015 HL Q10-alt — glazing advances",
+        "stem": "This is the ALTERNATIVE Question 10, based on the original printed passage adapted from Dermot Bannon, LOVE YOUR HOME: Secrets to a Successful Space (2014), Gill & Macmillan, ISBN 9780717164486. Read the complete passage in the attached original question. It discusses the role of light in architecture and wellbeing, changing glass technology, the limited daylight in many older Irish homes, lower-U-value glazing and the attraction of natural light. Discuss the statement, explain glazing advances and recommend THREE best-practice daylight guidelines. The passage’s description of glazing without heat loss is qualitative rhetoric: a low U-value reduces heat loss rather than eliminating it. This alternative is a single 60-mark route, not an addition to the primary Passive House question.",
+        "questionText": "Outline how advances in glazing technology have led to increased use of glass in house design, in the context of the printed passage.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "advances",
+            "kind": "criterion",
+            "verbatim": "Advances in glazing technology - increased use of glass",
+            "marks": 6,
+            "contextNote": "Explain relevant improvements and their design consequences, for example low-emissivity coatings reducing radiant heat transfer, insulating/vacuum glazing, safer laminated or structural glazing, or controllable tint. This is one shared 6-mark allowance; the scheme does not publish a separate mark per technology. The source’s claim that low iron content itself reduces conductivity is not used as a required technical explanation. Lower U-values permit reduced heat loss; they do not mean no heat transfer at all.",
+            "permittedMarks": [
+              0,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-alternative",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Natural light and glazing",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission. Passage adapted from Dermot Bannon (2014), Gill & Macmillan, as credited on the original paper.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 29,
+          "textSha256": "a5c2fb0dff1b554c09183b8809512b811d7d785873f7e01d40c1636d618c08f6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 30,
+          "textSha256": "79a8a287a8db043326ce5a07dc6daf76f875b4f3d96d259e87fdae257e98a739"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 42,
+          "textSha256": "ea2ec784ea345d02604940c631e76f7f23b3c917453314913d94e9be23197789"
+        }
+      ],
+      "boundaryReview": "Alternative: discussion24 = three(point3/discussion5); glazing advances6 shared; guidelines30 = three(point4/discussion6); whole60.",
+      "selectionReview": "The printed OR creates a separate alternative whole-question route. THREE daylight guidelines and THREE discussion points are open responses, not a finite list. Do not fan out illustrative scheme examples.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-alternative"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-alt-guidelines",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-7-4",
+        "conceptId": "passive-house-and-daylight-alt-guidelines",
+        "questionRef": "2015 HL Q10-alt — three guidelines",
+        "stem": "This is the ALTERNATIVE Question 10, based on the original printed passage adapted from Dermot Bannon, LOVE YOUR HOME: Secrets to a Successful Space (2014), Gill & Macmillan, ISBN 9780717164486. Read the complete passage in the attached original question. It discusses the role of light in architecture and wellbeing, changing glass technology, the limited daylight in many older Irish homes, lower-U-value glazing and the attraction of natural light. Discuss the statement, explain glazing advances and recommend THREE best-practice daylight guidelines. The passage’s description of glazing without heat loss is qualitative rhetoric: a low U-value reduces heat loss rather than eliminating it. This alternative is a single 60-mark route, not an addition to the primary Passive House question.",
+        "questionText": "Recommend THREE best-practice guidelines that would encourage better use of natural light in contemporary dwelling-house design. Explain each recommendation.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 30,
+        "rows": [
+          {
+            "id": "guideline-1",
+            "kind": "criterion",
+            "verbatim": "Guideline 1 (4 for point, 6 for discussion)",
+            "marks": 10,
+            "contextNote": "Give a distinct practical guideline(point 4) and explain how it improves natural lighting(discussion 6). The scheme accepts orientation and considered glazing position, shallow plans, rooflights/internal glazing, adapting existing houses, sustainable planning/incentives or design education. Connect each recommendation to daylight access and occupants while considering glare/overheating. These are illustrative open choices, not a fixed choose-three list; do not repeat the same guideline.",
+            "permittedMarks": [
+              0,
+              4,
+              6,
+              10
+            ]
+          },
+          {
+            "id": "guideline-2",
+            "kind": "criterion",
+            "verbatim": "Guideline 2 (4 for point, 6 for discussion)",
+            "marks": 10,
+            "contextNote": "Give a distinct practical guideline(point 4) and explain how it improves natural lighting(discussion 6). The scheme accepts orientation and considered glazing position, shallow plans, rooflights/internal glazing, adapting existing houses, sustainable planning/incentives or design education. Connect each recommendation to daylight access and occupants while considering glare/overheating. These are illustrative open choices, not a fixed choose-three list; do not repeat the same guideline.",
+            "permittedMarks": [
+              0,
+              4,
+              6,
+              10
+            ]
+          },
+          {
+            "id": "guideline-3",
+            "kind": "criterion",
+            "verbatim": "Guideline 3 (4 for point, 6 for discussion)",
+            "marks": 10,
+            "contextNote": "Give a distinct practical guideline(point 4) and explain how it improves natural lighting(discussion 6). The scheme accepts orientation and considered glazing position, shallow plans, rooflights/internal glazing, adapting existing houses, sustainable planning/incentives or design education. Connect each recommendation to daylight access and occupants while considering glare/overheating. These are illustrative open choices, not a fixed choose-three list; do not repeat the same guideline.",
+            "permittedMarks": [
+              0,
+              4,
+              6,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-alternative",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Natural light and glazing",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission. Passage adapted from Dermot Bannon (2014), Gill & Macmillan, as credited on the original paper.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 29,
+          "textSha256": "a5c2fb0dff1b554c09183b8809512b811d7d785873f7e01d40c1636d618c08f6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 30,
+          "textSha256": "79a8a287a8db043326ce5a07dc6daf76f875b4f3d96d259e87fdae257e98a739"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 42,
+          "textSha256": "ea2ec784ea345d02604940c631e76f7f23b3c917453314913d94e9be23197789"
+        }
+      ],
+      "boundaryReview": "Alternative: discussion24 = three(point3/discussion5); glazing advances6 shared; guidelines30 = three(point4/discussion6); whole60.",
+      "selectionReview": "The printed OR creates a separate alternative whole-question route. THREE daylight guidelines and THREE discussion points are open responses, not a finite list. Do not fan out illustrative scheme examples.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-alternative"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "10",
+      "card": {
+        "id": "cons-2015-hl-q10-alt-complete",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-7-4",
+        "conceptId": "passive-house-and-daylight-alt-complete",
+        "questionRef": "2015 HL Q10-alt — complete alternative",
+        "stem": "This is the ALTERNATIVE Question 10, based on the original printed passage adapted from Dermot Bannon, LOVE YOUR HOME: Secrets to a Successful Space (2014), Gill & Macmillan, ISBN 9780717164486. Read the complete passage in the attached original question. It discusses the role of light in architecture and wellbeing, changing glass technology, the limited daylight in many older Irish homes, lower-U-value glazing and the attraction of natural light. Discuss the statement, explain glazing advances and recommend THREE best-practice daylight guidelines. The passage’s description of glazing without heat loss is qualitative rhetoric: a low U-value reduces heat loss rather than eliminating it. This alternative is a single 60-mark route, not an addition to the primary Passive House question.",
+        "questionText": "Discuss the original printed statement about light, architecture and the changing use of glazing in detail.\n\nOutline how advances in glazing technology have led to increased use of glass in house design, in the context of the printed passage.\n\nRecommend THREE best-practice guidelines that would encourage better use of natural light in contemporary dwelling-house design. Explain each recommendation.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "alt-discussion-point-1",
+            "kind": "criterion",
+            "verbatim": "Discussion – point 1 (3 for point, 5 for discussion)",
+            "marks": 8,
+            "contextNote": "Develop one distinct, relevant point from the passage: the importance of daylight for the quality and use of spaces; the changing architectural possibilities of glass; the contrast with older limited/draughty glazing; orientation and room layout; the relationship between light, views and occupants. Award point 3 and discussion 5, without repeating another point. Discuss the qualitative passage critically: lower U-values reduce heat loss, rather than making it zero. Historical commentary is not a current-law claim.",
+            "permittedMarks": [
+              0,
+              3,
+              5,
+              8
+            ]
+          },
+          {
+            "id": "alt-discussion-point-2",
+            "kind": "criterion",
+            "verbatim": "Discussion – point 2 (3 for point, 5 for discussion)",
+            "marks": 8,
+            "contextNote": "Develop one distinct, relevant point from the passage: the importance of daylight for the quality and use of spaces; the changing architectural possibilities of glass; the contrast with older limited/draughty glazing; orientation and room layout; the relationship between light, views and occupants. Award point 3 and discussion 5, without repeating another point. Discuss the qualitative passage critically: lower U-values reduce heat loss, rather than making it zero. Historical commentary is not a current-law claim.",
+            "permittedMarks": [
+              0,
+              3,
+              5,
+              8
+            ]
+          },
+          {
+            "id": "alt-discussion-point-3",
+            "kind": "criterion",
+            "verbatim": "Discussion – point 3 (3 for point, 5 for discussion)",
+            "marks": 8,
+            "contextNote": "Develop one distinct, relevant point from the passage: the importance of daylight for the quality and use of spaces; the changing architectural possibilities of glass; the contrast with older limited/draughty glazing; orientation and room layout; the relationship between light, views and occupants. Award point 3 and discussion 5, without repeating another point. Discuss the qualitative passage critically: lower U-values reduce heat loss, rather than making it zero. Historical commentary is not a current-law claim.",
+            "permittedMarks": [
+              0,
+              3,
+              5,
+              8
+            ]
+          },
+          {
+            "id": "alt-glazing-advances",
+            "kind": "criterion",
+            "verbatim": "Advances in glazing technology - increased use of glass",
+            "marks": 6,
+            "contextNote": "Explain relevant improvements and their design consequences, for example low-emissivity coatings reducing radiant heat transfer, insulating/vacuum glazing, safer laminated or structural glazing, or controllable tint. This is one shared 6-mark allowance; the scheme does not publish a separate mark per technology. The source’s claim that low iron content itself reduces conductivity is not used as a required technical explanation. Lower U-values permit reduced heat loss; they do not mean no heat transfer at all.",
+            "permittedMarks": [
+              0,
+              6
+            ]
+          },
+          {
+            "id": "alt-guidelines-guideline-1",
+            "kind": "criterion",
+            "verbatim": "Guideline 1 (4 for point, 6 for discussion)",
+            "marks": 10,
+            "contextNote": "Give a distinct practical guideline(point 4) and explain how it improves natural lighting(discussion 6). The scheme accepts orientation and considered glazing position, shallow plans, rooflights/internal glazing, adapting existing houses, sustainable planning/incentives or design education. Connect each recommendation to daylight access and occupants while considering glare/overheating. These are illustrative open choices, not a fixed choose-three list; do not repeat the same guideline.",
+            "permittedMarks": [
+              0,
+              4,
+              6,
+              10
+            ]
+          },
+          {
+            "id": "alt-guidelines-guideline-2",
+            "kind": "criterion",
+            "verbatim": "Guideline 2 (4 for point, 6 for discussion)",
+            "marks": 10,
+            "contextNote": "Give a distinct practical guideline(point 4) and explain how it improves natural lighting(discussion 6). The scheme accepts orientation and considered glazing position, shallow plans, rooflights/internal glazing, adapting existing houses, sustainable planning/incentives or design education. Connect each recommendation to daylight access and occupants while considering glare/overheating. These are illustrative open choices, not a fixed choose-three list; do not repeat the same guideline.",
+            "permittedMarks": [
+              0,
+              4,
+              6,
+              10
+            ]
+          },
+          {
+            "id": "alt-guidelines-guideline-3",
+            "kind": "criterion",
+            "verbatim": "Guideline 3 (4 for point, 6 for discussion)",
+            "marks": 10,
+            "contextNote": "Give a distinct practical guideline(point 4) and explain how it improves natural lighting(discussion 6). The scheme accepts orientation and considered glazing position, shallow plans, rooflights/internal glazing, adapting existing houses, sustainable planning/incentives or design education. Connect each recommendation to daylight access and occupants while considering glare/overheating. These are illustrative open choices, not a fixed choose-three list; do not repeat the same guideline.",
+            "permittedMarks": [
+              0,
+              4,
+              6,
+              10
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q10-alternative",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Natural light and glazing",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission. Passage adapted from Dermot Bannon (2014), Gill & Macmillan, as credited on the original paper.",
+          "presentationNote": "The two printed Question 10 alternatives remain separate 60-mark routes. The 2015 scheme’s historical energy criteria are not presented as current certification or building regulations."
+        },
+        "taskGroups": [
+          {
+            "label": "alt-discussion",
+            "sourceCardId": "cons-2015-hl-q10-alt-discussion",
+            "marks": 24,
+            "rowIds": [
+              "alt-discussion-point-1",
+              "alt-discussion-point-2",
+              "alt-discussion-point-3"
+            ]
+          },
+          {
+            "label": "alt-glazing",
+            "sourceCardId": "cons-2015-hl-q10-alt-glazing",
+            "marks": 6,
+            "rowIds": [
+              "alt-glazing-advances"
+            ]
+          },
+          {
+            "label": "alt-guidelines",
+            "sourceCardId": "cons-2015-hl-q10-alt-guidelines",
+            "marks": 30,
+            "rowIds": [
+              "alt-guidelines-guideline-1",
+              "alt-guidelines-guideline-2",
+              "alt-guidelines-guideline-3"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 29,
+          "textSha256": "a5c2fb0dff1b554c09183b8809512b811d7d785873f7e01d40c1636d618c08f6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 30,
+          "textSha256": "79a8a287a8db043326ce5a07dc6daf76f875b4f3d96d259e87fdae257e98a739"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 42,
+          "textSha256": "ea2ec784ea345d02604940c631e76f7f23b3c917453314913d94e9be23197789"
+        }
+      ],
+      "boundaryReview": "Alternative: discussion24 = three(point3/discussion5); glazing advances6 shared; guidelines30 = three(point4/discussion6); whole60.",
+      "selectionReview": "The printed OR creates a separate alternative whole-question route. THREE daylight guidelines and THREE discussion points are open responses, not a finite list. Do not fan out illustrative scheme examples.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q10-alternative"
+      ],
+      "requiredSolutionFigures": []
+    }
+  ],
+  "bindings": [
+    {
+      "cardId": "cons-2015-hl-q10-a-airtightness",
+      "markBankTopicId": "cons-6-5",
+      "canonicalTopicIds": [
+        "cons-6-5",
+        "cons-6-6"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-condensation-air-tightness"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-a-space-heating",
+      "markBankTopicId": "cons-5-3",
+      "canonicalTopicIds": [
+        "cons-5-3",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-hot-water-space-heating",
+        "construction-studies-higher-passive-design"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-a-indoor-air",
+      "markBankTopicId": "cons-6-5",
+      "canonicalTopicIds": [
+        "cons-6-5"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-a-airtightness-space-heating",
+      "markBankTopicId": "cons-6-5",
+      "canonicalTopicIds": [
+        "cons-6-5",
+        "cons-6-6",
+        "cons-5-3",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-condensation-air-tightness",
+        "construction-studies-higher-hot-water-space-heating"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-a-airtightness-indoor-air",
+      "markBankTopicId": "cons-6-5",
+      "canonicalTopicIds": [
+        "cons-6-5",
+        "cons-6-6"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-condensation-air-tightness",
+        "construction-studies-higher-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-a-space-heating-indoor-air",
+      "markBankTopicId": "cons-5-3",
+      "canonicalTopicIds": [
+        "cons-5-3",
+        "cons-6-2",
+        "cons-6-5"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-hot-water-space-heating",
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-b",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-c",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-7-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-complete-airtightness-space-heating",
+      "markBankTopicId": "cons-6-5",
+      "canonicalTopicIds": [
+        "cons-6-5",
+        "cons-6-6",
+        "cons-5-3",
+        "cons-6-2",
+        "cons-6-4",
+        "cons-7-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-condensation-air-tightness",
+        "construction-studies-higher-hot-water-space-heating",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-complete-airtightness-indoor-air",
+      "markBankTopicId": "cons-6-5",
+      "canonicalTopicIds": [
+        "cons-6-5",
+        "cons-6-6",
+        "cons-6-4",
+        "cons-7-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-condensation-air-tightness",
+        "construction-studies-higher-wood-rot-ventilation",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-complete-space-heating-indoor-air",
+      "markBankTopicId": "cons-5-3",
+      "canonicalTopicIds": [
+        "cons-5-3",
+        "cons-6-2",
+        "cons-6-5",
+        "cons-6-4",
+        "cons-7-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-hot-water-space-heating",
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-wood-rot-ventilation",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-alt-discussion",
+      "markBankTopicId": "cons-7-4",
+      "canonicalTopicIds": [
+        "cons-7-4",
+        "cons-3-5"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-alt-glazing",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-alt-guidelines",
+      "markBankTopicId": "cons-7-4",
+      "canonicalTopicIds": [
+        "cons-7-4",
+        "cons-3-5",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q10-alt-complete",
+      "markBankTopicId": "cons-7-4",
+      "canonicalTopicIds": [
+        "cons-7-4",
+        "cons-3-5",
+        "cons-3-6",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing specification. Primary routes use passive design with the exact ventilation/vapour, heating or solar-gain content; shading adds glare control. Alternative discussion/guidelines concern good illumination, windows and orientation; glazing advances use window/glazing specification. Both printed alternatives link to original Question10, not duplicate Atlas question records.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    }
+  ],
+  "questionFigures": [
+    {
+      "key": "construction-studies-2015-HL-q10-original",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "rect": [
+            58,
+            302,
+            572,
+            486
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": false,
+      "sha256": "2e0fdda58158cc67ee0db114fd7ebe4967cb5fc5dc446de84afa7951eaf453a5",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q10-alternative",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "rect": [
+            58,
+            560,
+            572,
+            771
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": false,
+      "sha256": "52912e53f50007b5ce908549b97dca836e6f21674546f2f911baea9c46ce289c",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q10-scheme",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "rect": [
+            54,
+            264,
+            570,
+            776
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 26,
+          "rect": [
+            54,
+            54,
+            574,
+            785
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 27,
+          "rect": [
+            54,
+            54,
+            571,
+            778
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 28,
+          "rect": [
+            43,
+            54,
+            575,
+            786
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "facbca1bb83752d56e32a2cf77a05f33f82fbfd6f41e3c7e136b7f3549434224",
+      "visuallyInspected": true
+    }
+  ],
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+    "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+  },
+  "selectionLedger": {
+    "pattern": "\\b(?:choose|select|one\\s+of|any\\s+\\w+|either|or|answer\\s+\\w+)\\b",
+    "rows": [
+      {
+        "page": 1,
+        "start": 209,
+        "match": "Answer Question",
+        "context": "er Level (300 marks) Friday, 12 June Afternoon, 2:00 to 5:00 (a) Answer Question 1 and four other questions. (b) All questions carry equal marks. (c) Answers must be written in ink",
+        "classification": "Whole-paper selection: Q1 compulsory plus four others; coverage does not require five-question exam-session combinations."
+      },
+      {
+        "page": 2,
+        "start": 1263,
+        "match": "any two",
+        "context": " used and include typical dimensions. (c) Evaluate the design of any two of the wall types at 2(b) above. Recommend a preferred external wall type for a new house and justi",
+        "classification": "Open dependent selection among three wall types previously chosen by the student; no closed named pool."
+      },
+      {
+        "page": 2,
+        "start": 1926,
+        "match": "or",
+        "context": "lding a single-storey extension onto the rear of the house at A. or (ii) building a detached, free-standing space in the garden at B. (a) Discuss in detail two advanta",
+        "classification": "Two design options, A/B. Part(a)requires BOTH; part(b)chooses ONE, two finite routes."
+      },
+      {
+        "page": 2,
+        "start": 2103,
+        "match": "Select",
+        "context": "o disadvantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design an",
+        "classification": "Q3(b)choose one of A/B: two finite routes."
+      },
+      {
+        "page": 2,
+        "start": 2110,
+        "match": "one of",
+        "context": "vantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design and inter",
+        "classification": "Q3(b)same directive, two finite routes."
+      },
+      {
+        "page": 3,
+        "start": 45,
+        "match": "any two",
+        "context": "Page 3 of 5 4. (a) Discuss the importance of any two of the following in the eco-refurbishment of an old house built in the vernacular tradition: • resp",
+        "classification": "Q4(a)choose2of3 principles:3pairs."
+      },
+      {
+        "page": 3,
+        "start": 281,
+        "match": "One of",
+        "context": "als. (b) A row of single-storey cottages is shown in the sketch. One of the cottages is in need of significant refurbishment. A survey of the cottage reveals: • un-insulat",
+        "classification": "Narrative identifies one cottage, not an answer selection."
+      },
+      {
+        "page": 3,
+        "start": 522,
+        "match": "Select",
+        "context": "-glazed with sliding sash • un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps invol",
+        "classification": "Q4(b)choose2of3 upgrades:3pairs."
+      },
+      {
+        "page": 3,
+        "start": 529,
+        "match": "any two",
+        "context": " with sliding sash • un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps involved in u",
+        "classification": "Q4(b)same directive:3pairs; independent of(a),9whole routes."
+      },
+      {
+        "page": 4,
+        "start": 516,
+        "match": "any two",
+        "context": "(b) Using notes and freehand sketches, discuss the importance of any two of the following in designing a house to have low environmental impact: • compact form • flexible d",
+        "classification": "Q6(b)choose2of3 design principles:3pairs."
+      },
+      {
+        "page": 5,
+        "start": 423,
+        "match": "Select",
+        "context": "s and the ground floor is an insulated solid concrete floor. (a) Select any three locations from those circled on the drawing and, using notes and freehand sketches, show ",
+        "classification": "Q9(a)choose3of4 circled junctions:4triples."
+      },
+      {
+        "page": 5,
+        "start": 430,
+        "match": "any three",
+        "context": "he ground floor is an insulated solid concrete floor. (a) Select any three locations from those circled on the drawing and, using notes and freehand sketches, show best pract",
+        "classification": "Q9(a)same directive:4triples."
+      },
+      {
+        "page": 5,
+        "start": 807,
+        "match": "any two",
+        "context": "notes and freehand sketches, discuss in detail the importance of any two of the following in the design of a Passive House: • airtight building envelope • space heating dem",
+        "classification": "Q10primary(a)choose2of3:3pairs."
+      },
+      {
+        "page": 5,
+        "start": 1177,
+        "match": "OR",
+        "context": "of carefully designed solar shading for the Passive House shown. OR 10. Light is what architecture is all about. It is as fundamental for the soul as air, fire, earth ",
+        "classification": "Q10 alternative branch: primary3routes OR alternative1route."
+      },
+      {
+        "page": 5,
+        "start": 1305,
+        "match": "one of",
+        "context": "ental for the soul as air, fire, earth and water. Light has been one of the key elements of architecture since the Modern movement began (and glass technology improved) at",
+        "classification": "Quotation narrative, not an answer directive."
+      }
+    ],
+    "unclassified": 0,
+    "sourceHashes": {
+      "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+      "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+    }
+  },
+  "corrections": [],
+  "addedIds": [
+    "cons-2015-hl-q10-a-airtightness",
+    "cons-2015-hl-q10-a-space-heating",
+    "cons-2015-hl-q10-a-indoor-air",
+    "cons-2015-hl-q10-a-airtightness-space-heating",
+    "cons-2015-hl-q10-a-airtightness-indoor-air",
+    "cons-2015-hl-q10-a-space-heating-indoor-air",
+    "cons-2015-hl-q10-b",
+    "cons-2015-hl-q10-c",
+    "cons-2015-hl-q10-complete-airtightness-space-heating",
+    "cons-2015-hl-q10-complete-airtightness-indoor-air",
+    "cons-2015-hl-q10-complete-space-heating-indoor-air",
+    "cons-2015-hl-q10-alt-discussion",
+    "cons-2015-hl-q10-alt-glazing",
+    "cons-2015-hl-q10-alt-guidelines",
+    "cons-2015-hl-q10-alt-complete"
+  ],
+  "routeLedger": {
+    "primaryChoices": [
+      "airtightness",
+      "space-heating",
+      "indoor-air"
+    ],
+    "choose": 2,
+    "partARoutes": [
+      [
+        "airtightness",
+        "space-heating"
+      ],
+      [
+        "airtightness",
+        "indoor-air"
+      ],
+      [
+        "space-heating",
+        "indoor-air"
+      ]
+    ],
+    "wholeRoutes": [
+      {
+        "id": "cons-2015-hl-q10-complete-airtightness-space-heating",
+        "alternative": false,
+        "choices": [
+          "airtightness",
+          "space-heating"
+        ],
+        "parts": [
+          "a-airtightness",
+          "a-space-heating",
+          "b",
+          "c"
+        ],
+        "marks": 60
+      },
+      {
+        "id": "cons-2015-hl-q10-complete-airtightness-indoor-air",
+        "alternative": false,
+        "choices": [
+          "airtightness",
+          "indoor-air"
+        ],
+        "parts": [
+          "a-airtightness",
+          "a-indoor-air",
+          "b",
+          "c"
+        ],
+        "marks": 60
+      },
+      {
+        "id": "cons-2015-hl-q10-complete-space-heating-indoor-air",
+        "alternative": false,
+        "choices": [
+          "space-heating",
+          "indoor-air"
+        ],
+        "parts": [
+          "a-space-heating",
+          "a-indoor-air",
+          "b",
+          "c"
+        ],
+        "marks": 60
+      },
+      {
+        "id": "cons-2015-hl-q10-alt-complete",
+        "alternative": true,
+        "choices": [],
+        "parts": [
+          "alt-discussion",
+          "alt-glazing",
+          "alt-guidelines"
+        ],
+        "marks": 60
+      }
+    ],
+    "nonChoices": [
+      "Notes and sketches are both required.",
+      "Three alternative discussion points and three guidelines are open responses.",
+      "Illustrative technical, material and shading examples are not fixed selectable pools."
+    ],
+    "alternativeOriginalQuestionNumber": "10"
+  }
+}

@@ -1,0 +1,1091 @@
+[
+  {
+    "id": "cons-2024-hl-q1-a",
+    "topicId": "cons-3-2",
+    "conceptId": "vertical-section-entrance-porch",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q1(a)",
+    "questionText": "To a scale of 1:10, draw a vertical section through the entrance porch showing the external wall of the porch, the sloping roof, and the front wall of the house. Include the typical construction details of the porch from a point 300 mm below the wall plate, through the sloping rafters, to a level 350 mm above the abutment of the porch roof with the front wall of the house. Show three courses of slate at eaves.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4 x 4 + 4 x 4 + 4 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 48,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q1-a-r1",
+        "kind": "anyN",
+        "verbatim": "External wall and eaves - typical detailing",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "External wall and eaves - typical detailing",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "Larch cladding rain screen",
+            "Battens / counter battens",
+            "Cavity wall blockwork & wall ties",
+            "Full-fill insulation",
+            "Cavity closer",
+            "Wallplates",
+            "Skim"
+          ]
+        }
+      },
+      {
+        "id": "cons-2024-hl-q1-a-r2",
+        "kind": "anyN",
+        "verbatim": "Lean - To roof - typical detailing",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Lean - To roof - typical detailing",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "Fascia / soffit / gutter (Any two)",
+            "Three courses of slate",
+            "Slating battens 50 × 30 mm @ 400 mm centres",
+            "Roof breather membrane",
+            "Ventilation",
+            "Roof rafter & insulation",
+            "Air barrier membrane & airtightness taping",
+            "Insulated plasterboard (50 mm insulation + 12.5 mm plasterboard)"
+          ]
+        }
+      },
+      {
+        "id": "cons-2024-hl-q1-a-r3",
+        "kind": "anyN",
+        "verbatim": "Front wall of house and abutment - typical detailing",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Front wall of house and abutment - typical detailing",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "External & internal render",
+            "Full-fill cavity wall blockwork & low conductivity wall ties",
+            "Concrete lintels",
+            "Cavity closer",
+            "Rafter support",
+            "Stepped DPC",
+            "Lead flashing (under and apron)"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q2-a",
+    "topicId": "cons-1-8",
+    "conceptId": "best-practice-guidelines-on-site",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q2(a)",
+    "questionText": "Discuss in detail, using notes and freehand sketches, two best practice guidelines for each of the following areas when designing a house for lifetime use: • kitchen • bedroom.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 12",
+      "answer": 2,
+      "ofParts": 3,
+      "perPart": 12
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q2-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, using notes and freehand sketches, two best practice guidelines for each of the following areas when ",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 12,
+          "options": [
+            "Kitchen",
+            "“waterfall lip”",
+            "Bedroom"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q3-b",
+    "topicId": "cons-1-1",
+    "conceptId": "external-design-for-a-renovated-forge",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q3(b)",
+    "questionText": "Using notes and freehand sketches, show an external design for your forge renovation that will respect and enhance the overall visual appearance of the house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 12",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 12
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show an external design for your forge renovation that will respect and enhance the o",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 12,
+          "options": [
+            "Use materials similar to those used on the existing forge to retain the character of the buildings previous use, corrugated metal and stone. By undertaking this, the forge will still read as a separate building without being pastiche, trying to imitate the rendered house style from a previous era",
+            "Material of similar age and style, can be sourced and reused from salvage yards or sourced from disused buildings",
+            "Retain and repair existing stonework to respect existing visual appearance. Engage a specialist to examine and re-point brickwork with lime mortar",
+            "Maintain the opening size and proportions on the front façade similar to those which previously existed",
+            "Clad the entire forge building in corrugated metal – modernise the building while being respectful of previous material choices",
+            "Add glazed areas to the gable of the forge",
+            "Addition of a ridge glazing system. This allows light in without overtly altering the character of existing vernacular building form"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q3-c",
+    "topicId": "cons-1-1",
+    "conceptId": "respecting-irish-vernacular-architecture",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q3(c)",
+    "questionText": "Discuss two advantages of respecting Irish vernacular architecture when renovating an old building.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q3-c-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Advantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "The character of old buildings enhances and contributes to the local and National Irish landscape. It gives an insight into what the building and surrounding areas were used for in the past",
+            "Renovating old buildings affiliated with traditional architecture, ensures historical continuity and preserves a connection to the past. By respecting the original design intent and craftmanship, the building maintains a sense of authenticity and historical integrity",
+            "The design, craft, and material used to build vernacular heritage was strongly related to the region in which they were located. Their loss in a particular place would be detrimental to that locality’s sense of place",
+            "Irish vernacular architecture carries unique design aesthetics that can enhance the beauty and character of a building. Respecting and incorporating these elements during renovation can result in a visually appealing and harmonious blend of old and new",
+            "Materials used in constructing vernacular buildings — clay, cereal straw, stone from the adjacent field or small quarries, timber from local woodland, etc are distinctly local. Vernacular building crafts that used these materials were also rooted in local tradition and landscape. The materials are substantially green, environment-friendly, and sustainable. The greenest building is the one that is already built",
+            "Ireland as a tourist attraction is known throughout the world for its own unique natural and built environment. By altering our vernacular buildings, in a strive for modernity, we are altering them beyond the constraints of the tradition that had created them. This would be detrimental for our tourism industry and our Irish heritage"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q4-a",
+    "topicId": "cons-1-2",
+    "conceptId": "why-planning-authorities-regulate-design",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q4(a)",
+    "questionText": "Discuss in detail three reasons why local planning authorities regulate the design and location of all proposed new dwellings.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q4-a-r1",
+        "kind": "anyN",
+        "verbatim": "By regulating design and location, planning authorities can impose regulations and prioritise safety",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "By regulating design and location, planning authorities can impose regulations and prioritise safety",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "Planning authorities consider the overall impact of new dwellings on urban infrastructure such as transportation and access to public services. By regulating designs and locations, they can prevent overdevelopment and congestion on resources. This allows sustainable growth and efficient use of existing infrastructure",
+            "Planning authorities safeguard the visual character and historical significance of areas by regulating buildings design and location. Authorities impose guidelines to preserve heritage buildings and maintain architectural consistency to ensure new dwellings complement the existing surrounding",
+            "Planning authorities regulate building design and locations to minimise environmental impact and promote sustainability. They may impose sustainable building standards, energy efficient designs or zoning restrictions to protect natural habitats. These conserve limited resources and reduces the carbon footprint on the landscape",
+            "Planning authorities prioritise enhancing the quality of life for residents by controlling the design and locations of new dwellings. The authorities impose regulations that promote access to green spaces, natural light, privacy, and amenities. This ensures a liveable and inclusive communal environment for all",
+            "Planning authorities address traffic congestion and parking issues by regulating building design and locations. Authorities require sufficient parking spaces, access roads and alternative transportation options to mitigate the impact new developments have on traffic flow and parking availability",
+            "Planning authorities consider the long-term vision for an area when controlling building designs and locations. By aligning with local and urban development plans, planning authorities ensure that new dwellings contribute to the overall development objectives of the area and benefit the residents now and in the future"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q4-b",
+    "topicId": "cons-1-3",
+    "conceptId": "choosing-between-two-sites",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q4(b)",
+    "questionText": "Shown is an extract from a site location map. A and B are possible sites for a new dwelling house. Select your preferred site and discuss three considerations you took into account when selecting your site.",
+    "stem": "",
+    "figureKey": "construction-studies-2024-hl-paper-p003-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 13,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q4-b-r1",
+        "kind": "anyN",
+        "verbatim": "Shown is an extract from a site location map. A and B are possible sites for a new dwelling house. Select your preferred",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "The scheme groups its answer under: Site A – Considerations; Site B – Considerations",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "Less visual impact on the landscape and environment as there are existing neighbouring buildings",
+            "Site is located in a cluster development. Planning authorities favour new dwelling construction close to existing developments",
+            "Proximity to neighbouring dwellings will result in cost A effective provision of public services",
+            "Site is located close to neighbouring building which may increase security",
+            "Long southern axis of site increases design possibility of maximising solar gains",
+            "Sustainable development, need for excessive utilities work will be reduced as neighbouring dwelling will previously have utilities. Reduces water mains pipes, reduced need for ESB and fibre broadband poles and cables, etc",
+            "Site is not overlooked by existing building",
+            "Reduced risk when entering and exiting the site as it is not located on a busy main or secondary road",
+            "Site located away from the main roads so reduced noise and air pollution",
+            "Planning authorises may allow for more individual and creative building designs as there are no existing building in close proximity B",
+            "Greater privacy as it is not adjacent to main road",
+            "Larger windows could be facilitated without compromising privacy",
+            "Position of site may allow for better scenic view of the countryside compared to Site A"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q5-c-advantages",
+    "topicId": "cons-5-3",
+    "conceptId": "wood-pellet-heating-system-advantages",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q5(c) — Advantages",
+    "questionText": "Discuss two advantages of designing a domestic heating system to incorporate a wood pellet boiler stove.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 3",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 3
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q5-c-advantages-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Advantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "Environmentally Friendly – Wood pellet stoves use a sustainable and renewable fuel source made from sawdust and wood shavings. When burned, the carbon dioxide released is equivalent to the amount absorbed by the tree during its growth (Carbon Neutral)",
+            "Cost efficient fuel – Wood pellets are relatively inexpensive and are price-stable compared to other solid fuels",
+            "High efficiency – Wood pellet stoves are highly efficient. They achieve efficiency of up to 90% due to the specific control of the air-to-fuel ratio",
+            "Eco-design certification – Stoves are designed and manufactured to high eco-design standards",
+            "Ease of use – Pellet stoves come with programmable thermostats allowing users to control the desired temperature. Some pellet stoves feature automatic self-cleaning burners, reducing maintenance"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q5-c-disadvantages",
+    "topicId": "cons-5-3",
+    "conceptId": "wood-pellet-heating-system-disadvantages",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q5(c) — Disadvantages",
+    "questionText": "Discuss two disadvantages of designing a domestic heating system to incorporate a wood pellet boiler stove.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 3",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 3
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q5-c-disadvantages-r1",
+        "kind": "anyN",
+        "verbatim": "Disadvantages",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Disadvantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "Initial cost and installation – Wood pellet boiler stoves have a high initial purchase price compared to other heating systems. Installation can be complex and costly, requiring professional set-up with suitable ventilation",
+            "Fuel storage – Wood pellets require dry, safe storage to prevent moisture absorption which can degrade pellets and affect combustion efficiency",
+            "Maintenance requirements – Pellet stoves require regular maintenance to function efficiently",
+            "Fuel supply and availability – The supply and availability of wood pellets can vary, especially in some regions where wood pellet stoves are not commonly used",
+            "Requires electricity – The wood pellet stove cannot operate without electricity. Electricity is required to operate the automatic ignition, the pellet feed, ventilation, and electronic controls"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q6-a",
+    "topicId": "cons-6-3",
+    "conceptId": "design-features-for-low-environmental-impact",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q6(a)",
+    "questionText": "Discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 5",
+      "answer": 6,
+      "ofParts": 11,
+      "perPart": 5
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q6-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss using notes and freehand sketches, three features of the design that contribute to the house having a low enviro",
+        "marks": 30,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 6,
+          "perOption": 5,
+          "options": [
+            "Timber frame construction from local sources which reduces transport movements has lower carbon emissions and a reduction in localised air pollution",
+            "Less embodied energy required to produce timber frame construction compared to a double leaf, concrete block cavity wall construction",
+            "Locally sourced timber contributes to carbon sequestration (creates a carbon store/sink) in direct contrast to concrete production",
+            "The house has large south facing glazed openings which fill all main living spaces with natural light – electric light bulbs only needed at night",
+            "The heat from the sun entering through the large openings reduces the need for using non-renewable methods of heating theses spaces",
+            "High levels of insulation in the floor, walls, and roof construction resulting in reduced demand on space heating",
+            "One room deep design enables light and heat from solar gain to enter the single space building via the south, east, and west",
+            "High-performance glazing (U-value at least 0.8 w/m2 k) will significantly reduce heating costs",
+            "The absence of a chimney reduces draughts and increases airtightness of the design",
+            "One room deep living space with windows on three sides enable light to naturally light the interior",
+            "Reduced artificial light energy consumption as a result of large windows on the south/south-east facades"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q6-b",
+    "topicId": "cons-6-3",
+    "conceptId": "features-that-further-reduce-energy-use",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q6(b)",
+    "questionText": "Discuss using notes and freehand sketches, two features that could be added to the house that would further increase the energy efficiency of the house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 5",
+      "answer": 4,
+      "ofParts": 5,
+      "perPart": 5
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss using notes and freehand sketches, two features that could be added to the house that would further increase the",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 5,
+          "options": [
+            "Solar Panels",
+            "Storm Lobby",
+            "Interior sliding door to separate spaces",
+            "Sun shade",
+            "Larger glazing to south façade of dwelling"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q7-a",
+    "topicId": "cons-4-3",
+    "conceptId": "vertical-section-external-wall-window-first-floor",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q7(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the external wall, window, and first floor. Show the typical construction details from a level 200 mm below the head of the window, to a level 200 mm above the finished first floor.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "5 x 4 + 4 x 4 + 3 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 48,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "External wall",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "External wall",
+        "group": {
+          "claimMax": 5,
+          "perOption": 4,
+          "options": [
+            "External render",
+            "Concrete block",
+            "Air space / residual cavity",
+            "Breather membrane",
+            "Racking board",
+            "250 × 50 mm Stud and insulation",
+            "Air barrier",
+            "Insulated service cavity",
+            "Plasterboard / skim"
+          ]
+        }
+      },
+      {
+        "id": "cons-2024-hl-q7-a-r2",
+        "kind": "anyN",
+        "verbatim": "Window Frame",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Window Frame",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "Concrete lintel",
+            "Timber lintel",
+            "Fire stop/cavity closer",
+            "Stepped DPC",
+            "Thermally broken frame",
+            "Glazing (Triple)",
+            "Airtightness tape – window frame head"
+          ]
+        }
+      },
+      {
+        "id": "cons-2024-hl-q7-a-r3",
+        "kind": "anyN",
+        "verbatim": "Floor",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Floor",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "Joist supported at wall",
+            "Tongued and groove flooring / skirting board",
+            "OSB decking",
+            "225 × 50 mm Joist",
+            "Sound insulation",
+            "Plasterboard ceiling"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q7-b",
+    "topicId": "cons-6-2",
+    "conceptId": "airtightness-at-the-first-floor-junction",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q7(b)",
+    "questionText": "On your drawing, indicate the typical design detailing to ensure airtightness at the junction of the first floor joist and timber frame inner leaf.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 4",
+      "answer": 1,
+      "ofParts": 2,
+      "perPart": 4
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "On your drawing, indicate the typical design detailing to ensure airtightness at the junction of the first floor joist a",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Airtightness barrier around joists",
+            "Junctions and corners sealed with airtightness tape"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q8-a",
+    "topicId": "cons-5-2",
+    "conceptId": "hot-water-and-heating-layout",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q8(a)",
+    "questionText": "Using notes and a single-line diagram, show a typical design layout for both the hot water system and the heating system. On the diagram, show two independently controlled heating zones, one on each floor. Include two radiators on each floor and give typical sizes of the pipework.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 4",
+      "answer": 7,
+      "ofParts": 8,
+      "perPart": 4
+    },
+    "totalMarks": 28,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q8-a-r1",
+        "kind": "anyN",
+        "verbatim": "Typical sizes of pipework",
+        "marks": 28,
+        "openList": true,
+        "contextNote": "Typical sizes of pipework",
+        "group": {
+          "claimMax": 7,
+          "perOption": 4,
+          "options": [
+            "Wood-burning stove",
+            "Zone control panel",
+            "Cylinder and coil",
+            "Rising main",
+            "Overflow pipe",
+            "Expansion pipe or vessel",
+            "Pump",
+            "Typical sizes of pipework - any two"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q8-b",
+    "topicId": "cons-5-2",
+    "conceptId": "renewable-energy-for-hot-water",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q8(b)",
+    "questionText": "On-site renewable energy generation can be used to heat water in the hot water cylinder of a house. Using notes and freehand sketches, discuss one method of incorporating such renewable technology into a hot water system.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 6 + 1 x 6",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q8-b-r1",
+        "kind": "anyN",
+        "verbatim": "Solar Collector",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Solar Collector",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Daylight hits the solar collector and the solar energy is absorbed by the tubes",
+            "The solar energy is transferred to the solar collector liquid contained in the solar collector tubes",
+            "The heated solar fluid travels to the manifold at the top of the solar collector and passes heat to the water circulated from the hot water cylinder coil",
+            "The cold water coming from the cylinder is heated up as it passes through the solar collector manifold - heat exchange",
+            "The heated water is circulated back to heat the hot water cylinder through the coil",
+            "The cooled heat transfer water then returns to the solar collector for reheating",
+            "A control panel controls the hot water temperature in the system and pumping when the required temperatures are reached",
+            "The expansion vessel absorbs any excess fluid pressure caused by thermal expansion in the system"
+          ]
+        }
+      },
+      {
+        "id": "cons-2024-hl-q8-b-r2",
+        "kind": "anyN",
+        "verbatim": "Photovoltaic Panels",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Photovoltaic Panels",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Photovoltaic panels absorb sunlight and converts it into direct current (D.C.)",
+            "This current is converted to alternating current (A.C.) by an inverter",
+            "The inverter feeds A.C. into the domestic fuse board",
+            "A solar immersion diverter switches the immersion on when the photovoltaic panels are generating more electricity than a house needs",
+            "This uses the spare electricity to heat water in the hot water storage cylinder",
+            "The solar immersion diverter works by constantly monitoring the electricity usage in a house. This is monitored by the CT sensor clamp",
+            "When a house is exporting electricity to Ireland’s",
+            "The immersion diverter device heats the water in the water cylinder for free",
+            "When the demand in the house increases or the solar generation decreases, the immersion diverter will recognise this and reduce the amount of electricity that it is sending to the immersion"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q9-c",
+    "topicId": "cons-8-3",
+    "conceptId": "approaches-to-reducing-sound-transmission",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q9(c)",
+    "questionText": "Discuss two approaches used to reduce the transmission of sound in the design of a dwelling house. Identify the sound insulation principle associated with each approach.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 3,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q9-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two approaches used to reduce the transmission of sound in the design of a dwelling house. Identify the sound in",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Sound insulation principle: Heaviness",
+            "Sound insulation principle: Completeness",
+            "Sealants absorb sound energy and prevent it from passing through the gaps and cracks"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 12 marks for this part. The 8 on this card are the marks it states answers for; the other 4 go to Associated sound principle (2); Associated sound principle (2) — the drawing itself and anything the scheme prices without saying what earns it."
+  },
+  {
+    "id": "cons-2024-hl-q10-a",
+    "topicId": "cons-6-3",
+    "conceptId": "retrofitting-a-dwelling",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q10(a)",
+    "questionText": "Using notes and freehand sketches, discuss the importance of any two of the following when carrying out a retrofit to achieve the EnerPHit Passive House design standard: • airtightness • windows • building fabric.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 12",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 12
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q10-a-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, discuss the importance of any two of the following when carrying out a retrofit to ac",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 12,
+          "options": [
+            "The way to get to the EnerPHit standard is by implementing the five passive house principles",
+            "Airtightness",
+            "Windows",
+            "Building fabric",
+            "Abiotic depletion of materials and components"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q10-b-indoor-air-quality",
+    "topicId": "cons-6-3",
+    "conceptId": "improvements-when-upgrading-a-dwelling-indoor-air-quality",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q10(b) — Indoor air quality",
+    "questionText": "Using notes and freehand sketches, discuss in detail how each of the following could be improved, when upgrading an existing building to meet the EnerPHit standard: • indoor air quality.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q10-b-indoor-air-quality-r1",
+        "kind": "anyN",
+        "verbatim": "Indoor air quality",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Indoor air quality",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "EnerPHit buildings benefit from mechanical ventilation with heat recovery systems (MVHR). These systems ensure a constant supply of fresh air while recovering heat from exhausted air, maintaining energy efficiency. Regular maintenance and filter changes are crucial in keeping systems effective and to ensure fresh air circulation",
+            "Selecting building materials, finishes, and furnishing that have low levels of volatile organic compounds (VOCs) and other pollutants can significantly improve indoor air quality. This includes paints, adhesives, sealants, and flooring materials designed to emit minimal toxins",
+            "Maintaining optimal humidity levels (between 30-50%) helps prevent mould growth which can degrade the indoor air quality. EnerPHit buildings often incorporate humidity-controlled ventilation to keep humidity within this ideal range, especially in bathrooms and kitchens",
+            "Continuous monitoring of indoor air quality through sensors and regular maintenance of ventilation systems ensure issues are identified and addressed promptly",
+            "Install glazed manual openings in all rooms so that air can naturally circulate bringing in fresh air from the outside and removing stale moist air from the inside"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 17 acceptable points under \"Space heating\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2024-hl-q10-b-space-heating",
+    "topicId": "cons-6-3",
+    "conceptId": "improvements-when-upgrading-a-dwelling-space-heating",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q10(b) — Space heating",
+    "questionText": "Using notes and freehand sketches, discuss in detail how each of the following could be improved, when upgrading an existing building to meet the EnerPHit standard: • space heating.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 14,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q10-b-space-heating-r1",
+        "kind": "anyN",
+        "verbatim": "Space heating",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Space heating",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Upgrading the insulation in the building envelope is fundamental. High quality continuous insulation in walls, roofs, and floors reduces heat loss",
+            "Installing high performing glazing and doors with low U-values minimises heat loss. Properly sealing all openings will ensure the elimination of drafts at the junction of components. This will reduce load and demand on space heating source",
+            "Implementing highly efficient heating systems, such as air-source or ground-source heat pumps, will significantly improve space heating efficiency. Heat pumps run at a 5:1 co-efficiency of performance",
+            "Using mechanical ventilation with heat recovery ensures heat from outgoing stale air is transferred to incoming fresh air. This reduces the need and demand on additional heating, maintaining a comfortable indoor environment with minimal energy use",
+            "Maximising solar gains through passive solar design helps reduce the load on active heating. This involves strategically placing glazing to capture sunlight during winter and using thermal mass materials to store and slowly release heat. Ensuring proper shading and glazing treatments can prevent overheating during warmer months, maintaining a balanced 20 °C indoor temperature",
+            "Use PHribbon package to calculate the total cradle-to-grave carbon emitted of constructing new dwellings",
+            "Use only products with Environmental Product Declarations (EPD)",
+            "The hierarchy for waste management is: Reduce, Reuse, Recycle. Leaner production can reduce the amount of raw materials used",
+            "Good architectural and structural design, including use of standard sizes can reduce the amount of material needed and resulting waste in construction",
+            "Planning for disassembly at end of building life, allows reuse or recycling. The use of a site waste management plan encourages the contractors and designers to consider all of these issues from the earliest stages of a building project",
+            "To enable products and buildings to become more circular, it is important to consider how they are designed. Important considerations for products include designing for disassembly, the potential for standardisation and modularity, the use of secondary materials, avoiding the use of hazardous and composite materials which may hinder reuse and recycling opportunities",
+            "For buildings, the way the products are assembled and connected together is important. Using mechanical fixings rather than bonding is preferable, as is making sure that shorter lived products are accessible and are not enclosed by longer life material",
+            "Designing for flexibility and adaptability (both in function and form) to enable components and buildings to be used for longer, which avoids the need for new resources",
+            "Government and local authorities should support and actively encourage the re-use and repurposing of existing buildings"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 17 acceptable points under \"Space heating\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2024-hl-q1-b",
+    "topicId": "cons-6-5",
+    "conceptId": "ventilation-detailing-in-a-roof",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q1(b)",
+    "questionText": "On your drawing, show the typical design detailing to ensure adequate ventilation of the roof structure.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q1-b-r1",
+        "kind": "point",
+        "verbatim": "Design detailing identified to ensure ventilation of the roof",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q6-c",
+    "topicId": "cons-6-3",
+    "conceptId": "advantages-of-energy-efficient-homes",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q6(c)",
+    "questionText": "Discuss two advantages of designing energy efficient new homes.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 2,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of designing energy efficient new homes.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Advantage 1 (2 for point, 3 for discussion)",
+            "Advantage 2 (2 for point, 3 for discussion)"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q8-c",
+    "topicId": "cons-5-3",
+    "conceptId": "underfloor-heating",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q8(c)",
+    "questionText": "Underfloor heating is often installed in dwellings to provide space heating. Discuss two advantages and two disadvantages of incorporating an underfloor heating system into a dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 4",
+      "answer": 4,
+      "ofParts": 4,
+      "perPart": 4
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q8-c-r1",
+        "kind": "anyN",
+        "verbatim": "Underfloor heating is often installed in dwellings to provide space heating. Discuss two advantages and two disadvantage",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 4,
+          "options": [
+            "Advantage 1 (1 for point, 3 for discussion)",
+            "Advantage 2 (1 for point, 3 for discussion)",
+            "Disadvantage 1 (1 for point, 3 for discussion)",
+            "Disadvantage 2 (1 for point, 3 for discussion)"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2024-hl-q10-c",
+    "topicId": "cons-1-4",
+    "conceptId": "using-qualified-skilled-labour",
+    "level": "higher",
+    "year": 2024,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2024 HL Q10(c)",
+    "questionText": "Discuss two advantages of using qualified skilled labour when retrofitting a house to meet EnerPHit Passive House standards.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 2,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2024-hl-q10-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of using qualified skilled labour when retrofitting a house to meet EnerPHit Passive House standa",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Advantage 1 (2 for point, 4 for discussion)",
+            "Advantage 2 (2 for point, 4 for discussion)"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  }
+]

@@ -1,0 +1,3871 @@
+{
+  "evidenceRule": "Exact identities transcribed from SEC paper headings and bylines. Full visual review is recorded separately; this map alone is not completeness evidence.",
+  "identities": {
+    "english-2010-hl-p2-single-a": {
+      "topicId": "english-12-30",
+      "title": "Wuthering Heights",
+      "canonicalLabel": "Wuthering Heights (Emily Brontë)",
+      "observedHeading": "Single Text A · Wuthering Heights · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2010/LC002ALP200EV.pdf",
+      "sourceSha256": "9555d2e507357e830a8d9e36e8c321cffca7ca44c21e0640193b027542637cac"
+    },
+    "english-2010-hl-p2-single-b": {
+      "topicId": "english-12-32",
+      "title": "Dancing at Lughnasa",
+      "canonicalLabel": "Dancing at Lughnasa (Brian Friel)",
+      "observedHeading": "Single Text B · Dancing At Lughnasa · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2010/LC002ALP200EV.pdf",
+      "sourceSha256": "9555d2e507357e830a8d9e36e8c321cffca7ca44c21e0640193b027542637cac"
+    },
+    "english-2010-hl-p2-single-c": {
+      "topicId": "english-12-1",
+      "title": "King Lear",
+      "canonicalLabel": "King Lear (Shakespeare)",
+      "observedHeading": "Single Text C · King Lear · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2010/LC002ALP200EV.pdf",
+      "sourceSha256": "9555d2e507357e830a8d9e36e8c321cffca7ca44c21e0640193b027542637cac"
+    },
+    "english-2010-hl-p2-single-d": {
+      "topicId": "english-12-33",
+      "title": "The Grapes of Wrath",
+      "canonicalLabel": "The Grapes of Wrath (John Steinbeck)",
+      "observedHeading": "Single Text D · The Grapes Of Wrath · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2010/LC002ALP200EV.pdf",
+      "sourceSha256": "9555d2e507357e830a8d9e36e8c321cffca7ca44c21e0640193b027542637cac"
+    },
+    "english-2010-hl-p2-single-e": {
+      "topicId": "english-12-34",
+      "title": "The Blackwater Lightship",
+      "canonicalLabel": "The Blackwater Lightship (Colm Tóibín)",
+      "observedHeading": "Single Text E · The Blackwater Lightship · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2010/LC002ALP200EV.pdf",
+      "sourceSha256": "9555d2e507357e830a8d9e36e8c321cffca7ca44c21e0640193b027542637cac"
+    },
+    "english-2010-hl-p2-prescribed-1": {
+      "topicId": "english-11-23",
+      "title": "W.B. Yeats",
+      "canonicalLabel": "W.B. Yeats",
+      "observedHeading": "Prescribed Poetry · “Yeats'S Poetry Is Driven By A Tension Between The Real World In Which He Lives And · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2010/LC002ALP200EV.pdf",
+      "sourceSha256": "9555d2e507357e830a8d9e36e8c321cffca7ca44c21e0640193b027542637cac",
+      "promptHeading": "William Butler Yeats"
+    },
+    "english-2010-hl-p2-prescribed-2": {
+      "topicId": "english-11-20",
+      "title": "Adrienne Rich",
+      "canonicalLabel": "Adrienne Rich",
+      "observedHeading": "Prescribed Poetry · “Adrienne Rich Explores The Twin Themes Of Power And Powerlessness In A Variety Of · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2010/LC002ALP200EV.pdf",
+      "sourceSha256": "9555d2e507357e830a8d9e36e8c321cffca7ca44c21e0640193b027542637cac",
+      "promptHeading": "Adrienne Rich"
+    },
+    "english-2010-hl-p2-prescribed-3": {
+      "topicId": "english-11-10",
+      "title": "Patrick Kavanagh",
+      "canonicalLabel": "Patrick Kavanagh",
+      "observedHeading": "Prescribed Poetry · In Your Opinion, Is Kavanagh Successful In Achieving His Desire To Transform The · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2010/LC002ALP200EV.pdf",
+      "sourceSha256": "9555d2e507357e830a8d9e36e8c321cffca7ca44c21e0640193b027542637cac",
+      "promptHeading": "Patrick Kavanagh"
+    },
+    "english-2010-hl-p2-prescribed-4": {
+      "topicId": "english-11-5",
+      "title": "T.S. Eliot",
+      "canonicalLabel": "T.S. Eliot",
+      "observedHeading": "Prescribed Poetry · “The Poetry Of T.S. Eliot Often Presents Us With Troubled Characters In A Disturbing · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2010/LC002ALP200EV.pdf",
+      "sourceSha256": "9555d2e507357e830a8d9e36e8c321cffca7ca44c21e0640193b027542637cac",
+      "promptHeading": "T. S. Eliot"
+    },
+    "english-2010-ol-p2-single-a": {
+      "topicId": "english-12-30",
+      "title": "Wuthering Heights",
+      "canonicalLabel": "Wuthering Heights (Emily Brontë)",
+      "observedHeading": "Single Text A · Wuthering Heights",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+      "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc"
+    },
+    "english-2010-ol-p2-single-b": {
+      "topicId": "english-12-32",
+      "title": "Dancing at Lughnasa",
+      "canonicalLabel": "Dancing at Lughnasa (Brian Friel)",
+      "observedHeading": "Single Text B · Dancing At Lughnasa",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+      "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc"
+    },
+    "english-2010-ol-p2-single-c": {
+      "topicId": "english-12-19",
+      "title": "Sive",
+      "canonicalLabel": "Sive (John B. Keane)",
+      "observedHeading": "Single Text C · Sive",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+      "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc"
+    },
+    "english-2010-ol-p2-single-d": {
+      "topicId": "english-12-35",
+      "title": "Lamb",
+      "canonicalLabel": "Lamb (Bernard MacLaverty)",
+      "observedHeading": "Single Text D · Lamb",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+      "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc"
+    },
+    "english-2010-ol-p2-single-e": {
+      "topicId": "english-12-36",
+      "title": "Lies of Silence",
+      "canonicalLabel": "Lies of Silence (Brian Moore)",
+      "observedHeading": "Single Text E · Lies Of Silence",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+      "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc"
+    },
+    "english-2010-ol-p2-single-f": {
+      "topicId": "english-12-37",
+      "title": "Panther in the Basement",
+      "canonicalLabel": "Panther in the Basement (Amos Oz)",
+      "observedHeading": "Single Text F · Panther In The Basement",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+      "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc"
+    },
+    "english-2010-ol-p2-single-g": {
+      "topicId": "english-12-1",
+      "title": "King Lear",
+      "canonicalLabel": "King Lear (Shakespeare)",
+      "observedHeading": "Single Text G · King Lear",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+      "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc"
+    },
+    "english-2010-ol-p2-single-h": {
+      "topicId": "english-12-33",
+      "title": "The Grapes of Wrath",
+      "canonicalLabel": "The Grapes of Wrath (John Steinbeck)",
+      "observedHeading": "Single Text H · The Grapes Of Wrath",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+      "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc"
+    },
+    "english-2010-ol-p2-single-i": {
+      "topicId": "english-12-34",
+      "title": "The Blackwater Lightship",
+      "canonicalLabel": "The Blackwater Lightship (Colm Tóibín)",
+      "observedHeading": "Single Text I · The Blackwater Lightship",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+      "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc"
+    },
+    "english-2010-ol-p2-prescribed-a": {
+      "topicId": "english-11-24",
+      "title": "For Heidi with Blue Hair",
+      "canonicalLabel": "Fleur Adcock",
+      "observedHeading": "Poetry A · For Heidi With Blue Hair",
+      "paperPage": 11,
+      "source": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+      "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "sourcePages": [
+        11
+      ],
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
+    },
+    "english-2010-ol-p2-prescribed-b": {
+      "topicId": "english-11-16",
+      "title": "My Father Perceived as a Vision of St Francis",
+      "canonicalLabel": "Paula Meehan",
+      "observedHeading": "Poetry B · My Father Perceived As A Vision Of St Francis",
+      "paperPage": 13,
+      "source": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+      "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "sourcePages": [
+        13
+      ],
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
+    },
+    "english-2010-ol-p2-prescribed-c": {
+      "topicId": "english-11-5",
+      "title": "Aunt Helen",
+      "canonicalLabel": "T.S. Eliot",
+      "observedHeading": "Poetry C · Aunt Helen",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+      "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "sourcePages": [
+        15
+      ]
+    },
+    "english-2010-ol-p2-prescribed-d": {
+      "topicId": "english-11-23",
+      "title": "The Wild Swans at Coole",
+      "canonicalLabel": "W.B. Yeats",
+      "observedHeading": "Poetry D · The Wild Swans At Coole",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+      "sourceSha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+      "sourcePages": [
+        16
+      ],
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
+    },
+    "english-2011-hl-p2-single-a": {
+      "topicId": "english-12-30",
+      "title": "Wuthering Heights",
+      "canonicalLabel": "Wuthering Heights (Emily Brontë)",
+      "observedHeading": "Single Text A · Wuthering Heights · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2011/LC002ALP200EV.pdf",
+      "sourceSha256": "bd44843d48b09cd867269e85034be8b202db63c3fb12071d4b7b985ea5215fa4"
+    },
+    "english-2011-hl-p2-single-b": {
+      "topicId": "english-12-6",
+      "title": "A Doll's House",
+      "canonicalLabel": "A Doll's House (Henrik Ibsen)",
+      "observedHeading": "Single Text B · A Doll’S House · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2011/LC002ALP200EV.pdf",
+      "sourceSha256": "bd44843d48b09cd867269e85034be8b202db63c3fb12071d4b7b985ea5215fa4"
+    },
+    "english-2011-hl-p2-single-c": {
+      "topicId": "english-12-38",
+      "title": "A Whistle in the Dark",
+      "canonicalLabel": "A Whistle in the Dark (Tom Murphy)",
+      "observedHeading": "Single Text C · A Whistle In The Dark · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2011/LC002ALP200EV.pdf",
+      "sourceSha256": "bd44843d48b09cd867269e85034be8b202db63c3fb12071d4b7b985ea5215fa4"
+    },
+    "english-2011-hl-p2-single-d": {
+      "topicId": "english-12-0",
+      "title": "Hamlet",
+      "canonicalLabel": "Hamlet (Shakespeare)",
+      "observedHeading": "Single Text D · Hamlet · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2011/LC002ALP200EV.pdf",
+      "sourceSha256": "bd44843d48b09cd867269e85034be8b202db63c3fb12071d4b7b985ea5215fa4"
+    },
+    "english-2011-hl-p2-single-e": {
+      "topicId": "english-12-33",
+      "title": "The Grapes of Wrath",
+      "canonicalLabel": "The Grapes of Wrath (John Steinbeck)",
+      "observedHeading": "Single Text E · The Grapes Of Wrath · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2011/LC002ALP200EV.pdf",
+      "sourceSha256": "bd44843d48b09cd867269e85034be8b202db63c3fb12071d4b7b985ea5215fa4"
+    },
+    "english-2011-hl-p2-prescribed-1": {
+      "topicId": "english-11-2",
+      "title": "Emily Dickinson",
+      "canonicalLabel": "Emily Dickinson",
+      "observedHeading": "Prescribed Poetry · “Emily Dickinson’S Original Approach To Poetry Results In Startling And · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2011/LC002ALP200EV.pdf",
+      "sourceSha256": "bd44843d48b09cd867269e85034be8b202db63c3fb12071d4b7b985ea5215fa4",
+      "promptHeading": "Emily Dickinson"
+    },
+    "english-2011-hl-p2-prescribed-2": {
+      "topicId": "english-11-23",
+      "title": "W.B. Yeats",
+      "canonicalLabel": "W.B. Yeats",
+      "observedHeading": "Prescribed Poetry · “Yeats Can Be A Challenging Poet To Read, Both In Terms Of Style And Subject Matter.” · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2011/LC002ALP200EV.pdf",
+      "sourceSha256": "bd44843d48b09cd867269e85034be8b202db63c3fb12071d4b7b985ea5215fa4",
+      "promptHeading": "William Butler Yeats"
+    },
+    "english-2011-hl-p2-prescribed-3": {
+      "topicId": "english-11-6",
+      "title": "Robert Frost",
+      "canonicalLabel": "Robert Frost",
+      "observedHeading": "Prescribed Poetry · “Frost’S Simple Style Is Deceptive And A Thoughtful Reader Will See Layers Of · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2011/LC002ALP200EV.pdf",
+      "sourceSha256": "bd44843d48b09cd867269e85034be8b202db63c3fb12071d4b7b985ea5215fa4",
+      "promptHeading": "Robert Frost"
+    },
+    "english-2011-hl-p2-prescribed-4": {
+      "topicId": "english-11-1",
+      "title": "Eavan Boland",
+      "canonicalLabel": "Eavan Boland",
+      "observedHeading": "Prescribed Poetry · “Boland’S Reflective Insights Are Expressed Through Her Precise Use Of Language.” · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2011/LC002ALP200EV.pdf",
+      "sourceSha256": "bd44843d48b09cd867269e85034be8b202db63c3fb12071d4b7b985ea5215fa4",
+      "promptHeading": "Eavan Boland"
+    },
+    "english-2011-ol-p2-single-a": {
+      "topicId": "english-12-39",
+      "title": "Circle of Friends",
+      "canonicalLabel": "Circle of Friends (Maeve Binchy)",
+      "observedHeading": "Single Text A · Circle Of Friends",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+      "sourceSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303"
+    },
+    "english-2011-ol-p2-single-b": {
+      "topicId": "english-12-30",
+      "title": "Wuthering Heights",
+      "canonicalLabel": "Wuthering Heights (Emily Brontë)",
+      "observedHeading": "Single Text B · Wuthering Heights",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+      "sourceSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303"
+    },
+    "english-2011-ol-p2-single-c": {
+      "topicId": "english-12-6",
+      "title": "A Doll's House",
+      "canonicalLabel": "A Doll's House (Henrik Ibsen)",
+      "observedHeading": "Single Text C · A Doll’S House",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+      "sourceSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303"
+    },
+    "english-2011-ol-p2-single-d": {
+      "topicId": "english-12-40",
+      "title": "How Many Miles to Babylon?",
+      "canonicalLabel": "How Many Miles to Babylon? (Jennifer Johnston)",
+      "observedHeading": "Single Text D · How Many Miles To Babylon?",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+      "sourceSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303"
+    },
+    "english-2011-ol-p2-single-e": {
+      "topicId": "english-12-41",
+      "title": "The Secret Life of Bees",
+      "canonicalLabel": "The Secret Life of Bees (Sue Monk Kidd)",
+      "observedHeading": "Single Text E · The Secret Life Of Bees",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+      "sourceSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303"
+    },
+    "english-2011-ol-p2-single-f": {
+      "topicId": "english-12-38",
+      "title": "A Whistle in the Dark",
+      "canonicalLabel": "A Whistle in the Dark (Tom Murphy)",
+      "observedHeading": "Single Text F · A Whistle In The Dark",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+      "sourceSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303"
+    },
+    "english-2011-ol-p2-single-g": {
+      "topicId": "english-12-42",
+      "title": "The Plough and the Stars",
+      "canonicalLabel": "The Plough and the Stars (Sean O'Casey)",
+      "observedHeading": "Single Text G · The Plough And The Stars",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+      "sourceSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303"
+    },
+    "english-2011-ol-p2-single-h": {
+      "topicId": "english-12-0",
+      "title": "Hamlet",
+      "canonicalLabel": "Hamlet (Shakespeare)",
+      "observedHeading": "Single Text H · Hamlet",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+      "sourceSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303"
+    },
+    "english-2011-ol-p2-single-i": {
+      "topicId": "english-12-33",
+      "title": "The Grapes of Wrath",
+      "canonicalLabel": "The Grapes of Wrath (John Steinbeck)",
+      "observedHeading": "Single Text I · The Grapes Of Wrath",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+      "sourceSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303"
+    },
+    "english-2011-ol-p2-prescribed-a": {
+      "topicId": "english-11-10",
+      "title": "A Christmas Childhood (lines 17–52)",
+      "canonicalLabel": "Patrick Kavanagh",
+      "observedHeading": "Poetry A · Lines 17-52 From A Christmas Childhood",
+      "paperPage": 11,
+      "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+      "sourceSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303",
+      "sourcePages": [
+        11
+      ]
+    },
+    "english-2011-ol-p2-prescribed-b": {
+      "topicId": "english-11-54",
+      "title": "All Day Long",
+      "canonicalLabel": "Noel Monahan",
+      "observedHeading": "Poetry B · All Day Long",
+      "paperPage": 13,
+      "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+      "sourceSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303",
+      "sourcePages": [
+        13
+      ]
+    },
+    "english-2011-ol-p2-prescribed-c": {
+      "topicId": "english-11-55",
+      "title": "The Net",
+      "canonicalLabel": "Julie O'Callaghan",
+      "observedHeading": "Poetry C · The Net",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+      "sourceSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303",
+      "sourcePages": [
+        15
+      ]
+    },
+    "english-2011-ol-p2-prescribed-d": {
+      "topicId": "english-11-9",
+      "title": "Spring",
+      "canonicalLabel": "Gerard Manley Hopkins",
+      "observedHeading": "Poetry D · Spring",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+      "sourceSha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303",
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2012-hl-p2-single-a": {
+      "topicId": "english-12-43",
+      "title": "Emma",
+      "canonicalLabel": "Emma (Jane Austen)",
+      "observedHeading": "Single Text A · Emma · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2012/LC002ALP200EV.pdf",
+      "sourceSha256": "98a560ad7b42bfa5f18ce25d02383ffde18091b1e62ef0c822a7bd8b4b1f2474"
+    },
+    "english-2012-hl-p2-single-b": {
+      "topicId": "english-12-44",
+      "title": "Empire of the Sun",
+      "canonicalLabel": "Empire of the Sun (J. G. Ballard)",
+      "observedHeading": "Single Text B · Empire Of The Sun · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2012/LC002ALP200EV.pdf",
+      "sourceSha256": "98a560ad7b42bfa5f18ce25d02383ffde18091b1e62ef0c822a7bd8b4b1f2474"
+    },
+    "english-2012-hl-p2-single-c": {
+      "topicId": "english-12-32",
+      "title": "Dancing at Lughnasa",
+      "canonicalLabel": "Dancing at Lughnasa (Brian Friel)",
+      "observedHeading": "Single Text C · Dancing At Lughnasa · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2012/LC002ALP200EV.pdf",
+      "sourceSha256": "98a560ad7b42bfa5f18ce25d02383ffde18091b1e62ef0c822a7bd8b4b1f2474"
+    },
+    "english-2012-hl-p2-single-d": {
+      "topicId": "english-12-6",
+      "title": "A Doll's House",
+      "canonicalLabel": "A Doll's House (Henrik Ibsen)",
+      "observedHeading": "Single Text D · A Doll’S House · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2012/LC002ALP200EV.pdf",
+      "sourceSha256": "98a560ad7b42bfa5f18ce25d02383ffde18091b1e62ef0c822a7bd8b4b1f2474"
+    },
+    "english-2012-hl-p2-single-e": {
+      "topicId": "english-12-0",
+      "title": "Hamlet",
+      "canonicalLabel": "Hamlet (Shakespeare)",
+      "observedHeading": "Single Text E · Hamlet · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2012/LC002ALP200EV.pdf",
+      "sourceSha256": "98a560ad7b42bfa5f18ce25d02383ffde18091b1e62ef0c822a7bd8b4b1f2474"
+    },
+    "english-2012-hl-p2-prescribed-1": {
+      "topicId": "english-11-57",
+      "title": "Thomas Kinsella",
+      "canonicalLabel": "Thomas Kinsella",
+      "observedHeading": "Prescribed Poetry · “Kinsella’S Poetic World Is One Of Darkness And Decay, Relieved By Glimpses Of Insight · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2012/LC002ALP200EV.pdf",
+      "sourceSha256": "98a560ad7b42bfa5f18ce25d02383ffde18091b1e62ef0c822a7bd8b4b1f2474",
+      "promptHeading": "Thomas Kinsella"
+    },
+    "english-2012-hl-p2-prescribed-2": {
+      "topicId": "english-11-20",
+      "title": "Adrienne Rich",
+      "canonicalLabel": "Adrienne Rich",
+      "observedHeading": "Prescribed Poetry · “Rich’S Poetry Communicates Powerful Feelings Through Thought-Provoking Images · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2012/LC002ALP200EV.pdf",
+      "sourceSha256": "98a560ad7b42bfa5f18ce25d02383ffde18091b1e62ef0c822a7bd8b4b1f2474",
+      "promptHeading": "Adrienne Rich"
+    },
+    "english-2012-hl-p2-prescribed-3": {
+      "topicId": "english-11-13",
+      "title": "Philip Larkin",
+      "canonicalLabel": "Philip Larkin",
+      "observedHeading": "Prescribed Poetry · “Larkin’S Poems Often Reveal Moments Of Sensitivity Which Lessen The Disappointment · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2012/LC002ALP200EV.pdf",
+      "sourceSha256": "98a560ad7b42bfa5f18ce25d02383ffde18091b1e62ef0c822a7bd8b4b1f2474",
+      "promptHeading": "Philip Larkin"
+    },
+    "english-2012-hl-p2-prescribed-4": {
+      "topicId": "english-11-10",
+      "title": "Patrick Kavanagh",
+      "canonicalLabel": "Patrick Kavanagh",
+      "observedHeading": "Prescribed Poetry · “Aspects Of Kavanagh’S Poetry Could Be Seen As Dated And Irrelevant, But His Unique · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2012/LC002ALP200EV.pdf",
+      "sourceSha256": "98a560ad7b42bfa5f18ce25d02383ffde18091b1e62ef0c822a7bd8b4b1f2474",
+      "promptHeading": "Patrick Kavanagh"
+    },
+    "english-2012-ol-p2-single-a": {
+      "topicId": "english-12-43",
+      "title": "Emma",
+      "canonicalLabel": "Emma (Jane Austen)",
+      "observedHeading": "Single Text A · Emma",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+      "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35"
+    },
+    "english-2012-ol-p2-single-b": {
+      "topicId": "english-12-44",
+      "title": "Empire of the Sun",
+      "canonicalLabel": "Empire of the Sun (J. G. Ballard)",
+      "observedHeading": "Single Text B · Empire Of The Sun",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+      "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35"
+    },
+    "english-2012-ol-p2-single-c": {
+      "topicId": "english-12-39",
+      "title": "Circle of Friends",
+      "canonicalLabel": "Circle of Friends (Maeve Binchy)",
+      "observedHeading": "Single Text C · Circle Of Friends",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+      "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35"
+    },
+    "english-2012-ol-p2-single-d": {
+      "topicId": "english-12-32",
+      "title": "Dancing at Lughnasa",
+      "canonicalLabel": "Dancing at Lughnasa (Brian Friel)",
+      "observedHeading": "Single Text D · Dancing At Lughnasa",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+      "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35"
+    },
+    "english-2012-ol-p2-single-e": {
+      "topicId": "english-12-6",
+      "title": "A Doll's House",
+      "canonicalLabel": "A Doll's House (Henrik Ibsen)",
+      "observedHeading": "Single Text E · A Doll’S House",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+      "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35"
+    },
+    "english-2012-ol-p2-single-f": {
+      "topicId": "english-12-40",
+      "title": "How Many Miles to Babylon?",
+      "canonicalLabel": "How Many Miles to Babylon? (Jennifer Johnston)",
+      "observedHeading": "Single Text F · How Many Miles To Babylon?",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+      "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35"
+    },
+    "english-2012-ol-p2-single-g": {
+      "topicId": "english-12-45",
+      "title": "The Lonesome West",
+      "canonicalLabel": "The Lonesome West (Martin McDonagh)",
+      "observedHeading": "Single Text G · The Lonesome West",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+      "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35"
+    },
+    "english-2012-ol-p2-single-h": {
+      "topicId": "english-12-0",
+      "title": "Hamlet",
+      "canonicalLabel": "Hamlet (Shakespeare)",
+      "observedHeading": "Single Text H · Hamlet",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+      "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35"
+    },
+    "english-2012-ol-p2-single-i": {
+      "topicId": "english-12-46",
+      "title": "The Story of Lucy Gault",
+      "canonicalLabel": "The Story of Lucy Gault (William Trevor)",
+      "observedHeading": "Single Text I · The Story Of Lucy Gault",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+      "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35"
+    },
+    "english-2012-ol-p2-prescribed-a": {
+      "topicId": "english-11-8",
+      "title": "A Constable Calls",
+      "canonicalLabel": "Seamus Heaney",
+      "observedHeading": "Poetry A · A Constable Calls",
+      "paperPage": 12,
+      "source": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+      "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35",
+      "sourcePages": [
+        12
+      ]
+    },
+    "english-2012-ol-p2-prescribed-b": {
+      "topicId": "english-11-36",
+      "title": "The Sun",
+      "canonicalLabel": "Mary Oliver",
+      "observedHeading": "Poetry B · The Sun",
+      "paperPage": 14,
+      "source": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+      "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35",
+      "sourcePages": [
+        14
+      ]
+    },
+    "english-2012-ol-p2-prescribed-c": {
+      "topicId": "english-11-56",
+      "title": "A Summer Morning",
+      "canonicalLabel": "Richard Wilbur",
+      "observedHeading": "Poetry C · A Summer Morning",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+      "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35",
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2012-ol-p2-prescribed-d": {
+      "topicId": "english-11-57",
+      "title": "Mirror in February",
+      "canonicalLabel": "Thomas Kinsella",
+      "observedHeading": "Poetry D · Mirror In February",
+      "paperPage": 18,
+      "source": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+      "sourceSha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35",
+      "sourcePages": [
+        18
+      ],
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF18.",
+      "titlePrintedPage": 18
+    },
+    "english-2013-hl-p2-single-a": {
+      "topicId": "english-12-30",
+      "title": "Wuthering Heights",
+      "canonicalLabel": "Wuthering Heights (Emily Brontë)",
+      "observedHeading": "Single Text A · Wuthering Heights · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
+      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1"
+    },
+    "english-2013-hl-p2-single-b": {
+      "topicId": "english-12-22",
+      "title": "The Great Gatsby",
+      "canonicalLabel": "The Great Gatsby (F. Scott Fitzgerald)",
+      "observedHeading": "Single Text B · The Great Gatsby · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
+      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1"
+    },
+    "english-2013-hl-p2-single-c": {
+      "topicId": "english-12-47",
+      "title": "The Grass Is Singing",
+      "canonicalLabel": "The Grass Is Singing (Doris Lessing)",
+      "observedHeading": "Single Text C · The Grass Is Singing · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
+      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1"
+    },
+    "english-2013-hl-p2-single-d": {
+      "topicId": "english-12-2",
+      "title": "Macbeth",
+      "canonicalLabel": "Macbeth (Shakespeare)",
+      "observedHeading": "Single Text D · Macbeth · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
+      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1"
+    },
+    "english-2013-hl-p2-single-e": {
+      "topicId": "english-12-48",
+      "title": "Antigone",
+      "canonicalLabel": "Antigone (Sophocles)",
+      "observedHeading": "Single Text E · Antigone · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
+      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1"
+    },
+    "english-2013-hl-p2-prescribed-1": {
+      "topicId": "english-11-0",
+      "title": "Elizabeth Bishop",
+      "canonicalLabel": "Elizabeth Bishop",
+      "observedHeading": "Prescribed Poetry · “Bishop’S Carefully Judged Use Of Language Aids The Reader To Uncover The Intensity · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
+      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
+      "promptHeading": "Elizabeth Bishop"
+    },
+    "english-2013-hl-p2-prescribed-2": {
+      "topicId": "english-11-9",
+      "title": "Gerard Manley Hopkins",
+      "canonicalLabel": "Gerard Manley Hopkins",
+      "observedHeading": "Prescribed Poetry · “Hopkins’ Innovative Style Displays His Struggle With What He Believes To Be · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
+      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
+      "promptHeading": "Gerard Manley Hopkins"
+    },
+    "english-2013-hl-p2-prescribed-3": {
+      "topicId": "english-11-15",
+      "title": "Derek Mahon",
+      "canonicalLabel": "Derek Mahon",
+      "observedHeading": "Prescribed Poetry · “Mahon Uses Language And Imagery To Transform Personal Observations Into · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
+      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
+      "promptHeading": "Derek Mahon"
+    },
+    "english-2013-hl-p2-prescribed-4": {
+      "topicId": "english-11-19",
+      "title": "Sylvia Plath",
+      "canonicalLabel": "Sylvia Plath",
+      "observedHeading": "Prescribed Poetry · “Plath’S Provocative Imagery Serves To Highlight The Intense Emotions Expressed In Her · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
+      "sourceSha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
+      "promptHeading": "Sylvia Plath"
+    },
+    "english-2013-ol-p2-single-a": {
+      "topicId": "english-12-39",
+      "title": "Circle of Friends",
+      "canonicalLabel": "Circle of Friends (Maeve Binchy)",
+      "observedHeading": "Single Text A · Circle Of Friends",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+      "sourceSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab"
+    },
+    "english-2013-ol-p2-single-b": {
+      "topicId": "english-12-30",
+      "title": "Wuthering Heights",
+      "canonicalLabel": "Wuthering Heights (Emily Brontë)",
+      "observedHeading": "Single Text B · Wuthering Heights",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+      "sourceSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab"
+    },
+    "english-2013-ol-p2-single-c": {
+      "topicId": "english-12-22",
+      "title": "The Great Gatsby",
+      "canonicalLabel": "The Great Gatsby (F. Scott Fitzgerald)",
+      "observedHeading": "Single Text C · The Great Gatsby",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+      "sourceSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab"
+    },
+    "english-2013-ol-p2-single-d": {
+      "topicId": "english-12-40",
+      "title": "How Many Miles to Babylon?",
+      "canonicalLabel": "How Many Miles to Babylon? (Jennifer Johnston)",
+      "observedHeading": "Single Text D · How Many Miles To Babylon?",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+      "sourceSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab"
+    },
+    "english-2013-ol-p2-single-e": {
+      "topicId": "english-12-19",
+      "title": "Sive",
+      "canonicalLabel": "Sive (John B. Keane)",
+      "observedHeading": "Single Text E · Sive",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+      "sourceSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab"
+    },
+    "english-2013-ol-p2-single-f": {
+      "topicId": "english-12-49",
+      "title": "Home Before Night",
+      "canonicalLabel": "Home Before Night (Hugh Leonard)",
+      "observedHeading": "Single Text F · Home Before Night",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+      "sourceSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab"
+    },
+    "english-2013-ol-p2-single-g": {
+      "topicId": "english-12-47",
+      "title": "The Grass Is Singing",
+      "canonicalLabel": "The Grass Is Singing (Doris Lessing)",
+      "observedHeading": "Single Text G · The Grass Is Singing",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+      "sourceSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab"
+    },
+    "english-2013-ol-p2-single-h": {
+      "topicId": "english-12-2",
+      "title": "Macbeth",
+      "canonicalLabel": "Macbeth (Shakespeare)",
+      "observedHeading": "Single Text H · Macbeth",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+      "sourceSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab"
+    },
+    "english-2013-ol-p2-single-i": {
+      "topicId": "english-12-48",
+      "title": "Antigone",
+      "canonicalLabel": "Antigone (Sophocles)",
+      "observedHeading": "Single Text I · Antigone",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+      "sourceSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab"
+    },
+    "english-2013-ol-p2-prescribed-a": {
+      "topicId": "english-11-34",
+      "title": "Anseo",
+      "canonicalLabel": "Paul Muldoon",
+      "observedHeading": "Poetry A · Anseo",
+      "paperPage": 11,
+      "source": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+      "sourceSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab",
+      "sourcePages": [
+        11
+      ],
+      "sourcePagesEvidence": "Full printed poem/extract and byline visually checked on this page. Following question-only or blank pages are not source material."
+    },
+    "english-2013-ol-p2-prescribed-b": {
+      "topicId": "english-11-43",
+      "title": "Jungian Cows",
+      "canonicalLabel": "Penelope Shuttle",
+      "observedHeading": "Poetry B · Jungian Cows",
+      "paperPage": 13,
+      "source": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+      "sourceSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab",
+      "sourcePages": [
+        13
+      ],
+      "sourcePagesEvidence": "Full printed poem/extract and byline visually checked on this page. Following question-only or blank pages are not source material."
+    },
+    "english-2013-ol-p2-prescribed-c": {
+      "topicId": "english-11-0",
+      "title": "The Fish (lines 1–33)",
+      "canonicalLabel": "Elizabeth Bishop",
+      "observedHeading": "Poetry C · Lines 1– 33 From The Fish",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+      "sourceSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab",
+      "sourcePages": [
+        15
+      ],
+      "sourcePagesEvidence": "Full printed poem/extract and byline visually checked on this page. Following question-only or blank pages are not source material."
+    },
+    "english-2013-ol-p2-prescribed-d": {
+      "topicId": "english-11-41",
+      "title": "Like as the Waves",
+      "canonicalLabel": "William Shakespeare (Sonnets)",
+      "observedHeading": "Poetry D · Like As The Waves",
+      "paperPage": 17,
+      "source": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+      "sourceSha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab",
+      "sourcePages": [
+        17
+      ],
+      "sourcePagesEvidence": "Full printed poem/extract and byline visually checked on this page. Following question-only or blank pages are not source material.",
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
+    },
+    "english-2014-hl-p2-single-a": {
+      "topicId": "english-12-17",
+      "title": "Pride and Prejudice",
+      "canonicalLabel": "Pride and Prejudice (Jane Austen)",
+      "observedHeading": "Single Text A · Pride And Prejudice · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2014/LC002ALP200EV.pdf",
+      "sourceSha256": "59e15cabf0be4dd6127abeb097ba200c03fc66d7d684edab032c9707d60355df"
+    },
+    "english-2014-hl-p2-single-b": {
+      "topicId": "english-12-44",
+      "title": "Empire of the Sun",
+      "canonicalLabel": "Empire of the Sun (J. G. Ballard)",
+      "observedHeading": "Single Text B · Empire Of The Sun · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2014/LC002ALP200EV.pdf",
+      "sourceSha256": "59e15cabf0be4dd6127abeb097ba200c03fc66d7d684edab032c9707d60355df"
+    },
+    "english-2014-hl-p2-single-c": {
+      "topicId": "english-12-50",
+      "title": "Translations",
+      "canonicalLabel": "Translations (Brian Friel)",
+      "observedHeading": "Single Text C · Translations · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2014/LC002ALP200EV.pdf",
+      "sourceSha256": "59e15cabf0be4dd6127abeb097ba200c03fc66d7d684edab032c9707d60355df"
+    },
+    "english-2014-hl-p2-single-d": {
+      "topicId": "english-12-51",
+      "title": "Never Let Me Go",
+      "canonicalLabel": "Never Let Me Go (Kazuo Ishiguro)",
+      "observedHeading": "Single Text D · Never Let Me Go · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2014/LC002ALP200EV.pdf",
+      "sourceSha256": "59e15cabf0be4dd6127abeb097ba200c03fc66d7d684edab032c9707d60355df"
+    },
+    "english-2014-hl-p2-single-e": {
+      "topicId": "english-12-2",
+      "title": "Macbeth",
+      "canonicalLabel": "Macbeth (Shakespeare)",
+      "observedHeading": "Single Text E · Macbeth · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2014/LC002ALP200EV.pdf",
+      "sourceSha256": "59e15cabf0be4dd6127abeb097ba200c03fc66d7d684edab032c9707d60355df"
+    },
+    "english-2014-hl-p2-prescribed-1": {
+      "topicId": "english-11-23",
+      "title": "W.B. Yeats",
+      "canonicalLabel": "W.B. Yeats",
+      "observedHeading": "Prescribed Poetry · “Yeats Uses Evocative Language To Create Poetry That Includes Both Personal Reflection · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2014/LC002ALP200EV.pdf",
+      "sourceSha256": "59e15cabf0be4dd6127abeb097ba200c03fc66d7d684edab032c9707d60355df",
+      "promptHeading": "William Butler Yeats"
+    },
+    "english-2014-hl-p2-prescribed-2": {
+      "topicId": "english-11-2",
+      "title": "Emily Dickinson",
+      "canonicalLabel": "Emily Dickinson",
+      "observedHeading": "Prescribed Poetry · “The Dramatic Aspects Of Dickinson’S Poetry Can Both Disturb And Delight Readers.” · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2014/LC002ALP200EV.pdf",
+      "sourceSha256": "59e15cabf0be4dd6127abeb097ba200c03fc66d7d684edab032c9707d60355df",
+      "promptHeading": "Emily Dickinson"
+    },
+    "english-2014-hl-p2-prescribed-3": {
+      "topicId": "english-11-13",
+      "title": "Philip Larkin",
+      "canonicalLabel": "Philip Larkin",
+      "observedHeading": "Prescribed Poetry · Philip Larkin · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2014/LC002ALP200EV.pdf",
+      "sourceSha256": "59e15cabf0be4dd6127abeb097ba200c03fc66d7d684edab032c9707d60355df",
+      "promptHeading": "Philip Larkin"
+    },
+    "english-2014-hl-p2-prescribed-4": {
+      "topicId": "english-11-19",
+      "title": "Sylvia Plath",
+      "canonicalLabel": "Sylvia Plath",
+      "observedHeading": "Prescribed Poetry · “Plath Makes Effective Use Of Language To Explore Her Personal Experiences Of · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2014/LC002ALP200EV.pdf",
+      "sourceSha256": "59e15cabf0be4dd6127abeb097ba200c03fc66d7d684edab032c9707d60355df",
+      "promptHeading": "Sylvia Plath"
+    },
+    "english-2014-ol-p2-single-a": {
+      "topicId": "english-12-17",
+      "title": "Pride and Prejudice",
+      "canonicalLabel": "Pride and Prejudice (Jane Austen)",
+      "observedHeading": "Single Text A · Pride And Prejudice",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+      "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e"
+    },
+    "english-2014-ol-p2-single-b": {
+      "topicId": "english-12-39",
+      "title": "Circle of Friends",
+      "canonicalLabel": "Circle of Friends (Maeve Binchy)",
+      "observedHeading": "Single Text B · Circle Of Friends",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+      "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e"
+    },
+    "english-2014-ol-p2-single-c": {
+      "topicId": "english-12-44",
+      "title": "Empire of the Sun",
+      "canonicalLabel": "Empire of the Sun (J. G. Ballard)",
+      "observedHeading": "Single Text C · Empire Of The Sun",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+      "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e"
+    },
+    "english-2014-ol-p2-single-d": {
+      "topicId": "english-12-50",
+      "title": "Translations",
+      "canonicalLabel": "Translations (Brian Friel)",
+      "observedHeading": "Single Text D · Translations",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+      "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e"
+    },
+    "english-2014-ol-p2-single-e": {
+      "topicId": "english-12-51",
+      "title": "Never Let Me Go",
+      "canonicalLabel": "Never Let Me Go (Kazuo Ishiguro)",
+      "observedHeading": "Single Text E · Never Let Me Go",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+      "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e"
+    },
+    "english-2014-ol-p2-single-f": {
+      "topicId": "english-12-40",
+      "title": "How Many Miles to Babylon?",
+      "canonicalLabel": "How Many Miles to Babylon? (Jennifer Johnston)",
+      "observedHeading": "Single Text F · How Many Miles To Babylon?",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+      "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e"
+    },
+    "english-2014-ol-p2-single-g": {
+      "topicId": "english-12-19",
+      "title": "Sive",
+      "canonicalLabel": "Sive (John B. Keane)",
+      "observedHeading": "Single Text G · Sive",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+      "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e"
+    },
+    "english-2014-ol-p2-single-h": {
+      "topicId": "english-12-49",
+      "title": "Home Before Night",
+      "canonicalLabel": "Home Before Night (Hugh Leonard)",
+      "observedHeading": "Single Text H · Home Before Night",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+      "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e"
+    },
+    "english-2014-ol-p2-single-i": {
+      "topicId": "english-12-2",
+      "title": "Macbeth",
+      "canonicalLabel": "Macbeth (Shakespeare)",
+      "observedHeading": "Single Text I · Macbeth",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+      "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e"
+    },
+    "english-2014-ol-p2-prescribed-a": {
+      "topicId": "english-11-8",
+      "title": "The Underground",
+      "canonicalLabel": "Seamus Heaney",
+      "observedHeading": "Poetry A · The Underground",
+      "paperPage": 12,
+      "source": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+      "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e",
+      "sourcePages": [
+        12
+      ]
+    },
+    "english-2014-ol-p2-prescribed-b": {
+      "topicId": "english-11-58",
+      "title": "Poems for Breakfast",
+      "canonicalLabel": "Enda Wyley",
+      "observedHeading": "Poetry B · Poems For Breakfast",
+      "paperPage": 14,
+      "source": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+      "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e",
+      "sourcePages": [
+        14
+      ],
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF14.",
+      "titlePrintedPage": 14
+    },
+    "english-2014-ol-p2-prescribed-c": {
+      "topicId": "english-11-19",
+      "title": "Child",
+      "canonicalLabel": "Sylvia Plath",
+      "observedHeading": "Poetry C · Child",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+      "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e",
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2014-ol-p2-prescribed-d": {
+      "topicId": "english-11-59",
+      "title": "The Collar",
+      "canonicalLabel": "George Herbert",
+      "observedHeading": "Poetry D · The Collar",
+      "paperPage": 18,
+      "source": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+      "sourceSha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e",
+      "sourcePages": [
+        18
+      ]
+    },
+    "english-2015-hl-p2-single-a": {
+      "topicId": "english-12-17",
+      "title": "Pride and Prejudice",
+      "canonicalLabel": "Pride and Prejudice (Jane Austen)",
+      "observedHeading": "Single Text A · Pride And Prejudice · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2015/LC002ALP200EV.pdf",
+      "sourceSha256": "3b1ad7198f5d79c3403190a0cb409c6b32e55315da73f7249fc4cb674c60b747"
+    },
+    "english-2015-hl-p2-single-b": {
+      "topicId": "english-12-22",
+      "title": "The Great Gatsby",
+      "canonicalLabel": "The Great Gatsby (F. Scott Fitzgerald)",
+      "observedHeading": "Single Text B · The Great Gatsby · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2015/LC002ALP200EV.pdf",
+      "sourceSha256": "3b1ad7198f5d79c3403190a0cb409c6b32e55315da73f7249fc4cb674c60b747"
+    },
+    "english-2015-hl-p2-single-c": {
+      "topicId": "english-12-51",
+      "title": "Never Let Me Go",
+      "canonicalLabel": "Never Let Me Go (Kazuo Ishiguro)",
+      "observedHeading": "Single Text C · Never Let Me Go · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2015/LC002ALP200EV.pdf",
+      "sourceSha256": "3b1ad7198f5d79c3403190a0cb409c6b32e55315da73f7249fc4cb674c60b747"
+    },
+    "english-2015-hl-p2-single-d": {
+      "topicId": "english-12-52",
+      "title": "All My Sons",
+      "canonicalLabel": "All My Sons (Arthur Miller)",
+      "observedHeading": "Single Text D · All My Sons · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2015/LC002ALP200EV.pdf",
+      "sourceSha256": "3b1ad7198f5d79c3403190a0cb409c6b32e55315da73f7249fc4cb674c60b747"
+    },
+    "english-2015-hl-p2-single-e": {
+      "topicId": "english-12-3",
+      "title": "Othello",
+      "canonicalLabel": "Othello (Shakespeare)",
+      "observedHeading": "Single Text E · Othello · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2015/LC002ALP200EV.pdf",
+      "sourceSha256": "3b1ad7198f5d79c3403190a0cb409c6b32e55315da73f7249fc4cb674c60b747"
+    },
+    "english-2015-hl-p2-prescribed-1": {
+      "topicId": "english-11-17",
+      "title": "John Montague",
+      "canonicalLabel": "John Montague",
+      "observedHeading": "Prescribed Poetry · “Montague Makes Effective Use Of Evocative Language To Express A Profound Empathy · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2015/LC002ALP200EV.pdf",
+      "sourceSha256": "3b1ad7198f5d79c3403190a0cb409c6b32e55315da73f7249fc4cb674c60b747",
+      "promptHeading": "John Montague"
+    },
+    "english-2015-hl-p2-prescribed-2": {
+      "topicId": "english-11-6",
+      "title": "Robert Frost",
+      "canonicalLabel": "Robert Frost",
+      "observedHeading": "Prescribed Poetry · “Frost Communicates Rich Insights Into Human Experience Using Language That Is Both · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2015/LC002ALP200EV.pdf",
+      "sourceSha256": "3b1ad7198f5d79c3403190a0cb409c6b32e55315da73f7249fc4cb674c60b747",
+      "promptHeading": "Robert Frost"
+    },
+    "english-2015-hl-p2-prescribed-3": {
+      "topicId": "english-11-18",
+      "title": "Eiléan Ní Chuilleanáin",
+      "canonicalLabel": "Eiléan Ní Chuilleanáin",
+      "observedHeading": "Prescribed Poetry · Eiléan Ní Chuilleanáin · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2015/LC002ALP200EV.pdf",
+      "sourceSha256": "3b1ad7198f5d79c3403190a0cb409c6b32e55315da73f7249fc4cb674c60b747",
+      "promptHeading": "Eiléan Ní Chuilleanáin"
+    },
+    "english-2015-hl-p2-prescribed-4": {
+      "topicId": "english-11-7",
+      "title": "Thomas Hardy",
+      "canonicalLabel": "Thomas Hardy",
+      "observedHeading": "Prescribed Poetry · “Hardy’S Poetry Is Dominated By Bleak Imagery Which Overshadows The Comforting · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2015/LC002ALP200EV.pdf",
+      "sourceSha256": "3b1ad7198f5d79c3403190a0cb409c6b32e55315da73f7249fc4cb674c60b747",
+      "promptHeading": "Thomas Hardy"
+    },
+    "english-2015-ol-p2-single-a": {
+      "topicId": "english-12-17",
+      "title": "Pride and Prejudice",
+      "canonicalLabel": "Pride and Prejudice (Jane Austen)",
+      "observedHeading": "Single Text A · Pride And Prejudice",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+      "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037"
+    },
+    "english-2015-ol-p2-single-b": {
+      "topicId": "english-12-39",
+      "title": "Circle of Friends",
+      "canonicalLabel": "Circle of Friends (Maeve Binchy)",
+      "observedHeading": "Single Text B · Circle Of Friends",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+      "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037"
+    },
+    "english-2015-ol-p2-single-c": {
+      "topicId": "english-12-22",
+      "title": "The Great Gatsby",
+      "canonicalLabel": "The Great Gatsby (F. Scott Fitzgerald)",
+      "observedHeading": "Single Text C · The Great Gatsby",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+      "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037"
+    },
+    "english-2015-ol-p2-single-d": {
+      "topicId": "english-12-51",
+      "title": "Never Let Me Go",
+      "canonicalLabel": "Never Let Me Go (Kazuo Ishiguro)",
+      "observedHeading": "Single Text D · Never Let Me Go",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+      "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037"
+    },
+    "english-2015-ol-p2-single-e": {
+      "topicId": "english-12-40",
+      "title": "How Many Miles to Babylon?",
+      "canonicalLabel": "How Many Miles to Babylon? (Jennifer Johnston)",
+      "observedHeading": "Single Text E · How Many Miles To Babylon?",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+      "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037"
+    },
+    "english-2015-ol-p2-single-f": {
+      "topicId": "english-12-49",
+      "title": "Home Before Night",
+      "canonicalLabel": "Home Before Night (Hugh Leonard)",
+      "observedHeading": "Single Text F · Home Before Night",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+      "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037"
+    },
+    "english-2015-ol-p2-single-g": {
+      "topicId": "english-12-52",
+      "title": "All My Sons",
+      "canonicalLabel": "All My Sons (Arthur Miller)",
+      "observedHeading": "Single Text G · All My Sons",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+      "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037"
+    },
+    "english-2015-ol-p2-single-h": {
+      "topicId": "english-12-53",
+      "title": "Juno and the Paycock",
+      "canonicalLabel": "Juno and the Paycock (Sean O'Casey)",
+      "observedHeading": "Single Text H · Juno And The Paycock",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+      "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037"
+    },
+    "english-2015-ol-p2-single-i": {
+      "topicId": "english-12-3",
+      "title": "Othello",
+      "canonicalLabel": "Othello (Shakespeare)",
+      "observedHeading": "Single Text I · Othello",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+      "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037"
+    },
+    "english-2015-ol-p2-prescribed-a": {
+      "topicId": "english-11-17",
+      "title": "The Locket",
+      "canonicalLabel": "John Montague",
+      "observedHeading": "Poetry A · The Locket",
+      "paperPage": 12,
+      "source": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+      "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037",
+      "sourcePages": [
+        12
+      ]
+    },
+    "english-2015-ol-p2-prescribed-b": {
+      "topicId": "english-11-53",
+      "title": "Revelation",
+      "canonicalLabel": "Liz Lochhead",
+      "observedHeading": "Poetry B · Revelation",
+      "paperPage": 14,
+      "source": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+      "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037",
+      "sourcePages": [
+        14
+      ]
+    },
+    "english-2015-ol-p2-prescribed-c": {
+      "topicId": "english-11-60",
+      "title": "Ghost Estate",
+      "canonicalLabel": "William Wall",
+      "observedHeading": "Poetry C · Ghost Estate",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+      "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037",
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2015-ol-p2-prescribed-d": {
+      "topicId": "english-11-18",
+      "title": "The Bend in the Road",
+      "canonicalLabel": "Eiléan Ní Chuilleanáin",
+      "observedHeading": "Poetry D · The Bend In The Road",
+      "paperPage": 18,
+      "source": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+      "sourceSha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037",
+      "sourcePages": [
+        18
+      ],
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
+    },
+    "english-2016-hl-p2-single-a": {
+      "topicId": "english-12-30",
+      "title": "Wuthering Heights",
+      "canonicalLabel": "Wuthering Heights (Emily Brontë)",
+      "observedHeading": "Single Text A · Wuthering Heights · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
+      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0"
+    },
+    "english-2016-hl-p2-single-b": {
+      "topicId": "english-12-22",
+      "title": "The Great Gatsby",
+      "canonicalLabel": "The Great Gatsby (F. Scott Fitzgerald)",
+      "observedHeading": "Single Text B · The Great Gatsby · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
+      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0"
+    },
+    "english-2016-hl-p2-single-c": {
+      "topicId": "english-12-50",
+      "title": "Translations",
+      "canonicalLabel": "Translations (Brian Friel)",
+      "observedHeading": "Single Text C · Translations · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
+      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0"
+    },
+    "english-2016-hl-p2-single-d": {
+      "topicId": "english-12-54",
+      "title": "Death and Nightingales",
+      "canonicalLabel": "Death and Nightingales (Eugene McCabe)",
+      "observedHeading": "Single Text D · Death And Nightingales · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
+      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0"
+    },
+    "english-2016-hl-p2-single-e": {
+      "topicId": "english-12-1",
+      "title": "King Lear",
+      "canonicalLabel": "King Lear (Shakespeare)",
+      "observedHeading": "Single Text E · King Lear · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
+      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0"
+    },
+    "english-2016-hl-p2-prescribed-1": {
+      "topicId": "english-11-2",
+      "title": "Emily Dickinson",
+      "canonicalLabel": "Emily Dickinson",
+      "observedHeading": "Prescribed Poetry · Emily Dickinson · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
+      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "promptHeading": "Emily Dickinson"
+    },
+    "english-2016-hl-p2-prescribed-2": {
+      "topicId": "english-11-5",
+      "title": "T.S. Eliot",
+      "canonicalLabel": "T.S. Eliot",
+      "observedHeading": "Prescribed Poetry · T. S. Eliot · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
+      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "promptHeading": "T. S. Eliot"
+    },
+    "english-2016-hl-p2-prescribed-3": {
+      "topicId": "english-11-0",
+      "title": "Elizabeth Bishop",
+      "canonicalLabel": "Elizabeth Bishop",
+      "observedHeading": "Prescribed Poetry · “Bishop Uses Highly Detailed Observation, Of People, Places And Events, To Explore · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
+      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "promptHeading": "Elizabeth Bishop"
+    },
+    "english-2016-hl-p2-prescribed-4": {
+      "topicId": "english-11-4",
+      "title": "Paul Durcan",
+      "canonicalLabel": "Paul Durcan",
+      "observedHeading": "Prescribed Poetry · Paul Durcan · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
+      "sourceSha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+      "promptHeading": "Paul Durcan"
+    },
+    "english-2016-ol-p2-single-a": {
+      "topicId": "english-12-39",
+      "title": "Circle of Friends",
+      "canonicalLabel": "Circle of Friends (Maeve Binchy)",
+      "observedHeading": "Single Text A · Circle Of Friends",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2"
+    },
+    "english-2016-ol-p2-single-b": {
+      "topicId": "english-12-30",
+      "title": "Wuthering Heights",
+      "canonicalLabel": "Wuthering Heights (Emily Brontë)",
+      "observedHeading": "Single Text B · Wuthering Heights",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2"
+    },
+    "english-2016-ol-p2-single-c": {
+      "topicId": "english-12-22",
+      "title": "The Great Gatsby",
+      "canonicalLabel": "The Great Gatsby (F. Scott Fitzgerald)",
+      "observedHeading": "Single Text C · The Great Gatsby",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2"
+    },
+    "english-2016-ol-p2-single-d": {
+      "topicId": "english-12-50",
+      "title": "Translations",
+      "canonicalLabel": "Translations (Brian Friel)",
+      "observedHeading": "Single Text D · Translations",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2"
+    },
+    "english-2016-ol-p2-single-e": {
+      "topicId": "english-12-55",
+      "title": "Big Maggie",
+      "canonicalLabel": "Big Maggie (John B. Keane)",
+      "observedHeading": "Single Text E · Big Maggie",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2"
+    },
+    "english-2016-ol-p2-single-f": {
+      "topicId": "english-12-49",
+      "title": "Home Before Night",
+      "canonicalLabel": "Home Before Night (Hugh Leonard)",
+      "observedHeading": "Single Text F · Home Before Night",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2"
+    },
+    "english-2016-ol-p2-single-g": {
+      "topicId": "english-12-54",
+      "title": "Death and Nightingales",
+      "canonicalLabel": "Death and Nightingales (Eugene McCabe)",
+      "observedHeading": "Single Text G · Death And Nightingales",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2"
+    },
+    "english-2016-ol-p2-single-h": {
+      "topicId": "english-12-42",
+      "title": "The Plough and the Stars",
+      "canonicalLabel": "The Plough and the Stars (Sean O'Casey)",
+      "observedHeading": "Single Text H · The Plough And The Stars",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2"
+    },
+    "english-2016-ol-p2-single-i": {
+      "topicId": "english-12-1",
+      "title": "King Lear",
+      "canonicalLabel": "King Lear (Shakespeare)",
+      "observedHeading": "Single Text I · King Lear",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2"
+    },
+    "english-2016-ol-p2-prescribed-a": {
+      "topicId": "english-11-0",
+      "title": "Filling Station",
+      "canonicalLabel": "Elizabeth Bishop",
+      "observedHeading": "Poetry A · Filling Station",
+      "paperPage": 11,
+      "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "sourcePages": [
+        11
+      ]
+    },
+    "english-2016-ol-p2-prescribed-b": {
+      "topicId": "english-11-2",
+      "title": "I Felt a Funeral in My Brain",
+      "canonicalLabel": "Emily Dickinson",
+      "observedHeading": "Poetry B · I Felt A Funeral In My Brain",
+      "paperPage": 13,
+      "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case.",
+      "sourcePages": [
+        13
+      ]
+    },
+    "english-2016-ol-p2-prescribed-c": {
+      "topicId": "english-11-61",
+      "title": "After Viewing the Bowling Match at Castlemary, Cloyne (1847)",
+      "canonicalLabel": "Greg Delanty",
+      "observedHeading": "Poetry C · After Viewing The Bowling Match At Castlemary,",
+      "paperPage": 14,
+      "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case.",
+      "sourcePages": [
+        14
+      ]
+    },
+    "english-2016-ol-p2-prescribed-d": {
+      "topicId": "english-11-42",
+      "title": "Ozymandias",
+      "canonicalLabel": "Percy Bysshe Shelley",
+      "observedHeading": "Poetry D · Ozymandias",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2017-hl-p2-single-a": {
+      "topicId": "english-12-43",
+      "title": "Emma",
+      "canonicalLabel": "Emma (Jane Austen)",
+      "observedHeading": "Single Text A · Emma · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
+      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763"
+    },
+    "english-2017-hl-p2-single-b": {
+      "topicId": "english-12-22",
+      "title": "The Great Gatsby",
+      "canonicalLabel": "The Great Gatsby (F. Scott Fitzgerald)",
+      "observedHeading": "Single Text B · The Great Gatsby · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
+      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763"
+    },
+    "english-2017-hl-p2-single-c": {
+      "topicId": "english-12-6",
+      "title": "A Doll's House",
+      "canonicalLabel": "A Doll's House (Henrik Ibsen)",
+      "observedHeading": "Single Text C · A Doll’S House · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
+      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763"
+    },
+    "english-2017-hl-p2-single-d": {
+      "topicId": "english-12-54",
+      "title": "Death and Nightingales",
+      "canonicalLabel": "Death and Nightingales (Eugene McCabe)",
+      "observedHeading": "Single Text D · Death And Nightingales · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
+      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763"
+    },
+    "english-2017-hl-p2-single-e": {
+      "topicId": "english-12-0",
+      "title": "Hamlet",
+      "canonicalLabel": "Hamlet (Shakespeare)",
+      "observedHeading": "Single Text E · Hamlet · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
+      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763"
+    },
+    "english-2017-hl-p2-prescribed-1": {
+      "topicId": "english-11-1",
+      "title": "Eavan Boland",
+      "canonicalLabel": "Eavan Boland",
+      "observedHeading": "Prescribed Poetry · “Boland Makes Effective Use Of Symbols And Metaphors To Explore Personal Experiences · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
+      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763",
+      "promptHeading": "Eavan Boland"
+    },
+    "english-2017-hl-p2-prescribed-2": {
+      "topicId": "english-11-3",
+      "title": "John Donne",
+      "canonicalLabel": "John Donne",
+      "observedHeading": "Prescribed Poetry · “Donne’S Poetry Can Be Simultaneously Playful And Challenging Both In Style And Content.” · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
+      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763",
+      "promptHeading": "John Donne"
+    },
+    "english-2017-hl-p2-prescribed-3": {
+      "topicId": "english-11-11",
+      "title": "John Keats",
+      "canonicalLabel": "John Keats",
+      "observedHeading": "Prescribed Poetry · “Keats Uses Sensuous Language And Vivid Imagery To Express A Range Of Profound Tensions.” · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
+      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763",
+      "promptHeading": "John Keats"
+    },
+    "english-2017-hl-p2-prescribed-4": {
+      "topicId": "english-11-0",
+      "title": "Elizabeth Bishop",
+      "canonicalLabel": "Elizabeth Bishop",
+      "observedHeading": "Prescribed Poetry · From The Poetry Of Elizabeth Bishop That You Have Studied, Select The Poems That, In Your · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
+      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763",
+      "promptHeading": "Elizabeth Bishop"
+    },
+    "english-2017-ol-p2-single-a": {
+      "topicId": "english-12-43",
+      "title": "Emma",
+      "canonicalLabel": "Emma (Jane Austen)",
+      "observedHeading": "Single Text A · Emma",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0"
+    },
+    "english-2017-ol-p2-single-b": {
+      "topicId": "english-12-39",
+      "title": "Circle of Friends",
+      "canonicalLabel": "Circle of Friends (Maeve Binchy)",
+      "observedHeading": "Single Text B · Circle Of Friends",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0"
+    },
+    "english-2017-ol-p2-single-c": {
+      "topicId": "english-12-22",
+      "title": "The Great Gatsby",
+      "canonicalLabel": "The Great Gatsby (F. Scott Fitzgerald)",
+      "observedHeading": "Single Text C · The Great Gatsby",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0"
+    },
+    "english-2017-ol-p2-single-d": {
+      "topicId": "english-12-6",
+      "title": "A Doll's House",
+      "canonicalLabel": "A Doll's House (Henrik Ibsen)",
+      "observedHeading": "Single Text D · A Doll’S House",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0"
+    },
+    "english-2017-ol-p2-single-e": {
+      "topicId": "english-12-55",
+      "title": "Big Maggie",
+      "canonicalLabel": "Big Maggie (John B. Keane)",
+      "observedHeading": "Single Text E · Big Maggie",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0"
+    },
+    "english-2017-ol-p2-single-f": {
+      "topicId": "english-12-54",
+      "title": "Death and Nightingales",
+      "canonicalLabel": "Death and Nightingales (Eugene McCabe)",
+      "observedHeading": "Single Text F · Death And Nightingales",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0"
+    },
+    "english-2017-ol-p2-single-g": {
+      "topicId": "english-12-42",
+      "title": "The Plough and the Stars",
+      "canonicalLabel": "The Plough and the Stars (Sean O'Casey)",
+      "observedHeading": "Single Text G · The Plough And The Stars",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0"
+    },
+    "english-2017-ol-p2-single-h": {
+      "topicId": "english-12-27",
+      "title": "The Spinning Heart",
+      "canonicalLabel": "The Spinning Heart (Donal Ryan)",
+      "observedHeading": "Single Text H · The Spinning Heart",
+      "paperPage": 9,
+      "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0"
+    },
+    "english-2017-ol-p2-single-i": {
+      "topicId": "english-12-0",
+      "title": "Hamlet",
+      "canonicalLabel": "Hamlet (Shakespeare)",
+      "observedHeading": "Single Text I · Hamlet",
+      "paperPage": 10,
+      "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0"
+    },
+    "english-2017-ol-p2-prescribed-a": {
+      "topicId": "english-11-19",
+      "title": "The Arrival of the Bee Box",
+      "canonicalLabel": "Sylvia Plath",
+      "observedHeading": "Poetry A · The Arrival Of The Bee Box",
+      "paperPage": 14,
+      "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case.",
+      "sourcePages": [
+        14
+      ]
+    },
+    "english-2017-ol-p2-prescribed-b": {
+      "topicId": "english-11-34",
+      "title": "Anseo",
+      "canonicalLabel": "Paul Muldoon",
+      "observedHeading": "Poetry B · Anseo",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "sourcePages": [
+        15
+      ]
+    },
+    "english-2017-ol-p2-prescribed-c": {
+      "topicId": "english-11-9",
+      "title": "Spring",
+      "canonicalLabel": "Gerard Manley Hopkins",
+      "observedHeading": "Poetry C · Spring",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2017-ol-p2-prescribed-d": {
+      "topicId": "english-11-27",
+      "title": "Self‐Portrait in the Dark (with Cigarette)",
+      "canonicalLabel": "Colette Bryce",
+      "observedHeading": "Poetry D · Self‐Portrait In The Dark (With Cigarette)",
+      "paperPage": 17,
+      "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case.",
+      "sourcePages": [
+        17
+      ]
+    },
+    "english-2018-hl-p2-single-a": {
+      "topicId": "english-12-30",
+      "title": "Wuthering Heights",
+      "canonicalLabel": "Wuthering Heights (Emily Brontë)",
+      "observedHeading": "Single Text A · Wuthering Heights · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
+      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06"
+    },
+    "english-2018-hl-p2-single-b": {
+      "topicId": "english-12-22",
+      "title": "The Great Gatsby",
+      "canonicalLabel": "The Great Gatsby (F. Scott Fitzgerald)",
+      "observedHeading": "Single Text B · The Great Gatsby · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
+      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06"
+    },
+    "english-2018-hl-p2-single-c": {
+      "topicId": "english-12-52",
+      "title": "All My Sons",
+      "canonicalLabel": "All My Sons (Arthur Miller)",
+      "observedHeading": "Single Text C · All My Sons · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
+      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06"
+    },
+    "english-2018-hl-p2-single-d": {
+      "topicId": "english-12-56",
+      "title": "Americanah",
+      "canonicalLabel": "Americanah (Chimamanda Ngozi Adichie)",
+      "observedHeading": "Single Text D · Americanah · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
+      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06"
+    },
+    "english-2018-hl-p2-single-e": {
+      "topicId": "english-12-1",
+      "title": "King Lear",
+      "canonicalLabel": "King Lear (Shakespeare)",
+      "observedHeading": "Single Text E · King Lear · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
+      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06"
+    },
+    "english-2018-hl-p2-prescribed-1": {
+      "topicId": "english-11-6",
+      "title": "Robert Frost",
+      "canonicalLabel": "Robert Frost",
+      "observedHeading": "Prescribed Poetry · From Your Study Of The Poetry Of Robert Frost On Your Course, Select The Poems That, · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
+      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
+      "promptHeading": "Robert Frost"
+    },
+    "english-2018-hl-p2-prescribed-2": {
+      "topicId": "english-11-18",
+      "title": "Eiléan Ní Chuilleanáin",
+      "canonicalLabel": "Eiléan Ní Chuilleanáin",
+      "observedHeading": "Prescribed Poetry · “Eiléan Ní Chuilleanáin Tells Fascinating Stories, Often Examining Themes That Are · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
+      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
+      "promptHeading": "Eiléan Ní Chuilleanáin"
+    },
+    "english-2018-hl-p2-prescribed-3": {
+      "topicId": "english-11-17",
+      "title": "John Montague",
+      "canonicalLabel": "John Montague",
+      "observedHeading": "Prescribed Poetry · From Your Study Of The Poetry Of John Montague On Your Course, Select The Poems · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
+      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
+      "promptHeading": "John Montague"
+    },
+    "english-2018-hl-p2-prescribed-4": {
+      "topicId": "english-11-13",
+      "title": "Philip Larkin",
+      "canonicalLabel": "Philip Larkin",
+      "observedHeading": "Prescribed Poetry · Philip Larkin Wanted His Poetry To Appeal To “The Common Reader”, Not Just Academics · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
+      "sourceSha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
+      "promptHeading": "Philip Larkin"
+    },
+    "english-2018-ol-p2-single-a": {
+      "topicId": "english-12-39",
+      "title": "Circle of Friends",
+      "canonicalLabel": "Circle of Friends (Maeve Binchy)",
+      "observedHeading": "Single Text A · Circle Of Friends",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+      "sourceSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860"
+    },
+    "english-2018-ol-p2-single-b": {
+      "topicId": "english-12-30",
+      "title": "Wuthering Heights",
+      "canonicalLabel": "Wuthering Heights (Emily Brontë)",
+      "observedHeading": "Single Text B · Wuthering Heights",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+      "sourceSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860"
+    },
+    "english-2018-ol-p2-single-c": {
+      "topicId": "english-12-22",
+      "title": "The Great Gatsby",
+      "canonicalLabel": "The Great Gatsby (F. Scott Fitzgerald)",
+      "observedHeading": "Single Text C · The Great Gatsby",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+      "sourceSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860"
+    },
+    "english-2018-ol-p2-single-d": {
+      "topicId": "english-12-57",
+      "title": "The Ocean at the End of the Lane",
+      "canonicalLabel": "The Ocean at the End of the Lane (Neil Gaiman)",
+      "observedHeading": "Single Text D · The Ocean At The End Of The Lane",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+      "sourceSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860"
+    },
+    "english-2018-ol-p2-single-e": {
+      "topicId": "english-12-52",
+      "title": "All My Sons",
+      "canonicalLabel": "All My Sons (Arthur Miller)",
+      "observedHeading": "Single Text E · All My Sons",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+      "sourceSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860"
+    },
+    "english-2018-ol-p2-single-f": {
+      "topicId": "english-12-56",
+      "title": "Americanah",
+      "canonicalLabel": "Americanah (Chimamanda Ngozi Adichie)",
+      "observedHeading": "Single Text F · Americanah",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+      "sourceSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860"
+    },
+    "english-2018-ol-p2-single-g": {
+      "topicId": "english-12-42",
+      "title": "The Plough and the Stars",
+      "canonicalLabel": "The Plough and the Stars (Sean O'Casey)",
+      "observedHeading": "Single Text G · The Plough And The Stars",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+      "sourceSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860"
+    },
+    "english-2018-ol-p2-single-h": {
+      "topicId": "english-12-27",
+      "title": "The Spinning Heart",
+      "canonicalLabel": "The Spinning Heart (Donal Ryan)",
+      "observedHeading": "Single Text H · The Spinning Heart",
+      "paperPage": 9,
+      "source": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+      "sourceSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860"
+    },
+    "english-2018-ol-p2-single-i": {
+      "topicId": "english-12-1",
+      "title": "King Lear",
+      "canonicalLabel": "King Lear (Shakespeare)",
+      "observedHeading": "Single Text I · King Lear",
+      "paperPage": 10,
+      "source": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+      "sourceSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860"
+    },
+    "english-2018-ol-p2-prescribed-a": {
+      "topicId": "english-11-13",
+      "title": "The Explosion",
+      "canonicalLabel": "Philip Larkin",
+      "observedHeading": "Poetry A · The Explosion",
+      "paperPage": 14,
+      "source": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+      "sourceSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860",
+      "sourcePages": [
+        14
+      ],
+      "sourcePagesEvidence": "Full poem, byline and questions visually checked on the indicated PDF page; next page begins a different poem or is blank."
+    },
+    "english-2018-ol-p2-prescribed-b": {
+      "topicId": "english-11-50",
+      "title": "Hawk Roosting",
+      "canonicalLabel": "Ted Hughes",
+      "observedHeading": "Poetry B · Hawk Roosting",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+      "sourceSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860",
+      "sourcePages": [
+        15
+      ],
+      "sourcePagesEvidence": "Full poem, byline and questions visually checked on the indicated PDF page; next page begins a different poem or is blank."
+    },
+    "english-2018-ol-p2-prescribed-c": {
+      "topicId": "english-11-1",
+      "title": "Child of Our Time",
+      "canonicalLabel": "Eavan Boland",
+      "observedHeading": "Poetry C · Child Of Our Time",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+      "sourceSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860",
+      "sourcePages": [
+        16
+      ],
+      "sourcePagesEvidence": "Full poem, byline and questions visually checked on the indicated PDF page; next page begins a different poem or is blank.",
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF16.",
+      "titlePrintedPage": 16
+    },
+    "english-2018-ol-p2-prescribed-d": {
+      "topicId": "english-11-62",
+      "title": "New World",
+      "canonicalLabel": "Michael Coady",
+      "observedHeading": "Poetry D · New World",
+      "paperPage": 17,
+      "source": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+      "sourceSha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860",
+      "sourcePages": [
+        17
+      ],
+      "sourcePagesEvidence": "Full poem, byline and questions visually checked on the indicated PDF page; next page begins a different poem or is blank."
+    },
+    "english-2019-hl-p2-single-a": {
+      "topicId": "english-12-56",
+      "title": "Americanah",
+      "canonicalLabel": "Americanah (Chimamanda Ngozi Adichie)",
+      "observedHeading": "Single Text A · Americanah · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2019/LC002ALP200EV.pdf",
+      "sourceSha256": "0e369c4e2b912e04ee3e146aa0a3f4505fb385753954e80795748daebd7a3363"
+    },
+    "english-2019-hl-p2-single-b": {
+      "topicId": "english-12-23",
+      "title": "The Handmaid's Tale",
+      "canonicalLabel": "The Handmaid's Tale (Margaret Atwood)",
+      "observedHeading": "Single Text B · The Handmaid’S Tale · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2019/LC002ALP200EV.pdf",
+      "sourceSha256": "0e369c4e2b912e04ee3e146aa0a3f4505fb385753954e80795748daebd7a3363"
+    },
+    "english-2019-hl-p2-single-c": {
+      "topicId": "english-12-15",
+      "title": "Persuasion",
+      "canonicalLabel": "Persuasion (Jane Austen)",
+      "observedHeading": "Single Text C · Persuasion · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2019/LC002ALP200EV.pdf",
+      "sourceSha256": "0e369c4e2b912e04ee3e146aa0a3f4505fb385753954e80795748daebd7a3363"
+    },
+    "english-2019-hl-p2-single-d": {
+      "topicId": "english-12-9",
+      "title": "By the Bog of Cats",
+      "canonicalLabel": "By the Bog of Cats (Marina Carr)",
+      "observedHeading": "Single Text D · By The Bog Of Cats · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2019/LC002ALP200EV.pdf",
+      "sourceSha256": "0e369c4e2b912e04ee3e146aa0a3f4505fb385753954e80795748daebd7a3363"
+    },
+    "english-2019-hl-p2-single-e": {
+      "topicId": "english-12-2",
+      "title": "Macbeth",
+      "canonicalLabel": "Macbeth (Shakespeare)",
+      "observedHeading": "Single Text E · Macbeth · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2019/LC002ALP200EV.pdf",
+      "sourceSha256": "0e369c4e2b912e04ee3e146aa0a3f4505fb385753954e80795748daebd7a3363"
+    },
+    "english-2019-hl-p2-prescribed-1": {
+      "topicId": "english-11-12",
+      "title": "Brendan Kennelly",
+      "canonicalLabel": "Brendan Kennelly",
+      "observedHeading": "Prescribed Poetry · Discuss How Kennelly’S Sensitive Exploration Of A Range Of Emotions, And His Imaginative · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2019/LC002ALP200EV.pdf",
+      "sourceSha256": "0e369c4e2b912e04ee3e146aa0a3f4505fb385753954e80795748daebd7a3363"
+    },
+    "english-2019-hl-p2-prescribed-2": {
+      "topicId": "english-11-0",
+      "title": "Elizabeth Bishop",
+      "canonicalLabel": "Elizabeth Bishop",
+      "observedHeading": "Prescribed Poetry · “Bishop Makes Skillful Use Of A Variety Of Poetic Techniques To Produce Poems That Are · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2019/LC002ALP200EV.pdf",
+      "sourceSha256": "0e369c4e2b912e04ee3e146aa0a3f4505fb385753954e80795748daebd7a3363"
+    },
+    "english-2019-hl-p2-prescribed-3": {
+      "topicId": "english-11-23",
+      "title": "W.B. Yeats",
+      "canonicalLabel": "W.B. Yeats",
+      "observedHeading": "Prescribed Poetry · “Yeats’S Poetry Is Both Intellectually Stimulating And Emotionally Charged.” · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2019/LC002ALP200EV.pdf",
+      "sourceSha256": "0e369c4e2b912e04ee3e146aa0a3f4505fb385753954e80795748daebd7a3363"
+    },
+    "english-2019-hl-p2-prescribed-4": {
+      "topicId": "english-11-19",
+      "title": "Sylvia Plath",
+      "canonicalLabel": "Sylvia Plath",
+      "observedHeading": "Prescribed Poetry · Discuss How Effectively Plath Uses A Range Of Images To Develop Her Themes And Add · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2019/LC002ALP200EV.pdf",
+      "sourceSha256": "0e369c4e2b912e04ee3e146aa0a3f4505fb385753954e80795748daebd7a3363"
+    },
+    "english-2019-ol-p2-single-a": {
+      "topicId": "english-12-56",
+      "title": "Americanah",
+      "canonicalLabel": "Americanah (Chimamanda Ngozi Adichie)",
+      "observedHeading": "Single Text A · Americanah",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be"
+    },
+    "english-2019-ol-p2-single-b": {
+      "topicId": "english-12-23",
+      "title": "The Handmaid's Tale",
+      "canonicalLabel": "The Handmaid's Tale (Margaret Atwood)",
+      "observedHeading": "Single Text B · The Handmaid’S Tale",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be"
+    },
+    "english-2019-ol-p2-single-c": {
+      "topicId": "english-12-15",
+      "title": "Persuasion",
+      "canonicalLabel": "Persuasion (Jane Austen)",
+      "observedHeading": "Single Text C · Persuasion",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be"
+    },
+    "english-2019-ol-p2-single-d": {
+      "topicId": "english-12-9",
+      "title": "By the Bog of Cats",
+      "canonicalLabel": "By the Bog of Cats (Marina Carr)",
+      "observedHeading": "Single Text D · By The Bog Of Cats",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be"
+    },
+    "english-2019-ol-p2-single-e": {
+      "topicId": "english-12-18",
+      "title": "Room",
+      "canonicalLabel": "Room (Emma Donoghue)",
+      "observedHeading": "Single Text E · Room",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be"
+    },
+    "english-2019-ol-p2-single-f": {
+      "topicId": "english-12-22",
+      "title": "The Great Gatsby",
+      "canonicalLabel": "The Great Gatsby (F. Scott Fitzgerald)",
+      "observedHeading": "Single Text F · The Great Gatsby",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be"
+    },
+    "english-2019-ol-p2-single-g": {
+      "topicId": "english-12-27",
+      "title": "The Spinning Heart",
+      "canonicalLabel": "The Spinning Heart (Donal Ryan)",
+      "observedHeading": "Single Text G · The Spinning Heart",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be"
+    },
+    "english-2019-ol-p2-single-h": {
+      "topicId": "english-12-2",
+      "title": "Macbeth",
+      "canonicalLabel": "Macbeth (Shakespeare)",
+      "observedHeading": "Single Text H · Macbeth",
+      "paperPage": 9,
+      "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be"
+    },
+    "english-2019-ol-p2-single-i": {
+      "topicId": "english-12-26",
+      "title": "The Playboy of the Western World",
+      "canonicalLabel": "The Playboy of the Western World (J.M. Synge)",
+      "observedHeading": "Single Text I · The Playboy Of The Western World",
+      "paperPage": 10,
+      "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be"
+    },
+    "english-2019-ol-p2-prescribed-a": {
+      "topicId": "english-11-12",
+      "title": "Begin",
+      "canonicalLabel": "Brendan Kennelly",
+      "observedHeading": "Poetry A · Begin",
+      "paperPage": 14,
+      "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be",
+      "sourcePages": [
+        14
+      ]
+    },
+    "english-2019-ol-p2-prescribed-b": {
+      "topicId": "english-11-63",
+      "title": "To Daffodils",
+      "canonicalLabel": "Robert Herrick",
+      "observedHeading": "Poetry B · To Daffodils",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be",
+      "sourcePages": [
+        15
+      ]
+    },
+    "english-2019-ol-p2-prescribed-c": {
+      "topicId": "english-11-0",
+      "title": "The Fish (lines 45–76)",
+      "canonicalLabel": "Elizabeth Bishop",
+      "observedHeading": "Poetry C · The Fish (Extract: Lines 45",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be",
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2019-ol-p2-prescribed-d": {
+      "topicId": "english-11-64",
+      "title": "Daniel’s Duck (lines 7–27)",
+      "canonicalLabel": "Kerry Hardie",
+      "observedHeading": "Poetry D · Daniel’S Duck (Extract: Lines 7",
+      "paperPage": 17,
+      "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be",
+      "sourcePages": [
+        17
+      ]
+    },
+    "english-2020-hl-p2-single-a": {
+      "topicId": "english-12-23",
+      "title": "The Handmaid's Tale",
+      "canonicalLabel": "The Handmaid's Tale (Margaret Atwood)",
+      "observedHeading": "Single Text A · The Handmaid’S Tale · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2020/LC002ALP200EV.pdf",
+      "sourceSha256": "6a503257d68ec80373fbd17db737956807deaea14ff4b4a6727c32815aa157a6"
+    },
+    "english-2020-hl-p2-single-b": {
+      "topicId": "english-12-15",
+      "title": "Persuasion",
+      "canonicalLabel": "Persuasion (Jane Austen)",
+      "observedHeading": "Single Text B · Persuasion · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2020/LC002ALP200EV.pdf",
+      "sourceSha256": "6a503257d68ec80373fbd17db737956807deaea14ff4b4a6727c32815aa157a6"
+    },
+    "english-2020-hl-p2-single-c": {
+      "topicId": "english-12-10",
+      "title": "Days Without End",
+      "canonicalLabel": "Days Without End (Sebastian Barry)",
+      "observedHeading": "Single Text C · Days Without End · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2020/LC002ALP200EV.pdf",
+      "sourceSha256": "6a503257d68ec80373fbd17db737956807deaea14ff4b4a6727c32815aa157a6"
+    },
+    "english-2020-hl-p2-single-d": {
+      "topicId": "english-12-0",
+      "title": "Hamlet",
+      "canonicalLabel": "Hamlet (Shakespeare)",
+      "observedHeading": "Single Text D · Hamlet · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2020/LC002ALP200EV.pdf",
+      "sourceSha256": "6a503257d68ec80373fbd17db737956807deaea14ff4b4a6727c32815aa157a6"
+    },
+    "english-2020-hl-p2-single-e": {
+      "topicId": "english-12-4",
+      "title": "The Tempest",
+      "canonicalLabel": "The Tempest (Shakespeare)",
+      "observedHeading": "Single Text E · The Tempest · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2020/LC002ALP200EV.pdf",
+      "sourceSha256": "6a503257d68ec80373fbd17db737956807deaea14ff4b4a6727c32815aa157a6"
+    },
+    "english-2020-hl-p2-prescribed-1": {
+      "topicId": "english-11-1",
+      "title": "Eavan Boland",
+      "canonicalLabel": "Eavan Boland",
+      "observedHeading": "Prescribed Poetry · Based On Your Reading Of Boland’S Poetry, To What Extent Is Your Emotional Response · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2020/LC002ALP200EV.pdf",
+      "sourceSha256": "6a503257d68ec80373fbd17db737956807deaea14ff4b4a6727c32815aa157a6"
+    },
+    "english-2020-hl-p2-prescribed-2": {
+      "topicId": "english-11-2",
+      "title": "Emily Dickinson",
+      "canonicalLabel": "Emily Dickinson",
+      "observedHeading": "Prescribed Poetry · Discuss How Dickinson’S Unique Approach To Language, And The Balance Between Beauty · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2020/LC002ALP200EV.pdf",
+      "sourceSha256": "6a503257d68ec80373fbd17db737956807deaea14ff4b4a6727c32815aa157a6"
+    },
+    "english-2020-hl-p2-prescribed-3": {
+      "topicId": "english-11-20",
+      "title": "Adrienne Rich",
+      "canonicalLabel": "Adrienne Rich",
+      "observedHeading": "Prescribed Poetry · Discuss How Rich Makes Effective Use Of A Variety Of Characters, Often In Dramatic Settings, · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2020/LC002ALP200EV.pdf",
+      "sourceSha256": "6a503257d68ec80373fbd17db737956807deaea14ff4b4a6727c32815aa157a6"
+    },
+    "english-2020-hl-p2-prescribed-4": {
+      "topicId": "english-11-22",
+      "title": "William Wordsworth",
+      "canonicalLabel": "William Wordsworth",
+      "observedHeading": "Prescribed Poetry · Discuss Wordsworth’S Use Of Natural Imagery, Often In Specific Settings, To Convey · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2020/LC002ALP200EV.pdf",
+      "sourceSha256": "6a503257d68ec80373fbd17db737956807deaea14ff4b4a6727c32815aa157a6"
+    },
+    "english-2020-ol-p2-single-a": {
+      "topicId": "english-12-23",
+      "title": "The Handmaid's Tale",
+      "canonicalLabel": "The Handmaid's Tale (Margaret Atwood)",
+      "observedHeading": "Single Text A · The Handmaid’S Tale",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c"
+    },
+    "english-2020-ol-p2-single-b": {
+      "topicId": "english-12-15",
+      "title": "Persuasion",
+      "canonicalLabel": "Persuasion (Jane Austen)",
+      "observedHeading": "Single Text B · Persuasion",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c"
+    },
+    "english-2020-ol-p2-single-c": {
+      "topicId": "english-12-10",
+      "title": "Days Without End",
+      "canonicalLabel": "Days Without End (Sebastian Barry)",
+      "observedHeading": "Single Text C · Days Without End",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c"
+    },
+    "english-2020-ol-p2-single-d": {
+      "topicId": "english-12-9",
+      "title": "By the Bog of Cats",
+      "canonicalLabel": "By the Bog of Cats (Marina Carr)",
+      "observedHeading": "Single Text D · By The Bog Of Cats",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c"
+    },
+    "english-2020-ol-p2-single-e": {
+      "topicId": "english-12-18",
+      "title": "Room",
+      "canonicalLabel": "Room (Emma Donoghue)",
+      "observedHeading": "Single Text E · Room",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c"
+    },
+    "english-2020-ol-p2-single-f": {
+      "topicId": "english-12-5",
+      "title": "1984",
+      "canonicalLabel": "1984 (George Orwell)",
+      "observedHeading": "Single Text F · 1984",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c"
+    },
+    "english-2020-ol-p2-single-g": {
+      "topicId": "english-12-0",
+      "title": "Hamlet",
+      "canonicalLabel": "Hamlet (Shakespeare)",
+      "observedHeading": "Single Text G · Hamlet",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c"
+    },
+    "english-2020-ol-p2-single-h": {
+      "topicId": "english-12-4",
+      "title": "The Tempest",
+      "canonicalLabel": "The Tempest (Shakespeare)",
+      "observedHeading": "Single Text H · The Tempest",
+      "paperPage": 9,
+      "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c"
+    },
+    "english-2020-ol-p2-single-i": {
+      "topicId": "english-12-26",
+      "title": "The Playboy of the Western World",
+      "canonicalLabel": "The Playboy of the Western World (J.M. Synge)",
+      "observedHeading": "Single Text I · The Playboy Of The Western World",
+      "paperPage": 10,
+      "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c"
+    },
+    "english-2020-ol-p2-prescribed-a": {
+      "topicId": "english-11-48",
+      "title": "The Cadillac in the Attic",
+      "canonicalLabel": "Andrew Hudgins",
+      "observedHeading": "Poetry A · The Cadillac In The Attic",
+      "paperPage": 14,
+      "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c",
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF14.",
+      "titlePrintedPage": 14,
+      "sourcePages": [
+        14
+      ]
+    },
+    "english-2020-ol-p2-prescribed-b": {
+      "topicId": "english-11-20",
+      "title": "Aunt Jennifer’s Tigers",
+      "canonicalLabel": "Adrienne Rich",
+      "observedHeading": "Poetry B · Aunt Jennifer’S Tigers",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c",
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF15.",
+      "titlePrintedPage": 15,
+      "sourcePages": [
+        15
+      ]
+    },
+    "english-2020-ol-p2-prescribed-c": {
+      "topicId": "english-11-14",
+      "title": "Baby-Movements II, “Trailing Clouds”",
+      "canonicalLabel": "D.H. Lawrence",
+      "observedHeading": "Poetry C · Baby-Movements Ii, “Trailing Clouds”",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c",
+      "sourcePages": [
+        16
+      ],
+      "titleEvidence": "The paper prints this title only in capitals (PDF16); title-cased with the numeral kept as II."
+    },
+    "english-2020-ol-p2-prescribed-d": {
+      "topicId": "english-11-65",
+      "title": "Will We Work Together?",
+      "canonicalLabel": "Marge Piercy",
+      "observedHeading": "Poetry D · Will We Work Together?",
+      "paperPage": 17,
+      "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c",
+      "sourcePages": [
+        17
+      ]
+    },
+    "english-2021-hl-p2-single-a": {
+      "topicId": "english-12-23",
+      "title": "The Handmaid's Tale",
+      "canonicalLabel": "The Handmaid's Tale (Margaret Atwood)",
+      "observedHeading": "Single Text A · The Handmaid’S Tale · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2021/LC002ALP200EV.pdf",
+      "sourceSha256": "6ea191c30a24e1e595f3420456a25146b73b63d74ad1f0e32ffa653b30e158e2"
+    },
+    "english-2021-hl-p2-single-b": {
+      "topicId": "english-12-10",
+      "title": "Days Without End",
+      "canonicalLabel": "Days Without End (Sebastian Barry)",
+      "observedHeading": "Single Text B · Days Without End · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2021/LC002ALP200EV.pdf",
+      "sourceSha256": "6ea191c30a24e1e595f3420456a25146b73b63d74ad1f0e32ffa653b30e158e2"
+    },
+    "english-2021-hl-p2-single-c": {
+      "topicId": "english-12-30",
+      "title": "Wuthering Heights",
+      "canonicalLabel": "Wuthering Heights (Emily Brontë)",
+      "observedHeading": "Single Text C · Wuthering Heights · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2021/LC002ALP200EV.pdf",
+      "sourceSha256": "6ea191c30a24e1e595f3420456a25146b73b63d74ad1f0e32ffa653b30e158e2"
+    },
+    "english-2021-hl-p2-single-d": {
+      "topicId": "english-12-1",
+      "title": "King Lear",
+      "canonicalLabel": "King Lear (Shakespeare)",
+      "observedHeading": "Single Text D · King Lear · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2021/LC002ALP200EV.pdf",
+      "sourceSha256": "6ea191c30a24e1e595f3420456a25146b73b63d74ad1f0e32ffa653b30e158e2"
+    },
+    "english-2021-hl-p2-single-e": {
+      "topicId": "english-12-4",
+      "title": "The Tempest",
+      "canonicalLabel": "The Tempest (Shakespeare)",
+      "observedHeading": "Single Text E · The Tempest · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2021/LC002ALP200EV.pdf",
+      "sourceSha256": "6ea191c30a24e1e595f3420456a25146b73b63d74ad1f0e32ffa653b30e158e2"
+    },
+    "english-2021-hl-p2-prescribed-1": {
+      "topicId": "english-11-1",
+      "title": "Eavan Boland",
+      "canonicalLabel": "Eavan Boland",
+      "observedHeading": "Prescribed Poetry · Discuss How Successfully, In Your Opinion, Eavan Boland Employs A Range Of Narrative · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2021/LC002ALP200EV.pdf",
+      "sourceSha256": "6ea191c30a24e1e595f3420456a25146b73b63d74ad1f0e32ffa653b30e158e2"
+    },
+    "english-2021-hl-p2-prescribed-2": {
+      "topicId": "english-11-11",
+      "title": "John Keats",
+      "canonicalLabel": "John Keats",
+      "observedHeading": "Prescribed Poetry · “Our Enjoyment Of The Sensuous Beauty Of The Poetry Of John Keats May Be Diminished · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2021/LC002ALP200EV.pdf",
+      "sourceSha256": "6ea191c30a24e1e595f3420456a25146b73b63d74ad1f0e32ffa653b30e158e2"
+    },
+    "english-2021-hl-p2-prescribed-3": {
+      "topicId": "english-11-8",
+      "title": "Seamus Heaney",
+      "canonicalLabel": "Seamus Heaney",
+      "observedHeading": "Prescribed Poetry · “Seamus Heaney Transforms The Familiar And The Mundane Through His Powerful Use Of · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2021/LC002ALP200EV.pdf",
+      "sourceSha256": "6ea191c30a24e1e595f3420456a25146b73b63d74ad1f0e32ffa653b30e158e2"
+    },
+    "english-2021-hl-p2-prescribed-4": {
+      "topicId": "english-11-19",
+      "title": "Sylvia Plath",
+      "canonicalLabel": "Sylvia Plath",
+      "observedHeading": "Prescribed Poetry · Discuss How Successfully, In Your Opinion, Sylvia Plath Uses Stylistic Features In An · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2021/LC002ALP200EV.pdf",
+      "sourceSha256": "6ea191c30a24e1e595f3420456a25146b73b63d74ad1f0e32ffa653b30e158e2"
+    },
+    "english-2021-hl-p2-prescribed-5": {
+      "topicId": "english-11-4",
+      "title": "Paul Durcan",
+      "canonicalLabel": "Paul Durcan",
+      "observedHeading": "Prescribed Poetry · “Durcan Makes Effective Use Of Tone Or Mood To Express His Emotions, Thereby · Q5",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2021/LC002ALP200EV.pdf",
+      "sourceSha256": "6ea191c30a24e1e595f3420456a25146b73b63d74ad1f0e32ffa653b30e158e2"
+    },
+    "english-2021-ol-p2-single-a": {
+      "topicId": "english-12-23",
+      "title": "The Handmaid's Tale",
+      "canonicalLabel": "The Handmaid's Tale (Margaret Atwood)",
+      "observedHeading": "Single Text A · The Handmaid’S Tale",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+    },
+    "english-2021-ol-p2-single-b": {
+      "topicId": "english-12-10",
+      "title": "Days Without End",
+      "canonicalLabel": "Days Without End (Sebastian Barry)",
+      "observedHeading": "Single Text B · Days Without End",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+    },
+    "english-2021-ol-p2-single-c": {
+      "topicId": "english-12-30",
+      "title": "Wuthering Heights",
+      "canonicalLabel": "Wuthering Heights (Emily Brontë)",
+      "observedHeading": "Single Text C · Wuthering Heights",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+    },
+    "english-2021-ol-p2-single-d": {
+      "topicId": "english-12-9",
+      "title": "By the Bog of Cats",
+      "canonicalLabel": "By the Bog of Cats (Marina Carr)",
+      "observedHeading": "Single Text D · By The Bog Of Cats",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+    },
+    "english-2021-ol-p2-single-e": {
+      "topicId": "english-12-18",
+      "title": "Room",
+      "canonicalLabel": "Room (Emma Donoghue)",
+      "observedHeading": "Single Text E · Room",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+    },
+    "english-2021-ol-p2-single-f": {
+      "topicId": "english-12-16",
+      "title": "Philadelphia, Here I Come!",
+      "canonicalLabel": "Philadelphia, Here I Come! (Brian Friel)",
+      "observedHeading": "Single Text F · Philadelphia, Here I Come!",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+    },
+    "english-2021-ol-p2-single-g": {
+      "topicId": "english-12-5",
+      "title": "1984",
+      "canonicalLabel": "1984 (George Orwell)",
+      "observedHeading": "Single Text G · 1984",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+    },
+    "english-2021-ol-p2-single-h": {
+      "topicId": "english-12-1",
+      "title": "King Lear",
+      "canonicalLabel": "King Lear (Shakespeare)",
+      "observedHeading": "Single Text H · King Lear",
+      "paperPage": 9,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+    },
+    "english-2021-ol-p2-single-i": {
+      "topicId": "english-12-4",
+      "title": "The Tempest",
+      "canonicalLabel": "The Tempest (Shakespeare)",
+      "observedHeading": "Single Text I · The Tempest",
+      "paperPage": 10,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+    },
+    "english-2021-ol-p2-prescribed-a": {
+      "topicId": "english-11-1",
+      "title": "This Moment",
+      "canonicalLabel": "Eavan Boland",
+      "observedHeading": "Poetry A · This Moment",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc",
+      "sourcePages": [
+        15
+      ]
+    },
+    "english-2021-ol-p2-prescribed-b": {
+      "topicId": "english-11-48",
+      "title": "The Glass Hammer",
+      "canonicalLabel": "Andrew Hudgins",
+      "observedHeading": "Poetry B · The Glass Hammer",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc",
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2021-ol-p2-prescribed-c": {
+      "topicId": "english-11-49",
+      "title": "Oranges",
+      "canonicalLabel": "Gary Soto",
+      "observedHeading": "Poetry C · Oranges",
+      "paperPage": 17,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc",
+      "sourcePages": [
+        17
+      ]
+    },
+    "english-2021-ol-p2-prescribed-d": {
+      "topicId": "english-11-8",
+      "title": "A Constable Calls",
+      "canonicalLabel": "Seamus Heaney",
+      "observedHeading": "Poetry D · A Constable Calls",
+      "paperPage": 18,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc",
+      "sourcePages": [
+        18
+      ]
+    },
+    "english-2021-ol-p2-prescribed-e": {
+      "topicId": "english-11-43",
+      "title": "Jungian Cows",
+      "canonicalLabel": "Penelope Shuttle",
+      "observedHeading": "Poetry E · Jungian Cows",
+      "paperPage": 19,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc",
+      "sourcePages": [
+        19
+      ],
+      "sourcePagesEvidence": "Complete poem and byline visually checked on PDF page. Excludes adjacent poem."
+    },
+    "english-2021-ol-p2-prescribed-f": {
+      "topicId": "english-11-9",
+      "title": "Inversnaid",
+      "canonicalLabel": "Gerard Manley Hopkins",
+      "observedHeading": "Poetry F · Inversnaid",
+      "paperPage": 20,
+      "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc",
+      "sourcePages": [
+        20
+      ],
+      "sourcePagesEvidence": "Complete poem and byline visually checked on PDF page. Excludes adjacent poem."
+    },
+    "english-2022-hl-p2-single-a": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text A · All The Light We Cannot See · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "a98ed83498f46e0ffe057914627545cac8f33171bb74571562e6d9efeea89b2e"
+    },
+    "english-2022-hl-p2-single-b": {
+      "topicId": "english-12-6",
+      "title": "A Doll's House",
+      "canonicalLabel": "A Doll's House (Henrik Ibsen)",
+      "observedHeading": "Single Text B · A Doll’S House · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "a98ed83498f46e0ffe057914627545cac8f33171bb74571562e6d9efeea89b2e"
+    },
+    "english-2022-hl-p2-single-c": {
+      "topicId": "english-12-3",
+      "title": "Othello",
+      "canonicalLabel": "Othello (Shakespeare)",
+      "observedHeading": "Single Text C · Othello · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "a98ed83498f46e0ffe057914627545cac8f33171bb74571562e6d9efeea89b2e"
+    },
+    "english-2022-hl-p2-single-d": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text D · Frankenstein · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "a98ed83498f46e0ffe057914627545cac8f33171bb74571562e6d9efeea89b2e"
+    },
+    "english-2022-hl-p2-single-e": {
+      "topicId": "english-12-25",
+      "title": "The Picture of Dorian Gray",
+      "canonicalLabel": "The Picture of Dorian Gray (Oscar Wilde)",
+      "observedHeading": "Single Text E · The Picture Of Dorian Gray · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "a98ed83498f46e0ffe057914627545cac8f33171bb74571562e6d9efeea89b2e"
+    },
+    "english-2022-hl-p2-prescribed-1": {
+      "topicId": "english-11-12",
+      "title": "Brendan Kennelly",
+      "canonicalLabel": "Brendan Kennelly",
+      "observedHeading": "Prescribed Poetry · “Brendan Kennelly Effectively Employs An Appealing Descriptive Style To Reflect On The · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "a98ed83498f46e0ffe057914627545cac8f33171bb74571562e6d9efeea89b2e"
+    },
+    "english-2022-hl-p2-prescribed-2": {
+      "topicId": "english-11-20",
+      "title": "Adrienne Rich",
+      "canonicalLabel": "Adrienne Rich",
+      "observedHeading": "Prescribed Poetry · To What Extent Do You Agree Or Disagree That Adrienne Rich Makes Effective Use Of · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "a98ed83498f46e0ffe057914627545cac8f33171bb74571562e6d9efeea89b2e"
+    },
+    "english-2022-hl-p2-prescribed-3": {
+      "topicId": "english-11-22",
+      "title": "William Wordsworth",
+      "canonicalLabel": "William Wordsworth",
+      "observedHeading": "Prescribed Poetry · “William Wordsworth’S Poetry Does Not Have Current Appeal Because His Poetic · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "a98ed83498f46e0ffe057914627545cac8f33171bb74571562e6d9efeea89b2e"
+    },
+    "english-2022-hl-p2-prescribed-4": {
+      "topicId": "english-11-2",
+      "title": "Emily Dickinson",
+      "canonicalLabel": "Emily Dickinson",
+      "observedHeading": "Prescribed Poetry · “Emi D · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "a98ed83498f46e0ffe057914627545cac8f33171bb74571562e6d9efeea89b2e"
+    },
+    "english-2022-hl-p2-prescribed-5": {
+      "topicId": "english-11-23",
+      "title": "W.B. Yeats",
+      "canonicalLabel": "W.B. Yeats",
+      "observedHeading": "Prescribed Poetry · “Yeats Makes Masterful Use Of Aesthetically Pleasing Language To Communicate The · Q5",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2022/LC002ALP200EV.pdf",
+      "sourceSha256": "a98ed83498f46e0ffe057914627545cac8f33171bb74571562e6d9efeea89b2e"
+    },
+    "english-2022-ol-p2-single-a": {
+      "topicId": "english-12-9",
+      "title": "By the Bog of Cats",
+      "canonicalLabel": "By the Bog of Cats (Marina Carr)",
+      "observedHeading": "Single Text A · By The Bog Of Cats",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+    },
+    "english-2022-ol-p2-single-b": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text B · All The Light We Cannot See",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+    },
+    "english-2022-ol-p2-single-c": {
+      "topicId": "english-12-18",
+      "title": "Room",
+      "canonicalLabel": "Room (Emma Donoghue)",
+      "observedHeading": "Single Text C · Room",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+    },
+    "english-2022-ol-p2-single-d": {
+      "topicId": "english-12-16",
+      "title": "Philadelphia, Here I Come!",
+      "canonicalLabel": "Philadelphia, Here I Come! (Brian Friel)",
+      "observedHeading": "Single Text D · Philadelphia, Here I Come!",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+    },
+    "english-2022-ol-p2-single-e": {
+      "topicId": "english-12-6",
+      "title": "A Doll's House",
+      "canonicalLabel": "A Doll's House (Henrik Ibsen)",
+      "observedHeading": "Single Text E · A Doll’S House",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+    },
+    "english-2022-ol-p2-single-f": {
+      "topicId": "english-12-3",
+      "title": "Othello",
+      "canonicalLabel": "Othello (Shakespeare)",
+      "observedHeading": "Single Text F · Othello",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+    },
+    "english-2022-ol-p2-single-g": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text G · Frankenstein",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+    },
+    "english-2022-ol-p2-single-h": {
+      "topicId": "english-12-24",
+      "title": "The Lauras",
+      "canonicalLabel": "The Lauras (Sara Taylor)",
+      "observedHeading": "Single Text H · The Lauras",
+      "paperPage": 9,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+    },
+    "english-2022-ol-p2-single-i": {
+      "topicId": "english-12-25",
+      "title": "The Picture of Dorian Gray",
+      "canonicalLabel": "The Picture of Dorian Gray (Oscar Wilde)",
+      "observedHeading": "Single Text I · The Picture Of Dorian Gray",
+      "paperPage": 10,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f"
+    },
+    "english-2022-ol-p2-prescribed-a": {
+      "topicId": "english-11-23",
+      "title": "The Lake Isle of Innisfree",
+      "canonicalLabel": "W.B. Yeats",
+      "observedHeading": "Poetry A · The Lake Isle Of Innisfree",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF15.",
+      "titlePrintedPage": 15,
+      "sourcePages": [
+        15
+      ]
+    },
+    "english-2022-ol-p2-prescribed-b": {
+      "topicId": "english-11-16",
+      "title": "Russian Doll",
+      "canonicalLabel": "Paula Meehan",
+      "observedHeading": "Poetry B · Russian Doll",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2022-ol-p2-prescribed-c": {
+      "topicId": "english-11-43",
+      "title": "Zoo Morning",
+      "canonicalLabel": "Penelope Shuttle",
+      "observedHeading": "Poetry C · Zoo Morning",
+      "paperPage": 17,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "sourcePages": [
+        17
+      ]
+    },
+    "english-2022-ol-p2-prescribed-d": {
+      "topicId": "english-11-20",
+      "title": "The Uncle Speaks in the Drawing Room",
+      "canonicalLabel": "Adrienne Rich",
+      "observedHeading": "Poetry D · The Uncle Speaks In The Drawing Room",
+      "paperPage": 18,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF18.",
+      "titlePrintedPage": 18,
+      "sourcePages": [
+        18
+      ]
+    },
+    "english-2022-ol-p2-prescribed-e": {
+      "topicId": "english-11-50",
+      "title": "Hawk Roosting",
+      "canonicalLabel": "Ted Hughes",
+      "observedHeading": "Poetry E · Hawk Roosting",
+      "paperPage": 19,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "sourcePages": [
+        19
+      ]
+    },
+    "english-2022-ol-p2-prescribed-f": {
+      "topicId": "english-11-14",
+      "title": "Humming-Bird",
+      "canonicalLabel": "D.H. Lawrence",
+      "observedHeading": "Poetry F · Humming-Bird",
+      "paperPage": 20,
+      "source": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+      "sourceSha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+      "sourcePages": [
+        20
+      ]
+    },
+    "english-2023-hl-p2-single-a": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text A · All The Light We Cannot See · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae"
+    },
+    "english-2023-hl-p2-single-b": {
+      "topicId": "english-12-6",
+      "title": "A Doll's House",
+      "canonicalLabel": "A Doll's House (Henrik Ibsen)",
+      "observedHeading": "Single Text B · A Doll’S House · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae"
+    },
+    "english-2023-hl-p2-single-c": {
+      "topicId": "english-12-2",
+      "title": "Macbeth",
+      "canonicalLabel": "Macbeth (Shakespeare)",
+      "observedHeading": "Single Text C · Macbeth · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae"
+    },
+    "english-2023-hl-p2-single-d": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text D · Frankenstein · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae"
+    },
+    "english-2023-hl-p2-single-e": {
+      "topicId": "english-12-25",
+      "title": "The Picture of Dorian Gray",
+      "canonicalLabel": "The Picture of Dorian Gray (Oscar Wilde)",
+      "observedHeading": "Single Text E · The Picture Of Dorian Gray · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae"
+    },
+    "english-2023-hl-p2-prescribed-1": {
+      "topicId": "english-11-15",
+      "title": "Derek Mahon",
+      "canonicalLabel": "Derek Mahon",
+      "observedHeading": "Prescribed Poetry · “Mahon’S Evocative Imagery Conveys Thematic Concerns That Are Haunted By · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+      "promptHeading": "Derek Mahon"
+    },
+    "english-2023-hl-p2-prescribed-2": {
+      "topicId": "english-11-10",
+      "title": "Patrick Kavanagh",
+      "canonicalLabel": "Patrick Kavanagh",
+      "observedHeading": "Prescribed Poetry · How Successfully, In Your Opinion, Does Kavanagh Employ Both A Lyrical Style And A · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+      "promptHeading": "Patrick Kavanagh"
+    },
+    "english-2023-hl-p2-prescribed-3": {
+      "topicId": "english-11-16",
+      "title": "Paula Meehan",
+      "canonicalLabel": "Paula Meehan",
+      "observedHeading": "Prescribed Poetry · “Meehan Employs Vibrant And Forceful Language Skilfully To Challenge The Often-Oppressive · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+      "promptHeading": "Paula Meehan"
+    },
+    "english-2023-hl-p2-prescribed-4": {
+      "topicId": "english-11-3",
+      "title": "John Donne",
+      "canonicalLabel": "John Donne",
+      "observedHeading": "Prescribed Poetry · “Donne Makes Effective Use Of Inventive And Paradoxical Language To Explore The Human · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+      "promptHeading": "John Donne"
+    },
+    "english-2023-hl-p2-prescribed-5": {
+      "topicId": "english-11-20",
+      "title": "Adrienne Rich",
+      "canonicalLabel": "Adrienne Rich",
+      "observedHeading": "Prescribed Poetry · “A Powerful Sense Of Sadness Is Conveyed In Rich’S Poetry Through Her Exposure Of The · Q5",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
+      "sourceSha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+      "promptHeading": "Adrienne Rich"
+    },
+    "english-2023-ol-p2-single-a": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text A · All The Light We Cannot See",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+    },
+    "english-2023-ol-p2-single-b": {
+      "topicId": "english-12-16",
+      "title": "Philadelphia, Here I Come!",
+      "canonicalLabel": "Philadelphia, Here I Come! (Brian Friel)",
+      "observedHeading": "Single Text B · Philadelphia, Here I Come!",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+    },
+    "english-2023-ol-p2-single-c": {
+      "topicId": "english-12-7",
+      "title": "A Raisin in the Sun",
+      "canonicalLabel": "A Raisin in the Sun (Lorraine Hansberry)",
+      "observedHeading": "Single Text C · A Raisin In The Sun",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+    },
+    "english-2023-ol-p2-single-d": {
+      "topicId": "english-12-6",
+      "title": "A Doll's House",
+      "canonicalLabel": "A Doll's House (Henrik Ibsen)",
+      "observedHeading": "Single Text D · A Doll’S House",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+    },
+    "english-2023-ol-p2-single-e": {
+      "topicId": "english-12-20",
+      "title": "The Cove",
+      "canonicalLabel": "The Cove (Ron Rash)",
+      "observedHeading": "Single Text E · The Cove",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+    },
+    "english-2023-ol-p2-single-f": {
+      "topicId": "english-12-2",
+      "title": "Macbeth",
+      "canonicalLabel": "Macbeth (Shakespeare)",
+      "observedHeading": "Single Text F · Macbeth",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+    },
+    "english-2023-ol-p2-single-g": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text G · Frankenstein",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+    },
+    "english-2023-ol-p2-single-h": {
+      "topicId": "english-12-24",
+      "title": "The Lauras",
+      "canonicalLabel": "The Lauras (Sara Taylor)",
+      "observedHeading": "Single Text H · The Lauras",
+      "paperPage": 9,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+    },
+    "english-2023-ol-p2-single-i": {
+      "topicId": "english-12-25",
+      "title": "The Picture of Dorian Gray",
+      "canonicalLabel": "The Picture of Dorian Gray (Oscar Wilde)",
+      "observedHeading": "Single Text I · The Picture Of Dorian Gray",
+      "paperPage": 10,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923"
+    },
+    "english-2023-ol-p2-prescribed-a": {
+      "topicId": "english-11-25",
+      "title": "kitchenette building",
+      "canonicalLabel": "Gwendolyn Brooks",
+      "observedHeading": "Poetry A · Kitchenette Building",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+      "sourcePages": [
+        15
+      ],
+      "titlePrintedPage": 15,
+      "titleEvidence": "Printed in lower case on PDF15 (Gwendolyn Brooks’s own title) and so in the questions; kept as printed."
+    },
+    "english-2023-ol-p2-prescribed-b": {
+      "topicId": "english-11-32",
+      "title": "My Father’s Kites",
+      "canonicalLabel": "Allison Joseph",
+      "observedHeading": "Poetry B · My Father’S Kites",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF16.",
+      "titlePrintedPage": 16,
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2023-ol-p2-prescribed-c": {
+      "topicId": "english-11-41",
+      "title": "Sonnet XVIII - Shall I Compare Thee",
+      "canonicalLabel": "William Shakespeare (Sonnets)",
+      "observedHeading": "Poetry C · Sonnet Xviii",
+      "paperPage": 17,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+      "sourcePages": [
+        17
+      ],
+      "titlePrintedPage": 17,
+      "titleEvidence": "Printed exactly so as the heading on PDF17; the extractor had title-cased the numeral (“Sonnet Xviii”)."
+    },
+    "english-2023-ol-p2-prescribed-d": {
+      "topicId": "english-11-0",
+      "title": "The Prodigal",
+      "canonicalLabel": "Elizabeth Bishop",
+      "observedHeading": "Poetry D · The Prodigal",
+      "paperPage": 18,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+      "sourcePages": [
+        18
+      ]
+    },
+    "english-2023-ol-p2-prescribed-e": {
+      "topicId": "english-11-15",
+      "title": "Antarctica",
+      "canonicalLabel": "Derek Mahon",
+      "observedHeading": "Poetry E · Antarctica",
+      "paperPage": 19,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+      "sourcePages": [
+        19
+      ]
+    },
+    "english-2023-ol-p2-prescribed-f": {
+      "topicId": "english-11-10",
+      "title": "Shancoduff",
+      "canonicalLabel": "Patrick Kavanagh",
+      "observedHeading": "Poetry F · Shancoduff",
+      "paperPage": 20,
+      "source": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+      "sourceSha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+      "sourcePages": [
+        20
+      ]
+    },
+    "english-2024-hl-p2-single-a": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text A · All The Light We Cannot See · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712"
+    },
+    "english-2024-hl-p2-single-b": {
+      "topicId": "english-12-21",
+      "title": "The Crucible",
+      "canonicalLabel": "The Crucible (Arthur Miller)",
+      "observedHeading": "Single Text B · The Crucible · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712"
+    },
+    "english-2024-hl-p2-single-c": {
+      "topicId": "english-12-0",
+      "title": "Hamlet",
+      "canonicalLabel": "Hamlet (Shakespeare)",
+      "observedHeading": "Single Text C · Hamlet · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712"
+    },
+    "english-2024-hl-p2-single-d": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text D · Frankenstein · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712"
+    },
+    "english-2024-hl-p2-single-e": {
+      "topicId": "english-12-25",
+      "title": "The Picture of Dorian Gray",
+      "canonicalLabel": "The Picture of Dorian Gray (Oscar Wilde)",
+      "observedHeading": "Single Text E · The Picture Of Dorian Gray · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712"
+    },
+    "english-2024-hl-p2-prescribed-1": {
+      "topicId": "english-11-23",
+      "title": "W.B. Yeats",
+      "canonicalLabel": "W.B. Yeats",
+      "observedHeading": "Prescribed Poetry · “Yeats Utilises Powerful Imagery To Explore Fascinating Contradictions That Are Central · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
+      "promptHeading": "W.B. Yeats"
+    },
+    "english-2024-hl-p2-prescribed-2": {
+      "topicId": "english-11-18",
+      "title": "Eiléan Ní Chuilleanáin",
+      "canonicalLabel": "Eiléan Ní Chuilleanáin",
+      "observedHeading": "Prescribed Poetry · “Ní Chuilleanáin Uses Evocative Imagery To Produce Poems That Often Reveal · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
+      "promptHeading": "Eiléan Ní Chuilleanáin"
+    },
+    "english-2024-hl-p2-prescribed-3": {
+      "topicId": "english-11-2",
+      "title": "Emily Dickinson",
+      "canonicalLabel": "Emily Dickinson",
+      "observedHeading": "Prescribed Poetry · “Dickinson’S Style Allows Her To Explore The Complexity Of A Variety Of Abstract Ideas In A · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
+      "promptHeading": "Emily Dickinson"
+    },
+    "english-2024-hl-p2-prescribed-4": {
+      "topicId": "english-11-19",
+      "title": "Sylvia Plath",
+      "canonicalLabel": "Sylvia Plath",
+      "observedHeading": "Prescribed Poetry · “The Dramatic Imagery We Encounter In Plath’S Poetry Reveals Her To Be An Insightful · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
+      "promptHeading": "Sylvia Plath"
+    },
+    "english-2024-hl-p2-prescribed-5": {
+      "topicId": "english-11-8",
+      "title": "Seamus Heaney",
+      "canonicalLabel": "Seamus Heaney",
+      "observedHeading": "Prescribed Poetry · “Heaney Uses A Deceptively Simple Style To Convey Profound Observations About People · Q5",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
+      "sourceSha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
+      "promptHeading": "Seamus Heaney"
+    },
+    "english-2024-ol-p2-single-a": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text A · All The Light We Cannot See",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+    },
+    "english-2024-ol-p2-single-b": {
+      "topicId": "english-12-31",
+      "title": "Silas Marner",
+      "canonicalLabel": "Silas Marner (George Eliot)",
+      "observedHeading": "Single Text B · Silas Marner",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+    },
+    "english-2024-ol-p2-single-c": {
+      "topicId": "english-12-16",
+      "title": "Philadelphia, Here I Come!",
+      "canonicalLabel": "Philadelphia, Here I Come! (Brian Friel)",
+      "observedHeading": "Single Text C · Philadelphia, Here I Come!",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+    },
+    "english-2024-ol-p2-single-d": {
+      "topicId": "english-12-7",
+      "title": "A Raisin in the Sun",
+      "canonicalLabel": "A Raisin in the Sun (Lorraine Hansberry)",
+      "observedHeading": "Single Text D · A Raisin In The Sun",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+    },
+    "english-2024-ol-p2-single-e": {
+      "topicId": "english-12-21",
+      "title": "The Crucible",
+      "canonicalLabel": "The Crucible (Arthur Miller)",
+      "observedHeading": "Single Text E · The Crucible",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+    },
+    "english-2024-ol-p2-single-f": {
+      "topicId": "english-12-20",
+      "title": "The Cove",
+      "canonicalLabel": "The Cove (Ron Rash)",
+      "observedHeading": "Single Text F · The Cove",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+    },
+    "english-2024-ol-p2-single-g": {
+      "topicId": "english-12-0",
+      "title": "Hamlet",
+      "canonicalLabel": "Hamlet (Shakespeare)",
+      "observedHeading": "Single Text G · Hamlet",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+    },
+    "english-2024-ol-p2-single-h": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text H · Frankenstein",
+      "paperPage": 9,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+    },
+    "english-2024-ol-p2-single-i": {
+      "topicId": "english-12-25",
+      "title": "The Picture of Dorian Gray",
+      "canonicalLabel": "The Picture of Dorian Gray (Oscar Wilde)",
+      "observedHeading": "Single Text I · The Picture Of Dorian Gray",
+      "paperPage": 10,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655"
+    },
+    "english-2024-ol-p2-prescribed-a": {
+      "topicId": "english-11-51",
+      "title": "Night Drive",
+      "canonicalLabel": "Tom French",
+      "observedHeading": "Poetry A · Night Drive",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "sourcePages": [
+        15
+      ]
+    },
+    "english-2024-ol-p2-prescribed-b": {
+      "topicId": "english-11-8",
+      "title": "A Call",
+      "canonicalLabel": "Seamus Heaney",
+      "observedHeading": "Poetry B · A Call",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2024-ol-p2-prescribed-c": {
+      "topicId": "english-11-52",
+      "title": "In Praise of My Sister (extract)",
+      "canonicalLabel": "Wisława Szymborska",
+      "observedHeading": "Poetry C · (Extract From) In Praise Of My Sister",
+      "paperPage": 17,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "sourcePages": [
+        17
+      ]
+    },
+    "english-2024-ol-p2-prescribed-d": {
+      "topicId": "english-11-26",
+      "title": "How Do I Love Thee?",
+      "canonicalLabel": "Elizabeth Barrett Browning",
+      "observedHeading": "Poetry D · How Do I Love Thee?",
+      "paperPage": 18,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "sourcePages": [
+        18
+      ]
+    },
+    "english-2024-ol-p2-prescribed-e": {
+      "topicId": "english-11-16",
+      "title": "Hearth Lesson",
+      "canonicalLabel": "Paula Meehan",
+      "observedHeading": "Poetry E · Hearth Lesson",
+      "paperPage": 19,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "sourcePages": [
+        19
+      ]
+    },
+    "english-2024-ol-p2-prescribed-f": {
+      "topicId": "english-11-19",
+      "title": "Child",
+      "canonicalLabel": "Sylvia Plath",
+      "observedHeading": "Poetry F · Child",
+      "paperPage": 20,
+      "source": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+      "sourceSha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+      "sourcePages": [
+        20
+      ]
+    },
+    "english-2025-hl-p2-single-a": {
+      "topicId": "english-12-28",
+      "title": "The Tenant of Wildfell Hall",
+      "canonicalLabel": "The Tenant of Wildfell Hall (Anne Brontë)",
+      "observedHeading": "Single Text A · The Tenant Of Wildfell Hall · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf"
+    },
+    "english-2025-hl-p2-single-b": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text B · All The Light We Cannot See · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf"
+    },
+    "english-2025-hl-p2-single-c": {
+      "topicId": "english-12-21",
+      "title": "The Crucible",
+      "canonicalLabel": "The Crucible (Arthur Miller)",
+      "observedHeading": "Single Text C · The Crucible · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf"
+    },
+    "english-2025-hl-p2-single-d": {
+      "topicId": "english-12-1",
+      "title": "King Lear",
+      "canonicalLabel": "King Lear (Shakespeare)",
+      "observedHeading": "Single Text D · King Lear · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf"
+    },
+    "english-2025-hl-p2-single-e": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text E · Frankenstein · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf"
+    },
+    "english-2025-hl-p2-prescribed-1": {
+      "topicId": "english-11-1",
+      "title": "Eavan Boland",
+      "canonicalLabel": "Eavan Boland",
+      "observedHeading": "Prescribed Poetry · “Boland’S Skilful Use Of Evocative Imagery In Her Poetry Allows Her To Explore The Complex · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "promptHeading": "Eavan Boland"
+    },
+    "english-2025-hl-p2-prescribed-2": {
+      "topicId": "english-11-10",
+      "title": "Patrick Kavanagh",
+      "canonicalLabel": "Patrick Kavanagh",
+      "observedHeading": "Prescribed Poetry · “Kavanagh’S Discerning Use Of Simple Language Allows Him To Produce Powerful Insights · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "promptHeading": "Patrick Kavanagh"
+    },
+    "english-2025-hl-p2-prescribed-3": {
+      "topicId": "english-11-5",
+      "title": "T.S. Eliot",
+      "canonicalLabel": "T.S. Eliot",
+      "observedHeading": "Prescribed Poetry · “Eliot’S Clever Use Of Imagery Is Essential To His Vivid Portrayal Of A Morally Bankrupt · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "promptHeading": "T.S. Eliot"
+    },
+    "english-2025-hl-p2-prescribed-4": {
+      "topicId": "english-11-15",
+      "title": "Derek Mahon",
+      "canonicalLabel": "Derek Mahon",
+      "observedHeading": "Prescribed Poetry · To What Extent Do You Think An Audience’S Appreciation Of Both Mahon’S Language And · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "promptHeading": "Derek Mahon"
+    },
+    "english-2025-hl-p2-prescribed-5": {
+      "topicId": "english-11-21",
+      "title": "Tracy K. Smith",
+      "canonicalLabel": "Tracy K. Smith",
+      "observedHeading": "Prescribed Poetry · “In Her Poetry Smith Makes Effective Use Of Tone, To Heighten A Variety Of · Q5",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
+      "sourceSha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+      "promptHeading": "Tracy K. Smith"
+    },
+    "english-2025-ol-p2-single-a": {
+      "topicId": "english-12-28",
+      "title": "The Tenant of Wildfell Hall",
+      "canonicalLabel": "The Tenant of Wildfell Hall (Anne Brontë)",
+      "observedHeading": "Single Text A · The Tenant Of Wildfell Hall Anne Brontë",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782"
+    },
+    "english-2025-ol-p2-single-b": {
+      "topicId": "english-12-8",
+      "title": "All the Light We Cannot See",
+      "canonicalLabel": "All the Light We Cannot See (Anthony Doerr)",
+      "observedHeading": "Single Text B · All The Light We Cannot See",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782"
+    },
+    "english-2025-ol-p2-single-c": {
+      "topicId": "english-12-7",
+      "title": "A Raisin in the Sun",
+      "canonicalLabel": "A Raisin in the Sun (Lorraine Hansberry)",
+      "observedHeading": "Single Text C · A Raisin In The Sun Lorraine Hansberry",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782"
+    },
+    "english-2025-ol-p2-single-d": {
+      "topicId": "english-12-19",
+      "title": "Sive",
+      "canonicalLabel": "Sive (John B. Keane)",
+      "observedHeading": "Single Text D · Sive John. B. Keane",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782"
+    },
+    "english-2025-ol-p2-single-e": {
+      "topicId": "english-12-21",
+      "title": "The Crucible",
+      "canonicalLabel": "The Crucible (Arthur Miller)",
+      "observedHeading": "Single Text E · The Crucible Arthur Miller",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782"
+    },
+    "english-2025-ol-p2-single-f": {
+      "topicId": "english-12-20",
+      "title": "The Cove",
+      "canonicalLabel": "The Cove (Ron Rash)",
+      "observedHeading": "Single Text F · The Cove Ron Rash",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782"
+    },
+    "english-2025-ol-p2-single-g": {
+      "topicId": "english-12-1",
+      "title": "King Lear",
+      "canonicalLabel": "King Lear (Shakespeare)",
+      "observedHeading": "Single Text G · King Lear William Shakespeare",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782"
+    },
+    "english-2025-ol-p2-single-h": {
+      "topicId": "english-12-12",
+      "title": "Frankenstein",
+      "canonicalLabel": "Frankenstein (Mary Shelley)",
+      "observedHeading": "Single Text H · Frankenstein Mary Shelley",
+      "paperPage": 9,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782"
+    },
+    "english-2025-ol-p2-single-i": {
+      "topicId": "english-12-29",
+      "title": "The Underground Railroad",
+      "canonicalLabel": "The Underground Railroad (Colson Whitehead)",
+      "observedHeading": "Single Text I · The Underground Railroad Colson Whitehead",
+      "paperPage": 10,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782"
+    },
+    "english-2025-ol-p2-prescribed-a": {
+      "topicId": "english-11-33",
+      "title": "Genetics",
+      "canonicalLabel": "Sinéad Morrissey",
+      "observedHeading": "Poetry A · Genetics",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782",
+      "sourcePages": [
+        15
+      ]
+    },
+    "english-2025-ol-p2-prescribed-b": {
+      "topicId": "english-11-1",
+      "title": "This Moment",
+      "canonicalLabel": "Eavan Boland",
+      "observedHeading": "Poetry B · This Moment",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782",
+      "sourcePages": [
+        16
+      ]
+    },
+    "english-2025-ol-p2-prescribed-c": {
+      "topicId": "english-11-5",
+      "title": "Preludes (extract)",
+      "canonicalLabel": "T.S. Eliot",
+      "observedHeading": "Poetry C · Extract From",
+      "paperPage": 17,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782",
+      "sourcePages": [
+        17
+      ]
+    },
+    "english-2025-ol-p2-prescribed-d": {
+      "topicId": "english-11-44",
+      "title": "The Artane Band",
+      "canonicalLabel": "Jessica Traynor",
+      "observedHeading": "Poetry D · The Artane Band",
+      "paperPage": 18,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782",
+      "sourcePages": [
+        18
+      ]
+    },
+    "english-2025-ol-p2-prescribed-e": {
+      "topicId": "english-11-2",
+      "title": "I Heard a Fly Buzz – When I Died",
+      "canonicalLabel": "Emily Dickinson",
+      "observedHeading": "Poetry E · I Heard A Fly Buzz",
+      "paperPage": 19,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782",
+      "sourcePages": [
+        19
+      ]
+    },
+    "english-2025-ol-p2-prescribed-f": {
+      "topicId": "english-11-53",
+      "title": "Revelation",
+      "canonicalLabel": "Liz Lochhead",
+      "observedHeading": "Poetry F · Revelation",
+      "paperPage": 20,
+      "source": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+      "sourceSha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782",
+      "sourcePages": [
+        20
+      ]
+    },
+    "english-2026-hl-p2-single-a": {
+      "topicId": "english-12-28",
+      "title": "The Tenant of Wildfell Hall",
+      "canonicalLabel": "The Tenant of Wildfell Hall (Anne Brontë)",
+      "observedHeading": "Single Text A · The Tenant Of Wildfell Hall · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95"
+    },
+    "english-2026-hl-p2-single-b": {
+      "topicId": "english-12-21",
+      "title": "The Crucible",
+      "canonicalLabel": "The Crucible (Arthur Miller)",
+      "observedHeading": "Single Text B · The Crucible · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95"
+    },
+    "english-2026-hl-p2-single-c": {
+      "topicId": "english-12-14",
+      "title": "Hamnet",
+      "canonicalLabel": "Hamnet (Maggie O'Farrell)",
+      "observedHeading": "Single Text C · Hamnet · (i)",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95"
+    },
+    "english-2026-hl-p2-single-d": {
+      "topicId": "english-12-2",
+      "title": "Macbeth",
+      "canonicalLabel": "Macbeth (Shakespeare)",
+      "observedHeading": "Single Text D · Macbeth · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95"
+    },
+    "english-2026-hl-p2-single-e": {
+      "topicId": "english-12-11",
+      "title": "Dracula",
+      "canonicalLabel": "Dracula (Bram Stoker)",
+      "observedHeading": "Single Text E · Dracula · (i)",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95"
+    },
+    "english-2026-hl-p2-prescribed-1": {
+      "topicId": "english-11-0",
+      "title": "Elizabeth Bishop",
+      "canonicalLabel": "Elizabeth Bishop",
+      "observedHeading": "Prescribed Poetry · “Bishop’S Precise And Measured Style Enables Her To Explore A Mood That Is Often · Q1",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
+      "promptHeading": "Elizabeth Bishop"
+    },
+    "english-2026-hl-p2-prescribed-2": {
+      "topicId": "english-11-18",
+      "title": "Eiléan Ní Chuilleanáin",
+      "canonicalLabel": "Eiléan Ní Chuilleanáin",
+      "observedHeading": "Prescribed Poetry · “Ní Chuilleanáin’S Unique Narrative Style Reveals Multiple Meanings And Enigmatic · Q2",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
+      "promptHeading": "Eiléan Ní Chuilleanáin"
+    },
+    "english-2026-hl-p2-prescribed-3": {
+      "topicId": "english-11-23",
+      "title": "W.B. Yeats",
+      "canonicalLabel": "W.B. Yeats",
+      "observedHeading": "Prescribed Poetry · “Yeats’S Powerful Language Charts His Frustrating Pursuit Of Both Personal And Political · Q3",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
+      "promptHeading": "W.B. Yeats"
+    },
+    "english-2026-hl-p2-prescribed-4": {
+      "topicId": "english-11-16",
+      "title": "Paula Meehan",
+      "canonicalLabel": "Paula Meehan",
+      "observedHeading": "Prescribed Poetry · “Meehan Uses Language Skilfully, To Modulate And Control The Harshness Of Her Critical · Q4",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
+      "promptHeading": "Paula Meehan"
+    },
+    "english-2026-hl-p2-prescribed-5": {
+      "topicId": "english-11-3",
+      "title": "John Donne",
+      "canonicalLabel": "John Donne",
+      "observedHeading": "Prescribed Poetry · “Donne Utilises Language That Is Both Cryptic And Entertaining In Order To Explore The · Q5",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
+      "sourceSha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
+      "promptHeading": "John Donne"
+    },
+    "english-2026-ol-p2-single-a": {
+      "topicId": "english-12-28",
+      "title": "The Tenant of Wildfell Hall",
+      "canonicalLabel": "The Tenant of Wildfell Hall (Anne Brontë)",
+      "observedHeading": "Single Text A · The Tenant Of Wildfell Hall",
+      "paperPage": 2,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+    },
+    "english-2026-ol-p2-single-b": {
+      "topicId": "english-12-7",
+      "title": "A Raisin in the Sun",
+      "canonicalLabel": "A Raisin in the Sun (Lorraine Hansberry)",
+      "observedHeading": "Single Text B · A Raisin In The Sun",
+      "paperPage": 3,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+    },
+    "english-2026-ol-p2-single-c": {
+      "topicId": "english-12-19",
+      "title": "Sive",
+      "canonicalLabel": "Sive (John B. Keane)",
+      "observedHeading": "Single Text C · Sive",
+      "paperPage": 4,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+    },
+    "english-2026-ol-p2-single-d": {
+      "topicId": "english-12-21",
+      "title": "The Crucible",
+      "canonicalLabel": "The Crucible (Arthur Miller)",
+      "observedHeading": "Single Text D · The Crucible",
+      "paperPage": 5,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+    },
+    "english-2026-ol-p2-single-e": {
+      "topicId": "english-12-14",
+      "title": "Hamnet",
+      "canonicalLabel": "Hamnet (Maggie O'Farrell)",
+      "observedHeading": "Single Text E · Hamnet",
+      "paperPage": 6,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+    },
+    "english-2026-ol-p2-single-f": {
+      "topicId": "english-12-20",
+      "title": "The Cove",
+      "canonicalLabel": "The Cove (Ron Rash)",
+      "observedHeading": "Single Text F · The Cove",
+      "paperPage": 7,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+    },
+    "english-2026-ol-p2-single-g": {
+      "topicId": "english-12-2",
+      "title": "Macbeth",
+      "canonicalLabel": "Macbeth (Shakespeare)",
+      "observedHeading": "Single Text G · Macbeth",
+      "paperPage": 8,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+    },
+    "english-2026-ol-p2-single-h": {
+      "topicId": "english-12-11",
+      "title": "Dracula",
+      "canonicalLabel": "Dracula (Bram Stoker)",
+      "observedHeading": "Single Text H · Dracula",
+      "paperPage": 9,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+    },
+    "english-2026-ol-p2-single-i": {
+      "topicId": "english-12-29",
+      "title": "The Underground Railroad",
+      "canonicalLabel": "The Underground Railroad (Colson Whitehead)",
+      "observedHeading": "Single Text I · The Underground Railroad",
+      "paperPage": 10,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+    },
+    "english-2026-ol-p2-prescribed-a": {
+      "topicId": "english-11-8",
+      "title": "The Underground",
+      "canonicalLabel": "Seamus Heaney",
+      "observedHeading": "Poetry A · The Underground",
+      "paperPage": 15,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "sourcePages": [
+        15
+      ]
+    },
+    "english-2026-ol-p2-prescribed-b": {
+      "topicId": "english-11-28",
+      "title": "Driving to the Hospital",
+      "canonicalLabel": "Kate Clanchy",
+      "observedHeading": "Poetry B · Driving To The Hospital",
+      "paperPage": 16,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "sourcePages": [
+        16
+      ],
+      "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF16.",
+      "titlePrintedPage": 16
+    },
+    "english-2026-ol-p2-prescribed-c": {
+      "topicId": "english-11-21",
+      "title": "It’s Not",
+      "canonicalLabel": "Tracy K. Smith",
+      "observedHeading": "Poetry C · It’s Not",
+      "paperPage": 17,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "sourcePages": [
+        17
+      ]
+    },
+    "english-2026-ol-p2-prescribed-d": {
+      "topicId": "english-11-45",
+      "title": "This Is Just To Say",
+      "canonicalLabel": "William Carlos Williams",
+      "observedHeading": "Poetry D · This Is Just To Say",
+      "paperPage": 18,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "sourcePages": [
+        18
+      ]
+    },
+    "english-2026-ol-p2-prescribed-e": {
+      "topicId": "english-11-0",
+      "title": "The Prodigal",
+      "canonicalLabel": "Elizabeth Bishop",
+      "observedHeading": "Poetry E · The Prodigal",
+      "paperPage": 19,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "sourcePages": [
+        19
+      ]
+    },
+    "english-2026-ol-p2-prescribed-f": {
+      "topicId": "english-11-36",
+      "title": "When I Am Among The Trees",
+      "canonicalLabel": "Mary Oliver",
+      "observedHeading": "Poetry F · When I Am Among The Trees",
+      "paperPage": 20,
+      "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "sourcePages": [
+        20
+      ]
+    }
+  }
+}

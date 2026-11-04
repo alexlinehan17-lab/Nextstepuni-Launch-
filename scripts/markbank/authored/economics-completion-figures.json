@@ -1,0 +1,3523 @@
+[
+  {
+    "file": "economics-2022-HL-scheme-p05-q1a-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2022 HL Section A Q1(a)",
+    "description": "The official price elasticity calculation with both fraction bars intact. The formula is the change in quantity demanded divided by the change in price, multiplied by (P1 + P2) divided by (QD1 + QD2). The worked substitution is (-4 / +1) multiplied by ((4 + 5) / (8 + 4)), giving -3.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2022/LC034ALP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        245,
+        140,
+        365,
+        210
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-scheme-p11-q9i-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2022 OL Section A Q9(i)",
+    "description": "Official PED working: changes in quantity and price are 15,000 and minus €250; the price sum is €1,250 and quantity sum75,000. The two fractions multiply to minus1. The superscript1 beside the result is a mark annotation, not an exponent.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2022/LC034GLP000EV.pdf",
+      "page": 11,
+      "rectPoints": [
+        75,
+        215,
+        405,
+        380
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-scheme-p19-q13ai-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2022 OL Q13(a)(i)",
+    "description": "Official working for current expenditure as a percentage of total expenditure: €71.82 billion divided by €82.92 billion, multiplied by100, equals86.61%. The fraction bar is intact.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2022/LC034GLP000EV.pdf",
+      "page": 19,
+      "rectPoints": [
+        116,
+        431,
+        310,
+        466
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-scheme-p20-q12bii-monopoly.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2022 HL Q12(b)(ii)",
+    "description": "Official completed monopoly diagram: marginal cost MC meets marginal revenue MR at E and output Q1. The demand/average revenue curve D=AR sets price P1 above average cost C1. The gap between P1 and C1 is supernormal profit, labelled SNP. Price and Quantity axes, AC curve, construction lines and the official eleven-label marking table are intact.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2022/LC034ALP000EV.pdf",
+      "page": 20,
+      "rectPoints": [
+        80,
+        73,
+        505,
+        333
+      ],
+      "scale": 3
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-scheme-p32-q15aiii-subsidy.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2022 HL Q15(a)(iii)",
+    "description": "Official completed milk-market diagram: grant aid shifts supply right from S1 to S2 against unchanged demand D1. Equilibrium moves from EA at P1/Q1 to EB at lower P2 and larger Q2. Both axes, every curve label and all dashed price/quantity guides are intact.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2022/LC034ALP000EV.pdf",
+      "page": 32,
+      "rectPoints": [
+        101,
+        215,
+        468,
+        451
+      ],
+      "scale": 3
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-scheme-p40-q16ci-minimum-price.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2022 HL Q16(c)(i)",
+    "description": "Official completed minimum-price diagram: Pmin lies above equilibrium PE. Demand D1 and supply S1 meet at E and QE; at Pmin quantity demanded is QD and quantity supplied is QS, leaving surplus QS minus QD. Both axes, curves, price line, all construction lines and the scheme surplus arrow are intact.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2022/LC034ALP000EV.pdf",
+      "page": 40,
+      "rectPoints": [
+        98,
+        200,
+        465,
+        450
+      ],
+      "scale": 3
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-HL-scheme-p05-q1a-supply.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2023 HL Section A Q1(a)",
+    "description": "The official fully labelled ticket supply diagram: price on the vertical axis and quantity on the horizontal axis. Supply S is a vertical line, showing fixed stadium capacity regardless of ticket price.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2023/LC034ALP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        200,
+        184,
+        417,
+        352
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-HL-scheme-p12-q7a-rental.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2023 HL Section A Q7(a)",
+    "description": "Official rental market solution. The blue supply curve moves left from S to S1 against unchanged red demand D. Equilibrium rent rises from Pe to Pe1 and quantity falls from Qe to Qe1. The diagram labels, rather than the inconsistent scheme prose, identify the change.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2023/LC034ALP000EV.pdf",
+      "page": 12,
+      "rectPoints": [
+        200,
+        142,
+        441,
+        335
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-HL-scheme-p20-q12aiii-competition.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2023 HL Q12(a)(iii)",
+    "description": "Official long-run perfect competition diagram. Price and Quantity label the axes; horizontal D = AR = MR intersects marginal cost MC at E, where average cost AC is at its minimum. Dashed projections mark Q and the common price and cost P/C; AR equals AC, so the firm earns normal profit.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2023/LC034ALP000EV.pdf",
+      "page": 20,
+      "rectPoints": [
+        145,
+        112,
+        490,
+        334
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-OL-scheme-p13-q11bii-equilibrium.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2023 OL Q11(b)(ii)",
+    "description": "Official completed long-run monopolistic-competition diagram, including the full vertical arrowhead. Equilibrium E is MC=MR; output Q1 is projected to the horizontal axis. Price P1 and average cost C1 coincide above Q1 at the tangency of demand/average revenue and average cost. Point W is the minimum of average cost, to the right of equilibrium output. Both axes, all curves and construction lines are intact.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2023/LC034GLP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        101,
+        308,
+        510,
+        615
+      ],
+      "scale": 3
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-HL-scheme-p10-q6a-cost-curves.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2024 HL Section A Q6(a)",
+    "description": "Official AC/MC solution. Vertical axis C/P/€ and horizontal Q. The red marginal cost curve crosses the blue average cost curve at its minimum; MC is below AC while AC falls and above AC while AC rises.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2024/LC034ALP000EV.pdf",
+      "page": 10,
+      "rectPoints": [
+        93,
+        101,
+        496,
+        371
+      ],
+      "scale": 3
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-HL-scheme-p18-q11ci-shift.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2024 HL Q11(c)(i)",
+    "description": "Official organic ice-cream heatwave solution: demand shifts right from D1 to D2, with supply S unchanged. Price rises from P1 to P2 and quantity rises from Q1 to Q2. Both equilibrium points and shift arrows are visible.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2024/LC034ALP000EV.pdf",
+      "page": 18,
+      "rectPoints": [
+        109,
+        195,
+        498,
+        410
+      ],
+      "scale": 3
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-HL-scheme-p19-q11cii-shift.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2024 HL Q11(c)(ii)",
+    "description": "Official lactose-intolerance solution: demand shifts left from D1 to D2, supply S1 unchanged. Price falls from P1 to P2 and quantity falls from Q1 to Q2. Labelled Price and Quantity axes, dashed guides and arrows are intact.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2024/LC034ALP000EV.pdf",
+      "page": 19,
+      "rectPoints": [
+        148,
+        117,
+        466,
+        302
+      ],
+      "scale": 3
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-HL-scheme-p20-q11ciii-shift.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2024 HL Q11(c)(iii)",
+    "description": "Official organic ice-cream subsidy solution: supply shifts right from S1 to S2, demand D1 unchanged. Price falls from P1 to P2 and quantity rises from Q1 to Q2. Labelled axes, dashed guides and shift arrows are intact.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2024/LC034ALP000EV.pdf",
+      "page": 20,
+      "rectPoints": [
+        105,
+        116,
+        503,
+        329
+      ],
+      "scale": 3
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-HL-scheme-p35-q14bi-equilibrium.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2024 HL Q14(b)(i)",
+    "description": "Official long-run monopolistic-competition equilibrium. MC and MR meet at E, setting output Q. AR and AC are tangent at T, giving equal price P and cost C and normal profit. A marks minimum AC to the right of equilibrium output. Price and Quantity axes and all four curves are intact.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2024/LC034ALP000EV.pdf",
+      "page": 35,
+      "rectPoints": [
+        116,
+        130,
+        466,
+        355
+      ],
+      "scale": 3
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-scheme-p31-q11bi-short-run-equilibrium.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2026 HL Q11(b)(i)",
+    "description": "Official short-run equilibrium of a firm in monopolistic competition, with Price / Costs and Quantity axes. MC (green) cuts MR (red) from below at E, giving output Q1. At Q1 the demand curve AR = D (yellow) gives price P1 at point P and the U-shaped AC (blue) gives average cost C1 at point C; the shaded rectangle between P1 and C1 is labelled SNPs (supernormal profits). W marks minimum AC, to the right of Q1.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2026/LC034ALP000EV.pdf",
+      "page": 31,
+      "rectPoints": [
+        88,
+        138,
+        522,
+        442
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-scheme-p33-q11ci-yed-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2026 HL Q11(c)(i) — calculation",
+    "description": "Official midpoint income-elasticity working with both fraction bars intact: ΔQ/ΔY × (Y1 + Y2)/(Q1 + Q2), then +1/+100 × (400 + 500)/(2 + 3). Answer: +1.8.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2026/LC034ALP000EV.pdf",
+      "page": 33,
+      "rectPoints": [
+        140,
+        138,
+        460,
+        336
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-scheme-p42-q12ci-oil-share-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2026 HL Q12(c)(i) — calculation",
+    "description": "Official working: top three producers 22.7m (US) + 10.7m (Saudi Arabia) + 10.5m (Russia) = 43.9m barrels a day; total world production 102.8m barrels a day; share = 43.9m/102.8m × 100 = 0.427 × 100. Answer: 42.7%.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2026/LC034ALP000EV.pdf",
+      "page": 42,
+      "rectPoints": [
+        100,
+        290,
+        500,
+        462
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-scheme-p50-q13bii-cost-curves.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2026 HL Q13(b)(ii)",
+    "description": "Official total cost diagram drawn on a grid. The Costs (€) axis is marked 100 to 900 and the Quantity axis 0, 10, 20, 30 and 40. TFC is a horizontal red line at 300. TVC (blue) rises from 0 through 120, 210 and 360 to 600. TC (yellow) rises from 300 through 420, 510 and 660 to 900, always 300 above TVC.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2026/LC034ALP000EV.pdf",
+      "page": 50,
+      "rectPoints": [
+        96,
+        98,
+        508,
+        372
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-scheme-p64-q14ci-demand-shift.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2026 HL Q14(c)(i)",
+    "description": "Official diagram: demand shifts right from D to D2 (arrows) along the unchanged upward-sloping supply curve S. The equilibrium price rises from Pe to Pe2 and the quantity rises from Qe to Qe2. Price and Quantity axes are labelled.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2026/LC034ALP000EV.pdf",
+      "page": 64,
+      "rectPoints": [
+        140,
+        138,
+        452,
+        360
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-scheme-p65-q14cii-supply-shift.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2026 HL Q14(c)(ii)",
+    "description": "Official diagram: supply shifts right from S to S2 (arrows) along the unchanged demand curve D. The equilibrium price falls from Pe to Pe2 and the quantity rises from Qe to Qe2. Price and Quantity axes are labelled.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2026/LC034ALP000EV.pdf",
+      "page": 65,
+      "rectPoints": [
+        148,
+        48,
+        452,
+        262
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-scheme-p65-q14ciii-supply-shift.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2026 HL Q14(c)(iii)",
+    "description": "Official diagram: supply shifts left from S to S2 (arrows) along the unchanged demand curve D. The equilibrium price rises from Pe to Pe2 and the quantity falls from Qe to Qe2. Price and Quantity axes are labelled; the word Explanation beneath the axis is the scheme heading for the written answer.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2026/LC034ALP000EV.pdf",
+      "page": 65,
+      "rectPoints": [
+        148,
+        424,
+        452,
+        646
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-scheme-p76-q16ai-hotel-rooms.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2026 HL Q16(a)(i)",
+    "description": "Official diagram: the supply of hotel rooms S is vertical at Qe. Demand shifts right from D to D2 (arrows), moving equilibrium from E to E2: the price rises from Pe to Pe2 while the quantity of rooms per night stays at Qe.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2026/LC034ALP000EV.pdf",
+      "page": 76,
+      "rectPoints": [
+        120,
+        198,
+        485,
+        392
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-scheme-p78-q16bi-france-share-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2026 HL Q16(b)(i)",
+    "description": "Official working with both fraction bars intact: 32,500/654,500 × 100/1. Answer: 4.96%.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2026/LC034ALP000EV.pdf",
+      "page": 78,
+      "rectPoints": [
+        250,
+        336,
+        370,
+        410
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-scheme-p81-q16cii-ppf-shift.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2026 HL Q16(c)(ii)",
+    "description": "Official PPF diagram with Tobacco leaf on the vertical axis and Corn on the horizontal. A new frontier PPF2 is drawn inside the original PPF1; point B stays on PPF1 and point A, at QTL and QC, lies inside both curves.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2026/LC034ALP000EV.pdf",
+      "page": 81,
+      "rectPoints": [
+        98,
+        95,
+        502,
+        336
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p36-q16c-ppf.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q16(c)(i)",
+    "description": "The question's production possibility frontier PPF1 for Malawi, with Tobacco leaf on the vertical axis and Corn on the horizontal. A red point B lies on the curve; a blue point A lies inside it, with dashed guides to QTL on the tobacco-leaf axis and QC on the corn axis.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 36,
+      "rectPoints": [
+        88,
+        360,
+        522,
+        598
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [
+      "A",
+      "B"
+    ],
+    "labelMeanings": [
+      {
+        "label": "A",
+        "meaning": "the blue point inside PPF1"
+      },
+      {
+        "label": "B",
+        "meaning": "the red point on PPF1"
+      }
+    ]
+  },
+  {
+    "file": "economics-2026-HL-paper-p05-q3-fan-costs.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Section A Q3(a)",
+    "description": "The question's cost table for following Cork and Tipperary to the 2025 All-Ireland hurling final, under the two county crests. Cork / item / Tipperary: Match Tickets €350 / €400; Match Programmes €38 / €43; Petrol €200 / €200; Tolls €23 / €27; Parking in Dublin €50 / €50; Food and drink €334 / €350; TOTAL €995 / €1,070.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        148,
+        110,
+        448,
+        290
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p06-q4-tshirt-price.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Section A Q4(a)",
+    "description": "Pie chart titled Retail Price Breakdown of a T-Shirt Sold in Europe for €29: Workers in Bangladesh Receive Less Than 1%. Other costs are €28.82, 99.4%, of the pie; worker pay is a thin green slice, €0.18, 0.6%.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        80,
+        406,
+        515,
+        628
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p10-q7b-kuznets-curve.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Section A Q7(b)",
+    "description": "The question's Environmental Kuznets Curve, with Damage to the environment on the vertical axis and Real GDP / Real income per head on the horizontal. A green inverted-U curve rises from the origin to a red dot labelled Turning point, then falls back towards the axis.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 10,
+      "rectPoints": [
+        68,
+        395,
+        497,
+        560
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p12-q9-gdp-charts.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Section A Q9(a)",
+    "description": "Two bar charts of the GDP of the EU and the USA in current US dollars (trillions), each on a 0 to 35 axis. 2008: EU $16.4tn, USA $14.8tn. 2024: EU $19.4tn, USA $29.2tn.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 12,
+      "rectPoints": [
+        55,
+        112,
+        540,
+        318
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p13-q10-consumer-prices.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Section A Q10(a)",
+    "description": "Bar chart titled Consumer Prices in Europe 2024 (Index, EU = 100), with a dashed reference line at 100 for the EU average: Ireland 138.1, Sweden 115.1, Bulgaria 59.7, Euro Area countries 104.3.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        104,
+        112,
+        472,
+        299
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p14-q11-sport-participation.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q11(a)(i)",
+    "description": "Bar chart titled Sports Participation in Ireland by Age, 2023 and 2024: 16-24 year-olds 71% then 73%; 25-44 year-olds 54% then 56%; 45-64 year-olds 40% then 40%; 65+ year-olds 28% then 31%.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 14,
+      "rectPoints": [
+        97,
+        170,
+        499,
+        374
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p18-q12-goods-trade.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q12(a)(i)",
+    "description": "Bar chart titled Value of Ireland's Total Goods Exports & Goods Imports, May 2024 and May 2025 (€ million). May 2024: exports €18,039, imports €11,041. May 2025: exports €23,333, imports €10,745.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 18,
+      "rectPoints": [
+        61,
+        111,
+        534,
+        331
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p20-q12c-oil-producers.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q12(c)(i)",
+    "description": "Graphic titled The World's Eight Largest Oil Producers, production of petroleum and other liquids in 2024 in million barrels per day: United States 22.7, Saudi Arabia 10.7, Russia 10.5, Canada 6.0, China 5.3, Iran 4.7, Iraq 4.5, Brazil 4.3. Total World Production: 102.8 million barrels.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 20,
+      "rectPoints": [
+        109,
+        74,
+        486,
+        287
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p22-q13-ecb-rate.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q13(a)(i)",
+    "description": "Step chart titled ECB Main Refinancing Rate (Base Rate), January 2024 - June 2025, on a 0% to 5% axis. The rate holds at 4.50% until June 2024, then steps down through 4.25%, 3.65%, 3.40%, 3.15%, 2.90%, 2.65% and 2.40% to 2.15% in June 2025. A red arrow under the months runs from June 2024 to June 2025.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 22,
+      "rectPoints": [
+        96,
+        110,
+        499,
+        348
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p23-q13b-surf-school-costs.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q13(b)(i)",
+    "description": "The question's cost table for the surf school. Daily output (number of lessons) / total fixed costs / total variable costs / total costs (€): 0 / 300 / 0 / 300; 10 / 300 / 120 / 420; 20 / 300 / 210 / 510; 30 / 300 / 360 / 660; 40 / 300 / 600 / 900.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 23,
+      "rectPoints": [
+        83,
+        102,
+        541,
+        242
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p27-q14b-circular-flow.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q14(b)(i)",
+    "description": "The question's circular flow of income in an open economy. A dotted flow, Income for supplying the factors of production, runs from Output of Firms to Household Incomes, and a dotted flow numbered 1 runs back from households to firms. Red leakages leave households: Tax to GOVERNMENT, a flow numbered 2 to FINANCIAL INSTITUTIONS, and Imports to a blank box numbered 3. Green injections return to firms: Government Spending, Investment, and a flow numbered 4 from box 3.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 27,
+      "rectPoints": [
+        60,
+        95,
+        524,
+        359
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p30-q15-budget-composition.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q15(a)(i)",
+    "description": "Donut chart titled Budget 2026, Composition of Government Expenditure: Current Expenditure 84% and Capital Expenditure 16%.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 30,
+      "rectPoints": [
+        106,
+        105,
+        489,
+        299
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p32-q15c-labour-productivity.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q15(c)(i)",
+    "description": "Graphic headed Labour Productivity beside a group of illustrated workers: Foreign Sector €411 per hour; Domestic Sector €60 per hour.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 32,
+      "rectPoints": [
+        192,
+        92,
+        403,
+        253
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p34-q16a-hotel-rooms.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q16(a)(i)",
+    "description": "The question's market for hotel rooms per night: a vertical supply curve S and a downward-sloping demand curve D meet at E, giving price Pe and quantity Qe. Price is on the vertical axis and Quantity of rooms per night on the horizontal.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 34,
+      "rectPoints": [
+        130,
+        122,
+        470,
+        305
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p35-q16b-visitors.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q16(b)(i)",
+    "description": "Horizontal bar chart titled Foreign Visitors to Ireland By Country, June 2025: Other 157,700; Italy 19,200; France 32,500 (highlighted in red); Germany 54,800; USA 166,300; Britain 224,000. The axis runs from 0 to 250,000, with illustrated travellers behind the bars.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 35,
+      "rectPoints": [
+        117,
+        90,
+        478,
+        294
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-OL-scheme-p17-q11bii-price-and-cost.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2026 OL Q11(b)(ii)",
+    "description": "Official monopoly diagram completed for the answer. MC (yellow), AC (green), AR (red) and MR (blue) on Price and Quantity axes. Above output Q1, the dashed line meets MR and MC at E, AC at C1 and AR higher up; dashed guides from C1 and from the AR point read AC1 and P1 on the price axis, with P1 above AC1.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2026/LC034GLP000EV.pdf",
+      "page": 17,
+      "rectPoints": [
+        130,
+        258,
+        480,
+        484
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-OL-scheme-p35-q15biii-cost-and-profit.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2026 OL Q15(b)(iii)",
+    "description": "Official working in two columns. Total cost: €5,000, €25,000, €2,000 and €3,000 summed to €35,000. Profit: €100,000 minus €35,000 equals €65,000.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2026/LC034GLP000EV.pdf",
+      "page": 35,
+      "rectPoints": [
+        115,
+        672,
+        458,
+        772
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-OL-paper-p08-q7-canons-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 OL Section A Q7",
+    "description": "The question's two tables. Canons A Convenience, B Certainty, C Economy, D Equity beside explanations 1 to 4: 1 the system should take a higher proportion of income in tax as income rises / the ability of each person to pay must be considered; 2 tax should be levied at a convenient time and manner for the taxpayer; 3 the amount paid should be clear and straightforward; 4 the revenue collected should be greater than the cost of collection. The answer table has A completed as 2 and B, C and D blank.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034GLP000EV.pdf",
+      "page": 8,
+      "rectPoints": [
+        56,
+        300,
+        548,
+        472
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-OL-paper-p09-q9-employment-growth.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 OL Section A Q9",
+    "description": "Bar chart titled Percentage growth in Ireland's employment 2023 – 2025, percentage growth for each half year: 2023H1 3.9%, 2023H2 3.5%, 2024H1 2.3%, 2024H2 3.1%, 2025H1 2.8%.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034GLP000EV.pdf",
+      "page": 9,
+      "rectPoints": [
+        64,
+        112,
+        532,
+        380
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-OL-paper-p10-q10-expenditure.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 OL Section A Q10(i)",
+    "description": "Bar chart titled Government Expenditure for 2025 in €billion: Social Protection 27, Health 25, Housing 8, Education 12, Transport 4, Justice 4, EU Payments 15, Other 25.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034GLP000EV.pdf",
+      "page": 10,
+      "rectPoints": [
+        64,
+        112,
+        548,
+        348
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-OL-paper-p12-q11b-monopoly-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 OL Q11(b)(i)",
+    "description": "The question's monopoly diagram with Price and Quantity axes: a downward red AR line, a steeper blue MR line, a yellow MC curve rising through E where it meets MR, and a green U-shaped AC curve. A dashed line drops from E to output Q1.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034GLP000EV.pdf",
+      "page": 12,
+      "rectPoints": [
+        140,
+        78,
+        486,
+        312
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-OL-paper-p13-q11c-supermarket-shares.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 OL Q11(c)(i)",
+    "description": "Pie chart titled Recent percentage share of the main supermarkets in Ireland: Dunnes Stores 23.9%, Tesco 23.7%, SuperValu 19.5%, Lidl 14.2%, Aldi 11.6%, Other 7.1%.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034GLP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        122,
+        110,
+        514,
+        346
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-OL-paper-p17-q13a-corporation-tax.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 OL Q13(a)(ii)",
+    "description": "Bar chart titled Ireland's Corporation Tax Receipts 2018 – 2024 €billion: 2018 10.4, 2019 10.9, 2020 11.8, 2021 15.3, 2022 22.6, 2023 23.8, 2024 28.1.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034GLP000EV.pdf",
+      "page": 17,
+      "rectPoints": [
+        128,
+        88,
+        503,
+        317
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-OL-paper-p20-q14-cpi-inflation.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 OL Q14(a)(ii)",
+    "description": "Line chart titled Rate of price inflation in Ireland from the CPI, annual % change from September 2024 to September 2025: 0.7% in September 2024, rising to about 1.9% in January 2025 and about 2.2% in April, dipping to about 1.7%, then rising to 2.7% in September 2025.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034GLP000EV.pdf",
+      "page": 20,
+      "rectPoints": [
+        64,
+        112,
+        532,
+        402
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-OL-paper-p21-q14biii-modified-domestic-demand.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 OL Q14(b)(iii)",
+    "description": "Two bars showing growth in Modified Domestic Demand: 2024 2.7% and 2025 2.0%.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034GLP000EV.pdf",
+      "page": 21,
+      "rectPoints": [
+        226,
+        520,
+        351,
+        616
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p20-q12ci-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q12(c)(i)",
+    "description": "The printed question as the paper sets it. Graphic titled The World's Eight Largest Oil Producers, production of petroleum and other liquids in 2024 in million barrels per day: United States 22.7, Saudi Arabia 10.7, Russia 10.5, Canada 6.0, China 5.3, Iran 4.7, Iraq 4.5, Brazil 4.3. Total World Production: 102.8 million barrels. The ask reads: (c) The graphic below shows the eight leading oil-producing countries in the world in 2024. (i) Using the data above, calculate the combined percentage share of total world oil output (102.8m barrels) held by the top three producers in 2024. Show all your workings.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 20,
+      "rectPoints": [
+        52,
+        54,
+        545,
+        335
+      ],
+      "scale": 4,
+      "regions": [
+        {
+          "page": 20,
+          "rectPoints": [
+            52,
+            54,
+            545,
+            335
+          ]
+        }
+      ],
+      "gapPx": 40
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p23-q13bii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q13(b)(ii)",
+    "description": "The printed question as the paper sets it. Printed in two parts from the paper, the setup above and the ask below. The question's cost table for the surf school. Daily output (number of lessons) / total fixed costs / total variable costs / total costs (€): 0 / 300 / 0 / 300; 10 / 300 / 120 / 420; 20 / 300 / 210 / 510; 30 / 300 / 360 / 660; 40 / 300 / 600 / 900. The ask reads: (b) Surfriders, a surf school in Bundoran, Co. Donegal, operates during the summer season. The table below shows its daily output (number of lessons), total fixed costs, total variable costs, and total costs. (ii) Using data from the table above draw a clearly labelled diagram below to show the total fixed cost (TFC) curve, the total variable cost (TVC) curve, and the total cost (TC) curve. Note: You must complete/fill in the cost axis and the quantity axis.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 23,
+      "rectPoints": [
+        52,
+        54,
+        545,
+        240
+      ],
+      "scale": 4,
+      "regions": [
+        {
+          "page": 23,
+          "rectPoints": [
+            52,
+            54,
+            545,
+            240
+          ]
+        },
+        {
+          "page": 23,
+          "rectPoints": [
+            52,
+            442,
+            545,
+            775
+          ]
+        }
+      ],
+      "gapPx": 40
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p34-q16ai-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q16(a)(i)",
+    "description": "The printed question as the paper sets it. The question's market for hotel rooms per night: a vertical supply curve S and a downward-sloping demand curve D meet at E, giving price Pe and quantity Qe. Price is on the vertical axis and Quantity of rooms per night on the horizontal. The ask reads: Question 16 The diagram below shows the market equilibrium for hotel rooms per night in Irish ‘coolcation’ destinations during the summer season. ‘Coolcations’ are holidays taken in cooler climates, like in Ireland, rather than in warmer destinations. (a) (i) Using the diagram above, show how the increasing popularity of ‘coolcations’ in Ireland among foreign tourists affects the market equilibrium for hotel rooms per night in the short run. Clearly label all changes to the diagram.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 34,
+      "rectPoints": [
+        52,
+        54,
+        545,
+        374
+      ],
+      "scale": 4,
+      "regions": [
+        {
+          "page": 34,
+          "rectPoints": [
+            52,
+            54,
+            545,
+            374
+          ]
+        }
+      ],
+      "gapPx": 40
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p35-q16bi-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q16(b)(i)",
+    "description": "The printed question as the paper sets it. Horizontal bar chart titled Foreign Visitors to Ireland By Country, June 2025: Other 157,700; Italy 19,200; France 32,500 (highlighted in red); Germany 54,800; USA 166,300; Britain 224,000. The axis runs from 0 to 250,000, with illustrated travellers behind the bars. The ask reads: (b) The chart below shows the main countries of origin for the 654,500 foreign visitors who arrived in Ireland in June 2025. (i) Using data from the chart above, calculate the percentage of total foreign visitors to Ireland in June 2025, which came from France. Show all your workings.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 35,
+      "rectPoints": [
+        52,
+        54,
+        545,
+        343
+      ],
+      "scale": 4,
+      "regions": [
+        {
+          "page": 35,
+          "rectPoints": [
+            52,
+            54,
+            545,
+            343
+          ]
+        }
+      ],
+      "gapPx": 40
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-HL-paper-p36-q16cii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 HL Q16(c)(ii)",
+    "description": "The printed question as the paper sets it. Printed in two parts from the paper, the setup above and the ask below. The question's production possibility frontier PPF1 for Malawi, with Tobacco leaf on the vertical axis and Corn on the horizontal. A red point B lies on the curve; a blue point A lies inside it, with dashed guides to QTL on the tobacco-leaf axis and QC on the corn axis. The ask reads: (c) The production possibility frontier (PPF) below shows the possible combinations of tobacco leaf and corn that Malawi could produce if it devoted all of its resources to producing only these two crops. (ii) Severe flash floods in Malawi can affect the crops of tobacco leaf and corn. Show in the diagram above how this development in Malawi would affect the PPF. Clearly label any changes you make. Explain your answer.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034ALP000EV.pdf",
+      "page": 36,
+      "rectPoints": [
+        52,
+        307,
+        545,
+        600
+      ],
+      "scale": 4,
+      "regions": [
+        {
+          "page": 36,
+          "rectPoints": [
+            52,
+            307,
+            545,
+            600
+          ]
+        },
+        {
+          "page": 37,
+          "rectPoints": [
+            52,
+            54,
+            545,
+            110
+          ]
+        }
+      ],
+      "gapPx": 40
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2026-OL-paper-p12-q11bii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2026 OL Q11(b)(ii)",
+    "description": "The printed question as the paper sets it. Printed in two parts from the paper, the setup above and the ask below. The question's monopoly diagram with Price and Quantity axes: a downward red AR line, a steeper blue MR line, a yellow MC curve rising through E where it meets MR, and a green U-shaped AC curve. A dashed line drops from E to output Q1. The ask reads: (b) The diagram below represents the long‐run equilibrium position of a firm in a Monopoly market. (ii) Equilibrium occurs at point E on the diagram above and the output the firm produces is shown as Q1. Clearly show and label on the above diagram: The price the firm will charge for its output (use label P1) The average cost (AC) of producing this output (use label AC1)",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2026/LC034GLP000EV.pdf",
+      "page": 12,
+      "rectPoints": [
+        52,
+        54,
+        560,
+        316
+      ],
+      "scale": 4,
+      "regions": [
+        {
+          "page": 12,
+          "rectPoints": [
+            52,
+            54,
+            560,
+            316
+          ]
+        },
+        {
+          "page": 12,
+          "rectPoints": [
+            52,
+            492,
+            560,
+            581
+          ]
+        }
+      ],
+      "gapPx": 40
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-scheme-p06-q2a-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2025 HL Section A Q2(a)",
+    "description": "Official working: household savings over household total disposable income, times 100 over 1; €6.59 bn over €43.91 bn times 100 over 1. Answer: 15 %. Deduct 1 mark if % omitted.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2025/LC034ALP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        86,
+        265,
+        520,
+        432
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-scheme-p17-q6b-labour-market.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2025 HL Section A Q6(b)",
+    "description": "Official labour-market diagram. Wage rate on the vertical axis, quantity of workers on the horizontal. Supply SL and demand DL cross at E, giving WE and QE. A horizontal line at NMW / €13.50 above WE meets DL at QD and SL at QS; the gap between QD and QS is labelled Unemployment gap / Excess supply of labour.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2025/LC034ALP000EV.pdf",
+      "page": 17,
+      "rectPoints": [
+        95,
+        314,
+        500,
+        540
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-scheme-p24-q11ai-hhi-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2025 HL Q11(a)(i)",
+    "description": "Official HHI working. 49% squared = 2,401; 28% squared = 784; 20% squared = 400; 3% squared = 9; 2,401 + 784 + 400 + 9 = 3,594.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2025/LC034ALP000EV.pdf",
+      "page": 24,
+      "rectPoints": [
+        86,
+        495,
+        520,
+        646
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-scheme-p26-q11bi-patent-monopoly.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2025 HL Q11(b)(i)",
+    "description": "Official long-run monopoly diagram. Price / Cost € on the vertical axis, Quantity on the horizontal. MC rises through E where it meets MR; output Q1. AR = D is above at Z giving price P1; AC is at Y giving cost C1; the shaded rectangle between P1 and C1 is SNPs; W marks the minimum point of AC.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2025/LC034ALP000EV.pdf",
+      "page": 26,
+      "rectPoints": [
+        86,
+        178,
+        510,
+        442
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-scheme-p39-q13ai-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2025 HL Q13(a)(i)",
+    "description": "Official working: Ireland’s exports to the US over Ireland’s total goods exports, times 100 over 1; €34 bn over €108 bn times 100 over 1. Answer: 31.48% / 32%. Deduct 1 mark for omission of %.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2025/LC034ALP000EV.pdf",
+      "page": 39,
+      "rectPoints": [
+        86,
+        422,
+        420,
+        662
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-scheme-p52-q14bii-ped-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2025 HL Q14(b)(ii)",
+    "description": "Official PED working: change in Q over change in P, times (P1 + P2) over (Q1 + Q2); minus 10,000 over 0.50 times (2.00 + 2.50) over (30,000 + 20,000). Answer: minus 1.8.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2025/LC034ALP000EV.pdf",
+      "page": 52,
+      "rectPoints": [
+        86,
+        164,
+        410,
+        300
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-scheme-p65-q16ai-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2025 HL Q16(a)(i)",
+    "description": "Official working. Label A: total cost minus fixed cost = variable cost, €70 − €60 = €10. Label B: average cost = total cost over output of smoothies = €115 over 60. Answer = €1.92.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2025/LC034ALP000EV.pdf",
+      "page": 65,
+      "rectPoints": [
+        86,
+        355,
+        420,
+        575
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-scheme-p68-q16bii-lrac.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2025 HL Q16(b)(ii)",
+    "description": "Official LRAC diagram. Average cost on the vertical axis, Output on the horizontal. Five U-shaped short-run curves SRAC1 to SRAC5 at outputs Q1 to Q5; the LRAC envelope touches each, falling to its minimum at Q3 and rising after it.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2025/LC034ALP000EV.pdf",
+      "page": 68,
+      "rectPoints": [
+        86,
+        186,
+        520,
+        420
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-paper-p08-q6b-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 HL Section A Q6(b)",
+    "description": "The printed question as the paper sets it. The question’s free labour market diagram: wage rate on the vertical axis, quantity of workers on the horizontal; supply SL and demand DL cross at the equilibrium wage WE and quantity QE. The printed text reads: (b) The diagram below shows a free labour market. Complete the diagram below to show how a change to Ireland’s current national minimum wage rate, at a rate higher than WE in the diagram below, will affect the market for labour. Clearly label any changes you make. Explain your answer. Wage rate Quantity of workers WE QE SL DL",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034ALP000EV.pdf",
+      "page": 8,
+      "rectPoints": [
+        52,
+        268,
+        545,
+        560
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-paper-p13-q11ai-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 HL Q11(a)(i)",
+    "description": "The printed question as the paper sets it. A pie chart headed 'Market Share of Irish Private Health Insurance Providers, Q2, 2024' with four labelled slices and a legend: VHI 49% (green), Laya Healthcare 28% (blue), Irish Life Health 20% (yellow), Other 3% (purple). Source 'Adapted from hia.ie'. The printed text reads: Question 11 The chart below shows the market shares of private health insurance companies in Ireland. Adapted from hia.ie (a) (i) Using the data provided above, calculate the Herfindahl Hirschman Index (HHI) to determine whether the market is competitive or highly concentrated. Indicate your answer below by ticking (✓) the relevant box and justify your answer. Show all your workings. Competitive Highly concentrated",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034ALP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        52,
+        117,
+        545,
+        424
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-paper-p21-q13ai-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 HL Q13(a)(i)",
+    "description": "The printed question as the paper sets it. A column chart on a yellow ground headed \"Value of Ireland's Exported Goods By Region - From January to June, 2024 (Total: €108 billion)\", y-axis 'VALUE OF EXPORTS, € BILLION' 0 to 50. Five labelled bars: European Union 42, Great Britain 8, Northern Ireland 3, United States 34, Rest of the World 21. Source 'Adapted from the CSO'. The printed text reads: Question 13 The chart below shows the value of Ireland’s exports, by region, in the first six months of 2024. Adapted from the CSO (a) (i) Calculate the percentage of Ireland’s total goods exports that entered the United States. Show all your workings.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034ALP000EV.pdf",
+      "page": 21,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        343
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-paper-p26-q14bi-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 HL Q14(b)(i)",
+    "description": "The printed question as the paper sets it. A market schedule on pale purple with columns Price (€), Quantity Demanded (units) and Quantity Supplied (units): €1.00 with 50,000 demanded and 10,000 supplied; €1.50 with 40,000 and 20,000; €2.00 with 30,000 and 30,000; €2.50 with 20,000 and 40,000; €3.00 with 10,000 and 50,000. The printed text reads: (b) The data below represents the market demand and the market supply schedules for a new deodorant, called Scentastic. Price (€) Quantity Demanded (units) Quantity Supplied (units) €1.00 50,000 10,000 €1.50 40,000 20,000 €2.00 30,000 30,000 €2.50 20,000 40,000 €3.00 10,000 50,000 (i) Using the data above, complete on the graph paper provided below: • The market demand curve for Scentastic. • The market supply curve for Scentastic. • Clearly label the point of equilibrium as E. • Show the equilibrium price (Pe) and the equilibrium quantity (Qe) on the graph. Note: You must complete/fill in the price axis and the quantity axis. Price € Quantity",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034ALP000EV.pdf",
+      "page": 26,
+      "rectPoints": [
+        52,
+        256,
+        545,
+        756
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-paper-p30-q15bi-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 HL Q15(b)(i)",
+    "description": "The printed question as the paper sets it. A column chart headed \"Annual % Changes in Ireland's Residential Property Price Index (RPPI) - From March to August, 2024\", six labelled blue bars rising left to right: Mar-24 7.4%, Apr-24 7.9%, May-24 8.5%, Jun-24 8.9%, Jul-24 9.6%, Aug-24 10.1%. The printed text reads: (b) The chart below, adapted from the CSO, shows the year-on-year percentage changes in the Residential Property Price Index (RPPI) for Ireland from March to August, 2024. (i) Using the data in the chart above, calculate the percentage increase in the RPPI from March 2024 to August 2024. Show all your workings.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034ALP000EV.pdf",
+      "page": 30,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        338
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-paper-p33-q16ai-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 HL Q16(a)(i)",
+    "description": "The printed question as the paper sets it. A cost table with an orange header: Output of Smoothies 0, 20, 40, 60; Fixed Cost (€) 60 throughout; Variable Cost (€) 0, A (highlighted green), 30, 55; Total Cost (€) 60, 70, 90, 115; Average Cost (€) dash, 3.50, 2.25, B (highlighted green). The printed text reads: Question 16 The table below shows the daily output and production costs for a smoothie and juice bar in Sligo. Output of Smoothies Fixed Cost (€) Variable Cost (€) Total Cost (€) Average Cost (€) 0 60 0 60 — 20 60 A 70 3.50 40 60 30 90 2.25 60 60 55 115 B (a) (i) Complete the variable cost and average cost, labelled A and B, in the table below. Show all your workings.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034ALP000EV.pdf",
+      "page": 33,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        270
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-HL-paper-p34-q16bii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 HL Q16(b)(ii)",
+    "description": "The printed question as the paper sets it. A cost diagram drawn on a squared grid. The vertical axis is labelled 'Costs' in red and the horizontal 'Quantity'. Two red U-shaped short-run average cost curves are drawn and labelled: SRAC subscript 1, the narrower and higher of the two, sitting to the left; and SRAC subscript 2, wider and lower, sitting to its right. The two curves cross on the right-hand limb of SRAC 1. The printed text reads: (ii) The partially completed diagram below shows how the costs for a smoothie bar change as it expands its operations over time. Complete the diagram with three more short run average cost curves (SRAC) to show how the long run average cost curve (LRAC) is constructed. Label your diagram fully. Explain the shape of the LRAC curve you have drawn in the space provided below. SRAC 1 SRAC 2 Costs Quantity",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034ALP000EV.pdf",
+      "page": 34,
+      "rectPoints": [
+        52,
+        256,
+        548,
+        602
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-OL-scheme-p13-q7i-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2025 OL Section A Q7(i)",
+    "description": "Official working: 243,700 over 589,500, times 100 over 1, equals 41.3 %.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2025/LC034GLP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        180,
+        372,
+        430,
+        414
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-OL-scheme-p20-q12ai-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2025 OL Q12(a)(i)",
+    "description": "Official working with the mark for each step: €14.9 bn (6) over €105.4 bn (4), times 100 (2), equals 14.14 % (4).",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2025/LC034GLP000EV.pdf",
+      "page": 20,
+      "rectPoints": [
+        100,
+        400,
+        430,
+        446
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-OL-paper-p03-q1-electricity-headline.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 OL Section A Q1(ii)",
+    "description": "A teal CSO headline banner reading: Wholesale electricity prices in August 2024 were down by almost 75% from the peak recorded in August 2022. Source www.cso.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034GLP000EV.pdf",
+      "page": 3,
+      "rectPoints": [
+        52,
+        300,
+        545,
+        368
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-OL-paper-p08-q7-population.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 OL Section A Q7(ii)",
+    "description": "Bar chart titled Population - People aged 65 and over, Increase: 243,700. A green bar for 2014 at 589,500 and a purple bar for 2024 at 833,200. Adapted from cso.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034GLP000EV.pdf",
+      "page": 8,
+      "rectPoints": [
+        60,
+        104,
+        545,
+        392
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-OL-paper-p21-q14b-oda.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 OL Q14(b)(i)",
+    "description": "Bar chart titled Ireland Overseas Development Assistance, Millions (€), on a 0 to 3000 axis: 2020 868, 2021 976, 2022 2291, 2023 2604. Adapted from ireland.ie.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034GLP000EV.pdf",
+      "page": 21,
+      "rectPoints": [
+        60,
+        100,
+        545,
+        320
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-OL-paper-p08-q7i-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 OL Section A Q7(i)",
+    "description": "The printed question as the paper sets it. Bar chart titled Population - People aged 65 and over, Increase: 243,700. A green bar for 2014 at 589,500 and a purple bar for 2024 at 833,200. Adapted from cso. The printed text reads: Question 7 The graph below shows the population of people aged 65 and over in Ireland in 2014 and 2024. Adapted from cso (i) The number of people aged 65 and over has increased by 243,700. Calculate the percentage increase in number of people aged 65 and over from 2014 to 2024. Show all your workings. 589,500 833,200 Population - People aged 65 and over Increase: 243,700 2024 2014",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034GLP000EV.pdf",
+      "page": 8,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        452
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-OL-paper-p09-q8-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 OL Section A Q8",
+    "description": "The printed question as the paper sets it. A three-row table on pale blue with a header reading Name of Organisation | Tick which is a Monopoly structure. The organisations are Ryanair, An Post (mail service for letter post) and Vodafone. The tick column is empty. The printed text reads: Question 8 (i) Identify, with a tick (✔), which one of the following firms exist in a monopoly market structure in Ireland. Name of Organisation Tick (✔) which is a Monopoly structure Ryanair An Post (mail service for letter post) Vodafone (ii) In a monopoly market structure, there are barriers to entry. Outline one such possible barrier to entry.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034GLP000EV.pdf",
+      "page": 9,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        292
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-OL-paper-p09-q9-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 OL Section A Q9",
+    "description": "The printed question as the paper sets it. A two-row table with a purple header reading Substitute | Complement | Reason. The items are 'Apple iPhone 16' and 'Samsung Galaxy watch 7'. The tick columns are empty and the Reason column is ruled for writing. The printed text reads: Question 9 In September 2024, Apple released the new Apple Watch series 10. www.apple.com In the table below, indicate by means of a tick (✔) which of the following are either a substitute to or a complement for the Apple Watch series 10. Explain the reason for your choice in each case. Substitute Complement Reason Apple iPhone 16 Samsung Galaxy watch 7",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034GLP000EV.pdf",
+      "page": 9,
+      "rectPoints": [
+        52,
+        395,
+        565,
+        736
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-OL-paper-p12-q11bii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 OL Q11(b)(ii)",
+    "description": "The printed question as the paper sets it. A cost and revenue diagram of a firm in perfect competition at long-run equilibrium. 'Price' on the vertical axis, 'Q' on the horizontal. A red U-shaped average cost curve labelled AC and a steeply rising red marginal cost curve labelled MC cross at a filled black dot labelled E, which sits exactly on a horizontal blue line running the width of the diagram and labelled 'D = AR = MR'. Beneath the diagram sits the four-row answer table for MC, Q, D = AR = MR and AC. The printed text reads: (b) The diagram below represents the long-run equilibrium of a firm in Perfect Competition. (i) Write out in full what any three of the following four labels represent. MC Q D = AR = MR AC (ii) Equilibrium occurs at point E on the diagram above. Clearly show and label on the above diagram: • The output the firm will produce in equilibrium (use label Q1) • The price the firm will charge for its output (use label P1). D = AR = MR Price Q MC E AC",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034GLP000EV.pdf",
+      "page": 12,
+      "rectPoints": [
+        52,
+        55,
+        565,
+        541
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-OL-paper-p14-q12ai-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 OL Q12(a)(i)",
+    "description": "The printed question as the paper sets it. A pie chart headed 'Total Government Expenditure: €105.4 billion' with two slices, the smaller pulled out: Current Expenditure €90.5 billion in dark teal and Capital Expenditure €14.9 billion in orange, with a legend beneath. Below it the part asking the student to calculate capital expenditure as a percentage of the total, and part (ii) on whether €360 million for walking and cycling infrastructure is current or capital expenditure. The printed text reads: Question 12 The pie chart below outlines budgeted government current and capital expenditure for 2025. (a) (i) Calculate capital expenditure as a percentage of total government expenditure. Show all your workings. Total Government Expenditure: €105.4 billion Current Expenditure Capital Expenditure €90.5 billion €14.9 billion",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034GLP000EV.pdf",
+      "page": 14,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        372
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-OL-paper-p18-q13bi-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 OL Q13(b)(i)",
+    "description": "The printed question as the paper sets it. A cost and revenue table with an orange header: Quantity (units of output) 1, 2, 3, 4; Average Costs (AC) in € 300, 250, 200, 300; Marginal Costs (MC) in € 150, 100, 200, 400; Marginal Revenue (MR) in € 200 in every column. The printed text reads: (b) (i) You have been given the data below for a firm. On the graph paper provided below, draw and label: • the average costs (AC) for this firm. • the marginal costs (MC) for this firm. • the marginal revenue (MR) for this firm. Note: You must complete/fill in the quantity axis and the costs axis. Quantity (units of output) 1 2 3 4 Average Costs (AC) in € 300 250 200 300 Marginal Costs (MC) in € 150 100 200 400 Marginal Revenue (MR) in € 200 200 200 200 Quantity Costs €",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034GLP000EV.pdf",
+      "page": 18,
+      "rectPoints": [
+        52,
+        55,
+        560,
+        522
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2025-OL-paper-p24-q15bi-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2025 OL Q15(b)(i)",
+    "description": "The printed question as the paper sets it. A demand and supply diagram of the housing market. Price on the vertical axis, Quantity on the horizontal. A red downward-sloping line labelled D crosses a blue upward-sloping line labelled S at a filled dot labelled E, with grey arrows running left to Pe and down to Qe. Beneath it the parts asking the student to show the effect of a forecast population increase on the diagram, explain it, and give a positive or negative effect of the Dublin Quays traffic restrictions. The printed text reads: (b) It is forecasted that Ireland’s population will grow to 5.9 million by 2030. Adapted from the Irish Times The diagram below shows the market demand curve and market supply curve for housing in Ireland. (i) The forecasted increase in population is expected to affect the demand for housing. Show the effect of this development on the diagram above. Price Quantity E D S P e Q e",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2025/LC034GLP000EV.pdf",
+      "page": 24,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        388
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-HL-paper-p05-q3a-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2024 HL Section A Q3(a)",
+    "description": "The printed question as the paper sets it. The question’s demand and supply diagram of the electricity market: Price MWh on the vertical axis and Quantity of Electricity on the horizontal; a downward-sloping demand curve D crosses an upward-sloping supply curve S at the equilibrium, with dashed guides to €600 Pe on the price axis and Qe on the quantity axis. The printed text reads: Question 3 During 2022, the equilibrium megawatt price per hour for electricity was €600. In an effort to combat the energy crisis, the European Commission considered a €200 per megawatt hour limit on the price of electricity. Adapted from The Financial Times (a) Illustrate, on the diagram below, how the European Commission’s proposal above would alter the diagram. S D Price MWh Quantity of Electricity €600 Pe Qe",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2024/LC034ALP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        418
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-HL-paper-p06-q4a-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2024 HL Section A Q4(a)",
+    "description": "The printed question as the paper sets it. A small table comparing two years, 2022 in blue and 2023 in pink. No. of machines 5 then 10; No. of workers 5 then 5; RATIO 1:1 then 2:1, both ratio cells outlined heavily. The printed text reads: Question 4 (a) The table below shows a firm’s capital to labour ratio for the previous two years. From the information given above, tick (✓) one of the boxes below to indicate whether the firm has engaged in capital widening or capital deepening and explain your answer. 2022 2023 No. of machines 5 10 No. of workers 5 5 RATIO 1:1 2:1 Capital Widening Capital Deepening",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2024/LC034ALP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        256
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-HL-paper-p12-q10a-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2024 HL Section A Q10(a)",
+    "description": "The printed question as the paper sets it. A table adapted from Ireland’s National Accounts: Net factor income from abroad −€105bn; EU Subsidies €2bn; EU Taxes €0.5bn. Below it a national income ladder from Gross Domestic Product (GDP) at Current Market Prices €430bn: step (i) is completed (430.00 less net factor income from abroad 105.00 gives Gross National Product at Current Market Prices, €325 bn) and step (ii), Gross National Income at Current Market Prices, is left blank. The printed text reads: Question 10 The data below has been adapted from Ireland’s National Accounts for 2023. (a) Given that Gross Domestic Product (GDP) at Current Market Prices (CMP) was €430bn, use the information above to calculate part (ii). Part (i) has been completed for you. State the relationship and show all your workings. Relationships / Workings Answer € bn Gross Domestic Product (GDP) at Current Market Prices €430bn Relationships / Workings: Gross Domestic Product (GDP) at CMP +/- Net Factor Income from Abroad 430.00 (105.00) (i) = Gross National Product (GNP) at Current Market Prices Ans: €325 bn Relationships / Workings: (ii) = Gross National Income at Current Market Prices Ans: Description Value Net factor income from abroad - €105bn EU Subsidies €2bn EU Taxes €0.5bn",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2024/LC034ALP000EV.pdf",
+      "page": 12,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        540
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-HL-paper-p18-q12bii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2024 HL Q12(b)(ii)",
+    "description": "The printed question as the paper sets it. A weighted price index worksheet with an orange header: Category, % of income (weight) spent on item(s), Price of item(s) in base year €, Price of item(s) in the current year €, Calculation of simple price index, Weight, Result. Food 65% at 60 rising to 66; Transport 20% at 30 rising to 45; Other Items 15% at 80 rising to 96. The final row totals 100% and is headed 'Price Index for the current year'; two cells in it are blocked out in dark grey and the four right-hand columns are blank throughout. The printed text reads: (ii) The table below shows a country’s composite price index for the following categories of expenditure: food; transport; and other items. Use the information in the table below to calculate the price index for the current year. The base value is 100. Show your workings. Category % of income (weight) spent on item(s) Price of item(s) in base year € Price of item(s) in the current year € Calculation of simple price index Weight Result Food 65% 60 66 Transport 20% 30 45 Other Items 15% 80 96 100% Price Index for the current year",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2024/LC034ALP000EV.pdf",
+      "page": 18,
+      "rectPoints": [
+        52,
+        386,
+        548,
+        740
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-HL-paper-p33-art.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2024 HL Q16(a)",
+    "description": "A column chart headed ‘Number of homeless people in Ireland’. The vertical axis, ‘Number of homeless people’, runs from 0 to 14,000 in steps of 2,000; the horizontal axis, ‘Years’, shows 2021, 2022 and 2023. The 2021 bar (red) stands at just over 8,000; the 2022 bar (green) and the 2023 bar (blue) each stand just under 13,000. Source: Adapted from Independent.ie.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2024/LC034ALP000EV.pdf",
+      "page": 33,
+      "rectPoints": [
+        80,
+        102,
+        542,
+        293
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-OL-paper-p11-q11bii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2024 OL Q11(b)(ii)",
+    "description": "The printed question as the paper sets it. A kinked demand diagram of a firm in oligopoly at long-run equilibrium. 'Price' on the vertical axis, 'Quantity' on the horizontal. A blue line labelled in a box 'D=AR' runs from the top left, bends at a filled black dot and falls more steeply to the quantity axis. A red line labelled in a box 'MR' runs below it, drops vertically through a second filled dot labelled E, and continues below the axis. A green U-shaped curve labelled in a box 'MC' rises through E to the top right. A dotted red vertical joins the two dots. Beneath the diagram sit the three-row answer table for D=AR, MC and MR, the instruction to mark Q1 and P1 at equilibrium, and part (iii) on naming another Irish oligopoly. The printed text reads: (b) The diagram below represents the long‐run equilibrium of a firm in Oligopoly. (i) Write out in full what each of the following three labels represent. (ii) Equilibrium occurs at point E on the diagram above. Clearly show and label on the above diagram:  The output the firm will produce in equilibrium (use label Q1)  The price the firm will charge for its output (use label P1). D=AR MC MR D=AR Quantity E Price MC MR",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2024/LC034GLP000EV.pdf",
+      "page": 11,
+      "rectPoints": [
+        52,
+        55,
+        548,
+        512
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-OL-paper-p16-q13ai-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2024 OL Q13(a)(i)",
+    "description": "The printed question as the paper sets it. A cost table: Quantity (units of output) 1, 2, 3, 4; Fixed Costs in € 600, 600, 600, 600; Variable Costs in € 500, 600, 700, 800. Below it a sheet of graph paper with a vertical axis labelled Costs € and a horizontal axis labelled Quantity, each with blank tick marks to be numbered. The printed text reads: Question 13 (a) (i) You have been given the data below for a firm. On the graph paper provided below, draw and label:  the fixed costs for this firm and  the variable costs for this firm. Note: You must complete/fill in the quantity axis and the costs axis. Quantity (units of output) 1 2 3 4 Fixed Costs in € 600 600 600 600 Variable Costs in € 500 600 700 800 Quantity Costs €",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2024/LC034GLP000EV.pdf",
+      "page": 16,
+      "rectPoints": [
+        52,
+        55,
+        548,
+        515
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-OL-paper-p22-q15a-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2024 OL Q15(a)",
+    "description": "The printed question as the paper sets it. A four-row table with a green header reading Example | Name of Factor of Production | Explanation of Factor of Production. The examples are Farm Machinery, Farm Workers, Farm Owners and Farm Land. Two explanations are given as worked examples - 'Anything that is man-made that is used in the production of goods and services/wealth' for machinery and 'The human effort involved in the production of products on the farm' for workers - and 'Land' is filled in as the factor for Farm Land. The rest is blank. The printed text reads: Question 15 (a) The table below concerns factors of production which may be found on a farm. Complete the table by either naming or explaining each factor of production. Some parts have already been completed for you. Example Name of Factor of Production Explanation of Factor of Production Farm Machinery Anything that is man‐made that is used in the production of goods and services/wealth. Farm Workers The human effort involved in the production of products on the farm. Farm Owners _____________________________________ _____________________________________ _____________________________________ _____________________________________ Farm Land Land _____________________________________ _____________________________________ _____________________________________ _____________________________________",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2024/LC034GLP000EV.pdf",
+      "page": 22,
+      "rectPoints": [
+        52,
+        55,
+        556,
+        600
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-OL-paper-p23-q15b-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2024 OL Q15(b)",
+    "description": "The printed question as the paper sets it. A demand and supply diagram of Irish farm output. Price on the vertical axis, Quantity on the horizontal. A red downward-sloping line labelled D crosses a blue upward-sloping line labelled S at a filled dot labelled E, with grey guides to Pe on the price axis and Qe on the quantity axis. Beneath it the note that the price of fertiliser in Ireland increased by 97.7% in the 12 months to October 2022, and the parts asking the student to show the effect on the diagram, explain it, and explain the term substitute good. The printed text reads: (b) The diagram below shows the demand and supply curve for Irish farm output. The price of fertiliser in Ireland increased by 97.7% in the 12 months to October 2022. Adapted from the CSO (i) As a result, the increase in fertiliser prices has affected the supply of Irish farm output. Show the effect of this development on the diagram above. (ii) Explain your answer. Price Quantity E D S Pe Qe",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2024/LC034GLP000EV.pdf",
+      "page": 23,
+      "rectPoints": [
+        52,
+        55,
+        558,
+        410
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2024-OL-paper-p24-q15ci-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2024 OL Q15(c)(i)",
+    "description": "The printed question as the paper sets it. A three-row table for a price elasticity calculation with columns Bars of chocolate and Price (€). Before the increase: 90 bars at 100 cent. After the increase: 50 bars at 140 cent. Changes: -40 bars and +40 cent. The printed text reads: (c) (i) Using the formula supplied, calculate the consumers price elasticity of demand when the price of a bar of chocolate changes due to increases in the costs of production. Show all your workings. 𝚫𝐐 𝚫𝐏 ൈ 𝐏𝟏൅𝐏𝟐 𝐐𝟏൅𝐐𝟐 Bars of chocolate Price (€) Before the increase 90 bars 100 cent After the increase 50 bars 140 cent Changes ‐ 40 bars + 40 cent",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2024/LC034GLP000EV.pdf",
+      "page": 24,
+      "rectPoints": [
+        52,
+        55,
+        555,
+        268
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-HL-paper-p05-q3a-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 HL Section A Q3(a)",
+    "description": "The printed question as the paper sets it. A utility table with columns for 1 to 4 units consumed. Total Utility in Units/Utils reads 40, 80, blank, 137. Marginal Utility in Units/Utils reads 40, blank, 35, blank. The four blank cells are outlined in green for the student to complete. The printed text reads: Question 3 (a) Complete the missing total utility and marginal utility figures in the table below. Show your workings. Number of units consumed 1 2 3 4 Total Utility in Units/Utils 40 80 137 Marginal Utility in Units/Utils 40 35",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034ALP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        52,
+        55,
+        540,
+        182
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-HL-paper-p05-q3c-formula.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 HL Section A Q3(c)",
+    "description": "The formula printed in Question 3(c): MUx over Px equals 1800 over 10, and MUy over Py equals 3600 over 10.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034ALP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        205,
+        552,
+        395,
+        592
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-HL-paper-p06-q4a-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 HL Section A Q4(a)",
+    "description": "The printed question as the paper sets it. A cost table with columns for output 1 to 4 units. Total Cost (€) reads 55, 82, 108, 152. Average Cost (€) reads 55, blank, 36, blank. Marginal Cost (€) reads N/A in red, 27, blank, blank. The blank cells are outlined in blue. The printed text reads: Question 4 The table below shows the output and total costs in a firm. (a) Complete the missing average cost and marginal cost figures in the table below. Output (units) 1 2 3 4 Total Cost (€) 55 82 108 152 Average Cost (€) 55 36 Marginal Cost (€) N/A 27",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034ALP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        52,
+        55,
+        540,
+        185
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-HL-paper-p09-q7a-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 HL Section A Q7(a)",
+    "description": "The printed question as the paper sets it. A demand and supply diagram of the rental market. Price on the vertical axis, 'Quantity of rental properties' on the horizontal. A red downward-sloping line labelled D crosses a blue upward-sloping line labelled S at a filled black dot, with grey dashed guides to Pe on the price axis and Qe on the quantity axis. Beside it, a ruled 'Explanation:' answer box. The printed text reads: Question 7 (a) Landlords are leaving the Irish housing market in their thousands, blaming excessive taxation, rent control and constantly changing laws. Adapted from Sunday Business Post Show on the diagram below how this development will alter the rental market equilibrium position. Explain your answer. Price Explanation: ___________________________ ______________________________________ ______________________________________ ______________________________________ _____________________________________ ______________________________________ Pe Qe Quantity of rental properties D S",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034ALP000EV.pdf",
+      "page": 9,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        368
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-HL-paper-p12-q10-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 HL Section A Q10",
+    "description": "The printed question as the paper sets it. A table adapted from Ireland’s National Accounts for 2021: Net factor income from abroad −€103bn; EU Subsidies €1.7bn; EU Taxes €0.5bn; Adjustments, including factor income of redomiciled companies, depreciation on R&D imports and trade in IP, and depreciation on aircraft leasing, €89bn. Below it a ladder from Gross Domestic Product (GDP) at Current Market Prices €426bn: A, Gross National Product, is completed (426.00 less 103.00, Ans €323 bn); B, Gross National Income, and C, Modified Gross National Income, are left blank. The printed text reads: Question 10 The data below has been adapted from Ireland’s National Accounts for 2021. Given that Gross Domestic Product (GDP) at Current Market Prices (CMP) was €426bn, use the information above to calculate the following terms B, and C. A has been completed for you. State the relationships and show all your workings. Relationships / Workings Answer € bn’s Gross Domestic Product (GDP) at Current Market Prices (CMP) €426bn Relationships / Workings: Gross Domestic Product (GDP) at CMP +/‐ Net Factor Income from Abroad 426.00 (103.00) A = Gross National Product (GNP) at Current Market Prices Ans: €323 bn Relationships / Workings: B = Gross National Income at Current Market Prices Ans: Relationships / Workings: C = Modified Gross National Income at Current Market Prices Ans: Description Value Net factor income from abroad ‐ €103bn EU Subsidies €1.7bn EU Taxes €0.5bn Adjustments Including  Factor income of redomiciled companies  Depreciation on R&D imports and trade in IP  Depreciation on aircraft leasing €89bn",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034ALP000EV.pdf",
+      "page": 12,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        712
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-HL-paper-p13-q11ai-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 HL Q11(a)(i)",
+    "description": "The printed question as the paper sets it. A CSO infographic of preliminary Census 2022 results: population 4,761,865 in 2016 and 5,123,536 in 2022, a total change of 361,671 (natural increase 171,338; net migration 190,333), with housing figures on the right. Below it a table: Population 2016 4,761,865; Population 2022 5,123,536; Total Change 361,671. The printed text reads: Question 11 The infographic below shows preliminary results for Census 2022, adapted from the CSO. (a) (i) Using the data in the table below (extracted from the infographic above), calculate the percentage change in the Irish population from 2016 to 2022. Show your workings. Population 2016 Population 2022 Total Change 4,761,865 5,123,536 361,671",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034ALP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        52,
+        112,
+        545,
+        408
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-HL-paper-p19-q12bi-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 HL Q12(b)(i)",
+    "description": "The printed question as the paper sets it. A column chart headed ‘Market Share for Irish Dairy Producers’, the vertical axis in percent from 0 to 60. The bars read Kerry Group 48, Glanbia 27, Dairygold 8, Lakeland Dairies 7, Dale Farm 3, Aurivo 3, Arrabawn 2 and Tipperary Co-op 2. Source: Adapted from Top1000.ie. The printed text reads: (b) The bar chart below shows the percentage (%) market share for Irish Dairy Producers in 2021. Adapted from Top1000.ie (i) Based upon the figures in the bar chart above, calculate the Herfindahl Hirschman Index for Irish Dairy Producers. Show your workings. 48 27 8 7 3 3 2 2 0 10 20 30 40 50 60 Kerry Group Glanbia Dairygold Lakeland Dairies Dale Farm Aurivo Arrabawn Tipperary Co‐op % Market Share for Irish Dairy Producers",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034ALP000EV.pdf",
+      "page": 19,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        275
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-HL-paper-p19-q12b-chart.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 HL Q12(b)",
+    "description": "A column chart headed ‘Market Share for Irish Dairy Producers’, the vertical axis in percent from 0 to 60. The bars read Kerry Group 48, Glanbia 27, Dairygold 8, Lakeland Dairies 7, Dale Farm 3, Aurivo 3, Arrabawn 2 and Tipperary Co-op 2. Source: Adapted from Top1000.ie.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034ALP000EV.pdf",
+      "page": 19,
+      "rectPoints": [
+        80,
+        88,
+        545,
+        230
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-HL-paper-p30-q15aiii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 HL Q15(a)(iii)",
+    "description": "The printed question as the paper sets it. A weighted price index worksheet with an orange header: Category, % of income (weight) spent on item(s), Price of item(s) in base year €, Price of item(s) in the current year €, Calculation of Simple Price Index, Weight, Result. Food 60% at 50 rising to 55; Transport 25% at 20 rising to 24; Other Items 15% at 75 rising to 81. The bottom row totals 100% and is headed 'Price Index for the current Year' with a heavily outlined empty result cell. The four right-hand columns are blank throughout. The printed text reads: (iii) The table below shows a country’s composite price index for the following categories of expenditure: food; transport; and other items. Using the information in the table below to calculate the price index for the current year. The base value is 100. Show your workings. Category % of income (weight) spent on item (s) Price of item (s) in base year € Price of item (s) in the current year € Calculation of Simple Price Index Weight Result Food 60% 50 55 Transport 25% 20 24 Other Items 15% 75 81 100% Price Index for the current Year",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034ALP000EV.pdf",
+      "page": 30,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        482
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-OL-paper-p07-q5-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 OL Section A Q5",
+    "description": "A supply diagram for Rugby World Cup tickets: Price on the vertical axis, No. of tickets on the horizontal axis, and a single vertical supply line labelled S1 standing to the right of the price axis.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034GLP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        104,
+        106,
+        456,
+        318
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-OL-paper-p11-q11b-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 OL Q11(b)",
+    "description": "A cost-and-revenue diagram for a firm in long-run equilibrium, Price (€) on the vertical axis and the horizontal axis numbered 3. A blue U-shaped curve numbered 1; a yellow downward-sloping line numbered 2 that touches the blue curve at a marked point; a green curve labelled MC that cuts the blue curve at its lowest point, marked W; and a red, steeper downward-sloping line labelled MR, which MC cuts at point E.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034GLP000EV.pdf",
+      "page": 11,
+      "rectPoints": [
+        60,
+        226,
+        540,
+        498
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-OL-paper-p11-q11bii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 OL Q11(b)(ii)",
+    "description": "The printed question as the paper sets it. An answer table with rows 1, 2 and 3 for naming the numbered items. Below it: A cost-and-revenue diagram for a firm in long-run equilibrium, Price (€) on the vertical axis and the horizontal axis numbered 3. A blue U-shaped curve numbered 1; a yellow downward-sloping line numbered 2 that touches the blue curve at a marked point; a green curve labelled MC that cuts the blue curve at its lowest point, marked W; and a red, steeper downward-sloping line labelled MR, which MC cuts at point E. The printed text reads: (b) The diagram below represents the long run equilibrium of a firm in the hair and beauty industry. (i) Write out in full what each of the three numbered items (1-3) in the diagram below represent. (Do not use abbreviations) 1. 2. 3. (ii) Equilibrium occurs at point E on the diagram above. Clearly show and label on the above diagram: • The output the firm will produce in the equilibrium (use label Q1) • The price the firm will charge for its output (use label P1) • The average cost of producing this output (using point C1) Price (€) Q MR E MC A W 3 1",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034GLP000EV.pdf",
+      "page": 11,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        593
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-OL-paper-p19-q14-chart.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 OL Q14(a)",
+    "description": "A line chart headed ‘Petrol Prices in Ireland: April - September 2022’, vertical axis ‘Price in cent (€)’ from 160.00 to 220.00, horizontal axis ‘Months’ from Apr-22 to Sep-22. The line rises from about 181 in April to about 192 in May and peaks near 213 in June, then falls through about 199 in July to about 187 in August and 184 in September. Source: Adapted from theaa.ie.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034GLP000EV.pdf",
+      "page": 19,
+      "rectPoints": [
+        54,
+        90,
+        536,
+        338
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-OL-paper-p25-q16ai-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2023 OL Q16(a)(i)",
+    "description": "The printed question as the paper sets it. A four-row table headed Factor of Production, Explanation and Example. Row 1 LAND is explained as anything supplied by nature which helps in production, its example blank. Row 2 has its factor and explanation blank and the example Workers. Row 3 CAPITAL has its explanation blank and the example Machinery. Row 4 has its factor blank, the explanation ‘Takes a risk with an idea in setting up a business in return for profit.’ and its example blank. The printed text reads: Question 16 Established in 2011 by Tom Keogh, Keogh’s Crisps are already sold in 16 countries worldwide. It is one of the fastest growing food manufacturers in Ireland. Adapted from Irish exporters.ie (a) (i) Complete the table below to show your understanding of the factors of production used in the production of Keogh’s Crisps. Some of the information has been completed for you. Factor of Production Explanation Example 1. LAND Anything supplied by nature which helps in production. 2. Workers 3. CAPITAL Machinery 4. Takes a risk with an idea in setting up a business in return for profit.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2023/LC034GLP000EV.pdf",
+      "page": 25,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        707
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2023-OL-scheme-p26-q16ai-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2023 OL Q16(a)(i)",
+    "description": "The marking scheme’s completed factors-of-production table for Keogh’s Crisps, columns Factor of Production, Explanation and Example. 1. LAND, anything supplied by nature which helps in production, examples POTATOES, SALT and OIL. 2. LABOUR, the human effort involved in the production of a good or service, example Workers. 3. CAPITAL, anything made by humans which is used in production, example Machinery. 4. ENTERPRISE, takes a risk with an idea in setting up a business in return for profit, example TOM KEOGH. The six cells the candidate supplies are in capitals.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2023/LC034GLP000EV.pdf",
+      "page": 26,
+      "rectPoints": [
+        90,
+        240,
+        524,
+        749
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p03-q1a-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Section A Q1(a)",
+    "description": "The printed question as the paper sets it. A demand curve headed DEMAND FOR FACE MASKS, the vertical axis PRICE IN EURO € from 0 to 7 and the horizontal axis QUANTITY DEMANDED from 0 to 20. A red line falls from €6 at quantity 2 to €1 at quantity 20, with red dots marking €5 at quantity 4 and €4 at quantity 8. The printed text reads: Question 1 (a) Using an appropriate formula, calculate the price elasticity of demand depicted in the graph below where the original price of the packet of face masks is €4 and then increases to €5. Show all calculations. 0 1 2 3 4 5 6 7 0 2 4 6 8 10 12 14 16 18 20 PRICE IN EURO € QUANTITY DEMANDED DEMAND FOR FACE MASKS",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 3,
+      "rectPoints": [
+        52,
+        124,
+        545,
+        368
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p03-q1-graph.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Section A Q1",
+    "description": "A demand curve headed DEMAND FOR FACE MASKS, the vertical axis PRICE IN EURO € from 0 to 7 and the horizontal axis QUANTITY DEMANDED from 0 to 20. A red line falls from €6 at quantity 2 to €1 at quantity 20, with red dots marking €5 at quantity 4 and €4 at quantity 8.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 3,
+      "rectPoints": [
+        54,
+        186,
+        539,
+        367
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p04-q2-infographic.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Section A Q2",
+    "description": "A CSO infographic headed Quarterly National Accounts Q2 2021. Down the left: GNP up 6.7%, GDP up 6.3% (€109.4bn) and MDD up 8.4%. Panels with growth figures: Industry excl. Construction 3.6%, Construction 22.9%, Distribution, Transport, Hotels & Restaurants 0.7%, Information & Comm. 6.2%, Financial & Insurance Activities 2.4%, Professional, Admin. & Support Services 4.1%, Personal Consumption 12.6%, Government Expenditure 0.9%, Investment 5.8%, Exports 6.4%, Imports 5.4%. Footnote: % growth Q2 2021 vs Q1 2021. Source www.cso.ie.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        52,
+        91,
+        545,
+        314
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p06-q4a-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Section A Q4(a)",
+    "description": "The printed question as the paper sets it. A three-row table with a green header row reading Injection | Leakage. The statements are: 1. 'The Irish government increases public sector salaries by 1% in 2023.' 2. 'Irish exports increase to record €160bn despite the Covid-19 Pandemic.' 3. 'Irish consumers saved more than €10bn in the first quarter of 2021.' The Injection and Leakage columns are empty tick boxes. The printed text reads: (a) Categorise each of the following as either an injection, or a leakage from the circular flow of income. Injection Leakage 1. The Irish government increases public sector salaries by 1% in 2023. 2. Irish exports increase to record €160bn despite the Covid-19 Pandemic. 3. Irish consumers saved more than €10bn in the first quarter of 2021.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        52,
+        72,
+        545,
+        216
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p13-q10-data.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Section A Q10",
+    "description": "Left, a production possibility schedule with columns Doritos million (kg) and Tropicana million (l): A 0 and 90; B 20 and 80; C 38 and 70; D 50 and 62 (in red); E 60 and 55; F 70 and 48; G 80 and 35; H 90 and 0 (in red). Right, a chart headed PepsiCo Production Possibility Frontier (PPF), the vertical axis Tropicana Litres (Millions) from 0 to 100 and the horizontal axis Doritos Kilograms (Millions) from 0 to 100. The frontier runs through points A to H, with D and H marked, and a green point X sits inside the frontier at 20, 20.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        54,
+        154,
+        537,
+        328
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p14-q11-infographic.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Q11",
+    "description": "An RTB infographic headed Highest and lowest standardised average rents Q2 2021. By county: Dublin €1,848 per month and Donegal €677 per month. By LEA: Ballymote, Tobercurry Co. Sligo €645 per month and Stillorgan LEA, Co. Dublin €2,440 per month. A map headed Rents in cities Q2 2021: Galway City €1,355, Dublin City €1,775, Limerick City €1,196, Cork City €1,344, Waterford City €969. Source www.rtb.ie.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 14,
+      "rectPoints": [
+        52,
+        174,
+        545,
+        417
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p18-q12-charts.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Q12(a)",
+    "description": "Two pie charts. Left, MARKET SHARE OF DOMESTIC ELECTRICITY SUPPLIERS IN IRELAND 2005: one solid circle, ESB (Now Electric Ireland), captioned HHI in 2005 was 10,000. Right, the same heading for 2019: Electric Ireland (Formerly ESB) 53%, Bord Gáis Energy 16%, SSE Airtricity 12%, Energia 8%, PrePayPower 7%, Panda 2%, Pinergy 1%, Others 1%, captioned HHI in 2019 was 3,328. Source: Adapted from Statista.com.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 18,
+      "rectPoints": [
+        52,
+        103,
+        545,
+        351
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p22-q13-infographic.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Q13",
+    "description": "The CSO infographic Government Income & Expenditure 2020, shown as two euro coins. Sources of Income (per euro): Taxes 74c, PRSI 19c, Fees for Services 5c, Other Income 2c. Areas of Expenditure (per euro): Social Benefits 37c, Pay 24c, Goods and Services 14c, Capital Assets 9c, Subsidies 6c, Interest 4c, Grants and Other Payments 4c, Payments to the EU 2c. Source www.cso.ie.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 22,
+      "rectPoints": [
+        52,
+        103,
+        545,
+        322
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p26-q14aii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Q14(a)(ii)",
+    "description": "The printed question as the paper sets it. A four-column table with a green header reading Building Expense | Fixed Cost | Variable Cost | Explanation. Three rows name the expenses: Bags of Cement, Carpenters (Labour), and Purchase price of a construction site. The Fixed Cost, Variable Cost and Explanation cells are all blank for the student. The printed text reads: (ii) Choose by means of a tick (✓) which type of cost best describes each of the following. Explain your choice. Building Expense Fixed Cost Variable Cost Explanation Bags of Cement Carpenters (Labour) Purchase price of a construction site",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 26,
+      "rectPoints": [
+        52,
+        361,
+        545,
+        709
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p27-q14b-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Q14(b)",
+    "description": "The printed question as the paper sets it. A costs table for a housebuilder with columns Units of Housing, Fixed Cost (€), Variable Cost (€), Total Cost (€), Average Total Cost (€) and Marginal Cost (€). Row 1: 100,000; 260,000; A; 360,000; -. Row 2: 100,000; 300,000; 400,000; B; 40,000. Row 3: 100,000; 350,000; 450,000; 150,000; C. Row 4: 100,000; 405,000; 505,000; 126,250; 55,000. Below it a Calculations box for A, B and C, each with an Answer line. The printed text reads: (b) The figures below represent the costs of building an average 3-bedroom semi-detached house in rural Ireland. Adapted from scsi.ie (i) Calculate the missing figures for A, B, and C in the table below. Calculations: A: B: C: Answer: Answer: Answer: (ii) Using the figures obtained in the table above draw and label: the Fixed Costs, Variable Costs, and Total Costs on the graph paper below. Units of Housing Fixed Cost (€) Variable Cost (€) Total Cost (€) Average Total Cost (€) Marginal Cost (€) 1 100,000 260,000 A 360,000 - 2 100,000 300,000 400,000 B 40,000 3 100,000 350,000 450,000 150,000 C 4 100,000 405,000 505,000 126,250 55,000",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 27,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        382
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p28-q14c-chart.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Q14(c)",
+    "description": "A horizontal bar chart headed Gender Pay Gap: How much less do women earn than men? Estonia 21.7, Germany 19.2, Denmark 14, Ireland 11.3, Luxemburg 1.3. Source: Adapted from Eurostat.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 28,
+      "rectPoints": [
+        116,
+        300,
+        545,
+        558
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p30-q15a-chart.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Q15(a)",
+    "description": "A line chart headed Evolution of Irish Milk Production, the vertical axis Million litres from 2,000 to 9,000 and the horizontal axis 1975 to 2020. The line rises from about 3,200 in 1975 to about 5,500 in the mid-1980s, stays near 5,000 until about 2010, then climbs steeply to the annotated 2020 estimate 8.3bn litres. Arrows mark 1973 Ireland Joined the EEC, 1984 Introduction of milk quotas and 2015 Removal of milk quotas. Source: CSO.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 30,
+      "rectPoints": [
+        52,
+        87,
+        545,
+        318
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p31-q15aiii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Q15(a)(iii)",
+    "description": "The printed question as the paper sets it. The blank market diagram printed in the answer space: an unlabelled vertical axis and an unlabelled horizontal axis, each ending in an arrowhead, with one downward-sloping straight line and one upward-sloping straight line crossing near the centre. Neither axis nor either line carries a label, and no equilibrium price or quantity is marked - the candidate labels the diagram and adds the shift. The printed text reads: (iii) Grant aid of €395m was provided to Irish farmers to improve and/or build a specific range of farm buildings or purchase equipment that may benefit their farm business e.g. milking machines. Adapted from www.agriland.ie Explain, with the use of a fully labelled diagram below, how this grant aid will have impacted on the equilibrium price and quantity of milk.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 31,
+      "rectPoints": [
+        52,
+        70,
+        545,
+        421
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p32-q15b-chart.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Q15(b)",
+    "description": "A line chart headed Euro (€) to Pound Sterling (£) exchange rate, the vertical axis €/£ EXCHANGE RATE from 0.5 to 0.95 and the horizontal axis Dec-12 to Dec-21. The line is about 0.81 in December 2012, 0.83 in 2013, 0.78 in 2014, 0.74 in 2015, 0.85 in 2016, 0.89 in 2017, 0.90 in 2018, 0.85 in 2019, 0.89 in 2020 and 0.86 in 2021. Source: Adapted from ecb.europa.eu.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 32,
+      "rectPoints": [
+        52,
+        104,
+        545,
+        316
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-HL-paper-p33-q15c-chart.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 HL Q15(c)",
+    "description": "A column chart headed Net Beneficiaries from the EU budget, by member state (2018, in million euros), the vertical axis Net benefit in € millions from -20000 to 15000. Below zero (net contributors): Germany about -17,000, France about -7,500, Italy about -6,600, Sweden about -2,000, Ireland about -500. Above zero (net beneficiaries): Spain about 400, Croatia about 600, Luxembourg about 1,600, Hungary about 5,000, Poland about 11,500. Source: Adapted from www.statista.com.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034ALP000EV.pdf",
+      "page": 33,
+      "rectPoints": [
+        52,
+        310,
+        545,
+        599
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p03-q1-infographic.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Section A Q1",
+    "description": "A Central Bank of Ireland infographic headed Forecast growth* in Irish economy, with a map of Ireland and four columns: 2020 -4.9%, 2021 5.5%, 2022 7.1% and 2023 4.1%. Footnote: *Modified domestic demand. Source www.centralbank.ie.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 3,
+      "rectPoints": [
+        118,
+        141,
+        530,
+        347
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p05-q4-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Section A Q4",
+    "description": "The printed question as the paper sets it. A table headed Substitute Goods and Complementary Goods with blank tick columns for Samsung S21, iPhone 13 case, iPhone charging plug and Google Pixel 4A smartphone. The printed text reads: Question 4 Apple released the iPhone 13 in September 2021. In the table below, identify by placing a tick (✓ ) which two items are substitute goods and which two items are complementary goods for the iPhone 13. Substitute Goods Complementary Goods Samsung S21 iPhone 13 case iPhone charging plug Google Pixel 4A smartphone",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        52,
+        70,
+        545,
+        254
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p07-q7aii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Section A Q7(a)(ii)",
+    "description": "The printed question as the paper sets it. A table headed Fixed Cost and Variable Cost with blank tick columns for Wages €1,000, Raw materials €1,500, Light & heat €300 and Rent of the premises €750. The printed text reads: (ii) Indicate by means of a tick ( ✓) which of the costs in the table below are fixed costs and which costs are variable costs. Fixed Cost Variable Cost Wages €1,000 Raw materials €1,500 Light & heat €300 Rent of the premises €750",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        52,
+        245,
+        545,
+        373
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p07-q7b-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Section A Q7(b)",
+    "description": "The printed question as the paper sets it. The cost table from part (a): Wages €1,000, Raw materials €1,500, Light & heat €300 and Rent of the premises €750, under the headings Fixed Cost and Variable Cost, then the OR and part (b). The printed text reads: Fixed Cost Variable Cost Wages €1,000 Raw materials €1,500 Light & heat €300 Rent of the premises €750 OR (b) A bakery receives €5,000 in total from its sales in a week. The table above shows the costs of production for the bakery for the week. Using the information provided calculate the following: (i) The total cost of operating the bakery for the week. (ii) The net profit the bakery earned in the week. Show your workings.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        52,
+        288,
+        545,
+        550
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p08-q9i-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Section A Q9(i)",
+    "description": "The printed question as the paper sets it. The PED formula printed beside the stem: change in Q over change in P, multiplied by P1 + P2 over Q1 + Q2. The printed text reads: Question 9 The price of an iPad falls from €750 to €500. As a result, weekly sales of the iPad increase from 30,000 units to 45,000 units. ∆Q X P1 + P2 ∆P Q1 + Q2 (i) Using the formula above, complete the workings to calculate the Price Elasticity of Demand (PED) for these iPads.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 8,
+      "rectPoints": [
+        52,
+        415,
+        545,
+        523
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p09-q10-chart.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Section A Q10",
+    "description": "A column chart headed General Government Debt - interest paid/forecasted, the vertical axis € billions from 0.00 to 6.00. 2018 5.32, 2019 4.62, 2020 3.83, 2021 3.30, 2022 3.40, 2023 3.58, 2024 3.51. Source: Adapted from ntma.ie.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 9,
+      "rectPoints": [
+        112,
+        118,
+        541,
+        344
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p11-q11b-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Q11(b)",
+    "description": "A cost-and-revenue diagram for a firm in monopoly with Quantity on the horizontal axis and the vertical axis numbered 1. Two downward-sloping straight lines: the flatter one labelled AR and a steeper one numbered 3. Two U-shaped curves: one labelled AC and a steeper one numbered 2, which cuts the line numbered 3 at a large dot marked G.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 11,
+      "rectPoints": [
+        106,
+        236,
+        510,
+        534
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p11-q11bii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Q11(b)(ii)",
+    "description": "The printed question as the paper sets it. A three-row answer table numbered 1 to 3, then a cost-and-revenue diagram for a firm in monopoly with Quantity on the horizontal axis and the vertical axis numbered 1. Two downward-sloping straight lines: the flatter one labelled AR and a steeper one numbered 3. Two U-shaped curves: one labelled AC and a steeper one numbered 2, which cuts the line numbered 3 at a large dot marked G. The printed text reads: (b) If Netflix were to buy out (take over) all the other streaming services in the US it would form a monopoly market structure. The diagram below shows a firm operating under conditions of monopoly. (i) Write out in full what each of the three numbered items (1-3) in the diagram below represent. (Do not use the abbreviations) 1. 2. 3. (ii) Equilibrium occurs at the point G on the diagram above. Clearly show and label on the above diagram: • The output the firm will produce in equilibrium (use label Q1) • The price the firm will charge for its output (use label P1) • The average cost of producing this output (use point C1) 1 2 3 G Quantity AC AR",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 11,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        672
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p13-q12a-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Q12(a)",
+    "description": "The printed question as the paper sets it. A schedule: Price €9, 10,000 demanded, 50,000 supplied; €8, 20,000 and 40,000; €7, 30,000 and 30,000; €6, 40,000 and 20,000; €5, 50,000 and 10,000. Below the instructions, a blank graph headed Demand and Supply Curves Reusable Coffee Cups, Price € from 4 to 10 on the vertical axis and Units (000’s) from 0 to 60 on the horizontal. The printed text reads: Question 12 The information below represents the market demand and supply schedules for reusable coffee cups. Price (€) Quantity Demanded (Units) Quantity Supplied (Units) 9 10,000 50,000 8 20,000 40,000 7 30,000 30,000 6 40,000 20,000 5 50,000 10,000 Using the above information and on one diagram on the graph below (the horizontal and vertical axes have been completed for your benefit): (a) (i) Draw and label the market demand curve for reusable coffee cups. (ii) Draw and label the market supply curve for reusable coffee cups. (iii) Show on your diagram:  The market equilibrium price for reusable coffee cups (use P1)  The market equilibrium quantity for reusable coffee cups (use Q1). 4 5 6 7 8 9 10 0 10 20 30 40 50 60 Price € Units (000's) Demand and Supply Curves Reusable Coffee Cups",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        678
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p14-q12b-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Q12(b)",
+    "description": "A demand and supply diagram for Gym + Coffee clothing: Price on the vertical axis and Quantity on the horizontal, a downward-sloping line D and an upward-sloping line S crossing at a dot, with dotted lines to P1 on the price axis and Q1 on the quantity axis.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 14,
+      "rectPoints": [
+        92,
+        74,
+        446,
+        310
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p14-q12b-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Q12(b)",
+    "description": "The printed question as the paper sets it. A demand and supply diagram: Price on the vertical axis and Quantity on the horizontal, a downward-sloping line D and an upward-sloping line S crossing at a dot, with dotted lines to P1 on the price axis and Q1 on the quantity axis. The printed text reads: (b) The diagram below shows the demand and supply curves for Gym + Coffee clothing. (i) If a celebrity was featured on a social media platform (TikTok) wearing Gym + Coffee clothing how might this effect the demand for Gym + Coffee clothing? (ii) Show, on the above diagram how the change in (i) above might affect the demand curve. (iii) Show, on the above diagram, the new equilibrium price (P2) and the new equilibrium quantity (Q2) as a result of (ii) above. S D",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 14,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        568
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p16-q13-chart.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Q13(a)",
+    "description": "A pie chart headed Total Government Expenditure: €82.92 Billion, with Current €71.82 Billion and Capital €11.1 Billion. Source: Adapted from gov.ie.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 16,
+      "rectPoints": [
+        52,
+        105,
+        545,
+        338
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p16-q13ai-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Q13(a)(i)",
+    "description": "The printed question as the paper sets it. A pie chart headed Total Government Expenditure: €82.92 Billion, with Current €71.82 Billion and Capital €11.1 Billion. Source: Adapted from gov.ie. The printed text reads: Question 13 The pie chart below gives the forecasted government current and capital expenditure for 2022. Adapted from gov.ie (a) (i) Calculate current expenditure as a percentage of total government expenditure. Show your workings. €71.82 Billion €11.1 Billion Total Government Expenditure: €82.92 Billion Current Capital",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 16,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        373
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p17-q13bii-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Q13(b)(ii)",
+    "description": "The printed question as the paper sets it. The multiplier formula printed as a fraction: 1 over MPS + MPM. The printed text reads: (ii) The multiplier formula for an open economy is: 𝟏 𝐌𝐏𝐒+ 𝐌𝐏𝐌 Assume that MPS is 0.1 and MPM is 0.4. Calculate, using the above formula, the size of the multiplier.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 17,
+      "rectPoints": [
+        52,
+        207,
+        545,
+        300
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p19-q14ai-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Q14(a)(i)",
+    "description": "The printed question as the paper sets it. A four-row table headed Factor of Production, Explanation and Example. Row 1 Land, row 2 blank with the example Workers, row 3 Capital, and row 4 blank with the explanation ‘Takes a risk with an idea in setting up a business in return for profit.’ The other cells are blank. The printed text reads: Question 14 For three decades the Cleary family have been producing Glenisk Organic Yogurt in Co. Offaly. Adapted from glenisk.com (a) (i) Complete the table below to show your understanding of the factors of production used in the production of yogurt. Some of the information has been completed for you. Factor of Production Explanation Example 1. Land 2. Workers 3. Capital 4. Takes a risk with an idea in setting up a business in return for profit.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 19,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        701
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p22-q15a-chart.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Q15(a)",
+    "description": "A line chart headed Corporation Tax Receipts, the vertical axis € millions from 0 to 14,000 and the horizontal axis 2011 to 2020. The line rises from about 3,500 in 2011 to about 4,200 in 2012 and 2013 and 4,600 in 2014, about 6,900 in 2015, 7,300 in 2016, 8,200 in 2017, 10,400 in 2018, 10,900 in 2019 and about 11,800 in 2020. Source: Adapted from revenue.ie.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 22,
+      "rectPoints": [
+        52,
+        94,
+        545,
+        325
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2022-OL-paper-p24-q15c-chart.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2022 OL Q15(c)",
+    "description": "A column chart headed Exports from Ireland to the US and the UK, € Billions from 0 to 6, January to December 2021. US exports run between about 3.6 and 4.6 billion most months, peaking at about 5.7 in October and 5 in November and ending at about 4.1 in December. UK exports run between about 1.1 and 2.0 billion, highest in November. Source: Adapted from the cso.ie.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2022/LC034GLP000EV.pdf",
+      "page": 24,
+      "rectPoints": [
+        52,
+        92,
+        545,
+        296
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-HL-paper-p04-q2-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2021 HL Section A Q2",
+    "description": "The printed question as the paper sets it. A four-row table headed Statement, Positive Statement and Normative Statement, with the two tick columns blank. The printed text reads: Question 2 Select, using a tick (✓) whether each of the following statements are normative statements or positive statements. Statement Positive Statement Normative Statement If the Irish government increase jobseeker’s allowance by 5% in the 2022 budget, unemployment in Ireland will increase by at least 2% by 2023. We have to do more for the less well off in society. The government should have increased unemployment benefit by more than €0.10 this year. Sales of new cars in Ireland decreased during 2020.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2021/LC034ALP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        276
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-HL-paper-p04-q3-chart.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2021 HL Section A Q3",
+    "description": "A column chart headed Netlfix Subscription per month (US $), the vertical axis US dollars $ from 0 to 15 and the horizontal axis Country. Switzerland about 12.4, Ireland about 8.8, Australia about 5.9, Denmark about 11.6 and Rwanda about 8.0.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2021/LC034ALP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        108,
+        362,
+        462,
+        527
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-HL-paper-p12-q8-ratios.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2021 HL Section A Q8",
+    "description": "The ratios printed as fractions: MUx over Px = 2500 over 200 = MUy over Py = 1250 over 100 = MUz over Pz = 75 over ?.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2021/LC034ALP000EV.pdf",
+      "page": 12,
+      "rectPoints": [
+        130,
+        100,
+        420,
+        143
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-HL-paper-p22-q13a-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2021 HL Q13(a)",
+    "description": "The printed question as the paper sets it. A blank diagram box holding only two axes and a vertical line rising from the horizontal axis, with no labels. The printed text reads: Question 13 Shortages of the PlayStation 5 Gaming Consoles (PS5) was a nightmare for many consumers in the lead up to Christmas 2020. Adapted from Forbes (a) (i) Complete the diagram below to indicate how excess demand is occurring in this market. (*Note: The retail price for a PlayStation 5 Gaming Console was €500) (ii) From your diagram above, explain how excess demand occurs.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2021/LC034ALP000EV.pdf",
+      "page": 22,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        496
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-HL-scheme-p22-q13ai-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2021 HL Q13(a)(i)",
+    "description": "The marking scheme’s completed diagram: Price/€ on the vertical axis and Quantity on the horizontal. A vertical supply line S1 stands at QE; a downward-sloping demand line D1 cuts it at the equilibrium price P1. A dashed line at €500, below P1, meets D1 at QX, to the right of QE, and a brace under the axis from QE to QX is labelled Excess Demand. Beneath it a table reads: 1 mark for each of the following correctly labelled points = 8 marks: Price, Quantity, QE, QX, D1, S1, P = €500, Excess Demand from QE to QX.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2021/LC034ALP000EV.pdf",
+      "page": 22,
+      "rectPoints": [
+        100,
+        196,
+        510,
+        512
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-HL-scheme-p24-q13ci-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2021 HL Q13(c)(i)",
+    "description": "The marking scheme’s working set as fractions: +5000 over −35, multiplied by 160 + 125 (285) over 10,000 + 15,000 (25,000), equals −1.63.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2021/LC034ALP000EV.pdf",
+      "page": 24,
+      "rectPoints": [
+        150,
+        450,
+        430,
+        488
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-HL-scheme-p30-q15cii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2021 HL Q15(c)(ii)",
+    "description": "The marking scheme’s working in two columns. Left: 1 over (1 − MPC) + MPM + MPT, then 1 over (1 − 0.65) + 0.25 + 0.10, Multiplier = 1.43. Right: MPS = 1 − 0.65 = 0.35, then 1 over MPS + MPM + MPT, then 1 over 0.35 + 0.25 + 0.10, Multiplier = 1.43.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2021/LC034ALP000EV.pdf",
+      "page": 30,
+      "rectPoints": [
+        66,
+        626,
+        510,
+        781
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-OL-paper-p04-q2-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2021 OL Section A Q2",
+    "description": "The printed question as the paper sets it. A two-row table headed Statement, Positive and Normative, with the two tick columns blank. The printed text reads: Question 2 Study the statements below and indicate by placing a tick (✓) in the correct box which is a positive statement and which is a normative statement. Statement Positive Normative 1. In 2022 exports in Ireland will grow by 10% due to Brexit. 2. Increased government expenditure on drug abuse will reduce the number of deaths.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2021/LC034GLP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        193
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-OL-paper-p04-q3-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2021 OL Section A Q3",
+    "description": "The printed question as the paper sets it. The PED formula printed as two fractions, change in Q over change in P multiplied by P1 + P2 over Q1 + Q2, then a table with columns Units Purchased and Price (€): before the carbon tax increase 1000 litres at 800, after it 750 litres at 850, and the changes −250 litres and + 50. A Workings box and an Answer line follow, then part (ii). The printed text reads: Question 3 (i) Using the formula supplied, calculate the consumers price elasticity of demand when the price of Kerosene (home fuel heating oil) changes due to an increase in carbon tax. ∆Q X P1 + P2 ∆P Q1 + Q2 (ii) Indicate if the demand for Kerosene is price elastic or price inelastic. Units Purchased Price (€) Before the carbon tax increase 1000 litres 800 After the carbon tax increase 750 litres 850 Changes ‐250 litres + 50 Workings: Answer:",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2021/LC034GLP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        52,
+        250,
+        545,
+        624
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-OL-paper-p05-q4-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2021 OL Section A Q4",
+    "description": "The printed question as the paper sets it. A utility table for bags of crisps consumed 1 to 4: total utility 10, 25, 38 and 47; marginal utility 10, 15 and two heavily outlined blank boxes. The printed text reads: Question 4 Complete the blank spaces below and answer the question that follows. Show your workings. Bags of Crisps Consumed 1 2 3 4 Total Utility in Units/Util 10 25 38 47 Marginal Utility in Units/Util 10 15 Based on the table above: At what point does the point of diminishing marginal utility set in?",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2021/LC034GLP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        187
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-OL-paper-p07-q8-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2021 OL Section A Q8",
+    "description": "The printed question as the paper sets it. A diagram with Price on the vertical axis and Quantity on the horizontal and one downward-sloping demand line labelled D. The printed text reads: Question 8 It is predicted that tourism in Ireland could drop by up to 80% in Summer 2021. Adapted from The Irish Times Illustrate the impact the above statement could have on the demand curve for coaches/car hire in Ireland using the diagram below. Explain your answer. Price D Quantity",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2021/LC034GLP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        52,
+        340,
+        545,
+        632
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-OL-scheme-p07-q8-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2021 OL Section A Q8",
+    "description": "The marking scheme’s completed diagram: Price on the vertical axis and Quantity on the horizontal. A thin demand line D1 and a thicker line D2 to its left, with arrows pointing left from D1 to D2. At the price P the quantity falls from Q1 on D1 to Q2 on D2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2021/LC034GLP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        110,
+        138,
+        400,
+        312
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-OL-paper-p10-q11-hdi-tables.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2021 OL Q11(a)",
+    "description": "Two one-row tables extracted from the Human Development Index. 2019: rank 3, Ireland, HDI value 0.951, life expectancy at birth 82.1 years, mean years of schooling 12.5. 2020: rank 2, Ireland, HDI value 0.955, life expectancy at birth 82.3 years, mean years of schooling 12.7. Source: Adapted from www.hdr.undp.org.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2021/LC034GLP000EV.pdf",
+      "page": 10,
+      "rectPoints": [
+        52,
+        138,
+        545,
+        433
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2021-OL-paper-p13-q12a-question.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2021 OL Q12(a)",
+    "description": "The printed question as the paper sets it. A cost-and-revenue diagram for a firm in perfect competition: Price on the vertical axis and Quantity on the horizontal, a U-shaped AC curve and a rising MC curve meeting at a dot marked B on a horizontal line labelled D = AR = MR. Below it a table listing the labels MC, AC, AR and MR with blank answer cells, then part (ii) with three bullets. The printed text reads: Question 12 (a) The diagram below represents the long run equilibrium of a firm in Perfect Competition. (i) Write out in full what each of the four labels represent. Label Answer MC AC AR MR (ii) Equilibrium occurs at the point B on the diagram above. Show on the diagram above:  The price the firm will charge for its output (use label P1)  The output the firm will produce in equilibrium (use label Q1)  The average cost of producing this output (use point C1) D",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2021/LC034GLP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        52,
+        55,
+        545,
+        641
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  }
+]

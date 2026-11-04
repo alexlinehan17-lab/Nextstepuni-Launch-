@@ -117,7 +117,7 @@ interface GroundProps {
 }
 
 export const Ground: React.FC<GroundProps> = ({
-  color = COLORS.cream,
+  color = '#FFFFFF',
   size = [12, 12],
   position = [0, -0.05, 0],
 }) => (

@@ -1,0 +1,17 @@
+{
+  "subject": "applied-mathematics",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Applied-Mathematics-Completion-20261007",
+  "branch": "codex/applied-mathematics-bank-atlas-20261007",
+  "sourceHead": "812e0092f732bcfb20126d8f4534e21047d9b085",
+  "snapshotCommit": "30ceda6d4d62211b8702d8c710a01c697e949d19",
+  "snapshotRef": "refs/checkpoints/portable-subjects-20261008/applied-mathematics",
+  "snapshotTree": "925b9d76af86da3b810c2012d67b09350f93484f",
+  "changedPaths": 1534,
+  "capturedLocalFiles": 1550,
+  "capturedLocalBytes": 340240143,
+  "exactFileBytesVerified": true,
+  "handoff": "applied-mathematics.md",
+  "excluded": [],
+  "originalCheckpointCommit": "5113def74f0a925a0fdd6fb52c2996c81184d7dd",
+  "snapshotBase": "d9b168be56e56f3f55ceab652825b19209a1111f"
+}

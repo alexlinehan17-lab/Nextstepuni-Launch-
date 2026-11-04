@@ -1,0 +1,18 @@
+[
+ {"id": "chem-2019-ol-q1-a-i-iii", "ask": "the piece of apparatus labelled X", "answer": "dropping funnel / tap funnel", "figure": true},
+ {"id": "chem-2019-ol-q2-d-ii", "ask": "", "answer": "solution of known concentration", "figure": true},
+ {"id": "chem-2019-ol-q2-f", "ask": "Calculate, in moles per litre, the concentration of the HCl solution.", "answer": "0.11 mol l⁻¹", "solution": true},
+ {"id": "chem-2019-ol-q3-d-i", "ask": "", "answer": "dip rod in salt", "figure": true, "solution": true},
+ {"id": "chem-2019-ol-q4-g", "ask": "Calculate the percentage by mass of zinc in zinc oxide", "answer": "% Zn = 65 ÷ 81 × 100 = 80.2 %"},
+ {"id": "chem-2019-ol-q5-b-ii", "ask": "an oxygen atom.", "answer": "Pairs of electrons or single electrons acceptable", "solution": true},
+ {"id": "chem-2019-ol-q5-c-iv", "ask": "Draw a diagram to show the arrangement of electrons in a water molecule.", "answer": "Exactly 2 bond pairs in valence shell of oxygen", "solution": true},
+ {"id": "chem-2019-ol-q6-b", "ask": "Give the systematic IUPAC names for A, B, C and D.", "answer": "D: benzene", "figure": true},
+ {"id": "chem-2019-ol-q6-e-iii", "ask": "", "answer": "heat middle of test", "figure": true, "solution": true},
+ {"id": "chem-2019-ol-q7-a-i", "ask": "", "answer": "tick once for axes correctly scaled", "figure": true, "solution": true},
+ {"id": "chem-2019-ol-q10-a", "ask": "", "answer": "7 residue", "figure": true},
+ {"id": "chem-2019-ol-q10-b-iii", "ask": "Write the equilibrium constant (Kc) expression for the reaction.", "answer": "numerator correct (3) and denominator correct (3)", "solution": true},
+ {"id": "chem-2019-ol-q10-c-ii", "ask": "What volume does this amount of H₂ occupy at s.t.p.?", "answer": "1.12 litres H₂"},
+ {"id": "chem-2019-ol-q10-c-iii", "ask": "What mass of Ag₂S is formed when 10.8 g of Ag react?", "answer": "0.05 × 248 = 12.4 g Ag₂S"},
+ {"id": "chem-2019-ol-q11-b-after-iii", "ask": "Which one of these gases is chemically unreactive?", "answer": "flammable / explosive / dangerous", "figure": true},
+ {"id": "chem-2019-ol-q11-c-b-iv", "ask": "Why is the recycling of aluminium strongly recommended?", "answer": "to avoid red mud from bauxite", "figure": true}
+]

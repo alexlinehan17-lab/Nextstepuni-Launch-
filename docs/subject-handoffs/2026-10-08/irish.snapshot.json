@@ -1,0 +1,17 @@
+{
+  "subject": "irish",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Irish-Completion-20261007",
+  "branch": "codex/irish-corpus-completion-20261007",
+  "sourceHead": "7bd1e9fbc5b39e62e982435169e298813c83ccbb",
+  "snapshotCommit": "5784f892d5e83ddf5cd34d2bd916926fb9f86a4f",
+  "snapshotRef": "refs/checkpoints/portable-subjects-20261008/irish",
+  "snapshotTree": "6574f4d88309158d37ef4ed0ba77c2988420b609",
+  "changedPaths": 1319,
+  "capturedLocalFiles": 1355,
+  "capturedLocalBytes": 178127198,
+  "exactFileBytesVerified": true,
+  "handoff": "irish.md",
+  "excluded": [],
+  "originalCheckpointCommit": "b56470533cc7ee558aab2e4e5dbaa8fb4968bbad",
+  "snapshotBase": "6082638a098faaecead399b78bf17238a24945fc"
+}

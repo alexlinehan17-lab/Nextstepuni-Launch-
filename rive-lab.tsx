@@ -2,69 +2,56 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Rive Lab — proves the @rive-app/react-canvas runtime end-to-end before
- * Rua's own .riv exists: loads Rive's public demo file (vehicles.riv,
- * state machine "bumpy", trigger "bump"), and previews the layered
- * master SVG (docs/design/rua-master.svg) that gets imported into the
- * Rive editor for rigging. When rua.riv lands in public/assets/rua/,
- * this page is where it gets smoke-tested first.
+ * Starguy Lab — smoke-tests the Rive rig of the website's one character.
+ * Drop the exported file at public/assets/landing/starguy.riv (artboard the
+ * PNG's own proportions, state machine "Traveller", inputs speed 0–100,
+ * land, step) and this page shows it beside the untouched PNG with the
+ * three inputs on sliders. Until the file exists it shows the PNG fallback,
+ * which is exactly what the landing page renders too. Dev only: served by
+ * Vite, ignored by the single-input production build.
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { useRive, useStateMachineInput } from '@rive-app/react-canvas';
+import { useMotionValue } from 'framer-motion';
+import { StarguyFigure, STARGUY_RIV } from './components/landing/starguy/StarguyFigure';
 import './index.css';
 
-const DEMO_RIV = 'https://cdn.rive.app/animations/vehicles.riv';
-
-const DemoCard: React.FC = () => {
-  const { rive, RiveComponent } = useRive({
-    src: DEMO_RIV,
-    stateMachines: 'bumpy',
-    autoplay: true,
-  });
-  const bump = useStateMachineInput(rive, 'bumpy', 'bump');
+const Lab: React.FC = () => {
+  const speed = useMotionValue(0);
+  const lookX = useMotionValue(0);
+  const lookY = useMotionValue(0);
+  const lean = useMotionValue(0);
+  const squash = useMotionValue(0);
+  const [ui, setUi] = useState({ speed: 0, lookX: 0, lookY: 0, lean: 0, squash: 0 });
+  const set = (k: keyof typeof ui, mv: ReturnType<typeof useMotionValue<number>>) => (e: React.ChangeEvent<HTMLInputElement>) => { const v = Number(e.target.value); setUi(u => ({ ...u, [k]: v })); mv.set(v); };
   return (
-    <div style={{ border: '1.5px solid #383838', borderRadius: 16, overflow: 'hidden' }}>
-      <div style={{ height: 300, cursor: 'pointer' }} onClick={() => bump?.fire()}>
-        <RiveComponent style={{ width: '100%', height: '100%' }} />
-      </div>
-      <p style={{ margin: 0, padding: '10px 14px', fontSize: 12.5, color: '#5A5550', borderTop: '1.5px solid #E7E5E4' }}>
-        Rive public demo — state machine <code>bumpy</code>. Click to fire the <code>bump</code> trigger.
-        {rive ? ' Runtime loaded ✓' : ' Loading…'}
+    <div style={{ maxWidth: 960, margin: '0 auto', padding: '48px 24px 120px', background: '#fff', fontFamily: 'DM Sans, sans-serif', color: '#1A1A1A' }}>
+      <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B84A0C' }}>NextStepUni · Starguy Lab</p>
+      <h1 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 34, margin: '6px 0 6px' }}>Starguy, alive</h1>
+      <p style={{ fontSize: 14, color: '#5F5A55', maxWidth: 680, margin: '0 0 28px', lineHeight: 1.5 }}>
+        Left: the PNG as it is. Right: <code>{STARGUY_RIV}</code> through the Rive runtime with the state machine
+        inputs the landing page drives. If the file is missing the right side falls back to the PNG — nothing changes his appearance.
       </p>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+        <div style={{ border: '1.5px solid #1A1A1A', borderRadius: 16, padding: 24 }}>
+          <img src="/assets/landing/starguy.png" alt="Starguy, the PNG" style={{ width: 240, height: 'auto', display: 'block', margin: '0 auto' }} />
+          <p style={{ margin: '14px 0 0', fontSize: 12.5, color: '#5F5A55', textAlign: 'center' }}>The drawing. It does not change.</p>
+        </div>
+        <div style={{ border: '1.5px solid #1A1A1A', borderRadius: 16, padding: 24 }}>
+          <div style={{ width: 240, margin: '0 auto' }}><StarguyFigure speed={speed} lookX={lookX} lookY={lookY} lean={lean} squash={squash} /></div>
+          <p style={{ margin: '14px 0 0', fontSize: 12.5, color: '#5F5A55', textAlign: 'center' }}>The rig, or the PNG until it lands.</p>
+        </div>
+      </div>
+      <div style={{ marginTop: 28, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 20, fontSize: 13 }}>
+        <label>speed · {ui.speed}<br /><input type="range" min={0} max={100} value={ui.speed} onChange={set('speed', speed)} style={{ width: '100%' }} /></label>
+        <label>look X · {ui.lookX}<br /><input type="range" min={-1} max={1} step={0.05} value={ui.lookX} onChange={set('lookX', lookX)} style={{ width: '100%' }} /></label>
+        <label>look Y · {ui.lookY}<br /><input type="range" min={-1} max={1} step={0.05} value={ui.lookY} onChange={set('lookY', lookY)} style={{ width: '100%' }} /></label>
+        <label>lean° · {ui.lean}<br /><input type="range" min={-8} max={8} step={0.5} value={ui.lean} onChange={set('lean', lean)} style={{ width: '100%' }} /></label>
+        <label>squash · {ui.squash}<br /><input type="range" min={-1} max={1} step={0.05} value={ui.squash} onChange={set('squash', squash)} style={{ width: '100%' }} /></label>
+      </div>
     </div>
   );
 };
 
-const Lab: React.FC = () => (
-  <div style={{ maxWidth: 960, margin: '0 auto', padding: '48px 24px 120px', background: '#fff', fontFamily: 'DM Sans, sans-serif' }}>
-    <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#A0968D' }}>NextStepUni · Rive Lab</p>
-    <h1 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 34, margin: '6px 0 6px', color: '#1A1A1A' }}>Rua goes interactive</h1>
-    <p style={{ fontSize: 14, color: '#5A5550', maxWidth: 680, margin: '0 0 28px' }}>
-      Left: the Rive runtime running a public demo file with a live state machine — the exact
-      wiring Rua will use. Right: the layered master SVG that gets imported into the Rive editor
-      for rigging (each part is a named group).
-    </p>
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
-      <DemoCard />
-      <div style={{ border: '1.5px solid #383838', borderRadius: 16, overflow: 'hidden' }}>
-        <img src="/docs/design/rua-master.svg" alt="Rua master vector" style={{ width: '100%', height: 300, objectFit: 'contain', display: 'block' }} />
-        <p style={{ margin: 0, padding: '10px 14px', fontSize: 12.5, color: '#5A5550', borderTop: '1.5px solid #E7E5E4' }}>
-          rua-master.svg — rig-ready layers: tail, wings, legs, body, head, bib, belly, beak, eyes (sclera/pupil/spark/lid).
-        </p>
-      </div>
-    </div>
-    <h2 style={{ fontFamily: "'Source Serif 4', Georgia, serif", fontSize: 20, margin: '36px 0 8px', color: '#1A1A1A' }}>Planned state machine</h2>
-    <p style={{ fontSize: 13.5, color: '#5A5550', maxWidth: 680, margin: 0, lineHeight: 1.6 }}>
-      One artboard, one state machine (<code>rua</code>): an <em>idle</em> loop (breath + blink every few
-      seconds) as the default state; triggers <code>wave</code>, <code>cheer</code>, <code>point</code> that
-      play once and return to idle; booleans <code>rest</code> (settles her into sleep) and{' '}
-      <code>read</code>; a number input <code>look</code> (−1..1) panning the pupils. The component keeps
-      today's pose API and maps poses onto these inputs.
-    </p>
-  </div>
-);
-
-const root = document.getElementById('root');
-if (root) createRoot(root).render(<Lab />);
+createRoot(document.getElementById('root')!).render(<React.StrictMode><Lab /></React.StrictMode>);

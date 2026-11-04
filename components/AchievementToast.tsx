@@ -6,6 +6,7 @@
 import React, { useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
+import { AchievementBadge } from './AchievementGallery';
 import { type AchievementDefinition } from '../gamificationConfig';
 
 interface AchievementToastProps {
@@ -59,16 +60,19 @@ const AchievementToast: React.FC<AchievementToastProps> = ({ achievement, onDism
               )}
             </div>
             <div className="mx-4 h-px bg-[#ECE8E2] dark:bg-zinc-800" />
-            <div className="px-4 pt-2.5 pb-3.5">
+            <div className="flex items-center gap-4 px-4 pt-2.5 pb-3.5">
+              <AchievementBadge achievementId={achievement.id} size={52} />
+              <div className="min-w-0">
               <p
                 className="truncate text-[17px] font-semibold leading-tight text-[#1A1A1A] dark:text-zinc-50"
-                style={{ fontFamily: "'Source Serif 4', serif" }}
+                style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
                 {achievement.title}
               </p>
               <p className="mt-1 text-[10px] font-medium text-zinc-400 dark:text-zinc-500">
                 Added to My Progress
               </p>
+              </div>
             </div>
           </button>
         </MotionDiv>

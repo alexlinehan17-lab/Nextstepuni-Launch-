@@ -52,45 +52,244 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
 import reconcile as R                                       # noqa: E402
 from paper_census import census_subject                     # noqa: E402
-from lib import Author, Refused                             # noqa: E402
+# COMMAND_WORD lives in lib because lib decides the same question there -- a
+# part that does not open with one cannot stand on its own and takes the cue
+# printed above it. Two copies of one rule drift; this is the one copy.
+from lib import (Author, Refused, COMMAND_WORD,          # noqa: E402
+                 LABELLED_POINT)
+
 from eng_scheme import EngScheme                            # noqa: E402
 from eng_topics import topic_for, concept_for               # noqa: E402
 import cardlint                                             # noqa: E402
 
 MAX_ROWS = 12
+
+# Parts whose printed text Paper.suspect() flags and a person has since opened
+# the page for. lib.card refuses a flagged part unless it is handed checked=,
+# and the string it is handed has to be an OBSERVATION about the page, not a
+# reassurance -- so each entry below says what was actually seen and where.
+#
+# Keyed by (year, level) plus the key the card is CITED at, which is not always
+# the census leaf: a part that resolves up to the letter is flagged on the
+# letter's own text.
+#
+# Sittings are owned one agent to two, so keep each sitting's block together
+# and in order -- five people merge this file.
+CHECKED = {
+    # ---- 2021 Higher Level, paper page 4 ------------------------------------
+    # Q2(b) opens with two lines about the National Transport Authority's bus
+    # order and closes "Explain each of the following types of hybrid vehicle
+    # technology:", with the three types printed under it one per line. (i) and
+    # (ii) close on semicolons because the list runs on; (iii) closes on a full
+    # stop and is not flagged at all, which is the same list read by the same
+    # reader. The scheme prices all three in turn -- 4, 3, 3.
+    (2021, 'hl', 2, 'b', 'i'):
+        'page 4, first line of Q2(b)\'s list: "Full hybrid;" under the cue '
+        'ending "Explain each of the following types of hybrid vehicle '
+        'technology:", with (ii) and (iii) printed beneath it',
+    (2021, 'hl', 2, 'b', 'ii'):
+        'page 4, second line of that list: "Mild hybrid;" with '
+        '"(iii) Plug-in hybrid." printed beneath it',
+    # ---- 2021 Higher Level, paper pages 5, 6 and 7 --------------------------
+    # Questions 3, 4 and 5 each set a part (c) or (a) as one instruction over
+    # a printed list: "Select any two from (i), (ii) or (iii) below and explain
+    # the difference between the terms in each:" and then the three pairs, one
+    # per line, each closing on a SEMICOLON because the list runs on. The
+    # semicolon is what the flag is raised on. Each pair below was read off the
+    # page it is named for, and the cue lib joins on is the sentence printed
+    # immediately above it.
+    (2021, 'hl', 3, 'a', 'i'):
+        'page 5 sets Q3(a) as one instruction over three lines; (i) reads '
+        '"Brinell hardness test and Vickers hardness test;" and its semicolon '
+        'is the list running on to (ii), not a truncation',
+    (2021, 'hl', 3, 'a', 'ii'):
+        'page 5, the second line of the same list: "Yield strength and '
+        'ultimate tensile strength;" with (iii) printed beneath it',
+    (2021, 'hl', 4, 'c', 'i'):
+        'page 6 sets Q4(c) the same way; (i) reads "Optical pyrometer and '
+        'thermocouple pyrometer;" with (ii) and (iii) under it',
+    (2021, 'hl', 5, 'c', 'i'):
+        'page 7 sets Q5(c) the same way; (i) reads "Solid solution alloy and '
+        'partial solubility alloy;" with (ii) and (iii) under it',
+    (2021, 'hl', 5, 'c', 'ii'):
+        'page 7, the second line of that list: "Crystalline and amorphous '
+        'solid structures;" with (iii) printed beneath it',
+    # ---- 2025 Ordinary Level, paper page 3 --------------------------------
+    # Folded in from eng-e5's eng_reviewed/2025-ol.json. Q2(b) is withheld
+    # below at the letter it resolves to, so neither of these is reached
+    # today; they are kept because they are still true of the page, and a
+    # reader that one day prices (b)'s romans on their own will need them.
+    (2025, 'ol', 2, 'b', 'i'):
+        'page 3: (b) reads "Select one of the furnaces labelled at Q2(a) '
+        'above and answer each of the following:" and sets (i), (ii), (iii) '
+        'as one list. (i) and (ii) close on a semicolon because the list runs '
+        'on; (iii) closes on a full stop. Nothing is cut off.',
+    (2025, 'ol', 2, 'b', 'ii'):
+        'page 3: the same list under (b). "Describe how the charge is '
+        'heated;" is the second of its three items and is punctuated as one, '
+        'with (iii) "Name the metal produced." closing it.',
+}
+
+# Parts whose printed picture a person has opened the page for and found
+# DECORATIVE: the ask mentions it, and nothing in the scheme's answer is read
+# off it. The figure gates refuse such a part as pointing at printed matter
+# the card cannot carry; this is the reviewed exception, the same escape card
+# lint's NO_DEPENDENCY gives, and the card id sits in cardlint-reviewed.json
+# beside it so the author and the lint agree. Keyed like CHECKED, by the key
+# the card is CITED at. Folded in from eng-e5's eng_reviewed/ judgements.
+NO_FIGURE = {
+    (2025, 'hl', 1, 'h', None):
+        'page 3 prints a climbing carabiner beside (h), (i) and (j). The ask '
+        'is "Outline two reasons why anodised aluminum is suitable for the '
+        'manufacture of the climbing carabiner shown", and the scheme answers '
+        'it with the properties of the material -- corrosion resistance, '
+        'hardness, resistance to wear, strength-to-weight ratio, colour '
+        'range. Not one of them is read off the photograph.',
+    (2025, 'hl', 5, 'b', 'ii'):
+        '"determine from the diagram" means the diagram the candidate has '
+        'just drawn: (b)(i) on page 7 reads "Draw the equilibrium diagram '
+        'according to the given data and label the liquidus and solidus '
+        'lines", and the data is the table printed above it. The paper prints '
+        'no equilibrium diagram of its own.',
+    (2025, 'ol', 3, 'b', None):
+        'page 4 prints a photograph of a concrete saw with its blade arrowed, '
+        'and the parts under it are "Describe any two of the following '
+        'processes: (i) Annealing, (ii) Tempering, (iii) Quenching." The '
+        'scheme answers all three in general terms -- soaking temperatures, '
+        'cooling rates, effect on the steel -- and names no feature of the '
+        'saw. The photograph sets the scene and answers nothing.',
+    (2025, 'ol', 7, 'a', 'i'):
+        'page 8 prints the Model Off-Road Sand Car with "axle" and "axle '
+        'bracket" arrowed, and the ask names both in its own words: "the type '
+        'of fit required, which allows the axle to rotate inside the axle '
+        'bracket". The scheme answers "Clearance fit", which follows from the '
+        'sentence and not from the photograph.',
+}
+
+# Parts the author CAN build and a person can see are wrong. Worse than an
+# open ask, because a card would teach the error, and so said by name, with
+# what the page shows. Keyed by the key the card would be cited at.
+WITHHELD = {
+    (2023, 'ol', 3, 'd', None):
+        'the paper sets two alternative part (d)s either side of an OR -- "(d) '
+        'Explain any two of the following metal properties: (i) Toughness, '
+        '(ii) Ductility, (iii) Malleability." and then "(d) (i) Describe two '
+        'areas where robotic technology is used in health care. (ii) State '
+        'two ways in which exoskeleton suits can help the recovery process." '
+        'A card at the letter strings both branches\' romans into one list '
+        'under the first branch\'s instruction and prices the result as the '
+        'first branch\'s twelve marks.',
+    (2025, 'hl', 5, 'b', 'ii'):
+        'the ask reads a ratio off the equilibrium diagram the candidate draws '
+        'in (b)(i) from the table on page 7, so the card has to carry that '
+        'table. It reaches the stem prefixed by Question 5(a)\'s figure '
+        'captions -- "Structure A Structure B Structure C % of Zinc in alloy '
+        '10 14 20 ..." -- which the stem gate rightly reads as label soup and '
+        'drops, and the card would then ask for a ratio from data it does not '
+        'show. NO_FIGURE above still stands: no printed diagram is needed.',
+    (2025, 'ol', 3, 'b', None):
+        'page 4 prints the photograph\'s two captions, "blade" and "concrete '
+        'saw", beside option (i), and the paper reader takes them as the rest '
+        'of it, so the card lists "(i) Annealing, blade concrete saw". The '
+        'reader cannot yet tell a caption from prose: eng-e5\'s caption pass '
+        'was not ported, because across the ten papers it rewrites 2021-2024 '
+        'asks and stems too, and it takes the standalone OR printed under the '
+        '2022 and 2023 Ordinary instrument photographs for a caption.',
+    (2025, 'ol', 2, 'b', None):
+        'scheme page 7 answers the three furnaces as three blocks -- "Furnace '
+        'A \u2013 Blast furnace" with its own (i), (ii), (iii), then Furnace B, '
+        'then '
+        'Furnace C -- and prices (i) 3, (ii) 6 and (iii) 3 in the marks column '
+        'beside them. The reader files every furnace\'s (i) under one key and '
+        'lands the "Furnace B" and "Furnace C" headings inside (iii), so a card '
+        'at (b) lists nine answers with no way to tell which furnace each '
+        'belongs to.',
+    (2025, 'ol', 4, 'd', None):
+        'the summary grid prices (d) "One part @ 8 marks (8)", which the author '
+        'reads as one answer worth eight; scheme page 13 heads it "Two safety '
+        'precautions:" and prices it "Award 2 @ 4 Marks" in the marks column. '
+        'A card here offers either precaution alone for the whole eight marks.',
+    (2025, 'ol', 5, 'c', None):
+        'scheme page 16 heads the two precautions "Safety precautions when '
+        'using a 3D printer." -- a heading closed with a full stop, where 2024 '
+        'Ordinary Q5(c) closes the same heading with a colon ("Safety '
+        'precautions when using a strip heater:") -- and the reader takes it '
+        'for the first marking point, so a card here shows the heading as the '
+        'answer.',
+}
+
+# Cards that USED to ship and were withdrawn because they were wrong, with the
+# reason (authoring/withdrawn/engineering.json; see the README beside it). A
+# withdrawn id is never re-emitted: the author refuses to build it rather than
+# leave rebaseline.py and the preservation test to notice a card coming back.
+# Nothing read the file before this: eng-2023-ol-q3-d-ii was listed there on
+# main and shipped regardless. It is no longer listed -- paper.py now carries
+# the paper's own OR between its two branches (TRAILING_OR), which is what the
+# withdrawal was about -- and the card ships under the id it always had.
+WITHDRAWN_PATH = os.path.join(DIR, 'withdrawn', 'engineering.json')
+WITHDRAWN = (json.load(open(WITHDRAWN_PATH, encoding='utf-8'))
+             if os.path.exists(WITHDRAWN_PATH) else {})
+
 # An "ask" that is really one of the options the question lists. It has no
 # sentence in it: "Nylon,", "Full hybrid;", "Ferdinand Porsche", "Basin".
 NOT_AN_ASK = re.compile(r'^[^.?!]{0,40}[,;.]?$')
-# What separates an ask from a list item is not its LENGTH. "Explain the term
-# bioplastic." is 28 characters and is the whole question; "Ferdinand Porsche"
-# is 17 and is one of three names under "Outline the contribution made by each
-# of the following". Refusing everything short refused 256 leaves, among them
-# every short imperative in the subject.
-#
-# The command word is the real signal, and it is DERIVED rather than invented:
-# these are the words that open the 550 census leaves too long to be anything
-# but an ask, minus the stems that came with them ("nominal", "the", "using"),
-# plus sketch/label/indicate, which open one ask each and are imperative in
-# the same way. "Select" is excluded -- it opens "Select any two from the
-# following", which is a lead-in to options rather than an ask.
-COMMAND_WORD = re.compile(
-    r'^(?:briefly|calculate|compare|define|describe|determine|differentiate'
-    r'|discuss|distinguish|draw|explain|give|identify|indicate|label|list'
-    r'|name|outline|sketch|state|suggest)\b', re.I)
+# A marking point that decodes one of the letters printed on the figure.
+# lib's own LABELLED_POINT wants the letter FIRST -- "A = Buttercup" -- and
+# this subject names the thing before it: "Structure A: Body-Centred Cubic
+# (BCC) Structure.", "Defect B - vacancy". The noun is optional so both
+# spellings are read, and the meaning is taken from the scheme's own words.
+ENG_LABEL = re.compile(r'^(?:[A-Za-z]{3,12}\s+)?([A-H])\s*'
+                       r'[=:\u2010\u2013\u2014-]\s*(.+)$')
+# The group total the Ordinary table prints at the end of a multi-line rule.
+TAIL_GROUP_TOTAL = re.compile(r'\s*\(\s*\d{1,3}\s*\)\s*$')
+# One line of such a rule: "Three parts @ 2 marks".
+GROUP_RULE = re.compile(
+    r'\b(one|two|three|four|five|six|seven|eight|nine|ten)\s+'
+    r'(?:[a-z]+s?\s+)?@\s*(\d{1,2})\s*marks?', re.I)
+WORDN = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6,
+         'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10}
 # Printed on the page but not stated by anyone: the running footer, and a
 # heading that INTRODUCES the marking points rather than being one. Both were
 # reaching cards as the whole answer -- "Page 17" for eighteen marks, "A -
 # Vacuum forming:" for ten, "Any two:" for twelve.
+# ... and SIXTY characters, not twenty-eight. A line that ENDS on a colon is a
+# lead-in whatever its length: "Safety features integrated into computerised
+# machines:" is 53 characters and heads the four answers beneath it, and
+# fifteen such headings across the ten sittings were reaching cards as marking
+# points. Every point that ends on a colon and is longer than that is a
+# heading too; the cap is kept only so the pattern cannot swallow a whole
+# paragraph that happens to close on one.
 NOT_A_POINT = re.compile(r'^(?:Page\s+\d+|\d+\s+of\s+\d+)\s*$'
-                         r'|^[^.?!]{0,28}:\s*$', re.I)
+                         r'|^[^.?!]{0,60}:\s*$', re.I)
 # The examiner talking to the examiner rather than stating an answer.
 CREDIT_RULE = re.compile(
-    r'^(?:award|allow|accept|max\b|total\b|note:|any other|or\b'
+    # "Award 3", "Allow 3 marks", "Accept any other valid answer (3)". The
+    # aside is always about MARKS, and requiring it to say so is what separates
+    # it from an answer that happens to open on the same verb: "Allow all pipes
+    # and fittings to cool down before handling." is one of the two safety
+    # precautions 2024 Ordinary Q4(d) is priced for, and "Allows the weld to
+    # cool slower, this improves weld quality" is 2021 Higher Q6(a)(iv)'s.
+    # Four marking points across the subject were being thrown away as
+    # examiner-talk; not one real aside was being caught here, because
+    # parse_tariff and the right-margin rule take those out upstream.
+    r'^(?:(?:award|allow|accept)\b[^.?!]{0,40}?\b(?:\d{1,2}|marks?)\b'
+    r'|max\b|total\b|note:|any other|or\b'
     # A bare "Any three" is the examiner saying how many of the points
     # below to credit, not one of them. It shipped as a card's whole
     # twelve-mark answer.
     r'|any\s+(?:one|two|three|four|five|six|seven|eight|nine|ten|\d+)\s*[:.]?$)',
     re.I)
+
+
+# The paper's own masthead, printed on the back cover and swept into the stem
+# of the last part on it: "Leaving Certificate - Higher Level Engineering -
+# Materials and Technology Thursday 8 June Morning 9:30 - 12:30". Six cards
+# across the corpus carried it as the setup for Question 9(c) -- four of them
+# already shipped -- and it sets nothing up. It is not a stem the reader got
+# wrong; it is the page's own furniture, which is why it comes off here rather
+# than in the reader.
+MASTHEAD = re.compile(r'Leaving Certificate\b.{0,90}?\b(?:Morning|Afternoon)\b',
+                      re.I | re.S)
 
 
 def keeps_stem(stem, figure):
@@ -105,18 +304,65 @@ def keeps_stem(stem, figure):
     following:" closes on its colon, and a run of labels closes on nothing.
     """
     text = ' '.join((stem or '').split())
-    if not text or cardlint.label_junk(text):
+    if not text or cardlint.label_junk(text) or MASTHEAD.search(text):
         return False
     if figure and not re.search(r'[.?!:]$', text):
         return False
     return True
 
 
+def names_the_part(point, ask):
+    """Whether this 'marking point' is the scheme reprinting the ask.
+
+    Two ways it does so, both of them the scheme naming the part rather than
+    answering it. Verbatim -- 2021 OL Q6(b) lists cutting fluids, clearance
+    angle and chuck key as the three things to describe and heads each answer
+    with the same words -- and in PARAPHRASE: the paper asks "Outline the
+    impact of a line defect in the crystal structure of a material" and the
+    scheme heads the answer "The impact of a line defect in crystal
+    structures." Taken as the answer, either shows the student the question
+    again.
+
+    The paraphrase test is that the point brings NOTHING of its own: every
+    content word it has is already in the ask. "The heat treatment process
+    which occurs is annealing." names annealing, which the ask does not, and
+    is the answer; "Name tool A and give one use for this tool." names
+    nothing the ask has not already named.
+    """
+    flat = re.sub(r'[^a-z0-9]', '', point.lower())
+    bare = re.sub(r'[^a-z0-9]', '', ask.lower())
+    if not flat:
+        return True
+    if flat in bare:
+        return True
+    # A number the ask does not print is something of the point's own, and it
+    # is usually the whole answer: 2023 OL Q7(b)(i) asks for the "Largest
+    # diameter of the hole in the copper fitting" and the scheme answers
+    # "Largest diameter of the hole in the copper fitting: 16.03 mm". Every
+    # word of that is the question; the 16.03 is not.
+    if set(re.findall(r'\d+', point)) - set(re.findall(r'\d+', ask)):
+        return False
+    asked = re.findall(r'[a-z]{4,}', ask.lower())
+    mine = re.findall(r'[a-z]{4,}', point.lower())
+    if not mine:
+        return False
+    # Prefix-stemmed, because the SEC pluralises freely between the two
+    # documents: "crystal structure" in the ask, "crystal structures" in the
+    # scheme's restatement of it.
+    stems = {w[:5] for w in asked}
+    return all(w[:5] in stems for w in mine)
+
+
 def looks_like_an_ask(text):
     t = ' '.join((text or '').split())
     if not t:
         return False
-    if len(re.findall(r'[a-z]{3,}', t)) < 4:
+    # Case-INSENSITIVE. A sentence capitalises its first word, so counting
+    # lower-case runs always read one word short, and a four-word ask whose
+    # first word is its command word came out at three: "Explain the term TEU."
+    # was filed as one of the options a question lists rather than the question
+    # it is, and 2024 Higher Q2(b)(i) resolved up to the whole of Question 2.
+    if len(re.findall(r'[A-Za-z]{3,}', t)) < 4:
         return False
     if COMMAND_WORD.match(t):
         return True
@@ -151,7 +397,30 @@ def cardable_indexed(points):
     return out
 
 
-def resolve(S, q, letter, roman):
+def per_roman(S, q, letter, kids):
+    """What ONE roman under this letter is worth, or None if the rule is the
+    letter's own total.
+
+    "Any three parts @ 6 marks" against five romans is a choice among them and
+    each is worth six. A rule naming ONE part against several romans is not:
+    at 2025 Ordinary Q2(b) the one part is the FURNACE the candidate picks,
+    and (i), (ii) and (iii) are answered about it for twelve marks BETWEEN
+    them -- "Select one of the furnaces labelled at Q2(a) above and answer
+    each of the following". Priced as twelve apiece, that question shipped
+    three cards claiming thirty-six marks for a part worth twelve.
+
+    Only a rule naming one part is excluded, because a rule naming three
+    against four romans really is a choice among them, and Ordinary drops the
+    "Any" from it as often as it prints it. (Ported from eng-e5.)
+    """
+    rule = S.rule(q, letter, None)
+    if not rule:
+        return None
+    n, per = rule
+    return None if (n == 1 and kids > 1) else per
+
+
+def resolve(S, q, letter, roman, kids=0):
     """The nearest PRICED key at or above this leaf, and what it covers.
 
     Requiring the points and the tariff at the SAME key found 56 cards in 806
@@ -175,7 +444,7 @@ def resolve(S, q, letter, roman):
     # "shown opposite" refuses the whole part -- 54 of the figure refusals are
     # a parent condemned by one child.
     if roman and letter and not S.tariff(q, letter, roman):
-        parent = S.rule(q, letter, None)
+        parent = per_roman(S, q, letter, kids)
         if parent:
             keep = cardable_indexed(S.points_under(q, letter, roman))
             if keep:
@@ -205,23 +474,85 @@ def holds(points, n):
     Counting the pieces it is punctuated into says whether they are all there,
     and "Material: Rubber" against three materials says they are not.
     """
-    parts = [c for c in re.split(r'[;,:]', ' '.join(points))
+    # ' / ' counts as well, because it is the schemes' own separator for
+    # alternatives -- scheme.py says so and every subject's reader honours it.
+    # 2024 Ordinary Q6(a) asks for three lathe processes, is priced "Any three
+    # parts @ 5 marks (15)", and is answered "Parallel turning / Facing /
+    # Knurling / Drilling / Undercutting / Parting off / Taper turning." on one
+    # line: seven, written as a run. SPACED, so that "and/or" and "kN/mm²" are
+    # not mistaken for a list.
+    # The FULL STOP counts too. The scheme writes 2025 Higher Q4(a)(i)'s two
+    # reasons as two sentences -- "...increase the hardness of the outer
+    # surface while the core remains relatively soft." and "This results in
+    # the plough point having an increased resistance to both fatigue failure
+    # and abrasive wear." -- with no other punctuation between them, so the
+    # prose held both reasons and was read as holding one. It does not weaken
+    # the case the refusal was written for: 2022 Higher Q3(b)(iii) is priced
+    # "2 + 2" for two metals and the scheme gives the single sentence
+    # "Young's Modulus of elasticity for metal B = 60 kN/mm²", which is still
+    # one piece however it is split. (Ported from eng-e5.)
+    run = ' '.join(points)
+    parts = [c for c in re.split(r'[;,:.]|\s/\s', run)
              if re.search(r'[A-Za-z]{3,}', c)]
-    return len(parts) >= n
+    if len(parts) >= n:
+        return True
+    # A LABELLED answer punctuates itself with the letters printed on the
+    # picture rather than with commas: "A = Liquidus line B = Solidus line C =
+    # Eutectoid line" is the three things "2 + 2 + 2" pays for, written as one
+    # run, and split on punctuation it counted as one.
+    return len(re.findall(r'(?<![A-Za-z])[A-H]\s*[=:\u2010\u2013\u2014-]\s*\S',
+                          run)) >= n
 
 
-def rows_for(notation, total, rule, points):
+# A part that says its sub-parts are ALL to be answered, as against a choice
+# among them. 2025 Ordinary Q2(b) reads "Select one of the furnaces labelled
+# at Q2(a) above and answer each of the following:" and is priced "One part @
+# 12 marks" -- the one part is the furnace, and (i), (ii) and (iii) are all
+# answered about it for twelve marks between them. Read as a choice, the card
+# offered "Furnace A - Blast furnace" as one of eleven alternatives each worth
+# the whole twelve. (Ported from eng-e5.)
+ALL_REQUIRED = re.compile(r'\beach of the following\b|\banswer all\b', re.I)
+
+
+def rows_for(notation, total, rule, points, required=False):
     """(row kind, marks per row, tariff model) for a part, or None to refuse."""
     points = points[:MAX_ROWS]
     if rule:
         n, per = rule
+        if required:
+            # The scheme has written out every branch of the choice and the
+            # table prices the branch, not the point. The card shows what the
+            # scheme states and the total the table prints, and divides
+            # nothing between them.
+            return ('point', None, {'kind': 'questionTotal'}, None)
         if n <= len(points):
             return ('anyN', None, {'kind': 'fixed'}, (n, per))
         # Fewer points than parts, but the prose may hold them all.
         if holds(points, n):
             return ('point', None, {'kind': 'questionTotal'}, None)
         return None
-    terms = [int(x) for x in re.findall(r'\d{1,2}', notation or '')]
+    # The Ordinary table states a rule over SEVERAL LINES, and only the last
+    # carries the GROUP TOTAL in brackets: "Three parts @ 3 marks" then "Three
+    # parts @ 2 marks (15)". Read as one more term the 15 joined the split and
+    # the marks summed to 20 against a stated 15, which lib rightly refused.
+    # It is the total, not a term, and it comes off before the terms are taken.
+    plain = TAIL_GROUP_TOTAL.sub('', notation or '').strip()
+    # Both lines price the SAME parts, once each. "Three parts @ 3 marks;
+    # Three parts @ 2 marks (15)" is 2021 OL Q2(c): three labelled wheelchair
+    # parts, three marks for naming a material and two for the reason, and the
+    # scheme answers them as three points of "Material: ... Reason: ...". So
+    # each point is worth the two rates added, and three of them make the 15
+    # the table prints. Only where the counts AGREE, and only where the
+    # arithmetic closes on the stated total -- "One part @ 6 marks; Two parts
+    # @ 3 marks (12)" prices different parts at different rates and is left
+    # alone.
+    pairs = [(WORDN.get(c.lower()), int(v))
+             for c, v in GROUP_RULE.findall(plain)]
+    if len(pairs) > 1 and all(pairs[0][0] == c and c for c, _ in pairs):
+        n, per = pairs[0][0], sum(v for _, v in pairs)
+        if total is not None and n * per == total and len(points) == n:
+            return ('point', [per] * n, {'kind': 'fixed'}, None)
+    terms = [int(x) for x in re.findall(r'\d{1,2}', plain)]
     if len(terms) > 1:
         if len(terms) == len(points):
             return ('point', terms, {'kind': 'fixed'}, None)
@@ -296,7 +627,10 @@ def main():
 
     for (year, level, _), leaves in sorted(idx.items()):
         A = Author('engineering', year, level)
-        S = EngScheme(year, level)
+        # The SAME scheme instance lib.card builds the card from, so that what
+        # this loop resolves and selects with `use` is the list the card is
+        # made of -- including which branch of an OR a key is answered from.
+        S = A.scheme_table._scheme
         seen, noted = set(), set()
         siblings = collections.defaultdict(list)
         for lf in sorted(leaves):
@@ -341,7 +675,22 @@ def main():
                                           or '').split())
                     except Exception:                        # noqa: BLE001
                         above = ''
-                    if looks_like_an_ask(above):
+                    # ... but only where the scheme treats them as options.
+                    # 2021 HL Q2(b) also prints three bare items -- "Full
+                    # hybrid;", "Mild hybrid;", "Plug-in hybrid." -- and the
+                    # scheme prices each of them in turn, "(i) 4 (ii) 3
+                    # (iii) 3", and answers each in turn. Those are three
+                    # questions, not one question's menu, and promoting them
+                    # sent the part climbing past a letter the scheme never
+                    # prices to the QUESTION, where one card would have
+                    # carried the whole of Question 2 for fifty marks.
+                    # The cue above them is the ask, and lib.card joins it on
+                    # for exactly this shape.
+                    if (S.tariff(q, letter, roman) is not None
+                            and cardable(S.points_under(q, letter, roman))
+                            and above.endswith(':')):
+                        ask = f'{above} {" ".join(ask.split())}'
+                    elif looks_like_an_ask(above):
                         # The options are part of the parent's ask: without
                         # the three names "Discuss the contribution that any
                         # one of the following has made to technology:"
@@ -367,7 +716,8 @@ def main():
                 else:
                     note('an option the question lists, not an ask')
                     continue
-            key, keep = resolve(S, q, letter, roman)
+            key, keep = resolve(S, q, letter, roman,
+                                len(siblings.get((q, letter), ())))
             # A "marking point" that repeats the ask is the scheme naming the
             # part, not answering it. 2021 OL Q6(b) lists cutting fluids,
             # clearance angle and chuck key as the three things to describe,
@@ -375,10 +725,7 @@ def main():
             # the answer, the card shows the student the question again.
             # Indices are kept, because `use` selects into the SCHEME's own
             # list and a filtered copy shifts every one past the first drop.
-            bare = re.sub(r'[^a-z0-9]', '', ask.lower())
-            keep = [(i, t) for i, t in keep
-                    if len(t) > 60
-                    or re.sub(r'[^a-z0-9]', '', t.lower()) not in bare]
+            keep = [(i, t) for i, t in keep if not names_the_part(t, ask)]
             points = [t for _, t in keep]
             if not key:
                 note('the scheme states and prices nothing at this key or above')
@@ -463,7 +810,19 @@ def main():
             figure = (figs.get((year, level, q, key[1], key[2]))
                       or figs.get((year, level, q, letter, roman))
                       or figs.get((year, level, q, key[1], None)))
-            if not figure and (
+            here = (year, level) + key
+            if here in WITHHELD:
+                note(WITHHELD[here])
+                continue
+            wid = (f'eng-{year}-{level}-q{q}'
+                   + (f'-{key[1]}' if key[1] else '')
+                   + (f'-{key[2]}' if key[2] else ''))
+            if wid in WITHDRAWN:
+                note(f'withdrawn: {WITHDRAWN[wid]}')
+                continue
+            # A reviewed judgement that the picture is not needed (NO_FIGURE).
+            no_fig = here in NO_FIGURE
+            if not figure and not no_fig and (
                     (cardlint.FIG_REF.search(joined)
                      and not cardlint.SELF_WORK.search(joined)
                      and not cardlint.NO_DEPENDENCY.search(joined))
@@ -471,10 +830,33 @@ def main():
                 note('points at printed matter the card cannot carry')
                 continue
             # A card that NAMES a lettered part needs the letters decoded as
-            # well as shown, which is what card lint asks for and what this
-            # author cannot supply. Refusing here rather than letting the deck
-            # build drop it keeps the authored file and the deck the same.
-            if cardlint.NAMES_LETTERS.search(joined):
+            # well as shown, which is what card lint asks for.
+            #
+            # THE SCHEME DECODES THEM. "Identify the regions labelled A, B, C,
+            # D and E" is answered "A = Austenite and Ferrite", "B = Austenite"
+            # and so on down, one line per letter -- the paper prints the
+            # label and the scheme says what it means, which is exactly the
+            # pair lib's labels='auto' lifts. Nothing is typed here: a letter
+            # reaches the key only when a marking point carries it.
+            #
+            # Such a card is a DIAGRAM card, and the build asks a diagram card
+            # for the crop on the answer side, so the same crop is bound there
+            # rather than as shared question-side context.
+            labels = None
+            if figure and points and cardlint.NAMES_LETTERS.search(joined) \
+                    and all(LABELLED_POINT.match(p) for p in points):
+                labels = 'auto'
+            # Where only SOME points carry a letter, the key is still lifted
+            # from the scheme's own text rather than typed -- "Structure A:
+            # Body-Centred Cubic (BCC) Structure." gives A its meaning.
+            if labels is None and cardlint.NAMES_LETTERS.search(joined):
+                got = {}
+                for _, t_ in keep:
+                    mm = ENG_LABEL.match(t_)
+                    if mm:
+                        got.setdefault(mm.group(1), mm.group(2).strip())
+                labels = got or None
+            if cardlint.NAMES_LETTERS.search(joined) and not labels:
                 note('names a lettered part this author cannot decode')
                 continue
             tariff_here = S.tariff(*key)
@@ -486,27 +868,45 @@ def main():
                 # what this part is worth and what the scheme printed.
                 per = S.per_part(key[0])
                 if not per and key[2] and key[1]:
-                    up = S.rule(key[0], key[1], None)
-                    per = up[1] if up else None
+                    per = per_roman(S, key[0], key[1],
+                                    len(siblings.get((key[0], key[1]), ())))
                 if per:
                     tariff_here, rule_here = per, None
                     notation_here = f'{per} marks'
-            shape = rows_for(notation_here, tariff_here, rule_here, points)
+            # Read off the KEY's own ask, not the leaf's: the rule being
+            # applied is the key's, and it is the key that says whether its
+            # sub-parts are a choice or a list.
+            try:
+                key_ask = ' '.join((A.paper.text(*key) or '').split())
+            except Exception:                                # noqa: BLE001
+                key_ask = ''
+            shape = rows_for(notation_here, tariff_here, rule_here, points,
+                             required=bool(ALL_REQUIRED.search(key_ask)))
             if not shape:
                 note('the printed split does not fit the points stated')
                 continue
             kind, marks, model, group = shape
-            cid = (f'eng-{year}-{level}-q{q}'
-                   + (f'-{key[1]}' if key[1] else '')
-                   + (f'-{key[2]}' if key[2] else ''))
+            # A lettered card is a DIAGRAM card: the build wants its crop on
+            # the answer side, beside the key that decodes it. Every other card
+            # keeps it as shared question-side context.
+            answer_fig = figure if labels else None
+            question_fig = None if labels else figure
+            cid = wid
             try:
                 if kind == 'anyN':
+                    # No labels here: anyN claims ONE row holding the whole
+                    # group, so labels='auto' would decode the first letter and
+                    # no other. A part that needs a key and cannot have a whole
+                    # one is withdrawn by the check below instead.
                     n, per = group
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
+                           checked=CHECKED.get((year, level) + key),
+                           labels=labels,
                            use=[[i for i, _ in keep[:MAX_ROWS]]],
                            marks=[n * per], tariff='fixed',
-                           row_kind='anyN', total=n * per, question_figure=figure,
+                           row_kind='anyN', total=n * per,
+                           question_figure=question_fig, figure=answer_fig,
                            stem=keeps_stem(stem, figure),
                            notes=f'The scheme prints {notation_here!r}.')
                 elif model['kind'] == 'orderedSplit':
@@ -516,24 +916,33 @@ def main():
                     # is the thing being avoided.
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
+                           checked=CHECKED.get((year, level) + key),
+                           labels=labels,
                            use=[i for i, _ in keep[:MAX_ROWS]],
-                           tariff='orderedSplit', question_figure=figure,
+                           tariff='orderedSplit',
+                           question_figure=question_fig, figure=answer_fig,
                            notation=model['notation'],
                            ladder=tariff_here,
                            stem=keeps_stem(stem, figure))
                 elif model['kind'] == 'questionTotal':
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
+                           checked=CHECKED.get((year, level) + key),
+                           labels=labels,
                            use=[i for i, _ in keep[:MAX_ROWS]],
-                           tariff='questionTotal', question_figure=figure,
+                           tariff='questionTotal',
+                           question_figure=question_fig, figure=answer_fig,
                            total=tariff_here,
                            stem=keeps_stem(stem, figure),
                            notes=f'The scheme prints {notation_here!r}.')
                 else:
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
+                           checked=CHECKED.get((year, level) + key),
+                           labels=labels,
                            use=[i for i, _ in keep[:MAX_ROWS]],
-                           marks=marks, tariff='fixed', question_figure=figure,
+                           marks=marks, tariff='fixed',
+                           question_figure=question_fig, figure=answer_fig,
                            total=tariff_here,
                            stem=keeps_stem(stem, figure))
                 # Card lint reads the text the CARD carries, which lib builds
@@ -558,8 +967,9 @@ def main():
                         A.cards.pop()
                         note('names a lettered part this author cannot decode')
                         continue
-                if made is not None and not (made.get('figureKey')
-                                            or made.get('questionFigureKey')):
+                if made is not None and not no_fig and not (
+                        made.get('figureKey')
+                        or made.get('questionFigureKey')):
                     stem_t = made.get('stem') or ''
                     qtext = made.get('questionText') or ''
                     final = f'{stem_t} {qtext}'

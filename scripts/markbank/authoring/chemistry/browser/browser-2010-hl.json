@@ -1,0 +1,21 @@
+[
+ {"id": "chem-2010-hl-q1-d", "ask": "Explain the two operations, involving the titration flask", "answer": "Wash down sides with deionised water"},
+ {"id": "chem-2010-hl-q1-e-i", "ask": "Calculate the total hardness of the water before ion exchange", "answer": "Concentration = 1.84 × 10⁻³ M", "figure": true},
+ {"id": "chem-2010-hl-q2-c-i", "ask": "", "answer": "diagram showing flask with condenser in position for distillation", "figure": true, "solution": true},
+ {"id": "chem-2010-hl-q2-d", "ask": "", "answer": "6.82/8.9 x 100 = 76 – 77 %", "figure": true, "solution": true},
+ {"id": "chem-2010-hl-q3-d", "ask": "", "answer": "Rate proportional to concentration", "figure": true, "solution": true},
+ {"id": "chem-2010-hl-q4-k-b", "ask": "sulfur dioxide from industrial gaseous emissions dissolves in water", "answer": "SO₂ + H₂O → H₂SO₃"},
+ {"id": "chem-2010-hl-q5-c", "ask": "Outline Bohr’s atomic theory", "answer": "the excited electron falls back to a lower energy level", "figure": true},
+ {"id": "chem-2010-hl-q5-e", "ask": "Draw the shape of the p-orbital", "answer": "Dumbbell drawn", "solution": true},
+ {"id": "chem-2010-hl-q6-e", "ask": "", "answer": "7C + 8H₂", "figure": true, "solution": true},
+ {"id": "chem-2010-hl-q7-a", "ask": "", "answer": "Products can react (are reacting) to give back the reactants", "figure": true},
+ {"id": "chem-2010-hl-q7-c", "ask": "", "answer": "At Equil. 0.0025 moles / l", "figure": true, "solution": true},
+ {"id": "chem-2010-hl-q8-c-curve", "ask": "Draw a clearly labelled diagram of the pH curve", "answer": "Most indicators will change within this pH range", "solution": true},
+ {"id": "chem-2010-hl-q9-c", "ask": "", "answer": "Heterolytic fission of hydrogen chloride molecule", "figure": true, "solution": true},
+ {"id": "chem-2010-hl-q10-c-iv", "ask": "Give the name and structure of another organic compound", "answer": "CH₃COOH", "solution": true},
+ {"id": "chem-2010-hl-q11-a-iii", "ask": "At which electrode, A or B, did oxidation occur?", "answer": "H₂O → 2H⁺ + ½O₂ + 2e⁻", "figure": true},
+ {"id": "chem-2010-hl-q11-b-ii", "ask": "the half-life of a radioactive isotope", "answer": "time for sample to reach half its activity"},
+ {"id": "chem-2010-hl-q11-b-determine", "ask": "Determine the value of A and the value of Z", "answer": "A = 237", "figure": true},
+ {"id": "chem-2010-hl-q11-c-a-x-rays", "ask": "What was the surname of the father and son", "answer": "Bragg", "figure": true},
+ {"id": "chem-2010-hl-q11-c-b-iv", "ask": "Name and give one industrial use of a co-product", "answer": "Neon: Inert atmosphere (or example)"}
+]

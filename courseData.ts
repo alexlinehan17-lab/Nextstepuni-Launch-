@@ -471,7 +471,7 @@ const COURSE_DEFINITIONS = [
     title: 'Exam Crisis Management',
     subtitle: 'Your Exam Survival Guide',
     description: 'Understand why your brain freezes under pressure and learn practical techniques to stay calm, think clearly, and bounce back when things go wrong in an exam.',
-    sectionsCount: 7,
+    sectionsCount: 6,
     curriculum: 'both' as const,
     tags: ['Resilience', 'Performance Psych'],
   },

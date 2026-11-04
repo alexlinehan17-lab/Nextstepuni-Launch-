@@ -1,3 +1,4 @@
+import './module-cards.css';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -28,10 +29,9 @@ import { WorldIconBlob, type WorldId } from './WorldIconBlob';
 import PageHeader from './ui/PageHeader';
 import { useCompactLayout } from '../hooks/useCompactLayout';
 import { WORLD_TONES, useWorldTones, type WorldTones } from './worldPalette';
+import { ModuleDiscovery } from './learning/ModuleDiscovery';
+import type { UserProgress } from '../types';
 
-type UserProgress = {
-  [moduleId: string]: { unlockedSection: number };
-};
 
 interface ModulesViewProps {
   onBack: () => void;
@@ -280,9 +280,7 @@ const ProgressRing: React.FC<{
 
 // ── Card wrapper ────────────────────────────────────────────────────────
 //
-// Cream card with a faint world-colour tint at one corner (no hard
-// gradient), 1px world-colour border at 25% opacity, soft warm shadow.
-// Same recipe for hero and satellites — only sizing differs.
+// White ink cards retain the existing hero and satellite interactions.
 
 interface CardWrapperProps {
   config: CategoryConfig;
@@ -293,21 +291,6 @@ interface CardWrapperProps {
 }
 
 const CardWrapper: React.FC<CardWrapperProps> = ({ config, isHero, children, onClick, ariaLabel }) => {
-  const { blob, tintFocal, worldKey } = config;
-
-  // Card surface + soft world-colour tint at one corner (radial fade, no hard
-  // edge). The base layer uses var(--bg-card) so dark mode swaps in zinc-900
-  // automatically; the world-colour tint stays the same (~22% alpha) and
-  // reads fine on either surface.
-  const background =
-    worldKey === 'mind'
-      ? 'var(--bg-card)'
-      : `radial-gradient(ellipse 60% 55% ${tintFocal}, ${blob}38 0%, transparent 70%), var(--bg-card)`;
-  const border = `1px solid ${blob}66`; // ~40% — visible but soft.
-  const boxShadow = isHero
-    ? '0 4px 18px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.04)'
-    : '0 2px 8px rgba(0,0,0,0.04)';
-
   return (
     <motion.div
       layoutId={`category-card-${config.id}`}
@@ -318,8 +301,7 @@ const CardWrapper: React.FC<CardWrapperProps> = ({ config, isHero, children, onC
       <motion.div
         layout="position"
         whileHover={isHero ? undefined : { y: -2 }}
-        className={`relative h-full overflow-hidden ${isHero ? 'rounded-[28px] md:rounded-[32px]' : 'rounded-2xl md:rounded-[22px]'}`}
-        style={{ background, border, boxShadow }}
+        className={`world-ink-card relative h-full overflow-hidden ${isHero ? 'rounded-[28px] md:rounded-[32px]' : 'rounded-2xl md:rounded-[22px]'}`}
       >
         <button
           type="button"
@@ -422,7 +404,7 @@ const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue
             </p>
 
             {/* Section preview */}
-            <div className="mt-5 md:mt-6 rounded-xl p-3.5" style={{ border: '1px solid #d0cdc8' }}>
+            <div className="world-section-preview mt-5 md:mt-6 rounded-xl p-3.5" style={{ border: '1px solid var(--outline-soft)' }}>
               <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: deep }}>
                 {nextUp.isContinue
                   ? `Up next · Section ${nextUp.sectionNumber} of ${nextUp.course.sectionsCount}`
@@ -439,7 +421,7 @@ const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue
                   e.stopPropagation();
                   onContinue(nextUp.course.id);
                 }}
-                className="group/cta inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
+                className="world-primary-action group/cta inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
                 style={{
                   ...world.cta(config),
                   boxShadow: `0 6px 16px ${world.cta(config).background}55`,
@@ -573,7 +555,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
     return (
       <div className="product-shell modules-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]">
         <header
-          className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-3 dark:border-zinc-800 dark:bg-zinc-950"
+          data-student-page-header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-3 dark:border-zinc-800 dark:bg-zinc-950"
           style={{ paddingTop: 'calc(12px + var(--sat, 0px))' }}
         >
           <div className="mx-auto max-w-7xl">
@@ -586,6 +568,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
           style={{ paddingBottom: 'calc(104px + var(--sab, 0px))' }}
         >
           <div className="mx-auto max-w-xl">
+            <ModuleDiscovery courses={allCourses} progress={userProgress} onOpen={onSelectModule} />
             <div className="mb-5 flex items-end justify-between gap-4">
               <div>
                 <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
@@ -611,8 +594,8 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
                     type="button"
                     onClick={() => onSelectCategory(cat.id)}
                     aria-label={`Open ${cat.name} world`}
-                    className="group flex min-h-[116px] w-full items-center gap-3 rounded-[15px] border bg-white p-3 text-left transition-transform active:scale-[0.985] dark:bg-zinc-900"
-                    style={{ borderColor: isCurrent ? '#F26B1F' : `${cat.blob}aa`, borderWidth: isCurrent ? 2 : 1 }}
+                    className="world-ink-card group flex min-h-[116px] w-full items-center gap-3 rounded-[15px] border bg-white p-3 text-left transition-transform active:scale-[0.985] dark:bg-zinc-900"
+                    style={{ borderColor: isCurrent ? '#F26B1F' : undefined, borderWidth: isCurrent ? 2 : 1.5 }}
                   >
                     <div className="flex h-24 w-[88px] shrink-0 items-center justify-center overflow-visible">
                       <WorldIconBlob world={cat.worldKey} size={72} />
@@ -660,16 +643,15 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
 
   return (
     <div className="product-shell modules-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]">
-      {/* Header — left side only. Right side intentionally empty so the
-          App-level top-right cluster (TrainingPulse + bell + profile)
-          owns that real estate without any leakage. */}
-      <header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-4 md:px-10 dark:border-zinc-800 dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
+      {/* The shared desktop sidebar owns navigation and account controls. */}
+      <header data-student-page-header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-4 md:px-10 dark:border-zinc-800 dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
         <div className="mx-auto max-w-7xl"><PageHeader onBack={onBack} eyebrow="The Programme" title="Modules" compact /></div>
       </header>
 
       {/* Main */}
       <main className="pt-24 md:pt-28 pb-16 px-4 md:px-10">
         <div className="max-w-7xl mx-auto">
+          <ModuleDiscovery courses={allCourses} progress={userProgress} onOpen={onSelectModule} />
           <LayoutGroup>
             <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-5 auto-rows-min">
               {ordered.map(cat => {

@@ -33,7 +33,74 @@ except ImportError:
     fitz = None
 
 
-def extract(pdf_path: Path, marks_column: bool = False) -> str:
+# A right-to-left subject cannot be read by the span reader below. Arabic's
+# text layer is painted in VISUAL order and its ligature glyphs carry several
+# characters each, so the reversal that recovers logical order has to be done
+# over glyphs, not characters, or the letters inside a ligature come out
+# backwards — "البلد" for "البدل" and forty more like it on one page. That is
+# authoring/ara_text.py's whole job, and it also reports the glyphs whose
+# ToUnicode entry is not Arabic at all rather than inventing a letter for them.
+RTL_SUBJECTS = ('arabic',)
+
+# Subjects whose PDFs embed a subset font with a broken ToUnicode map that the
+# GLOBAL glyphmap cannot repair, and whose repair therefore has to happen here,
+# in the .md the provenance gate reads.
+#
+# Only these three, deliberately. Two other subject maps exist
+# (glyphmap-arabic.json, glyphmap-technology.json) and their .md files were
+# extracted without one; applying a map to them now would move text the shipped
+# cards are already checked against, which is a re-measure and not this change.
+# The Baltic languages are extracted for the first time here, so their .md and
+# their cards are repaired together — and they have to be, because the global
+# map reads U+01A1 as "l" where the Lithuanian subset draws "ė", so a scheme
+# line left mangled would be repaired one way in the .md and another on the
+# card and no provenance check would ever match.
+GLYPH_SUBJECTS = ('lithuanian', 'latvian', 'czech')
+
+
+def _glyph_table(pdf_path: Path):
+    for part in pdf_path.parts:
+        if part in GLYPH_SUBJECTS:
+            sys.path.insert(0, str(Path(__file__).resolve().parent / "authoring"))
+            import lt_glyphs
+            return lt_glyphs.load(part)
+    return {}
+# A subject whose pages are set in a PRE-UNICODE font. Every Ancient Greek
+# paper and scheme before 2023 sets its Greek in SPIonic, embedded with
+# WinAnsiEncoding and no ToUnicode map, so the span reader below hands back the
+# Latin-1 bytes — "h]n de/ tij" for ἦν δέ τις. authoring/agr_text.py decodes it
+# span by span; without that the .md the provenance gate reads holds beta code
+# while the cards hold Greek, and every card quoting a Greek word was dropped
+# as unprovable.
+DECODED_SUBJECTS = ('ancient-greek',)
+
+
+def _decoder(pdf_path: Path):
+    if not any(part in DECODED_SUBJECTS for part in pdf_path.parts):
+        return None
+    sys.path.insert(0, str(Path(__file__).resolve().parent / "authoring"))
+    import agr_text
+    return agr_text
+
+
+def _is_rtl(pdf_path: Path) -> bool:
+    return any(part in RTL_SUBJECTS for part in pdf_path.parts)
+
+
+def extract_rtl(pdf_path: Path) -> str:
+    sys.path.insert(0, str(Path(__file__).resolve().parent / "authoring"))
+    import ara_text
+    doc = fitz.open(pdf_path)
+    out = []
+    for pno, page in enumerate(doc, 1):
+        out.append(f"\n## Page {pno}\n")
+        for line in ara_text.page_lines(page):
+            out.append(line["text"])
+    doc.close()
+    return "\n".join(out)
+
+
+def extract(pdf_path: Path, marks_column: bool = False, glyph_ids: bool = False, unnamed_glyphs: bool = False) -> str:
     """Extract, rejoining split spans and reconstructing table rows.
 
     SEC schemes are tables: a marking point and the marks it earns sit in
@@ -42,16 +109,33 @@ def extract(pdf_path: Path, marks_column: bool = False) -> str:
     back into one row, ordered left to right.
     """
     doc = fitz.open(pdf_path)
+    decoder = _decoder(pdf_path)
+    table = load_glyph_table() if glyph_ids else None
     out = []
     for pno, page in enumerate(doc, 1):
         out.append(f"\n## Page {pno}\n")
         marks_x = page.rect.width * MARKS_COLUMN_FRACTION if marks_column else None
         lines = []
-        for block in doc[pno - 1].get_text("dict")["blocks"]:
+        origin = page_glyphs(page) if table else None
+        # --unnamed-glyphs: also read the glyphs a CID font draws with no Unicode,
+        # which rawdict reports as their glyph ids (control characters, ASCII).
+        unnamed = page_unnamed(page) if table and unnamed_glyphs else None
+        for block in doc[pno - 1].get_text("rawdict" if table else "dict")["blocks"]:
             if block.get("type") != 0:
                 continue
             for line in block["lines"]:
-                text = join_spans(line["spans"])
+                spans = line["spans"]
+                if table:
+                    # Read each glyph by its id, not by the code point a broken
+                    # ToUnicode map reported for it (scripts/markbank/glyph_ids.py).
+                    spans = [dict(sp, text="".join(repair_char(ch, origin, table, unnamed) for ch in sp["chars"]))
+                             for sp in spans]
+                text = join_spans(spans)
+                if decoder:
+                    text = decoder.unligature(''.join(
+                        decoder.decode(sp["text"])
+                        if decoder.FONT in sp["font"] else sp["text"]
+                        for sp in line["spans"]))
                 if not text.strip():
                     continue
                 x0, y0, x1, y1 = line["bbox"]
@@ -98,10 +182,35 @@ MARK_CELL = re.compile(r"^[\s\d@+×x*.,;:()\[\]/m-]*\d[\s\d@+×x*.,;:()\[\]/m-]*
 # so the shape of the number settles it without needing to know the column.
 MONEY = re.compile(r"\d,\d{3}(\D|$)")
 
+# The same cell written out in WORDS, which is how the non-curricular EU
+# language schemes print theirs: "8 marks:", "4 x 2 marks", "(any 4)",
+# "5 marks - any 3", "6 Marks: 2 x 3 marks". Digits, the SEC's own words for
+# what they buy, and nothing else — a cell that says anything more than that is
+# an answer and stays in the prose.
+#
+# Without it the whole marks column of those schemes ran into the marking
+# points it prices: the 2025 Ordinary scheme breaks one cell over three
+# baselines and the .md read "usava roupas de cores vivas brilhantes, boné
+# azul, camisa vermelha, 8 marks:", so no card could quote the SEC's own
+# answer and fifty-five of them were dropped by the provenance check.
+MARK_WORDS = re.compile(
+    r"^\(?\s*(?:\d{1,2}\s*[x×]\s*)?\d{0,2}\s*"
+    r"(?:marks?|any\s+\d{1,2})"
+    r"[\s\d:;,.()x×+/–—-]*(?:marks?|any\s+\d{1,2}|lines?|"
+    r"any\s+two\s+lines)?[\s\d:;,.()x×+/–—-]*\)?$", re.I)
+
+# --digit-mark-cells turns MARK_WORDS off. The 2010-2020 and 2026 Business
+# schemes were extracted before it existed, with "30 marks" left in the prose
+# beside the question it prices, and their reviewed cards are checked against
+# that text; re-extracting them must reproduce it byte for byte.
+MARK_WORD_CELLS = True
+
 
 def is_mark(text: str) -> bool:
     """Whether a cell states marks rather than an answer that happens to be numeric."""
-    return bool(MARK_CELL.fullmatch(text)) and not MONEY.search(text)
+    if MONEY.search(text):
+        return False
+    return bool(MARK_CELL.fullmatch(text)) or (MARK_WORD_CELLS and bool(MARK_WORDS.fullmatch(text)))
 
 
 def render_row(row, marks_x=None) -> str:
@@ -157,6 +266,7 @@ def render_row(row, marks_x=None) -> str:
 # source, throws it away. That one file was losing 43% of its cards while every
 # other paper lost under 17%.
 from markbank_text import LIGATURES, unligature  # noqa: E402  (shared with describe-tables.py)
+from glyph_ids import load_table as load_glyph_table, page_glyphs, page_unnamed, repair_char  # noqa: E402
 _ = LIGATURES
 
 
@@ -223,12 +333,19 @@ def check(text: str, words: set) -> list:
 
 
 def main() -> int:
+    global MARK_WORD_CELLS
     ap = argparse.ArgumentParser()
     ap.add_argument("path", type=Path)
     ap.add_argument("-o", "--out", type=Path)
     ap.add_argument("--check", action="store_true", help="report likely splits in an existing .md")
+    ap.add_argument("--glyph-ids", action="store_true",
+                    help="read mangled glyphs by font and glyph id (scripts/markbank/authoring/glyph_ids.json)")
+    ap.add_argument("--unnamed-glyphs", action="store_true",
+                    help="with --glyph-ids, also read glyphs a CID font draws with no Unicode (they reach the text layer as control characters or ASCII)")
     ap.add_argument("--marks-column", action="store_true",
                     help="lift the right-hand marks cells out of the prose into ⟨brackets⟩")
+    ap.add_argument("--digit-mark-cells", action="store_true",
+                    help="with --marks-column, lift only cells written in digits, never in words (MARK_WORDS)")
     args = ap.parse_args()
 
     words = load_dictionary()
@@ -245,7 +362,13 @@ def main() -> int:
         print("PyMuPDF is required to extract", file=sys.stderr)
         return 1
 
-    text = extract(args.path, marks_column=args.marks_column)
+    MARK_WORD_CELLS = not args.digit_mark_cells
+    text = (extract_rtl(args.path) if _is_rtl(args.path)
+            else extract(args.path, marks_column=args.marks_column,
+                         glyph_ids=args.glyph_ids, unnamed_glyphs=args.unnamed_glyphs))
+    table = _glyph_table(args.path)
+    if table:
+        text = ''.join(table.get(ch, ch) for ch in text)
     hits = check(text, words)
     out = args.out or args.path.with_suffix(".md")
     out.write_text(text)

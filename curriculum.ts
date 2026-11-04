@@ -781,6 +781,54 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "english-11-53",
             "name": "Liz Lochhead"
+          },
+          {
+            "id": "english-11-54",
+            "name": "Noel Monahan"
+          },
+          {
+            "id": "english-11-55",
+            "name": "Julie O'Callaghan"
+          },
+          {
+            "id": "english-11-56",
+            "name": "Richard Wilbur"
+          },
+          {
+            "id": "english-11-57",
+            "name": "Thomas Kinsella"
+          },
+          {
+            "id": "english-11-58",
+            "name": "Enda Wyley"
+          },
+          {
+            "id": "english-11-59",
+            "name": "George Herbert"
+          },
+          {
+            "id": "english-11-60",
+            "name": "William Wall"
+          },
+          {
+            "id": "english-11-61",
+            "name": "Greg Delanty"
+          },
+          {
+            "id": "english-11-62",
+            "name": "Michael Coady"
+          },
+          {
+            "id": "english-11-63",
+            "name": "Robert Herrick"
+          },
+          {
+            "id": "english-11-64",
+            "name": "Kerry Hardie"
+          },
+          {
+            "id": "english-11-65",
+            "name": "Marge Piercy"
           }
         ]
       },
@@ -915,6 +963,110 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "english-12-31",
             "name": "Silas Marner (George Eliot)"
+          },
+          {
+            "id": "english-12-32",
+            "name": "Dancing at Lughnasa (Brian Friel)"
+          },
+          {
+            "id": "english-12-33",
+            "name": "The Grapes of Wrath (John Steinbeck)"
+          },
+          {
+            "id": "english-12-34",
+            "name": "The Blackwater Lightship (Colm Tóibín)"
+          },
+          {
+            "id": "english-12-35",
+            "name": "Lamb (Bernard MacLaverty)"
+          },
+          {
+            "id": "english-12-36",
+            "name": "Lies of Silence (Brian Moore)"
+          },
+          {
+            "id": "english-12-37",
+            "name": "Panther in the Basement (Amos Oz)"
+          },
+          {
+            "id": "english-12-38",
+            "name": "A Whistle in the Dark (Tom Murphy)"
+          },
+          {
+            "id": "english-12-39",
+            "name": "Circle of Friends (Maeve Binchy)"
+          },
+          {
+            "id": "english-12-40",
+            "name": "How Many Miles to Babylon? (Jennifer Johnston)"
+          },
+          {
+            "id": "english-12-41",
+            "name": "The Secret Life of Bees (Sue Monk Kidd)"
+          },
+          {
+            "id": "english-12-42",
+            "name": "The Plough and the Stars (Sean O'Casey)"
+          },
+          {
+            "id": "english-12-43",
+            "name": "Emma (Jane Austen)"
+          },
+          {
+            "id": "english-12-44",
+            "name": "Empire of the Sun (J. G. Ballard)"
+          },
+          {
+            "id": "english-12-45",
+            "name": "The Lonesome West (Martin McDonagh)"
+          },
+          {
+            "id": "english-12-46",
+            "name": "The Story of Lucy Gault (William Trevor)"
+          },
+          {
+            "id": "english-12-47",
+            "name": "The Grass Is Singing (Doris Lessing)"
+          },
+          {
+            "id": "english-12-48",
+            "name": "Antigone (Sophocles)"
+          },
+          {
+            "id": "english-12-49",
+            "name": "Home Before Night (Hugh Leonard)"
+          },
+          {
+            "id": "english-12-50",
+            "name": "Translations (Brian Friel)"
+          },
+          {
+            "id": "english-12-51",
+            "name": "Never Let Me Go (Kazuo Ishiguro)"
+          },
+          {
+            "id": "english-12-52",
+            "name": "All My Sons (Arthur Miller)"
+          },
+          {
+            "id": "english-12-53",
+            "name": "Juno and the Paycock (Sean O'Casey)"
+          },
+          {
+            "id": "english-12-54",
+            "name": "Death and Nightingales (Eugene McCabe)"
+          },
+          {
+            "id": "english-12-55",
+            "name": "Big Maggie (John B. Keane)"
+          },
+          {
+            "id": "english-12-56",
+            "name": "Americanah (Chimamanda Ngozi Adichie)"
+          },
+          {
+            "id": "english-12-57",
+            "name": "The Ocean at the End of the Lane (Neil Gaiman)"
           }
         ]
       }
@@ -3509,7 +3661,8 @@ export const CURRICULUM: CurriculumSubject[] = [
     "name": "Lithuanian (non-curricular EU language)",
     "category": "language",
     "levels": [
-      "higher"
+      "higher",
+      "ordinary"
     ],
     "strands": [
       {
@@ -3585,7 +3738,8 @@ export const CURRICULUM: CurriculumSubject[] = [
     "name": "Polish (non-curricular EU language)",
     "category": "language",
     "levels": [
-      "higher"
+      "higher",
+      "ordinary"
     ],
     "strands": [
       {
@@ -3683,7 +3837,8 @@ export const CURRICULUM: CurriculumSubject[] = [
     "name": "Portuguese (non-curricular EU language)",
     "category": "language",
     "levels": [
-      "higher"
+      "higher",
+      "ordinary"
     ],
     "strands": [
       {
@@ -3741,6 +3896,18 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "portuguese-2-2",
             "name": "Discursive Commentary on a Quotation (~300 Words, Parte III)"
+          },
+          {
+            "id": "portuguese-2-3",
+            "name": "Reading Comprehension — Two Texts with Open Questions (Parte A, from 2022)"
+          },
+          {
+            "id": "portuguese-2-4",
+            "name": "Written Production (Parte B, from 2022)"
+          },
+          {
+            "id": "portuguese-2-5",
+            "name": "Listening Comprehension Test (separate booklet, from 2022)"
           }
         ]
       }
@@ -12458,6 +12625,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "bulgarian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "bulgarian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12492,6 +12663,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "croatian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "croatian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12560,6 +12735,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "danish-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "danish-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12594,6 +12773,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "dutch-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "dutch-1-1",
+            "name": "Essay on a set quotation (Part III, from 2023)"
           }
         ]
       }
@@ -12628,6 +12811,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "estonian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "estonian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12662,6 +12849,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "finnish-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "finnish-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12696,6 +12887,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "hungarian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "hungarian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12832,6 +13027,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "romanian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "romanian-1-1",
+            "name": "Essay on a set quotation (Part III, from 2023)"
           }
         ]
       }
@@ -12866,6 +13065,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "slovakian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "slovakian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12900,6 +13103,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "slovenian-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "slovenian-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }
@@ -12934,6 +13141,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "swedish-1-0",
             "name": "Commentary / essay on the text theme"
+          },
+          {
+            "id": "swedish-1-1",
+            "name": "Essay on a set title (Part III)"
           }
         ]
       }

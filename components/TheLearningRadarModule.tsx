@@ -1,19 +1,20 @@
+import { moduleFill } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MotionDiv } from './Motion';
-import { Target, AlertTriangle, Clock, Layers, Activity, Flag } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { violetTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { Cite } from './ModuleReferences';
+import { Activity,AlertTriangle,Clock,Flag,Layers,Target } from 'lucide-react';
+import React,{ useState } from 'react';
 import { LEARNING_RADAR_REFERENCE_LIST } from '../data/references/learningRadar';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { violetTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { ConceptCardGrid,Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
+import { MotionDiv } from './Motion';
 
 const theme = violetTheme;
 
@@ -83,22 +84,22 @@ const CalibrationQuiz = () => {
     const gap = avgConfidence - actualAccuracy;
 
     return (
-      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Calibration Report</h4>
-        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">How well did your confidence predict your accuracy?</p>
+      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your Calibration Report</h4>
+        <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-8">How well did your confidence predict your accuracy?</p>
 
         <div className="grid grid-cols-3 gap-4 mb-8">
-          <div className="text-center p-4 rounded-xl bg-violet-50 dark:bg-violet-900/20 border border-violet-200 dark:border-violet-800">
-            <p className="text-2xl font-bold text-violet-700 dark:text-violet-300">{avgConfidence}%</p>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Avg Confidence</p>
+          <div className="text-center p-4 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+            <p className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{avgConfidence}%</p>
+            <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1">Avg Confidence</p>
           </div>
-          <div className="text-center p-4 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800">
-            <p className="text-2xl font-bold text-emerald-700 dark:text-emerald-300">{actualAccuracy}%</p>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Actual Accuracy</p>
+          <div className="text-center p-4 rounded-xl bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+            <p className="text-2xl font-bold text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">{actualAccuracy}%</p>
+            <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1">Actual Accuracy</p>
           </div>
-          <div className={`text-center p-4 rounded-xl border ${gap > 10 ? 'bg-rose-50 dark:bg-rose-900/20 border-rose-200 dark:border-rose-800' : 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800'}`}>
-            <p className={`text-2xl font-bold ${gap > 10 ? 'text-rose-700 dark:text-rose-300' : 'text-emerald-700 dark:text-emerald-300'}`}>{gap > 0 ? '+' : ''}{gap}%</p>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Calibration Gap</p>
+          <div className={`text-center p-4 rounded-xl border ${gap > 10 ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" : "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]"}`}>
+            <p className={`text-2xl font-bold ${gap > 10 ? "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]" : "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]"}`}>{gap > 0 ? '+' : ''}{gap}%</p>
+            <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1">Calibration Gap</p>
           </div>
         </div>
 
@@ -106,38 +107,38 @@ const CalibrationQuiz = () => {
         <div className="space-y-3 mb-6">
           {data.filter((d) => d.count > 0).map((d) => (
             <div key={d.level} className="flex items-center gap-3">
-              <span className="text-xs font-semibold text-zinc-500 w-20 text-right">{d.level}% conf.</span>
-              <div className="flex-1 relative h-7 bg-zinc-100 dark:bg-zinc-700 rounded-full overflow-hidden">
+              <span className="text-xs font-semibold text-[var(--module-muted)] w-20 text-right">{d.level}% conf.</span>
+              <div className="flex-1 relative h-7 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full overflow-hidden">
                 {/* Predicted bar */}
-                <div className="absolute inset-y-0 left-0 bg-violet-200 dark:bg-violet-800/50 rounded-full" style={{ width: `${d.predicted}%` }} />
+                <div className="absolute inset-y-0 left-0 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full" style={{ width: `${d.predicted}%` }} />
                 {/* Actual bar */}
                 <MotionDiv
                   initial={{ width: 0 }}
                   animate={{ width: `${d.actual ?? 0}%` }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className={`absolute inset-y-0 left-0 rounded-full ${d.actual !== null && d.actual >= d.predicted - 10 ? 'bg-emerald-400 dark:bg-emerald-500' : 'bg-rose-400 dark:bg-rose-500'}`}
+                  className={`absolute inset-y-0 left-0 rounded-full ${d.actual !== null && d.actual >= d.predicted - 10 ? "bg-[var(--module-success)] dark:bg-[var(--module-success)]" : "bg-[var(--module-danger)] dark:bg-[var(--module-danger)]"}`}
                 />
                 {/* Diagonal marker for predicted */}
                 <div className="absolute inset-y-0 flex items-center" style={{ left: `${d.predicted}%` }}>
-                  <div className="w-0.5 h-full bg-violet-600 dark:bg-violet-400" />
+                  <div className="w-0.5 h-full bg-[var(--module-solid)] dark:bg-[var(--module-solid)]" />
                 </div>
               </div>
-              <span className="text-xs font-bold w-16 text-zinc-600 dark:text-zinc-300">
+              <span className="text-xs font-bold w-16 text-[var(--module-ink)] dark:text-[var(--module-muted)]">
                 {d.actual !== null ? `${d.actual}% actual` : '—'}
               </span>
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-center gap-4 text-xs text-zinc-400 mb-6">
-          <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-violet-200 dark:bg-violet-800/50 inline-block" /> Predicted</span>
-          <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-emerald-400 dark:bg-emerald-500 inline-block" /> Actual (calibrated)</span>
-          <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-rose-400 dark:bg-rose-500 inline-block" /> Actual (overconfident)</span>
+        <div className="flex items-center justify-center gap-4 text-xs text-[var(--module-muted)] mb-6">
+          <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-[var(--module-surface)] dark:bg-[var(--module-surface)] inline-block" /> Predicted</span>
+          <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-[var(--module-success)] dark:bg-[var(--module-success)] inline-block" /> Actual (calibrated)</span>
+          <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-[var(--module-danger)] dark:bg-[var(--module-danger)] inline-block" /> Actual (overconfident)</span>
         </div>
 
         <MotionDiv
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          className={`p-4 rounded-xl text-sm font-medium ${gap > 15 ? 'bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-800' : gap > 5 ? 'bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800' : 'bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800'}`}
+          className={`p-4 rounded-xl text-sm font-medium ${gap > 15 ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] border border-[var(--module-line)] dark:border-[var(--module-line)]" : gap > 5 ? "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)]" : "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:text-[var(--module-success-text)] border border-[var(--module-line)] dark:border-[var(--module-line)]"}`}
         >
           {gap > 15
             ? 'You were quite a bit more confident than your accuracy shows. Don\'t worry — most people are. The gap between what you thought you knew and what you actually got right is your blind spot. The good news? Now that you can see it, you can start fixing it.'
@@ -147,7 +148,7 @@ const CalibrationQuiz = () => {
         </MotionDiv>
 
         <div className="mt-6 text-center">
-          <button onClick={reset} className="px-5 py-2.5 bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 text-zinc-700 dark:text-zinc-200 font-semibold rounded-xl transition-colors text-sm">
+          <button onClick={reset} className="px-5 py-2.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] font-semibold rounded-xl transition-colors text-sm" data-wide-button="true">
             Try Again
           </button>
         </div>
@@ -158,26 +159,26 @@ const CalibrationQuiz = () => {
   const q = CALIBRATION_STATEMENTS[step];
 
   return (
-    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Calibration Quiz</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-6">Rate your confidence, then answer. Let's see how well you know what you know.</p>
+    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Calibration Quiz</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 mb-6">Rate your confidence, then answer. Let's see how well you know what you know.</p>
 
-      <div className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-4">Question {step + 1} of 8</div>
+      <div className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Question {step + 1} of 8</div>
 
-      <div className="p-5 bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-700 mb-6">
-        <p className="text-center font-semibold text-zinc-700 dark:text-zinc-200">"{q.statement}"</p>
+      <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] mb-6">
+        <p className="text-center font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">"{q.statement}"</p>
       </div>
 
       {phase === 'confidence' ? (
         <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} key="conf">
-          <p className="text-center text-sm font-medium text-zinc-600 dark:text-zinc-300 mb-4">How confident are you that you know the correct answer?</p>
+          <p className="text-center text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-4">How confident are you that you know the correct answer?</p>
           <div className="flex justify-center gap-3">
             {CONFIDENCE_LEVELS.map((level) => (
               <button
                 key={level}
                 onClick={() => handleConfidence(level)}
                 className="px-4 py-2.5 font-bold text-sm transition-all"
-                style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
+                style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-ink)" }} data-wide-button="true"
               >
                 {level}%
               </button>
@@ -186,12 +187,12 @@ const CalibrationQuiz = () => {
         </MotionDiv>
       ) : (
         <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} key="ans">
-          <p className="text-center text-sm font-medium text-zinc-600 dark:text-zinc-300 mb-4">Is this statement True or False?</p>
+          <p className="text-center text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-4">Is this statement True or False?</p>
           <div className="flex justify-center gap-4">
-            <button onClick={() => handleAnswer(true)} className="px-8 py-3 font-bold text-sm transition-all" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' }}>True</button>
-            <button onClick={() => handleAnswer(false)} className="px-8 py-3 font-bold text-sm transition-all" style={{ backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' }}>False</button>
+            <button onClick={() => handleAnswer(true)} className="px-8 py-3 font-bold text-sm transition-all" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-success-text)" }} data-wide-button="true">True</button>
+            <button onClick={() => handleAnswer(false)} className="px-8 py-3 font-bold text-sm transition-all" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" }} data-wide-button="true">False</button>
           </div>
-          <p className="text-center text-xs text-violet-400 mt-3">You rated: {currentConfidence}% confident</p>
+          <p className="text-center text-xs text-[var(--module-ink)] mt-3">You rated: {currentConfidence}% confident</p>
         </MotionDiv>
       )}
     </div>
@@ -245,73 +246,73 @@ const DunningKrugerCurve = () => {
   ];
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Confidence vs. Reality Curve</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">A simplified illustration of how confidence and real ability can drift apart — not a literal graph of any single study.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Confidence vs. Reality Curve</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">A simplified illustration of how confidence and real ability can drift apart — not a literal graph of any single study.</p>
 
       {!revealed ? (
         <div className="text-center">
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Where do you think your confidence sits relative to your actual knowledge?</p>
-          <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-violet-500 text-white hover:bg-violet-600 transition-colors">
+          <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Where do you think your confidence sits relative to your actual knowledge?</p>
+          <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-solid)] text-[var(--module-ink)] hover:bg-[var(--module-solid)] transition-colors" data-wide-button="true">
             Reveal the Curve
           </button>
         </div>
       ) : (
         <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-          <div className="rounded-lg border border-violet-200 dark:border-violet-900 bg-violet-50/50 dark:bg-violet-950/20 p-3">
+          <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] p-3">
             <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
               <defs>
                 <linearGradient id="dk-grad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#8b5cf6" stopOpacity="0.4" />
-                  <stop offset="100%" stopColor="#8b5cf6" stopOpacity="0.03" />
+                  <stop offset="0%" stopColor="var(--module-surface)" stopOpacity="0.4" />
+                  <stop offset="100%" stopColor="var(--module-surface)" stopOpacity="0.03" />
                 </linearGradient>
               </defs>
               {/* Grid lines */}
               {[0.25, 0.5, 0.75, 1.0].map((v) => (
-                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
               ))}
-              <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+              <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
 
               {/* Perfect calibration diagonal */}
-              <line x1={toX(0)} y1={toY(0)} x2={toX(1)} y2={toY(1)} stroke="#a1a1aa" strokeWidth="1" strokeDasharray="6 4" strokeOpacity="0.4" />
-              <text x={toX(0.85)} y={toY(0.88)} fontSize="8" fill="#a1a1aa" textAnchor="middle">Perfect calibration</text>
+              <line x1={toX(0)} y1={toY(0)} x2={toX(1)} y2={toY(1)} stroke="var(--module-muted)" strokeWidth="1" strokeDasharray="6 4" strokeOpacity="0.4" />
+              <text x={toX(0.85)} y={toY(0.88)} fontSize="8" fill="var(--module-surface)" textAnchor="middle">Perfect calibration</text>
 
               {/* DK curve area */}
               <motion.path d={buildArea(dkPoints)} fill="url(#dk-grad)" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} />
 
               {/* DK curve line */}
-              <motion.path d={buildCurve(dkPoints)} fill="none" stroke="#8b5cf6" strokeWidth="2.5" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5, ease: 'easeOut' }} />
+              <motion.path d={buildCurve(dkPoints)} fill="none" stroke="var(--module-ink)" strokeWidth="2.5" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5, ease: 'easeOut' }} />
 
               {/* Key point dots */}
               {dkPoints.filter((_, i) => [2, 4, 6, 8].includes(i)).map((p, i) => (
-                <motion.circle key={i} cx={toX(p.x)} cy={toY(p.y)} r="4" fill="#8b5cf6" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.5 + i * 0.3 }} />
+                <motion.circle key={i} cx={toX(p.x)} cy={toY(p.y)} r="4" fill="var(--module-surface)" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.5 + i * 0.3 }} />
               ))}
 
               {/* Labels */}
               {labels.map((l, i) => (
                 <motion.g key={i} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8 + i * 0.3 }}>
                   {l.text.split('\n').map((line, j) => (
-                    <text key={j} x={toX(l.x)} y={toY(l.y) + (j === 0 ? -16 : -6)} fontSize="8" fill="#7c3aed" textAnchor={l.anchor} fontWeight="700">{line}</text>
+                    <text key={j} x={toX(l.x)} y={toY(l.y) + (j === 0 ? -16 : -6)} fontSize="8" fill="var(--module-solid)" textAnchor={l.anchor} fontWeight="700">{line}</text>
                   ))}
                 </motion.g>
               ))}
 
               {/* Axis labels */}
-              <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
-              <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
-              <text x={W / 2} y={H - 4} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">Actual Competence →</text>
-              <text x={8} y={H / 2} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600" transform={`rotate(-90, 8, ${H / 2})`}>Confidence →</text>
+              <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
+              <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
+              <text x={W / 2} y={H - 4} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">Actual Competence →</text>
+              <text x={8} y={H / 2} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600" transform={`rotate(-90, 8, ${H / 2})`}>Confidence →</text>
             </svg>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4 mt-4 text-sm">
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
-              <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">The Peak</strong> is where most students sit after just reading their notes. They feel confident because the material looks familiar — but they can't actually pull it out of their heads under exam conditions.</p>
+            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+              <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
+              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">The Peak</strong> is where most students sit after just reading their notes. They feel confident because the material looks familiar — but they can't actually pull it out of their heads under exam conditions.</p>
             </div>
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
-              <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Realistic Confidence</strong> is where well-prepared students land. They've tested themselves enough to know exactly what they know — and what they don't. Their confidence matches reality.</p>
+            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+              <span className="text-[var(--module-success-text)] text-lg mt-0.5"></span>
+              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Realistic Confidence</strong> is where well-prepared students land. They've tested themselves enough to know exactly what they know — and what they don't. Their confidence matches reality.</p>
             </div>
           </div>
         </MotionDiv>
@@ -364,14 +365,14 @@ const JOLTimingComparison = () => {
   };
 
   const immPhases = [
-    { label: 'Feels obvious', x1: 0, x2: 0.33, color: '#fca5a5' },
-    { label: 'Still confident', x1: 0.33, x2: 0.66, color: '#f87171' },
-    { label: 'Blind to decay', x1: 0.66, x2: 1, color: '#ef4444' },
+    { label: 'Feels obvious', x1: 0, x2: 0.33, color: "var(--module-ink)" },
+    { label: 'Still confident', x1: 0.33, x2: 0.66, color: "var(--module-danger-text)" },
+    { label: 'Blind to decay', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
   ];
   const delPhases = [
-    { label: 'Honest check', x1: 0, x2: 0.33, color: '#6ee7b7' },
-    { label: 'Tracks reality', x1: 0.33, x2: 0.66, color: '#34d399' },
-    { label: 'Calibrated', x1: 0.66, x2: 1, color: '#10b981' },
+    { label: 'Honest check', x1: 0, x2: 0.33, color: "var(--module-success-text)" },
+    { label: 'Tracks reality', x1: 0.33, x2: 0.66, color: "var(--module-success-text)" },
+    { label: 'Calibrated', x1: 0.66, x2: 1, color: "var(--module-success-text)" },
   ];
 
   const Chart = ({ confidence, recall, phases, areaColor, areaId, label }: {
@@ -386,67 +387,67 @@ const JOLTimingComparison = () => {
         </linearGradient>
       </defs>
       {[0.25, 0.5, 0.75, 1.0].map((v) => (
-        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
       ))}
-      <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+      <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
 
       {/* Confidence area */}
       <motion.path d={buildArea(confidence)} fill={`url(#${areaId})`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} />
       {/* Confidence line (solid) */}
       <motion.path d={buildLine(confidence)} fill="none" stroke={areaColor} strokeWidth="2.5" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, ease: 'easeOut' }} />
       {/* Recall line (dashed) */}
-      <motion.path d={buildLine(recall)} fill="none" stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }} />
+      <motion.path d={buildLine(recall)} fill="none" stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }} />
       {/* Confidence dots */}
       {confidence.map((v, i) => (
         <motion.circle key={i} cx={toX(i / (confidence.length - 1))} cy={toY(v)} r="3.5" fill={areaColor} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.3 }} />
       ))}
 
-      <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
-      <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
+      <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
+      <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
       {xLabels.map((m, i) => (
-        <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>
+        <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{m}</text>
       ))}
       {phases.map((p, i) => (
         <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
       ))}
-      <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{label}</text>
+      <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">{label}</text>
       <line x1={W - padR - 100} x2={W - padR - 84} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-      <text x={W - padR - 80} y={17} fontSize="8" fill="#a1a1aa">Confidence</text>
-      <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="4 2" />
-      <text x={W - padR - 24} y={17} fontSize="8" fill="#a1a1aa">Recall</text>
+      <text x={W - padR - 80} y={17} fontSize="8" fill="var(--module-surface)">Confidence</text>
+      <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="4 2" />
+      <text x={W - padR - 24} y={17} fontSize="8" fill="var(--module-surface)">Recall</text>
     </svg>
   );
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Timing Effect</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">When you check your learning changes everything.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-10" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Timing Effect</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">When you check your learning changes everything.</p>
 
       {!revealed ? (
         <div className="text-center">
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Right after studying, everything feels familiar. But what happens when you check your confidence 24 hours later?</p>
-          <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-violet-500 text-white hover:bg-violet-600 transition-colors">
+          <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Right after studying, everything feels familiar. But what happens when you check your confidence 24 hours later?</p>
+          <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-solid)] text-[var(--module-ink)] hover:bg-[var(--module-solid)] transition-colors" data-wide-button="true">
             Reveal the Timing Effect
           </button>
         </div>
       ) : (
         <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
           <div className="grid md:grid-cols-2 gap-4 mb-5">
-            <div className="rounded-lg border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 p-3">
-              <Chart confidence={immConfidence} recall={immRecall} phases={immPhases} areaColor="#ef4444" areaId="imm-grad" label="Checking Straight Away" />
+            <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] p-3">
+              <Chart confidence={immConfidence} recall={immRecall} phases={immPhases} areaColor="var(--module-danger-text)" areaId="imm-grad" label="Checking Straight Away" />
             </div>
-            <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
-              <Chart confidence={delConfidence} recall={delRecall} phases={delPhases} areaColor="#10b981" areaId="del-grad" label="Checking After 24 Hours" />
+            <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] p-3">
+              <Chart confidence={delConfidence} recall={delRecall} phases={delPhases} areaColor="var(--module-success-text)" areaId="del-grad" label="Checking After 24 Hours" />
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
-              <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Checking straight away</strong> tricks you because everything is still fresh. The material is still "in the room." Your confidence stays high while your actual memory of it collapses — creating a dangerous blind spot.</p>
+            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+              <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
+              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Checking straight away</strong> tricks you because everything is still fresh. The material is still "in the room." Your confidence stays high while your actual memory of it collapses — creating a dangerous blind spot.</p>
             </div>
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
-              <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Checking after a delay</strong> forces your brain to actually pull the information from memory. Your confidence drops — but it honestly reflects what you'll remember in the exam. The discomfort IS the honesty.</p>
+            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+              <span className="text-[var(--module-success-text)] text-lg mt-0.5"></span>
+              <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Checking after a delay</strong> forces your brain to actually pull the information from memory. Your confidence drops — but it honestly reflects what you'll remember in the exam. The discomfort IS the honesty.</p>
             </div>
           </div>
         </MotionDiv>
@@ -526,28 +527,28 @@ const TrafficLightAudit = () => {
   };
 
   const ratingColors = {
-    green: { bg: 'bg-emerald-100 dark:bg-emerald-900/30', border: 'border-emerald-400', text: 'text-emerald-700 dark:text-emerald-300', label: 'Green' },
-    amber: { bg: 'bg-amber-100 dark:bg-amber-900/30', border: 'border-amber-400', text: 'text-amber-700 dark:text-amber-300', label: 'Amber' },
-    red: { bg: 'bg-rose-100 dark:bg-rose-900/30', border: 'border-rose-400', text: 'text-rose-700 dark:text-rose-300', label: 'Red' },
+    green: { bg: "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)]", border: "border-[var(--module-line)]", text: "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]", label: 'Green' },
+    amber: { bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", border: "border-[var(--module-line)]", text: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", label: 'Amber' },
+    red: { bg: "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)]", border: "border-[var(--module-line)]", text: "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]", label: 'Red' },
   };
 
   if (phase === 'rate') {
     const allRated = Object.keys(ratings).length === AUDIT_TOPICS.length;
     return (
-      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Traffic Light Audit</h4>
-        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">Rate your knowledge of each concept honestly. Then we'll test you.</p>
+      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Traffic Light Audit</h4>
+        <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-8">Rate your knowledge of each concept honestly. Then we'll test you.</p>
         <div className="space-y-3">
           {AUDIT_TOPICS.map((t, i) => (
-            <div key={i} className="flex items-center justify-between p-4 bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-700">
-              <span className="font-semibold text-sm text-zinc-700 dark:text-zinc-200">{t.topic}</span>
+            <div key={i} className="flex items-center justify-between p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
+              <span className="font-semibold text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]">{t.topic}</span>
               <div className="flex gap-2">
                 {(['green', 'amber', 'red'] as Rating[]).map((r) => (
                   <button
                     key={r}
                     onClick={() => handleRate(i, r)}
-                    className={`w-8 h-8 rounded-full border-2 transition-all ${ratings[i] === r ? `${ratingColors[r].border} ${ratingColors[r].bg} scale-110` : 'border-zinc-300 dark:border-zinc-600 opacity-40 hover:opacity-70'}`}
-                    style={{ backgroundColor: ratings[i] === r ? undefined : r === 'green' ? '#d1fae5' : r === 'amber' ? '#fef3c7' : '#ffe4e6' }}
+                    className={`w-8 h-8 rounded-full border-2 transition-all ${ratings[i] === r ? `${ratingColors[r].border} ${ratingColors[r].bg} scale-110` : "border-[var(--module-line)] dark:border-[var(--module-line)] opacity-40 hover:opacity-70"}`}
+                    style={{ backgroundColor: moduleFill(ratings[i] === r ? undefined : r === 'green' ? "var(--module-success-soft)" : r === 'amber' ? "var(--module-surface)" : "var(--module-surface)") }} data-wide-button="true" data-selected={!!(ratings[i] === r)} data-tone="mint" aria-pressed={!!(ratings[i] === r)}
                   />
                 ))}
               </div>
@@ -556,7 +557,7 @@ const TrafficLightAudit = () => {
         </div>
         {allRated && (
           <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="mt-6 text-center">
-            <button onClick={startQuiz} className="px-6 py-3 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-xl transition-colors text-sm">
+            <button onClick={startQuiz} className="px-6 py-3 bg-[var(--module-solid)] hover:bg-[var(--module-solid)] text-[var(--module-ink)] font-bold rounded-xl transition-colors text-sm" data-wide-button="true">
               Now Test Me
             </button>
           </MotionDiv>
@@ -569,19 +570,19 @@ const TrafficLightAudit = () => {
     const t = AUDIT_TOPICS[quizStep];
     const r = ratings[quizStep];
     return (
-      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Traffic Light Audit</h4>
+      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Traffic Light Audit</h4>
         <div className="flex items-center justify-center gap-2 mt-2 mb-6">
-          <span className="text-xs text-zinc-400">Question {quizStep + 1} of {AUDIT_TOPICS.length}</span>
+          <span className="text-xs text-[var(--module-muted)]">Question {quizStep + 1} of {AUDIT_TOPICS.length}</span>
           <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${ratingColors[r].bg} ${ratingColors[r].text}`}>You rated: {ratingColors[r].label}</span>
         </div>
-        <p className="text-center font-semibold text-zinc-700 dark:text-zinc-200 mb-6">{t.question}</p>
+        <p className="text-center font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-6">{t.question}</p>
         <div className="space-y-2 max-w-lg mx-auto">
           {t.options.map((opt, i) => (
             <button
               key={i}
               onClick={() => handleQuizAnswer(i)}
-              className="w-full text-left p-3.5 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-violet-400 dark:hover:border-violet-600 hover:bg-violet-50 dark:hover:bg-violet-900/20 text-sm text-zinc-700 dark:text-zinc-200 transition-colors"
+              className="w-full text-left p-3.5 rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] hover:border-[var(--module-line)] dark:hover:border-[var(--module-line)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] transition-colors" data-wide-button="true"
             >
               {opt}
             </button>
@@ -599,10 +600,9 @@ const TrafficLightAudit = () => {
     if (answers[i] === t.correct) results[r].correct++;
   });
 
-  return (
-    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Audit Results</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">How well did your traffic lights match reality?</p>
+  return <div className="wr-skin" data-wide="TrafficLightAudit"><div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your Audit Results</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-8">How well did your traffic lights match reality?</p>
 
       <div className="grid grid-cols-3 gap-4 mb-6">
         {(['green', 'amber', 'red'] as Rating[]).map((r) => {
@@ -613,9 +613,9 @@ const TrafficLightAudit = () => {
               <p className={`text-2xl font-bold ${ratingColors[r].text}`}>
                 {results[r].total > 0 ? `${results[r].correct}/${results[r].total}` : '—'}
               </p>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">{ratingColors[r].label} rated</p>
+              <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1">{ratingColors[r].label} rated</p>
               {pct !== null && (
-                <p className={`text-xs mt-1 font-semibold ${isCalibrated ? 'text-emerald-600' : 'text-rose-600'}`}>
+                <p className={`text-xs mt-1 font-semibold ${isCalibrated ? "text-[var(--module-success-text)]" : "text-[var(--module-danger-text)]"}`}>
                   {pct}% correct
                 </p>
               )}
@@ -625,18 +625,17 @@ const TrafficLightAudit = () => {
       </div>
 
       {results.green.total > 0 && results.green.correct < results.green.total && (
-        <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="p-4 rounded-xl bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-800 text-sm text-rose-700 dark:text-rose-300 font-medium mb-4">
+        <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="p-4 rounded-xl bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)] text-sm text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] font-medium mb-4">
           You rated {results.green.total - results.green.correct} topic(s) as Green but got them wrong. These are your metacognitive blind spots — topics where you feel confident but aren't actually prepared. This is exactly what catches students in exams.
         </MotionDiv>
       )}
 
       <div className="mt-4 text-center">
-        <button onClick={reset} className="px-5 py-2.5 bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 text-zinc-700 dark:text-zinc-200 font-semibold rounded-xl transition-colors text-sm">
+        <button onClick={reset} className="px-5 py-2.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] font-semibold rounded-xl transition-colors text-sm" data-wide-button="true">
           Try Again
         </button>
       </div>
-    </div>
-  );
+    </div></div>;
 };
 
 // 5. PREDICTION TRACKER
@@ -688,22 +687,22 @@ const PredictionTracker = () => {
     const underconfident = results.filter((r) => !r.predicted && r.actual).length;
 
     return (
-      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Prediction Results</h4>
-        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-6">How accurately did you predict your own performance?</p>
+      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Prediction Results</h4>
+        <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-6">How accurately did you predict your own performance?</p>
 
         <div className="text-center mb-6">
-          <p className="text-4xl font-bold text-violet-600 dark:text-violet-400">{accuracy}%</p>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">Prediction Accuracy</p>
+          <p className="text-4xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{accuracy}%</p>
+          <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1">Prediction Accuracy</p>
         </div>
 
         <div className="space-y-2 mb-6">
           {results.map((r, i) => (
-            <div key={i} className={`flex items-center justify-between p-3 rounded-lg text-sm ${r.predicted === r.actual ? 'bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800' : 'bg-rose-50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-800'}`}>
-              <span className="text-zinc-700 dark:text-zinc-200 font-medium">{r.question}</span>
+            <div key={i} className={`flex items-center justify-between p-3 rounded-lg text-sm ${r.predicted === r.actual ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]" : "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]"}`}>
+              <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)] font-medium">{r.question}</span>
               <div className="flex items-center gap-2 shrink-0 ml-3">
-                <span className={`text-xs font-bold ${r.actual ? 'text-emerald-600' : 'text-rose-600'}`}>{r.actual ? 'Correct' : 'Wrong'}</span>
-                <span className={`text-xs px-2 py-0.5 rounded-full ${r.predicted === r.actual ? 'bg-emerald-200 text-emerald-700' : 'bg-rose-200 text-rose-700'}`}>
+                <span className={`text-xs font-bold ${r.actual ? "text-[var(--module-success-text)]" : "text-[var(--module-danger-text)]"}`}>{r.actual ? 'Correct' : 'Wrong'}</span>
+                <span className={`text-xs px-2 py-0.5 rounded-full ${r.predicted === r.actual ? "bg-[var(--module-success-soft)] text-[var(--module-success-text)]" : "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)]"}`}>
                   {r.predicted === r.actual ? 'Predicted' : r.predicted ? 'Overconfident' : 'Underconfident'}
                 </span>
               </div>
@@ -712,18 +711,18 @@ const PredictionTracker = () => {
         </div>
 
         {overconfident > 0 && (
-          <p className="text-sm text-rose-600 dark:text-rose-400 font-medium mb-2">
+          <p className="text-sm text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] font-medium mb-2">
             You predicted correctly {overconfident} time(s) but were wrong — these are blind spots.
           </p>
         )}
         {underconfident > 0 && (
-          <p className="text-sm text-amber-600 dark:text-amber-400 font-medium mb-2">
+          <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] font-medium mb-2">
             You doubted yourself {underconfident} time(s) but were actually right — trust your knowledge more.
           </p>
         )}
 
         <div className="mt-4 text-center">
-          <button onClick={reset} className="px-5 py-2.5 bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 text-zinc-700 dark:text-zinc-200 font-semibold rounded-xl transition-colors text-sm">
+          <button onClick={reset} className="px-5 py-2.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] font-semibold rounded-xl transition-colors text-sm" data-wide-button="true">
             Try Again
           </button>
         </div>
@@ -734,21 +733,21 @@ const PredictionTracker = () => {
   const q = PREDICTION_QUESTIONS[step];
 
   return (
-    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Prediction Tracker</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-6">Predict first, then answer. See how well you really know what you know.</p>
-      <div className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-4">Question {step + 1} of {PREDICTION_QUESTIONS.length}</div>
+    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Prediction Tracker</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 mb-6">Predict first, then answer. See how well you really know what you know.</p>
+      <div className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Question {step + 1} of {PREDICTION_QUESTIONS.length}</div>
 
-      <div className="p-5 bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-700 mb-6">
-        <p className="text-center font-semibold text-zinc-700 dark:text-zinc-200">{q.question}</p>
+      <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] mb-6">
+        <p className="text-center font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{q.question}</p>
       </div>
 
       {phase === 'predict' ? (
         <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} key="pred">
-          <p className="text-center text-sm font-medium text-zinc-600 dark:text-zinc-300 mb-4">Do you think you'll get this right?</p>
+          <p className="text-center text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-4">Do you think you'll get this right?</p>
           <div className="flex justify-center gap-4">
-            <button onClick={() => handlePredict(true)} className="px-8 py-3 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 hover:bg-emerald-200 dark:hover:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 font-bold text-sm border border-emerald-200 dark:border-emerald-800 transition-colors">Yes, I know this</button>
-            <button onClick={() => handlePredict(false)} className="px-8 py-3 rounded-xl bg-amber-100 dark:bg-amber-900/30 hover:bg-amber-200 dark:hover:bg-amber-900/50 text-amber-700 dark:text-amber-300 font-bold text-sm border border-amber-200 dark:border-amber-800 transition-colors">Not sure</button>
+            <button onClick={() => handlePredict(true)} className="px-8 py-3 rounded-xl bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] hover:bg-[var(--module-success-soft)] dark:hover:bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:text-[var(--module-success-text)] font-bold text-sm border border-[var(--module-line)] dark:border-[var(--module-line)] transition-colors" data-wide-button="true">Yes, I know this</button>
+            <button onClick={() => handlePredict(false)} className="px-8 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] font-bold text-sm border border-[var(--module-line)] dark:border-[var(--module-line)] transition-colors" data-wide-button="true">Not sure</button>
           </div>
         </MotionDiv>
       ) : (
@@ -758,7 +757,7 @@ const PredictionTracker = () => {
               <button
                 key={i}
                 onClick={() => handleAnswer(i)}
-                className="w-full text-left p-3.5 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-violet-400 dark:hover:border-violet-600 hover:bg-violet-50 dark:hover:bg-violet-900/20 text-sm text-zinc-700 dark:text-zinc-200 transition-colors"
+                className="w-full text-left p-3.5 rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] hover:border-[var(--module-line)] dark:hover:border-[var(--module-line)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] transition-colors" data-wide-button="true"
               >
                 {opt}
               </button>

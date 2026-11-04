@@ -1,0 +1,9 @@
+from paper_review_lib import record
+record(2019, 'ordinary', {
+  'LC033GLP000EV.pdf': dict(scheme=list(range(4, 33)), choices=['bus-2019-ol-s2-q2a', 'bus-2019-ol-s2-q7c'], notes=[
+    'Visually reviewed all sixteen pages of the 2019 Ordinary paper (one booklet; answer ten of fifteen short questions at 10 marks and four of eight long questions at 75): the cover and mark grid, the fifteen short questions on pages 2-6 (including the two phones, the memorandum frame, the channel-of-distribution chart and the product-life-cycle table), the eight long questions on pages 7-14 (every extract, the government-expenditure panel, the export and import figures, the SuperClothes job advertisement and the underlined sources of finance) and the two blank pages.',
+    'Each task was checked against the allocation summary on scheme pages 29-32 and the expected responses on pages 4-28 (ticks, circles and the organisation chart read from the rendered pages). No 2019 Ordinary card existed, so all 72 are new. Where the support page prints a different split (Section 1 Q4 3 + 2 for each advantage) the card follows the summary (6 + 4) and says so. Calculations keep their printed lines: the current ratio 3/4/3, the balance of payments 2 + 2 + 2 and 4, Orla’s pay 3 + 2 per part, Fiona’s deductions 2/3/3/2 and net salary 3/3/4.',
+    'Two printed choices are one card each: Section 2 Q2(A) a bar chart or a line graph (one grid, one topic) and Q7(C) any three of the five underlined sources of finance (8/8/4, marked alike). Section 1 Q14 and Section 2 Q2(C) are open choices.',
+    'All nineteen raw selection matches are classified. Topic Atlas uses the single-booklet identity: short questions by number, long questions as S2Q1-S2Q8.',
+    'This source-pinned record covers the English Ordinary paper only. Source hashes and exact ID sets detect stale evidence; parser counts do not independently prove completeness.']),
+})

@@ -1,0 +1,1475 @@
+{
+  "year": 2014,
+  "level": "higher",
+  "fileid": "LC032ALP000IV.pdf",
+  "englishReview": "2014-higher.json",
+  "englishReviewSha256": "2eea93faec06084393312757a89e88f2fde897b9d6d495bde498fcadb8ca6823",
+  "reviewedAt": "2026-10-07",
+  "reviewedBy": "Codex visual PDF audit",
+  "paperSha256": "aac3a9ad022952e74754dfe3e89626c365fa98c884872d7ceb9cf5213c39c9e1",
+  "schemeSha256": "922344899d7183100691dbb0403fb10e285ed27042c63f5e2159b2c801d4114e",
+  "visualPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "visualSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "markingGuidePages": [
+    3
+  ],
+  "questionReview": [
+    {
+      "questionNumber": 1,
+      "note": "Same Matt Mahon / Maidhc Mic Mhathúna sole-trader trial balance and nine adjustments: final profit/loss 75 and balance sheet 45. Irish scheme labels investments 8% on PDF 5 despite the 3% paper and correct 3% calculation."
+    },
+    {
+      "questionNumber": 2,
+      "note": "Same Doyle / Ó Dúill cash-flow statements and three additional facts: operating reconciliation 18, statement 28, net-debt reconciliation 5, cash-versus-profit explanation 6 and three open company obligations 3."
+    },
+    {
+      "questionNumber": 3,
+      "note": "Same Danner published accounts with six adjustments: profit/loss 36, four required notes 15, three open director-report items 3 and exceptional item with example 6."
+    },
+    {
+      "questionNumber": 4,
+      "note": "Same B. Hogan / B. Ó hÓgáin six creditor corrections; control 24, corrected schedule 28, contra meaning 4 and opening debit-balance explanation 4."
+    },
+    {
+      "questionNumber": 5,
+      "note": "Same Shannon / Sionainn figures and expansion proposal; five ratios 12/8/10/12/8, lending recommendation 40 and liquidity-versus-solvency response 10."
+    },
+    {
+      "questionNumber": 6,
+      "note": "Same Sáimh gym/health centre and shop records: reserves 18, shop profit 10, profit/loss 36, balance sheet 30 and arguments against fee increase 6."
+    },
+    {
+      "questionNumber": 7,
+      "note": "Same E. Kenny / E. Ó Caingne five error cases: journal 54, suspense 6, profit 14, balance sheet 20 and three open trial-balance error types 6."
+    },
+    {
+      "questionNumber": 8,
+      "note": "Same Murphy / Ó Murchú marginal-cost cases, including break-even 10, safety margin 6 and graph 8; three further calculations 10/12/12. Barry / De Barra requires both marginal 7 and absorption 6 statements, differences 6 and reporting-method explanation 3. Irish graph is upright on PDF 18."
+    },
+    {
+      "questionNumber": 9,
+      "note": "Same Crowley / Ó Crualaoi Micro/Excel forecasts and two-material requirements: production 16, purchases 20, manufacturing 23, trading 13, shared cash-budget definition/advantages 6 and two open principal factors 2."
+    }
+  ],
+  "taskCorrespondence": [
+    {
+      "englishTaskKey": "1(a)",
+      "paperPages": [
+        2
+      ],
+      "schemeRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 75
+    },
+    {
+      "englishTaskKey": "1(b)",
+      "paperPages": [
+        2
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 45
+    },
+    {
+      "englishTaskKey": "2(a)-operating-reconciliation",
+      "paperPages": [
+        3
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 18
+    },
+    {
+      "englishTaskKey": "2(a)-cash-flow",
+      "paperPages": [
+        3
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 28
+    },
+    {
+      "englishTaskKey": "2(a)-net-debt",
+      "paperPages": [
+        3
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 5
+    },
+    {
+      "englishTaskKey": "2(b)(i)",
+      "paperPages": [
+        3
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "englishTaskKey": "2(b)(ii)",
+      "paperPages": [
+        3
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 3
+    },
+    {
+      "englishTaskKey": "3(a)-profit-and-loss",
+      "paperPages": [
+        4
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 36
+    },
+    {
+      "englishTaskKey": "3(a)-notes",
+      "paperPages": [
+        4
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 15
+    },
+    {
+      "englishTaskKey": "3(b)(i)",
+      "paperPages": [
+        4
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 3
+    },
+    {
+      "englishTaskKey": "3(b)(ii)",
+      "paperPages": [
+        4
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "englishTaskKey": "4(a)",
+      "paperPages": [
+        5
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 24
+    },
+    {
+      "englishTaskKey": "4(b)",
+      "paperPages": [
+        5
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 28
+    },
+    {
+      "englishTaskKey": "4(c)(i)",
+      "paperPages": [
+        5
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 4
+    },
+    {
+      "englishTaskKey": "4(c)(ii)",
+      "paperPages": [
+        5
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 4
+    },
+    {
+      "englishTaskKey": "5(a)(i)",
+      "paperPages": [
+        6
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 12
+    },
+    {
+      "englishTaskKey": "5(a)(ii)",
+      "paperPages": [
+        6
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 8
+    },
+    {
+      "englishTaskKey": "5(a)(iii)",
+      "paperPages": [
+        6
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 10
+    },
+    {
+      "englishTaskKey": "5(a)(iv)",
+      "paperPages": [
+        6
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 12
+    },
+    {
+      "englishTaskKey": "5(a)(v)",
+      "paperPages": [
+        6
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 8
+    },
+    {
+      "englishTaskKey": "5(b)",
+      "paperPages": [
+        6
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 40
+    },
+    {
+      "englishTaskKey": "5(c)",
+      "paperPages": [
+        6
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 10
+    },
+    {
+      "englishTaskKey": "6(a)",
+      "paperPages": [
+        7
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 18
+    },
+    {
+      "englishTaskKey": "6(b)",
+      "paperPages": [
+        7
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 10
+    },
+    {
+      "englishTaskKey": "6(c)",
+      "paperPages": [
+        7
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 36
+    },
+    {
+      "englishTaskKey": "6(d)",
+      "paperPages": [
+        7
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 30
+    },
+    {
+      "englishTaskKey": "6(e)",
+      "paperPages": [
+        7
+      ],
+      "schemeRegions": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "englishTaskKey": "7(a)",
+      "paperPages": [
+        8
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 54
+    },
+    {
+      "englishTaskKey": "7(b)",
+      "paperPages": [
+        8
+      ],
+      "schemeRegions": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "englishTaskKey": "7(c)",
+      "paperPages": [
+        8
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 14
+    },
+    {
+      "englishTaskKey": "7(d)",
+      "paperPages": [
+        8
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 20
+    },
+    {
+      "englishTaskKey": "7(e)",
+      "paperPages": [
+        8
+      ],
+      "schemeRegions": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "englishTaskKey": "8(a)(i)-break-even",
+      "paperPages": [
+        9
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 10
+    },
+    {
+      "englishTaskKey": "8(a)(i)-margin-of-safety",
+      "paperPages": [
+        9
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "englishTaskKey": "8(a)(ii)",
+      "paperPages": [
+        9
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 8
+    },
+    {
+      "englishTaskKey": "8(a)(iii)",
+      "paperPages": [
+        9
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 10
+    },
+    {
+      "englishTaskKey": "8(a)(iv)",
+      "paperPages": [
+        9
+      ],
+      "schemeRegions": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 12
+    },
+    {
+      "englishTaskKey": "8(a)(v)",
+      "paperPages": [
+        9
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 12
+    },
+    {
+      "englishTaskKey": "8(b)(i)-marginal",
+      "paperPages": [
+        9
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 7
+    },
+    {
+      "englishTaskKey": "8(b)(i)-absorption",
+      "paperPages": [
+        9
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "englishTaskKey": "8(b)(ii)-differences",
+      "paperPages": [
+        9
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "englishTaskKey": "8(b)(ii)-financial-reporting",
+      "paperPages": [
+        9
+      ],
+      "schemeRegions": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 3
+    },
+    {
+      "englishTaskKey": "9(a)",
+      "paperPages": [
+        10
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 16
+    },
+    {
+      "englishTaskKey": "9(b)",
+      "paperPages": [
+        10
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 20
+    },
+    {
+      "englishTaskKey": "9(c)",
+      "paperPages": [
+        10
+      ],
+      "schemeRegions": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 23
+    },
+    {
+      "englishTaskKey": "9(d)",
+      "paperPages": [
+        10
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 20,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 13
+    },
+    {
+      "englishTaskKey": "9(e)(i)",
+      "paperPages": [
+        10
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 6
+    },
+    {
+      "englishTaskKey": "9(e)(ii)",
+      "paperPages": [
+        10
+      ],
+      "schemeRegions": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "marks": 2
+    }
+  ],
+  "selectionReview": [
+    {
+      "page": 1,
+      "text": "Tá ceithre cheist sa roinn seo (Uimhir 1 - 4).  Tá 120 marc ag gabháil leis an gcéad cheist agus 60 marc an ceann",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 1,
+      "text": "ag gabháil leis na trí cheist eile.",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 1,
+      "text": "Ba chóir d’iarrthóirí CEIST 1 amháin a fhreagairt NÓ tabhairt faoi DHÁ cheann ar bith de na trí cheist eile",
+      "classification": "paper-level-choice",
+      "reason": "Outer examination question choice; every question is retained as in the English edition."
+    },
+    {
+      "page": 1,
+      "text": "Tá trí cheist sa roinn seo (Uimhir 5 - 7).  Tá 100 marc ag gabháil le gach ceist díobh.",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 1,
+      "text": "Ba chóir d’iarrthóirí DHÁ cheann ar bith de na ceisteanna a fhreagairt.",
+      "classification": "paper-level-choice",
+      "reason": "Outer examination question choice; every question is retained as in the English edition."
+    },
+    {
+      "page": 1,
+      "text": "Tá dhá cheist sa roinn seo (Uimhir 8 agus 9).  Tá 80 marc ag gabháil le gach ceist díobh.",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 1,
+      "text": "Ba chóir d’iarrthóirí ceann AMHÁIN de na ceisteanna seo a fhreagairt.",
+      "classification": "paper-level-choice",
+      "reason": "Outer examination question choice; every question is retained as in the English edition."
+    },
+    {
+      "page": 1,
+      "text": "á bhfreagairt.  Tá sé fíorthábhachtach go dtaispeánfar an t-oibriú amach",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 2,
+      "text": "Freagair Ceist 1 NÓ DHÁ cheist ar bith eile",
+      "classification": "paper-level-choice",
+      "reason": "Outer examination question choice; every question is retained as in the English edition."
+    },
+    {
+      "page": 2,
+      "text": "Ús Morgáiste a íocadh don chéad trí mhí  .........................................",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 2,
+      "text": "mícheart leis mar cheannachán stoc trádála.  Ní dhearnadh iontráil ar bith eile sna leabhair maidir",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 2,
+      "text": "nár iontráladh ach sa chuntas bainc amháin.",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 2,
+      "text": "athstocála de 10% den chostas ceannaigh.  Ní dhearnadh aon iontráil maidir leis an táille",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 2,
+      "text": "Tá paitinní, a bhfuil ioncam infheistíochta 3 mhí cuimsithe iontu, le díscríobh thar thréimhse cúig",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 2,
+      "text": "dhrochfhiach.  Ní dhearnadh iontráil ar bith sna leabhair chun an beart sin a thaifeadadh.",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 3,
+      "text": "Lúide Creidiúnaithe: suimeanna dlite laistigh de 1 bhliain amháin",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 3,
+      "text": "Creidiúnaithe: suimeanna dlite tar éis níos mó ná 1 bhliain amháin",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 3,
+      "text": "Níor diúscraíodh foirgneamh ar bith le linn na bliana ach fuarthas seilbh ar fhoirgnimh nua.",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 3,
+      "text": "Níor ceannaíodh innealra ar bith le linn na bliana.  Rinneadh innealra a dhiúscairt ar €30,000.",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 3,
+      "text": "Luaigh trí oibleagáid chuntasaíochta ar chuideachta mhór phoiblí de réir Acht na",
+      "classification": "open-response",
+      "reason": "Three open accounting obligations; no finite printed pool."
+    },
+    {
+      "page": 4,
+      "text": "Tá soláthar le déanamh do dhímheas ar fhoirgnimh de réir ráta 2% méid chothrom agus tá sé le",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 4,
+      "text": "cionroinnt, 25% ar chostais dáileacháin agus 75% ar speansais riaracháin.  Níor tharla aon",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 4,
+      "text": "cheannachán ná aon díolachán foirgneamh le linn na bliana.  Tá dímheas le déanamh ar fheithiclí",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 4,
+      "text": "Luaigh trí mhír eolais a chaithfidh a bheith san áireamh i dTuarascáil an Stiúrthóra.",
+      "classification": "open-response",
+      "reason": "Three open director-report items; no finite printed pool."
+    },
+    {
+      "page": 5,
+      "text": "(iii) Ghearr creidiúnaí ús de €110 ar Ó hÓgáin ar chuntas a bhí dlite thar téarma.  Ba é an t-aon",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 5,
+      "text": "Ach nuair a bhí sé á bhreacadh sa mhórleabhar ón leabhar seo ní dhearnadh iontráil ar bith sa",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 5,
+      "text": "dhearnadh aon iontráil eile sna leabhair maidir leis an nóta creidmheasa.",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 5,
+      "text": "Fuarthas nóta creidmheasa ó sholáthraí do €313.  Ba é an t-aon iontráil a breacadh sna leabhair",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 6,
+      "text": "Freagair DHÁ cheist ar bith",
+      "classification": "paper-level-choice",
+      "reason": "Outer examination question choice; every question is retained as in the English edition."
+    },
+    {
+      "page": 6,
+      "text": "Lúide Creidiúnaithe: suimeanna dlite laistigh de 1 bhliain amháin",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 6,
+      "text": "Luach margaidh de ghnáthscair amháin €1.30",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 6,
+      "text": "Iarrtar ort iad seo a leanas a ríomh do 2013: (déan an t-áireamh go dtí dhá ionad dheachúlacha de",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 6,
+      "text": "Cá fhad a thógfadh sé ar ghnáthscair amháin a luach margaidh in 2013 a aisghabháil,",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 6,
+      "text": "Luach margaidh gnáthscaire amháin",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 7,
+      "text": "ar 01/04/2013 mar aon le",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 7,
+      "text": "Déantar an glantachán, ar chonradh, atá iníoctha roimh ré go míosúil agus cuimsíonn sé íocaíocht",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 8,
+      "text": "Lúide Creidiúnaithe: suimeanna dlite laistigh de 1 bhliain amháin",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 8,
+      "text": "breacadh é sin i gceart sna leabhair.  Ach ní dhearnadh aon iontráil sna leabhair faoi obadh",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 8,
+      "text": "athstocála de €800 i leith chostas an aischuir.  Ba é an t-aon iontráil a rinneadh i leith an nóta",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 8,
+      "text": "iomláine.  Tugadh ticéad amháin do dhíoltóir mar pháirtíocaíocht ar choimisiún díolacháin i",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 8,
+      "text": "fhiach de €3,250.  Ní dhearnadh aon iontráil sna leabhair.",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 8,
+      "text": "Bronnadh carr príobháideach Uí Chaingne dar luach €8,800 ar an ngnólacht.  Thóg sé",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 8,
+      "text": "reoiteoir úsáid as an ngnó ag luach comhaontaithe de €800.  Ba é an t-aon iontráil a rinneadh",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 8,
+      "text": "Luaigh trí chineál earráidí a mbíonn tionchar acu ar chomhardú Comhardú Trialach.",
+      "classification": "open-response",
+      "reason": "Three open trial-balance error types; no finite printed pool."
+    },
+    {
+      "page": 9,
+      "text": "Táirgeann Ó Murchú Teo aon táirge amháin.  Mar seo a leanas a bhí cuntas brabúis agus caillteanais na",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 9,
+      "text": "An brabús a d’fhéadfadh an chuideachta a dhéanamh in 2014 dá laghdódh sí a praghas díola",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 9,
+      "text": "de 5%, dá méadódh sí a caiteachas fógraíochta de €5,000  agus dá n-ardódh sí líon na",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 9,
+      "text": "ndíolachán go dtí 19,000 aonad mar thoradh air sin, gan aon athrú ar aon leibhéal ná",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 9,
+      "text": "An brabús a d’fhéadfadh an chuideachta a dhéanamh in 2014 dá dtabharfaí coimisiún de 5%",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 9,
+      "text": "de na díolacháin don fhoireann díolacháin agus dá gcaithfí €1 sa bhreis in aghaidh an aonaid",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 9,
+      "text": "ar phacáistiú nua, dhá rud a d’fhágfadh go n-ardódh na díolacháin go dtí 17,000 aonad ar €34",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 9,
+      "text": "Freagair ceist AMHÁIN",
+      "classification": "paper-level-choice",
+      "reason": "Outer examination question choice; every question is retained as in the English edition."
+    },
+    {
+      "page": 10,
+      "text": "Tá súil acu dhá tháirge a dhíol – Micro ar €240 agus Excel ar €300.",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 10,
+      "text": "Úsáidtear na hamhábhair agus an saothar oilte céanna leis an dá tháirge a dhéanamh, ach i",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 10,
+      "text": "Ullmhaigh Cuntas Trádála Buiséadaithe (más é costas buiséadaithe aonaid amháin Micro agus",
+      "classification": "not-a-selection",
+      "reason": "The word occurs in source data, a time period, a required calculation or general instructions; it does not offer an optional answer route."
+    },
+    {
+      "page": 10,
+      "text": "Mínigh cad is brí le Buiséad Airgid agus mínigh dhá bhuntáiste a bhaineann le",
+      "classification": "open-response",
+      "reason": "Two open cash-budget benefits within the shared response."
+    },
+    {
+      "page": 10,
+      "text": "d’eagraíochtaí.  Luaigh dhá thoisc eile a d’fhéadfaí a mheas mar Phríomhthoisc",
+      "classification": "open-response",
+      "reason": "Two open principal budget factors; scheme examples are not a printed paper menu."
+    }
+  ],
+  "uniqueAdditionalTasks": [],
+  "decision": "The visually reviewed Irish paper and marking scheme contain the same selectable tasks as the reviewed English edition. Differences and source issues are recorded per question. No additional logical task was found."
+}

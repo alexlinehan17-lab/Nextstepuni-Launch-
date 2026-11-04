@@ -45,6 +45,22 @@
           "mockQuestionCount": 23
         },
         {
+          "id": "agricultural-science-higher-animal-physiology-circulatory-system",
+          "label": "Animal Physiology - Circulatory System",
+          "sourcePath": "https://www.examinations.ie/archive/exampapers/2011/LC024ALP000EV.pdf",
+          "officialQuestionHeadings": [],
+          "mockQuestionCount": 0,
+          "sourceNote": "Added from SEC 2011 Higher Q5(b): original mammalian heart. Crosswalks to the registered Animal Physiology curriculum node. This is an SEC-derived browse topic, not an additional commercial-reference heading."
+        },
+        {
+          "id": "agricultural-science-higher-animal-physiology-respiratory-system",
+          "label": "Animal Physiology - Respiratory System",
+          "sourcePath": "https://www.examinations.ie/archive/exampapers/2012/LC024ALP000EV.pdf",
+          "officialQuestionHeadings": [],
+          "mockQuestionCount": 0,
+          "sourceNote": "Added from SEC 2012 Higher Q1(d): alveolus location and gas exchange. Crosswalks to the registered Animal Physiology node; no new curriculum node."
+        },
+        {
           "id": "agricultural-science-higher-animal-physiology-digestive-system",
           "label": "Animal Physiology - Digestive System",
           "sourcePath": "/leaving-certificate/agricultural-science/higher/animal-physiology-digestive-system",

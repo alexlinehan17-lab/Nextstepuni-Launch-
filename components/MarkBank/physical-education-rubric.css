@@ -1,0 +1,15 @@
+.mb-pe-rubric { color: var(--mb-ink); font: 400 13px/1.55 var(--font-sans, 'DM Sans', sans-serif); }
+.mb-pe-rubric .mb-pe-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.mb-pe-rubric .mb-pe-heading { font: 600 19px/1.35 var(--font-serif, 'Source Serif 4', Georgia, serif); margin: 6px 0 16px; }
+.mb-pe-rubric .mb-source-material-trigger { width: 100%; margin: 0 0 20px; border: 1.5px solid var(--mb-border); border-radius: 10px; }
+.mb-pe-requirement { margin: 0 0 10px; color: var(--mb-muted); font-size: 12px; }
+/* Each criterion: its name and running total, then its rows (claim-rows.css). */
+.mb-pe-criterion { border-top: 1px solid var(--mb-muted-border, #bdb7af); padding: 14px 0; display: grid; gap: 7px; }
+.mb-pe-criterion-title, .mb-pe-total { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+.mb-pe-criterion-title strong { font-size: 14.5px; }
+.mb-pe-caption { margin: 0; font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-pe-guidance { margin: 0; color: var(--mb-muted); }
+.mb-pe-notes { margin: 2px 0 0; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-pe-total { border-top: 1px solid var(--mb-muted-border, #bdb7af); padding: 14px 0; }
+.mb-pe-total strong { font-size: 20px; font-variant-numeric: tabular-nums; }
+.mb-pe-rubric .mb-pe-note { font-size: 11px; line-height: 1.55; }

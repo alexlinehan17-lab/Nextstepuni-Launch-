@@ -1,0 +1,9 @@
+from paper_review_lib import record
+record(2010, 'ordinary', {
+  'LC033GLP000EV.pdf': dict(scheme=list(range(3, 20)), choices=[], notes=[
+    'Visually reviewed all twelve pages of the 2010 Ordinary paper (one booklet; answer ten of fifteen short questions at 10 marks and four of eight long questions at 75: one from Part 1, two from Part 2 and one other): the cover and mark grid, the fifteen short questions on pages 2-5 (including the PR/CV/SWOT table, the Casey Ltd figures, the sector tick table, the tax-terms matching table, the memo frame, the true/false table and the chain-of-distribution boxes), the eight long questions on pages 6-11 (every extract, the Live Register table, the underlined insurance terms, the Cohan IT advertisement and the marketing-mix diagram) and the blank page 12.',
+    'Each task was checked against the allocation summary on scheme pages 3-7 and the support notes on pages 9-19. No 2010 Ordinary card existed, so all 60 are new. Printed sub-parts with their own published marks are separate cards (Section 2 Q1(A), Q1(B), Q2(C), Q3(A), Q3(B), Q5(B), Q5(D), Q6(A), Q7(D) and Q8(B)). Q8(A) prints (i) and (ii) inside one sentence, so it is one card whose two response groups carry the summary’s two sub-totals; the sector ticks are read from the rendered scheme page.',
+    'No printed choice of task occurs. Q4(D) asks the candidate to explain one of the two sources they named, and Section 1 Q15 asks for three business-plan headings of their own; both lists are the candidate’s.',
+    'All raw selection matches are classified, including the twelve printed page counters. Topic Atlas uses the single-booklet identity: short questions by number, long questions as S2Q1-S2Q8.',
+    'This source-pinned record covers the English Ordinary paper only. Source hashes and exact ID sets detect stale evidence; parser counts do not independently prove completeness.']),
+})

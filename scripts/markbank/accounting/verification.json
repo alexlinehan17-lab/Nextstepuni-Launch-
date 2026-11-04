@@ -1,0 +1,1288 @@
+{
+  "subjectId": "accounting",
+  "verifiedAt": "2026-10-12",
+  "accountingChecksPassed": true,
+  "scope": "Local Paper Trail Accounting corpus, 2010–2026, both levels and both language editions. Translations are reconciled to the same logical tasks.",
+  "tasks": {
+    "higher": 721,
+    "ordinary": 644,
+    "total": 1365
+  },
+  "atlasLogicalRows": 1656,
+  "preservedLogicalParentQuestions": 306,
+  "openAccountingIssues": [],
+  "orphanAccountingTasks": [],
+  "checks": {
+    "targetedAndSharedReaderRegressions": "399 tests passed across the same 9 files, one worker (markBankAccounting, markBankCardPreservation, curriculumRegistry, markBankDeck, examTopicRegistry, markBankEnglish, markBankIrish, markBankSession, paperRegion; --maxWorkers=1)",
+    "applicationTypecheck": "passed (npm run typecheck, 0 errors)",
+    "testTypecheck": "passed (npm run typecheck:test, 0 errors)",
+    "productionBuild": "passed (existing chunk-size warning)",
+    "changedFilesLint": "passed, zero warnings (the recorded 16-file eslint command with --max-warnings 0; npm run lint over the whole repository also passed)",
+    "diffWhitespace": "passed: git diff --check is clean on the working tree, and the branch diff from main 6652f80cc is clean for every verified code and data file. Only the 34 generated scheme text extracts (examiner-reports/accounting/schemes/*.md, the PDF text written verbatim by build.py) carry the PDF’s trailing spaces.",
+    "sourceReconciliation": "19,944 checks passed; 68 editions; 1,365 tasks; zero open issues or orphan tasks",
+    "browser": "5 scenarios (2022 HL Q6(c), 2010 OL Q2, 2025 HL Q8(f), 2023 HL Q4, 2022 OL Q4) x 5 views: desktop 1440×1000, phone 390×844 light and dark, Atlas phone 390×844 light and dark (the Atlas card stays white in dark mode by design). Reveal gating, PDF loading, 270-degree table correction (2010 OL Q2, 2023 HL Q4, 2022 OL Q4), graph display (2025 HL Q8(f)), 300% zoom, horizontal/vertical pan, next page, Escape and focus restoration all passed; 25/25 runs with zero page or console errors, no failed requests and no horizontal overflow. Screenshots visually inspected.",
+    "fullSuite": "npx vitest run: 310/311 files and 6,439/6,440 tests passed. The one failure is test/musicExamTopics.test.ts timing out at 30 s under full-suite load (it shells out to Python); run alone it passes 21/21. Unrelated to Accounting."
+  },
+  "unrelatedRepositoryLimitation": {
+    "command": "npx vitest run",
+    "errors": [
+      "test/musicExamTopics.test.ts: timed out in 30000 ms under full-suite load"
+    ],
+    "note": "Music corpus test; passes alone (21/21). npm run typecheck:test, recorded here on 2026-10-07 as failing on three programme-analytics errors, now passes with 0 errors."
+  },
+  "schemeFallbacks": "2020 Irish Higher and Ordinary schemes are absent from the local corpus. Their translated papers were visually compared task by task; the reviewed English schemes are explicitly recorded as fallbacks.",
+  "cardIdsSha256": "948eca8b9e7bdb291865c7f94afeb880c13c6597cb1e11512c7591bef77ca415",
+  "cardDataSha256": "6b8c82b04570092f0607650ea6a330d84c703448515a5fba5540782cb20526dc",
+  "browserEvidence": [
+    {
+      "scenario": "browser-2010-2-ordinary",
+      "results": [
+        {
+          "name": "desktop",
+          "errors": [],
+          "canvas": {
+            "width": 3228,
+            "height": 2281
+          },
+          "before": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 1064,
+            "height": 752
+          },
+          "after": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 3228,
+            "height": 2281
+          },
+          "panRange": {
+            "width": 1118,
+            "total": 3282
+          },
+          "scrollLeft": 2164
+        },
+        {
+          "name": "phone",
+          "errors": [],
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748
+        },
+        {
+          "name": "atlas-phone",
+          "errors": [],
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748
+        }
+      ]
+    },
+    {
+      "scenario": "browser-2025-8(f)-higher",
+      "results": [
+        {
+          "name": "desktop",
+          "errors": [],
+          "canvas": {
+            "width": 3145,
+            "height": 4450
+          },
+          "before": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 1064,
+            "height": 1505
+          },
+          "after": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 3145,
+            "height": 4450
+          },
+          "panRange": {
+            "width": 1118,
+            "total": 3282
+          },
+          "scrollLeft": 2164
+        },
+        {
+          "name": "phone",
+          "errors": [],
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748
+        },
+        {
+          "name": "atlas-phone",
+          "errors": [],
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748
+        }
+      ]
+    },
+    {
+      "scenario": "browser-2010-2-ordinary",
+      "recordedAt": "2026-10-12",
+      "results": [
+        {
+          "name": "desktop",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 1440,
+            "innerWidth": 1440,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 3228,
+            "height": 2281
+          },
+          "before": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 1064,
+            "height": 752
+          },
+          "after": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 3228,
+            "height": 2281
+          },
+          "panRange": {
+            "width": 1118,
+            "total": 3282
+          },
+          "scrollLeft": 2164,
+          "scrollTop": 1599,
+          "nextPage": true
+        },
+        {
+          "name": "phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        }
+      ]
+    },
+    {
+      "scenario": "browser-2022-4-ordinary",
+      "recordedAt": "2026-10-12",
+      "results": [
+        {
+          "name": "desktop",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 1440,
+            "innerWidth": 1440,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 3228,
+            "height": 2281
+          },
+          "before": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 1064,
+            "height": 752
+          },
+          "after": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 3228,
+            "height": 2281
+          },
+          "panRange": {
+            "width": 1118,
+            "total": 3282
+          },
+          "scrollLeft": 2164,
+          "scrollTop": 1599,
+          "nextPage": true
+        },
+        {
+          "name": "phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        }
+      ]
+    },
+    {
+      "scenario": "browser-2022-6(c)-higher",
+      "recordedAt": "2026-10-12",
+      "results": [
+        {
+          "name": "desktop",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 1440,
+            "innerWidth": 1440,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 3145,
+            "height": 4450
+          },
+          "before": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 1064,
+            "height": 1505
+          },
+          "after": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 3145,
+            "height": 4450
+          },
+          "panRange": {
+            "width": 1118,
+            "total": 3282
+          },
+          "scrollLeft": 2164,
+          "scrollTop": 3768,
+          "nextPage": true
+        },
+        {
+          "name": "phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        },
+        {
+          "name": "phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        }
+      ]
+    },
+    {
+      "scenario": "browser-2023-4-higher",
+      "recordedAt": "2026-10-12",
+      "results": [
+        {
+          "name": "desktop",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 1440,
+            "innerWidth": 1440,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 3228,
+            "height": 2281
+          },
+          "before": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 1064,
+            "height": 752
+          },
+          "after": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 3228,
+            "height": 2281
+          },
+          "panRange": {
+            "width": 1118,
+            "total": 3282
+          },
+          "scrollLeft": 2164,
+          "scrollTop": 1599,
+          "nextPage": true
+        },
+        {
+          "name": "phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": true,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 786
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 257
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 786
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 147,
+          "nextPage": true
+        }
+      ]
+    },
+    {
+      "scenario": "browser-2025-8(f)-higher",
+      "recordedAt": "2026-10-12",
+      "results": [
+        {
+          "name": "desktop",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 1440,
+            "innerWidth": 1440,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 3145,
+            "height": 4450
+          },
+          "before": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 1064,
+            "height": 1505
+          },
+          "after": {
+            "x": 188,
+            "y": 161.59375,
+            "width": 3145,
+            "height": 4450
+          },
+          "panRange": {
+            "width": 1118,
+            "total": 3282
+          },
+          "scrollLeft": 2164,
+          "scrollTop": 3768,
+          "nextPage": true
+        },
+        {
+          "name": "phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        },
+        {
+          "name": "phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone",
+          "dark": false,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        },
+        {
+          "name": "atlas-phone-dark",
+          "dark": true,
+          "errors": [],
+          "failedRequests": [],
+          "gated": true,
+          "rotated": false,
+          "questionOverflow": {
+            "scrollWidth": 390,
+            "innerWidth": 390,
+            "horizontal": false
+          },
+          "canvas": {
+            "width": 1112,
+            "height": 1573
+          },
+          "before": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 364,
+            "height": 514
+          },
+          "after": {
+            "x": 13,
+            "y": 95.59375,
+            "width": 1112,
+            "height": 1573
+          },
+          "panRange": {
+            "width": 390,
+            "total": 1138
+          },
+          "scrollLeft": 748,
+          "scrollTop": 934,
+          "nextPage": true
+        }
+      ]
+    }
+  ],
+  "verifiedFiles": {
+    "components/MarkBank/AccountingAssessment.tsx": "8d188fc11b3d5665ec44f2eac9b55f4e8575e08e5c881cf550d32b5a766f9505",
+    "components/MarkBank/SessionScreen.tsx": "b8c41ae0d9e7a21053477d911ac626be110da73433378d4afce5fd8593377769",
+    "components/MarkBank/SourceMaterialReader.tsx": "3a8c132a3111b408387ec16f7f6ca6ab591c6d75135261155149d468b52adeea",
+    "components/MarkBank/cards/accounting/factory.ts": "35325a828677c36a2ece300317b48cf9a54387920db52af11a597764c65a509a",
+    "components/MarkBank/cards/accounting/higher.ts": "70a17ae9efd917c3c115e463eb1295caa1504cfe1124459b2633f1ed4d0d0dae",
+    "components/MarkBank/cards/accounting/ordinary.ts": "0dac37bd085ab08418ba05eacf8564be5291abf703ba0c44edbff659647f5d05",
+    "components/MarkBank/cards/sizes.json": "b3195cb3eddcfe61081afa95c86c5f60dadeeb652dc3ebfd67de3505a9d05c51",
+    "components/MarkBank/deck.ts": "ccb1a696d415d6bc897d701f54650ec085c61d9205577c04ff595e6a0eb7523c",
+    "components/PaperTrail/CropView.tsx": "01a1bf1fd6c4e0b06e5dba7c195975a4aa6cb4e9b8ee841015a4caf435652535",
+    "components/PaperTrail/VaultQuestionCard.tsx": "7bdadd38f62cf74787f9be3e837b7e0e9bf39a941084abab7111bfe99bb0e667",
+    "components/PaperTrail/vaultResolve.ts": "20caa21dda24ad442a5ca62dca22546a69e174b5f42d758e83f423a7b9404392",
+    "data/examTopics/accounting-task-runtime.json": "1860ea50fe9f3a26c57f43ebe68174eefd5051a6ace8eaf4acfd2c16cccd8a45",
+    "data/examTopics/registry.ts": "ae1b9b79007a0b49ef561647502a29b647d9ef2891a829428e47b5ff38b54319",
+    "examiner-reports/accounting/schemes/2010-hl.md": "0b572efcf2eb84e0977f812393b2113bff72e2853c4585cb9cb48a2435b6ba8e",
+    "examiner-reports/accounting/schemes/2010-ol.md": "4a32a5eb97e1f32beda8535a079588d7e9605b5078a42c510a3880bae0ad1b72",
+    "examiner-reports/accounting/schemes/2011-hl.md": "70f207a820c327ca35059f82de9fd2642e9cdf837c1f434d332f1a60fbd5b0f4",
+    "examiner-reports/accounting/schemes/2011-ol.md": "d68c097f3467dfed1a0c5342ddb3a62d34b24ea783cc27a643e24bd2ad205361",
+    "examiner-reports/accounting/schemes/2012-hl.md": "302ec90efe2c84875a0f484b2966f8bde48f9e641c014caef9a847131a52ad99",
+    "examiner-reports/accounting/schemes/2012-ol.md": "becf60278835cfcd50abfddcb6b79f8b128c1e7acd8a46fee469359320be526f",
+    "examiner-reports/accounting/schemes/2013-hl.md": "7667e7171ee1194fd8e234e4ebe4f962827b84a42a11cc2f93a1475e376a009d",
+    "examiner-reports/accounting/schemes/2013-ol.md": "6823a47a840c577c7192de4a6443e577429533a19b6f447316120008afc75c7b",
+    "examiner-reports/accounting/schemes/2014-hl.md": "f4c3ff6218b22268830d7a6f6c48c4b7938c0371d5f2c019264587f03f125411",
+    "examiner-reports/accounting/schemes/2014-ol.md": "058ae31e33adb02bfd56dae26f83de80e223aa02aa3e1a69f4469ec3c2c07af5",
+    "examiner-reports/accounting/schemes/2015-hl.md": "56ed0b6bbad91873311b34e7ea7360d7ce43317ee409c3369f628c8ea9d101bd",
+    "examiner-reports/accounting/schemes/2015-ol.md": "a6323cbd6392ff49cd09953c408a98a9fa8ee9f5ae431e6377f5815b4e85ce14",
+    "examiner-reports/accounting/schemes/2016-hl.md": "49d6c9e75504924aacfaf069adf307f7ecb6f023cf9eb72bea08c88c5e570418",
+    "examiner-reports/accounting/schemes/2016-ol.md": "03f978d743e20560c012e7cf0c2a9ff37d5a38ba8787f6a77a03e18cbd3a0a34",
+    "examiner-reports/accounting/schemes/2017-hl.md": "8e1fecbfba98bf66b47ae67576626ecb65bc039f6627e102b7146df386c9af16",
+    "examiner-reports/accounting/schemes/2017-ol.md": "d002e414b815b0d0ae274803a311f0e975cfa0890c76aa2e2332d5f84a606ef3",
+    "examiner-reports/accounting/schemes/2018-hl.md": "d39565921e4423489028fa47b8a310c05e31ccdd662d6a00dbf315929f307e5c",
+    "examiner-reports/accounting/schemes/2018-ol.md": "41cdaaec5d9937fb15765ec698fa13f0a66a74ba084e1a0349afcf17456dfb5e",
+    "examiner-reports/accounting/schemes/2019-hl.md": "530e5a6f0e692f48771863a14e06fcfdd6540258d8501e5c7c02f6e6cbc48a8f",
+    "examiner-reports/accounting/schemes/2019-ol.md": "a8c3e98d71d916d393e40aa37fe6fb80e7008a7dc17c96dd60904591f893e54a",
+    "examiner-reports/accounting/schemes/2020-hl.md": "5a0f279c3bf5e82d68ca75ab1877c69c2135325898fb53d9d6d7f8d3ffd923c9",
+    "examiner-reports/accounting/schemes/2020-ol.md": "46734a53093179cadd698195275df43f4bacd022f62f4df54ed45901eb403239",
+    "examiner-reports/accounting/schemes/2021-hl.md": "573a67b73f5fcdff0b77a6702bb8c32b21fbefe75f07c73ac3db4bf9cb200be7",
+    "examiner-reports/accounting/schemes/2021-ol.md": "aa49829f5a3e166efb2a2ef679922f6e7ca62f4e85d98071183a7622eced77d9",
+    "examiner-reports/accounting/schemes/2022-hl.md": "13c0b8b0c8b3bdeb0ed89cab232bdf6200e210460e7b6524ea994eb36aa64cea",
+    "examiner-reports/accounting/schemes/2022-ol.md": "beb33ed32a96c2f178b594317e2fc51f2948316370796da0a91afbff7b7fec0d",
+    "examiner-reports/accounting/schemes/2023-hl.md": "3959d435d8dda74769b69a012e7be52d3ff3b87efe3a4af2f5fdf68cf83fae40",
+    "examiner-reports/accounting/schemes/2023-ol.md": "5e3526180179394d9485f5084555ab5f0d0603b1580ddece9e4e0e1a1757c130",
+    "examiner-reports/accounting/schemes/2024-hl.md": "41ce9ba436370ea996e8002a969e083c6d38253b82b0d0d688bce639cc1372c8",
+    "examiner-reports/accounting/schemes/2024-ol.md": "77847508ce7825ec39debae42b99080d83e30df272673d262500f5d902648d96",
+    "examiner-reports/accounting/schemes/2025-hl.md": "f1830e89ac43d0afa6f21b3fce4db90ce0fff7055e2a9581f7e0ebe7648a625b",
+    "examiner-reports/accounting/schemes/2025-ol.md": "df692869e4f5c8ba63fe5701ef133c617a8f489a05204ca2f723b79dbc8dedb7",
+    "examiner-reports/accounting/schemes/2026-hl.md": "3f75f38855c1e6aeee30340d5ba55fbe6bca1ef1f591c69f718d10e0eff89c91",
+    "examiner-reports/accounting/schemes/2026-ol.md": "9b80885dfd99e22614c36c084db719f675e49f5b4e439ed4456a65d20901fa46",
+    "index.css": "838db77c1c6c01f175ec7e2a6b0632fb2cc10efc8ee54bd8a59ee707a80fc2e8",
+    "public/paper-answers/2010/LC032ALP000EV.pdf.json": "db2d35d06fc7e2fc16a1ff2a9670cb946e328a2382b38c211532bf0ff12abeb7",
+    "public/paper-answers/2010/LC032GLP000EV.pdf.json": "a14203790149b645802f09bce9fdb40c72527a9d688011815fedaa30e7d7d217",
+    "public/paper-answers/2011/LC032ALP000EV.pdf.json": "85abb590f1606e0f83ed84f5da3a3a2e7718af8a64f36915ec4b9b454756c4fe",
+    "public/paper-answers/2011/LC032GLP000EV.pdf.json": "62bb0b1be14b5cf1d1cb4b1ee854abf7d7af71781b0d3417e43d67e56fb3c4c6",
+    "public/paper-answers/2012/LC032ALP000EV.pdf.json": "d9c44dcb5d08aef429ae7481271aa30e2b52efbf97c5453c1a7165ebcf5cf094",
+    "public/paper-answers/2012/LC032GLP000EV.pdf.json": "cdb62e97510ccdb89046133b66c6928259a308c9b1beb8a249f15d9beb270f94",
+    "public/paper-answers/2013/LC032ALP000EV.pdf.json": "90a49c17aa67c4a8046aeb27484ef5713404244aa8ea039cf6b12510af9c69d5",
+    "public/paper-answers/2013/LC032GLP000EV.pdf.json": "e2f4cbd0c55bfee3743fd6f8ffba323492449dc864f324d835322b8e5be8150d",
+    "public/paper-answers/2014/LC032ALP000EV.pdf.json": "7460a5e351fd9fadb6d55c2fa13b666c1ee744bfe2b9da959e303cfe651da969",
+    "public/paper-answers/2014/LC032GLP000EV.pdf.json": "5d8c9b23b2cf27784b8a9af18471d812a90ca7a2eadef2a92546a01ec299626a",
+    "public/paper-answers/2015/LC032ALP000EV.pdf.json": "d3be0728f7fd33af7a001fc7036aef6e30766f4cb40e9986850c669ef290c822",
+    "public/paper-answers/2015/LC032GLP000EV.pdf.json": "c42a44f83dad62ff2d4318623e57c1b9789c54d85b35d7d673841780d09d080e",
+    "public/paper-answers/2016/LC032ALP000EV.pdf.json": "f929cdad69538f1683bf7f9e7f779d81454ff8678c6ec4efd5e5c873734f9800",
+    "public/paper-answers/2016/LC032GLP000EV.pdf.json": "210945bfd746d3e1ca878e5608e979d0a082a44f71f49a2e9dbfd4645ff25678",
+    "public/paper-answers/2017/LC032ALP000EV.pdf.json": "4649ea0ada0cb79720a2f7ced96dac938eb2930ac46c0331fbafed79e9a2942c",
+    "public/paper-answers/2017/LC032GLP000EV.pdf.json": "3085afbd2d4bdbe5ac755addd3d0a39d2954d0aa595012800450eea1c583660c",
+    "public/paper-answers/2018/LC032ALP000EV.pdf.json": "60af40268397c991549dd2220f2753e95d975c2abdaaba5732452a2fc1fd33c6",
+    "public/paper-answers/2018/LC032GLP000EV.pdf.json": "d6dfc65b67f78686b7e8211f410289c883a62cf314416ba274603922985fd58d",
+    "public/paper-answers/2019/LC032ALP000EV.pdf.json": "2a8e7b65b9e2cbf2ef176cc9205936cc6f8205158ee3adb8907e99fae06c7966",
+    "public/paper-answers/2019/LC032GLP000EV.pdf.json": "1d90bf9c1546e6e053d42aaf4704d319ef851a5462823830f2351011a59380f2",
+    "public/paper-answers/2020/LC032ALP000EV.pdf.json": "13cf43158ad0d18875e7f1878f190a5ad970556dfb9823f3b6e0d30da9faa4f2",
+    "public/paper-answers/2020/LC032GLP000EV.pdf.json": "d5e7b8a949d7ec96b3420516cc6e5873f68edb43cfe416b6517e23333b535015",
+    "public/paper-answers/2021/LC032ALP000EV.pdf.json": "5372342b338a4ffbd9c7382be01dc451ee644abf18d93f13772f0f8336c660bf",
+    "public/paper-answers/2021/LC032GLP000EV.pdf.json": "c78a50cfd1a2c31df1cd1e890106aa9f36f25928ef2bbe31d207567e0248e114",
+    "public/paper-answers/2022/LC032ALP000EV.pdf.json": "b264cc75d4dc7b737bd3d649be709ca7a4de5dcc8fb4eee5796495bd1b04994f",
+    "public/paper-answers/2022/LC032GLP000EV.pdf.json": "02079cc746fb414f300fc05c9be9c320af2c98d0730d765633b740352dc43a17",
+    "public/paper-answers/2023/LC032ALP000EV.pdf.json": "653c2c90d1a30aa63ef55e311e9fe473fdac5e13dd9dc806f73136fff7dc8bca",
+    "public/paper-answers/2023/LC032GLP000EV.pdf.json": "ff1765a69c893b821c064eba60caccad5260804a38d8a90ec18fe1629d1b8a2b",
+    "public/paper-answers/2024/LC032ALP000EV.pdf.json": "392a6a640819aeb6409c77d4f23b9bea0f164f597fe7b0b8c3c8f47325a2963f",
+    "public/paper-answers/2024/LC032GLP000EV.pdf.json": "960002430dea6d73ff40095f57b6058316150efdf45223f246b56f969b132ba5",
+    "public/paper-answers/2025/LC032ALP000EV.pdf.json": "c244343d08b7af30af36becf301f2d1189459f166ebe1181c8f3f60c22114562",
+    "public/paper-answers/2025/LC032GLP000EV.pdf.json": "6c456359ce111be55722beca6b478c22f1969cf8e5aec5385999c7ebb3b6f309",
+    "public/paper-answers/2026/LC032ALP000EV.pdf.json": "35fa92a281f790cd1944c115743705cf686ce4696bcef4b76585a1f941edfd17",
+    "public/paper-answers/2026/LC032GLP000EV.pdf.json": "e9951d55a4c8685a5051bdf3495902b633c8011b753994f419d2d5ec6e91a9d4",
+    "scripts/markbank/accounting/build.py": "469a0d364c6c4a0cb236193ecff9cbc0665c4732130e497a973c99945322ecaf",
+    "scripts/markbank/accounting/correspondence/2010-higher-irish.json": "dc1b7c1d29f28dcc9b195f315afe021c86df9d99303c2fdc88bb0cc554432475",
+    "scripts/markbank/accounting/correspondence/2010-ordinary-irish.json": "a73c0f0f52af76e1f5452012bbde7de5779983a5463e41ff33e15b5e74b87f1a",
+    "scripts/markbank/accounting/correspondence/2011-higher-irish.json": "e708e1da210b9c8d04f33ee0275c96518432ca44e4b069a70475a492dd290250",
+    "scripts/markbank/accounting/correspondence/2011-ordinary-irish.json": "d3fa6059a2b7e753b1d899b9e15d0c885fc11824de862ebee53c54327ff3290e",
+    "scripts/markbank/accounting/correspondence/2012-higher-irish.json": "bad35295d62f33acf8795f0182bd3306f9a89b8114233cb30cf3b33eda854683",
+    "scripts/markbank/accounting/correspondence/2012-ordinary-irish.json": "58d2f04abada32b8f560d9040275bda410a62485f4695d28525c7672340f8d6e",
+    "scripts/markbank/accounting/correspondence/2013-higher-irish.json": "af3d95521da6e387534e7dc70b6334e82658d478cff9c1eebd37dd2c266ef7ea",
+    "scripts/markbank/accounting/correspondence/2013-ordinary-irish.json": "c28a43857731edf42f1721314c1756a953c806e42975c891c86277b3d0a9ce93",
+    "scripts/markbank/accounting/correspondence/2014-higher-irish.json": "249f54609e5c5a0d65ac0a6b72b20120438ac8ab066c152bc619dda77edf881b",
+    "scripts/markbank/accounting/correspondence/2014-ordinary-irish.json": "f34839dffa5badab2b24b47795f89c8eab7932cc852846ff87938d4448d7d278",
+    "scripts/markbank/accounting/correspondence/2015-higher-irish.json": "65ebe8295497e5db8baad9dbfaead795a33a9ef599898eb3fa8f450434fb399d",
+    "scripts/markbank/accounting/correspondence/2015-ordinary-irish.json": "041628a47f2535c012477a45de9fb42f4a4ae0d5c189be856d600c3810cef63b",
+    "scripts/markbank/accounting/correspondence/2016-higher-irish.json": "b3a0917a2a7f4af02dc13c1c987c258e650682379b28ba3b56e532ea07605f4c",
+    "scripts/markbank/accounting/correspondence/2016-ordinary-irish.json": "38e99e2dbf35edc5487c65b2847fc436061a705487f5e456fcb530e49f314aa3",
+    "scripts/markbank/accounting/correspondence/2017-higher-irish.json": "8e47533d4ad4aca4f9318847eebff4f856998fc14ef00dde33c72cf203ff4e6a",
+    "scripts/markbank/accounting/correspondence/2017-ordinary-irish.json": "2d475775ff6c5e4b00ce2edb1531b72ef05657b35aedf68a2be790befdcf88ac",
+    "scripts/markbank/accounting/correspondence/2018-higher-irish.json": "e0d7f87996a359510136ec94ee2ef0839a67a87a20a84797c3eedb92b6f9c233",
+    "scripts/markbank/accounting/correspondence/2018-ordinary-irish.json": "d3a392af8740a3e3472507c2ed8c1d8d3fbeba8801b3db8c92689e50c2af8e1d",
+    "scripts/markbank/accounting/correspondence/2019-higher-irish.json": "6ae9906ca630e2696d2d8239566c0d9cb731f3c4bc9e9a92682861bd72d90082",
+    "scripts/markbank/accounting/correspondence/2019-ordinary-irish.json": "cb046ad4d271c8b85bb82535920c281464241d8efda5648800d36cdc4577130a",
+    "scripts/markbank/accounting/correspondence/2020-higher-irish.json": "6407dc90465c2194c99321745485cddcd3f1d3efb1cfc9ca234a21fc99656904",
+    "scripts/markbank/accounting/correspondence/2020-ordinary-irish.json": "090259bc68b29c597d0df307dfab444f91af2133774619de249977550d5f6ce5",
+    "scripts/markbank/accounting/correspondence/2021-higher-irish.json": "5d27563b61cb6ca380068ea9a7202c7fb4d836fb8c7aebfc7f0d2e620bd41635",
+    "scripts/markbank/accounting/correspondence/2021-ordinary-irish.json": "c08758f37aecdd6c88f9288644e363f8b4abc6d88c3b9cd04114b73944a3b592",
+    "scripts/markbank/accounting/correspondence/2022-higher-irish.json": "cc1ebafe488a34f5568366629a6e3fb1fb38555d99bb7d197ab324c32cf56c7a",
+    "scripts/markbank/accounting/correspondence/2022-ordinary-irish.json": "16159b3660b8d2ffa796daccd71beb0db652e29db8c145e320aad1f32d03e162",
+    "scripts/markbank/accounting/correspondence/2023-higher-irish.json": "078478c24ae697dba08ce0d6774a036679f203a7c3896dd8fba5033a9d3591c8",
+    "scripts/markbank/accounting/correspondence/2023-ordinary-irish.json": "328bf741e78d4703ed53f190330d304c7ea6cd88ff14c12edc2bd6983763372c",
+    "scripts/markbank/accounting/correspondence/2024-higher-irish.json": "e6a7227a385d105a36e6468a602eb4a8a74d3a0a527f4d1414b6a5c0d846018a",
+    "scripts/markbank/accounting/correspondence/2024-ordinary-irish.json": "f5a6931d7a5f2cbb208f5432c3829de0bc5107f00928adddc781209625ba8b7e",
+    "scripts/markbank/accounting/correspondence/2025-higher-irish.json": "d99548faefc7decab3b6255bd978386e8ad25af7c0ea0d286eb8363229f868c9",
+    "scripts/markbank/accounting/correspondence/2025-ordinary-irish.json": "d77b84774e38797444407da422b49088ac0b07af246196b4297e1291948c9df5",
+    "scripts/markbank/accounting/correspondence/2026-higher-irish.json": "66c1a3a779feae65371b051f7eb7172c2c88500a7eb38db4a2f3c43ebea80f42",
+    "scripts/markbank/accounting/correspondence/2026-ordinary-irish.json": "08551cc066c22d26f6671e9ed9dbfd10a4d1197252c958b164f4517e7b763a9f",
+    "scripts/markbank/accounting/inventory.json": "99bb30c71903f197904a3511cbca759960cbbd73f97daa46c0fdcb35e8ee14a0",
+    "scripts/markbank/accounting/reconcile.py": "7babfc0c3653889830414b20487ec28b25e2643eb269ab13f42ee963e688ce74",
+    "scripts/markbank/accounting/reviewed/2010-higher.json": "456e8fed2620f98860e7c60e6ea7aee61686e6c330f41c17c753c168b2c2f307",
+    "scripts/markbank/accounting/reviewed/2010-ordinary.json": "b6b5810a86233b00334a3187aaefeec3a10fc1e980a444d2135cade7db0084d2",
+    "scripts/markbank/accounting/reviewed/2011-higher.json": "5299d2df9a704441069580a6334301ff5fd18b188357ba9285074e3227279c82",
+    "scripts/markbank/accounting/reviewed/2011-ordinary.json": "3d7a1fa78c05bc42fbaf45c2a22a425ce14ea9feeea2287eabfa9b2a01e396ff",
+    "scripts/markbank/accounting/reviewed/2012-higher.json": "e72037fd76c3b09315ffa520a2e2facd1b0ef426ae34b4729eac9b43faeab0de",
+    "scripts/markbank/accounting/reviewed/2012-ordinary.json": "250ed8c6f96adb611437ba6041acce010a509777b9ff127417104abfb7199019",
+    "scripts/markbank/accounting/reviewed/2013-higher.json": "32fcd51b9fe85c104e2b128a7b333caf0756611581dbcff0007003ec0eb9b342",
+    "scripts/markbank/accounting/reviewed/2013-ordinary.json": "95dd1f05a832775b5ab48a65638fc90714194317515d3e9b522de53ab7c306f1",
+    "scripts/markbank/accounting/reviewed/2014-higher.json": "2eea93faec06084393312757a89e88f2fde897b9d6d495bde498fcadb8ca6823",
+    "scripts/markbank/accounting/reviewed/2014-ordinary.json": "366ef889b6654dbcdc8c1f3ac49a6693fcbd7c63cab8344b70bb54d56663311f",
+    "scripts/markbank/accounting/reviewed/2015-higher.json": "6080f0ba730fa720d77132d1abe1772a945f1e3eb0db7f5cbda9e45756f9c80d",
+    "scripts/markbank/accounting/reviewed/2015-ordinary.json": "e00cce5c6ff2a01107b646385949753f2c0b9a2f80b075de6992e155d6cb0c40",
+    "scripts/markbank/accounting/reviewed/2016-higher.json": "9e57934d06bd7908c28ddb07098a4acf3ef880830c4fcfd5a41a64fc3429ddf4",
+    "scripts/markbank/accounting/reviewed/2016-ordinary.json": "f49e4a393575847d20e068ac201cd306dcb3c013f73127423357410e06fc1326",
+    "scripts/markbank/accounting/reviewed/2017-higher.json": "ba2f669c08546940d0b8c2fb7efda18f9db8c0254f07107fa5ce2014c81ffb8c",
+    "scripts/markbank/accounting/reviewed/2017-ordinary.json": "6abe1a733952c771a136fb82ed0f61476ca7bb7a42a7afb0d9f48d43639c5043",
+    "scripts/markbank/accounting/reviewed/2018-higher.json": "95175db3e6ad73aa6896ee905c4b934cff224f854b28129b9c4420cc80d08631",
+    "scripts/markbank/accounting/reviewed/2018-ordinary.json": "894ff826e424201ae00109a82f561ac451c8858db5d798b4f87fa731628bea70",
+    "scripts/markbank/accounting/reviewed/2019-higher.json": "de5bfefdfe9127cd9ea46afd513024c44dd6ff25a18b9db87750c36aa12a809d",
+    "scripts/markbank/accounting/reviewed/2019-ordinary.json": "04c38d670fa8c345e1f75ec87df376af1308f436c42f13a5851a2aadb5424dd3",
+    "scripts/markbank/accounting/reviewed/2020-higher.json": "70093eee6177134df9aea9f7eb25bd71bb07777f1d627501a0e6840ca125ccab",
+    "scripts/markbank/accounting/reviewed/2020-ordinary.json": "d74aa1048d93dc67c73331343bba610dca138647c53bd9266e9782de6e9f1602",
+    "scripts/markbank/accounting/reviewed/2021-higher.json": "cacdc211e812d8c702994bdcfa1304f03b4d2e5bfd2989d2b42b548d8e33f96a",
+    "scripts/markbank/accounting/reviewed/2021-ordinary.json": "2b36e143015dce0797b2d350ab4d0f9c243a47b7ef46f0ce22c257a84e1c4ca9",
+    "scripts/markbank/accounting/reviewed/2022-higher.json": "fb90ce425583b7e0b8112e0787986bfdbc7f33b97f75daab08c3da379d151b64",
+    "scripts/markbank/accounting/reviewed/2022-ordinary.json": "8e0401f645cf62bdb5af9e741b8b618d3c4d694efad9a1543839f755a8370bba",
+    "scripts/markbank/accounting/reviewed/2023-higher.json": "67e15173f62a21874d2393d1923161a120b0fa51fae63f8e3064850c7367ec52",
+    "scripts/markbank/accounting/reviewed/2023-ordinary.json": "a9d67f48b0d48ab7f0ed76d7fa23a70b321ba149198bf0c1057e39c76f7fd924",
+    "scripts/markbank/accounting/reviewed/2024-higher.json": "045dd4bf94c0e8cbd272f224fa70f6566007feb1f5bf1dcdabf654200e477e8d",
+    "scripts/markbank/accounting/reviewed/2024-ordinary.json": "ecbe43c41c2a9a6ee4f9c77f753e8366582649cd14e02a1a1a72eb25e22e061a",
+    "scripts/markbank/accounting/reviewed/2025-higher.json": "f9278e8abf22057f327a9a32013382e3e896e468db39b730d4f6563006af5e80",
+    "scripts/markbank/accounting/reviewed/2025-ordinary.json": "f39a2fb512c2edb34d5ef3901709b0ce8e47166a5921c0c52416a383a8893c40",
+    "scripts/markbank/accounting/reviewed/2026-higher.json": "67359175c63f6377f7805ee136ccdf45aa52ca6a7b5f989bf6fb89368b6ef278",
+    "scripts/markbank/accounting/reviewed/2026-ordinary.json": "0e2933e87f8a663584465af22adf0f18acf26e92129ca8cc243f0b9325dc241d",
+    "test/markBankAccounting.test.tsx": "108ece06d10a350d87850388187030157e756d6da88368775295296f2cb36b55",
+    "test/markBankCardPreservation.test.ts": "d6ab4bf70aed4187b5d596dc22eaaba0bbe4856439831a3565f329972d2e82fd",
+    "test/markBankDeck.test.ts": "0618e12a07e3404330d555afce6e821917abef64dc818048f2a5804216e3211d",
+    "types/markBank.ts": "73eb28887d9c122325c6c322e0fc35e827b0c1edf4a20418d37d46dec354a55d",
+    "types/paperTrail.ts": "8acb2d1cde4b3cfe3a80a9247aa05e8486b575b35d492b3bd65f30ac4fc5db6e"
+  }
+}

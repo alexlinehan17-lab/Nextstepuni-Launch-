@@ -31,12 +31,34 @@ const SELF_SUFFICIENT = 16;
 /** A stem shorter than this is a label, not a setup. */
 const STEM_MIN = 20;
 
+/**
+ * A question set in Japanese, which the character floor cannot measure.
+ *
+ * Every threshold above is calibrated on the Latin alphabet, and Japanese does
+ * not spend characters the same way: 勉強 is a whole ask in two characters,
+ * ゆうじさんは、どんな人ですか。is a complete question in fourteen, and the
+ * eight-character floor written to catch table fragments refused eighty-seven
+ * correct kanji and grammar cards. So a question written in kana or kanji is
+ * measured on its own terms — it asks something if it ends the way a Japanese
+ * question ends, and a short printed item is carried by its part's printed
+ * instruction exactly as a short English one is carried by a stem.
+ */
+const CJK = /[\u3040-\u30ff\u3400-\u9fff\uff66-\uff9f]/;
+/** ですか。／ますか。／か。 — how every Japanese ask in these papers ends. */
+const ASKS_JA = /[かカ]\s*[。｡]\s*$/;
+/** A printed Japanese item this short is a fragment whatever carries it. */
+const FLOOR_JA = 1;
+
 export function questionStandsAlone(card) {
   const t = String(card?.questionText ?? '').trim();
+  // `figureKey` on an authored card, `figure` on a built one.
+  const carried = String(card?.stem ?? '').trim().length >= STEM_MIN
+    || Boolean(card?.figureKey ?? card?.figure);
+  if (CJK.test(t)) {
+    return t.length >= FLOOR_JA && (t.length >= 6 || ASKS_JA.test(t) || carried);
+  }
   if (t.length < FLOOR) return false;
   if (t.length >= SELF_SUFFICIENT) return true;
   if (ASKS.test(t)) return true;
-  // `figureKey` on an authored card, `figure` on a built one.
-  return String(card?.stem ?? '').trim().length >= STEM_MIN
-    || Boolean(card?.figureKey ?? card?.figure);
+  return carried;
 }

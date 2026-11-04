@@ -108,14 +108,26 @@ describe('Art exam-topic registry', () => {
       referenceOfficialAssociations: 690,
       referenceMockAssociations: 609,
       referenceProviderSampleAssociations: 0,
-      matchedAssociations: 592,
+      matchedAssociations: 553,
       sourceBlockedAssociations: 98,
-      matchedLogicalCards: 541,
-      matchedQuestionTopicLinks: 584,
+      referenceAnomalyAssociations: 39,
+      matchedLogicalCards: 505,
+      reviewedLogicalCards: 36,
+      reviewedOptionTopics: 169,
+      reviewedSpecificTopics: 57,
+      matchedQuestionTopicLinks: 545,
       retainedLocalLogicalCards: 536,
       retainedWrittenLogicalCards: 144,
       retainedPracticalLogicalCards: 392,
     });
+    // Reference headings that contradict the printed dates or works; each is
+    // an audited anomaly with its evidence, filed under the paper's heading.
+    const anomalies = artEvidence.associations.filter(item => item.resolution === 'reference-anomaly');
+    expect(anomalies).toHaveLength(39);
+    for (const item of anomalies) {
+      expect(item.reason, item.heading).toMatch(/^StudyClix files .* Decided 2026-10-12 from the SEC paper: /);
+      expect('filedUnder' in item && item.filedUnder !== item.topicId, item.heading).toBe(true);
+    }
     expect(
       artEvidence.summary.referenceOfficialAssociations
       + artEvidence.summary.referenceMockAssociations
@@ -260,16 +272,33 @@ describe('Art exam-topic registry', () => {
     expect({ schemeMaps, paperOnlyMaps }).toEqual({ schemeMaps: 65, paperOnlyMaps: 87 });
   });
 
-  it('surfaces all 1,077 entitled questions while preserving all 462 authored Mark Bank cards', () => {
+  it('files every Mark Bank card under a heading the Atlas gives its question', () => {
+    // Reviewed anomalies, per-option headings and specific headings for
+    // generic-only questions mean card and Atlas never disagree.
+    const failures: string[] = [];
+    for (const card of [...ART_HIGHER, ...ART_ORDINARY]) {
+      const n = card.questionRef.split(' · ')[0].match(/\bQ(\d+)/)![1];
+      const fileid = `${card.paperFileid}.pdf`;
+      const topicIds = examTopicIdsForQuestion('art', card.level, card.year, 'main', n, 'single', 'ev', fileid);
+      const nodes = topicIds.flatMap(topicId => curriculumNodeIdsForExamTopic(topicId));
+      if (!nodes.includes(card.topicId)) failures.push(`${card.id}: ${card.topicId} not in ${nodes.join(', ')}`);
+    }
+    expect(failures).toEqual([]);
+  });
+
+  it('surfaces all 1,077 entitled questions and every authored Mark Bank card', () => {
     expect(subjectAtlasStats('art')).toMatchObject({
       questions: 1077,
       topics: 32,
       yearMin: 2010,
       yearMax: 2026,
     });
-    expect(authoredArt.cardCount).toBe(462);
-    expect(ART_HIGHER).toHaveLength(222);
-    expect(ART_ORDINARY).toHaveLength(240);
-    expect(new Set([...ART_HIGHER, ...ART_ORDINARY].map(card => card.id)).size).toBe(462);
+    // 462 before printed choices sharing one Atlas heading became one card;
+    // the 68 withdrawn per-option ids are cardAliases.ts keys. The 2026 papers
+    // add 52 (26 Higher, 26 Ordinary) and each further year (2010-2020) its own (ART_ADDED in the preservation test).
+    expect(authoredArt.cardCount).toBe(1756);
+    expect(ART_HIGHER).toHaveLength(902);
+    expect(ART_ORDINARY).toHaveLength(854);
+    expect(new Set([...ART_HIGHER, ...ART_ORDINARY].map(card => card.id)).size).toBe(1756);
   });
 });

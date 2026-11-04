@@ -159,9 +159,9 @@ const AdminFeedbackInbox: React.FC = () => {
     <section aria-labelledby="feedback-inbox-title">
       <div className="mb-6 flex flex-col justify-between gap-4 md:flex-row md:items-end">
         <div>
-          <p className="mb-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[#9E9186]">Anonymous student voice</p>
-          <h2 id="feedback-inbox-title" className="font-serif text-3xl font-semibold text-[#1A1A1A] dark:text-white">Feedback inbox</h2>
-          <p className="mt-1 max-w-2xl text-sm text-[#706A64] dark:text-zinc-400">
+          <p className="mb-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--admin-muted)]">Anonymous student voice</p>
+          <h2 id="feedback-inbox-title" className="font-sans text-3xl font-semibold text-[var(--admin-ink)]">Feedback inbox</h2>
+          <p className="mt-1 max-w-2xl text-sm text-[var(--admin-muted)]">
             Account details are not automatically attached. A message may still contain details a student typed themselves.
           </p>
         </div>
@@ -172,7 +172,7 @@ const AdminFeedbackInbox: React.FC = () => {
             void Promise.all([loadFeedback(), loadCounts()]);
           }}
           disabled={isLoading}
-          className="flex items-center justify-center gap-2 self-start rounded-full border-2 border-[#1A1A1A] bg-white px-4 py-2 text-sm font-bold text-[#1A1A1A] disabled:opacity-50 md:self-auto"
+          className="flex items-center justify-center gap-2 self-start rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-sm font-bold text-[var(--admin-ink)] disabled:opacity-50 md:self-auto"
         >
           <RefreshCw size={15} className={isLoading ? 'animate-spin' : ''} />
           Refresh
@@ -189,19 +189,19 @@ const AdminFeedbackInbox: React.FC = () => {
               role="tab"
               aria-selected={selected}
               onClick={() => setStatusFilter(status)}
-              className="flex shrink-0 items-center gap-2 rounded-full border-2 px-4 py-2 text-sm font-bold transition-colors"
+              className="flex shrink-0 items-center gap-2 rounded-full border px-4 py-2 text-sm font-bold transition-colors"
               style={{
-                borderColor: selected ? '#F26B1F' : '#1A1A1A',
-                backgroundColor: selected ? '#F26B1F' : '#FFFFFF',
-                color: selected ? '#FFFFFF' : '#1A1A1A',
+                borderColor: selected ? 'var(--admin-accent)' : 'var(--admin-rule)',
+                backgroundColor: selected ? 'var(--admin-accent)' : 'var(--admin-surface)',
+                color: selected ? 'var(--admin-action-ink)' : 'var(--admin-ink)',
               }}
             >
               {FEEDBACK_STATUS_LABELS[status]}
               <span
                 className="rounded-full px-2 py-0.5 text-[11px]"
                 style={{
-                  backgroundColor: selected ? '#FFFFFF' : '#F0F0F0',
-                  color: selected ? '#9A3B0E' : '#3A3530',
+                  backgroundColor: selected ? 'var(--admin-action)' : 'var(--admin-raised)',
+                  color: selected ? 'var(--admin-action-ink)' : 'var(--admin-ink)',
                 }}
               >
                 {statusCounts[status]}
@@ -211,33 +211,33 @@ const AdminFeedbackInbox: React.FC = () => {
         })}
       </div>
 
-      {error && <p className="mb-5 text-sm font-semibold text-red-700" role="alert">{error}</p>}
+      {error && <p className="mb-5 text-sm font-semibold text-[var(--admin-danger)]" role="alert">{error}</p>}
 
       {isLoading ? (
-        <p className="py-14 text-center text-[#706A64]">Loading feedback…</p>
+        <p className="py-14 text-center text-[var(--admin-muted)]">Loading feedback…</p>
       ) : entries.length === 0 ? (
-        <div className="border-t-2 border-[#1A1A1A] py-16 text-center">
-          <Inbox size={30} className="mx-auto mb-3 text-[#9E9186]" />
-          <p className="font-serif text-xl font-semibold text-[#1A1A1A] dark:text-white">Nothing here yet.</p>
-          <p className="mt-1 text-sm text-[#706A64]">New submissions will appear here after students send them.</p>
+        <div className="border-t border-[var(--admin-rule)] py-16 text-center">
+          <Inbox size={30} className="mx-auto mb-3 text-[var(--admin-muted)]" />
+          <p className="font-sans text-xl font-semibold text-[var(--admin-ink)]">Nothing here yet.</p>
+          <p className="mt-1 text-sm text-[var(--admin-muted)]">New submissions will appear here after students send them.</p>
         </div>
       ) : (
         <div className="space-y-4">
           {entries.map(entry => (
-            <article key={entry.id} className="rounded-2xl border-2 border-[#1A1A1A] bg-white p-5 sm:p-6">
+            <article key={entry.id} className="rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-5 sm:p-6">
               <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-start">
                 <div className="min-w-0">
-                  <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-[#9A3B0E]">
+                  <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-[var(--admin-accent)]">
                     {FEEDBACK_CATEGORY_LABELS[entry.category] || 'Feedback'}
                   </p>
-                  <p className="mt-3 whitespace-pre-wrap text-[15px] leading-relaxed text-[#3A3530]">{entry.message}</p>
+                  <p className="mt-3 whitespace-pre-wrap text-[15px] leading-relaxed text-[var(--admin-body)]">{entry.message}</p>
                 </div>
-                <label className="shrink-0 text-[10px] font-bold uppercase tracking-[0.14em] text-[#9E9186]">
+                <label className="shrink-0 text-[10px] font-bold uppercase tracking-[0.14em] text-[var(--admin-muted)]">
                   Status
                   <select
                     value={entry.status}
                     onChange={event => updateStatus(entry.id, event.target.value as FeedbackStatus)}
-                    className="mt-1 block min-w-32 rounded-lg border-2 border-[#1A1A1A] bg-white px-3 py-2 text-sm font-semibold normal-case tracking-normal text-[#1A1A1A]"
+                    className="mt-1 block min-w-32 rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-3 py-2 text-sm font-semibold normal-case tracking-normal text-[var(--admin-ink)]"
                   >
                     {FEEDBACK_STATUSES.map(status => (
                       <option key={status} value={status}>{FEEDBACK_STATUS_LABELS[status]}</option>
@@ -245,7 +245,7 @@ const AdminFeedbackInbox: React.FC = () => {
                   </select>
                 </label>
               </div>
-              <div className="mt-5 flex flex-wrap gap-x-4 gap-y-1 border-t border-[#DDD8D2] pt-3 text-xs text-[#7A7068]">
+              <div className="mt-5 flex flex-wrap gap-x-4 gap-y-1 border-t border-[var(--admin-rule)] pt-3 text-xs text-[var(--admin-muted)]">
                 <span>{formatDate(entry.createdAt)}</span>
                 <span>{entry.context?.moduleTitle || entry.context?.surface || 'Context not included'}</span>
                 <span>{entry.platform}</span>
@@ -259,7 +259,7 @@ const AdminFeedbackInbox: React.FC = () => {
                 type="button"
                 onClick={() => void loadFeedback(true)}
                 disabled={isLoadingMore}
-                className="rounded-full border-2 border-[#1A1A1A] bg-white px-5 py-2.5 text-sm font-bold text-[#1A1A1A] disabled:opacity-50"
+                className="rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-5 py-2.5 text-sm font-bold text-[var(--admin-ink)] disabled:opacity-50"
               >
                 {isLoadingMore ? 'Loading…' : 'Load more'}
               </button>

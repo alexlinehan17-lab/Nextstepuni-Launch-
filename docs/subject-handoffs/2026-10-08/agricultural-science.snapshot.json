@@ -1,0 +1,466 @@
+{
+  "subject": "agricultural-science",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Agricultural-Science-Completion-20261007",
+  "branch": "codex/agricultural-science-completion-20261007",
+  "sourceHead": "11186156ae8b3e8b694e18b7f40cb37f31d24dce",
+  "snapshotCommit": "dc0a07080cc58709314ea2df9525c8d4224154c3",
+  "snapshotRef": "refs/checkpoints/portable-subjects-20261008/agricultural-science",
+  "snapshotTree": "a906c1dc78253c24d9eff0ab5df6752ecf6d4308",
+  "changedPaths": 1046,
+  "capturedLocalFiles": 1071,
+  "capturedLocalBytes": 154185481,
+  "exactFileBytesVerified": true,
+  "handoff": "agricultural-science.md",
+  "excluded": [
+    {
+      "path": "examiner-reports/agricultural-science/papers/2010-hl-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2010-ol-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2011-hl-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2011-ol-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2012-hl-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2012-ol-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2013-hl-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2013-ol-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2014-hl-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2014-ol-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2015-hl-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2015-ol-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2016-hl-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2016-ol-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2017-hl-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2017-ol-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2018-hl-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2018-ol-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2019-hl-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2019-ol-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2020-hl-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2020-ol-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2026-hl-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/papers/2026-ol-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2010-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2010-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2011-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2011-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2012-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2012-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2013-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2013-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2014-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2014-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2015-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2015-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2016-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2016-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2017-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2017-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2018-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2018-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2019-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2019-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2020-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2020-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2021-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2021-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2022-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2022-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2023-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2023-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2024-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2024-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2025-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2025-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2026-hl.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/agricultural-science/schemes/2026-ol.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/@capacitor-firebase_app-check.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/@capacitor-firebase_app-check.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/@capacitor_core.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/@capacitor_core.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/@capacitor_status-bar.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/@capacitor_status-bar.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/_metadata.json",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-GEKTQRNL.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-GEKTQRNL.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-JEREUDGX.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-JEREUDGX.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-JY3VBGJA.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-JY3VBGJA.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-MHBJBAKI.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-MHBJBAKI.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-NC5BI2VN.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-NC5BI2VN.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-Q2CZSJWU.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-Q2CZSJWU.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-SNAQBZPT.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-SNAQBZPT.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-TPSXRKT4.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/chunk-TPSXRKT4.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_app-check.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_app-check.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_app.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_app.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_auth.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_auth.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_firestore.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_firestore.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_functions.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/firebase_functions.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/framer-motion.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/framer-motion.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/lucide-react.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/lucide-react.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/package.json",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/pdfjs-dist_legacy_build_pdf__mjs.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/pdfjs-dist_legacy_build_pdf__mjs.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/react-dom.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/react-dom.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/react-dom_client.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/react-dom_client.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/react.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/react.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/react_jsx-dev-runtime.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/react_jsx-dev-runtime.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/react_jsx-runtime.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/react_jsx-runtime.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/ts-fsrs.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/ts-fsrs.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/web-6OH4PSSC.js",
+      "reason": "dependency, generated cache, or local credential container"
+    },
+    {
+      "path": "tmp/agricultural-science-audit/vite-cache/deps/web-6OH4PSSC.js.map",
+      "reason": "dependency, generated cache, or local credential container"
+    }
+  ],
+  "originalCheckpointCommit": "aae8bea6112b02c7fff7dc81de7d35752c634e9e",
+  "snapshotBase": "b98eae2d733e60ef08358b071b658d0f62cf2df7"
+}

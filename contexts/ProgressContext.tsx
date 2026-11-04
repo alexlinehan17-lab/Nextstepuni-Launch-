@@ -21,6 +21,7 @@ import {
 import { migrateTopicMastery } from '../services/topicMasteryMigration';
 import { reconcileMockResults } from '../services/mockResultsRepository';
 import { DEMO_STUDENT_UID, persistDemoStudentProgress } from '../data/devStudent';
+import { flushPendingStudySessions, withPendingStudySessions } from '../services/studySessionStore';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -80,6 +81,8 @@ interface ProgressContextValue {
   // shared fields should use these rather than the underlying doc shape so the
   // schema can evolve without breaking every consumer.
   studySessions: StudySessionRecord[];
+  /** Show a just-finished session everywhere at once, before Firestore confirms it. */
+  addStudySession: (record: StudySessionRecord) => void;
   studyDebriefs: DebriefEntry[];
   studyReflections: StudyReflection[];
   topicMastery: TopicMasteryMap | undefined;
@@ -176,6 +179,21 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const reloadProgress = useCallback(() => {
     setReloadVersion(v => v + 1);
   }, []);
+
+  const addStudySession = useCallback((record: StudySessionRecord) => {
+    setSessionsFromSubcollection(current => [...current.filter(item => item.id !== record.id), record]);
+  }, []);
+
+  // Retry any session a previous page queued but never saw saved (an iPad
+  // reload between "log" and Firestore's acknowledgement), then re-read.
+  useEffect(() => {
+    if (!user?.uid || user.uid === DEMO_STUDENT_UID) return;
+    let cancelled = false;
+    flushPendingStudySessions(user.uid).then(saved => {
+      if (!cancelled && saved > 0) setReloadVersion(v => v + 1);
+    });
+    return () => { cancelled = true; };
+  }, [user?.uid]);
 
   useEffect(() => {
     rawProgressDocRef.current = rawProgressDoc;
@@ -322,10 +340,13 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       return;
     }
     let cancelled = false;
-    getStudySessions(user.uid)
+    const uid = user.uid;
+    getStudySessions(uid)
       .then(records => {
         if (cancelled) return;
-        setSessionsFromSubcollection(records);
+        // A re-read can race a session that is still being written; keep
+        // queued sessions so they never vanish from the student's view.
+        setSessionsFromSubcollection(withPendingStudySessions(uid, records));
       })
       .catch(err => {
         console.error('Failed to load study sessions:', err);
@@ -378,6 +399,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     progressDataUid,
     progressDataStatus,
     studySessions,
+    addStudySession,
     studyDebriefs,
     studyReflections,
     topicMastery,

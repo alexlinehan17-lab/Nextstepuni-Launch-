@@ -202,6 +202,257 @@ const blockedReason = parsed => {
   return null;
 };
 
+// Reviewed reference anomalies. The reference files these questions under a
+// heading that the SEC paper's own printed dates or works contradict; each was
+// decided 2026-10-12 from the paper (StudyClix is a cross-check, never the
+// authority). The association is kept as an audited anomaly and the question
+// is filed under the heading the paper supports, which is also the heading of
+// its Mark Bank card.
+const REVIEWED_REFERENCE_ANOMALIES = [
+  {
+    level: 'higher', year: 2021, n: '3',
+    referenceTopicId: 'art-higher-pre-christian-ireland-c-4000bc-ad500',
+    topicId: 'art-higher-insular-art-c-500-1100s',
+    evidence: 'Q3 is "The Tara Brooch displays the artistry and technical brilliance of 8th century Irish metalwork": 8th-century Early Christian metalwork is Insular Art (c. 500-1100s), not Pre-Christian Ireland (c. 4000BC-AD500).',
+  },
+  {
+    level: 'higher', year: 2021, n: '6',
+    referenceTopicId: 'art-higher-irish-art-and-modernism',
+    topicId: 'art-higher-post-1960s-art-in-ireland',
+    evidence: "Q6 is 'Portrait of Henry Shefflin (b.1979), Hurler', illustrated on the accompanying sheet: a portrait of a sitter born in 1979 is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2021, n: '6',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is 'The Hare Queen' by Fidelma Massey (b.1956), illustrated on the accompanying sheet: the work of an artist born in 1956 is Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'higher', year: 2022, n: '6',
+    referenceTopicId: 'art-higher-irish-art-and-modernism',
+    topicId: 'art-higher-post-1960s-art-in-ireland',
+    evidence: "Q6 is \"Public sculpture should be created in response to the place in which it is situated\", with reference to 'Harmony' by Sandra Bell, illustrated on the accompanying sheet: a contemporary public sculpture is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2022, n: '6',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is 'The Family', a sculpture by Maurice Harron (b.1946), illustrated on the accompanying sheet: the work of an artist born in 1946 is Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'higher', year: 2022, n: '13',
+    referenceTopicId: 'art-higher-modernism-c-1900-1960s',
+    topicId: 'art-higher-realism-impressionism-and-post-impressionism',
+    evidence: 'Q13 is "Vincent van Gogh (1853-1890) attempted to convey intense emotion using strong colour and bold brushwork": a painter who died in 1890 is Post-Impressionism (c. 1850-1900s), not Modernism (c. 1900-1960s).',
+  },
+  {
+    level: 'ordinary', year: 2022, n: '8',
+    referenceTopicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    topicId: 'art-ordinary-europe-romanesque-and-gothic',
+    evidence: "Q8 is the 'Last Judgement' by Gislebertus (12th century), illustrated on the accompanying sheet: a 12th-century tympanum is Romanesque and Gothic, not The Renaissance (c. 1300-1600s).",
+  },
+  {
+    level: 'higher', year: 2020, n: '6',
+    referenceTopicId: 'art-higher-irish-art-and-modernism',
+    topicId: 'art-higher-post-1960s-art-in-ireland',
+    evidence: "Q6 is 'Fionn Mac Cumhaill and his Hounds' by Lynn Kirkham, illustrated on the accompanying sheet: a contemporary public sculpture is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2020, n: '6',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is the sculpture 'W. B. Yeats' by Rowan Gillespie (b.1953), illustrated on the accompanying sheet: the work of an artist born in 1953 is Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2020, n: '11',
+    referenceTopicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    topicId: 'art-ordinary-section-b-generic-questions',
+    evidence: "Q11 is the 'Oath of the Horatii' by Jacques-Louis David (1748-1825), \"an example of Neoclassical painting\": Neoclassicism is neither The Renaissance (c. 1300-1600s) nor The Baroque (c. 1600-1700s) and has no heading of its own, so it files under Section B: Generic Questions.",
+  },
+  {
+    level: 'ordinary', year: 2020, n: '11',
+    referenceTopicId: 'art-ordinary-the-baroque-c-1600-1700s',
+    topicId: 'art-ordinary-section-b-generic-questions',
+    evidence: "Q11 is the 'Oath of the Horatii' by Jacques-Louis David (1748-1825), \"an example of Neoclassical painting\": Neoclassicism is neither The Renaissance (c. 1300-1600s) nor The Baroque (c. 1600-1700s) and has no heading of its own, so it files under Section B: Generic Questions.",
+  },
+  {
+    level: 'ordinary', year: 2020, n: '12',
+    referenceTopicId: 'art-ordinary-europe-modernism-c-1900-1960s',
+    topicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    evidence: "Q12 is \"'The Starry Night' by Vincent van Gogh (1853-1890) is an example of Post-Impressionist painting\": the paper itself names it Post-Impressionism (c. 1850-1900s), not Modernism (c. 1900-1960s).",
+  },
+  {
+    level: 'higher', year: 2019, n: '11',
+    referenceTopicId: 'art-higher-realism-impressionism-and-post-impressionism',
+    topicId: 'art-higher-section-b-generic-questions',
+    evidence: "Q11 is \"J.M.W. Turner (1775-1851) painted expressive and dramatic scenes\", with 'Rain, Steam and Speed - The Great Western Railway': Turner's Romanticism precedes Realism, Impressionism and Post-Impressionism (c. 1850-1900s) and has no heading of its own, as for Turner's option in 2022 HL Q14.",
+  },
+  {
+    level: 'higher', year: 2019, n: '13',
+    referenceTopicId: 'art-higher-realism-impressionism-and-post-impressionism',
+    topicId: 'art-higher-modernism-c-1900-1960s',
+    evidence: "Q13 is \"Henri Matisse (1869-1954) used stylised shapes, strong colours and patterns in his paintings\", with 'Odalisque Wearing Red Trousers': Matisse's work is Modernism (c. 1900-1960s), not Post-Impressionism.",
+  },
+  {
+    level: 'ordinary', year: 2019, n: '5',
+    referenceTopicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    topicId: 'art-ordinary-irish-art-and-modernism',
+    evidence: "Q5 is in Section 1 (Art in Ireland): 'A Convent Garden, Brittany' by William Leech (1881-1968), an Irish painter, is Irish Art and Modernism, not the European heading.",
+  },
+  {
+    level: 'ordinary', year: 2019, n: '6',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is the sculpture 'Misneach' by John Byrne (b.1959), illustrated on the accompanying sheet: the work of an artist born in 1959 is Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2019, n: '11',
+    referenceTopicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    topicId: 'art-ordinary-the-baroque-c-1600-1700s',
+    evidence: "Q11 is 'The Supper at Emmaus' by Caravaggio (1571-1610), with \"(b) Briefly describe and discuss the Baroque style\": the paper itself places it in the Baroque (c. 1600-1700s), not The Renaissance.",
+  },
+  {
+    level: 'higher', year: 2018, n: '10',
+    referenceTopicId: 'art-higher-the-baroque-c-1600-1700s',
+    topicId: 'art-higher-the-renaissance-c-1300-1600s',
+    evidence: "Q10 is the altarpiece 'Assumption of the Virgin' by Titian (c.1488-1576), illustrated on the accompanying sheet: Titian is The Renaissance (c. 1300-1600s), not The Baroque (c. 1600-1700s).",
+  },
+  {
+    level: 'ordinary', year: 2018, n: '6',
+    referenceTopicId: 'art-ordinary-section-a-todays-world',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is in Section 1 (Art in Ireland): the 'Dockers Monument' by Mike Duhan (b.1956), illustrated on the accompanying sheet, is Post 1960s Art in Ireland, not a Today's World question.",
+  },
+  {
+    level: 'ordinary', year: 2018, n: '11',
+    referenceTopicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    topicId: 'art-ordinary-the-baroque-c-1600-1700s',
+    evidence: "Q11 is \"Choose one work by Caravaggio (1571-1610)\" with \"(b) Briefly describe and discuss Caravaggio's use of light\": Caravaggio is The Baroque (c. 1600-1700s), not The Renaissance.",
+  },
+  {
+    level: 'ordinary', year: 2017, n: '6',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is 'Coffin Ship' by John Behan (b. 1938), illustrated on the accompanying sheet: the National Famine Memorial sculpture (1997) is Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2017, n: '11',
+    referenceTopicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    topicId: 'art-ordinary-the-baroque-c-1600-1700s',
+    evidence: "Q11 is 'The Ecstasy of Saint Teresa' by Gian Lorenzo Bernini (1598-1680), with \"(b) Briefly describe and discuss the Baroque style\": the paper itself places it in the Baroque (c. 1600-1700s), not The Renaissance.",
+  },
+  {
+    level: 'higher', year: 2016, n: '6',
+    referenceTopicId: 'art-higher-irish-art-and-modernism',
+    topicId: 'art-higher-post-1960s-art-in-ireland',
+    evidence: "Q6 is \"Alice Maher (b.1956) creates artworks in a wide variety of media\", with 'Berry Dress': the work of an artist born in 1956 is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2016, n: '6',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-post-1960s-art-in-ireland',
+    evidence: "Q6 is \"Robert Ballagh (b.1943) is one of Ireland's best known contemporary artists\": the paper itself calls him contemporary, so Post 1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2016, n: '11',
+    referenceTopicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    topicId: 'art-ordinary-the-baroque-c-1600-1700s',
+    evidence: "Q11 is 'Supper at Emmaus' by Caravaggio (1571 - 1610), illustrated on the accompanying sheet: Caravaggio is The Baroque (c. 1600-1700s), not The Renaissance, as the paper itself says in 2017 and 2019.",
+  },
+  {
+    level: 'ordinary', year: 2016, n: '12',
+    referenceTopicId: 'art-ordinary-irish-art-and-modernism',
+    topicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    evidence: "Q12 is in Section 2 (European Art): \"Choose one work that you have studied by Claude Monet (1840 - 1926)\" is Impressionism, not Irish Art and Modernism.",
+  },
+  {
+    level: 'ordinary', year: 2016, n: '13',
+    referenceTopicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    topicId: 'art-ordinary-europe-modernism-c-1900-1960s',
+    evidence: "Q13 is 'The Red Room (Harmony in Red)' by Henri Matisse (1869 - 1954), illustrated on the accompanying sheet: Matisse's work is Modernism (c. 1900-1960s), not Post-Impressionism.",
+  },
+  {
+    level: 'higher', year: 2015, n: '3',
+    referenceTopicId: 'art-higher-irish-art-and-modernism',
+    topicId: 'art-higher-late-medieval-architecture-and-art-c1100-1550s',
+    evidence: "Q3 is \"The simple design of stone churches in Early Christian Ireland developed into a more complex Irish Romanesque style\": Irish Romanesque church building (12th century) is Late Medieval Architecture and Art (c. 1100-1550s), not Irish Art and Modernism.",
+  },
+  {
+    level: 'higher', year: 2015, n: '6',
+    referenceTopicId: 'art-higher-irish-art-and-modernism',
+    topicId: 'art-higher-post-1960s-art-in-ireland',
+    evidence: "Q6 is \"Rowan Gillespie (b.1953) creates sculptures ...\", with 'Famine' illustrated on the accompanying sheet: the work of an artist born in 1953 is Post-1960s Art in Ireland, not Irish Art and Modernism (c. 1880-1960s).",
+  },
+  {
+    level: 'higher', year: 2015, n: '7',
+    referenceTopicId: 'art-higher-section-b-generic-questions',
+    topicId: 'art-higher-irish-art-and-modernism',
+    evidence: 'Q7 is in Section I (Art in Ireland), a choice of Irish artists from John Hogan (1800-1858) to Caroline McCarthy (b.1971): it is not a European (Section B) question, and like every other year\'s Q7 list it files under Irish Art and Modernism.',
+  },
+  {
+    level: 'ordinary', year: 2015, n: '3',
+    referenceTopicId: 'art-ordinary-pre-christian-ireland-c-4000bc-ad500',
+    topicId: 'art-ordinary-insular-art-c-500-1100s',
+    evidence: "Q3 is the 'Cross of the Scriptures' at Clonmacnoise, Co. Offaly, illustrated on the accompanying sheet: an Early Christian high cross is Insular Art (c. 500-1100s), not Pre-Christian Ireland.",
+  },
+  {
+    level: 'ordinary', year: 2015, n: '11',
+    referenceTopicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    topicId: 'art-ordinary-the-baroque-c-1600-1700s',
+    evidence: "Q11 is the 'Return of the Prodigal Son' by Rembrandt van Rijn (1606-1669), illustrated on the accompanying sheet: Rembrandt is The Baroque (c. 1600-1700s), not Realism, Impressionism and Post-Impressionism.",
+  },
+  {
+    level: 'higher', year: 2014, n: '12',
+    referenceTopicId: 'art-higher-modernism-c-1900-1960s',
+    topicId: 'art-higher-realism-impressionism-and-post-impressionism',
+    evidence: "Q12 is about \"the Realist painter Gustave Courbet (1819-1877)\" and 'Bonjour, Monsieur Courbet': the paper itself names him a Realist, so Realism, Impressionism and Post-Impressionism, not Modernism (c. 1900-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2014, n: '2',
+    referenceTopicId: 'art-ordinary-pre-christian-ireland-c-4000bc-ad500',
+    topicId: 'art-ordinary-insular-art-c-500-1100s',
+    evidence: "Q2 is \"The 'Reask Pillar', Co. Kerry ... an example of an Early Christian stone slab / pillar\": the paper itself calls it Early Christian, so Insular Art (c. 500-1100s), not Pre-Christian Ireland.",
+  },
+  {
+    level: 'ordinary', year: 2014, n: '3',
+    referenceTopicId: 'art-ordinary-pre-christian-ireland-c-4000bc-ad500',
+    topicId: 'art-ordinary-insular-art-c-500-1100s',
+    evidence: "Q3 is \"The 'Tara Brooch' is an example of Irish metalwork from the Early Medieval period\": Early Medieval (8th-century) metalwork is Insular Art (c. 500-1100s), not Pre-Christian Ireland.",
+  },
+  {
+    level: 'ordinary', year: 2014, n: '9',
+    referenceTopicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    topicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    evidence: "Q9 is 'Holy Trinity' by Masaccio (1401-c.1428), illustrated on the accompanying sheet: Masaccio is The Renaissance (c. 1300-1600s), not Realism, Impressionism and Post-Impressionism.",
+  },
+  {
+    level: 'higher', year: 2013, n: '17',
+    referenceTopicId: 'art-higher-art-as-social-commentary-or-commentator',
+    topicId: 'art-higher-artists-theory-and-thinking',
+    evidence: "Q17 is \"A curator's work involves planning all aspects of an exhibition\": (a) the main steps a curator took in planning and mounting a named exhibition and (b) curating an exhibition of Transition Year artwork. It comments on no social issue; it is a curating and exhibition question, filed with the gallery questions under Artists: Theory and Thinking (as 2024 HL Q5(a) \"the role of the curator\"), not Art as Social Commentary or Commentator.",
+  },
+  {
+    level: 'ordinary', year: 2011, n: '14',
+    referenceTopicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    topicId: 'art-ordinary-europe-modernism-c-1900-1960s',
+    evidence: "Q14 is \"Choose any work that you have studied by Henri Matisse (1869-1954)\": Matisse's work is Modernism (c. 1900-1960s), as for 2019 HL Q13, not Post-Impressionism.",
+  },
+  {
+    level: 'higher', year: 2010, n: '2',
+    referenceTopicId: 'art-higher-pre-christian-ireland-c-4000bc-ad500',
+    topicId: 'art-higher-insular-art-c-500-1100s',
+    evidence: "Q2 is \"Describe and discuss early Irish architecture, referring in your answer to monastic settlements, churches and beehive huts\", then the construction of Gallarus Oratory or the Church of St. Macdara: Early Christian architecture is Insular Art (c. 500-1100s), not Pre-Christian Ireland (c. 4000BC-AD500).",
+  },
+];
+const anomalyFor = (level, year, n, topicId) => REVIEWED_REFERENCE_ANOMALIES.find(item => (
+  item.level === level && item.year === year && item.n === n && item.referenceTopicId === topicId
+));
+for (const item of REVIEWED_REFERENCE_ANOMALIES) {
+  for (const id of [item.referenceTopicId, item.topicId]) {
+    if (topicLevel.get(id) !== item.level) throw new Error(`Art anomaly ${item.year} Q${item.n}: ${id} is not ${item.level}`);
+  }
+}
+
 const associations = [];
 for (const level of LEVELS) {
   for (const topic of reference.variants[level].topics) {
@@ -219,6 +470,30 @@ for (const level of LEVELS) {
           resolution: 'source-blocked',
           reason: explicitBlock
             ?? 'No matching entitled local SEC Art written-paper card is present. The factual heading is retained pending independent verification; no StudyClix-hosted question image or PDF is copied.',
+        });
+        continue;
+      }
+      const anomaly = parsed.sitting === 'main'
+        ? anomalyFor(level, parsed.year, parsed.questionNumber, topic.id)
+        : undefined;
+      if (anomaly) {
+        anomaly.seen = (anomaly.seen ?? 0) + 1;
+        associations.push({
+          topicId: topic.id,
+          level,
+          heading,
+          ...parsed,
+          resolution: 'reference-anomaly',
+          target: {
+            level,
+            lang: 'ev',
+            year: parsed.year,
+            paperKey: 'single',
+            fileid: paper.fileid,
+            questionNumber: parsed.questionNumber,
+          },
+          filedUnder: anomaly.topicId,
+          reason: `StudyClix files this ${parsed.year} ${level} heading under ${topic.id}. Decided 2026-10-12 from the SEC paper: ${anomaly.evidence} NextStepUni files the question under ${anomaly.topicId}, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly.`,
         });
         continue;
       }
@@ -268,6 +543,20 @@ if (
 if (associations.length !== referenceOfficialAssociations) {
   throw new Error(`Expected ${referenceOfficialAssociations} reconciliations, found ${associations.length}`);
 }
+const unusedAnomalies = REVIEWED_REFERENCE_ANOMALIES.filter(item => item.seen !== 1);
+if (unusedAnomalies.length) {
+  throw new Error(`Art reviewed anomalies must each match one association: ${unusedAnomalies.map(item => `${item.year} ${item.level} Q${item.n}`).join(', ')}`);
+}
+const reviewedTopicsByCard = new Map();
+for (const item of REVIEWED_REFERENCE_ANOMALIES) {
+  const paper = EnglishWrittenPaper(item.level, item.year);
+  const key = [item.level, item.year, paper.fileid, item.n].join('|');
+  const indexes = reviewedTopicsByCard.get(key) ?? [];
+  const index = topicIndex.get(item.topicId);
+  if (!indexes.includes(index)) indexes.push(index);
+  reviewedTopicsByCard.set(key, indexes);
+}
+
 
 const exactTopicsByCard = new Map();
 for (const association of associations.filter(item => item.resolution === 'matched')) {
@@ -384,6 +673,61 @@ for (const paper of supplementedPapers) {
   }
 }
 
+// A choose-one list whose printed options are different syllabus periods or
+// movements is carded one card per option (Mark Bank OPTION_TOPICS). The
+// question-level reference heading is generic, so each option's own heading
+// is added to the question's browse topics, with a reviewed part reference
+// naming the printed option, so the card appears under its own heading.
+const optionTopicsByCard = new Map();
+const reviewedOptionTopics = [];
+for (const card of authored.cards) {
+  const [base, option] = card.questionRef.split(' · ');
+  if (!option || /^task \d$/.test(option)) continue;
+  const n = base.match(/\bQ(\d+)/)?.[1];
+  const paper = EnglishWrittenPaper(card.level, card.year);
+  if (!n || !paper) throw new Error(`Cannot place Art option card ${card.id}`);
+  const index = fallbackTopicForNode(card.level, card.topicId);
+  const key = [card.level, card.year, paper.fileid, n].join('|');
+  const indexes = optionTopicsByCard.get(key) ?? [];
+  if (!indexes.includes(index)) indexes.push(index);
+  optionTopicsByCard.set(key, indexes);
+  if (!reviewedOptionTopics.some(item => item.key === `${key}|${option}`)) {
+    reviewedOptionTopics.push({
+      key: `${key}|${option}`,
+      level: card.level,
+      year: card.year,
+      fileid: paper.fileid,
+      questionNumber: n,
+      option,
+      canonicalNodeId: card.topicId,
+      topicId: allTopics[index].id,
+      heading: `${card.year} - Question ${n} - ${option}`,
+    });
+  }
+}
+
+// Where the reference gives a question only a generic bucket ("Section A:
+// Generic Questions", "Section B: Generic Questions"), its reviewed Mark Bank
+// card names the specific heading; the question is added under that heading
+// too, so the card and the Atlas agree.
+const GENERIC_TOPIC_INDEXES = new Set([
+  'art-higher-section-a-generic-questions',
+  'art-higher-section-b-generic-questions',
+  'art-ordinary-section-b-generic-questions',
+].map(id => topicIndex.get(id)));
+const cardTopicsByQuestion = new Map();
+for (const card of authored.cards) {
+  const n = card.questionRef.split(' · ')[0].match(/\bQ(\d+)/)?.[1];
+  const paper = EnglishWrittenPaper(card.level, card.year);
+  if (!n || !paper) continue;
+  const key = [card.level, card.year, paper.fileid, n].join('|');
+  const indexes = cardTopicsByQuestion.get(key) ?? [];
+  const index = fallbackTopicForNode(card.level, card.topicId);
+  if (!indexes.includes(index)) indexes.push(index);
+  cardTopicsByQuestion.set(key, indexes);
+}
+const reviewedSpecificTopics = [];
+
 const questionMappings = [];
 const retainedLocalCards = [];
 const retainedLogical = new Set();
@@ -395,13 +739,33 @@ for (const paper of localPapers) {
       englishTwin(paper.fileid),
       question.n,
     ].join('|');
-    let indexes = exactTopicsByCard.get(exactKey);
+    const reviewedIndexes = reviewedTopicsByCard.get(exactKey);
+    const exactIndexes = exactTopicsByCard.get(exactKey);
+    let indexes = reviewedIndexes || exactIndexes
+      ? [...new Set([...(exactIndexes ?? []), ...(reviewedIndexes ?? [])])]
+      : undefined;
     if (!indexes) {
       indexes = [...new Set(
         [question.primary, question.secondary]
           .filter(Boolean)
           .map(nodeId => fallbackTopicForNode(paper.level, nodeId)),
       )];
+      // With no reference association, the local tags and the reviewed Mark
+      // Bank card are the evidence: the card's heading is always included.
+      const cardAdded = (WRITTEN_COMPONENTS.has(componentCode(paper.fileid))
+        ? cardTopicsByQuestion.get(exactKey) ?? []
+        : []).filter(index => !indexes.includes(index));
+      indexes = [...indexes, ...cardAdded];
+      if (paper.lang === 'ev' && cardAdded.length) {
+        reviewedSpecificTopics.push({
+          level: paper.level,
+          year: paper.year,
+          fileid: paper.fileid,
+          questionNumber: question.n,
+          topicIds: cardAdded.map(index => allTopics[index].id),
+          basis: 'retained-local',
+        });
+      }
       const logicalKey = logicalCardKey(paper, question.n);
       if (!retainedLogical.has(logicalKey)) {
         retainedLogical.add(logicalKey);
@@ -423,6 +787,26 @@ for (const paper of localPapers) {
       }
     }
     if (!indexes.length) throw new Error(`${paperIdentity(paper)} Q${question.n}: empty topic mapping`);
+    const optionIndexes = WRITTEN_COMPONENTS.has(componentCode(paper.fileid))
+      ? optionTopicsByCard.get(exactKey) ?? []
+      : [];
+    indexes = [...new Set([...indexes, ...optionIndexes])];
+    const cardIndexes = WRITTEN_COMPONENTS.has(componentCode(paper.fileid))
+      ? cardTopicsByQuestion.get(exactKey) ?? []
+      : [];
+    if (cardIndexes.length && indexes.every(index => GENERIC_TOPIC_INDEXES.has(index))) {
+      const added = cardIndexes.filter(index => !indexes.includes(index));
+      indexes = [...indexes, ...added];
+      if (paper.lang === 'ev' && added.length) {
+        reviewedSpecificTopics.push({
+          level: paper.level,
+          year: paper.year,
+          fileid: paper.fileid,
+          questionNumber: question.n,
+          topicIds: added.map(index => allTopics[index].id),
+        });
+      }
+    }
     questionMappings.push([
       paper.level === 'higher' ? 'h' : 'o',
       paper.lang === 'ev' ? 'e' : 'i',
@@ -453,6 +837,7 @@ for (const paper of localPapers) {
 
 const matchedAssociations = associations.filter(item => item.resolution === 'matched');
 const sourceBlockedAssociations = associations.filter(item => item.resolution === 'source-blocked');
+const referenceAnomalyAssociations = associations.filter(item => item.resolution === 'reference-anomaly');
 const matchedQuestionTopicLinks = new Set(matchedAssociations.map(item => [
   item.topicId,
   item.level,
@@ -475,19 +860,39 @@ if (physicalMappings !== 2154 || questionMappings.length !== 2154) {
 if (distinctStudentFacingQuestions !== 1077) {
   throw new Error(`Expected 1,077 Art logical questions, found ${distinctStudentFacingQuestions}`);
 }
-if (exactTopicsByCard.size + retainedLocalCards.length !== distinctStudentFacingQuestions) {
-  throw new Error('Every logical Art card must be exactly matched or explicitly retained');
+const reviewedOnlyCards = [...reviewedTopicsByCard.keys()].filter(key => !exactTopicsByCard.has(key));
+if (
+  exactTopicsByCard.size + reviewedOnlyCards.length + retainedLocalCards.length
+  !== distinctStudentFacingQuestions
+) {
+  throw new Error('Every logical Art card must be exactly matched, reviewed, or explicitly retained');
 }
 if (
-  matchedAssociations.length !== 592
+  matchedAssociations.length !== 553
   || sourceBlockedAssociations.length !== 98
-  || exactTopicsByCard.size !== 541
-  || matchedQuestionTopicLinks !== 584
+  || referenceAnomalyAssociations.length !== 39
+  || exactTopicsByCard.size !== 505
+  || reviewedTopicsByCard.size !== 38
+  || reviewedOnlyCards.length !== 36
+  || matchedQuestionTopicLinks !== 545
+  || reviewedOptionTopics.length !== 169
+  || reviewedSpecificTopics.length !== 57
   || retainedLocalCards.length !== 536
   || retainedWrittenLogicalCards !== 144
   || retainedPracticalLogicalCards !== 392
 ) {
-  throw new Error('Art reference/local reconciliation counts changed unexpectedly');
+  throw new Error(`Art reference/local reconciliation counts changed unexpectedly: ${JSON.stringify({
+    matched: matchedAssociations.length,
+    blocked: sourceBlockedAssociations.length,
+    anomalies: referenceAnomalyAssociations.length,
+    exactCards: exactTopicsByCard.size,
+    reviewedCards: reviewedTopicsByCard.size,
+    links: matchedQuestionTopicLinks,
+    options: reviewedOptionTopics.length,
+    specific: reviewedSpecificTopics.length,
+    retained: retainedLocalCards.length,
+    retainedWritten: retainedWrittenLogicalCards,
+  })}`);
 }
 if (verifiedSchemeMaps !== 65 || verifiedPaperOnlyMaps !== 87) {
   throw new Error('Art paper/scheme map boundary changed unexpectedly');
@@ -526,7 +931,7 @@ const partReferences = associations.map(association => [
   topicIndex.get(association.topicId),
   association.year - 2000,
   sittingCode[association.sitting],
-  association.resolution === 'matched' ? componentCode(association.target.fileid) : '',
+  association.target ? componentCode(association.target.fileid) : '',
   association.questionNumber,
   association.heading,
 ]);
@@ -541,7 +946,11 @@ const summary = {
   referenceProviderSampleAssociations,
   matchedAssociations: matchedAssociations.length,
   sourceBlockedAssociations: sourceBlockedAssociations.length,
+  referenceAnomalyAssociations: referenceAnomalyAssociations.length,
   matchedLogicalCards: exactTopicsByCard.size,
+  reviewedLogicalCards: reviewedOnlyCards.length,
+  reviewedOptionTopics: reviewedOptionTopics.length,
+  reviewedSpecificTopics: reviewedSpecificTopics.length,
   matchedQuestionTopicLinks,
   retainedLocalLogicalCards: retainedLocalCards.length,
   retainedWrittenLogicalCards,
@@ -575,11 +984,16 @@ const evidence = {
   reviewedLocalEvidence: {
     ordinary2023: 'Official SEC LC014GLP000EV paper inspected directly; Q1–Q7 are Section A and Q8–Q19 align one-to-one with the printed Section B/C period headings.',
     canonical2023To2025: 'Existing authored Mark Bank cards provide the directly reviewed canonical syllabus node for each written question.',
+    referenceAnomalies: 'Seven 2021-2022 questions the reference files under a heading their printed dates or works contradict are filed under the heading the SEC paper supports (resolution reference-anomaly, with the evidence).',
+    specificTopics: 'A question the reference files only under a generic bucket is also filed under the specific heading of its reviewed Mark Bank card (reviewedSpecificTopics).',
+    optionTopics: 'Each printed option of a 2021-2022 choose-one question whose options are different periods or movements is added under its own heading (reviewedOptionTopics), matching its Mark Bank card.',
   },
   summary,
   curriculumCrosswalk,
   associations,
   retainedLocalCards,
+  reviewedOptionTopics: reviewedOptionTopics.map(({ key, ...item }) => item),
+  reviewedSpecificTopics,
 };
 const runtime = {
   v: 1,

@@ -1,0 +1,136 @@
+NAV http://127.0.0.1:5488/
+NAV http://127.0.0.1:5488/
+NAV http://127.0.0.1:5488/?view=innovation-zone&tool=mark-bank
+NAV http://127.0.0.1:5488/?view=innovation-zone&tool=mark-bank
+Before marking screenshot 1
+After marking screenshot 1
+Scheme URL https://firebasestorage.googleapis.com/v0/b/nextstepuni-app.firebasestorage.app/o/papers%2Flc%2Fpolitics-and-society%2F2018%2Fscheme%2FLC568ALP000EV.pdf?alt=media#page=4
+NAV http://127.0.0.1:5488/?view=innovation-zone&tool=topic-atlas&subject=politics-and-society&topic=politics-and-society-higher-data-based-questions
+NAV http://127.0.0.1:5488/?view=innovation-zone&tool=topic-atlas
+REQUEST FAILED https://firebasestorage.googleapis.com/v0/b/nextstepuni-app.firebasestorage.app/o/papers%2Flc%2Faccounting%2F2026%2Fpaper%2FLC032ALP000EV.pdf?alt=media { errorText: 'net::ERR_ABORTED' }
+Atlas task: 2026 HL Q2(g)
+50 marks
+
+Drawing on the data presented in both documents and the quotation below, what conclusions can you draw about the perception of Africa as being peripheral and marginal on the global stage?
+
+READ DOCUMENTS AND ORIGINAL QUESTION
+2026 HL Q2(g)
+4 printed pages · original documents and graphics
+Hide marking guide
+
+SEC POLITICS AND SOCIETY MARKING SCHEME
+
+Compare your answer with the published criteria.
+
+The published suggestions and examples are not exhaustive. Compare your response with the scheme and apply its stated allocations and quality descriptors. Other valid responses remain creditable.
+
+Read the published answer guidance
+Conclusions
+Conclusions mark
+0 / 30
+1 / 30
+2 / 30
+3 / 30
+4 / 30
+5 / 30
+6 / 30
+7 / 30
+8 / 30
+9 / 30
+10 / 30
+11 / 30
+12 / 30
+13 / 30
+14 / 30
+15 / 30
+16 / 30
+17 / 30
+18 / 30
+19 / 30
+20 / 30
+21 / 30
+22 / 30
+23 / 30
+24 / 30
+25 / 30
+26 / 30
+27 / 30
+28 / 30
+29 / 30
+30 / 30
+Use of documents
+Use of documents mark
+0 / 20
+1 / 20
+2 / 20
+3 / 20
+4 / 20
+5 / 20
+6 / 20
+7 / 20
+8 / 20
+9 / 20
+10 / 20
+11 / 20
+12 / 20
+13 / 20
+14 / 20
+15 / 20
+16 / 20
+17 / 20
+18 / 20
+19 / 20
+20 / 20
+Your placement
+0 / 50
+READ THE OFFICIAL SCHEME
+2026 HL Q2(g)
+1 printed page · official marking guidance
+Horizontal overflow false
+Ordinary route 2023 OL Q2(d) — row 1 / row 2 / row 3
+15 marks
+
+According to Document B, name the three causes of poverty shown in row 1 and row 2 and row 3 of the first chart, counting from the top.
+
+READ DOCUMENTS AND ORIGINAL QUESTION
+2023 OL Q2(d) — row 1 / row 2 / row 3
+3 printed pages · original documents and graphics
+Hide marking guide
+
+SEC POLITICS AND SOCIETY MARKING SCHEME
+
+Compare your answer with the published criteria.
+
+The published suggestions and examples are not exhaustive. Compare your response with the scheme and apply its stated allocations and quality descriptors. Other valid responses remain creditable.
+
+row 1 / row 2 / row 3
+
+Read the published answer guidance
+
+According to Document B, name three main causes of poverty in developing countries.
+3 x 5 marks
+1. Government and private sector corruption
+2. War and conflict
+3. Government is not efficient or competent
+4. Or any other point named in the piece
+
+First cause
+First cause mark
+0 / 5
+5 / 5
+Second cause
+Second cause mark
+0 / 5
+5 / 5
+Third cause
+Third cause mark
+0 / 5
+5 / 5
+Your placement
+0 / 15
+READ THE OFFICIAL SCHEME
+2023 OL Q2(d) — row 1 / row 2 / row 3
+1 printed page · official marking guidance
+Selected mark colour rgb(245, 160, 74)
+Essay: six criteria, 100/100 selected; route: 286 options, pagination 40.
+ERRORS []

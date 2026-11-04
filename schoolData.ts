@@ -9,7 +9,7 @@ export const SCHOOLS = [
   { id: 'larkin', name: 'Larkin' },
   { id: 'oconnells', name: "O'Connell's" },
   { id: 'mountcarmel', name: 'Mount Carmel' },
-  { id: 'rosmini', name: 'Rosmini' },
+  { id: 'rosmini', name: 'Grace Park Community School' },
   { id: 'pwc', name: 'PwC' },
 ] as const;
 

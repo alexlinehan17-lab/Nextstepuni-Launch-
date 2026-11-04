@@ -1,0 +1,36 @@
+name: Home monitor layout
+permissions:
+  contents: read
+on:
+  pull_request:
+    paths:
+      - 'components/KnowledgeTree*.tsx'
+      - 'components/student-screens.css'
+      - 'output/home-monitor-review/**'
+      - '.github/workflows/home-monitor-layout.yml'
+jobs:
+  browser-layout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Install isolated browser tools
+        run: |
+          npm install --prefix "$RUNNER_TEMP/home-browser" --no-package-lock --ignore-scripts playwright@1.63.0
+          node "$RUNNER_TEMP/home-browser/node_modules/playwright/cli.js" install --with-deps chromium
+      - name: Render actual Home on phone and monitors
+        run: node output/home-monitor-review/build-review.mjs --capture
+        env:
+          PLAYWRIGHT_MODULE_PATH: ${{ runner.temp }}/home-browser/node_modules/playwright/index.mjs
+          HOME_SCREENSHOTS: ${{ runner.temp }}/home-monitor-review
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: home-monitor-review
+          path: ${{ runner.temp }}/home-monitor-review
+          retention-days: 7

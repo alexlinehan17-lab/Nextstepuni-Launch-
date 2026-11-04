@@ -1,0 +1,57 @@
+[
+ {
+  "id": "bus-2010-ol-s2-q3ai",
+  "questionRef": "2010 OL Section 2 Q3(A)(i)",
+  "schemePages": [
+   5,
+   14
+  ],
+  "reason": "workings table flattened by the text layer; slice: excluded: The response is a drawn bar chart; the text layer prints only its title, the axis values and the series label, and the bars are 61 drawn line segments."
+ },
+ {
+  "id": "bus-2011-hl-s3-q7c-i",
+  "questionRef": "2011 HL Section 3 Q7(C)(i)",
+  "schemePages": [
+   12,
+   41,
+   42
+  ],
+  "reason": "text layer glyph damage on the cited page; slice: excluded: The response is a drawn break-even chart; the text layer prints only its title, the axis values and the curve labels (TR, TC, FC, break-even point, margin of safety), and the curves are 73 drawn line segments."
+ },
+ {
+  "id": "bus-2015-hl-s3-q4a-i",
+  "questionRef": "2015 HL Section 3 Q4(A)(i)",
+  "schemePages": [
+   9,
+   34
+  ],
+  "reason": "part marker; slice: excluded: The response is a drawn bar chart; the text layer prints only its title, axis values and month labels, no priced rows."
+ },
+ {
+  "id": "bus-2020-hl-s3-q4b-i",
+  "questionRef": "2020 HL Section 3 Q4(B)(i)",
+  "schemePages": [
+   10,
+   47
+  ],
+  "reason": "the scheme prints the marker and the question but no response under it on the cited page; slice: excluded: The response is an organisation chart embedded as an image; the text layer holds only the marker and the marks cell \"3,3,2,2\" between y 0.144 and 0.463."
+ },
+ {
+  "id": "bus-2025-hl-s1-q1",
+  "questionRef": "2025 HL Section 1 Q1",
+  "schemePages": [
+   5,
+   12
+  ],
+  "reason": "the scheme prints the marker and the question but no response under it on the cited page; slice: excluded: The matching grid (1–5 over D E A C F) is an image; the region holds one image and thirteen drawn rules and no text."
+ },
+ {
+  "id": "bus-2025-ol-s1-q9",
+  "questionRef": "2025 OL Section 1 Q9",
+  "schemePages": [
+   4,
+   10
+  ],
+  "reason": "the scheme prints the marker and the question but no response under it on the cited page; slice: excluded: The completed matrix structure is an image; the text layer holds only \"Managing / Director\" and the marks cells."
+ }
+]

@@ -1,0 +1,1271 @@
+{
+  "subjectId": "economics",
+  "year": 2025,
+  "level": "higher",
+  "lang": "ev",
+  "fileid": "LC034ALP000EV",
+  "status": "independent-census-before-authoring",
+  "completeSubject": false,
+  "reviewedAt": "2026-10-11",
+  "visuallyInspectedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "visuallyInspectedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77
+  ],
+  "unreviewedPaperPages": [],
+  "unreviewedSchemePages": [],
+  "paperSha256": "02d8e2571250ce3776a0ca57e1a7d90c0b665fc16ef854f20508d2005249210b",
+  "schemeSha256": "d3621baea3d2bdd054d2e63b6a3398607989a774c27bb0cc5221a0d96b35381b",
+  "questions": [
+    {
+      "n": "1",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 12,
+          "cardId": "econ-2025-hl-sa-q1-a-for",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q1-b",
+          "topicId": "economics-0-1"
+        }
+      ],
+      "boundaryReason": "a required headings Argument for 6 + Argument against 6 in one response (the old against-only card resolves by alias). b 6 one definition. The scheme prints 6 for each heading, so Q1 totals 18 against 12 for most Section A questions; recorded as printed.",
+      "canonicalNodeIds": [
+        "economics-3-5",
+        "economics-0-1"
+      ],
+      "topicReason": "Benefits and costs of hosting a major event to the host economy are growth outcomes (NCCA 4.6 economic growth). Cost benefit analysis weighs opportunity cost (NCCA 1.2)."
+    },
+    {
+      "n": "2",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        6,
+        7,
+        8
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2025-hl-seca-q2-a",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q2-b",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/agree",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q2-c-agree",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/disagree",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q2-c-disagree",
+          "topicId": "economics-3-0"
+        }
+      ],
+      "boundaryReason": "a 6 savings rate 15% (fraction working, hidden solution crop). Answer either b 2@3 OR c: c printed Agree/Disagree tick with both lists in the scheme, two routes 6 each.",
+      "canonicalNodeIds": [
+        "economics-3-0"
+      ],
+      "topicReason": "Household savings, the savings ratio and its macro effects are national income/circular flow (NCCA 4.1)."
+    },
+    {
+      "n": "3",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        9,
+        10,
+        11
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q3-a",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q3-b",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "c",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q3-c",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "a 6 one reason from seven. Answer either b 6 (one alternative measure to tariffs) OR c 6 (one reason protectionism is rising): both carded.",
+      "canonicalNodeIds": [
+        "economics-4-2"
+      ],
+      "topicReason": "Import patterns, protectionist measures and their causes are international trade (NCCA 5.3)."
+    },
+    {
+      "n": "4",
+      "paperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q4-a-good",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b",
+          "marks": 12,
+          "cardId": "econ-2025-hl-sa-q4-b-gov",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q4-c",
+          "topicId": "economics-3-3"
+        }
+      ],
+      "boundaryReason": "a one 6 cell for the trend comment AND whether it is beneficial; the scheme lists beneficial and not-beneficial examples under one cell, the paper prints no tick, so one card (the old not-beneficial card resolves by alias). Answer either b required headings government 6 + consumers 6 (one card; the old consumers card resolves by alias) OR c 6: objective tick, the scheme answer is cost-push only, one card. Q4 via (b) totals 18; recorded as printed.",
+      "canonicalNodeIds": [
+        "economics-3-3",
+        "economics-3-1"
+      ],
+      "topicReason": "Disinflation and cost-push inflation are NCCA 4.4 (price level). Government cost-of-living measures are fiscal policy (NCCA 4.2)."
+    },
+    {
+      "n": "5",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        16
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q5-a",
+          "topicId": "economics-0-0"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2025-hl-seca-q5-b",
+          "topicId": "economics-0-0"
+        }
+      ],
+      "boundaryReason": "a 2@3 positive and normative explanations, both required. b 2@3 two objective classifications (1 normative, 2 positive).",
+      "canonicalNodeIds": [
+        "economics-0-0"
+      ],
+      "topicReason": "Positive and normative economics is economics as a way of thinking (NCCA 1.1)."
+    },
+    {
+      "n": "6",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        17
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q6-a",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2025-hl-seca-q6-b",
+          "topicId": "economics-2-1"
+        }
+      ],
+      "boundaryReason": "a 6 price floor definition. b one 6 cell for the completed labour-market diagram and its explanation together; the diagram solution is hidden until reveal and the full printed question is shown.",
+      "canonicalNodeIds": [
+        "economics-1-3",
+        "economics-2-1"
+      ],
+      "topicReason": "A price floor is government intervention (NCCA 2.4). A minimum wage above equilibrium is the labour market (NCCA 3.2)."
+    },
+    {
+      "n": "7",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        18
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2025-hl-seca-q7-a",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q7-b",
+          "topicId": "economics-2-2"
+        }
+      ],
+      "boundaryReason": "a one 6 cell for necessity (electricity, noodles accepted) and luxury (premium clothing) with justifications, no published split. b 6 merit good explanation.",
+      "canonicalNodeIds": [
+        "economics-1-4",
+        "economics-2-2"
+      ],
+      "topicReason": "YED classification is elasticity (NCCA 2.2, deck 2.5). Merit goods are market failure (NCCA 3.3)."
+    },
+    {
+      "n": "8",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        19,
+        20
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q8-a",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q8-b",
+          "topicId": "economics-2-2"
+        }
+      ],
+      "boundaryReason": "a one 6 cell for the concept and one recent initiative together. b 2@3 two ways greenwashing causes market failure.",
+      "canonicalNodeIds": [
+        "economics-0-2",
+        "economics-2-2"
+      ],
+      "topicReason": "Environmental sustainability is NCCA 1.3. Greenwashing as information failure is market failure (NCCA 3.3)."
+    },
+    {
+      "n": "9",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        21
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2025-hl-q9-a",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q9-b",
+          "topicId": "economics-2-0"
+        }
+      ],
+      "boundaryReason": "a one 6 cell for three labels (MC, AR = Demand, MR), no per-label split. b one 6 cell explaining the kinked curve above and below the kink.",
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "topicReason": "The kinked demand curve of oligopoly is market structures (NCCA 3.1)."
+    },
+    {
+      "n": "10",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        22,
+        23
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2025-hl-seca-q10-a",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2025-hl-sa-q10-b",
+          "topicId": "economics-3-5"
+        }
+      ],
+      "boundaryReason": "a 2@3 boom A and recession B each with a justification (objective identifications). b 6 one factor 2008-2011.",
+      "canonicalNodeIds": [
+        "economics-3-5"
+      ],
+      "topicReason": "The business cycle and the 2008-2011 downturn are economic growth (NCCA 4.6)."
+    },
+    {
+      "n": "11",
+      "paperPages": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "schemePages": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 8,
+          "cardId": "econ-2025-hl-q11-a-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 14,
+          "cardId": "econ-2025-hl-q11-a-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/i/diagram",
+          "marks": 12,
+          "cardId": "econ-2025-hl-q11-b-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/i/explanation",
+          "marks": 9,
+          "cardId": "econ-2025-hl-q11-b-i-explanation",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 4,
+          "cardId": "econ-2025-hl-q11-b-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/iii",
+          "marks": 8,
+          "cardId": "econ-2025-hl-q11-b-iii-adv",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 8,
+          "cardId": "econ-2025-hl-q11-c-i",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 4,
+          "cardId": "econ-2025-hl-q11-c-ii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/iii",
+          "marks": 8,
+          "cardId": "econ-2025-hl-q11-c-iii",
+          "topicId": "economics-1-0"
+        }
+      ],
+      "boundaryReason": "Nine tasks totalling 75. a(i) one 8 cell: tick highly concentrated, HHI 3,594, justify (>2,500). a(ii) 2@7. b(i) diagram 12 and explanation 9 separately priced, split (the old combined card keeps its ID as the diagram). b(ii) 4. b(iii) required advantage 4 + disadvantage 4 (old disadvantage card resolves by alias). c(i) 2@4; c(ii) 4; c(iii) one 8 cell for meaning and example.",
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-2-1",
+        "economics-1-0"
+      ],
+      "topicReason": "HHI, entry, patent monopoly, barriers and monopoly power are market structures (NCCA 3.1). GP shortages are a labour-market supply question (NCCA 3.2). A mixed economy is the market economy and the role of government (NCCA 2.1)."
+    },
+    {
+      "n": "12",
+      "paperPages": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "schemePages": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "tasks": [
+        {
+          "key": "a/i/gni",
+          "marks": 6,
+          "cardId": "econ-2025-hl-q12-a-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/i/gdp",
+          "marks": 6,
+          "cardId": "econ-2025-hl-q12-a-i-gdp",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 14,
+          "cardId": "econ-2025-hl-q12-a-ii-tax",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/iii",
+          "marks": 6,
+          "cardId": "econ-2025-hl-q12-a-iii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 12,
+          "cardId": "econ-2025-hl-q12-b-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 8,
+          "cardId": "econ-2025-hl-q12-b-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/iii/agree",
+          "marks": 8,
+          "cardId": "econ-2025-hl-q12-b-iii-agree",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/iii/disagree",
+          "marks": 8,
+          "cardId": "econ-2025-hl-q12-b-iii-disagree",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 14,
+          "cardId": "econ-2025-hl-q12-c-i-employee",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 7,
+          "cardId": "econ-2025-hl-q12-c-ii",
+          "topicId": "economics-3-0"
+        }
+      ],
+      "boundaryReason": "Ten routes; 75 with one route per choice. a(i) printed GNI*/GDP tick, the scheme writes both trends: two routes 6 each (the GDP route is new). a(ii) required taxpayers 7 + government 7 (old government card resolves by alias). a(iii) objective tick GNI* + justify 6. b(i) most significant change 6 + reason 6. b(ii) objective tick regressive + justify 8. b(iii) Agree 8 OR Disagree 8. c(i) required employee advantage 7 + employer disadvantage 7 (old employer card resolves by alias). c(ii) 7.",
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-3-0",
+        "economics-2-1"
+      ],
+      "topicReason": "Government debt, the tax mix, VAT and income tax rates are fiscal policy (NCCA 4.2). GNI* against GDP and the multiplier are national income (NCCA 4.1). Auto-enrolment pensions for employees and employers are the labour market (NCCA 3.2)."
+    },
+    {
+      "n": "13",
+      "paperPages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "schemePages": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 8,
+          "cardId": "econ-2025-hl-q13-a-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "a/ii",
+          "marks": 14,
+          "cardId": "econ-2025-hl-q13-a-ii-benefit",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "a/iii",
+          "marks": 7,
+          "cardId": "econ-2025-hl-q13-a-iii",
+          "topicId": "economics-4-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 7,
+          "cardId": "econ-2025-hl-q13-b-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/ii",
+          "marks": 12,
+          "cardId": "econ-2025-hl-q13-b-ii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/iii",
+          "marks": 6,
+          "cardId": "econ-2025-hl-q13-b-iii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "c/i",
+          "marks": 7,
+          "cardId": "econ-2025-hl-q13-c-i",
+          "topicId": "economics-4-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 7,
+          "cardId": "econ-2025-hl-q13-c-ii",
+          "topicId": "economics-4-0"
+        },
+        {
+          "key": "c/iii",
+          "marks": 7,
+          "cardId": "econ-2025-hl-q13-c-iii",
+          "topicId": "economics-4-0"
+        }
+      ],
+      "boundaryReason": "Nine tasks totalling 75. a(i) 8 = 31.48% / 32% (fraction working, hidden solution crop). a(ii) required benefit 7 + challenge 7 (old challenge card resolves by alias). a(iii) 7. b(i) 7; b(ii) 2@6; b(iii) 6. c(i)-(iii) 7 each.",
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-4-1",
+        "economics-4-0"
+      ],
+      "topicReason": "Exports, comparative advantage and the WTO are international trade (NCCA 5.3). Outward FDI is globalisation (NCCA 5.2). Overseas development assistance and aid dependence are growth and development (NCCA 5.1)."
+    },
+    {
+      "n": "14",
+      "paperPages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "schemePages": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 10,
+          "cardId": "econ-2025-hl-q14-a-i",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 10,
+          "cardId": "econ-2025-hl-q14-a-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/iii/agriculture",
+          "marks": 5,
+          "cardId": "econ-2025-hl-q14-a-iii-agri",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "a/iii/sport",
+          "marks": 5,
+          "cardId": "econ-2025-hl-q14-a-iii-sport",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "b/i",
+          "marks": 17,
+          "cardId": "econ-2025-hl-q14-b-i",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "b/ii/calculation",
+          "marks": 9,
+          "cardId": "econ-2025-hl-q14-b-ii",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "b/ii/meaning",
+          "marks": 5,
+          "cardId": "econ-2025-hl-q14-b-ii-meaning",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "c/i/agree",
+          "marks": 7,
+          "cardId": "econ-2025-hl-q15-a-i-agree",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/i/disagree",
+          "marks": 7,
+          "cardId": "econ-2025-hl-q15-a-i-disagree",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 12,
+          "cardId": "econ-2025-hl-q14-c-ii-positive",
+          "topicId": "economics-3-2"
+        }
+      ],
+      "boundaryReason": "Ten routes; 75 with one route per choice. a(i) 2@5; a(ii) 2@5. a(iii) printed sector tick, the scheme lists both sectors: two routes 5 each. b(i) 17 x 1 with the margin split axes 2, D 6, S 6, E, Pe, Qe 1 each. b(ii) workings 9 (-1.8) and economic meaning 5 separately priced, split (the calculation card is new). c(i) Agree 7 OR Disagree 7 (IDs carry a q15 prefix from the earlier extractor; citation is Q14(c)(i)). c(ii) required positive 6 + negative 6 (the negative half was missing).",
+      "canonicalNodeIds": [
+        "economics-1-1",
+        "economics-2-0",
+        "economics-1-2",
+        "economics-1-0",
+        "economics-1-4",
+        "economics-2-1",
+        "economics-3-2"
+      ],
+      "topicReason": "Online shopping benefits are the consumer (NCCA 2.2). Amazon and small retailers is market structure (NCCA 3.1). Technology in a sector is the firm (NCCA 2.3). Demand and supply equilibrium is the market (NCCA 2.1); PED is elasticity (NCCA 2.2). Gig-economy regulation is the labour market (NCCA 3.2). Full employment is employment and unemployment (NCCA 4.3)."
+    },
+    {
+      "n": "15",
+      "paperPages": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "schemePages": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "tasks": [
+        {
+          "key": "a/i/agree",
+          "marks": 6,
+          "cardId": "econ-2025-hl-q15-a-i-cash-agree",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "a/i/disagree",
+          "marks": 6,
+          "cardId": "econ-2025-hl-q15-a-i-cash-disagree",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "a/ii",
+          "marks": 12,
+          "cardId": "econ-2025-hl-q15-a-ii",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "a/iii",
+          "marks": 6,
+          "cardId": "econ-2025-hl-q15-a-iii-aib",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "b/i",
+          "marks": 8,
+          "cardId": "econ-2025-hl-q15-b-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b/ii",
+          "marks": 12,
+          "cardId": "econ-2025-hl-q15-b-ii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b/iii/agree",
+          "marks": 5,
+          "cardId": "econ-2025-hl-q15-b-iii-agree",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "b/iii/disagree",
+          "marks": 5,
+          "cardId": "econ-2025-hl-q15-b-iii-disagree",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/i",
+          "marks": 6,
+          "cardId": "econ-2025-hl-q15-c-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2025-hl-q15-c-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/iii",
+          "marks": 10,
+          "cardId": "econ-2025-hl-q15-c-iii",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "boundaryReason": "Eleven routes; 75 with one route per choice. a(i) Agree 6 OR Disagree 6. a(ii) 2@6; a(iii) 6. b(i) 8 = 36.48% (fraction working, hidden solution crop; the chart plots annual growth rates). b(ii) 2@6. b(iii) Agree 5 OR Disagree 5. c(i) one 6 cell for meaning and example. c(ii) 2@5; c(iii) 2@5 reasons other than infrastructure.",
+      "canonicalNodeIds": [
+        "economics-3-4",
+        "economics-3-3",
+        "economics-2-1",
+        "economics-1-3",
+        "economics-3-1"
+      ],
+      "topicReason": "Access to cash, credit creation and bank branches are the financial sector (NCCA 4.5). The RPPI growth rate is the price level (NCCA 4.4). Property prices and labour are the labour market (NCCA 3.2). Mortgage interest relief is government intervention (NCCA 2.4). Infrastructure and government expenditure are fiscal policy (NCCA 4.2)."
+    },
+    {
+      "n": "16",
+      "paperPages": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "schemePages": [
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 6,
+          "cardId": "econ-2025-hl-q16-a-i",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "a/ii",
+          "marks": 5,
+          "cardId": "econ-2025-hl-q16-a-ii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "a/iii",
+          "marks": 14,
+          "cardId": "econ-2025-hl-q16-a-iii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/i",
+          "marks": 9,
+          "cardId": "econ-2025-hl-q16-b-i-diseconomies",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/ii/diagram",
+          "marks": 8,
+          "cardId": "econ-2025-hl-q16-b-ii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/ii/explanation",
+          "marks": 8,
+          "cardId": "econ-2025-hl-q16-b-ii-explanation",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "c/i",
+          "marks": 12,
+          "cardId": "econ-2025-hl-q16-b-i",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/ii",
+          "marks": 5,
+          "cardId": "econ-2025-hl-q16-c-ii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "c/iii",
+          "marks": 8,
+          "cardId": "econ-2025-hl-q16-c",
+          "topicId": "economics-0-0"
+        }
+      ],
+      "boundaryReason": "Nine tasks totalling 75. a(i) one 6 cell for A = 10 and B = 1.92. a(ii) 5 = 70. a(iii) 2@7. b(i) one 9 cell for meaning and example (new card). b(ii) diagram 8 (SRAC x3, labels x3, LRAC x1, label x1) and explanation 8 separately priced, split (the old combined card keeps its ID as the diagram). c(i) 2@6 (ID carries a q16-b-i suffix from the earlier extractor; citation is Q16(c)(i)). c(ii) 5 short-run loss (new card). c(iii) 2@4.",
+      "canonicalNodeIds": [
+        "economics-1-5",
+        "economics-1-3",
+        "economics-0-0"
+      ],
+      "topicReason": "Costs, revenue, profit, firm objectives, diseconomies of scale, the LRAC and the short-run shutdown rule are NCCA 2.3 (deck 2.6). Supports for hospitality firms are government intervention (NCCA 2.4). Entrepreneurship as a factor of production is economics as a way of thinking (NCCA 1.1)."
+    }
+  ],
+  "selections": [
+    {
+      "page": 2,
+      "text": "Answer 4 out of 6 questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; all independently practicable tasks remain in census."
+    },
+    {
+      "page": 2,
+      "text": "Answer 8 out of 10 questions from this section.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; all independently practicable tasks remain in census."
+    },
+    {
+      "page": 2,
+      "text": "Questions 2, 3 and 4 contain an internal choice.",
+      "classification": "finite-route",
+      "reason": "Q2, Q3 and Q4 each offer (b) OR (c); every alternative is its own carded task."
+    },
+    {
+      "page": 2,
+      "text": "Write your answers in blue or black pen.",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instruction."
+    },
+    {
+      "page": 2,
+      "text": "end of the booklet. Label any such extra work clearly with the question number and part.",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instruction about extra pages."
+    },
+    {
+      "page": 3,
+      "text": "Answer 8 out of 10 questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; all independently practicable tasks remain in census."
+    },
+    {
+      "page": 4,
+      "text": "Agree Disagree",
+      "classification": "finite-route",
+      "reason": "Printed two-box stance; the scheme lists both sides, so each stance is its own route at the full tariff."
+    },
+    {
+      "page": 4,
+      "text": "Answer either (b) or (c)",
+      "classification": "finite-route",
+      "reason": "Printed alternative pair; (b) and (c) are separate carded tasks, counted once in the question total."
+    },
+    {
+      "page": 4,
+      "text": "Do you agree or disagree with this statement?",
+      "classification": "finite-route",
+      "reason": "Q2(c) agree/disagree routes."
+    },
+    {
+      "page": 4,
+      "text": "OR",
+      "classification": "finite-route",
+      "reason": "Separator between the printed (b)/(c) alternatives."
+    },
+    {
+      "page": 5,
+      "text": "Answer either (b) or (c)",
+      "classification": "finite-route",
+      "reason": "Printed alternative pair; (b) and (c) are separate carded tasks, counted once in the question total."
+    },
+    {
+      "page": 5,
+      "text": "OR",
+      "classification": "finite-route",
+      "reason": "Separator between the printed (b)/(c) alternatives."
+    },
+    {
+      "page": 6,
+      "text": "Answer either (b) or (c)",
+      "classification": "finite-route",
+      "reason": "Printed alternative pair; (b) and (c) are separate carded tasks, counted once in the question total."
+    },
+    {
+      "page": 7,
+      "text": "(b) Determine whether each of the economic statements below is a positive statement or a",
+      "classification": "answer-classification",
+      "reason": "Q5(b) each statement has one correct box; one card with both classifications."
+    },
+    {
+      "page": 7,
+      "text": "Do you regard the above situation to be an example of demand-pull inflation or cost-push",
+      "classification": "answer-classification",
+      "reason": "Q4(c) the scheme answer is cost-push only; one card."
+    },
+    {
+      "page": 7,
+      "text": "OR",
+      "classification": "finite-route",
+      "reason": "Separator between the printed (b)/(c) alternatives."
+    },
+    {
+      "page": 7,
+      "text": "inflation? Indicate your choice below by ticking () the relevant box and justify your choice.",
+      "classification": "answer-classification",
+      "reason": "Q4(c) tick box with one correct answer."
+    },
+    {
+      "page": 7,
+      "text": "normative statement. Indicate your choice below by ticking () the relevant box.",
+      "classification": "answer-classification",
+      "reason": "Q5(b) tick boxes with one correct answer each."
+    },
+    {
+      "page": 8,
+      "text": "Clearly label any changes you make. Explain your answer.",
+      "classification": "not-a-task-selection",
+      "reason": "Drawing instruction (\"any changes\"), not a selection."
+    },
+    {
+      "page": 10,
+      "text": "(Greenwashing is a marketing measure / practice where some companies make false or",
+      "classification": "not-a-task-selection",
+      "reason": "Stem definition (\"or\"), not a selection."
+    },
+    {
+      "page": 12,
+      "text": "(a) Identify from the diagram above which option (A or B) represents:",
+      "classification": "answer-classification",
+      "reason": "Q10(a) boom A and recession B are fixed answers; one card."
+    },
+    {
+      "page": 12,
+      "text": "Indicate your choice below by inserting A or B in the appropriate box and justify your choice",
+      "classification": "answer-classification",
+      "reason": "Q10(a) answer boxes with fixed answers."
+    },
+    {
+      "page": 13,
+      "text": "Answer 4 out of 6 questions",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; all independently practicable tasks remain in census."
+    },
+    {
+      "page": 13,
+      "text": "determine whether the market is competitive or highly concentrated. Indicate your",
+      "classification": "answer-classification",
+      "reason": "Q11(a)(i) the HHI decides the box (highly concentrated); one card."
+    },
+    {
+      "page": 17,
+      "text": "Government debt as a % of GNI* or Government debt as a % of GDP",
+      "classification": "finite-route",
+      "reason": "Q12(a)(i) GNI* or GDP trend tick; the scheme writes both trends, two routes."
+    },
+    {
+      "page": 18,
+      "text": "Indicate your choice below by ticking () the relevant box and justify your choice.",
+      "classification": "answer-classification",
+      "reason": "Q12(a)(iii) tick box; the scheme answer is GNI* only."
+    },
+    {
+      "page": 18,
+      "text": "debt as a percentage of GNI* or debt as a percentage of GDP?",
+      "classification": "answer-classification",
+      "reason": "Q12(a)(iii) the scheme ticks GNI* only; one card."
+    },
+    {
+      "page": 19,
+      "text": "(ii) Do you regard Ireland’s value added tax system to be a progressive tax or a",
+      "classification": "answer-classification",
+      "reason": "Q12(b)(ii) the scheme ticks regressive only; one card."
+    },
+    {
+      "page": 19,
+      "text": "Agree Disagree",
+      "classification": "finite-route",
+      "reason": "Printed two-box stance; the scheme lists both sides, so each stance is its own route at the full tariff."
+    },
+    {
+      "page": 19,
+      "text": "Do you agree or disagree with the statement, that individuals who earn above",
+      "classification": "finite-route",
+      "reason": "Q12(b)(iii) agree/disagree routes."
+    },
+    {
+      "page": 19,
+      "text": "Indicate your choice below by ticking () the relevant box and justify your choice.",
+      "classification": "finite-route",
+      "reason": "Q12(b)(iii) stance tick boxes."
+    },
+    {
+      "page": 19,
+      "text": "your choice.",
+      "classification": "answer-classification",
+      "reason": "Q12(b)(ii) tail of the regressive/progressive tick instruction."
+    },
+    {
+      "page": 25,
+      "text": "able to choose from a wider selection of products.",
+      "classification": "not-a-task-selection",
+      "reason": "Exclusion (\"other than being able to choose from a wider selection\"), not a selection."
+    },
+    {
+      "page": 26,
+      "text": "economy. Outline one other way that changes in technology may affect how either of",
+      "classification": "finite-route",
+      "reason": "Q14(a)(iii) either Agriculture or Sports and fitness; the scheme lists both sectors, two routes."
+    },
+    {
+      "page": 27,
+      "text": "(Note: the gig economy is a labour market where short-term contracts or freelance",
+      "classification": "not-a-task-selection",
+      "reason": "Stem definition (\"or\"), not a selection."
+    },
+    {
+      "page": 27,
+      "text": "Agree Disagree",
+      "classification": "finite-route",
+      "reason": "Printed two-box stance; the scheme lists both sides, so each stance is its own route at the full tariff."
+    },
+    {
+      "page": 27,
+      "text": "Do you agree or disagree with the statement above?",
+      "classification": "finite-route",
+      "reason": "Q14(c)(i) agree/disagree routes."
+    },
+    {
+      "page": 27,
+      "text": "Indicate your choice below by ticking () the relevant box and justify your choice.",
+      "classification": "finite-route",
+      "reason": "Q14(c)(i) stance tick boxes."
+    },
+    {
+      "page": 29,
+      "text": "(a) (i) Do you agree or disagree with The Finance (Provision of Access to Cash Infrastructure)",
+      "classification": "finite-route",
+      "reason": "Q15(a)(i) agree/disagree routes."
+    },
+    {
+      "page": 29,
+      "text": "Agree Disagree",
+      "classification": "finite-route",
+      "reason": "Printed two-box stance; the scheme lists both sides, so each stance is its own route at the full tariff."
+    },
+    {
+      "page": 29,
+      "text": "Indicate your choice below by ticking () the relevant box and justify your choice.",
+      "classification": "finite-route",
+      "reason": "Q15(a)(i) stance tick boxes."
+    },
+    {
+      "page": 31,
+      "text": "Agree Disagree",
+      "classification": "finite-route",
+      "reason": "Printed two-box stance; the scheme lists both sides, so each stance is its own route at the full tariff."
+    },
+    {
+      "page": 31,
+      "text": "Do you agree or disagree with this government decision?",
+      "classification": "finite-route",
+      "reason": "Q15(b)(iii) agree/disagree routes."
+    },
+    {
+      "page": 31,
+      "text": "Indicate your choice below by ticking () the relevant box and justify your choice.",
+      "classification": "finite-route",
+      "reason": "Q15(b)(iii) stance tick boxes."
+    },
+    {
+      "page": 40,
+      "text": "Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised.",
+      "classification": "not-a-task-selection",
+      "reason": "Copyright notice on the back cover."
+    },
+    {
+      "page": 40,
+      "text": "The Commission does not accept liability for any infringement of third-party rights arising from unauthorised",
+      "classification": "not-a-task-selection",
+      "reason": "Copyright notice on the back cover."
+    },
+    {
+      "page": 40,
+      "text": "This examination paper may contain text or images for which the State Examinations Commission is not the",
+      "classification": "not-a-task-selection",
+      "reason": "Copyright notice on the back cover."
+    },
+    {
+      "page": 40,
+      "text": "distribution or use of this examination paper.",
+      "classification": "not-a-task-selection",
+      "reason": "Copyright notice on the back cover."
+    }
+  ],
+  "reviewNote": "Census from the paired visual sweep of all 40 paper and 77 scheme pages, checked against the 83 cards the earlier extractors shipped. 82 routes (24 Section A + rest Section B), 48 raw directive lines classified. Seven split required-heading cards consolidate with progress aliases; six missing tasks are added (Q11(b)(i) explanation, Q12(a)(i) GDP route, Q14(b)(ii) calculation, Q16(b)(i), Q16(b)(ii) explanation, Q16(c)(ii)). Scheme PDF pp72-77 student research project descriptors and back cover: no written-paper asks. Scheme header says Section A 75 marks against the paper's 100; Q1 and Q4(b) carry 6 per required heading (18 in total), recorded as printed.",
+  "externalClarifications": [],
+  "curriculumSource": "https://www.curriculumonline.ie/getmedia/3342d8a2-1e22-4f17-b82b-a8134fe16eb3/LCEconomics_0219_EN.pdf"
+}

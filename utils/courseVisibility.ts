@@ -12,54 +12,64 @@
  * their (much shorter) visible list. A 7-subject senior who had completed
  * everything they could open read as ~73% to their guidance counsellor.
  *
- * Extracted verbatim (including the documented senior filter quirk) so both
- * sides divide by the same denominator. Any behaviour change here changes the
- * student app — keep it mechanical.
+ * Cards, paths, search and direct links share this boundary. A visible preview
+ * tile is distinct from an available lesson, so unfinished Junior Cycle guides
+ * cannot leak their Leaving Certificate content through a different route.
  */
 
 import { type CourseData } from '../components/Library';
 import { SUBJECT_TO_MODULE } from '../courseData';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { type CurriculumLevel } from './authUtils';
+import { resolveSubjectId } from '../curriculumRegistry';
+import type { LearningPath } from '../learningPaths';
+
+// These are lesson audiences, not a second curriculum taxonomy. All subject
+// names/aliases are resolved by the canonical registry before matching them.
+const STRATEGY_AUDIENCES: Record<string, string[]> = {
+  'learning-math-protocol': ['mathematics', 'applied-mathematics'],
+  'mastering-foreign-languages-protocol': ['irish', 'french', 'german', 'spanish', 'italian', 'japanese', 'russian', 'arabic', 'mandarin-chinese', 'portuguese', 'polish', 'lithuanian'],
+  'mastering-the-sciences-protocol': ['biology', 'chemistry', 'physics', 'agricultural-science'],
+  'applied-sciences-protocol': ['engineering', 'design-and-communication-graphics', 'computer-science', 'construction-studies', 'technology'],
+  'mastering-english-protocol': ['english'],
+  'mastering-business-protocol': ['business', 'accounting', 'economics'],
+  'mastering-the-creatives-protocol': ['art', 'music', 'drama-film-and-theatre-studies'],
+  'mastering-the-humanities-protocol': ['history', 'geography', 'politics-and-society', 'religious-education', 'classical-studies'],
+};
+
+export type ModuleAvailability = 'available' | 'coming-soon' | 'unavailable';
+
+export function moduleAvailability(
+  course: CourseData | undefined,
+  curriculumLevel: CurriculumLevel | undefined,
+  studentProfile: StudentSubjectProfile | null | undefined,
+): ModuleAvailability {
+  if (!course) return 'unavailable';
+  const level = curriculumLevel ?? studentProfile?.curriculumLevel ?? 'senior';
+  if (course.curriculum && course.curriculum !== 'both' && course.curriculum !== level) return 'unavailable';
+  if (!course.curriculum && level !== 'senior') return 'unavailable';
+  if (course.category === 'subject-specific-science' && studentProfile?.subjects.length) {
+    const subjects = new Set(studentProfile.subjects.map(subject => resolveSubjectId(subject.subjectName)));
+    const moduleIds = new Set(Object.entries(SUBJECT_TO_MODULE)
+      .filter(([name]) => subjects.has(resolveSubjectId(name)))
+      .map(([, id]) => id));
+    if (course.id.startsWith('subject-') && !moduleIds.has(course.id)) return 'unavailable';
+    const audience = STRATEGY_AUDIENCES[course.id];
+    if (audience && !audience.some(subject => subjects.has(subject))) return 'unavailable';
+  }
+  return level === 'junior' && course.jcStatus === 'coming-soon' ? 'coming-soon' : 'available';
+}
+
+export function availableLearningPaths(paths: LearningPath[], courses: CourseData[], level?: CurriculumLevel): LearningPath[] {
+  const available = new Set(courses.filter(course => moduleAvailability(course, level, null) === 'available').map(course => course.id));
+  return paths.map(path => ({ ...path, moduleIds: path.moduleIds.filter(id => available.has(id)) }))
+    .filter(path => path.moduleIds.length > 0);
+}
 
 export function filterCoursesForStudent(
   allCourses: CourseData[],
   curriculumLevel: CurriculumLevel | undefined,
   studentProfile: StudentSubjectProfile | null | undefined,
 ): CourseData[] {
-  const level = curriculumLevel ?? 'senior';
-
-  // Curriculum gating (Phase 4): a module is visible if it's tagged for
-  // the user's level or for 'both'. Pre-Phase-1 modules without a tag are
-  // assumed senior (every existing module was seeded 'senior' in Phase 1).
-  const passesCurriculum = (c: CourseData) => {
-    const tag = c.curriculum ?? 'senior';
-    return tag === 'both' || tag === level;
-  };
-
-  const relevantModuleIds = studentProfile
-    ? new Set(studentProfile.subjects.map(s => SUBJECT_TO_MODULE[s.subjectName]).filter(Boolean))
-    : null;
-
-  return allCourses.filter(c => {
-    if (!passesCurriculum(c)) return false;
-
-    if (c.category === 'subject-specific-science') {
-      // Per-subject Decode (subject-*-protocol): only show for picked
-      // subjects (existing senior behaviour, applied to both levels).
-      if (c.id.startsWith('subject-')) {
-        return !relevantModuleIds || relevantModuleIds.has(c.id);
-      }
-      // General strategy modules (mastering-*-protocol, applied-sciences,
-      // digital-distraction, etc.): for JC users with a coming-soon tag,
-      // surface them as "JC version coming" tiles regardless of picked
-      // subjects. Senior behaviour unchanged (pre-existing filter quirk:
-      // these are invisible to senior unless they're in SUBJECT_TO_MODULE
-      // — separate cleanup, not Phase 4 scope).
-      if (level === 'junior' && c.jcStatus === 'coming-soon') return true;
-      return !relevantModuleIds || relevantModuleIds.has(c.id);
-    }
-
-    return true;
-  });
+  return allCourses.filter(course => moduleAvailability(course, curriculumLevel, studentProfile) !== 'unavailable');
 }

@@ -169,7 +169,7 @@ export const SCHOOL_NAMES: Record<string, string> = {
   larkin: "Larkin",
   oconnells: "O'Connell's",
   mountcarmel: "Mount Carmel",
-  rosmini: "Rosmini",
+  rosmini: "Grace Park Community School",
   pwc: "PwC",
 };
 

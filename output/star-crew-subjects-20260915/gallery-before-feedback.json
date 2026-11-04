@@ -1,0 +1,1206 @@
+[
+  {
+    "id": "accounting",
+    "name": "Accounting",
+    "category": "business",
+    "programme": "leaving-certificate-established",
+    "specificationId": "accounting:outgoing",
+    "aliases": "",
+    "character": "The Accountant",
+    "direction": "Seated upright on the orange star holding a large white calculator with an orange border and six chunky black keys. Free mitten points at one key. No tiny figures or receipts.",
+    "file": "accounting.png",
+    "ready": true,
+    "frame": {
+      "width": 109.901124,
+      "left": -5.739326,
+      "top": -3.110112,
+      "bounds": [
+        313,
+        161,
+        959,
+        1051
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4402
+    }
+  },
+  {
+    "id": "agricultural-science",
+    "name": "Agricultural Science",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "agricultural-science:2021",
+    "aliases": "Ag Science",
+    "character": "The Grower",
+    "direction": "Standing with one rounded foot on the orange star, wearing simple orange dungaree straps, holding a short orange watering can tilted toward a single broad two-leaf plant in a small white pot balanced on the star. No farm background.",
+    "file": "agricultural-science.png",
+    "ready": true,
+    "frame": {
+      "width": 106.54902,
+      "left": -2.594771,
+      "top": -2.764706,
+      "bounds": [
+        296,
+        162,
+        942,
+        1080
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4408
+    }
+  },
+  {
+    "id": "ancient-greek",
+    "name": "Ancient Greek",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "ancient-greek:outgoing-2026",
+    "aliases": "",
+    "character": "The Philosopher",
+    "direction": "Seated with ankles crossed on the orange star, holding a chunky white tablet marked ONLY with three large Greek capitals 'ΑΒΓ'. The free mitten rests thoughtfully beneath the blank head. No costume.",
+    "file": "ancient-greek.png",
+    "ready": true,
+    "frame": {
+      "width": 113.077457,
+      "left": -5.952601,
+      "top": -5.411561,
+      "bounds": [
+        347,
+        182,
+        894,
+        1047
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4222
+    }
+  },
+  {
+    "id": "applied-mathematics",
+    "name": "Applied Mathematics",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "applied-mathematics:current",
+    "aliases": "Applied Maths",
+    "character": "The Modeller",
+    "direction": "Kneeling beside the orange star, gently launching one small white ball up a short orange ramp supported on the star. Just one simple ramp and ball, playful compact practical mechanics experiment. No arrows or text.",
+    "file": "applied-mathematics.png",
+    "ready": true,
+    "frame": {
+      "width": 100.828562,
+      "left": -0.454484,
+      "top": 0.027949,
+      "bounds": [
+        172,
+        239,
+        1083,
+        1004
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.45
+    }
+  },
+  {
+    "id": "arabic",
+    "name": "Arabic",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "arabic:outgoing-2026",
+    "aliases": "",
+    "character": "The Scribe",
+    "direction": "Seated with folded legs on the orange star, holding a broad white calligraphy card with ONLY the single large black Arabic letter 'ع', plus a chunky orange reed pen. Plain white body and blank head; no costume.",
+    "file": "arabic.png",
+    "ready": true,
+    "frame": {
+      "width": 107.015317,
+      "left": -4.873085,
+      "top": -3.422319,
+      "bounds": [
+        331,
+        169,
+        955,
+        1083
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4336
+    }
+  },
+  {
+    "id": "art",
+    "name": "Art",
+    "category": "arts",
+    "programme": "leaving-certificate-established",
+    "specificationId": "art:current",
+    "aliases": "",
+    "character": "The Artist",
+    "direction": "Seated on the orange star wearing a small orange artist beret, holding one large white oval paint palette with three orange paint blobs and a short orange brush. Both props clear, no extra easel.",
+    "file": "art.png",
+    "ready": true,
+    "frame": {
+      "width": 99.402439,
+      "left": -0.692073,
+      "top": 2.597561,
+      "bounds": [
+        316,
+        106,
+        963,
+        1090
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4272
+    }
+  },
+  {
+    "id": "biology",
+    "name": "Biology",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "biology:2027",
+    "aliases": "",
+    "character": "The Biologist",
+    "direction": "Kneeling on the orange star, gently holding a single large orange potted seedling with two broad white leaves outlined in black. Examining one leaf with a simple orange-handled magnifying glass. Compact tender curious pose.",
+    "file": "biology.png",
+    "ready": true,
+    "frame": {
+      "width": 105.174194,
+      "left": -5.648387,
+      "top": -2.922581,
+      "bounds": [
+        367,
+        166,
+        960,
+        1096
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4167
+    }
+  },
+  {
+    "id": "business",
+    "name": "Business",
+    "category": "business",
+    "programme": "leaving-certificate-established",
+    "specificationId": "business:2027",
+    "aliases": "",
+    "character": "The Entrepreneur",
+    "direction": "Standing confidently with one foot on the orange star, carrying one orange briefcase with a white handle in one mitten and resting the other hand on the hip. Plain white body, no suit or tie.",
+    "file": "business.png",
+    "ready": true,
+    "frame": {
+      "width": 106.023817,
+      "left": -1.616858,
+      "top": -1.23639,
+      "bounds": [
+        252,
+        149,
+        969,
+        1063
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.45
+    }
+  },
+  {
+    "id": "chemistry",
+    "name": "Chemistry",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "chemistry:2027",
+    "aliases": "",
+    "character": "The Chemist",
+    "direction": "Standing with one foot on the orange star and wearing simple clear safety goggles outlined in black. Holding one white conical flask with orange liquid in both mitten hands. No fumes, no extra flasks, no lab coat details.",
+    "file": "chemistry.png",
+    "ready": true,
+    "frame": {
+      "width": 106.086768,
+      "left": -5.412148,
+      "top": -2.451193,
+      "bounds": [
+        376,
+        159,
+        934,
+        1081
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4262
+    }
+  },
+  {
+    "id": "classical-studies",
+    "name": "Classical Studies",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "classical-studies:current",
+    "aliases": "",
+    "character": "The Curator",
+    "direction": "Seated on the orange star cradling one small classical orange amphora with two clear curved handles. Head bent toward the vase as if studying its shape. No costume, no other antiquities.",
+    "file": "classical-studies.png",
+    "ready": true,
+    "frame": {
+      "width": 117.845783,
+      "left": -8.922892,
+      "top": -4.13012,
+      "bounds": [
+        344,
+        161,
+        910,
+        991
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4239
+    }
+  },
+  {
+    "id": "climate-action-and-sustainable-development",
+    "name": "Climate Action and Sustainable Development",
+    "category": "social-environmental",
+    "programme": "leaving-certificate-established",
+    "source": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/climate-action-and-sustainable-development/",
+    "aliases": "",
+    "character": "The Changemaker",
+    "direction": "Kneeling on the orange star and hugging a large simple white globe with orange land shapes and one bold white sprouting leaf outlined in black at its top. Warm protective pose, no extra nature scenery.",
+    "file": "climate-action-and-sustainable-development.png",
+    "ready": true,
+    "frame": {
+      "width": 103.068493,
+      "left": -4.164384,
+      "top": -1.575342,
+      "bounds": [
+        340,
+        153,
+        978,
+        1102
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4232
+    }
+  },
+  {
+    "id": "computer-science",
+    "name": "Computer Science",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "computer-science:2025",
+    "aliases": "",
+    "character": "The Coder",
+    "direction": "Seated on the orange star with a white open laptop balanced on the knees, tapping it with both mitten hands. The back of the laptop is plain except for one small orange square. Compact focused pose, no floating code.",
+    "file": "computer-science.png",
+    "ready": true,
+    "frame": {
+      "width": 116.166271,
+      "left": -8.824228,
+      "top": -6.508314,
+      "bounds": [
+        345,
+        189,
+        925,
+        1031
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4377
+    }
+  },
+  {
+    "id": "construction-studies",
+    "name": "Construction Studies",
+    "category": "practical-applied",
+    "programme": "leaving-certificate-established",
+    "specificationId": "construction-technology:2028",
+    "aliases": "Construction Technology",
+    "character": "The Builder",
+    "direction": "Standing with one rounded foot on the orange star wearing a simple orange hard hat, carrying a small white house-frame model in both mitten hands. Model has an orange pitched roof and no detailed interior.",
+    "file": "construction-studies.png",
+    "ready": true,
+    "frame": {
+      "width": 104.055319,
+      "left": -3.687234,
+      "top": -0.782979,
+      "bounds": [
+        384,
+        142,
+        910,
+        1082
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4291
+    }
+  },
+  {
+    "id": "design-and-communication-graphics",
+    "name": "Design & Communication Graphics",
+    "category": "practical-applied",
+    "programme": "leaving-certificate-established",
+    "specificationId": "design-and-communication-graphics:current",
+    "aliases": "DCG Applied Graphics and Design",
+    "character": "The Designer",
+    "direction": "Seated on the orange star holding a large white technical drawing board on the knees. The board shows one single bold black isometric cube with an orange top face. Holding a short orange ruler against one edge. No text or tiny drawing details.",
+    "file": "design-and-communication-graphics.png",
+    "ready": true,
+    "frame": {
+      "width": 109.287151,
+      "left": -4.469274,
+      "top": -1.375419,
+      "bounds": [
+        302,
+        142,
+        948,
+        1037
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4402
+    }
+  },
+  {
+    "id": "drama-film-and-theatre-studies",
+    "name": "Drama, Film and Theatre Studies",
+    "category": "arts",
+    "programme": "leaving-certificate-established",
+    "source": "https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/drama-film-and-theatre-studies/",
+    "aliases": "",
+    "character": "The Director",
+    "direction": "Seated on the orange star holding one large white film clapperboard with a bold black-and-orange striped top held open. Plain blank head tilted confidently, free foot extended. No text, no theatre mask.",
+    "file": "drama-film-and-theatre-studies.png",
+    "ready": true,
+    "frame": {
+      "width": 114.266355,
+      "left": -6.632009,
+      "top": -5.037383,
+      "bounds": [
+        313,
+        176,
+        930,
+        1032
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4291
+    }
+  },
+  {
+    "id": "economics",
+    "name": "Economics",
+    "category": "business",
+    "programme": "leaving-certificate-established",
+    "specificationId": "economics:current",
+    "aliases": "",
+    "character": "The Economist",
+    "direction": "Seated on the orange star holding a large white board showing ONLY three bold orange vertical bars increasing in height. One mitten gestures toward the bars. No axes, numbers, arrows or text.",
+    "file": "economics.png",
+    "ready": true,
+    "frame": {
+      "width": 110.864226,
+      "left": -6.050972,
+      "top": -2.868267,
+      "bounds": [
+        282,
+        162,
+        986,
+        1034
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.45
+    }
+  },
+  {
+    "id": "engineering",
+    "name": "Engineering",
+    "category": "practical-applied",
+    "programme": "leaving-certificate-established",
+    "specificationId": "engineering:2028",
+    "aliases": "",
+    "character": "The Engineer",
+    "direction": "Sitting on the orange star, holding one large chunky white six-tooth cog with an orange centre and a short orange spanner. No intricate machine details, confident balanced pose.",
+    "file": "engineering.png",
+    "ready": true,
+    "frame": {
+      "width": 115.480519,
+      "left": -9.213695,
+      "top": -5.94451,
+      "bounds": [
+        335,
+        184,
+        951,
+        1031
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4398
+    }
+  },
+  {
+    "id": "english",
+    "name": "English",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "english:outgoing",
+    "aliases": "",
+    "character": "The Storyteller",
+    "direction": "Seated sideways on the orange star, holding an open orange book in one mitten hand and a single large feather quill in the other. No writing. Calm storyteller pose.",
+    "file": "english.png",
+    "ready": true,
+    "frame": {
+      "width": 110.797906,
+      "left": -6.768465,
+      "top": -5.045531,
+      "bounds": [
+        328,
+        212,
+        957,
+        1034
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.45
+    }
+  },
+  {
+    "id": "french",
+    "name": "French",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "french:current",
+    "aliases": "",
+    "character": "Le Lecteur",
+    "direction": "Seated on the orange star wearing a small orange beret, reading a compact white phrasebook. The book cover has the exact short text 'Salut'. Relaxed crossed ankles.",
+    "file": "french.png",
+    "ready": true,
+    "frame": {
+      "width": 108.80089,
+      "left": -4.400445,
+      "top": -2.448276,
+      "bounds": [
+        338,
+        155,
+        916,
+        1054
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.424
+    }
+  },
+  {
+    "id": "geography",
+    "name": "Geography",
+    "category": "social-environmental",
+    "programme": "leaving-certificate-established",
+    "specificationId": "geography:2028",
+    "aliases": "",
+    "character": "The Explorer",
+    "direction": "Sitting on the orange star, holding a large simple white globe with a few chunky orange land shapes and black outline. No detailed map labels. A small orange backpack, feet dangling.",
+    "file": "geography.png",
+    "ready": true,
+    "frame": {
+      "width": 108.80089,
+      "left": -4.617353,
+      "top": -2.535039,
+      "bounds": [
+        314,
+        156,
+        945,
+        1055
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4281
+    }
+  },
+  {
+    "id": "german",
+    "name": "German",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "german:current",
+    "aliases": "",
+    "character": "Der Sprecher",
+    "direction": "Perched on the orange star wearing orange headphones, holding a large white vocabulary flashcard in front of the torso. Card reads ONLY 'Hallo'. One foot extended playfully.",
+    "file": "german.png",
+    "ready": true,
+    "frame": {
+      "width": 112.169725,
+      "left": -9.215596,
+      "top": -4.65367,
+      "bounds": [
+        359,
+        175,
+        965,
+        1047
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4335
+    }
+  },
+  {
+    "id": "hebrew-studies",
+    "name": "Hebrew Studies",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "hebrew-studies:current",
+    "aliases": "",
+    "character": "The Scholar",
+    "direction": "Seated upright on the orange star reading a broad white unrolled scroll with two short orange end handles. Scroll carries ONLY three large Hebrew characters 'אבג'. Plain white body and blank head; no religious costume.",
+    "file": "hebrew-studies.png",
+    "ready": true,
+    "frame": {
+      "width": 103.834395,
+      "left": -3.035032,
+      "top": -1.503185,
+      "bounds": [
+        339,
+        151,
+        942,
+        1093
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4202
+    }
+  },
+  {
+    "id": "history",
+    "name": "History",
+    "category": "social-environmental",
+    "programme": "leaving-certificate-established",
+    "specificationId": "history:current",
+    "aliases": "",
+    "character": "The Historian",
+    "direction": "Kneeling on the orange star and examining one large orange-framed hourglass with a white interior. Holding it gently in two mitten hands, head tilted with curiosity. No extra props.",
+    "file": "history.png",
+    "ready": true,
+    "frame": {
+      "width": 105.742703,
+      "left": -2.871351,
+      "top": -2.829189,
+      "bounds": [
+        297,
+        164,
+        957,
+        1089
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.427
+    }
+  },
+  {
+    "id": "home-economics",
+    "name": "Home Economics",
+    "category": "practical-applied",
+    "programme": "leaving-certificate-established",
+    "specificationId": "home-economics:current",
+    "aliases": "",
+    "character": "The Home Maker",
+    "direction": "Seated on the orange star wearing a simple orange apron, holding one white mixing bowl with orange rim on their lap and stirring with a chunky orange spoon. No chef hat, ingredients or kitchen background.",
+    "file": "home-economics.png",
+    "ready": true,
+    "frame": {
+      "width": 109.777778,
+      "left": -5.851852,
+      "top": -3.356902,
+      "bounds": [
+        315,
+        164,
+        961,
+        1055
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4386
+    }
+  },
+  {
+    "id": "irish",
+    "name": "Irish (Gaeilge)",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "irish:current",
+    "aliases": "",
+    "character": "An Scéalaí",
+    "direction": "Standing with one foot on the orange star, an orange knitted scarf and an open white book. A simple speech bubble close beside the head contains ONLY the exact word 'Dia'. Welcoming storytelling gesture.",
+    "file": "irish-v2.png",
+    "ready": true,
+    "frame": {
+      "width": 97.866593,
+      "left": 0.442355,
+      "top": 3.095835,
+      "bounds": [
+        241,
+        105,
+        1029,
+        1097
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.45
+    }
+  },
+  {
+    "id": "italian",
+    "name": "Italian",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "italian:current",
+    "aliases": "",
+    "character": "Il Narratore",
+    "direction": "Seated squarely on the orange star, both feet dangling, one mitten arm extending conversationally. A single large white speech bubble close beside their head reads ONLY 'Ciao'. Small orange neck scarf.",
+    "file": "italian.png",
+    "ready": true,
+    "frame": {
+      "width": 101.570093,
+      "left": 3.629283,
+      "top": -0.096573,
+      "bounds": [
+        220,
+        137,
+        925,
+        1100
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4376
+    }
+  },
+  {
+    "id": "japanese",
+    "name": "Japanese",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "japanese:current",
+    "aliases": "",
+    "character": "The Calligrapher",
+    "direction": "Kneeling comfortably on the orange star, holding a short broad orange calligraphy brush and a white square practice card at chest level with ONLY one large black hiragana character 'あ'. Simple minimal prop shapes.",
+    "file": "japanese.png",
+    "ready": true,
+    "frame": {
+      "width": 117.14012,
+      "left": -8.57006,
+      "top": -7.869461,
+      "bounds": [
+        324,
+        202,
+        930,
+        1037
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4424
+    }
+  },
+  {
+    "id": "latin",
+    "name": "Latin",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "latin:outgoing-2026",
+    "aliases": "",
+    "character": "The Classicist",
+    "direction": "Standing with one rounded foot on the orange star, holding a curled white parchment scroll with ONLY the exact black text 'ABC', and a short orange stylus. Plain head, no costume, compact scholarly pose.",
+    "file": "latin.png",
+    "ready": true,
+    "frame": {
+      "width": 112.041237,
+      "left": -8.56701,
+      "top": -4.010309,
+      "bounds": [
+        328,
+        168,
+        983,
+        1041
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4468
+    }
+  },
+  {
+    "id": "lcvp-link-modules",
+    "name": "LCVP / Life, Community & Work",
+    "category": "business",
+    "programme": "lcvp",
+    "specificationId": "lcvp-link-modules:2028",
+    "aliases": "Link Modules vocational",
+    "character": "The Collaborator",
+    "direction": "Seated on the orange star, holding a large white clipboard with three bold black tick marks and orange clip. Small orange satchel at the side. Free mitten raised in a welcoming gesture, no written words.",
+    "file": "lcvp-link-modules.png",
+    "ready": true,
+    "frame": {
+      "width": 102.851735,
+      "left": 0.214511,
+      "top": -1.548896,
+      "bounds": [
+        267,
+        153,
+        947,
+        1104
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4198
+    }
+  },
+  {
+    "id": "lithuanian",
+    "name": "Lithuanian",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "lithuanian:current",
+    "aliases": "",
+    "character": "The Conversationalist",
+    "direction": "Standing on the ground beside an orange star, carrying a white phrasebook under one arm and raising one white speech card in the other hand, reading ONLY 'Labas'. Small orange scarf, friendly open pose.",
+    "file": "lithuanian.png",
+    "ready": true,
+    "frame": {
+      "width": 101.195152,
+      "left": -1.767695,
+      "top": -1.001065,
+      "bounds": [
+        242,
+        184,
+        1041,
+        1080
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.45
+    }
+  },
+  {
+    "id": "mandarin-chinese",
+    "name": "Mandarin Chinese",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "mandarin-chinese:current",
+    "aliases": "",
+    "character": "The Wordsmith",
+    "direction": "Seated sideways on the orange star, holding a white upright practice board with ONLY one large black character '文', and a short orange writing brush in the other mitten. No costume or hat.",
+    "file": "mandarin-chinese.png",
+    "ready": true,
+    "frame": {
+      "width": 111.530217,
+      "left": -6.432155,
+      "top": -2.340935,
+      "bounds": [
+        317,
+        150,
+        952,
+        1027
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4306
+    }
+  },
+  {
+    "id": "mathematics",
+    "name": "Mathematics",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "mathematics:2015",
+    "aliases": "Maths",
+    "character": "The Problem Solver",
+    "direction": "Seated on the orange star, holding a large white triangular set square with an orange edge vertically next to the torso. Free hand resting against the chin as if thinking. No numbers or formulas.",
+    "file": "mathematics.png",
+    "ready": true,
+    "frame": {
+      "width": 122.72522,
+      "left": -12.683814,
+      "top": -8.377666,
+      "bounds": [
+        374,
+        198,
+        907,
+        995
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4237
+    }
+  },
+  {
+    "id": "music",
+    "name": "Music",
+    "category": "arts",
+    "programme": "leaving-certificate-established",
+    "specificationId": "music:current",
+    "aliases": "",
+    "character": "The Musician",
+    "direction": "The chosen original: headphones ready, waving from the star.",
+    "file": "music.png",
+    "ready": true,
+    "frame": {
+      "width": 105.061224,
+      "left": -2.530612,
+      "top": -1.39957,
+      "bounds": [
+        290,
+        148,
+        964,
+        1079
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4252
+    }
+  },
+  {
+    "id": "physical-education",
+    "name": "Physical Education",
+    "category": "practical-applied",
+    "programme": "leaving-certificate-established",
+    "specificationId": "physical-education:2028",
+    "aliases": "PE",
+    "character": "The Athlete",
+    "direction": "In a relaxed athletic standing pose with one foot on the orange star, an orange sweatband around the blank head, holding one large white basketball with simple black seam lines against the hip. No jersey text.",
+    "file": "physical-education.png",
+    "ready": true,
+    "frame": {
+      "width": 105.061224,
+      "left": -2.32116,
+      "top": -0.477981,
+      "bounds": [
+        320,
+        137,
+        929,
+        1068
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4367
+    }
+  },
+  {
+    "id": "physics",
+    "name": "Physics",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "physics:2027",
+    "aliases": "",
+    "character": "The Experimenter",
+    "direction": "Seated on the orange star holding one chunky orange U-shaped horseshoe magnet, with two clearly separated white ends. Looking toward the magnet, free hand steadying it. No floating particles or diagrams.",
+    "file": "physics.png",
+    "ready": true,
+    "frame": {
+      "width": 118.130435,
+      "left": -11.278986,
+      "top": -8.782609,
+      "bounds": [
+        336,
+        210,
+        965,
+        1038
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4447
+    }
+  },
+  {
+    "id": "physics-and-chemistry",
+    "name": "Physics & Chemistry",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "physics-and-chemistry:current",
+    "aliases": "Chemical and Physical Science combined",
+    "character": "The Investigator",
+    "direction": "Seated on the orange star, holding a simple white test tube filled halfway with orange liquid in one mitten and a small orange U-shaped magnet in the other. Compact balanced composition, two very simple readable props.",
+    "file": "physics-and-chemistry.png",
+    "ready": true,
+    "frame": {
+      "width": 120.309963,
+      "left": -12.073801,
+      "top": -7.516605,
+      "bounds": [
+        295,
+        193,
+        999,
+        1006
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4435
+    }
+  },
+  {
+    "id": "polish",
+    "name": "Polish",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "polish:current",
+    "aliases": "",
+    "character": "The Translator",
+    "direction": "Sitting on the orange star with knees bent, holding one large white speech-bubble-shaped flashcard beside the head reading ONLY the exact word 'Cześć'. An orange pencil tucked under the other mitten. No costume.",
+    "file": "polish.png",
+    "ready": true,
+    "frame": {
+      "width": 100.941176,
+      "left": -5.380805,
+      "top": -0.108359,
+      "bounds": [
+        333,
+        138,
+        1043,
+        1107
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4345
+    }
+  },
+  {
+    "id": "politics-and-society",
+    "name": "Politics and Society",
+    "category": "social-environmental",
+    "programme": "leaving-certificate-established",
+    "specificationId": "politics-and-society:current",
+    "aliases": "",
+    "character": "The Citizen",
+    "direction": "Standing with one foot on the orange star, lowering one plain white ballot paper into a compact white ballot box held at waist level. Box has an orange lid with a clear black slot. No party logos, flags or text.",
+    "file": "politics-and-society.png",
+    "ready": true,
+    "frame": {
+      "width": 110.024747,
+      "left": -6.021372,
+      "top": -3.389201,
+      "bounds": [
+        391,
+        164,
+        886,
+        1053
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.421
+    }
+  },
+  {
+    "id": "portuguese",
+    "name": "Portuguese",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "portuguese:current",
+    "aliases": "",
+    "character": "The Communicator",
+    "direction": "Leaning casually against the single orange star, wearing orange headphones on the ears, holding a white phrase card reading ONLY 'Olá'. One rounded foot crossed over the other, plain white body.",
+    "file": "portuguese.png",
+    "ready": true,
+    "frame": {
+      "width": 107.068547,
+      "left": -3.534273,
+      "top": -2.424312,
+      "bounds": [
+        233,
+        173,
+        1021,
+        1055
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.45
+    }
+  },
+  {
+    "id": "religious-education",
+    "name": "Religious Education",
+    "category": "social-environmental",
+    "programme": "leaving-certificate-established",
+    "specificationId": "religious-education:2003",
+    "aliases": "",
+    "character": "The Thinker",
+    "direction": "Seated with legs crossed on the orange star, one mitten hand under the blank head in a thoughtful pose and the other holding a small open white book with orange covers. A single simple large question mark on the visible page. No faith-specific symbols or costume.",
+    "file": "religious-education.png",
+    "ready": true,
+    "frame": {
+      "width": 103.177215,
+      "left": -1.958861,
+      "top": -1.588608,
+      "bounds": [
+        325,
+        153,
+        938,
+        1101
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4176
+    }
+  },
+  {
+    "id": "russian",
+    "name": "Russian",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "russian:current",
+    "aliases": "",
+    "character": "The Linguist",
+    "direction": "Sitting with bent knees on the orange star, orange earmuff-style headphones around the neck, holding a large white rectangular alphabet card tilted beside the torso. Card has ONLY three large Cyrillic capitals 'АБВ'. No other text.",
+    "file": "russian.png",
+    "ready": true,
+    "frame": {
+      "width": 106.665213,
+      "left": -7.287895,
+      "top": -3.119956,
+      "bounds": [
+        315,
+        166,
+        1032,
+        1083
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4441
+    }
+  },
+  {
+    "id": "spanish",
+    "name": "Spanish",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "spanish:current",
+    "aliases": "",
+    "character": "El Hablante",
+    "direction": "Standing beside the orange star with one foot resting on it, holding a simple orange handheld microphone and a small white speech bubble close above its free hand reading ONLY 'Hola'.",
+    "file": "spanish.png",
+    "ready": true,
+    "frame": {
+      "width": 113.734884,
+      "left": -8.590698,
+      "top": -4.237209,
+      "bounds": [
+        337,
+        168,
+        955,
+        1028
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4463
+    }
+  },
+  {
+    "id": "technology",
+    "name": "Technology",
+    "category": "practical-applied",
+    "programme": "leaving-certificate-established",
+    "specificationId": "technology:current",
+    "aliases": "",
+    "character": "The Inventor",
+    "direction": "Kneeling on the orange star holding a very simple small orange robot with a white rectangular body and two rounded feet. Robot has two black dot indicator lights, no smile. The main character retains its blank face. No wires or other parts.",
+    "file": "technology.png",
+    "ready": true,
+    "frame": {
+      "width": 112.298507,
+      "left": -6.014925,
+      "top": -6.283582,
+      "bounds": [
+        324,
+        193,
+        927,
+        1064
+      ],
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "maxRadius": 0.4261
+    }
+  }
+]

@@ -1,21 +1,28 @@
+import { ConceptSequence } from './learning/WideFeatures';
+import { moduleBorder,moduleFill,moduleText } from './learning/brandTokens';
 
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence,motion } from 'framer-motion';
 import {
-  Eye, Workflow, Box, Film, AlertTriangle, Pyramid
+AlertTriangle,
+Box,
+Eye,
+Film,
+Pyramid,
+Workflow
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { cyanTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { Cite } from './ModuleReferences';
+import React,{ useState } from 'react';
 import { MENTAL_MODELLING_REFERENCE_LIST } from '../data/references/mentalModelling';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { cyanTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { ConceptCardGrid,Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 
 const theme = cyanTheme;
 
@@ -43,11 +50,11 @@ const GlassBoxUnfolder = () => {
 
     /* L-shape: base 3x2x1, tower 1x2x3. Visible faces back-to-front */
     const shapeFaces = [
-        { v: [[0,0,3],[1,0,3],[1,2,3],[0,2,3]], fill: '#a5f3fc' },
-        { v: [[1,0,1],[3,0,1],[3,2,1],[1,2,1]], fill: '#a5f3fc' },
-        { v: [[1,0,1],[1,2,1],[1,2,3],[1,0,3]], fill: '#0891b2' },
-        { v: [[3,0,0],[3,2,0],[3,2,1],[3,0,1]], fill: '#0891b2' },
-        { v: [[0,0,0],[3,0,0],[3,0,1],[1,0,1],[1,0,3],[0,0,3]], fill: '#22d3ee' },
+        { v: [[0,0,3],[1,0,3],[1,2,3],[0,2,3]], fill: "var(--module-surface)" },
+        { v: [[1,0,1],[3,0,1],[3,2,1],[1,2,1]], fill: "var(--module-surface)" },
+        { v: [[1,0,1],[1,2,1],[1,2,3],[1,0,3]], fill: "var(--module-solid)" },
+        { v: [[3,0,0],[3,2,0],[3,2,1],[3,0,1]], fill: "var(--module-solid)" },
+        { v: [[0,0,0],[3,0,0],[3,0,1],[1,0,1],[1,0,3],[0,0,3]], fill: "var(--module-surface)" },
     ];
 
     /* Glass box 3x2x3 */
@@ -63,18 +70,18 @@ const GlassBoxUnfolder = () => {
     };
 
     const vc = {
-        front: { label: 'Front', sub: 'Elevation', color: '#06b6d4' },
-        top:   { label: 'Top', sub: 'Plan', color: '#10b981' },
-        side:  { label: 'Side', sub: 'End View', color: '#a855f7' },
+        front: { label: 'Front', sub: 'Elevation', color: "var(--module-ink)" },
+        top:   { label: 'Top', sub: 'Plan', color: "var(--module-success-text)" },
+        side:  { label: 'Side', sub: 'End View', color: "var(--module-ink)" },
     };
 
     const allRevealed = revealed.size === 3;
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Glass Box" Model</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Click each view to see how the 3D object projects onto the glass faces.</p>
-            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">Reveal all three, then flatten the box into a drawing layout.</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The "Glass Box" Model</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">Click each view to see how the 3D object projects onto the glass faces.</p>
+            <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Reveal all three, then flatten the box into a drawing layout.</p>
 
             {/* View buttons */}
             <div className="flex justify-center gap-2 mb-6 flex-wrap">
@@ -85,10 +92,10 @@ const GlassBoxUnfolder = () => {
                         <button key={v} onClick={() => handleView(v)}
                             className={`px-3 py-2 text-xs font-bold rounded-lg transition-all`}
                             style={
-                                isActive ? { backgroundColor: vc[v].color, color: '#FFFFFF', border: '2.5px solid ' + vc[v].color, borderRadius: 10, boxShadow: '3px 3px 0px 0px ' + vc[v].color }
-                                : isSeen ? { backgroundColor: vc[v].color + '18', color: vc[v].color, border: '2.5px solid ' + vc[v].color + '60', borderRadius: 10 }
-                                : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 10, boxShadow: '3px 3px 0px 0px #1C1917' }
-                            }
+                                isActive ? { backgroundColor: moduleFill(vc[v].color), color: "var(--module-on-fill)", border: '2.5px solid ' + vc[v].color, borderRadius: 10, boxShadow: 'none' }
+                                : isSeen ? { backgroundColor: moduleFill(vc[v].color + '18'), color: moduleText(vc[v].color), border: '2.5px solid ' + vc[v].color + '60', borderRadius: 10 }
+                                : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 10, boxShadow: 'none' }
+                            } data-wide-button="true" data-selected={!!(isActive)} data-tone="orange" aria-pressed={!!(isActive)}
                         >
                             {vc[v].label} ({vc[v].sub})
                         </button>
@@ -101,13 +108,13 @@ const GlassBoxUnfolder = () => {
                     <motion.div key="explorer" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                         <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
                             {/* Isometric 3D view */}
-                            <div className="rounded-xl p-3" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}>
+                            <div className="rounded-xl p-3" style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)" }}>
                                 <svg viewBox="0 0 310 220" className="w-full" style={{ maxWidth: 320 }}>
                                     {/* Glass box wireframe */}
                                     {boxEdges.map(([a, b], i) => {
                                         const [x1, y1] = iso(a[0], a[1], a[2]);
                                         const [x2, y2] = iso(b[0], b[1], b[2]);
-                                        return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#a1a1aa" strokeWidth="0.7" strokeDasharray="4 2" opacity="0.4" />;
+                                        return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="var(--module-muted)" strokeWidth="0.7" strokeDasharray="4 2" opacity="0.4" />;
                                     })}
 
                                     {/* Highlighted glass face */}
@@ -120,7 +127,7 @@ const GlassBoxUnfolder = () => {
 
                                     {/* L-shape solid faces */}
                                     {shapeFaces.map((f, i) => (
-                                        <polygon key={i} points={pts(f.v)} fill={f.fill} stroke="#0e7490" strokeWidth="0.8" strokeLinejoin="round" />
+                                        <polygon key={i} points={pts(f.v)} fill={f.fill} stroke="var(--module-ink)" strokeWidth="0.8" strokeLinejoin="round" />
                                     ))}
 
                                     {/* Face labels */}
@@ -129,9 +136,9 @@ const GlassBoxUnfolder = () => {
                                         const [tx, ty] = iso(1.5, 1, 3.5);
                                         const [sx, sy] = iso(3.5, 1, 1.5);
                                         return <>
-                                            <text x={fx} y={fy} textAnchor="middle" className="text-[6px] font-bold" fill={activeView === 'front' ? vc.front.color : '#a1a1aa'}>ELEVATION</text>
-                                            <text x={tx} y={ty} textAnchor="middle" className="text-[6px] font-bold" fill={activeView === 'top' ? vc.top.color : '#a1a1aa'}>PLAN</text>
-                                            <text x={sx} y={sy} textAnchor="middle" className="text-[6px] font-bold" fill={activeView === 'side' ? vc.side.color : '#a1a1aa'}>END VIEW</text>
+                                            <text x={fx} y={fy} textAnchor="middle" className="text-[6px] font-bold" fill={activeView === 'front' ? vc.front.color : "var(--module-surface)"}>ELEVATION</text>
+                                            <text x={tx} y={ty} textAnchor="middle" className="text-[6px] font-bold" fill={activeView === 'top' ? vc.top.color : "var(--module-surface)"}>PLAN</text>
+                                            <text x={sx} y={sy} textAnchor="middle" className="text-[6px] font-bold" fill={activeView === 'side' ? vc.side.color : "var(--module-surface)"}>END VIEW</text>
                                         </>;
                                     })()}
                                 </svg>
@@ -144,32 +151,32 @@ const GlassBoxUnfolder = () => {
                                         initial={{ opacity: 0, x: 16 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -16 }}
                                         className="flex flex-col items-center min-w-[160px]"
                                     >
-                                        <p className="text-[10px] font-bold uppercase tracking-wider mb-3" style={{ color: vc[activeView].color }}>
+                                        <p className="text-[10px] font-bold uppercase tracking-wider mb-3" style={{ color: moduleText(vc[activeView].color) }}>
                                             2D Projection: {vc[activeView].sub}
                                         </p>
-                                        <div className="p-4 rounded-xl border" style={{ backgroundColor: vc[activeView].color + '08', borderColor: vc[activeView].color + '30' }}>
+                                        <div className="p-4 rounded-xl border" style={{ backgroundColor: moduleFill(vc[activeView].color + '08'), borderColor: moduleBorder(vc[activeView].color + '30') }}>
                                             {activeView === 'front' && (
                                                 <svg viewBox="0 0 106 106" width="120" height="120">
                                                     <path d="M 8 98 L 98 98 L 98 68 L 38 68 L 38 8 L 8 8 Z"
-                                                        fill="#06b6d415" stroke="#06b6d4" strokeWidth="2" strokeLinejoin="round" />
+                                                        fill="var(--module-solid)" stroke="var(--module-ink)" strokeWidth="2" strokeLinejoin="round" />
                                                 </svg>
                                             )}
                                             {activeView === 'top' && (
                                                 <svg viewBox="0 0 106 76" width="120" height="86">
                                                     <rect x="8" y="8" width="90" height="60" rx="1"
-                                                        fill="#10b98115" stroke="#10b981" strokeWidth="2" />
-                                                    <line x1="38" y1="8" x2="38" y2="68" stroke="#10b981" strokeWidth="1" strokeDasharray="4 3" />
+                                                        fill="var(--module-success)" stroke="var(--module-success-text)" strokeWidth="2" />
+                                                    <line x1="38" y1="8" x2="38" y2="68" stroke="var(--module-success-text)" strokeWidth="1" strokeDasharray="4 3" />
                                                 </svg>
                                             )}
                                             {activeView === 'side' && (
                                                 <svg viewBox="0 0 76 106" width="86" height="120">
                                                     <rect x="8" y="8" width="60" height="90" rx="1"
-                                                        fill="#a855f715" stroke="#a855f7" strokeWidth="2" />
-                                                    <line x1="8" y1="68" x2="68" y2="68" stroke="#a855f7" strokeWidth="1" strokeDasharray="4 3" />
+                                                        fill="var(--module-surface)" stroke="var(--module-ink)" strokeWidth="2" />
+                                                    <line x1="8" y1="68" x2="68" y2="68" stroke="var(--module-ink)" strokeWidth="1" strokeDasharray="4 3" />
                                                 </svg>
                                             )}
                                         </div>
-                                        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-3 max-w-[220px] text-center">
+                                        <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-3 max-w-[220px] text-center">
                                             {activeView === 'front' && 'Looking straight at the front face — you see the distinctive L-profile.'}
                                             {activeView === 'top' && 'Looking straight down — the full footprint. The dashed line shows the hidden step.'}
                                             {activeView === 'side' && 'Looking from the side — base and tower overlap into a rectangle. The dashed line marks the base top.'}
@@ -181,37 +188,37 @@ const GlassBoxUnfolder = () => {
                     </motion.div>
                 ) : (
                     <motion.div key="layout" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                        <div className="rounded-xl p-4" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}>
+                        <div className="rounded-xl p-4" style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)" }}>
                             <svg viewBox="0 0 260 260" className="w-full mx-auto" style={{ maxWidth: 380, display: 'block' }}>
                                 {/* Plan (top, green) */}
-                                <rect x="30" y="10" width="90" height="60" fill="#10b98112" stroke="#10b981" strokeWidth="1.5" rx="2" />
-                                <line x1="60" y1="10" x2="60" y2="70" stroke="#10b981" strokeWidth="0.8" strokeDasharray="3 2" />
-                                <text x="75" y="44" textAnchor="middle" className="text-[8px] font-bold" fill="#10b981">PLAN</text>
+                                <rect x="30" y="10" width="90" height="60" fill="var(--module-success)" stroke="var(--module-success-text)" strokeWidth="1.5" rx="2" />
+                                <line x1="60" y1="10" x2="60" y2="70" stroke="var(--module-success-text)" strokeWidth="0.8" strokeDasharray="3 2" />
+                                <text x="75" y="44" textAnchor="middle" className="text-[8px] font-bold" fill="var(--module-success)">PLAN</text>
 
                                 {/* Elevation (bottom-left, cyan) — L-profile */}
                                 <path d="M 30 90 L 60 90 L 60 150 L 120 150 L 120 180 L 30 180 Z"
-                                    fill="#06b6d412" stroke="#06b6d4" strokeWidth="1.5" strokeLinejoin="round" />
-                                <text x="45" y="170" textAnchor="middle" className="text-[7px] font-bold" fill="#06b6d4">ELEVATION</text>
+                                    fill="var(--module-solid)" stroke="var(--module-ink)" strokeWidth="1.5" strokeLinejoin="round" />
+                                <text x="45" y="170" textAnchor="middle" className="text-[7px] font-bold" fill="var(--module-solid)">ELEVATION</text>
 
                                 {/* End View (bottom-right, purple) */}
-                                <rect x="140" y="90" width="60" height="90" fill="#a855f712" stroke="#a855f7" strokeWidth="1.5" rx="2" />
-                                <line x1="140" y1="150" x2="200" y2="150" stroke="#a855f7" strokeWidth="0.8" strokeDasharray="3 2" />
-                                <text x="170" y="135" textAnchor="middle" className="text-[7px] font-bold" fill="#a855f7">END VIEW</text>
+                                <rect x="140" y="90" width="60" height="90" fill="var(--module-surface)" stroke="var(--module-ink)" strokeWidth="1.5" rx="2" />
+                                <line x1="140" y1="150" x2="200" y2="150" stroke="var(--module-ink)" strokeWidth="0.8" strokeDasharray="3 2" />
+                                <text x="170" y="135" textAnchor="middle" className="text-[7px] font-bold" fill="var(--module-surface)">END VIEW</text>
 
                                 {/* Projection lines: plan to elevation (vertical) */}
-                                <line x1="30" y1="70" x2="30" y2="90" stroke="#a1a1aa" strokeWidth="0.6" strokeDasharray="2 2" />
-                                <line x1="60" y1="70" x2="60" y2="90" stroke="#a1a1aa" strokeWidth="0.6" strokeDasharray="2 2" />
-                                <line x1="120" y1="70" x2="120" y2="90" stroke="#a1a1aa" strokeWidth="0.6" strokeDasharray="2 2" />
+                                <line x1="30" y1="70" x2="30" y2="90" stroke="var(--module-muted)" strokeWidth="0.6" strokeDasharray="2 2" />
+                                <line x1="60" y1="70" x2="60" y2="90" stroke="var(--module-muted)" strokeWidth="0.6" strokeDasharray="2 2" />
+                                <line x1="120" y1="70" x2="120" y2="90" stroke="var(--module-muted)" strokeWidth="0.6" strokeDasharray="2 2" />
 
                                 {/* Projection lines: elevation to end view (horizontal) */}
-                                <line x1="120" y1="90" x2="140" y2="90" stroke="#a1a1aa" strokeWidth="0.6" strokeDasharray="2 2" />
-                                <line x1="120" y1="150" x2="140" y2="150" stroke="#a1a1aa" strokeWidth="0.6" strokeDasharray="2 2" />
-                                <line x1="120" y1="180" x2="140" y2="180" stroke="#a1a1aa" strokeWidth="0.6" strokeDasharray="2 2" />
+                                <line x1="120" y1="90" x2="140" y2="90" stroke="var(--module-muted)" strokeWidth="0.6" strokeDasharray="2 2" />
+                                <line x1="120" y1="150" x2="140" y2="150" stroke="var(--module-muted)" strokeWidth="0.6" strokeDasharray="2 2" />
+                                <line x1="120" y1="180" x2="140" y2="180" stroke="var(--module-muted)" strokeWidth="0.6" strokeDasharray="2 2" />
 
                                 {/* 45 degree transfer line */}
-                                <line x1="120" y1="70" x2="140" y2="90" stroke="#a1a1aa" strokeWidth="0.5" strokeDasharray="2 2" opacity="0.6" />
+                                <line x1="120" y1="70" x2="140" y2="90" stroke="var(--module-muted)" strokeWidth="0.5" strokeDasharray="2 2" opacity="0.6" />
                             </svg>
-                            <p className="text-center text-xs text-zinc-500 dark:text-zinc-400 mt-3">
+                            <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-3">
                                 The glass box unfolded flat — this is your standard drawing layout. Projection lines connect corresponding edges across views.
                             </p>
                         </div>
@@ -223,7 +230,7 @@ const GlassBoxUnfolder = () => {
             {allRevealed && (
                 <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="text-center mt-6">
                     <button onClick={() => { setShowLayout(!showLayout); setActiveView(null); }}
-                        className="px-4 py-2.5 text-sm font-bold rounded-lg bg-cyan-500 hover:bg-cyan-600 text-white transition-colors"
+                        className="px-4 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-solid)] hover:bg-[var(--module-solid)] text-[var(--module-ink)] transition-colors" data-wide-button="true"
                     >
                         {showLayout ? 'Back to 3D Box' : 'Flatten to Drawing Layout'}
                     </button>
@@ -232,7 +239,7 @@ const GlassBoxUnfolder = () => {
 
             {/* Progress hint */}
             {revealed.size > 0 && revealed.size < 3 && !showLayout && (
-                <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mt-4">
+                <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-4">
                     {3 - revealed.size} view{3 - revealed.size > 1 ? 's' : ''} remaining...
                 </p>
             )}
@@ -250,13 +257,13 @@ const CycleOfModelling = () => {
     ];
     const [activeStep, setActiveStep] = useState(0);
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Cycle of Modelling</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">This is the step-by-step process your brain goes through when you picture something in 3D.</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Cycle of Modelling</h4>
+             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">This is the step-by-step process your brain goes through when you picture something in 3D.</p>
              <div className="flex justify-between mb-2">
-                {steps.map((step, i) => <div key={step.name} className={`w-1/5 text-center text-xs font-bold ${i <= activeStep ? 'text-cyan-600' : 'text-zinc-300'}`}>{step.name}</div>)}
+                {steps.map((step, i) => <div key={step.name} className={`w-1/5 text-center text-xs font-bold ${i <= activeStep ? "text-[var(--module-ink)]" : "text-[var(--module-muted)]"}`}>{step.name}</div>)}
              </div>
-             <div className="w-full h-2 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-full bg-cyan-500 rounded-full" animate={{width: `${(activeStep / (steps.length - 1)) * 100}%`}} /></div>
+             <div className="w-full h-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full"><motion.div className="h-full bg-[var(--module-solid)] rounded-full" animate={{width: `${(activeStep / (steps.length - 1)) * 100}%`}} /></div>
              <AnimatePresence mode="wait">
                 <motion.p
                     key={activeStep}
@@ -264,14 +271,14 @@ const CycleOfModelling = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -6 }}
                     transition={{ duration: 0.25 }}
-                    className="text-center text-sm text-zinc-600 dark:text-zinc-300 mt-4 px-4"
+                    className="text-center text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] mt-4 px-4"
                 >
                     {steps[activeStep].description}
                 </motion.p>
              </AnimatePresence>
              <div className="flex justify-center gap-2 mt-4">
-                <button onClick={() => setActiveStep(s => Math.max(0, s-1))} className="px-3 py-1 text-xs bg-zinc-200 dark:bg-zinc-700 dark:text-white rounded-md">Prev</button>
-                <button onClick={() => setActiveStep(s => Math.min(steps.length-1, s+1))} className="px-3 py-1 text-xs bg-zinc-200 dark:bg-zinc-700 dark:text-white rounded-md">Next</button>
+                <button onClick={() => setActiveStep(s => Math.max(0, s-1))} className="px-3 py-1 text-xs bg-[var(--module-surface)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)] rounded-md" data-wide-button="true">Prev</button>
+                <button onClick={() => setActiveStep(s => Math.min(steps.length-1, s+1))} className="px-3 py-1 text-xs bg-[var(--module-surface)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)] rounded-md" data-wide-button="true">Next</button>
              </div>
         </div>
     );
@@ -336,43 +343,43 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
            {activeSection === 1 && (
             <ReadingSection title="The Modelling Cycle." eyebrow="Step 2" icon={Workflow} theme={theme}>
               <p>So how does your brain actually build a picture of something? It follows a 5-step loop.</p>
-              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+              <ConceptSequence kind="spatial">
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Break it down</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>You look at the flat drawing on the exam paper and split it into simple shapes (boxes, cylinders, cones).</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Break it down</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>You look at the flat drawing on the exam paper and split it into simple shapes (boxes, cylinders, cones).</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Build it in your head</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>You piece those shapes together into a 3D picture in your mind.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Build it in your head</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>You piece those shapes together into a 3D picture in your mind.</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Test it mentally</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>You spin it around, zoom in, ask yourself "what would this look like from the side?"</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Test it mentally</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>You spin it around, zoom in, ask yourself "what would this look like from the side?"</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>4</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-success)" }}>4</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Draw it out</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>You put your pencil on the page and draw what you see.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}>Draw it out</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-success-text)", opacity: 0.8 }}>You put your pencil on the page and draw what you see.</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>5</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>5</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Check your work</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>You compare what you drew with what you pictured — do they match?</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Check your work</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>You compare what you drew with what you pictured — do they match?</p>
                   </div>
                 </div>
-              </div>
+              </ConceptSequence>
               {essentials ? (
                 <p>Most students skip the "test it mentally" step. They memorise drawing rules instead of picturing the object. This works for standard questions but breaks on anything new.</p>
               ) : (
@@ -428,29 +435,29 @@ const MentalModellingModule: React.FC<{ onBack: () => void; progress: ModuleProg
               ) : (
                 <p>Here's the good news: this "seeing in your head" skill is something you can actually train — it's not a talent you either have or don't.<Cite n={4} /> Like any skill, you build it up gradually, starting easy and working your way to the hard stuff. The <Highlight description="A step-by-step training approach where you start by handling real objects, move on to predicting what things look like on screen, and finish by picturing shapes described only in words — each stage stretching your mind's eye a bit further." theme={theme}>Spiral of Visualisation</Highlight> gives you a roadmap for doing exactly that.<Cite n={5} /></p>
               )}
-              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+              <ConceptSequence kind="spatial">
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Phase 1: Get Hands-On</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Start with physical objects — LEGO, cardboard models, anything you can hold. Pick them up, turn them around, and sketch what you see. Touch it, see it, draw it.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Phase 1: Get Hands-On</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>Start with physical objects — LEGO, cardboard models, anything you can hold. Pick them up, turn them around, and sketch what you see. Touch it, see it, draw it.</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Phase 2: Predict and Check</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Use CAD software. Before you click to create a shape, sketch what you think it will look like. Then compare your sketch to what actually appears on screen. Predict it, check it, learn from the difference.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Phase 2: Predict and Check</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Use CAD software. Before you click to create a shape, sketch what you think it will look like. Then compare your sketch to what actually appears on screen. Predict it, check it, learn from the difference.</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Phase 3: Pure Imagination</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Try "Dark Room" problems, where a shape is described only in words and you have to picture it entirely in your head. This is the ultimate test of your mind's eye — and the best prep for exam day.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Phase 3: Pure Imagination</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Try "Dark Room" problems, where a shape is described only in words and you have to picture it entirely in your head. This is the ultimate test of your mind's eye — and the best prep for exam day.</p>
                   </div>
                 </div>
-              </div>
+              </ConceptSequence>
             </ReadingSection>
           )}
         </>

@@ -1,0 +1,825 @@
+[
+ {
+  "id": "slv-2018-hl-i-2",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "svojimi-besedami-podlagi-teksta-opi-ite",
+  "questionRef": "2018 HL Section I Q2",
+  "questionText": "S svojimi besedami oz. na podlagi teksta opišite, kaj je Lonely Planet in zakaj je pomemben za Slovenijo.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Skoraj hkrati z objavo Lonely Planeta o izboru Julijskih Alp je Slovenska turistična organizacija zaznala rekorden obisk na družabnih omrežjih. Obisk na Facebookovi strani Feel Slovenia je presegel 500.000 sledilcev, na strani Instagrama pa 100.000 sledilcev. Facebook Feelslovenia je ena največjih in najbolj aktivnih Facebookovih strani v Sloveniji. V objavah na tem profilu STO poroča o pestri in raznoliki slovenski turistični ponudbi, ter spodbuja turiste k obisku. Najštevilčnejša skupina sledilcev prihaja iz Italije, sledijo Srbija, ZDA, Velika Britanija in Nemčija, medtem ko slovenski uporabniki Facebooka predstavljajo približno desetino vseh sledilcev. Novica, da je založniška hiša Lonely Planet uvrstila Julijske Alpe med 10 najbolj atraktivnih regij sveta, je ta teden bliskovito obredla medije in družabna omrežja. Ker gre za največjega popotniškega založnika na svetu z enormnim vplivom na turistične tokove, je novica vzbudila doma veliko navdušenja, po drugi strani pa tudi pomisleke, kako utegne množični turizem vplivati na naš gorski svet.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 točk)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Slovenian 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2018-hl-i-3",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "svojimi-besedami-podlagi-teksta-razlo-ite",
+  "questionRef": "2018 HL Section I Q3",
+  "questionText": "S svojimi besedami oz. na podlagi teksta razložite, zakaj imajo Slovenci pomisleke glede masovnega turizma.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Medijski velikan je Julijske Alpe v knjigi Best in Travel za leto 2018 uvrstil na laskavo tretje mesto najlepših svetovnih turističnih regij takoj za Severno Irsko ter Aljasko. Primerjajo jih z naravo francoskega Chamonixa in švicarskega Zermatta, vendar z opombo, da je slovenska različica manj znana in predvsem z manj gneče. »Julijske Alpe nudijo izjemno gorsko doživetje v delu Evrope, ki je prepogosto spregledan, a v zadnjem času nežno odpira vrata različnim popotnikom ... Naraščajoče število lokalnih ponudnikov pa združuje utrip dvigajoče pohodništvo z nadstandardnimi nastanitvami v imenitnih pastirskih kočah.« Med bisere, ki so vredni obiska, so poleg Blejskega in Bohinjskega jezera med drugim nanizali še Vršič, Triglavski narodni park, Radovljico, Kranj in Kamnik, med top točke, ki jih je treba videti, pa so uvrstili Loški grad, muzej čebelarstva, Linhartov trg v Radovljici in Blejski Vintgar. Priznanje in hkrati izziv",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 točk)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Slovenian 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2018-hl-i-4",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "kak-vlogo-igrajo-lokalne-skupnosti-pri",
+  "questionRef": "2018 HL Section I Q4",
+  "questionText": "Kakšno vlogo igrajo lokalne skupnosti pri varovanju okolja v Sloveniji? Mislite, da bodo še naprej vključene na tak način tudi ob porastu števila turistov v Sloveniji? Razložite svoj vidik na podlagi teksta.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pri Slovenski turistični organizaciji (STO) so se odzvali z izjavo, da je za Slovenijo uvrstitev na ta seznam izjemna čast in da bo bistveno vplivala na njeno prepoznavnost. O tem zagotovo ni dvoma, saj Best in Travel izide v osmih največjih svetovnih jezikih in v milijonskih nakladah. Tokratni izbor je na podlagi anket med popotniki in več kot 200 stalnimi pišočimi sodelavci za to medijsko hišo napravila posebna komisija v Londonu. Glavni razlogi za uvrstitev regije na ta imenitni seznam so, tako STO, prizadevanje Slovenije, da zaščiti edinstvene raznolikosti, značilne za to območje, ki se ponaša se s številnimi naravnimi lepotami, izjemno pokrajino in bogato kulturno dediščino.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 točk)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Slovenian 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2018-hl-i-5",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "menite-bodo-turisti-prihajajo-slovenijo-obna",
+  "questionRef": "2018 HL Section I Q5",
+  "questionText": "Menite, da se bodo turisti, ki prihajajo v Slovenijo, obnašali odgovorno, če sodite po anketi, izvedeni med obiskovalci Triglavskega narodnega parka? Razmislite o vplivih, ki jih imamo z vsakdanjimi odločitvami na sočloveka in okolje.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Neokrnjena narava, naravne vrednote in odprtost so zagotovo glavni aduti naše atraktivnosti in turisti iz sosednjih držav jih zelo dobro poznajo že desetletja. Toda po objavi Lonely Planeta bo turistov in planincev, ki si bodo želeli obiska TNP še več tudi iz drugih držav, kar pa povečuje tudi tveganje za nesreče, zmogljivosti Gorske reševalne službe (GRS) pa ima zagotovo kadrovske in tehnične omejitve. Tako pa opozarja dr. Janez Mekinc, profesor na fakulteti za turistične študije univerze na Primorskem. Po njegovem mnenju utegne postati problematično, da Slovenija nima ustrezno urejenega sistema obiskovanja gora oziroma območja TNP.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 točk)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Slovenian 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2018-hl-i-6",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2018,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "mnenju-trajnostni-turizem-trend-ali-stalnica",
+  "questionRef": "2018 HL Section I Q6",
+  "questionText": "Je po vašem mnenju trajnostni turizem trend ali stalnica? Je gonilo družbenega in ekonomskega razvoja ali ga zavira? Svoje mnenje pojasnite in podkrepite z argumenti, ki jih ponuja članek kot celota.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "»Ljudem, ki se odločijo za obisk TNP, se ni potrebno nikjer prijaviti, torej ne razpolagamo s podatkom, koliko planincev in obiskovalcev sploh obišče NPZ, kaj šele, da bi vedeli kam nameravajo iti, po katerih planinskih in plezalnih poteh imajo načrt doseči svoj cilj in nenazadnje, kaj je sploh njihov cilj. Prihodnost bo pokazala, koliko obiskovalcev in planincev še prenese TNP s trenutnim sistemom preventivnega dela in reševanja. Izkušnje na žalost kažejo, da mora najprej priti do neprijetnih ali pa tragičnih dogodkov, da se zganejo ustrezne inštitucije in spremenijo sistem. Na to opozarjata tudi GRS in PZS.«",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 točk)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Slovenian 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2023-hl-i-1-a",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "slovenian-0-0",
+  "conceptId": "svojimi-besedami-podlagi-prebranega-besedila-pojasnite",
+  "questionRef": "2023 HL Section I Q1(a)",
+  "questionText": "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Zdravnik”.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kdor se poklicno ukvarja z zdravljenjem ljudi.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2023-hl-i-1-b",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "slovenian-0-0",
+  "conceptId": "svojimi-besedami-podlagi-prebranega-besedila-pojasnite",
+  "questionRef": "2023 HL Section I Q1(b)",
+  "questionText": "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Okrnjen”.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nepopoln.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2023-hl-i-1-c",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "slovenian-0-0",
+  "conceptId": "svojimi-besedami-podlagi-prebranega-besedila-pojasnite",
+  "questionRef": "2023 HL Section I Q1(c)",
+  "questionText": "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Svečenik”.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kdor opravlja obrede, molitve v čast bogu, bogovom.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2023-hl-i-1-d",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "slovenian-0-0",
+  "conceptId": "svojimi-besedami-podlagi-prebranega-besedila-pojasnite",
+  "questionRef": "2023 HL Section I Q1(d)",
+  "questionText": "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Kulturna dediščina”.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kar je prevzeto iz preteklosti.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2023-hl-i-2",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "podlagi-besedila-ste-ravnokar-prebrali-pojasnite",
+  "questionRef": "2023 HL Section I Q2",
+  "questionText": "Na podlagi besedila, ki ste ga ravnokar prebrali, pojasnite, kakšno vlogo so imeli menihi pri ohranjanju oz. širjenju ljudske medicine.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Samostanski menihi so ljudskomedicinsko in zeliščarsko znanje začeli širiti med ljudstvo. V samostanih so nastajale tudi prve lekarne in zeliščni vrtovi, menihi pa so še ves srednji vek ohranjali in širili znanje o zdravilnih rastlinah, ki so jih gojili na samostanskih vrtovih.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2023-hl-i-3",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "podlagi-prebranega-besedila-pojasnite-razliko-med",
+  "questionRef": "2023 HL Section I Q3",
+  "questionText": "Na podlagi prebranega besedila pojasnite razliko med zdravilci oz. vrači in šolanimi zdravniki.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Šolani zdravniki so izvajali strokovno priznano prakso. To so bili večinoma nemško govoreči izobraženci, za njihove usluge pa so morali ljudje plačati. Zdravilci pa so navadno pripravljali napoje in zdravila iz zdravilnih zelišč. Poleg tega pa so se vrači borili proti boleznim tudi z vedeževanjem in čaranjem.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2023-hl-i-4",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "podlagi-prebranega-besedila-pojasnite-kako-spreminjal",
+  "questionRef": "2023 HL Section I Q4",
+  "questionText": "Na podlagi prebranega besedila pojasnite, kako se je spreminjal odnos ljudi do rastlin skozi zgodovino.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Rastline so najprej nabirali za hrano, kasneje pa so jih začeli uporabljati v zdravilne namene. V preteklosti so ljudje verjeli, da imajo nekatere rastline čarobno moč. Poleg zdravljenja so jih uporabljali za zaščito pred zlimi silami in kot obrambo pred uroki. Kasneje pa so zdravilne rastline zaradi njihove uporabnosti tudi načrtno gojili v vrtovih.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2023-hl-i-5",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "podlagi-besedila-ste-ravnokar-prebrali-pojasnite",
+  "questionRef": "2023 HL Section I Q5",
+  "questionText": "Na podlagi besedila, ki ste ga ravnokar prebrali, pojasnite, zakaj je po vašem mnenju v današnjem času ljudska medicina še vedno tako močno prisotna.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tako kot v preteklosti, tudi danes ljudje uporabljajo rastline za lajšanje bolečin s pripravo različnih mazil in napitkov. Še vedno je močno prisotno ljudska vera v to, da so določene rastline primerne za lajšanje bolečin v trebuhu, druge so bolj primerne za »boj« proti revmatizmu … Nekatere pa blagodejno vplivajo na naše počutje – npr. proti stresu. Tudi sodobna medicina priznava ugodne učinke nekaterih zdravilnih rastlin, ki so jih poznali že v preteklosti, zato jih farmacevtska podjetja pogosto dodajajo v sirupe, tablete … Poleg tega je danes tudi precej ljudi, ki se namesto h klasični medicini raje zatekajo k alternativnim oblikam zdravljenja, kot je na primer homeopatija, kjer je zdravljenje z zdravilnimi rastlinami močno prisotno.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2023-hl-i-6",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2023,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "podlagi-besedila-ste-ravnokar-prebrali-navedite",
+  "questionRef": "2023 HL Section I Q6",
+  "questionText": "Na podlagi besedila, ki ste ga ravnokar prebrali, navedite, ali se strinjate s to izjavo. Svoje stališče utemeljite. »Ljudska medicina je v nekem smislu manifestacija duhovnega življenja naših prednikov.«",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tradicionalne oblike medicine so se skozi stoletja razvijale in vključevale tako fizične kot duhovne elemente, kot so molitve, zelišča in obredi. Te prakse so izražale našo povezanost z naravo in so pomenile način za soočanje z boleznimi in trpljenjem. Čeprav se je sodobna medicina osredotočila predvsem na fizične vidike bolezni, se še vedno lahko naučimo veliko od naših prednikov o tem, kako celostno pristopiti k zdravju in blaginji. Homeopatija, ki je alternativna oblika zdravljenja, pri kateri se za zdravljenje uporabljajo predvsem zdravilne rastline, postaja v zadnjem času vse bolj popularna. Pa tudi prakse, kot so meditacija, joga in druge oblike duhovne vadbe, se vse bolj uporabljajo kot dopolnilne metode sodobne medicine in kažejo, da se ponovno povezujemo s starodavnimi načini razmišljanja o zdravju.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2024-hl-i-1-a",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2024,
+  "section": "I",
+  "topicId": "slovenian-0-0",
+  "conceptId": "svojimi-besedami-podlagi-prebranega-besedila-pojasnite",
+  "questionRef": "2024 HL Section I Q1(a)",
+  "questionText": "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Pašnik”",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "“Kavopivec”. Kdor rad pije kavo.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2024-hl-i-1-b",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2024,
+  "section": "I",
+  "topicId": "slovenian-0-0",
+  "conceptId": "svojimi-besedami-podlagi-prebranega-besedila-pojasnite",
+  "questionRef": "2024 HL Section I Q1(b)",
+  "questionText": "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Žvečiti”",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "“Žvečiti”. Drobiti z zobmi; gristi, grizljati.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2024-hl-i-1-c",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2024,
+  "section": "I",
+  "topicId": "slovenian-0-0",
+  "conceptId": "svojimi-besedami-podlagi-prebranega-besedila-pojasnite",
+  "questionRef": "2024 HL Section I Q1(c)",
+  "questionText": "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Kavopivec”",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "“Pašnik”. S travo porasel svet, namenjen za pašo.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2024-hl-i-1-d",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2024,
+  "section": "I",
+  "topicId": "slovenian-0-0",
+  "conceptId": "svojimi-besedami-podlagi-prebranega-besedila-pojasnite",
+  "questionRef": "2024 HL Section I Q1(d)",
+  "questionText": "S svojimi besedami na podlagi prebranega besedila pojasnite naslednje pojme: “Geografska lega”",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "“Geografska lega”. Položaj, lokacija.",
+    "marks": 1,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5 × 1) on the head of Q1, walked down to its 5 parts'; the paper prints this ask on page 3 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 1",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2024-hl-i-2",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2024,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "podlagi-besedila-ste-ravnokar-prebrali-pojasnite",
+  "questionRef": "2024 HL Section I Q2",
+  "questionText": "Na podlagi besedila, ki ste ga ravnokar prebrali, pojasnite, zakaj lahko trdimo, da je kava eden izmed najbolj priljubljenih toplih napitkov pri Slovencih.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Slovenci naj bi bili po porabi kave v samem vrhu. Po podatkih Euromonitorja za leto 2013 naj bi Slovenci namreč spili kar 6,1 kilograma kave na prebivalca.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 2",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2024-hl-i-3",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2024,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "podlagi-prebranega-besedila-pojasnite-kako-ivanje",
+  "questionRef": "2024 HL Section I Q3",
+  "questionText": "Na podlagi prebranega besedila pojasnite, kako je uživanje kave pri Slovencih povezano z ostalimi evropskimi narodi.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Slovenci smo po mnenju Alexandra Nina Ruiza kavarniško kulturo prevzeli od Avstrijcev, kavo od Italijanov, družabnost in sedenje ob kavi pa naj bi prevzeli od Bosancev.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 3",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2024-hl-i-4",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2024,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "podlagi-prebranega-besedila-pojasnite-kako-skozi",
+  "questionRef": "2024 HL Section I Q4",
+  "questionText": "Na podlagi prebranega besedila pojasnite, kako se je skozi leta spreminjal odnos Slovencev do kave.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Na začetku smo se Slovenci zadovoljili z vsakim napitkom, ki je spominjal na kavo, zdaj pa smo postali bolj zahtevni. Med drugim nas zanima tudi, kje so bila kavna zrna pridelana, kdo jih praži in kako, nekateri pa bi radi celo spremljali celoten proces priprave. Posledica tega je, da so se v preteklih letih v Sloveniji odprle kavarne, ki ponujajo “specialty kavo”, pri kateri je ob pripravi napitka pomemben tudi izvor zrnja.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 4",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2024-hl-i-5",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2024,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "podlagi-besedila-ste-ravnokar-prebrali-pojasnite",
+  "questionRef": "2024 HL Section I Q5",
+  "questionText": "Na podlagi besedila, ki ste ga ravnokar prebrali, pojasnite, kaj so nekateri sodobni raziskovalci odkrili o pitju kave. Kaj so njihove raziskave pokazale v primerjavi s splošnim mnenjem? Se strinjate z rezultati raziskav? Pojasnite, zakaj da oz. zakaj ne.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Čeprav še vedno obstajajo ljudje, ki menijo, da je pitje kave škodljivo, so čedalje glasnejši tudi strokovnjaki, ki pravijo, da to ne drži. Pravijo celo, da ima kava blagodejni učinek na telo – seveda le, če jo uživamo v zmernih količinah. Kava sicer vsebuje kofein, poleg tega pa tudi veliko flavonoidov, ki delujejo antioksidativno. Prav tako vsebuje tudi vitamine in kalij. V eni skodelici kave je kar 11 odstotkov dnevno priporočene vrednosti vitamina B2, 6 odstotkov vitamina B5, našli pa boste tudi magnezij in niacin. Imajo dokaze, da kava zmanjšuje tveganje za nastanek določenih vrst raka, srčnih obolenj, Alzheimerjeve in Parkisonove bolezni ter celo diabetesa tipa 2. Prav tako je več študij pokazalo, da imajo ljudje, ki redno pijejo kavo, do 65 odstotkov manj možnosti, da zbolijo za Alzheimerjevo boleznijo, ki je glavni vzrok demence. Poleg tega naj bi uživanje kofeina za 3 od 11 odstotkov pospeševalo presnovo in pomagalo pri izgorevanju maščob v telesu. Z rezultati raziskav se strinjam. Menim namreč, da smo na znanstvenem področju v zadnjih letih močno napredovali. Zavedam se, da morajo strokovnjaki v svoje raziskave vključiti veliko število ljudi, da so rezultati relevantni, da si pri svojem delu pomagajo z najnovejšo tehnologijo, da spremljajo trende na tem področju in da so seznanjeni z raziskavami v zvezi s kavo in njenimi vplivi na ljudi, ki so jih izvedli njihovi kolegi po svetu.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 5",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ },
+ {
+  "id": "slv-2024-hl-i-6",
+  "subjectId": "slovenian",
+  "level": "higher",
+  "year": 2024,
+  "section": "I",
+  "topicId": "slovenian-0-1",
+  "conceptId": "podlagi-besedila-ste-ravnokar-prebrali-navedite",
+  "questionRef": "2024 HL Section I Q6",
+  "questionText": "Na podlagi besedila, ki ste ga ravnokar prebrali, navedite, ali se strinjate s to izjavo. Svoje stališče utemeljite. “Ljudje dojemajo pitje kave kot družabni dogodek. ”",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pitje kave pogosto dojemamo kot družabni dogodek. To izhaja iz dejstva, da se ljudje pogosto zbirajo v kavarnah ali pa si pripravijo kavo doma, ko želijo vzpostaviti ali okrepiti družabne vezi. Kava je postala del vsakdanjega življenja in sodeluje pri ustvarjanju sproščenega vzdušja med ljudmi, kar spodbuja pogovore in socialno interakcijo. Kava je lahko tudi predmet skupnega uživanja med sodelavci ali prijatelji ter služi kot sredstvo za povezovanje in izmenjavo idej. Zato je pitje kave pogosto povezano z družabnimi dejavnostmi in se dojema kot način za gradnjo in ohranjanje socialnih odnosov.",
+    "marks": 5,
+    "contextNote": "The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+   }
+  ],
+  "notes": "The paper prints the tariff as '(5)'; the paper prints this ask on page 4 of the question booklet. The scheme of this sitting reprints no question, so the two documents are joined on the numbering they both print, which the census checks question by question.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "QUESTION 6",
+   "title": "Reading text — answer in Slovenian",
+   "pages": [
+    2,
+    3
+   ],
+   "attribution": "SEC Slovenian 2024 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer. The examination requires every answer in SLOVENIAN. The paper prints the rule on its own first page: \"Vsi odgovori morajo biti v slovenščini.\""
+  }
+ }
+]

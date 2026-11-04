@@ -10,14 +10,14 @@
   "file": "maths-2021-HL-paper-p007-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q1(b), typeset as the State Examinations Commission set it. It reads: −5 + 12i = (a + bi)² a² + 2abi−b² Re: a²−b² = −5 Im: 2ab = 12 ∴ b = 6/a a² − (/a) 6 = −5 a⁴ + 5a²−36 = 0 (a² + 9)(a²−4) = 0 ∴a = ±2 and b = ±3 Answer: 2 + 3i, −2 −3i OR r = √5² + 12² = 13 tan 𝜃 = − 12/5 so cos 𝜃 = − 5/13 (−5 + 12i) 1/2 = [13(cos(𝜃+ 2n𝜋) + isin(𝜃+ 2n𝜋))] = √13 (cos (/2 𝜃 + n𝜋) + i sin (/2 𝜃 + n𝜋)) 2 sin² (/2) 𝜃 = 1 − cos 𝜃 = 1 + 5/13 So sin (/2) 𝜃 = 3/√13 3/√13 and so cos (/2) 𝜃 = 2/√13 2/√13 n = 0: √",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q1(b), typeset as the State Examinations Commission set it. It reads: −5 + 12i = (a + bi)² a² + 2abi−b² Re: a²−b² = −5 Im: 2ab = 12 ∴ b = 6/a a² − ( 6/a) 2 = −5 a⁴ + 5a²−36 = 0 (a² + 9)(a²−4) = 0 ∴a = ±2 and b = ±3 Answer: 2 + 3i, −2 −3i OR r = √5² + 12² = 13 tan 𝜃 = − 12/5 so cos 𝜃 = − 5/13 (−5 + 12i) 1/2 = [13(cos(𝜃+ 2n𝜋) + isin(𝜃+ 2n𝜋))] = √13 (cos ( 𝜃/2 + n𝜋) + i sin ( 𝜃/2 + n𝜋)) 2 sin² ( 𝜃/2) = 1 − cos 𝜃 = 1 + 5/13 So sin ( 𝜃/2) = 3/√13 3/√13 and so cos ( 𝜃/2) = 2/√13 2/√13 n = 0:",
   "solution": true
  },
  {
   "file": "maths-2021-HL-paper-p008-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q1(c), typeset as the State Examinations Commission set it. It reads: z³ = r(cos𝜃+ i sin𝜃) z = (r(cos𝜃 + isin𝜃)) 1/3 = 2 (cos (𝜋+2n𝜋)/3 + isin )/3 𝜋+2n𝜋 n = 0: z = 2 (cos 𝜋/3 + isin 𝜋/3) = 1 + √3i n = 1: z = 2 (cos 3𝜋/3 + isin )/3 3𝜋 = −2 n = 2: z = 2 (cos 5𝜋/3 + isin )/3 5𝜋 = 1 − √3i",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q1(c), typeset as the State Examinations Commission set it. It reads: z³ = r(cos𝜃+ i sin𝜃) z = (r(cos𝜃 + isin𝜃)) 1/3 = 2 (cos (𝜋+2n𝜋)/3 + isin (𝜋+2n𝜋)/3 ) n = 0: z = 2 (cos 𝜋/3 + isin 𝜋/3) = 1 + √3i n = 1: z = 2 (cos 3𝜋/3 + isin 3𝜋/3 ) = −2 n = 2: z = 2 (cos 5𝜋/3 + isin 5𝜋/3 ) = 1 − √3i",
   "solution": true
  },
  {
@@ -45,7 +45,7 @@
   "file": "maths-2021-HL-paper-p011-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q3(b)(i), typeset as the State Examinations Commission set it. It reads: 3x² + 8x−35 = 0 (3x−7)(x + 5) = 0 x = 7/3 x = −5 OR/(−8±√8²−4(3)(−35)) Roots = (−8±√8²−4(3)(−35))/2(3) x = 7/3 x = −5",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q3(b)(i), typeset as the State Examinations Commission set it. It reads: 3x² + 8x−35 = 0 (3x−7)(x + 5) = 0 x = 7/3 x = −5 OR Roots = (−8±√8²−4(3)(−35))/2(3) x = 7/3 x = −5",
   "solution": true
  },
  {
@@ -94,7 +94,7 @@
   "file": "maths-2021-HL-paper-p016-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q5(b), typeset as the State Examinations Commission set it. It reads: h′(x) = 4cos2x h′ (𝜋/6) = 4cos2 (𝜋/6) = 4 cos (𝜋/3) = 2 = m_T h (𝜋/6) = 2sin2 (𝜋/6) = 2 sin (𝜋/3) = √3 (𝜋/6 , √3) m = 2 y − √3 = 2 (x − 𝜋/6) x = 0 ⇒ y − √3 = 2 (− 𝜋/6) y = √3 − 𝜋/3 = 0·6848 … ∴k = 0·68 [2 D.P.] OR Finds (/6 𝜋 , √3) and slope = 2, then: y = mx + c implies √3 = 2 (/6) 𝜋 + k y i.e. = k mx = (+ c)/√3 − implies 𝜋 3 √3 = 2 ( 𝜋 6) + k i.e. k = √3 − 𝜋/3 = 0·6848 … = 0·68 [2 D.P.]",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q5(b), typeset as the State Examinations Commission set it. It reads: h′(x) = 4cos2x h′ (𝜋/6) = 4cos2 (𝜋/6) = 4 cos (𝜋/3) = 2 = m_T h (𝜋/6) = 2sin2 (𝜋/6) = 2 sin (𝜋/3) = √3 (𝜋/6 , √3) m = 2 y − √3 = 2 (x − 𝜋/6) x = 0 ⇒ y − √3 = 2 (− 𝜋/6) y = √3 − 𝜋/3 = 0·6848 … ∴k = 0·68 [2 D.P.] OR Finds ( 𝜋/6 , √3) and slope = 2, then: y = mx + c implies √3 = 2 ( 𝜋/6) + k y i.e. = k mx = (+ c)/√3 − implies 𝜋 3 √3 = 2 ( 𝜋 6) + k i.e. k = √3 − 𝜋/3 = 0·6848 … = 0·68 [2 D.P.]",
   "solution": true
  },
  {
@@ -143,14 +143,14 @@
   "file": "maths-2021-HL-paper-p020-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(a)(iv), typeset as the State Examinations Commission set it. It reads: 45(0·9)^(n−1) = 2 (0·9)ⁿ^−¹ = 2/45 n − 1 = log₀_·₉ (/45) n−1 = 29·5510 … n = 30·5510 … ∴p = 31",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(a)(iv), typeset as the State Examinations Commission set it. It reads: 45(0·9)^(n−1) = 2 (0·9)ⁿ^−¹ = 2/45 n − 1 = log₀_·₉ ( 2/45) n−1 = 29·5510 … n = 30·5510 … ∴p = 31",
   "solution": true
  },
  {
   "file": "maths-2021-HL-paper-p020-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(b)(i), typeset as the State Examinations Commission set it. It reads: (i) l = 2𝜋r (/360°) 𝜃 [degrees] 2𝜋(100) (/360°) 𝜃 = 45 𝜃 = (45 × 360°)/200𝜋 = 25·7831 … ° = 26 [°] [∈ℕ] OR l = r𝜃 [radians] 100𝜃= 45 𝜃= 0·45 radians 𝜃 = 0·45 ( )/𝜋 180 ° = 25·7831 … ° = 26 [°] [∈ℕ]",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(b)(i), typeset as the State Examinations Commission set it. It reads: (b) (i) l = 2𝜋r ( 𝜃/360°) [degrees] 2𝜋(100) ( 𝜃/360°) = 45 𝜃 = (45 × 360°)/200𝜋 = 25·7831 … ° = 26 [°] [∈ℕ] OR l = r𝜃 [radians] 100𝜃= 45 𝜃= 0·45 radians 𝜃 = 0·45 ( 180/𝜋 ) ° = 25·7831 … ° = 26 [°] [∈ℕ]",
   "solution": true
  },
  {
@@ -164,7 +164,7 @@
   "file": "maths-2021-HL-paper-p021-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(b)(iii), typeset as the State Examinations Commission set it. It reads: (iii) [Half total distance and half accumulated angle occur at same point]: Distance: S_∞ = 45/(1−0·9) = 450 cm Half = 225 [cm] OR (26(1 − 0·9ⁿ))/(1 − 0·9) = 260°/2 1 − 0·9ⁿ = 1/2 −0·9ⁿ = − 1/2 n = 6·5788 … (45(1 − 0·9⁶^·⁵⁷⁸⁸))/(1 − 0·9) = 224·9996 … = 225 [cm] [∈ℕ] OR Half accumulated angle = 260°/2 = 130° So distance = 2𝜋(100) (/360°) 130° = 226∙89 … = 227 [cm] [∈ℕ]",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(b)(iii), typeset as the State Examinations Commission set it. It reads: (iii) [Half total distance and half accumulated angle occur at same point]: Distance: S_∞ = 45/(1−0·9) = 450 cm Half = 225 [cm] OR (26(1 − 0·9ⁿ))/(1 − 0·9) = 260°/2 1 − 0·9ⁿ = 1/2 −0·9ⁿ = − 1/2 n = 6·5788 … (45(1 − 0·9⁶^·⁵⁷⁸⁸))/(1 − 0·9) = 224·9996 … = 225 [cm] [∈ℕ] OR Half accumulated angle = 260°/2 = 130° So distance = 2𝜋(100) ( 130°/360°) = 226∙89 … = 227 [cm] [∈ℕ]",
   "solution": true
  },
  {
@@ -206,7 +206,7 @@
   "file": "maths-2021-HL-paper-p024-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q8(c), typeset as the State Examinations Commission set it. It reads: (c) 1/75 ∫ 0 75 h(x) dx = 1/75 [/4 0·001x⁴ − 0·12x³/3 + 3·6x² = 1/75 [/4 0·001(75)⁴ − 0·12(75)³/3 = 1/75 (1535·15625) = 20·46875 m = 20∙47 [m] [2 D.P.]",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q8(c), typeset as the State Examinations Commission set it. It reads: (c) 1/75 ∫ 0 75 h(x) dx = 1/75 [ 0·001x⁴/4 − 0·12x³/3 + 3·6x² = 1/75 [ 0·001(75)⁴/4 − 0·12(75)³/3 = 1/75 (1535·15625) = 20·46875 m = 20∙47 [m] [2 D.P.]",
   "solution": true
  },
  {
@@ -234,14 +234,14 @@
   "file": "maths-2021-HL-paper-p026-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q9(b), typeset as the State Examinations Commission set it. It reads: 82 = 75e⁽−0·081)(t) + 20 62 = 75e^(−0.·081t) 62/75 = e−0·081t ln (/75) 62 = −0·081t t = 2·3500 … mins t = 2 mins 21 secs [nearest sec]",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q9(b), typeset as the State Examinations Commission set it. It reads: 82 = 75e⁽−0·081)(t) + 20 62 = 75e^(−0.·081t) 62/75 = e−0·081t ln ( 62/75) = −0·081t t = 2·3500 … mins t = 2 mins 21 secs [nearest sec]",
   "solution": true
  },
  {
   "file": "maths-2021-HL-paper-p026-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q9(c), typeset as the State Examinations Commission set it. It reads: T(t) = 75e^(−0.081t) + 20 T′(t) = −6·075e^(−0·081t) −6·075e^(−0·081t) = −4·05 e−0·081t = 2/3 −0·081t = ln (/3) 2 t = 5·0057 … T(5 ∙0057 … ) = 75e−0·081(5∙0057… ) + 20 = 70 [℃]",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q9(c), typeset as the State Examinations Commission set it. It reads: T(t) = 75e^(−0.081t) + 20 T′(t) = −6·075e^(−0·081t) −6·075e^(−0·081t) = −4·05 e−0·081t = 2/3 −0·081t = ln ( 2/3) t = 5·0057 … T(5 ∙0057 … ) = 75e−0·081(5∙0057… ) + 20 = 70 [℃]",
   "solution": true
  },
  {
@@ -255,7 +255,7 @@
   "file": "maths-2021-HL-paper-p028-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: V(t) = 60 + 41t−3t² = 0 (−t + 15)(3t + 4) = 0 t = 15 days OR/(−41±√41²−4(−3)(60)) t = (−41±√41²−4(−3)(60))/(2(−3)) (2(−3))/(−41±√2401) = (−41±√2401)/(−6) = 15, as t > 0",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: V(t) = 60 + 41t−3t² = 0 (−t + 15)(3t + 4) = 0 t = 15 days OR/(−41±√41²−4(−3)(60)) t = (−41±√41²−4(−3)(60))/(2(−3)) = (−41±√2401)/(−6) = 15, as t > 0",
   "solution": true
  },
  {
@@ -276,7 +276,7 @@
   "file": "maths-2021-HL-paper-p028-i3.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(a)(iv), typeset as the State Examinations Commission set it. It reads: (a) (iv) V ( )/6 41 = 60 + 41 ( )/6 41 − 3 ( )/6 41 = 200∙0833 … = 200 [litres] [nearest litre]",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(a)(iv), typeset as the State Examinations Commission set it. It reads: (a) (iv) V ( 41/6 ) = 60 + 41 ( 41/6 ) − 3 ( 41/6 ) 2 = 200∙0833 … = 200 [litres] [nearest litre]",
   "solution": true
  },
  {
@@ -329,17 +329,10 @@
   "solution": true
  },
  {
-  "file": "maths-2021-HL-paper-p037-i0.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q2(i), typeset as the State Examinations Commission set it. It reads: Q2 (c) Model |AC| = (Solution – 30)/(√12² + 9²) = Marks 15 |AD| = 2/3 (15) = 10 OR (2 ,/(2 + 1) 2 + 1 ) = D(12, 8) |AD| = √(12 −8)² + (8 −2)² = 10 OR Let D be (x, y). Then ( ,/(3−1) 3x−1 × 4 (3y−1 × 2)/(3−1) ) = (16, 11) So D = (x, y) = (12, 8) |AD| = √8² + 6² = 10",
-  "solution": true
- },
- {
   "file": "maths-2021-HL-paper-p036-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q2(a), typeset as the State Examinations Commission set it. It reads: 3k − 6 (2k )/3 + 2 = 0 ⇒3k−4k−4 + 2 = 0 ⇒k = −2",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q2(a), typeset as the State Examinations Commission set it. It reads: (a) 3k − 6 (2k/3 + 2 ) + 2 = 0 ⇒3k−4k−4 + 2 = 0 ⇒k = −2",
   "solution": true
  },
  {
@@ -347,6 +340,13 @@
   "kind": "figure",
   "truncated": false,
   "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q2(b), typeset as the State Examinations Commission set it. It reads: s−2t−8 = 0 so s = 2t + 8 |4s + 3t + 6| √4² + 3² = 1 (|8t + 32 + 3t + 6|)/5 = 1 |11t + 38| = 5 11t + 38 = 5 11t + 38 = −5 ∴ t = −3 or ∴ t = − 43/11 ∴ s = 2 or ∴ s = 2/11 OR |4s + 3t + 6| √4² + 3² = 1 |4s + 3t + 6| = 5 4s + 3t = −1 4s + 3t = −11 Intersection of either with s−2t = 8: s = 2, t = −3 or s = 2/11 , t = − 43/11",
+  "solution": true
+ },
+ {
+  "file": "maths-2021-HL-paper-p037-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q2(c)(i), typeset as the State Examinations Commission set it. It reads: Q2 (c) Model |AC| = (Solution – 30)/(√12² + 9²) = Marks 15 |AD| = 2/3 (15) = 10 OR (2/(2 + 1) × 16 + 1 × 4 , 2 × 11 2 + + 1 1 × 2 ) = D(12, 8) |AD| = √(12 −8)² + (8 −2)² = 10 OR Let D be (x, y). Then ( (3x−1 × 4)/(3−1) , (3y−1 × 2)/(3−1) ) = (16, 11) So D = (x, y) = (12, 8) |AD| = √8² + 6² = 10",
   "solution": true
  },
  {
@@ -388,7 +388,7 @@
   "file": "maths-2021-HL-paper-p040-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: cos2A = cos²A−sin²A ⇒ cos𝜃 = cos² ^𝜃/2 − sin² ^𝜃/2 using a right-angled triangle cos 𝜃/2 = 2/√5 2/√5 cos𝜃 = (/√5) 2 2 − (/√5) 1 2 = 3/5 OR 2−sin^(2𝜃) cos𝜃= cos^(2𝜃) = (1 − sin² ^𝜃/2) − sin² ^𝜃/2 = 1 − 2sin² ^𝜃/2 = 1 − 2 (/√5) 1 2 = 3/5",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: cos2A = cos²A−sin²A ⇒ cos𝜃 = cos² ^𝜃/2 − sin² ^𝜃/2 using a right-angled triangle cos 𝜃/2 = 2/√5 2/√5 cos𝜃 = ( 2/√5) 2 − ( 1/√5) 2 = 3/5 OR 2−sin^(2𝜃) cos𝜃= cos^(2𝜃) = (1 − sin² ^𝜃/2) − sin² ^𝜃/2 = 1 − 2sin² ^𝜃/2 = 1 − 2 ( 1/√5) 2 = 3/5",
   "solution": true
  },
  {
@@ -486,14 +486,14 @@
   "file": "maths-2021-HL-paper-p048-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(a)(ii), typeset as the State Examinations Commission set it. It reads: P(165 < x < 210) P (/36 165−176 < z < )/36 210−176 = P(−0∙31 < z < 0∙94) [2 D.P.] = P(z < 0·94) −P(z > −0·31) P(z < 0∙94) = 0∙8264 P(z < −0∙31) = 1 −P(z < 0∙31) = 1 −0·6217 = 0∙3783 So answer = 0∙8264 −0∙3783 = 0∙4481 = 44∙81% of 1st years got the Distinction.",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(a)(ii), typeset as the State Examinations Commission set it. It reads: P(165 < x < 210) P ( (165−176)/36 < z < (210−176)/36 ) = P(−0∙31 < z < 0∙94) [2 D.P.] = P(z < 0·94) −P(z > −0·31) P(z < 0∙94) = 0∙8264 P(z < −0∙31) = 1 −P(z < 0∙31) = 1 −0·6217 = 0∙3783 So answer = 0∙8264 −0∙3783 = 0∙4481 = 44∙81% of 1st years got the Distinction.",
   "solution": true
  },
  {
   "file": "maths-2021-HL-paper-p049-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(b)(i), typeset as the State Examinations Commission set it. It reads: (b) (i) T = (19∙8−21)/5∙2 = −1∙787 … (i) T = (/√60) 5∙2/√60) = −1∙787 …",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(b)(i), typeset as the State Examinations Commission set it. It reads: (b) (i) T = (19∙8−21)/5∙2 = −1∙787 … (i) T = ( 5∙2/√60) = −1∙787 …",
   "solution": true
  },
  {
@@ -507,14 +507,14 @@
   "file": "maths-2021-HL-paper-p050-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(c)(i), typeset as the State Examinations Commission set it. It reads: Assuming no replacement: 18/23 × 17/22 × 16/21 × 5/20 = 0·11518 … = 0·1152 [4 D.P.] OR Assuming replacement: (/23) 18 3 × 5/23 = 0∙10420 … = 0∙1042 [4 D.P.]",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(c)(i), typeset as the State Examinations Commission set it. It reads: Assuming no replacement: 18/23 × 17/22 × 16/21 × 5/20 = 0·11518 … = 0·1152 [4 D.P.] OR Assuming replacement: ( 18/23) 3 × 5/23 = 0∙10420 … = 0∙1042 [4 D.P.]",
   "solution": true
  },
  {
   "file": "maths-2021-HL-paper-p050-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(c)(ii), typeset as the State Examinations Commission set it. It reads: (ii) (/23 12 × 6/22 × 5/21) 3! = 360/1771 = 0 · 20327 … = 0·2033 [4 D.P.] OR (12/23 × 6/22 × 5/21) + (12/23 × 5/22 × 6/21) + (/23 6 × 12/22 × 5/21) + (/23 6 × 5/22 × 12/21) + (/23 5 × 6/22 × 12/21) + (/23 5 × 12/22 × 6/21) = 0 · 20327 … = 0·2033 [4 D.P.] OR (1 1))/(23 ) (12 ) × (⁶ 3 1) × (⁵ = 0·2033 [4 D.P.]",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(c)(ii), typeset as the State Examinations Commission set it. It reads: (ii) ( 12/23 × 6/22 × 5/21) 3! = 360/1771 = 0 · 20327 … = 0·2033 [4 D.P.] OR (12/23 × 6/22 × 5/21) + (12/23 × 5/22 × 6/21) + ( 6/23 × 12/22 × 5/21) + ( 6/23 × 5/22 × 12/21) + ( 5/23 × 6/22 × 12/21) + ( 5/23 × 12/22 × 6/21) = 0 · 20327 … = 0·2033 [4 D.P.] OR (1 1))/(23 ) (12 ) × (⁶ 3 1) × (⁵ = 0·2033 [4 D.P.]",
   "solution": true
  },
  {
@@ -570,14 +570,14 @@
   "file": "maths-2021-HL-paper-p054-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: P(2 from the 1st 9 are O⁻) × P(10th is O⁻) = (⁹ 2) (/100) 8 2 (/100) 92 7 × 8/100 = 0∙01028 … = 0∙0103 [4 D.P.]",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: P(2 from the 1st 9 are O⁻) × P(10th is O⁻) = (⁹ 2) ( 8/100) 2 ( 92/100) 7 × 8/100 = 0∙01028 … = 0∙0103 [4 D.P.]",
   "solution": true
  },
  {
   "file": "maths-2021-HL-paper-p054-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: 1 −P(none are O⁻) (ii) = 1 − (/100) 92 = 0·34091 … = 0·3409 [4 D.P.] OR P(1 or 2 or 3 or 4 or 5 are O⁻) = (⁵ 1) (/100) 8 (/100) 92 + (⁵ 2) (/100) 8 (/100) 92 +(⁵ 3) (/100) 8 (/100) 92 + (⁵ 4) (/100) 8 (/100) 92 + (/100) 8 = 0·34091 … = 0·3409 [4 D.P.]",
+  "description": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: 1 −P(none are O⁻) (ii) = 1 − ( 92/100) 5 = 0·34091 … = 0·3409 [4 D.P.] OR P(1 or 2 or 3 or 4 or 5 are O⁻) = (⁵ 1) ( 8/100) 1 ( 92/100) 4 + (⁵ 2) ( 8/100) 2 ( 92/100) 3 +(⁵ 3) ( 8/100) 3 ( 92/100) 2 + (⁵ 4) ( 8/100) 4 ( 92/100) 1 + ( 8/100) 5 = 0·34091 … = 0·3409 [4 D.P.]",
   "solution": true
  },
  {
@@ -955,13 +955,6 @@
   "file": "maths-2021-OL-paper-p035-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q3, typeset as the State Examinations Commission set it. It reads: A: 2 = −m + c B: −2 = m(0) + c ⇒c = −2 From A: 2 = −m−2 ⇒m = −4 → y = −4x−2",
-  "solution": true
- },
- {
-  "file": "maths-2021-OL-paper-p035-i1.png",
-  "kind": "figure",
-  "truncated": false,
   "description": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q3(a), typeset as the State Examinations Commission set it. It reads: slope = (−2 − 2)/(0 − (−1)) = −4 y−2 = −4[x−(−1)] y = −4x−4 + 2 y = −4x−2 A: 2 = −m + c",
   "solution": true
  },
@@ -990,7 +983,7 @@
   "file": "maths-2021-OL-paper-p037-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: (ii) [ ,/2 ]/2 (2, −1) Graphical Solution:",
+  "description": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: (ii) [ (6 + (−2))/2 , (2 + (−4))/2 ] (2, −1) Graphical Solution:",
   "solution": true
  },
  {
@@ -1018,7 +1011,7 @@
   "file": "maths-2021-OL-paper-p040-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q5(a), typeset as the State Examinations Commission set it. It reads: Mean: (178∙7 + 147∙9)/2 = 163∙3 147∙9 + (178∙7 )/2 = 163∙3 Std. Dev.: 4𝜎= 178∙7 −147∙9 ⇒ 𝜎= 7∙7 2𝜎= 178∙7 −163∙3 ⇒ 𝜎= 7∙7",
+  "description": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q5(a), typeset as the State Examinations Commission set it. It reads: Mean: (178∙7 + 147∙9)/2 = 163∙3 147∙9 + (178∙7/2 − 147∙9 ) = 163∙3 Std. Dev.: 4𝜎= 178∙7 −147∙9 ⇒ 𝜎= 7∙7 2𝜎= 178∙7 −163∙3 ⇒ 𝜎= 7∙7",
   "solution": true
  },
  {
@@ -1043,13 +1036,6 @@
   "solution": true
  },
  {
-  "file": "maths-2021-OL-paper-p042-i0.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q6, typeset as the State Examinations Commission set it. It reads: Area DEF = 18∙75/2∙5² = 3 cm²",
-  "solution": true
- },
- {
   "file": "maths-2021-OL-paper-p041-i0.png",
   "kind": "figure",
   "truncated": false,
@@ -1064,10 +1050,17 @@
   "solution": true
  },
  {
-  "file": "maths-2021-OL-paper-p042-i1.png",
+  "file": "maths-2021-OL-paper-p042-i0.png",
   "kind": "figure",
   "truncated": false,
   "description": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q6(b)(i), typeset as the State Examinations Commission set it. It reads: (b)(i) |QR| = 3 × 2∙5 = 7∙5 cm (b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "maths-2021-OL-paper-p042-i1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: Area DEF = 18∙75/2∙5² = 3 cm²",
   "solution": true
  },
  {
@@ -1186,7 +1179,7 @@
   "file": "maths-2021-OL-paper-p052-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q9(b)(ii), typeset as the State Examinations Commission set it. It reads: (ii) C = 2𝜋(10) (/360) C = 12∙217 Total Distance = 10 + 10 + 12∙21 = 32∙217 = 32∙22",
+  "description": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q9(b)(ii), typeset as the State Examinations Commission set it. It reads: (ii) C = 2𝜋(10) ( 70/360) C = 12∙217 Total Distance = 10 + 10 + 12∙21 = 32∙217 = 32∙22",
   "solution": true
  },
  {
@@ -1298,7 +1291,7 @@
   "file": "maths-2022-HL-paper-p011-i2.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q3(a)(iii), typeset as the State Examinations Commission set it. It reads: (iii) Radius = √80 ÷ 2 = √20 2 = 20𝜋 square units Area = 𝜋(√20) OR Centre = (6 + 2i−2 + 6i)/2 = 2 + 4i Radius = 2/(√(6 − 2)² + (2 − 4)²) = √20 2 = 20𝜋 square units Area = 𝜋(√20) (Accept without units)",
+  "description": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q3(a)(iii), typeset as the State Examinations Commission set it. It reads: (iii) Radius = √80 ÷ 2 = √20 2 = 20𝜋 square units Area = 𝜋(√20) OR Centre = (6 + 2i−2 + 6i)/2 = 2 + 4i Radius = √(6 −2)² + (2 −4)² = √20 2 = 20𝜋 square units Area = 𝜋(√20) (Accept without units)",
   "solution": true
  },
  {
@@ -1361,7 +1354,7 @@
   "file": "maths-2022-HL-paper-p018-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q6(b), typeset as the State Examinations Commission set it. It reads: A = l × w = 4x × x = 4x² When A = 225, 4x² = 225, so x² = 225/4 , i.e. x = 15/2 dA/dx = 8x = 8 ( )/2 15 = 60 cm²/cm Accept without unit OR l = 4x so x = l/4 A = l × l/4 = 1/4 l² dl/dx = 4 and dA/dl = 1/2 l dA/dx = dA/dl × dl/dx dA/dx = 1/2 l × 4 When A = 225, 1/4 l² = 225, so l = 30 dA/dx = 1/2 (30)(4) = 60 cm²/cm Accept without unit",
+  "description": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q6(b), typeset as the State Examinations Commission set it. It reads: A = l × w = 4x × x = 4x² When A = 225, 4x² = 225, so x² = 225/4 , i.e. x = 15/2 dA/dx = 8x = 8 ( 15/2 ) = 60 cm²/cm Accept without unit OR l = 4x so x = l/4 A = l × l/4 = 1/4 l² dl/dx = 4 and dA/dl = 1/2 l dA/dx = dA/dl × dl/dx dA/dx = 1/2 l × 4 When A = 225, 1/4 l² = 225, so l = 30 dA/dx = 1/2 (30)(4) = 60 cm²/cm Accept without unit",
   "solution": true
  },
  {
@@ -1438,7 +1431,7 @@
   "file": "maths-2022-HL-paper-p024-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: 60 cos (/3 𝜋 t) = 72 − 110 = −38 cos (/3 𝜋 t) = − 38/60 Ref angle = cos^(−1)( 60) = 0∙8849 … radians 1st time: Quadrant 2 2nd time: Quadrant 3 𝜋/3 t₂ = 𝜋 + 0∙8849 … radians t = (3(𝜋+0∙8849… ))/𝜋 = 3∙845 … = 3∙85 mins [2 DP] OR cos (/3 𝜋 t) = − 38/60 𝜋/3 t₁ = cos^−¹ (− 38/60) t₁ = 2.15494 … t = 6 −2.15494 t = 3.85 mins",
+  "description": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: (e) 60 cos ( 𝜋/3 t) = 72 − 110 = −38 cos ( 𝜋/3 t) = − 38/60 Ref angle = cos^(−1)( 60) = 0∙8849 … radians 1st time: Quadrant 2 2nd time: Quadrant 3 𝜋/3 t₂ = 𝜋 + 0∙8849 … radians t = (3(𝜋+0∙8849… ))/𝜋 = 3∙845 … = 3∙85 mins [2 DP] OR cos ( 𝜋/3 t) = − 38/60 𝜋/3 t₁ = cos^−¹ (− 38/60) t₁ = 2.15494 … t = 6 −2.15494 t = 3.85 mins",
   "solution": true
  },
  {
@@ -1459,7 +1452,7 @@
   "file": "maths-2022-HL-paper-p026-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q9(b), typeset as the State Examinations Commission set it. It reads: 15(0 ∙6^t) = 1 0 ∙ 6^t = 1/15 ln 0 ∙ 6^t = t ln 0 ∙ 6 = ln 1/15 t = ln ¹/15 = 5∙30 … = 5∙3 t = 15/(ln 0∙6) = 5∙30 … = 5∙3 [days] OR t = log₀_.₆ 1/15 = 5.30 … = 5.3 [days] [1 DP]",
+  "description": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q9(b), typeset as the State Examinations Commission set it. It reads: 15(0 ∙6^t) = 1 0 ∙ 6^t = 1/15 ln 0 ∙ 6^t = t ln 0 ∙ 6 = ln 1/15 ln¹ t = 15/(ln 0∙6) = 5∙30 … = 5∙3 [days] OR t = log₀_.₆ 1/15 = 5.30 … = 5.3 [days] [1 DP]",
   "solution": true
  },
  {
@@ -1536,7 +1529,7 @@
   "file": "maths-2022-HL-paper-p029-i2.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(e)(ii), typeset as the State Examinations Commission set it. It reads: (e) (ii) c = (log₁₀ 80−log₁₀ 47)/(log₁₀(24 + 1)) = 0∙1652 … = 0∙165 [3 DP] OR 80 = 47(24 + 1)^c (24 + 1)^c = 80/47 ln 25^c = ln 80/47 c = ln⁸⁰/47 = 0∙1652 … = 0∙165 c = 47/(ln 25) = 0∙1652 … = 0∙165 [3 DP] OR 80 = 47(24 + 1)^c (24 + 1)^c = 80/47 c = log₂₅ 80/47 = 0∙1652 … = 0∙165 [3 DP]",
+  "description": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(e)(ii), typeset as the State Examinations Commission set it. It reads: (e) (ii) c = (log₁₀ 80−log₁₀ 47)/(log₁₀(24 + 1)) = 0∙1652 … = 0∙165 [3 DP] OR 80 = 47(24 + 1)^c (24 + 1)^c = 80/47 ln 25^c = ln 80/47 ln⁸⁰ c = 47/(ln 25) = 0∙1652 … = 0∙165 [3 DP] OR 80 = 47(24 + 1)^c (24 + 1)^c = 80/47 c = log₂₅ 80/47 = 0∙1652 … = 0∙165 [3 DP]",
   "solution": true
  },
  {
@@ -1557,7 +1550,7 @@
   "file": "maths-2022-HL-paper-p035-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: (b) 1/7 × 1/7 or 7/7 × 1/7 × 1/7 = 1/49 or 7 × (/7 1 × 1/7 ×",
+  "description": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: (b) 1/7 × 1/7 or 7/7 × 1/7 × 1/7 = 1/49 or 7 × ( 1/7 × 1/7 ×",
   "solution": true
  },
  {
@@ -1571,7 +1564,7 @@
   "file": "maths-2022-HL-paper-p037-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q2(a), typeset as the State Examinations Commission set it. It reads: (a) C = (/(4 + 1) 1(8) + 4(−1) , )/(4 + 1) 1(−4) + 4(3) C = (/5 4 , 8/5) OR x: 9 steps back [8 to −1] So x_C = 8 − 4/5 (9) = 4/5 y: 7 steps up [−4 to 3] So y_C = −4 + 4/5 (7) = 8/5 C = (/5 4 , 8/5)",
+  "description": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q2(a), typeset as the State Examinations Commission set it. It reads: (a) C = ( (1(8) + 4(−1))/(4 + 1) , (1(−4) + 4(3))/(4 + 1) ) C = ( 4/5 , 8/5) OR x: 9 steps back [8 to −1] So x_C = 8 − 4/5 (9) = 4/5 y: 7 steps up [−4 to 3] So y_C = −4 + 4/5 (7) = 8/5 C = ( 4/5 , 8/5)",
   "solution": true
  },
  {
@@ -1620,7 +1613,7 @@
   "file": "maths-2022-HL-paper-p042-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: tan 15 = tan(60 −45) tan60−tan45 = 1 + tan60tan45 = (√3−1)/(√3 + 1) (√3−1)/(√3 + 1) OR tan 15 = tan(45 −30) tan45−tan30 = 1 + tan45tan30 = 1 − ¹/√3 = √3−1 = √3/¹ 1 1 + − = (√3−1)/(√3 + 1) (√3−1)/(√3 + 1) = 1 + ¹/√3 ¹/√3 = √3 + 1 OR tan 30 = 1/√3 1/√3 = (2 tan 15)/(1−tan² 15) 1 − tan² 15 √3 = 2 (1−tan²)/√3 tan 15 15 tan² 1 − tan² 15 + 15 2 (= 2)/√3 tan √3 15 tan − 15 1 = 0 tan² 15 + −2√3 2 √3 (tan 15 − 1 = 0)/(±√(−2√3",
+  "description": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: tan 15 = tan(60 −45) tan60−tan45 = 1 + tan60tan45 = (√3−1)/(√3 + 1) (√3−1)/(√3 + 1) OR tan 15 = tan(45 −30) tan45−tan30 = 1 + tan45tan30 = √3/¹ 1 1 + − = (√3−1)/(√3 + 1) (√3−1)/(√3 + 1) = 1 + ¹/√3 = √3 + 1 OR tan 30 = 1/√3 1/√3 = (2 tan 15)/(1−tan² 15) 1 − tan² 15 √3 = 2 (1−tan²)/√3 tan 15 15 tan² 1 − tan² 15 + 15 2 (= 2)/√3 tan √3 15 tan − 15 1 = 0 tan² 15 + −2√3 2 √3 (tan 15 − 1 = 0)/(±√(−2√3) 2−4 × 1 × (−1)) tan 1",
   "solution": true
  },
  {
@@ -1732,7 +1725,7 @@
   "file": "maths-2022-HL-paper-p051-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q8(b)(v), typeset as the State Examinations Commission set it. It reads: 0∙9659 … = 0∙966 [3 D.P.] (a)(v) Any valid reason, for example: Correlation is related to linear relationships, and this is quadratic The line of best fit is close to horizontal The data is symmetrical: it is decreasing first, and then increasing in a symmetrical way",
+  "description": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q8(a)(v), typeset as the State Examinations Commission set it. It reads: 0∙9659 … = 0∙966 [3 D.P.] (a)(v) Any valid reason, for example: Correlation is related to linear relationships, and this is quadratic The line of best fit is close to horizontal The data is symmetrical: it is decreasing first, and then increasing in a symmetrical way",
   "solution": true
  },
  {
@@ -1879,7 +1872,7 @@
   "file": "maths-2022-OL-paper-p009-i2.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q2(c), typeset as the State Examinations Commission set it. It reads: Eqn 1 × (−5): −15x−10y = −5 14x + 10y = −4 Eqn 2 × 2: −x = −9, i.e. x = 9 So and 3(9) + 2y = 1 so y = −13 OR y = 1/2 (1 − 3x) So 7x + 5 (/2 1 (1 − 3x)) = −2 So 14x + 5 −15x = −4, etc.",
+  "description": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q2(c), typeset as the State Examinations Commission set it. It reads: Eqn 1 × (−5): −15x−10y = −5 14x + 10y = −4 Eqn 2 × 2: −x = −9, i.e. x = 9 So and 3(9) + 2y = 1 so y = −13 OR y = 1/2 (1 − 3x) So 7x + 5 ( 1/2 (1 − 3x)) = −2 So 14x + 5 −15x = −4, etc.",
   "solution": true
  },
  {
@@ -2117,7 +2110,7 @@
   "file": "maths-2022-OL-paper-p024-i2.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: (e) Usual time: 12/60 = 0∙2 hours or 12 minutes Time today: 12/40 = 0∙3 hours or 18 minutes % increase in time: (0∙3−0∙2)/0∙2 × 100 = 50% OR (/40 60 − 1) × 100 = 50%",
+  "description": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: (e) Usual time: 12/60 = 0∙2 hours or 12 minutes Time today: 12/40 = 0∙3 hours or 18 minutes % increase in time: (0∙3−0∙2)/0∙2 × 100 = 50% OR ( 60/40 − 1) × 100 = 50%",
   "solution": true
  },
  {
@@ -2397,7 +2390,7 @@
   "file": "maths-2022-OL-paper-p049-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q8(b)(i), typeset as the State Examinations Commission set it. It reads: (i) tan A = 47/(7 ∙ 5) A = tan^−¹ (/5) 7 ∙ A = 80 ∙93349° A = 81°[nearest degree]",
+  "description": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q8(b)(i), typeset as the State Examinations Commission set it. It reads: (i) tan A = 47/(7 ∙ 5) A = tan^−¹ ( 47/5) 7 ∙ A = 80 ∙93349° A = 81°[nearest degree]",
   "solution": true
  },
  {
@@ -2450,6 +2443,13 @@
   "solution": true
  },
  {
+  "file": "maths-2022-OL-paper-p053-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q9(d), typeset as the State Examinations Commission set it. It reads: D¹ E¹ D C E B A Note: |AB| ≅4∙0 cm |AC| ≅4∙6 cm |AD| ≅3∙5cm |AE| ≅2∙4 cm",
+  "solution": true
+ },
+ {
   "file": "maths-2022-OL-paper-p054-i0.png",
   "kind": "figure",
   "truncated": false,
@@ -2495,7 +2495,7 @@
   "file": "maths-2022-OL-paper-p057-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q10(c), typeset as the State Examinations Commission set it. It reads: Probability (Exactly one adult jogs): = 3[(0 ∙8)(0 ∙8)(0 ∙2)] = 0 ∙ 384 or (/125)",
+  "description": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q10(c), typeset as the State Examinations Commission set it. It reads: Probability (Exactly one adult jogs): = 3[(0 ∙8)(0 ∙8)(0 ∙2)] = 0 ∙ 384 or ( 48/125)",
   "solution": true
  },
  {
@@ -2579,14 +2579,14 @@
   "file": "maths-2023-HL-paper-p013-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: Method 1 (1 + i)² + (3 −2i)(1 + i) + p = 0 1 + 2i + i² + 3 + i−2(i)² + p = 0 5 + 3i + p = 0 p = −5 −3i Method 2 Let the second root = z₂ Sum of roots: 1 + i + z₂ = −3 + 2i z₂ = −4 + i Product of roots: (1 + i)(−4 + i) = p p = −5 −3i Method 3 z = (−(3−2i)±√(3−2i)²−4p)/2 2z 2z + = 3 −(3 − 2i − = 2i) ± (√(3 − − 4p)/(±√(3 − 2i)² − 4p) 2i)² [2z + 3 −2i]² = (3 −2i)²−4p z = 1 + i satisfies this equation [2(1 + i) + 3 −2i]² ",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: Method 1 (1 + i)² + (3 −2i)(1 + i) + p = 0 1 + 2i + i² + 3 + i−2(i)² + p = 0 5 + 3i + p = 0 p = −5 −3i Method 2 Let the second root = z₂ Sum of roots: 1 + i + z₂ = −3 + 2i z₂ = −4 + i Product of roots: (1 + i)(−4 + i) = p p = −5 −3i Method 3 z = (−(3−2i)±√(3−2i)²−4p)/2 2z = −(3 −2i) ± √(3 −2i)²−4p 2z + 3 −2i = ±√(3 −2i)²−4p [2z + 3 −2i]² = (3 −2i)²−4p z = 1 + i satisfies this equation [2(1 + i) + 3 −2i]² = (3 −2i)²−4",
   "solution": true
  },
  {
   "file": "maths-2023-HL-paper-p014-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q4(b), typeset as the State Examinations Commission set it. It reads: (b) (Reference Angle:)/^√³ tan^−¹ 𝜋 (b) Reference tan^−¹ Angle:/^√³ 𝜋 𝛼 = tan^−¹ ^√³/1 = 60° (/3 𝜋 rads) Argument: 𝜃 = 180⁰ − 60⁰ = 120⁰ (/3 2𝜋 rads) Modulus: r = √(−1)² + (√3) = √4 = 2 General Polar Form: 2 (cos (2𝜋/3 + 2n𝜋) + i sin (2𝜋/3 + 2n𝜋)) w² = 2 (cos (2𝜋/3 + 2n𝜋) + i sin (2𝜋/3 + 2n𝜋)) (2𝜋 (2𝜋 1/2 w = [2 (cos (2𝜋/3 + 2n𝜋) + i sin (2𝜋/3 + 2n𝜋))] 2 De Moivre: w = 1/(2 2) [(cos 1/2 (2𝜋/3 + 2n𝜋) + i sin 1/2 (2𝜋/3",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q4(b), typeset as the State Examinations Commission set it. It reads: (b) Reference tan^−¹ Angle:/^√³ 𝜋 𝛼 = tan^−¹ ^√³/1 = 60° ( 𝜋/3 rads) Argument: 𝜃 = 180⁰ − 60⁰ = 120⁰ ( 2𝜋/3 rads) Modulus: r = √(−1)² + (√3) = √4 = 2 General Polar Form: 2 (cos (2𝜋/3 + 2n𝜋) + i sin (2𝜋/3 + 2n𝜋)) w² = 2 (cos (2𝜋/3 + 2n𝜋) + i sin (2𝜋/3 + 2n𝜋)) (2𝜋 (2𝜋 1/2 w = [2 (cos (2𝜋/3 + 2n𝜋) + i sin (2𝜋/3 + 2n𝜋))] 2 De Moivre: w = 2 1 2 [(cos 1/2 (2𝜋/3 + 2n𝜋) + i sin 1/2 (2𝜋/3 + 2n𝜋))] = 2 1 2 [cos ( 𝜋/3 + n𝜋) + i",
   "solution": true
  },
  {
@@ -2635,7 +2635,7 @@
   "file": "maths-2023-HL-paper-p020-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q6(b), typeset as the State Examinations Commission set it. It reads: (b) [b (1/b e^b^x)] b 0 = e (e^b⁽_b^) −e^b⁽₀^)) = e e^b²−1 = e e^b² = e + 1 b² b = = (ln(e + 1))/(√ln(e + 1)) = 1 · 15 ….",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q6(b), typeset as the State Examinations Commission set it. It reads: (b) [b (1/b e^b^x)] b 0 = e (e^b⁽_b^) −e^b⁽₀^)) = e e^b²−1 = e e^b² = e + 1 b² = ln(e + 1) b = √ln(e + 1) = 1 · 15 ….",
   "solution": true
  },
  {
@@ -2656,7 +2656,7 @@
   "file": "maths-2023-HL-paper-p021-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q7(c), typeset as the State Examinations Commission set it. It reads: Maximum speed when v′(t) = 0 2t² − −(−12) 12t + 13 ± (= 0)/(√(−12)² − 4(2)(13)) 2(2) t = 4 · 58 or t = 1 · 42 Maximum at t = 1 ∙42 [as coefficient of t³ > 0 and domain of interest is [0, 4], with local min at t = 4 ∙58] OR [v′′(t) = 4t−12 v′′(1.42) < 0 ⇒maximum at t = 1.42] Mathematics – Higher Level",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q7(c), typeset as the State Examinations Commission set it. It reads: Maximum speed when v′(t) = 0 2t²−12t + 13 = 0 t = −(−12) ± √(−12)²−4(2)(13) 2(2) t = 4 · 58 or t = 1 · 42 Maximum at t = 1 ∙42 [as coefficient of t³ > 0 and domain of interest is [0, 4], with local min at t = 4 ∙58] OR [v′′(t) = 4t−12 v′′(1.42) < 0 ⇒maximum at t = 1.42] Mathematics – Higher Level",
   "solution": true
  },
  {
@@ -2684,7 +2684,7 @@
   "file": "maths-2023-HL-paper-p024-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q7(g), typeset as the State Examinations Commission set it. It reads: (g) (120 km/hr for 2 minutes:)/2 Distance = 120 × 2/60 = 4km 10 −4 = 6 km remaining to get to B Average Speed: 10/(total time) = 100 total time = 1/10 hrs = 6 minutes ⇒4 minutes remaining to get to B (Average speed for last 6 km:)/1 Avg Speed = 6 ÷ (/15) 1 = 90 km/hr (120 + v)/2 = 90, where v is the speed at B v = 60 km/hr Decelerates from 120 to 60 over 4 minutes. So, deceleration = 15 km/hr per minute OR Average sp",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q7(g), typeset as the State Examinations Commission set it. It reads: 120 km/hr for 2 minutes: Distance = 120 × 2/60 = 4km 10 −4 = 6 km remaining to get to B Average Speed: 10/(total time) = 100 total time = 1/10 hrs = 6 minutes ⇒4 minutes remaining to get to B Average speed for last 6 km: Avg Speed = 6 ÷ ( 1/15) = 90 km/hr (120 + v)/2 = 90, where v is the speed at B v = 60 km/hr Decelerates from 120 to 60 over 4 minutes. So, deceleration = 15 km/hr per minute OR Average speed for last",
   "solution": true
  },
  {
@@ -2712,7 +2712,7 @@
   "file": "maths-2023-HL-paper-p026-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q8(d)(i), typeset as the State Examinations Commission set it. It reads: A(1 · 0011)³⁶ + A(1 · 0011)³⁵ + ⋯ … + A(1 · 0011)² + A(1 · 0011) OR = A[(1 · 0011)³⁶ + (1 · 0011)³⁵ + ⋯ … + (1 · 0011)² + (1 · 0011)] A[1·0011 + (1 · 0011)² + ⋯ … + (1 · 0011)³⁵ + (1 · 0011)³⁶] a = 1 · 0011, r = 1 · 0011, n = 36 A [1 ]/(1 − 1 · 0011) = 12000 12000 A = 1 · 0011(1 −1 · 0011³⁶) 1 −1 · 0011 A = €326 · 60 [2 D.P.]",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q8(d)(i), typeset as the State Examinations Commission set it. It reads: A(1 · 0011)³⁶ + A(1 · 0011)³⁵ + ⋯ … + A(1 · 0011)² + A(1 · 0011) OR = A[(1 · 0011)³⁶ + (1 · 0011)³⁵ + ⋯ … + (1 · 0011)² + (1 · 0011)] A[1·0011 + (1 · 0011)² + ⋯ … + (1 · 0011)³⁵ + (1 · 0011)³⁶] a = 1 · 0011, r = 1 · 0011, n = 36 A [1/(1 − 1 · 0011) · 0011 (1 − 1 · 0011³⁶) ] = 12000 12000 A = 1 · 0011(1 −1 · 0011³⁶) 1 −1 · 0011 A = €326 · 60 [2 D.P.]",
   "solution": true
  },
  {
@@ -2747,14 +2747,14 @@
   "file": "maths-2023-HL-paper-p028-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q9(c)(i), typeset as the State Examinations Commission set it. It reads: (c)(i) Method 1 Derivative: y = 12/x dy/dx = − 12/x² dx(x = p) = − p² Equation at point (p, 12/p ): y − 12/p = − 12/p² (x − p) y = − 12/p² x + 24/p OR Method 2 Derivative: y = 12/x dy/dx = − 12/x² dy/dx (x = p) = − 12/p² Equation at point (p, 12/p ): Line is of the form y = − 12/p2 x + c 12/p = − 12/p2 (p) + c [/p 12 = − 12/p + c] c = 24/p OR Method 3 From the given equation the slope is − 12/p² dy/dx = − 12/x² dy/dx",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q9(c)(i), typeset as the State Examinations Commission set it. It reads: (c)(i) Method 1 Derivative: y = 12/x dy/dx = − 12/x² dx(x = p) = − p² Equation at point (p, 12/p ): y − 12/p = − 12/p² (x − p) y = − 12/p² x + 24/p OR Method 2 Derivative: y = 12/x dy/dx = − 12/x² dy/dx (x = p) = − 12/p² Equation at point (p, 12/p ): Line is of the form y = − 12/p2 x + c 12/p = − 12/p2 (p) + c [ 12/p = − 12/p + c] c = 24/p OR Method 3 From the given equation the slope is − 12/p² dy/dx = − 12/x² dy/dx",
   "solution": true
  },
  {
   "file": "maths-2023-HL-paper-p029-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q9(c)(ii), typeset as the State Examinations Commission set it. It reads: y-intercept: (c)(ii) y = − 12/p2 (0) + 24/p y = 24/p (0, )/p 24 height = 24/p x-intercept: 0 = − 12/p2 x + 24/p 12/p² x = 24/p 12/p x = 24 x = 2p (2p, 0) base = 2p Area = 1/2 (2p) ( )/p 24 = 24 units² OR x intercept (2p, 0) ∫ 0 2p (− 12/p² x + 24/p ) dx = (− 12x²/2p² + 24x/p ) 0 2p = −24 + 48 = 24 [units²] Mathematics – Higher Level",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q9(c)(ii), typeset as the State Examinations Commission set it. It reads: y-intercept: (c)(ii) y = − 12/p2 (0) + 24/p y = 24/p (0, 24/p ) height = 24/p x-intercept: 0 = − 12/p2 x + 24/p 12/p² x = 24/p 12/p x = 24 x = 2p (2p, 0) base = 2p Area = 1/2 (2p) ( 24/p ) = 24 units² OR x intercept (2p, 0) ∫ 0 2p (− 12/p² x + 24/p ) dx = (− 12x²/2p² + 24x/p ) 0 2p = −24 + 48 = 24 [units²] Mathematics – Higher Level",
   "solution": true
  },
  {
@@ -2775,7 +2775,7 @@
   "file": "maths-2023-HL-paper-p031-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q10(c), typeset as the State Examinations Commission set it. It reads: Method 1 T₄ = 8/4 [/4 2 + 4/4 + 6/4 + 8/4] Similarly, Tₙ = 8/n [/n 2 + 4/n + ⋯ + ]/n 2n n²[2 + 4 + 6 + ⋯+ 2n] = 2 + 4 + ⋯+ 2n is an A.P. with a = 2 and d = 2 and n terms Sₙ = n/2 [2(2) + (n − 1)(2)] = n(n + 1) Tₙ = 8/n² [n(n + 1)] = 8/n (n + 1) or equivalent Method 2 Total area = area of given triangle plus sum of areas of small triangles. h = 8/n 2n small triangles Base of each small ∆= 2/2n = 1/n Area of small ∆′s ",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q10(c), typeset as the State Examinations Commission set it. It reads: Method 1 T₄ = 8/4 [ 2/4 + 4/4 + 6/4 + 8/4] Similarly, Tₙ = 8/n [ 2/n + 4/n + ⋯ + 2n/n ] n²[2 + 4 + 6 + ⋯+ 2n] = 2 + 4 + ⋯+ 2n is an A.P. with a = 2 and d = 2 and n terms Sₙ = n/2 [2(2) + (n − 1)(2)] = n(n + 1) Tₙ = 8/n² [n(n + 1)] = 8/n (n + 1) or equivalent Method 2 Total area = area of given triangle plus sum of areas of small triangles. h = 8/n 2n small triangles Base of each small ∆= 2/2n = 1/n Area of small ∆′s ",
   "solution": true
  },
  {
@@ -2789,7 +2789,7 @@
   "file": "maths-2023-HL-paper-p032-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q10(e)(i), typeset as the State Examinations Commission set it. It reads: ℎ ℎ (e) (i) ∫ (x² c²)/h² dx = c²/h² ∫ x²dx = c²/h² [x³ ]/3 h 0 = c²/h² [h³/3 − 0] = c²h/3 Mathematics – Higher Level",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q10(e)(i), typeset as the State Examinations Commission set it. It reads: ℎ ℎ (e) (i) ∫ (x² c²)/h² dx = c²/h² ∫ x²dx = c²/h² [x³/3 ] h 0 = c²/h² [h³/3 − 0] = c²h/3 Mathematics – Higher Level",
   "solution": true
  },
  {
@@ -2803,7 +2803,7 @@
   "file": "maths-2023-HL-paper-p038-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q1(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. (a) P(€6, €9, €6) = [/12 5 × 3/12 × 5/12] = 75/1728 = 25/576 = 0 · 04340…. = 0 · 0434 [4 d.p.]",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q1(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. (a) P(€6, €9, €6) = [ 5/12 × 3/12 × 5/12] = 75/1728 = 25/576 = 0 · 04340…. = 0 · 0434 [4 d.p.]",
   "solution": true
  },
  {
@@ -2824,14 +2824,21 @@
   "file": "maths-2023-HL-paper-p040-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q2(a), typeset as the State Examinations Commission set it. It reads: cos(A−B) = cos Acos B + sin Asin B Replace A with 90 −A: cos(90 −A−B) = cos(90 −A) cos B + sin(90 −A) sin B ….as sin A = cos(90 −A) cos(90 −(A + B)) = sin Acos B + cos Asin B sin(A + B) = sin Acos B + cos Asin B sin A = cos(90 −A) sin(A + B) = cos(90 −(A + B)) = cos((90 −A) −B) = cos(90 −A) cos B + sin(90 −A) sin B … by cos (A−B) formula = sin Acos B + cos Asin B Scale 10C (0, 4, 7, 10) Low Partial Credit: • Work of ",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q2(a), typeset as the State Examinations Commission set it. It reads: cos(A−B) = cos Acos B + sin Asin B Replace A with 90 −A: cos(90 −A−B) = cos(90 −A) cos B + sin(90 −A) sin B ….as sin A = cos(90 −A) cos(90 −(A + B)) = sin Acos B + cos Asin B sin(A + B) = sin Acos B + cos Asin B sin A = cos(90 −A) sin(A + B) = cos(90 −(A + B)) = cos((90 −A) −B) = cos(90 −A) cos B + sin(90 −A) sin B … by cos (A−B) formula = sin Acos B + cos Asin B",
+  "solution": true
+ },
+ {
+  "file": "maths-2023-HL-paper-p040-i1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q2(b), typeset as the State Examinations Commission set it. It reads: sin(30 + 45) = sin 30 cos 45 1 1 + cos 30/√3 sin 1 45 sin 75 = 1/2 ( 1/√2 )/√2 + √3/2 ( 1/√2 )/√2 sin 75 = 1/2√2 + √3/2√2 = (1 + √3)/2√2 √3/2√2 = (√2 + √6)/4 Mathematics – Higher Level",
   "solution": true
  },
  {
   "file": "maths-2023-HL-paper-p041-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q2(c), typeset as the State Examinations Commission set it. It reads: Method 1 sin t[1 − 2 cos t] = 0 sin t = 0 and 1 −2 cos t = 0 sin t = 0 when t = 0°, 180° and 360° 1 −2 cos t = 0 cos t = 1/2 cos t = 1/2 when t = 60° and t = 300° t = 0°, 60°, 180°, 300° and 360° OR sin2t−sint = 0 2 sint 2cos3t 2 = 0 cos 3t/2 = 0 t = 60°, 180° and 300° sin t/2 = 0 t = 0° and 360° OR Method 2 Trial & Improvement: t = 0 sin 0 = sin(2(0)) 0 = 0 t = 60 sin/√3 60 = /√3 sin(2(60)) √3/2 = √3/2 t = 180 sin 1",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q2(c), typeset as the State Examinations Commission set it. It reads: Method 1 sin t[1 − 2 cos t] = 0 sin t = 0 and 1 −2 cos t = 0 sin t = 0 when t = 0°, 180° and 360° 1 −2 cos t = 0 cos t = 1/2 cos t = 1/2 when t = 60° and t = 300° t = 0°, 60°, 180°, 300° and 360° OR sin2t−sint = 0 2 sint 2cos3t 2 = 0 cos 3t/2 = 0 t = 60°, 180° and 300° sin t/2 = 0 t = 0° and 360° OR Method 2 Trial & Improvement: t = 0 sin 0 = sin(2(0)) 0 = 0 t = 60 sin 60 = sin(2(60)) √3/2 = √3/2 t = 180 sin 180 = si",
   "solution": true
  },
  {
@@ -2859,14 +2866,14 @@
   "file": "maths-2023-HL-paper-p045-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q4(ii), typeset as the State Examinations Commission set it. It reads: (ii) (|h − 4(−3) + 7|)/(√(1)² + (−4)²) (− 4(−3) + 7|)/(√(1)² + (−4)²) = 5 |h + 19| = 5√17 h + 19 = 5√17 or h + 19 = −5√17 h = 5√17 −19 or h = −5√17 −19 OR (h + 19)² = 425 h² + 38h−64 = 0 h = 5√17 −19 or h = −5√17 −19 Mathematics – Higher Level",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q4(a)(i), typeset as the State Examinations Commission set it. It reads: Centre = (h, −3) Radius = √12 or 2√3",
   "solution": true
  },
  {
   "file": "maths-2023-HL-paper-p045-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q4(a)(i), typeset as the State Examinations Commission set it. It reads: Centre = (h, −3) Radius = √12 or 2√3",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: (ii) (|h − 4(−3) + 7|)/(√(1)² + (−4)²) = 5 |h + 19| = 5√17 h + 19 = 5√17 or h + 19 = −5√17 h = 5√17 −19 or h = −5√17 −19 OR (h + 19)² = 425 h² + 38h−64 = 0 h = 5√17 −19 or h = −5√17 −19 Mathematics – Higher Level",
   "solution": true
  },
  {
@@ -2929,7 +2936,7 @@
   "file": "maths-2023-HL-paper-p051-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(c), typeset as the State Examinations Commission set it. It reads: (c) Range = 2 ± 0 · 4 a = 1 · 6b = 2 · 4 OR V′(t) = −0 · 4 [(− sin 𝜋/2 t) (/2)] 𝜋 =0 sin 𝜋/2 t = 0 𝜋/2 t = 0 or 𝜋/2 t = 𝜋 t = 0 or t = 2 V(0) = 1.6V(2) = 2.4 a = 1 · 6b = 2 · 4 (d) If V′(t) > 0 then the volume of air is increasing so she is breathing in. If V′(t) < 0 then the volume of air is decreasing so she is breathing out. (e) (i) V(0 · 5) = 2 − 0 · 4 cos 𝜋/2 (0 · 5)",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(c), typeset as the State Examinations Commission set it. It reads: (c) Range = 2 ± 0 · 4 a = 1 · 6b = 2 · 4 OR V′(t) = −0 · 4 [(− sin 𝜋/2 t) ( 𝜋/2)] = 0 sin 𝜋/2 t = 0 𝜋/2 t = 0 or 𝜋/2 t = 𝜋 t = 0 or t = 2 V(0) = 1.6V(2) = 2.4 a = 1 · 6b = 2 · 4 (d) If V′(t) > 0 then the volume of air is increasing so she is breathing in. If V′(t) < 0 then the volume of air is decreasing so she is breathing out. (e) (i) V(0 · 5) = 2 − 0 · 4 cos 𝜋/2 (0 · 5)",
   "solution": true
  },
  {
@@ -2943,7 +2950,7 @@
   "file": "maths-2023-HL-paper-p051-i2.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(e)(ii), typeset as the State Examinations Commission set it. It reads: (e) (ii) V′(t) = −0 · 4 [(− sin 𝜋/2 t) (/2)] 𝜋 V′(0 · 5) = 0 · 4 (𝜋/2) [sin 𝜋/2 (0 · 5)] = 0 · 4442.. = 0 · 444 litres/sec [3 d.p.] Mathematics – Higher Level",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(e)(ii), typeset as the State Examinations Commission set it. It reads: (e) (ii) V′(t) = −0 · 4 [(− sin 𝜋/2 t) ( 𝜋/2)] V′(0 · 5) = 0 · 4 (𝜋/2) [sin 𝜋/2 (0 · 5)] = 0 · 4442.. = 0 · 444 litres/sec [3 d.p.] Mathematics – Higher Level",
   "solution": true
  },
  {
@@ -2954,17 +2961,24 @@
   "solution": true
  },
  {
-  "file": "maths-2023-HL-paper-p054-i0.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q8(ii), typeset as the State Examinations Commission set it. It reads: H₀: 𝜇= 3 · 87 H₁: 𝜇≠3 · 87 We reject null hypothesis. Galway players do take a different average number of attempts. Confidence Interval: 3 · 6518 ≤ 𝜇≤3 · 8282 3 · 87 is NOT within the confidence interval OR 3·74−3·87 Test statistic: z = 0·36/√64 0·36/√64 = −2 · 89 −2 · 89 < −1 · 96 so test statistic is in the critical zone of rejection OR 3·74−3·87 Test statistic: z = 0·36/√64 0·36/√64 = −2 · 89 P(z ≤ −2 · 89) = 0 ·",
-  "solution": true
- },
- {
   "file": "maths-2023-HL-paper-p053-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q8(a), typeset as the State Examinations Commission set it. It reads: (a) z = (x − 𝜇)/𝜎 = (3 · 5 − 3 · 87)/(0 · 36) = −1 · 03 P(x < 3 · 5) = P(z < −1 · 03) = 1 −P(z < 1 · 03) = 1 −0 · 8485 = 0 · 1515 (b) (i) x̅ ± 1 · 96 𝜎/√n 𝜎/√n 3 · 74 − 1 · 96 (0 (· 36)/√64 ) = 3 · 6518 3 · 74 + 1 · 96 (0 (· 36)/√64 ) = 3 · 8282 C.I. : 3 · 6518 ≤ 𝜇≤3 · 8282 Mathematics – Higher Level",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q8(a), typeset as the State Examinations Commission set it. It reads: (a) z = (x − 𝜇)/𝜎 = (3 · 5 − 3 · 87)/(0 · 36) = −1 · 03 P(x < 3 · 5) = P(z < −1 · 03) = 1 −P(z < 1 · 03) = 1 −0 · 8485 = 0 · 1515 (b) (i) x̅ ± 1 · 96 𝜎/√n 𝜎/√n",
+  "solution": true
+ },
+ {
+  "file": "maths-2023-HL-paper-p053-i1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q8(b)(i), typeset as the State Examinations Commission set it. It reads: (b) (i) x̅ ± 1 · 96 𝜎/√n 𝜎/√n 3 · 74 − 1 · 96 (0 (· 36)/√64 ) = 3 · 6518 3 · 74 + 1 · 96 (0 (· 36)/√64 ) = 3 · 8282 C.I. : 3 · 6518 ≤ 𝜇≤3 · 8282 Mathematics – Higher Level",
+  "solution": true
+ },
+ {
+  "file": "maths-2023-HL-paper-p054-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q8(b)(ii), typeset as the State Examinations Commission set it. It reads: H₀: 𝜇= 3 · 87 H₁: 𝜇≠3 · 87 We reject null hypothesis. Galway players do take a different average number of attempts. Confidence Interval: 3 · 6518 ≤ 𝜇≤3 · 8282 3 · 87 is NOT within the confidence interval OR 3·74−3·87 Test statistic: z = 0·36/√64 0·36/√64 = −2 · 89 −2 · 89 < −1 · 96 so test statistic is in the critical zone of rejection OR 3·74−3·87 Test statistic: z = 0·36/√64 0·36/√64 = −2 · 89 P(z ≤ −2 · 89) = 0 ·",
   "solution": true
  },
  {
@@ -2972,6 +2986,13 @@
   "kind": "figure",
   "truncated": false,
   "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q8(c), typeset as the State Examinations Commission set it.",
+  "solution": true
+ },
+ {
+  "file": "maths-2023-HL-paper-p056-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q8(d)(i), typeset as the State Examinations Commission set it. It reads: 1st June WIN 0·9 0·8 PLAY 360 000 0·1 0· 2 LOSE 0·25",
   "solution": true
  },
  {
@@ -2992,7 +3013,7 @@
   "file": "maths-2023-HL-paper-p059-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) (ii) Hexagon: 140/6 area of one triangle 1/2 x² sin 60 = 140/6 x² = 140/(3sin 60) x = √ 3sin 140 60 = √ 280/3√3 280/3√3 x = 7 · 34 … = 7.3 [cm] [1 d.p.] OR Hexagon: 140/6 area of one triangle Let h = perpendicular height of one triangle h² + (1/2 x) 2 = x² h² = 3/4 x² h = √3/2 x 1/2 × x × √3/2 x = 140/6 x² = 280/3√3 x = 7.34 … . = 7.3 [cm] [1 d.p.] OR Total Area = area of two identical trapeziums 140 = 2 ( )/2 x ",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) (ii) Hexagon: 140/6 area of one triangle 1/2 x² sin 60 = 140/6 x² = 140/(3sin 60) x = √ 3sin 140 60 = √ 280/3√3 280/3√3 x = 7 · 34 … = 7.3 [cm] [1 d.p.] OR Hexagon: 140/6 area of one triangle Let h = perpendicular height of one triangle h² + (1/2 x) 2 = x² h² = 3/4 x² h = √3/2 x 1/2 × x × √3/2 x = 140/6 x² = 280/3√3 x = 7.34 … . = 7.3 [cm] [1 d.p.] OR Total Area = area of two identical trapeziums 140 = 2 ( (x + 2",
   "solution": true
  },
  {
@@ -3006,7 +3027,7 @@
   "file": "maths-2023-HL-paper-p060-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q9(b)(ii), typeset as the State Examinations Commission set it. It reads: (b) (ii) cos 𝛼 = 8/|AC| = 7/8 so |AC| = 64/7 (|AC| 8)/2 64 8√15 7 |CD| = √( )/7 64 2 − 8² = 8√15/7 Area = 2 [/2 1 (8) (/7 8√15 )] = 64√15/7 = 35.410… =35.41 cm² [2 d.p.] OR 𝛼= 28 · 955° |AC| = 64/7 Area = 2 [/2 1 (8) ( )/7 64 sin 28 · 96] = 35 · 410.. = 35.41 cm² [2 d.p.], OR 𝛼= 28 · 955° tan 28.955 = |CD|/8 |CD| = 4.426 Area = 2[ 1/2 × 8 × 4.426] = 35.410 … = 35.41 cm² [2 d.p.] Mathematics – Higher Level",
+  "description": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q9(b)(ii), typeset as the State Examinations Commission set it. It reads: (b) (ii) cos 𝛼 = 8/|AC| = 7/8 so |AC| = 64/7 (|AC| 8)/2 64 8√15 7 |CD| = √( 64/7 ) 2 − 8² = 8√15/7 Area = 2 [ 1/2 (8) ( 8√15/7 )] = 64√15/7 = 35.410… =35.41 cm² [2 d.p.] OR 𝛼= 28 · 955° |AC| = 64/7 Area = 2 [ 1/2 (8) ( 64/7 ) sin 28 · 96] = 35 · 410.. = 35.41 cm² [2 d.p.], OR 𝛼= 28 · 955° tan 28.955 = |CD|/8 |CD| = 4.426 Area = 2[ 1/2 × 8 × 4.426] = 35.410 … = 35.41 cm² [2 d.p.] Mathematics – Higher Level",
   "solution": true
  },
  {
@@ -3216,7 +3237,7 @@
   "file": "maths-2023-OL-paper-p017-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q6(c), typeset as the State Examinations Commission set it. It reads: Q6 (c) Model Solution – −6 30 ∓ Marks/(√6² − 4(9)(−5)) (c) x = (−6 ∓ √6² − 4(9)(−5))/18 x = 0 ∙483 and x = −1 ∙149 x = 0 ∙48 and x = −1 ∙15 Mathematics – Ordinary Level",
+  "description": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q6(c), typeset as the State Examinations Commission set it. It reads: (c) x = (−6 ∓ √6² − 4(9)(−5))/18 x = 0 ∙483 and x = −1 ∙149 x = 0 ∙48 and x = −1 ∙15 Mathematics – Ordinary Level",
   "solution": true
  },
  {
@@ -3412,7 +3433,7 @@
   "file": "maths-2023-OL-paper-p030-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q1(a)(ii), typeset as the State Examinations Commission set it. It reads: (ii) Distance = (of (4,2) to (1,8))/(√(x₂ − x₁)² + (y₂ − y₁)²) = √(1 −4)² + (8 −2)² = √(−3)² + (6)² = √9 + 36 = √45 or 3√5 or (6 ∙7. . . . ) Mathematics – Ordinary Level",
+  "description": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q1(a)(ii), typeset as the State Examinations Commission set it. It reads: Distance of (4,2) to (1,8) = √(x₂−x₁)² + (y₂−y₁)² = √(1 −4)² + (8 −2)² = √(−3)² + (6)² = √9 + 36 = √45 or 3√5 or (6 ∙7. . . . ) Mathematics – Ordinary Level",
   "solution": true
  },
  {
@@ -3433,7 +3454,7 @@
   "file": "maths-2023-OL-paper-p033-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q2(a)(i), typeset as the State Examinations Commission set it. It reads: Centre = (0 , 0) Radius = 5 & (3)² + (−4)² = 25 9 + 16 = 25 ⟹ On the circle Distance from/(√(3 − 0)² + (−4 − 0)²) (0,0) to (3, −4) = 5 = radius ⟹on circle",
+  "description": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q2(a)(i), typeset as the State Examinations Commission set it. It reads: Centre = (0 , 0) Radius = 5 & (3)² + (−4)² = 25 9 + 16 = 25 ⟹ On the circle Distance from (0,0) to (3, −4) √(3 −0)² + (−4 −0)² = 5 = radius ⟹on circle",
   "solution": true
  },
  {
@@ -3489,7 +3510,7 @@
   "file": "maths-2023-OL-paper-p037-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: S . S . F = (0 ∙7)(0 ∙7)(0 ∙3) = 0 ∙147 Three arrangements 0 ∙ 147 × 3 = 0 ∙ 441 (/1000)",
+  "description": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: S . S . F = (0 ∙7)(0 ∙7)(0 ∙3) = 0 ∙147 Three arrangements 0 ∙ 147 × 3 = 0 ∙ 441 ( 441/1000)",
   "solution": true
  },
  {
@@ -3594,7 +3615,7 @@
   "file": "maths-2023-OL-paper-p045-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q7(c), typeset as the State Examinations Commission set it. It reads: 550² = 700² + 800²-2(700)(800)Cos X Cos X = (700² + 800² − 550²)/2(700)(800) Cos X = (490000 + 640000 − 302500)/2(700)(800) cos X = (/1120000) ∠X = Cos^−¹ (331/448) ∠X = Cos^(−1)0 ∙738839 ∠X = 42 ∙4^[^o^] Mathematics – Ordinary Level",
+  "description": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q7(c), typeset as the State Examinations Commission set it. It reads: 550² = 700² + 800²-2(700)(800)Cos X Cos X = (700² + 800² − 550²)/2(700)(800) Cos X = (490000 + 640000 − 302500)/2(700)(800) cos X = ( 827500/1120000) ∠X = Cos^−¹ (331/448) ∠X = Cos^(−1)0 ∙738839 ∠X = 42 ∙4^[^o^] Mathematics – Ordinary Level",
   "solution": true
  },
  {
@@ -3853,7 +3874,7 @@
   "file": "maths-2024-HL-paper-p015-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (b) (ii) ln Method/√xx = 3·5 1 ... LPC ln/√xx √xx = = ee³^·⁵ 3·5 ... ... HPC LPC x = (e^(3·5))² = e⁷ ln Method/√xx = 3·5 2 ... LPC 1/2 ln xx = 3·5 ... HPC ln x = 7 x = e⁷",
+  "description": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: Method 1 ... LPC ln √x = 3·5 ... HPC √x = e^(3·5) x = (e^(3·5))² = e⁷ Method 2 ... LPC ln √x = 3·5 1/2 ln xx = 3·5 ... HPC ln x = 7 x = e⁷",
   "solution": true
  },
  {
@@ -3896,6 +3917,13 @@
   "kind": "figure",
   "truncated": false,
   "description": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q7(c)(iii), typeset as the State Examinations Commission set it. It reads: e^(0·04) = 1 · 04081… AER = 4 · 08% [2DP] OR F(0) = 5000e^(0.04(0)) = 5000 F(1) = 5000e^(0.04(1)) = 5204.053 … F(1) −F(0) = 204.053 … AER = (204.053 …)/5000 × 100 = 4 ∙08% [2DP] OR (5204 ∙ 053 …)/5000 = 1 ∙ 04081 … AER = 4 · 08% [2DP] Mathematics, Higher Level",
+  "solution": true
+ },
+ {
+  "file": "maths-2024-HL-paper-p020-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q8(a)(i), typeset as the State Examinations Commission set it. It reads: 120 180 240 300 360 T(x) 6",
   "solution": true
  },
  {
@@ -3958,7 +3986,7 @@
   "file": "maths-2024-HL-paper-p024-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: S = 𝜋√r² + h² SS/𝜋𝜋𝜋𝜋 = √rr² + h² SS²/𝜋𝜋²rr² = rr² + h² SS²/𝜋𝜋²rr² − rr² = h² (SS² − 𝜋𝜋²rr⁴)/𝜋𝜋²rr² = h² √S²−𝜋²r⁴ = h 𝜋𝜋²rr²/(√SS² − 𝜋𝜋²rr⁴) (√SS² − 𝜋𝜋²rr⁴)/𝜋𝜋𝜋𝜋 = h Mathematics, Higher Level",
+  "description": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: S = 𝜋√r² + h² SS/𝜋𝜋𝜋𝜋 = √rr² + h² SS²/𝜋𝜋²rr² = rr² + h² SS²/𝜋𝜋²rr² − rr² = h² (SS² − 𝜋𝜋²rr⁴)/𝜋𝜋²rr² = h² √S²−𝜋²r⁴ = h 𝜋²r² (√SS² − 𝜋𝜋²rr⁴)/𝜋𝜋𝜋𝜋 = h Mathematics, Higher Level",
   "solution": true
  },
  {
@@ -4056,14 +4084,14 @@
   "file": "maths-2024-HL-paper-p033-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(b), typeset as the State Examinations Commission set it. It reads: (b) Reference/√3 angle in 1st and 4^t^h quadrants cos−1 √3/2 = 30° or 330° 2X = 30°, 330°, 390°, 690° X = 15°, 165°, 195°, 345°",
+  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(b), typeset as the State Examinations Commission set it. It reads: Reference angle in 1st and 4th quadrants cos−1 √3/2 = 30° or 330° 2X = 30°, 330°, 390°, 690° X = 15°, 165°, 195°, 345°",
   "solution": true
  },
  {
   "file": "maths-2024-HL-paper-p033-i2.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(c), typeset as the State Examinations Commission set it. It reads: (c) (sin 𝜃𝜃)/45 = (sin 25)/15√3 25/15√3 sin 𝜃𝜃 = 45(0.4226)/15√3 45(0.4226)/15√3 = 0.73196 sin 𝜃= 0.73196 … 47.05° angle in 1st and 2nd quadrants 𝜃= 47.05° or 𝜃= 132.95° 𝜃= 47° or 𝜃= 133° [nearest degree] Mathematics – Higher Level",
+  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(c), typeset as the State Examinations Commission set it. It reads: (c) (sin 𝜃𝜃)/45 = (sin 25)/15√3 sin 𝜃𝜃 = 45(0.4226)/15√3 = 0.73196 sin 𝜃= 0.73196 … 47.05° angle in 1st and 2nd quadrants 𝜃= 47.05° or 𝜃= 132.95° 𝜃= 47° or 𝜃= 133° [nearest degree] Mathematics – Higher Level",
   "solution": true
  },
  {
@@ -4091,14 +4119,14 @@
   "file": "maths-2024-HL-paper-p035-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q5(a)(ii), typeset as the State Examinations Commission set it. It reads: Centre of c = (2, −1) Radius of c = √72 = 6√2 = (Distance between centres)/(√(2 − (−2))² + (−1 − 3)²) = = (√(2 −)/(√16 + 16) (−2))² + (−1 − 3)² = = √16/4√2 + 16 = Difference/6√2 − between/2√2 radii = = 6√2/4√2 − 2√2 4√2 = 4√2 Therefore, circles touch internally Mathematics – Higher Level",
+  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q5(a)(ii), typeset as the State Examinations Commission set it. It reads: Centre of c = (2, −1) Radius of c = √72 = 6√2 Distance between centres = √(2 −(−2))² + (−1 −3)² = √16 + 16 = 4√2 Difference between radii = 6√2 −2√2 = 4√2 4√2 = 4√2 Therefore, circles touch internally Mathematics – Higher Level",
   "solution": true
  },
  {
   "file": "maths-2024-HL-paper-p036-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q5(b), typeset as the State Examinations Commission set it. It reads: Q5 Model Solution – 30 Marks Centre = (9, k) So distance from (7,10) to (9, k) = distance from (12,8) to (9, kk)/(√(9 − 7)² + (kk − 10)²) = √(12 − 9)² + (8 − kk)² 4 + k² −20k + 100 = 9 + 64 −16k + k² 4k = 31 kk = 31/4 So, centre = (9, 31/4 ) Radius = √(9 − 7)² + ( 31/4 − 10) 2 = √145/4 Eqn: (xx − 9)² + (yy − 31/4 ) 2 = 145/16 OR Centre = (−g, −f) = (9, k) ∴ g = −9 … E A (7,10): 7² + 10² + 2g(7) + 2f(10) + c = 0 … E B",
+  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q5(b), typeset as the State Examinations Commission set it. It reads: Q5 Model Solution – 30 Marks Centre = (9, k) So distance from (7,10) to (9, k) = distance from (12,8) to (9, k) √(9 −7)² + (k−10)² = √(12 −9)² + (8 −k)² 4 + k² −20k + 100 = 9 + 64 −16k + k² 4k = 31 kk = 31/4 So, centre = (9, 31/4 ) Radius = √(9 − 7)² + ( 31/4 − 10) 2 = √145/4 Eqn: (xx − 9)² + (yy − 31/4 ) 2 = 145/16 OR Centre = (−g, −f) = (9, k) ∴ g = −9 … E A (7,10): 7² + 10² + 2g(7) + 2f(10) + c = 0 … E B So: 20f +",
   "solution": true
  },
  {
@@ -4154,7 +4182,7 @@
   "file": "maths-2024-HL-paper-p041-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q7(d), typeset as the State Examinations Commission set it. It reads: Null Hypothesis: p = 0·75 or similar (for example, “in 2024, PK Hotels were rated the best hotel chain in Europe by 75% of their customers”) Alternative Hypothesis: P ≠ 0·75 or similar Calculations: Conf Int: 0·765 ± 1/√1000 1/√1000 = 0∙765 ± 0∙0316… So 0∙7334 < p < 0∙7966 Conclusion: Fail to reject H₀ or there is not enough evidence to conclude that this percentage has changed. Accept: the percentage has not changed",
+  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q7(d), typeset as the State Examinations Commission set it. It reads: Null Hypothesis: p = 0·75 or similar (for example, “in 2024, PK Hotels were rated the best hotel chain in Europe by 75% of their customers”) Alternative Hypothesis: P ≠ 0·75 or similar Calculations: Conf Int: 0·765 ± 1/√1000 = 0∙765 ± 0∙0316… So 0∙7334 < p < 0∙7966 Conclusion: Fail to reject H₀ or there is not enough evidence to conclude that this percentage has changed. Accept: the percentage has not changed, or sim",
   "solution": true
  },
  {
@@ -4203,7 +4231,7 @@
   "file": "maths-2024-HL-paper-p045-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (a−1)² + (8 −17)² = 144 (a)(ii) (aa aa − − 1 1)² = (= 63)/√63 (as aa > 0) = 1 + √63",
+  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (a−1)² + (8 −17)² = 144 (a)(ii) (a−1)² = 63 a−1 = √63 (as a > 0) = 1 + √63",
   "solution": true
  },
  {
@@ -4231,7 +4259,7 @@
   "file": "maths-2024-HL-paper-p047-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q9(d), typeset as the State Examinations Commission set it. It reads: y² + (3y)² = (12)² 10y² = 144 xx yy = = 9 √14∙4 + (= 3∙8)/3√14∙4 = … 20∙4 … 3yy (20∙4, 3∙8) [1 DP] OR x² = 3² + 1² xx² xx = = 10/√10 3 1200m = 12 units Factor increase = 12/√10 12/√10 = 3 ∙ 794.. x = 3 × 3 ∙794 + 9 = 20.38.. y = 3.794.. (20∙4, 3∙8) [1 DP] OR Slope of line ww = 1/3 Angle between line w and the x−a = tan^−¹ ¹/3 = 18.435 Then, sin 18.435 = yy/12 y = 3.794 … x = 3.794 × 3 + 9 = 20.384 …. (20∙4, 3∙8) [1 D",
+  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q9(d), typeset as the State Examinations Commission set it. It reads: y² + (3y)² = (12)² 10y² = 144 3y y = √14∙4 = 3∙8 … x = 9 + 3√14∙4 = 20∙4 … (20∙4, 3∙8) [1 DP] OR x² = 3² + 1² x² = 10 x = √10 1200m = 12 units Factor increase = 12/√10 = 3 ∙ 794.. x = 3 × 3 ∙794 + 9 = 20.38.. y = 3.794.. (20∙4, 3∙8) [1 DP] OR Slope of line ww = 1/3 Angle between line w and the x−a = tan^−¹ ¹/3 = 18.435 Then, sin 18.435 = yy/12 y = 3.794 … x = 3.794 × 3 + 9 = 20.384 …. (20∙4, 3∙8) [1 DP] Mathematics –",
   "solution": true
  },
  {
@@ -4259,7 +4287,7 @@
   "file": "maths-2024-HL-paper-p049-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: Method 1: 180² = x² + x² −2x² cos 105 180² = x²(2 −2 cos 105) xx = 180/(√2 − 2 cos 105) 180/(√2 − 2 cos 105) = 113.44 … = 113∙4 [cm] [1 DP] OR Method 2: |∠OOOO′EE| = (180 − 105)/2 = 37·5° x² = x² + 180² −2(x)(180) cos 37·5 2(x)(180) cos 37·5 = 180² xx = 32400/(360 cos 37·5) = 113.44… = 113∙4 [cm] [1 DP]",
+  "description": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: Method 1: 180² = x² + x² −2x² cos 105 180² = x²(2 −2 cos 105) xx = 180/(√2 − 2 cos 105) = 113.44 … = 113∙4 [cm] [1 DP] OR Method 2: |∠OOOO′EE| = (180 − 105)/2 = 37·5° x² = x² + 180² −2(x)(180) cos 37·5 2(x)(180) cos 37·5 = 180² xx = 32400/(360 cos 37·5) = 113.44… = 113∙4 [cm] [1 DP]",
   "solution": true
  },
  {
@@ -4623,7 +4651,7 @@
   "file": "maths-2024-OL-paper-p030-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: (9 −5)² + (2 + 3)² > 25 16 + 25 > 25 ⟹ outside the circle OR Distance (from (5, −3) tttt (9, 2))/(√(9 − 5)² + (2 − −3)²) √(9 − = 5)² (+)/√41 (2 > 5 − −3)² ⟹ outside the circle",
+  "description": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: (9 −5)² + (2 + 3)² > 25 16 + 25 > 25 ⟹ outside the circle OR Distance (from (5, −3) tttt (9, 2))/(√(9 − 5)² + (2 − −3)²) = √41 > 5 ⟹ outside the circle",
   "solution": true
  },
  {
@@ -4714,7 +4742,7 @@
   "file": "maths-2024-OL-paper-p036-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q7(b)(i), typeset as the State Examinations Commission set it. It reads: Margin of error (i) 1/√nn 1/√nn = 1/√355 1/√355 = 0 ∙05307 = 5 ∙3 [%]",
+  "description": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q7(b)(i), typeset as the State Examinations Commission set it. It reads: Margin of error (i) 1/√nn = 1/√355 = 0 ∙05307 = 5 ∙3 [%]",
   "solution": true
  },
  {
@@ -4728,14 +4756,14 @@
   "file": "maths-2024-OL-paper-p037-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q7(b)(iii), typeset as the State Examinations Commission set it. It reads: (iii) pp̂ ± 1/√nn 1/√nn 27 −5 ∙3 ≤ p ≤ 27 + 5 ∙3 21 ∙7 ≤ p ≤ 32 ∙3 Conclusion: No change to the population percentage Reason: 24% is inside the range found. Within the CI.",
+  "description": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q7(b)(iii), typeset as the State Examinations Commission set it. It reads: (iii) pp̂ ± 1/√nn 27 −5 ∙3 ≤ p ≤ 27 + 5 ∙3 21 ∙7 ≤ p ≤ 32 ∙3 Conclusion: No change to the population percentage Reason: 24% is inside the range found. Within the CI.",
   "solution": true
  },
  {
   "file": "maths-2024-OL-paper-p038-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q8(a)(i), typeset as the State Examinations Commission set it. It reads: l² = 1 ∙4² + 3² ll² ll = = (10 ∙ 96)/(√10 ∙ 96) l = 3 ∙31058 … l = 3 ∙3 [m]",
+  "description": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q8(a)(i), typeset as the State Examinations Commission set it. It reads: l² = 1 ∙4² + 3² l² = 10 ∙96 l = √10 ∙96 l = 3 ∙31058 … l = 3 ∙3 [m]",
   "solution": true
  },
  {
@@ -4861,7 +4889,7 @@
   "file": "maths-2025-HL-paper-p007-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q1(b), typeset as the State Examinations Commission set it. It reads: Method 1 (4x−10√x)(2x + 5√x−7) = 4xx(2xx + 5√xx/(−10√xx(2xx) − 7) + 5√xx − 7) = 8xx² (+)/(−20xx√xx) 20xx√xx − 50xx + − 70√xx 28xx = 8x² −78x + 70√x Method 2 Let y = √x 4y²(2y² + 5y−7) −10y(2y² + 5y−7) = 8y⁴ + 20y³ −28y² −20y³ −50y² + 70y = = 8yy⁴ 8xx² − − 78xx 78yy² + + 70yy/70√xx",
+  "description": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q1(b), typeset as the State Examinations Commission set it. It reads: Method 1 (4x−10√x)(2x + 5√x−7) = 4x(2x + 5√x−7) −10√x(2x + 5√x−7) = 8x² + 20x√x−28x −20x√x−50x + 70√x = 8x² −78x + 70√x Method 2 Let y = √x 4y²(2y² + 5y−7) −10y(2y² + 5y−7) = 8y⁴ + 20y³ −28y² −20y³ −50y² + 70y = 8y⁴ −78y² + 70y = 8x² −78x + 70√x",
   "solution": true
  },
  {
@@ -4931,7 +4959,7 @@
   "file": "maths-2025-HL-paper-p014-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(c), typeset as the State Examinations Commission set it. It reads: z⁶ = −64i so z = (−64i) Reference angle: 𝜃𝜃 = −90° or 270° or 3𝜋𝜋/2 or − 𝜋𝜋/2 Modulus: r = 64 General polar form: zz = [64 (cos ( 3𝜋𝜋/2 + 2nnnn) + ii sin ( 3𝜋𝜋/2 + 2nnnn))] De Moivre’s Theorem: zz = 64 1/6 [cos ( 𝜋𝜋/4 + nnnn/3 ) + ii sin ( 𝜋𝜋/4 + nnnn/3 ) ] (ANY TWO OF:)/(nn = 00: 2 (cos) ( 𝜋𝜋 4) + ii sin ( 𝜋𝜋 4)) = √2 + √2ii nn = 00: 2 (cos ( 𝜋𝜋/4) + ii sin ( 𝜋𝜋/4)) = √2 + √2ii nn = 11: 2 (cos ( 𝜋𝜋/4 + 𝜋𝜋/3) + ii si",
+  "description": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(c), typeset as the State Examinations Commission set it. It reads: z⁶ = −64i so z = (−64i) Reference angle: 𝜃𝜃 = −90° or 270° or 3𝜋𝜋/2 or − 𝜋𝜋/2 Modulus: r = 64 General polar form: zz = [64 (cos ( 3𝜋𝜋/2 + 2nnnn) + ii sin ( 3𝜋𝜋/2 + 2nnnn))] De Moivre’s Theorem: zz = 64 1/6 [cos ( 𝜋𝜋/4 + nnnn/3 ) + ii sin ( 𝜋𝜋/4 + nnnn/3 ) ] ANY TWO OF: nn = 00: 2 (cos ( 𝜋𝜋/4) + ii sin ( 𝜋𝜋/4)) = √2 + √2ii nn = 11: 2 (cos ( 𝜋𝜋/4 + 𝜋𝜋/3) + ii sin ( 𝜋𝜋/4 + 𝜋𝜋/3)) nn = 11: 2 (cos ( 4 −√6 + √2 + 3) + ii s",
   "solution": true
  },
  {
@@ -5050,7 +5078,7 @@
   "file": "maths-2025-HL-paper-p026-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q8(e)(ii), typeset as the State Examinations Commission set it. It reads: (e)(ii) Method 1 6√xx² xx + 4 − 1/12 = 0 12x−6√x₂ + 4 = 0 2x = √x² + 4 4x² = x² + 4 3x² = 4 xx² = 4/3 xx = 2/√3 2/√3 = 1.1547 … = 1.155 [km][3 D. P. ] Method 2 6√xx² xx + 4 = 1/12 xx²/(36(xx² + 4)) = 1/144 144x² = 36x² + 144 108x² = 144 xx² = 144/108 = 4/3 xx = 2/√3 2/√3 = 1·1547 … = 1.155 [km][3 D. P. ]",
+  "description": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q8(e)(ii), typeset as the State Examinations Commission set it. It reads: (e)(ii) Method 1 6√xx² xx + 4 − 1/12 = 0 12x−6√x₂ + 4 = 0 2x = √x² + 4 4x² = x² + 4 3x² = 4 xx² = 4/3 xx = 2/√3 2/√3 = 1.1547 … = 1.155 [km][3 D. P. ] Method 2 6√xx² xx + 4 = 1/12 xx²/(36(xx² + 4)) = 1/144 144x² = 36x² + 144 108x² = 144 xx² = 144/108 = 4/3 xx = 2/√3 = 1·1547 … = 1.155 [km][3 D. P. ]",
   "solution": true
  },
  {
@@ -5166,13 +5194,6 @@
   "solution": true
  },
  {
-  "file": "maths-2025-HL-paper-p045-i0.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q2(ii), typeset as the State Examinations Commission set it. It reads: Method 1 Slope from (4, −2) to (−2, −5): mm = (−5 + 2)/(−2−4) = (−3)/(−6) = Slope of tangent line = −2 Equation: y−(−5) = −2(x−(−2)) y + 5 = −2x−4 y = −2x−9 Method 2* Equation of circle: x² + y² −8x + 4y−25 = 0 Equation of tangent: x₁ + y₁ + g(x + x₁) + f(y + y₁) + c = 0 −2x−5y−4(x−2) + 2(y−5) −25 = 0 y = −2x−9 Method 3* Equation of tangent: (x−h)(x₁ −h) + (y−k)(y₁ −k) = r² (x−4)(−2 −4) + (y + 2)(−5 + 2) = 45 y = −2x",
-  "solution": true
- },
- {
   "file": "maths-2025-HL-paper-p044-i0.png",
   "kind": "figure",
   "truncated": false,
@@ -5180,10 +5201,17 @@
   "solution": true
  },
  {
+  "file": "maths-2025-HL-paper-p045-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q2(a)(ii), typeset as the State Examinations Commission set it. It reads: Method 1 Slope from (4, −2) to (−2, −5): mm = (−5 + 2)/(−2−4) = (−3)/(−6) = Slope of tangent line = −2 Equation: y−(−5) = −2(x−(−2)) y + 5 = −2x−4 y = −2x−9 Method 2* Equation of circle: x² + y² −8x + 4y−25 = 0 Equation of tangent: x₁ + y₁ + g(x + x₁) + f(y + y₁) + c = 0 −2x−5y−4(x−2) + 2(y−5) −25 = 0 y = −2x−9 Method 3* Equation of tangent: (x−h)(x₁ −h) + (y−k)(y₁ −k) = r² (x−4)(−2 −4) + (y + 2)(−5 + 2) = 45 y = −2x",
+  "solution": true
+ },
+ {
   "file": "maths-2025-HL-paper-p046-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q2(b), typeset as the State Examinations Commission set it. It reads: Method 1: Centre: (−14, 23) (−14, 23) y = k (−14, k) Point of tangency on circle: (−14, k) (−14)² + k² + 28(−14) −46k + k = 0 ...• k² −45k−196 = 0 (k−49)(k + 4) = 0 k = 49 or k = −4 Method 2: Centre = (−14, 23) Radius = √725 −k Tangent: 0 + y−k = 0 Perp distance tangent to centre = radius: (|0 + 1(23)−kk|)/(√02 + 12) = √725 − kk ... (|0 + 1(23)−kk|)/(√02 + 12) = √725 − kk ... (23 −k)² = 725 −k 529 −46k + k² −725 + k ",
+  "description": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q2(b), typeset as the State Examinations Commission set it. It reads: Method 1: Centre: (−14, 23) (−14, 23) y = k (−14, k) Point of tangency on circle: (−14, k) (−14)² + k² + 28(−14) −46k + k = 0 ...• k² −45k−196 = 0 (k−49)(k + 4) = 0 k = 49 or k = −4 Method 2: Centre = (−14, 23) Radius = √725 −k Tangent: 0 + y−k = 0 Perp distance tangent to centre = radius: (|0 + 1(23)−kk|)/(√02 + 12) = √725 − kk ... (23 −k)² = 725 −k 529 −46k + k² −725 + k = 0 k² −45k−196 = 0 (k−49)(k + 4) = 0 k = 49",
   "solution": true
  },
  {
@@ -5362,6 +5390,13 @@
   "solution": true
  },
  {
+  "file": "maths-2025-HL-paper-p064-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q9(a)(i), typeset as the State Examinations Commission set it. It reads: Has diabetes 0∙067 Population 0 ∙933 Does not",
+  "solution": true
+ },
+ {
   "file": "maths-2025-HL-paper-p065-i0.png",
   "kind": "figure",
   "truncated": false,
@@ -5470,7 +5505,7 @@
   "file": "maths-2025-OL-paper-p007-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q2(a)(ii), typeset as the State Examinations Commission set it. It reads: (iii) √1² (+)/√5 2² 1 + i or similar",
+  "description": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q2(a)(ii), typeset as the State Examinations Commission set it. It reads: √1² + 2² √5 1 + i or similar",
   "solution": true
  },
  {
@@ -5925,7 +5960,7 @@
   "file": "maths-2025-OL-paper-p037-i1.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q8(c)(i), typeset as the State Examinations Commission set it. It reads: (i) = 1/√815 1/√815 = 0∙035028 = 3∙5 [%]",
+  "description": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q8(c)(i), typeset as the State Examinations Commission set it. It reads: (i) = 1/√815 = 0∙035028 = 3∙5 [%]",
   "solution": true
  },
  {
@@ -5939,7 +5974,7 @@
   "file": "maths-2025-OL-paper-p038-i0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q8(c)(iii), typeset as the State Examinations Commission set it. It reads: Calculations: (iii) p̂ ± 1/√n 1/√n 13 −3∙5 ≤ p ≤ 13 + 3∙5 9∙5 ≤ p ≤ 16∙5 Conclusion: There is evidence to say that the percentage of new electric cars being bought in 2024 is different to 2023. Reason: 19∙2% is not inside the range found. It is outside the CI.",
+  "description": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q8(c)(iii), typeset as the State Examinations Commission set it. It reads: Calculations: (iii) p̂ ± 1/√n 13 −3∙5 ≤ p ≤ 13 + 3∙5 9∙5 ≤ p ≤ 16∙5 Conclusion: There is evidence to say that the percentage of new electric cars being bought in 2024 is different to 2023. Reason: 19∙2% is not inside the range found. It is outside the CI.",
   "solution": true
  },
  {

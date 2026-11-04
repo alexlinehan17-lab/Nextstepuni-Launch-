@@ -1,0 +1,100 @@
+[
+  {
+    "id": "bio-2021-ol-q3-ab",
+    "questionRef": "2021 OL Q3(a)–(b)",
+    "stem": "Choose from this list: Rib cage, Ureter, Retina, Bronchus, Grey matter, Villi. Worked example — Column A: Skeleton, Column B: Rib cage. Locations on this card: Spinal cord, Eye.",
+    "questionText": "Choose each structure from the following list and place it in Column B to match a location in Column A. The first one has been completed as an example.",
+    "totalMarks": 20
+  },
+  {
+    "id": "bio-2022-hl-q3-bc-fig",
+    "questionRef": "2022 HL Q3(b)–(c)",
+    "stem": "The karyotype shown is from an individual with a genetic condition called Down’s syndrome.",
+    "questionText": "(b) Is the karyotype shown above from a female or a male? (c) Justify the answer you have given at part (b) above.",
+    "totalMarks": 6
+  },
+  {
+    "id": "bio-2023-hl-q15-c-iii-iv-vii",
+    "questionRef": "2023 HL Q15(c)(iii), (iv), (vii)",
+    "stem": "In a typical menstrual cycle the levels of two female reproductive hormones, A and B, rise and fall. Hormone A is oestrogen and hormone B is progesterone.",
+    "questionText": "There are low levels of hormone A and hormone B during the first few days of the menstrual cycle. Describe one effect on the female reproductive system of the low levels of hormones A and B. Explain why hormone A levels increase after approximately day 5. Explain why hormone B levels increase in the days after day 14.",
+    "totalMarks": 9
+  },
+  {
+    "id": "bio-2024-hl-q13-c-v",
+    "questionRef": "2024 HL Q13(c)(v) 2-3",
+    "stem": "Compounds of the general formula Cx(H2O)y are formed during the light-independent stage of photosynthesis.",
+    "questionText": "Name the simple molecule from which a plant obtains the protons (H+ ions) used to make these compounds. Name another simple molecule from which plants obtain the carbon (C) used to make these compounds.",
+    "totalMarks": 6
+  },
+  {
+    "id": "bio-2024-hl-q14-c-iv",
+    "questionRef": "2024 HL Q14(c)(iv)",
+    "questionText": "Give one example of a harmful virus. Give one way in which viruses can be beneficial.",
+    "totalMarks": 6
+  },
+  {
+    "id": "bio-2024-ol-q11-a",
+    "questionRef": "2024 OL Q11(a)",
+    "questionText": "(i) What is the primary source of energy for organisms on Earth? (ii) Define the following terms as used in ecology: 1. Biosphere 2. Niche",
+    "totalMarks": 9
+  },
+  {
+    "id": "bio-2024-ol-q16-a-ii-iii",
+    "questionRef": "2024 OL Q16(a)(ii)–(iii)",
+    "questionText": "(ii) 1. Give one function of xylem. 2. Give one function of phloem. (iii) Which of the following terms describes evaporation of water into the airspaces of the leaf?",
+    "totalMarks": 9
+  },
+  {
+    "id": "bio-2024-ol-q16-b-ii-iii",
+    "questionRef": "2024 OL Q16(b)(ii)–(iii)",
+    "questionText": "(ii) Explain the following terms: 1. Ingestion 2. Digestion (iii) Why is digestion is important in the body?",
+    "totalMarks": 9
+  },
+  {
+    "id": "bio-2024-ol-q17-c-i-iii",
+    "questionRef": "2024 OL Q17(c)(i), (iii)",
+    "questionText": "(i) What is meant by the term vegetative propagation? (iii) 1. Give one advantage that vegetative propagation has over reproduction by seed. 2. Give one advantage that reproduction by seed has over vegetative propagation.",
+    "totalMarks": 9
+  },
+  {
+    "id": "bio-2025-hl-q13-c-i-ii",
+    "questionRef": "2025 HL Q13(c)(i)–(ii)",
+    "questionText": "(i) Briefly describe enzymes under the following headings: 1. Biochemical nature 2. Shape. (ii) Based on the biochemical nature of enzymes, name the cell component where enzymes are made.",
+    "totalMarks": 9
+  },
+  {
+    "id": "bio-2025-hl-q14-b-eye",
+    "questionRef": "2025 HL Q14(b)(i)",
+    "questionText": "Describe the role of each of the following in the eye. 1. Cornea 2. Retina 3. Optic nerve 4. Lens",
+    "totalMarks": 12
+  },
+  {
+    "id": "bio-2025-hl-q16-a-i-ii-fig",
+    "questionRef": "2025 HL Q16(a)(i)–(ii)",
+    "stem": "The diagram shows Rhizopus.",
+    "questionText": "(i) Name the structures A, B and C. (ii) Give one function of structure C.",
+    "totalMarks": 6
+  },
+  {
+    "id": "bio-2025-hl-q16-b-iii-fig",
+    "questionRef": "2025 HL Q16(b)(iii)",
+    "stem": "The diagram shows gases X and Y and their main directions of movement at the site of gas exchange in the lungs.",
+    "questionText": "1. Oxygen and carbon dioxide are two gases that are exchanged between structures A and B. Match each gas to the letters X and Y, based on their main directions of movement. 2. What term describes the movement of these gases?",
+    "totalMarks": 6
+  },
+  {
+    "id": "bio-2025-ol-q10-b-iii-v-fig",
+    "questionRef": "2025 OL Q10(b)(iii)–(v)",
+    "stem": "A student drew the following diagram to show how they carried out an activity to investigate the factors that affect germination.",
+    "questionText": "(iii) Dish C was placed in an anaerobic jar. What gas does this remove from the air? (iv) Which factor affecting germination is being investigated in dish B? (v) There is unlikely to be germination in dishes B and C. Identify one other dish where germination is unlikely to happen. Justify your answer.",
+    "totalMarks": 12
+  },
+  {
+    "id": "bio-2025-ol-q4-a-fig",
+    "questionRef": "2025 OL Q4(a)",
+    "stem": "Cells are the basic unit of life. The diagram shows a cell.",
+    "questionText": "(i) Is this a plant cell or an animal cell? (ii) Give two reasons for your answer in part (i) above.",
+    "totalMarks": 9
+  }
+]

@@ -1,0 +1,22 @@
+[
+ {"id": "chem-2015-ol-q1-a-i-v", "ask": "Should the cold water flow enter at X or at Y?", "answer": "Liebig condenser", "figure": true},
+ {"id": "chem-2015-ol-q1-b-i", "ask": "Draw the structure of a cyclohexane", "answer": "aromaticity incorrectly indicated", "solution": true},
+ {"id": "chem-2015-ol-q2-c", "ask": "", "answer": "bottom of meniscus touching L", "figure": true, "solution": true},
+ {"id": "chem-2015-ol-q2-e", "ask": "Calculate the mass of anhydrous sodium carbonate", "answer": "106 × 0.05 = 5.3 g / l", "figure": true},
+ {"id": "chem-2015-ol-q2-g", "ask": "Name a suitable indicator for this titration.", "answer": "pink (accept purple, violet)"},
+ {"id": "chem-2015-ol-q2-h", "ask": "Find the concentration of the hydrochloric acid solution", "answer": "0.1(1) mol l⁻¹", "solution": true},
+ {"id": "chem-2015-ol-q4-d", "ask": "magnesium burns in oxygen", "answer": "2Mg + O₂ → 2MgO"},
+ {"id": "chem-2015-ol-q5-b", "ask": "Explain in words how a sodium atom becomes a sodium ion.", "answer": "loses an electron", "solution": true},
+ {"id": "chem-2015-ol-q5-e-i", "ask": "sodium chloride can be dissolved in water", "answer": "ionic compounds", "figure": true},
+ {"id": "chem-2015-ol-q6-b", "ask": "Give the IUPAC names for any three", "answer": "methylbenzene", "figure": true},
+ {"id": "chem-2015-ol-q6-c-i-iv", "ask": "is used in oxyacetylene cutting and welding of metals", "answer": "D / propane / C₃H₈", "figure": true},
+ {"id": "chem-2015-ol-q8-a", "ask": "", "answer": "ethene", "figure": true, "solution": true},
+ {"id": "chem-2015-ol-q8-d-i-iii", "ask": "Name compound X.", "answer": "H-bonding occurs between ethanol", "figure": true},
+ {"id": "chem-2015-ol-q9-b", "ask": "", "answer": "at least seven points correctly plotted", "figure": true, "solution": true},
+ {"id": "chem-2015-ol-q10-a", "ask": "", "answer": "(3 × 4) + (3 × 1)", "figure": true, "solution": true},
+ {"id": "chem-2015-ol-q10-b-calculation", "ask": "Calculate the heat of combustion of hexane.", "answer": "– 8326 ÷ 2 = – 4163 kJ mol⁻¹"},
+ {"id": "chem-2015-ol-q10-c-ii", "ask": "How many moles are there in 5 g of neon gas?", "answer": "0.25 moles", "solution": true},
+ {"id": "chem-2015-ol-q11-a", "ask": "", "answer": "6 oxidised", "figure": true},
+ {"id": "chem-2015-ol-q11-b-kc", "ask": "", "answer": "expression set as a fraction", "figure": true, "solution": true},
+ {"id": "chem-2015-ol-q11-c-b-ii", "ask": "Name this alloy.", "answer": "steel (cast iron, pig iron)", "figure": true}
+]

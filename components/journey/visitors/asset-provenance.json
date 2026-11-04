@@ -1,0 +1,387 @@
+{
+  "tool": "built-in image_gen",
+  "approvedSourceCommit": "a900377b",
+  "scope": "approved Wandering Visitors and Wonder Tiles for the live Journey app",
+  "date": "2026-10-05",
+  "assets": [
+    {
+      "kind": "wonders",
+      "id": "luma",
+      "asset": "public/journey-art/visitors/wonders/luma-v3.webp",
+      "sha256": "cb950a93fbbb07f2ee2a24b680a48681b3d663b7ba96f9fa96d10e3d21c1f804",
+      "sourceSha256": "8a9adff077210eb4f030869ad24a4814e239e43412b9ec8951c17cae0fd0746b",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "wonders",
+      "id": "aster",
+      "asset": "public/journey-art/visitors/wonders/aster-v3.webp",
+      "sha256": "d0cf7a456b90672c3745ea0b3ce8f9314cbe4a91f7d9de2bb793f96f287b419b",
+      "sourceSha256": "842ad4ea6ba3362e3c94f4c3b3e2b148f1b1f0757e664f6e0f94d7d0852f1e4c",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "wonders",
+      "id": "wisp",
+      "asset": "public/journey-art/visitors/wonders/wisp-v2.webp",
+      "sha256": "d11f22ac4d67f208cefbdd28e21d8c667b0570410a942d545bce3889bcf7f41f",
+      "sourceSha256": "5f5a533c06785da8817e76ecb3dd0613f123fca2f1acf1ca93b7e86b75483556",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "wonders",
+      "id": "sola",
+      "asset": "public/journey-art/visitors/wonders/sola-v3.webp",
+      "sha256": "1af343c9e954aa60ae61d08bef6a82ffa3a4bd56efed881226ae25ee8dc1068a",
+      "sourceSha256": "24a1fd17df51f5128ae4c303fd160fe0c6060eee322f10797ace736a41595fcf",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "wonders",
+      "id": "moss",
+      "asset": "public/journey-art/visitors/wonders/moss-v4.webp",
+      "sha256": "ad11196cba347fcbb74420bf9dec9c9988555c3273248117ae3ff6077bd18475",
+      "sourceSha256": "1bfe53ff343d387389e0737e4aaebe1d83b54d9c3e2c6346cc7f9ca8ce943d3b",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "wonders",
+      "id": "tavi",
+      "asset": "public/journey-art/visitors/wonders/tavi-v3.webp",
+      "sha256": "868c96c8730f1a048bf723653227a23be1f0904bd1da8a7b85affcf4a48e56c9",
+      "sourceSha256": "256f1f614a68fa78e64901e067a7c7c3a84f68e2d2bbb9441ec24f6297ebd158",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "wonders",
+      "id": "orio",
+      "asset": "public/journey-art/visitors/wonders/orio-v2.webp",
+      "sha256": "224bdc254068c2b40d18ca97869338741d022a486401a073d1ba08c0e8407302",
+      "sourceSha256": "b7a7254eb8beec3aa63de14fda121c63198365bbcaf70abd97779574dd99301f",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "wonders",
+      "id": "nori",
+      "asset": "public/journey-art/visitors/wonders/nori-v3.webp",
+      "sha256": "bc8047f1a5b23ddf5796bbdfe2a06401265a4c6a8927e58eb04f00c8e5b40e93",
+      "sourceSha256": "ea67e44bba373bd1967d094838a1c7bd75da925be028422196876cbfd4d7e4b4",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "wonders",
+      "id": "pip",
+      "asset": "public/journey-art/visitors/wonders/pip-v2.webp",
+      "sha256": "adebaaf0483516726f491b2bf3dcd26e6096879788e6f73674a0a961c27703a1",
+      "sourceSha256": "20f321c46de71e285b1d91a6993206dfc0385a7c7a86560e3b549bc99e737ee8",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "wonders",
+      "id": "vega",
+      "asset": "public/journey-art/visitors/wonders/vega-v3.webp",
+      "sha256": "5b4e96e3f9722cb979ded2fb5e59d0b7d80bf3e435c967e842bb8180a9066caa",
+      "sourceSha256": "aff6a623afdfe8c5ca4aa3873e31d76cff9ea51c9d168487eff06b4a37ffd30e",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "wonders",
+      "id": "nyx",
+      "asset": "public/journey-art/visitors/wonders/nyx-v4.webp",
+      "sha256": "90fd2aa3fe724514fd571f0d21c60624599f615dd1f64e725cfdb06d547f3cd6",
+      "sourceSha256": "0450dc2fa0ee5061b8be2f7224003f275d755a13093758b58fe6e18c88f13936",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "wonders",
+      "id": "echo",
+      "asset": "public/journey-art/visitors/wonders/echo-v2.webp",
+      "sha256": "565f92a5d230856b2560d139b01d7c751032c61066d33c26f2de74f5dcd517f1",
+      "sourceSha256": "ef971a1581a081586f54f50927c797422fcd45bd37ff5cb7592a9f3434b49270",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "crew",
+      "id": "luma",
+      "asset": "public/journey-art/visitors/crew/luma.webp",
+      "sha256": "4197107892d0e3427a61ea14aaa55ad75a5cfd1a40ebf8e72ae183ab33dac3a3",
+      "sourceSha256": "3b6ab5dc5221a43dc8a7702d42adb9d7589b6e4aa1d83fdb42069e06e937ee28",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "crew",
+      "id": "aster",
+      "asset": "public/journey-art/visitors/crew/aster-v3.webp",
+      "sha256": "2c9477f4a57d6789aba732bd80f6f8c4327517eae3247d7decaf591257a05730",
+      "sourceSha256": "95487690b3683549af2db0608490fbbda30c7e853cf02cb49e5715a7f040bedf",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "crew",
+      "id": "wisp",
+      "asset": "public/journey-art/visitors/crew/wisp-v2.webp",
+      "sha256": "3f898a42dd55dde458ce2ec3f666ea8c72781559a5f653f1188accc92ac3cd41",
+      "sourceSha256": "c6dd948d11000e6a78f507a74db348676bb558198875279ba791dee48488e76f",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "crew",
+      "id": "sola",
+      "asset": "public/journey-art/visitors/crew/sola-v2.webp",
+      "sha256": "e209fb2303b626f6b27248620ca3fe7e6b7b69c0cbfb13d4fa6a560f7491cb22",
+      "sourceSha256": "86c8682be195eafc23bcb05869774ac7389cc5611cf13827240a6361497fc7b6",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "crew",
+      "id": "moss",
+      "asset": "public/journey-art/visitors/crew/moss-v2.webp",
+      "sha256": "cd00b18f5e2dbd9e13a502408105fd978cecf6fab6e6d922492ebed9c105c49b",
+      "sourceSha256": "620ca63a8f6d09bc8f218413a10f7d20579f4d98cfc5db6da86d264ddcec974e",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "crew",
+      "id": "tavi",
+      "asset": "public/journey-art/visitors/crew/tavi-v2.webp",
+      "sha256": "55920965c2136c2f3046f1bb0341ee68cd65b95d623ac605c565269f47b72705",
+      "sourceSha256": "855c30929cc97541af1f9b56e294ae7f4c628aed6daa7d78aebd7181a0fda4f6",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "crew",
+      "id": "orio",
+      "asset": "public/journey-art/visitors/crew/orio-v3.webp",
+      "sha256": "569a74c9a921c0527b21d6013662ddb9e520e45aa3b8ebb10bc3ececb42d3abe",
+      "sourceSha256": "390af9d24a133cb63703b17069d156ec8df0d84b615e6e6646bbbcb46930f8ee",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "crew",
+      "id": "nori",
+      "asset": "public/journey-art/visitors/crew/nori-v3.webp",
+      "sha256": "e301b89b0687c853586a3cd731a9d66b0761bbdcab05baa746b11c41418c66d0",
+      "sourceSha256": "b21ad0dcbccec2ae578f5d5f5530c565f83fbc2681f8a672be2dc8b5f92fdce0",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "crew",
+      "id": "pip",
+      "asset": "public/journey-art/visitors/crew/pip-v2.webp",
+      "sha256": "26f44684842eadf539e6403b5fc7154f7143301a12fe07112b46afeea69dcac9",
+      "sourceSha256": "91defa9c3040cb581dac91bec9fbb881d2e6ae5c5f08c088a3e650d1f9725ab6",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "crew",
+      "id": "vega",
+      "asset": "public/journey-art/visitors/crew/vega-v2.webp",
+      "sha256": "2abe99b35add93886ccf31597878b564dc47c484deffb78a943887e5888388a0",
+      "sourceSha256": "eb14c974f74ce7d95c4e3096b8e7d0abb8975dc0a192427a4826119975c918c1",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "crew",
+      "id": "nyx",
+      "asset": "public/journey-art/visitors/crew/nyx-v2.webp",
+      "sha256": "cea9282843ef16bd49c05bd9ab8d2827d269d8aedb8b76b4edaee01f856c12d3",
+      "sourceSha256": "371390a3017112604147bf5b329e44ed56d3e22915f23730306ee0e6745750a3",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "kind": "crew",
+      "id": "echo",
+      "asset": "public/journey-art/visitors/crew/echo-v3.webp",
+      "sha256": "d2774b71971912c774e7243e604a8029135fa73f6fd10cbfbf8f575c319b8a51",
+      "sourceSha256": "e33026cb64f3dc4cd3fc01662c8628c2af8d10a11f9cc7661fc6294f36afdbeb",
+      "format": "lossless WebP",
+      "pixelIdenticalToApprovedPNG": true,
+      "pixelSize": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "nativeWonderLayout": {
+    "luma": {
+      "size": 202,
+      "offsetX": -106.48,
+      "offsetY": -147.68
+    },
+    "aster": {
+      "size": 202,
+      "offsetX": -100.76,
+      "offsetY": -146.96
+    },
+    "wisp": {
+      "size": 202,
+      "offsetX": -105.59,
+      "offsetY": -147.44
+    },
+    "sola": {
+      "size": 202,
+      "offsetX": -113.08,
+      "offsetY": -139.95
+    },
+    "moss": {
+      "size": 202,
+      "offsetX": -111.63,
+      "offsetY": -158.48
+    },
+    "tavi": {
+      "size": 191.23,
+      "offsetX": -98.74,
+      "offsetY": -135.34
+    },
+    "orio": {
+      "size": 202,
+      "offsetX": -100.84,
+      "offsetY": -135.23
+    },
+    "nori": {
+      "size": 202,
+      "offsetX": -102.93,
+      "offsetY": -153.11
+    },
+    "pip": {
+      "size": 202,
+      "offsetX": -102.93,
+      "offsetY": -147.42
+    },
+    "vega": {
+      "size": 202,
+      "offsetX": -120.65,
+      "offsetY": -149.78
+    },
+    "nyx": {
+      "size": 202,
+      "offsetX": -104.46,
+      "offsetY": -143.53
+    },
+    "echo": {
+      "size": 202,
+      "offsetX": -104.38,
+      "offsetY": -129.43
+    }
+  },
+  "delivery": {
+    "mode": "lossless encoding only; original resolution, pixels and alpha preserved",
+    "originalBytes": 17164503,
+    "compressedBytes": 11036386
+  }
+}

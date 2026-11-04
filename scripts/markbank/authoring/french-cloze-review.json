@@ -1,0 +1,645 @@
+{
+  "status": "partial-corpus-review",
+  "reviewedAt": "2026-10-07",
+  "papers": [
+    {
+      "year": 2020,
+      "paperPage": 12,
+      "schemePage": 12,
+      "answers": [
+        "ta",
+        "passe",
+        "avec",
+        "jolie",
+        "natation",
+        "plages",
+        "soir",
+        "rencontré",
+        "elle",
+        "serai"
+      ],
+      "acceptedAlternatives": {
+        "2": [
+          "serai"
+        ]
+      },
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2020-ol-000-paper.pdf",
+          "sha256": "caf1d9c877713de4e89a442f7aad696413089c5b00c9e336385c2c803ef5e71b"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2020-ol.pdf",
+          "sha256": "c74939532c97afcf6b20aba6a2f130684443d9d2eb8c5cbb027f7e789e16a67c"
+        }
+      ],
+      "reviewNote": "The numbered answer list and completed letter both accept passe or serai for gap 2. These are accepted answers within one 3-mark gap, not separate task routes.",
+      "answerListEntries": {
+        "2": "2. passe/serai"
+      }
+    },
+    {
+      "year": 2021,
+      "paperPage": 12,
+      "schemePage": 12,
+      "answers": [
+        "vas",
+        "mois",
+        "la",
+        "ai",
+        "visité",
+        "classe",
+        "appartement",
+        "petit",
+        "faire",
+        "tes"
+      ],
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2021-ol-000-paper.pdf",
+          "sha256": "32e99cc50a223e19ea01bb6a6662a0e4fa4a5c56ad579df41c52ba6511fa8aaf"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2021-ol.pdf",
+          "sha256": "abaa99c727041369a7f94b06d4258f0f167403ab6131c2daa271cc3a1473c762"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "paperPage": 12,
+      "schemePage": 11,
+      "answers": [
+        "je",
+        "semaines",
+        "avons",
+        "près",
+        "assez",
+        "beau",
+        "l’",
+        "pas",
+        "vacances",
+        "du"
+      ],
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2022-ol-000-paper.pdf",
+          "sha256": "8379e3101de945ce7d061b1e1a76e96cac6c8dbc44c721aed95929f9c2d9d19a"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2022-ol.pdf",
+          "sha256": "beda30ae2b8e6b919afeb960903e5bdbb46982921b12987846f532b0cb126dad"
+        }
+      ],
+      "answerListEntries": {
+        "10": "10."
+      },
+      "answerEvidence": {
+        "10": {
+          "printed": "On pourrait faire __du____ vélo",
+          "note": "The scheme’s numbered list leaves item 10 blank; its completed letter prints du, which is also in the paper’s word bank."
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "paperPage": 12,
+      "schemePage": 11,
+      "answers": [
+        "la",
+        "trouvé",
+        "travaille",
+        "pas",
+        "sympas",
+        "mes",
+        "nous",
+        "j’",
+        "chez",
+        "famille"
+      ],
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2023-ol-000-paper.pdf",
+          "sha256": "2d088317280f63688ea6b408f7af9131dc16b12c99dc9c8097c0938576c3571f"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2023-ol.pdf",
+          "sha256": "87e25b1c07f8b7040ccb0fffb2d21f0f41f54f646f680aeb4a331c5480b9d863"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "paperPage": 12,
+      "schemePage": 13,
+      "answers": [
+        "en",
+        "passe",
+        "me",
+        "soleil",
+        "une",
+        "desserts",
+        "acheté",
+        "ma",
+        "prochaine",
+        "allons"
+      ],
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2024-ol-000-paper.pdf",
+          "sha256": "7f587ddf13dce38cb665504faff42a80e23712db6d9cb40cd7e2050e00914979"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2024-ol.pdf",
+          "sha256": "d390b86fe38978c9a0b72e5bcd9dd0563a29ddd06d6d8842d6f4d5989a827df1"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "paperPage": 12,
+      "schemePage": 12,
+      "answers": [
+        "à",
+        "visite",
+        "nationale",
+        "musique",
+        "amuse",
+        "magnifiques",
+        "moi",
+        "fait",
+        "irons",
+        "restaurant"
+      ],
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2025-ol-000-paper.pdf",
+          "sha256": "382bfb8b67848bcb1c772d245ed99bd9a3a241ffef8b5971c4b3d468b59ea764"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2025-ol.pdf",
+          "sha256": "c09f4c7db1e33b0314f0cf5461b76fde5f7c99df4f04dd3d99776f947d791980"
+        }
+      ],
+      "answerListEntries": {
+        "6": "6. maqnifiques"
+      },
+      "answerEvidence": {
+        "6": {
+          "printed": "Les feux d’artifice sont magnifiques.",
+          "note": "The scheme’s numbered list prints maqnifiques; its completed letter and the paper’s word bank print magnifiques."
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "paperPage": 12,
+      "schemePage": 14,
+      "answers": [
+        "bien",
+        "examens",
+        "commencé",
+        "je",
+        "sont",
+        "pas",
+        "pour",
+        "logement",
+        "tes",
+        "iras"
+      ],
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2026-ol-000-paper.pdf",
+          "sha256": "ede242e0aa983f8784877602a8a9fa151f165a1d88daa76b15dc98d436a84fb4"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2026-ol.pdf",
+          "sha256": "15fc31a3a83e6e3d614bac20f1813f7462f9cb90b566e7b97e61bcdd6b368f15"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "paperPage": 10,
+      "schemePage": 10,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2019-ol-000-paper.pdf",
+          "sha256": "438a1121ce5e2556ec1af69e927f574527cf4c4789ae29ac5b000c7853326283"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2019-ol.pdf",
+          "sha256": "4f2e9eb006e10cbd8433e0154b693c8d939a190963f55ddb5ae56caa7730a2c1"
+        }
+      ],
+      "answers": [
+        "lettre",
+        "tu",
+        "content",
+        "ta",
+        "trouvé",
+        "travaille",
+        "clients",
+        "heure",
+        "acheter",
+        "l’"
+      ],
+      "wordBank": [
+        "content",
+        "heure",
+        "tu",
+        "travaille",
+        "trouvé",
+        "clients",
+        "ta",
+        "acheter",
+        "l’",
+        "lettre"
+      ],
+      "wordBankReason": "The full-width bank crosses the inferred bilingual column boundary, losing its last two words in FrPaper. Pin the complete visually reviewed list in printed order and verify it against the original page text.",
+      "boundaryDecision": "Ten separately priced3markgaps; preserve complete letter and all ten words. No finite task alternative pool: each gap has one answer from the shared wordbank.",
+      "answerListEntries": {
+        "6": "6 travaille",
+        "7": "7 clients",
+        "8": "8 heure",
+        "9": "9 acheter",
+        "10": "10 l’"
+      }
+    },
+    {
+      "year": 2018,
+      "paperPage": 10,
+      "schemePage": 12,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2018-ol-000-paper.pdf",
+          "sha256": "f71ac58bc1cede7e93b31d1e1b1cad996df3035f834af1e8ee43f376ad17052a"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2018-ol.pdf",
+          "sha256": "79bb9b5d8c7699de280089844564c39771ab331b38d667319e2385aa13f83c52"
+        }
+      ],
+      "answers": [
+        "cadeau",
+        "mon",
+        "organisé",
+        "en",
+        "tous",
+        "courses",
+        "argent",
+        "suis",
+        "ranger",
+        "pas"
+      ],
+      "wordBank": [
+        "courses",
+        "mon",
+        "suis",
+        "tous",
+        "argent",
+        "organisé",
+        "pas",
+        "cadeau",
+        "en",
+        "ranger"
+      ],
+      "wordBankReason": "The complete ten-word bank crosses the inferred bilingual column boundary. Pin every visually reviewed word in printed order and verify it against the original page.",
+      "salutation": "Cher Nicolas",
+      "boundaryDecision": "Ten separately priced3markgaps; original salutation has no comma. Each gap retains complete wordbank and original letter viewer."
+    },
+    {
+      "year": 2017,
+      "paperPage": 10,
+      "schemePage": 12,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2017-ol-000-paper.pdf",
+          "sha256": "6f4dd599b90255647e3f01b2c3b29e525236ce8ca0647921411c9a52ab090e34"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2017-ol.pdf",
+          "sha256": "d6e9f3cd1fe11308693adbed741ecef63216e7e828d7efa9fee12bbf0fcc6c0d"
+        }
+      ],
+      "answers": [
+        "lettre",
+        "pour",
+        "achetons",
+        "cinéma",
+        "vu",
+        "passer",
+        "gare",
+        "libre",
+        "te",
+        "peux"
+      ],
+      "wordBank": [
+        "cinéma",
+        "peux",
+        "te",
+        "pour",
+        "lettre",
+        "passer",
+        "gare",
+        "achetons",
+        "vu",
+        "libre"
+      ],
+      "wordBankReason": "Pin the full-width ten-word bank in visually verified printed order, including its words to the right of the inferred column split.",
+      "boundaryDecision": "Ten separately priced3markgaps; keep full letter and source bank.",
+      "letterRepairs": [
+        {
+          "extracted": "C’est mon passe-temps préféré. ______________ un film",
+          "printed": "C’est mon passe-temps préféré. Hier soir, j’ai ______________ un film",
+          "reason": "Paper p10 prints “Hier soir, j’ai” at the end of the line before gap 5; the column reader dropped it, leaving gap 5 without its subject and auxiliary."
+        },
+        {
+          "extracted": "pour me dire si tu ______________ Bien à toi",
+          "printed": "pour me dire si tu ______________ venir. Bien à toi",
+          "reason": "Paper p10 prints “venir.” after gap 10 at the end of the line; the column reader dropped it."
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "paperPage": 10,
+      "schemePage": 10,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2016-ol-000-paper.pdf",
+          "sha256": "712a0d3f9c58b022abde8040f88683eac4f88e7eef6654e3cfa9939059838161"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2016-ol.pdf",
+          "sha256": "619b06c0c1ea0fcdb5c768ed0b102dd2b034c70297f24709ac55b2866f58bb2d"
+        }
+      ],
+      "answers": [
+        "long",
+        "avec",
+        "pas",
+        "beau",
+        "sortais",
+        "copains",
+        "humeur",
+        "elle",
+        "espère",
+        "suis"
+      ],
+      "wordBank": [
+        "beau",
+        "espère",
+        "humeur",
+        "elle",
+        "sortais",
+        "avec",
+        "pas",
+        "copains",
+        "suis",
+        "long"
+      ],
+      "wordBankReason": "Full-width bank visually verified in printed order.",
+      "boundaryDecision": "Ten separately priced 3-mark gaps; retain the complete letter and source bank.",
+      "letterRepairs": [
+        {
+          "extracted": "avec mes ____________ était toujours",
+          "printed": "avec mes ____________ , Orla était toujours",
+          "reason": "Paper p10 prints “, Orla” after gap 6 at the end of the line; the column reader dropped it, leaving gap 7’s sentence without its subject."
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "paperPage": 10,
+      "schemePage": 10,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2015-ol-000-paper.pdf",
+          "sha256": "c035611b1f9da0072302fd833e6fb8bc4636de51c053fadabe72ce7521724178"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2015-ol.pdf",
+          "sha256": "ad24f18961500e6c6c36130f4d048e462a58d3b63982637482d34f02efd3a11c"
+        }
+      ],
+      "answers": [
+        "écrit",
+        "voyage",
+        "dernier",
+        "ballon",
+        "passer",
+        "dit",
+        "parents",
+        "pas",
+        "avec",
+        "de"
+      ],
+      "wordBank": [
+        "avec",
+        "parents",
+        "de",
+        "passer",
+        "écrit",
+        "dernier",
+        "pas",
+        "ballon",
+        "voyage",
+        "dit"
+      ],
+      "wordBankReason": "Full-width ten-word bank visually verified in printed order.",
+      "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
+    },
+    {
+      "year": 2014,
+      "paperPage": 10,
+      "schemePage": 10,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2014-ol-000-paper.pdf",
+          "sha256": "04aa4a339491eea57c4f38a6685947d2eee8b25873183da14f97783053df09f7"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2014-ol.pdf",
+          "sha256": "1735c57e750914492deed6d4f1c89d8e9c073fe7f4be9364b785d1a422d73676"
+        }
+      ],
+      "answers": [
+        "répondu",
+        "suis",
+        "bac",
+        "pas",
+        "professeurs",
+        "difficile",
+        "beaucoup",
+        "examens",
+        "robes",
+        "venir"
+      ],
+      "wordBank": [
+        "suis",
+        "beaucoup",
+        "examens",
+        "répondu",
+        "pas",
+        "robes",
+        "professeurs",
+        "bac",
+        "venir",
+        "difficile"
+      ],
+      "wordBankReason": "Full-width ten-word bank visually verified in printed order; the bilingual column reader drops its last word (difficile).",
+      "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
+    },
+    {
+      "year": 2013,
+      "paperPage": 10,
+      "schemePage": 10,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2013-ol-000-paper.pdf",
+          "sha256": "c611880cbd4802fb58d6a31917e1b45a42a6216c4a7619dc5c67457fe566ffde"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2013-ol.pdf",
+          "sha256": "46995adf87052146185f3f04186e5038e57cf2ffe69000a0d4b663302d15e075"
+        }
+      ],
+      "answers": [
+        "avec",
+        "grande",
+        "demandé",
+        "jouer",
+        "membre",
+        "deux",
+        "romans",
+        "librairie",
+        "poche",
+        "aimes"
+      ],
+      "wordBank": [
+        "jouer",
+        "grande",
+        "romans",
+        "avec",
+        "poche",
+        "deux",
+        "demandé",
+        "librairie",
+        "membre",
+        "aimes"
+      ],
+      "wordBankReason": "Full-width ten-word bank visually verified in printed order; the bilingual column reader drops its last word (aimes).",
+      "letterRepairs": [
+        {
+          "extracted": "dans la ___________ Ça coûte",
+          "printed": "dans la ___________ . Ça coûte",
+          "reason": "Paper p10 prints the full stop after gap 8 at the end of the line; the column reader dropped it, joining gaps 8 and 9 into one sentence."
+        }
+      ],
+      "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
+    },
+    {
+      "year": 2012,
+      "paperPage": 10,
+      "schemePage": 9,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2012-ol-000-paper.pdf",
+          "sha256": "a19c7f11631b14d2d66d61232c7bf67eec54cda21f3ee9db46335b5858c47b79"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2012-ol.pdf",
+          "sha256": "ab376e4206d7ecaf22e2afebd97af05c277ab75dcafff32a925cb636810faf25"
+        }
+      ],
+      "answers": [
+        "musique",
+        "pas",
+        "dit",
+        "boulot",
+        "magasin",
+        "argent",
+        "est",
+        "samedi",
+        "à",
+        "tes"
+      ],
+      "capitalLetters": "Accept capital letters (apart from samedi).",
+      "letterRepairs": [
+        {
+          "extracted": "faire. de ma part",
+          "printed": "faire. Dis bonjour de ma part",
+          "reason": "Paper p10 prints “Dis bonjour” at the end of the line before “de ma part à [10] parents”; the column reader dropped it, leaving gap 10’s sentence without its verb."
+        }
+      ],
+      "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
+    },
+    {
+      "year": 2011,
+      "paperPage": 10,
+      "schemePage": 9,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2011-ol-000-paper.pdf",
+          "sha256": "8cfddcac3a8845e5a955fcd193637432e1e0ded174101153250c5c6062b1b03e"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2011-ol.pdf",
+          "sha256": "7e7b09615f35ed3f99418f15b05c063d700925ec4f9060ea57cbdb577d487230"
+        }
+      ],
+      "answers": [
+        "tout",
+        "malade",
+        "trois",
+        "pas",
+        "suis",
+        "mon",
+        "banque",
+        "aller",
+        "très",
+        "bonjour"
+      ],
+      "gapNotes": {
+        "9": "N.B. Gap 9: accept « tout » for 3 marks if not already accepted in Gap 1."
+      },
+      "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
+    },
+    {
+      "year": 2010,
+      "paperPage": 10,
+      "schemePage": 9,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2010-ol-000-paper.pdf",
+          "sha256": "117e19a388d3a116dd40db562ca061fb0e94a0e822f94bfc8de276153506c6ba"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2010-ol.pdf",
+          "sha256": "f6b38541886a6ea1fa0fde5898f249ee72da213f11bd16d4995dfb5e566db9ed"
+        }
+      ],
+      "answers": [
+        "pas",
+        "occupée",
+        "en",
+        "de",
+        "tous",
+        "me",
+        "viens",
+        "nouveau",
+        "visite",
+        "peux"
+      ],
+      "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
+    }
+  ],
+  "expectedCards": 170,
+  "boundaryDecision": "Each of ten gaps is separately priced at 3 marks. The word bank contains possible answers, not selectable task alternatives. Preserve the original whole-letter practice cards and add each separately practicable gap.",
+  "verifiedCorrections": [
+    "2022 OL scheme p11 leaves item 10 empty in the numbered answer list, but its completed letter explicitly prints du in On pourrait faire du vélo. The paper word bank also contains du. All ten gaps are supported.",
+    "2025 OL scheme p12 misspells item 6 as maqnifiques in its numbered list; its completed letter and the paper word bank both print magnifiques.",
+    "Use the original paper for the prompt. Several completed scheme letters change the date, location or recipient; these scheme-only changes must not replace the question paper."
+  ]
+}

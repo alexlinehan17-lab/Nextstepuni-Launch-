@@ -1,114 +1,39 @@
+import { BrandedHopeDiagnostic } from './learning/BrandedFeatures';
+import { moduleFill,moduleText } from './learning/brandTokens';
+import { BrandedBrainMismatch,BrandedCortisol } from './learning/WideFeatures';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence,motion } from 'framer-motion';
 import {
-  Zap, BookOpen, Shield, Cpu, Waypoints, Activity
+Activity,
+BookOpen,
+Cpu,
+Shield,
+Waypoints,
+Zap
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { emeraldTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, ConceptCardGrid } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { Cite } from './ModuleReferences';
+import React,{ useState } from 'react';
 import { HOPE_PROTOCOL_REFERENCE_LIST } from '../data/references/hopeProtocol';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
-import NorthStarCallout from './NorthStarCallout';
+import { emeraldTheme } from '../moduleThemes';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { ConceptCardGrid,Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
+import NorthStarCallout from './NorthStarCallout';
 
 const theme = emeraldTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
-const HopeDiagnostic = () => {
-  const myths = [
-    { myth: "Hope is just wishful thinking.", fact: "FALSE. Hope is an active skill — it combines the drive to start (willpower) with a plan to get there (waypower)." },
-    { myth: "You're either born hopeful or you're not.", fact: "FALSE. Hope is something you can practise and get better at. Your brain physically rewires itself the more you use it." },
-    { myth: "Hope is the same as optimism.", fact: "FALSE. Optimism says 'things will work out.' Hope says 'I can MAKE things work out — and here's my plan.'" },
-  ];
-  return (
-    <div className="my-10 rounded-2xl p-6 md:p-8 space-y-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Hope Circuit Diagnostic</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 -mt-4">Let's bust some common myths about where hope comes from.</p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {myths.map((item, i) => <MythBusterCard key={i} front={item.myth} back={item.fact} />)}
-      </div>
-    </div>
-  );
-}
+const HopeDiagnostic = BrandedHopeDiagnostic
 
-interface MythBusterCardProps {
-  front: string;
-  back: string;
-}
-
-const MythBusterCard: React.FC<MythBusterCardProps> = ({ front, back }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
-  return (
-    <div className="w-full h-44 [perspective:1000px] cursor-pointer" onClick={() => setIsFlipped(!isFlipped)}>
-      <motion.div className="relative w-full h-full" style={{ transformStyle: 'preserve-3d' }} animate={{ rotateX: isFlipped ? 180 : 0 }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}>
-        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-xl p-6 flex flex-col items-center justify-center text-center" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 12, boxShadow: '3px 3px 0px 0px #1C1917' }}>
-          <p className="text-sm font-semibold leading-snug text-zinc-700 dark:text-zinc-200">{front}</p>
-          <p className="absolute bottom-3 right-4 text-[9px] font-medium tracking-wider text-zinc-300 dark:text-zinc-600 uppercase">Tap to reveal</p>
-        </div>
-        <div className="absolute w-full h-full [backface-visibility:hidden] rounded-xl p-5 flex flex-col items-center justify-center text-center" style={{ transform: 'rotateX(180deg)', backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 12, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' }}>
-          <p className="text-xs font-semibold leading-snug">{back}</p>
-        </div>
-      </motion.div>
-    </div>
-  );
-};
-
-const BrainMismatchDiagram = () => (
-  <div className="my-10 rounded-2xl p-6 md:p-8 flex flex-col items-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-    <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center mb-2">Adolescent Brain: System Mismatch</h4>
-    <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-12 max-w-md">Your emotional 'accelerator' is at full volume, while your rational 'brakes' are still being fine-tuned.</p>
-
-    <div className="w-full max-w-sm h-56 flex justify-around items-end gap-8 px-4">
-      {/* Limbic System Bar */}
-      <div className="w-full flex flex-col items-center h-full">
-        <div className="flex-grow w-16 bg-zinc-100 dark:bg-zinc-800 rounded-t-lg overflow-hidden relative">
-          <motion.div
-            className="absolute bottom-0 w-full bg-rose-500"
-            initial={{ height: "90%" }}
-            animate={{ height: ["90%", "95%", "90%"] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-            style={{ boxShadow: '0 0 20px rgba(239, 68, 68, 0.5)' }}
-          />
-        </div>
-        <div className="text-center mt-4">
-          <p className="font-bold text-rose-600">Limbic System</p>
-          <p className="text-xs text-zinc-500 dark:text-zinc-400">The Accelerator (Max Volume)</p>
-        </div>
-      </div>
-
-      {/* Prefrontal Cortex Bar */}
-      <div className="w-full flex flex-col items-center h-full">
-        <div className="flex-grow w-16 bg-zinc-100 dark:bg-zinc-800 rounded-t-lg overflow-hidden relative">
-          <motion.div
-            className="absolute bottom-0 w-full bg-emerald-500"
-            initial={{ height: "0%" }}
-            animate={{ height: "30%" }}
-            transition={{ duration: 2, delay: 0.5, ease: "easeOut" }}
-          />
-           <motion.div
-            className="absolute bottom-0 w-full h-[30%] bg-white dark:bg-zinc-800"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: [0, 0.5, 0] }}
-            transition={{ duration: 1, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          />
-        </div>
-        <div className="text-center mt-4">
-          <p className="font-bold text-emerald-600">Prefrontal Cortex</p>
-          <p className="text-xs text-zinc-500 dark:text-zinc-400">The Brakes (Fine-Tuning)</p>
-        </div>
-      </div>
-    </div>
-  </div>
-);
+const BrainMismatchDiagram = BrandedBrainMismatch;
 
 const DopamineDial = () => {
   const [motivation, setMotivation] = useState(10);
@@ -124,13 +49,13 @@ const DopamineDial = () => {
   const offset = circumference - (motivation / 100) * circumference;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Interactive: The Dopamine Dial</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: You need to study for a history exam. Choose your thought process.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Interactive: The Dopamine Dial</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Scenario: You need to study for a history exam. Choose your thought process.</p>
 
       <div className="w-full flex justify-center items-end h-24">
         <svg width="160" height="80" viewBox="0 0 160 80" className="overflow-visible">
-          <path d="M 20 80 A 60 60 0 0 1 140 80" fill="none" stroke="#e5e7eb" strokeWidth="15" strokeLinecap="round" />
+          <path d="M 20 80 A 60 60 0 0 1 140 80" fill="none" stroke="var(--module-on-fill)" strokeWidth="15" strokeLinecap="round" />
           <motion.path
             d="M 20 80 A 60 60 0 0 1 140 80"
             fill="none"
@@ -144,16 +69,16 @@ const DopamineDial = () => {
           />
           <defs>
             <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style={{stopColor: "#34d399", stopOpacity:1}} />
-              <stop offset="100%" style={{stopColor: "#10b981", stopOpacity:1}} />
+              <stop offset="0%" style={{stopColor: "var(--module-success)", stopOpacity:1}} />
+              <stop offset="100%" style={{stopColor: "var(--module-success)", stopOpacity:1}} />
             </linearGradient>
           </defs>
         </svg>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-        <button onClick={() => handleChoice('cold')} className="p-4 rounded-xl text-left text-sm font-medium" style={{ backgroundColor: choice === 'cold' ? '#FCA5A5' : '#FFFFFF', border: `2.5px solid ${choice === 'cold' ? '#DC2626' : '#1C1917'}`, borderRadius: 14, boxShadow: choice === 'cold' ? 'none' : '3px 3px 0px 0px #1C1917', color: choice === 'cold' ? '#7F1D1D' : '#1C1917' }}><strong>"Cold" Cognition:</strong> "I need to study history."</button>
-        <button onClick={() => handleChoice('hot')} className="p-4 rounded-xl text-left text-sm font-medium" style={{ backgroundColor: choice === 'hot' ? '#6EE7B7' : '#FFFFFF', border: `2.5px solid ${choice === 'hot' ? '#059669' : '#1C1917'}`, borderRadius: 14, boxShadow: choice === 'hot' ? 'none' : '3px 3px 0px 0px #1C1917', color: choice === 'hot' ? '#064E3B' : '#1C1917' }}><strong>"Hot" Cognition (EFT):</strong> "Imagine acing that exam..."</button>
+        <button onClick={() => handleChoice('cold')} className="p-4 rounded-xl text-left text-sm font-medium" style={{ backgroundColor: moduleFill(choice === 'cold' ? "var(--module-surface)" : "var(--module-surface)"), border: `2.5px solid ${choice === 'cold' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(choice === 'cold' ? "var(--module-danger-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(choice === 'cold')} data-tone="coral" aria-pressed={!!(choice === 'cold')}><strong>"Cold" Cognition:</strong> "I need to study history."</button>
+        <button onClick={() => handleChoice('hot')} className="p-4 rounded-xl text-left text-sm font-medium" style={{ backgroundColor: moduleFill(choice === 'hot' ? "var(--module-success-soft)" : "var(--module-surface)"), border: `2.5px solid ${choice === 'hot' ? "var(--module-line)" : "var(--module-line)"}`, borderRadius: 14, boxShadow: 'none', color: moduleText(choice === 'hot' ? "var(--module-success-text)" : "var(--module-ink)") }} data-wide-button="true" data-selected={!!(choice === 'hot')} data-tone="mint" aria-pressed={!!(choice === 'hot')}><strong>"Hot" Cognition (EFT):</strong> "Imagine acing that exam..."</button>
       </div>
 
       <AnimatePresence>
@@ -163,13 +88,13 @@ const DopamineDial = () => {
             animate={{opacity:1, y:0}}
             className="mt-8 p-6 rounded-xl"
             style={{
-              backgroundColor: choice === 'cold' ? '#FCA5A5' : '#6EE7B7',
-              border: `2.5px solid ${choice === 'cold' ? '#DC2626' : '#059669'}`,
-              boxShadow: `3px 3px 0px 0px ${choice === 'cold' ? '#DC2626' : '#059669'}`,
+              backgroundColor: moduleFill(choice === 'cold' ? "var(--module-surface)" : "var(--module-success-soft)"),
+              border: `2.5px solid ${choice === 'cold' ? "var(--module-line)" : "var(--module-line)"}`,
+              boxShadow: 'none',
             }}
           >
-            {choice === 'cold' && <p style={{ color: '#7F1D1D' }}><strong>Result:</strong> A small motivational increase. The task is abstract and lacks an immediate reward signal for your brain.</p>}
-            {choice === 'hot' && <p style={{ color: '#064E3B' }}><strong>Result:</strong> Major dopamine boost! Vividly simulating future success makes the reward feel real <em>now</em>, flooding your brain with the motivation to start.</p>}
+            {choice === 'cold' && <p style={{ color: "var(--module-danger-text)" }}><strong>Result:</strong> A small motivational increase. The task is abstract and lacks an immediate reward signal for your brain.</p>}
+            {choice === 'hot' && <p style={{ color: "var(--module-success-text)" }}><strong>Result:</strong> Major dopamine boost! Vividly simulating future success makes the reward feel real <em>now</em>, flooding your brain with the motivation to start.</p>}
           </motion.div>
         )}
       </AnimatePresence>
@@ -197,9 +122,9 @@ const HopeMap = () => {
   const isComplete = step === 4;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">My Hope Circuit Blueprint</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Build your circuit one component at a time.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">My Hope Circuit Blueprint</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Build your circuit one component at a time.</p>
 
       {/* Progress dots */}
       <div className="flex justify-center gap-2 mb-8">
@@ -209,16 +134,16 @@ const HopeMap = () => {
               className="w-8 h-8 flex items-center justify-center text-xs font-bold transition-all duration-300"
               style={{
                 borderRadius: 10,
-                backgroundColor: i < step || isComplete ? '#059669' : i === step && !isComplete ? '#6EE7B7' : '#E5E7EB',
-                border: `2px solid ${i < step || isComplete ? '#047857' : i === step && !isComplete ? '#059669' : '#D1D5DB'}`,
-                boxShadow: i < step || isComplete || (i === step && !isComplete) ? '2px 2px 0px 0px #047857' : '2px 2px 0px 0px #D1D5DB',
-                color: i < step || isComplete ? '#fff' : i === step && !isComplete ? '#064E3B' : '#9CA3AF',
+                backgroundColor: moduleFill(i < step || isComplete ? "var(--module-success)" : i === step && !isComplete ? "var(--module-success-soft)" : "var(--module-surface)"),
+                border: `2px solid ${i < step || isComplete ? "var(--module-line)" : i === step && !isComplete ? "var(--module-line)" : "var(--module-line)"}`,
+                boxShadow: 'none',
+                color: moduleText(i < step || isComplete ? "var(--module-on-fill)" : i === step && !isComplete ? "var(--module-success-text)" : "var(--module-muted)"),
               }}
             >
               {i < step || isComplete ? '✓' : i + 1}
             </div>
             {i < steps.length - 1 && (
-              <div className="w-8 h-0.5 transition-all duration-300" style={{ backgroundColor: i < step || isComplete ? '#059669' : '#E5E7EB' }} />
+              <div className="w-8 h-0.5 transition-all duration-300" style={{ backgroundColor: moduleFill(i < step || isComplete ? "var(--module-success)" : "var(--module-surface)") }} />
             )}
           </div>
         ))}
@@ -234,21 +159,21 @@ const HopeMap = () => {
             transition={{ duration: 0.3 }}
             className="space-y-4"
           >
-            <p className="text-xs font-semibold text-emerald-600 uppercase tracking-wider">{steps[step].label}</p>
-            <p className="font-serif text-xl font-semibold text-zinc-800 dark:text-white">{steps[step].prompt}</p>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400">{steps[step].hint}</p>
+            <p className="text-xs font-semibold text-[var(--module-success-text)] uppercase tracking-wider">{steps[step].label}</p>
+            <p className="font-serif text-xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{steps[step].prompt}</p>
+            <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)]">{steps[step].hint}</p>
             <input
               value={values[step]}
               onChange={(e) => setters[step](e.target.value)}
               placeholder="Type your answer here..."
-              className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none"
-              style={{ border: '1.5px solid #E7E5E4' }}
+              className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none"
+              style={{ border: "1.5px solid var(--module-line)" }}
               autoFocus
             />
             <div className="flex justify-between items-center pt-2">
               <button
                 onClick={() => setStep(step - 1)}
-                className={`text-sm font-medium text-zinc-400 hover:text-zinc-600 transition-colors ${step === 0 ? 'invisible' : ''}`}
+                className={`text-sm font-medium text-zinc-400 hover:text-zinc-600 transition-colors ${step === 0 ? 'invisible' : ''}`} data-wide-button="true"
               >
                 Back
               </button>
@@ -257,9 +182,9 @@ const HopeMap = () => {
                 disabled={!canAdvance}
                 className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${
                   canAdvance
-                    ? 'bg-emerald-500 text-white hover:bg-emerald-600 shadow-lg shadow-emerald-500/20'
-                    : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-400 cursor-not-allowed'
-                }`}
+                    ? "bg-[var(--module-success)] text-[var(--module-ink)] hover:bg-[var(--module-success)] shadow-none shadow-none"
+                    : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-muted)] cursor-not-allowed"
+                }`} data-wide-button="true" data-selected={!!(canAdvance)} data-tone="mint" aria-pressed={!!(canAdvance)}
               >
                 {step === 3 ? 'Complete Blueprint' : 'Next'}
               </button>
@@ -273,57 +198,57 @@ const HopeMap = () => {
             transition={{ duration: 0.4 }}
             className="space-y-4"
           >
-            <div className="bg-white dark:bg-zinc-900 rounded-2xl" style={{ border: '2.5px solid #1C1917', boxShadow: '4px 4px 0px 0px #1C1917', padding: '24px 28px' }}>
+            <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-2xl" style={{ border: "2.5px solid var(--module-line)", boxShadow: 'none', padding: '24px 28px' }}>
               {/* Step 1: Power Source */}
               <div className="flex items-start gap-4">
-                <div className="w-11 h-11 shrink-0 flex items-center justify-center" style={{ backgroundColor: '#FCD34D', border: '2px solid #D97706', borderRadius: 12, boxShadow: '2px 2px 0px 0px #D97706' }}>
-                  <Zap size={18} style={{ color: '#78350F' }} />
+                <div className="w-11 h-11 shrink-0 flex items-center justify-center" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 12, boxShadow: 'none' }}>
+                  <Zap size={18} style={{ color: "var(--module-danger-text)" }} />
                 </div>
                 <div className="pt-0.5">
-                  <p className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: '#78716C' }}>The Power Source</p>
-                  <p className="font-serif font-semibold text-zinc-900 dark:text-white mt-0.5">{goal}</p>
+                  <p className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--module-muted)" }}>The Power Source</p>
+                  <p className="font-serif font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mt-0.5">{goal}</p>
                 </div>
               </div>
-              <div className="h-5 flex items-center" style={{ marginLeft: 21 }}><div className="w-0.5 h-full bg-zinc-200 dark:bg-zinc-700" /></div>
+              <div className="h-5 flex items-center" style={{ marginLeft: 21 }}><div className="w-0.5 h-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" /></div>
 
               {/* Step 2: Wiring */}
               <div className="flex items-start gap-4">
-                <div className="w-11 h-11 shrink-0 flex items-center justify-center" style={{ backgroundColor: '#93C5FD', border: '2px solid #2563EB', borderRadius: 12, boxShadow: '2px 2px 0px 0px #2563EB' }}>
-                  <Waypoints size={18} style={{ color: '#1E3A8A' }} />
+                <div className="w-11 h-11 shrink-0 flex items-center justify-center" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 12, boxShadow: 'none' }}>
+                  <Waypoints size={18} style={{ color: "var(--module-ink)" }} />
                 </div>
                 <div className="pt-0.5">
-                  <p className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: '#78716C' }}>The Wiring</p>
-                  <p className="font-serif font-semibold text-zinc-900 dark:text-white mt-0.5">{pathway}</p>
+                  <p className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--module-muted)" }}>The Wiring</p>
+                  <p className="font-serif font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mt-0.5">{pathway}</p>
                 </div>
               </div>
-              <div className="h-5 flex items-center" style={{ marginLeft: 21 }}><div className="w-0.5 h-full bg-zinc-200 dark:bg-zinc-700" /></div>
+              <div className="h-5 flex items-center" style={{ marginLeft: 21 }}><div className="w-0.5 h-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" /></div>
 
               {/* Step 3: Short Circuit */}
               <div className="flex items-start gap-4">
-                <div className="w-11 h-11 shrink-0 flex items-center justify-center" style={{ backgroundColor: '#FCA5A5', border: '2px solid #DC2626', borderRadius: 12, boxShadow: '2px 2px 0px 0px #DC2626' }}>
-                  <Shield size={18} style={{ color: '#7F1D1D' }} />
+                <div className="w-11 h-11 shrink-0 flex items-center justify-center" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 12, boxShadow: 'none' }}>
+                  <Shield size={18} style={{ color: "var(--module-danger-text)" }} />
                 </div>
                 <div className="pt-0.5">
-                  <p className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: '#78716C' }}>Short Circuit</p>
-                  <p className="font-serif font-semibold text-zinc-900 dark:text-white mt-0.5">{obstacle}</p>
+                  <p className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--module-muted)" }}>Short Circuit</p>
+                  <p className="font-serif font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mt-0.5">{obstacle}</p>
                 </div>
               </div>
-              <div className="h-5 flex items-center" style={{ marginLeft: 21 }}><div className="w-0.5 h-full bg-zinc-200 dark:bg-zinc-700" /></div>
+              <div className="h-5 flex items-center" style={{ marginLeft: 21 }}><div className="w-0.5 h-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" /></div>
 
               {/* Step 4: The Fix */}
               <div className="flex items-start gap-4">
-                <div className="w-11 h-11 shrink-0 flex items-center justify-center" style={{ backgroundColor: '#6EE7B7', border: '2px solid #059669', borderRadius: 12, boxShadow: '2px 2px 0px 0px #059669' }}>
-                  <Activity size={18} style={{ color: '#064E3B' }} />
+                <div className="w-11 h-11 shrink-0 flex items-center justify-center" style={{ backgroundColor: "var(--module-success-soft)", border: "2px solid var(--module-line)", borderRadius: 12, boxShadow: 'none' }}>
+                  <Activity size={18} style={{ color: "var(--module-success-text)" }} />
                 </div>
                 <div className="pt-0.5">
-                  <p className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: '#78716C' }}>The Fix</p>
-                  <p className="font-serif font-semibold text-zinc-900 dark:text-white mt-0.5">{solution}</p>
+                  <p className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--module-muted)" }}>The Fix</p>
+                  <p className="font-serif font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mt-0.5">{solution}</p>
                 </div>
               </div>
             </div>
             <button
               onClick={() => { setStep(0); setGoal(''); setPathway(''); setObstacle(''); setSolution(''); }}
-              className="w-full text-center text-sm font-medium text-zinc-400 hover:text-zinc-600 hover:underline transition-colors pt-2"
+              className="w-full text-center text-sm font-medium text-[var(--module-muted)] hover:text-[var(--module-ink)] hover:underline transition-colors pt-2" data-wide-button="true"
             >
               Start a new blueprint
             </button>
@@ -334,44 +259,7 @@ const HopeMap = () => {
   );
 };
 
-const CortisolSimulator = () => {
-  const [responseType, setResponseType] = useState<'neutral' | 'low-hope' | 'high-hope'>('neutral');
-  const pathData = {
-    neutral: "M0,50 C40,50 60,10 100,10 L250,10 C300,10 320,80 400,90",
-    'low-hope': "M0,50 C40,50 60,10 100,10 L250,10 C300,10 320,20 400,20",
-    'high-hope': "M0,50 C40,50 60,10 100,10 L250,10 C300,10 320,70 400,80",
-  }
-  return (
-     <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Cortisol Curve Simulator</h4>
-        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Stressor Detected: Bad Mock Exam Result.</p>
-        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">How does your system respond?</p>
-        <div className="bg-zinc-50/50 p-6 rounded-xl">
-          <svg viewBox="0 0 400 100" className="w-full h-auto">
-            <AnimatePresence>
-            <motion.path
-              key={responseType}
-              d={pathData[responseType]}
-              fill="none"
-              stroke={responseType === 'low-hope' ? '#ef4444' : '#10b981'}
-              strokeWidth="3"
-              initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{ duration: 1.5, ease: 'easeInOut' }}
-              strokeLinecap="round"
-            />
-            </AnimatePresence>
-             <text x="5" y="15" fontSize="8" fill="#9ca3af">High Cortisol</text>
-             <text x="5" y="95" fontSize="8" fill="#9ca3af">Low Cortisol</text>
-          </svg>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-          <button onClick={() => setResponseType('low-hope')} className="p-4 bg-rose-50 border border-rose-200 rounded-xl text-left text-sm"><strong>Low-Hope Response:</strong> "This is pointless, I'm just bad at this subject." <span className="block text-xs text-rose-500 mt-1">Result: Flattened cortisol curve, prolonged stress.</span></button>
-          <button onClick={() => setResponseType('high-hope')} className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-left text-sm"><strong>High-Hope Response:</strong> "Okay, that didn't work. What's a new plan I can try?" <span className="block text-xs text-emerald-500 mt-1">Result: Healthy cortisol recovery, stress buffered.</span></button>
-        </div>
-     </div>
-  );
-}
+const CortisolSimulator = BrandedCortisol
 
 // --- MODULE COMPONENT ---
 const HopeProtocolModule: React.FC<{ onBack: () => void; progress: ModuleProgress; onProgressUpdate: (progress: ModuleProgress) => void }> = ({ onBack, progress, onProgressUpdate }) => {

@@ -1,7 +1,7 @@
 import { onCall, HttpsError } from "firebase-functions/v2/https";
 import { logger } from "firebase-functions/v2";
 import { getFirestore } from "firebase-admin/firestore";
-import { isSupportedSchoolId } from "./schoolJoinPolicy";
+import { isSupportedSchoolId, isValidStudentJoinCodeFormat } from "./schoolJoinPolicy";
 import { hashAccessCode, safeHashEqual } from "./accessCodes";
 import { CALLABLE_OPTIONS, assertUnrevokedAuth, isVerifiedAdminToken } from "./security";
 
@@ -42,7 +42,9 @@ export const claimStudentSchool = onCall(CALLABLE_OPTIONS, async (request) => {
   // of 10: it grants access to school-wide student records, where this one only
   // binds a new account to a school. The brute-force throttle below (6 failures
   // per 15 minutes per account) is what makes a short code tolerable here.
-  if (!code || typeof code !== "string" || code.length < 8 || code.length > 64) {
+  // PwC permits its owner-managed seven-character research join code. The
+  // stored hash and the same failure throttle still verify the credential.
+  if (!isValidStudentJoinCodeFormat(school, code)) {
     throw new HttpsError("invalid-argument", "A valid join code is required.");
   }
 

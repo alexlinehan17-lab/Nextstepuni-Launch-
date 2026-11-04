@@ -127,10 +127,15 @@ describe('Economics exam-topic registry', () => {
       referenceReportedAssociations: 1851,
       referenceOfficialAssociations: 1120,
       referenceMockAssociations: 731,
-      matchedAssociations: 903,
+      // 903 headings resolve to a local paper question; 81 of them are
+      // contradicted by the SEC-paper topic review (economics-sec-topic-
+      // reviews.json, each with its reason) and are recorded as reference
+      // anomalies rather than matches. Card tags are unchanged.
+      matchedAssociations: 822,
+      referenceAnomalyAssociations: 81,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 816,
+      matchedQuestionTopicLinks: 740,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

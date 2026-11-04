@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-05T22:46:33.874Z",
+  "generatedAt": "2026-10-22T11:22:16.172Z",
   "scope": {
     "included": "Factual State-exam topic associations captured from every current StudyClix Leaving Certificate topic page.",
     "excluded": "Commercial mock questions and all provider-owned question text, solutions, notes, media and PDFs.",
@@ -9,14 +9,14 @@
   "totals": {
     "subjects": 32,
     "subjectsWithExactCrosswalks": 32,
-    "referenceTopics": 1609,
+    "referenceTopics": 1611,
     "referenceOfficialAssociations": 37105,
-    "matched": 27247,
+    "matched": 26906,
     "sourceBlocked": 9856,
-    "referenceAnomaly": 2,
+    "referenceAnomaly": 343,
     "unreviewed": 0,
     "sourceUnavailableTopics": 2,
-    "topicsWithGaps": 1340
+    "topicsWithGaps": 1347
   },
   "subjects": [
     {
@@ -1021,7 +1021,7 @@
       "referenceFile": "data/examTopics/agricultural-science.json",
       "crosswalkFile": "data/examTopics/agricultural-science-local-crosswalk.json",
       "totals": {
-        "referenceTopics": 35,
+        "referenceTopics": 37,
         "referenceOfficialAssociations": 1027,
         "matched": 794,
         "sourceBlocked": 233,
@@ -1074,6 +1074,28 @@
               "resolution": "source-blocked"
             }
           ]
+        },
+        {
+          "id": "agricultural-science-higher-animal-physiology-circulatory-system",
+          "label": "Animal Physiology - Circulatory System",
+          "sourcePath": "https://www.examinations.ie/archive/exampapers/2011/LC024ALP000EV.pdf",
+          "referenceOfficialAssociations": 0,
+          "matched": 0,
+          "sourceBlocked": 0,
+          "referenceAnomaly": 0,
+          "unreviewed": 0,
+          "gaps": []
+        },
+        {
+          "id": "agricultural-science-higher-animal-physiology-respiratory-system",
+          "label": "Animal Physiology - Respiratory System",
+          "sourcePath": "https://www.examinations.ie/archive/exampapers/2012/LC024ALP000EV.pdf",
+          "referenceOfficialAssociations": 0,
+          "matched": 0,
+          "sourceBlocked": 0,
+          "referenceAnomaly": 0,
+          "unreviewed": 0,
+          "gaps": []
         },
         {
           "id": "agricultural-science-higher-animal-physiology-digestive-system",
@@ -2385,12 +2407,12 @@
       "totals": {
         "referenceTopics": 33,
         "referenceOfficialAssociations": 369,
-        "matched": 277,
+        "matched": 271,
         "sourceBlocked": 92,
-        "referenceAnomaly": 0,
+        "referenceAnomaly": 6,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
-        "topicsWithGaps": 21
+        "topicsWithGaps": 22
       },
       "topics": [
         {
@@ -2628,9 +2650,9 @@
           "label": "Networks and Graphs",
           "sourcePath": "/leaving-certificate/applied-maths/higher/networks-and-graphs",
           "referenceOfficialAssociations": 14,
-          "matched": 10,
+          "matched": 8,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -2648,6 +2670,14 @@
             {
               "heading": "2023 - Sample Paper - Section 1 - Question 2",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Paper - Section 1 - Question 9 - (i)",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Paper - Section 1 - Question 9 - (ii)-(v)",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -2748,9 +2778,9 @@
           "label": "Uniform Accelerated Motion",
           "sourcePath": "/leaving-certificate/applied-maths/higher/uniform-accelerated-motion",
           "referenceOfficialAssociations": 29,
-          "matched": 21,
+          "matched": 20,
           "sourceBlocked": 8,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -2784,6 +2814,10 @@
             {
               "heading": "2023 - Sample Paper - Section 1 - Question 3 - Part b",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2024 - Question 4 - (iv)",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -2969,9 +3003,9 @@
           "label": "Networks & Graphs",
           "sourcePath": "/leaving-certificate/applied-maths/ordinary/networks-graphs",
           "referenceOfficialAssociations": 15,
-          "matched": 11,
+          "matched": 9,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -2989,6 +3023,14 @@
             {
               "heading": "2023 - Sample Paper - Section 1 - Question 7 - Part c",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Paper - Section 1 - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Question 9",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3123,11 +3165,16 @@
           "label": "Vectors",
           "sourcePath": "/leaving-certificate/applied-maths/ordinary/vectors",
           "referenceOfficialAssociations": 5,
-          "matched": 5,
+          "matched": 4,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2023 - Paper - Section 1 - Question 2 - Part b",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "applied-mathematics-ordinary-work-energy-power-momentum",
@@ -3154,12 +3201,12 @@
       "totals": {
         "referenceTopics": 32,
         "referenceOfficialAssociations": 690,
-        "matched": 592,
+        "matched": 553,
         "sourceBlocked": 98,
-        "referenceAnomaly": 0,
+        "referenceAnomaly": 39,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
-        "topicsWithGaps": 26
+        "topicsWithGaps": 27
       },
       "topics": [
         {
@@ -3187,9 +3234,9 @@
           "label": "Art as Social Commentary or Commentator",
           "sourcePath": "/leaving-certificate/art/higher/section-a-todays-world/art-as-social-commentary-or-commentator",
           "referenceOfficialAssociations": 14,
-          "matched": 9,
+          "matched": 8,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3211,6 +3258,10 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section A - Question 5 - Part B",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2013 - Section 3 - Question 17",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3347,9 +3398,9 @@
           "label": "Modernism (c. 1900-1960s)",
           "sourcePath": "/leaving-certificate/art/higher/section-b-europe-and-the-world/modernism-c-1900-1960s",
           "referenceOfficialAssociations": 12,
-          "matched": 10,
+          "matched": 8,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3359,6 +3410,14 @@
             {
               "heading": "2023 - Sample Paper - Section B - Question 11",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 12",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section 2 - Question 13",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3387,9 +3446,9 @@
           "label": "Realism, Impressionism and Post-Impressionism",
           "sourcePath": "/leaving-certificate/art/higher/section-b-europe-and-the-world/realism-impressionism-and-post-impressionism",
           "referenceOfficialAssociations": 26,
-          "matched": 22,
+          "matched": 20,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3407,6 +3466,14 @@
             {
               "heading": "2023 - Sample Paper - Section B - Question 10",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2019 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 2 - Question 13",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3435,9 +3502,9 @@
           "label": "Section B: Generic Questions",
           "sourcePath": "/leaving-certificate/art/higher/section-b-europe-and-the-world/section-b-generic-questions",
           "referenceOfficialAssociations": 32,
-          "matched": 25,
+          "matched": 24,
           "sourceBlocked": 7,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3467,6 +3534,10 @@
             {
               "heading": "2009 - Section 2 - Question 15",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 7",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3475,9 +3546,9 @@
           "label": "The Baroque (c. 1600-1700s)",
           "sourcePath": "/leaving-certificate/art/higher/section-b-europe-and-the-world/the-baroque-c-1600-1700s",
           "referenceOfficialAssociations": 8,
-          "matched": 6,
+          "matched": 5,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3487,6 +3558,10 @@
             {
               "heading": "2023 - Sample Paper - Section B - Question 9",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2018 - Section 2 - Question 10",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3551,9 +3626,9 @@
           "label": "Irish Art and Modernism",
           "sourcePath": "/leaving-certificate/art/higher/section-c-ireland-and-its-place-in-the-wider-world/irish-art-and-modernism",
           "referenceOfficialAssociations": 38,
-          "matched": 34,
+          "matched": 28,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 6,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3571,6 +3646,30 @@
             {
               "heading": "2023 - Sample Paper - Section C - Question 17",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2016 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3619,9 +3718,9 @@
           "label": "Pre-christian Ireland (c 4000BC-AD500)",
           "sourcePath": "/leaving-certificate/art/higher/section-c-ireland-and-its-place-in-the-wider-world/pre-christian-ireland-c-4000bc-ad500",
           "referenceOfficialAssociations": 28,
-          "matched": 22,
+          "matched": 20,
           "sourceBlocked": 6,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3647,6 +3746,14 @@
             {
               "heading": "2023 - Sample Paper - Section C - Question 13",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2010 - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3683,9 +3790,9 @@
           "label": "Section A: Today's World",
           "sourcePath": "/leaving-certificate/art/ordinary/section-a-todays-world",
           "referenceOfficialAssociations": 118,
-          "matched": 107,
+          "matched": 106,
           "sourceBlocked": 11,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3731,6 +3838,10 @@
             {
               "heading": "2009 - Paper - Section 3 - Question 18",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2018 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3739,14 +3850,18 @@
           "label": "Europe - Modernism (c. 1900-1960s)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/europe-modernism-c-1900-1960s",
           "referenceOfficialAssociations": 16,
-          "matched": 15,
+          "matched": 14,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2007 - Section 2 - Question 13",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2020 - Section 2 - Question 12",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3755,9 +3870,9 @@
           "label": "Europe - Realism, Impressionism and Post-Impressionism",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/europe-realism-impressionism-and-post-impressionism",
           "referenceOfficialAssociations": 26,
-          "matched": 24,
+          "matched": 19,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 5,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3767,6 +3882,26 @@
             {
               "heading": "2009 - Paper - Section 2 - Question 14",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2011 - Section 2 - Question 14",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 9",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2016 - Section 1 - Question 13",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 1 - Question 5",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3795,14 +3930,38 @@
           "label": "Europe - The Renaissance (c. 1300-1600s)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/europe-the-renaissance-c-1300-1600s",
           "referenceOfficialAssociations": 28,
-          "matched": 27,
+          "matched": 21,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 6,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2008 - Paper - Section 2 - Question 10",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2016 - Section 1 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2017 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2018 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section 2 - Question 8",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3833,11 +3992,16 @@
           "label": "The Baroque (c. 1600-1700s)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/the-baroque-c-1600-1700s",
           "referenceOfficialAssociations": 7,
-          "matched": 7,
+          "matched": 6,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2020 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "art-ordinary-insular-art-c-500-1100s",
@@ -3871,9 +4035,9 @@
           "label": "Irish Art and Modernism",
           "sourcePath": "/leaving-certificate/art/ordinary/section-c-ireland-and-its-place-in-the-wider-world/irish-art-and-modernism",
           "referenceOfficialAssociations": 33,
-          "matched": 29,
+          "matched": 22,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 7,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3891,6 +4055,34 @@
             {
               "heading": "2009 - Paper - Section 1 - Question 7",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2016 - Section 1 - Question 12",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2016 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2017 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3921,14 +4113,26 @@
           "label": "Pre-Christian Ireland (c 4000BC-AD500)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-c-ireland-and-its-place-in-the-wider-world/pre-christian-ireland-c-4000bc-ad500",
           "referenceOfficialAssociations": 23,
-          "matched": 22,
+          "matched": 19,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2009 - Paper - Section 1 - Question 1",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
             }
           ]
         }
@@ -8842,9 +9046,9 @@
       "totals": {
         "referenceTopics": 105,
         "referenceOfficialAssociations": 3075,
-        "matched": 2008,
+        "matched": 1824,
         "sourceBlocked": 1067,
-        "referenceAnomaly": 0,
+        "referenceAnomaly": 184,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
         "topicsWithGaps": 100
@@ -10179,9 +10383,9 @@
           "label": "1.1 People in Business & Contract Law",
           "sourcePath": "/leaving-certificate/business/higher-old-course/11-people-in-business-contract-law",
           "referenceOfficialAssociations": 54,
-          "matched": 32,
+          "matched": 28,
           "sourceBlocked": 22,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 4,
           "unreviewed": 0,
           "gaps": [
             {
@@ -10271,6 +10475,22 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 4 - Part A",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2013 - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2013 - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 2 - Part 2",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -10279,9 +10499,9 @@
           "label": "1.2 Conflict Resolution #1: The Consumer",
           "sourcePath": "/leaving-certificate/business/higher-old-course/12-conflict-resolution-1-the-consumer",
           "referenceOfficialAssociations": 21,
-          "matched": 16,
+          "matched": 14,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -10303,6 +10523,14 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 1 - Part B",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2012 - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Paper - Section 1 - Question 11",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -10403,9 +10631,9 @@
           "label": "2.1 Enterprise",
           "sourcePath": "/leaving-certificate/business/higher-old-course/21-enterprise",
           "referenceOfficialAssociations": 33,
-          "matched": 18,
+          "matched": 17,
           "sourceBlocked": 15,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -10467,6 +10695,10 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 5 - Part A",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2019 - Section 3 - Question 2 - Part C",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -10475,9 +10707,9 @@
           "label": "3.1 Management Skills (Leading & Motivating)",
           "sourcePath": "/leaving-certificate/business/higher-old-course/31-management-skills-leading-motivating",
           "referenceOfficialAssociations": 32,
-          "matched": 18,
+          "matched": 15,
           "sourceBlocked": 14,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -10535,6 +10767,18 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 5 - Part C",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section 3 - Question 5 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 3 - Question 6 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Paper - Section 3 - Question 6 - Part B",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -10543,9 +10787,9 @@
           "label": "3.2 Management Skills (Communication & ICT)",
           "sourcePath": "/leaving-certificate/business/higher-old-course/32-management-skills-communication-ict",
           "referenceOfficialAssociations": 53,
-          "matched": 22,
+          "matched": 18,
           "sourceBlocked": 31,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 4,
           "unreviewed": 0,
           "gaps": [
             {
@@ -10671,6 +10915,22 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 6 - Part A",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2013 - Section 3 - Question 1 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 4",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2016 - Section 3 - Question 5 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 1 - Section 1 - Question 4",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -10679,9 +10939,9 @@
           "label": "3.3 Management Activities (Planning, Organising, Controlling)",
           "sourcePath": "/leaving-certificate/business/higher-old-course/33-management-activities-planning-organising-controlling",
           "referenceOfficialAssociations": 54,
-          "matched": 34,
+          "matched": 30,
           "sourceBlocked": 20,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 4,
           "unreviewed": 0,
           "gaps": [
             {
@@ -10763,6 +11023,22 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 5 - Part B",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2016 - Section 3 - Question 5 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2017 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 1 - Section 1 - Question 7",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 12",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -10771,9 +11047,9 @@
           "label": "4.1 Household & Business Manager (Sources of Finance & Cashflow Management)",
           "sourcePath": "/leaving-certificate/business/higher-old-course/41-household-business-manager-sources-of-finance-cashflow-management",
           "referenceOfficialAssociations": 38,
-          "matched": 23,
+          "matched": 19,
           "sourceBlocked": 15,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 4,
           "unreviewed": 0,
           "gaps": [
             {
@@ -10835,6 +11111,22 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 6 - Part C",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2018 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 1 - Section 1 - Question 12",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 1 - Section 1 - Question 9",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 4",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -10947,9 +11239,9 @@
           "label": "4.4 Ratio Analysis (Monitoring the Business)",
           "sourcePath": "/leaving-certificate/business/higher-old-course/44-ratio-analysis-monitoring-the-business",
           "referenceOfficialAssociations": 35,
-          "matched": 19,
+          "matched": 18,
           "sourceBlocked": 16,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11015,6 +11307,10 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 1 - Question 6",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2011 - Section 3 - Question 4 - Part C",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11023,9 +11319,9 @@
           "label": "4.5 Human Resource Management",
           "sourcePath": "/leaving-certificate/business/higher-old-course/45-human-resource-management",
           "referenceOfficialAssociations": 25,
-          "matched": 17,
+          "matched": 15,
           "sourceBlocked": 8,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11059,6 +11355,14 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 6 - Part B",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2012 - Section 3 - Question 6 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Section 3 - Question 6 - Part B",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11067,9 +11371,9 @@
           "label": "4.6 Managing Change & TQM",
           "sourcePath": "/leaving-certificate/business/higher-old-course/46-managing-change-tqm",
           "referenceOfficialAssociations": 20,
-          "matched": 11,
+          "matched": 7,
           "sourceBlocked": 9,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 4,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11107,6 +11411,22 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 3 - Question 7 - Part C",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2011 - Section 3 - Question 5 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Sections 2 & 3 - Section 3 - Question 5 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Paper - Section 1 - Question 9",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11115,9 +11435,9 @@
           "label": "5.1 Identifying Opportunities",
           "sourcePath": "/leaving-certificate/business/higher-old-course/51-identifying-opportunities",
           "referenceOfficialAssociations": 43,
-          "matched": 27,
+          "matched": 11,
           "sourceBlocked": 16,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 16,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11183,6 +11503,70 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 2 - Question A",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2010 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2012 - Section 1 - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2013 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2013 - Section 2 - Question ABQ - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2015 - Section 3 - Question 5 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2017 - Section 1 - Question 8",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2017 - Section 3 - Question 5 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2017 - Section 3 - Question 5 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 1 - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 3 - Question 6 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Paper - Section 1 - Question 9",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Paper - Section 3 - Question 8 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Paper - Section 3 - Question 8 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section 3 - Question 8 - Part (c)",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11191,9 +11575,9 @@
           "label": "5.2 Getting Started in Business",
           "sourcePath": "/leaving-certificate/business/higher-old-course/52-getting-started-in-business",
           "referenceOfficialAssociations": 29,
-          "matched": 16,
+          "matched": 13,
           "sourceBlocked": 13,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11247,6 +11631,18 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 3 - Question 8 - Part C",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2010 - Section 1 - Question 5",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2012 - Section 2 - Question ABQ - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 2 - Part 4",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11255,9 +11651,9 @@
           "label": "5.3 Marketing #1: Market Research & Market Segmentation",
           "sourcePath": "/leaving-certificate/business/higher-old-course/53-marketing-1-market-research-market-segmentation",
           "referenceOfficialAssociations": 23,
-          "matched": 12,
+          "matched": 11,
           "sourceBlocked": 11,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11303,6 +11699,10 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 3 - Question 8 - Part A",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Paper - Section 1 - Question 9",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11311,9 +11711,9 @@
           "label": "5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion)",
           "sourcePath": "/leaving-certificate/business/higher-old-course/54-marketing-2-the-4-ps-product-price-place-promotion",
           "referenceOfficialAssociations": 54,
-          "matched": 37,
+          "matched": 32,
           "sourceBlocked": 17,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 5,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11383,6 +11783,26 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 7 - Part B",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2017 - Section 3 - Question 3 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 1 - Question 8",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 3 - Question 7 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 3 - Question 8 - Part B",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11391,9 +11811,9 @@
           "label": "5.5 Business Expansion",
           "sourcePath": "/leaving-certificate/business/higher-old-course/55-business-expansion",
           "referenceOfficialAssociations": 24,
-          "matched": 14,
+          "matched": 12,
           "sourceBlocked": 10,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11435,6 +11855,14 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 8 - Part C",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Paper - Section 1 - Question 9",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Paper - Section 2 - Question 1 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11443,9 +11871,9 @@
           "label": "6.1 Categories of Industry",
           "sourcePath": "/leaving-certificate/business/higher-old-course/61-categories-of-industry",
           "referenceOfficialAssociations": 26,
-          "matched": 17,
+          "matched": 10,
           "sourceBlocked": 9,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 7,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11483,6 +11911,34 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 2 - Part C",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2010 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2011 - Section 3 - Question 3 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2015 - Section 3 - Question 3 - Part (A)",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2018 - Section 3 - Question 2 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2018 - Section 3 - Question 3 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Section 3 - Question 2 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11491,9 +11947,9 @@
           "label": "6.2 Ownership Structures",
           "sourcePath": "/leaving-certificate/business/higher-old-course/62-ownership-structures",
           "referenceOfficialAssociations": 33,
-          "matched": 22,
+          "matched": 19,
           "sourceBlocked": 11,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11539,6 +11995,18 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 2 - Question B",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2012 - Section 2 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2018 - Section 3 - Question 5 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11547,9 +12015,9 @@
           "label": "6.3 Business, Government & the Economy",
           "sourcePath": "/leaving-certificate/business/higher-old-course/63-business-government-the-economy",
           "referenceOfficialAssociations": 53,
-          "matched": 37,
+          "matched": 32,
           "sourceBlocked": 16,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 5,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11615,6 +12083,26 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 2 - Part A",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2010 - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2017 - Section 3 - Question 2 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 3 - Question 5 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 3 - Question 3 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 1 - Section 1 - Question 8",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11623,9 +12111,9 @@
           "label": "6.4 Community Development",
           "sourcePath": "/leaving-certificate/business/higher-old-course/64-community-development",
           "referenceOfficialAssociations": 13,
-          "matched": 7,
+          "matched": 6,
           "sourceBlocked": 6,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11651,6 +12139,10 @@
             {
               "heading": "2009 - Section 1 - Question 5",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2014 - Section 3 - Question 2 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11723,9 +12215,9 @@
           "label": "7.1 International Trade",
           "sourcePath": "/leaving-certificate/business/higher-old-course/71-international-trade",
           "referenceOfficialAssociations": 46,
-          "matched": 30,
+          "matched": 29,
           "sourceBlocked": 16,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11791,6 +12283,10 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 3 - Part B",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 11",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11887,9 +12383,9 @@
           "label": "7.3 Global Business",
           "sourcePath": "/leaving-certificate/business/higher-old-course/73-global-business",
           "referenceOfficialAssociations": 24,
-          "matched": 15,
+          "matched": 12,
           "sourceBlocked": 9,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -11927,6 +12423,18 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section 3 - Question 3 - Part C",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Paper - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 2 - Part 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 2 - Part 5",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11935,14 +12443,18 @@
           "label": "ABQ (Units 2, 3 & 4)",
           "sourcePath": "/leaving-certificate/business/higher-old-course/abq-units-2-3-4",
           "referenceOfficialAssociations": 6,
-          "matched": 5,
+          "matched": 4,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2005 - Section 2 - Question 1 - ABQ",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2024 - Section 2 - Question 1",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -11951,14 +12463,18 @@
           "label": "ABQ (Units 1, 2 & 3)",
           "sourcePath": "/leaving-certificate/business/higher-old-course/abq-units-1-2-3",
           "referenceOfficialAssociations": 3,
-          "matched": 2,
+          "matched": 1,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2009 - Section 2 - Question ABQ",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2019 - Section 2 - Question 1",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -12003,9 +12519,9 @@
           "label": "ABQ (Units 5, 6 & 7)",
           "sourcePath": "/leaving-certificate/business/higher-old-course/abq-units-5-6-7",
           "referenceOfficialAssociations": 8,
-          "matched": 6,
+          "matched": 5,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -12015,6 +12531,10 @@
             {
               "heading": "2008 - Section 2 - Question ABQ",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2024 - Section 2 - Question 1",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -12023,14 +12543,18 @@
           "label": "ABQ 2019 (Units 1, 2 & 3)",
           "sourcePath": "/leaving-certificate/business/higher-old-course/abq-2019-units-1-2-3",
           "referenceOfficialAssociations": 3,
-          "matched": 2,
+          "matched": 1,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2009 - Section 2 - Question ABQ",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2014 - Section 2 - Question A-C",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13038,9 +13562,9 @@
           "label": "1.1 People in Business & Contract Law",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/11-people-in-business-contract-law",
           "referenceOfficialAssociations": 36,
-          "matched": 29,
+          "matched": 23,
           "sourceBlocked": 7,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 6,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13070,6 +13594,30 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 1 - Question 3",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 2 - Question 1 - Part D-E",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 2 - Question 4 - Part A-E",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 1 - Section 1 - Question 4",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 2 - Section 2 - Question 8 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section 2 - Question 6 - Part A,B",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13078,9 +13626,9 @@
           "label": "1.2 Conflict Resolution #1: The Consumer",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/12-conflict-resolution-1-the-consumer",
           "referenceOfficialAssociations": 36,
-          "matched": 25,
+          "matched": 24,
           "sourceBlocked": 11,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13126,6 +13674,10 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 4 - Part E",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 14",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13134,9 +13686,9 @@
           "label": "1.3 Conflict Resolution #2: Industrial Relations",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/13-conflict-resolution-2-industrial-relations",
           "referenceOfficialAssociations": 44,
-          "matched": 35,
+          "matched": 34,
           "sourceBlocked": 9,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13174,6 +13726,10 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 4 - Part C",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Paper - Section 2 - Section 1 - Question 2 - Part C",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13182,9 +13738,9 @@
           "label": "2.1 Enterprise",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/21-enterprise",
           "referenceOfficialAssociations": 28,
-          "matched": 24,
+          "matched": 21,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13202,6 +13758,18 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 1 - Question 9",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2018 - Section 2 - Question 3 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 2 - Section 2 - Question 8 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section 2 - Question 9 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13210,9 +13778,9 @@
           "label": "3.1 Management Skills (Leading & Motivating)",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/31-management-skills-leading-motivating",
           "referenceOfficialAssociations": 46,
-          "matched": 36,
+          "matched": 29,
           "sourceBlocked": 10,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 7,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13254,6 +13822,34 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 5 - Part E",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2011 - Section 1 - Question 13",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2011 - Section 1 - Question 13",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2018 - Section 1 - Question 14",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 9",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 2 - Question 6 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section 2 - Question 7 - Part D,E",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13262,9 +13858,9 @@
           "label": "3.2 Management Skills (Communication & ICT)",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/32-management-skills-communication-ict",
           "referenceOfficialAssociations": 75,
-          "matched": 50,
+          "matched": 49,
           "sourceBlocked": 25,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13366,6 +13962,10 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 7 - Part D",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2019 - Section 2 - Question 2 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13374,9 +13974,9 @@
           "label": "3.3 Management Activities (Planning, Organising, Controlling)",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/33-management-activities-planning-organising-controlling",
           "referenceOfficialAssociations": 55,
-          "matched": 40,
+          "matched": 37,
           "sourceBlocked": 15,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13438,6 +14038,18 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 1 - Question 15",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2011 - Section 1 - Question 13",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2011 - Section 1 - Question 13",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13446,9 +14058,9 @@
           "label": "4.1 Household & Busines Manager (Sources of Finance & Cashflow Management)",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/41-household-busines-manager-sources-of-finance-cashflow-management",
           "referenceOfficialAssociations": 61,
-          "matched": 45,
+          "matched": 38,
           "sourceBlocked": 16,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 7,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13514,6 +14126,34 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 8 - Part D",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2011 - Section 1 - Question 14",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2011 - Section 2 - Question 8 - Part D",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2011 - Section 2 - Question 8 - Part D",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 8",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 2 - Section 2 - Question 7 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 7",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 8",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13522,9 +14162,9 @@
           "label": "4.2 Insurance",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/42-insurance",
           "referenceOfficialAssociations": 35,
-          "matched": 25,
+          "matched": 24,
           "sourceBlocked": 10,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13566,6 +14206,10 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 1 - Question 2",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2019 - Section 1 - Question 7",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13610,9 +14254,9 @@
           "label": "4.4 Ratio Analysis (Monitoring the Business)",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/44-ratio-analysis-monitoring-the-business",
           "referenceOfficialAssociations": 25,
-          "matched": 15,
+          "matched": 14,
           "sourceBlocked": 10,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13654,6 +14298,10 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 8 - Part E",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section 2 - Question 7 - Part A-B",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13662,9 +14310,9 @@
           "label": "4.5 Human Resource Management",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/45-human-resource-management",
           "referenceOfficialAssociations": 47,
-          "matched": 35,
+          "matched": 30,
           "sourceBlocked": 12,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 5,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13714,6 +14362,26 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 7 - Part E",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2010 - Section 2 - Question 4 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 15",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2016 - Section A - Question 7",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 1 - Section 1 - Question 5",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 2 - Section 2 - Question 5 - Part E",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13722,9 +14390,9 @@
           "label": "4.6 Managing Change & TQM",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/46-managing-change-tqm",
           "referenceOfficialAssociations": 7,
-          "matched": 4,
+          "matched": 2,
           "sourceBlocked": 3,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13738,6 +14406,14 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 1 - Question 14",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Paper - Section 2 - Section 2 - Question 5 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section 1 - Question 5",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13746,9 +14422,9 @@
           "label": "5.1 Identifying Opportunities",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/51-identifying-opportunities",
           "referenceOfficialAssociations": 23,
-          "matched": 18,
+          "matched": 13,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 5,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13770,6 +14446,26 @@
             {
               "heading": "2009 - Section 1 - Question 15",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2013 - Section 2 - Question 4 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2014 - Section 2 - Question 8 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section 1 - Question 4",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13778,9 +14474,9 @@
           "label": "5.2 Getting Started in Business",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/52-getting-started-in-business",
           "referenceOfficialAssociations": 48,
-          "matched": 37,
+          "matched": 26,
           "sourceBlocked": 11,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 11,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13826,6 +14522,50 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 6 - Part C",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2016 - Section 2 - Question 7 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2016 - Section A - Question 14",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2018 - Section 1 - Question 12",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2018 - Section 2 - Question 7 - Part D",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 1 - Question 13",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Section 1 - Question 12",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Section 1 - Question 14",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Section 1 - Question 7",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 13",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 5",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section 1 - Question 13",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13834,9 +14574,9 @@
           "label": "5.3 Marketing #1: Market Research & Market Segemtation",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/53-marketing-1-market-research-market-segemtation",
           "referenceOfficialAssociations": 38,
-          "matched": 28,
+          "matched": 22,
           "sourceBlocked": 10,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 6,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13878,6 +14618,30 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 9 - Part B",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2012 - Section 1 - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 12",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 4",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 2 - Question 9 - Part A-C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13886,9 +14650,9 @@
           "label": "5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion)",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/54-marketing-2-the-4-ps-product-price-place-promotion",
           "referenceOfficialAssociations": 65,
-          "matched": 52,
+          "matched": 48,
           "sourceBlocked": 13,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 4,
           "unreviewed": 0,
           "gaps": [
             {
@@ -13942,6 +14706,22 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 9 - Part D",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2011 - Section 2 - Question 8 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 1 - Section 1 - Question 14",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 1 - Section 1 - Question 4",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section 2 - Question 9 - Part C,D",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13950,14 +14730,26 @@
           "label": "5.5 Business Expansion",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/55-business-expansion",
           "referenceOfficialAssociations": 18,
-          "matched": 17,
+          "matched": 14,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2007 - Section 2 - Question 8 - Part D",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2018 - Section 2 - Question 6 - Part D",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 2 - Question 7 - Part C-E",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 2 - Section 2 - Question 6 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -13966,9 +14758,9 @@
           "label": "6.1 Categories of Industry",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/61-categories-of-industry",
           "referenceOfficialAssociations": 33,
-          "matched": 24,
+          "matched": 21,
           "sourceBlocked": 9,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -14006,6 +14798,18 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 2 - Part C",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2012 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2016 - Section A - Question 4",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 2 - Question 8 - Part B",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -14014,9 +14818,9 @@
           "label": "6.2 Ownership Structures",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/62-ownership-structures",
           "referenceOfficialAssociations": 41,
-          "matched": 27,
+          "matched": 25,
           "sourceBlocked": 14,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -14074,6 +14878,14 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 9 - Part A",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Paper - Section 1 - Section 1 - Question 5",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section 2 - Question 8 - Part D",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -14082,9 +14894,9 @@
           "label": "6.3 Business, Government & the Economy",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/63-business-government-the-economy",
           "referenceOfficialAssociations": 40,
-          "matched": 33,
+          "matched": 26,
           "sourceBlocked": 7,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 7,
           "unreviewed": 0,
           "gaps": [
             {
@@ -14114,6 +14926,34 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 1 - Question 2",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2011 - Section 1 - Question 15",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2011 - Section 1 - Question 15",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2012 - Section 2 - Question 2 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2012 - Section 2 - Question 2 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Section 1 - Question 13",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 2 - Question 6 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -14122,9 +14962,9 @@
           "label": "6.4 Community Development",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/64-community-development",
           "referenceOfficialAssociations": 16,
-          "matched": 12,
+          "matched": 10,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -14142,6 +14982,14 @@
             {
               "heading": "2009 - Section 2 - Question 2 - Part B-D",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2015 - Section 2 - Question 2 - Part D",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section 1 - Question 12",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -14150,9 +14998,9 @@
           "label": "6.5 Business Ethics & Social Responsibility",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/65-business-ethics-social-responsibility",
           "referenceOfficialAssociations": 22,
-          "matched": 15,
+          "matched": 14,
           "sourceBlocked": 7,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -14182,6 +15030,10 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 2 - Part D",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2011 - Section 2 - Question 4 - Part D",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -14190,9 +15042,9 @@
           "label": "7.1 International Trade",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/71-international-trade",
           "referenceOfficialAssociations": 38,
-          "matched": 23,
+          "matched": 21,
           "sourceBlocked": 15,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -14254,6 +15106,14 @@
             {
               "heading": "2022 - Deferred Exam Paper - Section 2 - Question 3 - Part B",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2012 - Section 1 - Question 7",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 2 - Question 8 - Part D",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -14302,9 +15162,9 @@
           "label": "7.3 Global Business",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/73-global-business",
           "referenceOfficialAssociations": 22,
-          "matched": 16,
+          "matched": 14,
           "sourceBlocked": 6,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -14330,6 +15190,14 @@
             {
               "heading": "2009 - Section 2 - Question 2 - Part A",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Paper - Section 1 - Section 1 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 9",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -14338,9 +15206,9 @@
           "label": "What do these initials stand for?",
           "sourcePath": "/leaving-certificate/business/ordinary-old-course/what-do-these-initials-stand-for",
           "referenceOfficialAssociations": 25,
-          "matched": 18,
+          "matched": 0,
           "sourceBlocked": 7,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 18,
           "unreviewed": 0,
           "gaps": [
             {
@@ -14370,6 +15238,78 @@
             {
               "heading": "2009 - Section 1 - Question 1",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2010 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2010 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2011 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2011 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2012 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2012 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2013 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2016 - Section A - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2017 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2018 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2018 - Section 1 - Question 5",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section 1 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
             }
           ]
         }
@@ -23197,12 +24137,12 @@
       "totals": {
         "referenceTopics": 40,
         "referenceOfficialAssociations": 1120,
-        "matched": 903,
+        "matched": 822,
         "sourceBlocked": 217,
-        "referenceAnomaly": 0,
+        "referenceAnomaly": 81,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
-        "topicsWithGaps": 31
+        "topicsWithGaps": 34
       },
       "topics": [
         {
@@ -23210,9 +24150,9 @@
           "label": "1.1 Economic Concepts",
           "sourcePath": "/leaving-certificate/economics/higher/11-economic-concepts",
           "referenceOfficialAssociations": 25,
-          "matched": 19,
+          "matched": 15,
           "sourceBlocked": 6,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 4,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23238,6 +24178,22 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 2",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 3 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section A - Question 7 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section B - Question 16 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section A - Question 9",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23246,9 +24202,9 @@
           "label": "1.2 Sustainability",
           "sourcePath": "/leaving-certificate/economics/higher/12-sustainability",
           "referenceOfficialAssociations": 12,
-          "matched": 10,
+          "matched": 8,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23258,6 +24214,14 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 7",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2026 - Section A - Question 4 - Part B,C",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23266,9 +24230,9 @@
           "label": "2.1 The Market Economy",
           "sourcePath": "/leaving-certificate/economics/higher/21-the-market-economy",
           "referenceOfficialAssociations": 53,
-          "matched": 37,
+          "matched": 34,
           "sourceBlocked": 16,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23334,6 +24298,18 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 8",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 3 - Part A-B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 16 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section A - Question 3",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23342,9 +24318,9 @@
           "label": "2.2 Elasticity",
           "sourcePath": "/leaving-certificate/economics/higher/22-elasticity",
           "referenceOfficialAssociations": 25,
-          "matched": 21,
+          "matched": 20,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23362,6 +24338,10 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 3",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2025 - Section A - Question 2 - Part A,B",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23370,9 +24350,9 @@
           "label": "2.3 Costs of Production, Revenue & Profit",
           "sourcePath": "/leaving-certificate/economics/higher/23-costs-of-production-revenue-profit",
           "referenceOfficialAssociations": 33,
-          "matched": 25,
+          "matched": 23,
           "sourceBlocked": 8,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23406,6 +24386,14 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 9",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Section B - Question 13 - Part b",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section A - Question 9",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23414,9 +24402,9 @@
           "label": "2.4 Government Intervention",
           "sourcePath": "/leaving-certificate/economics/higher/24-government-intervention",
           "referenceOfficialAssociations": 48,
-          "matched": 40,
+          "matched": 38,
           "sourceBlocked": 8,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23450,6 +24438,14 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 7",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 4 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section B - Question 11 - Part C",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23458,9 +24454,9 @@
           "label": "3.1 Market Structures",
           "sourcePath": "/leaving-certificate/economics/higher/31-market-structures",
           "referenceOfficialAssociations": 53,
-          "matched": 42,
+          "matched": 41,
           "sourceBlocked": 11,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23506,6 +24502,10 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section  B - Question 12",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 15 - Part a",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23514,9 +24514,9 @@
           "label": "3.2 The Labour Market",
           "sourcePath": "/leaving-certificate/economics/higher/32-the-labour-market",
           "referenceOfficialAssociations": 30,
-          "matched": 22,
+          "matched": 20,
           "sourceBlocked": 8,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23550,6 +24550,14 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section  B - Question 13",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Section B - Question 14 - Part a,b",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2026 - Section B - Question 15 - Part C",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23558,14 +24566,18 @@
           "label": "3.3 Market Failure",
           "sourcePath": "/leaving-certificate/economics/higher/33-market-failure",
           "referenceOfficialAssociations": 10,
-          "matched": 9,
+          "matched": 8,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2007 - Section A - Question 8",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2026 - Section A - Question 7 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23574,9 +24586,9 @@
           "label": "4.1 National Income",
           "sourcePath": "/leaving-certificate/economics/higher/41-national-income",
           "referenceOfficialAssociations": 51,
-          "matched": 40,
+          "matched": 36,
           "sourceBlocked": 11,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 4,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23622,6 +24634,22 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 6",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 7 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 13 - Part a",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section A - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2026 - Section A - Question 8 - Part B",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23630,9 +24658,9 @@
           "label": "4.2 Fiscal Policy and the Budget Framework",
           "sourcePath": "/leaving-certificate/economics/higher/42-fiscal-policy-and-the-budget-framework",
           "referenceOfficialAssociations": 70,
-          "matched": 58,
+          "matched": 53,
           "sourceBlocked": 12,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 5,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23682,6 +24710,26 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section  B - Question 16 - Part B",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section B - Question 14 - Part B(II)",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section A - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 14 - Part c (iii)",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 15 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section B - Question 12 - Part c",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23730,9 +24778,9 @@
           "label": "4.4 Monetary Policy and Price Level",
           "sourcePath": "/leaving-certificate/economics/higher/44-monetary-policy-and-price-level",
           "referenceOfficialAssociations": 35,
-          "matched": 25,
+          "matched": 24,
           "sourceBlocked": 10,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23774,6 +24822,10 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 10",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 5 - Part B",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23814,9 +24866,9 @@
           "label": "5.1 Economic Growth and Development",
           "sourcePath": "/leaving-certificate/economics/higher/51-economic-growth-and-development",
           "referenceOfficialAssociations": 33,
-          "matched": 22,
+          "matched": 20,
           "sourceBlocked": 11,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23862,6 +24914,14 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section A - Question 5",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 12 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 15 - Part c",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23870,14 +24930,22 @@
           "label": "5.2 Globalisation",
           "sourcePath": "/leaving-certificate/economics/higher/52-globalisation",
           "referenceOfficialAssociations": 10,
-          "matched": 9,
+          "matched": 7,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2009 - Section B - Question 3 - Part c",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 13 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section B - Question 14 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23950,9 +25018,9 @@
           "label": "6.1 Topical Questions and Statistics",
           "sourcePath": "/leaving-certificate/economics/higher/61-topical-questions-and-statistics",
           "referenceOfficialAssociations": 31,
-          "matched": 27,
+          "matched": 9,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 18,
           "unreviewed": 0,
           "gaps": [
             {
@@ -23970,6 +25038,78 @@
             {
               "heading": "2022 - Deferred Exam Paper  - Section  B - Question 14",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section B - Question 12 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section B - Question 16 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section A - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section A - Question 5",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section A - Question 8",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section A - Question 9",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 11 - Part a",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 11 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 12 - Part a",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 12 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 13 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 14 - Part a",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 14 - Part c (iii)",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 15 - Part a",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Paper - Section B - Question 15 - Part c",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section B - Question 13 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section B - Question 13 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section B - Question 16 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -23989,42 +25129,85 @@
           "label": "1.1 Economics as a Way of Thinking",
           "sourcePath": "/leaving-certificate/economics/ordinary/11-economics-as-a-way-of-thinking",
           "referenceOfficialAssociations": 6,
-          "matched": 6,
+          "matched": 1,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 5,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2021 - Section B - Question 14 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section B - Question 16 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section A - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section A - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section A - Question 3",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "economics-ordinary-12-the-economic-concepts-of-scarcity-and-choice",
           "label": "1.2 The Economic Concepts of Scarcity and Choice",
           "sourcePath": "/leaving-certificate/economics/ordinary/12-the-economic-concepts-of-scarcity-and-choice",
           "referenceOfficialAssociations": 7,
-          "matched": 7,
+          "matched": 5,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2024 - Section A - Question 4",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section A - Question 7",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "economics-ordinary-13-sustainability",
           "label": "1.3 Sustainability",
           "sourcePath": "/leaving-certificate/economics/ordinary/13-sustainability",
           "referenceOfficialAssociations": 12,
-          "matched": 12,
+          "matched": 9,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2021 - Section B - Question 11 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section A - Question 8",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2026 - Section A - Question 2",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "economics-ordinary-21-the-market-economy",
           "label": "2.1 The Market Economy",
           "sourcePath": "/leaving-certificate/economics/ordinary/21-the-market-economy",
           "referenceOfficialAssociations": 52,
-          "matched": 43,
+          "matched": 42,
           "sourceBlocked": 9,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24062,6 +25245,10 @@
             {
               "heading": "2009 - Section B - Question 2",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Section A - Question 2 - Part a",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24098,9 +25285,9 @@
           "label": "2.3 Costs of Production, Revenue & Profit",
           "sourcePath": "/leaving-certificate/economics/ordinary/23-costs-of-production-revenue-profit",
           "referenceOfficialAssociations": 20,
-          "matched": 18,
+          "matched": 16,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24110,6 +25297,14 @@
             {
               "heading": "2009 - Section A - Question 5",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section B - Question 16 - Part B",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section A - Question 6",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24118,9 +25313,9 @@
           "label": "2.4 Government Intervention",
           "sourcePath": "/leaving-certificate/economics/ordinary/24-government-intervention",
           "referenceOfficialAssociations": 82,
-          "matched": 68,
+          "matched": 61,
           "sourceBlocked": 14,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 7,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24178,6 +25373,34 @@
             {
               "heading": "2009 - Section B - Question 6",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section A - Question 10 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section A - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section A - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section A - Question 7",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section B - Question 11 - Part C",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2026 - Section A - Question 8",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24226,9 +25449,9 @@
           "label": "3.2 The Labour Market",
           "sourcePath": "/leaving-certificate/economics/ordinary/32-the-labour-market",
           "referenceOfficialAssociations": 38,
-          "matched": 29,
+          "matched": 26,
           "sourceBlocked": 9,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24266,6 +25489,18 @@
             {
               "heading": "2009 - Section B - Question 3",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section B - Question 16 - Part A",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section B - Question 14 - Part a",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Section B - Question 15 - Part A",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24285,9 +25520,9 @@
           "label": "4.1 National Income",
           "sourcePath": "/leaving-certificate/economics/ordinary/41-national-income",
           "referenceOfficialAssociations": 36,
-          "matched": 31,
+          "matched": 29,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24309,6 +25544,14 @@
             {
               "heading": "2009 - Section B - Question 5",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Section B - Question 15 - Part C",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24317,9 +25560,9 @@
           "label": "4.2 Fiscal Policy & the Budget Framework",
           "sourcePath": "/leaving-certificate/economics/ordinary/42-fiscal-policy-the-budget-framework",
           "referenceOfficialAssociations": 48,
-          "matched": 44,
+          "matched": 43,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24337,6 +25580,10 @@
             {
               "heading": "2009 - Section B - Question 4",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 5",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24383,9 +25630,9 @@
           "label": "5.1 Economic Growth & Development",
           "sourcePath": "/leaving-certificate/economics/ordinary/51-economic-growth-development",
           "referenceOfficialAssociations": 42,
-          "matched": 36,
+          "matched": 35,
           "sourceBlocked": 6,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24411,6 +25658,10 @@
             {
               "heading": "2009 - Section B - Question 6",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 5",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24474,9 +25725,9 @@
           "label": "Acronyms",
           "sourcePath": "/leaving-certificate/economics/ordinary/acronyms",
           "referenceOfficialAssociations": 31,
-          "matched": 26,
+          "matched": 25,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24498,6 +25749,10 @@
             {
               "heading": "2009 - Section B - Question 5",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 2",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -24506,9 +25761,9 @@
           "label": "Formulas",
           "sourcePath": "/leaving-certificate/economics/ordinary/formulas",
           "referenceOfficialAssociations": 23,
-          "matched": 18,
+          "matched": 15,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -24530,6 +25785,18 @@
             {
               "heading": "2009 - Section B - Question 5",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section A - Question 4",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section A - Question 7",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -29694,9 +30961,9 @@
       "totals": {
         "referenceTopics": 33,
         "referenceOfficialAssociations": 739,
-        "matched": 505,
+        "matched": 486,
         "sourceBlocked": 234,
-        "referenceAnomaly": 0,
+        "referenceAnomaly": 19,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
         "topicsWithGaps": 32
@@ -30718,9 +31985,9 @@
           "label": "Reading Comprehension - Article",
           "sourcePath": "/leaving-certificate/french/ordinary/reading-comprehension-article",
           "referenceOfficialAssociations": 33,
-          "matched": 20,
+          "matched": 5,
           "sourceBlocked": 13,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 15,
           "unreviewed": 0,
           "gaps": [
             {
@@ -30774,6 +32041,66 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section A - Question 3",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2010 - Paper - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2010 - Paper - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2010 - Paper - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2011 - Paper - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2011 - Paper - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2012 - Paper - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2012 - Paper - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2013 - Paper - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2014 - Paper - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2017 - Paper - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2018 - Paper - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2018 - Paper - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Paper - Section A - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Paper - Section A - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2025 - Paper - Section A - Question 4",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -30782,9 +32109,9 @@
           "label": "Reading Comprehension - Book Extract",
           "sourcePath": "/leaving-certificate/french/ordinary/reading-comprehension-book-extract",
           "referenceOfficialAssociations": 23,
-          "matched": 16,
+          "matched": 15,
           "sourceBlocked": 7,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -30814,6 +32141,10 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section A - Question 4",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Paper - Section A - Question 1",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -30822,14 +32153,18 @@
           "label": "Reading Comprehension - Interview",
           "sourcePath": "/leaving-certificate/french/ordinary/reading-comprehension-interview",
           "referenceOfficialAssociations": 14,
-          "matched": 13,
+          "matched": 12,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2008 - Paper - Section 1 - Question 3",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Paper - Section A - Question 4",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -30838,9 +32173,9 @@
           "label": "Reading Comprehension - Other Website & Magazine Extracts",
           "sourcePath": "/leaving-certificate/french/ordinary/reading-comprehension-other-website-magazine-extracts",
           "referenceOfficialAssociations": 26,
-          "matched": 19,
+          "matched": 17,
           "sourceBlocked": 7,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -30870,6 +32205,14 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section A - Question 2",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2012 - Paper - Section 1 - Question 1",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Paper - Section A - Question 3",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -48992,12 +50335,12 @@
       "totals": {
         "referenceTopics": 88,
         "referenceOfficialAssociations": 1265,
-        "matched": 963,
+        "matched": 951,
         "sourceBlocked": 302,
-        "referenceAnomaly": 0,
+        "referenceAnomaly": 12,
         "unreviewed": 0,
         "sourceUnavailableTopics": 2,
-        "topicsWithGaps": 75
+        "topicsWithGaps": 77
       },
       "topics": [
         {
@@ -49025,9 +50368,9 @@
           "label": "1. Learning and Improving Skill & Technique: Biomechanics",
           "sourcePath": "/leaving-certificate/physical-education/higher/1-learning-and-improving-skill-technique-biomechanics",
           "referenceOfficialAssociations": 23,
-          "matched": 19,
+          "matched": 18,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -49045,6 +50388,10 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section C - Question 18 - Part (c),(d)",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2025 - Section A - Question 2",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49285,9 +50632,9 @@
           "label": "7. Physical Activity & Inclusion",
           "sourcePath": "/leaving-certificate/physical-education/higher/7-physical-activity-inclusion",
           "referenceOfficialAssociations": 15,
-          "matched": 13,
+          "matched": 12,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -49297,6 +50644,10 @@
             {
               "heading": "2020 - Sample Paper - Section B - Question 11 - Part d",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Paper - Section A - Question 5",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49341,9 +50692,9 @@
           "label": "Business & Enterprise in Physical Activity & Sport",
           "sourcePath": "/leaving-certificate/physical-education/higher/business-enterprise-in-physical-activity-sport",
           "referenceOfficialAssociations": 17,
-          "matched": 13,
+          "matched": 12,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -49361,6 +50712,10 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section C - Question 15 - Part (b),(c),(d)",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 9",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49369,9 +50724,9 @@
           "label": "1. Learning and Improving Skill & Technique",
           "sourcePath": "/leaving-certificate/physical-education/ordinary/1-learning-and-improving-skill-technique",
           "referenceOfficialAssociations": 17,
-          "matched": 15,
+          "matched": 12,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -49381,6 +50736,18 @@
             {
               "heading": "2020 - Section C - Question 12",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 5",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section A - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section A - Question 12",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49389,9 +50756,9 @@
           "label": "2. Physical & Psychological Demands of Performance",
           "sourcePath": "/leaving-certificate/physical-education/ordinary/2-physical-psychological-demands-of-performance",
           "referenceOfficialAssociations": 33,
-          "matched": 28,
+          "matched": 27,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -49413,6 +50780,10 @@
             {
               "heading": "2020 - Section C - Question 13",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 3",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49445,20 +50816,29 @@
           "label": "4. Planning for Optimum Performance",
           "sourcePath": "/leaving-certificate/physical-education/ordinary/4-planning-for-optimum-performance",
           "referenceOfficialAssociations": 15,
-          "matched": 15,
+          "matched": 13,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2021 - Section A - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section A - Question 3",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "physical-education-ordinary-5-promoting-physical-activity",
           "label": "5. Promoting Physical Activity",
           "sourcePath": "/leaving-certificate/physical-education/ordinary/5-promoting-physical-activity",
           "referenceOfficialAssociations": 21,
-          "matched": 18,
+          "matched": 17,
           "sourceBlocked": 3,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -49472,6 +50852,10 @@
             {
               "heading": "2020 - Section C - Question 16",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 1",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49504,14 +50888,18 @@
           "label": "7. Physical Activity & Inclusion",
           "sourcePath": "/leaving-certificate/physical-education/ordinary/7-physical-activity-inclusion",
           "referenceOfficialAssociations": 8,
-          "matched": 7,
+          "matched": 6,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2020 - Section C - Question 14 - Part b-d",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 4",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49551,11 +50939,16 @@
           "label": "Business & Enterprise in Physical Activity & Sport",
           "sourcePath": "/leaving-certificate/physical-education/ordinary/business-enterprise-in-physical-activity-sport",
           "referenceOfficialAssociations": 9,
-          "matched": 9,
+          "matched": 8,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2022 - Section A - Question 4",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "physical-education-higher-new-course-11-describe-the-stages-of-skill-learning",

@@ -3,18 +3,22 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
-  Eye, AlertTriangle, Lightbulb, SlidersHorizontal, Brain, Wrench
+AlertTriangle,
+Brain,
+Eye,
+Lightbulb,SlidersHorizontal,
+Wrench
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { accentTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { Cite } from './ModuleReferences';
+import React,{ useState } from 'react';
 import { ILLUSION_OF_COMPETENCE_REFERENCE_LIST } from '../data/references/illusionOfCompetence';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { accentTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 
 const theme = accentTheme;
 
@@ -82,10 +86,10 @@ const ForgettingCurveSimulator = () => {
     const dayLabels = ['Learn', '1', '2', '3', '4', '5', '6', '7'];
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Forgetting Curve</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Click on days to place review sessions and see how spacing fights forgetting.</p>
-            <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">You have 3 reviews to place. Where will you put them?</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Forgetting Curve</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">Click on days to place review sessions and see how spacing fights forgetting.</p>
+            <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">You have 3 reviews to place. Where will you put them?</p>
 
             {/* Chart */}
             <div className="w-full overflow-visible">
@@ -93,20 +97,20 @@ const ForgettingCurveSimulator = () => {
                 {/* Y-axis gridlines and labels */}
                 {[0, 25, 50, 75, 100].map(pct => (
                   <g key={pct}>
-                    <line x1={chartLeft} y1={toY(pct)} x2={chartRight} y2={toY(pct)} stroke="#e5e7eb" strokeWidth="0.5" className="dark:opacity-20" />
-                    <text x={chartLeft - 6} y={toY(pct) + 4} textAnchor="end" fontSize="9" fill="#a1a1aa">{pct}%</text>
+                    <line x1={chartLeft} y1={toY(pct)} x2={chartRight} y2={toY(pct)} stroke="var(--module-on-fill)" strokeWidth="0.5" className="dark:opacity-20" />
+                    <text x={chartLeft - 6} y={toY(pct) + 4} textAnchor="end" fontSize="9" fill="var(--module-surface)">{pct}%</text>
                   </g>
                 ))}
 
                 {/* Baseline curve (no reviews) - dashed */}
-                <path d={buildPath(baselineCurve)} fill="none" stroke="#d4d4d8" strokeWidth="2" strokeDasharray="6 4" className="dark:opacity-40" />
+                <path d={buildPath(baselineCurve)} fill="none" stroke="var(--module-muted)" strokeWidth="2" strokeDasharray="6 4" className="dark:opacity-40" />
 
                 {/* Active curve with reviews */}
                 <motion.path
                   key={pins.join(',')}
                   d={buildPath(activeCurve)}
                   fill="none"
-                  stroke="#14b8a6"
+                  stroke="var(--module-success-text)"
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   initial={{ pathLength: 0 }}
@@ -125,8 +129,8 @@ const ForgettingCurveSimulator = () => {
                 />
                 <defs>
                   <linearGradient id="tealGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#14b8a6" />
-                    <stop offset="100%" stopColor="#14b8a6" stopOpacity="0" />
+                    <stop offset="0%" stopColor="var(--module-success)" />
+                    <stop offset="100%" stopColor="var(--module-success)" stopOpacity="0" />
                   </linearGradient>
                 </defs>
 
@@ -140,7 +144,7 @@ const ForgettingCurveSimulator = () => {
                       {isPin && (
                         <motion.line
                           x1={toX(i)} y1={toY(activeCurve[i])} x2={toX(i)} y2={chartBottom}
-                          stroke="#14b8a6" strokeWidth="1" strokeDasharray="3 3"
+                          stroke="var(--module-success-text)" strokeWidth="1" strokeDasharray="3 3"
                           initial={{ opacity: 0 }} animate={{ opacity: 0.5 }}
                         />
                       )}
@@ -148,7 +152,7 @@ const ForgettingCurveSimulator = () => {
                       {isPin && (
                         <motion.circle
                           cx={toX(i)} cy={toY(activeCurve[i])} r="4"
-                          fill="#14b8a6"
+                          fill="var(--module-success)"
                           initial={{ scale: 0 }} animate={{ scale: 1 }}
                           transition={{ type: 'spring', stiffness: 300, damping: 15 }}
                         />
@@ -160,8 +164,8 @@ const ForgettingCurveSimulator = () => {
                       >
                         <rect
                           x={toX(i) - 16} y={chartBottom + 6} width="32" height="28" rx="6"
-                          fill={isPin ? '#14b8a6' : i === 0 ? '#f4f4f5' : '#f4f4f5'}
-                          stroke={isPin ? '#0d9488' : '#e4e4e7'}
+                          fill={isPin ? "var(--module-success)" : i === 0 ? "var(--module-surface)" : "var(--module-surface)"}
+                          stroke={isPin ? "var(--module-success-text)" : "var(--module-on-fill)"}
                           strokeWidth="1"
                           className={isPin ? '' : 'dark:fill-zinc-700 dark:stroke-zinc-600'}
                         />
@@ -169,12 +173,12 @@ const ForgettingCurveSimulator = () => {
                           x={toX(i)} y={chartBottom + 24}
                           textAnchor="middle" fontSize="9"
                           fontWeight={isPin || i === 0 ? 'bold' : 'normal'}
-                          fill={isPin ? 'white' : '#71717a'}
+                          fill={isPin ? 'white' : "var(--module-muted)"}
                         >
                           {i === 0 ? label : `Day ${label}`}
                         </text>
                         {isPin && (
-                          <text x={toX(i)} y={chartBottom + 48} textAnchor="middle" fontSize="8" fill="#14b8a6" fontWeight="bold">Review</text>
+                          <text x={toX(i)} y={chartBottom + 48} textAnchor="middle" fontSize="8" fill="var(--module-success)" fontWeight="bold">Review</text>
                         )}
                       </g>
                     </g>
@@ -182,23 +186,23 @@ const ForgettingCurveSimulator = () => {
                 })}
 
                 {/* Axis labels */}
-                <text x={(chartLeft + chartRight) / 2} y={chartBottom + 60} textAnchor="middle" fontSize="10" fill="#a1a1aa" fontWeight="bold">Time (Days)</text>
+                <text x={(chartLeft + chartRight) / 2} y={chartBottom + 60} textAnchor="middle" fontSize="10" fill="var(--module-surface)" fontWeight="bold">Time (Days)</text>
               </svg>
             </div>
 
             {/* Result + controls */}
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-2">
               <div className="text-center sm:text-left">
-                <p className="text-sm text-zinc-500 dark:text-zinc-400">Retention after 7 days:</p>
-                <p className="text-3xl font-bold text-[#F26B1F]">{finalRetention}%
-                  <span className="text-sm font-normal text-zinc-400 ml-2">
+                <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)]">Retention after 7 days:</p>
+                <p className="text-3xl font-bold text-[var(--module-danger-text)]">{finalRetention}%
+                  <span className="text-sm font-normal text-[var(--module-muted)] ml-2">
                     {pins.length === 0 ? '(no reviews)' : `(${pins.length} review${pins.length > 1 ? 's' : ''})`}
                   </span>
                 </p>
               </div>
               <button
                 onClick={() => setPins([])}
-                className="px-4 py-2 text-xs font-bold bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-colors"
+                className="px-4 py-2 text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] rounded-lg hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] transition-colors" data-wide-button="true"
               >
                 Reset
               </button>
@@ -211,8 +215,8 @@ const ForgettingCurveSimulator = () => {
                 animate={{ opacity: 1, y: 0 }}
                 className={`mt-4 p-4 rounded-xl text-sm font-medium ${
                   finalRetention >= 70
-                    ? 'bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/50'
-                    : 'bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800/50'
+                    ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:text-[var(--module-success-text)] border border-[var(--module-line)] dark:border-[var(--module-line)]"
+                    : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)]"
                 }`}
               >
                 {finalRetention >= 70
@@ -231,13 +235,13 @@ const FeynmanExplainer = () => {
     const jargonCount = jargon.filter(word => explanation.toLowerCase().includes(word)).length;
 
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Explain-It Challenge</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-4">Task: Explain this definition of Osmosis in simple terms, as if to a 12-year-old.</p>
-             <p className="p-4 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-xl text-xs text-center mb-4">{concept}</p>
-             <textarea value={explanation} onChange={e => setExplanation(e.target.value)} className="w-full h-32 bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }} placeholder="Your simple explanation..."></textarea>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Explain-It Challenge</h4>
+             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Task: Explain this definition of Osmosis in simple terms, as if to a 12-year-old.</p>
+             <p className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)] rounded-xl text-xs text-center mb-4">{concept}</p>
+             <textarea value={explanation} onChange={e => setExplanation(e.target.value)} className="w-full h-32 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }} placeholder="Your simple explanation..."></textarea>
              {explanation.length > 0 &&
-                <div className={`mt-4 text-center text-xs p-2 rounded-lg ${jargonCount > 0 ? 'bg-rose-100 text-rose-700' : 'bg-emerald-100 text-emerald-700'}`}>
+                <div className={`mt-4 text-center text-xs p-2 rounded-lg ${jargonCount > 0 ? "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)]" : "bg-[var(--module-success-soft)] text-[var(--module-success-text)]"}`}>
                     {jargonCount > 0 ? `Warning: You're using ${jargonCount} jargon word(s). Simplify further!` : 'Great! This is a simple, clear explanation.'}
                 </div>
              }

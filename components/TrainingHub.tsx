@@ -34,7 +34,7 @@ const RANK_ICONS: Record<string, LucideIcon> = {
 };
 
 const _TIER_ORDER: MasteryTier[] = ['habitual', 'applied', 'practiced', 'learned'];
-const TIER_LABELS: Record<MasteryTier, string> = { none: '', learned: 'Learned', practiced: 'Practiced', applied: 'Applied', habitual: 'Habitual' };
+const TIER_LABELS: Record<MasteryTier, string> = { none: '', learned: 'Read', practiced: 'Practiced', applied: 'Applied', habitual: 'Habitual' };
 // `practiced` tier deliberately keeps the legacy teal #2A7D6F — this is the
 // mastery-tier data-viz colour, not brand accent. Preserved per the colour
 // pivot scope notes (data-viz preserve).
@@ -503,7 +503,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                     src="/assets/training/north-star-compass.png"
                     alt=""
                     aria-hidden="true"
-                    className="pointer-events-none absolute left-1/2 top-1/2 h-[120px] w-[120px] max-w-none -translate-x-1/2 -translate-y-1/2 object-contain"
+                    className="theme-filled-art pointer-events-none absolute left-1/2 top-1/2 h-[120px] w-[120px] max-w-none -translate-x-1/2 -translate-y-1/2 object-contain"
                   />
                 </div>
 
@@ -519,7 +519,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                     year-bump CTA. */}
                 <button
                   onClick={onOpenDirection ?? onOpenJourney}
-                  className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-[#FDF8F0] font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
+                  className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans font-bold text-sm shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] transition-all duration-150"
                 >
                   My Direction
                   <ArrowRight size={14} />

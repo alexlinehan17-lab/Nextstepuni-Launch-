@@ -19,35 +19,57 @@
  *    transforms which would re-anchor position:fixed.
  */
 
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import '../launchpad/launchpad.css';
+import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, useReducedMotion } from 'framer-motion';
 import {
   ArrowLeft,
+  ArrowUpRight,
   BookOpen,
+  ChevronLeft,
+  ChevronRight,
   Clock3,
   Download,
   Highlighter,
   Pause,
   Play,
   ListChecks,
+  Minus,
   PenLine,
+  Plus,
   Repeat2,
   RotateCcw,
   SlidersHorizontal,
-  Sparkles,
+  BookOpenCheck,
   TrendingUp,
   X,
   ZoomIn,
   ZoomOut,
 } from 'lucide-react';
 import { MotionDiv } from '../Motion';
+import KobraScope, {
+  Alert,
+  AlertDescription,
+  Button,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  Spinner,
+  Switch,
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  Toasts,
+  toast,
+} from '../approved-ui-runtime';
 import { prettyBytes } from './storage';
 import { fetchPdfCached } from './pdfCache';
 import { clearLoopPlace, loadLoopPlace, saveLoopPlace } from './loopResume';
 import { composeReceipt, downloadReceipt, type LoopReceiptStats } from './receipt';
 import { scanDocument, type CommandToken, type DocTokens, type MarkToken } from './textOverlay';
-import { frequencyFor, siblingsFor, topicLabel, type TopicSibling } from './topics';
+import { frequencyFor, questionLabel, siblingsFor, topicLabel, type TopicSibling } from './topics';
 import { loadAttempt, setMark, setTriage, type GapKind, type SelfMark, type TriageRating } from './attemptStore';
 import { markerLicence, type MarkerLicence } from './trust';
 import { loadCalibration, paceScale } from './wpmStore';
@@ -60,11 +82,23 @@ import type { PaperTopicTags } from '../../types/paperTrailTopics';
 import type { PaperAnswerMap, PaperAnswerQuestion } from '../../types/paperTrail';
 import type { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist';
 // pdf.js lazy singleton + region renderer — shared with the Topic Vault.
-import { loadPdfjs, type PdfjsModule } from './pdfjsLoader';
-import { pdfjsDocumentOptions } from './pdfjsAssets';
+import { loadPdfjs, openPdfDocument, type PdfjsModule } from './pdfjsLoader';
 import CropView from './CropView';
-import { questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
+import { captureZoomAnchor, restoreZoomAnchor, type ZoomAnchor } from './zoomAnchor';
+import MobileQuestionTools from './MobileQuestionTools';
+import { printedQuestionAnchors, questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
 import { isAnswerMap, mergePaperAnchorMetadata } from './vaultResolve';
+import { frenchAudioForPaper } from './frenchAudio';
+import FrenchPaperAudio from './FrenchPaperAudio';
+// The chrome (top bar, Tools menu, page bar, status toasts) is Kobra; see the file.
+import './viewer-chrome.css';
+import AnswerDesk from './AnswerDesk';
+import AnswerInk, {type AnswerInkProps,type InkTool} from './AnswerInk';
+import {useAnswerBook} from './useAnswerBook';
+import {loadAttemptFirst,saveAttemptFirst,loadDeskQuestion,saveDeskQuestion,keepFirstAttempt,hasResponse,type InkStroke,type AnswerRecord} from './answerDeskStore';
+
+/** The scheme panel's compact square ink buttons (option E) for its step and text-size controls. */
+const E_SQUARE = 'inline-flex items-center justify-center h-8 min-w-[32px] px-2 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 bg-white dark:bg-zinc-900 text-[#1A1A1A] dark:text-zinc-100 text-[12.5px] font-bold shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] transition-[transform,box-shadow] duration-150 hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none disabled:opacity-35 disabled:pointer-events-none';
 
 // Sleek glide shared with the GC dashboard student-view tray.
 const GLIDE = { duration: 0.32, ease: [0.16, 1, 0.3, 1] as const };
@@ -100,6 +134,8 @@ interface ViewerProps {
   initialSide?: 'paper' | 'scheme';
   /** 1-based starting page per side (from recents). */
   initialPaperPage?: number;
+  /** Open a guided preview with the verified answer ribbons already visible. */
+  initialAnswersOn?: boolean;
   initialSchemePage?: number;
   /** Storage URL of this paper's PaperAnswerMap sidecar — present only when a
    *  verified answer map shipped. Drives the "Answers" toggle + question chips. */
@@ -143,6 +179,9 @@ interface DocSession {
   /** The loading task owns teardown in pdf.js — destroy() lives here. */
   task: { destroy: () => Promise<void> } | null;
   state: LoadState;
+  /** Set when the server ANSWERED with an error (4xx/5xx) — the connection is
+   *  fine, so the failure copy must not blame it (e.g. 402 = billing lapsed). */
+  httpStatus?: number;
   numPages: number;
   scrollTop: number;
   page: number;
@@ -171,6 +210,7 @@ const Viewer: React.FC<ViewerProps> = ({
   scheme,
   initialSide = 'paper',
   initialPaperPage = 1,
+  initialAnswersOn = false,
   initialSchemePage = 1,
   answersUrl,
   focusAnchorsUrl,
@@ -185,14 +225,34 @@ const Viewer: React.FC<ViewerProps> = ({
   onClose,
   onPosition,
 }) => {
+  const audioSource = useMemo(() => topics ? frenchAudioForPaper(topics) : null, [topics]);
+  const deskNs = storageNs ?? `anon|${paper.url}`;
+  const book = useAnswerBook(deskNs);
+  const [attemptFirst,setAttemptFirst] = useState(() => loadAttemptFirst(deskNs));
+  const [deskId,setDeskId] = useState(() => focusQuestion ?? loadDeskQuestion(deskNs) ?? `page:${initialPaperPage}`);
+  const [deskCollapsed,setDeskCollapsed] = useState(false);
+  const [deskWidth,setDeskWidth] = useState(43);
+  const [deskHeight,setDeskHeight] = useState(49);
+  const [deskResizing,setDeskResizing] = useState(false);
+  const workspaceRef = useRef<HTMLDivElement | null>(null);
+  const deskResizeAnchor = useRef<ZoomAnchor | null>(null);
+  const deskDrag = useRef<{pointer:number;end:number;extent:number;wide:boolean} | null>(null);
+  const [inkTool,setInkTool] = useState<InkTool>('move');
+  const [inkView,setInkView] = useState<'first'|'retry'>('retry');
+  const [preferenceProblem,setPreferenceProblem] = useState(false);
+  const inkHistory = useRef<Record<string,InkStroke[][]>>({});
+  const deskRecord = book.get(deskId);
   const [side, setSide] = useState<Side>(initialSide === 'scheme' && scheme ? 'scheme' : 'paper');
   const [zoom, setZoom] = useState(1);
+  const activeSideRef = useRef(side);
+  activeSideRef.current = side;
+  const readingPoint = useRef<{side: Side; anchor: ZoomAnchor} | null>(null);
   const [epoch, setEpoch] = useState(0); // bumped on resize/rotation → canvases re-render
   const [, forceRender] = useState(0);
   const bump = useCallback(() => forceRender(n => n + 1), []);
 
   // ── answers (per-question marking-scheme crops) ──
-  const [answersOn, setAnswersOn] = useState(false);
+  const [answersOn, setAnswersOn] = useState(() => !loadAttemptFirst(deskNs) && initialAnswersOn);
   const [answerMap, setAnswerMap] = useState<PaperAnswerMap | null>(null);
   const [answerState, setAnswerState] = useState<'idle' | 'loading' | 'error'>('idle');
   const [focusAnchorMap, setFocusAnchorMap] = useState<PaperAnswerMap | null>(null);
@@ -202,7 +262,7 @@ const Viewer: React.FC<ViewerProps> = ({
   const schemePrefetched = useRef(false);
 
   // ── on-paper study tools (live text-layer overlays) ──
-  const [toolsOpen, setToolsOpen] = useState(false); // tools menu popover
+  const [toolsOpen, setToolsOpen] = useState(false); // Tools menu (a controlled Kobra DropdownMenu)
   const [paceOn, setPaceOn] = useState(false); // time-budget chips
   const [decodeOn, setDecodeOn] = useState(false); // command-word highlighting
   const [markingOpen, setMarkingOpen] = useState(false); // "how it's marked" card
@@ -243,6 +303,18 @@ const Viewer: React.FC<ViewerProps> = ({
   useEffect(() => {
     const mq = window.matchMedia('(min-width: 768px)');
     const on = () => setIsWide(mq.matches);
+    mq.addEventListener('change', on);
+    return () => mq.removeEventListener('change', on);
+  }, []);
+  // A scheme opened beside the paper needs room for both. From 1100px the
+  // workspace widens to about half the screen; narrower tablets open the
+  // scheme over the paper instead.
+  const [isRoomy, setIsRoomy] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia('(min-width: 1100px)').matches,
+  );
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1100px)');
+    const on = () => setIsRoomy(mq.matches);
     mq.addEventListener('change', on);
     return () => mq.removeEventListener('change', on);
   }, []);
@@ -297,7 +369,7 @@ const Viewer: React.FC<ViewerProps> = ({
   // scroll/zoom re-renders (a fresh filter() each render would defeat it).
   const anchorsByPage = useMemo(() => {
     const m = new Map<number, PaperAnswerQuestion[]>();
-    if (answerMap) for (const q of answerMap.q) {
+    if (answerMap) for (const q of printedQuestionAnchors(answerMap.q)) {
       const list = m.get(q.pP);
       if (list) list.push(q);
       else m.set(q.pP, [q]);
@@ -360,12 +432,22 @@ const Viewer: React.FC<ViewerProps> = ({
   const onCloseRef = useRef(onClose);
   const onPositionRef = useRef(onPosition);
   useEffect(() => {
-    onCloseRef.current = onClose;
+    onCloseRef.current = () => {
+      if (book.hasProblems() && !window.confirm('This browser has not saved your latest work. Download a copy from the answer desk before leaving. Leave anyway?')) return;
+      onClose();
+    };
     onPositionRef.current = onPosition;
   });
 
   const activeDoc = side === 'paper' ? paper : scheme!;
   const session = sessions.current[side];
+
+  useEffect(() => {
+    const protect = (event: BeforeUnloadEvent) => { if (book.hasProblems()) {event.preventDefault();event.returnValue='';} };
+    window.addEventListener('beforeunload',protect);
+    return () => window.removeEventListener('beforeunload',protect);
+  // The book methods read stable refs for this mounted paper.
+  }, []);
 
   // ── shared IntersectionObserver (rooted on the scroller) ──
   const ioRef = useRef<IntersectionObserver | null>(null);
@@ -398,6 +480,7 @@ const Viewer: React.FC<ViewerProps> = ({
       if (!target) return;
       const s = sessions.current[which];
       s.state = 'loading';
+      s.httpStatus = undefined;
       bump();
       let pdfjs: PdfjsModule;
       try {
@@ -419,8 +502,8 @@ const Viewer: React.FC<ViewerProps> = ({
         );
         if (!mountedRef.current) return;
         const task = bytes
-          ? pdfjs.getDocument({ ...pdfjsDocumentOptions(), data: new Uint8Array(bytes) })
-          : pdfjs.getDocument({ ...pdfjsDocumentOptions(), url: target.url });
+          ? openPdfDocument(pdfjs, { data: new Uint8Array(bytes) })
+          : openPdfDocument(pdfjs, { url: target.url });
         s.task = task;
         const pdf = await withTimeout(task.promise, LOAD_TIMEOUT_MS);
         if (!mountedRef.current) {
@@ -431,9 +514,20 @@ const Viewer: React.FC<ViewerProps> = ({
         s.numPages = pdf.numPages;
         s.state = 'ready';
         bump();
-      } catch {
+      } catch (e) {
         if (mountedRef.current) {
           s.state = 'error';
+          // pdf.js's URL loader throws UnexpectedResponseException with the
+          // HTTP status when the server answered but refused (402/403/5xx),
+          // and MissingPDFException on 404. A status here means the network
+          // is fine — the failure copy must say so instead of blaming it.
+          const status = (e as { status?: unknown }).status;
+          s.httpStatus =
+            typeof status === 'number' && status >= 400
+              ? status
+              : (e as { name?: string }).name === 'MissingPDFException'
+                ? 404
+                : undefined;
           bump();
         }
       }
@@ -471,6 +565,16 @@ const Viewer: React.FC<ViewerProps> = ({
     });
   }, [ensureAnswerMap, scheme, load]);
 
+  const initialAnswersStarted = useRef(false);
+  useEffect(() => {
+    if (attemptFirst || !initialAnswersOn || initialAnswersStarted.current) return;
+    initialAnswersStarted.current = true;
+    ensureAnswerMap();
+    if (scheme && !sessions.current.scheme.pdf && !sessions.current.scheme.task) load('scheme');
+  }, [initialAnswersOn, attemptFirst, ensureAnswerMap, scheme, load]);
+
+  useEffect(() => { if (attemptFirst) ensureAnswerMap(); }, [attemptFirst, ensureAnswerMap]);
+
   // Topics overlay: reuses the answer-map anchors for positions; tags themselves
   // are committed in-bundle, so no extra fetch beyond the anchor map.
   const toggleTopics = useCallback(() => {
@@ -500,6 +604,7 @@ const Viewer: React.FC<ViewerProps> = ({
   // Self-mark (Tier 3): scoring control appears inside the answer reveal. Turning
   // it on ensures the answer chips are available to open a reveal from.
   const toggleSelfMark = useCallback(() => {
+    setAttemptFirst(false); // Explicitly entering the existing marking workflow.
     setSelfMarkOn(on => {
       const next = !on;
       if (next) {
@@ -534,13 +639,19 @@ const Viewer: React.FC<ViewerProps> = ({
   loopStateRef.current = loop;
   const answerMapRef = useRef<PaperAnswerMap | null>(null);
   answerMapRef.current = answerMap;
+  // The Full Loop walks the printed questions. Reviewed practice tasks stay in
+  // the map so a focused jump can still find them, but a student looping the
+  // paper answers each printed question once rather than its parts again.
+  const loopQuestions = useMemo(() => (answerMap ? printedQuestionAnchors(answerMap.q) : []), [answerMap]);
+  const loopQuestionsRef = useRef(loopQuestions);
+  loopQuestionsRef.current = loopQuestions;
   const attemptMarkedRef = useRef(0);
   attemptMarkedRef.current = Object.keys(attempt.marks ?? {}).length;
 
   const persistLoopPlace = useCallback(() => {
     const l = loopStateRef.current;
     if (!l || !storageNs) return;
-    const total = answerMapRef.current?.q.length ?? 0;
+    const total = loopQuestionsRef.current.length;
     if (total < 1) return;
     saveLoopPlace(
       storageNs,
@@ -568,6 +679,7 @@ const Viewer: React.FC<ViewerProps> = ({
   }, []);
 
   const startLoop = useCallback(() => {
+    setAttemptFirst(false); // Keep the student's default preference for next time.
     ensureAnswerMap();
     setSelfMarkOn(true);
     setAnswersOn(true);
@@ -586,6 +698,7 @@ const Viewer: React.FC<ViewerProps> = ({
   /** Resume a saved loop place — same warm-up as startLoop, but the index and
    *  the wall clock pick up where the student left off. */
   const resumeLoop = useCallback(() => {
+    setAttemptFirst(false);
     const place = resumePlace;
     if (!place) return;
     ensureAnswerMap();
@@ -601,7 +714,7 @@ const Viewer: React.FC<ViewerProps> = ({
     // If the map is already in, clamp against its live length (the saved
     // total guards most drift; a re-generated shorter map is the edge case —
     // the clamp effect below covers a map that arrives after this tap).
-    const liveTotal = answerMapRef.current?.q.length;
+    const liveTotal = loopQuestionsRef.current.length || undefined;
     const idx = liveTotal ? Math.min(place.idx, liveTotal - 1) : place.idx;
     setLoop({ idx, qStartTs: Date.now() });
     setResumePlace(null);
@@ -627,10 +740,10 @@ const Viewer: React.FC<ViewerProps> = ({
   // A resumed index can outrun a re-generated (shorter) answer map that arrives
   // after the resume tap — clamp once the map is in.
   useEffect(() => {
-    if (loop && answerMap && answerMap.q.length > 0 && loop.idx >= answerMap.q.length) {
-      setLoop({ idx: answerMap.q.length - 1, qStartTs: Date.now() });
+    if (loop && loopQuestions.length > 0 && loop.idx >= loopQuestions.length) {
+      setLoop({ idx: loopQuestions.length - 1, qStartTs: Date.now() });
     }
-  }, [loop, answerMap]);
+  }, [loop, loopQuestions]);
 
   // Mid-loop persistence: save on every loop step, and on tab close / bfcache
   // eviction while a loop is live. Unmount is covered separately below.
@@ -657,9 +770,9 @@ const Viewer: React.FC<ViewerProps> = ({
   // Jump to the current loop question once the map is in.
   useEffect(() => {
     if (!loop || !answerMap) return;
-    const q = answerMap.q[loop.idx];
+    const q = loopQuestions[loop.idx];
     if (q) scrollToQuestion(q);
-  }, [loop, answerMap, scrollToQuestion]);
+  }, [loop, answerMap, loopQuestions, scrollToQuestion]);
 
   // Per-question elapsed readout, 1s cadence while the loop bar is showing.
   useEffect(() => {
@@ -672,7 +785,7 @@ const Viewer: React.FC<ViewerProps> = ({
     setReveal(null);
     setLoop(l => {
       if (!l || !answerMap) return l;
-      if (l.idx + 1 >= answerMap.q.length) {
+      if (l.idx + 1 >= loopQuestions.length) {
         // Finished: snapshot the wall clock for the receipt and retire the
         // saved place — a completed loop has nothing to resume.
         loopTotalSecRef.current = loopStartedAtRef.current
@@ -685,7 +798,7 @@ const Viewer: React.FC<ViewerProps> = ({
       }
       return { idx: l.idx + 1, qStartTs: Date.now() };
     });
-  }, [answerMap, storageNs]);
+  }, [answerMap, loopQuestions, storageNs]);
 
   const recordMark = useCallback(
     (n: string, mark: SelfMark | null) => {
@@ -831,17 +944,6 @@ const Viewer: React.FC<ViewerProps> = ({
     setExaminerOpen(false);
   }, [side]);
 
-  // Close the tools menu on outside tap.
-  useEffect(() => {
-    if (!toolsOpen) return;
-    const onDown = (e: PointerEvent) => {
-      const t = e.target as HTMLElement;
-      if (!t.closest('[data-tools-anchor]')) setToolsOpen(false);
-    };
-    window.addEventListener('pointerdown', onDown);
-    return () => window.removeEventListener('pointerdown', onDown);
-  }, [toolsOpen]);
-
   // Dialog behaviour: focus, Escape, Tab trap; resize/rotation re-render.
   useEffect(() => {
     headerRef.current?.focus();
@@ -884,9 +986,9 @@ const Viewer: React.FC<ViewerProps> = ({
         onCloseRef.current();
       }
       if (e.key === 'Tab' && rootRef.current) {
-        const focusables = rootRef.current.querySelectorAll<HTMLElement>(
-          'button:not([disabled]), a[href], input, [tabindex]:not([tabindex="-1"])',
-        );
+        const focusables = Array.from(rootRef.current.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), a[href], input:not([disabled]), select, textarea, [tabindex]:not([tabindex="-1"])',
+        )).filter(el=>!el.closest('[hidden]') && el.getClientRects().length>0);
         if (focusables.length === 0) return;
         const first = focusables[0];
         const last = focusables[focusables.length - 1];
@@ -901,9 +1003,20 @@ const Viewer: React.FC<ViewerProps> = ({
     };
     window.addEventListener('keydown', onKey);
     let resizeTimer: ReturnType<typeof setTimeout> | null = null;
+    let beforeResize: {side: Side; anchor: ZoomAnchor} | null = null;
     const onResize = () => {
+      if (!resizeTimer) beforeResize = readingPoint.current;
       if (resizeTimer) clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => setEpoch(n => n + 1), 250);
+      resizeTimer = setTimeout(() => {
+        resizeTimer = null;
+        const place = beforeResize;
+        setEpoch(n => n + 1);
+        requestAnimationFrame(() => {
+          if (place && place.side === activeSideRef.current && scrollerRef.current) {
+            restoreZoomAnchor(scrollerRef.current, place.anchor);
+          }
+        });
+      }, 250);
     };
     window.addEventListener('resize', onResize);
     return () => {
@@ -914,11 +1027,17 @@ const Viewer: React.FC<ViewerProps> = ({
   }, []);
 
   // ── scroll → current page + persistence ──
+  // The point being read on the paper, kept current so a change in the
+  // paper column's width (the scheme panel opening) can hold it in place.
+  const layoutAnchor = useRef<ZoomAnchor | null>(null);
   const onScroll = useCallback(() => {
     const el = scrollerRef.current;
     const s = sessions.current[side];
     if (!el || s.state !== 'ready') return;
     s.scrollTop = el.scrollTop;
+    const anchor = captureZoomAnchor(el);
+    if (anchor) readingPoint.current = {side, anchor};
+    if (side === 'paper') layoutAnchor.current = anchor;
     const kids = el.querySelectorAll<HTMLElement>('[data-page]');
     const mid = el.scrollTop + el.clientHeight / 2;
     let current = 1;
@@ -1013,307 +1132,379 @@ const Viewer: React.FC<ViewerProps> = ({
     });
   }, [focusQuestion, answerMap, focusAnchorMap, focusAnchorSettled, focusAnchorsUrl, session.state]);
 
+  // Zoom resizes every page, so note the point being read before it and
+  // scroll back to it once the new widths are laid out, before paint.
+  const zoomAnchor = useRef<ZoomAnchor | null>(null);
   const zoomBy = (dir: 1 | -1) => {
     const i = ZOOM_STEPS.indexOf(zoom);
-    setZoom(ZOOM_STEPS[Math.min(ZOOM_STEPS.length - 1, Math.max(0, i + dir))]);
+    const next = ZOOM_STEPS[Math.min(ZOOM_STEPS.length - 1, Math.max(0, i + dir))];
+    if (next === zoom) return;
+    zoomAnchor.current = scrollerRef.current ? captureZoomAnchor(scrollerRef.current) : null;
+    setZoom(next);
+  };
+  useLayoutEffect(() => {
+    const anchor = zoomAnchor.current;
+    zoomAnchor.current = null;
+    const el = scrollerRef.current;
+    if (!anchor || !el) return;
+    restoreZoomAnchor(el, anchor);
+    onScroll();
+  }, [zoom, onScroll]);
+
+  const deskQuestions = useMemo(() => {
+    const list = answerMap ? printedQuestionAnchors(answerMap.q) : [];
+    const focused = focusQuestion && answerMap?.q.find(q => q.n === focusQuestion);
+    if(!focused || list.some(q=>q.n===focused.n))return list;
+    // A focused sub-question belongs in its physical place, so Next never
+    // sends a student back to the first question of the paper.
+    const after=list.findIndex(q=>q.pP>focused.pP || (q.pP===focused.pP && q.pY[0]>focused.pY[0]));
+    const at=after<0 ? list.length : after;
+    return [...list.slice(0,at),focused,...list.slice(at)];
+  },[answerMap,focusQuestion]);
+  const deskQuestion = deskQuestions.find(q => q.n === deskId);
+  const pickDeskQuestion = (id:string) => {
+    setDeskId(id);saveDeskQuestion(deskNs,id);setReveal(null);
+    const q = deskQuestions.find(q => q.n === id);
+    if(q)scrollToQuestion(q);
+    else if(id.startsWith('page:'))jumpToPage(Number(id.slice(5)));
+    requestAnimationFrame(()=>{
+      const drawer=workspaceRef.current?.querySelector<HTMLElement>('.ad-pane');
+      drawer?.scrollTo({top:0});
+      drawer?.querySelector<HTMLSelectElement>('#answer-desk-question')?.focus({preventScroll:true});
+    });
+  };
+  const deskInitialised = useRef(false);
+  useEffect(() => {
+    if(!attemptFirst || deskInitialised.current || session.state!=='ready' || !deskQuestions.length)return;
+    deskInitialised.current=true;
+    // Never move an attempt begun while the question map was loading.
+    if(deskId.startsWith('page:') && hasResponse(deskRecord.draft))return;
+    const selected=deskQuestions.find(q=>q.n===deskId)
+      ?? deskQuestions.find(q=>q.pP===session.page)
+      ?? [...deskQuestions].reverse().find(q=>q.pP<session.page) ?? deskQuestions[0];
+    setDeskId(selected.n);saveDeskQuestion(deskNs,selected.n);
+    if(session.page<selected.pP || (focusQuestion && selected.n===focusQuestion))scrollToQuestion(selected);
+  },[attemptFirst,deskQuestions,deskId,deskNs,deskRecord.draft,session.state,session.page,focusQuestion,scrollToQuestion]);
+  const toggleAttemptFirst = (on:boolean) => {
+    if(scrollerRef.current)layoutAnchor.current=captureZoomAnchor(scrollerRef.current);
+    if(loop)persistLoopPlace();
+    setLoop(null);setLoopDone(false);setReveal(null);setAnswersOn(false);setToolsOpen(false);
+    if(on)setSelfMarkOn(false);
+    setAttemptFirst(on);setPreferenceProblem(!saveAttemptFirst(deskNs,on));
+  };
+  // Keep the same point on the paper while changing the drawer's footprint.
+  const captureDeskPlace = () => {
+    deskResizeAnchor.current=scrollerRef.current ? captureZoomAnchor(scrollerRef.current) : null;
+  };
+  const deskExtent = () => {
+    const rect=workspaceRef.current?.getBoundingClientRect();
+    return (isWide ? rect?.width : rect?.height) || (isWide ? window.innerWidth : window.innerHeight);
+  };
+  const deskBounds = (extent:number,wide:boolean) => ({
+    min: Math.min(wide ? 320 : 160,extent*.45)/extent*100,
+    max: Math.max(50,Math.min(wide ? 70 : 75,(extent-(wide ? 290 : 150))/extent*100)),
+  });
+  const resizeDesk = (percent:number,extent=deskExtent(),wide=isWide) => {
+    const {min,max}=deskBounds(extent,wide);
+    (wide ? setDeskWidth : setDeskHeight)(Math.max(min,Math.min(max,percent)));
+  };
+  const startDeskResize = (e:React.PointerEvent<HTMLDivElement>) => {
+    if(e.button!==0)return;
+    e.preventDefault();captureDeskPlace();
+    const rect=workspaceRef.current?.getBoundingClientRect();
+    if(!rect)return;
+    deskDrag.current={pointer:e.pointerId,end:isWide ? rect.right : rect.bottom,extent:isWide ? rect.width : rect.height,wide:isWide};
+    e.currentTarget.setPointerCapture(e.pointerId);setDeskResizing(true);
+  };
+  const moveDeskResize = (e:React.PointerEvent<HTMLDivElement>) => {
+    const drag=deskDrag.current;
+    if(!drag || drag.pointer!==e.pointerId || !drag.extent)return;
+    resizeDesk((drag.end-(drag.wide ? e.clientX : e.clientY))/drag.extent*100,drag.extent,drag.wide);
+  };
+  const endDeskResize = () => {deskDrag.current=null;setDeskResizing(false);};
+  const keyDeskResize = (e:React.KeyboardEvent<HTMLDivElement>) => {
+    const grow=isWide ? 'ArrowLeft' : 'ArrowUp';
+    const shrink=isWide ? 'ArrowRight' : 'ArrowDown';
+    if(![grow,shrink,'Home','End','Enter'].includes(e.key))return;
+    e.preventDefault();captureDeskPlace();
+    if(e.key==='Enter'){setDeskCollapsed(true);requestAnimationFrame(()=>workspaceRef.current?.querySelector<HTMLButtonElement>('.ad-collapse')?.focus());return;}
+    const extent=deskExtent(),bounds=deskBounds(extent,isWide);
+    const value=deskSizePercent;
+    resizeDesk(e.key==='Home' ? bounds.min : e.key==='End' ? bounds.max : value+(e.key===grow ? 1 : -1)*(e.shiftKey ? 50 : 20)/extent*100);
+  };
+  useLayoutEffect(() => {
+    const el=scrollerRef.current;
+    const anchor=deskResizeAnchor.current??layoutAnchor.current;
+    if(el && anchor)restoreZoomAnchor(el,anchor);
+    if(!deskResizing){deskResizeAnchor.current=null;setEpoch(n=>n+1);}
+  },[attemptFirst,deskCollapsed,deskWidth,deskHeight,deskResizing]);
+  const revealDesk = () => {
+    book.change(deskId,keepFirstAttempt);
+    if(deskQuestion)onReveal(deskQuestion);
+    else if(scheme)setSide('scheme');
+  };
+  const deskSide = (next:Side) => {
+    if(next==='scheme' && attemptFirst)book.change(deskId,keepFirstAttempt);
+    setSide(next);
+  };
+  const editableInk = (r:AnswerRecord) => r.phase==='compare'?r.correctionInk:r.phase==='retry'||r.phase==='done'?r.retry.ink:r.draft.ink;
+  const replaceInk = (r:AnswerRecord,page:number,strokes:InkStroke[]):AnswerRecord => r.phase==='compare'
+    ? {...r,correctionInk:{...r.correctionInk,[page]:strokes}}
+    : {...r,[r.phase==='retry'?'retry':'draft']:{...(r.phase==='retry'?r.retry:r.draft),ink:{...editableInk(r),[page]:strokes}}};
+  const inkHistoryKey = (page:number) => `${deskId}|${deskRecord.phase}|${page}`;
+  const pageInk = (page:number):AnswerInkProps => ({
+    strokes:(deskRecord.phase==='done'&&inkView==='first'?deskRecord.first?.ink[page]:editableInk(deskRecord)[page])??[],
+    base:deskRecord.phase==='compare'?deskRecord.first?.ink[page]:undefined,
+    tool:inkTool, enabled:deskRecord.mode==='ink'&&deskRecord.phase!=='done',correction:deskRecord.phase==='compare',
+    onChange:strokes=>{
+      const key=inkHistoryKey(page);
+      inkHistory.current[key]=[...(inkHistory.current[key]??[]).slice(-29),editableInk(deskRecord)[page]??[]];
+      book.change(deskId,r=>replaceInk(r,page,strokes));
+    },
+  });
+  const undoInk = () => {
+    const previous=inkHistory.current[inkHistoryKey(session.page)]?.pop();
+    if(previous)book.change(deskId,r=>replaceInk(r,session.page,previous));
   };
 
-  // ── render ──
-  const segBtn = (active: boolean) =>
-    `px-4 py-1.5 rounded-lg text-[13px] transition-all ${
-      active
-        ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm'
-        : 'text-zinc-500 dark:text-zinc-400'
-    }`;
+  const deskSizeBounds=deskBounds(deskExtent(),isWide);
+  const deskSizePercent=Math.max(deskSizeBounds.min,Math.min(deskSizeBounds.max,isWide ? deskWidth : deskHeight));
+  const inlineScheme = !attemptFirst && isWide && side === 'paper' && Boolean(answersOn || topicsOn || (reveal && isRoomy));
+  // The scheme reads at panel width, so beside the paper it gets half the
+  // screen (Oct 2026: a 360px panel set the answers at about 7px).
+  const schemeBeside = inlineScheme && isRoomy && Boolean(reveal);
+  const besideRef = useRef(schemeBeside);
+  useLayoutEffect(() => {
+    if (besideRef.current === schemeBeside) return;
+    besideRef.current = schemeBeside;
+    const el = scrollerRef.current;
+    if (el && layoutAnchor.current) restoreZoomAnchor(el, layoutAnchor.current);
+    setEpoch(n => n + 1); // pages re-render at the column's new width
+  }, [schemeBeside]);
 
+  // Step the open scheme through the paper's questions, bringing each
+  // question into view beside it.
+  const revealIndex = reveal ? loopQuestions.findIndex(x => x.n === reveal.n) : -1;
+  const stepReveal = useCallback((dir: 1 | -1) => {
+    const cur = revealRef.current;
+    const list = loopQuestionsRef.current;
+    const i = cur ? list.findIndex(x => x.n === cur.n) : -1;
+    const next = i < 0 ? undefined : list[i + dir];
+    if (!next) return;
+    onReveal(next);
+    scrollToQuestion(next);
+  }, [onReveal, scrollToQuestion]);
+
+  const schemeContent = reveal ? (
+              <RevealContent
+                q={reveal}
+                wide={isWide}
+                reduced={!!reducedMotion}
+                schemePdf={sessions.current.scheme.pdf}
+                schemeUrl={scheme?.url}
+                schemeErrored={sessions.current.scheme.state === 'error' || sessions.current.scheme.state === 'unsupported'}
+                copyright={answerMap?.copyright}
+                selfMark={selfMarkOn}
+                existingMark={attempt.marks?.[reveal.n]}
+                licence={storageNs ? markerLicence(storageNs.split('|')[0]) : null}
+                siblings={(() => {
+                  if (!topics) return undefined;
+                  const tag = topics.q.find(t => t.n === reveal.n);
+                  if (!tag) return undefined;
+                  return siblingsFor(topics.subjectId, tag.primary)
+                    .filter(s => !(s.year === topics.year && s.level === topics.level && s.lang === topics.lang && s.fileid === topics.fileid))
+                    .slice(0, 3);
+                })()}
+                onJumpSibling={s => { setReveal(null); onCrossYear?.(s); }}
+                onRecordMark={m => recordMark(reveal.n, m)}
+                onClose={() => setReveal(null)}
+                onFullScheme={jumpSchemeToPage}
+                onStep={!loop && revealIndex >= 0 ? stepReveal : undefined}
+                canPrev={revealIndex > 0}
+                canNext={revealIndex >= 0 && revealIndex < loopQuestions.length - 1}
+              />
+  ) : null;
+
+  // Answers map fetch status (chips appear once ready), as a runtime toast.
+  useStatusToast(
+    'pt-viewer-question-tools',
+    (answersOn || topicsOn) && side === 'paper' && answerState !== 'idle'
+      ? answerState === 'loading'
+        ? { message: 'Loading question tools…', state: 'pending' }
+        : { message: 'Couldn’t load question tools — try again later.', state: 'error' }
+      : null,
+  );
+  // Text-scan status while the overlay tools read the paper.
+  useStatusToast(
+    'pt-viewer-text-scan',
+    side === 'paper' && (paceOn || decodeOn) && scanState === 'loading' && !docTokens
+      ? { message: 'Reading the paper…', state: 'pending' }
+      : null,
+  );
+
+  // ── render ──
   return createPortal(
     <div
       ref={rootRef}
+      data-lenis-prevent
       className="fixed inset-0 z-[100] flex flex-col bg-zinc-100 dark:bg-zinc-950"
       role="dialog"
       aria-modal="true"
       aria-label={`${title} — document viewer`}
     >
-      {/* Header */}
-      <div
-        ref={headerRef}
-        tabIndex={-1}
-        className="shrink-0 bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800 outline-none"
-        style={{
-          paddingTop: 'calc(8px + var(--sat, 0px))',
-          paddingBottom: 8,
-          paddingLeft: 'calc(12px + var(--sal, 0px))',
-          paddingRight: 'calc(12px + var(--sar, 0px))',
-        }}
-      >
-        <div className="flex flex-wrap items-center gap-2 max-w-3xl mx-auto">
-          <button
-            onClick={() => onCloseRef.current()}
-            aria-label="Close viewer"
-            className="p-2 -ml-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100"
-          >
-            <ArrowLeft size={19} />
-          </button>
-          <div className="flex-1 min-w-0">
-            <p className="text-[14px] font-semibold truncate text-zinc-900 dark:text-white">{title}</p>
-            {subtitle && <p className="text-[11px] truncate text-zinc-500">{subtitle}</p>}
-          </div>
-          <div className="order-last flex w-full min-w-0 items-center justify-end gap-1.5 sm:order-none sm:w-auto sm:gap-2">
-          {scheme && (
-            <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50" role="group" aria-label="Paper or marking scheme">
-              <button aria-pressed={side === 'paper'} onClick={() => setSide('paper')} className={segBtn(side === 'paper')}>
-                Paper
-              </button>
-              <button aria-pressed={side === 'scheme'} onClick={() => setSide('scheme')} className={segBtn(side === 'scheme')}>
-                Scheme
-              </button>
-            </div>
-          )}
-          {/* Answers — the flagship per-question marking-scheme reveal. A
-              standalone one-tap toggle (not buried in the Tools menu), shown
-              whenever this paper has a verified answer map. */}
-          {side === 'paper' && answersUrl && (
-            <button
-              onClick={toggleAnswers}
-              aria-pressed={answersOn}
-              aria-label="Show the marking scheme beside each question"
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[13px] font-semibold transition-all ${
-                answersOn ? 'text-white' : 'text-[#F26B1F] bg-[#FDEEDF]'
-              }`}
-              style={answersOn ? { backgroundColor: '#F26B1F', boxShadow: '0 2px 0 #B54D14' } : undefined}
+      {/* Header: Kobra chrome (viewer-chrome.css). */}
+      <KobraScope className="nsu-paper-viewer">
+        <div ref={headerRef} tabIndex={-1} className="pvc-top">
+          <div className="pvc-bar">
+            <div className="pvc-left">
+            <Button
+              variant="outline"
+              size="icon"
+              className="nsu-ink-outline pvc-icon"
+              onClick={() => onCloseRef.current()}
+              aria-label="Close viewer"
             >
-              <Sparkles size={14} /> <span className="hidden min-[360px]:inline">Answers</span>
-            </button>
-          )}
-          {side === 'paper' && (
-            <div className="relative" data-tools-anchor>
-              <button
-                onClick={() => setToolsOpen(o => !o)}
-                aria-expanded={toolsOpen}
-                aria-label="Study tools for this paper"
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[13px] font-semibold transition-all ${
-                  activeToolCount > 0 ? 'text-white' : 'text-[#F26B1F] bg-[#FDEEDF]'
-                }`}
-                style={activeToolCount > 0 ? { backgroundColor: '#F26B1F', boxShadow: '0 2px 0 #B54D14' } : undefined}
-              >
-                <SlidersHorizontal size={14} /> <span className="hidden min-[360px]:inline">Tools</span>
-                {activeToolCount > 0 && (
-                  <span className="ml-0.5 min-w-[16px] h-4 px-1 inline-flex items-center justify-center rounded-full bg-white/25 text-[10px] tabular-nums">
-                    {activeToolCount}
-                  </span>
-                )}
-              </button>
-              <AnimatePresence>
-                {toolsOpen && (
-                  <MotionDiv
-                    key="tools-menu"
-                    initial={reducedMotion ? { opacity: 0 } : { opacity: 0, y: -6, scale: 0.98 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={reducedMotion ? { opacity: 0 } : { opacity: 0, y: -6, scale: 0.98 }}
-                    transition={{ duration: 0.16, ease: [0.16, 1, 0.3, 1] }}
-                    role="menu"
-                    className="absolute right-0 mt-2 w-64 z-[70] rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-hidden"
-                    style={{ transformOrigin: 'top right' }}
+              <ArrowLeft aria-hidden="true" />
+            </Button>
+            <div className="pvc-heading">
+              <p className="pvc-title">{title}</p>
+              {subtitle && <p className="pvc-subtitle">{subtitle}</p>}
+            </div>
+              {scheme && (
+                <Tabs className="pvc-document" value={side} onValueChange={next => deskSide(next as Side)}>
+                  <TabsList aria-label="Paper or marking scheme">
+                    <TabsTrigger value="paper">Paper</TabsTrigger>
+                    <TabsTrigger value="scheme">Scheme</TabsTrigger>
+                  </TabsList>
+                </Tabs>
+              )}
+            </div>
+            <div className="pvc-controls">
+              <label className="pvc-attempt-toggle"><span>Attempt first</span><Switch checked={attemptFirst} onCheckedChange={toggleAttemptFirst} aria-label="Attempt first" /></label>
+              {/* Answers — the flagship per-question marking-scheme reveal. A
+                  standalone one-tap toggle (not buried in the Tools menu), shown
+                  whenever this paper has a verified answer map. */}
+              {!attemptFirst && side === 'paper' && answersUrl && (
+                <Button
+                  className="pvc-answers"
+                  onClick={toggleAnswers}
+                  aria-pressed={answersOn}
+                  aria-label="Show the marking scheme beside each question"
+                >
+                  <span className="pvc-answers-mark" aria-hidden="true" />Answers
+                </Button>
+              )}
+              <div className="pvc-actions">
+              {/* The Kobra menu dismisses itself on an outside tap and on
+                  Escape; it stays controlled so every tool can still close it. */}
+              {side === 'paper' && (
+                <DropdownMenu open={toolsOpen} onOpenChange={open => setToolsOpen(open)}>
+                  <DropdownMenuTrigger
+                    render={
+                      <Button
+                        variant="outline"
+                        className="nsu-ink-outline pvc-tools"
+                        data-active={activeToolCount > 0 || undefined}
+                        aria-label="Study tools for this paper"
+                      />
+                    }
                   >
-                    <p className="px-3.5 pt-3 pb-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">
-                      Study tools
-                    </p>
-                    {answersUrl && (
+                    <SlidersHorizontal aria-hidden="true" />
+                    <span className="pvc-tools-label">Tools</span>
+                    {activeToolCount > 0 && (
+                      <span className="pvc-count" aria-hidden="true">{activeToolCount}</span>
+                    )}
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end" sideOffset={8} className="pvc-menu">
+                    <KobraScope className="nsu-paper-viewer">
+                      <p className="pvc-menu-label">Study tools</p>
+                      {answersUrl && (
+                        <ToolRow
+                          icon={<BookOpenCheck />}
+                          title="Answers"
+                          sub="Marking scheme beside each question"
+                          on={answersOn}
+                          onClick={() => {
+                            setAttemptFirst(false);
+                            toggleAnswers();
+                            setToolsOpen(false);
+                          }}
+                        />
+                      )}
+                      {answersUrl && storageNs && (
+                        <ToolRow
+                          icon={<ListChecks />}
+                          title="Triage"
+                          sub="Rate each question before you start"
+                          busy={answerState === 'loading'}
+                          onClick={openTriage}
+                        />
+                      )}
+                      {answersUrl && scheme && storageNs && (
+                        <ToolRow
+                          icon={<PenLine />}
+                          title="Self-mark"
+                          sub="Score yourself against the scheme"
+                          on={selfMarkOn}
+                          busy={selfMarkOn && answerState === 'loading'}
+                          onClick={toggleSelfMark}
+                        />
+                      )}
+                      {answersUrl && scheme && storageNs && (
+                        <ToolRow
+                          icon={<Repeat2 />}
+                          title="The Full Loop"
+                          sub={resumePlace ? `Resume at question ${resumePlace.idx+1}` : 'Work the paper question by question — attempt, reveal, mark'}
+                          on={!!loop}
+                          busy={!!loop && answerState === 'loading'}
+                          onClick={resumePlace ? resumeLoop : startLoop}
+                        />
+                      )}
                       <ToolRow
-                        icon={<Sparkles size={15} />}
-                        title="Answers"
-                        sub="Marking scheme beside each question"
-                        on={answersOn}
-                        onClick={() => {
-                          toggleAnswers();
-                          setToolsOpen(false);
-                        }}
+                        icon={<Highlighter />}
+                        title="Command words"
+                        sub="Decode what each question demands"
+                        on={decodeOn}
+                        busy={decodeOn && scanState === 'loading'}
+                        keepOpen
+                        onClick={() => toggleTool('decode')}
                       />
-                    )}
-                    {answersUrl && storageNs && (
-                      <ToolRow
-                        icon={<ListChecks size={15} />}
-                        title="Triage"
-                        sub="Rate each question before you start"
-                        busy={answerState === 'loading'}
-                        onClick={openTriage}
-                      />
-                    )}
-                    {answersUrl && scheme && storageNs && (
-                      <ToolRow
-                        icon={<PenLine size={15} />}
-                        title="Self-mark"
-                        sub="Score yourself against the scheme"
-                        on={selfMarkOn}
-                        busy={selfMarkOn && answerState === 'loading'}
-                        onClick={toggleSelfMark}
-                      />
-                    )}
-                    {answersUrl && scheme && storageNs && (
-                      <ToolRow
-                        icon={<Repeat2 size={15} />}
-                        title="The Full Loop"
-                        sub="Work the paper question by question — attempt, reveal, mark"
-                        on={!!loop}
-                        busy={!!loop && answerState === 'loading'}
-                        onClick={startLoop}
-                      />
-                    )}
-                    <ToolRow
-                      icon={<Highlighter size={15} />}
-                      title="Command words"
-                      sub="Decode what each question demands"
-                      on={decodeOn}
-                      busy={decodeOn && scanState === 'loading'}
-                      onClick={() => toggleTool('decode')}
-                    />
-                    {timing && (
-                      <ToolRow
-                        icon={<Play size={15} />}
-                        title="Exam mode"
-                        sub={`Clock set to ${timing.totalMinutes} min`}
-                        on={examOn}
-                        onClick={() => {
-                          setExamOn(v => {
-                            const next = !v;
-                            setRunning(next);
-                            if (next) setElapsed(0);
-                            return next;
-                          });
-                          setToolsOpen(false);
-                        }}
-                      />
-                    )}
-                    {topics && (
-                      <ToolRow
-                        icon={<TrendingUp size={15} />}
-                        title="Topics & frequency"
-                        sub="How often each topic comes up + drill it across years"
-                        on={topicsOn}
-                        busy={topicsOn && answerState === 'loading'}
-                        onClick={toggleTopics}
-                      />
-                    )}
-                    {formulae && (
-                      <ToolRow
-                        icon={<BookOpen size={15} />}
-                        title="Formulae & Tables"
-                        sub="Jump to the booklet section"
-                        onClick={openFormulae}
-                      />
-                    )}
-                    {scanState === 'error' && (
-                      <p className="px-3.5 py-2 text-[11px] text-zinc-500">
-                        Couldn’t read this paper’s text layer — overlays unavailable.
-                      </p>
-                    )}
-                  </MotionDiv>
-                )}
-              </AnimatePresence>
-            </div>
-          )}
-          </div>
-          <a
-            href={activeDoc.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Open the ${side} in your browser or download it${activeDoc.bytes ? ` (${prettyBytes(activeDoc.bytes)})` : ''}`}
-            className="p-2 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100"
-          >
-            <Download size={17} />
-          </a>
-        </div>
-      </div>
-
-      {/* Body */}
-      {session.state === 'ready' && session.pdf ? (
-        <div
-          ref={attachScroller}
-          onScroll={onScroll}
-          className="relative flex-1 overflow-auto overscroll-contain"
-          aria-label={`${activeDoc.label}, page ${session.page} of ${session.numPages}`}
-        >
-          <p className="sr-only">
-            This document is shown as page images. For a screen-reader-friendly copy, use the
-            “Open in your browser” button in the header.
-          </p>
-          <div className="mx-auto py-3 px-2" style={{ width: `${Math.round(zoom * 100)}%`, maxWidth: zoom === 1 ? 820 : undefined }}>
-            {Array.from({ length: session.numPages }, (_, i) => (
-              <Page
-                key={`${side}-${i + 1}`}
-                pdf={session.pdf!}
-                pageNumber={i + 1}
-                zoom={zoom}
-                epoch={epoch}
-                observe={observe}
-                anchors={(answersOn || topicsOn) && side === 'paper' ? anchorsByPage.get(i + 1) : undefined}
-                showAnswerChip={answersOn}
-                onReveal={onReveal}
-                topicInfo={topicsOn && side === 'paper' ? topicInfoByN : undefined}
-                onTopic={onTopic}
-                marks={paceEnabled && side === 'paper' ? docTokens!.byPage.get(i + 1)?.marks : undefined}
-                paceInfo={paceInfo}
-                commands={decodeEnabled && side === 'paper' ? docTokens!.byPage.get(i + 1)?.commands : undefined}
-                onCommand={onCommand}
-              />
-            ))}
-          </div>
-          <p className="text-center text-[10px] text-zinc-400 pb-3">© State Examinations Commission</p>
-        </div>
-      ) : session.state === 'loading' ? (
-        <div className="flex-1 flex flex-col items-center justify-center gap-3 text-zinc-400">
-          <div className="w-7 h-7 rounded-full border-2 border-zinc-300 border-t-zinc-500 animate-spin" aria-hidden />
-          <p className="text-[13px]">
-            Opening {side === 'paper' ? 'the paper' : 'the marking scheme'}…
-            {activeDoc.bytes ? ` ${prettyBytes(activeDoc.bytes)}` : ''}
-          </p>
-          <a href={activeDoc.url} target="_blank" rel="noopener noreferrer" className="text-[12px] underline underline-offset-2 text-zinc-400">
-            Taking too long? Open in browser
-          </a>
-        </div>
-      ) : (
-        <div className="flex-1 flex flex-col items-center justify-center gap-4 px-8 text-center">
-          <p className="text-[15px] font-semibold text-zinc-800 dark:text-zinc-100">
-            {session.state === 'unsupported' ? 'This phone can’t show PDFs inside the app.' : 'That didn’t load.'}
-          </p>
-          <p className="text-[13px] text-zinc-500 max-w-sm">
-            {session.state === 'unsupported'
-              ? 'No problem — the document will open in your browser instead.'
-              : 'It might be the connection. Try again, or open it in your browser.'}
-          </p>
-          <div className="flex items-center gap-2.5">
-            {session.state === 'error' && (
-              <button
-                onClick={() => load(side)}
-                className="flex items-center gap-1.5 px-4 py-2 rounded-full text-[13px] font-semibold text-white"
-                style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
-              >
-                <RotateCcw size={14} /> Try again
-              </button>
-            )}
-            <a
-              href={activeDoc.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 rounded-full text-[13px] font-semibold border-2 border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300"
-            >
-              Open in browser
-            </a>
-          </div>
-        </div>
-      )}
-
-      {/* Footer: zoom + page scrubber */}
-      {session.state === 'ready' && (
-        <div
-          className="shrink-0 bg-white dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800"
-          style={{
-            paddingTop: 8,
-            paddingBottom: 'calc(8px + var(--sab, 0px))',
-            paddingLeft: 'calc(16px + var(--sal, 0px))',
-            paddingRight: 'calc(16px + var(--sar, 0px))',
-          }}
-        >
+                      {timing && (
+                        <ToolRow
+                          icon={<Play />}
+                          title="Exam mode"
+                          sub={`Clock set to ${timing.totalMinutes} min`}
+                          on={examOn}
+                          onClick={() => {
+                            setExamOn(v => {
+                              const next = !v;
+                              setRunning(next);
+                              if (next) setElapsed(0);
+                              return next;
+                            });
+                            setToolsOpen(false);
+                          }}
+                        />
+                      )}
+                      {topics && (
+                        <ToolRow
+                          icon={<TrendingUp />}
+                          title="Topics & frequency"
+                          sub="How often each topic comes up + drill it across years"
+                          on={topicsOn}
+                          busy={topicsOn && answerState === 'loading'}
+                          keepOpen
+                          onClick={toggleTopics}
+                        />
+                      )}
+                      {formulae && (
+                        <ToolRow
+                          icon={<BookOpen />}
+                          title="Formulae & Tables"
+                          sub="Jump to the booklet section"
+                          onClick={openFormulae}
+                        />
+                      )}
           {/* Minute targets are writing-speed sensitive — say whose speed they
               assume, with the one-line route into the 2-min calibration. */}
           {paceOn && side === 'paper' && timing && hasAnyTokens && (
@@ -1342,7 +1533,7 @@ const Viewer: React.FC<ViewerProps> = ({
                 <span className="text-[9px] font-bold uppercase tracking-[0.12em] text-zinc-400">Where the marks are</span>
                 <span className="text-[9px] text-zinc-400">tap a page</span>
               </div>
-              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-[#ece9e4] dark:bg-zinc-800">
+              <div className="flex gap-px h-2.5 rounded overflow-hidden bg-zinc-200 dark:bg-zinc-800">
                 {Array.from({ length: session.numPages }, (_, i) => {
                   const v = marksByPage.map.get(i + 1) ?? 0;
                   const intensity = v / marksByPage.max;
@@ -1359,55 +1550,200 @@ const Viewer: React.FC<ViewerProps> = ({
               </div>
             </div>
           )}
-          <div className="flex items-center gap-3 max-w-3xl mx-auto">
-            <button onClick={() => zoomBy(-1)} disabled={zoom === ZOOM_STEPS[0]} aria-label="Zoom out" className="p-1.5 rounded-lg text-zinc-500 disabled:opacity-30">
-              <ZoomOut size={17} />
-            </button>
-            <button onClick={() => zoomBy(1)} disabled={zoom === ZOOM_STEPS[ZOOM_STEPS.length - 1]} aria-label="Zoom in" className="p-1.5 rounded-lg text-zinc-500 disabled:opacity-30">
-              <ZoomIn size={17} />
-            </button>
-            {session.numPages > 3 ? (
-              <>
-                <input
-                  type="range"
-                  min={1}
-                  max={session.numPages}
-                  value={scrubbing ?? session.page}
-                  onChange={e => setScrubbing(Number(e.target.value))}
-                  onPointerUp={() => {
-                    if (scrubbing != null) jumpToPage(scrubbing);
-                    setScrubbing(null);
-                  }}
-                  onKeyUp={() => {
-                    if (scrubbing != null) jumpToPage(scrubbing);
-                    setScrubbing(null);
-                  }}
-                  aria-label={`Go to page, currently page ${session.page} of ${session.numPages}`}
-                  className="flex-1 accent-[#F26B1F]"
-                />
-                <span className="text-[12px] tabular-nums text-zinc-500 whitespace-nowrap">
-                  {scrubbing ?? session.page} / {session.numPages}
-                </span>
-              </>
-            ) : (
-              <span className="flex-1 text-right text-[12px] tabular-nums text-zinc-500">
-                {session.page} / {session.numPages}
-              </span>
+                      {scanState === 'error' && (
+                        <p className="pvc-menu-note">
+                          Couldn’t read this paper’s text layer — overlays unavailable.
+                        </p>
+                      )}
+                    </KobraScope>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              )}
+            <div className="pvc-zoom">
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => zoomBy(-1)}
+                disabled={session.state!=='ready' || zoom === ZOOM_STEPS[0]}
+                aria-label="Zoom out"
+              >
+                <ZoomOut aria-hidden="true" />
+              </Button>
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => zoomBy(1)}
+                disabled={session.state!=='ready' || zoom === ZOOM_STEPS[ZOOM_STEPS.length - 1]}
+                aria-label="Zoom in"
+              >
+                <ZoomIn aria-hidden="true" />
+              </Button>
+            </div>
+            <form className="pvc-page-jump" aria-label="Page navigation" onSubmit={e=>{e.preventDefault();if(scrubbing!=null)jumpToPage(Math.max(1,Math.min(session.numPages,scrubbing)));setScrubbing(null);}}>
+              <input type="number" min={1} max={session.numPages||1} disabled={session.state!=='ready'} value={scrubbing??session.page} aria-label="Go to page" onChange={e=>setScrubbing(e.target.value ? Number(e.target.value) : 1)} onBlur={()=>{if(scrubbing!=null)jumpToPage(Math.max(1,Math.min(session.numPages,scrubbing)));setScrubbing(null);}} />
+              <span aria-hidden="true">/ {session.numPages||'—'}</span>
+              <span className="pvc-sr" role="status">Page {session.page} of {session.numPages}</span>
+            </form>
+            <a
+              href={activeDoc.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Open the ${side} in your browser or download it${activeDoc.bytes ? ` (${prettyBytes(activeDoc.bytes)})` : ''}`}
+              className="nsu-ink-outline pvc-link"
+            >
+              <Download aria-hidden="true" />
+            </a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </KobraScope>
+
+      {audioSource && <div className="shrink-0 bg-white border-b border-zinc-200">
+        <div className="max-w-3xl mx-auto"><FrenchPaperAudio source={audioSource} /></div>
+      </div>}
+      {preferenceProblem && <p role="alert" className="px-4 py-2 text-sm">Your choice works for this visit, but this browser could not remember it.</p>}
+      <div ref={workspaceRef} className="pt-reader-workspace" style={{'--ad-size':`${deskSizePercent}%`} as React.CSSProperties} data-resizing={deskResizing||undefined} data-attempt={attemptFirst && side==='paper' || undefined} data-split={inlineScheme || undefined}>
+      {/* Body */}
+      {session.state === 'ready' && session.pdf ? (
+        <div
+          ref={attachScroller}
+          onScroll={onScroll}
+          className="relative flex-1 overflow-auto overscroll-contain"
+          aria-label={`${activeDoc.label}, page ${session.page} of ${session.numPages}`}
+        >
+          <p className="sr-only">
+            This document is shown as page images. For a screen-reader-friendly copy, use the
+            “Open in your browser” button in the header.
+          </p>
+          <div className="mx-auto py-3 px-2" style={{ width: `${Math.round(zoom * 100)}%`, maxWidth: zoom === 1 ? 820 : undefined }}>
+            {Array.from({ length: session.numPages }, (_, i) => (
+              <Page
+                key={`${side}-${i + 1}`}
+                pdf={session.pdf!}
+                pageNumber={i + 1}
+                zoom={zoom}
+                epoch={epoch}
+                observe={observe}
+                anchors={isWide && (answersOn || topicsOn) && side === 'paper' ? anchorsByPage.get(i + 1) : undefined}
+                showAnswerChip={!attemptFirst && answersOn}
+                answerInk={attemptFirst && side==='paper' ? pageInk(i+1) : undefined}
+                onReveal={onReveal}
+                topicInfo={topicsOn && side === 'paper' ? topicInfoByN : undefined}
+                onTopic={onTopic}
+                marks={paceEnabled && side === 'paper' ? docTokens!.byPage.get(i + 1)?.marks : undefined}
+                paceInfo={paceInfo}
+                commands={decodeEnabled && side === 'paper' ? docTokens!.byPage.get(i + 1)?.commands : undefined}
+                onCommand={onCommand}
+              />
+            ))}
+          </div>
+          <p className="text-center text-[10px] text-zinc-400 pb-3">© State Examinations Commission</p>
+        </div>
+      ) : session.state === 'loading' ? (
+        <div className="flex-1 flex flex-col items-center justify-center gap-3 text-zinc-400">
+          <div className="w-7 h-7 rounded-full border-2 border-zinc-300 border-t-zinc-500 animate-spin" aria-hidden />
+          <p className="text-[13px]">
+            Opening {side === 'paper' ? 'the paper' : 'the marking scheme'}…
+            {activeDoc.bytes ? ` ${prettyBytes(activeDoc.bytes)}` : ''}
+          </p>
+          <a href={activeDoc.url} target="_blank" rel="noopener noreferrer" className="text-[12px] underline underline-offset-2 text-zinc-400">
+            Taking too long? Open in browser
+          </a>
+        </div>
+      ) : (
+        <div className="flex-1 flex flex-col items-center justify-center gap-4 px-8 text-center">
+          <p className="text-[15px] font-semibold text-zinc-800 dark:text-zinc-100">
+            {session.state === 'unsupported'
+              ? 'This phone can’t show PDFs inside the app.'
+              : session.httpStatus != null
+                ? 'The paper archive is temporarily unavailable.'
+                : 'That didn’t load.'}
+          </p>
+          <p className="text-[13px] text-zinc-500 max-w-sm">
+            {session.state === 'unsupported'
+              ? 'No problem — the document will open in your browser instead.'
+              : session.httpStatus != null
+                ? 'The problem is on our side — not your connection or your phone. Please try again in a little while.'
+                : 'It might be the connection. Try again, or open it in your browser.'}
+          </p>
+          <div className="flex items-center gap-2.5">
+            {session.state === 'error' && (
+              <button
+                onClick={() => load(side)}
+                className="flex items-center gap-1.5 px-4 py-2 rounded-full text-[13px] font-semibold text-white"
+                style={{ backgroundColor: '#F26B1F', boxShadow: '0 3px 0 #B54D14' }}
+              >
+                <RotateCcw size={14} /> Try again
+              </button>
+            )}
+            {/* When the server itself refused (402/403/…), the same URL is just
+                as dead in a browser tab — offering it would be a dead link. */}
+            {session.httpStatus == null && (
+              <a
+                href={activeDoc.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 rounded-full text-[13px] font-semibold border-2 border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300"
+              >
+                Open in browser
+              </a>
             )}
           </div>
         </div>
       )}
 
-      {/* Answers map fetch status (chips appear once ready). */}
-      {answersOn && side === 'paper' && answerState !== 'idle' && (
-        <div
-          role="status"
-          aria-live="polite"
-          className="absolute left-1/2 -translate-x-1/2 bottom-24 z-[60] px-3 py-1.5 rounded-full text-[12px] font-medium bg-zinc-900/90 text-white shadow-lg"
-        >
-          {answerState === 'loading' ? 'Loading answers…' : 'Couldn’t load answers — try again later.'}
-        </div>
+      {(!attemptFirst || topicsOn) && !isWide && side === 'paper' && session.state === 'ready' && answerMap && (answersOn || topicsOn) && (
+        <MobileQuestionTools
+          page={session.page}
+          initialQuestion={focusQuestion}
+          questions={anchorsByPage.get(session.page) ?? []}
+          topicInfo={topicsOn ? topicInfoByN : undefined}
+          showAnswers={answersOn}
+          onAnswer={onReveal}
+          onTopic={onTopic}
+        />
       )}
+
+      {attemptFirst && side==='paper' && !deskCollapsed && <div
+        className="ad-resize" role="separator" tabIndex={0} aria-label="Resize answer desk"
+        aria-orientation={isWide ? 'vertical' : 'horizontal'} aria-controls="paper-answer-drawer"
+        aria-valuenow={Math.round(deskSizePercent)}
+        aria-valuemin={Math.round(deskSizeBounds.min)} aria-valuemax={Math.round(deskSizeBounds.max)}
+        aria-valuetext={`${Math.round(deskSizePercent)} percent of the workspace`}
+        title="Drag to resize. Use arrow keys for smaller adjustments, or double-click to reset."
+        onPointerDown={startDeskResize} onPointerMove={moveDeskResize} onPointerUp={endDeskResize} onPointerCancel={endDeskResize}
+        onKeyDown={keyDeskResize} onDoubleClick={()=>{captureDeskPlace();resizeDesk(isWide ? 43 : 49);}}
+      ><span/></div>}
+      {attemptFirst && side==='paper' && <AnswerDesk title={title} id={deskId} questions={deskQuestions} page={session.page} record={deskRecord} problem={book.problem(deskId)} onChange={update=>book.change(deskId,update)} onQuestion={pickDeskQuestion} onReveal={revealDesk} onHide={()=>setReveal(null)} schemeVisible={reveal?.n===deskId} hasScheme={!!scheme} schemePdf={sessions.current.scheme.pdf} schemeErrored={sessions.current.scheme.state==='error'||sessions.current.scheme.state==='unsupported'} onRetryScheme={()=>load('scheme')} onFullScheme={()=>jumpSchemeToPage(deskQuestion?schemeRegionFor(deskQuestion)[0]?.p??1:1)} inkView={inkView} onInkView={setInkView} tool={inkTool} onTool={setInkTool} onUndo={undoInk} canUndo={!!inkHistory.current[inkHistoryKey(session.page)]?.length} wide={isWide} collapsed={deskCollapsed} onCollapse={()=>{captureDeskPlace();setDeskCollapsed(v=>!v);}} />}
+
+      {inlineScheme && <aside className="pt-reader-sidebar" data-scheme-open={schemeBeside || undefined} aria-label="Question workspace">
+        {/* Hidden, not unmounted, while a scheme is open, so the question
+            picker keeps its place for when the scheme closes. */}
+        <div hidden={schemeBeside}>
+          <div className="pt-reader-sidebar-heading"><h2>Question workspace</h2><p>Keep the question in view while you explore its scheme.</p></div>
+          {answerMap && session.state === 'ready' && <MobileQuestionTools page={session.page} initialQuestion={focusQuestion} questions={anchorsByPage.get(session.page) ?? []} topicInfo={topicsOn ? topicInfoByN : undefined} showAnswers={answersOn} onAnswer={onReveal} onTopic={onTopic} />}
+        </div>
+        {schemeBeside && schemeContent}
+      </aside>}
+      </div>
+      {/* Status toasts and notices, where the floating status pills sat. */}
+      <KobraScope className="nsu-paper-viewer">
+        <div className="pvc-toasts">
+          <Toasts position="bottom-center" />
+        </div>
+        {/* Scanned paper (no text layer) — explain why overlays are absent. Too
+            long for a one-line toast, so it is the house hairline notice. */}
+        {side === 'paper' && (paceOn || decodeOn) && scanState === 'idle' && docTokens && !hasAnyTokens && (
+          <Alert variant="info" role="status" aria-live="polite" className="pvc-notice">
+            <AlertDescription>
+              This paper is a scanned image — its text can’t be read for on-paper tools.
+            </AlertDescription>
+          </Alert>
+        )}
+      </KobraScope>
 
       {/* Cross-year topic sheet — every sibling question for this subtopic. */}
       <AnimatePresence>
@@ -1457,7 +1793,7 @@ const Viewer: React.FC<ViewerProps> = ({
       {/* Per-question marking-scheme reveal — bottom sheet on phones, right tray
           on tablet+; same sleek glide as the GC dashboard student view. */}
       <AnimatePresence>
-        {reveal && (
+        {!attemptFirst && reveal && !schemeBeside && (
           <>
             <MotionDiv
               key="reveal-backdrop"
@@ -1480,34 +1816,11 @@ const Viewer: React.FC<ViewerProps> = ({
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
-                  ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
-                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
+                  ? 'fixed top-0 right-0 z-[111] h-full w-[min(720px,calc(100vw-48px))] flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
+                  : 'pt-reveal-sheet fixed bottom-0 inset-x-0 z-[111] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
               }
             >
-              <RevealContent
-                q={reveal}
-                wide={isWide}
-                reduced={!!reducedMotion}
-                schemePdf={sessions.current.scheme.pdf}
-                schemeUrl={scheme?.url}
-                schemeErrored={sessions.current.scheme.state === 'error' || sessions.current.scheme.state === 'unsupported'}
-                copyright={answerMap?.copyright}
-                selfMark={selfMarkOn}
-                existingMark={attempt.marks?.[reveal.n]}
-                licence={storageNs ? markerLicence(storageNs.split('|')[0]) : null}
-                siblings={(() => {
-                  if (!topics) return undefined;
-                  const tag = topics.q.find(t => t.n === reveal.n);
-                  if (!tag) return undefined;
-                  return siblingsFor(topics.subjectId, tag.primary)
-                    .filter(s => !(s.year === topics.year && s.level === topics.level && s.lang === topics.lang && s.fileid === topics.fileid))
-                    .slice(0, 3);
-                })()}
-                onJumpSibling={s => { setReveal(null); onCrossYear?.(s); }}
-                onRecordMark={m => recordMark(reveal.n, m)}
-                onClose={() => setReveal(null)}
-                onFullScheme={jumpSchemeToPage}
-              />
+              {schemeContent}
             </MotionDiv>
           </>
         )}
@@ -1515,7 +1828,7 @@ const Viewer: React.FC<ViewerProps> = ({
 
       {/* The Full Loop bar (PT-2) — sequences attempt → reveal → mark → next. */}
       {loop && answerMap && !reveal && (() => {
-        const q = answerMap.q[loop.idx];
+        const q = loopQuestions[loop.idx];
         if (!q) return null;
         void loopTick; // 1s cadence re-render for the elapsed readout
         const marked = attempt.marks?.[q.n] !== undefined;
@@ -1527,7 +1840,7 @@ const Viewer: React.FC<ViewerProps> = ({
             <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-2xl px-4 py-3 flex items-center gap-3">
               <div className="min-w-0 flex-1">
                 <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">
-                  The full loop · {loop.idx + 1} of {answerMap.q.length}
+                  The full loop · {loop.idx + 1} of {loopQuestions.length}
                 </p>
                 <p className="text-[14px] font-semibold truncate text-zinc-900 dark:text-white">
                   {q.label ?? `Question ${q.n}`}
@@ -1540,7 +1853,7 @@ const Viewer: React.FC<ViewerProps> = ({
                   className="shrink-0 rounded-full px-4 py-2 text-[13px] font-semibold text-white transition-transform active:translate-y-0.5"
                   style={{ backgroundColor: '#3A8D5F' }}
                 >
-                  {loop.idx + 1 >= answerMap.q.length ? 'Finish' : 'Next →'}
+                  {loop.idx + 1 >= loopQuestions.length ? 'Finish' : 'Next →'}
                 </button>
               ) : (
                 <button
@@ -1560,7 +1873,7 @@ const Viewer: React.FC<ViewerProps> = ({
       })()}
 
       {/* Full Loop resume card — a saved place from a previous mid-loop exit. */}
-      {resumePlace && !loop && !loopDone && !reveal && side === 'paper' && answersUrl && scheme && storageNs && (
+      {!attemptFirst && resumePlace && !loop && !loopDone && !reveal && side === 'paper' && answersUrl && scheme && storageNs && (
         <div className="fixed bottom-4 inset-x-0 z-[105] flex justify-center px-4" style={{ paddingBottom: 'var(--sab, 0px)' }}>
           <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-2xl px-4 py-3">
             <div className="flex items-start gap-3">
@@ -1605,7 +1918,7 @@ const Viewer: React.FC<ViewerProps> = ({
 
       {/* Full Loop summary — the session in the student's own marks. */}
       {loopDone && answerMap && (() => {
-        const qs = answerMap.q;
+        const qs = loopQuestions;
         const marks = qs.map(q => attempt.marks?.[q.n]).filter((m): m is SelfMark => !!m);
         const avg = marks.length ? Math.round(marks.reduce((a, m) => a + (m.max ? (m.score / m.max) * 100 : m.score), 0) / marks.length) : 0;
         const gapCounts = new Map<GapKind, number>();
@@ -1674,28 +1987,6 @@ const Viewer: React.FC<ViewerProps> = ({
           </div>
         );
       })()}
-
-      {/* Text-scan status while the overlay tools read the paper. */}
-      {side === 'paper' && (paceOn || decodeOn) && scanState === 'loading' && !docTokens && (
-        <div
-          role="status"
-          aria-live="polite"
-          className="absolute left-1/2 -translate-x-1/2 bottom-24 z-[60] flex items-center gap-2 px-3 py-1.5 rounded-full text-[12px] font-medium bg-zinc-900/90 text-white shadow-lg"
-        >
-          <span className="w-3 h-3 rounded-full border-2 border-white/40 border-t-white animate-spin" aria-hidden />
-          Reading the paper…
-        </div>
-      )}
-      {/* Scanned paper (no text layer) — explain why overlays are absent. */}
-      {side === 'paper' && (paceOn || decodeOn) && scanState === 'idle' && docTokens && !hasAnyTokens && (
-        <div
-          role="status"
-          aria-live="polite"
-          className="absolute left-1/2 -translate-x-1/2 bottom-24 z-[60] max-w-[86%] px-3.5 py-2 rounded-full text-[12px] font-medium text-center bg-zinc-900/90 text-white shadow-lg"
-        >
-          This paper is a scanned image — its text can’t be read for on-paper tools.
-        </div>
-      )}
 
       {/* Handwriting-speed calibrator (F4) — opened from the tools menu or the
           pace footer line; result feeds straight back into the minute budgets. */}
@@ -1855,6 +2146,7 @@ const Viewer: React.FC<ViewerProps> = ({
                 onJump={n => {
                   const q = answerMap?.q.find(x => x.n === n);
                   setTriageOpen(false);
+                  if (attemptFirst && q) {setDeskId(n);saveDeskQuestion(deskNs,n);setReveal(null);}
                   if (q) requestAnimationFrame(() => {
                     const el = scrollerRef.current;
                     const target = el?.querySelector<HTMLElement>(`[data-page="${q.pP}"]`);
@@ -2117,7 +2409,7 @@ const ExamClock: React.FC<{
   const frac = Math.min(1, Math.max(0, elapsed / totalSec));
   return (
     <div
-      className="absolute left-1/2 -translate-x-1/2 bottom-[76px] z-[65] flex items-center gap-2.5 pl-3 pr-2 py-2 rounded-2xl bg-white dark:bg-zinc-900 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
+      className="absolute left-1/2 -translate-x-1/2 bottom-[calc(76px+var(--sab,0px))] z-[65] flex items-center gap-2.5 pl-3 pr-2 py-2 rounded-2xl bg-white dark:bg-zinc-900 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
       role="timer"
       aria-live="off"
     >
@@ -2150,41 +2442,68 @@ const ExamClock: React.FC<{
 
 // ─── tools-menu row ─────────────────────────────────────────
 
+/** One row of the Kobra Tools menu. A tool that switches on and off is a
+ *  menuitemcheckbox whose Switch shows its state; the rest open something. */
 const ToolRow: React.FC<{
   icon: React.ReactNode;
   title: string;
   sub: string;
   on?: boolean;
   busy?: boolean;
+  /** Leave the menu open after the tap, for a tool the student may flip again. */
+  keepOpen?: boolean;
   onClick: () => void;
-}> = ({ icon, title, sub, on, busy, onClick }) => (
-  <button
-    role="menuitemcheckbox"
-    aria-checked={!!on}
-    onClick={onClick}
-    className="w-full flex items-center gap-3 px-3.5 py-2.5 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/60 transition-colors"
-  >
-    <span
-      className="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center"
-      style={{ backgroundColor: on ? '#F26B1F' : '#FDEEDF', color: on ? '#fff' : '#F26B1F' }}
+}> = ({ icon, title, sub, on, busy, keepOpen, onClick }) => {
+  const toggle = on !== undefined;
+  return (
+    <DropdownMenuItem
+      className="pvc-tool"
+      closeOnClick={!keepOpen}
+      onClick={onClick}
+      {...(toggle ? { role: 'menuitemcheckbox', 'aria-checked': on } : {})}
     >
-      {busy ? <span className="w-3.5 h-3.5 rounded-full border-2 border-current/40 border-t-current animate-spin" /> : icon}
-    </span>
-    <span className="flex-1 min-w-0">
-      <span className="block text-[13px] font-semibold text-zinc-900 dark:text-zinc-100">{title}</span>
-      <span className="block text-[11px] text-zinc-500 truncate">{sub}</span>
-    </span>
-    {on !== undefined && (
-      <span
-        className="shrink-0 w-9 h-5 rounded-full p-0.5 transition-colors"
-        style={{ backgroundColor: on ? '#F26B1F' : '#d0cdc8' }}
-        aria-hidden
-      >
-        <span className="block w-4 h-4 rounded-full bg-white transition-transform" style={{ transform: on ? 'translateX(16px)' : 'none' }} />
+      <span className="pvc-tool-icon" data-on={on || undefined} aria-hidden="true">
+        {busy ? <Spinner /> : icon}
       </span>
-    )}
-  </button>
-);
+      <span className="pvc-tool-copy">
+        <strong>{title}</strong>
+        <small>{sub}</small>
+      </span>
+      {toggle ? (
+        <span className="pvc-tool-switch" aria-hidden="true">
+          <Switch checked={on} tabIndex={-1} />
+        </span>
+      ) : (
+        <ArrowUpRight className="pvc-tool-open" aria-hidden="true" />
+      )}
+    </DropdownMenuItem>
+  );
+};
+
+// ─── status toasts ──────────────────────────────────────────
+
+type StatusToast = { message: string; state: 'pending' | 'error' | 'info' };
+/** setTimeout's ceiling: a settled status stays until it clears. */
+const UNTIL_CLEARED = 2 ** 31 - 1;
+
+/** Reports a viewer status through the runtime toast, where the floating
+ *  status pill used to be: shown while the status holds, then let go once it
+ *  clears, as the pill went with its condition. */
+function useStatusToast(id: string, status: StatusToast | null) {
+  const shown = useRef<string | null>(null);
+  const message = status?.message;
+  const state = status?.state;
+  useEffect(() => {
+    if (message && state) {
+      shown.current = message;
+      toast(state === 'pending' ? { id, message, state } : { id, message, state, lifetime: UNTIL_CLEARED });
+    } else if (shown.current) {
+      // Same toast, no state: it drops its mark and leaves.
+      toast({ id, message: shown.current, lifetime: 200 });
+      shown.current = null;
+    }
+  }, [id, message, state]);
+}
 
 // ─── command-word decoder content ───────────────────────────
 
@@ -2385,8 +2704,17 @@ const RevealContent: React.FC<{
   onRecordMark?: (mark: SelfMark | null) => void;
   onClose: () => void;
   onFullScheme: (page: number) => void;
-}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, licence, siblings, onJumpSibling, onRecordMark, onClose, onFullScheme }) => {
+  /** Previous/next question's scheme; absent during the Full Loop, which
+   *  sequences questions itself. */
+  onStep?: (dir: 1 | -1) => void;
+  canPrev?: boolean;
+  canNext?: boolean;
+}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, licence, siblings, onJumpSibling, onRecordMark, onClose, onFullScheme, onStep, canPrev, canNext }) => {
   const schemeRegion = schemeRegionFor(q);
+  // Text size for the crop; it carries across questions while the panel is open.
+  const [zoom, setZoom] = useState(1);
+  const zoomStep = (dir: 1 | -1) => setZoom(z => Math.min(2, Math.max(1, Math.round((z + dir * 0.25) * 100) / 100)));
+  const showsCrop = q.mode !== 'pagejump' && !schemeErrored;
   const firstPage = schemeRegion[0]?.p;
   const closeRef = useRef<HTMLButtonElement | null>(null);
   useEffect(() => {
@@ -2404,22 +2732,56 @@ const RevealContent: React.FC<{
           <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
         </div>
       )}
-      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+      <div className="shrink-0 flex items-start gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
         <div className="flex-1 min-w-0">
-          <p className="text-[14px] font-semibold text-zinc-900 dark:text-white">{q.label ?? `Question ${q.n}`} · marking scheme</p>
-          <p className="text-[11px] text-zinc-500">How examiners award the marks — not a model answer.</p>
+          <p className="text-[16px] font-bold text-zinc-900 dark:text-white">{q.label ?? `Question ${q.n}`} · marking scheme</p>
+          <p className="mt-0.5 text-[12px] text-zinc-500">How examiners award the marks — not a model answer.</p>
         </div>
+        {onStep && (
+          <div className="shrink-0 flex items-center gap-1.5 pt-0.5">
+            <button type="button" onClick={() => onStep(-1)} disabled={!canPrev} aria-label="Previous question’s marking scheme" className={E_SQUARE}>
+              <ChevronLeft size={16} aria-hidden />
+            </button>
+            <button type="button" onClick={() => onStep(1)} disabled={!canNext} aria-label="Next question’s marking scheme" className={E_SQUARE}>
+              <ChevronRight size={16} aria-hidden />
+            </button>
+          </div>
+        )}
         <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
           <X size={18} />
         </button>
       </div>
+      {showsCrop && (
+        <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2 border-b border-zinc-100 dark:border-zinc-800">
+          <span className="text-[12px] text-zinc-500">Text size</span>
+          <div className="flex items-center gap-1.5">
+            <button type="button" onClick={() => zoomStep(-1)} disabled={zoom <= 1} aria-label="Smaller marking scheme text" className={E_SQUARE}>
+              <Minus size={14} aria-hidden />
+            </button>
+            <output aria-live="polite" className="min-w-[44px] text-center text-[12.5px] font-semibold tabular-nums text-zinc-900 dark:text-zinc-100">
+              {Math.round(zoom * 100)}%
+            </output>
+            <button type="button" onClick={() => zoomStep(1)} disabled={zoom >= 2} aria-label="Bigger marking scheme text" className={E_SQUARE}>
+              <Plus size={14} aria-hidden />
+            </button>
+            <button type="button" onClick={() => setZoom(1)} disabled={zoom === 1} className={E_SQUARE}>
+              Fit
+            </button>
+          </div>
+        </div>
+      )}
       {/* Content settles a beat after the panel lands (premium stagger). */}
       <MotionDiv
         initial={reduced ? false : { opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: reduced ? 0 : 0.08, duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
-        className="flex-1 overflow-auto overscroll-contain px-3 py-3 bg-zinc-100 dark:bg-zinc-950"
+        className="flex-1 min-h-0 overflow-auto overscroll-contain p-4 bg-white dark:bg-zinc-900"
       >
+        {q.schemeNote && (
+          <p className="text-[13px] leading-relaxed text-zinc-800 dark:text-zinc-200 mb-3 px-1">
+            {q.schemeNote}
+          </p>
+        )}
         {q.mode === 'pagejump' ? (
           <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
             This question’s answer spans several scheme pages. Open the marking scheme to read it in full.
@@ -2429,7 +2791,7 @@ const RevealContent: React.FC<{
             Couldn’t load the marking scheme. Open it in the Scheme tab instead.
           </p>
         ) : schemePdf ? (
-          <CropView pdf={schemePdf} region={schemeRegion} />
+          <CropView pdf={schemePdf} region={schemeRegion} trim zoom={zoom} responsive maxWidth={1200} />
         ) : (
           <div role="status" aria-live="polite" className="flex flex-col items-center justify-center gap-2 py-10 text-zinc-400">
             <div className="w-5 h-5 rounded-full border-2 border-zinc-300 border-t-zinc-500 animate-spin" aria-hidden />
@@ -2506,7 +2868,7 @@ const RevealContent: React.FC<{
                     className="px-2.5 py-1 rounded-full text-[11.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
                     style={{ backgroundColor: '#fff', borderColor: 'rgba(242,107,31,0.35)', color: '#F26B1F' }}
                   >
-                    {s.year} · Q{s.n} →
+                    {s.year} · {questionLabel(s, { short: true })} →
                   </button>
                 ))}
               </div>
@@ -2515,11 +2877,11 @@ const RevealContent: React.FC<{
         </div>
       )}
       <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2.5 border-t border-zinc-200 dark:border-zinc-800">
-        <span className="text-[10px] text-zinc-400 truncate">{copyright ?? '© State Examinations Commission'}</span>
+        <span className="text-[11px] text-zinc-500 truncate">{copyright ?? '© State Examinations Commission'}</span>
         <button
           onClick={() => firstPage && onFullScheme(firstPage)}
           disabled={!firstPage}
-          className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-semibold text-[#F26B1F] bg-[#FDEEDF] disabled:opacity-40"
+          className="shrink-0 inline-flex items-center gap-1.5 pb-px border-b-[1.5px] border-[#1A1A1A] dark:border-zinc-100 text-[13px] font-bold text-[#1A1A1A] dark:text-zinc-100 disabled:opacity-40"
         >
           View full scheme →
         </button>
@@ -2538,6 +2900,7 @@ const Page: React.FC<{
   observe: (el: Element, cb: (near: boolean) => void) => () => void;
   anchors?: PaperAnswerQuestion[];
   showAnswerChip?: boolean;
+  answerInk?: AnswerInkProps;
   onReveal?: (q: PaperAnswerQuestion) => void;
   topicInfo?: Map<string, { subtopicId: string; label: string; yearsWith: number; totalYears: number }> | null;
   onTopic?: (n: string) => void;
@@ -2545,7 +2908,7 @@ const Page: React.FC<{
   paceInfo?: { minsPerMark: number | null; totalMarks: number };
   commands?: CommandToken[];
   onCommand?: (c: CommandToken) => void;
-}> = React.memo(({ pdf, pageNumber, zoom, epoch, observe, anchors, showAnswerChip, onReveal, topicInfo, onTopic, marks, paceInfo, commands, onCommand }) => {
+}> = React.memo(({ pdf, pageNumber, zoom, epoch, observe, anchors, showAnswerChip, answerInk, onReveal, topicInfo, onTopic, marks, paceInfo, commands, onCommand }) => {
   const holderRef = useRef<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const pageRef = useRef<PDFPageProxy | null>(null);
@@ -2627,6 +2990,7 @@ const Page: React.FC<{
       aria-label={`Page ${pageNumber}`}
     >
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+      {answerInk && <AnswerInk {...answerInk} aspect={aspect??1.414} />}
       {/* Per-question rails — fractional top rides zoom + virtualisation. The
           marking-scheme action rides the right edge; topic context the left. */}
       {anchors?.map(q => {
@@ -2744,4 +3108,6 @@ const Page: React.FC<{
 });
 Page.displayName = 'PaperTrailPage';
 
-export default Viewer;
+// A changed paper/account is a new document session, with isolated authored work.
+const PaperViewer:React.FC<ViewerProps> = props => <Viewer key={`${props.storageNs??props.paper.url}|${props.scheme?.url??''}`} {...props}/>;
+export default PaperViewer;

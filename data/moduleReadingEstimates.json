@@ -1,0 +1,334 @@
+{
+  "agency-protocol": {
+    "full": 950,
+    "essentials": 386
+  },
+  "hope-protocol": {
+    "full": 1129,
+    "essentials": 858
+  },
+  "affirming-values-protocol": {
+    "full": 675,
+    "essentials": 255
+  },
+  "best-possible-self-protocol": {
+    "full": 664,
+    "essentials": 374
+  },
+  "grammar-of-grit-protocol": {
+    "full": 528,
+    "essentials": 432
+  },
+  "agency-architecture-protocol": {
+    "full": 716,
+    "essentials": 452
+  },
+  "strategic-advantage-protocol": {
+    "full": 776,
+    "essentials": 339
+  },
+  "self-efficacy-protocol": {
+    "full": 854,
+    "essentials": 515
+  },
+  "illusion-of-competence-protocol": {
+    "full": 690,
+    "essentials": 513
+  },
+  "procrastination-protocol": {
+    "full": 998,
+    "essentials": 831
+  },
+  "neuroplasticity-protocol": {
+    "full": 893,
+    "essentials": 508
+  },
+  "myelin-manual-protocol": {
+    "full": 662,
+    "essentials": 379
+  },
+  "praise-protocol": {
+    "full": 855,
+    "essentials": 526
+  },
+  "effective-struggle-protocol": {
+    "full": 1236,
+    "essentials": 722
+  },
+  "science-of-making-mistakes-protocol": {
+    "full": 754,
+    "essentials": 469
+  },
+  "autodidact-engine-protocol": {
+    "full": 835,
+    "essentials": 409
+  },
+  "power-of-yet-protocol": {
+    "full": 784,
+    "essentials": 528
+  },
+  "mastering-active-recall-protocol": {
+    "full": 866,
+    "essentials": 534
+  },
+  "mastering-spaced-repetition-protocol": {
+    "full": 1019,
+    "essentials": 599
+  },
+  "mastering-interleaving-protocol": {
+    "full": 753,
+    "essentials": 400
+  },
+  "cognitive-architecture-protocol": {
+    "full": 728,
+    "essentials": 453
+  },
+  "elaborative-interrogation-protocol": {
+    "full": 870,
+    "essentials": 532
+  },
+  "cognitive-endurance-protocol": {
+    "full": 821,
+    "essentials": 424
+  },
+  "mental-modelling-protocol": {
+    "full": 981,
+    "essentials": 644
+  },
+  "bimodal-brain-protocol": {
+    "full": 644,
+    "essentials": 286
+  },
+  "leaving-cert-strategy-protocol": {
+    "full": 1038,
+    "essentials": 762
+  },
+  "reverse-engineering-protocol": {
+    "full": 1011,
+    "essentials": 633
+  },
+  "exam-hall-strategies-protocol": {
+    "full": 1040,
+    "essentials": 535
+  },
+  "exam-crisis-management-protocol": {
+    "full": 1154,
+    "essentials": 703
+  },
+  "growth-mindset-protocol": {
+    "full": 1342,
+    "essentials": 712
+  },
+  "controllable-variables-protocol": {
+    "full": 1283,
+    "essentials": 493
+  },
+  "reframing-progress-protocol": {
+    "full": 752,
+    "essentials": 532
+  },
+  "learning-math-protocol": {
+    "full": 1181,
+    "essentials": 660
+  },
+  "linking-study-future-goals-protocol": {
+    "full": 1705,
+    "essentials": 935
+  },
+  "game-day-protocol": {
+    "full": 1118,
+    "essentials": 619
+  },
+  "reframing-catastrophic-thoughts-protocol": {
+    "full": 734,
+    "essentials": 398
+  },
+  "mastering-foreign-languages-protocol": {
+    "full": 1050,
+    "essentials": 570
+  },
+  "emotional-intelligence-protocol": {
+    "full": 1020,
+    "essentials": 719
+  },
+  "mastering-the-sciences-protocol": {
+    "full": 883,
+    "essentials": 433
+  },
+  "mastering-the-humanities-protocol": {
+    "full": 526,
+    "essentials": 334
+  },
+  "mastering-english-protocol": {
+    "full": 942,
+    "essentials": 430
+  },
+  "mastering-business-protocol": {
+    "full": 799,
+    "essentials": 451
+  },
+  "applied-sciences-protocol": {
+    "full": 888,
+    "essentials": 429
+  },
+  "digital-distraction-protocol": {
+    "full": 1267,
+    "essentials": 732
+  },
+  "mastering-the-creatives-protocol": {
+    "full": 916,
+    "essentials": 366
+  },
+  "points-optimization-protocol": {
+    "full": 2595,
+    "essentials": 1559
+  },
+  "marking-scheme-decoder-protocol": {
+    "full": 1853,
+    "essentials": 1341
+  },
+  "answer-engineering-protocol": {
+    "full": 1619,
+    "essentials": 669
+  },
+  "learning-radar-protocol": {
+    "full": 1495,
+    "essentials": 822
+  },
+  "note-taking-paradox-protocol": {
+    "full": 1523,
+    "essentials": 642
+  },
+  "teaching-effect-protocol": {
+    "full": 1281,
+    "essentials": 524
+  },
+  "cognitive-load-protocol": {
+    "full": 1278,
+    "essentials": 600
+  },
+  "implementation-protocol": {
+    "full": 1166,
+    "essentials": 668
+  },
+  "context-effect-protocol": {
+    "full": 1309,
+    "essentials": 708
+  },
+  "subject-english-protocol": {
+    "full": 2102,
+    "essentials": 2102
+  },
+  "subject-irish-protocol": {
+    "full": 1565,
+    "essentials": 1565
+  },
+  "subject-french-protocol": {
+    "full": 1476,
+    "essentials": 1476
+  },
+  "subject-german-protocol": {
+    "full": 1462,
+    "essentials": 1462
+  },
+  "subject-spanish-protocol": {
+    "full": 1553,
+    "essentials": 1553
+  },
+  "subject-italian-protocol": {
+    "full": 1608,
+    "essentials": 1608
+  },
+  "subject-japanese-protocol": {
+    "full": 1478,
+    "essentials": 1478
+  },
+  "subject-mathematics-protocol": {
+    "full": 1603,
+    "essentials": 1603
+  },
+  "subject-applied-maths-protocol": {
+    "full": 1608,
+    "essentials": 1608
+  },
+  "subject-physics-protocol": {
+    "full": 1376,
+    "essentials": 1376
+  },
+  "subject-chemistry-protocol": {
+    "full": 1468,
+    "essentials": 1468
+  },
+  "subject-biology-protocol": {
+    "full": 1484,
+    "essentials": 1484
+  },
+  "subject-computer-science-protocol": {
+    "full": 1547,
+    "essentials": 1547
+  },
+  "subject-ag-science-protocol": {
+    "full": 1475,
+    "essentials": 1475
+  },
+  "subject-accounting-protocol": {
+    "full": 1550,
+    "essentials": 1550
+  },
+  "subject-business-protocol": {
+    "full": 1556,
+    "essentials": 1556
+  },
+  "subject-economics-protocol": {
+    "full": 1753,
+    "essentials": 1753
+  },
+  "subject-history-protocol": {
+    "full": 1434,
+    "essentials": 1434
+  },
+  "subject-geography-protocol": {
+    "full": 1222,
+    "essentials": 1222
+  },
+  "subject-politics-and-society-protocol": {
+    "full": 1265,
+    "essentials": 1265
+  },
+  "subject-religious-education-protocol": {
+    "full": 1457,
+    "essentials": 1457
+  },
+  "subject-classical-studies-protocol": {
+    "full": 1308,
+    "essentials": 1308
+  },
+  "subject-home-economics-protocol": {
+    "full": 1574,
+    "essentials": 1574
+  },
+  "subject-construction-studies-protocol": {
+    "full": 1580,
+    "essentials": 1580
+  },
+  "subject-engineering-protocol": {
+    "full": 1576,
+    "essentials": 1576
+  },
+  "subject-dcg-protocol": {
+    "full": 1539,
+    "essentials": 1539
+  },
+  "subject-technology-protocol": {
+    "full": 1554,
+    "essentials": 1554
+  },
+  "subject-art-protocol": {
+    "full": 1873,
+    "essentials": 1873
+  },
+  "subject-music-protocol": {
+    "full": 1882,
+    "essentials": 1882
+  }
+}

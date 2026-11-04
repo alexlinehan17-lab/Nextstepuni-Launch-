@@ -23,6 +23,7 @@ import {
 } from '../data/devStudent';
 import { isVerifiedAdminSession } from '../utils/adminIdentity';
 import { clearLocalSessionData } from '../utils/sessionPrivacy';
+import { isLocalDemoPreview } from '../utils/localDemoPreview';
 import { resetProgrammeAnalyticsSession, trackProgrammeSessionStarted } from '../utils/programmeAnalytics';
 
 // ─── Types ──────────────────────────────────────────────────
@@ -117,6 +118,12 @@ export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<SessionUser | null>(null);
+  const profileRevision = useRef(0);
+  const applyLoadedUser = useCallback((loaded: SessionUser, revision: number) => {
+    setUser(previous => previous?.uid === loaded.uid && revision !== profileRevision.current
+      ? { ...loaded, name: previous.name, avatar: previous.avatar }
+      : loaded);
+  }, []);
   const [isLoadingAuth, setIsLoadingAuth] = useState(true);
   const [authResolved, setAuthResolved] = useState(false);
   const [userResolved, setUserResolved] = useState(false);
@@ -133,7 +140,25 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // Firebase guarantees onAuthStateChanged waits for the persistence layer
   // (IndexedDB) before its first fire, so the first callback is always definitive.
   useEffect(() => {
+    // The development review is self-contained: every iframe navigation gets
+    // sample data, without a saved login or any real-account auth subscription.
+    if (isLocalDemoPreview()) {
+      setUser(createDemoStudentSession());
+      setLoadedData(loadDemoStudentLoadedData());
+      setLoadedDataUid(DEMO_STUDENT_UID);
+      setLoadedDataStatus('loaded');
+      setIsLoadingAuth(false);
+      authResolvedRef.current = true;
+      setAuthResolved(true);
+      setUserResolved(true);
+      return;
+    }
+
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser: FirebaseUser | null) => {
+      // Signup and profile edits can finish while these reads are in flight.
+      // A stale or school-only profile must not replace the chosen identity.
+      // Role and school still come from the server-owned profile below.
+      const revision = profileRevision.current;
       setLoadedDataUid(null);
       setLoadedDataStatus('pending');
 
@@ -184,7 +209,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 .catch(err => console.error('Failed to backfill curriculumLevel:', err));
             }
 
-            setUser({
+            applyLoadedUser({
               uid: firebaseUser.uid,
               name: userData.name,
               avatar: userData.avatar || 'Charlie',
@@ -197,7 +222,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               yearGroup: userData.yearGroup,
               curriculumLevel,
               needsPasswordChange: userData.needsPasswordChange || false,
-            });
+            }, revision);
             if (!isSchoolStaff(userData.role)) trackProgrammeSessionStarted();
 
             if (progressData) {
@@ -231,12 +256,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             // screen. A neutral placeholder is the honest thing to show while the
             // document is missing.
             const fallbackName = firebaseUser.displayName || 'Student';
-            setUser({
+            applyLoadedUser({
               uid: firebaseUser.uid,
               name: fallbackName,
               avatar: 'Charlie',
               isAdmin: false,
-            });
+            }, revision);
             trackProgrammeSessionStarted();
             if (progressData) {
               const pd = progressData;
@@ -264,12 +289,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             // screen. A neutral placeholder is the honest thing to show while the
             // document is missing.
             const fallbackName = firebaseUser.displayName || 'Student';
-          setUser({
+          applyLoadedUser({
             uid: firebaseUser.uid,
             name: fallbackName,
             avatar: 'Charlie',
             isAdmin: false,
-          });
+          }, revision);
           setLoadedData({ ...defaultLoadedData, needsOnboarding: true });
         }
         setLoadedDataStatus(loadFailed ? 'failed' : 'loaded');
@@ -283,8 +308,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           // Browser auth uses session persistence, so closing a shared-school
           // browser ends Firebase sign-in but cannot run our logout handler.
           // Clear the previous account's device-only drafts on the next
-          // unauthenticated boot before presenting the login screen.
-          await clearLocalSessionData();
+          // unauthenticated boot before presenting the login screen. Anonymous
+          // CERTLE history belongs to the browser, not the previous account.
+          // Later auth transitions and explicit logout still clear everything.
+          await clearLocalSessionData({ preservePublicGames: !authResolvedRef.current });
           setUser(null);
           setLoadedData({ ...defaultLoadedData });
         }
@@ -300,7 +327,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [applyLoadedUser]);
 
   const handleLoginSuccess = useCallback((loggedInUser: SessionUser, options?: LoginSuccessOptions) => {
     if (loggedInUser.uid === DEMO_STUDENT_UID) {
@@ -315,6 +342,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       // swaps the account-setup loader for "Loading your workspace".
       setLoadedData(previous => ({ ...previous, needsOnboarding: true }));
     }
+    profileRevision.current += 1;
     setUser(loggedInUser);
     setUserResolved(true);
   }, []);
@@ -353,6 +381,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const patchUser = useCallback((patch: Partial<SessionUser>) => {
+    profileRevision.current += 1;
     setUser(prev => (prev ? { ...prev, ...patch } : prev));
   }, []);
 

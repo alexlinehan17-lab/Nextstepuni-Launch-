@@ -23,7 +23,8 @@ export function waysInSourceFromMarkBank(card: SecCard, subjectLabel: string): W
           alt: card.questionFigure.alt,
           attribution: card.questionFigure.attribution,
         }
-      : 'figure' in card && card.figure
+      // A solution crop is the scheme's answer: it never reaches the question side.
+      : 'figure' in card && card.figure && !card.figure.solution
         ? {
             src: figureUrl(card.figure.src),
             alt: card.figure.alt,

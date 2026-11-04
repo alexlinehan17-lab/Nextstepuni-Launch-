@@ -1,0 +1,4796 @@
+{
+  "subjectId": "applied-mathematics",
+  "year": 2022,
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual sweep of every page of both English question papers and marking schemes, including blank pages and guidance; each task and mark boundary transcribed against the original layout. Legacy card IDs retained with explicit corrections.",
+  "progressIdentityReview": "The retired HL Q6(a)(iii) and OL Q2(vii) alias keys remain retired. New split tasks use descriptive suffixes; all 64 currently shipped 2022 card IDs are retained exactly once with explicit correction records.",
+  "papers": [
+    {
+      "level": "higher",
+      "paperSha256": "9b74e47e2f4594765838ceff1cd87c55979688f928037f0c5be91c4d23f8ac4d",
+      "schemeSha256": "b595219bdad3710900c344bc7f4c5ccffd2dffb33b54d380ec71b374ed4b1b7d",
+      "questionPages": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "printedTaskCount": 40,
+      "practiceTaskCount": 44,
+      "availableMarks": 500,
+      "questionMarks": {
+        "1": 50,
+        "2": 50,
+        "3": 50,
+        "4": 50,
+        "5": 50,
+        "6": 50,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      },
+      "tasks": [
+        {
+          "ref": "Q1(a)(i)",
+          "idSuffix": "1-a-i",
+          "questionText": "Draw a speed-time graph of the motion.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.41035
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.289,
+            0.96,
+            0.413
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q1(a)(ii)",
+          "idSuffix": "1-a-ii",
+          "questionText": "Find the time taken for the first 16 km.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.41035
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.444,
+            0.96,
+            0.596
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q1(a)(iii)",
+          "idSuffix": "1-a-iii",
+          "questionText": "Find the deceleration of the train.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.41035
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.634,
+            0.96,
+            0.823
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q1(b)(i) — Position of ball E after 5 s",
+          "idSuffix": "1-b-i",
+          "questionText": "Find where ball E is after 5 s and the total distance it has travelled in this time.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.41035
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.187,
+            0.96,
+            0.275
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻².",
+          "practiceFocus": "Position of ball E after 5 s"
+        },
+        {
+          "ref": "Q1(b)(i) — Total distance travelled in 5 s",
+          "idSuffix": "1-b-i-distance",
+          "questionText": "Find where ball E is after 5 s and the total distance it has travelled in this time.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.41035
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.287,
+            0.96,
+            0.401
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻².",
+          "practiceFocus": "Total distance travelled in 5 s"
+        },
+        {
+          "ref": "Q1(b)(ii)",
+          "idSuffix": "1-b-ii",
+          "questionText": "Prove that when E and F collide, they will each be travelling with speed (1/2)gT.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.41035
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.416,
+            0.96,
+            0.684
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q2(a)(i)",
+          "idSuffix": "2-a-i",
+          "questionText": "Find the direction the boat should steer.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-higher-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.453,
+              0.96,
+              0.80601
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.181,
+            0.96,
+            0.432
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q2(a)(ii)",
+          "idSuffix": "2-a-ii",
+          "questionText": "Find the time, to the nearest minute, that it takes the boat to intercept the ship.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-higher-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.453,
+              0.96,
+              0.80601
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.446,
+            0.96,
+            0.518
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q2(a)(iii)",
+          "idSuffix": "2-a-iii",
+          "questionText": "Find the distance between the boat and the ship 10 minutes before they meet.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-higher-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.453,
+              0.96,
+              0.80601
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.534,
+            0.96,
+            0.574
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q2(b)(i)",
+          "idSuffix": "2-b-i",
+          "questionText": "Show that v = d(t₁ − t₂)/(2t₁t₂).",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-higher-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.453,
+              0.96,
+              0.80601
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.251,
+            0.96,
+            0.487
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q2(b)(ii)",
+          "idSuffix": "2-b-ii",
+          "questionText": "Find, in terms of t₁ and t₂, the time taken by the woman to cross the river by the shortest path.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-higher-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.453,
+              0.96,
+              0.80601
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.514,
+            0.96,
+            0.691
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(a)(i)",
+          "idSuffix": "3-a-i",
+          "questionText": "Find the two possible values of α.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-projectiles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.338
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.236,
+            0.96,
+            0.551
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(a)(ii)",
+          "idSuffix": "3-a-ii",
+          "questionText": "Find the times of flight.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-projectiles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.338
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.582,
+            0.96,
+            0.662
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(b)",
+          "idSuffix": "3-b",
+          "questionText": "Find the greatest range up the plane in terms of u.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-projectiles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.338
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.189,
+            0.96,
+            0.674
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q4(a)(i)",
+          "idSuffix": "4-a-i",
+          "questionText": "Show on separate diagrams the forces acting on each block.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.361,
+              0.96,
+              0.851
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.366,
+            0.96,
+            0.495
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q4(a)(ii)",
+          "idSuffix": "4-a-ii",
+          "questionText": "Find the acceleration of C.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.361,
+              0.96,
+              0.851
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.515,
+            0.96,
+            0.654
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q4(a)(iii)",
+          "idSuffix": "4-a-iii",
+          "questionText": "Find the tension in each string.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.361,
+              0.96,
+              0.851
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.683,
+            0.96,
+            0.763
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q4(b)",
+          "idSuffix": "4-b",
+          "questionText": "Find the acceleration of the wedge.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.361,
+              0.96,
+              0.851
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.324,
+            0.96,
+            0.733
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(a)(i) — Speed of A, including shared collision equations",
+          "idSuffix": "5-a-i",
+          "questionText": "Find, in terms of u and e, the speed of each sphere after the collision.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.475
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.274,
+            0.96,
+            0.553
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ],
+              "guidance": "The first two placements are the shared collision equations. Use the first of the paired final 5-mark placements for A; the other belongs to the separately practised speed of B."
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻².",
+          "practiceFocus": "Speed of A, including shared collision equations"
+        },
+        {
+          "ref": "Q5(a)(i) — Speed of B",
+          "idSuffix": "5-a-i-b",
+          "questionText": "Find, in terms of u and e, the speed of each sphere after the collision.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.475
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.515,
+            0.96,
+            0.553
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ],
+              "guidance": "Use the second of the paired final 5-mark placements, for B. The shared collision equations and the speed of A are practised separately."
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻².",
+          "practiceFocus": "Speed of B"
+        },
+        {
+          "ref": "Q5(a)(ii)",
+          "idSuffix": "5-a-ii",
+          "questionText": "Find, in terms of u and e, the magnitude of the impulse imparted to B due to the collision.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.475
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.556,
+            0.96,
+            0.631
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(a)(iii)",
+          "idSuffix": "5-a-iii",
+          "questionText": "Find the value of k.",
+          "topicId": "applied-mathematics-2-6",
+          "examTopicIds": [
+            "applied-mathematics-higher-work-power-energy-momentum"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.475
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.632,
+            0.96,
+            0.85
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(b)",
+          "idSuffix": "5-b",
+          "questionText": "Show that tan β = 2 tan α/(1 + 3 tan²α).",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.475
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.275,
+            0.96,
+            0.696
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(a)(i)",
+          "idSuffix": "6-a",
+          "questionText": "Find the period of the motion.",
+          "topicId": "applied-mathematics-2-13",
+          "examTopicIds": [
+            "applied-mathematics-higher-simple-harmonic-motion"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.5,
+              0.96,
+              0.903
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.317,
+            0.96,
+            0.352
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(a)(ii)",
+          "idSuffix": "6-a-ii",
+          "questionText": "Show that x = A sin(ωt + ε), where A, ω and ε are constants, satisfies the differential equation d²x/dt² = −ω²x.",
+          "topicId": "applied-mathematics-2-13",
+          "examTopicIds": [
+            "applied-mathematics-higher-simple-harmonic-motion"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.5,
+              0.96,
+              0.903
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.365,
+            0.96,
+            0.445
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(a)(iii) — Angular frequency ω",
+          "idSuffix": "6-a-iii-omega",
+          "questionText": "Find the values of A, ω and ε for the particle.",
+          "topicId": "applied-mathematics-2-13",
+          "examTopicIds": [
+            "applied-mathematics-higher-simple-harmonic-motion"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.5,
+              0.96,
+              0.903
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.459,
+            0.96,
+            0.527
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻².",
+          "practiceFocus": "Angular frequency ω"
+        },
+        {
+          "ref": "Q6(a)(iii) — Phase ε",
+          "idSuffix": "6-a-iii-epsilon",
+          "questionText": "Find the values of A, ω and ε for the particle.",
+          "topicId": "applied-mathematics-2-13",
+          "examTopicIds": [
+            "applied-mathematics-higher-simple-harmonic-motion"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.5,
+              0.96,
+              0.903
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.54,
+            0.96,
+            0.656
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻².",
+          "practiceFocus": "Phase ε"
+        },
+        {
+          "ref": "Q6(a)(iii) — Amplitude A",
+          "idSuffix": "6-a-iii-amplitude",
+          "questionText": "Find the values of A, ω and ε for the particle.",
+          "topicId": "applied-mathematics-2-13",
+          "examTopicIds": [
+            "applied-mathematics-higher-simple-harmonic-motion"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.5,
+              0.96,
+              0.903
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.668,
+            0.96,
+            0.733
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻².",
+          "practiceFocus": "Amplitude A"
+        },
+        {
+          "ref": "Q6(b)",
+          "idSuffix": "6-b",
+          "questionText": "Find the speed of the particle at the lowest point.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.5,
+              0.96,
+              0.903
+            ]
+          ],
+          "schemePage": 17,
+          "schemeRegion": [
+            0.05,
+            0.232,
+            0.96,
+            0.61
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q7(a)(i)",
+          "idSuffix": "7-a-i",
+          "questionText": "Prove that the tension in the rope is 147√(h² + 4)/h.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-higher-statics-centre-of-gravity"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.446
+            ]
+          ],
+          "schemePage": 18,
+          "schemeRegion": [
+            0.05,
+            0.295,
+            0.96,
+            0.58
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q7(a)(ii)",
+          "idSuffix": "7-a-ii",
+          "questionText": "If the tension in the rope cannot exceed 245 N, show that h ≥ 1.5.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-higher-statics-centre-of-gravity"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.446
+            ]
+          ],
+          "schemePage": 18,
+          "schemeRegion": [
+            0.05,
+            0.607,
+            0.96,
+            0.783
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q7(b)",
+          "idSuffix": "7-b",
+          "questionText": "If the coefficient of friction is √3/5, find the maximum value of α such that the rods remain at rest.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-higher-statics-centre-of-gravity"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.446
+            ]
+          ],
+          "schemePage": 19,
+          "schemeRegion": [
+            0.05,
+            0.205,
+            0.96,
+            0.733
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q8(a)",
+          "idSuffix": "8-a",
+          "questionText": "Prove that the moment of inertia of a uniform disc, of mass m and radius r about an axis through its centre, perpendicular to its plane, is (1/2)mr².",
+          "topicId": "applied-mathematics-2-12",
+          "examTopicIds": [
+            "applied-mathematics-higher-rigid-body-motion-moments-of-inertia"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.484,
+              0.96,
+              0.76
+            ]
+          ],
+          "schemePage": 20,
+          "schemeRegion": [
+            0.05,
+            0.122,
+            0.96,
+            0.388
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q8(b)(i)",
+          "idSuffix": "8-b-i",
+          "questionText": "Find the angular velocity of the disc when the particle is at its lowest point.",
+          "topicId": "applied-mathematics-2-12",
+          "examTopicIds": [
+            "applied-mathematics-higher-rigid-body-motion-moments-of-inertia"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.484,
+              0.96,
+              0.76
+            ]
+          ],
+          "schemePage": 21,
+          "schemeRegion": [
+            0.05,
+            0.277,
+            0.96,
+            0.475
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q8(b)(ii)",
+          "idSuffix": "8-b-ii",
+          "questionText": "Find the angular displacement of the particle when the angular velocity of the disc is 5 rad s⁻¹ for the first time.",
+          "topicId": "applied-mathematics-2-12",
+          "examTopicIds": [
+            "applied-mathematics-higher-rigid-body-motion-moments-of-inertia"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.484,
+              0.96,
+              0.76
+            ]
+          ],
+          "schemePage": 21,
+          "schemeRegion": [
+            0.05,
+            0.506,
+            0.96,
+            0.693
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q9(a)",
+          "idSuffix": "9-a",
+          "questionText": "What fraction of the cylinder’s volume is immersed when the cylinder floats upright in a uniform mixture of equal volumes of liquid A and liquid B?",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-higher-hydrostatics"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.425
+            ]
+          ],
+          "schemePage": 22,
+          "schemeRegion": [
+            0.05,
+            0.244,
+            0.96,
+            0.654
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q9(b)(i)",
+          "idSuffix": "9-b-i",
+          "questionText": "Find x in terms of s.",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-higher-hydrostatics"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.425
+            ]
+          ],
+          "schemePage": 23,
+          "schemeRegion": [
+            0.05,
+            0.273,
+            0.96,
+            0.71
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q9(b)(ii)",
+          "idSuffix": "9-b-ii",
+          "questionText": "If the reaction at the hinge is (1/6)W upwards, find the value of s.",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-higher-hydrostatics"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.425
+            ]
+          ],
+          "schemePage": 23,
+          "schemeRegion": [
+            0.05,
+            0.722,
+            0.96,
+            0.876
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q10(a)(i)",
+          "idSuffix": "10-a",
+          "questionText": "Given that v = 2 when t = 0, find an expression for v in terms of t.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.466,
+              0.96,
+              0.82647
+            ]
+          ],
+          "schemePage": 24,
+          "schemeRegion": [
+            0.05,
+            0.239,
+            0.96,
+            0.406
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q10(a)(ii)",
+          "idSuffix": "10-a-ii",
+          "questionText": "Find the minimum value of v.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.466,
+              0.96,
+              0.82647
+            ]
+          ],
+          "schemePage": 24,
+          "schemeRegion": [
+            0.05,
+            0.422,
+            0.96,
+            0.564
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q10(a)(iii)",
+          "idSuffix": "10-a-iii",
+          "questionText": "Find the distance travelled by the particle before it attains its minimum speed.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.466,
+              0.96,
+              0.82647
+            ]
+          ],
+          "schemePage": 24,
+          "schemeRegion": [
+            0.05,
+            0.578,
+            0.96,
+            0.754
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q10(b)(i)",
+          "idSuffix": "10-b-i",
+          "questionText": "Prove that x = Ne⁻ᵏᵗ, where k is a constant.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.466,
+              0.96,
+              0.82647
+            ]
+          ],
+          "schemePage": 25,
+          "schemeRegion": [
+            0.05,
+            0.265,
+            0.96,
+            0.446
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q10(b)(ii)",
+          "idSuffix": "10-b-ii",
+          "questionText": "If the initial amount N was reduced to N/3 in 14 hours, find the value of k.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.466,
+              0.96,
+              0.82647
+            ]
+          ],
+          "schemePage": 25,
+          "schemeRegion": [
+            0.05,
+            0.461,
+            0.96,
+            0.574
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q10(b)(iii)",
+          "idSuffix": "10-b-iii",
+          "questionText": "If the amount remaining is reduced from N/3 to N/4 in t hours, find the value of t.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.466,
+              0.96,
+              0.82647
+            ]
+          ],
+          "schemePage": 25,
+          "schemeRegion": [
+            0.05,
+            0.589,
+            0.96,
+            0.711
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 9.8 m s⁻²."
+        }
+      ],
+      "selectionDirectives": [
+        {
+          "page": 1,
+          "text": "Five questions to be answered. All questions carry equal marks.",
+          "decision": "Whole-examination choice; all printed questions included."
+        }
+      ],
+      "selectionReview": [
+        {
+          "wording": "Five questions to be answered. All questions carry equal marks.",
+          "decision": "Whole-examination choice; all printed questions included."
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice.",
+      "boundaryReview": "Q1(b)(i) position and total distance receive separate 5-mark placements. Q3(a)(i) the pair of angles shares a final 5; Q3(a)(ii) the pair of times shares one 5. Q4(a)(i) the three force diagrams share one 5, and Q4(a)(iii) both tensions share one 5. Q5(a)(i) shared equations plus the speed of A receive 15; speed of B has a separate 5. Q6(a)(iii) angular frequency, phase and amplitude receive 5 each. Q7(b) has five 5-mark placements, including two on the first moment equation. Q8(b)(i) has five 5-mark placements, including two on the moment-of-inertia expression. No finite answer-option pools occur.",
+      "cardCorrections": [
+        {
+          "cardId": "am-2022-hl-1-a-ii",
+          "originalBlockSha256": "d8e741356c95284e89c8eb480e5e544baa432c16677c8e6bdaa67ec493f393b2",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-1-a-iii",
+          "originalBlockSha256": "759f10faa8f6ebbbaa88aa2d0c99b6ace1f688650df057a49752b74ab4c88644",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-1-b-i",
+          "originalBlockSha256": "576e0ab8848224959c3c3fa2fd45317e1ab301562b3cf1dfcdfa70b48a155f09",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-1-b-ii",
+          "originalBlockSha256": "305e1b411ce339ea6297e5cc2866a431ac71476ebc3e3e3be43b7faf21d3b5b9",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-2-a-i",
+          "originalBlockSha256": "3249f46afa8bd40ad710dc78eca0ea9ff278ccc0773f189bd8dcf4e38c93b0f4",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-2-a-ii",
+          "originalBlockSha256": "c09235ef492d41ace95d79d2ff32be5b9407eee80d381c35add98d5cd1fb894f",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-2-a-iii",
+          "originalBlockSha256": "f272fccf9b56e70edf8f532fa66efbdaba53cd791bbbcf63a2007799ea4e8d60",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-2-b-i",
+          "originalBlockSha256": "5c0a74d49f0c0b43b933f4a116f3c41dc83a9544db65ac772356a9ad42c367df",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-2-b-ii",
+          "originalBlockSha256": "4a18106d75ce7a20f9186953be4bc6aa48da52ef3cced70f1d9a0948c502157e",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-3-a-i",
+          "originalBlockSha256": "c7305715c901b751ba5aa4026ce5c892ae998fb8d0d18cda16da19c287054b7d",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-3-a-ii",
+          "originalBlockSha256": "a827ff15b035cd717f94e07e26686d0944157d0f30639f3dea9407981a665ec5",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-3-b",
+          "originalBlockSha256": "08138e8337825d82c4898bc1e23e0038d2b8a105423b01534beb2700cf40f28a",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-4-a-ii",
+          "originalBlockSha256": "7443ae25c534081f600c92033ece62586a5181efc68017088687831d702ce1f6",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-4-a-iii",
+          "originalBlockSha256": "9ad097faf7a01a05b3d70e6351f2a9fff04ce7ff20f6f0da494955cc11ed28eb",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-4-b",
+          "originalBlockSha256": "b287e853280782f53cf8477c5f9f6caa6b4fa45d8fd43481d3feebe034038c0b",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-5-a-i",
+          "originalBlockSha256": "8db41415176d6c5a2ea38124a90663733cdee4b3c918dbc9d560867f317035b1",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-5-a-ii",
+          "originalBlockSha256": "aa60d8f403e241ac9d4f6478bbf6a1e80f114600b4ce41caee74e03b3ab2eb11",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-5-a-iii",
+          "originalBlockSha256": "bdd3c0715a5d23b19c987593df4c65dd03db8809b80c36f6e4be60aada84222b",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-5-b",
+          "originalBlockSha256": "41fc0c0f7a760eff3b71f1c06a41fc1d4089445bb09335a2c1e9e1abd4e5d238",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-6-a",
+          "originalBlockSha256": "0e851d2e008e4bece49d5928f22e8bab2f4997092a819e3d542d5ccfb0740388",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-7-a-ii",
+          "originalBlockSha256": "fa7b7d24944da41880fda24df6c3bfce01042691c30f120a2a775c1006b04bf0",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-7-b",
+          "originalBlockSha256": "21c4af74943e1489cecc8199ae340c76e71a5195ce6b4afb64a6fbfddf38279f",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-8-a",
+          "originalBlockSha256": "9e027c02106cbbc6a4c42fa678639cacf07f48b70580f9bb42c132bc41becce4",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-8-b-i",
+          "originalBlockSha256": "716ad630ce1b458cc813113c4d7065c95c56bb04a483f4e16bb6a2c553301654",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-8-b-ii",
+          "originalBlockSha256": "f02d2ac8af768d7195b9e070c1ef3bcfc83eb1b49efa0c3d068f71bbf29df33c",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-9-a",
+          "originalBlockSha256": "852bc861231dfac8e64a65dac0e01f7788d3818ef555c1ca77b0ca7922dd8d79",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-9-b-ii",
+          "originalBlockSha256": "30bc89c3dc9f914285c6b414f4e8f1493d58ce216b2f838aec7d6d3c824d5ed9",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-10-a",
+          "originalBlockSha256": "c96b9cfc9601930b53d500904fe09ec74efe4040648a733ef410b5e200a8a4ab",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-10-b-i",
+          "originalBlockSha256": "9be0fa6aefe7e8c7ede6cfbd6e7849389c665b5facd28b3539c3510b8f427b59",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-10-b-ii",
+          "originalBlockSha256": "b9c94ad2dc3fc62b3a94332198eb9dde5654d6d96a288374753e02655a21563c",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-hl-10-b-iii",
+          "originalBlockSha256": "cecff149003aa1eb4f4640f74a92f842ee6bab7f5e875051847c4fa54669dafc",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        }
+      ]
+    },
+    {
+      "level": "ordinary",
+      "paperSha256": "2fec80199677e524554589df1faed303826a3f275db2e9f4f815f390cc7ad50f",
+      "schemeSha256": "3960d7504e6139a0d95c98c1310a5a6319000d2c4f9e9d2a13810deec977642b",
+      "questionPages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "printedTaskCount": 54,
+      "practiceTaskCount": 56,
+      "availableMarks": 450,
+      "questionMarks": {
+        "1": 50,
+        "2": 50,
+        "3": 50,
+        "4": 50,
+        "5": 50,
+        "6": 50,
+        "7": 50,
+        "8": 50,
+        "9": 50
+      },
+      "tasks": [
+        {
+          "ref": "Q1(i)",
+          "idSuffix": "1-i",
+          "questionText": "Sketch a speed-time graph of the motion of the car as it travels from P to Q.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.37
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.385,
+            0.96,
+            0.505
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q1(ii)",
+          "idSuffix": "1-ii",
+          "questionText": "Calculate the acceleration of the car during the first 5 s.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.37
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.516,
+            0.96,
+            0.554
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q1(iii)",
+          "idSuffix": "1-iii",
+          "questionText": "Calculate the distance travelled by the car during the first 5 s.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.37
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.556,
+            0.96,
+            0.59
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q1(iv)",
+          "idSuffix": "1-iv",
+          "questionText": "Calculate the distance travelled by the car while decelerating from 20 m s⁻¹ to 15 m s⁻¹.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.37
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.59,
+            0.96,
+            0.666
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q1(v)",
+          "idSuffix": "1-v",
+          "questionText": "Calculate the total distance between P and Q.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.37
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.668,
+            0.96,
+            0.768
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q1(vi)",
+          "idSuffix": "1-vi",
+          "questionText": "Find the value of u.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.37
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.771,
+            0.96,
+            0.843
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q2(i)",
+          "idSuffix": "2",
+          "questionText": "Draw a diagram to show the positions and velocities of the two ships.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.413,
+              0.96,
+              0.63628
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.305,
+            0.96,
+            0.398
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(ii) — Velocity of ship A",
+          "idSuffix": "2-ii-a",
+          "questionText": "Write the velocity of ship A and the velocity of ship B in terms of i⃗ and j⃗.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.413,
+              0.96,
+              0.63628
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.44,
+            0.96,
+            0.471
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate.",
+          "practiceFocus": "Velocity of ship A"
+        },
+        {
+          "ref": "Q2(ii) — Velocity of ship B",
+          "idSuffix": "2-ii-b",
+          "questionText": "Write the velocity of ship A and the velocity of ship B in terms of i⃗ and j⃗.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.413,
+              0.96,
+              0.63628
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.471,
+            0.96,
+            0.496
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate.",
+          "practiceFocus": "Velocity of ship B"
+        },
+        {
+          "ref": "Q2(iii)",
+          "idSuffix": "2-iii",
+          "questionText": "Calculate v⃗_AB, the velocity of ship A relative to ship B, in terms of i⃗ and j⃗.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.413,
+              0.96,
+              0.63628
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.505,
+            0.96,
+            0.556
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(iv)",
+          "idSuffix": "2-iv",
+          "questionText": "Calculate the magnitude of v⃗_AB to one decimal place.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.413,
+              0.96,
+              0.63628
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.558,
+            0.96,
+            0.592
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(v)",
+          "idSuffix": "2-v",
+          "questionText": "Calculate the direction of v⃗_AB to one decimal place.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.413,
+              0.96,
+              0.63628
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.597,
+            0.96,
+            0.655
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(vi)",
+          "idSuffix": "2-vi",
+          "questionText": "Show that the shortest distance between the ships is 16.3 km.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.413,
+              0.96,
+              0.63628
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.658,
+            0.96,
+            0.69
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(vii)",
+          "idSuffix": "2-vii-time",
+          "questionText": "Calculate the time when the ships are closest to each other.",
+          "topicId": "applied-mathematics-2-9",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-relative-velocity"
+          ],
+          "paperPages": [
+            2
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.413,
+              0.96,
+              0.63628
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.692,
+            0.96,
+            0.73
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(a)(i)",
+          "idSuffix": "3-a-i",
+          "questionText": "Calculate the time of flight of the particle.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            2,
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.68,
+              0.96,
+              0.89
+            ],
+            [
+              0.05,
+              0.075,
+              0.96,
+              0.305
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.385,
+            0.96,
+            0.43
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(a)(ii)",
+          "idSuffix": "3-a-ii",
+          "questionText": "Calculate the value of d.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            2,
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.68,
+              0.96,
+              0.89
+            ],
+            [
+              0.05,
+              0.075,
+              0.96,
+              0.305
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.432,
+            0.96,
+            0.463
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(a)(iii)",
+          "idSuffix": "3-a-iii",
+          "questionText": "Calculate the maximum height of the particle above the horizontal plane.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            2,
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.68,
+              0.96,
+              0.89
+            ],
+            [
+              0.05,
+              0.075,
+              0.96,
+              0.305
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.464,
+            0.96,
+            0.557
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(a)(iv)",
+          "idSuffix": "3-a-iv",
+          "questionText": "Calculate the speed of the particle after 1.75 s.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            2,
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.68,
+              0.96,
+              0.89
+            ],
+            [
+              0.05,
+              0.075,
+              0.96,
+              0.305
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.558,
+            0.96,
+            0.646
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(b)(i)",
+          "idSuffix": "3-b-i",
+          "questionText": "Calculate the time taken for the particle to land.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            2,
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.68,
+              0.96,
+              0.89
+            ],
+            [
+              0.05,
+              0.075,
+              0.96,
+              0.305
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.66,
+            0.96,
+            0.734
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(b)(ii)",
+          "idSuffix": "3-b-ii",
+          "questionText": "Calculate the value of h.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            2,
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.68,
+              0.96,
+              0.89
+            ],
+            [
+              0.05,
+              0.075,
+              0.96,
+              0.305
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.745,
+            0.96,
+            0.875
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻². i⃗ and j⃗ are perpendicular unit vectors: horizontal and vertical, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(a)(i)",
+          "idSuffix": "4-a-i",
+          "questionText": "Show on separate diagrams the forces acting on each block.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.323,
+              0.96,
+              0.841
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.321,
+            0.96,
+            0.424
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q4(a)(ii)",
+          "idSuffix": "4-a-ii",
+          "questionText": "Show that the common acceleration of the blocks is 6 m s⁻².",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.323,
+              0.96,
+              0.841
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.451,
+            0.96,
+            0.552
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                15
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q4(a)(iii)",
+          "idSuffix": "4-a-iii",
+          "questionText": "Calculate the tension in the string.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.323,
+              0.96,
+              0.841
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.563,
+            0.96,
+            0.632
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q4(a)(iv)",
+          "idSuffix": "4-a-iv",
+          "questionText": "Calculate the speed of block A when it reaches the edge of the table.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.323,
+              0.96,
+              0.841
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.642,
+            0.96,
+            0.745
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q4(b)(i)",
+          "idSuffix": "4-b-i",
+          "questionText": "Calculate the acceleration of the system.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.323,
+              0.96,
+              0.841
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.329,
+            0.96,
+            0.548
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q4(b)(ii)",
+          "idSuffix": "4-b-ii",
+          "questionText": "Calculate the minimum value of μ so that the system does not move.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.323,
+              0.96,
+              0.841
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.56,
+            0.96,
+            0.696
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q5(i)",
+          "idSuffix": "5-i",
+          "questionText": "Calculate the speed of sphere A and the speed of sphere B after they collide.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-impacts-collisions"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.426
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.401,
+            0.96,
+            0.536
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q5(ii)",
+          "idSuffix": "5-ii",
+          "questionText": "Calculate the loss of kinetic energy due to this collision.",
+          "topicId": "applied-mathematics-2-6",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-work-energy-power-momentum"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.426
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.537,
+            0.96,
+            0.628
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q5(iii)",
+          "idSuffix": "5-iii",
+          "questionText": "Calculate the magnitude of the impulse imparted to sphere A as a result of this collision.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-impacts-collisions"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.426
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.628,
+            0.96,
+            0.66
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q5(iv)",
+          "idSuffix": "5-iv",
+          "questionText": "Calculate the value of the coefficient of restitution, e, between spheres B and C.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-impacts-collisions"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.426
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.673,
+            0.96,
+            0.771
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q5(v)",
+          "idSuffix": "5-v",
+          "questionText": "Calculate the time C takes to reach the wall.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.426
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.773,
+            0.96,
+            0.81
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q6(a)(i)",
+          "idSuffix": "6-a-i",
+          "questionText": "Calculate the value of p.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-centre-of-gravity"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.46631,
+              0.96,
+              0.849
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.238,
+            0.96,
+            0.312
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q6(a)(ii)",
+          "idSuffix": "6-a-ii",
+          "questionText": "Calculate the value of q.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-centre-of-gravity"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.46631,
+              0.96,
+              0.849
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.313,
+            0.96,
+            0.386
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q6(b)(i)",
+          "idSuffix": "6-b-i",
+          "questionText": "Show that point C has co-ordinates (3, 4).",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-centre-of-gravity"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.46631,
+              0.96,
+              0.849
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.277,
+            0.96,
+            0.391
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q6(b)(ii)",
+          "idSuffix": "6-b-ii",
+          "questionText": "Calculate the co-ordinates of P to two decimal places.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-centre-of-gravity"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.46631,
+              0.96,
+              0.849
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.392,
+            0.96,
+            0.676
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q6(b)(iii)",
+          "idSuffix": "6-b-iii",
+          "questionText": "Calculate |OP| to two decimal places.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-centre-of-gravity"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.46631,
+              0.96,
+              0.849
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.689,
+            0.96,
+            0.727
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q7(a)(i)",
+          "idSuffix": "7-a-i",
+          "questionText": "Draw a force diagram showing all the forces acting on the rod.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-statics"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.657
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.36,
+            0.96,
+            0.495
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q7(a)(ii) — Reaction at the support 3 m from B",
+          "idSuffix": "7-a-ii",
+          "questionText": "Calculate the normal reactions between the rod and each of the vertical supports.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-statics"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.657
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.513,
+            0.96,
+            0.582
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻².",
+          "practiceFocus": "Reaction at the support 3 m from B"
+        },
+        {
+          "ref": "Q7(a)(ii) — Reaction at the support 2 m from A",
+          "idSuffix": "7-a-ii-left",
+          "questionText": "Calculate the normal reactions between the rod and each of the vertical supports.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-statics"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.657
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.592,
+            0.96,
+            0.69
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻².",
+          "practiceFocus": "Reaction at the support 2 m from A"
+        },
+        {
+          "ref": "Q7(b)(i)",
+          "idSuffix": "7-b-i",
+          "questionText": "Draw a force diagram showing all the forces acting on the ladder.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-statics"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.657
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.375,
+            0.96,
+            0.659
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q7(b)(ii)",
+          "idSuffix": "7-b-ii",
+          "questionText": "Calculate the normal reaction between the ladder and the wall.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-statics"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.657
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.678,
+            0.96,
+            0.745
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q7(b)(iii)",
+          "idSuffix": "7-b-iii",
+          "questionText": "Find the coefficient of friction between the ladder and the ground.",
+          "topicId": "applied-mathematics-2-10",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-statics"
+          ],
+          "paperPages": [
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.657
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.759,
+            0.96,
+            0.88
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(a)(i)",
+          "idSuffix": "8-a-i",
+          "questionText": "Calculate the mass of the particle.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.533
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.283,
+            0.96,
+            0.323
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(a)(ii)",
+          "idSuffix": "8-a-ii",
+          "questionText": "Calculate how many seconds the particle takes to complete one rotation.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.533
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.337,
+            0.96,
+            0.375
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(a)(iii)",
+          "idSuffix": "8-a-iii",
+          "questionText": "Calculate the angular velocity of the particle.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.533
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.387,
+            0.96,
+            0.475
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(a)(iv)",
+          "idSuffix": "8-a-iv",
+          "questionText": "Calculate the linear velocity of the particle.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.533
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.486,
+            0.96,
+            0.528
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(a)(v)",
+          "idSuffix": "8-a-v",
+          "questionText": "Calculate the centripetal force acting on the particle.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.533
+            ]
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.05,
+            0.539,
+            0.96,
+            0.584
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(b)(i)",
+          "idSuffix": "8-b-i",
+          "questionText": "Draw a force diagram showing all the forces acting on the particle.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.533
+            ]
+          ],
+          "schemePage": 17,
+          "schemeRegion": [
+            0.05,
+            0.307,
+            0.96,
+            0.451
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(b)(ii)",
+          "idSuffix": "8-b-ii",
+          "questionText": "Calculate r.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.533
+            ]
+          ],
+          "schemePage": 17,
+          "schemeRegion": [
+            0.05,
+            0.477,
+            0.96,
+            0.54
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(b)(iii)",
+          "idSuffix": "8-b-iii",
+          "questionText": "Calculate the tension in the string.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.533
+            ]
+          ],
+          "schemePage": 17,
+          "schemeRegion": [
+            0.05,
+            0.56,
+            0.96,
+            0.647
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q8(b)(iv)",
+          "idSuffix": "8-b-iv",
+          "questionText": "Calculate the speed of the particle.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.533
+            ]
+          ],
+          "schemePage": 17,
+          "schemeRegion": [
+            0.05,
+            0.668,
+            0.96,
+            0.765
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q9(a)(i)",
+          "idSuffix": "9-a",
+          "questionText": "Calculate the total weight of the tank plus liquid.",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-hydrostatics"
+          ],
+          "paperPages": [
+            7
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.51
+            ]
+          ],
+          "schemePage": 18,
+          "schemeRegion": [
+            0.05,
+            0.487,
+            0.96,
+            0.522
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q9(a)(ii)",
+          "idSuffix": "9-a-ii",
+          "questionText": "Calculate the pressure the liquid exerts on the bottom of the tank.",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-hydrostatics"
+          ],
+          "paperPages": [
+            7
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.51
+            ]
+          ],
+          "schemePage": 18,
+          "schemeRegion": [
+            0.05,
+            0.522,
+            0.96,
+            0.551
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q9(a)(iii)",
+          "idSuffix": "9-a-iii",
+          "questionText": "Calculate the total pressure the liquid now exerts on the bottom of the tank.",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-hydrostatics"
+          ],
+          "paperPages": [
+            7
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.51
+            ]
+          ],
+          "schemePage": 18,
+          "schemeRegion": [
+            0.05,
+            0.552,
+            0.96,
+            0.612
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                10
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q9(b)(i)",
+          "idSuffix": "9-b-i",
+          "questionText": "Draw a force diagram showing all the forces acting on the sphere.",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-hydrostatics"
+          ],
+          "paperPages": [
+            7
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.51
+            ]
+          ],
+          "schemePage": 18,
+          "schemeRegion": [
+            0.05,
+            0.614,
+            0.96,
+            0.74
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        },
+        {
+          "ref": "Q9(b)(ii)",
+          "idSuffix": "9-b-ii",
+          "questionText": "Calculate r.",
+          "topicId": "applied-mathematics-2-11",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-hydrostatics"
+          ],
+          "paperPages": [
+            7
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.062,
+              0.96,
+              0.51
+            ]
+          ],
+          "schemePage": 18,
+          "schemeRegion": [
+            0.05,
+            0.741,
+            0.96,
+            0.88
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                2,
+                5
+              ]
+            }
+          ],
+          "stem": "Take the value of g to be 10 m s⁻²."
+        }
+      ],
+      "selectionDirectives": [
+        {
+          "page": 1,
+          "text": "Five questions to be answered. All questions carry equal marks.",
+          "decision": "Whole-examination choice; all printed questions included."
+        }
+      ],
+      "selectionReview": [
+        {
+          "wording": "Five questions to be answered. All questions carry equal marks.",
+          "decision": "Whole-examination choice; all printed questions included."
+        }
+      ],
+      "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice.",
+      "boundaryReview": "Q2(ii) the velocities receive 5 each. Q4(a)(i) both diagrams share one 10; Q4(a)(ii) has a single 15-mark placement. Q5(i) both speeds share the final 10 after two 5-mark equation placements. Q6(b)(ii) the coordinate pair shares the final 5 after two 5-mark preparation placements. Q7(a)(ii) the right reaction receives 10, and the left reaction 5. The other pairs of values requested remain joint when the scheme provides one shared allocation. No finite answer-option pools occur.",
+      "cardCorrections": [
+        {
+          "cardId": "am-2022-ol-1-ii",
+          "originalBlockSha256": "b3d9c16b0b55eb5b4581cb861176b6720862473ad0f132d4a1af84d505153a0d",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-1-iii",
+          "originalBlockSha256": "c70b4c3c057182b0399565277bf8e74cdd3be7b5fd60ecdbab97f50f329a5f5c",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-1-iv",
+          "originalBlockSha256": "46348cc54de0ec187044d8057d18b083645efb9c5df6704d225ef82c22bf3457",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-1-v",
+          "originalBlockSha256": "0de997b6e396832eda94c2b677aca76ea5e4ea466047cc88003c9b3d810b70c9",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-1-vi",
+          "originalBlockSha256": "b190d33630d4e4a859f229aba24a8ba714b9769b060db24a766df975cecb6daa",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-2",
+          "originalBlockSha256": "deb63cde3f8bcf1997b0351549c1f6c21e3f8ca19890dafc428d7ff01d4caa50",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-3-a-i",
+          "originalBlockSha256": "4ba735592f6389f37c59fd50834eb3c2ff2141b4ad5a1a5d0ed424caaad52f4d",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-3-a-ii",
+          "originalBlockSha256": "07afa6216ff0f5da6b0eb35eebe134c798977b0520ea1cd62840f6ac9a7ed072",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-3-a-iii",
+          "originalBlockSha256": "77087f6568fed78605362a38cff6253fa62b2611fb041cf8713637be4bfc0805",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-3-a-iv",
+          "originalBlockSha256": "0bebbcfecdd50080919820dfa5f83865f9fa20663553251b0c5c46e1275d613a",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-3-b-i",
+          "originalBlockSha256": "088ce325ddea14b7bc2b473e91995a5fba0eb3db1707cc009ce2577e3cdf2531",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-3-b-ii",
+          "originalBlockSha256": "b119491fb1d73fe05e4395ba8d9eec67a3eb5ed3398a76633c51492ddd65e91b",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-4-a-ii",
+          "originalBlockSha256": "63a79de8d48906ca75bcc325c1ccb6a72b300c42a7c82a32a4c6db93734c58dd",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-4-a-iii",
+          "originalBlockSha256": "e4e126a65670d56f389be816833841c25a04387f8470b6db74b62bcb0dba3ac1",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-4-a-iv",
+          "originalBlockSha256": "b7d266bf95d5ef1832708120ec6c49359a0f97e9a5b8593b8d041d8611c94d37",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-4-b-i",
+          "originalBlockSha256": "99d341b4e742f63ccf509cad78097207ffc86c30db1237d99cdff82dff1077d2",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-4-b-ii",
+          "originalBlockSha256": "40bd5254d37895b9394df6df66bce615693acfff12b719b5e2eea982b9789570",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-6-a-i",
+          "originalBlockSha256": "48335c2177d6a588e2ee92caa9117106104ceab20eb6559562d1c5471ba65a21",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-6-a-ii",
+          "originalBlockSha256": "f80f4244dc6f53d6a1be18d0c43685da1bb9fd2faee3a16b3d6f824bc923f8f3",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-6-b-i",
+          "originalBlockSha256": "5b463ae0f5dd9d362f9065834692de503595b905670e5d602823bcac38689846",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-6-b-ii",
+          "originalBlockSha256": "55212e8fe8a76bb035a5677c72b2af0a092ede3d0022caa0f5d2ca2594f412c7",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-6-b-iii",
+          "originalBlockSha256": "9af5b5676d9e30456ce413b66e562db8aafffe0ce44b983f27661a8beec2aa18",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-7-a-ii",
+          "originalBlockSha256": "07cc94647b6a563d1253ad8784a9fb30b1ebbe8a7d2b5c86373caed446e8a13b",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-8-a-i",
+          "originalBlockSha256": "ac23df02204300b964bb8749bd7d2bbe9c780d5ec72895098d544bce801419a9",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-8-a-ii",
+          "originalBlockSha256": "289ce929448e6f271c3cf74493926d655684e698e4a98dec71940e05756a8102",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-8-a-iii",
+          "originalBlockSha256": "b177b084e92eb2fe43dedca3a0e05810694b0890047af0fc6811a451ce01ced9",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-8-a-iv",
+          "originalBlockSha256": "2b0fabca5ad43875aed3439370f4f28b0c5ffd62b1b3a5c5dd99b7f27176c424",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-8-a-v",
+          "originalBlockSha256": "90b17005160d793bce97c451840bd5bc84eee8f58b8103b86fc828dfed3c1d1d",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-8-b-ii",
+          "originalBlockSha256": "0f68e71c29bf57c53f782fe59e951da492ff201a4918b476d30441bdea32f5c3",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-8-b-iii",
+          "originalBlockSha256": "ea5f6373ef0775b795ab7dd593612ab5235fc7daefca6056f33a56d05693b8c7",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-8-b-iv",
+          "originalBlockSha256": "6e85d1480ba68edcd91ed396714b4f1d81bd4f9254b84c1cea388f7526ee29ce",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-9-a",
+          "originalBlockSha256": "1cb80ffa9ff2de85f0b2a550db3a795aed3d4f79bb6dc329c4dd66ab0adb5fec",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        },
+        {
+          "cardId": "am-2022-ol-9-b-ii",
+          "originalBlockSha256": "a5c77106970cf23f88ed012adebe0edb638aceaa960b3cf95a388b6aef5f8094",
+          "reason": "Independently rechecked against the original paper and scheme. Replace parser-derived prose/mark rows with the reviewed prompt, complete source context and published rubric. Preserve this card ID; separately marked outputs omitted or merged in the former card are separately represented in this ledger."
+        }
+      ]
+    }
+  ]
+}

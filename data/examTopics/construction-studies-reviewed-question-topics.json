@@ -117,12 +117,15 @@
         "Air Tightness & Condensation",
         "Concrete",
         "Foundations, Floors & Walls",
+        "Heat Loss & Insulation",
+        "Hot Water & Space Heating",
         "Planning, Sustainability & Environment",
         "Services, Water, Gas, Electrical",
+        "Site Safety",
         "Windows & Doors",
         "Wood, Rot & Ventilation"
       ],
-      "evidence": "Nine-term short-question set spanning joinery, glazing, solar energy, tools, finishes, plumbing, seasoning, concrete and radon control."
+      "evidence": "Nine-term short-question set spanning joinery, glazing, solar energy, tools, finishes, plumbing, seasoning, concrete and radon control. The 2015 Ordinary source-reviewed term cards add Heat Loss & Insulation (triple-glazing U-value), Hot Water & Space Heating (solar collector) and Site Safety (cordless drill and electrical safety)."
     },
     "ordinary|2016|8": {
       "topics": [

@@ -1,22 +1,27 @@
+import { moduleBorder,moduleFill } from './learning/brandTokens';
 
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
+import { AnimatePresence,motion } from 'framer-motion';
 import {
-  MessageCircle, BarChart, Brain, User, AlertTriangle, Settings
+AlertTriangle,
+BarChart,Brain,
+MessageCircle,
+Settings,
+User
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { limeTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { Cite } from './ModuleReferences';
+import React,{ useEffect,useRef,useState } from 'react';
 import { PRAISE_PROTOCOL_REFERENCE_LIST } from '../data/references/praiseProtocol';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { limeTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
+import { MotionDiv } from './Motion';
 
 const theme = limeTheme;
 
@@ -65,18 +70,18 @@ const DweckExperimentSimulator = () => {
     }
 
     return(
-        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Praise Experiment</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">You just aced a test. Walk through this experiment and see what happens next depending on what you're told.</p>
+        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Praise Experiment</h4>
+             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">You just aced a test. Walk through this experiment and see what happens next depending on what you're told.</p>
 
              <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
-                    <p className="font-bold text-sm text-rose-600 mb-2">Resilience Meter</p>
-                    <div className="w-full h-4 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-full bg-rose-500 rounded-full" initial={{width: "50%"}} animate={{width: `${resilience}%`}} /></div>
+                    <p className="font-bold text-sm text-[var(--module-danger-text)] mb-2">Resilience Meter</p>
+                    <div className="w-full h-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full"><motion.div className="h-full bg-[var(--module-danger)] rounded-full" initial={{width: "50%"}} animate={{width: `${resilience}%`}} /></div>
                 </div>
                 <div className="text-center">
-                    <p className="font-bold text-sm text-lime-600 mb-2">Performance Meter</p>
-                    <div className="w-full h-4 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-full bg-lime-500 rounded-full" initial={{width: "50%"}} animate={{width: `${performance}%`}} /></div>
+                    <p className="font-bold text-sm text-[var(--module-success-text)] mb-2">Performance Meter</p>
+                    <div className="w-full h-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full"><motion.div className="h-full bg-[var(--module-success)] rounded-full" initial={{width: "50%"}} animate={{width: `${performance}%`}} /></div>
                 </div>
             </div>
 
@@ -85,24 +90,24 @@ const DweckExperimentSimulator = () => {
                     {step === 0 && <>
                         <p className="font-bold mb-4">Phase 1: Choose your praise</p>
                         <div className="grid grid-cols-2 gap-4">
-                            <button onClick={() => handlePraise('person')} className="p-4 font-medium text-sm transition-all" style={{ backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' }}>"You must be smart at this."</button>
-                            <button onClick={() => handlePraise('process')} className="p-4 font-medium text-sm transition-all" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' }}>"You must have worked hard at this."</button>
+                            <button onClick={() => handlePraise('person')} className="p-4 font-medium text-sm transition-all" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" }} data-wide-button="true">"You must be smart at this."</button>
+                            <button onClick={() => handlePraise('process')} className="p-4 font-medium text-sm transition-all" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-success-text)" }} data-wide-button="true">"You must have worked hard at this."</button>
                         </div>
                     </>}
                     {step === 1 && <>
                         <p className="font-bold mb-4">Phase 2: Choose your next task</p>
                          <div className="grid grid-cols-2 gap-4">
-                            <button onClick={() => handleTask('easy')} className="p-4 font-medium text-sm transition-all" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>An easy one (to look smart)</button>
-                            <button onClick={() => handleTask('hard')} className="p-4 font-medium text-sm transition-all" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>A hard one (to learn more)</button>
+                            <button onClick={() => handleTask('easy')} className="p-4 font-medium text-sm transition-all" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-ink)" }} data-wide-button="true">An easy one (to look smart)</button>
+                            <button onClick={() => handleTask('hard')} className="p-4 font-medium text-sm transition-all" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-ink)" }} data-wide-button="true">A hard one (to learn more)</button>
                         </div>
                     </>}
-                    {step === 2 && <p className="font-bold text-blue-600">You chose the <span className="underline">{taskChoice}</span> task...</p>}
-                    {step === 3 && <p className="font-bold text-rose-600">Phase 3: Induced Failure. You are given a much harder test and perform poorly...</p>}
+                    {step === 2 && <p className="font-bold text-[var(--module-ink)]">You chose the <span className="underline">{taskChoice}</span> task...</p>}
+                    {step === 3 && <p className="font-bold text-[var(--module-danger-text)]">Phase 3: Induced Failure. You are given a much harder test and perform poorly...</p>}
                     {step === 4 && <>
-                        <p className="font-bold text-lime-600 mb-4">Phase 4: Final Results</p>
+                        <p className="font-bold text-[var(--module-success-text)] mb-4">Phase 4: Final Results</p>
                         {praiseType === 'person' && <p>Because your identity was tied to being "smart", failure was devastating. Your resilience and subsequent performance dropped.</p>}
                         {praiseType === 'process' && <p>Because your identity was tied to "working hard", the failure was seen as a challenge. Your resilience and subsequent performance increased.</p>}
-                        <button onClick={reset} className="mt-4 px-4 py-2 bg-zinc-800 text-white font-bold rounded-lg text-xs">Run Again</button>
+                        <button onClick={reset} className="mt-4 px-4 py-2 bg-[var(--module-surface)] text-[var(--module-ink)] font-bold rounded-lg text-xs" data-wide-button="true">Run Again</button>
                     </>}
                 </motion.div>
             </AnimatePresence>
@@ -155,14 +160,14 @@ const ErrorSignalVisualizer = () => {
     const growthPath = buildPath(32);  // Large Pe
 
     const traces = [
-      { label: 'Fixed Mindset', path: fixedPath, color: '#f43f5e', peLabel: 'Small Pe', peDesc: 'Brain flinches away to protect your ego', bgClass: 'bg-rose-50 dark:bg-rose-950/20', borderClass: 'border-rose-200 dark:border-rose-800/40', labelClass: 'text-rose-600 dark:text-rose-400' },
-      { label: 'Growth Mindset', path: growthPath, color: '#10b981', peLabel: 'Large Pe', peDesc: 'Brain pays close attention to learn from it', bgClass: 'bg-emerald-50 dark:bg-emerald-950/20', borderClass: 'border-emerald-200 dark:border-emerald-800/40', labelClass: 'text-emerald-600 dark:text-emerald-400' },
+      { label: 'Fixed Mindset', path: fixedPath, color: "var(--module-danger-text)", peLabel: 'Small Pe', peDesc: 'Brain flinches away to protect your ego', bgClass: "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)]", borderClass: "border-[var(--module-line)] dark:border-[var(--module-line)]", labelClass: "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]" },
+      { label: 'Growth Mindset', path: growthPath, color: "var(--module-success-text)", peLabel: 'Large Pe', peDesc: 'Brain pays close attention to learn from it', bgClass: "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)]", borderClass: "border-[var(--module-line)] dark:border-[var(--module-line)]", labelClass: "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" },
     ];
 
     return (
-      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">What Your Brain Does With Mistakes</h4>
-        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">When you make a mistake, your brain fires two signals. The second one is where your mindset makes all the difference.</p>
+      <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">What Your Brain Does With Mistakes</h4>
+        <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">When you make a mistake, your brain fires two signals. The second one is where your mindset makes all the difference.</p>
 
         <div className="space-y-4">
           {traces.map((trace, i) => (
@@ -184,10 +189,10 @@ const ErrorSignalVisualizer = () => {
               <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto" preserveAspectRatio="none">
                 {/* Gridlines */}
                 {[0.25, 0.5, 0.75].map(t => (
-                  <line key={t} x1={0} y1={H * t} x2={W} y2={H * t} stroke="currentColor" className="text-zinc-200 dark:text-zinc-700" strokeWidth="0.5" />
+                  <line key={t} x1={0} y1={H * t} x2={W} y2={H * t} stroke="currentColor" className="text-[var(--module-muted)] dark:text-[var(--module-ink)]" strokeWidth="0.5" />
                 ))}
                 {/* Baseline center */}
-                <line x1={0} y1={midY} x2={W} y2={midY} stroke="currentColor" className="text-zinc-300 dark:text-zinc-600" strokeWidth="0.8" strokeDasharray="4 4" />
+                <line x1={0} y1={midY} x2={W} y2={midY} stroke="currentColor" className="text-[var(--module-muted)] dark:text-[var(--module-ink)]" strokeWidth="0.8" strokeDasharray="4 4" />
 
                 {/* Error marker */}
                 {active && (
@@ -254,9 +259,9 @@ const ErrorSignalVisualizer = () => {
 
               {/* Axis labels */}
               <div className="flex justify-between mt-1">
-                <span className="text-[9px] text-zinc-400 dark:text-zinc-500">0 ms</span>
-                <span className="text-[9px] text-zinc-400 dark:text-zinc-500">Time</span>
-                <span className="text-[9px] text-zinc-400 dark:text-zinc-500">800 ms</span>
+                <span className="text-[9px] text-[var(--module-muted)] dark:text-[var(--module-muted)]">0 ms</span>
+                <span className="text-[9px] text-[var(--module-muted)] dark:text-[var(--module-muted)]">Time</span>
+                <span className="text-[9px] text-[var(--module-muted)] dark:text-[var(--module-muted)]">800 ms</span>
               </div>
             </div>
           ))}
@@ -271,12 +276,12 @@ const ErrorSignalVisualizer = () => {
             className="mt-4 flex justify-center gap-6"
           >
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-sm bg-zinc-400" />
-              <span className="text-[10px] text-zinc-500 dark:text-zinc-400">ERN (Error detected — same for both)</span>
+              <div className="w-3 h-3 rounded-sm bg-[var(--module-surface)]" />
+              <span className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)]">ERN (Error detected — same for both)</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-sm bg-lime-500" />
-              <span className="text-[10px] text-zinc-500 dark:text-zinc-400">Pe (Attention to error — differs by mindset)</span>
+              <div className="w-3 h-3 rounded-sm bg-[var(--module-success)]" />
+              <span className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)]">Pe (Attention to error — differs by mindset)</span>
             </div>
           </motion.div>
         )}
@@ -284,7 +289,7 @@ const ErrorSignalVisualizer = () => {
         <div className="flex justify-center gap-3 mt-6">
           <button
             onClick={() => setActive(!active)}
-            className="px-6 py-2.5 bg-lime-500 text-white font-bold text-sm rounded-xl hover:bg-lime-600 shadow-lg shadow-lime-500/20 transition-all"
+            className="px-6 py-2.5 bg-[var(--module-success)] text-[var(--module-ink)] font-bold text-sm rounded-xl hover:bg-[var(--module-success)] shadow-none shadow-none transition-all" data-wide-button="true"
           >
             {active ? 'Reset Signal' : 'Make an Error'}
           </button>
@@ -293,7 +298,7 @@ const ErrorSignalVisualizer = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               onClick={() => setShowExplainer(!showExplainer)}
-              className="px-5 py-2.5 bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-bold text-sm rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-600 transition-all"
+              className="px-5 py-2.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] font-bold text-sm rounded-xl hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] transition-all" data-wide-button="true"
             >
               {showExplainer ? 'Hide Explanation' : 'What am I looking at?'}
             </motion.button>
@@ -308,10 +313,10 @@ const ErrorSignalVisualizer = () => {
               exit={{ opacity: 0, height: 0 }}
               className="overflow-hidden"
             >
-              <div className="mt-6 p-5 bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-700 space-y-3">
-                <p className="text-sm text-zinc-700 dark:text-zinc-300"><strong>ERN (the first signal)</strong> fires within a tenth of a second of making a mistake. Both mindsets produce the same signal here. Your brain always spots the error.</p>
-                <p className="text-sm text-zinc-700 dark:text-zinc-300"><strong>Pe (the second signal)</strong> comes a fraction of a second later. This is where mindset makes the difference. It shows how much <em>attention</em> your brain gives to the mistake.</p>
-                <p className="text-sm text-zinc-700 dark:text-zinc-300">A <strong className="text-rose-500">fixed mindset</strong> brain produces a tiny Pe — it spots the error but quickly looks away to protect your ego. A <strong className="text-emerald-500">growth mindset</strong> brain produces a huge Pe — it zooms in on the error, trying to figure out what went wrong so it can do better next time. This is why students with a growth mindset tend to pay more attention to an error and improve on the next try.</p>
+              <div className="mt-6 p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] space-y-3">
+                <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>ERN (the first signal)</strong> fires within a tenth of a second of making a mistake. Both mindsets produce the same signal here. Your brain always spots the error.</p>
+                <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>Pe (the second signal)</strong> comes a fraction of a second later. This is where mindset makes the difference. It shows how much <em>attention</em> your brain gives to the mistake.</p>
+                <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]">A <strong className="text-[var(--module-danger-text)]">fixed mindset</strong> brain produces a tiny Pe — it spots the error but quickly looks away to protect your ego. A <strong className="text-[var(--module-success-text)]">growth mindset</strong> brain produces a huge Pe — it zooms in on the error, trying to figure out what went wrong so it can do better next time. This is why students with a growth mindset tend to pay more attention to an error and improve on the next try.</p>
               </div>
             </motion.div>
           )}
@@ -454,28 +459,28 @@ const PraiseDecoderGame = () => {
   const accuracy = totalAnswered > 0 ? Math.round((score / totalAnswered) * 100) : 0;
   const currentStatement = statements[currentIndex];
 
-  const timerColor = timeLeft <= 10 ? 'text-rose-500' : timeLeft <= 20 ? 'text-amber-500' : 'text-lime-600 dark:text-lime-400';
+  const timerColor = timeLeft <= 10 ? "text-[var(--module-danger-text)]" : timeLeft <= 20 ? "text-[var(--module-ink)]" : "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]";
 
   return (
-    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Praise Decoder Game</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">
+    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Praise Decoder Game</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">
         Categorise each praise statement as fast as you can. You have 30 seconds.
       </p>
 
       {gameState === 'idle' && (
         <div className="flex flex-col items-center gap-6">
-          <div className="p-6 bg-zinc-50 dark:bg-zinc-900/50 rounded-xl border border-zinc-200 dark:border-zinc-700 max-w-md text-center">
-            <p className="text-sm text-zinc-600 dark:text-zinc-300 mb-2">Praise statements will flash on screen. Tap the correct category:</p>
+          <div className="p-6 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] max-w-md text-center">
+            <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-2">Praise statements will flash on screen. Tap the correct category:</p>
             <div className="flex justify-center gap-3 mt-3">
-              <span className="px-3 py-1 text-xs font-bold bg-rose-100 dark:bg-rose-900/30 text-rose-600 dark:text-rose-400 rounded-full">Person Praise</span>
-              <span className="px-3 py-1 text-xs font-bold bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 rounded-full">Process Praise</span>
+              <span className="px-3 py-1 text-xs font-bold bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] rounded-full">Person Praise</span>
+              <span className="px-3 py-1 text-xs font-bold bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:text-[var(--module-success-text)] rounded-full">Process Praise</span>
             </div>
           </div>
           <button
             onClick={startGame}
             className="px-8 py-3 font-bold text-sm transition-all"
-            style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
+            style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-ink)" }} data-wide-button="true"
           >
             Start Game
           </button>
@@ -489,13 +494,13 @@ const PraiseDecoderGame = () => {
             <span className={`px-3 py-1 text-sm font-bold rounded-full bg-zinc-100 dark:bg-zinc-700 ${timerColor}`}>
               {timeLeft}s
             </span>
-            <span className="px-3 py-1 text-xs font-bold rounded-full bg-lime-100 dark:bg-lime-900/30 text-lime-700 dark:text-lime-300">
+            <span className="px-3 py-1 text-xs font-bold rounded-full bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">
               Score: {score}
             </span>
-            <span className="px-3 py-1 text-xs font-bold rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300">
+            <span className="px-3 py-1 text-xs font-bold rounded-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)]">
               Streak: {streak}
             </span>
-            <span className="px-3 py-1 text-xs font-bold rounded-full bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300">
+            <span className="px-3 py-1 text-xs font-bold rounded-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)]">
               Accuracy: {accuracy}%
             </span>
           </div>
@@ -509,31 +514,31 @@ const PraiseDecoderGame = () => {
                 opacity: 1,
                 scale: 1,
                 y: 0,
-                backgroundColor: feedback === 'correct'
-                  ? 'rgba(16, 185, 129, 0.1)'
+                backgroundColor: moduleFill(feedback === 'correct'
+                  ? 'var(--module-surface)'
                   : feedback === 'wrong'
-                    ? 'rgba(244, 63, 94, 0.1)'
-                    : 'rgba(0, 0, 0, 0)',
+                    ? 'var(--module-surface)'
+                    : 'var(--module-surface)'),
               }}
               exit={{ opacity: 0, scale: 0.9, y: -20 }}
               transition={{ type: 'spring', stiffness: 300, damping: 25 }}
               className="w-full max-w-lg p-8 rounded-2xl border-2 text-center"
               style={{
-                borderColor: feedback === 'correct'
-                  ? '#10b981'
+                borderColor: moduleBorder(feedback === 'correct'
+                  ? "var(--module-line)"
                   : feedback === 'wrong'
-                    ? '#f43f5e'
-                    : '#e4e4e7',
+                    ? "var(--module-line)"
+                    : "var(--module-line)"),
               }}
             >
-              <p className="font-serif text-xl md:text-2xl font-medium text-zinc-800 dark:text-white leading-relaxed">
+              <p className="font-serif text-xl md:text-2xl font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] leading-relaxed">
                 {currentStatement.text}
               </p>
               {feedback === 'wrong' && wrongExplanation && (
                 <motion.p
                   initial={{ opacity: 0, y: 5 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="mt-4 text-sm text-rose-600 dark:text-rose-400 font-medium"
+                  className="mt-4 text-sm text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] font-medium"
                 >
                   {wrongExplanation}
                 </motion.p>
@@ -547,7 +552,7 @@ const PraiseDecoderGame = () => {
               onClick={() => handleAnswer('person')}
               disabled={feedback !== null}
               className="px-6 py-4 font-bold transition-all disabled:opacity-50"
-              style={{ backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' }}
+              style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" }} data-wide-button="true"
             >
               Person Praise
             </button>
@@ -555,7 +560,7 @@ const PraiseDecoderGame = () => {
               onClick={() => handleAnswer('process')}
               disabled={feedback !== null}
               className="px-6 py-4 font-bold transition-all disabled:opacity-50"
-              style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' }}
+              style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-success-text)" }} data-wide-button="true"
             >
               Process Praise
             </button>
@@ -571,44 +576,44 @@ const PraiseDecoderGame = () => {
           className="flex flex-col items-center gap-6"
         >
           <div className="text-center">
-            <p className="text-5xl font-bold text-lime-600 dark:text-lime-400">{score}</p>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">correct answers</p>
+            <p className="text-5xl font-bold text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">{score}</p>
+            <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1">correct answers</p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-3">
-            <div className="px-4 py-2 bg-zinc-100 dark:bg-zinc-700 rounded-xl text-center">
-              <p className="text-lg font-bold text-zinc-800 dark:text-white">{accuracy}%</p>
-              <p className="text-[10px] text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Accuracy</p>
+            <div className="px-4 py-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl text-center">
+              <p className="text-lg font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{accuracy}%</p>
+              <p className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)] uppercase tracking-wider">Accuracy</p>
             </div>
-            <div className="px-4 py-2 bg-zinc-100 dark:bg-zinc-700 rounded-xl text-center">
-              <p className="text-lg font-bold text-zinc-800 dark:text-white">{bestStreak}</p>
-              <p className="text-[10px] text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Best Streak</p>
+            <div className="px-4 py-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl text-center">
+              <p className="text-lg font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{bestStreak}</p>
+              <p className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)] uppercase tracking-wider">Best Streak</p>
             </div>
-            <div className="px-4 py-2 bg-zinc-100 dark:bg-zinc-700 rounded-xl text-center">
-              <p className="text-lg font-bold text-zinc-800 dark:text-white">{totalAnswered}</p>
-              <p className="text-[10px] text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">Answered</p>
+            <div className="px-4 py-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl text-center">
+              <p className="text-lg font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{totalAnswered}</p>
+              <p className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)] uppercase tracking-wider">Answered</p>
             </div>
           </div>
 
           {accuracy >= 80 && (
-            <p className="text-sm text-emerald-600 dark:text-emerald-400 font-medium text-center max-w-sm">
+            <p className="text-sm text-[var(--module-success-text)] dark:text-[var(--module-success-text)] font-medium text-center max-w-sm">
               Excellent! You can clearly distinguish person praise from process praise. That awareness is the first step to rewiring your mindset.
             </p>
           )}
           {accuracy >= 50 && accuracy < 80 && (
-            <p className="text-sm text-amber-600 dark:text-amber-400 font-medium text-center max-w-sm">
+            <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] font-medium text-center max-w-sm">
               Good effort! Some of those statements are tricky. Play again to sharpen your decoder skills.
             </p>
           )}
           {accuracy < 50 && (
-            <p className="text-sm text-rose-600 dark:text-rose-400 font-medium text-center max-w-sm">
+            <p className="text-sm text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] font-medium text-center max-w-sm">
               The line between person and process praise can be subtle. Give it another go — your brain will get faster at spotting the difference.
             </p>
           )}
 
           <button
             onClick={startGame}
-            className="px-8 py-3 bg-lime-500 text-white font-bold text-sm rounded-xl hover:bg-lime-600 shadow-lg shadow-lime-500/20 transition-all"
+            className="px-8 py-3 bg-[var(--module-success)] text-[var(--module-ink)] font-bold text-sm rounded-xl hover:bg-[var(--module-success)] shadow-none shadow-none transition-all" data-wide-button="true"
           >
             Play Again
           </button>

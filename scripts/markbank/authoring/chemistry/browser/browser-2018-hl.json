@@ -1,0 +1,20 @@
+[
+ {"id": "chem-2018-hl-q1-b", "ask": "Describe the procedure used to measure out", "answer": "keep burette vertical"},
+ {"id": "chem-2018-hl-q1-e-iii", "ask": "the total hardness of the water expressed in grams per litre", "answer": "0.000093 × 20 = 0.00186", "solution": true},
+ {"id": "chem-2018-hl-q2-a-iii", "ask": "Identify the two reactants and the solvent", "answer": "solvent: ethanol (C₂H₅OH, alcohol)", "figure": true},
+ {"id": "chem-2018-hl-q2-b-v", "ask": "What was the percentage yield, by mass, of clove oil?", "answer": "m = 1.05 × 0.15 = 0.1575 g", "solution": true},
+ {"id": "chem-2018-hl-q2-c-iii", "ask": "Explain how you could verify that the recrystallised benzoic acid was purer", "answer": "CHO gravimetric microanalysis / named spectroscopic technique", "figure": true},
+ {"id": "chem-2018-hl-q3-c-ii", "ask": "Draw or describe the hazard warning pictogram", "answer": "onto hand (object, metal)", "solution": true},
+ {"id": "chem-2018-hl-q3-d-ii", "ask": "", "answer": "H = mcΔT (mcΔθ) / H = 0.31 × 4.2 × 6.4", "figure": true, "solution": true},
+ {"id": "chem-2018-hl-q3-e", "ask": "", "answer": "use polystyrene (plastic) cup", "figure": true, "solution": true},
+ {"id": "chem-2018-hl-q4-g", "ask": "Write a balanced equation, or give the half equations", "answer": "Cl₂ + 2e⁻ → 2Cl⁻"},
+ {"id": "chem-2018-hl-q4-k-a", "ask": "", "answer": "it is most plentiful / highest concentration", "figure": true},
+ {"id": "chem-2018-hl-q5-d-iii", "ask": "Write a balanced equation for the beta decay of a carbon–14 nucleus.", "answer": "its own print is shown with the answer", "solution": true},
+ {"id": "chem-2018-hl-q6-c-i", "ask": "Give the IUPAC names for the four hydrocarbon products", "answer": "2,2,4-trimethylpentane", "figure": true},
+ {"id": "chem-2018-hl-q7-c", "ask": "", "answer": "good tangent drawn at 100 seconds to NO₂ curve", "figure": true, "solution": true},
+ {"id": "chem-2018-hl-q8-a-i", "ask": "", "answer": "propan-1-ol", "figure": true, "solution": true},
+ {"id": "chem-2018-hl-q9-d", "ask": "", "answer": "Kc = (6800/3) 2266.67", "figure": true, "solution": true},
+ {"id": "chem-2018-hl-q10-b-after-v", "ask": "How does modern atomic theory describe the behaviour of electrons?", "answer": "approximate solution"},
+ {"id": "chem-2018-hl-q11-b-after-ii", "ask": "Which of the two acid solutions was neutralised?", "answer": "buffering (no pH rise) between 12 and 35 cm³ NaOH added", "figure": true},
+ {"id": "chem-2018-hl-q11-c-a-ii", "ask": "Identify the catalyst used in this reaction.", "answer": "3NO₂ + H₂O → 2HNO₃ + NO"}
+]

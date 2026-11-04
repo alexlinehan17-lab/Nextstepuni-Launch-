@@ -34,7 +34,7 @@ const StreakCelebration: React.FC<StreakCelebrationProps> = ({ streakCount, isOp
       <div className="mt-7 grid grid-cols-7 gap-1.5 rounded-2xl border border-[#D8D3CD] bg-white p-3 sm:gap-2">
         {DAY_LABELS.map((day, index) => (
           <div key={`${day}-${index}`} className="flex min-w-0 flex-col items-center gap-1.5">
-            <span className={`flex aspect-square w-full max-w-9 items-center justify-center rounded-lg border ${weekDays[index] ? 'border-[#383838] bg-[#F26B1F] text-white' : 'border-[#E4E0DA] bg-[#F4F2EE] text-[#AAA29A]'}`}>
+            <span className={`flex aspect-square w-full max-w-9 items-center justify-center rounded-lg border ${weekDays[index] ? 'border-[#383838] bg-[#F26B1F] text-white' : 'border-zinc-200 bg-zinc-100 text-[#AAA29A]'}`}>
               {weekDays[index] ? <Flame size={14} /> : null}
             </span>
             <span className={`text-[9px] font-bold ${weekDays[index] ? 'text-[#A53E0C]' : 'text-[#AAA29A]'}`}>{day}</span>

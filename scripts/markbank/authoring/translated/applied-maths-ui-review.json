@@ -1,0 +1,254 @@
+{
+  "reviewedAt": "2026-10-08T07:32:51.826810+00:00",
+  "method": "Live Chrome rendering of native SEC paper and scheme PDFs through the real Topic Atlas and question-card components. No PDF network mocks. Each question screenshot inspected visually; every expected question and scheme page rendered; Full paper callbacks retained the native paper identity.",
+  "integrationCase": "2011 Ordinary Q1 uses Topic Atlas language and year controls. Other cases exercise the same VaultQuestionCard directly, including repaired diagram bounds and long 2026 sources.",
+  "localEvidenceDirectory": "tmp/applied-mathematics-review",
+  "cases": [
+    {
+      "label": "atlas-2011-ordinary-q1-desktop",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        4
+      ],
+      "schemeFileid": "LC020GLP000EV.pdf",
+      "opened": {
+        "subjectId": "applied-mathematics",
+        "level": "ordinary",
+        "lang": "iv",
+        "year": 2011,
+        "fileid": "LC020GLP000IV.pdf",
+        "paperKey": "single",
+        "n": "1"
+      },
+      "overflow": false,
+      "errors": [],
+      "failures": [],
+      "answerMapSha256": "0167b5a413927ce50c08ccd9cee84df4c56502d1309d687550150e873eb6c892",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "questionScreenshot": "tmp/applied-mathematics-review/atlas-2011-ordinary-q1-desktop-question.png",
+      "questionScreenshotSha256": "dbd112ce3a8fc84d9694a2e3ae98c5051a3b3a69f882ae8ed2c9067ae8c88a5a"
+    },
+    {
+      "label": "atlas-2013-ordinary-q7-desktop",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        11,
+        12
+      ],
+      "schemeFileid": "LC020GLP000IV.pdf",
+      "opened": {
+        "subjectId": "applied-mathematics",
+        "year": 2013,
+        "level": "ordinary",
+        "lang": "iv",
+        "fileid": "LC020GLP000IV.pdf",
+        "paperKey": "single",
+        "n": "7"
+      },
+      "overflow": false,
+      "errors": [],
+      "failures": [],
+      "answerMapSha256": "4db4fdb44e3cd3ce00079ae39f2e29ec38677fe16e19febfe0304fc9fa77078b",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "questionScreenshot": "tmp/applied-mathematics-review/atlas-2013-ordinary-q7-desktop-question.png",
+      "questionScreenshotSha256": "4cc8916126466503b259e8935686a395243bb5fe2b3698653ae94870b2d13046"
+    },
+    {
+      "label": "atlas-2026-ordinary-q8-desktop",
+      "paperPages": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "schemePages": [
+        14
+      ],
+      "schemeFileid": "LC020GLP000IV.pdf",
+      "opened": {
+        "subjectId": "applied-mathematics",
+        "year": 2026,
+        "level": "ordinary",
+        "lang": "iv",
+        "fileid": "LC020GLP000IV.pdf",
+        "paperKey": "single",
+        "n": "8"
+      },
+      "overflow": false,
+      "errors": [],
+      "failures": [],
+      "answerMapSha256": "c1828266a25cb667f7ba9180841da654e1ef7a0bcd6a3842499e50717a7505ac",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "questionScreenshot": "tmp/applied-mathematics-review/atlas-2026-ordinary-q8-desktop-question.png",
+      "questionScreenshotSha256": "230993dae7ccb3d158b17492bc24108b9eab353ee7605fa3fffa8d6189a9cb13"
+    },
+    {
+      "label": "atlas-2026-higher-q10-desktop",
+      "paperPages": [
+        38,
+        39,
+        40
+      ],
+      "schemePages": [
+        16,
+        17
+      ],
+      "schemeFileid": "LC020ALP000IV.pdf",
+      "opened": {
+        "subjectId": "applied-mathematics",
+        "year": 2026,
+        "level": "higher",
+        "lang": "iv",
+        "fileid": "LC020ALP000IV.pdf",
+        "paperKey": "single",
+        "n": "10"
+      },
+      "overflow": false,
+      "errors": [],
+      "failures": [],
+      "answerMapSha256": "b58aec3b4f7569f69060fdf360e91fcf2824011487e41d85ae7917908cb5d80a",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "questionScreenshot": "tmp/applied-mathematics-review/atlas-2026-higher-q10-desktop-question.png",
+      "questionScreenshotSha256": "8ce1264a5e3edb8a4c734c77b4f3a8c01eb0e85cf23f135ea932c6569160981a"
+    },
+    {
+      "label": "atlas-2011-ordinary-q1-phone",
+      "paperPages": [
+        2
+      ],
+      "schemePages": [
+        4
+      ],
+      "schemeFileid": "LC020GLP000EV.pdf",
+      "opened": {
+        "subjectId": "applied-mathematics",
+        "level": "ordinary",
+        "lang": "iv",
+        "year": 2011,
+        "fileid": "LC020GLP000IV.pdf",
+        "paperKey": "single",
+        "n": "1"
+      },
+      "overflow": false,
+      "errors": [],
+      "failures": [],
+      "answerMapSha256": "0167b5a413927ce50c08ccd9cee84df4c56502d1309d687550150e873eb6c892",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "questionScreenshot": "tmp/applied-mathematics-review/atlas-2011-ordinary-q1-phone-question.png",
+      "questionScreenshotSha256": "77c25c8f6a60ce0546dc50987385c71f2d7e9e6dc8ee70a52bb084052e0aab2e"
+    },
+    {
+      "label": "atlas-2013-ordinary-q7-phone",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        11,
+        12
+      ],
+      "schemeFileid": "LC020GLP000IV.pdf",
+      "opened": {
+        "subjectId": "applied-mathematics",
+        "year": 2013,
+        "level": "ordinary",
+        "lang": "iv",
+        "fileid": "LC020GLP000IV.pdf",
+        "paperKey": "single",
+        "n": "7"
+      },
+      "overflow": false,
+      "errors": [],
+      "failures": [],
+      "answerMapSha256": "4db4fdb44e3cd3ce00079ae39f2e29ec38677fe16e19febfe0304fc9fa77078b",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "questionScreenshot": "tmp/applied-mathematics-review/atlas-2013-ordinary-q7-phone-question.png",
+      "questionScreenshotSha256": "7efa78b952a74008b6d48fa862c51c0c7decf684f4d02043500525c150743a12"
+    },
+    {
+      "label": "atlas-2026-ordinary-q8-phone",
+      "paperPages": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "schemePages": [
+        14
+      ],
+      "schemeFileid": "LC020GLP000IV.pdf",
+      "opened": {
+        "subjectId": "applied-mathematics",
+        "year": 2026,
+        "level": "ordinary",
+        "lang": "iv",
+        "fileid": "LC020GLP000IV.pdf",
+        "paperKey": "single",
+        "n": "8"
+      },
+      "overflow": false,
+      "errors": [],
+      "failures": [],
+      "answerMapSha256": "c1828266a25cb667f7ba9180841da654e1ef7a0bcd6a3842499e50717a7505ac",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "questionScreenshot": "tmp/applied-mathematics-review/atlas-2026-ordinary-q8-phone-question.png",
+      "questionScreenshotSha256": "04c08e177cb8ebeaf034bf445a87f79c7468b9845df521b768eb6b57a3cd9a08"
+    },
+    {
+      "label": "atlas-2026-higher-q10-phone",
+      "paperPages": [
+        38,
+        39,
+        40
+      ],
+      "schemePages": [
+        16,
+        17
+      ],
+      "schemeFileid": "LC020ALP000IV.pdf",
+      "opened": {
+        "subjectId": "applied-mathematics",
+        "year": 2026,
+        "level": "higher",
+        "lang": "iv",
+        "fileid": "LC020ALP000IV.pdf",
+        "paperKey": "single",
+        "n": "10"
+      },
+      "overflow": false,
+      "errors": [],
+      "failures": [],
+      "answerMapSha256": "b58aec3b4f7569f69060fdf360e91fcf2824011487e41d85ae7917908cb5d80a",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "questionScreenshot": "tmp/applied-mathematics-review/atlas-2026-higher-q10-phone-question.png",
+      "questionScreenshotSha256": "41601fd908c4af2391a2bc20e00b5494c2a826b4607f9c61d8a0d2e6c5a56ba1"
+    }
+  ]
+}

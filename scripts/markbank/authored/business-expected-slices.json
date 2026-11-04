@@ -1,0 +1,265 @@
+{
+ "bus-2012-hl-s1-q10i": {
+  "regions": [
+   {
+    "page": 16,
+    "y": [
+     0.515,
+     0.56
+    ],
+    "x": [
+     0.6,
+     1
+    ]
+   }
+  ],
+  "why": "The answer box sits to the right of the break-even chart on p. 16 (\"BEP in units and Units: 10,000\" / \"in euros € 450,000\"); its lines share baselines with the chart's axis labels, so the marker's block mixes them.",
+  "evidence": "paper-trail-corpus/markingschemes/2012/LC033ALP000EV.pdf p. 16, answer box at x ≥ 0.64, y 0.52–0.55"
+ },
+ "bus-2012-hl-s1-q10ii": {
+  "regions": [
+   {
+    "page": 16,
+    "y": [
+     0.605,
+     0.62
+    ],
+    "x": [
+     0.6,
+     1
+    ]
+   }
+  ],
+  "why": "The answer box sits to the right of the break-even chart on p. 16 (\"Profit at Forecast € 125,000\").",
+  "evidence": "paper-trail-corpus/markingschemes/2012/LC033ALP000EV.pdf p. 16, answer box at x ≥ 0.64, y 0.61"
+ },
+ "bus-2014-hl-s1-q10a": {
+  "regions": [
+   {
+    "page": 14,
+    "y": [
+     0.49,
+     0.5
+    ]
+   }
+  ],
+  "why": "The workings table prints (a)'s row and the (b) row's figures on neighbouring baselines; the (a) marker's block takes both.",
+  "evidence": "paper-trail-corpus/markingschemes/2014/LC033ALP000EV.pdf p. 14, row \"(a) Sales 60,000 x €5 €300,000\" at y 0.495"
+ },
+ "bus-2016-hl-s3-q6b": {
+  "regions": [
+   {
+    "page": 41,
+    "y": [
+     0.57,
+     0.76
+    ],
+    "x": [
+     0,
+     0.8
+    ]
+   }
+  ],
+  "why": "The chart's drawn lines carry the marks; the scheme prints the calculations and the cost/revenue table under it (\"Calculations only\").",
+  "evidence": "paper-trail-corpus/markingschemes/2016/LC033ALP000EV.pdf p. 41, y 0.57–0.76"
+ },
+ "bus-2017-hl-s3-q6b-iv": {
+  "regions": [
+   {
+    "page": 48,
+    "y": [
+     0.18,
+     0.187
+    ]
+   }
+  ],
+  "why": "The four ratios are listed with their answers; the (iv) debt-equity answer is on the list line, the worked table under it carries no (iv) marker and its siblings (i)–(iii) show the headline answer alone.",
+  "evidence": "paper-trail-corpus/markingschemes/2017/LC033ALP000EV.pdf p. 48, \"(iv) Debt Equity Ratio: 1.1:1\" at y 0.183"
+ },
+ "bus-2019-hl-s3-q5b-ii-current": {
+  "regions": [
+   {
+    "page": 41,
+    "y": [
+     0.499,
+     0.56
+    ]
+   }
+  ],
+  "why": "One (ii) marker heads both ratios; the current ratio is the first block of rows (7m).",
+  "evidence": "paper-trail-corpus/markingschemes/2019/LC033ALP000EV.pdf p. 41, \"5 B (ii) Current Ratio CA/CL\" at y 0.499, rows to y 0.549"
+ },
+ "bus-2019-hl-s3-q5b-ii-acid": {
+  "regions": [
+   {
+    "page": 41,
+    "y": [
+     0.6,
+     0.66
+    ]
+   }
+  ],
+  "why": "One (ii) marker heads both ratios; the acid test is the second block of rows (9m).",
+  "evidence": "paper-trail-corpus/markingschemes/2019/LC033ALP000EV.pdf p. 41, \"Acid Test CA-Stock/CL\" at y 0.603, rows to y 0.653"
+ },
+ "bus-2021-hl-s3-q7bi": {
+  "regions": [
+   {
+    "page": 53,
+    "y": [
+     0.12,
+     0.205
+    ]
+   }
+  ],
+  "why": "The formula's label line is printed above the (i) marker, which sits beside the fraction's lower line.",
+  "evidence": "paper-trail-corpus/markingschemes/2021/LC033ALP000EV.pdf p. 53, \"Break-even Point = F.C.\" at y 0.124 over \"(i) S.P – V.C\" at y 0.141, result at y 0.199"
+ },
+ "bus-2021-hl-s3-q7bii": {
+  "regions": [
+   {
+    "page": 53,
+    "y": [
+     0.23,
+     0.262
+    ]
+   }
+  ],
+  "why": "The formula's label line is printed above the (ii) marker.",
+  "evidence": "paper-trail-corpus/markingschemes/2021/LC033ALP000EV.pdf p. 53, \"Margin of Safety = Volume of Sales – BEP\" at y 0.234, \"(ii)\" at y 0.245, result at y 0.257"
+ },
+ "bus-2022-hl-s1-q12": {
+  "regions": [
+   {
+    "page": 20,
+    "y": [
+     0.41,
+     0.74
+    ]
+   }
+  ],
+  "why": "The PAYE table's labels and figures sit on separate baselines and read as a jumble; the scheme's \"Workings/Breakdown of marks\" section under it prints each step as a line. The column header and the two marking notes inside the region are skipped.",
+  "evidence": "paper-trail-corpus/markingschemes/2022/LC033ALP000EV.pdf p. 20, y 0.415–0.735",
+  "skip": [
+   "Workings/Breakdown of marks",
+   "Own figures",
+   "Award 2 marks"
+  ]
+ },
+ "bus-2023-hl-s3-q7bi": {
+  "regions": [
+   {
+    "page": 56,
+    "y": [
+     0.258,
+     0.425
+    ]
+   }
+  ],
+  "why": "The (ii) marker is printed only in the question's list, so the (i) marker's block runs on into the USC workings.",
+  "evidence": "paper-trail-corpus/markingschemes/2023/LC033ALP000EV.pdf p. 56, \"(i) The PAYE which Tommy has to pay\" at y 0.258 to \"PAYE Tommy has to Pay €32,355\" at y 0.419"
+ },
+ "bus-2023-hl-s3-q7bii": {
+  "regions": [
+   {
+    "page": 56,
+    "y": [
+     0.475,
+     0.55
+    ]
+   }
+  ],
+  "why": "The USC workings carry no (ii) marker on the response page.",
+  "evidence": "paper-trail-corpus/markingschemes/2023/LC033ALP000EV.pdf p. 56, \"12,012 x 0.005 60.06\" at y 0.479 to \"Total amount of USC €4,237.50\" at y 0.546"
+ },
+ "bus-2014-ol-s2-q3a": {
+  "regions": [
+   {
+    "page": 17,
+    "y": [
+     0.18,
+     0.4
+    ],
+    "xmin": 0.8
+   }
+  ],
+  "mode": "labels",
+  "why": "The answer is a drawn line graph; what the scheme prices is printed in the marks column beside it (\"Heading\", \"Labels: Year, No. employed\", \"Correct Points\").",
+  "evidence": "paper-trail-corpus/markingschemes/2014/LC033GLP000EV.pdf p. 17, marks column x ≥ 0.82, y 0.19–0.39",
+  "labels": [
+   "Heading",
+   "Labels:",
+   "Correct Points:"
+  ]
+ },
+ "bus-2015-hl-s3-q7a": {
+  "regions": [
+   {
+    "page": 45,
+    "y": [
+     0.4,
+     0.84
+    ]
+   },
+   {
+    "page": 46,
+    "y": [
+     0.09,
+     0.64
+    ]
+   }
+  ],
+  "why": "The (A) marker's block opens with the case study reprinted from the paper (nine lines); the responses begin at \"Product/Service\" and run to \"Place\" on the next page.",
+  "evidence": "paper-trail-corpus/markingschemes/2015/LC033ALP000EV.pdf p. 45 y 0.405–0.83 and p. 46 y 0.094–0.634"
+ },
+ "bus-2020-hl-s3-q4b-i": {
+  "excluded": true,
+  "why": "The response is an organisation chart embedded as an image; the text layer holds only the marker and the marks cell \"3,3,2,2\" between y 0.144 and 0.463.",
+  "evidence": "paper-trail-corpus/markingschemes/2020/LC033ALP000EV.pdf p. 47 (rendered: boxes Managing Director → Production/Finance/Marketing Department → Employees, no text in the layer)"
+ },
+ "bus-2025-ol-s1-q9": {
+  "excluded": true,
+  "why": "The completed matrix structure is an image; the text layer holds only \"Managing / Director\" and the marks cells.",
+  "evidence": "paper-trail-corpus/markingschemes/2025/LC033GLP000EV.pdf p. 10 (rendered: Finance/Marketing/Purchasing/Production Department and Staff boxes, Team A/B, as one image)"
+ },
+ "bus-2025-hl-s1-q1": {
+  "excluded": true,
+  "why": "The matching grid (1–5 over D E A C F) is an image; the region holds one image and thirteen drawn rules and no text.",
+  "evidence": "paper-trail-corpus/markingschemes/2025/LC033ALP000EV.pdf p. 12 y 0.21–0.34 (rendered: the grid reads D E A C F; get_text('words') on the region returns only the question's words)"
+ },
+ "bus-2015-hl-s3-q4a-i": {
+  "excluded": true,
+  "why": "The response is a drawn bar chart; the text layer prints only its title, axis values and month labels, no priced rows.",
+  "evidence": "paper-trail-corpus/markingschemes/2015/LC033ALP000EV.pdf p. 34 y 0.137–0.644 (two example charts)"
+ },
+ "bus-2010-ol-s2-q3ai": {
+  "excluded": true,
+  "why": "The response is a drawn bar chart; the text layer prints only its title, the axis values and the series label, and the bars are 61 drawn line segments.",
+  "evidence": "paper-trail-corpus/markingschemes/2010/LC033GLP000EV.pdf p. 14, y 0.128–0.290: \"Unemployment Rates Nov 07 - May 09\", \"000's 400\" … \"0\", \"Total Persons\", \"Nov-07 May-08 Nov-08 May-09\"; 61 line segments, 0 images"
+ },
+ "bus-2011-hl-s3-q7c-i": {
+  "excluded": true,
+  "why": "The response is a drawn break-even chart; the text layer prints only its title, the axis values and the curve labels (TR, TC, FC, break-even point, margin of safety), and the curves are 73 drawn line segments.",
+  "evidence": "paper-trail-corpus/markingschemes/2011/LC033ALP000EV.pdf p. 42, y 0.150–0.669: \"Break Even Chart- Moore Ltd\", \"900\" … \"100\", \"10 20 30 40 50 ‘000 units\"; 73 line segments, 0 images"
+ },
+ "bus-2022-ol-s2-q6d": {
+  "regions": [
+   {
+    "page": 27,
+    "y": [
+     0.27,
+     0.42
+    ],
+    "xmin": 0.8
+   }
+  ],
+  "mode": "labels",
+  "labels": [
+   "Title",
+   "Labelled Axis",
+   "Bars"
+  ],
+  "why": "The response is a drawn bar chart; the scheme's marks column names the three components it credits, wrapped word by word.",
+  "evidence": "paper-trail-corpus/markingschemes/2022/LC033GLP000EV.pdf p. 27, x ≥ 0.82, y 0.276–0.410: \"Title\", \"Labelled\" / \"Axis\", \"Bars\""
+ }
+}

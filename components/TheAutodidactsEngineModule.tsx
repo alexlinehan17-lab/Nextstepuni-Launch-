@@ -1,22 +1,29 @@
+import { moduleFill } from './learning/brandTokens';
 
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
 import {
-  SlidersHorizontal, Repeat, Brain, BookOpen, PenSquare, Wrench, Highlighter
+BookOpen,
+Brain,
+Highlighter,
+PenSquare,
+Repeat,
+SlidersHorizontal,
+Wrench
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { cyanTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { Cite } from './ModuleReferences';
+import React,{ useState } from 'react';
 import { FEEDBACK_LOOPS_REFERENCE_LIST } from '../data/references/feedbackLoops';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { cyanTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
+import { MotionDiv } from './Motion';
 
 const theme = cyanTheme;
 
@@ -106,19 +113,19 @@ const SplitPageSimulator = () => {
 
   return (
     <div className="my-10 rounded-2xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] p-6 md:p-8">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">
         Split-Page Simulator
       </h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">
         Attempt each step, then reveal the expert solution to see where your understanding breaks down.
       </p>
 
       {/* Problem Statement */}
-      <div className="mb-8 p-5 bg-cyan-50 dark:bg-cyan-950/40 border border-cyan-200 dark:border-cyan-800 rounded-xl text-center">
-        <span className="text-xs font-bold uppercase tracking-widest text-cyan-600 dark:text-cyan-400">
+      <div className="mb-8 p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)] rounded-xl text-center">
+        <span className="text-xs font-bold uppercase tracking-widest text-[var(--module-ink)] dark:text-[var(--module-ink)]">
           {problem.title}
         </span>
-        <p className="mt-2 font-mono text-lg font-semibold text-zinc-800 dark:text-white">
+        <p className="mt-2 font-mono text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">
           {problem.equation}
         </p>
       </div>
@@ -138,9 +145,9 @@ const SplitPageSimulator = () => {
               transition={{ duration: 0.3, delay: i * 0.05 }}
               className="rounded-xl p-5 transition-colors"
               style={{
-                backgroundColor: isRevealed ? (match ? '#6EE7B7' : '#FCD34D') : '#FFFFFF',
-                border: isRevealed ? `2.5px solid ${match ? '#059669' : '#D97706'}` : '1.5px solid #E7E5E4',
-                boxShadow: !isRevealed ? 'none' : `3px 3px 0px 0px ${match ? '#059669' : '#D97706'}`,
+                backgroundColor: moduleFill(isRevealed ? (match ? "var(--module-success-soft)" : "var(--module-surface)") : "var(--module-surface)"),
+                border: isRevealed ? `2.5px solid ${match ? "var(--module-line)" : "var(--module-line)"}` : "1.5px solid var(--module-line)",
+                boxShadow: 'none',
               }}
             >
               {/* Step Header */}
@@ -149,14 +156,14 @@ const SplitPageSimulator = () => {
                   className={`flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full text-xs font-bold ${
                     isRevealed
                       ? match
-                        ? 'bg-emerald-500 text-white'
-                        : 'bg-amber-500 text-white'
-                      : 'bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300'
+                        ? "bg-[var(--module-success)] text-[var(--module-ink)]"
+                        : "bg-[var(--module-surface)] text-[var(--module-ink)]"
+                      : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)]"
                   }`}
                 >
                   {i + 1}
                 </span>
-                <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-200">
+                <span className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">
                   {step.prompt}
                 </span>
               </div>
@@ -165,7 +172,7 @@ const SplitPageSimulator = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {/* User Attempt */}
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-1.5">
+                    <label className="block text-xs font-bold uppercase tracking-wider text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-1.5">
                       Your Attempt
                     </label>
                     <input
@@ -174,14 +181,14 @@ const SplitPageSimulator = () => {
                       onChange={(e) => handleInputChange(i, e.target.value)}
                       disabled={isRevealed}
                       placeholder="Type your answer..."
-                      className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none disabled:opacity-60"
-                      style={{ border: '1.5px solid #E7E5E4' }}
+                      className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none disabled:opacity-60"
+                      style={{ border: "1.5px solid var(--module-line)" }}
                     />
                   </div>
 
                   {/* Expert Solution / Reveal Button */}
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-1.5">
+                    <label className="block text-xs font-bold uppercase tracking-wider text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-1.5">
                       Expert Solution
                     </label>
                     <AnimatePresence mode="wait">
@@ -193,13 +200,13 @@ const SplitPageSimulator = () => {
                           transition={{ duration: 0.35 }}
                           className={`px-4 py-2.5 text-sm rounded-lg font-mono ${
                             match
-                              ? 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-200'
-                              : 'bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-200'
+                              ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:text-[var(--module-success-text)]"
+                              : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)]"
                           }`}
                         >
                           <span>{step.expert}</span>
                           {!match && (
-                            <span className="block mt-1 text-xs italic text-amber-600 dark:text-amber-400">
+                            <span className="block mt-1 text-xs italic text-[var(--module-ink)] dark:text-[var(--module-ink)]">
                               Compare your approach
                             </span>
                           )}
@@ -208,7 +215,7 @@ const SplitPageSimulator = () => {
                         <button
                           onClick={() => handleReveal(i)}
                           disabled={!userInputs[i].trim()}
-                          className="w-full px-4 py-2.5 text-sm font-semibold rounded-lg bg-cyan-600 hover:bg-cyan-700 text-white disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                          className="w-full px-4 py-2.5 text-sm font-semibold rounded-lg bg-[var(--module-solid)] hover:bg-[var(--module-solid)] text-[var(--module-ink)] disabled:opacity-40 disabled:cursor-not-allowed transition-colors" data-wide-button="true"
                         >
                           Reveal Expert Solution
                         </button>
@@ -217,8 +224,8 @@ const SplitPageSimulator = () => {
                   </div>
                 </div>
               ) : (
-                <div className="h-10 rounded-lg bg-zinc-100 dark:bg-zinc-700/40 flex items-center justify-center">
-                  <span className="text-xs text-zinc-400 dark:text-zinc-500">Complete the previous step to unlock</span>
+                <div className="h-10 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)] flex items-center justify-center">
+                  <span className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)]">Complete the previous step to unlock</span>
                 </div>
               )}
             </MotionDiv>
@@ -233,17 +240,17 @@ const SplitPageSimulator = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mt-8 p-6 rounded-xl bg-cyan-50 dark:bg-cyan-950/30 border border-cyan-200 dark:border-cyan-800 text-center"
+            className="mt-8 p-6 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)] text-center"
           >
-            <p className="text-lg font-semibold text-zinc-800 dark:text-white mb-2">
+            <p className="text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">
               You matched {matchCount}/5 steps.
             </p>
-            <p className="text-sm text-zinc-600 dark:text-zinc-300 max-w-lg mx-auto">
+            <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] max-w-lg mx-auto">
               The Split-Page Method forces you to try before you peek &mdash; that's the whole trick. Every mismatch shows you exactly what to work on next, not that you've failed.
             </p>
             <button
               onClick={switchProblem}
-              className="mt-5 px-6 py-2.5 text-sm font-semibold rounded-lg bg-cyan-600 hover:bg-cyan-700 text-white transition-colors"
+              className="mt-5 px-6 py-2.5 text-sm font-semibold rounded-lg bg-[var(--module-solid)] hover:bg-[var(--module-solid)] text-[var(--module-ink)] transition-colors" data-wide-button="true"
             >
               Try Another Problem
             </button>
@@ -269,27 +276,25 @@ const FourHighlighterAudit = () => {
     const hl = (id: string, base: string) =>
       `${isHighlighted(id) ? base + ' px-1 rounded-sm' : ''}`;
 
-    return (
-        <div className="my-10 rounded-2xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] p-6 md:p-8">
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Four-Highlighter Audit</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Click the highlighters to audit the paragraph below.</p>
+    return <div className="wr-skin" data-wide="FourHighlighterAudit"><div className="my-10 rounded-2xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] p-6 md:p-8">
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Four-Highlighter Audit</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Click the highlighters to audit the paragraph below.</p>
             <div className="flex justify-center flex-wrap gap-3 mb-6">
-                <button onClick={() => setActiveHighlighter(activeHighlighter === 'purpose' ? null : 'purpose')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'purpose' ? 'bg-blue-500 text-white border-blue-500' : 'bg-blue-50 text-blue-800 border-blue-200'}`}> <Highlighter size={16}/> Purpose</button>
-                <button onClick={() => setActiveHighlighter(activeHighlighter === 'coherence' ? null : 'coherence')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'coherence' ? 'bg-green-500 text-white border-green-500' : 'bg-green-50 text-green-800 border-green-200'}`}> <Highlighter size={16}/> Coherence</button>
-                <button onClick={() => setActiveHighlighter(activeHighlighter === 'language' ? null : 'language')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'language' ? 'bg-yellow-400 text-yellow-900 border-yellow-500' : 'bg-yellow-50 text-yellow-800 border-yellow-200'}`}> <Highlighter size={16}/> Language</button>
-                <button onClick={() => setActiveHighlighter(activeHighlighter === 'mechanics' ? null : 'mechanics')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'mechanics' ? 'bg-red-500 text-white border-red-500' : 'bg-red-50 text-red-800 border-red-200'}`}> <Highlighter size={16}/> Mechanics</button>
+                <button onClick={() => setActiveHighlighter(activeHighlighter === 'purpose' ? null : 'purpose')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'purpose' ? "bg-[var(--module-solid)] text-[var(--module-ink)] border-[var(--module-line)]" : "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)]"}`} data-wide-button="true" data-selected={!!(activeHighlighter === 'purpose')} data-tone="orange" aria-pressed={!!(activeHighlighter === 'purpose')}> <Highlighter size={16}/> Purpose</button>
+                <button onClick={() => setActiveHighlighter(activeHighlighter === 'coherence' ? null : 'coherence')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'coherence' ? "bg-green-500 text-[var(--module-ink)] border-green-500" : 'bg-green-50 text-green-800 border-green-200'}`} data-wide-button="true" data-selected={!!(activeHighlighter === 'coherence')} data-tone="mint" aria-pressed={!!(activeHighlighter === 'coherence')}> <Highlighter size={16}/> Coherence</button>
+                <button onClick={() => setActiveHighlighter(activeHighlighter === 'language' ? null : 'language')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'language' ? "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)]" : "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)]"}`} data-wide-button="true" data-selected={!!(activeHighlighter === 'language')} data-tone="orange" aria-pressed={!!(activeHighlighter === 'language')}> <Highlighter size={16}/> Language</button>
+                <button onClick={() => setActiveHighlighter(activeHighlighter === 'mechanics' ? null : 'mechanics')} className={`px-4 py-2 flex items-center gap-2 text-sm font-bold rounded-lg border ${activeHighlighter === 'mechanics' ? "bg-[var(--module-danger)] text-[var(--module-ink)] border-[var(--module-line)]" : "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] border-[var(--module-line)]"}`} data-wide-button="true" data-selected={!!(activeHighlighter === 'mechanics')} data-tone="coral" aria-pressed={!!(activeHighlighter === 'mechanics')}> <Highlighter size={16}/> Mechanics</button>
             </div>
             <div className="p-6 rounded-xl border-[1.5px] border-[var(--outline-soft)] bg-[var(--surface-raised)] leading-relaxed text-[var(--ink-primary)]">
-              <span className={hl('s1', 'bg-blue-200')}>W.B. Yeats' poem 'The Second Coming' <span className={hl('w1', 'bg-yellow-200')}>powerfully captures</span> the anxiety of a world <span className={hl('w2', 'bg-yellow-200')}>descending into chaos</span>.</span>
+              <span className={hl('s1', "bg-[var(--module-surface)]")}>W.B. Yeats' poem 'The Second Coming' <span className={hl('w1', "bg-[var(--module-surface)]")}>powerfully captures</span> the anxiety of a world <span className={hl('w2', "bg-[var(--module-surface)]")}>descending into chaos</span>.</span>
               {' '}
-              <span><span className={hl('t1', 'bg-green-200')}>Initially</span>, the poem presents the image of a falcon <span className={hl('e1', 'bg-red-300')}>loosing</span> control, a metaphor for society's breakdown.</span>
+              <span><span className={hl('t1', 'bg-green-200')}>Initially</span>, the poem presents the image of a falcon <span className={hl('e1', "bg-[var(--module-danger)]")}>loosing</span> control, a metaphor for society's breakdown.</span>
               {' '}
-              <span className={hl('s3', 'bg-blue-200')}><span className={hl('t2', 'bg-green-200')}>However</span>, Yeats then introduces the <span className={hl('w4', 'bg-yellow-200')}>terrifying 'rough beast,'</span> <span className={hl('w5', 'bg-yellow-200')}>slouching</span> towards Bethlehem. This <span className={hl('w6', 'bg-yellow-200')}>stark image</span> solidifies the poem's <span className={hl('w7', 'bg-yellow-200')}>apocalyptic vision</span>.</span>
+              <span className={hl('s3', "bg-[var(--module-surface)]")}><span className={hl('t2', 'bg-green-200')}>However</span>, Yeats then introduces the <span className={hl('w4', "bg-[var(--module-surface)]")}>terrifying 'rough beast,'</span> <span className={hl('w5', "bg-[var(--module-surface)]")}>slouching</span> towards Bethlehem. This <span className={hl('w6', "bg-[var(--module-surface)]")}>stark image</span> solidifies the poem's <span className={hl('w7', "bg-[var(--module-surface)]")}>apocalyptic vision</span>.</span>
               {' '}
-              <span className={hl('s4', 'bg-blue-200')}><span className={hl('t3', 'bg-green-200')}>Therefore</span>, the poem <span className={hl('w8', 'bg-yellow-200')}>encapsulates</span> a profound sense of cultural collapse.</span>
+              <span className={hl('s4', "bg-[var(--module-surface)]")}><span className={hl('t3', 'bg-green-200')}>Therefore</span>, the poem <span className={hl('w8', "bg-[var(--module-surface)]")}>encapsulates</span> a profound sense of cultural collapse.</span>
             </div>
-        </div>
-    );
+        </div></div>;
 };
 
 // --- MODULE COMPONENT ---
@@ -352,7 +357,7 @@ const TheAutodidactsEngineModule: React.FC<{ onBack: () => void; progress: Modul
                 ) : (<>
                 <p>For essay writing, your "stand-in teacher" is a model essay and the official marking scheme (the PCLM criteria). The technique is the <Highlight description="You go through your own essay four times, each time with a different coloured highlighter, checking one specific thing each time (Purpose, Coherence, Language, Mechanics)." theme={theme}>Four-Highlighter Method</Highlight>. After writing an essay, you go through it four times, each time with a different colour, checking your work against what the examiner is looking for.</p>
                 <p>
-                    You use one colour for <Highlight description="Is every sentence actually answering the question? Highlight the bits that directly address what was asked." theme={{...theme, highlightBg: 'bg-blue-100/40', highlightText: 'text-blue-900', highlightDecor: 'decoration-blue-400/40', highlightHover: 'hover:bg-blue-200/60'}}>Purpose</Highlight> (sentences that directly answer the question), one for <Highlight description="Does your essay flow? Do your ideas connect logically from one paragraph to the next?" theme={{...theme, highlightBg: 'bg-green-100/40', highlightText: 'text-green-900', highlightDecor: 'decoration-green-400/40', highlightHover: 'hover:bg-green-200/60'}}>Coherence</Highlight> (linking words and topic sentences), one for <Highlight description="Are you using good word choices? Strong verbs, specific words instead of vague ones?" theme={{...theme, highlightBg: 'bg-yellow-100/40', highlightText: 'text-yellow-900', highlightDecor: 'decoration-yellow-400/40', highlightHover: 'hover:bg-yellow-200/60'}}>Language</Highlight> (strong verbs and word choice), and one for <Highlight description="The basic stuff -- spelling, punctuation, and grammar. Mistakes here are the easiest marks to lose." theme={{...theme, highlightBg: 'bg-red-100/40', highlightText: 'text-red-900', highlightDecor: 'decoration-red-400/40', highlightHover: 'hover:bg-red-200/60'}}>Mechanics</Highlight> (spelling/grammar errors). Instead of vaguely wondering "Is my essay any good?", you get a clear picture of exactly what's working and what needs fixing.<Cite n={2} />
+                    You use one colour for <Highlight description="Is every sentence actually answering the question? Highlight the bits that directly address what was asked." theme={{...theme, highlightBg: "bg-[var(--module-surface)]", highlightText: "text-[var(--module-ink)]", highlightDecor: "decoration-[var(--module-ink)]", highlightHover: "hover:bg-[var(--module-surface)]"}}>Purpose</Highlight> (sentences that directly answer the question), one for <Highlight description="Does your essay flow? Do your ideas connect logically from one paragraph to the next?" theme={{...theme, highlightBg: 'bg-green-100/40', highlightText: 'text-green-900', highlightDecor: 'decoration-green-400/40', highlightHover: 'hover:bg-green-200/60'}}>Coherence</Highlight> (linking words and topic sentences), one for <Highlight description="Are you using good word choices? Strong verbs, specific words instead of vague ones?" theme={{...theme, highlightBg: "bg-[var(--module-surface)]", highlightText: "text-[var(--module-ink)]", highlightDecor: "decoration-[var(--module-ink)]", highlightHover: "hover:bg-[var(--module-surface)]"}}>Language</Highlight> (strong verbs and word choice), and one for <Highlight description="The basic stuff -- spelling, punctuation, and grammar. Mistakes here are the easiest marks to lose." theme={{...theme, highlightBg: "bg-[var(--module-danger-soft)]", highlightText: "text-[var(--module-danger-text)]", highlightDecor: "decoration-[var(--module-ink)]", highlightHover: "hover:bg-[var(--module-danger-soft)]"}}>Mechanics</Highlight> (spelling/grammar errors). Instead of vaguely wondering "Is my essay any good?", you get a clear picture of exactly what's working and what needs fixing.<Cite n={2} />
                 </p>
                 </>)}
                 <FourHighlighterAudit />

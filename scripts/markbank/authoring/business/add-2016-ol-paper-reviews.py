@@ -1,0 +1,9 @@
+from paper_review_lib import record
+record(2016, 'ordinary', {
+  'LC033GLP000EV.pdf': dict(scheme=list(range(5, 30)), notes=[
+    'Visually reviewed all twelve pages of the 2016 Ordinary paper (one booklet; answer ten of fifteen short questions at 10 marks and four of eight long questions at 75: one from Part 1, two from Part 2 and one other): the cover and mark grid, the fifteen short questions on pages 2-5 (including the take-home-pay table, the projected car-sales bar chart, the Solas/IDA tick boxes, the incomplete product life cycle and the contract-law matching table), the eight long questions on pages 6-11 (every extract, the visible trade figures and the Tech Tastic advertisement) and the blank page 12.',
+    'Each task was checked against the allocation summary on scheme pages 5-9 and the support notes on pages 10-29 (the tick, the true/false key and the matching key read from the rendered pages). No 2016 Ordinary card existed, so all 63 are new. Printed sub-parts with their own published marks are separate cards (Section 2 Q2(A), Q2(B), Q3(A), Q3(B), Q6(B), Q7(D), Q8(A) and Q8(B)). Calculations keep their printed lines: take-home pay 3/3/2/2 and the balance of trade formula 3 with workings 3 + 3 + 3.',
+    'The scheme’s text layer mangles some words (“Wz” for PAYE, “h^” for USC, dropped capitals); quotations are taken only from clean runs and read against the rendered pages.',
+    'No printed choice of task occurs. All twenty-four raw selection matches are classified, including the twelve printed page counters. Topic Atlas uses the single-booklet identity: short questions by number, long questions as S2Q1-S2Q8.',
+    'This source-pinned record covers the English Ordinary paper only. Source hashes and exact ID sets detect stale evidence; parser counts do not independently prove completeness.']),
+})

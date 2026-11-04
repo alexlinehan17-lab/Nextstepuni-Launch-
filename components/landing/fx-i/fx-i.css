@@ -1,0 +1,23 @@
+/* Landing effects, set I: the word that erodes. (The tunnel of years was
+   removed at Alex's request, 2026-09-09.)
+   White canvas, ink hairlines, one orange. Every motion here is off under
+   prefers-reduced-motion and under ?static=1 (html.landing-static). */
+
+/* ── Less guesswork. ─────────────────────────────────────────────────────────
+   The word is real text in the DOM. While the canvas is showing, the text is
+   still there for screen readers and for layout — it is the box the canvas is
+   sized to — but painted transparent; the canvas sits over it with a margin
+   for the dust. */
+.fxi-guess { position: relative; display: inline-block; white-space: nowrap; }
+.fxi-guess[data-canvas='on'] .fxi-guess-text { color: transparent; }
+.fxi-guess canvas {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+  z-index: 1;
+}
+.fxi-guess canvas[hidden] { display: none; }
+/* pan-y: a finger rubbing sideways erodes; a finger dragging down still scrolls the page. */
+.fxi-guess-hit { display: block; position: absolute; inset: -0.1em -0.2em; touch-action: pan-y; cursor: crosshair; z-index: 2; }
+.fxi-guess[data-canvas='off'] .fxi-guess-hit { display: none; }
+@media (prefers-reduced-motion: reduce) { .fxi-guess-hit { display: none; } }

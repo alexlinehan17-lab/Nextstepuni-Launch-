@@ -8552,7 +8552,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "values of sin i and sin r", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "axes labelled", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "points ploted", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "points plotted", marks: 3 },
     { id: "r-4", kind: "point", verbatim: "line of best fit", marks: 3 },
     ],
   } as SecCard,
@@ -8583,7 +8583,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "axes labelled", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "points ploted", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "points plotted", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "curve of best fit drawn", marks: 3 },
     ],
     figure: {
