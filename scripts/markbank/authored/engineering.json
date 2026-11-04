@@ -9564,7 +9564,7 @@
  },
  {
   "id": "eng-2023-hl-q1-c",
-  "topicId": "eng-2-13",
+  "topicId": "eng-3-12",
   "conceptId": "engineering-importance-specifying-limits-component-drawings",
   "level": "higher",
   "year": 2023,
@@ -10158,78 +10158,6 @@
   ]
  },
  {
-  "id": "eng-2023-hl-q3-b-i",
-  "topicId": "eng-3-8",
-  "conceptId": "using-graph-paper-supplied-plot-load",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 HL Q3(b)(i)",
-  "questionText": "Using the graph paper supplied, plot the load-extension diagram.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "120 100 80 60 40 20 0.08 1.0 2.0 3.0 4.0 5.0 Extension(mm) ( )",
-    "marks": 10
-   }
-  ],
-  "stem": "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3"
- },
- {
-  "id": "eng-2023-hl-q3-b-ii",
-  "topicId": "eng-3-8",
-  "conceptId": "determine-ultimate-tensile-strength-uts-specimen",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 HL Q3(b)(ii)",
-  "questionText": "Determine the ultimate tensile strength (UTS) for the specimen.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "C.S.A. π. (8²)",
-    "marks": 4
-   }
-  ],
-  "stem": "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3"
- },
- {
-  "id": "eng-2023-hl-q3-b-iii",
-  "topicId": "eng-3-8",
-  "conceptId": "calculate-0-1-proof-stress",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 HL Q3(b)(iii)",
-  "questionText": "Calculate the 0.1% proof stress.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "0.1% proof stress = 84 = 0.42 kN/mm2 C.S.A",
-    "marks": 4
-   }
-  ],
-  "stem": "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3"
- },
- {
   "id": "eng-2023-hl-q3-c-i",
   "topicId": "eng-3-8",
   "conceptId": "aid-suitable-diagrams-ultrasonic-non-destructive",
@@ -10456,6 +10384,36 @@
   "notes": "The scheme prints '6'.",
   "questionFigureKey": "engineering-2023-HL-paper-q4bi-art",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-q4-c-i",
+  "topicId": "eng-2-6",
+  "conceptId": "differences-between-annealing-normalising",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q4(c)(i)",
+  "questionText": "Explain the differences between annealing and normalising.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Annealing: The primary purpose of annealing is to relieve internal stresses, improve ductility and refine the grain structure of the metal. It is used to make the metal more malleable and reduce brittleness. The slow cooling rate will make a metal softer. Annealing is often employed to prepare the metal for further processing, such as machining or forming operations.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Normalising aims to refine the grain structure and produces a finer and more uniform microstructure compared to annealing. It will enhance mechanical properties and improve  the strength and toughness of the metal. It is typically used to achieve uniformity and consistent properties throughout the metal, making it suitable for applications where strength and toughness are crucial.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'."
  },
  {
   "id": "eng-2023-hl-q4-c-iii",
@@ -11944,6 +11902,434 @@
     "marks": null
    }
   ]
+ },
+ {
+  "id": "eng-2023-hl-q1-d",
+  "topicId": "eng-1-9",
+  "conceptId": "properties-expanded-polypropylene-epp-make-suitable",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(d)",
+  "questionText": "Give two properties of expanded polypropylene (EPP) which make it suitable for use in exercise foam rollers, as shown opposite.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Flexibility is enhanced with foaming, low density yet keeps structural integrity, very good strength to weight ratio, will absorb impact and dissipate energy, chemical and water resistant, etc.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '3 + 2'.",
+  "questionFigureKey": "engineering-2023-HL-paper-q1d-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-q1-g",
+  "topicId": "eng-3-14",
+  "conceptId": "health-benefits-using-high-efficiency-particulate",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(g)",
+  "questionText": "Describe two health benefits of using high efficiency particulate air (HEPA) purifiers, such as the Dyson air purifier shown, in modern offices.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "HEPA purifiers are highly effective at capturing common allergens such as pollen, mould spores, pet and dust mites.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Can filter airbourne particles such as dust, smoke, bacteria and some viruses.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Enhanced respiratory health.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "questionFigureKey": "engineering-2023-HL-paper-q1g-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-q1-k",
+  "topicId": "eng-3-14",
+  "conceptId": "benefits-using-wireless-charging-station-shown",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(k)",
+  "questionText": "State two benefits of using the wireless charging station shown opposite.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Charging is completed without trailing leads, phone connections are not subjected to wear, tidy storage, this unit charges multiple devices, etc.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '3 + 2'.",
+  "questionFigureKey": "engineering-2023-HL-paper-q1k-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-q1-m",
+  "topicId": "eng-3-14",
+  "conceptId": "wave-energy-technology-captures-energy-water",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(m)",
+  "questionText": "Wave energy technology captures the energy of water waves to do useful work such as generating electricity. Give two possible disadvantages associated with wave energy technology as an energy source.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Set-up costs and maintenance are high, can create a hazard for shipping, weather conditions are variable, integrating wave energy into existing power grids can be complex, etc.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '3 + 2'.",
+  "questionFigureKey": "engineering-2023-HL-paper-q1m-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-q3-b-i",
+  "topicId": "eng-3-8",
+  "conceptId": "using-graph-paper-supplied-plot-load",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(b)(i)",
+  "questionText": "Using the graph paper supplied, plot the load-extension diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Using the graph paper supplied, plot the load-extension diagram.",
+    "marks": 10,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "stem": "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3",
+  "notes": "The scheme prints 'Draw load-extension graph', 10 marks.",
+  "figureKey": "engineering-2023-HL-scheme-q3bi-sol"
+ },
+ {
+  "id": "eng-2023-hl-q3-b-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "determine-ultimate-tensile-strength-uts-specimen",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(b)(ii)",
+  "questionText": "Determine the ultimate tensile strength (UTS) for the specimen.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Determine the ultimate tensile strength (UTS) for the specimen.",
+    "marks": 4,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "stem": "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3",
+  "figureKey": "engineering-2023-HL-scheme-q3bii-sol"
+ },
+ {
+  "id": "eng-2023-hl-q3-b-iii",
+  "topicId": "eng-3-8",
+  "conceptId": "calculate-0-1-proof-stress",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(b)(iii)",
+  "questionText": "Calculate the 0.1% proof stress.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calculate the 0.1% proof stress.",
+    "marks": 4,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "stem": "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3",
+  "figureKey": "engineering-2023-HL-scheme-q3biii-sol"
+ },
+ {
+  "id": "eng-2023-hl-q4-a-i",
+  "topicId": "eng-2-6",
+  "conceptId": "aid-diagram-case-hardening-process",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q4(a)(i)",
+  "questionText": "Describe, with the aid of a diagram, a case hardening process.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The piece is packed in a box with a carbon rich material such as charcoal and placed in a furnace at 920˚C (above UCT). This allows the carbon to diffuse into the piece.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The longer the component is in the furnace the greater the depth of penetration of carbon.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The result is a very hard coarse outer shell.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Grain refining is necessary to prevent cracking and this is done by putting the piece into a bath of molten salt at 780˚C for half an hour and then quenching it in water.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints: Suggested answer other solutions accepted. 8 marks.",
+  "figureKey": "engineering-2023-HL-scheme-q4ai-sol"
+ },
+ {
+  "id": "eng-2023-hl-q4-c-ii",
+  "topicId": "eng-2-6",
+  "conceptId": "compare-induction-hardening-flame-hardening",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q4(c)(ii)",
+  "questionText": "Compare induction hardening and flame hardening.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Induction Hardening A copper coil carrying a significant level of alternating current is placed near (not touching) the part. The workpiece is heated by a high frequency electric current passing through the copper coil to a high temperature (austenite zone) and then quenched with jets of water. The quenched metal undergoes a martensitic transformation, increasing the hardness of the outer surface while keeping",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Flame Hardening The surface of the steel object is heated to 850˚C with an oxy-acetylene flame and quenched quickly. This creates a hard outside layer as the heated austenite structure changes to martensite. The depth of hardening depends on the rate of heating.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'.",
+  "figureKey": "engineering-2023-HL-scheme-q4cii-sol"
+ },
+ {
+  "id": "eng-2023-hl-q5-b-i",
+  "topicId": "eng-1-3",
+  "conceptId": "draw-equilibrium-diagram-according-given-data",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q5(b)(i)",
+  "questionText": "Draw the equilibrium diagram according to the given data, label the liquidus and solidus lines and the eutectic point.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Draw equilibrium diagram",
+    "marks": 9
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Identify liquidus, solidus lines and eutectic point",
+    "marks": 3
+   }
+  ],
+  "figureKey": "engineering-2023-HL-scheme-q5bi-sol",
+  "questionFigureKey": "engineering-2023-HL-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-q5-b-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "alloy-containing-30-metal-b-determine",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q5(b)(ii)",
+  "questionText": "For the alloy containing 30% metal B, determine from the diagram the ratio of the phases at 200 °C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "For the alloy containing 30% metal B, determine from the diagram the ratio of the phases at 200 °C.",
+    "marks": 3,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "figureKey": "engineering-2023-HL-scheme-q5bii-sol",
+  "questionFigureKey": "engineering-2023-HL-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-q5-c-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "cooling-curve-pure-metal-cooling-curve",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q5(c)(ii)",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Cooling curve for a pure metal and cooling curve for an alloy.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "When the temperature of a cooling molten metal alloy is plotted against time, a cooling curve is formed.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8 marks'.",
+  "figureKey": "engineering-2023-HL-scheme-q5cii-sol"
+ },
+ {
+  "id": "eng-2023-hl-q8-b-i",
+  "topicId": "eng-2-11",
+  "conceptId": "process-tapping-blind-hole-component-shown",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(b)(i)",
+  "questionText": "Explain the process of tapping the blind hole on the component shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The component is turned to size.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The component is drilled with the tapping hole size, ensure that the hole depth is measured using the lathe tailstock.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The hole is tapped while ensuring that the chips are periodically emptied during tapping. This ensures that the chips do not clog up the hole. A taper tap is used first with a plug tap used to finish the thread to the bottom of the blind hole.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'.",
+  "questionFigureKey": "engineering-2023-HL-paper-q8bi-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-q9-b-ii",
+  "topicId": "eng-2-15",
+  "conceptId": "force-acting-amusement-ride-shown",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(b)(ii)",
+  "questionText": "Name one force acting on the amusement ride shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Tension force in chair cables.",
+    "marks": 6,
+    "accepts": [
+     "Centripetal and centrifugal forces of chairs swinging in a circle.",
+     "Gravity allows the ride to return to the ground."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '6 marks'.",
+  "questionFigureKey": "engineering-2023-HL-paper-q9bii-crop",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2023-ol-q1-a",
