@@ -18,6 +18,9 @@ A module holds:
          -paper-q<part>-art, the name eng_all reads for a part's own picture;
          scheme crops that ARE the answer are -scheme-q<part>-sol and solution.
   CARDS  [dict(key=(q, letter, roman), why=..., ...lib.card arguments...)]
+  REPRICE {card id: (marks, printed)} -- an automatic card priced as one
+         question total whose scheme prints the split ("Award 3 + 3"): each row
+         takes its own marks, nothing else about the card changes.
   FOLDED {card id: why} -- an automatic card for ONE option of a printed list
          ("Explain any three of the following: ... (iv) Feed."), which the
          module's card for the list's letter carries instead.
@@ -78,6 +81,27 @@ def build(A, year, level, built, figure_keys, topic_for_part, keeps_stem,
             raise SystemExit(f'eng_residue {year} {level} {cid}: already {topic}; '
                              f'the TOPICS entry is stale')
         hit[0]['topicId'] = topic
+    # A part the scheme prices half and half ("Award 3 + 3 Marks", "Name Award
+    # 3 Marks / Use Award 3 Marks") that the automatic author read from the
+    # marks grid as one question total ("6 marks"), so neither half could be
+    # claimed alone. The rows are the author's own, already traced; only their
+    # prices change, to the ones printed beside them, and the id stays.
+    for cid, (marks, printed) in getattr(mod, 'REPRICE', {}).items():
+        hit = [c for c in A.cards if c['id'] == cid]
+        if not hit or not printed:
+            raise SystemExit(f'eng_residue {year} {level} {cid}: REPRICE entry for a '
+                             f'card the author does not build, or with no printed split')
+        card = hit[0]
+        if card['tariffModel'].get('kind') != 'questionTotal':
+            raise SystemExit(f'eng_residue {year} {level} {cid}: already priced per row; '
+                             f'the REPRICE entry is stale')
+        if len(card['rows']) != len(marks) or sum(marks) != card['totalMarks']:
+            raise SystemExit(f'eng_residue {year} {level} {cid}: {len(card["rows"])} rows '
+                             f'and {card["totalMarks"]} marks do not take {marks}')
+        card['tariffModel'] = {'kind': 'fixed'}
+        for row, m in zip(card['rows'], marks):
+            row['kind'], row['marks'] = 'point', m
+        card['notes'] = f"The scheme prints '{printed}'."
     # An option of a printed list the automatic author carded on its own,
     # because the reader priced that roman and refused its siblings. The
     # printed choice is ONE card, at the letter, so the option's card is

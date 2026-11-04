@@ -351,6 +351,18 @@ CARDS = [
          figure='engineering-2024-OL-scheme-q7cii-sol', notes=_OR7),
 ]
 
+# Question 1 parts the scheme prices half and half, which the automatic author
+# read from the marks grid as one six-mark total; each row now carries the
+# half printed beside it (eng_residue REPRICE). Opened on the scheme page named.
+REPRICE = {
+    'eng-2024-ol-q1-a': ([3, 3], 'Identification: Award 3, Application: Award 3'),  # scheme p7
+    'eng-2024-ol-q1-e': ([3, 3], 'Precautions: (Award 3 + 3)'),  # scheme p7
+    'eng-2024-ol-q1-f': ([3, 3], 'Explanation: Award 3, Example: Award 3'),  # scheme p7
+    'eng-2024-ol-q1-g': ([3, 3], 'Properties: (Award 3+3)'),  # scheme p7
+    'eng-2024-ol-q1-i': ([3, 3], 'Explanation: Award 3 Marks, Example: Award 3 Marks'),  # scheme p8
+    'eng-2024-ol-q1-l': ([3, 3], 'Definition: Award 3 Marks, Name: Award 3 Marks'),  # scheme p10
+}
+
 TOPICS = {
     'eng-2024-ol-q4-d': ('eng-2-10', 'safety when soldering copper pipes is soldering, '
                          'joining; "copper" outvoted it'),

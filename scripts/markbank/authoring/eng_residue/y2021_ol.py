@@ -327,6 +327,15 @@ CARDS = [
 ]
 
 # Cards the automatic author files under the wrong syllabus heading.
+# Question 1 parts the scheme prices half and half, which the automatic author
+# read from the marks grid as one six-mark total; each row now carries the
+# half printed beside it (eng_residue REPRICE). Opened on the scheme page named.
+REPRICE = {
+    'eng-2021-ol-q1-a': ([3, 3], '4 (3) + 3 Marks'),  # scheme p4
+    'eng-2021-ol-q1-d': ([3, 3], '4 (3) + 3 Marks'),  # scheme p4
+    'eng-2021-ol-q1-k': ([3, 3], 'Definition Award 4 (3), Name Award 3'),  # scheme p7
+}
+
 TOPICS = {
     'eng-2021-ol-q4-c-iii': ('eng-2-10', 'joining light gauge sheet aluminium (a pop '
                              'rivet) is joining; "aluminium" outvoted it'),
