@@ -259,9 +259,7 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
      3,
      4
     ],
-    "directions": [
-     "Note that the question is looking for the achievements of the First Programme for National Expansion."
-    ]
+    "directions": []
    }
   },
   {
@@ -294,7 +292,9 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
      3,
      4
     ],
-    "directions": []
+    "directions": [
+     "Note that the question is looking for the achievements of the First Programme for National Expansion."
+    ]
    }
   },
   {
@@ -2789,6 +2789,1834 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s1-q1a", topicId: "hist-em-irl-1", conceptId: "where-does-poet-sit",
+    section: "1", questionRef: "2018 OL Early Modern Section 1 Q1(a)",
+    stem: "Case study: The Bardic Schools",
+    questionText: "In document A, where does the poet sit?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "With the chieftain/ his patron", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s1-q1b", topicId: "hist-em-irl-1", conceptId: "does-reciter",
+    section: "1", questionRef: "2018 OL Early Modern Section 1 Q1(b)",
+    stem: "Case study: The Bardic Schools",
+    questionText: "According to document A, what does the reciter do?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He recites/ speaks the poem", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s1-q1c", topicId: "hist-em-irl-1", conceptId: "type-music-provided",
+    section: "1", questionRef: "2018 OL Early Modern Section 1 Q1(c)",
+    stem: "Case study: The Bardic Schools",
+    questionText: "In document A, what type of music is provided?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Harp music", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s1-q1d", topicId: "hist-em-irl-1", conceptId: "did-poets-demand-payment",
+    section: "1", questionRef: "2018 OL Early Modern Section 1 Q1(d)",
+    stem: "Case study: The Bardic Schools",
+    questionText: "In document B, what did the poets demand as payment?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cattle, horses, clothing and precious metal", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s1-q1e", topicId: "hist-em-irl-1", conceptId: "did-leinster-poet-receive",
+    section: "1", questionRef: "2018 OL Early Modern Section 1 Q1(e)",
+    stem: "Case study: The Bardic Schools",
+    questionText: "In document B, what did the Leinster poet receive?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A brood mare (for each verse of a poem)", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s1-q2a", topicId: "hist-em-irl-1", conceptId: "tell-bards-offer-patrons-reasons",
+    section: "1", questionRef: "2018 OL Early Modern Section 1 Q2(a)",
+    stem: "Case study: The Bardic Schools",
+    questionText: "What do both documents tell about what the bards offer their patrons? Give reasons for your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "As can be seen in document A, the bards offer their patrons a service where they compose verses in praise of the chieftain’s family and they would sit next to the chieftain in a further demonstration of loyalty at an event where the verses were performed by the bard’s reciter accompanied by harp music", marks: null },
+    { id: "r-2", kind: "point", verbatim: "A bard’s output of verse depended greatly on the support of the chieftain", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Therefore, as mentioned in document B, their work was for the most part in lavish praise of the chieftain and his family or lamenting the death of someone close to the chieftain.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s1-q2b", topicId: "hist-em-irl-1", conceptId: "show-poets-lived-well-reasons",
+    section: "1", questionRef: "2018 OL Early Modern Section 1 Q2(b)",
+    stem: "Case study: The Bardic Schools",
+    questionText: "Do both documents show that the poets lived well? Give reasons for your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Both documents show that the bards lived what might nowadays be called a “celebrity lifestyle”", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Document A states that at the event where his latest poem is performed the bard gets to sit next to the chieftain, the prime position at the top table", marks: null },
+    { id: "r-3", kind: "point", verbatim: "He is then rewarded for his latest composition with a horse and harness and several possible precious stones or metal", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Document B states that the bards usually demanded and obtained substantial payments", marks: null },
+    { id: "r-5", kind: "point", verbatim: "It seems like they got whatever they wanted and so they lived very well", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Cattle, horses, clothing and precious metal are listed as their rewards for boosting the chieftain’s ego, with an example given of one poet who got a brood mare for each verse written.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s1-q3a", topicId: "hist-em-irl-1", conceptId: "does-tell-bardic-poem-presented",
+    section: "1", questionRef: "2018 OL Early Modern Section 1 Q3(a)",
+    stem: "Case study: The Bardic Schools",
+    questionText: "What does document A tell us about how a Bardic poem was presented?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A describes very simply how the bar’s latest poem was performed", marks: null },
+    { id: "r-2", kind: "point", verbatim: "It seems to have been done in a simple and direct manner", marks: null },
+    { id: "r-3", kind: "point", verbatim: "The composer sat next to the chieftain while the reciter recited the verses with a background of harp music to complement but not distract", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Afterwards the bard was well rewarded for his trouble.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s1-q3b", topicId: "hist-em-irl-1", conceptId: "primary-source-secondary-source-reason",
+    section: "1", questionRef: "2018 OL Early Modern Section 1 Q3(b)",
+    stem: "Case study: The Bardic Schools",
+    questionText: "Is document B a primary source or a secondary source? Give a reason for your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document B is a secondary source, not a primary source", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The bold heading above the text describes it as a “recent comment” on bardic poetry", marks: null },
+    { id: "r-3", kind: "point", verbatim: "If it were written by a bard or someone who was a first-hand observer during the bardic period, then it would be a primary source, but it certainly is not tat", marks: null },
+    { id: "r-4", kind: "point", verbatim: "The text is cited beneath as a comment from P.A. Breathnach in The Encyclopedia of Ireland which was published just fifteen years ago", marks: null },
+    { id: "r-5", kind: "point", verbatim: "It is a twenty-first century comment on bardic poetry.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s1-q4", topicId: "hist-em-irl-1", conceptId: "training-provided-bardic-schools",
+    section: "1", questionRef: "2018 OL Early Modern Section 1 Q4",
+    stem: "Case study: The Bardic Schools",
+    questionText: "What training was provided by the Bardic Schools?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [18] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t2a-q1", topicId: "hist-em-irl-2", conceptId: "age-group-did-neill-sons-belong",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 2 A Q1",
+    stem: "In this edited extract from his journal the Elizabethan commentator, Sir John Harington, describes the household of Hugh O’Neill in 1599. Read it and answer the questions which follow.\n\nHis two sons, their age between 13 and 15, wore English clothes: velvet jerkins and gold lace like a nobleman’s sons. Both of them are learning English.\nWe ate with O’Neill outdoors, and he was very merry.\nHis guards were for the most part boys, who in frosty weather, wade through rivers like water spaniels.",
+    questionText: "To what age group did O’Neill’s sons belong?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "13-15 years", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t2a-q2", topicId: "hist-em-irl-2", conceptId: "did-neill-sons-look-like-sons",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 2 A Q2",
+    stem: "In this edited extract from his journal the Elizabethan commentator, Sir John Harington, describes the household of Hugh O’Neill in 1599. Read it and answer the questions which follow.\n\nHis two sons, their age between 13 and 15, wore English clothes: velvet jerkins and gold lace like a nobleman’s sons. Both of them are learning English.\nWe ate with O’Neill outdoors, and he was very merry.\nHis guards were for the most part boys, who in frosty weather, wade through rivers like water spaniels.",
+    questionText: "How did O’Neill’s sons look like the sons of a nobleman?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They wore English clothes (such as velvet and lace)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t2a-q3", topicId: "hist-em-irl-2", conceptId: "where-did-meal-take-place",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 2 A Q3",
+    stem: "In this edited extract from his journal the Elizabethan commentator, Sir John Harington, describes the household of Hugh O’Neill in 1599. Read it and answer the questions which follow.\n\nHis two sons, their age between 13 and 15, wore English clothes: velvet jerkins and gold lace like a nobleman’s sons. Both of them are learning English.\nWe ate with O’Neill outdoors, and he was very merry.\nHis guards were for the most part boys, who in frosty weather, wade through rivers like water spaniels.",
+    questionText: "Where did the meal take place?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Outdoors", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t2a-q4", topicId: "hist-em-irl-2", conceptId: "shown-those-who-guarded-neill-sturdy",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 2 A Q4",
+    stem: "In this edited extract from his journal the Elizabethan commentator, Sir John Harington, describes the household of Hugh O’Neill in 1599. Read it and answer the questions which follow.\n\nHis two sons, their age between 13 and 15, wore English clothes: velvet jerkins and gold lace like a nobleman’s sons. Both of them are learning English.\nWe ate with O’Neill outdoors, and he was very merry.\nHis guards were for the most part boys, who in frosty weather, wade through rivers like water spaniels.",
+    questionText: "How is it shown that those who guarded O’Neill were sturdy and fit?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because even in frosty weather they could wade through rivers (like water spaniels)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t2a-q5", topicId: "hist-em-irl-2", conceptId: "hugh-neill-defeated-nine-years-war",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 2 A Q5",
+    stem: "In this edited extract from his journal the Elizabethan commentator, Sir John Harington, describes the household of Hugh O’Neill in 1599. Read it and answer the questions which follow.\n\nHis two sons, their age between 13 and 15, wore English clothes: velvet jerkins and gold lace like a nobleman’s sons. Both of them are learning English.\nWe ate with O’Neill outdoors, and he was very merry.\nHis guards were for the most part boys, who in frosty weather, wade through rivers like water spaniels.",
+    questionText: "Briefly, why was Hugh O’Neill defeated in the Nine Years’ War?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason why O’Neill lost the Nine Years’ War", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t2b", topicId: "hist-em-irl-2", conceptId: "agnes-campbell-grace-malley-pale-burden",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 2 B",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
+    questionText: "Write a short paragraph on one of the following:\n1. Agnes Campbell.\n2. Grace O’Malley.\n3. The Pale and the burden of the army.\n4. The university question.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [18,19,20] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t2c", topicId: "hist-em-irl-2", conceptId: "notable-developments-took-place-elizabethan-dublin",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 2 C",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
+    questionText: "Answer one of the following:\n1. What notable developments took place in Elizabethan Dublin?\n2. What part did Shane O’Neill play in Irish affairs?\n3. Why did James Fitzmaurice Fitzgerald lead a revolt in Munster?\n4. What did you find interesting or unusual about the clerical career of Meiler McGrath?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [18,19,20] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t3a-q1", topicId: "hist-em-irl-3", conceptId: "religious-order-administered-irish-college-louvain",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 3 A Q1",
+    stem: "This edited extract refers to Louvain. Read it and answer the questions which follow.\n\nLouvain, Flanders, was the site of an Irish Franciscan house, St. Anthony’s, founded in 1606‐1607 by Flaithrí Ó Maolchonaire. It generally housed between thirty and forty friars and sent missionaries to Ireland and Scotland.\nThe college gained a wide reputation for learning and became the centre of printing in Irish. The press produced a stream of religious, historical and other works which were strongly anti‐ Protestant.\nThe college was closely involved in a number of plans for a Spanish‐financed invasion of Ireland.",
+    questionText: "What religious order administered the Irish college in Louvain?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Franciscans", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t3a-q2", topicId: "hist-em-irl-3", conceptId: "where-did-college-send-friars-missionaries",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 3 A Q2",
+    stem: "This edited extract refers to Louvain. Read it and answer the questions which follow.\n\nLouvain, Flanders, was the site of an Irish Franciscan house, St. Anthony’s, founded in 1606‐1607 by Flaithrí Ó Maolchonaire. It generally housed between thirty and forty friars and sent missionaries to Ireland and Scotland.\nThe college gained a wide reputation for learning and became the centre of printing in Irish. The press produced a stream of religious, historical and other works which were strongly anti‐ Protestant.\nThe college was closely involved in a number of plans for a Spanish‐financed invasion of Ireland.",
+    questionText: "To where did the college send friars as missionaries?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ireland", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Scotland", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t3a-q3", topicId: "hist-em-irl-3", conceptId: "college-major-centre-activity",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 3 A Q3",
+    stem: "This edited extract refers to Louvain. Read it and answer the questions which follow.\n\nLouvain, Flanders, was the site of an Irish Franciscan house, St. Anthony’s, founded in 1606‐1607 by Flaithrí Ó Maolchonaire. It generally housed between thirty and forty friars and sent missionaries to Ireland and Scotland.\nThe college gained a wide reputation for learning and became the centre of printing in Irish. The press produced a stream of religious, historical and other works which were strongly anti‐ Protestant.\nThe college was closely involved in a number of plans for a Spanish‐financed invasion of Ireland.",
+    questionText: "The college was a major centre for what activity?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Learning/ Printing", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t3a-q4", topicId: "hist-em-irl-3", conceptId: "college-involved-irish-politics",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 3 A Q4",
+    stem: "This edited extract refers to Louvain. Read it and answer the questions which follow.\n\nLouvain, Flanders, was the site of an Irish Franciscan house, St. Anthony’s, founded in 1606‐1607 by Flaithrí Ó Maolchonaire. It generally housed between thirty and forty friars and sent missionaries to Ireland and Scotland.\nThe college gained a wide reputation for learning and became the centre of printing in Irish. The press produced a stream of religious, historical and other works which were strongly anti‐ Protestant.\nThe college was closely involved in a number of plans for a Spanish‐financed invasion of Ireland.",
+    questionText: "How was the college involved in Irish politics?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Involvement in plans for a Spanish invasion of Ireland", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t3a-q5", topicId: "hist-em-irl-3", conceptId: "purpose-irish-colleges-founded-continental-europe",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 3 A Q5",
+    stem: "This edited extract refers to Louvain. Read it and answer the questions which follow.\n\nLouvain, Flanders, was the site of an Irish Franciscan house, St. Anthony’s, founded in 1606‐1607 by Flaithrí Ó Maolchonaire. It generally housed between thirty and forty friars and sent missionaries to Ireland and Scotland.\nThe college gained a wide reputation for learning and became the centre of printing in Irish. The press produced a stream of religious, historical and other works which were strongly anti‐ Protestant.\nThe college was closely involved in a number of plans for a Spanish‐financed invasion of Ireland.",
+    questionText: "For what purpose were Irish colleges founded in continental Europe in the seventeenth century?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid purpose for the founding of Irish colleges abroad", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t3b", topicId: "hist-em-irl-3", conceptId: "sir-arthur-chichester-elizabeth-butler-countess",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 3 B",
+    stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
+    questionText: "Write a short paragraph on one of the following:\n1. Sir Arthur Chichester.\n2. Elizabeth Butler, Countess of Ormond.\n3. The Four Masters.\n4. The depositions of 1641.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [18,19,20] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t3c", topicId: "hist-em-irl-3", conceptId: "successful-ireland-military-campaigns-owen-roe",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 3 C",
+    stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
+    questionText: "Answer one of the following:\n1. How successful in Ireland were the military campaigns of Owen Roe O’Neill?\n2. How did Sir Thomas Wentworth (Earl of Strafford) make enemies in Ireland and how did they contribute to his downfall?\n3. What were the main events of Cromwell’s campaign in Ireland?\n4. What was the importance of Piaras Feiritéar and/or of Luke Wadding?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [18,19,20] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t4a-q1", topicId: "hist-em-irl-4", conceptId: "condition-dublin-castle",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 4 A Q1",
+    stem: "This edited extract refers to the 1st Duke of Ormond and to Restoration Dublin. Read it and answer the questions which follow.\n\nJames Butler, 1st Duke of Ormond, spent lavishly, not only to prop up the rundown Dublin Castle, but also to turn his house in Kilkenny into a residence fit for a Lord Lieutenant.\nHe bought tapestries, mirrors, silver and brass sconces (candle holders) and upholstered furniture.\nWhen he entered Dublin in 1662, he was accompanied by sheriffs, a peal of ordnance (cannon) and fireworks.\nThe Royal Hospital at Kilmainham was built for former soldiers. A public theatre was situated at Smock Alley.",
+    questionText: "In what condition was Dublin Castle?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It was run down", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t4a-q2", topicId: "hist-em-irl-4", conceptId: "mention-luxury-goods-bought-james-butler",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 4 A Q2",
+    stem: "This edited extract refers to the 1st Duke of Ormond and to Restoration Dublin. Read it and answer the questions which follow.\n\nJames Butler, 1st Duke of Ormond, spent lavishly, not only to prop up the rundown Dublin Castle, but also to turn his house in Kilkenny into a residence fit for a Lord Lieutenant.\nHe bought tapestries, mirrors, silver and brass sconces (candle holders) and upholstered furniture.\nWhen he entered Dublin in 1662, he was accompanied by sheriffs, a peal of ordnance (cannon) and fireworks.\nThe Royal Hospital at Kilmainham was built for former soldiers. A public theatre was situated at Smock Alley.",
+    questionText: "Mention two luxury goods bought by James Butler.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tapestries/ Mirrors/ Candle holders/ Upholstered furniture", marks: 6, contextNote: "Any TWO @ 3M each" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t4a-q3", topicId: "hist-em-irl-4", conceptId: "butler-entry-into-dublin-1662-marked",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 4 A Q3",
+    stem: "This edited extract refers to the 1st Duke of Ormond and to Restoration Dublin. Read it and answer the questions which follow.\n\nJames Butler, 1st Duke of Ormond, spent lavishly, not only to prop up the rundown Dublin Castle, but also to turn his house in Kilkenny into a residence fit for a Lord Lieutenant.\nHe bought tapestries, mirrors, silver and brass sconces (candle holders) and upholstered furniture.\nWhen he entered Dublin in 1662, he was accompanied by sheriffs, a peal of ordnance (cannon) and fireworks.\nThe Royal Hospital at Kilmainham was built for former soldiers. A public theatre was situated at Smock Alley.",
+    questionText: "How was Butler’s entry into Dublin, in 1662, marked?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A peal of ordnance", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "fireworks", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t4a-q4", topicId: "hist-em-irl-4", conceptId: "purpose-royal-hospital-kilmainham-built",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 4 A Q4",
+    stem: "This edited extract refers to the 1st Duke of Ormond and to Restoration Dublin. Read it and answer the questions which follow.\n\nJames Butler, 1st Duke of Ormond, spent lavishly, not only to prop up the rundown Dublin Castle, but also to turn his house in Kilkenny into a residence fit for a Lord Lieutenant.\nHe bought tapestries, mirrors, silver and brass sconces (candle holders) and upholstered furniture.\nWhen he entered Dublin in 1662, he was accompanied by sheriffs, a peal of ordnance (cannon) and fireworks.\nThe Royal Hospital at Kilmainham was built for former soldiers. A public theatre was situated at Smock Alley.",
+    questionText: "For what purpose was the Royal Hospital, Kilmainham, built?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To keep former soldiers", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t4a-q5", topicId: "hist-em-irl-4", conceptId: "public-office-held-james-butler-1st",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 4 A Q5",
+    stem: "This edited extract refers to the 1st Duke of Ormond and to Restoration Dublin. Read it and answer the questions which follow.\n\nJames Butler, 1st Duke of Ormond, spent lavishly, not only to prop up the rundown Dublin Castle, but also to turn his house in Kilkenny into a residence fit for a Lord Lieutenant.\nHe bought tapestries, mirrors, silver and brass sconces (candle holders) and upholstered furniture.\nWhen he entered Dublin in 1662, he was accompanied by sheriffs, a peal of ordnance (cannon) and fireworks.\nThe Royal Hospital at Kilmainham was built for former soldiers. A public theatre was situated at Smock Alley.",
+    questionText: "What public office was held by James Butler, 1st Duke of Ormond?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lord Lieutenant of Ireland", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t4b", topicId: "hist-em-irl-4", conceptId: "oliver-plunkett-parliament-1689-samuel-louis",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 4 B",
+    stem: "Establishing a colonial ascendancy, 1660‐1715",
+    questionText: "Write a short paragraph on one of the following:\n1. Oliver Plunkett.\n2. The Parliament of 1689.\n3. Samuel Louis Crommelin.\n4. Tories and Rapparees.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [18,19,20] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t4c", topicId: "hist-em-irl-4", conceptId: "policies-charles-unpopular-ireland-part-did",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 4 C",
+    stem: "Establishing a colonial ascendancy, 1660‐1715",
+    questionText: "Answer one of the following:\n1. Why were the policies of Charles II unpopular in Ireland?\n2. What part did Richard Talbot, Earl of Tyrconnell, play in Irish affairs?\n3. What were the concerns of the Jacobite poets and why did the Gaelic bardic system come to an end?\n4. What was the contribution to Irish affairs of Robert Boyle and/or of William Molyneux?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [18,19,20] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t5a-q1", topicId: "hist-em-irl-5", conceptId: "purpose-did-whiteboys-assemble",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 5 A Q1",
+    stem: "This edited extract relates to Whiteboy activity in Co. Tipperary. Read it and answer the questions which follow.\n\nWe, avengers of the wrongs done to the poor, assembled to raze (destroy) walls and ditches that have been made to enclose commons.\nAs to the killing of cattle, it was intended to awe (frighten) stock‐jobbers into conceding the just demands of poor people.",
+    questionText: "For what purpose did the Whiteboys assemble?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To avenge the wrongs done to the poor/ To destroy walls and ditches", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t5a-q2", topicId: "hist-em-irl-5", conceptId: "walls-ditches-made",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 5 A Q2",
+    stem: "This edited extract relates to Whiteboy activity in Co. Tipperary. Read it and answer the questions which follow.\n\nWe, avengers of the wrongs done to the poor, assembled to raze (destroy) walls and ditches that have been made to enclose commons.\nAs to the killing of cattle, it was intended to awe (frighten) stock‐jobbers into conceding the just demands of poor people.",
+    questionText: "Why had the walls and ditches been made?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Enclosure/ To enclose the commons", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t5a-q3", topicId: "hist-em-irl-5", conceptId: "purpose-killing-cattle",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 5 A Q3",
+    stem: "This edited extract relates to Whiteboy activity in Co. Tipperary. Read it and answer the questions which follow.\n\nWe, avengers of the wrongs done to the poor, assembled to raze (destroy) walls and ditches that have been made to enclose commons.\nAs to the killing of cattle, it was intended to awe (frighten) stock‐jobbers into conceding the just demands of poor people.",
+    questionText: "What was the purpose of killing cattle?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To frighten stock-jobbers (into conceding the demands of the poor)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t5a-q4", topicId: "hist-em-irl-5", conceptId: "whiteboys-defending-opposing-poor-reason",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 5 A Q4",
+    stem: "This edited extract relates to Whiteboy activity in Co. Tipperary. Read it and answer the questions which follow.\n\nWe, avengers of the wrongs done to the poor, assembled to raze (destroy) walls and ditches that have been made to enclose commons.\nAs to the killing of cattle, it was intended to awe (frighten) stock‐jobbers into conceding the just demands of poor people.",
+    questionText: "Were the Whiteboys defending or opposing the poor? Give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Defending. Because they say the are “avengers of the wrongs done to the poor”/ They wish to restore access of the poor to the commons/ They tried to frighten stock-jobbers into making concessions to the poor", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t5a-q5", topicId: "hist-em-irl-5", conceptId: "there-much-agrarian-unrest-ireland-during",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 5 A Q5",
+    stem: "This edited extract relates to Whiteboy activity in Co. Tipperary. Read it and answer the questions which follow.\n\nWe, avengers of the wrongs done to the poor, assembled to raze (destroy) walls and ditches that have been made to enclose commons.\nAs to the killing of cattle, it was intended to awe (frighten) stock‐jobbers into conceding the just demands of poor people.",
+    questionText: "Why was there much agrarian unrest in Ireland during the period 1715‐1770?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason why so much agrarian unrest at the time", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t5b", topicId: "hist-em-irl-5", conceptId: "rise-dublin-theatre-planned-towns-villages",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 5 B",
+    stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
+    questionText: "Write a short paragraph on one of the following:\n1. The rise of the Dublin theatre.\n2. Planned towns and villages.\n3. Expansion of the provisions trade.\n4. Na Cúirteanna Filíochta.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [18,19,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t5c", topicId: "hist-em-irl-5", conceptId: "who-ponsonbys-powerful-evidence-did-prosecution",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 5 C",
+    stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
+    questionText: "Answer one of the following:\n1. Who were the Ponsonbys and why were they powerful?\n2. What evidence did the prosecution put forward at the trial of Fr. Nicholas Sheehy?\n3. What part did Charles O’Conor and/or Thomas Wyse play in improving the position of Catholics?\n4. In what ways did Dean Swift contribute to Irish affairs?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [18,19,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t6a-q1", topicId: "hist-em-irl-6", conceptId: "style-parliament-house-built",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 6 A Q1",
+    stem: "This edited extract refers to the Irish Parliament House, College Green, Dublin. Read it and answer the questions which follow.\n\nThe Irish Parliament House, College Green, Dublin was built in the Italian style with a facade (front) of Ionic columns to which, in 1785, James Gandon added the impressive portico (porch) of the House of Lords.\nIn 1776 Arthur Young commented that ‘the apartments are spacious, elegant and convenient.’\nSome years later John Wesley added: ‘but what surprised me above all were the kitchens and the arrangements for good eating. Tables were placed from one end of a large hall to the other which, it seems, are daily covered with meat at four or five o’clock, for the convenience of the members of parliament.’",
+    questionText: "In what style was the Parliament House built?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Italian style", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t6a-q2", topicId: "hist-em-irl-6", conceptId: "did-james-gandon-add-building",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 6 A Q2",
+    stem: "This edited extract refers to the Irish Parliament House, College Green, Dublin. Read it and answer the questions which follow.\n\nThe Irish Parliament House, College Green, Dublin was built in the Italian style with a facade (front) of Ionic columns to which, in 1785, James Gandon added the impressive portico (porch) of the House of Lords.\nIn 1776 Arthur Young commented that ‘the apartments are spacious, elegant and convenient.’\nSome years later John Wesley added: ‘but what surprised me above all were the kitchens and the arrangements for good eating. Tables were placed from one end of a large hall to the other which, it seems, are daily covered with meat at four or five o’clock, for the convenience of the members of parliament.’",
+    questionText: "What did James Gandon add to the building?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The portico of the House of Lords", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t6a-q3", topicId: "hist-em-irl-6", conceptId: "did-arthur-young-praise-building",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 6 A Q3",
+    stem: "This edited extract refers to the Irish Parliament House, College Green, Dublin. Read it and answer the questions which follow.\n\nThe Irish Parliament House, College Green, Dublin was built in the Italian style with a facade (front) of Ionic columns to which, in 1785, James Gandon added the impressive portico (porch) of the House of Lords.\nIn 1776 Arthur Young commented that ‘the apartments are spacious, elegant and convenient.’\nSome years later John Wesley added: ‘but what surprised me above all were the kitchens and the arrangements for good eating. Tables were placed from one end of a large hall to the other which, it seems, are daily covered with meat at four or five o’clock, for the convenience of the members of parliament.’",
+    questionText: "How did Arthur Young praise the building?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He said the apartments were “spacious, elegant and convenient”.", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t6a-q4", topicId: "hist-em-irl-6", conceptId: "surprised-john-wesley",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 6 A Q4",
+    stem: "This edited extract refers to the Irish Parliament House, College Green, Dublin. Read it and answer the questions which follow.\n\nThe Irish Parliament House, College Green, Dublin was built in the Italian style with a facade (front) of Ionic columns to which, in 1785, James Gandon added the impressive portico (porch) of the House of Lords.\nIn 1776 Arthur Young commented that ‘the apartments are spacious, elegant and convenient.’\nSome years later John Wesley added: ‘but what surprised me above all were the kitchens and the arrangements for good eating. Tables were placed from one end of a large hall to the other which, it seems, are daily covered with meat at four or five o’clock, for the convenience of the members of parliament.’",
+    questionText: "What surprised John Wesley?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He was surprised by the kitchens and the daily arrangements for feeding the MPs", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t6a-q5", topicId: "hist-em-irl-6", conceptId: "apart-irish-parliament-house-example-georgian",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 6 A Q5",
+    stem: "This edited extract refers to the Irish Parliament House, College Green, Dublin. Read it and answer the questions which follow.\n\nThe Irish Parliament House, College Green, Dublin was built in the Italian style with a facade (front) of Ionic columns to which, in 1785, James Gandon added the impressive portico (porch) of the House of Lords.\nIn 1776 Arthur Young commented that ‘the apartments are spacious, elegant and convenient.’\nSome years later John Wesley added: ‘but what surprised me above all were the kitchens and the arrangements for good eating. Tables were placed from one end of a large hall to the other which, it seems, are daily covered with meat at four or five o’clock, for the convenience of the members of parliament.’",
+    questionText: "Apart from the Irish Parliament House, give one example of Georgian culture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid example of Georgian culture other than Parliament House", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t6b", topicId: "hist-em-irl-6", conceptId: "henry-grattan-orange-order-mary-anne",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 6 B",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
+    questionText: "Write a short paragraph on one of the following:\n1. Henry Grattan.\n2. The Orange Order.\n3. Mary Anne McCracken.\n4. Gaelic culture: literature and learning.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [18,19,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s2t6c", topicId: "hist-em-irl-6", conceptId: "factors-contributed-rise-belfast-main-events",
+    section: "2", questionRef: "2018 OL Early Modern Section 2 Topic 6 C",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
+    questionText: "Answer one of the following:\n1. What factors contributed to the rise of Belfast?\n2. What main events took place during the Wexford Rebellion?\n3. How important was the establishment of Maynooth College?\n4. What did you find interesting about Eibhlín Dhubh Ní Chonaill and/or Nano Nagle?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [18,19,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t1a-q1", topicId: "hist-em-eur-1", conceptId: "group-expected-enforce-rules",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 1 A Q1",
+    stem: "The following are rules that innkeepers were expected to enforce in Calvin’s Geneva. Read them and answer the questions which follow.\n\n• If anyone takes the name of God (swears) he shall be punished.\n• The innkeeper shall not allow dancing, dice or cards.\n• The innkeeper shall not allow indecent songs.\n• No one shall be allowed to sit up after nine o’clock.",
+    questionText: "What group is expected to enforce the rules?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The innkeepers", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t1a-q2", topicId: "hist-em-eur-1", conceptId: "happen-those-who-swore",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 1 A Q2",
+    stem: "The following are rules that innkeepers were expected to enforce in Calvin’s Geneva. Read them and answer the questions which follow.\n\n• If anyone takes the name of God (swears) he shall be punished.\n• The innkeeper shall not allow dancing, dice or cards.\n• The innkeeper shall not allow indecent songs.\n• No one shall be allowed to sit up after nine o’clock.",
+    questionText: "What was to happen to those who swore?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They are to be punished", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t1a-q3", topicId: "hist-em-eur-1", conceptId: "gambling-allowed-reason",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 1 A Q3",
+    stem: "The following are rules that innkeepers were expected to enforce in Calvin’s Geneva. Read them and answer the questions which follow.\n\n• If anyone takes the name of God (swears) he shall be punished.\n• The innkeeper shall not allow dancing, dice or cards.\n• The innkeeper shall not allow indecent songs.\n• No one shall be allowed to sit up after nine o’clock.",
+    questionText: "Was gambling allowed? Briefly, give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No. Dice or cards were not allowed", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t1a-q4", topicId: "hist-em-eur-1", conceptId: "light-rules-singing-completely-forbidden",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 1 A Q4",
+    stem: "The following are rules that innkeepers were expected to enforce in Calvin’s Geneva. Read them and answer the questions which follow.\n\n• If anyone takes the name of God (swears) he shall be punished.\n• The innkeeper shall not allow dancing, dice or cards.\n• The innkeeper shall not allow indecent songs.\n• No one shall be allowed to sit up after nine o’clock.",
+    questionText: "In the light of the rules, was singing completely forbidden? Briefly, explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Not completely forbidden. Only indecent songs were banned.", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t1a-q5", topicId: "hist-em-eur-1", conceptId: "place-calvinism-spread-geneva",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 1 A Q5",
+    stem: "The following are rules that innkeepers were expected to enforce in Calvin’s Geneva. Read them and answer the questions which follow.\n\n• If anyone takes the name of God (swears) he shall be punished.\n• The innkeeper shall not allow dancing, dice or cards.\n• The innkeeper shall not allow indecent songs.\n• No one shall be allowed to sit up after nine o’clock.",
+    questionText: "Name one place to which Calvinism spread from Geneva.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE place to which Calvinism spread beyond Geneva", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t1b", topicId: "hist-em-eur-1", conceptId: "divorce-henry-viii-catherine-aragon-pieter",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 1 B",
+    stem: "Europe from Renaissance to Reformation, 1492‐1567",
+    questionText: "Write a short paragraph on one of the following:\n1. The divorce of Henry VIII and Catherine of Aragon.\n2. Pieter Breughel the Elder.\n3. Jacob Fugger.\n4. The Counter‐Reformation.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [18,19,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t1c", topicId: "hist-em-eur-1", conceptId: "did-seville-become-port-new-world",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 1 C",
+    stem: "Europe from Renaissance to Reformation, 1492‐1567",
+    questionText: "Answer one of the following:\n1. How did Seville become the port of the New World?\n2. What were the achievements of Michelangelo Buonarroti?\n3. What part did Martin Luther play in the Reformation in Germany?\n4. What did you find interesting about Niccolὁ Machiavelli and/or Desiderius Erasmus?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [18,19,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t2a-q1", topicId: "hist-em-eur-2", conceptId: "ricci-sent-governor",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 2 A Q1",
+    stem: "In this edited extract Matteo Ricci describes difficulties experienced by himself and his followers in Zhaoqing. Read it and answer the questions which follow.\n\nOne year I was sent to the governor, accused of stealing children to send back to be sold in our land (Italy). But my accuser paid dearly for the false accusation, being whipped.\nMany times we were accused of being spies, not just by poor people but by the oldest sages (scholars) of Canton.\nOur house was attacked with volleys of stones, causing considerable damage to our property and persons.",
+    questionText: "Why was Ricci sent to the governor?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because he was accused of stealing children (to send back to Italy for sale)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t2a-q2", topicId: "hist-em-eur-2", conceptId: "ricci-accuser-punished",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 2 A Q2",
+    stem: "In this edited extract Matteo Ricci describes difficulties experienced by himself and his followers in Zhaoqing. Read it and answer the questions which follow.\n\nOne year I was sent to the governor, accused of stealing children to send back to be sold in our land (Italy). But my accuser paid dearly for the false accusation, being whipped.\nMany times we were accused of being spies, not just by poor people but by the oldest sages (scholars) of Canton.\nOur house was attacked with volleys of stones, causing considerable damage to our property and persons.",
+    questionText: "How was Ricci’s accuser punished?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He was whipped", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t2a-q3", topicId: "hist-em-eur-2", conceptId: "missionaries-house-attacked",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 2 A Q3",
+    stem: "In this edited extract Matteo Ricci describes difficulties experienced by himself and his followers in Zhaoqing. Read it and answer the questions which follow.\n\nOne year I was sent to the governor, accused of stealing children to send back to be sold in our land (Italy). But my accuser paid dearly for the false accusation, being whipped.\nMany times we were accused of being spies, not just by poor people but by the oldest sages (scholars) of Canton.\nOur house was attacked with volleys of stones, causing considerable damage to our property and persons.",
+    questionText: "How was the missionaries’ house attacked?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "With stones", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t2a-q4", topicId: "hist-em-eur-2", conceptId: "did-people-other-than-poor-suspect",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 2 A Q4",
+    stem: "In this edited extract Matteo Ricci describes difficulties experienced by himself and his followers in Zhaoqing. Read it and answer the questions which follow.\n\nOne year I was sent to the governor, accused of stealing children to send back to be sold in our land (Italy). But my accuser paid dearly for the false accusation, being whipped.\nMany times we were accused of being spies, not just by poor people but by the oldest sages (scholars) of Canton.\nOur house was attacked with volleys of stones, causing considerable damage to our property and persons.",
+    questionText: "Did people other than the poor suspect Ricci and his companions of being spies? Briefly explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Yes. Yes by the oldest sages of Canton", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t2a-q5", topicId: "hist-em-eur-2", conceptId: "religious-order-did-matteo-ricci-belong",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 2 A Q5",
+    stem: "In this edited extract Matteo Ricci describes difficulties experienced by himself and his followers in Zhaoqing. Read it and answer the questions which follow.\n\nOne year I was sent to the governor, accused of stealing children to send back to be sold in our land (Italy). But my accuser paid dearly for the false accusation, being whipped.\nMany times we were accused of being spies, not just by poor people but by the oldest sages (scholars) of Canton.\nOur house was attacked with volleys of stones, causing considerable damage to our property and persons.",
+    questionText: "To what religious order did Matteo Ricci belong?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Jesuits/ Society of Jesus", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t2b", topicId: "hist-em-eur-2", conceptId: "close-council-trent-jacobus-arminius-sir",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 2 B",
+    stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
+    questionText: "Write a short paragraph on one of the following:\n1. The close of the Council of Trent.\n2. Jacobus Arminius.\n3. Sir Walter Raleigh.\n4. The Revolt of the Netherlands.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [18,19,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t2c", topicId: "hist-em-eur-2", conceptId: "caused-decline-port-antwerp-successful-ruler",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 2 C",
+    stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
+    questionText: "Answer one of the following:\n1. What caused the decline of the port of Antwerp?\n2. How successful a ruler was Catherine de Medici?\n3. What was the purpose of the Spanish Armada and why did it fail in its objective?\n4. What did you find interesting about Tycho Brahe and/or Michel de Montaigne?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [18,19,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t3a-q1", topicId: "hist-em-eur-3", conceptId: "court-galileo-tried",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 3 A Q1",
+    stem: "This edited extract refers to Galileo and the Inquisition. Read it and answer the questions which follow.\n\nGalileo, the Italian astronomer and physicist, was tried by the Inquisition for supporting the Copernican theory that the planets orbit the sun.\nHis first trial in 1615‐1616 resulted in a condemnation which was deliberately mild.\nThe much harsher treatment of 1632‐1633 followed an act of intentional defiance by Galileo, the publication of the ‘Dialogue on the Two World Systems’ in which he mocked the opinions of Pope Urban VIII.",
+    questionText: "By what court was Galileo tried?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Inquisition", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t3a-q2", topicId: "hist-em-eur-3", conceptId: "theory-galileo-supported",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 3 A Q2",
+    stem: "This edited extract refers to Galileo and the Inquisition. Read it and answer the questions which follow.\n\nGalileo, the Italian astronomer and physicist, was tried by the Inquisition for supporting the Copernican theory that the planets orbit the sun.\nHis first trial in 1615‐1616 resulted in a condemnation which was deliberately mild.\nThe much harsher treatment of 1632‐1633 followed an act of intentional defiance by Galileo, the publication of the ‘Dialogue on the Two World Systems’ in which he mocked the opinions of Pope Urban VIII.",
+    questionText: "What theory had Galileo supported?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Theory that the planets orbit the sun/ Copernician theory", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t3a-q3", topicId: "hist-em-eur-3", conceptId: "galileo-treated-his-first-trial",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 3 A Q3",
+    stem: "This edited extract refers to Galileo and the Inquisition. Read it and answer the questions which follow.\n\nGalileo, the Italian astronomer and physicist, was tried by the Inquisition for supporting the Copernican theory that the planets orbit the sun.\nHis first trial in 1615‐1616 resulted in a condemnation which was deliberately mild.\nThe much harsher treatment of 1632‐1633 followed an act of intentional defiance by Galileo, the publication of the ‘Dialogue on the Two World Systems’ in which he mocked the opinions of Pope Urban VIII.",
+    questionText: "How was Galileo treated at his first trial?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He received a condemnation which was deliberately mild", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t3a-q4", topicId: "hist-em-eur-3", conceptId: "did-galileo-offend-pope",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 3 A Q4",
+    stem: "This edited extract refers to Galileo and the Inquisition. Read it and answer the questions which follow.\n\nGalileo, the Italian astronomer and physicist, was tried by the Inquisition for supporting the Copernican theory that the planets orbit the sun.\nHis first trial in 1615‐1616 resulted in a condemnation which was deliberately mild.\nThe much harsher treatment of 1632‐1633 followed an act of intentional defiance by Galileo, the publication of the ‘Dialogue on the Two World Systems’ in which he mocked the opinions of Pope Urban VIII.",
+    questionText: "According to the extract, how did Galileo offend the Pope?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By mocking the opinions of the Pope (Urban VIII)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t3a-q5", topicId: "hist-em-eur-3", conceptId: "mention-scientific-discovery-made-galileo",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 3 A Q5",
+    stem: "This edited extract refers to Galileo and the Inquisition. Read it and answer the questions which follow.\n\nGalileo, the Italian astronomer and physicist, was tried by the Inquisition for supporting the Copernican theory that the planets orbit the sun.\nHis first trial in 1615‐1616 resulted in a condemnation which was deliberately mild.\nThe much harsher treatment of 1632‐1633 followed an act of intentional defiance by Galileo, the publication of the ‘Dialogue on the Two World Systems’ in which he mocked the opinions of Pope Urban VIII.",
+    questionText: "Mention one scientific discovery made by Galileo.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid scientific discovery made by Galileo", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t3b", topicId: "hist-em-eur-3", conceptId: "revolt-catalans-constitutional-developments-england-witch",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 3 B",
+    stem: "The eclipse of Old Europe, 1609‐1660",
+    questionText: "Write a short paragraph on one of the following:\n1. The revolt of the Catalans.\n2. Constitutional developments in England.\n3. Witch‐hunting.\n4. Baroque art and/or music.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [18,19,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t3c", topicId: "hist-em-eur-3", conceptId: "did-growth-dutch-empire-asia-affect",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 3 C",
+    stem: "The eclipse of Old Europe, 1609‐1660",
+    questionText: "Answer one of the following:\n1. How did the growth of the Dutch empire in Asia affect the home country?\n2. How did Richelieu promote royal power in France?\n3. What part did Queen Christina play in the history of Sweden and/or of Europe?\n4. What did you find interesting about René Descartes or about Hugo Grotius?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [18,19,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t4a-q1", topicId: "hist-em-eur-4", conceptId: "mention-aspect-versailles-writer-finds-impressive",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 4 A Q1",
+    stem: "This edited extract refers to the court of Versailles. Read it and answer the questions which follow.\n\nThe magnificence of the Versailles gardens and the frequent entertainments are impressive.\nThe royal journeys provided the King with a way of honouring or punishing his courtiers, by naming those who were or were not to accompany him.\nThe hopes that courtiers built upon such flimsy favours and the importance they attached to them was really unbelievable.",
+    questionText: "Mention one aspect of Versailles that the writer finds impressive.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Magnificent gardens/ Frequent entertainments", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t4a-q2", topicId: "hist-em-eur-4", conceptId: "did-king-honour-members-his-court",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 4 A Q2",
+    stem: "This edited extract refers to the court of Versailles. Read it and answer the questions which follow.\n\nThe magnificence of the Versailles gardens and the frequent entertainments are impressive.\nThe royal journeys provided the King with a way of honouring or punishing his courtiers, by naming those who were or were not to accompany him.\nThe hopes that courtiers built upon such flimsy favours and the importance they attached to them was really unbelievable.",
+    questionText: "How did the King honour members of his court?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By naming those who were to accompany him on royal journeys", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t4a-q3", topicId: "hist-em-eur-4", conceptId: "did-king-punish-members-his-court",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 4 A Q3",
+    stem: "This edited extract refers to the court of Versailles. Read it and answer the questions which follow.\n\nThe magnificence of the Versailles gardens and the frequent entertainments are impressive.\nThe royal journeys provided the King with a way of honouring or punishing his courtiers, by naming those who were or were not to accompany him.\nThe hopes that courtiers built upon such flimsy favours and the importance they attached to them was really unbelievable.",
+    questionText: "How did the King punish members of his court?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By naming those who were not to accompany him on royal journeys", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t4a-q4", topicId: "hist-em-eur-4", conceptId: "does-writer-consider-courtiers-behaviour-reasonable",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 4 A Q4",
+    stem: "This edited extract refers to the court of Versailles. Read it and answer the questions which follow.\n\nThe magnificence of the Versailles gardens and the frequent entertainments are impressive.\nThe royal journeys provided the King with a way of honouring or punishing his courtiers, by naming those who were or were not to accompany him.\nThe hopes that courtiers built upon such flimsy favours and the importance they attached to them was really unbelievable.",
+    questionText: "Does the writer consider the courtiers’ behaviour reasonable? Give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No. It was not reasonable for the courtiers to attach such importance to something so trivial", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t4a-q5", topicId: "hist-em-eur-4", conceptId: "did-louis-xiv-large-numbers-his",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 4 A Q5",
+    stem: "This edited extract refers to the court of Versailles. Read it and answer the questions which follow.\n\nThe magnificence of the Versailles gardens and the frequent entertainments are impressive.\nThe royal journeys provided the King with a way of honouring or punishing his courtiers, by naming those who were or were not to accompany him.\nThe hopes that courtiers built upon such flimsy favours and the importance they attached to them was really unbelievable.",
+    questionText: "Why did Louis XIV have large numbers of his nobles at Versailles?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason why Louis XIV had so many nobles at Versailles", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t4b", topicId: "hist-em-eur-4", conceptId: "restoration-monarchy-england-john-sobieski-grand",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 4 B",
+    stem: "Europe in the age of Louis XIV, 1660‐1715",
+    questionText: "Write a short paragraph on one of the following:\n1. The restoration of the monarchy in England.\n2. John Sobieski.\n3. The Grand Tour.\n4. Developments in agriculture.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [18,19,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t4c", topicId: "hist-em-eur-4", conceptId: "did-louis-xiv-extend-frontiers-france",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 4 C",
+    stem: "Europe in the age of Louis XIV, 1660‐1715",
+    questionText: "Answer one of the following:\n1. How did Louis XIV extend the frontiers of France?\n2. What were the achievements of Peter the Great of Russia, at home and abroad?\n3. What were the aims of the (English) East India Company and what steps were taken to achieve these?\n4. What did Isaac Newton and/or Gottfried Leibnitz contribute to the advancement of science?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [18,19,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t5a-q1", topicId: "hist-em-eur-5", conceptId: "mention-farming-activity-taking-place-foreground",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 5 A Q1",
+    stem: "This illustration shows eighteenth‐century farm practices. Study it and answer the questions which follow.",
+    questionText: "Mention one farming activity taking place in the foreground of the illustration.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ploughing/ Sowing", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t5a-q2", topicId: "hist-em-eur-5", conceptId: "mention-farming-activity-taking-place-middleground",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 5 A Q2",
+    stem: "This illustration shows eighteenth‐century farm practices. Study it and answer the questions which follow.",
+    questionText: "Mention one farming activity taking place in the middleground of the illustration.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Harrowing/ Rolling", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t5a-q3", topicId: "hist-em-eur-5", conceptId: "source-power-illustration",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 5 A Q3",
+    stem: "This illustration shows eighteenth‐century farm practices. Study it and answer the questions which follow.",
+    questionText: "Identify one source of power in the illustration.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Windmills", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t5a-q4", topicId: "hist-em-eur-5", conceptId: "who-lived-large-building-hill",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 5 A Q4",
+    stem: "This illustration shows eighteenth‐century farm practices. Study it and answer the questions which follow.",
+    questionText: "Who would have lived in the large building on the hill?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Feudal lord/ Landlord/ Nobles, etc", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t5a-q5", topicId: "hist-em-eur-5", conceptId: "mention-change-beginning-emerge-rural-society",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 5 A Q5",
+    stem: "This illustration shows eighteenth‐century farm practices. Study it and answer the questions which follow.",
+    questionText: "Briefly, mention one change that was beginning to emerge in rural society before 1775.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid change emerging in rural society before 1775", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t5b", topicId: "hist-em-eur-5", conceptId: "catherine-great-poverty-disease-population-growth",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 5 B",
+    stem: "Establishing empires, 1715 ‐ 1775",
+    questionText: "Write a short paragraph on one of the following:\n1. Catherine the Great.\n2. Poverty, disease and population growth.\n3. The influence of the salon.\n4. Frederick the Great.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [18,19,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t5c", topicId: "hist-em-eur-5", conceptId: "achievements-home-abroad-maria-theresa-austria",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 5 C",
+    stem: "Establishing empires, 1715 ‐ 1775",
+    questionText: "Answer one of the following:\n1. What were the achievements, at home and abroad, of Maria Theresa of Austria?\n2. What were the main features of life on a West‐Indian slave plantation?\n3. What ideas did Voltaire and/or Rousseau put forward?\n4. In what ways did the Duke of Bridgewater contribute to economy and society?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [18,19,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t6a-q1", topicId: "hist-em-eur-6", conceptId: "expected-previous-day",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 6 A Q1",
+    stem: "This edited extract refers to the Committee of Public Safety. Read it and answer the questions which follow.\n\n• Liberty is exposed to new dangers.\n• The crowds demanding butter are larger and more turbulent than ever, even though they have the least ground for complaint.\n• The outbreak of prison revolt was expected yesterday.\n• All this is coupled with attempts on the lives of the members of the Committee of Public Safety.\n• We fear an aristocratic rising which would be fatal for liberty. The greatest danger is in Paris.\n• The Committee needs to unite.",
+    questionText: "What had been expected the previous day?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An outbreak of prison revolt", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t6a-q2", topicId: "hist-em-eur-6", conceptId: "sort-rising-feared",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 6 A Q2",
+    stem: "This edited extract refers to the Committee of Public Safety. Read it and answer the questions which follow.\n\n• Liberty is exposed to new dangers.\n• The crowds demanding butter are larger and more turbulent than ever, even though they have the least ground for complaint.\n• The outbreak of prison revolt was expected yesterday.\n• All this is coupled with attempts on the lives of the members of the Committee of Public Safety.\n• We fear an aristocratic rising which would be fatal for liberty. The greatest danger is in Paris.\n• The Committee needs to unite.",
+    questionText: "What sort of rising was feared?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An aristocratic rising", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t6a-q3", topicId: "hist-em-eur-6", conceptId: "where-greatest-danger",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 6 A Q3",
+    stem: "This edited extract refers to the Committee of Public Safety. Read it and answer the questions which follow.\n\n• Liberty is exposed to new dangers.\n• The crowds demanding butter are larger and more turbulent than ever, even though they have the least ground for complaint.\n• The outbreak of prison revolt was expected yesterday.\n• All this is coupled with attempts on the lives of the members of the Committee of Public Safety.\n• We fear an aristocratic rising which would be fatal for liberty. The greatest danger is in Paris.\n• The Committee needs to unite.",
+    questionText: "Where was the greatest danger?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Paris", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t6a-q4", topicId: "hist-em-eur-6", conceptId: "writer-must-committee",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 6 A Q4",
+    stem: "This edited extract refers to the Committee of Public Safety. Read it and answer the questions which follow.\n\n• Liberty is exposed to new dangers.\n• The crowds demanding butter are larger and more turbulent than ever, even though they have the least ground for complaint.\n• The outbreak of prison revolt was expected yesterday.\n• All this is coupled with attempts on the lives of the members of the Committee of Public Safety.\n• We fear an aristocratic rising which would be fatal for liberty. The greatest danger is in Paris.\n• The Committee needs to unite.",
+    questionText: "According to the writer, what must the Committee do?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Unite", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t6a-q5", topicId: "hist-em-eur-6", conceptId: "part-did-robespierre-play-french-revolution",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 6 A Q5",
+    stem: "This edited extract refers to the Committee of Public Safety. Read it and answer the questions which follow.\n\n• Liberty is exposed to new dangers.\n• The crowds demanding butter are larger and more turbulent than ever, even though they have the least ground for complaint.\n• The outbreak of prison revolt was expected yesterday.\n• All this is coupled with attempts on the lives of the members of the Committee of Public Safety.\n• We fear an aristocratic rising which would be fatal for liberty. The greatest danger is in Paris.\n• The Committee needs to unite.",
+    questionText: "Briefly, what part did Robespierre play in the French Revolution?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE key contribution of Robespierre to the French Revolution", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2018 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t6b", topicId: "hist-em-eur-6", conceptId: "abolition-slave-trade-agricultural-revolution-james",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 6 B",
+    stem: "Empires in revolution, 1775‐1815",
+    questionText: "Write a short paragraph on one of the following:\n1. The abolition of the slave trade.\n2. The Agricultural Revolution.\n3. James Madison.\n4. The Civil Constitution of the Clergy.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [18,19,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2018 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2018-ol-em-s3t6c", topicId: "hist-em-eur-6", conceptId: "did-ludwig-van-beethoven-contribute-european",
+    section: "3", questionRef: "2018 OL Early Modern Section 3 Topic 6 C",
+    stem: "Empires in revolution, 1775‐1815",
+    questionText: "Answer one of the following:\n1. How did Ludwig van Beethoven contribute to European culture?\n2. How did Manchester grow and what problems arose from its growth?\n3. What was the influence of Mary Wollstonecraft and/or of Madame de Staël?\n4. What impact had Napoléon on France and/or on Europe?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [18,19,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC004GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
@@ -3022,7 +4850,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The First Programme for Economic Expansion, 1958‐1963",
     questionText: "What did the First Programme for Economic Expansion achieve?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[3], schemePages: [7] },
+    rubric: { ...ESSAY_MARKING[4], schemePages: [7] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4848,7 +6676,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Plantation of Laois/Offaly",
     questionText: "What was the purpose of the Plantation of Laois/Offaly and did it achieve its purpose?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [17] },
+    rubric: { ...ESSAY_MARKING[3], schemePages: [17] },
   } as SecCard,
   {
     ...base, kind: "question",
