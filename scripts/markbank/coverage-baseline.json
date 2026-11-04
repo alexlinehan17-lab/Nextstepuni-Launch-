@@ -168,19 +168,19 @@
     "refsHash": "d22e9502e212efb6"
   },
   "computer-science": {
-    "cards": 336,
-    "contentHash": "a98238edb379ba3a",
-    "coveragePct": 82.2,
-    "covered": 398,
+    "cards": 384,
+    "contentHash": "cd023b2f771c1b22",
+    "coveragePct": 71.9,
+    "covered": 446,
     "excluded": 0,
-    "leaves": 484,
-    "open": 86,
+    "leaves": 620,
+    "open": 174,
     "orphans": 0,
     "papers": {
-      "count": 20,
-      "hash": "4eb8d8bb7c8ce50b"
+      "count": 26,
+      "hash": "73a50648a2aeefe2"
     },
-    "refsHash": "ba197c3dcfdb616b"
+    "refsHash": "957a4d381c2fddb7"
   },
   "construction-studies": {
     "cards": 1261,
