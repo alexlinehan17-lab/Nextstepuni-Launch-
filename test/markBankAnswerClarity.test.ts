@@ -486,8 +486,11 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // A six-mark answer with a printed partial ("Green ribbons (ribbons = 3m)") is a stepped row: the partial is its note.
     expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks, row.contextNote]).sort()).toEqual([
       ['Clonmel prison', 6, [0, 3, 6], 'Clonmel only (3m), prison only (3m)'],
+      // 2021 OL Later Modern Q3(b): the scheme prices "One opinion = 5M / Explanation = 5M" and prints no answer.
+      ['Explanation', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Green ribbons', 6, [0, 3, 6], 'ribbons = 3m'],
       ['Massive German air raids', 6, [0, 3, 6], 'air raids alone = 3m'],
+      ['One opinion', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
       ['The original six members had access to Irish, British and Danish fisheries', 6, [0, 3, 6], 'access to Irish fisheries alone = 3m'],
     ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);

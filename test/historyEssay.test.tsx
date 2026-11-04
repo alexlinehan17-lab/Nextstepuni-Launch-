@@ -37,7 +37,7 @@ vi.mock('../components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(() => new
 
 type EssayCard = SecRubricCard & { rubric: HistoryEssayRubric };
 /** The papers whose essays are carded so far (lane batch 2 adds one sitting a commit). */
-const CARDED_ESSAY_PAPERS = ['2021 higher em', '2021 higher lm', '2025 higher lm'];
+const CARDED_ESSAY_PAPERS = ['2021 higher em', '2021 higher lm', '2021 ordinary em', '2021 ordinary lm', '2025 higher lm'];
 const essays = [...HISTORY_HIGHER, ...HISTORY_ORDINARY]
   .filter((card): card is EssayCard => isRubricCard(card) && card.rubric.system === 'history-essay');
 const byId = (id: string) => essays.find(card => card.id === id)!;
@@ -110,7 +110,7 @@ describe('the shipped History essay cards', () => {
     expect(famine.rubric.schemeGuidance.join(' ')).toMatch(/^To mark the answer, the examiner will approach the material with an open mind as to the range of valid answers/);
     for (const card of essays) {
       expect(JSON.stringify(card.rubric)).not.toContain(HISTORY_ESSAY_NO_MODEL_ANSWER);
-      expect(card.rubric.schemeFileid).toBe('LC004ALP000EV');
+      expect(card.rubric.schemeFileid).toBe(card.level === 'higher' ? 'LC004ALP000EV' : 'LC004GLP000EV');
     }
   });
 });

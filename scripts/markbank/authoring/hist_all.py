@@ -94,6 +94,8 @@ EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
 ESSAY_PAPERS = {
     (2021, 'hl', 'em'),
     (2021, 'hl', 'lm'),
+    (2021, 'ol', 'em'),
+    (2021, 'ol', 'lm'),
     (2025, 'hl', 'lm'),
 }
 
@@ -234,8 +236,11 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
         rubric_cm = {
             'mode': 'core-statement',
             'max': cm['max'],
+            # Q4 prints no CM definition of its own; its "Here, in question 4 of
+            # the DBQ, the examiner will be looking to award 5 marks each to
+            # four Core Statements ..." is what the CM is, there.
             'definition': (cm.get('definition')
-                           or next(g for g in marking['schemeGuidance'] if g.startswith('Mark by the principle'))),
+                           or next(g for g in marking['schemeGuidance'] if g.startswith('Here, in question 4'))),
             'statementLead': cm['statementLead'],
             'statementKinds': cm['statementKinds'],
             'procedureLead': cm['procedureLead'],
@@ -255,7 +260,8 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
             return "the question's NOTE prints no CM ceiling below the maximum"
         rubric_cm['elementRule'] = {'note': ask.note,
                                     'caps': [{'when': when, 'max': top} for when, top in ask.note_caps]}
-    rubric = {'system': 'history-essay', 'schemeGuidance': marking['schemeGuidance'], 'cm': rubric_cm}
+    guidance = [g for g in marking['schemeGuidance'] if g != rubric_cm['definition']]
+    rubric = {'system': 'history-essay', 'schemeGuidance': guidance, 'cm': rubric_cm}
     if oe:
         rubric_oe = {'max': oe['max']}
         for name in ('definition', 'lead'):

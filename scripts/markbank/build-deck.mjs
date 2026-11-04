@@ -1446,7 +1446,7 @@ for (const c of cards) {
     ...base, kind: "rubric",
     year: ${c.year}, level: ${q(c.level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
-    schemeCitation: ${q(`Marking by paragraph quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level — © State Examinations Commission.`)},
+    schemeCitation: ${q(`Marking ${c.rubric.cm.mode === 'core-statement' ? 'by Core Statement' : 'by paragraph'} quoted from the SEC marking scheme, ${SUBJECT.title} ${c.year} ${LEVEL_WORD[c.level] ?? 'Higher'} Level — © State Examinations Commission.`)},
     id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},

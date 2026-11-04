@@ -29,7 +29,6 @@ const cards = [...HISTORY_HIGHER, ...HISTORY_ORDINARY];
 
 /** The Early Modern papers with History cards and no Atlas entry yet (4 Nov 2026). */
 const NOT_YET_IN_ATLAS = [
-  'history-early-modern 2021 ordinary',
   'history-early-modern 2022 ordinary',
   'history-early-modern 2023 higher',
   'history-early-modern 2023 ordinary',
