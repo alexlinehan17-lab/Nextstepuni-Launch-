@@ -15531,5 +15531,138 @@
   "figureKey": "computer-science-2024-HL-scheme-q15b-i",
   "questionFigureKey": "computer-science-2024-HL-paper-q15b-fig7",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2024-ol-q5",
+  "topicId": "cs-2-2",
+  "conceptId": "there-different-ticket-prices-available-attending",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2024 OL Q5",
+  "questionText": "There are three different ticket prices available for attending a concert. A full price adult ticket costs €20. Children under 16 receive a 20% discount. Anyone aged 16 to 21, who is also a student, receive a 10% discount. The flowchart for this algorithm is shown in Figure 1 below with some information missing. Select the appropriate letter from the flowchart and enter it in Column B in the table below to match it to the correct statement in Column A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Flowchart Symbol Description Flowchart Place",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "PRINT(price) D",
+      "Is age < 21 AND student = “yes”? A",
+      "price = price – (20% of price) B",
+      "price = price – (10% of price) C"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      2,
+      1
+     ]
+    },
+    "contextNote": "4 correct – 6 marks 3 correct – 5 marks 2 correct – 3 marks 1 correct – 2 mark"
+   }
+  ],
+  "questionFigureKey": "computer-science-2024-OL-paper-q5-flow",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2024-ol-q11",
+  "topicId": "cs-2-3",
+  "conceptId": "provide-example-digital-input-example-analogue",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2024 OL Q11",
+  "questionText": "Provide one example of a digital input and one example of an analogue input on an embedded system you have used, such as those shown in Figure 2.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Digital Inputs:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Button",
+      "On/ Off Switch",
+      "Shake",
+      "Pins",
+      "Accept any relevant digital input"
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each (digital/analogue): Good example 3 marks Fair example 2 marks"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Analogue Inputs:",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Accelerometer",
+      "Magnetometer",
+      "Temperature Sensor",
+      "Light Sensor",
+      "Moisture Sensor",
+      "Sound Sensor",
+      "Pressure Sensor",
+      "Distance Sensor",
+      "Accept any relevant analogue input"
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each (digital/analogue): Good example 3 marks Fair example 2 marks"
+   }
+  ],
+  "questionFigureKey": "computer-science-2024-OL-paper-q11-fig2",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2024-ol-q13-b-iii",
+  "topicId": "cs-2-2",
+  "conceptId": "disadvantage-linear-search-algorithm-when-searching",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2024 OL Q13(b)(iii)",
+  "questionText": "Explain one disadvantage of the linear search algorithm when searching large data sets.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The linear search might have to check every item on a list in some cases. • A large data set will take a lot more time.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     4,
+     6
+    ],
+    "contextNote": "Good description – clear understanding demonstrated 6 marks Fair description – limited understanding 4 marks"
+   }
+  ],
+  "stem": "The bottles are numbered and are stored electronically in a list. Below is the list of the bottle numbers. 12 5 59 23 7 42 60 19 67 31"
  }
 ]

@@ -55984,5 +55984,27 @@
   "year": 2024,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2024-OL-paper-q5-flow": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q5-flow.png",
+  "md5": "5e6b839121cf09c01be893ca8b2396b5",
+  "alt": "Figure 1: a flowchart. START, price = 20.00, Input age, Input student (Yes/No), then a decision Is age < 16?; Yes leads to an empty box B and on to an empty box D; No leads to an empty box A, whose Yes branch goes through an empty box C to D and whose No branch goes straight to D. Below it, the table whose Column A lists PRINT(price), Is age < 21 AND student = \"yes\"?, price = price – (20% of price) and price = price – (10% of price), and whose Column B (Flowchart Letter) is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q5",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2024-OL-paper-q11-fig2": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q11-fig2.png",
+  "md5": "f12876e8793f936de031168572ef7e50",
+  "alt": "Figure 2: photographs of two single-board computers, a Raspberry Pi and a micro:bit.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q11",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
  }
 }

@@ -3799,4 +3799,63 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2024-ol-q5", topicId: "cs-2-2", conceptId: "there-different-ticket-prices-available-attending",
+    section: "A", questionRef: "2024 OL Q5",
+    questionText: "There are three different ticket prices available for attending a concert. A full price adult ticket costs €20. Children under 16 receive a 20% discount. Anyone aged 16 to 21, who is also a student, receive a 10% discount. The flowchart for this algorithm is shown in Figure 1 below with some information missing. Select the appropriate letter from the flowchart and enter it in Column B in the table below to match it to the correct statement in Column A.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Flowchart Symbol Description Flowchart Place", marks: null, contextNote: "4 correct – 6 marks 3 correct – 5 marks 2 correct – 3 marks 1 correct – 2 mark", group: {"claimMax":4,"perOption":2,"options":["PRINT(price) D","Is age < 21 AND student = “yes”? A","price = price – (20% of price) B","price = price – (10% of price) C"],"perOptionSteps":[2,1,2,1]} },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2024-OL-paper-q5-flow",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q5-flow.png",
+          "srcHash": "5e6b839121cf09c01be893ca8b2396b5",
+          "alt": "Figure 1: a flowchart. START, price = 20.00, Input age, Input student (Yes/No), then a decision Is age < 16?; Yes leads to an empty box B and on to an empty box D; No leads to an empty box A, whose Yes branch goes through an empty box C to D and whose No branch goes straight to D. Below it, the table whose Column A lists PRINT(price), Is age < 21 AND student = \"yes\"?, price = price – (20% of price) and price = price – (10% of price), and whose Column B (Flowchart Letter) is blank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2024-ol-q11", topicId: "cs-2-3", conceptId: "provide-example-digital-input-example-analogue",
+    section: "A", questionRef: "2024 OL Q11",
+    questionText: "Provide one example of a digital input and one example of an analogue input on an embedded system you have used, such as those shown in Figure 2.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Digital Inputs:", marks: null, contextNote: "For each (digital/analogue): Good example 3 marks Fair example 2 marks", openList: true, group: {"claimMax":1,"perOption":3,"options":["Button","On/ Off Switch","Shake","Pins","Accept any relevant digital input"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Analogue Inputs:", marks: null, contextNote: "For each (digital/analogue): Good example 3 marks Fair example 2 marks", openList: true, group: {"claimMax":1,"perOption":3,"options":["Accelerometer","Magnetometer","Temperature Sensor","Light Sensor","Moisture Sensor","Sound Sensor","Pressure Sensor","Distance Sensor","Accept any relevant analogue input"]} },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2024-OL-paper-q11-fig2",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q11-fig2.png",
+          "srcHash": "f12876e8793f936de031168572ef7e50",
+          "alt": "Figure 2: photographs of two single-board computers, a Raspberry Pi and a micro:bit.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2024-ol-q13-b-iii", topicId: "cs-2-2", conceptId: "disadvantage-linear-search-algorithm-when-searching",
+    section: "B", questionRef: "2024 OL Q13(b)(iii)",
+    stem: "The bottles are numbered and are stored electronically in a list. Below is the list of the bottle numbers. 12 5 59 23 7 42 60 19 67 31",
+    questionText: "Explain one disadvantage of the linear search algorithm when searching large data sets.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The linear search might have to check every item on a list in some cases. • A large data set will take a lot more time.", marks: 6, contextNote: "Good description – clear understanding demonstrated 6 marks Fair description – limited understanding 4 marks", permittedMarks: [0,4,6] },
+    ],
+  } as SecCard,
 ];
