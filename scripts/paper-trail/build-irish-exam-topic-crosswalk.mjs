@@ -212,9 +212,9 @@ setCurriculum(H.prose, ['irish-4-7', 'irish-7-0']);
 // Reuse the reviewed cards' existing canonical nodes; this archive shelf does
 // not define a second syllabus or relabel prescribed works as optional prose.
 setCurriculum(H.prescribedProse, [...new Set(reviewedHigherTasks
-  .filter(card => card.level === 'higher' && card.atlasQuestionId.startsWith('P-2A-')).map(card => card.topicId))].sort());
+  .filter(card => card.level === 'higher' && /^P-2A(?:-|$)/.test(card.atlasQuestionId)).map(card => card.topicId))].sort());
 setCurriculum(H.prescribedPoetry, [...new Set(reviewedHigherTasks
-  .filter(card => card.level === 'higher' && card.atlasQuestionId.startsWith('F-3A-')).map(card => card.topicId))].sort());
+  .filter(card => card.level === 'higher' && /^F-3A(?:-|$)/.test(card.atlasQuestionId)).map(card => card.topicId))].sort());
 setCurriculum(H.debate, ['irish-2-4', 'irish-2-5']);
 setCurriculum(H.article, ['irish-2-1']);
 setCurriculum(H.story, ['irish-2-3']);
@@ -235,9 +235,9 @@ setCurriculum(O.folktale, ['irish-4-7', 'irish-7-1']);
 setCurriculum(O.poetry, ['irish-5-6', 'irish-7-0']);
 setCurriculum(O.prose, ['irish-4-7', 'irish-7-0']);
 setCurriculum(O.prescribedProse, [...new Set(reviewedHigherTasks
-  .filter(card => card.level === 'ordinary' && card.atlasQuestionId.startsWith('P-2A-')).flatMap(card => [card.topicId, ...(card.additionalTopicIds ?? [])]))].sort());
+  .filter(card => card.level === 'ordinary' && /^P-2A(?:-|$)/.test(card.atlasQuestionId)).flatMap(card => [card.topicId, ...(card.additionalTopicIds ?? [])]))].sort());
 setCurriculum(O.prescribedPoetry, [...new Set(reviewedHigherTasks
-  .filter(card => card.level === 'ordinary' && card.atlasQuestionId.startsWith('F-3A-')).flatMap(card => [card.topicId, ...(card.additionalTopicIds ?? [])]))].sort());
+  .filter(card => card.level === 'ordinary' && /^F-3A(?:-|$)/.test(card.atlasQuestionId)).flatMap(card => [card.topicId, ...(card.additionalTopicIds ?? [])]))].sort());
 setCurriculum(F.form, ['irish-9-0']);
 setCurriculum(F.match, ['irish-9-1']);
 for (const id of [F.brochure, F.extract, F.letterReading, F.news, F.poem]) {
@@ -781,16 +781,16 @@ for (const card of reviewedHigherTasks) {
     : card.level === 'ordinary'
     // Ordinary Paper 2: reading, prescribed prose/poetry shelves, optional prose/poetry.
     ? [card.id.includes('-reading-') ? O.reading
-      : card.atlasQuestionId.startsWith('F-3A-') ? O.prescribedPoetry
-      : card.atlasQuestionId.startsWith('P-2A-') ? O.prescribedProse
+      : /^F-3A(?:-|$)/.test(card.atlasQuestionId) ? O.prescribedPoetry
+      : /^P-2A(?:-|$)/.test(card.atlasQuestionId) ? O.prescribedProse
       : card.atlasQuestionId.startsWith('P-') ? O.prose : O.poetry]
     : card.id.includes('-reading-')
     ? card.topicId === 'irish-3-3' ? [H.grammar]
       : (card.additionalTopicIds ?? []).includes('irish-3-3') ? [H.reading,H.grammar] : [H.reading]
     : card.atlasQuestionId === 'X-4F' ? [H.extraPoetry,H.historic]
     : [card.atlasQuestionId.startsWith('X-') ? H.historic
-      : card.atlasQuestionId.startsWith('F-3A-') ? H.prescribedPoetry
-      : card.atlasQuestionId.startsWith('P-2A-') ? H.prescribedProse
+      : /^F-3A(?:-|$)/.test(card.atlasQuestionId) ? H.prescribedPoetry
+      : /^P-2A(?:-|$)/.test(card.atlasQuestionId) ? H.prescribedProse
       : card.atlasQuestionId.startsWith('P-') ? H.prose : H.poetry];
   if (existing?.baseline) {
     // Frozen reading identities/tags remain. The additive regions restore the
