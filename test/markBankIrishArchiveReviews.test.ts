@@ -35,10 +35,14 @@ const card = (id: string): SecRubricCard => {
   if (!found) throw new Error(`no card ${id}`);
   return found;
 };
-const criteria = (c: SecRubricCard) => (c.rubric.system === 'irish' ? c.rubric.criteria : []);
+const rubric = (c: SecRubricCard) => {
+  if (c.rubric.system !== 'irish') throw new Error(`${c.id} is not an Irish rubric card`);
+  return c.rubric;
+};
+const criteria = (c: SecRubricCard) => rubric(c).criteria;
 // Lines builders used to add in Irish of their own (irish_lifted.py strips them and the lift audit gates them).
-const OURS = /Don chárta seo|An rogha don chárta seo|Léigh an téacs ar leathanach \d|Aon fhreagra ceart don chuid seo|An léargas seo =|Éist leis an taifeadadh|Freagair gach mír atá priontáilte|Coinnigh ceangal cinnte|Timpeall 500–600 focal|[-]/;
-const shown = (c: SecRubricCard) => [c.questionText, c.stem ?? '', ...c.rubric.taskRequirements,
+const OURS = /Don chárta seo|An rogha don chárta seo|Léigh an téacs ar leathanach \d|Aon fhreagra ceart don chuid seo|An léargas seo =|Éist leis an taifeadadh|Freagair gach mír atá priontáilte|Coinnigh ceangal cinnte|Timpeall 500–600 focal|[\ue000-\uf8ff]/;
+const shown = (c: SecRubricCard) => [c.questionText, c.stem ?? '', ...rubric(c).taskRequirements,
   ...criteria(c).flatMap(criterion => criterion.guidance)].join('\n');
 const answerMap = (year: number, fileid: string) =>
   JSON.parse(readFileSync(`public/paper-answers/${year}/${fileid}.json`, 'utf8')) as { q: Array<{ n: string }> };
@@ -68,7 +72,7 @@ describe('Irish archive review: Paper 1 (listening and composition)', () => {
         expect(tariffReconciles(c), c.id).toBe(true);
         for (const criterion of criteria(c)) expect(criterion.allocation, `${c.id} ${criterion.id}`).toBeDefined();
         expect(irishMarks(c, irishFullScores(c)), c.id).toBe(c.totalMarks);
-        expect(c.rubric.markingGuideNote, c.id).toMatch(/Bainfear ó 0 go [36] ar chaighdeán na Gaeilge/);
+        expect(rubric(c).markingGuideNote, c.id).toMatch(/Bainfear ó 0 go [36] ar chaighdeán na Gaeilge/);
       }
       for (const id of review.compositionRouteCardIds) {
         const c = card(id);

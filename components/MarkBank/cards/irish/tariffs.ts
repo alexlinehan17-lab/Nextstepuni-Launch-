@@ -170,7 +170,7 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
       const firstCount = WORDS[ladderWords[3].toLowerCase()] ?? Number(ladderWords[3]);
       const values = [...Array(firstCount).fill(Number(ladderWords[2])), ...Array(Math.max(0, Number(ladderWords[1]) - firstCount)).fill(ladderWords[4] ? Number(ladderWords[4]) : Number(ladderWords[2]))];
       if (values.reduce((acc, value) => acc + value, 0) === source.totalMarks) {
-        tokens.push({ kind: 'row', id: '', text: tidy(ladderWords[0].slice(0, ladderWords[0].indexOf('('))), marks: source.totalMarks, steps: cumulative(values),
+        tokens.push({ kind: 'row', text: tidy(ladderWords[0].slice(0, ladderWords[0].indexOf('('))), marks: source.totalMarks, steps: cumulative(values),
           at: ladderWords.index, end: ladderWords.index + ladderWords[0].length });
         tokens.sort((x, y) => x.at - y.at);
       }

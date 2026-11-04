@@ -23,12 +23,6 @@ const byId = (id: string): SecRubricCard => {
   if (!card) throw new Error(`no card ${id}`);
   return card;
 };
-const allocationOf = (id: string): IrishAllocation => {
-  const card = byId(id);
-  const allocation = card.rubric.system === 'irish' ? card.rubric.criteria[0].allocation : undefined;
-  if (!allocation) throw new Error(`${id} is not structured`);
-  return allocation;
-};
 const parts = (allocation: IrishAllocation) =>
   allocation.parts.map(part => [part.prompt, part.tariff, part.ladder, part.rows.map(row => [row.text, row.marks])]);
 // A reviewed listening card marks each printed question as its own criterion; its parts, read in printed order.
