@@ -163,6 +163,18 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
     directions.push(...promptPieces.slice(1).filter(piece => piece !== promptText));
     // "5 phointe eolais ag teastáil (…)" after a row prices that row in steps.
     const ladderText = LADDER.exec(body);
+    // "5 phointe eolais ag teastáil (5 mharc … + 4 mharc …)" with no "Na heachtraí … = 22 marc" printed before it
+    // (2020 Ordinary 2B(b)): the ladder's own words are the criterion's row, at the total its points add to, in its steps.
+    const ladderWords = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann ar an g?c?[ée]ad\s+(\S+)\s+phointe eolais(?:\s*\+\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe eolais eile)?\s*\)/i.exec(body);
+    if (ladderWords && !tokens.some(token => token.kind === 'row')) {
+      const firstCount = WORDS[ladderWords[3].toLowerCase()] ?? Number(ladderWords[3]);
+      const values = [...Array(firstCount).fill(Number(ladderWords[2])), ...Array(Math.max(0, Number(ladderWords[1]) - firstCount)).fill(ladderWords[4] ? Number(ladderWords[4]) : Number(ladderWords[2]))];
+      if (values.reduce((acc, value) => acc + value, 0) === source.totalMarks) {
+        tokens.push({ kind: 'row', id: '', text: tidy(ladderWords[0].slice(0, ladderWords[0].indexOf('('))), marks: source.totalMarks, steps: cumulative(values),
+          at: ladderWords.index, end: ladderWords.index + ladderWords[0].length });
+        tokens.sort((x, y) => x.at - y.at);
+      }
+    }
     if (tokens.length === 0) {
       if (!open && !loose.length) loosePrompt = loosePrompt ?? promptText;
       else directions.push(promptText);

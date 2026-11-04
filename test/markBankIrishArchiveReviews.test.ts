@@ -17,6 +17,7 @@ import ordinary2021P1 from '../scripts/markbank/authored/irish-ordinary-2021-p1-
 import higher2020P1 from '../components/MarkBank/cards/irish/higher-2020-p1-authored.json';
 import higher2020P2 from '../components/MarkBank/cards/irish/higher-2020-p2-authored.json';
 import ordinary2020P1 from '../components/MarkBank/cards/irish/ordinary-2020-p1-authored.json';
+import ordinary2020P2 from '../components/MarkBank/cards/irish/ordinary-2020-p2-authored.json';
 import ordinary2022P1 from '../scripts/markbank/authored/irish-ordinary-2022-p1-component-review.json';
 import ordinary2022P2 from '../components/MarkBank/cards/irish/ordinary-2022-p2-authored.json';
 import higher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
@@ -126,6 +127,7 @@ describe('Irish archive review: Paper 2 (reading and literature)', () => {
 // New Paper 2 cards (2020 has no legacy cards): every card is the file's own, carded from the reviewed paper and scheme.
 const NEW_PAPER_TWO = [
   { file: higher2020P2, fileid: 'LC001ALP200IV.pdf', cards: 78, readingWhole: 12 },
+  { file: ordinary2020P2, fileid: 'LC001GLP200IV.pdf', cards: 52, readingWhole: 10 },
 ];
 
 describe('Irish archive review: new Paper 2 cards', () => {
