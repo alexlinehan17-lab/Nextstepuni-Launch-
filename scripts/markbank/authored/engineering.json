@@ -22038,120 +22038,6 @@
   "notes": "The scheme prints '6 marks'."
  },
  {
-  "id": "eng-2025-ol-q1-l",
-  "topicId": "eng-2-11",
-  "conceptId": "any-following-internal-thread-blind-hole",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2025 OL Q1(l)",
-  "questionText": "Describe any one of the following: (i) Internal thread, (ii) Blind hole, (iii) Countersunk hole.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "An internal thread refers to the threads or grooves that are cut into the inside surface of a hole, allowing it to accept a corresponding external thread from a screw or bolt. Internal threads are commonly found in components such as nuts and holes designed to receive screws. The purpose of internal threading is to create a secure connection by allowing the external threaded component to screw into it, providing mechanical fastening and stability in various applications.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "External thread Internal thread",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "A blind hole refers to a hole that is reamed, drilled, or milled to a specified depth without breaking through to the other side of the workpiece.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "A countersunk hole is a conical‐shaped hole that is drilled to allow the head of a countersunk machine screw to sit flush with or below the surface of the material. The countersink is wider at the top, allowing the screw head to fit into it, providing a smooth surface finish and reducing the risk of snagging or catching.",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Countersunk machine screw Countersunk hole",
-    "marks": null
-   }
-  ],
-  "stem": "Give brief answers to any eight of the following:",
-  "notes": "The scheme prints '6 marks'."
- },
- {
-  "id": "eng-2025-ol-q2-c-ii",
-  "topicId": "eng-3-14",
-  "conceptId": "reason-selection-each-material-named",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2025 OL Q2(c)(ii)",
-  "questionText": "State one reason for the selection of each material named.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Tracks: ‐",
-    "marks": 6,
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Tracks: ‐",
-      "Reason: Light, flexible and shock absorption Digging bucket: ‐",
-      "Reason: Strong, durable and wear resistant."
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme prints 'Three parts @ 2 marks (6)'.",
-  "questionFigureKey": "engineering-2025-OL-paper-q2ci-art",
-  "questionFigureIncludesPrompt": false
- },
- {
-  "id": "eng-2025-ol-q3-a",
-  "topicId": "eng-2-6",
-  "conceptId": "reason-why-each-following-heat-treatment",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2025 OL Q3(a)",
-  "questionText": "Explain the reason why each of the following heat treatment processes are carried out: (i) Normalising, (ii) Hardening.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 14,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Normalising is carried out to refine the structure of steel and to remove internal stresses caused by cold working such as hammering, rolling or bending. It is similar to the annealing of steel, except the cooling rate is much faster.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "When high carbon steel is heated to a cherry red it undergoes structural changes, and rapid cooling does not allow it to revert to its normal soft condition. The high carbon steel becomes hard resisting indentation, scratching and wear. The point of a centre punch is hardened to ensure it retains its point during use.",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints 'Any two parts @ 7 marks (14)'."
- },
- {
   "id": "eng-2025-ol-q3-c",
   "topicId": "eng-3-1",
   "conceptId": "items-personal-protective-equipment-ppe-should",
@@ -22218,40 +22104,8 @@
   "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
  },
  {
-  "id": "eng-2025-ol-q4-c-i",
-  "topicId": "eng-2-10",
-  "conceptId": "benefit-using-r-clip-shown",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2025 OL Q4(c)(i)",
-  "questionText": "Outline one benefit of using the R‐clip shown.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "R‐clips are similar in function to split pins and linchpins.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Compared to split pins, they are easier to remove and are re‐ usable. They are particularly common in automotive and construction applications, such as securing hitch pins in trailers or locking parts in place on equipment.",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '5 marks'.",
-  "questionFigureKey": "engineering-2025-OL-paper-q4civ-art",
-  "questionFigureIncludesPrompt": false
- },
- {
   "id": "eng-2025-ol-q4-c-ii",
-  "topicId": "eng-1-5",
+  "topicId": "eng-2-10",
   "conceptId": "suggest-method-joining-sheet-aluminium",
   "level": "ordinary",
   "year": 2025,
@@ -22303,74 +22157,6 @@
   "notes": "The scheme prints '5 marks'."
  },
  {
-  "id": "eng-2025-ol-q4-c-iv",
-  "topicId": "eng-2-10",
-  "conceptId": "tool-shown-opposite-use-tool",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2025 OL Q4(c)(iv)",
-  "questionText": "Name tool A shown opposite and give one use for this tool.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Name: Allen key",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle.",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '5 marks'.",
-  "questionFigureKey": "engineering-2025-OL-paper-q4civ-art",
-  "questionFigureIncludesPrompt": false
- },
- {
-  "id": "eng-2025-ol-q5-a-i",
-  "topicId": "eng-1-9",
-  "conceptId": "each-plastic-manufacturing-processes-shown-b",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2025 OL Q5(a)(i)",
-  "questionText": "Name each of the plastic manufacturing processes shown at A, B and C.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 9,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "A: Compression moulding B: Blow moulding C: Vacuum forming. ii) Describe any one plastic manufacturing process:",
-    "marks": 9,
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "A: Compression moulding B: Blow moulding C: Vacuum forming. ii) Describe any one plastic manufacturing process:",
-      "Plastic A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released.",
-      "Air Parison Split mould Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened moulding.",
-      "A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away."
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme prints 'Three parts @ 3 marks (9)'.",
-  "questionFigureKey": "engineering-2025-OL-paper-q5ai-art",
-  "questionFigureIncludesPrompt": false
- },
- {
   "id": "eng-2025-ol-q5-b",
   "topicId": "eng-1-9",
   "conceptId": "relation-plastic-technology-any-following-thermosetting",
@@ -22403,42 +22189,6 @@
    }
   ],
   "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
- },
- {
-  "id": "eng-2025-ol-q5-d",
-  "topicId": "eng-1-9",
-  "conceptId": "select-any-items-shown-below-suitable",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2025 OL Q5(d)",
-  "questionText": "Select any two of the items shown below and name a suitable plastic material for each of the parts identified.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Vehicle chassis – Acrylic",
-    "marks": 10,
-    "group": {
-     "claimMax": 2,
-     "perOption": 5,
-     "options": [
-      "Vehicle chassis – Acrylic",
-      "Battery holder – Polypropylene or Nylon",
-      "3D printed part – PLA",
-      "Gears ‐ Nylon"
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme prints 'Two parts @ 5 marks'.",
-  "questionFigureKey": "engineering-2025-OL-paper-q5di-art",
-  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2025-ol-q6-b",
@@ -22475,39 +22225,6 @@
   "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
  },
  {
-  "id": "eng-2025-ol-q6-c-i",
-  "topicId": "eng-2-11",
-  "conceptId": "any-centre-lathe-processes-used-manufacture",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2025 OL Q6(c)(i)",
-  "questionText": "Name any two centre lathe processes used to manufacture the stunt bike pegs. OR Outline one advantage of using CAD in the design and manufacturing process.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Knurling",
-    "marks": 6,
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "Knurling",
-      "Drilling",
-      "CAD software enables developers to work more quickly, cut production costs and decrease errors."
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme prints 'Any two @ 3 marks (6)'."
- },
- {
   "id": "eng-2025-ol-q6-c-ii",
   "topicId": "eng-2-13",
   "conceptId": "any-processes-named-you-q6-c",
@@ -22533,39 +22250,6 @@
    }
   ],
   "notes": "The scheme prints 'One part @ 6 marks (6)'."
- },
- {
-  "id": "eng-2025-ol-q6-c-iii",
-  "topicId": "eng-2-11",
-  "conceptId": "specify-any-items-personal-protective-equipment",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2025 OL Q6(c)(iii)",
-  "questionText": "Specify any two items of personal protective equipment (PPE) that should be worn when operating a centre lathe. OR Give two advantages of using CNC machines.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Wear goggles.",
-    "marks": 8,
-    "group": {
-     "claimMax": 2,
-     "perOption": 4,
-     "options": [
-      "Wear goggles.",
-      "Protective clothing i.e. gloves",
-      "High precision and capable of producing highly complex parts."
-     ]
-    }
-   }
-  ],
-  "notes": "The scheme prints 'Any two @ 4 mark'."
  },
  {
   "id": "eng-2025-ol-q7-a-i",
@@ -22673,5 +22357,1209 @@
    }
   ],
   "notes": "The scheme prints 'One part @ 6 marks (6)'."
+ },
+ {
+  "id": "eng-2025-ol-q1-l",
+  "topicId": "eng-2-11",
+  "conceptId": "any-following-internal-thread-blind-hole",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(l)",
+  "questionText": "Describe any one of the following: (i) Internal thread, (ii) Blind hole, (iii) Countersunk hole.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An internal thread refers to the threads or grooves that are cut into the inside surface of a hole, allowing it to accept a corresponding external thread from a screw or bolt. Internal threads are commonly found in components such as nuts and holes designed to receive screws. The purpose of internal threading is to create a secure connection by allowing the external threaded component to screw into it, providing mechanical fastening and stability in various applications.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A blind hole refers to a hole that is reamed, drilled, or milled to a specified depth without breaking through to the other side of the workpiece.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A countersunk hole is a conical‐shaped hole that is drilled to allow the head of a countersunk machine screw to sit flush with or below the surface of the material. The countersink is wider at the top, allowing the screw head to fit into it, providing a smooth surface finish and reducing the risk of snagging or catching.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints 'Any one explanation Award 6 Marks'."
+ },
+ {
+  "id": "eng-2025-ol-q1-m",
+  "topicId": "eng-2-10",
+  "conceptId": "type-nut-shown-application",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(m)",
+  "questionText": "Name the type of nut shown and state one application for it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Locknut",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Application: A lock nut is a type of nut that is designed to resist loosening under vibration and torque. Its primary application is in situations where secure fastening is critical, particularly in machinery and structural assemblies. Lock nuts are frequently used in vehicle parts such as suspension components, wheel hubs, and engine mounts to ensure that critical fasteners remain secure despite the vibrations and forces encountered during operation.",
+    "marks": 3
+   }
+  ],
+  "questionFigureKey": "engineering-2025-OL-paper-q1m-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q2-a",
+  "topicId": "eng-1-4",
+  "conceptId": "each-furnaces-labelled-b-c-shown",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q2(a)",
+  "questionText": "Name each of the furnaces labelled A, B and C shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Furnace A – Blast furnace",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Furnace B – Electric Arc furnace",
+    "marks": 5
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Furnace C – Basic Oxygen furnace",
+    "marks": 5
+   }
+  ],
+  "figureKey": "engineering-2025-OL-paper-q2a-crop",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Blast furnace",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Electric Arc furnace",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Basic Oxygen furnace",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2025-ol-q2-b-i",
+  "topicId": "eng-1-4",
+  "conceptId": "materials-used-charge",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q2(b)(i)",
+  "questionText": "Select one of the furnaces labelled at Q2(a) above and answer each of the following: List the materials used in the charge;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Furnace A – Blast furnace Iron ore Coke Limestone",
+    "marks": 3,
+    "accepts": [
+     "Furnace B – Electrical Arc furnace: ‐ Scrap iron / steel Carbon Limestone",
+     "Furnace C – Basic Oxygen furnace: ‐ Pig iron / scrap Carbon Limestone"
+    ]
+   }
+  ],
+  "notes": "The scheme prints '(i) Materials Award 3 Marks', for the furnace selected."
+ },
+ {
+  "id": "eng-2025-ol-q2-b-ii",
+  "topicId": "eng-1-4",
+  "conceptId": "how-charge-heated",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q2(b)(ii)",
+  "questionText": "Select one of the furnaces labelled at Q2(a) above and answer each of the following: Describe how the charge is heated;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Furnace A – Blast furnace The coke is burned to produce heat.",
+    "marks": 6,
+    "accepts": [
+     "Furnace B – Electrical Arc furnace: ‐ Heat for the furnace is produced by an electric arc created between carbon electrodes and the charge.",
+     "Furnace C – Basic Oxygen furnace: ‐ Heat for the furnace is produced by blowing oxygen through a lance onto the molten metal."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '(ii) Heat Award 6 Marks', for the furnace selected."
+ },
+ {
+  "id": "eng-2025-ol-q2-b-iii",
+  "topicId": "eng-1-4",
+  "conceptId": "metal-produced",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q2(b)(iii)",
+  "questionText": "Select one of the furnaces labelled at Q2(a) above and answer each of the following: Name the metal produced.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Furnace A – Blast furnace Pig iron.",
+    "marks": 3,
+    "accepts": [
+     "Furnace B – Electrical Arc furnace: ‐ Steel.",
+     "Furnace C – Basic Oxygen furnace: ‐ Steel."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '(iii) Metal Award 3 Marks', for the furnace selected."
+ },
+ {
+  "id": "eng-2025-ol-q2-c-i-v2",
+  "topicId": "eng-3-14",
+  "conceptId": "suitable-material-each-parts-labelled-mini",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q2(c)(i)",
+  "questionText": "Name a suitable material for each of the parts labelled on the mini excavator.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Seat: ‐ (i) Material: Vinyl",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Tracks: ‐ (i) Material: Rubber",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Digging bucket: ‐ (i) Material: Steel",
+    "marks": 3
+   }
+  ],
+  "questionFigureKey": "engineering-2025-OL-paper-q2c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q2-c-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "reason-selection-each-material-named",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q2(c)(ii)",
+  "questionText": "State one reason for the selection of each material named.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Seat: ‐ (i) Material: Vinyl (ii) Reason: Comfortable and easy to clean.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Tracks: ‐ (i) Material: Rubber (ii) Reason: Light, flexible and shock absorption",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Digging bucket: ‐ (i) Material: Steel (ii) Reason: Strong, durable and wear resistant.",
+    "marks": 2
+   }
+  ],
+  "questionFigureKey": "engineering-2025-OL-paper-q2c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q2-d",
+  "topicId": "eng-2-15",
+  "conceptId": "any-mechanisms-b-c-shown-below",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q2(d)",
+  "questionText": "Name any two of the mechanisms A, B and C shown below, and state one use for each mechanism named.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Mechanism A: ‐ Name ‐ Chain and sprocket",
+    "marks": 4,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Mechanism A: ‐ Name ‐ Chain and sprocket",
+      "Mechanism B: ‐ Name ‐ Pulley and belt",
+      "Mechanism C: ‐ Name ‐ Rack and pinion."
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Mechanism A: ‐ Name ‐ Chain and sprocket Use ‐ Bicycle / Motor bicycles",
+    "marks": 4,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Mechanism A: ‐ Name ‐ Chain and sprocket Use ‐ Bicycle / Motor bicycles",
+      "Mechanism B: ‐ Name ‐ Pulley and belt Use ‐ Washing machine, Pillar drilling machines.",
+      "Mechanism C: ‐ Name ‐ Rack and pinion. Use ‐ Pillar drilling machine table, Automatic sliding gates."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Name Award 2 @ 2 Marks, Use Award 2 @ 2 Marks'.",
+  "figureKey": "engineering-2025-OL-paper-q2d-crop",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Chain and sprocket",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Pulley and belt",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Rack and pinion.",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2025-ol-q3-a",
+  "topicId": "eng-2-6",
+  "conceptId": "reason-why-each-following-heat-treatment",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q3(a)",
+  "questionText": "Explain the reason why each of the following heat treatment processes are carried out: (i) Normalising, (ii) Hardening.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Normalising is carried out to refine the structure of steel and to remove internal stresses caused by cold working such as hammering, rolling or bending. It is similar to the annealing of steel, except the cooling rate is much faster.",
+    "marks": 7
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "When high carbon steel is heated to a cherry red it undergoes structural changes, and rapid cooling does not allow it to revert to its normal soft condition. The high carbon steel becomes hard resisting indentation, scratching and wear. The point of a centre punch is hardened to ensure it retains its point during use.",
+    "marks": 7
+   }
+  ],
+  "notes": "The scheme prints 'Award 2 @ 7 Marks'."
+ },
+ {
+  "id": "eng-2025-ol-q3-b",
+  "topicId": "eng-2-6",
+  "conceptId": "blade-concrete-saw-shown-annealed-tempered",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q3(b)",
+  "questionText": "The blade of the concrete saw shown is annealed, tempered and quenched as part of the manufacturing process. Describe any two of the following processes: (i) Annealing, (ii) Tempering, (iii) Quenching.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.",
+    "marks": 14,
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.",
+      "Tempering is where a metal is heated to a suitable temperature, which is below the reddening temperature and then cooled in oil or water.",
+      "Quenching is when a metal is plunged into a cooling liquid such as water. Quenching cools the metal as fast as possible and ensures that any structural changes which have taken place during heating are not allowed to revert."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Award 2 @ 7 Marks'."
+ },
+ {
+  "id": "eng-2025-ol-q3-d",
+  "topicId": "eng-3-8",
+  "conceptId": "any-following-metal-properties-or-how",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q3(d)",
+  "questionText": "Explain any two of the following metal properties: (i) Toughness, (ii) Melting point, (iii) Brittleness.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Toughness:‐ This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.",
+    "marks": 12,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Toughness:‐ This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.",
+      "Melting point:‐ Melting point is the temperature at which a metal changes its state from solid to liquid.",
+      "Brittleness:‐ A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Award 2 @ 6 Marks'. The paper sets this (d) and the robotics (d) beneath it either side of an OR."
+ },
+ {
+  "id": "eng-2025-ol-q3-d-i",
+  "topicId": "eng-3-14",
+  "conceptId": "toughness-or-parcel-deliveries",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q3(d)(i)",
+  "questionText": "Explain how robotic technology has changed each of the areas shown below: Parcel deliveries,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Parcel deliveries Robotic technology improves sorting accuracy, reducing errors in shipping and ensuring parcels reach the correct destinations. Autonomous delivery robots and drones are also emerging to handle last‐mile deliveries, providing faster and more reliable service for customers.",
+    "marks": 4
+   }
+  ],
+  "notes": "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\".",
+  "questionFigureKey": "engineering-2025-OL-paper-q3di-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q3-d-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "melting-point-or-medical-procedures",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q3(d)(ii)",
+  "questionText": "Explain how robotic technology has changed each of the areas shown below: Medical procedures,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Medical procedure Robotic‐assisted surgeries, such as those using the Da Vinci system, allow surgeons to perform highly complex procedures with enhanced precision, stability, and control. This minimizes damage to surrounding tissues, leads to smaller incisions, and shortens recovery times.",
+    "marks": 4
+   }
+  ],
+  "notes": "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\".",
+  "questionFigureKey": "engineering-2025-OL-paper-q3dii-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q3-d-iii",
+  "topicId": "eng-3-14",
+  "conceptId": "brittleness-or-mass-production",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q3(d)(iii)",
+  "questionText": "Explain how robotic technology has changed each of the areas shown below: Mass production.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mass production Industrial robots on production lines can work continuously without fatigue, significantly increasing production speed. Robots handle repetitive tasks such as assembly, welding, and painting with consistency, improving output and lowering production costs.",
+    "marks": 4
+   }
+  ],
+  "notes": "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\".",
+  "questionFigureKey": "engineering-2025-OL-paper-q3diii-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q4-a-i",
+  "topicId": "eng-2-10",
+  "conceptId": "each-oxy-acetylene-flames-shown-b",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q4(a)(i)",
+  "questionText": "Name each of the oxy‐acetylene flames shown at A, B and C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Flame A – Oxidising flame",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Flame B – Carburising flame",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Flame C – Neutral flame",
+    "marks": 2
+   }
+  ],
+  "figureKey": "engineering-2025-OL-paper-q4a-crop",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Oxidising flame",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Carburising flame",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Neutral flame",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2025-ol-q4-a-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "proportions-oxygen-acetylene-required-each-flames",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q4(a)(ii)",
+  "questionText": "State the proportions of oxygen and acetylene required for each of the flames shown at A, B and C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Flame A – Excess oxygen",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Flame B – Excess acetylene",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Flame C – An equal balance of oxygen and acetylene",
+    "marks": 2
+   }
+  ],
+  "questionFigureKey": "engineering-2025-OL-paper-q4a-crop",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Oxidising flame",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Carburising flame",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Neutral flame",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2025-ol-q4-c-i",
+  "topicId": "eng-2-10",
+  "conceptId": "benefit-using-r-clip-shown",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q4(c)(i)",
+  "questionText": "Outline one benefit of using the R‐clip shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "R‐clips are similar in function to split pins and linchpins.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Compared to split pins, they are easier to remove and are re‐ usable. They are particularly common in automotive and construction applications, such as securing hitch pins in trailers or locking parts in place on equipment.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Award 3 @ 5 Marks'.",
+  "questionFigureKey": "engineering-2025-OL-paper-q4ci-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q4-c-iv",
+  "topicId": "eng-2-10",
+  "conceptId": "tool-shown-opposite-use-tool",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q4(c)(iv)",
+  "questionText": "Name tool A shown opposite and give one use for this tool.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Allen key",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Award 3 @ 5 Marks'.",
+  "figureKey": "engineering-2025-OL-paper-q4civ-crop",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Allen key",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2025-ol-q4-d",
+  "topicId": "eng-2-10",
+  "conceptId": "safety-precautions-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q4(d)",
+  "questionText": "State two safety precautions to be observed when using oxy‐acetylene welding equipment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The gas hoses should be checked for damage before starting the welding process.",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The correct PPE is worn while welding, such as dark welding goggles.",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints 'Award 2 @ 4 Marks'."
+ },
+ {
+  "id": "eng-2025-ol-q5-a-i",
+  "topicId": "eng-1-9",
+  "conceptId": "each-plastic-manufacturing-processes-shown-b",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q5(a)(i)",
+  "questionText": "Name each of the plastic manufacturing processes shown at A, B and C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Compression moulding",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Blow moulding",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: Vacuum forming.",
+    "marks": 3
+   }
+  ],
+  "questionFigureKey": "engineering-2025-OL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Compression moulding",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Blow moulding",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Vacuum forming.",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2025-ol-q5-a-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "aid-labelled-diagram-any-manufacturing-processes",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q5(a)(ii)",
+  "questionText": "Describe, with the aid of a labelled diagram, any one of the manufacturing processes named by you, at Q5(a)(i) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A ‐ Compression moulding: A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released.",
+    "marks": 11,
+    "accepts": [
+     "B ‐ Blow molding: Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened moulding.",
+     "C ‐ Vacuum forming: A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Award 1 @ 11 Marks'.",
+  "figureKey": "engineering-2025-OL-scheme-q5aii-sol",
+  "questionFigureKey": "engineering-2025-OL-paper-q5ai-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q5-c",
+  "topicId": "eng-3-1",
+  "conceptId": "safety-precautions-be-observed-when-3d",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q5(c)",
+  "questionText": "State two safety precautions to be observed when 3D printing plastic components.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3D printing may result in the release of ultrafine particles, (UFPs) and volatile organic components (VOCs), it is important to use a ventilation system which contains an air filter.",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "3D printers generate high temperatures and have hot moving parts that can cause injury. Never reach inside a 3D printer while it is in operation. Always allow 3D printers to cool down for at least 5 minutes before reaching inside.",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints 'Award 2 @ 5 Marks'."
+ },
+ {
+  "id": "eng-2025-ol-q5-d",
+  "topicId": "eng-1-9",
+  "conceptId": "select-any-items-shown-below-suitable",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q5(d)",
+  "questionText": "Select any two of the items shown below and name a suitable plastic material for each of the parts identified.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Vehicle chassis – Acrylic",
+    "marks": 10,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Vehicle chassis – Acrylic",
+      "Battery holder – Polypropylene or Nylon",
+      "3D printed part – PLA",
+      "Gears ‐ Nylon"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Award 2 @ 5 Marks'.",
+  "questionFigureKey": "engineering-2025-OL-paper-q5d-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q6-a",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-any-centre-lathe-parts-shown",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q6(a)",
+  "questionText": "Identify any three of the centre lathe parts shown at A, B, C and D.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A ‐ Foot operated safety stop switch",
+    "marks": 15,
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "A ‐ Foot operated safety stop switch",
+      "B ‐ Tailstock",
+      "C ‐ Toolholder",
+      "D ‐ Chuck safety guard"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Award 3 @ 5 Marks'.",
+  "figureKey": "engineering-2025-OL-paper-q6a-crop",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Foot operated safety stop switch",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Tailstock",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Toolholder",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Chuck safety guard",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2025-ol-q6-c-i",
+  "topicId": "eng-2-11",
+  "conceptId": "any-centre-lathe-processes-used-manufacture",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q6(c)(i)",
+  "questionText": "Name any two centre lathe processes used to manufacture the stunt bike pegs. OR Outline one advantage of using CAD in the design and manufacturing process.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Knurling",
+    "marks": 3,
+    "route": "a"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Drilling",
+    "marks": 3,
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "CAD software enables developers to work more quickly, cut production costs and decrease errors.",
+    "marks": 6,
+    "route": "b"
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR; the scheme prints 'Award 2 @ 3 Marks' for the lathe processes and 'Award 1 @ 6 Marks' for the advantage of CAD.",
+  "questionFigureKey": "engineering-2025-OL-paper-q6c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q6-c-iii",
+  "topicId": "eng-2-11",
+  "conceptId": "specify-any-items-personal-protective-equipment",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q6(c)(iii)",
+  "questionText": "Specify any two items of personal protective equipment (PPE) that should be worn when operating a centre lathe. OR Give two advantages of using CNC machines.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wear goggles.",
+    "marks": 4,
+    "route": "a"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Protective clothing i.e. gloves",
+    "marks": 4,
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "High precision",
+    "marks": 4,
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "capable of producing highly complex parts.",
+    "marks": 4,
+    "route": "b"
+   }
+  ],
+  "notes": "The paper sets two (c)s either side of an OR, the stunt bike pegs and CAD/CNC, and the scheme prices their (iii)s alike, \"Award 2 @ 4 Marks\".",
+  "questionFigureKey": "engineering-2025-OL-paper-q6c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q7-a-ii",
+  "topicId": "eng-3-12",
+  "conceptId": "other-type-fit-suggest-suitable-application",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q7(a)(ii)",
+  "questionText": "Name one other type of fit and suggest a suitable application for it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Interference fit",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Application: A roller bearing fitted to a gear shaft.",
+    "marks": 4
+   }
+  ]
+ },
+ {
+  "id": "eng-2025-ol-q7-b-i",
+  "topicId": "eng-3-12",
+  "conceptId": "nominal-diameter-flange-axle-bracket-axle",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q7(b)(i)",
+  "questionText": "The following pipe assembly is to be machined to the dimensions shown. State the: Nominal diameter of the flange;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nominal diameter of the flange; 50.00 mm",
+    "marks": 5
+   }
+  ],
+  "questionFigureKey": "engineering-2025-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q7-b-ii",
+  "topicId": "eng-3-12",
+  "conceptId": "smallest-diameter-hole",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q7(b)(ii)",
+  "questionText": "The following pipe assembly is to be machined to the dimensions shown. State the: Smallest diameter of the hole;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Smallest diameter of the hole; 19.50 mm",
+    "marks": 5
+   }
+  ],
+  "questionFigureKey": "engineering-2025-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q7-b-iii",
+  "topicId": "eng-3-12",
+  "conceptId": "largest-diameter-hole",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q7(b)(iii)",
+  "questionText": "The following pipe assembly is to be machined to the dimensions shown. State the: Largest diameter of the hole;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Largest diameter of the hole; 20.50 mm",
+    "marks": 5
+   }
+  ],
+  "questionFigureKey": "engineering-2025-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q7-b-iv",
+  "topicId": "eng-3-12",
+  "conceptId": "tolerance-hole",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q7(b)(iv)",
+  "questionText": "The following pipe assembly is to be machined to the dimensions shown. State the: Tolerance of the hole.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tolerance of the hole; 1.00 mm",
+    "marks": 5
+   }
+  ],
+  "questionFigureKey": "engineering-2025-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-ol-q7-c",
+  "topicId": "eng-3-12",
+  "conceptId": "any-instruments-shown-application-each-instrument",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q7(c)",
+  "questionText": "Name any three of the instruments shown and give one application of each instrument named.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "(i) Digital vernier callipers",
+    "marks": 9,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "(i) Digital vernier callipers",
+      "(ii) Drill gauge",
+      "(iii) Micrometer",
+      "(iv) Engineering protractor"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "(i) Digital vernier callipers Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurements can be read directly from a digital display.",
+    "marks": 9,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "(i) Digital vernier callipers Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurements can be read directly from a digital display.",
+      "(ii) Drill gauge Used to check the diameter of twist drills.",
+      "(iii) Micrometer Micrometers are specially designed for the measurement of very small objects. They allow for the highly precise measurement of any item that fits between the anvil and spindle.",
+      "(iv) Engineering protractor Used to help in marking out and checking angles."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Name Award 3 @ 3 Marks, Application Award 3 @ 3 Marks'.",
+  "questionFigureKey": "engineering-2025-OL-paper-q7c-crop",
+  "questionFigureIncludesPrompt": false
  }
 ]
