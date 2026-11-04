@@ -278,7 +278,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2021-hl-q2-b-i", topicId: "eng-3-14", conceptId: "ireland-s-national-transport-authority-nta",
     section: "A", questionRef: "2021 HL Q2(b)(i)",
     stem: "Answer all of the following:",
-    questionText: "Ireland’s National Transport Authority (NTA) has extensively researched different types of hybrid vehicles as it plans to purchase up to 500 hybrid buses over the next five years. Explain each of the following types of hybrid vehicle technology: Ireland’s National Transport Authority (NTA) has extensively researched different types of hybrid vehicles as it plans to purchase up to 500 hybrid buses over the next five years. Explain each of the following types of hybrid vehicle technology: Full hybrid;",
+    questionText: "Ireland’s National Transport Authority (NTA) has extensively researched different types of hybrid vehicles as it plans to purchase up to 500 hybrid buses over the next five years. Explain each of the following types of hybrid vehicle technology: Full hybrid;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The Full hybrid (FHEV) uses all the technologies described above and is the most fuel- efficient type of hybrid vehicle. It is also able to operate in series mode, parallel mode or all- electric mode. All-electric mode is self-explanatory and is typically used by FHEVs at low speed (for example up to around 50kph). Series mode also uses the electric motor to drive the wheels but the combustion engine is used at the same time as an on-board generator.", marks: null },
@@ -294,7 +294,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2021-hl-q2-b-ii", topicId: "eng-3-14", conceptId: "ireland-s-national-transport-authority-nta",
     section: "A", questionRef: "2021 HL Q2(b)(ii)",
     stem: "Answer all of the following:",
-    questionText: "Ireland’s National Transport Authority (NTA) has extensively researched different types of hybrid vehicles as it plans to purchase up to 500 hybrid buses over the next five years. Explain each of the following types of hybrid vehicle technology: Ireland’s National Transport Authority (NTA) has extensively researched different types of hybrid vehicles as it plans to purchase up to 500 hybrid buses over the next five years. Explain each of the following types of hybrid vehicle technology: Mild hybrid;",
+    questionText: "Ireland’s National Transport Authority (NTA) has extensively researched different types of hybrid vehicles as it plans to purchase up to 500 hybrid buses over the next five years. Explain each of the following types of hybrid vehicle technology: Mild hybrid;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A mild hybrid is limited to parallel mode, so can really be looked upon as having a battery and a helper motor. The electric motor is not powerful enough to drive the wheels at any significant speed without the assistance of the combustion engine.", marks: null },
@@ -310,7 +310,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2021-hl-q2-b-iii", topicId: "eng-3-14", conceptId: "ireland-s-national-transport-authority-nta",
     section: "A", questionRef: "2021 HL Q2(b)(iii)",
     stem: "Answer all of the following:",
-    questionText: "Ireland’s National Transport Authority (NTA) has extensively researched different types of hybrid vehicles as it plans to purchase up to 500 hybrid buses over the next five years. Explain each of the following types of hybrid vehicle technology: Ireland’s National Transport Authority (NTA) has extensively researched different types of hybrid vehicles as it plans to purchase up to 500 hybrid buses over the next five years. Explain each of the following types of hybrid vehicle technology: Plug-in hybrid.",
+    questionText: "Ireland’s National Transport Authority (NTA) has extensively researched different types of hybrid vehicles as it plans to purchase up to 500 hybrid buses over the next five years. Explain each of the following types of hybrid vehicle technology: Plug-in hybrid.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "As the name implies, this type of hybrid can be plugged into an electric outlet to recharge their batteries, as well as being charged on the move.", marks: null },
@@ -401,7 +401,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q3-a-i", topicId: "eng-3-8", conceptId: "brinell-hardness-test-vickers-hardness-test",
     section: "A", questionRef: "2021 HL Q3(a)(i)",
-    questionText: "Select any two from (a)(i), (ii) or (iii) below and explain the difference between the terms in each: Select any two from (a)(i), (ii) or (iii) below and explain the difference between the terms in each: Brinell hardness test and Vickers hardness test;",
+    questionText: "Select any two from (a)(i), (ii) or (iii) below and explain the difference between the terms in each: Brinell hardness test and Vickers hardness test;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A hardened Steel or Tungsten Carbide ball indenter is used in this hardness test.", marks: null },
@@ -425,7 +425,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q3-a-ii", topicId: "eng-3-8", conceptId: "yield-strength-ultimate-tensile-strength",
     section: "A", questionRef: "2021 HL Q3(a)(ii)",
-    questionText: "Select any two from (a)(i), (ii) or (iii) below and explain the difference between the terms in each: Select any two from (a)(i), (ii) or (iii) below and explain the difference between the terms in each: Yield strength and ultimate tensile strength;",
+    questionText: "Select any two from (a)(i), (ii) or (iii) below and explain the difference between the terms in each: Yield strength and ultimate tensile strength;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Yield strength is the maximum tensile load the material can withstand without being permanently stretched. In a tensile test, the ‘straight line’ part of the graph represents the elasticity of the material and where the straight line finishes is the yield point or strength.", marks: null },
@@ -440,7 +440,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q3-a-iii", topicId: "eng-3-8", conceptId: "izod-impact-testing-charpy-impact-testing",
     section: "A", questionRef: "2021 HL Q3(a)(iii)",
-    questionText: "Select any two from (a)(i), (ii) or (iii) below and explain the difference between the terms in each: Select any two from (a)(i), (ii) or (iii) below and explain the difference between the terms in each: Izod impact testing and Charpy impact testing.",
+    questionText: "Select any two from (a)(i), (ii) or (iii) below and explain the difference between the terms in each: Izod impact testing and Charpy impact testing.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "167 joules striking energy.", marks: null },
@@ -623,7 +623,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q4-c-iii", topicId: "eng-2-6", conceptId: "upper-critical-temperature-uct-lower-critical",
     section: "A", questionRef: "2021 HL Q4(c)(iii)",
-    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Upper critical temperature (UCT) and lower critical temperature (LCT).",
+    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Upper critical temperature (UCT) and lower critical temperature (LCT).",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The upper critical temperature (UCT) in the iron carbon phase diagram is the “V” shaped line boundary above which solid solution austenite exists. Its “V” point is at 0.83% carbon content called the eutectoid point.", marks: null },
@@ -712,7 +712,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q5-c-i", topicId: "eng-1-3", conceptId: "solid-solution-alloy-partial-solubility-alloy",
     section: "A", questionRef: "2021 HL Q5(c)(i)",
-    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Solid solution alloy and partial solubility alloy;",
+    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Solid solution alloy and partial solubility alloy;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "In a Solid Solution alloy, the two metals are completely soluble in each other in all three states. The solid solution can be substitutional or interstitial in nature.", marks: null },
@@ -727,7 +727,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q5-c-ii", topicId: "eng-1-3", conceptId: "crystalline-amorphous-solid-structures",
     section: "A", questionRef: "2021 HL Q5(c)(ii)",
-    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Crystalline and amorphous solid structures;",
+    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Crystalline and amorphous solid structures;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Crystalline Structures - these structures have regular, geometric and repeating molecular patterns i.e. BCC, FCC CPH.", marks: null },
@@ -1860,7 +1860,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q5-c-i", topicId: "eng-1-3", conceptId: "impact-dislocation-crystal-structures",
     section: "A", questionRef: "2022 HL Q5(c)(i)",
-    questionText: "Select any two from (i), (ii) or (iii) below and explain: Select any two from (i), (ii) or (iii) below and explain: The impact of a dislocation in crystal structures.",
+    questionText: "Select any two from (i), (ii) or (iii) below and explain: The impact of a dislocation in crystal structures.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Dislocations can move as far as grain boundaries under a shear stress. Fine grained metals are stronger, stiffer and harder than coarse grained metals.", marks: null },
@@ -1875,7 +1875,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q5-c-ii", topicId: "eng-3-1", conceptId: "possible-corrosive-effects-environment-metal-objects",
     section: "A", questionRef: "2022 HL Q5(c)(ii)",
-    questionText: "Select any two from (i), (ii) or (iii) below and explain: Select any two from (i), (ii) or (iii) below and explain: The possible corrosive effects of the environment on metal objects.",
+    questionText: "Select any two from (i), (ii) or (iii) below and explain: The possible corrosive effects of the environment on metal objects.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Ferrous metals (e.g. steel) may rust. This may cause early failure of steel products.", marks: null },
@@ -2989,7 +2989,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q5-c-i", topicId: "eng-1-3", conceptId: "body-centred-cubic-bcc-face-centred",
     section: "A", questionRef: "2023 HL Q5(c)(i)",
-    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Body Centred Cubic (BCC) and Face Centred Cubic (FCC) structures.",
+    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Body Centred Cubic (BCC) and Face Centred Cubic (FCC) structures.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The body-centred cubic unit cell has atoms at each of the eight corners of a cube, plus one atom in the centre of the cube (total of 9 atoms). BCC metals tend to be strong and brittle.", marks: null },
@@ -3004,7 +3004,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q5-c-iii", topicId: "eng-1-3", conceptId: "solid-solution-alloys-partial-solubility-alloys",
     section: "A", questionRef: "2023 HL Q5(c)(iii)",
-    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Solid solution alloys and partial solubility alloys.",
+    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: Solid solution alloys and partial solubility alloys.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "In a Solid Solution alloy, the two metals are completely soluble in each other in all three states. The solid solution can be substitutional or interstitial in nature, copper-nickel and iron-chromium are examples.", marks: null },
@@ -4238,7 +4238,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2024-hl-q5-c-ii", topicId: "eng-3-7", conceptId: "other-than-sacrificial-protection-suggest-suitable",
     section: "A", questionRef: "2024 HL Q5(c)(ii)",
     stem: ".",
-    questionText: "Answer any two of the following: Answer any two of the following: Other than sacrificial protection, suggest two suitable methods that could be used to protect steel from the possible corrosive effects of the environment.",
+    questionText: "Answer any two of the following: Other than sacrificial protection, suggest two suitable methods that could be used to protect steel from the possible corrosive effects of the environment.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Barrier coatings like paint, plastic powder/dip coating.", marks: null },

@@ -61,6 +61,7 @@ from lib import (Author, Refused, COMMAND_WORD,          # noqa: E402
 from eng_scheme import EngScheme                            # noqa: E402
 from eng_topics import topic_for, concept_for               # noqa: E402
 import cardlint                                             # noqa: E402
+import eng_residue                                          # noqa: E402
 
 MAX_ROWS = 12
 
@@ -590,6 +591,33 @@ def rows_for(notation, total, rule, points, required=False):
     return ('point', None, {'kind': 'questionTotal'}, None)
 
 
+def topic_for_part(A, q, letter, roman, ask):
+    """The syllabus topic for a residue part, by the main loop's own order.
+
+    The ask first, then the part and question above it, then the stimulus --
+    the cascade main() applies inline, kept here for eng_residue so the loop
+    itself is untouched.
+    """
+    topic, _ = topic_for(ask)
+    if topic:
+        return topic
+    for above in ((q, letter, None), (q, None, None)):
+        if above == (q, letter, roman):
+            continue
+        try:
+            topic, _ = topic_for(A.paper.text(*above) or '')
+        except Exception:                                    # noqa: BLE001
+            topic = None
+        if topic:
+            return topic
+    try:
+        topic, _ = topic_for((A.paper.stem(q, letter) or '') + ' '
+                             + (A.paper.stem(q) or ''))
+    except Exception:                                        # noqa: BLE001
+        topic = None
+    return topic
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--report', action='store_true')
@@ -622,10 +650,21 @@ def main():
 
     idx = R.leaf_index(census_subject('engineering'))
     cards, refused = [], collections.Counter()
+    residue = {}
+    figs_all = (json.load(open(manifest)) if os.path.exists(manifest) else {})
     verdicts = []
     examples = collections.defaultdict(list)
 
     for (year, level, _), leaves in sorted(idx.items()):
+        # A sitting is authored once its scheme has been extracted to the
+        # markdown the provenance gate reads; until then it stays open in the
+        # ledger rather than stopping every other sitting. The census now
+        # walks the whole 2010-2026 archive and the practical-test briefs
+        # ('cl', no written asks), and only 2021-2025 have schemes extracted.
+        if not leaves or not os.path.exists(os.path.join(
+                ROOT, 'examiner-reports', 'engineering', 'schemes',
+                f'{year}-{level}.md')):
+            continue
         A = Author('engineering', year, level)
         # The SAME scheme instance lib.card builds the card from, so that what
         # this loop resolves and selects with `use` is the list the card is
@@ -989,6 +1028,12 @@ def main():
                 seen.add(key)
             except Refused as exc:
                 note(str(exc).split(':', 1)[-1].strip()[:60])
+        # The parts this loop refuses and a person has since authored from
+        # the page (eng_residue/), built by the same lib.card under the same
+        # gates. Last, so nothing above can move because of them.
+        residue[(year, level)] = eng_residue.build(
+            A, year, level, {c['id'] for c in A.cards}, set(figs_all),
+            topic_for_part, keeps_stem, concept_for)
         cards.extend(A.cards)
 
     if args.verdicts:
@@ -999,7 +1044,8 @@ def main():
         print(f'wrote {args.verdicts}: {len(verdicts)} refusals')
     if args.report:
         total = sum(len(v) for v in idx.values())
-        print(f'{len(cards)} card(s) from {total} asks')
+        print(f'{len(cards)} card(s) from {total} asks, '
+              f'{sum(len(v) for v in residue.values())} of them from eng_residue')
         limit = 60 if args.all else 3
         for reason, n in refused.most_common():
             print(f'   {n:4} REFUSED  {reason}')

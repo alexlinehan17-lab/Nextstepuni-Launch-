@@ -91,8 +91,13 @@ describe('paired Mark Bank / Topic Atlas source reviews', () => {
         expect(new Set(bindings.map(c => c.cardId)).size).toBe(bindings.length);
         expect(new Set(review.questions.map(q => q.n)).size).toBe(review.questions.length);
         for (const q of review.questions) {
-          const anchor = JSON.parse(fs.readFileSync(`public/paper-anchors/${review.year}/${q.fileid}.json`, 'utf8'));
-          expect(anchor.paperOnly).toBe(1);
+          // A hosted paper-only anchor where the paper has one (Construction
+          // Studies); otherwise the classic scheme-crop answer map the viewer
+          // loads (Engineering), which must exist and hold the question.
+          const hosted = `public/paper-anchors/${review.year}/${q.fileid}.json`;
+          const classic = `scripts/paper-trail/answers/${review.year}/${q.fileid}.json`;
+          const anchor = JSON.parse(fs.readFileSync(fs.existsSync(hosted) ? hosted : classic, 'utf8'));
+          if (fs.existsSync(hosted)) expect(anchor.paperOnly).toBe(1);
           expect(anchor.q.some((item: { n: string }) => item.n === q.n)).toBe(true);
         }
       });

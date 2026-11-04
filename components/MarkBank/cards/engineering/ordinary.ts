@@ -328,7 +328,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q4-b-i", topicId: "eng-2-10", conceptId: "why-flux-required-electrode-during-manual",
     section: "A", questionRef: "2021 OL Q4(b)(i)",
-    questionText: "Answer any three of the following in relation to manual metal arc welding: Answer any three of the following in relation to manual metal arc welding: Why is a flux required on the electrode during manual metal arc welding?",
+    questionText: "Answer any three of the following in relation to manual metal arc welding: Why is a flux required on the electrode during manual metal arc welding?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Flux protects the weld area and prevents oxidisation during welding.", marks: 4 },
@@ -349,7 +349,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q4-b-ii", topicId: "eng-2-10", conceptId: "function-welding-earth-clamp-shown",
     section: "A", questionRef: "2021 OL Q4(b)(ii)",
-    questionText: "Answer any three of the following in relation to manual metal arc welding: Answer any three of the following in relation to manual metal arc welding: What is the function of the welding earth clamp shown?",
+    questionText: "Answer any three of the following in relation to manual metal arc welding: What is the function of the welding earth clamp shown?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.", marks: 4 },
@@ -999,7 +999,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q4-c-iii", topicId: "eng-2-10", conceptId: "relation-soldering-term-sweated-joint-example",
     section: "A", questionRef: "2022 OL Q4(c)(iii)",
-    questionText: "Answer any three of the following: Answer any three of the following: In relation to soldering, explain the term sweated joint and give one example where a sweated joint might be used.",
+    questionText: "Answer any three of the following: In relation to soldering, explain the term sweated joint and give one example where a sweated joint might be used.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "When a soldered joint is over a large area, a method know as ‘sweating’ can be used. Both parts are first tinned with a light coat of solder.", marks: null },

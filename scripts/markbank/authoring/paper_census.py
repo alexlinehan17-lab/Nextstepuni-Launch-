@@ -80,7 +80,15 @@ SUBJECTS = {
     # to the merged default, and reconcile --all iterates SUBJECTS and so
     # walked straight past 466 shipping cards. Registering it puts Engineering
     # under the same ratchet as every other subject.
-    'engineering': {'mode': 'merged'},
+    #
+    # Question 1 is set as thirteen short parts, (a) to (m), in every sitting
+    # 2010-2026, and the continuity check's default run stops at (l): each of
+    # the 34 papers reported a letter-gap on a question with no gap in it
+    # ("letters found: ['a', ... 'l', 'm']"). The run is stated here rather
+    # than widened for everyone, because widening the default would move
+    # other subjects' flag counts; (m) is the last letter any Engineering
+    # paper prints.
+    'engineering': {'mode': 'merged', 'letters': 'abcdefghijklm'},
     # One booklet per sitting numbered Q1..Q18 straight through its three
     # sections — Section A short questions, Section B the case study,
     # Section C the long questions — so the generic merged walker reads it.
@@ -558,6 +566,11 @@ def _letter_run(subject):
         run = cfg(subject, 'letters')
     except Exception:                                          # noqa: BLE001
         run = None
+    # A subject may state its run in SUBJECTS too (Engineering's (a)-(m)).
+    # continuity_flags also calls this with a LIST of letters (its result is
+    # overwritten on the next line there), so only a subject name is looked up.
+    if not run and isinstance(subject, str):
+        run = SUBJECTS.get(subject, {}).get('letters')
     return list(run) if run else [chr(ord('a') + i) for i in range(12)]
 
 
@@ -599,6 +612,56 @@ SHORT_ASKS = {
                                                    'genetics:"'),
     ('biology', 2013, 'ol', 'Q11(a)(ii)'): ('Niche.', 'p9: the term "Niche." under "Explain the following terms as '
                                                      'used in ecology:"'),
+    # Engineering, 2021-2025, each opened on its page. Two layouts, both the
+    # paper's: a lead-in over a list of one-word items set as romans, and a
+    # row of photographs captioned (i) to (iv) with no words at all. Every
+    # Ordinary Q7(c) prints four instrument photographs, then OR, then a
+    # second (c) whose own romans stop at (iii), so its (iv) is a caption.
+    ('engineering', 2021, 'ol', 'Q2(d)(iii)'): ('Brass.', 'p3: the alloy "Brass." in "(i) Solder, (ii) Bronze, '
+                                                          '(iii) Brass." under "Name the metals used to produce any two '
+                                                          'of the alloys listed below:"'),
+    ('engineering', 2021, 'ol', 'Q5(c)(i)'): ('Basin', 'p6: the caption "(i) Basin" under the first of three household '
+                                                       'items, under "Select any two of the household items shown '
+                                                       'below and name a plastic material which is suitable to produce '
+                                                       'each:"'),
+    **{('engineering', 2021, 'ol', f'Q6(a)({r})'): ('', f'p7: the caption "({r})" under the {n} of four lathe-part '
+                                                        'photographs, under "Identify any three of the lathe parts '
+                                                        'shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    **{('engineering', 2021, 'ol', f'Q7(c)({r})'): ('', f'p8: the caption "({r})" under the {n} of four instrument '
+                                                        'photographs, under "Name any three of the instruments shown '
+                                                        'and give one application of each instrument named:"; the OR '
+                                                        'branch\'s (c) sets only (i) and (ii)')
+       for r, n in (('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2022, 'ol', 'Q6(b)(iv)'): ('Feed.', 'p7: the term "(iv) Feed." under "Explain any three of the '
+                                                        'following in relation to the machining of metals:"'),
+    ('engineering', 2023, 'ol', 'Q6(b)(iv)'): ('Feed.', 'p7: the term "(iv) Feed." under "Explain any three of the '
+                                                        'following in relation to machining:"'),
+    ('engineering', 2023, 'ol', 'Q7(c)(iv)'): ('', 'p8: the caption "(iv)" under the fourth of four instrument '
+                                                   'photographs (a try square), under "Name any three of the '
+                                                   'instruments shown and give one application of each instrument '
+                                                   'named."; the OR branch\'s (c) sets only (i) to (iii)'),
+    ('engineering', 2024, 'ol', 'Q1(m)(i)'): ('Swarf,', 'p2: the term "(i) Swarf," under "Explain any one of the '
+                                                        'following:"'),
+    ('engineering', 2024, 'ol', 'Q5(b)(ii)'): ('Nylon,', 'p6: the material "Nylon," in the list under "Select any two '
+                                                         'of the plastic materials listed below and identify one '
+                                                         'suitable product which can be manufactured from each of the '
+                                                         'plastic materials selected."'),
+    ('engineering', 2024, 'ol', 'Q7(c)(iv)'): ('', 'p8: the caption "(iv)" under the fourth of four instrument '
+                                                   'photographs (a protractor), under "Name any three of the '
+                                                   'instruments shown and give one application of each instrument '
+                                                   'named."; the OR branch\'s (c) sets only (i) to (iii)'),
+    ('engineering', 2025, 'ol', 'Q5(d)(iv)'): ('Gears.', 'p6: the item "(iv) Gears." under "Select any two of the '
+                                                         'items shown below and name a suitable plastic material for '
+                                                         'each of the parts identified."'),
+    ('engineering', 2025, 'ol', 'Q6(b)(iv)'): ('Swarf.', 'p7: the term "(iv) Swarf." under "Explain any three of the '
+                                                         'following in relation to machining:"'),
+    ('engineering', 2025, 'ol', 'Q7(c)(iv)'): ('PCB', 'p8: the caption "(iv)" under the fourth of four instrument '
+                                                      'photographs (a protractor), under "Name any three of the '
+                                                      'instruments shown and give one application of each '
+                                                      'instrument named."; the OR branch\'s (c) sets only (i) to '
+                                                      '(iii), and the word read is the callout "PCB" printed on that '
+                                                      'branch\'s circuit-board photograph'),
 }
 
 
@@ -822,6 +885,11 @@ def key_label(k, subject=None):
     return head + tail
 
 
+# Subjects whose papers may print a question's tariff BEFORE its head in the
+# text layer ("(50 marks) Question 4."); see marks_by_question.
+TARIFF_FIRST_HEADS = {'engineering'}
+
+
 def marks_by_question(P_files, subject):
     """{(section?, q): marks} read independently of the part reader.
 
@@ -839,6 +907,21 @@ def marks_by_question(P_files, subject):
                 section = s.group(1)
             h = re.match(r'^(?:Question\s+(\d{1,2})\b|(\d{1,2})\.\s+(?=[A-Z(\d]))',
                          block.strip())
+            # The tariff can come FIRST in the block that carries the head:
+            # 2024 HL Engineering sets "(50 marks)" at the right of the
+            # "Question 4." and "Question 5." lines, and the text layer reads
+            # those two lines as "(50 marks) Question 4." -- so the head was
+            # missed, the 50 was offered to Question 3, and the paper summed
+            # to 350 over seven questions where it prints 450 over nine.
+            # Engineering only (TARIFF_FIRST_HEADS): read for every subject it
+            # moved 2024 Ordinary Home Economics from 80 over four questions
+            # to 110 over six, a reading no one has checked.
+            if not h and subject in TARIFF_FIRST_HEADS:
+                lead = re.match(r'^\(\s*\d{1,3}\s*marks?\)\s*(?=Question\s+\d)',
+                                block.strip(), re.I)
+                if lead:
+                    h = re.match(r'^Question\s+(\d{1,2})\b()',
+                                 block.strip()[lead.end():])
             if not h:
                 un = PP.RUBRIC_HEAD.sub('', block.strip())
                 if un != block.strip():
