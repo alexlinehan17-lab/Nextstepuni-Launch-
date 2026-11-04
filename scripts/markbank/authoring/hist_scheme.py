@@ -97,7 +97,9 @@ ESSAY = re.compile(r'^(\d)\.\s+Max\.?\s*CM\s*=?\s*(\d+)\s+Max\.?\s*OE\s*=?\s*(\d
 # (during + after) If only ONE, Max. CM = 50". 2021 wraps its "If only ONE"
 # clause onto a line of its own, and 2025 opens one NOTE with a stray "(".
 NOTE_HEAD = re.compile(r'^\(?NOTE\s*:', re.I)
-NOTE_CONT = re.compile(r'^If only\b', re.I)
+# ... and "Consider this when awarding CM and OE." under a NOTE that prints no
+# ceiling ("NOTE: How important was ...?", 2014 Higher).
+NOTE_CONT = re.compile(r'^(?:If only|Consider this when awarding)\b', re.I)
 # A NOTE's own aside on a line of its own, between its head and its ceiling:
 # "NOTE: TWO elements" / "(two of the GAA, the Gaelic League and/or W.B.
 # Yeats)" / "If only ONE, Max. CM = 50" (2020 Higher).
@@ -282,6 +284,7 @@ SCHEME_MISPRINTS = {
 }
 BULLET = re.compile(r'^[•●▪·]\s*(.*)$')
 TRAILING_M = re.compile(r'\s*(\d{1,3})M\s*(?:max)?\s*$', re.I)
+WHOLE_SCALE = re.compile(r'\b(?:Answer to be marked|answer as a whole and mark) on a sliding scale out of (\d{1,2})\b', re.I)
 # The ask's CEILING, wherever the SEC writes it: "Max = 10M", "max 10M",
 # "Max. 5m". It is the authority on what a part is worth, because the flat
 # figures beside it are the split ("5M + 5M") or a partial-credit rule ("If
@@ -322,6 +325,8 @@ GRID_LINE = re.compile(
     r'|Marks?\b[^.]{0,60}\bsliding scale\b'
     # 2017: "Take the answer as a whole and mark on a sliding scale out of 10:"
     r'|Take the answer as a whole\b'
+    # "Strength and weakness each to be marked on a sliding scale out of 5:" (2014)
+    r'|.{0,80}\bto be marked on a sliding scale\b'
     r'|Mark by the principle of Core Statement'
     r'|Assess (?:the )?answer on'
     r'|Excellent\s*[:=]|Very good\s*[:=]|Good\s*[:=]|Fair\s*[:=]'
@@ -493,6 +498,32 @@ Q4_ITEM = re.compile(r'^[A-Z][\w ]{0,30} = ')
 
 
 Q4_RESTATED = re.compile(r'^Max\.?\s*(?:CM|OE)\s*=\s*\d+$')
+
+
+# Q4's own examiner notes printed between its head and "In question 4, marking
+# by paragraph begins." (2014-2016 Higher): "An answer which relies wholly on
+# material taken from the documents should be marked as a paragraph
+# equivalent with a max OE of 5.", "The question asks about the significance
+# of the Eucharistic Congress. ...", "Material which narrates the events of the
+# Congress without reference to their significance = no more than Fair on
+# OE". Each opens on one of these words; anything printed before the first
+# (a reprinted question, 2019 on) is not a note.
+Q4_NOTE_OPEN = re.compile(r'^(?:An answer which|The question asks|Material which|Note that the question)\b')
+
+
+def _q4_notes_before(lines):
+    """Q4's examiner notes printed above its marking line, each joined from its wrapped lines."""
+    notes = []
+    for line in lines:
+        if Q4_MARKING_BEGINS.match(line) or Q4_ELEMENTS.match(line):
+            break
+        if not line or PAGE_MARK.match(line) or PAGE_FOOTER.match(line):
+            continue
+        if Q4_NOTE_OPEN.match(line):
+            notes.append(line)
+        elif notes:
+            notes[-1] = f'{notes[-1]} {line}'
+    return [' '.join(n.split()) for n in notes]
 
 
 def _q4_between(lines):
@@ -909,6 +940,15 @@ class HistScheme:
                     flat = int(m.group(1))
                     line = TRAILING_PAREN.sub('', line)
             out.append(line.strip())
+        if ceiling is None and flat is None:
+            # The whole answer's own scale is its tariff where the scheme
+            # prints no other: "Answer to be marked on a sliding scale out of
+            # 10:" with no "Max = 10M" under it (2014 Ordinary Q3(b)). A
+            # per-document scale ("Each document ... out of 5") is not.
+            for line in lines:
+                m = WHOLE_SCALE.search(line)
+                if m:
+                    ceiling = int(m.group(1))
         return (ceiling if ceiling is not None else flat), out
 
     def _finish(self, ask, buf):
@@ -1129,6 +1169,10 @@ class HistScheme:
             if (not line or PAGE_MARK.match(line) or PAGE_FOOTER.match(line)
                     or SCHEME_FURNITURE.match(line)):
                 continue
+            if re.match(r'^Notes on individual topics$', line):
+                # 2014 prints this head between the grading guidance and
+                # "SECTION 2:"; it belongs to no direction.
+                continue
             pages.add(self.pages[i])
             if i in between:
                 continue
@@ -1237,7 +1281,7 @@ class HistScheme:
             out['elements'], out['elementCaps'] = _q4_elements(self.lines[lo:hi])
             if q4_note:
                 out['note'] = q4_note
-            for direction in q4_directions:
+            for direction in _q4_notes_before(self.lines[lo + 1:hi]) + q4_directions:
                 out['oe' if re.search(r'\bOE\b', direction) else 'cm']['directions'].append(direction)
         return out
 

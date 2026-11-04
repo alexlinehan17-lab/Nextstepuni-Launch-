@@ -331,7 +331,12 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
     printed = P.marks.get(key)
     if ask.total != total or (printed is not None and printed != total):
         return 'the paper, the scheme and the CM + OE maxima disagree'
-    if ask.note is not None:
+    if ask.note is not None and not ask.note_caps and not NOTE_CAP.search(ask.note):
+        # A NOTE that prints no ceiling ("NOTE: How important was ...? Consider
+        # this when awarding CM and OE.", 2014 Higher) is a direction, as Q4's
+        # elements without a ceiling are.
+        rubric_cm['directions'] = [ask.note, *rubric_cm['directions']]
+    elif ask.note is not None:
         if not ask.note_caps or not all(0 < top < cm['max'] for _when, top in ask.note_caps):
             return "the question's NOTE prints no CM ceiling below the maximum"
         rubric_cm['elementRule'] = {'note': ask.note,
