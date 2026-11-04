@@ -24,29 +24,54 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "q1",
+          "label": "Ceist 1",
           "kind": "award",
-          "maxMarks": 8,
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. Cad atá á lorg ag Ollscoil na hÉireann, Gaillimh? 2 mharc Oifigeach Gaeilge = 2 mharc Oifigeach = 1 mharc"
+          ]
+        },
+        {
+          "id": "q2",
+          "label": "Ceist 2",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. Cén dualgas a bheidh ar an duine a cheapfar? 2 mharc Imeachtaí a eagrú a chuirfidh an Ghaeilge chun cinn = 2 mharc Imeachtaí a eagrú = 1 mharc Imeachtaí Gaeilge (Gaelacha) a eagrú = 1 mharc An Ghaeilge a chur chun cinn = 1 mharc"
+          ]
+        },
+        {
+          "id": "q3",
+          "label": "Ceist 3",
+          "kind": "award",
+          "maxMarks": 4,
           "permittedMarks": [
             0,
             1,
             2,
             3,
-            4,
-            5,
-            6,
-            7,
-            8
+            4
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "FÓGRA A hAON (8 marc) 1. Cad atá á lorg ag Ollscoil na hÉireann, Gaillimh? 2 mharc Oifigeach Gaeilge = 2 mharc Oifigeach = 1 mharc 2. Cén dualgas a bheidh ar an duine a cheapfar? 2 mharc Imeachtaí a eagrú a chuirfidh an Ghaeilge chun cinn = 2 mharc Imeachtaí a eagrú = 1 mharc Imeachtaí Gaeilge (Gaelacha) a eagrú = 1 mharc An Ghaeilge a chur chun cinn = 1 mharc 3. Scríobh síos dhá cháilíocht atá riachtanach don phost seo.",
-            "2 mharc + 2 mharc Gaeilge líofa (den scoth/an-mhaith) = 2 mharc Scileanna maithe cumarsáide = 2 mharc Cumas maith eagrúcháin = 2 mharc Gaeilge = 1 mharc Scileanna cumarsáide = 1 mharc Cumas eagrúcháin = 1 mharc"
+            "3. Scríobh síos dhá cháilíocht atá riachtanach don phost seo. 2 mharc + 2 mharc Gaeilge líofa (den scoth/an-mhaith) = 2 mharc Scileanna maithe cumarsáide = 2 mharc Cumas maith eagrúcháin = 2 mharc Gaeilge = 1 mharc Scileanna cumarsáide = 1 mharc Cumas eagrúcháin = 1 mharc"
           ]
         }
       ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
+      "markingGuideNote": "The listed responses and tariffs come from the 2021 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published tariff (2, or 2 + 2 for two points). Scheme PDF 3: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.” This 0–3 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–3), never inside a single card.",
       "audioMaterial": {
         "kind": "source-audio",
         "label": "Cuid A · Fógra a hAon",
@@ -57,7 +82,25 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
       },
-      "paperFileid": "LC001ALP100IV"
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "L-A-F1",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        2
+      ],
+      "schemePages": [
+        7
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid A · Fógra a hAon",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Cluastuiscint Cuid A · Fógra a hAon",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-listening-a-f2",
@@ -80,32 +123,67 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "q1a",
+          "label": "Ceist 1(a)",
           "kind": "award",
-          "maxMarks": 10,
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. (a) Cé a chuir amach an fógra seo? 2 mharc Cumann na Múinteoirí Staire = 2 mharc Múinteoirí Staire = 1 mharc"
+          ]
+        },
+        {
+          "id": "q1b",
+          "label": "Ceist 1(b)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén fáth a bhfuil an comórtas scríbhneoireachta seo á eagrú? 2 mharc Comóradh a dhéanamh ar Chogadh na Saoirse = 2 mharc Comóradh ar Chogadh na Saoirse = 2 mharc"
+          ]
+        },
+        {
+          "id": "q2",
+          "label": "Ceist 2",
+          "kind": "award",
+          "maxMarks": 4,
           "permittedMarks": [
             0,
             1,
             2,
             3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
+            4
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "FÓGRA A DÓ (10 marc) 1. (a) Cé a chuir amach an fógra seo? 2 mharc Cumann na Múinteoirí Staire = 2 mharc Múinteoirí Staire = 1 mharc (b) Cén fáth a bhfuil an comórtas scríbhneoireachta seo á eagrú? 2 mharc Comóradh a dhéanamh ar Chogadh na Saoirse = 2 mharc Comóradh ar Chogadh na Saoirse = 2 mharc 2. Luaigh dhá rud a chaithfidh na scoláirí a dhéanamh le cur isteach ar an gcomórtas seo.",
-            "2 mharc + 2 mharc Taighde a dhéanamh ar phearsa a ghlac páirt sa chogadh = 2 mharc Taighde a dhéanamh ar phearsa sa chogadh = 2 mharc Cuntas a scríobh ar an tábhacht a bhain leis an bpearsa sin sa chogadh = 2 mharc Cuntas a scríobh ar phearsa sa chogadh = 2 mharc Taighde a dhéanamh = 1 mharc Cuntas a scríobh = 1 mharc Taighde = 1 mharc 3. Cad é an dáta deireanach le haghaidh na n-iontrálacha?",
-            "2 mharc An seachtú lá is fiche de mhí Aibreáin = 2 mharc 27 Aibreán = 2 mharc 27/04 = 2 mharc"
+            "2. Luaigh dhá rud a chaithfidh na scoláirí a dhéanamh le cur isteach ar an gcomórtas seo. 2 mharc + 2 mharc Taighde a dhéanamh ar phearsa a ghlac páirt sa chogadh = 2 mharc Taighde a dhéanamh ar phearsa sa chogadh = 2 mharc Cuntas a scríobh ar an tábhacht a bhain leis an bpearsa sin sa chogadh = 2 mharc Cuntas a scríobh ar phearsa sa chogadh = 2 mharc Taighde a dhéanamh = 1 mharc Cuntas a scríobh = 1 mharc Taighde = 1 mharc"
+          ]
+        },
+        {
+          "id": "q3",
+          "label": "Ceist 3",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "3. Cad é an dáta deireanach le haghaidh na n-iontrálacha? 2 mharc An seachtú lá is fiche de mhí Aibreáin = 2 mharc 27 Aibreán = 2 mharc 27/04 = 2 mharc"
           ]
         }
       ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
+      "markingGuideNote": "The listed responses and tariffs come from the 2021 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published tariff (2, or 2 + 2 for two points). Scheme PDF 3: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.” This 0–3 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–3), never inside a single card.",
       "audioMaterial": {
         "kind": "source-audio",
         "label": "Cuid A · Fógra a Dó",
@@ -116,7 +194,26 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
       },
-      "paperFileid": "LC001ALP100IV"
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "L-A-F2",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        2
+      ],
+      "schemePages": [
+        7,
+        8
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid A · Fógra a Dó",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Cluastuiscint Cuid A · Fógra a Dó",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-listening-c-p1",
@@ -139,27 +236,52 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "q1",
+          "label": "Ceist 1",
           "kind": "award",
-          "maxMarks": 6,
+          "maxMarks": 2,
           "permittedMarks": [
             0,
             1,
-            2,
-            3,
-            4,
-            5,
-            6
+            2
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "PÍOSA A hAON (6 mharc) 1. Cad a sheol Uachtarán na hÉireann, Micheál D. Ó hUiginn, ar an 30 Deireadh Fómhair 2020? 2 mharc Foclóir nua Béarla-Gaeilge = 2 mharc Foclóir = 1 mharc 2. Cén áit ar líne a raibh an seoladh oifigiúil ar siúl? 2 mharc Ar leathanach Facebook Fhoras na Gaeilge = 2 mharc Ar Facebook Fhoras na Gaeilge = 2 mharc Ar leathanach Facebook = 1 mharc Ar Facebook = 1 mharc 3.",
-            "Scríobh síos rud amháin atá ar fáil sa saothar nua a sheol an tUachtarán. 2 mharc Tríocha a haon míle iontráil/31 000 iontráil = 2 mharc Tríocha a haon míle focal/31 000 focal = 2 mharc A lán focal nua atá tagtha chun cinn sa Ghaeilge = 2 mharc Focail nua atá tagtha chun cinn sa Ghaeilge = 2 mharc A lán focal nua sa Ghaeilge = 2 mharc A lán focal nua = 1 mharc Forlíonadh gramadaí = 2 mharc"
+            "1. Cad a sheol Uachtarán na hÉireann, Micheál D. Ó hUiginn, ar an 30 Deireadh Fómhair 2020? 2 mharc Foclóir nua Béarla-Gaeilge = 2 mharc Foclóir = 1 mharc"
+          ]
+        },
+        {
+          "id": "q2",
+          "label": "Ceist 2",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. Cén áit ar líne a raibh an seoladh oifigiúil ar siúl? 2 mharc Ar leathanach Facebook Fhoras na Gaeilge = 2 mharc Ar Facebook Fhoras na Gaeilge = 2 mharc Ar leathanach Facebook = 1 mharc Ar Facebook = 1 mharc"
+          ]
+        },
+        {
+          "id": "q3",
+          "label": "Ceist 3",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "3. Scríobh síos rud amháin atá ar fáil sa saothar nua a sheol an tUachtarán. 2 mharc Tríocha a haon míle iontráil/31 000 iontráil = 2 mharc Tríocha a haon míle focal/31 000 focal = 2 mharc A lán focal nua atá tagtha chun cinn sa Ghaeilge = 2 mharc Focail nua atá tagtha chun cinn sa Ghaeilge = 2 mharc A lán focal nua sa Ghaeilge = 2 mharc A lán focal nua = 1 mharc Forlíonadh gramadaí = 2 mharc"
           ]
         }
       ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
+      "markingGuideNote": "The listed responses and tariffs come from the 2021 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published tariff (2, or 2 + 2 for two points). Scheme PDF 3: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.” This 0–3 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–3), never inside a single card.",
       "audioMaterial": {
         "kind": "source-audio",
         "label": "Cuid C · Píosa a hAon",
@@ -170,7 +292,26 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
       },
-      "paperFileid": "LC001ALP100IV"
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "L-C-P1",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        5
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid C · Píosa a hAon",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Cluastuiscint Cuid C · Píosa a hAon",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-listening-c-p2",
@@ -193,31 +334,53 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "q1",
+          "label": "Ceist 1",
           "kind": "award",
-          "maxMarks": 8,
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. Cén eagraíocht dhaonnúil a bhuaigh Duais Nobel na Síochána anuraidh? 2 mharc An Clár Bia Domhanda = 2 mharc"
+          ]
+        },
+        {
+          "id": "q2",
+          "label": "Ceist 2",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. Cén fáth ar bronnadh an onóir seo ar an eagraíocht dhaonnúil sin, de réir Choiste Nobel? 2 mharc As an obair mhór atá déanta acu chun deireadh a chur leis an ocras (ar fud an domhain) = 2 mharc As an obair mhór atá déanta acu = 1 mharc Ag troid i gcoinne an ocrais ar fud an domhain = 2 mharc Ag troid i gcoinne an ocrais = 2 mharc"
+          ]
+        },
+        {
+          "id": "q3",
+          "label": "Ceist 3",
+          "kind": "award",
+          "maxMarks": 4,
           "permittedMarks": [
             0,
             1,
             2,
             3,
-            4,
-            5,
-            6,
-            7,
-            8
+            4
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "PÍOSA A DÓ (8 marc) 1. Cén eagraíocht dhaonnúil a bhuaigh Duais Nobel na Síochána anuraidh? 2 mharc An Clár Bia Domhanda = 2 mharc 2. Cén fáth ar bronnadh an onóir seo ar an eagraíocht dhaonnúil sin, de réir Choiste Nobel?",
-            "2 mharc As an obair mhór atá déanta acu chun deireadh a chur leis an ocras (ar fud an domhain) = 2 mharc As an obair mhór atá déanta acu = 1 mharc Ag troid i gcoinne an ocrais ar fud an domhain = 2 mharc Ag troid i gcoinne an ocrais = 2 mharc 3. Tabhair dhá chúis a dtarlaíonn géarchéimeanna daonnúla.",
-            "2 mharc + 2 mharc Cogaí = 2 mharc Tubaistí nádúrtha = 2 mharc Paindéimeanna (sláinte) = 2 mharc De dheasca an athraithe aeráide = 2 mharc An tAthrú Aeráide/Athrú Aeráide = 2 mharc Tubaistí = 1 mharc Léirigh na marcanna mar seo ar chlúdach na Cluastuisceana: Don Scrúdaitheoir Cuid I: Cluastuiscint Na hIomláin Cuid A, Fógra 1 8 marc Cuid A, Fógra 2 10 marc Cuid B, Comhrá 1 14 mharc Cuid B, Comhrá 2 14 mharc Cuid C, Píosa 1 6 mharc Cuid C, Píosa 2 8 marc Iomlán 60 marc Eolas (60 marc) Gaeilge - (0-3) Móriomlán 3 Roinn ar an bpáipéar scrúdaithe A.",
-            "Aiste nó Alt Nuachtáin / Irise B. Scéal C. Díospóireacht / Óráid An Mharcáil: Iarracht iomlán = 500 – 600 focal (an treoir ar an bpáipéar scrúdaithe), an t-ábhar ad rem agus bunaithe ar an teideal a roghnaíonn an t-iarrthóir."
+            "3. Tabhair dhá chúis a dtarlaíonn géarchéimeanna daonnúla. 2 mharc + 2 mharc Cogaí = 2 mharc Tubaistí nádúrtha = 2 mharc Paindéimeanna (sláinte) = 2 mharc De dheasca an athraithe aeráide = 2 mharc An tAthrú Aeráide/Athrú Aeráide = 2 mharc Tubaistí = 1 mharc"
           ]
         }
       ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
+      "markingGuideNote": "The listed responses and tariffs come from the 2021 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published tariff (2, or 2 + 2 for two points). Scheme PDF 3: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.” This 0–3 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–3), never inside a single card.",
       "audioMaterial": {
         "kind": "source-audio",
         "label": "Cuid C · Píosa a Dó",
@@ -228,7 +391,25 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
       },
-      "paperFileid": "LC001ALP100IV"
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "L-C-P2",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid C · Píosa a Dó",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Cluastuiscint Cuid C · Píosa a Dó",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-listening-b-c1-first",
@@ -251,30 +432,53 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "q1",
+          "label": "Ceist 1",
           "kind": "award",
-          "maxMarks": 8,
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. Cén moladh a rinne an rialtas maidir le cúrsaí taistil sa samhradh? 2 mharc Gan taisteal thar lear = 2 mharc Gan dul thar lear = 2 mharc Saoire a chaitheamh in Éirinn = 2 mharc Fanacht sa tír seo = 2 mharc Fanacht in Éirinn = 2 mharc Saoire sa bhaile = 2 mharc"
+          ]
+        },
+        {
+          "id": "q2",
+          "label": "Ceist 2",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. Cén áit in Éirinn ar chaith Nuala agus a muintir deich lá ar saoire sa samhradh? 2 mharc I nGaoth Dobhair i nGaeltacht Thír Chonaill = 2 mharc I nGaoth Dobhair = 2 mharc I nGaeltacht Thír Chonaill/Dhún na nGall = 2 mharc I nDún na nGall/I dTír Chonaill = 1 mharc I nGaeltacht = 1 mharc"
+          ]
+        },
+        {
+          "id": "q3",
+          "label": "Ceist 3",
+          "kind": "award",
+          "maxMarks": 4,
           "permittedMarks": [
             0,
             1,
             2,
             3,
-            4,
-            5,
-            6,
-            7,
-            8
+            4
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "1. Cén moladh a rinne an rialtas maidir le cúrsaí taistil sa samhradh? 2 mharc Gan taisteal thar lear = 2 mharc Gan dul thar lear = 2 mharc Saoire a chaitheamh in Éirinn = 2 mharc Fanacht sa tír seo = 2 mharc Fanacht in Éirinn = 2 mharc Saoire sa bhaile = 2 mharc 2. Cén áit in Éirinn ar chaith Nuala agus a muintir deich lá ar saoire sa samhradh?",
-            "2 mharc I nGaoth Dobhair i nGaeltacht Thír Chonaill = 2 mharc I nGaoth Dobhair = 2 mharc I nGaeltacht Thír Chonaill/Dhún na nGall = 2 mharc I nDún na nGall/I dTír Chonaill = 1 mharc I nGaeltacht = 1 mharc 3. Luaigh dhá chúis ar roghnaigh Nuala agus a muintir an ceantar sin mar ionad saoire.",
-            "2 mharc + 2 mharc A lán rudaí le déanamh amuigh faoin aer = 2 mharc Rudaí le déanamh amuigh faoin aer = 2 mharc Ábalta dul ar thurais lae = 2 mharc Ábalta dul ar thurais = 2 mharc Ábalta dul chuig a lán áiteanna suimiúla = 2 mharc Fuair siad teach saoire ar cíos réasúnta = 2 mharc A lán rudaí le déanamh = 1 mharc"
+            "3. Luaigh dhá chúis ar roghnaigh Nuala agus a muintir an ceantar sin mar ionad saoire. 2 mharc + 2 mharc A lán rudaí le déanamh amuigh faoin aer = 2 mharc Rudaí le déanamh amuigh faoin aer = 2 mharc Ábalta dul ar thurais lae = 2 mharc Ábalta dul ar thurais = 2 mharc Ábalta dul chuig a lán áiteanna suimiúla = 2 mharc Fuair siad teach saoire ar cíos réasúnta = 2 mharc A lán rudaí le déanamh = 1 mharc"
           ]
         }
       ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
+      "markingGuideNote": "The listed responses and tariffs come from the 2021 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published tariff (2, or 2 + 2 for two points). Scheme PDF 3: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.” This 0–3 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–3), never inside a single card.",
       "audioMaterial": {
         "kind": "source-audio",
         "label": "Cuid B · Comhrá a hAon · An Chéad Mhír",
@@ -285,7 +489,25 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
       },
-      "paperFileid": "LC001ALP100IV"
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "L-B-C1-M1",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        3
+      ],
+      "schemePages": [
+        8
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid B · Comhrá a hAon · An Chéad Mhír",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Cluastuiscint Cuid B · Comhrá a hAon · An Chéad Mhír",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-listening-b-c1-second",
@@ -308,27 +530,39 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "q1",
+          "label": "Ceist 1",
           "kind": "award",
-          "maxMarks": 6,
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. Tabhair cúis amháin nach raibh sé ródheacair dreapadh go barr na hEaragaile, dar le Nuala. 2 mharc Bhí an talamh ar an gcosán tirim = 2 mharc Bhí an talamh tirim = 2 mharc Bhí an cosán tirim = 2 mharc Bhí bróga compordacha siúil orthu/acu/uirthi/aici = 2 mharc Bróga compordacha siúil = 1 mharc Bróga siúil = 1 mharc Bróga compordacha = 1 mharc"
+          ]
+        },
+        {
+          "id": "q2",
+          "label": "Ceist 2",
+          "kind": "award",
+          "maxMarks": 4,
           "permittedMarks": [
             0,
             1,
             2,
             3,
-            4,
-            5,
-            6
+            4
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "1. Tabhair cúis amháin nach raibh sé ródheacair dreapadh go barr na hEaragaile, dar le Nuala. 2 mharc Bhí an talamh ar an gcosán tirim = 2 mharc Bhí an talamh tirim = 2 mharc Bhí an cosán tirim = 2 mharc Bhí bróga compordacha siúil orthu/acu/uirthi/aici = 2 mharc Bróga compordacha siúil = 1 mharc Bróga siúil = 1 mharc Bróga compordacha = 1 mharc 2. Scríobh síos dhá rud a rinne Nuala agus a muintir ar Thoraigh.",
-            "2 mharc + 2 mharc Ghlac siad rothair ar cíos = 2 mharc Rothair ar cíos = 1 mharc Chaith siad an lá ag rothaíocht = 2 mharc Thug siad cuairt ar na suíomhanna staire = 2 mharc Thug siad cuairt ar na suíomhanna seandálaíochta = 2 mharc Rothaíocht = 2 mharc Cuairt ar shuíomhanna = 1 mharc"
+            "2. Scríobh síos dhá rud a rinne Nuala agus a muintir ar Thoraigh. 2 mharc + 2 mharc Ghlac siad rothair ar cíos = 2 mharc Rothair ar cíos = 1 mharc Chaith siad an lá ag rothaíocht = 2 mharc Thug siad cuairt ar na suíomhanna staire = 2 mharc Thug siad cuairt ar na suíomhanna seandálaíochta = 2 mharc Rothaíocht = 2 mharc Cuairt ar shuíomhanna = 1 mharc"
           ]
         }
       ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
+      "markingGuideNote": "The listed responses and tariffs come from the 2021 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published tariff (2, or 2 + 2 for two points). Scheme PDF 3: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.” This 0–3 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–3), never inside a single card.",
       "audioMaterial": {
         "kind": "source-audio",
         "label": "Cuid B · Comhrá a hAon · An Dara Mír",
@@ -339,7 +573,26 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
       },
-      "paperFileid": "LC001ALP100IV"
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "L-B-C1-M2",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        3
+      ],
+      "schemePages": [
+        8,
+        9
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid B · Comhrá a hAon · An Dara Mír",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Cluastuiscint Cuid B · Comhrá a hAon · An Dara Mír",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-listening-b-c2-first",
@@ -362,31 +615,53 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "q1",
+          "label": "Ceist 1",
           "kind": "award",
-          "maxMarks": 8,
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. Cén fáth ar tugadh ardmholadh do Sheán sa chuntas a léigh Caoimhe ar shuíomh gréasáin a scoile? 2 mharc As an taispeántas (den scoth) a thug sé i bpríomhpháirt an cheoldráma = 2 mharc As an taispeántas a thug sé i bpríomhpháirt an cheoldráma = 2 mharc As an taispeántas a thug sé sa cheoldráma/in Oilibhéar = 2 mharc As an bpríomhpháirt sa cheoldráma = 2 mharc As an bpríomhpháirt in Oilibhéar = 2 mharc Taispeántas den scoth = 1 mharc"
+          ]
+        },
+        {
+          "id": "q2",
+          "label": "Ceist 2",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. Conas a mhothaigh Seán nuair a fuair sé an phríomhpháirt sa cheoldráma? 2 mharc Bhí sceitimíní air = 2 mharc Sceitimíní = 2 mharc Bhí áthas/lúcháir/ríméad/gliondar air = 2 mharc Ar éigean a chreid sé é = 2 mharc Ní raibh sé ag tnúth/ag súil leis = 2 mharc Níor chreid sé é = 2 mharc"
+          ]
+        },
+        {
+          "id": "q3",
+          "label": "Ceist 3",
+          "kind": "award",
+          "maxMarks": 4,
           "permittedMarks": [
             0,
             1,
             2,
             3,
-            4,
-            5,
-            6,
-            7,
-            8
+            4
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "1. Cén fáth ar tugadh ardmholadh do Sheán sa chuntas a léigh Caoimhe ar shuíomh gréasáin a scoile?",
-            "2 mharc As an taispeántas (den scoth) a thug sé i bpríomhpháirt an cheoldráma = 2 mharc As an taispeántas a thug sé i bpríomhpháirt an cheoldráma = 2 mharc As an taispeántas a thug sé sa cheoldráma/in Oilibhéar = 2 mharc As an bpríomhpháirt sa cheoldráma = 2 mharc As an bpríomhpháirt in Oilibhéar = 2 mharc Taispeántas den scoth = 1 mharc 2. Conas a mhothaigh Seán nuair a fuair sé an phríomhpháirt sa cheoldráma?",
-            "2 mharc Bhí sceitimíní air = 2 mharc Sceitimíní = 2 mharc Bhí áthas/lúcháir/ríméad/gliondar air = 2 mharc Ar éigean a chreid sé é = 2 mharc Ní raibh sé ag tnúth/ag súil leis = 2 mharc Níor chreid sé é = 2 mharc 3. Luaigh dhá rud a bhí ar Sheán agus ar na haisteoirí eile a dhéanamh le hullmhú don léiriú stáitse.",
-            "2 mharc + 2 mharc Na línte a chur de ghlanmheabhair = 2 mharc Na hamhráin a chleachtadh = 2 mharc Rincí a chleachtadh = 2 mharc Barr feabhais a chur ar na rincí = 2 mharc Barr feabhais ar na rincí = 2 mharc Ag foghlaim línte = 2 mharc Na línte a fhoghlaim = 2 mharc Na rincí = 1 mharc Na hamhráin = 1 mharc Na línte = 1 mharc"
+            "3. Luaigh dhá rud a bhí ar Sheán agus ar na haisteoirí eile a dhéanamh le hullmhú don léiriú stáitse. 2 mharc + 2 mharc Na línte a chur de ghlanmheabhair = 2 mharc Na hamhráin a chleachtadh = 2 mharc Rincí a chleachtadh = 2 mharc Barr feabhais a chur ar na rincí = 2 mharc Barr feabhais ar na rincí = 2 mharc Ag foghlaim línte = 2 mharc Na línte a fhoghlaim = 2 mharc Na rincí = 1 mharc Na hamhráin = 1 mharc Na línte = 1 mharc"
           ]
         }
       ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
+      "markingGuideNote": "The listed responses and tariffs come from the 2021 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published tariff (2, or 2 + 2 for two points). Scheme PDF 3: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.” This 0–3 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–3), never inside a single card.",
       "audioMaterial": {
         "kind": "source-audio",
         "label": "Cuid B · Comhrá a Dó · An Chéad Mhír",
@@ -397,7 +672,26 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
       },
-      "paperFileid": "LC001ALP100IV"
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "L-B-C2-M1",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        4
+      ],
+      "schemePages": [
+        9,
+        10
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid B · Comhrá a Dó · An Chéad Mhír",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Cluastuiscint Cuid B · Comhrá a Dó · An Chéad Mhír",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-listening-b-c2-second",
@@ -420,27 +714,37 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "id": "q1",
+          "label": "Ceist 1",
           "kind": "award",
-          "maxMarks": 6,
+          "maxMarks": 4,
           "permittedMarks": [
             0,
-            1,
             2,
-            3,
-            4,
-            5,
-            6
+            4
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "1. Scríobh síos dhá chúram a bhí ar an bhfoireann chúlstáitse. 2 mharc + 2 mharc Na prapaí (stáitse) = 2 mharc An córas fuaime = 2 mharc Fuaim = 2 mharc An soilsiú = 2 mharc Soilse = 2 mharc Na feistis = 2 mharc An smideadh = 2 mharc 2. Cad a rinne an lucht féachana ag deireadh gach seó?",
-            "2 mharc D’éirigh siad ina seasamh chun bualadh bos a thabhairt dúinn/dóibh = 2 mharc D’éirigh siad ina seasamh = 1 mharc Bualadh bos a thabhairt = 1 mharc Thug siad bualadh bos = 1 mharc Bualadh bos = 1 mharc"
+            "1. Scríobh síos dhá chúram a bhí ar an bhfoireann chúlstáitse. 2 mharc + 2 mharc Na prapaí (stáitse) = 2 mharc An córas fuaime = 2 mharc Fuaim = 2 mharc An soilsiú = 2 mharc Soilse = 2 mharc Na feistis = 2 mharc An smideadh = 2 mharc"
+          ]
+        },
+        {
+          "id": "q2",
+          "label": "Ceist 2",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. Cad a rinne an lucht féachana ag deireadh gach seó? 2 mharc D’éirigh siad ina seasamh chun bualadh bos a thabhairt dúinn/dóibh = 2 mharc D’éirigh siad ina seasamh = 1 mharc Bualadh bos a thabhairt = 1 mharc Thug siad bualadh bos = 1 mharc Bualadh bos = 1 mharc"
           ]
         }
       ],
-      "markingGuideNote": "The listed responses and tariffs come from the same year’s SEC marking scheme. Equivalent wording is accepted where the scheme permits it.",
+      "markingGuideNote": "The listed responses and tariffs come from the 2021 SEC marking scheme; equivalent wording with the same meaning is accepted. Each printed question is marked at its own published tariff (2, or 2 + 2 for two points). Scheme PDF 3: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.” This 0–3 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–3), never inside a single card.",
       "audioMaterial": {
         "kind": "source-audio",
         "label": "Cuid B · Comhrá a Dó · An Dara Mír",
@@ -451,7 +755,25 @@
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Play the official recording and use the section heading on this card to follow the correct part."
       },
-      "paperFileid": "LC001ALP100IV"
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "L-B-C2-M2",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        4
+      ],
+      "schemePages": [
+        10
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint Cuid B · Comhrá a Dó · An Dara Mír",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Cluastuiscint Cuid B · Comhrá a Dó · An Dara Mír",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-composition-a-a",
@@ -460,7 +782,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2021 HL Paper 1 Ceapadóireacht A(a)",
-      "questionText": "Scríobh AISTE nó ALT NUACHTÁIN / IRISE ar cheann amháin de na hábhair seo. (a) Fadhbanna móra na linne seo.",
+      "questionText": "Treoracha d’iarrthóirí\nNí mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\nNí mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.\n\nFreagair do rogha CEANN AMHÁIN de A, B nó C anseo thíos.\nNóta: Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith.\n\nA · AISTE nó ALT NUACHTÁIN / IRISE (100 marc)\nScríobh AISTE nó ALT NUACHTÁIN / IRISE ar cheann amháin de na hábhair seo.\n\n(a) Fadhbanna móra na linne seo.",
       "totalMarks": 100,
       "topicId": "irish-2-0",
       "conceptId": "irish-composition-a",
@@ -471,7 +793,7 @@
       "taskRequirements": [
         "Write in the form the question asks for.",
         "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.",
-        "Use accurate, rich Irish suited to the task."
+        "Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith."
       ],
       "criteria": [
         {
@@ -481,16 +803,21 @@
           "maxMarks": 5,
           "permittedMarks": [
             0,
+            1,
+            2,
+            3,
+            4,
             5
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc)."
+            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc).",
+            "Treoracha: Tá an iarracht cheapadóireachta róghearr nó níl an t-ábhar ar fad atá scríofa ad rem/ábhartha/bainteach go dlúth leis an teideal a roghnaíodh: An iarracht cheapadóireachta róghearr Níl an iarracht cheapadóireachta go hiomlán ad rem Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [ad rem]) (4) = Ábhar: (15-2 [ad rem]) (13) = Gaeilge: (80-12 [ad rem]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [ad rem]) (3) = Ábhar: (15-4 [ad rem]) (11) = Gaeilge: (80-24 [ad rem]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [ad rem]) (2) = Ábhar: (15-6 [ad rem]) (9) = Gaeilge: (80-36 [ad rem]) (44) = CII (100) = Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [fad]) (4) = Ábhar: (15-2 [fad]) (13) = Gaeilge: (80-12 [fad]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [fad]) (3) = Ábhar: (15-4 [fad]) (11) = Gaeilge: (80-24 [fad]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [fad]) (2) = Ábhar: (15-6 [fad]) (9) = Gaeilge: (80-36 [fad]) (44) = CII (100) ="
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "Ionramháil Ábhair",
           "kind": "award",
           "maxMarks": 15,
           "permittedMarks": [
@@ -511,9 +838,10 @@
             14,
             15
           ],
-          "guidanceKind": "indicative",
+          "guidanceKind": "quality",
           "guidance": [
-            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil."
+            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil.",
+            "Iarracht iomlán = 500 – 600 focal (an treoir ar an bpáipéar scrúdaithe), an t-ábhar ad rem agus bunaithe ar an teideal a roghnaíonn an t-iarrthóir. Stíl chuí scríbhneoireachta = 5 mharc Ionramháil Ábhair = 15 mharc Cumas Gaeilge = 80 marc 3 chéim sa mharcáil: Cé go bhfuil trí roinn (Stíl, Ionramháil Ábhair agus Cumas Gaeilge) i gceist, moltar measúnú a dhéanamh ar iarracht an iarrthóra mar aonad. An Measúnú An iarracht a mheas mar aonad - Cad is fiú an iarracht cheapadóireachta ó thaobh catagóire de? An Aicme sa chatagóir Socraigh an aicme cheart sa chatagóir: ard / meánach / íseal. An Marc Roghnaigh an marc cuí a fhreagraíonn don aicme sin. Caithfidh an Scrúdaitheoir an marc a bhronntar as 5 (Stíl), an marc a bhronntar as 15 (Ábhar) agus an marc a bhronntar as 80 (Gaeilge) a thaispeáint go soiléir ag bun na hiarrachta ceapadóireachta."
           ]
         },
         {
@@ -611,8 +939,32 @@
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001ALP100IV"
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. A short or partly off-title attempt uses the reductions printed on scheme PDF 16. AISTE nó ALT NUACHTÁIN / IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route. Scéim Mharcála Mhodhnaithe (scheme PDF 50): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "W-A-a",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht A(a)",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Ceapadóireacht A(a)",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-composition-a-b",
@@ -621,7 +973,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2021 HL Paper 1 Ceapadóireacht A(b)",
-      "questionText": "Scríobh AISTE nó ALT NUACHTÁIN / IRISE ar cheann amháin de na hábhair seo. (b) Cearta Daonna.",
+      "questionText": "Treoracha d’iarrthóirí\nNí mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\nNí mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.\n\nFreagair do rogha CEANN AMHÁIN de A, B nó C anseo thíos.\nNóta: Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith.\n\nA · AISTE nó ALT NUACHTÁIN / IRISE (100 marc)\nScríobh AISTE nó ALT NUACHTÁIN / IRISE ar cheann amháin de na hábhair seo.\n\n(b) Cearta Daonna.",
       "totalMarks": 100,
       "topicId": "irish-2-0",
       "conceptId": "irish-composition-a",
@@ -632,7 +984,7 @@
       "taskRequirements": [
         "Write in the form the question asks for.",
         "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.",
-        "Use accurate, rich Irish suited to the task."
+        "Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith."
       ],
       "criteria": [
         {
@@ -642,16 +994,21 @@
           "maxMarks": 5,
           "permittedMarks": [
             0,
+            1,
+            2,
+            3,
+            4,
             5
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc)."
+            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc).",
+            "Treoracha: Tá an iarracht cheapadóireachta róghearr nó níl an t-ábhar ar fad atá scríofa ad rem/ábhartha/bainteach go dlúth leis an teideal a roghnaíodh: An iarracht cheapadóireachta róghearr Níl an iarracht cheapadóireachta go hiomlán ad rem Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [ad rem]) (4) = Ábhar: (15-2 [ad rem]) (13) = Gaeilge: (80-12 [ad rem]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [ad rem]) (3) = Ábhar: (15-4 [ad rem]) (11) = Gaeilge: (80-24 [ad rem]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [ad rem]) (2) = Ábhar: (15-6 [ad rem]) (9) = Gaeilge: (80-36 [ad rem]) (44) = CII (100) = Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [fad]) (4) = Ábhar: (15-2 [fad]) (13) = Gaeilge: (80-12 [fad]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [fad]) (3) = Ábhar: (15-4 [fad]) (11) = Gaeilge: (80-24 [fad]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [fad]) (2) = Ábhar: (15-6 [fad]) (9) = Gaeilge: (80-36 [fad]) (44) = CII (100) ="
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "Ionramháil Ábhair",
           "kind": "award",
           "maxMarks": 15,
           "permittedMarks": [
@@ -672,9 +1029,10 @@
             14,
             15
           ],
-          "guidanceKind": "indicative",
+          "guidanceKind": "quality",
           "guidance": [
-            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil."
+            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil.",
+            "Iarracht iomlán = 500 – 600 focal (an treoir ar an bpáipéar scrúdaithe), an t-ábhar ad rem agus bunaithe ar an teideal a roghnaíonn an t-iarrthóir. Stíl chuí scríbhneoireachta = 5 mharc Ionramháil Ábhair = 15 mharc Cumas Gaeilge = 80 marc 3 chéim sa mharcáil: Cé go bhfuil trí roinn (Stíl, Ionramháil Ábhair agus Cumas Gaeilge) i gceist, moltar measúnú a dhéanamh ar iarracht an iarrthóra mar aonad. An Measúnú An iarracht a mheas mar aonad - Cad is fiú an iarracht cheapadóireachta ó thaobh catagóire de? An Aicme sa chatagóir Socraigh an aicme cheart sa chatagóir: ard / meánach / íseal. An Marc Roghnaigh an marc cuí a fhreagraíonn don aicme sin. Caithfidh an Scrúdaitheoir an marc a bhronntar as 5 (Stíl), an marc a bhronntar as 15 (Ábhar) agus an marc a bhronntar as 80 (Gaeilge) a thaispeáint go soiléir ag bun na hiarrachta ceapadóireachta."
           ]
         },
         {
@@ -772,8 +1130,32 @@
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001ALP100IV"
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. A short or partly off-title attempt uses the reductions printed on scheme PDF 16. AISTE nó ALT NUACHTÁIN / IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route. Scéim Mharcála Mhodhnaithe (scheme PDF 50): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "W-A-b",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht A(b)",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Ceapadóireacht A(b)",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-composition-a-c",
@@ -782,7 +1164,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2021 HL Paper 1 Ceapadóireacht A(c)",
-      "questionText": "Scríobh AISTE nó ALT NUACHTÁIN / IRISE ar cheann amháin de na hábhair seo. (c) An tAthrú Aeráide.",
+      "questionText": "Treoracha d’iarrthóirí\nNí mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\nNí mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.\n\nFreagair do rogha CEANN AMHÁIN de A, B nó C anseo thíos.\nNóta: Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith.\n\nA · AISTE nó ALT NUACHTÁIN / IRISE (100 marc)\nScríobh AISTE nó ALT NUACHTÁIN / IRISE ar cheann amháin de na hábhair seo.\n\n(c) An tAthrú Aeráide.",
       "totalMarks": 100,
       "topicId": "irish-2-0",
       "conceptId": "irish-composition-a",
@@ -793,7 +1175,7 @@
       "taskRequirements": [
         "Write in the form the question asks for.",
         "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.",
-        "Use accurate, rich Irish suited to the task."
+        "Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith."
       ],
       "criteria": [
         {
@@ -803,16 +1185,21 @@
           "maxMarks": 5,
           "permittedMarks": [
             0,
+            1,
+            2,
+            3,
+            4,
             5
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc)."
+            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc).",
+            "Treoracha: Tá an iarracht cheapadóireachta róghearr nó níl an t-ábhar ar fad atá scríofa ad rem/ábhartha/bainteach go dlúth leis an teideal a roghnaíodh: An iarracht cheapadóireachta róghearr Níl an iarracht cheapadóireachta go hiomlán ad rem Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [ad rem]) (4) = Ábhar: (15-2 [ad rem]) (13) = Gaeilge: (80-12 [ad rem]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [ad rem]) (3) = Ábhar: (15-4 [ad rem]) (11) = Gaeilge: (80-24 [ad rem]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [ad rem]) (2) = Ábhar: (15-6 [ad rem]) (9) = Gaeilge: (80-36 [ad rem]) (44) = CII (100) = Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [fad]) (4) = Ábhar: (15-2 [fad]) (13) = Gaeilge: (80-12 [fad]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [fad]) (3) = Ábhar: (15-4 [fad]) (11) = Gaeilge: (80-24 [fad]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [fad]) (2) = Ábhar: (15-6 [fad]) (9) = Gaeilge: (80-36 [fad]) (44) = CII (100) ="
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "Ionramháil Ábhair",
           "kind": "award",
           "maxMarks": 15,
           "permittedMarks": [
@@ -833,9 +1220,10 @@
             14,
             15
           ],
-          "guidanceKind": "indicative",
+          "guidanceKind": "quality",
           "guidance": [
-            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil."
+            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil.",
+            "Iarracht iomlán = 500 – 600 focal (an treoir ar an bpáipéar scrúdaithe), an t-ábhar ad rem agus bunaithe ar an teideal a roghnaíonn an t-iarrthóir. Stíl chuí scríbhneoireachta = 5 mharc Ionramháil Ábhair = 15 mharc Cumas Gaeilge = 80 marc 3 chéim sa mharcáil: Cé go bhfuil trí roinn (Stíl, Ionramháil Ábhair agus Cumas Gaeilge) i gceist, moltar measúnú a dhéanamh ar iarracht an iarrthóra mar aonad. An Measúnú An iarracht a mheas mar aonad - Cad is fiú an iarracht cheapadóireachta ó thaobh catagóire de? An Aicme sa chatagóir Socraigh an aicme cheart sa chatagóir: ard / meánach / íseal. An Marc Roghnaigh an marc cuí a fhreagraíonn don aicme sin. Caithfidh an Scrúdaitheoir an marc a bhronntar as 5 (Stíl), an marc a bhronntar as 15 (Ábhar) agus an marc a bhronntar as 80 (Gaeilge) a thaispeáint go soiléir ag bun na hiarrachta ceapadóireachta."
           ]
         },
         {
@@ -933,8 +1321,32 @@
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001ALP100IV"
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. A short or partly off-title attempt uses the reductions printed on scheme PDF 16. AISTE nó ALT NUACHTÁIN / IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route. Scéim Mharcála Mhodhnaithe (scheme PDF 50): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "W-A-c",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht A(c)",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Ceapadóireacht A(c)",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-composition-a-d",
@@ -943,7 +1355,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2021 HL Paper 1 Ceapadóireacht A(d)",
-      "questionText": "Scríobh AISTE nó ALT NUACHTÁIN / IRISE ar cheann amháin de na hábhair seo. (d) An Ghaeilge agus an cultúr Gaelach.",
+      "questionText": "Treoracha d’iarrthóirí\nNí mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\nNí mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.\n\nFreagair do rogha CEANN AMHÁIN de A, B nó C anseo thíos.\nNóta: Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith.\n\nA · AISTE nó ALT NUACHTÁIN / IRISE (100 marc)\nScríobh AISTE nó ALT NUACHTÁIN / IRISE ar cheann amháin de na hábhair seo.\n\n(d) An Ghaeilge agus an cultúr Gaelach.",
       "totalMarks": 100,
       "topicId": "irish-2-0",
       "conceptId": "irish-composition-a",
@@ -954,7 +1366,7 @@
       "taskRequirements": [
         "Write in the form the question asks for.",
         "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.",
-        "Use accurate, rich Irish suited to the task."
+        "Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith."
       ],
       "criteria": [
         {
@@ -964,16 +1376,21 @@
           "maxMarks": 5,
           "permittedMarks": [
             0,
+            1,
+            2,
+            3,
+            4,
             5
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc)."
+            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc).",
+            "Treoracha: Tá an iarracht cheapadóireachta róghearr nó níl an t-ábhar ar fad atá scríofa ad rem/ábhartha/bainteach go dlúth leis an teideal a roghnaíodh: An iarracht cheapadóireachta róghearr Níl an iarracht cheapadóireachta go hiomlán ad rem Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [ad rem]) (4) = Ábhar: (15-2 [ad rem]) (13) = Gaeilge: (80-12 [ad rem]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [ad rem]) (3) = Ábhar: (15-4 [ad rem]) (11) = Gaeilge: (80-24 [ad rem]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [ad rem]) (2) = Ábhar: (15-6 [ad rem]) (9) = Gaeilge: (80-36 [ad rem]) (44) = CII (100) = Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [fad]) (4) = Ábhar: (15-2 [fad]) (13) = Gaeilge: (80-12 [fad]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [fad]) (3) = Ábhar: (15-4 [fad]) (11) = Gaeilge: (80-24 [fad]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [fad]) (2) = Ábhar: (15-6 [fad]) (9) = Gaeilge: (80-36 [fad]) (44) = CII (100) ="
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "Ionramháil Ábhair",
           "kind": "award",
           "maxMarks": 15,
           "permittedMarks": [
@@ -994,9 +1411,10 @@
             14,
             15
           ],
-          "guidanceKind": "indicative",
+          "guidanceKind": "quality",
           "guidance": [
-            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil."
+            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil.",
+            "Iarracht iomlán = 500 – 600 focal (an treoir ar an bpáipéar scrúdaithe), an t-ábhar ad rem agus bunaithe ar an teideal a roghnaíonn an t-iarrthóir. Stíl chuí scríbhneoireachta = 5 mharc Ionramháil Ábhair = 15 mharc Cumas Gaeilge = 80 marc 3 chéim sa mharcáil: Cé go bhfuil trí roinn (Stíl, Ionramháil Ábhair agus Cumas Gaeilge) i gceist, moltar measúnú a dhéanamh ar iarracht an iarrthóra mar aonad. An Measúnú An iarracht a mheas mar aonad - Cad is fiú an iarracht cheapadóireachta ó thaobh catagóire de? An Aicme sa chatagóir Socraigh an aicme cheart sa chatagóir: ard / meánach / íseal. An Marc Roghnaigh an marc cuí a fhreagraíonn don aicme sin. Caithfidh an Scrúdaitheoir an marc a bhronntar as 5 (Stíl), an marc a bhronntar as 15 (Ábhar) agus an marc a bhronntar as 80 (Gaeilge) a thaispeáint go soiléir ag bun na hiarrachta ceapadóireachta."
           ]
         },
         {
@@ -1094,8 +1512,32 @@
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001ALP100IV"
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. A short or partly off-title attempt uses the reductions printed on scheme PDF 16. AISTE nó ALT NUACHTÁIN / IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route. Scéim Mharcála Mhodhnaithe (scheme PDF 50): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "W-A-d",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht A(d)",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Ceapadóireacht A(d)",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-composition-a-e",
@@ -1104,7 +1546,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2021 HL Paper 1 Ceapadóireacht A(e)",
-      "questionText": "Scríobh AISTE nó ALT NUACHTÁIN / IRISE ar cheann amháin de na hábhair seo. (e) Buntáistí agus míbhuntáistí na teicneolaíochta.",
+      "questionText": "Treoracha d’iarrthóirí\nNí mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\nNí mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.\n\nFreagair do rogha CEANN AMHÁIN de A, B nó C anseo thíos.\nNóta: Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith.\n\nA · AISTE nó ALT NUACHTÁIN / IRISE (100 marc)\nScríobh AISTE nó ALT NUACHTÁIN / IRISE ar cheann amháin de na hábhair seo.\n\n(e) Buntáistí agus míbhuntáistí na teicneolaíochta.",
       "totalMarks": 100,
       "topicId": "irish-2-0",
       "conceptId": "irish-composition-a",
@@ -1115,7 +1557,7 @@
       "taskRequirements": [
         "Write in the form the question asks for.",
         "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.",
-        "Use accurate, rich Irish suited to the task."
+        "Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith."
       ],
       "criteria": [
         {
@@ -1125,16 +1567,21 @@
           "maxMarks": 5,
           "permittedMarks": [
             0,
+            1,
+            2,
+            3,
+            4,
             5
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc)."
+            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc).",
+            "Treoracha: Tá an iarracht cheapadóireachta róghearr nó níl an t-ábhar ar fad atá scríofa ad rem/ábhartha/bainteach go dlúth leis an teideal a roghnaíodh: An iarracht cheapadóireachta róghearr Níl an iarracht cheapadóireachta go hiomlán ad rem Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [ad rem]) (4) = Ábhar: (15-2 [ad rem]) (13) = Gaeilge: (80-12 [ad rem]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [ad rem]) (3) = Ábhar: (15-4 [ad rem]) (11) = Gaeilge: (80-24 [ad rem]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [ad rem]) (2) = Ábhar: (15-6 [ad rem]) (9) = Gaeilge: (80-36 [ad rem]) (44) = CII (100) = Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [fad]) (4) = Ábhar: (15-2 [fad]) (13) = Gaeilge: (80-12 [fad]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [fad]) (3) = Ábhar: (15-4 [fad]) (11) = Gaeilge: (80-24 [fad]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [fad]) (2) = Ábhar: (15-6 [fad]) (9) = Gaeilge: (80-36 [fad]) (44) = CII (100) ="
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "Ionramháil Ábhair",
           "kind": "award",
           "maxMarks": 15,
           "permittedMarks": [
@@ -1155,9 +1602,10 @@
             14,
             15
           ],
-          "guidanceKind": "indicative",
+          "guidanceKind": "quality",
           "guidance": [
-            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil."
+            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil.",
+            "Iarracht iomlán = 500 – 600 focal (an treoir ar an bpáipéar scrúdaithe), an t-ábhar ad rem agus bunaithe ar an teideal a roghnaíonn an t-iarrthóir. Stíl chuí scríbhneoireachta = 5 mharc Ionramháil Ábhair = 15 mharc Cumas Gaeilge = 80 marc 3 chéim sa mharcáil: Cé go bhfuil trí roinn (Stíl, Ionramháil Ábhair agus Cumas Gaeilge) i gceist, moltar measúnú a dhéanamh ar iarracht an iarrthóra mar aonad. An Measúnú An iarracht a mheas mar aonad - Cad is fiú an iarracht cheapadóireachta ó thaobh catagóire de? An Aicme sa chatagóir Socraigh an aicme cheart sa chatagóir: ard / meánach / íseal. An Marc Roghnaigh an marc cuí a fhreagraíonn don aicme sin. Caithfidh an Scrúdaitheoir an marc a bhronntar as 5 (Stíl), an marc a bhronntar as 15 (Ábhar) agus an marc a bhronntar as 80 (Gaeilge) a thaispeáint go soiléir ag bun na hiarrachta ceapadóireachta."
           ]
         },
         {
@@ -1255,8 +1703,32 @@
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001ALP100IV"
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. A short or partly off-title attempt uses the reductions printed on scheme PDF 16. AISTE nó ALT NUACHTÁIN / IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route. Scéim Mharcála Mhodhnaithe (scheme PDF 50): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "W-A-e",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht A(e)",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Ceapadóireacht A(e)",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-composition-b-a",
@@ -1265,7 +1737,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2021 HL Paper 1 Ceapadóireacht B(a)",
-      "questionText": "Ceap SCÉAL a mbeadh do rogha ceann amháin díobh seo oiriúnach mar theideal air. (a) Crógacht.",
+      "questionText": "Treoracha d’iarrthóirí\nNí mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\nNí mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.\n\nFreagair do rogha CEANN AMHÁIN de A, B nó C anseo thíos.\nNóta: Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith.\n\nB · SCÉAL (100 marc)\nCeap SCÉAL a mbeadh do rogha ceann amháin díobh seo oiriúnach mar theideal air.\n\n(a) Crógacht.",
       "totalMarks": 100,
       "topicId": "irish-2-3",
       "conceptId": "irish-composition-b",
@@ -1276,7 +1748,7 @@
       "taskRequirements": [
         "Write in the form the question asks for.",
         "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.",
-        "Use accurate, rich Irish suited to the task."
+        "Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith."
       ],
       "criteria": [
         {
@@ -1286,16 +1758,21 @@
           "maxMarks": 5,
           "permittedMarks": [
             0,
+            1,
+            2,
+            3,
+            4,
             5
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc)."
+            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc).",
+            "Treoracha: Tá an iarracht cheapadóireachta róghearr nó níl an t-ábhar ar fad atá scríofa ad rem/ábhartha/bainteach go dlúth leis an teideal a roghnaíodh: An iarracht cheapadóireachta róghearr Níl an iarracht cheapadóireachta go hiomlán ad rem Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [ad rem]) (4) = Ábhar: (15-2 [ad rem]) (13) = Gaeilge: (80-12 [ad rem]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [ad rem]) (3) = Ábhar: (15-4 [ad rem]) (11) = Gaeilge: (80-24 [ad rem]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [ad rem]) (2) = Ábhar: (15-6 [ad rem]) (9) = Gaeilge: (80-36 [ad rem]) (44) = CII (100) = Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [fad]) (4) = Ábhar: (15-2 [fad]) (13) = Gaeilge: (80-12 [fad]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [fad]) (3) = Ábhar: (15-4 [fad]) (11) = Gaeilge: (80-24 [fad]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [fad]) (2) = Ábhar: (15-6 [fad]) (9) = Gaeilge: (80-36 [fad]) (44) = CII (100) ="
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "Ionramháil Ábhair",
           "kind": "award",
           "maxMarks": 15,
           "permittedMarks": [
@@ -1316,9 +1793,10 @@
             14,
             15
           ],
-          "guidanceKind": "indicative",
+          "guidanceKind": "quality",
           "guidance": [
-            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil."
+            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil.",
+            "Iarracht iomlán = 500 – 600 focal (an treoir ar an bpáipéar scrúdaithe), an t-ábhar ad rem agus bunaithe ar an teideal a roghnaíonn an t-iarrthóir. Stíl chuí scríbhneoireachta = 5 mharc Ionramháil Ábhair = 15 mharc Cumas Gaeilge = 80 marc 3 chéim sa mharcáil: Cé go bhfuil trí roinn (Stíl, Ionramháil Ábhair agus Cumas Gaeilge) i gceist, moltar measúnú a dhéanamh ar iarracht an iarrthóra mar aonad. An Measúnú An iarracht a mheas mar aonad - Cad is fiú an iarracht cheapadóireachta ó thaobh catagóire de? An Aicme sa chatagóir Socraigh an aicme cheart sa chatagóir: ard / meánach / íseal. An Marc Roghnaigh an marc cuí a fhreagraíonn don aicme sin. Caithfidh an Scrúdaitheoir an marc a bhronntar as 5 (Stíl), an marc a bhronntar as 15 (Ábhar) agus an marc a bhronntar as 80 (Gaeilge) a thaispeáint go soiléir ag bun na hiarrachta ceapadóireachta."
           ]
         },
         {
@@ -1416,8 +1894,32 @@
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001ALP100IV"
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. A short or partly off-title attempt uses the reductions printed on scheme PDF 16. Each printed title is a separate route; the story itself is open. Scéim Mharcála Mhodhnaithe (scheme PDF 50): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "W-B-a",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht B(a)",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Ceapadóireacht B(a)",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-composition-b-b",
@@ -1426,7 +1928,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2021 HL Paper 1 Ceapadóireacht B(b)",
-      "questionText": "Ceap SCÉAL a mbeadh do rogha ceann amháin díobh seo oiriúnach mar theideal air. (b) Ar scáth a chéile a mhaireann na daoine.",
+      "questionText": "Treoracha d’iarrthóirí\nNí mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\nNí mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.\n\nFreagair do rogha CEANN AMHÁIN de A, B nó C anseo thíos.\nNóta: Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith.\n\nB · SCÉAL (100 marc)\nCeap SCÉAL a mbeadh do rogha ceann amháin díobh seo oiriúnach mar theideal air.\n\n(b) Ar scáth a chéile a mhaireann na daoine.",
       "totalMarks": 100,
       "topicId": "irish-2-3",
       "conceptId": "irish-composition-b",
@@ -1437,7 +1939,7 @@
       "taskRequirements": [
         "Write in the form the question asks for.",
         "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.",
-        "Use accurate, rich Irish suited to the task."
+        "Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith."
       ],
       "criteria": [
         {
@@ -1447,16 +1949,21 @@
           "maxMarks": 5,
           "permittedMarks": [
             0,
+            1,
+            2,
+            3,
+            4,
             5
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc)."
+            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc).",
+            "Treoracha: Tá an iarracht cheapadóireachta róghearr nó níl an t-ábhar ar fad atá scríofa ad rem/ábhartha/bainteach go dlúth leis an teideal a roghnaíodh: An iarracht cheapadóireachta róghearr Níl an iarracht cheapadóireachta go hiomlán ad rem Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [ad rem]) (4) = Ábhar: (15-2 [ad rem]) (13) = Gaeilge: (80-12 [ad rem]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [ad rem]) (3) = Ábhar: (15-4 [ad rem]) (11) = Gaeilge: (80-24 [ad rem]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [ad rem]) (2) = Ábhar: (15-6 [ad rem]) (9) = Gaeilge: (80-36 [ad rem]) (44) = CII (100) = Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [fad]) (4) = Ábhar: (15-2 [fad]) (13) = Gaeilge: (80-12 [fad]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [fad]) (3) = Ábhar: (15-4 [fad]) (11) = Gaeilge: (80-24 [fad]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [fad]) (2) = Ábhar: (15-6 [fad]) (9) = Gaeilge: (80-36 [fad]) (44) = CII (100) ="
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "Ionramháil Ábhair",
           "kind": "award",
           "maxMarks": 15,
           "permittedMarks": [
@@ -1477,9 +1984,10 @@
             14,
             15
           ],
-          "guidanceKind": "indicative",
+          "guidanceKind": "quality",
           "guidance": [
-            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil."
+            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil.",
+            "Iarracht iomlán = 500 – 600 focal (an treoir ar an bpáipéar scrúdaithe), an t-ábhar ad rem agus bunaithe ar an teideal a roghnaíonn an t-iarrthóir. Stíl chuí scríbhneoireachta = 5 mharc Ionramháil Ábhair = 15 mharc Cumas Gaeilge = 80 marc 3 chéim sa mharcáil: Cé go bhfuil trí roinn (Stíl, Ionramháil Ábhair agus Cumas Gaeilge) i gceist, moltar measúnú a dhéanamh ar iarracht an iarrthóra mar aonad. An Measúnú An iarracht a mheas mar aonad - Cad is fiú an iarracht cheapadóireachta ó thaobh catagóire de? An Aicme sa chatagóir Socraigh an aicme cheart sa chatagóir: ard / meánach / íseal. An Marc Roghnaigh an marc cuí a fhreagraíonn don aicme sin. Caithfidh an Scrúdaitheoir an marc a bhronntar as 5 (Stíl), an marc a bhronntar as 15 (Ábhar) agus an marc a bhronntar as 80 (Gaeilge) a thaispeáint go soiléir ag bun na hiarrachta ceapadóireachta."
           ]
         },
         {
@@ -1577,8 +2085,32 @@
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001ALP100IV"
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. A short or partly off-title attempt uses the reductions printed on scheme PDF 16. Each printed title is a separate route; the story itself is open. Scéim Mharcála Mhodhnaithe (scheme PDF 50): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "W-B-b",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht B(b)",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Ceapadóireacht B(b)",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-composition-c-a",
@@ -1587,7 +2119,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2021 HL Paper 1 Ceapadóireacht C(a)",
-      "questionText": "Freagair do rogha ceann amháin díobh seo. (a) Scríobh an chaint a dhéanfá i ndíospóireacht scoile ar son an rúin seo a leanas nó ina aghaidh: Tá rialtas éifeachtach againn sa tír seo faoi láthair.",
+      "questionText": "Treoracha d’iarrthóirí\nNí mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\nNí mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.\n\nFreagair do rogha CEANN AMHÁIN de A, B nó C anseo thíos.\nNóta: Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith.\n\nC · DÍOSPÓIREACHT / ÓRÁID (100 marc)\nFreagair do rogha ceann amháin díobh seo.\n\n(a) Scríobh an chaint a dhéanfá i ndíospóireacht scoile ar son an rúin seo a leanas nó ina aghaidh:\nTá rialtas éifeachtach againn sa tír seo faoi láthair.",
       "totalMarks": 100,
       "topicId": "irish-2-4",
       "conceptId": "irish-composition-c",
@@ -1598,7 +2130,7 @@
       "taskRequirements": [
         "Write in the form the question asks for.",
         "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.",
-        "Use accurate, rich Irish suited to the task."
+        "Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith."
       ],
       "criteria": [
         {
@@ -1608,16 +2140,21 @@
           "maxMarks": 5,
           "permittedMarks": [
             0,
+            1,
+            2,
+            3,
+            4,
             5
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc)."
+            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc).",
+            "Treoracha: Tá an iarracht cheapadóireachta róghearr nó níl an t-ábhar ar fad atá scríofa ad rem/ábhartha/bainteach go dlúth leis an teideal a roghnaíodh: An iarracht cheapadóireachta róghearr Níl an iarracht cheapadóireachta go hiomlán ad rem Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [ad rem]) (4) = Ábhar: (15-2 [ad rem]) (13) = Gaeilge: (80-12 [ad rem]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [ad rem]) (3) = Ábhar: (15-4 [ad rem]) (11) = Gaeilge: (80-24 [ad rem]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [ad rem]) (2) = Ábhar: (15-6 [ad rem]) (9) = Gaeilge: (80-36 [ad rem]) (44) = CII (100) = Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [fad]) (4) = Ábhar: (15-2 [fad]) (13) = Gaeilge: (80-12 [fad]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [fad]) (3) = Ábhar: (15-4 [fad]) (11) = Gaeilge: (80-24 [fad]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [fad]) (2) = Ábhar: (15-6 [fad]) (9) = Gaeilge: (80-36 [fad]) (44) = CII (100) ="
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "Ionramháil Ábhair",
           "kind": "award",
           "maxMarks": 15,
           "permittedMarks": [
@@ -1638,9 +2175,10 @@
             14,
             15
           ],
-          "guidanceKind": "indicative",
+          "guidanceKind": "quality",
           "guidance": [
-            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil."
+            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil.",
+            "Iarracht iomlán = 500 – 600 focal (an treoir ar an bpáipéar scrúdaithe), an t-ábhar ad rem agus bunaithe ar an teideal a roghnaíonn an t-iarrthóir. Stíl chuí scríbhneoireachta = 5 mharc Ionramháil Ábhair = 15 mharc Cumas Gaeilge = 80 marc 3 chéim sa mharcáil: Cé go bhfuil trí roinn (Stíl, Ionramháil Ábhair agus Cumas Gaeilge) i gceist, moltar measúnú a dhéanamh ar iarracht an iarrthóra mar aonad. An Measúnú An iarracht a mheas mar aonad - Cad is fiú an iarracht cheapadóireachta ó thaobh catagóire de? An Aicme sa chatagóir Socraigh an aicme cheart sa chatagóir: ard / meánach / íseal. An Marc Roghnaigh an marc cuí a fhreagraíonn don aicme sin. Caithfidh an Scrúdaitheoir an marc a bhronntar as 5 (Stíl), an marc a bhronntar as 15 (Ábhar) agus an marc a bhronntar as 80 (Gaeilge) a thaispeáint go soiléir ag bun na hiarrachta ceapadóireachta."
           ]
         },
         {
@@ -1738,8 +2276,32 @@
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001ALP100IV"
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. A short or partly off-title attempt uses the reductions printed on scheme PDF 16. “ar son … nó ina aghaidh” is the speaker’s stance inside one speech; both stances are marked identically. Scéim Mharcála Mhodhnaithe (scheme PDF 50): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "W-C-a",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht C(a)",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Ceapadóireacht C(a)",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p1-composition-c-b",
@@ -1748,7 +2310,7 @@
       "paper": 1,
       "section": "1",
       "questionRef": "2021 HL Paper 1 Ceapadóireacht C(b)",
-      "questionText": "Freagair do rogha ceann amháin díobh seo. (b) Iarradh ort píosa cainte a dhéanamh ar chlár raidió ar an ábhar seo a leanas: Saol an duine óig in Éirinn sa lá atá inniu ann. Scríobh an píosa cainte a dhéanfá ar an ábhar sin.",
+      "questionText": "Treoracha d’iarrthóirí\nNí mór do na hiarrthóirí cúram a dhéanamh de chruinneas na teanga. Caillfear marcanna má bhítear faillitheach ann.\nNí mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.\n\nFreagair do rogha CEANN AMHÁIN de A, B nó C anseo thíos.\nNóta: Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith.\n\nC · DÍOSPÓIREACHT / ÓRÁID (100 marc)\nFreagair do rogha ceann amháin díobh seo.\n\n(b) Iarradh ort píosa cainte a dhéanamh ar chlár raidió ar an ábhar seo a leanas:\nSaol an duine óig in Éirinn sa lá atá inniu ann.\nScríobh an píosa cainte a dhéanfá ar an ábhar sin.",
       "totalMarks": 100,
       "topicId": "irish-2-5",
       "conceptId": "irish-composition-c",
@@ -1759,7 +2321,7 @@
       "taskRequirements": [
         "Write in the form the question asks for.",
         "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar.",
-        "Use accurate, rich Irish suited to the task."
+        "Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith."
       ],
       "criteria": [
         {
@@ -1769,16 +2331,21 @@
           "maxMarks": 5,
           "permittedMarks": [
             0,
+            1,
+            2,
+            3,
+            4,
             5
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc)."
+            "Stíl (5 mharc) = 5 mharc sa chás go bhfuil an stíl chuí scríbhneoireachta in úsáid - má roghnaítear B (a), ní mór don iarrthóir Scéal a scríobh agus ní cheadaítear Aiste nó Díospóireacht srl. Sa chás go scríobhtar Aiste srl. agus teideal an scéil leis, an marc cuí ná Stíl (5) = 0. Smaoinigh nach mbaineann an marc ar Stíl le caighdeán nó le cáilíocht na hiarrachta. Déantar é seo a mheas faoi Ábhar (15 mharc).",
+            "Treoracha: Tá an iarracht cheapadóireachta róghearr nó níl an t-ábhar ar fad atá scríofa ad rem/ábhartha/bainteach go dlúth leis an teideal a roghnaíodh: An iarracht cheapadóireachta róghearr Níl an iarracht cheapadóireachta go hiomlán ad rem Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [ad rem]) (4) = Ábhar: (15-2 [ad rem]) (13) = Gaeilge: (80-12 [ad rem]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [ad rem]) (3) = Ábhar: (15-4 [ad rem]) (11) = Gaeilge: (80-24 [ad rem]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [ad rem]) (2) = Ábhar: (15-6 [ad rem]) (9) = Gaeilge: (80-36 [ad rem]) (44) = CII (100) = Leathanach go leith den mhéid atá scríofa ad rem: Stíl: (5-1 [fad]) (4) = Ábhar: (15-2 [fad]) (13) = Gaeilge: (80-12 [fad]) (68) = Leathanach amháin den mhéid atá scríofa ad rem: Stíl: (5-2 [fad]) (3) = Ábhar: (15-4 [fad]) (11) = Gaeilge: (80-24 [fad]) (56) = Leathleathanach den mhéid atá scríofa ad rem: Stíl: (5-3 [fad]) (2) = Ábhar: (15-6 [fad]) (9) = Gaeilge: (80-36 [fad]) (44) = CII (100) ="
           ]
         },
         {
           "id": "abhar",
-          "label": "Ábhar",
+          "label": "Ionramháil Ábhair",
           "kind": "award",
           "maxMarks": 15,
           "permittedMarks": [
@@ -1799,9 +2366,10 @@
             14,
             15
           ],
-          "guidanceKind": "indicative",
+          "guidanceKind": "quality",
           "guidance": [
-            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil."
+            "Tuairimí, smaointe, insint, eachtraí, imeachtaí, eolas, faisnéis a bhaineann go dlúth le hábhar theideal na ceapadóireachta. Aicme Marc Ionramháil shármhaith (smaointe fairsinge, samhlaíocht neamhghnách) 13, 14, 15 Ionramháil an-mhaith 11, 12 Ionramháil mhaith 9, 10 Ionramháil mheasartha 6, 7, 8 Ionramháil lag / bhearnach 3, 4, 5 Ionramháil an-lag (easnamhach) 0, 1, 2 Ba cheart an ionramháil ábhair a mheas agus tagairt á déanamh do Chumas na Gaeilge. Ó tharla gurb í an teanga an chóir iompair atá ag na smaointe ábhartha a bhaineann le teideal na hiarrachta, bíonn coibhneas de ghnáth idir an Cumas Gaeilge agus Ionramháil an Ábhair. Ní féidir smaointe cuí, ábhartha a chur i láthair go soiléir gan cóir iompair éifeachtach. Is í an mháistreacht ar an teanga leis na smaointe ábhartha a ionramháil an ghné den scríbhneoireacht is tábhachtaí agus an cheapadóireacht á marcáil.",
+            "Iarracht iomlán = 500 – 600 focal (an treoir ar an bpáipéar scrúdaithe), an t-ábhar ad rem agus bunaithe ar an teideal a roghnaíonn an t-iarrthóir. Stíl chuí scríbhneoireachta = 5 mharc Ionramháil Ábhair = 15 mharc Cumas Gaeilge = 80 marc 3 chéim sa mharcáil: Cé go bhfuil trí roinn (Stíl, Ionramháil Ábhair agus Cumas Gaeilge) i gceist, moltar measúnú a dhéanamh ar iarracht an iarrthóra mar aonad. An Measúnú An iarracht a mheas mar aonad - Cad is fiú an iarracht cheapadóireachta ó thaobh catagóire de? An Aicme sa chatagóir Socraigh an aicme cheart sa chatagóir: ard / meánach / íseal. An Marc Roghnaigh an marc cuí a fhreagraíonn don aicme sin. Caithfidh an Scrúdaitheoir an marc a bhronntar as 5 (Stíl), an marc a bhronntar as 15 (Ábhar) agus an marc a bhronntar as 80 (Gaeilge) a thaispeáint go soiléir ag bun na hiarrachta ceapadóireachta."
           ]
         },
         {
@@ -1899,8 +2467,32 @@
           ]
         }
       ],
-      "markingGuideNote": "Composition is marked through the SEC’s published task/style, content and Irish-language criteria. The scheme does not prescribe one model answer.",
-      "paperFileid": "LC001ALP100IV"
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. A short or partly off-title attempt uses the reductions printed on scheme PDF 16. “ar son … nó ina aghaidh” is the speaker’s stance inside one speech; both stances are marked identically. Scéim Mharcála Mhodhnaithe (scheme PDF 50): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
+      "paperFileid": "LC001ALP100IV",
+      "atlasQuestionId": "W-C-b",
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Ceapadóireacht C(b)",
+        "title": "Gaeilge Ardleibhéal 2021 · Páipéar 1 · Ceapadóireacht C(b)",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
     },
     {
       "id": "irish-2021-hl-p2-reading-a-q1",

@@ -13,6 +13,7 @@ import reviewedHigher2025P1 from '../scripts/markbank/authored/irish-higher-2025
 import reviewedHigher2024P1 from '../scripts/markbank/authored/irish-higher-2024-p1-component-review.json';
 import reviewedHigher2023P1 from '../scripts/markbank/authored/irish-higher-2023-p1-component-review.json';
 import reviewedHigher2022P1 from '../scripts/markbank/authored/irish-higher-2022-p1-component-review.json';
+import reviewedHigher2021P1 from '../scripts/markbank/authored/irish-higher-2021-p1-component-review.json';
 import reviewedOrdinary2024P1 from '../scripts/markbank/authored/irish-ordinary-2024-p1-component-review.json';
 import reviewedOrdinary2023P1 from '../scripts/markbank/authored/irish-ordinary-2023-p1-component-review.json';
 import reviewedOrdinary2022P1 from '../scripts/markbank/authored/irish-ordinary-2022-p1-component-review.json';
@@ -100,12 +101,12 @@ const manifest = authoredJson as unknown as IrishManifest;
 const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards, ...reviewedHigher2025P2.cards, ...reviewedOrdinary2025P2.cards, ...reviewedOrdinary2024P2.cards, ...reviewedHigher2023P2.cards, ...reviewedOrdinary2023P2.cards, ...reviewedOrdinary2022P2.cards, ...reviewedHigher2022P2.cards].map(card => card.id));
 const HIGHER = HIGHER_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 // Reviewed legacy components keep their cards here, corrected in place (IDs unchanged).
-// 2025, 2024, 2023 and 2022 HL Paper 1 and 2025/2024 OL Paper 1 also attached each retained card's printed page; 2025 OL Paper 2
+// 2025, 2024, 2023, 2022 and 2021 HL Paper 1 and 2025/2024 OL Paper 1 also attached each retained card's printed page; 2025 OL Paper 2
 // attached the printed question page to its six prose options and three optional poems.
-const SOURCED_BY_REVIEW = new Set<string>([...reviewedHigher2025P1.cardIds, ...reviewedHigher2024P1.cardIds, ...reviewedHigher2023P1.cardIds, ...reviewedHigher2022P1.cardIds, ...reviewedOrdinary2025P1.cardIds, ...reviewedOrdinary2024P1.cardIds, ...reviewedOrdinary2023P1.cardIds, ...reviewedOrdinary2022P1.cardIds,
+const SOURCED_BY_REVIEW = new Set<string>([...reviewedHigher2025P1.cardIds, ...reviewedHigher2024P1.cardIds, ...reviewedHigher2023P1.cardIds, ...reviewedHigher2022P1.cardIds, ...reviewedHigher2021P1.cardIds, ...reviewedOrdinary2025P1.cardIds, ...reviewedOrdinary2024P1.cardIds, ...reviewedOrdinary2023P1.cardIds, ...reviewedOrdinary2022P1.cardIds,
   ...[...reviewedOrdinary2025P2.review.legacyCardIds, ...reviewedOrdinary2024P2.review.legacyCardIds, ...reviewedOrdinary2023P2.review.legacyCardIds, ...reviewedOrdinary2022P2.review.legacyCardIds].filter(id => /-(prose-2[ab]|poetry-3b)-/.test(id))]);
 // Retained listening segments and whole reading questions now mark each printed part separately.
-const REVIEWED_MULTI = new Set<string>([...reviewedHigher2025P1.listeningSegmentCardIds, ...reviewedHigher2024P1.listeningSegmentCardIds, ...reviewedHigher2023P1.listeningSegmentCardIds, ...reviewedHigher2022P1.listeningSegmentCardIds, ...reviewedHigher2025P2.review.readingWholeCardIds, ...reviewedHigher2023P2.review.readingWholeCardIds, ...reviewedHigher2022P2.review.readingWholeCardIds,
+const REVIEWED_MULTI = new Set<string>([...reviewedHigher2025P1.listeningSegmentCardIds, ...reviewedHigher2024P1.listeningSegmentCardIds, ...reviewedHigher2023P1.listeningSegmentCardIds, ...reviewedHigher2022P1.listeningSegmentCardIds, ...reviewedHigher2021P1.listeningSegmentCardIds, ...reviewedHigher2025P2.review.readingWholeCardIds, ...reviewedHigher2023P2.review.readingWholeCardIds, ...reviewedHigher2022P2.review.readingWholeCardIds,
   ...reviewedOrdinary2025P1.listeningSegmentCardIds, ...reviewedOrdinary2024P1.listeningSegmentCardIds, ...reviewedOrdinary2023P1.listeningSegmentCardIds, ...reviewedOrdinary2022P1.listeningSegmentCardIds, ...reviewedOrdinary2025P2.review.readingWholeCardIds, ...reviewedOrdinary2024P2.review.readingWholeCardIds, ...reviewedOrdinary2023P2.review.readingWholeCardIds, ...reviewedOrdinary2022P2.review.readingWholeCardIds]);
 // Reviewed Ordinary compositions use the full 0–40 scale: the printed short-attempt columns include odd values.
 const FULL_SCALE_COMPOSITION = new Set<string>([...reviewedOrdinary2025P1.compositionRouteCardIds, ...reviewedOrdinary2024P1.compositionRouteCardIds, ...reviewedOrdinary2023P1.compositionRouteCardIds, ...reviewedOrdinary2022P1.compositionRouteCardIds]);
