@@ -18,6 +18,7 @@ import ordinary2022P1 from '../scripts/markbank/authored/irish-ordinary-2022-p1-
 import ordinary2022P2 from '../components/MarkBank/cards/irish/ordinary-2022-p2-authored.json';
 import higher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
 import higher2021P2 from '../components/MarkBank/cards/irish/higher-2021-p2-authored.json';
+import ordinary2021P2 from '../components/MarkBank/cards/irish/ordinary-2021-p2-authored.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import { irishMarks } from '../components/MarkBank/SessionScreen';
@@ -82,6 +83,7 @@ const PAPER_TWO = [
   { file: ordinary2022P2, fileid: 'LC001GLP200IV.pdf', legacy: 22, practice: 42, readingWhole: 10 },
   { file: higher2022P2, fileid: 'LC001ALP200IV.pdf', legacy: 27, practice: 42, readingWhole: 12 },
   { file: higher2021P2, fileid: 'LC001ALP200IV.pdf', legacy: 26, practice: 48, readingWhole: 12 },
+  { file: ordinary2021P2, fileid: 'LC001GLP200IV.pdf', legacy: 22, practice: 35, readingWhole: 10 },
 ];
 // The Higher files name their added cards readingPracticeCardIds, the Ordinary ones practiceCardIds.
 const practiceIds = (review: { practiceCardIds?: string[]; readingPracticeCardIds?: string[] }) =>

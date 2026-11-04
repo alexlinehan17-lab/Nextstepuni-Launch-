@@ -73,11 +73,14 @@ describe('Irish scheme text becomes sub-questions and rows', () => {
     const higherParts = (higher.rubric.system === 'irish' ? higher.rubric.criteria : []).flatMap(criterion => criterion.allocation?.parts ?? []);
     expect(higherParts.map(part => [part.tariff, part.rows.length])).toEqual([[3, 2], [2, 4], [2, 2]]);
     expect(higherParts[0].rows[0]).toMatchObject({ marks: 3 });
-    const ordinary = allocationOf('irish-2021-ol-p2-reading-b-q1');
-    expect(ordinary.parts.map(part => [part.tariff, part.ladder, part.rows.length])).toEqual([[5, [3, 5], 2], [5, [3, 5], 4]]);
-    expect(ordinary.directions).toEqual([
+    // The 2021 Ordinary reading questions too: each lettered part its own criterion, its 3 + 2 ladder and rules.
+    const ordinary = byId('irish-2021-ol-p2-reading-b-q1');
+    const ordinaryCriteria = ordinary.rubric.system === 'irish' ? ordinary.rubric.criteria : [];
+    expect(ordinaryCriteria.map(criterion => criterion.allocation!.parts.map(part => [part.tariff, part.ladder, part.rows.length])))
+      .toEqual([[[5, [3, 5], 2]], [[5, [3, 5], 4]]]);
+    expect(ordinaryCriteria.flatMap(criterion => criterion.allocation!.directions)).toEqual(expect.arrayContaining([
       'An chéad ghaisce atá ceart', 'an dara gaisce atá ceart', 'An chéad chúis mhórtais atá ceart', 'an dara cúis mhórtais atá ceart',
-    ]);
+    ]));
   });
 
   it('stops where the excerpt runs into the next section; the section-level language rule is the card note', () => {
@@ -92,12 +95,14 @@ describe('Irish scheme text becomes sub-questions and rows', () => {
     expect(card.rubric.markingGuideNote).toContain('Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.');
   });
 
-  it('leaves alone an excerpt whose bullets the ladder prices unpriced; the Q6 composite tariff is read by tariffs.ts', () => {
-    // irish-2022-hl-p2-reading-a-q2 started mid-question until irish_excerpts.py re-cut it across its pages.
+  it('cuts an excerpt per printed part once its paper is reviewed; the Q6 composite tariff is read by tariffs.ts', () => {
+    // The 2021 Ordinary A Q2 had no rows on main: its whole-question excerpt priced unpriced bullets under one
+    // ladder. Reviewed, each part is its own criterion and cuts its own 3 + 2 ladder over the printed answers.
     const card = byId('irish-2021-ol-p2-reading-a-q2');
     if (card.rubric.system !== 'irish') throw new Error('not irish');
-    expect(card.rubric.criteria[0].allocation).toBeUndefined();
-    expect(parseIrishAnswers({ id: card.id, totalMarks: 10, questionRef: card.questionRef, questionText: card.questionText, guidance: card.rubric.criteria[0].guidance }).ok).toBe(false);
+    expect(card.rubric.criteria.map(criterion => [criterion.id, criterion.allocation?.parts.map(part => part.ladder)]))
+      .toEqual([['a', [[3, 5]]], ['b', [[3, 5]]]]);
+    expect(parseIrishAnswers({ id: card.id, totalMarks: 5, questionRef: card.questionRef, questionText: card.questionText, guidance: card.rubric.criteria[0].guidance }).ok).toBe(true);
     // Since the 2021 Higher paper review, Q6 marks (a) and each 6(b) trait as its own criterion, each with rows.
     const q6 = byId('irish-2021-hl-p2-reading-a-q6');
     if (q6.rubric.system !== 'irish') throw new Error('not irish');

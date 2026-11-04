@@ -1,0 +1,2642 @@
+{
+  "review": {
+    "year": 2021,
+    "level": "ordinary",
+    "paperFileid": "LC001GLP200IV.pdf",
+    "schemeFileid": "LC001GLP000IV.pdf",
+    "paperSha256": "8f89837075781146bb6304ee1b90c150ea2e2bbead4a049b461c4e94544266c1",
+    "schemeSha256": "b66d6097fa351c6038776c1e7d8c41ca2f5b6597aa131c8dc7a7d6272697cf9c",
+    "reviewedPaperPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "reviewedSchemePages": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "schemeScope": "Combined Ordinary scheme. PDF 12–14 Léamhthuiscint A with the Paper 2 notes; 15–17 Léamhthuiscint B and its deduction panel; 18–22 Prós Ainmnithe (2A); 23–24 Prós Roghnach (2B); 25–28 Filíocht Ainmnithe (3A); 29–30 Filíocht Roghnach (3B); 31–32 modified marking (SMM; 32 is its Paper 1 table). PDF 1–11 belong to Paper 1; 33–35 blank.",
+    "reviewDate": "2026-11-04",
+    "status": "reviewed",
+    "fullPaperAndApplicableSchemeVisualSweep": true,
+    "selectionDecisions": [
+      {
+        "page": 3,
+        "raw": "Freagair Ceist 1 agus dhá cheist as Roinn na Litríochta (Ceist 2 agus",
+        "decision": "Paper structure (2021 adjusted paper, 150 marks): Ceist 1 (both passages) and two literature questions."
+      },
+      {
+        "page": 3,
+        "raw": "Freagair Léamhthuiscint A (50 marc) agus Léamhthuiscint B (50 marc).",
+        "decision": "Both reading passages and every question in each are required; each printed (a)/(b) part is also a 5-mark practice card."
+      },
+      {
+        "page": 3,
+        "raw": "2B. Prós Roghnach",
+        "decision": "Section name in the instructions box, not a separate route."
+      },
+      {
+        "page": 3,
+        "raw": "3B. Filíocht Roghnach",
+        "decision": "Section name in the instructions box, not a separate route."
+      },
+      {
+        "page": 3,
+        "raw": "Freagair dhá cheist as an roinn seo.",
+        "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+      },
+      {
+        "page": 3,
+        "raw": "Ní mór duit tabhairt faoi dhá cheist, mar seo a leanas:",
+        "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+      },
+      {
+        "page": 3,
+        "raw": "Dhá cheist as 2A nó Dhá cheist as 2B",
+        "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+      },
+      {
+        "page": 3,
+        "raw": "nó",
+        "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+      },
+      {
+        "page": 3,
+        "raw": "Dhá cheist as 3A nó Dhá cheist as 3B",
+        "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+      },
+      {
+        "page": 3,
+        "raw": "Ceist amháin as 2A agus Ceist amháin as 3A nó as 3B",
+        "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+      },
+      {
+        "page": 3,
+        "raw": "Ceist amháin as 2B agus Ceist amháin as 3A nó as 3B",
+        "decision": "Closed literature choice (2021 adjusted paper, page 3): any two questions from Roinn na Litríochta (2A, 2B, 3A, 3B) in the printed combinations. Choice is not a route: each printed option is its own whole 25-mark card carrying “Freagair dhá cheist as an roinn seo.” in its task requirements; no combination cards."
+      },
+      {
+        "page": 4,
+        "raw": "Freagair A agus B anseo.",
+        "decision": "Both reading passages required, as on page 3."
+      },
+      {
+        "page": 4,
+        "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+        "decision": "Instruction to read the passage and answer every question with it; not a selection."
+      },
+      {
+        "page": 4,
+        "raw": "Is féidir féachaint ar fhíseáin nó éisteacht",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 4,
+        "raw": "ar na meáin Ghaeilge ar líne nó éisteacht leo.",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 5,
+        "raw": "1. (a) Tabhair dhá úsáid a bhaintear as an idirlíon. (Alt 1)",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+      },
+      {
+        "page": 5,
+        "raw": "(b) Scríobh síos dhá bhuntáiste a bhaineann leis an bhfón cliste. (Alt 1)",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+      },
+      {
+        "page": 5,
+        "raw": "2. (a) Scríobh síos dhá rud a dhéanann daoine ar na líonraí sóisialta éagsúla. (Alt 2)",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+      },
+      {
+        "page": 5,
+        "raw": "(b) Luaigh dhá phíosa eolais faoi YouTube. (Alt 2)",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+      },
+      {
+        "page": 5,
+        "raw": "4. (a) Scríobh síos dhá úsáid a bhaineann eagraíochtaí Gaeilge as na meáin shóisialta. (Alt 4)",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+      },
+      {
+        "page": 5,
+        "raw": "5. (a) Scríobh síos dhá rud atá le fáil ar shuíomh an fhoclóra Béarla‐Gaeilge, www.foclóir.ie. (Alt 5)",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+      },
+      {
+        "page": 6,
+        "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+        "decision": "Instruction to read the passage and answer every question with it; not a selection."
+      },
+      {
+        "page": 6,
+        "raw": "Sam Bennett, dhá ghaisce sa rás mór",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 6,
+        "raw": "D’ainmnigh Cumann Dornálaíochta",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 6,
+        "raw": "ar feadh dhá bhliain is seasca. Tá a ainm",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 6,
+        "raw": "amháin, Michael Hogan as Tiobraid Árann,",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 7,
+        "raw": "1. (a) Scríobh síos an dá ghaisce a rinne an rothaí proifisiúnta Éireannach, Sam Bennett, sa rás mór",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+      },
+      {
+        "page": 7,
+        "raw": "(b) Tabhair dhá chúis mhórtais a bhí ag an réalta spóirt, Katie Taylor, in 2020. (Alt 1)",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+      },
+      {
+        "page": 7,
+        "raw": "2. (a) Luaigh dhá phíosa eolais faoin gcaoi ar éirigh le foireann sacair Phoblacht na hÉireann",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+      },
+      {
+        "page": 7,
+        "raw": "(b) Scríobh síos an dá chúis ar moladh Caoimhín Kelleher, cúl báire fhoireann sacair Learphoill,",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+      },
+      {
+        "page": 7,
+        "raw": "(b) Scríobh síos dhá rud a tharla ag an searmanas cuimhneacháin i bPáirc an Chrócaigh",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+      },
+      {
+        "page": 7,
+        "raw": "5. (a) Tabhair dhá rud atá ar fáil san iris nua Cuaille a sheol Cumann Lúthchleas Gael. (Alt 5)",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+      },
+      {
+        "page": 7,
+        "raw": "(b) Luaigh dhá phíosa eolais a tugadh faoi na laochra spóirt sa tsraith Laochra Gael ar TG4.",
+        "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
+      },
+      {
+        "page": 8,
+        "raw": "Tá 2B. Prós Roghnach (a), (b), (c) ar leathanach 10.",
+        "decision": "Page directions to the literature options (2B on page 10, 3B on page 14), not a selection."
+      },
+      {
+        "page": 8,
+        "raw": "Tá 3B. Filíocht Roghnach (a), (b), (c) ar leathanach 14.",
+        "decision": "Page directions to the literature options (2B on page 10, 3B on page 14), not a selection."
+      },
+      {
+        "page": 9,
+        "raw": "Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.",
+        "decision": "Names one printed option inside the closed choice; the option is one whole 25-mark card with its printed sub-questions as practice cards."
+      },
+      {
+        "page": 9,
+        "raw": "(iii) Tabhair dhá phointe eolais faoi na mná eile ar Ascaill na Fuinseoige.",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 9,
+        "raw": "(iv) Scríobh síos dhá phointe eolais faoi Phól, fear céile Lisín.",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 9,
+        "raw": "Scríobh síos dhá phointe eolais faoin gcuid sin de shaol Lisín.",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 9,
+        "raw": "Freagair an cheist thíos faoin scannán Cáca Milis nó faoin dráma An Lasair Choille.",
+        "decision": "Choose-one inside 2A(b): the film Cáca Milis or the play An Lasair Choille. Different syllabus texts (topics irish-4-6 and irish-4-8) with their own sample answers, so each is its own 25-mark card (the legacy 2A(b) card is Cáca Milis; An Lasair Choille is added)."
+      },
+      {
+        "page": 9,
+        "raw": "nó",
+        "decision": "Choose-one inside 2A(b): the film Cáca Milis or the play An Lasair Choille. Different syllabus texts (topics irish-4-6 and irish-4-8) with their own sample answers, so each is its own 25-mark card (the legacy 2A(b) card is Cáca Milis; An Lasair Choille is added)."
+      },
+      {
+        "page": 9,
+        "raw": "Freagair an cheist thíos faoin ngearrscéal Dís.",
+        "decision": "Names one printed option inside the closed choice: 2A(c) Dís is one whole 25-mark question (five points at 2 + 3) and one card."
+      },
+      {
+        "page": 10,
+        "raw": "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid sna freagraí ar an bPrós Roghnach.",
+        "decision": "Restriction on content, not a route."
+      },
+      {
+        "page": 10,
+        "raw": "Maidir le giota as úrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh",
+        "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+      },
+      {
+        "page": 10,
+        "raw": "Freagair an cheist thíos faoin scannán roghnach nó faoin dráma roghnach.",
+        "decision": "Choose-one inside 2B(b): an optional film or an optional play. Same scheme (23 + 2) and same topic (optional prose), so one card carries both printed alternatives."
+      },
+      {
+        "page": 10,
+        "raw": "Maidir le scannán roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas",
+        "decision": "Choose-one inside 2B(b): an optional film or an optional play. Same scheme (23 + 2) and same topic (optional prose), so one card carries both printed alternatives."
+      },
+      {
+        "page": 10,
+        "raw": "nó",
+        "decision": "Choose-one inside 2B(b): an optional film or an optional play. Same scheme (23 + 2) and same topic (optional prose), so one card carries both printed alternatives."
+      },
+      {
+        "page": 10,
+        "raw": "Maidir le dráma roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas",
+        "decision": "Choose-one inside 2B(b): an optional film or an optional play. Same scheme (23 + 2) and same topic (optional prose), so one card carries both printed alternatives."
+      },
+      {
+        "page": 10,
+        "raw": "Maidir le gearrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos",
+        "decision": "Required content inside one optional route (open text chosen by the candidate); kept whole with its title marks."
+      },
+      {
+        "page": 10,
+        "raw": "2B – PRÓS ROGHNACH",
+        "decision": "Boxed section heading, not a separate route."
+      },
+      {
+        "page": 11,
+        "raw": "i véarsa a haon den dán. (Is leor dhá phointe eolais.)",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 11,
+        "raw": "(Is leor dhá phointe eolais, i d’fhocail féin.)",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 11,
+        "raw": "Tabhair dhá fháth, i d’fhocail féin, a mothaíonn an spailpín mar sin.",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 12,
+        "raw": "Scríobh síos dhá phointe eolais, i d’fhocail féin, a thugann an file dúinn faoin bhfear",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 12,
+        "raw": "(Is leor dhá phointe eolais, i d’fhocail féin.)",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 12,
+        "raw": "Cuir fáthanna, i d’fhocail féin, le do fhreagra. (Is leor dhá fháth.)",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 12,
+        "raw": "(nó ar chrann ar bith)",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 13,
+        "raw": "(Is leor dhá phointe eolais.)",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 13,
+        "raw": "Tabhair dhá fháth, i d’fhocail féin, a mothaíonn an t‐ainmhí mar sin.",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 13,
+        "raw": "(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 14,
+        "raw": "Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid sna freagraí ar an bhFilíocht Roghnach.",
+        "decision": "Restriction on content, not a route."
+      },
+      {
+        "page": 14,
+        "raw": "Maidir le dán seanaimseartha roghnach (dán a cumadh sa tréimhse roimh 1850)",
+        "decision": "Optional poem chosen by the candidate: open content inside one route."
+      },
+      {
+        "page": 14,
+        "raw": "Mínigh an íomhá (an pictiúr) sin i d’fhocail féin. (Is leor dhá phointe eolais.)",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 14,
+        "raw": "Tabhair dhá shampla den mhothúchán sin sa dán.",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 14,
+        "raw": "Maidir le dán nua‐aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa,",
+        "decision": "Optional poem chosen by the candidate: open content inside one route."
+      },
+      {
+        "page": 14,
+        "raw": "scríobh síos príomhthéama an dáin sin, dar leat. Tabhair dhá phointe eolais,",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 14,
+        "raw": "Luaigh íomhá (pictiúr) amháin ón dán atá suimiúil, dar leat.",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 14,
+        "raw": "Déan cur síos ar an mothúchán is láidre sa dán, dar leat. Is leor dhá phointe eolais.",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 14,
+        "raw": "Maidir le dán nua‐aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa",
+        "decision": "Optional poem chosen by the candidate: open content inside one route."
+      },
+      {
+        "page": 14,
+        "raw": "Cén t‐atmaisféar atá sa dán seo, dar leat? Tabhair dhá shampla den atmaisféar sin",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 14,
+        "raw": "(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+        "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (3 + 2, 4 + 4, 4 + 3, or a named feeling, opinion or verdict 1 + 4 + 4 / 1 + 3 + 3), so the sub-question card is the smallest printed unit."
+      },
+      {
+        "page": 14,
+        "raw": "3B – FILÍOCHT ROGHNACH",
+        "decision": "Boxed section heading, not a separate route."
+      }
+    ],
+    "practiceCardIds": [
+      "irish-2021-ol-p2-reading-a-q1-a",
+      "irish-2021-ol-p2-reading-a-q1-b",
+      "irish-2021-ol-p2-reading-a-q2-a",
+      "irish-2021-ol-p2-reading-a-q2-b",
+      "irish-2021-ol-p2-reading-a-q3-a",
+      "irish-2021-ol-p2-reading-a-q3-b",
+      "irish-2021-ol-p2-reading-a-q4-a",
+      "irish-2021-ol-p2-reading-a-q4-b",
+      "irish-2021-ol-p2-reading-a-q5-a",
+      "irish-2021-ol-p2-reading-a-q5-b",
+      "irish-2021-ol-p2-reading-b-q1-a",
+      "irish-2021-ol-p2-reading-b-q1-b",
+      "irish-2021-ol-p2-reading-b-q2-a",
+      "irish-2021-ol-p2-reading-b-q2-b",
+      "irish-2021-ol-p2-reading-b-q3-a",
+      "irish-2021-ol-p2-reading-b-q3-b",
+      "irish-2021-ol-p2-reading-b-q4-a",
+      "irish-2021-ol-p2-reading-b-q4-b",
+      "irish-2021-ol-p2-reading-b-q5-a",
+      "irish-2021-ol-p2-reading-b-q5-b",
+      "irish-2021-ol-p2-prose-2a-a-i",
+      "irish-2021-ol-p2-prose-2a-a-ii",
+      "irish-2021-ol-p2-prose-2a-a-iii",
+      "irish-2021-ol-p2-prose-2a-a-iv",
+      "irish-2021-ol-p2-prose-2a-a-v",
+      "irish-2021-ol-p2-prose-2a-b-an-lasair-choille",
+      "irish-2021-ol-p2-poetry-3a-a-i",
+      "irish-2021-ol-p2-poetry-3a-a-ii",
+      "irish-2021-ol-p2-poetry-3a-a-iii",
+      "irish-2021-ol-p2-poetry-3a-b-i",
+      "irish-2021-ol-p2-poetry-3a-b-ii",
+      "irish-2021-ol-p2-poetry-3a-b-iii",
+      "irish-2021-ol-p2-poetry-3a-c-i",
+      "irish-2021-ol-p2-poetry-3a-c-ii",
+      "irish-2021-ol-p2-poetry-3a-c-iii"
+    ],
+    "legacyCardIds": [
+      "irish-2021-ol-p2-reading-a-q1",
+      "irish-2021-ol-p2-reading-a-q2",
+      "irish-2021-ol-p2-reading-a-q3",
+      "irish-2021-ol-p2-reading-a-q4",
+      "irish-2021-ol-p2-reading-a-q5",
+      "irish-2021-ol-p2-reading-b-q1",
+      "irish-2021-ol-p2-reading-b-q2",
+      "irish-2021-ol-p2-reading-b-q3",
+      "irish-2021-ol-p2-reading-b-q4",
+      "irish-2021-ol-p2-reading-b-q5",
+      "irish-2021-ol-p2-prose-2a-a",
+      "irish-2021-ol-p2-prose-2a-b",
+      "irish-2021-ol-p2-prose-2a-c",
+      "irish-2021-ol-p2-prose-2b-a",
+      "irish-2021-ol-p2-prose-2b-b",
+      "irish-2021-ol-p2-prose-2b-c",
+      "irish-2021-ol-p2-poetry-3a-a",
+      "irish-2021-ol-p2-poetry-3a-b",
+      "irish-2021-ol-p2-poetry-3a-c",
+      "irish-2021-ol-p2-poetry-3b-a",
+      "irish-2021-ol-p2-poetry-3b-b",
+      "irish-2021-ol-p2-poetry-3b-c"
+    ],
+    "readingWholeCardIds": [
+      "irish-2021-ol-p2-reading-a-q1",
+      "irish-2021-ol-p2-reading-a-q2",
+      "irish-2021-ol-p2-reading-a-q3",
+      "irish-2021-ol-p2-reading-a-q4",
+      "irish-2021-ol-p2-reading-a-q5",
+      "irish-2021-ol-p2-reading-b-q1",
+      "irish-2021-ol-p2-reading-b-q2",
+      "irish-2021-ol-p2-reading-b-q3",
+      "irish-2021-ol-p2-reading-b-q4",
+      "irish-2021-ol-p2-reading-b-q5"
+    ],
+    "examStructure": {
+      "readingA": 50,
+      "readingB": 50,
+      "literature": 50,
+      "total": 150
+    },
+    "nonPoolDecisions": [
+      "Reading: all ten questions are required (both passages); each printed (a)/(b) part is a 5-mark practice card. “3 mharc + 2 mharc” items are order-dependent (first correct point 3, second 2) and stay whole at 0/3/5; single answers with a printed partial (“= 3 mharc”) allow 0/3/5, otherwise 0/5.",
+      "Reading language: “Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh” is one deduction from each 50-mark passage total; cards state it without applying it inside a part.",
+      "Prescribed prose (2A): Hurlamaboc (a) prints five 5-mark sub-questions: the whole option is a 25-mark card and every sub-question is also a practice card (“3 mharc + 2 mharc” sub-questions keep 0/3/5). 2A(b) offers the film Cáca Milis or the play An Lasair Choille: one 25-mark card each. Dís (c) is one 25-mark question and one card.",
+      "Optional prose (2B): (a) novel extract: naming 1 + events 22 + title/author 2; (b) film or play: events 23 + title/writer 2, one card for both alternatives; (c) short story: theme 1 + events 22 + title/author 2.",
+      "Poetry: each prescribed poem (3A) prints (i) 8, (ii) 8, (iii) 9: the poem is one card and each sub-question a practice card. Each optional poem (3B) prints (i) 9, (ii) 7, (iii) 7 and title/poet 2 inside one card.",
+      "Literature language: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” is one deduction from each 25-mark answer; cards state it without applying it inside a sub-question."
+    ],
+    "openIssues": [],
+    "caveats": [
+      "Paper 2 = 150 (2021 adjusted paper): Léamhthuiscint A 50 + B 50 (five questions of 10, each (a) 5 + (b) 5), Roinn na Litríochta 50 (any two questions at 25 in the combinations printed on page 3).",
+      "Reading A “An Nua-theicneolaíocht agus an Ghaeilge” (paper pages 4–5, scheme PDF 12–14) and B “Scéalta ó shaol an spóirt in 2020” (paper 6–7, scheme PDF 15–17).",
+      "Prescribed prose (paper 9): Hurlamaboc (i)–(v) at 5 each; Cáca Milis or An Lasair Choille one 25-mark question each; Dís one 25-mark question (five points at 2 + 3). Optional prose (paper 10): (a) 1 + 22 + 2; (b) 23 + 2 (film or play); (c) 1 + 22 + 2.",
+      "Prescribed poetry (paper 11–13): An Spailpín Fánach, Mo ghrá-sa (idir lúibíní), Géibheann at (i) 8, (ii) 8, (iii) 9. Optional poetry (paper 14): (i) 9, (ii) 7, (iii) 7, title and poet 2.",
+      "Text layer: the scheme stores its boxed headings (“CEIST 1 (A + B) - LÉAMHTHUISCINT - 100 marc”, “A – (50 marc)”, “B – (50 marc)”, “2A/2B/3A/3B – …”) at the edge of each page; they are removed before slicing. Each reading passage ends at its penalty note (“Nóta: Gearrfar pionós … Léireofar …”).",
+      "Legacy corrections (IDs, totals and topics unchanged): each whole reading question and each literature option had one undivided Eolas criterion; reading A Q2 and B Q5 had no claimable rows. All now carry the lifted 2021 scheme with per-part and per-sub-question tariffs."
+    ],
+    "choicePolicy": "Choice is not a route: each printed option of 2A, 2B, 3A and 3B is one card carrying the choose-two instruction; no combination cards. Inside 2A(b) the two prescribed texts (different topics) are separate cards; inside 2B(b) the optional film and play share one scheme and stay one card.",
+    "boundaries": "10 retained whole reading questions with their 20 published parts; 12 retained literature options plus the An Lasair Choille option of 2A(b); the 5 printed 2A(a) Hurlamaboc sub-questions and the 9 prescribed-poetry sub-questions."
+  },
+  "cards": [
+    {
+      "id": "irish-2021-ol-p2-reading-a-q1-a",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-1-a",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint A · Ceist 1(a)",
+      "questionText": "1(a) Tabhair dhá úsáid a bhaintear as an idirlíon. (Alt 1)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q1-a",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 12,
+      "schemePages": [
+        12
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. (a) Tabhair dhá úsáid a bhaintear as an idirlíon. (Alt 1) 3 mharc + 2 mharc = 5 mharc An chéad úsáid atá ceart = 3 mharc; an dara húsáid atá ceart = 2 mharc • Bíonn an nuacht is déanaí ó gach áit ar domhan le fáil ar an idirlíon • Faighimid eolas ar gach ábhar ar líne • Seoltar teachtaireachtaí go tapa ar an ríomhphost • Baintear úsáid as suíomhanna ar an ngréasán domhanda chun earraí a dhíol agus a cheannach = 2 úsáid = 3 mharc + 2 mharc = 5 mharc • Baintear úsáid as suíomhanna ar an ngréasán domhanda chun earraí a dhíol • Baintear úsáid as suíomhanna ar an ngréasán domhanda chun earraí a cheannach • Déantar baincéireacht ar líne",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "An Nua-theicneolaíocht agus an Ghaeilge",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-a-q1-b",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-1-b",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint A · Ceist 1(b)",
+      "questionText": "1(b) Scríobh síos dhá bhuntáiste a bhaineann leis an bhfón cliste. (Alt 1)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q1-b",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 12,
+      "schemePages": [
+        12
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Scríobh síos dhá bhuntáiste a bhaineann leis an bhfón cliste. (Alt 1) 3 mharc + 2 mharc = 5 mharc An chéad bhuntáiste atá ceart = 3 mharc; an dara buntáiste atá ceart = 2 mharc • Is féidir cnaipe a bhrú agus teagmháil a dhéanamh go tapa le duine eile • Mothaíonn daoine sábháilte nuair a bhíonn fón cliste acu • Is féidir grianghraif a thógáil air • Tá fáil ar an ngréasán domhanda air • Is féidir féachaint ar fhíseáin ar an bhfón cliste/air • Is féidir éisteacht le ceol ar an bhfón cliste/air",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "An Nua-theicneolaíocht agus an Ghaeilge",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-a-q2-a",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-2-a",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint A · Ceist 2(a)",
+      "questionText": "2(a) Scríobh síos dhá rud a dhéanann daoine ar na líonraí sóisialta éagsúla. (Alt 2)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q2-a",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 12,
+      "schemePages": [
+        12,
+        13
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. (a) Scríobh síos dhá rud a dhéanann daoine ar na líonraí sóisialta éagsúla. (Alt 2) 3 mharc + 2 mharc = 5 mharc An chéad rud atá ceart = 3 mharc; an dara rud atá ceart = 2 mharc • Déanann daoine cumarsáid le chéile • Cruthaíonn daoine próifíl díobh féin • Cuireann siad síos ar a saol • Uaslódálann siad pictiúir • Uaslódálann siad físeáin • Roinneann siad eolas • Roinneann siad scéalta • Fanann siad i dteagmháil le chéile trí ghlaonna idirlín agus físe • Uaslódálann siad pictiúir agus físeáin = 2 rud = 3 mharc + 2 mharc = 5 mharc • Roinneann siad eolas agus scéalta = 2 rud = 3 mharc + 2 mharc = 5 mharc",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "An Nua-theicneolaíocht agus an Ghaeilge",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-a-q2-b",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-2-b",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint A · Ceist 2(b)",
+      "questionText": "2(b) Luaigh dhá phíosa eolais faoi YouTube. (Alt 2)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q2-b",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 13,
+      "schemePages": [
+        13
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Luaigh dhá phíosa eolais faoi YouTube. (Alt 2) 3 mharc + 2 mharc = 5 mharc An chéad phíosa eolais atá ceart = 3 mharc; an dara píosa eolais atá ceart = 2 mharc • Bunaíodh YouTube sa bhliain 2005 • Tá na mílte físeán ar fáil ar YouTube • Tá na mílte amhrán ar fáil ar YouTube • Is féidir le duine seinnliosta de na físeáin is fearr leis a chur le chéile ar an ardán • Baineann a lán daoine taitneamh as ardán YouTube",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "An Nua-theicneolaíocht agus an Ghaeilge",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-a-q3-a",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-3-a",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint A · Ceist 3(a)",
+      "questionText": "3(a) Cad is féidir le lucht féachana TG4 ar fud an domhain a fháil ar Sheinnteoir TG4? (Alt 3)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q3-a",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 13,
+      "schemePages": [
+        13
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "3. (a) Cad is féidir le lucht féachana TG4 ar fud an domhain a fháil ar Sheinnteoir TG4? (Alt 3) 5 mharc • Cláir agus ábhair chraolta = 5 mharc • Cláir = 5 mharc • Ábhair chraolta = 5 mharc",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "An Nua-theicneolaíocht agus an Ghaeilge",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-a-q3-b",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-3-b",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint A · Ceist 3(b)",
+      "questionText": "3(b) Conas atá a fhios againn go bhfuil www.tuairisc.ie ag dul ó neart go neart? (Alt 3)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q3-b",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 13,
+      "schemePages": [
+        13
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Conas atá a fhios againn go bhfuil www.tuairisc.ie ag dul ó neart go neart? (Alt 3) 5 mharc • Thug breis is 330,000 léitheoir cuairt ar www.tuairisc.ie in 2020, an líon is mó léitheoirí a thug cuairt ar an suíomh ó bunaíodh an tseirbhís nuachta sin in 2014 = 5 mharc • Thug breis is 330,000 léitheoir cuairt ar www.tuairisc.ie in 2020 = 3 mharc",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "An Nua-theicneolaíocht agus an Ghaeilge",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-a-q4-a",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-4-a",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint A · Ceist 4(a)",
+      "questionText": "4(a) Scríobh síos dhá úsáid a bhaineann eagraíochtaí Gaeilge as na meáin shóisialta. (Alt 4)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q4-a",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 13,
+      "schemePages": [
+        13
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "4. (a) Scríobh síos dhá úsáid a bhaineann eagraíochtaí Gaeilge as na meáin shóisialta. (Alt 4) 3 mharc + 2 mharc = 5 mharc An chéad úsáid atá ceart = 3 mharc; an dara húsáid atá ceart = 2 mharc • Chun eolas a scaipeadh faoi obair na n-eagraíochtaí Gaeilge • Chun eolas a scaipeadh faoi imeachtaí a bhíonn ar siúl acu • Chun eolas a scaipeadh faoi chomórtais a bhíonn ar bun acu",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "An Nua-theicneolaíocht agus an Ghaeilge",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-a-q4-b",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-4-b",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint A · Ceist 4(b)",
+      "questionText": "4(b) Cén fáth a n‐eagraíonn Conradh na Gaeilge Lá na Meán Sóisialta mar chuid de Sheachtain na Gaeilge? (Alt 4)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q4-b",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 13,
+      "schemePages": [
+        13
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén fáth a n-eagraíonn Conradh na Gaeilge Lá na Meán Sóisialta mar chuid de Sheachtain na Gaeilge? (Alt 4) 5 mharc • Le daoine a spreagadh postáil as Gaeilge a chur in airde ar na meáin shóisialta = 5 mharc • Le daoine a spreagadh postáil as Gaeilge = 3 mharc",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "An Nua-theicneolaíocht agus an Ghaeilge",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-a-q5-a",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-5-a",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint A · Ceist 5(a)",
+      "questionText": "5(a) Scríobh síos dhá rud atá le fáil ar shuíomh an fhoclóra Béarla‐Gaeilge, www.foclóir.ie. (Alt 5)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q5-a",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 13,
+      "schemePages": [
+        13,
+        14
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "5. (a) Scríobh síos dhá rud atá le fáil ar shuíomh an fhoclóra Béarla-Gaeilge, www.foclóir.ie. (Alt 5) 3 mharc + 2 mharc = 5 mharc An chéad rud atá ceart = 3 mharc; an dara rud atá ceart = 2 mharc • A lán focal nua-aimseartha • Eolas gramadaí • Eolas foghraíochta",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "An Nua-theicneolaíocht agus an Ghaeilge",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-a-q5-b",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-A-5-b",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint A · Ceist 5(b)",
+      "questionText": "5(b) Cad atá ar fáil ar an suíomh gréasáin www.dúchas.ie? (Alt 5)",
+      "totalMarks": 5,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-ol-p2-reading-a-q5-b",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 14,
+      "schemePages": [
+        14
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cad atá ar fáil ar an suíomh gréasáin www.dúchas.ie? (Alt 5) 5 mharc • Tá scéalta nó amhráin nó grianghraif nó lámhscríbhinní as gach áit in Éirinn air = 5 mharc • Scéalta nó amhráin nó grianghraif nó lámhscríbhinní = 3 mharc • Ábhar béaloidis = 5 mharc • Béaloideas na hÉireann = 5 mharc • Cultúr traidisiúnta na hÉireann = 5 mharc • Béaloideas = 3 mharc",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "An Nua-theicneolaíocht agus an Ghaeilge",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-b-q1-a",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-1-a",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint B · Ceist 1(a)",
+      "questionText": "1(a) Scríobh síos an dá ghaisce a rinne an rothaí proifisiúnta Éireannach, Sam Bennett, sa rás mór rothaíochta, an Tour de France, Dé Domhnaigh, 20 Meán Fómhair 2020. (Alt 1)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q1-a",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 15,
+      "schemePages": [
+        15
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "1. (a) Scríobh síos an dá ghaisce a rinne an rothaí proifisiúnta Éireannach, Sam Bennett, sa rás mór rothaíochta, an Tour de France, Dé Domhnaigh, 20 Meán Fómhair 2020. (Alt 1) 3 mharc + 2 mharc = 5 mharc An chéad ghaisce atá ceart = 3 mharc; an dara gaisce atá ceart = 2 mharc • Bhuaigh sé an chéim dheireanach (den rás ar an Champs-Élysées i bPáras) • Bhuaigh sé geansaí glas (an rása chomh maith)",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Scéalta ó shaol an spóirt in 2020",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-b-q1-b",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-1-b",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint B · Ceist 1(b)",
+      "questionText": "1(b) Tabhair dhá chúis mhórtais a bhí ag an réalta spóirt, Katie Taylor, in 2020. (Alt 1)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q1-b",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 15,
+      "schemePages": [
+        15
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Tabhair dhá chúis mhórtais a bhí ag an réalta spóirt, Katie Taylor, in 2020. (Alt 1) 3 mharc + 2 mharc = 5 mharc An chéad chúis mhórtais atá ceart = 3 mharc; an dara cúis mhórtais atá ceart = 2 mharc • Is í Katie Taylor curadh an domhain sa rannóg éadrom-mheáchain • Rinne Katie a craobhacha domhanda a chosaint faoi dhó i rith na bliana • Fuair sí an ceann is fearr ar a céilí comhraic sa dá throid • D’ainmnigh Cumann Dornálaíochta an Domhain í mar ‘Dhornálaí Ban na Bliana’",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Scéalta ó shaol an spóirt in 2020",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-b-q2-a",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-2-a",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint B · Ceist 2(a)",
+      "questionText": "2(a) Luaigh dhá phíosa eolais faoin gcaoi ar éirigh le foireann sacair Phoblacht na hÉireann i gCorn an Domhain i 1990. (Alt 2)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q2-a",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 15,
+      "schemePages": [
+        15
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "2. (a) Luaigh dhá phíosa eolais faoin gcaoi ar éirigh le foireann sacair Phoblacht na hÉireann i gCorn an Domhain i 1990. (Alt 2) 3 mharc + 2 mharc = 5 mharc An chéad phíosa eolais atá ceart = 3 mharc; an dara píosa eolais atá ceart = 2 mharc • Bhain siad áit amach i gCorn an Domhain den chéad uair • D’éirigh leo dul chomh fada leis na babhtaí ceathrú ceannais • D’imir siad in aghaidh na hIodáile ach chaill siad an cluiche sin",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Scéalta ó shaol an spóirt in 2020",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-b-q2-b",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-2-b",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint B · Ceist 2(b)",
+      "questionText": "2(b) Scríobh síos an dá chúis ar moladh Caoimhín Kelleher, cúl báire fhoireann sacair Learphoill, i ndiaidh an chluiche in aghaidh Ajax. (Alt 2)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q2-b",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 15,
+      "schemePages": [
+        15
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Scríobh síos an dá chúis ar moladh Caoimhín Kelleher, cúl báire fhoireann sacair Learphoill, i ndiaidh an chluiche in aghaidh Ajax. (Alt 2) 3 mharc + 2 mharc = 5 mharc An chéad chúis atá ceart = 3 mharc; an dara cúis atá ceart = 2 mharc • Rinne sé trí shábháil den scoth • Níor lig sé aon chúl isteach",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Scéalta ó shaol an spóirt in 2020",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-b-q3-a",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-3-a",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint B · Ceist 3(a)",
+      "questionText": "3(a) Cén gaisce a rinne foireann sinsir Bhaile Átha Cliath i bpeil na bhfear i mí na Nollag seo caite? (Alt 3)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q3-a",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 15,
+      "schemePages": [
+        15
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "3. (a) Cén gaisce a rinne foireann sinsir Bhaile Átha Cliath i bpeil na bhfear i mí na Nollag seo caite? (Alt 3) 5 mharc • Bhuaigh siad Craobh na hÉireann sa pheil den séú huair as a chéile = 5 mharc",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Scéalta ó shaol an spóirt in 2020",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-b-q3-b",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-3-b",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint B · Ceist 3(b)",
+      "questionText": "3(b) Cén fáth a bhfuil ainm an iarthráchtaire, Micheál Ó Muircheartaigh, luaite i Leabhar Curiarrachtaí Guinness? (Alt 3)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q3-b",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 16,
+      "schemePages": [
+        16
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Cén fáth a bhfuil ainm an iarthráchtaire, Micheál Ó Muircheartaigh, luaite i Leabhar Curiarrachtaí Guinness? (Alt 3) 5 mharc • Is é an tráchtaire spóirt is faide a bhí ag tráchtaireacht ar chluichí beo é = 5 mharc",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Scéalta ó shaol an spóirt in 2020",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-b-q4-a",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-4-a",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint B · Ceist 4(a)",
+      "questionText": "4(a) Cad a tharla i bPáirc an Chrócaigh ag cluiche peile idir Tiobraid Árann agus Baile Átha Cliath ar an 21 Samhain 1920? (Alt 4)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q4-a",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 16,
+      "schemePages": [
+        16
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "4. (a) Cad a tharla i bPáirc an Chrócaigh ag cluiche peile idir Tiobraid Árann agus Baile Átha Cliath ar an 21 Samhain 1920? (Alt 4) 5 mharc • Tharla an lá is duairce a bhí ag Cumann Lúthchleas Gael riamh • Maraíodh ceithre dhuine dhéag nuair a scaoil Arm na Breataine urchair leis an slua • Gortaíodh go leor eile nuair a scaoil Arm na Breataine urchair leis an slua • Bhí imreoir amháin, Michael Hogan i measc na ndaoine a maraíodh • Maraíodh ceithre dhuine dhéag • Gortaíodh go leor eile • Scaoil Arm na Breataine urchair leis an slua",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Scéalta ó shaol an spóirt in 2020",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-b-q4-b",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-4-b",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint B · Ceist 4(b)",
+      "questionText": "4(b) Scríobh síos dhá rud a tharla ag an searmanas cuimhneacháin i bPáirc an Chrócaigh ar an 21 Samhain anuraidh. (Alt 4)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q4-b",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 16,
+      "schemePages": [
+        16
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Scríobh síos dhá rud a tharla ag an searmanas cuimhneacháin i bPáirc an Chrócaigh ar an 21 Samhain anuraidh. (Alt 4) 3 mharc + 2 mharc = 5 mharc An chéad rud atá ceart = 3 mharc; an dara rud atá ceart = 2 mharc • Thug Cumann Lúthchleas Gael ómós do na ceithre dhuine dhéag a maraíodh • Lasadh ceithre lasair déag (ar Chnoc 16, lasair do gach duine a maraíodh) • Leagadh bláthfhleasc (ar an bpáirc san áit ar maraíodh Michael Hogan an lá sin i 1920)",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Scéalta ó shaol an spóirt in 2020",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-b-q5-a",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-5-a",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint B · Ceist 5(a)",
+      "questionText": "5(a) Tabhair dhá rud atá ar fáil san iris nua Cuaille a sheol Cumann Lúthchleas Gael. (Alt 5)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q5-a",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 16,
+      "schemePages": [
+        16
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "5. (a) Tabhair dhá rud atá ar fáil san iris nua Cuaille a sheol Cumann Lúthchleas Gael. (Alt 5) 3 mharc + 2 mharc = 5 mharc An chéad rud atá ceart = 3 mharc; an dara rud atá ceart = 2 mharc • Ailt faoi chlubanna na gcluichí Gaelacha • Agallaimh le himreoirí idirchontae • Ceistneoirí le himreoirí idirchontae",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Scéalta ó shaol an spóirt in 2020",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-reading-b-q5-b",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "R-B-5-b",
+      "questionRef": "2021 OL Paper 2 Léamhthuiscint B · Ceist 5(b)",
+      "questionText": "5(b) Luaigh dhá phíosa eolais a tugadh faoi na laochra spóirt sa tsraith Laochra Gael ar TG4. (Alt 5)",
+      "totalMarks": 5,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-ol-p2-reading-b-q5-b",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 16,
+      "schemePages": [
+        16
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "taskRequirements": [
+        "Read the whole extract that goes with the question. Answer the part this card names.",
+        "Use the paragraph the question names."
+      ],
+      "criteria": [
+        {
+          "id": "b",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) Luaigh dhá phíosa eolais a tugadh faoi na laochra spóirt sa tsraith Laochra Gael ar TG4. (Alt 5) 3 mharc + 2 mharc = 5 mharc An chéad phíosa eolais atá ceart = 3 mharc; an dara píosa eolais atá ceart = 2 mharc • Insíodh scéal pearsanta na laochra sin • Tugadh cuntas ar na gaiscí a rinne siad (ar pháirc na himeartha) • Tugadh cuntas ar an gceangal atá ag an spórt a imríonn siad lena gceantar féin",
+            "Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart. Nóta: Gearrfar pionós i ngeall ar iomarcaíocht."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this part: first correct point 3, second 2 (0/3/5). Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh]” — one deduction from each passage total (50), never inside a single part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "Scéalta ó shaol an spóirt in 2020",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-prose-2a-a-i",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2A-a-i",
+      "questionRef": "2021 OL Paper 2 Prós 2A(a) · Hurlamaboc · (i)",
+      "questionText": "(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(i) Cén fáth a mbeidh cóisir i dteach Albright? (5 marc)",
+      "totalMarks": 5,
+      "topicId": "irish-4-5",
+      "conceptId": "irish-ol-p2-prose-2a-a-i",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 18,
+      "schemePages": [
+        18,
+        19,
+        20
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        9
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Cén fáth a mbeidh cóisir i dteach Albright? (5 mharc) Freagraí samplacha: • Lisín agus Pól ag ceiliúradh fiche bliain a bpósta • Lisín agus Pól ag ceiliúradh a bpósta • Lisín agus Pól pósta le fiche bliain • Lisín agus Pól pósta",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Hurlamaboc",
+        "pages": [
+          9
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-prose-2a-a-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2A-a-ii",
+      "questionRef": "2021 OL Paper 2 Prós 2A(a) · Hurlamaboc · (ii)",
+      "questionText": "(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(ii) Déan cur síos ar na hullmhúcháin atá déanta ag Lisín don chóisir. (5 marc)",
+      "totalMarks": 5,
+      "topicId": "irish-4-5",
+      "conceptId": "irish-ol-p2-prose-2a-a-ii",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 18,
+      "schemePages": [
+        18,
+        19,
+        20
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        9
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Déan cur síos ar na hullmhúcháin atá déanta ag Lisín don chóisir. Dhá phointe eolais = 3 mharc + 2 mharc (5 mharc) Freagraí samplacha: • D’eagraigh Lisín an chóisir • D’ordaigh sí gloiní agus fíon • Bhí an reoiteoir lán le pióga • Bhí an reoiteoir lán le hispíní • Bhí an reoiteoir le bradán • Bhí arán lámhdhéanta ar fáil • Bhí péint nua ar na ballaí • Bhí snas ar na hurláir • Bhí bláthanna sna prócaí • Fuair Lisín reoiteoir eile ar cíos agus bhí sé lán le bia (deas nó milis) • Má bhíonn an aimsir go deas, beidh an chóisir amuigh sa ghairdín agus gheobhaidh Lisín boird agus cathaoireacha ar iasacht ó na comharsana • Má bhíonn sé ag cur báistí, rachaidh siad isteach sa teach agus toisc gur teach mór é beidh spás ann do gach duine",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Hurlamaboc",
+        "pages": [
+          9
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-prose-2a-a-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2A-a-iii",
+      "questionRef": "2021 OL Paper 2 Prós 2A(a) · Hurlamaboc · (iii)",
+      "questionText": "(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(iii) Tabhair dhá phointe eolais faoi na mná eile ar Ascaill na Fuinseoige. (5 marc)",
+      "totalMarks": 5,
+      "topicId": "irish-4-5",
+      "conceptId": "irish-ol-p2-prose-2a-a-iii",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 18,
+      "schemePages": [
+        18,
+        19,
+        20
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        9
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) Tabhair dhá phointe eolais faoi na mná eile ar Ascaill na Fuinseoige. Dhá phointe eolais = 3 mharc + 2 mharc (5 mharc) Freagraí samplacha: • Bhí siad ardnósach • Bhí siad dathúil • Bhí siad faiseanta • Gruaig fhionn a bhí ar na máithreacha go léir • Ní raibh gruaig liath ar bhean ar bith • Thaitin an faisean/éadaí galánta leo • Ní théadh siad aon áit gan smideadh orthu • Bhí bean amháin le gruaig dhubh ar an mbóthar, Eibhlín, máthair Emma Ní Loingsigh agus cheap na comharsana go raibh sí saghas aisteach • Nuair a bhíodh na mná ag cur amach na mboscaí bruscair, bhíodh gúnaí oíche deasa orthu agus gruaig néata • Bhí Lisín chun tosaigh ar na mná ar fad • Bhí Lisín níos faiseanta/níos néata ná aon duine eile",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Hurlamaboc",
+        "pages": [
+          9
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-prose-2a-a-iv",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2A-a-iv",
+      "questionRef": "2021 OL Paper 2 Prós 2A(a) · Hurlamaboc · (iv)",
+      "questionText": "(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(iv) Scríobh síos dhá phointe eolais faoi Phól, fear céile Lisín. (5 marc)",
+      "totalMarks": 5,
+      "topicId": "irish-4-5",
+      "conceptId": "irish-ol-p2-prose-2a-a-iv",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 18,
+      "schemePages": [
+        18,
+        19,
+        20
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        9
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iv) Scríobh síos dhá phointe eolais faoi Phól, fear céile Lisín. Dhá phointe eolais = 3 mharc + 2 mharc (5 mharc) Freagraí samplacha: • Bhí sé bocht/ag obair i siopa/anabaí nuair a bhuail Lisín leis • Bhí Pól saibhir anois • Bhí sé ag ceannach stoc ar an idirlíon • Bhí tithe aige thar lear • Bhí árasáin aige thar lear • Bhailigh sé cíos ó na tithe/na hárasáin a bhí aige • Bhí raidhse mór airgid/bhí a lán airgid aige/bhí ag éirí go sármhaith leis anois • Bhí an t-airgead go léir infheistithe aige • Ní raibh air mórán cánach a íoc • Bhí sé ina léachtóir ollscoile/ina léachtóir i gcúrsaí gnó • Bhí sé eolach/cliste/ciallmhar • Bhí Lisín bródúil as • Bhí meas ag daoine air",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Hurlamaboc",
+        "pages": [
+          9
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-prose-2a-a-v",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2A-a-v",
+      "questionRef": "2021 OL Paper 2 Prós 2A(a) · Hurlamaboc · (v)",
+      "questionText": "(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(v) ‘Bean ghnóthach ba ea Lisín agus bhí a lán rudaí eile ar siúl aici taobh amuigh den teach.’\nScríobh síos dhá phointe eolais faoin gcuid sin de shaol Lisín. (5 marc)",
+      "totalMarks": 5,
+      "topicId": "irish-4-5",
+      "conceptId": "irish-ol-p2-prose-2a-a-v",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 18,
+      "schemePages": [
+        18,
+        19,
+        20
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        9
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            3,
+            5
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(v) ‘Bean ghnóthach ba ea Lisín agus bhí a lán rudaí eile ar siúl aici taobh amuigh den teach.’ Scríobh síos dhá phointe eolais faoin gcuid sin de shaol Lisín. Dhá phointe eolais = 3 mharc + 2 mharc (5 mharc) Freagraí samplacha: • Bhí baint aici le clubanna leabhar • Bhí baint aici le clubanna a thugadh cainteanna ar stair áitiúil/ar gheolaíocht áitiúil/ ar litríocht áitiúil • Théadh sí chuig cainteanna faoi ghairdíní deasa/faoi conas an teach a mhaisiú go hálainn • Théadh sí chuig ranganna teanga/chuig ranganna teanga sa Spáinnis/sa Rúisis/ sa tSínis/sa tSeapáinis • Bhí baint aici le clubanna a thugadh cabhair do na daoine bochta • Thaitin scannáin/drámaí léi",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "Hurlamaboc",
+        "pages": [
+          9
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-prose-2a-b-an-lasair-choille",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "P-2A-b-an-lasair-choille",
+      "questionRef": "2021 OL Paper 2 Prós 2A(b) · An Lasair Choille",
+      "questionText": "(b) Freagair an cheist thíos faoin scannán Cáca Milis nó faoin dráma An Lasair Choille.\nAn Lasair Choille\nTabhair cuntas ar an gcineál saoil atá ag an bhfear óg, Séamas, agus é ag tabhairt aire don seanfhear, Micil, sa dráma An Lasair Choille. (25 marc)",
+      "totalMarks": 25,
+      "topicId": "irish-4-8",
+      "conceptId": "irish-ol-p2-prose-2a-b-an-lasair-choille",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 18,
+      "schemePages": [
+        18,
+        21
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        9
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Freagair an cheist thíos faoin scannán Cáca Milis nó faoin dráma An Lasair Choille.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 25,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "nó An Lasair Choille (25 marc) Tabhair cuntas ar an gcineál saoil a bhí ag an bhfear óg, Séamas, agus é ag tabhairt aire don seanfhear, Micil, sa dráma An Lasair Choille. 5 phointe eolais agus 5 mharc ar gach pointe eolais (5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt) Pointí eolais samplacha: • Is léir go bhfuil Séamas agus Micil ag brath ar a chéile • Tá Séamas ag cabhrú le Micil le dhá bhliain déag • Tá Séamas faoi smacht Mhichil • Is cláiríneach é Micil agus fanann sé sa leaba gach lá agus tugann Séamas aire dó • Bíonn Micil ag brath ar Shéamas chun gach rud a dhéanamh dó • Nuair a deir Séamas le Micil gur mhaith leis dul go Sasana, tá Micil ar buile toisc nár mhaith leis Séamas a chailleadh • Tá saol dian ag Séamas nuair a thosaíonn Micil ag magadh faoi agus glaonn sé ‘amadán’ air; ‘níl éirim sciortáin ionat’. Deir sé freisin go gcuireann na fits isteach ar Shéamas Cailleann Séamas misneach agus ceapann sé go mbíonn gach duine ag magadh faoi • Tagann an cailín isteach agus ligeann sí uirthi gur Iníon Iarla Chonnacht í agus go bhfuil saoirse uaithi óna hathair • Ba mhaith léi dul go Sasana le Séamas • Ba bhreá le Séamas dul go Sasana le Míoda ach níl fonn air Micil a fhágáil ina aonar • Tosaíonn Míoda ag magadh faoi agus á mhaslú • Geallann Micil an teach agus an talamh do Shéamas mar ní bheidh aon duine ann chun aire a thabhairt dó • Cé go gcuireann an cailín dallamullóg ar Shéamas, osclaíonn sí a shúile dó • Nuair a ligeann Séamas Binncheol saor, tosaíonn an t-éan ag canadh • Tá tuiscint ag Séamas ar shaoirse anois",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        },
+        {
+          "id": "gaeilge-deduction",
+          "label": "Gaeilge lochtach",
+          "kind": "deduction",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidanceKind": "quality",
+          "guidance": [
+            "[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]"
+          ]
+        }
+      ],
+      "markingGuideNote": "One complete SEC response: five points at 5 (2 for the bare point + 3 for development); the 0–4 Gaeilge deduction applies once. The sample points are indicative rather than exhaustive. 2A(b) offers Cáca Milis or An Lasair Choille; this card is An Lasair Choille.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Prós Ainmnithe",
+        "title": "An Lasair Choille",
+        "pages": [
+          9
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-poetry-3a-a-i",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-a-i",
+      "questionRef": "2021 OL Paper 2 Filíocht 3A(a) · An Spailpín Fánach · (i)",
+      "questionText": "(a) An Spailpín Fánach\n(i) Déan cur síos, i d’fhocail féin, ar an íomhá (ar an bpictiúr) den spailpín a thugtar dúinn i véarsa a haon den dán. (Is leor dhá phointe eolais.) (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-1",
+      "conceptId": "irish-ol-p2-poetry-3a-a-i",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25,
+        26
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        11
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Déan cur síos, i d’fhocail féin, ar an íomhá (ar an bpictiúr) den spailpín a thugtar dúinn i véarsa a haon den dán. (Is leor dhá phointe eolais.) (8 marc) Dhá phointe eolais = 4 mharc + 4 mharc Freagraí samplacha: • Íomhá bhrónach den spailpín atá i véarsa a haon • Tá saol crua aige le fada an lá • Is oibrí feirme bocht/truamhéalach é • Bíonn an spailpín fánach ag taisteal ó áit go háit/timpeall na tíre • Tá sláinte an spailpín fíorthábhachtach dó chun gur féidir leis a chuid oibre a dhéanamh i gceart • Bíonn an spailpín amuigh ag obair sna páirceanna/ar an bhféar fliuch go luath ar maidin • Piocann sé suas galair a mhaireann trí mhí • Bíonn sé tinn go minic • Tá sé tinn tuirseach den saol seo • Íomhá den spailpín mar shaighdiúir ag troid leis na croppies • Píce agus bata aige chun duine a shá Nóta: Línte cuí díreach as véarsa a haon gan rian an iarrthóra ar an bhfreagra = 2 mharc + 2 mharc",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "An Spailpín Fánach",
+        "pages": [
+          11
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-poetry-3a-a-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-a-ii",
+      "questionRef": "2021 OL Paper 2 Filíocht 3A(a) · An Spailpín Fánach · (ii)",
+      "questionText": "(a) An Spailpín Fánach\n(ii) Cén t‐eolas a thugtar dúinn faoi shaol an spailpín i véarsa a dó?\n(Is leor dhá phointe eolais, i d’fhocail féin.) (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-1",
+      "conceptId": "irish-ol-p2-poetry-3a-a-ii",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25,
+        26
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        11
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Cén t-eolas a thugtar dúinn faoi shaol an spailpín i véarsa a dó? (Is leor dhá phointe eolais, i d’fhocail féin.) (8 marc) Dhá phointe eolais = 4 mharc + 4 mharc Freagraí samplacha: • Bíonn saol suimiúil aige ag taisteal ar fud na tíre - Cluain Meala, Tiobraid Árann, Carraig na Siúire, Callainn, Durlas • Bíonn sé ag baint an fhéir • Bíonn sé ag obair le súiste/súiste ina lámha aige • É fostaithe toisc go bhfuil sé breá láidir mar oibrí • É níos fearr ná na spailpíní eile • Náire ar an spailpín nuair a chloiseann sé ‘Sin chu’ibh an spailpín fánach!’ Nóta: Línte cuí díreach as véarsa a dó gan rian an iarrthóra ar an bhfreagra = 2 mharc + 2 mharc",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "An Spailpín Fánach",
+        "pages": [
+          11
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-poetry-3a-a-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-a-iii",
+      "questionRef": "2021 OL Paper 2 Filíocht 3A(a) · An Spailpín Fánach · (iii)",
+      "questionText": "(a) An Spailpín Fánach\n(iii) Conas a mhothaíonn an spailpín agus é ‘ar mhargadh na saoire’ i véarsa a trí?\nTabhair dhá fháth, i d’fhocail féin, a mothaíonn an spailpín mar sin. (9 marc)",
+      "totalMarks": 9,
+      "topicId": "irish-5-1",
+      "conceptId": "irish-ol-p2-poetry-3a-a-iii",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25,
+        26
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        11
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) Conas a mhothaíonn an spailpín agus é ‘ar mhargadh na saoire’ i véarsa a trí? Tabhair dhá fháth, i d’fhocail féin, a mothaíonn an spailpín mar sin. (9 marc) Mothúchán = 1 mharc (míshásta, fearg, náire, imní, brón…) Dhá fháth = 4 mharc + 4 mharc Freagraí samplacha: • Tá an spailpín míshásta mar ní thaitníonn margadh na saoire leis i mbailte cosúil le Caiseal...níl an spailpín sásta a bheith suite in aice leis an mballa ag margadh na saoire... • Bíonn náire air a bheith ar thaobh na sráide...bíonn na huaisle/na Sasanaigh ag teacht ar chapaill ag cur ceisteanna ar an spailpín an bhfuil sé fostaithe… • Tá an spailpín imníoch mar cuireann an obair a dhéanann sé a shláinte i mbaol...nuair a bhíonn sé fostaithe, bíonn ar an spailpín dul ag siúl ar thuras fada… Nóta: Mothúchán agus línte cuí díreach as véarsa a trí gan rian an iarrthóra ar na fáthanna = 1 mharc + 2 mharc + 2 mharc",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "An Spailpín Fánach",
+        "pages": [
+          11
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-poetry-3a-b-i",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-b-i",
+      "questionRef": "2021 OL Paper 2 Filíocht 3A(b) · Mo ghrá‐sa (idir lúibíní) · (i)",
+      "questionText": "(b) Mo ghrá‐sa (idir lúibíní)\n(i) Scríobh síos dhá phointe eolais, i d’fhocail féin, a thugann an file dúinn faoin bhfear sna línte 1‐12 den dán. (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-4",
+      "conceptId": "irish-ol-p2-poetry-3a-b-i",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25,
+        26,
+        27
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        12
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Scríobh síos dhá phointe eolais, i d’fhocail féin, a thugann an file dúinn faoin bhfear sna línte 1-12 den dán. (8 marc) Dhá phointe eolais = 4 mharc + 4 mharc Freagraí samplacha: • Níl an fear cosúil le bláth na n-airní • Fásfaidh nóiníní as a chluasa nuair a bheidh sé curtha sa talamh • Ní haon sruthán ceolmhar iad a shúile • Níl cuma cheolmhar ar a shúile • Níl dath glas ar a shúile • Tá a shúile róchóngarach/róghar dá chéile Nóta: Dhá líne chuí as na línte 1-12 gan rian an iarrthóra ar an bhfreagra = 2 mharc + 2 mharc",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Mo ghrá‐sa (idir lúibíní)",
+        "pages": [
+          12
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-poetry-3a-b-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-b-ii",
+      "questionRef": "2021 OL Paper 2 Filíocht 3A(b) · Mo ghrá‐sa (idir lúibíní) · (ii)",
+      "questionText": "(b) Mo ghrá‐sa (idir lúibíní)\n(ii) Cad a deir an file faoi ghruaig an fhir sna línte 13‐16 den dán?\n(Is leor dhá phointe eolais, i d’fhocail féin.) (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-4",
+      "conceptId": "irish-ol-p2-poetry-3a-b-ii",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25,
+        26,
+        27
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        12
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Cad a deir an file faoi ghruaig an fhir sna línte 13-16 den dán? (Is leor dhá phointe eolais, i d’fhocail féin.) (8 marc) Dhá phointe eolais = 4 mharc + 4 mharc Freagraí samplacha: • Níl gruaig an fhir cosúil le síoda • Tá a ghruaig cosúil le gruaig dhubh bhean Shakespeare • Tá gruaig an fhir cosúil le wire deilgní/le sreang dheilgneach Nóta: Línte cuí as na línte 13-16 gan rian an iarrthóra ar an bhfreagra = 2 mharc + 2 mharc",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Mo ghrá‐sa (idir lúibíní)",
+        "pages": [
+          12
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-poetry-3a-b-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-b-iii",
+      "questionRef": "2021 OL Paper 2 Filíocht 3A(b) · Mo ghrá‐sa (idir lúibíní) · (iii)",
+      "questionText": "(b) Mo ghrá‐sa (idir lúibíní)\n(iii) Cén cineál duine é an fear sna línte 17‐21 den dán?\nCuir fáthanna, i d’fhocail féin, le do fhreagra. (Is leor dhá fháth.) (9 marc)",
+      "totalMarks": 9,
+      "topicId": "irish-5-4",
+      "conceptId": "irish-ol-p2-poetry-3a-b-iii",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25,
+        26,
+        27
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        12
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) Cén cineál duine é an fear sna línte 17-21 den dán? Cuir fáthanna, i d’fhocail féin, le do fhreagra. (Is leor dhá fháth.) (9 marc) An cineál duine = 1 mharc Dhá fháth = 4 mharc + 4 mharc An cineál duine: cneasta, fial, flaithiúil, rómánsúil, grámhar … Fáthanna Samplacha: Duine grámhar is ea an fear sa dán seo mar tugann sé úlla agus caora fíniúna don bhean… Tá an fear fial mar tugann sé bronntanais don bhean… Nóta: An cineál duine agus línte cuí as na línte 17-21 gan rian an iarrthóra ar an bhfreagra = 1 mharc + 2 mharc + 2 mharc",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Mo ghrá‐sa (idir lúibíní)",
+        "pages": [
+          12
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-poetry-3a-c-i",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-c-i",
+      "questionRef": "2021 OL Paper 2 Filíocht 3A(c) · Géibheann · (i)",
+      "questionText": "(c) Géibheann\n(i) Déan cur síos, i d’fhocail féin, ar an gcineál saoil atá ag an ainmhí sna línte 1‐8 den dán. (Is leor dhá phointe eolais.) (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-2",
+      "conceptId": "irish-ol-p2-poetry-3a-c-i",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25,
+        27,
+        28
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        13
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(i) Déan cur síos, i d’fhocail féin, ar an gcineál saoil atá ag an ainmhí sna línte 1-8 den dán. (Is leor dhá phointe eolais.) (8 marc) Dhá phointe eolais = 4 mharc + 4 mharc Freagraí samplacha: • Ainmhí fiáin atá i gceist • Bhí cónaí air sna trópaicí • Bhí clú agus cáil air de bharr a chrutha agus a áilleachta • Bhí sé láidir/lán de dhínit/lán de spiorad • Ainmhí bródúil/mórtasach agus cumhachtach ba ea é • Bhí sé ábalta crainn na foraoise a luascadh lena bhúir • Bhí sé ina thimpeallacht nádúrtha féin • Bhí sé saor/bhí spás aige • Bhí meas ag daoine air • Bhí sé neamhspleách Nóta: Dhá líne chuí as na línte 1-8 gan rian an iarrthóra ar an bhfreagra = 2 mharc + 2 mharc",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Géibheann",
+        "pages": [
+          13
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-poetry-3a-c-ii",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-c-ii",
+      "questionRef": "2021 OL Paper 2 Filíocht 3A(c) · Géibheann · (ii)",
+      "questionText": "(c) Géibheann\n(ii) Conas a mhothaíonn an t‐ainmhí sna línte 9‐17 den dán, dar leat?\nTabhair dhá fháth, i d’fhocail féin, a mothaíonn an t‐ainmhí mar sin. (8 marc)",
+      "totalMarks": 8,
+      "topicId": "irish-5-2",
+      "conceptId": "irish-ol-p2-poetry-3a-c-ii",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25,
+        27,
+        28
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        13
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(ii) Conas a mhothaíonn an t-ainmhí sna línte 9-17 den dán, dar leat? Tabhair dhá fháth, i d’fhocail féin, a mothaíonn an t-ainmhí mar sin. (8 marc) Mar a mhothaíonn sé = 1 mharc Dhá fháth = 4 mharc + 3 mharc Freagraí samplacha: Mothúcháin = trua, brón, díomá, frustachas, fearg, éadóchas, tuirse, uaigneas, neamhshuim, eagla, lagmhisneach, míshástacht… = 1 mharc • Níl an t-ainmhí sásta…níl ach crann amháin os a chomhair…níl saoirse ar bith aige…ní ligfidh éinne amach é… • Tá a spiorad caillte/briste…tá sé taobh thiar de bharraí iarainn/gan spás/mar thaispeántas… • Is fuath leis an saol atá aige…níl sé ina thimpeallacht nádúrtha…tá sé i ngéibheann… • Tá tuirse air…ní osclaíonn sé ach súil amháin…níl le déanamh aige ach féachaint ar an gcrann aonraic… Nóta: Dhá líne chuí as na línte 9-17 gan rian an iarrthóra ar an bhfreagra = 2 mharc + 2 mharc",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Géibheann",
+        "pages": [
+          13
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    },
+    {
+      "id": "irish-2021-ol-p2-poetry-3a-c-iii",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "section": "2",
+      "atlasQuestionId": "F-3A-c-iii",
+      "questionRef": "2021 OL Paper 2 Filíocht 3A(c) · Géibheann · (iii)",
+      "questionText": "(c) Géibheann\n(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)",
+      "totalMarks": 9,
+      "topicId": "irish-5-2",
+      "conceptId": "irish-ol-p2-poetry-3a-c-iii",
+      "paperFileid": "LC001GLP200IV",
+      "schemeFileid": "LC001GLP000IV",
+      "schemePage": 25,
+      "schemePages": [
+        25,
+        27,
+        28
+      ],
+      "reviewedAt": "2026-11-04",
+      "reviewedPaperPages": [
+        13
+      ],
+      "taskRequirements": [
+        "Freagair dhá cheist as an roinn seo.",
+        "Use accurate, relevant references to the text."
+      ],
+      "criteria": [
+        {
+          "id": "eolas",
+          "label": "Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc) Is maith/Ní maith = 1 mharc Dhá fháth = 4 mharc + 4 mharc Freagraí samplacha: • Ní maith liom an dán – tá trua agam don ainmhí/níl an t-ainmhí sásta/tagann cuairteoirí lá i ndiaidh lae ag féachaint air/níl aon duine sásta é a ligean saor/níl ann ach taispeántas anois/tá an saol sa zú mínádúrtha d’ainmhí fiáin mar é… • Is maith liom an téama – na difríochtaí idir an t-ainmhí saor agus anois, tá frustrachas air/tá sé in ísle brí sa zú… • Ní maith liom na híomhánna sa dán – tá íomhá den zú brónach/tá an t-ainmhí míshásta leis na sluaite daoine a thugann cuairt air… • Is maith liom an dán – is dán simplí é/is breá liom an meafar/an íomhá sa dán/is maith liom na mothúcháin sa dán/tá an dán suimiúil/éifeachtach…",
+            "Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí samplacha thíos uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí ábhartha eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "One printed sub-question at its published tariff. Scheme: “[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]” applies to the whole 25-mark answer, never inside one sub-question.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Filíocht Ainmnithe",
+        "title": "Géibheann",
+        "pages": [
+          13
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      }
+    }
+  ]
+}

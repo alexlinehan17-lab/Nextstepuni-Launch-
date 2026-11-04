@@ -57,6 +57,7 @@ from irish_higher_2022_p2 import apply_legacy_review as apply_higher_2022_p2_rev
 from irish_higher_2021_p1 import apply_legacy_review as apply_higher_2021_p1_review
 from irish_ordinary_2021_p1 import apply_legacy_review as apply_ordinary_2021_p1_review
 from irish_higher_2021_p2 import apply_legacy_review as apply_higher_2021_p2_review
+from irish_ordinary_2021_p2 import apply_legacy_review as apply_ordinary_2021_p2_review
 from irish_furniture import strip_card
 from irish_gaeilge import lifted as lifted_gaeilge
 from irish_lifted import printed_lead_in, scheme_words
@@ -1391,6 +1392,7 @@ def main() -> int:
     cards, _ = apply_higher_2021_p1_review(cards)
     cards, _ = apply_ordinary_2021_p1_review(cards)
     cards, _ = apply_higher_2021_p2_review(cards)
+    cards, _ = apply_ordinary_2021_p2_review(cards)
     stripped = {}
     for card in cards:
         key = (card['year'], card['level'], card['paper'])

@@ -24,6 +24,7 @@ import reviewedOrdinary2023P2 from '../components/MarkBank/cards/irish/ordinary-
 import reviewedOrdinary2022P2 from '../components/MarkBank/cards/irish/ordinary-2022-p2-authored.json';
 import reviewedHigher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
 import reviewedHigher2021P2 from '../components/MarkBank/cards/irish/higher-2021-p2-authored.json';
+import reviewedOrdinary2021P2 from '../components/MarkBank/cards/irish/ordinary-2021-p2-authored.json';
 import reviewedOrdinary2025P1 from '../scripts/markbank/authored/irish-ordinary-2025-p1-component-review.json';
 import reviewedOrdinary2025P2 from '../components/MarkBank/cards/irish/ordinary-2025-p2-authored.json';
 import reviewedOrdinary2024P2 from '../components/MarkBank/cards/irish/ordinary-2024-p2-authored.json';
@@ -100,16 +101,16 @@ const census = JSON.parse(readFileSync(resolve(
 const manifest = authoredJson as unknown as IrishManifest;
 // These pins cover the legacy census output. Paper-reviewed components ship
 // beside it and carry their own regression files (2026 Higher and Ordinary Papers 1 and 2).
-const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards, ...reviewedHigher2025P2.cards, ...reviewedOrdinary2025P2.cards, ...reviewedOrdinary2024P2.cards, ...reviewedHigher2023P2.cards, ...reviewedOrdinary2023P2.cards, ...reviewedOrdinary2022P2.cards, ...reviewedHigher2022P2.cards, ...reviewedHigher2021P2.cards].map(card => card.id));
+const REVIEWED_IDS = new Set([...reviewed2026P1.cards, ...reviewed2026P2.cards, ...reviewedOrdinary2026P1.cards, ...reviewedOrdinary2026P2.cards, ...reviewedHigher2025P2.cards, ...reviewedOrdinary2025P2.cards, ...reviewedOrdinary2024P2.cards, ...reviewedHigher2023P2.cards, ...reviewedOrdinary2023P2.cards, ...reviewedOrdinary2022P2.cards, ...reviewedHigher2022P2.cards, ...reviewedHigher2021P2.cards, ...reviewedOrdinary2021P2.cards].map(card => card.id));
 const HIGHER = HIGHER_DECK.filter(card => !REVIEWED_IDS.has(card.id));
 // Reviewed legacy components keep their cards here, corrected in place (IDs unchanged).
 // 2025, 2024, 2023, 2022 and 2021 HL Paper 1 and 2025/2024 OL Paper 1 also attached each retained card's printed page; 2025 OL Paper 2
 // attached the printed question page to its six prose options and three optional poems.
 const SOURCED_BY_REVIEW = new Set<string>([...reviewedHigher2025P1.cardIds, ...reviewedHigher2024P1.cardIds, ...reviewedHigher2023P1.cardIds, ...reviewedHigher2022P1.cardIds, ...reviewedHigher2021P1.cardIds, ...reviewedOrdinary2025P1.cardIds, ...reviewedOrdinary2024P1.cardIds, ...reviewedOrdinary2023P1.cardIds, ...reviewedOrdinary2022P1.cardIds, ...reviewedOrdinary2021P1.cardIds,
-  ...[...reviewedOrdinary2025P2.review.legacyCardIds, ...reviewedOrdinary2024P2.review.legacyCardIds, ...reviewedOrdinary2023P2.review.legacyCardIds, ...reviewedOrdinary2022P2.review.legacyCardIds].filter(id => /-(prose-2[ab]|poetry-3b)-/.test(id))]);
+  ...[...reviewedOrdinary2025P2.review.legacyCardIds, ...reviewedOrdinary2024P2.review.legacyCardIds, ...reviewedOrdinary2023P2.review.legacyCardIds, ...reviewedOrdinary2022P2.review.legacyCardIds, ...reviewedOrdinary2021P2.review.legacyCardIds].filter(id => /-(prose-2[ab]|poetry-3b)-/.test(id))]);
 // Retained listening segments and whole reading questions now mark each printed part separately.
 const REVIEWED_MULTI = new Set<string>([...reviewedHigher2025P1.listeningSegmentCardIds, ...reviewedHigher2024P1.listeningSegmentCardIds, ...reviewedHigher2023P1.listeningSegmentCardIds, ...reviewedHigher2022P1.listeningSegmentCardIds, ...reviewedHigher2021P1.listeningSegmentCardIds, ...reviewedHigher2025P2.review.readingWholeCardIds, ...reviewedHigher2023P2.review.readingWholeCardIds, ...reviewedHigher2022P2.review.readingWholeCardIds, ...reviewedHigher2021P2.review.readingWholeCardIds,
-  ...reviewedOrdinary2025P1.listeningSegmentCardIds, ...reviewedOrdinary2024P1.listeningSegmentCardIds, ...reviewedOrdinary2023P1.listeningSegmentCardIds, ...reviewedOrdinary2022P1.listeningSegmentCardIds, ...reviewedOrdinary2021P1.listeningSegmentCardIds, ...reviewedOrdinary2025P2.review.readingWholeCardIds, ...reviewedOrdinary2024P2.review.readingWholeCardIds, ...reviewedOrdinary2023P2.review.readingWholeCardIds, ...reviewedOrdinary2022P2.review.readingWholeCardIds]);
+  ...reviewedOrdinary2025P1.listeningSegmentCardIds, ...reviewedOrdinary2024P1.listeningSegmentCardIds, ...reviewedOrdinary2023P1.listeningSegmentCardIds, ...reviewedOrdinary2022P1.listeningSegmentCardIds, ...reviewedOrdinary2021P1.listeningSegmentCardIds, ...reviewedOrdinary2025P2.review.readingWholeCardIds, ...reviewedOrdinary2024P2.review.readingWholeCardIds, ...reviewedOrdinary2023P2.review.readingWholeCardIds, ...reviewedOrdinary2022P2.review.readingWholeCardIds, ...reviewedOrdinary2021P2.review.readingWholeCardIds]);
 // Reviewed Ordinary compositions use the full 0–40 scale: the printed short-attempt columns include odd values.
 const FULL_SCALE_COMPOSITION = new Set<string>([...reviewedOrdinary2025P1.compositionRouteCardIds, ...reviewedOrdinary2024P1.compositionRouteCardIds, ...reviewedOrdinary2023P1.compositionRouteCardIds, ...reviewedOrdinary2022P1.compositionRouteCardIds, ...reviewedOrdinary2021P1.compositionRouteCardIds]);
 const ORDINARY = ORDINARY_DECK.filter(card => !REVIEWED_IDS.has(card.id));
@@ -263,7 +264,7 @@ describe('Irish prompt, paper and source integrity', () => {
 
   it('retains printed part labels and removes continuation furniture', () => {
     const hurlamaboc = byId.get('irish-2021-ol-p2-prose-2a-a');
-    expect(hurlamaboc?.questionText).toMatch(/\(i\).*\(ii\).*\(iii\).*\(iv\).*\(v\)/);
+    expect(hurlamaboc?.questionText).toMatch(/\(i\)[\s\S]*\(ii\)[\s\S]*\(iii\)[\s\S]*\(iv\)[\s\S]*\(v\)/);
 
     const furniture = ALL.filter(card =>
       /Cuid\s+[ABC]\s+ar\s+leanúint|Freagair\s+do\s+rogha\s+ceann\s+amháin\s+as\s*$/i
@@ -436,15 +437,17 @@ describe('Irish marking grammar', () => {
     })).toBe(true);
 
     const ordinaryCard = ordinary[0];
-    // The Eolas tariff is rows now (cards/irish/tariffs.ts): full marks is every row at its top.
-    const eolas = irishRubric(ordinaryCard).criteria.find(criterion => criterion.id === 'eolas')!;
-    const fullEolas = eolas.allocation
-      ? Object.fromEntries(eolas.allocation.parts.flatMap(part => part.rows.map(row => [irishRowScoreId('eolas', part.id, row.id), row.steps ? row.steps[row.steps.length - 1] : 1])))
-      : { [irishScoreId('eolas')]: 25 };
+    // The Eolas tariff is rows now (cards/irish/tariffs.ts): full marks is every row at its top. A reviewed card
+    // (2021 Ordinary 2A(a) Hurlamaboc since its paper review) marks each printed sub-question as its own criterion.
+    const awards = irishRubric(ordinaryCard).criteria.filter(criterion => criterion.kind === 'award');
+    const fullEolas = Object.fromEntries(awards.flatMap(criterion => criterion.allocation
+      ? criterion.allocation.parts.flatMap(part => part.rows.map(row => [irishRowScoreId(criterion.id, part.id, row.id), row.steps ? row.steps[row.steps.length - 1] : 1]))
+      : [[irishScoreId(criterion.id), criterion.maxMarks]]));
+    expect(awards.reduce((sum, criterion) => sum + criterion.maxMarks, 0)).toBe(25);
     expect(irishMarks(ordinaryCard, { ...fullEolas, [irishScoreId('gaeilge-deduction')]: 4 })).toBe(21);
     expect(suggestRubricGrade(ordinaryCard, { ...fullEolas, [irishScoreId('gaeilge-deduction')]: 4 })).toBe('got');
     expect(irishMarks(ordinaryCard, {
-      [irishScoreId('eolas')]: 0,
+      ...Object.fromEntries(awards.map(criterion => [irishScoreId(criterion.id), 0])),
       [irishScoreId('gaeilge-deduction')]: 4,
     })).toBe(0);
   });
